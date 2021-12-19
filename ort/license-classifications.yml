@@ -781,8 +781,18 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:same-license--library
+  - limitation:liability
+  - limitation:warranty
   - osi-approved
-  id: LGPL-2.1-or-later
+  id: LGPL-2.1-only
 - categories:
   - permissive
   - maybe-rating:Attention
@@ -1240,6 +1250,7 @@ categorizations:
   id: GPL-2.0-only
 - categories:
   - permissive
+  - has-no-patent-hint
   - rating:Go
   id: PSF-2.0
 - categories:
@@ -1399,9 +1410,19 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   - osi-approved
   - fsf-free
-  id: GPL-2.0-or-later
+  id: GPL-2.0-only
 - categories:
   - weak-copyleft
   - copyleft
@@ -2298,9 +2319,21 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:network-use-disclose
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   - osi-approved
   - fsf-free
-  id: AGPL-3.0-or-later
+  id: AGPL-3.0-only
 - categories:
   - permissive
   - has-no-patent-hint
@@ -2483,7 +2516,7 @@ categorizations:
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - osi-approved
-  id: Artistic-1.0-cl8
+  id: Artistic-1.0
 - categories:
   - copyleft
   - maybe-rating:Stop
@@ -2950,8 +2983,7 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
-  - osi-approved
-  id: Python-2.0
+  id: PSF-2.0
 - categories:
   - permissive
   - rating:Go

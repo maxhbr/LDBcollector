@@ -2,12 +2,24 @@
     "__impliedNames": [
         "Leptonica",
         "Leptonica License",
+        "scancode:leptonica",
         "scancode://leptonica"
     ],
     "__impliedId": "Leptonica",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Leptonica"
+        "Leptonica",
+        "Leptonica License",
+        "LEPTONICA LICENSE",
+        "LEPTONICA License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Leptonica"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +123,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Leptonica"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Leptonica",
+            "shortName": null,
+            "category": "Leptonica",
+            "alternativeNames": [
+                "Leptonica License",
+                "LEPTONICA LICENSE",
+                "LEPTONICA License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[le]/Leptonica-License.yaml",
+            "otherIds": [
+                "scancode:leptonica"
+            ],
+            "canonicalName": "Leptonica License",
+            "_implications": {
+                "__impliedNames": [
+                    "Leptonica License",
+                    "Leptonica",
+                    "scancode:leptonica"
+                ],
+                "__impliedId": "Leptonica",
+                "__impliedAmbiguousNames": [
+                    "Leptonica License",
+                    "LEPTONICA LICENSE",
+                    "LEPTONICA License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Leptonica"
+                        ]
                     ]
                 ]
             }

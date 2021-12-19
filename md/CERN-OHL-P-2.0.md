@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `CERN Open Hardware Licence Permissive 2.0`
+
+-   `scancode:cern-ohl-p-2.0`
+
 -   `scancode://cern-ohl-p-2.0`
 
 ## Comments on (easy) usability
@@ -13,6 +17,11 @@
     data \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: CERN Open Hardware Licence Permissive” (source:
+    [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Permissive-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -241,6 +250,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Permissive-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CERN-OHL-P-2.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -252,10 +265,24 @@
     {
         "__impliedNames": [
             "CERN-OHL-P-2.0",
+            "CERN Open Hardware Licence Permissive 2.0",
+            "scancode:cern-ohl-p-2.0",
             "CERN Open Hardware Licence Version 2 - Permissive",
             "scancode://cern-ohl-p-2.0"
         ],
         "__impliedId": "CERN-OHL-P-2.0",
+        "__impliedAmbiguousNames": [
+            "cern-ohl-p-2.0",
+            "CERN Open Hardware Licence Version 2 - Permissive"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CERN Open Hardware Licence Permissive"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -363,6 +390,40 @@
                         [
                             null,
                             "https://ohwr.org/project/cernohl/wikis/uploads/0be6f561d2b4a686c5765c74be32daf9/CERN_OHL_rationale.pdf"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CERN-OHL-P-2.0",
+                "shortName": null,
+                "category": "CERN Open Hardware Licence Permissive",
+                "alternativeNames": [
+                    "cern-ohl-p-2.0",
+                    "CERN Open Hardware Licence Version 2 - Permissive"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Permissive-2.0.yaml",
+                "otherIds": [
+                    "scancode:cern-ohl-p-2.0"
+                ],
+                "canonicalName": "CERN Open Hardware Licence Permissive 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CERN Open Hardware Licence Permissive 2.0",
+                        "CERN-OHL-P-2.0",
+                        "scancode:cern-ohl-p-2.0"
+                    ],
+                    "__impliedId": "CERN-OHL-P-2.0",
+                    "__impliedAmbiguousNames": [
+                        "cern-ohl-p-2.0",
+                        "CERN Open Hardware Licence Version 2 - Permissive"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CERN Open Hardware Licence Permissive"
+                            ]
                         ]
                     ]
                 }

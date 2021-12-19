@@ -5,6 +5,9 @@
         "Artistic License (v. 2.0)",
         "Artistic License 2.0",
         "artistic-2.0",
+        "scancode:artistic-2.0",
+        "osi:Artistic-2.0",
+        "osi:artistic-license-2.0",
         "artistic-license-2.0",
         "Artistic License, Version 2.0",
         "License :: OSI Approved :: Artistic License",
@@ -15,13 +18,24 @@
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Artistic License",
-        "Artistic 2.0"
+        "Artistic 2.0",
+        "Artistic, Version 2.0",
+        "Artistic License, Version 2.0",
+        "Artistic License 2.0",
+        "Artistic License (2.0)",
+        "Artistic-2"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "Source code refers to the source code, documentation and configuration files. This license does not grant you the right to use the copyright owner's registered trademarks, service marks, trademark names, or logos."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Artistic License"
             ]
         ],
         [
@@ -519,6 +533,52 @@
                 ]
             },
             "description": "Source code refers to the source code, documentation and configuration files. This license does not grant you the right to use the copyright owner's registered trademarks, service marks, trademark names, or logos."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Artistic-2.0",
+            "shortName": null,
+            "category": "Artistic License",
+            "alternativeNames": [
+                "Artistic, Version 2.0",
+                "Artistic 2.0",
+                "Artistic License, Version 2.0",
+                "Artistic License 2.0",
+                "Artistic License (2.0)",
+                "Artistic-2"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ar]/Artistic-License-2.0.yaml",
+            "otherIds": [
+                "scancode:artistic-2.0",
+                "osi:Artistic-2.0",
+                "osi:artistic-license-2.0"
+            ],
+            "canonicalName": "Artistic License 2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Artistic License 2.0",
+                    "Artistic-2.0",
+                    "scancode:artistic-2.0",
+                    "osi:Artistic-2.0",
+                    "osi:artistic-license-2.0"
+                ],
+                "__impliedId": "Artistic-2.0",
+                "__impliedAmbiguousNames": [
+                    "Artistic, Version 2.0",
+                    "Artistic 2.0",
+                    "Artistic License, Version 2.0",
+                    "Artistic License 2.0",
+                    "Artistic License (2.0)",
+                    "Artistic-2"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Artistic License"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

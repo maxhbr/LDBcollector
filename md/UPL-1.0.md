@@ -6,6 +6,10 @@
 
 -   `UPL`
 
+-   `scancode:upl-1.0`
+
+-   `osi:UPL`
+
 -   `The Universal Permissive License (UPL), Version 1.0`
 
 -   `scancode://upl-1.0`
@@ -36,6 +40,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: UPL-1.0” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[up]/UPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## Obligations
 
@@ -124,6 +132,10 @@
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[up]/UPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -148,11 +160,24 @@
             "UPL",
             "Universal Permissive License v1.0",
             "upl-1.0",
+            "scancode:upl-1.0",
+            "osi:UPL",
             "The Universal Permissive License (UPL), Version 1.0",
             "scancode://upl-1.0",
             "UPL 1.0"
         ],
         "__impliedId": "UPL-1.0",
+        "__impliedAmbiguousNames": [
+            "The Universal Permissive License (UPL), Version 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: UPL-1.0"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -306,6 +331,40 @@
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "UPL-1.0",
+                "shortName": null,
+                "category": "UPL-1.0",
+                "alternativeNames": [
+                    "The Universal Permissive License (UPL), Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[up]/UPL-1.0.yaml",
+                "otherIds": [
+                    "scancode:upl-1.0",
+                    "osi:UPL"
+                ],
+                "canonicalName": "UPL-1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "UPL-1.0",
+                        "UPL-1.0",
+                        "scancode:upl-1.0",
+                        "osi:UPL"
+                    ],
+                    "__impliedId": "UPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "The Universal Permissive License (UPL), Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: UPL-1.0"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",

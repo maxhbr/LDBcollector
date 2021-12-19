@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Glide License`
+
+-   `scancode:glide`
+
 -   `scancode://glide`
 
 -   `3DFX GLIDE`
@@ -16,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Glide” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/Glide-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -290,6 +298,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/Glide-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Glide.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -302,13 +314,27 @@
         "__impliedNames": [
             "Glide",
             "3dfx Glide License",
+            "Glide License",
+            "scancode:glide",
             "scancode://glide",
             "3DFX GLIDE"
         ],
         "__impliedId": "Glide",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Glide"
+            "Glide",
+            "Glide License",
+            "GLIDE LICENSE",
+            "GLIDE License",
+            "3DFX GLIDE Source Code General Public License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Glide"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -412,6 +438,44 @@
                         [
                             "Homepage",
                             "http://www.users.on.net/~triforce/glidexp/COPYING.txt"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Glide",
+                "shortName": null,
+                "category": "Glide",
+                "alternativeNames": [
+                    "Glide License",
+                    "GLIDE LICENSE",
+                    "GLIDE License",
+                    "3DFX GLIDE Source Code General Public License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/Glide-License.yaml",
+                "otherIds": [
+                    "scancode:glide"
+                ],
+                "canonicalName": "Glide License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Glide License",
+                        "Glide",
+                        "scancode:glide"
+                    ],
+                    "__impliedId": "Glide",
+                    "__impliedAmbiguousNames": [
+                        "Glide License",
+                        "GLIDE LICENSE",
+                        "GLIDE License",
+                        "3DFX GLIDE Source Code General Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Glide"
+                            ]
                         ]
                     ]
                 }

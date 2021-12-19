@@ -2,12 +2,24 @@
     "__impliedNames": [
         "Crossword",
         "Crossword License",
+        "scancode:crossword",
         "scancode://crossword"
     ],
     "__impliedId": "Crossword",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Crossword"
+        "Crossword",
+        "Crossword License",
+        "CROSSWORD LICENSE",
+        "CROSSWORD License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Crossword"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +123,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Crossword"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Crossword",
+            "shortName": null,
+            "category": "Crossword",
+            "alternativeNames": [
+                "Crossword License",
+                "CROSSWORD LICENSE",
+                "CROSSWORD License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Crossword-License.yaml",
+            "otherIds": [
+                "scancode:crossword"
+            ],
+            "canonicalName": "Crossword License",
+            "_implications": {
+                "__impliedNames": [
+                    "Crossword License",
+                    "Crossword",
+                    "scancode:crossword"
+                ],
+                "__impliedId": "Crossword",
+                "__impliedAmbiguousNames": [
+                    "Crossword License",
+                    "CROSSWORD LICENSE",
+                    "CROSSWORD License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Crossword"
+                        ]
                     ]
                 ]
             }

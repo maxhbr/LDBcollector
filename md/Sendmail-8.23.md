@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Sendmail 8.23`
+
+-   `scancode:sendmail-8.23`
+
 -   `scancode://sendmail-8.23`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Sendmail” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Sendmail-8.23.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -65,6 +73,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Sendmail-8.23.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Sendmail-8.23.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -76,10 +88,24 @@
     {
         "__impliedNames": [
             "Sendmail-8.23",
+            "Sendmail 8.23",
+            "scancode:sendmail-8.23",
             "Sendmail License 8.23",
             "scancode://sendmail-8.23"
         ],
         "__impliedId": "Sendmail-8.23",
+        "__impliedAmbiguousNames": [
+            "Sendmail, Version 8.23",
+            "Sendmail 8.23"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Sendmail"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -169,6 +195,40 @@
                         [
                             null,
                             "https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Sendmail-8.23",
+                "shortName": null,
+                "category": "Sendmail",
+                "alternativeNames": [
+                    "Sendmail, Version 8.23",
+                    "Sendmail 8.23"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Sendmail-8.23.yaml",
+                "otherIds": [
+                    "scancode:sendmail-8.23"
+                ],
+                "canonicalName": "Sendmail 8.23",
+                "_implications": {
+                    "__impliedNames": [
+                        "Sendmail 8.23",
+                        "Sendmail-8.23",
+                        "scancode:sendmail-8.23"
+                    ],
+                    "__impliedId": "Sendmail-8.23",
+                    "__impliedAmbiguousNames": [
+                        "Sendmail, Version 8.23",
+                        "Sendmail 8.23"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Sendmail"
+                            ]
                         ]
                     ]
                 }

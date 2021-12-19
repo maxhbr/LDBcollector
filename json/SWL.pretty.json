@@ -2,15 +2,27 @@
     "__impliedNames": [
         "SWL",
         "Scheme Widget Library (SWL) Software License Agreement",
+        "Scheme Widget Library Software License Agreement",
+        "scancode:swl",
         "scancode://swl",
         "Scheme Widget Library (SWL) Software License"
     ],
     "__impliedId": "SWL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "SWL"
+        "SWL",
+        "Scheme Widget Library (SWL) Software License Agreement",
+        "SWL License",
+        "SWL license",
+        "under SWL"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: SWL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -134,6 +146,44 @@
                     [
                         null,
                         "https://puredata.info/about/pdlicense"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "SWL",
+            "shortName": null,
+            "category": "SWL",
+            "alternativeNames": [
+                "Scheme Widget Library (SWL) Software License Agreement",
+                "SWL License",
+                "SWL license",
+                "under SWL"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sc]/Scheme-Widget-Library-Software-License-Agreement.yaml",
+            "otherIds": [
+                "scancode:swl"
+            ],
+            "canonicalName": "Scheme Widget Library Software License Agreement",
+            "_implications": {
+                "__impliedNames": [
+                    "Scheme Widget Library Software License Agreement",
+                    "SWL",
+                    "scancode:swl"
+                ],
+                "__impliedId": "SWL",
+                "__impliedAmbiguousNames": [
+                    "Scheme Widget Library (SWL) Software License Agreement",
+                    "SWL License",
+                    "SWL license",
+                    "under SWL"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: SWL"
+                        ]
                     ]
                 ]
             }

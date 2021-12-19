@@ -2,9 +2,24 @@
     "__impliedNames": [
         "CNRI-Jython",
         "CNRI Jython License",
+        "scancode:cnri-jython",
         "scancode://cnri-jython"
     ],
     "__impliedId": "CNRI-Jython",
+    "__impliedAmbiguousNames": [
+        "CNRI Jython",
+        "CNRI JYTHON",
+        "CNRI-Jython",
+        "CNRI-JYTHON"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CNRI Jython"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -97,6 +112,44 @@
             },
             "licensename": "CNRI-Jython",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CNRI-Jython",
+            "shortName": null,
+            "category": "CNRI Jython",
+            "alternativeNames": [
+                "CNRI Jython",
+                "CNRI JYTHON",
+                "CNRI-Jython",
+                "CNRI-JYTHON"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cn]/CNRI-Jython-License.yaml",
+            "otherIds": [
+                "scancode:cnri-jython"
+            ],
+            "canonicalName": "CNRI Jython License",
+            "_implications": {
+                "__impliedNames": [
+                    "CNRI Jython License",
+                    "CNRI-Jython",
+                    "scancode:cnri-jython"
+                ],
+                "__impliedId": "CNRI-Jython",
+                "__impliedAmbiguousNames": [
+                    "CNRI Jython",
+                    "CNRI JYTHON",
+                    "CNRI-Jython",
+                    "CNRI-JYTHON"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CNRI Jython"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

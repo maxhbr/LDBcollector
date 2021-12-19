@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:saxpath`
+
 -   `scancode://saxpath`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Saxpath” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sa]/Saxpath-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this is a slightly modified version of Apache 1.1. The
     documentation requirement in Apache 1.1 has been weakened to a
@@ -91,6 +97,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sa]/Saxpath-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Saxpath.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -103,14 +113,24 @@
         "__impliedNames": [
             "Saxpath",
             "Saxpath License",
+            "scancode:saxpath",
             "scancode://saxpath"
         ],
         "__impliedId": "Saxpath",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Saxpath"
+            "Saxpath",
+            "Saxpath License",
+            "SAXPATH LICENSE",
+            "SAXPATH License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Saxpath"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -228,6 +248,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Saxpath_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Saxpath",
+                "shortName": null,
+                "category": "Saxpath",
+                "alternativeNames": [
+                    "Saxpath License",
+                    "SAXPATH LICENSE",
+                    "SAXPATH License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sa]/Saxpath-License.yaml",
+                "otherIds": [
+                    "scancode:saxpath"
+                ],
+                "canonicalName": "Saxpath License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Saxpath License",
+                        "Saxpath",
+                        "scancode:saxpath"
+                    ],
+                    "__impliedId": "Saxpath",
+                    "__impliedAmbiguousNames": [
+                        "Saxpath License",
+                        "SAXPATH LICENSE",
+                        "SAXPATH License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Saxpath"
+                            ]
                         ]
                     ]
                 }

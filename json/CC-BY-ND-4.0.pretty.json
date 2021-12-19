@@ -1,10 +1,25 @@
 {
     "__impliedNames": [
         "CC-BY-ND-4.0",
+        "Creative Commons BY-ND 4.0 (international)",
+        "scancode:cc-by-nd-4.0",
         "Creative Commons Attribution No Derivatives 4.0 International",
         "scancode://cc-by-nd-4.0"
     ],
     "__impliedId": "CC-BY-ND-4.0",
+    "__impliedAmbiguousNames": [
+        "Creative Commons Attribution No Derivatives 4.0 International",
+        "Creative Commons Attribution-NoDerivatives 4.0 International",
+        "CC-BY-ND-4.0"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CC-BY-ND"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -77,6 +92,42 @@
                     [
                         null,
                         "https://creativecommons.org/licenses/by-nd/4.0/legalcode"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CC-BY-ND-4.0",
+            "shortName": null,
+            "category": "CC-BY-ND",
+            "alternativeNames": [
+                "Creative Commons Attribution No Derivatives 4.0 International",
+                "Creative Commons Attribution-NoDerivatives 4.0 International",
+                "CC-BY-ND-4.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-ND-4.0-(international).yaml",
+            "otherIds": [
+                "scancode:cc-by-nd-4.0"
+            ],
+            "canonicalName": "Creative Commons BY-ND 4.0 (international)",
+            "_implications": {
+                "__impliedNames": [
+                    "Creative Commons BY-ND 4.0 (international)",
+                    "CC-BY-ND-4.0",
+                    "scancode:cc-by-nd-4.0"
+                ],
+                "__impliedId": "CC-BY-ND-4.0",
+                "__impliedAmbiguousNames": [
+                    "Creative Commons Attribution No Derivatives 4.0 International",
+                    "Creative Commons Attribution-NoDerivatives 4.0 International",
+                    "CC-BY-ND-4.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CC-BY-ND"
+                        ]
                     ]
                 ]
             }

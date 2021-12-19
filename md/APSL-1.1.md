@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:apsl-1.1`
+
 -   `APPLE PUBLIC SOURCE LICENSE, Version 1.1`
 
 -   `scancode://apsl-1.1`
@@ -71,6 +73,10 @@
     beneficial ownership of the corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: APSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 19 April 1999.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.1.yml "Scancode")
@@ -660,6 +666,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -676,6 +686,7 @@
         "__impliedNames": [
             "APSL-1.1",
             "Apple Public Source License 1.1",
+            "scancode:apsl-1.1",
             "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
             "scancode://apsl-1.1",
             "APSL 1.1"
@@ -683,7 +694,14 @@
         "__impliedId": "APSL-1.1",
         "__impliedAmbiguousNames": [
             "Apple Public Source License",
-            "Apple Public Source License (APSL)"
+            "Apple Public Source License (APSL)",
+            "APSL, Version 1.1",
+            "APSL 1.1",
+            "APSL-1.1",
+            "APPLE PUBLIC SOURCE LICENSE 1.1",
+            "APPLE PUBLIC SOURCE LICENSE v1.1",
+            "APPLE PUBLIC SOURCE LICENSE Version 1.1",
+            "Apple Public Source License Ver. 1.1"
         ],
         "__impliedComments": [
             [
@@ -698,6 +716,12 @@
                 [
                     "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE",
                     "Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. Source Code means the source code of all modules contained in the Software, all associated interface definition files, and scripts used to control the compilation and installation of executables (object code). Himself means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: APSL"
                 ]
             ],
             [
@@ -1435,6 +1459,50 @@
                     ]
                 },
                 "description": "Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. Source Code means the source code of all modules contained in the Software, all associated interface definition files, and scripts used to control the compilation and installation of executables (object code). Himself means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "APSL-1.1",
+                "shortName": null,
+                "category": "APSL",
+                "alternativeNames": [
+                    "APSL, Version 1.1",
+                    "APSL 1.1",
+                    "APSL-1.1",
+                    "APPLE PUBLIC SOURCE LICENSE 1.1",
+                    "APPLE PUBLIC SOURCE LICENSE v1.1",
+                    "APPLE PUBLIC SOURCE LICENSE Version 1.1",
+                    "Apple Public Source License Ver. 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:apsl-1.1"
+                ],
+                "canonicalName": "Apple Public Source License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apple Public Source License 1.1",
+                        "APSL-1.1",
+                        "scancode:apsl-1.1"
+                    ],
+                    "__impliedId": "APSL-1.1",
+                    "__impliedAmbiguousNames": [
+                        "APSL, Version 1.1",
+                        "APSL 1.1",
+                        "APSL-1.1",
+                        "APPLE PUBLIC SOURCE LICENSE 1.1",
+                        "APPLE PUBLIC SOURCE LICENSE v1.1",
+                        "APPLE PUBLIC SOURCE LICENSE Version 1.1",
+                        "Apple Public Source License Ver. 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: APSL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/APSL-1.1.html",

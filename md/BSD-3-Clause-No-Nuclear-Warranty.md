@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `BSD 3-Clause License (no nuclear warranty)`
+
 -   `scancode://bsd-3-clause-no-nuclear-warranty`
 
 ## Comments on (easy) usability
@@ -13,6 +15,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(no-nuclear-warranty).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “per SPDX.org, it is the same license as
     BSD-3-Clause-No-Nuclear-License, except it has a disclaimer for
@@ -82,6 +88,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(no-nuclear-warranty).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -94,10 +104,20 @@
         "__impliedNames": [
             "BSD-3-Clause-No-Nuclear-Warranty",
             "BSD 3-Clause No Nuclear Warranty",
+            "BSD 3-Clause License (no nuclear warranty)",
             "scancode://bsd-3-clause-no-nuclear-warranty"
         ],
         "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
+        "__impliedAmbiguousNames": [
+            "BSD 3 Clause No Nuclear Warranty"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -204,6 +224,35 @@
                 },
                 "licensename": "BSD-3-Clause-No-Nuclear-Warranty",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-3-Clause-No-Nuclear-Warranty",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [
+                    "BSD 3 Clause No Nuclear Warranty"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(no-nuclear-warranty).yaml",
+                "otherIds": [],
+                "canonicalName": "BSD 3-Clause License (no nuclear warranty)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause License (no nuclear warranty)",
+                        "BSD-3-Clause-No-Nuclear-Warranty"
+                    ],
+                    "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
+                    "__impliedAmbiguousNames": [
+                        "BSD 3 Clause No Nuclear Warranty"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

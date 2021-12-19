@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:nist-pd`
+
 -   `scancode://nist-pd`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: NIST Public Domain Notice” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ni]/NIST-Public-Domain-Notice.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -54,6 +60,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ni]/NIST-Public-Domain-Notice.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/NIST-PD.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -66,9 +76,21 @@
         "__impliedNames": [
             "NIST-PD",
             "NIST Public Domain Notice",
+            "scancode:nist-pd",
             "scancode://nist-pd"
         ],
         "__impliedId": "NIST-PD",
+        "__impliedAmbiguousNames": [
+            "nist-pd"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NIST Public Domain Notice"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -158,6 +180,38 @@
                         [
                             null,
                             "https://github.com/usnistgov/jsip"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NIST-PD",
+                "shortName": null,
+                "category": "NIST Public Domain Notice",
+                "alternativeNames": [
+                    "nist-pd"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ni]/NIST-Public-Domain-Notice.yaml",
+                "otherIds": [
+                    "scancode:nist-pd"
+                ],
+                "canonicalName": "NIST Public Domain Notice",
+                "_implications": {
+                    "__impliedNames": [
+                        "NIST Public Domain Notice",
+                        "NIST-PD",
+                        "scancode:nist-pd"
+                    ],
+                    "__impliedId": "NIST-PD",
+                    "__impliedAmbiguousNames": [
+                        "nist-pd"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NIST Public Domain Notice"
+                            ]
                         ]
                     ]
                 }

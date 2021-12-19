@@ -3,15 +3,26 @@
         "PostgreSQL",
         "PostgreSQL License",
         "postgresql",
+        "scancode:postgresql",
+        "osi:PostgreSQL",
         "The PostgreSQL Licence",
         "scancode://postgresql"
     ],
     "__impliedId": "PostgreSQL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "PostgreSQL"
+        "PostgreSQL",
+        "License: PostgreSQL",
+        "PostgreSQL License",
+        "POSTGRESQL License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: PostgreSQL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -291,6 +302,44 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/608"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "PostgreSQL",
+            "shortName": null,
+            "category": "PostgreSQL",
+            "alternativeNames": [
+                "License: PostgreSQL",
+                "PostgreSQL License",
+                "POSTGRESQL License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/PostgreSQL-License.yaml",
+            "otherIds": [
+                "scancode:postgresql",
+                "osi:PostgreSQL"
+            ],
+            "canonicalName": "PostgreSQL License",
+            "_implications": {
+                "__impliedNames": [
+                    "PostgreSQL License",
+                    "PostgreSQL",
+                    "scancode:postgresql",
+                    "osi:PostgreSQL"
+                ],
+                "__impliedId": "PostgreSQL",
+                "__impliedAmbiguousNames": [
+                    "License: PostgreSQL",
+                    "PostgreSQL License",
+                    "POSTGRESQL License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: PostgreSQL"
+                        ]
                     ]
                 ]
             }

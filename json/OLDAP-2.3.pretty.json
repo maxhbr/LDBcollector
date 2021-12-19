@@ -2,11 +2,25 @@
     "__impliedNames": [
         "OLDAP-2.3",
         "Open LDAP Public License v2.3",
-        "scancode://openldap-2.3",
-        "OpenLDAP Public License 2.3"
+        "OpenLDAP Public License 2.3",
+        "scancode:openldap-2.3",
+        "scancode://openldap-2.3"
     ],
     "__impliedId": "OLDAP-2.3",
+    "__impliedAmbiguousNames": [
+        "OLDAP, Version 2.3",
+        "OLDAP, 2.3",
+        "OLDAP License, Version 2.3",
+        "OLDAP License, 2.3",
+        "OpenLDAP Public License Version 2.3"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: OLDAP"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -114,6 +128,46 @@
             },
             "licensename": "OLDAP-2.3",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "OLDAP-2.3",
+            "shortName": null,
+            "category": "OLDAP",
+            "alternativeNames": [
+                "OLDAP, Version 2.3",
+                "OLDAP, 2.3",
+                "OLDAP License, Version 2.3",
+                "OLDAP License, 2.3",
+                "OpenLDAP Public License Version 2.3"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.3.yaml",
+            "otherIds": [
+                "scancode:openldap-2.3"
+            ],
+            "canonicalName": "OpenLDAP Public License 2.3",
+            "_implications": {
+                "__impliedNames": [
+                    "OpenLDAP Public License 2.3",
+                    "OLDAP-2.3",
+                    "scancode:openldap-2.3"
+                ],
+                "__impliedId": "OLDAP-2.3",
+                "__impliedAmbiguousNames": [
+                    "OLDAP, Version 2.3",
+                    "OLDAP, 2.3",
+                    "OLDAP License, Version 2.3",
+                    "OLDAP License, 2.3",
+                    "OpenLDAP Public License Version 2.3"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: OLDAP"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

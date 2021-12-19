@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:fsf-free`
+
 -   `scancode://fsf-free`
 
 -   `FSF Free Software License`
@@ -20,6 +22,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: FSF Unlimited” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fs]/FSF-Unlimited-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -52,6 +58,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fs]/FSF-Unlimited-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/FSFUL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -64,13 +74,23 @@
         "__impliedNames": [
             "FSFUL",
             "FSF Unlimited License",
+            "scancode:fsf-free",
             "scancode://fsf-free",
             "FSF Free Software License"
         ],
         "__impliedId": "FSFUL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "FSFUL"
+            "FSFUL",
+            "FSF Unlimited License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: FSF Unlimited"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -174,6 +194,38 @@
                         [
                             "Homepage",
                             "http://www.fsf.org/licensing/licenses/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "FSFUL",
+                "shortName": null,
+                "category": "FSF Unlimited",
+                "alternativeNames": [
+                    "FSF Unlimited License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fs]/FSF-Unlimited-License.yaml",
+                "otherIds": [
+                    "scancode:fsf-free"
+                ],
+                "canonicalName": "FSF Unlimited License",
+                "_implications": {
+                    "__impliedNames": [
+                        "FSF Unlimited License",
+                        "FSFUL",
+                        "scancode:fsf-free"
+                    ],
+                    "__impliedId": "FSFUL",
+                    "__impliedAmbiguousNames": [
+                        "FSF Unlimited License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: FSF Unlimited"
+                            ]
                         ]
                     ]
                 }

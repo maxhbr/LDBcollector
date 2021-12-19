@@ -4,6 +4,14 @@
 
 **Other Names:**
 
+-   `MIT License (no attribution)`
+
+-   `scancode:ekioh`
+
+-   `scancode:pd-mit`
+
+-   `scancode:tigra-calendar-4.0`
+
 -   `scancode://mit-0`
 
 -   `MIT-0-Clause`
@@ -29,6 +37,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: MIT” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(no-attribution).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “The former ekioh license has been deprecated in favor of this
     license. Except for the dangling ", subject to the following
@@ -90,6 +102,10 @@
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit-0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(no-attribution).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/MIT-0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -103,11 +119,28 @@
             "MIT-0",
             "MIT No Attribution",
             "mit-0",
+            "MIT License (no attribution)",
+            "scancode:ekioh",
+            "scancode:pd-mit",
+            "scancode:tigra-calendar-4.0",
             "scancode://mit-0",
             "MIT-0-Clause"
         ],
         "__impliedId": "MIT-0",
+        "__impliedAmbiguousNames": [
+            "MIT, Version 0",
+            "MIT, 0",
+            "MIT License, Version 0",
+            "MIT License 0",
+            "MIT No Attribution"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MIT"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -231,6 +264,50 @@
                         [
                             null,
                             "https://kryogenix.org/code/browser/licence.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MIT-0",
+                "shortName": null,
+                "category": "MIT",
+                "alternativeNames": [
+                    "MIT, Version 0",
+                    "MIT, 0",
+                    "MIT License, Version 0",
+                    "MIT License 0",
+                    "MIT No Attribution"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(no-attribution).yaml",
+                "otherIds": [
+                    "scancode:ekioh",
+                    "scancode:pd-mit",
+                    "scancode:tigra-calendar-4.0"
+                ],
+                "canonicalName": "MIT License (no attribution)",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT License (no attribution)",
+                        "MIT-0",
+                        "scancode:ekioh",
+                        "scancode:pd-mit",
+                        "scancode:tigra-calendar-4.0"
+                    ],
+                    "__impliedId": "MIT-0",
+                    "__impliedAmbiguousNames": [
+                        "MIT, Version 0",
+                        "MIT, 0",
+                        "MIT License, Version 0",
+                        "MIT License 0",
+                        "MIT No Attribution"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MIT"
+                            ]
                         ]
                     ]
                 }

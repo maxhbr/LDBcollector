@@ -8,11 +8,15 @@
 
 -   `BSD License (two clause)`
 
+-   `BSD 2-Clause License`
+
+-   `scancode:bsd-simplified`
+
+-   `osi:BSD-2-Clause`
+
 -   `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
 
 -   `BSD-2`
-
--   `BSD 2-Clause License`
 
 -   `Simplified BSD License`
 
@@ -57,6 +61,10 @@
     [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-2-Clause-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml "Scancode")
@@ -183,6 +191,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-2-Clause-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -222,9 +234,11 @@
             "BSD License (two clause)",
             "BSD 2-Clause \"Simplified\" License",
             "bsd-2-clause",
+            "BSD 2-Clause License",
+            "scancode:bsd-simplified",
+            "osi:BSD-2-Clause",
             "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
             "BSD-2",
-            "BSD 2-Clause License",
             "BSD-2-clause",
             "Simplified BSD License",
             "FreeBSD License",
@@ -234,7 +248,21 @@
         "__impliedId": "BSD-2-Clause",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "BSD"
+            "BSD",
+            "2-clause BSD license",
+            "BSD 2-Clause",
+            "BSD Software License, 2-clause version",
+            "2-clause BSDL",
+            "BSD-2",
+            "BSD2-Clause License",
+            "BSD 2 Clause",
+            "BSD 2 clause",
+            "BSD-2-Clause",
+            "Two-clause BSD-style license",
+            "BSD 2-clause \"Simplified\" License",
+            "bsd_2",
+            "https://www.freebsd.org/copyright/freebsd-license.html",
+            "FreeBSD License"
         ],
         "__impliedComments": [
             [
@@ -242,6 +270,12 @@
                 [
                     "BSD-2-Clause",
                     "<OWNER> would be the equivalent of a copyright holder."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
                 ]
             ],
             [
@@ -593,6 +627,66 @@
                     ]
                 },
                 "description": "<OWNER> would be the equivalent of a copyright holder."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-2-Clause",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [
+                    "2-clause BSD license",
+                    "BSD 2-Clause",
+                    "BSD Software License, 2-clause version",
+                    "2-clause BSDL",
+                    "BSD-2",
+                    "BSD2-Clause License",
+                    "BSD 2 Clause",
+                    "BSD 2 clause",
+                    "BSD-2-Clause",
+                    "Two-clause BSD-style license",
+                    "BSD 2-clause \"Simplified\" License",
+                    "bsd_2",
+                    "https://www.freebsd.org/copyright/freebsd-license.html",
+                    "FreeBSD License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-2-Clause-License.yaml",
+                "otherIds": [
+                    "scancode:bsd-simplified",
+                    "osi:BSD-2-Clause"
+                ],
+                "canonicalName": "BSD 2-Clause License",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 2-Clause License",
+                        "BSD-2-Clause",
+                        "scancode:bsd-simplified",
+                        "osi:BSD-2-Clause"
+                    ],
+                    "__impliedId": "BSD-2-Clause",
+                    "__impliedAmbiguousNames": [
+                        "2-clause BSD license",
+                        "BSD 2-Clause",
+                        "BSD Software License, 2-clause version",
+                        "2-clause BSDL",
+                        "BSD-2",
+                        "BSD2-Clause License",
+                        "BSD 2 Clause",
+                        "BSD 2 clause",
+                        "BSD-2-Clause",
+                        "Two-clause BSD-style license",
+                        "BSD 2-clause \"Simplified\" License",
+                        "bsd_2",
+                        "https://www.freebsd.org/copyright/freebsd-license.html",
+                        "FreeBSD License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",

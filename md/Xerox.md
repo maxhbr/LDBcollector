@@ -4,9 +4,13 @@
 
 **Other Names:**
 
--   `scancode://mit-export-control`
-
 -   `MIT with Export Control`
+
+-   `MIT-Export-Control`
+
+-   `scancode:mit-export-control`
+
+-   `scancode://mit-export-control`
 
 ## Comments on (easy) usability
 
@@ -20,6 +24,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: MIT with Export Control” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-with-Export-Control.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is very similar to MIT, except that it
     requires that US Export Control laws be followed, which makes it
@@ -72,6 +80,14 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-with-Export-Control.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xe]/Xerox-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Xerox.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -84,15 +100,28 @@
         "__impliedNames": [
             "Xerox",
             "Xerox License",
-            "scancode://mit-export-control",
-            "MIT with Export Control"
+            "MIT with Export Control",
+            "MIT-Export-Control",
+            "scancode:mit-export-control",
+            "scancode://mit-export-control"
         ],
         "__impliedId": "Xerox",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Xerox"
+            "Xerox",
+            "mit-export-control",
+            "https://spdx.org/licenses/xerox",
+            "Xerox License",
+            "XEROX LICENSE",
+            "XEROX License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MIT with Export Control"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -216,6 +245,38 @@
                         [
                             null,
                             "https://fedoraproject.org/wiki/Licensing/Xerox"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "MIT-Export-Control",
+                "category": "MIT with Export Control",
+                "alternativeNames": [
+                    "mit-export-control"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-with-Export-Control.yaml",
+                "otherIds": [
+                    "scancode:mit-export-control"
+                ],
+                "canonicalName": "MIT with Export Control",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT with Export Control",
+                        "MIT-Export-Control",
+                        "scancode:mit-export-control"
+                    ],
+                    "__impliedId": "MIT-Export-Control",
+                    "__impliedAmbiguousNames": [
+                        "mit-export-control"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MIT with Export Control"
+                            ]
                         ]
                     ]
                 }

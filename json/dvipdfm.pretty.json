@@ -2,14 +2,24 @@
     "__impliedNames": [
         "dvipdfm",
         "dvipdfm License",
+        "scancode:dvipdfm",
         "scancode://dvipdfm"
     ],
     "__impliedId": "dvipdfm",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "dvipdfm"
+        "dvipdfm",
+        "dvipdfm License",
+        "DVIPDFM LICENSE",
+        "DVIPDFM License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: dvipdfm"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -127,6 +137,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/dvipdfm"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "dvipdfm",
+            "shortName": null,
+            "category": "dvipdfm",
+            "alternativeNames": [
+                "dvipdfm License",
+                "DVIPDFM LICENSE",
+                "DVIPDFM License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[dv]/dvipdfm-License.yaml",
+            "otherIds": [
+                "scancode:dvipdfm"
+            ],
+            "canonicalName": "dvipdfm License",
+            "_implications": {
+                "__impliedNames": [
+                    "dvipdfm License",
+                    "dvipdfm",
+                    "scancode:dvipdfm"
+                ],
+                "__impliedId": "dvipdfm",
+                "__impliedAmbiguousNames": [
+                    "dvipdfm License",
+                    "DVIPDFM LICENSE",
+                    "DVIPDFM License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: dvipdfm"
+                        ]
                     ]
                 ]
             }

@@ -12,6 +12,10 @@
 
 ## General Comments
 
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-No-Nuclear-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
+
 ## URLs
 
 -   **SPDX:**
@@ -67,6 +71,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-No-Nuclear-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -83,6 +91,17 @@
             "Sun BSD-Style with Nuclear Restrictions"
         ],
         "__impliedId": "BSD-3-Clause-No-Nuclear-License",
+        "__impliedAmbiguousNames": [
+            "BSD 3 Clause No Nuclear License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -175,6 +194,35 @@
                 },
                 "licensename": "BSD-3-Clause-No-Nuclear-License",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-3-Clause-No-Nuclear-License",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [
+                    "BSD 3 Clause No Nuclear License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-No-Nuclear-License.yaml",
+                "otherIds": [],
+                "canonicalName": "BSD 3-Clause No Nuclear License",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause No Nuclear License",
+                        "BSD-3-Clause-No-Nuclear-License"
+                    ],
+                    "__impliedId": "BSD-3-Clause-No-Nuclear-License",
+                    "__impliedAmbiguousNames": [
+                        "BSD 3 Clause No Nuclear License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

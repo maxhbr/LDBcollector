@@ -14,6 +14,9 @@
 
 * `Artistic 2.0`
 * `Artistic License (v. 2.0)`
+* `scancode:artistic-2.0`
+* `osi:Artistic-2.0`
+* `osi:artistic-license-2.0`
 * `artistic-license-2.0`
 * `Artistic License, Version 2.0`
 * `License :: OSI Approved :: Artistic License`
@@ -60,6 +63,9 @@ the copyright owner's registered trademarks, service marks, trademark
 names, or logos.'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: Artistic License'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ar]/Artistic-License-2.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this version was released 2006 This license is OSI
 certifified. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-2.0.yml[Scancode]
@@ -490,6 +496,8 @@ license-compatibility-checker]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ar]/Artistic-License-2.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -520,6 +528,9 @@ repository] is generated)
         "Artistic License (v. 2.0)",
         "Artistic License 2.0",
         "artistic-2.0",
+        "scancode:artistic-2.0",
+        "osi:Artistic-2.0",
+        "osi:artistic-license-2.0",
         "artistic-license-2.0",
         "Artistic License, Version 2.0",
         "License :: OSI Approved :: Artistic License",
@@ -530,13 +541,24 @@ repository] is generated)
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Artistic License",
-        "Artistic 2.0"
+        "Artistic 2.0",
+        "Artistic, Version 2.0",
+        "Artistic License, Version 2.0",
+        "Artistic License 2.0",
+        "Artistic License (2.0)",
+        "Artistic-2"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "Source code refers to the source code, documentation and configuration files. This license does not grant you the right to use the copyright owner's registered trademarks, service marks, trademark names, or logos."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Artistic License"
             ]
         ],
         [
@@ -1034,6 +1056,52 @@ repository] is generated)
                 ]
             },
             "description": "Source code refers to the source code, documentation and configuration files. This license does not grant you the right to use the copyright owner's registered trademarks, service marks, trademark names, or logos."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Artistic-2.0",
+            "shortName": null,
+            "category": "Artistic License",
+            "alternativeNames": [
+                "Artistic, Version 2.0",
+                "Artistic 2.0",
+                "Artistic License, Version 2.0",
+                "Artistic License 2.0",
+                "Artistic License (2.0)",
+                "Artistic-2"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ar]/Artistic-License-2.0.yaml",
+            "otherIds": [
+                "scancode:artistic-2.0",
+                "osi:Artistic-2.0",
+                "osi:artistic-license-2.0"
+            ],
+            "canonicalName": "Artistic License 2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Artistic License 2.0",
+                    "Artistic-2.0",
+                    "scancode:artistic-2.0",
+                    "osi:Artistic-2.0",
+                    "osi:artistic-license-2.0"
+                ],
+                "__impliedId": "Artistic-2.0",
+                "__impliedAmbiguousNames": [
+                    "Artistic, Version 2.0",
+                    "Artistic 2.0",
+                    "Artistic License, Version 2.0",
+                    "Artistic License 2.0",
+                    "Artistic License (2.0)",
+                    "Artistic-2"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Artistic License"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

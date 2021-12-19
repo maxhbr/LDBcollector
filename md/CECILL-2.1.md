@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `CeCILL Free Software License Agreement 2.1`
+
+-   `scancode:cecill-2.1`
+
+-   `osi:CECILL-2.1`
+
 -   `CeCILL License 2.1`
 
 -   `Cea Cnrs Inria Logiciel Libre License, Version 2.1`
@@ -30,6 +36,10 @@
     \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: CECILL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-Free-Software-License-Agreement-2.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## Obligations
 
@@ -585,6 +595,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-Free-Software-License-Agreement-2.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -610,6 +624,9 @@
         "__impliedNames": [
             "CECILL-2.1",
             "cecill-2.1",
+            "CeCILL Free Software License Agreement 2.1",
+            "scancode:cecill-2.1",
+            "osi:CECILL-2.1",
             "CeCILL License 2.1",
             "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
             "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
@@ -619,6 +636,19 @@
             "CeCILL-2.1"
         ],
         "__impliedId": "CECILL-2.1",
+        "__impliedAmbiguousNames": [
+            "CECILL, Version 2.1",
+            "CECILL, 2.1",
+            "CeCILL FREE SOFTWARE LICENSE AGREEMENT Version 2.1"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CECILL"
+                ]
+            ]
+        ],
         "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
@@ -772,6 +802,44 @@
                 "_implications": {
                     "__impliedNames": [
                         "CECILL-2.1"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CECILL-2.1",
+                "shortName": null,
+                "category": "CECILL",
+                "alternativeNames": [
+                    "CECILL, Version 2.1",
+                    "CECILL, 2.1",
+                    "CeCILL FREE SOFTWARE LICENSE AGREEMENT Version 2.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-Free-Software-License-Agreement-2.1.yaml",
+                "otherIds": [
+                    "scancode:cecill-2.1",
+                    "osi:CECILL-2.1"
+                ],
+                "canonicalName": "CeCILL Free Software License Agreement 2.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "CeCILL Free Software License Agreement 2.1",
+                        "CECILL-2.1",
+                        "scancode:cecill-2.1",
+                        "osi:CECILL-2.1"
+                    ],
+                    "__impliedId": "CECILL-2.1",
+                    "__impliedAmbiguousNames": [
+                        "CECILL, Version 2.1",
+                        "CECILL, 2.1",
+                        "CeCILL FREE SOFTWARE LICENSE AGREEMENT Version 2.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CECILL"
+                            ]
+                        ]
                     ]
                 }
             },

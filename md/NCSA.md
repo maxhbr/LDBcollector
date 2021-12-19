@@ -6,6 +6,12 @@
 
 -   `UIUC/NCSA`
 
+-   `NCSA License`
+
+-   `scancode:uoi-ncsa`
+
+-   `osi:NCSA`
+
 -   `uoi-ncsa`
 
 -   `The University of Illinois/NCSA Open Source License`
@@ -45,6 +51,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nc]/NCSA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/uoi-ncsa.yml "Scancode")
@@ -172,6 +182,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nc]/NCSA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -203,6 +217,9 @@
             "University of Illinois/NCSA Open Source License",
             "ncsa",
             "UIUC/NCSA",
+            "NCSA License",
+            "scancode:uoi-ncsa",
+            "osi:NCSA",
             "uoi-ncsa",
             "The University of Illinois/NCSA Open Source License",
             "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
@@ -210,7 +227,18 @@
             "NCSA Open Source License"
         ],
         "__impliedId": "NCSA",
+        "__impliedAmbiguousNames": [
+            "NCSA License",
+            "NCSA LICENSE",
+            "NCSA Open Source License"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -512,6 +540,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/684"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NCSA",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [
+                    "NCSA License",
+                    "NCSA LICENSE",
+                    "NCSA Open Source License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nc]/NCSA-License.yaml",
+                "otherIds": [
+                    "scancode:uoi-ncsa",
+                    "osi:NCSA"
+                ],
+                "canonicalName": "NCSA License",
+                "_implications": {
+                    "__impliedNames": [
+                        "NCSA License",
+                        "NCSA",
+                        "scancode:uoi-ncsa",
+                        "osi:NCSA"
+                    ],
+                    "__impliedId": "NCSA",
+                    "__impliedAmbiguousNames": [
+                        "NCSA License",
+                        "NCSA LICENSE",
+                        "NCSA Open Source License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
                         ]
                     ]
                 }

@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `IPA License`
+
+-   `scancode:ipa-font`
+
+-   `osi:IPA`
+
 -   `IPA Font License Agreement v1.0`
 
 -   `scancode://ipa-font`
@@ -22,6 +28,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: IPA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ip]/IPA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ipa-font.yml "Scancode")
@@ -146,6 +156,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ip]/IPA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -172,6 +186,9 @@
         "__impliedNames": [
             "IPA",
             "IPA Font License",
+            "IPA License",
+            "scancode:ipa-font",
+            "osi:IPA",
             "IPA Font License Agreement v1.0",
             "scancode://ipa-font",
             "IPA Font License 1.0"
@@ -179,9 +196,18 @@
         "__impliedId": "IPA",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "IPA"
+            "IPA",
+            "IPA License",
+            "IPA LICENSE",
+            "IPA Font License Agreement v1.0"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: IPA"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -399,6 +425,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/248"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "IPA",
+                "shortName": null,
+                "category": "IPA",
+                "alternativeNames": [
+                    "IPA License",
+                    "IPA LICENSE",
+                    "IPA Font License Agreement v1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ip]/IPA-License.yaml",
+                "otherIds": [
+                    "scancode:ipa-font",
+                    "osi:IPA"
+                ],
+                "canonicalName": "IPA License",
+                "_implications": {
+                    "__impliedNames": [
+                        "IPA License",
+                        "IPA",
+                        "scancode:ipa-font",
+                        "osi:IPA"
+                    ],
+                    "__impliedId": "IPA",
+                    "__impliedAmbiguousNames": [
+                        "IPA License",
+                        "IPA LICENSE",
+                        "IPA Font License Agreement v1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: IPA"
+                            ]
                         ]
                     ]
                 }

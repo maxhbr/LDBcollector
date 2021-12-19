@@ -6,6 +6,10 @@
 
 -   `SGI Free Software License B 2.0`
 
+-   `SGI B License 2.0`
+
+-   `scancode:sgi-freeb-2.0`
+
 -   `SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)`
 
 -   `scancode://sgi-freeb-2.0`
@@ -22,6 +26,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: SGI B” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 18 Sept 2008” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml "Scancode")
@@ -129,6 +137,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -146,15 +158,33 @@
             "SGI-B-2.0",
             "SGI Free Software License B v2.0",
             "SGI Free Software License B 2.0",
+            "SGI B License 2.0",
+            "scancode:sgi-freeb-2.0",
             "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
             "scancode://sgi-freeb-2.0"
         ],
         "__impliedId": "SGI-B-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT"
+            "MIT",
+            "SGI B, Version 2.0",
+            "SGI B, 2.0",
+            "SGI-B, Version 2.0",
+            "SGI-B, 2.0",
+            "SGI B License, Version 2.0",
+            "SGI B License 2.0",
+            "SGI-B License, Version 2.0",
+            "SGI-B License, 2.0",
+            "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
+            "SGI Free Software License B, version 2.0"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SGI B"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -415,6 +445,56 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/327"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SGI-B-2.0",
+                "shortName": null,
+                "category": "SGI B",
+                "alternativeNames": [
+                    "SGI B, Version 2.0",
+                    "SGI B, 2.0",
+                    "SGI-B, Version 2.0",
+                    "SGI-B, 2.0",
+                    "SGI B License, Version 2.0",
+                    "SGI B License 2.0",
+                    "SGI-B License, Version 2.0",
+                    "SGI-B License, 2.0",
+                    "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
+                    "SGI Free Software License B, version 2.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:sgi-freeb-2.0"
+                ],
+                "canonicalName": "SGI B License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "SGI B License 2.0",
+                        "SGI-B-2.0",
+                        "scancode:sgi-freeb-2.0"
+                    ],
+                    "__impliedId": "SGI-B-2.0",
+                    "__impliedAmbiguousNames": [
+                        "SGI B, Version 2.0",
+                        "SGI B, 2.0",
+                        "SGI-B, Version 2.0",
+                        "SGI-B, 2.0",
+                        "SGI B License, Version 2.0",
+                        "SGI B License 2.0",
+                        "SGI-B License, Version 2.0",
+                        "SGI-B License, 2.0",
+                        "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
+                        "SGI Free Software License B, version 2.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SGI B"
+                            ]
                         ]
                     ]
                 }

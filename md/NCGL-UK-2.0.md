@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:ncgl-uk-2.0`
+
 -   `scancode://ncgl-uk-2.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Non-Commercial Government Licence” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Non-Commercial-Government-Licence.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -106,6 +112,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Non-Commercial-Government-Licence.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/NCGL-UK-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -118,9 +128,21 @@
         "__impliedNames": [
             "NCGL-UK-2.0",
             "Non-Commercial Government Licence",
+            "scancode:ncgl-uk-2.0",
             "scancode://ncgl-uk-2.0"
         ],
         "__impliedId": "NCGL-UK-2.0",
+        "__impliedAmbiguousNames": [
+            "Non-Commercial Government Licence"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Non-Commercial Government Licence"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -198,6 +220,38 @@
                         [
                             null,
                             "https://github.com/spdx/license-list-XML/blob/master/src/Apache-2.0.xml"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NCGL-UK-2.0",
+                "shortName": null,
+                "category": "Non-Commercial Government Licence",
+                "alternativeNames": [
+                    "Non-Commercial Government Licence"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Non-Commercial-Government-Licence.yaml",
+                "otherIds": [
+                    "scancode:ncgl-uk-2.0"
+                ],
+                "canonicalName": "Non-Commercial Government Licence",
+                "_implications": {
+                    "__impliedNames": [
+                        "Non-Commercial Government Licence",
+                        "NCGL-UK-2.0",
+                        "scancode:ncgl-uk-2.0"
+                    ],
+                    "__impliedId": "NCGL-UK-2.0",
+                    "__impliedAmbiguousNames": [
+                        "Non-Commercial Government Licence"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Non-Commercial Government Licence"
+                            ]
                         ]
                     ]
                 }

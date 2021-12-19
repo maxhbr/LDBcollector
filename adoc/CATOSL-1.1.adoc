@@ -11,6 +11,8 @@
 
 *Other Names:*
 
+* `scancode:ca-tosl-1.1`
+* `osi:CATOSL-1.1`
 * `Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)`
 * `ca-tosl1.1`
 * `Computer Associates Trusted Open Source License, Version 1.1`
@@ -29,6 +31,9 @@ Project Wiki]
 
 === General Comments
 
+* ``category: CATOSL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Computer-Associates-Trusted-Open-Source-License-1.1.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this license is OSI certifified.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ca-tosl-1.1.yml[Scancode]
 (CC0-1.0))
@@ -411,6 +416,8 @@ Project Wiki]
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Computer-Associates-Trusted-Open-Source-License-1.1.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -430,6 +437,8 @@ repository] is generated)
     "__impliedNames": [
         "CATOSL-1.1",
         "Computer Associates Trusted Open Source License 1.1",
+        "scancode:ca-tosl-1.1",
+        "osi:CATOSL-1.1",
         "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)",
         "ca-tosl1.1",
         "Computer Associates Trusted Open Source License, Version 1.1",
@@ -439,9 +448,19 @@ repository] is generated)
     "__impliedId": "CATOSL-1.1",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "CATOSL"
+        "CATOSL",
+        "CATOSL, Version 1.1",
+        "CATOSL, 1.1",
+        "CATOSL-1.1",
+        "Computer Associates Trusted Open Source License Version 1.1"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CATOSL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -646,6 +665,46 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "CATOSL-1.1"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CATOSL-1.1",
+            "shortName": null,
+            "category": "CATOSL",
+            "alternativeNames": [
+                "CATOSL, Version 1.1",
+                "CATOSL, 1.1",
+                "CATOSL-1.1",
+                "Computer Associates Trusted Open Source License Version 1.1"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Computer-Associates-Trusted-Open-Source-License-1.1.yaml",
+            "otherIds": [
+                "scancode:ca-tosl-1.1",
+                "osi:CATOSL-1.1"
+            ],
+            "canonicalName": "Computer Associates Trusted Open Source License 1.1",
+            "_implications": {
+                "__impliedNames": [
+                    "Computer Associates Trusted Open Source License 1.1",
+                    "CATOSL-1.1",
+                    "scancode:ca-tosl-1.1",
+                    "osi:CATOSL-1.1"
+                ],
+                "__impliedId": "CATOSL-1.1",
+                "__impliedAmbiguousNames": [
+                    "CATOSL, Version 1.1",
+                    "CATOSL, 1.1",
+                    "CATOSL-1.1",
+                    "Computer Associates Trusted Open Source License Version 1.1"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CATOSL"
+                        ]
+                    ]
                 ]
             }
         },

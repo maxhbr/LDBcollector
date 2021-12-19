@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:postgresql`
+
+-   `osi:PostgreSQL`
+
 -   `The PostgreSQL Licence`
 
 -   `scancode://postgresql`
@@ -35,6 +39,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: PostgreSQL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/PostgreSQL-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/postgresql.yml "Scancode")
@@ -140,6 +148,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/PostgreSQL-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -167,15 +179,26 @@
             "PostgreSQL",
             "PostgreSQL License",
             "postgresql",
+            "scancode:postgresql",
+            "osi:PostgreSQL",
             "The PostgreSQL Licence",
             "scancode://postgresql"
         ],
         "__impliedId": "PostgreSQL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "PostgreSQL"
+            "PostgreSQL",
+            "License: PostgreSQL",
+            "PostgreSQL License",
+            "POSTGRESQL License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: PostgreSQL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -455,6 +478,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/608"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "PostgreSQL",
+                "shortName": null,
+                "category": "PostgreSQL",
+                "alternativeNames": [
+                    "License: PostgreSQL",
+                    "PostgreSQL License",
+                    "POSTGRESQL License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/PostgreSQL-License.yaml",
+                "otherIds": [
+                    "scancode:postgresql",
+                    "osi:PostgreSQL"
+                ],
+                "canonicalName": "PostgreSQL License",
+                "_implications": {
+                    "__impliedNames": [
+                        "PostgreSQL License",
+                        "PostgreSQL",
+                        "scancode:postgresql",
+                        "osi:PostgreSQL"
+                    ],
+                    "__impliedId": "PostgreSQL",
+                    "__impliedAmbiguousNames": [
+                        "License: PostgreSQL",
+                        "PostgreSQL License",
+                        "POSTGRESQL License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: PostgreSQL"
+                            ]
                         ]
                     ]
                 }

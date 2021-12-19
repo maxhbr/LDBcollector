@@ -1,11 +1,28 @@
 {
     "__impliedNames": [
         "RHeCos-1.1",
+        "RHeCos License 1.1",
+        "scancode:ecosrh-1.1",
         "Red Hat eCos Public License v1.1",
         "scancode://ecosrh-1.1",
         "Red Hat eCos Public License 1.1"
     ],
     "__impliedId": "RHeCos-1.1",
+    "__impliedAmbiguousNames": [
+        "RHeCos, Version 1.1",
+        "RHeCos 1.1",
+        "RHeCos License, Version 1.1",
+        "RHeCos License, 1.1",
+        "Red Hat eCos Public License v1.1"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: RHeCos"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -98,6 +115,46 @@
             },
             "licensename": "RHeCos-1.1",
             "copyleftkind": "WeakCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "RHeCos-1.1",
+            "shortName": null,
+            "category": "RHeCos",
+            "alternativeNames": [
+                "RHeCos, Version 1.1",
+                "RHeCos 1.1",
+                "RHeCos License, Version 1.1",
+                "RHeCos License, 1.1",
+                "Red Hat eCos Public License v1.1"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rh]/RHeCos-License-1.1.yaml",
+            "otherIds": [
+                "scancode:ecosrh-1.1"
+            ],
+            "canonicalName": "RHeCos License 1.1",
+            "_implications": {
+                "__impliedNames": [
+                    "RHeCos License 1.1",
+                    "RHeCos-1.1",
+                    "scancode:ecosrh-1.1"
+                ],
+                "__impliedId": "RHeCos-1.1",
+                "__impliedAmbiguousNames": [
+                    "RHeCos, Version 1.1",
+                    "RHeCos 1.1",
+                    "RHeCos License, Version 1.1",
+                    "RHeCos License, 1.1",
+                    "Red Hat eCos Public License v1.1"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: RHeCos"
+                        ]
+                    ]
+                ]
+            }
         }
     },
     "__impliedCopyleft": [

@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `scancode:rdisc`
 * `scancode://rdisc`
 
 === Comments on (easy) usability
@@ -25,6 +26,9 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === General Comments
 
+* ``category: Rdisc'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rd]/Rdisc-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per Fedora, this is a permissive style license from Sun, Free and
 GPL compatible. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml[Scancode]
@@ -62,6 +66,8 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rd]/Rdisc-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/Rdisc.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml[Scancode]
@@ -74,14 +80,24 @@ repository] is generated)
     "__impliedNames": [
         "Rdisc",
         "Rdisc License",
+        "scancode:rdisc",
         "scancode://rdisc"
     ],
     "__impliedId": "Rdisc",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Rdisc"
+        "Rdisc",
+        "Rdisc License",
+        "RDISC LICENSE",
+        "RDISC License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Rdisc"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -199,6 +215,42 @@ repository] is generated)
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Rdisc_License"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Rdisc",
+            "shortName": null,
+            "category": "Rdisc",
+            "alternativeNames": [
+                "Rdisc License",
+                "RDISC LICENSE",
+                "RDISC License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rd]/Rdisc-License.yaml",
+            "otherIds": [
+                "scancode:rdisc"
+            ],
+            "canonicalName": "Rdisc License",
+            "_implications": {
+                "__impliedNames": [
+                    "Rdisc License",
+                    "Rdisc",
+                    "scancode:rdisc"
+                ],
+                "__impliedId": "Rdisc",
+                "__impliedAmbiguousNames": [
+                    "Rdisc License",
+                    "RDISC LICENSE",
+                    "RDISC License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Rdisc"
+                        ]
                     ]
                 ]
             }

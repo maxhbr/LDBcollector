@@ -3,12 +3,24 @@
         "ClArtistic",
         "Artistic (clarified)",
         "Clarified Artistic License",
+        "ClArtistic License",
+        "scancode:artistic-clarified",
         "scancode://artistic-clarified"
     ],
     "__impliedId": "ClArtistic",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Artistic clarified"
+        "Artistic clarified",
+        "ClArtistic",
+        "CLARTISTIC"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: ClArtistic"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -160,6 +172,40 @@
             "oJudgement": null,
             "oCompatibilities": null,
             "oRatingState": null
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "ClArtistic",
+            "shortName": null,
+            "category": "ClArtistic",
+            "alternativeNames": [
+                "ClArtistic",
+                "CLARTISTIC"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cl]/ClArtistic-License.yaml",
+            "otherIds": [
+                "scancode:artistic-clarified"
+            ],
+            "canonicalName": "ClArtistic License",
+            "_implications": {
+                "__impliedNames": [
+                    "ClArtistic License",
+                    "ClArtistic",
+                    "scancode:artistic-clarified"
+                ],
+                "__impliedId": "ClArtistic",
+                "__impliedAmbiguousNames": [
+                    "ClArtistic",
+                    "CLARTISTIC"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: ClArtistic"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

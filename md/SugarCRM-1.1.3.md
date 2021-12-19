@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `SugarCRM License 1.1.3`
+
 -   `scancode://sugarcrm-1.1.3`
 
 -   `SugarCRM Public License 1.1.3`
@@ -11,6 +13,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: SugarCRM” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[su]/SugarCRM-License-1.1.3.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -190,6 +196,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[su]/SugarCRM-License-1.1.3.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SugarCRM-1.1.3.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -201,11 +211,27 @@
     {
         "__impliedNames": [
             "SugarCRM-1.1.3",
+            "SugarCRM License 1.1.3",
             "SugarCRM Public License v1.1.3",
             "scancode://sugarcrm-1.1.3",
             "SugarCRM Public License 1.1.3"
         ],
         "__impliedId": "SugarCRM-1.1.3",
+        "__impliedAmbiguousNames": [
+            "SugarCRM, Version 1.1.3",
+            "SugarCRM 1.1.3",
+            "SugarCRM License, Version 1.1.3",
+            "SugarCRM License 1.1.3",
+            "SUGARCRM PUBLIC LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SugarCRM"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -304,6 +330,43 @@
                 },
                 "licensename": "SugarCRM-1.1.3",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SugarCRM-1.1.3",
+                "shortName": null,
+                "category": "SugarCRM",
+                "alternativeNames": [
+                    "SugarCRM, Version 1.1.3",
+                    "SugarCRM 1.1.3",
+                    "SugarCRM License, Version 1.1.3",
+                    "SugarCRM License 1.1.3",
+                    "SUGARCRM PUBLIC LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[su]/SugarCRM-License-1.1.3.yaml",
+                "otherIds": [],
+                "canonicalName": "SugarCRM License 1.1.3",
+                "_implications": {
+                    "__impliedNames": [
+                        "SugarCRM License 1.1.3",
+                        "SugarCRM-1.1.3"
+                    ],
+                    "__impliedId": "SugarCRM-1.1.3",
+                    "__impliedAmbiguousNames": [
+                        "SugarCRM, Version 1.1.3",
+                        "SugarCRM 1.1.3",
+                        "SugarCRM License, Version 1.1.3",
+                        "SugarCRM License 1.1.3",
+                        "SUGARCRM PUBLIC LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SugarCRM"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

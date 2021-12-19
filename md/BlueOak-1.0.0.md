@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:blueoak-1.0.0`
+
 -   `scancode://blueoak-1.0.0`
 
 ## Comments on (easy) usability
@@ -13,6 +15,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BlueOak” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bl]/Blue-Oak-Model-License-1.0.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -90,6 +96,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bl]/Blue-Oak-Model-License-1.0.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BlueOak-1.0.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -102,9 +112,23 @@
         "__impliedNames": [
             "BlueOak-1.0.0",
             "Blue Oak Model License 1.0.0",
+            "scancode:blueoak-1.0.0",
             "scancode://blueoak-1.0.0"
         ],
         "__impliedId": "BlueOak-1.0.0",
+        "__impliedAmbiguousNames": [
+            "Blue Oak Model License 1.0.0",
+            "BlueOak-1.0.0",
+            "Blue Oak Model License Version 1.0.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BlueOak"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -184,6 +208,42 @@
                         [
                             null,
                             "https://blueoakcouncil.org/license/1.0.0"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BlueOak-1.0.0",
+                "shortName": null,
+                "category": "BlueOak",
+                "alternativeNames": [
+                    "Blue Oak Model License 1.0.0",
+                    "BlueOak-1.0.0",
+                    "Blue Oak Model License Version 1.0.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bl]/Blue-Oak-Model-License-1.0.0.yaml",
+                "otherIds": [
+                    "scancode:blueoak-1.0.0"
+                ],
+                "canonicalName": "Blue Oak Model License 1.0.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Blue Oak Model License 1.0.0",
+                        "BlueOak-1.0.0",
+                        "scancode:blueoak-1.0.0"
+                    ],
+                    "__impliedId": "BlueOak-1.0.0",
+                    "__impliedAmbiguousNames": [
+                        "Blue Oak Model License 1.0.0",
+                        "BlueOak-1.0.0",
+                        "Blue Oak Model License Version 1.0.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BlueOak"
+                            ]
                         ]
                     ]
                 }

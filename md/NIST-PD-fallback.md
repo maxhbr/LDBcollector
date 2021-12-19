@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `NIST Public Domain Notice (with license fallback)`
+
+-   `scancode:nist-pd-fallback`
+
 -   `scancode://nist-pd-fallback`
 
 -   `NIST Public Domain Notice with fallback`
@@ -11,6 +15,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: NIST Public Domain Notice” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ni]/NIST-Public-Domain-Notice-(with-license-fallback).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -55,6 +63,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ni]/NIST-Public-Domain-Notice-(with-license-fallback).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/NIST-PD-fallback.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -66,11 +78,24 @@
     {
         "__impliedNames": [
             "NIST-PD-fallback",
+            "NIST Public Domain Notice (with license fallback)",
+            "scancode:nist-pd-fallback",
             "NIST Public Domain Notice with license fallback",
             "scancode://nist-pd-fallback",
             "NIST Public Domain Notice with fallback"
         ],
         "__impliedId": "NIST-PD-fallback",
+        "__impliedAmbiguousNames": [
+            "NIST Public Domain Notice (with license fallback)"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NIST Public Domain Notice"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -149,6 +174,38 @@
                         [
                             "Homepage",
                             "https://github.com/usnistgov/jsip/blob/59700e6926cbe96c5cdae897d9a7d2656b42abe3/LICENSE"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NIST-PD-fallback",
+                "shortName": null,
+                "category": "NIST Public Domain Notice",
+                "alternativeNames": [
+                    "NIST Public Domain Notice (with license fallback)"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ni]/NIST-Public-Domain-Notice-(with-license-fallback).yaml",
+                "otherIds": [
+                    "scancode:nist-pd-fallback"
+                ],
+                "canonicalName": "NIST Public Domain Notice (with license fallback)",
+                "_implications": {
+                    "__impliedNames": [
+                        "NIST Public Domain Notice (with license fallback)",
+                        "NIST-PD-fallback",
+                        "scancode:nist-pd-fallback"
+                    ],
+                    "__impliedId": "NIST-PD-fallback",
+                    "__impliedAmbiguousNames": [
+                        "NIST Public Domain Notice (with license fallback)"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NIST Public Domain Notice"
+                            ]
                         ]
                     ]
                 }

@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `CERN Open Hardware Licence Strongly Reciprocal 2.0`
+
+-   `scancode:cern-ohl-s-2.0`
+
 -   `scancode://cern-ohl-s-2.0`
 
 ## Comments on (easy) usability
@@ -13,6 +17,11 @@
     data \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: CERN Open Hardware Licence Strongly Reciprocal” (source:
+    [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Strongly-Reciprocal-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -329,6 +338,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Strongly-Reciprocal-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CERN-OHL-S-2.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -340,10 +353,24 @@
     {
         "__impliedNames": [
             "CERN-OHL-S-2.0",
+            "CERN Open Hardware Licence Strongly Reciprocal 2.0",
+            "scancode:cern-ohl-s-2.0",
             "CERN Open Hardware Licence Version 2 - Strongly Reciprocal",
             "scancode://cern-ohl-s-2.0"
         ],
         "__impliedId": "CERN-OHL-S-2.0",
+        "__impliedAmbiguousNames": [
+            "cern-ohl-s-2.0",
+            "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CERN Open Hardware Licence Strongly Reciprocal"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -446,6 +473,40 @@
                         [
                             null,
                             "https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CERN-OHL-S-2.0",
+                "shortName": null,
+                "category": "CERN Open Hardware Licence Strongly Reciprocal",
+                "alternativeNames": [
+                    "cern-ohl-s-2.0",
+                    "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Strongly-Reciprocal-2.0.yaml",
+                "otherIds": [
+                    "scancode:cern-ohl-s-2.0"
+                ],
+                "canonicalName": "CERN Open Hardware Licence Strongly Reciprocal 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CERN Open Hardware Licence Strongly Reciprocal 2.0",
+                        "CERN-OHL-S-2.0",
+                        "scancode:cern-ohl-s-2.0"
+                    ],
+                    "__impliedId": "CERN-OHL-S-2.0",
+                    "__impliedAmbiguousNames": [
+                        "cern-ohl-s-2.0",
+                        "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CERN Open Hardware Licence Strongly Reciprocal"
+                            ]
                         ]
                     ]
                 }

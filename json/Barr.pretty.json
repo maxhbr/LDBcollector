@@ -2,13 +2,25 @@
     "__impliedNames": [
         "Barr",
         "Barr License",
+        "scancode:barr-tex",
         "scancode://barr-tex",
         "Barr TeX License"
     ],
     "__impliedId": "Barr",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Barr"
+        "Barr",
+        "Barr License",
+        "BARR LICENSE",
+        "BARR License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Barr"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -112,6 +124,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Barr"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Barr",
+            "shortName": null,
+            "category": "Barr",
+            "alternativeNames": [
+                "Barr License",
+                "BARR LICENSE",
+                "BARR License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[ba]/Barr-License.yaml",
+            "otherIds": [
+                "scancode:barr-tex"
+            ],
+            "canonicalName": "Barr License",
+            "_implications": {
+                "__impliedNames": [
+                    "Barr License",
+                    "Barr",
+                    "scancode:barr-tex"
+                ],
+                "__impliedId": "Barr",
+                "__impliedAmbiguousNames": [
+                    "Barr License",
+                    "BARR LICENSE",
+                    "BARR License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Barr"
+                        ]
                     ]
                 ]
             }

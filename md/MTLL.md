@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:mtll`
+
 -   `scancode://mtll`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: MTLL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mt]/MTLL.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license was found in the Matrix Template Library.
     It is derived from the Apache Software License v1.1, but it is
@@ -75,6 +81,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mt]/MTLL.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/MTLL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -87,14 +97,24 @@
         "__impliedNames": [
             "MTLL",
             "Matrix Template Library License",
+            "scancode:mtll",
             "scancode://mtll"
         ],
         "__impliedId": "MTLL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MTLL"
+            "MTLL",
+            "MTL License",
+            "MTL LICENSE",
+            "Software License for MTL"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MTLL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -212,6 +232,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MTLL",
+                "shortName": null,
+                "category": "MTLL",
+                "alternativeNames": [
+                    "MTL License",
+                    "MTL LICENSE",
+                    "Software License for MTL"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mt]/MTLL.yaml",
+                "otherIds": [
+                    "scancode:mtll"
+                ],
+                "canonicalName": "MTLL",
+                "_implications": {
+                    "__impliedNames": [
+                        "MTLL",
+                        "MTLL",
+                        "scancode:mtll"
+                    ],
+                    "__impliedId": "MTLL",
+                    "__impliedAmbiguousNames": [
+                        "MTL License",
+                        "MTL LICENSE",
+                        "Software License for MTL"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MTLL"
+                            ]
                         ]
                     ]
                 }

@@ -2,9 +2,19 @@
 
 [TABLE]
 
+**Other Names:**
+
+-   `Creative Commons BY 3.0 (Austria)`
+
+-   `scancode:cc-by-3.0-at`
+
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: CC-BY” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-3.0-(Austria).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -20,6 +30,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-3.0-(Austria).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-3.0-AT.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -28,9 +42,22 @@
     {
         "__impliedNames": [
             "CC-BY-3.0-AT",
+            "Creative Commons BY 3.0 (Austria)",
+            "scancode:cc-by-3.0-at",
             "Creative Commons Attribution 3.0 Austria"
         ],
         "__impliedId": "CC-BY-3.0-AT",
+        "__impliedAmbiguousNames": [
+            "Creative Commons BY 3.0 (Austria)"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -70,6 +97,38 @@
                     ]
                 },
                 "spdxLicenseId": "CC-BY-3.0-AT"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-3.0-AT",
+                "shortName": null,
+                "category": "CC-BY",
+                "alternativeNames": [
+                    "Creative Commons BY 3.0 (Austria)"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-3.0-(Austria).yaml",
+                "otherIds": [
+                    "scancode:cc-by-3.0-at"
+                ],
+                "canonicalName": "Creative Commons BY 3.0 (Austria)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY 3.0 (Austria)",
+                        "CC-BY-3.0-AT",
+                        "scancode:cc-by-3.0-at"
+                    ],
+                    "__impliedId": "CC-BY-3.0-AT",
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons BY 3.0 (Austria)"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__isOsiApproved": false,

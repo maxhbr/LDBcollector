@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:isc`
+
+-   `osi:ISC`
+
 -   `isc-license`
 
 -   `ISC License (ISC)`
@@ -50,6 +54,10 @@
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: ISC” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[is]/ISC-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
@@ -172,6 +180,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[is]/ISC-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -209,6 +221,8 @@
             "ISC",
             "ISC License",
             "isc",
+            "scancode:isc",
+            "osi:ISC",
             "isc-license",
             "ISC License (ISC)",
             "License :: OSI Approved :: ISC License (ISCL)",
@@ -217,13 +231,22 @@
         ],
         "__impliedId": "ISC",
         "__impliedAmbiguousNames": [
-            "ISC license"
+            "ISC license",
+            "ISC License",
+            "ISC Terms",
+            "ISC Permission"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://www.isc.org/downloads/software-support-policy/isc-license/"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ISC"
                 ]
             ],
             [
@@ -597,6 +620,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/379"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ISC",
+                "shortName": null,
+                "category": "ISC",
+                "alternativeNames": [
+                    "ISC License",
+                    "ISC Terms",
+                    "ISC Permission"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[is]/ISC-License.yaml",
+                "otherIds": [
+                    "scancode:isc",
+                    "osi:ISC"
+                ],
+                "canonicalName": "ISC License",
+                "_implications": {
+                    "__impliedNames": [
+                        "ISC License",
+                        "ISC",
+                        "scancode:isc",
+                        "osi:ISC"
+                    ],
+                    "__impliedId": "ISC",
+                    "__impliedAmbiguousNames": [
+                        "ISC License",
+                        "ISC Terms",
+                        "ISC Permission"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ISC"
+                            ]
                         ]
                     ]
                 }

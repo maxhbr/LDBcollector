@@ -8,11 +8,37 @@
 
 -   `BSD License (no advertising)`
 
+-   `BSD 3-Clause License (copyright variant)`
+
+-   `BSD-3-Clause-Copyright`
+
+-   `scancode:bsd-3-clause-no-trademark`
+
+-   `scancode:bsd-new`
+
+-   `osi:BSD-3`
+
+-   `scancode:bsd-new-nomod`
+
+-   `BSD 3-Clause License Var001`
+
+-   `BSD-3-Clause-001`
+
+-   `scancode:libzip`
+
+-   `scancode:twisted-snmp`
+
+-   `scancode:bsd-3-clause-no-change`
+
+-   `scancode:bsd-intel`
+
+-   `BSD 3-Clause License`
+
+-   `osi:BSD-3-Clause`
+
 -   `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
 
 -   `BSD-3`
-
--   `BSD 3-Clause License`
 
 -   `License :: OSI Approved :: BSD License`
 
@@ -74,6 +100,10 @@
     [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(copyright-variant).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml "Scancode")
@@ -216,6 +246,18 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(copyright-variant).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-Var001.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -252,9 +294,22 @@
             "BSD License (no advertising)",
             "BSD 3-Clause \"New\" or \"Revised\" License",
             "bsd-3-clause",
+            "BSD 3-Clause License (copyright variant)",
+            "BSD-3-Clause-Copyright",
+            "scancode:bsd-3-clause-no-trademark",
+            "scancode:bsd-new",
+            "osi:BSD-3",
+            "scancode:bsd-new-nomod",
+            "BSD 3-Clause License Var001",
+            "BSD-3-Clause-001",
+            "scancode:libzip",
+            "scancode:twisted-snmp",
+            "scancode:bsd-3-clause-no-change",
+            "scancode:bsd-intel",
+            "BSD 3-Clause License",
+            "osi:BSD-3-Clause",
             "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
             "BSD-3",
-            "BSD 3-Clause License",
             "BSD-3-clause",
             "License :: OSI Approved :: BSD License",
             "Revised BSD License",
@@ -266,7 +321,43 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The BSD-3-clause License",
-            "BSD"
+            "BSD",
+            "http://asm.objectweb.org/license.html",
+            "3-Clause BSD License",
+            "3-clause BSD",
+            "BSD-3",
+            "BSD3",
+            "Three-clause BSD-style",
+            "bsd_3",
+            "Modified BSD License",
+            "Modified BSD Licence",
+            "Modified BSD licence",
+            "Modified BSD license",
+            "modified BSD License",
+            "modified BSD Licence",
+            "modified BSD licence",
+            "modified BSD license",
+            "Modified BSD (3-clause)",
+            "BSD New",
+            "New BSD",
+            "(New) BSD License",
+            "new BSD license",
+            "Revised BSD",
+            "3-clause (new-style) BSD license",
+            "BSD (3-point)",
+            "BSD 3",
+            "BSD Licence 3",
+            "BSD License (3-Clause)",
+            "BSD License 3 Clause",
+            "BSD License, 3-Clause",
+            "BSD License, Revised",
+            "BSD License, Version 3.0",
+            "BSD revised License",
+            "BSD Revised",
+            "NewBSD Licence",
+            "Three clause BSD license",
+            "TinySCHEME License",
+            "3 clause BSD license"
         ],
         "__impliedComments": [
             [
@@ -274,6 +365,12 @@
                 [
                     "BSD-3-Clause",
                     "<OWNER> would be the equivalent of a copyright holder."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
                 ]
             ],
             [
@@ -655,6 +752,44 @@
                     ]
                 },
                 "description": "<OWNER> would be the equivalent of a copyright holder."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "BSD-3-Clause-Copyright",
+                "category": "BSD",
+                "alternativeNames": [
+                    "http://asm.objectweb.org/license.html"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(copyright-variant).yaml",
+                "otherIds": [
+                    "scancode:bsd-3-clause-no-trademark",
+                    "scancode:bsd-new",
+                    "osi:BSD-3",
+                    "scancode:bsd-new-nomod"
+                ],
+                "canonicalName": "BSD 3-Clause License (copyright variant)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause License (copyright variant)",
+                        "BSD-3-Clause-Copyright",
+                        "scancode:bsd-3-clause-no-trademark",
+                        "scancode:bsd-new",
+                        "osi:BSD-3",
+                        "scancode:bsd-new-nomod"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Copyright",
+                    "__impliedAmbiguousNames": [
+                        "http://asm.objectweb.org/license.html"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

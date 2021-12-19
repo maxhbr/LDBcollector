@@ -2,19 +2,32 @@
     "__impliedNames": [
         "EUDatagrid",
         "EU Datagrid Software License",
+        "EUDatagrid License",
+        "scancode:eu-datagrid",
+        "osi:EUDatagrid",
         "EU DataGrid Software License",
         "scancode://eu-datagrid"
     ],
     "__impliedId": "EUDatagrid",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "EU Datagrid"
+        "EU Datagrid",
+        "EUDatagrid License",
+        "EUDATAGRID LICENSE",
+        "EUDATAGRID License",
+        "EU DataGrid Software License"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "https://opensource.org/licenses/EUDatagrid"
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: EUDatagrid"
             ]
         ],
         [
@@ -369,6 +382,46 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/1546"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "EUDatagrid",
+            "shortName": null,
+            "category": "EUDatagrid",
+            "alternativeNames": [
+                "EUDatagrid License",
+                "EUDATAGRID LICENSE",
+                "EUDATAGRID License",
+                "EU DataGrid Software License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/EUDatagrid-License.yaml",
+            "otherIds": [
+                "scancode:eu-datagrid",
+                "osi:EUDatagrid"
+            ],
+            "canonicalName": "EUDatagrid License",
+            "_implications": {
+                "__impliedNames": [
+                    "EUDatagrid License",
+                    "EUDatagrid",
+                    "scancode:eu-datagrid",
+                    "osi:EUDatagrid"
+                ],
+                "__impliedId": "EUDatagrid",
+                "__impliedAmbiguousNames": [
+                    "EUDatagrid License",
+                    "EUDATAGRID LICENSE",
+                    "EUDATAGRID License",
+                    "EU DataGrid Software License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: EUDatagrid"
+                        ]
                     ]
                 ]
             }

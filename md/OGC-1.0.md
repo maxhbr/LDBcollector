@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `OGC Software License 1.0`
+
+-   `scancode:ogc-1.0`
+
+-   `scancode:ogc-2006`
+
 -   `scancode://ogc-1.0`
 
 -   `OGC 1.0`
@@ -11,6 +17,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: OGC Software License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[og]/OGC-Software-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -68,6 +78,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[og]/OGC-Software-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/OGC-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -79,11 +93,25 @@
     {
         "__impliedNames": [
             "OGC-1.0",
+            "OGC Software License 1.0",
+            "scancode:ogc-1.0",
+            "scancode:ogc-2006",
             "OGC Software License, Version 1.0",
             "scancode://ogc-1.0",
             "OGC 1.0"
         ],
         "__impliedId": "OGC-1.0",
+        "__impliedAmbiguousNames": [
+            "OGC Software License, Version 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OGC Software License"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -157,6 +185,40 @@
                         [
                             "Homepage",
                             "https://www.ogc.org/ogc/software/1.0"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OGC-1.0",
+                "shortName": null,
+                "category": "OGC Software License",
+                "alternativeNames": [
+                    "OGC Software License, Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[og]/OGC-Software-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:ogc-1.0",
+                    "scancode:ogc-2006"
+                ],
+                "canonicalName": "OGC Software License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "OGC Software License 1.0",
+                        "OGC-1.0",
+                        "scancode:ogc-1.0",
+                        "scancode:ogc-2006"
+                    ],
+                    "__impliedId": "OGC-1.0",
+                    "__impliedAmbiguousNames": [
+                        "OGC Software License, Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OGC Software License"
+                            ]
                         ]
                     ]
                 }

@@ -1,12 +1,25 @@
 {
     "__impliedNames": [
         "CECILL-2.0",
+        "CeCILL Free Software License Agreement 2.0",
+        "scancode:cecill-2.0",
         "CeCILL Free Software License Agreement v2.0",
         "scancode://cecill-2.0",
         "CeCILL 2.0"
     ],
     "__impliedId": "CECILL-2.0",
+    "__impliedAmbiguousNames": [
+        "CeCILL Free Software License Agreement v2.0",
+        "CECILL-2.0",
+        "CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CECILL-2.0"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -114,6 +127,42 @@
             },
             "licensename": "CECILL-2.0",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CECILL-2.0",
+            "shortName": null,
+            "category": "CECILL-2.0",
+            "alternativeNames": [
+                "CeCILL Free Software License Agreement v2.0",
+                "CECILL-2.0",
+                "CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-Free-Software-License-Agreement-2.0.yaml",
+            "otherIds": [
+                "scancode:cecill-2.0"
+            ],
+            "canonicalName": "CeCILL Free Software License Agreement 2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "CeCILL Free Software License Agreement 2.0",
+                    "CECILL-2.0",
+                    "scancode:cecill-2.0"
+                ],
+                "__impliedId": "CECILL-2.0",
+                "__impliedAmbiguousNames": [
+                    "CeCILL Free Software License Agreement v2.0",
+                    "CECILL-2.0",
+                    "CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CECILL-2.0"
+                        ]
+                    ]
+                ]
+            }
         }
     },
     "__impliedCopyleft": [

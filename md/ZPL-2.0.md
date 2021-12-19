@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:zpl-2.0`
+
+-   `osi:ZPL-2.0`
+
 -   `The Zope Public License, Version 2.0`
 
 -   `Zope-2.0`
@@ -35,6 +39,10 @@
 -   “https://opensource.org/licenses/ZPL-2.0” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: ZPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.0.yml "Scancode")
@@ -204,6 +212,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -234,6 +246,8 @@
         "__impliedNames": [
             "ZPL-2.0",
             "Zope Public License 2.0",
+            "scancode:zpl-2.0",
+            "osi:ZPL-2.0",
             "The Zope Public License, Version 2.0",
             "Zope-2.0",
             "License :: OSI Approved :: Zope Public License",
@@ -242,11 +256,22 @@
             "ZPL 2.0"
         ],
         "__impliedId": "ZPL-2.0",
+        "__impliedAmbiguousNames": [
+            "Zope Public License 2.0",
+            "ZPL-2.0",
+            "Zope Public License (ZPL) Version 2.0"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/ZPL-2.0"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ZPL"
                 ]
             ],
             [
@@ -609,6 +634,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/825"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ZPL-2.0",
+                "shortName": null,
+                "category": "ZPL",
+                "alternativeNames": [
+                    "Zope Public License 2.0",
+                    "ZPL-2.0",
+                    "Zope Public License (ZPL) Version 2.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:zpl-2.0",
+                    "osi:ZPL-2.0"
+                ],
+                "canonicalName": "Zope Public License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Zope Public License 2.0",
+                        "ZPL-2.0",
+                        "scancode:zpl-2.0",
+                        "osi:ZPL-2.0"
+                    ],
+                    "__impliedId": "ZPL-2.0",
+                    "__impliedAmbiguousNames": [
+                        "Zope Public License 2.0",
+                        "ZPL-2.0",
+                        "Zope Public License (ZPL) Version 2.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ZPL"
+                            ]
                         ]
                     ]
                 }

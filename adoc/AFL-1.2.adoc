@@ -11,6 +11,8 @@
 
 *Other Names:*
 
+* `Academic Free License 1.2`
+* `scancode:afl-1.2`
 * `scancode://afl-1.2`
 * `AFL 1.2`
 
@@ -25,6 +27,9 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === General Comments
 
+* ``category: AFL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-1.2.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this license has been superseded by later versions.
 This license was OSI certified. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.2.yml[Scancode]
@@ -145,6 +150,8 @@ license-compatibility-checker]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-1.2.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/AFL-1.2.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.2.yml[Scancode]
@@ -157,11 +164,24 @@ repository] is generated)
     "__impliedNames": [
         "AFL-1.2",
         "Academic Free License v1.2",
+        "Academic Free License 1.2",
+        "scancode:afl-1.2",
         "scancode://afl-1.2",
         "AFL 1.2"
     ],
     "__impliedId": "AFL-1.2",
+    "__impliedAmbiguousNames": [
+        "AFL, Version 1.2",
+        "AFL, 1.2",
+        "AFL-1.2"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: AFL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -310,6 +330,42 @@ repository] is generated)
             },
             "licensename": "AFL-1.2",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "AFL-1.2",
+            "shortName": null,
+            "category": "AFL",
+            "alternativeNames": [
+                "AFL, Version 1.2",
+                "AFL, 1.2",
+                "AFL-1.2"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-1.2.yaml",
+            "otherIds": [
+                "scancode:afl-1.2"
+            ],
+            "canonicalName": "Academic Free License 1.2",
+            "_implications": {
+                "__impliedNames": [
+                    "Academic Free License 1.2",
+                    "AFL-1.2",
+                    "scancode:afl-1.2"
+                ],
+                "__impliedId": "AFL-1.2",
+                "__impliedAmbiguousNames": [
+                    "AFL, Version 1.2",
+                    "AFL, 1.2",
+                    "AFL-1.2"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: AFL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

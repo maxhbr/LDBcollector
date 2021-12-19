@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Creative Commons BY-NC-SA 1.0 (generic)`
+
+-   `scancode:cc-by-nc-sa-1.0`
+
 -   `scancode://cc-by-nc-sa-1.0`
 
 ## Comments on (easy) usability
@@ -24,6 +28,10 @@
     (NOASSERTION))
 
 ## General Comments
+
+-   “category: CC-BY-NC-SA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-SA-1.0-(generic).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -111,6 +119,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-SA-1.0-(generic).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-SA-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -122,12 +134,17 @@
     {
         "__impliedNames": [
             "CC-BY-NC-SA-1.0",
+            "Creative Commons BY-NC-SA 1.0 (generic)",
+            "scancode:cc-by-nc-sa-1.0",
             "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic",
             "scancode://cc-by-nc-sa-1.0"
         ],
         "__impliedId": "CC-BY-NC-SA-1.0",
         "__impliedAmbiguousNames": [
-            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)"
+            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
+            "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic",
+            "CC-BY-NC-SA-1.0",
+            "Creative Commons Attribution-NonCommercial-ShareAlike 1.0"
         ],
         "__impliedRatingState": [
             [
@@ -138,6 +155,14 @@
                         "tag": "RNoGo"
                     }
                 }
+            ]
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-NC-SA"
+                ]
             ]
         ],
         "__impliedNonCommercial": true,
@@ -271,6 +296,42 @@
                     "contents": {
                         "tag": "RNoGo"
                     }
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-NC-SA-1.0",
+                "shortName": null,
+                "category": "CC-BY-NC-SA",
+                "alternativeNames": [
+                    "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic",
+                    "CC-BY-NC-SA-1.0",
+                    "Creative Commons Attribution-NonCommercial-ShareAlike 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-SA-1.0-(generic).yaml",
+                "otherIds": [
+                    "scancode:cc-by-nc-sa-1.0"
+                ],
+                "canonicalName": "Creative Commons BY-NC-SA 1.0 (generic)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY-NC-SA 1.0 (generic)",
+                        "CC-BY-NC-SA-1.0",
+                        "scancode:cc-by-nc-sa-1.0"
+                    ],
+                    "__impliedId": "CC-BY-NC-SA-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic",
+                        "CC-BY-NC-SA-1.0",
+                        "Creative Commons Attribution-NonCommercial-ShareAlike 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-NC-SA"
+                            ]
+                        ]
+                    ]
                 }
             },
             "Google OSS Policy": {

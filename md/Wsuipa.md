@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:wsuipa`
+
 -   `scancode://wsuipa`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Wsuipa” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[ws]/Wsuipa-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license was found on the "wsuipa" component of
     texlive 2010. It is Free, but GPL-incompatible. ” (source:
@@ -60,6 +66,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[ws]/Wsuipa-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Wsuipa.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -72,14 +82,24 @@
         "__impliedNames": [
             "Wsuipa",
             "Wsuipa License",
+            "scancode:wsuipa",
             "scancode://wsuipa"
         ],
         "__impliedId": "Wsuipa",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Wsuipa"
+            "Wsuipa",
+            "Wsuipa License",
+            "WSUIPA LICENSE",
+            "WSUIPA License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Wsuipa"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -197,6 +217,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Wsuipa"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Wsuipa",
+                "shortName": null,
+                "category": "Wsuipa",
+                "alternativeNames": [
+                    "Wsuipa License",
+                    "WSUIPA LICENSE",
+                    "WSUIPA License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[ws]/Wsuipa-License.yaml",
+                "otherIds": [
+                    "scancode:wsuipa"
+                ],
+                "canonicalName": "Wsuipa License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Wsuipa License",
+                        "Wsuipa",
+                        "scancode:wsuipa"
+                    ],
+                    "__impliedId": "Wsuipa",
+                    "__impliedAmbiguousNames": [
+                        "Wsuipa License",
+                        "WSUIPA LICENSE",
+                        "WSUIPA License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Wsuipa"
+                            ]
                         ]
                     ]
                 }

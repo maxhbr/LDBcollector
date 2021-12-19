@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:ruby`
+
 -   `Ruby License (1.9.2 and earlier)`
 
 -   `Ruby License (1.9.3 and later)`
@@ -30,6 +32,10 @@
 -   “https://www.ruby-lang.org/en/about/license.txt” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Ruby” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[ru]/Ruby-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “This version of the Ruby license is the latest found in the dual
     license COPYING dated from 2010-09-15 Per SPDX.org, Ruby is
@@ -188,6 +194,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[ru]/Ruby-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -208,6 +218,7 @@
         "__impliedNames": [
             "Ruby",
             "Ruby License",
+            "scancode:ruby",
             "Ruby License (1.9.2 and earlier)",
             "Ruby License (1.9.3 and later)",
             "scancode://ruby"
@@ -215,13 +226,20 @@
         "__impliedId": "Ruby",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Ruby"
+            "Ruby",
+            "Ruby License"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://www.ruby-lang.org/en/about/license.txt"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Ruby"
                 ]
             ],
             [
@@ -523,6 +541,38 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/2"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Ruby",
+                "shortName": null,
+                "category": "Ruby",
+                "alternativeNames": [
+                    "Ruby License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[ru]/Ruby-License.yaml",
+                "otherIds": [
+                    "scancode:ruby"
+                ],
+                "canonicalName": "Ruby License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Ruby License",
+                        "Ruby",
+                        "scancode:ruby"
+                    ],
+                    "__impliedId": "Ruby",
+                    "__impliedAmbiguousNames": [
+                        "Ruby License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Ruby"
+                            ]
                         ]
                     ]
                 }

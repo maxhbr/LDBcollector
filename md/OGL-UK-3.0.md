@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Open Government Licence 3.0`
+
+-   `scancode:ogl-uk-3.0`
+
 -   `Open Government Licence 3.0 (United Kingdom)`
 
 -   `scancode://ogl-uk-3.0`
@@ -11,6 +15,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: OGL UK” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Government-Licence-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -104,6 +112,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Government-Licence-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -122,11 +134,25 @@
     {
         "__impliedNames": [
             "OGL-UK-3.0",
+            "Open Government Licence 3.0",
+            "scancode:ogl-uk-3.0",
             "Open Government Licence 3.0 (United Kingdom)",
             "Open Government Licence v3.0",
             "scancode://ogl-uk-3.0"
         ],
         "__impliedId": "OGL-UK-3.0",
+        "__impliedAmbiguousNames": [
+            "Open Government Licence v3.0",
+            "OGL-UK-3.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OGL UK"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": false,
@@ -255,6 +281,40 @@
                 "_implications": {
                     "__impliedNames": [
                         "OGL-UK-3.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OGL-UK-3.0",
+                "shortName": null,
+                "category": "OGL UK",
+                "alternativeNames": [
+                    "Open Government Licence v3.0",
+                    "OGL-UK-3.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Government-Licence-3.0.yaml",
+                "otherIds": [
+                    "scancode:ogl-uk-3.0"
+                ],
+                "canonicalName": "Open Government Licence 3.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Government Licence 3.0",
+                        "OGL-UK-3.0",
+                        "scancode:ogl-uk-3.0"
+                    ],
+                    "__impliedId": "OGL-UK-3.0",
+                    "__impliedAmbiguousNames": [
+                        "Open Government Licence v3.0",
+                        "OGL-UK-3.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OGL UK"
+                            ]
+                        ]
                     ]
                 }
             }

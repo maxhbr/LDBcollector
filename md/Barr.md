@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:barr-tex`
+
 -   `scancode://barr-tex`
 
 -   `Barr TeX License`
@@ -20,6 +22,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Barr” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[ba]/Barr-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -56,6 +62,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[ba]/Barr-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Barr.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -68,13 +78,25 @@
         "__impliedNames": [
             "Barr",
             "Barr License",
+            "scancode:barr-tex",
             "scancode://barr-tex",
             "Barr TeX License"
         ],
         "__impliedId": "Barr",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Barr"
+            "Barr",
+            "Barr License",
+            "BARR LICENSE",
+            "BARR License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Barr"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -178,6 +200,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Barr"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Barr",
+                "shortName": null,
+                "category": "Barr",
+                "alternativeNames": [
+                    "Barr License",
+                    "BARR LICENSE",
+                    "BARR License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[ba]/Barr-License.yaml",
+                "otherIds": [
+                    "scancode:barr-tex"
+                ],
+                "canonicalName": "Barr License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Barr License",
+                        "Barr",
+                        "scancode:barr-tex"
+                    ],
+                    "__impliedId": "Barr",
+                    "__impliedAmbiguousNames": [
+                        "Barr License",
+                        "BARR LICENSE",
+                        "BARR License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Barr"
+                            ]
                         ]
                     ]
                 }

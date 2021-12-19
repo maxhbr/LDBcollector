@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:mup`
+
 -   `scancode://mup`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Mup” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Mup-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this is a BSD derived Free license, but clause 3 makes
     it GPL- incompatible, due to the need to include the reasons for the
@@ -67,6 +73,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Mup-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Mup.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -79,14 +89,24 @@
         "__impliedNames": [
             "Mup",
             "Mup License",
+            "scancode:mup",
             "scancode://mup"
         ],
         "__impliedId": "Mup",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Mup"
+            "Mup",
+            "Mup License",
+            "MUP LICENSE",
+            "MUP License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Mup"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -204,6 +224,42 @@
                         [
                             "Homepage",
                             "http://www.arkkra.com/doc/license.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Mup",
+                "shortName": null,
+                "category": "Mup",
+                "alternativeNames": [
+                    "Mup License",
+                    "MUP LICENSE",
+                    "MUP License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Mup-License.yaml",
+                "otherIds": [
+                    "scancode:mup"
+                ],
+                "canonicalName": "Mup License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Mup License",
+                        "Mup",
+                        "scancode:mup"
+                    ],
+                    "__impliedId": "Mup",
+                    "__impliedAmbiguousNames": [
+                        "Mup License",
+                        "MUP LICENSE",
+                        "MUP License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Mup"
+                            ]
                         ]
                     ]
                 }

@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `JasPer License 2.0`
+
+-   `scancode:jasper-2.0`
+
 -   `JasPer License Version 2.0`
 
 -   `scancode://jasper-2.0`
@@ -22,6 +26,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: JasPer” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[j]/[ja]/JasPer-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -156,6 +164,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[j]/[ja]/JasPer-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -172,6 +184,8 @@
         "__impliedNames": [
             "JasPer-2.0",
             "JasPer License",
+            "JasPer License 2.0",
+            "scancode:jasper-2.0",
             "JasPer License Version 2.0",
             "scancode://jasper-2.0",
             "JasPer 2.0"
@@ -179,7 +193,20 @@
         "__impliedId": "JasPer-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "JasPer"
+            "JasPer",
+            "JasPer, Version 2.0",
+            "JasPer 2.0",
+            "JasPer License, 2.0",
+            "JasPer License Version 2.0",
+            "JasPer License v2.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: JasPer"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -446,6 +473,46 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/764"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "JasPer-2.0",
+                "shortName": null,
+                "category": "JasPer",
+                "alternativeNames": [
+                    "JasPer, Version 2.0",
+                    "JasPer 2.0",
+                    "JasPer License, 2.0",
+                    "JasPer License Version 2.0",
+                    "JasPer License v2.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[j]/[ja]/JasPer-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:jasper-2.0"
+                ],
+                "canonicalName": "JasPer License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "JasPer License 2.0",
+                        "JasPer-2.0",
+                        "scancode:jasper-2.0"
+                    ],
+                    "__impliedId": "JasPer-2.0",
+                    "__impliedAmbiguousNames": [
+                        "JasPer, Version 2.0",
+                        "JasPer 2.0",
+                        "JasPer License, 2.0",
+                        "JasPer License Version 2.0",
+                        "JasPer License v2.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: JasPer"
+                            ]
                         ]
                     ]
                 }

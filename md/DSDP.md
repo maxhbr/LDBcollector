@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:dsdp`
+
 -   `scancode://dsdp`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: DSDP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[ds]/DSDP-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -97,6 +103,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[ds]/DSDP-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/DSDP.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -109,12 +119,23 @@
         "__impliedNames": [
             "DSDP",
             "DSDP License",
+            "scancode:dsdp",
             "scancode://dsdp"
         ],
         "__impliedId": "DSDP",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "DSDP"
+            "DSDP",
+            "DSDP LICENSE",
+            "DSDP License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: DSDP"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -253,6 +274,40 @@
                 },
                 "licensename": "DSDP",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "DSDP",
+                "shortName": null,
+                "category": "DSDP",
+                "alternativeNames": [
+                    "DSDP LICENSE",
+                    "DSDP License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[ds]/DSDP-License.yaml",
+                "otherIds": [
+                    "scancode:dsdp"
+                ],
+                "canonicalName": "DSDP License",
+                "_implications": {
+                    "__impliedNames": [
+                        "DSDP License",
+                        "DSDP",
+                        "scancode:dsdp"
+                    ],
+                    "__impliedId": "DSDP",
+                    "__impliedAmbiguousNames": [
+                        "DSDP LICENSE",
+                        "DSDP License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: DSDP"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",

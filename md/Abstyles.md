@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:abstyles`
+
 -   `scancode://abstyles`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Abstyles” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ab]/Abstyles-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “the latext2e, verbatim-manual and abstyles are similar licenses”
     (source:
@@ -51,6 +57,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ab]/Abstyles-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Abstyles.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -63,14 +73,24 @@
         "__impliedNames": [
             "Abstyles",
             "Abstyles License",
+            "scancode:abstyles",
             "scancode://abstyles"
         ],
         "__impliedId": "Abstyles",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Abstyles"
+            "Abstyles",
+            "Abstyles License",
+            "ABSTYLES LICENSE",
+            "ABSTYLES License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Abstyles"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -188,6 +208,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Abstyles"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Abstyles",
+                "shortName": null,
+                "category": "Abstyles",
+                "alternativeNames": [
+                    "Abstyles License",
+                    "ABSTYLES LICENSE",
+                    "ABSTYLES License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ab]/Abstyles-License.yaml",
+                "otherIds": [
+                    "scancode:abstyles"
+                ],
+                "canonicalName": "Abstyles License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Abstyles License",
+                        "Abstyles",
+                        "scancode:abstyles"
+                    ],
+                    "__impliedId": "Abstyles",
+                    "__impliedAmbiguousNames": [
+                        "Abstyles License",
+                        "ABSTYLES LICENSE",
+                        "ABSTYLES License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Abstyles"
+                            ]
                         ]
                     ]
                 }

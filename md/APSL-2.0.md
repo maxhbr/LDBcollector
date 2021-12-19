@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:apsl-2.0`
+
+-   `osi:APSL-2.0`
+
 -   `Apple Public Source License, Version 2.0`
 
 -   `License :: OSI Approved :: Apple Public Source License`
@@ -49,6 +53,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: APSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this version was released 6 August 2003. This license
     is OSI certifified. ” (source:
@@ -198,6 +206,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -223,6 +235,8 @@
         "__impliedNames": [
             "APSL-2.0",
             "Apple Public Source License 2.0",
+            "scancode:apsl-2.0",
+            "osi:APSL-2.0",
             "Apple Public Source License, Version 2.0",
             "License :: OSI Approved :: Apple Public Source License",
             "scancode://apsl-2.0",
@@ -233,7 +247,13 @@
         "__impliedAmbiguousNames": [
             "Apple Public Source License",
             "Apple Public Source License (APSL)",
-            "APSL 2.0"
+            "APSL 2.0",
+            "APSL, Version 2.0",
+            "APSL-2.0",
+            "APPLE PUBLIC SOURCE LICENSE 2.0",
+            "APPLE PUBLIC SOURCE LICENSE v2.0",
+            "APPLE PUBLIC SOURCE LICENSE Version 2.0",
+            "Apple Public Source License Ver. 2.0"
         ],
         "__impliedComments": [
             [
@@ -241,6 +261,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: APSL"
                 ]
             ],
             [
@@ -460,6 +486,52 @@
                 },
                 "Comment": null,
                 "LicenseId": "APSL-2.0"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "APSL-2.0",
+                "shortName": null,
+                "category": "APSL",
+                "alternativeNames": [
+                    "APSL, Version 2.0",
+                    "APSL 2.0",
+                    "APSL-2.0",
+                    "APPLE PUBLIC SOURCE LICENSE 2.0",
+                    "APPLE PUBLIC SOURCE LICENSE v2.0",
+                    "APPLE PUBLIC SOURCE LICENSE Version 2.0",
+                    "Apple Public Source License Ver. 2.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:apsl-2.0",
+                    "osi:APSL-2.0"
+                ],
+                "canonicalName": "Apple Public Source License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apple Public Source License 2.0",
+                        "APSL-2.0",
+                        "scancode:apsl-2.0",
+                        "osi:APSL-2.0"
+                    ],
+                    "__impliedId": "APSL-2.0",
+                    "__impliedAmbiguousNames": [
+                        "APSL, Version 2.0",
+                        "APSL 2.0",
+                        "APSL-2.0",
+                        "APPLE PUBLIC SOURCE LICENSE 2.0",
+                        "APPLE PUBLIC SOURCE LICENSE v2.0",
+                        "APPLE PUBLIC SOURCE LICENSE Version 2.0",
+                        "Apple Public Source License Ver. 2.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: APSL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/APSL-2.0.html",

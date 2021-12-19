@@ -12,6 +12,10 @@
 
 -   `GNU General Public License Version 1`
 
+-   `GNU General Public License 1.0`
+
+-   `scancode:gpl-1.0`
+
 -   `scancode://gpl-1.0`
 
 -   `GPL 1.0`
@@ -47,6 +51,10 @@
     [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: GPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released February 1989.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0.yml "Scancode")
@@ -436,6 +444,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -456,6 +468,8 @@
             "GPL1",
             "GNU General Public License Version 1",
             "GNU General Public License v1.0 only",
+            "GNU General Public License 1.0",
+            "scancode:gpl-1.0",
             "scancode://gpl-1.0",
             "GPL 1.0"
         ],
@@ -464,7 +478,12 @@
         "__impliedAmbiguousNames": [
             "GNU General Public License",
             "The GNU General Public License (GPL)",
-            "GPLv1"
+            "GPLv1",
+            "GNU General Public License, Version 1",
+            "GNU General Public License, version 1",
+            "GPL 1.0",
+            "GNU General Public License (v1)",
+            "GNU GENERAL PUBLIC LICENSE Version 1"
         ],
         "__impliedComments": [
             [
@@ -477,6 +496,12 @@
                 "Hitachi open-license",
                 [
                     "Source code refers to the source code of all modules."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: GPL"
                 ]
             ],
             [
@@ -950,6 +975,47 @@
                     ]
                 },
                 "description": "Source code refers to the source code of all modules."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "GPL-1.0-only",
+                "shortName": "GPL-1.0",
+                "category": "GPL",
+                "alternativeNames": [
+                    "GNU General Public License, Version 1",
+                    "GNU General Public License, version 1",
+                    "GPL 1.0",
+                    "GNU General Public License (v1)",
+                    "GNU GENERAL PUBLIC LICENSE Version 1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:gpl-1.0"
+                ],
+                "canonicalName": "GNU General Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "GNU General Public License 1.0",
+                        "GPL-1.0",
+                        "GPL-1.0-only",
+                        "scancode:gpl-1.0"
+                    ],
+                    "__impliedId": "GPL-1.0-only",
+                    "__impliedAmbiguousNames": [
+                        "GNU General Public License, Version 1",
+                        "GNU General Public License, version 1",
+                        "GPL 1.0",
+                        "GNU General Public License (v1)",
+                        "GNU GENERAL PUBLIC LICENSE Version 1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: GPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/GPL-1.0-only.html",

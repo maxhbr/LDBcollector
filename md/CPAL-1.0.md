@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:cpal-1.0`
+
+-   `osi:CPAL-1.0`
+
 -   `cpal_1.0`
 
 -   `Common Public Attribution License Version 1.0 (CPAL-1.0)`
@@ -74,6 +78,10 @@
     of the corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: CPAL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Common-Public-Attribution-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certifified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml "Scancode")
@@ -358,6 +366,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Common-Public-Attribution-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -384,6 +396,8 @@
         "__impliedNames": [
             "CPAL-1.0",
             "Common Public Attribution License 1.0",
+            "scancode:cpal-1.0",
+            "osi:CPAL-1.0",
             "cpal_1.0",
             "Common Public Attribution License Version 1.0 (CPAL-1.0)",
             "Common Public Attribution License Version 1.0",
@@ -392,7 +406,10 @@
         ],
         "__impliedId": "CPAL-1.0",
         "__impliedAmbiguousNames": [
-            "Common Public Attribution License"
+            "Common Public Attribution License",
+            "Common Public Attribution License 1.0",
+            "CPAL-1.0",
+            "Common Public Attribution License Version 1.0"
         ],
         "__impliedComments": [
             [
@@ -407,6 +424,12 @@
                 [
                     "https://opensource.org/licenses/CPAL-1.0",
                     "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Original Code refers to the source code of the computer software code listed as original code in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under this license in accordance with all of the terms of this license. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CPAL"
                 ]
             ],
             [
@@ -1056,6 +1079,44 @@
                     ]
                 },
                 "description": "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Original Code refers to the source code of the computer software code listed as original code in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under this license in accordance with all of the terms of this license. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CPAL-1.0",
+                "shortName": null,
+                "category": "CPAL",
+                "alternativeNames": [
+                    "Common Public Attribution License 1.0",
+                    "CPAL-1.0",
+                    "Common Public Attribution License Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Common-Public-Attribution-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:cpal-1.0",
+                    "osi:CPAL-1.0"
+                ],
+                "canonicalName": "Common Public Attribution License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Common Public Attribution License 1.0",
+                        "CPAL-1.0",
+                        "scancode:cpal-1.0",
+                        "osi:CPAL-1.0"
+                    ],
+                    "__impliedId": "CPAL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Common Public Attribution License 1.0",
+                        "CPAL-1.0",
+                        "Common Public Attribution License Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CPAL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/CPAL-1.0.html",

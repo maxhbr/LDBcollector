@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `BSD 3-Clause License Modification`
+
 -   `scancode://repoze`
 
 -   `Repoze License`
@@ -15,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-Modification.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “found in Debian reportbug” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/repoze.yml "Scancode")
@@ -83,6 +89,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-Modification.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Modification.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -95,11 +105,18 @@
         "__impliedNames": [
             "BSD-3-Clause-Modification",
             "BSD 3-Clause Modification",
+            "BSD 3-Clause License Modification",
             "scancode://repoze",
             "Repoze License"
         ],
         "__impliedId": "BSD-3-Clause-Modification",
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -194,6 +211,31 @@
                         [
                             null,
                             "https://fedoraproject.org/wiki/Licensing:BSD#Modification_Variant"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-3-Clause-Modification",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-Modification.yaml",
+                "otherIds": [],
+                "canonicalName": "BSD 3-Clause License Modification",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause License Modification",
+                        "BSD-3-Clause-Modification"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Modification",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
                         ]
                     ]
                 }

@@ -4,9 +4,11 @@
 
 **Other Names:**
 
--   `scancode://adobe-glyph`
-
 -   `Adobe Glyph License`
+
+-   `scancode:adobe-glyph`
+
+-   `scancode://adobe-glyph`
 
 ## Comments on (easy) usability
 
@@ -16,6 +18,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Adobe Glyph” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adobe-Glyph-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -46,6 +52,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adobe-Glyph-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Adobe-Glyph.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -58,13 +68,28 @@
         "__impliedNames": [
             "Adobe-Glyph",
             "Adobe Glyph List License",
-            "scancode://adobe-glyph",
-            "Adobe Glyph License"
+            "Adobe Glyph License",
+            "scancode:adobe-glyph",
+            "scancode://adobe-glyph"
         ],
         "__impliedId": "Adobe-Glyph",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT"
+            "MIT",
+            "Adobe Glyph License",
+            "ADOBE GLYPH LICENSE",
+            "ADOBE GLYPH License",
+            "Adobe-Glyph License",
+            "ADOBE-GLYPH LICENSE",
+            "ADOBE-GLYPH License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Adobe Glyph"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -168,6 +193,48 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Adobe-Glyph",
+                "shortName": null,
+                "category": "Adobe Glyph",
+                "alternativeNames": [
+                    "Adobe Glyph License",
+                    "ADOBE GLYPH LICENSE",
+                    "ADOBE GLYPH License",
+                    "Adobe-Glyph License",
+                    "ADOBE-GLYPH LICENSE",
+                    "ADOBE-GLYPH License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adobe-Glyph-License.yaml",
+                "otherIds": [
+                    "scancode:adobe-glyph"
+                ],
+                "canonicalName": "Adobe Glyph License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Adobe Glyph License",
+                        "Adobe-Glyph",
+                        "scancode:adobe-glyph"
+                    ],
+                    "__impliedId": "Adobe-Glyph",
+                    "__impliedAmbiguousNames": [
+                        "Adobe Glyph License",
+                        "ADOBE GLYPH LICENSE",
+                        "ADOBE GLYPH License",
+                        "Adobe-Glyph License",
+                        "ADOBE-GLYPH LICENSE",
+                        "ADOBE-GLYPH License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Adobe Glyph"
+                            ]
                         ]
                     ]
                 }

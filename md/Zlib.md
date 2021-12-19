@@ -8,6 +8,16 @@
 
 -   `zlib/libpng License`
 
+-   `scancode:zlib`
+
+-   `scancode:aladdin-md5`
+
+-   `scancode:d-zlib`
+
+-   `scancode:fastbuild-2012-2020`
+
+-   `osi:Zlib`
+
 -   `zlib/libpng license`
 
 -   `zlib-license`
@@ -52,6 +62,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: zlib” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zl]/zlib-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml "Scancode")
@@ -207,6 +221,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zl]/zlib-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -246,6 +264,11 @@
             "zlib License",
             "zlib",
             "zlib/libpng License",
+            "scancode:zlib",
+            "scancode:aladdin-md5",
+            "scancode:d-zlib",
+            "scancode:fastbuild-2012-2020",
+            "osi:Zlib",
             "zlib/libpng license",
             "zlib-license",
             "The zlib/libpng License (Zlib)",
@@ -257,9 +280,23 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)",
-            "zlib"
+            "zlib",
+            "zlib licence",
+            "http://www.opensource.org/licenses/zlib-license.php",
+            "zlib/libpng license",
+            "The zlib/libpng License",
+            "For conditions of distribution and use, see copyright notice in zlib.h",
+            "This program is based on zlib",
+            "http://www.gzip.org/zlib/zlib_license.html",
+            "Aladdin MD5 License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: zlib"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -687,6 +724,60 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/16"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Zlib",
+                "shortName": null,
+                "category": "zlib",
+                "alternativeNames": [
+                    "zlib licence",
+                    "http://www.opensource.org/licenses/zlib-license.php",
+                    "zlib/libpng license",
+                    "The zlib/libpng License",
+                    "For conditions of distribution and use, see copyright notice in zlib.h",
+                    "This program is based on zlib",
+                    "http://www.gzip.org/zlib/zlib_license.html",
+                    "Aladdin MD5 License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zl]/zlib-License.yaml",
+                "otherIds": [
+                    "scancode:zlib",
+                    "scancode:aladdin-md5",
+                    "scancode:d-zlib",
+                    "scancode:fastbuild-2012-2020",
+                    "osi:Zlib"
+                ],
+                "canonicalName": "zlib License",
+                "_implications": {
+                    "__impliedNames": [
+                        "zlib License",
+                        "Zlib",
+                        "scancode:zlib",
+                        "scancode:aladdin-md5",
+                        "scancode:d-zlib",
+                        "scancode:fastbuild-2012-2020",
+                        "osi:Zlib"
+                    ],
+                    "__impliedId": "Zlib",
+                    "__impliedAmbiguousNames": [
+                        "zlib licence",
+                        "http://www.opensource.org/licenses/zlib-license.php",
+                        "zlib/libpng license",
+                        "The zlib/libpng License",
+                        "For conditions of distribution and use, see copyright notice in zlib.h",
+                        "This program is based on zlib",
+                        "http://www.gzip.org/zlib/zlib_license.html",
+                        "Aladdin MD5 License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: zlib"
+                            ]
                         ]
                     ]
                 }

@@ -2,12 +2,24 @@
     "__impliedNames": [
         "xinetd",
         "xinetd License",
+        "scancode:xinetd",
         "scancode://xinetd"
     ],
     "__impliedId": "xinetd",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "xinetd"
+        "xinetd",
+        "xinetd License",
+        "XINETD LICENSE",
+        "XINETD License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: xinetd"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -130,6 +142,42 @@
             },
             "licensename": "xinetd",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "xinetd",
+            "shortName": null,
+            "category": "xinetd",
+            "alternativeNames": [
+                "xinetd License",
+                "XINETD LICENSE",
+                "XINETD License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xi]/xinetd-License.yaml",
+            "otherIds": [
+                "scancode:xinetd"
+            ],
+            "canonicalName": "xinetd License",
+            "_implications": {
+                "__impliedNames": [
+                    "xinetd License",
+                    "xinetd",
+                    "scancode:xinetd"
+                ],
+                "__impliedId": "xinetd",
+                "__impliedAmbiguousNames": [
+                    "xinetd License",
+                    "XINETD LICENSE",
+                    "XINETD License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: xinetd"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

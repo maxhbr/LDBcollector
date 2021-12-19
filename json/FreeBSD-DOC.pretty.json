@@ -8,7 +8,16 @@
     "__impliedId": "FreeBSD-DOC",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "FBSDDL"
+        "FBSDDL",
+        "FreeBSD Documentation License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: FreeBSD Doc License"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -112,6 +121,35 @@
                     [
                         null,
                         "https://www.freebsd.org/copyright/freebsd-doc-license/"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "FreeBSD-DOC",
+            "shortName": null,
+            "category": "FreeBSD Doc License",
+            "alternativeNames": [
+                "FreeBSD Documentation License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeBSD-Documentation-License.yaml",
+            "otherIds": [],
+            "canonicalName": "FreeBSD Documentation License",
+            "_implications": {
+                "__impliedNames": [
+                    "FreeBSD Documentation License",
+                    "FreeBSD-DOC"
+                ],
+                "__impliedId": "FreeBSD-DOC",
+                "__impliedAmbiguousNames": [
+                    "FreeBSD Documentation License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: FreeBSD Doc License"
+                        ]
                     ]
                 ]
             }

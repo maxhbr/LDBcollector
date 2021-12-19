@@ -2,11 +2,25 @@
     "__impliedNames": [
         "MIT-open-group",
         "MIT Open Group Variant",
+        "MIT Open Group",
+        "MIT-Open-Group",
+        "scancode:mit-open-group",
         "MIT Open Group variant",
         "scancode://x11-opengroup",
         "X11-Style (Open Group)"
     ],
     "__impliedId": "MIT-open-group",
+    "__impliedAmbiguousNames": [
+        "mit-open-group"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: MIT Open Group"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -116,6 +130,38 @@
                     [
                         null,
                         "https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": null,
+            "shortName": "MIT-Open-Group",
+            "category": "MIT Open Group",
+            "alternativeNames": [
+                "mit-open-group"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-Open-Group.yaml",
+            "otherIds": [
+                "scancode:mit-open-group"
+            ],
+            "canonicalName": "MIT Open Group",
+            "_implications": {
+                "__impliedNames": [
+                    "MIT Open Group",
+                    "MIT-Open-Group",
+                    "scancode:mit-open-group"
+                ],
+                "__impliedId": "MIT-Open-Group",
+                "__impliedAmbiguousNames": [
+                    "mit-open-group"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: MIT Open Group"
+                        ]
                     ]
                 ]
             }

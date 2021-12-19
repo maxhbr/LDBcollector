@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `SGI B License 1.1`
+
+-   `scancode:sgi-freeb-1.1`
+
 -   `SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])`
 
 -   `scancode://sgi-freeb-1.1`
@@ -13,6 +17,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: SGI B” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 22 February 2002” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-1.1.yml "Scancode")
@@ -69,6 +77,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -84,13 +96,35 @@
     {
         "__impliedNames": [
             "SGI-B-1.1",
+            "SGI B License 1.1",
+            "scancode:sgi-freeb-1.1",
             "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])",
             "SGI Free Software License B v1.1",
             "scancode://sgi-freeb-1.1",
             "SGI Free Software License B 1.1"
         ],
         "__impliedId": "SGI-B-1.1",
+        "__impliedAmbiguousNames": [
+            "SGI B, Version 1.1",
+            "SGI B, 1.1",
+            "SGI-B, Version 1.1",
+            "SGI-B, 1.1",
+            "SGI B License, Version 1.1",
+            "SGI B License 1.1",
+            "SGI-B License, Version 1.1",
+            "SGI-B License, 1.1",
+            "SGI FREE SOFTWARE LICENSE B (Version 1.1 02/22/2000)",
+            "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc",
+            "https://spdx.org/licenses/sgi-b-1.1",
+            "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SGI B"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -205,6 +239,60 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/326"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SGI-B-1.1",
+                "shortName": null,
+                "category": "SGI B",
+                "alternativeNames": [
+                    "SGI B, Version 1.1",
+                    "SGI B, 1.1",
+                    "SGI-B, Version 1.1",
+                    "SGI-B, 1.1",
+                    "SGI B License, Version 1.1",
+                    "SGI B License 1.1",
+                    "SGI-B License, Version 1.1",
+                    "SGI-B License, 1.1",
+                    "SGI FREE SOFTWARE LICENSE B (Version 1.1 02/22/2000)",
+                    "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc",
+                    "https://spdx.org/licenses/sgi-b-1.1",
+                    "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:sgi-freeb-1.1"
+                ],
+                "canonicalName": "SGI B License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "SGI B License 1.1",
+                        "SGI-B-1.1",
+                        "scancode:sgi-freeb-1.1"
+                    ],
+                    "__impliedId": "SGI-B-1.1",
+                    "__impliedAmbiguousNames": [
+                        "SGI B, Version 1.1",
+                        "SGI B, 1.1",
+                        "SGI-B, Version 1.1",
+                        "SGI-B, 1.1",
+                        "SGI B License, Version 1.1",
+                        "SGI B License 1.1",
+                        "SGI-B License, Version 1.1",
+                        "SGI-B License, 1.1",
+                        "SGI FREE SOFTWARE LICENSE B (Version 1.1 02/22/2000)",
+                        "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc",
+                        "https://spdx.org/licenses/sgi-b-1.1",
+                        "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SGI B"
+                            ]
                         ]
                     ]
                 }

@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:nrl`
+
 -   `scancode://nrl`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: NRL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nr]/NRL-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -73,6 +79,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nr]/NRL-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/NRL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -85,12 +95,22 @@
         "__impliedNames": [
             "NRL",
             "NRL License",
+            "scancode:nrl",
             "scancode://nrl"
         ],
         "__impliedId": "NRL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "BSD with advertising"
+            "BSD with advertising",
+            "NRL License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NRL"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -194,6 +214,38 @@
                         [
                             "Homepage",
                             "http://web.mit.edu/network/isakmp/nrllicense.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NRL",
+                "shortName": null,
+                "category": "NRL",
+                "alternativeNames": [
+                    "NRL License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nr]/NRL-License.yaml",
+                "otherIds": [
+                    "scancode:nrl"
+                ],
+                "canonicalName": "NRL License",
+                "_implications": {
+                    "__impliedNames": [
+                        "NRL License",
+                        "NRL",
+                        "scancode:nrl"
+                    ],
+                    "__impliedId": "NRL",
+                    "__impliedAmbiguousNames": [
+                        "NRL License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NRL"
+                            ]
                         ]
                     ]
                 }

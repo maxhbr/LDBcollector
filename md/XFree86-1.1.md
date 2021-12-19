@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:xfree86-1.1`
+
 -   `XFree86 1.1 License`
 
 -   `scancode://xfree86-1.1`
@@ -15,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: XFree86” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xf]/XFree86-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -155,6 +161,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xf]/XFree86-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/XFree86-1.1.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -178,10 +188,22 @@
         "__impliedNames": [
             "XFree86-1.1",
             "XFree86 License 1.1",
+            "scancode:xfree86-1.1",
             "XFree86 1.1 License",
             "scancode://xfree86-1.1"
         ],
         "__impliedId": "XFree86-1.1",
+        "__impliedAmbiguousNames": [
+            "XFree86-1.1"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: XFree86"
+                ]
+            ]
+        ],
         "__hasPatentHint": false,
         "facts": {
             "LicenseName": {
@@ -416,6 +438,38 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/319"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "XFree86-1.1",
+                "shortName": null,
+                "category": "XFree86",
+                "alternativeNames": [
+                    "XFree86-1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xf]/XFree86-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:xfree86-1.1"
+                ],
+                "canonicalName": "XFree86 License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "XFree86 License 1.1",
+                        "XFree86-1.1",
+                        "scancode:xfree86-1.1"
+                    ],
+                    "__impliedId": "XFree86-1.1",
+                    "__impliedAmbiguousNames": [
+                        "XFree86-1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: XFree86"
+                            ]
                         ]
                     ]
                 }

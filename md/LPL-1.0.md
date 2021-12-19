@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `LPL 1.0`
+
+-   `scancode:lucent-pl-1.0`
+
+-   `osi:LPL-1.0`
+
 -   `Lucent Public License ("Plan9") 1.0`
 
 -   `Lucent Public License, Plan 9, Version 1.0`
@@ -27,6 +33,10 @@
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
 
 ## General Comments
+
+-   “category: LPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -270,6 +280,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -289,12 +303,28 @@
         "__impliedNames": [
             "LPL-1.0",
             "Lucent Public License Version 1.0",
+            "LPL 1.0",
+            "scancode:lucent-pl-1.0",
+            "osi:LPL-1.0",
             "Lucent Public License (\"Plan9\") 1.0",
             "Lucent Public License, Plan 9, Version 1.0",
             "scancode://lucent-pl-1.0",
             "Lucent Public License 1.0"
         ],
         "__impliedId": "LPL-1.0",
+        "__impliedAmbiguousNames": [
+            "LPL, Version 1.0",
+            "LPL, 1.0",
+            "Lucent Public License Version 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: LPL"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -429,6 +459,44 @@
                         [
                             null,
                             "https://opensource.org/licenses/LPL-1.0"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "LPL-1.0",
+                "shortName": null,
+                "category": "LPL",
+                "alternativeNames": [
+                    "LPL, Version 1.0",
+                    "LPL, 1.0",
+                    "Lucent Public License Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPL-1.0.yaml",
+                "otherIds": [
+                    "scancode:lucent-pl-1.0",
+                    "osi:LPL-1.0"
+                ],
+                "canonicalName": "LPL 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "LPL 1.0",
+                        "LPL-1.0",
+                        "scancode:lucent-pl-1.0",
+                        "osi:LPL-1.0"
+                    ],
+                    "__impliedId": "LPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "LPL, Version 1.0",
+                        "LPL, 1.0",
+                        "Lucent Public License Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: LPL"
+                            ]
                         ]
                     ]
                 }

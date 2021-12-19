@@ -6,6 +6,8 @@
 
 -   `LiLiQ-P`
 
+-   `LiLiQ P License 1.1`
+
 -   `Licence Libre du Québec – Permissive, Version 1.1`
 
 ## Comments on (easy) usability
@@ -15,6 +17,10 @@
     \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: LiLiQ P” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/LiLiQ-P-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -34,6 +40,10 @@
 
 -   Override
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/LiLiQ-P-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -49,10 +59,30 @@
         "__impliedNames": [
             "LiLiQ-P-1.1",
             "LiLiQ-P",
+            "LiLiQ P License 1.1",
             "Licence Libre du Québec – Permissive, Version 1.1",
             "Licence Libre du Québec – Permissive version 1.1"
         ],
         "__impliedId": "LiLiQ-P-1.1",
+        "__impliedAmbiguousNames": [
+            "LiLiQ P, Version 1.1",
+            "LiLiQ P 1.1",
+            "LiLiQ-P, Version 1.1",
+            "LiLiQ-P 1.1",
+            "LiLiQ P License, Version 1.1",
+            "LiLiQ P License 1.1",
+            "LiLiQ-P License, Version 1.1",
+            "LiLiQ-P License, 1.1",
+            "Permissive (LiLiQ-P) Version 1.1"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: LiLiQ P"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -139,6 +169,51 @@
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "LiLiQ-P-1.1",
+                "shortName": null,
+                "category": "LiLiQ P",
+                "alternativeNames": [
+                    "LiLiQ P, Version 1.1",
+                    "LiLiQ P 1.1",
+                    "LiLiQ-P, Version 1.1",
+                    "LiLiQ-P 1.1",
+                    "LiLiQ P License, Version 1.1",
+                    "LiLiQ P License 1.1",
+                    "LiLiQ-P License, Version 1.1",
+                    "LiLiQ-P License, 1.1",
+                    "Permissive (LiLiQ-P) Version 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/LiLiQ-P-License-1.1.yaml",
+                "otherIds": [],
+                "canonicalName": "LiLiQ P License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "LiLiQ P License 1.1",
+                        "LiLiQ-P-1.1"
+                    ],
+                    "__impliedId": "LiLiQ-P-1.1",
+                    "__impliedAmbiguousNames": [
+                        "LiLiQ P, Version 1.1",
+                        "LiLiQ P 1.1",
+                        "LiLiQ-P, Version 1.1",
+                        "LiLiQ-P 1.1",
+                        "LiLiQ P License, Version 1.1",
+                        "LiLiQ P License 1.1",
+                        "LiLiQ-P License, Version 1.1",
+                        "LiLiQ-P License, 1.1",
+                        "Permissive (LiLiQ-P) Version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: LiLiQ P"
+                            ]
+                        ]
+                    ]
+                }
             },
             "OpenSourceInitiative": {
                 "text": [

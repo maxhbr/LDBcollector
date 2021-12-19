@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:apsl-1.2`
+
 -   `scancode://apsl-1.2`
 
 -   `APSL 1.2`
@@ -42,6 +44,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: APSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 4 Jan 2001. This license
     was OSI certified ” (source:
@@ -463,6 +469,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/APSL-1.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -475,13 +485,21 @@
         "__impliedNames": [
             "APSL-1.2",
             "Apple Public Source License 1.2",
+            "scancode:apsl-1.2",
             "scancode://apsl-1.2",
             "APSL 1.2"
         ],
         "__impliedId": "APSL-1.2",
         "__impliedAmbiguousNames": [
             "Apple Public Source License",
-            "Apple Public Source License (APSL)"
+            "Apple Public Source License (APSL)",
+            "APSL, Version 1.2",
+            "APSL 1.2",
+            "APSL-1.2",
+            "APPLE PUBLIC SOURCE LICENSE v1.2",
+            "APPLE PUBLIC SOURCE LICENSE, 1.2",
+            "APPLE PUBLIC SOURCE LICENSE Version 1.2",
+            "Apple Public Source License Ver. 1.2"
         ],
         "__impliedComments": [
             [
@@ -489,6 +507,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: APSL"
                 ]
             ],
             [
@@ -674,6 +698,50 @@
                 },
                 "Comment": null,
                 "LicenseId": "APSL-1.2"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "APSL-1.2",
+                "shortName": null,
+                "category": "APSL",
+                "alternativeNames": [
+                    "APSL, Version 1.2",
+                    "APSL 1.2",
+                    "APSL-1.2",
+                    "APPLE PUBLIC SOURCE LICENSE v1.2",
+                    "APPLE PUBLIC SOURCE LICENSE, 1.2",
+                    "APPLE PUBLIC SOURCE LICENSE Version 1.2",
+                    "Apple Public Source License Ver. 1.2"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-Public-Source-License-1.2.yaml",
+                "otherIds": [
+                    "scancode:apsl-1.2"
+                ],
+                "canonicalName": "Apple Public Source License 1.2",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apple Public Source License 1.2",
+                        "APSL-1.2",
+                        "scancode:apsl-1.2"
+                    ],
+                    "__impliedId": "APSL-1.2",
+                    "__impliedAmbiguousNames": [
+                        "APSL, Version 1.2",
+                        "APSL 1.2",
+                        "APSL-1.2",
+                        "APPLE PUBLIC SOURCE LICENSE v1.2",
+                        "APPLE PUBLIC SOURCE LICENSE, 1.2",
+                        "APPLE PUBLIC SOURCE LICENSE Version 1.2",
+                        "Apple Public Source License Ver. 1.2"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: APSL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/APSL-1.2.html",

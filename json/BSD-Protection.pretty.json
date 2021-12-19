@@ -2,6 +2,7 @@
     "__impliedNames": [
         "BSD-Protection",
         "BSD Protection License",
+        "scancode:bsd-protection",
         "scancode://bsd-protection"
     ],
     "__impliedId": "BSD-Protection",
@@ -15,6 +16,12 @@
             "BlueOak License List",
             [
                 "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: BSD Protection"
             ]
         ]
     ],
@@ -120,6 +127,38 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/BSD_Protection_License"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "BSD-Protection",
+            "shortName": null,
+            "category": "BSD Protection",
+            "alternativeNames": [
+                "BSD Protection License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Protection-License.yaml",
+            "otherIds": [
+                "scancode:bsd-protection"
+            ],
+            "canonicalName": "BSD Protection License",
+            "_implications": {
+                "__impliedNames": [
+                    "BSD Protection License",
+                    "BSD-Protection",
+                    "scancode:bsd-protection"
+                ],
+                "__impliedId": "BSD-Protection",
+                "__impliedAmbiguousNames": [
+                    "BSD Protection License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: BSD Protection"
+                        ]
                     ]
                 ]
             }

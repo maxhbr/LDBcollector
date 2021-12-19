@@ -2,12 +2,28 @@
     "__impliedNames": [
         "Watcom-1.0",
         "Sybase Open Watcom Public License 1.0",
+        "Watcom License 1.0",
+        "scancode:sybase",
+        "osi:Watcom-1.0",
         "The Sybase Open Source Licence",
         "scancode://sybase",
         "Open Watcom 1.0"
     ],
     "__impliedId": "Watcom-1.0",
+    "__impliedAmbiguousNames": [
+        "Watcom, Version 1.0",
+        "Watcom 1.0",
+        "Watcom License, Version 1.0",
+        "Watcom License, 1.0",
+        "Sybase Open Watcom Public License version 1.0"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Watcom"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -196,6 +212,48 @@
             "_implications": {
                 "__impliedNames": [
                     "Watcom-1.0"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Watcom-1.0",
+            "shortName": null,
+            "category": "Watcom",
+            "alternativeNames": [
+                "Watcom, Version 1.0",
+                "Watcom 1.0",
+                "Watcom License, Version 1.0",
+                "Watcom License, 1.0",
+                "Sybase Open Watcom Public License version 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[wa]/Watcom-License-1.0.yaml",
+            "otherIds": [
+                "scancode:sybase",
+                "osi:Watcom-1.0"
+            ],
+            "canonicalName": "Watcom License 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Watcom License 1.0",
+                    "Watcom-1.0",
+                    "scancode:sybase",
+                    "osi:Watcom-1.0"
+                ],
+                "__impliedId": "Watcom-1.0",
+                "__impliedAmbiguousNames": [
+                    "Watcom, Version 1.0",
+                    "Watcom 1.0",
+                    "Watcom License, Version 1.0",
+                    "Watcom License, 1.0",
+                    "Sybase Open Watcom Public License version 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Watcom"
+                        ]
+                    ]
                 ]
             }
         },

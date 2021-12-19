@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:unicode-tou`
+
 -   `scancode://unicode-tou`
 
 ## Comments on (easy) usability
@@ -16,6 +18,10 @@
     314” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Unicode TOU” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-Terms-of-Use.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -167,6 +173,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-Terms-of-Use.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -183,14 +193,30 @@
         "__impliedNames": [
             "Unicode-TOU",
             "Unicode Terms of Use",
+            "scancode:unicode-tou",
             "scancode://unicode-tou"
         ],
         "__impliedId": "Unicode-TOU",
+        "__impliedAmbiguousNames": [
+            "Unicode TOU",
+            "UNICODE TOU",
+            "Unicode-TOU",
+            "UNICODE-TOU",
+            "Unicode Terms of Use",
+            "http://www.unicode.org/terms_of_use.html",
+            "GPL-1+ or Artistic, and Unicode"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "EXHIBIT 1 of UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE is registered separately. https://factbook.soft.hitachi.co.jp/production/db/legl_licenses/ 314"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Unicode TOU"
                 ]
             ]
         ],
@@ -288,6 +314,50 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/313"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Unicode-TOU",
+                "shortName": null,
+                "category": "Unicode TOU",
+                "alternativeNames": [
+                    "Unicode TOU",
+                    "UNICODE TOU",
+                    "Unicode-TOU",
+                    "UNICODE-TOU",
+                    "Unicode Terms of Use",
+                    "http://www.unicode.org/terms_of_use.html",
+                    "GPL-1+ or Artistic, and Unicode"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-Terms-of-Use.yaml",
+                "otherIds": [
+                    "scancode:unicode-tou"
+                ],
+                "canonicalName": "Unicode Terms of Use",
+                "_implications": {
+                    "__impliedNames": [
+                        "Unicode Terms of Use",
+                        "Unicode-TOU",
+                        "scancode:unicode-tou"
+                    ],
+                    "__impliedId": "Unicode-TOU",
+                    "__impliedAmbiguousNames": [
+                        "Unicode TOU",
+                        "UNICODE TOU",
+                        "Unicode-TOU",
+                        "UNICODE-TOU",
+                        "Unicode Terms of Use",
+                        "http://www.unicode.org/terms_of_use.html",
+                        "GPL-1+ or Artistic, and Unicode"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Unicode TOU"
+                            ]
                         ]
                     ]
                 }

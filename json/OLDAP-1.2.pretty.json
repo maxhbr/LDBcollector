@@ -2,11 +2,25 @@
     "__impliedNames": [
         "OLDAP-1.2",
         "Open LDAP Public License v1.2",
-        "scancode://openldap-1.2",
-        "OpenLDAP Public License 1.2"
+        "OpenLDAP Public License 1.2",
+        "scancode:openldap-1.2",
+        "scancode://openldap-1.2"
     ],
     "__impliedId": "OLDAP-1.2",
+    "__impliedAmbiguousNames": [
+        "OLDAP, Version 1.2",
+        "OLDAP, 1.2",
+        "OLDAP License, Version 1.2",
+        "OLDAP License, 1.2",
+        "The OpenLDAP Public License Version 1.2, 1 September 1998"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: OLDAP"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -114,6 +128,46 @@
             },
             "licensename": "OLDAP-1.2",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "OLDAP-1.2",
+            "shortName": null,
+            "category": "OLDAP",
+            "alternativeNames": [
+                "OLDAP, Version 1.2",
+                "OLDAP, 1.2",
+                "OLDAP License, Version 1.2",
+                "OLDAP License, 1.2",
+                "The OpenLDAP Public License Version 1.2, 1 September 1998"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-1.2.yaml",
+            "otherIds": [
+                "scancode:openldap-1.2"
+            ],
+            "canonicalName": "OpenLDAP Public License 1.2",
+            "_implications": {
+                "__impliedNames": [
+                    "OpenLDAP Public License 1.2",
+                    "OLDAP-1.2",
+                    "scancode:openldap-1.2"
+                ],
+                "__impliedId": "OLDAP-1.2",
+                "__impliedAmbiguousNames": [
+                    "OLDAP, Version 1.2",
+                    "OLDAP, 1.2",
+                    "OLDAP License, Version 1.2",
+                    "OLDAP License, 1.2",
+                    "The OpenLDAP Public License Version 1.2, 1 September 1998"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: OLDAP"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

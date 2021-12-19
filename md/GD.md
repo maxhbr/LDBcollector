@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:libgd-2018`
+
 -   `scancode://libgd-2018`
 
 -   `libgd License 2018`
@@ -11,6 +13,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: GD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gd]/GD-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -103,6 +109,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gd]/GD-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/GD.html "SPDX") (all data \[in this
     repository\] is generated)
 
@@ -115,10 +125,19 @@
         "__impliedNames": [
             "GD",
             "GD License",
+            "scancode:libgd-2018",
             "scancode://libgd-2018",
             "libgd License 2018"
         ],
         "__impliedId": "GD",
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: GD"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -192,6 +211,34 @@
                         [
                             "Homepage",
                             "https://github.com/libgd/libgd/blob/master/COPYING"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "GD",
+                "shortName": null,
+                "category": "GD",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gd]/GD-License.yaml",
+                "otherIds": [
+                    "scancode:libgd-2018"
+                ],
+                "canonicalName": "GD License",
+                "_implications": {
+                    "__impliedNames": [
+                        "GD License",
+                        "GD",
+                        "scancode:libgd-2018"
+                    ],
+                    "__impliedId": "GD",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: GD"
+                            ]
                         ]
                     ]
                 }

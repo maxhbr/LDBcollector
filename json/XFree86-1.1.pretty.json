@@ -2,10 +2,22 @@
     "__impliedNames": [
         "XFree86-1.1",
         "XFree86 License 1.1",
+        "scancode:xfree86-1.1",
         "XFree86 1.1 License",
         "scancode://xfree86-1.1"
     ],
     "__impliedId": "XFree86-1.1",
+    "__impliedAmbiguousNames": [
+        "XFree86-1.1"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: XFree86"
+            ]
+        ]
+    ],
     "__hasPatentHint": false,
     "facts": {
         "LicenseName": {
@@ -240,6 +252,38 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/319"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "XFree86-1.1",
+            "shortName": null,
+            "category": "XFree86",
+            "alternativeNames": [
+                "XFree86-1.1"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xf]/XFree86-License-1.1.yaml",
+            "otherIds": [
+                "scancode:xfree86-1.1"
+            ],
+            "canonicalName": "XFree86 License 1.1",
+            "_implications": {
+                "__impliedNames": [
+                    "XFree86 License 1.1",
+                    "XFree86-1.1",
+                    "scancode:xfree86-1.1"
+                ],
+                "__impliedId": "XFree86-1.1",
+                "__impliedAmbiguousNames": [
+                    "XFree86-1.1"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: XFree86"
+                        ]
                     ]
                 ]
             }

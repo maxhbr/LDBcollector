@@ -6,6 +6,10 @@
 
 -   `Educational Community License 2.0`
 
+-   `scancode:ecl-2.0`
+
+-   `osi:ECL-2.0`
+
 -   `ecl2`
 
 -   `Educational Community License, Version 2.0`
@@ -40,6 +44,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: ECL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ed]/Educational-Community-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certifified. The Educational
     Community License version 2.0 ("ECL") consists of the Apache 2.0
@@ -303,6 +311,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ed]/Educational-Community-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -327,6 +339,8 @@
             "Educational Community License v2.0",
             "ecl-2.0",
             "Educational Community License 2.0",
+            "scancode:ecl-2.0",
+            "osi:ECL-2.0",
             "ecl2",
             "Educational Community License, Version 2.0",
             "scancode://ecl-2.0",
@@ -335,9 +349,20 @@
         "__impliedId": "ECL-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "ECL 2.0"
+            "ECL 2.0",
+            "Educational Community License 2.0",
+            "Educational Community License, Version 2.0",
+            "ECL, Version 2.0",
+            "ECL-2.0",
+            "Educational Community License version 2.0"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ECL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -558,6 +583,50 @@
                 "_implications": {
                     "__impliedNames": [
                         "ECL-2.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ECL-2.0",
+                "shortName": null,
+                "category": "ECL",
+                "alternativeNames": [
+                    "Educational Community License 2.0",
+                    "Educational Community License, Version 2.0",
+                    "ECL, Version 2.0",
+                    "ECL-2.0",
+                    "ECL 2.0",
+                    "Educational Community License version 2.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ed]/Educational-Community-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:ecl-2.0",
+                    "osi:ECL-2.0"
+                ],
+                "canonicalName": "Educational Community License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Educational Community License 2.0",
+                        "ECL-2.0",
+                        "scancode:ecl-2.0",
+                        "osi:ECL-2.0"
+                    ],
+                    "__impliedId": "ECL-2.0",
+                    "__impliedAmbiguousNames": [
+                        "Educational Community License 2.0",
+                        "Educational Community License, Version 2.0",
+                        "ECL, Version 2.0",
+                        "ECL-2.0",
+                        "ECL 2.0",
+                        "Educational Community License version 2.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ECL"
+                            ]
+                        ]
                     ]
                 }
             },

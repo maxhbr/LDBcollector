@@ -6,6 +6,17 @@
         "Sun BSD-Style with Nuclear Restrictions"
     ],
     "__impliedId": "BSD-3-Clause-No-Nuclear-License",
+    "__impliedAmbiguousNames": [
+        "BSD 3 Clause No Nuclear License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: BSD"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -98,6 +109,35 @@
             },
             "licensename": "BSD-3-Clause-No-Nuclear-License",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "BSD-3-Clause-No-Nuclear-License",
+            "shortName": null,
+            "category": "BSD",
+            "alternativeNames": [
+                "BSD 3 Clause No Nuclear License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-No-Nuclear-License.yaml",
+            "otherIds": [],
+            "canonicalName": "BSD 3-Clause No Nuclear License",
+            "_implications": {
+                "__impliedNames": [
+                    "BSD 3-Clause No Nuclear License",
+                    "BSD-3-Clause-No-Nuclear-License"
+                ],
+                "__impliedId": "BSD-3-Clause-No-Nuclear-License",
+                "__impliedAmbiguousNames": [
+                    "BSD 3 Clause No Nuclear License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: BSD"
+                        ]
+                    ]
+                ]
+            }
         }
     },
     "__impliedCopyleft": [

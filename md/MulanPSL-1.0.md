@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `Mulan Permissive Software License 1`
+
 -   `scancode://mulanpsl-1.0`
 
 -   `Mulan PSL v1`
@@ -15,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: MulanPSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Mulan-Permissive-Software-License-1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -158,6 +164,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Mulan-Permissive-Software-License-1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/MulanPSL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -170,10 +180,25 @@
         "__impliedNames": [
             "MulanPSL-1.0",
             "Mulan Permissive Software License, Version 1",
+            "Mulan Permissive Software License 1",
             "scancode://mulanpsl-1.0",
             "Mulan PSL v1"
         ],
         "__impliedId": "MulanPSL-1.0",
+        "__impliedAmbiguousNames": [
+            "MulanPSL-1.0",
+            "Mulan Permissive Software License, Version 1",
+            "木兰宽松许可证, 第1版 木兰宽松许可证， 第1版",
+            "Mulan PSL v1"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MulanPSL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -252,6 +277,41 @@
                         [
                             "Homepage",
                             "https://license.coscl.org.cn/MulanPSL/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MulanPSL-1.0",
+                "shortName": null,
+                "category": "MulanPSL",
+                "alternativeNames": [
+                    "MulanPSL-1.0",
+                    "Mulan Permissive Software License, Version 1",
+                    "木兰宽松许可证, 第1版 木兰宽松许可证， 第1版",
+                    "Mulan PSL v1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Mulan-Permissive-Software-License-1.yaml",
+                "otherIds": [],
+                "canonicalName": "Mulan Permissive Software License 1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Mulan Permissive Software License 1",
+                        "MulanPSL-1.0"
+                    ],
+                    "__impliedId": "MulanPSL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "MulanPSL-1.0",
+                        "Mulan Permissive Software License, Version 1",
+                        "木兰宽松许可证, 第1版 木兰宽松许可证， 第1版",
+                        "Mulan PSL v1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MulanPSL"
+                            ]
                         ]
                     ]
                 }

@@ -12,6 +12,8 @@
 *Other Names:*
 
 * `Frameworx License 1.0`
+* `scancode:frameworx-1.0`
+* `osi:Frameworx-1.0`
 * `Frameworx License, Version 1.0`
 * `scancode://frameworx-1.0`
 * `Frameworx 1.0`
@@ -24,6 +26,9 @@ repository] is generated))
 
 === General Comments
 
+* ``category: Frameworx'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/Frameworx-License-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this license is OSI certified. The url included in the
 license does not work. (15/10/10) '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/frameworx-1.0.yml[Scancode]
@@ -112,6 +117,8 @@ Your agreement to the foregoing as of the date hereof has been evidenced by your
 ==== Facts
 
 * LicenseName
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/Frameworx-License-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -131,13 +138,28 @@ repository] is generated)
     "__impliedNames": [
         "Frameworx-1.0",
         "Frameworx License 1.0",
+        "scancode:frameworx-1.0",
+        "osi:Frameworx-1.0",
         "Frameworx License, Version 1.0",
         "Frameworx Open License 1.0",
         "scancode://frameworx-1.0",
         "Frameworx 1.0"
     ],
     "__impliedId": "Frameworx-1.0",
+    "__impliedAmbiguousNames": [
+        "Frameworx, Version 1.0",
+        "Frameworx 1.0",
+        "Frameworx License, Version 1.0",
+        "Frameworx License, 1.0",
+        "THE FRAMEWORX OPEN LICENSE 1.0"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Frameworx"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -294,6 +316,48 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Frameworx-1.0"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Frameworx-1.0",
+            "shortName": null,
+            "category": "Frameworx",
+            "alternativeNames": [
+                "Frameworx, Version 1.0",
+                "Frameworx 1.0",
+                "Frameworx License, Version 1.0",
+                "Frameworx License, 1.0",
+                "THE FRAMEWORX OPEN LICENSE 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/Frameworx-License-1.0.yaml",
+            "otherIds": [
+                "scancode:frameworx-1.0",
+                "osi:Frameworx-1.0"
+            ],
+            "canonicalName": "Frameworx License 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Frameworx License 1.0",
+                    "Frameworx-1.0",
+                    "scancode:frameworx-1.0",
+                    "osi:Frameworx-1.0"
+                ],
+                "__impliedId": "Frameworx-1.0",
+                "__impliedAmbiguousNames": [
+                    "Frameworx, Version 1.0",
+                    "Frameworx 1.0",
+                    "Frameworx License, Version 1.0",
+                    "Frameworx License, 1.0",
+                    "THE FRAMEWORX OPEN LICENSE 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Frameworx"
+                        ]
+                    ]
                 ]
             }
         },

@@ -2,17 +2,33 @@
     "__impliedNames": [
         "copyleft-next-0.3.0",
         "copyleft-next 0.3.0",
+        "copyleft next License 0.3.0",
+        "scancode:copyleft-next-0.3.0",
         "scancode://copyleft-next-0.3.0"
     ],
     "__impliedId": "copyleft-next-0.3.0",
     "__impliedAmbiguousNames": [
-        "copyleft-next"
+        "copyleft-next",
+        "copyleft next, Version 0.3.0",
+        "copyleft next 0.3.0",
+        "copyleft-next, Version 0.3.0",
+        "copyleft-next, 0.3.0",
+        "copyleft next License, Version 0.3.0",
+        "copyleft next License, 0.3.0",
+        "copyleft-next License, Version 0.3.0",
+        "copyleft-next License 0.3.0"
     ],
     "__impliedComments": [
         [
             "BlueOak License List",
             [
                 "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: copyleft next"
             ]
         ]
     ],
@@ -89,6 +105,52 @@
                     [
                         "Homepage",
                         "https://github.com/richardfontana/copyleft-next/blob/master/Releases/copyleft-next-0.3.0"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "copyleft-next-0.3.0",
+            "shortName": null,
+            "category": "copyleft next",
+            "alternativeNames": [
+                "copyleft next, Version 0.3.0",
+                "copyleft next 0.3.0",
+                "copyleft-next, Version 0.3.0",
+                "copyleft-next, 0.3.0",
+                "copyleft next License, Version 0.3.0",
+                "copyleft next License, 0.3.0",
+                "copyleft-next License, Version 0.3.0",
+                "copyleft-next License 0.3.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/copyleft-next-License-0.3.0.yaml",
+            "otherIds": [
+                "scancode:copyleft-next-0.3.0"
+            ],
+            "canonicalName": "copyleft next License 0.3.0",
+            "_implications": {
+                "__impliedNames": [
+                    "copyleft next License 0.3.0",
+                    "copyleft-next-0.3.0",
+                    "scancode:copyleft-next-0.3.0"
+                ],
+                "__impliedId": "copyleft-next-0.3.0",
+                "__impliedAmbiguousNames": [
+                    "copyleft next, Version 0.3.0",
+                    "copyleft next 0.3.0",
+                    "copyleft-next, Version 0.3.0",
+                    "copyleft-next, 0.3.0",
+                    "copyleft next License, Version 0.3.0",
+                    "copyleft next License, 0.3.0",
+                    "copyleft-next License, Version 0.3.0",
+                    "copyleft-next License 0.3.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: copyleft next"
+                        ]
                     ]
                 ]
             }

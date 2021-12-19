@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `CERN Open Hardware Licence 1.2`
+
+-   `scancode:cern-ohl-1.2`
+
 -   `scancode://cern-ohl-1.2`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: CERN OHL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -111,6 +119,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CERN-OHL-1.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -122,10 +134,25 @@
     {
         "__impliedNames": [
             "CERN-OHL-1.2",
+            "CERN Open Hardware Licence 1.2",
+            "scancode:cern-ohl-1.2",
             "CERN Open Hardware Licence v1.2",
             "scancode://cern-ohl-1.2"
         ],
         "__impliedId": "CERN-OHL-1.2",
+        "__impliedAmbiguousNames": [
+            "CERN Open Hardware Licence v1.2",
+            "CERN-OHL-1.2",
+            "CERN OHL v1.2"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CERN OHL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -205,6 +232,42 @@
                         [
                             null,
                             "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CERN-OHL-1.2",
+                "shortName": null,
+                "category": "CERN OHL",
+                "alternativeNames": [
+                    "CERN Open Hardware Licence v1.2",
+                    "CERN-OHL-1.2",
+                    "CERN OHL v1.2"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-1.2.yaml",
+                "otherIds": [
+                    "scancode:cern-ohl-1.2"
+                ],
+                "canonicalName": "CERN Open Hardware Licence 1.2",
+                "_implications": {
+                    "__impliedNames": [
+                        "CERN Open Hardware Licence 1.2",
+                        "CERN-OHL-1.2",
+                        "scancode:cern-ohl-1.2"
+                    ],
+                    "__impliedId": "CERN-OHL-1.2",
+                    "__impliedAmbiguousNames": [
+                        "CERN Open Hardware Licence v1.2",
+                        "CERN-OHL-1.2",
+                        "CERN OHL v1.2"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CERN OHL"
+                            ]
                         ]
                     ]
                 }

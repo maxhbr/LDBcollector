@@ -17,6 +17,8 @@
 * `ASL 2.0`
 * `Apache License, Version 2.0`
 * `ALv2`
+* `scancode:apache-2.0`
+* `osi:Apache-2.0`
 * `apache2.0`
 * `License :: OSI Approved :: Apache Software License`
 * `scancode://apache-2.0`
@@ -78,6 +80,9 @@ an ownership interest in more than 50% of the corporation's stock, or
 (3) has a beneficial ownership interest.'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: Apache License'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-2.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this version was released January 2004 This license is
 OSI certified '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml[Scancode]
@@ -497,6 +502,8 @@ license-compatibility-checker]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-2.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -530,6 +537,8 @@ repository] is generated)
         "ALv2",
         "Apache License 2.0",
         "apache-2.0",
+        "scancode:apache-2.0",
+        "osi:Apache-2.0",
         "apache2.0",
         "License :: OSI Approved :: Apache Software License",
         "scancode://apache-2.0",
@@ -539,13 +548,83 @@ repository] is generated)
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The Apache Software License (ASL)",
-        "ASL 2.0"
+        "ASL 2.0",
+        "Apache software license, Version 2.0",
+        "Apache License, ASL Version 2.0",
+        "The Apache Software License, Version 2.0",
+        "apache 2",
+        "apache-2.0",
+        "apache2",
+        "apache_v2",
+        "Apache Sofware License, Version 2.0",
+        "Apache Software License,Version 2.0",
+        "Apache Software License, Verision 2.0",
+        "Apache Software License, Verion 2.0",
+        "Apache Software License, Ve rsion 2.0",
+        "Apache Software License 2.0",
+        "Apache Software Licence, Version 2.0",
+        "Apache Software License, Versino 2.0",
+        "Apache Public License, Version 2",
+        "Apache License (VERSION 2.0)",
+        "Apache Licence, version 2.0",
+        "Apache-2.0 License",
+        "Apache-2",
+        "Apache2",
+        "Apache v2",
+        "Apache v.2 License",
+        "Apache license, version 2",
+        "Apache License, version 2",
+        "Apache license, Version 2.0",
+        "Apache license 2.0",
+        "Apache Version 2.0",
+        "Apache V2",
+        "Apache Source License 2.0",
+        "Apache Software License version 2.0",
+        "Apache Software License v2.0",
+        "Apache Software License V2.0",
+        "Apache Software License - Version 2.0",
+        "Apache Software License (ASL) version 2.0",
+        "Apache License, version 2.0",
+        "Apache License, Version 2",
+        "Apache License, Verison 2.0",
+        "Apache License, Verision 2.0",
+        "Apache License v2",
+        "Apache License v 2.0",
+        "Apache License Version 2.0",
+        "Apache License V2.0",
+        "Apache License 2",
+        "Apache License - v2.0",
+        "Apache License - v 2.0",
+        "Apache License - Version 2.0",
+        "Apache License (v2.0)",
+        "Apache Licens version 2.0",
+        "Apache Licene 2.0",
+        "Apache Licence, Version 2.0",
+        "Apache Licence 2.0",
+        "Apache 2",
+        "Apache Software License， Version 2.0",
+        "ASLv2",
+        "ALv2",
+        "APACHE LICENSE-2.0",
+        "ASL, version 2",
+        "ASL-2.0",
+        "ASL2",
+        "Apache (Software) License, version 2.0",
+        "http://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "http://xml.apache.org/xerces2-j/"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "Source refers to software source code, document sources, configuration files, and other files suitable for making changes, such as software source code, document sources, and configuration files. Object refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documentation, and conversions to other media. Sublicense refers to the granting of the license granted by the person to whom the license was granted to again grant the license granted to a third party. A legal entity is an actor and an association of all other persons, such as those who control the actor, those who are controlled by the actor, or those who are under the common control of the actor. In this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, (2) has an ownership interest in more than 50% of the corporation's stock, or (3) has a beneficial ownership interest."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Apache License"
             ]
         ],
         [
@@ -1103,6 +1182,168 @@ repository] is generated)
                 ]
             },
             "description": "Source refers to software source code, document sources, configuration files, and other files suitable for making changes, such as software source code, document sources, and configuration files. Object refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documentation, and conversions to other media. Sublicense refers to the granting of the license granted by the person to whom the license was granted to again grant the license granted to a third party. A legal entity is an actor and an association of all other persons, such as those who control the actor, those who are controlled by the actor, or those who are under the common control of the actor. In this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, (2) has an ownership interest in more than 50% of the corporation's stock, or (3) has a beneficial ownership interest."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Apache-2.0",
+            "shortName": null,
+            "category": "Apache License",
+            "alternativeNames": [
+                "Apache software license, Version 2.0",
+                "Apache License, ASL Version 2.0",
+                "The Apache Software License, Version 2.0",
+                "apache 2",
+                "apache-2.0",
+                "apache2",
+                "apache_v2",
+                "Apache Sofware License, Version 2.0",
+                "Apache Software License,Version 2.0",
+                "Apache Software License, Verision 2.0",
+                "Apache Software License, Verion 2.0",
+                "Apache Software License, Ve rsion 2.0",
+                "Apache Software License 2.0",
+                "Apache Software Licence, Version 2.0",
+                "Apache Software License, Versino 2.0",
+                "Apache Public License, Version 2",
+                "Apache License (VERSION 2.0)",
+                "Apache Licence, version 2.0",
+                "Apache-2.0 License",
+                "Apache-2",
+                "Apache2",
+                "Apache v2",
+                "Apache v.2 License",
+                "Apache license, version 2",
+                "Apache License, version 2",
+                "Apache license, Version 2.0",
+                "Apache license 2.0",
+                "Apache Version 2.0",
+                "Apache V2",
+                "Apache Source License 2.0",
+                "Apache Software License version 2.0",
+                "Apache Software License v2.0",
+                "Apache Software License V2.0",
+                "Apache Software License - Version 2.0",
+                "Apache Software License (ASL) version 2.0",
+                "Apache License, version 2.0",
+                "Apache License, Version 2",
+                "Apache License, Verison 2.0",
+                "Apache License, Verision 2.0",
+                "Apache License v2",
+                "Apache License v 2.0",
+                "Apache License Version 2.0",
+                "Apache License V2.0",
+                "Apache License 2",
+                "Apache License - v2.0",
+                "Apache License - v 2.0",
+                "Apache License - Version 2.0",
+                "Apache License (v2.0)",
+                "Apache Licens version 2.0",
+                "Apache Licene 2.0",
+                "Apache Licence, Version 2.0",
+                "Apache Licence 2.0",
+                "Apache 2",
+                "Apache Software License， Version 2.0",
+                "ASL 2.0",
+                "ASLv2",
+                "ALv2",
+                "APACHE LICENSE-2.0",
+                "ASL, version 2",
+                "ASL-2.0",
+                "ASL2",
+                "Apache (Software) License, version 2.0",
+                "http://www.apache.org/licenses/LICENSE-2.0",
+                "https://www.apache.org/licenses/LICENSE-2.0",
+                "http://xml.apache.org/xerces2-j/"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-2.0.yaml",
+            "otherIds": [
+                "scancode:apache-2.0",
+                "osi:Apache-2.0"
+            ],
+            "canonicalName": "Apache License 2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Apache License 2.0",
+                    "Apache-2.0",
+                    "scancode:apache-2.0",
+                    "osi:Apache-2.0"
+                ],
+                "__impliedId": "Apache-2.0",
+                "__impliedAmbiguousNames": [
+                    "Apache software license, Version 2.0",
+                    "Apache License, ASL Version 2.0",
+                    "The Apache Software License, Version 2.0",
+                    "apache 2",
+                    "apache-2.0",
+                    "apache2",
+                    "apache_v2",
+                    "Apache Sofware License, Version 2.0",
+                    "Apache Software License,Version 2.0",
+                    "Apache Software License, Verision 2.0",
+                    "Apache Software License, Verion 2.0",
+                    "Apache Software License, Ve rsion 2.0",
+                    "Apache Software License 2.0",
+                    "Apache Software Licence, Version 2.0",
+                    "Apache Software License, Versino 2.0",
+                    "Apache Public License, Version 2",
+                    "Apache License (VERSION 2.0)",
+                    "Apache Licence, version 2.0",
+                    "Apache-2.0 License",
+                    "Apache-2",
+                    "Apache2",
+                    "Apache v2",
+                    "Apache v.2 License",
+                    "Apache license, version 2",
+                    "Apache License, version 2",
+                    "Apache license, Version 2.0",
+                    "Apache license 2.0",
+                    "Apache Version 2.0",
+                    "Apache V2",
+                    "Apache Source License 2.0",
+                    "Apache Software License version 2.0",
+                    "Apache Software License v2.0",
+                    "Apache Software License V2.0",
+                    "Apache Software License - Version 2.0",
+                    "Apache Software License (ASL) version 2.0",
+                    "Apache License, version 2.0",
+                    "Apache License, Version 2",
+                    "Apache License, Verison 2.0",
+                    "Apache License, Verision 2.0",
+                    "Apache License v2",
+                    "Apache License v 2.0",
+                    "Apache License Version 2.0",
+                    "Apache License V2.0",
+                    "Apache License 2",
+                    "Apache License - v2.0",
+                    "Apache License - v 2.0",
+                    "Apache License - Version 2.0",
+                    "Apache License (v2.0)",
+                    "Apache Licens version 2.0",
+                    "Apache Licene 2.0",
+                    "Apache Licence, Version 2.0",
+                    "Apache Licence 2.0",
+                    "Apache 2",
+                    "Apache Software License， Version 2.0",
+                    "ASL 2.0",
+                    "ASLv2",
+                    "ALv2",
+                    "APACHE LICENSE-2.0",
+                    "ASL, version 2",
+                    "ASL-2.0",
+                    "ASL2",
+                    "Apache (Software) License, version 2.0",
+                    "http://www.apache.org/licenses/LICENSE-2.0",
+                    "https://www.apache.org/licenses/LICENSE-2.0",
+                    "http://xml.apache.org/xerces2-j/"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Apache License"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Silver",

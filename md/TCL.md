@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `TCL License`
+
+-   `scancode:tcl`
+
 -   `scancode://tcl`
 
 -   `scancode://ttcl`
@@ -22,6 +26,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: TCL License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tc]/TCL-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -98,6 +106,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tc]/TCL-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/TCL.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -116,6 +128,8 @@
         "__impliedNames": [
             "TCL",
             "TCL/TK License",
+            "TCL License",
+            "scancode:tcl",
             "scancode://tcl",
             "scancode://ttcl",
             "LicenseRef-scancode-ttcl"
@@ -123,7 +137,16 @@
         "__impliedId": "TCL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "TCL"
+            "TCL",
+            "TCL License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: TCL License"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -262,6 +285,38 @@
                 },
                 "licensename": "TCL",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "TCL",
+                "shortName": null,
+                "category": "TCL License",
+                "alternativeNames": [
+                    "TCL License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tc]/TCL-License.yaml",
+                "otherIds": [
+                    "scancode:tcl"
+                ],
+                "canonicalName": "TCL License",
+                "_implications": {
+                    "__impliedNames": [
+                        "TCL License",
+                        "TCL",
+                        "scancode:tcl"
+                    ],
+                    "__impliedId": "TCL",
+                    "__impliedAmbiguousNames": [
+                        "TCL License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: TCL License"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

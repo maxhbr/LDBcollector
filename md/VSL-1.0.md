@@ -6,6 +6,10 @@
 
 -   `Vovida Software License 1.0`
 
+-   `scancode:vsl-1.0`
+
+-   `osi:VSL-1.0`
+
 -   `The Vovida Software License, Version 1.0`
 
 -   `License :: OSI Approved :: Vovida Software License 1.0`
@@ -29,6 +33,10 @@
 -   “https://opensource.org/licenses/VSL-1.0” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: VSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vo]/Vovida-Software-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vsl-1.0.yml "Scancode")
@@ -161,6 +169,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vo]/Vovida-Software-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -188,17 +200,32 @@
             "VSL-1.0",
             "Vovida Software License v1.0",
             "Vovida Software License 1.0",
+            "scancode:vsl-1.0",
+            "osi:VSL-1.0",
             "The Vovida Software License, Version 1.0",
             "License :: OSI Approved :: Vovida Software License 1.0",
             "Vovida Software License, Version 1.0",
             "scancode://vsl-1.0"
         ],
         "__impliedId": "VSL-1.0",
+        "__impliedAmbiguousNames": [
+            "VSL, Version 1.0",
+            "VSL, 1.0",
+            "VSL-1.0",
+            "Vovida Software License v. 1.0",
+            "Vovida Software License, Version 1.0"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/VSL-1.0"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: VSL"
                 ]
             ],
             [
@@ -480,6 +507,48 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/1574"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "VSL-1.0",
+                "shortName": null,
+                "category": "VSL",
+                "alternativeNames": [
+                    "VSL, Version 1.0",
+                    "VSL, 1.0",
+                    "VSL-1.0",
+                    "Vovida Software License v. 1.0",
+                    "Vovida Software License, Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vo]/Vovida-Software-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:vsl-1.0",
+                    "osi:VSL-1.0"
+                ],
+                "canonicalName": "Vovida Software License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Vovida Software License 1.0",
+                        "VSL-1.0",
+                        "scancode:vsl-1.0",
+                        "osi:VSL-1.0"
+                    ],
+                    "__impliedId": "VSL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "VSL, Version 1.0",
+                        "VSL, 1.0",
+                        "VSL-1.0",
+                        "Vovida Software License v. 1.0",
+                        "Vovida Software License, Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: VSL"
+                            ]
                         ]
                     ]
                 }

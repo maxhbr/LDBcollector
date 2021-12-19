@@ -3,12 +3,26 @@
         "CrystalStacker",
         "CrystalStacker License",
         "Crystal Stacker License",
+        "scancode:crystal-stacker",
         "scancode://crystal-stacker"
     ],
     "__impliedId": "CrystalStacker",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Crystal Stacker"
+        "Crystal Stacker",
+        "Crystal Stacker is freeware",
+        "CrystalStacker License",
+        "Crystal Stacker License",
+        "CRYSTALSTACKER LICENSE",
+        "CRYSTALSTACKER License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CrystalStacker"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -112,6 +126,46 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CrystalStacker",
+            "shortName": null,
+            "category": "CrystalStacker",
+            "alternativeNames": [
+                "Crystal Stacker is freeware",
+                "CrystalStacker License",
+                "Crystal Stacker License",
+                "CRYSTALSTACKER LICENSE",
+                "CRYSTALSTACKER License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/CrystalStacker-License.yaml",
+            "otherIds": [
+                "scancode:crystal-stacker"
+            ],
+            "canonicalName": "CrystalStacker License",
+            "_implications": {
+                "__impliedNames": [
+                    "CrystalStacker License",
+                    "CrystalStacker",
+                    "scancode:crystal-stacker"
+                ],
+                "__impliedId": "CrystalStacker",
+                "__impliedAmbiguousNames": [
+                    "Crystal Stacker is freeware",
+                    "CrystalStacker License",
+                    "Crystal Stacker License",
+                    "CRYSTALSTACKER LICENSE",
+                    "CRYSTALSTACKER License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CrystalStacker"
+                        ]
                     ]
                 ]
             }

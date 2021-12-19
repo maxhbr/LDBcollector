@@ -2,10 +2,22 @@
     "__impliedNames": [
         "NBPL-1.0",
         "Net Boolean Public License v1",
+        "NBPL 1.0",
+        "scancode:nbpl-1.0",
         "scancode://nbpl-1.0"
     ],
     "__impliedId": "NBPL-1.0",
+    "__impliedAmbiguousNames": [
+        "NBPL, Version 1.0",
+        "NBPL, 1.0"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: NBPL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -104,6 +116,40 @@
                     [
                         "Homepage",
                         "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=37b4b3f6cc4bf34e1d3dec61e69914b9819d8894"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "NBPL-1.0",
+            "shortName": null,
+            "category": "NBPL",
+            "alternativeNames": [
+                "NBPL, Version 1.0",
+                "NBPL, 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nb]/NBPL-1.0.yaml",
+            "otherIds": [
+                "scancode:nbpl-1.0"
+            ],
+            "canonicalName": "NBPL 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "NBPL 1.0",
+                    "NBPL-1.0",
+                    "scancode:nbpl-1.0"
+                ],
+                "__impliedId": "NBPL-1.0",
+                "__impliedAmbiguousNames": [
+                    "NBPL, Version 1.0",
+                    "NBPL, 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: NBPL"
+                        ]
                     ]
                 ]
             }

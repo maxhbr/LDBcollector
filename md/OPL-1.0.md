@@ -4,9 +4,11 @@
 
 **Other Names:**
 
--   `scancode://open-public`
-
 -   `Open Public License 1.0`
+
+-   `scancode:open-public`
+
+-   `scancode://open-public`
 
 ## Comments on (easy) usability
 
@@ -17,6 +19,10 @@
     (NOASSERTION))
 
 ## General Comments
+
+-   “category: OPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -380,6 +386,10 @@
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/OPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -391,13 +401,25 @@
     {
         "__impliedNames": [
             "OPL-1.0",
+            "Open Public License 1.0",
+            "scancode:open-public",
             "Open Public License v1.0",
-            "scancode://open-public",
-            "Open Public License 1.0"
+            "scancode://open-public"
         ],
         "__impliedId": "OPL-1.0",
         "__impliedAmbiguousNames": [
-            "Open Publication License (OPL) v1.0"
+            "Open Publication License (OPL) v1.0",
+            "OPL, Version 1.0",
+            "OPL 1.0",
+            "OPEN PUBLIC LICENSE Version 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OPL"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -510,6 +532,42 @@
                 },
                 "Comment": null,
                 "LicenseId": "OPL-1.0"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OPL-1.0",
+                "shortName": null,
+                "category": "OPL",
+                "alternativeNames": [
+                    "OPL, Version 1.0",
+                    "OPL 1.0",
+                    "OPEN PUBLIC LICENSE Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Public-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:open-public"
+                ],
+                "canonicalName": "Open Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Public License 1.0",
+                        "OPL-1.0",
+                        "scancode:open-public"
+                    ],
+                    "__impliedId": "OPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "OPL, Version 1.0",
+                        "OPL 1.0",
+                        "OPEN PUBLIC LICENSE Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OPL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [

@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:tcp-wrappers`
+
 -   `scancode://tcp-wrappers`
 
 ## Comments on (easy) usability
@@ -17,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: TCP Wrappers” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tc]/TCP-Wrappers-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -79,6 +85,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tc]/TCP-Wrappers-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/TCP-wrappers.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -91,9 +101,26 @@
         "__impliedNames": [
             "TCP-wrappers",
             "TCP Wrappers License",
+            "scancode:tcp-wrappers",
             "scancode://tcp-wrappers"
         ],
         "__impliedId": "TCP-wrappers",
+        "__impliedAmbiguousNames": [
+            "TCP wrappers License",
+            "TCP WRAPPERS LICENSE",
+            "TCP WRAPPERS License",
+            "TCP-wrappers License",
+            "TCP-WRAPPERS LICENSE",
+            "TCP-WRAPPERS License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: TCP Wrappers"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -173,6 +200,48 @@
                         [
                             null,
                             "http://rc.quest.com/topics/openssh/license.php#tcpwrappers"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "TCP-wrappers",
+                "shortName": null,
+                "category": "TCP Wrappers",
+                "alternativeNames": [
+                    "TCP wrappers License",
+                    "TCP WRAPPERS LICENSE",
+                    "TCP WRAPPERS License",
+                    "TCP-wrappers License",
+                    "TCP-WRAPPERS LICENSE",
+                    "TCP-WRAPPERS License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tc]/TCP-Wrappers-License.yaml",
+                "otherIds": [
+                    "scancode:tcp-wrappers"
+                ],
+                "canonicalName": "TCP Wrappers License",
+                "_implications": {
+                    "__impliedNames": [
+                        "TCP Wrappers License",
+                        "TCP-wrappers",
+                        "scancode:tcp-wrappers"
+                    ],
+                    "__impliedId": "TCP-wrappers",
+                    "__impliedAmbiguousNames": [
+                        "TCP wrappers License",
+                        "TCP WRAPPERS LICENSE",
+                        "TCP WRAPPERS License",
+                        "TCP-wrappers License",
+                        "TCP-WRAPPERS LICENSE",
+                        "TCP-WRAPPERS License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: TCP Wrappers"
+                            ]
                         ]
                     ]
                 }

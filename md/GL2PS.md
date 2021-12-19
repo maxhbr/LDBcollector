@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:gl2ps`
+
 -   `GL2PS LICENSE, Version 2`
 
 -   `scancode://gl2ps`
@@ -16,6 +18,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: GL2PS” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/GL2PS-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -101,6 +107,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/GL2PS-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -117,13 +127,24 @@
         "__impliedNames": [
             "GL2PS",
             "GL2PS License",
+            "scancode:gl2ps",
             "GL2PS LICENSE, Version 2",
             "scancode://gl2ps"
         ],
         "__impliedId": "GL2PS",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "GL2PS"
+            "GL2PS",
+            "GL2PS License",
+            "GL2PS LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: GL2PS"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -353,6 +374,40 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/1560"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "GL2PS",
+                "shortName": null,
+                "category": "GL2PS",
+                "alternativeNames": [
+                    "GL2PS License",
+                    "GL2PS LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/GL2PS-License.yaml",
+                "otherIds": [
+                    "scancode:gl2ps"
+                ],
+                "canonicalName": "GL2PS License",
+                "_implications": {
+                    "__impliedNames": [
+                        "GL2PS License",
+                        "GL2PS",
+                        "scancode:gl2ps"
+                    ],
+                    "__impliedId": "GL2PS",
+                    "__impliedAmbiguousNames": [
+                        "GL2PS License",
+                        "GL2PS LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: GL2PS"
+                            ]
                         ]
                     ]
                 }

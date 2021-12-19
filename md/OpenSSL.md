@@ -29,6 +29,10 @@
 
 ## General Comments
 
+-   “category: OpenSSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenSSL-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
+
 -   “Per SPDX.org, the OpenSSL toolkit stays under a dual license, i.e.
     both the conditions of the OpenSSL License and the original SSLeay
     license apply to the toolkit. ” (source:
@@ -290,6 +294,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenSSL-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/OpenSSL.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -328,9 +336,16 @@
         "__impliedId": "OpenSSL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "OpenSSL"
+            "OpenSSL",
+            "OpenSSL License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OpenSSL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -622,6 +637,35 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/279"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OpenSSL",
+                "shortName": null,
+                "category": "OpenSSL",
+                "alternativeNames": [
+                    "OpenSSL License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenSSL-License.yaml",
+                "otherIds": [],
+                "canonicalName": "OpenSSL License",
+                "_implications": {
+                    "__impliedNames": [
+                        "OpenSSL License",
+                        "OpenSSL"
+                    ],
+                    "__impliedId": "OpenSSL",
+                    "__impliedAmbiguousNames": [
+                        "OpenSSL License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OpenSSL"
+                            ]
                         ]
                     ]
                 }

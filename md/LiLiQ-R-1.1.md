@@ -6,6 +6,8 @@
 
 -   `LiLiQ-R`
 
+-   `Licence Libre du Québec – Réciprocité`
+
 -   `Licence Libre du Québec – Réciprocité, Version 1.1`
 
 ## Comments on (easy) usability
@@ -15,6 +17,10 @@
     \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: LiLiQ-R” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/Licence-Libre-du-Québec-–-Réciprocité.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -34,6 +40,10 @@
 
 -   Override
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/Licence-Libre-du-Québec-–-Réciprocité.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -49,10 +59,29 @@
         "__impliedNames": [
             "LiLiQ-R-1.1",
             "LiLiQ-R",
+            "Licence Libre du Québec – Réciprocité",
             "Licence Libre du Québec – Réciprocité, Version 1.1",
             "Licence Libre du Québec – Réciprocité version 1.1"
         ],
         "__impliedId": "LiLiQ-R-1.1",
+        "__impliedAmbiguousNames": [
+            "LiLiQ R, Version 1.1",
+            "LiLiQ R 1.1",
+            "LiLiQ-R, Version 1.1",
+            "LiLiQ-R, 1.1",
+            "LiLiQ R License, Version 1.1",
+            "LiLiQ R License 1.1",
+            "LiLiQ-R License, Version 1.1",
+            "LiLiQ-R License, 1.1"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: LiLiQ-R"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -139,6 +168,49 @@
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "LiLiQ-R-1.1",
+                "shortName": null,
+                "category": "LiLiQ-R",
+                "alternativeNames": [
+                    "LiLiQ R, Version 1.1",
+                    "LiLiQ R 1.1",
+                    "LiLiQ-R, Version 1.1",
+                    "LiLiQ-R, 1.1",
+                    "LiLiQ R License, Version 1.1",
+                    "LiLiQ R License 1.1",
+                    "LiLiQ-R License, Version 1.1",
+                    "LiLiQ-R License, 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/Licence-Libre-du-Québec-–-Réciprocité.yaml",
+                "otherIds": [],
+                "canonicalName": "Licence Libre du Québec – Réciprocité",
+                "_implications": {
+                    "__impliedNames": [
+                        "Licence Libre du Québec – Réciprocité",
+                        "LiLiQ-R-1.1"
+                    ],
+                    "__impliedId": "LiLiQ-R-1.1",
+                    "__impliedAmbiguousNames": [
+                        "LiLiQ R, Version 1.1",
+                        "LiLiQ R 1.1",
+                        "LiLiQ-R, Version 1.1",
+                        "LiLiQ-R, 1.1",
+                        "LiLiQ R License, Version 1.1",
+                        "LiLiQ R License 1.1",
+                        "LiLiQ-R License, Version 1.1",
+                        "LiLiQ-R License, 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: LiLiQ-R"
+                            ]
+                        ]
+                    ]
+                }
             },
             "OpenSourceInitiative": {
                 "text": [

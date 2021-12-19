@@ -6,6 +6,10 @@
 
 -   `W3C Software Notice and License`
 
+-   `scancode:w3c`
+
+-   `osi:W3C`
+
 -   `W3C License`
 
 -   `The W3C Software Notice and License`
@@ -59,6 +63,10 @@
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: W3C” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[w3]/W3C-Software-Notice-and-License-(2002-12-31).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 13 December 2002. This
     license is OSI certified. ” (source:
@@ -204,6 +212,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[w3]/W3C-Software-Notice-and-License-(2002-12-31).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -234,6 +246,8 @@
             "W3C",
             "W3C Software Notice and License (2002-12-31)",
             "W3C Software Notice and License",
+            "scancode:w3c",
+            "osi:W3C",
             "W3C License",
             "The W3C Software Notice and License",
             "License :: OSI Approved :: W3C License",
@@ -244,7 +258,9 @@
         "__impliedId": "W3C",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "W3C"
+            "W3C",
+            "W3C Software Notice and License (2002-12-31)",
+            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
         ],
         "__impliedComments": [
             [
@@ -252,6 +268,12 @@
                 [
                     "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
                     "\"W3C Software Short Notice\" can be found at http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html \"previous version\" can be found at http The link for \"Free Software Foundation's assessment of GPL compatibility\" can be found at http://www. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at www.w3.org/Consortium/Legal/copyright-software-19980720. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at http://www.opensource.org/licenses/W3C.php.\" The link for \"Open Source Definition\" is http://www.opensource.org/docs/definition.php"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: W3C"
                 ]
             ],
             [
@@ -646,6 +668,42 @@
                     ]
                 },
                 "description": "\"W3C Software Short Notice\" can be found at http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html \"previous version\" can be found at http The link for \"Free Software Foundation's assessment of GPL compatibility\" can be found at http://www. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at www.w3.org/Consortium/Legal/copyright-software-19980720. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at http://www.opensource.org/licenses/W3C.php.\" The link for \"Open Source Definition\" is http://www.opensource.org/docs/definition.php"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "W3C",
+                "shortName": null,
+                "category": "W3C",
+                "alternativeNames": [
+                    "W3C Software Notice and License (2002-12-31)",
+                    "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[w3]/W3C-Software-Notice-and-License-(2002-12-31).yaml",
+                "otherIds": [
+                    "scancode:w3c",
+                    "osi:W3C"
+                ],
+                "canonicalName": "W3C Software Notice and License (2002-12-31)",
+                "_implications": {
+                    "__impliedNames": [
+                        "W3C Software Notice and License (2002-12-31)",
+                        "W3C",
+                        "scancode:w3c",
+                        "osi:W3C"
+                    ],
+                    "__impliedId": "W3C",
+                    "__impliedAmbiguousNames": [
+                        "W3C Software Notice and License (2002-12-31)",
+                        "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: W3C"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

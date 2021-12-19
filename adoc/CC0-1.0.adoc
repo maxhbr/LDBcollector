@@ -12,6 +12,8 @@
 
 *Other Names:*
 
+* `CC0 Universal 1.0`
+* `scancode:cc0-1.0`
 * `CC0 1.0`
 * `Creative Commons CC0 1.0 Universal`
 * `scancode://cc0-1.0`
@@ -63,6 +65,9 @@ national legislation, other than the above, including, but not limited
 to, database rights under the'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: CC0'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cc]/CC0-Universal-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === Obligations
 
@@ -271,6 +276,8 @@ license-compatibility-checker]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cc]/CC0-Universal-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -293,18 +300,30 @@ repository] is generated)
         "CC0-1.0",
         "Creative Commons Zero v1.0 Universal",
         "cc0-1.0",
+        "CC0 Universal 1.0",
+        "scancode:cc0-1.0",
         "CC0 1.0",
         "Creative Commons CC0 1.0 Universal",
         "scancode://cc0-1.0",
         "Creative Commons Zero 1.0"
     ],
     "__impliedId": "CC0-1.0",
+    "__impliedAmbiguousNames": [
+        "CC0 Universal 1.0",
+        "Creative Commons CC0 1.0 Universal License"
+    ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "http://creativecommons.org/publicdomain/zero/1.0/legalcodeこのサイトからLegalCodeを参照できる.",
                 "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; ● similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CC0"
             ]
         ]
     ],
@@ -544,6 +563,40 @@ repository] is generated)
                 ]
             },
             "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; ● similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CC0-1.0",
+            "shortName": null,
+            "category": "CC0",
+            "alternativeNames": [
+                "CC0 Universal 1.0",
+                "Creative Commons CC0 1.0 Universal License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cc]/CC0-Universal-1.0.yaml",
+            "otherIds": [
+                "scancode:cc0-1.0"
+            ],
+            "canonicalName": "CC0 Universal 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "CC0 Universal 1.0",
+                    "CC0-1.0",
+                    "scancode:cc0-1.0"
+                ],
+                "__impliedId": "CC0-1.0",
+                "__impliedAmbiguousNames": [
+                    "CC0 Universal 1.0",
+                    "Creative Commons CC0 1.0 Universal License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CC0"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

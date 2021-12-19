@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `BSD 3-Clause License (UC; without 3rd Clause)`
+
 -   `scancode://bsd-original-uc`
 
 -   `BSD-Original-UC`
@@ -22,6 +24,10 @@
     conflicts” (source: Override)
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(UC;without-3rd-Clause).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this is the same license as the BSD-4-Clause, but
     with a copyright notice for the Regents of the University of
@@ -157,6 +163,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(UC;without-3rd-Clause).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause-UC.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -176,6 +186,7 @@
         "__impliedNames": [
             "BSD-4-Clause-UC",
             "BSD-4-Clause (University of California-Specific)",
+            "BSD 3-Clause License (UC; without 3rd Clause)",
             "scancode://bsd-original-uc",
             "BSD-Original-UC"
         ],
@@ -195,6 +206,12 @@
             ]
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -375,6 +392,31 @@
                         true,
                         true,
                         true
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "BSD-4-Clause-UC",
+                "category": "BSD",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(UC;without-3rd-Clause).yaml",
+                "otherIds": [],
+                "canonicalName": "BSD 3-Clause License (UC; without 3rd Clause)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause License (UC; without 3rd Clause)",
+                        "BSD-4-Clause-UC"
+                    ],
+                    "__impliedId": "BSD-4-Clause-UC",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
                     ]
                 }
             },

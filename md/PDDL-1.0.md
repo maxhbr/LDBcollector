@@ -4,17 +4,23 @@
 
 **Other Names:**
 
+-   `PDDL 1.0`
+
+-   `scancode:pddl-1.0`
+
 -   `Open Data Commons Public Domain Dedication and Licence 1.0`
 
 -   `ODC-PDDL-1.0`
 
 -   `scancode://pddl-1.0`
 
--   `PDDL 1.0`
-
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: PDDL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pd]/PDDL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -181,6 +187,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pd]/PDDL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -196,13 +206,29 @@
     {
         "__impliedNames": [
             "PDDL-1.0",
+            "PDDL 1.0",
+            "scancode:pddl-1.0",
             "Open Data Commons Public Domain Dedication and Licence 1.0",
             "ODC-PDDL-1.0",
             "Open Data Commons Public Domain Dedication & License 1.0",
-            "scancode://pddl-1.0",
-            "PDDL 1.0"
+            "scancode://pddl-1.0"
         ],
         "__impliedId": "PDDL-1.0",
+        "__impliedAmbiguousNames": [
+            "PDDL, Version 1.0",
+            "PDDL 1.0",
+            "Public Domain Dedication & License",
+            "http://opendatacommons.org/licenses/pddl/1-0/",
+            "https://opendatacommons.org/licenses/pddl/"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: PDDL"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -358,6 +384,46 @@
                 },
                 "licensename": "PDDL-1.0",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "PDDL-1.0",
+                "shortName": null,
+                "category": "PDDL",
+                "alternativeNames": [
+                    "PDDL, Version 1.0",
+                    "PDDL 1.0",
+                    "Public Domain Dedication & License",
+                    "http://opendatacommons.org/licenses/pddl/1-0/",
+                    "https://opendatacommons.org/licenses/pddl/"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pd]/PDDL-1.0.yaml",
+                "otherIds": [
+                    "scancode:pddl-1.0"
+                ],
+                "canonicalName": "PDDL 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "PDDL 1.0",
+                        "PDDL-1.0",
+                        "scancode:pddl-1.0"
+                    ],
+                    "__impliedId": "PDDL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "PDDL, Version 1.0",
+                        "PDDL 1.0",
+                        "Public Domain Dedication & License",
+                        "http://opendatacommons.org/licenses/pddl/1-0/",
+                        "https://opendatacommons.org/licenses/pddl/"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: PDDL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

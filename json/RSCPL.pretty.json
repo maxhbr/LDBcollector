@@ -2,13 +2,25 @@
     "__impliedNames": [
         "RSCPL",
         "Ricoh Source Code Public License",
+        "scancode:ricoh-1.0",
+        "osi:RSCPL",
         "The Ricoh Source Code Public License",
         "License :: OSI Approved :: Ricoh Source Code Public License",
         "scancode://ricoh-1.0",
         "Ricoh Source Code Public License 1.0"
     ],
     "__impliedId": "RSCPL",
+    "__impliedAmbiguousNames": [
+        "RSCPL",
+        "Ricoh Source Code Public License"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: RSCPL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -214,6 +226,42 @@
             "_implications": {
                 "__impliedNames": [
                     "RSCPL"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "RSCPL",
+            "shortName": null,
+            "category": "RSCPL",
+            "alternativeNames": [
+                "RSCPL",
+                "Ricoh Source Code Public License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rs]/RSCPL.yaml",
+            "otherIds": [
+                "scancode:ricoh-1.0",
+                "osi:RSCPL"
+            ],
+            "canonicalName": "RSCPL",
+            "_implications": {
+                "__impliedNames": [
+                    "RSCPL",
+                    "RSCPL",
+                    "scancode:ricoh-1.0",
+                    "osi:RSCPL"
+                ],
+                "__impliedId": "RSCPL",
+                "__impliedAmbiguousNames": [
+                    "RSCPL",
+                    "Ricoh Source Code Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: RSCPL"
+                        ]
+                    ]
                 ]
             }
         },

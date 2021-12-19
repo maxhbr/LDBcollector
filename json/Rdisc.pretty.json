@@ -2,14 +2,24 @@
     "__impliedNames": [
         "Rdisc",
         "Rdisc License",
+        "scancode:rdisc",
         "scancode://rdisc"
     ],
     "__impliedId": "Rdisc",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Rdisc"
+        "Rdisc",
+        "Rdisc License",
+        "RDISC LICENSE",
+        "RDISC License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Rdisc"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -127,6 +137,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Rdisc_License"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Rdisc",
+            "shortName": null,
+            "category": "Rdisc",
+            "alternativeNames": [
+                "Rdisc License",
+                "RDISC LICENSE",
+                "RDISC License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rd]/Rdisc-License.yaml",
+            "otherIds": [
+                "scancode:rdisc"
+            ],
+            "canonicalName": "Rdisc License",
+            "_implications": {
+                "__impliedNames": [
+                    "Rdisc License",
+                    "Rdisc",
+                    "scancode:rdisc"
+                ],
+                "__impliedId": "Rdisc",
+                "__impliedAmbiguousNames": [
+                    "Rdisc License",
+                    "RDISC LICENSE",
+                    "RDISC License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Rdisc"
+                        ]
                     ]
                 ]
             }

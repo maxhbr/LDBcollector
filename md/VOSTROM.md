@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `VOSTROM License`
+
+-   `scancode:vostrom`
+
 -   `scancode://vostrom`
 
 -   `VOSTROM Public License`
@@ -16,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: VOSTROM” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vo]/VOSTROM-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -100,6 +108,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vo]/VOSTROM-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/VOSTROM.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -112,13 +124,26 @@
         "__impliedNames": [
             "VOSTROM",
             "VOSTROM Public License for Open Source",
+            "VOSTROM License",
+            "scancode:vostrom",
             "scancode://vostrom",
             "VOSTROM Public License"
         ],
         "__impliedId": "VOSTROM",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "VOSTROM"
+            "VOSTROM",
+            "VOSTROM License",
+            "VOSTROM LICENSE",
+            "VOSTROM Public License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: VOSTROM"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -228,6 +253,42 @@
                         [
                             null,
                             "https://fedoraproject.org/wiki/Licensing/VOSTROM"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "VOSTROM",
+                "shortName": null,
+                "category": "VOSTROM",
+                "alternativeNames": [
+                    "VOSTROM License",
+                    "VOSTROM LICENSE",
+                    "VOSTROM Public License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vo]/VOSTROM-License.yaml",
+                "otherIds": [
+                    "scancode:vostrom"
+                ],
+                "canonicalName": "VOSTROM License",
+                "_implications": {
+                    "__impliedNames": [
+                        "VOSTROM License",
+                        "VOSTROM",
+                        "scancode:vostrom"
+                    ],
+                    "__impliedId": "VOSTROM",
+                    "__impliedAmbiguousNames": [
+                        "VOSTROM License",
+                        "VOSTROM LICENSE",
+                        "VOSTROM Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: VOSTROM"
+                            ]
                         ]
                     ]
                 }

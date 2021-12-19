@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:osl-2.1`
+
+-   `osi:OSL-2.1`
+
 -   `Open Software License, Version 2.1`
 
 -   `Open Software License, version 2.1`
@@ -62,6 +66,10 @@
     beneficial ownership of the corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: OSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-2.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, same as version 2.0 of this license except with
     changes to section 10 ” (source:
@@ -222,6 +230,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-2.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -241,6 +253,8 @@
         "__impliedNames": [
             "OSL-2.1",
             "Open Software License 2.1",
+            "scancode:osl-2.1",
+            "osi:OSL-2.1",
             "Open Software License, Version 2.1",
             "Open Software License, version 2.1",
             "scancode://osl-2.1",
@@ -250,7 +264,10 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Open Software License",
-            "OSL 2.1"
+            "OSL 2.1",
+            "Open Software License 2.1",
+            "OSL-2.1",
+            "Open Software Licensev. 2.1"
         ],
         "__impliedComments": [
             [
@@ -265,6 +282,12 @@
                 [
                     "https://opensource.org/licenses/osl-2.1.php",
                     "Source Code means the documentation that describes the appropriate format for making modifications to the Software and how to modify it. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OSL"
                 ]
             ],
             [
@@ -688,6 +711,44 @@
                     ]
                 },
                 "description": "Source Code means the documentation that describes the appropriate format for making modifications to the Software and how to modify it. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OSL-2.1",
+                "shortName": null,
+                "category": "OSL",
+                "alternativeNames": [
+                    "Open Software License 2.1",
+                    "OSL-2.1",
+                    "Open Software Licensev. 2.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-2.1.yaml",
+                "otherIds": [
+                    "scancode:osl-2.1",
+                    "osi:OSL-2.1"
+                ],
+                "canonicalName": "Open Software License 2.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Software License 2.1",
+                        "OSL-2.1",
+                        "scancode:osl-2.1",
+                        "osi:OSL-2.1"
+                    ],
+                    "__impliedId": "OSL-2.1",
+                    "__impliedAmbiguousNames": [
+                        "Open Software License 2.1",
+                        "OSL-2.1",
+                        "Open Software Licensev. 2.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OSL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/OSL-2.1.html",

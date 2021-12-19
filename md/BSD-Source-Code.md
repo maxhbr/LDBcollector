@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `BSD Source Code License`
+
+-   `scancode:bsd-source-code`
+
 -   `scancode://bsd-source-code`
 
 ## Comments on (easy) usability
@@ -13,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD Source Code” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Source-Code-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -63,6 +71,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Source-Code-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-Source-Code.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -75,9 +87,25 @@
         "__impliedNames": [
             "BSD-Source-Code",
             "BSD Source Code Attribution",
+            "BSD Source Code License",
+            "scancode:bsd-source-code",
             "scancode://bsd-source-code"
         ],
         "__impliedId": "BSD-Source-Code",
+        "__impliedAmbiguousNames": [
+            "BSD Source Code",
+            "BSD SOURCE CODE",
+            "BSD-Source-Code",
+            "BSD-SOURCE-CODE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD Source Code"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -151,6 +179,44 @@
                         [
                             "Homepage",
                             "https://github.com/infusion/PHP/blob/master/TSRM/LICENSE"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-Source-Code",
+                "shortName": null,
+                "category": "BSD Source Code",
+                "alternativeNames": [
+                    "BSD Source Code",
+                    "BSD SOURCE CODE",
+                    "BSD-Source-Code",
+                    "BSD-SOURCE-CODE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Source-Code-License.yaml",
+                "otherIds": [
+                    "scancode:bsd-source-code"
+                ],
+                "canonicalName": "BSD Source Code License",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD Source Code License",
+                        "BSD-Source-Code",
+                        "scancode:bsd-source-code"
+                    ],
+                    "__impliedId": "BSD-Source-Code",
+                    "__impliedAmbiguousNames": [
+                        "BSD Source Code",
+                        "BSD SOURCE CODE",
+                        "BSD-Source-Code",
+                        "BSD-SOURCE-CODE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD Source Code"
+                            ]
                         ]
                     ]
                 }

@@ -2,6 +2,8 @@
     "__impliedNames": [
         "AAL",
         "Attribution Assurance License",
+        "scancode:attribution",
+        "osi:attribution",
         "Attribution Assurance Licenses",
         "License :: OSI Approved :: Attribution Assurance License",
         "scancode://attribution"
@@ -9,9 +11,16 @@
     "__impliedId": "AAL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "AAL"
+        "AAL",
+        "Attribution Assurance License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: AAL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -197,6 +206,40 @@
             "_implications": {
                 "__impliedNames": [
                     "AAL"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "AAL",
+            "shortName": null,
+            "category": "AAL",
+            "alternativeNames": [
+                "Attribution Assurance License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[at]/Attribution-Assurance-License.yaml",
+            "otherIds": [
+                "scancode:attribution",
+                "osi:attribution"
+            ],
+            "canonicalName": "Attribution Assurance License",
+            "_implications": {
+                "__impliedNames": [
+                    "Attribution Assurance License",
+                    "AAL",
+                    "scancode:attribution",
+                    "osi:attribution"
+                ],
+                "__impliedId": "AAL",
+                "__impliedAmbiguousNames": [
+                    "Attribution Assurance License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: AAL"
+                        ]
+                    ]
                 ]
             }
         },

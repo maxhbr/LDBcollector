@@ -4,13 +4,19 @@
 
 **Other Names:**
 
--   `scancode://lppl-1.3a`
-
 -   `LPPL 1.3a`
+
+-   `scancode:lppl-1.3a`
+
+-   `scancode://lppl-1.3a`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: LPPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPPL-1.3a.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 1 Oct 2004” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml "Scancode")
@@ -431,6 +437,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPPL-1.3a.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/LPPL-1.3a.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -442,12 +452,23 @@
     {
         "__impliedNames": [
             "LPPL-1.3a",
+            "LPPL 1.3a",
+            "scancode:lppl-1.3a",
             "LaTeX Project Public License v1.3a",
-            "scancode://lppl-1.3a",
-            "LPPL 1.3a"
+            "scancode://lppl-1.3a"
         ],
         "__impliedId": "LPPL-1.3a",
+        "__impliedAmbiguousNames": [
+            "LPPL, Version 1.3a",
+            "LPPL 1.3a"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: LPPL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -555,6 +576,40 @@
                 },
                 "licensename": "LPPL-1.3a",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "LPPL-1.3a",
+                "shortName": null,
+                "category": "LPPL",
+                "alternativeNames": [
+                    "LPPL, Version 1.3a",
+                    "LPPL 1.3a"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPPL-1.3a.yaml",
+                "otherIds": [
+                    "scancode:lppl-1.3a"
+                ],
+                "canonicalName": "LPPL 1.3a",
+                "_implications": {
+                    "__impliedNames": [
+                        "LPPL 1.3a",
+                        "LPPL-1.3a",
+                        "scancode:lppl-1.3a"
+                    ],
+                    "__impliedId": "LPPL-1.3a",
+                    "__impliedAmbiguousNames": [
+                        "LPPL, Version 1.3a",
+                        "LPPL 1.3a"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: LPPL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

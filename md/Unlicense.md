@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:unlicense`
+
 -   `scancode://unlicense`
 
 -   `Unlicense 1`
@@ -41,6 +43,10 @@
 -   “http://unlicense.org/” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Public Domain” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unlicense.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this is a public domain dedication” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml "Scancode")
@@ -141,6 +147,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unlicense.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -168,6 +178,7 @@
             "Unlicense",
             "The Unlicense",
             "unlicense",
+            "scancode:unlicense",
             "scancode://unlicense",
             "Unlicense 1"
         ],
@@ -181,6 +192,12 @@
                 "Hitachi open-license",
                 [
                     "http://unlicense.org/"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Public Domain"
                 ]
             ],
             [
@@ -459,6 +476,38 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/844"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Unlicense",
+                "shortName": null,
+                "category": "Public Domain",
+                "alternativeNames": [
+                    "Unlicense"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unlicense.yaml",
+                "otherIds": [
+                    "scancode:unlicense"
+                ],
+                "canonicalName": "Unlicense",
+                "_implications": {
+                    "__impliedNames": [
+                        "Unlicense",
+                        "Unlicense",
+                        "scancode:unlicense"
+                    ],
+                    "__impliedId": "Unlicense",
+                    "__impliedAmbiguousNames": [
+                        "Unlicense"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Public Domain"
+                            ]
                         ]
                     ]
                 }

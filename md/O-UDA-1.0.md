@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Open Use of Data Agreement 1.0`
+
+-   `scancode:o-uda-1.0`
+
 -   `scancode://o-uda-1.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Open Use of Data Agreement” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Use-of-Data-Agreement-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -76,6 +84,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Use-of-Data-Agreement-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/O-UDA-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -87,10 +99,23 @@
     {
         "__impliedNames": [
             "O-UDA-1.0",
+            "Open Use of Data Agreement 1.0",
+            "scancode:o-uda-1.0",
             "Open Use of Data Agreement v1.0",
             "scancode://o-uda-1.0"
         ],
         "__impliedId": "O-UDA-1.0",
+        "__impliedAmbiguousNames": [
+            "Open Use of Data Agreement v1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Open Use of Data Agreement"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -175,6 +200,38 @@
                         [
                             null,
                             "https://cdla.dev/open-use-of-data-agreement-v1-0/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "O-UDA-1.0",
+                "shortName": null,
+                "category": "Open Use of Data Agreement",
+                "alternativeNames": [
+                    "Open Use of Data Agreement v1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Use-of-Data-Agreement-1.0.yaml",
+                "otherIds": [
+                    "scancode:o-uda-1.0"
+                ],
+                "canonicalName": "Open Use of Data Agreement 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Use of Data Agreement 1.0",
+                        "O-UDA-1.0",
+                        "scancode:o-uda-1.0"
+                    ],
+                    "__impliedId": "O-UDA-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Open Use of Data Agreement v1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Open Use of Data Agreement"
+                            ]
                         ]
                     ]
                 }

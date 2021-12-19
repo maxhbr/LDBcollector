@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:sendmail`
+
 -   `SENDMAIL LICENSE (version 2004)`
 
 -   `SENDMAIL LICENSE (version 2012)`
@@ -25,6 +27,10 @@
     code of Sendmail, including modifications.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Sendmail” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Sendmail-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “this version of the license dates from 2004. There several minor
     variations publichsed since.” (source:
@@ -192,6 +198,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Sendmail-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -216,6 +226,7 @@
         "__impliedNames": [
             "Sendmail",
             "Sendmail License",
+            "scancode:sendmail",
             "SENDMAIL LICENSE (version 2004)",
             "SENDMAIL LICENSE (version 2012)",
             "SENDMAIL LICENSE (version 1998)",
@@ -224,13 +235,20 @@
         "__impliedId": "Sendmail",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Sendmail"
+            "Sendmail",
+            "Sendmail License"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Sendmail"
                 ]
             ],
             [
@@ -533,6 +551,38 @@
                     ]
                 },
                 "description": "Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Sendmail",
+                "shortName": null,
+                "category": "Sendmail",
+                "alternativeNames": [
+                    "Sendmail License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Sendmail-License.yaml",
+                "otherIds": [
+                    "scancode:sendmail"
+                ],
+                "canonicalName": "Sendmail License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Sendmail License",
+                        "Sendmail",
+                        "scancode:sendmail"
+                    ],
+                    "__impliedId": "Sendmail",
+                    "__impliedAmbiguousNames": [
+                        "Sendmail License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Sendmail"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [

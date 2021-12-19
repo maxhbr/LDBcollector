@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Creative Commons BY-NC-ND 3.0 (IGO)`
+
+-   `scancode:cc-by-nc-nd-3.0-igo`
+
 -   `scancode://cc-by-nc-nd-3.0-igo`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: CC-BY-NC-ND” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-ND-3.0-(IGO).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -85,6 +93,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-ND-3.0-(IGO).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -96,10 +108,23 @@
     {
         "__impliedNames": [
             "CC-BY-NC-ND-3.0-IGO",
+            "Creative Commons BY-NC-ND 3.0 (IGO)",
+            "scancode:cc-by-nc-nd-3.0-igo",
             "Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO",
             "scancode://cc-by-nc-nd-3.0-igo"
         ],
         "__impliedId": "CC-BY-NC-ND-3.0-IGO",
+        "__impliedAmbiguousNames": [
+            "Creative Commons BY-NC-ND 3.0 (IGO)"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-NC-ND"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -166,6 +191,38 @@
                         [
                             "Homepage",
                             "https://creativecommons.org/licenses/by-nc-nd/3.0/igo/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-NC-ND-3.0-IGO",
+                "shortName": null,
+                "category": "CC-BY-NC-ND",
+                "alternativeNames": [
+                    "Creative Commons BY-NC-ND 3.0 (IGO)"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-ND-3.0-(IGO).yaml",
+                "otherIds": [
+                    "scancode:cc-by-nc-nd-3.0-igo"
+                ],
+                "canonicalName": "Creative Commons BY-NC-ND 3.0 (IGO)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY-NC-ND 3.0 (IGO)",
+                        "CC-BY-NC-ND-3.0-IGO",
+                        "scancode:cc-by-nc-nd-3.0-igo"
+                    ],
+                    "__impliedId": "CC-BY-NC-ND-3.0-IGO",
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons BY-NC-ND 3.0 (IGO)"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-NC-ND"
+                            ]
                         ]
                     ]
                 }

@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Creative Commons BY-ND 2.5 (generic)`
+
+-   `scancode:cc-by-nd-2.5`
+
 -   `scancode://cc-by-nd-2.5`
 
 ## Comments on (easy) usability
@@ -13,6 +17,10 @@
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 ## General Comments
+
+-   “category: CC-BY-ND” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-ND-2.5-(generic).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -92,6 +100,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-ND-2.5-(generic).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-ND-2.5.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -103,10 +115,25 @@
     {
         "__impliedNames": [
             "CC-BY-ND-2.5",
+            "Creative Commons BY-ND 2.5 (generic)",
+            "scancode:cc-by-nd-2.5",
             "Creative Commons Attribution No Derivatives 2.5 Generic",
             "scancode://cc-by-nd-2.5"
         ],
         "__impliedId": "CC-BY-ND-2.5",
+        "__impliedAmbiguousNames": [
+            "Creative Commons Attribution No Derivatives 2.5 Generic",
+            "CC-BY-ND-2.5",
+            "Creative Commons Attribution-NoDerivs 2.5"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-ND"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -179,6 +206,42 @@
                         [
                             null,
                             "https://creativecommons.org/licenses/by-nd/2.5/legalcode"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-ND-2.5",
+                "shortName": null,
+                "category": "CC-BY-ND",
+                "alternativeNames": [
+                    "Creative Commons Attribution No Derivatives 2.5 Generic",
+                    "CC-BY-ND-2.5",
+                    "Creative Commons Attribution-NoDerivs 2.5"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-ND-2.5-(generic).yaml",
+                "otherIds": [
+                    "scancode:cc-by-nd-2.5"
+                ],
+                "canonicalName": "Creative Commons BY-ND 2.5 (generic)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY-ND 2.5 (generic)",
+                        "CC-BY-ND-2.5",
+                        "scancode:cc-by-nd-2.5"
+                    ],
+                    "__impliedId": "CC-BY-ND-2.5",
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons Attribution No Derivatives 2.5 Generic",
+                        "CC-BY-ND-2.5",
+                        "Creative Commons Attribution-NoDerivs 2.5"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-ND"
+                            ]
                         ]
                     ]
                 }

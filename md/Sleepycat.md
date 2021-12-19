@@ -8,6 +8,12 @@
 
 -   `Sleepycat Software Product License`
 
+-   `Berkeley-Database`
+
+-   `scancode:sleepycat`
+
+-   `osi:Sleepycat`
+
 -   `The Sleepycat License`
 
 -   `License :: OSI Approved :: Sleepycat License`
@@ -37,6 +43,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: Berkeley Database License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[be]/Berkeley-Database-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml "Scancode")
@@ -115,6 +125,14 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[be]/Berkeley-Database-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sl]/Sleepycat-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -142,6 +160,9 @@
             "Berkeley Database License",
             "Sleepycat Software Product License",
             "Sleepycat License",
+            "Berkeley-Database",
+            "scancode:sleepycat",
+            "osi:Sleepycat",
             "The Sleepycat License",
             "License :: OSI Approved :: Sleepycat License",
             "scancode://sleepycat"
@@ -150,13 +171,20 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Sleepycat License",
-            "Sleepycat"
+            "Sleepycat",
+            "Berkeley DB License"
         ],
         "__impliedComments": [
             [
                 "BlueOak License List",
                 [
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Berkeley Database License"
                 ]
             ],
             [
@@ -390,6 +418,38 @@
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "Berkeley-Database",
+                "category": "Berkeley Database License",
+                "alternativeNames": [
+                    "Berkeley DB License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[be]/Berkeley-Database-License.yaml",
+                "otherIds": [
+                    "scancode:sleepycat"
+                ],
+                "canonicalName": "Berkeley Database License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Berkeley Database License",
+                        "Berkeley-Database",
+                        "scancode:sleepycat"
+                    ],
+                    "__impliedId": "Berkeley-Database",
+                    "__impliedAmbiguousNames": [
+                        "Berkeley DB License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Berkeley Database License"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/Sleepycat.html",

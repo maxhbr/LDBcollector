@@ -2,12 +2,24 @@
     "__impliedNames": [
         "gnuplot",
         "gnuplot License",
+        "scancode:gnuplot",
         "scancode://gnuplot"
     ],
     "__impliedId": "gnuplot",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "gnuplot"
+        "gnuplot",
+        "gnuplot License",
+        "GNUPLOT LICENSE",
+        "GNUPLOT License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: gnuplot"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -117,6 +129,42 @@
                     [
                         null,
                         "https://fedoraproject.org/wiki/Licensing/Gnuplot"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "gnuplot",
+            "shortName": null,
+            "category": "gnuplot",
+            "alternativeNames": [
+                "gnuplot License",
+                "GNUPLOT LICENSE",
+                "GNUPLOT License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/gnuplot-License.yaml",
+            "otherIds": [
+                "scancode:gnuplot"
+            ],
+            "canonicalName": "gnuplot License",
+            "_implications": {
+                "__impliedNames": [
+                    "gnuplot License",
+                    "gnuplot",
+                    "scancode:gnuplot"
+                ],
+                "__impliedId": "gnuplot",
+                "__impliedAmbiguousNames": [
+                    "gnuplot License",
+                    "GNUPLOT LICENSE",
+                    "GNUPLOT License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: gnuplot"
+                        ]
                     ]
                 ]
             }

@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Intel ACPI License`
+
+-   `scancode:intel-acpi`
+
 -   `scancode://intel-acpi`
 
 -   `Intel ACPI SLA`
@@ -16,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Intel ACPI” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Intel-ACPI-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is no longer available at its original URL
     http://www.intel.com/technology/iapc/acpi/license2.htm. A copy was
@@ -159,6 +167,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Intel-ACPI-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Intel-ACPI.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -171,15 +183,27 @@
         "__impliedNames": [
             "Intel-ACPI",
             "Intel ACPI Software License Agreement",
+            "Intel ACPI License",
+            "scancode:intel-acpi",
             "scancode://intel-acpi",
             "Intel ACPI SLA"
         ],
         "__impliedId": "Intel-ACPI",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Intel ACPI"
+            "Intel ACPI",
+            "INTEL ACPI",
+            "Intel-ACPI",
+            "INTEL-ACPI",
+            "ACPI - Software License Agreement"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Intel ACPI"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -297,6 +321,46 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Intel_ACPI_Software_License_Agreement"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Intel-ACPI",
+                "shortName": null,
+                "category": "Intel ACPI",
+                "alternativeNames": [
+                    "Intel ACPI",
+                    "INTEL ACPI",
+                    "Intel-ACPI",
+                    "INTEL-ACPI",
+                    "ACPI - Software License Agreement"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Intel-ACPI-License.yaml",
+                "otherIds": [
+                    "scancode:intel-acpi"
+                ],
+                "canonicalName": "Intel ACPI License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Intel ACPI License",
+                        "Intel-ACPI",
+                        "scancode:intel-acpi"
+                    ],
+                    "__impliedId": "Intel-ACPI",
+                    "__impliedAmbiguousNames": [
+                        "Intel ACPI",
+                        "INTEL ACPI",
+                        "Intel-ACPI",
+                        "INTEL-ACPI",
+                        "ACPI - Software License Agreement"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Intel ACPI"
+                            ]
                         ]
                     ]
                 }

@@ -2,15 +2,23 @@
     "__impliedNames": [
         "OML",
         "Open Market License",
+        "scancode:fastcgi-devkit",
         "scancode://fastcgi-devkit",
         "FastCGI DevKit"
     ],
     "__impliedId": "OML",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "OML"
+        "OML",
+        "OM License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: OML"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -128,6 +136,38 @@
                     [
                         "Homepage",
                         "http://www.fastcgi.com/devkit/LICENSE.TERMS"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "OML",
+            "shortName": null,
+            "category": "OML",
+            "alternativeNames": [
+                "OM License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Market-License.yaml",
+            "otherIds": [
+                "scancode:fastcgi-devkit"
+            ],
+            "canonicalName": "Open Market License",
+            "_implications": {
+                "__impliedNames": [
+                    "Open Market License",
+                    "OML",
+                    "scancode:fastcgi-devkit"
+                ],
+                "__impliedId": "OML",
+                "__impliedAmbiguousNames": [
+                    "OM License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: OML"
+                        ]
                     ]
                 ]
             }

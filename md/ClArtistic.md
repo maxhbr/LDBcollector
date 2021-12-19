@@ -6,6 +6,10 @@
 
 -   `Artistic (clarified)`
 
+-   `ClArtistic License`
+
+-   `scancode:artistic-clarified`
+
 -   `scancode://artistic-clarified`
 
 ## Comments on (easy) usability
@@ -20,6 +24,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: ClArtistic” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cl]/ClArtistic-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -195,6 +203,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cl]/ClArtistic-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/ClArtistic.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -208,12 +220,24 @@
             "ClArtistic",
             "Artistic (clarified)",
             "Clarified Artistic License",
+            "ClArtistic License",
+            "scancode:artistic-clarified",
             "scancode://artistic-clarified"
         ],
         "__impliedId": "ClArtistic",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Artistic clarified"
+            "Artistic clarified",
+            "ClArtistic",
+            "CLARTISTIC"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ClArtistic"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -365,6 +389,40 @@
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ClArtistic",
+                "shortName": null,
+                "category": "ClArtistic",
+                "alternativeNames": [
+                    "ClArtistic",
+                    "CLARTISTIC"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cl]/ClArtistic-License.yaml",
+                "otherIds": [
+                    "scancode:artistic-clarified"
+                ],
+                "canonicalName": "ClArtistic License",
+                "_implications": {
+                    "__impliedNames": [
+                        "ClArtistic License",
+                        "ClArtistic",
+                        "scancode:artistic-clarified"
+                    ],
+                    "__impliedId": "ClArtistic",
+                    "__impliedAmbiguousNames": [
+                        "ClArtistic",
+                        "CLARTISTIC"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ClArtistic"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

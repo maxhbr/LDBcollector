@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:zlib-acknowledgement`
+
 -   `scancode://zlib-acknowledgement`
 
 -   `ZLIB License with Acknowledgment`
@@ -26,6 +28,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: zlib-acknowledgement” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zl]/zliblibpng-License-with-Acknowledgement.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is the same as zlib, except that it
     requires that an acknowledgement be made in the product
@@ -112,6 +118,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zl]/zliblibpng-License-with-Acknowledgement.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/zlib-acknowledgement.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -128,6 +138,7 @@
         "__impliedNames": [
             "zlib-acknowledgement",
             "zlib/libpng License with Acknowledgement",
+            "scancode:zlib-acknowledgement",
             "scancode://zlib-acknowledgement",
             "ZLIB License with Acknowledgment"
         ],
@@ -135,9 +146,17 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)",
-            "zlib with acknowledgement"
+            "zlib with acknowledgement",
+            "zlib-acknowledgement",
+            "zlib/libpng License with Acknowledgement"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: zlib-acknowledgement"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -314,6 +333,40 @@
                 },
                 "Comment": null,
                 "LicenseId": "zlib-acknowledgement"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "zlib-acknowledgement",
+                "shortName": null,
+                "category": "zlib-acknowledgement",
+                "alternativeNames": [
+                    "zlib-acknowledgement",
+                    "zlib/libpng License with Acknowledgement"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zl]/zliblibpng-License-with-Acknowledgement.yaml",
+                "otherIds": [
+                    "scancode:zlib-acknowledgement"
+                ],
+                "canonicalName": "zlib/libpng License with Acknowledgement",
+                "_implications": {
+                    "__impliedNames": [
+                        "zlib/libpng License with Acknowledgement",
+                        "zlib-acknowledgement",
+                        "scancode:zlib-acknowledgement"
+                    ],
+                    "__impliedId": "zlib-acknowledgement",
+                    "__impliedAmbiguousNames": [
+                        "zlib-acknowledgement",
+                        "zlib/libpng License with Acknowledgement"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: zlib-acknowledgement"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

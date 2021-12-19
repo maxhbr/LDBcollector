@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `scancode:tosl`
 * `scancode://tosl`
 * `TOSL 1.0a`
 
@@ -23,6 +24,9 @@ Project Wiki]
 
 === General Comments
 
+* ``category: TOSL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[to]/TOSL.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per Fedora, the Trusster Open Source License (TOSL) is a derivation
 of the Sleepycat License. The one significant difference is that where
 the Sleepycat License says The source code must either be included in
@@ -92,6 +96,8 @@ OF SUCH DAMAGE.
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[to]/TOSL.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/TOSL.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tosl.yml[Scancode]
@@ -104,15 +110,23 @@ repository] is generated)
     "__impliedNames": [
         "TOSL",
         "Trusster Open Source License",
+        "scancode:tosl",
         "scancode://tosl",
         "TOSL 1.0a"
     ],
     "__impliedId": "TOSL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "TOSL"
+        "TOSL",
+        "Trusster Open Source License version 1.0a"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: TOSL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -230,6 +244,40 @@ repository] is generated)
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/TOSL"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "TOSL",
+            "shortName": null,
+            "category": "TOSL",
+            "alternativeNames": [
+                "TOSL",
+                "Trusster Open Source License version 1.0a"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[to]/TOSL.yaml",
+            "otherIds": [
+                "scancode:tosl"
+            ],
+            "canonicalName": "TOSL",
+            "_implications": {
+                "__impliedNames": [
+                    "TOSL",
+                    "TOSL",
+                    "scancode:tosl"
+                ],
+                "__impliedId": "TOSL",
+                "__impliedAmbiguousNames": [
+                    "TOSL",
+                    "Trusster Open Source License version 1.0a"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: TOSL"
+                        ]
                     ]
                 ]
             }

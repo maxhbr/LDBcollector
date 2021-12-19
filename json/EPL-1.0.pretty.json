@@ -3,6 +3,8 @@
         "EPL-1.0",
         "Eclipse Public License 1.0",
         "epl-1.0",
+        "scancode:epl-1.0",
+        "osi:EPL-1.0",
         "eclipse-1.0",
         "Eclipse Public License, Version 1.0",
         "scancode://epl-1.0",
@@ -13,7 +15,28 @@
     "__impliedAmbiguousNames": [
         "Eclipse Public License",
         "Eclipse Public License - 1.0",
-        "EPL-1.0"
+        "EPL-1.0",
+        "Eclipse Public License (EPL) v1.0",
+        "Eclipse Public License - Version 1.0",
+        "Eclipse Public License 1.0",
+        "Eclipse Public License v1.0",
+        "Eclipse Public License version 1.0",
+        "Eclipse Public License, Version 1.0",
+        "Eclipse Public License (EPL) 1.0",
+        "Eclipse Public License (EPL), Version 1.0",
+        "Eclise Public License, Version 1.0",
+        "Eclipse-1.0",
+        "EPL (Eclipse Public License), V1.0 or later",
+        "EPL 1.0",
+        "EPLv1",
+        "Eclipse Public License v1.0&#xD",
+        "http://www.eclipse.org/legal/epl-v10.html",
+        "https://www.eclipse.org/legal/epl-v10.html",
+        "Eclipse Public Licence, Version 1.0",
+        "Eclipse Public License - v1.0",
+        "Eclipse Public License -v 1.0",
+        "Eclipse Public License v 1.0",
+        "Eclipse Public License, V 1.0"
     ],
     "__impliedComments": [
         [
@@ -26,6 +49,12 @@
             "Hitachi open-license",
             [
                 "Contributor\" means the person or entity that distributes the Software. A Contributor is included among all persons who receive the Software under such a license. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: EPL"
             ]
         ],
         [
@@ -754,6 +783,82 @@
                 ]
             },
             "description": "Contributor\" means the person or entity that distributes the Software. A Contributor is included among all persons who receive the Software under such a license. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "EPL-1.0",
+            "shortName": null,
+            "category": "EPL",
+            "alternativeNames": [
+                "Eclipse Public License (EPL) v1.0",
+                "Eclipse Public License - Version 1.0",
+                "Eclipse Public License 1.0",
+                "Eclipse Public License v1.0",
+                "Eclipse Public License version 1.0",
+                "Eclipse Public License, Version 1.0",
+                "Eclipse Public License (EPL) 1.0",
+                "Eclipse Public License (EPL), Version 1.0",
+                "Eclise Public License, Version 1.0",
+                "Eclipse-1.0",
+                "EPL (Eclipse Public License), V1.0 or later",
+                "EPL 1.0",
+                "EPL-1.0",
+                "EPLv1",
+                "Eclipse Public License v1.0&#xD",
+                "http://www.eclipse.org/legal/epl-v10.html",
+                "https://www.eclipse.org/legal/epl-v10.html",
+                "Eclipse Public Licence, Version 1.0",
+                "Eclipse Public License - v1.0",
+                "Eclipse Public License -v 1.0",
+                "Eclipse Public License v 1.0",
+                "Eclipse Public License, V 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ec]/Eclipse-Public-License-1.0.yaml",
+            "otherIds": [
+                "scancode:epl-1.0",
+                "osi:EPL-1.0"
+            ],
+            "canonicalName": "Eclipse Public License 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Eclipse Public License 1.0",
+                    "EPL-1.0",
+                    "scancode:epl-1.0",
+                    "osi:EPL-1.0"
+                ],
+                "__impliedId": "EPL-1.0",
+                "__impliedAmbiguousNames": [
+                    "Eclipse Public License (EPL) v1.0",
+                    "Eclipse Public License - Version 1.0",
+                    "Eclipse Public License 1.0",
+                    "Eclipse Public License v1.0",
+                    "Eclipse Public License version 1.0",
+                    "Eclipse Public License, Version 1.0",
+                    "Eclipse Public License (EPL) 1.0",
+                    "Eclipse Public License (EPL), Version 1.0",
+                    "Eclise Public License, Version 1.0",
+                    "Eclipse-1.0",
+                    "EPL (Eclipse Public License), V1.0 or later",
+                    "EPL 1.0",
+                    "EPL-1.0",
+                    "EPLv1",
+                    "Eclipse Public License v1.0&#xD",
+                    "http://www.eclipse.org/legal/epl-v10.html",
+                    "https://www.eclipse.org/legal/epl-v10.html",
+                    "Eclipse Public Licence, Version 1.0",
+                    "Eclipse Public License - v1.0",
+                    "Eclipse Public License -v 1.0",
+                    "Eclipse Public License v 1.0",
+                    "Eclipse Public License, V 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: EPL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "url": "https://spdx.org/licenses/EPL-1.0.html",

@@ -1,11 +1,29 @@
 {
     "__impliedNames": [
         "BitTorrent-1.0",
+        "BitTorrent License 1.0",
+        "scancode:bittorrent-1.0",
         "BitTorrent Open Source License v1.0",
         "scancode://bittorrent-1.0",
         "BitTorrent 1.0"
     ],
     "__impliedId": "BitTorrent-1.0",
+    "__impliedAmbiguousNames": [
+        "BitTorrent, Version 1.0",
+        "BitTorrent, 1.0",
+        "BitTorrent-1.0",
+        "BitTorrent License, Version 1.0",
+        "BitTorrent License, 1.0",
+        "BitTorrent Open Source License Version 1.0"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: BitTorrent"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -104,6 +122,48 @@
             },
             "licensename": "BitTorrent-1.0",
             "copyleftkind": "WeakCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "BitTorrent-1.0",
+            "shortName": null,
+            "category": "BitTorrent",
+            "alternativeNames": [
+                "BitTorrent, Version 1.0",
+                "BitTorrent, 1.0",
+                "BitTorrent-1.0",
+                "BitTorrent License, Version 1.0",
+                "BitTorrent License, 1.0",
+                "BitTorrent Open Source License Version 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bi]/BitTorrent-License-1.0.yaml",
+            "otherIds": [
+                "scancode:bittorrent-1.0"
+            ],
+            "canonicalName": "BitTorrent License 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "BitTorrent License 1.0",
+                    "BitTorrent-1.0",
+                    "scancode:bittorrent-1.0"
+                ],
+                "__impliedId": "BitTorrent-1.0",
+                "__impliedAmbiguousNames": [
+                    "BitTorrent, Version 1.0",
+                    "BitTorrent, 1.0",
+                    "BitTorrent-1.0",
+                    "BitTorrent License, Version 1.0",
+                    "BitTorrent License, 1.0",
+                    "BitTorrent Open Source License Version 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: BitTorrent"
+                        ]
+                    ]
+                ]
+            }
         }
     },
     "__impliedCopyleft": [

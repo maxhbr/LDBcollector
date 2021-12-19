@@ -4,13 +4,13 @@
 
 **Other Names:**
 
+-   `Interbase Public License 1.0`
+
 -   `InterBase Public License, Version 1.0`
 
 -   `INTERBASE PUBLIC LICENSE, Version 1.0 by "Borland Software Corporation"`
 
 -   `scancode://interbase-1.0`
-
--   `Interbase Public License 1.0`
 
 ## Comments on (easy) usability
 
@@ -39,6 +39,10 @@
     of the corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Interbase” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Interbase-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -407,6 +411,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Interbase-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -426,19 +434,33 @@
     {
         "__impliedNames": [
             "Interbase-1.0",
+            "Interbase Public License 1.0",
             "InterBase Public License, Version 1.0",
             "INTERBASE PUBLIC LICENSE, Version 1.0 by \"Borland Software Corporation\"",
             "Interbase Public License v1.0",
-            "scancode://interbase-1.0",
-            "Interbase Public License 1.0"
+            "scancode://interbase-1.0"
         ],
         "__impliedId": "Interbase-1.0",
+        "__impliedAmbiguousNames": [
+            "Interbase, Version 1.0",
+            "Interbase 1.0",
+            "Interbase License, Version 1.0",
+            "Interbase License, 1.0",
+            "Interbase Public License 1.0",
+            "INTERBASE PUBLIC LICENSE"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.firebirdsql.org/en/interbase-public-license/",
                     "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. Self-User is the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a Legal Entity, \"self\" includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Interbase"
                 ]
             ]
         ],
@@ -1004,6 +1026,45 @@
                     ]
                 },
                 "description": "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. Self-User is the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a Legal Entity, \"self\" includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Interbase-1.0",
+                "shortName": null,
+                "category": "Interbase",
+                "alternativeNames": [
+                    "Interbase, Version 1.0",
+                    "Interbase 1.0",
+                    "Interbase License, Version 1.0",
+                    "Interbase License, 1.0",
+                    "Interbase Public License 1.0",
+                    "INTERBASE PUBLIC LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Interbase-Public-License-1.0.yaml",
+                "otherIds": [],
+                "canonicalName": "Interbase Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Interbase Public License 1.0",
+                        "Interbase-1.0"
+                    ],
+                    "__impliedId": "Interbase-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Interbase, Version 1.0",
+                        "Interbase 1.0",
+                        "Interbase License, Version 1.0",
+                        "Interbase License, 1.0",
+                        "Interbase Public License 1.0",
+                        "INTERBASE PUBLIC LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Interbase"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

@@ -3,6 +3,8 @@
         "SPL-1.0",
         "Sun Public License v1.0",
         "Sun Public License 1.0",
+        "scancode:spl-1.0",
+        "osi:SPL-1.0",
         "Sun Public License, Version 1.0",
         "License :: OSI Approved :: Sun Public License",
         "SUN PUBLIC LICENSE Version 1.0",
@@ -11,7 +13,10 @@
     ],
     "__impliedId": "SPL-1.0",
     "__impliedAmbiguousNames": [
-        "Sun Public License v1.0"
+        "Sun Public License v1.0",
+        "SPL, Version 1.0",
+        "SPL 1.0",
+        "SUN PUBLIC LICENSE Version 1.0"
     ],
     "__impliedComments": [
         [
@@ -24,6 +29,12 @@
             "Hitachi open-license",
             [
                 "Source code refers to the source code and related documentation, interface definition files, and scripts used to control the compilation and installation of executables. Executable refers to any form of software other than source code. Sublicense means that the person who has been granted the license grants the license again to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under the license in accordance with all of the terms of the license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: SPL"
             ]
         ],
         [
@@ -627,6 +638,44 @@
                 ]
             },
             "description": "Source code refers to the source code and related documentation, interface definition files, and scripts used to control the compilation and installation of executables. Executable refers to any form of software other than source code. Sublicense means that the person who has been granted the license grants the license again to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under the license in accordance with all of the terms of the license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "SPL-1.0",
+            "shortName": null,
+            "category": "SPL",
+            "alternativeNames": [
+                "SPL, Version 1.0",
+                "SPL 1.0",
+                "SUN PUBLIC LICENSE Version 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[su]/Sun-Public-License-1.0.yaml",
+            "otherIds": [
+                "scancode:spl-1.0",
+                "osi:SPL-1.0"
+            ],
+            "canonicalName": "Sun Public License 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Sun Public License 1.0",
+                    "SPL-1.0",
+                    "scancode:spl-1.0",
+                    "osi:SPL-1.0"
+                ],
+                "__impliedId": "SPL-1.0",
+                "__impliedAmbiguousNames": [
+                    "SPL, Version 1.0",
+                    "SPL 1.0",
+                    "SUN PUBLIC LICENSE Version 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: SPL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "url": "https://spdx.org/licenses/SPL-1.0.html",

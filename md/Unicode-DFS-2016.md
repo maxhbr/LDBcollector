@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Unicode DFS License 2016`
+
+-   `scancode:unicode-dfs-2016`
+
 -   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE`
 
 -   `scancode://unicode-dfs-2016`
@@ -25,6 +29,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Unicode DFS” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-DFS-License-2016.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -127,6 +135,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-DFS-License-2016.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2016.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -147,11 +159,31 @@
         "__impliedNames": [
             "Unicode-DFS-2016",
             "Unicode License Agreement - Data Files and Software (2016)",
+            "Unicode DFS License 2016",
+            "scancode:unicode-dfs-2016",
             "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE",
             "scancode://unicode-dfs-2016",
             "Unicode DFS 2016"
         ],
         "__impliedId": "Unicode-DFS-2016",
+        "__impliedAmbiguousNames": [
+            "Unicode DFS, Version 2016",
+            "Unicode DFS 2016",
+            "Unicode-DFS, Version 2016",
+            "Unicode-DFS 2016",
+            "Unicode DFS License, Version 2016",
+            "Unicode DFS License, 2016",
+            "Unicode-DFS License, Version 2016",
+            "Unicode-DFS License, 2016"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Unicode DFS"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -270,6 +302,52 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/314"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Unicode-DFS-2016",
+                "shortName": null,
+                "category": "Unicode DFS",
+                "alternativeNames": [
+                    "Unicode DFS, Version 2016",
+                    "Unicode DFS 2016",
+                    "Unicode-DFS, Version 2016",
+                    "Unicode-DFS 2016",
+                    "Unicode DFS License, Version 2016",
+                    "Unicode DFS License, 2016",
+                    "Unicode-DFS License, Version 2016",
+                    "Unicode-DFS License, 2016"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-DFS-License-2016.yaml",
+                "otherIds": [
+                    "scancode:unicode-dfs-2016"
+                ],
+                "canonicalName": "Unicode DFS License 2016",
+                "_implications": {
+                    "__impliedNames": [
+                        "Unicode DFS License 2016",
+                        "Unicode-DFS-2016",
+                        "scancode:unicode-dfs-2016"
+                    ],
+                    "__impliedId": "Unicode-DFS-2016",
+                    "__impliedAmbiguousNames": [
+                        "Unicode DFS, Version 2016",
+                        "Unicode DFS 2016",
+                        "Unicode-DFS, Version 2016",
+                        "Unicode-DFS 2016",
+                        "Unicode DFS License, Version 2016",
+                        "Unicode DFS License, 2016",
+                        "Unicode-DFS License, Version 2016",
+                        "Unicode-DFS License, 2016"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Unicode DFS"
+                            ]
                         ]
                     ]
                 }

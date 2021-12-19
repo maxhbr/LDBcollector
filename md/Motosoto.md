@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:motosoto-0.9.1`
+
+-   `osi:Motosoto`
+
 -   `Motosoto Open Source License, Version 0.9.1`
 
 -   `License :: OSI Approved :: Motosoto License`
@@ -24,6 +28,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Motosoto” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Motosoto-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/motosoto-0.9.1.yml "Scancode")
@@ -203,6 +211,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Motosoto-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -225,6 +237,8 @@
         "__impliedNames": [
             "Motosoto",
             "Motosoto License",
+            "scancode:motosoto-0.9.1",
+            "osi:Motosoto",
             "Motosoto Open Source License, Version 0.9.1",
             "License :: OSI Approved :: Motosoto License",
             "scancode://motosoto-0.9.1",
@@ -233,9 +247,20 @@
         "__impliedId": "Motosoto",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Motosoto"
+            "Motosoto",
+            "Motosoto License",
+            "MOTOSOTO LICENSE",
+            "MOTOSOTO License",
+            "MOTOSOTO OPEN SOURCE LICENSE",
+            "MOTOSOTO Open Source License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Motosoto"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -437,6 +462,48 @@
                 "_implications": {
                     "__impliedNames": [
                         "Motosoto"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Motosoto",
+                "shortName": null,
+                "category": "Motosoto",
+                "alternativeNames": [
+                    "Motosoto License",
+                    "MOTOSOTO LICENSE",
+                    "MOTOSOTO License",
+                    "MOTOSOTO OPEN SOURCE LICENSE",
+                    "MOTOSOTO Open Source License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Motosoto-License.yaml",
+                "otherIds": [
+                    "scancode:motosoto-0.9.1",
+                    "osi:Motosoto"
+                ],
+                "canonicalName": "Motosoto License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Motosoto License",
+                        "Motosoto",
+                        "scancode:motosoto-0.9.1",
+                        "osi:Motosoto"
+                    ],
+                    "__impliedId": "Motosoto",
+                    "__impliedAmbiguousNames": [
+                        "Motosoto License",
+                        "MOTOSOTO LICENSE",
+                        "MOTOSOTO License",
+                        "MOTOSOTO OPEN SOURCE LICENSE",
+                        "MOTOSOTO Open Source License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Motosoto"
+                            ]
+                        ]
                     ]
                 }
             },

@@ -6,6 +6,12 @@
 
 -   `Academic Free License 3.0`
 
+-   `scancode:afl-3.0`
+
+-   `osi:AFL-3.0`
+
+-   `osi:afl-3.0`
+
 -   `Academic Free License, Version 3.0`
 
 -   `License :: OSI Approved :: Academic Free License (AFL)`
@@ -39,6 +45,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: AFL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-3.0.yml "Scancode")
@@ -172,6 +182,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -203,13 +217,27 @@
             "Academic Free License v3.0",
             "afl-3.0",
             "Academic Free License 3.0",
+            "scancode:afl-3.0",
+            "osi:AFL-3.0",
+            "osi:afl-3.0",
             "Academic Free License, Version 3.0",
             "License :: OSI Approved :: Academic Free License (AFL)",
             "scancode://afl-3.0",
             "AFL 3.0"
         ],
         "__impliedId": "AFL-3.0",
+        "__impliedAmbiguousNames": [
+            "AFL, Version 3.0",
+            "AFL, 3.0",
+            "AFL-3.0"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: AFL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -420,6 +448,46 @@
                 "_implications": {
                     "__impliedNames": [
                         "AFL-3.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "AFL-3.0",
+                "shortName": null,
+                "category": "AFL",
+                "alternativeNames": [
+                    "AFL, Version 3.0",
+                    "AFL, 3.0",
+                    "AFL-3.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-3.0.yaml",
+                "otherIds": [
+                    "scancode:afl-3.0",
+                    "osi:AFL-3.0",
+                    "osi:afl-3.0"
+                ],
+                "canonicalName": "Academic Free License 3.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Academic Free License 3.0",
+                        "AFL-3.0",
+                        "scancode:afl-3.0",
+                        "osi:AFL-3.0",
+                        "osi:afl-3.0"
+                    ],
+                    "__impliedId": "AFL-3.0",
+                    "__impliedAmbiguousNames": [
+                        "AFL, Version 3.0",
+                        "AFL, 3.0",
+                        "AFL-3.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: AFL"
+                            ]
+                        ]
                     ]
                 }
             },

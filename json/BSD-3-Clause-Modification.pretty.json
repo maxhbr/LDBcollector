@@ -2,11 +2,18 @@
     "__impliedNames": [
         "BSD-3-Clause-Modification",
         "BSD 3-Clause Modification",
+        "BSD 3-Clause License Modification",
         "scancode://repoze",
         "Repoze License"
     ],
     "__impliedId": "BSD-3-Clause-Modification",
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: BSD"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -101,6 +108,31 @@
                     [
                         null,
                         "https://fedoraproject.org/wiki/Licensing:BSD#Modification_Variant"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "BSD-3-Clause-Modification",
+            "shortName": null,
+            "category": "BSD",
+            "alternativeNames": [],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-Modification.yaml",
+            "otherIds": [],
+            "canonicalName": "BSD 3-Clause License Modification",
+            "_implications": {
+                "__impliedNames": [
+                    "BSD 3-Clause License Modification",
+                    "BSD-3-Clause-Modification"
+                ],
+                "__impliedId": "BSD-3-Clause-Modification",
+                "__impliedAmbiguousNames": [],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: BSD"
+                        ]
                     ]
                 ]
             }

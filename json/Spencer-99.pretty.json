@@ -2,10 +2,25 @@
     "__impliedNames": [
         "Spencer-99",
         "Spencer License 99",
+        "scancode:henry-spencer-1999",
         "scancode://henry-spencer-1999",
         "Henry Spencer License 1999"
     ],
     "__impliedId": "Spencer-99",
+    "__impliedAmbiguousNames": [
+        "Spencer, Version 99",
+        "Spencer 99",
+        "Spencer License, Version 99",
+        "Spencer License, 99"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Spencer"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -79,6 +94,44 @@
                     [
                         "Homepage",
                         "http://www.opensource.apple.com/source/tcl/tcl-5/tcl/generic/regfronts.c"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Spencer-99",
+            "shortName": null,
+            "category": "Spencer",
+            "alternativeNames": [
+                "Spencer, Version 99",
+                "Spencer 99",
+                "Spencer License, Version 99",
+                "Spencer License, 99"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-99.yaml",
+            "otherIds": [
+                "scancode:henry-spencer-1999"
+            ],
+            "canonicalName": "Spencer License 99",
+            "_implications": {
+                "__impliedNames": [
+                    "Spencer License 99",
+                    "Spencer-99",
+                    "scancode:henry-spencer-1999"
+                ],
+                "__impliedId": "Spencer-99",
+                "__impliedAmbiguousNames": [
+                    "Spencer, Version 99",
+                    "Spencer 99",
+                    "Spencer License, Version 99",
+                    "Spencer License, 99"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Spencer"
+                        ]
                     ]
                 ]
             }

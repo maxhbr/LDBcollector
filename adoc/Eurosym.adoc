@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `scancode:eurosym`
 * `scancode://eurosym`
 
 === Comments on (easy) usability
@@ -21,6 +22,10 @@ Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
+
+* ``category: Eurosym'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/Eurosym-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === URLs
 
@@ -61,6 +66,8 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/Eurosym-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/Eurosym.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eurosym.yml[Scancode]
@@ -73,12 +80,24 @@ repository] is generated)
     "__impliedNames": [
         "Eurosym",
         "Eurosym License",
+        "scancode:eurosym",
         "scancode://eurosym"
     ],
     "__impliedId": "Eurosym",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Eurosym"
+        "Eurosym",
+        "Eurosym License",
+        "EUROSYM LICENSE",
+        "EUROSYM License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Eurosym"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -188,6 +207,42 @@ repository] is generated)
                     [
                         null,
                         "https://fedoraproject.org/wiki/Licensing/Eurosym"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Eurosym",
+            "shortName": null,
+            "category": "Eurosym",
+            "alternativeNames": [
+                "Eurosym License",
+                "EUROSYM LICENSE",
+                "EUROSYM License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/Eurosym-License.yaml",
+            "otherIds": [
+                "scancode:eurosym"
+            ],
+            "canonicalName": "Eurosym License",
+            "_implications": {
+                "__impliedNames": [
+                    "Eurosym License",
+                    "Eurosym",
+                    "scancode:eurosym"
+                ],
+                "__impliedId": "Eurosym",
+                "__impliedAmbiguousNames": [
+                    "Eurosym License",
+                    "EUROSYM LICENSE",
+                    "EUROSYM License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Eurosym"
+                        ]
                     ]
                 ]
             }

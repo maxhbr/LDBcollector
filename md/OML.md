@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:fastcgi-devkit`
+
 -   `scancode://fastcgi-devkit`
 
 -   `FastCGI DevKit`
@@ -20,6 +22,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: OML” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Market-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is based on MIT, but contains additional
     clauses which make it more than a simple MIT variant, notably, the
@@ -86,6 +92,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Market-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/OML.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -98,15 +108,23 @@
         "__impliedNames": [
             "OML",
             "Open Market License",
+            "scancode:fastcgi-devkit",
             "scancode://fastcgi-devkit",
             "FastCGI DevKit"
         ],
         "__impliedId": "OML",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "OML"
+            "OML",
+            "OM License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OML"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -224,6 +242,38 @@
                         [
                             "Homepage",
                             "http://www.fastcgi.com/devkit/LICENSE.TERMS"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OML",
+                "shortName": null,
+                "category": "OML",
+                "alternativeNames": [
+                    "OM License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Market-License.yaml",
+                "otherIds": [
+                    "scancode:fastcgi-devkit"
+                ],
+                "canonicalName": "Open Market License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Market License",
+                        "OML",
+                        "scancode:fastcgi-devkit"
+                    ],
+                    "__impliedId": "OML",
+                    "__impliedAmbiguousNames": [
+                        "OM License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OML"
+                            ]
                         ]
                     ]
                 }

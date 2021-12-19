@@ -2,13 +2,29 @@
     "__impliedNames": [
         "NASA-1.3",
         "NASA Open Source Agreement 1.3",
+        "NASA License 1.3",
+        "scancode:nasa-1.3",
+        "osi:NASA-1.3",
         "nasa1.3",
         "NASA Open Source Agreement, Version 1.3",
         "scancode://nasa-1.3",
         "NASA 1.3"
     ],
     "__impliedId": "NASA-1.3",
+    "__impliedAmbiguousNames": [
+        "NASA, Version 1.3",
+        "NASA, 1.3",
+        "NASA License, Version 1.3",
+        "NASA License, 1.3",
+        "NASA OPEN SOURCE AGREEMENT VERSION 1.3"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: NASA"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -195,6 +211,48 @@
             "_implications": {
                 "__impliedNames": [
                     "NASA-1.3"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "NASA-1.3",
+            "shortName": null,
+            "category": "NASA",
+            "alternativeNames": [
+                "NASA, Version 1.3",
+                "NASA, 1.3",
+                "NASA License, Version 1.3",
+                "NASA License, 1.3",
+                "NASA OPEN SOURCE AGREEMENT VERSION 1.3"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/NASA-License-1.3.yaml",
+            "otherIds": [
+                "scancode:nasa-1.3",
+                "osi:NASA-1.3"
+            ],
+            "canonicalName": "NASA License 1.3",
+            "_implications": {
+                "__impliedNames": [
+                    "NASA License 1.3",
+                    "NASA-1.3",
+                    "scancode:nasa-1.3",
+                    "osi:NASA-1.3"
+                ],
+                "__impliedId": "NASA-1.3",
+                "__impliedAmbiguousNames": [
+                    "NASA, Version 1.3",
+                    "NASA, 1.3",
+                    "NASA License, Version 1.3",
+                    "NASA License, 1.3",
+                    "NASA OPEN SOURCE AGREEMENT VERSION 1.3"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: NASA"
+                        ]
+                    ]
                 ]
             }
         },

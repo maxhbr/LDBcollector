@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `IBM pibs License`
+
+-   `scancode:ibm-pibs`
+
 -   `scancode://ibm-pibs`
 
 -   `IBM PowerPC Software`
@@ -15,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: IBM pibs” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ib]/IBM-pibs-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -66,6 +74,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ib]/IBM-pibs-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IBM-pibs.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -82,10 +94,26 @@
         "__impliedNames": [
             "IBM-pibs",
             "IBM PowerPC Initialization and Boot Software",
+            "IBM pibs License",
+            "scancode:ibm-pibs",
             "scancode://ibm-pibs",
             "IBM PowerPC Software"
         ],
         "__impliedId": "IBM-pibs",
+        "__impliedAmbiguousNames": [
+            "IBM pibs",
+            "IBM PIBS",
+            "IBM-pibs",
+            "IBM-PIBS"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: IBM pibs"
+                ]
+            ]
+        ],
         "__hasPatentHint": true,
         "facts": {
             "LicenseName": {
@@ -171,6 +199,44 @@
                         [
                             "Homepage",
                             "http://git.denx.de/?p=u-boot.git;a=blob;f=arch/powerpc/cpu/ppc4xx/miiphy.c;h=297155fdafa064b955e53e9832de93bfb0cfb85b;hb=9fab4bf4cc077c21e43941866f3f2c196f28670d"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "IBM-pibs",
+                "shortName": null,
+                "category": "IBM pibs",
+                "alternativeNames": [
+                    "IBM pibs",
+                    "IBM PIBS",
+                    "IBM-pibs",
+                    "IBM-PIBS"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ib]/IBM-pibs-License.yaml",
+                "otherIds": [
+                    "scancode:ibm-pibs"
+                ],
+                "canonicalName": "IBM pibs License",
+                "_implications": {
+                    "__impliedNames": [
+                        "IBM pibs License",
+                        "IBM-pibs",
+                        "scancode:ibm-pibs"
+                    ],
+                    "__impliedId": "IBM-pibs",
+                    "__impliedAmbiguousNames": [
+                        "IBM pibs",
+                        "IBM PIBS",
+                        "IBM-pibs",
+                        "IBM-PIBS"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: IBM pibs"
+                            ]
                         ]
                     ]
                 }

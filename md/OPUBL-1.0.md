@@ -6,9 +6,11 @@
 
 -   `Open Publication License, v1.0`
 
--   `scancode://openpub`
-
 -   `Open Publication License 1.0`
+
+-   `Open-Publication-1.0`
+
+-   `scancode://openpub`
 
 ## Comments on (easy) usability
 
@@ -18,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Open Publication” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Publication-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -113,6 +119,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Publication-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/OPUBL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -125,13 +135,24 @@
         "__impliedNames": [
             "OPUBL-1.0",
             "Open Publication License, v1.0",
+            "Open Publication License 1.0",
+            "Open-Publication-1.0",
             "Open Publication License v1.0",
-            "scancode://openpub",
-            "Open Publication License 1.0"
+            "scancode://openpub"
         ],
         "__impliedId": "OPUBL-1.0",
         "__impliedAmbiguousNames": [
-            "Open Publication"
+            "Open Publication",
+            "Open Publication License v1.0",
+            "Open Publication License, Version 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Open Publication"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -268,6 +289,37 @@
                         [
                             null,
                             "https://www.debian.org/opl"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "Open-Publication-1.0",
+                "category": "Open Publication",
+                "alternativeNames": [
+                    "Open Publication License v1.0",
+                    "Open Publication License, Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Publication-License-1.0.yaml",
+                "otherIds": [],
+                "canonicalName": "Open Publication License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Publication License 1.0",
+                        "Open-Publication-1.0"
+                    ],
+                    "__impliedId": "Open-Publication-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Open Publication License v1.0",
+                        "Open Publication License, Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Open Publication"
+                            ]
                         ]
                     ]
                 }

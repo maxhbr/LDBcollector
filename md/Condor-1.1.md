@@ -4,9 +4,11 @@
 
 **Other Names:**
 
--   `scancode://condor-1.1`
-
 -   `Condor Public License 1.1`
+
+-   `scancode:condor-1.1`
+
+-   `scancode://condor-1.1`
 
 ## Comments on (easy) usability
 
@@ -15,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Condor Public License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Condor-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 30 October 2003” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/condor-1.1.yml "Scancode")
@@ -170,6 +176,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Condor-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Condor-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -182,11 +192,28 @@
         "__impliedNames": [
             "Condor-1.1",
             "Condor Public License v1.1",
-            "scancode://condor-1.1",
-            "Condor Public License 1.1"
+            "Condor Public License 1.1",
+            "scancode:condor-1.1",
+            "scancode://condor-1.1"
         ],
         "__impliedId": "Condor-1.1",
+        "__impliedAmbiguousNames": [
+            "Condor, Version 1.1",
+            "Condor, 1.1",
+            "Condor License, Version 1.1",
+            "Condor License, 1.1",
+            "Condor Public License Version 1.1",
+            "https://spdx.org/licenses/condor-1.1",
+            "http://www.cs.wisc.edu/condor/license.html",
+            "http://www.condorproject.org"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Condor Public License"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -310,6 +337,52 @@
                 },
                 "licensename": "Condor-1.1",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Condor-1.1",
+                "shortName": null,
+                "category": "Condor Public License",
+                "alternativeNames": [
+                    "Condor, Version 1.1",
+                    "Condor, 1.1",
+                    "Condor License, Version 1.1",
+                    "Condor License, 1.1",
+                    "Condor Public License Version 1.1",
+                    "https://spdx.org/licenses/condor-1.1",
+                    "http://www.cs.wisc.edu/condor/license.html",
+                    "http://www.condorproject.org"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Condor-Public-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:condor-1.1"
+                ],
+                "canonicalName": "Condor Public License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Condor Public License 1.1",
+                        "Condor-1.1",
+                        "scancode:condor-1.1"
+                    ],
+                    "__impliedId": "Condor-1.1",
+                    "__impliedAmbiguousNames": [
+                        "Condor, Version 1.1",
+                        "Condor, 1.1",
+                        "Condor License, Version 1.1",
+                        "Condor License, 1.1",
+                        "Condor Public License Version 1.1",
+                        "https://spdx.org/licenses/condor-1.1",
+                        "http://www.cs.wisc.edu/condor/license.html",
+                        "http://www.condorproject.org"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Condor Public License"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

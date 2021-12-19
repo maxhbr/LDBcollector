@@ -8,9 +8,11 @@
 
 *Other Names:*
 
-- =scancode://openldap-2.0.1=
-
 - =OpenLDAP Public License 2.0.1=
+
+- =scancode:openldap-2.0.1=
+
+- =scancode://openldap-2.0.1=
 
 ** Comments on (easy) usability
 
@@ -19,6 +21,10 @@
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** General Comments
+
+- "category: OLDAP" (source:
+  [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.0.1.yaml][Metaeffekt
+  Universe]] (CC-BY-4.0))
 
 - "Per SPDX.org, this license was released 21 December 1999. This
   license is the same as 2.0 with the word "registered" removed from in
@@ -97,6 +103,9 @@
   license-compatibility-checker]]
   ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
 
+- [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.0.1.yaml][Metaeffekt
+  Universe]] (CC-BY-4.0)
+
 - [[https://spdx.org/licenses/OLDAP-2.0.1.html][SPDX]] (all data [in
   this repository] is generated)
 
@@ -109,11 +118,25 @@
       "__impliedNames": [
           "OLDAP-2.0.1",
           "Open LDAP Public License v2.0.1",
-          "scancode://openldap-2.0.1",
-          "OpenLDAP Public License 2.0.1"
+          "OpenLDAP Public License 2.0.1",
+          "scancode:openldap-2.0.1",
+          "scancode://openldap-2.0.1"
       ],
       "__impliedId": "OLDAP-2.0.1",
+      "__impliedAmbiguousNames": [
+          "OLDAP, Version 2.0.1",
+          "OLDAP 2.0.1",
+          "OLDAP License, Version 2.0.1",
+          "OLDAP License 2.0.1",
+          "Version 2.0.1, 21 December 1999"
+      ],
       "__impliedComments": [
+          [
+              "Metaeffekt Universe",
+              [
+                  "category: OLDAP"
+              ]
+          ],
           [
               "Scancode",
               [
@@ -221,6 +244,46 @@
               },
               "licensename": "OLDAP-2.0.1",
               "copyleftkind": "NoCopyleft"
+          },
+          "Metaeffekt Universe": {
+              "spdxIdentifier": "OLDAP-2.0.1",
+              "shortName": null,
+              "category": "OLDAP",
+              "alternativeNames": [
+                  "OLDAP, Version 2.0.1",
+                  "OLDAP 2.0.1",
+                  "OLDAP License, Version 2.0.1",
+                  "OLDAP License 2.0.1",
+                  "Version 2.0.1, 21 December 1999"
+              ],
+              "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.0.1.yaml",
+              "otherIds": [
+                  "scancode:openldap-2.0.1"
+              ],
+              "canonicalName": "OpenLDAP Public License 2.0.1",
+              "_implications": {
+                  "__impliedNames": [
+                      "OpenLDAP Public License 2.0.1",
+                      "OLDAP-2.0.1",
+                      "scancode:openldap-2.0.1"
+                  ],
+                  "__impliedId": "OLDAP-2.0.1",
+                  "__impliedAmbiguousNames": [
+                      "OLDAP, Version 2.0.1",
+                      "OLDAP 2.0.1",
+                      "OLDAP License, Version 2.0.1",
+                      "OLDAP License 2.0.1",
+                      "Version 2.0.1, 21 December 1999"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Metaeffekt Universe",
+                          [
+                              "category: OLDAP"
+                          ]
+                      ]
+                  ]
+              }
           },
           "BlueOak License List": {
               "BlueOakRating": "Bronze",

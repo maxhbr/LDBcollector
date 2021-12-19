@@ -2,17 +2,27 @@
     "__impliedNames": [
         "Parity-7.0.0",
         "The Parity Public License 7.0.0",
+        "Parity Public License 7.0.0",
+        "scancode:parity-7.0.0",
         "scancode://parity-7.0.0"
     ],
     "__impliedId": "Parity-7.0.0",
     "__impliedAmbiguousNames": [
-        "The Parity Public License"
+        "The Parity Public License",
+        "Parity-7.0.0",
+        "The Parity Public License 7.0.0"
     ],
     "__impliedComments": [
         [
             "BlueOak License List",
             [
                 "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Parity-7.0.0"
             ]
         ]
     ],
@@ -89,6 +99,40 @@
                     [
                         "Homepage",
                         "https://paritylicense.com/versions/7.0.0.html"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Parity-7.0.0",
+            "shortName": null,
+            "category": "Parity-7.0.0",
+            "alternativeNames": [
+                "Parity-7.0.0",
+                "The Parity Public License 7.0.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pa]/Parity-Public-License-7.0.0.yaml",
+            "otherIds": [
+                "scancode:parity-7.0.0"
+            ],
+            "canonicalName": "Parity Public License 7.0.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Parity Public License 7.0.0",
+                    "Parity-7.0.0",
+                    "scancode:parity-7.0.0"
+                ],
+                "__impliedId": "Parity-7.0.0",
+                "__impliedAmbiguousNames": [
+                    "Parity-7.0.0",
+                    "The Parity Public License 7.0.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Parity-7.0.0"
+                        ]
                     ]
                 ]
             }

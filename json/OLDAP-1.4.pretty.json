@@ -2,11 +2,25 @@
     "__impliedNames": [
         "OLDAP-1.4",
         "Open LDAP Public License v1.4",
-        "scancode://openldap-1.4",
-        "OpenLDAP Public License 1.4"
+        "OpenLDAP Public License 1.4",
+        "scancode:openldap-1.4",
+        "scancode://openldap-1.4"
     ],
     "__impliedId": "OLDAP-1.4",
+    "__impliedAmbiguousNames": [
+        "OLDAP, Version 1.4",
+        "OLDAP, 1.4",
+        "OLDAP License, Version 1.4",
+        "OLDAP License, 1.4",
+        "The OpenLDAP Public License Version 1.4, 18 January 1999"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: OLDAP"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -114,6 +128,46 @@
             },
             "licensename": "OLDAP-1.4",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "OLDAP-1.4",
+            "shortName": null,
+            "category": "OLDAP",
+            "alternativeNames": [
+                "OLDAP, Version 1.4",
+                "OLDAP, 1.4",
+                "OLDAP License, Version 1.4",
+                "OLDAP License, 1.4",
+                "The OpenLDAP Public License Version 1.4, 18 January 1999"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-1.4.yaml",
+            "otherIds": [
+                "scancode:openldap-1.4"
+            ],
+            "canonicalName": "OpenLDAP Public License 1.4",
+            "_implications": {
+                "__impliedNames": [
+                    "OpenLDAP Public License 1.4",
+                    "OLDAP-1.4",
+                    "scancode:openldap-1.4"
+                ],
+                "__impliedId": "OLDAP-1.4",
+                "__impliedAmbiguousNames": [
+                    "OLDAP, Version 1.4",
+                    "OLDAP, 1.4",
+                    "OLDAP License, Version 1.4",
+                    "OLDAP License, 1.4",
+                    "The OpenLDAP Public License Version 1.4, 18 January 1999"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: OLDAP"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

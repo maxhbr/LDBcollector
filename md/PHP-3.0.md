@@ -6,6 +6,10 @@
 
 -   `PHP License 3.0`
 
+-   `scancode:php-3.0`
+
+-   `osi:PHP-3.0`
+
 -   `The PHP License, Version 3.0`
 
 -   `PHP License, version 3.0`
@@ -32,6 +36,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: PHP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.0.yml "Scancode")
@@ -197,6 +205,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -227,6 +239,8 @@
             "PHP-3.0",
             "PHP License v3.0",
             "PHP License 3.0",
+            "scancode:php-3.0",
+            "osi:PHP-3.0",
             "The PHP License, Version 3.0",
             "PHP License, version 3.0",
             "scancode://php-3.0"
@@ -234,9 +248,20 @@
         "__impliedId": "PHP-3.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "PHP"
+            "PHP",
+            "PHP, Version 3.0",
+            "PHP, 3.0",
+            "PHP License, Version 3.0",
+            "PHP License, 3.0",
+            "PHP License, version 3.0"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: PHP"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -575,6 +600,48 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/811"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "PHP-3.0",
+                "shortName": null,
+                "category": "PHP",
+                "alternativeNames": [
+                    "PHP, Version 3.0",
+                    "PHP, 3.0",
+                    "PHP License, Version 3.0",
+                    "PHP License, 3.0",
+                    "PHP License, version 3.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.0.yaml",
+                "otherIds": [
+                    "scancode:php-3.0",
+                    "osi:PHP-3.0"
+                ],
+                "canonicalName": "PHP License 3.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "PHP License 3.0",
+                        "PHP-3.0",
+                        "scancode:php-3.0",
+                        "osi:PHP-3.0"
+                    ],
+                    "__impliedId": "PHP-3.0",
+                    "__impliedAmbiguousNames": [
+                        "PHP, Version 3.0",
+                        "PHP, 3.0",
+                        "PHP License, Version 3.0",
+                        "PHP License, 3.0",
+                        "PHP License, version 3.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: PHP"
+                            ]
                         ]
                     ]
                 }

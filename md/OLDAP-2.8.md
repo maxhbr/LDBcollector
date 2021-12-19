@@ -4,9 +4,11 @@
 
 **Other Names:**
 
--   `scancode://openldap-2.8`
-
 -   `OpenLDAP Public License 2.8`
+
+-   `scancode:openldap-2.8`
+
+-   `scancode://openldap-2.8`
 
 ## Comments on (easy) usability
 
@@ -19,6 +21,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: OLDAP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.8.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -94,6 +100,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.8.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/OLDAP-2.8.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -106,10 +116,27 @@
         "__impliedNames": [
             "OLDAP-2.8",
             "Open LDAP Public License v2.8",
-            "scancode://openldap-2.8",
-            "OpenLDAP Public License 2.8"
+            "OpenLDAP Public License 2.8",
+            "scancode:openldap-2.8",
+            "scancode://openldap-2.8"
         ],
         "__impliedId": "OLDAP-2.8",
+        "__impliedAmbiguousNames": [
+            "OLDAP, Version 2.8",
+            "OLDAP 2.8",
+            "OLDAP License, Version 2.8",
+            "OLDAP License 2.8",
+            "OpenLDAP Public License Version 2.8, 17 August 2003",
+            "http://www.OpenLDAP.org/license.html"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OLDAP"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -211,6 +238,48 @@
                 },
                 "licensename": "OLDAP-2.8",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OLDAP-2.8",
+                "shortName": null,
+                "category": "OLDAP",
+                "alternativeNames": [
+                    "OLDAP, Version 2.8",
+                    "OLDAP 2.8",
+                    "OLDAP License, Version 2.8",
+                    "OLDAP License 2.8",
+                    "OpenLDAP Public License Version 2.8, 17 August 2003",
+                    "http://www.OpenLDAP.org/license.html"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.8.yaml",
+                "otherIds": [
+                    "scancode:openldap-2.8"
+                ],
+                "canonicalName": "OpenLDAP Public License 2.8",
+                "_implications": {
+                    "__impliedNames": [
+                        "OpenLDAP Public License 2.8",
+                        "OLDAP-2.8",
+                        "scancode:openldap-2.8"
+                    ],
+                    "__impliedId": "OLDAP-2.8",
+                    "__impliedAmbiguousNames": [
+                        "OLDAP, Version 2.8",
+                        "OLDAP 2.8",
+                        "OLDAP License, Version 2.8",
+                        "OLDAP License 2.8",
+                        "OpenLDAP Public License Version 2.8, 17 August 2003",
+                        "http://www.OpenLDAP.org/license.html"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OLDAP"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

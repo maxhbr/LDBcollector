@@ -4,6 +4,9 @@
         "University of Illinois/NCSA Open Source License",
         "ncsa",
         "UIUC/NCSA",
+        "NCSA License",
+        "scancode:uoi-ncsa",
+        "osi:NCSA",
         "uoi-ncsa",
         "The University of Illinois/NCSA Open Source License",
         "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
@@ -11,7 +14,18 @@
         "NCSA Open Source License"
     ],
     "__impliedId": "NCSA",
+    "__impliedAmbiguousNames": [
+        "NCSA License",
+        "NCSA LICENSE",
+        "NCSA Open Source License"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: BSD"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -313,6 +327,44 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/684"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "NCSA",
+            "shortName": null,
+            "category": "BSD",
+            "alternativeNames": [
+                "NCSA License",
+                "NCSA LICENSE",
+                "NCSA Open Source License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nc]/NCSA-License.yaml",
+            "otherIds": [
+                "scancode:uoi-ncsa",
+                "osi:NCSA"
+            ],
+            "canonicalName": "NCSA License",
+            "_implications": {
+                "__impliedNames": [
+                    "NCSA License",
+                    "NCSA",
+                    "scancode:uoi-ncsa",
+                    "osi:NCSA"
+                ],
+                "__impliedId": "NCSA",
+                "__impliedAmbiguousNames": [
+                    "NCSA License",
+                    "NCSA LICENSE",
+                    "NCSA Open Source License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: BSD"
+                        ]
                     ]
                 ]
             }

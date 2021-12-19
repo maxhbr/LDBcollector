@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `BSD 3-Clause License (Open MPI)`
+
+-   `scancode:bsd-3-clause-open-mpi`
+
 -   `Open MPI License`
 
 -   `scancode://bsd-3-clause-open-mpi`
@@ -19,6 +23,10 @@
 -   “http://www.open-mpi.org/community/license.php” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(Open-MPI).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -114,6 +122,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(Open-MPI).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -130,16 +142,28 @@
         "__impliedNames": [
             "BSD-3-Clause-Open-MPI",
             "BSD 3-Clause Open MPI Variant",
+            "BSD 3-Clause License (Open MPI)",
+            "scancode:bsd-3-clause-open-mpi",
             "Open MPI License",
             "BSD 3-Clause Open MPI variant",
             "scancode://bsd-3-clause-open-mpi"
         ],
         "__impliedId": "BSD-3-Clause-Open-MPI",
+        "__impliedAmbiguousNames": [
+            "BSD-3-Clause-Open-MPI",
+            "BSD 3-Clause Open MPI variant"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.open-mpi.org/community/license.php"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
                 ]
             ]
         ],
@@ -340,6 +364,40 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/831"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-3-Clause-Open-MPI",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [
+                    "BSD-3-Clause-Open-MPI",
+                    "BSD 3-Clause Open MPI variant"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(Open-MPI).yaml",
+                "otherIds": [
+                    "scancode:bsd-3-clause-open-mpi"
+                ],
+                "canonicalName": "BSD 3-Clause License (Open MPI)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause License (Open MPI)",
+                        "BSD-3-Clause-Open-MPI",
+                        "scancode:bsd-3-clause-open-mpi"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Open-MPI",
+                    "__impliedAmbiguousNames": [
+                        "BSD-3-Clause-Open-MPI",
+                        "BSD 3-Clause Open MPI variant"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
                         ]
                     ]
                 }

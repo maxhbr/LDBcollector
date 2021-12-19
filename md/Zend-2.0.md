@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Zend License 2.0`
+
+-   `scancode:zend-2.0`
+
 -   `Zend Engine License, Version 2.00`
 
 -   ` Zend-2.0`
@@ -32,6 +36,10 @@
 -   “http://www.zend.com/license/2\_00.txt” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Zend” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[ze]/Zend-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -169,6 +177,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[ze]/Zend-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -185,6 +197,8 @@
         "__impliedNames": [
             "Zend-2.0",
             "Zend License v2.0",
+            "Zend License 2.0",
+            "scancode:zend-2.0",
             "Zend Engine License, Version 2.00",
             " Zend-2.0",
             "scancode://zend-2.0",
@@ -193,13 +207,24 @@
         "__impliedId": "Zend-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Zend"
+            "Zend",
+            "Zend, Version 2.0",
+            "Zend 2.0",
+            "Zend License, Version 2.0",
+            "Zend License 2.0",
+            "The Zend Engine License, version 2.00"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.zend.com/license/2_00.txt"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Zend"
                 ]
             ]
         ],
@@ -442,6 +467,46 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/837"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Zend-2.0",
+                "shortName": null,
+                "category": "Zend",
+                "alternativeNames": [
+                    "Zend, Version 2.0",
+                    "Zend 2.0",
+                    "Zend License, Version 2.0",
+                    "Zend License 2.0",
+                    "The Zend Engine License, version 2.00"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[ze]/Zend-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:zend-2.0"
+                ],
+                "canonicalName": "Zend License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Zend License 2.0",
+                        "Zend-2.0",
+                        "scancode:zend-2.0"
+                    ],
+                    "__impliedId": "Zend-2.0",
+                    "__impliedAmbiguousNames": [
+                        "Zend, Version 2.0",
+                        "Zend 2.0",
+                        "Zend License, Version 2.0",
+                        "Zend License 2.0",
+                        "The Zend Engine License, version 2.00"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Zend"
+                            ]
                         ]
                     ]
                 }

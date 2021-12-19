@@ -2,15 +2,28 @@
     "__impliedNames": [
         "Xerox",
         "Xerox License",
-        "scancode://mit-export-control",
-        "MIT with Export Control"
+        "MIT with Export Control",
+        "MIT-Export-Control",
+        "scancode:mit-export-control",
+        "scancode://mit-export-control"
     ],
     "__impliedId": "Xerox",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Xerox"
+        "Xerox",
+        "mit-export-control",
+        "https://spdx.org/licenses/xerox",
+        "Xerox License",
+        "XEROX LICENSE",
+        "XEROX License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: MIT with Export Control"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -134,6 +147,38 @@
                     [
                         null,
                         "https://fedoraproject.org/wiki/Licensing/Xerox"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": null,
+            "shortName": "MIT-Export-Control",
+            "category": "MIT with Export Control",
+            "alternativeNames": [
+                "mit-export-control"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-with-Export-Control.yaml",
+            "otherIds": [
+                "scancode:mit-export-control"
+            ],
+            "canonicalName": "MIT with Export Control",
+            "_implications": {
+                "__impliedNames": [
+                    "MIT with Export Control",
+                    "MIT-Export-Control",
+                    "scancode:mit-export-control"
+                ],
+                "__impliedId": "MIT-Export-Control",
+                "__impliedAmbiguousNames": [
+                    "mit-export-control"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: MIT with Export Control"
+                        ]
                     ]
                 ]
             }

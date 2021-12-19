@@ -2,10 +2,20 @@
     "__impliedNames": [
         "BSD-3-Clause-No-Nuclear-Warranty",
         "BSD 3-Clause No Nuclear Warranty",
+        "BSD 3-Clause License (no nuclear warranty)",
         "scancode://bsd-3-clause-no-nuclear-warranty"
     ],
     "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
+    "__impliedAmbiguousNames": [
+        "BSD 3 Clause No Nuclear Warranty"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: BSD"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -112,6 +122,35 @@
             },
             "licensename": "BSD-3-Clause-No-Nuclear-Warranty",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "BSD-3-Clause-No-Nuclear-Warranty",
+            "shortName": null,
+            "category": "BSD",
+            "alternativeNames": [
+                "BSD 3 Clause No Nuclear Warranty"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(no-nuclear-warranty).yaml",
+            "otherIds": [],
+            "canonicalName": "BSD 3-Clause License (no nuclear warranty)",
+            "_implications": {
+                "__impliedNames": [
+                    "BSD 3-Clause License (no nuclear warranty)",
+                    "BSD-3-Clause-No-Nuclear-Warranty"
+                ],
+                "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
+                "__impliedAmbiguousNames": [
+                    "BSD 3 Clause No Nuclear Warranty"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: BSD"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

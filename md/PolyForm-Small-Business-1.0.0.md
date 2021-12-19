@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:polyform-small-business-1.0.0`
+
 -   `scancode://polyform-small-business-1.0.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Polyform Small Business License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/Polyform-Small-Business-License-1.0.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -152,6 +158,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/Polyform-Small-Business-License-1.0.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -163,11 +173,23 @@
     {
         "__impliedNames": [
             "PolyForm-Small-Business-1.0.0",
+            "Polyform Small Business License 1.0.0",
+            "scancode:polyform-small-business-1.0.0",
             "PolyForm Small Business License 1.0.0",
-            "scancode://polyform-small-business-1.0.0",
-            "Polyform Small Business License 1.0.0"
+            "scancode://polyform-small-business-1.0.0"
         ],
         "__impliedId": "PolyForm-Small-Business-1.0.0",
+        "__impliedAmbiguousNames": [
+            "[Polyform-Small-Business"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Polyform Small Business License"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -240,6 +262,38 @@
                         [
                             null,
                             "https://polyformproject.org/licenses/small-business/1.0.0"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "PolyForm-Small-Business-1.0.0",
+                "shortName": null,
+                "category": "Polyform Small Business License",
+                "alternativeNames": [
+                    "[Polyform-Small-Business"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/Polyform-Small-Business-License-1.0.0.yaml",
+                "otherIds": [
+                    "scancode:polyform-small-business-1.0.0"
+                ],
+                "canonicalName": "Polyform Small Business License 1.0.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Polyform Small Business License 1.0.0",
+                        "PolyForm-Small-Business-1.0.0",
+                        "scancode:polyform-small-business-1.0.0"
+                    ],
+                    "__impliedId": "PolyForm-Small-Business-1.0.0",
+                    "__impliedAmbiguousNames": [
+                        "[Polyform-Small-Business"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Polyform Small Business License"
+                            ]
                         ]
                     ]
                 }

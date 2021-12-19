@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:antlr-pd-fallback`
+
 -   `ANTLR 2 License`
 
 -   `scancode://antlr-pd`
@@ -26,6 +28,10 @@
     parser generator.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: ANTLR-PD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[an]/ANTLR-Software-Rights-Notice.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, ANTLR used this public domain notice through version
     2.7 and then switched to a BSD license for version 3.0 and later. ”
@@ -116,6 +122,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[an]/ANTLR-Software-Rights-Notice.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -132,19 +142,27 @@
         "__impliedNames": [
             "ANTLR-PD",
             "ANTLR Software Rights Notice",
+            "scancode:antlr-pd-fallback",
             "ANTLR 2 License",
             "scancode://antlr-pd"
         ],
         "__impliedId": "ANTLR-PD",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "ANTLR-PD"
+            "ANTLR-PD",
+            "ANTLR Software Rights Notice"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "ANTLR 3 License and ANTLR 4 License are equivalent to the BSD 3-Clause License. ANTLR (ANother Tool for Language Recognition) is a parser generator."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ANTLR-PD"
                 ]
             ],
             [
@@ -370,6 +388,40 @@
                     ]
                 },
                 "description": "ANTLR 3 License and ANTLR 4 License are equivalent to the BSD 3-Clause License. ANTLR (ANother Tool for Language Recognition) is a parser generator."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ANTLR-PD",
+                "shortName": null,
+                "category": "ANTLR-PD",
+                "alternativeNames": [
+                    "ANTLR-PD",
+                    "ANTLR Software Rights Notice"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[an]/ANTLR-Software-Rights-Notice.yaml",
+                "otherIds": [
+                    "scancode:antlr-pd-fallback"
+                ],
+                "canonicalName": "ANTLR Software Rights Notice",
+                "_implications": {
+                    "__impliedNames": [
+                        "ANTLR Software Rights Notice",
+                        "ANTLR-PD",
+                        "scancode:antlr-pd-fallback"
+                    ],
+                    "__impliedId": "ANTLR-PD",
+                    "__impliedAmbiguousNames": [
+                        "ANTLR-PD",
+                        "ANTLR Software Rights Notice"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ANTLR-PD"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

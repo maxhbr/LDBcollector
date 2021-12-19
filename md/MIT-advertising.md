@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `MIT License (with advertising)`
+
+-   `scancode:enlightenment`
+
 -   `scancode://enlightenment`
 
 -   `EFL MIT-Style License`
@@ -20,6 +24,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: MIT” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(with-advertising).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is a modified version of the common MIT
     license, with an additional advertising clause that makes it
@@ -70,6 +78,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(with-advertising).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/MIT-advertising.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -82,15 +94,29 @@
         "__impliedNames": [
             "MIT-advertising",
             "Enlightenment License (e16)",
+            "MIT License (with advertising)",
+            "scancode:enlightenment",
             "scancode://enlightenment",
             "EFL MIT-Style License"
         ],
         "__impliedId": "MIT-advertising",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT with advertising"
+            "MIT with advertising",
+            "MIT advertising License",
+            "MIT ADVERTISING LICENSE",
+            "MIT ADVERTISING License",
+            "MIT-advertising License",
+            "MIT-ADVERTISING LICENSE",
+            "MIT-ADVERTISING License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MIT"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -227,6 +253,48 @@
                 },
                 "licensename": "MIT-advertising",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MIT-advertising",
+                "shortName": null,
+                "category": "MIT",
+                "alternativeNames": [
+                    "MIT advertising License",
+                    "MIT ADVERTISING LICENSE",
+                    "MIT ADVERTISING License",
+                    "MIT-advertising License",
+                    "MIT-ADVERTISING LICENSE",
+                    "MIT-ADVERTISING License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(with-advertising).yaml",
+                "otherIds": [
+                    "scancode:enlightenment"
+                ],
+                "canonicalName": "MIT License (with advertising)",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT License (with advertising)",
+                        "MIT-advertising",
+                        "scancode:enlightenment"
+                    ],
+                    "__impliedId": "MIT-advertising",
+                    "__impliedAmbiguousNames": [
+                        "MIT advertising License",
+                        "MIT ADVERTISING LICENSE",
+                        "MIT ADVERTISING License",
+                        "MIT-advertising License",
+                        "MIT-ADVERTISING LICENSE",
+                        "MIT-ADVERTISING License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MIT"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

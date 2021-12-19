@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `AMPAS License`
+
+-   `scancode:ampas`
+
 -   `scancode://ampas`
 
 -   `AMPAS BSD-Style License`
@@ -20,6 +24,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: AMPAS” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/AMPAS-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -59,6 +67,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/AMPAS-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/AMPAS.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -71,13 +83,25 @@
         "__impliedNames": [
             "AMPAS",
             "Academy of Motion Picture Arts and Sciences BSD",
+            "AMPAS License",
+            "scancode:ampas",
             "scancode://ampas",
             "AMPAS BSD-Style License"
         ],
         "__impliedId": "AMPAS",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "AMPAS BSD"
+            "AMPAS BSD",
+            "AMPAS License",
+            "AMPAS LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: AMPAS"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -181,6 +205,40 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "AMPAS",
+                "shortName": null,
+                "category": "AMPAS",
+                "alternativeNames": [
+                    "AMPAS License",
+                    "AMPAS LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/AMPAS-License.yaml",
+                "otherIds": [
+                    "scancode:ampas"
+                ],
+                "canonicalName": "AMPAS License",
+                "_implications": {
+                    "__impliedNames": [
+                        "AMPAS License",
+                        "AMPAS",
+                        "scancode:ampas"
+                    ],
+                    "__impliedId": "AMPAS",
+                    "__impliedAmbiguousNames": [
+                        "AMPAS License",
+                        "AMPAS LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: AMPAS"
+                            ]
                         ]
                     ]
                 }

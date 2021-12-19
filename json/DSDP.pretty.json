@@ -2,12 +2,23 @@
     "__impliedNames": [
         "DSDP",
         "DSDP License",
+        "scancode:dsdp",
         "scancode://dsdp"
     ],
     "__impliedId": "DSDP",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "DSDP"
+        "DSDP",
+        "DSDP LICENSE",
+        "DSDP License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: DSDP"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -146,6 +157,40 @@
             },
             "licensename": "DSDP",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "DSDP",
+            "shortName": null,
+            "category": "DSDP",
+            "alternativeNames": [
+                "DSDP LICENSE",
+                "DSDP License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[ds]/DSDP-License.yaml",
+            "otherIds": [
+                "scancode:dsdp"
+            ],
+            "canonicalName": "DSDP License",
+            "_implications": {
+                "__impliedNames": [
+                    "DSDP License",
+                    "DSDP",
+                    "scancode:dsdp"
+                ],
+                "__impliedId": "DSDP",
+                "__impliedAmbiguousNames": [
+                    "DSDP LICENSE",
+                    "DSDP License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: DSDP"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Silver",

@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:netcdf`
+
 -   `NetCDF Copyright(version 2009)`
 
 -   `NetCDF Copyright`
@@ -27,6 +29,10 @@
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: NetCDF” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/NetCDF-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -123,6 +129,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/NetCDF-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -143,21 +153,31 @@
         "__impliedNames": [
             "NetCDF",
             "NetCDF license",
+            "NetCDF License",
+            "scancode:netcdf",
             "NetCDF Copyright(version 2009)",
             "NetCDF Copyright",
-            "scancode://netcdf",
-            "NetCDF License"
+            "scancode://netcdf"
         ],
         "__impliedId": "NetCDF",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "NetCDF"
+            "NetCDF",
+            "NetCDF License",
+            "NETCDF LICENSE",
+            "NETCDF License"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.unidata.ucar.edu/software/netcdf/copyright.html"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NetCDF"
                 ]
             ]
         ],
@@ -371,6 +391,42 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/912"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NetCDF",
+                "shortName": null,
+                "category": "NetCDF",
+                "alternativeNames": [
+                    "NetCDF License",
+                    "NETCDF LICENSE",
+                    "NETCDF License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/NetCDF-License.yaml",
+                "otherIds": [
+                    "scancode:netcdf"
+                ],
+                "canonicalName": "NetCDF License",
+                "_implications": {
+                    "__impliedNames": [
+                        "NetCDF License",
+                        "NetCDF",
+                        "scancode:netcdf"
+                    ],
+                    "__impliedId": "NetCDF",
+                    "__impliedAmbiguousNames": [
+                        "NetCDF License",
+                        "NETCDF LICENSE",
+                        "NETCDF License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NetCDF"
+                            ]
                         ]
                     ]
                 }

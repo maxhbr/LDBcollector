@@ -2,12 +2,16 @@
     "__impliedNames": [
         "AGPL-1.0-or-later",
         "Affero General Public License v1.0 or later",
+        "Affero General Public License 1.0 or later",
+        "AGPL-1.0+",
+        "scancode:agpl-1.0-plus",
         "scancode://agpl-1.0-plus",
         "AGPL 1.0 or later"
     ],
     "__impliedId": "AGPL-1.0-or-later",
     "__impliedAmbiguousNames": [
-        "Affero General Public License"
+        "Affero General Public License",
+        "https://spdx.org/licenses/agpl-1.0-or-later"
     ],
     "__impliedComments": [
         [
@@ -15,6 +19,12 @@
             [
                 "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                 "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: AGPL"
             ]
         ],
         [
@@ -140,6 +150,39 @@
             },
             "licensename": "AGPL-1.0-or-later",
             "copyleftkind": "SaaSCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "AGPL-1.0-or-later",
+            "shortName": "AGPL-1.0+",
+            "category": "AGPL",
+            "alternativeNames": [
+                "https://spdx.org/licenses/agpl-1.0-or-later"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[af]/Affero-General-Public-License-1.0-or-later.yaml",
+            "otherIds": [
+                "scancode:agpl-1.0-plus"
+            ],
+            "canonicalName": "Affero General Public License 1.0 or later",
+            "_implications": {
+                "__impliedNames": [
+                    "Affero General Public License 1.0 or later",
+                    "AGPL-1.0+",
+                    "AGPL-1.0-or-later",
+                    "scancode:agpl-1.0-plus"
+                ],
+                "__impliedId": "AGPL-1.0-or-later",
+                "__impliedAmbiguousNames": [
+                    "https://spdx.org/licenses/agpl-1.0-or-later"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: AGPL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "url": "https://spdx.org/licenses/AGPL-1.0-or-later.html",

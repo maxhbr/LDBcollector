@@ -4,11 +4,13 @@
 
 **Other Names:**
 
+-   `OpenLDAP Public License 2.7`
+
+-   `scancode:openldap-2.7`
+
 -   `The OpenLDAP Public License`
 
 -   `scancode://openldap-2.7`
-
--   `OpenLDAP Public License 2.7`
 
 ## Comments on (easy) usability
 
@@ -22,6 +24,10 @@
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: OLDAP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.7.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 7 September 2001.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.7.yml "Scancode")
@@ -145,6 +151,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.7.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -161,16 +171,31 @@
         "__impliedNames": [
             "OLDAP-2.7",
             "Open LDAP Public License v2.7",
+            "OpenLDAP Public License 2.7",
+            "scancode:openldap-2.7",
             "The OpenLDAP Public License",
-            "scancode://openldap-2.7",
-            "OpenLDAP Public License 2.7"
+            "scancode://openldap-2.7"
         ],
         "__impliedId": "OLDAP-2.7",
+        "__impliedAmbiguousNames": [
+            "OLDAP, Version 2.7",
+            "OLDAP 2.7",
+            "OLDAP License, Version 2.7",
+            "OLDAP License 2.7",
+            "OpenLDAP Public License Version 2.7",
+            "https://spdx.org/licenses/oldap-2.7"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "\"OpenLDAP\" is a registered trademark of OpenLDAP Foundaction."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OLDAP"
                 ]
             ],
             [
@@ -405,6 +430,48 @@
                     ]
                 },
                 "description": "\"OpenLDAP\" is a registered trademark of OpenLDAP Foundaction."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OLDAP-2.7",
+                "shortName": null,
+                "category": "OLDAP",
+                "alternativeNames": [
+                    "OLDAP, Version 2.7",
+                    "OLDAP 2.7",
+                    "OLDAP License, Version 2.7",
+                    "OLDAP License 2.7",
+                    "OpenLDAP Public License Version 2.7",
+                    "https://spdx.org/licenses/oldap-2.7"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-2.7.yaml",
+                "otherIds": [
+                    "scancode:openldap-2.7"
+                ],
+                "canonicalName": "OpenLDAP Public License 2.7",
+                "_implications": {
+                    "__impliedNames": [
+                        "OpenLDAP Public License 2.7",
+                        "OLDAP-2.7",
+                        "scancode:openldap-2.7"
+                    ],
+                    "__impliedId": "OLDAP-2.7",
+                    "__impliedAmbiguousNames": [
+                        "OLDAP, Version 2.7",
+                        "OLDAP 2.7",
+                        "OLDAP License, Version 2.7",
+                        "OLDAP License 2.7",
+                        "OpenLDAP Public License Version 2.7",
+                        "https://spdx.org/licenses/oldap-2.7"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OLDAP"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

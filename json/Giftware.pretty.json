@@ -2,15 +2,24 @@
     "__impliedNames": [
         "Giftware",
         "Giftware License",
+        "scancode:allegro-4",
         "scancode://allegro-4",
         "Allegro 4 License"
     ],
     "__impliedId": "Giftware",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Giftware"
+        "Giftware",
+        "GIFTWARE",
+        "Allegro 4"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Giftware"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -134,6 +143,42 @@
                     [
                         null,
                         "http://liballeg.org/license.html#allegro-4-the-giftware-license"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Giftware",
+            "shortName": null,
+            "category": "Giftware",
+            "alternativeNames": [
+                "Giftware",
+                "GIFTWARE",
+                "Allegro 4"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gi]/Giftware-License.yaml",
+            "otherIds": [
+                "scancode:allegro-4"
+            ],
+            "canonicalName": "Giftware License",
+            "_implications": {
+                "__impliedNames": [
+                    "Giftware License",
+                    "Giftware",
+                    "scancode:allegro-4"
+                ],
+                "__impliedId": "Giftware",
+                "__impliedAmbiguousNames": [
+                    "Giftware",
+                    "GIFTWARE",
+                    "Allegro 4"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Giftware"
+                        ]
                     ]
                 ]
             }

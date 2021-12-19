@@ -11,11 +11,17 @@
 
 *Other Names:*
 
+* `TAPR Open Hardware 1.0`
+* `scancode:tapr-ohl-1.0`
 * `scancode://tapr-ohl-1.0`
 
 === Comments on (easy) usability
 
 === General Comments
+
+* ``category: TAPR-OHL-1.0'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ta]/TAPR-Open-Hardware-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === URLs
 
@@ -169,6 +175,8 @@ TAPR may publish updated versions of the OHL which retain the same general provi
 ==== Facts
 
 * LicenseName
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ta]/TAPR-Open-Hardware-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/TAPR-OHL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tapr-ohl-1.0.yml[Scancode]
@@ -180,10 +188,25 @@ repository] is generated)
 {
     "__impliedNames": [
         "TAPR-OHL-1.0",
+        "TAPR Open Hardware 1.0",
+        "scancode:tapr-ohl-1.0",
         "TAPR Open Hardware License v1.0",
         "scancode://tapr-ohl-1.0"
     ],
     "__impliedId": "TAPR-OHL-1.0",
+    "__impliedAmbiguousNames": [
+        "TAPR-OHL-1.0",
+        "TAPR Open Hardware License v1.0",
+        "TAPR Open Hardware License Version 1.0"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: TAPR-OHL-1.0"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -263,6 +286,42 @@ repository] is generated)
                     [
                         null,
                         "https://www.tapr.org/OHL"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "TAPR-OHL-1.0",
+            "shortName": null,
+            "category": "TAPR-OHL-1.0",
+            "alternativeNames": [
+                "TAPR-OHL-1.0",
+                "TAPR Open Hardware License v1.0",
+                "TAPR Open Hardware License Version 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ta]/TAPR-Open-Hardware-1.0.yaml",
+            "otherIds": [
+                "scancode:tapr-ohl-1.0"
+            ],
+            "canonicalName": "TAPR Open Hardware 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "TAPR Open Hardware 1.0",
+                    "TAPR-OHL-1.0",
+                    "scancode:tapr-ohl-1.0"
+                ],
+                "__impliedId": "TAPR-OHL-1.0",
+                "__impliedAmbiguousNames": [
+                    "TAPR-OHL-1.0",
+                    "TAPR Open Hardware License v1.0",
+                    "TAPR Open Hardware License Version 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: TAPR-OHL-1.0"
+                        ]
                     ]
                 ]
             }

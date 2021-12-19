@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:intel-bsd-export-control`
+
+-   `osi:Intel`
+
 -   `intel-osl`
 
 -   `The Intel Open Source License`
@@ -37,6 +41,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Intel” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Intel-Open-Source-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “this has this title in SPDX and OSI text The Intel Open Source
     License for CDSA/CSSM Implementation (BSD License with Export
@@ -148,6 +156,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Intel-Open-Source-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -171,6 +183,8 @@
         "__impliedNames": [
             "Intel",
             "Intel Open Source License",
+            "scancode:intel-bsd-export-control",
+            "osi:Intel",
             "intel-osl",
             "The Intel Open Source License",
             "License :: OSI Approved :: Intel Open Source License",
@@ -180,7 +194,19 @@
         ],
         "__impliedId": "Intel",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "Intel Open Source License",
+            "Intel BSD - Export Control",
+            "http://opensource.org/licenses/intel",
+            "https://opensource.org/licenses/intel"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Intel"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -459,6 +485,46 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/663"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Intel",
+                "shortName": null,
+                "category": "Intel",
+                "alternativeNames": [
+                    "Intel Open Source License",
+                    "Intel BSD - Export Control",
+                    "http://opensource.org/licenses/intel",
+                    "https://opensource.org/licenses/intel"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[in]/Intel-Open-Source-License.yaml",
+                "otherIds": [
+                    "scancode:intel-bsd-export-control",
+                    "osi:Intel"
+                ],
+                "canonicalName": "Intel Open Source License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Intel Open Source License",
+                        "Intel",
+                        "scancode:intel-bsd-export-control",
+                        "osi:Intel"
+                    ],
+                    "__impliedId": "Intel",
+                    "__impliedAmbiguousNames": [
+                        "Intel Open Source License",
+                        "Intel BSD - Export Control",
+                        "http://opensource.org/licenses/intel",
+                        "https://opensource.org/licenses/intel"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Intel"
+                            ]
                         ]
                     ]
                 }

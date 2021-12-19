@@ -2,15 +2,28 @@
     "__impliedNames": [
         "TORQUE-1.1",
         "TORQUE v2.5+ Software License v1.1",
+        "TORQUE License 1.1",
+        "scancode:torque-1.1",
         "scancode://torque-1.1",
         "TORQUE 1.1"
     ],
     "__impliedId": "TORQUE-1.1",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "TORQUEv1.1"
+        "TORQUEv1.1",
+        "TORQUE, Version 1.1",
+        "TORQUE 1.1",
+        "TORQUE License, Version 1.1",
+        "TORQUE License, 1.1",
+        "TORQUE v2.5+ Software License v1.1"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: TORQUE"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -128,6 +141,46 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/TORQUEv1.1"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "TORQUE-1.1",
+            "shortName": null,
+            "category": "TORQUE",
+            "alternativeNames": [
+                "TORQUE, Version 1.1",
+                "TORQUE 1.1",
+                "TORQUE License, Version 1.1",
+                "TORQUE License, 1.1",
+                "TORQUE v2.5+ Software License v1.1"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[to]/TORQUE-License-1.1.yaml",
+            "otherIds": [
+                "scancode:torque-1.1"
+            ],
+            "canonicalName": "TORQUE License 1.1",
+            "_implications": {
+                "__impliedNames": [
+                    "TORQUE License 1.1",
+                    "TORQUE-1.1",
+                    "scancode:torque-1.1"
+                ],
+                "__impliedId": "TORQUE-1.1",
+                "__impliedAmbiguousNames": [
+                    "TORQUE, Version 1.1",
+                    "TORQUE 1.1",
+                    "TORQUE License, Version 1.1",
+                    "TORQUE License, 1.1",
+                    "TORQUE v2.5+ Software License v1.1"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: TORQUE"
+                        ]
                     ]
                 ]
             }

@@ -1,11 +1,22 @@
 {
     "__impliedNames": [
         "GFDL-1.2-invariants-only",
+        "GNU Free Documentation License 1.2 (invariants)",
         "GNU Free Documentation License v1.2 only - invariants",
         "scancode://gfdl-1.2-invariants-only"
     ],
     "__impliedId": "GFDL-1.2-invariants-only",
+    "__impliedAmbiguousNames": [
+        "GFDL-1.2-invariants-only",
+        "GNU Free Documentation License v1.2 only - invariants"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: GFDL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -105,6 +116,37 @@
                     [
                         null,
                         "https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "GFDL-1.2-invariants-only",
+            "shortName": null,
+            "category": "GFDL",
+            "alternativeNames": [
+                "GFDL-1.2-invariants-only",
+                "GNU Free Documentation License v1.2 only - invariants"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Free-Documentation-License-1.2-(invariants).yaml",
+            "otherIds": [],
+            "canonicalName": "GNU Free Documentation License 1.2 (invariants)",
+            "_implications": {
+                "__impliedNames": [
+                    "GNU Free Documentation License 1.2 (invariants)",
+                    "GFDL-1.2-invariants-only"
+                ],
+                "__impliedId": "GFDL-1.2-invariants-only",
+                "__impliedAmbiguousNames": [
+                    "GFDL-1.2-invariants-only",
+                    "GNU Free Documentation License v1.2 only - invariants"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: GFDL"
+                        ]
                     ]
                 ]
             }

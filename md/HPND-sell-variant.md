@@ -4,6 +4,14 @@
 
 **Other Names:**
 
+-   `HPND-sell`
+
+-   `scancode:historical-sell-variant`
+
+-   `Permission Terms (HPND; sell)`
+
+-   `scancode:x11-keith-packard`
+
 -   `scancode://historical-sell-variant`
 
 -   `scancode://x11-keith-packard`
@@ -13,6 +21,11 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Historical Permission Notice and Disclaimer - sell
+    variant” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[hi]/Historical-Permission-Notice-and-Disclaimer---sell-variant.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “this is actually the same as the x11-keith-packard” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode")
@@ -54,6 +67,14 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[hi]/Historical-Permission-Notice-and-Disclaimer---sell-variant.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pe]/Permission-Terms-(HPND;sell).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/HPND-sell-variant.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -69,12 +90,27 @@
         "__impliedNames": [
             "HPND-sell-variant",
             "Historical Permission Notice and Disclaimer - sell variant",
+            "HPND-sell",
+            "scancode:historical-sell-variant",
+            "Permission Terms (HPND; sell)",
+            "scancode:x11-keith-packard",
             "scancode://historical-sell-variant",
             "scancode://x11-keith-packard",
             "X11-Style (Keith Packard)"
         ],
         "__impliedId": "HPND-sell-variant",
+        "__impliedAmbiguousNames": [
+            "historical-sell-variant",
+            "HPND-sell-variant",
+            "Historical Permission Notice and Disclaimer - sell variant"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Historical Permission Notice and Disclaimer - sell variant"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -163,6 +199,38 @@
                         [
                             null,
                             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "HPND-sell",
+                "category": "Historical Permission Notice and Disclaimer - sell variant",
+                "alternativeNames": [
+                    "historical-sell-variant"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[hi]/Historical-Permission-Notice-and-Disclaimer---sell-variant.yaml",
+                "otherIds": [
+                    "scancode:historical-sell-variant"
+                ],
+                "canonicalName": "Historical Permission Notice and Disclaimer - sell variant",
+                "_implications": {
+                    "__impliedNames": [
+                        "Historical Permission Notice and Disclaimer - sell variant",
+                        "HPND-sell",
+                        "scancode:historical-sell-variant"
+                    ],
+                    "__impliedId": "HPND-sell",
+                    "__impliedAmbiguousNames": [
+                        "historical-sell-variant"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Historical Permission Notice and Disclaimer - sell variant"
+                            ]
                         ]
                     ]
                 }

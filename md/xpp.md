@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:indiana-extreme-1.2`
+
 -   `scancode://indiana-extreme-1.2`
 
 -   `Indiana Extreme License 1.2`
@@ -20,6 +22,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: xpp” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xp]/xpp-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -106,6 +112,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xp]/xpp-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/xpp.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -118,13 +128,28 @@
         "__impliedNames": [
             "xpp",
             "XPP License",
+            "xpp License",
+            "scancode:indiana-extreme-1.2",
             "scancode://indiana-extreme-1.2",
             "Indiana Extreme License 1.2"
         ],
         "__impliedId": "xpp",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "xpp"
+            "xpp",
+            "xpp License",
+            "XPP LICENSE",
+            "XPP License",
+            "LICENSE FOR THE Extreme! Lab PullParser",
+            "under XPP"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: xpp"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -228,6 +253,46 @@
                         [
                             "Homepage",
                             "http://www.extreme.indiana.edu/license.txt"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "xpp",
+                "shortName": null,
+                "category": "xpp",
+                "alternativeNames": [
+                    "xpp License",
+                    "XPP LICENSE",
+                    "XPP License",
+                    "LICENSE FOR THE Extreme! Lab PullParser",
+                    "under XPP"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xp]/xpp-License.yaml",
+                "otherIds": [
+                    "scancode:indiana-extreme-1.2"
+                ],
+                "canonicalName": "xpp License",
+                "_implications": {
+                    "__impliedNames": [
+                        "xpp License",
+                        "xpp",
+                        "scancode:indiana-extreme-1.2"
+                    ],
+                    "__impliedId": "xpp",
+                    "__impliedAmbiguousNames": [
+                        "xpp License",
+                        "XPP LICENSE",
+                        "XPP License",
+                        "LICENSE FOR THE Extreme! Lab PullParser",
+                        "under XPP"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: xpp"
+                            ]
                         ]
                     ]
                 }

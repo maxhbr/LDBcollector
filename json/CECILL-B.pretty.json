@@ -3,14 +3,32 @@
         "CECILL-B",
         "CeCILL-B Free Software License Agreement",
         "CeCILL-B License",
+        "CECILL B License",
+        "scancode:cecill-b",
+        "CeCILL-B Free Software License (FRA)",
+        "CeCILL-B-FSL",
         "scancode://cecill-b"
     ],
     "__impliedId": "CECILL-B",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "CeCILL-B"
+        "CeCILL-B",
+        "CECILL B",
+        "CECILL-B",
+        "CECILL B License",
+        "CeCILL-B FREE SOFTWARE LICENSE AGREEMENT Notice",
+        "CeCILL-B Free Software License Agreement",
+        "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
+        "https://spdx.org/licenses/cecill-b",
+        "`CECILL-B` - [CEA CNRS INRIA Logiciel Libre](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt)"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CECILL B"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -158,6 +176,50 @@
             },
             "licensename": "CECILL-B",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CECILL-B",
+            "shortName": null,
+            "category": "CECILL B",
+            "alternativeNames": [
+                "CECILL B",
+                "CECILL-B",
+                "CECILL B License",
+                "CeCILL-B FREE SOFTWARE LICENSE AGREEMENT Notice",
+                "CeCILL-B Free Software License Agreement",
+                "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
+                "https://spdx.org/licenses/cecill-b"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CECILL-B-License.yaml",
+            "otherIds": [
+                "scancode:cecill-b"
+            ],
+            "canonicalName": "CECILL B License",
+            "_implications": {
+                "__impliedNames": [
+                    "CECILL B License",
+                    "CECILL-B",
+                    "scancode:cecill-b"
+                ],
+                "__impliedId": "CECILL-B",
+                "__impliedAmbiguousNames": [
+                    "CECILL B",
+                    "CECILL-B",
+                    "CECILL B License",
+                    "CeCILL-B FREE SOFTWARE LICENSE AGREEMENT Notice",
+                    "CeCILL-B Free Software License Agreement",
+                    "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
+                    "https://spdx.org/licenses/cecill-b"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CECILL B"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

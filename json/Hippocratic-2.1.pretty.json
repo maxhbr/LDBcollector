@@ -2,10 +2,26 @@
     "__impliedNames": [
         "Hippocratic-2.1",
         "Hippocratic License 2.1",
+        "scancode:hippocratic-2.1",
         "scancode://hippocratic-2.1",
         "Hippocratic License v2.1"
     ],
     "__impliedId": "Hippocratic-2.1",
+    "__impliedAmbiguousNames": [
+        "Hippocratic License 2.1",
+        "https://firstdonoharm.dev/version/2/1",
+        "Hippocratic-2.1",
+        "Hippocratic License Version 2.1",
+        "Hippocratic License version 2.1"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Hippocratic"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -83,6 +99,46 @@
                     [
                         null,
                         "https://github.com/EthicalSource/hippocratic-license/blob/58c0e646d64ff6fbee275bfe2b9492f914e3ab2a/LICENSE.txt"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Hippocratic-2.1",
+            "shortName": null,
+            "category": "Hippocratic",
+            "alternativeNames": [
+                "Hippocratic License 2.1",
+                "https://firstdonoharm.dev/version/2/1",
+                "Hippocratic-2.1",
+                "Hippocratic License Version 2.1",
+                "Hippocratic License version 2.1"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[hi]/Hippocratic-License-2.1.yaml",
+            "otherIds": [
+                "scancode:hippocratic-2.1"
+            ],
+            "canonicalName": "Hippocratic License 2.1",
+            "_implications": {
+                "__impliedNames": [
+                    "Hippocratic License 2.1",
+                    "Hippocratic-2.1",
+                    "scancode:hippocratic-2.1"
+                ],
+                "__impliedId": "Hippocratic-2.1",
+                "__impliedAmbiguousNames": [
+                    "Hippocratic License 2.1",
+                    "https://firstdonoharm.dev/version/2/1",
+                    "Hippocratic-2.1",
+                    "Hippocratic License Version 2.1",
+                    "Hippocratic License version 2.1"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Hippocratic"
+                        ]
                     ]
                 ]
             }

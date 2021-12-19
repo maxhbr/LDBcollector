@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `Adaptice Public License 1.0`
+
+-   `scancode:adapt-1.0`
+
+-   `osi:APL-1.0`
+
 -   `apl1.0`
 
 -   `Adaptive Public License, Version 1.0`
@@ -19,6 +25,10 @@
     this repository\] is generated))
 
 ## General Comments
+
+-   “category: APL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adaptice-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adapt-1.0.yml "Scancode")
@@ -392,6 +402,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adaptice-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -410,6 +424,9 @@
     {
         "__impliedNames": [
             "APL-1.0",
+            "Adaptice Public License 1.0",
+            "scancode:adapt-1.0",
+            "osi:APL-1.0",
             "Adaptive Public License 1.0",
             "apl1.0",
             "Adaptive Public License, Version 1.0",
@@ -417,7 +434,22 @@
             "APL 1.0"
         ],
         "__impliedId": "APL-1.0",
+        "__impliedAmbiguousNames": [
+            "APL, Version 1.0",
+            "APL 1.0",
+            "APL-1.0",
+            "ADAPTIVE PUBLIC LICENSE Version 1.0",
+            "ADAPTIVE PUBLIC LICENSE 1.0",
+            "Adaptive Public License Version 1.0",
+            "Adaptive Public License 1.0"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: APL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -580,6 +612,52 @@
                 },
                 "licensename": "APL-1.0",
                 "copyleftkind": "StrongCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "APL-1.0",
+                "shortName": null,
+                "category": "APL",
+                "alternativeNames": [
+                    "APL, Version 1.0",
+                    "APL 1.0",
+                    "APL-1.0",
+                    "ADAPTIVE PUBLIC LICENSE Version 1.0",
+                    "ADAPTIVE PUBLIC LICENSE 1.0",
+                    "Adaptive Public License Version 1.0",
+                    "Adaptive Public License 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adaptice-Public-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:adapt-1.0",
+                    "osi:APL-1.0"
+                ],
+                "canonicalName": "Adaptice Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Adaptice Public License 1.0",
+                        "APL-1.0",
+                        "scancode:adapt-1.0",
+                        "osi:APL-1.0"
+                    ],
+                    "__impliedId": "APL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "APL, Version 1.0",
+                        "APL 1.0",
+                        "APL-1.0",
+                        "ADAPTIVE PUBLIC LICENSE Version 1.0",
+                        "ADAPTIVE PUBLIC LICENSE 1.0",
+                        "Adaptive Public License Version 1.0",
+                        "Adaptive Public License 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: APL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "OpenSourceInitiative": {
                 "text": [

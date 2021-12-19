@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:osl-1.1`
+
 -   `scancode://osl-1.1`
 
 -   `OSL 1.1`
@@ -41,6 +43,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: OSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -136,6 +142,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/OSL-1.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -148,6 +158,7 @@
         "__impliedNames": [
             "OSL-1.1",
             "Open Software License 1.1",
+            "scancode:osl-1.1",
             "scancode://osl-1.1",
             "OSL 1.1"
         ],
@@ -156,7 +167,10 @@
         "__impliedAmbiguousNames": [
             "Open Software License",
             "Open Software License (OSL) v1.1",
-            "OSL 1.1"
+            "OSL 1.1",
+            "OSL, Version 1.1",
+            "Open Software License v. 1.1",
+            "Open Software License version 1.1"
         ],
         "__impliedComments": [
             [
@@ -164,6 +178,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OSL"
                 ]
             ]
         ],
@@ -339,6 +359,44 @@
                 },
                 "Comment": null,
                 "LicenseId": "OSL-1.1"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OSL-1.1",
+                "shortName": null,
+                "category": "OSL",
+                "alternativeNames": [
+                    "OSL, Version 1.1",
+                    "OSL 1.1",
+                    "Open Software License v. 1.1",
+                    "Open Software License version 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:osl-1.1"
+                ],
+                "canonicalName": "Open Software License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Software License 1.1",
+                        "OSL-1.1",
+                        "scancode:osl-1.1"
+                    ],
+                    "__impliedId": "OSL-1.1",
+                    "__impliedAmbiguousNames": [
+                        "OSL, Version 1.1",
+                        "OSL 1.1",
+                        "Open Software License v. 1.1",
+                        "Open Software License version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OSL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/OSL-1.1.html",

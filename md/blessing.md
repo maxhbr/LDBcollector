@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:blessing`
+
 -   `scancode://blessing`
 
 ## Comments on (easy) usability
@@ -13,6 +15,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Public Domain” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sq]/SQLite-Blessing.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -44,6 +50,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sq]/SQLite-Blessing.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/blessing.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -56,9 +66,21 @@
         "__impliedNames": [
             "blessing",
             "SQLite Blessing",
+            "scancode:blessing",
             "scancode://blessing"
         ],
         "__impliedId": "blessing",
+        "__impliedAmbiguousNames": [
+            "SQLite Blessing"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Public Domain"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -148,6 +170,38 @@
                         [
                             null,
                             "https://sqlite.org/src/artifact/df5091916dbb40e6"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "blessing",
+                "shortName": null,
+                "category": "Public Domain",
+                "alternativeNames": [
+                    "SQLite Blessing"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sq]/SQLite-Blessing.yaml",
+                "otherIds": [
+                    "scancode:blessing"
+                ],
+                "canonicalName": "SQLite Blessing",
+                "_implications": {
+                    "__impliedNames": [
+                        "SQLite Blessing",
+                        "blessing",
+                        "scancode:blessing"
+                    ],
+                    "__impliedId": "blessing",
+                    "__impliedAmbiguousNames": [
+                        "SQLite Blessing"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Public Domain"
+                            ]
                         ]
                     ]
                 }

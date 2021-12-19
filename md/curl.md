@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Permission Terms (curl)`
+
+-   `scancode:curl`
+
 -   `scancode://curl`
 
 ## Comments on (easy) usability
@@ -13,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Permission” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pe]/Permission-Terms-(curl).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -65,6 +73,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pe]/Permission-Terms-(curl).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -81,10 +93,26 @@
         "__impliedNames": [
             "curl",
             "curl License",
+            "Permission Terms (curl)",
+            "scancode:curl",
             "scancode://curl",
             "cURL License"
         ],
         "__impliedId": "curl",
+        "__impliedAmbiguousNames": [
+            "CURL LICENSE",
+            "CURL License",
+            "Curl License",
+            "curl license"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Permission"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -179,6 +207,44 @@
                         [
                             null,
                             "https://github.com/bagder/curl/blob/master/COPYING"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "curl",
+                "shortName": null,
+                "category": "Permission",
+                "alternativeNames": [
+                    "CURL LICENSE",
+                    "CURL License",
+                    "Curl License",
+                    "curl license"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pe]/Permission-Terms-(curl).yaml",
+                "otherIds": [
+                    "scancode:curl"
+                ],
+                "canonicalName": "Permission Terms (curl)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Permission Terms (curl)",
+                        "curl",
+                        "scancode:curl"
+                    ],
+                    "__impliedId": "curl",
+                    "__impliedAmbiguousNames": [
+                        "CURL LICENSE",
+                        "CURL License",
+                        "Curl License",
+                        "curl license"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Permission"
+                            ]
                         ]
                     ]
                 }

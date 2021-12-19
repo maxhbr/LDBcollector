@@ -6,6 +6,14 @@
 
 -   `CeCILL-C License`
 
+-   `CECILL C License`
+
+-   `scancode:cecill-c`
+
+-   `CeCILL-C Free Software License (FRA)`
+
+-   `CeCILL-C-FSL`
+
 -   `scancode://cecill-c`
 
 ## Comments on (easy) usability
@@ -20,6 +28,10 @@
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 ## General Comments
+
+-   “category: CECILL-C” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CECILL-C-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “per SPDX.org, English translation can be found here
     http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html ”
@@ -298,6 +310,14 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CECILL-C-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-C-Free-Software-License-(FRA).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CECILL-C.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -310,15 +330,33 @@
         "__impliedNames": [
             "CECILL-C",
             "CeCILL-C License",
+            "CECILL C License",
+            "scancode:cecill-c",
+            "CeCILL-C Free Software License (FRA)",
+            "CeCILL-C-FSL",
             "CeCILL-C Free Software License Agreement",
             "scancode://cecill-c"
         ],
         "__impliedId": "CECILL-C",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "CeCILL-C"
+            "CeCILL-C",
+            "CECILL C",
+            "CECILL-C",
+            "CECILL C License",
+            "CECILL-C License",
+            "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice",
+            "https://spdx.org/licenses/cecill-c",
+            "eCILL-C Free Software License Agreement",
+            "CeCILL-C Free Software License (FRA)"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CECILL-C"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -461,6 +499,50 @@
                 },
                 "licensename": "CECILL-C",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CECILL-C",
+                "shortName": null,
+                "category": "CECILL-C",
+                "alternativeNames": [
+                    "CECILL C",
+                    "CECILL-C",
+                    "CECILL C License",
+                    "CECILL-C License",
+                    "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice",
+                    "https://spdx.org/licenses/cecill-c",
+                    "eCILL-C Free Software License Agreement"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CECILL-C-License.yaml",
+                "otherIds": [
+                    "scancode:cecill-c"
+                ],
+                "canonicalName": "CECILL C License",
+                "_implications": {
+                    "__impliedNames": [
+                        "CECILL C License",
+                        "CECILL-C",
+                        "scancode:cecill-c"
+                    ],
+                    "__impliedId": "CECILL-C",
+                    "__impliedAmbiguousNames": [
+                        "CECILL C",
+                        "CECILL-C",
+                        "CECILL C License",
+                        "CECILL-C License",
+                        "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice",
+                        "https://spdx.org/licenses/cecill-c",
+                        "eCILL-C Free Software License Agreement"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CECILL-C"
+                            ]
+                        ]
+                    ]
+                }
             },
             "Google OSS Policy": {
                 "rating": "RECIPROCAL",

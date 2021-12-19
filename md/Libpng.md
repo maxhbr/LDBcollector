@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `PNG Reference Library License 1.0`
+
+-   `Libpng-1.0`
+
 -   `libpng license (libpng-1.2.6 and later)`
 
 -   `scancode://libpng`
@@ -15,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Libpng” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pn]/PNG-Reference-Library-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -167,6 +175,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pn]/PNG-Reference-Library-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Libpng.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -190,11 +202,25 @@
         "__impliedNames": [
             "Libpng",
             "libpng License",
+            "PNG Reference Library License 1.0",
+            "Libpng-1.0",
             "libpng license (libpng-1.2.6 and later)",
             "scancode://libpng",
             "Libpng License"
         ],
         "__impliedId": "Libpng",
+        "__impliedAmbiguousNames": [
+            "PNG Reference Library License 1",
+            "PNG Reference Library License version 1"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Libpng"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -304,6 +330,38 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/307"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Libpng",
+                "shortName": "Libpng-1.0",
+                "category": "Libpng",
+                "alternativeNames": [
+                    "PNG Reference Library License 1",
+                    "PNG Reference Library License version 1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pn]/PNG-Reference-Library-License-1.0.yaml",
+                "otherIds": [],
+                "canonicalName": "PNG Reference Library License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "PNG Reference Library License 1.0",
+                        "Libpng-1.0",
+                        "Libpng"
+                    ],
+                    "__impliedId": "Libpng",
+                    "__impliedAmbiguousNames": [
+                        "PNG Reference Library License 1",
+                        "PNG Reference Library License version 1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Libpng"
+                            ]
                         ]
                     ]
                 }

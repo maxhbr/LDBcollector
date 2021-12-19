@@ -6,6 +6,18 @@
         "selinux-nsa-declaration-1.0"
     ],
     "__impliedId": "libselinux-1.0",
+    "__impliedAmbiguousNames": [
+        "libselinux public domain notice",
+        "libselinux-1.0"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: libselinux"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -79,6 +91,37 @@
                     [
                         "Homepage",
                         "https://github.com/SELinuxProject/selinux/blob/master/libselinux/LICENSE"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "libselinux-1.0",
+            "shortName": null,
+            "category": "libselinux",
+            "alternativeNames": [
+                "libselinux public domain notice",
+                "libselinux-1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/libselinux-public-domain-notice.yaml",
+            "otherIds": [],
+            "canonicalName": "libselinux public domain notice",
+            "_implications": {
+                "__impliedNames": [
+                    "libselinux public domain notice",
+                    "libselinux-1.0"
+                ],
+                "__impliedId": "libselinux-1.0",
+                "__impliedAmbiguousNames": [
+                    "libselinux public domain notice",
+                    "libselinux-1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: libselinux"
+                        ]
                     ]
                 ]
             }

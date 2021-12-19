@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Creative Commons BY 3.0 (US)`
+
+-   `scancode:cc-by-3.0-us`
+
 -   `scancode://cc-by-3.0-us`
 
 ## Comments on (easy) usability
@@ -14,6 +18,10 @@
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: CC-BY” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-3.0-(US).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -123,6 +131,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-3.0-(US).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -138,15 +150,26 @@
     {
         "__impliedNames": [
             "CC-BY-3.0-US",
+            "Creative Commons BY 3.0 (US)",
+            "scancode:cc-by-3.0-us",
             "Creative Commons Attribution 3.0 United States",
             "scancode://cc-by-3.0-us"
         ],
         "__impliedId": "CC-BY-3.0-US",
+        "__impliedAmbiguousNames": [
+            "CC-BY-3.0-US"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://creativecommons.org/licenses/by/3.0/us/このサイトからLegalCodeを参照できる."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY"
                 ]
             ]
         ],
@@ -257,6 +280,38 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/453"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-3.0-US",
+                "shortName": null,
+                "category": "CC-BY",
+                "alternativeNames": [
+                    "CC-BY-3.0-US"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-3.0-(US).yaml",
+                "otherIds": [
+                    "scancode:cc-by-3.0-us"
+                ],
+                "canonicalName": "Creative Commons BY 3.0 (US)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY 3.0 (US)",
+                        "CC-BY-3.0-US",
+                        "scancode:cc-by-3.0-us"
+                    ],
+                    "__impliedId": "CC-BY-3.0-US",
+                    "__impliedAmbiguousNames": [
+                        "CC-BY-3.0-US"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY"
+                            ]
                         ]
                     ]
                 }

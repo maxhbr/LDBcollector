@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Creative Commons BY-NC-ND 2.5`
+
+-   `scancode:cc-by-nc-nd-2.5`
+
 -   `Creative Commons Attribution-NoDerivs 2.5 Generic`
 
 -   `scancode://cc-by-nc-nd-2.5`
@@ -55,6 +59,10 @@
     violated the terms of the License.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: CC-BY-NC-ND” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-ND-2.5.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -170,6 +178,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-ND-2.5.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -185,13 +197,18 @@
     {
         "__impliedNames": [
             "CC-BY-NC-ND-2.5",
+            "Creative Commons BY-NC-ND 2.5",
+            "scancode:cc-by-nc-nd-2.5",
             "Creative Commons Attribution-NoDerivs 2.5 Generic",
             "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
             "scancode://cc-by-nc-nd-2.5"
         ],
         "__impliedId": "CC-BY-NC-ND-2.5",
         "__impliedAmbiguousNames": [
-            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)"
+            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
+            "Creative Commons Attribution Non Commercial No Derivatives 2.5",
+            "CC-BY-NC-ND-2.5",
+            "Creative Commons Attribution-NonCommercial-NoDerivs 2.5"
         ],
         "__impliedRatingState": [
             [
@@ -210,6 +227,12 @@
                 [
                     "https://creativecommons.org/licenses/by-nd/2.5/legalcodeこのサイトからLegalCodeを参照できる.",
                     "A collective work is a work that is composed of independent works, such as a periodical, poetry collection, or encyclopedia, assembled without modification. The works that constitute a collective work are not considered derivative works for the purposes of this license. A derivative work is a translation, arrangement, dramatization, fictionalization, film adaptation, sound recording, work of art, extract, abridgement, summary, or any other form of work that has been re-cast or altered. However, works that constitute a collective work are not considered derivative works for the purposes of this license and are therefore excluded. For the avoidance of doubt, musical compositions and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. A licensor is a person or entity that makes a work available under this license. A work is a copyrighted work and refers to a work offered under this license. The original author is the person or entity that created the work. A person or entity exercising rights under this License who has never previously violated the terms of this License with respect to his or her work, or who has expressly granted Licensor permission to exercise his or her rights in the past, even if he or she has violated the terms of the License."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-NC-ND"
                 ]
             ]
         ],
@@ -488,6 +511,42 @@
                     ]
                 },
                 "description": "A collective work is a work that is composed of independent works, such as a periodical, poetry collection, or encyclopedia, assembled without modification. The works that constitute a collective work are not considered derivative works for the purposes of this license. A derivative work is a translation, arrangement, dramatization, fictionalization, film adaptation, sound recording, work of art, extract, abridgement, summary, or any other form of work that has been re-cast or altered. However, works that constitute a collective work are not considered derivative works for the purposes of this license and are therefore excluded. For the avoidance of doubt, musical compositions and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. A licensor is a person or entity that makes a work available under this license. A work is a copyrighted work and refers to a work offered under this license. The original author is the person or entity that created the work. A person or entity exercising rights under this License who has never previously violated the terms of this License with respect to his or her work, or who has expressly granted Licensor permission to exercise his or her rights in the past, even if he or she has violated the terms of the License."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-NC-ND-2.5",
+                "shortName": null,
+                "category": "CC-BY-NC-ND",
+                "alternativeNames": [
+                    "Creative Commons Attribution Non Commercial No Derivatives 2.5",
+                    "CC-BY-NC-ND-2.5",
+                    "Creative Commons Attribution-NonCommercial-NoDerivs 2.5"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-ND-2.5.yaml",
+                "otherIds": [
+                    "scancode:cc-by-nc-nd-2.5"
+                ],
+                "canonicalName": "Creative Commons BY-NC-ND 2.5",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY-NC-ND 2.5",
+                        "CC-BY-NC-ND-2.5",
+                        "scancode:cc-by-nc-nd-2.5"
+                    ],
+                    "__impliedId": "CC-BY-NC-ND-2.5",
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons Attribution Non Commercial No Derivatives 2.5",
+                        "CC-BY-NC-ND-2.5",
+                        "Creative Commons Attribution-NonCommercial-NoDerivs 2.5"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-NC-ND"
+                            ]
+                        ]
+                    ]
+                }
             },
             "Google OSS Policy": {
                 "rating": "CANNOT_BE_USED",

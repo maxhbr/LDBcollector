@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:cal-1.0`
+
+-   `osi:CAL-1.0`
+
 -   `scancode://cal-1.0`
 
 ## Comments on (easy) usability
@@ -21,6 +25,10 @@
     (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: Cryptographic Autonomy License 1.0” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Cryptographic-Autonomy-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -172,6 +180,10 @@
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Cryptographic-Autonomy-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CAL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -184,6 +196,8 @@
         "__impliedNames": [
             "CAL-1.0",
             "Cryptographic Autonomy License 1.0",
+            "scancode:cal-1.0",
+            "osi:CAL-1.0",
             "scancode://cal-1.0"
         ],
         "__impliedId": "CAL-1.0",
@@ -195,6 +209,12 @@
                 "BlueOak License List",
                 [
                     "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Cryptographic Autonomy License 1.0"
                 ]
             ]
         ],
@@ -291,6 +311,36 @@
                         [
                             null,
                             "http://cryptographicautonomylicense.com/license-text.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CAL-1.0",
+                "shortName": null,
+                "category": "Cryptographic Autonomy License 1.0",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Cryptographic-Autonomy-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:cal-1.0",
+                    "osi:CAL-1.0"
+                ],
+                "canonicalName": "Cryptographic Autonomy License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Cryptographic Autonomy License 1.0",
+                        "CAL-1.0",
+                        "scancode:cal-1.0",
+                        "osi:CAL-1.0"
+                    ],
+                    "__impliedId": "CAL-1.0",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Cryptographic Autonomy License 1.0"
+                            ]
                         ]
                     ]
                 }

@@ -6,6 +6,10 @@
 
 -   `BSD 4-Clause Shortened`
 
+-   `BSD 4-Clause License (shortened)`
+
+-   `scancode:bsd-4-clause-shortened`
+
 -   `scancode://bsd-4-clause-shortened`
 
 ## Comments on (easy) usability
@@ -15,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-4-Clause-License-(shortened).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -62,6 +70,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-4-Clause-License-(shortened).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-4-Clause-Shortened.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -74,10 +86,21 @@
         "__impliedNames": [
             "BSD-4-Clause-Shortened",
             "BSD 4-Clause Shortened",
+            "BSD 4-Clause License (shortened)",
+            "BSD-4-Clause-shortened",
+            "scancode:bsd-4-clause-shortened",
             "BSD 4 Clause Shortened",
             "scancode://bsd-4-clause-shortened"
         ],
         "__impliedId": "BSD-4-Clause-Shortened",
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -153,6 +176,34 @@
                         [
                             null,
                             "https://metadata.ftp-master.debian.org/changelogs//main/a/arpwatch/arpwatch_2.1a15-7_copyright"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-4-Clause-shortened",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-4-Clause-License-(shortened).yaml",
+                "otherIds": [
+                    "scancode:bsd-4-clause-shortened"
+                ],
+                "canonicalName": "BSD 4-Clause License (shortened)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 4-Clause License (shortened)",
+                        "BSD-4-Clause-shortened",
+                        "scancode:bsd-4-clause-shortened"
+                    ],
+                    "__impliedId": "BSD-4-Clause-shortened",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
                         ]
                     ]
                 }

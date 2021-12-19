@@ -2,19 +2,32 @@
     "__impliedNames": [
         "Naumen",
         "Naumen Public License",
+        "Naumen License",
+        "scancode:naumen",
+        "osi:Naumen",
         "NAUMEN Public License",
         "scancode://naumen"
     ],
     "__impliedId": "Naumen",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Naumen"
+        "Naumen",
+        "Naumen License",
+        "NAUMEN LICENSE",
+        "NAUMEN License",
+        "NAUMEN Public License"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "https://opensource.org/licenses/Naumen"
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Naumen"
             ]
         ],
         [
@@ -245,6 +258,46 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/1260"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Naumen",
+            "shortName": null,
+            "category": "Naumen",
+            "alternativeNames": [
+                "Naumen License",
+                "NAUMEN LICENSE",
+                "NAUMEN License",
+                "NAUMEN Public License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/Naumen-License.yaml",
+            "otherIds": [
+                "scancode:naumen",
+                "osi:Naumen"
+            ],
+            "canonicalName": "Naumen License",
+            "_implications": {
+                "__impliedNames": [
+                    "Naumen License",
+                    "Naumen",
+                    "scancode:naumen",
+                    "osi:Naumen"
+                ],
+                "__impliedId": "Naumen",
+                "__impliedAmbiguousNames": [
+                    "Naumen License",
+                    "NAUMEN LICENSE",
+                    "NAUMEN License",
+                    "NAUMEN Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Naumen"
+                        ]
                     ]
                 ]
             }

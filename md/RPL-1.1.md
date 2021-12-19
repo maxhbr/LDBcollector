@@ -4,11 +4,15 @@
 
 **Other Names:**
 
+-   `RPL 1.1`
+
+-   `scancode:rpl-1.1`
+
+-   `osi:RPL-1.1`
+
 -   `Reciprocal Public License, Version 1.1`
 
 -   `scancode://rpl-1.1`
-
--   `RPL 1.1`
 
 ## Comments on (easy) usability
 
@@ -25,6 +29,10 @@
     (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: RPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rp]/RPL-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license has been superseded by the Reciprocal
     Public License, version 1.5 ” (source:
@@ -224,6 +232,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rp]/RPL-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -239,19 +251,30 @@
         "__impliedNames": [
             "RPL-1.1",
             "Reciprocal Public License 1.1",
+            "RPL 1.1",
+            "scancode:rpl-1.1",
+            "osi:RPL-1.1",
             "Reciprocal Public License, Version 1.1",
-            "scancode://rpl-1.1",
-            "RPL 1.1"
+            "scancode://rpl-1.1"
         ],
         "__impliedId": "RPL-1.1",
         "__impliedAmbiguousNames": [
-            "Reciprocal Public License"
+            "Reciprocal Public License",
+            "RPL, Version 1.1",
+            "RPL 1.1",
+            "Reciprocal Public License, version 1.1"
         ],
         "__impliedComments": [
             [
                 "BlueOak License List",
                 [
                     "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: RPL"
                 ]
             ],
             [
@@ -401,6 +424,44 @@
                 },
                 "licensename": "RPL-1.1",
                 "copyleftkind": "StrongCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "RPL-1.1",
+                "shortName": null,
+                "category": "RPL",
+                "alternativeNames": [
+                    "RPL, Version 1.1",
+                    "RPL 1.1",
+                    "Reciprocal Public License, version 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rp]/RPL-1.1.yaml",
+                "otherIds": [
+                    "scancode:rpl-1.1",
+                    "osi:RPL-1.1"
+                ],
+                "canonicalName": "RPL 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "RPL 1.1",
+                        "RPL-1.1",
+                        "scancode:rpl-1.1",
+                        "osi:RPL-1.1"
+                    ],
+                    "__impliedId": "RPL-1.1",
+                    "__impliedAmbiguousNames": [
+                        "RPL, Version 1.1",
+                        "RPL 1.1",
+                        "Reciprocal Public License, version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: RPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/RPL-1.1.html",

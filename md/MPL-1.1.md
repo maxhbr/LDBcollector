@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `scancode:dpl-1.1`
+
+-   `scancode:monetdb-1.1`
+
+-   `osi:MPL-1.1`
+
 -   `mozilla1.1`
 
 -   `Mozilla Public License, Version 1.1`
@@ -63,6 +69,10 @@
     beneficial ownership of the corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: MPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Mozilla-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-1.1.yml "Scancode")
@@ -475,6 +485,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Mozilla-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -508,6 +522,9 @@
         "__impliedNames": [
             "MPL-1.1",
             "Mozilla Public License 1.1",
+            "scancode:dpl-1.1",
+            "scancode:monetdb-1.1",
+            "osi:MPL-1.1",
             "mozilla1.1",
             "Mozilla Public License, Version 1.1",
             "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
@@ -518,7 +535,15 @@
         "__impliedId": "MPL-1.1",
         "__impliedAmbiguousNames": [
             "Mozilla Public License",
-            "Mozilla Public License (MPL)"
+            "Mozilla Public License (MPL)",
+            "Mozilla Public License, Version 1.1",
+            "Mozilla Public License 1.1",
+            "MPL 1.1",
+            "MPL-1.1",
+            "MPLv1.1",
+            "MOZILLA PUBLIC LICENSE 1.1",
+            "MOZILLA PUBLIC LICENSE Version 1.1",
+            "Mozilla Public License (MPL) version 1.1"
         ],
         "__impliedComments": [
             [
@@ -531,6 +556,12 @@
                 "Hitachi open-license",
                 [
                     "Source code refers to the source code and related interface definition files and scripts used to control compilation and installation of executables. EXECUTIVE FORMAT refers to any form of software other than source code. Sublicense means that the person who has been granted such a license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under the license in accordance with all of the terms of the license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MPL"
                 ]
             ],
             [
@@ -1206,6 +1237,56 @@
                     ]
                 },
                 "description": "Source code refers to the source code and related interface definition files and scripts used to control compilation and installation of executables. EXECUTIVE FORMAT refers to any form of software other than source code. Sublicense means that the person who has been granted such a license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under the license in accordance with all of the terms of the license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MPL-1.1",
+                "shortName": null,
+                "category": "MPL",
+                "alternativeNames": [
+                    "Mozilla Public License, Version 1.1",
+                    "Mozilla Public License 1.1",
+                    "MPL 1.1",
+                    "MPL-1.1",
+                    "MPLv1.1",
+                    "MOZILLA PUBLIC LICENSE 1.1",
+                    "MOZILLA PUBLIC LICENSE Version 1.1",
+                    "Mozilla Public License (MPL) version 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Mozilla-Public-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:dpl-1.1",
+                    "scancode:monetdb-1.1",
+                    "osi:MPL-1.1"
+                ],
+                "canonicalName": "Mozilla Public License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Mozilla Public License 1.1",
+                        "MPL-1.1",
+                        "scancode:dpl-1.1",
+                        "scancode:monetdb-1.1",
+                        "osi:MPL-1.1"
+                    ],
+                    "__impliedId": "MPL-1.1",
+                    "__impliedAmbiguousNames": [
+                        "Mozilla Public License, Version 1.1",
+                        "Mozilla Public License 1.1",
+                        "MPL 1.1",
+                        "MPL-1.1",
+                        "MPLv1.1",
+                        "MOZILLA PUBLIC LICENSE 1.1",
+                        "MOZILLA PUBLIC LICENSE Version 1.1",
+                        "Mozilla Public License (MPL) version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/MPL-1.1.html",

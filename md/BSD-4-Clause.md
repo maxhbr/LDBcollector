@@ -6,6 +6,16 @@
 
 -   `BSD License (original)`
 
+-   `BSD 4-Clause License (copyright variant)`
+
+-   `BSD-4-Clause-copyright`
+
+-   `scancode:bsd-original`
+
+-   `scancode:bsd-original-voices`
+
+-   `BSD 4-Clause License`
+
 -   `scancode://bsd-original`
 
 -   `BSD-Original`
@@ -43,6 +53,10 @@
 -   “BSD-4-Clause” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-4-Clause-License-(copyright-variant).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was rescinded by the author on 22
     July 1999.” (source:
@@ -196,6 +210,14 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-4-Clause-License-(copyright-variant).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-4-Clause-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -221,6 +243,11 @@
             "BSD License (original)",
             "BSD 4-Clause \"Original\" or \"Old\" License",
             "bsd-4-clause",
+            "BSD 4-Clause License (copyright variant)",
+            "BSD-4-Clause-copyright",
+            "scancode:bsd-original",
+            "scancode:bsd-original-voices",
+            "BSD 4-Clause License",
             "BSD 4-clause \"Original\" or \"Old\" License",
             "scancode://bsd-original",
             "BSD-Original"
@@ -228,7 +255,10 @@
         "__impliedId": "BSD-4-Clause",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "BSD with advertising"
+            "BSD with advertising",
+            "BSD 4-Clause",
+            "BSD-4-Clause",
+            "BSD-4-clause"
         ],
         "__impliedRatingState": [
             [
@@ -249,6 +279,12 @@
                 "Hitachi open-license",
                 [
                     "BSD-4-Clause"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
                 ]
             ],
             [
@@ -580,6 +616,36 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/277"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "BSD-4-Clause-copyright",
+                "category": "BSD",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-4-Clause-License-(copyright-variant).yaml",
+                "otherIds": [
+                    "scancode:bsd-original",
+                    "scancode:bsd-original-voices"
+                ],
+                "canonicalName": "BSD 4-Clause License (copyright variant)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 4-Clause License (copyright variant)",
+                        "BSD-4-Clause-copyright",
+                        "scancode:bsd-original",
+                        "scancode:bsd-original-voices"
+                    ],
+                    "__impliedId": "BSD-4-Clause-copyright",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
                         ]
                     ]
                 }

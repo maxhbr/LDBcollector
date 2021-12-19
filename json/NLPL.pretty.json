@@ -2,14 +2,22 @@
     "__impliedNames": [
         "NLPL",
         "No Limit Public License",
+        "scancode:nlpl",
         "scancode://nlpl"
     ],
     "__impliedId": "NLPL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "NLPL"
+        "NLPL",
+        "NO LIMIT PUBLIC LICENSE"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: NLPL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -127,6 +135,38 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/NLPL"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "NLPL",
+            "shortName": null,
+            "category": "NLPL",
+            "alternativeNames": [
+                "NO LIMIT PUBLIC LICENSE"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nl]/NLPL.yaml",
+            "otherIds": [
+                "scancode:nlpl"
+            ],
+            "canonicalName": "NLPL",
+            "_implications": {
+                "__impliedNames": [
+                    "NLPL",
+                    "NLPL",
+                    "scancode:nlpl"
+                ],
+                "__impliedId": "NLPL",
+                "__impliedAmbiguousNames": [
+                    "NO LIMIT PUBLIC LICENSE"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: NLPL"
+                        ]
                     ]
                 ]
             }

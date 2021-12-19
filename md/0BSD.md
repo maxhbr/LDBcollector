@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:bsd-zero`
+
+-   `osi:0BSD`
+
 -   `scancode://bsd-zero`
 
 ## Description
@@ -27,6 +31,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Zero-Clause-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## Obligations
 
@@ -74,6 +82,10 @@
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/0bsd.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Zero-Clause-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/0BSD.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -96,9 +108,23 @@
             "0BSD",
             "BSD Zero Clause License",
             "0bsd",
+            "scancode:bsd-zero",
+            "osi:0BSD",
             "scancode://bsd-zero"
         ],
         "__impliedId": "0BSD",
+        "__impliedAmbiguousNames": [
+            "BSD Zero Clause License",
+            "0BSD"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -202,6 +228,42 @@
                 "_implications": {
                     "__impliedNames": [
                         "0BSD"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "0BSD",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [
+                    "BSD Zero Clause License",
+                    "0BSD"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Zero-Clause-License.yaml",
+                "otherIds": [
+                    "scancode:bsd-zero",
+                    "osi:0BSD"
+                ],
+                "canonicalName": "BSD Zero Clause License",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD Zero Clause License",
+                        "0BSD",
+                        "scancode:bsd-zero",
+                        "osi:0BSD"
+                    ],
+                    "__impliedId": "0BSD",
+                    "__impliedAmbiguousNames": [
+                        "BSD Zero Clause License",
+                        "0BSD"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
                     ]
                 }
             },

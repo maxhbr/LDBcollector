@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:imagemagick`
+
 -   `scancode://imagemagick`
 
 ## Comments on (easy) usability
@@ -38,6 +40,10 @@
     interest in the corporation.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: ImageMagick” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/ImageMagick-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “this is very close to the Apache 2.0 licecnse that was used as a
     base.” (source:
@@ -194,6 +200,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/ImageMagick-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -210,12 +220,14 @@
         "__impliedNames": [
             "ImageMagick",
             "ImageMagick License",
+            "scancode:imagemagick",
             "scancode://imagemagick"
         ],
         "__impliedId": "ImageMagick",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "ImageMagick"
+            "ImageMagick",
+            "ImageMagick License"
         ],
         "__impliedComments": [
             [
@@ -223,6 +235,12 @@
                 [
                     "http://www.imagemagick.org/script/license.php",
                     "Source is software source code, documentation sources, configuration files, and other files suitable for making changes. Object - a file resulting from a mechanical transformation of the source, such as compiled object code, generated documentation, or other media conversions. Sublicense\" means that the person who has been granted this license re-grants the license granted to a third party. A legal entity is an association of actors and all others who control them, are controlled by them, or are under their common control. The term \"control\" in this definition refers to one of the following (1) directly or indirectly direct or indirectly direct and manage the corporation by contract or other means; (2) own 50% or more of the corporation's stock; or (3) have a beneficial ownership interest in the corporation."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ImageMagick"
                 ]
             ],
             [
@@ -608,6 +626,38 @@
                     ]
                 },
                 "description": "Source is software source code, documentation sources, configuration files, and other files suitable for making changes. Object - a file resulting from a mechanical transformation of the source, such as compiled object code, generated documentation, or other media conversions. Sublicense\" means that the person who has been granted this license re-grants the license granted to a third party. A legal entity is an association of actors and all others who control them, are controlled by them, or are under their common control. The term \"control\" in this definition refers to one of the following (1) directly or indirectly direct or indirectly direct and manage the corporation by contract or other means; (2) own 50% or more of the corporation's stock; or (3) have a beneficial ownership interest in the corporation."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ImageMagick",
+                "shortName": null,
+                "category": "ImageMagick",
+                "alternativeNames": [
+                    "ImageMagick License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/ImageMagick-License.yaml",
+                "otherIds": [
+                    "scancode:imagemagick"
+                ],
+                "canonicalName": "ImageMagick License",
+                "_implications": {
+                    "__impliedNames": [
+                        "ImageMagick License",
+                        "ImageMagick",
+                        "scancode:imagemagick"
+                    ],
+                    "__impliedId": "ImageMagick",
+                    "__impliedAmbiguousNames": [
+                        "ImageMagick License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ImageMagick"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",

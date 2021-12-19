@@ -4,9 +4,11 @@
 
 **Other Names:**
 
--   `scancode://tidy`
-
 -   `Tidy License`
+
+-   `scancode:tidy`
+
+-   `scancode://tidy`
 
 ## Comments on (easy) usability
 
@@ -15,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Tidy” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ti]/Tidy-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -70,6 +76,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ti]/Tidy-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/HTMLTIDY.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -82,10 +92,19 @@
         "__impliedNames": [
             "HTMLTIDY",
             "HTML Tidy License",
-            "scancode://tidy",
-            "Tidy License"
+            "Tidy License",
+            "scancode:tidy",
+            "scancode://tidy"
         ],
         "__impliedId": "HTMLTIDY",
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Tidy"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -159,6 +178,34 @@
                         [
                             "Homepage",
                             "https://github.com/htacg/tidy-html5/blob/next/README/LICENSE.md"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "HTMLTIDY",
+                "shortName": null,
+                "category": "Tidy",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ti]/Tidy-License.yaml",
+                "otherIds": [
+                    "scancode:tidy"
+                ],
+                "canonicalName": "Tidy License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Tidy License",
+                        "HTMLTIDY",
+                        "scancode:tidy"
+                    ],
+                    "__impliedId": "HTMLTIDY",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Tidy"
+                            ]
                         ]
                     ]
                 }

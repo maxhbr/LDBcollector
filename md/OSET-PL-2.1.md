@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `OSET Public License 2.1`
+
+-   `scancode:oset-pl-2.1`
+
+-   `osi:OPL-2.1`
+
 -   `scancode://oset-pl-2.1`
 
 ## Comments on (easy) usability
@@ -13,6 +19,10 @@
     \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: OSET PL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[os]/OSET-Public-License-2.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -148,6 +158,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[os]/OSET-Public-License-2.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
     (CC0-1.0)
 
@@ -162,10 +176,28 @@
     {
         "__impliedNames": [
             "OSET-PL-2.1",
+            "OSET Public License 2.1",
+            "scancode:oset-pl-2.1",
+            "osi:OPL-2.1",
             "OSET Public License version 2.1",
             "scancode://oset-pl-2.1"
         ],
         "__impliedId": "OSET-PL-2.1",
+        "__impliedAmbiguousNames": [
+            "OSET PL, Version 2.1",
+            "OSET PL, 2.1",
+            "OSET-PL, Version 2.1",
+            "OSET-PL, 2.1",
+            "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OSET PL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -284,6 +316,48 @@
                 "_implications": {
                     "__impliedNames": [
                         "OSET-PL-2.1"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OSET-PL-2.1",
+                "shortName": null,
+                "category": "OSET PL",
+                "alternativeNames": [
+                    "OSET PL, Version 2.1",
+                    "OSET PL, 2.1",
+                    "OSET-PL, Version 2.1",
+                    "OSET-PL, 2.1",
+                    "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[os]/OSET-Public-License-2.1.yaml",
+                "otherIds": [
+                    "scancode:oset-pl-2.1",
+                    "osi:OPL-2.1"
+                ],
+                "canonicalName": "OSET Public License 2.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "OSET Public License 2.1",
+                        "OSET-PL-2.1",
+                        "scancode:oset-pl-2.1",
+                        "osi:OPL-2.1"
+                    ],
+                    "__impliedId": "OSET-PL-2.1",
+                    "__impliedAmbiguousNames": [
+                        "OSET PL, Version 2.1",
+                        "OSET PL, 2.1",
+                        "OSET-PL, Version 2.1",
+                        "OSET-PL, 2.1",
+                        "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OSET PL"
+                            ]
+                        ]
                     ]
                 }
             }

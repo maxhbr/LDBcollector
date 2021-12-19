@@ -12,6 +12,8 @@
 
 *Other Names:*
 
+* `scancode:ms-pl`
+* `osi:MS-PL`
 * `Microsoft Public License (MS-PL)`
 * `scancode://ms-pl`
 
@@ -53,6 +55,9 @@ This license does not authorize the use of the Contributor's name, logo
 or trademarks.'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: MS-PL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/Microsoft-Public-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``also known as Microsoft Permissive License (Ms-PL) v1.1'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml[Scancode]
 (CC0-1.0))
@@ -313,6 +318,8 @@ Policy]
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/Microsoft-Public-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -341,6 +348,8 @@ repository] is generated)
         "MS-PL",
         "Microsoft Public License",
         "ms-pl",
+        "scancode:ms-pl",
+        "osi:MS-PL",
         "Microsoft Public License (MS-PL)",
         "Ms-PL",
         "scancode://ms-pl"
@@ -348,13 +357,20 @@ repository] is generated)
     "__impliedId": "MS-PL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "MS-PL"
+        "MS-PL",
+        "Microsoft Public License"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "The term \"duplication,\" \"derivative works\" and \"distribution\" are the same as in the U.S. Copyright Act. The term \"contribution\" refers to the original software, or any addition or modification to the original software. The term \"contributor\" refers to the person who distributes the contributions under this license. A licensed patent refers to the Contributor's patent claims readable directly from the Contribution. This license does not authorize the use of the Contributor's name, logo or trademarks."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: MS-PL"
             ]
         ],
         [
@@ -810,6 +826,42 @@ repository] is generated)
                 ]
             },
             "description": "The term \"duplication,\" \"derivative works\" and \"distribution\" are the same as in the U.S. Copyright Act. The term \"contribution\" refers to the original software, or any addition or modification to the original software. The term \"contributor\" refers to the person who distributes the contributions under this license. A licensed patent refers to the Contributor's patent claims readable directly from the Contribution. This license does not authorize the use of the Contributor's name, logo or trademarks."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "MS-PL",
+            "shortName": null,
+            "category": "MS-PL",
+            "alternativeNames": [
+                "MS-PL",
+                "Microsoft Public License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/Microsoft-Public-License.yaml",
+            "otherIds": [
+                "scancode:ms-pl",
+                "osi:MS-PL"
+            ],
+            "canonicalName": "Microsoft Public License",
+            "_implications": {
+                "__impliedNames": [
+                    "Microsoft Public License",
+                    "MS-PL",
+                    "scancode:ms-pl",
+                    "osi:MS-PL"
+                ],
+                "__impliedId": "MS-PL",
+                "__impliedAmbiguousNames": [
+                    "MS-PL",
+                    "Microsoft Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: MS-PL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Silver",

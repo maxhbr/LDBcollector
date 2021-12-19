@@ -4,6 +4,14 @@
 
 **Other Names:**
 
+-   `NPOSL 3.0`
+
+-   `scancode:nosl-3.0`
+
+-   `osi:NPOSL-3.0`
+
+-   `osi:NOSL3.0`
+
 -   `nosl3.0`
 
 -   `The Non-Profit Open Software License, Version 3.0`
@@ -34,6 +42,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: NPOSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[np]/NPOSL-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nosl-3.0.yml "Scancode")
@@ -127,6 +139,10 @@
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[np]/NPOSL-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -149,6 +165,10 @@
         "__impliedNames": [
             "NPOSL-3.0",
             "Non-Profit Open Software License 3.0",
+            "NPOSL 3.0",
+            "scancode:nosl-3.0",
+            "osi:NPOSL-3.0",
+            "osi:NOSL3.0",
             "nosl3.0",
             "The Non-Profit Open Software License, Version 3.0",
             "scancode://nosl-3.0",
@@ -156,7 +176,10 @@
         ],
         "__impliedId": "NPOSL-3.0",
         "__impliedAmbiguousNames": [
-            "Non-Profit Open Software License"
+            "Non-Profit Open Software License",
+            "NPOSL, Version 3.0",
+            "NPOSL, 3.0",
+            "Non-Profit Open Software License 3.0"
         ],
         "__impliedComments": [
             [
@@ -164,6 +187,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NPOSL"
                 ]
             ],
             [
@@ -325,6 +354,46 @@
                 "_implications": {
                     "__impliedNames": [
                         "NPOSL-3.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NPOSL-3.0",
+                "shortName": null,
+                "category": "NPOSL",
+                "alternativeNames": [
+                    "NPOSL, Version 3.0",
+                    "NPOSL, 3.0",
+                    "Non-Profit Open Software License 3.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[np]/NPOSL-3.0.yaml",
+                "otherIds": [
+                    "scancode:nosl-3.0",
+                    "osi:NPOSL-3.0",
+                    "osi:NOSL3.0"
+                ],
+                "canonicalName": "NPOSL 3.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "NPOSL 3.0",
+                        "NPOSL-3.0",
+                        "scancode:nosl-3.0",
+                        "osi:NPOSL-3.0",
+                        "osi:NOSL3.0"
+                    ],
+                    "__impliedId": "NPOSL-3.0",
+                    "__impliedAmbiguousNames": [
+                        "NPOSL, Version 3.0",
+                        "NPOSL, 3.0",
+                        "Non-Profit Open Software License 3.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NPOSL"
+                            ]
+                        ]
                     ]
                 }
             },

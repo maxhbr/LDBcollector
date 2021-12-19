@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Solderpad Hardware License 0.51`
+
+-   `scancode:shl-0.51`
+
 -   `scancode://shl-0.51`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: SHL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[so]/Solderpad-Hardware-License-0.51.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -110,6 +118,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[so]/Solderpad-Hardware-License-0.51.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SHL-0.51.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -121,11 +133,28 @@
     {
         "__impliedNames": [
             "SHL-0.51",
+            "Solderpad Hardware License 0.51",
+            "scancode:shl-0.51",
             "Solderpad Hardware License, Version 0.51",
             "scancode://shl-0.51",
             "SolderPad Hardware License, Version 0.51"
         ],
         "__impliedId": "SHL-0.51",
+        "__impliedAmbiguousNames": [
+            "Solderpad Hardware License v0.51",
+            "SOLDERPAD HARDWARE LICENSE version 0.51",
+            "SOLDERPAD HARDWARE LICENSE Version 0.51",
+            "Solderpad Hardware License Version 0.51",
+            "SHL-0.51"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SHL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -205,6 +234,46 @@
                         [
                             null,
                             "https://solderpad.org/licenses/SHL-0.51/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SHL-0.51",
+                "shortName": null,
+                "category": "SHL",
+                "alternativeNames": [
+                    "Solderpad Hardware License v0.51",
+                    "SOLDERPAD HARDWARE LICENSE version 0.51",
+                    "SOLDERPAD HARDWARE LICENSE Version 0.51",
+                    "Solderpad Hardware License Version 0.51",
+                    "SHL-0.51"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[so]/Solderpad-Hardware-License-0.51.yaml",
+                "otherIds": [
+                    "scancode:shl-0.51"
+                ],
+                "canonicalName": "Solderpad Hardware License 0.51",
+                "_implications": {
+                    "__impliedNames": [
+                        "Solderpad Hardware License 0.51",
+                        "SHL-0.51",
+                        "scancode:shl-0.51"
+                    ],
+                    "__impliedId": "SHL-0.51",
+                    "__impliedAmbiguousNames": [
+                        "Solderpad Hardware License v0.51",
+                        "SOLDERPAD HARDWARE LICENSE version 0.51",
+                        "SOLDERPAD HARDWARE LICENSE Version 0.51",
+                        "Solderpad Hardware License Version 0.51",
+                        "SHL-0.51"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SHL"
+                            ]
                         ]
                     ]
                 }

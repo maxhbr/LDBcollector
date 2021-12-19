@@ -8,6 +8,10 @@
 
 -   `X11 License`
 
+-   `scancode:slf4j-2005`
+
+-   `scancode:x11-xconsortium`
+
 -   `ICU License (ICU 1.8.1 and later)`
 
 -   `scancode://x11-xconsortium`
@@ -23,6 +27,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: ICU” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ic]/ICU-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -147,6 +155,14 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ic]/ICU-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[x1]/X11-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -179,12 +195,32 @@
             "ICU",
             "ICU License",
             "X11 License",
+            "scancode:slf4j-2005",
+            "scancode:x11-xconsortium",
             "ICU License (ICU 1.8.1 and later)",
             "scancode://x11-xconsortium",
             "X11-Style (X Consortium)",
             "scancode://x11"
         ],
         "__impliedId": "ICU",
+        "__impliedAmbiguousNames": [
+            "ICU License",
+            "X License",
+            "MIT/X Consortium",
+            "X/MIT License",
+            "X11 License",
+            "MIT/X11",
+            "X11 LICENSE",
+            "Expat~X with X exception"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ICU"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -420,6 +456,38 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/297"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ICU",
+                "shortName": null,
+                "category": "ICU",
+                "alternativeNames": [
+                    "ICU License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ic]/ICU-License.yaml",
+                "otherIds": [
+                    "scancode:slf4j-2005"
+                ],
+                "canonicalName": "ICU License",
+                "_implications": {
+                    "__impliedNames": [
+                        "ICU License",
+                        "ICU",
+                        "scancode:slf4j-2005"
+                    ],
+                    "__impliedId": "ICU",
+                    "__impliedAmbiguousNames": [
+                        "ICU License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ICU"
+                            ]
                         ]
                     ]
                 }

@@ -8,6 +8,10 @@
 
 -   `MirOS Licence`
 
+-   `scancode:mir-os`
+
+-   `osi:MirOS`
+
 -   `The MirOS Licence (MirOS)`
 
 -   `scancode://mir-os`
@@ -38,6 +42,10 @@
 -   “https://opensource.org/licenses/miros.html” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: MirOS” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MirOS-Licence.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
@@ -151,6 +159,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MirOS-Licence.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -182,6 +194,8 @@
             "MirOS",
             "MirOS License",
             "MirOS Licence",
+            "scancode:mir-os",
+            "osi:MirOS",
             "The MirOS Licence (MirOS)",
             "The MirOS Licence",
             "scancode://mir-os"
@@ -190,13 +204,24 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The MirOS Licence",
-            "MirOS"
+            "MirOS",
+            "MirOS Licence",
+            "http://opensource.org/licenses/miros.html",
+            "https://www.mirbsd.org/MirOS-Licence",
+            "http://www.opensource.org/licenses/miros",
+            "https://www.opensource.org/licenses/miros"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/miros.html"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MirOS"
                 ]
             ],
             [
@@ -565,6 +590,48 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/1554"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MirOS",
+                "shortName": null,
+                "category": "MirOS",
+                "alternativeNames": [
+                    "MirOS Licence",
+                    "http://opensource.org/licenses/miros.html",
+                    "https://www.mirbsd.org/MirOS-Licence",
+                    "http://www.opensource.org/licenses/miros",
+                    "https://www.opensource.org/licenses/miros"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MirOS-Licence.yaml",
+                "otherIds": [
+                    "scancode:mir-os",
+                    "osi:MirOS"
+                ],
+                "canonicalName": "MirOS Licence",
+                "_implications": {
+                    "__impliedNames": [
+                        "MirOS Licence",
+                        "MirOS",
+                        "scancode:mir-os",
+                        "osi:MirOS"
+                    ],
+                    "__impliedId": "MirOS",
+                    "__impliedAmbiguousNames": [
+                        "MirOS Licence",
+                        "http://opensource.org/licenses/miros.html",
+                        "https://www.mirbsd.org/MirOS-Licence",
+                        "http://www.opensource.org/licenses/miros",
+                        "https://www.opensource.org/licenses/miros"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MirOS"
+                            ]
                         ]
                     ]
                 }

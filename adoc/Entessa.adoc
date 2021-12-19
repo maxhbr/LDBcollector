@@ -12,6 +12,9 @@
 *Other Names:*
 
 * `Entessa Public License`
+* `Entessa License`
+* `scancode:entessa-1.0`
+* `osi:Entessa`
 * `Entessa Public License 1.0`
 * `scancode://entessa-1.0`
 * `Entessa 1.0`
@@ -31,6 +34,9 @@ Project Wiki]
 
 === General Comments
 
+* ``category: Entessa'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[en]/Entessa-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this license is OSI certified'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/entessa-1.0.yml[Scancode]
 (CC0-1.0))
@@ -107,6 +113,8 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[en]/Entessa-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -129,6 +137,9 @@ repository] is generated)
         "Entessa",
         "Entessa Public License v1.0",
         "Entessa Public License",
+        "Entessa License",
+        "scancode:entessa-1.0",
+        "osi:Entessa",
         "Entessa Public License 1.0",
         "scancode://entessa-1.0",
         "Entessa 1.0"
@@ -136,9 +147,20 @@ repository] is generated)
     "__impliedId": "Entessa",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Entessa"
+        "Entessa",
+        "Entessa License",
+        "ENTESSA LICENSE",
+        "ENTESSA License",
+        "Entessa Public License",
+        "ENTESSA Public License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Entessa"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -329,6 +351,48 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Entessa"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Entessa",
+            "shortName": null,
+            "category": "Entessa",
+            "alternativeNames": [
+                "Entessa License",
+                "ENTESSA LICENSE",
+                "ENTESSA License",
+                "Entessa Public License",
+                "ENTESSA Public License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[en]/Entessa-License.yaml",
+            "otherIds": [
+                "scancode:entessa-1.0",
+                "osi:Entessa"
+            ],
+            "canonicalName": "Entessa License",
+            "_implications": {
+                "__impliedNames": [
+                    "Entessa License",
+                    "Entessa",
+                    "scancode:entessa-1.0",
+                    "osi:Entessa"
+                ],
+                "__impliedId": "Entessa",
+                "__impliedAmbiguousNames": [
+                    "Entessa License",
+                    "ENTESSA LICENSE",
+                    "ENTESSA License",
+                    "Entessa Public License",
+                    "ENTESSA Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Entessa"
+                        ]
+                    ]
                 ]
             }
         },

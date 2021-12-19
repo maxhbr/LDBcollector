@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:osl-3.0`
+
+-   `osi:OSL-3.0`
+
 -   `Open Software License, Version 3.0`
 
 -   `scancode://osl-3.0`
@@ -51,6 +55,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: OSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-3.0.yml "Scancode")
@@ -227,6 +235,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -257,6 +269,8 @@
             "OSL-3.0",
             "Open Software License 3.0",
             "osl-3.0",
+            "scancode:osl-3.0",
+            "osi:OSL-3.0",
             "Open Software License, Version 3.0",
             "scancode://osl-3.0",
             "OSL 3.0"
@@ -265,7 +279,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Open Software License",
-            "OSL 3.0"
+            "OSL 3.0",
+            "Open Software License 3.0"
         ],
         "__impliedComments": [
             [
@@ -273,6 +288,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OSL"
                 ]
             ],
             [
@@ -531,6 +552,40 @@
                 "_implications": {
                     "__impliedNames": [
                         "OSL-3.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OSL-3.0",
+                "shortName": null,
+                "category": "OSL",
+                "alternativeNames": [
+                    "Open Software License 3.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-3.0.yaml",
+                "otherIds": [
+                    "scancode:osl-3.0",
+                    "osi:OSL-3.0"
+                ],
+                "canonicalName": "Open Software License 3.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Software License 3.0",
+                        "OSL-3.0",
+                        "scancode:osl-3.0",
+                        "osi:OSL-3.0"
+                    ],
+                    "__impliedId": "OSL-3.0",
+                    "__impliedAmbiguousNames": [
+                        "Open Software License 3.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OSL"
+                            ]
+                        ]
                     ]
                 }
             },

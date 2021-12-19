@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:cpol-1.02`
+
 -   `scancode://cpol-1.02`
 
 -   `CPOL 1.02`
@@ -28,6 +30,10 @@
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: CPOL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Code-Project-Open-License-1.02.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -217,6 +223,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Code-Project-Open-License-1.02.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/CPOL-1.02.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -237,16 +247,30 @@
         "__impliedNames": [
             "CPOL-1.02",
             "Code Project Open License 1.02",
+            "scancode:cpol-1.02",
             "scancode://cpol-1.02",
             "CPOL 1.02"
         ],
         "__impliedId": "CPOL-1.02",
+        "__impliedAmbiguousNames": [
+            "Code Project Open License 1.02",
+            "CPOL-1.02",
+            "Code Project Open License (CPOL) 1.02",
+            "CPOL, Version 1.02",
+            "CPOL 1.02"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.codeproject.com/info/cpol10.aspx",
                     "The author is the person or entity providing the software under this license. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to the executables, binary files and configuration and data files required for the software to be included in the software. The term \"article\" refers to any article by the author describing how a user might use the source code or executable of the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CPOL"
                 ]
             ]
         ],
@@ -620,6 +644,46 @@
                     ]
                 },
                 "description": "The author is the person or entity providing the software under this license. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to the executables, binary files and configuration and data files required for the software to be included in the software. The term \"article\" refers to any article by the author describing how a user might use the source code or executable of the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CPOL-1.02",
+                "shortName": null,
+                "category": "CPOL",
+                "alternativeNames": [
+                    "Code Project Open License 1.02",
+                    "CPOL-1.02",
+                    "Code Project Open License (CPOL) 1.02",
+                    "CPOL, Version 1.02",
+                    "CPOL 1.02"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Code-Project-Open-License-1.02.yaml",
+                "otherIds": [
+                    "scancode:cpol-1.02"
+                ],
+                "canonicalName": "Code Project Open License 1.02",
+                "_implications": {
+                    "__impliedNames": [
+                        "Code Project Open License 1.02",
+                        "CPOL-1.02",
+                        "scancode:cpol-1.02"
+                    ],
+                    "__impliedId": "CPOL-1.02",
+                    "__impliedAmbiguousNames": [
+                        "Code Project Open License 1.02",
+                        "CPOL-1.02",
+                        "Code Project Open License (CPOL) 1.02",
+                        "CPOL, Version 1.02",
+                        "CPOL 1.02"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CPOL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

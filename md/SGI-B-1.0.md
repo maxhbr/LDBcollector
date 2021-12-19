@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `SGI B License 1.0`
+
+-   `scancode:sgi-fslb-1.0`
+
 -   `scancode://sgi-fslb-1.0`
 
 -   `SGI Free Software License B 1.0`
@@ -11,6 +15,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: SGI B” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 25 January 2000” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-fslb-1.0.yml "Scancode")
@@ -73,6 +81,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SGI-B-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -84,12 +96,31 @@
     {
         "__impliedNames": [
             "SGI-B-1.0",
+            "SGI B License 1.0",
+            "scancode:sgi-fslb-1.0",
             "SGI Free Software License B v1.0",
             "scancode://sgi-fslb-1.0",
             "SGI Free Software License B 1.0"
         ],
         "__impliedId": "SGI-B-1.0",
+        "__impliedAmbiguousNames": [
+            "SGI B, Version 1.0",
+            "SGI B, 1.0",
+            "SGI-B, Version 1.0",
+            "SGI-B, 1.0",
+            "SGI B License, Version 1.0",
+            "SGI B License 1.0",
+            "SGI-B License, Version 1.0",
+            "SGI-B License, 1.0",
+            "SGI FREE SOFTWARE LICENSE B (Version 1.0 1/25/2000)"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SGI B"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -171,6 +202,54 @@
                         [
                             "Homepage",
                             "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SGI-B-1.0",
+                "shortName": null,
+                "category": "SGI B",
+                "alternativeNames": [
+                    "SGI B, Version 1.0",
+                    "SGI B, 1.0",
+                    "SGI-B, Version 1.0",
+                    "SGI-B, 1.0",
+                    "SGI B License, Version 1.0",
+                    "SGI B License 1.0",
+                    "SGI-B License, Version 1.0",
+                    "SGI-B License, 1.0",
+                    "SGI FREE SOFTWARE LICENSE B (Version 1.0 1/25/2000)"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sg]/SGI-B-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:sgi-fslb-1.0"
+                ],
+                "canonicalName": "SGI B License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "SGI B License 1.0",
+                        "SGI-B-1.0",
+                        "scancode:sgi-fslb-1.0"
+                    ],
+                    "__impliedId": "SGI-B-1.0",
+                    "__impliedAmbiguousNames": [
+                        "SGI B, Version 1.0",
+                        "SGI B, 1.0",
+                        "SGI-B, Version 1.0",
+                        "SGI-B, 1.0",
+                        "SGI B License, Version 1.0",
+                        "SGI B License 1.0",
+                        "SGI-B License, Version 1.0",
+                        "SGI-B License, 1.0",
+                        "SGI FREE SOFTWARE LICENSE B (Version 1.0 1/25/2000)"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SGI B"
+                            ]
                         ]
                     ]
                 }

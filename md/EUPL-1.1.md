@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:eupl-1.1`
+
+-   `osi:EUPL-1.1`
+
 -   `European Union Public License, Version 1.1`
 
 -   `License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)`
@@ -58,6 +62,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: EUPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 16 May 2008 This license is
     OSI certified. This license is available in the 22 official
@@ -561,6 +569,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -592,6 +604,8 @@
             "EUPL-1.1",
             "European Union Public License 1.1",
             "eupl-1.1",
+            "scancode:eupl-1.1",
+            "osi:EUPL-1.1",
             "European Union Public License, Version 1.1",
             "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
             "European Union Public Licence, v.1.1",
@@ -602,7 +616,17 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "European Union Public License",
-            "EUPL 1.1"
+            "EUPL 1.1",
+            "EUPL Version 1.1",
+            "EUPL v.1.1",
+            "EUPL-1.1",
+            "EUPL V.1.1",
+            "European Union Public License V. 1.1",
+            "European Union Public License v.1.1",
+            "European Union Public License, Version 1.1",
+            "European Union Public License (EUPL) version 1.1",
+            "European Union Public License v1.1",
+            "European Union Public License version 1.1"
         ],
         "__impliedComments": [
             [
@@ -610,6 +634,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: EUPL"
                 ]
             ],
             [
@@ -1192,6 +1222,60 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/885"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "EUPL-1.1",
+                "shortName": null,
+                "category": "EUPL",
+                "alternativeNames": [
+                    "EUPL Version 1.1",
+                    "EUPL v.1.1",
+                    "EUPL-1.1",
+                    "EUPL V.1.1",
+                    "EUPL 1.1",
+                    "European Union Public License V. 1.1",
+                    "European Union Public License v.1.1",
+                    "European Union Public License, Version 1.1",
+                    "European Union Public License (EUPL) version 1.1",
+                    "European Union Public License v1.1",
+                    "European Union Public License version 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:eupl-1.1",
+                    "osi:EUPL-1.1"
+                ],
+                "canonicalName": "European Union Public License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "European Union Public License 1.1",
+                        "EUPL-1.1",
+                        "scancode:eupl-1.1",
+                        "osi:EUPL-1.1"
+                    ],
+                    "__impliedId": "EUPL-1.1",
+                    "__impliedAmbiguousNames": [
+                        "EUPL Version 1.1",
+                        "EUPL v.1.1",
+                        "EUPL-1.1",
+                        "EUPL V.1.1",
+                        "EUPL 1.1",
+                        "European Union Public License V. 1.1",
+                        "European Union Public License v.1.1",
+                        "European Union Public License, Version 1.1",
+                        "European Union Public License (EUPL) version 1.1",
+                        "European Union Public License v1.1",
+                        "European Union Public License version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: EUPL"
+                            ]
                         ]
                     ]
                 }

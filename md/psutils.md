@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:psutils`
+
 -   `scancode://psutils`
 
 -   `PS Utilities License`
@@ -20,6 +22,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: psutils” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ps]/psutils-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -80,6 +86,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ps]/psutils-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/psutils.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -92,13 +102,26 @@
         "__impliedNames": [
             "psutils",
             "psutils License",
+            "scancode:psutils",
             "scancode://psutils",
             "PS Utilities License"
         ],
         "__impliedId": "psutils",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "psutils"
+            "psutils",
+            "psutils License",
+            "PSUTILS LICENSE",
+            "PSUTILS License",
+            "PS Utilities Package"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: psutils"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -208,6 +231,44 @@
                         [
                             null,
                             "https://fedoraproject.org/wiki/Licensing/psutils"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "psutils",
+                "shortName": null,
+                "category": "psutils",
+                "alternativeNames": [
+                    "psutils License",
+                    "PSUTILS LICENSE",
+                    "PSUTILS License",
+                    "PS Utilities Package"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ps]/psutils-License.yaml",
+                "otherIds": [
+                    "scancode:psutils"
+                ],
+                "canonicalName": "psutils License",
+                "_implications": {
+                    "__impliedNames": [
+                        "psutils License",
+                        "psutils",
+                        "scancode:psutils"
+                    ],
+                    "__impliedId": "psutils",
+                    "__impliedAmbiguousNames": [
+                        "psutils License",
+                        "PSUTILS LICENSE",
+                        "PSUTILS License",
+                        "PS Utilities Package"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: psutils"
+                            ]
                         ]
                     ]
                 }

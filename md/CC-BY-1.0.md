@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Creative Commons BY 1.0`
+
+-   `scancode:cc-by-1.0`
+
 -   `scancode://cc-by-1.0`
 
 ## Comments on (easy) usability
@@ -20,6 +24,10 @@
     (NOASSERTION))
 
 ## General Comments
+
+-   “category: CC-BY” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -103,6 +111,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -114,12 +126,25 @@
     {
         "__impliedNames": [
             "CC-BY-1.0",
+            "Creative Commons BY 1.0",
+            "scancode:cc-by-1.0",
             "Creative Commons Attribution 1.0 Generic",
             "scancode://cc-by-1.0"
         ],
         "__impliedId": "CC-BY-1.0",
         "__impliedAmbiguousNames": [
-            "Creative Commons Attribution License (CC-by), v1.0"
+            "Creative Commons Attribution License (CC-by), v1.0",
+            "Creative Commons Attribution 1.0",
+            "CC-BY-1.0",
+            "http://creativecommons.org/licenses/by/1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -227,6 +252,42 @@
                 },
                 "Comment": "It is believed that 2.0 still has problems (http://evan.prodromou.name/ccsummary/ccsummary.html), but it is under discussion between debian-legal and cc-licenses.",
                 "LicenseId": "CC-BY-1.0"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-1.0",
+                "shortName": null,
+                "category": "CC-BY",
+                "alternativeNames": [
+                    "Creative Commons Attribution 1.0",
+                    "CC-BY-1.0",
+                    "http://creativecommons.org/licenses/by/1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-1.0.yaml",
+                "otherIds": [
+                    "scancode:cc-by-1.0"
+                ],
+                "canonicalName": "Creative Commons BY 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY 1.0",
+                        "CC-BY-1.0",
+                        "scancode:cc-by-1.0"
+                    ],
+                    "__impliedId": "CC-BY-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons Attribution 1.0",
+                        "CC-BY-1.0",
+                        "http://creativecommons.org/licenses/by/1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY"
+                            ]
+                        ]
+                    ]
+                }
             },
             "Google OSS Policy": {
                 "rating": "NOTICE",

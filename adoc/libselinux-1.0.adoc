@@ -18,6 +18,10 @@
 
 === General Comments
 
+* ``category: libselinux'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/libselinux-public-domain-notice.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
+
 === URLs
 
 * *Homepage:*
@@ -57,6 +61,8 @@ risk.
 ==== Facts
 
 * LicenseName
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/libselinux-public-domain-notice.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/libselinux-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/selinux-nsa-declaration-1.0.yml[Scancode]
@@ -73,6 +79,18 @@ repository] is generated)
         "selinux-nsa-declaration-1.0"
     ],
     "__impliedId": "libselinux-1.0",
+    "__impliedAmbiguousNames": [
+        "libselinux public domain notice",
+        "libselinux-1.0"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: libselinux"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -146,6 +164,37 @@ repository] is generated)
                     [
                         "Homepage",
                         "https://github.com/SELinuxProject/selinux/blob/master/libselinux/LICENSE"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "libselinux-1.0",
+            "shortName": null,
+            "category": "libselinux",
+            "alternativeNames": [
+                "libselinux public domain notice",
+                "libselinux-1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/libselinux-public-domain-notice.yaml",
+            "otherIds": [],
+            "canonicalName": "libselinux public domain notice",
+            "_implications": {
+                "__impliedNames": [
+                    "libselinux public domain notice",
+                    "libselinux-1.0"
+                ],
+                "__impliedId": "libselinux-1.0",
+                "__impliedAmbiguousNames": [
+                    "libselinux public domain notice",
+                    "libselinux-1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: libselinux"
+                        ]
                     ]
                 ]
             }

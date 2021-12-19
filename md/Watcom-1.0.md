@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `Watcom License 1.0`
+
+-   `scancode:sybase`
+
+-   `osi:Watcom-1.0`
+
 -   `The Sybase Open Source Licence`
 
 -   `scancode://sybase`
@@ -35,6 +41,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Watcom” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[wa]/Watcom-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml "Scancode")
@@ -423,6 +433,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[wa]/Watcom-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -445,12 +459,28 @@
         "__impliedNames": [
             "Watcom-1.0",
             "Sybase Open Watcom Public License 1.0",
+            "Watcom License 1.0",
+            "scancode:sybase",
+            "osi:Watcom-1.0",
             "The Sybase Open Source Licence",
             "scancode://sybase",
             "Open Watcom 1.0"
         ],
         "__impliedId": "Watcom-1.0",
+        "__impliedAmbiguousNames": [
+            "Watcom, Version 1.0",
+            "Watcom 1.0",
+            "Watcom License, Version 1.0",
+            "Watcom License, 1.0",
+            "Sybase Open Watcom Public License version 1.0"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Watcom"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -639,6 +669,48 @@
                 "_implications": {
                     "__impliedNames": [
                         "Watcom-1.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Watcom-1.0",
+                "shortName": null,
+                "category": "Watcom",
+                "alternativeNames": [
+                    "Watcom, Version 1.0",
+                    "Watcom 1.0",
+                    "Watcom License, Version 1.0",
+                    "Watcom License, 1.0",
+                    "Sybase Open Watcom Public License version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[wa]/Watcom-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:sybase",
+                    "osi:Watcom-1.0"
+                ],
+                "canonicalName": "Watcom License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Watcom License 1.0",
+                        "Watcom-1.0",
+                        "scancode:sybase",
+                        "osi:Watcom-1.0"
+                    ],
+                    "__impliedId": "Watcom-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Watcom, Version 1.0",
+                        "Watcom 1.0",
+                        "Watcom License, Version 1.0",
+                        "Watcom License, 1.0",
+                        "Sybase Open Watcom Public License version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Watcom"
+                            ]
+                        ]
                     ]
                 }
             },

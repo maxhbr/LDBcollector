@@ -733,7 +733,8 @@
     },
     "Artistic-1.0-cl8": {
         "NoCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "Google OSS Policy"
         ],
         "WeakCopyleft": [
             "HansHammel license-compatibility-checker",

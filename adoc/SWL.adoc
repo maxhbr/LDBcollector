@@ -11,6 +11,8 @@
 
 *Other Names:*
 
+* `Scheme Widget Library Software License Agreement`
+* `scancode:swl`
 * `scancode://swl`
 * `Scheme Widget Library (SWL) Software License`
 
@@ -26,6 +28,9 @@ Project Wiki]
 
 === General Comments
 
+* ``category: SWL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sc]/Scheme-Widget-Library-Software-License-Agreement.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per Fedora, this permissive license is derived from MIT, however, it
 has significant rewording and merits being considered as an independent
 license. It is Free and GPL-Compatible. A copy of the license text was
@@ -66,6 +71,8 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sc]/Scheme-Widget-Library-Software-License-Agreement.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/SWL.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/swl.yml[Scancode]
@@ -78,15 +85,27 @@ repository] is generated)
     "__impliedNames": [
         "SWL",
         "Scheme Widget Library (SWL) Software License Agreement",
+        "Scheme Widget Library Software License Agreement",
+        "scancode:swl",
         "scancode://swl",
         "Scheme Widget Library (SWL) Software License"
     ],
     "__impliedId": "SWL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "SWL"
+        "SWL",
+        "Scheme Widget Library (SWL) Software License Agreement",
+        "SWL License",
+        "SWL license",
+        "under SWL"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: SWL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -210,6 +229,44 @@ repository] is generated)
                     [
                         null,
                         "https://puredata.info/about/pdlicense"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "SWL",
+            "shortName": null,
+            "category": "SWL",
+            "alternativeNames": [
+                "Scheme Widget Library (SWL) Software License Agreement",
+                "SWL License",
+                "SWL license",
+                "under SWL"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sc]/Scheme-Widget-Library-Software-License-Agreement.yaml",
+            "otherIds": [
+                "scancode:swl"
+            ],
+            "canonicalName": "Scheme Widget Library Software License Agreement",
+            "_implications": {
+                "__impliedNames": [
+                    "Scheme Widget Library Software License Agreement",
+                    "SWL",
+                    "scancode:swl"
+                ],
+                "__impliedId": "SWL",
+                "__impliedAmbiguousNames": [
+                    "Scheme Widget Library (SWL) Software License Agreement",
+                    "SWL License",
+                    "SWL license",
+                    "under SWL"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: SWL"
+                        ]
                     ]
                 ]
             }

@@ -6,6 +6,10 @@
 
 -   `Educational Community License 1.0`
 
+-   `scancode:ecl-1.0`
+
+-   `osi:ECL-1.0`
+
 -   `Educational Community License, Version 1.0`
 
 -   `scancode://ecl-1.0`
@@ -32,6 +36,10 @@
 -   “https://opensource.org/licenses/ecl1.php” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: ECL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ed]/Educational-Community-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-1.0.yml "Scancode")
@@ -190,6 +198,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ed]/Educational-Community-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -213,6 +225,8 @@
             "ECL-1.0",
             "Educational Community License v1.0",
             "Educational Community License 1.0",
+            "scancode:ecl-1.0",
+            "osi:ECL-1.0",
             "Educational Community License, Version 1.0",
             "scancode://ecl-1.0",
             "ECL 1.0"
@@ -220,13 +234,24 @@
         "__impliedId": "ECL-1.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "ECL 1.0"
+            "ECL 1.0",
+            "Educational Community License 1.0",
+            "Educational Community License, Version 1.0",
+            "ECL, Version 1.0",
+            "ECL-1.0",
+            "Educational Community License version 1.0"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/ecl1.php"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ECL"
                 ]
             ],
             [
@@ -576,6 +601,50 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/1545"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ECL-1.0",
+                "shortName": null,
+                "category": "ECL",
+                "alternativeNames": [
+                    "Educational Community License 1.0",
+                    "Educational Community License, Version 1.0",
+                    "ECL, Version 1.0",
+                    "ECL-1.0",
+                    "ECL 1.0",
+                    "Educational Community License version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ed]/Educational-Community-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:ecl-1.0",
+                    "osi:ECL-1.0"
+                ],
+                "canonicalName": "Educational Community License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Educational Community License 1.0",
+                        "ECL-1.0",
+                        "scancode:ecl-1.0",
+                        "osi:ECL-1.0"
+                    ],
+                    "__impliedId": "ECL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Educational Community License 1.0",
+                        "Educational Community License, Version 1.0",
+                        "ECL, Version 1.0",
+                        "ECL-1.0",
+                        "ECL 1.0",
+                        "Educational Community License version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ECL"
+                            ]
                         ]
                     ]
                 }

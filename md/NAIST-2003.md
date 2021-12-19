@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:naist-2003`
+
 -   `scancode://naist-2003`
 
 -   `Nara Institute License 2003`
@@ -11,6 +13,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: NAIST” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/Nara-Institute-of-Science-and-Technology-License-(2003).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “this license references the icot-free license” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naist-2003.yml "Scancode")
@@ -102,6 +108,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/Nara-Institute-of-Science-and-Technology-License-(2003).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/NAIST-2003.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -114,11 +124,21 @@
         "__impliedNames": [
             "NAIST-2003",
             "Nara Institute of Science and Technology License (2003)",
+            "scancode:naist-2003",
             "scancode://naist-2003",
             "Nara Institute License 2003"
         ],
         "__impliedId": "NAIST-2003",
+        "__impliedAmbiguousNames": [
+            "Nara Institute of Science and Technology License (2003)"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NAIST"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -219,6 +239,38 @@
                         [
                             null,
                             "https://github.com/nodejs/node/blob/4a19cc8947b1bba2b2d27816ec3d0edf9b28e503/LICENSE#L343"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NAIST-2003",
+                "shortName": null,
+                "category": "NAIST",
+                "alternativeNames": [
+                    "Nara Institute of Science and Technology License (2003)"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/Nara-Institute-of-Science-and-Technology-License-(2003).yaml",
+                "otherIds": [
+                    "scancode:naist-2003"
+                ],
+                "canonicalName": "Nara Institute of Science and Technology License (2003)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Nara Institute of Science and Technology License (2003)",
+                        "NAIST-2003",
+                        "scancode:naist-2003"
+                    ],
+                    "__impliedId": "NAIST-2003",
+                    "__impliedAmbiguousNames": [
+                        "Nara Institute of Science and Technology License (2003)"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NAIST"
+                            ]
                         ]
                     ]
                 }

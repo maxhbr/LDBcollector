@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:cnri-jython`
+
 -   `scancode://cnri-jython`
 
 ## Comments on (easy) usability
@@ -13,6 +15,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: CNRI Jython” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cn]/CNRI-Jython-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -59,6 +65,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cn]/CNRI-Jython-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CNRI-Jython.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -71,9 +81,24 @@
         "__impliedNames": [
             "CNRI-Jython",
             "CNRI Jython License",
+            "scancode:cnri-jython",
             "scancode://cnri-jython"
         ],
         "__impliedId": "CNRI-Jython",
+        "__impliedAmbiguousNames": [
+            "CNRI Jython",
+            "CNRI JYTHON",
+            "CNRI-Jython",
+            "CNRI-JYTHON"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CNRI Jython"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -166,6 +191,44 @@
                 },
                 "licensename": "CNRI-Jython",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CNRI-Jython",
+                "shortName": null,
+                "category": "CNRI Jython",
+                "alternativeNames": [
+                    "CNRI Jython",
+                    "CNRI JYTHON",
+                    "CNRI-Jython",
+                    "CNRI-JYTHON"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cn]/CNRI-Jython-License.yaml",
+                "otherIds": [
+                    "scancode:cnri-jython"
+                ],
+                "canonicalName": "CNRI Jython License",
+                "_implications": {
+                    "__impliedNames": [
+                        "CNRI Jython License",
+                        "CNRI-Jython",
+                        "scancode:cnri-jython"
+                    ],
+                    "__impliedId": "CNRI-Jython",
+                    "__impliedAmbiguousNames": [
+                        "CNRI Jython",
+                        "CNRI JYTHON",
+                        "CNRI-Jython",
+                        "CNRI-JYTHON"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CNRI Jython"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

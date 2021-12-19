@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Spencer License (4-Clause)`
+
+-   `scancode:hs-regexp`
+
 -   `scancode://hs-regexp`
 
 -   `Henry Spencer Regexp License`
@@ -15,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Spencer License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-(4-Clause).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “this is very similar to the purdue-bsd license” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hs-regexp.yml "Scancode")
@@ -65,6 +73,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-(4-Clause).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Spencer-94.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -77,11 +89,25 @@
         "__impliedNames": [
             "Spencer-94",
             "Spencer License 94",
+            "Spencer License (4-Clause)",
+            "scancode:hs-regexp",
             "scancode://hs-regexp",
             "Henry Spencer Regexp License"
         ],
         "__impliedId": "Spencer-94",
+        "__impliedAmbiguousNames": [
+            "Spencer License, 92",
+            "Spencer License, 93",
+            "Spencer License, 94",
+            "Spencer License, 97"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Spencer License"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -176,6 +202,44 @@
                         [
                             null,
                             "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Spencer-94",
+                "shortName": null,
+                "category": "Spencer License",
+                "alternativeNames": [
+                    "Spencer License, 92",
+                    "Spencer License, 93",
+                    "Spencer License, 94",
+                    "Spencer License, 97"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-(4-Clause).yaml",
+                "otherIds": [
+                    "scancode:hs-regexp"
+                ],
+                "canonicalName": "Spencer License (4-Clause)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Spencer License (4-Clause)",
+                        "Spencer-94",
+                        "scancode:hs-regexp"
+                    ],
+                    "__impliedId": "Spencer-94",
+                    "__impliedAmbiguousNames": [
+                        "Spencer License, 92",
+                        "Spencer License, 93",
+                        "Spencer License, 94",
+                        "Spencer License, 97"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Spencer License"
+                            ]
                         ]
                     ]
                 }

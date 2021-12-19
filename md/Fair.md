@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:fair`
+
+-   `osi:Fair`
+
 -   `Fair License (Fair)`
 
 -   `scancode://fair`
@@ -24,6 +28,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Fair” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fa]/Fair-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml "Scancode")
@@ -69,6 +77,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fa]/Fair-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -91,15 +103,29 @@
         "__impliedNames": [
             "Fair",
             "Fair License",
+            "scancode:fair",
+            "osi:Fair",
             "Fair License (Fair)",
             "scancode://fair"
         ],
         "__impliedId": "Fair",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Fair"
+            "Fair",
+            "Fair License",
+            "FAIR LICENSE",
+            "FAIR License",
+            "http://opensource.org/licenses/fair.php",
+            "http://www.opensource.org/licenses/fair.php",
+            "https://spdx.org/licenses/fair"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Fair"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -300,6 +326,50 @@
                 "_implications": {
                     "__impliedNames": [
                         "Fair"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Fair",
+                "shortName": null,
+                "category": "Fair",
+                "alternativeNames": [
+                    "Fair License",
+                    "FAIR LICENSE",
+                    "FAIR License",
+                    "http://opensource.org/licenses/fair.php",
+                    "http://www.opensource.org/licenses/fair.php",
+                    "https://spdx.org/licenses/fair"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fa]/Fair-License.yaml",
+                "otherIds": [
+                    "scancode:fair",
+                    "osi:Fair"
+                ],
+                "canonicalName": "Fair License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Fair License",
+                        "Fair",
+                        "scancode:fair",
+                        "osi:Fair"
+                    ],
+                    "__impliedId": "Fair",
+                    "__impliedAmbiguousNames": [
+                        "Fair License",
+                        "FAIR LICENSE",
+                        "FAIR License",
+                        "http://opensource.org/licenses/fair.php",
+                        "http://www.opensource.org/licenses/fair.php",
+                        "https://spdx.org/licenses/fair"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Fair"
+                            ]
+                        ]
                     ]
                 }
             },

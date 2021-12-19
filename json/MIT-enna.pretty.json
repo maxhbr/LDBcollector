@@ -2,12 +2,26 @@
     "__impliedNames": [
         "MIT-enna",
         "enna License",
+        "MIT License (with enna advertising)",
+        "scancode:enna",
         "scancode://enna"
     ],
     "__impliedId": "MIT-enna",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "MIT"
+        "MIT",
+        "MIT enna",
+        "MIT ENNA",
+        "MIT-enna",
+        "MIT-ENNA"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: MIT"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -130,6 +144,44 @@
             },
             "licensename": "MIT-enna",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "MIT-enna",
+            "shortName": null,
+            "category": "MIT",
+            "alternativeNames": [
+                "MIT enna",
+                "MIT ENNA",
+                "MIT-enna",
+                "MIT-ENNA"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(with-enna-advertising).yaml",
+            "otherIds": [
+                "scancode:enna"
+            ],
+            "canonicalName": "MIT License (with enna advertising)",
+            "_implications": {
+                "__impliedNames": [
+                    "MIT License (with enna advertising)",
+                    "MIT-enna",
+                    "scancode:enna"
+                ],
+                "__impliedId": "MIT-enna",
+                "__impliedAmbiguousNames": [
+                    "MIT enna",
+                    "MIT ENNA",
+                    "MIT-enna",
+                    "MIT-ENNA"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: MIT"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

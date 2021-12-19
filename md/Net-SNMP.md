@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `Net License SNMP`
+
 -   `scancode://net-snmp`
 
 -   `Net SNMP License`
@@ -15,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Net” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Net-License-SNMP.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “composite” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/net-snmp.yml "Scancode")
@@ -286,6 +292,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Net-License-SNMP.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Net-SNMP.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -298,11 +308,25 @@
         "__impliedNames": [
             "Net-SNMP",
             "Net-SNMP License",
+            "Net License SNMP",
             "scancode://net-snmp",
             "Net SNMP License"
         ],
         "__impliedId": "Net-SNMP",
+        "__impliedAmbiguousNames": [
+            "Net, Version SNMP",
+            "Net SNMP",
+            "Net License, Version SNMP",
+            "Net License, SNMP",
+            "In addition, all contributors need to be aware that if the contribution is accepted and incorporated into the Net-SNMP project, it will be redistributed under the terms of the license agreement used for the entire body of work that comprises the Net-SNMP project (see the COPYING file for details)"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Net"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -391,6 +415,43 @@
                         [
                             "Homepage",
                             "http://net-snmp.sourceforge.net/about/license.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Net-SNMP",
+                "shortName": null,
+                "category": "Net",
+                "alternativeNames": [
+                    "Net, Version SNMP",
+                    "Net SNMP",
+                    "Net License, Version SNMP",
+                    "Net License, SNMP",
+                    "In addition, all contributors need to be aware that if the contribution is accepted and incorporated into the Net-SNMP project, it will be redistributed under the terms of the license agreement used for the entire body of work that comprises the Net-SNMP project (see the COPYING file for details)"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Net-License-SNMP.yaml",
+                "otherIds": [],
+                "canonicalName": "Net License SNMP",
+                "_implications": {
+                    "__impliedNames": [
+                        "Net License SNMP",
+                        "Net-SNMP"
+                    ],
+                    "__impliedId": "Net-SNMP",
+                    "__impliedAmbiguousNames": [
+                        "Net, Version SNMP",
+                        "Net SNMP",
+                        "Net License, Version SNMP",
+                        "Net License, SNMP",
+                        "In addition, all contributors need to be aware that if the contribution is accepted and incorporated into the Net-SNMP project, it will be redistributed under the terms of the license agreement used for the entire body of work that comprises the Net-SNMP project (see the COPYING file for details)"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Net"
+                            ]
                         ]
                     ]
                 }

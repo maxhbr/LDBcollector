@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:glwtpl`
+
 -   `scancode://glwtpl`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Good Luck With That Public License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[go]/Good-Luck-With-That-Public-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -53,6 +59,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[go]/Good-Luck-With-That-Public-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/GLWTPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -65,9 +75,21 @@
         "__impliedNames": [
             "GLWTPL",
             "Good Luck With That Public License",
+            "scancode:glwtpl",
             "scancode://glwtpl"
         ],
         "__impliedId": "GLWTPL",
+        "__impliedAmbiguousNames": [
+            "GOOD LUCK WITH THAT PUBLIC LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Good Luck With That Public License"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -147,6 +169,38 @@
                         [
                             null,
                             "https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "GLWTPL",
+                "shortName": null,
+                "category": "Good Luck With That Public License",
+                "alternativeNames": [
+                    "GOOD LUCK WITH THAT PUBLIC LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[go]/Good-Luck-With-That-Public-License.yaml",
+                "otherIds": [
+                    "scancode:glwtpl"
+                ],
+                "canonicalName": "Good Luck With That Public License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Good Luck With That Public License",
+                        "GLWTPL",
+                        "scancode:glwtpl"
+                    ],
+                    "__impliedId": "GLWTPL",
+                    "__impliedAmbiguousNames": [
+                        "GOOD LUCK WITH THAT PUBLIC LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Good Luck With That Public License"
+                            ]
                         ]
                     ]
                 }

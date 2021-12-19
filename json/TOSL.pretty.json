@@ -2,15 +2,23 @@
     "__impliedNames": [
         "TOSL",
         "Trusster Open Source License",
+        "scancode:tosl",
         "scancode://tosl",
         "TOSL 1.0a"
     ],
     "__impliedId": "TOSL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "TOSL"
+        "TOSL",
+        "Trusster Open Source License version 1.0a"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: TOSL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -128,6 +136,40 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/TOSL"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "TOSL",
+            "shortName": null,
+            "category": "TOSL",
+            "alternativeNames": [
+                "TOSL",
+                "Trusster Open Source License version 1.0a"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[to]/TOSL.yaml",
+            "otherIds": [
+                "scancode:tosl"
+            ],
+            "canonicalName": "TOSL",
+            "_implications": {
+                "__impliedNames": [
+                    "TOSL",
+                    "TOSL",
+                    "scancode:tosl"
+                ],
+                "__impliedId": "TOSL",
+                "__impliedAmbiguousNames": [
+                    "TOSL",
+                    "Trusster Open Source License version 1.0a"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: TOSL"
+                        ]
                     ]
                 ]
             }

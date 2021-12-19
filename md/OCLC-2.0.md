@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `OCLC License 2.0`
+
+-   `scancode:oclc-2.0`
+
+-   `osi:OCLC-2.0`
+
 -   `oclc2`
 
 -   `The OCLC Research Public License, Version 2.0`
@@ -17,6 +23,10 @@
     \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: OCLC” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[oc]/OCLC-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified. This license was
     released May 2002 ” (source:
@@ -231,6 +241,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[oc]/OCLC-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -252,13 +266,29 @@
     {
         "__impliedNames": [
             "OCLC-2.0",
+            "OCLC License 2.0",
+            "scancode:oclc-2.0",
+            "osi:OCLC-2.0",
             "OCLC Research Public License 2.0",
             "oclc2",
             "The OCLC Research Public License, Version 2.0",
             "scancode://oclc-2.0"
         ],
         "__impliedId": "OCLC-2.0",
+        "__impliedAmbiguousNames": [
+            "OCLC, Version 2.0",
+            "OCLC 2.0",
+            "OCLC License, Version 2.0",
+            "OCLC License 2.0",
+            "OCLC Research Public License 2.0"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OCLC"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -428,6 +458,48 @@
                 "_implications": {
                     "__impliedNames": [
                         "OCLC-2.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OCLC-2.0",
+                "shortName": null,
+                "category": "OCLC",
+                "alternativeNames": [
+                    "OCLC, Version 2.0",
+                    "OCLC 2.0",
+                    "OCLC License, Version 2.0",
+                    "OCLC License 2.0",
+                    "OCLC Research Public License 2.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[oc]/OCLC-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:oclc-2.0",
+                    "osi:OCLC-2.0"
+                ],
+                "canonicalName": "OCLC License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "OCLC License 2.0",
+                        "OCLC-2.0",
+                        "scancode:oclc-2.0",
+                        "osi:OCLC-2.0"
+                    ],
+                    "__impliedId": "OCLC-2.0",
+                    "__impliedAmbiguousNames": [
+                        "OCLC, Version 2.0",
+                        "OCLC 2.0",
+                        "OCLC License, Version 2.0",
+                        "OCLC License 2.0",
+                        "OCLC Research Public License 2.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OCLC"
+                            ]
+                        ]
                     ]
                 }
             },

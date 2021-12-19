@@ -8,11 +8,17 @@
 
 -   `The MIT License`
 
+-   `Expat License`
+
+-   `Expat`
+
+-   `scancode:mit`
+
+-   `osi:MIT`
+
 -   `mit-license`
 
 -   `MIT/Expat License`
-
--   `Expat`
 
 -   `License :: OSI Approved :: MIT License`
 
@@ -69,6 +75,10 @@
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 ## General Comments
+
+-   “category: MIT” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ex]/Expat-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml "Scancode")
@@ -205,6 +215,14 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ex]/Expat-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -244,9 +262,12 @@
             "The MIT License",
             "MIT License",
             "mit",
+            "Expat License",
+            "Expat",
+            "scancode:mit",
+            "osi:MIT",
             "mit-license",
             "MIT/Expat License",
-            "Expat",
             "License :: OSI Approved :: MIT License",
             "scancode://mit",
             "MIT license / X11 license"
@@ -255,9 +276,36 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The MIT License",
-            "MIT"
+            "MIT",
+            "Expat License",
+            "EXPAT License",
+            "under MIT",
+            "MIT license",
+            "MIT Licence",
+            "MIT licencse",
+            "MIT-License",
+            "MIT License",
+            "MIT Licensed",
+            "MIT Licence (MIT)",
+            "MIT License(MIT)",
+            "http://www.opensource.org/licenses/MIT",
+            "http://opensource.org/licenses/MIT",
+            "http://opensource.org/licenses/mit-license.php",
+            "link=https://github.com/sporritt/jsPlumb/blob/master/jsPlumb-MIT-LICENSE.txt",
+            "Licensed under the MIT",
+            "licensed under the MIT",
+            "'license': 'MIT'",
+            "\"License\": \"MIT\"",
+            "https://angular.io/license",
+            "MIT LICENSE"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MIT"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -649,6 +697,37 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/33"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "Expat",
+                "category": "MIT",
+                "alternativeNames": [
+                    "Expat License",
+                    "EXPAT License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ex]/Expat-License.yaml",
+                "otherIds": [],
+                "canonicalName": "Expat License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Expat License",
+                        "Expat"
+                    ],
+                    "__impliedId": "Expat",
+                    "__impliedAmbiguousNames": [
+                        "Expat License",
+                        "EXPAT License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MIT"
+                            ]
                         ]
                     ]
                 }

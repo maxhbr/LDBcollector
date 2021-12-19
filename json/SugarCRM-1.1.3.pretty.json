@@ -1,11 +1,27 @@
 {
     "__impliedNames": [
         "SugarCRM-1.1.3",
+        "SugarCRM License 1.1.3",
         "SugarCRM Public License v1.1.3",
         "scancode://sugarcrm-1.1.3",
         "SugarCRM Public License 1.1.3"
     ],
     "__impliedId": "SugarCRM-1.1.3",
+    "__impliedAmbiguousNames": [
+        "SugarCRM, Version 1.1.3",
+        "SugarCRM 1.1.3",
+        "SugarCRM License, Version 1.1.3",
+        "SugarCRM License 1.1.3",
+        "SUGARCRM PUBLIC LICENSE"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: SugarCRM"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -104,6 +120,43 @@
             },
             "licensename": "SugarCRM-1.1.3",
             "copyleftkind": "WeakCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "SugarCRM-1.1.3",
+            "shortName": null,
+            "category": "SugarCRM",
+            "alternativeNames": [
+                "SugarCRM, Version 1.1.3",
+                "SugarCRM 1.1.3",
+                "SugarCRM License, Version 1.1.3",
+                "SugarCRM License 1.1.3",
+                "SUGARCRM PUBLIC LICENSE"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[su]/SugarCRM-License-1.1.3.yaml",
+            "otherIds": [],
+            "canonicalName": "SugarCRM License 1.1.3",
+            "_implications": {
+                "__impliedNames": [
+                    "SugarCRM License 1.1.3",
+                    "SugarCRM-1.1.3"
+                ],
+                "__impliedId": "SugarCRM-1.1.3",
+                "__impliedAmbiguousNames": [
+                    "SugarCRM, Version 1.1.3",
+                    "SugarCRM 1.1.3",
+                    "SugarCRM License, Version 1.1.3",
+                    "SugarCRM License 1.1.3",
+                    "SUGARCRM PUBLIC LICENSE"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: SugarCRM"
+                        ]
+                    ]
+                ]
+            }
         }
     },
     "__impliedCopyleft": [

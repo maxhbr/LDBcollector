@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `BSD 3-Clause License (Lawrence Berkeley National Labs)`
+
 -   `scancode://lbnl-bsd`
 
 -   `LBNL BSD Variant`
@@ -24,6 +26,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(Lawrence-Berkeley-National-Labs).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -99,6 +105,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(Lawrence-Berkeley-National-Labs).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-LBNL.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -111,6 +121,7 @@
         "__impliedNames": [
             "BSD-3-Clause-LBNL",
             "Lawrence Berkeley National Labs BSD variant license",
+            "BSD 3-Clause License (Lawrence Berkeley National Labs)",
             "scancode://lbnl-bsd",
             "LBNL BSD Variant"
         ],
@@ -118,6 +129,14 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "LBNL BSD"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -255,6 +274,31 @@
                 },
                 "licensename": "BSD-3-Clause-LBNL",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-3-Clause-LBNL",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(Lawrence-Berkeley-National-Labs).yaml",
+                "otherIds": [],
+                "canonicalName": "BSD 3-Clause License (Lawrence Berkeley National Labs)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause License (Lawrence Berkeley National Labs)",
+                        "BSD-3-Clause-LBNL"
+                    ],
+                    "__impliedId": "BSD-3-Clause-LBNL",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

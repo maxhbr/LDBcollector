@@ -4,13 +4,15 @@
 
 **Other Names:**
 
+-   `Netscape Public License 1.1`
+
+-   `scancode:npl-1.1`
+
 -   `Netscape Public License Version 1.1`
 
 -   `scancode://npl-1.1`
 
 -   `NPL 1.1`
-
--   `Netscape Public License 1.1`
 
 ## Comments on (easy) usability
 
@@ -53,6 +55,10 @@
     beneficial ownership of the corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Netscape Public License 1.1” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netscape-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -247,6 +253,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netscape-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -265,19 +275,33 @@
     {
         "__impliedNames": [
             "NPL-1.1",
+            "Netscape Public License 1.1",
+            "scancode:npl-1.1",
             "Netscape Public License Version 1.1",
             "Netscape Public License v1.1",
             "scancode://npl-1.1",
-            "NPL 1.1",
-            "Netscape Public License 1.1"
+            "NPL 1.1"
         ],
         "__impliedId": "NPL-1.1",
+        "__impliedAmbiguousNames": [
+            "http://www.mozilla.org/MPL/NPL-1.1.html",
+            "http://www.mozilla.org/NPL/",
+            "Netscape Public License and MPL / GPL dual license",
+            "mozilla.org/mpl/MPL/NPL/1.1/",
+            "https://spdx.org/licenses/npl-1.1"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "Mozilla Public License Version 1.1 with the Amendments, including Exhibit A-Netscape Public Licensehttp://website-archive.mozilla.org/www. mozilla.org/mpl/MPL/NPL/1.1/",
                     "The additional terms of the Netscape Public License apply to the Mozilla Communicator client code, and all such software under this license, and the Netscape-branded code is distributed by Netscape or licensed to Netscape. Software that is licensed to others for distribution under a trademark controlled by Netscape, provided that use of the trademark is not licensed under this License. However, use of such trademarks is not licensed under this License. Source code refers to the source code and related interface definition files and scripts used to control the compilation and installation of executables. Executable refers to any form of software other than source code. Sublicense means that the person who has been granted such a license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under the license in accordance with all of the terms of the license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Netscape Public License 1.1"
                 ]
             ]
         ],
@@ -809,6 +833,46 @@
                     ]
                 },
                 "description": "The additional terms of the Netscape Public License apply to the Mozilla Communicator client code, and all such software under this license, and the Netscape-branded code is distributed by Netscape or licensed to Netscape. Software that is licensed to others for distribution under a trademark controlled by Netscape, provided that use of the trademark is not licensed under this License. However, use of such trademarks is not licensed under this License. Source code refers to the source code and related interface definition files and scripts used to control the compilation and installation of executables. Executable refers to any form of software other than source code. Sublicense means that the person who has been granted such a license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under the license in accordance with all of the terms of the license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NPL-1.1",
+                "shortName": null,
+                "category": "Netscape Public License 1.1",
+                "alternativeNames": [
+                    "http://www.mozilla.org/MPL/NPL-1.1.html",
+                    "http://www.mozilla.org/NPL/",
+                    "Netscape Public License and MPL / GPL dual license",
+                    "mozilla.org/mpl/MPL/NPL/1.1/",
+                    "https://spdx.org/licenses/npl-1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netscape-Public-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:npl-1.1"
+                ],
+                "canonicalName": "Netscape Public License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Netscape Public License 1.1",
+                        "NPL-1.1",
+                        "scancode:npl-1.1"
+                    ],
+                    "__impliedId": "NPL-1.1",
+                    "__impliedAmbiguousNames": [
+                        "http://www.mozilla.org/MPL/NPL-1.1.html",
+                        "http://www.mozilla.org/NPL/",
+                        "Netscape Public License and MPL / GPL dual license",
+                        "mozilla.org/mpl/MPL/NPL/1.1/",
+                        "https://spdx.org/licenses/npl-1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Netscape Public License 1.1"
+                            ]
+                        ]
+                    ]
+                }
             },
             "Wikipedia": {
                 "Linking": {

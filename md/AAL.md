@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:attribution`
+
+-   `osi:attribution`
+
 -   `Attribution Assurance Licenses`
 
 -   `License :: OSI Approved :: Attribution Assurance License`
@@ -26,6 +30,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: AAL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[at]/Attribution-Assurance-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this version was released 2002 This license is OSI
     certifified. ” (source:
@@ -112,6 +120,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[at]/Attribution-Assurance-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -134,6 +146,8 @@
         "__impliedNames": [
             "AAL",
             "Attribution Assurance License",
+            "scancode:attribution",
+            "osi:attribution",
             "Attribution Assurance Licenses",
             "License :: OSI Approved :: Attribution Assurance License",
             "scancode://attribution"
@@ -141,9 +155,16 @@
         "__impliedId": "AAL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "AAL"
+            "AAL",
+            "Attribution Assurance License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: AAL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -329,6 +350,40 @@
                 "_implications": {
                     "__impliedNames": [
                         "AAL"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "AAL",
+                "shortName": null,
+                "category": "AAL",
+                "alternativeNames": [
+                    "Attribution Assurance License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[at]/Attribution-Assurance-License.yaml",
+                "otherIds": [
+                    "scancode:attribution",
+                    "osi:attribution"
+                ],
+                "canonicalName": "Attribution Assurance License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Attribution Assurance License",
+                        "AAL",
+                        "scancode:attribution",
+                        "osi:attribution"
+                    ],
+                    "__impliedId": "AAL",
+                    "__impliedAmbiguousNames": [
+                        "Attribution Assurance License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: AAL"
+                            ]
+                        ]
                     ]
                 }
             },

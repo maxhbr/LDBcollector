@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:imlib2`
+
 -   `scancode://imlib2`
 
 ## Comments on (easy) usability
@@ -20,6 +22,10 @@
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Imlib2” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/Imlib2-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -135,6 +141,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/Imlib2-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -151,18 +161,28 @@
         "__impliedNames": [
             "Imlib2",
             "Imlib2 License",
+            "scancode:imlib2",
             "scancode://imlib2"
         ],
         "__impliedId": "Imlib2",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Imlib2"
+            "Imlib2",
+            "Imlib2 License",
+            "IMLIB2 LICENSE",
+            "IMLIB2 License"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://git.enlightenment.org/legacy/imlib2.git/tree/ and https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Imlib2"
                 ]
             ]
         ],
@@ -471,6 +491,42 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/1561"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Imlib2",
+                "shortName": null,
+                "category": "Imlib2",
+                "alternativeNames": [
+                    "Imlib2 License",
+                    "IMLIB2 LICENSE",
+                    "IMLIB2 License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/Imlib2-License.yaml",
+                "otherIds": [
+                    "scancode:imlib2"
+                ],
+                "canonicalName": "Imlib2 License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Imlib2 License",
+                        "Imlib2",
+                        "scancode:imlib2"
+                    ],
+                    "__impliedId": "Imlib2",
+                    "__impliedAmbiguousNames": [
+                        "Imlib2 License",
+                        "IMLIB2 LICENSE",
+                        "IMLIB2 License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Imlib2"
+                            ]
                         ]
                     ]
                 }

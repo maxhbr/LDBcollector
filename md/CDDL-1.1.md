@@ -4,11 +4,13 @@
 
 **Other Names:**
 
+-   `CDDL 1.1`
+
+-   `scancode:cddl-1.1`
+
 -   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1`
 
 -   `scancode://cddl-1.1`
-
--   `CDDL 1.1`
 
 ## Comments on (easy) usability
 
@@ -47,6 +49,10 @@
     beneficial ownership of the corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: CDDL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cd]/CDDL-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “per SPDX.org, same as 1.0, but changes name from Sun to Oracle in
     section 4.1 and adds patent infringement termination clause (section
@@ -292,6 +298,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cd]/CDDL-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/CDDL-1.1.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -311,13 +321,20 @@
         "__impliedNames": [
             "CDDL-1.1",
             "Common Development and Distribution License 1.1",
+            "CDDL 1.1",
+            "scancode:cddl-1.1",
             "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1",
-            "scancode://cddl-1.1",
-            "CDDL 1.1"
+            "scancode://cddl-1.1"
         ],
         "__impliedId": "CDDL-1.1",
         "__impliedAmbiguousNames": [
-            "Common Development and Distribution License"
+            "Common Development and Distribution License",
+            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1",
+            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1",
+            "Common Development and Distribution License 1.1 (\"CDDL\")",
+            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
+            "https://oss.oracle.com/licenses/CDDL+GPL-1.1",
+            "Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved"
         ],
         "__impliedComments": [
             [
@@ -331,6 +348,12 @@
                 [
                     "Venue shall be within Santa Clara County, California, and subject to the provisions of California law, the Federal Court for the Northern District of California, and the jurisdiction of the state courts of California.",
                     "Source code refers to the source code and the documentation contained in or attached to the source code. Executable Form - means any form of software other than source code. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party. Self means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CDDL"
                 ]
             ],
             [
@@ -840,6 +863,48 @@
                     ]
                 },
                 "description": "Source code refers to the source code and the documentation contained in or attached to the source code. Executable Form - means any form of software other than source code. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party. Self means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CDDL-1.1",
+                "shortName": null,
+                "category": "CDDL",
+                "alternativeNames": [
+                    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1",
+                    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1",
+                    "Common Development and Distribution License 1.1 (\"CDDL\")",
+                    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
+                    "https://oss.oracle.com/licenses/CDDL+GPL-1.1",
+                    "Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cd]/CDDL-1.1.yaml",
+                "otherIds": [
+                    "scancode:cddl-1.1"
+                ],
+                "canonicalName": "CDDL 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "CDDL 1.1",
+                        "CDDL-1.1",
+                        "scancode:cddl-1.1"
+                    ],
+                    "__impliedId": "CDDL-1.1",
+                    "__impliedAmbiguousNames": [
+                        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1",
+                        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1",
+                        "Common Development and Distribution License 1.1 (\"CDDL\")",
+                        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
+                        "https://oss.oracle.com/licenses/CDDL+GPL-1.1",
+                        "Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CDDL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/CDDL-1.1.html",

@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Creative Commons BY-NC 2.5 (generic)`
+
+-   `scancode:cc-by-nc-2.5`
+
 -   `scancode://cc-by-nc-2.5`
 
 ## Comments on (easy) usability
@@ -24,6 +28,10 @@
     (NOASSERTION))
 
 ## General Comments
+
+-   “category: CC-BY-NC” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-2.5-(generic).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -113,6 +121,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-2.5-(generic).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-2.5.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -124,12 +136,17 @@
     {
         "__impliedNames": [
             "CC-BY-NC-2.5",
+            "Creative Commons BY-NC 2.5 (generic)",
+            "scancode:cc-by-nc-2.5",
             "Creative Commons Attribution Non Commercial 2.5 Generic",
             "scancode://cc-by-nc-2.5"
         ],
         "__impliedId": "CC-BY-NC-2.5",
         "__impliedAmbiguousNames": [
-            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)"
+            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
+            "Creative Commons Attribution Non Commercial 2.5 Generic",
+            "CC-BY-NC-2.5",
+            "Creative Commons Attribution-NonCommercial 2.5"
         ],
         "__impliedRatingState": [
             [
@@ -140,6 +157,14 @@
                         "tag": "RNoGo"
                     }
                 }
+            ]
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-NC"
+                ]
             ]
         ],
         "__impliedNonCommercial": true,
@@ -273,6 +298,42 @@
                     "contents": {
                         "tag": "RNoGo"
                     }
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-NC-2.5",
+                "shortName": null,
+                "category": "CC-BY-NC",
+                "alternativeNames": [
+                    "Creative Commons Attribution Non Commercial 2.5 Generic",
+                    "CC-BY-NC-2.5",
+                    "Creative Commons Attribution-NonCommercial 2.5"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-2.5-(generic).yaml",
+                "otherIds": [
+                    "scancode:cc-by-nc-2.5"
+                ],
+                "canonicalName": "Creative Commons BY-NC 2.5 (generic)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY-NC 2.5 (generic)",
+                        "CC-BY-NC-2.5",
+                        "scancode:cc-by-nc-2.5"
+                    ],
+                    "__impliedId": "CC-BY-NC-2.5",
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons Attribution Non Commercial 2.5 Generic",
+                        "CC-BY-NC-2.5",
+                        "Creative Commons Attribution-NonCommercial 2.5"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-NC"
+                            ]
+                        ]
+                    ]
                 }
             },
             "Google OSS Policy": {

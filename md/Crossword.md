@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:crossword`
+
 -   `scancode://crossword`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Crossword” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Crossword-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -55,6 +61,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Crossword-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Crossword.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -67,12 +77,24 @@
         "__impliedNames": [
             "Crossword",
             "Crossword License",
+            "scancode:crossword",
             "scancode://crossword"
         ],
         "__impliedId": "Crossword",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Crossword"
+            "Crossword",
+            "Crossword License",
+            "CROSSWORD LICENSE",
+            "CROSSWORD License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Crossword"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -176,6 +198,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Crossword"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Crossword",
+                "shortName": null,
+                "category": "Crossword",
+                "alternativeNames": [
+                    "Crossword License",
+                    "CROSSWORD LICENSE",
+                    "CROSSWORD License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Crossword-License.yaml",
+                "otherIds": [
+                    "scancode:crossword"
+                ],
+                "canonicalName": "Crossword License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Crossword License",
+                        "Crossword",
+                        "scancode:crossword"
+                    ],
+                    "__impliedId": "Crossword",
+                    "__impliedAmbiguousNames": [
+                        "Crossword License",
+                        "CROSSWORD LICENSE",
+                        "CROSSWORD License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Crossword"
+                            ]
                         ]
                     ]
                 }

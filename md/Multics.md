@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:multics`
+
+-   `osi:Multics`
+
 -   `scancode://multics`
 
 ## Comments on (easy) usability
@@ -17,6 +21,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Multics” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Multics-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/multics.yml "Scancode")
@@ -64,6 +72,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Multics-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -86,10 +98,23 @@
         "__impliedNames": [
             "Multics",
             "Multics License",
+            "scancode:multics",
+            "osi:Multics",
             "scancode://multics"
         ],
         "__impliedId": "Multics",
+        "__impliedAmbiguousNames": [
+            "Multics License",
+            "MULTICS LICENSE",
+            "MULTICS License"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Multics"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -246,6 +271,44 @@
                 "_implications": {
                     "__impliedNames": [
                         "Multics"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Multics",
+                "shortName": null,
+                "category": "Multics",
+                "alternativeNames": [
+                    "Multics License",
+                    "MULTICS LICENSE",
+                    "MULTICS License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Multics-License.yaml",
+                "otherIds": [
+                    "scancode:multics",
+                    "osi:Multics"
+                ],
+                "canonicalName": "Multics License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Multics License",
+                        "Multics",
+                        "scancode:multics",
+                        "osi:Multics"
+                    ],
+                    "__impliedId": "Multics",
+                    "__impliedAmbiguousNames": [
+                        "Multics License",
+                        "MULTICS LICENSE",
+                        "MULTICS License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Multics"
+                            ]
+                        ]
                     ]
                 }
             },

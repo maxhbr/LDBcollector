@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:diffmark`
+
 -   `scancode://diffmark`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: diffmark” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[di]/diffmark-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this extremely minimal and permissive license was found
     in diffmark (0.08). While poorly written, our interpretation of the
@@ -60,6 +66,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[di]/diffmark-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/diffmark.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -72,15 +82,26 @@
         "__impliedNames": [
             "diffmark",
             "diffmark license",
-            "scancode://diffmark",
-            "diffmark License"
+            "diffmark License",
+            "scancode:diffmark",
+            "scancode://diffmark"
         ],
         "__impliedId": "diffmark",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "diffmark"
+            "diffmark",
+            "diffmark License",
+            "diffmark license",
+            "DIFFMARK LICENSE",
+            "DIFFMARK License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: diffmark"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -198,6 +219,44 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/diffmark"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "diffmark",
+                "shortName": null,
+                "category": "diffmark",
+                "alternativeNames": [
+                    "diffmark License",
+                    "diffmark license",
+                    "DIFFMARK LICENSE",
+                    "DIFFMARK License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[di]/diffmark-License.yaml",
+                "otherIds": [
+                    "scancode:diffmark"
+                ],
+                "canonicalName": "diffmark License",
+                "_implications": {
+                    "__impliedNames": [
+                        "diffmark License",
+                        "diffmark",
+                        "scancode:diffmark"
+                    ],
+                    "__impliedId": "diffmark",
+                    "__impliedAmbiguousNames": [
+                        "diffmark License",
+                        "diffmark license",
+                        "DIFFMARK LICENSE",
+                        "DIFFMARK License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: diffmark"
+                            ]
                         ]
                     ]
                 }

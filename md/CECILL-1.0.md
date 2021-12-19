@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `CeCILL Free Software License Agreement 1.0`
+
+-   `scancode:cecill-1.0`
+
 -   `scancode://cecill-1.0`
 
 -   `CeCILL 1.0`
@@ -11,6 +15,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: CECILL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-Free-Software-License-Agreement-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -276,6 +284,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-Free-Software-License-Agreement-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CECILL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -287,11 +299,26 @@
     {
         "__impliedNames": [
             "CECILL-1.0",
+            "CeCILL Free Software License Agreement 1.0",
+            "scancode:cecill-1.0",
             "CeCILL Free Software License Agreement v1.0",
             "scancode://cecill-1.0",
             "CeCILL 1.0"
         ],
         "__impliedId": "CECILL-1.0",
+        "__impliedAmbiguousNames": [
+            "CeCILL Free Software License Agreement v1.0",
+            "CECILL-1.0",
+            "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL Avertissement"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CECILL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -390,6 +417,42 @@
                 },
                 "licensename": "CECILL-1.0",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CECILL-1.0",
+                "shortName": null,
+                "category": "CECILL",
+                "alternativeNames": [
+                    "CeCILL Free Software License Agreement v1.0",
+                    "CECILL-1.0",
+                    "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL Avertissement"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-Free-Software-License-Agreement-1.0.yaml",
+                "otherIds": [
+                    "scancode:cecill-1.0"
+                ],
+                "canonicalName": "CeCILL Free Software License Agreement 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CeCILL Free Software License Agreement 1.0",
+                        "CECILL-1.0",
+                        "scancode:cecill-1.0"
+                    ],
+                    "__impliedId": "CECILL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "CeCILL Free Software License Agreement v1.0",
+                        "CECILL-1.0",
+                        "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL Avertissement"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CECILL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

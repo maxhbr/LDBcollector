@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `BSD 3-Clause License (attribution)`
+
+-   `scancode:bsd-ack`
+
 -   `scancode://bsd-ack`
 
 -   `BSD Acknowledgment License`
@@ -20,6 +24,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(attribution).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -85,6 +93,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(attribution).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Attribution.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -97,13 +109,25 @@
         "__impliedNames": [
             "BSD-3-Clause-Attribution",
             "BSD with attribution",
+            "BSD 3-Clause License (attribution)",
+            "scancode:bsd-ack",
             "scancode://bsd-ack",
             "BSD Acknowledgment License"
         ],
         "__impliedId": "BSD-3-Clause-Attribution",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "BSD with attribution"
+            "BSD with attribution",
+            "BSD-3-Clause-Attribution",
+            "BSD 3-Clause Attribution"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -242,6 +266,40 @@
                 },
                 "licensename": "BSD-3-Clause-Attribution",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-3-Clause-Attribution",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [
+                    "BSD-3-Clause-Attribution",
+                    "BSD 3-Clause Attribution"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(attribution).yaml",
+                "otherIds": [
+                    "scancode:bsd-ack"
+                ],
+                "canonicalName": "BSD 3-Clause License (attribution)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause License (attribution)",
+                        "BSD-3-Clause-Attribution",
+                        "scancode:bsd-ack"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Attribution",
+                    "__impliedAmbiguousNames": [
+                        "BSD-3-Clause-Attribution",
+                        "BSD 3-Clause Attribution"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

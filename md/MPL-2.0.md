@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:mpl-2.0`
+
+-   `osi:MPL-2.0`
+
 -   `mozilla2.0`
 
 -   `Mozilla Public License, Version 2.0`
@@ -71,6 +75,10 @@
     corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: MPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Mozilla-Public-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released in January 2012. This
     license list entry is for use when the standard MPL 2.0 is used, as
@@ -628,6 +636,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Mozilla-Public-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -665,6 +677,8 @@
             "MPL-2.0",
             "Mozilla Public License 2.0",
             "mpl-2.0",
+            "scancode:mpl-2.0",
+            "osi:MPL-2.0",
             "mozilla2.0",
             "Mozilla Public License, Version 2.0",
             "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
@@ -675,7 +689,18 @@
         "__impliedId": "MPL-2.0",
         "__impliedAmbiguousNames": [
             "Mozilla Public License",
-            "Mozilla Public License (MPL)"
+            "Mozilla Public License (MPL)",
+            "MPL 2.0",
+            "Mozilla Public License, v. 2.0",
+            "Mozilla Public License version 2.0",
+            "Mozilla Public License 2.0",
+            "Mozilla Public License (Version 2.0)",
+            "Mozilla Public License v2.0",
+            "Mozilla License Version 2.0",
+            "Mozilla Public Licence 2.0",
+            "Mozilla Public License, Version 2.0",
+            "MPLv2.0",
+            "MPL-2"
         ],
         "__impliedComments": [
             [
@@ -688,6 +713,12 @@
                 "Hitachi open-license",
                 [
                     "Source code refers to a format suitable for making modified versions of the software. Executable is any form of software other than source code. The second license is the GNU General Public License, Version 2.0, the GNU Lesser General Public License, Version 2.1, the GNU Affero General Public License, Version 3.0, or a later version of the license. or any later version of these licenses. You are the person or entity exercising the rights under the license in accordance with all of the terms of the license. In the case of a legal entity, self includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MPL"
                 ]
             ],
             [
@@ -1177,6 +1208,60 @@
                     ]
                 },
                 "description": "Source code refers to a format suitable for making modified versions of the software. Executable is any form of software other than source code. The second license is the GNU General Public License, Version 2.0, the GNU Lesser General Public License, Version 2.1, the GNU Affero General Public License, Version 3.0, or a later version of the license. or any later version of these licenses. You are the person or entity exercising the rights under the license in accordance with all of the terms of the license. In the case of a legal entity, self includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MPL-2.0",
+                "shortName": null,
+                "category": "MPL",
+                "alternativeNames": [
+                    "MPL 2.0",
+                    "Mozilla Public License, v. 2.0",
+                    "Mozilla Public License version 2.0",
+                    "Mozilla Public License 2.0",
+                    "Mozilla Public License (Version 2.0)",
+                    "Mozilla Public License v2.0",
+                    "Mozilla License Version 2.0",
+                    "Mozilla Public Licence 2.0",
+                    "Mozilla Public License, Version 2.0",
+                    "MPLv2.0",
+                    "MPL-2"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mo]/Mozilla-Public-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:mpl-2.0",
+                    "osi:MPL-2.0"
+                ],
+                "canonicalName": "Mozilla Public License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Mozilla Public License 2.0",
+                        "MPL-2.0",
+                        "scancode:mpl-2.0",
+                        "osi:MPL-2.0"
+                    ],
+                    "__impliedId": "MPL-2.0",
+                    "__impliedAmbiguousNames": [
+                        "MPL 2.0",
+                        "Mozilla Public License, v. 2.0",
+                        "Mozilla Public License version 2.0",
+                        "Mozilla Public License 2.0",
+                        "Mozilla Public License (Version 2.0)",
+                        "Mozilla Public License v2.0",
+                        "Mozilla License Version 2.0",
+                        "Mozilla Public Licence 2.0",
+                        "Mozilla Public License, Version 2.0",
+                        "MPLv2.0",
+                        "MPL-2"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/MPL-2.0.html",

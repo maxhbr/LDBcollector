@@ -3,13 +3,26 @@
         "Vim",
         "Vim License",
         "vim",
-        "scancode://vim",
-        "VIM License"
+        "VIM License",
+        "scancode:vim",
+        "scancode://vim"
     ],
     "__impliedId": "Vim",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Vim"
+        "Vim",
+        "VIM LICENSE",
+        "vim License",
+        "vim license",
+        "VIM licnese"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: VIM"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -138,6 +151,44 @@
             },
             "licensename": "Vim",
             "copyleftkind": "StrongCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Vim",
+            "shortName": null,
+            "category": "VIM",
+            "alternativeNames": [
+                "VIM LICENSE",
+                "vim License",
+                "vim license",
+                "VIM licnese"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vi]/VIM-License.yaml",
+            "otherIds": [
+                "scancode:vim"
+            ],
+            "canonicalName": "VIM License",
+            "_implications": {
+                "__impliedNames": [
+                    "VIM License",
+                    "Vim",
+                    "scancode:vim"
+                ],
+                "__impliedId": "Vim",
+                "__impliedAmbiguousNames": [
+                    "VIM LICENSE",
+                    "vim License",
+                    "vim license",
+                    "VIM licnese"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: VIM"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

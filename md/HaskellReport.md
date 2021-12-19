@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `HaskellReport License`
+
 -   `scancode://haskell-report`
 
 -   `Haskell Report License`
@@ -16,6 +18,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: HaskellReport” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[ha]/HaskellReport-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -45,6 +51,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[ha]/HaskellReport-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/HaskellReport.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -57,13 +67,25 @@
         "__impliedNames": [
             "HaskellReport",
             "Haskell Language Report License",
+            "HaskellReport License",
             "scancode://haskell-report",
             "Haskell Report License"
         ],
         "__impliedId": "HaskellReport",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "HaskellReport"
+            "HaskellReport",
+            "HaskellReport License",
+            "HASKELLREPORT LICENSE",
+            "HASKELLREPORT License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: HaskellReport"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -167,6 +189,39 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "HaskellReport",
+                "shortName": null,
+                "category": "HaskellReport",
+                "alternativeNames": [
+                    "HaskellReport License",
+                    "HASKELLREPORT LICENSE",
+                    "HASKELLREPORT License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[ha]/HaskellReport-License.yaml",
+                "otherIds": [],
+                "canonicalName": "HaskellReport License",
+                "_implications": {
+                    "__impliedNames": [
+                        "HaskellReport License",
+                        "HaskellReport"
+                    ],
+                    "__impliedId": "HaskellReport",
+                    "__impliedAmbiguousNames": [
+                        "HaskellReport License",
+                        "HASKELLREPORT LICENSE",
+                        "HASKELLREPORT License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: HaskellReport"
+                            ]
                         ]
                     ]
                 }

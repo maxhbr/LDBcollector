@@ -8,6 +8,10 @@
 
 *Other Names:*
 
+- =GNU Free Documentation License 1.3 (or any later version)=
+
+- =GFDL-1.3+=
+
 - =scancode://gfdl-1.3-plus=
 
 - =GFDL 1.3 or later=
@@ -21,6 +25,10 @@
   Guidelines]] (NOASSERTION))
 
 ** General Comments
+
+- "category: GFDL" (source:
+  [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Free-Documentation-License-1.3-(or-any-later-version).yaml][Metaeffekt
+  Universe]] (CC-BY-4.0))
 
 - "Per SPDX.org, this license was released 3 November 2008." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3-plus.yml][Scancode]]
@@ -500,6 +508,9 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]] (NOASSERTION)
 
+- [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Free-Documentation-License-1.3-(or-any-later-version).yaml][Metaeffekt
+  Universe]] (CC-BY-4.0)
+
 - [[https://spdx.org/licenses/GFDL-1.3-or-later.html][SPDX]] (all data
   [in this repository] is generated)
 
@@ -511,15 +522,32 @@
   {
       "__impliedNames": [
           "GFDL-1.3-or-later",
+          "GNU Free Documentation License 1.3 (or any later version)",
+          "GFDL-1.3+",
           "GNU Free Documentation License v1.3 or later",
           "scancode://gfdl-1.3-plus",
           "GFDL 1.3 or later"
       ],
       "__impliedId": "GFDL-1.3-or-later",
       "__impliedAmbiguousNames": [
-          "GNU Free Documentation License (GFDL)"
+          "GNU Free Documentation License (GFDL)",
+          "GNU Free Documentation License, Version 1.3+",
+          "GNU Free Documentation License, v1.3+",
+          "GFDL Version 1.3+",
+          "GFDL, v1.3+",
+          "GNU Free Documentation License, Version 1.3 or any later version",
+          "GFDL-1.3+",
+          "GNU Free Documentation License as published by the Free Software Foundation; either version 1.3, or (at your option) any later version",
+          "GFDL version 1.3 or later",
+          "Change license on the manual to GFDLv1.3+"
       ],
       "__impliedComments": [
+          [
+              "Metaeffekt Universe",
+              [
+                  "category: GFDL"
+              ]
+          ],
           [
               "Scancode",
               [
@@ -641,6 +669,52 @@
               },
               "Comment": "Exception: Data licensed under the FDL with no invariant sections are considered DFSG-free as of GR 2006-001: http://www.debian.org/vote/2006/vote_001#outcome",
               "LicenseId": "GFDL-1.3-or-later"
+          },
+          "Metaeffekt Universe": {
+              "spdxIdentifier": "GFDL-1.3-or-later",
+              "shortName": "GFDL-1.3+",
+              "category": "GFDL",
+              "alternativeNames": [
+                  "GNU Free Documentation License, Version 1.3+",
+                  "GNU Free Documentation License, v1.3+",
+                  "GFDL Version 1.3+",
+                  "GFDL, v1.3+",
+                  "GNU Free Documentation License, Version 1.3 or any later version",
+                  "GFDL-1.3+",
+                  "GNU Free Documentation License as published by the Free Software Foundation; either version 1.3, or (at your option) any later version",
+                  "GFDL version 1.3 or later",
+                  "Change license on the manual to GFDLv1.3+"
+              ],
+              "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Free-Documentation-License-1.3-(or-any-later-version).yaml",
+              "otherIds": [],
+              "canonicalName": "GNU Free Documentation License 1.3 (or any later version)",
+              "_implications": {
+                  "__impliedNames": [
+                      "GNU Free Documentation License 1.3 (or any later version)",
+                      "GFDL-1.3+",
+                      "GFDL-1.3-or-later"
+                  ],
+                  "__impliedId": "GFDL-1.3-or-later",
+                  "__impliedAmbiguousNames": [
+                      "GNU Free Documentation License, Version 1.3+",
+                      "GNU Free Documentation License, v1.3+",
+                      "GFDL Version 1.3+",
+                      "GFDL, v1.3+",
+                      "GNU Free Documentation License, Version 1.3 or any later version",
+                      "GFDL-1.3+",
+                      "GNU Free Documentation License as published by the Free Software Foundation; either version 1.3, or (at your option) any later version",
+                      "GFDL version 1.3 or later",
+                      "Change license on the manual to GFDLv1.3+"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Metaeffekt Universe",
+                          [
+                              "category: GFDL"
+                          ]
+                      ]
+                  ]
+              }
           }
       },
       "__impliedJudgement": [

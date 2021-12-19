@@ -2,12 +2,24 @@
     "__impliedNames": [
         "Eurosym",
         "Eurosym License",
+        "scancode:eurosym",
         "scancode://eurosym"
     ],
     "__impliedId": "Eurosym",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Eurosym"
+        "Eurosym",
+        "Eurosym License",
+        "EUROSYM LICENSE",
+        "EUROSYM License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Eurosym"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -117,6 +129,42 @@
                     [
                         null,
                         "https://fedoraproject.org/wiki/Licensing/Eurosym"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Eurosym",
+            "shortName": null,
+            "category": "Eurosym",
+            "alternativeNames": [
+                "Eurosym License",
+                "EUROSYM LICENSE",
+                "EUROSYM License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/Eurosym-License.yaml",
+            "otherIds": [
+                "scancode:eurosym"
+            ],
+            "canonicalName": "Eurosym License",
+            "_implications": {
+                "__impliedNames": [
+                    "Eurosym License",
+                    "Eurosym",
+                    "scancode:eurosym"
+                ],
+                "__impliedId": "Eurosym",
+                "__impliedAmbiguousNames": [
+                    "Eurosym License",
+                    "EUROSYM LICENSE",
+                    "EUROSYM License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Eurosym"
+                        ]
                     ]
                 ]
             }

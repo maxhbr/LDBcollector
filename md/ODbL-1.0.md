@@ -6,11 +6,13 @@
 
 -   `ODbL`
 
+-   `ODbL 1.0`
+
+-   `scancode:odbl-1.0`
+
 -   `Open Data Commons Open Database License 1.0`
 
 -   `scancode://odbl-1.0`
-
--   `ODbL 1.0`
 
 ## Description
 
@@ -24,6 +26,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: ODbL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[od]/ODbL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## Obligations
 
@@ -605,6 +611,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[od]/ODbL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -622,12 +632,26 @@
             "ODbL-1.0",
             "odbl-1.0",
             "ODbL",
+            "ODbL 1.0",
+            "scancode:odbl-1.0",
             "Open Data Commons Open Database License 1.0",
             "Open Data Commons Open Database License v1.0",
-            "scancode://odbl-1.0",
-            "ODbL 1.0"
+            "scancode://odbl-1.0"
         ],
         "__impliedId": "ODbL-1.0",
+        "__impliedAmbiguousNames": [
+            "ODbL, Version 1.0",
+            "ODbL, 1.0",
+            "ODC Open Database License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ODbL"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -775,6 +799,42 @@
                 },
                 "licensename": "ODbL-1.0",
                 "copyleftkind": "StrongCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ODbL-1.0",
+                "shortName": null,
+                "category": "ODbL",
+                "alternativeNames": [
+                    "ODbL, Version 1.0",
+                    "ODbL, 1.0",
+                    "ODC Open Database License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[od]/ODbL-1.0.yaml",
+                "otherIds": [
+                    "scancode:odbl-1.0"
+                ],
+                "canonicalName": "ODbL 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "ODbL 1.0",
+                        "ODbL-1.0",
+                        "scancode:odbl-1.0"
+                    ],
+                    "__impliedId": "ODbL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "ODbL, Version 1.0",
+                        "ODbL, 1.0",
+                        "ODC Open Database License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ODbL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "choosealicense.com": {
                 "limitations": [

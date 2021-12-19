@@ -10,6 +10,10 @@
 |Has Patent Hint |True
 |===
 
+*Other Names:*
+
+* `bzip2 License 1.0.5`
+
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:
@@ -17,6 +21,10 @@ https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
+
+* ``category: bzip2'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bz]/bzip2-License-1.0.5.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === URLs
 
@@ -55,6 +63,8 @@ PATENT HINTS Yes
 * LicenseName
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bz]/bzip2-License-1.0.5.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.5.txt[OSADL
 License Checklist] (NOASSERTION)
 * https://spdx.org/licenses/bzip2-1.0.5.html[SPDX] (all data [in this
@@ -66,9 +76,18 @@ repository] is generated)
 {
     "__impliedNames": [
         "bzip2-1.0.5",
-        "bzip2 and libbzip2 License v1.0.5"
+        "bzip2 and libbzip2 License v1.0.5",
+        "bzip2 License 1.0.5"
     ],
     "__impliedId": "bzip2-1.0.5",
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: bzip2"
+            ]
+        ]
+    ],
     "__hasPatentHint": true,
     "facts": {
         "LicenseName": {
@@ -124,6 +143,31 @@ repository] is generated)
                     "bzip2-1.0.5"
                 ],
                 "__hasPatentHint": true
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "bzip2-1.0.5",
+            "shortName": null,
+            "category": "bzip2",
+            "alternativeNames": [],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bz]/bzip2-License-1.0.5.yaml",
+            "otherIds": [],
+            "canonicalName": "bzip2 License 1.0.5",
+            "_implications": {
+                "__impliedNames": [
+                    "bzip2 License 1.0.5",
+                    "bzip2-1.0.5"
+                ],
+                "__impliedId": "bzip2-1.0.5",
+                "__impliedAmbiguousNames": [],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: bzip2"
+                        ]
+                    ]
+                ]
             }
         },
         "BlueOak License List": {

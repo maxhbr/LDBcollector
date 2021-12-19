@@ -1,12 +1,26 @@
 {
     "__impliedNames": [
         "LPPL-1.1",
+        "LaTeX Project Public License 1.1",
+        "scancode:lppl-1.1",
         "LaTeX Project Public License v1.1",
         "scancode://lppl-1.1",
         "LPPL 1.1"
     ],
     "__impliedId": "LPPL-1.1",
+    "__impliedAmbiguousNames": [
+        "LPPL 1.1",
+        "LPPL-1.1",
+        "LPPL Version 1.1",
+        "LaTeX Project Public License 1.1"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: LPPL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -114,6 +128,44 @@
             },
             "licensename": "LPPL-1.1",
             "copyleftkind": "WeakCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "LPPL-1.1",
+            "shortName": null,
+            "category": "LPPL",
+            "alternativeNames": [
+                "LPPL 1.1",
+                "LPPL-1.1",
+                "LPPL Version 1.1",
+                "LaTeX Project Public License 1.1"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/LaTeX-Project-Public-License-1.1.yaml",
+            "otherIds": [
+                "scancode:lppl-1.1"
+            ],
+            "canonicalName": "LaTeX Project Public License 1.1",
+            "_implications": {
+                "__impliedNames": [
+                    "LaTeX Project Public License 1.1",
+                    "LPPL-1.1",
+                    "scancode:lppl-1.1"
+                ],
+                "__impliedId": "LPPL-1.1",
+                "__impliedAmbiguousNames": [
+                    "LPPL 1.1",
+                    "LPPL-1.1",
+                    "LPPL Version 1.1",
+                    "LaTeX Project Public License 1.1"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: LPPL"
+                        ]
+                    ]
+                ]
+            }
         }
     },
     "__impliedCopyleft": [

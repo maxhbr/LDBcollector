@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `BSD 3-Clause License (no-nuclear use acknowledgement 2014)`
+
+-   `scancode:oracle-bsd-no-nuclear`
+
 -   `scancode://oracle-bsd-no-nuclear`
 
 -   `Oracle BSD-Style with Nuclear Restrictions`
@@ -15,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(no-nuclear-use-acknowledgement-2014).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “this is a minor variation on similar licenses by Sun and Oracle.”
     (source:
@@ -82,6 +90,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(no-nuclear-use-acknowledgement-2014).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -94,11 +106,29 @@
         "__impliedNames": [
             "BSD-3-Clause-No-Nuclear-License-2014",
             "BSD 3-Clause No Nuclear License 2014",
+            "BSD 3-Clause License (no-nuclear use acknowledgement 2014)",
+            "scancode:oracle-bsd-no-nuclear",
             "scancode://oracle-bsd-no-nuclear",
             "Oracle BSD-Style with Nuclear Restrictions"
         ],
         "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
+        "__impliedAmbiguousNames": [
+            "BSD 3 Clause No Nuclear License, Version 2014",
+            "BSD 3 Clause No Nuclear License 2014",
+            "BSD-3-Clause-No-Nuclear-License, Version 2014",
+            "BSD-3-Clause-No-Nuclear-License 2014",
+            "BSD 3 Clause No Nuclear License License, Version 2014",
+            "BSD 3 Clause No Nuclear License License, 2014",
+            "BSD-3-Clause-No-Nuclear-License License, Version 2014",
+            "BSD-3-Clause-No-Nuclear-License License 2014"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -205,6 +235,52 @@
                 },
                 "licensename": "BSD-3-Clause-No-Nuclear-License-2014",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-3-Clause-No-Nuclear-License-2014",
+                "shortName": null,
+                "category": "BSD",
+                "alternativeNames": [
+                    "BSD 3 Clause No Nuclear License, Version 2014",
+                    "BSD 3 Clause No Nuclear License 2014",
+                    "BSD-3-Clause-No-Nuclear-License, Version 2014",
+                    "BSD-3-Clause-No-Nuclear-License 2014",
+                    "BSD 3 Clause No Nuclear License License, Version 2014",
+                    "BSD 3 Clause No Nuclear License License, 2014",
+                    "BSD-3-Clause-No-Nuclear-License License, Version 2014",
+                    "BSD-3-Clause-No-Nuclear-License License 2014"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(no-nuclear-use-acknowledgement-2014).yaml",
+                "otherIds": [
+                    "scancode:oracle-bsd-no-nuclear"
+                ],
+                "canonicalName": "BSD 3-Clause License (no-nuclear use acknowledgement 2014)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause License (no-nuclear use acknowledgement 2014)",
+                        "BSD-3-Clause-No-Nuclear-License-2014",
+                        "scancode:oracle-bsd-no-nuclear"
+                    ],
+                    "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
+                    "__impliedAmbiguousNames": [
+                        "BSD 3 Clause No Nuclear License, Version 2014",
+                        "BSD 3 Clause No Nuclear License 2014",
+                        "BSD-3-Clause-No-Nuclear-License, Version 2014",
+                        "BSD-3-Clause-No-Nuclear-License 2014",
+                        "BSD 3 Clause No Nuclear License License, Version 2014",
+                        "BSD 3 Clause No Nuclear License License, 2014",
+                        "BSD-3-Clause-No-Nuclear-License License, Version 2014",
+                        "BSD-3-Clause-No-Nuclear-License License 2014"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

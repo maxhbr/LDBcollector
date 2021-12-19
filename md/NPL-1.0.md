@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Netscape Public License 1.0`
+
+-   `scancode:npl-1.0`
+
 -   `scancode://npl-1.0`
 
 -   `NPL 1.0`
@@ -15,6 +19,10 @@
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 ## General Comments
+
+-   “category: Netscape Public License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netscape-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -178,6 +186,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netscape-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/NPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -189,11 +201,25 @@
     {
         "__impliedNames": [
             "NPL-1.0",
+            "Netscape Public License 1.0",
+            "scancode:npl-1.0",
             "Netscape Public License v1.0",
             "scancode://npl-1.0",
             "NPL 1.0"
         ],
         "__impliedId": "NPL-1.0",
+        "__impliedAmbiguousNames": [
+            "http://www.mozilla.org/MPL/NPL-1.0.html",
+            "https://spdx.org/licenses/npl-1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Netscape Public License"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -278,6 +304,40 @@
                         [
                             null,
                             "http://www.mozilla.org/NPL/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NPL-1.0",
+                "shortName": null,
+                "category": "Netscape Public License",
+                "alternativeNames": [
+                    "http://www.mozilla.org/MPL/NPL-1.0.html",
+                    "https://spdx.org/licenses/npl-1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netscape-Public-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:npl-1.0"
+                ],
+                "canonicalName": "Netscape Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Netscape Public License 1.0",
+                        "NPL-1.0",
+                        "scancode:npl-1.0"
+                    ],
+                    "__impliedId": "NPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "http://www.mozilla.org/MPL/NPL-1.0.html",
+                        "https://spdx.org/licenses/npl-1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Netscape Public License"
+                            ]
                         ]
                     ]
                 }

@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `LaTeX Project Public License 1.2`
+
+-   `scancode:lppl-1.2`
+
 -   `scancode://lppl-1.2`
 
 -   `LPPL 1.2`
@@ -11,6 +15,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: LPPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/LaTeX-Project-Public-License-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 3 Sept 1999.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.2.yml "Scancode")
@@ -339,6 +347,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/LaTeX-Project-Public-License-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/LPPL-1.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -350,12 +362,26 @@
     {
         "__impliedNames": [
             "LPPL-1.2",
+            "LaTeX Project Public License 1.2",
+            "scancode:lppl-1.2",
             "LaTeX Project Public License v1.2",
             "scancode://lppl-1.2",
             "LPPL 1.2"
         ],
         "__impliedId": "LPPL-1.2",
+        "__impliedAmbiguousNames": [
+            "LPPL, Version 1.2",
+            "LPPL 1.2",
+            "LPPL-1.2",
+            "LaTeX Project Public License 1.2"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: LPPL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -463,6 +489,44 @@
                 },
                 "licensename": "LPPL-1.2",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "LPPL-1.2",
+                "shortName": null,
+                "category": "LPPL",
+                "alternativeNames": [
+                    "LPPL, Version 1.2",
+                    "LPPL 1.2",
+                    "LPPL-1.2",
+                    "LaTeX Project Public License 1.2"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/LaTeX-Project-Public-License-1.2.yaml",
+                "otherIds": [
+                    "scancode:lppl-1.2"
+                ],
+                "canonicalName": "LaTeX Project Public License 1.2",
+                "_implications": {
+                    "__impliedNames": [
+                        "LaTeX Project Public License 1.2",
+                        "LPPL-1.2",
+                        "scancode:lppl-1.2"
+                    ],
+                    "__impliedId": "LPPL-1.2",
+                    "__impliedAmbiguousNames": [
+                        "LPPL, Version 1.2",
+                        "LPPL 1.2",
+                        "LPPL-1.2",
+                        "LaTeX Project Public License 1.2"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: LPPL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

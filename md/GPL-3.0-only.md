@@ -30,7 +30,15 @@
 
 -   `GNU GPLv3`
 
+-   `GNU General Public License 3.0 (or any later version)`
+
+-   `scancode:gpl-3.0-plus`
+
+-   `osi:GPL-3.0`
+
 -   `GNU General Public License 3.0`
+
+-   `scancode:gpl-3.0`
 
 -   `GNU General Public License, Version 3.0`
 
@@ -97,6 +105,10 @@
     for controlling these tasks.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: GPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-3.0-(or-any-later-version).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 29 June 2007 This license
     is OSI certified. ” (source:
@@ -1175,6 +1187,14 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-3.0-(or-any-later-version).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -1241,7 +1261,11 @@
             "GNU General Public License v3.0 or later",
             "gpl-3.0",
             "GNU GPLv3",
+            "GNU General Public License 3.0 (or any later version)",
+            "scancode:gpl-3.0-plus",
+            "osi:GPL-3.0",
             "GNU General Public License 3.0",
+            "scancode:gpl-3.0",
             "GNU General Public License, Version 3.0",
             "License :: OSI Approved :: GNU General Public License (GPL)",
             "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
@@ -1257,7 +1281,95 @@
             "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
             "The GNU General Public License (GPL)",
             "GPLv3",
-            "GPLv3+"
+            "GPLv3+",
+            "GNU GENERAL PUBLIC LICENSE version 3 or higher",
+            "GNU General Public License (GPL) version 3, or any later version",
+            "GNU General Public License Version 3 or later (GPL)",
+            "GNU General Public License v3 or later",
+            "GNU General Public License version 3+",
+            "GNU General Public License, Version 3.0 or any later version",
+            "GNU General Public License; either version 3 of the License, or (at your option) any later version",
+            "GNU LGP (GNU General Public License), V3 or later",
+            "GNU General Public License version 3.0 or later",
+            "GPL-3.0+",
+            "GPL-3+",
+            "GPL v3+",
+            "GPL 3 or later",
+            "GPL3+",
+            "GPLv3 +",
+            "gplv3+",
+            "GPL-3.0-or-later",
+            "GNU General Public License (v3 or later)",
+            "GNU General Public License v3+",
+            "GNU General Public License, v3.0 or later",
+            "GNU General Public License, Version 3 and better",
+            "GNU General Public License, Version 3+",
+            "GNU GENERAL PUBLIC LICENSE Version 3 or later",
+            "GNU General Public License as published by the Free Software Foundation; either version 3, or (at your option) any later version",
+            "GNU General Public License as published by the Free Software Foundation, either version 3, or (at your option) any later version",
+            "GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",
+            "GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version",
+            "GPL 3.0 or, Version later",
+            "GPL 3.0 or later",
+            "GPL-3.0-or, Version later",
+            "GPL-3.0-or, later",
+            "GPL 3.0 or License, Version later",
+            "GPL 3.0 or License, later",
+            "GPL-3.0-or License, Version later",
+            "GPL-3.0-or License later",
+            "GPL version 3 or later",
+            "GPL version 3.0 or later",
+            "GNU General Public License (GNU GPL), version 3 or later",
+            "GNU General Public License (GPLV3+)",
+            "GNU General Public License, Versions 2 and 3",
+            "GNU GENERAL PUBLIC LICENSE - Version 3",
+            "GNU GENERAL PUBLIC LICENSE 3.0",
+            "GNU GENERAL PUBLIC LICENSE Version 3",
+            "GNU GENERAL PUBLIC LICENSE v3",
+            "GNU GENERAL PUBLIC LICENSE, version 3",
+            "GNU GPL license v3",
+            "GNU GPL, Version 3",
+            "GNU General Public Licence Version 3",
+            "GNU General Public License (GPL v.3)",
+            "GNU General Public License (GPL) 3.0",
+            "GNU General Public License (GPL) Version 3",
+            "GNU General Public License (GPL) v3",
+            "GNU General Public License (GPL) version 3",
+            "GNU General Public License (GPL), Version 3.0",
+            "GNU General Public License (version 3)",
+            "GNU General Public License V3",
+            "GNU General Public License Version 3",
+            "GNU General Public License at version 3",
+            "GNU General Public License v3",
+            "GNU General Public License, version 3",
+            "GNU General Purpose License Version 3.0",
+            "GNU Gpl v3",
+            "GNU Pubic License 3.0",
+            "GNU Public License v3",
+            "GNU Public License version 3.0",
+            "GNU Public License, Version 3.0",
+            "GNU v3 License",
+            "Gnu General Public License, Version 3",
+            "GNU General Public License v.3",
+            "GNU General Public License v3.0",
+            "Gnu Public Licence, Version 3.0",
+            "GNU Public Licence, Version 3.0",
+            "GPL v3",
+            "gpl30",
+            "GPL 3",
+            "GPL Licence Version 3",
+            "GPL Version 3.0",
+            "GPL license, Version 3.0",
+            "GPL version 3",
+            "GPL-3",
+            "GPL3",
+            "General Public License (GPL) v 3.0",
+            "General Public License 3",
+            "General Public License, Version 3.0",
+            "General public licence, v 3",
+            "gpl_v3",
+            "GPL V3",
+            "GNU General Public License\" .SS \"Version 3"
         ],
         "__impliedComments": [
             [
@@ -1270,6 +1382,12 @@
                 "Hitachi open-license",
                 [
                     "Source code refers to the source code for generating and installing object code, the source code for executing executable object code, all of the source code needed to modify object code, and the scripts for controlling these tasks."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: GPL"
                 ]
             ],
             [
@@ -2005,6 +2123,115 @@
                     ]
                 },
                 "description": "Source code refers to the source code for generating and installing object code, the source code for executing executable object code, all of the source code needed to modify object code, and the scripts for controlling these tasks."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "GPL-3.0-or-later",
+                "shortName": "GPL-3.0+",
+                "category": "GPL",
+                "alternativeNames": [
+                    "GNU GENERAL PUBLIC LICENSE version 3 or higher",
+                    "GNU General Public License (GPL) version 3, or any later version",
+                    "GNU General Public License Version 3 or later (GPL)",
+                    "GNU General Public License v3 or later",
+                    "GNU General Public License version 3+",
+                    "GNU General Public License, Version 3.0 or any later version",
+                    "GNU General Public License; either version 3 of the License, or (at your option) any later version",
+                    "GNU LGP (GNU General Public License), V3 or later",
+                    "GNU General Public License version 3.0 or later",
+                    "GPL-3.0+",
+                    "GPL-3+",
+                    "GPL v3+",
+                    "GPL 3 or later",
+                    "GPL3+",
+                    "GPLv3 +",
+                    "gplv3+",
+                    "GPL-3.0-or-later",
+                    "GNU General Public License (v3 or later)",
+                    "GNU General Public License v3+",
+                    "GNU General Public License, v3.0 or later",
+                    "GNU General Public License, Version 3 and better",
+                    "GNU General Public License, Version 3+",
+                    "GNU GENERAL PUBLIC LICENSE Version 3 or later",
+                    "GNU General Public License as published by the Free Software Foundation; either version 3, or (at your option) any later version",
+                    "GNU General Public License as published by the Free Software Foundation, either version 3, or (at your option) any later version",
+                    "GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",
+                    "GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version",
+                    "GPL 3.0 or, Version later",
+                    "GPL 3.0 or later",
+                    "GPL-3.0-or, Version later",
+                    "GPL-3.0-or, later",
+                    "GPL 3.0 or License, Version later",
+                    "GPL 3.0 or License, later",
+                    "GPL-3.0-or License, Version later",
+                    "GPL-3.0-or License later",
+                    "GPL version 3 or later",
+                    "GPL version 3.0 or later",
+                    "GNU General Public License (GNU GPL), version 3 or later"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-3.0-(or-any-later-version).yaml",
+                "otherIds": [
+                    "scancode:gpl-3.0-plus",
+                    "osi:GPL-3.0"
+                ],
+                "canonicalName": "GNU General Public License 3.0 (or any later version)",
+                "_implications": {
+                    "__impliedNames": [
+                        "GNU General Public License 3.0 (or any later version)",
+                        "GPL-3.0+",
+                        "GPL-3.0-or-later",
+                        "scancode:gpl-3.0-plus",
+                        "osi:GPL-3.0"
+                    ],
+                    "__impliedId": "GPL-3.0-or-later",
+                    "__impliedAmbiguousNames": [
+                        "GNU GENERAL PUBLIC LICENSE version 3 or higher",
+                        "GNU General Public License (GPL) version 3, or any later version",
+                        "GNU General Public License Version 3 or later (GPL)",
+                        "GNU General Public License v3 or later",
+                        "GNU General Public License version 3+",
+                        "GNU General Public License, Version 3.0 or any later version",
+                        "GNU General Public License; either version 3 of the License, or (at your option) any later version",
+                        "GNU LGP (GNU General Public License), V3 or later",
+                        "GNU General Public License version 3.0 or later",
+                        "GPL-3.0+",
+                        "GPL-3+",
+                        "GPL v3+",
+                        "GPL 3 or later",
+                        "GPL3+",
+                        "GPLv3 +",
+                        "gplv3+",
+                        "GPL-3.0-or-later",
+                        "GNU General Public License (v3 or later)",
+                        "GNU General Public License v3+",
+                        "GNU General Public License, v3.0 or later",
+                        "GNU General Public License, Version 3 and better",
+                        "GNU General Public License, Version 3+",
+                        "GNU GENERAL PUBLIC LICENSE Version 3 or later",
+                        "GNU General Public License as published by the Free Software Foundation; either version 3, or (at your option) any later version",
+                        "GNU General Public License as published by the Free Software Foundation, either version 3, or (at your option) any later version",
+                        "GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",
+                        "GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version",
+                        "GPL 3.0 or, Version later",
+                        "GPL 3.0 or later",
+                        "GPL-3.0-or, Version later",
+                        "GPL-3.0-or, later",
+                        "GPL 3.0 or License, Version later",
+                        "GPL 3.0 or License, later",
+                        "GPL-3.0-or License, Version later",
+                        "GPL-3.0-or License later",
+                        "GPL version 3 or later",
+                        "GPL version 3.0 or later",
+                        "GNU General Public License (GNU GPL), version 3 or later"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: GPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/GPL-3.0-only.html",

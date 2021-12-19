@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `TMate License`
+
+-   `scancode:tmate`
+
 -   `TMate Open Source License for "TMate JavaSVN library"`
 
 -   `scancode://tmate`
@@ -20,6 +24,10 @@
 -   “https://svnkit.com/license.html” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: TMate” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tm]/TMate-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -143,6 +151,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tm]/TMate-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -163,19 +175,32 @@
         "__impliedNames": [
             "TMate",
             "TMate Open Source License",
+            "TMate License",
+            "scancode:tmate",
             "TMate Open Source License for \"TMate JavaSVN library\"",
             "scancode://tmate"
         ],
         "__impliedId": "TMate",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "TMate"
+            "TMate",
+            "TMate License",
+            "TMATE LICENSE",
+            "TMATE License",
+            "TMate Open Source License",
+            "http://svnkit.com/license.html"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://svnkit.com/license.html"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: TMate"
                 ]
             ]
         ],
@@ -459,6 +484,46 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/972"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "TMate",
+                "shortName": null,
+                "category": "TMate",
+                "alternativeNames": [
+                    "TMate License",
+                    "TMATE LICENSE",
+                    "TMATE License",
+                    "TMate Open Source License",
+                    "http://svnkit.com/license.html"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tm]/TMate-License.yaml",
+                "otherIds": [
+                    "scancode:tmate"
+                ],
+                "canonicalName": "TMate License",
+                "_implications": {
+                    "__impliedNames": [
+                        "TMate License",
+                        "TMate",
+                        "scancode:tmate"
+                    ],
+                    "__impliedId": "TMate",
+                    "__impliedAmbiguousNames": [
+                        "TMate License",
+                        "TMATE LICENSE",
+                        "TMATE License",
+                        "TMate Open Source License",
+                        "http://svnkit.com/license.html"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: TMate"
+                            ]
                         ]
                     ]
                 }

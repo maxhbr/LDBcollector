@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:ms-rl`
+
+-   `osi:MS-RL`
+
 -   `Microsoft Reciprocal License (MS-RL)`
 
 -   `scancode://ms-rl`
@@ -47,6 +51,10 @@
     the Contributor's name, logo or trademarks.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: MS-RL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/Microsoft-Reciprocal-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml "Scancode")
@@ -218,6 +226,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/Microsoft-Reciprocal-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -249,6 +261,8 @@
             "MS-RL",
             "Microsoft Reciprocal License",
             "ms-rl",
+            "scancode:ms-rl",
+            "osi:MS-RL",
             "Microsoft Reciprocal License (MS-RL)",
             "scancode://ms-rl"
         ],
@@ -256,7 +270,12 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Microsoft Reciprocal License",
-            "MS-RL"
+            "MS-RL",
+            "Ms-RL",
+            "MS, Version RL",
+            "MS RL",
+            "MS License, Version RL",
+            "MS License, RL"
         ],
         "__impliedComments": [
             [
@@ -269,6 +288,12 @@
                 "Hitachi open-license",
                 [
                     "The term \"duplication,\" \"derivative works\" and \"distribution\" are the same as in the U.S. Copyright Act. The term \"contribution\" refers to the original software, or any addition or modification to the original software. The term \"contributor\" refers to the person who distributes the contributions under this license. A licensed patent refers to the Contributor's patent claims readable directly from the Contribution. This license does not authorize the use of the Contributor's name, logo or trademarks."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MS-RL"
                 ]
             ],
             [
@@ -678,6 +703,52 @@
                     ]
                 },
                 "description": "The term \"duplication,\" \"derivative works\" and \"distribution\" are the same as in the U.S. Copyright Act. The term \"contribution\" refers to the original software, or any addition or modification to the original software. The term \"contributor\" refers to the person who distributes the contributions under this license. A licensed patent refers to the Contributor's patent claims readable directly from the Contribution. This license does not authorize the use of the Contributor's name, logo or trademarks."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MS-RL",
+                "shortName": null,
+                "category": "MS-RL",
+                "alternativeNames": [
+                    "MS-RL",
+                    "Microsoft Reciprocal License",
+                    "Ms-RL",
+                    "MS, Version RL",
+                    "MS RL",
+                    "MS License, Version RL",
+                    "MS License, RL"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/Microsoft-Reciprocal-License.yaml",
+                "otherIds": [
+                    "scancode:ms-rl",
+                    "osi:MS-RL"
+                ],
+                "canonicalName": "Microsoft Reciprocal License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Microsoft Reciprocal License",
+                        "MS-RL",
+                        "scancode:ms-rl",
+                        "osi:MS-RL"
+                    ],
+                    "__impliedId": "MS-RL",
+                    "__impliedAmbiguousNames": [
+                        "MS-RL",
+                        "Microsoft Reciprocal License",
+                        "Ms-RL",
+                        "MS, Version RL",
+                        "MS RL",
+                        "MS License, Version RL",
+                        "MS License, RL"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MS-RL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/MS-RL.html",

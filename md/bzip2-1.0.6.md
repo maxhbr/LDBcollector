@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `bzip2 License 1.0.6`
+
+-   `scancode:bzip2-libbzip-2010`
+
+-   `scancode:bzip2-libbzip-1.0.5`
+
 -   `The bzip2 license`
 
 -   `scancode://bzip2-libbzip-2010`
@@ -17,6 +23,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: bzip2” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bz]/bzip2-License-1.0.6.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “until bzip2 1.0.6 there is only one license and not two as listed
     in SPDX. Therefore we only track one such license.” (source:
@@ -148,6 +158,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bz]/bzip2-License-1.0.6.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -168,12 +182,26 @@
         "__impliedNames": [
             "bzip2-1.0.6",
             "bzip2 and libbzip2 License v1.0.6",
+            "bzip2 License 1.0.6",
+            "scancode:bzip2-libbzip-2010",
+            "scancode:bzip2-libbzip-1.0.5",
             "The bzip2 license",
             "scancode://bzip2-libbzip-2010",
             "bzip2 License 2010"
         ],
         "__impliedId": "bzip2-1.0.6",
+        "__impliedAmbiguousNames": [
+            "bzip2-1.0.6",
+            "bzip2 and libbzip2 License v1.0.6",
+            "libzip2 version 1.0.6"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: bzip2"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -418,6 +446,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/381"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "bzip2-1.0.6",
+                "shortName": null,
+                "category": "bzip2",
+                "alternativeNames": [
+                    "bzip2-1.0.6",
+                    "bzip2 and libbzip2 License v1.0.6",
+                    "libzip2 version 1.0.6"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bz]/bzip2-License-1.0.6.yaml",
+                "otherIds": [
+                    "scancode:bzip2-libbzip-2010",
+                    "scancode:bzip2-libbzip-1.0.5"
+                ],
+                "canonicalName": "bzip2 License 1.0.6",
+                "_implications": {
+                    "__impliedNames": [
+                        "bzip2 License 1.0.6",
+                        "bzip2-1.0.6",
+                        "scancode:bzip2-libbzip-2010",
+                        "scancode:bzip2-libbzip-1.0.5"
+                    ],
+                    "__impliedId": "bzip2-1.0.6",
+                    "__impliedAmbiguousNames": [
+                        "bzip2-1.0.6",
+                        "bzip2 and libbzip2 License v1.0.6",
+                        "libzip2 version 1.0.6"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: bzip2"
+                            ]
                         ]
                     ]
                 }

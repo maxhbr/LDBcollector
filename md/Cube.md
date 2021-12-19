@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:cube`
+
 -   `scancode://cube`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Cube” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/Cube-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -72,6 +78,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/Cube-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Cube.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -84,12 +94,22 @@
         "__impliedNames": [
             "Cube",
             "Cube License",
+            "scancode:cube",
             "scancode://cube"
         ],
         "__impliedId": "Cube",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Cube"
+            "Cube",
+            "Cube License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Cube"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -193,6 +213,38 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Cube"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Cube",
+                "shortName": null,
+                "category": "Cube",
+                "alternativeNames": [
+                    "Cube License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/Cube-License.yaml",
+                "otherIds": [
+                    "scancode:cube"
+                ],
+                "canonicalName": "Cube License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Cube License",
+                        "Cube",
+                        "scancode:cube"
+                    ],
+                    "__impliedId": "Cube",
+                    "__impliedAmbiguousNames": [
+                        "Cube License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Cube"
+                            ]
                         ]
                     ]
                 }

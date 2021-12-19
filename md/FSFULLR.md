@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `FSF Unlimited License (with retention)`
+
+-   `scancode:fsf-unlimited`
+
 -   `scancode://fsf-unlimited`
 
 -   `FSF-Unlimited`
@@ -20,6 +24,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: FSF Unlimited” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fs]/FSF-Unlimited-License-(with-retention).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -52,6 +60,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fs]/FSF-Unlimited-License-(with-retention).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/FSFULLR.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -64,13 +76,24 @@
         "__impliedNames": [
             "FSFULLR",
             "FSF Unlimited License (with License Retention)",
+            "FSF Unlimited License (with retention)",
+            "scancode:fsf-unlimited",
             "scancode://fsf-unlimited",
             "FSF-Unlimited"
         ],
         "__impliedId": "FSFULLR",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "FSFULLR"
+            "FSFULLR",
+            "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: FSF Unlimited"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -174,6 +197,38 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "FSFULLR",
+                "shortName": null,
+                "category": "FSF Unlimited",
+                "alternativeNames": [
+                    "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fs]/FSF-Unlimited-License-(with-retention).yaml",
+                "otherIds": [
+                    "scancode:fsf-unlimited"
+                ],
+                "canonicalName": "FSF Unlimited License (with retention)",
+                "_implications": {
+                    "__impliedNames": [
+                        "FSF Unlimited License (with retention)",
+                        "FSFULLR",
+                        "scancode:fsf-unlimited"
+                    ],
+                    "__impliedId": "FSFULLR",
+                    "__impliedAmbiguousNames": [
+                        "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: FSF Unlimited"
+                            ]
                         ]
                     ]
                 }

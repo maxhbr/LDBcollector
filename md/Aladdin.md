@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Aladdin Free Public License 8.0`
+
+-   `scancode:afpl-8.0`
+
 -   `scancode://afpl-8.0`
 
 -   `Aladdin FPL v8`
@@ -17,6 +21,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Aladdin Free Public License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[al]/Aladdin-Free-Public-License-8.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 18 Nov 1999” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afpl-8.0.yml "Scancode")
@@ -257,6 +265,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[al]/Aladdin-Free-Public-License-8.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Aladdin.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -269,11 +281,24 @@
         "__impliedNames": [
             "Aladdin",
             "Aladdin Free Public License",
+            "Aladdin Free Public License 8.0",
+            "scancode:afpl-8.0",
             "scancode://afpl-8.0",
             "Aladdin FPL v8"
         ],
         "__impliedId": "Aladdin",
+        "__impliedAmbiguousNames": [
+            "Aladdin License",
+            "ALADDIN LICENSE",
+            "ALADDIN License"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Aladdin Free Public License"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -385,6 +410,42 @@
                         [
                             "Homepage",
                             "http://pages.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Aladdin",
+                "shortName": null,
+                "category": "Aladdin Free Public License",
+                "alternativeNames": [
+                    "Aladdin License",
+                    "ALADDIN LICENSE",
+                    "ALADDIN License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[al]/Aladdin-Free-Public-License-8.0.yaml",
+                "otherIds": [
+                    "scancode:afpl-8.0"
+                ],
+                "canonicalName": "Aladdin Free Public License 8.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Aladdin Free Public License 8.0",
+                        "Aladdin",
+                        "scancode:afpl-8.0"
+                    ],
+                    "__impliedId": "Aladdin",
+                    "__impliedAmbiguousNames": [
+                        "Aladdin License",
+                        "ALADDIN LICENSE",
+                        "ALADDIN License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Aladdin Free Public License"
+                            ]
                         ]
                     ]
                 }

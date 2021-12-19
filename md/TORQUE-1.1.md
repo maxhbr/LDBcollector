@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `TORQUE License 1.1`
+
+-   `scancode:torque-1.1`
+
 -   `scancode://torque-1.1`
 
 -   `TORQUE 1.1`
@@ -16,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: TORQUE” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[to]/TORQUE-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE
     upstream drafted a new license with updated contact information. The
@@ -81,6 +89,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[to]/TORQUE-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/TORQUE-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -93,15 +105,28 @@
         "__impliedNames": [
             "TORQUE-1.1",
             "TORQUE v2.5+ Software License v1.1",
+            "TORQUE License 1.1",
+            "scancode:torque-1.1",
             "scancode://torque-1.1",
             "TORQUE 1.1"
         ],
         "__impliedId": "TORQUE-1.1",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "TORQUEv1.1"
+            "TORQUEv1.1",
+            "TORQUE, Version 1.1",
+            "TORQUE 1.1",
+            "TORQUE License, Version 1.1",
+            "TORQUE License, 1.1",
+            "TORQUE v2.5+ Software License v1.1"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: TORQUE"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -219,6 +244,46 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/TORQUEv1.1"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "TORQUE-1.1",
+                "shortName": null,
+                "category": "TORQUE",
+                "alternativeNames": [
+                    "TORQUE, Version 1.1",
+                    "TORQUE 1.1",
+                    "TORQUE License, Version 1.1",
+                    "TORQUE License, 1.1",
+                    "TORQUE v2.5+ Software License v1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[to]/TORQUE-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:torque-1.1"
+                ],
+                "canonicalName": "TORQUE License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "TORQUE License 1.1",
+                        "TORQUE-1.1",
+                        "scancode:torque-1.1"
+                    ],
+                    "__impliedId": "TORQUE-1.1",
+                    "__impliedAmbiguousNames": [
+                        "TORQUE, Version 1.1",
+                        "TORQUE 1.1",
+                        "TORQUE License, Version 1.1",
+                        "TORQUE License, 1.1",
+                        "TORQUE v2.5+ Software License v1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: TORQUE"
+                            ]
                         ]
                     ]
                 }

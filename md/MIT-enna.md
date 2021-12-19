@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `MIT License (with enna advertising)`
+
+-   `scancode:enna`
+
 -   `scancode://enna`
 
 ## Comments on (easy) usability
@@ -18,6 +22,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: MIT” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(with-enna-advertising).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -76,6 +84,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(with-enna-advertising).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/MIT-enna.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -88,12 +100,26 @@
         "__impliedNames": [
             "MIT-enna",
             "enna License",
+            "MIT License (with enna advertising)",
+            "scancode:enna",
             "scancode://enna"
         ],
         "__impliedId": "MIT-enna",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT"
+            "MIT",
+            "MIT enna",
+            "MIT ENNA",
+            "MIT-enna",
+            "MIT-ENNA"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MIT"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -216,6 +242,44 @@
                 },
                 "licensename": "MIT-enna",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MIT-enna",
+                "shortName": null,
+                "category": "MIT",
+                "alternativeNames": [
+                    "MIT enna",
+                    "MIT ENNA",
+                    "MIT-enna",
+                    "MIT-ENNA"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(with-enna-advertising).yaml",
+                "otherIds": [
+                    "scancode:enna"
+                ],
+                "canonicalName": "MIT License (with enna advertising)",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT License (with enna advertising)",
+                        "MIT-enna",
+                        "scancode:enna"
+                    ],
+                    "__impliedId": "MIT-enna",
+                    "__impliedAmbiguousNames": [
+                        "MIT enna",
+                        "MIT ENNA",
+                        "MIT-enna",
+                        "MIT-ENNA"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MIT"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

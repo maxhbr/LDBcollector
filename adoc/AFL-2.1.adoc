@@ -12,6 +12,8 @@
 
 *Other Names:*
 
+* `Academic Free License 2.1`
+* `scancode:afl-2.1`
 * `Academic Free License Version 2.1`
 * `scancode://afl-2.1`
 * `AFL 2.1`
@@ -44,6 +46,9 @@ direct and manage the corporation; (2) has more than 50% of the
 outstanding shares or beneficial ownership of the corporation'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: AFL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-2.1.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this license was OSI certified.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml[Scancode]
 (CC0-1.0))
@@ -237,6 +242,8 @@ license-compatibility-checker]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-2.1.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.1.txt[OSADL
 License Checklist] (NOASSERTION)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
@@ -253,16 +260,34 @@ repository] is generated)
     "__impliedNames": [
         "AFL-2.1",
         "Academic Free License v2.1",
+        "Academic Free License 2.1",
+        "scancode:afl-2.1",
         "Academic Free License Version 2.1",
         "scancode://afl-2.1",
         "AFL 2.1"
     ],
     "__impliedId": "AFL-2.1",
+    "__impliedAmbiguousNames": [
+        "AFL, Version 2.1",
+        "AFL, 2.1",
+        "AFL-2.1",
+        "Academic Free License version 2.1",
+        "Academic Free License v2.1",
+        "Academic Free License Version 2.1",
+        "ACADEMIC FREE LICENSE Version 2.1",
+        "Academic Free License v. 2.1"
+    ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "Source Code means the documentation that describes the appropriate format for making modifications to the Software and how to modify it. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: AFL"
             ]
         ],
         [
@@ -642,6 +667,52 @@ repository] is generated)
                 ]
             },
             "description": "Source Code means the documentation that describes the appropriate format for making modifications to the Software and how to modify it. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "AFL-2.1",
+            "shortName": null,
+            "category": "AFL",
+            "alternativeNames": [
+                "AFL, Version 2.1",
+                "AFL, 2.1",
+                "AFL-2.1",
+                "Academic Free License version 2.1",
+                "Academic Free License v2.1",
+                "Academic Free License Version 2.1",
+                "ACADEMIC FREE LICENSE Version 2.1",
+                "Academic Free License v. 2.1"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-2.1.yaml",
+            "otherIds": [
+                "scancode:afl-2.1"
+            ],
+            "canonicalName": "Academic Free License 2.1",
+            "_implications": {
+                "__impliedNames": [
+                    "Academic Free License 2.1",
+                    "AFL-2.1",
+                    "scancode:afl-2.1"
+                ],
+                "__impliedId": "AFL-2.1",
+                "__impliedAmbiguousNames": [
+                    "AFL, Version 2.1",
+                    "AFL, 2.1",
+                    "AFL-2.1",
+                    "Academic Free License version 2.1",
+                    "Academic Free License v2.1",
+                    "Academic Free License Version 2.1",
+                    "ACADEMIC FREE LICENSE Version 2.1",
+                    "Academic Free License v. 2.1"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: AFL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:artistic-perl-1.0`
+
 -   `scancode://artistic-perl-1.0`
 
 -   `Artistic-Perl-1.0`
@@ -27,6 +29,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Artistic License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ar]/Artistic-License-1.0-(Perl).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this is the Artistic License 1.0 found on the Perl
     site, which is different (particularly, clauses 5, 6, 7 and 8) than
@@ -231,6 +237,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ar]/Artistic-License-1.0-(Perl).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Artistic-1.0-Perl.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -250,14 +260,31 @@
         "__impliedNames": [
             "Artistic-1.0-Perl",
             "Artistic License 1.0 (Perl)",
+            "scancode:artistic-perl-1.0",
             "scancode://artistic-perl-1.0",
             "Artistic-Perl-1.0"
         ],
         "__impliedId": "Artistic-1.0-Perl",
         "__impliedAmbiguousNames": [
-            "Artistic License"
+            "Artistic License",
+            "Artistic Perl License",
+            "Artistic License 1.0 (Perl)",
+            "Artistic 1.0, Version Perl",
+            "Artistic 1.0, Perl",
+            "Artistic-1.0, Version Perl",
+            "Artistic-1.0 Perl",
+            "Artistic 1.0 License, Version Perl",
+            "Artistic 1.0 License Perl",
+            "Artistic-1.0 License, Version Perl",
+            "Artistic-1.0 License, Perl"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Artistic License"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -408,6 +435,56 @@
                 },
                 "Comment": "Do note that the Artistic License is considered non-free by the FSF. They suggest to use the Clarified Artistic License (also called Artistic License 2.0) instead. However, the original Artistic License is still considered DFSG-free.",
                 "LicenseId": "Artistic-1.0-Perl"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Artistic-1.0-Perl",
+                "shortName": null,
+                "category": "Artistic License",
+                "alternativeNames": [
+                    "Artistic Perl License",
+                    "Artistic License 1.0 (Perl)",
+                    "Artistic 1.0, Version Perl",
+                    "Artistic 1.0, Perl",
+                    "Artistic-1.0, Version Perl",
+                    "Artistic-1.0 Perl",
+                    "Artistic 1.0 License, Version Perl",
+                    "Artistic 1.0 License Perl",
+                    "Artistic-1.0 License, Version Perl",
+                    "Artistic-1.0 License, Perl"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ar]/Artistic-License-1.0-(Perl).yaml",
+                "otherIds": [
+                    "scancode:artistic-perl-1.0"
+                ],
+                "canonicalName": "Artistic License 1.0 (Perl)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Artistic License 1.0 (Perl)",
+                        "Artistic-1.0-Perl",
+                        "scancode:artistic-perl-1.0"
+                    ],
+                    "__impliedId": "Artistic-1.0-Perl",
+                    "__impliedAmbiguousNames": [
+                        "Artistic Perl License",
+                        "Artistic License 1.0 (Perl)",
+                        "Artistic 1.0, Version Perl",
+                        "Artistic 1.0, Perl",
+                        "Artistic-1.0, Version Perl",
+                        "Artistic-1.0 Perl",
+                        "Artistic 1.0 License, Version Perl",
+                        "Artistic 1.0 License Perl",
+                        "Artistic-1.0 License, Version Perl",
+                        "Artistic-1.0 License, Perl"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Artistic License"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

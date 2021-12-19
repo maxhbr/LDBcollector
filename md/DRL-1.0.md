@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:drl-1.0`
+
 -   `scancode://drl-1.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Detection Rule” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[de]/Detection-Rule-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -57,6 +63,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[de]/Detection-Rule-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/DRL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -69,9 +79,18 @@
         "__impliedNames": [
             "DRL-1.0",
             "Detection Rule License 1.0",
+            "scancode:drl-1.0",
             "scancode://drl-1.0"
         ],
         "__impliedId": "DRL-1.0",
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Detection Rule"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -151,6 +170,34 @@
                         [
                             null,
                             "https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "DRL-1.0",
+                "shortName": null,
+                "category": "Detection Rule",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[de]/Detection-Rule-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:drl-1.0"
+                ],
+                "canonicalName": "Detection Rule License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Detection Rule License 1.0",
+                        "DRL-1.0",
+                        "scancode:drl-1.0"
+                    ],
+                    "__impliedId": "DRL-1.0",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Detection Rule"
+                            ]
                         ]
                     ]
                 }

@@ -2,12 +2,22 @@
     "__impliedNames": [
         "AML",
         "Apple MIT License",
+        "scancode:aml",
         "scancode://aml"
     ],
     "__impliedId": "AML",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "AML"
+        "AML",
+        "Apple MIT License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: AML"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +121,38 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Apple_MIT_License"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "AML",
+            "shortName": null,
+            "category": "AML",
+            "alternativeNames": [
+                "Apple MIT License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-MIT-License.yaml",
+            "otherIds": [
+                "scancode:aml"
+            ],
+            "canonicalName": "Apple MIT License",
+            "_implications": {
+                "__impliedNames": [
+                    "Apple MIT License",
+                    "AML",
+                    "scancode:aml"
+                ],
+                "__impliedId": "AML",
+                "__impliedAmbiguousNames": [
+                    "Apple MIT License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: AML"
+                        ]
                     ]
                 ]
             }

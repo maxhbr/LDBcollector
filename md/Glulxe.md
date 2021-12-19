@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:glulxe`
+
 -   `scancode://glulxe`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Glulxe” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/Glulxe-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -41,6 +47,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/Glulxe-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Glulxe.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -53,12 +63,24 @@
         "__impliedNames": [
             "Glulxe",
             "Glulxe License",
+            "scancode:glulxe",
             "scancode://glulxe"
         ],
         "__impliedId": "Glulxe",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Glulxe"
+            "Glulxe",
+            "Glulxe License",
+            "GLULXE LICENSE",
+            "GLULXE License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Glulxe"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -162,6 +184,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Glulxe"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Glulxe",
+                "shortName": null,
+                "category": "Glulxe",
+                "alternativeNames": [
+                    "Glulxe License",
+                    "GLULXE LICENSE",
+                    "GLULXE License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gl]/Glulxe-License.yaml",
+                "otherIds": [
+                    "scancode:glulxe"
+                ],
+                "canonicalName": "Glulxe License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Glulxe License",
+                        "Glulxe",
+                        "scancode:glulxe"
+                    ],
+                    "__impliedId": "Glulxe",
+                    "__impliedAmbiguousNames": [
+                        "Glulxe License",
+                        "GLULXE LICENSE",
+                        "GLULXE License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Glulxe"
+                            ]
                         ]
                     ]
                 }

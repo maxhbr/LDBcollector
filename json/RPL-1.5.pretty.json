@@ -2,19 +2,29 @@
     "__impliedNames": [
         "RPL-1.5",
         "Reciprocal Public License 1.5",
+        "scancode:rpl-1.5",
+        "osi:RPL-1.5",
         "Reciprocal Public License, Version 1.5",
         "scancode://rpl-1.5",
         "RPL 1.5"
     ],
     "__impliedId": "RPL-1.5",
     "__impliedAmbiguousNames": [
-        "Reciprocal Public License"
+        "Reciprocal Public License",
+        "Reciprocal Public License 1.5",
+        "RPL-1.5"
     ],
     "__impliedComments": [
         [
             "BlueOak License List",
             [
                 "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: RPL"
             ]
         ],
         [
@@ -229,6 +239,42 @@
             "_implications": {
                 "__impliedNames": [
                     "RPL-1.5"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "RPL-1.5",
+            "shortName": null,
+            "category": "RPL",
+            "alternativeNames": [
+                "Reciprocal Public License 1.5",
+                "RPL-1.5"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[re]/Reciprocal-Public-License-1.5.yaml",
+            "otherIds": [
+                "scancode:rpl-1.5",
+                "osi:RPL-1.5"
+            ],
+            "canonicalName": "Reciprocal Public License 1.5",
+            "_implications": {
+                "__impliedNames": [
+                    "Reciprocal Public License 1.5",
+                    "RPL-1.5",
+                    "scancode:rpl-1.5",
+                    "osi:RPL-1.5"
+                ],
+                "__impliedId": "RPL-1.5",
+                "__impliedAmbiguousNames": [
+                    "Reciprocal Public License 1.5",
+                    "RPL-1.5"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: RPL"
+                        ]
+                    ]
                 ]
             }
         },

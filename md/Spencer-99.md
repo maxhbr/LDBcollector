@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:henry-spencer-1999`
+
 -   `scancode://henry-spencer-1999`
 
 -   `Henry Spencer License 1999`
@@ -15,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Spencer” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-99.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -63,6 +69,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-99.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Spencer-99.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -75,10 +85,25 @@
         "__impliedNames": [
             "Spencer-99",
             "Spencer License 99",
+            "scancode:henry-spencer-1999",
             "scancode://henry-spencer-1999",
             "Henry Spencer License 1999"
         ],
         "__impliedId": "Spencer-99",
+        "__impliedAmbiguousNames": [
+            "Spencer, Version 99",
+            "Spencer 99",
+            "Spencer License, Version 99",
+            "Spencer License, 99"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Spencer"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -152,6 +177,44 @@
                         [
                             "Homepage",
                             "http://www.opensource.apple.com/source/tcl/tcl-5/tcl/generic/regfronts.c"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Spencer-99",
+                "shortName": null,
+                "category": "Spencer",
+                "alternativeNames": [
+                    "Spencer, Version 99",
+                    "Spencer 99",
+                    "Spencer License, Version 99",
+                    "Spencer License, 99"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-99.yaml",
+                "otherIds": [
+                    "scancode:henry-spencer-1999"
+                ],
+                "canonicalName": "Spencer License 99",
+                "_implications": {
+                    "__impliedNames": [
+                        "Spencer License 99",
+                        "Spencer-99",
+                        "scancode:henry-spencer-1999"
+                    ],
+                    "__impliedId": "Spencer-99",
+                    "__impliedAmbiguousNames": [
+                        "Spencer, Version 99",
+                        "Spencer 99",
+                        "Spencer License, Version 99",
+                        "Spencer License, 99"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Spencer"
+                            ]
                         ]
                     ]
                 }

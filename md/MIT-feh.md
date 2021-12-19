@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `MIT License (feh advertising)`
+
+-   `scancode:mit-ack`
+
 -   `scancode://mit-ack`
 
 -   `MIT Acknowledgment License`
@@ -20,6 +24,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: MIT” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(feh-advertising).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -72,6 +80,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(feh-advertising).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/MIT-feh.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -84,13 +96,27 @@
         "__impliedNames": [
             "MIT-feh",
             "feh License",
+            "MIT License (feh advertising)",
+            "scancode:mit-ack",
             "scancode://mit-ack",
             "MIT Acknowledgment License"
         ],
         "__impliedId": "MIT-feh",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT"
+            "MIT",
+            "MIT feh",
+            "MIT FEH",
+            "MIT-feh",
+            "MIT-FEH"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MIT"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -219,6 +245,44 @@
                 },
                 "licensename": "MIT-feh",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MIT-feh",
+                "shortName": null,
+                "category": "MIT",
+                "alternativeNames": [
+                    "MIT feh",
+                    "MIT FEH",
+                    "MIT-feh",
+                    "MIT-FEH"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(feh-advertising).yaml",
+                "otherIds": [
+                    "scancode:mit-ack"
+                ],
+                "canonicalName": "MIT License (feh advertising)",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT License (feh advertising)",
+                        "MIT-feh",
+                        "scancode:mit-ack"
+                    ],
+                    "__impliedId": "MIT-feh",
+                    "__impliedAmbiguousNames": [
+                        "MIT feh",
+                        "MIT FEH",
+                        "MIT-feh",
+                        "MIT-FEH"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MIT"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

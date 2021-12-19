@@ -1,12 +1,28 @@
 {
     "__impliedNames": [
         "CECILL-1.1",
+        "CeCILL Free Software License Agreement 1.1",
+        "scancode:cecill-1.1",
         "CeCILL Free Software License Agreement v1.1",
         "scancode://cecill-1.1",
         "CeCILL 1.1 English"
     ],
     "__impliedId": "CECILL-1.1",
+    "__impliedAmbiguousNames": [
+        "CeCILL Free Software License Agreement v1.1",
+        "CECILL-1.1",
+        "FREE SOFTWARE LICENSING AGREEMENT CeCILL Notice",
+        "https://spdx.org/licenses/cecill-1.1",
+        "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt",
+        "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CECILL-1.1"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -120,6 +136,48 @@
             },
             "licensename": "CECILL-1.1",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CECILL-1.1",
+            "shortName": null,
+            "category": "CECILL-1.1",
+            "alternativeNames": [
+                "CeCILL Free Software License Agreement v1.1",
+                "CECILL-1.1",
+                "FREE SOFTWARE LICENSING AGREEMENT CeCILL Notice",
+                "https://spdx.org/licenses/cecill-1.1",
+                "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt",
+                "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-Free-Software-License-Agreement-1.1.yaml",
+            "otherIds": [
+                "scancode:cecill-1.1"
+            ],
+            "canonicalName": "CeCILL Free Software License Agreement 1.1",
+            "_implications": {
+                "__impliedNames": [
+                    "CeCILL Free Software License Agreement 1.1",
+                    "CECILL-1.1",
+                    "scancode:cecill-1.1"
+                ],
+                "__impliedId": "CECILL-1.1",
+                "__impliedAmbiguousNames": [
+                    "CeCILL Free Software License Agreement v1.1",
+                    "CECILL-1.1",
+                    "FREE SOFTWARE LICENSING AGREEMENT CeCILL Notice",
+                    "https://spdx.org/licenses/cecill-1.1",
+                    "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt",
+                    "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CECILL-1.1"
+                        ]
+                    ]
+                ]
+            }
         }
     },
     "__impliedCopyleft": [

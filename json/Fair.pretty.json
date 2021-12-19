@@ -2,15 +2,29 @@
     "__impliedNames": [
         "Fair",
         "Fair License",
+        "scancode:fair",
+        "osi:Fair",
         "Fair License (Fair)",
         "scancode://fair"
     ],
     "__impliedId": "Fair",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Fair"
+        "Fair",
+        "Fair License",
+        "FAIR LICENSE",
+        "FAIR License",
+        "http://opensource.org/licenses/fair.php",
+        "http://www.opensource.org/licenses/fair.php",
+        "https://spdx.org/licenses/fair"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Fair"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -211,6 +225,50 @@
             "_implications": {
                 "__impliedNames": [
                     "Fair"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Fair",
+            "shortName": null,
+            "category": "Fair",
+            "alternativeNames": [
+                "Fair License",
+                "FAIR LICENSE",
+                "FAIR License",
+                "http://opensource.org/licenses/fair.php",
+                "http://www.opensource.org/licenses/fair.php",
+                "https://spdx.org/licenses/fair"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fa]/Fair-License.yaml",
+            "otherIds": [
+                "scancode:fair",
+                "osi:Fair"
+            ],
+            "canonicalName": "Fair License",
+            "_implications": {
+                "__impliedNames": [
+                    "Fair License",
+                    "Fair",
+                    "scancode:fair",
+                    "osi:Fair"
+                ],
+                "__impliedId": "Fair",
+                "__impliedAmbiguousNames": [
+                    "Fair License",
+                    "FAIR LICENSE",
+                    "FAIR License",
+                    "http://opensource.org/licenses/fair.php",
+                    "http://www.opensource.org/licenses/fair.php",
+                    "https://spdx.org/licenses/fair"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Fair"
+                        ]
+                    ]
                 ]
             }
         },

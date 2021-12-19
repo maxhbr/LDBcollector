@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:allegro-4`
+
 -   `scancode://allegro-4`
 
 -   `Allegro 4 License`
@@ -20,6 +22,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Giftware” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gi]/Giftware-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license may also be known as Allegro 4. The
     Allegro 5 license shown at the alleg.sourceforge.net URL is the same
@@ -65,6 +71,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gi]/Giftware-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Giftware.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -77,15 +87,24 @@
         "__impliedNames": [
             "Giftware",
             "Giftware License",
+            "scancode:allegro-4",
             "scancode://allegro-4",
             "Allegro 4 License"
         ],
         "__impliedId": "Giftware",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Giftware"
+            "Giftware",
+            "GIFTWARE",
+            "Allegro 4"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Giftware"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -209,6 +228,42 @@
                         [
                             null,
                             "http://liballeg.org/license.html#allegro-4-the-giftware-license"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Giftware",
+                "shortName": null,
+                "category": "Giftware",
+                "alternativeNames": [
+                    "Giftware",
+                    "GIFTWARE",
+                    "Allegro 4"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gi]/Giftware-License.yaml",
+                "otherIds": [
+                    "scancode:allegro-4"
+                ],
+                "canonicalName": "Giftware License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Giftware License",
+                        "Giftware",
+                        "scancode:allegro-4"
+                    ],
+                    "__impliedId": "Giftware",
+                    "__impliedAmbiguousNames": [
+                        "Giftware",
+                        "GIFTWARE",
+                        "Allegro 4"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Giftware"
+                            ]
                         ]
                     ]
                 }

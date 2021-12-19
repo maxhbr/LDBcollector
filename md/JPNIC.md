@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `JPNIC License`
+
+-   `scancode:jpnic-idnkit`
+
 -   `scancode://jpnic-idnkit`
 
 -   `JPNIC idnkit License`
@@ -11,6 +15,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: JPNIC” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[j]/[jp]/JPNIC-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -71,6 +79,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[j]/[jp]/JPNIC-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/JPNIC.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -82,11 +94,25 @@
     {
         "__impliedNames": [
             "JPNIC",
+            "JPNIC License",
+            "scancode:jpnic-idnkit",
             "Japan Network Information Center License",
             "scancode://jpnic-idnkit",
             "JPNIC idnkit License"
         ],
         "__impliedId": "JPNIC",
+        "__impliedAmbiguousNames": [
+            "Japan Network Information Center Terms",
+            "Japan Network Information Center License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: JPNIC"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -171,6 +197,40 @@
                         [
                             null,
                             "https://jprs.co.jp/idn/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "JPNIC",
+                "shortName": null,
+                "category": "JPNIC",
+                "alternativeNames": [
+                    "Japan Network Information Center Terms",
+                    "Japan Network Information Center License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[j]/[jp]/JPNIC-License.yaml",
+                "otherIds": [
+                    "scancode:jpnic-idnkit"
+                ],
+                "canonicalName": "JPNIC License",
+                "_implications": {
+                    "__impliedNames": [
+                        "JPNIC License",
+                        "JPNIC",
+                        "scancode:jpnic-idnkit"
+                    ],
+                    "__impliedId": "JPNIC",
+                    "__impliedAmbiguousNames": [
+                        "Japan Network Information Center Terms",
+                        "Japan Network Information Center License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: JPNIC"
+                            ]
                         ]
                     ]
                 }

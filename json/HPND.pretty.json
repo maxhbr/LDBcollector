@@ -2,14 +2,25 @@
     "__impliedNames": [
         "HPND",
         "Historical Permission Notice and Disclaimer",
+        "scancode:historical",
+        "osi:HPND",
         "scancode://historical"
     ],
     "__impliedId": "HPND",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "MIT"
+        "MIT",
+        "Historic Permission Notice and Disclaimer",
+        "http://www.opensource.org/licenses/historical.php",
+        "https://spdx.org/licenses/hpnd"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Historical Permission Notice and Disclaimer"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -205,6 +216,44 @@
             "_implications": {
                 "__impliedNames": [
                     "HPND"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "HPND",
+            "shortName": null,
+            "category": "Historical Permission Notice and Disclaimer",
+            "alternativeNames": [
+                "Historic Permission Notice and Disclaimer",
+                "http://www.opensource.org/licenses/historical.php",
+                "https://spdx.org/licenses/hpnd"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[hi]/Historical-Permission-Notice-and-Disclaimer.yaml",
+            "otherIds": [
+                "scancode:historical",
+                "osi:HPND"
+            ],
+            "canonicalName": "Historical Permission Notice and Disclaimer",
+            "_implications": {
+                "__impliedNames": [
+                    "Historical Permission Notice and Disclaimer",
+                    "HPND",
+                    "scancode:historical",
+                    "osi:HPND"
+                ],
+                "__impliedId": "HPND",
+                "__impliedAmbiguousNames": [
+                    "Historic Permission Notice and Disclaimer",
+                    "http://www.opensource.org/licenses/historical.php",
+                    "https://spdx.org/licenses/hpnd"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Historical Permission Notice and Disclaimer"
+                        ]
+                    ]
                 ]
             }
         },

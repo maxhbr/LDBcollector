@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `scancode:network-time-protocol`
+
+-   `scancode:ntpl`
+
+-   `osi:NTP`
+
 -   `NTP License (NTP)`
 
 -   `scancode://mit-old-style-no-advert`
@@ -23,6 +29,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: NTP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nt]/NTP-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-old-style-no-advert.yml "Scancode")
@@ -82,6 +92,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nt]/NTP-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -111,13 +125,25 @@
         "__impliedNames": [
             "NTP",
             "NTP License",
+            "scancode:network-time-protocol",
+            "scancode:ntpl",
+            "osi:NTP",
             "NTP License (NTP)",
             "scancode://mit-old-style-no-advert",
             "MIT Old Style no advertising",
             "scancode://ntpl"
         ],
         "__impliedId": "NTP",
+        "__impliedAmbiguousNames": [
+            "NTP License"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NTP"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -279,6 +305,42 @@
                 "_implications": {
                     "__impliedNames": [
                         "NTP"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NTP",
+                "shortName": null,
+                "category": "NTP",
+                "alternativeNames": [
+                    "NTP License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nt]/NTP-License.yaml",
+                "otherIds": [
+                    "scancode:network-time-protocol",
+                    "scancode:ntpl",
+                    "osi:NTP"
+                ],
+                "canonicalName": "NTP License",
+                "_implications": {
+                    "__impliedNames": [
+                        "NTP License",
+                        "NTP",
+                        "scancode:network-time-protocol",
+                        "scancode:ntpl",
+                        "osi:NTP"
+                    ],
+                    "__impliedId": "NTP",
+                    "__impliedAmbiguousNames": [
+                        "NTP License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NTP"
+                            ]
+                        ]
                     ]
                 }
             },

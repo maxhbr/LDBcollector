@@ -11,9 +11,10 @@
 
 *Other Names:*
 
+* `PHP License 3.01`
+* `scancode:php-3.01`
 * `PHP License, version 3.01`
 * `scancode://php-3.01`
-* `PHP License 3.01`
 
 === Comments on (easy) usability
 
@@ -26,6 +27,9 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === General Comments
 
+* ``category: PHP'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.01.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, the PHP License v3.01 is essentially the same as v3.0,
 with the exceoption of a couple word differences and updated url in
 section 6. v3.01 came into use with PHP version 4 and onward. ''
@@ -191,6 +195,8 @@ PHP includes the Zend Engine, freely available at
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.01.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/Hitachi/open-license[Hitachi open-license]
@@ -207,12 +213,26 @@ repository] is generated)
     "__impliedNames": [
         "PHP-3.01",
         "PHP License v3.01",
+        "PHP License 3.01",
+        "scancode:php-3.01",
         "PHP License, version 3.01",
-        "scancode://php-3.01",
-        "PHP License 3.01"
+        "scancode://php-3.01"
     ],
     "__impliedId": "PHP-3.01",
+    "__impliedAmbiguousNames": [
+        "PHP, Version 3.01",
+        "PHP, 3.01",
+        "PHP License, Version 3.01",
+        "PHP License 3.01",
+        "PHP License, version 3.01"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: PHP"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -465,6 +485,46 @@ repository] is generated)
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/812"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "PHP-3.01",
+            "shortName": null,
+            "category": "PHP",
+            "alternativeNames": [
+                "PHP, Version 3.01",
+                "PHP, 3.01",
+                "PHP License, Version 3.01",
+                "PHP License 3.01",
+                "PHP License, version 3.01"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.01.yaml",
+            "otherIds": [
+                "scancode:php-3.01"
+            ],
+            "canonicalName": "PHP License 3.01",
+            "_implications": {
+                "__impliedNames": [
+                    "PHP License 3.01",
+                    "PHP-3.01",
+                    "scancode:php-3.01"
+                ],
+                "__impliedId": "PHP-3.01",
+                "__impliedAmbiguousNames": [
+                    "PHP, Version 3.01",
+                    "PHP, 3.01",
+                    "PHP License, Version 3.01",
+                    "PHP License 3.01",
+                    "PHP License, version 3.01"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: PHP"
+                        ]
                     ]
                 ]
             }

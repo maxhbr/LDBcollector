@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `SCEA License`
+
+-   `scancode:scea-1.0`
+
 -   `scancode://scea-1.0`
 
 -   `SCEA Shared Source License 1.0`
@@ -16,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: SCEA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sc]/SCEA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -99,6 +107,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sc]/SCEA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SCEA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -111,13 +123,26 @@
         "__impliedNames": [
             "SCEA",
             "SCEA Shared Source License",
+            "SCEA License",
+            "scancode:scea-1.0",
             "scancode://scea-1.0",
             "SCEA Shared Source License 1.0"
         ],
         "__impliedId": "SCEA",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "SCEA"
+            "SCEA",
+            "SCEA License",
+            "SCEA LICENSE",
+            "SCEA Shared Source License 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SCEA"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -221,6 +246,42 @@
                         [
                             "Homepage",
                             "http://research.scea.com/scea_shared_source_license.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SCEA",
+                "shortName": null,
+                "category": "SCEA",
+                "alternativeNames": [
+                    "SCEA License",
+                    "SCEA LICENSE",
+                    "SCEA Shared Source License 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sc]/SCEA-License.yaml",
+                "otherIds": [
+                    "scancode:scea-1.0"
+                ],
+                "canonicalName": "SCEA License",
+                "_implications": {
+                    "__impliedNames": [
+                        "SCEA License",
+                        "SCEA",
+                        "scancode:scea-1.0"
+                    ],
+                    "__impliedId": "SCEA",
+                    "__impliedAmbiguousNames": [
+                        "SCEA License",
+                        "SCEA LICENSE",
+                        "SCEA Shared Source License 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SCEA"
+                            ]
                         ]
                     ]
                 }

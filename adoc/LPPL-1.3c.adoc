@@ -12,11 +12,13 @@
 
 *Other Names:*
 
+* `LPPL 1.3c`
+* `scancode:lppl-1.3c`
+* `osi:LPPL-1.3c`
 * `LaTeX Project Public License 1.3c`
 * `LaTeX Project Public License, Version 1.3c`
 * `LaTeX Project Public License Version 1.3c`
 * `scancode://lppl-1.3c`
-* `LPPL 1.3c`
 
 === Description
 
@@ -64,6 +66,9 @@ by the current maintainer, or does not appear to be maintained, the
 software will be changed from 'maintained' to 'unmaintained' status.''
 (source: https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: LPPL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPPL-1.3c.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this license was released 4 May 2008 This license is
 OSI certified. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3c.yml[Scancode]
@@ -638,6 +643,8 @@ Important Recommendations
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPPL-1.3c.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -662,19 +669,33 @@ repository] is generated)
         "LPPL-1.3c",
         "LaTeX Project Public License v1.3c",
         "lppl-1.3c",
+        "LPPL 1.3c",
+        "scancode:lppl-1.3c",
+        "osi:LPPL-1.3c",
         "LaTeX Project Public License 1.3c",
         "LaTeX Project Public License, Version 1.3c",
         "LaTeX Project Public License Version 1.3c",
-        "scancode://lppl-1.3c",
-        "LPPL 1.3c"
+        "scancode://lppl-1.3c"
     ],
     "__impliedId": "LPPL-1.3c",
+    "__impliedAmbiguousNames": [
+        "LPPL, Version 1.3c",
+        "LPPL, 1.3c",
+        "LaTeX Project Public License v1.3c",
+        "LPPL-1.3c"
+    ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "http://latex-project.org/lppl/",
                 "Compiled software is software that has undergone a process of conversion to a format that can be used directly on a computer system. This process involves using the installation mechanisms provided by the software, converting the software, copying components of the software, etc. A current maintainer is a person who has been nominated as a potential maintainer for the software. If there is no explicit candidate for maintainer, refers to a copyright holder under applicable law. Base Interpreter - refers to the programs and processes normally required to execute or interpret the Software, in whole or in part. It depends on an external component that is not considered part of the base interpreter if that external component is specifically identified as being used interactively. A software is in 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it says 'author-maintained'. The software is 'maintained' if there is a current maintainer who has indicated their willingness to receive error reports for the software, e.g. by providing a valid e-mail address. If the software has no current maintainer, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to be maintained, the software will be changed from 'maintained' to 'unmaintained' status."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: LPPL"
             ]
         ],
         [
@@ -1130,6 +1151,46 @@ repository] is generated)
                 ]
             },
             "description": "Compiled software is software that has undergone a process of conversion to a format that can be used directly on a computer system. This process involves using the installation mechanisms provided by the software, converting the software, copying components of the software, etc. A current maintainer is a person who has been nominated as a potential maintainer for the software. If there is no explicit candidate for maintainer, refers to a copyright holder under applicable law. Base Interpreter - refers to the programs and processes normally required to execute or interpret the Software, in whole or in part. It depends on an external component that is not considered part of the base interpreter if that external component is specifically identified as being used interactively. A software is in 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it says 'author-maintained'. The software is 'maintained' if there is a current maintainer who has indicated their willingness to receive error reports for the software, e.g. by providing a valid e-mail address. If the software has no current maintainer, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to be maintained, the software will be changed from 'maintained' to 'unmaintained' status."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "LPPL-1.3c",
+            "shortName": null,
+            "category": "LPPL",
+            "alternativeNames": [
+                "LPPL, Version 1.3c",
+                "LPPL, 1.3c",
+                "LaTeX Project Public License v1.3c",
+                "LPPL-1.3c"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[lp]/LPPL-1.3c.yaml",
+            "otherIds": [
+                "scancode:lppl-1.3c",
+                "osi:LPPL-1.3c"
+            ],
+            "canonicalName": "LPPL 1.3c",
+            "_implications": {
+                "__impliedNames": [
+                    "LPPL 1.3c",
+                    "LPPL-1.3c",
+                    "scancode:lppl-1.3c",
+                    "osi:LPPL-1.3c"
+                ],
+                "__impliedId": "LPPL-1.3c",
+                "__impliedAmbiguousNames": [
+                    "LPPL, Version 1.3c",
+                    "LPPL, 1.3c",
+                    "LaTeX Project Public License v1.3c",
+                    "LPPL-1.3c"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: LPPL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

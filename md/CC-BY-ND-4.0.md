@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Creative Commons BY-ND 4.0 (international)`
+
+-   `scancode:cc-by-nd-4.0`
+
 -   `scancode://cc-by-nd-4.0`
 
 ## Comments on (easy) usability
@@ -13,6 +17,10 @@
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 ## General Comments
+
+-   “category: CC-BY-ND” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-ND-4.0-(international).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -427,6 +435,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-ND-4.0-(international).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-ND-4.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -438,10 +450,25 @@
     {
         "__impliedNames": [
             "CC-BY-ND-4.0",
+            "Creative Commons BY-ND 4.0 (international)",
+            "scancode:cc-by-nd-4.0",
             "Creative Commons Attribution No Derivatives 4.0 International",
             "scancode://cc-by-nd-4.0"
         ],
         "__impliedId": "CC-BY-ND-4.0",
+        "__impliedAmbiguousNames": [
+            "Creative Commons Attribution No Derivatives 4.0 International",
+            "Creative Commons Attribution-NoDerivatives 4.0 International",
+            "CC-BY-ND-4.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-ND"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -514,6 +541,42 @@
                         [
                             null,
                             "https://creativecommons.org/licenses/by-nd/4.0/legalcode"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-ND-4.0",
+                "shortName": null,
+                "category": "CC-BY-ND",
+                "alternativeNames": [
+                    "Creative Commons Attribution No Derivatives 4.0 International",
+                    "Creative Commons Attribution-NoDerivatives 4.0 International",
+                    "CC-BY-ND-4.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-ND-4.0-(international).yaml",
+                "otherIds": [
+                    "scancode:cc-by-nd-4.0"
+                ],
+                "canonicalName": "Creative Commons BY-ND 4.0 (international)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY-ND 4.0 (international)",
+                        "CC-BY-ND-4.0",
+                        "scancode:cc-by-nd-4.0"
+                    ],
+                    "__impliedId": "CC-BY-ND-4.0",
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons Attribution No Derivatives 4.0 International",
+                        "Creative Commons Attribution-NoDerivatives 4.0 International",
+                        "CC-BY-ND-4.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-ND"
+                            ]
                         ]
                     ]
                 }

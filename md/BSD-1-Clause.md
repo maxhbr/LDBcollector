@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `BSD 1-Clause License (copyright variant)`
+
+-   `BSD-1-Clause-copyright`
+
+-   `scancode:bsd-1-clause`
+
 -   `scancode://bsd-1-clause`
 
 ## Comments on (easy) usability
@@ -17,6 +23,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License-(copyright-variant).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -59,6 +69,14 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License-(copyright-variant).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-1-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -71,9 +89,27 @@
         "__impliedNames": [
             "BSD-1-Clause",
             "BSD 1-Clause License",
+            "BSD 1-Clause License (copyright variant)",
+            "BSD-1-Clause-copyright",
+            "scancode:bsd-1-clause",
             "scancode://bsd-1-clause"
         ],
         "__impliedId": "BSD-1-Clause",
+        "__impliedAmbiguousNames": [
+            "BSD 1 Clause",
+            "BSD 1 CLAUSE",
+            "BSD-1-Clause",
+            "BSD-1-CLAUSE",
+            "BSD-1-clause"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -156,6 +192,34 @@
                         [
                             "Homepage",
                             "https://svnweb.freebsd.org/base/head/include/ifaddrs.h?revision=326823"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "BSD-1-Clause-copyright",
+                "category": "BSD",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License-(copyright-variant).yaml",
+                "otherIds": [
+                    "scancode:bsd-1-clause"
+                ],
+                "canonicalName": "BSD 1-Clause License (copyright variant)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 1-Clause License (copyright variant)",
+                        "BSD-1-Clause-copyright",
+                        "scancode:bsd-1-clause"
+                    ],
+                    "__impliedId": "BSD-1-Clause-copyright",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
                         ]
                     ]
                 }

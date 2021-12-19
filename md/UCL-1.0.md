@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `Upstream Compatibility License 1.0`
+
+-   `scancode:ucl-1.0`
+
+-   `osi:UCL-1.0`
+
 -   `scancode://ucl-1.0`
 
 ## Comments on (easy) usability
@@ -13,6 +19,10 @@
     this repository\] is generated))
 
 ## General Comments
+
+-   “category: Upstream Compatibility” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[up]/Upstream-Compatibility-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -241,6 +251,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[up]/Upstream-Compatibility-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
     (CC0-1.0)
 
@@ -255,10 +269,26 @@
     {
         "__impliedNames": [
             "UCL-1.0",
+            "Upstream Compatibility License 1.0",
+            "scancode:ucl-1.0",
+            "osi:UCL-1.0",
             "Upstream Compatibility License v1.0",
             "scancode://ucl-1.0"
         ],
         "__impliedId": "UCL-1.0",
+        "__impliedAmbiguousNames": [
+            "UCL-1.0",
+            "Upstream Compatibility License v1.0",
+            "Upstream Compatibility License v. 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Upstream Compatibility"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -367,6 +397,44 @@
                 "_implications": {
                     "__impliedNames": [
                         "UCL-1.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "UCL-1.0",
+                "shortName": null,
+                "category": "Upstream Compatibility",
+                "alternativeNames": [
+                    "UCL-1.0",
+                    "Upstream Compatibility License v1.0",
+                    "Upstream Compatibility License v. 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[up]/Upstream-Compatibility-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:ucl-1.0",
+                    "osi:UCL-1.0"
+                ],
+                "canonicalName": "Upstream Compatibility License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Upstream Compatibility License 1.0",
+                        "UCL-1.0",
+                        "scancode:ucl-1.0",
+                        "osi:UCL-1.0"
+                    ],
+                    "__impliedId": "UCL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "UCL-1.0",
+                        "Upstream Compatibility License v1.0",
+                        "Upstream Compatibility License v. 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Upstream Compatibility"
+                            ]
+                        ]
                     ]
                 }
             }

@@ -3,11 +3,28 @@
         "MIT-0",
         "MIT No Attribution",
         "mit-0",
+        "MIT License (no attribution)",
+        "scancode:ekioh",
+        "scancode:pd-mit",
+        "scancode:tigra-calendar-4.0",
         "scancode://mit-0",
         "MIT-0-Clause"
     ],
     "__impliedId": "MIT-0",
+    "__impliedAmbiguousNames": [
+        "MIT, Version 0",
+        "MIT, 0",
+        "MIT License, Version 0",
+        "MIT License 0",
+        "MIT No Attribution"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: MIT"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -131,6 +148,50 @@
                     [
                         null,
                         "https://kryogenix.org/code/browser/licence.html"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "MIT-0",
+            "shortName": null,
+            "category": "MIT",
+            "alternativeNames": [
+                "MIT, Version 0",
+                "MIT, 0",
+                "MIT License, Version 0",
+                "MIT License 0",
+                "MIT No Attribution"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(no-attribution).yaml",
+            "otherIds": [
+                "scancode:ekioh",
+                "scancode:pd-mit",
+                "scancode:tigra-calendar-4.0"
+            ],
+            "canonicalName": "MIT License (no attribution)",
+            "_implications": {
+                "__impliedNames": [
+                    "MIT License (no attribution)",
+                    "MIT-0",
+                    "scancode:ekioh",
+                    "scancode:pd-mit",
+                    "scancode:tigra-calendar-4.0"
+                ],
+                "__impliedId": "MIT-0",
+                "__impliedAmbiguousNames": [
+                    "MIT, Version 0",
+                    "MIT, 0",
+                    "MIT License, Version 0",
+                    "MIT License 0",
+                    "MIT No Attribution"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: MIT"
+                        ]
                     ]
                 ]
             }

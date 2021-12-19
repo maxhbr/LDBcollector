@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:sax-pd`
+
 -   `scancode://sax-pd`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: SAX Public Domain” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sa]/SAX-Public-Domain-Notice.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -90,6 +96,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sa]/SAX-Public-Domain-Notice.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SAX-PD.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -101,10 +111,27 @@
     {
         "__impliedNames": [
             "SAX-PD",
+            "SAX Public Domain Notice",
+            "scancode:sax-pd",
             "Sax Public Domain Notice",
             "scancode://sax-pd"
         ],
         "__impliedId": "SAX-PD",
+        "__impliedAmbiguousNames": [
+            "http://www.spdx.org/licenses/SAX-PD",
+            "for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)",
+            "http://www.saxproject.org/copying.html",
+            "https://spdx.org/licenses/sax-pd",
+            "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SAX Public Domain"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -213,6 +240,46 @@
                 },
                 "licensename": "SAX-PD",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SAX-PD",
+                "shortName": null,
+                "category": "SAX Public Domain",
+                "alternativeNames": [
+                    "http://www.spdx.org/licenses/SAX-PD",
+                    "for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)",
+                    "http://www.saxproject.org/copying.html",
+                    "https://spdx.org/licenses/sax-pd",
+                    "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sa]/SAX-Public-Domain-Notice.yaml",
+                "otherIds": [
+                    "scancode:sax-pd"
+                ],
+                "canonicalName": "SAX Public Domain Notice",
+                "_implications": {
+                    "__impliedNames": [
+                        "SAX Public Domain Notice",
+                        "SAX-PD",
+                        "scancode:sax-pd"
+                    ],
+                    "__impliedId": "SAX-PD",
+                    "__impliedAmbiguousNames": [
+                        "http://www.spdx.org/licenses/SAX-PD",
+                        "for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)",
+                        "http://www.saxproject.org/copying.html",
+                        "https://spdx.org/licenses/sax-pd",
+                        "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SAX Public Domain"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

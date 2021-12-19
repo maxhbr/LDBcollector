@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `BitTorrent License 1.0`
+
+-   `scancode:bittorrent-1.0`
+
 -   `scancode://bittorrent-1.0`
 
 -   `BitTorrent 1.0`
@@ -11,6 +15,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: BitTorrent” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bi]/BitTorrent-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -365,6 +373,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bi]/BitTorrent-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BitTorrent-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -376,11 +388,29 @@
     {
         "__impliedNames": [
             "BitTorrent-1.0",
+            "BitTorrent License 1.0",
+            "scancode:bittorrent-1.0",
             "BitTorrent Open Source License v1.0",
             "scancode://bittorrent-1.0",
             "BitTorrent 1.0"
         ],
         "__impliedId": "BitTorrent-1.0",
+        "__impliedAmbiguousNames": [
+            "BitTorrent, Version 1.0",
+            "BitTorrent, 1.0",
+            "BitTorrent-1.0",
+            "BitTorrent License, Version 1.0",
+            "BitTorrent License, 1.0",
+            "BitTorrent Open Source License Version 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BitTorrent"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -479,6 +509,48 @@
                 },
                 "licensename": "BitTorrent-1.0",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BitTorrent-1.0",
+                "shortName": null,
+                "category": "BitTorrent",
+                "alternativeNames": [
+                    "BitTorrent, Version 1.0",
+                    "BitTorrent, 1.0",
+                    "BitTorrent-1.0",
+                    "BitTorrent License, Version 1.0",
+                    "BitTorrent License, 1.0",
+                    "BitTorrent Open Source License Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bi]/BitTorrent-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:bittorrent-1.0"
+                ],
+                "canonicalName": "BitTorrent License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "BitTorrent License 1.0",
+                        "BitTorrent-1.0",
+                        "scancode:bittorrent-1.0"
+                    ],
+                    "__impliedId": "BitTorrent-1.0",
+                    "__impliedAmbiguousNames": [
+                        "BitTorrent, Version 1.0",
+                        "BitTorrent, 1.0",
+                        "BitTorrent-1.0",
+                        "BitTorrent License, Version 1.0",
+                        "BitTorrent License, 1.0",
+                        "BitTorrent Open Source License Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BitTorrent"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

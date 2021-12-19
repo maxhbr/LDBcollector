@@ -2,16 +2,28 @@
     "__impliedNames": [
         "CDDL-1.0",
         "Common Development and Distribution License 1.0",
+        "CDDL 1.0",
+        "scancode:cddl-1.0",
+        "osi:CDDL-1.0",
+        "osi:cddl1",
         "cddl1",
         "Common Development and Distribution License, Version 1.0",
         "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
         "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California",
-        "scancode://cddl-1.0",
-        "CDDL 1.0"
+        "scancode://cddl-1.0"
     ],
     "__impliedId": "CDDL-1.0",
     "__impliedAmbiguousNames": [
-        "Common Development and Distribution License"
+        "Common Development and Distribution License",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0",
+        "Common Development and Distribution License 1.0 (\"CDDL\")",
+        "CDDL-1.0",
+        "CDDL, v1.0",
+        "CDDLv1.0",
+        "Common Development and Distribution Licence version 1.0 (CDDL)",
+        "Common Development and Distribution License (CDDL), Version 1.0",
+        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
+        "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved"
     ],
     "__impliedComments": [
         [
@@ -24,6 +36,12 @@
             "Hitachi open-license",
             [
                 "Source code refers to the source code and the documentation contained in or attached to the source code. Executable Form - means any form of software other than source code. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party. Self means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CDDL"
             ]
         ],
         [
@@ -620,6 +638,58 @@
                 ]
             },
             "description": "Source code refers to the source code and the documentation contained in or attached to the source code. Executable Form - means any form of software other than source code. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party. Self means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CDDL-1.0",
+            "shortName": null,
+            "category": "CDDL",
+            "alternativeNames": [
+                "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0",
+                "Common Development and Distribution License 1.0 (\"CDDL\")",
+                "CDDL-1.0",
+                "CDDL, v1.0",
+                "CDDLv1.0",
+                "Common Development and Distribution Licence version 1.0 (CDDL)",
+                "Common Development and Distribution License (CDDL), Version 1.0",
+                "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
+                "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cd]/CDDL-1.0.yaml",
+            "otherIds": [
+                "scancode:cddl-1.0",
+                "osi:CDDL-1.0",
+                "osi:cddl1"
+            ],
+            "canonicalName": "CDDL 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "CDDL 1.0",
+                    "CDDL-1.0",
+                    "scancode:cddl-1.0",
+                    "osi:CDDL-1.0",
+                    "osi:cddl1"
+                ],
+                "__impliedId": "CDDL-1.0",
+                "__impliedAmbiguousNames": [
+                    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0",
+                    "Common Development and Distribution License 1.0 (\"CDDL\")",
+                    "CDDL-1.0",
+                    "CDDL, v1.0",
+                    "CDDLv1.0",
+                    "Common Development and Distribution Licence version 1.0 (CDDL)",
+                    "Common Development and Distribution License (CDDL), Version 1.0",
+                    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
+                    "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CDDL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "url": "https://spdx.org/licenses/CDDL-1.0.html",

@@ -2,6 +2,7 @@
     "__impliedNames": [
         "zlib-acknowledgement",
         "zlib/libpng License with Acknowledgement",
+        "scancode:zlib-acknowledgement",
         "scancode://zlib-acknowledgement",
         "ZLIB License with Acknowledgment"
     ],
@@ -9,9 +10,17 @@
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The zlib/libpng License (Zlib)",
-        "zlib with acknowledgement"
+        "zlib with acknowledgement",
+        "zlib-acknowledgement",
+        "zlib/libpng License with Acknowledgement"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: zlib-acknowledgement"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -188,6 +197,40 @@
             },
             "Comment": null,
             "LicenseId": "zlib-acknowledgement"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "zlib-acknowledgement",
+            "shortName": null,
+            "category": "zlib-acknowledgement",
+            "alternativeNames": [
+                "zlib-acknowledgement",
+                "zlib/libpng License with Acknowledgement"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zl]/zliblibpng-License-with-Acknowledgement.yaml",
+            "otherIds": [
+                "scancode:zlib-acknowledgement"
+            ],
+            "canonicalName": "zlib/libpng License with Acknowledgement",
+            "_implications": {
+                "__impliedNames": [
+                    "zlib/libpng License with Acknowledgement",
+                    "zlib-acknowledgement",
+                    "scancode:zlib-acknowledgement"
+                ],
+                "__impliedId": "zlib-acknowledgement",
+                "__impliedAmbiguousNames": [
+                    "zlib-acknowledgement",
+                    "zlib/libpng License with Acknowledgement"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: zlib-acknowledgement"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

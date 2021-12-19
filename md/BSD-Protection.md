@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:bsd-protection`
+
 -   `scancode://bsd-protection`
 
 ## Comments on (easy) usability
@@ -21,6 +23,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: BSD Protection” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Protection-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -177,6 +183,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Protection-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-Protection.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -189,6 +199,7 @@
         "__impliedNames": [
             "BSD-Protection",
             "BSD Protection License",
+            "scancode:bsd-protection",
             "scancode://bsd-protection"
         ],
         "__impliedId": "BSD-Protection",
@@ -202,6 +213,12 @@
                 "BlueOak License List",
                 [
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD Protection"
                 ]
             ]
         ],
@@ -307,6 +324,38 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/BSD_Protection_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-Protection",
+                "shortName": null,
+                "category": "BSD Protection",
+                "alternativeNames": [
+                    "BSD Protection License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Protection-License.yaml",
+                "otherIds": [
+                    "scancode:bsd-protection"
+                ],
+                "canonicalName": "BSD Protection License",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD Protection License",
+                        "BSD-Protection",
+                        "scancode:bsd-protection"
+                    ],
+                    "__impliedId": "BSD-Protection",
+                    "__impliedAmbiguousNames": [
+                        "BSD Protection License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD Protection"
+                            ]
                         ]
                     ]
                 }

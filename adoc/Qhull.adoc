@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `scancode:qhull`
 * `scancode://qhull`
 
 === Comments on (easy) usability
@@ -24,6 +25,10 @@ https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
+
+* ``category: Qhull License'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[q]/[qh]/Qhull-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === URLs
 
@@ -83,6 +88,8 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[q]/[qh]/Qhull-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt[OSADL
 License Checklist] (NOASSERTION)
 * https://spdx.org/licenses/Qhull.html[SPDX] (all data [in this
@@ -97,12 +104,21 @@ repository] is generated)
     "__impliedNames": [
         "Qhull",
         "Qhull License",
+        "scancode:qhull",
         "scancode://qhull"
     ],
     "__impliedId": "Qhull",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Qhull"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Qhull License"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -222,6 +238,35 @@ repository] is generated)
                     [
                         null,
                         "https://fedoraproject.org/wiki/Licensing/Qhull"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Qhull",
+            "shortName": "Qhull",
+            "category": "Qhull License",
+            "alternativeNames": [],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[q]/[qh]/Qhull-License.yaml",
+            "otherIds": [
+                "scancode:qhull"
+            ],
+            "canonicalName": "Qhull License",
+            "_implications": {
+                "__impliedNames": [
+                    "Qhull License",
+                    "Qhull",
+                    "Qhull",
+                    "scancode:qhull"
+                ],
+                "__impliedId": "Qhull",
+                "__impliedAmbiguousNames": [],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Qhull License"
+                        ]
                     ]
                 ]
             }

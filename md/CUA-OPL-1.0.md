@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `CUA OPL 1.0`
+
+-   `scancode:cua-opl-1.0`
+
+-   `osi:CUA-OPL-1.0`
+
 -   `CUA Office Public License 1.0`
 
 -   `CUA Office Public License`
@@ -17,6 +23,10 @@
     \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: CUA OPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/CUA-OPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certifified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cua-opl-1.0.yml "Scancode")
@@ -515,6 +525,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/CUA-OPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -536,13 +550,30 @@
     {
         "__impliedNames": [
             "CUA-OPL-1.0",
+            "CUA OPL 1.0",
+            "scancode:cua-opl-1.0",
+            "osi:CUA-OPL-1.0",
             "CUA Office Public License 1.0",
             "CUA Office Public License",
             "CUA Office Public License v1.0",
             "scancode://cua-opl-1.0"
         ],
         "__impliedId": "CUA-OPL-1.0",
+        "__impliedAmbiguousNames": [
+            "CUA OPL, Version 1.0",
+            "CUA OPL, 1.0",
+            "CUA-OPL, Version 1.0",
+            "CUA-OPL 1.0",
+            "CUA-OPL-1.0",
+            "CUA Office Public License Version 1.0"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CUA OPL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -715,6 +746,50 @@
                 "_implications": {
                     "__impliedNames": [
                         "CUA-OPL-1.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CUA-OPL-1.0",
+                "shortName": null,
+                "category": "CUA OPL",
+                "alternativeNames": [
+                    "CUA OPL, Version 1.0",
+                    "CUA OPL, 1.0",
+                    "CUA-OPL, Version 1.0",
+                    "CUA-OPL 1.0",
+                    "CUA-OPL-1.0",
+                    "CUA Office Public License Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/CUA-OPL-1.0.yaml",
+                "otherIds": [
+                    "scancode:cua-opl-1.0",
+                    "osi:CUA-OPL-1.0"
+                ],
+                "canonicalName": "CUA OPL 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CUA OPL 1.0",
+                        "CUA-OPL-1.0",
+                        "scancode:cua-opl-1.0",
+                        "osi:CUA-OPL-1.0"
+                    ],
+                    "__impliedId": "CUA-OPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "CUA OPL, Version 1.0",
+                        "CUA OPL, 1.0",
+                        "CUA-OPL, Version 1.0",
+                        "CUA-OPL 1.0",
+                        "CUA-OPL-1.0",
+                        "CUA Office Public License Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CUA OPL"
+                            ]
+                        ]
                     ]
                 }
             },

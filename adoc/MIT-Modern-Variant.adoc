@@ -25,6 +25,10 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === General Comments
 
+* ``category: MIT'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-Modern-Variant.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
+
 === URLs
 
 * *Homepage:* http://fedoraproject.org/wiki/Licensing/MIT
@@ -65,6 +69,8 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 * LicenseName
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-Modern-Variant.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/MIT-Modern-Variant.html[SPDX] (all data [in
 this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-modern.yml[Scancode]
@@ -81,6 +87,17 @@ this repository] is generated)
         "MIT Modern Variant"
     ],
     "__impliedId": "MIT-Modern-Variant",
+    "__impliedAmbiguousNames": [
+        "MIT License Modern Variant"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: MIT"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -189,6 +206,35 @@ this repository] is generated)
                     [
                         null,
                         "https://pirlwww.lpl.arizona.edu/resources/guide/software/PerlTk/Tixlic.html"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "MIT-Modern-Variant",
+            "shortName": null,
+            "category": "MIT",
+            "alternativeNames": [
+                "MIT License Modern Variant"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-Modern-Variant.yaml",
+            "otherIds": [],
+            "canonicalName": "MIT License Modern Variant",
+            "_implications": {
+                "__impliedNames": [
+                    "MIT License Modern Variant",
+                    "MIT-Modern-Variant"
+                ],
+                "__impliedId": "MIT-Modern-Variant",
+                "__impliedAmbiguousNames": [
+                    "MIT License Modern Variant"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: MIT"
+                        ]
                     ]
                 ]
             }

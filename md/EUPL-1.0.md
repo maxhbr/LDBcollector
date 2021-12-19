@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:eupl-1.0`
+
 -   `scancode://eupl-1.0`
 
 -   `EUPL 1.0`
@@ -33,6 +35,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: EUPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -219,6 +225,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/EUPL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -231,12 +241,23 @@
         "__impliedNames": [
             "EUPL-1.0",
             "European Union Public License 1.0",
+            "scancode:eupl-1.0",
             "scancode://eupl-1.0",
             "EUPL 1.0"
         ],
         "__impliedId": "EUPL-1.0",
         "__impliedAmbiguousNames": [
-            "European Union Public License"
+            "European Union Public License",
+            "EUPL Version 1.0",
+            "EUPL v.1.0",
+            "EUPL-1.0",
+            "EUPL V.1.0",
+            "EUPL, 1.0",
+            "European Union Public License V. 1.0",
+            "European Union Public License v.1.0",
+            "European Union Public License, Version 1.0",
+            "European Union Public License (EUPL) version 1.0",
+            "European Union Public License v1.0"
         ],
         "__impliedComments": [
             [
@@ -244,6 +265,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: EUPL"
                 ]
             ]
         ],
@@ -350,6 +377,56 @@
                 },
                 "licensename": "EUPL-1.0",
                 "copyleftkind": "StrongCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "EUPL-1.0",
+                "shortName": null,
+                "category": "EUPL",
+                "alternativeNames": [
+                    "EUPL Version 1.0",
+                    "EUPL v.1.0",
+                    "EUPL-1.0",
+                    "EUPL V.1.0",
+                    "EUPL, 1.0",
+                    "European Union Public License V. 1.0",
+                    "European Union Public License v.1.0",
+                    "European Union Public License, Version 1.0",
+                    "European Union Public License (EUPL) version 1.0",
+                    "European Union Public License v1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:eupl-1.0"
+                ],
+                "canonicalName": "European Union Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "European Union Public License 1.0",
+                        "EUPL-1.0",
+                        "scancode:eupl-1.0"
+                    ],
+                    "__impliedId": "EUPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "EUPL Version 1.0",
+                        "EUPL v.1.0",
+                        "EUPL-1.0",
+                        "EUPL V.1.0",
+                        "EUPL, 1.0",
+                        "European Union Public License V. 1.0",
+                        "European Union Public License v.1.0",
+                        "European Union Public License, Version 1.0",
+                        "European Union Public License (EUPL) version 1.0",
+                        "European Union Public License v1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: EUPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/EUPL-1.0.html",

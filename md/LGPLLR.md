@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Lesser General Public License (Linguistic Resources)`
+
+-   `scancode:lgpllr`
+
 -   `scancode://lgpllr`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: LGPLLR” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[le]/Lesser-General-Public-License-(Linguistic-Resources).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -257,6 +265,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[le]/Lesser-General-Public-License-(Linguistic-Resources).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/LGPLLR.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -268,10 +280,24 @@
     {
         "__impliedNames": [
             "LGPLLR",
+            "Lesser General Public License (Linguistic Resources)",
+            "scancode:lgpllr",
             "Lesser General Public License For Linguistic Resources",
             "scancode://lgpllr"
         ],
         "__impliedId": "LGPLLR",
+        "__impliedAmbiguousNames": [
+            "LGPLLR",
+            "Lesser General Public License For Linguistic Resources"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: LGPLLR"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -345,6 +371,40 @@
                         [
                             "Homepage",
                             "http://www-igm.univ-mlv.fr/~unitex/lgpllr.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "LGPLLR",
+                "shortName": null,
+                "category": "LGPLLR",
+                "alternativeNames": [
+                    "LGPLLR",
+                    "Lesser General Public License For Linguistic Resources"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[le]/Lesser-General-Public-License-(Linguistic-Resources).yaml",
+                "otherIds": [
+                    "scancode:lgpllr"
+                ],
+                "canonicalName": "Lesser General Public License (Linguistic Resources)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Lesser General Public License (Linguistic Resources)",
+                        "LGPLLR",
+                        "scancode:lgpllr"
+                    ],
+                    "__impliedId": "LGPLLR",
+                    "__impliedAmbiguousNames": [
+                        "LGPLLR",
+                        "Lesser General Public License For Linguistic Resources"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: LGPLLR"
+                            ]
                         ]
                     ]
                 }

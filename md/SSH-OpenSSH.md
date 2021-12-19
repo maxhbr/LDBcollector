@@ -4,13 +4,19 @@
 
 **Other Names:**
 
--   `scancode://openssh`
-
 -   `OpenSSH License`
+
+-   `scancode:tatu-ylonen`
+
+-   `scancode://openssh`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: OpenSSH License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenSSH-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “composite” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssh.yml "Scancode")
@@ -378,6 +384,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenSSH-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SSH-OpenSSH.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -389,12 +399,27 @@
     {
         "__impliedNames": [
             "SSH-OpenSSH",
+            "OpenSSH License",
+            "scancode:tatu-ylonen",
             "SSH OpenSSH license",
-            "scancode://openssh",
-            "OpenSSH License"
+            "scancode://openssh"
         ],
         "__impliedId": "SSH-OpenSSH",
+        "__impliedAmbiguousNames": [
+            "OpenSSH License",
+            "SSH-OpenSSH",
+            "Tatu Ylonen's original licence",
+            "Tatu Ylonen's licence",
+            "Tatu Ylonen's Licence",
+            "Tatu Ylonen Licence"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OpenSSH License"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -494,6 +519,48 @@
                         [
                             null,
                             "https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/LICENCE#L10"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SSH-OpenSSH",
+                "shortName": null,
+                "category": "OpenSSH License",
+                "alternativeNames": [
+                    "OpenSSH License",
+                    "SSH-OpenSSH",
+                    "Tatu Ylonen's original licence",
+                    "Tatu Ylonen's licence",
+                    "Tatu Ylonen's Licence",
+                    "Tatu Ylonen Licence"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenSSH-License.yaml",
+                "otherIds": [
+                    "scancode:tatu-ylonen"
+                ],
+                "canonicalName": "OpenSSH License",
+                "_implications": {
+                    "__impliedNames": [
+                        "OpenSSH License",
+                        "SSH-OpenSSH",
+                        "scancode:tatu-ylonen"
+                    ],
+                    "__impliedId": "SSH-OpenSSH",
+                    "__impliedAmbiguousNames": [
+                        "OpenSSH License",
+                        "SSH-OpenSSH",
+                        "Tatu Ylonen's original licence",
+                        "Tatu Ylonen's licence",
+                        "Tatu Ylonen's Licence",
+                        "Tatu Ylonen Licence"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OpenSSH License"
+                            ]
                         ]
                     ]
                 }

@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Taiwan Open Government Data License 1.0`
+
+-   `scancode:ogdl-taiwan-1.0`
+
 -   `scancode://ogdl-taiwan-1.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Taiwan Open Government Data” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ta]/Taiwan-Open-Government-Data-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -98,6 +106,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ta]/Taiwan-Open-Government-Data-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/OGDL-Taiwan-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -109,10 +121,23 @@
     {
         "__impliedNames": [
             "OGDL-Taiwan-1.0",
+            "Taiwan Open Government Data License 1.0",
+            "scancode:ogdl-taiwan-1.0",
             "Taiwan Open Government Data License, version 1.0",
             "scancode://ogdl-taiwan-1.0"
         ],
         "__impliedId": "OGDL-Taiwan-1.0",
+        "__impliedAmbiguousNames": [
+            "Taiwan Open Government Data License 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Taiwan Open Government Data"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -192,6 +217,38 @@
                         [
                             null,
                             "https://data.gov.tw/license"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OGDL-Taiwan-1.0",
+                "shortName": null,
+                "category": "Taiwan Open Government Data",
+                "alternativeNames": [
+                    "Taiwan Open Government Data License 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ta]/Taiwan-Open-Government-Data-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:ogdl-taiwan-1.0"
+                ],
+                "canonicalName": "Taiwan Open Government Data License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Taiwan Open Government Data License 1.0",
+                        "OGDL-Taiwan-1.0",
+                        "scancode:ogdl-taiwan-1.0"
+                    ],
+                    "__impliedId": "OGDL-Taiwan-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Taiwan Open Government Data License 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Taiwan Open Government Data"
+                            ]
                         ]
                     ]
                 }

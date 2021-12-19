@@ -7,11 +7,19 @@
 
 *Other Names:*
 
+- =Businnes-Source-1.1=
+
+- =scancode:bsl-1.1=
+
 - =scancode://bsl-1.1=
 
 ** Comments on (easy) usability
 
 ** General Comments
+
+- "category: Business Source License" (source:
+  [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bu]/Business-Source-License-1.1.yaml][Metaeffekt
+  Universe]] (CC-BY-4.0))
 
 ** URLs
 
@@ -114,6 +122,9 @@
 
 - LicenseName
 
+- [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bu]/Business-Source-License-1.1.yaml][Metaeffekt
+  Universe]] (CC-BY-4.0)
+
 - [[https://spdx.org/licenses/BUSL-1.1.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -126,9 +137,23 @@
       "__impliedNames": [
           "BUSL-1.1",
           "Business Source License 1.1",
+          "Businnes-Source-1.1",
+          "scancode:bsl-1.1",
           "scancode://bsl-1.1"
       ],
       "__impliedId": "BUSL-1.1",
+      "__impliedAmbiguousNames": [
+          "Business Source License 1.1",
+          "https://github.com/getsentry/sentry/blob/master/LICENSE"
+      ],
+      "__impliedComments": [
+          [
+              "Metaeffekt Universe",
+              [
+                  "category: Business Source License"
+              ]
+          ]
+      ],
       "facts": {
           "LicenseName": {
               "implications": {
@@ -206,6 +231,41 @@
                       [
                           null,
                           "https://mariadb.com/products/mariadb-enterprise"
+                      ]
+                  ]
+              }
+          },
+          "Metaeffekt Universe": {
+              "spdxIdentifier": "BUSL-1.1",
+              "shortName": "Businnes-Source-1.1",
+              "category": "Business Source License",
+              "alternativeNames": [
+                  "Business Source License 1.1",
+                  "https://github.com/getsentry/sentry/blob/master/LICENSE"
+              ],
+              "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bu]/Business-Source-License-1.1.yaml",
+              "otherIds": [
+                  "scancode:bsl-1.1"
+              ],
+              "canonicalName": "Business Source License 1.1",
+              "_implications": {
+                  "__impliedNames": [
+                      "Business Source License 1.1",
+                      "Businnes-Source-1.1",
+                      "BUSL-1.1",
+                      "scancode:bsl-1.1"
+                  ],
+                  "__impliedId": "BUSL-1.1",
+                  "__impliedAmbiguousNames": [
+                      "Business Source License 1.1",
+                      "https://github.com/getsentry/sentry/blob/master/LICENSE"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Metaeffekt Universe",
+                          [
+                              "category: Business Source License"
+                          ]
                       ]
                   ]
               }

@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `gSOAP Public License 1.3b`
+
+-   `scancode:gsoap-1.3b`
+
 -   `gSOAP Public License Version 1.3b`
 
 -   `scancode://gsoap-1.3b`
@@ -35,6 +39,10 @@
     beneficial ownership of the corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: gSOAP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gs]/gSOAP-Public-License-1.3b.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -348,6 +356,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gs]/gSOAP-Public-License-1.3b.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -363,17 +375,30 @@
     {
         "__impliedNames": [
             "gSOAP-1.3b",
+            "gSOAP Public License 1.3b",
+            "scancode:gsoap-1.3b",
             "gSOAP Public License Version 1.3b",
             "gSOAP Public License v1.3b",
             "scancode://gsoap-1.3b"
         ],
         "__impliedId": "gSOAP-1.3b",
+        "__impliedAmbiguousNames": [
+            "gSOAP-1.3b",
+            "gSOAP Public License v1.3b",
+            "gSOAP Public License Version 1.3b"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.cs.fsu.edu/~engelen/license.html",
                     "Source code refers to the source code and related interface definition files and scripts used to control compilation and installation of executables. Executable refers to any form of software other than source code. Sublicense means that a person who has been granted this license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a Legal Entity, itself includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: gSOAP"
                 ]
             ]
         ],
@@ -884,6 +909,42 @@
                     ]
                 },
                 "description": "Source code refers to the source code and related interface definition files and scripts used to control compilation and installation of executables. Executable refers to any form of software other than source code. Sublicense means that a person who has been granted this license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Self refers to the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a Legal Entity, itself includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "gSOAP-1.3b",
+                "shortName": null,
+                "category": "gSOAP",
+                "alternativeNames": [
+                    "gSOAP-1.3b",
+                    "gSOAP Public License v1.3b",
+                    "gSOAP Public License Version 1.3b"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gs]/gSOAP-Public-License-1.3b.yaml",
+                "otherIds": [
+                    "scancode:gsoap-1.3b"
+                ],
+                "canonicalName": "gSOAP Public License 1.3b",
+                "_implications": {
+                    "__impliedNames": [
+                        "gSOAP Public License 1.3b",
+                        "gSOAP-1.3b",
+                        "scancode:gsoap-1.3b"
+                    ],
+                    "__impliedId": "gSOAP-1.3b",
+                    "__impliedAmbiguousNames": [
+                        "gSOAP-1.3b",
+                        "gSOAP Public License v1.3b",
+                        "gSOAP Public License Version 1.3b"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: gSOAP"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

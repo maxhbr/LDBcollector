@@ -2,17 +2,29 @@
     "__impliedNames": [
         "W3C-19980720",
         "W3C Software Notice and License (1998-07-20)",
+        "scancode:w3c-software-19980720",
         "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)",
         "scancode://w3c-software-19980720",
         "W3C-SOFTWARE-19980720"
     ],
     "__impliedId": "W3C-19980720",
+    "__impliedAmbiguousNames": [
+        "W3C Software Notice and License (1998-07-20)",
+        "W3C-19980720",
+        "http://www.w3.org/Consortium/Legal/copyright-software-19980720"
+    ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "http://www.w3.org/Consortium/Legal/copyright-software-19980720",
                 "The link to \"World Wide Web Consortium\" is http://www.w3.org/ and the link to \"Massachusetts Institute of Technology\" is http://www.lcs.mit.edu/ and the link to \"Institut National The link for \"de Recherche en Informatique et en Automatique\" can be found at http://www.inria.fr/\"Keio University\" at http://www.keio.ac.jp/\"older formulation\". The link is http://www.w3.org/Consortium/Legal/copyright-software-19980519.html \"Copyright FAQ\" link is http://www.w3.org/Consortium/Legal/IPR -FAQ.html"
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: W3C"
             ]
         ]
     ],
@@ -282,6 +294,42 @@
                 ]
             },
             "description": "The link to \"World Wide Web Consortium\" is http://www.w3.org/ and the link to \"Massachusetts Institute of Technology\" is http://www.lcs.mit.edu/ and the link to \"Institut National The link for \"de Recherche en Informatique et en Automatique\" can be found at http://www.inria.fr/\"Keio University\" at http://www.keio.ac.jp/\"older formulation\". The link is http://www.w3.org/Consortium/Legal/copyright-software-19980519.html \"Copyright FAQ\" link is http://www.w3.org/Consortium/Legal/IPR -FAQ.html"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "W3C-19980720",
+            "shortName": null,
+            "category": "W3C",
+            "alternativeNames": [
+                "W3C Software Notice and License (1998-07-20)",
+                "W3C-19980720",
+                "http://www.w3.org/Consortium/Legal/copyright-software-19980720"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[w3]/W3C-Software-Notice-and-License-(1998-07-20).yaml",
+            "otherIds": [
+                "scancode:w3c-software-19980720"
+            ],
+            "canonicalName": "W3C Software Notice and License (1998-07-20)",
+            "_implications": {
+                "__impliedNames": [
+                    "W3C Software Notice and License (1998-07-20)",
+                    "W3C-19980720",
+                    "scancode:w3c-software-19980720"
+                ],
+                "__impliedId": "W3C-19980720",
+                "__impliedAmbiguousNames": [
+                    "W3C Software Notice and License (1998-07-20)",
+                    "W3C-19980720",
+                    "http://www.w3.org/Consortium/Legal/copyright-software-19980720"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: W3C"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

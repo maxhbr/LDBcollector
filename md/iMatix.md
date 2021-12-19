@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `iMatix License`
+
+-   `scancode:sfl-license`
+
 -   `scancode://sfl-license`
 
 -   `SFL License Agreement`
@@ -16,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: iMatix” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/iMatix-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -86,6 +94,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/iMatix-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/iMatix.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -98,13 +110,28 @@
         "__impliedNames": [
             "iMatix",
             "iMatix Standard Function Library Agreement",
+            "iMatix License",
+            "scancode:sfl-license",
             "scancode://sfl-license",
             "SFL License Agreement"
         ],
         "__impliedId": "iMatix",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "iMatix"
+            "iMatix",
+            "iMatix License",
+            "IMATIX LICENSE",
+            "IMATIX License",
+            "iMatix STANDARD FUNCTION LIBRARY",
+            "SFL License Agreement"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: iMatix"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -238,6 +265,46 @@
                 },
                 "licensename": "iMatix",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "iMatix",
+                "shortName": null,
+                "category": "iMatix",
+                "alternativeNames": [
+                    "iMatix License",
+                    "IMATIX LICENSE",
+                    "IMATIX License",
+                    "iMatix STANDARD FUNCTION LIBRARY",
+                    "SFL License Agreement"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/iMatix-License.yaml",
+                "otherIds": [
+                    "scancode:sfl-license"
+                ],
+                "canonicalName": "iMatix License",
+                "_implications": {
+                    "__impliedNames": [
+                        "iMatix License",
+                        "iMatix",
+                        "scancode:sfl-license"
+                    ],
+                    "__impliedId": "iMatix",
+                    "__impliedAmbiguousNames": [
+                        "iMatix License",
+                        "IMATIX LICENSE",
+                        "IMATIX License",
+                        "iMatix STANDARD FUNCTION LIBRARY",
+                        "SFL License Agreement"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: iMatix"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [

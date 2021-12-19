@@ -11,6 +11,8 @@
 
 *Other Names:*
 
+* `NBPL 1.0`
+* `scancode:nbpl-1.0`
 * `scancode://nbpl-1.0`
 
 === Comments on (easy) usability
@@ -21,6 +23,9 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === General Comments
 
+* ``category: NBPL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nb]/NBPL-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this license was released 22 August 1998. This license
 was issued twice, but only with formatting differences. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nbpl-1.0.yml[Scancode]
@@ -198,6 +203,8 @@ The End
 * LicenseName
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nb]/NBPL-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/NBPL-1.0.txt[OSADL
 License Checklist] (NOASSERTION)
 * https://spdx.org/licenses/NBPL-1.0.html[SPDX] (all data [in this
@@ -212,10 +219,22 @@ repository] is generated)
     "__impliedNames": [
         "NBPL-1.0",
         "Net Boolean Public License v1",
+        "NBPL 1.0",
+        "scancode:nbpl-1.0",
         "scancode://nbpl-1.0"
     ],
     "__impliedId": "NBPL-1.0",
+    "__impliedAmbiguousNames": [
+        "NBPL, Version 1.0",
+        "NBPL, 1.0"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: NBPL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -314,6 +333,40 @@ repository] is generated)
                     [
                         "Homepage",
                         "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=37b4b3f6cc4bf34e1d3dec61e69914b9819d8894"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "NBPL-1.0",
+            "shortName": null,
+            "category": "NBPL",
+            "alternativeNames": [
+                "NBPL, Version 1.0",
+                "NBPL, 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nb]/NBPL-1.0.yaml",
+            "otherIds": [
+                "scancode:nbpl-1.0"
+            ],
+            "canonicalName": "NBPL 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "NBPL 1.0",
+                    "NBPL-1.0",
+                    "scancode:nbpl-1.0"
+                ],
+                "__impliedId": "NBPL-1.0",
+                "__impliedAmbiguousNames": [
+                    "NBPL, Version 1.0",
+                    "NBPL, 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: NBPL"
+                        ]
                     ]
                 ]
             }

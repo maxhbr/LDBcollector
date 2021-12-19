@@ -11,6 +11,8 @@
 
 *Other Names:*
 
+* `Creative Commons BY-SA 1.0`
+* `scancode:cc-by-sa-1.0`
 * `Creative Commons ShareAlike 1.0 Generic`
 * `Creative Commons Attribution-ShareAlike 1.0 Generic`
 * `scancode://cc-by-sa-1.0`
@@ -50,6 +52,9 @@ permission to exercise his or her rights in the past, even if he or she
 has violated the terms of the License.'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: CC-BY-SA'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === URLs
 
@@ -169,6 +174,8 @@ Creative Commons may be contacted at http://creativecommons.org/.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-1.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
@@ -184,6 +191,8 @@ repository] is generated)
 {
     "__impliedNames": [
         "CC-BY-SA-1.0",
+        "Creative Commons BY-SA 1.0",
+        "scancode:cc-by-sa-1.0",
         "Creative Commons ShareAlike 1.0 Generic",
         "Creative Commons Attribution-ShareAlike 1.0 Generic",
         "Creative Commons Attribution Share Alike 1.0 Generic",
@@ -191,7 +200,10 @@ repository] is generated)
     ],
     "__impliedId": "CC-BY-SA-1.0",
     "__impliedAmbiguousNames": [
-        "Creative Commons Attribution-Share Alike Generic (CC-BY-SA), v1.0"
+        "Creative Commons Attribution-Share Alike Generic (CC-BY-SA), v1.0",
+        "Creative Commons Attribution Share Alike 1.0",
+        "CC-BY-SA-1.0",
+        "Creative Commons Attribution-ShareAlike 1.0"
     ],
     "__impliedComments": [
         [
@@ -199,6 +211,12 @@ repository] is generated)
             [
                 "https://creativecommons.org/licenses/sa/1.0/このサイトからLegalCodeを参照できる.",
                 "A collective work is a work that is composed of independent works, such as a periodical, poetry collection, or encyclopedia, assembled without modification. The works that constitute a collective work are not considered derivative works for the purposes of this license. A derivative work is a translation, arrangement, dramatization, fictionalization, film adaptation, sound recording, work of art, excerpt, abridgement, summary, or any other form of work that has been re-cast or altered. However, works that constitute a collective work are not considered derivative works under this license and are therefore excluded. Licensor\" means the person or entity making the work available under this license. A work is a copyrighted work and refers to a work offered under this license. The original author is the person or entity that created the work. A person or entity exercising rights under this License who has never previously violated the terms of this License with respect to his or her work, or who has expressly granted Licensor permission to exercise his or her rights in the past, even if he or she has violated the terms of the License."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CC-BY-SA"
             ]
         ]
     ],
@@ -460,6 +478,42 @@ repository] is generated)
                 ]
             },
             "description": "A collective work is a work that is composed of independent works, such as a periodical, poetry collection, or encyclopedia, assembled without modification. The works that constitute a collective work are not considered derivative works for the purposes of this license. A derivative work is a translation, arrangement, dramatization, fictionalization, film adaptation, sound recording, work of art, excerpt, abridgement, summary, or any other form of work that has been re-cast or altered. However, works that constitute a collective work are not considered derivative works under this license and are therefore excluded. Licensor\" means the person or entity making the work available under this license. A work is a copyrighted work and refers to a work offered under this license. The original author is the person or entity that created the work. A person or entity exercising rights under this License who has never previously violated the terms of this License with respect to his or her work, or who has expressly granted Licensor permission to exercise his or her rights in the past, even if he or she has violated the terms of the License."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CC-BY-SA-1.0",
+            "shortName": null,
+            "category": "CC-BY-SA",
+            "alternativeNames": [
+                "Creative Commons Attribution Share Alike 1.0",
+                "CC-BY-SA-1.0",
+                "Creative Commons Attribution-ShareAlike 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-1.0.yaml",
+            "otherIds": [
+                "scancode:cc-by-sa-1.0"
+            ],
+            "canonicalName": "Creative Commons BY-SA 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Creative Commons BY-SA 1.0",
+                    "CC-BY-SA-1.0",
+                    "scancode:cc-by-sa-1.0"
+                ],
+                "__impliedId": "CC-BY-SA-1.0",
+                "__impliedAmbiguousNames": [
+                    "Creative Commons Attribution Share Alike 1.0",
+                    "CC-BY-SA-1.0",
+                    "Creative Commons Attribution-ShareAlike 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CC-BY-SA"
+                        ]
+                    ]
+                ]
+            }
         },
         "Google OSS Policy": {
             "rating": "RESTRICTED",

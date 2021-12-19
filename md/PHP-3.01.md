@@ -4,11 +4,13 @@
 
 **Other Names:**
 
+-   `PHP License 3.01`
+
+-   `scancode:php-3.01`
+
 -   `PHP License, version 3.01`
 
 -   `scancode://php-3.01`
-
--   `PHP License 3.01`
 
 ## Comments on (easy) usability
 
@@ -21,6 +23,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: PHP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.01.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, the PHP License v3.01 is essentially the same as
     v3.0, with the exceoption of a couple word differences and updated
@@ -176,6 +182,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.01.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -195,12 +205,26 @@
         "__impliedNames": [
             "PHP-3.01",
             "PHP License v3.01",
+            "PHP License 3.01",
+            "scancode:php-3.01",
             "PHP License, version 3.01",
-            "scancode://php-3.01",
-            "PHP License 3.01"
+            "scancode://php-3.01"
         ],
         "__impliedId": "PHP-3.01",
+        "__impliedAmbiguousNames": [
+            "PHP, Version 3.01",
+            "PHP, 3.01",
+            "PHP License, Version 3.01",
+            "PHP License 3.01",
+            "PHP License, version 3.01"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: PHP"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -453,6 +477,46 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/812"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "PHP-3.01",
+                "shortName": null,
+                "category": "PHP",
+                "alternativeNames": [
+                    "PHP, Version 3.01",
+                    "PHP, 3.01",
+                    "PHP License, Version 3.01",
+                    "PHP License 3.01",
+                    "PHP License, version 3.01"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ph]/PHP-License-3.01.yaml",
+                "otherIds": [
+                    "scancode:php-3.01"
+                ],
+                "canonicalName": "PHP License 3.01",
+                "_implications": {
+                    "__impliedNames": [
+                        "PHP License 3.01",
+                        "PHP-3.01",
+                        "scancode:php-3.01"
+                    ],
+                    "__impliedId": "PHP-3.01",
+                    "__impliedAmbiguousNames": [
+                        "PHP, Version 3.01",
+                        "PHP, 3.01",
+                        "PHP License, Version 3.01",
+                        "PHP License 3.01",
+                        "PHP License, version 3.01"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: PHP"
+                            ]
                         ]
                     ]
                 }

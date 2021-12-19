@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:newsletr`
+
 -   `scancode://newsletr`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Newsletr” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Newsletr-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, This is a zlib variant, less restrictive. It was found
     on the component of texlive 2010. It is Free and GPL-compatible. ”
@@ -62,6 +68,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Newsletr-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Newsletr.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -74,14 +84,22 @@
         "__impliedNames": [
             "Newsletr",
             "Newsletr License",
+            "scancode:newsletr",
             "scancode://newsletr"
         ],
         "__impliedId": "Newsletr",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Newsletr"
+            "Newsletr",
+            "NEWSLETR"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Newsletr"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -199,6 +217,40 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Newsletr"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Newsletr",
+                "shortName": null,
+                "category": "Newsletr",
+                "alternativeNames": [
+                    "Newsletr",
+                    "NEWSLETR"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Newsletr-License.yaml",
+                "otherIds": [
+                    "scancode:newsletr"
+                ],
+                "canonicalName": "Newsletr License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Newsletr License",
+                        "Newsletr",
+                        "scancode:newsletr"
+                    ],
+                    "__impliedId": "Newsletr",
+                    "__impliedAmbiguousNames": [
+                        "Newsletr",
+                        "NEWSLETR"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Newsletr"
+                            ]
                         ]
                     ]
                 }

@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `scancode:cpl-0.5`
+
+-   `scancode:cpl-1.0`
+
+-   `osi:CPL-1.0`
+
 -   `Common Public License, Version 1.0`
 
 -   `CPL`
@@ -47,6 +53,10 @@
     third party.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: CPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Common-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was superseded by Eclipse Public
     License” (source:
@@ -379,6 +389,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Common-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/CPL-1.0.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -405,6 +419,9 @@
         "__impliedNames": [
             "CPL-1.0",
             "Common Public License 1.0",
+            "scancode:cpl-0.5",
+            "scancode:cpl-1.0",
+            "osi:CPL-1.0",
             "Common Public License, Version 1.0",
             "CPL",
             "License :: OSI Approved :: Common Public License",
@@ -415,7 +432,15 @@
         "__impliedId": "CPL-1.0",
         "__impliedAmbiguousNames": [
             "Common Public License",
-            "Common Public License (CPL), Version 1.0"
+            "Common Public License (CPL), Version 1.0",
+            "Common Public License, Version 1.0",
+            "CPL-v1.0",
+            "CPL-1.0",
+            "Common Public License (CPL) -- V1.0",
+            "Common Public License - v 1.0",
+            "Common Public License 1.0",
+            "Common Public License v1.0",
+            "Common Public License version 1.0"
         ],
         "__impliedComments": [
             [
@@ -428,6 +453,12 @@
                 "Hitachi open-license",
                 [
                     "Contributor\" means the person or entity that distributes the Software. A Contributor is included among all persons who receive the Software under such a license. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CPL"
                 ]
             ],
             [
@@ -1075,6 +1106,56 @@
                     ]
                 },
                 "description": "Contributor\" means the person or entity that distributes the Software. A Contributor is included among all persons who receive the Software under such a license. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CPL-1.0",
+                "shortName": null,
+                "category": "CPL",
+                "alternativeNames": [
+                    "Common Public License, Version 1.0",
+                    "CPL-v1.0",
+                    "CPL-1.0",
+                    "Common Public License (CPL) -- V1.0",
+                    "Common Public License - v 1.0",
+                    "Common Public License 1.0",
+                    "Common Public License v1.0",
+                    "Common Public License version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Common-Public-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:cpl-0.5",
+                    "scancode:cpl-1.0",
+                    "osi:CPL-1.0"
+                ],
+                "canonicalName": "Common Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Common Public License 1.0",
+                        "CPL-1.0",
+                        "scancode:cpl-0.5",
+                        "scancode:cpl-1.0",
+                        "osi:CPL-1.0"
+                    ],
+                    "__impliedId": "CPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Common Public License, Version 1.0",
+                        "CPL-v1.0",
+                        "CPL-1.0",
+                        "Common Public License (CPL) -- V1.0",
+                        "Common Public License - v 1.0",
+                        "Common Public License 1.0",
+                        "Common Public License v1.0",
+                        "Common Public License version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/CPL-1.0.html",

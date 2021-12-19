@@ -2,10 +2,29 @@
     "__impliedNames": [
         "TU-Berlin-2.0",
         "Technische Universitaet Berlin License 2.0",
-        "scancode://tu-berlin-2.0",
-        "TU Berlin License 2.0"
+        "TU Berlin License 2.0",
+        "scancode:tu-berlin-2.0",
+        "scancode://tu-berlin-2.0"
     ],
     "__impliedId": "TU-Berlin-2.0",
+    "__impliedAmbiguousNames": [
+        "TU Berlin, Version 2.0",
+        "TU Berlin 2.0",
+        "TU-Berlin, Version 2.0",
+        "TU-Berlin 2.0",
+        "TU Berlin License, Version 2.0",
+        "TU Berlin License 2.0",
+        "TU-Berlin License, Version 2.0",
+        "TU-Berlin License, 2.0"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: TU Berlin"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -85,6 +104,52 @@
                     [
                         null,
                         "https://github.com/CorsixTH/deps/blob/fd339a9f526d1d9c9f01ccf39e438a015da50035/licences/libgsm.txt"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "TU-Berlin-2.0",
+            "shortName": null,
+            "category": "TU Berlin",
+            "alternativeNames": [
+                "TU Berlin, Version 2.0",
+                "TU Berlin 2.0",
+                "TU-Berlin, Version 2.0",
+                "TU-Berlin 2.0",
+                "TU Berlin License, Version 2.0",
+                "TU Berlin License 2.0",
+                "TU-Berlin License, Version 2.0",
+                "TU-Berlin License, 2.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[tu]/TU-Berlin-License-2.0.yaml",
+            "otherIds": [
+                "scancode:tu-berlin-2.0"
+            ],
+            "canonicalName": "TU Berlin License 2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "TU Berlin License 2.0",
+                    "TU-Berlin-2.0",
+                    "scancode:tu-berlin-2.0"
+                ],
+                "__impliedId": "TU-Berlin-2.0",
+                "__impliedAmbiguousNames": [
+                    "TU Berlin, Version 2.0",
+                    "TU Berlin 2.0",
+                    "TU-Berlin, Version 2.0",
+                    "TU-Berlin 2.0",
+                    "TU Berlin License, Version 2.0",
+                    "TU Berlin License 2.0",
+                    "TU-Berlin License, Version 2.0",
+                    "TU-Berlin License, 2.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: TU Berlin"
+                        ]
                     ]
                 ]
             }

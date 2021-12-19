@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `MIT (NFA) License`
+
+-   `scancode:mit-no-false-attribs`
+
 -   `scancode://mit-no-false-attribs`
 
 -   `MIT no false attribution License`
@@ -20,6 +24,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: MITNFA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-(NFA)-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is based on the MIT license, but contains
     an additional section covering the removal of attributions in
@@ -131,6 +139,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-(NFA)-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -147,6 +159,8 @@
         "__impliedNames": [
             "MITNFA",
             "MIT +no-false-attribs license",
+            "MIT (NFA) License",
+            "scancode:mit-no-false-attribs",
             "MIT +no-false-attribs License",
             "scancode://mit-no-false-attribs",
             "MIT no false attribution License"
@@ -154,9 +168,16 @@
         "__impliedId": "MITNFA",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MITNFA"
+            "MITNFA",
+            "MIT +no-false-attribs license"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MITNFA"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -414,6 +435,40 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/698"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MITNFA",
+                "shortName": null,
+                "category": "MITNFA",
+                "alternativeNames": [
+                    "MITNFA",
+                    "MIT +no-false-attribs license"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-(NFA)-License.yaml",
+                "otherIds": [
+                    "scancode:mit-no-false-attribs"
+                ],
+                "canonicalName": "MIT (NFA) License",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT (NFA) License",
+                        "MITNFA",
+                        "scancode:mit-no-false-attribs"
+                    ],
+                    "__impliedId": "MITNFA",
+                    "__impliedAmbiguousNames": [
+                        "MITNFA",
+                        "MIT +no-false-attribs license"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MITNFA"
+                            ]
                         ]
                     ]
                 }

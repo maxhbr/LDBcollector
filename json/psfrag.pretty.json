@@ -2,13 +2,23 @@
     "__impliedNames": [
         "psfrag",
         "psfrag License",
+        "scancode:psfrag",
         "scancode://psfrag"
     ],
     "__impliedId": "psfrag",
     "__impliedAmbiguousNames": [
-        "psfrag"
+        "psfrag",
+        "psfrag License",
+        "PSFRAG LICENSE",
+        "PSFRAG License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: psfrag"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -125,6 +135,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/psfrag"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "psfrag",
+            "shortName": null,
+            "category": "psfrag",
+            "alternativeNames": [
+                "psfrag License",
+                "PSFRAG LICENSE",
+                "PSFRAG License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ps]/psfrag-License.yaml",
+            "otherIds": [
+                "scancode:psfrag"
+            ],
+            "canonicalName": "psfrag License",
+            "_implications": {
+                "__impliedNames": [
+                    "psfrag License",
+                    "psfrag",
+                    "scancode:psfrag"
+                ],
+                "__impliedId": "psfrag",
+                "__impliedAmbiguousNames": [
+                    "psfrag License",
+                    "PSFRAG LICENSE",
+                    "PSFRAG License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: psfrag"
+                        ]
                     ]
                 ]
             }

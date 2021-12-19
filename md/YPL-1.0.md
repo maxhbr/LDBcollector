@@ -4,13 +4,19 @@
 
 **Other Names:**
 
--   `scancode://ypl-1.0`
-
 -   `YPL 1.0`
+
+-   `scancode:ypl-1.0`
+
+-   `scancode://ypl-1.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: YPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[y]/[yp]/YPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -202,6 +208,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[y]/[yp]/YPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/YPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -213,11 +223,25 @@
     {
         "__impliedNames": [
             "YPL-1.0",
+            "YPL 1.0",
+            "scancode:ypl-1.0",
             "Yahoo! Public License v1.0",
-            "scancode://ypl-1.0",
-            "YPL 1.0"
+            "scancode://ypl-1.0"
         ],
         "__impliedId": "YPL-1.0",
+        "__impliedAmbiguousNames": [
+            "YPL, Version 1.0",
+            "YPL 1.0",
+            "Yahoo! Public License, Version 1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: YPL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -310,6 +334,42 @@
                 },
                 "licensename": "YPL-1.0",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "YPL-1.0",
+                "shortName": null,
+                "category": "YPL",
+                "alternativeNames": [
+                    "YPL, Version 1.0",
+                    "YPL 1.0",
+                    "Yahoo! Public License, Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[y]/[yp]/YPL-1.0.yaml",
+                "otherIds": [
+                    "scancode:ypl-1.0"
+                ],
+                "canonicalName": "YPL 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "YPL 1.0",
+                        "YPL-1.0",
+                        "scancode:ypl-1.0"
+                    ],
+                    "__impliedId": "YPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "YPL, Version 1.0",
+                        "YPL 1.0",
+                        "Yahoo! Public License, Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: YPL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

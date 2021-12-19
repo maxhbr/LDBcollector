@@ -2,6 +2,8 @@
     "__impliedNames": [
         "JasPer-2.0",
         "JasPer License",
+        "JasPer License 2.0",
+        "scancode:jasper-2.0",
         "JasPer License Version 2.0",
         "scancode://jasper-2.0",
         "JasPer 2.0"
@@ -9,7 +11,20 @@
     "__impliedId": "JasPer-2.0",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "JasPer"
+        "JasPer",
+        "JasPer, Version 2.0",
+        "JasPer 2.0",
+        "JasPer License, 2.0",
+        "JasPer License Version 2.0",
+        "JasPer License v2.0"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: JasPer"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -276,6 +291,46 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/764"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "JasPer-2.0",
+            "shortName": null,
+            "category": "JasPer",
+            "alternativeNames": [
+                "JasPer, Version 2.0",
+                "JasPer 2.0",
+                "JasPer License, 2.0",
+                "JasPer License Version 2.0",
+                "JasPer License v2.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[j]/[ja]/JasPer-License-2.0.yaml",
+            "otherIds": [
+                "scancode:jasper-2.0"
+            ],
+            "canonicalName": "JasPer License 2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "JasPer License 2.0",
+                    "JasPer-2.0",
+                    "scancode:jasper-2.0"
+                ],
+                "__impliedId": "JasPer-2.0",
+                "__impliedAmbiguousNames": [
+                    "JasPer, Version 2.0",
+                    "JasPer 2.0",
+                    "JasPer License, 2.0",
+                    "JasPer License Version 2.0",
+                    "JasPer License v2.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: JasPer"
+                        ]
                     ]
                 ]
             }

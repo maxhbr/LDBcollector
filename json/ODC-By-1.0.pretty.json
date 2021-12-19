@@ -1,12 +1,30 @@
 {
     "__impliedNames": [
         "ODC-By-1.0",
+        "ODC By License 1.0",
+        "scancode:odc-by-1.0",
         "ODC-BY-1.0",
         "Open Data Commons Attribution License 1.0",
         "Open Data Commons Attribution License v1.0",
         "scancode://odc-by-1.0"
     ],
     "__impliedId": "ODC-By-1.0",
+    "__impliedAmbiguousNames": [
+        "ODC By, Version 1.0",
+        "ODC By, 1.0",
+        "ODC By License, Version 1.0",
+        "ODC By License, 1.0",
+        "ODC Attribution License",
+        "ODC-By"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: ODC By"
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -114,6 +132,48 @@
                     [
                         null,
                         "https://opendatacommons.org/licenses/by/1.0/"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "ODC-By-1.0",
+            "shortName": null,
+            "category": "ODC By",
+            "alternativeNames": [
+                "ODC By, Version 1.0",
+                "ODC By, 1.0",
+                "ODC By License, Version 1.0",
+                "ODC By License, 1.0",
+                "ODC Attribution License",
+                "ODC-By"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[od]/ODC-By-License-1.0.yaml",
+            "otherIds": [
+                "scancode:odc-by-1.0"
+            ],
+            "canonicalName": "ODC By License 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "ODC By License 1.0",
+                    "ODC-By-1.0",
+                    "scancode:odc-by-1.0"
+                ],
+                "__impliedId": "ODC-By-1.0",
+                "__impliedAmbiguousNames": [
+                    "ODC By, Version 1.0",
+                    "ODC By, 1.0",
+                    "ODC By License, Version 1.0",
+                    "ODC By License, 1.0",
+                    "ODC Attribution License",
+                    "ODC-By"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: ODC By"
+                        ]
                     ]
                 ]
             }

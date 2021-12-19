@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `copyleft next License 0.3.0`
+
+-   `scancode:copyleft-next-0.3.0`
+
 -   `scancode://copyleft-next-0.3.0`
 
 ## Comments on (easy) usability
@@ -16,6 +20,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: copyleft next” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/copyleft-next-License-0.3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -262,6 +270,10 @@
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/copyleft-next-License-0.3.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/copyleft-next-0.3.0.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -274,17 +286,33 @@
         "__impliedNames": [
             "copyleft-next-0.3.0",
             "copyleft-next 0.3.0",
+            "copyleft next License 0.3.0",
+            "scancode:copyleft-next-0.3.0",
             "scancode://copyleft-next-0.3.0"
         ],
         "__impliedId": "copyleft-next-0.3.0",
         "__impliedAmbiguousNames": [
-            "copyleft-next"
+            "copyleft-next",
+            "copyleft next, Version 0.3.0",
+            "copyleft next 0.3.0",
+            "copyleft-next, Version 0.3.0",
+            "copyleft-next, 0.3.0",
+            "copyleft next License, Version 0.3.0",
+            "copyleft next License, 0.3.0",
+            "copyleft-next License, Version 0.3.0",
+            "copyleft-next License 0.3.0"
         ],
         "__impliedComments": [
             [
                 "BlueOak License List",
                 [
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: copyleft next"
                 ]
             ]
         ],
@@ -361,6 +389,52 @@
                         [
                             "Homepage",
                             "https://github.com/richardfontana/copyleft-next/blob/master/Releases/copyleft-next-0.3.0"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "copyleft-next-0.3.0",
+                "shortName": null,
+                "category": "copyleft next",
+                "alternativeNames": [
+                    "copyleft next, Version 0.3.0",
+                    "copyleft next 0.3.0",
+                    "copyleft-next, Version 0.3.0",
+                    "copyleft-next, 0.3.0",
+                    "copyleft next License, Version 0.3.0",
+                    "copyleft next License, 0.3.0",
+                    "copyleft-next License, Version 0.3.0",
+                    "copyleft-next License 0.3.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/copyleft-next-License-0.3.0.yaml",
+                "otherIds": [
+                    "scancode:copyleft-next-0.3.0"
+                ],
+                "canonicalName": "copyleft next License 0.3.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "copyleft next License 0.3.0",
+                        "copyleft-next-0.3.0",
+                        "scancode:copyleft-next-0.3.0"
+                    ],
+                    "__impliedId": "copyleft-next-0.3.0",
+                    "__impliedAmbiguousNames": [
+                        "copyleft next, Version 0.3.0",
+                        "copyleft next 0.3.0",
+                        "copyleft-next, Version 0.3.0",
+                        "copyleft-next, 0.3.0",
+                        "copyleft next License, Version 0.3.0",
+                        "copyleft next License, 0.3.0",
+                        "copyleft-next License, Version 0.3.0",
+                        "copyleft-next License 0.3.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: copyleft next"
+                            ]
                         ]
                     ]
                 }

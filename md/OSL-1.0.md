@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:osl-1.0`
+
+-   `osi:OSL-1.0`
+
 -   `Open Software License, Version 1.0`
 
 -   `scancode://osl-1.0`
@@ -41,6 +45,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: OSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was OSI certified. This license has been
     superseded. ” (source:
@@ -254,6 +262,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -269,6 +281,8 @@
         "__impliedNames": [
             "OSL-1.0",
             "Open Software License 1.0",
+            "scancode:osl-1.0",
+            "osi:OSL-1.0",
             "Open Software License, Version 1.0",
             "scancode://osl-1.0",
             "OSL 1.0"
@@ -277,7 +291,10 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Open Software License",
-            "OSL 1.0"
+            "OSL 1.0",
+            "OSL, Version 1.0",
+            "Open Software License v. 1.0",
+            "Open Software License version 1.0"
         ],
         "__impliedComments": [
             [
@@ -285,6 +302,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OSL"
                 ]
             ],
             [
@@ -468,6 +491,46 @@
                 },
                 "licensename": "OSL-1.0",
                 "copyleftkind": "StrongCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OSL-1.0",
+                "shortName": null,
+                "category": "OSL",
+                "alternativeNames": [
+                    "OSL, Version 1.0",
+                    "OSL 1.0",
+                    "Open Software License v. 1.0",
+                    "Open Software License version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:osl-1.0",
+                    "osi:OSL-1.0"
+                ],
+                "canonicalName": "Open Software License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Software License 1.0",
+                        "OSL-1.0",
+                        "scancode:osl-1.0",
+                        "osi:OSL-1.0"
+                    ],
+                    "__impliedId": "OSL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "OSL, Version 1.0",
+                        "OSL 1.0",
+                        "Open Software License v. 1.0",
+                        "Open Software License version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OSL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/OSL-1.0.html",

@@ -2,9 +2,25 @@
     "__impliedNames": [
         "BSD-Source-Code",
         "BSD Source Code Attribution",
+        "BSD Source Code License",
+        "scancode:bsd-source-code",
         "scancode://bsd-source-code"
     ],
     "__impliedId": "BSD-Source-Code",
+    "__impliedAmbiguousNames": [
+        "BSD Source Code",
+        "BSD SOURCE CODE",
+        "BSD-Source-Code",
+        "BSD-SOURCE-CODE"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: BSD Source Code"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -78,6 +94,44 @@
                     [
                         "Homepage",
                         "https://github.com/infusion/PHP/blob/master/TSRM/LICENSE"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "BSD-Source-Code",
+            "shortName": null,
+            "category": "BSD Source Code",
+            "alternativeNames": [
+                "BSD Source Code",
+                "BSD SOURCE CODE",
+                "BSD-Source-Code",
+                "BSD-SOURCE-CODE"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-Source-Code-License.yaml",
+            "otherIds": [
+                "scancode:bsd-source-code"
+            ],
+            "canonicalName": "BSD Source Code License",
+            "_implications": {
+                "__impliedNames": [
+                    "BSD Source Code License",
+                    "BSD-Source-Code",
+                    "scancode:bsd-source-code"
+                ],
+                "__impliedId": "BSD-Source-Code",
+                "__impliedAmbiguousNames": [
+                    "BSD Source Code",
+                    "BSD SOURCE CODE",
+                    "BSD-Source-Code",
+                    "BSD-SOURCE-CODE"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: BSD Source Code"
+                        ]
                     ]
                 ]
             }

@@ -8,6 +8,10 @@
 
 -   `BSL (v1)`
 
+-   `scancode:boost-1.0`
+
+-   `osi:BSL-1.0`
+
 -   `bsl1.0`
 
 -   `Boost Software License 1.0 (BSL-1.0)`
@@ -43,6 +47,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bo]/Boost-Software-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this version was released 17 August 2003 This license
     is OSI certifified. ” (source:
@@ -174,6 +182,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bo]/Boost-Software-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -213,6 +225,8 @@
             "BSL (v1)",
             "Boost Software License 1.0",
             "bsl-1.0",
+            "scancode:boost-1.0",
+            "osi:BSL-1.0",
             "bsl1.0",
             "Boost Software License 1.0 (BSL-1.0)",
             "Boost Software License - Version 1.0",
@@ -220,7 +234,22 @@
             "Boost 1.0"
         ],
         "__impliedId": "BSL-1.0",
+        "__impliedAmbiguousNames": [
+            "BSL-1.0",
+            "BSL 1.0",
+            "BSL Version 1.0",
+            "BSL v1.0",
+            "Boost Software License - Version 1.0",
+            "Boost Software License, Version 1.0",
+            "Boost Software License v1.0"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -549,6 +578,52 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/390"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSL-1.0",
+                "shortName": null,
+                "category": "BSL",
+                "alternativeNames": [
+                    "BSL-1.0",
+                    "BSL 1.0",
+                    "BSL Version 1.0",
+                    "BSL v1.0",
+                    "Boost Software License - Version 1.0",
+                    "Boost Software License, Version 1.0",
+                    "Boost Software License v1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bo]/Boost-Software-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:boost-1.0",
+                    "osi:BSL-1.0"
+                ],
+                "canonicalName": "Boost Software License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Boost Software License 1.0",
+                        "BSL-1.0",
+                        "scancode:boost-1.0",
+                        "osi:BSL-1.0"
+                    ],
+                    "__impliedId": "BSL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "BSL-1.0",
+                        "BSL 1.0",
+                        "BSL Version 1.0",
+                        "BSL v1.0",
+                        "Boost Software License - Version 1.0",
+                        "Boost Software License, Version 1.0",
+                        "Boost Software License v1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSL"
+                            ]
                         ]
                     ]
                 }

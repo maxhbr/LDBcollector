@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:zed`
+
 -   `scancode://zed`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Zed” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[ze]/Zed-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -49,6 +55,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[ze]/Zed-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Zed.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -61,12 +71,24 @@
         "__impliedNames": [
             "Zed",
             "Zed License",
+            "scancode:zed",
             "scancode://zed"
         ],
         "__impliedId": "Zed",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Zed"
+            "Zed",
+            "Zed License",
+            "ZED LICENSE",
+            "ZED License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Zed"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -170,6 +192,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Zed"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Zed",
+                "shortName": null,
+                "category": "Zed",
+                "alternativeNames": [
+                    "Zed License",
+                    "ZED LICENSE",
+                    "ZED License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[ze]/Zed-License.yaml",
+                "otherIds": [
+                    "scancode:zed"
+                ],
+                "canonicalName": "Zed License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Zed License",
+                        "Zed",
+                        "scancode:zed"
+                    ],
+                    "__impliedId": "Zed",
+                    "__impliedAmbiguousNames": [
+                        "Zed License",
+                        "ZED LICENSE",
+                        "ZED License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Zed"
+                            ]
                         ]
                     ]
                 }

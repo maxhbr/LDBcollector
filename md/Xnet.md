@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `MIT License (X.Net)`
+
+-   `scancode:xnet`
+
+-   `osi:Xnet`
+
 -   `The X.Net, Inc. License`
 
 -   `License :: OSI Approved :: X.Net License`
@@ -33,6 +39,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: MIT” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(X.Net).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified. This License has been
     voluntarily deprecated by its author. ” (source:
@@ -92,6 +102,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(X.Net).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -114,13 +128,29 @@
         "__impliedNames": [
             "Xnet",
             "X.Net License",
+            "MIT License (X.Net)",
+            "scancode:xnet",
+            "osi:Xnet",
             "The X.Net, Inc. License",
             "License :: OSI Approved :: X.Net License",
             "scancode://xnet",
             "Altera License"
         ],
         "__impliedId": "Xnet",
+        "__impliedAmbiguousNames": [
+            "X.Net License",
+            "Xnet license",
+            "Xnet License",
+            "XNet license",
+            "XNet License"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MIT"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -300,6 +330,48 @@
                 "_implications": {
                     "__impliedNames": [
                         "Xnet"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Xnet",
+                "shortName": null,
+                "category": "MIT",
+                "alternativeNames": [
+                    "X.Net License",
+                    "Xnet license",
+                    "Xnet License",
+                    "XNet license",
+                    "XNet License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-License-(X.Net).yaml",
+                "otherIds": [
+                    "scancode:xnet",
+                    "osi:Xnet"
+                ],
+                "canonicalName": "MIT License (X.Net)",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT License (X.Net)",
+                        "Xnet",
+                        "scancode:xnet",
+                        "osi:Xnet"
+                    ],
+                    "__impliedId": "Xnet",
+                    "__impliedAmbiguousNames": [
+                        "X.Net License",
+                        "Xnet license",
+                        "Xnet License",
+                        "XNet license",
+                        "XNet License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MIT"
+                            ]
+                        ]
                     ]
                 }
             },

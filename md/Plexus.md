@@ -6,6 +6,14 @@
 
 -   `DOM4J License`
 
+-   `DOM4J`
+
+-   `scancode:dom4j`
+
+-   `Plexus License`
+
+-   `scancode:classworlds`
+
 -   `scancode://dom4j`
 
 -   `Dom4j License`
@@ -28,6 +36,10 @@
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: DOM4J” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOM4J-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this is an Apache 1.1 derived license. Unfortunately,
     clause 4 is too broad, making it Free but GPL-incompatible. It does
@@ -160,6 +172,14 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOM4J-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pl]/Plexus-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -180,19 +200,33 @@
             "Plexus",
             "Plexus Classworlds License",
             "DOM4J License",
+            "DOM4J",
+            "scancode:dom4j",
+            "Plexus License",
+            "scancode:classworlds",
             "scancode://dom4j",
             "Dom4j License"
         ],
         "__impliedId": "Plexus",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Plexus"
+            "Plexus",
+            "DOM4J License",
+            "Plexus License",
+            "PLEXUS LICENSE",
+            "PLEXUS License"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: DOM4J"
                 ]
             ],
             [
@@ -475,6 +509,38 @@
                     ]
                 },
                 "description": "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "DOM4J",
+                "category": "DOM4J",
+                "alternativeNames": [
+                    "DOM4J License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOM4J-License.yaml",
+                "otherIds": [
+                    "scancode:dom4j"
+                ],
+                "canonicalName": "DOM4J License",
+                "_implications": {
+                    "__impliedNames": [
+                        "DOM4J License",
+                        "DOM4J",
+                        "scancode:dom4j"
+                    ],
+                    "__impliedId": "DOM4J",
+                    "__impliedAmbiguousNames": [
+                        "DOM4J License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: DOM4J"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

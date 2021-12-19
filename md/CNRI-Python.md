@@ -4,6 +4,18 @@
 
 **Other Names:**
 
+-   `CNRI Open Source License Agreement (Python 1.6)`
+
+-   `CNRI-Python-1.6`
+
+-   `scancode:cnri-python-1.6`
+
+-   `CNRI Open Source License Agreement (Python 1.6b1)`
+
+-   `CNRI-Python-1.6b1`
+
+-   `osi:CNRI-Python`
+
 -   `CNRI portion of the multi-part Python License`
 
 -   `License :: OSI Approved :: Python License (CNRI Python License)`
@@ -34,6 +46,10 @@
     agreement between CNRI and Licensee.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: CNRI Open Source License Agreement” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cn]/CNRI-Open-Source-License-Agreement-(Python-1.6).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “per SPDX.org, CNRI portion of the multi-part Python License
     (Python-2.0)” (source:
@@ -157,6 +173,14 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cn]/CNRI-Open-Source-License-Agreement-(Python-1.6).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cn]/CNRI-Open-Source-License-Agreement-(Python-1.6b1).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -183,6 +207,12 @@
         "__impliedNames": [
             "CNRI-Python",
             "CNRI Python License",
+            "CNRI Open Source License Agreement (Python 1.6)",
+            "CNRI-Python-1.6",
+            "scancode:cnri-python-1.6",
+            "CNRI Open Source License Agreement (Python 1.6b1)",
+            "CNRI-Python-1.6b1",
+            "osi:CNRI-Python",
             "CNRI portion of the multi-part Python License",
             "License :: OSI Approved :: Python License (CNRI Python License)",
             "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1",
@@ -190,11 +220,28 @@
             "CNRI Python 1.6"
         ],
         "__impliedId": "CNRI-Python",
+        "__impliedAmbiguousNames": [
+            "http://www.handle.net/python_licenses/python1.6_9-5-00.html",
+            "CNRI OPEN SOURCE GPL-COMPATIBLE LICENSE AGREEMENT",
+            "CNRI Python",
+            "CNRI PYTHON",
+            "CNRI-Python",
+            "CNRI-PYTHON",
+            "http://spdx.org/licenses/CNRI-Python",
+            "https://spdx.org/licenses/cnri-python",
+            "http://www.opensource.org/licenses/CNRI-Python"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "This License Agreement is between the Corporation for National Research Initiatives (\"CNRI\") and any person who accesses or uses the source code, binaries, or related documentation of the software or It is entered into with the Organization. This License Agreement does not constitute an agency, partnership or joint venture agreement between CNRI and Licensee."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CNRI Open Source License Agreement"
                 ]
             ],
             [
@@ -567,6 +614,48 @@
                     ]
                 },
                 "description": "This License Agreement is between the Corporation for National Research Initiatives (\"CNRI\") and any person who accesses or uses the source code, binaries, or related documentation of the software or It is entered into with the Organization. This License Agreement does not constitute an agency, partnership or joint venture agreement between CNRI and Licensee."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "CNRI-Python-1.6",
+                "category": "CNRI Open Source License Agreement",
+                "alternativeNames": [
+                    "http://www.handle.net/python_licenses/python1.6_9-5-00.html",
+                    "CNRI OPEN SOURCE GPL-COMPATIBLE LICENSE AGREEMENT",
+                    "CNRI Python",
+                    "CNRI PYTHON",
+                    "CNRI-Python",
+                    "CNRI-PYTHON"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cn]/CNRI-Open-Source-License-Agreement-(Python-1.6).yaml",
+                "otherIds": [
+                    "scancode:cnri-python-1.6"
+                ],
+                "canonicalName": "CNRI Open Source License Agreement (Python 1.6)",
+                "_implications": {
+                    "__impliedNames": [
+                        "CNRI Open Source License Agreement (Python 1.6)",
+                        "CNRI-Python-1.6",
+                        "scancode:cnri-python-1.6"
+                    ],
+                    "__impliedId": "CNRI-Python-1.6",
+                    "__impliedAmbiguousNames": [
+                        "http://www.handle.net/python_licenses/python1.6_9-5-00.html",
+                        "CNRI OPEN SOURCE GPL-COMPATIBLE LICENSE AGREEMENT",
+                        "CNRI Python",
+                        "CNRI PYTHON",
+                        "CNRI-Python",
+                        "CNRI-PYTHON"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CNRI Open Source License Agreement"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

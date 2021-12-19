@@ -2,6 +2,7 @@
     "__impliedNames": [
         "Beerware",
         "Beerware License",
+        "scancode:beerware",
         "scancode://beerware",
         "Beer-Ware License",
         "Beerware 42"
@@ -9,7 +10,16 @@
     "__impliedId": "Beerware",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Beerware"
+        "Beerware",
+        "BEERWARE"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Beerware"
+            ]
+        ]
     ],
     "__hasPatentHint": false,
     "facts": {
@@ -144,6 +154,40 @@
             },
             "licensename": "Beerware",
             "copyleftkind": "NoCopyleft"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Beerware",
+            "shortName": null,
+            "category": "Beerware",
+            "alternativeNames": [
+                "Beerware",
+                "BEERWARE"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[be]/Beerware-License.yaml",
+            "otherIds": [
+                "scancode:beerware"
+            ],
+            "canonicalName": "Beerware License",
+            "_implications": {
+                "__impliedNames": [
+                    "Beerware License",
+                    "Beerware",
+                    "scancode:beerware"
+                ],
+                "__impliedId": "Beerware",
+                "__impliedAmbiguousNames": [
+                    "Beerware",
+                    "BEERWARE"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Beerware"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

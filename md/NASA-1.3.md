@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `NASA License 1.3`
+
+-   `scancode:nasa-1.3`
+
+-   `osi:NASA-1.3`
+
 -   `nasa1.3`
 
 -   `NASA Open Source Agreement, Version 1.3`
@@ -23,6 +29,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: NASA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/NASA-License-1.3.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.yml "Scancode")
@@ -168,6 +178,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/NASA-License-1.3.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -190,13 +204,29 @@
         "__impliedNames": [
             "NASA-1.3",
             "NASA Open Source Agreement 1.3",
+            "NASA License 1.3",
+            "scancode:nasa-1.3",
+            "osi:NASA-1.3",
             "nasa1.3",
             "NASA Open Source Agreement, Version 1.3",
             "scancode://nasa-1.3",
             "NASA 1.3"
         ],
         "__impliedId": "NASA-1.3",
+        "__impliedAmbiguousNames": [
+            "NASA, Version 1.3",
+            "NASA, 1.3",
+            "NASA License, Version 1.3",
+            "NASA License, 1.3",
+            "NASA OPEN SOURCE AGREEMENT VERSION 1.3"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NASA"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -383,6 +413,48 @@
                 "_implications": {
                     "__impliedNames": [
                         "NASA-1.3"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NASA-1.3",
+                "shortName": null,
+                "category": "NASA",
+                "alternativeNames": [
+                    "NASA, Version 1.3",
+                    "NASA, 1.3",
+                    "NASA License, Version 1.3",
+                    "NASA License, 1.3",
+                    "NASA OPEN SOURCE AGREEMENT VERSION 1.3"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/NASA-License-1.3.yaml",
+                "otherIds": [
+                    "scancode:nasa-1.3",
+                    "osi:NASA-1.3"
+                ],
+                "canonicalName": "NASA License 1.3",
+                "_implications": {
+                    "__impliedNames": [
+                        "NASA License 1.3",
+                        "NASA-1.3",
+                        "scancode:nasa-1.3",
+                        "osi:NASA-1.3"
+                    ],
+                    "__impliedId": "NASA-1.3",
+                    "__impliedAmbiguousNames": [
+                        "NASA, Version 1.3",
+                        "NASA, 1.3",
+                        "NASA License, Version 1.3",
+                        "NASA License, 1.3",
+                        "NASA OPEN SOURCE AGREEMENT VERSION 1.3"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NASA"
+                            ]
+                        ]
                     ]
                 }
             },

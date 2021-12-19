@@ -2,12 +2,22 @@
     "__impliedNames": [
         "Cube",
         "Cube License",
+        "scancode:cube",
         "scancode://cube"
     ],
     "__impliedId": "Cube",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Cube"
+        "Cube",
+        "Cube License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Cube"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +121,38 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Cube"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Cube",
+            "shortName": null,
+            "category": "Cube",
+            "alternativeNames": [
+                "Cube License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/Cube-License.yaml",
+            "otherIds": [
+                "scancode:cube"
+            ],
+            "canonicalName": "Cube License",
+            "_implications": {
+                "__impliedNames": [
+                    "Cube License",
+                    "Cube",
+                    "scancode:cube"
+                ],
+                "__impliedId": "Cube",
+                "__impliedAmbiguousNames": [
+                    "Cube License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Cube"
+                        ]
                     ]
                 ]
             }

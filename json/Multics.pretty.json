@@ -2,10 +2,23 @@
     "__impliedNames": [
         "Multics",
         "Multics License",
+        "scancode:multics",
+        "osi:Multics",
         "scancode://multics"
     ],
     "__impliedId": "Multics",
+    "__impliedAmbiguousNames": [
+        "Multics License",
+        "MULTICS LICENSE",
+        "MULTICS License"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Multics"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -162,6 +175,44 @@
             "_implications": {
                 "__impliedNames": [
                     "Multics"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Multics",
+            "shortName": null,
+            "category": "Multics",
+            "alternativeNames": [
+                "Multics License",
+                "MULTICS LICENSE",
+                "MULTICS License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mu]/Multics-License.yaml",
+            "otherIds": [
+                "scancode:multics",
+                "osi:Multics"
+            ],
+            "canonicalName": "Multics License",
+            "_implications": {
+                "__impliedNames": [
+                    "Multics License",
+                    "Multics",
+                    "scancode:multics",
+                    "osi:Multics"
+                ],
+                "__impliedId": "Multics",
+                "__impliedAmbiguousNames": [
+                    "Multics License",
+                    "MULTICS LICENSE",
+                    "MULTICS License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Multics"
+                        ]
+                    ]
                 ]
             }
         },

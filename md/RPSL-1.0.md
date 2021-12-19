@@ -6,6 +6,10 @@
 
 -   `RealNetworks Public Source License 1.0`
 
+-   `scancode:rpsl-1.0`
+
+-   `osi:RPSL-1.0`
+
 -   `RealNetworks Public Source License, Version 1.0`
 
 -   `scancode://rpsl-1.0`
@@ -43,6 +47,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: RPSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[re]/RealNetworks-Public-Source-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “This license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpsl-1.0.yml "Scancode")
@@ -602,6 +610,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[re]/RealNetworks-Public-Source-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -626,6 +638,8 @@
             "RealNetworks Public Source License v1.0",
             "RealNetworks Public Source License V1.0",
             "RealNetworks Public Source License 1.0",
+            "scancode:rpsl-1.0",
+            "osi:RPSL-1.0",
             "RealNetworks Public Source License, Version 1.0",
             "scancode://rpsl-1.0"
         ],
@@ -634,7 +648,10 @@
         "__impliedAmbiguousNames": [
             "RealNetworks Public Source License",
             "RealNetworks Public Source License (RPSL)",
-            "RPSL"
+            "RPSL",
+            "RPSL, Version 1.0",
+            "RPSL, 1.0",
+            "RealNetworks Public Source License Version 1.0"
         ],
         "__impliedComments": [
             [
@@ -642,6 +659,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: RPSL"
                 ]
             ],
             [
@@ -865,6 +888,44 @@
                 },
                 "Comment": null,
                 "LicenseId": "RPSL-1.0"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "RPSL-1.0",
+                "shortName": null,
+                "category": "RPSL",
+                "alternativeNames": [
+                    "RPSL, Version 1.0",
+                    "RPSL, 1.0",
+                    "RealNetworks Public Source License Version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[re]/RealNetworks-Public-Source-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:rpsl-1.0",
+                    "osi:RPSL-1.0"
+                ],
+                "canonicalName": "RealNetworks Public Source License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "RealNetworks Public Source License 1.0",
+                        "RPSL-1.0",
+                        "scancode:rpsl-1.0",
+                        "osi:RPSL-1.0"
+                    ],
+                    "__impliedId": "RPSL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "RPSL, Version 1.0",
+                        "RPSL, 1.0",
+                        "RealNetworks Public Source License Version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: RPSL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/RPSL-1.0.html",

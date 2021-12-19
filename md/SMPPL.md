@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:smppl`
+
 -   `scancode://smppl`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: SMPPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Secure-Messaging-Protocol-Public-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -56,6 +62,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Secure-Messaging-Protocol-Public-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SMPPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -68,9 +78,23 @@
         "__impliedNames": [
             "SMPPL",
             "Secure Messaging Protocol Public License",
+            "scancode:smppl",
             "scancode://smppl"
         ],
         "__impliedId": "SMPPL",
+        "__impliedAmbiguousNames": [
+            "SMP Public License",
+            "Secure Messaging Protocol (SMP) Public License",
+            "Secure Messaging Protocol Public License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SMPPL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -144,6 +168,42 @@
                         [
                             "Homepage",
                             "https://github.com/dcblake/SMP/blob/master/Documentation/License.txt"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SMPPL",
+                "shortName": null,
+                "category": "SMPPL",
+                "alternativeNames": [
+                    "SMP Public License",
+                    "Secure Messaging Protocol (SMP) Public License",
+                    "Secure Messaging Protocol Public License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Secure-Messaging-Protocol-Public-License.yaml",
+                "otherIds": [
+                    "scancode:smppl"
+                ],
+                "canonicalName": "Secure Messaging Protocol Public License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Secure Messaging Protocol Public License",
+                        "SMPPL",
+                        "scancode:smppl"
+                    ],
+                    "__impliedId": "SMPPL",
+                    "__impliedAmbiguousNames": [
+                        "SMP Public License",
+                        "Secure Messaging Protocol (SMP) Public License",
+                        "Secure Messaging Protocol Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SMPPL"
+                            ]
                         ]
                     ]
                 }

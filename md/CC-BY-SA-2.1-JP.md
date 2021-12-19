@@ -2,9 +2,17 @@
 
 [TABLE]
 
+**Other Names:**
+
+-   `Creative Commons BY-SA 2.1 (JP)`
+
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: CC-BY-SA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.1-(JP).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -20,6 +28,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.1-(JP).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-SA-2.1-JP.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -28,9 +40,21 @@
     {
         "__impliedNames": [
             "CC-BY-SA-2.1-JP",
+            "Creative Commons BY-SA 2.1 (JP)",
             "Creative Commons Attribution Share Alike 2.1 Japan"
         ],
         "__impliedId": "CC-BY-SA-2.1-JP",
+        "__impliedAmbiguousNames": [
+            "CC-BY-SA-2.1-JP"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-SA"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -70,6 +94,35 @@
                     ]
                 },
                 "spdxLicenseId": "CC-BY-SA-2.1-JP"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-SA-2.1-JP",
+                "shortName": null,
+                "category": "CC-BY-SA",
+                "alternativeNames": [
+                    "CC-BY-SA-2.1-JP"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.1-(JP).yaml",
+                "otherIds": [],
+                "canonicalName": "Creative Commons BY-SA 2.1 (JP)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY-SA 2.1 (JP)",
+                        "CC-BY-SA-2.1-JP"
+                    ],
+                    "__impliedId": "CC-BY-SA-2.1-JP",
+                    "__impliedAmbiguousNames": [
+                        "CC-BY-SA-2.1-JP"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-SA"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__isOsiApproved": false,

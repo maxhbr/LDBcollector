@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Norwegian Licence (Open Government Data)`
+
+-   `scancode:nlod-1.0`
+
 -   `scancode://nlod-1.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: NLOD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Norwegian-Licence-(Open-Government-Data).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -107,6 +115,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Norwegian-Licence-(Open-Government-Data).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/NLOD-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -118,10 +130,24 @@
     {
         "__impliedNames": [
             "NLOD-1.0",
+            "Norwegian Licence (Open Government Data)",
+            "scancode:nlod-1.0",
             "Norwegian Licence for Open Government Data (NLOD) 1.0",
             "scancode://nlod-1.0"
         ],
         "__impliedId": "NLOD-1.0",
+        "__impliedAmbiguousNames": [
+            "Norwegian Licence for Open Government Data",
+            "NLOD-1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NLOD"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -201,6 +227,40 @@
                         [
                             null,
                             "http://data.norge.no/nlod/no/1.0"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NLOD-1.0",
+                "shortName": null,
+                "category": "NLOD",
+                "alternativeNames": [
+                    "Norwegian Licence for Open Government Data",
+                    "NLOD-1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Norwegian-Licence-(Open-Government-Data).yaml",
+                "otherIds": [
+                    "scancode:nlod-1.0"
+                ],
+                "canonicalName": "Norwegian Licence (Open Government Data)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Norwegian Licence (Open Government Data)",
+                        "NLOD-1.0",
+                        "scancode:nlod-1.0"
+                    ],
+                    "__impliedId": "NLOD-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Norwegian Licence for Open Government Data",
+                        "NLOD-1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NLOD"
+                            ]
                         ]
                     ]
                 }

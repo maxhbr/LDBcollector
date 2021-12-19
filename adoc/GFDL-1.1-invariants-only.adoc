@@ -11,12 +11,16 @@
 
 *Other Names:*
 
+* `GNU Free Documentation License 1.1 (invariants)`
 * `scancode://gfdl-1.1-invariants-only`
 
 === Comments on (easy) usability
 
 === General Comments
 
+* ``category: GFDL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Free-Documentation-License-1.1-(invariants).yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per SPDX.org, this license was released March 2000 The identifier
 GFDL-1.1-invariants-only should only be used when there are Invariant
 Sections, Front-Cover Texts or Back-Cover Texts. See GFDL-1.1-only and
@@ -403,6 +407,8 @@ to permit their use in free software.
 ==== Facts
 
 * LicenseName
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Free-Documentation-License-1.1-(invariants).yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/GFDL-1.1-invariants-only.html[SPDX] (all
 data [in this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1-invariants-only.yml[Scancode]
@@ -414,11 +420,22 @@ data [in this repository] is generated)
 {
     "__impliedNames": [
         "GFDL-1.1-invariants-only",
+        "GNU Free Documentation License 1.1 (invariants)",
         "GNU Free Documentation License v1.1 only - invariants",
         "scancode://gfdl-1.1-invariants-only"
     ],
     "__impliedId": "GFDL-1.1-invariants-only",
+    "__impliedAmbiguousNames": [
+        "GFDL-1.1-invariants-only",
+        "GNU Free Documentation License v1.1 only - invariants"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: GFDL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -523,6 +540,37 @@ data [in this repository] is generated)
                     [
                         null,
                         "https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "GFDL-1.1-invariants-only",
+            "shortName": null,
+            "category": "GFDL",
+            "alternativeNames": [
+                "GFDL-1.1-invariants-only",
+                "GNU Free Documentation License v1.1 only - invariants"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Free-Documentation-License-1.1-(invariants).yaml",
+            "otherIds": [],
+            "canonicalName": "GNU Free Documentation License 1.1 (invariants)",
+            "_implications": {
+                "__impliedNames": [
+                    "GNU Free Documentation License 1.1 (invariants)",
+                    "GFDL-1.1-invariants-only"
+                ],
+                "__impliedId": "GFDL-1.1-invariants-only",
+                "__impliedAmbiguousNames": [
+                    "GFDL-1.1-invariants-only",
+                    "GNU Free Documentation License v1.1 only - invariants"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: GFDL"
+                        ]
                     ]
                 ]
             }

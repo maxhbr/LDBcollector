@@ -14,6 +14,10 @@
 
 - =GPL1+=
 
+- =GNU General Public License 1.0 (or any later version)=
+
+- =scancode:gpl-1.0-plus=
+
 - =scancode://gpl-1.0-plus=
 
 - =GPL 1.0 or later=
@@ -43,6 +47,10 @@
   you build with the licensed software, when you give copies to others."
   (source: [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
+
+- "category: GPL" (source:
+  [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-1.0-(or-any-later-version).yaml][Metaeffekt
+  Universe]] (CC-BY-4.0))
 
 - "Per SPDX.org, this license was released February 1989." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml][Scancode]]
@@ -355,6 +363,9 @@
   license-compatibility]]
   ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
 
+- [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-1.0-(or-any-later-version).yaml][Metaeffekt
+  Universe]] (CC-BY-4.0)
+
 - [[https://spdx.org/licenses/GPL-1.0-or-later.html][SPDX]] (all data
   [in this repository] is generated)
 
@@ -370,6 +381,8 @@
           "GPL1.0+",
           "GPL1+",
           "GNU General Public License v1.0 or later",
+          "GNU General Public License 1.0 (or any later version)",
+          "scancode:gpl-1.0-plus",
           "scancode://gpl-1.0-plus",
           "GPL 1.0 or later"
       ],
@@ -378,13 +391,29 @@
       "__impliedAmbiguousNames": [
           "GNU General Public License",
           "The GNU General Public License (GPL)",
-          "GPL+"
+          "GPL+",
+          "GNU General Public License, Version 1.0+",
+          "GNU General Public License, Version 1+",
+          "GNU General Public License, version 1+",
+          "GPL 1.0+",
+          "GPL-1+",
+          "GPL-1.0+",
+          "GPL version 1 or later",
+          "GPL version 1.0 or later",
+          "GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version",
+          "GNU General Public License, version 1 or later"
       ],
       "__impliedComments": [
           [
               "BlueOak License List",
               [
                   "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+              ]
+          ],
+          [
+              "Metaeffekt Universe",
+              [
+                  "category: GPL"
               ]
           ],
           [
@@ -575,6 +604,57 @@
               "oJudgement": null,
               "oCompatibilities": null,
               "oRatingState": null
+          },
+          "Metaeffekt Universe": {
+              "spdxIdentifier": "GPL-1.0-or-later",
+              "shortName": "GPL-1.0+",
+              "category": "GPL",
+              "alternativeNames": [
+                  "GNU General Public License, Version 1.0+",
+                  "GNU General Public License, Version 1+",
+                  "GNU General Public License, version 1+",
+                  "GPL 1.0+",
+                  "GPL-1+",
+                  "GPL-1.0+",
+                  "GPL version 1 or later",
+                  "GPL version 1.0 or later",
+                  "GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version",
+                  "GNU General Public License, version 1 or later"
+              ],
+              "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-1.0-(or-any-later-version).yaml",
+              "otherIds": [
+                  "scancode:gpl-1.0-plus"
+              ],
+              "canonicalName": "GNU General Public License 1.0 (or any later version)",
+              "_implications": {
+                  "__impliedNames": [
+                      "GNU General Public License 1.0 (or any later version)",
+                      "GPL-1.0+",
+                      "GPL-1.0-or-later",
+                      "scancode:gpl-1.0-plus"
+                  ],
+                  "__impliedId": "GPL-1.0-or-later",
+                  "__impliedAmbiguousNames": [
+                      "GNU General Public License, Version 1.0+",
+                      "GNU General Public License, Version 1+",
+                      "GNU General Public License, version 1+",
+                      "GPL 1.0+",
+                      "GPL-1+",
+                      "GPL-1.0+",
+                      "GPL version 1 or later",
+                      "GPL version 1.0 or later",
+                      "GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version",
+                      "GNU General Public License, version 1 or later"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Metaeffekt Universe",
+                          [
+                              "category: GPL"
+                          ]
+                      ]
+                  ]
+              }
           },
           "BlueOak License List": {
               "url": "https://spdx.org/licenses/GPL-1.0-or-later.html",

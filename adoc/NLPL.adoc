@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `scancode:nlpl`
 * `scancode://nlpl`
 
 === Comments on (easy) usability
@@ -25,6 +26,9 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === General Comments
 
+* ``category: NLPL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nl]/NLPL.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per Fedora, there is a certain irony in a Frenchman writing a
 license that isn't wholly applicable in France, due to Moral Rights. But
 I digress. This license is basically the same as the WTFPL (with
@@ -70,6 +74,8 @@ or anything else.
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nl]/NLPL.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/NLPL.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml[Scancode]
@@ -82,14 +88,22 @@ repository] is generated)
     "__impliedNames": [
         "NLPL",
         "No Limit Public License",
+        "scancode:nlpl",
         "scancode://nlpl"
     ],
     "__impliedId": "NLPL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "NLPL"
+        "NLPL",
+        "NO LIMIT PUBLIC LICENSE"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: NLPL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -207,6 +221,38 @@ repository] is generated)
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/NLPL"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "NLPL",
+            "shortName": null,
+            "category": "NLPL",
+            "alternativeNames": [
+                "NO LIMIT PUBLIC LICENSE"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nl]/NLPL.yaml",
+            "otherIds": [
+                "scancode:nlpl"
+            ],
+            "canonicalName": "NLPL",
+            "_implications": {
+                "__impliedNames": [
+                    "NLPL",
+                    "NLPL",
+                    "scancode:nlpl"
+                ],
+                "__impliedId": "NLPL",
+                "__impliedAmbiguousNames": [
+                    "NO LIMIT PUBLIC LICENSE"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: NLPL"
+                        ]
                     ]
                 ]
             }

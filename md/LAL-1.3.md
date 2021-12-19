@@ -2,6 +2,10 @@
 
 [TABLE]
 
+**Other Names:**
+
+-   `LAL 1.3`
+
 ## Comments on (easy) usability
 
 -   “It is currently unstettled whether this license is DFSG-free”
@@ -10,6 +14,10 @@
     (NOASSERTION))
 
 ## General Comments
+
+-   “category: LAL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/LAL-1.3.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -29,6 +37,10 @@
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/LAL-1.3.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/LAL-1.3.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -37,11 +49,23 @@
     {
         "__impliedNames": [
             "LAL-1.3",
+            "LAL 1.3",
             "Licence Art Libre 1.3"
         ],
         "__impliedId": "LAL-1.3",
         "__impliedAmbiguousNames": [
-            "Licence Art Libre (Free Art License)"
+            "Licence Art Libre (Free Art License)",
+            "LAL, Version 1.3",
+            "LAL, 1.3",
+            "Licence Art Libre 1.3"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: LAL"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -106,6 +130,39 @@
                 },
                 "Comment": null,
                 "LicenseId": "LAL-1.3"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "LAL-1.3",
+                "shortName": null,
+                "category": "LAL",
+                "alternativeNames": [
+                    "LAL, Version 1.3",
+                    "LAL, 1.3",
+                    "Licence Art Libre 1.3"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/LAL-1.3.yaml",
+                "otherIds": [],
+                "canonicalName": "LAL 1.3",
+                "_implications": {
+                    "__impliedNames": [
+                        "LAL 1.3",
+                        "LAL-1.3"
+                    ],
+                    "__impliedId": "LAL-1.3",
+                    "__impliedAmbiguousNames": [
+                        "LAL, Version 1.3",
+                        "LAL, 1.3",
+                        "Licence Art Libre 1.3"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: LAL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [

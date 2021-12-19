@@ -2,18 +2,28 @@
     "__impliedNames": [
         "Imlib2",
         "Imlib2 License",
+        "scancode:imlib2",
         "scancode://imlib2"
     ],
     "__impliedId": "Imlib2",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Imlib2"
+        "Imlib2",
+        "Imlib2 License",
+        "IMLIB2 LICENSE",
+        "IMLIB2 License"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "https://git.enlightenment.org/legacy/imlib2.git/tree/ and https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING"
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Imlib2"
             ]
         ]
     ],
@@ -322,6 +332,42 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/1561"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Imlib2",
+            "shortName": null,
+            "category": "Imlib2",
+            "alternativeNames": [
+                "Imlib2 License",
+                "IMLIB2 LICENSE",
+                "IMLIB2 License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[im]/Imlib2-License.yaml",
+            "otherIds": [
+                "scancode:imlib2"
+            ],
+            "canonicalName": "Imlib2 License",
+            "_implications": {
+                "__impliedNames": [
+                    "Imlib2 License",
+                    "Imlib2",
+                    "scancode:imlib2"
+                ],
+                "__impliedId": "Imlib2",
+                "__impliedAmbiguousNames": [
+                    "Imlib2 License",
+                    "IMLIB2 LICENSE",
+                    "IMLIB2 License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Imlib2"
+                        ]
                     ]
                 ]
             }

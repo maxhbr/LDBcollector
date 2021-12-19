@@ -2,12 +2,22 @@
     "__impliedNames": [
         "ADSL",
         "Amazon Digital Services License",
+        "scancode:adsl",
         "scancode://adsl"
     ],
     "__impliedId": "ADSL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "ADSL"
+        "ADSL",
+        "Amazon Digital Services License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: ADSL"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +121,38 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "ADSL",
+            "shortName": null,
+            "category": "ADSL",
+            "alternativeNames": [
+                "Amazon Digital Services License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/Amazon-Digital-Services-License.yaml",
+            "otherIds": [
+                "scancode:adsl"
+            ],
+            "canonicalName": "Amazon Digital Services License",
+            "_implications": {
+                "__impliedNames": [
+                    "Amazon Digital Services License",
+                    "ADSL",
+                    "scancode:adsl"
+                ],
+                "__impliedId": "ADSL",
+                "__impliedAmbiguousNames": [
+                    "Amazon Digital Services License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: ADSL"
+                        ]
                     ]
                 ]
             }

@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Creative Commons BY SA 2.0 (England and Wales)`
+
+-   `scancode:cc-by-sa-2.0-uk`
+
 -   `scancode://cc-by-sa-2.0-uk`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: CC-BY-SA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.0-(England-and-Wales).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -176,6 +184,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.0-(England-and-Wales).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-SA-2.0-UK.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -187,10 +199,20 @@
     {
         "__impliedNames": [
             "CC-BY-SA-2.0-UK",
+            "Creative Commons BY SA 2.0 (England and Wales)",
+            "scancode:cc-by-sa-2.0-uk",
             "Creative Commons Attribution Share Alike 2.0 England and Wales",
             "scancode://cc-by-sa-2.0-uk"
         ],
         "__impliedId": "CC-BY-SA-2.0-UK",
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-SA"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -270,6 +292,34 @@
                         [
                             null,
                             "https://creativecommons.org/licenses/by-sa/2.0/uk/legalcode"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-SA-2.0-UK",
+                "shortName": null,
+                "category": "CC-BY-SA",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.0-(England-and-Wales).yaml",
+                "otherIds": [
+                    "scancode:cc-by-sa-2.0-uk"
+                ],
+                "canonicalName": "Creative Commons BY SA 2.0 (England and Wales)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY SA 2.0 (England and Wales)",
+                        "CC-BY-SA-2.0-UK",
+                        "scancode:cc-by-sa-2.0-uk"
+                    ],
+                    "__impliedId": "CC-BY-SA-2.0-UK",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-SA"
+                            ]
                         ]
                     ]
                 }

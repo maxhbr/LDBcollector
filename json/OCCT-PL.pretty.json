@@ -2,9 +2,24 @@
     "__impliedNames": [
         "OCCT-PL",
         "Open CASCADE Technology Public License",
+        "OCCT PL",
+        "scancode:occt-pl",
         "scancode://occt-pl"
     ],
     "__impliedId": "OCCT-PL",
+    "__impliedAmbiguousNames": [
+        "OCCT PL",
+        "OCCT-PL",
+        "Open CASCADE Technology Public License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: OCCT PL"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -101,6 +116,42 @@
                     [
                         "Homepage",
                         "http://www.opencascade.com/content/occt-public-license"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "OCCT-PL",
+            "shortName": null,
+            "category": "OCCT PL",
+            "alternativeNames": [
+                "OCCT PL",
+                "OCCT-PL",
+                "Open CASCADE Technology Public License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[oc]/OCCT-PL.yaml",
+            "otherIds": [
+                "scancode:occt-pl"
+            ],
+            "canonicalName": "OCCT PL",
+            "_implications": {
+                "__impliedNames": [
+                    "OCCT PL",
+                    "OCCT-PL",
+                    "scancode:occt-pl"
+                ],
+                "__impliedId": "OCCT-PL",
+                "__impliedAmbiguousNames": [
+                    "OCCT PL",
+                    "OCCT-PL",
+                    "Open CASCADE Technology Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: OCCT PL"
+                        ]
                     ]
                 ]
             }

@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:freetype`
+
 -   `scancode://freetype`
 
 ## Comments on (easy) usability
@@ -31,6 +33,10 @@
     re-grants the license granted to a third party.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: FreeType” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeType-Project-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 27 Jan 2006” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode")
@@ -344,6 +350,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeType-Project-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -364,17 +374,35 @@
         "__impliedNames": [
             "FTL",
             "Freetype Project License",
+            "FreeType Project License",
+            "scancode:freetype",
             "FreeType Project LICENSE",
-            "scancode://freetype",
-            "FreeType Project License"
+            "scancode://freetype"
         ],
         "__impliedId": "FTL",
+        "__impliedAmbiguousNames": [
+            "and may include FreeType",
+            "License: FTL",
+            "FreeType project license",
+            "Freetype Project License",
+            "FreeType Project LICENSE",
+            "http://www.freetype.org/FTL.TXT",
+            "http://www.freetype.org/license.html",
+            "https://spdx.org/licenses/ftl",
+            "FreeType License"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]",
                     "package\", \"FreeType Project\", and \"FreeType archive\" are the original source code distributed by the authors (David Turner, Robert Wilhelm, and Werner Lemberg) as \"FreeType Project\". Sublicense means all binaries and related documentation. Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: FreeType"
                 ]
             ],
             [
@@ -787,6 +815,54 @@
                     ]
                 },
                 "description": "package\", \"FreeType Project\", and \"FreeType archive\" are the original source code distributed by the authors (David Turner, Robert Wilhelm, and Werner Lemberg) as \"FreeType Project\". Sublicense means all binaries and related documentation. Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "FTL",
+                "shortName": null,
+                "category": "FreeType",
+                "alternativeNames": [
+                    "and may include FreeType",
+                    "License: FTL",
+                    "FreeType project license",
+                    "Freetype Project License",
+                    "FreeType Project LICENSE",
+                    "http://www.freetype.org/FTL.TXT",
+                    "http://www.freetype.org/license.html",
+                    "https://spdx.org/licenses/ftl",
+                    "FreeType License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeType-Project-License.yaml",
+                "otherIds": [
+                    "scancode:freetype"
+                ],
+                "canonicalName": "FreeType Project License",
+                "_implications": {
+                    "__impliedNames": [
+                        "FreeType Project License",
+                        "FTL",
+                        "scancode:freetype"
+                    ],
+                    "__impliedId": "FTL",
+                    "__impliedAmbiguousNames": [
+                        "and may include FreeType",
+                        "License: FTL",
+                        "FreeType project license",
+                        "Freetype Project License",
+                        "FreeType Project LICENSE",
+                        "http://www.freetype.org/FTL.TXT",
+                        "http://www.freetype.org/license.html",
+                        "https://spdx.org/licenses/ftl",
+                        "FreeType License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: FreeType"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

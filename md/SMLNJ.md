@@ -4,6 +4,14 @@
 
 **Other Names:**
 
+-   `CUP Parser Generator License`
+
+-   `CUP-PGL`
+
+-   `scancode:standard-ml-nj`
+
+-   `SMLNJ License`
+
 -   `scancode://standard-ml-nj`
 
 -   `Standard ML of New Jersey`
@@ -20,6 +28,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: CUP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/CUP-Parser-Generator-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “per SPDX.org, SPDX ended up with this license on the license list
     twice once as of v1.17 with the short identifier SMLNJ and then
@@ -81,6 +93,14 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/CUP-Parser-Generator-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sm]/SMLNJ-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SMLNJ.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -93,15 +113,29 @@
         "__impliedNames": [
             "SMLNJ",
             "Standard ML of New Jersey License",
+            "CUP Parser Generator License",
+            "CUP-PGL",
+            "scancode:standard-ml-nj",
+            "SMLNJ License",
             "scancode://standard-ml-nj",
             "Standard ML of New Jersey"
         ],
         "__impliedId": "SMLNJ",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT"
+            "MIT",
+            "CUP Parser Generator License",
+            "SMLNJ License",
+            "SMLNJ LICENSE",
+            "STANDARD ML OF NEW JERSEY COPYRIGHT NOTICE, LICENSE AND DISCLAIMER"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CUP"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -235,6 +269,38 @@
                         [
                             null,
                             "https://www.smlnj.org/license.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "CUP-PGL",
+                "category": "CUP",
+                "alternativeNames": [
+                    "CUP Parser Generator License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cu]/CUP-Parser-Generator-License.yaml",
+                "otherIds": [
+                    "scancode:standard-ml-nj"
+                ],
+                "canonicalName": "CUP Parser Generator License",
+                "_implications": {
+                    "__impliedNames": [
+                        "CUP Parser Generator License",
+                        "CUP-PGL",
+                        "scancode:standard-ml-nj"
+                    ],
+                    "__impliedId": "CUP-PGL",
+                    "__impliedAmbiguousNames": [
+                        "CUP Parser Generator License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CUP"
+                            ]
                         ]
                     ]
                 }

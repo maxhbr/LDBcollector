@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:etalab-2.0`
+
 -   `scancode://etalab-2.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Etalab” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[et]/Etalab-Open-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “there is also a French version” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/etalab-2.0.yml "Scancode")
@@ -112,6 +118,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[et]/Etalab-Open-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/etalab-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -124,10 +134,24 @@
         "__impliedNames": [
             "etalab-2.0",
             "Etalab Open License 2.0",
+            "scancode:etalab-2.0",
             "scancode://etalab-2.0"
         ],
         "__impliedId": "etalab-2.0",
+        "__impliedAmbiguousNames": [
+            "Etalab Open License 2.0",
+            "etalab-2.0",
+            "See https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+            "Licence Ouverte 2.0.",
+            "OPEN LICENCE 2.0"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Etalab"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -237,6 +261,46 @@
                         [
                             null,
                             "https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "etalab-2.0",
+                "shortName": null,
+                "category": "Etalab",
+                "alternativeNames": [
+                    "Etalab Open License 2.0",
+                    "etalab-2.0",
+                    "See https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+                    "Licence Ouverte 2.0.",
+                    "OPEN LICENCE 2.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[et]/Etalab-Open-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:etalab-2.0"
+                ],
+                "canonicalName": "Etalab Open License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Etalab Open License 2.0",
+                        "etalab-2.0",
+                        "scancode:etalab-2.0"
+                    ],
+                    "__impliedId": "etalab-2.0",
+                    "__impliedAmbiguousNames": [
+                        "Etalab Open License 2.0",
+                        "etalab-2.0",
+                        "See https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+                        "Licence Ouverte 2.0.",
+                        "OPEN LICENCE 2.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Etalab"
+                            ]
                         ]
                     ]
                 }

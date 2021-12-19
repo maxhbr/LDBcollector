@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:epl-2.0`
+
+-   `osi:EPL-2.0`
+
 -   `eclipse-2.0`
 
 -   `Eclipse Public License - v 2.0`
@@ -63,6 +67,10 @@
     third party.” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: EPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ec]/Eclipse-Public-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## Obligations
 
@@ -547,6 +555,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ec]/Eclipse-Public-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -581,6 +593,8 @@
             "EPL-2.0",
             "Eclipse Public License 2.0",
             "epl-2.0",
+            "scancode:epl-2.0",
+            "osi:EPL-2.0",
             "eclipse-2.0",
             "Eclipse Public License - v 2.0",
             "scancode://epl-2.0",
@@ -590,7 +604,27 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Eclipse Public License",
-            "EPL-2.0"
+            "EPL-2.0",
+            "Eclipse Public License (EPL) v2.0",
+            "Eclipse Public License - Version 2.0",
+            "Eclipse Public License 2.0",
+            "Eclipse Public License 2.0&#xD",
+            "Eclipse Public License v2.0",
+            "Eclipse Public License version 2.0",
+            "Eclipse Public License, Version 2.0",
+            "Eclipse Public License (EPL) 2.0",
+            "Eclipse Public License (EPL), Version 2.0",
+            "Eclise Public License, Version 2.0",
+            "Eclipse-2.0",
+            "EPL (Eclipse Public License), V2.0 or later",
+            "EPL 2.0",
+            "EPLv´´",
+            "Eclipse Public Licence, Version 2.0",
+            "Eclipse Public License - v2.0",
+            "Eclipse Public License -v 2.0",
+            "Eclipse Public License v 2.0",
+            "Eclipse Public License, V 2.0",
+            "Eclipse Public License v. 2.0"
         ],
         "__impliedComments": [
             [
@@ -604,6 +638,12 @@
                 [
                     "http://www.eclipse.org/legal/epl-2.0/",
                     "Contributor is the person or entity that distributes the Software. Contributors are included with any person who receives such software under this license or a second license. Distribution includes making available a method of transferring a copy of the Software. Source code refers to the source code of the software, including source code, documentation sources, configuration files, and other files suitable for making changes. Second License means the GNU General Public License, Version 2.0, including any exceptions and additions as identified by the initial contributor, and any subsequent versions of this license. A sublicense is one in which the person who has granted this license re-grants the license granted to a third party."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: EPL"
                 ]
             ]
         ],
@@ -1119,6 +1159,80 @@
                     ]
                 },
                 "description": "Contributor is the person or entity that distributes the Software. Contributors are included with any person who receives such software under this license or a second license. Distribution includes making available a method of transferring a copy of the Software. Source code refers to the source code of the software, including source code, documentation sources, configuration files, and other files suitable for making changes. Second License means the GNU General Public License, Version 2.0, including any exceptions and additions as identified by the initial contributor, and any subsequent versions of this license. A sublicense is one in which the person who has granted this license re-grants the license granted to a third party."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "EPL-2.0",
+                "shortName": null,
+                "category": "EPL",
+                "alternativeNames": [
+                    "Eclipse Public License (EPL) v2.0",
+                    "Eclipse Public License - Version 2.0",
+                    "Eclipse Public License 2.0",
+                    "Eclipse Public License 2.0&#xD",
+                    "Eclipse Public License v2.0",
+                    "Eclipse Public License version 2.0",
+                    "Eclipse Public License, Version 2.0",
+                    "Eclipse Public License (EPL) 2.0",
+                    "Eclipse Public License (EPL), Version 2.0",
+                    "Eclise Public License, Version 2.0",
+                    "Eclipse-2.0",
+                    "EPL (Eclipse Public License), V2.0 or later",
+                    "EPL 2.0",
+                    "EPL-2.0",
+                    "EPLv´´",
+                    "Eclipse Public Licence, Version 2.0",
+                    "Eclipse Public License - v2.0",
+                    "Eclipse Public License -v 2.0",
+                    "Eclipse Public License v 2.0",
+                    "Eclipse Public License, V 2.0",
+                    "Eclipse Public License v. 2.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ec]/Eclipse-Public-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:epl-2.0",
+                    "osi:EPL-2.0"
+                ],
+                "canonicalName": "Eclipse Public License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Eclipse Public License 2.0",
+                        "EPL-2.0",
+                        "scancode:epl-2.0",
+                        "osi:EPL-2.0"
+                    ],
+                    "__impliedId": "EPL-2.0",
+                    "__impliedAmbiguousNames": [
+                        "Eclipse Public License (EPL) v2.0",
+                        "Eclipse Public License - Version 2.0",
+                        "Eclipse Public License 2.0",
+                        "Eclipse Public License 2.0&#xD",
+                        "Eclipse Public License v2.0",
+                        "Eclipse Public License version 2.0",
+                        "Eclipse Public License, Version 2.0",
+                        "Eclipse Public License (EPL) 2.0",
+                        "Eclipse Public License (EPL), Version 2.0",
+                        "Eclise Public License, Version 2.0",
+                        "Eclipse-2.0",
+                        "EPL (Eclipse Public License), V2.0 or later",
+                        "EPL 2.0",
+                        "EPL-2.0",
+                        "EPLv´´",
+                        "Eclipse Public Licence, Version 2.0",
+                        "Eclipse Public License - v2.0",
+                        "Eclipse Public License -v 2.0",
+                        "Eclipse Public License v 2.0",
+                        "Eclipse Public License, V 2.0",
+                        "Eclipse Public License v. 2.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: EPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/EPL-2.0.html",

@@ -12,6 +12,8 @@
 
 -   `Apache Software License, Version 1.0`
 
+-   `scancode:apache-1.0`
+
 -   `scancode://apache-1.0`
 
 -   `Apache 1.0`
@@ -34,6 +36,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Apache License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -206,6 +212,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -230,6 +240,7 @@
             "ASL 1.0",
             "Apache Software License, Version 1.0",
             "Apache License 1.0",
+            "scancode:apache-1.0",
             "scancode://apache-1.0",
             "Apache 1.0"
         ],
@@ -237,7 +248,19 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The Apache Software License (ASL)",
-            "ASL 1.0"
+            "ASL 1.0",
+            "Apache License Version 1.0",
+            "http://www.apache.org/licenses/LICENSE-1.0",
+            "Apache License 1.0",
+            "https://spdx.org/licenses/apache-1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Apache License"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -555,6 +578,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/13"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Apache-1.0",
+                "shortName": null,
+                "category": "Apache License",
+                "alternativeNames": [
+                    "Apache License Version 1.0",
+                    "http://www.apache.org/licenses/LICENSE-1.0",
+                    "Apache License 1.0",
+                    "https://spdx.org/licenses/apache-1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:apache-1.0"
+                ],
+                "canonicalName": "Apache License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apache License 1.0",
+                        "Apache-1.0",
+                        "scancode:apache-1.0"
+                    ],
+                    "__impliedId": "Apache-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Apache License Version 1.0",
+                        "http://www.apache.org/licenses/LICENSE-1.0",
+                        "Apache License 1.0",
+                        "https://spdx.org/licenses/apache-1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Apache License"
+                            ]
                         ]
                     ]
                 }

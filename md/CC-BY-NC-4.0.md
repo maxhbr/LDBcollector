@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Creative Commons BY-NC 4.0 (international)`
+
+-   `scancode:cc-by-nc-4.0`
+
 -   `Creative Commons Attribution-NonCommercial 4.0`
 
 -   `scancode://cc-by-nc-4.0`
@@ -26,6 +30,10 @@
     (NOASSERTION))
 
 ## General Comments
+
+-   “category: CC-BY-NC” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-4.0-(international).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -463,6 +471,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-4.0-(international).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -481,13 +493,18 @@
     {
         "__impliedNames": [
             "CC-BY-NC-4.0",
+            "Creative Commons BY-NC 4.0 (international)",
+            "scancode:cc-by-nc-4.0",
             "Creative Commons Attribution-NonCommercial 4.0",
             "Creative Commons Attribution Non Commercial 4.0 International",
             "scancode://cc-by-nc-4.0"
         ],
         "__impliedId": "CC-BY-NC-4.0",
         "__impliedAmbiguousNames": [
-            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)"
+            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
+            "CC-BY-NC-4.0",
+            "Creative Commons Attribution Non Commercial 4.0 International",
+            "Creative Commons Attribution-NonCommercial 4.0 International"
         ],
         "__impliedRatingState": [
             [
@@ -498,6 +515,14 @@
                         "tag": "RNoGo"
                     }
                 }
+            ]
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CC-BY-NC"
+                ]
             ]
         ],
         "__impliedNonCommercial": true,
@@ -674,6 +699,42 @@
                     "contents": {
                         "tag": "RNoGo"
                     }
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CC-BY-NC-4.0",
+                "shortName": null,
+                "category": "CC-BY-NC",
+                "alternativeNames": [
+                    "CC-BY-NC-4.0",
+                    "Creative Commons Attribution Non Commercial 4.0 International",
+                    "Creative Commons Attribution-NonCommercial 4.0 International"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-NC-4.0-(international).yaml",
+                "otherIds": [
+                    "scancode:cc-by-nc-4.0"
+                ],
+                "canonicalName": "Creative Commons BY-NC 4.0 (international)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons BY-NC 4.0 (international)",
+                        "CC-BY-NC-4.0",
+                        "scancode:cc-by-nc-4.0"
+                    ],
+                    "__impliedId": "CC-BY-NC-4.0",
+                    "__impliedAmbiguousNames": [
+                        "CC-BY-NC-4.0",
+                        "Creative Commons Attribution Non Commercial 4.0 International",
+                        "Creative Commons Attribution-NonCommercial 4.0 International"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CC-BY-NC"
+                            ]
+                        ]
+                    ]
                 }
             },
             "Google OSS Policy": {

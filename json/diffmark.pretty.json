@@ -2,15 +2,26 @@
     "__impliedNames": [
         "diffmark",
         "diffmark license",
-        "scancode://diffmark",
-        "diffmark License"
+        "diffmark License",
+        "scancode:diffmark",
+        "scancode://diffmark"
     ],
     "__impliedId": "diffmark",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "diffmark"
+        "diffmark",
+        "diffmark License",
+        "diffmark license",
+        "DIFFMARK LICENSE",
+        "DIFFMARK License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: diffmark"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -128,6 +139,44 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/diffmark"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "diffmark",
+            "shortName": null,
+            "category": "diffmark",
+            "alternativeNames": [
+                "diffmark License",
+                "diffmark license",
+                "DIFFMARK LICENSE",
+                "DIFFMARK License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[di]/diffmark-License.yaml",
+            "otherIds": [
+                "scancode:diffmark"
+            ],
+            "canonicalName": "diffmark License",
+            "_implications": {
+                "__impliedNames": [
+                    "diffmark License",
+                    "diffmark",
+                    "scancode:diffmark"
+                ],
+                "__impliedId": "diffmark",
+                "__impliedAmbiguousNames": [
+                    "diffmark License",
+                    "diffmark license",
+                    "DIFFMARK LICENSE",
+                    "DIFFMARK License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: diffmark"
+                        ]
                     ]
                 ]
             }

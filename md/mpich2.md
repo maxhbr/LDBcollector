@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:mpich`
+
 -   `scancode://mpich`
 
 -   `MPICH License`
@@ -20,6 +22,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: mpich2” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mp]/mpich2-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this is missing the anti-publicity-use clause, and
     doesn't mention sublicensing, but otherwise, it is functionally
@@ -95,6 +101,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mp]/mpich2-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/mpich2.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -107,15 +117,25 @@
         "__impliedNames": [
             "mpich2",
             "mpich2 License",
+            "scancode:mpich",
             "scancode://mpich",
             "MPICH License"
         ],
         "__impliedId": "mpich2",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT"
+            "MIT",
+            "mpich2 License",
+            "MPICH2 LICENSE",
+            "MPICH2 License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: mpich2"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -239,6 +259,42 @@
                         [
                             null,
                             "https://fedoraproject.org/wiki/Licensing/MIT"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "mpich2",
+                "shortName": null,
+                "category": "mpich2",
+                "alternativeNames": [
+                    "mpich2 License",
+                    "MPICH2 LICENSE",
+                    "MPICH2 License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mp]/mpich2-License.yaml",
+                "otherIds": [
+                    "scancode:mpich"
+                ],
+                "canonicalName": "mpich2 License",
+                "_implications": {
+                    "__impliedNames": [
+                        "mpich2 License",
+                        "mpich2",
+                        "scancode:mpich"
+                    ],
+                    "__impliedId": "mpich2",
+                    "__impliedAmbiguousNames": [
+                        "mpich2 License",
+                        "MPICH2 LICENSE",
+                        "MPICH2 License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: mpich2"
+                            ]
                         ]
                     ]
                 }

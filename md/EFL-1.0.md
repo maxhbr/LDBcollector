@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `Eiffel Forum License 1.0`
+
+-   `scancode:efl-1.0`
+
+-   `osi:EFL-1.0`
+
 -   `The Eiffel Forum License, Version 1`
 
 -   `scancode://efl-1.0`
@@ -20,7 +26,17 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   **↓**“This software licenses which is NOT OKAY for Fedora. Nothing
+    in Fedora is permitted to use this license. It is either non-free or
+    deprecated.” (source: [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 ## General Comments
+
+-   “category: EFL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ei]/Eiffel-Forum-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was OSI certified. This license has been
     superseded by v2.0 ” (source:
@@ -79,9 +95,17 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ei]/Eiffel-Forum-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -98,12 +122,27 @@
         "__impliedNames": [
             "EFL-1.0",
             "Eiffel Forum License v1.0",
+            "Eiffel Forum License 1.0",
+            "scancode:efl-1.0",
+            "osi:EFL-1.0",
             "The Eiffel Forum License, Version 1",
             "scancode://efl-1.0",
             "EFL 1.0"
         ],
         "__impliedId": "EFL-1.0",
+        "__impliedAmbiguousNames": [
+            "EFL, Version 1.0",
+            "EFL 1.0",
+            "EFL-1.0",
+            "Eiffel Forum License, version 1"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: EFL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -164,6 +203,29 @@
                     ]
                 },
                 "spdxLicenseId": "EFL-1.0"
+            },
+            "Fedora Project Wiki": {
+                "rating": "Bad",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Eiffel_Forum_License_V1",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Eiffel Forum License 1.0",
+                "FSF Free?": "No",
+                "_implications": {
+                    "__impliedNames": [
+                        "Eiffel Forum License 1.0"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                            }
+                        ]
+                    ]
+                },
+                "Notes": null
             },
             "Scancode": {
                 "otherUrls": [
@@ -240,6 +302,46 @@
                 },
                 "licensename": "EFL-1.0",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "EFL-1.0",
+                "shortName": null,
+                "category": "EFL",
+                "alternativeNames": [
+                    "EFL, Version 1.0",
+                    "EFL 1.0",
+                    "EFL-1.0",
+                    "Eiffel Forum License, version 1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ei]/Eiffel-Forum-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:efl-1.0",
+                    "osi:EFL-1.0"
+                ],
+                "canonicalName": "Eiffel Forum License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Eiffel Forum License 1.0",
+                        "EFL-1.0",
+                        "scancode:efl-1.0",
+                        "osi:EFL-1.0"
+                    ],
+                    "__impliedId": "EFL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "EFL, Version 1.0",
+                        "EFL 1.0",
+                        "EFL-1.0",
+                        "Eiffel Forum License, version 1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: EFL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
@@ -333,6 +435,13 @@
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
                 }
             ],
             [

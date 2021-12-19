@@ -6,6 +6,10 @@
 
 -   `Server Side Public License Version 1`
 
+-   `Server Side Public License 1.0`
+
+-   `scancode:mongodb-sspl-1.0`
+
 -   `scancode://mongodb-sspl-1.0`
 
 -   `SSPL 1.0`
@@ -28,6 +32,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: SSPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Server-Side-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -614,6 +622,10 @@
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Server-Side-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SSPL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -626,13 +638,20 @@
         "__impliedNames": [
             "SSPL-1.0",
             "Server Side Public License Version 1",
+            "Server Side Public License 1.0",
+            "scancode:mongodb-sspl-1.0",
             "Server Side Public License, v 1",
             "scancode://mongodb-sspl-1.0",
             "SSPL 1.0"
         ],
         "__impliedId": "SSPL-1.0",
         "__impliedAmbiguousNames": [
-            "Server Side Public License"
+            "Server Side Public License",
+            "SSPL 1",
+            "SSPL-1.0",
+            "Server Side Public License, Version 1.0",
+            "Server Side Public License v1.0",
+            "Server Side Public License VERSION 1"
         ],
         "__impliedComments": [
             [
@@ -640,6 +659,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SSPL"
                 ]
             ]
         ],
@@ -720,6 +745,46 @@
                         [
                             null,
                             "https://webassets.mongodb.com/_com_assets/legal/SSPL-compared-to-AGPL.pdf"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SSPL-1.0",
+                "shortName": null,
+                "category": "SSPL",
+                "alternativeNames": [
+                    "SSPL 1",
+                    "SSPL-1.0",
+                    "Server Side Public License, Version 1.0",
+                    "Server Side Public License v1.0",
+                    "Server Side Public License VERSION 1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[se]/Server-Side-Public-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:mongodb-sspl-1.0"
+                ],
+                "canonicalName": "Server Side Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Server Side Public License 1.0",
+                        "SSPL-1.0",
+                        "scancode:mongodb-sspl-1.0"
+                    ],
+                    "__impliedId": "SSPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "SSPL 1",
+                        "SSPL-1.0",
+                        "Server Side Public License, Version 1.0",
+                        "Server Side Public License v1.0",
+                        "Server Side Public License VERSION 1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SSPL"
+                            ]
                         ]
                     ]
                 }

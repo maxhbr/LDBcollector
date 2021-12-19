@@ -1,20 +1,31 @@
 {
     "__impliedNames": [
         "OFL-1.0",
-        "SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005",
         "SIL Open Font License 1.0",
+        "scancode:ofl-1.0-no-rfn",
+        "SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005",
         "scancode://ofl-1.0",
         "OFL 1.0"
     ],
     "__impliedId": "OFL-1.0",
     "__impliedAmbiguousNames": [
-        "The SIL Open Font License"
+        "The SIL Open Font License",
+        "OFL, Version 1.0",
+        "OFL 1.0",
+        "OFL-1.0",
+        "SIL OPEN FONT LICENSE Version 1.0"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "Font software refers to font files, data files, source files, build scripts, and documents. A retained font name is the name of the font that is retained and identified with a copyright notice. Authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: OFL"
             ]
         ],
         [
@@ -287,6 +298,44 @@
                 ]
             },
             "description": "Font software refers to font files, data files, source files, build scripts, and documents. A retained font name is the name of the font that is retained and identified with a copyright notice. Authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "OFL-1.0",
+            "shortName": null,
+            "category": "OFL",
+            "alternativeNames": [
+                "OFL, Version 1.0",
+                "OFL 1.0",
+                "OFL-1.0",
+                "SIL OPEN FONT LICENSE Version 1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[si]/SIL-Open-Font-License-1.0.yaml",
+            "otherIds": [
+                "scancode:ofl-1.0-no-rfn"
+            ],
+            "canonicalName": "SIL Open Font License 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "SIL Open Font License 1.0",
+                    "OFL-1.0",
+                    "scancode:ofl-1.0-no-rfn"
+                ],
+                "__impliedId": "OFL-1.0",
+                "__impliedAmbiguousNames": [
+                    "OFL, Version 1.0",
+                    "OFL 1.0",
+                    "OFL-1.0",
+                    "SIL OPEN FONT LICENSE Version 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: OFL"
+                        ]
+                    ]
+                ]
+            }
         }
     },
     "__impliedJudgement": [

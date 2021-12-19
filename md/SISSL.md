@@ -6,6 +6,10 @@
 
 -   `Sun Industry Standards Source License`
 
+-   `SISSL 1.1`
+
+-   `osi:SISSL`
+
 -   `Sun Industry Standards Source License 1.1`
 
 -   `sun-issl`
@@ -62,6 +66,10 @@
     corporation” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: SISSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[si]/SISSL-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -528,6 +536,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[si]/SISSL-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -551,6 +563,8 @@
         "__impliedNames": [
             "SISSL",
             "Sun Industry Standards Source License",
+            "SISSL 1.1",
+            "osi:SISSL",
             "Sun Industry Standards Source License 1.1",
             "sun-issl",
             "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
@@ -561,13 +575,20 @@
         "__impliedId": "SISSL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "SISSL"
+            "SISSL",
+            "Sun Industry Standards Source License - Version 1.1"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Standards refer to the standards listed in EXHIBIT B. A person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SISSL"
                 ]
             ]
         ],
@@ -1189,6 +1210,40 @@
                     ]
                 },
                 "description": "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Standards refer to the standards listed in EXHIBIT B. A person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SISSL",
+                "shortName": null,
+                "category": "SISSL",
+                "alternativeNames": [
+                    "SISSL",
+                    "Sun Industry Standards Source License - Version 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[si]/SISSL-1.1.yaml",
+                "otherIds": [
+                    "osi:SISSL"
+                ],
+                "canonicalName": "SISSL 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "SISSL 1.1",
+                        "SISSL",
+                        "osi:SISSL"
+                    ],
+                    "__impliedId": "SISSL",
+                    "__impliedAmbiguousNames": [
+                        "SISSL",
+                        "Sun Industry Standards Source License - Version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SISSL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "OpenSourceInitiative": {
                 "text": [

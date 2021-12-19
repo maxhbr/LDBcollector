@@ -2,12 +2,24 @@
     "__impliedNames": [
         "Bahyph",
         "Bahyph License",
+        "scancode:bahyph",
         "scancode://bahyph"
     ],
     "__impliedId": "Bahyph",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Bahyph"
+        "Bahyph",
+        "Bahyph License",
+        "BAHYPH LICENSE",
+        "BAHYPH License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Bahyph"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +123,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Bahyph"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Bahyph",
+            "shortName": null,
+            "category": "Bahyph",
+            "alternativeNames": [
+                "Bahyph License",
+                "BAHYPH LICENSE",
+                "BAHYPH License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[ba]/Bahyph-License.yaml",
+            "otherIds": [
+                "scancode:bahyph"
+            ],
+            "canonicalName": "Bahyph License",
+            "_implications": {
+                "__impliedNames": [
+                    "Bahyph License",
+                    "Bahyph",
+                    "scancode:bahyph"
+                ],
+                "__impliedId": "Bahyph",
+                "__impliedAmbiguousNames": [
+                    "Bahyph License",
+                    "BAHYPH LICENSE",
+                    "BAHYPH License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Bahyph"
+                        ]
                     ]
                 ]
             }

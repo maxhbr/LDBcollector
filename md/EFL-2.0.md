@@ -6,6 +6,10 @@
 
 -   `Eiffel Forum License 2.0`
 
+-   `scancode:efl-2.0`
+
+-   `osi:EFL-2.0`
+
 -   `Eiffel Forum License, Version 2`
 
 -   `License :: OSI Approved :: Eiffel Forum License`
@@ -30,6 +34,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: EFL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ei]/Eiffel-Forum-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-2.0.yml "Scancode")
@@ -106,6 +114,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ei]/Eiffel-Forum-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -133,6 +145,8 @@
             "EFL-2.0",
             "Eiffel Forum License v2.0",
             "Eiffel Forum License 2.0",
+            "scancode:efl-2.0",
+            "osi:EFL-2.0",
             "Eiffel Forum License, Version 2",
             "License :: OSI Approved :: Eiffel Forum License",
             "scancode://efl-2.0",
@@ -141,9 +155,18 @@
         "__impliedId": "EFL-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "EFL 2.0"
+            "EFL 2.0",
+            "EFL, Version 2.0",
+            "EFL-2.0",
+            "Eiffel Forum License, version 2"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: EFL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -375,6 +398,46 @@
                 "_implications": {
                     "__impliedNames": [
                         "EFL-2.0"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "EFL-2.0",
+                "shortName": null,
+                "category": "EFL",
+                "alternativeNames": [
+                    "EFL, Version 2.0",
+                    "EFL 2.0",
+                    "EFL-2.0",
+                    "Eiffel Forum License, version 2"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ei]/Eiffel-Forum-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:efl-2.0",
+                    "osi:EFL-2.0"
+                ],
+                "canonicalName": "Eiffel Forum License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Eiffel Forum License 2.0",
+                        "EFL-2.0",
+                        "scancode:efl-2.0",
+                        "osi:EFL-2.0"
+                    ],
+                    "__impliedId": "EFL-2.0",
+                    "__impliedAmbiguousNames": [
+                        "EFL, Version 2.0",
+                        "EFL 2.0",
+                        "EFL-2.0",
+                        "Eiffel Forum License, version 2"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: EFL"
+                            ]
+                        ]
                     ]
                 }
             },

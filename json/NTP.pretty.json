@@ -2,13 +2,25 @@
     "__impliedNames": [
         "NTP",
         "NTP License",
+        "scancode:network-time-protocol",
+        "scancode:ntpl",
+        "osi:NTP",
         "NTP License (NTP)",
         "scancode://mit-old-style-no-advert",
         "MIT Old Style no advertising",
         "scancode://ntpl"
     ],
     "__impliedId": "NTP",
+    "__impliedAmbiguousNames": [
+        "NTP License"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: NTP"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -170,6 +182,42 @@
             "_implications": {
                 "__impliedNames": [
                     "NTP"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "NTP",
+            "shortName": null,
+            "category": "NTP",
+            "alternativeNames": [
+                "NTP License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nt]/NTP-License.yaml",
+            "otherIds": [
+                "scancode:network-time-protocol",
+                "scancode:ntpl",
+                "osi:NTP"
+            ],
+            "canonicalName": "NTP License",
+            "_implications": {
+                "__impliedNames": [
+                    "NTP License",
+                    "NTP",
+                    "scancode:network-time-protocol",
+                    "scancode:ntpl",
+                    "osi:NTP"
+                ],
+                "__impliedId": "NTP",
+                "__impliedAmbiguousNames": [
+                    "NTP License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: NTP"
+                        ]
+                    ]
                 ]
             }
         },

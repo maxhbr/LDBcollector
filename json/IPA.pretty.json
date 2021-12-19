@@ -2,6 +2,9 @@
     "__impliedNames": [
         "IPA",
         "IPA Font License",
+        "IPA License",
+        "scancode:ipa-font",
+        "osi:IPA",
         "IPA Font License Agreement v1.0",
         "scancode://ipa-font",
         "IPA Font License 1.0"
@@ -9,9 +12,18 @@
     "__impliedId": "IPA",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "IPA"
+        "IPA",
+        "IPA License",
+        "IPA LICENSE",
+        "IPA Font License Agreement v1.0"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: IPA"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -229,6 +241,44 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/248"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "IPA",
+            "shortName": null,
+            "category": "IPA",
+            "alternativeNames": [
+                "IPA License",
+                "IPA LICENSE",
+                "IPA Font License Agreement v1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ip]/IPA-License.yaml",
+            "otherIds": [
+                "scancode:ipa-font",
+                "osi:IPA"
+            ],
+            "canonicalName": "IPA License",
+            "_implications": {
+                "__impliedNames": [
+                    "IPA License",
+                    "IPA",
+                    "scancode:ipa-font",
+                    "osi:IPA"
+                ],
+                "__impliedId": "IPA",
+                "__impliedAmbiguousNames": [
+                    "IPA License",
+                    "IPA LICENSE",
+                    "IPA Font License Agreement v1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: IPA"
+                        ]
                     ]
                 ]
             }

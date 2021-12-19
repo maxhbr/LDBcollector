@@ -12,6 +12,12 @@
 
 -   `Apache Software License, Version 1.1`
 
+-   `scancode:apache-1.1`
+
+-   `osi:Apache-1.1`
+
+-   `scancode:phorum-2.0`
+
 -   `scancode://apache-1.1`
 
 -   `Apache 1.1`
@@ -46,6 +52,10 @@
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
 
 ## General Comments
+
+-   “category: Apache License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified. This license has been
     superseded by Apache 2.0 ” (source:
@@ -215,6 +225,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -249,6 +263,9 @@
             "ASL 1.1",
             "Apache Software License, Version 1.1",
             "Apache License 1.1",
+            "scancode:apache-1.1",
+            "osi:Apache-1.1",
+            "scancode:phorum-2.0",
             "scancode://apache-1.1",
             "Apache 1.1"
         ],
@@ -256,9 +273,27 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The Apache Software License (ASL)",
-            "ASL 1.1"
+            "ASL 1.1",
+            "Apache License Version 1.1",
+            "Apache-1.1",
+            "Apache Software License Version 1.1",
+            "Apache Software License version 1.1",
+            "Apache Software License v1.1",
+            "Apache Software License 1.1",
+            "http://apache.org/licenses/LICENSE-1.1",
+            "The OpenSymphony Software License, Version 1.1",
+            "The P6Spy Software License, Version 1.1",
+            "Apache License 1.1",
+            "The CyberNeko Software License, Version 1.0",
+            "https://spdx.org/licenses/apache-1.1"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Apache License"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -634,6 +669,66 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/12"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Apache-1.1",
+                "shortName": null,
+                "category": "Apache License",
+                "alternativeNames": [
+                    "Apache License Version 1.1",
+                    "Apache-1.1",
+                    "ASL 1.1",
+                    "Apache Software License Version 1.1",
+                    "Apache Software License version 1.1",
+                    "Apache Software License v1.1",
+                    "Apache Software License 1.1",
+                    "http://apache.org/licenses/LICENSE-1.1",
+                    "The OpenSymphony Software License, Version 1.1",
+                    "The P6Spy Software License, Version 1.1",
+                    "Apache License 1.1",
+                    "The CyberNeko Software License, Version 1.0",
+                    "https://spdx.org/licenses/apache-1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:apache-1.1",
+                    "osi:Apache-1.1",
+                    "scancode:phorum-2.0"
+                ],
+                "canonicalName": "Apache License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apache License 1.1",
+                        "Apache-1.1",
+                        "scancode:apache-1.1",
+                        "osi:Apache-1.1",
+                        "scancode:phorum-2.0"
+                    ],
+                    "__impliedId": "Apache-1.1",
+                    "__impliedAmbiguousNames": [
+                        "Apache License Version 1.1",
+                        "Apache-1.1",
+                        "ASL 1.1",
+                        "Apache Software License Version 1.1",
+                        "Apache Software License version 1.1",
+                        "Apache Software License v1.1",
+                        "Apache Software License 1.1",
+                        "http://apache.org/licenses/LICENSE-1.1",
+                        "The OpenSymphony Software License, Version 1.1",
+                        "The P6Spy Software License, Version 1.1",
+                        "Apache License 1.1",
+                        "The CyberNeko Software License, Version 1.0",
+                        "https://spdx.org/licenses/apache-1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Apache License"
+                            ]
                         ]
                     ]
                 }

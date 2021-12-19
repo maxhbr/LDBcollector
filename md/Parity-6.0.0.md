@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Parity Public License 6.0.0`
+
+-   `scancode:parity-6.0.0`
+
 -   `scancode://parity-6.0.0`
 
 ## Comments on (easy) usability
@@ -17,6 +21,10 @@
     (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: Parity” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pa]/Parity-Public-License-6.0.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -66,6 +74,10 @@
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pa]/Parity-Public-License-6.0.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Parity-6.0.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -78,17 +90,27 @@
         "__impliedNames": [
             "Parity-6.0.0",
             "The Parity Public License 6.0.0",
+            "Parity Public License 6.0.0",
+            "scancode:parity-6.0.0",
             "scancode://parity-6.0.0"
         ],
         "__impliedId": "Parity-6.0.0",
         "__impliedAmbiguousNames": [
-            "The Parity Public License"
+            "The Parity Public License",
+            "Parity Public License 6.0.0",
+            "Parity-6.0.0"
         ],
         "__impliedComments": [
             [
                 "BlueOak License List",
                 [
                     "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Parity"
                 ]
             ]
         ],
@@ -171,6 +193,40 @@
                         [
                             null,
                             "https://paritylicense.com/versions/6.0.0.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Parity-6.0.0",
+                "shortName": null,
+                "category": "Parity",
+                "alternativeNames": [
+                    "Parity Public License 6.0.0",
+                    "Parity-6.0.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pa]/Parity-Public-License-6.0.0.yaml",
+                "otherIds": [
+                    "scancode:parity-6.0.0"
+                ],
+                "canonicalName": "Parity Public License 6.0.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Parity Public License 6.0.0",
+                        "Parity-6.0.0",
+                        "scancode:parity-6.0.0"
+                    ],
+                    "__impliedId": "Parity-6.0.0",
+                    "__impliedAmbiguousNames": [
+                        "Parity Public License 6.0.0",
+                        "Parity-6.0.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Parity"
+                            ]
                         ]
                     ]
                 }

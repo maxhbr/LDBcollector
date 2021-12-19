@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `AMDPLPA License`
+
+-   `scancode:amdplpa`
+
 -   `scancode://amdplpa`
 
 -   `AMD PLPA License`
@@ -20,6 +24,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: AMDPLPA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/AMDPLPA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -129,6 +137,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/AMDPLPA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/AMDPLPA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -141,13 +153,25 @@
         "__impliedNames": [
             "AMDPLPA",
             "AMD's plpa_map.c License",
+            "AMDPLPA License",
+            "scancode:amdplpa",
             "scancode://amdplpa",
             "AMD PLPA License"
         ],
         "__impliedId": "AMDPLPA",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "AMDPLPA"
+            "AMDPLPA",
+            "AMDPLPA License",
+            "AMDPLPA LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: AMDPLPA"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -251,6 +275,40 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "AMDPLPA",
+                "shortName": null,
+                "category": "AMDPLPA",
+                "alternativeNames": [
+                    "AMDPLPA License",
+                    "AMDPLPA LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/AMDPLPA-License.yaml",
+                "otherIds": [
+                    "scancode:amdplpa"
+                ],
+                "canonicalName": "AMDPLPA License",
+                "_implications": {
+                    "__impliedNames": [
+                        "AMDPLPA License",
+                        "AMDPLPA",
+                        "scancode:amdplpa"
+                    ],
+                    "__impliedId": "AMDPLPA",
+                    "__impliedAmbiguousNames": [
+                        "AMDPLPA License",
+                        "AMDPLPA LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: AMDPLPA"
+                            ]
                         ]
                     ]
                 }

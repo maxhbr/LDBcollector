@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Spencer License (3-Clause)`
+
+-   `scancode:hs-regexp-orig`
+
 -   `scancode://regexp`
 
 -   `Regexp License`
@@ -15,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Spencer” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-(3-Clause).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -53,6 +61,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-(3-Clause).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Spencer-86.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -65,10 +77,26 @@
         "__impliedNames": [
             "Spencer-86",
             "Spencer License 86",
+            "Spencer License (3-Clause)",
+            "scancode:hs-regexp-orig",
             "scancode://regexp",
             "Regexp License"
         ],
         "__impliedId": "Spencer-86",
+        "__impliedAmbiguousNames": [
+            "Spencer, Version 86",
+            "Spencer 86",
+            "Spencer License, Version 86",
+            "Spencer License, 86"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Spencer"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -142,6 +170,44 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Spencer-86",
+                "shortName": null,
+                "category": "Spencer",
+                "alternativeNames": [
+                    "Spencer, Version 86",
+                    "Spencer 86",
+                    "Spencer License, Version 86",
+                    "Spencer License, 86"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sp]/Spencer-License-(3-Clause).yaml",
+                "otherIds": [
+                    "scancode:hs-regexp-orig"
+                ],
+                "canonicalName": "Spencer License (3-Clause)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Spencer License (3-Clause)",
+                        "Spencer-86",
+                        "scancode:hs-regexp-orig"
+                    ],
+                    "__impliedId": "Spencer-86",
+                    "__impliedAmbiguousNames": [
+                        "Spencer, Version 86",
+                        "Spencer 86",
+                        "Spencer License, Version 86",
+                        "Spencer License, 86"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Spencer"
+                            ]
                         ]
                     ]
                 }

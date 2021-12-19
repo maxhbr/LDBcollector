@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `SNIA License`
+
+-   `scancode:snia`
+
 -   `scancode://snia`
 
 ## Comments on (easy) usability
@@ -14,6 +18,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: SNIA” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sn]/SNIA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, MPL 1.1 derived license with a few distinct changes
     They typoed the version number in Exhibit A (it says it is 1.0,
@@ -187,6 +195,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sn]/SNIA-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/SNIA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -199,14 +211,25 @@
         "__impliedNames": [
             "SNIA",
             "SNIA Public License 1.1",
+            "SNIA License",
+            "scancode:snia",
             "scancode://snia"
         ],
         "__impliedId": "SNIA",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "SNIA"
+            "SNIA",
+            "SNIA License",
+            "SNIA LICENSE",
+            "STORAGE NETWORKING INDUSTRY ASSOCIATION"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: SNIA"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -324,6 +347,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/SNIA_Public_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "SNIA",
+                "shortName": null,
+                "category": "SNIA",
+                "alternativeNames": [
+                    "SNIA License",
+                    "SNIA LICENSE",
+                    "STORAGE NETWORKING INDUSTRY ASSOCIATION"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[s]/[sn]/SNIA-License.yaml",
+                "otherIds": [
+                    "scancode:snia"
+                ],
+                "canonicalName": "SNIA License",
+                "_implications": {
+                    "__impliedNames": [
+                        "SNIA License",
+                        "SNIA",
+                        "scancode:snia"
+                    ],
+                    "__impliedId": "SNIA",
+                    "__impliedAmbiguousNames": [
+                        "SNIA License",
+                        "SNIA LICENSE",
+                        "STORAGE NETWORKING INDUSTRY ASSOCIATION"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: SNIA"
+                            ]
                         ]
                     ]
                 }

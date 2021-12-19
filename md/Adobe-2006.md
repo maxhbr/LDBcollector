@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:adobe-scl`
+
 -   `scancode://adobe-scl`
 
 -   `Adobe Source Code License 2006`
@@ -20,6 +22,11 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Adobe Systems Incorporated Source Code License Agreement”
+    (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adobe-Systems-Incorporated-Source-Code-License-Agreement.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -75,6 +82,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adobe-Systems-Incorporated-Source-Code-License-Agreement.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Adobe-2006.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -87,13 +98,31 @@
         "__impliedNames": [
             "Adobe-2006",
             "Adobe Systems Incorporated Source Code License Agreement",
+            "scancode:adobe-scl",
             "scancode://adobe-scl",
             "Adobe Source Code License 2006"
         ],
         "__impliedId": "Adobe-2006",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Adobe"
+            "Adobe",
+            "Adobe, Version 2006",
+            "Adobe, 2006",
+            "Adobe License, Version 2006",
+            "Adobe License, 2006",
+            "Adobe Systems Incorporated(r) Source Code License Agreement",
+            "Adobe Systems Incorporated Source Code License Agreement",
+            "Adobe Source Code License Agreement",
+            "http://fedoraproject.org/wiki/Licensing/AdobeLicense",
+            "https://spdx.org/licenses/adobe-2006"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Adobe Systems Incorporated Source Code License Agreement"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -203,6 +232,54 @@
                         [
                             null,
                             "https://fedoraproject.org/wiki/Licensing/AdobeLicense"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Adobe-2006",
+                "shortName": null,
+                "category": "Adobe Systems Incorporated Source Code License Agreement",
+                "alternativeNames": [
+                    "Adobe, Version 2006",
+                    "Adobe, 2006",
+                    "Adobe License, Version 2006",
+                    "Adobe License, 2006",
+                    "Adobe Systems Incorporated(r) Source Code License Agreement",
+                    "Adobe Systems Incorporated Source Code License Agreement",
+                    "Adobe Source Code License Agreement",
+                    "http://fedoraproject.org/wiki/Licensing/AdobeLicense",
+                    "https://spdx.org/licenses/adobe-2006"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ad]/Adobe-Systems-Incorporated-Source-Code-License-Agreement.yaml",
+                "otherIds": [
+                    "scancode:adobe-scl"
+                ],
+                "canonicalName": "Adobe Systems Incorporated Source Code License Agreement",
+                "_implications": {
+                    "__impliedNames": [
+                        "Adobe Systems Incorporated Source Code License Agreement",
+                        "Adobe-2006",
+                        "scancode:adobe-scl"
+                    ],
+                    "__impliedId": "Adobe-2006",
+                    "__impliedAmbiguousNames": [
+                        "Adobe, Version 2006",
+                        "Adobe, 2006",
+                        "Adobe License, Version 2006",
+                        "Adobe License, 2006",
+                        "Adobe Systems Incorporated(r) Source Code License Agreement",
+                        "Adobe Systems Incorporated Source Code License Agreement",
+                        "Adobe Source Code License Agreement",
+                        "http://fedoraproject.org/wiki/Licensing/AdobeLicense",
+                        "https://spdx.org/licenses/adobe-2006"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Adobe Systems Incorporated Source Code License Agreement"
+                            ]
                         ]
                     ]
                 }

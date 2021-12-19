@@ -2,14 +2,22 @@
     "__impliedNames": [
         "Newsletr",
         "Newsletr License",
+        "scancode:newsletr",
         "scancode://newsletr"
     ],
     "__impliedId": "Newsletr",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Newsletr"
+        "Newsletr",
+        "NEWSLETR"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Newsletr"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -127,6 +135,40 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Newsletr"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Newsletr",
+            "shortName": null,
+            "category": "Newsletr",
+            "alternativeNames": [
+                "Newsletr",
+                "NEWSLETR"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Newsletr-License.yaml",
+            "otherIds": [
+                "scancode:newsletr"
+            ],
+            "canonicalName": "Newsletr License",
+            "_implications": {
+                "__impliedNames": [
+                    "Newsletr License",
+                    "Newsletr",
+                    "scancode:newsletr"
+                ],
+                "__impliedId": "Newsletr",
+                "__impliedAmbiguousNames": [
+                    "Newsletr",
+                    "NEWSLETR"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Newsletr"
+                        ]
                     ]
                 ]
             }

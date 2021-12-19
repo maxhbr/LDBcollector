@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Unicode DFS License 2015`
+
+-   `scancode:unicode-dfs-2015`
+
 -   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)`
 
 -   `scancode://unicode-dfs-2015`
@@ -41,6 +45,10 @@
     http://www.unicode.org/utility/trac/browser/\].” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Unicode DFS” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-DFS-License-2015.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -193,6 +201,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-DFS-License-2015.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2015.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -213,17 +225,35 @@
         "__impliedNames": [
             "Unicode-DFS-2015",
             "Unicode License Agreement - Data Files and Software (2015)",
+            "Unicode DFS License 2015",
+            "scancode:unicode-dfs-2015",
             "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)",
             "scancode://unicode-dfs-2015",
             "Unicode DFS 2015"
         ],
         "__impliedId": "Unicode-DFS-2015",
+        "__impliedAmbiguousNames": [
+            "Unicode DFS, Version 2015",
+            "Unicode DFS 2015",
+            "Unicode-DFS, Version 2015",
+            "Unicode-DFS, 2015",
+            "Unicode DFS License, Version 2015",
+            "Unicode DFS License 2015",
+            "Unicode-DFS License, Version 2015",
+            "Unicode-DFS License, 2015"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.unicode.org/copyright.html#License",
                     "The Unicode Data Files are located in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/, http://www.unicode.org/cldr/data/, http All data files in ://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]. However, it excludes PDFs of online code tables in the following directories: [http://www.unicode.org/Public/]. The software is either the source code published by the Unicode Standard, or it is available in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/,http://www.unicode It refers to the source code in [.org/cldr/data/, http://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Unicode DFS"
                 ]
             ]
         ],
@@ -484,6 +514,52 @@
                     ]
                 },
                 "description": "The Unicode Data Files are located in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/, http://www.unicode.org/cldr/data/, http All data files in ://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]. However, it excludes PDFs of online code tables in the following directories: [http://www.unicode.org/Public/]. The software is either the source code published by the Unicode Standard, or it is available in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/,http://www.unicode It refers to the source code in [.org/cldr/data/, http://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]."
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Unicode-DFS-2015",
+                "shortName": null,
+                "category": "Unicode DFS",
+                "alternativeNames": [
+                    "Unicode DFS, Version 2015",
+                    "Unicode DFS 2015",
+                    "Unicode-DFS, Version 2015",
+                    "Unicode-DFS, 2015",
+                    "Unicode DFS License, Version 2015",
+                    "Unicode DFS License 2015",
+                    "Unicode-DFS License, Version 2015",
+                    "Unicode-DFS License, 2015"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[un]/Unicode-DFS-License-2015.yaml",
+                "otherIds": [
+                    "scancode:unicode-dfs-2015"
+                ],
+                "canonicalName": "Unicode DFS License 2015",
+                "_implications": {
+                    "__impliedNames": [
+                        "Unicode DFS License 2015",
+                        "Unicode-DFS-2015",
+                        "scancode:unicode-dfs-2015"
+                    ],
+                    "__impliedId": "Unicode-DFS-2015",
+                    "__impliedAmbiguousNames": [
+                        "Unicode DFS, Version 2015",
+                        "Unicode DFS 2015",
+                        "Unicode-DFS, Version 2015",
+                        "Unicode-DFS, 2015",
+                        "Unicode DFS License, Version 2015",
+                        "Unicode DFS License 2015",
+                        "Unicode-DFS License, Version 2015",
+                        "Unicode-DFS License, 2015"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Unicode DFS"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

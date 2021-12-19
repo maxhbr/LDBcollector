@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:egenix-1.0.0`
+
 -   `scancode://egenix-1.1.0`
 
 -   `eGenix Public License 1.1.0`
@@ -20,6 +22,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: eGenix” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eg]/eGenix.com-Public-License-1.1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -91,6 +97,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eg]/eGenix.com-Public-License-1.1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/eGenix.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -103,13 +113,28 @@
         "__impliedNames": [
             "eGenix",
             "eGenix.com Public License 1.1.0",
+            "scancode:egenix-1.0.0",
             "scancode://egenix-1.1.0",
             "eGenix Public License 1.1.0"
         ],
         "__impliedId": "eGenix",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "eGenix"
+            "eGenix",
+            "eGenix License",
+            "EGENIX LICENSE",
+            "EGENIX License",
+            "eGenix.com Public License 1.1.0",
+            "eGenix.com Public License Agreement",
+            "EGENIX.COM PUBLIC LICENSE AGREEMENT"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: eGenix"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -218,6 +243,48 @@
                         [
                             "Homepage",
                             "http://www.egenix.com/products/eGenix.com-Public-License-1.1.0.pdf"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "eGenix",
+                "shortName": null,
+                "category": "eGenix",
+                "alternativeNames": [
+                    "eGenix License",
+                    "EGENIX LICENSE",
+                    "EGENIX License",
+                    "eGenix.com Public License 1.1.0",
+                    "eGenix.com Public License Agreement",
+                    "EGENIX.COM PUBLIC LICENSE AGREEMENT"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eg]/eGenix.com-Public-License-1.1.0.yaml",
+                "otherIds": [
+                    "scancode:egenix-1.0.0"
+                ],
+                "canonicalName": "eGenix.com Public License 1.1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "eGenix.com Public License 1.1.0",
+                        "eGenix",
+                        "scancode:egenix-1.0.0"
+                    ],
+                    "__impliedId": "eGenix",
+                    "__impliedAmbiguousNames": [
+                        "eGenix License",
+                        "EGENIX LICENSE",
+                        "EGENIX License",
+                        "eGenix.com Public License 1.1.0",
+                        "eGenix.com Public License Agreement",
+                        "EGENIX.COM PUBLIC LICENSE AGREEMENT"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: eGenix"
+                            ]
                         ]
                     ]
                 }

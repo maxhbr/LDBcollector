@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:cdla-sharing-1.0`
+
 -   `scancode://cdla-sharing-1.0`
 
 -   `CDLA Sharing 1.0`
@@ -11,6 +13,11 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Community Data License Agreement Sharing 1.0” (source:
+    [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Community-Data-License-Agreement-Sharing-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -120,6 +127,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Community-Data-License-Agreement-Sharing-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CDLA-Sharing-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -132,10 +143,31 @@
         "__impliedNames": [
             "CDLA-Sharing-1.0",
             "Community Data License Agreement Sharing 1.0",
+            "scancode:cdla-sharing-1.0",
             "scancode://cdla-sharing-1.0",
             "CDLA Sharing 1.0"
         ],
         "__impliedId": "CDLA-Sharing-1.0",
+        "__impliedAmbiguousNames": [
+            "CDLA Sharing, Version 1.0",
+            "CDLA Sharing 1.0",
+            "CDLA-Sharing, Version 1.0",
+            "CDLA-Sharing 1.0",
+            "CDLA Sharing License, Version 1.0",
+            "CDLA Sharing License 1.0",
+            "CDLA-Sharing License, Version 1.0",
+            "CDLA-Sharing License 1.0",
+            "Community Data License Agreement - Sharing - Version 1.0",
+            "cdla-sharing-1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Community Data License Agreement Sharing 1.0"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -215,6 +247,56 @@
                         [
                             null,
                             "https://cdla.io/sharing-1-0"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CDLA-Sharing-1.0",
+                "shortName": null,
+                "category": "Community Data License Agreement Sharing 1.0",
+                "alternativeNames": [
+                    "CDLA Sharing, Version 1.0",
+                    "CDLA Sharing 1.0",
+                    "CDLA-Sharing, Version 1.0",
+                    "CDLA-Sharing 1.0",
+                    "CDLA Sharing License, Version 1.0",
+                    "CDLA Sharing License 1.0",
+                    "CDLA-Sharing License, Version 1.0",
+                    "CDLA-Sharing License 1.0",
+                    "Community Data License Agreement - Sharing - Version 1.0",
+                    "cdla-sharing-1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Community-Data-License-Agreement-Sharing-1.0.yaml",
+                "otherIds": [
+                    "scancode:cdla-sharing-1.0"
+                ],
+                "canonicalName": "Community Data License Agreement Sharing 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Community Data License Agreement Sharing 1.0",
+                        "CDLA-Sharing-1.0",
+                        "scancode:cdla-sharing-1.0"
+                    ],
+                    "__impliedId": "CDLA-Sharing-1.0",
+                    "__impliedAmbiguousNames": [
+                        "CDLA Sharing, Version 1.0",
+                        "CDLA Sharing 1.0",
+                        "CDLA-Sharing, Version 1.0",
+                        "CDLA-Sharing 1.0",
+                        "CDLA Sharing License, Version 1.0",
+                        "CDLA Sharing License 1.0",
+                        "CDLA-Sharing License, Version 1.0",
+                        "CDLA-Sharing License 1.0",
+                        "Community Data License Agreement - Sharing - Version 1.0",
+                        "cdla-sharing-1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Community Data License Agreement Sharing 1.0"
+                            ]
                         ]
                     ]
                 }

@@ -6,6 +6,12 @@
 
 -   `Entessa Public License`
 
+-   `Entessa License`
+
+-   `scancode:entessa-1.0`
+
+-   `osi:Entessa`
+
 -   `Entessa Public License 1.0`
 
 -   `scancode://entessa-1.0`
@@ -28,6 +34,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Entessa” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[en]/Entessa-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/entessa-1.0.yml "Scancode")
@@ -112,6 +122,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[en]/Entessa-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -138,6 +152,9 @@
             "Entessa",
             "Entessa Public License v1.0",
             "Entessa Public License",
+            "Entessa License",
+            "scancode:entessa-1.0",
+            "osi:Entessa",
             "Entessa Public License 1.0",
             "scancode://entessa-1.0",
             "Entessa 1.0"
@@ -145,9 +162,20 @@
         "__impliedId": "Entessa",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Entessa"
+            "Entessa",
+            "Entessa License",
+            "ENTESSA LICENSE",
+            "ENTESSA License",
+            "Entessa Public License",
+            "ENTESSA Public License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Entessa"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -338,6 +366,48 @@
                 "_implications": {
                     "__impliedNames": [
                         "Entessa"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Entessa",
+                "shortName": null,
+                "category": "Entessa",
+                "alternativeNames": [
+                    "Entessa License",
+                    "ENTESSA LICENSE",
+                    "ENTESSA License",
+                    "Entessa Public License",
+                    "ENTESSA Public License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[en]/Entessa-License.yaml",
+                "otherIds": [
+                    "scancode:entessa-1.0",
+                    "osi:Entessa"
+                ],
+                "canonicalName": "Entessa License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Entessa License",
+                        "Entessa",
+                        "scancode:entessa-1.0",
+                        "osi:Entessa"
+                    ],
+                    "__impliedId": "Entessa",
+                    "__impliedAmbiguousNames": [
+                        "Entessa License",
+                        "ENTESSA LICENSE",
+                        "ENTESSA License",
+                        "Entessa Public License",
+                        "ENTESSA Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Entessa"
+                            ]
+                        ]
                     ]
                 }
             },

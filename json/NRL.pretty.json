@@ -2,12 +2,22 @@
     "__impliedNames": [
         "NRL",
         "NRL License",
+        "scancode:nrl",
         "scancode://nrl"
     ],
     "__impliedId": "NRL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "BSD with advertising"
+        "BSD with advertising",
+        "NRL License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: NRL"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +121,38 @@
                     [
                         "Homepage",
                         "http://web.mit.edu/network/isakmp/nrllicense.html"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "NRL",
+            "shortName": null,
+            "category": "NRL",
+            "alternativeNames": [
+                "NRL License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nr]/NRL-License.yaml",
+            "otherIds": [
+                "scancode:nrl"
+            ],
+            "canonicalName": "NRL License",
+            "_implications": {
+                "__impliedNames": [
+                    "NRL License",
+                    "NRL",
+                    "scancode:nrl"
+                ],
+                "__impliedId": "NRL",
+                "__impliedAmbiguousNames": [
+                    "NRL License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: NRL"
+                        ]
                     ]
                 ]
             }

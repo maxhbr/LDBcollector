@@ -6,6 +6,10 @@
 
 -   `IBM Public License 1.0`
 
+-   `scancode:ibmpl-1.0`
+
+-   `osi:IPL-1.0`
+
 -   `ibmpl`
 
 -   `IBM Public License, Version 1.0`
@@ -41,6 +45,10 @@
     License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: IPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ib]/IBM-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified. This license was
     superseded by CPL. ” (source:
@@ -219,6 +227,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ib]/IBM-Public-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -253,6 +265,8 @@
             "IPL-1.0",
             "IBM Public License v1.0",
             "IBM Public License 1.0",
+            "scancode:ibmpl-1.0",
+            "osi:IPL-1.0",
             "ibmpl",
             "IBM Public License, Version 1.0",
             "License :: OSI Approved :: IBM Public License",
@@ -263,13 +277,23 @@
         "__impliedId": "IPL-1.0",
         "__impliedAmbiguousNames": [
             "IBM Public License",
-            "IBM Public License, Version 1.0"
+            "IBM Public License, Version 1.0",
+            "IPL, Version 1.0",
+            "IPL 1.0",
+            "IBM Public License Version 1.0",
+            "IBM Public License v1.0"
         ],
         "__impliedComments": [
             [
                 "BlueOak License List",
                 [
                     "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: IPL"
                 ]
             ],
             [
@@ -508,6 +532,46 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/283"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "IPL-1.0",
+                "shortName": null,
+                "category": "IPL",
+                "alternativeNames": [
+                    "IPL, Version 1.0",
+                    "IPL 1.0",
+                    "IBM Public License Version 1.0",
+                    "IBM Public License v1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ib]/IBM-Public-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:ibmpl-1.0",
+                    "osi:IPL-1.0"
+                ],
+                "canonicalName": "IBM Public License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "IBM Public License 1.0",
+                        "IPL-1.0",
+                        "scancode:ibmpl-1.0",
+                        "osi:IPL-1.0"
+                    ],
+                    "__impliedId": "IPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "IPL, Version 1.0",
+                        "IPL 1.0",
+                        "IBM Public License Version 1.0",
+                        "IBM Public License v1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: IPL"
+                            ]
                         ]
                     ]
                 }

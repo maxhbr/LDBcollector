@@ -2,9 +2,17 @@
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:d-fsl-1.0-de`
+
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: D-FSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[de]/Deutsche-Freie-Software-Lizenz.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -34,6 +42,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[de]/Deutsche-Freie-Software-Lizenz.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/D-FSL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -42,9 +54,22 @@
     {
         "__impliedNames": [
             "D-FSL-1.0",
-            "Deutsche Freie Software Lizenz"
+            "Deutsche Freie Software Lizenz",
+            "scancode:d-fsl-1.0-de"
         ],
         "__impliedId": "D-FSL-1.0",
+        "__impliedAmbiguousNames": [
+            "D-FSL-1.0",
+            "Deutsche Freie Software Lizenz"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: D-FSL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -119,6 +144,40 @@
                     ]
                 },
                 "spdxLicenseId": "D-FSL-1.0"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "D-FSL-1.0",
+                "shortName": null,
+                "category": "D-FSL",
+                "alternativeNames": [
+                    "D-FSL-1.0",
+                    "Deutsche Freie Software Lizenz"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[de]/Deutsche-Freie-Software-Lizenz.yaml",
+                "otherIds": [
+                    "scancode:d-fsl-1.0-de"
+                ],
+                "canonicalName": "Deutsche Freie Software Lizenz",
+                "_implications": {
+                    "__impliedNames": [
+                        "Deutsche Freie Software Lizenz",
+                        "D-FSL-1.0",
+                        "scancode:d-fsl-1.0-de"
+                    ],
+                    "__impliedId": "D-FSL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "D-FSL-1.0",
+                        "Deutsche Freie Software Lizenz"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: D-FSL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__isOsiApproved": false,

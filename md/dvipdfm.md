@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:dvipdfm`
+
 -   `scancode://dvipdfm`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: dvipdfm” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[dv]/dvipdfm-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, "should" does not mean "must", and there are implied
     rights for unlimited copying and distribution rights for unmodified
@@ -45,6 +51,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[dv]/dvipdfm-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/dvipdfm.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -57,14 +67,24 @@
         "__impliedNames": [
             "dvipdfm",
             "dvipdfm License",
+            "scancode:dvipdfm",
             "scancode://dvipdfm"
         ],
         "__impliedId": "dvipdfm",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "dvipdfm"
+            "dvipdfm",
+            "dvipdfm License",
+            "DVIPDFM LICENSE",
+            "DVIPDFM License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: dvipdfm"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -182,6 +202,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/dvipdfm"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "dvipdfm",
+                "shortName": null,
+                "category": "dvipdfm",
+                "alternativeNames": [
+                    "dvipdfm License",
+                    "DVIPDFM LICENSE",
+                    "DVIPDFM License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[dv]/dvipdfm-License.yaml",
+                "otherIds": [
+                    "scancode:dvipdfm"
+                ],
+                "canonicalName": "dvipdfm License",
+                "_implications": {
+                    "__impliedNames": [
+                        "dvipdfm License",
+                        "dvipdfm",
+                        "scancode:dvipdfm"
+                    ],
+                    "__impliedId": "dvipdfm",
+                    "__impliedAmbiguousNames": [
+                        "dvipdfm License",
+                        "DVIPDFM LICENSE",
+                        "DVIPDFM License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: dvipdfm"
+                            ]
                         ]
                     ]
                 }

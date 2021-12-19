@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `EUDatagrid License`
+
+-   `scancode:eu-datagrid`
+
+-   `osi:EUDatagrid`
+
 -   `scancode://eu-datagrid`
 
 ## Comments on (easy) usability
@@ -22,6 +28,10 @@
 -   “https://opensource.org/licenses/EUDatagrid” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: EUDatagrid” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/EUDatagrid-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eu-datagrid.yml "Scancode")
@@ -141,6 +151,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/EUDatagrid-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -167,19 +181,32 @@
         "__impliedNames": [
             "EUDatagrid",
             "EU Datagrid Software License",
+            "EUDatagrid License",
+            "scancode:eu-datagrid",
+            "osi:EUDatagrid",
             "EU DataGrid Software License",
             "scancode://eu-datagrid"
         ],
         "__impliedId": "EUDatagrid",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "EU Datagrid"
+            "EU Datagrid",
+            "EUDatagrid License",
+            "EUDATAGRID LICENSE",
+            "EUDATAGRID License",
+            "EU DataGrid Software License"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/EUDatagrid"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: EUDatagrid"
                 ]
             ],
             [
@@ -534,6 +561,46 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/1546"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "EUDatagrid",
+                "shortName": null,
+                "category": "EUDatagrid",
+                "alternativeNames": [
+                    "EUDatagrid License",
+                    "EUDATAGRID LICENSE",
+                    "EUDATAGRID License",
+                    "EU DataGrid Software License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/EUDatagrid-License.yaml",
+                "otherIds": [
+                    "scancode:eu-datagrid",
+                    "osi:EUDatagrid"
+                ],
+                "canonicalName": "EUDatagrid License",
+                "_implications": {
+                    "__impliedNames": [
+                        "EUDatagrid License",
+                        "EUDatagrid",
+                        "scancode:eu-datagrid",
+                        "osi:EUDatagrid"
+                    ],
+                    "__impliedId": "EUDatagrid",
+                    "__impliedAmbiguousNames": [
+                        "EUDatagrid License",
+                        "EUDATAGRID LICENSE",
+                        "EUDATAGRID License",
+                        "EU DataGrid Software License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: EUDatagrid"
+                            ]
                         ]
                     ]
                 }

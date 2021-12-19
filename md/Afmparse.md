@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:afmparse`
+
 -   `scancode://afmparse`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Afmparse” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[af]/Afmparse-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -63,6 +69,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[af]/Afmparse-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Afmparse.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -75,13 +85,25 @@
         "__impliedNames": [
             "Afmparse",
             "Afmparse License",
+            "scancode:afmparse",
             "scancode://afmparse",
             "afmparse License"
         ],
         "__impliedId": "Afmparse",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Afmparse"
+            "Afmparse",
+            "Afmparse License",
+            "AFMPARSE LICENSE",
+            "AFMPARSE License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Afmparse"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -185,6 +207,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Afmparse"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Afmparse",
+                "shortName": null,
+                "category": "Afmparse",
+                "alternativeNames": [
+                    "Afmparse License",
+                    "AFMPARSE LICENSE",
+                    "AFMPARSE License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[af]/Afmparse-License.yaml",
+                "otherIds": [
+                    "scancode:afmparse"
+                ],
+                "canonicalName": "Afmparse License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Afmparse License",
+                        "Afmparse",
+                        "scancode:afmparse"
+                    ],
+                    "__impliedId": "Afmparse",
+                    "__impliedAmbiguousNames": [
+                        "Afmparse License",
+                        "AFMPARSE LICENSE",
+                        "AFMPARSE License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Afmparse"
+                            ]
                         ]
                     ]
                 }

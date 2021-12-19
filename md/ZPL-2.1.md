@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `osi:ZPL-2.1`
+
+-   `scancode:zpl-2.1`
+
 -   `Zope Public License (ZPL) Version 2.1`
 
 -   `scancode://zpl-2.1`
@@ -29,6 +33,10 @@
 -   “http://old.zope.org/Resources/License/ZPL-2.1” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: ZPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-2.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this is a generic version of the ZPL 2.0 license”
     (source:
@@ -169,6 +177,10 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-2.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -185,16 +197,29 @@
         "__impliedNames": [
             "ZPL-2.1",
             "Zope Public License 2.1",
+            "osi:ZPL-2.1",
+            "scancode:zpl-2.1",
             "Zope Public License (ZPL) Version 2.1",
             "scancode://zpl-2.1",
             "ZPL 2.1"
         ],
         "__impliedId": "ZPL-2.1",
+        "__impliedAmbiguousNames": [
+            "ZPL, Version 2.1",
+            "ZPL 2.1",
+            "Zope Public License (ZPL) Version 2.1"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://old.zope.org/Resources/License/ZPL-2.1"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ZPL"
                 ]
             ],
             [
@@ -494,6 +519,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/866"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ZPL-2.1",
+                "shortName": null,
+                "category": "ZPL",
+                "alternativeNames": [
+                    "ZPL, Version 2.1",
+                    "ZPL 2.1",
+                    "Zope Public License (ZPL) Version 2.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-2.1.yaml",
+                "otherIds": [
+                    "osi:ZPL-2.1",
+                    "scancode:zpl-2.1"
+                ],
+                "canonicalName": "Zope Public License 2.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Zope Public License 2.1",
+                        "ZPL-2.1",
+                        "osi:ZPL-2.1",
+                        "scancode:zpl-2.1"
+                    ],
+                    "__impliedId": "ZPL-2.1",
+                    "__impliedAmbiguousNames": [
+                        "ZPL, Version 2.1",
+                        "ZPL 2.1",
+                        "Zope Public License (ZPL) Version 2.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ZPL"
+                            ]
                         ]
                     ]
                 }

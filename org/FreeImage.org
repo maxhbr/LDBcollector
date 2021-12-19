@@ -8,13 +8,19 @@
 
 *Other Names:*
 
-- =scancode://freeimage-1.0=
-
 - =FreeImage Public License 1.0=
+
+- =scancode:freeimage-1.0=
+
+- =scancode://freeimage-1.0=
 
 ** Comments on (easy) usability
 
 ** General Comments
+
+- "category: FreeImage" (source:
+  [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeImage-Public-License-1.0.yaml][Metaeffekt
+  Universe]] (CC-BY-4.0))
 
 ** URLs
 
@@ -175,6 +181,9 @@
 
 - LicenseName
 
+- [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeImage-Public-License-1.0.yaml][Metaeffekt
+  Universe]] (CC-BY-4.0)
+
 - [[https://spdx.org/licenses/FreeImage.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -186,11 +195,27 @@
   {
       "__impliedNames": [
           "FreeImage",
+          "FreeImage Public License 1.0",
+          "scancode:freeimage-1.0",
           "FreeImage Public License v1.0",
-          "scancode://freeimage-1.0",
-          "FreeImage Public License 1.0"
+          "scancode://freeimage-1.0"
       ],
       "__impliedId": "FreeImage",
+      "__impliedAmbiguousNames": [
+          "FreeImage License",
+          "FREEIMAGE PUBLIC LICENSE",
+          "FREEIMAGE Public License",
+          "FreeImage Public License",
+          "FREEIMAGE Public LICENSE"
+      ],
+      "__impliedComments": [
+          [
+              "Metaeffekt Universe",
+              [
+                  "category: FreeImage"
+              ]
+          ]
+      ],
       "facts": {
           "LicenseName": {
               "implications": {
@@ -264,6 +289,46 @@
                       [
                           "Homepage",
                           "http://freeimage.sourceforge.net/freeimage-license.txt"
+                      ]
+                  ]
+              }
+          },
+          "Metaeffekt Universe": {
+              "spdxIdentifier": "FreeImage",
+              "shortName": null,
+              "category": "FreeImage",
+              "alternativeNames": [
+                  "FreeImage License",
+                  "FREEIMAGE PUBLIC LICENSE",
+                  "FREEIMAGE Public License",
+                  "FreeImage Public License",
+                  "FREEIMAGE Public LICENSE"
+              ],
+              "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeImage-Public-License-1.0.yaml",
+              "otherIds": [
+                  "scancode:freeimage-1.0"
+              ],
+              "canonicalName": "FreeImage Public License 1.0",
+              "_implications": {
+                  "__impliedNames": [
+                      "FreeImage Public License 1.0",
+                      "FreeImage",
+                      "scancode:freeimage-1.0"
+                  ],
+                  "__impliedId": "FreeImage",
+                  "__impliedAmbiguousNames": [
+                      "FreeImage License",
+                      "FREEIMAGE PUBLIC LICENSE",
+                      "FREEIMAGE Public License",
+                      "FreeImage Public License",
+                      "FREEIMAGE Public LICENSE"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Metaeffekt Universe",
+                          [
+                              "category: FreeImage"
+                          ]
                       ]
                   ]
               }

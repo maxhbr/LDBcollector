@@ -12,6 +12,10 @@
 *Other Names:*
 
 * `DOM4J License`
+* `DOM4J`
+* `scancode:dom4j`
+* `Plexus License`
+* `scancode:classworlds`
 * `scancode://dom4j`
 * `Dom4j License`
 
@@ -31,6 +35,9 @@ Project Wiki]
 credit can be found at "DOM4J Project http://www.dom4j.org/".'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: DOM4J'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOM4J-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 * ``Per Fedora, this is an Apache 1.1 derived license. Unfortunately,
 clause 4 is too broad, making it Free but GPL-incompatible. It does also
 replace the deprecated keys classworlds and apache-due-credit that were
@@ -169,6 +176,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOM4J-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pl]/Plexus-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/Hitachi/open-license[Hitachi open-license]
@@ -186,19 +197,33 @@ repository] is generated)
         "Plexus",
         "Plexus Classworlds License",
         "DOM4J License",
+        "DOM4J",
+        "scancode:dom4j",
+        "Plexus License",
+        "scancode:classworlds",
         "scancode://dom4j",
         "Dom4j License"
     ],
     "__impliedId": "Plexus",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Plexus"
+        "Plexus",
+        "DOM4J License",
+        "Plexus License",
+        "PLEXUS LICENSE",
+        "PLEXUS License"
     ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: DOM4J"
             ]
         ],
         [
@@ -481,6 +506,38 @@ repository] is generated)
                 ]
             },
             "description": "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": null,
+            "shortName": "DOM4J",
+            "category": "DOM4J",
+            "alternativeNames": [
+                "DOM4J License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOM4J-License.yaml",
+            "otherIds": [
+                "scancode:dom4j"
+            ],
+            "canonicalName": "DOM4J License",
+            "_implications": {
+                "__impliedNames": [
+                    "DOM4J License",
+                    "DOM4J",
+                    "scancode:dom4j"
+                ],
+                "__impliedId": "DOM4J",
+                "__impliedAmbiguousNames": [
+                    "DOM4J License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: DOM4J"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

@@ -6,6 +6,8 @@
 
 -   `IJG License`
 
+-   `scancode:ijg`
+
 -   `scancode://ijg`
 
 -   `JPEG License`
@@ -22,6 +24,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: IJG” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ij]/IJG-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -162,6 +168,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ij]/IJG-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -183,13 +193,24 @@
             "IJG",
             "Independent JPEG Group License",
             "IJG License",
+            "scancode:ijg",
             "scancode://ijg",
             "JPEG License"
         ],
         "__impliedId": "IJG",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "IJG"
+            "IJG",
+            "IJG License",
+            "IJG LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: IJG"
+                ]
+            ]
         ],
         "__hasPatentHint": true,
         "facts": {
@@ -336,6 +357,40 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/302"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "IJG",
+                "shortName": null,
+                "category": "IJG",
+                "alternativeNames": [
+                    "IJG License",
+                    "IJG LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ij]/IJG-License.yaml",
+                "otherIds": [
+                    "scancode:ijg"
+                ],
+                "canonicalName": "IJG License",
+                "_implications": {
+                    "__impliedNames": [
+                        "IJG License",
+                        "IJG",
+                        "scancode:ijg"
+                    ],
+                    "__impliedId": "IJG",
+                    "__impliedAmbiguousNames": [
+                        "IJG License",
+                        "IJG LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: IJG"
+                            ]
                         ]
                     ]
                 }

@@ -3,6 +3,8 @@
         "OSL-3.0",
         "Open Software License 3.0",
         "osl-3.0",
+        "scancode:osl-3.0",
+        "osi:OSL-3.0",
         "Open Software License, Version 3.0",
         "scancode://osl-3.0",
         "OSL 3.0"
@@ -11,7 +13,8 @@
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Open Software License",
-        "OSL 3.0"
+        "OSL 3.0",
+        "Open Software License 3.0"
     ],
     "__impliedComments": [
         [
@@ -19,6 +22,12 @@
             [
                 "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                 "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: OSL"
             ]
         ],
         [
@@ -277,6 +286,40 @@
             "_implications": {
                 "__impliedNames": [
                     "OSL-3.0"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "OSL-3.0",
+            "shortName": null,
+            "category": "OSL",
+            "alternativeNames": [
+                "Open Software License 3.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Software-License-3.0.yaml",
+            "otherIds": [
+                "scancode:osl-3.0",
+                "osi:OSL-3.0"
+            ],
+            "canonicalName": "Open Software License 3.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Open Software License 3.0",
+                    "OSL-3.0",
+                    "scancode:osl-3.0",
+                    "osi:OSL-3.0"
+                ],
+                "__impliedId": "OSL-3.0",
+                "__impliedAmbiguousNames": [
+                    "Open Software License 3.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: OSL"
+                        ]
+                    ]
                 ]
             }
         },

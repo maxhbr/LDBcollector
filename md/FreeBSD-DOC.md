@@ -17,6 +17,10 @@
 
 ## General Comments
 
+-   “category: FreeBSD Doc License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeBSD-Documentation-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
+
 ## URLs
 
 -   **SPDX:** https://spdx.org/licenses/FreeBSD-DOC.json
@@ -59,6 +63,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeBSD-Documentation-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/FreeBSD-DOC.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -77,7 +85,16 @@
         "__impliedId": "FreeBSD-DOC",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "FBSDDL"
+            "FBSDDL",
+            "FreeBSD Documentation License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: FreeBSD Doc License"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -181,6 +198,35 @@
                         [
                             null,
                             "https://www.freebsd.org/copyright/freebsd-doc-license/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "FreeBSD-DOC",
+                "shortName": null,
+                "category": "FreeBSD Doc License",
+                "alternativeNames": [
+                    "FreeBSD Documentation License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeBSD-Documentation-License.yaml",
+                "otherIds": [],
+                "canonicalName": "FreeBSD Documentation License",
+                "_implications": {
+                    "__impliedNames": [
+                        "FreeBSD Documentation License",
+                        "FreeBSD-DOC"
+                    ],
+                    "__impliedId": "FreeBSD-DOC",
+                    "__impliedAmbiguousNames": [
+                        "FreeBSD Documentation License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: FreeBSD Doc License"
+                            ]
                         ]
                     ]
                 }

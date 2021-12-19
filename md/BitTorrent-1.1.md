@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `BitTorrent License 1.1`
+
+-   `scancode:bittorrent-1.1`
+
 -   `BitTorrent Open Source License 1.1`
 
 -   `scancode://bittorrent-1.1`
@@ -13,6 +17,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: BitTorrent” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bi]/BitTorrent-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “The link http://www.bittorrent.com/license/ is dead, so there is no
     live text containing the license terms except at
@@ -186,6 +194,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bi]/BitTorrent-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -201,13 +213,29 @@
     {
         "__impliedNames": [
             "BitTorrent-1.1",
+            "BitTorrent License 1.1",
+            "scancode:bittorrent-1.1",
             "BitTorrent Open Source License 1.1",
             "BitTorrent Open Source License v1.1",
             "scancode://bittorrent-1.1",
             "BitTorrent 1.1"
         ],
         "__impliedId": "BitTorrent-1.1",
+        "__impliedAmbiguousNames": [
+            "BitTorrent, Version 1.1",
+            "BitTorrent, 1.1",
+            "BitTorrent-1.1",
+            "BitTorrent License, Version 1.1",
+            "BitTorrent License 1.1",
+            "BitTorrent Open Source License Version 1.1"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BitTorrent"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -349,6 +377,48 @@
                 },
                 "licensename": "BitTorrent-1.1",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BitTorrent-1.1",
+                "shortName": null,
+                "category": "BitTorrent",
+                "alternativeNames": [
+                    "BitTorrent, Version 1.1",
+                    "BitTorrent, 1.1",
+                    "BitTorrent-1.1",
+                    "BitTorrent License, Version 1.1",
+                    "BitTorrent License 1.1",
+                    "BitTorrent Open Source License Version 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bi]/BitTorrent-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:bittorrent-1.1"
+                ],
+                "canonicalName": "BitTorrent License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "BitTorrent License 1.1",
+                        "BitTorrent-1.1",
+                        "scancode:bittorrent-1.1"
+                    ],
+                    "__impliedId": "BitTorrent-1.1",
+                    "__impliedAmbiguousNames": [
+                        "BitTorrent, Version 1.1",
+                        "BitTorrent, 1.1",
+                        "BitTorrent-1.1",
+                        "BitTorrent License, Version 1.1",
+                        "BitTorrent License 1.1",
+                        "BitTorrent Open Source License Version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BitTorrent"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

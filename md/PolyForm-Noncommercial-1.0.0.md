@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:polyform-noncommercial-1.0.0`
+
 -   `scancode://polyform-noncommercial-1.0.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Polyform Noncommercial License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/Polyform-Noncommercial-License-1.0.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -162,6 +168,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/Polyform-Noncommercial-License-1.0.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -173,11 +183,23 @@
     {
         "__impliedNames": [
             "PolyForm-Noncommercial-1.0.0",
+            "Polyform Noncommercial License 1.0.0",
+            "scancode:polyform-noncommercial-1.0.0",
             "PolyForm Noncommercial License 1.0.0",
-            "scancode://polyform-noncommercial-1.0.0",
-            "Polyform Noncommercial License 1.0.0"
+            "scancode://polyform-noncommercial-1.0.0"
         ],
         "__impliedId": "PolyForm-Noncommercial-1.0.0",
+        "__impliedAmbiguousNames": [
+            "polyform-noncommercial-1.0.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Polyform Noncommercial License"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -250,6 +272,38 @@
                         [
                             null,
                             "https://polyformproject.org/licenses/noncommercial/1.0.0"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "PolyForm-Noncommercial-1.0.0",
+                "shortName": null,
+                "category": "Polyform Noncommercial License",
+                "alternativeNames": [
+                    "polyform-noncommercial-1.0.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[po]/Polyform-Noncommercial-License-1.0.0.yaml",
+                "otherIds": [
+                    "scancode:polyform-noncommercial-1.0.0"
+                ],
+                "canonicalName": "Polyform Noncommercial License 1.0.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Polyform Noncommercial License 1.0.0",
+                        "PolyForm-Noncommercial-1.0.0",
+                        "scancode:polyform-noncommercial-1.0.0"
+                    ],
+                    "__impliedId": "PolyForm-Noncommercial-1.0.0",
+                    "__impliedAmbiguousNames": [
+                        "polyform-noncommercial-1.0.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Polyform Noncommercial License"
+                            ]
                         ]
                     ]
                 }

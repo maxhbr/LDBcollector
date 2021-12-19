@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `PNG Reference Library License 2.0`
+
+-   `scancode:libpng-v2`
+
 -   `scancode://libpng-v2`
 
 -   `LIbpng License v2`
@@ -15,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: libpng” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pn]/PNG-Reference-Library-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -75,6 +83,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pn]/PNG-Reference-Library-License-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/libpng-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -87,10 +99,23 @@
         "__impliedNames": [
             "libpng-2.0",
             "PNG Reference Library version 2",
+            "PNG Reference Library License 2.0",
+            "scancode:libpng-v2",
             "scancode://libpng-v2",
             "LIbpng License v2"
         ],
         "__impliedId": "libpng-2.0",
+        "__impliedAmbiguousNames": [
+            "PNG Reference Library License 2"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: libpng"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -164,6 +189,38 @@
                         [
                             "Homepage",
                             "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "libpng-2.0",
+                "shortName": null,
+                "category": "libpng",
+                "alternativeNames": [
+                    "PNG Reference Library License 2"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pn]/PNG-Reference-Library-License-2.0.yaml",
+                "otherIds": [
+                    "scancode:libpng-v2"
+                ],
+                "canonicalName": "PNG Reference Library License 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "PNG Reference Library License 2.0",
+                        "libpng-2.0",
+                        "scancode:libpng-v2"
+                    ],
+                    "__impliedId": "libpng-2.0",
+                    "__impliedAmbiguousNames": [
+                        "PNG Reference Library License 2"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: libpng"
+                            ]
                         ]
                     ]
                 }

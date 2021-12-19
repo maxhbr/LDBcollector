@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:noweb`
+
 -   `scancode://noweb`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Noweb” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Noweb-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -59,6 +65,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Noweb-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Noweb.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -71,12 +81,26 @@
         "__impliedNames": [
             "Noweb",
             "Noweb License",
+            "scancode:noweb",
             "scancode://noweb"
         ],
         "__impliedId": "Noweb",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Noweb"
+            "Noweb",
+            "Noweb License",
+            "NOWEB LICENSE",
+            "NOWEB License",
+            "Noweb is copyright",
+            "Noweb is protected by copyright"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Noweb"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -186,6 +210,46 @@
                         [
                             null,
                             "https://fedoraproject.org/wiki/Licensing/Noweb"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Noweb",
+                "shortName": null,
+                "category": "Noweb",
+                "alternativeNames": [
+                    "Noweb License",
+                    "NOWEB LICENSE",
+                    "NOWEB License",
+                    "Noweb is copyright",
+                    "Noweb is protected by copyright"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Noweb-License.yaml",
+                "otherIds": [
+                    "scancode:noweb"
+                ],
+                "canonicalName": "Noweb License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Noweb License",
+                        "Noweb",
+                        "scancode:noweb"
+                    ],
+                    "__impliedId": "Noweb",
+                    "__impliedAmbiguousNames": [
+                        "Noweb License",
+                        "NOWEB LICENSE",
+                        "NOWEB License",
+                        "Noweb is copyright",
+                        "Noweb is protected by copyright"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Noweb"
+                            ]
                         ]
                     ]
                 }

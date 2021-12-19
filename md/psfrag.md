@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:psfrag`
+
 -   `scancode://psfrag`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: psfrag” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ps]/psfrag-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is considered Free, but GPL-incompatible
     only when used for TeX files. In all other use cases, this may not
@@ -47,6 +53,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ps]/psfrag-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/psfrag.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -59,13 +69,23 @@
         "__impliedNames": [
             "psfrag",
             "psfrag License",
+            "scancode:psfrag",
             "scancode://psfrag"
         ],
         "__impliedId": "psfrag",
         "__impliedAmbiguousNames": [
-            "psfrag"
+            "psfrag",
+            "psfrag License",
+            "PSFRAG LICENSE",
+            "PSFRAG License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: psfrag"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -182,6 +202,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/psfrag"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "psfrag",
+                "shortName": null,
+                "category": "psfrag",
+                "alternativeNames": [
+                    "psfrag License",
+                    "PSFRAG LICENSE",
+                    "PSFRAG License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[ps]/psfrag-License.yaml",
+                "otherIds": [
+                    "scancode:psfrag"
+                ],
+                "canonicalName": "psfrag License",
+                "_implications": {
+                    "__impliedNames": [
+                        "psfrag License",
+                        "psfrag",
+                        "scancode:psfrag"
+                    ],
+                    "__impliedId": "psfrag",
+                    "__impliedAmbiguousNames": [
+                        "psfrag License",
+                        "PSFRAG LICENSE",
+                        "PSFRAG License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: psfrag"
+                            ]
                         ]
                     ]
                 }

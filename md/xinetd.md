@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:xinetd`
+
 -   `scancode://xinetd`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: xinetd” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xi]/xinetd-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -98,6 +104,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xi]/xinetd-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/xinetd.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -110,12 +120,24 @@
         "__impliedNames": [
             "xinetd",
             "xinetd License",
+            "scancode:xinetd",
             "scancode://xinetd"
         ],
         "__impliedId": "xinetd",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "xinetd"
+            "xinetd",
+            "xinetd License",
+            "XINETD LICENSE",
+            "XINETD License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: xinetd"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -238,6 +260,42 @@
                 },
                 "licensename": "xinetd",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "xinetd",
+                "shortName": null,
+                "category": "xinetd",
+                "alternativeNames": [
+                    "xinetd License",
+                    "XINETD LICENSE",
+                    "XINETD License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xi]/xinetd-License.yaml",
+                "otherIds": [
+                    "scancode:xinetd"
+                ],
+                "canonicalName": "xinetd License",
+                "_implications": {
+                    "__impliedNames": [
+                        "xinetd License",
+                        "xinetd",
+                        "scancode:xinetd"
+                    ],
+                    "__impliedId": "xinetd",
+                    "__impliedAmbiguousNames": [
+                        "xinetd License",
+                        "XINETD LICENSE",
+                        "XINETD License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: xinetd"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

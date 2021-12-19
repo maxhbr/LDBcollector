@@ -6,6 +6,12 @@
 
 -   `Clear BSD`
 
+-   `BSD 3-Clause Clear License (copyright variant)`
+
+-   `BSD-3-Clause-Clear-copyright-variant`
+
+-   `scancode:clear-bsd`
+
 -   `scancode://clear-bsd`
 
 -   `Clear BSD License`
@@ -35,6 +41,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License-(copyright-variant).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## Obligations
 
@@ -113,6 +123,14 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License-(copyright-variant).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
     (CC0-1.0)
 
@@ -130,12 +148,26 @@
             "BSD 3-Clause Clear License",
             "bsd-3-clause-clear",
             "Clear BSD",
+            "BSD 3-Clause Clear License (copyright variant)",
+            "BSD-3-Clause-Clear-copyright-variant",
+            "scancode:clear-bsd",
             "scancode://clear-bsd",
             "Clear BSD License"
         ],
         "__impliedId": "BSD-3-Clause-Clear",
         "__impliedAmbiguousNames": [
-            "The BSD-3-clause License"
+            "The BSD-3-clause License",
+            "BSD-3-Clause-Clear",
+            "BSD 3-Clause Clear License",
+            "Clear BSD License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -284,6 +316,34 @@
                 },
                 "Comment": "Note that a 2-clause form of the BSD license, removing the third condition, is also in use. This is because even a generous copyright license does not implicitly forfeit the copyright holder's \"right of publicity\". In other words, even if a license does not forbid you from claiming that the copyright holder or other parties endorses or promotes your work, the law generally does. We're not aware of any exceptions.",
                 "LicenseId": "BSD-3-Clause-Clear"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "BSD-3-Clause-Clear-copyright-variant",
+                "category": "BSD",
+                "alternativeNames": [],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License-(copyright-variant).yaml",
+                "otherIds": [
+                    "scancode:clear-bsd"
+                ],
+                "canonicalName": "BSD 3-Clause Clear License (copyright variant)",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-Clause Clear License (copyright variant)",
+                        "BSD-3-Clause-Clear-copyright-variant",
+                        "scancode:clear-bsd"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Clear-copyright-variant",
+                    "__impliedAmbiguousNames": [],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

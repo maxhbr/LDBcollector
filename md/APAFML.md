@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `APAFML License`
+
+-   `scancode:apafml`
+
 -   `scancode://apafml`
 
 ## Comments on (easy) usability
@@ -18,6 +22,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: APAFML” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/APAFML-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -54,6 +62,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/APAFML-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/APAFML.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -66,12 +78,22 @@
         "__impliedNames": [
             "APAFML",
             "Adobe Postscript AFM License",
+            "APAFML License",
+            "scancode:apafml",
             "scancode://apafml"
         ],
         "__impliedId": "APAFML",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "APAFML"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: APAFML"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -175,6 +197,38 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "APAFML",
+                "shortName": null,
+                "category": "APAFML",
+                "alternativeNames": [
+                    "APAFML"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/APAFML-License.yaml",
+                "otherIds": [
+                    "scancode:apafml"
+                ],
+                "canonicalName": "APAFML License",
+                "_implications": {
+                    "__impliedNames": [
+                        "APAFML License",
+                        "APAFML",
+                        "scancode:apafml"
+                    ],
+                    "__impliedId": "APAFML",
+                    "__impliedAmbiguousNames": [
+                        "APAFML"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: APAFML"
+                            ]
                         ]
                     ]
                 }

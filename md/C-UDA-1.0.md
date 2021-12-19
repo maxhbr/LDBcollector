@@ -4,11 +4,19 @@
 
 **Other Names:**
 
+-   `Computational Use of Data Agreement 1.0`
+
+-   `scancode:c-uda-1.0`
+
 -   `scancode://c-uda-1.0`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Computational Use of Data Agreement” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Computational-Use-of-Data-Agreement-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -76,6 +84,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Computational-Use-of-Data-Agreement-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/C-UDA-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -87,10 +99,23 @@
     {
         "__impliedNames": [
             "C-UDA-1.0",
+            "Computational Use of Data Agreement 1.0",
+            "scancode:c-uda-1.0",
             "Computational Use of Data Agreement v1.0",
             "scancode://c-uda-1.0"
         ],
         "__impliedId": "C-UDA-1.0",
+        "__impliedAmbiguousNames": [
+            "Computational Use of Data Agreement v1.0"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Computational Use of Data Agreement"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -169,6 +194,38 @@
                         [
                             null,
                             "https://cdla.dev/computational-use-of-data-agreement-v1-0/"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "C-UDA-1.0",
+                "shortName": null,
+                "category": "Computational Use of Data Agreement",
+                "alternativeNames": [
+                    "Computational Use of Data Agreement v1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Computational-Use-of-Data-Agreement-1.0.yaml",
+                "otherIds": [
+                    "scancode:c-uda-1.0"
+                ],
+                "canonicalName": "Computational Use of Data Agreement 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Computational Use of Data Agreement 1.0",
+                        "C-UDA-1.0",
+                        "scancode:c-uda-1.0"
+                    ],
+                    "__impliedId": "C-UDA-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Computational Use of Data Agreement v1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Computational Use of Data Agreement"
+                            ]
                         ]
                     ]
                 }

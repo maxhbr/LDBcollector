@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:aml`
+
 -   `scancode://aml`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: AML” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-MIT-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -54,6 +60,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-MIT-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/AML.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -66,12 +76,22 @@
         "__impliedNames": [
             "AML",
             "Apple MIT License",
+            "scancode:aml",
             "scancode://aml"
         ],
         "__impliedId": "AML",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "AML"
+            "AML",
+            "Apple MIT License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: AML"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -175,6 +195,38 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Apple_MIT_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "AML",
+                "shortName": null,
+                "category": "AML",
+                "alternativeNames": [
+                    "Apple MIT License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apple-MIT-License.yaml",
+                "otherIds": [
+                    "scancode:aml"
+                ],
+                "canonicalName": "Apple MIT License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apple MIT License",
+                        "AML",
+                        "scancode:aml"
+                    ],
+                    "__impliedId": "AML",
+                    "__impliedAmbiguousNames": [
+                        "Apple MIT License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: AML"
+                            ]
                         ]
                     ]
                 }

@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:ngpl`
+
+-   `osi:NGPL`
+
 -   `The Nethack General Public License`
 
 -   `License :: OSI Approved :: Nethack General Public License`
@@ -22,6 +26,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Nethack General Public License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Nethack-General-Public-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ngpl.yml "Scancode")
@@ -86,6 +94,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Nethack-General-Public-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -108,6 +120,8 @@
         "__impliedNames": [
             "NGPL",
             "Nethack General Public License",
+            "scancode:ngpl",
+            "osi:NGPL",
             "The Nethack General Public License",
             "License :: OSI Approved :: Nethack General Public License",
             "scancode://ngpl"
@@ -115,9 +129,18 @@
         "__impliedId": "NGPL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "NGPL"
+            "NGPL",
+            "NETHACK GENERAL PUBLIC LICENSE",
+            "http://www.nethack.org/common/license.html",
+            "https://spdx.org/licenses/ngpl"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Nethack General Public License"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -299,6 +322,44 @@
                 "_implications": {
                     "__impliedNames": [
                         "NGPL"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NGPL",
+                "shortName": null,
+                "category": "Nethack General Public License",
+                "alternativeNames": [
+                    "NETHACK GENERAL PUBLIC LICENSE",
+                    "http://www.nethack.org/common/license.html",
+                    "https://spdx.org/licenses/ngpl"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Nethack-General-Public-License.yaml",
+                "otherIds": [
+                    "scancode:ngpl",
+                    "osi:NGPL"
+                ],
+                "canonicalName": "Nethack General Public License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Nethack General Public License",
+                        "NGPL",
+                        "scancode:ngpl",
+                        "osi:NGPL"
+                    ],
+                    "__impliedId": "NGPL",
+                    "__impliedAmbiguousNames": [
+                        "NETHACK GENERAL PUBLIC LICENSE",
+                        "http://www.nethack.org/common/license.html",
+                        "https://spdx.org/licenses/ngpl"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Nethack General Public License"
+                            ]
+                        ]
                     ]
                 }
             },

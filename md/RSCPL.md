@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:ricoh-1.0`
+
+-   `osi:RSCPL`
+
 -   `The Ricoh Source Code Public License`
 
 -   `License :: OSI Approved :: Ricoh Source Code Public License`
@@ -25,6 +29,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: RSCPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rs]/RSCPL.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ricoh-1.0.yml "Scancode")
@@ -193,6 +201,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rs]/RSCPL.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -215,13 +227,25 @@
         "__impliedNames": [
             "RSCPL",
             "Ricoh Source Code Public License",
+            "scancode:ricoh-1.0",
+            "osi:RSCPL",
             "The Ricoh Source Code Public License",
             "License :: OSI Approved :: Ricoh Source Code Public License",
             "scancode://ricoh-1.0",
             "Ricoh Source Code Public License 1.0"
         ],
         "__impliedId": "RSCPL",
+        "__impliedAmbiguousNames": [
+            "RSCPL",
+            "Ricoh Source Code Public License"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: RSCPL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -427,6 +451,42 @@
                 "_implications": {
                     "__impliedNames": [
                         "RSCPL"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "RSCPL",
+                "shortName": null,
+                "category": "RSCPL",
+                "alternativeNames": [
+                    "RSCPL",
+                    "Ricoh Source Code Public License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rs]/RSCPL.yaml",
+                "otherIds": [
+                    "scancode:ricoh-1.0",
+                    "osi:RSCPL"
+                ],
+                "canonicalName": "RSCPL",
+                "_implications": {
+                    "__impliedNames": [
+                        "RSCPL",
+                        "RSCPL",
+                        "scancode:ricoh-1.0",
+                        "osi:RSCPL"
+                    ],
+                    "__impliedId": "RSCPL",
+                    "__impliedAmbiguousNames": [
+                        "RSCPL",
+                        "Ricoh Source Code Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: RSCPL"
+                            ]
+                        ]
                     ]
                 }
             },

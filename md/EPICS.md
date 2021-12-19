@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:epics`
+
 -   `scancode://epics`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: EPICS Open License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ep]/EPICS-Open-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -69,6 +75,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ep]/EPICS-Open-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/EPICS.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -81,12 +91,22 @@
         "__impliedNames": [
             "EPICS",
             "EPICS Open License",
+            "scancode:epics",
             "scancode://epics"
         ],
         "__impliedId": "EPICS",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "EPICS"
+            "EPICS",
+            "http://www.aps.anl.gov/epics/license/open.php"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: EPICS Open License"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -196,6 +216,40 @@
                         [
                             null,
                             "https://epics.anl.gov/license/open.php"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "EPICS",
+                "shortName": null,
+                "category": "EPICS Open License",
+                "alternativeNames": [
+                    "http://www.aps.anl.gov/epics/license/open.php",
+                    "EPICS"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ep]/EPICS-Open-License.yaml",
+                "otherIds": [
+                    "scancode:epics"
+                ],
+                "canonicalName": "EPICS Open License",
+                "_implications": {
+                    "__impliedNames": [
+                        "EPICS Open License",
+                        "EPICS",
+                        "scancode:epics"
+                    ],
+                    "__impliedId": "EPICS",
+                    "__impliedAmbiguousNames": [
+                        "http://www.aps.anl.gov/epics/license/open.php",
+                        "EPICS"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: EPICS Open License"
+                            ]
                         ]
                     ]
                 }

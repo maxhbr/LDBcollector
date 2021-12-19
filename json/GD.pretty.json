@@ -2,10 +2,19 @@
     "__impliedNames": [
         "GD",
         "GD License",
+        "scancode:libgd-2018",
         "scancode://libgd-2018",
         "libgd License 2018"
     ],
     "__impliedId": "GD",
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: GD"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -79,6 +88,34 @@
                     [
                         "Homepage",
                         "https://github.com/libgd/libgd/blob/master/COPYING"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "GD",
+            "shortName": null,
+            "category": "GD",
+            "alternativeNames": [],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gd]/GD-License.yaml",
+            "otherIds": [
+                "scancode:libgd-2018"
+            ],
+            "canonicalName": "GD License",
+            "_implications": {
+                "__impliedNames": [
+                    "GD License",
+                    "GD",
+                    "scancode:libgd-2018"
+                ],
+                "__impliedId": "GD",
+                "__impliedAmbiguousNames": [],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: GD"
+                        ]
                     ]
                 ]
             }

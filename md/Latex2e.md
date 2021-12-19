@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:latex2e`
+
 -   `scancode://latex2e`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Latex2e” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/Latex2e-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “the latext2e, verbatim-manual and abstyles are similar licenses”
     (source:
@@ -52,6 +58,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/Latex2e-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Latex2e.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -64,14 +74,25 @@
         "__impliedNames": [
             "Latex2e",
             "Latex2e License",
+            "scancode:latex2e",
             "scancode://latex2e"
         ],
         "__impliedId": "Latex2e",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Latex2e"
+            "Latex2e",
+            "Latex2e License",
+            "LATEX2E LICENSE",
+            "LATEX2E License",
+            "https://spdx.org/licenses/latex2e"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Latex2e"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -189,6 +210,44 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Latex2e"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Latex2e",
+                "shortName": null,
+                "category": "Latex2e",
+                "alternativeNames": [
+                    "Latex2e License",
+                    "LATEX2E LICENSE",
+                    "LATEX2E License",
+                    "https://spdx.org/licenses/latex2e"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[la]/Latex2e-License.yaml",
+                "otherIds": [
+                    "scancode:latex2e"
+                ],
+                "canonicalName": "Latex2e License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Latex2e License",
+                        "Latex2e",
+                        "scancode:latex2e"
+                    ],
+                    "__impliedId": "Latex2e",
+                    "__impliedAmbiguousNames": [
+                        "Latex2e License",
+                        "LATEX2E LICENSE",
+                        "LATEX2E License",
+                        "https://spdx.org/licenses/latex2e"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Latex2e"
+                            ]
                         ]
                     ]
                 }

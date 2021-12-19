@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:linux-openib`
+
 -   `scancode://linux-openib`
 
 ## Comments on (easy) usability
@@ -13,6 +15,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Linux OpenIB” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/Linux-Kernel-Variant-of-OpenIB.org-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “This license is a hybrid of two common licenses the BSD-2-Clause
     (bsd- simplified) and the MIT License (mit). ” (source:
@@ -63,6 +69,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/Linux-Kernel-Variant-of-OpenIB.org-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Linux-OpenIB.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -75,10 +85,22 @@
         "__impliedNames": [
             "Linux-OpenIB",
             "Linux Kernel Variant of OpenIB.org license",
+            "Linux Kernel Variant of OpenIB.org License",
+            "scancode:linux-openib",
             "scancode://linux-openib"
         ],
         "__impliedId": "Linux-OpenIB",
+        "__impliedAmbiguousNames": [
+            "Linux Kernel Variant of OpenIB.org license",
+            "Linux-OpenIB"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Linux OpenIB"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -178,6 +200,40 @@
                         [
                             null,
                             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/infiniband/core/sa.h?id=3215b9d57a2c75c4305a3956ca303d7004485200"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Linux-OpenIB",
+                "shortName": null,
+                "category": "Linux OpenIB",
+                "alternativeNames": [
+                    "Linux Kernel Variant of OpenIB.org license",
+                    "Linux-OpenIB"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/Linux-Kernel-Variant-of-OpenIB.org-License.yaml",
+                "otherIds": [
+                    "scancode:linux-openib"
+                ],
+                "canonicalName": "Linux Kernel Variant of OpenIB.org License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Linux Kernel Variant of OpenIB.org License",
+                        "Linux-OpenIB",
+                        "scancode:linux-openib"
+                    ],
+                    "__impliedId": "Linux-OpenIB",
+                    "__impliedAmbiguousNames": [
+                        "Linux Kernel Variant of OpenIB.org license",
+                        "Linux-OpenIB"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Linux OpenIB"
+                            ]
                         ]
                     ]
                 }

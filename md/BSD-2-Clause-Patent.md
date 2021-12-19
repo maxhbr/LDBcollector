@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `BSD 2-Clause Patent License`
+
+-   `scancode:bsd-plus-patent`
+
+-   `osi:BSDplusPatent`
+
 -   `scancode://bsd-plus-patent`
 
 -   `BSD-2-Clause Plus Patent`
@@ -19,6 +25,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: BSD Patent” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-2-Clause-Patent-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per the OSI, this license is designed to provide a) a simple
     permissive license; b) that is compatible with the GNU General
@@ -113,6 +123,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-2-Clause-Patent-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -132,11 +146,24 @@
         "__impliedNames": [
             "BSD-2-Clause-Patent",
             "BSD-2-Clause Plus Patent License",
+            "BSD 2-Clause Patent License",
+            "scancode:bsd-plus-patent",
+            "osi:BSDplusPatent",
             "scancode://bsd-plus-patent",
             "BSD-2-Clause Plus Patent"
         ],
         "__impliedId": "BSD-2-Clause-Patent",
+        "__impliedAmbiguousNames": [
+            "BSD-2-Clause-Patent",
+            "BSD-2-Clause Plus Patent License"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: BSD Patent"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -266,6 +293,42 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD-2-Clause-Patent"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "BSD-2-Clause-Patent",
+                "shortName": null,
+                "category": "BSD Patent",
+                "alternativeNames": [
+                    "BSD-2-Clause-Patent",
+                    "BSD-2-Clause Plus Patent License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-2-Clause-Patent-License.yaml",
+                "otherIds": [
+                    "scancode:bsd-plus-patent",
+                    "osi:BSDplusPatent"
+                ],
+                "canonicalName": "BSD 2-Clause Patent License",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 2-Clause Patent License",
+                        "BSD-2-Clause-Patent",
+                        "scancode:bsd-plus-patent",
+                        "osi:BSDplusPatent"
+                    ],
+                    "__impliedId": "BSD-2-Clause-Patent",
+                    "__impliedAmbiguousNames": [
+                        "BSD-2-Clause-Patent",
+                        "BSD-2-Clause Plus Patent License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: BSD Patent"
+                            ]
+                        ]
                     ]
                 }
             },

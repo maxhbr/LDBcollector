@@ -6,6 +6,10 @@
 
 -   `RSA Message-Digest License `
 
+-   `RSA MD License`
+
+-   `scancode:rsa-md5`
+
 -   `scancode://rsa-md5`
 
 -   `RSA-MD5 License`
@@ -17,6 +21,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: RSA MD” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rs]/RSA-MD-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -58,6 +66,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rs]/RSA-MD-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/RSA-MD.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -70,11 +82,27 @@
         "__impliedNames": [
             "RSA-MD",
             "RSA Message-Digest License ",
+            "RSA MD License",
+            "scancode:rsa-md5",
             "RSA Message-Digest License",
             "scancode://rsa-md5",
             "RSA-MD5 License"
         ],
         "__impliedId": "RSA-MD",
+        "__impliedAmbiguousNames": [
+            "RSA MD License",
+            "RSA MD LICENSE",
+            "RSA-MD License",
+            "RSA-MD LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: RSA MD"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -154,6 +182,44 @@
                         [
                             null,
                             "http://www.faqs.org/rfcs/rfc1321.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "RSA-MD",
+                "shortName": null,
+                "category": "RSA MD",
+                "alternativeNames": [
+                    "RSA MD License",
+                    "RSA MD LICENSE",
+                    "RSA-MD License",
+                    "RSA-MD LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rs]/RSA-MD-License.yaml",
+                "otherIds": [
+                    "scancode:rsa-md5"
+                ],
+                "canonicalName": "RSA MD License",
+                "_implications": {
+                    "__impliedNames": [
+                        "RSA MD License",
+                        "RSA-MD",
+                        "scancode:rsa-md5"
+                    ],
+                    "__impliedId": "RSA-MD",
+                    "__impliedAmbiguousNames": [
+                        "RSA MD License",
+                        "RSA MD LICENSE",
+                        "RSA-MD License",
+                        "RSA-MD LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: RSA MD"
+                            ]
                         ]
                     ]
                 }

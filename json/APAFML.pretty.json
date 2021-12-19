@@ -2,12 +2,22 @@
     "__impliedNames": [
         "APAFML",
         "Adobe Postscript AFM License",
+        "APAFML License",
+        "scancode:apafml",
         "scancode://apafml"
     ],
     "__impliedId": "APAFML",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "APAFML"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: APAFML"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +121,38 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "APAFML",
+            "shortName": null,
+            "category": "APAFML",
+            "alternativeNames": [
+                "APAFML"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/APAFML-License.yaml",
+            "otherIds": [
+                "scancode:apafml"
+            ],
+            "canonicalName": "APAFML License",
+            "_implications": {
+                "__impliedNames": [
+                    "APAFML License",
+                    "APAFML",
+                    "scancode:apafml"
+                ],
+                "__impliedId": "APAFML",
+                "__impliedAmbiguousNames": [
+                    "APAFML"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: APAFML"
+                        ]
                     ]
                 ]
             }

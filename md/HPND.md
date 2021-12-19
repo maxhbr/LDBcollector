@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:historical`
+
+-   `osi:HPND`
+
 -   `scancode://historical`
 
 ## Comments on (easy) usability
@@ -22,6 +26,11 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: Historical Permission Notice and Disclaimer” (source:
+    [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[hi]/Historical-Permission-Notice-and-Disclaimer.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified. This license has been
     voluntarily deprecated by its author. ” (source:
@@ -87,6 +96,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[hi]/Historical-Permission-Notice-and-Disclaimer.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -113,14 +126,25 @@
         "__impliedNames": [
             "HPND",
             "Historical Permission Notice and Disclaimer",
+            "scancode:historical",
+            "osi:HPND",
             "scancode://historical"
         ],
         "__impliedId": "HPND",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT"
+            "MIT",
+            "Historic Permission Notice and Disclaimer",
+            "http://www.opensource.org/licenses/historical.php",
+            "https://spdx.org/licenses/hpnd"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Historical Permission Notice and Disclaimer"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -316,6 +340,44 @@
                 "_implications": {
                     "__impliedNames": [
                         "HPND"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "HPND",
+                "shortName": null,
+                "category": "Historical Permission Notice and Disclaimer",
+                "alternativeNames": [
+                    "Historic Permission Notice and Disclaimer",
+                    "http://www.opensource.org/licenses/historical.php",
+                    "https://spdx.org/licenses/hpnd"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[h]/[hi]/Historical-Permission-Notice-and-Disclaimer.yaml",
+                "otherIds": [
+                    "scancode:historical",
+                    "osi:HPND"
+                ],
+                "canonicalName": "Historical Permission Notice and Disclaimer",
+                "_implications": {
+                    "__impliedNames": [
+                        "Historical Permission Notice and Disclaimer",
+                        "HPND",
+                        "scancode:historical",
+                        "osi:HPND"
+                    ],
+                    "__impliedId": "HPND",
+                    "__impliedAmbiguousNames": [
+                        "Historic Permission Notice and Disclaimer",
+                        "http://www.opensource.org/licenses/historical.php",
+                        "https://spdx.org/licenses/hpnd"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Historical Permission Notice and Disclaimer"
+                            ]
+                        ]
                     ]
                 }
             },

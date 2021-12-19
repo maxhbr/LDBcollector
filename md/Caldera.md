@@ -4,11 +4,17 @@
 
 **Other Names:**
 
+-   `scancode:caldera`
+
 -   `scancode://caldera`
 
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Caldera” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ca]/Caldera-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -75,6 +81,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ca]/Caldera-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Caldera.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -87,9 +97,23 @@
         "__impliedNames": [
             "Caldera",
             "Caldera License",
+            "scancode:caldera",
             "scancode://caldera"
         ],
         "__impliedId": "Caldera",
+        "__impliedAmbiguousNames": [
+            "Caldera License",
+            "CALDERA LICENSE",
+            "CALDERA License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Caldera"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -163,6 +187,42 @@
                         [
                             "Homepage",
                             "http://www.lemis.com/grog/UNIX/ancient-source-all.pdf"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Caldera",
+                "shortName": null,
+                "category": "Caldera",
+                "alternativeNames": [
+                    "Caldera License",
+                    "CALDERA LICENSE",
+                    "CALDERA License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ca]/Caldera-License.yaml",
+                "otherIds": [
+                    "scancode:caldera"
+                ],
+                "canonicalName": "Caldera License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Caldera License",
+                        "Caldera",
+                        "scancode:caldera"
+                    ],
+                    "__impliedId": "Caldera",
+                    "__impliedAmbiguousNames": [
+                        "Caldera License",
+                        "CALDERA LICENSE",
+                        "CALDERA License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Caldera"
+                            ]
                         ]
                     ]
                 }

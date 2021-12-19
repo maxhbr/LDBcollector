@@ -4,12 +4,32 @@
         "ICU License",
         "X11",
         "X11 License",
+        "scancode:slf4j-2005",
+        "scancode:x11-xconsortium",
         "ICU License (ICU 1.8.1 and later)",
         "scancode://x11-xconsortium",
         "X11-Style (X Consortium)",
         "scancode://x11"
     ],
     "__impliedId": "ICU",
+    "__impliedAmbiguousNames": [
+        "ICU License",
+        "X License",
+        "MIT/X Consortium",
+        "X/MIT License",
+        "X11 License",
+        "MIT/X11",
+        "X11 LICENSE",
+        "Expat~X with X exception"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: ICU"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -245,6 +265,38 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/297"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "ICU",
+            "shortName": null,
+            "category": "ICU",
+            "alternativeNames": [
+                "ICU License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ic]/ICU-License.yaml",
+            "otherIds": [
+                "scancode:slf4j-2005"
+            ],
+            "canonicalName": "ICU License",
+            "_implications": {
+                "__impliedNames": [
+                    "ICU License",
+                    "ICU",
+                    "scancode:slf4j-2005"
+                ],
+                "__impliedId": "ICU",
+                "__impliedAmbiguousNames": [
+                    "ICU License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: ICU"
+                        ]
                     ]
                 ]
             }

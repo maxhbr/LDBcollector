@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:dotseqn`
+
 -   `scancode://dotseqn`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Dotseqn” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/Dotseqn-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -39,6 +45,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/Dotseqn-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Dotseqn.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -51,12 +61,24 @@
         "__impliedNames": [
             "Dotseqn",
             "Dotseqn License",
+            "scancode:dotseqn",
             "scancode://dotseqn"
         ],
         "__impliedId": "Dotseqn",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Dotseqn"
+            "Dotseqn",
+            "Dotseqn License",
+            "DOTSEQN LICENSE",
+            "DOTSEQN License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Dotseqn"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -160,6 +182,42 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/Dotseqn"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Dotseqn",
+                "shortName": null,
+                "category": "Dotseqn",
+                "alternativeNames": [
+                    "Dotseqn License",
+                    "DOTSEQN LICENSE",
+                    "DOTSEQN License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/Dotseqn-License.yaml",
+                "otherIds": [
+                    "scancode:dotseqn"
+                ],
+                "canonicalName": "Dotseqn License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Dotseqn License",
+                        "Dotseqn",
+                        "scancode:dotseqn"
+                    ],
+                    "__impliedId": "Dotseqn",
+                    "__impliedAmbiguousNames": [
+                        "Dotseqn License",
+                        "DOTSEQN LICENSE",
+                        "DOTSEQN License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Dotseqn"
+                            ]
                         ]
                     ]
                 }

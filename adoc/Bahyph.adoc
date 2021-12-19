@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `scancode:bahyph`
 * `scancode://bahyph`
 
 === Comments on (easy) usability
@@ -24,6 +25,10 @@ Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
+
+* ``category: Bahyph'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[ba]/Bahyph-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === URLs
 
@@ -59,6 +64,8 @@ END OF COPYRIGHT NOTICE
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[ba]/Bahyph-License.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/Bahyph.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bahyph.yml[Scancode]
@@ -71,12 +78,24 @@ repository] is generated)
     "__impliedNames": [
         "Bahyph",
         "Bahyph License",
+        "scancode:bahyph",
         "scancode://bahyph"
     ],
     "__impliedId": "Bahyph",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Bahyph"
+        "Bahyph",
+        "Bahyph License",
+        "BAHYPH LICENSE",
+        "BAHYPH License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Bahyph"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -180,6 +199,42 @@ repository] is generated)
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Bahyph"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Bahyph",
+            "shortName": null,
+            "category": "Bahyph",
+            "alternativeNames": [
+                "Bahyph License",
+                "BAHYPH LICENSE",
+                "BAHYPH License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[ba]/Bahyph-License.yaml",
+            "otherIds": [
+                "scancode:bahyph"
+            ],
+            "canonicalName": "Bahyph License",
+            "_implications": {
+                "__impliedNames": [
+                    "Bahyph License",
+                    "Bahyph",
+                    "scancode:bahyph"
+                ],
+                "__impliedId": "Bahyph",
+                "__impliedAmbiguousNames": [
+                    "Bahyph License",
+                    "BAHYPH LICENSE",
+                    "BAHYPH License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Bahyph"
+                        ]
                     ]
                 ]
             }

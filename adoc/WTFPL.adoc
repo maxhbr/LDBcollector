@@ -12,6 +12,9 @@
 
 *Other Names:*
 
+* `WTF Public License 2.0`
+* `WTFPL-2.0`
+* `scancode:wtfpl-2.0`
 * `scancode://wtfpl-2.0`
 * `WTFPL 2.0`
 * `Do What The Fuck You Want To Public License (WTFPL) 2`
@@ -49,6 +52,10 @@ https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
+
+* ``category: WTFPL'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[wt]/WTF-Public-License-2.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === Obligations
 
@@ -131,6 +138,8 @@ license-compatibility-checker]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[wt]/WTF-Public-License-2.0.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/WTFPL.txt[OSADL
 License Checklist] (NOASSERTION)
 * https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
@@ -150,6 +159,9 @@ repository] is generated)
         "WTFPL",
         "Do What The F*ck You Want To Public License",
         "wtfpl",
+        "WTF Public License 2.0",
+        "WTFPL-2.0",
+        "scancode:wtfpl-2.0",
         "scancode://wtfpl-2.0",
         "WTFPL 2.0",
         "Do What The Fuck You Want To Public License (WTFPL) 2"
@@ -158,7 +170,22 @@ repository] is generated)
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
-        "WTFPL"
+        "WTFPL",
+        "DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE",
+        "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1",
+        "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0",
+        "Do What The Fuck You Want To Public License, Version 2",
+        "Do What you Want",
+        "http://www.wtfpl.net/about/",
+        "http://sam.zoy.org/wtfpl/"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: WTFPL"
+            ]
+        ]
     ],
     "__hasPatentHint": false,
     "facts": {
@@ -363,6 +390,55 @@ repository] is generated)
             },
             "Comment": null,
             "LicenseId": "WTFPL"
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "WTFPL",
+            "shortName": "WTFPL-2.0",
+            "category": "WTFPL",
+            "alternativeNames": [
+                "WTFPL",
+                "DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE",
+                "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
+                "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1",
+                "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0",
+                "Do What The Fuck You Want To Public License, Version 2",
+                "Do What you Want",
+                "http://www.wtfpl.net/about/",
+                "http://sam.zoy.org/wtfpl/"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[wt]/WTF-Public-License-2.0.yaml",
+            "otherIds": [
+                "scancode:wtfpl-2.0"
+            ],
+            "canonicalName": "WTF Public License 2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "WTF Public License 2.0",
+                    "WTFPL-2.0",
+                    "WTFPL",
+                    "scancode:wtfpl-2.0"
+                ],
+                "__impliedId": "WTFPL",
+                "__impliedAmbiguousNames": [
+                    "WTFPL",
+                    "DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE",
+                    "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
+                    "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1",
+                    "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0",
+                    "Do What The Fuck You Want To Public License, Version 2",
+                    "Do What you Want",
+                    "http://www.wtfpl.net/about/",
+                    "http://sam.zoy.org/wtfpl/"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: WTFPL"
+                        ]
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

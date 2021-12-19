@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:zpl-1.1`
+
 -   `scancode://zpl-1.1`
 
 -   `ZPL 1.1`
@@ -19,6 +21,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: ZPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -116,6 +122,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-1.1.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/ZPL-1.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -128,10 +138,24 @@
         "__impliedNames": [
             "ZPL-1.1",
             "Zope Public License 1.1",
+            "scancode:zpl-1.1",
             "scancode://zpl-1.1",
             "ZPL 1.1"
         ],
         "__impliedId": "ZPL-1.1",
+        "__impliedAmbiguousNames": [
+            "ZPL, Version 1.1",
+            "ZPL 1.1",
+            "Zope Public License (ZPL) Version 1.1"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ZPL"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -235,6 +259,42 @@
                 },
                 "licensename": "ZPL-1.1",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ZPL-1.1",
+                "shortName": null,
+                "category": "ZPL",
+                "alternativeNames": [
+                    "ZPL, Version 1.1",
+                    "ZPL 1.1",
+                    "Zope Public License (ZPL) Version 1.1"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zo]/Zope-Public-License-1.1.yaml",
+                "otherIds": [
+                    "scancode:zpl-1.1"
+                ],
+                "canonicalName": "Zope Public License 1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Zope Public License 1.1",
+                        "ZPL-1.1",
+                        "scancode:zpl-1.1"
+                    ],
+                    "__impliedId": "ZPL-1.1",
+                    "__impliedAmbiguousNames": [
+                        "ZPL, Version 1.1",
+                        "ZPL 1.1",
+                        "Zope Public License (ZPL) Version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ZPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

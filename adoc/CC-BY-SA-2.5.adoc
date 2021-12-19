@@ -11,6 +11,8 @@
 
 *Other Names:*
 
+* `Creative Commons BY-SA 2.5`
+* `scancode:cc-by-sa-2.5`
 * `Creative Commons Attribution-ShareAlike 2.5`
 * `scancode://cc-by-sa-2.5`
 
@@ -50,6 +52,9 @@ Element is the "Bye-Bye Succeeding" license attribute selected by
 Licensor and displayed on the title of this License.'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
+* ``category: CC-BY-SA'' (source:
+https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.5.yaml[Metaeffekt
+Universe] (CC-BY-4.0))
 
 === URLs
 
@@ -194,6 +199,8 @@ Creative Commons may be contacted at http://creativecommons.org/.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.5.yaml[Metaeffekt
+Universe] (CC-BY-4.0)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
 * https://spdx.org/licenses/CC-BY-SA-2.5.html[SPDX] (all data [in this
@@ -207,17 +214,31 @@ repository] is generated)
 {
     "__impliedNames": [
         "CC-BY-SA-2.5",
+        "Creative Commons BY-SA 2.5",
+        "scancode:cc-by-sa-2.5",
         "Creative Commons Attribution-ShareAlike 2.5",
         "Creative Commons Attribution Share Alike 2.5 Generic",
         "scancode://cc-by-sa-2.5"
     ],
     "__impliedId": "CC-BY-SA-2.5",
+    "__impliedAmbiguousNames": [
+        "Creative Commons Attribution Share Alike 2.5",
+        "CC-BY-SA-2.5",
+        "Creative Commons Attribution-ShareAlike 2.5",
+        "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)"
+    ],
     "__impliedComments": [
         [
             "Hitachi open-license",
             [
                 "https://creativecommons.org/licenses/by-sa/2.5/このサイトからLegalCodeを参照できる.",
                 "A collective work is a work that is composed of independent works, such as a periodical, poetry collection, or encyclopedia, assembled without modification. The works that constitute a collective work are not considered derivative works for the purposes of this license. A derivative work is a translation, arrangement, dramatization, fictionalization, film adaptation, sound recording, work of art, excerpt, abridgement, summary, or any other form of work that has been re-cast or altered. However, works that constitute a collective work are not considered derivative works for the purposes of this license and are excluded. For the avoidance of doubt, any music or sound recording that is synchronized with a moving image shall be considered a derivative work for the purposes of this license. A licensor is a person or entity that makes a work available under this license. A work is a copyrighted work and refers to a work offered under this license. The original author is the person or entity that created the work. A person or entity exercising rights under this License who has not previously violated the terms of this License with respect to his or her Work, or who has expressly given Licensor permission to exercise his or her rights even if he or she has previously violated the License, is the person or entity exercising his or her rights under this License. The Licensed Element is the \"Bye-Bye Succeeding\" license attribute selected by Licensor and displayed on the title of this License."
+            ]
+        ],
+        [
+            "Metaeffekt Universe",
+            [
+                "category: CC-BY-SA"
             ]
         ]
     ],
@@ -530,6 +551,44 @@ repository] is generated)
                 ]
             },
             "description": "A collective work is a work that is composed of independent works, such as a periodical, poetry collection, or encyclopedia, assembled without modification. The works that constitute a collective work are not considered derivative works for the purposes of this license. A derivative work is a translation, arrangement, dramatization, fictionalization, film adaptation, sound recording, work of art, excerpt, abridgement, summary, or any other form of work that has been re-cast or altered. However, works that constitute a collective work are not considered derivative works for the purposes of this license and are excluded. For the avoidance of doubt, any music or sound recording that is synchronized with a moving image shall be considered a derivative work for the purposes of this license. A licensor is a person or entity that makes a work available under this license. A work is a copyrighted work and refers to a work offered under this license. The original author is the person or entity that created the work. A person or entity exercising rights under this License who has not previously violated the terms of this License with respect to his or her Work, or who has expressly given Licensor permission to exercise his or her rights even if he or she has previously violated the License, is the person or entity exercising his or her rights under this License. The Licensed Element is the \"Bye-Bye Succeeding\" license attribute selected by Licensor and displayed on the title of this License."
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "CC-BY-SA-2.5",
+            "shortName": null,
+            "category": "CC-BY-SA",
+            "alternativeNames": [
+                "Creative Commons Attribution Share Alike 2.5",
+                "CC-BY-SA-2.5",
+                "Creative Commons Attribution-ShareAlike 2.5",
+                "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-2.5.yaml",
+            "otherIds": [
+                "scancode:cc-by-sa-2.5"
+            ],
+            "canonicalName": "Creative Commons BY-SA 2.5",
+            "_implications": {
+                "__impliedNames": [
+                    "Creative Commons BY-SA 2.5",
+                    "CC-BY-SA-2.5",
+                    "scancode:cc-by-sa-2.5"
+                ],
+                "__impliedId": "CC-BY-SA-2.5",
+                "__impliedAmbiguousNames": [
+                    "Creative Commons Attribution Share Alike 2.5",
+                    "CC-BY-SA-2.5",
+                    "Creative Commons Attribution-ShareAlike 2.5",
+                    "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: CC-BY-SA"
+                        ]
+                    ]
+                ]
+            }
         },
         "Google OSS Policy": {
             "rating": "RESTRICTED",

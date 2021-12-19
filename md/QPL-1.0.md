@@ -6,6 +6,12 @@
 
 -   `Q Public License`
 
+-   `QPL 1.0`
+
+-   `scancode:qpl-1.0`
+
+-   `osi:QPL-1.0`
+
 -   `The Q Public License Version (QPL-1.0)`
 
 -   `License :: OSI Approved :: Qt Public License (QPL)`
@@ -13,8 +19,6 @@
 -   `Q PUBLIC LICENSE version 1.0`
 
 -   `scancode://qpl-1.0`
-
--   `QPL 1.0`
 
 ## Comments on (easy) usability
 
@@ -58,6 +62,10 @@
 -   “https://opensource.org/licenses/QPL-1.0” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: QPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[q]/[qp]/QPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml "Scancode")
@@ -211,6 +219,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[q]/[qp]/QPL-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -241,18 +253,23 @@
             "QPL-1.0",
             "Q Public License 1.0",
             "Q Public License",
+            "QPL 1.0",
+            "scancode:qpl-1.0",
+            "osi:QPL-1.0",
             "The Q Public License Version (QPL-1.0)",
             "License :: OSI Approved :: Qt Public License (QPL)",
             "Q PUBLIC LICENSE version 1.0",
-            "scancode://qpl-1.0",
-            "QPL 1.0"
+            "scancode://qpl-1.0"
         ],
         "__impliedId": "QPL-1.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Q Public License",
             "Q Public License (QPL), Version 1.0",
-            "QPL"
+            "QPL",
+            "QPL, Version 1.0",
+            "QPL 1.0",
+            "Q PUBLIC LICENSE version 1.0"
         ],
         "__impliedComments": [
             [
@@ -265,6 +282,12 @@
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/QPL-1.0"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: QPL"
                 ]
             ],
             [
@@ -660,6 +683,44 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/788"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "QPL-1.0",
+                "shortName": null,
+                "category": "QPL",
+                "alternativeNames": [
+                    "QPL, Version 1.0",
+                    "QPL 1.0",
+                    "Q PUBLIC LICENSE version 1.0"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[q]/[qp]/QPL-1.0.yaml",
+                "otherIds": [
+                    "scancode:qpl-1.0",
+                    "osi:QPL-1.0"
+                ],
+                "canonicalName": "QPL 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "QPL 1.0",
+                        "QPL-1.0",
+                        "scancode:qpl-1.0",
+                        "osi:QPL-1.0"
+                    ],
+                    "__impliedId": "QPL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "QPL, Version 1.0",
+                        "QPL 1.0",
+                        "Q PUBLIC LICENSE version 1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: QPL"
+                            ]
                         ]
                     ]
                 }

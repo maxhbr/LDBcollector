@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:adsl`
+
 -   `scancode://adsl`
 
 ## Comments on (easy) usability
@@ -18,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: ADSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/Amazon-Digital-Services-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -56,6 +62,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/Amazon-Digital-Services-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/ADSL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -68,12 +78,22 @@
         "__impliedNames": [
             "ADSL",
             "Amazon Digital Services License",
+            "scancode:adsl",
             "scancode://adsl"
         ],
         "__impliedId": "ADSL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "ADSL"
+            "ADSL",
+            "Amazon Digital Services License"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: ADSL"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -177,6 +197,38 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "ADSL",
+                "shortName": null,
+                "category": "ADSL",
+                "alternativeNames": [
+                    "Amazon Digital Services License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[am]/Amazon-Digital-Services-License.yaml",
+                "otherIds": [
+                    "scancode:adsl"
+                ],
+                "canonicalName": "Amazon Digital Services License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Amazon Digital Services License",
+                        "ADSL",
+                        "scancode:adsl"
+                    ],
+                    "__impliedId": "ADSL",
+                    "__impliedAmbiguousNames": [
+                        "Amazon Digital Services License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: ADSL"
+                            ]
                         ]
                     ]
                 }

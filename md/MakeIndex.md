@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:makeindex`
+
 -   `scancode://makeindex`
 
 -   `MakeIndex Distribution Notice`
@@ -16,6 +18,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: MakeIndex” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[ma]/MakeIndex-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is free but GPL-incompatible, and was
     found in the MakeIndex component inside TeXLive. ” (source:
@@ -69,6 +75,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[ma]/MakeIndex-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/MakeIndex.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -81,15 +91,26 @@
         "__impliedNames": [
             "MakeIndex",
             "MakeIndex License",
+            "scancode:makeindex",
             "scancode://makeindex",
             "MakeIndex Distribution Notice"
         ],
         "__impliedId": "MakeIndex",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MakeIndex"
+            "MakeIndex",
+            "MakeIndex License",
+            "MAKEINDEX LICENSE",
+            "MAKEINDEX License",
+            "MakeIndex Distribution Notice"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MakeIndex"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -207,6 +228,44 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/MakeIndex"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "MakeIndex",
+                "shortName": null,
+                "category": "MakeIndex",
+                "alternativeNames": [
+                    "MakeIndex License",
+                    "MAKEINDEX LICENSE",
+                    "MAKEINDEX License",
+                    "MakeIndex Distribution Notice"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[ma]/MakeIndex-License.yaml",
+                "otherIds": [
+                    "scancode:makeindex"
+                ],
+                "canonicalName": "MakeIndex License",
+                "_implications": {
+                    "__impliedNames": [
+                        "MakeIndex License",
+                        "MakeIndex",
+                        "scancode:makeindex"
+                    ],
+                    "__impliedId": "MakeIndex",
+                    "__impliedAmbiguousNames": [
+                        "MakeIndex License",
+                        "MAKEINDEX LICENSE",
+                        "MAKEINDEX License",
+                        "MakeIndex Distribution Notice"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MakeIndex"
+                            ]
                         ]
                     ]
                 }

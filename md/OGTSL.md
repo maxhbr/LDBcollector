@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:opengroup`
+
+-   `osi:OGTSL`
+
 -   `The Open Group Test Suite License (OGTSL)`
 
 -   `License :: OSI Approved :: Open Group Test Suite License`
@@ -27,6 +31,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: OGTSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Group-Test-Suite-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/opengroup.yml "Scancode")
@@ -117,6 +125,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Group-Test-Suite-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -139,12 +151,25 @@
         "__impliedNames": [
             "OGTSL",
             "Open Group Test Suite License",
+            "scancode:opengroup",
+            "osi:OGTSL",
             "The Open Group Test Suite License (OGTSL)",
             "License :: OSI Approved :: Open Group Test Suite License",
             "scancode://opengroup"
         ],
         "__impliedId": "OGTSL",
+        "__impliedAmbiguousNames": [
+            "Open Group Test Suite License",
+            "OGTS license",
+            "OGTSL license"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OGTSL"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -334,6 +359,44 @@
                 "_implications": {
                     "__impliedNames": [
                         "OGTSL"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OGTSL",
+                "shortName": null,
+                "category": "OGTSL",
+                "alternativeNames": [
+                    "Open Group Test Suite License",
+                    "OGTS license",
+                    "OGTSL license"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Group-Test-Suite-License.yaml",
+                "otherIds": [
+                    "scancode:opengroup",
+                    "osi:OGTSL"
+                ],
+                "canonicalName": "Open Group Test Suite License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Group Test Suite License",
+                        "OGTSL",
+                        "scancode:opengroup",
+                        "osi:OGTSL"
+                    ],
+                    "__impliedId": "OGTSL",
+                    "__impliedAmbiguousNames": [
+                        "Open Group Test Suite License",
+                        "OGTS license",
+                        "OGTSL license"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OGTSL"
+                            ]
+                        ]
                     ]
                 }
             },

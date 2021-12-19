@@ -10,6 +10,8 @@
 
 - =LiLiQ-R+=
 
+- =LiLiQ Rplus License 1.1=
+
 - =Licence Libre du Québec – Réciprocité forte, Version 1.1=
 
 ** Comments on (easy) usability
@@ -19,6 +21,10 @@
   this repository] is generated))
 
 ** General Comments
+
+- "category: LiLiQ Rplus" (source:
+  [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/LiLiQ-Rplus-License-1.1.yaml][Metaeffekt
+  Universe]] (CC-BY-4.0))
 
 ** URLs
 
@@ -37,6 +43,9 @@
 
 - Override
 
+- [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/LiLiQ-Rplus-License-1.1.yaml][Metaeffekt
+  Universe]] (CC-BY-4.0)
+
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
@@ -52,10 +61,32 @@
       "__impliedNames": [
           "LiLiQ-Rplus-1.1",
           "LiLiQ-R+",
+          "LiLiQ Rplus License 1.1",
           "Licence Libre du Québec – Réciprocité forte, Version 1.1",
           "Licence Libre du Québec – Réciprocité forte version 1.1"
       ],
       "__impliedId": "LiLiQ-Rplus-1.1",
+      "__impliedAmbiguousNames": [
+          "LiLiQ Rplus, Version 1.1",
+          "LiLiQ Rplus, 1.1",
+          "LiLiQ-Rplus, Version 1.1",
+          "LiLiQ-Rplus 1.1",
+          "LiLiQ Rplus License, Version 1.1",
+          "LiLiQ Rplus License, 1.1",
+          "LiLiQ-Rplus License, Version 1.1",
+          "LiLiQ-Rplus License, 1.1",
+          "https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-en-francais/licence-libre-du- quebec-reciprocite-forte-liliq-r-v1-1/ [no longer live]",
+          "http://opensource.org/licenses/LiLiQ-Rplus-1.1 [no longer live]",
+          "https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-in-english/quebec-free-and-open-source-licence-strong-reciprocity-liliq-r-v1-1/"
+      ],
+      "__impliedComments": [
+          [
+              "Metaeffekt Universe",
+              [
+                  "category: LiLiQ Rplus"
+              ]
+          ]
+      ],
       "facts": {
           "LicenseName": {
               "implications": {
@@ -142,6 +173,55 @@
               "oJudgement": null,
               "oCompatibilities": null,
               "oRatingState": null
+          },
+          "Metaeffekt Universe": {
+              "spdxIdentifier": "LiLiQ-Rplus-1.1",
+              "shortName": null,
+              "category": "LiLiQ Rplus",
+              "alternativeNames": [
+                  "LiLiQ Rplus, Version 1.1",
+                  "LiLiQ Rplus, 1.1",
+                  "LiLiQ-Rplus, Version 1.1",
+                  "LiLiQ-Rplus 1.1",
+                  "LiLiQ Rplus License, Version 1.1",
+                  "LiLiQ Rplus License, 1.1",
+                  "LiLiQ-Rplus License, Version 1.1",
+                  "LiLiQ-Rplus License, 1.1",
+                  "https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-en-francais/licence-libre-du- quebec-reciprocite-forte-liliq-r-v1-1/ [no longer live]",
+                  "http://opensource.org/licenses/LiLiQ-Rplus-1.1 [no longer live]",
+                  "https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-in-english/quebec-free-and-open-source-licence-strong-reciprocity-liliq-r-v1-1/"
+              ],
+              "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[l]/[li]/LiLiQ-Rplus-License-1.1.yaml",
+              "otherIds": [],
+              "canonicalName": "LiLiQ Rplus License 1.1",
+              "_implications": {
+                  "__impliedNames": [
+                      "LiLiQ Rplus License 1.1",
+                      "LiLiQ-Rplus-1.1"
+                  ],
+                  "__impliedId": "LiLiQ-Rplus-1.1",
+                  "__impliedAmbiguousNames": [
+                      "LiLiQ Rplus, Version 1.1",
+                      "LiLiQ Rplus, 1.1",
+                      "LiLiQ-Rplus, Version 1.1",
+                      "LiLiQ-Rplus 1.1",
+                      "LiLiQ Rplus License, Version 1.1",
+                      "LiLiQ Rplus License, 1.1",
+                      "LiLiQ-Rplus License, Version 1.1",
+                      "LiLiQ-Rplus License, 1.1",
+                      "https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-en-francais/licence-libre-du- quebec-reciprocite-forte-liliq-r-v1-1/ [no longer live]",
+                      "http://opensource.org/licenses/LiLiQ-Rplus-1.1 [no longer live]",
+                      "https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-in-english/quebec-free-and-open-source-licence-strong-reciprocity-liliq-r-v1-1/"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Metaeffekt Universe",
+                          [
+                              "category: LiLiQ Rplus"
+                          ]
+                      ]
+                  ]
+              }
           },
           "OpenSourceInitiative": {
               "text": [

@@ -11,9 +11,16 @@
     "__impliedId": "OpenSSL",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "OpenSSL"
+        "OpenSSL",
+        "OpenSSL License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: OpenSSL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -305,6 +312,35 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/279"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "OpenSSL",
+            "shortName": null,
+            "category": "OpenSSL",
+            "alternativeNames": [
+                "OpenSSL License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenSSL-License.yaml",
+            "otherIds": [],
+            "canonicalName": "OpenSSL License",
+            "_implications": {
+                "__impliedNames": [
+                    "OpenSSL License",
+                    "OpenSSL"
+                ],
+                "__impliedId": "OpenSSL",
+                "__impliedAmbiguousNames": [
+                    "OpenSSL License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: OpenSSL"
+                        ]
                     ]
                 ]
             }

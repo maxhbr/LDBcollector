@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `CERN Open Hardware Licence Weakly Reciprocal 2.0`
+
+-   `scancode:cern-ohl-w-2.0`
+
 -   `scancode://cern-ohl-w-2.0`
 
 ## Comments on (easy) usability
@@ -13,6 +17,11 @@
     data \[in this repository\] is generated))
 
 ## General Comments
+
+-   “category: CERN Open Hardware Licence Weakly Reciprocal” (source:
+    [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Weakly-Reciprocal-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -351,6 +360,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Weakly-Reciprocal-2.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/CERN-OHL-W-2.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -362,10 +375,24 @@
     {
         "__impliedNames": [
             "CERN-OHL-W-2.0",
+            "CERN Open Hardware Licence Weakly Reciprocal 2.0",
+            "scancode:cern-ohl-w-2.0",
             "CERN Open Hardware Licence Version 2 - Weakly Reciprocal",
             "scancode://cern-ohl-w-2.0"
         ],
         "__impliedId": "CERN-OHL-W-2.0",
+        "__impliedAmbiguousNames": [
+            "cern-ohl-w-2.0",
+            "CERN Open Hardware Licence Version 2 - Weakly Reciprocal"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: CERN Open Hardware Licence Weakly Reciprocal"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -468,6 +495,40 @@
                         [
                             null,
                             "https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "CERN-OHL-W-2.0",
+                "shortName": null,
+                "category": "CERN Open Hardware Licence Weakly Reciprocal",
+                "alternativeNames": [
+                    "cern-ohl-w-2.0",
+                    "CERN Open Hardware Licence Version 2 - Weakly Reciprocal"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CERN-Open-Hardware-Licence-Weakly-Reciprocal-2.0.yaml",
+                "otherIds": [
+                    "scancode:cern-ohl-w-2.0"
+                ],
+                "canonicalName": "CERN Open Hardware Licence Weakly Reciprocal 2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CERN Open Hardware Licence Weakly Reciprocal 2.0",
+                        "CERN-OHL-W-2.0",
+                        "scancode:cern-ohl-w-2.0"
+                    ],
+                    "__impliedId": "CERN-OHL-W-2.0",
+                    "__impliedAmbiguousNames": [
+                        "cern-ohl-w-2.0",
+                        "CERN Open Hardware Licence Version 2 - Weakly Reciprocal"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: CERN Open Hardware Licence Weakly Reciprocal"
+                            ]
                         ]
                     ]
                 }

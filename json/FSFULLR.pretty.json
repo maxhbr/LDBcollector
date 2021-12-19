@@ -2,13 +2,24 @@
     "__impliedNames": [
         "FSFULLR",
         "FSF Unlimited License (with License Retention)",
+        "FSF Unlimited License (with retention)",
+        "scancode:fsf-unlimited",
         "scancode://fsf-unlimited",
         "FSF-Unlimited"
     ],
     "__impliedId": "FSFULLR",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "FSFULLR"
+        "FSFULLR",
+        "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: FSF Unlimited"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -112,6 +123,38 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "FSFULLR",
+            "shortName": null,
+            "category": "FSF Unlimited",
+            "alternativeNames": [
+                "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fs]/FSF-Unlimited-License-(with-retention).yaml",
+            "otherIds": [
+                "scancode:fsf-unlimited"
+            ],
+            "canonicalName": "FSF Unlimited License (with retention)",
+            "_implications": {
+                "__impliedNames": [
+                    "FSF Unlimited License (with retention)",
+                    "FSFULLR",
+                    "scancode:fsf-unlimited"
+                ],
+                "__impliedId": "FSFULLR",
+                "__impliedAmbiguousNames": [
+                    "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: FSF Unlimited"
+                        ]
                     ]
                 ]
             }

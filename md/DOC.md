@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:ace-tao`
+
 -   `scancode://ace-tao`
 
 -   `ACE TAO License`
@@ -20,6 +22,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: DOC” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOC-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -67,6 +73,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOC-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/DOC.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -79,13 +89,24 @@
         "__impliedNames": [
             "DOC",
             "DOC License",
+            "scancode:ace-tao",
             "scancode://ace-tao",
             "ACE TAO License"
         ],
         "__impliedId": "DOC",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "DOC"
+            "DOC",
+            "DOC License",
+            "DOC LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: DOC"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -200,6 +221,40 @@
                         [
                             null,
                             "https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "DOC",
+                "shortName": null,
+                "category": "DOC",
+                "alternativeNames": [
+                    "DOC License",
+                    "DOC LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[d]/[do]/DOC-License.yaml",
+                "otherIds": [
+                    "scancode:ace-tao"
+                ],
+                "canonicalName": "DOC License",
+                "_implications": {
+                    "__impliedNames": [
+                        "DOC License",
+                        "DOC",
+                        "scancode:ace-tao"
+                    ],
+                    "__impliedId": "DOC",
+                    "__impliedAmbiguousNames": [
+                        "DOC License",
+                        "DOC LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: DOC"
+                            ]
                         ]
                     ]
                 }

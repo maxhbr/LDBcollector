@@ -3,6 +3,8 @@
         "EFL-2.0",
         "Eiffel Forum License v2.0",
         "Eiffel Forum License 2.0",
+        "scancode:efl-2.0",
+        "osi:EFL-2.0",
         "Eiffel Forum License, Version 2",
         "License :: OSI Approved :: Eiffel Forum License",
         "scancode://efl-2.0",
@@ -11,9 +13,18 @@
     "__impliedId": "EFL-2.0",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "EFL 2.0"
+        "EFL 2.0",
+        "EFL, Version 2.0",
+        "EFL-2.0",
+        "Eiffel Forum License, version 2"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: EFL"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -245,6 +256,46 @@
             "_implications": {
                 "__impliedNames": [
                     "EFL-2.0"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "EFL-2.0",
+            "shortName": null,
+            "category": "EFL",
+            "alternativeNames": [
+                "EFL, Version 2.0",
+                "EFL 2.0",
+                "EFL-2.0",
+                "Eiffel Forum License, version 2"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[ei]/Eiffel-Forum-License-2.0.yaml",
+            "otherIds": [
+                "scancode:efl-2.0",
+                "osi:EFL-2.0"
+            ],
+            "canonicalName": "Eiffel Forum License 2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Eiffel Forum License 2.0",
+                    "EFL-2.0",
+                    "scancode:efl-2.0",
+                    "osi:EFL-2.0"
+                ],
+                "__impliedId": "EFL-2.0",
+                "__impliedAmbiguousNames": [
+                    "EFL, Version 2.0",
+                    "EFL 2.0",
+                    "EFL-2.0",
+                    "Eiffel Forum License, version 2"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: EFL"
+                        ]
+                    ]
                 ]
             }
         },

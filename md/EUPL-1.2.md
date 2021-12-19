@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:eupl-1.2`
+
+-   `osi:EUPL-1.2`
+
 -   `scancode://eupl-1.2`
 
 -   `EUPL 1.2`
@@ -50,6 +54,10 @@
     others.” (source: [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: EUPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## Obligations
 
@@ -293,6 +301,10 @@
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/EUPL-1.2.txt "OSADL License Checklist")
     (NOASSERTION)
@@ -316,13 +328,25 @@
             "EUPL-1.2",
             "European Union Public License 1.2",
             "eupl-1.2",
+            "scancode:eupl-1.2",
+            "osi:EUPL-1.2",
             "scancode://eupl-1.2",
             "EUPL 1.2",
             "European Union Public Licence 1.2"
         ],
         "__impliedId": "EUPL-1.2",
         "__impliedAmbiguousNames": [
-            "European Union Public License"
+            "European Union Public License",
+            "EUPL Version 1.2",
+            "EUPL v.1.2",
+            "EUPL-1.2",
+            "EUPL 1.2",
+            "European Union Public License V. 1.2",
+            "European Union Public License v.1.2",
+            "European Union Public License, Version 1.2",
+            "European Union Public License (EUPL) version 1.2",
+            "European Union Public License v1.2",
+            "European Union Public Licence V. 1.2"
         ],
         "__impliedComments": [
             [
@@ -330,6 +354,12 @@
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: EUPL"
                 ]
             ]
         ],
@@ -516,6 +546,58 @@
                 "_implications": {
                     "__impliedNames": [
                         "EUPL-1.2"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "EUPL-1.2",
+                "shortName": null,
+                "category": "EUPL",
+                "alternativeNames": [
+                    "EUPL Version 1.2",
+                    "EUPL v.1.2",
+                    "EUPL-1.2",
+                    "EUPL 1.2",
+                    "European Union Public License V. 1.2",
+                    "European Union Public License v.1.2",
+                    "European Union Public License, Version 1.2",
+                    "European Union Public License (EUPL) version 1.2",
+                    "European Union Public License v1.2",
+                    "European Union Public Licence V. 1.2"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.2.yaml",
+                "otherIds": [
+                    "scancode:eupl-1.2",
+                    "osi:EUPL-1.2"
+                ],
+                "canonicalName": "European Union Public License 1.2",
+                "_implications": {
+                    "__impliedNames": [
+                        "European Union Public License 1.2",
+                        "EUPL-1.2",
+                        "scancode:eupl-1.2",
+                        "osi:EUPL-1.2"
+                    ],
+                    "__impliedId": "EUPL-1.2",
+                    "__impliedAmbiguousNames": [
+                        "EUPL Version 1.2",
+                        "EUPL v.1.2",
+                        "EUPL-1.2",
+                        "EUPL 1.2",
+                        "European Union Public License V. 1.2",
+                        "European Union Public License v.1.2",
+                        "European Union Public License, Version 1.2",
+                        "European Union Public License (EUPL) version 1.2",
+                        "European Union Public License v1.2",
+                        "European Union Public Licence V. 1.2"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: EUPL"
+                            ]
+                        ]
                     ]
                 }
             },

@@ -2,14 +2,24 @@
     "__impliedNames": [
         "Abstyles",
         "Abstyles License",
+        "scancode:abstyles",
         "scancode://abstyles"
     ],
     "__impliedId": "Abstyles",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Abstyles"
+        "Abstyles",
+        "Abstyles License",
+        "ABSTYLES LICENSE",
+        "ABSTYLES License"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Abstyles"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -127,6 +137,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Abstyles"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Abstyles",
+            "shortName": null,
+            "category": "Abstyles",
+            "alternativeNames": [
+                "Abstyles License",
+                "ABSTYLES LICENSE",
+                "ABSTYLES License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ab]/Abstyles-License.yaml",
+            "otherIds": [
+                "scancode:abstyles"
+            ],
+            "canonicalName": "Abstyles License",
+            "_implications": {
+                "__impliedNames": [
+                    "Abstyles License",
+                    "Abstyles",
+                    "scancode:abstyles"
+                ],
+                "__impliedId": "Abstyles",
+                "__impliedAmbiguousNames": [
+                    "Abstyles License",
+                    "ABSTYLES LICENSE",
+                    "ABSTYLES License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Abstyles"
+                        ]
                     ]
                 ]
             }

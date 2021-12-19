@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Zimbra License 1.4`
+
+-   `scancode:zimbra-1.4`
+
 -   `scancode://zimbra-1.4`
 
 -   `Zimbra PL 1.4`
@@ -11,6 +15,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Zimbra” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zi]/Zimbra-License-1.4.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -79,6 +87,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zi]/Zimbra-License-1.4.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Zimbra-1.4.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -90,11 +102,28 @@
     {
         "__impliedNames": [
             "Zimbra-1.4",
+            "Zimbra License 1.4",
+            "scancode:zimbra-1.4",
             "Zimbra Public License v1.4",
             "scancode://zimbra-1.4",
             "Zimbra PL 1.4"
         ],
         "__impliedId": "Zimbra-1.4",
+        "__impliedAmbiguousNames": [
+            "Zimbra, Version 1.4",
+            "Zimbra, 1.4",
+            "Zimbra License, Version 1.4",
+            "Zimbra License 1.4",
+            "Zimbra Public License, Version 1.4"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Zimbra"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -187,6 +216,46 @@
                 },
                 "licensename": "Zimbra-1.4",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Zimbra-1.4",
+                "shortName": null,
+                "category": "Zimbra",
+                "alternativeNames": [
+                    "Zimbra, Version 1.4",
+                    "Zimbra, 1.4",
+                    "Zimbra License, Version 1.4",
+                    "Zimbra License 1.4",
+                    "Zimbra Public License, Version 1.4"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[zi]/Zimbra-License-1.4.yaml",
+                "otherIds": [
+                    "scancode:zimbra-1.4"
+                ],
+                "canonicalName": "Zimbra License 1.4",
+                "_implications": {
+                    "__impliedNames": [
+                        "Zimbra License 1.4",
+                        "Zimbra-1.4",
+                        "scancode:zimbra-1.4"
+                    ],
+                    "__impliedId": "Zimbra-1.4",
+                    "__impliedAmbiguousNames": [
+                        "Zimbra, Version 1.4",
+                        "Zimbra, 1.4",
+                        "Zimbra License, Version 1.4",
+                        "Zimbra License 1.4",
+                        "Zimbra Public License, Version 1.4"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Zimbra"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedCopyleft": [

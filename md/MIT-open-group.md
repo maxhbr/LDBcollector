@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `MIT Open Group`
+
+-   `scancode:mit-open-group`
+
 -   `scancode://x11-opengroup`
 
 -   `X11-Style (Open Group)`
@@ -15,6 +19,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: MIT Open Group” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-Open-Group.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -68,6 +76,10 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-Open-Group.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/MIT-open-group.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -80,11 +92,25 @@
         "__impliedNames": [
             "MIT-open-group",
             "MIT Open Group Variant",
+            "MIT Open Group",
+            "MIT-Open-Group",
+            "scancode:mit-open-group",
             "MIT Open Group variant",
             "scancode://x11-opengroup",
             "X11-Style (Open Group)"
         ],
         "__impliedId": "MIT-open-group",
+        "__impliedAmbiguousNames": [
+            "mit-open-group"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: MIT Open Group"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -194,6 +220,38 @@
                         [
                             null,
                             "https://gitlab.freedesktop.org/xorg/app/xauth/-/blob/master/COPYING"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": null,
+                "shortName": "MIT-Open-Group",
+                "category": "MIT Open Group",
+                "alternativeNames": [
+                    "mit-open-group"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[mi]/MIT-Open-Group.yaml",
+                "otherIds": [
+                    "scancode:mit-open-group"
+                ],
+                "canonicalName": "MIT Open Group",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT Open Group",
+                        "MIT-Open-Group",
+                        "scancode:mit-open-group"
+                    ],
+                    "__impliedId": "MIT-Open-Group",
+                    "__impliedAmbiguousNames": [
+                        "mit-open-group"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: MIT Open Group"
+                            ]
                         ]
                     ]
                 }

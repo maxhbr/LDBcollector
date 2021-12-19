@@ -4,9 +4,11 @@
 
 **Other Names:**
 
--   `scancode://openldap-1.2`
-
 -   `OpenLDAP Public License 1.2`
+
+-   `scancode:openldap-1.2`
+
+-   `scancode://openldap-1.2`
 
 ## Comments on (easy) usability
 
@@ -15,6 +17,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: OLDAP” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released 1 September 1998. This
     license was issued four time, but only with formatting differences.
@@ -181,6 +187,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-1.2.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/OLDAP-1.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -193,11 +203,25 @@
         "__impliedNames": [
             "OLDAP-1.2",
             "Open LDAP Public License v1.2",
-            "scancode://openldap-1.2",
-            "OpenLDAP Public License 1.2"
+            "OpenLDAP Public License 1.2",
+            "scancode:openldap-1.2",
+            "scancode://openldap-1.2"
         ],
         "__impliedId": "OLDAP-1.2",
+        "__impliedAmbiguousNames": [
+            "OLDAP, Version 1.2",
+            "OLDAP, 1.2",
+            "OLDAP License, Version 1.2",
+            "OLDAP License, 1.2",
+            "The OpenLDAP Public License Version 1.2, 1 September 1998"
+        ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OLDAP"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -305,6 +329,46 @@
                 },
                 "licensename": "OLDAP-1.2",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OLDAP-1.2",
+                "shortName": null,
+                "category": "OLDAP",
+                "alternativeNames": [
+                    "OLDAP, Version 1.2",
+                    "OLDAP, 1.2",
+                    "OLDAP License, Version 1.2",
+                    "OLDAP License, 1.2",
+                    "The OpenLDAP Public License Version 1.2, 1 September 1998"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenLDAP-Public-License-1.2.yaml",
+                "otherIds": [
+                    "scancode:openldap-1.2"
+                ],
+                "canonicalName": "OpenLDAP Public License 1.2",
+                "_implications": {
+                    "__impliedNames": [
+                        "OpenLDAP Public License 1.2",
+                        "OLDAP-1.2",
+                        "scancode:openldap-1.2"
+                    ],
+                    "__impliedId": "OLDAP-1.2",
+                    "__impliedAmbiguousNames": [
+                        "OLDAP, Version 1.2",
+                        "OLDAP, 1.2",
+                        "OLDAP License, Version 1.2",
+                        "OLDAP License, 1.2",
+                        "The OpenLDAP Public License Version 1.2, 1 September 1998"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OLDAP"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

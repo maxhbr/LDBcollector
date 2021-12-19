@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:xskat`
+
 -   `scancode://xskat`
 
 ## Comments on (easy) usability
@@ -14,6 +16,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: XSkat” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xs]/XSkat-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per Fedora, this license is Free only when clause 2.b is used. It
     is always GPL-incompatible. Packagers using code under this license
@@ -66,6 +72,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xs]/XSkat-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/XSkat.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -78,14 +88,26 @@
         "__impliedNames": [
             "XSkat",
             "XSkat License",
+            "scancode:xskat",
             "scancode://xskat"
         ],
         "__impliedId": "XSkat",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "XSkat"
+            "XSkat",
+            "XSkat License",
+            "XSKAT LICENSE",
+            "XSKAT License",
+            "under XSkat",
+            "under XSKAT"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: XSkat"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -203,6 +225,46 @@
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/XSkat_License"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "XSkat",
+                "shortName": null,
+                "category": "XSkat",
+                "alternativeNames": [
+                    "XSkat License",
+                    "XSKAT LICENSE",
+                    "XSKAT License",
+                    "under XSkat",
+                    "under XSKAT"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xs]/XSkat-License.yaml",
+                "otherIds": [
+                    "scancode:xskat"
+                ],
+                "canonicalName": "XSkat License",
+                "_implications": {
+                    "__impliedNames": [
+                        "XSkat License",
+                        "XSkat",
+                        "scancode:xskat"
+                    ],
+                    "__impliedId": "XSkat",
+                    "__impliedAmbiguousNames": [
+                        "XSkat License",
+                        "XSKAT LICENSE",
+                        "XSKAT License",
+                        "under XSkat",
+                        "under XSKAT"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: XSkat"
+                            ]
                         ]
                     ]
                 }

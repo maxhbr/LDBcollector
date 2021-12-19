@@ -2,15 +2,26 @@
     "__impliedNames": [
         "MakeIndex",
         "MakeIndex License",
+        "scancode:makeindex",
         "scancode://makeindex",
         "MakeIndex Distribution Notice"
     ],
     "__impliedId": "MakeIndex",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "MakeIndex"
+        "MakeIndex",
+        "MakeIndex License",
+        "MAKEINDEX LICENSE",
+        "MAKEINDEX License",
+        "MakeIndex Distribution Notice"
     ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: MakeIndex"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -128,6 +139,44 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/MakeIndex"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "MakeIndex",
+            "shortName": null,
+            "category": "MakeIndex",
+            "alternativeNames": [
+                "MakeIndex License",
+                "MAKEINDEX LICENSE",
+                "MAKEINDEX License",
+                "MakeIndex Distribution Notice"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[m]/[ma]/MakeIndex-License.yaml",
+            "otherIds": [
+                "scancode:makeindex"
+            ],
+            "canonicalName": "MakeIndex License",
+            "_implications": {
+                "__impliedNames": [
+                    "MakeIndex License",
+                    "MakeIndex",
+                    "scancode:makeindex"
+                ],
+                "__impliedId": "MakeIndex",
+                "__impliedAmbiguousNames": [
+                    "MakeIndex License",
+                    "MAKEINDEX LICENSE",
+                    "MAKEINDEX License",
+                    "MakeIndex Distribution Notice"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: MakeIndex"
+                        ]
                     ]
                 ]
             }

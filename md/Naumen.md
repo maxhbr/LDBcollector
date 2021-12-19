@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `Naumen License`
+
+-   `scancode:naumen`
+
+-   `osi:Naumen`
+
 -   `scancode://naumen`
 
 ## Comments on (easy) usability
@@ -26,6 +32,10 @@
 -   “https://opensource.org/licenses/Naumen” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
+
+-   “category: Naumen” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/Naumen-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naumen.yml "Scancode")
@@ -93,6 +103,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/Naumen-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -119,19 +133,32 @@
         "__impliedNames": [
             "Naumen",
             "Naumen Public License",
+            "Naumen License",
+            "scancode:naumen",
+            "osi:Naumen",
             "NAUMEN Public License",
             "scancode://naumen"
         ],
         "__impliedId": "Naumen",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Naumen"
+            "Naumen",
+            "Naumen License",
+            "NAUMEN LICENSE",
+            "NAUMEN License",
+            "NAUMEN Public License"
         ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/Naumen"
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Naumen"
                 ]
             ],
             [
@@ -362,6 +389,46 @@
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/1260"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Naumen",
+                "shortName": null,
+                "category": "Naumen",
+                "alternativeNames": [
+                    "Naumen License",
+                    "NAUMEN LICENSE",
+                    "NAUMEN License",
+                    "NAUMEN Public License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[na]/Naumen-License.yaml",
+                "otherIds": [
+                    "scancode:naumen",
+                    "osi:Naumen"
+                ],
+                "canonicalName": "Naumen License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Naumen License",
+                        "Naumen",
+                        "scancode:naumen",
+                        "osi:Naumen"
+                    ],
+                    "__impliedId": "Naumen",
+                    "__impliedAmbiguousNames": [
+                        "Naumen License",
+                        "NAUMEN LICENSE",
+                        "NAUMEN License",
+                        "NAUMEN Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Naumen"
+                            ]
                         ]
                     ]
                 }

@@ -2,12 +2,24 @@
     "__impliedNames": [
         "Zed",
         "Zed License",
+        "scancode:zed",
         "scancode://zed"
     ],
     "__impliedId": "Zed",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Zed"
+        "Zed",
+        "Zed License",
+        "ZED LICENSE",
+        "ZED License"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Zed"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -111,6 +123,42 @@
                     [
                         "Homepage",
                         "https://fedoraproject.org/wiki/Licensing/Zed"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Zed",
+            "shortName": null,
+            "category": "Zed",
+            "alternativeNames": [
+                "Zed License",
+                "ZED LICENSE",
+                "ZED License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[z]/[ze]/Zed-License.yaml",
+            "otherIds": [
+                "scancode:zed"
+            ],
+            "canonicalName": "Zed License",
+            "_implications": {
+                "__impliedNames": [
+                    "Zed License",
+                    "Zed",
+                    "scancode:zed"
+                ],
+                "__impliedId": "Zed",
+                "__impliedAmbiguousNames": [
+                    "Zed License",
+                    "ZED LICENSE",
+                    "ZED License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Zed"
+                        ]
                     ]
                 ]
             }

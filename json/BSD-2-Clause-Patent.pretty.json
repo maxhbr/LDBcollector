@@ -2,11 +2,24 @@
     "__impliedNames": [
         "BSD-2-Clause-Patent",
         "BSD-2-Clause Plus Patent License",
+        "BSD 2-Clause Patent License",
+        "scancode:bsd-plus-patent",
+        "osi:BSDplusPatent",
         "scancode://bsd-plus-patent",
         "BSD-2-Clause Plus Patent"
     ],
     "__impliedId": "BSD-2-Clause-Patent",
+    "__impliedAmbiguousNames": [
+        "BSD-2-Clause-Patent",
+        "BSD-2-Clause Plus Patent License"
+    ],
     "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: BSD Patent"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -136,6 +149,42 @@
             "_implications": {
                 "__impliedNames": [
                     "BSD-2-Clause-Patent"
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "BSD-2-Clause-Patent",
+            "shortName": null,
+            "category": "BSD Patent",
+            "alternativeNames": [
+                "BSD-2-Clause-Patent",
+                "BSD-2-Clause Plus Patent License"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-2-Clause-Patent-License.yaml",
+            "otherIds": [
+                "scancode:bsd-plus-patent",
+                "osi:BSDplusPatent"
+            ],
+            "canonicalName": "BSD 2-Clause Patent License",
+            "_implications": {
+                "__impliedNames": [
+                    "BSD 2-Clause Patent License",
+                    "BSD-2-Clause-Patent",
+                    "scancode:bsd-plus-patent",
+                    "osi:BSDplusPatent"
+                ],
+                "__impliedId": "BSD-2-Clause-Patent",
+                "__impliedAmbiguousNames": [
+                    "BSD-2-Clause-Patent",
+                    "BSD-2-Clause Plus Patent License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: BSD Patent"
+                        ]
+                    ]
                 ]
             }
         },

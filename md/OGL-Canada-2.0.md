@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:can-ogl-2.0-en`
+
 -   `Open Government License 2.0 (Canada)`
 
 -   `OGL-CA-2.0`
@@ -15,6 +17,10 @@
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: OGL-Canada-2.0” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Government-Licence---Canada.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -93,6 +99,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Government-Licence---Canada.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -108,13 +118,26 @@
     {
         "__impliedNames": [
             "OGL-Canada-2.0",
+            "Open Government Licence - Canada",
+            "scancode:can-ogl-2.0-en",
             "Open Government License 2.0 (Canada)",
             "OGL-CA-2.0",
-            "Open Government Licence - Canada",
             "scancode://can-ogl-2.0-en",
             "OGL Canada 2.0"
         ],
         "__impliedId": "OGL-Canada-2.0",
+        "__impliedAmbiguousNames": [
+            "OGL-Canada-2.0",
+            "Open Government Licence - Canada"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: OGL-Canada-2.0"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": false,
@@ -225,6 +248,40 @@
                         [
                             null,
                             "https://open.canada.ca/en/open-government-licence-canada"
+                        ]
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "OGL-Canada-2.0",
+                "shortName": null,
+                "category": "OGL-Canada-2.0",
+                "alternativeNames": [
+                    "OGL-Canada-2.0",
+                    "Open Government Licence - Canada"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/Open-Government-Licence---Canada.yaml",
+                "otherIds": [
+                    "scancode:can-ogl-2.0-en"
+                ],
+                "canonicalName": "Open Government Licence - Canada",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Government Licence - Canada",
+                        "OGL-Canada-2.0",
+                        "scancode:can-ogl-2.0-en"
+                    ],
+                    "__impliedId": "OGL-Canada-2.0",
+                    "__impliedAmbiguousNames": [
+                        "OGL-Canada-2.0",
+                        "Open Government Licence - Canada"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: OGL-Canada-2.0"
+                            ]
                         ]
                     ]
                 }

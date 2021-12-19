@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `scancode:nokos-1.0a`
+
+-   `osi:nokia`
+
 -   `Nokia Open Source License, Version 1.0a`
 
 -   `License :: OSI Approved :: Nokia Open Source License`
@@ -24,6 +28,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: Nokia License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Nokia-Open-Source-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nokos-1.0a.yml "Scancode")
@@ -444,6 +452,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Nokia-Open-Source-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -466,6 +478,8 @@
         "__impliedNames": [
             "Nokia",
             "Nokia Open Source License",
+            "scancode:nokos-1.0a",
+            "osi:nokia",
             "Nokia Open Source License, Version 1.0a",
             "License :: OSI Approved :: Nokia Open Source License",
             "scancode://nokos-1.0a",
@@ -474,9 +488,21 @@
         "__impliedId": "Nokia",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Nokia"
+            "Nokia",
+            "Nokia License",
+            "NOKIA LICENSE",
+            "NOKIA License",
+            "Nokia Open Source License",
+            "NOKIA Open Source License",
+            "NOKOS License"
         ],
         "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Nokia License"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -678,6 +704,50 @@
                 "_implications": {
                     "__impliedNames": [
                         "Nokia"
+                    ]
+                }
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Nokia",
+                "shortName": null,
+                "category": "Nokia License",
+                "alternativeNames": [
+                    "Nokia License",
+                    "NOKIA LICENSE",
+                    "NOKIA License",
+                    "Nokia Open Source License",
+                    "NOKIA Open Source License",
+                    "NOKOS License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[no]/Nokia-Open-Source-License.yaml",
+                "otherIds": [
+                    "scancode:nokos-1.0a",
+                    "osi:nokia"
+                ],
+                "canonicalName": "Nokia Open Source License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Nokia Open Source License",
+                        "Nokia",
+                        "scancode:nokos-1.0a",
+                        "osi:nokia"
+                    ],
+                    "__impliedId": "Nokia",
+                    "__impliedAmbiguousNames": [
+                        "Nokia License",
+                        "NOKIA LICENSE",
+                        "NOKIA License",
+                        "Nokia Open Source License",
+                        "NOKIA Open Source License",
+                        "NOKOS License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Nokia License"
+                            ]
+                        ]
                     ]
                 }
             },

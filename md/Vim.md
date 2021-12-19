@@ -4,6 +4,8 @@
 
 **Other Names:**
 
+-   `scancode:vim`
+
 -   `scancode://vim`
 
 ## Description
@@ -29,6 +31,10 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 ## General Comments
+
+-   “category: VIM” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vi]/VIM-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## Obligations
 
@@ -176,6 +182,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vi]/VIM-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/Vim.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -189,13 +199,26 @@
             "Vim",
             "Vim License",
             "vim",
-            "scancode://vim",
-            "VIM License"
+            "VIM License",
+            "scancode:vim",
+            "scancode://vim"
         ],
         "__impliedId": "Vim",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Vim"
+            "Vim",
+            "VIM LICENSE",
+            "vim License",
+            "vim license",
+            "VIM licnese"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: VIM"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -324,6 +347,44 @@
                 },
                 "licensename": "Vim",
                 "copyleftkind": "StrongCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "Vim",
+                "shortName": null,
+                "category": "VIM",
+                "alternativeNames": [
+                    "VIM LICENSE",
+                    "vim License",
+                    "vim license",
+                    "VIM licnese"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[v]/[vi]/VIM-License.yaml",
+                "otherIds": [
+                    "scancode:vim"
+                ],
+                "canonicalName": "VIM License",
+                "_implications": {
+                    "__impliedNames": [
+                        "VIM License",
+                        "Vim",
+                        "scancode:vim"
+                    ],
+                    "__impliedId": "Vim",
+                    "__impliedAmbiguousNames": [
+                        "VIM LICENSE",
+                        "vim License",
+                        "vim license",
+                        "VIM licnese"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: VIM"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

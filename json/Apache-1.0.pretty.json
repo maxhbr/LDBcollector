@@ -6,6 +6,7 @@
         "ASL 1.0",
         "Apache Software License, Version 1.0",
         "Apache License 1.0",
+        "scancode:apache-1.0",
         "scancode://apache-1.0",
         "Apache 1.0"
     ],
@@ -13,7 +14,19 @@
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The Apache Software License (ASL)",
-        "ASL 1.0"
+        "ASL 1.0",
+        "Apache License Version 1.0",
+        "http://www.apache.org/licenses/LICENSE-1.0",
+        "Apache License 1.0",
+        "https://spdx.org/licenses/apache-1.0"
+    ],
+    "__impliedComments": [
+        [
+            "Metaeffekt Universe",
+            [
+                "category: Apache License"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -331,6 +344,44 @@
                     [
                         "open-license",
                         "http://open-license.hitachi.com/licenses/13"
+                    ]
+                ]
+            }
+        },
+        "Metaeffekt Universe": {
+            "spdxIdentifier": "Apache-1.0",
+            "shortName": null,
+            "category": "Apache License",
+            "alternativeNames": [
+                "Apache License Version 1.0",
+                "http://www.apache.org/licenses/LICENSE-1.0",
+                "Apache License 1.0",
+                "https://spdx.org/licenses/apache-1.0"
+            ],
+            "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.0.yaml",
+            "otherIds": [
+                "scancode:apache-1.0"
+            ],
+            "canonicalName": "Apache License 1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "Apache License 1.0",
+                    "Apache-1.0",
+                    "scancode:apache-1.0"
+                ],
+                "__impliedId": "Apache-1.0",
+                "__impliedAmbiguousNames": [
+                    "Apache License Version 1.0",
+                    "http://www.apache.org/licenses/LICENSE-1.0",
+                    "Apache License 1.0",
+                    "https://spdx.org/licenses/apache-1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Metaeffekt Universe",
+                        [
+                            "category: Apache License"
+                        ]
                     ]
                 ]
             }

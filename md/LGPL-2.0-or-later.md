@@ -4,6 +4,12 @@
 
 **Other Names:**
 
+-   `LGPL-2.0+`
+
+-   `GNU Library General Public License 2.0 (or any later version)`
+
+-   `scancode:lgpl-2.0-plus`
+
 -   `scancode://lgpl-2.0-plus`
 
 -   `LGPL 2.0 or later`
@@ -31,6 +37,10 @@
     License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   “category: LGPL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Library-General-Public-License-2.0-(or-any-later-version).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 -   “Per SPDX.org, this license was released June 1991. This license has
     been superseded by LGPL v2.1 ” (source:
@@ -568,6 +578,14 @@
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Library-General-Public-License-2.0-(or-any-later-version).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -583,19 +601,57 @@
         "__impliedNames": [
             "LGPL-2.0-or-later",
             "GNU Library General Public License v2 or later",
+            "LGPL-2.0+",
+            "GNU Library General Public License 2.0 (or any later version)",
+            "scancode:lgpl-2.0-plus",
             "scancode://lgpl-2.0-plus",
             "LGPL 2.0 or later"
         ],
         "__impliedId": "LGPL-2.0-or-later",
         "__impliedAmbiguousNames": [
             "GNU Library General Public License",
-            "The GNU Lesser General Public License (LGPL)"
+            "The GNU Lesser General Public License (LGPL)",
+            "GNU Library General Public License, Version 2.0+",
+            "GNU LIBRARY GENERAL PUBLIC LICENSE Version 2+",
+            "GNU Lesser GPL 2.0+",
+            "GNU Lesser General Public License Version 2+",
+            "GNU Lesser General Public License, Version 2.0+",
+            "GNU Library or Lesser General Public License version 2.0+",
+            "GNU Library General Public License (GPL), Version 2.0+",
+            "GNU Library General Public License (LGPL), Version 2.0+",
+            "GNU Library General Public License 2+",
+            "GNU Library General Public License version 2.0+",
+            "GNU Library General Public License, Version 2.0 or any later version",
+            "GNU Lesser General Public License, Version 2 or any later version",
+            "Lesser General Public License (LGPL)), Version 2.0+",
+            "LGPL 2+",
+            "LGPL 2.0+ license",
+            "LGPL V.2+",
+            "LGPL v2+",
+            "LGPL-2.0+",
+            "LGPLv2+",
+            "LGPL-2+",
+            "LGPL2+",
+            "LGPL-2.0-or-later",
+            "GNU Lesser/Library General Public License version 2+",
+            "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version",
+            "GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version",
+            "GNU Lesser General Public License >= 2.0",
+            "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version",
+            "GNU Library General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version",
+            "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version"
         ],
         "__impliedComments": [
             [
                 "BlueOak License List",
                 [
                     "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ],
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: LGPL"
                 ]
             ],
             [
@@ -657,7 +713,7 @@
             "librariesio license-compatibility": {
                 "implications": {
                     "__impliedNames": [
-                        "LGPL-2.0-or-later"
+                        "LGPL-2.0+"
                     ],
                     "__impliedCopyleft": [
                         [
@@ -667,7 +723,7 @@
                     ],
                     "__calculatedCopyleft": "WeakCopyleft"
                 },
-                "licensename": "LGPL-2.0-or-later",
+                "licensename": "LGPL-2.0+",
                 "copyleftkind": "WeakCopyleft"
             },
             "Scancode": {
@@ -744,6 +800,95 @@
                 },
                 "Comment": "Earlier called the \"Library General Public License\"; this name is deprecated because it confuses the license's intent.",
                 "LicenseId": "LGPL-2.0-or-later"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "LGPL-2.0-or-later",
+                "shortName": "LGPL-2.0+",
+                "category": "LGPL",
+                "alternativeNames": [
+                    "GNU Library General Public License, Version 2.0+",
+                    "GNU LIBRARY GENERAL PUBLIC LICENSE Version 2+",
+                    "GNU Lesser GPL 2.0+",
+                    "GNU Lesser General Public License Version 2+",
+                    "GNU Lesser General Public License, Version 2.0+",
+                    "GNU Library or Lesser General Public License version 2.0+",
+                    "GNU Library General Public License (GPL), Version 2.0+",
+                    "GNU Library General Public License (LGPL), Version 2.0+",
+                    "GNU Library General Public License 2+",
+                    "GNU Library General Public License version 2.0+",
+                    "GNU Library General Public License, Version 2.0 or any later version",
+                    "GNU Lesser General Public License, Version 2 or any later version",
+                    "Lesser General Public License (LGPL)), Version 2.0+",
+                    "LGPL 2+",
+                    "LGPL 2.0+ license",
+                    "LGPL V.2+",
+                    "LGPL v2+",
+                    "LGPL-2.0+",
+                    "LGPLv2+",
+                    "LGPL-2+",
+                    "LGPL2+",
+                    "LGPL-2.0-or-later",
+                    "GNU Lesser/Library General Public License version 2+",
+                    "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version",
+                    "GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version",
+                    "GNU Lesser General Public License >= 2.0",
+                    "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version",
+                    "GNU Library General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version",
+                    "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Library-General-Public-License-2.0-(or-any-later-version).yaml",
+                "otherIds": [
+                    "scancode:lgpl-2.0-plus"
+                ],
+                "canonicalName": "GNU Library General Public License 2.0 (or any later version)",
+                "_implications": {
+                    "__impliedNames": [
+                        "GNU Library General Public License 2.0 (or any later version)",
+                        "LGPL-2.0+",
+                        "LGPL-2.0-or-later",
+                        "scancode:lgpl-2.0-plus"
+                    ],
+                    "__impliedId": "LGPL-2.0-or-later",
+                    "__impliedAmbiguousNames": [
+                        "GNU Library General Public License, Version 2.0+",
+                        "GNU LIBRARY GENERAL PUBLIC LICENSE Version 2+",
+                        "GNU Lesser GPL 2.0+",
+                        "GNU Lesser General Public License Version 2+",
+                        "GNU Lesser General Public License, Version 2.0+",
+                        "GNU Library or Lesser General Public License version 2.0+",
+                        "GNU Library General Public License (GPL), Version 2.0+",
+                        "GNU Library General Public License (LGPL), Version 2.0+",
+                        "GNU Library General Public License 2+",
+                        "GNU Library General Public License version 2.0+",
+                        "GNU Library General Public License, Version 2.0 or any later version",
+                        "GNU Lesser General Public License, Version 2 or any later version",
+                        "Lesser General Public License (LGPL)), Version 2.0+",
+                        "LGPL 2+",
+                        "LGPL 2.0+ license",
+                        "LGPL V.2+",
+                        "LGPL v2+",
+                        "LGPL-2.0+",
+                        "LGPLv2+",
+                        "LGPL-2+",
+                        "LGPL2+",
+                        "LGPL-2.0-or-later",
+                        "GNU Lesser/Library General Public License version 2+",
+                        "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version",
+                        "GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version",
+                        "GNU Lesser General Public License >= 2.0",
+                        "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version",
+                        "GNU Library General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version",
+                        "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: LGPL"
+                            ]
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/LGPL-2.0-or-later.html",

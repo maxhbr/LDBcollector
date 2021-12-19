@@ -4,6 +4,10 @@
 
 **Other Names:**
 
+-   `Netizen Open Source License 1.0`
+
+-   `scancode:nosl-1.0`
+
 -   `scancode://nosl-1.0`
 
 -   `NOSL 1.0`
@@ -16,6 +20,10 @@
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 ## General Comments
+
+-   “category: NOSL” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netizen-Open-Source-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -529,6 +537,10 @@
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netizen-Open-Source-License-1.0.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/NOSL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -541,13 +553,24 @@
         "__impliedNames": [
             "NOSL",
             "Netizen Open Source License",
+            "Netizen Open Source License 1.0",
+            "scancode:nosl-1.0",
             "scancode://nosl-1.0",
             "NOSL 1.0"
         ],
         "__impliedId": "NOSL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "NOSL"
+            "NOSL",
+            "NETIZEN OPEN SOURCE LICENSE"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: NOSL"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -670,6 +693,38 @@
                 },
                 "licensename": "NOSL",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "NOSL",
+                "shortName": null,
+                "category": "NOSL",
+                "alternativeNames": [
+                    "NETIZEN OPEN SOURCE LICENSE"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[ne]/Netizen-Open-Source-License-1.0.yaml",
+                "otherIds": [
+                    "scancode:nosl-1.0"
+                ],
+                "canonicalName": "Netizen Open Source License 1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Netizen Open Source License 1.0",
+                        "NOSL",
+                        "scancode:nosl-1.0"
+                    ],
+                    "__impliedId": "NOSL",
+                    "__impliedAmbiguousNames": [
+                        "NETIZEN OPEN SOURCE LICENSE"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: NOSL"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
