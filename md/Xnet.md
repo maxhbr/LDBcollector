@@ -47,7 +47,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Xnet.html
 
--   **SPDX:** http://spdx.org/licenses/Xnet.json
+-   **SPDX:** https://spdx.org/licenses/Xnet.json
 
 ## Text
 
@@ -170,7 +170,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "X.Net License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Xnet.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Xnet.json",
                 "_sourceURL": "https://spdx.org/licenses/Xnet.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -195,7 +195,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Xnet.json"
+                            "https://spdx.org/licenses/Xnet.json"
                         ],
                         [
                             null,
@@ -477,7 +477,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Xnet.json"
+                "https://spdx.org/licenses/Xnet.json"
             ],
             [
                 "Homepage",

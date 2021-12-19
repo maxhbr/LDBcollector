@@ -36,7 +36,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/HPND.html
 
--   **SPDX:** http://spdx.org/licenses/HPND.json
+-   **SPDX:** https://spdx.org/licenses/HPND.json
 
 -   http://www.opensource.org/licenses/HPND
 
@@ -170,7 +170,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Historical Permission Notice and Disclaimer",
-                "spdxDetailsURL": "http://spdx.org/licenses/HPND.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/HPND.json",
                 "_sourceURL": "https://spdx.org/licenses/HPND.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -195,7 +195,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/HPND.json"
+                            "https://spdx.org/licenses/HPND.json"
                         ],
                         [
                             null,
@@ -451,7 +451,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/HPND.json"
+                "https://spdx.org/licenses/HPND.json"
             ],
             [
                 "Homepage",

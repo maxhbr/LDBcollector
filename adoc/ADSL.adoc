@@ -30,7 +30,7 @@ Project Wiki]
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense
 * *SPDX:* https://spdx.org/licenses/ADSL.html
-* *SPDX:* http://spdx.org/licenses/ADSL.json
+* *SPDX:* https://spdx.org/licenses/ADSL.json
 
 === Text
 
@@ -91,7 +91,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Amazon Digital Services License",
-            "spdxDetailsURL": "http://spdx.org/licenses/ADSL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/ADSL.json",
             "_sourceURL": "https://spdx.org/licenses/ADSL.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -107,7 +107,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/ADSL.json"
+                        "https://spdx.org/licenses/ADSL.json"
                     ],
                     [
                         null,
@@ -256,7 +256,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/ADSL.json"
+            "https://spdx.org/licenses/ADSL.json"
         ],
         [
             null,

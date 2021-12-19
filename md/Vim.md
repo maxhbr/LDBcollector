@@ -24,6 +24,10 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
 ## General Comments
 
 ## Obligations
@@ -38,7 +42,9 @@
 
 -   **Homepage:** http://vimdoc.sourceforge.net/htmldoc/uganda.html
 
--   **SPDX:** http://spdx.org/licenses/Vim.json
+-   **SPDX:** https://spdx.org/licenses/Vim.html
+
+-   **SPDX:** https://spdx.org/licenses/Vim.json
 
 -   http://www.vim.org/docs.php
 
@@ -155,6 +161,10 @@
 
 -   LicenseName
 
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
@@ -177,8 +187,8 @@
     {
         "__impliedNames": [
             "Vim",
-            "vim",
             "Vim License",
+            "vim",
             "scancode://vim",
             "VIM License"
         ],
@@ -201,7 +211,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Vim License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Vim.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Vim.json",
                 "_sourceURL": "https://spdx.org/licenses/Vim.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -217,7 +227,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Vim.json"
+                            "https://spdx.org/licenses/Vim.json"
                         ],
                         [
                             null,
@@ -315,6 +325,42 @@
                 "licensename": "Vim",
                 "copyleftkind": "StrongCopyleft"
             },
+            "BlueOak License List": {
+                "BlueOakRating": "Lead",
+                "url": "https://spdx.org/licenses/Vim.html",
+                "isPermissive": true,
+                "_sourceURL": "https://blueoakcouncil.org/list",
+                "name": "Vim License",
+                "id": "Vim",
+                "_implications": {
+                    "__impliedNames": [
+                        "Vim",
+                        "Vim License"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "BlueOak License List",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "Rating is: Lead"
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedURLs": [
+                        [
+                            "SPDX",
+                            "https://spdx.org/licenses/Vim.html"
+                        ]
+                    ]
+                }
+            },
             "choosealicense.com": {
                 "limitations": [],
                 "_sourceURL": "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt",
@@ -388,6 +434,13 @@
         },
         "__impliedJudgement": [
             [
+                "BlueOak License List",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "Rating is: Lead"
+                }
+            ],
+            [
                 "Fedora Project Wiki",
                 {
                     "tag": "PositiveJudgement",
@@ -396,6 +449,10 @@
             ]
         ],
         "__impliedCopyleft": [
+            [
+                "BlueOak License List",
+                "NoCopyleft"
+            ],
             [
                 "HansHammel license-compatibility-checker",
                 "StrongCopyleft"
@@ -450,7 +507,11 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Vim.json"
+                "https://spdx.org/licenses/Vim.html"
+            ],
+            [
+                "SPDX",
+                "https://spdx.org/licenses/Vim.json"
             ],
             [
                 null,

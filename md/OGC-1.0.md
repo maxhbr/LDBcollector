@@ -16,7 +16,7 @@
 
 -   **Homepage:** https://www.ogc.org/ogc/software/1.0
 
--   **SPDX:** http://spdx.org/licenses/OGC-1.0.json
+-   **SPDX:** https://spdx.org/licenses/OGC-1.0.json
 
 ## Text
 
@@ -98,7 +98,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "OGC Software License, Version 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/OGC-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OGC-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/OGC-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -114,7 +114,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OGC-1.0.json"
+                            "https://spdx.org/licenses/OGC-1.0.json"
                         ],
                         [
                             null,
@@ -174,7 +174,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/OGC-1.0.json"
+                "https://spdx.org/licenses/OGC-1.0.json"
             ],
             [
                 null,

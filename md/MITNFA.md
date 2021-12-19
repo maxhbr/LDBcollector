@@ -34,7 +34,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/MITNFA.html
 
--   **SPDX:** http://spdx.org/licenses/MITNFA.json
+-   **SPDX:** https://spdx.org/licenses/MITNFA.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/698
 
@@ -178,7 +178,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "MIT +no-false-attribs license",
-                "spdxDetailsURL": "http://spdx.org/licenses/MITNFA.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MITNFA.json",
                 "_sourceURL": "https://spdx.org/licenses/MITNFA.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -194,7 +194,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MITNFA.json"
+                            "https://spdx.org/licenses/MITNFA.json"
                         ],
                         [
                             null,
@@ -495,7 +495,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MITNFA.json"
+                "https://spdx.org/licenses/MITNFA.json"
             ],
             [
                 null,

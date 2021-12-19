@@ -31,7 +31,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Info-ZIP License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Info-ZIP.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Info-ZIP.json",
             "_sourceURL": "https://spdx.org/licenses/Info-ZIP.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -47,7 +47,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Info-ZIP.json"
+                        "https://spdx.org/licenses/Info-ZIP.json"
                     ],
                     [
                         null,
@@ -56,6 +56,16 @@
                 ]
             },
             "spdxLicenseId": "Info-ZIP"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Info-ZIP.txt",
+            "spdxId": "Info-ZIP",
+            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Attribution notice\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Software modifications\n\t\tYOU MUST Mark Modification\n\t\tYOU MUST Rename Modified work\nUSE CASE Binary delivery\n\tIF NOT Binary delivery of standard UnZipSFX binary (including SFXWiz) as part of a self-extracting archive AND NOT Delete SFX banner AND NOT Disable SFX banner\n\t\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\t\t\tEXCEPT IF Interactive AND Reference Legal notices\n\t\tYOU MUST Provide Attribution notice In Documentation OR Distribution material\n\t\t\tEXCEPT IF Interactive AND Reference Legal notices\n\t\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n\t\t\tEXCEPT IF Interactive AND Reference Legal notices\n\t\tYOU MUST Provide License text In Documentation OR Distribution material\n\t\t\tEXCEPT IF Interactive AND Reference Legal notices\n\t\tIF Software modifications\n\t\t\tYOU MUST Mark Modification\n\t\t\tYOU MUST Rename Modified work\n\t\t\tYOU MUST NOT Use \"Info-ZIP\", \"Zip\", \"UnZip\", \"UnZipSFX\", \"WiZ\", \"Pocket UnZip\", \"Pocket Zip\", \"MacZip\"\n",
+            "_implications": {
+                "__impliedNames": [
+                    "Info-ZIP"
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -201,7 +211,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Info-ZIP.json"
+            "https://spdx.org/licenses/Info-ZIP.json"
         ],
         [
             null,

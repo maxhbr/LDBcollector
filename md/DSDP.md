@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/DSDP.html
 
--   **SPDX:** http://spdx.org/licenses/DSDP.json
+-   **SPDX:** https://spdx.org/licenses/DSDP.json
 
 ## Text
 
@@ -130,7 +130,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "DSDP License",
-                "spdxDetailsURL": "http://spdx.org/licenses/DSDP.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/DSDP.json",
                 "_sourceURL": "https://spdx.org/licenses/DSDP.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -146,7 +146,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/DSDP.json"
+                            "https://spdx.org/licenses/DSDP.json"
                         ],
                         [
                             null,
@@ -335,7 +335,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/DSDP.json"
+                "https://spdx.org/licenses/DSDP.json"
             ],
             [
                 null,

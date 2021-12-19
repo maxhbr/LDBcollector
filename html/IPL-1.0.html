@@ -54,7 +54,7 @@
 <ul>
 <li><p><strong>Homepage:</strong> http://www.opensource.org/licenses/ibmpl.php</p></li>
 <li><p><strong>OSI Page:</strong> https://opensource.org/licenses/IPL-1.0</p></li>
-<li><p><strong>SPDX:</strong> http://spdx.org/licenses/IPL-1.0.json</p></li>
+<li><p><strong>SPDX:</strong> https://spdx.org/licenses/IPL-1.0.json</p></li>
 <li><p><strong>open-license:</strong> http://open-license.hitachi.com/licenses/283</p></li>
 <li><p>https://spdx.org/licenses/IPL-1.0.html</p></li>
 <li><p>http://www.opensource.org/licenses/IPL-1.0</p></li>
@@ -66,7 +66,6 @@
 <h2>OSADL Rule</h2>
 <pre><code>USE CASE Source code delivery
 	YOU MUST Forward License text
-	YOU MUST Provide Warranty disclaimer
 	YOU MUST NOT Modify License text
 	YOU MUST Credit Verbatim &quot;Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.&quot;
 		ATTRIBUTE Highlighted
@@ -100,6 +99,7 @@ USE CASE Commercial distribution
 COMPATIBILITY BSD-2-Clause
 COMPATIBILITY BSD-2-Clause-Patent
 COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
 COMPATIBILITY bzip2-1.0.5
 COMPATIBILITY bzip2-1.0.6
 COMPATIBILITY CC0-1.0
@@ -285,7 +285,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
         &quot;SPDX&quot;: {
             &quot;isSPDXLicenseDeprecated&quot;: false,
             &quot;spdxFullName&quot;: &quot;IBM Public License v1.0&quot;,
-            &quot;spdxDetailsURL&quot;: &quot;http://spdx.org/licenses/IPL-1.0.json&quot;,
+            &quot;spdxDetailsURL&quot;: &quot;https://spdx.org/licenses/IPL-1.0.json&quot;,
             &quot;_sourceURL&quot;: &quot;https://spdx.org/licenses/IPL-1.0.html&quot;,
             &quot;spdxLicIsOSIApproved&quot;: true,
             &quot;spdxSeeAlso&quot;: [
@@ -310,7 +310,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
                 &quot;__impliedURLs&quot;: [
                     [
                         &quot;SPDX&quot;,
-                        &quot;http://spdx.org/licenses/IPL-1.0.json&quot;
+                        &quot;https://spdx.org/licenses/IPL-1.0.json&quot;
                     ],
                     [
                         null,
@@ -323,7 +323,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
         &quot;OSADL License Checklist&quot;: {
             &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/IPL-1.0.txt&quot;,
             &quot;spdxId&quot;: &quot;IPL-1.0&quot;,
-            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tYOU MUST Provide Warranty disclaimer\n\tYOU MUST NOT Modify License text\n\tYOU MUST Credit Verbatim \&quot;Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.\&quot;\n\t\tATTRIBUTE Highlighted\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\nUSE CASE Binary delivery\n\tYOU MUST Credit Verbatim \&quot;Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.\&quot;\n\t\tATTRIBUTE Highlighted\n\tEITHER\n\t\tYOU MUST Include Source code\n\tOR\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Provide Written offer\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\t\tATTRIBUTE Reasonable\n\tUSE CASE License change\n\t\tYOU MUST Use Equivalent License obligations\n\t\tYOU MUST Use Warranty disclaimer On behalf of Contributors\n\t\t\tATTRIBUTE Effective\n\t\tYOU MUST Use Liability disclaimer On behalf of Contributors\n\t\t\tATTRIBUTE Effective\n\t\tIF Service offerings\n\t\t\tATTRIBUTE NOT Transferable\nUSE CASE Commercial distribution\n\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY CPL-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EPL-1.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tYOU MUST NOT Modify License text\n\tYOU MUST Credit Verbatim \&quot;Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.\&quot;\n\t\tATTRIBUTE Highlighted\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\nUSE CASE Binary delivery\n\tYOU MUST Credit Verbatim \&quot;Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.\&quot;\n\t\tATTRIBUTE Highlighted\n\tEITHER\n\t\tYOU MUST Include Source code\n\tOR\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Provide Written offer\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\t\tATTRIBUTE Reasonable\n\tUSE CASE License change\n\t\tYOU MUST Use Equivalent License obligations\n\t\tYOU MUST Use Warranty disclaimer On behalf of Contributors\n\t\t\tATTRIBUTE Effective\n\t\tYOU MUST Use Liability disclaimer On behalf of Contributors\n\t\t\tATTRIBUTE Effective\n\t\tIF Service offerings\n\t\t\tATTRIBUTE NOT Transferable\nUSE CASE Commercial distribution\n\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY CPL-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EPL-1.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n&quot;,
             &quot;_implications&quot;: {
                 &quot;__impliedNames&quot;: [
                     &quot;IPL-1.0&quot;
@@ -666,7 +666,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
         ],
         [
             &quot;SPDX&quot;,
-            &quot;http://spdx.org/licenses/IPL-1.0.json&quot;
+            &quot;https://spdx.org/licenses/IPL-1.0.json&quot;
         ],
         [
             &quot;Homepage&quot;,

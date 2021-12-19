@@ -16,7 +16,7 @@
     https://polyformproject.org/licenses/small-business/1.0.0/
 
 -   **SPDX:**
-    http://spdx.org/licenses/PolyForm-Small-Business-1.0.0.json
+    https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.json
 
 -   https://polyformproject.org/licenses/small-business/1.0.0
 
@@ -182,7 +182,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "PolyForm Small Business License 1.0.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/PolyForm-Small-Business-1.0.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.json",
                 "_sourceURL": "https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -198,7 +198,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/PolyForm-Small-Business-1.0.0.json"
+                            "https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.json"
                         ],
                         [
                             null,
@@ -250,7 +250,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/PolyForm-Small-Business-1.0.0.json"
+                "https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.json"
             ],
             [
                 null,

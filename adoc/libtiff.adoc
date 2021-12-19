@@ -33,13 +33,13 @@ Project Wiki]
 === URLs
 
 * *SPDX:* https://spdx.org/licenses/libtiff.html
-* *SPDX:* http://spdx.org/licenses/libtiff.json
+* *SPDX:* https://spdx.org/licenses/libtiff.json
 * https://fedoraproject.org/wiki/Licensing/libtiff
 
 === OSADL Rule
 
 ....
-USE CASE Source code delivery
+USE CASE Source code delivery OR Binary delivery
 	YOU MUST Forward Copyright notices
 	YOU MUST Forward License text
 	YOU MUST Provide Copyright notices In Documentation
@@ -123,7 +123,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "libtiff License",
-            "spdxDetailsURL": "http://spdx.org/licenses/libtiff.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/libtiff.json",
             "_sourceURL": "https://spdx.org/licenses/libtiff.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -139,7 +139,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/libtiff.json"
+                        "https://spdx.org/licenses/libtiff.json"
                     ],
                     [
                         null,
@@ -152,7 +152,7 @@ repository] is generated)
         "OSADL License Checklist": {
             "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/libtiff.txt",
             "spdxId": "libtiff",
-            "osadlRule": "USE CASE Source code delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
             "_implications": {
                 "__impliedNames": [
                     "libtiff"
@@ -330,7 +330,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/libtiff.json"
+            "https://spdx.org/licenses/libtiff.json"
         ],
         [
             null,

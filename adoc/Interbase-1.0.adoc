@@ -45,7 +45,7 @@ https://github.com/Hitachi/open-license[Hitachi open-license]
 
 * *Homepage:*
 http://info.borland.com/devsupport/interbase/opensource/IPL.html
-* *SPDX:* http://spdx.org/licenses/Interbase-1.0.json
+* *SPDX:* https://spdx.org/licenses/Interbase-1.0.json
 * *open-license:* http://open-license.hitachi.com/licenses/992
 * *open-license:* http://open-license.hitachi.com/licenses/1547
 * https://web.archive.org/web/20060319014854/http://info.borland.com/devsupport/interbase/opensource/IPL.html
@@ -494,7 +494,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Interbase Public License v1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/Interbase-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Interbase-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/Interbase-1.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -510,7 +510,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Interbase-1.0.json"
+                        "https://spdx.org/licenses/Interbase-1.0.json"
                     ],
                     [
                         null,
@@ -1068,7 +1068,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Interbase-1.0.json"
+            "https://spdx.org/licenses/Interbase-1.0.json"
         ],
         [
             null,

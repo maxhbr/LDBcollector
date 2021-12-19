@@ -22,7 +22,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Libpng.html
 
--   **SPDX:** http://spdx.org/licenses/Libpng.json
+-   **SPDX:** https://spdx.org/licenses/Libpng.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/307
 
@@ -209,7 +209,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "libpng License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Libpng.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Libpng.json",
                 "_sourceURL": "https://spdx.org/licenses/Libpng.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -225,7 +225,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Libpng.json"
+                            "https://spdx.org/licenses/Libpng.json"
                         ],
                         [
                             null,
@@ -423,7 +423,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Libpng.json"
+                "https://spdx.org/licenses/Libpng.json"
             ],
             [
                 null,

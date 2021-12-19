@@ -20,7 +20,7 @@
 
 -   **Homepage:** http://www.opencascade.com/content/occt-public-license
 
--   **SPDX:** http://spdx.org/licenses/OCCT-PL.json
+-   **SPDX:** https://spdx.org/licenses/OCCT-PL.json
 
 ## Text
 
@@ -177,7 +177,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open CASCADE Technology Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/OCCT-PL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OCCT-PL.json",
                 "_sourceURL": "https://spdx.org/licenses/OCCT-PL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -193,7 +193,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OCCT-PL.json"
+                            "https://spdx.org/licenses/OCCT-PL.json"
                         ],
                         [
                             null,
@@ -285,7 +285,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/OCCT-PL.json"
+                "https://spdx.org/licenses/OCCT-PL.json"
             ],
             [
                 null,

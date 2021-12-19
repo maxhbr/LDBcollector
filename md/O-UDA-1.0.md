@@ -15,7 +15,9 @@
 -   **Homepage:**
     https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md
 
--   **SPDX:** http://spdx.org/licenses/O-UDA-1.0.json
+-   **SPDX:** https://spdx.org/licenses/O-UDA-1.0.json
+
+-   https://cdla.dev/open-use-of-data-agreement-v1-0/
 
 ## Text
 
@@ -103,11 +105,12 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Use of Data Agreement v1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/O-UDA-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/O-UDA-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/O-UDA-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md"
+                    "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md",
+                    "https://cdla.dev/open-use-of-data-agreement-v1-0/"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -119,18 +122,24 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/O-UDA-1.0.json"
+                            "https://spdx.org/licenses/O-UDA-1.0.json"
                         ],
                         [
                             null,
                             "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md"
+                        ],
+                        [
+                            null,
+                            "https://cdla.dev/open-use-of-data-agreement-v1-0/"
                         ]
                     ]
                 },
                 "spdxLicenseId": "O-UDA-1.0"
             },
             "Scancode": {
-                "otherUrls": null,
+                "otherUrls": [
+                    "https://cdla.dev/open-use-of-data-agreement-v1-0/"
+                ],
                 "homepageUrl": "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md",
                 "shortName": "O-UDA-1.0",
                 "textUrls": null,
@@ -162,6 +171,10 @@
                         [
                             "Homepage",
                             "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md"
+                        ],
+                        [
+                            null,
+                            "https://cdla.dev/open-use-of-data-agreement-v1-0/"
                         ]
                     ]
                 }
@@ -179,11 +192,15 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/O-UDA-1.0.json"
+                "https://spdx.org/licenses/O-UDA-1.0.json"
             ],
             [
                 null,
                 "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md"
+            ],
+            [
+                null,
+                "https://cdla.dev/open-use-of-data-agreement-v1-0/"
             ],
             [
                 "Homepage",

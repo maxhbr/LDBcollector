@@ -20,7 +20,7 @@
 
 ## URLs
 
--   **SPDX:** http://spdx.org/licenses/HPND-sell-variant.json
+-   **SPDX:** https://spdx.org/licenses/HPND-sell-variant.json
 
 -   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth\_gss/gss\_generic\_token.c?h=v4.19
 
@@ -96,7 +96,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Historical Permission Notice and Disclaimer - sell variant",
-                "spdxDetailsURL": "http://spdx.org/licenses/HPND-sell-variant.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/HPND-sell-variant.json",
                 "_sourceURL": "https://spdx.org/licenses/HPND-sell-variant.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -112,7 +112,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/HPND-sell-variant.json"
+                            "https://spdx.org/licenses/HPND-sell-variant.json"
                         ],
                         [
                             null,
@@ -180,7 +180,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/HPND-sell-variant.json"
+                "https://spdx.org/licenses/HPND-sell-variant.json"
             ],
             [
                 null,

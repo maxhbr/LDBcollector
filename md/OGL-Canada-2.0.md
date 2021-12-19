@@ -21,7 +21,7 @@
 -   **Homepage:**
     https://open.canada.ca/en/open-government-licence-canada
 
--   **SPDX:** http://spdx.org/licenses/OGL-Canada-2.0.json
+-   **SPDX:** https://spdx.org/licenses/OGL-Canada-2.0.json
 
 ## Text
 
@@ -160,7 +160,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Government Licence - Canada",
-                "spdxDetailsURL": "http://spdx.org/licenses/OGL-Canada-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OGL-Canada-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/OGL-Canada-2.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -176,7 +176,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OGL-Canada-2.0.json"
+                            "https://spdx.org/licenses/OGL-Canada-2.0.json"
                         ],
                         [
                             null,
@@ -246,7 +246,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OGL-Canada-2.0.json"
+                "https://spdx.org/licenses/OGL-Canada-2.0.json"
             ],
             [
                 "Homepage",

@@ -34,7 +34,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/OLDAP-2.7.html
 
--   **SPDX:** http://spdx.org/licenses/OLDAP-2.7.json
+-   **SPDX:** https://spdx.org/licenses/OLDAP-2.7.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/335
 
@@ -194,7 +194,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open LDAP Public License v2.7",
-                "spdxDetailsURL": "http://spdx.org/licenses/OLDAP-2.7.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OLDAP-2.7.json",
                 "_sourceURL": "https://spdx.org/licenses/OLDAP-2.7.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -210,7 +210,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OLDAP-2.7.json"
+                            "https://spdx.org/licenses/OLDAP-2.7.json"
                         ],
                         [
                             null,
@@ -480,7 +480,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OLDAP-2.7.json"
+                "https://spdx.org/licenses/OLDAP-2.7.json"
             ],
             [
                 null,

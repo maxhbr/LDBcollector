@@ -29,7 +29,7 @@
 
 -   **Homepage:** http://www.json.org/license.html
 
--   **SPDX:** http://spdx.org/licenses/JSON.json
+-   **SPDX:** https://spdx.org/licenses/JSON.json
 
 -   http://www.gnu.org/licenses/license-list.html#JSON
 
@@ -108,7 +108,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "JSON License",
-                "spdxDetailsURL": "http://spdx.org/licenses/JSON.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/JSON.json",
                 "_sourceURL": "https://spdx.org/licenses/JSON.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -124,7 +124,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/JSON.json"
+                            "https://spdx.org/licenses/JSON.json"
                         ],
                         [
                             null,
@@ -290,7 +290,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/JSON.json"
+                "https://spdx.org/licenses/JSON.json"
             ],
             [
                 null,

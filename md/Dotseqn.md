@@ -19,7 +19,7 @@
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Dotseqn
 
--   **SPDX:** http://spdx.org/licenses/Dotseqn.json
+-   **SPDX:** https://spdx.org/licenses/Dotseqn.json
 
 ## Text
 
@@ -72,7 +72,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Dotseqn License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Dotseqn.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Dotseqn.json",
                 "_sourceURL": "https://spdx.org/licenses/Dotseqn.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -88,7 +88,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Dotseqn.json"
+                            "https://spdx.org/licenses/Dotseqn.json"
                         ],
                         [
                             null,
@@ -186,7 +186,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Dotseqn.json"
+                "https://spdx.org/licenses/Dotseqn.json"
             ],
             [
                 null,

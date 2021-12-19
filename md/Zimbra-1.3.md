@@ -17,7 +17,7 @@
 -   **Homepage:**
     http://www.zimbra.com/license/zimbra-public-license-1-3.html
 
--   **SPDX:** http://spdx.org/licenses/Zimbra-1.3.json
+-   **SPDX:** https://spdx.org/licenses/Zimbra-1.3.json
 
 -   http://web.archive.org/web/20100302225219/http://www.zimbra.com/license/zimbra-public-license-1-3.html
 
@@ -218,7 +218,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zimbra Public License v1.3",
-                "spdxDetailsURL": "http://spdx.org/licenses/Zimbra-1.3.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Zimbra-1.3.json",
                 "_sourceURL": "https://spdx.org/licenses/Zimbra-1.3.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -234,7 +234,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Zimbra-1.3.json"
+                            "https://spdx.org/licenses/Zimbra-1.3.json"
                         ],
                         [
                             null,
@@ -320,7 +320,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Zimbra-1.3.json"
+                "https://spdx.org/licenses/Zimbra-1.3.json"
             ],
             [
                 null,

@@ -27,7 +27,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/BSD\_Protection\_License
 
--   **SPDX:** http://spdx.org/licenses/BSD-Protection.json
+-   **SPDX:** https://spdx.org/licenses/BSD-Protection.json
 
 -   https://spdx.org/licenses/BSD-Protection.html
 
@@ -219,7 +219,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD Protection License",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-Protection.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-Protection.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-Protection.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -235,7 +235,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-Protection.json"
+                            "https://spdx.org/licenses/BSD-Protection.json"
                         ],
                         [
                             null,
@@ -379,7 +379,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-Protection.json"
+                "https://spdx.org/licenses/BSD-Protection.json"
             ],
             [
                 null,

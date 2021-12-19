@@ -88,7 +88,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-claus
 * *OSI Page:* https://opensource.org/licenses/BSD-2-Clause
 * *OSI Page:* http://opensource.org/licenses/bsd-license.php
 * *SPDX:* https://spdx.org/licenses/BSD-2-Clause.html
-* *SPDX:* http://spdx.org/licenses/BSD-2-Clause.json
+* *SPDX:* https://spdx.org/licenses/BSD-2-Clause.json
 * *Wikipedia Page:* https://en.wikipedia.org/wiki/BSD_licenses#2-clause
 * *open-license:* http://open-license.hitachi.com/licenses/15
 * http://spdx.org/licenses/BSD-2-Clause
@@ -293,7 +293,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 2-Clause \"Simplified\" License",
-            "spdxDetailsURL": "http://spdx.org/licenses/BSD-2-Clause.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/BSD-2-Clause.json",
             "_sourceURL": "https://spdx.org/licenses/BSD-2-Clause.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -318,7 +318,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/BSD-2-Clause.json"
+                        "https://spdx.org/licenses/BSD-2-Clause.json"
                     ],
                     [
                         null,
@@ -911,7 +911,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-2-Clause.json"
+            "https://spdx.org/licenses/BSD-2-Clause.json"
         ],
         [
             "Homepage",

@@ -19,7 +19,7 @@
 
 -   **Homepage:** http://www.aps.anl.gov/epics/license/open.php
 
--   **SPDX:** http://spdx.org/licenses/EPICS.json
+-   **SPDX:** https://spdx.org/licenses/EPICS.json
 
 -   https://epics.anl.gov/license/open.php
 
@@ -102,7 +102,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "EPICS Open License",
-                "spdxDetailsURL": "http://spdx.org/licenses/EPICS.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/EPICS.json",
                 "_sourceURL": "https://spdx.org/licenses/EPICS.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -118,7 +118,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/EPICS.json"
+                            "https://spdx.org/licenses/EPICS.json"
                         ],
                         [
                             null,
@@ -222,7 +222,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/EPICS.json"
+                "https://spdx.org/licenses/EPICS.json"
             ],
             [
                 null,

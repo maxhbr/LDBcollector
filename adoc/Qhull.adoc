@@ -30,7 +30,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing:Qhull?rd=Licensing/Qhull
 * *SPDX:* https://spdx.org/licenses/Qhull.html
-* *SPDX:* http://spdx.org/licenses/Qhull.json
+* *SPDX:* https://spdx.org/licenses/Qhull.json
 * https://fedoraproject.org/wiki/Licensing/Qhull
 
 === OSADL Rule
@@ -118,7 +118,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Qhull License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Qhull.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Qhull.json",
             "_sourceURL": "https://spdx.org/licenses/Qhull.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -134,7 +134,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Qhull.json"
+                        "https://spdx.org/licenses/Qhull.json"
                     ],
                     [
                         null,
@@ -299,7 +299,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Qhull.json"
+            "https://spdx.org/licenses/Qhull.json"
         ],
         [
             null,

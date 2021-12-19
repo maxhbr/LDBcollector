@@ -41,7 +41,7 @@
 -   **OSI Page:** http://opensource.org/licenses/MPL-2.0
 
 -   **SPDX:**
-    http://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json
+    https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json
 
 -   https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html
 
@@ -65,13 +65,14 @@
     			ATTRIBUTE Timely
     			ATTRIBUTE No profit
     	USE CASE License change
-    		YOU MUST NOT Restrict Granted rights
+    		YOU MUST NOT Restrict Granted rights For Source code
     	IF Service offerings
     		ATTRIBUTE NOT Transferable
     		YOU MUST Indemnify Other contributors
     COMPATIBILITY BSD-2-Clause
     COMPATIBILITY BSD-2-Clause-Patent
     COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSL-1.0
     COMPATIBILITY bzip2-1.0.5
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
@@ -89,7 +90,7 @@
     COMPATIBILITY X11
     COMPATIBILITY Zlib
     COPYLEFT CLAUSE Yes
-    PATENT HINTS
+    PATENT HINTS Yes
 
 (source: OSADL License Checklist)
 
@@ -156,6 +157,7 @@
                 ]
             ]
         ],
+        "__hasPatentHint": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -170,7 +172,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Mozilla Public License 2.0 (no copyleft exception)",
-                "spdxDetailsURL": "http://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json",
                 "_sourceURL": "https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -196,7 +198,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json"
+                            "https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json"
                         ],
                         [
                             null,
@@ -213,11 +215,12 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0-no-copyleft-exception.txt",
                 "spdxId": "MPL-2.0-no-copyleft-exception",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOPYLEFT CLAUSE Yes\nPATENT HINTS\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights For Source code\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOPYLEFT CLAUSE Yes\nPATENT HINTS Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "MPL-2.0-no-copyleft-exception"
                     ],
+                    "__hasPatentHint": true,
                     "__impliedCopyleft": [
                         [
                             "OSADL License Checklist",
@@ -405,7 +408,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json"
+                "https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json"
             ],
             [
                 null,

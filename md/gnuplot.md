@@ -20,7 +20,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:Gnuplot?rd=Licensing/Gnuplot
 
--   **SPDX:** http://spdx.org/licenses/gnuplot.json
+-   **SPDX:** https://spdx.org/licenses/gnuplot.json
 
 -   https://fedoraproject.org/wiki/Licensing/Gnuplot
 
@@ -98,7 +98,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "gnuplot License",
-                "spdxDetailsURL": "http://spdx.org/licenses/gnuplot.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/gnuplot.json",
                 "_sourceURL": "https://spdx.org/licenses/gnuplot.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -114,7 +114,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/gnuplot.json"
+                            "https://spdx.org/licenses/gnuplot.json"
                         ],
                         [
                             null,
@@ -218,7 +218,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/gnuplot.json"
+                "https://spdx.org/licenses/gnuplot.json"
             ],
             [
                 null,

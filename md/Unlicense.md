@@ -60,7 +60,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Unlicense.html
 
--   **SPDX:** http://spdx.org/licenses/Unlicense.json
+-   **SPDX:** https://spdx.org/licenses/Unlicense.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/844
 
@@ -233,7 +233,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "The Unlicense",
-                "spdxDetailsURL": "http://spdx.org/licenses/Unlicense.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Unlicense.json",
                 "_sourceURL": "https://spdx.org/licenses/Unlicense.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -258,7 +258,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Unlicense.json"
+                            "https://spdx.org/licenses/Unlicense.json"
                         ],
                         [
                             null,
@@ -723,7 +723,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Unlicense.json"
+                "https://spdx.org/licenses/Unlicense.json"
             ],
             [
                 "Homepage",

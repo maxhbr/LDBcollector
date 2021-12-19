@@ -83,15 +83,16 @@
 <p> (source: <a href="https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt" title="choosealicense.com">choosealicense.com</a> (<a href="https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md" title="MIT">MIT</a>))</p>
 <h2>URLs</h2>
 <ul>
-<li><p><strong>Homepage:</strong> https://www.isc.org/software/license</p></li>
+<li><p><strong>Homepage:</strong> https://www.isc.org/licenses/</p></li>
 <li><p><strong>OSI Page:</strong> https://opensource.org/licenses/ISC</p></li>
 <li><p><strong>OSI Page:</strong> http://opensource.org/licenses/isc-license.txt</p></li>
 <li><p><strong>SPDX:</strong> https://spdx.org/licenses/ISC.html</p></li>
-<li><p><strong>SPDX:</strong> http://spdx.org/licenses/ISC.json</p></li>
+<li><p><strong>SPDX:</strong> https://spdx.org/licenses/ISC.json</p></li>
 <li><p><strong>Wikipedia page:</strong> https://en.wikipedia.org/wiki/ISC_license</p></li>
 <li><p><strong>open-license:</strong> http://open-license.hitachi.com/licenses/379</p></li>
 <li><p>https://www.isc.org/downloads/software-support-policy/isc-license/</p></li>
 <li><p>http://openbsd.wikia.com/wiki/OpenBSD%27s_BSD_license</p></li>
+<li><p>http://www.isc.org/software/license</p></li>
 <li><p>http://www.opensource.org/licenses/ISC</p></li>
 <li><p>https://www.isc.org/isc-license-1.0.html</p></li>
 </ul>
@@ -241,10 +242,11 @@ THIS SOFTWARE.
         &quot;SPDX&quot;: {
             &quot;isSPDXLicenseDeprecated&quot;: false,
             &quot;spdxFullName&quot;: &quot;ISC License&quot;,
-            &quot;spdxDetailsURL&quot;: &quot;http://spdx.org/licenses/ISC.json&quot;,
+            &quot;spdxDetailsURL&quot;: &quot;https://spdx.org/licenses/ISC.json&quot;,
             &quot;_sourceURL&quot;: &quot;https://spdx.org/licenses/ISC.html&quot;,
             &quot;spdxLicIsOSIApproved&quot;: true,
             &quot;spdxSeeAlso&quot;: [
+                &quot;https://www.isc.org/licenses/&quot;,
                 &quot;https://www.isc.org/downloads/software-support-policy/isc-license/&quot;,
                 &quot;https://opensource.org/licenses/ISC&quot;
             ],
@@ -267,7 +269,11 @@ THIS SOFTWARE.
                 &quot;__impliedURLs&quot;: [
                     [
                         &quot;SPDX&quot;,
-                        &quot;http://spdx.org/licenses/ISC.json&quot;
+                        &quot;https://spdx.org/licenses/ISC.json&quot;
+                    ],
+                    [
+                        null,
+                        &quot;https://www.isc.org/licenses/&quot;
                     ],
                     [
                         null,
@@ -314,9 +320,10 @@ THIS SOFTWARE.
                 &quot;http://www.opensource.org/licenses/ISC&quot;,
                 &quot;https://opensource.org/licenses/ISC&quot;,
                 &quot;https://www.isc.org/downloads/software-support-policy/isc-license/&quot;,
-                &quot;https://www.isc.org/isc-license-1.0.html&quot;
+                &quot;https://www.isc.org/isc-license-1.0.html&quot;,
+                &quot;https://www.isc.org/software/license&quot;
             ],
-            &quot;homepageUrl&quot;: &quot;https://www.isc.org/software/license&quot;,
+            &quot;homepageUrl&quot;: &quot;https://www.isc.org/licenses/&quot;,
             &quot;shortName&quot;: &quot;ISC License&quot;,
             &quot;textUrls&quot;: null,
             &quot;text&quot;: &quot;Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n&quot;,
@@ -354,7 +361,7 @@ THIS SOFTWARE.
                 &quot;__impliedURLs&quot;: [
                     [
                         &quot;Homepage&quot;,
-                        &quot;https://www.isc.org/software/license&quot;
+                        &quot;https://www.isc.org/licenses/&quot;
                     ],
                     [
                         &quot;OSI Page&quot;,
@@ -383,6 +390,10 @@ THIS SOFTWARE.
                     [
                         null,
                         &quot;https://www.isc.org/isc-license-1.0.html&quot;
+                    ],
+                    [
+                        null,
+                        &quot;https://www.isc.org/software/license&quot;
                     ]
                 ]
             }
@@ -683,7 +694,7 @@ THIS SOFTWARE.
                 &quot;warranty&quot;
             ],
             &quot;_sourceURL&quot;: &quot;https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt&quot;,
-            &quot;content&quot;: &quot;---\ntitle: ISC License\nspdx-id: ISC\n\ndescription: A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the &lt;a href=\&quot;/licenses/bsd-2-clause/\&quot;&gt;BSD 2-Clause&lt;/a&gt; and &lt;a href=\&quot;/licenses/mit/\&quot;&gt;MIT&lt;/a&gt; licenses, removing some language that is no longer necessary.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  Starship: https://github.com/starship/starship/blob/master/LICENSE\n  Node.js semver: https://github.com/npm/node-semver/blob/master/LICENSE\n  OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/develop/LICENSE.md\n\npermissions:\n  - commercial-use\n  - distribution\n  - modifications\n  - private-use\n\nconditions:\n  - include-copyright\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nISC License\n\nCopyright (c) [year], [fullname]\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n&quot;,
+            &quot;content&quot;: &quot;---\ntitle: ISC License\nspdx-id: ISC\n\ndescription: A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the &lt;a href=\&quot;/licenses/bsd-2-clause/\&quot;&gt;BSD 2-Clause&lt;/a&gt; and &lt;a href=\&quot;/licenses/mit/\&quot;&gt;MIT&lt;/a&gt; licenses, removing some language that is no longer necessary.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  Starship: https://github.com/starship/starship/blob/master/LICENSE\n  Node.js semver: https://github.com/npm/node-semver/blob/master/LICENSE\n  OpenStreetMap iD: https://github.com/openstreetmap/iD/blob/develop/LICENSE.md\n\npermissions:\n  - commercial-use\n  - distribution\n  - modifications\n  - private-use\n\nconditions:\n  - include-copyright\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nISC License\n\nCopyright (c) [year] [fullname]\n\nPermission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted, provided that the above\ncopyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\nAND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM\nLOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR\nOTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\nPERFORMANCE OF THIS SOFTWARE.\n&quot;,
             &quot;name&quot;: &quot;isc&quot;,
             &quot;hidden&quot;: null,
             &quot;spdxId&quot;: &quot;ISC&quot;,
@@ -927,7 +938,11 @@ THIS SOFTWARE.
         ],
         [
             &quot;SPDX&quot;,
-            &quot;http://spdx.org/licenses/ISC.json&quot;
+            &quot;https://spdx.org/licenses/ISC.json&quot;
+        ],
+        [
+            null,
+            &quot;https://www.isc.org/licenses/&quot;
         ],
         [
             null,
@@ -935,7 +950,7 @@ THIS SOFTWARE.
         ],
         [
             &quot;Homepage&quot;,
-            &quot;https://www.isc.org/software/license&quot;
+            &quot;https://www.isc.org/licenses/&quot;
         ],
         [
             &quot;OSI Page&quot;,
@@ -956,6 +971,10 @@ THIS SOFTWARE.
         [
             null,
             &quot;https://www.isc.org/isc-license-1.0.html&quot;
+        ],
+        [
+            null,
+            &quot;https://www.isc.org/software/license&quot;
         ]
     ]
 }</code></pre>

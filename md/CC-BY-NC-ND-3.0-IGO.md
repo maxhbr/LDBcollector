@@ -14,7 +14,7 @@
 
 -   **Homepage:** https://creativecommons.org/licenses/by-nc-nd/3.0/igo/
 
--   **SPDX:** http://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.json
+-   **SPDX:** https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.json
 
 -   https://creativecommons.org/licenses/by-nc-nd/3.0/igo/legalcode
 
@@ -114,7 +114,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO",
-                "spdxDetailsURL": "http://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.json",
                 "_sourceURL": "https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -130,7 +130,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.json"
+                            "https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.json"
                         ],
                         [
                             null,
@@ -176,7 +176,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.json"
+                "https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.json"
             ],
             [
                 null,

@@ -35,7 +35,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/Motosoto
 
--   **SPDX:** http://spdx.org/licenses/Motosoto.json
+-   **SPDX:** https://spdx.org/licenses/Motosoto.json
 
 -   http://www.opensource.org/licenses/Motosoto
 
@@ -285,7 +285,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Motosoto License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Motosoto.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Motosoto.json",
                 "_sourceURL": "https://spdx.org/licenses/Motosoto.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -310,7 +310,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Motosoto.json"
+                            "https://spdx.org/licenses/Motosoto.json"
                         ],
                         [
                             null,
@@ -530,7 +530,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Motosoto.json"
+                "https://spdx.org/licenses/Motosoto.json"
             ],
             [
                 "Homepage",

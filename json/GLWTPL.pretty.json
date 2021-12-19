@@ -19,7 +19,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Good Luck With That Public License",
-            "spdxDetailsURL": "http://spdx.org/licenses/GLWTPL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/GLWTPL.json",
             "_sourceURL": "https://spdx.org/licenses/GLWTPL.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -35,7 +35,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/GLWTPL.json"
+                        "https://spdx.org/licenses/GLWTPL.json"
                     ],
                     [
                         null,
@@ -101,7 +101,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/GLWTPL.json"
+            "https://spdx.org/licenses/GLWTPL.json"
         ],
         [
             null,

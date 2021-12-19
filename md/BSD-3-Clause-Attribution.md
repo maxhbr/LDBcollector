@@ -28,7 +28,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-3-Clause-Attribution.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Attribution.json
+-   **SPDX:** https://spdx.org/licenses/BSD-3-Clause-Attribution.json
 
 ## Text
 
@@ -119,7 +119,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD with attribution",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-3-Clause-Attribution.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-3-Clause-Attribution.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -135,7 +135,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-3-Clause-Attribution.json"
+                            "https://spdx.org/licenses/BSD-3-Clause-Attribution.json"
                         ],
                         [
                             null,
@@ -324,7 +324,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-3-Clause-Attribution.json"
+                "https://spdx.org/licenses/BSD-3-Clause-Attribution.json"
             ],
             [
                 null,

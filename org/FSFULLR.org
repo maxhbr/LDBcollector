@@ -3,7 +3,7 @@
 |----------------+------------------------------------------------|
 | Fullname       | FSF Unlimited License (with License Retention) |
 | Shortname      | FSFULLR                                        |
-| Rating         | Unknown                                        |
+| Rating         | Unknown, probably Stop or No-Go                |
 | Classification | NoCopyleft                                     |
 
 *Other Names:*
@@ -19,6 +19,10 @@
   Project Wiki]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
+- *↓*"Rating is: Lead" (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
+
 ** General Comments
 
 ** URLs
@@ -26,7 +30,9 @@
 - *Homepage:*
   https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant
 
-- *SPDX:* http://spdx.org/licenses/FSFULLR.json
+- *SPDX:* https://spdx.org/licenses/FSFULLR.html
+
+- *SPDX:* https://spdx.org/licenses/FSFULLR.json
 
 ** Text
 #+begin_example
@@ -41,6 +47,9 @@
 *** Facts
 
 - LicenseName
+
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
@@ -80,7 +89,7 @@
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "FSF Unlimited License (with License Retention)",
-              "spdxDetailsURL": "http://spdx.org/licenses/FSFULLR.json",
+              "spdxDetailsURL": "https://spdx.org/licenses/FSFULLR.json",
               "_sourceURL": "https://spdx.org/licenses/FSFULLR.html",
               "spdxLicIsOSIApproved": false,
               "spdxSeeAlso": [
@@ -96,7 +105,7 @@
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/FSFULLR.json"
+                          "https://spdx.org/licenses/FSFULLR.json"
                       ],
                       [
                           null,
@@ -171,9 +180,52 @@
                       ]
                   ]
               }
+          },
+          "BlueOak License List": {
+              "BlueOakRating": "Lead",
+              "url": "https://spdx.org/licenses/FSFULLR.html",
+              "isPermissive": true,
+              "_sourceURL": "https://blueoakcouncil.org/list",
+              "name": "FSF Unlimited License (with License Retention)",
+              "id": "FSFULLR",
+              "_implications": {
+                  "__impliedNames": [
+                      "FSFULLR",
+                      "FSF Unlimited License (with License Retention)"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "BlueOak License List",
+                          {
+                              "tag": "NegativeJudgement",
+                              "contents": "Rating is: Lead"
+                          }
+                      ]
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "BlueOak License List",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft",
+                  "__impliedURLs": [
+                      [
+                          "SPDX",
+                          "https://spdx.org/licenses/FSFULLR.html"
+                      ]
+                  ]
+              }
           }
       },
       "__impliedJudgement": [
+          [
+              "BlueOak License List",
+              {
+                  "tag": "NegativeJudgement",
+                  "contents": "Rating is: Lead"
+              }
+          ],
           [
               "Fedora Project Wiki",
               {
@@ -183,6 +235,10 @@
           ]
       ],
       "__impliedCopyleft": [
+          [
+              "BlueOak License List",
+              "NoCopyleft"
+          ],
           [
               "Scancode",
               "NoCopyleft"
@@ -194,7 +250,11 @@
       "__impliedURLs": [
           [
               "SPDX",
-              "http://spdx.org/licenses/FSFULLR.json"
+              "https://spdx.org/licenses/FSFULLR.html"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/FSFULLR.json"
           ],
           [
               null,

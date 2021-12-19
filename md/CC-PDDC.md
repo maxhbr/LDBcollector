@@ -23,7 +23,7 @@
 
 -   **Homepage:** https://creativecommons.org/licenses/publicdomain/
 
--   **SPDX:** http://spdx.org/licenses/CC-PDDC.json
+-   **SPDX:** https://spdx.org/licenses/CC-PDDC.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/276
 
@@ -102,7 +102,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Public Domain Dedication and Certification",
-                "spdxDetailsURL": "http://spdx.org/licenses/CC-PDDC.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CC-PDDC.json",
                 "_sourceURL": "https://spdx.org/licenses/CC-PDDC.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -118,7 +118,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CC-PDDC.json"
+                            "https://spdx.org/licenses/CC-PDDC.json"
                         ],
                         [
                             null,
@@ -242,7 +242,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/CC-PDDC.json"
+                "https://spdx.org/licenses/CC-PDDC.json"
             ],
             [
                 null,

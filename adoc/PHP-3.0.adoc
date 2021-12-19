@@ -45,7 +45,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *OSI Page:* https://opensource.org/licenses/PHP-3.0
 * *OSI Page:* http://www.opensource.org/licenses/php.html
 * *SPDX:* https://spdx.org/licenses/PHP-3.0.html
-* *SPDX:* http://spdx.org/licenses/PHP-3.0.json
+* *SPDX:* https://spdx.org/licenses/PHP-3.0.json
 * *open-license:* http://open-license.hitachi.com/licenses/811
 * http://www.php.net/license/3_0.txt
 * http://www.opensource.org/licenses/PHP-3.0
@@ -289,7 +289,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "PHP License v3.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/PHP-3.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/PHP-3.0.json",
             "_sourceURL": "https://spdx.org/licenses/PHP-3.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -315,7 +315,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/PHP-3.0.json"
+                        "https://spdx.org/licenses/PHP-3.0.json"
                     ],
                     [
                         null,
@@ -830,7 +830,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/PHP-3.0.json"
+            "https://spdx.org/licenses/PHP-3.0.json"
         ],
         [
             null,

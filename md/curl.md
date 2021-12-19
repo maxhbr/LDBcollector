@@ -20,7 +20,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/curl.html
 
--   **SPDX:** http://spdx.org/licenses/curl.json
+-   **SPDX:** https://spdx.org/licenses/curl.json
 
 -   https://github.com/bagder/curl/blob/master/COPYING
 
@@ -99,7 +99,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "curl License",
-                "spdxDetailsURL": "http://spdx.org/licenses/curl.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/curl.json",
                 "_sourceURL": "https://spdx.org/licenses/curl.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -115,7 +115,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/curl.json"
+                            "https://spdx.org/licenses/curl.json"
                         ],
                         [
                             null,
@@ -249,7 +249,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/curl.json"
+                "https://spdx.org/licenses/curl.json"
             ],
             [
                 null,

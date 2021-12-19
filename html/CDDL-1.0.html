@@ -54,7 +54,7 @@
 <li><p><strong>Homepage:</strong> http://www.sun.com/cddl/</p></li>
 <li><p><strong>OSI Page:</strong> https://opensource.org/licenses/CDDL-1.0</p></li>
 <li><p><strong>OSI Page:</strong> http://www.opensource.org/licenses/cddl1.txt</p></li>
-<li><p><strong>SPDX:</strong> http://spdx.org/licenses/CDDL-1.0.json</p></li>
+<li><p><strong>SPDX:</strong> https://spdx.org/licenses/CDDL-1.0.json</p></li>
 <li><p><strong>Wikipedia page:</strong> https://en.wikipedia.org/wiki/Common_Development_and_Distribution_License</p></li>
 <li><p><strong>open-license:</strong> http://open-license.hitachi.com/licenses/19</p></li>
 <li><p><strong>open-license:</strong> http://open-license.hitachi.com/licenses/254</p></li>
@@ -194,16 +194,19 @@ AND
 <h2>OSADL Rule</h2>
 <pre><code>USE CASE Source code delivery
 	YOU MUST Provide License text
+	YOU MUST NOT Modify Copyright notices
+	YOU MUST NOT Modify Patent notices
+	YOU MUST NOT Modify Trademark notices
 	IF Software modification
-		YOU MUST Forward Copyright notices
-		YOU MUST Forward Patent notices
-		YOU MUST Forward Trademark notices
 		YOU MUST Grant License
 			ATTRIBUTE Original license
 		YOU MUST Provide Copyright notice
 	YOU MUST NOT Restrict Granted rights
 USE CASE Binary delivery
 	YOU MUST Provide License text
+	YOU MUST NOT Modify Copyright notices
+	YOU MUST NOT Modify Patent notices
+	YOU MUST NOT Modify Trademark notices
 	YOU MUST Provide Delayed source code delivery
 	YOU MUST Provide Written offer
 		ATTRIBUTE Reasonable
@@ -212,9 +215,6 @@ USE CASE Binary delivery
 		OR
 			ATTRIBUTE Via Internet
 	IF Software modification
-		YOU MUST Forward Copyright notices
-		YOU MUST Forward Patent notices
-		YOU MUST Forward Trademark notices
 		YOU MUST Grant License
 			ATTRIBUTE Original license
 		YOU MUST Provide Copyright notice
@@ -225,6 +225,7 @@ USE CASE Binary delivery
 COMPATIBILITY BSD-2-Clause
 COMPATIBILITY BSD-2-Clause-Patent
 COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
 COMPATIBILITY bzip2-1.0.5
 COMPATIBILITY bzip2-1.0.6
 COMPATIBILITY CC0-1.0
@@ -439,7 +440,7 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
         &quot;SPDX&quot;: {
             &quot;isSPDXLicenseDeprecated&quot;: false,
             &quot;spdxFullName&quot;: &quot;Common Development and Distribution License 1.0&quot;,
-            &quot;spdxDetailsURL&quot;: &quot;http://spdx.org/licenses/CDDL-1.0.json&quot;,
+            &quot;spdxDetailsURL&quot;: &quot;https://spdx.org/licenses/CDDL-1.0.json&quot;,
             &quot;_sourceURL&quot;: &quot;https://spdx.org/licenses/CDDL-1.0.html&quot;,
             &quot;spdxLicIsOSIApproved&quot;: true,
             &quot;spdxSeeAlso&quot;: [
@@ -464,7 +465,7 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
                 &quot;__impliedURLs&quot;: [
                     [
                         &quot;SPDX&quot;,
-                        &quot;http://spdx.org/licenses/CDDL-1.0.json&quot;
+                        &quot;https://spdx.org/licenses/CDDL-1.0.json&quot;
                     ],
                     [
                         null,
@@ -477,7 +478,7 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
         &quot;OSADL License Checklist&quot;: {
             &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/CDDL-1.0.txt&quot;,
             &quot;spdxId&quot;: &quot;CDDL-1.0&quot;,
-            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery\n\tYOU MUST Provide License text\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide License text\n\tYOU MUST Provide Delayed source code delivery\n\tYOU MUST Provide Written offer\n\t\tATTRIBUTE Reasonable\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Indemnify Other Contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery\n\tYOU MUST Provide License text\n\tYOU MUST NOT Modify Copyright notices\n\tYOU MUST NOT Modify Patent notices\n\tYOU MUST NOT Modify Trademark notices\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide License text\n\tYOU MUST NOT Modify Copyright notices\n\tYOU MUST NOT Modify Patent notices\n\tYOU MUST NOT Modify Trademark notices\n\tYOU MUST Provide Delayed source code delivery\n\tYOU MUST Provide Written offer\n\t\tATTRIBUTE Reasonable\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Indemnify Other Contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n&quot;,
             &quot;_implications&quot;: {
                 &quot;__impliedNames&quot;: [
                     &quot;CDDL-1.0&quot;
@@ -1287,7 +1288,7 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
         ],
         [
             &quot;SPDX&quot;,
-            &quot;http://spdx.org/licenses/CDDL-1.0.json&quot;
+            &quot;https://spdx.org/licenses/CDDL-1.0.json&quot;
         ],
         [
             null,

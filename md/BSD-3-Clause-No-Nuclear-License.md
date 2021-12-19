@@ -15,7 +15,7 @@
 ## URLs
 
 -   **SPDX:**
-    http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json
+    https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json
 
 -   http://download.oracle.com/otn-pub/java/licenses/bsd.txt?AuthParam=1467140197\_43d516ce1776bd08a58235a7785be1cc
 
@@ -97,7 +97,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 3-Clause No Nuclear License",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -113,7 +113,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json"
+                            "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json"
                         ],
                         [
                             null,
@@ -189,7 +189,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json"
+                "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json"
             ],
             [
                 null,

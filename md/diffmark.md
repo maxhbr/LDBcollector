@@ -37,7 +37,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/diffmark.html
 
--   **SPDX:** http://spdx.org/licenses/diffmark.json
+-   **SPDX:** https://spdx.org/licenses/diffmark.json
 
 ## Text
 
@@ -102,7 +102,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "diffmark license",
-                "spdxDetailsURL": "http://spdx.org/licenses/diffmark.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/diffmark.json",
                 "_sourceURL": "https://spdx.org/licenses/diffmark.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -118,7 +118,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/diffmark.json"
+                            "https://spdx.org/licenses/diffmark.json"
                         ],
                         [
                             null,
@@ -275,7 +275,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/diffmark.json"
+                "https://spdx.org/licenses/diffmark.json"
             ],
             [
                 null,

@@ -32,7 +32,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Multics.html
 
--   **SPDX:** http://spdx.org/licenses/Multics.json
+-   **SPDX:** https://spdx.org/licenses/Multics.json
 
 -   http://www.opensource.org/licenses/Multics
 
@@ -139,7 +139,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Multics License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Multics.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Multics.json",
                 "_sourceURL": "https://spdx.org/licenses/Multics.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -164,7 +164,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Multics.json"
+                            "https://spdx.org/licenses/Multics.json"
                         ],
                         [
                             null,
@@ -374,7 +374,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Multics.json"
+                "https://spdx.org/licenses/Multics.json"
             ],
             [
                 "Homepage",

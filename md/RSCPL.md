@@ -36,7 +36,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/RSCPL
 
--   **SPDX:** http://spdx.org/licenses/RSCPL.json
+-   **SPDX:** https://spdx.org/licenses/RSCPL.json
 
 -   http://wayback.archive.org/web/20060715140826/http://www.risource.org/RPL/RPL-1.0A.shtml
 
@@ -271,7 +271,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Ricoh Source Code Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/RSCPL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/RSCPL.json",
                 "_sourceURL": "https://spdx.org/licenses/RSCPL.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -297,7 +297,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/RSCPL.json"
+                            "https://spdx.org/licenses/RSCPL.json"
                         ],
                         [
                             null,
@@ -520,7 +520,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/RSCPL.json"
+                "https://spdx.org/licenses/RSCPL.json"
             ],
             [
                 null,

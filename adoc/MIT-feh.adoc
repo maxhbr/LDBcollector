@@ -31,7 +31,7 @@ Project Wiki]
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#feh
 * *SPDX:* https://spdx.org/licenses/MIT-feh.html
-* *SPDX:* http://spdx.org/licenses/MIT-feh.json
+* *SPDX:* https://spdx.org/licenses/MIT-feh.json
 * https://fedoraproject.org/wiki/Licensing/MIT#feh
 
 === Text
@@ -105,7 +105,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "feh License",
-            "spdxDetailsURL": "http://spdx.org/licenses/MIT-feh.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MIT-feh.json",
             "_sourceURL": "https://spdx.org/licenses/MIT-feh.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -121,7 +121,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MIT-feh.json"
+                        "https://spdx.org/licenses/MIT-feh.json"
                     ],
                     [
                         null,
@@ -296,7 +296,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/MIT-feh.json"
+            "https://spdx.org/licenses/MIT-feh.json"
         ],
         [
             null,

@@ -53,7 +53,7 @@
 
 -   **Homepage:** http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html
 
--   **SPDX:** http://spdx.org/licenses/LGPL-2.0-only.json
+-   **SPDX:** https://spdx.org/licenses/LGPL-2.0-only.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/8
 
@@ -748,7 +748,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Library General Public License v2 only",
-                "spdxDetailsURL": "http://spdx.org/licenses/LGPL-2.0-only.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/LGPL-2.0-only.json",
                 "_sourceURL": "https://spdx.org/licenses/LGPL-2.0-only.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -773,7 +773,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/LGPL-2.0-only.json"
+                            "https://spdx.org/licenses/LGPL-2.0-only.json"
                         ],
                         [
                             null,
@@ -1485,7 +1485,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/LGPL-2.0-only.json"
+                "https://spdx.org/licenses/LGPL-2.0-only.json"
             ],
             [
                 null,

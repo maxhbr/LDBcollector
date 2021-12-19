@@ -38,7 +38,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.fastcgi.com/devkit/LICENSE.TERMS
 * *SPDX:* https://spdx.org/licenses/OML.html
-* *SPDX:* http://spdx.org/licenses/OML.json
+* *SPDX:* https://spdx.org/licenses/OML.json
 * https://fedoraproject.org/wiki/Licensing/Open_Market_License
 
 === Text
@@ -128,7 +128,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Market License",
-            "spdxDetailsURL": "http://spdx.org/licenses/OML.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/OML.json",
             "_sourceURL": "https://spdx.org/licenses/OML.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -144,7 +144,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/OML.json"
+                        "https://spdx.org/licenses/OML.json"
                     ],
                     [
                         null,
@@ -301,7 +301,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/OML.json"
+            "https://spdx.org/licenses/OML.json"
         ],
         [
             null,

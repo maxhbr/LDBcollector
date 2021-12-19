@@ -52,7 +52,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing/SNIA_Public_License
-* *SPDX:* http://spdx.org/licenses/SNIA.json
+* *SPDX:* https://spdx.org/licenses/SNIA.json
 
 === Text
 
@@ -232,7 +232,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SNIA Public License 1.1",
-            "spdxDetailsURL": "http://spdx.org/licenses/SNIA.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SNIA.json",
             "_sourceURL": "https://spdx.org/licenses/SNIA.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -248,7 +248,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SNIA.json"
+                        "https://spdx.org/licenses/SNIA.json"
                     ],
                     [
                         null,
@@ -354,7 +354,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/SNIA.json"
+            "https://spdx.org/licenses/SNIA.json"
         ],
         [
             null,

@@ -37,7 +37,7 @@
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/TOSL
 
--   **SPDX:** http://spdx.org/licenses/TOSL.json
+-   **SPDX:** https://spdx.org/licenses/TOSL.json
 
 ## Text
 
@@ -130,7 +130,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Trusster Open Source License",
-                "spdxDetailsURL": "http://spdx.org/licenses/TOSL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/TOSL.json",
                 "_sourceURL": "https://spdx.org/licenses/TOSL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -146,7 +146,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/TOSL.json"
+                            "https://spdx.org/licenses/TOSL.json"
                         ],
                         [
                             null,
@@ -252,7 +252,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/TOSL.json"
+                "https://spdx.org/licenses/TOSL.json"
             ],
             [
                 null,

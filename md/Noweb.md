@@ -20,7 +20,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:Noweb?rd=Licensing/Noweb
 
--   **SPDX:** http://spdx.org/licenses/Noweb.json
+-   **SPDX:** https://spdx.org/licenses/Noweb.json
 
 -   https://fedoraproject.org/wiki/Licensing/Noweb
 
@@ -92,7 +92,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Noweb License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Noweb.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Noweb.json",
                 "_sourceURL": "https://spdx.org/licenses/Noweb.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -108,7 +108,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Noweb.json"
+                            "https://spdx.org/licenses/Noweb.json"
                         ],
                         [
                             null,
@@ -212,7 +212,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Noweb.json"
+                "https://spdx.org/licenses/Noweb.json"
             ],
             [
                 null,

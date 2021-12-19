@@ -30,7 +30,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Wsuipa.html
 
--   **SPDX:** http://spdx.org/licenses/Wsuipa.json
+-   **SPDX:** https://spdx.org/licenses/Wsuipa.json
 
 ## Text
 
@@ -101,7 +101,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Wsuipa License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Wsuipa.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Wsuipa.json",
                 "_sourceURL": "https://spdx.org/licenses/Wsuipa.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -117,7 +117,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Wsuipa.json"
+                            "https://spdx.org/licenses/Wsuipa.json"
                         ],
                         [
                             null,
@@ -274,7 +274,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Wsuipa.json"
+                "https://spdx.org/licenses/Wsuipa.json"
             ],
             [
                 null,

@@ -41,7 +41,7 @@ build with the licensed software, when you give copies to others.''
 === URLs
 
 * *Homepage:* http://ec.europa.eu/idabc/en/document/7330.html
-* *SPDX:* http://spdx.org/licenses/EUPL-1.0.json
+* *SPDX:* https://spdx.org/licenses/EUPL-1.0.json
 * https://spdx.org/licenses/EUPL-1.0.html
 * http://ec.europa.eu/idabc/servlets/Doc027f.pdf?id=31096
 
@@ -259,7 +259,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "European Union Public License 1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/EUPL-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/EUPL-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/EUPL-1.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -276,7 +276,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/EUPL-1.0.json"
+                        "https://spdx.org/licenses/EUPL-1.0.json"
                     ],
                     [
                         null,
@@ -442,7 +442,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/EUPL-1.0.json"
+            "https://spdx.org/licenses/EUPL-1.0.json"
         ],
         [
             null,

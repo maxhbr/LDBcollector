@@ -37,7 +37,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/MITNFA
 * *SPDX:* https://spdx.org/licenses/MITNFA.html
-* *SPDX:* http://spdx.org/licenses/MITNFA.json
+* *SPDX:* https://spdx.org/licenses/MITNFA.json
 * *open-license:* http://open-license.hitachi.com/licenses/698
 
 === Description from open-license
@@ -187,7 +187,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "MIT +no-false-attribs license",
-            "spdxDetailsURL": "http://spdx.org/licenses/MITNFA.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MITNFA.json",
             "_sourceURL": "https://spdx.org/licenses/MITNFA.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -203,7 +203,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MITNFA.json"
+                        "https://spdx.org/licenses/MITNFA.json"
                     ],
                     [
                         null,
@@ -504,7 +504,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/MITNFA.json"
+            "https://spdx.org/licenses/MITNFA.json"
         ],
         [
             null,

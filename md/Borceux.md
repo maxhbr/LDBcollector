@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Borceux.html
 
--   **SPDX:** http://spdx.org/licenses/Borceux.json
+-   **SPDX:** https://spdx.org/licenses/Borceux.json
 
 ## Text
 
@@ -99,7 +99,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Borceux license",
-                "spdxDetailsURL": "http://spdx.org/licenses/Borceux.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Borceux.json",
                 "_sourceURL": "https://spdx.org/licenses/Borceux.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -115,7 +115,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Borceux.json"
+                            "https://spdx.org/licenses/Borceux.json"
                         ],
                         [
                             null,
@@ -264,7 +264,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Borceux.json"
+                "https://spdx.org/licenses/Borceux.json"
             ],
             [
                 null,

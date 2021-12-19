@@ -60,7 +60,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/WTFPL.html
 
--   **SPDX:** http://spdx.org/licenses/WTFPL.json
+-   **SPDX:** https://spdx.org/licenses/WTFPL.json
 
 -   http://www.wtfpl.net/about/
 
@@ -173,7 +173,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Do What The F*ck You Want To Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/WTFPL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/WTFPL.json",
                 "_sourceURL": "https://spdx.org/licenses/WTFPL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -190,7 +190,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/WTFPL.json"
+                            "https://spdx.org/licenses/WTFPL.json"
                         ],
                         [
                             null,
@@ -591,7 +591,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/WTFPL.json"
+                "https://spdx.org/licenses/WTFPL.json"
             ],
             [
                 null,

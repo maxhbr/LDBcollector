@@ -21,6 +21,10 @@
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
 
+- *↑*"Is OSI Approved" (source:
+  [[https://spdx.org/licenses/ZPL-2.1.html][SPDX]] (all data [in this
+  repository] is generated))
+
 - *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
@@ -42,7 +46,7 @@
 
 - *SPDX:* https://spdx.org/licenses/ZPL-2.1.html
 
-- *SPDX:* http://spdx.org/licenses/ZPL-2.1.json
+- *SPDX:* https://spdx.org/licenses/ZPL-2.1.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/866
 
@@ -231,9 +235,9 @@
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Zope Public License 2.1",
-              "spdxDetailsURL": "http://spdx.org/licenses/ZPL-2.1.json",
+              "spdxDetailsURL": "https://spdx.org/licenses/ZPL-2.1.json",
               "_sourceURL": "https://spdx.org/licenses/ZPL-2.1.html",
-              "spdxLicIsOSIApproved": false,
+              "spdxLicIsOSIApproved": true,
               "spdxSeeAlso": [
                   "http://old.zope.org/Resources/ZPL/"
               ],
@@ -243,11 +247,20 @@
                       "Zope Public License 2.1"
                   ],
                   "__impliedId": "ZPL-2.1",
-                  "__isOsiApproved": false,
+                  "__impliedJudgement": [
+                      [
+                          "SPDX",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "Is OSI Approved"
+                          }
+                      ]
+                  ],
+                  "__isOsiApproved": true,
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/ZPL-2.1.json"
+                          "https://spdx.org/licenses/ZPL-2.1.json"
                       ],
                       [
                           null,
@@ -579,6 +592,13 @@
                   "tag": "PositiveJudgement",
                   "contents": "Google Classification is NOTICE"
               }
+          ],
+          [
+              "SPDX",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "Is OSI Approved"
+              }
           ]
       ],
       "__impliedCopyleft": [
@@ -604,7 +624,7 @@
           ]
       ],
       "__calculatedCopyleft": "NoCopyleft",
-      "__isOsiApproved": false,
+      "__isOsiApproved": true,
       "__impliedText": "This license has been certified as open source. It has also been designated as\nGPL compatible by the Free Software Foundation (FSF).\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1. Redistributions in source code must retain the accompanying copyright\n   notice, this list of conditions, and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the accompanying copyright\n   notice, this list of conditions, and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n\n   3. Names of the copyright holders must not be used to endorse or promote\n   products derived from this software without prior written permission from the\n   copyright holders.\n\n   4. The right to distribute this software or to use it for any purpose does\n   not give you the right to use Servicemarks (sm) or Trademarks (tm) of the\n   copyright holders. Use of them is covered by separate agreement with the\n   copyright holders.\n\n   5. If any files are modified, you must cause the modified files to carry\n   prominent notices stating that you changed the files and the date of any\n   change.\n\nDisclaimer\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\nIN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY\nOF SUCH DAMAGE.",
       "__impliedURLs": [
           [
@@ -617,7 +637,7 @@
           ],
           [
               "SPDX",
-              "http://spdx.org/licenses/ZPL-2.1.json"
+              "https://spdx.org/licenses/ZPL-2.1.json"
           ],
           [
               null,

@@ -34,9 +34,9 @@
 
 -   **SPDX:** https://spdx.org/licenses/X11.html
 
--   **SPDX:** http://spdx.org/licenses/ICU.json
+-   **SPDX:** https://spdx.org/licenses/ICU.json
 
--   **SPDX:** http://spdx.org/licenses/X11.json
+-   **SPDX:** https://spdx.org/licenses/X11.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/297
 
@@ -199,7 +199,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "ICU License",
-                "spdxDetailsURL": "http://spdx.org/licenses/ICU.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/ICU.json",
                 "_sourceURL": "https://spdx.org/licenses/ICU.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -215,7 +215,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/ICU.json"
+                            "https://spdx.org/licenses/ICU.json"
                         ],
                         [
                             null,
@@ -502,7 +502,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/ICU.json"
+                "https://spdx.org/licenses/ICU.json"
             ],
             [
                 null,
@@ -510,7 +510,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/X11.json"
+                "https://spdx.org/licenses/X11.json"
             ],
             [
                 null,

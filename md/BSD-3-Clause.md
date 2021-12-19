@@ -28,8 +28,9 @@
 
 > A permissive license similar to the &lt;a
 > href="/licenses/bsd-2-clause/">BSD 2-Clause License&lt;/a>, but with a
-> 3rd clause that prohibits others from using the name of the project or
-> its contributors to promote derived products without written consent.
+> 3rd clause that prohibits others from using the name of the copyright
+> holder or its contributors to promote derived products without written
+> consent.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
@@ -94,7 +95,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-3-Clause.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-3-Clause.json
+-   **SPDX:** https://spdx.org/licenses/BSD-3-Clause.json
 
 -   **Wikipedia Page:**
     https://en.wikipedia.org/wiki/BSD\_licenses#3-clause
@@ -324,7 +325,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 3-Clause \"New\" or \"Revised\" License",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-3-Clause.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-3-Clause.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-3-Clause.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -349,7 +350,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-3-Clause.json"
+                            "https://spdx.org/licenses/BSD-3-Clause.json"
                         ],
                         [
                             null,
@@ -775,7 +776,7 @@
                     "warranty"
                 ],
                 "_sourceURL": "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt",
-                "content": "---\ntitle: BSD 3-Clause \"New\" or \"Revised\" License\nspdx-id: BSD-3-Clause\nhidden: false\n\ndescription: A permissive license similar to the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  d3: https://github.com/d3/d3/blob/master/LICENSE\n  LevelDB: https://github.com/google/leveldb/blob/master/LICENSE\n  Quill: https://github.com/quilljs/quill/blob/develop/LICENSE\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nBSD 3-Clause License\n\nCopyright (c) [year], [fullname]\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "content": "---\ntitle: BSD 3-Clause \"New\" or \"Revised\" License\nspdx-id: BSD-3-Clause\nhidden: false\n\ndescription: A permissive license similar to the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  Flutter: https://github.com/flutter/flutter/blob/master/LICENSE\n  LevelDB: https://github.com/google/leveldb/blob/master/LICENSE\n  Quill: https://github.com/quilljs/quill/blob/develop/LICENSE\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nBSD 3-Clause License\n\nCopyright (c) [year], [fullname]\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
                 "name": "bsd-3-clause",
                 "hidden": "false",
                 "spdxId": "BSD-3-Clause",
@@ -834,7 +835,7 @@
                         ]
                     }
                 },
-                "description": "A permissive license similar to the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent."
+                "description": "A permissive license similar to the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent."
             },
             "finos/OSLC-handbook": {
                 "terms": [
@@ -1026,7 +1027,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-3-Clause.json"
+                "https://spdx.org/licenses/BSD-3-Clause.json"
             ],
             [
                 "Homepage",

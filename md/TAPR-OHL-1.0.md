@@ -14,7 +14,7 @@
 
 -   **Homepage:** https://www.tapr.org/OHL
 
--   **SPDX:** http://spdx.org/licenses/TAPR-OHL-1.0.json
+-   **SPDX:** https://spdx.org/licenses/TAPR-OHL-1.0.json
 
 ## Text
 
@@ -191,7 +191,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TAPR Open Hardware License v1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/TAPR-OHL-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/TAPR-OHL-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/TAPR-OHL-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -207,7 +207,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/TAPR-OHL-1.0.json"
+                            "https://spdx.org/licenses/TAPR-OHL-1.0.json"
                         ],
                         [
                             null,
@@ -273,7 +273,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/TAPR-OHL-1.0.json"
+                "https://spdx.org/licenses/TAPR-OHL-1.0.json"
             ],
             [
                 null,

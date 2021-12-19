@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/ADSL.html
 
--   **SPDX:** http://spdx.org/licenses/ADSL.json
+-   **SPDX:** https://spdx.org/licenses/ADSL.json
 
 ## Text
 
@@ -89,7 +89,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Amazon Digital Services License",
-                "spdxDetailsURL": "http://spdx.org/licenses/ADSL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/ADSL.json",
                 "_sourceURL": "https://spdx.org/licenses/ADSL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -105,7 +105,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/ADSL.json"
+                            "https://spdx.org/licenses/ADSL.json"
                         ],
                         [
                             null,
@@ -254,7 +254,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/ADSL.json"
+                "https://spdx.org/licenses/ADSL.json"
             ],
             [
                 null,

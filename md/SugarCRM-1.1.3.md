@@ -16,7 +16,7 @@
 
 -   **Homepage:** http://www.sugarcrm.com/crm/SPL
 
--   **SPDX:** http://spdx.org/licenses/SugarCRM-1.1.3.json
+-   **SPDX:** https://spdx.org/licenses/SugarCRM-1.1.3.json
 
 -   http://www.sugarcrm.com/page/sugarcrm-public-license/en
 
@@ -220,7 +220,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SugarCRM Public License v1.1.3",
-                "spdxDetailsURL": "http://spdx.org/licenses/SugarCRM-1.1.3.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SugarCRM-1.1.3.json",
                 "_sourceURL": "https://spdx.org/licenses/SugarCRM-1.1.3.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -236,7 +236,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SugarCRM-1.1.3.json"
+                            "https://spdx.org/licenses/SugarCRM-1.1.3.json"
                         ],
                         [
                             null,
@@ -322,7 +322,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/SugarCRM-1.1.3.json"
+                "https://spdx.org/licenses/SugarCRM-1.1.3.json"
             ],
             [
                 null,

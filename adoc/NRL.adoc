@@ -29,7 +29,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* http://web.mit.edu/network/isakmp/nrllicense.html
 * *SPDX:* https://spdx.org/licenses/NRL.html
-* *SPDX:* http://spdx.org/licenses/NRL.json
+* *SPDX:* https://spdx.org/licenses/NRL.json
 
 === Text
 
@@ -108,7 +108,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NRL License",
-            "spdxDetailsURL": "http://spdx.org/licenses/NRL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/NRL.json",
             "_sourceURL": "https://spdx.org/licenses/NRL.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -124,7 +124,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/NRL.json"
+                        "https://spdx.org/licenses/NRL.json"
                     ],
                     [
                         null,
@@ -273,7 +273,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/NRL.json"
+            "https://spdx.org/licenses/NRL.json"
         ],
         [
             null,

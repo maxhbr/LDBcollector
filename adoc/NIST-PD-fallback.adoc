@@ -22,7 +22,7 @@
 
 * *Homepage:*
 https://github.com/usnistgov/jsip/blob/59700e6926cbe96c5cdae897d9a7d2656b42abe3/LICENSE
-* *SPDX:* http://spdx.org/licenses/NIST-PD-fallback.json
+* *SPDX:* https://spdx.org/licenses/NIST-PD-fallback.json
 * https://github.com/usnistgov/fipy/blob/86aaa5c2ba2c6f1be19593c5986071cf6568cc34/LICENSE.rst
 
 === Text
@@ -90,7 +90,7 @@ this repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NIST Public Domain Notice with license fallback",
-            "spdxDetailsURL": "http://spdx.org/licenses/NIST-PD-fallback.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/NIST-PD-fallback.json",
             "_sourceURL": "https://spdx.org/licenses/NIST-PD-fallback.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -107,7 +107,7 @@ this repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/NIST-PD-fallback.json"
+                        "https://spdx.org/licenses/NIST-PD-fallback.json"
                     ],
                     [
                         null,
@@ -171,7 +171,7 @@ this repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/NIST-PD-fallback.json"
+            "https://spdx.org/licenses/NIST-PD-fallback.json"
         ],
         [
             null,

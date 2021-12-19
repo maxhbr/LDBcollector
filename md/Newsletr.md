@@ -31,15 +31,20 @@
 
 -   **SPDX:** https://spdx.org/licenses/Newsletr.html
 
--   **SPDX:** http://spdx.org/licenses/Newsletr.json
+-   **SPDX:** https://spdx.org/licenses/Newsletr.json
 
 ## Text
 
-    Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:
+    Permission is granted to anyone to use this software for any purpose
+    on any computer system, and to redistribute it freely, subject to the
+    following restrictions:
 
-    1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    1. This software is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-    2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.
+    2. Altered versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
 
 ------------------------------------------------------------------------
 
@@ -98,7 +103,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Newsletr License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Newsletr.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Newsletr.json",
                 "_sourceURL": "https://spdx.org/licenses/Newsletr.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -114,7 +119,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Newsletr.json"
+                            "https://spdx.org/licenses/Newsletr.json"
                         ],
                         [
                             null,
@@ -158,7 +163,7 @@
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Newsletr",
                 "shortName": "Newsletr License",
                 "textUrls": null,
-                "text": "Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:\n\n1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.",
+                "text": "Permission is granted to anyone to use this software for any purpose\non any computer system, and to redistribute it freely, subject to the\nfollowing restrictions:\n\n1. This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Hunter Goatley",
@@ -189,7 +194,7 @@
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:\n\n1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.",
+                    "__impliedText": "Permission is granted to anyone to use this software for any purpose\non any computer system, and to redistribute it freely, subject to the\nfollowing restrictions:\n\n1. This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -263,7 +268,7 @@
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:\n\n1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.",
+        "__impliedText": "Permission is granted to anyone to use this software for any purpose\non any computer system, and to redistribute it freely, subject to the\nfollowing restrictions:\n\n1. This software is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -271,7 +276,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Newsletr.json"
+                "https://spdx.org/licenses/Newsletr.json"
             ],
             [
                 null,

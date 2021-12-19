@@ -30,7 +30,7 @@ Project Wiki]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD
 * *SPDX:* https://spdx.org/licenses/AMPAS.html
-* *SPDX:* http://spdx.org/licenses/AMPAS.json
+* *SPDX:* https://spdx.org/licenses/AMPAS.json
 
 === Text
 
@@ -94,7 +94,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Academy of Motion Picture Arts and Sciences BSD",
-            "spdxDetailsURL": "http://spdx.org/licenses/AMPAS.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/AMPAS.json",
             "_sourceURL": "https://spdx.org/licenses/AMPAS.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -110,7 +110,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/AMPAS.json"
+                        "https://spdx.org/licenses/AMPAS.json"
                     ],
                     [
                         null,
@@ -259,7 +259,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/AMPAS.json"
+            "https://spdx.org/licenses/AMPAS.json"
         ],
         [
             null,

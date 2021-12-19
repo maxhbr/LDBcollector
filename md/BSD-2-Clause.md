@@ -80,7 +80,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-2-Clause.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-2-Clause.json
+-   **SPDX:** https://spdx.org/licenses/BSD-2-Clause.json
 
 -   **Wikipedia Page:**
     https://en.wikipedia.org/wiki/BSD\_licenses#2-clause
@@ -293,7 +293,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 2-Clause \"Simplified\" License",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-2-Clause.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-2-Clause.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-2-Clause.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -318,7 +318,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-2-Clause.json"
+                            "https://spdx.org/licenses/BSD-2-Clause.json"
                         ],
                         [
                             null,
@@ -911,7 +911,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-2-Clause.json"
+                "https://spdx.org/licenses/BSD-2-Clause.json"
             ],
             [
                 "Homepage",

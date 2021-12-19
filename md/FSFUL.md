@@ -15,13 +15,19 @@
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
 ## General Comments
 
 ## URLs
 
 -   **Homepage:** http://www.fsf.org/licensing/licenses/
 
--   **SPDX:** http://spdx.org/licenses/FSFUL.json
+-   **SPDX:** https://spdx.org/licenses/FSFUL.html
+
+-   **SPDX:** https://spdx.org/licenses/FSFUL.json
 
 -   https://fedoraproject.org/wiki/Licensing/FSF\_Unlimited\_License
 
@@ -37,6 +43,10 @@
 ### Facts
 
 -   LicenseName
+
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -76,7 +86,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "FSF Unlimited License",
-                "spdxDetailsURL": "http://spdx.org/licenses/FSFUL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/FSFUL.json",
                 "_sourceURL": "https://spdx.org/licenses/FSFUL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -92,7 +102,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/FSFUL.json"
+                            "https://spdx.org/licenses/FSFUL.json"
                         ],
                         [
                             null,
@@ -167,9 +177,52 @@
                         ]
                     ]
                 }
+            },
+            "BlueOak License List": {
+                "BlueOakRating": "Lead",
+                "url": "https://spdx.org/licenses/FSFUL.html",
+                "isPermissive": true,
+                "_sourceURL": "https://blueoakcouncil.org/list",
+                "name": "FSF Unlimited License",
+                "id": "FSFUL",
+                "_implications": {
+                    "__impliedNames": [
+                        "FSFUL",
+                        "FSF Unlimited License"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "BlueOak License List",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "Rating is: Lead"
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedURLs": [
+                        [
+                            "SPDX",
+                            "https://spdx.org/licenses/FSFUL.html"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
+            [
+                "BlueOak License List",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "Rating is: Lead"
+                }
+            ],
             [
                 "Fedora Project Wiki",
                 {
@@ -179,6 +232,10 @@
             ]
         ],
         "__impliedCopyleft": [
+            [
+                "BlueOak License List",
+                "NoCopyleft"
+            ],
             [
                 "Scancode",
                 "NoCopyleft"
@@ -190,7 +247,11 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/FSFUL.json"
+                "https://spdx.org/licenses/FSFUL.html"
+            ],
+            [
+                "SPDX",
+                "https://spdx.org/licenses/FSFUL.json"
             ],
             [
                 null,

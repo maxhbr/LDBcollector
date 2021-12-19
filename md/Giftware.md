@@ -33,7 +33,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Giftware.html
 
--   **SPDX:** http://spdx.org/licenses/Giftware.json
+-   **SPDX:** https://spdx.org/licenses/Giftware.json
 
 -   http://liballeg.org/license.html#allegro-4-the-giftware-license
 
@@ -107,7 +107,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Giftware License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Giftware.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Giftware.json",
                 "_sourceURL": "https://spdx.org/licenses/Giftware.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -123,7 +123,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Giftware.json"
+                            "https://spdx.org/licenses/Giftware.json"
                         ],
                         [
                             null,
@@ -286,7 +286,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Giftware.json"
+                "https://spdx.org/licenses/Giftware.json"
             ],
             [
                 null,

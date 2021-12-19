@@ -15,11 +15,11 @@
 -   **Homepage:**
     http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/
 
--   **SPDX:** http://spdx.org/licenses/NCGL-UK-2.0.json
-
--   https://github.com/spdx/license-list-XML/blob/master/src/Apache-2.0.xml
+-   **SPDX:** https://spdx.org/licenses/NCGL-UK-2.0.json
 
 -   http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence-cymraeg/version/2/
+
+-   https://github.com/spdx/license-list-XML/blob/master/src/Apache-2.0.xml
 
 ## Text
 
@@ -135,11 +135,11 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Non-Commercial Government Licence",
-                "spdxDetailsURL": "http://spdx.org/licenses/NCGL-UK-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NCGL-UK-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/NCGL-UK-2.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "https://github.com/spdx/license-list-XML/blob/master/src/Apache-2.0.xml"
+                    "http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -151,11 +151,11 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NCGL-UK-2.0.json"
+                            "https://spdx.org/licenses/NCGL-UK-2.0.json"
                         ],
                         [
                             null,
-                            "https://github.com/spdx/license-list-XML/blob/master/src/Apache-2.0.xml"
+                            "http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/"
                         ]
                     ]
                 },
@@ -208,11 +208,11 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/NCGL-UK-2.0.json"
+                "https://spdx.org/licenses/NCGL-UK-2.0.json"
             ],
             [
                 null,
-                "https://github.com/spdx/license-list-XML/blob/master/src/Apache-2.0.xml"
+                "http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/"
             ],
             [
                 "Homepage",
@@ -221,6 +221,10 @@
             [
                 null,
                 "http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence-cymraeg/version/2/"
+            ],
+            [
+                null,
+                "https://github.com/spdx/license-list-XML/blob/master/src/Apache-2.0.xml"
             ]
         ]
     }

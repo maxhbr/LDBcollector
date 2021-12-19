@@ -31,7 +31,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/dvipdfm
-* *SPDX:* http://spdx.org/licenses/dvipdfm.json
+* *SPDX:* https://spdx.org/licenses/dvipdfm.json
 
 === Text
 
@@ -92,7 +92,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "dvipdfm License",
-            "spdxDetailsURL": "http://spdx.org/licenses/dvipdfm.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/dvipdfm.json",
             "_sourceURL": "https://spdx.org/licenses/dvipdfm.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -108,7 +108,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/dvipdfm.json"
+                        "https://spdx.org/licenses/dvipdfm.json"
                     ],
                     [
                         null,
@@ -214,7 +214,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/dvipdfm.json"
+            "https://spdx.org/licenses/dvipdfm.json"
         ],
         [
             null,

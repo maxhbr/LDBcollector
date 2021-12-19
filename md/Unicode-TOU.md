@@ -21,7 +21,7 @@
 
 -   **Homepage:** http://www.unicode.org/copyright.html
 
--   **SPDX:** http://spdx.org/licenses/Unicode-TOU.json
+-   **SPDX:** https://spdx.org/licenses/Unicode-TOU.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/313
 
@@ -208,7 +208,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Unicode Terms of Use",
-                "spdxDetailsURL": "http://spdx.org/licenses/Unicode-TOU.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Unicode-TOU.json",
                 "_sourceURL": "https://spdx.org/licenses/Unicode-TOU.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -224,7 +224,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Unicode-TOU.json"
+                            "https://spdx.org/licenses/Unicode-TOU.json"
                         ],
                         [
                             null,
@@ -302,7 +302,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Unicode-TOU.json"
+                "https://spdx.org/licenses/Unicode-TOU.json"
             ],
             [
                 null,

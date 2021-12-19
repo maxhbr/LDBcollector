@@ -1,4 +1,4 @@
-# Norwegian Licence for Open Government Data (NLOD-1.0)
+# Norwegian Licence for Open Government Data (NLOD) 1.0 (NLOD-1.0)
 
 [TABLE]
 
@@ -14,7 +14,7 @@
 
 -   **Homepage:** http://data.norge.no/nlod/en/1.0
 
--   **SPDX:** http://spdx.org/licenses/NLOD-1.0.json
+-   **SPDX:** https://spdx.org/licenses/NLOD-1.0.json
 
 -   http://data.norge.no/nlod/no/1.0
 
@@ -118,7 +118,7 @@
     {
         "__impliedNames": [
             "NLOD-1.0",
-            "Norwegian Licence for Open Government Data",
+            "Norwegian Licence for Open Government Data (NLOD) 1.0",
             "scancode://nlod-1.0"
         ],
         "__impliedId": "NLOD-1.0",
@@ -135,8 +135,8 @@
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
-                "spdxFullName": "Norwegian Licence for Open Government Data",
-                "spdxDetailsURL": "http://spdx.org/licenses/NLOD-1.0.json",
+                "spdxFullName": "Norwegian Licence for Open Government Data (NLOD) 1.0",
+                "spdxDetailsURL": "https://spdx.org/licenses/NLOD-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/NLOD-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -145,14 +145,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "NLOD-1.0",
-                        "Norwegian Licence for Open Government Data"
+                        "Norwegian Licence for Open Government Data (NLOD) 1.0"
                     ],
                     "__impliedId": "NLOD-1.0",
                     "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NLOD-1.0.json"
+                            "https://spdx.org/licenses/NLOD-1.0.json"
                         ],
                         [
                             null,
@@ -218,7 +218,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/NLOD-1.0.json"
+                "https://spdx.org/licenses/NLOD-1.0.json"
             ],
             [
                 null,

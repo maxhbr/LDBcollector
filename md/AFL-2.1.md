@@ -53,7 +53,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/AFL-2.1.html
 
--   **SPDX:** http://spdx.org/licenses/AFL-2.1.json
+-   **SPDX:** https://spdx.org/licenses/AFL-2.1.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/588
 
@@ -124,36 +124,29 @@
 
 ## OSADL Rule
 
-    USE CASE Source code delivery
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Reference License text
+    	YOU MUST Search License acceptance
+    		ATTRIBUTE Reasonable
     	IF Software modification
     		YOU MUST Forward Copyright notices
     		YOU MUST Forward Patent notice
     		YOU MUST Forward Trademark notice
     		YOU MUST Forward License notice
-    		YOU MUST Provide Copyright notices
     		YOU MUST Provide Modification notice
-    		YOU MUST Forward Warranty disclaimer
     		YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	EITHER
-    		YOU MUST Include Original source code
-    			ATTRIBUTE Machine-readable
-    		IF Software modification
-    			YOU MUST Forward Copyright notices
-    			YOU MUST Forward Patent notice
-    			YOU MUST Forward Trademark notice
-    			YOU MUST Forward License notice
-    			YOU MUST Provide Copyright notices
-    			YOU MUST Provide Modification notice
-    			YOU MUST Forward Warranty disclaimer
-    			YOU MUST NOT Promote
-    	OR
-    		YOU MUST Provide Delayed source code delivery
-    		YOU MUST Reference Source code
-    			ATTRIBUTE Machine-readable
-    			ATTRIBUTE Via Internet
-    			ATTRIBUTE No profit
-    			ATTRIBUTE Duration As long as distributed
+    		IF Modified work Under Original license
+    			EITHER
+    				YOU MUST Include Source code Of Modified work
+    					ATTRIBUTE Machine-readable
+    			OR
+    				YOU MUST Provide Delayed source code delivery Of Modified work
+    					ATTRIBUTE Machine-readable
+    					ATTRIBUTE Via Internet
+    					ATTRIBUTE No profit
+    					ATTRIBUTE Duration As long as distributed
+    				YOU MUST Reference Source code
+    					ATTRIBUTE Below Copyright notice
     PATENT HINTS Yes
 
 (source: OSADL License Checklist)
@@ -287,7 +280,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Academic Free License v2.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/AFL-2.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/AFL-2.1.json",
                 "_sourceURL": "https://spdx.org/licenses/AFL-2.1.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -312,7 +305,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/AFL-2.1.json"
+                            "https://spdx.org/licenses/AFL-2.1.json"
                         ],
                         [
                             null,
@@ -341,7 +334,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.1.txt",
                 "spdxId": "AFL-2.1",
-                "osadlRule": "USE CASE Source code delivery\r\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notice\n\t\tYOU MUST Forward Trademark notice\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Copyright notices\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Forward Warranty disclaimer\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\r\n\tEITHER\r\n\t\tYOU MUST Include Original source code\n\t\t\tATTRIBUTE Machine-readable\n\t\tIF Software modification\n\t\t\tYOU MUST Forward Copyright notices\n\t\t\tYOU MUST Forward Patent notice\n\t\t\tYOU MUST Forward Trademark notice\n\t\t\tYOU MUST Forward License notice\n\t\t\tYOU MUST Provide Copyright notices\n\t\t\tYOU MUST Provide Modification notice\n\t\t\tYOU MUST Forward Warranty disclaimer\n\t\t\tYOU MUST NOT Promote\n\tOR\r\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE No profit\n\t\t\tATTRIBUTE Duration As long as distributed\nPATENT HINTS Yes\n",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Reference License text\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notice\n\t\tYOU MUST Forward Trademark notice\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST NOT Promote\n\t\tIF Modified work Under Original license\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Source code Of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tOR\n\t\t\t\tYOU MUST Provide Delayed source code delivery Of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tATTRIBUTE Duration As long as distributed\n\t\t\t\tYOU MUST Reference Source code\n\t\t\t\t\tATTRIBUTE Below Copyright notice\nPATENT HINTS Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "AFL-2.1"
@@ -765,7 +758,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/AFL-2.1.json"
+                "https://spdx.org/licenses/AFL-2.1.json"
             ],
             [
                 null,

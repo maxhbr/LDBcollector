@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Net-SNMP.html
 
--   **SPDX:** http://spdx.org/licenses/Net-SNMP.json
+-   **SPDX:** https://spdx.org/licenses/Net-SNMP.json
 
 ## Text
 
@@ -324,7 +324,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Net-SNMP License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Net-SNMP.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Net-SNMP.json",
                 "_sourceURL": "https://spdx.org/licenses/Net-SNMP.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -340,7 +340,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Net-SNMP.json"
+                            "https://spdx.org/licenses/Net-SNMP.json"
                         ],
                         [
                             null,
@@ -461,7 +461,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Net-SNMP.json"
+                "https://spdx.org/licenses/Net-SNMP.json"
             ],
             [
                 null,

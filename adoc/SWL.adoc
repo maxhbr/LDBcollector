@@ -38,7 +38,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.scheme.com/download/swl-lic.html
 * *SPDX:* https://spdx.org/licenses/SWL.html
-* *SPDX:* http://spdx.org/licenses/SWL.json
+* *SPDX:* https://spdx.org/licenses/SWL.json
 * https://fedoraproject.org/wiki/Licensing/SWL
 * https://puredata.info/about/pdlicense
 
@@ -108,7 +108,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Scheme Widget Library (SWL) Software License Agreement",
-            "spdxDetailsURL": "http://spdx.org/licenses/SWL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SWL.json",
             "_sourceURL": "https://spdx.org/licenses/SWL.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -124,7 +124,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SWL.json"
+                        "https://spdx.org/licenses/SWL.json"
                     ],
                     [
                         null,
@@ -287,7 +287,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/SWL.json"
+            "https://spdx.org/licenses/SWL.json"
         ],
         [
             null,

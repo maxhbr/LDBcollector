@@ -62,7 +62,7 @@
 
 -   **OSI Page:** http://opensource.org/licenses/sunpublic.php
 
--   **SPDX:** http://spdx.org/licenses/SPL-1.0.json
+-   **SPDX:** https://spdx.org/licenses/SPL-1.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/414
 
@@ -817,7 +817,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sun Public License v1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/SPL-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SPL-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/SPL-1.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -842,7 +842,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SPL-1.0.json"
+                            "https://spdx.org/licenses/SPL-1.0.json"
                         ],
                         [
                             null,
@@ -1503,7 +1503,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/SPL-1.0.json"
+                "https://spdx.org/licenses/SPL-1.0.json"
             ],
             [
                 "Homepage",

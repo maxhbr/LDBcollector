@@ -40,7 +40,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/OGTSL.html
 
--   **SPDX:** http://spdx.org/licenses/OGTSL.json
+-   **SPDX:** https://spdx.org/licenses/OGTSL.json
 
 -   http://www.opengroup.org/testing/downloads/The\_Open\_Group\_TSL.txt
 
@@ -194,7 +194,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Group Test Suite License",
-                "spdxDetailsURL": "http://spdx.org/licenses/OGTSL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OGTSL.json",
                 "_sourceURL": "https://spdx.org/licenses/OGTSL.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -220,7 +220,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OGTSL.json"
+                            "https://spdx.org/licenses/OGTSL.json"
                         ],
                         [
                             null,
@@ -472,7 +472,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OGTSL.json"
+                "https://spdx.org/licenses/OGTSL.json"
             ],
             [
                 null,

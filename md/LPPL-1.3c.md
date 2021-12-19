@@ -84,7 +84,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/LPPL-1.3c.html
 
--   **SPDX:** http://spdx.org/licenses/LPPL-1.3c.json
+-   **SPDX:** https://spdx.org/licenses/LPPL-1.3c.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/649
 
@@ -702,7 +702,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "LaTeX Project Public License v1.3c",
-                "spdxDetailsURL": "http://spdx.org/licenses/LPPL-1.3c.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/LPPL-1.3c.json",
                 "_sourceURL": "https://spdx.org/licenses/LPPL-1.3c.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -728,7 +728,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/LPPL-1.3c.json"
+                            "https://spdx.org/licenses/LPPL-1.3c.json"
                         ],
                         [
                             null,
@@ -1388,7 +1388,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/LPPL-1.3c.json"
+                "https://spdx.org/licenses/LPPL-1.3c.json"
             ],
             [
                 null,

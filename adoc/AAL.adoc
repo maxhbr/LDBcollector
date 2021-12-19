@@ -40,7 +40,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://opensource.org/licenses/attribution.php
 * *OSI Page:* https://opensource.org/licenses/AAL
 * *SPDX:* https://spdx.org/licenses/AAL.html
-* *SPDX:* http://spdx.org/licenses/AAL.json
+* *SPDX:* https://spdx.org/licenses/AAL.json
 * https://opensource.org/licenses/attribution
 * http://www.opensource.org/licenses/attribution
 
@@ -186,7 +186,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Attribution Assurance License",
-            "spdxDetailsURL": "http://spdx.org/licenses/AAL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/AAL.json",
             "_sourceURL": "https://spdx.org/licenses/AAL.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -211,7 +211,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/AAL.json"
+                        "https://spdx.org/licenses/AAL.json"
                     ],
                     [
                         null,
@@ -462,7 +462,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/AAL.json"
+            "https://spdx.org/licenses/AAL.json"
         ],
         [
             null,

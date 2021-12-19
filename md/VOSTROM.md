@@ -22,7 +22,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:VOSTROM?rd=Licensing/VOSTROM
 
--   **SPDX:** http://spdx.org/licenses/VOSTROM.json
+-   **SPDX:** https://spdx.org/licenses/VOSTROM.json
 
 -   https://fedoraproject.org/wiki/Licensing/VOSTROM
 
@@ -134,7 +134,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "VOSTROM Public License for Open Source",
-                "spdxDetailsURL": "http://spdx.org/licenses/VOSTROM.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/VOSTROM.json",
                 "_sourceURL": "https://spdx.org/licenses/VOSTROM.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -150,7 +150,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/VOSTROM.json"
+                            "https://spdx.org/licenses/VOSTROM.json"
                         ],
                         [
                             null,
@@ -254,7 +254,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/VOSTROM.json"
+                "https://spdx.org/licenses/VOSTROM.json"
             ],
             [
                 null,

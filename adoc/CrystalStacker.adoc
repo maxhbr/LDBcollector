@@ -31,7 +31,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker
 * *SPDX:* https://spdx.org/licenses/CrystalStacker.html
-* *SPDX:* http://spdx.org/licenses/CrystalStacker.json
+* *SPDX:* https://spdx.org/licenses/CrystalStacker.json
 
 === Text
 
@@ -91,7 +91,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CrystalStacker License",
-            "spdxDetailsURL": "http://spdx.org/licenses/CrystalStacker.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/CrystalStacker.json",
             "_sourceURL": "https://spdx.org/licenses/CrystalStacker.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -107,7 +107,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/CrystalStacker.json"
+                        "https://spdx.org/licenses/CrystalStacker.json"
                     ],
                     [
                         null,
@@ -256,7 +256,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/CrystalStacker.json"
+            "https://spdx.org/licenses/CrystalStacker.json"
         ],
         [
             null,

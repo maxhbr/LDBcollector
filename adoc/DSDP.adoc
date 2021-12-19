@@ -29,7 +29,7 @@ Project Wiki]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/DSDP
 * *SPDX:* https://spdx.org/licenses/DSDP.html
-* *SPDX:* http://spdx.org/licenses/DSDP.json
+* *SPDX:* https://spdx.org/licenses/DSDP.json
 
 === Text
 
@@ -130,7 +130,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "DSDP License",
-            "spdxDetailsURL": "http://spdx.org/licenses/DSDP.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/DSDP.json",
             "_sourceURL": "https://spdx.org/licenses/DSDP.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -146,7 +146,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/DSDP.json"
+                        "https://spdx.org/licenses/DSDP.json"
                     ],
                     [
                         null,
@@ -335,7 +335,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/DSDP.json"
+            "https://spdx.org/licenses/DSDP.json"
         ],
         [
             null,

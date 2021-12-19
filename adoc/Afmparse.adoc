@@ -29,7 +29,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Afmparse
 * *SPDX:* https://spdx.org/licenses/Afmparse.html
-* *SPDX:* http://spdx.org/licenses/Afmparse.json
+* *SPDX:* https://spdx.org/licenses/Afmparse.json
 
 === Text
 
@@ -99,7 +99,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Afmparse License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Afmparse.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Afmparse.json",
             "_sourceURL": "https://spdx.org/licenses/Afmparse.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -115,7 +115,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Afmparse.json"
+                        "https://spdx.org/licenses/Afmparse.json"
                     ],
                     [
                         null,
@@ -264,7 +264,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Afmparse.json"
+            "https://spdx.org/licenses/Afmparse.json"
         ],
         [
             null,

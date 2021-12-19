@@ -92,7 +92,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/MIT.html
 
--   **SPDX:** http://spdx.org/licenses/MIT.json
+-   **SPDX:** https://spdx.org/licenses/MIT.json
 
 -   **Wikipedia page:** https://en.wikipedia.org/wiki/MIT\_License
 
@@ -142,8 +142,8 @@
 ## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
+    	YOU MUST Forward OR Provide Copyright notices
+    	YOU MUST Forward OR Provide License text
 
 (source: OSADL License Checklist)
 
@@ -311,7 +311,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "MIT License",
-                "spdxDetailsURL": "http://spdx.org/licenses/MIT.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MIT.json",
                 "_sourceURL": "https://spdx.org/licenses/MIT.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -336,7 +336,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MIT.json"
+                            "https://spdx.org/licenses/MIT.json"
                         ],
                         [
                             null,
@@ -365,7 +365,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt",
                 "spdxId": "MIT",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward OR Provide Copyright notices\n\tYOU MUST Forward OR Provide License text\n",
                 "_implications": {
                     "__impliedNames": [
                         "MIT"
@@ -1112,7 +1112,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MIT.json"
+                "https://spdx.org/licenses/MIT.json"
             ],
             [
                 "Homepage",

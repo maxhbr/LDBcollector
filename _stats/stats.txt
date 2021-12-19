@@ -1,60 +1,60 @@
 ## Stats:
 ### Stats on Facts:
-Number of facts: 4428
-    BlueOak License List: 224
+Number of facts: 4676
+    BlueOak License List: 241
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 430
     Google OSS Policy: 112
-    HansHammel license-compatibility-checker: 161
+    HansHammel license-compatibility-checker: 165
     Hitachi open-license: 711
-    OSADL License Checklist: 70
+    OSADL License Checklist: 77
     Open Knowledge International: 111
     OpenChainPolicyTemplate: 92
     OpenSourceInitiative: 89
     Override: 50
-    SPDX: 414
-    Scancode: 1697
+    SPDX: 449
+    Scancode: 1880
     Wikipedia: 38
-    choosealicense.com: 39
+    choosealicense.com: 41
     finos/OSLC-handbook: 43
     librariesio license-compatibility: 65
-Number of clusters: 2591
+Number of clusters: 2768
 ### Stats on Licenses:
-Number of Licenses: 414
-Number of facts: 2704
-    BlueOak License List: 228
+Number of Licenses: 449
+Number of facts: 2843
+    BlueOak License List: 245
     Debian Free Software Guidelines: 82
-    Fedora Project Wiki: 164
+    Fedora Project Wiki: 166
     Google OSS Policy: 114
-    HansHammel license-compatibility-checker: 163
+    HansHammel license-compatibility-checker: 167
     Hitachi open-license: 126
-    LicenseName: 414
-    OSADL License Checklist: 78
+    LicenseName: 449
+    OSADL License Checklist: 85
     Open Knowledge International: 90
     OpenChainPolicyTemplate: 88
     OpenSourceInitiative: 87
     Override: 54
-    SPDX: 420
-    Scancode: 400
+    SPDX: 455
+    Scancode: 437
     Wikipedia: 37
-    choosealicense.com: 41
+    choosealicense.com: 43
     finos/OSLC-handbook: 47
     librariesio license-compatibility: 71
 #### based on facts from licenses
-Number of clusters: 426
+Number of clusters: 462
 #### based on licenses
-Number of clusters: 414
+Number of clusters: 449
 ### Stats on Gaps:
-Number of facts: 2213
+Number of facts: 2357
     BlueOak License List: 2
     Debian Free Software Guidelines: 5
-    Fedora Project Wiki: 270
+    Fedora Project Wiki: 268
     Google OSS Policy: 2
     HansHammel license-compatibility-checker: 4
     Hitachi open-license: 588
     Open Knowledge International: 23
     OpenChainPolicyTemplate: 6
     OpenSourceInitiative: 4
-    Scancode: 1303
+    Scancode: 1449
     Wikipedia: 3
     librariesio license-compatibility: 3

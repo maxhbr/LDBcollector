@@ -19,7 +19,7 @@
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Glulxe
 
--   **SPDX:** http://spdx.org/licenses/Glulxe.json
+-   **SPDX:** https://spdx.org/licenses/Glulxe.json
 
 ## Text
 
@@ -74,7 +74,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Glulxe License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Glulxe.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Glulxe.json",
                 "_sourceURL": "https://spdx.org/licenses/Glulxe.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -90,7 +90,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Glulxe.json"
+                            "https://spdx.org/licenses/Glulxe.json"
                         ],
                         [
                             null,
@@ -188,7 +188,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Glulxe.json"
+                "https://spdx.org/licenses/Glulxe.json"
             ],
             [
                 null,

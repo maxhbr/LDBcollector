@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/APAFML.html
 
--   **SPDX:** http://spdx.org/licenses/APAFML.json
+-   **SPDX:** https://spdx.org/licenses/APAFML.json
 
 ## Text
 
@@ -87,7 +87,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Adobe Postscript AFM License",
-                "spdxDetailsURL": "http://spdx.org/licenses/APAFML.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/APAFML.json",
                 "_sourceURL": "https://spdx.org/licenses/APAFML.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -103,7 +103,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/APAFML.json"
+                            "https://spdx.org/licenses/APAFML.json"
                         ],
                         [
                             null,
@@ -252,7 +252,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/APAFML.json"
+                "https://spdx.org/licenses/APAFML.json"
             ],
             [
                 null,

@@ -29,7 +29,7 @@ Project Wiki]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Bahyph
 * *SPDX:* https://spdx.org/licenses/Bahyph
-* *SPDX:* http://spdx.org/licenses/Bahyph.json
+* *SPDX:* https://spdx.org/licenses/Bahyph.json
 
 === Text
 
@@ -92,7 +92,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Bahyph License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Bahyph.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Bahyph.json",
             "_sourceURL": "https://spdx.org/licenses/Bahyph.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -108,7 +108,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Bahyph.json"
+                        "https://spdx.org/licenses/Bahyph.json"
                     ],
                     [
                         null,
@@ -257,7 +257,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Bahyph.json"
+            "https://spdx.org/licenses/Bahyph.json"
         ],
         [
             null,

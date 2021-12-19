@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-1-Clause.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-1-Clause.json
+-   **SPDX:** https://spdx.org/licenses/BSD-1-Clause.json
 
 ## Text
 
@@ -88,7 +88,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 1-Clause License",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-1-Clause.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-1-Clause.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-1-Clause.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -113,7 +113,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-1-Clause.json"
+                            "https://spdx.org/licenses/BSD-1-Clause.json"
                         ],
                         [
                             null,
@@ -233,7 +233,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-1-Clause.json"
+                "https://spdx.org/licenses/BSD-1-Clause.json"
             ],
             [
                 null,

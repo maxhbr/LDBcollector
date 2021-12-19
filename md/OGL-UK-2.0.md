@@ -17,7 +17,7 @@
 -   **Homepage:**
     https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/
 
--   **SPDX:** http://spdx.org/licenses/OGL-UK-2.0.json
+-   **SPDX:** https://spdx.org/licenses/OGL-UK-2.0.json
 
 -   http://www.nationalarchives.gov.uk/doc/open-government-licence/
 
@@ -169,7 +169,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Government Licence v2.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/OGL-UK-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OGL-UK-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/OGL-UK-2.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -185,7 +185,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OGL-UK-2.0.json"
+                            "https://spdx.org/licenses/OGL-UK-2.0.json"
                         ],
                         [
                             null,
@@ -260,7 +260,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OGL-UK-2.0.json"
+                "https://spdx.org/licenses/OGL-UK-2.0.json"
             ],
             [
                 null,

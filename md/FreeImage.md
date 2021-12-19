@@ -16,7 +16,7 @@
 
 -   **Homepage:** http://freeimage.sourceforge.net/freeimage-license.txt
 
--   **SPDX:** http://spdx.org/licenses/FreeImage.json
+-   **SPDX:** https://spdx.org/licenses/FreeImage.json
 
 ## Text
 
@@ -201,7 +201,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "FreeImage Public License v1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/FreeImage.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/FreeImage.json",
                 "_sourceURL": "https://spdx.org/licenses/FreeImage.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -217,7 +217,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/FreeImage.json"
+                            "https://spdx.org/licenses/FreeImage.json"
                         ],
                         [
                             null,
@@ -277,7 +277,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/FreeImage.json"
+                "https://spdx.org/licenses/FreeImage.json"
             ],
             [
                 null,

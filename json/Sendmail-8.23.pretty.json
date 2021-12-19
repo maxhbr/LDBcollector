@@ -19,7 +19,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sendmail License 8.23",
-            "spdxDetailsURL": "http://spdx.org/licenses/Sendmail-8.23.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Sendmail-8.23.json",
             "_sourceURL": "https://spdx.org/licenses/Sendmail-8.23.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -36,7 +36,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Sendmail-8.23.json"
+                        "https://spdx.org/licenses/Sendmail-8.23.json"
                     ],
                     [
                         null,
@@ -111,7 +111,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Sendmail-8.23.json"
+            "https://spdx.org/licenses/Sendmail-8.23.json"
         ],
         [
             null,

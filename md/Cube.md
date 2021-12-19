@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Cube.html
 
--   **SPDX:** http://spdx.org/licenses/Cube.json
+-   **SPDX:** https://spdx.org/licenses/Cube.json
 
 ## Text
 
@@ -105,7 +105,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Cube License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Cube.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Cube.json",
                 "_sourceURL": "https://spdx.org/licenses/Cube.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -121,7 +121,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Cube.json"
+                            "https://spdx.org/licenses/Cube.json"
                         ],
                         [
                             null,
@@ -270,7 +270,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Cube.json"
+                "https://spdx.org/licenses/Cube.json"
             ],
             [
                 null,

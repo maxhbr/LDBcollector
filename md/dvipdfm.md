@@ -25,7 +25,7 @@
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/dvipdfm
 
--   **SPDX:** http://spdx.org/licenses/dvipdfm.json
+-   **SPDX:** https://spdx.org/licenses/dvipdfm.json
 
 ## Text
 
@@ -86,7 +86,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "dvipdfm License",
-                "spdxDetailsURL": "http://spdx.org/licenses/dvipdfm.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/dvipdfm.json",
                 "_sourceURL": "https://spdx.org/licenses/dvipdfm.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -102,7 +102,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/dvipdfm.json"
+                            "https://spdx.org/licenses/dvipdfm.json"
                         ],
                         [
                             null,
@@ -208,7 +208,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/dvipdfm.json"
+                "https://spdx.org/licenses/dvipdfm.json"
             ],
             [
                 null,

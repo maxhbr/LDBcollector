@@ -29,7 +29,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/OCLC-2.0
 
--   **SPDX:** http://spdx.org/licenses/OCLC-2.0.json
+-   **SPDX:** https://spdx.org/licenses/OCLC-2.0.json
 
 -   http://www.oclc.org/research/activities/software/license/v2final.htm
 
@@ -311,7 +311,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "OCLC Research Public License 2.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/OCLC-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OCLC-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/OCLC-2.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -337,7 +337,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OCLC-2.0.json"
+                            "https://spdx.org/licenses/OCLC-2.0.json"
                         ],
                         [
                             null,
@@ -505,7 +505,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OCLC-2.0.json"
+                "https://spdx.org/licenses/OCLC-2.0.json"
             ],
             [
                 null,

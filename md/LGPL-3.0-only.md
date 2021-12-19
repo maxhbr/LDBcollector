@@ -141,9 +141,9 @@
 
 -   **OSI Page:** http://www.opensource.org/licenses/lgpl-3.0.html
 
--   **SPDX:** http://spdx.org/licenses/LGPL-3.0-only.json
+-   **SPDX:** https://spdx.org/licenses/LGPL-3.0-only.json
 
--   **SPDX:** http://spdx.org/licenses/LGPL-3.0-or-later.json
+-   **SPDX:** https://spdx.org/licenses/LGPL-3.0-or-later.json
 
 -   **Wikipedia page:**
     https://en.wikipedia.org/wiki/GNU\_Lesser\_General\_Public\_License
@@ -335,7 +335,7 @@
     		ATTRIBUTE Appropriately
     	YOU MUST NOT Modify License notices
     	YOU MUST NOT Modify Warranty disclaimer
-    	YOU MUST Provide License text GPL-3.0 AND LGPL-3.0
+    	YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
     	IF Non-permissive Additional terms
     		EITHER
     			YOU MUST Include Additional terms In Source code
@@ -351,15 +351,15 @@
     		YOU MUST Provide Legal notices
     			ATTRIBUTE Highlighted
     		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		IF Interactive AND Displayed License announcement
+    			ATTRIBUTE Original license LGPL-3.0-only
+    		IF Interactive AND Displayed Appropriate legal notices
     			YOU MUST Display Appropriate legal notices
     				ATTRIBUTE Highlighted
     		IF Software modification Uses Linked work
     			EITHER
     				YOU MUST Ensure Functionality Without Linked work
     			OR
-    				YOU MUST Use GPL-3.0
+    				YOU MUST Use GPL-3.0-only
     	YOU MUST NOT Restrict Granted rights
     		EXCEPT IF NOT Permitted By Additional terms
     	YOU MUST NOT Litigate Circumvention
@@ -369,7 +369,7 @@
     		ATTRIBUTE Appropriately
     	YOU MUST NOT Modify License notices
     	YOU MUST NOT Modify Warranty disclaimer
-    	YOU MUST Provide License text GPL-3.0 AND LGPL-3.0
+    	YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
     	IF Non-permissive Additional terms
     		EITHER
     			YOU MUST Include Additional terms In Source code
@@ -427,6 +427,7 @@
     			ATTRIBUTE Duration As long as needed
     	IF User product
     		YOU MUST Provide Installation information
+    			ATTRIBUTE Included in Source code delivery Of the Library
     			EXCEPT IF Installation Is NOT Feasible
     	IF Software modification
     		YOU MUST Provide Modification notice
@@ -435,32 +436,34 @@
     		YOU MUST Provide Legal notices
     			ATTRIBUTE Highlighted
     		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		IF Interactive AND Displayed License announcement
+    			ATTRIBUTE Original license LGPL-3.0-only
+    		IF Interactive AND Displayed Appropriate legal notices
     			YOU MUST Display Appropriate legal notices
     				ATTRIBUTE Highlighted
     		IF Software modification Uses Linked work
     			EITHER
     				YOU MUST Ensure Functionality Without Linked work
     			OR
-    				YOU MUST Use GPL-3.0
+    				YOU MUST Use GPL-3.0-only
     	YOU MUST NOT Restrict Granted rights
     		EXCEPT IF NOT Permitted By Additional terms
-    USE CASE Binary delivery Of Combined work
+    USE CASE Combined work delivery
     	YOU MUST NOT Impede Modification Of the Library
     	YOU MUST NOT Impede Reverse engineering
     		ATTRIBUTE For Debugging Of Modification
     	YOU MUST Provide License notices
     		ATTRIBUTE Highlighted
-    	YOU MUST Provide License text GPL-3.0 AND LGPL-3.0
+    	YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
     	IF Displayed Copyright notices
     		YOU MUST Display Copyright notices Of the Library
-    		YOU MUST Reference License text GPL-3.0 AND LGPL-3.0
+    		YOU MUST Reference License text GPL-3.0-only AND LGPL-3.0-only
+    	YOU MUST NOT Modify Warranty disclaimer
     	EITHER
     		YOU MUST Provide Linkable work
     		YOU MUST Permit Relinking
     		YOU MUST Provide Source code Of the Library
-    			EITHER IF Binary delivery On Customary medium OR Installed
+    			EITHER IF Source code delivery
+    			OR IF Binary delivery On Customary medium OR Installed
     				EITHER
     					YOU MUST Provide Source code Of the Library
     						ATTRIBUTE Machine-readable
@@ -507,25 +510,27 @@
     					ATTRIBUTE Including Tool chain information
     					ATTRIBUTE Via Internet
     					ATTRIBUTE Duration As long as needed
-    		IF Installed AND User product
+    		IF User product
     			YOU MUST Provide Installation information
     				ATTRIBUTE Included in Source code delivery Of the Library
     				EXCEPT IF Installation Is NOT Feasible
     	OR
     		YOU MUST Use Shared library
-    		IF Installed AND User product
+    		IF User product
     			YOU MUST Provide Installation information
-    				EITHER IF Binary delivery On Customary medium OR Installed
+    				EXCEPT IF Installation Is NOT Feasible
+    				EITHER IF Source code delivery
+    				OR IF Binary delivery On Customary medium OR Installed
     					EITHER
     						YOU MUST Provide Installation information
-    							ATTRIBUTE Machine-readable
-    							ATTRIBUTE Customary medium
-    							ATTRIBUTE Documented format
+    								ATTRIBUTE Machine-readable
+    								ATTRIBUTE Customary medium
+    								ATTRIBUTE Documented format
     					OR
     						YOU MUST Provide Written offer For Installation information
     							ATTRIBUTE Duration At least 3 years
     							ATTRIBUTE Duration As long as product is supported
-    							ATTRIBUTE Installation Information
+    							ATTRIBUTE Installation information
     								ATTRIBUTE Machine-readable
     								ATTRIBUTE Documented format
     								EITHER
@@ -554,7 +559,6 @@
     						ATTRIBUTE Documented format
     						ATTRIBUTE Via Internet
     						ATTRIBUTE Duration As long as needed
-    				EXCEPT IF Installation Is NOT Feasible
     	IF Combined library
     		YOU MUST Provide Library
     			ATTRIBUTE Original license
@@ -562,10 +566,18 @@
     		YOU MUST Provide License notices
     		YOU MUST Reference Library
     			ATTRIBUTE Uncombined
+    USE CASE Header files Included in Linked work
+    	IF Substantial work
+    		YOU MUST Notify Library
+    			ATTRIBUTE Highlighted
+    		YOU MUST Provide License announcement
+    			ATTRIBUTE Highlighted
+    		YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
     COMPATIBILITY Apache-2.0
     COMPATIBILITY BSD-2-Clause
     COMPATIBILITY BSD-2-Clause-Patent
     COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSL-1.0
     COMPATIBILITY bzip2-1.0.5
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
@@ -583,9 +595,11 @@
     COMPATIBILITY WTFPL
     COMPATIBILITY X11
     COMPATIBILITY Zlib
+    COMPATIBILITY ZPL-2.0
     DEPENDING COMPATIBILITY EPL-2.0
     INCOMPATIBILITY Apache-1.0
     INCOMPATIBILITY Apache-1.1
+    INCOMPATIBILITY Artistic-2.0
     INCOMPATIBILITY BSD-4-Clause
     INCOMPATIBILITY BSD-4-Clause-UC
     INCOMPATIBILITY FTL
@@ -601,11 +615,184 @@
 
 ## Text
 
-    This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.
+    This library is free software; you can redistribute it and/or modify it under
+    the terms of the GNU Lesser General Public License as published by the Free
+    Software Foundation; either version 3.0 of the License, or (at your option) any
+    later version.
 
-    This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
+    This library is distributed in the hope that it will be useful, but WITHOUT ANY
+    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
 
-    You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+    You should have received a copy of the GNU Lesser General Public License along
+    with this library; if not, write to the Free Software Foundation, Inc., 51
+    Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+                       GNU LESSER GENERAL PUBLIC LICENSE
+                           Version 3, 29 June 2007
+
+     Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+     Everyone is permitted to copy and distribute verbatim copies
+     of this license document, but changing it is not allowed.
+
+
+      This version of the GNU Lesser General Public License incorporates
+    the terms and conditions of version 3 of the GNU General Public
+    License, supplemented by the additional permissions listed below.
+
+      0. Additional Definitions.
+
+      As used herein, "this License" refers to version 3 of the GNU Lesser
+    General Public License, and the "GNU GPL" refers to version 3 of the GNU
+    General Public License.
+
+      "The Library" refers to a covered work governed by this License,
+    other than an Application or a Combined Work as defined below.
+
+      An "Application" is any work that makes use of an interface provided
+    by the Library, but which is not otherwise based on the Library.
+    Defining a subclass of a class defined by the Library is deemed a mode
+    of using an interface provided by the Library.
+
+      A "Combined Work" is a work produced by combining or linking an
+    Application with the Library.  The particular version of the Library
+    with which the Combined Work was made is also called the "Linked
+    Version".
+
+      The "Minimal Corresponding Source" for a Combined Work means the
+    Corresponding Source for the Combined Work, excluding any source code
+    for portions of the Combined Work that, considered in isolation, are
+    based on the Application, and not on the Linked Version.
+
+      The "Corresponding Application Code" for a Combined Work means the
+    object code and/or source code for the Application, including any data
+    and utility programs needed for reproducing the Combined Work from the
+    Application, but excluding the System Libraries of the Combined Work.
+
+      1. Exception to Section 3 of the GNU GPL.
+
+      You may convey a covered work under sections 3 and 4 of this License
+    without being bound by section 3 of the GNU GPL.
+
+      2. Conveying Modified Versions.
+
+      If you modify a copy of the Library, and, in your modifications, a
+    facility refers to a function or data to be supplied by an Application
+    that uses the facility (other than as an argument passed when the
+    facility is invoked), then you may convey a copy of the modified
+    version:
+
+       a) under this License, provided that you make a good faith effort to
+       ensure that, in the event an Application does not supply the
+       function or data, the facility still operates, and performs
+       whatever part of its purpose remains meaningful, or
+
+       b) under the GNU GPL, with none of the additional permissions of
+       this License applicable to that copy.
+
+      3. Object Code Incorporating Material from Library Header Files.
+
+      The object code form of an Application may incorporate material from
+    a header file that is part of the Library.  You may convey such object
+    code under terms of your choice, provided that, if the incorporated
+    material is not limited to numerical parameters, data structure
+    layouts and accessors, or small macros, inline functions and templates
+    (ten or fewer lines in length), you do both of the following:
+
+       a) Give prominent notice with each copy of the object code that the
+       Library is used in it and that the Library and its use are
+       covered by this License.
+
+       b) Accompany the object code with a copy of the GNU GPL and this license
+       document.
+
+      4. Combined Works.
+
+      You may convey a Combined Work under terms of your choice that,
+    taken together, effectively do not restrict modification of the
+    portions of the Library contained in the Combined Work and reverse
+    engineering for debugging such modifications, if you also do each of
+    the following:
+
+       a) Give prominent notice with each copy of the Combined Work that
+       the Library is used in it and that the Library and its use are
+       covered by this License.
+
+       b) Accompany the Combined Work with a copy of the GNU GPL and this license
+       document.
+
+       c) For a Combined Work that displays copyright notices during
+       execution, include the copyright notice for the Library among
+       these notices, as well as a reference directing the user to the
+       copies of the GNU GPL and this license document.
+
+       d) Do one of the following:
+
+           0) Convey the Minimal Corresponding Source under the terms of this
+           License, and the Corresponding Application Code in a form
+           suitable for, and under terms that permit, the user to
+           recombine or relink the Application with a modified version of
+           the Linked Version to produce a modified Combined Work, in the
+           manner specified by section 6 of the GNU GPL for conveying
+           Corresponding Source.
+
+           1) Use a suitable shared library mechanism for linking with the
+           Library.  A suitable mechanism is one that (a) uses at run time
+           a copy of the Library already present on the user's computer
+           system, and (b) will operate properly with a modified version
+           of the Library that is interface-compatible with the Linked
+           Version.
+
+       e) Provide Installation Information, but only if you would otherwise
+       be required to provide such information under section 6 of the
+       GNU GPL, and only to the extent that such information is
+       necessary to install and execute a modified version of the
+       Combined Work produced by recombining or relinking the
+       Application with a modified version of the Linked Version. (If
+       you use option 4d0, the Installation Information must accompany
+       the Minimal Corresponding Source and Corresponding Application
+       Code. If you use option 4d1, you must provide the Installation
+       Information in the manner specified by section 6 of the GNU GPL
+       for conveying Corresponding Source.)
+
+      5. Combined Libraries.
+
+      You may place library facilities that are a work based on the
+    Library side by side in a single library together with other library
+    facilities that are not Applications and are not covered by this
+    License, and convey such a combined library under terms of your
+    choice, if you do both of the following:
+
+       a) Accompany the combined library with a copy of the same work based
+       on the Library, uncombined with any other library facilities,
+       conveyed under the terms of this License.
+
+       b) Give prominent notice with the combined library that part of it
+       is a work based on the Library, and explaining where to find the
+       accompanying uncombined form of the same work.
+
+      6. Revised Versions of the GNU Lesser General Public License.
+
+      The Free Software Foundation may publish revised and/or new versions
+    of the GNU Lesser General Public License from time to time. Such new
+    versions will be similar in spirit to the present version, but may
+    differ in detail to address new problems or concerns.
+
+      Each version is given a distinguishing version number. If the
+    Library as you received it specifies that a certain numbered version
+    of the GNU Lesser General Public License "or any later version"
+    applies to it, you have the option of following the terms and
+    conditions either of that published version or of any later version
+    published by the Free Software Foundation. If the Library as you
+    received it does not specify a version number of the GNU Lesser
+    General Public License, you may choose any version of the GNU Lesser
+    General Public License ever published by the Free Software Foundation.
+
+      If the Library as you received it specifies that a proxy can decide
+    whether future versions of the GNU Lesser General Public License shall
+    apply, that proxy's public statement of acceptance of any version is
+    permanent authorization for you to choose that version for the
+    Library.
 
 ------------------------------------------------------------------------
 
@@ -835,7 +1022,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Lesser General Public License v3.0 only",
-                "spdxDetailsURL": "http://spdx.org/licenses/LGPL-3.0-only.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/LGPL-3.0-only.json",
                 "_sourceURL": "https://spdx.org/licenses/LGPL-3.0-only.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -861,7 +1048,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/LGPL-3.0-only.json"
+                            "https://spdx.org/licenses/LGPL-3.0-only.json"
                         ],
                         [
                             null,
@@ -894,7 +1081,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/LGPL-3.0-only.txt",
                 "spdxId": "LGPL-3.0-only",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text GPL-3.0 AND LGPL-3.0\n\tIF Non-permissive Additional terms\n\t\tEITHER\n\t\t\tYOU MUST Include Additional terms In Source code\n\t\tOR\n\t\t\tYOU MUST Reference Additional terms In Source code\n\t\tYOU MUST Provide Additional terms\n\tUSE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later\n\t\tYOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Displayed License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\t\tIF Software modification Uses Linked work\n\t\t\tEITHER\n\t\t\t\tYOU MUST Ensure Functionality Without Linked work\n\t\t\tOR\n\t\t\t\tYOU MUST Use GPL-3.0\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text GPL-3.0 AND LGPL-3.0\n\tIF Non-permissive Additional terms\n\t\tEITHER\n\t\t\tYOU MUST Include Additional terms In Source code\n\t\tOR\n\t\t\tYOU MUST Reference Additional terms In Source code\n\t\tYOU MUST Provide Additional terms\n\tUSE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later\n\t\tYOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later\n\tEITHER IF Binary delivery On Customary medium OR Installed\n\t\tEITHER\n\t\t\tYOU MUST Provide Source code\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\tATTRIBUTE Documented format\n\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\tATTRIBUTE Including Tool chain information\n\t\tOR\n\t\t\tYOU MUST Provide Written offer\n\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\tATTRIBUTE Delayed source code delivery\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tEITHER\n\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tOR\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE No charge\n\tOR IF Binary delivery Via Internet\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Documented format\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\t\t\tEITHER IF Source code On same server\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\tOR IF Source code On other server\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\tYOU MUST Reference Source code\n\tOR IF Binary delivery Via peer-to-peer transmission\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charge\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Documented format\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\tIF User product\n\t\tYOU MUST Provide Installation information\n\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Displayed License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\t\tIF Software modification Uses Linked work\n\t\t\tEITHER\n\t\t\t\tYOU MUST Ensure Functionality Without Linked work\n\t\t\tOR\n\t\t\t\tYOU MUST Use GPL-3.0\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\nUSE CASE Binary delivery Of Combined work\n\tYOU MUST NOT Impede Modification Of the Library\n\tYOU MUST NOT Impede Reverse engineering\n\t\tATTRIBUTE For Debugging Of Modification\n\tYOU MUST Provide License notices\n\t\tATTRIBUTE Highlighted\n\tYOU MUST Provide License text GPL-3.0 AND LGPL-3.0\n\tIF Displayed Copyright notices\n\t\tYOU MUST Display Copyright notices Of the Library\n\t\tYOU MUST Reference License text GPL-3.0 AND LGPL-3.0\n\tEITHER\n\t\tYOU MUST Provide Linkable work\n\t\tYOU MUST Permit Relinking\n\t\tYOU MUST Provide Source code Of the Library\n\t\t\tEITHER IF Binary delivery On Customary medium OR Installed\n\t\t\t\tEITHER\n\t\t\t\t\tYOU MUST Provide Source code Of the Library\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\tOR\n\t\t\t\t\tYOU MUST Provide Written offer\n\t\t\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\t\t\tATTRIBUTE Delayed source code delivery Of the Library\n\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\t\t\tEITHER\n\t\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\t\t\tOR\n\t\t\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\tOR IF Binary delivery Via Internet\n\t\t\t\tYOU MUST Provide Source code Of the Library\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\t\tEITHER IF Source code On same server\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\tOR IF Source code On other server\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\tYOU MUST Reference Source code\n\t\t\tOR IF Binary delivery Via peer-to-peer transmission\n\t\t\t\tYOU MUST Reference Source code Of the Library\n\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\tIF Installed AND User product\n\t\t\tYOU MUST Provide Installation information\n\t\t\t\tATTRIBUTE Included in Source code delivery Of the Library\n\t\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tOR\n\t\tYOU MUST Use Shared library\n\t\tIF Installed AND User product\n\t\t\tYOU MUST Provide Installation information\n\t\t\t\tEITHER IF Binary delivery On Customary medium OR Installed\n\t\t\t\t\tEITHER\n\t\t\t\t\t\tYOU MUST Provide Installation information\n\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tOR\n\t\t\t\t\t\tYOU MUST Provide Written offer For Installation information\n\t\t\t\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\t\t\t\tATTRIBUTE Installation Information\n\t\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\t\t\tEITHER\n\t\t\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\t\t\t\tOR\n\t\t\t\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\tOR IF Binary delivery Via Internet\n\t\t\t\t\tYOU MUST Provide Installation information\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\t\t\tEITHER IF Installation information On same server\n\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\tOR IF Installation information On other server\n\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\t\tYOU MUST Reference Installation information\n\t\t\t\tOR IF Binary delivery Via peer-to-peer transmission\n\t\t\t\t\tYOU MUST Reference Installation information\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tIF Combined library\n\t\tYOU MUST Provide Library\n\t\t\tATTRIBUTE Original license\n\t\t\tATTRIBUTE Uncombined\n\t\tYOU MUST Provide License notices\n\t\tYOU MUST Reference Library\n\t\t\tATTRIBUTE Uncombined\nCOMPATIBILITY Apache-2.0\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY LGPL-3.0-or-later\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nDEPENDING COMPATIBILITY EPL-2.0\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only\n\tIF Non-permissive Additional terms\n\t\tEITHER\n\t\t\tYOU MUST Include Additional terms In Source code\n\t\tOR\n\t\t\tYOU MUST Reference Additional terms In Source code\n\t\tYOU MUST Provide Additional terms\n\tUSE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later\n\t\tYOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license LGPL-3.0-only\n\t\tIF Interactive AND Displayed Appropriate legal notices\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\t\tIF Software modification Uses Linked work\n\t\t\tEITHER\n\t\t\t\tYOU MUST Ensure Functionality Without Linked work\n\t\t\tOR\n\t\t\t\tYOU MUST Use GPL-3.0-only\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only\n\tIF Non-permissive Additional terms\n\t\tEITHER\n\t\t\tYOU MUST Include Additional terms In Source code\n\t\tOR\n\t\t\tYOU MUST Reference Additional terms In Source code\n\t\tYOU MUST Provide Additional terms\n\tUSE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later\n\t\tYOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later\n\tEITHER IF Binary delivery On Customary medium OR Installed\n\t\tEITHER\n\t\t\tYOU MUST Provide Source code\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\tATTRIBUTE Documented format\n\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\tATTRIBUTE Including Tool chain information\n\t\tOR\n\t\t\tYOU MUST Provide Written offer\n\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\tATTRIBUTE Delayed source code delivery\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tEITHER\n\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tOR\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE No charge\n\tOR IF Binary delivery Via Internet\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Documented format\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\t\t\tEITHER IF Source code On same server\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\tOR IF Source code On other server\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\tYOU MUST Reference Source code\n\tOR IF Binary delivery Via peer-to-peer transmission\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charge\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Documented format\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\tIF User product\n\t\tYOU MUST Provide Installation information\n\t\t\tATTRIBUTE Included in Source code delivery Of the Library\n\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license LGPL-3.0-only\n\t\tIF Interactive AND Displayed Appropriate legal notices\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\t\tIF Software modification Uses Linked work\n\t\t\tEITHER\n\t\t\t\tYOU MUST Ensure Functionality Without Linked work\n\t\t\tOR\n\t\t\t\tYOU MUST Use GPL-3.0-only\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\nUSE CASE Combined work delivery\n\tYOU MUST NOT Impede Modification Of the Library\n\tYOU MUST NOT Impede Reverse engineering\n\t\tATTRIBUTE For Debugging Of Modification\n\tYOU MUST Provide License notices\n\t\tATTRIBUTE Highlighted\n\tYOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only\n\tIF Displayed Copyright notices\n\t\tYOU MUST Display Copyright notices Of the Library\n\t\tYOU MUST Reference License text GPL-3.0-only AND LGPL-3.0-only\n\tYOU MUST NOT Modify Warranty disclaimer\n\tEITHER\n\t\tYOU MUST Provide Linkable work\n\t\tYOU MUST Permit Relinking\n\t\tYOU MUST Provide Source code Of the Library\n\t\t\tEITHER IF Source code delivery\n\t\t\tOR IF Binary delivery On Customary medium OR Installed\n\t\t\t\tEITHER\n\t\t\t\t\tYOU MUST Provide Source code Of the Library\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\tOR\n\t\t\t\t\tYOU MUST Provide Written offer\n\t\t\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\t\t\tATTRIBUTE Delayed source code delivery Of the Library\n\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\t\t\tEITHER\n\t\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\t\t\tOR\n\t\t\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\tOR IF Binary delivery Via Internet\n\t\t\t\tYOU MUST Provide Source code Of the Library\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\t\tEITHER IF Source code On same server\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\tOR IF Source code On other server\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\tYOU MUST Reference Source code\n\t\t\tOR IF Binary delivery Via peer-to-peer transmission\n\t\t\t\tYOU MUST Reference Source code Of the Library\n\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\tIF User product\n\t\t\tYOU MUST Provide Installation information\n\t\t\t\tATTRIBUTE Included in Source code delivery Of the Library\n\t\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tOR\n\t\tYOU MUST Use Shared library\n\t\tIF User product\n\t\t\tYOU MUST Provide Installation information\n\t\t\t\tEXCEPT IF Installation Is NOT Feasible\n\t\t\t\tEITHER IF Source code delivery\n\t\t\t\tOR IF Binary delivery On Customary medium OR Installed\n\t\t\t\t\tEITHER\n\t\t\t\t\t\tYOU MUST Provide Installation information\n\t\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tOR\n\t\t\t\t\t\tYOU MUST Provide Written offer For Installation information\n\t\t\t\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\t\t\t\tATTRIBUTE Installation information\n\t\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\t\t\tEITHER\n\t\t\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\t\t\t\tOR\n\t\t\t\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\tOR IF Binary delivery Via Internet\n\t\t\t\t\tYOU MUST Provide Installation information\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\t\t\tEITHER IF Installation information On same server\n\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\tOR IF Installation information On other server\n\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\t\tYOU MUST Reference Installation information\n\t\t\t\tOR IF Binary delivery Via peer-to-peer transmission\n\t\t\t\t\tYOU MUST Reference Installation information\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE Duration As long as needed\n\tIF Combined library\n\t\tYOU MUST Provide Library\n\t\t\tATTRIBUTE Original license\n\t\t\tATTRIBUTE Uncombined\n\t\tYOU MUST Provide License notices\n\t\tYOU MUST Reference Library\n\t\t\tATTRIBUTE Uncombined\nUSE CASE Header files Included in Linked work\n\tIF Substantial work\n\t\tYOU MUST Notify Library\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide License announcement\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only\nCOMPATIBILITY Apache-2.0\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY LGPL-3.0-or-later\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nDEPENDING COMPATIBILITY EPL-2.0\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY Artistic-2.0\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "LGPL-3.0-only"
@@ -948,7 +1135,7 @@
                 "homepageUrl": "http://www.gnu.org/licenses/lgpl-3.0-standalone.html",
                 "shortName": "LGPL 3.0 or later",
                 "textUrls": null,
-                "text": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
+                "text": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Lesser General Public License as published by the Free\nSoftware Foundation; either version 3.0 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin Street, Fifth Floor, Boston, MA  02110-1301  USA\n\n                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
                 "category": "Copyleft Limited",
                 "osiUrl": null,
                 "owner": "Free Software Foundation (FSF)",
@@ -979,7 +1166,7 @@
                         ]
                     ],
                     "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
+                    "__impliedText": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Lesser General Public License as published by the Free\nSoftware Foundation; either version 3.0 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin Street, Fifth Floor, Boston, MA  02110-1301  USA\n\n                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -2128,7 +2315,7 @@
             ]
         },
         "__isOsiApproved": true,
-        "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
+        "__impliedText": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Lesser General Public License as published by the Free\nSoftware Foundation; either version 3.0 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin Street, Fifth Floor, Boston, MA  02110-1301  USA\n\n                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
         "__impliedURLs": [
             [
                 null,
@@ -2156,7 +2343,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/LGPL-3.0-only.json"
+                "https://spdx.org/licenses/LGPL-3.0-only.json"
             ],
             [
                 null,
@@ -2164,7 +2351,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/LGPL-3.0-or-later.json"
+                "https://spdx.org/licenses/LGPL-3.0-or-later.json"
             ],
             [
                 "Homepage",

@@ -97,7 +97,7 @@ open-license] (CDLA-Permissive-1.0))
 === URLs
 
 * *Homepage:* http://creativecommons.org/licenses/by-nc-sa/4.0/
-* *SPDX:* http://spdx.org/licenses/CC-BY-NC-SA-4.0.json
+* *SPDX:* https://spdx.org/licenses/CC-BY-NC-SA-4.0.json
 * *open-license:* http://open-license.hitachi.com/licenses/1199
 * https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
@@ -675,7 +675,7 @@ this repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
-            "spdxDetailsURL": "http://spdx.org/licenses/CC-BY-NC-SA-4.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/CC-BY-NC-SA-4.0.json",
             "_sourceURL": "https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -691,7 +691,7 @@ this repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/CC-BY-NC-SA-4.0.json"
+                        "https://spdx.org/licenses/CC-BY-NC-SA-4.0.json"
                     ],
                     [
                         null,
@@ -1105,7 +1105,7 @@ this repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/CC-BY-NC-SA-4.0.json"
+            "https://spdx.org/licenses/CC-BY-NC-SA-4.0.json"
         ],
         [
             null,

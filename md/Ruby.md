@@ -48,7 +48,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Ruby.html
 
--   **SPDX:** http://spdx.org/licenses/Ruby.json
+-   **SPDX:** https://spdx.org/licenses/Ruby.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/2
 
@@ -245,7 +245,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Ruby License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Ruby.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Ruby.json",
                 "_sourceURL": "https://spdx.org/licenses/Ruby.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -261,7 +261,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Ruby.json"
+                            "https://spdx.org/licenses/Ruby.json"
                         ],
                         [
                             null,
@@ -638,7 +638,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Ruby.json"
+                "https://spdx.org/licenses/Ruby.json"
             ],
             [
                 null,

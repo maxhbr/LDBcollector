@@ -56,7 +56,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Intel.html
 
--   **SPDX:** http://spdx.org/licenses/Intel.json
+-   **SPDX:** https://spdx.org/licenses/Intel.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/663
 
@@ -242,7 +242,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Intel Open Source License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Intel.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Intel.json",
                 "_sourceURL": "https://spdx.org/licenses/Intel.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -267,7 +267,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Intel.json"
+                            "https://spdx.org/licenses/Intel.json"
                         ],
                         [
                             null,
@@ -611,7 +611,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Intel.json"
+                "https://spdx.org/licenses/Intel.json"
             ],
             [
                 "Homepage",

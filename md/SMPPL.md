@@ -15,7 +15,7 @@
 -   **Homepage:**
     https://github.com/dcblake/SMP/blob/master/Documentation/License.txt
 
--   **SPDX:** http://spdx.org/licenses/SMPPL.json
+-   **SPDX:** https://spdx.org/licenses/SMPPL.json
 
 ## Text
 
@@ -85,7 +85,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Secure Messaging Protocol Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/SMPPL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SMPPL.json",
                 "_sourceURL": "https://spdx.org/licenses/SMPPL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -101,7 +101,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SMPPL.json"
+                            "https://spdx.org/licenses/SMPPL.json"
                         ],
                         [
                             null,
@@ -161,7 +161,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/SMPPL.json"
+                "https://spdx.org/licenses/SMPPL.json"
             ],
             [
                 null,

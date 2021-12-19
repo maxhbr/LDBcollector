@@ -29,7 +29,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Zed
 * *SPDX:* https://spdx.org/licenses/Zed.html
-* *SPDX:* http://spdx.org/licenses/Zed.json
+* *SPDX:* https://spdx.org/licenses/Zed.json
 
 === Text
 
@@ -84,7 +84,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Zed License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Zed.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Zed.json",
             "_sourceURL": "https://spdx.org/licenses/Zed.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -100,7 +100,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Zed.json"
+                        "https://spdx.org/licenses/Zed.json"
                     ],
                     [
                         null,
@@ -249,7 +249,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Zed.json"
+            "https://spdx.org/licenses/Zed.json"
         ],
         [
             null,

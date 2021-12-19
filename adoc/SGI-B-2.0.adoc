@@ -35,7 +35,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf
 * *SPDX:* https://spdx.org/licenses/SGI-B-2.0.html
-* *SPDX:* http://spdx.org/licenses/SGI-B-2.0.json
+* *SPDX:* https://spdx.org/licenses/SGI-B-2.0.json
 * *open-license:* http://open-license.hitachi.com/licenses/327
 * http://oss.sgi.com/projects/FreeB/
 
@@ -181,7 +181,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SGI Free Software License B v2.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/SGI-B-2.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SGI-B-2.0.json",
             "_sourceURL": "https://spdx.org/licenses/SGI-B-2.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -197,7 +197,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SGI-B-2.0.json"
+                        "https://spdx.org/licenses/SGI-B-2.0.json"
                     ],
                     [
                         null,
@@ -501,7 +501,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/SGI-B-2.0.json"
+            "https://spdx.org/licenses/SGI-B-2.0.json"
         ],
         [
             null,

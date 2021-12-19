@@ -21,7 +21,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "libpng License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Libpng.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Libpng.json",
             "_sourceURL": "https://spdx.org/licenses/Libpng.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -37,7 +37,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Libpng.json"
+                        "https://spdx.org/licenses/Libpng.json"
                     ],
                     [
                         null,
@@ -235,7 +235,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Libpng.json"
+            "https://spdx.org/licenses/Libpng.json"
         ],
         [
             null,

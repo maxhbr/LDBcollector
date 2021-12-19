@@ -41,7 +41,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Apache-1.0.html
 
--   **SPDX:** http://spdx.org/licenses/Apache-1.0.json
+-   **SPDX:** https://spdx.org/licenses/Apache-1.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/13
 
@@ -109,7 +109,7 @@
     	YOU MUST Forward Warranty disclaimer
     	YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
     	IF Advertisement
-    		YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    		YOU MUST Credit Verbatim In Advertisement "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
     	IF Software modification
     		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
     		YOU MUST NOT Use "Apache" in product name
@@ -119,7 +119,7 @@
     	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
     	YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
     	IF Advertisement
-    		YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    		YOU MUST Credit Verbatim In Advertisement "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
     	IF Software modification
     		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
     		YOU MUST NOT Use "Apache" in product name
@@ -253,7 +253,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Apache License 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/Apache-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Apache-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/Apache-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -269,7 +269,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Apache-1.0.json"
+                            "https://spdx.org/licenses/Apache-1.0.json"
                         ],
                         [
                             null,
@@ -282,7 +282,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt",
                 "spdxId": "Apache-1.0",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache Server\" or \"Apache Group\"\n\t\tYOU MUST NOT Use \"Apache\" in product name\nUSE CASE Binary delivery\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache Server\" or \"Apache Group\"\n\t\tYOU MUST NOT Use \"Apache\" in product name\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim In Advertisement \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache Server\" or \"Apache Group\"\n\t\tYOU MUST NOT Use \"Apache\" in product name\nUSE CASE Binary delivery\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim In Advertisement \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache Server\" or \"Apache Group\"\n\t\tYOU MUST NOT Use \"Apache\" in product name\n",
                 "_implications": {
                     "__impliedNames": [
                         "Apache-1.0"
@@ -647,7 +647,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Apache-1.0.json"
+                "https://spdx.org/licenses/Apache-1.0.json"
             ],
             [
                 null,

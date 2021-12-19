@@ -49,7 +49,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/CNRI-Python.html
 
--   **SPDX:** http://spdx.org/licenses/CNRI-Python.json
+-   **SPDX:** https://spdx.org/licenses/CNRI-Python.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/292
 
@@ -246,7 +246,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CNRI Python License",
-                "spdxDetailsURL": "http://spdx.org/licenses/CNRI-Python.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CNRI-Python.json",
                 "_sourceURL": "https://spdx.org/licenses/CNRI-Python.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -271,7 +271,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CNRI-Python.json"
+                            "https://spdx.org/licenses/CNRI-Python.json"
                         ],
                         [
                             null,
@@ -706,7 +706,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/CNRI-Python.json"
+                "https://spdx.org/licenses/CNRI-Python.json"
             ],
             [
                 "Homepage",

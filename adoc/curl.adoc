@@ -25,7 +25,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* http://curl.haxx.se/
 * *SPDX:* https://spdx.org/licenses/curl.html
-* *SPDX:* http://spdx.org/licenses/curl.json
+* *SPDX:* https://spdx.org/licenses/curl.json
 * https://github.com/bagder/curl/blob/master/COPYING
 * http://curl.haxx.se/legal/licmix.html
 
@@ -101,7 +101,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "curl License",
-            "spdxDetailsURL": "http://spdx.org/licenses/curl.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/curl.json",
             "_sourceURL": "https://spdx.org/licenses/curl.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -117,7 +117,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/curl.json"
+                        "https://spdx.org/licenses/curl.json"
                     ],
                     [
                         null,
@@ -251,7 +251,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/curl.json"
+            "https://spdx.org/licenses/curl.json"
         ],
         [
             null,

@@ -36,7 +36,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/XSkat\_License
 
--   **SPDX:** http://spdx.org/licenses/XSkat.json
+-   **SPDX:** https://spdx.org/licenses/XSkat.json
 
 ## Text
 
@@ -107,7 +107,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "XSkat License",
-                "spdxDetailsURL": "http://spdx.org/licenses/XSkat.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/XSkat.json",
                 "_sourceURL": "https://spdx.org/licenses/XSkat.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -123,7 +123,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/XSkat.json"
+                            "https://spdx.org/licenses/XSkat.json"
                         ],
                         [
                             null,
@@ -229,7 +229,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/XSkat.json"
+                "https://spdx.org/licenses/XSkat.json"
             ],
             [
                 null,

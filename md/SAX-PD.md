@@ -14,7 +14,7 @@
 
 -   **Homepage:** http://www.saxproject.org/copying.html
 
--   **SPDX:** http://spdx.org/licenses/SAX-PD.json
+-   **SPDX:** https://spdx.org/licenses/SAX-PD.json
 
 ## Text
 
@@ -119,7 +119,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sax Public Domain Notice",
-                "spdxDetailsURL": "http://spdx.org/licenses/SAX-PD.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SAX-PD.json",
                 "_sourceURL": "https://spdx.org/licenses/SAX-PD.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -135,7 +135,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SAX-PD.json"
+                            "https://spdx.org/licenses/SAX-PD.json"
                         ],
                         [
                             null,
@@ -235,7 +235,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/SAX-PD.json"
+                "https://spdx.org/licenses/SAX-PD.json"
             ],
             [
                 null,

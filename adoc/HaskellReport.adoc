@@ -27,7 +27,7 @@ Project Wiki]
 
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License
-* *SPDX:* http://spdx.org/licenses/HaskellReport.json
+* *SPDX:* https://spdx.org/licenses/HaskellReport.json
 
 === Text
 
@@ -84,7 +84,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Haskell Language Report License",
-            "spdxDetailsURL": "http://spdx.org/licenses/HaskellReport.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/HaskellReport.json",
             "_sourceURL": "https://spdx.org/licenses/HaskellReport.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -100,7 +100,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/HaskellReport.json"
+                        "https://spdx.org/licenses/HaskellReport.json"
                     ],
                     [
                         null,
@@ -198,7 +198,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/HaskellReport.json"
+            "https://spdx.org/licenses/HaskellReport.json"
         ],
         [
             null,

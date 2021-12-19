@@ -37,7 +37,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://opensource.org/licenses/RPL-1.1
-* *SPDX:* http://spdx.org/licenses/RPL-1.1.json
+* *SPDX:* https://spdx.org/licenses/RPL-1.1.json
 * https://spdx.org/licenses/RPL-1.1.html
 * http://www.gnu.org/licenses/license-list.html#RPL
 
@@ -271,7 +271,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Reciprocal Public License 1.1",
-            "spdxDetailsURL": "http://spdx.org/licenses/RPL-1.1.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/RPL-1.1.json",
             "_sourceURL": "https://spdx.org/licenses/RPL-1.1.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -296,7 +296,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/RPL-1.1.json"
+                        "https://spdx.org/licenses/RPL-1.1.json"
                     ],
                     [
                         null,
@@ -522,7 +522,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/RPL-1.1.json"
+            "https://spdx.org/licenses/RPL-1.1.json"
         ],
         [
             null,

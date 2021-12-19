@@ -19,7 +19,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SQLite Blessing",
-            "spdxDetailsURL": "http://spdx.org/licenses/blessing.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/blessing.json",
             "_sourceURL": "https://spdx.org/licenses/blessing.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -36,7 +36,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/blessing.json"
+                        "https://spdx.org/licenses/blessing.json"
                     ],
                     [
                         null,
@@ -97,9 +97,58 @@
                     ]
                 ]
             }
+        },
+        "BlueOak License List": {
+            "BlueOakRating": "Lead",
+            "url": "https://spdx.org/licenses/blessing.html",
+            "isPermissive": true,
+            "_sourceURL": "https://blueoakcouncil.org/list",
+            "name": "SQLite Blessing",
+            "id": "blessing",
+            "_implications": {
+                "__impliedNames": [
+                    "blessing",
+                    "SQLite Blessing"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "BlueOak License List",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "Rating is: Lead"
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedURLs": [
+                    [
+                        "SPDX",
+                        "https://spdx.org/licenses/blessing.html"
+                    ]
+                ]
+            }
         }
     },
+    "__impliedJudgement": [
+        [
+            "BlueOak License List",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "Rating is: Lead"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
+        [
+            "BlueOak License List",
+            "NoCopyleft"
+        ],
         [
             "Scancode",
             "NoCopyleft"
@@ -111,7 +160,11 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/blessing.json"
+            "https://spdx.org/licenses/blessing.html"
+        ],
+        [
+            "SPDX",
+            "https://spdx.org/licenses/blessing.json"
         ],
         [
             null,

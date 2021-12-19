@@ -49,7 +49,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Unicode-DFS-2015.html
 
--   **SPDX:** http://spdx.org/licenses/Unicode-DFS-2015.json
+-   **SPDX:** https://spdx.org/licenses/Unicode-DFS-2015.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/976
 
@@ -241,7 +241,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Unicode License Agreement - Data Files and Software (2015)",
-                "spdxDetailsURL": "http://spdx.org/licenses/Unicode-DFS-2015.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Unicode-DFS-2015.json",
                 "_sourceURL": "https://spdx.org/licenses/Unicode-DFS-2015.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -257,7 +257,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Unicode-DFS-2015.json"
+                            "https://spdx.org/licenses/Unicode-DFS-2015.json"
                         ],
                         [
                             null,
@@ -592,7 +592,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Unicode-DFS-2015.json"
+                "https://spdx.org/licenses/Unicode-DFS-2015.json"
             ],
             [
                 null,

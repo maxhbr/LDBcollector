@@ -27,7 +27,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* http://www.xfree86.org/current/LICENSE4.html
 * *SPDX:* https://spdx.org/licenses/XFree86-1.1.html
-* *SPDX:* http://spdx.org/licenses/XFree86-1.1.json
+* *SPDX:* https://spdx.org/licenses/XFree86-1.1.json
 * *open-license:* http://open-license.hitachi.com/licenses/319
 
 === Description from open-license
@@ -212,7 +212,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "XFree86 License 1.1",
-            "spdxDetailsURL": "http://spdx.org/licenses/XFree86-1.1.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/XFree86-1.1.json",
             "_sourceURL": "https://spdx.org/licenses/XFree86-1.1.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -228,7 +228,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/XFree86-1.1.json"
+                        "https://spdx.org/licenses/XFree86-1.1.json"
                     ],
                     [
                         null,
@@ -533,7 +533,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/XFree86-1.1.json"
+            "https://spdx.org/licenses/XFree86-1.1.json"
         ],
         [
             null,

@@ -30,7 +30,7 @@
     https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html
 
 -   **SPDX:**
-    http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json
+    https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json
 
 ## Text
 
@@ -119,7 +119,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 3-Clause No Nuclear Warranty",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -135,7 +135,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
+                            "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
                         ],
                         [
                             null,
@@ -271,7 +271,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
+                "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
             ],
             [
                 null,

@@ -21,7 +21,7 @@
 
 -   **Homepage:** http://legacy.imatix.com/html/sfl/sfl4.htm
 
--   **SPDX:** http://spdx.org/licenses/iMatix.json
+-   **SPDX:** https://spdx.org/licenses/iMatix.json
 
 -   http://legacy.imatix.com/html/sfl/sfl4.htm#license
 
@@ -120,7 +120,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "iMatix Standard Function Library Agreement",
-                "spdxDetailsURL": "http://spdx.org/licenses/iMatix.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/iMatix.json",
                 "_sourceURL": "https://spdx.org/licenses/iMatix.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -136,7 +136,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/iMatix.json"
+                            "https://spdx.org/licenses/iMatix.json"
                         ],
                         [
                             null,
@@ -265,7 +265,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/iMatix.json"
+                "https://spdx.org/licenses/iMatix.json"
             ],
             [
                 null,

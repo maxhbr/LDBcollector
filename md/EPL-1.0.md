@@ -84,7 +84,7 @@
 
 -   **OSI Page:** http://opensource.org/licenses/eclipse-1.0.php
 
--   **SPDX:** http://spdx.org/licenses/EPL-1.0.json
+-   **SPDX:** https://spdx.org/licenses/EPL-1.0.json
 
 -   **Wikipedia page:**
     https://en.wikipedia.org/wiki/Eclipse\_Public\_License
@@ -227,7 +227,6 @@
 
     USE CASE Source code delivery
     	YOU MUST Forward License text
-    	YOU MUST Provide Warranty disclaimer
     	YOU MUST NOT Modify Copyright notices
     	IF Software modification
     		YOU MUST Grant License
@@ -258,6 +257,7 @@
     COMPATIBILITY BSD-2-Clause
     COMPATIBILITY BSD-2-Clause-Patent
     COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSL-1.0
     COMPATIBILITY bzip2-1.0.5
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
@@ -276,6 +276,7 @@
     COMPATIBILITY WTFPL
     COMPATIBILITY X11
     COMPATIBILITY Zlib
+    COMPATIBILITY ZPL-2.0
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
 
@@ -526,7 +527,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Eclipse Public License 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/EPL-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/EPL-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/EPL-1.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -552,7 +553,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/EPL-1.0.json"
+                            "https://spdx.org/licenses/EPL-1.0.json"
                         ],
                         [
                             null,
@@ -585,7 +586,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/EPL-1.0.txt",
                 "spdxId": "EPL-1.0",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tYOU MUST Provide Warranty disclaimer\n\tYOU MUST NOT Modify Copyright notices\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\nUSE CASE Binary delivery\n\tYOU MUST NOT Modify Copyright notices\n\tEITHER\n\t\tYOU MUST Include Source code\n\tOR\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Provide Written offer\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\t\tATTRIBUTE Reasonable\n\tUSE CASE License change\n\t\tYOU MUST Use Identical License obligations\n\t\tYOU MUST Use Warranty disclaimer On behalf of Other contributors\n\t\t\tATTRIBUTE Effective\n\t\tYOU MUST Use Liability disclaimer On behalf of Other contributors\n\t\t\tATTRIBUTE Effective\n\t\tIF Service offerings\n\t\t\tATTRIBUTE NOT Transferable\nUSE CASE Commercial distribution\n\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY CPL-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EUPL-1.1\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY IPL-1.0\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tYOU MUST NOT Modify Copyright notices\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\nUSE CASE Binary delivery\n\tYOU MUST NOT Modify Copyright notices\n\tEITHER\n\t\tYOU MUST Include Source code\n\tOR\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Provide Written offer\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\t\tATTRIBUTE Reasonable\n\tUSE CASE License change\n\t\tYOU MUST Use Identical License obligations\n\t\tYOU MUST Use Warranty disclaimer On behalf of Other contributors\n\t\t\tATTRIBUTE Effective\n\t\tYOU MUST Use Liability disclaimer On behalf of Other contributors\n\t\t\tATTRIBUTE Effective\n\t\tIF Service offerings\n\t\t\tATTRIBUTE NOT Transferable\nUSE CASE Commercial distribution\n\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY CPL-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EUPL-1.1\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY IPL-1.0\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "EPL-1.0"
@@ -1613,7 +1614,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/EPL-1.0.json"
+                "https://spdx.org/licenses/EPL-1.0.json"
             ],
             [
                 null,

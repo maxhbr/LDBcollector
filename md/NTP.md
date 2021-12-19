@@ -42,7 +42,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/NTP.html
 
--   **SPDX:** http://spdx.org/licenses/NTP.json
+-   **SPDX:** https://spdx.org/licenses/NTP.json
 
 -   http://www.opensource.org/licenses/NTP
 
@@ -167,7 +167,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NTP License",
-                "spdxDetailsURL": "http://spdx.org/licenses/NTP.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NTP.json",
                 "_sourceURL": "https://spdx.org/licenses/NTP.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -192,7 +192,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NTP.json"
+                            "https://spdx.org/licenses/NTP.json"
                         ],
                         [
                             null,
@@ -405,7 +405,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NTP.json"
+                "https://spdx.org/licenses/NTP.json"
             ],
             [
                 "Homepage",

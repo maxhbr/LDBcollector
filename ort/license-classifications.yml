@@ -11,43 +11,435 @@ categories:
 - name: non-commercial
 - name: allows-commercial
 - name: osi-approved
+- name: maybe-rating:Go
+- name: maybe-rating:Attention
+- name: maybe-rating:Stop
+- name: maybe-rating:No-Go
+- name: fsf-free
 - name: rating:Go
 - name: right:commercial-use
 - name: right:distribution
 - name: right:modifications
 - name: right:private-use
+- name: condition:include-copyright
 - name: limitation:liability
 - name: limitation:warranty
-- name: maybe-rating:Stop
-- name: maybe-rating:No-Go
-- name: fsf-free
 - name: right:patent-use
-- name: condition:include-copyright
 - name: condition:document-changes
 - name: limitation:trademark-use
-- name: maybe-rating:Attention
-- name: condition:disclose-source
-- name: condition:network-use-disclose
-- name: condition:same-license
-- name: maybe-rating:Go
 - name: rating:Attention
-- name: limitation:patent-use
-- name: condition:include-copyright--source
 - name: rating:No-Go
+- name: condition:disclose-source
 - name: condition:same-license--library
+- name: condition:same-license
+- name: condition:network-use-disclose
+- name: condition:include-copyright--source
+- name: limitation:patent-use
 - name: condition:same-license--file
 categorizations:
 - categories:
   - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: EUDatagrid
+- categories:
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: VOSTROM
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.3-no-invariants-only
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-SA-1.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-3.0-DE
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-SA-2.5
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: HaskellReport
+- categories:
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: SimPL-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: ClArtistic
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SMPPL
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CUA-OPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OLDAP-1.3
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Giftware
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: BitTorrent-1.1
+- categories:
+  - permissive
+  - has-no-patent-hint
   - rating:Go
   - right:commercial-use
   - right:distribution
   - right:modifications
   - right:private-use
+  - condition:include-copyright
   - limitation:liability
   - limitation:warranty
   - osi-approved
-  id: 0BSD
+  id: ISC
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: LPPL-1.1
+- categories:
+  - permissive
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:trademark-use
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: ECL-2.0
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  - fsf-free
+  id: Entessa
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Spencer-86
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: O-UDA-1.0
+- categories:
+  - permissive
+  - rating:Attention
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
+  - fsf-free
+  id: BSD-4-Clause
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Condor-1.1
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: ODC-By-1.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: IPA
+- categories:
+  - permissive
+  - rating:Go
+  id: Net-SNMP
+- categories:
+  - permissive
+  - rating:Go
+  id: BSD-4-Clause-Shortened
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CDLA-Permissive-2.0
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-ND-2.5
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: BSD-3-Clause-No-Nuclear-License
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-3.0-NL
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Latex2e
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OGL-Canada-2.0
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: ZPL-2.1
+- categories:
+  - permissive
+  - rating:Go
+  id: BSD-3-Clause-Modification
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: VSL-1.0
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: RSA-MD
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CDL-1.0
+- categories:
+  - maximal-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Parity-7.0.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-SA-2.0-UK
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: SCEA
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-NC-SA-3.0-DE
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SHL-0.5
+- categories:
+  - permissive
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: BSD-3-Clause
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NLOD-2.0
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: Saxpath
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: APAFML
+- categories:
+  - permissive
+  - rating:Go
+  id: Info-ZIP
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: APSL-1.1
+- categories:
+  - permissive
+  - rating:Go
+  id: HTMLTIDY
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: COIL-1.0
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-SA-1.0
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-2.0
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SSH-short
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: Mup
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: EFL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:same-license--library
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: LGPL-3.0-only
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: NPOSL-3.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-ND-4.0
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: Xerox
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OGL-UK-3.0
 - categories:
   - permissive
   - maybe-rating:Stop
@@ -56,32 +448,166 @@ categorizations:
   - fsf-free
   id: AAL
 - categories:
+  - strong-copyleft
+  - copyleft
+  - has-no-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: QPL-1.0
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Dotseqn
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: libselinux-1.0
+- categories:
   - permissive
   - rating:Go
   - fsf-free
-  id: ADSL
+  id: MIT-advertising
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SSH-OpenSSH
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: LGPLLR
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: ErlPL-1.1
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: TU-Berlin-2.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-ND-2.0
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-ND-4.0
 - categories:
   - permissive
   - rating:Go
+  - fsf-free
+  id: Plexus
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
   - osi-approved
-  id: AFL-1.1
+  id: SPL-1.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: BSD-3-Clause-No-Military-License
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CPAL-1.0
+- categories:
+  - permissive
+  - rating:Attention
+  - osi-approved
+  - fsf-free
+  id: Apache-1.1
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   - osi-approved
-  id: AFL-1.2
+  id: UPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.1-no-invariants-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.2-invariants-or-later
 - categories:
   - permissive
-  - has-patent-hint
-  - rating:Go
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: mpich2
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
   - osi-approved
-  id: AFL-2.0
+  id: LGPL-2.0-only
 - categories:
   - permissive
-  - has-patent-hint
   - rating:Go
+  - fsf-free
+  id: eGenix
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.2-only
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Unicode-TOU
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
   - osi-approved
-  id: AFL-2.1
+  id: APSL-1.2
 - categories:
   - permissive
   - has-patent-hint
@@ -89,30 +615,252 @@ categorizations:
   - right:commercial-use
   - right:modifications
   - right:distribution
-  - right:private-use
   - right:patent-use
+  - right:private-use
   - condition:include-copyright
   - condition:document-changes
   - limitation:trademark-use
   - limitation:liability
   - limitation:warranty
   - osi-approved
-  id: AFL-3.0
+  - fsf-free
+  id: Apache-2.0
 - categories:
-  - saas-copyleft
+  - permissive
+  - rating:Go
+  id: BSD-Source-Code
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-4.0
+- categories:
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
-  id: AGPL-1.0-only
+  id: TMate
 - categories:
-  - saas-copyleft
+  - weak-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: AGPL-1.0-or-later
+  id: OPL-1.0
+- categories:
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CECILL-1.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:patent-use
+  - right:private-use
+  - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: EPL-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  id: LPPL-1.3c
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Zed
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: SGI-B-2.0
+- categories:
+  - permissive
+  - rating:Go
+  id: BSD-3-Clause-Open-MPI
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CDDL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.2-or-later
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Hippocratic-2.1
+- categories:
+  - permissive
+  - rating:Go
+  id: Linux-OpenIB
+- categories:
+  - permissive
+  - has-patent-hint
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: IJG
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SchemeReport
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: TCL
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Linux-man-pages-copyleft
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NBPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Zimbra-1.3
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: MPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: LGPL-2.1-or-later
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-PDDC
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Imlib2
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: Multics
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: D-FSL-1.0
+- categories:
+  - permissive
+  - rating:Go
+  id: BSD-3-Clause-No-Nuclear-Warranty
+- categories:
+  - permissive
+  - rating:Go
+  id: BlueOak-1.0.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Community-Spec-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.1-only
+- categories:
+  - maximal-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: RPL-1.5
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:private-use
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - condition:include-copyright
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  id: OFL-1.1
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CPL-1.0
 - categories:
   - saas-copyleft
   - copyleft
@@ -136,301 +884,102 @@ categorizations:
   - fsf-free
   id: AGPL-3.0-only
 - categories:
-  - saas-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: AGPL-3.0-or-later
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: AMDPLPA
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: AML
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: AMPAS
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: ANTLR-PD
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: APAFML
-- categories:
-  - strong-copyleft
+  - weak-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - osi-approved
-  id: APL-1.0
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: APSL-1.0
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: APSL-1.1
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: APSL-1.2
-- categories:
-  - saas-copyleft
-  - copyleft
-  - has-no-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
   - fsf-free
-  id: APSL-2.0
+  id: gnuplot
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: NLPL
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: ADSL
 - categories:
   - permissive
   - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: Abstyles
+  id: psfrag
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: Adobe-2006
+  - osi-approved
+  id: Watcom-1.0
 - categories:
-  - permissive
-  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: Adobe-Glyph
+  id: SGI-B-1.0
 - categories:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: Afmparse
-- categories:
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Aladdin
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: Apache-1.0
-- categories:
-  - permissive
-  - rating:Attention
-  - osi-approved
-  - fsf-free
-  id: Apache-1.1
-- categories:
-  - permissive
-  - has-patent-hint
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - limitation:trademark-use
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: Apache-2.0
+  id: W3C-19980720
 - categories:
   - weak-copyleft
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - osi-approved
-  id: Artistic-1.0
+  id: NASA-1.3
 - categories:
-  - weak-copyleft
-  - copyleft
+  - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - osi-approved
-  id: Artistic-1.0-Perl
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: Artistic-1.0-cl8
-- categories:
-  - weak-copyleft
-  - copyleft
-  - has-no-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - limitation:liability
-  - limitation:trademark-use
-  - limitation:warranty
   - osi-approved
   - fsf-free
-  id: Artistic-2.0
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: BSD-1-Clause
-- categories:
-  - permissive
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: BSD-2-Clause
-- categories:
-  - permissive
-  - has-patent-hint
-  - rating:Go
-  - osi-approved
-  id: BSD-2-Clause-Patent
+  id: Fair
 - categories:
   - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  id: CERN-OHL-1.1
+- categories:
+  - permissive
+  - rating:Go
   id: BSD-2-Clause-Views
 - categories:
-  - permissive
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: BSD-3-Clause
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OLDAP-1.1
 - categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: BSD-3-Clause-Attribution
-- categories:
-  - permissive
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - limitation:liability
-  - limitation:patent-use
-  - limitation:warranty
-  id: BSD-3-Clause-Clear
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  - fsf-free
-  id: BSD-3-Clause-LBNL
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-NC-ND-3.0-DE
 - categories:
   - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: BSD-3-Clause-No-Nuclear-License
+  id: OGDL-Taiwan-1.0
 - categories:
-  - permissive
-  - rating:Go
-  id: BSD-3-Clause-No-Nuclear-License-2014
-- categories:
-  - permissive
-  - rating:Go
-  id: BSD-3-Clause-No-Nuclear-Warranty
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: BSD-3-Clause-Open-MPI
-- categories:
-  - permissive
-  - rating:Attention
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - limitation:liability
-  - limitation:warranty
-  - fsf-free
-  id: BSD-4-Clause
-- categories:
-  - permissive
-  - rating:Attention
-  id: BSD-4-Clause-UC
-- categories:
-  - strong-copyleft
+  - weak-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   - fsf-free
-  id: BSD-Protection
+  id: NGPL
 - categories:
   - permissive
-  - rating:Go
-  id: BSD-Source-Code
-- categories:
-  - maybe-copyleft
   - has-no-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
+  - rating:Go
   - right:commercial-use
   - right:modifications
   - right:distribution
@@ -442,260 +991,30 @@ categorizations:
   id: BSL-1.0
 - categories:
   - permissive
-  - rating:Go
-  - fsf-free
-  id: Bahyph
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: Barr
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Beerware
-- categories:
-  - weak-copyleft
-  - copyleft
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: BitTorrent-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: BitTorrent-1.1
+  - fsf-free
+  id: Sendmail
 - categories:
   - permissive
   - rating:Go
-  id: BlueOak-1.0.0
+  id: OLDAP-2.4
 - categories:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
-  id: Borceux
-- categories:
-  - maximal-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: CAL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: CAL-1.0-Combined-Work-Exception
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: CATOSL-1.1
+  id: CrystalStacker
 - categories:
   - permissive
-  - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: CC-BY-1.0
+  id: blessing
 - categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-2.0
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-2.5
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-3.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-3.0-AT
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-3.0-US
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - limitation:liability
-  - limitation:trademark-use
-  - limitation:patent-use
-  - limitation:warranty
-  id: CC-BY-4.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-1.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-2.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-2.5
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-3.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-4.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-ND-1.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-ND-2.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-ND-2.5
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-ND-3.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-NC-ND-3.0-IGO
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-ND-4.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-SA-1.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-SA-2.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-SA-2.5
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-SA-3.0
-- categories:
-  - non-commercial
-  - rating:No-Go
-  id: CC-BY-NC-SA-4.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-ND-1.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-ND-2.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-ND-2.5
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-ND-3.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-ND-4.0
-- categories:
-  - strong-copyleft
   - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-SA-1.0
-- categories:
-  - strong-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-SA-2.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-SA-2.0-UK
-- categories:
-  - strong-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-SA-2.5
-- categories:
-  - strong-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-SA-3.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-BY-SA-3.0-AT
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-no-patent-hint
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -713,408 +1032,32 @@ categorizations:
   id: CC-BY-SA-4.0
 - categories:
   - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CC-PDDC
-- categories:
-  - permissive
-  - has-patent-hint
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - limitation:liability
-  - limitation:trademark-use
-  - limitation:patent-use
-  - limitation:warranty
-  id: CC0-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: CDDL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CDDL-1.1
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CDLA-Permissive-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CDLA-Sharing-1.0
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CECILL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CECILL-1.1
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CECILL-2.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - has-no-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - right:patent-use
-  - condition:include-copyright
-  - condition:disclose-source
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  id: CECILL-2.1
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: CECILL-B
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: CECILL-C
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CERN-OHL-1.1
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CERN-OHL-1.2
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CERN-OHL-P-2.0
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CERN-OHL-S-2.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CERN-OHL-W-2.0
-- categories:
-  - permissive
-  - rating:Go
-  id: CNRI-Jython
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: CNRI-Python
-- categories:
-  - permissive
-  - rating:Go
-  id: CNRI-Python-GPL-Compatible
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: CPAL-1.0
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: CPL-1.0
-- categories:
-  - maybe-copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: CPOL-1.02
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: CUA-OPL-1.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Caldera
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: ClArtistic
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Condor-1.1
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Crossword
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: CrystalStacker
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: Cube
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: D-FSL-1.0
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: DOC
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: DSDP
-- categories:
-  - permissive
   - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: Dotseqn
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - rating:Go
-  - osi-approved
-  - fsf-free
-  id: ECL-1.0
+  id: CC-BY-2.5
 - categories:
   - permissive
   - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - limitation:trademark-use
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: ECL-2.0
+  id: ICU
 - categories:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - osi-approved
-  id: EFL-1.0
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
   - fsf-free
-  id: EFL-2.0
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: EPICS
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:distribution
-  - right:modifications
-  - right:patent-use
-  - right:private-use
-  - condition:disclose-source
-  - condition:include-copyright
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: EPL-1.0
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:distribution
-  - right:modifications
-  - right:patent-use
-  - right:private-use
-  - condition:disclose-source
-  - condition:include-copyright
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: EPL-2.0
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: EUDatagrid
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: EUPL-1.0
-- categories:
-  - saas-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:disclose-source
-  - condition:document-changes
-  - condition:network-use-disclose
-  - condition:same-license
-  - limitation:liability
-  - limitation:trademark-use
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: EUPL-1.1
-- categories:
-  - saas-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:disclose-source
-  - condition:document-changes
-  - condition:network-use-disclose
-  - condition:same-license
-  - limitation:liability
-  - limitation:trademark-use
-  - limitation:warranty
-  - osi-approved
-  id: EUPL-1.2
+  id: diffmark
 - categories:
   - permissive
   - rating:Go
-  - osi-approved
-  - fsf-free
-  id: Entessa
+  id: libpng-2.0
 - categories:
   - weak-copyleft
   - copyleft
-  - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: ErlPL-1.1
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Eurosym
+  - osi-approved
+  id: RSCPL
 - categories:
   - permissive
   - maybe-rating:Go
@@ -1124,74 +1067,49 @@ categorizations:
   - fsf-free
   id: FSFAP
 - categories:
-  - permissive
-  - maybe-rating:Go
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: FSFUL
+  id: NPL-1.1
 - categories:
-  - permissive
-  - maybe-rating:Go
+  - saas-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
-  id: FSFULLR
+  id: OSL-1.1
 - categories:
   - permissive
   - rating:Go
-  id: FTL
+  - fsf-free
+  id: MIT-feh
 - categories:
   - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: Fair
-- categories:
-  - weak-copyleft
-  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - osi-approved
-  id: Frameworx-1.0
+  id: PDDL-1.0
 - categories:
-  - weak-copyleft
-  - copyleft
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: FreeImage
+  id: CERN-OHL-1.2
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: GFDL-1.1-invariants-only
+  id: CC-BY-3.0
 - categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.1-invariants-or-later
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.1-no-invariants-only
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.1-no-invariants-or-later
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.1-only
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-ND-2.0
 - categories:
   - weak-copyleft
   - copyleft
@@ -1200,103 +1118,106 @@ categorizations:
   - maybe-rating:No-Go
   id: GFDL-1.1-or-later
 - categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.2-invariants-only
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.2-invariants-or-later
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.2-no-invariants-only
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.2-no-invariants-or-later
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.2-only
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.2-or-later
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.3-invariants-only
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.3-invariants-or-later
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.3-no-invariants-only
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.3-no-invariants-or-later
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.3-only
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: GFDL-1.3-or-later
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
+  - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
-  id: GL2PS
+  id: Borceux
+- categories:
+  - permissive
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  id: NCSA
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  - fsf-free
+  id: Naumen
 - categories:
   - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: GLWTPL
+  id: Caldera
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: PHP-3.01
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.1-no-invariants-only
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: DOC
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OGC-1.0
 - categories:
   - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: GPL-3.0-only
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SAX-PD
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: CNRI-Python
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: HPND
+- categories:
+  - weak-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
-  id: GPL-1.0-only
-- categories:
-  - strong-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: GPL-1.0-or-later
+  id: CECILL-C
 - categories:
   - strong-copyleft
   - copyleft
@@ -1318,6 +1239,160 @@ categorizations:
   - fsf-free
   id: GPL-2.0-only
 - categories:
+  - permissive
+  - rating:Go
+  id: PSF-2.0
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: OFL-1.1-no-RFN
+- categories:
+  - permissive
+  - has-no-patent-hint
+  - rating:Go
+  - osi-approved
+  - fsf-free
+  id: W3C
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OFL-1.0-no-RFN
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: xinetd
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: OGTSL
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: AGPL-1.0-only
+- categories:
+  - permissive
+  - has-no-patent-hint
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - fsf-free
+  id: WTFPL
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: W3C-20150513
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-no-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: Sleepycat
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: JasPer-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: Nokia
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OGL-UK-2.0
+- categories:
+  - maximal-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: RPL-1.1
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SHL-0.51
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: LiLiQ-P-1.1
+- categories:
+  - maybe-copyleft
+  - has-no-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: OpenSSL
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: C-UDA-1.0
+- categories:
+  - permissive
+  - osi-approved
+  id: Xnet
+- categories:
+  - saas-copyleft
+  - copyleft
+  - has-no-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: APSL-2.0
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: FreeBSD-DOC
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NPL-1.0
+- categories:
   - strong-copyleft
   - copyleft
   - has-patent-hint
@@ -1328,60 +1403,86 @@ categorizations:
   - fsf-free
   id: GPL-2.0-or-later
 - categories:
-  - strong-copyleft
+  - weak-copyleft
   - copyleft
-  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - condition:disclose-source
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: GPL-3.0-only
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - condition:disclose-source
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: GPL-3.0-only
+  id: CECILL-2.0
 - categories:
   - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: Giftware
+  id: OFL-1.0
 - categories:
+  - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:patent-use
+  - right:private-use
+  - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: EPL-1.0
+- categories:
+  - weak-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
-  id: Glide
+  id: NOSL
+- categories:
+  - permissive
+  - rating:Go
+  id: MIT-CMU
+- categories:
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CERN-OHL-S-2.0
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: SWL
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-SA-2.5
+- categories:
+  - permissive
+  - has-no-patent-hint
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright--source
+  - condition:document-changes
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: Zlib
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-SA-3.0
 - categories:
   - permissive
   - maybe-rating:Go
@@ -1389,14 +1490,176 @@ categorizations:
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
-  id: Glulxe
+  id: iMatix
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-ND-2.5
 - categories:
   - permissive
+  - rating:Go
+  - osi-approved
+  - fsf-free
+  id: PHP-3.0
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: Barr
+- categories:
+  - permissive
+  - rating:Go
+  id: curl
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Zimbra-1.4
+- categories:
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: TOSL
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: AFL-1.2
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-ND-3.0-DE
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-SA-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.3-invariants-only
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GD
+- categories:
+  - permissive
+  - rating:Go
+  id: OLDAP-2.3
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: Unicode-DFS-2016
+- categories:
+  - permissive
+  - has-patent-hint
+  - rating:Go
+  id: IBM-pibs
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: FDK-AAC
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - osi-approved
   - fsf-free
-  id: HPND
+  id: CATOSL-1.1
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-ND-1.0
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: DSDP
+- categories:
+  - permissive
+  - has-patent-hint
+  - rating:Go
+  - osi-approved
+  id: BSD-2-Clause-Patent
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SugarCRM-1.1.3
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-NC-SA-2.0-UK
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-2.5
+- categories:
+  - permissive
+  - has-no-patent-hint
+  - rating:Go
+  - right:private-use
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: Unlicense
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: AGPL-1.0-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: GL2PS
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: zlib-acknowledgement
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: TU-Berlin-1.0
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: Apache-1.0
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Crossword
 - categories:
   - permissive
   - maybe-rating:Attention
@@ -1405,42 +1668,367 @@ categorizations:
   id: HPND-sell-variant
 - categories:
   - permissive
-  - maybe-rating:Go
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: BSD-2-Clause
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-SA-3.0-DE
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: AMPAS
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: YPL-1.1
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-SA-4.0
+- categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
-  id: HaskellReport
+  id: Glide
 - categories:
-  - maybe-rating:Attention
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: Hippocratic-2.1
+  - osi-approved
+  id: Artistic-1.0
 - categories:
-  - permissive
-  - has-patent-hint
-  - rating:Go
-  id: IBM-pibs
-- categories:
-  - permissive
-  - rating:Go
-  id: ICU
-- categories:
-  - permissive
-  - has-patent-hint
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: IJG
-- categories:
-  - strong-copyleft
+  - saas-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - osi-approved
   - fsf-free
-  id: IPA
+  id: OSL-1.0
+- categories:
+  - permissive
+  - rating:Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:private-use
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  id: 0BSD
+- categories:
+  - permissive
+  - rating:Go
+  id: OLDAP-2.7
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: TAPR-OHL-1.0
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Adobe-2006
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: AFL-1.1
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Spencer-94
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: XSkat
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Newsletr
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-SA-2.0
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: ZPL-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.3-only
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: EUPL-1.0
+- categories:
+  - permissive
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:patent-use
+  - limitation:warranty
+  id: BSD-3-Clause-Clear
+- categories:
+  - strong-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: GPL-1.0-or-later
+- categories:
+  - permissive
+  - rating:Go
+  id: CNRI-Jython
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Adobe-Glyph
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: MITNFA
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: APSL-1.0
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: JPNIC
+- categories:
+  - strong-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: BSD-Protection
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OGL-UK-1.0
+- categories:
+  - permissive
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:warranty
+  - osi-approved
+  id: MulanPSL-2.0
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: ImageMagick
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: OSL-2.0
+- categories:
+  - permissive
+  - rating:Go
+  id: OLDAP-2.0
+- categories:
+  - permissive
+  - rating:Go
+  id: bzip2-1.0.6
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Eurosym
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: JSON
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-NC-ND-3.0-IGO
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: LPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - right:patent-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  id: CECILL-2.1
+- categories:
+  - permissive
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  id: MIT-0
+- categories:
+  - permissive
+  - rating:Go
+  id: Spencer-99
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: PolyForm-Noncommercial-1.0.0
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Abstyles
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.3-or-later
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: NRL
+- categories:
+  - permissive
+  - rating:Go
+  id: Libpng
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NAIST-2003
+- categories:
+  - permissive
+  - has-no-patent-hint
+  - rating:Go
+  id: XFree86-1.1
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: OFL-1.1-RFN
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-3.0-US
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: EFL-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: LPPL-1.0
 - categories:
   - weak-copyleft
   - copyleft
@@ -1452,96 +2040,72 @@ categorizations:
   id: IPL-1.0
 - categories:
   - permissive
-  - has-no-patent-hint
-  - rating:Go
-  - right:commercial-use
-  - right:distribution
-  - right:modifications
-  - right:private-use
-  - condition:include-copyright
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  id: ISC
-- categories:
-  - permissive
   - rating:Go
   - fsf-free
-  id: ImageMagick
+  id: ANTLR-PD
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: PolyForm-Small-Business-1.0.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: GPL-1.0-only
+- categories:
+  - maximal-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CAL-1.0-Combined-Work-Exception
 - categories:
   - weak-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - fsf-free
-  id: Imlib2
+  id: FreeImage
 - categories:
   - permissive
   - rating:Go
-  id: Info-ZIP
-- categories:
-  - permissive
-  - osi-approved
-  - fsf-free
-  id: Intel
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Intel-ACPI
+  id: OLDAP-2.2.1
 - categories:
   - weak-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: Interbase-1.0
+  id: GFDL-1.2-no-invariants-or-later
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: JPNIC
+  id: GFDL-1.2-no-invariants-only
 - categories:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  id: JSON
+  - fsf-free
+  id: Afmparse
 - categories:
   - permissive
   - rating:Go
-  - fsf-free
-  id: JasPer-2.0
+  id: OLDAP-2.2.2
 - categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: LAL-1.2
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: LAL-1.3
-- categories:
-  - weak-copyleft
+  - maximal-copyleft
   - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - osi-approved
-  id: LGPL-2.0-only
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: LGPL-2.0-or-later
+  id: Parity-6.0.0
 - categories:
   - weak-copyleft
   - copyleft
@@ -1569,84 +2133,70 @@ categorizations:
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - osi-approved
-  id: LGPL-2.1-or-later
+  id: MPL-1.1
+- categories:
+  - permissive
+  - has-patent-hint
+  - rating:Go
+  id: bzip2-1.0.5
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: Cube
 - categories:
   - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: SISSL
+- categories:
+  - permissive
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: PostgreSQL
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CERN-OHL-P-2.0
+- categories:
+  - saas-copyleft
   - copyleft
   - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - right:commercial-use
-  - right:modifications
   - right:distribution
+  - right:modifications
   - right:patent-use
   - right:private-use
   - condition:include-copyright
   - condition:disclose-source
   - condition:document-changes
-  - condition:same-license--library
+  - condition:network-use-disclose
+  - condition:same-license
+  - limitation:trademark-use
   - limitation:liability
   - limitation:warranty
   - osi-approved
   - fsf-free
-  id: LGPL-3.0-only
-- categories:
-  - weak-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:disclose-source
-  - condition:document-changes
-  - condition:same-license--library
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: LGPL-3.0-only
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: LGPLLR
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: LPL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: LPL-1.02
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: LPPL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: LPPL-1.1
+  id: OSL-3.0
 - categories:
   - weak-copyleft
   - copyleft
@@ -1654,6 +2204,510 @@ categorizations:
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: LPPL-1.2
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: xpp
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: OLDAP-2.8
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: AML
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: Motosoto
+- categories:
+  - strong-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:same-license
+  - fsf-free
+  id: Vim
+- categories:
+  - permissive
+  - rating:Go
+  id: TCP-wrappers
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Sendmail-8.23
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Ruby
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.1-invariants-or-later
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-2.5-AU
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: NetCDF
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: BSD-1-Clause
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Leptonica
+- categories:
+  - saas-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: AGPL-3.0-or-later
+- categories:
+  - permissive
+  - has-no-patent-hint
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Beerware
+- categories:
+  - saas-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:network-use-disclose
+  - condition:same-license
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:warranty
+  - osi-approved
+  id: EUPL-1.2
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: OSET-PL-2.1
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SISSL-1.2
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-3.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OLDAP-1.4
+- categories:
+  - permissive
+  - rating:Go
+  id: ICU
+- categories:
+  - permissive
+  - osi-approved
+  - fsf-free
+  id: Intel
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CDLA-Permissive-1.0
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NIST-PD
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: LiLiQ-R-1.1
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: SMLNJ
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: BUSL-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CDDL-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-SA-3.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-SA-2.1-JP
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Wsuipa
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: MPL-2.0-no-copyleft-exception
+- categories:
+  - permissive
+  - rating:Go
+  id: Unicode-DFS-2015
+- categories:
+  - permissive
+  - rating:Go
+  id: CNRI-Python-GPL-Compatible
+- categories:
+  - permissive
+  - rating:Go
+  id: OLDAP-2.0.1
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: psutils
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: Artistic-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: Artistic-1.0-cl8
+- categories:
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Aladdin
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:same-license--library
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: LGPL-3.0-only
+- categories:
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: SNIA
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-NC-SA-3.0-IGO
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SSPL-1.0
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: RPSL-1.0
+- categories:
+  - permissive
+  - rating:Go
+  id: MIT-open-group
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  - fsf-free
+  id: BSD-3-Clause-LBNL
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: CECILL-B
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: Frameworx-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: RHeCos-1.1
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: LAL-1.2
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: OML
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: UCL-1.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: APL-1.0
+- categories:
+  - permissive
+  - rating:Go
+  id: OLDAP-2.2
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CERN-OHL-W-2.0
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: DRL-1.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-ND-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.3-no-invariants-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CECILL-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Noweb
+- categories:
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: MakeIndex
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license--file
+  - limitation:warranty
+  - limitation:trademark-use
+  - osi-approved
+  - fsf-free
+  id: MS-RL
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: TORQUE-1.1
+- categories:
+  - permissive
+  - has-patent-hint
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - right:patent-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:trademark-use
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  id: AFL-3.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.1-invariants-only
+- categories:
+  - permissive
+  - rating:Go
+  id: FTL
+- categories:
+  - permissive
+  - has-patent-hint
+  - rating:Go
+  - osi-approved
+  id: AFL-2.0
 - categories:
   - weak-copyleft
   - copyleft
@@ -1664,47 +2718,27 @@ categorizations:
 - categories:
   - weak-copyleft
   - copyleft
-  - has-no-patent-hint
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OLDAP-1.2
+- categories:
+  - strong-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - right:commercial-use
-  - right:modifications
   - right:distribution
+  - right:modifications
   - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
   - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license
   - limitation:liability
+  - limitation:patent-use
+  - limitation:trademark-use
   - limitation:warranty
-  - osi-approved
-  id: LPPL-1.3c
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Latex2e
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Leptonica
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: LiLiQ-P-1.1
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: LiLiQ-R-1.1
+  id: ODbL-1.0
 - categories:
   - maybe-rating:Attention
   - maybe-rating:Stop
@@ -1712,13 +2746,171 @@ categorizations:
   - osi-approved
   id: LiLiQ-Rplus-1.1
 - categories:
-  - permissive
-  - rating:Go
-  id: Libpng
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Qhull
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OCCT-PL
 - categories:
   - permissive
   - rating:Go
-  id: Linux-OpenIB
+  - osi-approved
+  id: NTP
+- categories:
+  - saas-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:network-use-disclose
+  - condition:same-license
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: EUPL-1.1
+- categories:
+  - maybe-copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CPOL-1.02
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: OCLC-2.0
+- categories:
+  - permissive
+  - rating:Go
+  id: OLDAP-2.1
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Intel-ACPI
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OFL-1.0-RFN
+- categories:
+  - permissive
+  - has-patent-hint
+  - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:patent-use
+  - limitation:warranty
+  id: CC0-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: LGPL-2.0-or-later
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: SGI-B-1.1
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-ND-3.0
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: etalab-2.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-NC-SA-2.0-FR
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
+  - osi-approved
+  - fsf-free
+  id: GPL-3.0-only
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Zend-2.0
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: MirOS
+- categories:
+  - permissive
+  - rating:Go
+  id: BSD-3-Clause-No-Nuclear-License-2014
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: BitTorrent-1.0
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-ND-3.0
 - categories:
   - permissive
   - has-no-patent-hint
@@ -1735,18 +2927,63 @@ categorizations:
   id: MIT
 - categories:
   - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NIST-PD-fallback
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-NC-3.0-DE
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: FSFULLR
+- categories:
+  - non-commercial
+  - rating:No-Go
+  id: CC-BY-NC-1.0
+- categories:
+  - permissive
+  - has-no-patent-hint
   - rating:Go
   - osi-approved
-  id: MIT-0
+  id: Python-2.0
 - categories:
   - permissive
   - rating:Go
-  id: MIT-CMU
+  id: ANTLR-PD-fallback
 - categories:
   - permissive
   - rating:Go
+  id: MulanPSL-1.0
+- categories:
+  - permissive
+  - has-patent-hint
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:patent-use
+  - limitation:warranty
+  id: CC-BY-4.0
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
   - fsf-free
-  id: MIT-advertising
+  id: Rdisc
 - categories:
   - permissive
   - rating:Go
@@ -1754,31 +2991,8 @@ categorizations:
   id: MIT-enna
 - categories:
   - permissive
-  - rating:Go
-  - fsf-free
-  id: MIT-feh
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: MITNFA
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: MPL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: MPL-1.1
+  - rating:Attention
+  id: BSD-4-Clause-UC
 - categories:
   - weak-copyleft
   - copyleft
@@ -1805,8 +3019,218 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  id: YPL-1.0
+- categories:
+  - permissive
+  - rating:Go
   - osi-approved
-  id: MPL-2.0-no-copyleft-exception
+  id: ZPL-2.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: copyleft-next-0.3.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.3-invariants-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: LPL-1.02
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NLOD-1.0
+- categories:
+  - permissive
+  - rating:Go
+  - osi-approved
+  id: MIT-Modern-Variant
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: MTLL
+- categories:
+  - permissive
+  - has-no-patent-hint
+  - rating:Go
+  - osi-approved
+  - fsf-free
+  id: ECL-1.0
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: EPICS
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: BSD-3-Clause-Attribution
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GFDL-1.2-invariants-only
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: AMDPLPA
+- categories:
+  - permissive
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: FSFUL
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-3.0-AT
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CDLA-Sharing-1.0
+- categories:
+  - permissive
+  - rating:Go
+  id: OLDAP-2.6
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: LAL-1.3
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: OPUBL-1.0
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: Bahyph
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: CC-BY-SA-3.0-AT
+- categories:
+  - permissive
+  - has-patent-hint
+  - rating:Go
+  - osi-approved
+  id: AFL-2.1
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NTP-0
+- categories:
+  - saas-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  - fsf-free
+  id: OSL-2.1
+- categories:
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: NCGL-UK-2.0
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: Glulxe
+- categories:
+  - strong-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: copyleft-next-0.3.0
+- categories:
+  - permissive
+  - maybe-rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - fsf-free
+  id: dvipdfm
+- categories:
+  - permissive
+  - rating:Go
+  - fsf-free
+  id: libtiff
+- categories:
+  - permissive
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: GLWTPL
+- categories:
+  - maximal-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: CAL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  - osi-approved
+  id: Artistic-1.0-Perl
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: gSOAP-1.3b
+- categories:
+  - permissive
+  - rating:Go
+  id: OLDAP-2.5
+- categories:
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
+  id: Interbase-1.0
 - categories:
   - weak-copyleft
   - copyleft
@@ -1825,1212 +3249,3 @@ categorizations:
   - osi-approved
   - fsf-free
   id: MS-PL
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:disclose-source
-  - condition:include-copyright
-  - condition:same-license--file
-  - limitation:warranty
-  - limitation:trademark-use
-  - osi-approved
-  - fsf-free
-  id: MS-RL
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: MTLL
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: MakeIndex
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: MirOS
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: Motosoto
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: MulanPSL-1.0
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: MulanPSL-2.0
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: Multics
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: Mup
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: NASA-1.3
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: NBPL-1.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: NCGL-UK-2.0
-- categories:
-  - permissive
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  id: NCSA
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: NGPL
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: NIST-PD
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: NIST-PD-fallback
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: NLOD-1.0
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: NLPL
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: NOSL
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: NPL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - has-no-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: NPL-1.1
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: NPOSL-3.0
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: NRL
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: NTP
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: NTP-0
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  - fsf-free
-  id: Naumen
-- categories:
-  - permissive
-  - rating:Go
-  id: Net-SNMP
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: NetCDF
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Newsletr
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: Nokia
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Noweb
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: O-UDA-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OCCT-PL
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: OCLC-2.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: ODC-By-1.0
-- categories:
-  - strong-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:distribution
-  - right:modifications
-  - right:private-use
-  - condition:disclose-source
-  - condition:include-copyright
-  - condition:same-license
-  - limitation:liability
-  - limitation:patent-use
-  - limitation:trademark-use
-  - limitation:warranty
-  id: ODbL-1.0
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OFL-1.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OFL-1.0-RFN
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OFL-1.0-no-RFN
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:private-use
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - condition:include-copyright
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  id: OFL-1.1
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: OFL-1.1-RFN
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: OFL-1.1-no-RFN
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OGC-1.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OGL-Canada-2.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OGL-UK-1.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OGL-UK-2.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OGL-UK-3.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: OGTSL
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OLDAP-1.1
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OLDAP-1.2
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OLDAP-1.3
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OLDAP-1.4
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.0
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.0.1
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.1
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.2
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.2.1
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.2.2
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.3
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.4
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.5
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.6
-- categories:
-  - permissive
-  - rating:Go
-  id: OLDAP-2.7
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: OLDAP-2.8
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: OML
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: OPL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: OSET-PL-2.1
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: OSL-1.0
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: OSL-1.1
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: OSL-2.0
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: OSL-2.1
-- categories:
-  - saas-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:distribution
-  - right:modifications
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:disclose-source
-  - condition:document-changes
-  - condition:network-use-disclose
-  - condition:same-license
-  - limitation:trademark-use
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: OSL-3.0
-- categories:
-  - maybe-copyleft
-  - has-no-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: OpenSSL
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: PDDL-1.0
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  - fsf-free
-  id: PHP-3.0
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: PHP-3.01
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: PSF-2.0
-- categories:
-  - maximal-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Parity-6.0.0
-- categories:
-  - maximal-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Parity-7.0.0
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: Plexus
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: PolyForm-Noncommercial-1.0.0
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: PolyForm-Small-Business-1.0.0
-- categories:
-  - permissive
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: PostgreSQL
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - rating:Go
-  - osi-approved
-  id: Python-2.0
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-no-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: QPL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Qhull
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: RHeCos-1.1
-- categories:
-  - maximal-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: RPL-1.1
-- categories:
-  - maximal-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: RPL-1.5
-- categories:
-  - saas-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: RPSL-1.0
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: RSA-MD
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: RSCPL
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Rdisc
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Ruby
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SAX-PD
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: SCEA
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SGI-B-1.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SGI-B-1.1
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: SGI-B-2.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SHL-0.5
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SHL-0.51
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: SISSL
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SISSL-1.2
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: SMLNJ
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SMPPL
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: SNIA
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: SPL-1.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SSH-OpenSSH
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SSH-short
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SSPL-1.0
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: SWL
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: Saxpath
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Sendmail
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Sendmail-8.23
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: SimPL-2.0
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-no-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  - fsf-free
-  id: Sleepycat
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Spencer-86
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Spencer-94
-- categories:
-  - permissive
-  - rating:Go
-  id: Spencer-99
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: SugarCRM-1.1.3
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: TAPR-OHL-1.0
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: TCL
-- categories:
-  - permissive
-  - rating:Go
-  id: TCP-wrappers
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: TMate
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: TORQUE-1.1
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: TOSL
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: TU-Berlin-1.0
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: TU-Berlin-2.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: UCL-1.0
-- categories:
-  - permissive
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  id: UPL-1.0
-- categories:
-  - permissive
-  - rating:Go
-  id: Unicode-DFS-2015
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: Unicode-DFS-2016
-- categories:
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Unicode-TOU
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - rating:Go
-  - right:private-use
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: Unlicense
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: VOSTROM
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: VSL-1.0
-- categories:
-  - strong-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - condition:disclose-source
-  - condition:same-license
-  - fsf-free
-  id: Vim
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - rating:Go
-  - osi-approved
-  - fsf-free
-  id: W3C
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: W3C-19980720
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: W3C-20150513
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - fsf-free
-  id: WTFPL
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - osi-approved
-  id: Watcom-1.0
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Wsuipa
-- categories:
-  - permissive
-  - rating:Go
-  id: ICU
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - rating:Go
-  id: XFree86-1.1
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: XSkat
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: Xerox
-- categories:
-  - permissive
-  - osi-approved
-  id: Xnet
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: YPL-1.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: YPL-1.1
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: ZPL-1.1
-- categories:
-  - permissive
-  - rating:Go
-  - osi-approved
-  id: ZPL-2.0
-- categories:
-  - permissive
-  - rating:Go
-  id: ZPL-2.1
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Zed
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: Zend-2.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Zimbra-1.3
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: Zimbra-1.4
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - rating:Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright--source
-  - condition:document-changes
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: Zlib
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: blessing
-- categories:
-  - permissive
-  - has-patent-hint
-  - rating:Go
-  id: bzip2-1.0.5
-- categories:
-  - permissive
-  - rating:Go
-  id: bzip2-1.0.6
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: copyleft-next-0.3.0
-- categories:
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: copyleft-next-0.3.1
-- categories:
-  - permissive
-  - rating:Go
-  id: curl
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: diffmark
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: dvipdfm
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: eGenix
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: etalab-2.0
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: gSOAP-1.3b
-- categories:
-  - weak-copyleft
-  - copyleft
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: gnuplot
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: iMatix
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: libpng-2.0
-- categories:
-  - permissive
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: libselinux-1.0
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: libtiff
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: mpich2
-- categories:
-  - permissive
-  - maybe-rating:Go
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  id: psfrag
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: psutils
-- categories:
-  - permissive
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - fsf-free
-  id: xinetd
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: xpp
-- categories:
-  - permissive
-  - rating:Go
-  - fsf-free
-  id: zlib-acknowledgement

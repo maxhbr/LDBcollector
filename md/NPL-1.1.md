@@ -58,7 +58,7 @@
 
 -   **Homepage:** http://www.mozilla.org/MPL/NPL-1.1.html
 
--   **SPDX:** http://spdx.org/licenses/NPL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/NPL-1.1.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/826
 
@@ -296,7 +296,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Netscape Public License v1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/NPL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NPL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/NPL-1.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -312,7 +312,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NPL-1.1.json"
+                            "https://spdx.org/licenses/NPL-1.1.json"
                         ],
                         [
                             null,
@@ -879,7 +879,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NPL-1.1.json"
+                "https://spdx.org/licenses/NPL-1.1.json"
             ],
             [
                 null,

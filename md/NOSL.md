@@ -21,7 +21,7 @@
 
 -   **Homepage:** http://bits.netizen.com.au/licenses/NOSL/
 
--   **SPDX:** http://spdx.org/licenses/NOSL.json
+-   **SPDX:** https://spdx.org/licenses/NOSL.json
 
 -   http://bits.netizen.com.au/licenses/NOSL/nosl.txt
 
@@ -563,7 +563,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Netizen Open Source License",
-                "spdxDetailsURL": "http://spdx.org/licenses/NOSL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NOSL.json",
                 "_sourceURL": "https://spdx.org/licenses/NOSL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -579,7 +579,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NOSL.json"
+                            "https://spdx.org/licenses/NOSL.json"
                         ],
                         [
                             null,
@@ -697,7 +697,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/NOSL.json"
+                "https://spdx.org/licenses/NOSL.json"
             ],
             [
                 null,

@@ -27,7 +27,7 @@
 -   **Homepage:**
     http://www.gnu.org/prep/maintain/html\_node/License-Notices-for-Other-Files.html
 
--   **SPDX:** http://spdx.org/licenses/FSFAP.json
+-   **SPDX:** https://spdx.org/licenses/FSFAP.json
 
 -   http://www.gnu.org/software/autoconf-archive/ax\_lib\_readline.html
 
@@ -94,7 +94,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "FSF All Permissive License",
-                "spdxDetailsURL": "http://spdx.org/licenses/FSFAP.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/FSFAP.json",
                 "_sourceURL": "https://spdx.org/licenses/FSFAP.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -110,7 +110,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/FSFAP.json"
+                            "https://spdx.org/licenses/FSFAP.json"
                         ],
                         [
                             null,
@@ -237,7 +237,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/FSFAP.json"
+                "https://spdx.org/licenses/FSFAP.json"
             ],
             [
                 null,

@@ -33,7 +33,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/MTLL.html
 
--   **SPDX:** http://spdx.org/licenses/MTLL.json
+-   **SPDX:** https://spdx.org/licenses/MTLL.json
 
 ## Text
 
@@ -116,7 +116,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Matrix Template Library License",
-                "spdxDetailsURL": "http://spdx.org/licenses/MTLL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MTLL.json",
                 "_sourceURL": "https://spdx.org/licenses/MTLL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -132,7 +132,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MTLL.json"
+                            "https://spdx.org/licenses/MTLL.json"
                         ],
                         [
                             null,
@@ -289,7 +289,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MTLL.json"
+                "https://spdx.org/licenses/MTLL.json"
             ],
             [
                 null,

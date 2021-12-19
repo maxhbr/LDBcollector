@@ -28,7 +28,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/eGenix.html
 
--   **SPDX:** http://spdx.org/licenses/eGenix.json
+-   **SPDX:** https://spdx.org/licenses/eGenix.json
 
 -   https://fedoraproject.org/wiki/Licensing/eGenix.com\_Public\_License\_1.1.0
 
@@ -125,7 +125,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "eGenix.com Public License 1.1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/eGenix.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/eGenix.json",
                 "_sourceURL": "https://spdx.org/licenses/eGenix.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -142,7 +142,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/eGenix.json"
+                            "https://spdx.org/licenses/eGenix.json"
                         ],
                         [
                             null,
@@ -295,7 +295,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/eGenix.json"
+                "https://spdx.org/licenses/eGenix.json"
             ],
             [
                 null,

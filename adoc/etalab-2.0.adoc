@@ -25,7 +25,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:*
 https://raw.githubusercontent.com/DISIC/politique-de-contribution-open-source/master/LICENSE
-* *SPDX:* http://spdx.org/licenses/etalab-2.0.json
+* *SPDX:* https://spdx.org/licenses/etalab-2.0.json
 * https://github.com/DISIC/politique-de-contribution-open-source/blob/master/LICENSE.pdf
 * https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf
 
@@ -154,7 +154,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Etalab Open License 2.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/etalab-2.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/etalab-2.0.json",
             "_sourceURL": "https://spdx.org/licenses/etalab-2.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -171,7 +171,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/etalab-2.0.json"
+                        "https://spdx.org/licenses/etalab-2.0.json"
                     ],
                     [
                         null,
@@ -259,7 +259,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/etalab-2.0.json"
+            "https://spdx.org/licenses/etalab-2.0.json"
         ],
         [
             null,

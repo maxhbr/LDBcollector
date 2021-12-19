@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Zed.html
 
--   **SPDX:** http://spdx.org/licenses/Zed.json
+-   **SPDX:** https://spdx.org/licenses/Zed.json
 
 ## Text
 
@@ -82,7 +82,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zed License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Zed.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Zed.json",
                 "_sourceURL": "https://spdx.org/licenses/Zed.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -98,7 +98,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Zed.json"
+                            "https://spdx.org/licenses/Zed.json"
                         ],
                         [
                             null,
@@ -247,7 +247,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Zed.json"
+                "https://spdx.org/licenses/Zed.json"
             ],
             [
                 null,

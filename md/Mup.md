@@ -32,7 +32,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Mup.html
 
--   **SPDX:** http://spdx.org/licenses/Mup.json
+-   **SPDX:** https://spdx.org/licenses/Mup.json
 
 -   https://fedoraproject.org/wiki/Licensing/Mup
 
@@ -108,7 +108,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Mup License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Mup.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Mup.json",
                 "_sourceURL": "https://spdx.org/licenses/Mup.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -124,7 +124,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Mup.json"
+                            "https://spdx.org/licenses/Mup.json"
                         ],
                         [
                             null,
@@ -281,7 +281,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Mup.json"
+                "https://spdx.org/licenses/Mup.json"
             ],
             [
                 null,

@@ -23,7 +23,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Spencer-99.html
 
--   **SPDX:** http://spdx.org/licenses/Spencer-99.json
+-   **SPDX:** https://spdx.org/licenses/Spencer-99.json
 
 ## Text
 
@@ -93,7 +93,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Spencer License 99",
-                "spdxDetailsURL": "http://spdx.org/licenses/Spencer-99.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Spencer-99.json",
                 "_sourceURL": "https://spdx.org/licenses/Spencer-99.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -109,7 +109,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Spencer-99.json"
+                            "https://spdx.org/licenses/Spencer-99.json"
                         ],
                         [
                             null,
@@ -222,7 +222,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Spencer-99.json"
+                "https://spdx.org/licenses/Spencer-99.json"
             ],
             [
                 null,

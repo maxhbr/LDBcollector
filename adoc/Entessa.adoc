@@ -41,7 +41,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *OSI Page:* https://opensource.org/licenses/Entessa
 * *OSI Page:* http://opensource.org/licenses/entessa.php
 * *SPDX:* https://spdx.org/licenses/Entessa.html
-* *SPDX:* http://spdx.org/licenses/Entessa.json
+* *SPDX:* https://spdx.org/licenses/Entessa.json
 * http://sourceforge.net/softwaremap/?&fq[]=trove%3A397
 
 === Text
@@ -188,7 +188,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Entessa Public License v1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/Entessa.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Entessa.json",
             "_sourceURL": "https://spdx.org/licenses/Entessa.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -213,7 +213,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Entessa.json"
+                        "https://spdx.org/licenses/Entessa.json"
                     ],
                     [
                         null,
@@ -528,7 +528,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Entessa.json"
+            "https://spdx.org/licenses/Entessa.json"
         ],
         [
             "Homepage",

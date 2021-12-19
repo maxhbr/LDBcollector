@@ -14,7 +14,7 @@
 
 -   **Homepage:** https://solderpad.org/licenses/SHL-0.5/
 
--   **SPDX:** http://spdx.org/licenses/SHL-0.5.json
+-   **SPDX:** https://spdx.org/licenses/SHL-0.5.json
 
 ## Text
 
@@ -182,7 +182,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Solderpad Hardware License v0.5",
-                "spdxDetailsURL": "http://spdx.org/licenses/SHL-0.5.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SHL-0.5.json",
                 "_sourceURL": "https://spdx.org/licenses/SHL-0.5.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -198,7 +198,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SHL-0.5.json"
+                            "https://spdx.org/licenses/SHL-0.5.json"
                         ],
                         [
                             null,
@@ -264,7 +264,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/SHL-0.5.json"
+                "https://spdx.org/licenses/SHL-0.5.json"
             ],
             [
                 null,

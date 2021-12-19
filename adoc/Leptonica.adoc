@@ -29,7 +29,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Leptonica
 * *SPDX:* https://spdx.org/licenses/Leptonica.html
-* *SPDX:* http://spdx.org/licenses/Leptonica.json
+* *SPDX:* https://spdx.org/licenses/Leptonica.json
 
 === Text
 
@@ -88,7 +88,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Leptonica License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Leptonica.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Leptonica.json",
             "_sourceURL": "https://spdx.org/licenses/Leptonica.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -104,7 +104,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Leptonica.json"
+                        "https://spdx.org/licenses/Leptonica.json"
                     ],
                     [
                         null,
@@ -253,7 +253,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Leptonica.json"
+            "https://spdx.org/licenses/Leptonica.json"
         ],
         [
             null,

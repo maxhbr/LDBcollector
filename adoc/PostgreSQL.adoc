@@ -76,7 +76,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/postgresql.
 * *OSI Page:* https://opensource.org/licenses/PostgreSQL
 * *OSI Page:* http://www.opensource.org/licenses/postgresql
 * *SPDX:* https://spdx.org/licenses/PostgreSQL.html
-* *SPDX:* http://spdx.org/licenses/PostgreSQL.json
+* *SPDX:* https://spdx.org/licenses/PostgreSQL.json
 * *open-license:* http://open-license.hitachi.com/licenses/608
 
 === Description from open-license
@@ -240,7 +240,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "PostgreSQL License",
-            "spdxDetailsURL": "http://spdx.org/licenses/PostgreSQL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/PostgreSQL.json",
             "_sourceURL": "https://spdx.org/licenses/PostgreSQL.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -266,7 +266,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/PostgreSQL.json"
+                        "https://spdx.org/licenses/PostgreSQL.json"
                     ],
                     [
                         null,
@@ -750,7 +750,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/PostgreSQL.json"
+            "https://spdx.org/licenses/PostgreSQL.json"
         ],
         [
             null,

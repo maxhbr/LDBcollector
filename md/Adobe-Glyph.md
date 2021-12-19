@@ -22,7 +22,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
 
--   **SPDX:** http://spdx.org/licenses/Adobe-Glyph.json
+-   **SPDX:** https://spdx.org/licenses/Adobe-Glyph.json
 
 ## Text
 
@@ -80,7 +80,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Adobe Glyph List License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Adobe-Glyph.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Adobe-Glyph.json",
                 "_sourceURL": "https://spdx.org/licenses/Adobe-Glyph.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -96,7 +96,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Adobe-Glyph.json"
+                            "https://spdx.org/licenses/Adobe-Glyph.json"
                         ],
                         [
                             null,
@@ -194,7 +194,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Adobe-Glyph.json"
+                "https://spdx.org/licenses/Adobe-Glyph.json"
             ],
             [
                 null,

@@ -33,7 +33,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/NGPL
 
--   **SPDX:** http://spdx.org/licenses/NGPL.json
+-   **SPDX:** https://spdx.org/licenses/NGPL.json
 
 -   http://www.opensource.org/licenses/NGPL
 
@@ -167,7 +167,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Nethack General Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/NGPL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NGPL.json",
                 "_sourceURL": "https://spdx.org/licenses/NGPL.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -192,7 +192,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NGPL.json"
+                            "https://spdx.org/licenses/NGPL.json"
                         ],
                         [
                             null,
@@ -388,7 +388,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NGPL.json"
+                "https://spdx.org/licenses/NGPL.json"
             ],
             [
                 "Homepage",

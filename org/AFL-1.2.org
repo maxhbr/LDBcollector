@@ -33,7 +33,7 @@
 
 - *Homepage:* https://spdx.org/licenses/AFL-1.2.html
 
-- *SPDX:* http://spdx.org/licenses/AFL-1.2.json
+- *SPDX:* https://spdx.org/licenses/AFL-1.2.json
 
 - http://opensource.linux-mirror.org/licenses/afl-1.2.txt
 
@@ -187,7 +187,7 @@
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Academic Free License v1.2",
-              "spdxDetailsURL": "http://spdx.org/licenses/AFL-1.2.json",
+              "spdxDetailsURL": "https://spdx.org/licenses/AFL-1.2.json",
               "_sourceURL": "https://spdx.org/licenses/AFL-1.2.html",
               "spdxLicIsOSIApproved": true,
               "spdxSeeAlso": [
@@ -213,7 +213,7 @@
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/AFL-1.2.json"
+                          "https://spdx.org/licenses/AFL-1.2.json"
                       ],
                       [
                           null,
@@ -396,7 +396,7 @@
           ],
           [
               "SPDX",
-              "http://spdx.org/licenses/AFL-1.2.json"
+              "https://spdx.org/licenses/AFL-1.2.json"
           ],
           [
               null,

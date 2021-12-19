@@ -36,7 +36,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.opensource.org/licenses/nokia.html
 * *OSI Page:* https://opensource.org/licenses/Nokia
-* *SPDX:* http://spdx.org/licenses/Nokia.json
+* *SPDX:* https://spdx.org/licenses/Nokia.json
 * http://www.opensource.org/licenses/nokia
 
 === Text
@@ -522,7 +522,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Nokia Open Source License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Nokia.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Nokia.json",
             "_sourceURL": "https://spdx.org/licenses/Nokia.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -547,7 +547,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Nokia.json"
+                        "https://spdx.org/licenses/Nokia.json"
                     ],
                     [
                         null,
@@ -767,7 +767,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Nokia.json"
+            "https://spdx.org/licenses/Nokia.json"
         ],
         [
             null,

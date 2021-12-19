@@ -1,0 +1,68 @@
+{
+    "__impliedNames": [
+        "FDK-AAC",
+        "Fraunhofer FDK AAC Codec Library"
+    ],
+    "__impliedId": "FDK-AAC",
+    "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "FDK-AAC"
+                ],
+                "__impliedId": "FDK-AAC"
+            },
+            "shortname": "FDK-AAC",
+            "otherNames": []
+        },
+        "SPDX": {
+            "isSPDXLicenseDeprecated": false,
+            "spdxFullName": "Fraunhofer FDK AAC Codec Library",
+            "spdxDetailsURL": "https://spdx.org/licenses/FDK-AAC.json",
+            "_sourceURL": "https://spdx.org/licenses/FDK-AAC.html",
+            "spdxLicIsOSIApproved": false,
+            "spdxSeeAlso": [
+                "https://fedoraproject.org/wiki/Licensing/FDK-AAC",
+                "https://directory.fsf.org/wiki/License:Fdk"
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "FDK-AAC",
+                    "Fraunhofer FDK AAC Codec Library"
+                ],
+                "__impliedId": "FDK-AAC",
+                "__isOsiApproved": false,
+                "__impliedURLs": [
+                    [
+                        "SPDX",
+                        "https://spdx.org/licenses/FDK-AAC.json"
+                    ],
+                    [
+                        null,
+                        "https://fedoraproject.org/wiki/Licensing/FDK-AAC"
+                    ],
+                    [
+                        null,
+                        "https://directory.fsf.org/wiki/License:Fdk"
+                    ]
+                ]
+            },
+            "spdxLicenseId": "FDK-AAC"
+        }
+    },
+    "__isOsiApproved": false,
+    "__impliedURLs": [
+        [
+            "SPDX",
+            "https://spdx.org/licenses/FDK-AAC.json"
+        ],
+        [
+            null,
+            "https://fedoraproject.org/wiki/Licensing/FDK-AAC"
+        ],
+        [
+            null,
+            "https://directory.fsf.org/wiki/License:Fdk"
+        ]
+    ]
+}

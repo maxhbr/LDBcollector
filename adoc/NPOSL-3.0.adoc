@@ -44,7 +44,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.opensource.org/licenses/NOSL3.0.html
 * *OSI Page:* https://opensource.org/licenses/NPOSL-3.0
-* *SPDX:* http://spdx.org/licenses/NPOSL-3.0.json
+* *SPDX:* https://spdx.org/licenses/NPOSL-3.0.json
 * https://spdx.org/licenses/NPOSL-3.0.html
 * https://opensource.org/licenses/NOSL3.0
 * http://www.opensource.org/licenses/NOSL3.0
@@ -210,7 +210,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Non-Profit Open Software License 3.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/NPOSL-3.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/NPOSL-3.0.json",
             "_sourceURL": "https://spdx.org/licenses/NPOSL-3.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -235,7 +235,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/NPOSL-3.0.json"
+                        "https://spdx.org/licenses/NPOSL-3.0.json"
                     ],
                     [
                         null,
@@ -439,7 +439,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/NPOSL-3.0.json"
+            "https://spdx.org/licenses/NPOSL-3.0.json"
         ],
         [
             null,

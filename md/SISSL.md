@@ -69,7 +69,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/SISSL
 
--   **SPDX:** http://spdx.org/licenses/SISSL.json
+-   **SPDX:** https://spdx.org/licenses/SISSL.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1486
 
@@ -625,7 +625,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sun Industry Standards Source License v1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/SISSL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SISSL.json",
                 "_sourceURL": "https://spdx.org/licenses/SISSL.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -651,7 +651,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SISSL.json"
+                            "https://spdx.org/licenses/SISSL.json"
                         ],
                         [
                             null,
@@ -1314,7 +1314,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/SISSL.json"
+                "https://spdx.org/licenses/SISSL.json"
             ],
             [
                 null,

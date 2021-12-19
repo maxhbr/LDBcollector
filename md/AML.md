@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/AML.html
 
--   **SPDX:** http://spdx.org/licenses/AML.json
+-   **SPDX:** https://spdx.org/licenses/AML.json
 
 ## Text
 
@@ -87,7 +87,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Apple MIT License",
-                "spdxDetailsURL": "http://spdx.org/licenses/AML.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/AML.json",
                 "_sourceURL": "https://spdx.org/licenses/AML.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -103,7 +103,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/AML.json"
+                            "https://spdx.org/licenses/AML.json"
                         ],
                         [
                             null,
@@ -252,7 +252,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/AML.json"
+                "https://spdx.org/licenses/AML.json"
             ],
             [
                 null,

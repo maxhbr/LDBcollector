@@ -42,7 +42,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/zlib-acknowledgement.html
 
--   **SPDX:** http://spdx.org/licenses/zlib-acknowledgement.json
+-   **SPDX:** https://spdx.org/licenses/zlib-acknowledgement.json
 
 -   https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
 
@@ -159,7 +159,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "zlib/libpng License with Acknowledgement",
-                "spdxDetailsURL": "http://spdx.org/licenses/zlib-acknowledgement.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/zlib-acknowledgement.json",
                 "_sourceURL": "https://spdx.org/licenses/zlib-acknowledgement.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -175,7 +175,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/zlib-acknowledgement.json"
+                            "https://spdx.org/licenses/zlib-acknowledgement.json"
                         ],
                         [
                             null,
@@ -399,7 +399,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/zlib-acknowledgement.json"
+                "https://spdx.org/licenses/zlib-acknowledgement.json"
             ],
             [
                 null,

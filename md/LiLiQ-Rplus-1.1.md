@@ -20,7 +20,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/LiLiQ-Rplus-1.1
 
--   **SPDX:** http://spdx.org/licenses/LiLiQ-Rplus-1.1.json
+-   **SPDX:** https://spdx.org/licenses/LiLiQ-Rplus-1.1.json
 
 -   https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-en-francais/licence-libre-du-quebec-reciprocite-forte-liliq-r-v1-1/
 
@@ -67,7 +67,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Licence Libre du Québec – Réciprocité forte version 1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/LiLiQ-Rplus-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/LiLiQ-Rplus-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/LiLiQ-Rplus-1.1.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -93,7 +93,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/LiLiQ-Rplus-1.1.json"
+                            "https://spdx.org/licenses/LiLiQ-Rplus-1.1.json"
                         ],
                         [
                             null,
@@ -196,7 +196,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/LiLiQ-Rplus-1.1.json"
+                "https://spdx.org/licenses/LiLiQ-Rplus-1.1.json"
             ],
             [
                 null,

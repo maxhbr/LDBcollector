@@ -26,7 +26,7 @@ Project Wiki]
 === URLs
 
 * *Homepage:* http://research.scea.com/scea_shared_source_license.html
-* *SPDX:* http://spdx.org/licenses/SCEA.json
+* *SPDX:* https://spdx.org/licenses/SCEA.json
 
 === Text
 
@@ -137,7 +137,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SCEA Shared Source License",
-            "spdxDetailsURL": "http://spdx.org/licenses/SCEA.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SCEA.json",
             "_sourceURL": "https://spdx.org/licenses/SCEA.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -153,7 +153,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SCEA.json"
+                        "https://spdx.org/licenses/SCEA.json"
                     ],
                     [
                         null,
@@ -251,7 +251,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/SCEA.json"
+            "https://spdx.org/licenses/SCEA.json"
         ],
         [
             null,

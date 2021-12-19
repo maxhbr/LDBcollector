@@ -33,7 +33,7 @@
 
 -   **Homepage:** http://www.codeproject.com/info/cpol10.aspx
 
--   **SPDX:** http://spdx.org/licenses/CPOL-1.02.json
+-   **SPDX:** https://spdx.org/licenses/CPOL-1.02.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/835
 
@@ -265,7 +265,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Code Project Open License 1.02",
-                "spdxDetailsURL": "http://spdx.org/licenses/CPOL-1.02.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CPOL-1.02.json",
                 "_sourceURL": "https://spdx.org/licenses/CPOL-1.02.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -281,7 +281,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CPOL-1.02.json"
+                            "https://spdx.org/licenses/CPOL-1.02.json"
                         ],
                         [
                             null,
@@ -638,7 +638,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/CPOL-1.02.json"
+                "https://spdx.org/licenses/CPOL-1.02.json"
             ],
             [
                 null,

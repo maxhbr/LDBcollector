@@ -34,7 +34,7 @@ https://java.net/projects/javaeetutorial/pages/BerkeleyLicense
 * *SPDX:*
 https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html
 * *SPDX:*
-http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json
+https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json
 * https://web.archive.org/web/20150906075957/https://java.net/projects/javaeetutorial/pages/BerkeleyLicense
 
 === Text
@@ -121,7 +121,7 @@ license-compatibility-checker]
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 3-Clause No Nuclear License 2014",
-            "spdxDetailsURL": "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json",
             "_sourceURL": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -137,7 +137,7 @@ license-compatibility-checker]
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json"
+                        "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json"
                     ],
                     [
                         null,
@@ -273,7 +273,7 @@ license-compatibility-checker]
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json"
+            "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json"
         ],
         [
             null,

@@ -6,6 +6,8 @@
 
 -   `scancode://cmu-template`
 
+-   `LicenseRef-scancode-cmu-template`
+
 -   `scancode://cmu-uc`
 
 -   `CMU UC Regents License`
@@ -27,7 +29,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/MIT-CMU.html
 
--   **SPDX:** http://spdx.org/licenses/MIT-CMU.json
+-   **SPDX:** https://spdx.org/licenses/MIT-CMU.json
 
 -   https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE
 
@@ -92,6 +94,7 @@
             "MIT-CMU",
             "CMU License",
             "scancode://cmu-template",
+            "LicenseRef-scancode-cmu-template",
             "scancode://cmu-uc",
             "CMU UC Regents License"
         ],
@@ -110,7 +113,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CMU License",
-                "spdxDetailsURL": "http://spdx.org/licenses/MIT-CMU.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MIT-CMU.json",
                 "_sourceURL": "https://spdx.org/licenses/MIT-CMU.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -127,7 +130,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MIT-CMU.json"
+                            "https://spdx.org/licenses/MIT-CMU.json"
                         ],
                         [
                             null,
@@ -163,13 +166,15 @@
                 "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-template.yml",
                 "key": "cmu-template",
                 "name": "Carnegie Mellon Template License",
-                "spdxId": null,
+                "spdxId": "LicenseRef-scancode-cmu-template",
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cmu-template",
-                        "CMU License"
+                        "CMU License",
+                        "LicenseRef-scancode-cmu-template"
                     ],
+                    "__impliedId": "LicenseRef-scancode-cmu-template",
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -314,7 +319,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MIT-CMU.json"
+                "https://spdx.org/licenses/MIT-CMU.json"
             ],
             [
                 null,

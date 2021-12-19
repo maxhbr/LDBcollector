@@ -74,13 +74,15 @@
 
 - *OSI Page:* https://opensource.org/licenses/QPL-1.0
 
-- *SPDX:* http://spdx.org/licenses/QPL-1.0.json
+- *SPDX:* https://spdx.org/licenses/QPL-1.0.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/788
 
 - https://spdx.org/licenses/QPL-1.0.html
 
 - http://doc.qt.nokia.com/3.3/license.html
+
+- https://doc.qt.io/archives/3.3/license.html
 
 - http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
 
@@ -329,12 +331,13 @@
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Q Public License 1.0",
-              "spdxDetailsURL": "http://spdx.org/licenses/QPL-1.0.json",
+              "spdxDetailsURL": "https://spdx.org/licenses/QPL-1.0.json",
               "_sourceURL": "https://spdx.org/licenses/QPL-1.0.html",
               "spdxLicIsOSIApproved": true,
               "spdxSeeAlso": [
                   "http://doc.qt.nokia.com/3.3/license.html",
-                  "https://opensource.org/licenses/QPL-1.0"
+                  "https://opensource.org/licenses/QPL-1.0",
+                  "https://doc.qt.io/archives/3.3/license.html"
               ],
               "_implications": {
                   "__impliedNames": [
@@ -355,7 +358,7 @@
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/QPL-1.0.json"
+                          "https://spdx.org/licenses/QPL-1.0.json"
                       ],
                       [
                           null,
@@ -364,6 +367,10 @@
                       [
                           null,
                           "https://opensource.org/licenses/QPL-1.0"
+                      ],
+                      [
+                          null,
+                          "https://doc.qt.io/archives/3.3/license.html"
                       ]
                   ]
               },
@@ -867,11 +874,15 @@
           ],
           [
               "SPDX",
-              "http://spdx.org/licenses/QPL-1.0.json"
+              "https://spdx.org/licenses/QPL-1.0.json"
           ],
           [
               null,
               "http://doc.qt.nokia.com/3.3/license.html"
+          ],
+          [
+              null,
+              "https://doc.qt.io/archives/3.3/license.html"
           ],
           [
               "Homepage",

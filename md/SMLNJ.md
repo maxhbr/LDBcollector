@@ -38,7 +38,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/SMLNJ.html
 
--   **SPDX:** http://spdx.org/licenses/SMLNJ.json
+-   **SPDX:** https://spdx.org/licenses/SMLNJ.json
 
 -   https://www.smlnj.org/license.html
 
@@ -123,7 +123,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Standard ML of New Jersey License",
-                "spdxDetailsURL": "http://spdx.org/licenses/SMLNJ.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SMLNJ.json",
                 "_sourceURL": "https://spdx.org/licenses/SMLNJ.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -139,7 +139,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SMLNJ.json"
+                            "https://spdx.org/licenses/SMLNJ.json"
                         ],
                         [
                             null,
@@ -312,7 +312,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/SMLNJ.json"
+                "https://spdx.org/licenses/SMLNJ.json"
             ],
             [
                 null,

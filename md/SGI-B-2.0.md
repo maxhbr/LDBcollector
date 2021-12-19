@@ -34,7 +34,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/SGI-B-2.0.html
 
--   **SPDX:** http://spdx.org/licenses/SGI-B-2.0.json
+-   **SPDX:** https://spdx.org/licenses/SGI-B-2.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/327
 
@@ -176,7 +176,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SGI Free Software License B v2.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/SGI-B-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SGI-B-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/SGI-B-2.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -192,7 +192,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SGI-B-2.0.json"
+                            "https://spdx.org/licenses/SGI-B-2.0.json"
                         ],
                         [
                             null,
@@ -496,7 +496,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/SGI-B-2.0.json"
+                "https://spdx.org/licenses/SGI-B-2.0.json"
             ],
             [
                 null,

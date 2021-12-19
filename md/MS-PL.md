@@ -70,7 +70,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/MS-PL.html
 
--   **SPDX:** http://spdx.org/licenses/MS-PL.json
+-   **SPDX:** https://spdx.org/licenses/MS-PL.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/66
 
@@ -165,6 +165,7 @@
     COMPATIBILITY BSD-3-Clause
     COMPATIBILITY BSD-4-Clause
     COMPATIBILITY BSD-4-Clause-UC
+    COMPATIBILITY BSL-1.0
     COMPATIBILITY bzip2-1.0.5
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
@@ -180,6 +181,7 @@
     COMPATIBILITY WTFPL
     COMPATIBILITY X11
     COMPATIBILITY Zlib
+    COMPATIBILITY ZPL-2.0
     PATENT HINTS Yes
     COPYLEFT CLAUSE Questionable
 
@@ -378,7 +380,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Microsoft Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/MS-PL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MS-PL.json",
                 "_sourceURL": "https://spdx.org/licenses/MS-PL.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -404,7 +406,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MS-PL.json"
+                            "https://spdx.org/licenses/MS-PL.json"
                         ],
                         [
                             null,
@@ -421,7 +423,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MS-PL.txt",
                 "spdxId": "MS-PL",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\nUSE CASE Binary delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Questionable\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\nUSE CASE Binary delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Questionable\n",
                 "_implications": {
                     "__impliedNames": [
                         "MS-PL"
@@ -1180,7 +1182,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MS-PL.json"
+                "https://spdx.org/licenses/MS-PL.json"
             ],
             [
                 null,

@@ -40,7 +40,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/AAL.html
 
--   **SPDX:** http://spdx.org/licenses/AAL.json
+-   **SPDX:** https://spdx.org/licenses/AAL.json
 
 -   https://opensource.org/licenses/attribution
 
@@ -193,7 +193,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Attribution Assurance License",
-                "spdxDetailsURL": "http://spdx.org/licenses/AAL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/AAL.json",
                 "_sourceURL": "https://spdx.org/licenses/AAL.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -218,7 +218,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/AAL.json"
+                            "https://spdx.org/licenses/AAL.json"
                         ],
                         [
                             null,
@@ -469,7 +469,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/AAL.json"
+                "https://spdx.org/licenses/AAL.json"
             ],
             [
                 null,

@@ -23,7 +23,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/TU-Berlin-1.0.html
 
--   **SPDX:** http://spdx.org/licenses/TU-Berlin-1.0.json
+-   **SPDX:** https://spdx.org/licenses/TU-Berlin-1.0.json
 
 -   ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz
 
@@ -81,7 +81,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Technische Universitaet Berlin License 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/TU-Berlin-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/TU-Berlin-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/TU-Berlin-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -97,7 +97,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/TU-Berlin-1.0.json"
+                            "https://spdx.org/licenses/TU-Berlin-1.0.json"
                         ],
                         [
                             null,
@@ -221,7 +221,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/TU-Berlin-1.0.json"
+                "https://spdx.org/licenses/TU-Berlin-1.0.json"
             ],
             [
                 null,

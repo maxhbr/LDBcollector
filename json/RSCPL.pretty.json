@@ -58,7 +58,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Ricoh Source Code Public License",
-            "spdxDetailsURL": "http://spdx.org/licenses/RSCPL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/RSCPL.json",
             "_sourceURL": "https://spdx.org/licenses/RSCPL.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -84,7 +84,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/RSCPL.json"
+                        "https://spdx.org/licenses/RSCPL.json"
                     ],
                     [
                         null,
@@ -307,7 +307,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/RSCPL.json"
+            "https://spdx.org/licenses/RSCPL.json"
         ],
         [
             null,

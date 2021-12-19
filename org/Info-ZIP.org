@@ -37,7 +37,7 @@
 
 - *SPDX:* https://spdx.org/licenses/Info-ZIP.html
 
-- *SPDX:* http://spdx.org/licenses/Info-ZIP.json
+- *SPDX:* https://spdx.org/licenses/Info-ZIP.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/365
 
@@ -50,6 +50,34 @@
 ** Description from open-license
 
 (source: Hitachi open-license)
+
+** OSADL Rule
+#+begin_example
+  USE CASE Source code delivery
+  	YOU MUST Forward Copyright notices
+  	YOU MUST Forward Attribution notice
+  	YOU MUST Forward Warranty disclaimer
+  	YOU MUST Forward License text
+  	IF Software modifications
+  		YOU MUST Mark Modification
+  		YOU MUST Rename Modified work
+  USE CASE Binary delivery
+  	IF NOT Binary delivery of standard UnZipSFX binary (including SFXWiz) as part of a self-extracting archive AND NOT Delete SFX banner AND NOT Disable SFX banner
+  		YOU MUST Provide Copyright notices In Documentation OR Distribution material
+  			EXCEPT IF Interactive AND Reference Legal notices
+  		YOU MUST Provide Attribution notice In Documentation OR Distribution material
+  			EXCEPT IF Interactive AND Reference Legal notices
+  		YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+  			EXCEPT IF Interactive AND Reference Legal notices
+  		YOU MUST Provide License text In Documentation OR Distribution material
+  			EXCEPT IF Interactive AND Reference Legal notices
+  		IF Software modifications
+  			YOU MUST Mark Modification
+  			YOU MUST Rename Modified work
+  			YOU MUST NOT Use "Info-ZIP", "Zip", "UnZip", "UnZipSFX", "WiZ", "Pocket UnZip", "Pocket Zip", "MacZip"
+#+end_example
+
+(source: OSADL License Checklist)
 
 ** Text
 #+begin_example
@@ -85,6 +113,9 @@
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
+
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/Info-ZIP.txt][OSADL
+  License Checklist]] (NOASSERTION)
 
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
@@ -136,7 +167,7 @@
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Info-ZIP License",
-              "spdxDetailsURL": "http://spdx.org/licenses/Info-ZIP.json",
+              "spdxDetailsURL": "https://spdx.org/licenses/Info-ZIP.json",
               "_sourceURL": "https://spdx.org/licenses/Info-ZIP.html",
               "spdxLicIsOSIApproved": false,
               "spdxSeeAlso": [
@@ -152,7 +183,7 @@
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/Info-ZIP.json"
+                          "https://spdx.org/licenses/Info-ZIP.json"
                       ],
                       [
                           null,
@@ -161,6 +192,16 @@
                   ]
               },
               "spdxLicenseId": "Info-ZIP"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Info-ZIP.txt",
+              "spdxId": "Info-ZIP",
+              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Attribution notice\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Software modifications\n\t\tYOU MUST Mark Modification\n\t\tYOU MUST Rename Modified work\nUSE CASE Binary delivery\n\tIF NOT Binary delivery of standard UnZipSFX binary (including SFXWiz) as part of a self-extracting archive AND NOT Delete SFX banner AND NOT Disable SFX banner\n\t\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\t\t\tEXCEPT IF Interactive AND Reference Legal notices\n\t\tYOU MUST Provide Attribution notice In Documentation OR Distribution material\n\t\t\tEXCEPT IF Interactive AND Reference Legal notices\n\t\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n\t\t\tEXCEPT IF Interactive AND Reference Legal notices\n\t\tYOU MUST Provide License text In Documentation OR Distribution material\n\t\t\tEXCEPT IF Interactive AND Reference Legal notices\n\t\tIF Software modifications\n\t\t\tYOU MUST Mark Modification\n\t\t\tYOU MUST Rename Modified work\n\t\t\tYOU MUST NOT Use \"Info-ZIP\", \"Zip\", \"UnZip\", \"UnZipSFX\", \"WiZ\", \"Pocket UnZip\", \"Pocket Zip\", \"MacZip\"\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "Info-ZIP"
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -306,7 +347,7 @@
           ],
           [
               "SPDX",
-              "http://spdx.org/licenses/Info-ZIP.json"
+              "https://spdx.org/licenses/Info-ZIP.json"
           ],
           [
               null,

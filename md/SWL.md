@@ -36,7 +36,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/SWL.html
 
--   **SPDX:** http://spdx.org/licenses/SWL.json
+-   **SPDX:** https://spdx.org/licenses/SWL.json
 
 -   https://fedoraproject.org/wiki/Licensing/SWL
 
@@ -110,7 +110,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Scheme Widget Library (SWL) Software License Agreement",
-                "spdxDetailsURL": "http://spdx.org/licenses/SWL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SWL.json",
                 "_sourceURL": "https://spdx.org/licenses/SWL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -126,7 +126,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SWL.json"
+                            "https://spdx.org/licenses/SWL.json"
                         ],
                         [
                             null,
@@ -289,7 +289,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/SWL.json"
+                "https://spdx.org/licenses/SWL.json"
             ],
             [
                 null,

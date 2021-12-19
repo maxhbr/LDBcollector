@@ -24,7 +24,7 @@ repository] is generated))
 === URLs
 
 * *Homepage:* https://opensource.org/licenses/UCL-1.0
-* *SPDX:* http://spdx.org/licenses/UCL-1.0.json
+* *SPDX:* https://spdx.org/licenses/UCL-1.0.json
 * https://github.com/spdx/license-list-XML/issues/894
 
 === Text
@@ -278,7 +278,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Upstream Compatibility License v1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/UCL-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/UCL-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/UCL-1.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -303,7 +303,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/UCL-1.0.json"
+                        "https://spdx.org/licenses/UCL-1.0.json"
                     ],
                     [
                         null,
@@ -397,7 +397,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/UCL-1.0.json"
+            "https://spdx.org/licenses/UCL-1.0.json"
         ],
         [
             null,

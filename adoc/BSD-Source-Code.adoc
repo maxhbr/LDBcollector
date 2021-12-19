@@ -25,7 +25,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* https://github.com/infusion/PHP/blob/master/TSRM/LICENSE
 * *SPDX:* https://spdx.org/licenses/BSD-Source-Code.html
-* *SPDX:* http://spdx.org/licenses/BSD-Source-Code.json
+* *SPDX:* https://spdx.org/licenses/BSD-Source-Code.json
 * https://github.com/robbiehanson/CocoaHTTPServer/blob/master/LICENSE.txt
 
 === Text
@@ -94,7 +94,7 @@ this repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD Source Code Attribution",
-            "spdxDetailsURL": "http://spdx.org/licenses/BSD-Source-Code.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/BSD-Source-Code.json",
             "_sourceURL": "https://spdx.org/licenses/BSD-Source-Code.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -110,7 +110,7 @@ this repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/BSD-Source-Code.json"
+                        "https://spdx.org/licenses/BSD-Source-Code.json"
                     ],
                     [
                         null,
@@ -223,7 +223,7 @@ this repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-Source-Code.json"
+            "https://spdx.org/licenses/BSD-Source-Code.json"
         ],
         [
             null,

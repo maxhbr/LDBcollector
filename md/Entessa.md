@@ -43,7 +43,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Entessa.html
 
--   **SPDX:** http://spdx.org/licenses/Entessa.json
+-   **SPDX:** https://spdx.org/licenses/Entessa.json
 
 -   http://sourceforge.net/softwaremap/?&fq\[\]=trove%3A397
 
@@ -197,7 +197,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Entessa Public License v1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/Entessa.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Entessa.json",
                 "_sourceURL": "https://spdx.org/licenses/Entessa.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -222,7 +222,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Entessa.json"
+                            "https://spdx.org/licenses/Entessa.json"
                         ],
                         [
                             null,
@@ -537,7 +537,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Entessa.json"
+                "https://spdx.org/licenses/Entessa.json"
             ],
             [
                 "Homepage",

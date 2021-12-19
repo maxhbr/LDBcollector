@@ -29,7 +29,7 @@ Project Wiki]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Cube
 * *SPDX:* https://spdx.org/licenses/Cube.html
-* *SPDX:* http://spdx.org/licenses/Cube.json
+* *SPDX:* https://spdx.org/licenses/Cube.json
 
 === Text
 
@@ -107,7 +107,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Cube License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Cube.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Cube.json",
             "_sourceURL": "https://spdx.org/licenses/Cube.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -123,7 +123,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Cube.json"
+                        "https://spdx.org/licenses/Cube.json"
                     ],
                     [
                         null,
@@ -272,7 +272,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Cube.json"
+            "https://spdx.org/licenses/Cube.json"
         ],
         [
             null,

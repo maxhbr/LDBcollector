@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |Mulan Permissive Software License, Version 1
 |Shortname |MulanPSL-1.0
-|Rating |Unknown, probably Attention or Stop or No-Go
+|Rating |Go
 |Classification |NoCopyleft
 |===
 
@@ -16,12 +16,17 @@
 
 === Comments on (easy) usability
 
+* **↑**``Rating is: Silver'' (source:
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
+
 === General Comments
 
 === URLs
 
 * *Homepage:* https://license.coscl.org.cn/MulanPSL/
-* *SPDX:* http://spdx.org/licenses/MulanPSL-1.0.json
+* *SPDX:* https://spdx.org/licenses/MulanPSL-1.0.html
+* *SPDX:* https://spdx.org/licenses/MulanPSL-1.0.json
 * https://github.com/yuwenlong/longphp/blob/25dfb70cc2a466dc4bb55ba30901cbce08d164b5/LICENSE
 
 === Text
@@ -153,6 +158,8 @@ See the Mulan PSL v1 for more details.
 ==== Facts
 
 * LicenseName
+* https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://spdx.org/licenses/MulanPSL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mulanpsl-1.0.yml[Scancode]
@@ -183,7 +190,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Mulan Permissive Software License, Version 1",
-            "spdxDetailsURL": "http://spdx.org/licenses/MulanPSL-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MulanPSL-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/MulanPSL-1.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -200,7 +207,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MulanPSL-1.0.json"
+                        "https://spdx.org/licenses/MulanPSL-1.0.json"
                     ],
                     [
                         null,
@@ -250,9 +257,58 @@ repository] is generated)
                     ]
                 ]
             }
+        },
+        "BlueOak License List": {
+            "BlueOakRating": "Silver",
+            "url": "https://spdx.org/licenses/MulanPSL-1.0.html",
+            "isPermissive": true,
+            "_sourceURL": "https://blueoakcouncil.org/list",
+            "name": "Mulan Permissive Software License, Version 1",
+            "id": "MulanPSL-1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "MulanPSL-1.0",
+                    "Mulan Permissive Software License, Version 1"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "BlueOak License List",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "Rating is: Silver"
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedURLs": [
+                    [
+                        "SPDX",
+                        "https://spdx.org/licenses/MulanPSL-1.0.html"
+                    ]
+                ]
+            }
         }
     },
+    "__impliedJudgement": [
+        [
+            "BlueOak License List",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "Rating is: Silver"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
+        [
+            "BlueOak License List",
+            "NoCopyleft"
+        ],
         [
             "Scancode",
             "NoCopyleft"
@@ -264,7 +320,11 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/MulanPSL-1.0.json"
+            "https://spdx.org/licenses/MulanPSL-1.0.html"
+        ],
+        [
+            "SPDX",
+            "https://spdx.org/licenses/MulanPSL-1.0.json"
         ],
         [
             null,

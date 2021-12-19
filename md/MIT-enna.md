@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/MIT-enna.html
 
--   **SPDX:** http://spdx.org/licenses/MIT-enna.json
+-   **SPDX:** https://spdx.org/licenses/MIT-enna.json
 
 ## Text
 
@@ -109,7 +109,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "enna License",
-                "spdxDetailsURL": "http://spdx.org/licenses/MIT-enna.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MIT-enna.json",
                 "_sourceURL": "https://spdx.org/licenses/MIT-enna.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -125,7 +125,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MIT-enna.json"
+                            "https://spdx.org/licenses/MIT-enna.json"
                         ],
                         [
                             null,
@@ -294,7 +294,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MIT-enna.json"
+                "https://spdx.org/licenses/MIT-enna.json"
             ],
             [
                 null,

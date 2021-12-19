@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/NRL.html
 
--   **SPDX:** http://spdx.org/licenses/NRL.json
+-   **SPDX:** https://spdx.org/licenses/NRL.json
 
 ## Text
 
@@ -106,7 +106,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NRL License",
-                "spdxDetailsURL": "http://spdx.org/licenses/NRL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NRL.json",
                 "_sourceURL": "https://spdx.org/licenses/NRL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -122,7 +122,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NRL.json"
+                            "https://spdx.org/licenses/NRL.json"
                         ],
                         [
                             null,
@@ -271,7 +271,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NRL.json"
+                "https://spdx.org/licenses/NRL.json"
             ],
             [
                 null,

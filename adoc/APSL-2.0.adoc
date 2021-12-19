@@ -59,7 +59,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://www.opensource.apple.com/license/apsl/
 * *OSI Page:* https://opensource.org/licenses/APSL-2.0
 * *OSI Page:* http://opensource.org/licenses/apsl-2.0.php
-* *SPDX:* http://spdx.org/licenses/APSL-2.0.json
+* *SPDX:* https://spdx.org/licenses/APSL-2.0.json
 * https://spdx.org/licenses/APSL-2.0.html
 
 === Text
@@ -278,7 +278,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Apple Public Source License 2.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/APSL-2.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/APSL-2.0.json",
             "_sourceURL": "https://spdx.org/licenses/APSL-2.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -303,7 +303,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/APSL-2.0.json"
+                        "https://spdx.org/licenses/APSL-2.0.json"
                     ],
                     [
                         null,
@@ -639,7 +639,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/APSL-2.0.json"
+            "https://spdx.org/licenses/APSL-2.0.json"
         ],
         [
             null,

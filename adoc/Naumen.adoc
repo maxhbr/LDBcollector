@@ -40,7 +40,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://www.opensource.org/licenses/naumen.php
 * *OSI Page:* https://opensource.org/licenses/Naumen
 * *SPDX:* https://spdx.org/licenses/Naumen.html
-* *SPDX:* http://spdx.org/licenses/Naumen.json
+* *SPDX:* https://spdx.org/licenses/Naumen.json
 * *open-license:* http://open-license.hitachi.com/licenses/1260
 * http://www.opensource.org/licenses/Naumen
 
@@ -174,7 +174,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Naumen Public License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Naumen.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Naumen.json",
             "_sourceURL": "https://spdx.org/licenses/Naumen.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -199,7 +199,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Naumen.json"
+                        "https://spdx.org/licenses/Naumen.json"
                     ],
                     [
                         null,
@@ -497,7 +497,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Naumen.json"
+            "https://spdx.org/licenses/Naumen.json"
         ],
         [
             "Homepage",

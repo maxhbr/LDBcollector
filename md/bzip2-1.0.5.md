@@ -14,7 +14,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/bzip2-1.0.5.html
 
--   **SPDX:** http://spdx.org/licenses/bzip2-1.0.5.json
+-   **SPDX:** https://spdx.org/licenses/bzip2-1.0.5.json
 
 -   https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html
 
@@ -81,7 +81,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "bzip2 and libbzip2 License v1.0.5",
-                "spdxDetailsURL": "http://spdx.org/licenses/bzip2-1.0.5.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/bzip2-1.0.5.json",
                 "_sourceURL": "https://spdx.org/licenses/bzip2-1.0.5.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -98,7 +98,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/bzip2-1.0.5.json"
+                            "https://spdx.org/licenses/bzip2-1.0.5.json"
                         ],
                         [
                             null,
@@ -184,7 +184,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/bzip2-1.0.5.json"
+                "https://spdx.org/licenses/bzip2-1.0.5.json"
             ],
             [
                 null,

@@ -50,7 +50,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-3-Clause-Clear.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Clear.json
+-   **SPDX:** https://spdx.org/licenses/BSD-3-Clause-Clear.json
 
 -   http://labs.metacarta.com/license-explanation.html#license
 
@@ -151,7 +151,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 3-Clause Clear License",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-3-Clause-Clear.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-3-Clause-Clear.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-3-Clause-Clear.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -167,7 +167,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-3-Clause-Clear.json"
+                            "https://spdx.org/licenses/BSD-3-Clause-Clear.json"
                         ],
                         [
                             null,
@@ -479,7 +479,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-3-Clause-Clear.json"
+                "https://spdx.org/licenses/BSD-3-Clause-Clear.json"
             ],
             [
                 null,

@@ -31,7 +31,7 @@ Project Wiki]
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License
 * *SPDX:* https://spdx.org/licenses/AMDPLPA.html
-* *SPDX:* http://spdx.org/licenses/AMDPLPA.json
+* *SPDX:* https://spdx.org/licenses/AMDPLPA.json
 
 === Text
 
@@ -164,7 +164,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "AMD's plpa_map.c License",
-            "spdxDetailsURL": "http://spdx.org/licenses/AMDPLPA.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/AMDPLPA.json",
             "_sourceURL": "https://spdx.org/licenses/AMDPLPA.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -180,7 +180,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/AMDPLPA.json"
+                        "https://spdx.org/licenses/AMDPLPA.json"
                     ],
                     [
                         null,
@@ -329,7 +329,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/AMDPLPA.json"
+            "https://spdx.org/licenses/AMDPLPA.json"
         ],
         [
             null,

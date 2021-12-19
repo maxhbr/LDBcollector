@@ -39,7 +39,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* http://people.freebsd.org/~phk/
 * *SPDX:* https://spdx.org/licenses/Beerware.html
-* *SPDX:* http://spdx.org/licenses/Beerware.json
+* *SPDX:* https://spdx.org/licenses/Beerware.json
 * https://fedoraproject.org/wiki/Licensing/Beerware
 
 === Text
@@ -107,7 +107,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Beerware License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Beerware.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Beerware.json",
             "_sourceURL": "https://spdx.org/licenses/Beerware.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -124,7 +124,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Beerware.json"
+                        "https://spdx.org/licenses/Beerware.json"
                     ],
                     [
                         null,
@@ -374,7 +374,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Beerware.json"
+            "https://spdx.org/licenses/Beerware.json"
         ],
         [
             null,

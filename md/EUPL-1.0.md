@@ -38,7 +38,7 @@
 
 -   **Homepage:** http://ec.europa.eu/idabc/en/document/7330.html
 
--   **SPDX:** http://spdx.org/licenses/EUPL-1.0.json
+-   **SPDX:** https://spdx.org/licenses/EUPL-1.0.json
 
 -   https://spdx.org/licenses/EUPL-1.0.html
 
@@ -261,7 +261,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "European Union Public License 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/EUPL-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/EUPL-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/EUPL-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -278,7 +278,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/EUPL-1.0.json"
+                            "https://spdx.org/licenses/EUPL-1.0.json"
                         ],
                         [
                             null,
@@ -444,7 +444,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/EUPL-1.0.json"
+                "https://spdx.org/licenses/EUPL-1.0.json"
             ],
             [
                 null,

@@ -69,7 +69,7 @@
 
 -   **OSI Page:** http://www.opensource.org/licenses/ms-rl.html
 
--   **SPDX:** http://spdx.org/licenses/MS-RL.json
+-   **SPDX:** https://spdx.org/licenses/MS-RL.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/586
 
@@ -146,6 +146,7 @@
     COMPATIBILITY BSD-2-Clause
     COMPATIBILITY BSD-2-Clause-Patent
     COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSL-1.0
     COMPATIBILITY bzip2-1.0.5
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
@@ -320,7 +321,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Microsoft Reciprocal License",
-                "spdxDetailsURL": "http://spdx.org/licenses/MS-RL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MS-RL.json",
                 "_sourceURL": "https://spdx.org/licenses/MS-RL.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -346,7 +347,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MS-RL.json"
+                            "https://spdx.org/licenses/MS-RL.json"
                         ],
                         [
                             null,
@@ -379,7 +380,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MS-RL.txt",
                 "spdxId": "MS-RL",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\n\tIF Software modification\n\t\tYOU MUST Provide Source code\n\t\tYOU MUST Forward License text\nUSE CASE Binary delivery\n\tYOU MUST Provide Source code\n\tYOU MUST Forward License text\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\n\tIF Software modification\n\t\tYOU MUST Provide Source code\n\t\tYOU MUST Forward License text\nUSE CASE Binary delivery\n\tYOU MUST Provide Source code\n\tYOU MUST Forward License text\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "MS-RL"
@@ -949,7 +950,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MS-RL.json"
+                "https://spdx.org/licenses/MS-RL.json"
             ],
             [
                 null,

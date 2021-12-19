@@ -41,7 +41,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Artistic-1.0-cl8.html
 
--   **SPDX:** http://spdx.org/licenses/Artistic-1.0-cl8.json
+-   **SPDX:** https://spdx.org/licenses/Artistic-1.0-cl8.json
 
 -   http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 
@@ -212,7 +212,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Artistic License 1.0 w/clause 8",
-                "spdxDetailsURL": "http://spdx.org/licenses/Artistic-1.0-cl8.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Artistic-1.0-cl8.json",
                 "_sourceURL": "https://spdx.org/licenses/Artistic-1.0-cl8.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -237,7 +237,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Artistic-1.0-cl8.json"
+                            "https://spdx.org/licenses/Artistic-1.0-cl8.json"
                         ],
                         [
                             null,
@@ -431,7 +431,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Artistic-1.0-cl8.json"
+                "https://spdx.org/licenses/Artistic-1.0-cl8.json"
             ],
             [
                 null,

@@ -58,7 +58,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/PostgreSQL.html
 
--   **SPDX:** http://spdx.org/licenses/PostgreSQL.json
+-   **SPDX:** https://spdx.org/licenses/PostgreSQL.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/608
 
@@ -225,7 +225,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "PostgreSQL License",
-                "spdxDetailsURL": "http://spdx.org/licenses/PostgreSQL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/PostgreSQL.json",
                 "_sourceURL": "https://spdx.org/licenses/PostgreSQL.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -251,7 +251,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/PostgreSQL.json"
+                            "https://spdx.org/licenses/PostgreSQL.json"
                         ],
                         [
                             null,
@@ -735,7 +735,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/PostgreSQL.json"
+                "https://spdx.org/licenses/PostgreSQL.json"
             ],
             [
                 null,

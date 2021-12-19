@@ -34,7 +34,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 https://jogamp.org/git/?p=gluegen.git;a=blob_plain;f=LICENSE.txt
 * *SPDX:*
 https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html
-* *SPDX:* http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json
+* *SPDX:*
+https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json
 
 === Text
 
@@ -121,7 +122,7 @@ license-compatibility-checker]
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 3-Clause No Nuclear Warranty",
-            "spdxDetailsURL": "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json",
             "_sourceURL": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -137,7 +138,7 @@ license-compatibility-checker]
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
+                        "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
                     ],
                     [
                         null,
@@ -273,7 +274,7 @@ license-compatibility-checker]
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
+            "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
         ],
         [
             null,

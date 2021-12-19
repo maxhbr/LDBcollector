@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/xinetd.html
 
--   **SPDX:** http://spdx.org/licenses/xinetd.json
+-   **SPDX:** https://spdx.org/licenses/xinetd.json
 
 ## Text
 
@@ -131,7 +131,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "xinetd License",
-                "spdxDetailsURL": "http://spdx.org/licenses/xinetd.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/xinetd.json",
                 "_sourceURL": "https://spdx.org/licenses/xinetd.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -147,7 +147,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/xinetd.json"
+                            "https://spdx.org/licenses/xinetd.json"
                         ],
                         [
                             null,
@@ -316,7 +316,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/xinetd.json"
+                "https://spdx.org/licenses/xinetd.json"
             ],
             [
                 null,

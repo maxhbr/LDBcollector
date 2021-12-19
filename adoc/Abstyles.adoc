@@ -30,7 +30,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Abstyles
-* *SPDX:* http://spdx.org/licenses/Abstyles.json
+* *SPDX:* https://spdx.org/licenses/Abstyles.json
 
 === Text
 
@@ -98,7 +98,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Abstyles License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Abstyles.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Abstyles.json",
             "_sourceURL": "https://spdx.org/licenses/Abstyles.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -114,7 +114,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Abstyles.json"
+                        "https://spdx.org/licenses/Abstyles.json"
                     ],
                     [
                         null,
@@ -220,7 +220,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Abstyles.json"
+            "https://spdx.org/licenses/Abstyles.json"
         ],
         [
             null,

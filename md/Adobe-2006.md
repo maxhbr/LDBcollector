@@ -27,7 +27,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Adobe-2006
 
--   **SPDX:** http://spdx.org/licenses/Adobe-2006.json
+-   **SPDX:** https://spdx.org/licenses/Adobe-2006.json
 
 ## Text
 
@@ -109,7 +109,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Adobe Systems Incorporated Source Code License Agreement",
-                "spdxDetailsURL": "http://spdx.org/licenses/Adobe-2006.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Adobe-2006.json",
                 "_sourceURL": "https://spdx.org/licenses/Adobe-2006.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -125,7 +125,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Adobe-2006.json"
+                            "https://spdx.org/licenses/Adobe-2006.json"
                         ],
                         [
                             null,
@@ -280,7 +280,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Adobe-2006.json"
+                "https://spdx.org/licenses/Adobe-2006.json"
             ],
             [
                 null,

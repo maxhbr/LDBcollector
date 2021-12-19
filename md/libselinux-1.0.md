@@ -17,7 +17,7 @@
 -   **Homepage:**
     https://github.com/SELinuxProject/selinux/blob/master/libselinux/LICENSE
 
--   **SPDX:** http://spdx.org/licenses/libselinux-1.0.json
+-   **SPDX:** https://spdx.org/licenses/libselinux-1.0.json
 
 ## Text
 
@@ -81,7 +81,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "libselinux public domain notice",
-                "spdxDetailsURL": "http://spdx.org/licenses/libselinux-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/libselinux-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/libselinux-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -97,7 +97,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/libselinux-1.0.json"
+                            "https://spdx.org/licenses/libselinux-1.0.json"
                         ],
                         [
                             null,
@@ -157,7 +157,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/libselinux-1.0.json"
+                "https://spdx.org/licenses/libselinux-1.0.json"
             ],
             [
                 null,

@@ -32,7 +32,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* http://fedoraproject.org/wiki/Licensing/IJG
 * *SPDX:* https://spdx.org/licenses/IJG.html
-* *SPDX:* http://spdx.org/licenses/IJG.json
+* *SPDX:* https://spdx.org/licenses/IJG.json
 * *open-license:* http://open-license.hitachi.com/licenses/302
 * http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2
 * http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
@@ -202,7 +202,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Independent JPEG Group License",
-            "spdxDetailsURL": "http://spdx.org/licenses/IJG.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/IJG.json",
             "_sourceURL": "https://spdx.org/licenses/IJG.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -218,7 +218,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/IJG.json"
+                        "https://spdx.org/licenses/IJG.json"
                     ],
                     [
                         null,
@@ -413,7 +413,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/IJG.json"
+            "https://spdx.org/licenses/IJG.json"
         ],
         [
             null,

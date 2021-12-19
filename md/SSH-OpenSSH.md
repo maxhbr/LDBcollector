@@ -21,7 +21,7 @@
 -   **Homepage:**
     https://github.com/openssh/openssh-portable/blob/V\_7\_3\_P1/LICENCE
 
--   **SPDX:** http://spdx.org/licenses/SSH-OpenSSH.json
+-   **SPDX:** https://spdx.org/licenses/SSH-OpenSSH.json
 
 -   https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/LICENCE#L10
 
@@ -416,7 +416,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SSH OpenSSH license",
-                "spdxDetailsURL": "http://spdx.org/licenses/SSH-OpenSSH.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SSH-OpenSSH.json",
                 "_sourceURL": "https://spdx.org/licenses/SSH-OpenSSH.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -432,7 +432,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SSH-OpenSSH.json"
+                            "https://spdx.org/licenses/SSH-OpenSSH.json"
                         ],
                         [
                             null,
@@ -511,7 +511,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/SSH-OpenSSH.json"
+                "https://spdx.org/licenses/SSH-OpenSSH.json"
             ],
             [
                 null,

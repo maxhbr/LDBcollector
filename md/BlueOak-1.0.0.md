@@ -18,7 +18,7 @@
 
 -   **Homepage:** https://blueoakcouncil.org/license/1.0.0
 
--   **SPDX:** http://spdx.org/licenses/BlueOak-1.0.0.json
+-   **SPDX:** https://spdx.org/licenses/BlueOak-1.0.0.json
 
 ## Text
 
@@ -119,7 +119,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Blue Oak Model License 1.0.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/BlueOak-1.0.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BlueOak-1.0.0.json",
                 "_sourceURL": "https://spdx.org/licenses/BlueOak-1.0.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -135,7 +135,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BlueOak-1.0.0.json"
+                            "https://spdx.org/licenses/BlueOak-1.0.0.json"
                         ],
                         [
                             null,
@@ -254,7 +254,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BlueOak-1.0.0.json"
+                "https://spdx.org/licenses/BlueOak-1.0.0.json"
             ],
             [
                 "Homepage",

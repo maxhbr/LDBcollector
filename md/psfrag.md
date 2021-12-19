@@ -25,7 +25,7 @@
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/psfrag
 
--   **SPDX:** http://spdx.org/licenses/psfrag.json
+-   **SPDX:** https://spdx.org/licenses/psfrag.json
 
 ## Text
 
@@ -87,7 +87,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "psfrag License",
-                "spdxDetailsURL": "http://spdx.org/licenses/psfrag.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/psfrag.json",
                 "_sourceURL": "https://spdx.org/licenses/psfrag.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -103,7 +103,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/psfrag.json"
+                            "https://spdx.org/licenses/psfrag.json"
                         ],
                         [
                             null,
@@ -208,7 +208,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/psfrag.json"
+                "https://spdx.org/licenses/psfrag.json"
             ],
             [
                 null,

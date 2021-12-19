@@ -35,7 +35,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://opensource.org/licenses/ipafont.html
 * *OSI Page:* https://opensource.org/licenses/IPA
-* *SPDX:* http://spdx.org/licenses/IPA.json
+* *SPDX:* https://spdx.org/licenses/IPA.json
 * *open-license:* http://open-license.hitachi.com/licenses/248
 * http://www.opensource.org/licenses/IPA
 
@@ -225,7 +225,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "IPA Font License",
-            "spdxDetailsURL": "http://spdx.org/licenses/IPA.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/IPA.json",
             "_sourceURL": "https://spdx.org/licenses/IPA.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -250,7 +250,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/IPA.json"
+                        "https://spdx.org/licenses/IPA.json"
                     ],
                     [
                         null,
@@ -485,7 +485,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/IPA.json"
+            "https://spdx.org/licenses/IPA.json"
         ],
         [
             "Homepage",

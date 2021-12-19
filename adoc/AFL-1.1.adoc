@@ -36,7 +36,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *OSI Page:*
 http://web.archive.org/web/20060924134536/http://www.opensource.org/licenses/afl-1.1.txt
 * *SPDX:* https://spdx.org/licenses/AFL-1.1.html
-* *SPDX:* http://spdx.org/licenses/AFL-1.1.json
+* *SPDX:* https://spdx.org/licenses/AFL-1.1.json
 * http://opensource.linux-mirror.org/licenses/afl-1.1.txt
 * http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php
 * http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
@@ -184,7 +184,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Academic Free License v1.1",
-            "spdxDetailsURL": "http://spdx.org/licenses/AFL-1.1.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/AFL-1.1.json",
             "_sourceURL": "https://spdx.org/licenses/AFL-1.1.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -210,7 +210,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/AFL-1.1.json"
+                        "https://spdx.org/licenses/AFL-1.1.json"
                     ],
                     [
                         null,
@@ -397,7 +397,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/AFL-1.1.json"
+            "https://spdx.org/licenses/AFL-1.1.json"
         ],
         [
             null,

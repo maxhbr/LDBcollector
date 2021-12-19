@@ -36,7 +36,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License
 * *SPDX:* https://spdx.org/licenses/MTLL.html
-* *SPDX:* http://spdx.org/licenses/MTLL.json
+* *SPDX:* https://spdx.org/licenses/MTLL.json
 
 === Text
 
@@ -117,7 +117,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Matrix Template Library License",
-            "spdxDetailsURL": "http://spdx.org/licenses/MTLL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MTLL.json",
             "_sourceURL": "https://spdx.org/licenses/MTLL.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -133,7 +133,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MTLL.json"
+                        "https://spdx.org/licenses/MTLL.json"
                     ],
                     [
                         null,
@@ -290,7 +290,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/MTLL.json"
+            "https://spdx.org/licenses/MTLL.json"
         ],
         [
             null,

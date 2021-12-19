@@ -23,7 +23,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/CNRI-Python-GPL-Compatible.html
 
--   **SPDX:** http://spdx.org/licenses/CNRI-Python-GPL-Compatible.json
+-   **SPDX:** https://spdx.org/licenses/CNRI-Python-GPL-Compatible.json
 
 ## Text
 
@@ -97,7 +97,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CNRI Python Open Source GPL Compatible License Agreement",
-                "spdxDetailsURL": "http://spdx.org/licenses/CNRI-Python-GPL-Compatible.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CNRI-Python-GPL-Compatible.json",
                 "_sourceURL": "https://spdx.org/licenses/CNRI-Python-GPL-Compatible.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -113,7 +113,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CNRI-Python-GPL-Compatible.json"
+                            "https://spdx.org/licenses/CNRI-Python-GPL-Compatible.json"
                         ],
                         [
                             null,
@@ -246,7 +246,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/CNRI-Python-GPL-Compatible.json"
+                "https://spdx.org/licenses/CNRI-Python-GPL-Compatible.json"
             ],
             [
                 null,

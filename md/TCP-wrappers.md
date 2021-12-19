@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/TCP-wrappers.html
 
--   **SPDX:** http://spdx.org/licenses/TCP-wrappers.json
+-   **SPDX:** https://spdx.org/licenses/TCP-wrappers.json
 
 -   http://rc.quest.com/topics/openssh/license.php#tcpwrappers
 
@@ -108,7 +108,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TCP Wrappers License",
-                "spdxDetailsURL": "http://spdx.org/licenses/TCP-wrappers.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/TCP-wrappers.json",
                 "_sourceURL": "https://spdx.org/licenses/TCP-wrappers.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -124,7 +124,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/TCP-wrappers.json"
+                            "https://spdx.org/licenses/TCP-wrappers.json"
                         ],
                         [
                             null,
@@ -280,7 +280,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/TCP-wrappers.json"
+                "https://spdx.org/licenses/TCP-wrappers.json"
             ],
             [
                 null,

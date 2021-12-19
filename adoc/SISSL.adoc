@@ -66,7 +66,7 @@ open-license] (CDLA-Permissive-1.0))
 
 * *Homepage:* http://www.openoffice.org/licenses/sissl_license.html
 * *OSI Page:* https://opensource.org/licenses/SISSL
-* *SPDX:* http://spdx.org/licenses/SISSL.json
+* *SPDX:* https://spdx.org/licenses/SISSL.json
 * *open-license:* http://open-license.hitachi.com/licenses/1486
 
 === Description from open-license
@@ -651,7 +651,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sun Industry Standards Source License v1.1",
-            "spdxDetailsURL": "http://spdx.org/licenses/SISSL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SISSL.json",
             "_sourceURL": "https://spdx.org/licenses/SISSL.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -677,7 +677,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SISSL.json"
+                        "https://spdx.org/licenses/SISSL.json"
                     ],
                     [
                         null,
@@ -1340,7 +1340,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/SISSL.json"
+            "https://spdx.org/licenses/SISSL.json"
         ],
         [
             null,

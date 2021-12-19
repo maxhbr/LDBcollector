@@ -28,7 +28,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/Intel\_ACPI\_Software\_License\_Agreement
 
--   **SPDX:** http://spdx.org/licenses/Intel-ACPI.json
+-   **SPDX:** https://spdx.org/licenses/Intel-ACPI.json
 
 ## Text
 
@@ -201,7 +201,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Intel ACPI Software License Agreement",
-                "spdxDetailsURL": "http://spdx.org/licenses/Intel-ACPI.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Intel-ACPI.json",
                 "_sourceURL": "https://spdx.org/licenses/Intel-ACPI.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -217,7 +217,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Intel-ACPI.json"
+                            "https://spdx.org/licenses/Intel-ACPI.json"
                         ],
                         [
                             null,
@@ -323,7 +323,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Intel-ACPI.json"
+                "https://spdx.org/licenses/Intel-ACPI.json"
             ],
             [
                 null,

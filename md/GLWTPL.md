@@ -14,7 +14,7 @@
 
 -   **Homepage:** https://github.com/me-shaon/GLWTPL/blob/master/LICENSE
 
--   **SPDX:** http://spdx.org/licenses/GLWTPL.json
+-   **SPDX:** https://spdx.org/licenses/GLWTPL.json
 
 -   https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85
 
@@ -82,7 +82,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Good Luck With That Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/GLWTPL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/GLWTPL.json",
                 "_sourceURL": "https://spdx.org/licenses/GLWTPL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -98,7 +98,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/GLWTPL.json"
+                            "https://spdx.org/licenses/GLWTPL.json"
                         ],
                         [
                             null,
@@ -164,7 +164,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/GLWTPL.json"
+                "https://spdx.org/licenses/GLWTPL.json"
             ],
             [
                 null,

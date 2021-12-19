@@ -8,13 +8,19 @@
 
 ## Comments on (easy) usability
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
 ## General Comments
 
 ## URLs
 
 -   **Homepage:** https://sqlite.org/src/artifact/df5091916dbb40e6
 
--   **SPDX:** http://spdx.org/licenses/blessing.json
+-   **SPDX:** https://spdx.org/licenses/blessing.html
+
+-   **SPDX:** https://spdx.org/licenses/blessing.json
 
 -   https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9
 
@@ -33,6 +39,10 @@
 ### Facts
 
 -   LicenseName
+
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [SPDX](https://spdx.org/licenses/blessing.html "SPDX") (all data
     \[in this repository\] is generated)
@@ -63,7 +73,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SQLite Blessing",
-                "spdxDetailsURL": "http://spdx.org/licenses/blessing.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/blessing.json",
                 "_sourceURL": "https://spdx.org/licenses/blessing.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -80,7 +90,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/blessing.json"
+                            "https://spdx.org/licenses/blessing.json"
                         ],
                         [
                             null,
@@ -141,9 +151,58 @@
                         ]
                     ]
                 }
+            },
+            "BlueOak License List": {
+                "BlueOakRating": "Lead",
+                "url": "https://spdx.org/licenses/blessing.html",
+                "isPermissive": true,
+                "_sourceURL": "https://blueoakcouncil.org/list",
+                "name": "SQLite Blessing",
+                "id": "blessing",
+                "_implications": {
+                    "__impliedNames": [
+                        "blessing",
+                        "SQLite Blessing"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "BlueOak License List",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "Rating is: Lead"
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedURLs": [
+                        [
+                            "SPDX",
+                            "https://spdx.org/licenses/blessing.html"
+                        ]
+                    ]
+                }
             }
         },
+        "__impliedJudgement": [
+            [
+                "BlueOak License List",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "Rating is: Lead"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
+            [
+                "BlueOak License List",
+                "NoCopyleft"
+            ],
             [
                 "Scancode",
                 "NoCopyleft"
@@ -155,7 +214,11 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/blessing.json"
+                "https://spdx.org/licenses/blessing.html"
+            ],
+            [
+                "SPDX",
+                "https://spdx.org/licenses/blessing.json"
             ],
             [
                 null,

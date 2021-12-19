@@ -75,7 +75,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Artistic-1.0.html
 
--   **SPDX:** http://spdx.org/licenses/Artistic-1.0.json
+-   **SPDX:** https://spdx.org/licenses/Artistic-1.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/596
 
@@ -337,7 +337,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Artistic License 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/Artistic-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Artistic-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/Artistic-1.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -362,7 +362,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Artistic-1.0.json"
+                            "https://spdx.org/licenses/Artistic-1.0.json"
                         ],
                         [
                             null,
@@ -911,7 +911,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Artistic-1.0.json"
+                "https://spdx.org/licenses/Artistic-1.0.json"
             ],
             [
                 null,

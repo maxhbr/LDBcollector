@@ -38,7 +38,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "ImageMagick License",
-            "spdxDetailsURL": "http://spdx.org/licenses/ImageMagick.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/ImageMagick.json",
             "_sourceURL": "https://spdx.org/licenses/ImageMagick.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -54,7 +54,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/ImageMagick.json"
+                        "https://spdx.org/licenses/ImageMagick.json"
                     ],
                     [
                         null,
@@ -478,7 +478,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/ImageMagick.json"
+            "https://spdx.org/licenses/ImageMagick.json"
         ],
         [
             null,

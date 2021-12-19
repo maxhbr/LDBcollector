@@ -24,7 +24,7 @@
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Abstyles
 
--   **SPDX:** http://spdx.org/licenses/Abstyles.json
+-   **SPDX:** https://spdx.org/licenses/Abstyles.json
 
 ## Text
 
@@ -92,7 +92,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Abstyles License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Abstyles.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Abstyles.json",
                 "_sourceURL": "https://spdx.org/licenses/Abstyles.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -108,7 +108,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Abstyles.json"
+                            "https://spdx.org/licenses/Abstyles.json"
                         ],
                         [
                             null,
@@ -214,7 +214,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Abstyles.json"
+                "https://spdx.org/licenses/Abstyles.json"
             ],
             [
                 null,

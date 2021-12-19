@@ -91,7 +91,7 @@
 
 -   **OSI Page:** http://opensource.org/licenses/lgpl-2.1.php
 
--   **SPDX:** http://spdx.org/licenses/LGPL-2.1-only.json
+-   **SPDX:** https://spdx.org/licenses/LGPL-2.1-only.json
 
 -   **Wikipedia page:**
     https://en.wikipedia.org/wiki/GNU\_Lesser\_General\_Public\_License
@@ -248,8 +248,8 @@
     		YOU MUST Provide Modification date
     		YOU MUST Grant License
     			ATTRIBUTE Original license
-    		IF Modified work References Linked work
-    			YOU MUST Ensure Functionality
+    		IF Software modification Uses Linked work
+    			YOU MUST Ensure Functionality Without Linked work
     	YOU MUST Provide Tool chain information
     	YOU MUST NOT Restrict Granted rights
     USE CASE Binary delivery
@@ -277,8 +277,8 @@
     			YOU MUST Provide Modification date
     			YOU MUST Grant License
     				ATTRIBUTE Original license
-    			IF Modified work References Linked work
-    				YOU MUST Ensure Functionality
+    			IF Software modification Uses Linked work
+    				YOU MUST Ensure Functionality Without Linked work
     		YOU MUST Provide Tool chain information
     	IF Combined work
     		YOU MUST Permit Modification of Linked work
@@ -291,6 +291,10 @@
     		YOU MUST Provide License announcement
     			ATTRIBUTE Highlighted
     		YOU MUST Provide License text
+    		EITHER
+    			YOU MUST Provide Linkable work
+    		OR
+    			YOU MUST Use Shared library
     		IF Interactive AND Display Copyright notices
     			YOU MUST Display Copyright notices
     			YOU MUST Reference License text
@@ -318,8 +322,8 @@
     				YOU MUST Provide Modification date
     				YOU MUST Grant License
     					ATTRIBUTE Original license
-    				IF Modified work References Linked work
-    					YOU MUST Ensure Functionality
+    				IF Software modification Uses Linked work
+    					YOU MUST Ensure Functionality Without Linked work
     			YOU MUST Provide Tool chain information
     		OR
     			YOU MUST NOT Provide Library
@@ -335,8 +339,8 @@
     				YOU MUST Provide Modification date
     				YOU MUST Grant License
     					ATTRIBUTE Original license
-    				IF Modified work References Linked work
-    					YOU MUST Ensure Functionality
+    				IF Software modification Uses Linked work
+    					YOU MUST Ensure Functionality Without Linked work
     			YOU MUST Provide Tool chain information
     		OR
     			YOU MUST Ensure Source code delivery
@@ -347,9 +351,15 @@
     		YOU MUST Provide License notices
     		YOU MUST Reference Library
     	YOU MUST NOT Restrict Granted rights
+    USE CASE Header files Included in Linked work
+    	IF Substantial work
+    		ATTRIBUTE More than 10 lines of code
+    		YOU MUST Use GPL-2.0-or-later For Library AND Linked work
+    			YOU MUST Provide Source code Of Library AND Linked work
     COMPATIBILITY BSD-2-Clause
     COMPATIBILITY BSD-2-Clause-Patent
     COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSL-1.0
     COMPATIBILITY bzip2-1.0.5
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
@@ -369,6 +379,7 @@
     COMPATIBILITY WTFPL
     COMPATIBILITY X11
     COMPATIBILITY Zlib
+    COMPATIBILITY ZPL-2.0
     DEPENDING COMPATIBILITY EPL-2.0
     INCOMPATIBILITY Apache-1.0
     INCOMPATIBILITY Apache-1.1
@@ -1054,7 +1065,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Lesser General Public License v2.1 only",
-                "spdxDetailsURL": "http://spdx.org/licenses/LGPL-2.1-only.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/LGPL-2.1-only.json",
                 "_sourceURL": "https://spdx.org/licenses/LGPL-2.1-only.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -1080,7 +1091,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/LGPL-2.1-only.json"
+                            "https://spdx.org/licenses/LGPL-2.1-only.json"
                         ],
                         [
                             null,
@@ -1113,7 +1124,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/LGPL-2.1-only.txt",
                 "spdxId": "LGPL-2.1-only",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST Provide Warranty disclaimer\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Ensure Modified work Is Library\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Modified work References Linked work\n\t\t\tYOU MUST Ensure Functionality\n\tYOU MUST Provide Tool chain information\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tIF NOT Linked work\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Customary medium\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tIF Binary delivery Via Internet\n\t\t\t\tATTRIBUTE Source code delivery Via Internet\n\t\t\t\t\tATTRIBUTE On same server\n\t\t\t\t\tATTRIBUTE Equivalent\n\t\tYOU MUST Provide Copyright notice\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Appropriately\n\t\tYOU MUST Provide Warranty disclaimer\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Appropriately\n\t\tYOU MUST NOT Modify License notices\n\t\tYOU MUST NOT Modify Warranty disclaimer\n\t\tYOU MUST Forward License text\n\t\tIF Software modification\n\t\t\tYOU MUST Ensure Modified work Is Library\n\t\t\tYOU MUST Provide Modification notice\n\t\t\tYOU MUST Provide Modification date\n\t\t\tYOU MUST Grant License\n\t\t\t\tATTRIBUTE Original license\n\t\t\tIF Modified work References Linked work\n\t\t\t\tYOU MUST Ensure Functionality\n\t\tYOU MUST Provide Tool chain information\n\tIF Combined work\n\t\tYOU MUST Permit Modification of Linked work\n\t\t\tATTRIBUTE For own use\n\t\tYOU MUST Permit Reverse engineering of Linked work\n\t\t\tATTRIBUTE For Debugging Of Modification\n\t\t\tATTRIBUTE For own use\n\t\tYOU MUST Notify Library\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide License announcement\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide License text\n\t\tIF Interactive AND Display Copyright notices\n\t\t\tYOU MUST Display Copyright notices\n\t\t\tYOU MUST Reference License text\n\t\tEITHER\n\t\t\tYOU MUST Provide Source code\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\tIF Binary delivery Via Internet\n\t\t\t\t\tATTRIBUTE Source code delivery Via Internet\n\t\t\t\t\t\tATTRIBUTE On same server\n\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\tYOU MUST Provide Copyright notice\n\t\t\t\tATTRIBUTE Highlighted\n\t\t\t\tATTRIBUTE Appropriately\n\t\t\tYOU MUST Provide Warranty disclaimer\n\t\t\t\tATTRIBUTE Highlighted\n\t\t\t\tATTRIBUTE Appropriately\n\t\t\tYOU MUST NOT Modify License notices\n\t\t\tYOU MUST NOT Modify Warranty disclaimer\n\t\t\tYOU MUST Provide License text\n\t\t\tIF Software modification\n\t\t\t\tYOU MUST Ensure Modified work Is Library\n\t\t\t\tYOU MUST Provide Modification notice\n\t\t\t\tYOU MUST Provide Modification date\n\t\t\t\tYOU MUST Grant License\n\t\t\t\t\tATTRIBUTE Original license\n\t\t\t\tIF Modified work References Linked work\n\t\t\t\t\tYOU MUST Ensure Functionality\n\t\t\tYOU MUST Provide Tool chain information\n\t\tOR\n\t\t\tYOU MUST NOT Provide Library\n\t\t\tYOU MUST Ensure Interoperability\n\t\tOR\n\t\t\tYOU MUST Provide Delayed source code delivery\n\t\t\tYOU MUST Provide Written offer\n\t\t\t\tATTRIBUTE Duration 3 years\n\t\t\t\tATTRIBUTE No profit\n\t\t\tIF Software modification\n\t\t\t\tYOU MUST Ensure Modified work Is Library\n\t\t\t\tYOU MUST Provide Modification notice\n\t\t\t\tYOU MUST Provide Modification date\n\t\t\t\tYOU MUST Grant License\n\t\t\t\t\tATTRIBUTE Original license\n\t\t\t\tIF Modified work References Linked work\n\t\t\t\t\tYOU MUST Ensure Functionality\n\t\t\tYOU MUST Provide Tool chain information\n\t\tOR\n\t\t\tYOU MUST Ensure Source code delivery\n\tIF Combined library\n\t\tYOU MUST Permit Binary delivery of Library\n\t\tYOU MUST Provide Library\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide License notices\n\t\tYOU MUST Reference Library\n\tYOU MUST NOT Restrict Granted rights\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY GPL-2.0-only\nCOMPATIBILITY GPL-2.0-or-later\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY LGPL-2.1-or-later\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nDEPENDING COMPATIBILITY EPL-2.0\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY Apache-2.0\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST Provide Warranty disclaimer\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Ensure Modified work Is Library\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Software modification Uses Linked work\n\t\t\tYOU MUST Ensure Functionality Without Linked work\n\tYOU MUST Provide Tool chain information\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tIF NOT Linked work\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Customary medium\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tIF Binary delivery Via Internet\n\t\t\t\tATTRIBUTE Source code delivery Via Internet\n\t\t\t\t\tATTRIBUTE On same server\n\t\t\t\t\tATTRIBUTE Equivalent\n\t\tYOU MUST Provide Copyright notice\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Appropriately\n\t\tYOU MUST Provide Warranty disclaimer\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Appropriately\n\t\tYOU MUST NOT Modify License notices\n\t\tYOU MUST NOT Modify Warranty disclaimer\n\t\tYOU MUST Forward License text\n\t\tIF Software modification\n\t\t\tYOU MUST Ensure Modified work Is Library\n\t\t\tYOU MUST Provide Modification notice\n\t\t\tYOU MUST Provide Modification date\n\t\t\tYOU MUST Grant License\n\t\t\t\tATTRIBUTE Original license\n\t\t\tIF Software modification Uses Linked work\n\t\t\t\tYOU MUST Ensure Functionality Without Linked work\n\t\tYOU MUST Provide Tool chain information\n\tIF Combined work\n\t\tYOU MUST Permit Modification of Linked work\n\t\t\tATTRIBUTE For own use\n\t\tYOU MUST Permit Reverse engineering of Linked work\n\t\t\tATTRIBUTE For Debugging Of Modification\n\t\t\tATTRIBUTE For own use\n\t\tYOU MUST Notify Library\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide License announcement\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide License text\n\t\tEITHER\n\t\t\tYOU MUST Provide Linkable work\n\t\tOR\n\t\t\tYOU MUST Use Shared library\n\t\tIF Interactive AND Display Copyright notices\n\t\t\tYOU MUST Display Copyright notices\n\t\t\tYOU MUST Reference License text\n\t\tEITHER\n\t\t\tYOU MUST Provide Source code\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\tIF Binary delivery Via Internet\n\t\t\t\t\tATTRIBUTE Source code delivery Via Internet\n\t\t\t\t\t\tATTRIBUTE On same server\n\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\tYOU MUST Provide Copyright notice\n\t\t\t\tATTRIBUTE Highlighted\n\t\t\t\tATTRIBUTE Appropriately\n\t\t\tYOU MUST Provide Warranty disclaimer\n\t\t\t\tATTRIBUTE Highlighted\n\t\t\t\tATTRIBUTE Appropriately\n\t\t\tYOU MUST NOT Modify License notices\n\t\t\tYOU MUST NOT Modify Warranty disclaimer\n\t\t\tYOU MUST Provide License text\n\t\t\tIF Software modification\n\t\t\t\tYOU MUST Ensure Modified work Is Library\n\t\t\t\tYOU MUST Provide Modification notice\n\t\t\t\tYOU MUST Provide Modification date\n\t\t\t\tYOU MUST Grant License\n\t\t\t\t\tATTRIBUTE Original license\n\t\t\t\tIF Software modification Uses Linked work\n\t\t\t\t\tYOU MUST Ensure Functionality Without Linked work\n\t\t\tYOU MUST Provide Tool chain information\n\t\tOR\n\t\t\tYOU MUST NOT Provide Library\n\t\t\tYOU MUST Ensure Interoperability\n\t\tOR\n\t\t\tYOU MUST Provide Delayed source code delivery\n\t\t\tYOU MUST Provide Written offer\n\t\t\t\tATTRIBUTE Duration 3 years\n\t\t\t\tATTRIBUTE No profit\n\t\t\tIF Software modification\n\t\t\t\tYOU MUST Ensure Modified work Is Library\n\t\t\t\tYOU MUST Provide Modification notice\n\t\t\t\tYOU MUST Provide Modification date\n\t\t\t\tYOU MUST Grant License\n\t\t\t\t\tATTRIBUTE Original license\n\t\t\t\tIF Software modification Uses Linked work\n\t\t\t\t\tYOU MUST Ensure Functionality Without Linked work\n\t\t\tYOU MUST Provide Tool chain information\n\t\tOR\n\t\t\tYOU MUST Ensure Source code delivery\n\tIF Combined library\n\t\tYOU MUST Permit Binary delivery of Library\n\t\tYOU MUST Provide Library\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide License notices\n\t\tYOU MUST Reference Library\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Header files Included in Linked work\n\tIF Substantial work\n\t\tATTRIBUTE More than 10 lines of code\n\t\tYOU MUST Use GPL-2.0-or-later For Library AND Linked work\n\t\t\tYOU MUST Provide Source code Of Library AND Linked work\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY GPL-2.0-only\nCOMPATIBILITY GPL-2.0-or-later\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY LGPL-2.1-or-later\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nDEPENDING COMPATIBILITY EPL-2.0\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY Apache-2.0\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "LGPL-2.1-only"
@@ -2115,7 +2126,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/LGPL-2.1-only.json"
+                "https://spdx.org/licenses/LGPL-2.1-only.json"
             ],
             [
                 null,

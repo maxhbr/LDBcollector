@@ -31,7 +31,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/MakeIndex
-* *SPDX:* http://spdx.org/licenses/MakeIndex.json
+* *SPDX:* https://spdx.org/licenses/MakeIndex.json
 
 === Text
 
@@ -116,7 +116,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "MakeIndex License",
-            "spdxDetailsURL": "http://spdx.org/licenses/MakeIndex.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MakeIndex.json",
             "_sourceURL": "https://spdx.org/licenses/MakeIndex.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -132,7 +132,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MakeIndex.json"
+                        "https://spdx.org/licenses/MakeIndex.json"
                     ],
                     [
                         null,
@@ -238,7 +238,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/MakeIndex.json"
+            "https://spdx.org/licenses/MakeIndex.json"
         ],
         [
             null,

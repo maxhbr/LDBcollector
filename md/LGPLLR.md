@@ -14,7 +14,7 @@
 
 -   **Homepage:** http://www-igm.univ-mlv.fr/~unitex/lgpllr.html
 
--   **SPDX:** http://spdx.org/licenses/LGPLLR.json
+-   **SPDX:** https://spdx.org/licenses/LGPLLR.json
 
 ## Text
 
@@ -286,7 +286,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Lesser General Public License For Linguistic Resources",
-                "spdxDetailsURL": "http://spdx.org/licenses/LGPLLR.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/LGPLLR.json",
                 "_sourceURL": "https://spdx.org/licenses/LGPLLR.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -302,7 +302,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/LGPLLR.json"
+                            "https://spdx.org/licenses/LGPLLR.json"
                         ],
                         [
                             null,
@@ -362,7 +362,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/LGPLLR.json"
+                "https://spdx.org/licenses/LGPLLR.json"
             ],
             [
                 null,

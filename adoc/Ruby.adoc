@@ -49,7 +49,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.ruby-lang.org/en/LICENSE.txt
 * *SPDX:* https://spdx.org/licenses/Ruby.html
-* *SPDX:* http://spdx.org/licenses/Ruby.json
+* *SPDX:* https://spdx.org/licenses/Ruby.json
 * *open-license:* http://open-license.hitachi.com/licenses/2
 * *open-license:* http://open-license.hitachi.com/licenses/3
 * https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING
@@ -249,7 +249,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Ruby License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Ruby.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Ruby.json",
             "_sourceURL": "https://spdx.org/licenses/Ruby.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -265,7 +265,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Ruby.json"
+                        "https://spdx.org/licenses/Ruby.json"
                     ],
                     [
                         null,
@@ -642,7 +642,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Ruby.json"
+            "https://spdx.org/licenses/Ruby.json"
         ],
         [
             null,

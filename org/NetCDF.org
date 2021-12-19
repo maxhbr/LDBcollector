@@ -37,7 +37,7 @@
 
 - *SPDX:* https://spdx.org/licenses/NetCDF.html
 
-- *SPDX:* http://spdx.org/licenses/NetCDF.json
+- *SPDX:* https://spdx.org/licenses/NetCDF.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/912
 
@@ -180,7 +180,7 @@
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "NetCDF license",
-              "spdxDetailsURL": "http://spdx.org/licenses/NetCDF.json",
+              "spdxDetailsURL": "https://spdx.org/licenses/NetCDF.json",
               "_sourceURL": "https://spdx.org/licenses/NetCDF.html",
               "spdxLicIsOSIApproved": false,
               "spdxSeeAlso": [
@@ -196,7 +196,7 @@
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/NetCDF.json"
+                          "https://spdx.org/licenses/NetCDF.json"
                       ],
                       [
                           null,
@@ -461,7 +461,7 @@
           ],
           [
               "SPDX",
-              "http://spdx.org/licenses/NetCDF.json"
+              "https://spdx.org/licenses/NetCDF.json"
           ],
           [
               null,

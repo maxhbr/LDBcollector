@@ -35,7 +35,7 @@
 
 -   **Homepage:** http://www.sendmail.com/
 
--   **SPDX:** http://spdx.org/licenses/Sendmail.json
+-   **SPDX:** https://spdx.org/licenses/Sendmail.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/702
 
@@ -254,7 +254,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sendmail License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Sendmail.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Sendmail.json",
                 "_sourceURL": "https://spdx.org/licenses/Sendmail.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -271,7 +271,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Sendmail.json"
+                            "https://spdx.org/licenses/Sendmail.json"
                         ],
                         [
                             null,
@@ -572,7 +572,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Sendmail.json"
+                "https://spdx.org/licenses/Sendmail.json"
             ],
             [
                 null,

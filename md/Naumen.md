@@ -39,7 +39,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Naumen.html
 
--   **SPDX:** http://spdx.org/licenses/Naumen.json
+-   **SPDX:** https://spdx.org/licenses/Naumen.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1260
 
@@ -183,7 +183,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Naumen Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Naumen.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Naumen.json",
                 "_sourceURL": "https://spdx.org/licenses/Naumen.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -208,7 +208,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Naumen.json"
+                            "https://spdx.org/licenses/Naumen.json"
                         ],
                         [
                             null,
@@ -506,7 +506,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Naumen.json"
+                "https://spdx.org/licenses/Naumen.json"
             ],
             [
                 "Homepage",

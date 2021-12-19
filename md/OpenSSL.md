@@ -10,6 +10,8 @@
 
 -   `scancode://openssl`
 
+-   `LicenseRef-scancode-openssl`
+
 ## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
@@ -41,7 +43,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/OpenSSL.html
 
--   **SPDX:** http://spdx.org/licenses/OpenSSL.json
+-   **SPDX:** https://spdx.org/licenses/OpenSSL.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/279
 
@@ -120,6 +122,7 @@
     COMPATIBILITY BSD-3-Clause
     COMPATIBILITY BSD-4-Clause
     COMPATIBILITY BSD-4-Clause-UC
+    COMPATIBILITY BSL-1.0
     COMPATIBILITY bzip2-1.0.5
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
@@ -135,6 +138,7 @@
     COMPATIBILITY WTFPL
     COMPATIBILITY X11
     COMPATIBILITY Zlib
+    COMPATIBILITY ZPL-2.0
     COPYLEFT CLAUSE Questionable
 
 (source: OSADL License Checklist)
@@ -318,6 +322,7 @@
             "scancode://openssl-ssleay",
             "OpenSSL/SSLeay License",
             "scancode://openssl",
+            "LicenseRef-scancode-openssl",
             "OpenSSL license"
         ],
         "__impliedId": "OpenSSL",
@@ -348,7 +353,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "OpenSSL License",
-                "spdxDetailsURL": "http://spdx.org/licenses/OpenSSL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OpenSSL.json",
                 "_sourceURL": "https://spdx.org/licenses/OpenSSL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -364,7 +369,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OpenSSL.json"
+                            "https://spdx.org/licenses/OpenSSL.json"
                         ],
                         [
                             null,
@@ -377,7 +382,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/OpenSSL.txt",
                 "spdxId": "OpenSSL",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\t\tYOU MUST Credit Verbatim \"This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\"\n\tUSE CASE Include Windows code\n\t\tYOU MUST Credit Verbatim \"This product includes software written by Tim Hudson (tjh@cryptsoft.com)\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote Using \"OpenSSL Toolkit\" or \"OpenSSL Project\"\n\t\tYOU MUST NOT Use \"OpenSSL\" in product name\n\tYOU MUST NOT Modify License\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOPYLEFT CLAUSE Questionable\n",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\t\tYOU MUST Credit Verbatim \"This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\"\n\tUSE CASE Include Windows code\n\t\tYOU MUST Credit Verbatim \"This product includes software written by Tim Hudson (tjh@cryptsoft.com)\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote Using \"OpenSSL Toolkit\" or \"OpenSSL Project\"\n\t\tYOU MUST NOT Use \"OpenSSL\" in product name\n\tYOU MUST NOT Modify License\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nCOPYLEFT CLAUSE Questionable\n",
                 "_implications": {
                     "__impliedNames": [
                         "OpenSSL"
@@ -852,7 +857,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OpenSSL.json"
+                "https://spdx.org/licenses/OpenSSL.json"
             ],
             [
                 null,

@@ -15,7 +15,7 @@
 -   **Homepage:**
     https://github.com/usnistgov/jsip/blob/master/README#L122
 
--   **SPDX:** http://spdx.org/licenses/NIST-PD.json
+-   **SPDX:** https://spdx.org/licenses/NIST-PD.json
 
 -   https://github.com/tcheneau/simpleRPL/blob/e645e69e38dd4e3ccfeceb2db8cba05b7c2e0cd3/LICENSE.txt
 
@@ -83,7 +83,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NIST Public Domain Notice",
-                "spdxDetailsURL": "http://spdx.org/licenses/NIST-PD.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NIST-PD.json",
                 "_sourceURL": "https://spdx.org/licenses/NIST-PD.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -100,7 +100,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NIST-PD.json"
+                            "https://spdx.org/licenses/NIST-PD.json"
                         ],
                         [
                             null,
@@ -175,7 +175,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/NIST-PD.json"
+                "https://spdx.org/licenses/NIST-PD.json"
             ],
             [
                 null,

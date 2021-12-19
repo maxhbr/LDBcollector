@@ -28,7 +28,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/AMDPLPA.html
 
--   **SPDX:** http://spdx.org/licenses/AMDPLPA.json
+-   **SPDX:** https://spdx.org/licenses/AMDPLPA.json
 
 ## Text
 
@@ -163,7 +163,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "AMD's plpa_map.c License",
-                "spdxDetailsURL": "http://spdx.org/licenses/AMDPLPA.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/AMDPLPA.json",
                 "_sourceURL": "https://spdx.org/licenses/AMDPLPA.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -179,7 +179,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/AMDPLPA.json"
+                            "https://spdx.org/licenses/AMDPLPA.json"
                         ],
                         [
                             null,
@@ -328,7 +328,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/AMDPLPA.json"
+                "https://spdx.org/licenses/AMDPLPA.json"
             ],
             [
                 null,

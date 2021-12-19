@@ -48,7 +48,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/Sleepycat
 
--   **SPDX:** http://spdx.org/licenses/Sleepycat.json
+-   **SPDX:** https://spdx.org/licenses/Sleepycat.json
 
 -   https://spdx.org/licenses/Sleepycat.html
 
@@ -209,7 +209,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sleepycat License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Sleepycat.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Sleepycat.json",
                 "_sourceURL": "https://spdx.org/licenses/Sleepycat.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -234,7 +234,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Sleepycat.json"
+                            "https://spdx.org/licenses/Sleepycat.json"
                         ],
                         [
                             null,
@@ -597,7 +597,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Sleepycat.json"
+                "https://spdx.org/licenses/Sleepycat.json"
             ],
             [
                 "Homepage",

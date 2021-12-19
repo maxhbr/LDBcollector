@@ -75,7 +75,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Zlib.html
 
--   **SPDX:** http://spdx.org/licenses/Zlib.json
+-   **SPDX:** https://spdx.org/licenses/Zlib.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/16
 
@@ -313,7 +313,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "zlib License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Zlib.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Zlib.json",
                 "_sourceURL": "https://spdx.org/licenses/Zlib.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -339,7 +339,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Zlib.json"
+                            "https://spdx.org/licenses/Zlib.json"
                         ],
                         [
                             null,
@@ -911,12 +911,12 @@
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "zlib",
+                        "Zlib",
                         "zlib License"
                     ]
                 },
                 "licenseId": [
-                    "zlib",
+                    "Zlib",
                     "zlib License"
                 ]
             },
@@ -1064,7 +1064,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Zlib.json"
+                "https://spdx.org/licenses/Zlib.json"
             ],
             [
                 null,

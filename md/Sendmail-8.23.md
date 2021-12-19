@@ -15,7 +15,7 @@
 -   **Homepage:**
     https://www.proofpoint.com/sites/default/files/sendmail-license.pdf
 
--   **SPDX:** http://spdx.org/licenses/Sendmail-8.23.json
+-   **SPDX:** https://spdx.org/licenses/Sendmail-8.23.json
 
 -   https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf
 
@@ -94,7 +94,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sendmail License 8.23",
-                "spdxDetailsURL": "http://spdx.org/licenses/Sendmail-8.23.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Sendmail-8.23.json",
                 "_sourceURL": "https://spdx.org/licenses/Sendmail-8.23.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -111,7 +111,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Sendmail-8.23.json"
+                            "https://spdx.org/licenses/Sendmail-8.23.json"
                         ],
                         [
                             null,
@@ -186,7 +186,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Sendmail-8.23.json"
+                "https://spdx.org/licenses/Sendmail-8.23.json"
             ],
             [
                 null,

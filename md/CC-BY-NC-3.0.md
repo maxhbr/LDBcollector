@@ -29,7 +29,7 @@
 
 -   **Homepage:** http://creativecommons.org/licenses/by-nc/3.0/
 
--   **SPDX:** http://spdx.org/licenses/CC-BY-NC-3.0.json
+-   **SPDX:** https://spdx.org/licenses/CC-BY-NC-3.0.json
 
 -   https://creativecommons.org/licenses/by-nc/3.0/legalcode
 
@@ -432,7 +432,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial 3.0 Unported",
-                "spdxDetailsURL": "http://spdx.org/licenses/CC-BY-NC-3.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CC-BY-NC-3.0.json",
                 "_sourceURL": "https://spdx.org/licenses/CC-BY-NC-3.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -448,7 +448,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CC-BY-NC-3.0.json"
+                            "https://spdx.org/licenses/CC-BY-NC-3.0.json"
                         ],
                         [
                             null,
@@ -592,7 +592,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/CC-BY-NC-3.0.json"
+                "https://spdx.org/licenses/CC-BY-NC-3.0.json"
             ],
             [
                 null,

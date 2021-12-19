@@ -39,7 +39,7 @@
 
 -   **OSI Page:** http://opensource.org/licenses/ca-tosl1.1.php
 
--   **SPDX:** http://spdx.org/licenses/CATOSL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/CATOSL-1.1.json
 
 ## Text
 
@@ -499,7 +499,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Computer Associates Trusted Open Source License 1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/CATOSL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CATOSL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/CATOSL-1.1.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -524,7 +524,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CATOSL-1.1.json"
+                            "https://spdx.org/licenses/CATOSL-1.1.json"
                         ],
                         [
                             null,
@@ -739,7 +739,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/CATOSL-1.1.json"
+                "https://spdx.org/licenses/CATOSL-1.1.json"
             ],
             [
                 "Homepage",

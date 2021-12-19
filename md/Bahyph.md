@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Bahyph
 
--   **SPDX:** http://spdx.org/licenses/Bahyph.json
+-   **SPDX:** https://spdx.org/licenses/Bahyph.json
 
 ## Text
 
@@ -90,7 +90,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Bahyph License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Bahyph.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Bahyph.json",
                 "_sourceURL": "https://spdx.org/licenses/Bahyph.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -106,7 +106,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Bahyph.json"
+                            "https://spdx.org/licenses/Bahyph.json"
                         ],
                         [
                             null,
@@ -255,7 +255,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Bahyph.json"
+                "https://spdx.org/licenses/Bahyph.json"
             ],
             [
                 null,

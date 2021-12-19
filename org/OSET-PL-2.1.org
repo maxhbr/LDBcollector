@@ -24,7 +24,7 @@
 
 - *OSI Page:* https://opensource.org/licenses/OPL-2.1
 
-- *SPDX:* http://spdx.org/licenses/OSET-PL-2.1.json
+- *SPDX:* https://spdx.org/licenses/OSET-PL-2.1.json
 
 - http://www.osetfoundation.org/public-license
 
@@ -184,7 +184,7 @@
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "OSET Public License version 2.1",
-              "spdxDetailsURL": "http://spdx.org/licenses/OSET-PL-2.1.json",
+              "spdxDetailsURL": "https://spdx.org/licenses/OSET-PL-2.1.json",
               "_sourceURL": "https://spdx.org/licenses/OSET-PL-2.1.html",
               "spdxLicIsOSIApproved": true,
               "spdxSeeAlso": [
@@ -210,7 +210,7 @@
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/OSET-PL-2.1.json"
+                          "https://spdx.org/licenses/OSET-PL-2.1.json"
                       ],
                       [
                           null,
@@ -313,7 +313,7 @@
       "__impliedURLs": [
           [
               "SPDX",
-              "http://spdx.org/licenses/OSET-PL-2.1.json"
+              "https://spdx.org/licenses/OSET-PL-2.1.json"
           ],
           [
               null,

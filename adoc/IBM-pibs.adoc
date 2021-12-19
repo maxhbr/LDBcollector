@@ -28,7 +28,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 * *Homepage:*
 http://git.denx.de/?p=u-boot.git;a=blob;f=arch/powerpc/cpu/ppc4xx/miiphy.c;h=297155fdafa064b955e53e9832de93bfb0cfb85b;hb=9fab4bf4cc077c21e43941866f3f2c196f28670d
 * *SPDX:* https://spdx.org/licenses/IBM-pibs.html
-* *SPDX:* http://spdx.org/licenses/IBM-pibs.json
+* *SPDX:* https://spdx.org/licenses/IBM-pibs.json
 
 === OSADL Rule
 
@@ -105,7 +105,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "IBM PowerPC Initialization and Boot Software",
-            "spdxDetailsURL": "http://spdx.org/licenses/IBM-pibs.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/IBM-pibs.json",
             "_sourceURL": "https://spdx.org/licenses/IBM-pibs.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -121,7 +121,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/IBM-pibs.json"
+                        "https://spdx.org/licenses/IBM-pibs.json"
                     ],
                     [
                         null,
@@ -245,7 +245,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/IBM-pibs.json"
+            "https://spdx.org/licenses/IBM-pibs.json"
         ],
         [
             null,

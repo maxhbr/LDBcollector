@@ -23,7 +23,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/IBM-pibs.html
 
--   **SPDX:** http://spdx.org/licenses/IBM-pibs.json
+-   **SPDX:** https://spdx.org/licenses/IBM-pibs.json
 
 ## OSADL Rule
 
@@ -101,7 +101,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "IBM PowerPC Initialization and Boot Software",
-                "spdxDetailsURL": "http://spdx.org/licenses/IBM-pibs.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/IBM-pibs.json",
                 "_sourceURL": "https://spdx.org/licenses/IBM-pibs.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -117,7 +117,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/IBM-pibs.json"
+                            "https://spdx.org/licenses/IBM-pibs.json"
                         ],
                         [
                             null,
@@ -241,7 +241,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/IBM-pibs.json"
+                "https://spdx.org/licenses/IBM-pibs.json"
             ],
             [
                 null,

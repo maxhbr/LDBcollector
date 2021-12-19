@@ -22,7 +22,7 @@
 -   **Homepage:**
     http://research.scea.com/scea\_shared\_source\_license.html
 
--   **SPDX:** http://spdx.org/licenses/SCEA.json
+-   **SPDX:** https://spdx.org/licenses/SCEA.json
 
 ## Text
 
@@ -133,7 +133,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SCEA Shared Source License",
-                "spdxDetailsURL": "http://spdx.org/licenses/SCEA.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SCEA.json",
                 "_sourceURL": "https://spdx.org/licenses/SCEA.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -149,7 +149,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SCEA.json"
+                            "https://spdx.org/licenses/SCEA.json"
                         ],
                         [
                             null,
@@ -247,7 +247,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/SCEA.json"
+                "https://spdx.org/licenses/SCEA.json"
             ],
             [
                 null,

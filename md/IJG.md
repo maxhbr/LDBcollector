@@ -29,7 +29,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/IJG.html
 
--   **SPDX:** http://spdx.org/licenses/IJG.json
+-   **SPDX:** https://spdx.org/licenses/IJG.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/302
 
@@ -206,7 +206,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Independent JPEG Group License",
-                "spdxDetailsURL": "http://spdx.org/licenses/IJG.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/IJG.json",
                 "_sourceURL": "https://spdx.org/licenses/IJG.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -222,7 +222,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/IJG.json"
+                            "https://spdx.org/licenses/IJG.json"
                         ],
                         [
                             null,
@@ -417,7 +417,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/IJG.json"
+                "https://spdx.org/licenses/IJG.json"
             ],
             [
                 null,

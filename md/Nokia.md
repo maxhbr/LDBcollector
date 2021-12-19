@@ -35,7 +35,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/Nokia
 
--   **SPDX:** http://spdx.org/licenses/Nokia.json
+-   **SPDX:** https://spdx.org/licenses/Nokia.json
 
 -   http://www.opensource.org/licenses/nokia
 
@@ -526,7 +526,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Nokia Open Source License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Nokia.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Nokia.json",
                 "_sourceURL": "https://spdx.org/licenses/Nokia.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -551,7 +551,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Nokia.json"
+                            "https://spdx.org/licenses/Nokia.json"
                         ],
                         [
                             null,
@@ -771,7 +771,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Nokia.json"
+                "https://spdx.org/licenses/Nokia.json"
             ],
             [
                 null,

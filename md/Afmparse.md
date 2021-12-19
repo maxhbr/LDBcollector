@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Afmparse.html
 
--   **SPDX:** http://spdx.org/licenses/Afmparse.json
+-   **SPDX:** https://spdx.org/licenses/Afmparse.json
 
 ## Text
 
@@ -97,7 +97,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Afmparse License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Afmparse.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Afmparse.json",
                 "_sourceURL": "https://spdx.org/licenses/Afmparse.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -113,7 +113,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Afmparse.json"
+                            "https://spdx.org/licenses/Afmparse.json"
                         ],
                         [
                             null,
@@ -262,7 +262,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Afmparse.json"
+                "https://spdx.org/licenses/Afmparse.json"
             ],
             [
                 null,

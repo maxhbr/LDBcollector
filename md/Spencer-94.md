@@ -16,6 +16,10 @@
 
 ## General Comments
 
+-   “this is very similar to the purdue-bsd license” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hs-regexp.yml "Scancode")
+    (CC0-1.0))
+
 ## URLs
 
 -   **Homepage:**
@@ -23,14 +27,14 @@
 
 -   **SPDX:** https://spdx.org/licenses/Spencer-94.html
 
--   **SPDX:** http://spdx.org/licenses/Spencer-94.json
+-   **SPDX:** https://spdx.org/licenses/Spencer-94.json
 
 -   https://fedoraproject.org/wiki/Licensing/Henry\_Spencer\_Reg-Ex\_Library\_License
 
 ## Text
 
-    This software is not subject to any license of the American Telephone and
-    Telegraph Company or of the Regents of the University of California.
+    This software is not subject to any license of the American Telephone
+    and Telegraph Company or of the Regents of the University of California.
 
     Permission is granted to anyone to use this software for any purpose on any
     computer system, and to alter it and redistribute it, subject to the following
@@ -77,6 +81,14 @@
             "Henry Spencer Regexp License"
         ],
         "__impliedId": "Spencer-94",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "this is very similar to the purdue-bsd license"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -91,7 +103,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Spencer License 94",
-                "spdxDetailsURL": "http://spdx.org/licenses/Spencer-94.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Spencer-94.json",
                 "_sourceURL": "https://spdx.org/licenses/Spencer-94.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -107,7 +119,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Spencer-94.json"
+                            "https://spdx.org/licenses/Spencer-94.json"
                         ],
                         [
                             null,
@@ -124,7 +136,7 @@
                 "homepageUrl": "https://github.com/garyhouston/regex/blob/master/COPYRIGHT",
                 "shortName": "Henry Spencer Regexp License",
                 "textUrls": null,
-                "text": "This software is not subject to any license of the American Telephone and\nTelegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
+                "text": "This software is not subject to any license of the American Telephone\nand Telegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Henry Spencer",
@@ -132,7 +144,7 @@
                 "key": "hs-regexp",
                 "name": "Henry Spencer Regexp License",
                 "spdxId": "Spencer-94",
-                "notes": null,
+                "notes": "this is very similar to the purdue-bsd license",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://hs-regexp",
@@ -140,6 +152,14 @@
                         "Spencer-94"
                     ],
                     "__impliedId": "Spencer-94",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "this is very similar to the purdue-bsd license"
+                            ]
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -147,7 +167,7 @@
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "This software is not subject to any license of the American Telephone and\nTelegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
+                    "__impliedText": "This software is not subject to any license of the American Telephone\nand Telegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -218,7 +238,7 @@
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "This software is not subject to any license of the American Telephone and\nTelegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
+        "__impliedText": "This software is not subject to any license of the American Telephone\nand Telegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -226,7 +246,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Spencer-94.json"
+                "https://spdx.org/licenses/Spencer-94.json"
             ],
             [
                 null,

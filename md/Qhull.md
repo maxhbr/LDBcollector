@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Qhull.html
 
--   **SPDX:** http://spdx.org/licenses/Qhull.json
+-   **SPDX:** https://spdx.org/licenses/Qhull.json
 
 -   https://fedoraproject.org/wiki/Licensing/Qhull
 
@@ -117,7 +117,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Qhull License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Qhull.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Qhull.json",
                 "_sourceURL": "https://spdx.org/licenses/Qhull.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -133,7 +133,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Qhull.json"
+                            "https://spdx.org/licenses/Qhull.json"
                         ],
                         [
                             null,
@@ -298,7 +298,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Qhull.json"
+                "https://spdx.org/licenses/Qhull.json"
             ],
             [
                 null,

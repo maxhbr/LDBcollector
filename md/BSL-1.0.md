@@ -67,7 +67,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSL-1.0.html
 
--   **SPDX:** http://spdx.org/licenses/BSL-1.0.json
+-   **SPDX:** https://spdx.org/licenses/BSL-1.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/390
 
@@ -121,29 +121,7 @@
     	YOU MUST Forward Copyright notices
     	YOU MUST Forward License text
     	YOU MUST Forward Warranty disclaimer
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
     USE CASE Binary delivery
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY EFL-2.0
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    COPYLEFT CLAUSE Questionable
 
 (source: OSADL License Checklist)
 
@@ -296,7 +274,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Boost Software License 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSL-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSL-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/BSL-1.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -322,7 +300,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSL-1.0.json"
+                            "https://spdx.org/licenses/BSL-1.0.json"
                         ],
                         [
                             null,
@@ -339,18 +317,11 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSL-1.0.txt",
                 "spdxId": "BSL-1.0",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\nUSE CASE Binary delivery\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOPYLEFT CLAUSE Questionable\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n",
                 "_implications": {
                     "__impliedNames": [
                         "BSL-1.0"
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "MaybeCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "MaybeCopyleft"
+                    ]
                 }
             },
             "Scancode": {
@@ -839,15 +810,11 @@
                 "NoCopyleft"
             ],
             [
-                "OSADL License Checklist",
-                "MaybeCopyleft"
-            ],
-            [
                 "Scancode",
                 "NoCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "MaybeCopyleft",
+        "__calculatedCopyleft": "NoCopyleft",
         "__obligations": {
             "limitations": [
                 {
@@ -905,7 +872,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSL-1.0.json"
+                "https://spdx.org/licenses/BSL-1.0.json"
             ],
             [
                 null,

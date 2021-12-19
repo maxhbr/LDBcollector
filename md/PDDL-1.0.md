@@ -1,4 +1,4 @@
-# ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
+# Open Data Commons Public Domain Dedication & License 1.0 (PDDL-1.0)
 
 [TABLE]
 
@@ -20,11 +20,13 @@
 
 -   **Homepage:** http://opendatacommons.org/licenses/pddl/1-0/
 
--   **SPDX:** http://spdx.org/licenses/PDDL-1.0.json
+-   **SPDX:** https://spdx.org/licenses/PDDL-1.0.json
 
 -   https://opendefinition.org/licenses/odc-pddl
 
 -   http://opendatacommons.org/licenses/pddl/1.0/
+
+-   https://opendatacommons.org/licenses/pddl/
 
 ## Text
 
@@ -196,7 +198,7 @@
             "PDDL-1.0",
             "Open Data Commons Public Domain Dedication and Licence 1.0",
             "ODC-PDDL-1.0",
-            "ODC Public Domain Dedication & License 1.0",
+            "Open Data Commons Public Domain Dedication & License 1.0",
             "scancode://pddl-1.0",
             "PDDL 1.0"
         ],
@@ -245,28 +247,33 @@
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
-                "spdxFullName": "ODC Public Domain Dedication & License 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/PDDL-1.0.json",
+                "spdxFullName": "Open Data Commons Public Domain Dedication & License 1.0",
+                "spdxDetailsURL": "https://spdx.org/licenses/PDDL-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/PDDL-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "http://opendatacommons.org/licenses/pddl/1.0/"
+                    "http://opendatacommons.org/licenses/pddl/1.0/",
+                    "https://opendatacommons.org/licenses/pddl/"
                 ],
                 "_implications": {
                     "__impliedNames": [
                         "PDDL-1.0",
-                        "ODC Public Domain Dedication & License 1.0"
+                        "Open Data Commons Public Domain Dedication & License 1.0"
                     ],
                     "__impliedId": "PDDL-1.0",
                     "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/PDDL-1.0.json"
+                            "https://spdx.org/licenses/PDDL-1.0.json"
                         ],
                         [
                             null,
                             "http://opendatacommons.org/licenses/pddl/1.0/"
+                        ],
+                        [
+                            null,
+                            "https://opendatacommons.org/licenses/pddl/"
                         ]
                     ]
                 },
@@ -290,7 +297,8 @@
             },
             "Scancode": {
                 "otherUrls": [
-                    "http://opendatacommons.org/licenses/pddl/1.0/"
+                    "http://opendatacommons.org/licenses/pddl/1.0/",
+                    "https://opendatacommons.org/licenses/pddl/"
                 ],
                 "homepageUrl": "http://opendatacommons.org/licenses/pddl/1-0/",
                 "shortName": "PDDL 1.0",
@@ -327,6 +335,10 @@
                         [
                             null,
                             "http://opendatacommons.org/licenses/pddl/1.0/"
+                        ],
+                        [
+                            null,
+                            "https://opendatacommons.org/licenses/pddl/"
                         ]
                     ]
                 }
@@ -372,11 +384,15 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/PDDL-1.0.json"
+                "https://spdx.org/licenses/PDDL-1.0.json"
             ],
             [
                 null,
                 "http://opendatacommons.org/licenses/pddl/1.0/"
+            ],
+            [
+                null,
+                "https://opendatacommons.org/licenses/pddl/"
             ],
             [
                 "Homepage",

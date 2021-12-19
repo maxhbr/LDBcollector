@@ -16,7 +16,7 @@
 
 -   **Homepage:** https://cdla.io/permissive-1-0/
 
--   **SPDX:** http://spdx.org/licenses/CDLA-Permissive-1.0.json
+-   **SPDX:** https://spdx.org/licenses/CDLA-Permissive-1.0.json
 
 -   https://cdla.io/permissive-1-0
 
@@ -146,7 +146,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Community Data License Agreement Permissive 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/CDLA-Permissive-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CDLA-Permissive-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/CDLA-Permissive-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -162,7 +162,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CDLA-Permissive-1.0.json"
+                            "https://spdx.org/licenses/CDLA-Permissive-1.0.json"
                         ],
                         [
                             null,
@@ -228,7 +228,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/CDLA-Permissive-1.0.json"
+                "https://spdx.org/licenses/CDLA-Permissive-1.0.json"
             ],
             [
                 null,

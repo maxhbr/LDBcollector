@@ -40,7 +40,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.smlnj.org//license.html
 * *SPDX:* https://spdx.org/licenses/SMLNJ.html
-* *SPDX:* http://spdx.org/licenses/SMLNJ.json
+* *SPDX:* https://spdx.org/licenses/SMLNJ.json
 * https://www.smlnj.org/license.html
 * http://www.gnu.org/licenses/license-list.html#StandardMLofNJ
 * http://www2.cs.tum.edu/projects/cup/
@@ -120,7 +120,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Standard ML of New Jersey License",
-            "spdxDetailsURL": "http://spdx.org/licenses/SMLNJ.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SMLNJ.json",
             "_sourceURL": "https://spdx.org/licenses/SMLNJ.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -136,7 +136,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SMLNJ.json"
+                        "https://spdx.org/licenses/SMLNJ.json"
                     ],
                     [
                         null,
@@ -309,7 +309,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/SMLNJ.json"
+            "https://spdx.org/licenses/SMLNJ.json"
         ],
         [
             null,

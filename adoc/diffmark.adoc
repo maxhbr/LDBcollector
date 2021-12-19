@@ -40,7 +40,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/diffmark
 * *SPDX:* https://spdx.org/licenses/diffmark.html
-* *SPDX:* http://spdx.org/licenses/diffmark.json
+* *SPDX:* https://spdx.org/licenses/diffmark.json
 
 === Text
 
@@ -103,7 +103,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "diffmark license",
-            "spdxDetailsURL": "http://spdx.org/licenses/diffmark.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/diffmark.json",
             "_sourceURL": "https://spdx.org/licenses/diffmark.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -119,7 +119,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/diffmark.json"
+                        "https://spdx.org/licenses/diffmark.json"
                     ],
                     [
                         null,
@@ -276,7 +276,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/diffmark.json"
+            "https://spdx.org/licenses/diffmark.json"
         ],
         [
             null,

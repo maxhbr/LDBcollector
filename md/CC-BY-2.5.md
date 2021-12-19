@@ -47,7 +47,7 @@
 
 -   **Homepage:** http://creativecommons.org/licenses/by/2.5/
 
--   **SPDX:** http://spdx.org/licenses/CC-BY-2.5.json
+-   **SPDX:** https://spdx.org/licenses/CC-BY-2.5.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/266
 
@@ -202,7 +202,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution 2.5 Generic",
-                "spdxDetailsURL": "http://spdx.org/licenses/CC-BY-2.5.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CC-BY-2.5.json",
                 "_sourceURL": "https://spdx.org/licenses/CC-BY-2.5.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -218,7 +218,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CC-BY-2.5.json"
+                            "https://spdx.org/licenses/CC-BY-2.5.json"
                         ],
                         [
                             null,
@@ -490,7 +490,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/CC-BY-2.5.json"
+                "https://spdx.org/licenses/CC-BY-2.5.json"
             ],
             [
                 null,

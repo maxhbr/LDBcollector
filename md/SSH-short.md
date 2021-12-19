@@ -14,7 +14,7 @@
 
 ## URLs
 
--   **SPDX:** http://spdx.org/licenses/SSH-short.json
+-   **SPDX:** https://spdx.org/licenses/SSH-short.json
 
 -   https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/pathnames.h
 
@@ -68,7 +68,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SSH short notice",
-                "spdxDetailsURL": "http://spdx.org/licenses/SSH-short.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SSH-short.json",
                 "_sourceURL": "https://spdx.org/licenses/SSH-short.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -86,7 +86,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SSH-short.json"
+                            "https://spdx.org/licenses/SSH-short.json"
                         ],
                         [
                             null,
@@ -166,7 +166,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/SSH-short.json"
+                "https://spdx.org/licenses/SSH-short.json"
             ],
             [
                 null,

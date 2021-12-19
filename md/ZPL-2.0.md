@@ -48,7 +48,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/ZPL-2.0.html
 
--   **SPDX:** http://spdx.org/licenses/ZPL-2.0.json
+-   **SPDX:** https://spdx.org/licenses/ZPL-2.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/825
 
@@ -108,6 +108,32 @@
           OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
 
 (source: Hitachi open-license)
+
+## OSADL Rule
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    	YOU MUST NOT Promote
+    	IF Software modification
+    		YOU MUST Provide Modification notice
+    			ATTRIBUTE Highlighted
+    		YOU MUST Provide Modification date
+    			ATTRIBUTE Highlighted
+
+    USE CASE Binary delivery
+    	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+    	YOU MUST Provide License text In Documentation OR Distribution material
+    	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+    	YOU MUST NOT Promote
+    	IF Software modification
+    		YOU MUST Provide Modification notice
+    			ATTRIBUTE Highlighted
+    		YOU MUST Provide Modification date
+    			ATTRIBUTE Highlighted
+
+(source: OSADL License Checklist)
 
 ## Text
 
@@ -181,6 +207,10 @@
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/ZPL-2.0.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -268,7 +298,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zope Public License 2.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/ZPL-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/ZPL-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/ZPL-2.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -294,7 +324,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/ZPL-2.0.json"
+                            "https://spdx.org/licenses/ZPL-2.0.json"
                         ],
                         [
                             null,
@@ -323,6 +353,16 @@
                 },
                 "licensename": "ZPL-2.0",
                 "copyleftkind": "NoCopyleft"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ZPL-2.0.txt",
+                "spdxId": "ZPL-2.0",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Promote\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\t\tATTRIBUTE Highlighted\n\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST NOT Promote\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\t\tATTRIBUTE Highlighted\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "ZPL-2.0"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -757,7 +797,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/ZPL-2.0.json"
+                "https://spdx.org/licenses/ZPL-2.0.json"
             ],
             [
                 null,

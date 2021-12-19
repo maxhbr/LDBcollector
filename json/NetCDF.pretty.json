@@ -34,7 +34,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NetCDF license",
-            "spdxDetailsURL": "http://spdx.org/licenses/NetCDF.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/NetCDF.json",
             "_sourceURL": "https://spdx.org/licenses/NetCDF.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -50,7 +50,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/NetCDF.json"
+                        "https://spdx.org/licenses/NetCDF.json"
                     ],
                     [
                         null,
@@ -315,7 +315,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/NetCDF.json"
+            "https://spdx.org/licenses/NetCDF.json"
         ],
         [
             null,

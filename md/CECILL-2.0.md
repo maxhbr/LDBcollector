@@ -22,7 +22,7 @@
 
 -   **Homepage:** http://www.cecill.info/licences.en.html
 
--   **SPDX:** http://spdx.org/licenses/CECILL-2.0.json
+-   **SPDX:** https://spdx.org/licenses/CECILL-2.0.json
 
 -   http://www.cecill.info/licences/Licence\_CeCILL\_V2-en.html
 
@@ -583,7 +583,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CeCILL Free Software License Agreement v2.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/CECILL-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CECILL-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/CECILL-2.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -599,7 +599,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CECILL-2.0.json"
+                            "https://spdx.org/licenses/CECILL-2.0.json"
                         ],
                         [
                             null,
@@ -687,7 +687,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/CECILL-2.0.json"
+                "https://spdx.org/licenses/CECILL-2.0.json"
             ],
             [
                 null,

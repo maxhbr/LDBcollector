@@ -35,7 +35,7 @@
 
 -   **Homepage:** http://opensource.org/licenses/RPL-1.1
 
--   **SPDX:** http://spdx.org/licenses/RPL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/RPL-1.1.json
 
 -   https://spdx.org/licenses/RPL-1.1.html
 
@@ -275,7 +275,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Reciprocal Public License 1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/RPL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/RPL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/RPL-1.1.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -300,7 +300,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/RPL-1.1.json"
+                            "https://spdx.org/licenses/RPL-1.1.json"
                         ],
                         [
                             null,
@@ -526,7 +526,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/RPL-1.1.json"
+                "https://spdx.org/licenses/RPL-1.1.json"
             ],
             [
                 null,

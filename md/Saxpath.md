@@ -33,7 +33,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Saxpath.html
 
--   **SPDX:** http://spdx.org/licenses/Saxpath.json
+-   **SPDX:** https://spdx.org/licenses/Saxpath.json
 
 ## Text
 
@@ -132,7 +132,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Saxpath License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Saxpath.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Saxpath.json",
                 "_sourceURL": "https://spdx.org/licenses/Saxpath.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -148,7 +148,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Saxpath.json"
+                            "https://spdx.org/licenses/Saxpath.json"
                         ],
                         [
                             null,
@@ -305,7 +305,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Saxpath.json"
+                "https://spdx.org/licenses/Saxpath.json"
             ],
             [
                 null,

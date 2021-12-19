@@ -26,7 +26,7 @@
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/MakeIndex
 
--   **SPDX:** http://spdx.org/licenses/MakeIndex.json
+-   **SPDX:** https://spdx.org/licenses/MakeIndex.json
 
 ## Text
 
@@ -111,7 +111,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "MakeIndex License",
-                "spdxDetailsURL": "http://spdx.org/licenses/MakeIndex.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MakeIndex.json",
                 "_sourceURL": "https://spdx.org/licenses/MakeIndex.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -127,7 +127,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MakeIndex.json"
+                            "https://spdx.org/licenses/MakeIndex.json"
                         ],
                         [
                             null,
@@ -233,7 +233,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/MakeIndex.json"
+                "https://spdx.org/licenses/MakeIndex.json"
             ],
             [
                 null,

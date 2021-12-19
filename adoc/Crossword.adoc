@@ -29,7 +29,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Crossword
 * *SPDX:* https://spdx.org/licenses/Crossword.html
-* *SPDX:* http://spdx.org/licenses/Crossword.json
+* *SPDX:* https://spdx.org/licenses/Crossword.json
 
 === Text
 
@@ -90,7 +90,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Crossword License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Crossword.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Crossword.json",
             "_sourceURL": "https://spdx.org/licenses/Crossword.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -106,7 +106,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Crossword.json"
+                        "https://spdx.org/licenses/Crossword.json"
                     ],
                     [
                         null,
@@ -255,7 +255,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Crossword.json"
+            "https://spdx.org/licenses/Crossword.json"
         ],
         [
             null,

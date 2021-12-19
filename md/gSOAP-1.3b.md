@@ -40,7 +40,7 @@
 
 -   **Homepage:** http://www.cs.fsu.edu/~engelen/license.html
 
--   **SPDX:** http://spdx.org/licenses/gSOAP-1.3b.json
+-   **SPDX:** https://spdx.org/licenses/gSOAP-1.3b.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/691
 
@@ -391,7 +391,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "gSOAP Public License v1.3b",
-                "spdxDetailsURL": "http://spdx.org/licenses/gSOAP-1.3b.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/gSOAP-1.3b.json",
                 "_sourceURL": "https://spdx.org/licenses/gSOAP-1.3b.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -407,7 +407,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/gSOAP-1.3b.json"
+                            "https://spdx.org/licenses/gSOAP-1.3b.json"
                         ],
                         [
                             null,
@@ -906,7 +906,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/gSOAP-1.3b.json"
+                "https://spdx.org/licenses/gSOAP-1.3b.json"
             ],
             [
                 null,

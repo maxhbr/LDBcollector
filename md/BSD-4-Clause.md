@@ -65,7 +65,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-4-Clause.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-4-Clause.json
+-   **SPDX:** https://spdx.org/licenses/BSD-4-Clause.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/277
 
@@ -272,7 +272,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 4-Clause \"Original\" or \"Old\" License",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-4-Clause.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-4-Clause.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-4-Clause.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -288,7 +288,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-4-Clause.json"
+                            "https://spdx.org/licenses/BSD-4-Clause.json"
                         ],
                         [
                             null,
@@ -861,7 +861,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-4-Clause.json"
+                "https://spdx.org/licenses/BSD-4-Clause.json"
             ],
             [
                 null,

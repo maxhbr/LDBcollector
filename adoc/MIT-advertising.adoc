@@ -41,7 +41,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.enlightenment.org/
 * *SPDX:* https://spdx.org/licenses/MIT-advertising.html
-* *SPDX:* http://spdx.org/licenses/MIT-advertising.json
+* *SPDX:* https://spdx.org/licenses/MIT-advertising.json
 * https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising
 
 === Text
@@ -111,7 +111,7 @@ this repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Enlightenment License (e16)",
-            "spdxDetailsURL": "http://spdx.org/licenses/MIT-advertising.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MIT-advertising.json",
             "_sourceURL": "https://spdx.org/licenses/MIT-advertising.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -127,7 +127,7 @@ this repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MIT-advertising.json"
+                        "https://spdx.org/licenses/MIT-advertising.json"
                     ],
                     [
                         null,
@@ -304,7 +304,7 @@ this repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/MIT-advertising.json"
+            "https://spdx.org/licenses/MIT-advertising.json"
         ],
         [
             null,

@@ -33,7 +33,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/IPA
 
--   **SPDX:** http://spdx.org/licenses/IPA.json
+-   **SPDX:** https://spdx.org/licenses/IPA.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/248
 
@@ -231,7 +231,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "IPA Font License",
-                "spdxDetailsURL": "http://spdx.org/licenses/IPA.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/IPA.json",
                 "_sourceURL": "https://spdx.org/licenses/IPA.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -256,7 +256,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/IPA.json"
+                            "https://spdx.org/licenses/IPA.json"
                         ],
                         [
                             null,
@@ -491,7 +491,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/IPA.json"
+                "https://spdx.org/licenses/IPA.json"
             ],
             [
                 "Homepage",

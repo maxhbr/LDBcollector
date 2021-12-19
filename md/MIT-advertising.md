@@ -38,7 +38,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/MIT-advertising.html
 
--   **SPDX:** http://spdx.org/licenses/MIT-advertising.json
+-   **SPDX:** https://spdx.org/licenses/MIT-advertising.json
 
 -   https://fedoraproject.org/wiki/Licensing/MIT\_With\_Advertising
 
@@ -112,7 +112,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Enlightenment License (e16)",
-                "spdxDetailsURL": "http://spdx.org/licenses/MIT-advertising.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MIT-advertising.json",
                 "_sourceURL": "https://spdx.org/licenses/MIT-advertising.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -128,7 +128,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MIT-advertising.json"
+                            "https://spdx.org/licenses/MIT-advertising.json"
                         ],
                         [
                             null,
@@ -305,7 +305,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MIT-advertising.json"
+                "https://spdx.org/licenses/MIT-advertising.json"
             ],
             [
                 null,

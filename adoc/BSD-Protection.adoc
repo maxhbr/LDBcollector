@@ -32,7 +32,7 @@ build with the licensed software, when you give copies to others.''
 
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing/BSD_Protection_License
-* *SPDX:* http://spdx.org/licenses/BSD-Protection.json
+* *SPDX:* https://spdx.org/licenses/BSD-Protection.json
 * https://spdx.org/licenses/BSD-Protection.html
 
 === Text
@@ -221,7 +221,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD Protection License",
-            "spdxDetailsURL": "http://spdx.org/licenses/BSD-Protection.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/BSD-Protection.json",
             "_sourceURL": "https://spdx.org/licenses/BSD-Protection.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -237,7 +237,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/BSD-Protection.json"
+                        "https://spdx.org/licenses/BSD-Protection.json"
                     ],
                     [
                         null,
@@ -381,7 +381,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-Protection.json"
+            "https://spdx.org/licenses/BSD-Protection.json"
         ],
         [
             null,

@@ -52,7 +52,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:*
 http://www.opensource.apple.com/source/architecture/architecture-229/APPLE_LICENSE?f=text
-* *SPDX:* http://spdx.org/licenses/APSL-1.0.json
+* *SPDX:* https://spdx.org/licenses/APSL-1.0.json
 * https://spdx.org/licenses/APSL-1.0.html
 * https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0
 
@@ -497,7 +497,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Apple Public Source License 1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/APSL-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/APSL-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/APSL-1.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -522,7 +522,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/APSL-1.0.json"
+                        "https://spdx.org/licenses/APSL-1.0.json"
                     ],
                     [
                         null,
@@ -733,7 +733,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/APSL-1.0.json"
+            "https://spdx.org/licenses/APSL-1.0.json"
         ],
         [
             null,

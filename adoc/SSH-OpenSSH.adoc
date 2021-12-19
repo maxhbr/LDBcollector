@@ -26,7 +26,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:*
 https://github.com/openssh/openssh-portable/blob/V_7_3_P1/LICENCE
-* *SPDX:* http://spdx.org/licenses/SSH-OpenSSH.json
+* *SPDX:* https://spdx.org/licenses/SSH-OpenSSH.json
 * https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/LICENCE#L10
 * http://www.openssh.org/
 
@@ -420,7 +420,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SSH OpenSSH license",
-            "spdxDetailsURL": "http://spdx.org/licenses/SSH-OpenSSH.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SSH-OpenSSH.json",
             "_sourceURL": "https://spdx.org/licenses/SSH-OpenSSH.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -436,7 +436,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SSH-OpenSSH.json"
+                        "https://spdx.org/licenses/SSH-OpenSSH.json"
                     ],
                     [
                         null,
@@ -515,7 +515,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/SSH-OpenSSH.json"
+            "https://spdx.org/licenses/SSH-OpenSSH.json"
         ],
         [
             null,

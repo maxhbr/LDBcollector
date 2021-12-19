@@ -19,7 +19,7 @@
 ## General Comments
 
 -   “until bzip2 1.0.6 there is only one license and not two as listed
-    in SPDX” (source:
+    in SPDX. Therefore we only track one such license.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode")
     (CC0-1.0))
 
@@ -30,7 +30,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/bzip2-1.0.6.html
 
--   **SPDX:** http://spdx.org/licenses/bzip2-1.0.6.json
+-   **SPDX:** https://spdx.org/licenses/bzip2-1.0.6.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/381
 
@@ -177,7 +177,7 @@
             [
                 "Scancode",
                 [
-                    "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+                    "until bzip2 1.0.6 there is only one license and not two as listed in SPDX. Therefore we only track one such license."
                 ]
             ]
         ],
@@ -195,7 +195,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "bzip2 and libbzip2 License v1.0.6",
-                "spdxDetailsURL": "http://spdx.org/licenses/bzip2-1.0.6.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/bzip2-1.0.6.json",
                 "_sourceURL": "https://spdx.org/licenses/bzip2-1.0.6.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -212,7 +212,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/bzip2-1.0.6.json"
+                            "https://spdx.org/licenses/bzip2-1.0.6.json"
                         ],
                         [
                             null,
@@ -253,7 +253,7 @@
                 "key": "bzip2-libbzip-2010",
                 "name": "bzip2 License 2010",
                 "spdxId": "bzip2-1.0.6",
-                "notes": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX",
+                "notes": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX. Therefore we only track one such license.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bzip2-libbzip-2010",
@@ -265,7 +265,7 @@
                         [
                             "Scancode",
                             [
-                                "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+                                "until bzip2 1.0.6 there is only one license and not two as listed in SPDX. Therefore we only track one such license."
                             ]
                         ]
                     ],
@@ -492,7 +492,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/bzip2-1.0.6.json"
+                "https://spdx.org/licenses/bzip2-1.0.6.json"
             ],
             [
                 null,

@@ -20,7 +20,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SSH short notice",
-            "spdxDetailsURL": "http://spdx.org/licenses/SSH-short.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SSH-short.json",
             "_sourceURL": "https://spdx.org/licenses/SSH-short.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -38,7 +38,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SSH-short.json"
+                        "https://spdx.org/licenses/SSH-short.json"
                     ],
                     [
                         null,
@@ -118,7 +118,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/SSH-short.json"
+            "https://spdx.org/licenses/SSH-short.json"
         ],
         [
             null,

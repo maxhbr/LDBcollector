@@ -25,7 +25,7 @@
 
 -   **Homepage:** http://svnkit.com/licensing.html
 
--   **SPDX:** http://spdx.org/licenses/TMate.json
+-   **SPDX:** https://spdx.org/licenses/TMate.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/972
 
@@ -193,7 +193,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TMate Open Source License",
-                "spdxDetailsURL": "http://spdx.org/licenses/TMate.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/TMate.json",
                 "_sourceURL": "https://spdx.org/licenses/TMate.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -209,7 +209,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/TMate.json"
+                            "https://spdx.org/licenses/TMate.json"
                         ],
                         [
                             null,
@@ -493,7 +493,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/TMate.json"
+                "https://spdx.org/licenses/TMate.json"
             ],
             [
                 null,

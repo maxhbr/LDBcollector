@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/OLDAP-2.8.html
 
--   **SPDX:** http://spdx.org/licenses/OLDAP-2.8.json
+-   **SPDX:** https://spdx.org/licenses/OLDAP-2.8.json
 
 ## Text
 
@@ -124,7 +124,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open LDAP Public License v2.8",
-                "spdxDetailsURL": "http://spdx.org/licenses/OLDAP-2.8.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OLDAP-2.8.json",
                 "_sourceURL": "https://spdx.org/licenses/OLDAP-2.8.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -149,7 +149,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OLDAP-2.8.json"
+                            "https://spdx.org/licenses/OLDAP-2.8.json"
                         ],
                         [
                             null,
@@ -289,7 +289,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OLDAP-2.8.json"
+                "https://spdx.org/licenses/OLDAP-2.8.json"
             ],
             [
                 null,

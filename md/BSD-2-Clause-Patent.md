@@ -33,7 +33,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-2-Clause-Patent.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-2-Clause-Patent.json
+-   **SPDX:** https://spdx.org/licenses/BSD-2-Clause-Patent.json
 
 ## OSADL Rule
 
@@ -159,7 +159,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD-2-Clause Plus Patent License",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-2-Clause-Patent.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-2-Clause-Patent.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-2-Clause-Patent.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -184,7 +184,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-2-Clause-Patent.json"
+                            "https://spdx.org/licenses/BSD-2-Clause-Patent.json"
                         ],
                         [
                             null,
@@ -342,7 +342,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-2-Clause-Patent.json"
+                "https://spdx.org/licenses/BSD-2-Clause-Patent.json"
             ],
             [
                 null,

@@ -20,7 +20,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NIST Public Domain Notice with license fallback",
-            "spdxDetailsURL": "http://spdx.org/licenses/NIST-PD-fallback.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/NIST-PD-fallback.json",
             "_sourceURL": "https://spdx.org/licenses/NIST-PD-fallback.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -37,7 +37,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/NIST-PD-fallback.json"
+                        "https://spdx.org/licenses/NIST-PD-fallback.json"
                     ],
                     [
                         null,
@@ -101,7 +101,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/NIST-PD-fallback.json"
+            "https://spdx.org/licenses/NIST-PD-fallback.json"
         ],
         [
             null,

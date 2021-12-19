@@ -27,7 +27,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/AMPAS.html
 
--   **SPDX:** http://spdx.org/licenses/AMPAS.json
+-   **SPDX:** https://spdx.org/licenses/AMPAS.json
 
 ## Text
 
@@ -93,7 +93,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Academy of Motion Picture Arts and Sciences BSD",
-                "spdxDetailsURL": "http://spdx.org/licenses/AMPAS.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/AMPAS.json",
                 "_sourceURL": "https://spdx.org/licenses/AMPAS.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -109,7 +109,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/AMPAS.json"
+                            "https://spdx.org/licenses/AMPAS.json"
                         ],
                         [
                             null,
@@ -258,7 +258,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/AMPAS.json"
+                "https://spdx.org/licenses/AMPAS.json"
             ],
             [
                 null,

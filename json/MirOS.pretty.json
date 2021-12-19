@@ -69,7 +69,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "The MirOS Licence",
-            "spdxDetailsURL": "http://spdx.org/licenses/MirOS.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MirOS.json",
             "_sourceURL": "https://spdx.org/licenses/MirOS.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -94,7 +94,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MirOS.json"
+                        "https://spdx.org/licenses/MirOS.json"
                     ],
                     [
                         null,
@@ -531,7 +531,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/MirOS.json"
+            "https://spdx.org/licenses/MirOS.json"
         ],
         [
             "Homepage",

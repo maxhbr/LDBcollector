@@ -23,29 +23,23 @@
 
 -   **SPDX:** https://spdx.org/licenses/Spencer-86.html
 
--   **SPDX:** http://spdx.org/licenses/Spencer-86.json
+-   **SPDX:** https://spdx.org/licenses/Spencer-86.json
 
 ## Text
-
-    Not derived from licensed software.
 
     Permission is granted to anyone to use this software for any
     purpose on any computer system, and to redistribute it freely,
     subject to the following restrictions:
 
     1. The author is not responsible for the consequences of use of
-    this software, no matter how awful, even if they arise
-    from defects in it.
+       this software, no matter how awful, even if they arise
+       from defects in it.
 
     2. The origin of this software must not be misrepresented, either
-    by explicit claim or by omission.
+       by explicit claim or by omission.
 
     3. Altered versions must be plainly marked as such, and must not
-    be misrepresented as being the original software.
-
-    Beware that some of this code is subtly aware of the way operator
-    precedence is structured in regular expressions. Serious changes in
-    regular-expression syntax might require a total rethink.
+       be misrepresented as being the original software.
 
 ------------------------------------------------------------------------
 
@@ -89,7 +83,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Spencer License 86",
-                "spdxDetailsURL": "http://spdx.org/licenses/Spencer-86.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Spencer-86.json",
                 "_sourceURL": "https://spdx.org/licenses/Spencer-86.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -105,7 +99,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Spencer-86.json"
+                            "https://spdx.org/licenses/Spencer-86.json"
                         ],
                         [
                             null,
@@ -120,7 +114,7 @@
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License",
                 "shortName": "Regexp License",
                 "textUrls": null,
-                "text": "Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
+                "text": "Permission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\n   this software, no matter how awful, even if they arise\n   from defects in it.\n\n2. The origin of this software must not be misrepresented, either\n   by explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\n   be misrepresented as being the original software.\n",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Henry Spencer",
@@ -143,7 +137,7 @@
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
+                    "__impliedText": "Permission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\n   this software, no matter how awful, even if they arise\n   from defects in it.\n\n2. The origin of this software must not be misrepresented, either\n   by explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\n   be misrepresented as being the original software.\n",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -210,7 +204,7 @@
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
+        "__impliedText": "Permission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\n   this software, no matter how awful, even if they arise\n   from defects in it.\n\n2. The origin of this software must not be misrepresented, either\n   by explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\n   be misrepresented as being the original software.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -218,7 +212,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Spencer-86.json"
+                "https://spdx.org/licenses/Spencer-86.json"
             ],
             [
                 null,

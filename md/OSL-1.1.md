@@ -47,7 +47,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:OSL1.1?rd=Licensing/OSL1.1
 
--   **SPDX:** http://spdx.org/licenses/OSL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/OSL-1.1.json
 
 -   https://spdx.org/licenses/OSL-1.1.html
 
@@ -181,7 +181,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Software License 1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/OSL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OSL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/OSL-1.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -197,7 +197,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OSL-1.1.json"
+                            "https://spdx.org/licenses/OSL-1.1.json"
                         ],
                         [
                             null,
@@ -450,7 +450,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OSL-1.1.json"
+                "https://spdx.org/licenses/OSL-1.1.json"
             ],
             [
                 null,

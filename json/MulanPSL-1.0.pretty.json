@@ -20,7 +20,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Mulan Permissive Software License, Version 1",
-            "spdxDetailsURL": "http://spdx.org/licenses/MulanPSL-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MulanPSL-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/MulanPSL-1.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -37,7 +37,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MulanPSL-1.0.json"
+                        "https://spdx.org/licenses/MulanPSL-1.0.json"
                     ],
                     [
                         null,
@@ -87,9 +87,58 @@
                     ]
                 ]
             }
+        },
+        "BlueOak License List": {
+            "BlueOakRating": "Silver",
+            "url": "https://spdx.org/licenses/MulanPSL-1.0.html",
+            "isPermissive": true,
+            "_sourceURL": "https://blueoakcouncil.org/list",
+            "name": "Mulan Permissive Software License, Version 1",
+            "id": "MulanPSL-1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "MulanPSL-1.0",
+                    "Mulan Permissive Software License, Version 1"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "BlueOak License List",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "Rating is: Silver"
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedURLs": [
+                    [
+                        "SPDX",
+                        "https://spdx.org/licenses/MulanPSL-1.0.html"
+                    ]
+                ]
+            }
         }
     },
+    "__impliedJudgement": [
+        [
+            "BlueOak License List",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "Rating is: Silver"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
+        [
+            "BlueOak License List",
+            "NoCopyleft"
+        ],
         [
             "Scancode",
             "NoCopyleft"
@@ -101,7 +150,11 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/MulanPSL-1.0.json"
+            "https://spdx.org/licenses/MulanPSL-1.0.html"
+        ],
+        [
+            "SPDX",
+            "https://spdx.org/licenses/MulanPSL-1.0.json"
         ],
         [
             null,

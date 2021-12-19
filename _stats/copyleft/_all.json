@@ -14,6 +14,9 @@
         ],
         "SaaSCopyleft": [
             "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
         ]
     },
     "ErlPL-1.1": {
@@ -151,6 +154,9 @@
         ]
     },
     "Vim": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
         "StrongCopyleft": [
             "HansHammel license-compatibility-checker"
         ],
@@ -168,7 +174,16 @@
     },
     "GPL-1.0-or-later": {
         "StrongCopyleft": [
+            "BlueOak License List",
             "librariesio license-compatibility"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "copyleft-next-0.3.0": {
+        "StrongCopyleft": [
+            "BlueOak License List"
         ],
         "Copyleft": [
             "Scancode"
@@ -230,14 +245,6 @@
             "Scancode"
         ]
     },
-    "CC-BY-SA-2.0": {
-        "StrongCopyleft": [
-            "BlueOak License List"
-        ],
-        "WeakCopyleft": [
-            "Scancode"
-        ]
-    },
     "EPL-2.0": {
         "StrongCopyleft": [
             "HansHammel license-compatibility-checker"
@@ -294,6 +301,14 @@
             "Scancode"
         ]
     },
+    "copyleft-next-0.3.1": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
     "RHeCos-1.1": {
         "WeakCopyleft": [
             "HansHammel license-compatibility-checker"
@@ -324,6 +339,7 @@
     "AGPL-1.0-or-later": {
         "SaaSCopyleft": [
             "BlueOak License List",
+            "HansHammel license-compatibility-checker",
             "librariesio license-compatibility"
         ],
         "Copyleft": [
@@ -415,14 +431,6 @@
             "Scancode"
         ]
     },
-    "CC-BY-SA-3.0": {
-        "StrongCopyleft": [
-            "BlueOak License List"
-        ],
-        "WeakCopyleft": [
-            "Scancode"
-        ]
-    },
     "LGPL-3.0-or-later": {
         "WeakCopyleft": [
             "BlueOak License List",
@@ -480,16 +488,6 @@
             "HansHammel license-compatibility-checker"
         ],
         "WeakCopyleft": [
-            "Scancode"
-        ]
-    },
-    "BSL-1.0": {
-        "MaybeCopyleft": [
-            "OSADL License Checklist"
-        ],
-        "NoCopyleft": [
-            "BlueOak License List",
-            "Google OSS Policy",
             "Scancode"
         ]
     },
@@ -557,6 +555,14 @@
             "Scancode"
         ]
     },
+    "CAL-1.0-Combined-Work-Exception": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "MaximalCopyleft": [
+            "BlueOak License List"
+        ]
+    },
     "Artistic-2.0": {
         "NoCopyleft": [
             "BlueOak License List",
@@ -609,14 +615,6 @@
         ],
         "Copyleft": [
             "OSADL License Checklist"
-        ]
-    },
-    "CC-BY-SA-2.5": {
-        "StrongCopyleft": [
-            "BlueOak License List"
-        ],
-        "WeakCopyleft": [
-            "Scancode"
         ]
     },
     "CECILL-2.0": {
@@ -695,6 +693,7 @@
     },
     "GPL-1.0-only": {
         "StrongCopyleft": [
+            "BlueOak License List",
             "HansHammel license-compatibility-checker",
             "librariesio license-compatibility"
         ],
@@ -739,14 +738,6 @@
         "WeakCopyleft": [
             "HansHammel license-compatibility-checker",
             "Scancode"
-        ]
-    },
-    "CC-BY-SA-1.0": {
-        "NoCopyleft": [
-            "Scancode"
-        ],
-        "StrongCopyleft": [
-            "BlueOak License List"
         ]
     },
     "OGTSL": {
@@ -796,14 +787,6 @@
     "CECILL-1.0": {
         "NoCopyleft": [
             "HansHammel license-compatibility-checker"
-        ],
-        "Copyleft": [
-            "Scancode"
-        ]
-    },
-    "CC-BY-SA-4.0": {
-        "StrongCopyleft": [
-            "BlueOak License List"
         ],
         "Copyleft": [
             "Scancode"
@@ -862,6 +845,7 @@
     "AGPL-3.0-or-later": {
         "SaaSCopyleft": [
             "BlueOak License List",
+            "HansHammel license-compatibility-checker",
             "librariesio license-compatibility"
         ],
         "Copyleft": [

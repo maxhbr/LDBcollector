@@ -21,7 +21,7 @@
 
 -   **Homepage:** http://www.geuz.org/gl2ps/COPYING.GL2PS
 
--   **SPDX:** http://spdx.org/licenses/GL2PS.json
+-   **SPDX:** https://spdx.org/licenses/GL2PS.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1560
 
@@ -139,7 +139,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GL2PS License",
-                "spdxDetailsURL": "http://spdx.org/licenses/GL2PS.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/GL2PS.json",
                 "_sourceURL": "https://spdx.org/licenses/GL2PS.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -155,7 +155,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/GL2PS.json"
+                            "https://spdx.org/licenses/GL2PS.json"
                         ],
                         [
                             null,
@@ -383,7 +383,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/GL2PS.json"
+                "https://spdx.org/licenses/GL2PS.json"
             ],
             [
                 null,

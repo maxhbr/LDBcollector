@@ -39,7 +39,7 @@ http://fedoraproject.org/wiki/Licensing:MIT#Old_Style_.28no_advertising_without_
 * *OSI Page:* https://opensource.org/licenses/NTP
 * *OSI Page:* http://www.opensource.org/licenses/ntp-license.php
 * *SPDX:* https://spdx.org/licenses/NTP.html
-* *SPDX:* http://spdx.org/licenses/NTP.json
+* *SPDX:* https://spdx.org/licenses/NTP.json
 * http://www.opensource.org/licenses/NTP
 * http://www.pgpool.net/mediawiki/index.php/pgpool-II_License
 
@@ -157,7 +157,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NTP License",
-            "spdxDetailsURL": "http://spdx.org/licenses/NTP.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/NTP.json",
             "_sourceURL": "https://spdx.org/licenses/NTP.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -182,7 +182,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/NTP.json"
+                        "https://spdx.org/licenses/NTP.json"
                     ],
                     [
                         null,
@@ -395,7 +395,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/NTP.json"
+            "https://spdx.org/licenses/NTP.json"
         ],
         [
             "Homepage",

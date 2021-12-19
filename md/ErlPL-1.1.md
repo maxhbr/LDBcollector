@@ -49,7 +49,7 @@
 
 -   **Homepage:** http://www.erlang.org/EPLICENSE
 
--   **SPDX:** http://spdx.org/licenses/ErlPL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/ErlPL-1.1.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/372
 
@@ -542,7 +542,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Erlang Public License v1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/ErlPL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/ErlPL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/ErlPL-1.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -558,7 +558,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/ErlPL-1.1.json"
+                            "https://spdx.org/licenses/ErlPL-1.1.json"
                         ],
                         [
                             null,
@@ -1134,7 +1134,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/ErlPL-1.1.json"
+                "https://spdx.org/licenses/ErlPL-1.1.json"
             ],
             [
                 null,

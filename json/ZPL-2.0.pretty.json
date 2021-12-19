@@ -66,7 +66,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Zope Public License 2.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/ZPL-2.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/ZPL-2.0.json",
             "_sourceURL": "https://spdx.org/licenses/ZPL-2.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -92,7 +92,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/ZPL-2.0.json"
+                        "https://spdx.org/licenses/ZPL-2.0.json"
                     ],
                     [
                         null,
@@ -121,6 +121,16 @@
             },
             "licensename": "ZPL-2.0",
             "copyleftkind": "NoCopyleft"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ZPL-2.0.txt",
+            "spdxId": "ZPL-2.0",
+            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Promote\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\t\tATTRIBUTE Highlighted\n\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST NOT Promote\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\t\tATTRIBUTE Highlighted\n",
+            "_implications": {
+                "__impliedNames": [
+                    "ZPL-2.0"
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -555,7 +565,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/ZPL-2.0.json"
+            "https://spdx.org/licenses/ZPL-2.0.json"
         ],
         [
             null,

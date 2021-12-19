@@ -26,7 +26,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* http://www.libpng.org/pub/png/libpng.html
 * *SPDX:* https://spdx.org/licenses/Libpng.html
-* *SPDX:* http://spdx.org/licenses/Libpng.json
+* *SPDX:* https://spdx.org/licenses/Libpng.json
 * *open-license:* http://open-license.hitachi.com/licenses/307
 * http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 
@@ -207,7 +207,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "libpng License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Libpng.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Libpng.json",
             "_sourceURL": "https://spdx.org/licenses/Libpng.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -223,7 +223,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Libpng.json"
+                        "https://spdx.org/licenses/Libpng.json"
                     ],
                     [
                         null,
@@ -421,7 +421,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Libpng.json"
+            "https://spdx.org/licenses/Libpng.json"
         ],
         [
             null,

@@ -41,7 +41,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/TOSL
-* *SPDX:* http://spdx.org/licenses/TOSL.json
+* *SPDX:* https://spdx.org/licenses/TOSL.json
 
 === Text
 
@@ -134,7 +134,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Trusster Open Source License",
-            "spdxDetailsURL": "http://spdx.org/licenses/TOSL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/TOSL.json",
             "_sourceURL": "https://spdx.org/licenses/TOSL.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -150,7 +150,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/TOSL.json"
+                        "https://spdx.org/licenses/TOSL.json"
                     ],
                     [
                         null,
@@ -256,7 +256,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/TOSL.json"
+            "https://spdx.org/licenses/TOSL.json"
         ],
         [
             null,

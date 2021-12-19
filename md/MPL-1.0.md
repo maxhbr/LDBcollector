@@ -75,7 +75,7 @@
 
 -   **OSI Page:** http://opensource.org/licenses/mozilla1.0.php
 
--   **SPDX:** http://spdx.org/licenses/MPL-1.0.json
+-   **SPDX:** https://spdx.org/licenses/MPL-1.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/263
 
@@ -465,7 +465,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Mozilla Public License 1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/MPL-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MPL-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/MPL-1.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -491,7 +491,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MPL-1.0.json"
+                            "https://spdx.org/licenses/MPL-1.0.json"
                         ],
                         [
                             null,
@@ -1337,7 +1337,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MPL-1.0.json"
+                "https://spdx.org/licenses/MPL-1.0.json"
             ],
             [
                 null,

@@ -69,6 +69,7 @@
 - HansHammel license-compatibility-checker ["AFL-3.0"] []
 - librariesio license-compatibility ["AFL-3.0"] []
 - Open Knowledge International ["AFL-3.0","Academic Free License 3.0"] []
+- OSADL License Checklist ["AFL-3.0"] []
 - OpenSourceInitiative ["AFL-3.0","Academic Free License, Version 3.0","License :: OSI Approved :: Academic Free License (AFL)"] []
 - OpenChainPolicyTemplate ["AFL-3.0"] []
 - SPDX ["AFL-3.0","Academic Free License v3.0"] []
@@ -82,6 +83,7 @@
 - Fedora Project Wiki ["Affero General Public License 1.0"] ["AGPLv1"]
 - Google OSS Policy ["AGPL-1.0"] []
 - HansHammel license-compatibility-checker ["AGPL-1.0"] []
+- HansHammel license-compatibility-checker ["AGPL-1.0-only"] []
 - librariesio license-compatibility ["AGPL-1.0"] []
 - librariesio license-compatibility ["AGPL-1.0-only"] []
 - SPDX ["AGPL-1.0-only","Affero General Public License v1.0 only"] []
@@ -90,6 +92,7 @@
 * AGPL-1.0-or-later
 - LicenseName ["AGPL-1.0-or-later"] []
 - BlueOak License List ["AGPL-1.0-or-later","Affero General Public License v1.0 or later"] ["Affero General Public License"]
+- HansHammel license-compatibility-checker ["AGPL-1.0-or-later"] []
 - librariesio license-compatibility ["AGPL-1.0-or-later"] []
 - SPDX ["AGPL-1.0-or-later","Affero General Public License v1.0 or later"] []
 - Scancode ["AGPL-1.0-or-later","scancode://agpl-1.0-plus","AGPL 1.0 or later"] []
@@ -103,6 +106,7 @@
 - Fedora Project Wiki ["Affero General Public License 3.0"] ["AGPLv3"]
 - Google OSS Policy ["AGPL-3.0"] []
 - HansHammel license-compatibility-checker ["AGPL-3.0"] []
+- HansHammel license-compatibility-checker ["AGPL-3.0-only"] []
 - librariesio license-compatibility ["AGPL-3.0"] []
 - librariesio license-compatibility ["AGPL-3.0-only"] []
 - Open Knowledge International ["AGPL-3.0","GNU Affero General Public License v3","agpl-v3"] []
@@ -120,6 +124,7 @@
 - Override ["AGPL-3.0-or-later","AGPL-3.0+","AGPL3.0+","AGPL3+","AGPL (v3 or later)","Affero General Public License 3.0 or later"] []
 - BlueOak License List ["AGPL-3.0-or-later","GNU Affero General Public License v3.0 or later"] ["Affero General Public License"]
 - Fedora Project Wiki ["Affero General Public License 3.0 or later"] ["AGPLv3+"]
+- HansHammel license-compatibility-checker ["AGPL-3.0-or-later"] []
 - librariesio license-compatibility ["AGPL-3.0-or-later"] []
 - OSADL License Checklist ["AGPL-3.0-or-later"] []
 - finos/OSLC-handbook ["AGPL-3.0-or-later"] []
@@ -155,6 +160,12 @@
 - Hitachi open-license ["ANTLR 2 License","ANTLR-PD"] []
 - SPDX ["ANTLR-PD","ANTLR Software Rights Notice"] []
 - Scancode ["ANTLR-PD","scancode://antlr-pd"] []
+
+* ANTLR-PD-fallback
+- LicenseName ["ANTLR-PD-fallback"] []
+- BlueOak License List ["ANTLR-PD-fallback","ANTLR Software Rights Notice with license fallback"] []
+- SPDX ["ANTLR-PD-fallback","ANTLR Software Rights Notice with license fallback"] []
+- Scancode ["ANTLR-PD-fallback","scancode://antlr-pd-fallback","ANTLR-PD with fallback"] []
 
 * APAFML
 - LicenseName ["APAFML"] []
@@ -336,6 +347,7 @@
 - HansHammel license-compatibility-checker ["Artistic-2.0"] []
 - librariesio license-compatibility ["Artistic-2.0"] []
 - Open Knowledge International ["Artistic-2.0","Artistic License 2.0","artistic-license-2.0"] []
+- OSADL License Checklist ["Artistic-2.0"] []
 - OpenSourceInitiative ["Artistic-2.0","Artistic License, Version 2.0","License :: OSI Approved :: Artistic License"] []
 - finos/OSLC-handbook ["Artistic-2.0","Artistic License 2.0"] []
 - OpenChainPolicyTemplate ["Artistic-2.0"] []
@@ -378,6 +390,7 @@
 
 * BSD-2-Clause-Views
 - LicenseName ["BSD-2-Clause-Views"] []
+- BlueOak License List ["BSD-2-Clause-Views","BSD 2-Clause with Views Sentence"] []
 - SPDX ["BSD-2-Clause-Views","BSD 2-Clause with views sentence"] []
 - Scancode ["BSD-2-Clause-Views","scancode://bsd-2-clause-views"] []
 
@@ -428,6 +441,17 @@
 - SPDX ["BSD-3-Clause-LBNL","Lawrence Berkeley National Labs BSD variant license"] []
 - Scancode ["BSD-3-Clause-LBNL","scancode://lbnl-bsd","LBNL BSD Variant"] []
 
+* BSD-3-Clause-Modification
+- LicenseName ["BSD-3-Clause-Modification"] []
+- BlueOak License List ["BSD-3-Clause-Modification","BSD 3-Clause Modification"] []
+- SPDX ["BSD-3-Clause-Modification","BSD 3-Clause Modification"] []
+- Scancode ["BSD-3-Clause-Modification","scancode://repoze","Repoze License"] []
+
+* BSD-3-Clause-No-Military-License
+- LicenseName ["BSD-3-Clause-No-Military-License"] []
+- SPDX ["BSD-3-Clause-No-Military-License","BSD 3-Clause No Military License"] []
+- Scancode ["BSD-3-Clause-No-Military-License","scancode://bsd-3-clause-no-military","BSD-3-Clause-No-Military"] []
+
 * BSD-3-Clause-No-Nuclear-License
 - LicenseName ["BSD-3-Clause-No-Nuclear-License"] []
 - HansHammel license-compatibility-checker ["BSD-3-Clause-No-Nuclear-License"] []
@@ -450,6 +474,7 @@
 
 * BSD-3-Clause-Open-MPI
 - LicenseName ["BSD-3-Clause-Open-MPI"] []
+- BlueOak License List ["BSD-3-Clause-Open-MPI","BSD 3-Clause Open MPI Variant"] []
 - Hitachi open-license ["Open MPI License","BSD-3-Clause-Open-MPI"] []
 - SPDX ["BSD-3-Clause-Open-MPI","BSD 3-Clause Open MPI variant"] []
 - Scancode ["BSD-3-Clause-Open-MPI","scancode://bsd-3-clause-open-mpi","BSD 3-Clause Open MPI variant"] []
@@ -468,6 +493,12 @@
 - Hitachi open-license ["BSD 4-clause \"Original\" or \"Old\" License"] []
 - SPDX ["BSD-4-Clause","BSD 4-Clause \"Original\" or \"Old\" License"] []
 - Scancode ["BSD-4-Clause","scancode://bsd-original","BSD-Original"] []
+
+* BSD-4-Clause-Shortened
+- LicenseName ["BSD-4-Clause-Shortened"] []
+- BlueOak License List ["BSD-4-Clause-Shortened","BSD 4-Clause Shortened"] []
+- SPDX ["BSD-4-Clause-Shortened","BSD 4 Clause Shortened"] []
+- Scancode ["BSD-4-Clause-Shortened","scancode://bsd-4-clause-shortened"] []
 
 * BSD-4-Clause-UC
 - LicenseName ["BSD-4-Clause-UC"] []
@@ -509,6 +540,11 @@
 - SPDX ["BSL-1.0","Boost Software License 1.0"] []
 - Scancode ["BSL-1.0","scancode://boost-1.0","Boost 1.0"] []
 - Wikipedia ["BSL-1.0","Boost Software License 1.0"] []
+
+* BUSL-1.1
+- LicenseName ["BUSL-1.1"] []
+- SPDX ["BUSL-1.1","Business Source License 1.1"] []
+- Scancode ["BUSL-1.1","scancode://bsl-1.1","Business Source License 1.1"] []
 
 * Bahyph
 - LicenseName ["Bahyph"] []
@@ -560,6 +596,11 @@
 - SPDX ["Borceux","Borceux license"] []
 - Scancode ["Borceux","scancode://borceux","Borceux License"] []
 
+* C-UDA-1.0
+- LicenseName ["C-UDA-1.0"] []
+- SPDX ["C-UDA-1.0","Computational Use of Data Agreement v1.0"] []
+- Scancode ["C-UDA-1.0","scancode://c-uda-1.0","Computational Use of Data Agreement v1.0"] []
+
 * CAL-1.0
 - LicenseName ["CAL-1.0"] []
 - BlueOak License List ["CAL-1.0","Cryptographic Autonomy License 1.0"] ["Cryptographic Autonomy License"]
@@ -568,6 +609,7 @@
 
 * CAL-1.0-Combined-Work-Exception
 - LicenseName ["CAL-1.0-Combined-Work-Exception"] []
+- BlueOak License List ["CAL-1.0-Combined-Work-Exception","Cryptographic Autonomy License 1.0 (Combined Work Exception)"] ["Cryptographic Autonomy License"]
 - SPDX ["CAL-1.0-Combined-Work-Exception","Cryptographic Autonomy License 1.0 (Combined Work Exception)"] []
 - Scancode ["CAL-1.0-Combined-Work-Exception","scancode://cal-1.0-combined-work-exception"] []
 
@@ -602,6 +644,11 @@
 - SPDX ["CC-BY-2.5","Creative Commons Attribution 2.5 Generic"] []
 - Scancode ["CC-BY-2.5","scancode://cc-by-2.5"] []
 
+* CC-BY-2.5-AU
+- LicenseName ["CC-BY-2.5-AU"] []
+- SPDX ["CC-BY-2.5-AU","Creative Commons Attribution 2.5 Australia"] []
+- Scancode ["CC-BY-2.5-AU","scancode://cc-by-2.5-au","Creative Commons Attribution 2.5 Australia"] []
+
 * CC-BY-3.0
 - LicenseName ["CC-BY-3.0"] []
 - Debian Free Software Guidelines ["CC-BY-3.0"] ["Creative Commons Attribution unported (CC-BY) v3.0"]
@@ -613,12 +660,20 @@
 * CC-BY-3.0-AT
 - LicenseName ["CC-BY-3.0-AT"] []
 - SPDX ["CC-BY-3.0-AT","Creative Commons Attribution 3.0 Austria"] []
-- Scancode ["CC-BY-3.0-AT","scancode://cc-by-3.0-at"] []
+
+* CC-BY-3.0-DE
+- LicenseName ["CC-BY-3.0-DE"] []
+- SPDX ["CC-BY-3.0-DE","Creative Commons Attribution 3.0 Germany"] []
+
+* CC-BY-3.0-NL
+- LicenseName ["CC-BY-3.0-NL"] []
+- SPDX ["CC-BY-3.0-NL","Creative Commons Attribution 3.0 Netherlands"] []
 
 * CC-BY-3.0-US
 - LicenseName ["CC-BY-3.0-US"] []
 - Hitachi open-license ["Creative Commons Attribution 3.0 United States"] []
 - SPDX ["CC-BY-3.0-US","Creative Commons Attribution 3.0 United States"] []
+- Scancode ["CC-BY-3.0-US","scancode://cc-by-3.0-us"] []
 
 * CC-BY-4.0
 - LicenseName ["CC-BY-4.0"] []
@@ -626,6 +681,7 @@
 - Debian Free Software Guidelines ["CC-BY-4.0"] ["Creative Commons Attribution unported (CC-BY) v4.0"]
 - Google OSS Policy ["CC-BY-4.0"] []
 - Open Knowledge International ["CC-BY-4.0","Creative Commons Attribution 4.0"] []
+- OSADL License Checklist ["CC-BY-4.0"] []
 - Hitachi open-license ["Creative Commons Attribution 4.0 International"] []
 - SPDX ["CC-BY-4.0","Creative Commons Attribution 4.0 International"] []
 - Scancode ["CC-BY-4.0","scancode://cc-by-4.0"] []
@@ -663,6 +719,10 @@
 - Google OSS Policy ["CC-BY-NC-3.0"] []
 - SPDX ["CC-BY-NC-3.0","Creative Commons Attribution Non Commercial 3.0 Unported"] []
 - Scancode ["CC-BY-NC-3.0","scancode://cc-by-nc-3.0"] []
+
+* CC-BY-NC-3.0-DE
+- LicenseName ["CC-BY-NC-3.0-DE"] []
+- SPDX ["CC-BY-NC-3.0-DE","Creative Commons Attribution Non Commercial 3.0 Germany"] []
 
 * CC-BY-NC-4.0
 - LicenseName ["CC-BY-NC-4.0"] []
@@ -709,6 +769,10 @@
 - SPDX ["CC-BY-NC-ND-3.0","Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported"] []
 - Scancode ["CC-BY-NC-ND-3.0","scancode://cc-by-nc-nd-3.0"] []
 
+* CC-BY-NC-ND-3.0-DE
+- LicenseName ["CC-BY-NC-ND-3.0-DE"] []
+- SPDX ["CC-BY-NC-ND-3.0-DE","Creative Commons Attribution Non Commercial No Derivatives 3.0 Germany"] []
+
 * CC-BY-NC-ND-3.0-IGO
 - LicenseName ["CC-BY-NC-ND-3.0-IGO"] []
 - SPDX ["CC-BY-NC-ND-3.0-IGO","Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO"] []
@@ -739,6 +803,15 @@
 - SPDX ["CC-BY-NC-SA-2.0","Creative Commons Attribution Non Commercial Share Alike 2.0 Generic"] []
 - Scancode ["CC-BY-NC-SA-2.0","scancode://cc-by-nc-sa-2.0"] []
 
+* CC-BY-NC-SA-2.0-FR
+- LicenseName ["CC-BY-NC-SA-2.0-FR"] []
+- SPDX ["CC-BY-NC-SA-2.0-FR","Creative Commons Attribution-NonCommercial-ShareAlike 2.0 France"] []
+
+* CC-BY-NC-SA-2.0-UK
+- LicenseName ["CC-BY-NC-SA-2.0-UK"] []
+- SPDX ["CC-BY-NC-SA-2.0-UK","Creative Commons Attribution Non Commercial Share Alike 2.0 England and Wales"] []
+- Scancode ["CC-BY-NC-SA-2.0-UK","scancode://cc-by-nc-sa-2.0-uk"] []
+
 * CC-BY-NC-SA-2.5
 - LicenseName ["CC-BY-NC-SA-2.5"] []
 - Override ["CC-BY-NC-SA-2.5"] []
@@ -755,6 +828,15 @@
 - Hitachi open-license ["Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported","CC-BY-NC-SA-3.0"] []
 - SPDX ["CC-BY-NC-SA-3.0","Creative Commons Attribution Non Commercial Share Alike 3.0 Unported"] []
 - Scancode ["CC-BY-NC-SA-3.0","scancode://cc-by-nc-sa-3.0"] []
+
+* CC-BY-NC-SA-3.0-DE
+- LicenseName ["CC-BY-NC-SA-3.0-DE"] []
+- SPDX ["CC-BY-NC-SA-3.0-DE","Creative Commons Attribution Non Commercial Share Alike 3.0 Germany"] []
+
+* CC-BY-NC-SA-3.0-IGO
+- LicenseName ["CC-BY-NC-SA-3.0-IGO"] []
+- SPDX ["CC-BY-NC-SA-3.0-IGO","Creative Commons Attribution Non Commercial Share Alike 3.0 IGO"] []
+- Scancode ["CC-BY-NC-SA-3.0-IGO","scancode://cc-by-nc-sa-3.0-igo"] []
 
 * CC-BY-NC-SA-4.0
 - LicenseName ["CC-BY-NC-SA-4.0"] []
@@ -789,6 +871,10 @@
 - SPDX ["CC-BY-ND-3.0","Creative Commons Attribution No Derivatives 3.0 Unported"] []
 - Scancode ["CC-BY-ND-3.0","scancode://cc-by-nd-3.0"] []
 
+* CC-BY-ND-3.0-DE
+- LicenseName ["CC-BY-ND-3.0-DE"] []
+- SPDX ["CC-BY-ND-3.0-DE","Creative Commons Attribution No Derivatives 3.0 Germany"] []
+
 * CC-BY-ND-4.0
 - LicenseName ["CC-BY-ND-4.0"] []
 - Google OSS Policy ["CC-BY-ND-4.0"] []
@@ -797,7 +883,6 @@
 
 * CC-BY-SA-1.0
 - LicenseName ["CC-BY-SA-1.0"] []
-- BlueOak License List ["CC-BY-SA-1.0","Creative Commons Attribution Share Alike 1.0 Generic"] ["Creative Commons Attribution Share Alike"]
 - Debian Free Software Guidelines ["CC-BY-SA-1.0"] ["Creative Commons Attribution-Share Alike Generic (CC-BY-SA), v1.0"]
 - Google OSS Policy ["CC-BY-SA-1.0"] []
 - Hitachi open-license ["Creative Commons ShareAlike 1.0 Generic","CC-BY-SA-1.0"] []
@@ -807,7 +892,6 @@
 
 * CC-BY-SA-2.0
 - LicenseName ["CC-BY-SA-2.0"] []
-- BlueOak License List ["CC-BY-SA-2.0","Creative Commons Attribution Share Alike 2.0 Generic"] ["Creative Commons Attribution Share Alike"]
 - Google OSS Policy ["CC-BY-SA-2.0"] []
 - Hitachi open-license ["Creative Commons Attribution-ShareAlike 2.0 Generic","CC-BY-SA-2.0"] []
 - SPDX ["CC-BY-SA-2.0","Creative Commons Attribution Share Alike 2.0 Generic"] []
@@ -816,10 +900,14 @@
 * CC-BY-SA-2.0-UK
 - LicenseName ["CC-BY-SA-2.0-UK"] []
 - SPDX ["CC-BY-SA-2.0-UK","Creative Commons Attribution Share Alike 2.0 England and Wales"] []
+- Scancode ["CC-BY-SA-2.0-UK","scancode://cc-by-sa-2.0-uk"] []
+
+* CC-BY-SA-2.1-JP
+- LicenseName ["CC-BY-SA-2.1-JP"] []
+- SPDX ["CC-BY-SA-2.1-JP","Creative Commons Attribution Share Alike 2.1 Japan"] []
 
 * CC-BY-SA-2.5
 - LicenseName ["CC-BY-SA-2.5"] []
-- BlueOak License List ["CC-BY-SA-2.5","Creative Commons Attribution Share Alike 2.5 Generic"] ["Creative Commons Attribution Share Alike"]
 - Google OSS Policy ["CC-BY-SA-2.5"] []
 - Hitachi open-license ["Creative Commons Attribution-ShareAlike 2.5","CC-BY-SA-2.5"] []
 - SPDX ["CC-BY-SA-2.5","Creative Commons Attribution Share Alike 2.5 Generic"] []
@@ -827,7 +915,6 @@
 
 * CC-BY-SA-3.0
 - LicenseName ["CC-BY-SA-3.0"] []
-- BlueOak License List ["CC-BY-SA-3.0","Creative Commons Attribution Share Alike 3.0 Unported"] ["Creative Commons Attribution Share Alike"]
 - Debian Free Software Guidelines ["CC-BY-SA-3.0"] ["Creative Commons Attribution Share-Alike (CC-BY-SA) v3.0"]
 - Google OSS Policy ["CC-BY-SA-3.0"] []
 - Hitachi open-license ["Creative Commons Attribution-ShareAlike 3.0 Unported","CC-BY-SA-3.0"] []
@@ -836,16 +923,19 @@
 
 * CC-BY-SA-3.0-AT
 - LicenseName ["CC-BY-SA-3.0-AT"] []
-- SPDX ["CC-BY-SA-3.0-AT","Creative Commons Attribution-Share Alike 3.0 Austria"] []
-- Scancode ["CC-BY-SA-3.0-AT","scancode://cc-by-sa-3.0-at"] []
+- SPDX ["CC-BY-SA-3.0-AT","Creative Commons Attribution Share Alike 3.0 Austria"] []
+
+* CC-BY-SA-3.0-DE
+- LicenseName ["CC-BY-SA-3.0-DE"] []
+- SPDX ["CC-BY-SA-3.0-DE","Creative Commons Attribution Share Alike 3.0 Germany"] []
 
 * CC-BY-SA-4.0
 - LicenseName ["CC-BY-SA-4.0"] []
-- BlueOak License List ["CC-BY-SA-4.0","Creative Commons Attribution Share Alike 4.0 International"] ["Creative Commons Attribution Share Alike"]
 - choosealicense.com ["cc-by-sa-4.0","CC-BY-SA-4.0"] []
 - Debian Free Software Guidelines ["CC-BY-SA-4.0"] ["Creative Commons Attribution Share-Alike (CC-BY-SA) v4.0"]
 - Google OSS Policy ["CC-BY-SA-4.0"] []
 - Open Knowledge International ["CC-BY-SA-4.0","Creative Commons Attribution Share-Alike 4.0"] []
+- OSADL License Checklist ["CC-BY-SA-4.0"] []
 - Hitachi open-license ["Creative Commons Attribution-ShareAlike 4.0 International","CC-BY-SA-4.0"] []
 - SPDX ["CC-BY-SA-4.0","Creative Commons Attribution Share Alike 4.0 International"] []
 - Scancode ["CC-BY-SA-4.0","scancode://cc-by-sa-4.0"] []
@@ -897,10 +987,20 @@
 - SPDX ["CDDL-1.1","Common Development and Distribution License 1.1"] []
 - Scancode ["CDDL-1.1","scancode://cddl-1.1","CDDL 1.1"] []
 
+* CDL-1.0
+- LicenseName ["CDL-1.0"] []
+- SPDX ["CDL-1.0","Common Documentation License 1.0"] []
+- Scancode ["CDL-1.0","scancode://acdl-1.0","ACDL 1.0"] []
+
 * CDLA-Permissive-1.0
 - LicenseName ["CDLA-Permissive-1.0"] []
 - SPDX ["CDLA-Permissive-1.0","Community Data License Agreement Permissive 1.0"] []
 - Scancode ["CDLA-Permissive-1.0","scancode://cdla-permissive-1.0","CDLA Permissive 1.0"] []
+
+* CDLA-Permissive-2.0
+- LicenseName ["CDLA-Permissive-2.0"] []
+- SPDX ["CDLA-Permissive-2.0","Community Data License Agreement Permissive 2.0"] []
+- Scancode ["CDLA-Permissive-2.0","scancode://cdla-permissive-2.0","CDLA Permissive 2.0"] []
 
 * CDLA-Sharing-1.0
 - LicenseName ["CDLA-Sharing-1.0"] []
@@ -1002,6 +1102,10 @@
 - SPDX ["CNRI-Python-GPL-Compatible","CNRI Python Open Source GPL Compatible License Agreement"] []
 - Scancode ["CNRI-Python-GPL-Compatible","scancode://cnri-python-1.6.1","CNRI Python 1.6.1"] []
 
+* COIL-1.0
+- LicenseName ["COIL-1.0"] []
+- SPDX ["COIL-1.0","Copyfree Open Innovation License"] []
+
 * CPAL-1.0
 - LicenseName ["CPAL-1.0"] []
 - BlueOak License List ["CPAL-1.0","Common Public Attribution License 1.0"] ["Common Public Attribution License"]
@@ -1058,6 +1162,10 @@
 - SPDX ["ClArtistic","Clarified Artistic License"] []
 - Scancode ["ClArtistic","scancode://artistic-clarified","Clarified Artistic License"] []
 
+* Community-Spec-1.0
+- LicenseName ["Community-Spec-1.0"] []
+- SPDX ["Community-Spec-1.0","Community Specification License 1.0"] []
+
 * Condor-1.1
 - LicenseName ["Condor-1.1"] []
 - BlueOak License List ["Condor-1.1","Condor Public License v1.1"] []
@@ -1089,7 +1197,6 @@
 * D-FSL-1.0
 - LicenseName ["D-FSL-1.0"] []
 - SPDX ["D-FSL-1.0","Deutsche Freie Software Lizenz"] []
-- Scancode ["D-FSL-1.0","scancode://d-fsl-1.0-de","Deutsche Freie Software Lizenz"] []
 
 * DOC
 - LicenseName ["DOC"] []
@@ -1097,6 +1204,11 @@
 - Fedora Project Wiki ["DOC License"] ["DOC"]
 - SPDX ["DOC","DOC License"] []
 - Scancode ["DOC","scancode://ace-tao","ACE TAO License"] []
+
+* DRL-1.0
+- LicenseName ["DRL-1.0"] []
+- SPDX ["DRL-1.0","Detection Rule License 1.0"] []
+- Scancode ["DRL-1.0","scancode://drl-1.0","Detection Rule License 1.0"] []
 
 * DSDP
 - LicenseName ["DSDP"] []
@@ -1234,6 +1346,7 @@
 - BlueOak License List ["EUPL-1.2","European Union Public License 1.2"] ["European Union Public License"]
 - choosealicense.com ["eupl-1.2","EUPL-1.2"] []
 - Google OSS Policy ["EUPL-1.2"] []
+- OSADL License Checklist ["EUPL-1.2"] []
 - OpenChainPolicyTemplate ["EUPL-1.2"] []
 - SPDX ["EUPL-1.2","European Union Public License 1.2"] []
 - Scancode ["EUPL-1.2","scancode://eupl-1.2","EUPL 1.2"] []
@@ -1265,6 +1378,10 @@
 - SPDX ["Eurosym","Eurosym License"] []
 - Scancode ["Eurosym","scancode://eurosym","Eurosym License"] []
 
+* FDK-AAC
+- LicenseName ["FDK-AAC"] []
+- SPDX ["FDK-AAC","Fraunhofer FDK AAC Codec Library"] []
+
 * FSFAP
 - LicenseName ["FSFAP"] []
 - Fedora Project Wiki ["FSF All Permissive license"] ["FSFAP"]
@@ -1273,12 +1390,14 @@
 
 * FSFUL
 - LicenseName ["FSFUL"] []
+- BlueOak License List ["FSFUL","FSF Unlimited License"] []
 - Fedora Project Wiki ["FSF Unlimited License"] ["FSFUL"]
 - SPDX ["FSFUL","FSF Unlimited License"] []
 - Scancode ["FSFUL","scancode://fsf-free","FSF Free Software License"] []
 
 * FSFULLR
 - LicenseName ["FSFULLR"] []
+- BlueOak License List ["FSFULLR","FSF Unlimited License (with License Retention)"] []
 - Fedora Project Wiki ["FSF Unlimited License (with License Retention)"] ["FSFULLR"]
 - SPDX ["FSFULLR","FSF Unlimited License (with License Retention)"] []
 - Scancode ["FSFULLR","scancode://fsf-unlimited","FSF-Unlimited"] []
@@ -1311,26 +1430,41 @@
 - SPDX ["Frameworx-1.0","Frameworx Open License 1.0"] []
 - Scancode ["Frameworx-1.0","scancode://frameworx-1.0","Frameworx 1.0"] []
 
+* FreeBSD-DOC
+- LicenseName ["FreeBSD-DOC"] []
+- Fedora Project Wiki ["FreeBSD Documentation License"] ["FBSDDL"]
+- SPDX ["FreeBSD-DOC","FreeBSD Documentation License"] []
+- Scancode ["FreeBSD-DOC","scancode://freebsd-doc","FreeBSD Doc License"] []
+
 * FreeImage
 - LicenseName ["FreeImage"] []
 - SPDX ["FreeImage","FreeImage Public License v1.0"] []
 - Scancode ["FreeImage","scancode://freeimage-1.0","FreeImage Public License 1.0"] []
 
+* GD
+- LicenseName ["GD"] []
+- SPDX ["GD","GD License"] []
+- Scancode ["GD","scancode://libgd-2018","libgd License 2018"] []
+
 * GFDL-1.1-invariants-only
 - LicenseName ["GFDL-1.1-invariants-only"] []
 - SPDX ["GFDL-1.1-invariants-only","GNU Free Documentation License v1.1 only - invariants"] []
+- Scancode ["GFDL-1.1-invariants-only","scancode://gfdl-1.1-invariants-only"] []
 
 * GFDL-1.1-invariants-or-later
 - LicenseName ["GFDL-1.1-invariants-or-later"] []
 - SPDX ["GFDL-1.1-invariants-or-later","GNU Free Documentation License v1.1 or later - invariants"] []
+- Scancode ["GFDL-1.1-invariants-or-later","scancode://gfdl-1.1-invariants-or-later"] []
 
 * GFDL-1.1-no-invariants-only
 - LicenseName ["GFDL-1.1-no-invariants-only"] []
 - SPDX ["GFDL-1.1-no-invariants-only","GNU Free Documentation License v1.1 only - no invariants"] []
+- Scancode ["GFDL-1.1-no-invariants-only","scancode://gfdl-1.1-no-invariants-only"] []
 
 * GFDL-1.1-no-invariants-or-later
 - LicenseName ["GFDL-1.1-no-invariants-or-later"] []
 - SPDX ["GFDL-1.1-no-invariants-or-later","GNU Free Documentation License v1.1 or later - no invariants"] []
+- Scancode ["GFDL-1.1-no-invariants-or-later","scancode://gfdl-1.1-no-invariants-or-later"] []
 
 * GFDL-1.1-only
 - LicenseName ["GFDL-1.1-only"] []
@@ -1347,18 +1481,22 @@
 * GFDL-1.2-invariants-only
 - LicenseName ["GFDL-1.2-invariants-only"] []
 - SPDX ["GFDL-1.2-invariants-only","GNU Free Documentation License v1.2 only - invariants"] []
+- Scancode ["GFDL-1.2-invariants-only","scancode://gfdl-1.2-invariants-only"] []
 
 * GFDL-1.2-invariants-or-later
 - LicenseName ["GFDL-1.2-invariants-or-later"] []
 - SPDX ["GFDL-1.2-invariants-or-later","GNU Free Documentation License v1.2 or later - invariants"] []
+- Scancode ["GFDL-1.2-invariants-or-later","scancode://gfdl-1.2-invariants-or-later"] []
 
 * GFDL-1.2-no-invariants-only
 - LicenseName ["GFDL-1.2-no-invariants-only"] []
 - SPDX ["GFDL-1.2-no-invariants-only","GNU Free Documentation License v1.2 only - no invariants"] []
+- Scancode ["GFDL-1.2-no-invariants-only","scancode://gfdl-1.2-no-invariants-only"] []
 
 * GFDL-1.2-no-invariants-or-later
 - LicenseName ["GFDL-1.2-no-invariants-or-later"] []
 - SPDX ["GFDL-1.2-no-invariants-or-later","GNU Free Documentation License v1.2 or later - no invariants"] []
+- Scancode ["GFDL-1.2-no-invariants-or-later","scancode://gfdl-1.2-no-invariants-or-later"] []
 
 * GFDL-1.2-only
 - LicenseName ["GFDL-1.2-only"] []
@@ -1375,18 +1513,22 @@
 * GFDL-1.3-invariants-only
 - LicenseName ["GFDL-1.3-invariants-only"] []
 - SPDX ["GFDL-1.3-invariants-only","GNU Free Documentation License v1.3 only - invariants"] []
+- Scancode ["GFDL-1.3-invariants-only","scancode://gfdl-1.3-invariants-only"] []
 
 * GFDL-1.3-invariants-or-later
 - LicenseName ["GFDL-1.3-invariants-or-later"] []
 - SPDX ["GFDL-1.3-invariants-or-later","GNU Free Documentation License v1.3 or later - invariants"] []
+- Scancode ["GFDL-1.3-invariants-or-later","scancode://gfdl-1.3-invariants-or-later"] []
 
 * GFDL-1.3-no-invariants-only
 - LicenseName ["GFDL-1.3-no-invariants-only"] []
 - SPDX ["GFDL-1.3-no-invariants-only","GNU Free Documentation License v1.3 only - no invariants"] []
+- Scancode ["GFDL-1.3-no-invariants-only","scancode://gfdl-1.3-no-invariants-only"] []
 
 * GFDL-1.3-no-invariants-or-later
 - LicenseName ["GFDL-1.3-no-invariants-or-later"] []
 - SPDX ["GFDL-1.3-no-invariants-or-later","GNU Free Documentation License v1.3 or later - no invariants"] []
+- Scancode ["GFDL-1.3-no-invariants-or-later","scancode://gfdl-1.3-no-invariants-or-later"] []
 
 * GFDL-1.3-only
 - LicenseName ["GFDL-1.3-only"] []
@@ -1415,6 +1557,7 @@
 * GPL-1.0-only
 - LicenseName ["GPL-1.0-only"] []
 - Override ["GPL-1.0-only","GPL-1.0","GPL1.0","GPL1","GNU General Public License Version 1"] []
+- BlueOak License List ["GPL-1.0-only","GNU General Public License v1.0 only"] ["GNU General Public License"]
 - Debian Free Software Guidelines ["GPL-1.0-only"] ["The GNU General Public License (GPL)"]
 - Fedora Project Wiki ["GNU General Public License v1.0 only"] ["GPLv1"]
 - Google OSS Policy ["GPL-1.0-only"] []
@@ -1427,6 +1570,7 @@
 * GPL-1.0-or-later
 - LicenseName ["GPL-1.0-or-later"] []
 - Override ["GPL-1.0-or-later","GPL-1.0+","GPL1.0+","GPL1+"] []
+- BlueOak License List ["GPL-1.0-or-later","GNU General Public License v1.0 or later"] ["GNU General Public License"]
 - Debian Free Software Guidelines ["GPL-1.0-or-later"] ["The GNU General Public License (GPL)"]
 - Fedora Project Wiki ["GNU General Public License v1.0 or later"] ["GPL+"]
 - Google OSS Policy ["GPL-1.0-or-later"] []
@@ -1498,8 +1642,8 @@
 - finos/OSLC-handbook ["GPL-3.0-or-later"] []
 - OpenChainPolicyTemplate ["GPL-3.0"] []
 - Hitachi open-license ["GNU General Public License Version 3"] []
-- SPDX ["GPL-3.0-only","GNU General Public License v3.0 only"] []
 - SPDX ["GPL-3.0-or-later","GNU General Public License v3.0 or later"] []
+- SPDX ["GPL-3.0-only","GNU General Public License v3.0 only"] []
 - Scancode ["GPL-3.0-or-later","scancode://gpl-3.0-plus","GPL 3.0 or later"] []
 - Scancode ["GPL-3.0-only","scancode://gpl-3.0","GPL 3.0"] []
 - Wikipedia ["GPL-3.0-or-later","GNU General Public License 3.0"] []
@@ -1532,8 +1676,8 @@
 - finos/OSLC-handbook ["GPL-3.0-or-later"] []
 - OpenChainPolicyTemplate ["GPL-3.0"] []
 - Hitachi open-license ["GNU General Public License Version 3"] []
-- SPDX ["GPL-3.0-only","GNU General Public License v3.0 only"] []
 - SPDX ["GPL-3.0-or-later","GNU General Public License v3.0 or later"] []
+- SPDX ["GPL-3.0-only","GNU General Public License v3.0 only"] []
 - Scancode ["GPL-3.0-or-later","scancode://gpl-3.0-plus","GPL 3.0 or later"] []
 - Scancode ["GPL-3.0-only","scancode://gpl-3.0","GPL 3.0"] []
 - Wikipedia ["GPL-3.0-or-later","GNU General Public License 3.0"] []
@@ -1573,6 +1717,12 @@
 - SPDX ["HPND-sell-variant","Historical Permission Notice and Disclaimer - sell variant"] []
 - Scancode ["scancode://historical-sell-variant","Historical Permission Notice and Disclaimer - sell variant"] []
 - Scancode ["HPND-sell-variant","scancode://x11-keith-packard","X11-Style (Keith Packard)"] []
+
+* HTMLTIDY
+- LicenseName ["HTMLTIDY"] []
+- BlueOak License List ["HTMLTIDY","HTML Tidy License"] []
+- SPDX ["HTMLTIDY","HTML Tidy License"] []
+- Scancode ["HTMLTIDY","scancode://tidy","Tidy License"] []
 
 * HaskellReport
 - LicenseName ["HaskellReport"] []
@@ -1677,6 +1827,7 @@
 * Info-ZIP
 - LicenseName ["Info-ZIP"] []
 - BlueOak License List ["Info-ZIP","Info-ZIP License"] []
+- OSADL License Checklist ["Info-ZIP"] []
 - Hitachi open-license ["Info-ZIP license (version 2009-Jan-02)","Info-ZIP"] []
 - Hitachi open-license ["Info-ZIP copyright and license (version 2005-Feb-10)","Info-ZIP"] []
 - Hitachi open-license ["Info-ZIP license (Version 2007-Mar-04)","Info-ZIP"] []
@@ -1976,6 +2127,10 @@
 - SPDX ["Linux-OpenIB","Linux Kernel Variant of OpenIB.org license"] []
 - Scancode ["Linux-OpenIB","scancode://linux-openib"] []
 
+* Linux-man-pages-copyleft
+- LicenseName ["Linux-man-pages-copyleft"] []
+- SPDX ["Linux-man-pages-copyleft","Linux man-pages Copyleft"] []
+
 * MIT
 - LicenseName ["MIT"] []
 - Override ["MIT","MIT license (also X11)","The MIT License"] []
@@ -1999,6 +2154,7 @@
 * MIT-0
 - LicenseName ["MIT-0"] []
 - BlueOak License List ["MIT-0","MIT No Attribution"] []
+- choosealicense.com ["mit-0","MIT-0"] []
 - SPDX ["MIT-0","MIT No Attribution"] []
 - Scancode ["MIT-0","scancode://mit-0","MIT-0-Clause"] []
 
@@ -2009,8 +2165,14 @@
 - OSADL License Checklist ["MIT-CMU"] []
 - finos/OSLC-handbook ["MIT-CMU","CMU License"] []
 - SPDX ["MIT-CMU","CMU License"] []
-- Scancode ["scancode://cmu-template","CMU License"] []
+- Scancode ["LicenseRef-scancode-cmu-template","scancode://cmu-template","CMU License"] []
 - Scancode ["MIT-CMU","scancode://cmu-uc","CMU UC Regents License"] []
+
+* MIT-Modern-Variant
+- LicenseName ["MIT-Modern-Variant"] []
+- BlueOak License List ["MIT-Modern-Variant","MIT License Modern Variant"] []
+- SPDX ["MIT-Modern-Variant","MIT License Modern Variant"] []
+- Scancode ["MIT-Modern-Variant","scancode://mit-modern","MIT Modern Variant"] []
 
 * MIT-advertising
 - LicenseName ["MIT-advertising"] []
@@ -2035,6 +2197,12 @@
 - HansHammel license-compatibility-checker ["MIT-feh"] []
 - SPDX ["MIT-feh","feh License"] []
 - Scancode ["MIT-feh","scancode://mit-ack","MIT Acknowledgment License"] []
+
+* MIT-open-group
+- LicenseName ["MIT-open-group"] []
+- BlueOak License List ["MIT-open-group","MIT Open Group Variant"] []
+- SPDX ["MIT-open-group","MIT Open Group variant"] []
+- Scancode ["MIT-open-group","scancode://x11-opengroup","X11-Style (Open Group)"] []
 
 * MITNFA
 - LicenseName ["MITNFA"] []
@@ -2172,11 +2340,14 @@
 
 * MulanPSL-1.0
 - LicenseName ["MulanPSL-1.0"] []
+- BlueOak License List ["MulanPSL-1.0","Mulan Permissive Software License, Version 1"] []
 - SPDX ["MulanPSL-1.0","Mulan Permissive Software License, Version 1"] []
 - Scancode ["MulanPSL-1.0","scancode://mulanpsl-1.0","Mulan PSL v1"] []
 
 * MulanPSL-2.0
 - LicenseName ["MulanPSL-2.0"] []
+- BlueOak License List ["MulanPSL-2.0","Mulan Permissive Software License, Version 2"] []
+- choosealicense.com ["mulanpsl-2.0","MulanPSL-2.0","Mulan PSL v2"] []
 - SPDX ["MulanPSL-2.0","Mulan Permissive Software License, Version 2"] []
 - Scancode ["MulanPSL-2.0","scancode://mulanpsl-2.0","Mulan PSL v2"] []
 
@@ -2195,6 +2366,11 @@
 - Fedora Project Wiki ["Mup License"] ["Mup"]
 - SPDX ["Mup","Mup License"] []
 - Scancode ["Mup","scancode://mup","Mup License"] []
+
+* NAIST-2003
+- LicenseName ["NAIST-2003"] []
+- SPDX ["NAIST-2003","Nara Institute of Science and Technology License (2003)"] []
+- Scancode ["NAIST-2003","scancode://naist-2003","Nara Institute License 2003"] []
 
 * NASA-1.3
 - LicenseName ["NASA-1.3"] []
@@ -2252,8 +2428,13 @@
 
 * NLOD-1.0
 - LicenseName ["NLOD-1.0"] []
-- SPDX ["NLOD-1.0","Norwegian Licence for Open Government Data"] []
+- SPDX ["NLOD-1.0","Norwegian Licence for Open Government Data (NLOD) 1.0"] []
 - Scancode ["NLOD-1.0","scancode://nlod-1.0"] []
+
+* NLOD-2.0
+- LicenseName ["NLOD-2.0"] []
+- SPDX ["NLOD-2.0","Norwegian Licence for Open Government Data (NLOD) 2.0"] []
+- Scancode ["NLOD-2.0","scancode://nlod-2.0"] []
 
 * NLPL
 - LicenseName ["NLPL"] []
@@ -2396,7 +2577,7 @@
 - HansHammel license-compatibility-checker ["ODbL-1.0"] []
 - librariesio license-compatibility ["ODbL-1.0"] []
 - Open Knowledge International ["ODbL-1.0","Open Data Commons Open Database License 1.0"] []
-- SPDX ["ODbL-1.0","ODC Open Database License v1.0"] []
+- SPDX ["ODbL-1.0","Open Data Commons Open Database License v1.0"] []
 - Scancode ["ODbL-1.0","scancode://odbl-1.0","ODbL 1.0"] []
 
 * OFL-1.0
@@ -2409,10 +2590,12 @@
 * OFL-1.0-RFN
 - LicenseName ["OFL-1.0-RFN"] []
 - SPDX ["OFL-1.0-RFN","SIL Open Font License 1.0 with Reserved Font Name"] []
+- Scancode ["OFL-1.0-RFN","scancode://ofl-1.0-rfn","OFL 1.0 Reserved Font Name"] []
 
 * OFL-1.0-no-RFN
 - LicenseName ["OFL-1.0-no-RFN"] []
 - SPDX ["OFL-1.0-no-RFN","SIL Open Font License 1.0 with no Reserved Font Name"] []
+- Scancode ["OFL-1.0-no-RFN","scancode://ofl-1.0-no-rfn","OFL 1.0 no Reserved Font Name"] []
 
 * OFL-1.1
 - LicenseName ["OFL-1.1"] []
@@ -2428,15 +2611,22 @@
 * OFL-1.1-RFN
 - LicenseName ["OFL-1.1-RFN"] []
 - SPDX ["OFL-1.1-RFN","SIL Open Font License 1.1 with Reserved Font Name"] []
+- Scancode ["OFL-1.1-RFN","scancode://ofl-1.1-rfn","SIL Open Font License 1.1 with Reserved Font Name"] []
 
 * OFL-1.1-no-RFN
 - LicenseName ["OFL-1.1-no-RFN"] []
 - SPDX ["OFL-1.1-no-RFN","SIL Open Font License 1.1 with no Reserved Font Name"] []
+- Scancode ["OFL-1.1-no-RFN","scancode://ofl-1.1-no-rfn","OFL 1.1 no Reserved Font Name"] []
 
 * OGC-1.0
 - LicenseName ["OGC-1.0"] []
 - SPDX ["OGC-1.0","OGC Software License, Version 1.0"] []
 - Scancode ["OGC-1.0","scancode://ogc-1.0","OGC 1.0"] []
+
+* OGDL-Taiwan-1.0
+- LicenseName ["OGDL-Taiwan-1.0"] []
+- SPDX ["OGDL-Taiwan-1.0","Taiwan Open Government Data License, version 1.0"] []
+- Scancode ["OGDL-Taiwan-1.0","scancode://ogdl-taiwan-1.0","Taiwan Open Government Data License, version 1.0"] []
 
 * OGL-Canada-2.0
 - LicenseName ["OGL-Canada-2.0"] []
@@ -2599,6 +2789,12 @@
 - SPDX ["OPL-1.0","Open Public License v1.0"] []
 - Scancode ["OPL-1.0","scancode://open-public","Open Public License 1.0"] []
 
+* OPUBL-1.0
+- LicenseName ["OPUBL-1.0"] []
+- Fedora Project Wiki ["Open Publication License, v1.0"] ["Open Publication"]
+- SPDX ["OPUBL-1.0","Open Publication License v1.0"] []
+- Scancode ["OPUBL-1.0","scancode://openpub","Open Publication License 1.0"] []
+
 * OSET-PL-2.1
 - LicenseName ["OSET-PL-2.1"] []
 - OpenChainPolicyTemplate ["OSET-PL-2.1"] []
@@ -2676,7 +2872,7 @@
 - Hitachi open-license ["OpenSSL License"] []
 - SPDX ["OpenSSL","OpenSSL License"] []
 - Scancode ["OpenSSL","scancode://openssl-ssleay","OpenSSL/SSLeay License"] []
-- Scancode ["scancode://openssl","OpenSSL License"] []
+- Scancode ["LicenseRef-scancode-openssl","scancode://openssl","OpenSSL License"] []
 - Wikipedia ["OpenSSL","OpenSSL license"] []
 
 * PDDL-1.0
@@ -2684,7 +2880,7 @@
 - HansHammel license-compatibility-checker ["PDDL-1.0"] []
 - librariesio license-compatibility ["PDDL-1.0"] []
 - Open Knowledge International ["PDDL-1.0","Open Data Commons Public Domain Dedication and Licence 1.0","ODC-PDDL-1.0"] []
-- SPDX ["PDDL-1.0","ODC Public Domain Dedication & License 1.0"] []
+- SPDX ["PDDL-1.0","Open Data Commons Public Domain Dedication & License 1.0"] []
 - Scancode ["PDDL-1.0","scancode://pddl-1.0","PDDL 1.0"] []
 
 * PHP-3.0
@@ -2712,6 +2908,7 @@
 
 * PSF-2.0
 - LicenseName ["PSF-2.0"] []
+- BlueOak License List ["PSF-2.0","Python Software Foundation License 2.0"] []
 - SPDX ["PSF-2.0","Python Software Foundation License 2.0"] []
 - Scancode ["PSF-2.0","scancode://psf-2.0"] []
 
@@ -2971,8 +3168,9 @@
 
 * SSPL-1.0
 - LicenseName ["SSPL-1.0"] []
+- BlueOak License List ["SSPL-1.0","Server Side Public License Version 1"] ["Server Side Public License"]
 - SPDX ["SSPL-1.0","Server Side Public License, v 1"] []
-- Scancode ["SSPL-1.0","scancode://mongodb-sspl-1.0","MongoDB SSPL 1.0"] []
+- Scancode ["SSPL-1.0","scancode://mongodb-sspl-1.0","SSPL 1.0"] []
 
 * SWL
 - LicenseName ["SWL"] []
@@ -2987,6 +3185,10 @@
 - Fedora Project Wiki ["Saxpath License"] ["Saxpath"]
 - SPDX ["Saxpath","Saxpath License"] []
 - Scancode ["Saxpath","scancode://saxpath","Saxpath License"] []
+
+* SchemeReport
+- LicenseName ["SchemeReport"] []
+- SPDX ["SchemeReport","Scheme Language Report License"] []
 
 * Sendmail
 - LicenseName ["Sendmail"] []
@@ -3062,6 +3264,7 @@
 - finos/OSLC-handbook ["TCL","TCL/TK License"] []
 - SPDX ["TCL","TCL/TK License"] []
 - Scancode ["TCL","scancode://tcl","TCL/TK License"] []
+- Scancode ["LicenseRef-scancode-ttcl","scancode://ttcl","TCL"] []
 
 * TCP-wrappers
 - LicenseName ["TCP-wrappers"] []
@@ -3176,6 +3379,7 @@
 
 * Vim
 - LicenseName ["Vim"] []
+- BlueOak License List ["Vim","Vim License"] []
 - choosealicense.com ["vim","Vim"] []
 - Fedora Project Wiki ["Vim License"] ["Vim"]
 - HansHammel license-compatibility-checker ["Vim"] []
@@ -3322,6 +3526,7 @@
 - HansHammel license-compatibility-checker ["ZPL-2.0"] []
 - librariesio license-compatibility ["ZPL-2.0"] []
 - Open Knowledge International ["ZPL-2.0","Zope Public License 2.0"] []
+- OSADL License Checklist ["ZPL-2.0"] []
 - OpenSourceInitiative ["ZPL-2.0","The Zope Public License, Version 2.0","Zope-2.0","License :: OSI Approved :: Zope Public License"] []
 - OpenChainPolicyTemplate ["ZPL-2.0"] []
 - Hitachi open-license ["Zope Public License (ZPL) Version 2.0","ZPL-2.0"] []
@@ -3378,7 +3583,7 @@
 - Open Knowledge International ["Zlib","zlib/libpng license","zlib-license"] []
 - OSADL License Checklist ["Zlib"] []
 - OpenSourceInitiative ["Zlib","The zlib/libpng License (Zlib)","License :: OSI Approved :: zlib/libpng License"] []
-- finos/OSLC-handbook ["zlib","zlib License"] []
+- finos/OSLC-handbook ["Zlib","zlib License"] []
 - OpenChainPolicyTemplate ["Zlib"] []
 - Hitachi open-license ["zlib/libpng license"] []
 - SPDX ["Zlib","zlib License"] []
@@ -3387,6 +3592,7 @@
 
 * blessing
 - LicenseName ["blessing"] []
+- BlueOak License List ["blessing","SQLite Blessing"] []
 - SPDX ["blessing","SQLite Blessing"] []
 - Scancode ["blessing","scancode://blessing","SQLite Blessing"] []
 
@@ -3406,11 +3612,13 @@
 
 * copyleft-next-0.3.0
 - LicenseName ["copyleft-next-0.3.0"] []
+- BlueOak License List ["copyleft-next-0.3.0","copyleft-next 0.3.0"] ["copyleft-next"]
 - SPDX ["copyleft-next-0.3.0","copyleft-next 0.3.0"] []
 - Scancode ["copyleft-next-0.3.0","scancode://copyleft-next-0.3.0","copyleft-next 0.3.0"] []
 
 * copyleft-next-0.3.1
 - LicenseName ["copyleft-next-0.3.1"] []
+- BlueOak License List ["copyleft-next-0.3.1","copyleft-next 0.3.1"] ["copyleft-next"]
 - SPDX ["copyleft-next-0.3.1","copyleft-next 0.3.1"] []
 - Scancode ["copyleft-next-0.3.1","scancode://copyleft-next-0.3.1","copyleft-next 0.3.1"] []
 
@@ -3468,6 +3676,7 @@
 
 * libpng-2.0
 - LicenseName ["libpng-2.0"] []
+- BlueOak License List ["libpng-2.0","PNG Reference Library version 2"] []
 - SPDX ["libpng-2.0","PNG Reference Library version 2"] []
 - Scancode ["libpng-2.0","scancode://libpng-v2","LIbpng License v2"] []
 

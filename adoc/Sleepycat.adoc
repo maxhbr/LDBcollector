@@ -47,7 +47,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://opensource.org/licenses/sleepycat.html
 * *OSI Page:* https://opensource.org/licenses/Sleepycat
-* *SPDX:* http://spdx.org/licenses/Sleepycat.json
+* *SPDX:* https://spdx.org/licenses/Sleepycat.json
 * https://spdx.org/licenses/Sleepycat.html
 * http://www.opensource.org/licenses/Sleepycat
 * http://www.opensource.org/licenses/sleepycat.php
@@ -196,7 +196,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sleepycat License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Sleepycat.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Sleepycat.json",
             "_sourceURL": "https://spdx.org/licenses/Sleepycat.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -221,7 +221,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Sleepycat.json"
+                        "https://spdx.org/licenses/Sleepycat.json"
                     ],
                     [
                         null,
@@ -584,7 +584,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Sleepycat.json"
+            "https://spdx.org/licenses/Sleepycat.json"
         ],
         [
             "Homepage",

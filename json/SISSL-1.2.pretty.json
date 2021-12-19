@@ -29,7 +29,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sun Industry Standards Source License v1.2",
-            "spdxDetailsURL": "http://spdx.org/licenses/SISSL-1.2.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SISSL-1.2.json",
             "_sourceURL": "https://spdx.org/licenses/SISSL-1.2.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -45,7 +45,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SISSL-1.2.json"
+                        "https://spdx.org/licenses/SISSL-1.2.json"
                     ],
                     [
                         null,
@@ -176,7 +176,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/SISSL-1.2.json"
+            "https://spdx.org/licenses/SISSL-1.2.json"
         ],
         [
             null,

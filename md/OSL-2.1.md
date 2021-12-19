@@ -76,7 +76,7 @@
 
 -   **OSI Page:** http://www.opensource.org/licenses/osl-2.1.php
 
--   **SPDX:** http://spdx.org/licenses/OSL-2.1.json
+-   **SPDX:** https://spdx.org/licenses/OSL-2.1.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1084
 
@@ -288,7 +288,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Software License 2.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/OSL-2.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OSL-2.1.json",
                 "_sourceURL": "https://spdx.org/licenses/OSL-2.1.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -314,7 +314,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OSL-2.1.json"
+                            "https://spdx.org/licenses/OSL-2.1.json"
                         ],
                         [
                             null,
@@ -851,7 +851,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OSL-2.1.json"
+                "https://spdx.org/licenses/OSL-2.1.json"
             ],
             [
                 null,

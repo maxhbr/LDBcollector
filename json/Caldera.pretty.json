@@ -19,7 +19,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Caldera License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Caldera.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Caldera.json",
             "_sourceURL": "https://spdx.org/licenses/Caldera.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -35,7 +35,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Caldera.json"
+                        "https://spdx.org/licenses/Caldera.json"
                     ],
                     [
                         null,
@@ -95,7 +95,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Caldera.json"
+            "https://spdx.org/licenses/Caldera.json"
         ],
         [
             null,

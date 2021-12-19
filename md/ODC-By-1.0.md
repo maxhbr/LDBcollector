@@ -16,7 +16,7 @@
 
 -   **Homepage:** https://opendatacommons.org/licenses/by/
 
--   **SPDX:** http://spdx.org/licenses/ODC-By-1.0.json
+-   **SPDX:** https://spdx.org/licenses/ODC-By-1.0.json
 
 -   https://opendefinition.org/licenses/odc-by
 
@@ -512,7 +512,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Data Commons Attribution License v1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/ODC-By-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/ODC-By-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/ODC-By-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -528,7 +528,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/ODC-By-1.0.json"
+                            "https://spdx.org/licenses/ODC-By-1.0.json"
                         ],
                         [
                             null,
@@ -598,7 +598,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/ODC-By-1.0.json"
+                "https://spdx.org/licenses/ODC-By-1.0.json"
             ],
             [
                 null,

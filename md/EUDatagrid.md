@@ -36,7 +36,7 @@
 
 -   **OSI Page:** http://www.opensource.org/licenses/eudatagrid.php
 
--   **SPDX:** http://spdx.org/licenses/EUDatagrid.json
+-   **SPDX:** https://spdx.org/licenses/EUDatagrid.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1546
 
@@ -231,7 +231,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "EU DataGrid Software License",
-                "spdxDetailsURL": "http://spdx.org/licenses/EUDatagrid.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/EUDatagrid.json",
                 "_sourceURL": "https://spdx.org/licenses/EUDatagrid.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -257,7 +257,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/EUDatagrid.json"
+                            "https://spdx.org/licenses/EUDatagrid.json"
                         ],
                         [
                             null,
@@ -623,7 +623,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/EUDatagrid.json"
+                "https://spdx.org/licenses/EUDatagrid.json"
             ],
             [
                 null,

@@ -49,7 +49,7 @@
 
 - *SPDX:* https://spdx.org/licenses/W3C-19980720.html
 
-- *SPDX:* http://spdx.org/licenses/W3C-19980720.json
+- *SPDX:* https://spdx.org/licenses/W3C-19980720.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/268
 
@@ -240,7 +240,7 @@
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "W3C Software Notice and License (1998-07-20)",
-              "spdxDetailsURL": "http://spdx.org/licenses/W3C-19980720.json",
+              "spdxDetailsURL": "https://spdx.org/licenses/W3C-19980720.json",
               "_sourceURL": "https://spdx.org/licenses/W3C-19980720.html",
               "spdxLicIsOSIApproved": false,
               "spdxSeeAlso": [
@@ -256,7 +256,7 @@
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/W3C-19980720.json"
+                          "https://spdx.org/licenses/W3C-19980720.json"
                       ],
                       [
                           null,
@@ -604,7 +604,7 @@
           ],
           [
               "SPDX",
-              "http://spdx.org/licenses/W3C-19980720.json"
+              "https://spdx.org/licenses/W3C-19980720.json"
           ],
           [
               null,

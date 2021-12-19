@@ -47,7 +47,7 @@ build with the licensed software, when you give copies to others.''
 
 * *Homepage:* http://www.nexb.com/license/LICENSE-OSL-2.0.html
 * *OSI Page:* http://www.opensource.org/licenses/osl-2.0.php
-* *SPDX:* http://spdx.org/licenses/OSL-2.0.json
+* *SPDX:* https://spdx.org/licenses/OSL-2.0.json
 * https://spdx.org/licenses/OSL-2.0.html
 * http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html
 * http://www.gnu.org/licenses/license-list.html#OSL
@@ -167,7 +167,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Software License 2.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/OSL-2.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/OSL-2.0.json",
             "_sourceURL": "https://spdx.org/licenses/OSL-2.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -192,7 +192,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/OSL-2.0.json"
+                        "https://spdx.org/licenses/OSL-2.0.json"
                     ],
                     [
                         null,
@@ -425,7 +425,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/OSL-2.0.json"
+            "https://spdx.org/licenses/OSL-2.0.json"
         ],
         [
             null,

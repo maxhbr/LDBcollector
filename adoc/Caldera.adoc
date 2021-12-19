@@ -20,7 +20,7 @@
 === URLs
 
 * *Homepage:* http://www.lemis.com/grog/UNIX/ancient-source-all.pdf
-* *SPDX:* http://spdx.org/licenses/Caldera.json
+* *SPDX:* https://spdx.org/licenses/Caldera.json
 
 === Text
 
@@ -111,7 +111,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Caldera License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Caldera.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Caldera.json",
             "_sourceURL": "https://spdx.org/licenses/Caldera.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -127,7 +127,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Caldera.json"
+                        "https://spdx.org/licenses/Caldera.json"
                     ],
                     [
                         null,
@@ -187,7 +187,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Caldera.json"
+            "https://spdx.org/licenses/Caldera.json"
         ],
         [
             null,

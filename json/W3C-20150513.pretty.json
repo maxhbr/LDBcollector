@@ -36,7 +36,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "W3C Software Notice and Document License (2015-05-13)",
-            "spdxDetailsURL": "http://spdx.org/licenses/W3C-20150513.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/W3C-20150513.json",
             "_sourceURL": "https://spdx.org/licenses/W3C-20150513.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -52,7 +52,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/W3C-20150513.json"
+                        "https://spdx.org/licenses/W3C-20150513.json"
                     ],
                     [
                         null,
@@ -399,7 +399,7 @@
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/W3C-20150513.json"
+            "https://spdx.org/licenses/W3C-20150513.json"
         ],
         [
             null,

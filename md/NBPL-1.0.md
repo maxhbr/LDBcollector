@@ -27,7 +27,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/NBPL-1.0.html
 
--   **SPDX:** http://spdx.org/licenses/NBPL-1.0.json
+-   **SPDX:** https://spdx.org/licenses/NBPL-1.0.json
 
 ## OSADL Rule
 
@@ -234,7 +234,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Net Boolean Public License v1",
-                "spdxDetailsURL": "http://spdx.org/licenses/NBPL-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NBPL-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/NBPL-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -250,7 +250,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NBPL-1.0.json"
+                            "https://spdx.org/licenses/NBPL-1.0.json"
                         ],
                         [
                             null,
@@ -381,7 +381,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NBPL-1.0.json"
+                "https://spdx.org/licenses/NBPL-1.0.json"
             ],
             [
                 null,

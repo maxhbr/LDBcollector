@@ -37,7 +37,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Beerware.html
 
--   **SPDX:** http://spdx.org/licenses/Beerware.json
+-   **SPDX:** https://spdx.org/licenses/Beerware.json
 
 -   https://fedoraproject.org/wiki/Licensing/Beerware
 
@@ -111,7 +111,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Beerware License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Beerware.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Beerware.json",
                 "_sourceURL": "https://spdx.org/licenses/Beerware.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -128,7 +128,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Beerware.json"
+                            "https://spdx.org/licenses/Beerware.json"
                         ],
                         [
                             null,
@@ -378,7 +378,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Beerware.json"
+                "https://spdx.org/licenses/Beerware.json"
             ],
             [
                 null,

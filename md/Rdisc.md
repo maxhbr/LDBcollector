@@ -31,7 +31,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Rdisc.html
 
--   **SPDX:** http://spdx.org/licenses/Rdisc.json
+-   **SPDX:** https://spdx.org/licenses/Rdisc.json
 
 ## Text
 
@@ -102,7 +102,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Rdisc License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Rdisc.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Rdisc.json",
                 "_sourceURL": "https://spdx.org/licenses/Rdisc.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -118,7 +118,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Rdisc.json"
+                            "https://spdx.org/licenses/Rdisc.json"
                         ],
                         [
                             null,
@@ -275,7 +275,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Rdisc.json"
+                "https://spdx.org/licenses/Rdisc.json"
             ],
             [
                 null,

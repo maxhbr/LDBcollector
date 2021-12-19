@@ -21,7 +21,7 @@
 === URLs
 
 * *Homepage:* https://opendatacommons.org/licenses/by/
-* *SPDX:* http://spdx.org/licenses/ODC-By-1.0.json
+* *SPDX:* https://spdx.org/licenses/ODC-By-1.0.json
 * https://opendefinition.org/licenses/odc-by
 * https://opendatacommons.org/licenses/by/1.0/
 
@@ -515,7 +515,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Data Commons Attribution License v1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/ODC-By-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/ODC-By-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/ODC-By-1.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -531,7 +531,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/ODC-By-1.0.json"
+                        "https://spdx.org/licenses/ODC-By-1.0.json"
                     ],
                     [
                         null,
@@ -601,7 +601,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/ODC-By-1.0.json"
+            "https://spdx.org/licenses/ODC-By-1.0.json"
         ],
         [
             null,

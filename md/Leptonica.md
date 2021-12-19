@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Leptonica.html
 
--   **SPDX:** http://spdx.org/licenses/Leptonica.json
+-   **SPDX:** https://spdx.org/licenses/Leptonica.json
 
 ## Text
 
@@ -86,7 +86,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Leptonica License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Leptonica.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Leptonica.json",
                 "_sourceURL": "https://spdx.org/licenses/Leptonica.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -102,7 +102,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Leptonica.json"
+                            "https://spdx.org/licenses/Leptonica.json"
                         ],
                         [
                             null,
@@ -251,7 +251,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Leptonica.json"
+                "https://spdx.org/licenses/Leptonica.json"
             ],
             [
                 null,

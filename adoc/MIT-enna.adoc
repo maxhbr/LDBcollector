@@ -29,7 +29,7 @@ Project Wiki]
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/MIT#enna
 * *SPDX:* https://spdx.org/licenses/MIT-enna.html
-* *SPDX:* http://spdx.org/licenses/MIT-enna.json
+* *SPDX:* https://spdx.org/licenses/MIT-enna.json
 
 === Text
 
@@ -110,7 +110,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "enna License",
-            "spdxDetailsURL": "http://spdx.org/licenses/MIT-enna.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/MIT-enna.json",
             "_sourceURL": "https://spdx.org/licenses/MIT-enna.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -126,7 +126,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/MIT-enna.json"
+                        "https://spdx.org/licenses/MIT-enna.json"
                     ],
                     [
                         null,
@@ -295,7 +295,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/MIT-enna.json"
+            "https://spdx.org/licenses/MIT-enna.json"
         ],
         [
             null,

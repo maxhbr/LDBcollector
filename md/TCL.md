@@ -6,6 +6,10 @@
 
 -   `scancode://tcl`
 
+-   `scancode://ttcl`
+
+-   `LicenseRef-scancode-ttcl`
+
 ## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
@@ -23,9 +27,11 @@
 
 -   **Homepage:** http://www.tcl.tk/software/tcltk/license.html
 
+-   **Homepage:** https://opendefinition.org/licenses/tcl/
+
 -   **SPDX:** https://spdx.org/licenses/TCL.html
 
--   **SPDX:** http://spdx.org/licenses/TCL.json
+-   **SPDX:** https://spdx.org/licenses/TCL.json
 
 -   https://fedoraproject.org/wiki/Licensing/TCL
 
@@ -101,13 +107,18 @@
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tcl.yml "Scancode")
     (CC0-1.0)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ttcl.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "TCL",
             "TCL/TK License",
-            "scancode://tcl"
+            "scancode://tcl",
+            "scancode://ttcl",
+            "LicenseRef-scancode-ttcl"
         ],
         "__impliedId": "TCL",
         "__isFsfFree": true,
@@ -128,7 +139,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TCL/TK License",
-                "spdxDetailsURL": "http://spdx.org/licenses/TCL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/TCL.json",
                 "_sourceURL": "https://spdx.org/licenses/TCL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -145,7 +156,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/TCL.json"
+                            "https://spdx.org/licenses/TCL.json"
                         ],
                         [
                             null,
@@ -381,7 +392,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/TCL.json"
+                "https://spdx.org/licenses/TCL.json"
             ],
             [
                 null,
@@ -398,6 +409,10 @@
             [
                 null,
                 "http://fedoraproject.org/wiki/Licensing/TCL"
+            ],
+            [
+                "Homepage",
+                "https://opendefinition.org/licenses/tcl/"
             ]
         ]
     }

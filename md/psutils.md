@@ -28,7 +28,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/psutils.html
 
--   **SPDX:** http://spdx.org/licenses/psutils.json
+-   **SPDX:** https://spdx.org/licenses/psutils.json
 
 -   https://fedoraproject.org/wiki/Licensing/psutils
 
@@ -114,7 +114,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "psutils License",
-                "spdxDetailsURL": "http://spdx.org/licenses/psutils.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/psutils.json",
                 "_sourceURL": "https://spdx.org/licenses/psutils.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -130,7 +130,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/psutils.json"
+                            "https://spdx.org/licenses/psutils.json"
                         ],
                         [
                             null,
@@ -285,7 +285,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/psutils.json"
+                "https://spdx.org/licenses/psutils.json"
             ],
             [
                 null,

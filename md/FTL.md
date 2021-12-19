@@ -42,13 +42,15 @@
 
 -   **SPDX:** https://spdx.org/licenses/FTL.html
 
--   **SPDX:** http://spdx.org/licenses/FTL.json
+-   **SPDX:** https://spdx.org/licenses/FTL.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/763
 
 -   http://freetype.fis.uniroma2.it/FTL.TXT
 
 -   http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
+
+-   http://gitlab.freedesktop.org/freetype/freetype/-/raw/master/docs/FTL.TXT
 
 -   http://freetype.org/patents.html
 
@@ -396,12 +398,13 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Freetype Project License",
-                "spdxDetailsURL": "http://spdx.org/licenses/FTL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/FTL.json",
                 "_sourceURL": "https://spdx.org/licenses/FTL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
                     "http://freetype.fis.uniroma2.it/FTL.TXT",
-                    "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
+                    "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT",
+                    "http://gitlab.freedesktop.org/freetype/freetype/-/raw/master/docs/FTL.TXT"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -413,7 +416,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/FTL.json"
+                            "https://spdx.org/licenses/FTL.json"
                         ],
                         [
                             null,
@@ -422,6 +425,10 @@
                         [
                             null,
                             "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
+                        ],
+                        [
+                            null,
+                            "http://gitlab.freedesktop.org/freetype/freetype/-/raw/master/docs/FTL.TXT"
                         ]
                     ]
                 },
@@ -442,6 +449,7 @@
                     "http://freetype.fis.uniroma2.it/FTL.TXT",
                     "http://freetype.org/patents.html",
                     "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT",
+                    "http://gitlab.freedesktop.org/freetype/freetype/-/raw/master/docs/FTL.TXT",
                     "http://www.freetype.org/"
                 ],
                 "homepageUrl": "http://www.freetype.org/license.html",
@@ -495,6 +503,10 @@
                         [
                             null,
                             "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
+                        ],
+                        [
+                            null,
+                            "http://gitlab.freedesktop.org/freetype/freetype/-/raw/master/docs/FTL.TXT"
                         ],
                         [
                             null,
@@ -887,7 +899,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/FTL.json"
+                "https://spdx.org/licenses/FTL.json"
             ],
             [
                 null,
@@ -896,6 +908,10 @@
             [
                 null,
                 "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
+            ],
+            [
+                null,
+                "http://gitlab.freedesktop.org/freetype/freetype/-/raw/master/docs/FTL.TXT"
             ],
             [
                 "Homepage",

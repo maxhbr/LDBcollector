@@ -31,7 +31,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:*
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/infiniband/core/sa.h
 * *SPDX:* https://spdx.org/licenses/Linux-OpenIB.html
-* *SPDX:* http://spdx.org/licenses/Linux-OpenIB.json
+* *SPDX:* https://spdx.org/licenses/Linux-OpenIB.json
 * https://github.com/spdx/license-list-XML/issues/620
 * https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/infiniband/core/sa.h?id=3215b9d57a2c75c4305a3956ca303d7004485200
 
@@ -102,7 +102,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Linux Kernel Variant of OpenIB.org license",
-            "spdxDetailsURL": "http://spdx.org/licenses/Linux-OpenIB.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Linux-OpenIB.json",
             "_sourceURL": "https://spdx.org/licenses/Linux-OpenIB.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -118,7 +118,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Linux-OpenIB.json"
+                        "https://spdx.org/licenses/Linux-OpenIB.json"
                     ],
                     [
                         null,
@@ -250,7 +250,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Linux-OpenIB.json"
+            "https://spdx.org/licenses/Linux-OpenIB.json"
         ],
         [
             null,

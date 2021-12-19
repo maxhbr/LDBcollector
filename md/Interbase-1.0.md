@@ -45,7 +45,7 @@
 -   **Homepage:**
     http://info.borland.com/devsupport/interbase/opensource/IPL.html
 
--   **SPDX:** http://spdx.org/licenses/Interbase-1.0.json
+-   **SPDX:** https://spdx.org/licenses/Interbase-1.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/992
 
@@ -456,7 +456,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Interbase Public License v1.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/Interbase-1.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Interbase-1.0.json",
                 "_sourceURL": "https://spdx.org/licenses/Interbase-1.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -472,7 +472,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Interbase-1.0.json"
+                            "https://spdx.org/licenses/Interbase-1.0.json"
                         ],
                         [
                             null,
@@ -1030,7 +1030,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Interbase-1.0.json"
+                "https://spdx.org/licenses/Interbase-1.0.json"
             ],
             [
                 null,

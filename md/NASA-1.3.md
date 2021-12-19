@@ -37,7 +37,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/NASA-1.3.html
 
--   **SPDX:** http://spdx.org/licenses/NASA-1.3.json
+-   **SPDX:** https://spdx.org/licenses/NASA-1.3.json
 
 -   http://ti.arc.nasa.gov/opensource/nosa/
 
@@ -249,7 +249,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NASA Open Source Agreement 1.3",
-                "spdxDetailsURL": "http://spdx.org/licenses/NASA-1.3.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NASA-1.3.json",
                 "_sourceURL": "https://spdx.org/licenses/NASA-1.3.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -275,7 +275,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NASA-1.3.json"
+                            "https://spdx.org/licenses/NASA-1.3.json"
                         ],
                         [
                             null,
@@ -514,7 +514,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NASA-1.3.json"
+                "https://spdx.org/licenses/NASA-1.3.json"
             ],
             [
                 null,

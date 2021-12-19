@@ -24,7 +24,7 @@
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Latex2e
 
--   **SPDX:** http://spdx.org/licenses/Latex2e.json
+-   **SPDX:** https://spdx.org/licenses/Latex2e.json
 
 ## Text
 
@@ -93,7 +93,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Latex2e License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Latex2e.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Latex2e.json",
                 "_sourceURL": "https://spdx.org/licenses/Latex2e.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -109,7 +109,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Latex2e.json"
+                            "https://spdx.org/licenses/Latex2e.json"
                         ],
                         [
                             null,
@@ -215,7 +215,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Latex2e.json"
+                "https://spdx.org/licenses/Latex2e.json"
             ],
             [
                 null,

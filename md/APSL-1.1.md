@@ -81,7 +81,7 @@
 -   **Homepage:**
     http://web.archive.org/web/20000901055846/http://www.opensource.apple.com/apsl/
 
--   **SPDX:** http://spdx.org/licenses/APSL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/APSL-1.1.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1101
 
@@ -721,7 +721,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Apple Public Source License 1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/APSL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/APSL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/APSL-1.1.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -746,7 +746,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/APSL-1.1.json"
+                            "https://spdx.org/licenses/APSL-1.1.json"
                         ],
                         [
                             null,
@@ -1527,7 +1527,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/APSL-1.1.json"
+                "https://spdx.org/licenses/APSL-1.1.json"
             ],
             [
                 null,

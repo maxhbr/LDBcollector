@@ -57,7 +57,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://www.netbeans.org/about/legal/spl.html
 * *OSI Page:* https://opensource.org/licenses/SPL-1.0
 * *OSI Page:* http://opensource.org/licenses/sunpublic.php
-* *SPDX:* http://spdx.org/licenses/SPL-1.0.json
+* *SPDX:* https://spdx.org/licenses/SPL-1.0.json
 * *open-license:* http://open-license.hitachi.com/licenses/414
 * https://spdx.org/licenses/SPL-1.0.html
 * http://www.gnu.org/licenses/license-list.html#SPL
@@ -837,7 +837,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sun Public License v1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/SPL-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/SPL-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/SPL-1.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -862,7 +862,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/SPL-1.0.json"
+                        "https://spdx.org/licenses/SPL-1.0.json"
                     ],
                     [
                         null,
@@ -1523,7 +1523,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/SPL-1.0.json"
+            "https://spdx.org/licenses/SPL-1.0.json"
         ],
         [
             "Homepage",

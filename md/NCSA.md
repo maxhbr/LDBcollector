@@ -69,7 +69,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/NCSA.html
 
--   **SPDX:** http://spdx.org/licenses/NCSA.json
+-   **SPDX:** https://spdx.org/licenses/NCSA.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/684
 
@@ -263,7 +263,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "University of Illinois/NCSA Open Source License",
-                "spdxDetailsURL": "http://spdx.org/licenses/NCSA.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NCSA.json",
                 "_sourceURL": "https://spdx.org/licenses/NCSA.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -289,7 +289,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NCSA.json"
+                            "https://spdx.org/licenses/NCSA.json"
                         ],
                         [
                             null,
@@ -833,7 +833,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NCSA.json"
+                "https://spdx.org/licenses/NCSA.json"
             ],
             [
                 null,

@@ -26,7 +26,7 @@
 -   **Homepage:**
     http://trac.enlightenment.org/e/browser/trunk/imlib2/COPYING
 
--   **SPDX:** http://spdx.org/licenses/Imlib2.json
+-   **SPDX:** https://spdx.org/licenses/Imlib2.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1561
 
@@ -180,7 +180,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Imlib2 License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Imlib2.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Imlib2.json",
                 "_sourceURL": "https://spdx.org/licenses/Imlib2.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -197,7 +197,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Imlib2.json"
+                            "https://spdx.org/licenses/Imlib2.json"
                         ],
                         [
                             null,
@@ -501,7 +501,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Imlib2.json"
+                "https://spdx.org/licenses/Imlib2.json"
             ],
             [
                 null,

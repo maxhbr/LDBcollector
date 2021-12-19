@@ -31,7 +31,7 @@ Project Wiki]
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution
 * *SPDX:* https://spdx.org/licenses/BSD-3-Clause-Attribution.html
-* *SPDX:* http://spdx.org/licenses/BSD-3-Clause-Attribution.json
+* *SPDX:* https://spdx.org/licenses/BSD-3-Clause-Attribution.json
 
 === Text
 
@@ -118,7 +118,7 @@ data [in this repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD with attribution",
-            "spdxDetailsURL": "http://spdx.org/licenses/BSD-3-Clause-Attribution.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/BSD-3-Clause-Attribution.json",
             "_sourceURL": "https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -134,7 +134,7 @@ data [in this repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/BSD-3-Clause-Attribution.json"
+                        "https://spdx.org/licenses/BSD-3-Clause-Attribution.json"
                     ],
                     [
                         null,
@@ -323,7 +323,7 @@ data [in this repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-3-Clause-Attribution.json"
+            "https://spdx.org/licenses/BSD-3-Clause-Attribution.json"
         ],
         [
             null,

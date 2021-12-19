@@ -46,7 +46,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Plexus.html
 
--   **SPDX:** http://spdx.org/licenses/Plexus.json
+-   **SPDX:** https://spdx.org/licenses/Plexus.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/288
 
@@ -216,7 +216,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Plexus Classworlds License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Plexus.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Plexus.json",
                 "_sourceURL": "https://spdx.org/licenses/Plexus.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -232,7 +232,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Plexus.json"
+                            "https://spdx.org/licenses/Plexus.json"
                         ],
                         [
                             null,
@@ -605,7 +605,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Plexus.json"
+                "https://spdx.org/licenses/Plexus.json"
             ],
             [
                 null,

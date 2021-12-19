@@ -25,7 +25,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Crossword.html
 
--   **SPDX:** http://spdx.org/licenses/Crossword.json
+-   **SPDX:** https://spdx.org/licenses/Crossword.json
 
 ## Text
 
@@ -88,7 +88,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Crossword License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Crossword.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Crossword.json",
                 "_sourceURL": "https://spdx.org/licenses/Crossword.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -104,7 +104,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Crossword.json"
+                            "https://spdx.org/licenses/Crossword.json"
                         ],
                         [
                             null,
@@ -253,7 +253,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Crossword.json"
+                "https://spdx.org/licenses/Crossword.json"
             ],
             [
                 null,

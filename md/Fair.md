@@ -37,7 +37,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Fair.html
 
--   **SPDX:** http://spdx.org/licenses/Fair.json
+-   **SPDX:** https://spdx.org/licenses/Fair.json
 
 -   http://fairlicense.org/
 
@@ -149,7 +149,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Fair License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Fair.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Fair.json",
                 "_sourceURL": "https://spdx.org/licenses/Fair.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -175,7 +175,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Fair.json"
+                            "https://spdx.org/licenses/Fair.json"
                         ],
                         [
                             null,
@@ -435,7 +435,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Fair.json"
+                "https://spdx.org/licenses/Fair.json"
             ],
             [
                 null,

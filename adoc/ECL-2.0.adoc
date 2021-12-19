@@ -86,7 +86,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ecl-2.0.txt
 * *OSI Page:* https://opensource.org/licenses/ECL-2.0
 * *OSI Page:* http://opensource.org/licenses/ecl2.php
 * *SPDX:* https://spdx.org/licenses/ECL-2.0.html
-* *SPDX:* http://spdx.org/licenses/ECL-2.0.json
+* *SPDX:* https://spdx.org/licenses/ECL-2.0.json
 
 === Text
 
@@ -400,7 +400,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Educational Community License v2.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/ECL-2.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/ECL-2.0.json",
             "_sourceURL": "https://spdx.org/licenses/ECL-2.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -425,7 +425,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/ECL-2.0.json"
+                        "https://spdx.org/licenses/ECL-2.0.json"
                     ],
                     [
                         null,
@@ -840,7 +840,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/ECL-2.0.json"
+            "https://spdx.org/licenses/ECL-2.0.json"
         ],
         [
             "Homepage",

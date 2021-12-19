@@ -26,7 +26,7 @@ Project Wiki]
 
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing:Eurosym?rd=Licensing/Eurosym
-* *SPDX:* http://spdx.org/licenses/Eurosym.json
+* *SPDX:* https://spdx.org/licenses/Eurosym.json
 * https://fedoraproject.org/wiki/Licensing/Eurosym
 
 === Text
@@ -94,7 +94,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Eurosym License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Eurosym.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Eurosym.json",
             "_sourceURL": "https://spdx.org/licenses/Eurosym.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -110,7 +110,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Eurosym.json"
+                        "https://spdx.org/licenses/Eurosym.json"
                     ],
                     [
                         null,
@@ -214,7 +214,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Eurosym.json"
+            "https://spdx.org/licenses/Eurosym.json"
         ],
         [
             null,

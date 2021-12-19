@@ -38,7 +38,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://opensource.org/licenses/fair.php
 * *OSI Page:* https://opensource.org/licenses/Fair
 * *SPDX:* https://spdx.org/licenses/Fair.html
-* *SPDX:* http://spdx.org/licenses/Fair.json
+* *SPDX:* https://spdx.org/licenses/Fair.json
 * http://fairlicense.org/
 * http://www.opensource.org/licenses/Fair
 * http://rhid.com/fair
@@ -142,7 +142,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Fair License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Fair.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Fair.json",
             "_sourceURL": "https://spdx.org/licenses/Fair.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -168,7 +168,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Fair.json"
+                        "https://spdx.org/licenses/Fair.json"
                     ],
                     [
                         null,
@@ -428,7 +428,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Fair.json"
+            "https://spdx.org/licenses/Fair.json"
         ],
         [
             null,

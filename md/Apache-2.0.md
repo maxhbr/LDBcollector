@@ -106,7 +106,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Apache-2.0.html
 
--   **SPDX:** http://spdx.org/licenses/Apache-2.0.json
+-   **SPDX:** https://spdx.org/licenses/Apache-2.0.json
 
 -   **Wikipedia page:** https://en.wikipedia.org/wiki/Apache\_License
 
@@ -115,7 +115,7 @@
 -   **tl;dr legal:**
     https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29
 
--   http://www.apache.org/licenses/LICENSE-2.0
+-   https://www.apache.org/licenses/LICENSE-2.0
 
 -   http://www.opensource.org/licenses/Apache-2.0
 
@@ -589,11 +589,11 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Apache License 2.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/Apache-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Apache-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/Apache-2.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
-                    "http://www.apache.org/licenses/LICENSE-2.0",
+                    "https://www.apache.org/licenses/LICENSE-2.0",
                     "https://opensource.org/licenses/Apache-2.0"
                 ],
                 "_implications": {
@@ -615,11 +615,11 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Apache-2.0.json"
+                            "https://spdx.org/licenses/Apache-2.0.json"
                         ],
                         [
                             null,
-                            "http://www.apache.org/licenses/LICENSE-2.0"
+                            "https://www.apache.org/licenses/LICENSE-2.0"
                         ],
                         [
                             null,
@@ -688,7 +688,8 @@
             "Scancode": {
                 "otherUrls": [
                     "http://www.opensource.org/licenses/Apache-2.0",
-                    "https://opensource.org/licenses/Apache-2.0"
+                    "https://opensource.org/licenses/Apache-2.0",
+                    "https://www.apache.org/licenses/LICENSE-2.0"
                 ],
                 "homepageUrl": "http://www.apache.org/licenses/",
                 "shortName": "Apache 2.0",
@@ -741,6 +742,10 @@
                         [
                             null,
                             "https://opensource.org/licenses/Apache-2.0"
+                        ],
+                        [
+                            null,
+                            "https://www.apache.org/licenses/LICENSE-2.0"
                         ]
                     ]
                 }
@@ -1566,11 +1571,11 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Apache-2.0.json"
+                "https://spdx.org/licenses/Apache-2.0.json"
             ],
             [
                 null,
-                "http://www.apache.org/licenses/LICENSE-2.0"
+                "https://www.apache.org/licenses/LICENSE-2.0"
             ],
             [
                 "Homepage",

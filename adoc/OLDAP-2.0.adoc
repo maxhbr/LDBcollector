@@ -31,7 +31,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:*
 http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea
 * *SPDX:* https://spdx.org/licenses/OLDAP-2.0.html
-* *SPDX:* http://spdx.org/licenses/OLDAP-2.0.json
+* *SPDX:* https://spdx.org/licenses/OLDAP-2.0.json
 
 === Text
 
@@ -132,7 +132,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)",
-            "spdxDetailsURL": "http://spdx.org/licenses/OLDAP-2.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/OLDAP-2.0.json",
             "_sourceURL": "https://spdx.org/licenses/OLDAP-2.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -148,7 +148,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/OLDAP-2.0.json"
+                        "https://spdx.org/licenses/OLDAP-2.0.json"
                     ],
                     [
                         null,
@@ -289,7 +289,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/OLDAP-2.0.json"
+            "https://spdx.org/licenses/OLDAP-2.0.json"
         ],
         [
             null,

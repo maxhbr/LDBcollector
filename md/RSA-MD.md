@@ -24,7 +24,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/RSA-MD.html
 
--   **SPDX:** http://spdx.org/licenses/RSA-MD.json
+-   **SPDX:** https://spdx.org/licenses/RSA-MD.json
 
 ## Text
 
@@ -89,7 +89,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "RSA Message-Digest License",
-                "spdxDetailsURL": "http://spdx.org/licenses/RSA-MD.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/RSA-MD.json",
                 "_sourceURL": "https://spdx.org/licenses/RSA-MD.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -105,7 +105,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/RSA-MD.json"
+                            "https://spdx.org/licenses/RSA-MD.json"
                         ],
                         [
                             null,
@@ -224,7 +224,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/RSA-MD.json"
+                "https://spdx.org/licenses/RSA-MD.json"
             ],
             [
                 null,

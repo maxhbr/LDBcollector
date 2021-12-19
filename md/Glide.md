@@ -21,7 +21,7 @@
 
 -   **Homepage:** http://www.users.on.net/~triforce/glidexp/COPYING.txt
 
--   **SPDX:** http://spdx.org/licenses/Glide.json
+-   **SPDX:** https://spdx.org/licenses/Glide.json
 
 ## Text
 
@@ -324,7 +324,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "3dfx Glide License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Glide.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Glide.json",
                 "_sourceURL": "https://spdx.org/licenses/Glide.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -340,7 +340,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Glide.json"
+                            "https://spdx.org/licenses/Glide.json"
                         ],
                         [
                             null,
@@ -438,7 +438,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Glide.json"
+                "https://spdx.org/licenses/Glide.json"
             ],
             [
                 null,

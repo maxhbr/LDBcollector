@@ -40,7 +40,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-4-Clause-UC.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-4-Clause-UC.json
+-   **SPDX:** https://spdx.org/licenses/BSD-4-Clause-UC.json
 
 -   http://www.freebsd.org/copyright/license.html
 
@@ -216,7 +216,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD-4-Clause (University of California-Specific)",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-4-Clause-UC.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-4-Clause-UC.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-4-Clause-UC.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -232,7 +232,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-4-Clause-UC.json"
+                            "https://spdx.org/licenses/BSD-4-Clause-UC.json"
                         ],
                         [
                             null,
@@ -534,7 +534,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-4-Clause-UC.json"
+                "https://spdx.org/licenses/BSD-4-Clause-UC.json"
             ],
             [
                 null,

@@ -20,7 +20,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Japan Network Information Center License",
-            "spdxDetailsURL": "http://spdx.org/licenses/JPNIC.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/JPNIC.json",
             "_sourceURL": "https://spdx.org/licenses/JPNIC.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -36,7 +36,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/JPNIC.json"
+                        "https://spdx.org/licenses/JPNIC.json"
                     ],
                     [
                         null,
@@ -107,7 +107,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/JPNIC.json"
+            "https://spdx.org/licenses/JPNIC.json"
         ],
         [
             null,

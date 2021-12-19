@@ -19,7 +19,7 @@
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NIST Public Domain Notice",
-            "spdxDetailsURL": "http://spdx.org/licenses/NIST-PD.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/NIST-PD.json",
             "_sourceURL": "https://spdx.org/licenses/NIST-PD.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -36,7 +36,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/NIST-PD.json"
+                        "https://spdx.org/licenses/NIST-PD.json"
                     ],
                     [
                         null,
@@ -111,7 +111,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/NIST-PD.json"
+            "https://spdx.org/licenses/NIST-PD.json"
         ],
         [
             null,

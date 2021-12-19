@@ -16,7 +16,7 @@
 
 -   **Homepage:** https://firstdonoharm.dev/
 
--   **SPDX:** http://spdx.org/licenses/Hippocratic-2.1.json
+-   **SPDX:** https://spdx.org/licenses/Hippocratic-2.1.json
 
 -   https://firstdonoharm.dev/version/2/1/license.html
 
@@ -94,7 +94,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Hippocratic License 2.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/Hippocratic-2.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Hippocratic-2.1.json",
                 "_sourceURL": "https://spdx.org/licenses/Hippocratic-2.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -111,7 +111,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Hippocratic-2.1.json"
+                            "https://spdx.org/licenses/Hippocratic-2.1.json"
                         ],
                         [
                             null,
@@ -167,7 +167,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Hippocratic-2.1.json"
+                "https://spdx.org/licenses/Hippocratic-2.1.json"
             ],
             [
                 null,

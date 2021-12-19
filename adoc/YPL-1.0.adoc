@@ -22,7 +22,7 @@
 
 * *Homepage:*
 http://www.zimbra.com/license/yahoo_public_license_1.0.html
-* *SPDX:* http://spdx.org/licenses/YPL-1.0.json
+* *SPDX:* https://spdx.org/licenses/YPL-1.0.json
 
 === Text
 
@@ -237,7 +237,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Yahoo! Public License v1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/YPL-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/YPL-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/YPL-1.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -253,7 +253,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/YPL-1.0.json"
+                        "https://spdx.org/licenses/YPL-1.0.json"
                     ],
                     [
                         null,
@@ -333,7 +333,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/YPL-1.0.json"
+            "https://spdx.org/licenses/YPL-1.0.json"
         ],
         [
             null,

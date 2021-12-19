@@ -16,7 +16,7 @@
 
 -   **Homepage:** https://www.nic.ad.jp/ja/idn/idnkit/download/
 
--   **SPDX:** http://spdx.org/licenses/JPNIC.json
+-   **SPDX:** https://spdx.org/licenses/JPNIC.json
 
 -   https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366
 
@@ -101,7 +101,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Japan Network Information Center License",
-                "spdxDetailsURL": "http://spdx.org/licenses/JPNIC.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/JPNIC.json",
                 "_sourceURL": "https://spdx.org/licenses/JPNIC.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -117,7 +117,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/JPNIC.json"
+                            "https://spdx.org/licenses/JPNIC.json"
                         ],
                         [
                             null,
@@ -188,7 +188,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/JPNIC.json"
+                "https://spdx.org/licenses/JPNIC.json"
             ],
             [
                 null,

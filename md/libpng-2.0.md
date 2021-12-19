@@ -10,13 +10,19 @@
 
 ## Comments on (easy) usability
 
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
 ## General Comments
 
 ## URLs
 
 -   **Homepage:** http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 
--   **SPDX:** http://spdx.org/licenses/libpng-2.0.json
+-   **SPDX:** https://spdx.org/licenses/libpng-2.0.html
+
+-   **SPDX:** https://spdx.org/licenses/libpng-2.0.json
 
 ## Text
 
@@ -65,6 +71,10 @@
 
 -   LicenseName
 
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
 -   [SPDX](https://spdx.org/licenses/libpng-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -95,7 +105,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "PNG Reference Library version 2",
-                "spdxDetailsURL": "http://spdx.org/licenses/libpng-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/libpng-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/libpng-2.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -111,7 +121,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/libpng-2.0.json"
+                            "https://spdx.org/licenses/libpng-2.0.json"
                         ],
                         [
                             null,
@@ -157,9 +167,58 @@
                         ]
                     ]
                 }
+            },
+            "BlueOak License List": {
+                "BlueOakRating": "Bronze",
+                "url": "https://spdx.org/licenses/libpng-2.0.html",
+                "isPermissive": true,
+                "_sourceURL": "https://blueoakcouncil.org/list",
+                "name": "PNG Reference Library version 2",
+                "id": "libpng-2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "libpng-2.0",
+                        "PNG Reference Library version 2"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "BlueOak License List",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "Rating is: Bronze"
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedURLs": [
+                        [
+                            "SPDX",
+                            "https://spdx.org/licenses/libpng-2.0.html"
+                        ]
+                    ]
+                }
             }
         },
+        "__impliedJudgement": [
+            [
+                "BlueOak License List",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "Rating is: Bronze"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
+            [
+                "BlueOak License List",
+                "NoCopyleft"
+            ],
             [
                 "Scancode",
                 "NoCopyleft"
@@ -171,7 +230,11 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/libpng-2.0.json"
+                "https://spdx.org/licenses/libpng-2.0.html"
+            ],
+            [
+                "SPDX",
+                "https://spdx.org/licenses/libpng-2.0.json"
             ],
             [
                 null,

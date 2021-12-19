@@ -35,7 +35,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:*
 http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html
 * *SPDX:* https://spdx.org/licenses/CECILL-B.html
-* *SPDX:* http://spdx.org/licenses/CECILL-B.json
+* *SPDX:* https://spdx.org/licenses/CECILL-B.json
 * http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html
 * http://www.cecill.info/licences.en.html
 
@@ -346,7 +346,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CeCILL-B Free Software License Agreement",
-            "spdxDetailsURL": "http://spdx.org/licenses/CECILL-B.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/CECILL-B.json",
             "_sourceURL": "https://spdx.org/licenses/CECILL-B.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -362,7 +362,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/CECILL-B.json"
+                        "https://spdx.org/licenses/CECILL-B.json"
                     ],
                     [
                         null,
@@ -550,7 +550,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/CECILL-B.json"
+            "https://spdx.org/licenses/CECILL-B.json"
         ],
         [
             null,

@@ -48,7 +48,7 @@
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/SNIA\_Public\_License
 
--   **SPDX:** http://spdx.org/licenses/SNIA.json
+-   **SPDX:** https://spdx.org/licenses/SNIA.json
 
 ## Text
 
@@ -228,7 +228,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SNIA Public License 1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/SNIA.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/SNIA.json",
                 "_sourceURL": "https://spdx.org/licenses/SNIA.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -244,7 +244,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/SNIA.json"
+                            "https://spdx.org/licenses/SNIA.json"
                         ],
                         [
                             null,
@@ -350,7 +350,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/SNIA.json"
+                "https://spdx.org/licenses/SNIA.json"
             ],
             [
                 null,

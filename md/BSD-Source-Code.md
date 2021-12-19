@@ -21,7 +21,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/BSD-Source-Code.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-Source-Code.json
+-   **SPDX:** https://spdx.org/licenses/BSD-Source-Code.json
 
 -   https://github.com/robbiehanson/CocoaHTTPServer/blob/master/LICENSE.txt
 
@@ -92,7 +92,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD Source Code Attribution",
-                "spdxDetailsURL": "http://spdx.org/licenses/BSD-Source-Code.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/BSD-Source-Code.json",
                 "_sourceURL": "https://spdx.org/licenses/BSD-Source-Code.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -108,7 +108,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/BSD-Source-Code.json"
+                            "https://spdx.org/licenses/BSD-Source-Code.json"
                         ],
                         [
                             null,
@@ -221,7 +221,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-Source-Code.json"
+                "https://spdx.org/licenses/BSD-Source-Code.json"
             ],
             [
                 null,

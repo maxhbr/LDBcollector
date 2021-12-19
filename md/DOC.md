@@ -27,7 +27,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/DOC.html
 
--   **SPDX:** http://spdx.org/licenses/DOC.json
+-   **SPDX:** https://spdx.org/licenses/DOC.json
 
 -   http://www.cs.wustl.edu/~schmidt/ACE-copying.html
 
@@ -101,7 +101,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "DOC License",
-                "spdxDetailsURL": "http://spdx.org/licenses/DOC.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/DOC.json",
                 "_sourceURL": "https://spdx.org/licenses/DOC.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -118,7 +118,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/DOC.json"
+                            "https://spdx.org/licenses/DOC.json"
                         ],
                         [
                             null,
@@ -162,7 +162,9 @@
                 }
             },
             "Scancode": {
-                "otherUrls": null,
+                "otherUrls": [
+                    "https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html"
+                ],
                 "homepageUrl": "http://www.cs.wustl.edu/~schmidt/",
                 "shortName": "ACE TAO License",
                 "textUrls": null,
@@ -194,6 +196,10 @@
                         [
                             "Homepage",
                             "http://www.cs.wustl.edu/~schmidt/"
+                        ],
+                        [
+                            null,
+                            "https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html"
                         ]
                     ]
                 }
@@ -271,7 +277,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/DOC.json"
+                "https://spdx.org/licenses/DOC.json"
             ],
             [
                 null,

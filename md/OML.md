@@ -35,7 +35,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/OML.html
 
--   **SPDX:** http://spdx.org/licenses/OML.json
+-   **SPDX:** https://spdx.org/licenses/OML.json
 
 -   https://fedoraproject.org/wiki/Licensing/Open\_Market\_License
 
@@ -128,7 +128,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Market License",
-                "spdxDetailsURL": "http://spdx.org/licenses/OML.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/OML.json",
                 "_sourceURL": "https://spdx.org/licenses/OML.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -144,7 +144,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/OML.json"
+                            "https://spdx.org/licenses/OML.json"
                         ],
                         [
                             null,
@@ -301,7 +301,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/OML.json"
+                "https://spdx.org/licenses/OML.json"
             ],
             [
                 null,

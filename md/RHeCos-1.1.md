@@ -16,7 +16,7 @@
 
 -   **Homepage:** http://ecos.sourceware.org/old-license.html
 
--   **SPDX:** http://spdx.org/licenses/RHeCos-1.1.json
+-   **SPDX:** https://spdx.org/licenses/RHeCos-1.1.json
 
 ## Text
 
@@ -502,7 +502,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Red Hat eCos Public License v1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/RHeCos-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/RHeCos-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/RHeCos-1.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -518,7 +518,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/RHeCos-1.1.json"
+                            "https://spdx.org/licenses/RHeCos-1.1.json"
                         ],
                         [
                             null,
@@ -598,7 +598,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/RHeCos-1.1.json"
+                "https://spdx.org/licenses/RHeCos-1.1.json"
             ],
             [
                 null,

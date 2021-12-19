@@ -8,6 +8,16 @@
 
 -   `MIT-0-Clause`
 
+## Description
+
+> A short and simple permissive license with no conditions, not even
+> requiring preservation of copyright and license notices. Licensed
+> works, modifications, and larger works may be distributed under
+> different terms and without source code.
+
+(source: choosealicense.com
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
+
 ## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
@@ -20,6 +30,21 @@
 
 ## General Comments
 
+-   “The former ekioh license has been deprecated in favor of this
+    license. Except for the dangling ", subject to the following
+    conditions:" text, the ekioh license is essentially identical to the
+    mit-0. ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-0.yml "Scancode")
+    (CC0-1.0))
+
+## Obligations
+
+[TABLE]
+
+(source:
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit-0.txt "choosealicense.com")
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
+
 ## URLs
 
 -   **Homepage:**
@@ -27,11 +52,13 @@
 
 -   **SPDX:** https://spdx.org/licenses/MIT-0.html
 
--   **SPDX:** http://spdx.org/licenses/MIT-0.json
+-   **SPDX:** https://spdx.org/licenses/MIT-0.json
 
 -   https://github.com/aws/mit-0
 
 -   https://romanrm.net/mit-zero
+
+-   https://kryogenix.org/code/browser/licence.html
 
 ## Text
 
@@ -60,6 +87,9 @@
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit-0.txt "choosealicense.com")
+    ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+
 -   [SPDX](https://spdx.org/licenses/MIT-0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -72,10 +102,19 @@
         "__impliedNames": [
             "MIT-0",
             "MIT No Attribution",
+            "mit-0",
             "scancode://mit-0",
             "MIT-0-Clause"
         ],
         "__impliedId": "MIT-0",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "The former ekioh license has been deprecated in favor of this license. Except\nfor the dangling \", subject to the following conditions:\" text, the ekioh\nlicense is essentially identical to the mit-0.\n"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -90,7 +129,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "MIT No Attribution",
-                "spdxDetailsURL": "http://spdx.org/licenses/MIT-0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MIT-0.json",
                 "_sourceURL": "https://spdx.org/licenses/MIT-0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -117,7 +156,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MIT-0.json"
+                            "https://spdx.org/licenses/MIT-0.json"
                         ],
                         [
                             null,
@@ -138,7 +177,8 @@
             "Scancode": {
                 "otherUrls": [
                     "https://github.com/aws/mit-0",
-                    "https://romanrm.net/mit-zero"
+                    "https://romanrm.net/mit-zero",
+                    "https://kryogenix.org/code/browser/licence.html"
                 ],
                 "homepageUrl": "https://github.com/awsdocs/aws-cloud9-user-guide/blob/master/LICENSE-SAMPLECODE",
                 "shortName": "MIT-0-Clause",
@@ -151,7 +191,7 @@
                 "key": "mit-0",
                 "name": "MIT No Attribution",
                 "spdxId": "MIT-0",
-                "notes": null,
+                "notes": "The former ekioh license has been deprecated in favor of this license. Except\nfor the dangling \", subject to the following conditions:\" text, the ekioh\nlicense is essentially identical to the mit-0.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://mit-0",
@@ -159,6 +199,14 @@
                         "MIT-0"
                     ],
                     "__impliedId": "MIT-0",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "The former ekioh license has been deprecated in favor of this license. Except\nfor the dangling \", subject to the following conditions:\" text, the ekioh\nlicense is essentially identical to the mit-0.\n"
+                            ]
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -179,6 +227,10 @@
                         [
                             null,
                             "https://romanrm.net/mit-zero"
+                        ],
+                        [
+                            null,
+                            "https://kryogenix.org/code/browser/licence.html"
                         ]
                     ]
                 }
@@ -218,6 +270,66 @@
                         ]
                     ]
                 }
+            },
+            "choosealicense.com": {
+                "limitations": [
+                    "liability",
+                    "warranty"
+                ],
+                "_sourceURL": "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit-0.txt",
+                "content": "---\ntitle: MIT No Attribution\nspdx-id: MIT-0\n\ndescription: A short and simple permissive license with no conditions, not even requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  rssfs: https://github.com/dertuxmalwieder/rssfs/blob/master/LICENSE\n  SOIL2: https://github.com/SpartanJ/SOIL2/blob/master/LICENSE\n  Units.NET: https://github.com/angularsen/UnitsNet/blob/master/LICENSE\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions: []\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nMIT No Attribution\n\nCopyright [year] [fullname]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "name": "mit-0",
+                "hidden": null,
+                "spdxId": "MIT-0",
+                "conditions": [],
+                "permissions": [
+                    "commercial-use",
+                    "modifications",
+                    "distribution",
+                    "private-use"
+                ],
+                "featured": null,
+                "nickname": null,
+                "how": "Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.",
+                "title": "MIT No Attribution",
+                "_implications": {
+                    "__impliedNames": [
+                        "mit-0",
+                        "MIT-0"
+                    ],
+                    "__obligations": {
+                        "limitations": [
+                            {
+                                "tag": "ImpliedLimitation",
+                                "contents": "liability"
+                            },
+                            {
+                                "tag": "ImpliedLimitation",
+                                "contents": "warranty"
+                            }
+                        ],
+                        "rights": [
+                            {
+                                "tag": "ImpliedRight",
+                                "contents": "commercial-use"
+                            },
+                            {
+                                "tag": "ImpliedRight",
+                                "contents": "modifications"
+                            },
+                            {
+                                "tag": "ImpliedRight",
+                                "contents": "distribution"
+                            },
+                            {
+                                "tag": "ImpliedRight",
+                                "contents": "private-use"
+                            }
+                        ],
+                        "conditions": []
+                    }
+                },
+                "description": "A short and simple permissive license with no conditions, not even requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
             }
         },
         "__impliedJudgement": [
@@ -247,6 +359,37 @@
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__obligations": {
+            "limitations": [
+                {
+                    "tag": "ImpliedLimitation",
+                    "contents": "liability"
+                },
+                {
+                    "tag": "ImpliedLimitation",
+                    "contents": "warranty"
+                }
+            ],
+            "rights": [
+                {
+                    "tag": "ImpliedRight",
+                    "contents": "commercial-use"
+                },
+                {
+                    "tag": "ImpliedRight",
+                    "contents": "modifications"
+                },
+                {
+                    "tag": "ImpliedRight",
+                    "contents": "distribution"
+                },
+                {
+                    "tag": "ImpliedRight",
+                    "contents": "private-use"
+                }
+            ],
+            "conditions": []
+        },
         "__isOsiApproved": true,
         "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of this\nsoftware and associated documentation files (the \"Software\"), to deal in the Software\nwithout restriction, including without limitation the rights to use, copy, modify,\nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "__impliedURLs": [
@@ -256,7 +399,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MIT-0.json"
+                "https://spdx.org/licenses/MIT-0.json"
             ],
             [
                 null,
@@ -273,6 +416,10 @@
             [
                 "Homepage",
                 "https://github.com/awsdocs/aws-cloud9-user-guide/blob/master/LICENSE-SAMPLECODE"
+            ],
+            [
+                null,
+                "https://kryogenix.org/code/browser/licence.html"
             ]
         ]
     }

@@ -27,7 +27,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Barr.html
 
--   **SPDX:** http://spdx.org/licenses/Barr.json
+-   **SPDX:** https://spdx.org/licenses/Barr.json
 
 ## Text
 
@@ -90,7 +90,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Barr License",
-                "spdxDetailsURL": "http://spdx.org/licenses/Barr.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Barr.json",
                 "_sourceURL": "https://spdx.org/licenses/Barr.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -106,7 +106,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Barr.json"
+                            "https://spdx.org/licenses/Barr.json"
                         ],
                         [
                             null,
@@ -255,7 +255,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Barr.json"
+                "https://spdx.org/licenses/Barr.json"
             ],
             [
                 null,

@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |Python Software Foundation License 2.0
 |Shortname |PSF-2.0
-|Rating |Unknown, probably Attention or Stop or No-Go
+|Rating |Go
 |Classification |NoCopyleft
 |===
 
@@ -15,12 +15,17 @@
 
 === Comments on (easy) usability
 
+* **↑**``Rating is: Bronze'' (source:
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
+
 === General Comments
 
 === URLs
 
 * *Homepage:* https://opensource.org/licenses/Python-2.0
-* *SPDX:* http://spdx.org/licenses/PSF-2.0.json
+* *SPDX:* https://spdx.org/licenses/PSF-2.0.html
+* *SPDX:* https://spdx.org/licenses/PSF-2.0.json
 
 === Text
 
@@ -44,6 +49,8 @@ PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
 ==== Facts
 
 * LicenseName
+* https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://spdx.org/licenses/PSF-2.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psf-2.0.yml[Scancode]
@@ -73,7 +80,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Python Software Foundation License 2.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/PSF-2.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/PSF-2.0.json",
             "_sourceURL": "https://spdx.org/licenses/PSF-2.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -89,7 +96,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/PSF-2.0.json"
+                        "https://spdx.org/licenses/PSF-2.0.json"
                     ],
                     [
                         null,
@@ -135,9 +142,58 @@ repository] is generated)
                     ]
                 ]
             }
+        },
+        "BlueOak License List": {
+            "BlueOakRating": "Bronze",
+            "url": "https://spdx.org/licenses/PSF-2.0.html",
+            "isPermissive": true,
+            "_sourceURL": "https://blueoakcouncil.org/list",
+            "name": "Python Software Foundation License 2.0",
+            "id": "PSF-2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "PSF-2.0",
+                    "Python Software Foundation License 2.0"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "BlueOak License List",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "Rating is: Bronze"
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedURLs": [
+                    [
+                        "SPDX",
+                        "https://spdx.org/licenses/PSF-2.0.html"
+                    ]
+                ]
+            }
         }
     },
+    "__impliedJudgement": [
+        [
+            "BlueOak License List",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "Rating is: Bronze"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
+        [
+            "BlueOak License List",
+            "NoCopyleft"
+        ],
         [
             "Scancode",
             "NoCopyleft"
@@ -149,7 +205,11 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/PSF-2.0.json"
+            "https://spdx.org/licenses/PSF-2.0.html"
+        ],
+        [
+            "SPDX",
+            "https://spdx.org/licenses/PSF-2.0.json"
         ],
         [
             null,

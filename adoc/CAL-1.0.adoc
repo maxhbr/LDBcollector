@@ -31,7 +31,7 @@ https://blueoakcouncil.org/copyleft[BlueOak License List]
 === URLs
 
 * *Homepage:* https://opensource.org/licenses/CAL-1.0
-* *SPDX:* http://spdx.org/licenses/CAL-1.0.json
+* *SPDX:* https://spdx.org/licenses/CAL-1.0.json
 * https://spdx.org/licenses/CAL-1.0.html
 * http://cryptographicautonomylicense.com/license-text.html
 
@@ -214,7 +214,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Cryptographic Autonomy License 1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/CAL-1.0.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/CAL-1.0.json",
             "_sourceURL": "https://spdx.org/licenses/CAL-1.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -240,7 +240,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/CAL-1.0.json"
+                        "https://spdx.org/licenses/CAL-1.0.json"
                     ],
                     [
                         null,
@@ -365,7 +365,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/CAL-1.0.json"
+            "https://spdx.org/licenses/CAL-1.0.json"
         ],
         [
             null,

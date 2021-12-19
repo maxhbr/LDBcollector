@@ -47,7 +47,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://www.opensource.org/licenses/xnet.php
 * *OSI Page:* https://opensource.org/licenses/Xnet
 * *SPDX:* https://spdx.org/licenses/Xnet.html
-* *SPDX:* http://spdx.org/licenses/Xnet.json
+* *SPDX:* https://spdx.org/licenses/Xnet.json
 
 === Text
 
@@ -164,7 +164,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "X.Net License",
-            "spdxDetailsURL": "http://spdx.org/licenses/Xnet.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/Xnet.json",
             "_sourceURL": "https://spdx.org/licenses/Xnet.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -189,7 +189,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/Xnet.json"
+                        "https://spdx.org/licenses/Xnet.json"
                     ],
                     [
                         null,
@@ -471,7 +471,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/Xnet.json"
+            "https://spdx.org/licenses/Xnet.json"
         ],
         [
             "Homepage",

@@ -28,7 +28,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/CrystalStacker.html
 
--   **SPDX:** http://spdx.org/licenses/CrystalStacker.json
+-   **SPDX:** https://spdx.org/licenses/CrystalStacker.json
 
 ## Text
 
@@ -90,7 +90,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CrystalStacker License",
-                "spdxDetailsURL": "http://spdx.org/licenses/CrystalStacker.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CrystalStacker.json",
                 "_sourceURL": "https://spdx.org/licenses/CrystalStacker.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -106,7 +106,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CrystalStacker.json"
+                            "https://spdx.org/licenses/CrystalStacker.json"
                         ],
                         [
                             null,
@@ -255,7 +255,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/CrystalStacker.json"
+                "https://spdx.org/licenses/CrystalStacker.json"
             ],
             [
                 null,

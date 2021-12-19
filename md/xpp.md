@@ -27,7 +27,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/xpp.html
 
--   **SPDX:** http://spdx.org/licenses/xpp.json
+-   **SPDX:** https://spdx.org/licenses/xpp.json
 
 -   https://fedoraproject.org/wiki/Licensing/xpp
 
@@ -140,7 +140,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "XPP License",
-                "spdxDetailsURL": "http://spdx.org/licenses/xpp.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/xpp.json",
                 "_sourceURL": "https://spdx.org/licenses/xpp.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -156,7 +156,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/xpp.json"
+                            "https://spdx.org/licenses/xpp.json"
                         ],
                         [
                             null,
@@ -305,7 +305,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/xpp.json"
+                "https://spdx.org/licenses/xpp.json"
             ],
             [
                 null,

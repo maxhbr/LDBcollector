@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/Linux-OpenIB.html
 
--   **SPDX:** http://spdx.org/licenses/Linux-OpenIB.json
+-   **SPDX:** https://spdx.org/licenses/Linux-OpenIB.json
 
 -   https://github.com/spdx/license-list-XML/issues/620
 
@@ -100,7 +100,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Linux Kernel Variant of OpenIB.org license",
-                "spdxDetailsURL": "http://spdx.org/licenses/Linux-OpenIB.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/Linux-OpenIB.json",
                 "_sourceURL": "https://spdx.org/licenses/Linux-OpenIB.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -116,7 +116,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/Linux-OpenIB.json"
+                            "https://spdx.org/licenses/Linux-OpenIB.json"
                         ],
                         [
                             null,
@@ -248,7 +248,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/Linux-OpenIB.json"
+                "https://spdx.org/licenses/Linux-OpenIB.json"
             ],
             [
                 null,

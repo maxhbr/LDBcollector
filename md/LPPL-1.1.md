@@ -20,7 +20,7 @@
 
 -   **Homepage:** http://www.latex-project.org/lppl/lppl-1-1.txt
 
--   **SPDX:** http://spdx.org/licenses/LPPL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/LPPL-1.1.json
 
 ## Text
 
@@ -376,7 +376,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "LaTeX Project Public License v1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/LPPL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/LPPL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/LPPL-1.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -392,7 +392,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/LPPL-1.1.json"
+                            "https://spdx.org/licenses/LPPL-1.1.json"
                         ],
                         [
                             null,
@@ -480,7 +480,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/LPPL-1.1.json"
+                "https://spdx.org/licenses/LPPL-1.1.json"
             ],
             [
                 null,

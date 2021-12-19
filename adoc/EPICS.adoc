@@ -25,7 +25,7 @@ Project Wiki]
 === URLs
 
 * *Homepage:* http://www.aps.anl.gov/epics/license/open.php
-* *SPDX:* http://spdx.org/licenses/EPICS.json
+* *SPDX:* https://spdx.org/licenses/EPICS.json
 * https://epics.anl.gov/license/open.php
 
 === Text
@@ -107,7 +107,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "EPICS Open License",
-            "spdxDetailsURL": "http://spdx.org/licenses/EPICS.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/EPICS.json",
             "_sourceURL": "https://spdx.org/licenses/EPICS.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -123,7 +123,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/EPICS.json"
+                        "https://spdx.org/licenses/EPICS.json"
                     ],
                     [
                         null,
@@ -227,7 +227,7 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/EPICS.json"
+            "https://spdx.org/licenses/EPICS.json"
         ],
         [
             null,

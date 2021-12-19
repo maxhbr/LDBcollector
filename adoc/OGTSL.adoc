@@ -41,7 +41,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://opensource.org/licenses/opengroup.php
 * *OSI Page:* https://opensource.org/licenses/OGTSL
 * *SPDX:* https://spdx.org/licenses/OGTSL.html
-* *SPDX:* http://spdx.org/licenses/OGTSL.json
+* *SPDX:* https://spdx.org/licenses/OGTSL.json
 * http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
 * http://www.opensource.org/licenses/OGTSL
 
@@ -188,7 +188,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Group Test Suite License",
-            "spdxDetailsURL": "http://spdx.org/licenses/OGTSL.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/OGTSL.json",
             "_sourceURL": "https://spdx.org/licenses/OGTSL.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
@@ -214,7 +214,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/OGTSL.json"
+                        "https://spdx.org/licenses/OGTSL.json"
                     ],
                     [
                         null,
@@ -466,7 +466,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/OGTSL.json"
+            "https://spdx.org/licenses/OGTSL.json"
         ],
         [
             null,

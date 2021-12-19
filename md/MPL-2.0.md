@@ -95,7 +95,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/MPL-2.0
 
--   **SPDX:** http://spdx.org/licenses/MPL-2.0.json
+-   **SPDX:** https://spdx.org/licenses/MPL-2.0.json
 
 -   **Wikipedia page:** https://en.wikipedia.org/wiki/MPL\_License
 
@@ -103,7 +103,7 @@
 
 -   https://spdx.org/licenses/MPL-2.0.html
 
--   http://www.mozilla.org/MPL/2.0/
+-   https://www.mozilla.org/MPL/2.0/
 
 ## Description from open-license
 
@@ -192,13 +192,14 @@
     			ATTRIBUTE Timely
     			ATTRIBUTE No profit
     	USE CASE License change
-    		YOU MUST NOT Restrict Granted rights
+    		YOU MUST NOT Restrict Granted rights For Source code
     	IF Service offerings
     		ATTRIBUTE NOT Transferable
     		YOU MUST Indemnify Other contributors
     COMPATIBILITY BSD-2-Clause
     COMPATIBILITY BSD-2-Clause-Patent
     COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSL-1.0
     COMPATIBILITY bzip2-1.0.5
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
@@ -214,6 +215,7 @@
     COMPATIBILITY WTFPL
     COMPATIBILITY X11
     COMPATIBILITY Zlib
+    COMPATIBILITY ZPL-2.0
     COPYLEFT CLAUSE Yes
     PATENT HINTS Yes
 
@@ -741,11 +743,11 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Mozilla Public License 2.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/MPL-2.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/MPL-2.0.json",
                 "_sourceURL": "https://spdx.org/licenses/MPL-2.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
-                    "http://www.mozilla.org/MPL/2.0/",
+                    "https://www.mozilla.org/MPL/2.0/",
                     "https://opensource.org/licenses/MPL-2.0"
                 ],
                 "_implications": {
@@ -767,11 +769,11 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/MPL-2.0.json"
+                            "https://spdx.org/licenses/MPL-2.0.json"
                         ],
                         [
                             null,
-                            "http://www.mozilla.org/MPL/2.0/"
+                            "https://www.mozilla.org/MPL/2.0/"
                         ],
                         [
                             null,
@@ -800,7 +802,7 @@
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0.txt",
                 "spdxId": "MPL-2.0",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY EFL-2.0\r\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nCOPYLEFT CLAUSE Yes\nPATENT HINTS Yes\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights For Source code\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nCOPYLEFT CLAUSE Yes\nPATENT HINTS Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "MPL-2.0"
@@ -817,7 +819,8 @@
             },
             "Scancode": {
                 "otherUrls": [
-                    "https://opensource.org/licenses/MPL-2.0"
+                    "https://opensource.org/licenses/MPL-2.0",
+                    "https://www.mozilla.org/MPL/2.0/"
                 ],
                 "homepageUrl": "http://mpl.mozilla.org/2012/01/03/announcing-mpl-2-0/",
                 "shortName": "MPL 2.0",
@@ -866,6 +869,10 @@
                         [
                             null,
                             "https://opensource.org/licenses/MPL-2.0"
+                        ],
+                        [
+                            null,
+                            "https://www.mozilla.org/MPL/2.0/"
                         ]
                     ]
                 }
@@ -1651,11 +1658,11 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/MPL-2.0.json"
+                "https://spdx.org/licenses/MPL-2.0.json"
             ],
             [
                 null,
-                "http://www.mozilla.org/MPL/2.0/"
+                "https://www.mozilla.org/MPL/2.0/"
             ],
             [
                 "Homepage",

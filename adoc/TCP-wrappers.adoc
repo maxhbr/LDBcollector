@@ -29,7 +29,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:* ftp://ftp.porcupine.org/pub/security/tcp_wrappers_license
 * *SPDX:* https://spdx.org/licenses/TCP-wrappers.html
-* *SPDX:* http://spdx.org/licenses/TCP-wrappers.json
+* *SPDX:* https://spdx.org/licenses/TCP-wrappers.json
 * http://rc.quest.com/topics/openssh/license.php#tcpwrappers
 
 === Text
@@ -109,7 +109,7 @@ repository] is generated)
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "TCP Wrappers License",
-            "spdxDetailsURL": "http://spdx.org/licenses/TCP-wrappers.json",
+            "spdxDetailsURL": "https://spdx.org/licenses/TCP-wrappers.json",
             "_sourceURL": "https://spdx.org/licenses/TCP-wrappers.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
@@ -125,7 +125,7 @@ repository] is generated)
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/TCP-wrappers.json"
+                        "https://spdx.org/licenses/TCP-wrappers.json"
                     ],
                     [
                         null,
@@ -281,7 +281,7 @@ repository] is generated)
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/TCP-wrappers.json"
+            "https://spdx.org/licenses/TCP-wrappers.json"
         ],
         [
             null,

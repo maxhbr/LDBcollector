@@ -45,7 +45,7 @@
 
 -   **OSI Page:** https://opensource.org/licenses/NPOSL-3.0
 
--   **SPDX:** http://spdx.org/licenses/NPOSL-3.0.json
+-   **SPDX:** https://spdx.org/licenses/NPOSL-3.0.json
 
 -   https://spdx.org/licenses/NPOSL-3.0.html
 
@@ -218,7 +218,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Non-Profit Open Software License 3.0",
-                "spdxDetailsURL": "http://spdx.org/licenses/NPOSL-3.0.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NPOSL-3.0.json",
                 "_sourceURL": "https://spdx.org/licenses/NPOSL-3.0.html",
                 "spdxLicIsOSIApproved": true,
                 "spdxSeeAlso": [
@@ -243,7 +243,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NPOSL-3.0.json"
+                            "https://spdx.org/licenses/NPOSL-3.0.json"
                         ],
                         [
                             null,
@@ -447,7 +447,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NPOSL-3.0.json"
+                "https://spdx.org/licenses/NPOSL-3.0.json"
             ],
             [
                 null,

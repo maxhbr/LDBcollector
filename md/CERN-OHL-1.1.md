@@ -17,7 +17,7 @@
 -   **Homepage:**
     https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1
 
--   **SPDX:** http://spdx.org/licenses/CERN-OHL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/CERN-OHL-1.1.json
 
 ## Text
 
@@ -137,7 +137,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CERN Open Hardware Licence v1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/CERN-OHL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CERN-OHL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/CERN-OHL-1.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -153,7 +153,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CERN-OHL-1.1.json"
+                            "https://spdx.org/licenses/CERN-OHL-1.1.json"
                         ],
                         [
                             null,
@@ -219,7 +219,7 @@
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/CERN-OHL-1.1.json"
+                "https://spdx.org/licenses/CERN-OHL-1.1.json"
             ],
             [
                 null,

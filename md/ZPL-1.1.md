@@ -26,7 +26,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/ZPL-1.1.html
 
--   **SPDX:** http://spdx.org/licenses/ZPL-1.1.json
+-   **SPDX:** https://spdx.org/licenses/ZPL-1.1.json
 
 -   http://old.zope.org/Resources/License/ZPL-1.1
 
@@ -146,7 +146,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zope Public License 1.1",
-                "spdxDetailsURL": "http://spdx.org/licenses/ZPL-1.1.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/ZPL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/ZPL-1.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -162,7 +162,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/ZPL-1.1.json"
+                            "https://spdx.org/licenses/ZPL-1.1.json"
                         ],
                         [
                             null,
@@ -343,7 +343,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/ZPL-1.1.json"
+                "https://spdx.org/licenses/ZPL-1.1.json"
             ],
             [
                 null,

@@ -20,7 +20,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/CNRI-Jython.html
 
--   **SPDX:** http://spdx.org/licenses/CNRI-Jython.json
+-   **SPDX:** https://spdx.org/licenses/CNRI-Jython.json
 
 ## Text
 
@@ -88,7 +88,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CNRI Jython License",
-                "spdxDetailsURL": "http://spdx.org/licenses/CNRI-Jython.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/CNRI-Jython.json",
                 "_sourceURL": "https://spdx.org/licenses/CNRI-Jython.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -104,7 +104,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/CNRI-Jython.json"
+                            "https://spdx.org/licenses/CNRI-Jython.json"
                         ],
                         [
                             null,
@@ -237,7 +237,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/CNRI-Jython.json"
+                "https://spdx.org/licenses/CNRI-Jython.json"
             ],
             [
                 null,

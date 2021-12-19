@@ -34,7 +34,7 @@
 
 -   **SPDX:** https://spdx.org/licenses/NLPL.html
 
--   **SPDX:** http://spdx.org/licenses/NLPL.json
+-   **SPDX:** https://spdx.org/licenses/NLPL.json
 
 ## Text
 
@@ -109,7 +109,7 @@
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "No Limit Public License",
-                "spdxDetailsURL": "http://spdx.org/licenses/NLPL.json",
+                "spdxDetailsURL": "https://spdx.org/licenses/NLPL.json",
                 "_sourceURL": "https://spdx.org/licenses/NLPL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
@@ -125,7 +125,7 @@
                     "__impliedURLs": [
                         [
                             "SPDX",
-                            "http://spdx.org/licenses/NLPL.json"
+                            "https://spdx.org/licenses/NLPL.json"
                         ],
                         [
                             null,
@@ -282,7 +282,7 @@
             ],
             [
                 "SPDX",
-                "http://spdx.org/licenses/NLPL.json"
+                "https://spdx.org/licenses/NLPL.json"
             ],
             [
                 null,
