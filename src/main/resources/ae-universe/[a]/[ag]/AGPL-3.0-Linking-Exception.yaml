@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "AGPL 3.0 Linking Exception"
+category: "AGPL Linking Exception"
+shortName: "AGPL-3.0-Linking-Exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:agpl-3.0-linking-exception"
+  - "scancode:linking-exception-agpl-3.0"

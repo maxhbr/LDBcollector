@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "FreeBSD Boot"
+category: "FreeBSD Boot"
+shortName: "FreeBSD-Boot"
+
+alternativeNames:
+  - "https://casper.berkeley.edu/svn/trunk/roach/sw/uboot/common/cmd_elf.c"
+  - "http://freebsd.active-venture.com/FreeBSD-srctree/newsrc/boot/i386/boot2/boot2.c.html"
+
+otherIds: 
+  - "scancode:freebsd-boot"

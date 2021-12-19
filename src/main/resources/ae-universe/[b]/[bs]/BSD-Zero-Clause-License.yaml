@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "BSD Zero Clause License"
+category: "BSD"
+spdxIdentifier: "0BSD"
+
+alternativeNames:
+  - "BSD Zero Clause License"
+  - "0BSD"
+
+otherIds: 
+  - "scancode:bsd-zero"
+  - "osi:0BSD"

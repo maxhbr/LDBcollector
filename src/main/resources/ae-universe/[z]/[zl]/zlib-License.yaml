@@ -1,0 +1,23 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "zlib License"
+category: "zlib"
+spdxIdentifier: "Zlib"
+
+alternativeNames:
+  - "zlib licence"
+  - "http://www.opensource.org/licenses/zlib-license.php"
+  - "zlib/libpng license"
+  - "The zlib/libpng License"
+  - "For conditions of distribution and use, see copyright notice in zlib.h"
+  - "This program is based on zlib"
+  - "http://www.gzip.org/zlib/zlib_license.html"
+  - "Aladdin MD5 License"
+
+otherIds: 
+  - "scancode:zlib"
+  - "scancode:aladdin-md5"
+  - "scancode:d-zlib"
+  - "scancode:fastbuild-2012-2020"
+  - "osi:Zlib"

@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Microsoft NuGet-Based Package Manager License"
+category: "Microsoft NuGet-Based Package Manager License"
+shortName: "MS-NuGet-Package-Manager"
+
+alternativeNames:
+  - "Microsoft NuGet-Based Package Manager License"
+
+otherIds: 
+  - "scancode:ms-nuget-package-manager"

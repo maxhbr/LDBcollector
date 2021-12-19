@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "LPL 1.0"
+category: "LPL"
+spdxIdentifier: "LPL-1.0"
+
+alternativeNames:
+  - "LPL, Version 1.0"
+  - "LPL, 1.0"
+  - "Lucent Public License Version 1.0"
+
+otherIds: 
+  - "scancode:lucent-pl-1.0"
+  - "osi:LPL-1.0"

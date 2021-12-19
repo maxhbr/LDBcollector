@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "SCEA License"
+category: "SCEA"
+spdxIdentifier: "SCEA"
+
+alternativeNames:
+  - "SCEA License"
+  - "SCEA LICENSE"
+  - "SCEA Shared Source License 1.0"
+
+otherIds: 
+  - "scancode:scea-1.0"

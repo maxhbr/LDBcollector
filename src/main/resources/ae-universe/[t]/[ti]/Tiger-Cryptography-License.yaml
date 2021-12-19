@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Tiger Cryptography License"
+category: "Tiger Cryptography License"
+shortName: "Tiger-Cryptography"
+
+alternativeNames:
+  - "http://www.cs.technion.ac.il/~biham/Reports/Tiger/"
+  - "Tiger Cryptography"
+
+otherIds: 
+  - "scancode:tiger-crypto"

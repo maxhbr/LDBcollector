@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "PCRE License"
+category: "PCRE"
+spdxIdentifier: "PCRE"
+
+alternativeNames:
+  - "PCRE License"
+  - "http://www.pcre.org/licence.txt"
+
+otherIds: 
+  - "scancode:pcre"

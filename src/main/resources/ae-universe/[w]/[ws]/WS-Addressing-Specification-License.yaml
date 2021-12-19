@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "WS-Addressing Specification License"
+category: "WS-Addressing Specification License"
+shortName: "WS-Addressing-Specification"
+
+alternativeNames:
+  - "WS Addressing Specification License"
+  - "WS/WS-Addressing.xsd"
+
+otherIds: 
+  - "scancode:ws-addressing-spec"

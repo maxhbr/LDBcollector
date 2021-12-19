@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Microsoft JDBC Driver 6.0 for SQL Server"
+category: "Microsoft JDBC Driver 6.0 for SQL Server"
+shortName: "MS-JDBC-Driver-60-SQL-Server"
+
+alternativeNames:
+  - "Microsoft JDBC Driver 6.0 for SQL Server"
+  - "MICROSOFT JDBC DRIVER 6.0 FOR SQL SERVER"
+
+otherIds: 
+  - "scancode:ms-jdbc-driver-60-sql-server"

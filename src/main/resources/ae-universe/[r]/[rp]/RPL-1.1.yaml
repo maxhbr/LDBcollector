@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "RPL 1.1"
+category: "RPL"
+spdxIdentifier: "RPL-1.1"
+
+alternativeNames:
+  - "RPL, Version 1.1"
+  - "RPL 1.1"
+  - "Reciprocal Public License, version 1.1"
+
+otherIds: 
+  - "scancode:rpl-1.1"
+  - "osi:RPL-1.1"

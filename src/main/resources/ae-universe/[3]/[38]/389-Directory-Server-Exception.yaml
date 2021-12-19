@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "389 Directory Server Exception"
+category: "389-Directory-Server-Exception"
+shortName: "389-Exception"
+spdxIdentifier: "389-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "389 Directory Server Exception"
+
+otherIds: 
+  - "scancode:389-exception"

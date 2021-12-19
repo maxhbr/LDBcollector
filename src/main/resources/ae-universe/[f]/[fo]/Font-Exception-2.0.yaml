@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Font Exception 2.0"
+category: "Font Exception"
+shortName: "Font-Exception-2.0"
+spdxIdentifier: "Font-exception-2.0"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:font-exception-gpl"

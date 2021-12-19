@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "UPL-1.0"
+category: "UPL-1.0"
+spdxIdentifier: "UPL-1.0"
+
+alternativeNames:
+  - "The Universal Permissive License (UPL), Version 1.0"
+
+otherIds: 
+  - "scancode:upl-1.0"
+  - "osi:UPL"

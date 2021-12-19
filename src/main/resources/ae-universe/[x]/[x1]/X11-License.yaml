@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "X11 License"
+category: "X11"
+spdxIdentifier: "X11"
+
+alternativeNames:
+  - "X License"
+  - "MIT/X Consortium"
+  - "X/MIT License"
+  - "X11 License"
+  - "MIT/X11"
+  - "X11 LICENSE"
+  - "Expat~X with X exception"
+
+otherIds: 
+  - "scancode:x11-xconsortium"

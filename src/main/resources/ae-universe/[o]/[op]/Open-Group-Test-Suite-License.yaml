@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Open Group Test Suite License"
+category: "OGTSL"
+spdxIdentifier: "OGTSL"
+
+alternativeNames:
+  - "Open Group Test Suite License"
+  - "OGTS license"
+  - "OGTSL license"
+
+otherIds: 
+  - "scancode:opengroup"
+  - "osi:OGTSL"

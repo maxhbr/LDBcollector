@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "radvd License"
+category: "radvd License"
+shortName: "radvd"
+
+alternativeNames:
+  - "http://www.litech.org/radvd/"
+  - "https://github.com/reubenhwk/radvd/blob/master/COPYRIGHT"
+
+otherIds: 
+  - "scancode:radvd"

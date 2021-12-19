@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Linux syscall Note"
+category: "Linux syscall"
+spdxIdentifier: "Linux-syscall-note"
+
+type: "exception"
+
+alternativeNames:
+  - "Linux-syscall"
+  - "Linux-syscall-note"
+
+otherIds: 
+  - "scancode:linux-syscall-exception-gpl"

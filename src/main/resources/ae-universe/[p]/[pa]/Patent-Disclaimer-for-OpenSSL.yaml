@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Patent Disclaimer for OpenSSL"
+category: "Patent Disclaimer for OpenSSL"
+shortName: "OpenSSL-Nokia-PSK-Contribution"
+
+alternativeNames:
+  - "openssl-nokia-psk-contribution"
+
+otherIds: 
+  - "scancode:openssl-nokia-psk-contribution"

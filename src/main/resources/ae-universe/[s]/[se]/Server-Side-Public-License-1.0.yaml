@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Server Side Public License 1.0"
+category: "SSPL"
+spdxIdentifier: "SSPL-1.0"
+
+alternativeNames:
+  - "SSPL 1"
+  - "SSPL-1.0"
+  - "Server Side Public License, Version 1.0"
+  - "Server Side Public License v1.0"
+  - "Server Side Public License VERSION 1"
+
+otherIds: 
+  - "scancode:mongodb-sspl-1.0"

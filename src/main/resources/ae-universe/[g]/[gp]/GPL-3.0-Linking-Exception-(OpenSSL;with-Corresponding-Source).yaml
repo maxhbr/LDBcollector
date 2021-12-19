@@ -1,0 +1,9 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "GPL-3.0 Linking Exception (OpenSSL; with Corresponding Source)"
+category: "GPL Linking Exception"
+spdxIdentifier: "GPL-3.0-OpenSSL-linking-source-exception"
+
+type: "exception"
+

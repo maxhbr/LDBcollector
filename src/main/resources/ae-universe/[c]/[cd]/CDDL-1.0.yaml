@@ -1,0 +1,22 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "CDDL 1.0"
+category: "CDDL"
+spdxIdentifier: "CDDL-1.0"
+
+alternativeNames:
+  - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0"
+  - "Common Development and Distribution License 1.0 (\"CDDL\")"
+  - "CDDL-1.0"
+  - "CDDL, v1.0"
+  - "CDDLv1.0"
+  - "Common Development and Distribution Licence version 1.0 (CDDL)"
+  - "Common Development and Distribution License (CDDL), Version 1.0"
+  - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0"
+  - "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved"
+
+otherIds: 
+  - "scancode:cddl-1.0"
+  - "osi:CDDL-1.0"
+  - "osi:cddl1"

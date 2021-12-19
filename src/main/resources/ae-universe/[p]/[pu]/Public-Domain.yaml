@@ -1,0 +1,34 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Public Domain"
+category: "Public Domain"
+shortName: "Public-Domain"
+
+alternativeNames:
+  - "under Public Domain"
+  - "distributed into the Public Domain"
+  - "distribution into the Public Domain"
+  - "This code is released by the author with no restrictions on usage"
+  - "You may redistribute and/or modify it as you see fit, without restriction of copyright"
+  - "PUBLIC DOMAIN"
+  - "no copyright is claimed"
+  - "given to OpenSource copyright-free"
+  - "This is free software. You are welcome to use it however you want"
+  - "This is free software that you can use however you like"
+  - "This program can be used and distributed without restrictions"
+  - "This is a work of the U.S. Government and is not subject to copyright protection in the United States. Foreign rights may apply"
+  - "This code is free to use, copy, modify, and redistribute. You can use it in any code to do anything you want, but there is no warranty"
+  - "http://www.linfo.org/publicdomain.html"
+  - "License: PD"
+  - "License: public-domain"
+  - "Public domain"
+  - "public domain"
+  - "The author disclaims copyright to this source code"
+  - "This product includes images from the Tango Desktop Project (http://tango.freedesktop.org/)"
+  - "http://creativecommons.org/licenses/publicdomain"
+
+otherIds: 
+  - "scancode:public-domain"
+  - "scancode:brent-corkum"
+  - "scancode:bruno-podetti"

@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "GCC Runtime Library Exception 3.1"
+category: "GCC Runtime Library Exception"
+shortName: "GCC-Runtime-Library-Exception-3.1"
+spdxIdentifier: "GCC-exception-3.1"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:gcc-exception-3.1"

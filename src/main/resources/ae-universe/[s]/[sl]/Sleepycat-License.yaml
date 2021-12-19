@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Sleepycat License"
+category: "Sleepycat"
+spdxIdentifier: "Sleepycat"
+
+alternativeNames:
+  - "Sleepycat License"
+
+otherIds: 
+  - "scancode:sleepycat"
+  - "osi:Sleepycat"

@@ -1,0 +1,22 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "GNU General Public License 1.0 (or any later version)"
+category: "GPL"
+shortName: "GPL-1.0+"
+spdxIdentifier: "GPL-1.0-or-later"
+
+alternativeNames:
+  - "GNU General Public License, Version 1.0+"
+  - "GNU General Public License, Version 1+"
+  - "GNU General Public License, version 1+"
+  - "GPL 1.0+"
+  - "GPL-1+"
+  - "GPL-1.0+"
+  - "GPL version 1 or later"
+  - "GPL version 1.0 or later"
+  - "GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version"
+  - "GNU General Public License, version 1 or later"
+
+otherIds: 
+  - "scancode:gpl-1.0-plus"

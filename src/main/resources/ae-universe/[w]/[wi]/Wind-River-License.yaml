@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Wind River License"
+category: "Wind River License"
+shortName: "WindRiver-Commercial"
+
+alternativeNames:
+  - "http://www.windriver.com/licensing/"
+
+otherIds: 
+  - "scancode:windriver-commercial"

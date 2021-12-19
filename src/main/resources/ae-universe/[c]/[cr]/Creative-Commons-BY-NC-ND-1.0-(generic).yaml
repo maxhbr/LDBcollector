@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Creative Commons BY-NC-ND 1.0 (generic)"
+category: "CC-BY-NC-ND"
+spdxIdentifier: "CC-BY-NC-ND-1.0"
+
+alternativeNames:
+  - "Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic"
+  - "CC-BY-NC-ND-1.0"
+  - "Creative Commons Attribution-NoDerivs-NonCommercial 1.0"
+
+otherIds: 
+  - "scancode:cc-by-nc-nd-1.0"

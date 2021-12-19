@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Zend License 2.0"
+category: "Zend"
+spdxIdentifier: "Zend-2.0"
+
+alternativeNames:
+  - "Zend, Version 2.0"
+  - "Zend 2.0"
+  - "Zend License, Version 2.0"
+  - "Zend License 2.0"
+  - "The Zend Engine License, version 2.00"
+
+otherIds: 
+  - "scancode:zend-2.0"

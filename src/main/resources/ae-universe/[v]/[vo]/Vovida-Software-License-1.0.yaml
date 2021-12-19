@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Vovida Software License 1.0"
+category: "VSL"
+spdxIdentifier: "VSL-1.0"
+
+alternativeNames:
+  - "VSL, Version 1.0"
+  - "VSL, 1.0"
+  - "VSL-1.0"
+  - "Vovida Software License v. 1.0"
+  - "Vovida Software License, Version 1.0"
+
+otherIds: 
+  - "scancode:vsl-1.0"
+  - "osi:VSL-1.0"

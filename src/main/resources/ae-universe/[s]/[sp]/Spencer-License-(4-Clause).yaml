@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Spencer License (4-Clause)"
+category: "Spencer License"
+spdxIdentifier: "Spencer-94"
+
+alternativeNames:
+  - "Spencer License, 92"
+  - "Spencer License, 93"
+  - "Spencer License, 94"
+  - "Spencer License, 97"
+
+otherIds: 
+  - "scancode:hs-regexp"
