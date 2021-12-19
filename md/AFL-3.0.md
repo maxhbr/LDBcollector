@@ -6,12 +6,6 @@
 
 -   `Academic Free License 3.0`
 
--   `scancode:afl-3.0`
-
--   `osi:AFL-3.0`
-
--   `osi:afl-3.0`
-
 -   `Academic Free License, Version 3.0`
 
 -   `License :: OSI Approved :: Academic Free License (AFL)`
@@ -217,9 +211,6 @@
             "Academic Free License v3.0",
             "afl-3.0",
             "Academic Free License 3.0",
-            "scancode:afl-3.0",
-            "osi:AFL-3.0",
-            "osi:afl-3.0",
             "Academic Free License, Version 3.0",
             "License :: OSI Approved :: Academic Free License (AFL)",
             "scancode://afl-3.0",
@@ -229,7 +220,10 @@
         "__impliedAmbiguousNames": [
             "AFL, Version 3.0",
             "AFL, 3.0",
-            "AFL-3.0"
+            "AFL-3.0",
+            "scancode:afl-3.0",
+            "osi:AFL-3.0",
+            "osi:afl-3.0"
         ],
         "__impliedComments": [
             [
@@ -470,16 +464,16 @@
                 "_implications": {
                     "__impliedNames": [
                         "Academic Free License 3.0",
-                        "AFL-3.0",
-                        "scancode:afl-3.0",
-                        "osi:AFL-3.0",
-                        "osi:afl-3.0"
+                        "AFL-3.0"
                     ],
                     "__impliedId": "AFL-3.0",
                     "__impliedAmbiguousNames": [
                         "AFL, Version 3.0",
                         "AFL, 3.0",
-                        "AFL-3.0"
+                        "AFL-3.0",
+                        "scancode:afl-3.0",
+                        "osi:AFL-3.0",
+                        "osi:afl-3.0"
                     ],
                     "__impliedComments": [
                         [

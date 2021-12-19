@@ -11,8 +11,6 @@
 
 *Other Names:*
 
-* `scancode:mpl-1.0`
-* `osi:MPL-1.0`
 * `Mozilla Public License, Version 1.0`
 * `License :: OSI Approved :: Mozilla Public License 1.0 (MPL)`
 * `Mozilla Public License Version 1.0`
@@ -406,8 +404,6 @@ repository] is generated)
     "__impliedNames": [
         "MPL-1.0",
         "Mozilla Public License 1.0",
-        "scancode:mpl-1.0",
-        "osi:MPL-1.0",
         "Mozilla Public License, Version 1.0",
         "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)",
         "Mozilla Public License Version 1.0",
@@ -420,7 +416,9 @@ repository] is generated)
         "Mozilla Public License (MPL)",
         "Mozilla Public License 1.0 (MPL)",
         "Mozilla Public License, Version 1.0",
-        "MPLv1.0"
+        "MPLv1.0",
+        "scancode:mpl-1.0",
+        "osi:MPL-1.0"
     ],
     "__impliedComments": [
         [
@@ -1102,15 +1100,15 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Mozilla Public License 1.0",
-                    "MPL-1.0",
-                    "scancode:mpl-1.0",
-                    "osi:MPL-1.0"
+                    "MPL-1.0"
                 ],
                 "__impliedId": "MPL-1.0",
                 "__impliedAmbiguousNames": [
                     "Mozilla Public License 1.0 (MPL)",
                     "Mozilla Public License, Version 1.0",
-                    "MPLv1.0"
+                    "MPLv1.0",
+                    "scancode:mpl-1.0",
+                    "osi:MPL-1.0"
                 ],
                 "__impliedComments": [
                     [

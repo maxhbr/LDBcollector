@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:indiana-extreme-1.2`
-
 -   `scancode://indiana-extreme-1.2`
 
 -   `Indiana Extreme License 1.2`
@@ -129,7 +127,6 @@
             "xpp",
             "XPP License",
             "xpp License",
-            "scancode:indiana-extreme-1.2",
             "scancode://indiana-extreme-1.2",
             "Indiana Extreme License 1.2"
         ],
@@ -141,7 +138,8 @@
             "XPP LICENSE",
             "XPP License",
             "LICENSE FOR THE Extreme! Lab PullParser",
-            "under XPP"
+            "under XPP",
+            "scancode:indiana-extreme-1.2"
         ],
         "__impliedComments": [
             [
@@ -276,8 +274,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "xpp License",
-                        "xpp",
-                        "scancode:indiana-extreme-1.2"
+                        "xpp"
                     ],
                     "__impliedId": "xpp",
                     "__impliedAmbiguousNames": [
@@ -285,7 +282,8 @@
                         "XPP LICENSE",
                         "XPP License",
                         "LICENSE FOR THE Extreme! Lab PullParser",
-                        "under XPP"
+                        "under XPP",
+                        "scancode:indiana-extreme-1.2"
                     ],
                     "__impliedComments": [
                         [

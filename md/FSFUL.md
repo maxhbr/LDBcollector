@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:fsf-free`
-
 -   `scancode://fsf-free`
 
 -   `FSF Free Software License`
@@ -74,7 +72,6 @@
         "__impliedNames": [
             "FSFUL",
             "FSF Unlimited License",
-            "scancode:fsf-free",
             "scancode://fsf-free",
             "FSF Free Software License"
         ],
@@ -82,7 +79,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "FSFUL",
-            "FSF Unlimited License"
+            "FSF Unlimited License",
+            "scancode:fsf-free"
         ],
         "__impliedComments": [
             [
@@ -213,12 +211,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "FSF Unlimited License",
-                        "FSFUL",
-                        "scancode:fsf-free"
+                        "FSFUL"
                     ],
                     "__impliedId": "FSFUL",
                     "__impliedAmbiguousNames": [
-                        "FSF Unlimited License"
+                        "FSF Unlimited License",
+                        "scancode:fsf-free"
                     ],
                     "__impliedComments": [
                         [

@@ -12,8 +12,6 @@
 *Other Names:*
 
 * `EUDatagrid License`
-* `scancode:eu-datagrid`
-* `osi:EUDatagrid`
 * `scancode://eu-datagrid`
 
 === Comments on (easy) usability
@@ -189,8 +187,6 @@ repository] is generated)
         "EUDatagrid",
         "EU Datagrid Software License",
         "EUDatagrid License",
-        "scancode:eu-datagrid",
-        "osi:EUDatagrid",
         "EU DataGrid Software License",
         "scancode://eu-datagrid"
     ],
@@ -201,7 +197,9 @@ repository] is generated)
         "EUDatagrid License",
         "EUDATAGRID LICENSE",
         "EUDATAGRID License",
-        "EU DataGrid Software License"
+        "EU DataGrid Software License",
+        "scancode:eu-datagrid",
+        "osi:EUDatagrid"
     ],
     "__impliedComments": [
         [
@@ -591,16 +589,16 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "EUDatagrid License",
-                    "EUDatagrid",
-                    "scancode:eu-datagrid",
-                    "osi:EUDatagrid"
+                    "EUDatagrid"
                 ],
                 "__impliedId": "EUDatagrid",
                 "__impliedAmbiguousNames": [
                     "EUDatagrid License",
                     "EUDATAGRID LICENSE",
                     "EUDATAGRID License",
-                    "EU DataGrid Software License"
+                    "EU DataGrid Software License",
+                    "scancode:eu-datagrid",
+                    "osi:EUDatagrid"
                 ],
                 "__impliedComments": [
                     [

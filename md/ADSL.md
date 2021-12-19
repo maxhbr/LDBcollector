@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:adsl`
-
 -   `scancode://adsl`
 
 ## Comments on (easy) usability
@@ -78,14 +76,14 @@
         "__impliedNames": [
             "ADSL",
             "Amazon Digital Services License",
-            "scancode:adsl",
             "scancode://adsl"
         ],
         "__impliedId": "ADSL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "ADSL",
-            "Amazon Digital Services License"
+            "Amazon Digital Services License",
+            "scancode:adsl"
         ],
         "__impliedComments": [
             [
@@ -216,12 +214,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Amazon Digital Services License",
-                        "ADSL",
-                        "scancode:adsl"
+                        "ADSL"
                     ],
                     "__impliedId": "ADSL",
                     "__impliedAmbiguousNames": [
-                        "Amazon Digital Services License"
+                        "Amazon Digital Services License",
+                        "scancode:adsl"
                     ],
                     "__impliedComments": [
                         [

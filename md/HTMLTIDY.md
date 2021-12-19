@@ -6,8 +6,6 @@
 
 -   `Tidy License`
 
--   `scancode:tidy`
-
 -   `scancode://tidy`
 
 ## Comments on (easy) usability
@@ -93,10 +91,12 @@
             "HTMLTIDY",
             "HTML Tidy License",
             "Tidy License",
-            "scancode:tidy",
             "scancode://tidy"
         ],
         "__impliedId": "HTMLTIDY",
+        "__impliedAmbiguousNames": [
+            "scancode:tidy"
+        ],
         "__impliedComments": [
             [
                 "Metaeffekt Universe",
@@ -195,11 +195,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Tidy License",
-                        "HTMLTIDY",
-                        "scancode:tidy"
+                        "HTMLTIDY"
                     ],
                     "__impliedId": "HTMLTIDY",
-                    "__impliedAmbiguousNames": [],
+                    "__impliedAmbiguousNames": [
+                        "scancode:tidy"
+                    ],
                     "__impliedComments": [
                         [
                             "Metaeffekt Universe",

@@ -6,10 +6,6 @@
 
 -   `Upstream Compatibility License 1.0`
 
--   `scancode:ucl-1.0`
-
--   `osi:UCL-1.0`
-
 -   `scancode://ucl-1.0`
 
 ## Comments on (easy) usability
@@ -270,8 +266,6 @@
         "__impliedNames": [
             "UCL-1.0",
             "Upstream Compatibility License 1.0",
-            "scancode:ucl-1.0",
-            "osi:UCL-1.0",
             "Upstream Compatibility License v1.0",
             "scancode://ucl-1.0"
         ],
@@ -279,7 +273,9 @@
         "__impliedAmbiguousNames": [
             "UCL-1.0",
             "Upstream Compatibility License v1.0",
-            "Upstream Compatibility License v. 1.0"
+            "Upstream Compatibility License v. 1.0",
+            "scancode:ucl-1.0",
+            "osi:UCL-1.0"
         ],
         "__impliedComments": [
             [
@@ -418,15 +414,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Upstream Compatibility License 1.0",
-                        "UCL-1.0",
-                        "scancode:ucl-1.0",
-                        "osi:UCL-1.0"
+                        "UCL-1.0"
                     ],
                     "__impliedId": "UCL-1.0",
                     "__impliedAmbiguousNames": [
                         "UCL-1.0",
                         "Upstream Compatibility License v1.0",
-                        "Upstream Compatibility License v. 1.0"
+                        "Upstream Compatibility License v. 1.0",
+                        "scancode:ucl-1.0",
+                        "osi:UCL-1.0"
                     ],
                     "__impliedComments": [
                         [

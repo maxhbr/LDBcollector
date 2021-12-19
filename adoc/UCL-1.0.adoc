@@ -12,8 +12,6 @@
 *Other Names:*
 
 * `Upstream Compatibility License 1.0`
-* `scancode:ucl-1.0`
-* `osi:UCL-1.0`
 * `scancode://ucl-1.0`
 
 === Comments on (easy) usability
@@ -270,8 +268,6 @@ repository] is generated)
     "__impliedNames": [
         "UCL-1.0",
         "Upstream Compatibility License 1.0",
-        "scancode:ucl-1.0",
-        "osi:UCL-1.0",
         "Upstream Compatibility License v1.0",
         "scancode://ucl-1.0"
     ],
@@ -279,7 +275,9 @@ repository] is generated)
     "__impliedAmbiguousNames": [
         "UCL-1.0",
         "Upstream Compatibility License v1.0",
-        "Upstream Compatibility License v. 1.0"
+        "Upstream Compatibility License v. 1.0",
+        "scancode:ucl-1.0",
+        "osi:UCL-1.0"
     ],
     "__impliedComments": [
         [
@@ -418,15 +416,15 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Upstream Compatibility License 1.0",
-                    "UCL-1.0",
-                    "scancode:ucl-1.0",
-                    "osi:UCL-1.0"
+                    "UCL-1.0"
                 ],
                 "__impliedId": "UCL-1.0",
                 "__impliedAmbiguousNames": [
                     "UCL-1.0",
                     "Upstream Compatibility License v1.0",
-                    "Upstream Compatibility License v. 1.0"
+                    "Upstream Compatibility License v. 1.0",
+                    "scancode:ucl-1.0",
+                    "osi:UCL-1.0"
                 ],
                 "__impliedComments": [
                     [

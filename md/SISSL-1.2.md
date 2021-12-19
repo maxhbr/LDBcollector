@@ -6,8 +6,6 @@
 
 -   `SISSL 1.2`
 
--   `scancode:sun-sissl-1.2`
-
 -   `Sun Industry Standards Source License - Version 1.2`
 
 -   `scancode://sun-sissl-1.2`
@@ -243,7 +241,6 @@
         "__impliedNames": [
             "SISSL-1.2",
             "SISSL 1.2",
-            "scancode:sun-sissl-1.2",
             "Sun Industry Standards Source License - Version 1.2",
             "Sun Industry Standards Source License v1.2",
             "scancode://sun-sissl-1.2",
@@ -253,7 +250,8 @@
         "__impliedAmbiguousNames": [
             "SISSL, Version 1.2",
             "SISSL 1.2",
-            "SUN INDUSTRY STANDARDS SOURCE LICENSE Version 1.2"
+            "SUN INDUSTRY STANDARDS SOURCE LICENSE Version 1.2",
+            "scancode:sun-sissl-1.2"
         ],
         "__impliedComments": [
             [
@@ -401,14 +399,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "SISSL 1.2",
-                        "SISSL-1.2",
-                        "scancode:sun-sissl-1.2"
+                        "SISSL-1.2"
                     ],
                     "__impliedId": "SISSL-1.2",
                     "__impliedAmbiguousNames": [
                         "SISSL, Version 1.2",
                         "SISSL 1.2",
-                        "SUN INDUSTRY STANDARDS SOURCE LICENSE Version 1.2"
+                        "SUN INDUSTRY STANDARDS SOURCE LICENSE Version 1.2",
+                        "scancode:sun-sissl-1.2"
                     ],
                     "__impliedComments": [
                         [

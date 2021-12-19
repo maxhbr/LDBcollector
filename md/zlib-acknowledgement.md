@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:zlib-acknowledgement`
-
 -   `scancode://zlib-acknowledgement`
 
 -   `ZLIB License with Acknowledgment`
@@ -138,7 +136,6 @@
         "__impliedNames": [
             "zlib-acknowledgement",
             "zlib/libpng License with Acknowledgement",
-            "scancode:zlib-acknowledgement",
             "scancode://zlib-acknowledgement",
             "ZLIB License with Acknowledgment"
         ],
@@ -148,7 +145,8 @@
             "The zlib/libpng License (Zlib)",
             "zlib with acknowledgement",
             "zlib-acknowledgement",
-            "zlib/libpng License with Acknowledgement"
+            "zlib/libpng License with Acknowledgement",
+            "scancode:zlib-acknowledgement"
         ],
         "__impliedComments": [
             [
@@ -350,13 +348,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "zlib/libpng License with Acknowledgement",
-                        "zlib-acknowledgement",
-                        "scancode:zlib-acknowledgement"
+                        "zlib-acknowledgement"
                     ],
                     "__impliedId": "zlib-acknowledgement",
                     "__impliedAmbiguousNames": [
                         "zlib-acknowledgement",
-                        "zlib/libpng License with Acknowledgement"
+                        "zlib/libpng License with Acknowledgement",
+                        "scancode:zlib-acknowledgement"
                     ],
                     "__impliedComments": [
                         [

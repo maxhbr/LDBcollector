@@ -6,8 +6,6 @@
 
 -   `BSD 3-Clause License (no-nuclear use acknowledgement 2014)`
 
--   `scancode:oracle-bsd-no-nuclear`
-
 -   `scancode://oracle-bsd-no-nuclear`
 
 -   `Oracle BSD-Style with Nuclear Restrictions`
@@ -107,7 +105,6 @@
             "BSD-3-Clause-No-Nuclear-License-2014",
             "BSD 3-Clause No Nuclear License 2014",
             "BSD 3-Clause License (no-nuclear use acknowledgement 2014)",
-            "scancode:oracle-bsd-no-nuclear",
             "scancode://oracle-bsd-no-nuclear",
             "Oracle BSD-Style with Nuclear Restrictions"
         ],
@@ -120,7 +117,8 @@
             "BSD 3 Clause No Nuclear License License, Version 2014",
             "BSD 3 Clause No Nuclear License License, 2014",
             "BSD-3-Clause-No-Nuclear-License License, Version 2014",
-            "BSD-3-Clause-No-Nuclear-License License 2014"
+            "BSD-3-Clause-No-Nuclear-License License 2014",
+            "scancode:oracle-bsd-no-nuclear"
         ],
         "__impliedComments": [
             [
@@ -258,8 +256,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD 3-Clause License (no-nuclear use acknowledgement 2014)",
-                        "BSD-3-Clause-No-Nuclear-License-2014",
-                        "scancode:oracle-bsd-no-nuclear"
+                        "BSD-3-Clause-No-Nuclear-License-2014"
                     ],
                     "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
                     "__impliedAmbiguousNames": [
@@ -270,7 +267,8 @@
                         "BSD 3 Clause No Nuclear License License, Version 2014",
                         "BSD 3 Clause No Nuclear License License, 2014",
                         "BSD-3-Clause-No-Nuclear-License License, Version 2014",
-                        "BSD-3-Clause-No-Nuclear-License License 2014"
+                        "BSD-3-Clause-No-Nuclear-License License 2014",
+                        "scancode:oracle-bsd-no-nuclear"
                     ],
                     "__impliedComments": [
                         [

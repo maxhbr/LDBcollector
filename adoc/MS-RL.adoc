@@ -12,8 +12,6 @@
 
 *Other Names:*
 
-* `scancode:ms-rl`
-* `osi:MS-RL`
 * `Microsoft Reciprocal License (MS-RL)`
 * `scancode://ms-rl`
 
@@ -274,8 +272,6 @@ repository] is generated)
         "MS-RL",
         "Microsoft Reciprocal License",
         "ms-rl",
-        "scancode:ms-rl",
-        "osi:MS-RL",
         "Microsoft Reciprocal License (MS-RL)",
         "scancode://ms-rl"
     ],
@@ -288,7 +284,9 @@ repository] is generated)
         "MS, Version RL",
         "MS RL",
         "MS License, Version RL",
-        "MS License, RL"
+        "MS License, RL",
+        "scancode:ms-rl",
+        "osi:MS-RL"
     ],
     "__impliedComments": [
         [
@@ -739,9 +737,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Microsoft Reciprocal License",
-                    "MS-RL",
-                    "scancode:ms-rl",
-                    "osi:MS-RL"
+                    "MS-RL"
                 ],
                 "__impliedId": "MS-RL",
                 "__impliedAmbiguousNames": [
@@ -751,7 +747,9 @@ repository] is generated)
                     "MS, Version RL",
                     "MS RL",
                     "MS License, Version RL",
-                    "MS License, RL"
+                    "MS License, RL",
+                    "scancode:ms-rl",
+                    "osi:MS-RL"
                 ],
                 "__impliedComments": [
                     [

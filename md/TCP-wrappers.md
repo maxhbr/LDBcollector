@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:tcp-wrappers`
-
 -   `scancode://tcp-wrappers`
 
 ## Comments on (easy) usability
@@ -101,7 +99,6 @@
         "__impliedNames": [
             "TCP-wrappers",
             "TCP Wrappers License",
-            "scancode:tcp-wrappers",
             "scancode://tcp-wrappers"
         ],
         "__impliedId": "TCP-wrappers",
@@ -111,7 +108,8 @@
             "TCP WRAPPERS License",
             "TCP-wrappers License",
             "TCP-WRAPPERS LICENSE",
-            "TCP-WRAPPERS License"
+            "TCP-WRAPPERS License",
+            "scancode:tcp-wrappers"
         ],
         "__impliedComments": [
             [
@@ -224,8 +222,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "TCP Wrappers License",
-                        "TCP-wrappers",
-                        "scancode:tcp-wrappers"
+                        "TCP-wrappers"
                     ],
                     "__impliedId": "TCP-wrappers",
                     "__impliedAmbiguousNames": [
@@ -234,7 +231,8 @@
                         "TCP WRAPPERS License",
                         "TCP-wrappers License",
                         "TCP-WRAPPERS LICENSE",
-                        "TCP-WRAPPERS License"
+                        "TCP-WRAPPERS License",
+                        "scancode:tcp-wrappers"
                     ],
                     "__impliedComments": [
                         [

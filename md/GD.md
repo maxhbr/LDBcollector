@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:libgd-2018`
-
 -   `scancode://libgd-2018`
 
 -   `libgd License 2018`
@@ -125,11 +123,13 @@
         "__impliedNames": [
             "GD",
             "GD License",
-            "scancode:libgd-2018",
             "scancode://libgd-2018",
             "libgd License 2018"
         ],
         "__impliedId": "GD",
+        "__impliedAmbiguousNames": [
+            "scancode:libgd-2018"
+        ],
         "__impliedComments": [
             [
                 "Metaeffekt Universe",
@@ -228,11 +228,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "GD License",
-                        "GD",
-                        "scancode:libgd-2018"
+                        "GD"
                     ],
                     "__impliedId": "GD",
-                    "__impliedAmbiguousNames": [],
+                    "__impliedAmbiguousNames": [
+                        "scancode:libgd-2018"
+                    ],
                     "__impliedComments": [
                         [
                             "Metaeffekt Universe",

@@ -6,8 +6,6 @@
 
 -   `CERN Open Hardware Licence 1.2`
 
--   `scancode:cern-ohl-1.2`
-
 -   `scancode://cern-ohl-1.2`
 
 ## Comments on (easy) usability
@@ -135,7 +133,6 @@
         "__impliedNames": [
             "CERN-OHL-1.2",
             "CERN Open Hardware Licence 1.2",
-            "scancode:cern-ohl-1.2",
             "CERN Open Hardware Licence v1.2",
             "scancode://cern-ohl-1.2"
         ],
@@ -143,7 +140,8 @@
         "__impliedAmbiguousNames": [
             "CERN Open Hardware Licence v1.2",
             "CERN-OHL-1.2",
-            "CERN OHL v1.2"
+            "CERN OHL v1.2",
+            "scancode:cern-ohl-1.2"
         ],
         "__impliedComments": [
             [
@@ -253,14 +251,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "CERN Open Hardware Licence 1.2",
-                        "CERN-OHL-1.2",
-                        "scancode:cern-ohl-1.2"
+                        "CERN-OHL-1.2"
                     ],
                     "__impliedId": "CERN-OHL-1.2",
                     "__impliedAmbiguousNames": [
                         "CERN Open Hardware Licence v1.2",
                         "CERN-OHL-1.2",
-                        "CERN OHL v1.2"
+                        "CERN OHL v1.2",
+                        "scancode:cern-ohl-1.2"
                     ],
                     "__impliedComments": [
                         [

@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:polyform-noncommercial-1.0.0`
-
 -   `scancode://polyform-noncommercial-1.0.0`
 
 ## Comments on (easy) usability
@@ -184,13 +182,13 @@
         "__impliedNames": [
             "PolyForm-Noncommercial-1.0.0",
             "Polyform Noncommercial License 1.0.0",
-            "scancode:polyform-noncommercial-1.0.0",
             "PolyForm Noncommercial License 1.0.0",
             "scancode://polyform-noncommercial-1.0.0"
         ],
         "__impliedId": "PolyForm-Noncommercial-1.0.0",
         "__impliedAmbiguousNames": [
-            "polyform-noncommercial-1.0.0"
+            "polyform-noncommercial-1.0.0",
+            "scancode:polyform-noncommercial-1.0.0"
         ],
         "__impliedComments": [
             [
@@ -291,12 +289,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Polyform Noncommercial License 1.0.0",
-                        "PolyForm-Noncommercial-1.0.0",
-                        "scancode:polyform-noncommercial-1.0.0"
+                        "PolyForm-Noncommercial-1.0.0"
                     ],
                     "__impliedId": "PolyForm-Noncommercial-1.0.0",
                     "__impliedAmbiguousNames": [
-                        "polyform-noncommercial-1.0.0"
+                        "polyform-noncommercial-1.0.0",
+                        "scancode:polyform-noncommercial-1.0.0"
                     ],
                     "__impliedComments": [
                         [

@@ -6,8 +6,6 @@
 
 -   `CERN Open Hardware Licence Weakly Reciprocal 2.0`
 
--   `scancode:cern-ohl-w-2.0`
-
 -   `scancode://cern-ohl-w-2.0`
 
 ## Comments on (easy) usability
@@ -376,14 +374,14 @@
         "__impliedNames": [
             "CERN-OHL-W-2.0",
             "CERN Open Hardware Licence Weakly Reciprocal 2.0",
-            "scancode:cern-ohl-w-2.0",
             "CERN Open Hardware Licence Version 2 - Weakly Reciprocal",
             "scancode://cern-ohl-w-2.0"
         ],
         "__impliedId": "CERN-OHL-W-2.0",
         "__impliedAmbiguousNames": [
             "cern-ohl-w-2.0",
-            "CERN Open Hardware Licence Version 2 - Weakly Reciprocal"
+            "CERN Open Hardware Licence Version 2 - Weakly Reciprocal",
+            "scancode:cern-ohl-w-2.0"
         ],
         "__impliedComments": [
             [
@@ -515,13 +513,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "CERN Open Hardware Licence Weakly Reciprocal 2.0",
-                        "CERN-OHL-W-2.0",
-                        "scancode:cern-ohl-w-2.0"
+                        "CERN-OHL-W-2.0"
                     ],
                     "__impliedId": "CERN-OHL-W-2.0",
                     "__impliedAmbiguousNames": [
                         "cern-ohl-w-2.0",
-                        "CERN Open Hardware Licence Version 2 - Weakly Reciprocal"
+                        "CERN Open Hardware Licence Version 2 - Weakly Reciprocal",
+                        "scancode:cern-ohl-w-2.0"
                     ],
                     "__impliedComments": [
                         [

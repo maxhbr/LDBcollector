@@ -6,8 +6,6 @@
 
 -   `OpenSSH License`
 
--   `scancode:tatu-ylonen`
-
 -   `scancode://openssh`
 
 ## Comments on (easy) usability
@@ -400,7 +398,6 @@
         "__impliedNames": [
             "SSH-OpenSSH",
             "OpenSSH License",
-            "scancode:tatu-ylonen",
             "SSH OpenSSH license",
             "scancode://openssh"
         ],
@@ -411,7 +408,8 @@
             "Tatu Ylonen's original licence",
             "Tatu Ylonen's licence",
             "Tatu Ylonen's Licence",
-            "Tatu Ylonen Licence"
+            "Tatu Ylonen Licence",
+            "scancode:tatu-ylonen"
         ],
         "__impliedComments": [
             [
@@ -543,8 +541,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "OpenSSH License",
-                        "SSH-OpenSSH",
-                        "scancode:tatu-ylonen"
+                        "SSH-OpenSSH"
                     ],
                     "__impliedId": "SSH-OpenSSH",
                     "__impliedAmbiguousNames": [
@@ -553,7 +550,8 @@
                         "Tatu Ylonen's original licence",
                         "Tatu Ylonen's licence",
                         "Tatu Ylonen's Licence",
-                        "Tatu Ylonen Licence"
+                        "Tatu Ylonen Licence",
+                        "scancode:tatu-ylonen"
                     ],
                     "__impliedComments": [
                         [

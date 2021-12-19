@@ -4,12 +4,6 @@
 
 **Other Names:**
 
--   `scancode:cpl-0.5`
-
--   `scancode:cpl-1.0`
-
--   `osi:CPL-1.0`
-
 -   `Common Public License, Version 1.0`
 
 -   `CPL`
@@ -419,9 +413,6 @@
         "__impliedNames": [
             "CPL-1.0",
             "Common Public License 1.0",
-            "scancode:cpl-0.5",
-            "scancode:cpl-1.0",
-            "osi:CPL-1.0",
             "Common Public License, Version 1.0",
             "CPL",
             "License :: OSI Approved :: Common Public License",
@@ -440,7 +431,10 @@
             "Common Public License - v 1.0",
             "Common Public License 1.0",
             "Common Public License v1.0",
-            "Common Public License version 1.0"
+            "Common Public License version 1.0",
+            "scancode:cpl-0.5",
+            "scancode:cpl-1.0",
+            "osi:CPL-1.0"
         ],
         "__impliedComments": [
             [
@@ -1131,10 +1125,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Common Public License 1.0",
-                        "CPL-1.0",
-                        "scancode:cpl-0.5",
-                        "scancode:cpl-1.0",
-                        "osi:CPL-1.0"
+                        "CPL-1.0"
                     ],
                     "__impliedId": "CPL-1.0",
                     "__impliedAmbiguousNames": [
@@ -1145,7 +1136,10 @@
                         "Common Public License - v 1.0",
                         "Common Public License 1.0",
                         "Common Public License v1.0",
-                        "Common Public License version 1.0"
+                        "Common Public License version 1.0",
+                        "scancode:cpl-0.5",
+                        "scancode:cpl-1.0",
+                        "osi:CPL-1.0"
                     ],
                     "__impliedComments": [
                         [

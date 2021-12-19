@@ -6,8 +6,6 @@
 
 -   `NBPL 1.0`
 
--   `scancode:nbpl-1.0`
-
 -   `scancode://nbpl-1.0`
 
 ## Comments on (easy) usability
@@ -222,13 +220,13 @@
             "NBPL-1.0",
             "Net Boolean Public License v1",
             "NBPL 1.0",
-            "scancode:nbpl-1.0",
             "scancode://nbpl-1.0"
         ],
         "__impliedId": "NBPL-1.0",
         "__impliedAmbiguousNames": [
             "NBPL, Version 1.0",
-            "NBPL, 1.0"
+            "NBPL, 1.0",
+            "scancode:nbpl-1.0"
         ],
         "__impliedComments": [
             [
@@ -355,13 +353,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "NBPL 1.0",
-                        "NBPL-1.0",
-                        "scancode:nbpl-1.0"
+                        "NBPL-1.0"
                     ],
                     "__impliedId": "NBPL-1.0",
                     "__impliedAmbiguousNames": [
                         "NBPL, Version 1.0",
-                        "NBPL, 1.0"
+                        "NBPL, 1.0",
+                        "scancode:nbpl-1.0"
                     ],
                     "__impliedComments": [
                         [

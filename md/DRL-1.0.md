@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:drl-1.0`
-
 -   `scancode://drl-1.0`
 
 ## Comments on (easy) usability
@@ -79,10 +77,12 @@
         "__impliedNames": [
             "DRL-1.0",
             "Detection Rule License 1.0",
-            "scancode:drl-1.0",
             "scancode://drl-1.0"
         ],
         "__impliedId": "DRL-1.0",
+        "__impliedAmbiguousNames": [
+            "scancode:drl-1.0"
+        ],
         "__impliedComments": [
             [
                 "Metaeffekt Universe",
@@ -187,11 +187,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Detection Rule License 1.0",
-                        "DRL-1.0",
-                        "scancode:drl-1.0"
+                        "DRL-1.0"
                     ],
                     "__impliedId": "DRL-1.0",
-                    "__impliedAmbiguousNames": [],
+                    "__impliedAmbiguousNames": [
+                        "scancode:drl-1.0"
+                    ],
                     "__impliedComments": [
                         [
                             "Metaeffekt Universe",

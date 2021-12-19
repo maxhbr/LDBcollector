@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:crossword`
-
 -   `scancode://crossword`
 
 ## Comments on (easy) usability
@@ -77,7 +75,6 @@
         "__impliedNames": [
             "Crossword",
             "Crossword License",
-            "scancode:crossword",
             "scancode://crossword"
         ],
         "__impliedId": "Crossword",
@@ -86,7 +83,8 @@
             "Crossword",
             "Crossword License",
             "CROSSWORD LICENSE",
-            "CROSSWORD License"
+            "CROSSWORD License",
+            "scancode:crossword"
         ],
         "__impliedComments": [
             [
@@ -219,14 +217,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Crossword License",
-                        "Crossword",
-                        "scancode:crossword"
+                        "Crossword"
                     ],
                     "__impliedId": "Crossword",
                     "__impliedAmbiguousNames": [
                         "Crossword License",
                         "CROSSWORD LICENSE",
-                        "CROSSWORD License"
+                        "CROSSWORD License",
+                        "scancode:crossword"
                     ],
                     "__impliedComments": [
                         [

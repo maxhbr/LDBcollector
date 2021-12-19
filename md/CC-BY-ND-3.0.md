@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-ND 3.0 (unported)`
 
--   `scancode:cc-by-nd-3.0`
-
 -   `scancode://cc-by-nd-3.0`
 
 ## Comments on (easy) usability
@@ -354,7 +352,6 @@
         "__impliedNames": [
             "CC-BY-ND-3.0",
             "Creative Commons BY-ND 3.0 (unported)",
-            "scancode:cc-by-nd-3.0",
             "Creative Commons Attribution No Derivatives 3.0 Unported",
             "scancode://cc-by-nd-3.0"
         ],
@@ -362,7 +359,8 @@
         "__impliedAmbiguousNames": [
             "Creative Commons Attribution No Derivatives 3.0 Unported",
             "CC-BY-ND-3.0",
-            "Creative Commons Attribution-NoDerivs 3.0 Unported"
+            "Creative Commons Attribution-NoDerivs 3.0 Unported",
+            "scancode:cc-by-nd-3.0"
         ],
         "__impliedComments": [
             [
@@ -465,14 +463,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-ND 3.0 (unported)",
-                        "CC-BY-ND-3.0",
-                        "scancode:cc-by-nd-3.0"
+                        "CC-BY-ND-3.0"
                     ],
                     "__impliedId": "CC-BY-ND-3.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution No Derivatives 3.0 Unported",
                         "CC-BY-ND-3.0",
-                        "Creative Commons Attribution-NoDerivs 3.0 Unported"
+                        "Creative Commons Attribution-NoDerivs 3.0 Unported",
+                        "scancode:cc-by-nd-3.0"
                     ],
                     "__impliedComments": [
                         [

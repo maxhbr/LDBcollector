@@ -6,8 +6,6 @@
 
 -   `NIST Public Domain Notice (with license fallback)`
 
--   `scancode:nist-pd-fallback`
-
 -   `scancode://nist-pd-fallback`
 
 -   `NIST Public Domain Notice with fallback`
@@ -79,14 +77,14 @@
         "__impliedNames": [
             "NIST-PD-fallback",
             "NIST Public Domain Notice (with license fallback)",
-            "scancode:nist-pd-fallback",
             "NIST Public Domain Notice with license fallback",
             "scancode://nist-pd-fallback",
             "NIST Public Domain Notice with fallback"
         ],
         "__impliedId": "NIST-PD-fallback",
         "__impliedAmbiguousNames": [
-            "NIST Public Domain Notice (with license fallback)"
+            "NIST Public Domain Notice (with license fallback)",
+            "scancode:nist-pd-fallback"
         ],
         "__impliedComments": [
             [
@@ -193,12 +191,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "NIST Public Domain Notice (with license fallback)",
-                        "NIST-PD-fallback",
-                        "scancode:nist-pd-fallback"
+                        "NIST-PD-fallback"
                     ],
                     "__impliedId": "NIST-PD-fallback",
                     "__impliedAmbiguousNames": [
-                        "NIST Public Domain Notice (with license fallback)"
+                        "NIST Public Domain Notice (with license fallback)",
+                        "scancode:nist-pd-fallback"
                     ],
                     "__impliedComments": [
                         [

@@ -12,8 +12,6 @@
 
 -   `GNU General Public License 1.0 (or any later version)`
 
--   `scancode:gpl-1.0-plus`
-
 -   `scancode://gpl-1.0-plus`
 
 -   `GPL 1.0 or later`
@@ -382,7 +380,6 @@
             "GPL1+",
             "GNU General Public License v1.0 or later",
             "GNU General Public License 1.0 (or any later version)",
-            "scancode:gpl-1.0-plus",
             "scancode://gpl-1.0-plus",
             "GPL 1.0 or later"
         ],
@@ -401,7 +398,8 @@
             "GPL version 1 or later",
             "GPL version 1.0 or later",
             "GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version",
-            "GNU General Public License, version 1 or later"
+            "GNU General Public License, version 1 or later",
+            "scancode:gpl-1.0-plus"
         ],
         "__impliedComments": [
             [
@@ -630,8 +628,7 @@
                     "__impliedNames": [
                         "GNU General Public License 1.0 (or any later version)",
                         "GPL-1.0+",
-                        "GPL-1.0-or-later",
-                        "scancode:gpl-1.0-plus"
+                        "GPL-1.0-or-later"
                     ],
                     "__impliedId": "GPL-1.0-or-later",
                     "__impliedAmbiguousNames": [
@@ -644,7 +641,8 @@
                         "GPL version 1 or later",
                         "GPL version 1.0 or later",
                         "GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version",
-                        "GNU General Public License, version 1 or later"
+                        "GNU General Public License, version 1 or later",
+                        "scancode:gpl-1.0-plus"
                     ],
                     "__impliedComments": [
                         [

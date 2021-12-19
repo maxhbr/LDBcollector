@@ -6,10 +6,6 @@
 
 -   `OCLC License 2.0`
 
--   `scancode:oclc-2.0`
-
--   `osi:OCLC-2.0`
-
 -   `oclc2`
 
 -   `The OCLC Research Public License, Version 2.0`
@@ -267,8 +263,6 @@
         "__impliedNames": [
             "OCLC-2.0",
             "OCLC License 2.0",
-            "scancode:oclc-2.0",
-            "osi:OCLC-2.0",
             "OCLC Research Public License 2.0",
             "oclc2",
             "The OCLC Research Public License, Version 2.0",
@@ -280,7 +274,9 @@
             "OCLC 2.0",
             "OCLC License, Version 2.0",
             "OCLC License 2.0",
-            "OCLC Research Public License 2.0"
+            "OCLC Research Public License 2.0",
+            "scancode:oclc-2.0",
+            "osi:OCLC-2.0"
         ],
         "__impliedComments": [
             [
@@ -481,9 +477,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "OCLC License 2.0",
-                        "OCLC-2.0",
-                        "scancode:oclc-2.0",
-                        "osi:OCLC-2.0"
+                        "OCLC-2.0"
                     ],
                     "__impliedId": "OCLC-2.0",
                     "__impliedAmbiguousNames": [
@@ -491,7 +485,9 @@
                         "OCLC 2.0",
                         "OCLC License, Version 2.0",
                         "OCLC License 2.0",
-                        "OCLC Research Public License 2.0"
+                        "OCLC Research Public License 2.0",
+                        "scancode:oclc-2.0",
+                        "osi:OCLC-2.0"
                     ],
                     "__impliedComments": [
                         [

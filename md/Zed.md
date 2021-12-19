@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:zed`
-
 -   `scancode://zed`
 
 ## Comments on (easy) usability
@@ -71,7 +69,6 @@
         "__impliedNames": [
             "Zed",
             "Zed License",
-            "scancode:zed",
             "scancode://zed"
         ],
         "__impliedId": "Zed",
@@ -80,7 +77,8 @@
             "Zed",
             "Zed License",
             "ZED LICENSE",
-            "ZED License"
+            "ZED License",
+            "scancode:zed"
         ],
         "__impliedComments": [
             [
@@ -213,14 +211,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Zed License",
-                        "Zed",
-                        "scancode:zed"
+                        "Zed"
                     ],
                     "__impliedId": "Zed",
                     "__impliedAmbiguousNames": [
                         "Zed License",
                         "ZED LICENSE",
-                        "ZED License"
+                        "ZED License",
+                        "scancode:zed"
                     ],
                     "__impliedComments": [
                         [

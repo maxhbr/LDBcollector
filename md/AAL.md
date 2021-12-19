@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:attribution`
-
--   `osi:attribution`
-
 -   `Attribution Assurance Licenses`
 
 -   `License :: OSI Approved :: Attribution Assurance License`
@@ -146,8 +142,6 @@
         "__impliedNames": [
             "AAL",
             "Attribution Assurance License",
-            "scancode:attribution",
-            "osi:attribution",
             "Attribution Assurance Licenses",
             "License :: OSI Approved :: Attribution Assurance License",
             "scancode://attribution"
@@ -156,7 +150,9 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "AAL",
-            "Attribution Assurance License"
+            "Attribution Assurance License",
+            "scancode:attribution",
+            "osi:attribution"
         ],
         "__impliedComments": [
             [
@@ -369,13 +365,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Attribution Assurance License",
-                        "AAL",
-                        "scancode:attribution",
-                        "osi:attribution"
+                        "AAL"
                     ],
                     "__impliedId": "AAL",
                     "__impliedAmbiguousNames": [
-                        "Attribution Assurance License"
+                        "Attribution Assurance License",
+                        "scancode:attribution",
+                        "osi:attribution"
                     ],
                     "__impliedComments": [
                         [

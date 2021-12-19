@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:cal-1.0`
-
--   `osi:CAL-1.0`
-
 -   `scancode://cal-1.0`
 
 ## Comments on (easy) usability
@@ -196,13 +192,13 @@
         "__impliedNames": [
             "CAL-1.0",
             "Cryptographic Autonomy License 1.0",
-            "scancode:cal-1.0",
-            "osi:CAL-1.0",
             "scancode://cal-1.0"
         ],
         "__impliedId": "CAL-1.0",
         "__impliedAmbiguousNames": [
-            "Cryptographic Autonomy License"
+            "Cryptographic Autonomy License",
+            "scancode:cal-1.0",
+            "osi:CAL-1.0"
         ],
         "__impliedComments": [
             [
@@ -329,12 +325,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Cryptographic Autonomy License 1.0",
-                        "CAL-1.0",
+                        "CAL-1.0"
+                    ],
+                    "__impliedId": "CAL-1.0",
+                    "__impliedAmbiguousNames": [
                         "scancode:cal-1.0",
                         "osi:CAL-1.0"
                     ],
-                    "__impliedId": "CAL-1.0",
-                    "__impliedAmbiguousNames": [],
                     "__impliedComments": [
                         [
                             "Metaeffekt Universe",

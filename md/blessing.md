@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:blessing`
-
 -   `scancode://blessing`
 
 ## Comments on (easy) usability
@@ -66,12 +64,12 @@
         "__impliedNames": [
             "blessing",
             "SQLite Blessing",
-            "scancode:blessing",
             "scancode://blessing"
         ],
         "__impliedId": "blessing",
         "__impliedAmbiguousNames": [
-            "SQLite Blessing"
+            "SQLite Blessing",
+            "scancode:blessing"
         ],
         "__impliedComments": [
             [
@@ -189,12 +187,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "SQLite Blessing",
-                        "blessing",
-                        "scancode:blessing"
+                        "blessing"
                     ],
                     "__impliedId": "blessing",
                     "__impliedAmbiguousNames": [
-                        "SQLite Blessing"
+                        "SQLite Blessing",
+                        "scancode:blessing"
                     ],
                     "__impliedComments": [
                         [

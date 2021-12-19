@@ -6,8 +6,6 @@
 
 -   `BSD 3-Clause License (Open MPI)`
 
--   `scancode:bsd-3-clause-open-mpi`
-
 -   `Open MPI License`
 
 -   `scancode://bsd-3-clause-open-mpi`
@@ -143,7 +141,6 @@
             "BSD-3-Clause-Open-MPI",
             "BSD 3-Clause Open MPI Variant",
             "BSD 3-Clause License (Open MPI)",
-            "scancode:bsd-3-clause-open-mpi",
             "Open MPI License",
             "BSD 3-Clause Open MPI variant",
             "scancode://bsd-3-clause-open-mpi"
@@ -151,7 +148,8 @@
         "__impliedId": "BSD-3-Clause-Open-MPI",
         "__impliedAmbiguousNames": [
             "BSD-3-Clause-Open-MPI",
-            "BSD 3-Clause Open MPI variant"
+            "BSD 3-Clause Open MPI variant",
+            "scancode:bsd-3-clause-open-mpi"
         ],
         "__impliedComments": [
             [
@@ -384,13 +382,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD 3-Clause License (Open MPI)",
-                        "BSD-3-Clause-Open-MPI",
-                        "scancode:bsd-3-clause-open-mpi"
+                        "BSD-3-Clause-Open-MPI"
                     ],
                     "__impliedId": "BSD-3-Clause-Open-MPI",
                     "__impliedAmbiguousNames": [
                         "BSD-3-Clause-Open-MPI",
-                        "BSD 3-Clause Open MPI variant"
+                        "BSD 3-Clause Open MPI variant",
+                        "scancode:bsd-3-clause-open-mpi"
                     ],
                     "__impliedComments": [
                         [

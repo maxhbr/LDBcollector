@@ -6,10 +6,6 @@
 
 -   `Sun Public License 1.0`
 
--   `scancode:spl-1.0`
-
--   `osi:SPL-1.0`
-
 -   `Sun Public License, Version 1.0`
 
 -   `License :: OSI Approved :: Sun Public License`
@@ -757,8 +753,6 @@
             "SPL-1.0",
             "Sun Public License v1.0",
             "Sun Public License 1.0",
-            "scancode:spl-1.0",
-            "osi:SPL-1.0",
             "Sun Public License, Version 1.0",
             "License :: OSI Approved :: Sun Public License",
             "SUN PUBLIC LICENSE Version 1.0",
@@ -770,7 +764,9 @@
             "Sun Public License v1.0",
             "SPL, Version 1.0",
             "SPL 1.0",
-            "SUN PUBLIC LICENSE Version 1.0"
+            "SUN PUBLIC LICENSE Version 1.0",
+            "scancode:spl-1.0",
+            "osi:SPL-1.0"
         ],
         "__impliedComments": [
             [
@@ -1411,15 +1407,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Sun Public License 1.0",
-                        "SPL-1.0",
-                        "scancode:spl-1.0",
-                        "osi:SPL-1.0"
+                        "SPL-1.0"
                     ],
                     "__impliedId": "SPL-1.0",
                     "__impliedAmbiguousNames": [
                         "SPL, Version 1.0",
                         "SPL 1.0",
-                        "SUN PUBLIC LICENSE Version 1.0"
+                        "SUN PUBLIC LICENSE Version 1.0",
+                        "scancode:spl-1.0",
+                        "osi:SPL-1.0"
                     ],
                     "__impliedComments": [
                         [

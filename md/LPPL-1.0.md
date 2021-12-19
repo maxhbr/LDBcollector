@@ -6,8 +6,6 @@
 
 -   `LaTeX Project Public License 1.0`
 
--   `scancode:lppl-1.0`
-
 -   `scancode://lppl-1.0`
 
 -   `LPPL 1.0`
@@ -264,7 +262,6 @@
         "__impliedNames": [
             "LPPL-1.0",
             "LaTeX Project Public License 1.0",
-            "scancode:lppl-1.0",
             "LaTeX Project Public License v1.0",
             "scancode://lppl-1.0",
             "LPPL 1.0"
@@ -274,7 +271,8 @@
             "LPPL, 1.0",
             "LPPL-1.0",
             "LPPL Version 1.0",
-            "LaTeX Project Public License 1.0"
+            "LaTeX Project Public License 1.0",
+            "scancode:lppl-1.0"
         ],
         "__impliedComments": [
             [
@@ -409,15 +407,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "LaTeX Project Public License 1.0",
-                        "LPPL-1.0",
-                        "scancode:lppl-1.0"
+                        "LPPL-1.0"
                     ],
                     "__impliedId": "LPPL-1.0",
                     "__impliedAmbiguousNames": [
                         "LPPL, 1.0",
                         "LPPL-1.0",
                         "LPPL Version 1.0",
-                        "LaTeX Project Public License 1.0"
+                        "LaTeX Project Public License 1.0",
+                        "scancode:lppl-1.0"
                     ],
                     "__impliedComments": [
                         [

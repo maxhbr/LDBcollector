@@ -2,14 +2,14 @@
     "__impliedNames": [
         "CERN-OHL-S-2.0",
         "CERN Open Hardware Licence Strongly Reciprocal 2.0",
-        "scancode:cern-ohl-s-2.0",
         "CERN Open Hardware Licence Version 2 - Strongly Reciprocal",
         "scancode://cern-ohl-s-2.0"
     ],
     "__impliedId": "CERN-OHL-S-2.0",
     "__impliedAmbiguousNames": [
         "cern-ohl-s-2.0",
-        "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
+        "CERN Open Hardware Licence Version 2 - Strongly Reciprocal",
+        "scancode:cern-ohl-s-2.0"
     ],
     "__impliedComments": [
         [
@@ -141,13 +141,13 @@
             "_implications": {
                 "__impliedNames": [
                     "CERN Open Hardware Licence Strongly Reciprocal 2.0",
-                    "CERN-OHL-S-2.0",
-                    "scancode:cern-ohl-s-2.0"
+                    "CERN-OHL-S-2.0"
                 ],
                 "__impliedId": "CERN-OHL-S-2.0",
                 "__impliedAmbiguousNames": [
                     "cern-ohl-s-2.0",
-                    "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
+                    "CERN Open Hardware Licence Version 2 - Strongly Reciprocal",
+                    "scancode:cern-ohl-s-2.0"
                 ],
                 "__impliedComments": [
                     [

@@ -6,8 +6,6 @@
 
 -   `CERN Open Hardware Licence Permissive 2.0`
 
--   `scancode:cern-ohl-p-2.0`
-
 -   `scancode://cern-ohl-p-2.0`
 
 ## Comments on (easy) usability
@@ -266,14 +264,14 @@
         "__impliedNames": [
             "CERN-OHL-P-2.0",
             "CERN Open Hardware Licence Permissive 2.0",
-            "scancode:cern-ohl-p-2.0",
             "CERN Open Hardware Licence Version 2 - Permissive",
             "scancode://cern-ohl-p-2.0"
         ],
         "__impliedId": "CERN-OHL-P-2.0",
         "__impliedAmbiguousNames": [
             "cern-ohl-p-2.0",
-            "CERN Open Hardware Licence Version 2 - Permissive"
+            "CERN Open Hardware Licence Version 2 - Permissive",
+            "scancode:cern-ohl-p-2.0"
         ],
         "__impliedComments": [
             [
@@ -410,13 +408,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "CERN Open Hardware Licence Permissive 2.0",
-                        "CERN-OHL-P-2.0",
-                        "scancode:cern-ohl-p-2.0"
+                        "CERN-OHL-P-2.0"
                     ],
                     "__impliedId": "CERN-OHL-P-2.0",
                     "__impliedAmbiguousNames": [
                         "cern-ohl-p-2.0",
-                        "CERN Open Hardware Licence Version 2 - Permissive"
+                        "CERN Open Hardware Licence Version 2 - Permissive",
+                        "scancode:cern-ohl-p-2.0"
                     ],
                     "__impliedComments": [
                         [

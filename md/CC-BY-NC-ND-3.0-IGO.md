@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-NC-ND 3.0 (IGO)`
 
--   `scancode:cc-by-nc-nd-3.0-igo`
-
 -   `scancode://cc-by-nc-nd-3.0-igo`
 
 ## Comments on (easy) usability
@@ -109,13 +107,13 @@
         "__impliedNames": [
             "CC-BY-NC-ND-3.0-IGO",
             "Creative Commons BY-NC-ND 3.0 (IGO)",
-            "scancode:cc-by-nc-nd-3.0-igo",
             "Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO",
             "scancode://cc-by-nc-nd-3.0-igo"
         ],
         "__impliedId": "CC-BY-NC-ND-3.0-IGO",
         "__impliedAmbiguousNames": [
-            "Creative Commons BY-NC-ND 3.0 (IGO)"
+            "Creative Commons BY-NC-ND 3.0 (IGO)",
+            "scancode:cc-by-nc-nd-3.0-igo"
         ],
         "__impliedComments": [
             [
@@ -210,12 +208,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-NC-ND 3.0 (IGO)",
-                        "CC-BY-NC-ND-3.0-IGO",
-                        "scancode:cc-by-nc-nd-3.0-igo"
+                        "CC-BY-NC-ND-3.0-IGO"
                     ],
                     "__impliedId": "CC-BY-NC-ND-3.0-IGO",
                     "__impliedAmbiguousNames": [
-                        "Creative Commons BY-NC-ND 3.0 (IGO)"
+                        "Creative Commons BY-NC-ND 3.0 (IGO)",
+                        "scancode:cc-by-nc-nd-3.0-igo"
                     ],
                     "__impliedComments": [
                         [

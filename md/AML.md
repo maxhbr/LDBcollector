@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:aml`
-
 -   `scancode://aml`
 
 ## Comments on (easy) usability
@@ -76,14 +74,14 @@
         "__impliedNames": [
             "AML",
             "Apple MIT License",
-            "scancode:aml",
             "scancode://aml"
         ],
         "__impliedId": "AML",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "AML",
-            "Apple MIT License"
+            "Apple MIT License",
+            "scancode:aml"
         ],
         "__impliedComments": [
             [
@@ -214,12 +212,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Apple MIT License",
-                        "AML",
-                        "scancode:aml"
+                        "AML"
                     ],
                     "__impliedId": "AML",
                     "__impliedAmbiguousNames": [
-                        "Apple MIT License"
+                        "Apple MIT License",
+                        "scancode:aml"
                     ],
                     "__impliedComments": [
                         [

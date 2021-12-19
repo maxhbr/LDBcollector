@@ -6,8 +6,6 @@
 
 -   `CeCILL Free Software License Agreement 1.1`
 
--   `scancode:cecill-1.1`
-
 -   `scancode://cecill-1.1`
 
 -   `CeCILL 1.1 English`
@@ -564,7 +562,6 @@
         "__impliedNames": [
             "CECILL-1.1",
             "CeCILL Free Software License Agreement 1.1",
-            "scancode:cecill-1.1",
             "CeCILL Free Software License Agreement v1.1",
             "scancode://cecill-1.1",
             "CeCILL 1.1 English"
@@ -576,7 +573,8 @@
             "FREE SOFTWARE LICENSING AGREEMENT CeCILL Notice",
             "https://spdx.org/licenses/cecill-1.1",
             "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt",
-            "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html"
+            "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html",
+            "scancode:cecill-1.1"
         ],
         "__impliedComments": [
             [
@@ -719,8 +717,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "CeCILL Free Software License Agreement 1.1",
-                        "CECILL-1.1",
-                        "scancode:cecill-1.1"
+                        "CECILL-1.1"
                     ],
                     "__impliedId": "CECILL-1.1",
                     "__impliedAmbiguousNames": [
@@ -729,7 +726,8 @@
                         "FREE SOFTWARE LICENSING AGREEMENT CeCILL Notice",
                         "https://spdx.org/licenses/cecill-1.1",
                         "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt",
-                        "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html"
+                        "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html",
+                        "scancode:cecill-1.1"
                     ],
                     "__impliedComments": [
                         [

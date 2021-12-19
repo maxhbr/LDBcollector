@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:henry-spencer-1999`
-
 -   `scancode://henry-spencer-1999`
 
 -   `Henry Spencer License 1999`
@@ -85,7 +83,6 @@
         "__impliedNames": [
             "Spencer-99",
             "Spencer License 99",
-            "scancode:henry-spencer-1999",
             "scancode://henry-spencer-1999",
             "Henry Spencer License 1999"
         ],
@@ -94,7 +91,8 @@
             "Spencer, Version 99",
             "Spencer 99",
             "Spencer License, Version 99",
-            "Spencer License, 99"
+            "Spencer License, 99",
+            "scancode:henry-spencer-1999"
         ],
         "__impliedComments": [
             [
@@ -199,15 +197,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Spencer License 99",
-                        "Spencer-99",
-                        "scancode:henry-spencer-1999"
+                        "Spencer-99"
                     ],
                     "__impliedId": "Spencer-99",
                     "__impliedAmbiguousNames": [
                         "Spencer, Version 99",
                         "Spencer 99",
                         "Spencer License, Version 99",
-                        "Spencer License, 99"
+                        "Spencer License, 99",
+                        "scancode:henry-spencer-1999"
                     ],
                     "__impliedComments": [
                         [

@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:gl2ps`
-
 -   `GL2PS LICENSE, Version 2`
 
 -   `scancode://gl2ps`
@@ -127,7 +125,6 @@
         "__impliedNames": [
             "GL2PS",
             "GL2PS License",
-            "scancode:gl2ps",
             "GL2PS LICENSE, Version 2",
             "scancode://gl2ps"
         ],
@@ -136,7 +133,8 @@
         "__impliedAmbiguousNames": [
             "GL2PS",
             "GL2PS License",
-            "GL2PS LICENSE"
+            "GL2PS LICENSE",
+            "scancode:gl2ps"
         ],
         "__impliedComments": [
             [
@@ -394,13 +392,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "GL2PS License",
-                        "GL2PS",
-                        "scancode:gl2ps"
+                        "GL2PS"
                     ],
                     "__impliedId": "GL2PS",
                     "__impliedAmbiguousNames": [
                         "GL2PS License",
-                        "GL2PS LICENSE"
+                        "GL2PS LICENSE",
+                        "scancode:gl2ps"
                     ],
                     "__impliedComments": [
                         [

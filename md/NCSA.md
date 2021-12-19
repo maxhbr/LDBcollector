@@ -8,10 +8,6 @@
 
 -   `NCSA License`
 
--   `scancode:uoi-ncsa`
-
--   `osi:NCSA`
-
 -   `uoi-ncsa`
 
 -   `The University of Illinois/NCSA Open Source License`
@@ -218,8 +214,6 @@
             "ncsa",
             "UIUC/NCSA",
             "NCSA License",
-            "scancode:uoi-ncsa",
-            "osi:NCSA",
             "uoi-ncsa",
             "The University of Illinois/NCSA Open Source License",
             "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
@@ -230,7 +224,9 @@
         "__impliedAmbiguousNames": [
             "NCSA License",
             "NCSA LICENSE",
-            "NCSA Open Source License"
+            "NCSA Open Source License",
+            "scancode:uoi-ncsa",
+            "osi:NCSA"
         ],
         "__impliedComments": [
             [
@@ -562,15 +558,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "NCSA License",
-                        "NCSA",
-                        "scancode:uoi-ncsa",
-                        "osi:NCSA"
+                        "NCSA"
                     ],
                     "__impliedId": "NCSA",
                     "__impliedAmbiguousNames": [
                         "NCSA License",
                         "NCSA LICENSE",
-                        "NCSA Open Source License"
+                        "NCSA Open Source License",
+                        "scancode:uoi-ncsa",
+                        "osi:NCSA"
                     ],
                     "__impliedComments": [
                         [

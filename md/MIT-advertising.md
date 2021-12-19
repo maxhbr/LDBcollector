@@ -6,8 +6,6 @@
 
 -   `MIT License (with advertising)`
 
--   `scancode:enlightenment`
-
 -   `scancode://enlightenment`
 
 -   `EFL MIT-Style License`
@@ -95,7 +93,6 @@
             "MIT-advertising",
             "Enlightenment License (e16)",
             "MIT License (with advertising)",
-            "scancode:enlightenment",
             "scancode://enlightenment",
             "EFL MIT-Style License"
         ],
@@ -108,7 +105,8 @@
             "MIT ADVERTISING License",
             "MIT-advertising License",
             "MIT-ADVERTISING LICENSE",
-            "MIT-ADVERTISING License"
+            "MIT-ADVERTISING License",
+            "scancode:enlightenment"
         ],
         "__impliedComments": [
             [
@@ -274,8 +272,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "MIT License (with advertising)",
-                        "MIT-advertising",
-                        "scancode:enlightenment"
+                        "MIT-advertising"
                     ],
                     "__impliedId": "MIT-advertising",
                     "__impliedAmbiguousNames": [
@@ -284,7 +281,8 @@
                         "MIT ADVERTISING License",
                         "MIT-advertising License",
                         "MIT-ADVERTISING LICENSE",
-                        "MIT-ADVERTISING License"
+                        "MIT-ADVERTISING License",
+                        "scancode:enlightenment"
                     ],
                     "__impliedComments": [
                         [

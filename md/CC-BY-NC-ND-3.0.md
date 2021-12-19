@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-NC-ND 3.0 (unported)`
 
--   `scancode:cc-by-nc-nd-3.0`
-
 -   `Creative Commons Attribution-NoDerivs 3.0 Unported`
 
 -   `Creative Comnons Attribution-NonCommercial-NoDerivs 3.0 Unported`
@@ -508,7 +506,6 @@
         "__impliedNames": [
             "CC-BY-NC-ND-3.0",
             "Creative Commons BY-NC-ND 3.0 (unported)",
-            "scancode:cc-by-nc-nd-3.0",
             "Creative Commons Attribution-NoDerivs 3.0 Unported",
             "Creative Comnons Attribution-NonCommercial-NoDerivs 3.0 Unported",
             "Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported",
@@ -519,7 +516,8 @@
             "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
             "Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported",
             "CC-BY-NC-ND-3.0",
-            "Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported"
+            "Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported",
+            "scancode:cc-by-nc-nd-3.0"
         ],
         "__impliedRatingState": [
             [
@@ -846,14 +844,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-NC-ND 3.0 (unported)",
-                        "CC-BY-NC-ND-3.0",
-                        "scancode:cc-by-nc-nd-3.0"
+                        "CC-BY-NC-ND-3.0"
                     ],
                     "__impliedId": "CC-BY-NC-ND-3.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported",
                         "CC-BY-NC-ND-3.0",
-                        "Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported"
+                        "Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported",
+                        "scancode:cc-by-nc-nd-3.0"
                     ],
                     "__impliedComments": [
                         [

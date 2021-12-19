@@ -6,8 +6,6 @@
 
 -   `Adobe Glyph License`
 
--   `scancode:adobe-glyph`
-
 -   `scancode://adobe-glyph`
 
 ## Comments on (easy) usability
@@ -69,7 +67,6 @@
             "Adobe-Glyph",
             "Adobe Glyph List License",
             "Adobe Glyph License",
-            "scancode:adobe-glyph",
             "scancode://adobe-glyph"
         ],
         "__impliedId": "Adobe-Glyph",
@@ -81,7 +78,8 @@
             "ADOBE GLYPH License",
             "Adobe-Glyph License",
             "ADOBE-GLYPH LICENSE",
-            "ADOBE-GLYPH License"
+            "ADOBE-GLYPH License",
+            "scancode:adobe-glyph"
         ],
         "__impliedComments": [
             [
@@ -217,8 +215,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Adobe Glyph License",
-                        "Adobe-Glyph",
-                        "scancode:adobe-glyph"
+                        "Adobe-Glyph"
                     ],
                     "__impliedId": "Adobe-Glyph",
                     "__impliedAmbiguousNames": [
@@ -227,7 +224,8 @@
                         "ADOBE GLYPH License",
                         "Adobe-Glyph License",
                         "ADOBE-GLYPH LICENSE",
-                        "ADOBE-GLYPH License"
+                        "ADOBE-GLYPH License",
+                        "scancode:adobe-glyph"
                     ],
                     "__impliedComments": [
                         [

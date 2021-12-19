@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:isc`
-
--   `osi:ISC`
-
 -   `isc-license`
 
 -   `ISC License (ISC)`
@@ -221,8 +217,6 @@
             "ISC",
             "ISC License",
             "isc",
-            "scancode:isc",
-            "osi:ISC",
             "isc-license",
             "ISC License (ISC)",
             "License :: OSI Approved :: ISC License (ISCL)",
@@ -234,7 +228,9 @@
             "ISC license",
             "ISC License",
             "ISC Terms",
-            "ISC Permission"
+            "ISC Permission",
+            "scancode:isc",
+            "osi:ISC"
         ],
         "__impliedComments": [
             [
@@ -642,15 +638,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "ISC License",
-                        "ISC",
-                        "scancode:isc",
-                        "osi:ISC"
+                        "ISC"
                     ],
                     "__impliedId": "ISC",
                     "__impliedAmbiguousNames": [
                         "ISC License",
                         "ISC Terms",
-                        "ISC Permission"
+                        "ISC Permission",
+                        "scancode:isc",
+                        "osi:ISC"
                     ],
                     "__impliedComments": [
                         [

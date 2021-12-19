@@ -13,8 +13,6 @@
 *Other Names:*
 
 * `LPPL 1.3c`
-* `scancode:lppl-1.3c`
-* `osi:LPPL-1.3c`
 * `LaTeX Project Public License 1.3c`
 * `LaTeX Project Public License, Version 1.3c`
 * `LaTeX Project Public License Version 1.3c`
@@ -670,8 +668,6 @@ repository] is generated)
         "LaTeX Project Public License v1.3c",
         "lppl-1.3c",
         "LPPL 1.3c",
-        "scancode:lppl-1.3c",
-        "osi:LPPL-1.3c",
         "LaTeX Project Public License 1.3c",
         "LaTeX Project Public License, Version 1.3c",
         "LaTeX Project Public License Version 1.3c",
@@ -682,7 +678,9 @@ repository] is generated)
         "LPPL, Version 1.3c",
         "LPPL, 1.3c",
         "LaTeX Project Public License v1.3c",
-        "LPPL-1.3c"
+        "LPPL-1.3c",
+        "scancode:lppl-1.3c",
+        "osi:LPPL-1.3c"
     ],
     "__impliedComments": [
         [
@@ -1171,16 +1169,16 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "LPPL 1.3c",
-                    "LPPL-1.3c",
-                    "scancode:lppl-1.3c",
-                    "osi:LPPL-1.3c"
+                    "LPPL-1.3c"
                 ],
                 "__impliedId": "LPPL-1.3c",
                 "__impliedAmbiguousNames": [
                     "LPPL, Version 1.3c",
                     "LPPL, 1.3c",
                     "LaTeX Project Public License v1.3c",
-                    "LPPL-1.3c"
+                    "LPPL-1.3c",
+                    "scancode:lppl-1.3c",
+                    "osi:LPPL-1.3c"
                 ],
                 "__impliedComments": [
                     [

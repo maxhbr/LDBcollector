@@ -6,11 +6,7 @@
 
 -   `HPND-sell`
 
--   `scancode:historical-sell-variant`
-
 -   `Permission Terms (HPND; sell)`
-
--   `scancode:x11-keith-packard`
 
 -   `scancode://historical-sell-variant`
 
@@ -91,9 +87,7 @@
             "HPND-sell-variant",
             "Historical Permission Notice and Disclaimer - sell variant",
             "HPND-sell",
-            "scancode:historical-sell-variant",
             "Permission Terms (HPND; sell)",
-            "scancode:x11-keith-packard",
             "scancode://historical-sell-variant",
             "scancode://x11-keith-packard",
             "X11-Style (Keith Packard)"
@@ -101,8 +95,10 @@
         "__impliedId": "HPND-sell-variant",
         "__impliedAmbiguousNames": [
             "historical-sell-variant",
+            "scancode:historical-sell-variant",
             "HPND-sell-variant",
-            "Historical Permission Notice and Disclaimer - sell variant"
+            "Historical Permission Notice and Disclaimer - sell variant",
+            "scancode:x11-keith-packard"
         ],
         "__impliedComments": [
             [
@@ -218,12 +214,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Historical Permission Notice and Disclaimer - sell variant",
-                        "HPND-sell",
-                        "scancode:historical-sell-variant"
+                        "HPND-sell"
                     ],
                     "__impliedId": "HPND-sell",
                     "__impliedAmbiguousNames": [
-                        "historical-sell-variant"
+                        "historical-sell-variant",
+                        "scancode:historical-sell-variant"
                     ],
                     "__impliedComments": [
                         [

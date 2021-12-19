@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:nrl`
-
 -   `scancode://nrl`
 
 ## Comments on (easy) usability
@@ -95,14 +93,14 @@
         "__impliedNames": [
             "NRL",
             "NRL License",
-            "scancode:nrl",
             "scancode://nrl"
         ],
         "__impliedId": "NRL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "BSD with advertising",
-            "NRL License"
+            "NRL License",
+            "scancode:nrl"
         ],
         "__impliedComments": [
             [
@@ -233,12 +231,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "NRL License",
-                        "NRL",
-                        "scancode:nrl"
+                        "NRL"
                     ],
                     "__impliedId": "NRL",
                     "__impliedAmbiguousNames": [
-                        "NRL License"
+                        "NRL License",
+                        "scancode:nrl"
                     ],
                     "__impliedComments": [
                         [

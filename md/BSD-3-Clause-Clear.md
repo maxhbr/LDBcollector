@@ -6,12 +6,6 @@
 
 -   `Clear BSD`
 
--   `BSD 3-Clause Clear License (copyright variant)`
-
--   `BSD-3-Clause-Clear-copyright-variant`
-
--   `scancode:clear-bsd`
-
 -   `scancode://clear-bsd`
 
 -   `Clear BSD License`
@@ -43,7 +37,7 @@
 ## General Comments
 
 -   “category: BSD” (source: [Metaeffekt
-    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License-(copyright-variant).yaml "Metaeffekt Universe")
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License.yaml "Metaeffekt Universe")
     (CC-BY-4.0))
 
 ## Obligations
@@ -124,10 +118,6 @@
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
 -   [Metaeffekt
-    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License-(copyright-variant).yaml "Metaeffekt Universe")
-    (CC-BY-4.0)
-
--   [Metaeffekt
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
@@ -148,9 +138,6 @@
             "BSD 3-Clause Clear License",
             "bsd-3-clause-clear",
             "Clear BSD",
-            "BSD 3-Clause Clear License (copyright variant)",
-            "BSD-3-Clause-Clear-copyright-variant",
-            "scancode:clear-bsd",
             "scancode://clear-bsd",
             "Clear BSD License"
         ],
@@ -159,7 +146,8 @@
             "The BSD-3-clause License",
             "BSD-3-Clause-Clear",
             "BSD 3-Clause Clear License",
-            "Clear BSD License"
+            "Clear BSD License",
+            "scancode:clear-bsd"
         ],
         "__impliedComments": [
             [
@@ -318,23 +306,31 @@
                 "LicenseId": "BSD-3-Clause-Clear"
             },
             "Metaeffekt Universe": {
-                "spdxIdentifier": null,
-                "shortName": "BSD-3-Clause-Clear-copyright-variant",
+                "spdxIdentifier": "BSD-3-Clause-Clear",
+                "shortName": null,
                 "category": "BSD",
-                "alternativeNames": [],
-                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License-(copyright-variant).yaml",
+                "alternativeNames": [
+                    "BSD-3-Clause-Clear",
+                    "BSD 3-Clause Clear License",
+                    "Clear BSD License"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-Clear-License.yaml",
                 "otherIds": [
                     "scancode:clear-bsd"
                 ],
-                "canonicalName": "BSD 3-Clause Clear License (copyright variant)",
+                "canonicalName": "BSD 3-Clause Clear License",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD 3-Clause Clear License (copyright variant)",
-                        "BSD-3-Clause-Clear-copyright-variant",
+                        "BSD 3-Clause Clear License",
+                        "BSD-3-Clause-Clear"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Clear",
+                    "__impliedAmbiguousNames": [
+                        "BSD-3-Clause-Clear",
+                        "BSD 3-Clause Clear License",
+                        "Clear BSD License",
                         "scancode:clear-bsd"
                     ],
-                    "__impliedId": "BSD-3-Clause-Clear-copyright-variant",
-                    "__impliedAmbiguousNames": [],
                     "__impliedComments": [
                         [
                             "Metaeffekt Universe",

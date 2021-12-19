@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:epics`
-
 -   `scancode://epics`
 
 ## Comments on (easy) usability
@@ -91,14 +89,14 @@
         "__impliedNames": [
             "EPICS",
             "EPICS Open License",
-            "scancode:epics",
             "scancode://epics"
         ],
         "__impliedId": "EPICS",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "EPICS",
-            "http://www.aps.anl.gov/epics/license/open.php"
+            "http://www.aps.anl.gov/epics/license/open.php",
+            "scancode:epics"
         ],
         "__impliedComments": [
             [
@@ -236,13 +234,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "EPICS Open License",
-                        "EPICS",
-                        "scancode:epics"
+                        "EPICS"
                     ],
                     "__impliedId": "EPICS",
                     "__impliedAmbiguousNames": [
                         "http://www.aps.anl.gov/epics/license/open.php",
-                        "EPICS"
+                        "EPICS",
+                        "scancode:epics"
                     ],
                     "__impliedComments": [
                         [

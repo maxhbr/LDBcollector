@@ -12,7 +12,6 @@
 
 *Other Names:*
 
-* `scancode:beerware`
 * `scancode://beerware`
 * `Beer-Ware License`
 * `Beerware 42`
@@ -90,7 +89,6 @@ repository] is generated)
     "__impliedNames": [
         "Beerware",
         "Beerware License",
-        "scancode:beerware",
         "scancode://beerware",
         "Beer-Ware License",
         "Beerware 42"
@@ -99,7 +97,8 @@ repository] is generated)
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Beerware",
-        "BEERWARE"
+        "BEERWARE",
+        "scancode:beerware"
     ],
     "__impliedComments": [
         [
@@ -259,13 +258,13 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Beerware License",
-                    "Beerware",
-                    "scancode:beerware"
+                    "Beerware"
                 ],
                 "__impliedId": "Beerware",
                 "__impliedAmbiguousNames": [
                     "Beerware",
-                    "BEERWARE"
+                    "BEERWARE",
+                    "scancode:beerware"
                 ],
                 "__impliedComments": [
                     [

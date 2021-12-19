@@ -6,12 +6,6 @@
 
 -   `MIT License (no attribution)`
 
--   `scancode:ekioh`
-
--   `scancode:pd-mit`
-
--   `scancode:tigra-calendar-4.0`
-
 -   `scancode://mit-0`
 
 -   `MIT-0-Clause`
@@ -120,9 +114,6 @@
             "MIT No Attribution",
             "mit-0",
             "MIT License (no attribution)",
-            "scancode:ekioh",
-            "scancode:pd-mit",
-            "scancode:tigra-calendar-4.0",
             "scancode://mit-0",
             "MIT-0-Clause"
         ],
@@ -132,7 +123,10 @@
             "MIT, 0",
             "MIT License, Version 0",
             "MIT License 0",
-            "MIT No Attribution"
+            "MIT No Attribution",
+            "scancode:ekioh",
+            "scancode:pd-mit",
+            "scancode:tigra-calendar-4.0"
         ],
         "__impliedComments": [
             [
@@ -289,10 +283,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "MIT License (no attribution)",
-                        "MIT-0",
-                        "scancode:ekioh",
-                        "scancode:pd-mit",
-                        "scancode:tigra-calendar-4.0"
+                        "MIT-0"
                     ],
                     "__impliedId": "MIT-0",
                     "__impliedAmbiguousNames": [
@@ -300,7 +291,10 @@
                         "MIT, 0",
                         "MIT License, Version 0",
                         "MIT License 0",
-                        "MIT No Attribution"
+                        "MIT No Attribution",
+                        "scancode:ekioh",
+                        "scancode:pd-mit",
+                        "scancode:tigra-calendar-4.0"
                     ],
                     "__impliedComments": [
                         [

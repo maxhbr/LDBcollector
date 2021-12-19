@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-SA 2.0`
 
--   `scancode:cc-by-sa-2.0`
-
 -   `Creative Commons Attribution-ShareAlike 2.0 Generic`
 
 -   `scancode://cc-by-sa-2.0`
@@ -215,7 +213,6 @@
         "__impliedNames": [
             "CC-BY-SA-2.0",
             "Creative Commons BY-SA 2.0",
-            "scancode:cc-by-sa-2.0",
             "Creative Commons Attribution-ShareAlike 2.0 Generic",
             "Creative Commons Attribution Share Alike 2.0 Generic",
             "scancode://cc-by-sa-2.0"
@@ -224,7 +221,8 @@
         "__impliedAmbiguousNames": [
             "Creative Commons Attribution Share Alike 2.0",
             "CC-BY-SA-2.0",
-            "Creative Commons Attribution-ShareAlike 2.0"
+            "Creative Commons Attribution-ShareAlike 2.0",
+            "scancode:cc-by-sa-2.0"
         ],
         "__impliedComments": [
             [
@@ -568,14 +566,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-SA 2.0",
-                        "CC-BY-SA-2.0",
-                        "scancode:cc-by-sa-2.0"
+                        "CC-BY-SA-2.0"
                     ],
                     "__impliedId": "CC-BY-SA-2.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Share Alike 2.0",
                         "CC-BY-SA-2.0",
-                        "Creative Commons Attribution-ShareAlike 2.0"
+                        "Creative Commons Attribution-ShareAlike 2.0",
+                        "scancode:cc-by-sa-2.0"
                     ],
                     "__impliedComments": [
                         [

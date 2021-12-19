@@ -6,8 +6,6 @@
 
 -   `MIT Open Group`
 
--   `scancode:mit-open-group`
-
 -   `scancode://x11-opengroup`
 
 -   `X11-Style (Open Group)`
@@ -94,14 +92,14 @@
             "MIT Open Group Variant",
             "MIT Open Group",
             "MIT-Open-Group",
-            "scancode:mit-open-group",
             "MIT Open Group variant",
             "scancode://x11-opengroup",
             "X11-Style (Open Group)"
         ],
         "__impliedId": "MIT-open-group",
         "__impliedAmbiguousNames": [
-            "mit-open-group"
+            "mit-open-group",
+            "scancode:mit-open-group"
         ],
         "__impliedComments": [
             [
@@ -239,12 +237,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "MIT Open Group",
-                        "MIT-Open-Group",
-                        "scancode:mit-open-group"
+                        "MIT-Open-Group"
                     ],
                     "__impliedId": "MIT-Open-Group",
                     "__impliedAmbiguousNames": [
-                        "mit-open-group"
+                        "mit-open-group",
+                        "scancode:mit-open-group"
                     ],
                     "__impliedComments": [
                         [

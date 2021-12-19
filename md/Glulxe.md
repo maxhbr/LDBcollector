@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:glulxe`
-
 -   `scancode://glulxe`
 
 ## Comments on (easy) usability
@@ -63,7 +61,6 @@
         "__impliedNames": [
             "Glulxe",
             "Glulxe License",
-            "scancode:glulxe",
             "scancode://glulxe"
         ],
         "__impliedId": "Glulxe",
@@ -72,7 +69,8 @@
             "Glulxe",
             "Glulxe License",
             "GLULXE LICENSE",
-            "GLULXE License"
+            "GLULXE License",
+            "scancode:glulxe"
         ],
         "__impliedComments": [
             [
@@ -205,14 +203,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Glulxe License",
-                        "Glulxe",
-                        "scancode:glulxe"
+                        "Glulxe"
                     ],
                     "__impliedId": "Glulxe",
                     "__impliedAmbiguousNames": [
                         "Glulxe License",
                         "GLULXE LICENSE",
-                        "GLULXE License"
+                        "GLULXE License",
+                        "scancode:glulxe"
                     ],
                     "__impliedComments": [
                         [

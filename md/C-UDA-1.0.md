@@ -6,8 +6,6 @@
 
 -   `Computational Use of Data Agreement 1.0`
 
--   `scancode:c-uda-1.0`
-
 -   `scancode://c-uda-1.0`
 
 ## Comments on (easy) usability
@@ -100,13 +98,13 @@
         "__impliedNames": [
             "C-UDA-1.0",
             "Computational Use of Data Agreement 1.0",
-            "scancode:c-uda-1.0",
             "Computational Use of Data Agreement v1.0",
             "scancode://c-uda-1.0"
         ],
         "__impliedId": "C-UDA-1.0",
         "__impliedAmbiguousNames": [
-            "Computational Use of Data Agreement v1.0"
+            "Computational Use of Data Agreement v1.0",
+            "scancode:c-uda-1.0"
         ],
         "__impliedComments": [
             [
@@ -213,12 +211,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Computational Use of Data Agreement 1.0",
-                        "C-UDA-1.0",
-                        "scancode:c-uda-1.0"
+                        "C-UDA-1.0"
                     ],
                     "__impliedId": "C-UDA-1.0",
                     "__impliedAmbiguousNames": [
-                        "Computational Use of Data Agreement v1.0"
+                        "Computational Use of Data Agreement v1.0",
+                        "scancode:c-uda-1.0"
                     ],
                     "__impliedComments": [
                         [

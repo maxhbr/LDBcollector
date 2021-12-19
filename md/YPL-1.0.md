@@ -6,8 +6,6 @@
 
 -   `YPL 1.0`
 
--   `scancode:ypl-1.0`
-
 -   `scancode://ypl-1.0`
 
 ## Comments on (easy) usability
@@ -224,7 +222,6 @@
         "__impliedNames": [
             "YPL-1.0",
             "YPL 1.0",
-            "scancode:ypl-1.0",
             "Yahoo! Public License v1.0",
             "scancode://ypl-1.0"
         ],
@@ -232,7 +229,8 @@
         "__impliedAmbiguousNames": [
             "YPL, Version 1.0",
             "YPL 1.0",
-            "Yahoo! Public License, Version 1.0"
+            "Yahoo! Public License, Version 1.0",
+            "scancode:ypl-1.0"
         ],
         "__impliedComments": [
             [
@@ -352,14 +350,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "YPL 1.0",
-                        "YPL-1.0",
-                        "scancode:ypl-1.0"
+                        "YPL-1.0"
                     ],
                     "__impliedId": "YPL-1.0",
                     "__impliedAmbiguousNames": [
                         "YPL, Version 1.0",
                         "YPL 1.0",
-                        "Yahoo! Public License, Version 1.0"
+                        "Yahoo! Public License, Version 1.0",
+                        "scancode:ypl-1.0"
                     ],
                     "__impliedComments": [
                         [

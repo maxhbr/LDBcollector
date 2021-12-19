@@ -6,10 +6,6 @@
 
 -   `LPL 1.02`
 
--   `scancode:lucent-pl-1.02`
-
--   `osi:LPL-1.02`
-
 -   `Lucent Public License 1.02`
 
 -   `Lucent Public License, Version 1.02`
@@ -177,8 +173,6 @@
             "LPL-1.02",
             "Lucent Public License v1.02",
             "LPL 1.02",
-            "scancode:lucent-pl-1.02",
-            "osi:LPL-1.02",
             "Lucent Public License 1.02",
             "Lucent Public License, Version 1.02",
             "scancode://lucent-pl-1.02"
@@ -187,7 +181,9 @@
         "__impliedAmbiguousNames": [
             "LPL, Version 1.02",
             "LPL 1.02",
-            "Lucent Public License Version 1.02"
+            "Lucent Public License Version 1.02",
+            "scancode:lucent-pl-1.02",
+            "osi:LPL-1.02"
         ],
         "__impliedComments": [
             [
@@ -374,15 +370,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "LPL 1.02",
-                        "LPL-1.02",
-                        "scancode:lucent-pl-1.02",
-                        "osi:LPL-1.02"
+                        "LPL-1.02"
                     ],
                     "__impliedId": "LPL-1.02",
                     "__impliedAmbiguousNames": [
                         "LPL, Version 1.02",
                         "LPL 1.02",
-                        "Lucent Public License Version 1.02"
+                        "Lucent Public License Version 1.02",
+                        "scancode:lucent-pl-1.02",
+                        "osi:LPL-1.02"
                     ],
                     "__impliedComments": [
                         [

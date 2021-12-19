@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:eupl-1.2`
-
--   `osi:EUPL-1.2`
-
 -   `scancode://eupl-1.2`
 
 -   `EUPL 1.2`
@@ -328,8 +324,6 @@
             "EUPL-1.2",
             "European Union Public License 1.2",
             "eupl-1.2",
-            "scancode:eupl-1.2",
-            "osi:EUPL-1.2",
             "scancode://eupl-1.2",
             "EUPL 1.2",
             "European Union Public Licence 1.2"
@@ -346,7 +340,9 @@
             "European Union Public License, Version 1.2",
             "European Union Public License (EUPL) version 1.2",
             "European Union Public License v1.2",
-            "European Union Public Licence V. 1.2"
+            "European Union Public Licence V. 1.2",
+            "scancode:eupl-1.2",
+            "osi:EUPL-1.2"
         ],
         "__impliedComments": [
             [
@@ -574,9 +570,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "European Union Public License 1.2",
-                        "EUPL-1.2",
-                        "scancode:eupl-1.2",
-                        "osi:EUPL-1.2"
+                        "EUPL-1.2"
                     ],
                     "__impliedId": "EUPL-1.2",
                     "__impliedAmbiguousNames": [
@@ -589,7 +583,9 @@
                         "European Union Public License, Version 1.2",
                         "European Union Public License (EUPL) version 1.2",
                         "European Union Public License v1.2",
-                        "European Union Public Licence V. 1.2"
+                        "European Union Public Licence V. 1.2",
+                        "scancode:eupl-1.2",
+                        "osi:EUPL-1.2"
                     ],
                     "__impliedComments": [
                         [

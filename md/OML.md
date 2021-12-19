@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:fastcgi-devkit`
-
 -   `scancode://fastcgi-devkit`
 
 -   `FastCGI DevKit`
@@ -108,7 +106,6 @@
         "__impliedNames": [
             "OML",
             "Open Market License",
-            "scancode:fastcgi-devkit",
             "scancode://fastcgi-devkit",
             "FastCGI DevKit"
         ],
@@ -116,7 +113,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "OML",
-            "OM License"
+            "OM License",
+            "scancode:fastcgi-devkit"
         ],
         "__impliedComments": [
             [
@@ -261,12 +259,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Open Market License",
-                        "OML",
-                        "scancode:fastcgi-devkit"
+                        "OML"
                     ],
                     "__impliedId": "OML",
                     "__impliedAmbiguousNames": [
-                        "OM License"
+                        "OM License",
+                        "scancode:fastcgi-devkit"
                     ],
                     "__impliedComments": [
                         [

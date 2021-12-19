@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:eupl-1.1`
-
--   `osi:EUPL-1.1`
-
 -   `European Union Public License, Version 1.1`
 
 -   `License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)`
@@ -604,8 +600,6 @@
             "EUPL-1.1",
             "European Union Public License 1.1",
             "eupl-1.1",
-            "scancode:eupl-1.1",
-            "osi:EUPL-1.1",
             "European Union Public License, Version 1.1",
             "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
             "European Union Public Licence, v.1.1",
@@ -626,7 +620,9 @@
             "European Union Public License, Version 1.1",
             "European Union Public License (EUPL) version 1.1",
             "European Union Public License v1.1",
-            "European Union Public License version 1.1"
+            "European Union Public License version 1.1",
+            "scancode:eupl-1.1",
+            "osi:EUPL-1.1"
         ],
         "__impliedComments": [
             [
@@ -1252,9 +1248,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "European Union Public License 1.1",
-                        "EUPL-1.1",
-                        "scancode:eupl-1.1",
-                        "osi:EUPL-1.1"
+                        "EUPL-1.1"
                     ],
                     "__impliedId": "EUPL-1.1",
                     "__impliedAmbiguousNames": [
@@ -1268,7 +1262,9 @@
                         "European Union Public License, Version 1.1",
                         "European Union Public License (EUPL) version 1.1",
                         "European Union Public License v1.1",
-                        "European Union Public License version 1.1"
+                        "European Union Public License version 1.1",
+                        "scancode:eupl-1.1",
+                        "osi:EUPL-1.1"
                     ],
                     "__impliedComments": [
                         [

@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:unlicense`
-
 -   `scancode://unlicense`
 
 -   `Unlicense 1`
@@ -178,14 +176,14 @@
             "Unlicense",
             "The Unlicense",
             "unlicense",
-            "scancode:unlicense",
             "scancode://unlicense",
             "Unlicense 1"
         ],
         "__impliedId": "Unlicense",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Unlicense"
+            "Unlicense",
+            "scancode:unlicense"
         ],
         "__impliedComments": [
             [
@@ -495,12 +493,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Unlicense",
-                        "Unlicense",
-                        "scancode:unlicense"
+                        "Unlicense"
                     ],
                     "__impliedId": "Unlicense",
                     "__impliedAmbiguousNames": [
-                        "Unlicense"
+                        "Unlicense",
+                        "scancode:unlicense"
                     ],
                     "__impliedComments": [
                         [

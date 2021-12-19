@@ -11,8 +11,6 @@
 
 - =Creative Commons BY SA 2.0 (England and Wales)=
 
-- =scancode:cc-by-sa-2.0-uk=
-
 - =scancode://cc-by-sa-2.0-uk=
 
 ** Comments on (easy) usability
@@ -204,11 +202,13 @@
       "__impliedNames": [
           "CC-BY-SA-2.0-UK",
           "Creative Commons BY SA 2.0 (England and Wales)",
-          "scancode:cc-by-sa-2.0-uk",
           "Creative Commons Attribution Share Alike 2.0 England and Wales",
           "scancode://cc-by-sa-2.0-uk"
       ],
       "__impliedId": "CC-BY-SA-2.0-UK",
+      "__impliedAmbiguousNames": [
+          "scancode:cc-by-sa-2.0-uk"
+      ],
       "__impliedComments": [
           [
               "Metaeffekt Universe",
@@ -313,11 +313,12 @@
               "_implications": {
                   "__impliedNames": [
                       "Creative Commons BY SA 2.0 (England and Wales)",
-                      "CC-BY-SA-2.0-UK",
-                      "scancode:cc-by-sa-2.0-uk"
+                      "CC-BY-SA-2.0-UK"
                   ],
                   "__impliedId": "CC-BY-SA-2.0-UK",
-                  "__impliedAmbiguousNames": [],
+                  "__impliedAmbiguousNames": [
+                      "scancode:cc-by-sa-2.0-uk"
+                  ],
                   "__impliedComments": [
                       [
                           "Metaeffekt Universe",

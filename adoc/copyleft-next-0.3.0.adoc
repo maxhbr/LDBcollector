@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `copyleft next License 0.3.0`
-* `scancode:copyleft-next-0.3.0`
 * `scancode://copyleft-next-0.3.0`
 
 === Comments on (easy) usability
@@ -284,7 +283,6 @@ this repository] is generated)
         "copyleft-next-0.3.0",
         "copyleft-next 0.3.0",
         "copyleft next License 0.3.0",
-        "scancode:copyleft-next-0.3.0",
         "scancode://copyleft-next-0.3.0"
     ],
     "__impliedId": "copyleft-next-0.3.0",
@@ -297,7 +295,8 @@ this repository] is generated)
         "copyleft next License, Version 0.3.0",
         "copyleft next License, 0.3.0",
         "copyleft-next License, Version 0.3.0",
-        "copyleft-next License 0.3.0"
+        "copyleft-next License 0.3.0",
+        "scancode:copyleft-next-0.3.0"
     ],
     "__impliedComments": [
         [
@@ -412,8 +411,7 @@ this repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "copyleft next License 0.3.0",
-                    "copyleft-next-0.3.0",
-                    "scancode:copyleft-next-0.3.0"
+                    "copyleft-next-0.3.0"
                 ],
                 "__impliedId": "copyleft-next-0.3.0",
                 "__impliedAmbiguousNames": [
@@ -424,7 +422,8 @@ this repository] is generated)
                     "copyleft next License, Version 0.3.0",
                     "copyleft next License, 0.3.0",
                     "copyleft-next License, Version 0.3.0",
-                    "copyleft-next License 0.3.0"
+                    "copyleft-next License 0.3.0",
+                    "scancode:copyleft-next-0.3.0"
                 ],
                 "__impliedComments": [
                     [

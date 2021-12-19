@@ -12,8 +12,6 @@
 *Other Names:*
 
 * `OSET Public License 2.1`
-* `scancode:oset-pl-2.1`
-* `osi:OPL-2.1`
 * `scancode://oset-pl-2.1`
 
 === Comments on (easy) usability
@@ -176,8 +174,6 @@ repository] is generated)
     "__impliedNames": [
         "OSET-PL-2.1",
         "OSET Public License 2.1",
-        "scancode:oset-pl-2.1",
-        "osi:OPL-2.1",
         "OSET Public License version 2.1",
         "scancode://oset-pl-2.1"
     ],
@@ -187,7 +183,9 @@ repository] is generated)
         "OSET PL, 2.1",
         "OSET-PL, Version 2.1",
         "OSET-PL, 2.1",
-        "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1"
+        "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1",
+        "scancode:oset-pl-2.1",
+        "osi:OPL-2.1"
     ],
     "__impliedComments": [
         [
@@ -338,9 +336,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "OSET Public License 2.1",
-                    "OSET-PL-2.1",
-                    "scancode:oset-pl-2.1",
-                    "osi:OPL-2.1"
+                    "OSET-PL-2.1"
                 ],
                 "__impliedId": "OSET-PL-2.1",
                 "__impliedAmbiguousNames": [
@@ -348,7 +344,9 @@ repository] is generated)
                     "OSET PL, 2.1",
                     "OSET-PL, Version 2.1",
                     "OSET-PL, 2.1",
-                    "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1"
+                    "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1",
+                    "scancode:oset-pl-2.1",
+                    "osi:OPL-2.1"
                 ],
                 "__impliedComments": [
                     [

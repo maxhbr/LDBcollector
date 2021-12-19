@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:eupl-1.0`
 * `scancode://eupl-1.0`
 * `EUPL 1.0`
 
@@ -235,7 +234,6 @@ repository] is generated)
     "__impliedNames": [
         "EUPL-1.0",
         "European Union Public License 1.0",
-        "scancode:eupl-1.0",
         "scancode://eupl-1.0",
         "EUPL 1.0"
     ],
@@ -251,7 +249,8 @@ repository] is generated)
         "European Union Public License v.1.0",
         "European Union Public License, Version 1.0",
         "European Union Public License (EUPL) version 1.0",
-        "European Union Public License v1.0"
+        "European Union Public License v1.0",
+        "scancode:eupl-1.0"
     ],
     "__impliedComments": [
         [
@@ -396,8 +395,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "European Union Public License 1.0",
-                    "EUPL-1.0",
-                    "scancode:eupl-1.0"
+                    "EUPL-1.0"
                 ],
                 "__impliedId": "EUPL-1.0",
                 "__impliedAmbiguousNames": [
@@ -410,7 +408,8 @@ repository] is generated)
                     "European Union Public License v.1.0",
                     "European Union Public License, Version 1.0",
                     "European Union Public License (EUPL) version 1.0",
-                    "European Union Public License v1.0"
+                    "European Union Public License v1.0",
+                    "scancode:eupl-1.0"
                 ],
                 "__impliedComments": [
                     [

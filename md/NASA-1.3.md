@@ -6,10 +6,6 @@
 
 -   `NASA License 1.3`
 
--   `scancode:nasa-1.3`
-
--   `osi:NASA-1.3`
-
 -   `nasa1.3`
 
 -   `NASA Open Source Agreement, Version 1.3`
@@ -205,8 +201,6 @@
             "NASA-1.3",
             "NASA Open Source Agreement 1.3",
             "NASA License 1.3",
-            "scancode:nasa-1.3",
-            "osi:NASA-1.3",
             "nasa1.3",
             "NASA Open Source Agreement, Version 1.3",
             "scancode://nasa-1.3",
@@ -218,7 +212,9 @@
             "NASA, 1.3",
             "NASA License, Version 1.3",
             "NASA License, 1.3",
-            "NASA OPEN SOURCE AGREEMENT VERSION 1.3"
+            "NASA OPEN SOURCE AGREEMENT VERSION 1.3",
+            "scancode:nasa-1.3",
+            "osi:NASA-1.3"
         ],
         "__impliedComments": [
             [
@@ -436,9 +432,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "NASA License 1.3",
-                        "NASA-1.3",
-                        "scancode:nasa-1.3",
-                        "osi:NASA-1.3"
+                        "NASA-1.3"
                     ],
                     "__impliedId": "NASA-1.3",
                     "__impliedAmbiguousNames": [
@@ -446,7 +440,9 @@
                         "NASA, 1.3",
                         "NASA License, Version 1.3",
                         "NASA License, 1.3",
-                        "NASA OPEN SOURCE AGREEMENT VERSION 1.3"
+                        "NASA OPEN SOURCE AGREEMENT VERSION 1.3",
+                        "scancode:nasa-1.3",
+                        "osi:NASA-1.3"
                     ],
                     "__impliedComments": [
                         [

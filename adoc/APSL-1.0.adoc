@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:apsl-1.0`
 * `scancode://apsl-1.0`
 * `APSL 1.0`
 
@@ -466,7 +465,6 @@ repository] is generated)
     "__impliedNames": [
         "APSL-1.0",
         "Apple Public Source License 1.0",
-        "scancode:apsl-1.0",
         "scancode://apsl-1.0",
         "APSL 1.0"
     ],
@@ -480,7 +478,8 @@ repository] is generated)
         "APPLE PUBLIC SOURCE LICENSE 1.0",
         "APPLE PUBLIC SOURCE LICENSE v1.0",
         "APPLE PUBLIC SOURCE LICENSE Version 1.0",
-        "Apple Public Source License Ver. 1.0"
+        "Apple Public Source License Ver. 1.0",
+        "scancode:apsl-1.0"
     ],
     "__impliedComments": [
         [
@@ -687,8 +686,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Apple Public Source License 1.0",
-                    "APSL-1.0",
-                    "scancode:apsl-1.0"
+                    "APSL-1.0"
                 ],
                 "__impliedId": "APSL-1.0",
                 "__impliedAmbiguousNames": [
@@ -698,7 +696,8 @@ repository] is generated)
                     "APPLE PUBLIC SOURCE LICENSE 1.0",
                     "APPLE PUBLIC SOURCE LICENSE v1.0",
                     "APPLE PUBLIC SOURCE LICENSE Version 1.0",
-                    "Apple Public Source License Ver. 1.0"
+                    "Apple Public Source License Ver. 1.0",
+                    "scancode:apsl-1.0"
                 ],
                 "__impliedComments": [
                     [

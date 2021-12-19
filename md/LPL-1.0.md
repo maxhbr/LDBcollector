@@ -6,10 +6,6 @@
 
 -   `LPL 1.0`
 
--   `scancode:lucent-pl-1.0`
-
--   `osi:LPL-1.0`
-
 -   `Lucent Public License ("Plan9") 1.0`
 
 -   `Lucent Public License, Plan 9, Version 1.0`
@@ -304,8 +300,6 @@
             "LPL-1.0",
             "Lucent Public License Version 1.0",
             "LPL 1.0",
-            "scancode:lucent-pl-1.0",
-            "osi:LPL-1.0",
             "Lucent Public License (\"Plan9\") 1.0",
             "Lucent Public License, Plan 9, Version 1.0",
             "scancode://lucent-pl-1.0",
@@ -315,7 +309,9 @@
         "__impliedAmbiguousNames": [
             "LPL, Version 1.0",
             "LPL, 1.0",
-            "Lucent Public License Version 1.0"
+            "Lucent Public License Version 1.0",
+            "scancode:lucent-pl-1.0",
+            "osi:LPL-1.0"
         ],
         "__impliedComments": [
             [
@@ -481,15 +477,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "LPL 1.0",
-                        "LPL-1.0",
-                        "scancode:lucent-pl-1.0",
-                        "osi:LPL-1.0"
+                        "LPL-1.0"
                     ],
                     "__impliedId": "LPL-1.0",
                     "__impliedAmbiguousNames": [
                         "LPL, Version 1.0",
                         "LPL, 1.0",
-                        "Lucent Public License Version 1.0"
+                        "Lucent Public License Version 1.0",
+                        "scancode:lucent-pl-1.0",
+                        "osi:LPL-1.0"
                     ],
                     "__impliedComments": [
                         [

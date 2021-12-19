@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:ace-tao`
-
 -   `scancode://ace-tao`
 
 -   `ACE TAO License`
@@ -89,7 +87,6 @@
         "__impliedNames": [
             "DOC",
             "DOC License",
-            "scancode:ace-tao",
             "scancode://ace-tao",
             "ACE TAO License"
         ],
@@ -98,7 +95,8 @@
         "__impliedAmbiguousNames": [
             "DOC",
             "DOC License",
-            "DOC LICENSE"
+            "DOC LICENSE",
+            "scancode:ace-tao"
         ],
         "__impliedComments": [
             [
@@ -241,13 +239,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "DOC License",
-                        "DOC",
-                        "scancode:ace-tao"
+                        "DOC"
                     ],
                     "__impliedId": "DOC",
                     "__impliedAmbiguousNames": [
                         "DOC License",
-                        "DOC LICENSE"
+                        "DOC LICENSE",
+                        "scancode:ace-tao"
                     ],
                     "__impliedComments": [
                         [

@@ -11,10 +11,6 @@
 
 - =IBM Public License 1.0=
 
-- =scancode:ibmpl-1.0=
-
-- =osi:IPL-1.0=
-
 - =ibmpl=
 
 - =IBM Public License, Version 1.0=
@@ -265,8 +261,6 @@
           "IPL-1.0",
           "IBM Public License v1.0",
           "IBM Public License 1.0",
-          "scancode:ibmpl-1.0",
-          "osi:IPL-1.0",
           "ibmpl",
           "IBM Public License, Version 1.0",
           "License :: OSI Approved :: IBM Public License",
@@ -281,7 +275,9 @@
           "IPL, Version 1.0",
           "IPL 1.0",
           "IBM Public License Version 1.0",
-          "IBM Public License v1.0"
+          "IBM Public License v1.0",
+          "scancode:ibmpl-1.0",
+          "osi:IPL-1.0"
       ],
       "__impliedComments": [
           [
@@ -555,16 +551,16 @@
               "_implications": {
                   "__impliedNames": [
                       "IBM Public License 1.0",
-                      "IPL-1.0",
-                      "scancode:ibmpl-1.0",
-                      "osi:IPL-1.0"
+                      "IPL-1.0"
                   ],
                   "__impliedId": "IPL-1.0",
                   "__impliedAmbiguousNames": [
                       "IPL, Version 1.0",
                       "IPL 1.0",
                       "IBM Public License Version 1.0",
-                      "IBM Public License v1.0"
+                      "IBM Public License v1.0",
+                      "scancode:ibmpl-1.0",
+                      "osi:IPL-1.0"
                   ],
                   "__impliedComments": [
                       [

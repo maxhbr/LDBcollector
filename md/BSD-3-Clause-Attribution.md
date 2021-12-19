@@ -6,8 +6,6 @@
 
 -   `BSD 3-Clause License (attribution)`
 
--   `scancode:bsd-ack`
-
 -   `scancode://bsd-ack`
 
 -   `BSD Acknowledgment License`
@@ -110,7 +108,6 @@
             "BSD-3-Clause-Attribution",
             "BSD with attribution",
             "BSD 3-Clause License (attribution)",
-            "scancode:bsd-ack",
             "scancode://bsd-ack",
             "BSD Acknowledgment License"
         ],
@@ -119,7 +116,8 @@
         "__impliedAmbiguousNames": [
             "BSD with attribution",
             "BSD-3-Clause-Attribution",
-            "BSD 3-Clause Attribution"
+            "BSD 3-Clause Attribution",
+            "scancode:bsd-ack"
         ],
         "__impliedComments": [
             [
@@ -283,13 +281,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD 3-Clause License (attribution)",
-                        "BSD-3-Clause-Attribution",
-                        "scancode:bsd-ack"
+                        "BSD-3-Clause-Attribution"
                     ],
                     "__impliedId": "BSD-3-Clause-Attribution",
                     "__impliedAmbiguousNames": [
                         "BSD-3-Clause-Attribution",
-                        "BSD 3-Clause Attribution"
+                        "BSD 3-Clause Attribution",
+                        "scancode:bsd-ack"
                     ],
                     "__impliedComments": [
                         [

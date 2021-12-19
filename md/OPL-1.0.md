@@ -6,8 +6,6 @@
 
 -   `Open Public License 1.0`
 
--   `scancode:open-public`
-
 -   `scancode://open-public`
 
 ## Comments on (easy) usability
@@ -402,7 +400,6 @@
         "__impliedNames": [
             "OPL-1.0",
             "Open Public License 1.0",
-            "scancode:open-public",
             "Open Public License v1.0",
             "scancode://open-public"
         ],
@@ -411,7 +408,8 @@
             "Open Publication License (OPL) v1.0",
             "OPL, Version 1.0",
             "OPL 1.0",
-            "OPEN PUBLIC LICENSE Version 1.0"
+            "OPEN PUBLIC LICENSE Version 1.0",
+            "scancode:open-public"
         ],
         "__impliedComments": [
             [
@@ -550,14 +548,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Open Public License 1.0",
-                        "OPL-1.0",
-                        "scancode:open-public"
+                        "OPL-1.0"
                     ],
                     "__impliedId": "OPL-1.0",
                     "__impliedAmbiguousNames": [
                         "OPL, Version 1.0",
                         "OPL 1.0",
-                        "OPEN PUBLIC LICENSE Version 1.0"
+                        "OPEN PUBLIC LICENSE Version 1.0",
+                        "scancode:open-public"
                     ],
                     "__impliedComments": [
                         [

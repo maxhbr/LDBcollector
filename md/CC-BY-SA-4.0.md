@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-SA 4.0`
 
--   `scancode:cc-by-sa-4.0`
-
 -   `Creative Commons Attribution Share-Alike 4.0`
 
 -   `Creative Commons Attribution-ShareAlike 4.0 International`
@@ -688,7 +686,6 @@
             "CC-BY-SA-4.0",
             "cc-by-sa-4.0",
             "Creative Commons BY-SA 4.0",
-            "scancode:cc-by-sa-4.0",
             "Creative Commons Attribution Share-Alike 4.0",
             "Creative Commons Attribution-ShareAlike 4.0 International",
             "Creative Commons Attribution Share Alike 4.0 International",
@@ -701,7 +698,8 @@
             "Creative Commons Attribution-ShareAlike 4.0",
             "Creative Commons Attribution ShareAlike 4.0",
             "CC-BY-SA-4.0",
-            "CC BY-SA 4.0"
+            "CC BY-SA 4.0",
+            "scancode:cc-by-sa-4.0"
         ],
         "__impliedComments": [
             [
@@ -1146,15 +1144,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-SA 4.0",
-                        "CC-BY-SA-4.0",
-                        "scancode:cc-by-sa-4.0"
+                        "CC-BY-SA-4.0"
                     ],
                     "__impliedId": "CC-BY-SA-4.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution-ShareAlike 4.0",
                         "Creative Commons Attribution ShareAlike 4.0",
                         "CC-BY-SA-4.0",
-                        "CC BY-SA 4.0"
+                        "CC BY-SA 4.0",
+                        "scancode:cc-by-sa-4.0"
                     ],
                     "__impliedComments": [
                         [

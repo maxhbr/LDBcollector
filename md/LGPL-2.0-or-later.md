@@ -8,8 +8,6 @@
 
 -   `GNU Library General Public License 2.0 (or any later version)`
 
--   `scancode:lgpl-2.0-plus`
-
 -   `scancode://lgpl-2.0-plus`
 
 -   `LGPL 2.0 or later`
@@ -603,7 +601,6 @@
             "GNU Library General Public License v2 or later",
             "LGPL-2.0+",
             "GNU Library General Public License 2.0 (or any later version)",
-            "scancode:lgpl-2.0-plus",
             "scancode://lgpl-2.0-plus",
             "LGPL 2.0 or later"
         ],
@@ -639,7 +636,8 @@
             "GNU Lesser General Public License >= 2.0",
             "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version",
             "GNU Library General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version",
-            "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version"
+            "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version",
+            "scancode:lgpl-2.0-plus"
         ],
         "__impliedComments": [
             [
@@ -845,8 +843,7 @@
                     "__impliedNames": [
                         "GNU Library General Public License 2.0 (or any later version)",
                         "LGPL-2.0+",
-                        "LGPL-2.0-or-later",
-                        "scancode:lgpl-2.0-plus"
+                        "LGPL-2.0-or-later"
                     ],
                     "__impliedId": "LGPL-2.0-or-later",
                     "__impliedAmbiguousNames": [
@@ -878,7 +875,8 @@
                         "GNU Lesser General Public License >= 2.0",
                         "GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version",
                         "GNU Library General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version",
-                        "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version"
+                        "GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version",
+                        "scancode:lgpl-2.0-plus"
                     ],
                     "__impliedComments": [
                         [

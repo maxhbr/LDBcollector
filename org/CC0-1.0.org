@@ -11,8 +11,6 @@
 
 - =CC0 Universal 1.0=
 
-- =scancode:cc0-1.0=
-
 - =CC0 1.0=
 
 - =Creative Commons CC0 1.0 Universal=
@@ -307,7 +305,6 @@
           "Creative Commons Zero v1.0 Universal",
           "cc0-1.0",
           "CC0 Universal 1.0",
-          "scancode:cc0-1.0",
           "CC0 1.0",
           "Creative Commons CC0 1.0 Universal",
           "scancode://cc0-1.0",
@@ -316,7 +313,8 @@
       "__impliedId": "CC0-1.0",
       "__impliedAmbiguousNames": [
           "CC0 Universal 1.0",
-          "Creative Commons CC0 1.0 Universal License"
+          "Creative Commons CC0 1.0 Universal License",
+          "scancode:cc0-1.0"
       ],
       "__impliedComments": [
           [
@@ -586,13 +584,13 @@
               "_implications": {
                   "__impliedNames": [
                       "CC0 Universal 1.0",
-                      "CC0-1.0",
-                      "scancode:cc0-1.0"
+                      "CC0-1.0"
                   ],
                   "__impliedId": "CC0-1.0",
                   "__impliedAmbiguousNames": [
                       "CC0 Universal 1.0",
-                      "Creative Commons CC0 1.0 Universal License"
+                      "Creative Commons CC0 1.0 Universal License",
+                      "scancode:cc0-1.0"
                   ],
                   "__impliedComments": [
                       [

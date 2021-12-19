@@ -6,8 +6,6 @@
 
 -   `CERN Open Hardware License 1.1`
 
--   `scancode:cern-ohl-1.1`
-
 -   `scancode://cern-ohl-1.1`
 
 -   `CERN Open Hardware License v1.1`
@@ -131,7 +129,6 @@
         "__impliedNames": [
             "CERN-OHL-1.1",
             "CERN Open Hardware License 1.1",
-            "scancode:cern-ohl-1.1",
             "CERN Open Hardware Licence v1.1",
             "scancode://cern-ohl-1.1",
             "CERN Open Hardware License v1.1"
@@ -140,7 +137,8 @@
         "__impliedAmbiguousNames": [
             "CERN Open Hardware License v1.1",
             "CERN-OHL-1.1",
-            "CERN OHL v1.1"
+            "CERN OHL v1.1",
+            "scancode:cern-ohl-1.1"
         ],
         "__impliedComments": [
             [
@@ -250,14 +248,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "CERN Open Hardware License 1.1",
-                        "CERN-OHL-1.1",
-                        "scancode:cern-ohl-1.1"
+                        "CERN-OHL-1.1"
                     ],
                     "__impliedId": "CERN-OHL-1.1",
                     "__impliedAmbiguousNames": [
                         "CERN Open Hardware License v1.1",
                         "CERN-OHL-1.1",
-                        "CERN OHL v1.1"
+                        "CERN OHL v1.1",
+                        "scancode:cern-ohl-1.1"
                     ],
                     "__impliedComments": [
                         [

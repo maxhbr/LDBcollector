@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:abstyles`
-
 -   `scancode://abstyles`
 
 ## Comments on (easy) usability
@@ -73,7 +71,6 @@
         "__impliedNames": [
             "Abstyles",
             "Abstyles License",
-            "scancode:abstyles",
             "scancode://abstyles"
         ],
         "__impliedId": "Abstyles",
@@ -82,7 +79,8 @@
             "Abstyles",
             "Abstyles License",
             "ABSTYLES LICENSE",
-            "ABSTYLES License"
+            "ABSTYLES License",
+            "scancode:abstyles"
         ],
         "__impliedComments": [
             [
@@ -229,14 +227,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Abstyles License",
-                        "Abstyles",
-                        "scancode:abstyles"
+                        "Abstyles"
                     ],
                     "__impliedId": "Abstyles",
                     "__impliedAmbiguousNames": [
                         "Abstyles License",
                         "ABSTYLES LICENSE",
-                        "ABSTYLES License"
+                        "ABSTYLES License",
+                        "scancode:abstyles"
                     ],
                     "__impliedComments": [
                         [

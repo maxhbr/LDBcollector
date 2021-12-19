@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:borceux`
-
 -   `scancode://borceux`
 
 ## Comments on (easy) usability
@@ -88,7 +86,6 @@
             "Borceux",
             "Borceux license",
             "Borceux License",
-            "scancode:borceux",
             "scancode://borceux"
         ],
         "__impliedId": "Borceux",
@@ -97,7 +94,8 @@
             "Borceux",
             "Borceux License",
             "BORCEUX LICENSE",
-            "BORCEUX License"
+            "BORCEUX License",
+            "scancode:borceux"
         ],
         "__impliedComments": [
             [
@@ -230,14 +228,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Borceux License",
-                        "Borceux",
-                        "scancode:borceux"
+                        "Borceux"
                     ],
                     "__impliedId": "Borceux",
                     "__impliedAmbiguousNames": [
                         "Borceux License",
                         "BORCEUX LICENSE",
-                        "BORCEUX License"
+                        "BORCEUX License",
+                        "scancode:borceux"
                     ],
                     "__impliedComments": [
                         [

@@ -12,8 +12,6 @@
 
 -   `Apache Software License, Version 1.0`
 
--   `scancode:apache-1.0`
-
 -   `scancode://apache-1.0`
 
 -   `Apache 1.0`
@@ -240,7 +238,6 @@
             "ASL 1.0",
             "Apache Software License, Version 1.0",
             "Apache License 1.0",
-            "scancode:apache-1.0",
             "scancode://apache-1.0",
             "Apache 1.0"
         ],
@@ -252,7 +249,8 @@
             "Apache License Version 1.0",
             "http://www.apache.org/licenses/LICENSE-1.0",
             "Apache License 1.0",
-            "https://spdx.org/licenses/apache-1.0"
+            "https://spdx.org/licenses/apache-1.0",
+            "scancode:apache-1.0"
         ],
         "__impliedComments": [
             [
@@ -600,15 +598,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Apache License 1.0",
-                        "Apache-1.0",
-                        "scancode:apache-1.0"
+                        "Apache-1.0"
                     ],
                     "__impliedId": "Apache-1.0",
                     "__impliedAmbiguousNames": [
                         "Apache License Version 1.0",
                         "http://www.apache.org/licenses/LICENSE-1.0",
                         "Apache License 1.0",
-                        "https://spdx.org/licenses/apache-1.0"
+                        "https://spdx.org/licenses/apache-1.0",
+                        "scancode:apache-1.0"
                     ],
                     "__impliedComments": [
                         [

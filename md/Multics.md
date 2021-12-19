@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:multics`
-
--   `osi:Multics`
-
 -   `scancode://multics`
 
 ## Comments on (easy) usability
@@ -98,15 +94,15 @@
         "__impliedNames": [
             "Multics",
             "Multics License",
-            "scancode:multics",
-            "osi:Multics",
             "scancode://multics"
         ],
         "__impliedId": "Multics",
         "__impliedAmbiguousNames": [
             "Multics License",
             "MULTICS LICENSE",
-            "MULTICS License"
+            "MULTICS License",
+            "scancode:multics",
+            "osi:Multics"
         ],
         "__impliedComments": [
             [
@@ -292,15 +288,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Multics License",
-                        "Multics",
-                        "scancode:multics",
-                        "osi:Multics"
+                        "Multics"
                     ],
                     "__impliedId": "Multics",
                     "__impliedAmbiguousNames": [
                         "Multics License",
                         "MULTICS LICENSE",
-                        "MULTICS License"
+                        "MULTICS License",
+                        "scancode:multics",
+                        "osi:Multics"
                     ],
                     "__impliedComments": [
                         [

@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:psfrag`
-
 -   `scancode://psfrag`
 
 ## Comments on (easy) usability
@@ -69,7 +67,6 @@
         "__impliedNames": [
             "psfrag",
             "psfrag License",
-            "scancode:psfrag",
             "scancode://psfrag"
         ],
         "__impliedId": "psfrag",
@@ -77,7 +74,8 @@
             "psfrag",
             "psfrag License",
             "PSFRAG LICENSE",
-            "PSFRAG License"
+            "PSFRAG License",
+            "scancode:psfrag"
         ],
         "__impliedComments": [
             [
@@ -223,14 +221,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "psfrag License",
-                        "psfrag",
-                        "scancode:psfrag"
+                        "psfrag"
                     ],
                     "__impliedId": "psfrag",
                     "__impliedAmbiguousNames": [
                         "psfrag License",
                         "PSFRAG LICENSE",
-                        "PSFRAG License"
+                        "PSFRAG License",
+                        "scancode:psfrag"
                     ],
                     "__impliedComments": [
                         [

@@ -6,10 +6,6 @@
 
 -   `bzip2 License 1.0.6`
 
--   `scancode:bzip2-libbzip-2010`
-
--   `scancode:bzip2-libbzip-1.0.5`
-
 -   `The bzip2 license`
 
 -   `scancode://bzip2-libbzip-2010`
@@ -183,8 +179,6 @@
             "bzip2-1.0.6",
             "bzip2 and libbzip2 License v1.0.6",
             "bzip2 License 1.0.6",
-            "scancode:bzip2-libbzip-2010",
-            "scancode:bzip2-libbzip-1.0.5",
             "The bzip2 license",
             "scancode://bzip2-libbzip-2010",
             "bzip2 License 2010"
@@ -193,7 +187,9 @@
         "__impliedAmbiguousNames": [
             "bzip2-1.0.6",
             "bzip2 and libbzip2 License v1.0.6",
-            "libzip2 version 1.0.6"
+            "libzip2 version 1.0.6",
+            "scancode:bzip2-libbzip-2010",
+            "scancode:bzip2-libbzip-1.0.5"
         ],
         "__impliedComments": [
             [
@@ -468,15 +464,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "bzip2 License 1.0.6",
-                        "bzip2-1.0.6",
-                        "scancode:bzip2-libbzip-2010",
-                        "scancode:bzip2-libbzip-1.0.5"
+                        "bzip2-1.0.6"
                     ],
                     "__impliedId": "bzip2-1.0.6",
                     "__impliedAmbiguousNames": [
                         "bzip2-1.0.6",
                         "bzip2 and libbzip2 License v1.0.6",
-                        "libzip2 version 1.0.6"
+                        "libzip2 version 1.0.6",
+                        "scancode:bzip2-libbzip-2010",
+                        "scancode:bzip2-libbzip-1.0.5"
                     ],
                     "__impliedComments": [
                         [

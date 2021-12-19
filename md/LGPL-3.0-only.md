@@ -36,13 +36,7 @@
 
 -   `GNU Lesser General Public License 3.0 (or any later version)`
 
--   `scancode:lgpl-3.0-plus`
-
--   `osi:LGPL-3.0`
-
 -   `GNU Lesser General Public License 3.0`
-
--   `scancode:lgpl-3.0`
 
 -   `GNU Lesser General Public License, Version 3.0`
 
@@ -962,10 +956,7 @@
             "lgpl-3.0",
             "GNU LGPLv3",
             "GNU Lesser General Public License 3.0 (or any later version)",
-            "scancode:lgpl-3.0-plus",
-            "osi:LGPL-3.0",
             "GNU Lesser General Public License 3.0",
-            "scancode:lgpl-3.0",
             "GNU Lesser General Public License, Version 3.0",
             "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
             "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
@@ -1061,6 +1052,8 @@
             "GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version",
             "GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",
             "GNU Lesser General Public License (LGPL) version 3 or later",
+            "scancode:lgpl-3.0-plus",
+            "osi:LGPL-3.0",
             "GNU General Lesser Public License (LGPL) version 3.0",
             "GNU General Lesser Public License (LGPL) version 3.00",
             "GNU General Lesser Public License, Version 3.0",
@@ -1118,7 +1111,8 @@
             "FSF Lesser GNU Public License, Version 3",
             "Lesser GPL 3.0",
             "The GNU Lesser General Public License, Versions 2.1 and 3",
-            "LGPL-3"
+            "LGPL-3",
+            "scancode:lgpl-3.0"
         ],
         "__impliedComments": [
             [
@@ -2157,9 +2151,7 @@
                     "__impliedNames": [
                         "GNU Lesser General Public License 3.0 (or any later version)",
                         "LGPL-3.0+",
-                        "LGPL-3.0-or-later",
-                        "scancode:lgpl-3.0-plus",
-                        "osi:LGPL-3.0"
+                        "LGPL-3.0-or-later"
                     ],
                     "__impliedId": "LGPL-3.0-or-later",
                     "__impliedAmbiguousNames": [
@@ -2243,7 +2235,9 @@
                         "GNU Lesser General Public License as published by the Free Software Foundation, version 3 or above",
                         "GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version",
                         "GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",
-                        "GNU Lesser General Public License (LGPL) version 3 or later"
+                        "GNU Lesser General Public License (LGPL) version 3 or later",
+                        "scancode:lgpl-3.0-plus",
+                        "osi:LGPL-3.0"
                     ],
                     "__impliedComments": [
                         [

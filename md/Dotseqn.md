@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:dotseqn`
-
 -   `scancode://dotseqn`
 
 ## Comments on (easy) usability
@@ -61,7 +59,6 @@
         "__impliedNames": [
             "Dotseqn",
             "Dotseqn License",
-            "scancode:dotseqn",
             "scancode://dotseqn"
         ],
         "__impliedId": "Dotseqn",
@@ -70,7 +67,8 @@
             "Dotseqn",
             "Dotseqn License",
             "DOTSEQN LICENSE",
-            "DOTSEQN License"
+            "DOTSEQN License",
+            "scancode:dotseqn"
         ],
         "__impliedComments": [
             [
@@ -203,14 +201,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Dotseqn License",
-                        "Dotseqn",
-                        "scancode:dotseqn"
+                        "Dotseqn"
                     ],
                     "__impliedId": "Dotseqn",
                     "__impliedAmbiguousNames": [
                         "Dotseqn License",
                         "DOTSEQN LICENSE",
-                        "DOTSEQN License"
+                        "DOTSEQN License",
+                        "scancode:dotseqn"
                     ],
                     "__impliedComments": [
                         [

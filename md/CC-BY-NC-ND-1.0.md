@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-NC-ND 1.0 (generic)`
 
--   `scancode:cc-by-nc-nd-1.0`
-
 -   `scancode://cc-by-nc-nd-1.0`
 
 ## Comments on (easy) usability
@@ -135,7 +133,6 @@
         "__impliedNames": [
             "CC-BY-NC-ND-1.0",
             "Creative Commons BY-NC-ND 1.0 (generic)",
-            "scancode:cc-by-nc-nd-1.0",
             "Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic",
             "scancode://cc-by-nc-nd-1.0"
         ],
@@ -144,7 +141,8 @@
             "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
             "Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic",
             "CC-BY-NC-ND-1.0",
-            "Creative Commons Attribution-NoDerivs-NonCommercial 1.0"
+            "Creative Commons Attribution-NoDerivs-NonCommercial 1.0",
+            "scancode:cc-by-nc-nd-1.0"
         ],
         "__impliedRatingState": [
             [
@@ -320,14 +318,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-NC-ND 1.0 (generic)",
-                        "CC-BY-NC-ND-1.0",
-                        "scancode:cc-by-nc-nd-1.0"
+                        "CC-BY-NC-ND-1.0"
                     ],
                     "__impliedId": "CC-BY-NC-ND-1.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic",
                         "CC-BY-NC-ND-1.0",
-                        "Creative Commons Attribution-NoDerivs-NonCommercial 1.0"
+                        "Creative Commons Attribution-NoDerivs-NonCommercial 1.0",
+                        "scancode:cc-by-nc-nd-1.0"
                     ],
                     "__impliedComments": [
                         [

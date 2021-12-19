@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:ruby`
-
 -   `Ruby License (1.9.2 and earlier)`
 
 -   `Ruby License (1.9.3 and later)`
@@ -218,7 +216,6 @@
         "__impliedNames": [
             "Ruby",
             "Ruby License",
-            "scancode:ruby",
             "Ruby License (1.9.2 and earlier)",
             "Ruby License (1.9.3 and later)",
             "scancode://ruby"
@@ -227,7 +224,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Ruby",
-            "Ruby License"
+            "Ruby License",
+            "scancode:ruby"
         ],
         "__impliedComments": [
             [
@@ -560,12 +558,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Ruby License",
-                        "Ruby",
-                        "scancode:ruby"
+                        "Ruby"
                     ],
                     "__impliedId": "Ruby",
                     "__impliedAmbiguousNames": [
-                        "Ruby License"
+                        "Ruby License",
+                        "scancode:ruby"
                     ],
                     "__impliedComments": [
                         [

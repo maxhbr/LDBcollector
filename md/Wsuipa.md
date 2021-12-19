@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:wsuipa`
-
 -   `scancode://wsuipa`
 
 ## Comments on (easy) usability
@@ -82,7 +80,6 @@
         "__impliedNames": [
             "Wsuipa",
             "Wsuipa License",
-            "scancode:wsuipa",
             "scancode://wsuipa"
         ],
         "__impliedId": "Wsuipa",
@@ -91,7 +88,8 @@
             "Wsuipa",
             "Wsuipa License",
             "WSUIPA LICENSE",
-            "WSUIPA License"
+            "WSUIPA License",
+            "scancode:wsuipa"
         ],
         "__impliedComments": [
             [
@@ -238,14 +236,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Wsuipa License",
-                        "Wsuipa",
-                        "scancode:wsuipa"
+                        "Wsuipa"
                     ],
                     "__impliedId": "Wsuipa",
                     "__impliedAmbiguousNames": [
                         "Wsuipa License",
                         "WSUIPA LICENSE",
-                        "WSUIPA License"
+                        "WSUIPA License",
+                        "scancode:wsuipa"
                     ],
                     "__impliedComments": [
                         [

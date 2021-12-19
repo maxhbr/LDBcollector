@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:glwtpl`
-
 -   `scancode://glwtpl`
 
 ## Comments on (easy) usability
@@ -75,12 +73,12 @@
         "__impliedNames": [
             "GLWTPL",
             "Good Luck With That Public License",
-            "scancode:glwtpl",
             "scancode://glwtpl"
         ],
         "__impliedId": "GLWTPL",
         "__impliedAmbiguousNames": [
-            "GOOD LUCK WITH THAT PUBLIC LICENSE"
+            "GOOD LUCK WITH THAT PUBLIC LICENSE",
+            "scancode:glwtpl"
         ],
         "__impliedComments": [
             [
@@ -188,12 +186,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Good Luck With That Public License",
-                        "GLWTPL",
-                        "scancode:glwtpl"
+                        "GLWTPL"
                     ],
                     "__impliedId": "GLWTPL",
                     "__impliedAmbiguousNames": [
-                        "GOOD LUCK WITH THAT PUBLIC LICENSE"
+                        "GOOD LUCK WITH THAT PUBLIC LICENSE",
+                        "scancode:glwtpl"
                     ],
                     "__impliedComments": [
                         [

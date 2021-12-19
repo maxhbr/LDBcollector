@@ -6,8 +6,6 @@
 
 -   `MIT License (feh advertising)`
 
--   `scancode:mit-ack`
-
 -   `scancode://mit-ack`
 
 -   `MIT Acknowledgment License`
@@ -97,7 +95,6 @@
             "MIT-feh",
             "feh License",
             "MIT License (feh advertising)",
-            "scancode:mit-ack",
             "scancode://mit-ack",
             "MIT Acknowledgment License"
         ],
@@ -108,7 +105,8 @@
             "MIT feh",
             "MIT FEH",
             "MIT-feh",
-            "MIT-FEH"
+            "MIT-FEH",
+            "scancode:mit-ack"
         ],
         "__impliedComments": [
             [
@@ -264,15 +262,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "MIT License (feh advertising)",
-                        "MIT-feh",
-                        "scancode:mit-ack"
+                        "MIT-feh"
                     ],
                     "__impliedId": "MIT-feh",
                     "__impliedAmbiguousNames": [
                         "MIT feh",
                         "MIT FEH",
                         "MIT-feh",
-                        "MIT-FEH"
+                        "MIT-FEH",
+                        "scancode:mit-ack"
                     ],
                     "__impliedComments": [
                         [

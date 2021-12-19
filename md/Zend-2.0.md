@@ -6,8 +6,6 @@
 
 -   `Zend License 2.0`
 
--   `scancode:zend-2.0`
-
 -   `Zend Engine License, Version 2.00`
 
 -   ` Zend-2.0`
@@ -198,7 +196,6 @@
             "Zend-2.0",
             "Zend License v2.0",
             "Zend License 2.0",
-            "scancode:zend-2.0",
             "Zend Engine License, Version 2.00",
             " Zend-2.0",
             "scancode://zend-2.0",
@@ -212,7 +209,8 @@
             "Zend 2.0",
             "Zend License, Version 2.0",
             "Zend License 2.0",
-            "The Zend Engine License, version 2.00"
+            "The Zend Engine License, version 2.00",
+            "scancode:zend-2.0"
         ],
         "__impliedComments": [
             [
@@ -490,8 +488,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Zend License 2.0",
-                        "Zend-2.0",
-                        "scancode:zend-2.0"
+                        "Zend-2.0"
                     ],
                     "__impliedId": "Zend-2.0",
                     "__impliedAmbiguousNames": [
@@ -499,7 +496,8 @@
                         "Zend 2.0",
                         "Zend License, Version 2.0",
                         "Zend License 2.0",
-                        "The Zend Engine License, version 2.00"
+                        "The Zend Engine License, version 2.00",
+                        "scancode:zend-2.0"
                     ],
                     "__impliedComments": [
                         [

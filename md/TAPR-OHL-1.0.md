@@ -6,8 +6,6 @@
 
 -   `TAPR Open Hardware 1.0`
 
--   `scancode:tapr-ohl-1.0`
-
 -   `scancode://tapr-ohl-1.0`
 
 ## Comments on (easy) usability
@@ -186,7 +184,6 @@
         "__impliedNames": [
             "TAPR-OHL-1.0",
             "TAPR Open Hardware 1.0",
-            "scancode:tapr-ohl-1.0",
             "TAPR Open Hardware License v1.0",
             "scancode://tapr-ohl-1.0"
         ],
@@ -194,7 +191,8 @@
         "__impliedAmbiguousNames": [
             "TAPR-OHL-1.0",
             "TAPR Open Hardware License v1.0",
-            "TAPR Open Hardware License Version 1.0"
+            "TAPR Open Hardware License Version 1.0",
+            "scancode:tapr-ohl-1.0"
         ],
         "__impliedComments": [
             [
@@ -304,14 +302,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "TAPR Open Hardware 1.0",
-                        "TAPR-OHL-1.0",
-                        "scancode:tapr-ohl-1.0"
+                        "TAPR-OHL-1.0"
                     ],
                     "__impliedId": "TAPR-OHL-1.0",
                     "__impliedAmbiguousNames": [
                         "TAPR-OHL-1.0",
                         "TAPR Open Hardware License v1.0",
-                        "TAPR Open Hardware License Version 1.0"
+                        "TAPR Open Hardware License Version 1.0",
+                        "scancode:tapr-ohl-1.0"
                     ],
                     "__impliedComments": [
                         [

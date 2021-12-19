@@ -6,8 +6,6 @@
 
 -   `MIT License (with enna advertising)`
 
--   `scancode:enna`
-
 -   `scancode://enna`
 
 ## Comments on (easy) usability
@@ -101,7 +99,6 @@
             "MIT-enna",
             "enna License",
             "MIT License (with enna advertising)",
-            "scancode:enna",
             "scancode://enna"
         ],
         "__impliedId": "MIT-enna",
@@ -111,7 +108,8 @@
             "MIT enna",
             "MIT ENNA",
             "MIT-enna",
-            "MIT-ENNA"
+            "MIT-ENNA",
+            "scancode:enna"
         ],
         "__impliedComments": [
             [
@@ -261,15 +259,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "MIT License (with enna advertising)",
-                        "MIT-enna",
-                        "scancode:enna"
+                        "MIT-enna"
                     ],
                     "__impliedId": "MIT-enna",
                     "__impliedAmbiguousNames": [
                         "MIT enna",
                         "MIT ENNA",
                         "MIT-enna",
-                        "MIT-ENNA"
+                        "MIT-ENNA",
+                        "scancode:enna"
                     ],
                     "__impliedComments": [
                         [

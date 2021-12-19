@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:artistic-perl-1.0`
-
 -   `scancode://artistic-perl-1.0`
 
 -   `Artistic-Perl-1.0`
@@ -260,7 +258,6 @@
         "__impliedNames": [
             "Artistic-1.0-Perl",
             "Artistic License 1.0 (Perl)",
-            "scancode:artistic-perl-1.0",
             "scancode://artistic-perl-1.0",
             "Artistic-Perl-1.0"
         ],
@@ -276,7 +273,8 @@
             "Artistic 1.0 License, Version Perl",
             "Artistic 1.0 License Perl",
             "Artistic-1.0 License, Version Perl",
-            "Artistic-1.0 License, Perl"
+            "Artistic-1.0 License, Perl",
+            "scancode:artistic-perl-1.0"
         ],
         "__impliedComments": [
             [
@@ -460,8 +458,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Artistic License 1.0 (Perl)",
-                        "Artistic-1.0-Perl",
-                        "scancode:artistic-perl-1.0"
+                        "Artistic-1.0-Perl"
                     ],
                     "__impliedId": "Artistic-1.0-Perl",
                     "__impliedAmbiguousNames": [
@@ -474,7 +471,8 @@
                         "Artistic 1.0 License, Version Perl",
                         "Artistic 1.0 License Perl",
                         "Artistic-1.0 License, Version Perl",
-                        "Artistic-1.0 License, Perl"
+                        "Artistic-1.0 License, Perl",
+                        "scancode:artistic-perl-1.0"
                     ],
                     "__impliedComments": [
                         [

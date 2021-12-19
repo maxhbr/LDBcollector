@@ -6,8 +6,6 @@
 
 -   `gSOAP Public License 1.3b`
 
--   `scancode:gsoap-1.3b`
-
 -   `gSOAP Public License Version 1.3b`
 
 -   `scancode://gsoap-1.3b`
@@ -376,7 +374,6 @@
         "__impliedNames": [
             "gSOAP-1.3b",
             "gSOAP Public License 1.3b",
-            "scancode:gsoap-1.3b",
             "gSOAP Public License Version 1.3b",
             "gSOAP Public License v1.3b",
             "scancode://gsoap-1.3b"
@@ -385,7 +382,8 @@
         "__impliedAmbiguousNames": [
             "gSOAP-1.3b",
             "gSOAP Public License v1.3b",
-            "gSOAP Public License Version 1.3b"
+            "gSOAP Public License Version 1.3b",
+            "scancode:gsoap-1.3b"
         ],
         "__impliedComments": [
             [
@@ -927,14 +925,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "gSOAP Public License 1.3b",
-                        "gSOAP-1.3b",
-                        "scancode:gsoap-1.3b"
+                        "gSOAP-1.3b"
                     ],
                     "__impliedId": "gSOAP-1.3b",
                     "__impliedAmbiguousNames": [
                         "gSOAP-1.3b",
                         "gSOAP Public License v1.3b",
-                        "gSOAP Public License Version 1.3b"
+                        "gSOAP Public License Version 1.3b",
+                        "scancode:gsoap-1.3b"
                     ],
                     "__impliedComments": [
                         [

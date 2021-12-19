@@ -6,8 +6,6 @@
 
 -   `Netscape Public License 1.0`
 
--   `scancode:npl-1.0`
-
 -   `scancode://npl-1.0`
 
 -   `NPL 1.0`
@@ -202,7 +200,6 @@
         "__impliedNames": [
             "NPL-1.0",
             "Netscape Public License 1.0",
-            "scancode:npl-1.0",
             "Netscape Public License v1.0",
             "scancode://npl-1.0",
             "NPL 1.0"
@@ -210,7 +207,8 @@
         "__impliedId": "NPL-1.0",
         "__impliedAmbiguousNames": [
             "http://www.mozilla.org/MPL/NPL-1.0.html",
-            "https://spdx.org/licenses/npl-1.0"
+            "https://spdx.org/licenses/npl-1.0",
+            "scancode:npl-1.0"
         ],
         "__impliedComments": [
             [
@@ -324,13 +322,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Netscape Public License 1.0",
-                        "NPL-1.0",
-                        "scancode:npl-1.0"
+                        "NPL-1.0"
                     ],
                     "__impliedId": "NPL-1.0",
                     "__impliedAmbiguousNames": [
                         "http://www.mozilla.org/MPL/NPL-1.0.html",
-                        "https://spdx.org/licenses/npl-1.0"
+                        "https://spdx.org/licenses/npl-1.0",
+                        "scancode:npl-1.0"
                     ],
                     "__impliedComments": [
                         [

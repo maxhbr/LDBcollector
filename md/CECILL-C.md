@@ -8,12 +8,6 @@
 
 -   `CECILL C License`
 
--   `scancode:cecill-c`
-
--   `CeCILL-C Free Software License (FRA)`
-
--   `CeCILL-C-FSL`
-
 -   `scancode://cecill-c`
 
 ## Comments on (easy) usability
@@ -314,10 +308,6 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CECILL-C-License.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
--   [Metaeffekt
-    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-C-Free-Software-License-(FRA).yaml "Metaeffekt Universe")
-    (CC-BY-4.0)
-
 -   [SPDX](https://spdx.org/licenses/CECILL-C.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -331,9 +321,6 @@
             "CECILL-C",
             "CeCILL-C License",
             "CECILL C License",
-            "scancode:cecill-c",
-            "CeCILL-C Free Software License (FRA)",
-            "CeCILL-C-FSL",
             "CeCILL-C Free Software License Agreement",
             "scancode://cecill-c"
         ],
@@ -348,7 +335,7 @@
             "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice",
             "https://spdx.org/licenses/cecill-c",
             "eCILL-C Free Software License Agreement",
-            "CeCILL-C Free Software License (FRA)"
+            "scancode:cecill-c"
         ],
         "__impliedComments": [
             [
@@ -521,8 +508,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "CECILL C License",
-                        "CECILL-C",
-                        "scancode:cecill-c"
+                        "CECILL-C"
                     ],
                     "__impliedId": "CECILL-C",
                     "__impliedAmbiguousNames": [
@@ -532,7 +518,8 @@
                         "CECILL-C License",
                         "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice",
                         "https://spdx.org/licenses/cecill-c",
-                        "eCILL-C Free Software License Agreement"
+                        "eCILL-C Free Software License Agreement",
+                        "scancode:cecill-c"
                     ],
                     "__impliedComments": [
                         [

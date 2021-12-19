@@ -10,10 +10,6 @@
 
 -   `BSD 2-Clause License`
 
--   `scancode:bsd-simplified`
-
--   `osi:BSD-2-Clause`
-
 -   `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
 
 -   `BSD-2`
@@ -235,8 +231,6 @@
             "BSD 2-Clause \"Simplified\" License",
             "bsd-2-clause",
             "BSD 2-Clause License",
-            "scancode:bsd-simplified",
-            "osi:BSD-2-Clause",
             "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
             "BSD-2",
             "BSD-2-clause",
@@ -262,7 +256,9 @@
             "BSD 2-clause \"Simplified\" License",
             "bsd_2",
             "https://www.freebsd.org/copyright/freebsd-license.html",
-            "FreeBSD License"
+            "FreeBSD License",
+            "scancode:bsd-simplified",
+            "osi:BSD-2-Clause"
         ],
         "__impliedComments": [
             [
@@ -657,9 +653,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD 2-Clause License",
-                        "BSD-2-Clause",
-                        "scancode:bsd-simplified",
-                        "osi:BSD-2-Clause"
+                        "BSD-2-Clause"
                     ],
                     "__impliedId": "BSD-2-Clause",
                     "__impliedAmbiguousNames": [
@@ -676,7 +670,9 @@
                         "BSD 2-clause \"Simplified\" License",
                         "bsd_2",
                         "https://www.freebsd.org/copyright/freebsd-license.html",
-                        "FreeBSD License"
+                        "FreeBSD License",
+                        "scancode:bsd-simplified",
+                        "osi:BSD-2-Clause"
                     ],
                     "__impliedComments": [
                         [

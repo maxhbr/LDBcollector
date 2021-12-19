@@ -6,10 +6,6 @@
 
 -   `RPL 1.1`
 
--   `scancode:rpl-1.1`
-
--   `osi:RPL-1.1`
-
 -   `Reciprocal Public License, Version 1.1`
 
 -   `scancode://rpl-1.1`
@@ -252,8 +248,6 @@
             "RPL-1.1",
             "Reciprocal Public License 1.1",
             "RPL 1.1",
-            "scancode:rpl-1.1",
-            "osi:RPL-1.1",
             "Reciprocal Public License, Version 1.1",
             "scancode://rpl-1.1"
         ],
@@ -262,7 +256,9 @@
             "Reciprocal Public License",
             "RPL, Version 1.1",
             "RPL 1.1",
-            "Reciprocal Public License, version 1.1"
+            "Reciprocal Public License, version 1.1",
+            "scancode:rpl-1.1",
+            "osi:RPL-1.1"
         ],
         "__impliedComments": [
             [
@@ -443,15 +439,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "RPL 1.1",
-                        "RPL-1.1",
-                        "scancode:rpl-1.1",
-                        "osi:RPL-1.1"
+                        "RPL-1.1"
                     ],
                     "__impliedId": "RPL-1.1",
                     "__impliedAmbiguousNames": [
                         "RPL, Version 1.1",
                         "RPL 1.1",
-                        "Reciprocal Public License, version 1.1"
+                        "Reciprocal Public License, version 1.1",
+                        "scancode:rpl-1.1",
+                        "osi:RPL-1.1"
                     ],
                     "__impliedComments": [
                         [

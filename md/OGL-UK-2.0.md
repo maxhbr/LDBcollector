@@ -6,8 +6,6 @@
 
 -   `Open Government Licence 2.0`
 
--   `scancode:ogl-uk-2.0`
-
 -   `Open Government Licence 2.0 (United Kingdom)`
 
 -   `scancode://ogl-uk-2.0`
@@ -135,7 +133,6 @@
         "__impliedNames": [
             "OGL-UK-2.0",
             "Open Government Licence 2.0",
-            "scancode:ogl-uk-2.0",
             "Open Government Licence 2.0 (United Kingdom)",
             "Open Government Licence v2.0",
             "scancode://ogl-uk-2.0"
@@ -143,7 +140,8 @@
         "__impliedId": "OGL-UK-2.0",
         "__impliedAmbiguousNames": [
             "Open Government Licence v2.0",
-            "OGL-UK-2.0"
+            "OGL-UK-2.0",
+            "scancode:ogl-uk-2.0"
         ],
         "__impliedComments": [
             [
@@ -285,13 +283,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Open Government Licence 2.0",
-                        "OGL-UK-2.0",
-                        "scancode:ogl-uk-2.0"
+                        "OGL-UK-2.0"
                     ],
                     "__impliedId": "OGL-UK-2.0",
                     "__impliedAmbiguousNames": [
                         "Open Government Licence v2.0",
-                        "OGL-UK-2.0"
+                        "OGL-UK-2.0",
+                        "scancode:ogl-uk-2.0"
                     ],
                     "__impliedComments": [
                         [

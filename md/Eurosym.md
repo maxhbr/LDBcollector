@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:eurosym`
-
 -   `scancode://eurosym`
 
 ## Comments on (easy) usability
@@ -78,7 +76,6 @@
         "__impliedNames": [
             "Eurosym",
             "Eurosym License",
-            "scancode:eurosym",
             "scancode://eurosym"
         ],
         "__impliedId": "Eurosym",
@@ -87,7 +84,8 @@
             "Eurosym",
             "Eurosym License",
             "EUROSYM LICENSE",
-            "EUROSYM License"
+            "EUROSYM License",
+            "scancode:eurosym"
         ],
         "__impliedComments": [
             [
@@ -226,14 +224,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Eurosym License",
-                        "Eurosym",
-                        "scancode:eurosym"
+                        "Eurosym"
                     ],
                     "__impliedId": "Eurosym",
                     "__impliedAmbiguousNames": [
                         "Eurosym License",
                         "EUROSYM LICENSE",
-                        "EUROSYM License"
+                        "EUROSYM License",
+                        "scancode:eurosym"
                     ],
                     "__impliedComments": [
                         [

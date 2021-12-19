@@ -6,10 +6,6 @@
 
 -   `PHP License 3.0`
 
--   `scancode:php-3.0`
-
--   `osi:PHP-3.0`
-
 -   `The PHP License, Version 3.0`
 
 -   `PHP License, version 3.0`
@@ -239,8 +235,6 @@
             "PHP-3.0",
             "PHP License v3.0",
             "PHP License 3.0",
-            "scancode:php-3.0",
-            "osi:PHP-3.0",
             "The PHP License, Version 3.0",
             "PHP License, version 3.0",
             "scancode://php-3.0"
@@ -253,7 +247,9 @@
             "PHP, 3.0",
             "PHP License, Version 3.0",
             "PHP License, 3.0",
-            "PHP License, version 3.0"
+            "PHP License, version 3.0",
+            "scancode:php-3.0",
+            "osi:PHP-3.0"
         ],
         "__impliedComments": [
             [
@@ -624,9 +620,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "PHP License 3.0",
-                        "PHP-3.0",
-                        "scancode:php-3.0",
-                        "osi:PHP-3.0"
+                        "PHP-3.0"
                     ],
                     "__impliedId": "PHP-3.0",
                     "__impliedAmbiguousNames": [
@@ -634,7 +628,9 @@
                         "PHP, 3.0",
                         "PHP License, Version 3.0",
                         "PHP License, 3.0",
-                        "PHP License, version 3.0"
+                        "PHP License, version 3.0",
+                        "scancode:php-3.0",
+                        "osi:PHP-3.0"
                     ],
                     "__impliedComments": [
                         [

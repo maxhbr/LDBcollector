@@ -8,8 +8,6 @@
 
 -   `SISSL 1.1`
 
--   `osi:SISSL`
-
 -   `Sun Industry Standards Source License 1.1`
 
 -   `sun-issl`
@@ -564,7 +562,6 @@
             "SISSL",
             "Sun Industry Standards Source License",
             "SISSL 1.1",
-            "osi:SISSL",
             "Sun Industry Standards Source License 1.1",
             "sun-issl",
             "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
@@ -576,7 +573,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "SISSL",
-            "Sun Industry Standards Source License - Version 1.1"
+            "Sun Industry Standards Source License - Version 1.1",
+            "osi:SISSL"
         ],
         "__impliedComments": [
             [
@@ -1227,13 +1225,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "SISSL 1.1",
-                        "SISSL",
-                        "osi:SISSL"
+                        "SISSL"
                     ],
                     "__impliedId": "SISSL",
                     "__impliedAmbiguousNames": [
                         "SISSL",
-                        "Sun Industry Standards Source License - Version 1.1"
+                        "Sun Industry Standards Source License - Version 1.1",
+                        "osi:SISSL"
                     ],
                     "__impliedComments": [
                         [

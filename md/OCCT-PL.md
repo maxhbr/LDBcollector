@@ -6,8 +6,6 @@
 
 -   `OCCT PL`
 
--   `scancode:occt-pl`
-
 -   `scancode://occt-pl`
 
 ## Comments on (easy) usability
@@ -173,14 +171,14 @@
             "OCCT-PL",
             "Open CASCADE Technology Public License",
             "OCCT PL",
-            "scancode:occt-pl",
             "scancode://occt-pl"
         ],
         "__impliedId": "OCCT-PL",
         "__impliedAmbiguousNames": [
             "OCCT PL",
             "OCCT-PL",
-            "Open CASCADE Technology Public License"
+            "Open CASCADE Technology Public License",
+            "scancode:occt-pl"
         ],
         "__impliedComments": [
             [
@@ -307,14 +305,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "OCCT PL",
-                        "OCCT-PL",
-                        "scancode:occt-pl"
+                        "OCCT-PL"
                     ],
                     "__impliedId": "OCCT-PL",
                     "__impliedAmbiguousNames": [
                         "OCCT PL",
                         "OCCT-PL",
-                        "Open CASCADE Technology Public License"
+                        "Open CASCADE Technology Public License",
+                        "scancode:occt-pl"
                     ],
                     "__impliedComments": [
                         [

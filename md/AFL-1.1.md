@@ -6,8 +6,6 @@
 
 -   `Academic Free License 1.1`
 
--   `scancode:afl-1.1`
-
 -   `scancode://afl-1.1`
 
 -   `AFL 1.1`
@@ -175,7 +173,6 @@
             "AFL-1.1",
             "Academic Free License v1.1",
             "Academic Free License 1.1",
-            "scancode:afl-1.1",
             "scancode://afl-1.1",
             "AFL 1.1"
         ],
@@ -183,7 +180,8 @@
         "__impliedAmbiguousNames": [
             "AFL, Version 1.1",
             "AFL, 1.1",
-            "AFL-1.1"
+            "AFL-1.1",
+            "scancode:afl-1.1"
         ],
         "__impliedComments": [
             [
@@ -362,14 +360,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Academic Free License 1.1",
-                        "AFL-1.1",
-                        "scancode:afl-1.1"
+                        "AFL-1.1"
                     ],
                     "__impliedId": "AFL-1.1",
                     "__impliedAmbiguousNames": [
                         "AFL, Version 1.1",
                         "AFL, 1.1",
-                        "AFL-1.1"
+                        "AFL-1.1",
+                        "scancode:afl-1.1"
                     ],
                     "__impliedComments": [
                         [

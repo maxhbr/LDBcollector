@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:zpl-2.0`
-
--   `osi:ZPL-2.0`
-
 -   `The Zope Public License, Version 2.0`
 
 -   `Zope-2.0`
@@ -246,8 +242,6 @@
         "__impliedNames": [
             "ZPL-2.0",
             "Zope Public License 2.0",
-            "scancode:zpl-2.0",
-            "osi:ZPL-2.0",
             "The Zope Public License, Version 2.0",
             "Zope-2.0",
             "License :: OSI Approved :: Zope Public License",
@@ -259,7 +253,9 @@
         "__impliedAmbiguousNames": [
             "Zope Public License 2.0",
             "ZPL-2.0",
-            "Zope Public License (ZPL) Version 2.0"
+            "Zope Public License (ZPL) Version 2.0",
+            "scancode:zpl-2.0",
+            "osi:ZPL-2.0"
         ],
         "__impliedComments": [
             [
@@ -656,15 +652,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Zope Public License 2.0",
-                        "ZPL-2.0",
-                        "scancode:zpl-2.0",
-                        "osi:ZPL-2.0"
+                        "ZPL-2.0"
                     ],
                     "__impliedId": "ZPL-2.0",
                     "__impliedAmbiguousNames": [
                         "Zope Public License 2.0",
                         "ZPL-2.0",
-                        "Zope Public License (ZPL) Version 2.0"
+                        "Zope Public License (ZPL) Version 2.0",
+                        "scancode:zpl-2.0",
+                        "osi:ZPL-2.0"
                     ],
                     "__impliedComments": [
                         [

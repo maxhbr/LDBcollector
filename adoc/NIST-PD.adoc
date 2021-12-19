@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:nist-pd`
 * `scancode://nist-pd`
 
 === Comments on (easy) usability
@@ -76,12 +75,12 @@ repository] is generated)
     "__impliedNames": [
         "NIST-PD",
         "NIST Public Domain Notice",
-        "scancode:nist-pd",
         "scancode://nist-pd"
     ],
     "__impliedId": "NIST-PD",
     "__impliedAmbiguousNames": [
-        "nist-pd"
+        "nist-pd",
+        "scancode:nist-pd"
     ],
     "__impliedComments": [
         [
@@ -199,12 +198,12 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "NIST Public Domain Notice",
-                    "NIST-PD",
-                    "scancode:nist-pd"
+                    "NIST-PD"
                 ],
                 "__impliedId": "NIST-PD",
                 "__impliedAmbiguousNames": [
-                    "nist-pd"
+                    "nist-pd",
+                    "scancode:nist-pd"
                 ],
                 "__impliedComments": [
                     [

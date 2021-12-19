@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `APAFML License`
-* `scancode:apafml`
 * `scancode://apafml`
 
 === Comments on (easy) usability
@@ -77,13 +76,13 @@ repository] is generated)
         "APAFML",
         "Adobe Postscript AFM License",
         "APAFML License",
-        "scancode:apafml",
         "scancode://apafml"
     ],
     "__impliedId": "APAFML",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "APAFML"
+        "APAFML",
+        "scancode:apafml"
     ],
     "__impliedComments": [
         [
@@ -214,12 +213,12 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "APAFML License",
-                    "APAFML",
-                    "scancode:apafml"
+                    "APAFML"
                 ],
                 "__impliedId": "APAFML",
                 "__impliedAmbiguousNames": [
-                    "APAFML"
+                    "APAFML",
+                    "scancode:apafml"
                 ],
                 "__impliedComments": [
                     [

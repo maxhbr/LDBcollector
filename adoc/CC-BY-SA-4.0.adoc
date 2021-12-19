@@ -13,7 +13,6 @@
 *Other Names:*
 
 * `Creative Commons BY-SA 4.0`
-* `scancode:cc-by-sa-4.0`
 * `Creative Commons Attribution Share-Alike 4.0`
 * `Creative Commons Attribution-ShareAlike 4.0 International`
 * `scancode://cc-by-sa-4.0`
@@ -702,7 +701,6 @@ repository] is generated)
         "CC-BY-SA-4.0",
         "cc-by-sa-4.0",
         "Creative Commons BY-SA 4.0",
-        "scancode:cc-by-sa-4.0",
         "Creative Commons Attribution Share-Alike 4.0",
         "Creative Commons Attribution-ShareAlike 4.0 International",
         "Creative Commons Attribution Share Alike 4.0 International",
@@ -715,7 +713,8 @@ repository] is generated)
         "Creative Commons Attribution-ShareAlike 4.0",
         "Creative Commons Attribution ShareAlike 4.0",
         "CC-BY-SA-4.0",
-        "CC BY-SA 4.0"
+        "CC BY-SA 4.0",
+        "scancode:cc-by-sa-4.0"
     ],
     "__impliedComments": [
         [
@@ -1160,15 +1159,15 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Creative Commons BY-SA 4.0",
-                    "CC-BY-SA-4.0",
-                    "scancode:cc-by-sa-4.0"
+                    "CC-BY-SA-4.0"
                 ],
                 "__impliedId": "CC-BY-SA-4.0",
                 "__impliedAmbiguousNames": [
                     "Creative Commons Attribution-ShareAlike 4.0",
                     "Creative Commons Attribution ShareAlike 4.0",
                     "CC-BY-SA-4.0",
-                    "CC BY-SA 4.0"
+                    "CC BY-SA 4.0",
+                    "scancode:cc-by-sa-4.0"
                 ],
                 "__impliedComments": [
                     [

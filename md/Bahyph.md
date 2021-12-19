@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:bahyph`
-
 -   `scancode://bahyph`
 
 ## Comments on (easy) usability
@@ -79,7 +77,6 @@
         "__impliedNames": [
             "Bahyph",
             "Bahyph License",
-            "scancode:bahyph",
             "scancode://bahyph"
         ],
         "__impliedId": "Bahyph",
@@ -88,7 +85,8 @@
             "Bahyph",
             "Bahyph License",
             "BAHYPH LICENSE",
-            "BAHYPH License"
+            "BAHYPH License",
+            "scancode:bahyph"
         ],
         "__impliedComments": [
             [
@@ -221,14 +219,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Bahyph License",
-                        "Bahyph",
-                        "scancode:bahyph"
+                        "Bahyph"
                     ],
                     "__impliedId": "Bahyph",
                     "__impliedAmbiguousNames": [
                         "Bahyph License",
                         "BAHYPH LICENSE",
-                        "BAHYPH License"
+                        "BAHYPH License",
+                        "scancode:bahyph"
                     ],
                     "__impliedComments": [
                         [

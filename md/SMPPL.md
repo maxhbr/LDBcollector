@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:smppl`
-
 -   `scancode://smppl`
 
 ## Comments on (easy) usability
@@ -78,14 +76,14 @@
         "__impliedNames": [
             "SMPPL",
             "Secure Messaging Protocol Public License",
-            "scancode:smppl",
             "scancode://smppl"
         ],
         "__impliedId": "SMPPL",
         "__impliedAmbiguousNames": [
             "SMP Public License",
             "Secure Messaging Protocol (SMP) Public License",
-            "Secure Messaging Protocol Public License"
+            "Secure Messaging Protocol Public License",
+            "scancode:smppl"
         ],
         "__impliedComments": [
             [
@@ -189,14 +187,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Secure Messaging Protocol Public License",
-                        "SMPPL",
-                        "scancode:smppl"
+                        "SMPPL"
                     ],
                     "__impliedId": "SMPPL",
                     "__impliedAmbiguousNames": [
                         "SMP Public License",
                         "Secure Messaging Protocol (SMP) Public License",
-                        "Secure Messaging Protocol Public License"
+                        "Secure Messaging Protocol Public License",
+                        "scancode:smppl"
                     ],
                     "__impliedComments": [
                         [

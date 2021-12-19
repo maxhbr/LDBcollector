@@ -6,12 +6,6 @@
 
 -   `CDDL 1.0`
 
--   `scancode:cddl-1.0`
-
--   `osi:CDDL-1.0`
-
--   `osi:cddl1`
-
 -   `cddl1`
 
 -   `Common Development and Distribution License, Version 1.0`
@@ -430,9 +424,6 @@
             "CDDL-1.0",
             "Common Development and Distribution License 1.0",
             "CDDL 1.0",
-            "scancode:cddl-1.0",
-            "osi:CDDL-1.0",
-            "osi:cddl1",
             "cddl1",
             "Common Development and Distribution License, Version 1.0",
             "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
@@ -450,7 +441,10 @@
             "Common Development and Distribution Licence version 1.0 (CDDL)",
             "Common Development and Distribution License (CDDL), Version 1.0",
             "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
-            "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved"
+            "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved",
+            "scancode:cddl-1.0",
+            "osi:CDDL-1.0",
+            "osi:cddl1"
         ],
         "__impliedComments": [
             [
@@ -1091,10 +1085,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "CDDL 1.0",
-                        "CDDL-1.0",
-                        "scancode:cddl-1.0",
-                        "osi:CDDL-1.0",
-                        "osi:cddl1"
+                        "CDDL-1.0"
                     ],
                     "__impliedId": "CDDL-1.0",
                     "__impliedAmbiguousNames": [
@@ -1106,7 +1097,10 @@
                         "Common Development and Distribution Licence version 1.0 (CDDL)",
                         "Common Development and Distribution License (CDDL), Version 1.0",
                         "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
-                        "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved"
+                        "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved",
+                        "scancode:cddl-1.0",
+                        "osi:CDDL-1.0",
+                        "osi:cddl1"
                     ],
                     "__impliedComments": [
                         [

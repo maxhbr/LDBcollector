@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:mup`
 * `scancode://mup`
 
 === Comments on (easy) usability
@@ -85,7 +84,6 @@ repository] is generated)
     "__impliedNames": [
         "Mup",
         "Mup License",
-        "scancode:mup",
         "scancode://mup"
     ],
     "__impliedId": "Mup",
@@ -94,7 +92,8 @@ repository] is generated)
         "Mup",
         "Mup License",
         "MUP LICENSE",
-        "MUP License"
+        "MUP License",
+        "scancode:mup"
     ],
     "__impliedComments": [
         [
@@ -241,14 +240,14 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Mup License",
-                    "Mup",
-                    "scancode:mup"
+                    "Mup"
                 ],
                 "__impliedId": "Mup",
                 "__impliedAmbiguousNames": [
                     "Mup License",
                     "MUP LICENSE",
-                    "MUP License"
+                    "MUP License",
+                    "scancode:mup"
                 ],
                 "__impliedComments": [
                     [

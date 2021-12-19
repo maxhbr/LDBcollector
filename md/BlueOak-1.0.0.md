@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:blueoak-1.0.0`
-
 -   `scancode://blueoak-1.0.0`
 
 ## Comments on (easy) usability
@@ -112,14 +110,14 @@
         "__impliedNames": [
             "BlueOak-1.0.0",
             "Blue Oak Model License 1.0.0",
-            "scancode:blueoak-1.0.0",
             "scancode://blueoak-1.0.0"
         ],
         "__impliedId": "BlueOak-1.0.0",
         "__impliedAmbiguousNames": [
             "Blue Oak Model License 1.0.0",
             "BlueOak-1.0.0",
-            "Blue Oak Model License Version 1.0.0"
+            "Blue Oak Model License Version 1.0.0",
+            "scancode:blueoak-1.0.0"
         ],
         "__impliedComments": [
             [
@@ -229,14 +227,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Blue Oak Model License 1.0.0",
-                        "BlueOak-1.0.0",
-                        "scancode:blueoak-1.0.0"
+                        "BlueOak-1.0.0"
                     ],
                     "__impliedId": "BlueOak-1.0.0",
                     "__impliedAmbiguousNames": [
                         "Blue Oak Model License 1.0.0",
                         "BlueOak-1.0.0",
-                        "Blue Oak Model License Version 1.0.0"
+                        "Blue Oak Model License Version 1.0.0",
+                        "scancode:blueoak-1.0.0"
                     ],
                     "__impliedComments": [
                         [

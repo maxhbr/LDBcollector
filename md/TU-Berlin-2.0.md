@@ -6,8 +6,6 @@
 
 -   `TU Berlin License 2.0`
 
--   `scancode:tu-berlin-2.0`
-
 -   `scancode://tu-berlin-2.0`
 
 ## Comments on (easy) usability
@@ -86,7 +84,6 @@
             "TU-Berlin-2.0",
             "Technische Universitaet Berlin License 2.0",
             "TU Berlin License 2.0",
-            "scancode:tu-berlin-2.0",
             "scancode://tu-berlin-2.0"
         ],
         "__impliedId": "TU-Berlin-2.0",
@@ -98,7 +95,8 @@
             "TU Berlin License, Version 2.0",
             "TU Berlin License 2.0",
             "TU-Berlin License, Version 2.0",
-            "TU-Berlin License, 2.0"
+            "TU-Berlin License, 2.0",
+            "scancode:tu-berlin-2.0"
         ],
         "__impliedComments": [
             [
@@ -213,8 +211,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "TU Berlin License 2.0",
-                        "TU-Berlin-2.0",
-                        "scancode:tu-berlin-2.0"
+                        "TU-Berlin-2.0"
                     ],
                     "__impliedId": "TU-Berlin-2.0",
                     "__impliedAmbiguousNames": [
@@ -225,7 +222,8 @@
                         "TU Berlin License, Version 2.0",
                         "TU Berlin License 2.0",
                         "TU-Berlin License, Version 2.0",
-                        "TU-Berlin License, 2.0"
+                        "TU-Berlin License, 2.0",
+                        "scancode:tu-berlin-2.0"
                     ],
                     "__impliedComments": [
                         [

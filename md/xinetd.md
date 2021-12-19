@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:xinetd`
-
 -   `scancode://xinetd`
 
 ## Comments on (easy) usability
@@ -120,7 +118,6 @@
         "__impliedNames": [
             "xinetd",
             "xinetd License",
-            "scancode:xinetd",
             "scancode://xinetd"
         ],
         "__impliedId": "xinetd",
@@ -129,7 +126,8 @@
             "xinetd",
             "xinetd License",
             "XINETD LICENSE",
-            "XINETD License"
+            "XINETD License",
+            "scancode:xinetd"
         ],
         "__impliedComments": [
             [
@@ -278,14 +276,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "xinetd License",
-                        "xinetd",
-                        "scancode:xinetd"
+                        "xinetd"
                     ],
                     "__impliedId": "xinetd",
                     "__impliedAmbiguousNames": [
                         "xinetd License",
                         "XINETD LICENSE",
-                        "XINETD License"
+                        "XINETD License",
+                        "scancode:xinetd"
                     ],
                     "__impliedComments": [
                         [

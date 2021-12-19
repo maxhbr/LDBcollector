@@ -12,8 +12,6 @@
 *Other Names:*
 
 * `OGC Software License 1.0`
-* `scancode:ogc-1.0`
-* `scancode:ogc-2006`
 * `scancode://ogc-1.0`
 * `OGC 1.0`
 
@@ -95,15 +93,15 @@ repository] is generated)
     "__impliedNames": [
         "OGC-1.0",
         "OGC Software License 1.0",
-        "scancode:ogc-1.0",
-        "scancode:ogc-2006",
         "OGC Software License, Version 1.0",
         "scancode://ogc-1.0",
         "OGC 1.0"
     ],
     "__impliedId": "OGC-1.0",
     "__impliedAmbiguousNames": [
-        "OGC Software License, Version 1.0"
+        "OGC Software License, Version 1.0",
+        "scancode:ogc-1.0",
+        "scancode:ogc-2006"
     ],
     "__impliedComments": [
         [
@@ -206,13 +204,13 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "OGC Software License 1.0",
-                    "OGC-1.0",
-                    "scancode:ogc-1.0",
-                    "scancode:ogc-2006"
+                    "OGC-1.0"
                 ],
                 "__impliedId": "OGC-1.0",
                 "__impliedAmbiguousNames": [
-                    "OGC Software License, Version 1.0"
+                    "OGC Software License, Version 1.0",
+                    "scancode:ogc-1.0",
+                    "scancode:ogc-2006"
                 ],
                 "__impliedComments": [
                     [

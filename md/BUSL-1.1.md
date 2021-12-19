@@ -6,8 +6,6 @@
 
 -   `Businnes-Source-1.1`
 
--   `scancode:bsl-1.1`
-
 -   `scancode://bsl-1.1`
 
 ## Comments on (easy) usability
@@ -136,13 +134,13 @@
             "BUSL-1.1",
             "Business Source License 1.1",
             "Businnes-Source-1.1",
-            "scancode:bsl-1.1",
             "scancode://bsl-1.1"
         ],
         "__impliedId": "BUSL-1.1",
         "__impliedAmbiguousNames": [
             "Business Source License 1.1",
-            "https://github.com/getsentry/sentry/blob/master/LICENSE"
+            "https://github.com/getsentry/sentry/blob/master/LICENSE",
+            "scancode:bsl-1.1"
         ],
         "__impliedComments": [
             [
@@ -250,13 +248,13 @@
                     "__impliedNames": [
                         "Business Source License 1.1",
                         "Businnes-Source-1.1",
-                        "BUSL-1.1",
-                        "scancode:bsl-1.1"
+                        "BUSL-1.1"
                     ],
                     "__impliedId": "BUSL-1.1",
                     "__impliedAmbiguousNames": [
                         "Business Source License 1.1",
-                        "https://github.com/getsentry/sentry/blob/master/LICENSE"
+                        "https://github.com/getsentry/sentry/blob/master/LICENSE",
+                        "scancode:bsl-1.1"
                     ],
                     "__impliedComments": [
                         [

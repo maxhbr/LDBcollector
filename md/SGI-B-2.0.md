@@ -8,8 +8,6 @@
 
 -   `SGI B License 2.0`
 
--   `scancode:sgi-freeb-2.0`
-
 -   `SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)`
 
 -   `scancode://sgi-freeb-2.0`
@@ -159,7 +157,6 @@
             "SGI Free Software License B v2.0",
             "SGI Free Software License B 2.0",
             "SGI B License 2.0",
-            "scancode:sgi-freeb-2.0",
             "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
             "scancode://sgi-freeb-2.0"
         ],
@@ -176,7 +173,8 @@
             "SGI-B License, Version 2.0",
             "SGI-B License, 2.0",
             "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
-            "SGI Free Software License B, version 2.0"
+            "SGI Free Software License B, version 2.0",
+            "scancode:sgi-freeb-2.0"
         ],
         "__impliedComments": [
             [
@@ -473,8 +471,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "SGI B License 2.0",
-                        "SGI-B-2.0",
-                        "scancode:sgi-freeb-2.0"
+                        "SGI-B-2.0"
                     ],
                     "__impliedId": "SGI-B-2.0",
                     "__impliedAmbiguousNames": [
@@ -487,7 +484,8 @@
                         "SGI-B License, Version 2.0",
                         "SGI-B License, 2.0",
                         "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
-                        "SGI Free Software License B, version 2.0"
+                        "SGI Free Software License B, version 2.0",
+                        "scancode:sgi-freeb-2.0"
                     ],
                     "__impliedComments": [
                         [

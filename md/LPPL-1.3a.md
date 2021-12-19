@@ -6,8 +6,6 @@
 
 -   `LPPL 1.3a`
 
--   `scancode:lppl-1.3a`
-
 -   `scancode://lppl-1.3a`
 
 ## Comments on (easy) usability
@@ -453,14 +451,14 @@
         "__impliedNames": [
             "LPPL-1.3a",
             "LPPL 1.3a",
-            "scancode:lppl-1.3a",
             "LaTeX Project Public License v1.3a",
             "scancode://lppl-1.3a"
         ],
         "__impliedId": "LPPL-1.3a",
         "__impliedAmbiguousNames": [
             "LPPL, Version 1.3a",
-            "LPPL 1.3a"
+            "LPPL 1.3a",
+            "scancode:lppl-1.3a"
         ],
         "__impliedComments": [
             [
@@ -593,13 +591,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "LPPL 1.3a",
-                        "LPPL-1.3a",
-                        "scancode:lppl-1.3a"
+                        "LPPL-1.3a"
                     ],
                     "__impliedId": "LPPL-1.3a",
                     "__impliedAmbiguousNames": [
                         "LPPL, Version 1.3a",
-                        "LPPL 1.3a"
+                        "LPPL 1.3a",
+                        "scancode:lppl-1.3a"
                     ],
                     "__impliedComments": [
                         [

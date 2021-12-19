@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:adobe-scl`
-
 -   `scancode://adobe-scl`
 
 -   `Adobe Source Code License 2006`
@@ -98,7 +96,6 @@
         "__impliedNames": [
             "Adobe-2006",
             "Adobe Systems Incorporated Source Code License Agreement",
-            "scancode:adobe-scl",
             "scancode://adobe-scl",
             "Adobe Source Code License 2006"
         ],
@@ -114,7 +111,8 @@
             "Adobe Systems Incorporated Source Code License Agreement",
             "Adobe Source Code License Agreement",
             "http://fedoraproject.org/wiki/Licensing/AdobeLicense",
-            "https://spdx.org/licenses/adobe-2006"
+            "https://spdx.org/licenses/adobe-2006",
+            "scancode:adobe-scl"
         ],
         "__impliedComments": [
             [
@@ -259,8 +257,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Adobe Systems Incorporated Source Code License Agreement",
-                        "Adobe-2006",
-                        "scancode:adobe-scl"
+                        "Adobe-2006"
                     ],
                     "__impliedId": "Adobe-2006",
                     "__impliedAmbiguousNames": [
@@ -272,7 +269,8 @@
                         "Adobe Systems Incorporated Source Code License Agreement",
                         "Adobe Source Code License Agreement",
                         "http://fedoraproject.org/wiki/Licensing/AdobeLicense",
-                        "https://spdx.org/licenses/adobe-2006"
+                        "https://spdx.org/licenses/adobe-2006",
+                        "scancode:adobe-scl"
                     ],
                     "__impliedComments": [
                         [

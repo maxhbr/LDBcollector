@@ -6,8 +6,6 @@
 
 -   `TMate License`
 
--   `scancode:tmate`
-
 -   `TMate Open Source License for "TMate JavaSVN library"`
 
 -   `scancode://tmate`
@@ -176,7 +174,6 @@
             "TMate",
             "TMate Open Source License",
             "TMate License",
-            "scancode:tmate",
             "TMate Open Source License for \"TMate JavaSVN library\"",
             "scancode://tmate"
         ],
@@ -188,7 +185,8 @@
             "TMATE LICENSE",
             "TMATE License",
             "TMate Open Source License",
-            "http://svnkit.com/license.html"
+            "http://svnkit.com/license.html",
+            "scancode:tmate"
         ],
         "__impliedComments": [
             [
@@ -507,8 +505,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "TMate License",
-                        "TMate",
-                        "scancode:tmate"
+                        "TMate"
                     ],
                     "__impliedId": "TMate",
                     "__impliedAmbiguousNames": [
@@ -516,7 +513,8 @@
                         "TMATE LICENSE",
                         "TMATE License",
                         "TMate Open Source License",
-                        "http://svnkit.com/license.html"
+                        "http://svnkit.com/license.html",
+                        "scancode:tmate"
                     ],
                     "__impliedComments": [
                         [

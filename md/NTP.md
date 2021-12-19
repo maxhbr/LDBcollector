@@ -4,12 +4,6 @@
 
 **Other Names:**
 
--   `scancode:network-time-protocol`
-
--   `scancode:ntpl`
-
--   `osi:NTP`
-
 -   `NTP License (NTP)`
 
 -   `scancode://mit-old-style-no-advert`
@@ -125,9 +119,6 @@
         "__impliedNames": [
             "NTP",
             "NTP License",
-            "scancode:network-time-protocol",
-            "scancode:ntpl",
-            "osi:NTP",
             "NTP License (NTP)",
             "scancode://mit-old-style-no-advert",
             "MIT Old Style no advertising",
@@ -135,7 +126,10 @@
         ],
         "__impliedId": "NTP",
         "__impliedAmbiguousNames": [
-            "NTP License"
+            "NTP License",
+            "scancode:network-time-protocol",
+            "scancode:ntpl",
+            "osi:NTP"
         ],
         "__impliedComments": [
             [
@@ -325,14 +319,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "NTP License",
-                        "NTP",
-                        "scancode:network-time-protocol",
-                        "scancode:ntpl",
-                        "osi:NTP"
+                        "NTP"
                     ],
                     "__impliedId": "NTP",
                     "__impliedAmbiguousNames": [
-                        "NTP License"
+                        "NTP License",
+                        "scancode:network-time-protocol",
+                        "scancode:ntpl",
+                        "osi:NTP"
                     ],
                     "__impliedComments": [
                         [

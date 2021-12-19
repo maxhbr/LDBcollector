@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:apsl-1.0`
-
 -   `scancode://apsl-1.0`
 
 -   `APSL 1.0`
@@ -477,7 +475,6 @@
         "__impliedNames": [
             "APSL-1.0",
             "Apple Public Source License 1.0",
-            "scancode:apsl-1.0",
             "scancode://apsl-1.0",
             "APSL 1.0"
         ],
@@ -491,7 +488,8 @@
             "APPLE PUBLIC SOURCE LICENSE 1.0",
             "APPLE PUBLIC SOURCE LICENSE v1.0",
             "APPLE PUBLIC SOURCE LICENSE Version 1.0",
-            "Apple Public Source License Ver. 1.0"
+            "Apple Public Source License Ver. 1.0",
+            "scancode:apsl-1.0"
         ],
         "__impliedComments": [
             [
@@ -698,8 +696,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Apple Public Source License 1.0",
-                        "APSL-1.0",
-                        "scancode:apsl-1.0"
+                        "APSL-1.0"
                     ],
                     "__impliedId": "APSL-1.0",
                     "__impliedAmbiguousNames": [
@@ -709,7 +706,8 @@
                         "APPLE PUBLIC SOURCE LICENSE 1.0",
                         "APPLE PUBLIC SOURCE LICENSE v1.0",
                         "APPLE PUBLIC SOURCE LICENSE Version 1.0",
-                        "Apple Public Source License Ver. 1.0"
+                        "Apple Public Source License Ver. 1.0",
+                        "scancode:apsl-1.0"
                     ],
                     "__impliedComments": [
                         [

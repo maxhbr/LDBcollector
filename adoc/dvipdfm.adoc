@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:dvipdfm`
 * `scancode://dvipdfm`
 
 === Comments on (easy) usability
@@ -69,7 +68,6 @@ repository] is generated)
     "__impliedNames": [
         "dvipdfm",
         "dvipdfm License",
-        "scancode:dvipdfm",
         "scancode://dvipdfm"
     ],
     "__impliedId": "dvipdfm",
@@ -78,7 +76,8 @@ repository] is generated)
         "dvipdfm",
         "dvipdfm License",
         "DVIPDFM LICENSE",
-        "DVIPDFM License"
+        "DVIPDFM License",
+        "scancode:dvipdfm"
     ],
     "__impliedComments": [
         [
@@ -225,14 +224,14 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "dvipdfm License",
-                    "dvipdfm",
-                    "scancode:dvipdfm"
+                    "dvipdfm"
                 ],
                 "__impliedId": "dvipdfm",
                 "__impliedAmbiguousNames": [
                     "dvipdfm License",
                     "DVIPDFM LICENSE",
-                    "DVIPDFM License"
+                    "DVIPDFM License",
+                    "scancode:dvipdfm"
                 ],
                 "__impliedComments": [
                     [

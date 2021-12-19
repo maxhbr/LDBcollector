@@ -14,10 +14,6 @@
 
 -   `ALv2`
 
--   `scancode:apache-2.0`
-
--   `osi:Apache-2.0`
-
 -   `apache2.0`
 
 -   `License :: OSI Approved :: Apache Software License`
@@ -530,8 +526,6 @@
             "ALv2",
             "Apache License 2.0",
             "apache-2.0",
-            "scancode:apache-2.0",
-            "osi:Apache-2.0",
             "apache2.0",
             "License :: OSI Approved :: Apache Software License",
             "scancode://apache-2.0",
@@ -605,7 +599,9 @@
             "Apache (Software) License, version 2.0",
             "http://www.apache.org/licenses/LICENSE-2.0",
             "https://www.apache.org/licenses/LICENSE-2.0",
-            "http://xml.apache.org/xerces2-j/"
+            "http://xml.apache.org/xerces2-j/",
+            "scancode:apache-2.0",
+            "osi:Apache-2.0"
         ],
         "__impliedComments": [
             [
@@ -1256,9 +1252,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Apache License 2.0",
-                        "Apache-2.0",
-                        "scancode:apache-2.0",
-                        "osi:Apache-2.0"
+                        "Apache-2.0"
                     ],
                     "__impliedId": "Apache-2.0",
                     "__impliedAmbiguousNames": [
@@ -1326,7 +1320,9 @@
                         "Apache (Software) License, version 2.0",
                         "http://www.apache.org/licenses/LICENSE-2.0",
                         "https://www.apache.org/licenses/LICENSE-2.0",
-                        "http://xml.apache.org/xerces2-j/"
+                        "http://xml.apache.org/xerces2-j/",
+                        "scancode:apache-2.0",
+                        "osi:Apache-2.0"
                     ],
                     "__impliedComments": [
                         [

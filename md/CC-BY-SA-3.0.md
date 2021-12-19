@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-SA 3.0`
 
--   `scancode:cc-by-sa-3.0`
-
 -   `Creative Commons Attribution-ShareAlike 3.0 Unported`
 
 -   `scancode://cc-by-sa-3.0`
@@ -583,7 +581,6 @@
         "__impliedNames": [
             "CC-BY-SA-3.0",
             "Creative Commons BY-SA 3.0",
-            "scancode:cc-by-sa-3.0",
             "Creative Commons Attribution-ShareAlike 3.0 Unported",
             "Creative Commons Attribution Share Alike 3.0 Unported",
             "scancode://cc-by-sa-3.0"
@@ -596,7 +593,8 @@
             "Creative Commons Attribution-ShareAlike 3.0",
             "Creative Common Attribution-ShareAlike 3.0",
             "http://creativecommons.org/licenses/by-sa/3.0",
-            "Creative Commons Attribution-Share Alike 3.0"
+            "Creative Commons Attribution-Share Alike 3.0",
+            "scancode:cc-by-sa-3.0"
         ],
         "__impliedComments": [
             [
@@ -991,8 +989,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-SA 3.0",
-                        "CC-BY-SA-3.0",
-                        "scancode:cc-by-sa-3.0"
+                        "CC-BY-SA-3.0"
                     ],
                     "__impliedId": "CC-BY-SA-3.0",
                     "__impliedAmbiguousNames": [
@@ -1001,7 +998,8 @@
                         "Creative Commons Attribution-ShareAlike 3.0",
                         "Creative Common Attribution-ShareAlike 3.0",
                         "http://creativecommons.org/licenses/by-sa/3.0",
-                        "Creative Commons Attribution-Share Alike 3.0"
+                        "Creative Commons Attribution-Share Alike 3.0",
+                        "scancode:cc-by-sa-3.0"
                     ],
                     "__impliedComments": [
                         [

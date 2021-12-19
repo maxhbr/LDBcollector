@@ -6,8 +6,6 @@
 
 -   `Open Use of Data Agreement 1.0`
 
--   `scancode:o-uda-1.0`
-
 -   `scancode://o-uda-1.0`
 
 ## Comments on (easy) usability
@@ -100,13 +98,13 @@
         "__impliedNames": [
             "O-UDA-1.0",
             "Open Use of Data Agreement 1.0",
-            "scancode:o-uda-1.0",
             "Open Use of Data Agreement v1.0",
             "scancode://o-uda-1.0"
         ],
         "__impliedId": "O-UDA-1.0",
         "__impliedAmbiguousNames": [
-            "Open Use of Data Agreement v1.0"
+            "Open Use of Data Agreement v1.0",
+            "scancode:o-uda-1.0"
         ],
         "__impliedComments": [
             [
@@ -219,12 +217,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Open Use of Data Agreement 1.0",
-                        "O-UDA-1.0",
-                        "scancode:o-uda-1.0"
+                        "O-UDA-1.0"
                     ],
                     "__impliedId": "O-UDA-1.0",
                     "__impliedAmbiguousNames": [
-                        "Open Use of Data Agreement v1.0"
+                        "Open Use of Data Agreement v1.0",
+                        "scancode:o-uda-1.0"
                     ],
                     "__impliedComments": [
                         [

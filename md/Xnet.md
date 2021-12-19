@@ -6,10 +6,6 @@
 
 -   `MIT License (X.Net)`
 
--   `scancode:xnet`
-
--   `osi:Xnet`
-
 -   `The X.Net, Inc. License`
 
 -   `License :: OSI Approved :: X.Net License`
@@ -129,8 +125,6 @@
             "Xnet",
             "X.Net License",
             "MIT License (X.Net)",
-            "scancode:xnet",
-            "osi:Xnet",
             "The X.Net, Inc. License",
             "License :: OSI Approved :: X.Net License",
             "scancode://xnet",
@@ -142,7 +136,9 @@
             "Xnet license",
             "Xnet License",
             "XNet license",
-            "XNet License"
+            "XNet License",
+            "scancode:xnet",
+            "osi:Xnet"
         ],
         "__impliedComments": [
             [
@@ -353,9 +349,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "MIT License (X.Net)",
-                        "Xnet",
-                        "scancode:xnet",
-                        "osi:Xnet"
+                        "Xnet"
                     ],
                     "__impliedId": "Xnet",
                     "__impliedAmbiguousNames": [
@@ -363,7 +357,9 @@
                         "Xnet license",
                         "Xnet License",
                         "XNet license",
-                        "XNet License"
+                        "XNet License",
+                        "scancode:xnet",
+                        "osi:Xnet"
                     ],
                     "__impliedComments": [
                         [

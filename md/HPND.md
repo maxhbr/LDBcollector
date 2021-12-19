@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:historical`
-
--   `osi:HPND`
-
 -   `scancode://historical`
 
 ## Comments on (easy) usability
@@ -126,8 +122,6 @@
         "__impliedNames": [
             "HPND",
             "Historical Permission Notice and Disclaimer",
-            "scancode:historical",
-            "osi:HPND",
             "scancode://historical"
         ],
         "__impliedId": "HPND",
@@ -136,7 +130,9 @@
             "MIT",
             "Historic Permission Notice and Disclaimer",
             "http://www.opensource.org/licenses/historical.php",
-            "https://spdx.org/licenses/hpnd"
+            "https://spdx.org/licenses/hpnd",
+            "scancode:historical",
+            "osi:HPND"
         ],
         "__impliedComments": [
             [
@@ -361,15 +357,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Historical Permission Notice and Disclaimer",
-                        "HPND",
-                        "scancode:historical",
-                        "osi:HPND"
+                        "HPND"
                     ],
                     "__impliedId": "HPND",
                     "__impliedAmbiguousNames": [
                         "Historic Permission Notice and Disclaimer",
                         "http://www.opensource.org/licenses/historical.php",
-                        "https://spdx.org/licenses/hpnd"
+                        "https://spdx.org/licenses/hpnd",
+                        "scancode:historical",
+                        "osi:HPND"
                     ],
                     "__impliedComments": [
                         [

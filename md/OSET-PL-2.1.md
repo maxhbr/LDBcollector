@@ -6,10 +6,6 @@
 
 -   `OSET Public License 2.1`
 
--   `scancode:oset-pl-2.1`
-
--   `osi:OPL-2.1`
-
 -   `scancode://oset-pl-2.1`
 
 ## Comments on (easy) usability
@@ -177,8 +173,6 @@
         "__impliedNames": [
             "OSET-PL-2.1",
             "OSET Public License 2.1",
-            "scancode:oset-pl-2.1",
-            "osi:OPL-2.1",
             "OSET Public License version 2.1",
             "scancode://oset-pl-2.1"
         ],
@@ -188,7 +182,9 @@
             "OSET PL, 2.1",
             "OSET-PL, Version 2.1",
             "OSET-PL, 2.1",
-            "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1"
+            "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1",
+            "scancode:oset-pl-2.1",
+            "osi:OPL-2.1"
         ],
         "__impliedComments": [
             [
@@ -339,9 +335,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "OSET Public License 2.1",
-                        "OSET-PL-2.1",
-                        "scancode:oset-pl-2.1",
-                        "osi:OPL-2.1"
+                        "OSET-PL-2.1"
                     ],
                     "__impliedId": "OSET-PL-2.1",
                     "__impliedAmbiguousNames": [
@@ -349,7 +343,9 @@
                         "OSET PL, 2.1",
                         "OSET-PL, Version 2.1",
                         "OSET-PL, 2.1",
-                        "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1"
+                        "OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1",
+                        "scancode:oset-pl-2.1",
+                        "osi:OPL-2.1"
                     ],
                     "__impliedComments": [
                         [

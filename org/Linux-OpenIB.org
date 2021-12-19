@@ -8,8 +8,6 @@
 
 *Other Names:*
 
-- =scancode:linux-openib=
-
 - =scancode://linux-openib=
 
 ** Comments on (easy) usability
@@ -88,13 +86,13 @@
           "Linux-OpenIB",
           "Linux Kernel Variant of OpenIB.org license",
           "Linux Kernel Variant of OpenIB.org License",
-          "scancode:linux-openib",
           "scancode://linux-openib"
       ],
       "__impliedId": "Linux-OpenIB",
       "__impliedAmbiguousNames": [
           "Linux Kernel Variant of OpenIB.org license",
-          "Linux-OpenIB"
+          "Linux-OpenIB",
+          "scancode:linux-openib"
       ],
       "__impliedComments": [
           [
@@ -222,13 +220,13 @@
               "_implications": {
                   "__impliedNames": [
                       "Linux Kernel Variant of OpenIB.org License",
-                      "Linux-OpenIB",
-                      "scancode:linux-openib"
+                      "Linux-OpenIB"
                   ],
                   "__impliedId": "Linux-OpenIB",
                   "__impliedAmbiguousNames": [
                       "Linux Kernel Variant of OpenIB.org license",
-                      "Linux-OpenIB"
+                      "Linux-OpenIB",
+                      "scancode:linux-openib"
                   ],
                   "__impliedComments": [
                       [

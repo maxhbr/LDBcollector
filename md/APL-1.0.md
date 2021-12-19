@@ -6,10 +6,6 @@
 
 -   `Adaptice Public License 1.0`
 
--   `scancode:adapt-1.0`
-
--   `osi:APL-1.0`
-
 -   `apl1.0`
 
 -   `Adaptive Public License, Version 1.0`
@@ -425,8 +421,6 @@
         "__impliedNames": [
             "APL-1.0",
             "Adaptice Public License 1.0",
-            "scancode:adapt-1.0",
-            "osi:APL-1.0",
             "Adaptive Public License 1.0",
             "apl1.0",
             "Adaptive Public License, Version 1.0",
@@ -441,7 +435,9 @@
             "ADAPTIVE PUBLIC LICENSE Version 1.0",
             "ADAPTIVE PUBLIC LICENSE 1.0",
             "Adaptive Public License Version 1.0",
-            "Adaptive Public License 1.0"
+            "Adaptive Public License 1.0",
+            "scancode:adapt-1.0",
+            "osi:APL-1.0"
         ],
         "__impliedComments": [
             [
@@ -635,9 +631,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Adaptice Public License 1.0",
-                        "APL-1.0",
-                        "scancode:adapt-1.0",
-                        "osi:APL-1.0"
+                        "APL-1.0"
                     ],
                     "__impliedId": "APL-1.0",
                     "__impliedAmbiguousNames": [
@@ -647,7 +641,9 @@
                         "ADAPTIVE PUBLIC LICENSE Version 1.0",
                         "ADAPTIVE PUBLIC LICENSE 1.0",
                         "Adaptive Public License Version 1.0",
-                        "Adaptive Public License 1.0"
+                        "Adaptive Public License 1.0",
+                        "scancode:adapt-1.0",
+                        "osi:APL-1.0"
                     ],
                     "__impliedComments": [
                         [

@@ -6,8 +6,6 @@
 
 -   `JPNIC License`
 
--   `scancode:jpnic-idnkit`
-
 -   `scancode://jpnic-idnkit`
 
 -   `JPNIC idnkit License`
@@ -95,7 +93,6 @@
         "__impliedNames": [
             "JPNIC",
             "JPNIC License",
-            "scancode:jpnic-idnkit",
             "Japan Network Information Center License",
             "scancode://jpnic-idnkit",
             "JPNIC idnkit License"
@@ -103,7 +100,8 @@
         "__impliedId": "JPNIC",
         "__impliedAmbiguousNames": [
             "Japan Network Information Center Terms",
-            "Japan Network Information Center License"
+            "Japan Network Information Center License",
+            "scancode:jpnic-idnkit"
         ],
         "__impliedComments": [
             [
@@ -217,13 +215,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "JPNIC License",
-                        "JPNIC",
-                        "scancode:jpnic-idnkit"
+                        "JPNIC"
                     ],
                     "__impliedId": "JPNIC",
                     "__impliedAmbiguousNames": [
                         "Japan Network Information Center Terms",
-                        "Japan Network Information Center License"
+                        "Japan Network Information Center License",
+                        "scancode:jpnic-idnkit"
                     ],
                     "__impliedComments": [
                         [

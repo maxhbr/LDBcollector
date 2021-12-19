@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:freetype`
-
 -   `scancode://freetype`
 
 ## Comments on (easy) usability
@@ -375,7 +373,6 @@
             "FTL",
             "Freetype Project License",
             "FreeType Project License",
-            "scancode:freetype",
             "FreeType Project LICENSE",
             "scancode://freetype"
         ],
@@ -389,7 +386,8 @@
             "http://www.freetype.org/FTL.TXT",
             "http://www.freetype.org/license.html",
             "https://spdx.org/licenses/ftl",
-            "FreeType License"
+            "FreeType License",
+            "scancode:freetype"
         ],
         "__impliedComments": [
             [
@@ -839,8 +837,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "FreeType Project License",
-                        "FTL",
-                        "scancode:freetype"
+                        "FTL"
                     ],
                     "__impliedId": "FTL",
                     "__impliedAmbiguousNames": [
@@ -852,7 +849,8 @@
                         "http://www.freetype.org/FTL.TXT",
                         "http://www.freetype.org/license.html",
                         "https://spdx.org/licenses/ftl",
-                        "FreeType License"
+                        "FreeType License",
+                        "scancode:freetype"
                     ],
                     "__impliedComments": [
                         [

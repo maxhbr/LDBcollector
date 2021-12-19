@@ -11,8 +11,6 @@
 
 *Other Names:*
 
-* `scancode:motosoto-0.9.1`
-* `osi:Motosoto`
 * `Motosoto Open Source License, Version 0.9.1`
 * `License :: OSI Approved :: Motosoto License`
 * `scancode://motosoto-0.9.1`
@@ -228,8 +226,6 @@ repository] is generated)
     "__impliedNames": [
         "Motosoto",
         "Motosoto License",
-        "scancode:motosoto-0.9.1",
-        "osi:Motosoto",
         "Motosoto Open Source License, Version 0.9.1",
         "License :: OSI Approved :: Motosoto License",
         "scancode://motosoto-0.9.1",
@@ -243,7 +239,9 @@ repository] is generated)
         "MOTOSOTO LICENSE",
         "MOTOSOTO License",
         "MOTOSOTO OPEN SOURCE LICENSE",
-        "MOTOSOTO Open Source License"
+        "MOTOSOTO Open Source License",
+        "scancode:motosoto-0.9.1",
+        "osi:Motosoto"
     ],
     "__impliedComments": [
         [
@@ -476,9 +474,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Motosoto License",
-                    "Motosoto",
-                    "scancode:motosoto-0.9.1",
-                    "osi:Motosoto"
+                    "Motosoto"
                 ],
                 "__impliedId": "Motosoto",
                 "__impliedAmbiguousNames": [
@@ -486,7 +482,9 @@ repository] is generated)
                     "MOTOSOTO LICENSE",
                     "MOTOSOTO License",
                     "MOTOSOTO OPEN SOURCE LICENSE",
-                    "MOTOSOTO Open Source License"
+                    "MOTOSOTO Open Source License",
+                    "scancode:motosoto-0.9.1",
+                    "osi:Motosoto"
                 ],
                 "__impliedComments": [
                     [

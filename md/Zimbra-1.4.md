@@ -6,8 +6,6 @@
 
 -   `Zimbra License 1.4`
 
--   `scancode:zimbra-1.4`
-
 -   `scancode://zimbra-1.4`
 
 -   `Zimbra PL 1.4`
@@ -103,7 +101,6 @@
         "__impliedNames": [
             "Zimbra-1.4",
             "Zimbra License 1.4",
-            "scancode:zimbra-1.4",
             "Zimbra Public License v1.4",
             "scancode://zimbra-1.4",
             "Zimbra PL 1.4"
@@ -114,7 +111,8 @@
             "Zimbra, 1.4",
             "Zimbra License, Version 1.4",
             "Zimbra License 1.4",
-            "Zimbra Public License, Version 1.4"
+            "Zimbra Public License, Version 1.4",
+            "scancode:zimbra-1.4"
         ],
         "__impliedComments": [
             [
@@ -236,8 +234,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Zimbra License 1.4",
-                        "Zimbra-1.4",
-                        "scancode:zimbra-1.4"
+                        "Zimbra-1.4"
                     ],
                     "__impliedId": "Zimbra-1.4",
                     "__impliedAmbiguousNames": [
@@ -245,7 +242,8 @@
                         "Zimbra, 1.4",
                         "Zimbra License, Version 1.4",
                         "Zimbra License 1.4",
-                        "Zimbra Public License, Version 1.4"
+                        "Zimbra Public License, Version 1.4",
+                        "scancode:zimbra-1.4"
                     ],
                     "__impliedComments": [
                         [

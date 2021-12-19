@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:osl-3.0`
-
--   `osi:OSL-3.0`
-
 -   `Open Software License, Version 3.0`
 
 -   `scancode://osl-3.0`
@@ -269,8 +265,6 @@
             "OSL-3.0",
             "Open Software License 3.0",
             "osl-3.0",
-            "scancode:osl-3.0",
-            "osi:OSL-3.0",
             "Open Software License, Version 3.0",
             "scancode://osl-3.0",
             "OSL 3.0"
@@ -280,7 +274,9 @@
         "__impliedAmbiguousNames": [
             "Open Software License",
             "OSL 3.0",
-            "Open Software License 3.0"
+            "Open Software License 3.0",
+            "scancode:osl-3.0",
+            "osi:OSL-3.0"
         ],
         "__impliedComments": [
             [
@@ -571,13 +567,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Open Software License 3.0",
-                        "OSL-3.0",
-                        "scancode:osl-3.0",
-                        "osi:OSL-3.0"
+                        "OSL-3.0"
                     ],
                     "__impliedId": "OSL-3.0",
                     "__impliedAmbiguousNames": [
-                        "Open Software License 3.0"
+                        "Open Software License 3.0",
+                        "scancode:osl-3.0",
+                        "osi:OSL-3.0"
                     ],
                     "__impliedComments": [
                         [

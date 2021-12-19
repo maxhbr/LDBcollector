@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY 2.5`
 
--   `scancode:cc-by-2.5`
-
 -   `scancode://cc-by-2.5`
 
 ## Comments on (easy) usability
@@ -188,7 +186,6 @@
         "__impliedNames": [
             "CC-BY-2.5",
             "Creative Commons BY 2.5",
-            "scancode:cc-by-2.5",
             "Creative Commons Attribution 2.5 Generic",
             "scancode://cc-by-2.5"
         ],
@@ -198,7 +195,8 @@
             "CC-A 2.5",
             "CC-BY 2.5",
             "CC-BY-2.5",
-            "http://creativecommons.org/licenses/by/2.5"
+            "http://creativecommons.org/licenses/by/2.5",
+            "scancode:cc-by-2.5"
         ],
         "__impliedComments": [
             [
@@ -480,8 +478,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY 2.5",
-                        "CC-BY-2.5",
-                        "scancode:cc-by-2.5"
+                        "CC-BY-2.5"
                     ],
                     "__impliedId": "CC-BY-2.5",
                     "__impliedAmbiguousNames": [
@@ -489,7 +486,8 @@
                         "CC-A 2.5",
                         "CC-BY 2.5",
                         "CC-BY-2.5",
-                        "http://creativecommons.org/licenses/by/2.5"
+                        "http://creativecommons.org/licenses/by/2.5",
+                        "scancode:cc-by-2.5"
                     ],
                     "__impliedComments": [
                         [

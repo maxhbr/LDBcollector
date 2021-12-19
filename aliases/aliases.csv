@@ -1,23 +1,22 @@
 EUDatagrid,EU Datagrid Software License,True
 EUDatagrid,EUDatagrid License,True
-EUDatagrid,scancode:eu-datagrid,True
-EUDatagrid,osi:EUDatagrid,True
 EUDatagrid,EU DataGrid Software License,True
 EUDatagrid,scancode://eu-datagrid,True
 EUDatagrid,EU Datagrid,False
 EUDatagrid,EUDATAGRID LICENSE,False
 EUDatagrid,EUDATAGRID License,False
+EUDatagrid,scancode:eu-datagrid,False
+EUDatagrid,osi:EUDatagrid,False
 VOSTROM,VOSTROM Public License for Open Source,True
 VOSTROM,VOSTROM License,True
-VOSTROM,scancode:vostrom,True
 VOSTROM,scancode://vostrom,True
 VOSTROM,VOSTROM Public License,True
 VOSTROM,VOSTROM LICENSE,False
+VOSTROM,scancode:vostrom,False
 GFDL-1.3-no-invariants-only,GNU Free Documentation License 1.3 (no invariants),True
 GFDL-1.3-no-invariants-only,GNU Free Documentation License v1.3 only - no invariants,True
 GFDL-1.3-no-invariants-only,scancode://gfdl-1.3-no-invariants-only,True
 CC-BY-SA-1.0,Creative Commons BY-SA 1.0,True
-CC-BY-SA-1.0,scancode:cc-by-sa-1.0,True
 CC-BY-SA-1.0,Creative Commons ShareAlike 1.0 Generic,True
 CC-BY-SA-1.0,Creative Commons Attribution-ShareAlike 1.0 Generic,True
 CC-BY-SA-1.0,Creative Commons Attribution Share Alike 1.0 Generic,True
@@ -25,14 +24,15 @@ CC-BY-SA-1.0,scancode://cc-by-sa-1.0,True
 CC-BY-SA-1.0,"Creative Commons Attribution-Share Alike Generic (CC-BY-SA), v1.0",False
 CC-BY-SA-1.0,Creative Commons Attribution Share Alike 1.0,False
 CC-BY-SA-1.0,Creative Commons Attribution-ShareAlike 1.0,False
+CC-BY-SA-1.0,scancode:cc-by-sa-1.0,False
 CC-BY-3.0-DE,Creative Commons Attribution 3.0 Germany,True
 CC-BY-SA-2.5,Creative Commons BY-SA 2.5,True
-CC-BY-SA-2.5,scancode:cc-by-sa-2.5,True
 CC-BY-SA-2.5,Creative Commons Attribution-ShareAlike 2.5,True
 CC-BY-SA-2.5,Creative Commons Attribution Share Alike 2.5 Generic,True
 CC-BY-SA-2.5,scancode://cc-by-sa-2.5,True
 CC-BY-SA-2.5,Creative Commons Attribution Share Alike 2.5,False
 CC-BY-SA-2.5,This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble),False
+CC-BY-SA-2.5,scancode:cc-by-sa-2.5,False
 HaskellReport,Haskell Language Report License,True
 HaskellReport,HaskellReport License,True
 HaskellReport,scancode://haskell-report,True
@@ -47,17 +47,15 @@ SimPL-2.0,SimPL 2.0,True
 ClArtistic,Artistic (clarified),True
 ClArtistic,Clarified Artistic License,True
 ClArtistic,ClArtistic License,True
-ClArtistic,scancode:artistic-clarified,True
 ClArtistic,scancode://artistic-clarified,True
 ClArtistic,Artistic clarified,False
+ClArtistic,scancode:artistic-clarified,False
 SMPPL,Secure Messaging Protocol Public License,True
-SMPPL,scancode:smppl,True
 SMPPL,scancode://smppl,True
 SMPPL,SMP Public License,False
 SMPPL,Secure Messaging Protocol (SMP) Public License,False
+SMPPL,scancode:smppl,False
 CUA-OPL-1.0,CUA OPL 1.0,True
-CUA-OPL-1.0,scancode:cua-opl-1.0,True
-CUA-OPL-1.0,osi:CUA-OPL-1.0,True
 CUA-OPL-1.0,CUA Office Public License 1.0,True
 CUA-OPL-1.0,CUA Office Public License,True
 CUA-OPL-1.0,CUA Office Public License v1.0,True
@@ -67,22 +65,23 @@ CUA-OPL-1.0,"CUA OPL, 1.0",False
 CUA-OPL-1.0,"CUA-OPL, Version 1.0",False
 CUA-OPL-1.0,CUA-OPL 1.0,False
 CUA-OPL-1.0,CUA Office Public License Version 1.0,False
+CUA-OPL-1.0,scancode:cua-opl-1.0,False
+CUA-OPL-1.0,osi:CUA-OPL-1.0,False
 OLDAP-1.3,Open LDAP Public License v1.3,True
 OLDAP-1.3,OpenLDAP Public License 1.3,True
-OLDAP-1.3,scancode:openldap-1.3,True
 OLDAP-1.3,scancode://openldap-1.3,True
 OLDAP-1.3,"OLDAP, Version 1.3",False
 OLDAP-1.3,"OLDAP, 1.3",False
 OLDAP-1.3,"OLDAP License, Version 1.3",False
 OLDAP-1.3,"OLDAP License, 1.3",False
 OLDAP-1.3,"The OpenLDAP Public License Version 1.3, 17 January 1999",False
+OLDAP-1.3,scancode:openldap-1.3,False
 Giftware,Giftware License,True
-Giftware,scancode:allegro-4,True
 Giftware,scancode://allegro-4,True
 Giftware,Allegro 4 License,True
 Giftware,Allegro 4,False
+Giftware,scancode:allegro-4,False
 BitTorrent-1.1,BitTorrent License 1.1,True
-BitTorrent-1.1,scancode:bittorrent-1.1,True
 BitTorrent-1.1,BitTorrent Open Source License 1.1,True
 BitTorrent-1.1,BitTorrent Open Source License v1.1,True
 BitTorrent-1.1,scancode://bittorrent-1.1,True
@@ -91,9 +90,8 @@ BitTorrent-1.1,"BitTorrent, Version 1.1",False
 BitTorrent-1.1,"BitTorrent, 1.1",False
 BitTorrent-1.1,"BitTorrent License, Version 1.1",False
 BitTorrent-1.1,BitTorrent Open Source License Version 1.1,False
+BitTorrent-1.1,scancode:bittorrent-1.1,False
 ISC,ISC License,True
-ISC,scancode:isc,True
-ISC,osi:ISC,True
 ISC,isc-license,True
 ISC,ISC License (ISC),True
 ISC,License :: OSI Approved :: ISC License (ISCL),True
@@ -101,61 +99,59 @@ ISC,scancode://isc,True
 ISC,ISC license,True
 ISC,ISC Terms,False
 ISC,ISC Permission,False
+ISC,scancode:isc,False
+ISC,osi:ISC,False
 LPPL-1.1,LaTeX Project Public License 1.1,True
-LPPL-1.1,scancode:lppl-1.1,True
 LPPL-1.1,LaTeX Project Public License v1.1,True
 LPPL-1.1,scancode://lppl-1.1,True
 LPPL-1.1,LPPL 1.1,True
 LPPL-1.1,LPPL Version 1.1,False
+LPPL-1.1,scancode:lppl-1.1,False
 ECL-2.0,Educational Community License v2.0,True
 ECL-2.0,Educational Community License 2.0,True
-ECL-2.0,scancode:ecl-2.0,True
-ECL-2.0,osi:ECL-2.0,True
 ECL-2.0,ecl2,True
 ECL-2.0,"Educational Community License, Version 2.0",True
 ECL-2.0,scancode://ecl-2.0,True
 ECL-2.0,ECL 2.0,True
 ECL-2.0,"ECL, Version 2.0",False
 ECL-2.0,Educational Community License version 2.0,False
+ECL-2.0,scancode:ecl-2.0,False
+ECL-2.0,osi:ECL-2.0,False
 Entessa,Entessa Public License v1.0,True
 Entessa,Entessa Public License,True
 Entessa,Entessa License,True
-Entessa,scancode:entessa-1.0,True
-Entessa,osi:Entessa,True
 Entessa,Entessa Public License 1.0,True
 Entessa,scancode://entessa-1.0,True
 Entessa,Entessa 1.0,True
 Entessa,ENTESSA LICENSE,False
 Entessa,ENTESSA License,False
 Entessa,ENTESSA Public License,False
+Entessa,scancode:entessa-1.0,False
+Entessa,osi:Entessa,False
 Spencer-86,Spencer License 86,True
 Spencer-86,Spencer License (3-Clause),True
-Spencer-86,scancode:hs-regexp-orig,True
 Spencer-86,scancode://regexp,True
 Spencer-86,Regexp License,True
 Spencer-86,"Spencer, Version 86",False
 Spencer-86,Spencer 86,False
 Spencer-86,"Spencer License, Version 86",False
 Spencer-86,"Spencer License, 86",False
+Spencer-86,scancode:hs-regexp-orig,False
 O-UDA-1.0,Open Use of Data Agreement 1.0,True
-O-UDA-1.0,scancode:o-uda-1.0,True
 O-UDA-1.0,Open Use of Data Agreement v1.0,True
 O-UDA-1.0,scancode://o-uda-1.0,True
+O-UDA-1.0,scancode:o-uda-1.0,False
 BSD-4-Clause,BSD License (original),True
 BSD-4-Clause,"BSD 4-Clause ""Original"" or ""Old"" License",True
-BSD-4-Clause,BSD 4-Clause License (copyright variant),True
-BSD-4-Clause,BSD-4-Clause-copyright,True
-BSD-4-Clause,scancode:bsd-original,True
-BSD-4-Clause,scancode:bsd-original-voices,True
 BSD-4-Clause,BSD 4-Clause License,True
 BSD-4-Clause,"BSD 4-clause ""Original"" or ""Old"" License",True
 BSD-4-Clause,scancode://bsd-original,True
 BSD-4-Clause,BSD-Original,True
 BSD-4-Clause,BSD with advertising,False
 BSD-4-Clause,BSD 4-Clause,False
+BSD-4-Clause,scancode:bsd-original,False
 Condor-1.1,Condor Public License v1.1,True
 Condor-1.1,Condor Public License 1.1,True
-Condor-1.1,scancode:condor-1.1,True
 Condor-1.1,scancode://condor-1.1,True
 Condor-1.1,"Condor, Version 1.1",False
 Condor-1.1,"Condor, 1.1",False
@@ -165,8 +161,8 @@ Condor-1.1,Condor Public License Version 1.1,False
 Condor-1.1,https://spdx.org/licenses/condor-1.1,False
 Condor-1.1,http://www.cs.wisc.edu/condor/license.html,False
 Condor-1.1,http://www.condorproject.org,False
+Condor-1.1,scancode:condor-1.1,False
 ODC-By-1.0,ODC By License 1.0,True
-ODC-By-1.0,scancode:odc-by-1.0,True
 ODC-By-1.0,Open Data Commons Attribution License 1.0,True
 ODC-By-1.0,Open Data Commons Attribution License v1.0,True
 ODC-By-1.0,scancode://odc-by-1.0,True
@@ -176,14 +172,15 @@ ODC-By-1.0,"ODC By License, Version 1.0",False
 ODC-By-1.0,"ODC By License, 1.0",False
 ODC-By-1.0,ODC Attribution License,False
 ODC-By-1.0,ODC-By,False
+ODC-By-1.0,scancode:odc-by-1.0,False
 IPA,IPA Font License,True
 IPA,IPA License,True
-IPA,scancode:ipa-font,True
-IPA,osi:IPA,True
 IPA,IPA Font License Agreement v1.0,True
 IPA,scancode://ipa-font,True
 IPA,IPA Font License 1.0,True
 IPA,IPA LICENSE,False
+IPA,scancode:ipa-font,False
+IPA,osi:IPA,False
 Net-SNMP,Net-SNMP License,True
 Net-SNMP,Net License SNMP,True
 Net-SNMP,scancode://net-snmp,True
@@ -195,52 +192,50 @@ Net-SNMP,"Net License, SNMP",False
 Net-SNMP,"In addition, all contributors need to be aware that if the contribution is accepted and incorporated into the Net-SNMP project, it will be redistributed under the terms of the license agreement used for the entire body of work that comprises the Net-SNMP project (see the COPYING file for details)",False
 BSD-4-Clause-Shortened,BSD 4-Clause Shortened,True
 BSD-4-Clause-Shortened,BSD 4-Clause License (shortened),True
-BSD-4-Clause-Shortened,scancode:bsd-4-clause-shortened,True
 BSD-4-Clause-Shortened,BSD 4 Clause Shortened,True
 BSD-4-Clause-Shortened,scancode://bsd-4-clause-shortened,True
+BSD-4-Clause-Shortened,scancode:bsd-4-clause-shortened,False
 CDLA-Permissive-2.0,Community Data License Agreement Permissive 2.0,True
 CDLA-Permissive-2.0,scancode://cdla-permissive-2.0,True
 CDLA-Permissive-2.0,CDLA Permissive 2.0,True
 CC-BY-NC-ND-2.5,Creative Commons BY-NC-ND 2.5,True
-CC-BY-NC-ND-2.5,scancode:cc-by-nc-nd-2.5,True
 CC-BY-NC-ND-2.5,Creative Commons Attribution-NoDerivs 2.5 Generic,True
 CC-BY-NC-ND-2.5,Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic,True
 CC-BY-NC-ND-2.5,scancode://cc-by-nc-nd-2.5,True
 CC-BY-NC-ND-2.5,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-ND-2.5,Creative Commons Attribution Non Commercial No Derivatives 2.5,False
 CC-BY-NC-ND-2.5,Creative Commons Attribution-NonCommercial-NoDerivs 2.5,False
+CC-BY-NC-ND-2.5,scancode:cc-by-nc-nd-2.5,False
 BSD-3-Clause-No-Nuclear-License,BSD 3-Clause No Nuclear License,True
 BSD-3-Clause-No-Nuclear-License,scancode://sun-bsd-no-nuclear,True
 BSD-3-Clause-No-Nuclear-License,Sun BSD-Style with Nuclear Restrictions,True
 BSD-3-Clause-No-Nuclear-License,BSD 3 Clause No Nuclear License,False
 CC-BY-3.0-NL,Creative Commons Attribution 3.0 Netherlands,True
 Latex2e,Latex2e License,True
-Latex2e,scancode:latex2e,True
 Latex2e,scancode://latex2e,True
 Latex2e,LATEX2E LICENSE,False
 Latex2e,LATEX2E License,False
 Latex2e,https://spdx.org/licenses/latex2e,False
+Latex2e,scancode:latex2e,False
 OGL-Canada-2.0,Open Government Licence - Canada,True
-OGL-Canada-2.0,scancode:can-ogl-2.0-en,True
 OGL-Canada-2.0,Open Government License 2.0 (Canada),True
 OGL-Canada-2.0,OGL-CA-2.0,True
 OGL-Canada-2.0,scancode://can-ogl-2.0-en,True
 OGL-Canada-2.0,OGL Canada 2.0,True
+OGL-Canada-2.0,scancode:can-ogl-2.0-en,False
 ZPL-2.1,Zope Public License 2.1,True
-ZPL-2.1,osi:ZPL-2.1,True
-ZPL-2.1,scancode:zpl-2.1,True
 ZPL-2.1,Zope Public License (ZPL) Version 2.1,True
 ZPL-2.1,scancode://zpl-2.1,True
 ZPL-2.1,ZPL 2.1,True
 ZPL-2.1,"ZPL, Version 2.1",False
+ZPL-2.1,osi:ZPL-2.1,False
+ZPL-2.1,scancode:zpl-2.1,False
 BSD-3-Clause-Modification,BSD 3-Clause Modification,True
 BSD-3-Clause-Modification,BSD 3-Clause License Modification,True
 BSD-3-Clause-Modification,scancode://repoze,True
 BSD-3-Clause-Modification,Repoze License,True
 VSL-1.0,Vovida Software License v1.0,True
 VSL-1.0,Vovida Software License 1.0,True
-VSL-1.0,scancode:vsl-1.0,True
-VSL-1.0,osi:VSL-1.0,True
 VSL-1.0,"The Vovida Software License, Version 1.0",True
 VSL-1.0,License :: OSI Approved :: Vovida Software License 1.0,True
 VSL-1.0,"Vovida Software License, Version 1.0",True
@@ -248,59 +243,48 @@ VSL-1.0,scancode://vsl-1.0,True
 VSL-1.0,"VSL, Version 1.0",False
 VSL-1.0,"VSL, 1.0",False
 VSL-1.0,Vovida Software License v. 1.0,False
+VSL-1.0,scancode:vsl-1.0,False
+VSL-1.0,osi:VSL-1.0,False
 RSA-MD,RSA Message-Digest License ,True
 RSA-MD,RSA MD License,True
-RSA-MD,scancode:rsa-md5,True
 RSA-MD,RSA Message-Digest License,True
 RSA-MD,scancode://rsa-md5,True
 RSA-MD,RSA-MD5 License,True
 RSA-MD,RSA MD LICENSE,False
 RSA-MD,RSA-MD License,False
 RSA-MD,RSA-MD LICENSE,False
+RSA-MD,scancode:rsa-md5,False
 CDL-1.0,Common Documentation License 1.0,True
 CDL-1.0,scancode://acdl-1.0,True
 CDL-1.0,ACDL 1.0,True
 Parity-7.0.0,The Parity Public License 7.0.0,True
 Parity-7.0.0,Parity Public License 7.0.0,True
-Parity-7.0.0,scancode:parity-7.0.0,True
 Parity-7.0.0,scancode://parity-7.0.0,True
 Parity-7.0.0,The Parity Public License,False
+Parity-7.0.0,scancode:parity-7.0.0,False
 CC-BY-SA-2.0-UK,Creative Commons BY SA 2.0 (England and Wales),True
-CC-BY-SA-2.0-UK,scancode:cc-by-sa-2.0-uk,True
 CC-BY-SA-2.0-UK,Creative Commons Attribution Share Alike 2.0 England and Wales,True
 CC-BY-SA-2.0-UK,scancode://cc-by-sa-2.0-uk,True
+CC-BY-SA-2.0-UK,scancode:cc-by-sa-2.0-uk,False
 SCEA,SCEA Shared Source License,True
 SCEA,SCEA License,True
-SCEA,scancode:scea-1.0,True
 SCEA,scancode://scea-1.0,True
 SCEA,SCEA Shared Source License 1.0,True
 SCEA,SCEA LICENSE,False
+SCEA,scancode:scea-1.0,False
 CC-BY-NC-SA-3.0-DE,Creative Commons Attribution Non Commercial Share Alike 3.0 Germany,True
 SHL-0.5,Solderpad Hardware License 0.5,True
-SHL-0.5,scancode:shl-0.5,True
 SHL-0.5,Solderpad Hardware License v0.5,True
 SHL-0.5,scancode://shl-0.5,True
 SHL-0.5,SolderPad Hardware License v0.5,True
 SHL-0.5,SOLDERPAD HARDWARE LICENSE version 0.5,False
 SHL-0.5,SOLDERPAD HARDWARE LICENSE Version 0.5,False
 SHL-0.5,Solderpad Hardware License Version 0.5,False
+SHL-0.5,scancode:shl-0.5,False
 BSD-3-Clause,BSD (3 clause),True
 BSD-3-Clause,BSD License (no advertising),True
 BSD-3-Clause,"BSD 3-Clause ""New"" or ""Revised"" License",True
-BSD-3-Clause,BSD 3-Clause License (copyright variant),True
-BSD-3-Clause,BSD-3-Clause-Copyright,True
-BSD-3-Clause,scancode:bsd-3-clause-no-trademark,True
-BSD-3-Clause,scancode:bsd-new,True
-BSD-3-Clause,osi:BSD-3,True
-BSD-3-Clause,scancode:bsd-new-nomod,True
-BSD-3-Clause,BSD 3-Clause License Var001,True
-BSD-3-Clause,BSD-3-Clause-001,True
-BSD-3-Clause,scancode:libzip,True
-BSD-3-Clause,scancode:twisted-snmp,True
-BSD-3-Clause,scancode:bsd-3-clause-no-change,True
-BSD-3-Clause,scancode:bsd-intel,True
 BSD-3-Clause,BSD 3-Clause License,True
-BSD-3-Clause,osi:BSD-3-Clause,True
 BSD-3-Clause,"BSD 3-Clause ""New"" or ""Revised"" License (BSD-3-Clause)",True
 BSD-3-Clause,BSD-3,True
 BSD-3-Clause,License :: OSI Approved :: BSD License,True
@@ -310,7 +294,6 @@ BSD-3-Clause,New BSD License,True
 BSD-3-Clause,scancode://bsd-new,True
 BSD-3-Clause,The BSD-3-clause License,False
 BSD-3-Clause,BSD,False
-BSD-3-Clause,http://asm.objectweb.org/license.html,False
 BSD-3-Clause,3-Clause BSD License,False
 BSD-3-Clause,3-clause BSD,False
 BSD-3-Clause,BSD3,False
@@ -344,17 +327,21 @@ BSD-3-Clause,NewBSD Licence,False
 BSD-3-Clause,Three clause BSD license,False
 BSD-3-Clause,TinySCHEME License,False
 BSD-3-Clause,3 clause BSD license,False
+BSD-3-Clause,scancode:bsd-new,False
+BSD-3-Clause,scancode:bsd-intel,False
+BSD-3-Clause,osi:BSD-3,False
+BSD-3-Clause,osi:BSD-3-Clause,False
 NLOD-2.0,Norwegian Licence for Open Government Data (NLOD) 2.0,True
 NLOD-2.0,scancode://nlod-2.0,True
 Saxpath,Saxpath License,True
-Saxpath,scancode:saxpath,True
 Saxpath,scancode://saxpath,True
 Saxpath,SAXPATH LICENSE,False
 Saxpath,SAXPATH License,False
+Saxpath,scancode:saxpath,False
 APAFML,Adobe Postscript AFM License,True
 APAFML,APAFML License,True
-APAFML,scancode:apafml,True
 APAFML,scancode://apafml,True
+APAFML,scancode:apafml,False
 Info-ZIP,Info-ZIP License,True
 Info-ZIP,Info-ZIP license (version 2009-Jan-02),True
 Info-ZIP,Info-ZIP copyright and license (version 2005-Feb-10),True
@@ -362,7 +349,6 @@ Info-ZIP,Info-ZIP license (Version 2007-Mar-04),True
 Info-ZIP,scancode://info-zip,True
 Info-ZIP,Info-Zip License,True
 APSL-1.1,Apple Public Source License 1.1,True
-APSL-1.1,scancode:apsl-1.1,True
 APSL-1.1,"APPLE PUBLIC SOURCE LICENSE, Version 1.1",True
 APSL-1.1,scancode://apsl-1.1,True
 APSL-1.1,APSL 1.1,True
@@ -373,40 +359,41 @@ APSL-1.1,APPLE PUBLIC SOURCE LICENSE 1.1,False
 APSL-1.1,APPLE PUBLIC SOURCE LICENSE v1.1,False
 APSL-1.1,APPLE PUBLIC SOURCE LICENSE Version 1.1,False
 APSL-1.1,Apple Public Source License Ver. 1.1,False
+APSL-1.1,scancode:apsl-1.1,False
 HTMLTIDY,HTML Tidy License,True
 HTMLTIDY,Tidy License,True
-HTMLTIDY,scancode:tidy,True
 HTMLTIDY,scancode://tidy,True
+HTMLTIDY,scancode:tidy,False
 COIL-1.0,Copyfree Open Innovation License,True
 CC-BY-NC-SA-1.0,Creative Commons BY-NC-SA 1.0 (generic),True
-CC-BY-NC-SA-1.0,scancode:cc-by-nc-sa-1.0,True
 CC-BY-NC-SA-1.0,Creative Commons Attribution Non Commercial Share Alike 1.0 Generic,True
 CC-BY-NC-SA-1.0,scancode://cc-by-nc-sa-1.0,True
 CC-BY-NC-SA-1.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-SA-1.0,Creative Commons Attribution-NonCommercial-ShareAlike 1.0,False
+CC-BY-NC-SA-1.0,scancode:cc-by-nc-sa-1.0,False
 CC-BY-NC-2.0,Creative Commons BY-NC 2.0 (generic),True
-CC-BY-NC-2.0,scancode:cc-by-nc-2.0,True
 CC-BY-NC-2.0,Creative Commons Attribution Non Commercial 2.0 Generic,True
 CC-BY-NC-2.0,scancode://cc-by-nc-2.0,True
 CC-BY-NC-2.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-2.0,Creative Commons Attribution-NonCommercial 2.0,False
+CC-BY-NC-2.0,scancode:cc-by-nc-2.0,False
 SSH-short,SSH short notice,True
 SSH-short,scancode://tatu-ylonen,True
 SSH-short,Tatu Ylonen License,True
 Mup,Mup License,True
-Mup,scancode:mup,True
 Mup,scancode://mup,True
 Mup,MUP LICENSE,False
 Mup,MUP License,False
+Mup,scancode:mup,False
 EFL-1.0,Eiffel Forum License v1.0,True
 EFL-1.0,Eiffel Forum License 1.0,True
-EFL-1.0,scancode:efl-1.0,True
-EFL-1.0,osi:EFL-1.0,True
 EFL-1.0,"The Eiffel Forum License, Version 1",True
 EFL-1.0,scancode://efl-1.0,True
 EFL-1.0,EFL 1.0,True
 EFL-1.0,"EFL, Version 1.0",False
 EFL-1.0,"Eiffel Forum License, version 1",False
+EFL-1.0,scancode:efl-1.0,False
+EFL-1.0,osi:EFL-1.0,False
 LGPL-3.0-only,LGPL-3.0,False
 LGPL-3.0-only,LGPL-3,False
 LGPL-3.0-only,LGPL3.0,False
@@ -424,10 +411,7 @@ LGPL-3.0-only,GNU Lesser General Public License v3.0 or later,False
 LGPL-3.0-only,lgpl-3.0,False
 LGPL-3.0-only,GNU LGPLv3,False
 LGPL-3.0-only,GNU Lesser General Public License 3.0 (or any later version),False
-LGPL-3.0-only,scancode:lgpl-3.0-plus,False
-LGPL-3.0-only,osi:LGPL-3.0,False
 LGPL-3.0-only,GNU Lesser General Public License 3.0,False
-LGPL-3.0-only,scancode:lgpl-3.0,False
 LGPL-3.0-only,"GNU Lesser General Public License, Version 3.0",False
 LGPL-3.0-only,License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3),False
 LGPL-3.0-only,License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL),False
@@ -516,6 +500,8 @@ LGPL-3.0-only,"GNU Lesser General Public License as published by the Free Softwa
 LGPL-3.0-only,"GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version",False
 LGPL-3.0-only,"GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",False
 LGPL-3.0-only,GNU Lesser General Public License (LGPL) version 3 or later,False
+LGPL-3.0-only,scancode:lgpl-3.0-plus,False
+LGPL-3.0-only,osi:LGPL-3.0,False
 LGPL-3.0-only,GNU General Lesser Public License (LGPL) version 3.0,False
 LGPL-3.0-only,GNU General Lesser Public License (LGPL) version 3.00,False
 LGPL-3.0-only,"GNU General Lesser Public License, Version 3.0",False
@@ -570,11 +556,9 @@ LGPL-3.0-only,http://www.gnu.org/licenses/lgpl-3.0.txt,False
 LGPL-3.0-only,"FSF Lesser GNU Public License, Version 3",False
 LGPL-3.0-only,Lesser GPL 3.0,False
 LGPL-3.0-only,"The GNU Lesser General Public License, Versions 2.1 and 3",False
+LGPL-3.0-only,scancode:lgpl-3.0,False
 NPOSL-3.0,Non-Profit Open Software License 3.0,True
 NPOSL-3.0,NPOSL 3.0,True
-NPOSL-3.0,scancode:nosl-3.0,True
-NPOSL-3.0,osi:NPOSL-3.0,True
-NPOSL-3.0,osi:NOSL3.0,True
 NPOSL-3.0,nosl3.0,True
 NPOSL-3.0,"The Non-Profit Open Software License, Version 3.0",True
 NPOSL-3.0,scancode://nosl-3.0,True
@@ -582,36 +566,37 @@ NPOSL-3.0,Non-Profit OSL 3.0,True
 NPOSL-3.0,Non-Profit Open Software License,False
 NPOSL-3.0,"NPOSL, Version 3.0",False
 NPOSL-3.0,"NPOSL, 3.0",False
+NPOSL-3.0,scancode:nosl-3.0,False
+NPOSL-3.0,osi:NPOSL-3.0,False
+NPOSL-3.0,osi:NOSL3.0,False
 CC-BY-ND-4.0,Creative Commons BY-ND 4.0 (international),True
-CC-BY-ND-4.0,scancode:cc-by-nd-4.0,True
 CC-BY-ND-4.0,Creative Commons Attribution No Derivatives 4.0 International,True
 CC-BY-ND-4.0,scancode://cc-by-nd-4.0,True
 CC-BY-ND-4.0,Creative Commons Attribution-NoDerivatives 4.0 International,False
+CC-BY-ND-4.0,scancode:cc-by-nd-4.0,False
 Xerox,Xerox License,True
 Xerox,MIT with Export Control,True
 Xerox,MIT-Export-Control,True
-Xerox,scancode:mit-export-control,True
 Xerox,scancode://mit-export-control,True
 Xerox,mit-export-control,False
+Xerox,scancode:mit-export-control,False
 Xerox,https://spdx.org/licenses/xerox,False
 Xerox,XEROX LICENSE,False
 Xerox,XEROX License,False
 OGL-UK-3.0,Open Government Licence 3.0,True
-OGL-UK-3.0,scancode:ogl-uk-3.0,True
 OGL-UK-3.0,Open Government Licence 3.0 (United Kingdom),True
 OGL-UK-3.0,Open Government Licence v3.0,True
 OGL-UK-3.0,scancode://ogl-uk-3.0,True
+OGL-UK-3.0,scancode:ogl-uk-3.0,False
 AAL,Attribution Assurance License,True
-AAL,scancode:attribution,True
-AAL,osi:attribution,True
 AAL,Attribution Assurance Licenses,True
 AAL,License :: OSI Approved :: Attribution Assurance License,True
 AAL,scancode://attribution,True
+AAL,scancode:attribution,False
+AAL,osi:attribution,False
 QPL-1.0,Q Public License 1.0,True
 QPL-1.0,Q Public License,True
 QPL-1.0,QPL 1.0,True
-QPL-1.0,scancode:qpl-1.0,True
-QPL-1.0,osi:QPL-1.0,True
 QPL-1.0,The Q Public License Version (QPL-1.0),True
 QPL-1.0,License :: OSI Approved :: Qt Public License (QPL),True
 QPL-1.0,Q PUBLIC LICENSE version 1.0,True
@@ -619,17 +604,18 @@ QPL-1.0,scancode://qpl-1.0,True
 QPL-1.0,"Q Public License (QPL), Version 1.0",False
 QPL-1.0,QPL,False
 QPL-1.0,"QPL, Version 1.0",False
+QPL-1.0,scancode:qpl-1.0,False
+QPL-1.0,osi:QPL-1.0,False
 Dotseqn,Dotseqn License,True
-Dotseqn,scancode:dotseqn,True
 Dotseqn,scancode://dotseqn,True
 Dotseqn,DOTSEQN LICENSE,False
 Dotseqn,DOTSEQN License,False
+Dotseqn,scancode:dotseqn,False
 libselinux-1.0,libselinux public domain notice,True
 libselinux-1.0,scancode://selinux-nsa-declaration-1.0,True
 libselinux-1.0,selinux-nsa-declaration-1.0,True
 MIT-advertising,Enlightenment License (e16),True
 MIT-advertising,MIT License (with advertising),True
-MIT-advertising,scancode:enlightenment,True
 MIT-advertising,scancode://enlightenment,True
 MIT-advertising,EFL MIT-Style License,True
 MIT-advertising,MIT with advertising,False
@@ -639,18 +625,19 @@ MIT-advertising,MIT ADVERTISING License,False
 MIT-advertising,MIT-advertising License,False
 MIT-advertising,MIT-ADVERTISING LICENSE,False
 MIT-advertising,MIT-ADVERTISING License,False
+MIT-advertising,scancode:enlightenment,False
 SSH-OpenSSH,OpenSSH License,True
-SSH-OpenSSH,scancode:tatu-ylonen,True
 SSH-OpenSSH,SSH OpenSSH license,True
 SSH-OpenSSH,scancode://openssh,True
 SSH-OpenSSH,Tatu Ylonen's original licence,False
 SSH-OpenSSH,Tatu Ylonen's licence,False
 SSH-OpenSSH,Tatu Ylonen's Licence,False
 SSH-OpenSSH,Tatu Ylonen Licence,False
+SSH-OpenSSH,scancode:tatu-ylonen,False
 LGPLLR,Lesser General Public License (Linguistic Resources),True
-LGPLLR,scancode:lgpllr,True
 LGPLLR,Lesser General Public License For Linguistic Resources,True
 LGPLLR,scancode://lgpllr,True
+LGPLLR,scancode:lgpllr,False
 ErlPL-1.1,Erlang Public License v1.1,True
 ErlPL-1.1,Erlang Public License 1.1,True
 ErlPL-1.1,ERLANG PUBLIC LICENSE Version 1.1,True
@@ -659,7 +646,6 @@ ErlPL-1.1,Erlang Public License,False
 ErlPL-1.1,ERPL,False
 TU-Berlin-2.0,Technische Universitaet Berlin License 2.0,True
 TU-Berlin-2.0,TU Berlin License 2.0,True
-TU-Berlin-2.0,scancode:tu-berlin-2.0,True
 TU-Berlin-2.0,scancode://tu-berlin-2.0,True
 TU-Berlin-2.0,"TU Berlin, Version 2.0",False
 TU-Berlin-2.0,TU Berlin 2.0,False
@@ -668,58 +654,56 @@ TU-Berlin-2.0,TU-Berlin 2.0,False
 TU-Berlin-2.0,"TU Berlin License, Version 2.0",False
 TU-Berlin-2.0,"TU-Berlin License, Version 2.0",False
 TU-Berlin-2.0,"TU-Berlin License, 2.0",False
+TU-Berlin-2.0,scancode:tu-berlin-2.0,False
 CC-BY-ND-2.0,Creative Commons BY-ND 2.0 (generic),True
-CC-BY-ND-2.0,scancode:cc-by-nd-2.0,True
 CC-BY-ND-2.0,Creative Commons Attribution No Derivatives 2.0 Generic,True
 CC-BY-ND-2.0,scancode://cc-by-nd-2.0,True
 CC-BY-ND-2.0,Creative Commons Attribution-NoDerivs 2.0,False
+CC-BY-ND-2.0,scancode:cc-by-nd-2.0,False
 CC-BY-NC-ND-4.0,Creative Commons BY-NC-ND 4.0 (international),True
-CC-BY-NC-ND-4.0,scancode:cc-by-nc-nd-4.0,True
 CC-BY-NC-ND-4.0,Creative Commons Attribution-NoDerivatives 4.0 International,False
 CC-BY-NC-ND-4.0,Creative Commons Attribution Non Commercial No Derivatives 4.0 International,True
 CC-BY-NC-ND-4.0,scancode://cc-by-nc-nd-4.0,True
 CC-BY-NC-ND-4.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-ND-4.0,Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International,False
+CC-BY-NC-ND-4.0,scancode:cc-by-nc-nd-4.0,False
 Plexus,Plexus Classworlds License,True
 Plexus,DOM4J License,True
 Plexus,DOM4J,True
-Plexus,scancode:dom4j,True
 Plexus,Plexus License,True
-Plexus,scancode:classworlds,True
 Plexus,scancode://dom4j,True
 Plexus,Dom4j License,True
+Plexus,scancode:dom4j,False
 Plexus,PLEXUS LICENSE,False
 Plexus,PLEXUS License,False
+Plexus,scancode:classworlds,False
 SPL-1.0,Sun Public License v1.0,True
 SPL-1.0,Sun Public License 1.0,True
-SPL-1.0,scancode:spl-1.0,True
-SPL-1.0,osi:SPL-1.0,True
 SPL-1.0,"Sun Public License, Version 1.0",True
 SPL-1.0,License :: OSI Approved :: Sun Public License,True
 SPL-1.0,SUN PUBLIC LICENSE Version 1.0,True
 SPL-1.0,scancode://spl-1.0,True
 SPL-1.0,SPL 1.0,True
 SPL-1.0,"SPL, Version 1.0",False
+SPL-1.0,scancode:spl-1.0,False
+SPL-1.0,osi:SPL-1.0,False
 BSD-3-Clause-No-Military-License,BSD 3-Clause No Military License,True
 BSD-3-Clause-No-Military-License,scancode://bsd-3-clause-no-military,True
 BSD-3-Clause-No-Military-License,BSD-3-Clause-No-Military,True
 CPAL-1.0,Common Public Attribution License 1.0,True
-CPAL-1.0,scancode:cpal-1.0,True
-CPAL-1.0,osi:CPAL-1.0,True
 CPAL-1.0,cpal_1.0,True
 CPAL-1.0,Common Public Attribution License Version 1.0 (CPAL-1.0),True
 CPAL-1.0,Common Public Attribution License Version 1.0,True
 CPAL-1.0,scancode://cpal-1.0,True
 CPAL-1.0,CPAL 1.0,True
 CPAL-1.0,Common Public Attribution License,False
+CPAL-1.0,scancode:cpal-1.0,False
+CPAL-1.0,osi:CPAL-1.0,False
 Apache-1.1,Apache (v1.1),True
 Apache-1.1,Apache Software License 1.1,True
 Apache-1.1,ASL 1.1,True
 Apache-1.1,"Apache Software License, Version 1.1",True
 Apache-1.1,Apache License 1.1,True
-Apache-1.1,scancode:apache-1.1,True
-Apache-1.1,osi:Apache-1.1,True
-Apache-1.1,scancode:phorum-2.0,True
 Apache-1.1,scancode://apache-1.1,True
 Apache-1.1,Apache 1.1,True
 Apache-1.1,The Apache Software License (ASL),False
@@ -732,24 +716,27 @@ Apache-1.1,"The OpenSymphony Software License, Version 1.1",False
 Apache-1.1,"The P6Spy Software License, Version 1.1",False
 Apache-1.1,"The CyberNeko Software License, Version 1.0",False
 Apache-1.1,https://spdx.org/licenses/apache-1.1,False
+Apache-1.1,scancode:apache-1.1,False
+Apache-1.1,osi:Apache-1.1,False
+Apache-1.1,scancode:phorum-2.0,False
 UPL-1.0,UPL,True
 UPL-1.0,Universal Permissive License v1.0,True
-UPL-1.0,scancode:upl-1.0,True
-UPL-1.0,osi:UPL,True
 UPL-1.0,"The Universal Permissive License (UPL), Version 1.0",True
 UPL-1.0,scancode://upl-1.0,True
 UPL-1.0,UPL 1.0,True
+UPL-1.0,scancode:upl-1.0,False
+UPL-1.0,osi:UPL,False
 GFDL-1.1-no-invariants-or-later,GNU Free Documentation License v1.1 or later - no invariants,True
 GFDL-1.1-no-invariants-or-later,scancode://gfdl-1.1-no-invariants-or-later,True
 GFDL-1.2-invariants-or-later,GNU Free Documentation License v1.2 or later - invariants,True
 GFDL-1.2-invariants-or-later,scancode://gfdl-1.2-invariants-or-later,True
 mpich2,mpich2 License,True
-mpich2,scancode:mpich,True
 mpich2,scancode://mpich,True
 mpich2,MPICH License,True
 mpich2,MIT,False
 mpich2,MPICH2 LICENSE,False
 mpich2,MPICH2 License,False
+mpich2,scancode:mpich,False
 LGPL-2.0-only,GNU Library General Public License Version 2,True
 LGPL-2.0-only,GNU Library General Public License v2 only,True
 LGPL-2.0-only,scancode://lgpl-2.0,True
@@ -757,7 +744,6 @@ LGPL-2.0-only,LGPL 2.0,True
 LGPL-2.0-only,GNU Library General Public License,False
 LGPL-2.0-only,The GNU Lesser General Public License (LGPL),False
 eGenix,eGenix.com Public License 1.1.0,True
-eGenix,scancode:egenix-1.0.0,True
 eGenix,scancode://egenix-1.1.0,True
 eGenix,eGenix Public License 1.1.0,True
 eGenix,eGenix License,False
@@ -765,9 +751,9 @@ eGenix,EGENIX LICENSE,False
 eGenix,EGENIX License,False
 eGenix,eGenix.com Public License Agreement,False
 eGenix,EGENIX.COM PUBLIC LICENSE AGREEMENT,False
+eGenix,scancode:egenix-1.0.0,False
 GFDL-1.2-only,GNU Free Documentation License 1.2,True
 GFDL-1.2-only,GFDL-1.2,True
-GFDL-1.2-only,scancode:gfdl-1.2,True
 GFDL-1.2-only,GNU Free Documentation License Version 1.2,True
 GFDL-1.2-only,GNU Free Documentation License v1.2 only,True
 GFDL-1.2-only,scancode://gfdl-1.2,True
@@ -779,15 +765,15 @@ GFDL-1.2-only,"GFDL, Version 1.2",False
 GFDL-1.2-only,"GFDL, v1.2",False
 GFDL-1.2-only,GFDL version 1.2,False
 GFDL-1.2-only,Change license on the manual to GFDLv1.2,False
+GFDL-1.2-only,scancode:gfdl-1.2,False
 Unicode-TOU,Unicode Terms of Use,True
-Unicode-TOU,scancode:unicode-tou,True
 Unicode-TOU,scancode://unicode-tou,True
 Unicode-TOU,Unicode TOU,False
 Unicode-TOU,UNICODE TOU,False
 Unicode-TOU,http://www.unicode.org/terms_of_use.html,False
 Unicode-TOU,"GPL-1+ or Artistic, and Unicode",False
+Unicode-TOU,scancode:unicode-tou,False
 APSL-1.2,Apple Public Source License 1.2,True
-APSL-1.2,scancode:apsl-1.2,True
 APSL-1.2,scancode://apsl-1.2,True
 APSL-1.2,APSL 1.2,True
 APSL-1.2,Apple Public Source License,False
@@ -797,14 +783,13 @@ APSL-1.2,APPLE PUBLIC SOURCE LICENSE v1.2,False
 APSL-1.2,"APPLE PUBLIC SOURCE LICENSE, 1.2",False
 APSL-1.2,APPLE PUBLIC SOURCE LICENSE Version 1.2,False
 APSL-1.2,Apple Public Source License Ver. 1.2,False
+APSL-1.2,scancode:apsl-1.2,False
 Apache-2.0,Apache (v2.0),True
 Apache-2.0,Apache Software License 2.0,True
 Apache-2.0,ASL 2.0,True
 Apache-2.0,"Apache License, Version 2.0",True
 Apache-2.0,ALv2,True
 Apache-2.0,Apache License 2.0,True
-Apache-2.0,scancode:apache-2.0,True
-Apache-2.0,osi:Apache-2.0,True
 Apache-2.0,apache2.0,True
 Apache-2.0,License :: OSI Approved :: Apache Software License,True
 Apache-2.0,scancode://apache-2.0,True
@@ -871,44 +856,44 @@ Apache-2.0,"Apache (Software) License, version 2.0",False
 Apache-2.0,http://www.apache.org/licenses/LICENSE-2.0,False
 Apache-2.0,https://www.apache.org/licenses/LICENSE-2.0,False
 Apache-2.0,http://xml.apache.org/xerces2-j/,False
+Apache-2.0,scancode:apache-2.0,False
+Apache-2.0,osi:Apache-2.0,False
 BSD-Source-Code,BSD Source Code Attribution,True
 BSD-Source-Code,BSD Source Code License,True
-BSD-Source-Code,scancode:bsd-source-code,True
 BSD-Source-Code,scancode://bsd-source-code,True
 BSD-Source-Code,BSD Source Code,False
 BSD-Source-Code,BSD SOURCE CODE,False
+BSD-Source-Code,scancode:bsd-source-code,False
 CC-BY-NC-4.0,Creative Commons BY-NC 4.0 (international),True
-CC-BY-NC-4.0,scancode:cc-by-nc-4.0,True
 CC-BY-NC-4.0,Creative Commons Attribution-NonCommercial 4.0,True
 CC-BY-NC-4.0,Creative Commons Attribution Non Commercial 4.0 International,True
 CC-BY-NC-4.0,scancode://cc-by-nc-4.0,True
 CC-BY-NC-4.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-4.0,Creative Commons Attribution-NonCommercial 4.0 International,False
+CC-BY-NC-4.0,scancode:cc-by-nc-4.0,False
 TMate,TMate Open Source License,True
 TMate,TMate License,True
-TMate,scancode:tmate,True
 TMate,"TMate Open Source License for ""TMate JavaSVN library""",True
 TMate,scancode://tmate,True
 TMate,TMATE LICENSE,False
 TMate,TMATE License,False
 TMate,http://svnkit.com/license.html,False
+TMate,scancode:tmate,False
 OPL-1.0,Open Public License 1.0,True
-OPL-1.0,scancode:open-public,True
 OPL-1.0,Open Public License v1.0,True
 OPL-1.0,scancode://open-public,True
 OPL-1.0,Open Publication License (OPL) v1.0,False
 OPL-1.0,"OPL, Version 1.0",False
 OPL-1.0,OPL 1.0,False
 OPL-1.0,OPEN PUBLIC LICENSE Version 1.0,False
+OPL-1.0,scancode:open-public,False
 CECILL-1.0,CeCILL Free Software License Agreement 1.0,True
-CECILL-1.0,scancode:cecill-1.0,True
 CECILL-1.0,CeCILL Free Software License Agreement v1.0,True
 CECILL-1.0,scancode://cecill-1.0,True
 CECILL-1.0,CeCILL 1.0,True
 CECILL-1.0,CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL Avertissement,False
+CECILL-1.0,scancode:cecill-1.0,False
 EPL-2.0,Eclipse Public License 2.0,True
-EPL-2.0,scancode:epl-2.0,True
-EPL-2.0,osi:EPL-2.0,True
 EPL-2.0,eclipse-2.0,True
 EPL-2.0,Eclipse Public License - v 2.0,True
 EPL-2.0,scancode://epl-2.0,True
@@ -932,25 +917,26 @@ EPL-2.0,Eclipse Public License -v 2.0,False
 EPL-2.0,Eclipse Public License v 2.0,False
 EPL-2.0,"Eclipse Public License, V 2.0",False
 EPL-2.0,Eclipse Public License v. 2.0,False
+EPL-2.0,scancode:epl-2.0,False
+EPL-2.0,osi:EPL-2.0,False
 LPPL-1.3c,LaTeX Project Public License v1.3c,True
 LPPL-1.3c,LPPL 1.3c,True
-LPPL-1.3c,scancode:lppl-1.3c,True
-LPPL-1.3c,osi:LPPL-1.3c,True
 LPPL-1.3c,LaTeX Project Public License 1.3c,True
 LPPL-1.3c,"LaTeX Project Public License, Version 1.3c",True
 LPPL-1.3c,LaTeX Project Public License Version 1.3c,True
 LPPL-1.3c,scancode://lppl-1.3c,True
 LPPL-1.3c,"LPPL, Version 1.3c",False
 LPPL-1.3c,"LPPL, 1.3c",False
+LPPL-1.3c,scancode:lppl-1.3c,False
+LPPL-1.3c,osi:LPPL-1.3c,False
 Zed,Zed License,True
-Zed,scancode:zed,True
 Zed,scancode://zed,True
 Zed,ZED LICENSE,False
 Zed,ZED License,False
+Zed,scancode:zed,False
 SGI-B-2.0,SGI Free Software License B v2.0,True
 SGI-B-2.0,SGI Free Software License B 2.0,True
 SGI-B-2.0,SGI B License 2.0,True
-SGI-B-2.0,scancode:sgi-freeb-2.0,True
 SGI-B-2.0,"SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",True
 SGI-B-2.0,scancode://sgi-freeb-2.0,True
 SGI-B-2.0,MIT,False
@@ -962,17 +948,15 @@ SGI-B-2.0,"SGI B License, Version 2.0",False
 SGI-B-2.0,"SGI-B License, Version 2.0",False
 SGI-B-2.0,"SGI-B License, 2.0",False
 SGI-B-2.0,"SGI Free Software License B, version 2.0",False
+SGI-B-2.0,scancode:sgi-freeb-2.0,False
 BSD-3-Clause-Open-MPI,BSD 3-Clause Open MPI Variant,True
 BSD-3-Clause-Open-MPI,BSD 3-Clause License (Open MPI),True
-BSD-3-Clause-Open-MPI,scancode:bsd-3-clause-open-mpi,True
 BSD-3-Clause-Open-MPI,Open MPI License,True
 BSD-3-Clause-Open-MPI,BSD 3-Clause Open MPI variant,True
 BSD-3-Clause-Open-MPI,scancode://bsd-3-clause-open-mpi,True
+BSD-3-Clause-Open-MPI,scancode:bsd-3-clause-open-mpi,False
 CDDL-1.0,Common Development and Distribution License 1.0,True
 CDDL-1.0,CDDL 1.0,True
-CDDL-1.0,scancode:cddl-1.0,True
-CDDL-1.0,osi:CDDL-1.0,True
-CDDL-1.0,osi:cddl1,True
 CDDL-1.0,cddl1,True
 CDDL-1.0,"Common Development and Distribution License, Version 1.0",True
 CDDL-1.0,COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0,True
@@ -986,6 +970,9 @@ CDDL-1.0,CDDLv1.0,False
 CDDL-1.0,Common Development and Distribution Licence version 1.0 (CDDL),False
 CDDL-1.0,"Common Development and Distribution License (CDDL), Version 1.0",False
 CDDL-1.0,"Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved",False
+CDDL-1.0,scancode:cddl-1.0,False
+CDDL-1.0,osi:CDDL-1.0,False
+CDDL-1.0,osi:cddl1,False
 GFDL-1.2-or-later,GNU Free Documentation License 1.2 (or any later version),True
 GFDL-1.2-or-later,GFDL-1.2+,True
 GFDL-1.2-or-later,GNU Free Documentation License v1.2 or later,True
@@ -1001,38 +988,37 @@ GFDL-1.2-or-later,"GNU Free Documentation License (FDL), either version 1.2 of t
 GFDL-1.2-or-later,GFDL version 1.2 or later,False
 GFDL-1.2-or-later,Change license on the manual to GFDLv1.2+,False
 Hippocratic-2.1,Hippocratic License 2.1,True
-Hippocratic-2.1,scancode:hippocratic-2.1,True
 Hippocratic-2.1,scancode://hippocratic-2.1,True
 Hippocratic-2.1,Hippocratic License v2.1,True
 Hippocratic-2.1,https://firstdonoharm.dev/version/2/1,False
 Hippocratic-2.1,Hippocratic License Version 2.1,False
 Hippocratic-2.1,Hippocratic License version 2.1,False
+Hippocratic-2.1,scancode:hippocratic-2.1,False
 Linux-OpenIB,Linux Kernel Variant of OpenIB.org license,True
 Linux-OpenIB,Linux Kernel Variant of OpenIB.org License,True
-Linux-OpenIB,scancode:linux-openib,True
 Linux-OpenIB,scancode://linux-openib,True
+Linux-OpenIB,scancode:linux-openib,False
 IJG,Independent JPEG Group License,True
 IJG,IJG License,True
-IJG,scancode:ijg,True
 IJG,scancode://ijg,True
 IJG,JPEG License,True
 IJG,IJG LICENSE,False
+IJG,scancode:ijg,False
 SchemeReport,Scheme Language Report License,True
 TCL,TCL/TK License,True
 TCL,TCL License,True
-TCL,scancode:tcl,True
 TCL,scancode://tcl,True
 TCL,scancode://ttcl,True
 TCL,LicenseRef-scancode-ttcl,True
+TCL,scancode:tcl,False
 Linux-man-pages-copyleft,Linux man-pages Copyleft,True
 NBPL-1.0,Net Boolean Public License v1,True
 NBPL-1.0,NBPL 1.0,True
-NBPL-1.0,scancode:nbpl-1.0,True
 NBPL-1.0,scancode://nbpl-1.0,True
 NBPL-1.0,"NBPL, Version 1.0",False
 NBPL-1.0,"NBPL, 1.0",False
+NBPL-1.0,scancode:nbpl-1.0,False
 Zimbra-1.3,Zimbra License 1.3,True
-Zimbra-1.3,scancode:zimbra-1.3,True
 Zimbra-1.3,Zimbra Public License v1.3,True
 Zimbra-1.3,scancode://zimbra-1.3,True
 Zimbra-1.3,Zimbra PL 1.3,True
@@ -1040,9 +1026,8 @@ Zimbra-1.3,"Zimbra, Version 1.3",False
 Zimbra-1.3,"Zimbra, 1.3",False
 Zimbra-1.3,"Zimbra License, Version 1.3",False
 Zimbra-1.3,"Zimbra Public License, Version 1.3",False
+Zimbra-1.3,scancode:zimbra-1.3,False
 MPL-1.0,Mozilla Public License 1.0,True
-MPL-1.0,scancode:mpl-1.0,True
-MPL-1.0,osi:MPL-1.0,True
 MPL-1.0,"Mozilla Public License, Version 1.0",True
 MPL-1.0,License :: OSI Approved :: Mozilla Public License 1.0 (MPL),True
 MPL-1.0,Mozilla Public License Version 1.0,True
@@ -1052,29 +1037,15 @@ MPL-1.0,Mozilla Public License,False
 MPL-1.0,Mozilla Public License (MPL),False
 MPL-1.0,Mozilla Public License 1.0 (MPL),False
 MPL-1.0,MPLv1.0,False
-LGPL-2.1-or-later,LGPL-2.1-only,True
-LGPL-2.1-or-later,LGPL-2.1,False
-LGPL-2.1-or-later,LGPL2.1,False
-LGPL-2.1-or-later,LGPL (v2.1),False
-LGPL-2.1-or-later,GNU Lesser General Public License Version 2.1,False
-LGPL-2.1-or-later,LGPL-2.1+,False
-LGPL-2.1-or-later,LGPL2.1+,False
-LGPL-2.1-or-later,LGPL (v2.1 or later),False
-LGPL-2.1-or-later,GNU Lesser General Public License v2.1 only,False
-LGPL-2.1-or-later,GNU Lesser General Public License v2.1 or later,False
-LGPL-2.1-or-later,lgpl-2.1,False
-LGPL-2.1-or-later,GNU LGPLv2.1,False
-LGPL-2.1-or-later,GNU Lesser General Public License 2.1 (or any later version),False
-LGPL-2.1-or-later,scancode:lgpl-2.1-plus,False
-LGPL-2.1-or-later,osi:LGPL-2.1,False
-LGPL-2.1-or-later,GNU Lesser General Public License 2.1,False
-LGPL-2.1-or-later,scancode:lgpl-2.1,False
-LGPL-2.1-or-later,"GNU Lesser General Public License, Version 2.1",False
-LGPL-2.1-or-later,License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2),False
-LGPL-2.1-or-later,scancode://lgpl-2.1-plus,False
-LGPL-2.1-or-later,LGPL 2.1 or later,False
-LGPL-2.1-or-later,scancode://lgpl-2.1,False
-LGPL-2.1-or-later,LGPL 2.1,False
+MPL-1.0,scancode:mpl-1.0,False
+MPL-1.0,osi:MPL-1.0,False
+LGPL-2.1-or-later,LGPL-2.1+,True
+LGPL-2.1-or-later,LGPL2.1+,True
+LGPL-2.1-or-later,LGPL (v2.1 or later),True
+LGPL-2.1-or-later,GNU Lesser General Public License v2.1 or later,True
+LGPL-2.1-or-later,GNU Lesser General Public License 2.1 (or any later version),True
+LGPL-2.1-or-later,scancode://lgpl-2.1-plus,True
+LGPL-2.1-or-later,LGPL 2.1 or later,True
 LGPL-2.1-or-later,GNU Library General Public License,False
 LGPL-2.1-or-later,The GNU Lesser General Public License (LGPL),False
 LGPL-2.1-or-later,"GNU Lesser General Public License, Version 2.1+",False
@@ -1114,71 +1085,39 @@ LGPL-2.1-or-later,"GNU Lesser General Public License as published by the Free So
 LGPL-2.1-or-later,"GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the License, or (at your option) any later version",False
 LGPL-2.1-or-later,"GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version",False
 LGPL-2.1-or-later,"GNU Lesser General Public License, V2.1 or later",False
-LGPL-2.1-or-later,GNU LESSER GENERAL PUBLIC LICENSE 2.1,False
-LGPL-2.1-or-later,GNU LESSER GENERAL PUBLIC LICENSE Version 2.1,False
-LGPL-2.1-or-later,GNU LGPL(v2.1),False
-LGPL-2.1-or-later,"GNU LIBRARY GENERAL PUBLIC LICENSE, Version 2.1, February 1999",False
-LGPL-2.1-or-later,GNU Lesser GPL 2.1,False
-LGPL-2.1-or-later,GNU Lesser General Public License (LGPL) 2.1,False
-LGPL-2.1-or-later,GNU Lesser General Public License v2.1,False
-LGPL-2.1-or-later,GNU Lesser General Public License version 2.1,False
-LGPL-2.1-or-later,"GNU Lesser General Public License, 2.1",False
-LGPL-2.1-or-later,"GNU Lesser General Public License, v. 2.1",False
-LGPL-2.1-or-later,GNU Lesser Public License 2.1,False
-LGPL-2.1-or-later,GNU Library or Lesser General Public License (LGPL) V2.1,False
-LGPL-2.1-or-later,GNU Library or Lesser General Public License (LGPL) 2.1,False
-LGPL-2.1-or-later,GNU General Lesser Public License (LGPL) version 2.1,False
-LGPL-2.1-or-later,"Lesser Gnu Public License, Version 2.1",False
-LGPL-2.1-or-later,"LGPL, version 2.1",False
-LGPL-2.1-or-later,Lesser General Public License (LGPL) v 2.1,False
-LGPL-2.1-or-later,"Lesser General Public License (LGPL), Version 2.1",False
-LGPL-2.1-or-later,"LGPL license, Version 2.1",False
-LGPL-2.1-or-later,LGPL v 2.1,False
-LGPL-2.1-or-later,LGPL v2.1,False
-LGPL-2.1-or-later,LGPLv2.1,False
-LGPL-2.1-or-later,lgpl_v2_1,False
-LGPL-2.1-or-later,GNU Lesser General Public License (LGPL) version 2.1,False
-LGPL-2.1-or-later,GNU Lesser General Public License (LGPL) v2.1,False
-LGPL-2.1-or-later,version 2.1 of the GNU Lesser General Public License,False
-LGPL-2.1-or-later,Version 2.1 of the GNU Lesser General Public License,False
-LGPL-2.1-or-later,"The GNU Lesser General Public License, Versions 2.1",False
-LGPL-2.1-or-later,"GNU Lesser General Public License as published by the Free Software Foundation, version 2.1",False
-LGPL-2.1-or-later,"This is the first released version of the Lesser GPL.  It also counts as the successor of the GNU Library Public License, version 2, hence the version number 2.1.",False
-LGPL-2.1-or-later,GNU Lesser Public License (LGPL) Version 2.1,False
-LGPL-2.1-or-later,http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html,False
-LGPL-2.1-or-later,https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html,False
+LGPL-2.1-or-later,scancode:lgpl-2.1-plus,False
+LGPL-2.1-or-later,osi:LGPL-2.1,False
 CC-PDDC,Creative Commons Public Domain Dedication and Certification,True
-CC-PDDC,scancode:aop-pd,True
-CC-PDDC,scancode:cc-pd,True
 CC-PDDC,Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification,True
 CC-PDDC,scancode://cc-pd,True
 CC-PDDC,CC-PD,True
 CC-PDDC,AOP Public Domain License,False
+CC-PDDC,scancode:aop-pd,False
+CC-PDDC,scancode:cc-pd,False
 Imlib2,Imlib2 License,True
-Imlib2,scancode:imlib2,True
 Imlib2,scancode://imlib2,True
 Imlib2,IMLIB2 LICENSE,False
 Imlib2,IMLIB2 License,False
+Imlib2,scancode:imlib2,False
 Multics,Multics License,True
-Multics,scancode:multics,True
-Multics,osi:Multics,True
 Multics,scancode://multics,True
 Multics,MULTICS LICENSE,False
 Multics,MULTICS License,False
+Multics,scancode:multics,False
+Multics,osi:Multics,False
 D-FSL-1.0,Deutsche Freie Software Lizenz,True
-D-FSL-1.0,scancode:d-fsl-1.0-de,True
+D-FSL-1.0,scancode:d-fsl-1.0-de,False
 BSD-3-Clause-No-Nuclear-Warranty,BSD 3-Clause No Nuclear Warranty,True
 BSD-3-Clause-No-Nuclear-Warranty,BSD 3-Clause License (no nuclear warranty),True
 BSD-3-Clause-No-Nuclear-Warranty,scancode://bsd-3-clause-no-nuclear-warranty,True
 BSD-3-Clause-No-Nuclear-Warranty,BSD 3 Clause No Nuclear Warranty,False
 BlueOak-1.0.0,Blue Oak Model License 1.0.0,True
-BlueOak-1.0.0,scancode:blueoak-1.0.0,True
 BlueOak-1.0.0,scancode://blueoak-1.0.0,True
 BlueOak-1.0.0,Blue Oak Model License Version 1.0.0,False
+BlueOak-1.0.0,scancode:blueoak-1.0.0,False
 Community-Spec-1.0,Community Specification License 1.0,True
 GFDL-1.1-only,GNU Free Documentation License 1.1,True
 GFDL-1.1-only,GFDL-1.1,True
-GFDL-1.1-only,scancode:gfdl-1.1,True
 GFDL-1.1-only,GNU Free Documentation License Version 1.1,True
 GFDL-1.1-only,GNU Free Documentation License v1.1 only,True
 GFDL-1.1-only,scancode://gfdl-1.1,True
@@ -1189,16 +1128,15 @@ GFDL-1.1-only,GFDL Version 1.1,False
 GFDL-1.1-only,"GFDL, v1.1",False
 GFDL-1.1-only,GFDL version 1.1,False
 GFDL-1.1-only,Change license on the manual to GFDLv1.1,False
+GFDL-1.1-only,scancode:gfdl-1.1,False
 RPL-1.5,Reciprocal Public License 1.5,True
-RPL-1.5,scancode:rpl-1.5,True
-RPL-1.5,osi:RPL-1.5,True
 RPL-1.5,"Reciprocal Public License, Version 1.5",True
 RPL-1.5,scancode://rpl-1.5,True
 RPL-1.5,RPL 1.5,True
 RPL-1.5,Reciprocal Public License,False
+RPL-1.5,scancode:rpl-1.5,False
+RPL-1.5,osi:RPL-1.5,False
 OFL-1.1,SIL Open Font License 1.1,True
-OFL-1.1,scancode:ofl-1.1,True
-OFL-1.1,osi:OFL-1.1,True
 OFL-1.1,Open Font License 1.1,True
 OFL-1.1,"SIL Open Font License, Version 1.1",True
 OFL-1.1,SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007,True
@@ -1207,10 +1145,9 @@ OFL-1.1,OFL 1.1,True
 OFL-1.1,The SIL Open Font License,False
 OFL-1.1,"OFL, Version 1.1",False
 OFL-1.1,SIL OPEN FONT LICENSE Version 1.1,False
+OFL-1.1,scancode:ofl-1.1,False
+OFL-1.1,osi:OFL-1.1,False
 CPL-1.0,Common Public License 1.0,True
-CPL-1.0,scancode:cpl-0.5,True
-CPL-1.0,scancode:cpl-1.0,True
-CPL-1.0,osi:CPL-1.0,True
 CPL-1.0,"Common Public License, Version 1.0",True
 CPL-1.0,CPL,True
 CPL-1.0,License :: OSI Approved :: Common Public License,True
@@ -1224,6 +1161,9 @@ CPL-1.0,Common Public License (CPL) -- V1.0,False
 CPL-1.0,Common Public License - v 1.0,False
 CPL-1.0,Common Public License v1.0,False
 CPL-1.0,Common Public License version 1.0,False
+CPL-1.0,scancode:cpl-0.5,False
+CPL-1.0,scancode:cpl-1.0,False
+CPL-1.0,osi:CPL-1.0,False
 AGPL-3.0-only,AGPL-3.0,False
 AGPL-3.0-only,AGPL3.0,False
 AGPL-3.0-only,AGPL3,False
@@ -1242,11 +1182,7 @@ AGPL-3.0-only,GNU Affero General Public License v3.0 or later,False
 AGPL-3.0-only,agpl-3.0,False
 AGPL-3.0-only,GNU AGPLv3,False
 AGPL-3.0-only,GNU Affero General Public License 3.0 (or any later version),False
-AGPL-3.0-only,scancode:agpl-3.0-plus,False
-AGPL-3.0-only,scancode:agpl-2.0,False
-AGPL-3.0-only,osi:AGPL-3.0,False
 AGPL-3.0-only,GNU Affero General Public License 3.0,False
-AGPL-3.0-only,scancode:agpl-3.0,False
 AGPL-3.0-only,GNU Affero General Public License v3,False
 AGPL-3.0-only,agpl-v3,False
 AGPL-3.0-only,"GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",False
@@ -1285,6 +1221,9 @@ AGPL-3.0-only,Affero GPL3+,False
 AGPL-3.0-only,General Affero Public License version 3+,False
 AGPL-3.0-only,Affero GNU Public License Version 3+,False
 AGPL-3.0-only,version 2 of the Affero General Public License,False
+AGPL-3.0-only,scancode:agpl-3.0-plus,False
+AGPL-3.0-only,scancode:agpl-2.0,False
+AGPL-3.0-only,osi:AGPL-3.0,False
 AGPL-3.0-only,GNU AFFERO GENERAL PUBLIC LICENSE v3,False
 AGPL-3.0-only,"GNU AFFERO GENERAL PUBLIC LICENSE, version 3",False
 AGPL-3.0-only,"GNU AFFERO PUBLIC LICENSE, Version 3",False
@@ -1302,27 +1241,26 @@ AGPL-3.0-only,Affero GPL3,False
 AGPL-3.0-only,General Affero Public License version 3,False
 AGPL-3.0-only,Affero GNU Public License Version 3,False
 AGPL-3.0-only,AGPL-3,False
+AGPL-3.0-only,scancode:agpl-3.0,False
 gnuplot,gnuplot License,True
-gnuplot,scancode:gnuplot,True
 gnuplot,scancode://gnuplot,True
 gnuplot,GNUPLOT LICENSE,False
 gnuplot,GNUPLOT License,False
+gnuplot,scancode:gnuplot,False
 NLPL,No Limit Public License,True
-NLPL,scancode:nlpl,True
 NLPL,scancode://nlpl,True
 NLPL,NO LIMIT PUBLIC LICENSE,False
+NLPL,scancode:nlpl,False
 ADSL,Amazon Digital Services License,True
-ADSL,scancode:adsl,True
 ADSL,scancode://adsl,True
+ADSL,scancode:adsl,False
 psfrag,psfrag License,True
-psfrag,scancode:psfrag,True
 psfrag,scancode://psfrag,True
 psfrag,PSFRAG LICENSE,False
 psfrag,PSFRAG License,False
+psfrag,scancode:psfrag,False
 Watcom-1.0,Sybase Open Watcom Public License 1.0,True
 Watcom-1.0,Watcom License 1.0,True
-Watcom-1.0,scancode:sybase,True
-Watcom-1.0,osi:Watcom-1.0,True
 Watcom-1.0,The Sybase Open Source Licence,True
 Watcom-1.0,scancode://sybase,True
 Watcom-1.0,Open Watcom 1.0,True
@@ -1331,8 +1269,9 @@ Watcom-1.0,Watcom 1.0,False
 Watcom-1.0,"Watcom License, Version 1.0",False
 Watcom-1.0,"Watcom License, 1.0",False
 Watcom-1.0,Sybase Open Watcom Public License version 1.0,False
+Watcom-1.0,scancode:sybase,False
+Watcom-1.0,osi:Watcom-1.0,False
 SGI-B-1.0,SGI B License 1.0,True
-SGI-B-1.0,scancode:sgi-fslb-1.0,True
 SGI-B-1.0,SGI Free Software License B v1.0,True
 SGI-B-1.0,scancode://sgi-fslb-1.0,True
 SGI-B-1.0,SGI Free Software License B 1.0,True
@@ -1344,16 +1283,15 @@ SGI-B-1.0,"SGI B License, Version 1.0",False
 SGI-B-1.0,"SGI-B License, Version 1.0",False
 SGI-B-1.0,"SGI-B License, 1.0",False
 SGI-B-1.0,SGI FREE SOFTWARE LICENSE B (Version 1.0 1/25/2000),False
+SGI-B-1.0,scancode:sgi-fslb-1.0,False
 W3C-19980720,W3C Software Notice and License (1998-07-20),True
-W3C-19980720,scancode:w3c-software-19980720,True
 W3C-19980720,W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998),True
 W3C-19980720,scancode://w3c-software-19980720,True
 W3C-19980720,W3C-SOFTWARE-19980720,True
 W3C-19980720,http://www.w3.org/Consortium/Legal/copyright-software-19980720,False
+W3C-19980720,scancode:w3c-software-19980720,False
 NASA-1.3,NASA Open Source Agreement 1.3,True
 NASA-1.3,NASA License 1.3,True
-NASA-1.3,scancode:nasa-1.3,True
-NASA-1.3,osi:NASA-1.3,True
 NASA-1.3,nasa1.3,True
 NASA-1.3,"NASA Open Source Agreement, Version 1.3",True
 NASA-1.3,scancode://nasa-1.3,True
@@ -1363,9 +1301,9 @@ NASA-1.3,"NASA, 1.3",False
 NASA-1.3,"NASA License, Version 1.3",False
 NASA-1.3,"NASA License, 1.3",False
 NASA-1.3,NASA OPEN SOURCE AGREEMENT VERSION 1.3,False
+NASA-1.3,scancode:nasa-1.3,False
+NASA-1.3,osi:NASA-1.3,False
 Fair,Fair License,True
-Fair,scancode:fair,True
-Fair,osi:Fair,True
 Fair,Fair License (Fair),True
 Fair,scancode://fair,True
 Fair,FAIR LICENSE,False
@@ -1373,43 +1311,43 @@ Fair,FAIR License,False
 Fair,http://opensource.org/licenses/fair.php,False
 Fair,http://www.opensource.org/licenses/fair.php,False
 Fair,https://spdx.org/licenses/fair,False
+Fair,scancode:fair,False
+Fair,osi:Fair,False
 CERN-OHL-1.1,CERN Open Hardware License 1.1,True
-CERN-OHL-1.1,scancode:cern-ohl-1.1,True
 CERN-OHL-1.1,CERN Open Hardware Licence v1.1,True
 CERN-OHL-1.1,scancode://cern-ohl-1.1,True
 CERN-OHL-1.1,CERN Open Hardware License v1.1,True
 CERN-OHL-1.1,CERN OHL v1.1,False
+CERN-OHL-1.1,scancode:cern-ohl-1.1,False
 BSD-2-Clause-Views,BSD 2-Clause with Views Sentence,True
 BSD-2-Clause-Views,BSD 2-Clause with views sentence,True
 BSD-2-Clause-Views,scancode://bsd-2-clause-views,True
 OLDAP-1.1,Open LDAP Public License v1.1,True
 OLDAP-1.1,OpenLDAP Public License 1.1,True
-OLDAP-1.1,scancode:openldap-1.1,True
 OLDAP-1.1,scancode://openldap-1.1,True
 OLDAP-1.1,"OLDAP, Version 1.1",False
 OLDAP-1.1,"OLDAP, 1.1",False
 OLDAP-1.1,"OLDAP License, Version 1.1",False
 OLDAP-1.1,"OLDAP License, 1.1",False
 OLDAP-1.1,"The OpenLDAP Public License Version 1.1, 25 August 1998",False
+OLDAP-1.1,scancode:openldap-1.1,False
 CC-BY-NC-ND-3.0-DE,Creative Commons Attribution Non Commercial No Derivatives 3.0 Germany,True
 OGDL-Taiwan-1.0,Taiwan Open Government Data License 1.0,True
-OGDL-Taiwan-1.0,scancode:ogdl-taiwan-1.0,True
 OGDL-Taiwan-1.0,"Taiwan Open Government Data License, version 1.0",True
 OGDL-Taiwan-1.0,scancode://ogdl-taiwan-1.0,True
+OGDL-Taiwan-1.0,scancode:ogdl-taiwan-1.0,False
 NGPL,Nethack General Public License,True
-NGPL,scancode:ngpl,True
-NGPL,osi:NGPL,True
 NGPL,The Nethack General Public License,True
 NGPL,License :: OSI Approved :: Nethack General Public License,True
 NGPL,scancode://ngpl,True
 NGPL,NETHACK GENERAL PUBLIC LICENSE,False
 NGPL,http://www.nethack.org/common/license.html,False
 NGPL,https://spdx.org/licenses/ngpl,False
+NGPL,scancode:ngpl,False
+NGPL,osi:NGPL,False
 BSL-1.0,BSL (v1.0),True
 BSL-1.0,BSL (v1),True
 BSL-1.0,Boost Software License 1.0,True
-BSL-1.0,scancode:boost-1.0,True
-BSL-1.0,osi:BSL-1.0,True
 BSL-1.0,bsl1.0,True
 BSL-1.0,Boost Software License 1.0 (BSL-1.0),True
 BSL-1.0,Boost Software License - Version 1.0,True
@@ -1420,15 +1358,16 @@ BSL-1.0,BSL Version 1.0,False
 BSL-1.0,BSL v1.0,False
 BSL-1.0,"Boost Software License, Version 1.0",False
 BSL-1.0,Boost Software License v1.0,False
+BSL-1.0,scancode:boost-1.0,False
+BSL-1.0,osi:BSL-1.0,False
 Sendmail,Sendmail License,True
-Sendmail,scancode:sendmail,True
 Sendmail,SENDMAIL LICENSE (version 2004),True
 Sendmail,SENDMAIL LICENSE (version 2012),True
 Sendmail,SENDMAIL LICENSE (version 1998),True
 Sendmail,scancode://sendmail,True
+Sendmail,scancode:sendmail,False
 OLDAP-2.4,Open LDAP Public License v2.4,True
 OLDAP-2.4,OpenLDAP Public License 2.4,True
-OLDAP-2.4,scancode:openldap-2.4,True
 OLDAP-2.4,scancode://openldap-2.4,True
 OLDAP-2.4,"OLDAP, Version 2.4",False
 OLDAP-2.4,"OLDAP, 2.4",False
@@ -1436,19 +1375,19 @@ OLDAP-2.4,"OLDAP License, Version 2.4",False
 OLDAP-2.4,"OLDAP License, 2.4",False
 OLDAP-2.4,OpenLDAP Public License Version 2.4,False
 OLDAP-2.4,OpenLDAP 2.4,False
+OLDAP-2.4,scancode:openldap-2.4,False
 CrystalStacker,CrystalStacker License,True
 CrystalStacker,Crystal Stacker License,True
-CrystalStacker,scancode:crystal-stacker,True
 CrystalStacker,scancode://crystal-stacker,True
 CrystalStacker,Crystal Stacker,False
 CrystalStacker,Crystal Stacker is freeware,False
 CrystalStacker,CRYSTALSTACKER LICENSE,False
 CrystalStacker,CRYSTALSTACKER License,False
+CrystalStacker,scancode:crystal-stacker,False
 blessing,SQLite Blessing,True
-blessing,scancode:blessing,True
 blessing,scancode://blessing,True
+blessing,scancode:blessing,False
 CC-BY-SA-4.0,Creative Commons BY-SA 4.0,True
-CC-BY-SA-4.0,scancode:cc-by-sa-4.0,True
 CC-BY-SA-4.0,Creative Commons Attribution Share-Alike 4.0,True
 CC-BY-SA-4.0,Creative Commons Attribution-ShareAlike 4.0 International,True
 CC-BY-SA-4.0,Creative Commons Attribution Share Alike 4.0 International,True
@@ -1458,56 +1397,56 @@ CC-BY-SA-4.0,Creative Commons Attribution Share-Alike (CC-BY-SA) v4.0,False
 CC-BY-SA-4.0,Creative Commons Attribution-ShareAlike 4.0,False
 CC-BY-SA-4.0,Creative Commons Attribution ShareAlike 4.0,False
 CC-BY-SA-4.0,CC BY-SA 4.0,False
+CC-BY-SA-4.0,scancode:cc-by-sa-4.0,False
 CC-BY-2.5,Creative Commons BY 2.5,True
-CC-BY-2.5,scancode:cc-by-2.5,True
 CC-BY-2.5,Creative Commons Attribution 2.5 Generic,True
 CC-BY-2.5,scancode://cc-by-2.5,True
 CC-BY-2.5,Creative Commons Attribution 2.5,False
 CC-BY-2.5,CC-A 2.5,False
 CC-BY-2.5,CC-BY 2.5,False
 CC-BY-2.5,http://creativecommons.org/licenses/by/2.5,False
+CC-BY-2.5,scancode:cc-by-2.5,False
 ICU,ICU License,False
 ICU,X11,True
 ICU,X11 License,False
-ICU,scancode:slf4j-2005,False
-ICU,scancode:x11-xconsortium,False
 ICU,ICU License (ICU 1.8.1 and later),False
 ICU,scancode://x11-xconsortium,False
 ICU,X11-Style (X Consortium),False
 ICU,scancode://x11,False
+ICU,scancode:slf4j-2005,False
 ICU,X License,False
 ICU,MIT/X Consortium,False
 ICU,X/MIT License,False
 ICU,MIT/X11,False
 ICU,X11 LICENSE,False
 ICU,Expat~X with X exception,False
+ICU,scancode:x11-xconsortium,False
 diffmark,diffmark license,True
 diffmark,diffmark License,True
-diffmark,scancode:diffmark,True
 diffmark,scancode://diffmark,True
 diffmark,DIFFMARK LICENSE,False
 diffmark,DIFFMARK License,False
+diffmark,scancode:diffmark,False
 libpng-2.0,PNG Reference Library version 2,True
 libpng-2.0,PNG Reference Library License 2.0,True
-libpng-2.0,scancode:libpng-v2,True
 libpng-2.0,scancode://libpng-v2,True
 libpng-2.0,LIbpng License v2,True
 libpng-2.0,PNG Reference Library License 2,False
+libpng-2.0,scancode:libpng-v2,False
 RSCPL,Ricoh Source Code Public License,True
-RSCPL,scancode:ricoh-1.0,True
-RSCPL,osi:RSCPL,True
 RSCPL,The Ricoh Source Code Public License,True
 RSCPL,License :: OSI Approved :: Ricoh Source Code Public License,True
 RSCPL,scancode://ricoh-1.0,True
 RSCPL,Ricoh Source Code Public License 1.0,True
+RSCPL,scancode:ricoh-1.0,False
+RSCPL,osi:RSCPL,False
 FSFAP,FSF All Permissive license,True
 FSFAP,FSF All Permissive License,True
-FSFAP,scancode:fsf-ap,True
 FSFAP,scancode://fsf-ap,True
 FSFAP,FSF All Permissive,False
 FSFAP,FSF all permissive,False
+FSFAP,scancode:fsf-ap,False
 NPL-1.1,Netscape Public License 1.1,True
-NPL-1.1,scancode:npl-1.1,True
 NPL-1.1,Netscape Public License Version 1.1,True
 NPL-1.1,Netscape Public License v1.1,True
 NPL-1.1,scancode://npl-1.1,True
@@ -1517,8 +1456,8 @@ NPL-1.1,http://www.mozilla.org/NPL/,False
 NPL-1.1,Netscape Public License and MPL / GPL dual license,False
 NPL-1.1,mozilla.org/mpl/MPL/NPL/1.1/,False
 NPL-1.1,https://spdx.org/licenses/npl-1.1,False
+NPL-1.1,scancode:npl-1.1,False
 OSL-1.1,Open Software License 1.1,True
-OSL-1.1,scancode:osl-1.1,True
 OSL-1.1,scancode://osl-1.1,True
 OSL-1.1,OSL 1.1,True
 OSL-1.1,Open Software License,False
@@ -1526,16 +1465,16 @@ OSL-1.1,Open Software License (OSL) v1.1,False
 OSL-1.1,"OSL, Version 1.1",False
 OSL-1.1,Open Software License v. 1.1,False
 OSL-1.1,Open Software License version 1.1,False
+OSL-1.1,scancode:osl-1.1,False
 MIT-feh,feh License,True
 MIT-feh,MIT License (feh advertising),True
-MIT-feh,scancode:mit-ack,True
 MIT-feh,scancode://mit-ack,True
 MIT-feh,MIT Acknowledgment License,True
 MIT-feh,MIT,False
 MIT-feh,MIT feh,False
 MIT-feh,MIT FEH,False
+MIT-feh,scancode:mit-ack,False
 PDDL-1.0,PDDL 1.0,True
-PDDL-1.0,scancode:pddl-1.0,True
 PDDL-1.0,Open Data Commons Public Domain Dedication and Licence 1.0,True
 PDDL-1.0,ODC-PDDL-1.0,True
 PDDL-1.0,Open Data Commons Public Domain Dedication & License 1.0,True
@@ -1544,13 +1483,13 @@ PDDL-1.0,"PDDL, Version 1.0",False
 PDDL-1.0,Public Domain Dedication & License,False
 PDDL-1.0,http://opendatacommons.org/licenses/pddl/1-0/,False
 PDDL-1.0,https://opendatacommons.org/licenses/pddl/,False
+PDDL-1.0,scancode:pddl-1.0,False
 CERN-OHL-1.2,CERN Open Hardware Licence 1.2,True
-CERN-OHL-1.2,scancode:cern-ohl-1.2,True
 CERN-OHL-1.2,CERN Open Hardware Licence v1.2,True
 CERN-OHL-1.2,scancode://cern-ohl-1.2,True
 CERN-OHL-1.2,CERN OHL v1.2,False
+CERN-OHL-1.2,scancode:cern-ohl-1.2,False
 CC-BY-3.0,Creative Commons BY 3.0,True
-CC-BY-3.0,scancode:cc-by-3.0,True
 CC-BY-3.0,Creative Commons Attribution 3.0 Unported,True
 CC-BY-3.0,scancode://cc-by-3.0,True
 CC-BY-3.0,Creative Commons Attribution unported (CC-BY) v3.0,False
@@ -1558,12 +1497,13 @@ CC-BY-3.0,Creative Commons Attribution 3.0,False
 CC-BY-3.0,CC-A 3.0,False
 CC-BY-3.0,CC-BY 3.0,False
 CC-BY-3.0,http://creativecommons.org/licenses/by/3.0,False
+CC-BY-3.0,scancode:cc-by-3.0,False
 CC-BY-NC-ND-2.0,Creative Commons BY-NC-ND 2.0 (generic),True
-CC-BY-NC-ND-2.0,scancode:cc-by-nc-nd-2.0,True
 CC-BY-NC-ND-2.0,Creative Commons Attribution Non Commercial No Derivatives 2.0 Generic,True
 CC-BY-NC-ND-2.0,scancode://cc-by-nc-nd-2.0,True
 CC-BY-NC-ND-2.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-ND-2.0,Creative Commons Attribution-NonCommercial-NoDerivs 2.0,False
+CC-BY-NC-ND-2.0,scancode:cc-by-nc-nd-2.0,False
 GFDL-1.1-or-later,GNU Free Documentation License 1.1 (or any later version),True
 GFDL-1.1-or-later,GFDL-1.1+,True
 GFDL-1.1-or-later,GNU Free Documentation License v1.1 or later,True
@@ -1580,56 +1520,56 @@ GFDL-1.1-or-later,GFDL version 1.1 or later,False
 GFDL-1.1-or-later,Change license on the manual to GFDLv1.1+,False
 Borceux,Borceux license,True
 Borceux,Borceux License,True
-Borceux,scancode:borceux,True
 Borceux,scancode://borceux,True
 Borceux,BORCEUX LICENSE,False
 Borceux,BORCEUX License,False
+Borceux,scancode:borceux,False
 NCSA,University of Illinois/NCSA Open Source License,True
 NCSA,UIUC/NCSA,True
 NCSA,NCSA License,True
-NCSA,scancode:uoi-ncsa,True
-NCSA,osi:NCSA,True
 NCSA,uoi-ncsa,True
 NCSA,The University of Illinois/NCSA Open Source License,True
 NCSA,License :: OSI Approved :: University of Illinois/NCSA Open Source License,True
 NCSA,scancode://uoi-ncsa,True
 NCSA,NCSA Open Source License,True
 NCSA,NCSA LICENSE,False
+NCSA,scancode:uoi-ncsa,False
+NCSA,osi:NCSA,False
 Naumen,Naumen Public License,True
 Naumen,Naumen License,True
-Naumen,scancode:naumen,True
-Naumen,osi:Naumen,True
 Naumen,NAUMEN Public License,True
 Naumen,scancode://naumen,True
 Naumen,NAUMEN LICENSE,False
 Naumen,NAUMEN License,False
+Naumen,scancode:naumen,False
+Naumen,osi:Naumen,False
 Caldera,Caldera License,True
-Caldera,scancode:caldera,True
 Caldera,scancode://caldera,True
 Caldera,CALDERA LICENSE,False
 Caldera,CALDERA License,False
+Caldera,scancode:caldera,False
 PHP-3.01,PHP License v3.01,True
 PHP-3.01,PHP License 3.01,True
-PHP-3.01,scancode:php-3.01,True
 PHP-3.01,"PHP License, version 3.01",True
 PHP-3.01,scancode://php-3.01,True
 PHP-3.01,"PHP, Version 3.01",False
 PHP-3.01,"PHP, 3.01",False
 PHP-3.01,"PHP License, Version 3.01",False
+PHP-3.01,scancode:php-3.01,False
 GFDL-1.1-no-invariants-only,GNU Free Documentation License 1.1 (no invariants),True
 GFDL-1.1-no-invariants-only,GNU Free Documentation License v1.1 only - no invariants,True
 GFDL-1.1-no-invariants-only,scancode://gfdl-1.1-no-invariants-only,True
 DOC,DOC License,True
-DOC,scancode:ace-tao,True
 DOC,scancode://ace-tao,True
 DOC,ACE TAO License,True
 DOC,DOC LICENSE,False
+DOC,scancode:ace-tao,False
 OGC-1.0,OGC Software License 1.0,True
-OGC-1.0,scancode:ogc-1.0,True
-OGC-1.0,scancode:ogc-2006,True
 OGC-1.0,"OGC Software License, Version 1.0",True
 OGC-1.0,scancode://ogc-1.0,True
 OGC-1.0,OGC 1.0,True
+OGC-1.0,scancode:ogc-1.0,False
+OGC-1.0,scancode:ogc-2006,False
 GPL-3.0-or-later,GPL-3.0-only,True
 GPL-3.0-or-later,GPL-3.0,False
 GPL-3.0-or-later,GPL3.0,False
@@ -1645,10 +1585,7 @@ GPL-3.0-or-later,GNU General Public License v3.0 or later,False
 GPL-3.0-or-later,gpl-3.0,False
 GPL-3.0-or-later,GNU GPLv3,False
 GPL-3.0-or-later,GNU General Public License 3.0 (or any later version),False
-GPL-3.0-or-later,scancode:gpl-3.0-plus,False
-GPL-3.0-or-later,osi:GPL-3.0,False
 GPL-3.0-or-later,GNU General Public License 3.0,False
-GPL-3.0-or-later,scancode:gpl-3.0,False
 GPL-3.0-or-later,"GNU General Public License, Version 3.0",False
 GPL-3.0-or-later,License :: OSI Approved :: GNU General Public License (GPL),False
 GPL-3.0-or-later,License :: OSI Approved :: GNU General Public License v3 (GPLv3),False
@@ -1695,6 +1632,8 @@ GPL-3.0-or-later,GPL-3.0-or License later,False
 GPL-3.0-or-later,GPL version 3 or later,False
 GPL-3.0-or-later,GPL version 3.0 or later,False
 GPL-3.0-or-later,"GNU General Public License (GNU GPL), version 3 or later",False
+GPL-3.0-or-later,scancode:gpl-3.0-plus,False
+GPL-3.0-or-later,osi:GPL-3.0,False
 GPL-3.0-or-later,GNU General Public License (GPLV3+),False
 GPL-3.0-or-later,"GNU General Public License, Versions 2 and 3",False
 GPL-3.0-or-later,GNU GENERAL PUBLIC LICENSE - Version 3,False
@@ -1743,8 +1682,8 @@ GPL-3.0-or-later,"General public licence, v 3",False
 GPL-3.0-or-later,gpl_v3,False
 GPL-3.0-or-later,GPL V3,False
 GPL-3.0-or-later,"GNU General Public License"" .SS ""Version 3",False
+GPL-3.0-or-later,scancode:gpl-3.0,False
 SAX-PD,SAX Public Domain Notice,True
-SAX-PD,scancode:sax-pd,True
 SAX-PD,Sax Public Domain Notice,True
 SAX-PD,scancode://sax-pd,True
 SAX-PD,http://www.spdx.org/licenses/SAX-PD,False
@@ -1752,38 +1691,30 @@ SAX-PD,for license please see accompanying LICENSE.txt file (available also at h
 SAX-PD,http://www.saxproject.org/copying.html,False
 SAX-PD,https://spdx.org/licenses/sax-pd,False
 SAX-PD,http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt,False
+SAX-PD,scancode:sax-pd,False
 CNRI-Python,CNRI Python License,True
-CNRI-Python,CNRI Open Source License Agreement (Python 1.6),True
-CNRI-Python,CNRI-Python-1.6,True
-CNRI-Python,scancode:cnri-python-1.6,True
 CNRI-Python,CNRI Open Source License Agreement (Python 1.6b1),True
 CNRI-Python,CNRI-Python-1.6b1,True
-CNRI-Python,osi:CNRI-Python,True
 CNRI-Python,CNRI portion of the multi-part Python License,True
 CNRI-Python,License :: OSI Approved :: Python License (CNRI Python License),True
 CNRI-Python,CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1,True
 CNRI-Python,scancode://cnri-python-1.6,True
 CNRI-Python,CNRI Python 1.6,True
-CNRI-Python,http://www.handle.net/python_licenses/python1.6_9-5-00.html,False
-CNRI-Python,CNRI OPEN SOURCE GPL-COMPATIBLE LICENSE AGREEMENT,False
-CNRI-Python,CNRI Python,False
-CNRI-Python,CNRI PYTHON,False
 CNRI-Python,http://spdx.org/licenses/CNRI-Python,False
 CNRI-Python,https://spdx.org/licenses/cnri-python,False
 CNRI-Python,http://www.opensource.org/licenses/CNRI-Python,False
+CNRI-Python,scancode:cnri-python-1.6,False
+CNRI-Python,osi:CNRI-Python,False
 HPND,Historical Permission Notice and Disclaimer,True
-HPND,scancode:historical,True
-HPND,osi:HPND,True
 HPND,scancode://historical,True
 HPND,MIT,False
 HPND,Historic Permission Notice and Disclaimer,False
 HPND,http://www.opensource.org/licenses/historical.php,False
 HPND,https://spdx.org/licenses/hpnd,False
+HPND,scancode:historical,False
+HPND,osi:HPND,False
 CECILL-C,CeCILL-C License,True
 CECILL-C,CECILL C License,True
-CECILL-C,scancode:cecill-c,True
-CECILL-C,CeCILL-C Free Software License (FRA),True
-CECILL-C,CeCILL-C-FSL,True
 CECILL-C,CeCILL-C Free Software License Agreement,True
 CECILL-C,scancode://cecill-c,True
 CECILL-C,CECILL C,False
@@ -1791,69 +1722,23 @@ CECILL-C,CECILL-C License,False
 CECILL-C,CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice,False
 CECILL-C,https://spdx.org/licenses/cecill-c,False
 CECILL-C,eCILL-C Free Software License Agreement,False
-GPL-2.0-only,GPL-2.0,False
-GPL-2.0-only,GPL2.0,False
-GPL-2.0-only,GPL2,False
-GPL-2.0-only,GPL (v2),False
-GPL-2.0-only,GNU General Public License Version 2,False
-GPL-2.0-only,GPL-2.0-or-later,True
-GPL-2.0-only,GPL-2.0+,False
-GPL-2.0-only,GPL2.0+,False
-GPL-2.0-only,GPL2+,False
-GPL-2.0-only,GPL (v2 or later),False
-GPL-2.0-only,GNU General Public License v2.0 only,False
-GPL-2.0-only,GNU General Public License v2.0 or later,False
-GPL-2.0-only,gpl-2.0,False
-GPL-2.0-only,GNU GPLv2,False
-GPL-2.0-only,GNU General Public License 2.0 (or any later version),False
-GPL-2.0-only,scancode:gpl-2.0-plus,False
-GPL-2.0-only,osi:GPL-2.0,False
-GPL-2.0-only,GNU General Public License 2.0,False
-GPL-2.0-only,scancode:gpl-2.0,False
-GPL-2.0-only,"GNU General Public License, Version 2.0",False
-GPL-2.0-only,License :: OSI Approved :: GNU General Public License v2 (GPLv2),False
-GPL-2.0-only,scancode://gpl-2.0-plus,False
-GPL-2.0-only,GPL 2.0 or later,False
-GPL-2.0-only,scancode://gpl-2.0,False
-GPL-2.0-only,GPL 2.0,False
+CECILL-C,scancode:cecill-c,False
+GPL-2.0-only,GPL-2.0,True
+GPL-2.0-only,GPL2.0,True
+GPL-2.0-only,GPL2,True
+GPL-2.0-only,GPL (v2),True
+GPL-2.0-only,GNU General Public License Version 2,True
+GPL-2.0-only,GNU General Public License v2.0 only,True
+GPL-2.0-only,gpl-2.0,True
+GPL-2.0-only,GNU GPLv2,True
+GPL-2.0-only,GNU General Public License 2.0,True
+GPL-2.0-only,"GNU General Public License, Version 2.0",True
+GPL-2.0-only,License :: OSI Approved :: GNU General Public License v2 (GPLv2),True
+GPL-2.0-only,scancode://gpl-2.0,True
+GPL-2.0-only,GPL 2.0,True
 GPL-2.0-only,GNU General Public License,False
 GPL-2.0-only,The GNU General Public License (GPL),False
 GPL-2.0-only,GPLv2,False
-GPL-2.0-only,GPLv2+,False
-GPL-2.0-only,GNU GENERAL PUBLIC LICENSE version 2 or higher,False
-GPL-2.0-only,"GNU General Public License (GPL) version 2, or any later version",False
-GPL-2.0-only,GNU General Public License Version 2 or later,False
-GPL-2.0-only,GNU General Public License v2 or later,False
-GPL-2.0-only,GNU General Public License version 2+,False
-GPL-2.0-only,licensed under the terms of the GNU General Public License,False
-GPL-2.0-only,"GNU General Public License, Version 2.0 or any later version",False
-GPL-2.0-only,"GNU General Public License; either version 2 of the License, or (at your option) any later version",False
-GPL-2.0-only,"GNU LGP (GNU General Public License), V2 or later",False
-GPL-2.0-only,GNU General Public License version 2.0 or later,False
-GPL-2.0-only,GPL-2+,False
-GPL-2.0-only,GPL v2+,False
-GPL-2.0-only,GPL 2 or later,False
-GPL-2.0-only,GPLv2 +,False
-GPL-2.0-only,gplv2+,False
-GPL-2.0-only,GNU General Public License v2+,False
-GPL-2.0-only,"GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version",False
-GPL-2.0-only,"GNU General Public License as published by the Free Software Foundation; either version 2 of of the License, or (at your option) any later version",False
-GPL-2.0-only,"GNU General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version",False
-GPL-2.0-only,"GNU General Public License (GPL), either version 2 of the License, or (at your option) any later version",False
-GPL-2.0-only,"GNU General Public License as published by the Free Software Foundation; version 2 of the License, or (at your option) any later version",False
-GPL-2.0-only,"GNU GPL, Version 2 or later",False
-GPL-2.0-only,GPL v2 or any later version,False
-GPL-2.0-only,licensed under the GPLv2 (or later),False
-GPL-2.0-only,GPL version 2 or later,False
-GPL-2.0-only,GPL version 2.0 or later,False
-GPL-2.0-only,"GNU General Public License version 2 (or, at your option any later version)",False
-GPL-2.0-only,"GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version",False
-GPL-2.0-only,GNU General Public License (version 2 or higher),False
-GPL-2.0-only,"GNU General Public License, either Version 2 of the license, or (at your option) any later version",False
-GPL-2.0-only,GNU General Public License (version 2 or later),False
-GPL-2.0-only,"GNU General Public License as published by the Free Software Foundation (the ""GPL""); either version 2 of the GPL, or (at your option) any later version",False
-GPL-2.0-only,"GNU General Public License, either version 2 or (at your opinion) any newer version",False
-GPL-2.0-only,"GNU General Public License, V2 or later",False
 GPL-2.0-only,GNU GENERAL PUBLIC LICENSE Version 2,False
 GPL-2.0-only,"GNU GENERAL PUBLIC LICENSE (GPL Version 2, June 1991)",False
 GPL-2.0-only,GNU GENERAL PUBLIC LICENSE 2.0,False
@@ -1894,11 +1779,11 @@ GPL-2.0-only,GNU Public License version 2,False
 GPL-2.0-only,GPL version 2,False
 GPL-2.0-only,"GNU General Public License, v. 2.0",False
 GPL-2.0-only,GNU General Public License (v2.0,False
+GPL-2.0-only,scancode:gpl-2.0,False
+GPL-2.0-only,osi:GPL-2.0,False
 PSF-2.0,Python Software Foundation License 2.0,False
 PSF-2.0,Python-2.0,True
 PSF-2.0,Python License 2.0,False
-PSF-2.0,scancode:python,False
-PSF-2.0,osi:Python-2.0,False
 PSF-2.0,"Python License, Version 2.0",False
 PSF-2.0,License :: OSI Approved :: Python Software Foundation License,False
 PSF-2.0,PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2,False
@@ -1907,13 +1792,13 @@ PSF-2.0,scancode://python,False
 PSF-2.0,Python Software Foundation License 2,False
 PSF-2.0,Python Software Foundation License,False
 PSF-2.0,PSF-2,False
+PSF-2.0,scancode:python,False
+PSF-2.0,osi:Python-2.0,False
 OFL-1.1-no-RFN,SIL Open Font License 1.1 with no Reserved Font Name,True
 OFL-1.1-no-RFN,scancode://ofl-1.1-no-rfn,True
 OFL-1.1-no-RFN,OFL 1.1 no Reserved Font Name,True
 W3C,W3C Software Notice and License (2002-12-31),True
 W3C,W3C Software Notice and License,True
-W3C,scancode:w3c,True
-W3C,osi:W3C,True
 W3C,W3C License,True
 W3C,The W3C Software Notice and License,True
 W3C,License :: OSI Approved :: W3C License,True
@@ -1921,37 +1806,38 @@ W3C,W3C Software Notice and License (became active on December 31 2002),True
 W3C,scancode://w3c,True
 W3C,W3C Software Notice and License 20021231,True
 W3C,http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231,False
+W3C,scancode:w3c,False
+W3C,osi:W3C,False
 OFL-1.0-no-RFN,SIL Open Font License 1.0 with no Reserved Font Name,True
 OFL-1.0-no-RFN,scancode://ofl-1.0-no-rfn,True
 OFL-1.0-no-RFN,OFL 1.0 no Reserved Font Name,True
 xinetd,xinetd License,True
-xinetd,scancode:xinetd,True
 xinetd,scancode://xinetd,True
 xinetd,XINETD LICENSE,False
 xinetd,XINETD License,False
+xinetd,scancode:xinetd,False
 OGTSL,Open Group Test Suite License,True
-OGTSL,scancode:opengroup,True
-OGTSL,osi:OGTSL,True
 OGTSL,The Open Group Test Suite License (OGTSL),True
 OGTSL,License :: OSI Approved :: Open Group Test Suite License,True
 OGTSL,scancode://opengroup,True
 OGTSL,OGTS license,False
 OGTSL,OGTSL license,False
+OGTSL,scancode:opengroup,False
+OGTSL,osi:OGTSL,False
 AGPL-1.0-only,AGPL-1.0,True
 AGPL-1.0-only,Affero General Public License (v. 1),True
 AGPL-1.0-only,Affero General Public License 1.0,True
 AGPL-1.0-only,Affero General Public License v1.0 only,True
-AGPL-1.0-only,scancode:agpl-1.0,True
 AGPL-1.0-only,scancode://agpl-1.0,True
 AGPL-1.0-only,AGPL 1.0,True
 AGPL-1.0-only,Affero General Public License,False
 AGPL-1.0-only,AGPLv1,False
 AGPL-1.0-only,Affero General Public License v1.0,False
 AGPL-1.0-only,AFFERO GENERAL PUBLIC LICENSE Version 1,False
+AGPL-1.0-only,scancode:agpl-1.0,False
 WTFPL,Do What The F*ck You Want To Public License,True
 WTFPL,WTF Public License 2.0,True
 WTFPL,WTFPL-2.0,True
-WTFPL,scancode:wtfpl-2.0,True
 WTFPL,scancode://wtfpl-2.0,True
 WTFPL,WTFPL 2.0,True
 WTFPL,Do What The Fuck You Want To Public License (WTFPL) 2,True
@@ -1963,9 +1849,9 @@ WTFPL,"Do What The Fuck You Want To Public License, Version 2",False
 WTFPL,Do What you Want,False
 WTFPL,http://www.wtfpl.net/about/,False
 WTFPL,http://sam.zoy.org/wtfpl/,False
+WTFPL,scancode:wtfpl-2.0,False
 W3C-20150513,W3C Software Notice and Document License (2015-05-13),True
 W3C-20150513,W3C License 20150513,True
-W3C-20150513,scancode:w3c-software-doc-20150513,True
 W3C-20150513,"W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)",True
 W3C-20150513,scancode://w3c-software-doc-20150513,True
 W3C-20150513,W3C-SOFTWARE-DOC-20150513,True
@@ -1973,19 +1859,19 @@ W3C-20150513,"W3C, Version 20150513",False
 W3C-20150513,W3C 20150513,False
 W3C-20150513,"W3C License, Version 20150513",False
 W3C-20150513,"W3C License, 20150513",False
+W3C-20150513,scancode:w3c-software-doc-20150513,False
 Sleepycat,Berkeley Database License,True
 Sleepycat,Sleepycat Software Product License,True
 Sleepycat,Sleepycat License,True
 Sleepycat,Berkeley-Database,True
-Sleepycat,scancode:sleepycat,True
-Sleepycat,osi:Sleepycat,True
 Sleepycat,The Sleepycat License,True
 Sleepycat,License :: OSI Approved :: Sleepycat License,True
 Sleepycat,scancode://sleepycat,True
 Sleepycat,Berkeley DB License,False
+Sleepycat,scancode:sleepycat,False
+Sleepycat,osi:Sleepycat,False
 JasPer-2.0,JasPer License,True
 JasPer-2.0,JasPer License 2.0,True
-JasPer-2.0,scancode:jasper-2.0,True
 JasPer-2.0,JasPer License Version 2.0,True
 JasPer-2.0,scancode://jasper-2.0,True
 JasPer-2.0,JasPer 2.0,True
@@ -1993,9 +1879,8 @@ JasPer-2.0,JasPer,False
 JasPer-2.0,"JasPer, Version 2.0",False
 JasPer-2.0,"JasPer License, 2.0",False
 JasPer-2.0,JasPer License v2.0,False
+JasPer-2.0,scancode:jasper-2.0,False
 Nokia,Nokia Open Source License,True
-Nokia,scancode:nokos-1.0a,True
-Nokia,osi:nokia,True
 Nokia,"Nokia Open Source License, Version 1.0a",True
 Nokia,License :: OSI Approved :: Nokia Open Source License,True
 Nokia,scancode://nokos-1.0a,True
@@ -2005,22 +1890,23 @@ Nokia,NOKIA LICENSE,False
 Nokia,NOKIA License,False
 Nokia,NOKIA Open Source License,False
 Nokia,NOKOS License,False
+Nokia,scancode:nokos-1.0a,False
+Nokia,osi:nokia,False
 OGL-UK-2.0,Open Government Licence 2.0,True
-OGL-UK-2.0,scancode:ogl-uk-2.0,True
 OGL-UK-2.0,Open Government Licence 2.0 (United Kingdom),True
 OGL-UK-2.0,Open Government Licence v2.0,True
 OGL-UK-2.0,scancode://ogl-uk-2.0,True
+OGL-UK-2.0,scancode:ogl-uk-2.0,False
 RPL-1.1,Reciprocal Public License 1.1,True
 RPL-1.1,RPL 1.1,True
-RPL-1.1,scancode:rpl-1.1,True
-RPL-1.1,osi:RPL-1.1,True
 RPL-1.1,"Reciprocal Public License, Version 1.1",True
 RPL-1.1,scancode://rpl-1.1,True
 RPL-1.1,Reciprocal Public License,False
 RPL-1.1,"RPL, Version 1.1",False
 RPL-1.1,"Reciprocal Public License, version 1.1",False
+RPL-1.1,scancode:rpl-1.1,False
+RPL-1.1,osi:RPL-1.1,False
 SHL-0.51,Solderpad Hardware License 0.51,True
-SHL-0.51,scancode:shl-0.51,True
 SHL-0.51,"Solderpad Hardware License, Version 0.51",True
 SHL-0.51,scancode://shl-0.51,True
 SHL-0.51,"SolderPad Hardware License, Version 0.51",True
@@ -2028,6 +1914,7 @@ SHL-0.51,Solderpad Hardware License v0.51,False
 SHL-0.51,SOLDERPAD HARDWARE LICENSE version 0.51,False
 SHL-0.51,SOLDERPAD HARDWARE LICENSE Version 0.51,False
 SHL-0.51,Solderpad Hardware License Version 0.51,False
+SHL-0.51,scancode:shl-0.51,False
 LiLiQ-P-1.1,LiLiQ-P,True
 LiLiQ-P-1.1,LiLiQ P License 1.1,True
 LiLiQ-P-1.1,"Licence Libre du Québec – Permissive, Version 1.1",True
@@ -2047,13 +1934,11 @@ OpenSSL,scancode://openssl,True
 OpenSSL,LicenseRef-scancode-openssl,True
 OpenSSL,OpenSSL license,True
 C-UDA-1.0,Computational Use of Data Agreement 1.0,True
-C-UDA-1.0,scancode:c-uda-1.0,True
 C-UDA-1.0,Computational Use of Data Agreement v1.0,True
 C-UDA-1.0,scancode://c-uda-1.0,True
+C-UDA-1.0,scancode:c-uda-1.0,False
 Xnet,X.Net License,True
 Xnet,MIT License (X.Net),True
-Xnet,scancode:xnet,True
-Xnet,osi:Xnet,True
 Xnet,"The X.Net, Inc. License",True
 Xnet,License :: OSI Approved :: X.Net License,True
 Xnet,scancode://xnet,True
@@ -2062,9 +1947,9 @@ Xnet,Xnet license,False
 Xnet,Xnet License,False
 Xnet,XNet license,False
 Xnet,XNet License,False
+Xnet,scancode:xnet,False
+Xnet,osi:Xnet,False
 APSL-2.0,Apple Public Source License 2.0,True
-APSL-2.0,scancode:apsl-2.0,True
-APSL-2.0,osi:APSL-2.0,True
 APSL-2.0,"Apple Public Source License, Version 2.0",True
 APSL-2.0,License :: OSI Approved :: Apple Public Source License,True
 APSL-2.0,scancode://apsl-2.0,True
@@ -2076,45 +1961,29 @@ APSL-2.0,APPLE PUBLIC SOURCE LICENSE 2.0,False
 APSL-2.0,APPLE PUBLIC SOURCE LICENSE v2.0,False
 APSL-2.0,APPLE PUBLIC SOURCE LICENSE Version 2.0,False
 APSL-2.0,Apple Public Source License Ver. 2.0,False
+APSL-2.0,scancode:apsl-2.0,False
+APSL-2.0,osi:APSL-2.0,False
 FreeBSD-DOC,FreeBSD Documentation License,True
 FreeBSD-DOC,scancode://freebsd-doc,True
 FreeBSD-DOC,FreeBSD Doc License,True
 FreeBSD-DOC,FBSDDL,False
 NPL-1.0,Netscape Public License 1.0,True
-NPL-1.0,scancode:npl-1.0,True
 NPL-1.0,Netscape Public License v1.0,True
 NPL-1.0,scancode://npl-1.0,True
 NPL-1.0,NPL 1.0,True
 NPL-1.0,http://www.mozilla.org/MPL/NPL-1.0.html,False
 NPL-1.0,https://spdx.org/licenses/npl-1.0,False
-GPL-2.0-or-later,GPL-2.0-only,True
-GPL-2.0-or-later,GPL-2.0,False
-GPL-2.0-or-later,GPL2.0,False
-GPL-2.0-or-later,GPL2,False
-GPL-2.0-or-later,GPL (v2),False
-GPL-2.0-or-later,GNU General Public License Version 2,False
-GPL-2.0-or-later,GPL-2.0+,False
-GPL-2.0-or-later,GPL2.0+,False
-GPL-2.0-or-later,GPL2+,False
-GPL-2.0-or-later,GPL (v2 or later),False
-GPL-2.0-or-later,GNU General Public License v2.0 only,False
-GPL-2.0-or-later,GNU General Public License v2.0 or later,False
-GPL-2.0-or-later,gpl-2.0,False
-GPL-2.0-or-later,GNU GPLv2,False
-GPL-2.0-or-later,GNU General Public License 2.0 (or any later version),False
-GPL-2.0-or-later,scancode:gpl-2.0-plus,False
-GPL-2.0-or-later,osi:GPL-2.0,False
-GPL-2.0-or-later,GNU General Public License 2.0,False
-GPL-2.0-or-later,scancode:gpl-2.0,False
-GPL-2.0-or-later,"GNU General Public License, Version 2.0",False
-GPL-2.0-or-later,License :: OSI Approved :: GNU General Public License v2 (GPLv2),False
-GPL-2.0-or-later,scancode://gpl-2.0-plus,False
-GPL-2.0-or-later,GPL 2.0 or later,False
-GPL-2.0-or-later,scancode://gpl-2.0,False
-GPL-2.0-or-later,GPL 2.0,False
+NPL-1.0,scancode:npl-1.0,False
+GPL-2.0-or-later,GPL-2.0+,True
+GPL-2.0-or-later,GPL2.0+,True
+GPL-2.0-or-later,GPL2+,True
+GPL-2.0-or-later,GPL (v2 or later),True
+GPL-2.0-or-later,GNU General Public License v2.0 or later,True
+GPL-2.0-or-later,GNU General Public License 2.0 (or any later version),True
+GPL-2.0-or-later,scancode://gpl-2.0-plus,True
+GPL-2.0-or-later,GPL 2.0 or later,True
 GPL-2.0-or-later,GNU General Public License,False
 GPL-2.0-or-later,The GNU General Public License (GPL),False
-GPL-2.0-or-later,GPLv2,False
 GPL-2.0-or-later,GPLv2+,False
 GPL-2.0-or-later,GNU GENERAL PUBLIC LICENSE version 2 or higher,False
 GPL-2.0-or-later,"GNU General Public License (GPL) version 2, or any later version",False
@@ -2150,63 +2019,23 @@ GPL-2.0-or-later,GNU General Public License (version 2 or later),False
 GPL-2.0-or-later,"GNU General Public License as published by the Free Software Foundation (the ""GPL""); either version 2 of the GPL, or (at your option) any later version",False
 GPL-2.0-or-later,"GNU General Public License, either version 2 or (at your opinion) any newer version",False
 GPL-2.0-or-later,"GNU General Public License, V2 or later",False
-GPL-2.0-or-later,GNU GENERAL PUBLIC LICENSE Version 2,False
-GPL-2.0-or-later,"GNU GENERAL PUBLIC LICENSE (GPL Version 2, June 1991)",False
-GPL-2.0-or-later,GNU GENERAL PUBLIC LICENSE 2.0,False
-GPL-2.0-or-later,GNU GENERAL PUBLIC LICENSE V2,False
-GPL-2.0-or-later,GNU GENERAL PUBLIC LICENSE v2,False
-GPL-2.0-or-later,"GNU GENERAL PUBLIC LICENSE, VERSION 2",False
-GPL-2.0-or-later,GNU General Public License (GPL) v2,False
-GPL-2.0-or-later,"GNU General Public License (GPL),Version 2",False
-GPL-2.0-or-later,GNU General Public License 2,False
-GPL-2.0-or-later,"GNU General Public License License, Version 2",False
-GPL-2.0-or-later,GNU General Public License V 2.0,False
-GPL-2.0-or-later,GNU General Public License Version2,False
-GPL-2.0-or-later,GNU General Public License v2,False
-GPL-2.0-or-later,"GNU General Public License, version 2",False
-GPL-2.0-or-later,version 2 of the GNU General Public License,False
-GPL-2.0-or-later,GNU GPL v. 2,False
-GPL-2.0-or-later,GNU Public License 2.0,False
-GPL-2.0-or-later,"GNU Public License, Version 2",False
-GPL-2.0-or-later,"Gnu General Puplic License, Version 2.0",False
-GPL-2.0-or-later,"GNU GPL License, Version 2.0",False
-GPL-2.0-or-later,GPLv2 ,False
-GPL-2.0-or-later,GPL 2 ,False
-GPL-2.0-or-later,"GPL, Version 2.0",False
-GPL-2.0-or-later,GPL-v2,False
-GPL-2.0-or-later,GPL License v.2,False
-GPL-2.0-or-later,GPL V2 License,False
-GPL-2.0-or-later,"GPL license, Version 2.0",False
-GPL-2.0-or-later,GPL v2,False
-GPL-2.0-or-later,General Public License 2.0,False
-GPL-2.0-or-later,GPL-2,False
-GPL-2.0-or-later,GNU General Public License as published by the Free Software Foundation; version 2,False
-GPL-2.0-or-later,GNU General Public License (GPL) version 2,False
-GPL-2.0-or-later,The General Public License (GPL) Version 2,False
-GPL-2.0-or-later,under the terms of version 2 of the GNU Public License,False
-GPL-2.0-or-later,"GNU General Public License, Versions 2",False
-GPL-2.0-or-later,Version 2 of the GNU General Public License,False
-GPL-2.0-or-later,GNU Public License version 2,False
-GPL-2.0-or-later,GPL version 2,False
-GPL-2.0-or-later,"GNU General Public License, v. 2.0",False
-GPL-2.0-or-later,GNU General Public License (v2.0,False
+GPL-2.0-or-later,scancode:gpl-2.0-plus,False
+GPL-2.0-or-later,osi:GPL-2.0,False
 CECILL-2.0,CeCILL Free Software License Agreement 2.0,True
-CECILL-2.0,scancode:cecill-2.0,True
 CECILL-2.0,CeCILL Free Software License Agreement v2.0,True
 CECILL-2.0,scancode://cecill-2.0,True
 CECILL-2.0,CeCILL 2.0,True
 CECILL-2.0,CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice,False
+CECILL-2.0,scancode:cecill-2.0,False
 OFL-1.0,SIL Open Font License 1.0,True
-OFL-1.0,scancode:ofl-1.0-no-rfn,True
 OFL-1.0,SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005,True
 OFL-1.0,scancode://ofl-1.0,True
 OFL-1.0,OFL 1.0,True
 OFL-1.0,The SIL Open Font License,False
 OFL-1.0,"OFL, Version 1.0",False
 OFL-1.0,SIL OPEN FONT LICENSE Version 1.0,False
+OFL-1.0,scancode:ofl-1.0-no-rfn,False
 EPL-1.0,Eclipse Public License 1.0,True
-EPL-1.0,scancode:epl-1.0,True
-EPL-1.0,osi:EPL-1.0,True
 EPL-1.0,eclipse-1.0,True
 EPL-1.0,"Eclipse Public License, Version 1.0",True
 EPL-1.0,scancode://epl-1.0,True
@@ -2231,43 +2060,40 @@ EPL-1.0,Eclipse Public License - v1.0,False
 EPL-1.0,Eclipse Public License -v 1.0,False
 EPL-1.0,Eclipse Public License v 1.0,False
 EPL-1.0,"Eclipse Public License, V 1.0",False
+EPL-1.0,scancode:epl-1.0,False
+EPL-1.0,osi:EPL-1.0,False
 NOSL,Netizen Open Source License,True
 NOSL,Netizen Open Source License 1.0,True
-NOSL,scancode:nosl-1.0,True
 NOSL,scancode://nosl-1.0,True
 NOSL,NOSL 1.0,True
 NOSL,NETIZEN OPEN SOURCE LICENSE,False
+NOSL,scancode:nosl-1.0,False
 MIT-CMU,CMU License,True
 MIT-CMU,scancode://cmu-template,True
 MIT-CMU,LicenseRef-scancode-cmu-template,True
 MIT-CMU,scancode://cmu-uc,True
 MIT-CMU,CMU UC Regents License,True
 CERN-OHL-S-2.0,CERN Open Hardware Licence Strongly Reciprocal 2.0,True
-CERN-OHL-S-2.0,scancode:cern-ohl-s-2.0,True
 CERN-OHL-S-2.0,CERN Open Hardware Licence Version 2 - Strongly Reciprocal,True
 CERN-OHL-S-2.0,scancode://cern-ohl-s-2.0,True
+CERN-OHL-S-2.0,scancode:cern-ohl-s-2.0,False
 SWL,Scheme Widget Library (SWL) Software License Agreement,True
 SWL,Scheme Widget Library Software License Agreement,True
-SWL,scancode:swl,True
 SWL,scancode://swl,True
 SWL,Scheme Widget Library (SWL) Software License,True
 SWL,SWL License,False
 SWL,SWL license,False
 SWL,under SWL,False
+SWL,scancode:swl,False
 CC-BY-NC-SA-2.5,Creative Commons BY-NC-SA 2.5 (generic),True
-CC-BY-NC-SA-2.5,scancode:cc-by-nc-sa-2.5,True
 CC-BY-NC-SA-2.5,Creative Commons Attribution Non Commercial Share Alike 2.5 Generic,True
 CC-BY-NC-SA-2.5,scancode://cc-by-nc-sa-2.5,True
 CC-BY-NC-SA-2.5,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-SA-2.5,Creative Commons Attribution-NonCommercial-ShareAlike 2.5,False
+CC-BY-NC-SA-2.5,scancode:cc-by-nc-sa-2.5,False
 Zlib,zlib/libpng,True
 Zlib,zlib License,True
 Zlib,zlib/libpng License,True
-Zlib,scancode:zlib,True
-Zlib,scancode:aladdin-md5,True
-Zlib,scancode:d-zlib,True
-Zlib,scancode:fastbuild-2012-2020,True
-Zlib,osi:Zlib,True
 Zlib,zlib/libpng license,True
 Zlib,zlib-license,True
 Zlib,The zlib/libpng License (Zlib),False
@@ -2281,29 +2107,32 @@ Zlib,"For conditions of distribution and use, see copyright notice in zlib.h",Fa
 Zlib,This program is based on zlib,False
 Zlib,http://www.gzip.org/zlib/zlib_license.html,False
 Zlib,Aladdin MD5 License,False
+Zlib,scancode:zlib,False
+Zlib,scancode:aladdin-md5,False
+Zlib,scancode:d-zlib,False
+Zlib,scancode:fastbuild-2012-2020,False
+Zlib,osi:Zlib,False
 CC-BY-NC-SA-3.0,Creative Commons BY-NC-SA 3.0 (unported),True
-CC-BY-NC-SA-3.0,scancode:cc-by-nc-sa-3.0,True
 CC-BY-NC-SA-3.0,Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported,True
 CC-BY-NC-SA-3.0,Creative Commons Attribution Non Commercial Share Alike 3.0 Unported,True
 CC-BY-NC-SA-3.0,scancode://cc-by-nc-sa-3.0,True
 CC-BY-NC-SA-3.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
+CC-BY-NC-SA-3.0,scancode:cc-by-nc-sa-3.0,False
 iMatix,iMatix Standard Function Library Agreement,True
 iMatix,iMatix License,True
-iMatix,scancode:sfl-license,True
 iMatix,scancode://sfl-license,True
 iMatix,SFL License Agreement,True
 iMatix,IMATIX LICENSE,False
 iMatix,IMATIX License,False
 iMatix,iMatix STANDARD FUNCTION LIBRARY,False
+iMatix,scancode:sfl-license,False
 CC-BY-ND-2.5,Creative Commons BY-ND 2.5 (generic),True
-CC-BY-ND-2.5,scancode:cc-by-nd-2.5,True
 CC-BY-ND-2.5,Creative Commons Attribution No Derivatives 2.5 Generic,True
 CC-BY-ND-2.5,scancode://cc-by-nd-2.5,True
 CC-BY-ND-2.5,Creative Commons Attribution-NoDerivs 2.5,False
+CC-BY-ND-2.5,scancode:cc-by-nd-2.5,False
 PHP-3.0,PHP License v3.0,True
 PHP-3.0,PHP License 3.0,True
-PHP-3.0,scancode:php-3.0,True
-PHP-3.0,osi:PHP-3.0,True
 PHP-3.0,"The PHP License, Version 3.0",True
 PHP-3.0,"PHP License, version 3.0",True
 PHP-3.0,scancode://php-3.0,True
@@ -2312,23 +2141,24 @@ PHP-3.0,"PHP, Version 3.0",False
 PHP-3.0,"PHP, 3.0",False
 PHP-3.0,"PHP License, Version 3.0",False
 PHP-3.0,"PHP License, 3.0",False
+PHP-3.0,scancode:php-3.0,False
+PHP-3.0,osi:PHP-3.0,False
 Barr,Barr License,True
-Barr,scancode:barr-tex,True
 Barr,scancode://barr-tex,True
 Barr,Barr TeX License,True
 Barr,BARR LICENSE,False
 Barr,BARR License,False
+Barr,scancode:barr-tex,False
 curl,curl License,True
 curl,Permission Terms (curl),True
-curl,scancode:curl,True
 curl,scancode://curl,True
 curl,cURL License,True
 curl,CURL LICENSE,False
 curl,CURL License,False
 curl,Curl License,False
 curl,curl license,False
+curl,scancode:curl,False
 Zimbra-1.4,Zimbra License 1.4,True
-Zimbra-1.4,scancode:zimbra-1.4,True
 Zimbra-1.4,Zimbra Public License v1.4,True
 Zimbra-1.4,scancode://zimbra-1.4,True
 Zimbra-1.4,Zimbra PL 1.4,True
@@ -2336,44 +2166,44 @@ Zimbra-1.4,"Zimbra, Version 1.4",False
 Zimbra-1.4,"Zimbra, 1.4",False
 Zimbra-1.4,"Zimbra License, Version 1.4",False
 Zimbra-1.4,"Zimbra Public License, Version 1.4",False
+Zimbra-1.4,scancode:zimbra-1.4,False
 TOSL,Trusster Open Source License,True
-TOSL,scancode:tosl,True
 TOSL,scancode://tosl,True
 TOSL,TOSL 1.0a,True
 TOSL,Trusster Open Source License version 1.0a,False
+TOSL,scancode:tosl,False
 AFL-1.2,Academic Free License v1.2,True
 AFL-1.2,Academic Free License 1.2,True
-AFL-1.2,scancode:afl-1.2,True
 AFL-1.2,scancode://afl-1.2,True
 AFL-1.2,AFL 1.2,True
 AFL-1.2,"AFL, Version 1.2",False
 AFL-1.2,"AFL, 1.2",False
+AFL-1.2,scancode:afl-1.2,False
 CC-BY-ND-3.0-DE,Creative Commons Attribution No Derivatives 3.0 Germany,True
 CC-BY-NC-SA-2.0,Creative Commons BY-NC-SA 2.0 (generic),True
-CC-BY-NC-SA-2.0,scancode:cc-by-nc-sa-2.0,True
 CC-BY-NC-SA-2.0,Creative Commons Attribution Non Commercial Share Alike 2.0 Generic,True
 CC-BY-NC-SA-2.0,scancode://cc-by-nc-sa-2.0,True
 CC-BY-NC-SA-2.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-SA-2.0,Creative Commons Attribution-NonCommercial-ShareAlike 2.0,False
+CC-BY-NC-SA-2.0,scancode:cc-by-nc-sa-2.0,False
 GFDL-1.3-invariants-only,GNU Free Documentation License 1.3 (invariants),True
 GFDL-1.3-invariants-only,GNU Free Documentation License v1.3 only - invariants,True
 GFDL-1.3-invariants-only,scancode://gfdl-1.3-invariants-only,True
 GD,GD License,True
-GD,scancode:libgd-2018,True
 GD,scancode://libgd-2018,True
 GD,libgd License 2018,True
+GD,scancode:libgd-2018,False
 OLDAP-2.3,Open LDAP Public License v2.3,True
 OLDAP-2.3,OpenLDAP Public License 2.3,True
-OLDAP-2.3,scancode:openldap-2.3,True
 OLDAP-2.3,scancode://openldap-2.3,True
 OLDAP-2.3,"OLDAP, Version 2.3",False
 OLDAP-2.3,"OLDAP, 2.3",False
 OLDAP-2.3,"OLDAP License, Version 2.3",False
 OLDAP-2.3,"OLDAP License, 2.3",False
 OLDAP-2.3,OpenLDAP Public License Version 2.3,False
+OLDAP-2.3,scancode:openldap-2.3,False
 Unicode-DFS-2016,Unicode License Agreement - Data Files and Software (2016),True
 Unicode-DFS-2016,Unicode DFS License 2016,True
-Unicode-DFS-2016,scancode:unicode-dfs-2016,True
 Unicode-DFS-2016,"UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE",True
 Unicode-DFS-2016,scancode://unicode-dfs-2016,True
 Unicode-DFS-2016,Unicode DFS 2016,True
@@ -2384,17 +2214,16 @@ Unicode-DFS-2016,"Unicode DFS License, Version 2016",False
 Unicode-DFS-2016,"Unicode DFS License, 2016",False
 Unicode-DFS-2016,"Unicode-DFS License, Version 2016",False
 Unicode-DFS-2016,"Unicode-DFS License, 2016",False
+Unicode-DFS-2016,scancode:unicode-dfs-2016,False
 IBM-pibs,IBM PowerPC Initialization and Boot Software,True
 IBM-pibs,IBM pibs License,True
-IBM-pibs,scancode:ibm-pibs,True
 IBM-pibs,scancode://ibm-pibs,True
 IBM-pibs,IBM PowerPC Software,True
 IBM-pibs,IBM pibs,False
 IBM-pibs,IBM PIBS,False
+IBM-pibs,scancode:ibm-pibs,False
 FDK-AAC,Fraunhofer FDK AAC Codec Library,True
 CATOSL-1.1,Computer Associates Trusted Open Source License 1.1,True
-CATOSL-1.1,scancode:ca-tosl-1.1,True
-CATOSL-1.1,osi:CATOSL-1.1,True
 CATOSL-1.1,Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1),True
 CATOSL-1.1,ca-tosl1.1,True
 CATOSL-1.1,"Computer Associates Trusted Open Source License, Version 1.1",True
@@ -2404,22 +2233,24 @@ CATOSL-1.1,CATOSL,False
 CATOSL-1.1,"CATOSL, Version 1.1",False
 CATOSL-1.1,"CATOSL, 1.1",False
 CATOSL-1.1,Computer Associates Trusted Open Source License Version 1.1,False
+CATOSL-1.1,scancode:ca-tosl-1.1,False
+CATOSL-1.1,osi:CATOSL-1.1,False
 CC-BY-NC-ND-1.0,Creative Commons BY-NC-ND 1.0 (generic),True
-CC-BY-NC-ND-1.0,scancode:cc-by-nc-nd-1.0,True
 CC-BY-NC-ND-1.0,Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic,True
 CC-BY-NC-ND-1.0,scancode://cc-by-nc-nd-1.0,True
 CC-BY-NC-ND-1.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-ND-1.0,Creative Commons Attribution-NoDerivs-NonCommercial 1.0,False
+CC-BY-NC-ND-1.0,scancode:cc-by-nc-nd-1.0,False
 DSDP,DSDP License,True
-DSDP,scancode:dsdp,True
 DSDP,scancode://dsdp,True
 DSDP,DSDP LICENSE,False
+DSDP,scancode:dsdp,False
 BSD-2-Clause-Patent,BSD-2-Clause Plus Patent License,True
 BSD-2-Clause-Patent,BSD 2-Clause Patent License,True
-BSD-2-Clause-Patent,scancode:bsd-plus-patent,True
-BSD-2-Clause-Patent,osi:BSDplusPatent,True
 BSD-2-Clause-Patent,scancode://bsd-plus-patent,True
 BSD-2-Clause-Patent,BSD-2-Clause Plus Patent,True
+BSD-2-Clause-Patent,scancode:bsd-plus-patent,False
+BSD-2-Clause-Patent,osi:BSDplusPatent,False
 SugarCRM-1.1.3,SugarCRM License 1.1.3,True
 SugarCRM-1.1.3,SugarCRM Public License v1.1.3,True
 SugarCRM-1.1.3,scancode://sugarcrm-1.1.3,True
@@ -2431,37 +2262,36 @@ SugarCRM-1.1.3,SUGARCRM PUBLIC LICENSE,False
 CC-BY-NC-SA-2.0-UK,Creative Commons Attribution Non Commercial Share Alike 2.0 England and Wales,True
 CC-BY-NC-SA-2.0-UK,scancode://cc-by-nc-sa-2.0-uk,True
 CC-BY-NC-2.5,Creative Commons BY-NC 2.5 (generic),True
-CC-BY-NC-2.5,scancode:cc-by-nc-2.5,True
 CC-BY-NC-2.5,Creative Commons Attribution Non Commercial 2.5 Generic,True
 CC-BY-NC-2.5,scancode://cc-by-nc-2.5,True
 CC-BY-NC-2.5,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-2.5,Creative Commons Attribution-NonCommercial 2.5,False
+CC-BY-NC-2.5,scancode:cc-by-nc-2.5,False
 Unlicense,The Unlicense,True
-Unlicense,scancode:unlicense,True
 Unlicense,scancode://unlicense,True
 Unlicense,Unlicense 1,True
+Unlicense,scancode:unlicense,False
 AGPL-1.0-or-later,Affero General Public License v1.0 or later,True
 AGPL-1.0-or-later,Affero General Public License 1.0 or later,True
 AGPL-1.0-or-later,AGPL-1.0+,True
-AGPL-1.0-or-later,scancode:agpl-1.0-plus,True
 AGPL-1.0-or-later,scancode://agpl-1.0-plus,True
 AGPL-1.0-or-later,AGPL 1.0 or later,True
 AGPL-1.0-or-later,Affero General Public License,False
 AGPL-1.0-or-later,https://spdx.org/licenses/agpl-1.0-or-later,False
+AGPL-1.0-or-later,scancode:agpl-1.0-plus,False
 GL2PS,GL2PS License,True
-GL2PS,scancode:gl2ps,True
 GL2PS,"GL2PS LICENSE, Version 2",True
 GL2PS,scancode://gl2ps,True
 GL2PS,GL2PS LICENSE,False
+GL2PS,scancode:gl2ps,False
 zlib-acknowledgement,zlib/libpng License with Acknowledgement,True
-zlib-acknowledgement,scancode:zlib-acknowledgement,True
 zlib-acknowledgement,scancode://zlib-acknowledgement,True
 zlib-acknowledgement,ZLIB License with Acknowledgment,True
 zlib-acknowledgement,The zlib/libpng License (Zlib),False
 zlib-acknowledgement,zlib with acknowledgement,False
+zlib-acknowledgement,scancode:zlib-acknowledgement,False
 TU-Berlin-1.0,Technische Universitaet Berlin License 1.0,True
 TU-Berlin-1.0,TU Berlin License 1.0,True
-TU-Berlin-1.0,scancode:tu-berlin,True
 TU-Berlin-1.0,scancode://tu-berlin,True
 TU-Berlin-1.0,"TU Berlin, Version 1.0",False
 TU-Berlin-1.0,TU Berlin 1.0,False
@@ -2470,38 +2300,37 @@ TU-Berlin-1.0,TU-Berlin 1.0,False
 TU-Berlin-1.0,"TU Berlin License, Version 1.0",False
 TU-Berlin-1.0,"TU-Berlin License, Version 1.0",False
 TU-Berlin-1.0,"TU-Berlin License, 1.0",False
+TU-Berlin-1.0,scancode:tu-berlin,False
 Apache-1.0,Apache (v1.0),True
 Apache-1.0,Apache Software License 1.0,True
 Apache-1.0,ASL 1.0,True
 Apache-1.0,"Apache Software License, Version 1.0",True
 Apache-1.0,Apache License 1.0,True
-Apache-1.0,scancode:apache-1.0,True
 Apache-1.0,scancode://apache-1.0,True
 Apache-1.0,Apache 1.0,True
 Apache-1.0,The Apache Software License (ASL),False
 Apache-1.0,Apache License Version 1.0,False
 Apache-1.0,http://www.apache.org/licenses/LICENSE-1.0,False
 Apache-1.0,https://spdx.org/licenses/apache-1.0,False
+Apache-1.0,scancode:apache-1.0,False
 Crossword,Crossword License,True
-Crossword,scancode:crossword,True
 Crossword,scancode://crossword,True
 Crossword,CROSSWORD LICENSE,False
 Crossword,CROSSWORD License,False
+Crossword,scancode:crossword,False
 HPND-sell-variant,Historical Permission Notice and Disclaimer - sell variant,True
 HPND-sell-variant,HPND-sell,True
-HPND-sell-variant,scancode:historical-sell-variant,True
 HPND-sell-variant,Permission Terms (HPND; sell),True
-HPND-sell-variant,scancode:x11-keith-packard,True
 HPND-sell-variant,scancode://historical-sell-variant,True
 HPND-sell-variant,scancode://x11-keith-packard,True
 HPND-sell-variant,X11-Style (Keith Packard),True
 HPND-sell-variant,historical-sell-variant,False
+HPND-sell-variant,scancode:historical-sell-variant,False
+HPND-sell-variant,scancode:x11-keith-packard,False
 BSD-2-Clause,BSD (2 clause),True
 BSD-2-Clause,BSD License (two clause),True
 BSD-2-Clause,"BSD 2-Clause ""Simplified"" License",True
 BSD-2-Clause,BSD 2-Clause License,True
-BSD-2-Clause,scancode:bsd-simplified,True
-BSD-2-Clause,osi:BSD-2-Clause,True
 BSD-2-Clause,"BSD 2-Clause ""Simplified"" or ""FreeBSD"" License (BSD-2-Clause)",True
 BSD-2-Clause,BSD-2,True
 BSD-2-Clause,Simplified BSD License,True
@@ -2520,20 +2349,22 @@ BSD-2-Clause,Two-clause BSD-style license,False
 BSD-2-Clause,"BSD 2-clause ""Simplified"" License",False
 BSD-2-Clause,bsd_2,False
 BSD-2-Clause,https://www.freebsd.org/copyright/freebsd-license.html,False
+BSD-2-Clause,scancode:bsd-simplified,False
+BSD-2-Clause,osi:BSD-2-Clause,False
 CC-BY-SA-3.0-DE,Creative Commons Attribution Share Alike 3.0 Germany,True
 AMPAS,Academy of Motion Picture Arts and Sciences BSD,True
 AMPAS,AMPAS License,True
-AMPAS,scancode:ampas,True
 AMPAS,scancode://ampas,True
 AMPAS,AMPAS BSD-Style License,True
 AMPAS,AMPAS BSD,False
 AMPAS,AMPAS LICENSE,False
+AMPAS,scancode:ampas,False
 YPL-1.1,YPL 1.1,True
-YPL-1.1,scancode:ypl-1.1,True
 YPL-1.1,Yahoo! Public License v1.1,True
 YPL-1.1,scancode://ypl-1.1,True
 YPL-1.1,"YPL, Version 1.1",False
 YPL-1.1,"Yahoo! Public License, Version 1.1",False
+YPL-1.1,scancode:ypl-1.1,False
 CC-BY-NC-SA-4.0,Creative Commons BY-NC-SA 4.0,True
 CC-BY-NC-SA-4.0,Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International,True
 CC-BY-NC-SA-4.0,Creative Commons Attribution Non Commercial Share Alike 4.0 International,True
@@ -2541,40 +2372,24 @@ CC-BY-NC-SA-4.0,scancode://cc-by-nc-sa-4.0,True
 CC-BY-NC-SA-4.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 Glide,3dfx Glide License,True
 Glide,Glide License,True
-Glide,scancode:glide,True
 Glide,scancode://glide,True
 Glide,3DFX GLIDE,True
 Glide,GLIDE LICENSE,False
 Glide,GLIDE License,False
 Glide,3DFX GLIDE Source Code General Public License,False
-Artistic-1.0,Artistic 1.0 (original),False
-Artistic-1.0,Artistic License 1.0,False
-Artistic-1.0,Artistic-1.0-cl8,True
-Artistic-1.0,Artistic License 1.0 w/clause 8,False
-Artistic-1.0,Artistic License 1.0 (cl8),False
-Artistic-1.0,scancode:artistic-1.0-cl8,False
-Artistic-1.0,osi:Artistic-1.0,False
-Artistic-1.0,scancode:artistic-1.0,False
-Artistic-1.0,"Artistic License, Version 1.0",False
-Artistic-1.0,Artistic License (Perl) 1.0,False
-Artistic-1.0,scancode://artistic-1.0-cl8,False
-Artistic-1.0,Artistic 1.0 w/clause 8,False
-Artistic-1.0,scancode://artistic-1.0,False
-Artistic-1.0,Artistic 1.0,False
+Glide,scancode:glide,False
+Artistic-1.0,Artistic 1.0 (original),True
+Artistic-1.0,Artistic License 1.0,True
+Artistic-1.0,"Artistic License, Version 1.0",True
+Artistic-1.0,Artistic License (Perl) 1.0,True
+Artistic-1.0,scancode://artistic-1.0,True
+Artistic-1.0,Artistic 1.0,True
 Artistic-1.0,Artistic License,False
-Artistic-1.0,"Artistic 1.0, Version cl8",False
-Artistic-1.0,Artistic 1.0 cl8,False
-Artistic-1.0,"Artistic-1.0, Version cl8",False
-Artistic-1.0,Artistic-1.0 cl8,False
-Artistic-1.0,"Artistic 1.0 License, Version cl8",False
-Artistic-1.0,Artistic 1.0 License cl8,False
-Artistic-1.0,"Artistic-1.0 License, Version cl8",False
-Artistic-1.0,Artistic-1.0 License cl8,False
 Artistic-1.0,"Artistic, Version 1.0",False
 Artistic-1.0,Artistic-1,False
+Artistic-1.0,scancode:artistic-1.0,False
+Artistic-1.0,osi:Artistic-1.0,False
 OSL-1.0,Open Software License 1.0,True
-OSL-1.0,scancode:osl-1.0,True
-OSL-1.0,osi:OSL-1.0,True
 OSL-1.0,"Open Software License, Version 1.0",True
 OSL-1.0,scancode://osl-1.0,True
 OSL-1.0,OSL 1.0,True
@@ -2582,13 +2397,14 @@ OSL-1.0,Open Software License,False
 OSL-1.0,"OSL, Version 1.0",False
 OSL-1.0,Open Software License v. 1.0,False
 OSL-1.0,Open Software License version 1.0,False
+OSL-1.0,scancode:osl-1.0,False
+OSL-1.0,osi:OSL-1.0,False
 0BSD,BSD Zero Clause License,True
-0BSD,scancode:bsd-zero,True
-0BSD,osi:0BSD,True
 0BSD,scancode://bsd-zero,True
+0BSD,scancode:bsd-zero,False
+0BSD,osi:0BSD,False
 OLDAP-2.7,Open LDAP Public License v2.7,True
 OLDAP-2.7,OpenLDAP Public License 2.7,True
-OLDAP-2.7,scancode:openldap-2.7,True
 OLDAP-2.7,The OpenLDAP Public License,True
 OLDAP-2.7,scancode://openldap-2.7,True
 OLDAP-2.7,"OLDAP, Version 2.7",False
@@ -2597,13 +2413,13 @@ OLDAP-2.7,"OLDAP License, Version 2.7",False
 OLDAP-2.7,OLDAP License 2.7,False
 OLDAP-2.7,OpenLDAP Public License Version 2.7,False
 OLDAP-2.7,https://spdx.org/licenses/oldap-2.7,False
+OLDAP-2.7,scancode:openldap-2.7,False
 TAPR-OHL-1.0,TAPR Open Hardware 1.0,True
-TAPR-OHL-1.0,scancode:tapr-ohl-1.0,True
 TAPR-OHL-1.0,TAPR Open Hardware License v1.0,True
 TAPR-OHL-1.0,scancode://tapr-ohl-1.0,True
 TAPR-OHL-1.0,TAPR Open Hardware License Version 1.0,False
+TAPR-OHL-1.0,scancode:tapr-ohl-1.0,False
 Adobe-2006,Adobe Systems Incorporated Source Code License Agreement,True
-Adobe-2006,scancode:adobe-scl,True
 Adobe-2006,scancode://adobe-scl,True
 Adobe-2006,Adobe Source Code License 2006,True
 Adobe-2006,Adobe,False
@@ -2615,48 +2431,48 @@ Adobe-2006,Adobe Systems Incorporated(r) Source Code License Agreement,False
 Adobe-2006,Adobe Source Code License Agreement,False
 Adobe-2006,http://fedoraproject.org/wiki/Licensing/AdobeLicense,False
 Adobe-2006,https://spdx.org/licenses/adobe-2006,False
+Adobe-2006,scancode:adobe-scl,False
 AFL-1.1,Academic Free License v1.1,True
 AFL-1.1,Academic Free License 1.1,True
-AFL-1.1,scancode:afl-1.1,True
 AFL-1.1,scancode://afl-1.1,True
 AFL-1.1,AFL 1.1,True
 AFL-1.1,"AFL, Version 1.1",False
 AFL-1.1,"AFL, 1.1",False
+AFL-1.1,scancode:afl-1.1,False
 Spencer-94,Spencer License 94,True
 Spencer-94,Spencer License (4-Clause),True
-Spencer-94,scancode:hs-regexp,True
 Spencer-94,scancode://hs-regexp,True
 Spencer-94,Henry Spencer Regexp License,True
 Spencer-94,"Spencer License, 92",False
 Spencer-94,"Spencer License, 93",False
 Spencer-94,"Spencer License, 94",False
 Spencer-94,"Spencer License, 97",False
+Spencer-94,scancode:hs-regexp,False
 XSkat,XSkat License,True
-XSkat,scancode:xskat,True
 XSkat,scancode://xskat,True
 XSkat,XSKAT LICENSE,False
 XSkat,XSKAT License,False
 XSkat,under XSkat,False
 XSkat,under XSKAT,False
+XSkat,scancode:xskat,False
 Newsletr,Newsletr License,True
-Newsletr,scancode:newsletr,True
 Newsletr,scancode://newsletr,True
+Newsletr,scancode:newsletr,False
 CC-BY-SA-2.0,Creative Commons BY-SA 2.0,True
-CC-BY-SA-2.0,scancode:cc-by-sa-2.0,True
 CC-BY-SA-2.0,Creative Commons Attribution-ShareAlike 2.0 Generic,True
 CC-BY-SA-2.0,Creative Commons Attribution Share Alike 2.0 Generic,True
 CC-BY-SA-2.0,scancode://cc-by-sa-2.0,True
 CC-BY-SA-2.0,Creative Commons Attribution Share Alike 2.0,False
 CC-BY-SA-2.0,Creative Commons Attribution-ShareAlike 2.0,False
+CC-BY-SA-2.0,scancode:cc-by-sa-2.0,False
 ZPL-1.1,Zope Public License 1.1,True
-ZPL-1.1,scancode:zpl-1.1,True
 ZPL-1.1,scancode://zpl-1.1,True
 ZPL-1.1,ZPL 1.1,True
 ZPL-1.1,"ZPL, Version 1.1",False
 ZPL-1.1,Zope Public License (ZPL) Version 1.1,False
+ZPL-1.1,scancode:zpl-1.1,False
 GFDL-1.3-only,GNU Free Documentation License 1.3,True
 GFDL-1.3-only,GFDL-1.3,True
-GFDL-1.3-only,scancode:gfdl-1.3,True
 GFDL-1.3-only,GNU Free Documentation License Version 1.3,True
 GFDL-1.3-only,GNU Free Documentation License v1.3 only,True
 GFDL-1.3-only,scancode://gfdl-1.3,True
@@ -2669,8 +2485,8 @@ GFDL-1.3-only,GFDL v1.3,False
 GFDL-1.3-only,GFDL version 1.3,False
 GFDL-1.3-only,Change license on the manual to GFDLv1.3,False
 GFDL-1.3-only,GNU FDL license 1.3,False
+GFDL-1.3-only,scancode:gfdl-1.3,False
 EUPL-1.0,European Union Public License 1.0,True
-EUPL-1.0,scancode:eupl-1.0,True
 EUPL-1.0,scancode://eupl-1.0,True
 EUPL-1.0,EUPL 1.0,True
 EUPL-1.0,European Union Public License,False
@@ -2683,20 +2499,18 @@ EUPL-1.0,European Union Public License v.1.0,False
 EUPL-1.0,"European Union Public License, Version 1.0",False
 EUPL-1.0,European Union Public License (EUPL) version 1.0,False
 EUPL-1.0,European Union Public License v1.0,False
+EUPL-1.0,scancode:eupl-1.0,False
 BSD-3-Clause-Clear,BSD 3-Clause Clear License,True
 BSD-3-Clause-Clear,Clear BSD,True
-BSD-3-Clause-Clear,BSD 3-Clause Clear License (copyright variant),True
-BSD-3-Clause-Clear,BSD-3-Clause-Clear-copyright-variant,True
-BSD-3-Clause-Clear,scancode:clear-bsd,True
 BSD-3-Clause-Clear,scancode://clear-bsd,True
 BSD-3-Clause-Clear,Clear BSD License,True
 BSD-3-Clause-Clear,The BSD-3-clause License,False
+BSD-3-Clause-Clear,scancode:clear-bsd,False
 GPL-1.0-or-later,GPL-1.0+,True
 GPL-1.0-or-later,GPL1.0+,True
 GPL-1.0-or-later,GPL1+,True
 GPL-1.0-or-later,GNU General Public License v1.0 or later,True
 GPL-1.0-or-later,GNU General Public License 1.0 (or any later version),True
-GPL-1.0-or-later,scancode:gpl-1.0-plus,True
 GPL-1.0-or-later,scancode://gpl-1.0-plus,True
 GPL-1.0-or-later,GPL 1.0 or later,True
 GPL-1.0-or-later,GNU General Public License,False
@@ -2711,14 +2525,14 @@ GPL-1.0-or-later,GPL version 1 or later,False
 GPL-1.0-or-later,GPL version 1.0 or later,False
 GPL-1.0-or-later,"GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version",False
 GPL-1.0-or-later,"GNU General Public License, version 1 or later",False
+GPL-1.0-or-later,scancode:gpl-1.0-plus,False
 CNRI-Jython,CNRI Jython License,True
-CNRI-Jython,scancode:cnri-jython,True
 CNRI-Jython,scancode://cnri-jython,True
 CNRI-Jython,CNRI Jython,False
 CNRI-Jython,CNRI JYTHON,False
+CNRI-Jython,scancode:cnri-jython,False
 Adobe-Glyph,Adobe Glyph List License,True
 Adobe-Glyph,Adobe Glyph License,True
-Adobe-Glyph,scancode:adobe-glyph,True
 Adobe-Glyph,scancode://adobe-glyph,True
 Adobe-Glyph,MIT,False
 Adobe-Glyph,ADOBE GLYPH LICENSE,False
@@ -2726,14 +2540,14 @@ Adobe-Glyph,ADOBE GLYPH License,False
 Adobe-Glyph,Adobe-Glyph License,False
 Adobe-Glyph,ADOBE-GLYPH LICENSE,False
 Adobe-Glyph,ADOBE-GLYPH License,False
+Adobe-Glyph,scancode:adobe-glyph,False
 MITNFA,MIT +no-false-attribs license,True
 MITNFA,MIT (NFA) License,True
-MITNFA,scancode:mit-no-false-attribs,True
 MITNFA,MIT +no-false-attribs License,True
 MITNFA,scancode://mit-no-false-attribs,True
 MITNFA,MIT no false attribution License,True
+MITNFA,scancode:mit-no-false-attribs,False
 APSL-1.0,Apple Public Source License 1.0,True
-APSL-1.0,scancode:apsl-1.0,True
 APSL-1.0,scancode://apsl-1.0,True
 APSL-1.0,APSL 1.0,True
 APSL-1.0,Apple Public Source License,False
@@ -2743,77 +2557,76 @@ APSL-1.0,APPLE PUBLIC SOURCE LICENSE 1.0,False
 APSL-1.0,APPLE PUBLIC SOURCE LICENSE v1.0,False
 APSL-1.0,APPLE PUBLIC SOURCE LICENSE Version 1.0,False
 APSL-1.0,Apple Public Source License Ver. 1.0,False
+APSL-1.0,scancode:apsl-1.0,False
 JPNIC,JPNIC License,True
-JPNIC,scancode:jpnic-idnkit,True
 JPNIC,Japan Network Information Center License,True
 JPNIC,scancode://jpnic-idnkit,True
 JPNIC,JPNIC idnkit License,True
 JPNIC,Japan Network Information Center Terms,False
+JPNIC,scancode:jpnic-idnkit,False
 BSD-Protection,BSD Protection License,True
-BSD-Protection,scancode:bsd-protection,True
 BSD-Protection,scancode://bsd-protection,True
 BSD-Protection,BSD Protection,False
+BSD-Protection,scancode:bsd-protection,False
 OGL-UK-1.0,Open Government Licence 1.0,True
-OGL-UK-1.0,scancode:ogl-uk-1.0,True
 OGL-UK-1.0,Open Government Licence 1.0 (United Kingdom),True
 OGL-UK-1.0,Open Government Licence v1.0,True
 OGL-UK-1.0,scancode://ogl-uk-1.0,True
+OGL-UK-1.0,scancode:ogl-uk-1.0,False
 MulanPSL-2.0,"Mulan Permissive Software License, Version 2",True
 MulanPSL-2.0,Mulan PSL v2,True
 MulanPSL-2.0,Mulan Permissive Software License 2.0,True
 MulanPSL-2.0,scancode://mulanpsl-2.0,True
 MulanPSL-2.0,"木兰宽松许可证, 第2版 木兰宽松许可证， 第2版",False
 ImageMagick,ImageMagick License,True
-ImageMagick,scancode:imagemagick,True
 ImageMagick,scancode://imagemagick,True
+ImageMagick,scancode:imagemagick,False
 OSL-2.0,Open Software License 2.0,True
-OSL-2.0,scancode:osl-2.0,True
 OSL-2.0,scancode://osl-2.0,True
 OSL-2.0,OSL 2.0,True
 OSL-2.0,Open Software License,False
 OSL-2.0,The Open Software License v. 2.0,False
+OSL-2.0,scancode:osl-2.0,False
 OLDAP-2.0,Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B),True
 OLDAP-2.0,OpenLDAP Public License 2.0,True
-OLDAP-2.0,scancode:openldap-2.0,True
 OLDAP-2.0,scancode://openldap-2.0,True
 OLDAP-2.0,"OLDAP, Version 2.0",False
 OLDAP-2.0,"OLDAP, 2.0",False
 OLDAP-2.0,"OLDAP License, Version 2.0",False
 OLDAP-2.0,"OLDAP License, 2.0",False
 OLDAP-2.0,"The OpenLDAP Public License Version 2.0, 7 June 1999",False
+OLDAP-2.0,scancode:openldap-2.0,False
 bzip2-1.0.6,bzip2 and libbzip2 License v1.0.6,True
 bzip2-1.0.6,bzip2 License 1.0.6,True
-bzip2-1.0.6,scancode:bzip2-libbzip-2010,True
-bzip2-1.0.6,scancode:bzip2-libbzip-1.0.5,True
 bzip2-1.0.6,The bzip2 license,True
 bzip2-1.0.6,scancode://bzip2-libbzip-2010,True
 bzip2-1.0.6,bzip2 License 2010,True
 bzip2-1.0.6,libzip2 version 1.0.6,False
+bzip2-1.0.6,scancode:bzip2-libbzip-2010,False
+bzip2-1.0.6,scancode:bzip2-libbzip-1.0.5,False
 Eurosym,Eurosym License,True
-Eurosym,scancode:eurosym,True
 Eurosym,scancode://eurosym,True
 Eurosym,EUROSYM LICENSE,False
 Eurosym,EUROSYM License,False
+Eurosym,scancode:eurosym,False
 JSON,JSON License,True
 JSON,scancode://json,True
 JSON,JSON evil license,False
 CC-BY-NC-ND-3.0-IGO,Creative Commons BY-NC-ND 3.0 (IGO),True
-CC-BY-NC-ND-3.0-IGO,scancode:cc-by-nc-nd-3.0-igo,True
 CC-BY-NC-ND-3.0-IGO,Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO,True
 CC-BY-NC-ND-3.0-IGO,scancode://cc-by-nc-nd-3.0-igo,True
+CC-BY-NC-ND-3.0-IGO,scancode:cc-by-nc-nd-3.0-igo,False
 LPL-1.0,Lucent Public License Version 1.0,True
 LPL-1.0,LPL 1.0,True
-LPL-1.0,scancode:lucent-pl-1.0,True
-LPL-1.0,osi:LPL-1.0,True
 LPL-1.0,"Lucent Public License (""Plan9"") 1.0",True
 LPL-1.0,"Lucent Public License, Plan 9, Version 1.0",True
 LPL-1.0,scancode://lucent-pl-1.0,True
 LPL-1.0,Lucent Public License 1.0,True
 LPL-1.0,"LPL, Version 1.0",False
 LPL-1.0,"LPL, 1.0",False
+LPL-1.0,scancode:lucent-pl-1.0,False
+LPL-1.0,osi:LPL-1.0,False
 CECILL-2.1,CeCILL Free Software License Agreement 2.1,True
-CECILL-2.1,scancode:cecill-2.1,True
-CECILL-2.1,osi:CECILL-2.1,True
 CECILL-2.1,CeCILL License 2.1,True
 CECILL-2.1,"Cea Cnrs Inria Logiciel Libre License, Version 2.1",True
 CECILL-2.1,"License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",True
@@ -2823,34 +2636,36 @@ CECILL-2.1,CeCILL 2.1,True
 CECILL-2.1,"CECILL, Version 2.1",False
 CECILL-2.1,"CECILL, 2.1",False
 CECILL-2.1,CeCILL FREE SOFTWARE LICENSE AGREEMENT Version 2.1,False
+CECILL-2.1,scancode:cecill-2.1,False
+CECILL-2.1,osi:CECILL-2.1,False
 MIT-0,MIT No Attribution,True
 MIT-0,MIT License (no attribution),True
-MIT-0,scancode:ekioh,True
-MIT-0,scancode:pd-mit,True
-MIT-0,scancode:tigra-calendar-4.0,True
 MIT-0,scancode://mit-0,True
 MIT-0,MIT-0-Clause,True
 MIT-0,"MIT, Version 0",False
 MIT-0,"MIT, 0",False
 MIT-0,"MIT License, Version 0",False
 MIT-0,MIT License 0,False
+MIT-0,scancode:ekioh,False
+MIT-0,scancode:pd-mit,False
+MIT-0,scancode:tigra-calendar-4.0,False
 Spencer-99,Spencer License 99,True
-Spencer-99,scancode:henry-spencer-1999,True
 Spencer-99,scancode://henry-spencer-1999,True
 Spencer-99,Henry Spencer License 1999,True
 Spencer-99,"Spencer, Version 99",False
 Spencer-99,Spencer 99,False
 Spencer-99,"Spencer License, Version 99",False
 Spencer-99,"Spencer License, 99",False
+Spencer-99,scancode:henry-spencer-1999,False
 PolyForm-Noncommercial-1.0.0,Polyform Noncommercial License 1.0.0,True
-PolyForm-Noncommercial-1.0.0,scancode:polyform-noncommercial-1.0.0,True
 PolyForm-Noncommercial-1.0.0,PolyForm Noncommercial License 1.0.0,True
 PolyForm-Noncommercial-1.0.0,scancode://polyform-noncommercial-1.0.0,True
+PolyForm-Noncommercial-1.0.0,scancode:polyform-noncommercial-1.0.0,False
 Abstyles,Abstyles License,True
-Abstyles,scancode:abstyles,True
 Abstyles,scancode://abstyles,True
 Abstyles,ABSTYLES LICENSE,False
 Abstyles,ABSTYLES License,False
+Abstyles,scancode:abstyles,False
 GFDL-1.3-or-later,GNU Free Documentation License 1.3 (or any later version),True
 GFDL-1.3-or-later,GFDL-1.3+,True
 GFDL-1.3-or-later,GNU Free Documentation License v1.3 or later,True
@@ -2866,9 +2681,9 @@ GFDL-1.3-or-later,"GNU Free Documentation License as published by the Free Softw
 GFDL-1.3-or-later,GFDL version 1.3 or later,False
 GFDL-1.3-or-later,Change license on the manual to GFDLv1.3+,False
 NRL,NRL License,True
-NRL,scancode:nrl,True
 NRL,scancode://nrl,True
 NRL,BSD with advertising,False
+NRL,scancode:nrl,False
 Libpng,libpng License,True
 Libpng,PNG Reference Library License 1.0,True
 Libpng,Libpng-1.0,True
@@ -2878,40 +2693,38 @@ Libpng,Libpng License,True
 Libpng,PNG Reference Library License 1,False
 Libpng,PNG Reference Library License version 1,False
 NAIST-2003,Nara Institute of Science and Technology License (2003),True
-NAIST-2003,scancode:naist-2003,True
 NAIST-2003,scancode://naist-2003,True
 NAIST-2003,Nara Institute License 2003,True
+NAIST-2003,scancode:naist-2003,False
 XFree86-1.1,XFree86 License 1.1,True
-XFree86-1.1,scancode:xfree86-1.1,True
 XFree86-1.1,XFree86 1.1 License,True
 XFree86-1.1,scancode://xfree86-1.1,True
+XFree86-1.1,scancode:xfree86-1.1,False
 OFL-1.1-RFN,SIL Open Font License 1.1 with Reserved Font Name,True
 OFL-1.1-RFN,scancode://ofl-1.1-rfn,True
 CC-BY-3.0-US,Creative Commons BY 3.0 (US),True
-CC-BY-3.0-US,scancode:cc-by-3.0-us,True
 CC-BY-3.0-US,Creative Commons Attribution 3.0 United States,True
 CC-BY-3.0-US,scancode://cc-by-3.0-us,True
+CC-BY-3.0-US,scancode:cc-by-3.0-us,False
 EFL-2.0,Eiffel Forum License v2.0,True
 EFL-2.0,Eiffel Forum License 2.0,True
-EFL-2.0,scancode:efl-2.0,True
-EFL-2.0,osi:EFL-2.0,True
 EFL-2.0,"Eiffel Forum License, Version 2",True
 EFL-2.0,License :: OSI Approved :: Eiffel Forum License,True
 EFL-2.0,scancode://efl-2.0,True
 EFL-2.0,EFL 2.0,True
 EFL-2.0,"EFL, Version 2.0",False
 EFL-2.0,"Eiffel Forum License, version 2",False
+EFL-2.0,scancode:efl-2.0,False
+EFL-2.0,osi:EFL-2.0,False
 LPPL-1.0,LaTeX Project Public License 1.0,True
-LPPL-1.0,scancode:lppl-1.0,True
 LPPL-1.0,LaTeX Project Public License v1.0,True
 LPPL-1.0,scancode://lppl-1.0,True
 LPPL-1.0,LPPL 1.0,True
 LPPL-1.0,"LPPL, 1.0",False
 LPPL-1.0,LPPL Version 1.0,False
+LPPL-1.0,scancode:lppl-1.0,False
 IPL-1.0,IBM Public License v1.0,True
 IPL-1.0,IBM Public License 1.0,True
-IPL-1.0,scancode:ibmpl-1.0,True
-IPL-1.0,osi:IPL-1.0,True
 IPL-1.0,ibmpl,True
 IPL-1.0,"IBM Public License, Version 1.0",True
 IPL-1.0,License :: OSI Approved :: IBM Public License,True
@@ -2920,22 +2733,23 @@ IPL-1.0,scancode://ibmpl-1.0,True
 IPL-1.0,IPL 1.0,True
 IPL-1.0,IBM Public License,False
 IPL-1.0,"IPL, Version 1.0",False
+IPL-1.0,scancode:ibmpl-1.0,False
+IPL-1.0,osi:IPL-1.0,False
 ANTLR-PD,ANTLR Software Rights Notice,True
-ANTLR-PD,scancode:antlr-pd-fallback,True
 ANTLR-PD,ANTLR 2 License,True
 ANTLR-PD,scancode://antlr-pd,True
+ANTLR-PD,scancode:antlr-pd-fallback,False
 PolyForm-Small-Business-1.0.0,Polyform Small Business License 1.0.0,True
-PolyForm-Small-Business-1.0.0,scancode:polyform-small-business-1.0.0,True
 PolyForm-Small-Business-1.0.0,PolyForm Small Business License 1.0.0,True
 PolyForm-Small-Business-1.0.0,scancode://polyform-small-business-1.0.0,True
 PolyForm-Small-Business-1.0.0,[Polyform-Small-Business,False
+PolyForm-Small-Business-1.0.0,scancode:polyform-small-business-1.0.0,False
 GPL-1.0-only,GPL-1.0,True
 GPL-1.0-only,GPL1.0,True
 GPL-1.0-only,GPL1,True
 GPL-1.0-only,GNU General Public License Version 1,True
 GPL-1.0-only,GNU General Public License v1.0 only,True
 GPL-1.0-only,GNU General Public License 1.0,True
-GPL-1.0-only,scancode:gpl-1.0,True
 GPL-1.0-only,scancode://gpl-1.0,True
 GPL-1.0-only,GPL 1.0,True
 GPL-1.0-only,GNU General Public License,False
@@ -2945,11 +2759,11 @@ GPL-1.0-only,"GNU General Public License, Version 1",False
 GPL-1.0-only,"GNU General Public License, version 1",False
 GPL-1.0-only,GNU General Public License (v1),False
 GPL-1.0-only,GNU GENERAL PUBLIC LICENSE Version 1,False
+GPL-1.0-only,scancode:gpl-1.0,False
 CAL-1.0-Combined-Work-Exception,Cryptographic Autonomy License 1.0 (Combined Work Exception),True
 CAL-1.0-Combined-Work-Exception,scancode://cal-1.0-combined-work-exception,True
 CAL-1.0-Combined-Work-Exception,Cryptographic Autonomy License,False
 FreeImage,FreeImage Public License 1.0,True
-FreeImage,scancode:freeimage-1.0,True
 FreeImage,FreeImage Public License v1.0,True
 FreeImage,scancode://freeimage-1.0,True
 FreeImage,FreeImage License,False
@@ -2957,102 +2771,55 @@ FreeImage,FREEIMAGE PUBLIC LICENSE,False
 FreeImage,FREEIMAGE Public License,False
 FreeImage,FreeImage Public License,False
 FreeImage,FREEIMAGE Public LICENSE,False
+FreeImage,scancode:freeimage-1.0,False
 OLDAP-2.2.1,Open LDAP Public License v2.2.1,True
 OLDAP-2.2.1,OpenLDAP Public License 2.2.1,True
-OLDAP-2.2.1,scancode:openldap-2.2.1,True
 OLDAP-2.2.1,scancode://openldap-2.2.1,True
 OLDAP-2.2.1,"OLDAP, Version 2.2.1",False
 OLDAP-2.2.1,OLDAP 2.2.1,False
 OLDAP-2.2.1,"OLDAP License, Version 2.2.1",False
 OLDAP-2.2.1,OLDAP License 2.2.1,False
 OLDAP-2.2.1,"OpenLDAP Public License Version 2.2.1, 1 March 2000",False
+OLDAP-2.2.1,scancode:openldap-2.2.1,False
 GFDL-1.2-no-invariants-or-later,GNU Free Documentation License v1.2 or later - no invariants,True
 GFDL-1.2-no-invariants-or-later,scancode://gfdl-1.2-no-invariants-or-later,True
 GFDL-1.2-no-invariants-only,GNU Free Documentation License 1.2 (no invariants),True
 GFDL-1.2-no-invariants-only,GNU Free Documentation License v1.2 only - no invariants,True
 GFDL-1.2-no-invariants-only,scancode://gfdl-1.2-no-invariants-only,True
 Afmparse,Afmparse License,True
-Afmparse,scancode:afmparse,True
 Afmparse,scancode://afmparse,True
 Afmparse,afmparse License,True
 Afmparse,AFMPARSE LICENSE,False
 Afmparse,AFMPARSE License,False
+Afmparse,scancode:afmparse,False
 OLDAP-2.2.2,Open LDAP Public License 2.2.2,True
 OLDAP-2.2.2,OpenLDAP Public License 2.2.2,True
-OLDAP-2.2.2,scancode:openldap-2.2.2,True
 OLDAP-2.2.2,scancode://openldap-2.2.2,True
 OLDAP-2.2.2,"OLDAP, Version 2.2.2",False
 OLDAP-2.2.2,"OLDAP, 2.2.2",False
 OLDAP-2.2.2,"OLDAP License, Version 2.2.2",False
 OLDAP-2.2.2,OLDAP License 2.2.2,False
 OLDAP-2.2.2,OpenLDAP Public License Version 2.2.2,False
+OLDAP-2.2.2,scancode:openldap-2.2.2,False
 Parity-6.0.0,The Parity Public License 6.0.0,True
 Parity-6.0.0,Parity Public License 6.0.0,True
-Parity-6.0.0,scancode:parity-6.0.0,True
 Parity-6.0.0,scancode://parity-6.0.0,True
 Parity-6.0.0,The Parity Public License,False
-LGPL-2.1-only,LGPL-2.1,False
-LGPL-2.1-only,LGPL2.1,False
-LGPL-2.1-only,LGPL (v2.1),False
-LGPL-2.1-only,GNU Lesser General Public License Version 2.1,False
-LGPL-2.1-only,LGPL-2.1-or-later,True
-LGPL-2.1-only,LGPL-2.1+,False
-LGPL-2.1-only,LGPL2.1+,False
-LGPL-2.1-only,LGPL (v2.1 or later),False
-LGPL-2.1-only,GNU Lesser General Public License v2.1 only,False
-LGPL-2.1-only,GNU Lesser General Public License v2.1 or later,False
-LGPL-2.1-only,lgpl-2.1,False
-LGPL-2.1-only,GNU LGPLv2.1,False
-LGPL-2.1-only,GNU Lesser General Public License 2.1 (or any later version),False
-LGPL-2.1-only,scancode:lgpl-2.1-plus,False
-LGPL-2.1-only,osi:LGPL-2.1,False
-LGPL-2.1-only,GNU Lesser General Public License 2.1,False
-LGPL-2.1-only,scancode:lgpl-2.1,False
-LGPL-2.1-only,"GNU Lesser General Public License, Version 2.1",False
-LGPL-2.1-only,License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2),False
-LGPL-2.1-only,scancode://lgpl-2.1-plus,False
-LGPL-2.1-only,LGPL 2.1 or later,False
-LGPL-2.1-only,scancode://lgpl-2.1,False
-LGPL-2.1-only,LGPL 2.1,False
+Parity-6.0.0,scancode:parity-6.0.0,False
+LGPL-2.1-only,LGPL-2.1,True
+LGPL-2.1-only,LGPL2.1,True
+LGPL-2.1-only,LGPL (v2.1),True
+LGPL-2.1-only,GNU Lesser General Public License Version 2.1,True
+LGPL-2.1-only,GNU Lesser General Public License v2.1 only,True
+LGPL-2.1-only,lgpl-2.1,True
+LGPL-2.1-only,GNU LGPLv2.1,True
+LGPL-2.1-only,GNU Lesser General Public License 2.1,True
+LGPL-2.1-only,"GNU Lesser General Public License, Version 2.1",True
+LGPL-2.1-only,License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2),True
+LGPL-2.1-only,scancode://lgpl-2.1,True
+LGPL-2.1-only,LGPL 2.1,True
 LGPL-2.1-only,GNU Library General Public License,False
 LGPL-2.1-only,The GNU Lesser General Public License (LGPL),False
-LGPL-2.1-only,"GNU Lesser General Public License, Version 2.1+",False
-LGPL-2.1-only,GNU LESSER GENERAL PUBLIC LICENSE 2.1+,False
-LGPL-2.1-only,"GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1+",False
-LGPL-2.1-only,"LGPL (GNU Lesser General Public License), V2.1 or later",False
-LGPL-2.1-only,LGPL 2.1+,False
-LGPL-2.1-only,LGPL v2.1+,False
-LGPL-2.1-only,LGPL version 2.1+,False
-LGPL-2.1-only,LGPL(v2.1+),False
-LGPL-2.1-only,"GNU LIBRARY GENERAL PUBLIC LICENSE, Version 2.1+",False
-LGPL-2.1-only,GNU Lesser GPL 2.1+,False
-LGPL-2.1-only,"GNU Lesser General Public License (LGPL), version 2.1+",False
-LGPL-2.1-only,"GNU Lesser General Public License (LGPL), version 2.1 or later",False
-LGPL-2.1-only,GNU Lesser General Public License - v 2.1 or later,False
-LGPL-2.1-only,GNU Lesser General Public License Version 2.1 or later,False
-LGPL-2.1-only,GNU Lesser General Public License v2.1+,False
-LGPL-2.1-only,GNU Lesser General Public License version 2.1+,False
-LGPL-2.1-only,GNU Lesser General Public License version 2.1 or later,False
-LGPL-2.1-only,"GNU Lesser General Public License, 2.1+",False
-LGPL-2.1-only,"GNU Lesser General Public License, v. 2.1+",False
-LGPL-2.1-only,GNU Lesser Public License 2.1+,False
-LGPL-2.1-only,GNU Library or Lesser General Public License (LGPL) V2.1+,False
-LGPL-2.1-only,GNU Library or Lesser General Public License (LGPL) 2.1+,False
-LGPL-2.1-only,GNU General Lesser Public License (LGPL) version 2.1+,False
-LGPL-2.1-only,"Lesser Gnu Public License, Version 2.1+",False
-LGPL-2.1-only,Lesser General Public License (LGPL) v 2.1+,False
-LGPL-2.1-only,"Lesser General Public License (LGPL), Version 2.1+",False
-LGPL-2.1-only,"LGPL license, Version 2.1+",False
-LGPL-2.1-only,LGPL v 2.1+,False
-LGPL-2.1-only,LGPL version 2.1 or later,False
-LGPL-2.1-only,"LGPL, v2.1 or later",False
-LGPL-2.1-only,LGPLv2.1+,False
-LGPL-2.1-only,LGPLv2.1 or later,False
-LGPL-2.1-only,lgpl_v2_1+,False
-LGPL-2.1-only,"GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1, or (at your option) any later version",False
-LGPL-2.1-only,"GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the License, or (at your option) any later version",False
-LGPL-2.1-only,"GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version",False
-LGPL-2.1-only,"GNU Lesser General Public License, V2.1 or later",False
 LGPL-2.1-only,GNU LESSER GENERAL PUBLIC LICENSE 2.1,False
 LGPL-2.1-only,GNU LESSER GENERAL PUBLIC LICENSE Version 2.1,False
 LGPL-2.1-only,GNU LGPL(v2.1),False
@@ -3086,10 +2853,9 @@ LGPL-2.1-only,"This is the first released version of the Lesser GPL.  It also co
 LGPL-2.1-only,GNU Lesser Public License (LGPL) Version 2.1,False
 LGPL-2.1-only,http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html,False
 LGPL-2.1-only,https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html,False
+LGPL-2.1-only,scancode:lgpl-2.1,False
+LGPL-2.1-only,osi:LGPL-2.1,False
 MPL-1.1,Mozilla Public License 1.1,True
-MPL-1.1,scancode:dpl-1.1,True
-MPL-1.1,scancode:monetdb-1.1,True
-MPL-1.1,osi:MPL-1.1,True
 MPL-1.1,mozilla1.1,True
 MPL-1.1,"Mozilla Public License, Version 1.1",True
 MPL-1.1,License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1),True
@@ -3102,14 +2868,16 @@ MPL-1.1,MPLv1.1,False
 MPL-1.1,MOZILLA PUBLIC LICENSE 1.1,False
 MPL-1.1,MOZILLA PUBLIC LICENSE Version 1.1,False
 MPL-1.1,Mozilla Public License (MPL) version 1.1,False
+MPL-1.1,scancode:dpl-1.1,False
+MPL-1.1,scancode:monetdb-1.1,False
+MPL-1.1,osi:MPL-1.1,False
 bzip2-1.0.5,bzip2 and libbzip2 License v1.0.5,True
 bzip2-1.0.5,bzip2 License 1.0.5,True
 Cube,Cube License,True
-Cube,scancode:cube,True
 Cube,scancode://cube,True
+Cube,scancode:cube,False
 SISSL,Sun Industry Standards Source License,True
 SISSL,SISSL 1.1,True
-SISSL,osi:SISSL,True
 SISSL,Sun Industry Standards Source License 1.1,True
 SISSL,sun-issl,True
 SISSL,License :: OSI Approved :: Sun Industry Standards Source License (SISSL),True
@@ -3117,41 +2885,41 @@ SISSL,Sun Industry Standards Source License Version 1.1,True
 SISSL,Sun Industry Standards Source License v1.1,True
 SISSL,scancode://sun-sissl-1.1,True
 SISSL,Sun Industry Standards Source License - Version 1.1,False
+SISSL,osi:SISSL,False
 PostgreSQL,PostgreSQL License,True
-PostgreSQL,scancode:postgresql,True
-PostgreSQL,osi:PostgreSQL,True
 PostgreSQL,The PostgreSQL Licence,True
 PostgreSQL,scancode://postgresql,True
 PostgreSQL,License: PostgreSQL,False
 PostgreSQL,POSTGRESQL License,False
+PostgreSQL,scancode:postgresql,False
+PostgreSQL,osi:PostgreSQL,False
 CERN-OHL-P-2.0,CERN Open Hardware Licence Permissive 2.0,True
-CERN-OHL-P-2.0,scancode:cern-ohl-p-2.0,True
 CERN-OHL-P-2.0,CERN Open Hardware Licence Version 2 - Permissive,True
 CERN-OHL-P-2.0,scancode://cern-ohl-p-2.0,True
+CERN-OHL-P-2.0,scancode:cern-ohl-p-2.0,False
 OSL-3.0,Open Software License 3.0,True
-OSL-3.0,scancode:osl-3.0,True
-OSL-3.0,osi:OSL-3.0,True
 OSL-3.0,"Open Software License, Version 3.0",True
 OSL-3.0,scancode://osl-3.0,True
 OSL-3.0,OSL 3.0,True
 OSL-3.0,Open Software License,False
+OSL-3.0,scancode:osl-3.0,False
+OSL-3.0,osi:OSL-3.0,False
 LPPL-1.2,LaTeX Project Public License 1.2,True
-LPPL-1.2,scancode:lppl-1.2,True
 LPPL-1.2,LaTeX Project Public License v1.2,True
 LPPL-1.2,scancode://lppl-1.2,True
 LPPL-1.2,LPPL 1.2,True
 LPPL-1.2,"LPPL, Version 1.2",False
+LPPL-1.2,scancode:lppl-1.2,False
 xpp,XPP License,True
 xpp,xpp License,True
-xpp,scancode:indiana-extreme-1.2,True
 xpp,scancode://indiana-extreme-1.2,True
 xpp,Indiana Extreme License 1.2,True
 xpp,XPP LICENSE,False
 xpp,LICENSE FOR THE Extreme! Lab PullParser,False
 xpp,under XPP,False
+xpp,scancode:indiana-extreme-1.2,False
 OLDAP-2.8,Open LDAP Public License v2.8,True
 OLDAP-2.8,OpenLDAP Public License 2.8,True
-OLDAP-2.8,scancode:openldap-2.8,True
 OLDAP-2.8,scancode://openldap-2.8,True
 OLDAP-2.8,"OLDAP, Version 2.8",False
 OLDAP-2.8,OLDAP 2.8,False
@@ -3159,12 +2927,11 @@ OLDAP-2.8,"OLDAP License, Version 2.8",False
 OLDAP-2.8,OLDAP License 2.8,False
 OLDAP-2.8,"OpenLDAP Public License Version 2.8, 17 August 2003",False
 OLDAP-2.8,http://www.OpenLDAP.org/license.html,False
+OLDAP-2.8,scancode:openldap-2.8,False
 AML,Apple MIT License,True
-AML,scancode:aml,True
 AML,scancode://aml,True
+AML,scancode:aml,False
 Motosoto,Motosoto License,True
-Motosoto,scancode:motosoto-0.9.1,True
-Motosoto,osi:Motosoto,True
 Motosoto,"Motosoto Open Source License, Version 0.9.1",True
 Motosoto,License :: OSI Approved :: Motosoto License,True
 Motosoto,scancode://motosoto-0.9.1,True
@@ -3173,16 +2940,17 @@ Motosoto,MOTOSOTO LICENSE,False
 Motosoto,MOTOSOTO License,False
 Motosoto,MOTOSOTO OPEN SOURCE LICENSE,False
 Motosoto,MOTOSOTO Open Source License,False
+Motosoto,scancode:motosoto-0.9.1,False
+Motosoto,osi:Motosoto,False
 Vim,Vim License,True
 Vim,VIM License,True
-Vim,scancode:vim,True
 Vim,scancode://vim,True
 Vim,VIM LICENSE,False
 Vim,vim License,False
 Vim,vim license,False
 Vim,VIM licnese,False
+Vim,scancode:vim,False
 TCP-wrappers,TCP Wrappers License,True
-TCP-wrappers,scancode:tcp-wrappers,True
 TCP-wrappers,scancode://tcp-wrappers,True
 TCP-wrappers,TCP wrappers License,False
 TCP-wrappers,TCP WRAPPERS LICENSE,False
@@ -3190,40 +2958,39 @@ TCP-wrappers,TCP WRAPPERS License,False
 TCP-wrappers,TCP-wrappers License,False
 TCP-wrappers,TCP-WRAPPERS LICENSE,False
 TCP-wrappers,TCP-WRAPPERS License,False
+TCP-wrappers,scancode:tcp-wrappers,False
 Sendmail-8.23,Sendmail 8.23,True
-Sendmail-8.23,scancode:sendmail-8.23,True
 Sendmail-8.23,Sendmail License 8.23,True
 Sendmail-8.23,scancode://sendmail-8.23,True
 Sendmail-8.23,"Sendmail, Version 8.23",False
+Sendmail-8.23,scancode:sendmail-8.23,False
 Ruby,Ruby License,True
-Ruby,scancode:ruby,True
 Ruby,Ruby License (1.9.2 and earlier),True
 Ruby,Ruby License (1.9.3 and later),True
 Ruby,scancode://ruby,True
+Ruby,scancode:ruby,False
 GFDL-1.1-invariants-or-later,GNU Free Documentation License v1.1 or later - invariants,True
 GFDL-1.1-invariants-or-later,scancode://gfdl-1.1-invariants-or-later,True
 CC-BY-2.5-AU,Creative Commons Attribution 2.5 Australia,True
 CC-BY-2.5-AU,scancode://cc-by-2.5-au,True
 NetCDF,NetCDF license,True
 NetCDF,NetCDF License,True
-NetCDF,scancode:netcdf,True
 NetCDF,NetCDF Copyright(version 2009),True
 NetCDF,NetCDF Copyright,True
 NetCDF,scancode://netcdf,True
 NetCDF,NETCDF LICENSE,False
 NetCDF,NETCDF License,False
+NetCDF,scancode:netcdf,False
 BSD-1-Clause,BSD 1-Clause License,True
-BSD-1-Clause,BSD 1-Clause License (copyright variant),True
-BSD-1-Clause,BSD-1-Clause-copyright,True
-BSD-1-Clause,scancode:bsd-1-clause,True
 BSD-1-Clause,scancode://bsd-1-clause,True
 BSD-1-Clause,BSD 1 Clause,False
 BSD-1-Clause,BSD 1 CLAUSE,False
+BSD-1-Clause,scancode:bsd-1-clause,False
 Leptonica,Leptonica License,True
-Leptonica,scancode:leptonica,True
 Leptonica,scancode://leptonica,True
 Leptonica,LEPTONICA LICENSE,False
 Leptonica,LEPTONICA License,False
+Leptonica,scancode:leptonica,False
 AGPL-3.0-or-later,AGPL-3.0-only,True
 AGPL-3.0-or-later,AGPL-3.0,False
 AGPL-3.0-or-later,AGPL3.0,False
@@ -3242,11 +3009,7 @@ AGPL-3.0-or-later,GNU Affero General Public License v3.0 or later,False
 AGPL-3.0-or-later,agpl-3.0,False
 AGPL-3.0-or-later,GNU AGPLv3,False
 AGPL-3.0-or-later,GNU Affero General Public License 3.0 (or any later version),False
-AGPL-3.0-or-later,scancode:agpl-3.0-plus,False
-AGPL-3.0-or-later,scancode:agpl-2.0,False
-AGPL-3.0-or-later,osi:AGPL-3.0,False
 AGPL-3.0-or-later,GNU Affero General Public License 3.0,False
-AGPL-3.0-or-later,scancode:agpl-3.0,False
 AGPL-3.0-or-later,GNU Affero General Public License v3,False
 AGPL-3.0-or-later,agpl-v3,False
 AGPL-3.0-or-later,"GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",False
@@ -3285,6 +3048,9 @@ AGPL-3.0-or-later,Affero GPL3+,False
 AGPL-3.0-or-later,General Affero Public License version 3+,False
 AGPL-3.0-or-later,Affero GNU Public License Version 3+,False
 AGPL-3.0-or-later,version 2 of the Affero General Public License,False
+AGPL-3.0-or-later,scancode:agpl-3.0-plus,False
+AGPL-3.0-or-later,scancode:agpl-2.0,False
+AGPL-3.0-or-later,osi:AGPL-3.0,False
 AGPL-3.0-or-later,GNU AFFERO GENERAL PUBLIC LICENSE v3,False
 AGPL-3.0-or-later,"GNU AFFERO GENERAL PUBLIC LICENSE, version 3",False
 AGPL-3.0-or-later,"GNU AFFERO PUBLIC LICENSE, Version 3",False
@@ -3302,14 +3068,13 @@ AGPL-3.0-or-later,Affero GPL3,False
 AGPL-3.0-or-later,General Affero Public License version 3,False
 AGPL-3.0-or-later,Affero GNU Public License Version 3,False
 AGPL-3.0-or-later,AGPL-3,False
+AGPL-3.0-or-later,scancode:agpl-3.0,False
 Beerware,Beerware License,True
-Beerware,scancode:beerware,True
 Beerware,scancode://beerware,True
 Beerware,Beer-Ware License,True
 Beerware,Beerware 42,True
+Beerware,scancode:beerware,False
 EUPL-1.2,European Union Public License 1.2,True
-EUPL-1.2,scancode:eupl-1.2,True
-EUPL-1.2,osi:EUPL-1.2,True
 EUPL-1.2,scancode://eupl-1.2,True
 EUPL-1.2,EUPL 1.2,True
 EUPL-1.2,European Union Public Licence 1.2,True
@@ -3322,9 +3087,9 @@ EUPL-1.2,"European Union Public License, Version 1.2",False
 EUPL-1.2,European Union Public License (EUPL) version 1.2,False
 EUPL-1.2,European Union Public License v1.2,False
 EUPL-1.2,European Union Public Licence V. 1.2,False
+EUPL-1.2,scancode:eupl-1.2,False
+EUPL-1.2,osi:EUPL-1.2,False
 OSET-PL-2.1,OSET Public License 2.1,True
-OSET-PL-2.1,scancode:oset-pl-2.1,True
-OSET-PL-2.1,osi:OPL-2.1,True
 OSET-PL-2.1,OSET Public License version 2.1,True
 OSET-PL-2.1,scancode://oset-pl-2.1,True
 OSET-PL-2.1,"OSET PL, Version 2.1",False
@@ -3332,54 +3097,54 @@ OSET-PL-2.1,"OSET PL, 2.1",False
 OSET-PL-2.1,"OSET-PL, Version 2.1",False
 OSET-PL-2.1,"OSET-PL, 2.1",False
 OSET-PL-2.1,OSET Public License (c) 2015 ALL RIGHTS RESERVED VERSION 2.1,False
+OSET-PL-2.1,scancode:oset-pl-2.1,False
+OSET-PL-2.1,osi:OPL-2.1,False
 CC-BY-1.0,Creative Commons BY 1.0,True
-CC-BY-1.0,scancode:cc-by-1.0,True
 CC-BY-1.0,Creative Commons Attribution 1.0 Generic,True
 CC-BY-1.0,scancode://cc-by-1.0,True
 CC-BY-1.0,"Creative Commons Attribution License (CC-by), v1.0",False
 CC-BY-1.0,Creative Commons Attribution 1.0,False
 CC-BY-1.0,http://creativecommons.org/licenses/by/1.0,False
+CC-BY-1.0,scancode:cc-by-1.0,False
 SISSL-1.2,SISSL 1.2,True
-SISSL-1.2,scancode:sun-sissl-1.2,True
 SISSL-1.2,Sun Industry Standards Source License - Version 1.2,True
 SISSL-1.2,Sun Industry Standards Source License v1.2,True
 SISSL-1.2,scancode://sun-sissl-1.2,True
 SISSL-1.2,Sun Industry Standards Source License 1.2,True
 SISSL-1.2,"SISSL, Version 1.2",False
 SISSL-1.2,SUN INDUSTRY STANDARDS SOURCE LICENSE Version 1.2,False
+SISSL-1.2,scancode:sun-sissl-1.2,False
 CC-BY-NC-3.0,Creative Commons BY-NC 3.0 (unported),True
-CC-BY-NC-3.0,scancode:cc-by-nc-3.0,True
 CC-BY-NC-3.0,Creative Commons Attribution Non Commercial 3.0 Unported,True
 CC-BY-NC-3.0,scancode://cc-by-nc-3.0,True
 CC-BY-NC-3.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-3.0,Creative Commons Attribution-NonCommercial 3.0 Unported,False
+CC-BY-NC-3.0,scancode:cc-by-nc-3.0,False
 OLDAP-1.4,Open LDAP Public License v1.4,True
 OLDAP-1.4,OpenLDAP Public License 1.4,True
-OLDAP-1.4,scancode:openldap-1.4,True
 OLDAP-1.4,scancode://openldap-1.4,True
 OLDAP-1.4,"OLDAP, Version 1.4",False
 OLDAP-1.4,"OLDAP, 1.4",False
 OLDAP-1.4,"OLDAP License, Version 1.4",False
 OLDAP-1.4,"OLDAP License, 1.4",False
 OLDAP-1.4,"The OpenLDAP Public License Version 1.4, 18 January 1999",False
+OLDAP-1.4,scancode:openldap-1.4,False
 X11,ICU,True
 X11,ICU License,False
 X11,X11 License,False
-X11,scancode:slf4j-2005,False
-X11,scancode:x11-xconsortium,False
 X11,ICU License (ICU 1.8.1 and later),False
 X11,scancode://x11-xconsortium,False
 X11,X11-Style (X Consortium),False
 X11,scancode://x11,False
+X11,scancode:slf4j-2005,False
 X11,X License,False
 X11,MIT/X Consortium,False
 X11,X/MIT License,False
 X11,MIT/X11,False
 X11,X11 LICENSE,False
 X11,Expat~X with X exception,False
+X11,scancode:x11-xconsortium,False
 Intel,Intel Open Source License,True
-Intel,scancode:intel-bsd-export-control,True
-Intel,osi:Intel,True
 Intel,intel-osl,True
 Intel,The Intel Open Source License,True
 Intel,License :: OSI Approved :: Intel Open Source License,True
@@ -3388,8 +3153,9 @@ Intel,scancode://intel-bsd-export-control,True
 Intel,Intel BSD - Export Control,True
 Intel,http://opensource.org/licenses/intel,False
 Intel,https://opensource.org/licenses/intel,False
+Intel,scancode:intel-bsd-export-control,False
+Intel,osi:Intel,False
 CDLA-Permissive-1.0,Community Data License Agreement Permissive 1.0,True
-CDLA-Permissive-1.0,scancode:cdla-permissive-1.0,True
 CDLA-Permissive-1.0,scancode://cdla-permissive-1.0,True
 CDLA-Permissive-1.0,CDLA Permissive 1.0,True
 CDLA-Permissive-1.0,"CDLA Permissive, Version 1.0",False
@@ -3401,9 +3167,10 @@ CDLA-Permissive-1.0,"CDLA Permissive License, 1.0",False
 CDLA-Permissive-1.0,"CDLA-Permissive License, Version 1.0",False
 CDLA-Permissive-1.0,CDLA-Permissive License 1.0,False
 CDLA-Permissive-1.0,Community Data License Agreement - Permissive - Version 1.0,False
+CDLA-Permissive-1.0,scancode:cdla-permissive-1.0,False
 NIST-PD,NIST Public Domain Notice,True
-NIST-PD,scancode:nist-pd,True
 NIST-PD,scancode://nist-pd,True
+NIST-PD,scancode:nist-pd,False
 LiLiQ-R-1.1,LiLiQ-R,True
 LiLiQ-R-1.1,Licence Libre du Québec – Réciprocité,True
 LiLiQ-R-1.1,"Licence Libre du Québec – Réciprocité, Version 1.1",True
@@ -3417,23 +3184,20 @@ LiLiQ-R-1.1,LiLiQ R License 1.1,False
 LiLiQ-R-1.1,"LiLiQ-R License, Version 1.1",False
 LiLiQ-R-1.1,"LiLiQ-R License, 1.1",False
 SMLNJ,Standard ML of New Jersey License,True
-SMLNJ,CUP Parser Generator License,True
-SMLNJ,CUP-PGL,True
-SMLNJ,scancode:standard-ml-nj,True
 SMLNJ,SMLNJ License,True
 SMLNJ,scancode://standard-ml-nj,True
 SMLNJ,Standard ML of New Jersey,True
 SMLNJ,MIT,False
 SMLNJ,SMLNJ LICENSE,False
 SMLNJ,"STANDARD ML OF NEW JERSEY COPYRIGHT NOTICE, LICENSE AND DISCLAIMER",False
+SMLNJ,scancode:standard-ml-nj,False
 BUSL-1.1,Business Source License 1.1,True
 BUSL-1.1,Businnes-Source-1.1,True
-BUSL-1.1,scancode:bsl-1.1,True
 BUSL-1.1,scancode://bsl-1.1,True
 BUSL-1.1,https://github.com/getsentry/sentry/blob/master/LICENSE,False
+BUSL-1.1,scancode:bsl-1.1,False
 CDDL-1.1,Common Development and Distribution License 1.1,True
 CDDL-1.1,CDDL 1.1,True
-CDDL-1.1,scancode:cddl-1.1,True
 CDDL-1.1,COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1,True
 CDDL-1.1,scancode://cddl-1.1,True
 CDDL-1.1,Common Development and Distribution License,False
@@ -3443,8 +3207,8 @@ CDDL-1.1,"Common Development and Distribution License 1.1 (""CDDL"")",False
 CDDL-1.1,COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1),False
 CDDL-1.1,https://oss.oracle.com/licenses/CDDL+GPL-1.1,False
 CDDL-1.1,Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved,False
+CDDL-1.1,scancode:cddl-1.1,False
 CC-BY-SA-3.0,Creative Commons BY-SA 3.0,True
-CC-BY-SA-3.0,scancode:cc-by-sa-3.0,True
 CC-BY-SA-3.0,Creative Commons Attribution-ShareAlike 3.0 Unported,True
 CC-BY-SA-3.0,Creative Commons Attribution Share Alike 3.0 Unported,True
 CC-BY-SA-3.0,scancode://cc-by-sa-3.0,True
@@ -3454,13 +3218,14 @@ CC-BY-SA-3.0,Creative Commons Attribution-ShareAlike 3.0,False
 CC-BY-SA-3.0,Creative Common Attribution-ShareAlike 3.0,False
 CC-BY-SA-3.0,http://creativecommons.org/licenses/by-sa/3.0,False
 CC-BY-SA-3.0,Creative Commons Attribution-Share Alike 3.0,False
+CC-BY-SA-3.0,scancode:cc-by-sa-3.0,False
 CC-BY-SA-2.1-JP,Creative Commons BY-SA 2.1 (JP),True
 CC-BY-SA-2.1-JP,Creative Commons Attribution Share Alike 2.1 Japan,True
 Wsuipa,Wsuipa License,True
-Wsuipa,scancode:wsuipa,True
 Wsuipa,scancode://wsuipa,True
 Wsuipa,WSUIPA LICENSE,False
 Wsuipa,WSUIPA License,False
+Wsuipa,scancode:wsuipa,False
 MPL-2.0-no-copyleft-exception,Mozilla Public License 2.0 (no copyleft exception),True
 MPL-2.0-no-copyleft-exception,scancode://mpl-2.0-no-copyleft-exception,True
 MPL-2.0-no-copyleft-exception,MPL 2.0 with no copyleft exception,True
@@ -3468,7 +3233,6 @@ MPL-2.0-no-copyleft-exception,Mozilla Public License,False
 MPL-2.0-no-copyleft-exception,Mozilla Public License (MPL),False
 Unicode-DFS-2015,Unicode License Agreement - Data Files and Software (2015),True
 Unicode-DFS-2015,Unicode DFS License 2015,True
-Unicode-DFS-2015,scancode:unicode-dfs-2015,True
 Unicode-DFS-2015,"UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)",True
 Unicode-DFS-2015,scancode://unicode-dfs-2015,True
 Unicode-DFS-2015,Unicode DFS 2015,True
@@ -3478,37 +3242,35 @@ Unicode-DFS-2015,"Unicode-DFS, 2015",False
 Unicode-DFS-2015,"Unicode DFS License, Version 2015",False
 Unicode-DFS-2015,"Unicode-DFS License, Version 2015",False
 Unicode-DFS-2015,"Unicode-DFS License, 2015",False
+Unicode-DFS-2015,scancode:unicode-dfs-2015,False
 CNRI-Python-GPL-Compatible,CNRI Python Open Source GPL Compatible License Agreement,True
 CNRI-Python-GPL-Compatible,scancode://cnri-python-1.6.1,True
 CNRI-Python-GPL-Compatible,CNRI Python 1.6.1,True
 OLDAP-2.0.1,Open LDAP Public License v2.0.1,True
 OLDAP-2.0.1,OpenLDAP Public License 2.0.1,True
-OLDAP-2.0.1,scancode:openldap-2.0.1,True
 OLDAP-2.0.1,scancode://openldap-2.0.1,True
 OLDAP-2.0.1,"OLDAP, Version 2.0.1",False
 OLDAP-2.0.1,OLDAP 2.0.1,False
 OLDAP-2.0.1,"OLDAP License, Version 2.0.1",False
 OLDAP-2.0.1,OLDAP License 2.0.1,False
 OLDAP-2.0.1,"Version 2.0.1, 21 December 1999",False
+OLDAP-2.0.1,scancode:openldap-2.0.1,False
 psutils,psutils License,True
-psutils,scancode:psutils,True
 psutils,scancode://psutils,True
 psutils,PS Utilities License,True
 psutils,PSUTILS LICENSE,False
 psutils,PSUTILS License,False
 psutils,PS Utilities Package,False
+psutils,scancode:psutils,False
 CC-BY-2.0,Creative Commons BY 2.0,True
-CC-BY-2.0,scancode:cc-by-2.0,True
 CC-BY-2.0,Creative Commons Attribution 2.0 Generic,True
 CC-BY-2.0,scancode://cc-by-2.0,True
 CC-BY-2.0,Creative Commons Attribution 2.0,False
 CC-BY-2.0,http://creativecommons.org/licenses/by/2.0,False
+CC-BY-2.0,scancode:cc-by-2.0,False
 Artistic-2.0,Artistic 2.0,True
 Artistic-2.0,Artistic License (v. 2.0),True
 Artistic-2.0,Artistic License 2.0,True
-Artistic-2.0,scancode:artistic-2.0,True
-Artistic-2.0,osi:Artistic-2.0,True
-Artistic-2.0,osi:artistic-license-2.0,True
 Artistic-2.0,artistic-license-2.0,True
 Artistic-2.0,"Artistic License, Version 2.0",True
 Artistic-2.0,License :: OSI Approved :: Artistic License,True
@@ -3518,20 +3280,13 @@ Artistic-2.0,Artistic License,False
 Artistic-2.0,"Artistic, Version 2.0",False
 Artistic-2.0,Artistic License (2.0),False
 Artistic-2.0,Artistic-2,False
-Artistic-1.0-cl8,Artistic-1.0,True
-Artistic-1.0-cl8,Artistic 1.0 (original),False
-Artistic-1.0-cl8,Artistic License 1.0,False
-Artistic-1.0-cl8,Artistic License 1.0 w/clause 8,False
-Artistic-1.0-cl8,Artistic License 1.0 (cl8),False
-Artistic-1.0-cl8,scancode:artistic-1.0-cl8,False
-Artistic-1.0-cl8,osi:Artistic-1.0,False
-Artistic-1.0-cl8,scancode:artistic-1.0,False
-Artistic-1.0-cl8,"Artistic License, Version 1.0",False
-Artistic-1.0-cl8,Artistic License (Perl) 1.0,False
-Artistic-1.0-cl8,scancode://artistic-1.0-cl8,False
-Artistic-1.0-cl8,Artistic 1.0 w/clause 8,False
-Artistic-1.0-cl8,scancode://artistic-1.0,False
-Artistic-1.0-cl8,Artistic 1.0,False
+Artistic-2.0,scancode:artistic-2.0,False
+Artistic-2.0,osi:Artistic-2.0,False
+Artistic-2.0,osi:artistic-license-2.0,False
+Artistic-1.0-cl8,Artistic License 1.0 w/clause 8,True
+Artistic-1.0-cl8,Artistic License 1.0 (cl8),True
+Artistic-1.0-cl8,scancode://artistic-1.0-cl8,True
+Artistic-1.0-cl8,Artistic 1.0 w/clause 8,True
 Artistic-1.0-cl8,Artistic License,False
 Artistic-1.0-cl8,"Artistic 1.0, Version cl8",False
 Artistic-1.0-cl8,Artistic 1.0 cl8,False
@@ -3541,16 +3296,16 @@ Artistic-1.0-cl8,"Artistic 1.0 License, Version cl8",False
 Artistic-1.0-cl8,Artistic 1.0 License cl8,False
 Artistic-1.0-cl8,"Artistic-1.0 License, Version cl8",False
 Artistic-1.0-cl8,Artistic-1.0 License cl8,False
-Artistic-1.0-cl8,"Artistic, Version 1.0",False
-Artistic-1.0-cl8,Artistic-1,False
+Artistic-1.0-cl8,scancode:artistic-1.0-cl8,False
+Artistic-1.0-cl8,osi:Artistic-1.0,False
 Aladdin,Aladdin Free Public License,True
 Aladdin,Aladdin Free Public License 8.0,True
-Aladdin,scancode:afpl-8.0,True
 Aladdin,scancode://afpl-8.0,True
 Aladdin,Aladdin FPL v8,True
 Aladdin,Aladdin License,False
 Aladdin,ALADDIN LICENSE,False
 Aladdin,ALADDIN License,False
+Aladdin,scancode:afpl-8.0,False
 LGPL-3.0-or-later,LGPL-3.0-only,True
 LGPL-3.0-or-later,LGPL-3.0,False
 LGPL-3.0-or-later,LGPL-3,False
@@ -3568,10 +3323,7 @@ LGPL-3.0-or-later,GNU Lesser General Public License v3.0 or later,False
 LGPL-3.0-or-later,lgpl-3.0,False
 LGPL-3.0-or-later,GNU LGPLv3,False
 LGPL-3.0-or-later,GNU Lesser General Public License 3.0 (or any later version),False
-LGPL-3.0-or-later,scancode:lgpl-3.0-plus,False
-LGPL-3.0-or-later,osi:LGPL-3.0,False
 LGPL-3.0-or-later,GNU Lesser General Public License 3.0,False
-LGPL-3.0-or-later,scancode:lgpl-3.0,False
 LGPL-3.0-or-later,"GNU Lesser General Public License, Version 3.0",False
 LGPL-3.0-or-later,License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3),False
 LGPL-3.0-or-later,License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL),False
@@ -3660,6 +3412,8 @@ LGPL-3.0-or-later,"GNU Lesser General Public License as published by the Free So
 LGPL-3.0-or-later,"GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version",False
 LGPL-3.0-or-later,"GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",False
 LGPL-3.0-or-later,GNU Lesser General Public License (LGPL) version 3 or later,False
+LGPL-3.0-or-later,scancode:lgpl-3.0-plus,False
+LGPL-3.0-or-later,osi:LGPL-3.0,False
 LGPL-3.0-or-later,GNU General Lesser Public License (LGPL) version 3.0,False
 LGPL-3.0-or-later,GNU General Lesser Public License (LGPL) version 3.00,False
 LGPL-3.0-or-later,"GNU General Lesser Public License, Version 3.0",False
@@ -3714,17 +3468,17 @@ LGPL-3.0-or-later,http://www.gnu.org/licenses/lgpl-3.0.txt,False
 LGPL-3.0-or-later,"FSF Lesser GNU Public License, Version 3",False
 LGPL-3.0-or-later,Lesser GPL 3.0,False
 LGPL-3.0-or-later,"The GNU Lesser General Public License, Versions 2.1 and 3",False
+LGPL-3.0-or-later,scancode:lgpl-3.0,False
 SNIA,SNIA Public License 1.1,True
 SNIA,SNIA License,True
-SNIA,scancode:snia,True
 SNIA,scancode://snia,True
 SNIA,SNIA LICENSE,False
 SNIA,STORAGE NETWORKING INDUSTRY ASSOCIATION,False
+SNIA,scancode:snia,False
 CC-BY-NC-SA-3.0-IGO,Creative Commons Attribution Non Commercial Share Alike 3.0 IGO,True
 CC-BY-NC-SA-3.0-IGO,scancode://cc-by-nc-sa-3.0-igo,True
 SSPL-1.0,Server Side Public License Version 1,True
 SSPL-1.0,Server Side Public License 1.0,True
-SSPL-1.0,scancode:mongodb-sspl-1.0,True
 SSPL-1.0,"Server Side Public License, v 1",True
 SSPL-1.0,scancode://mongodb-sspl-1.0,True
 SSPL-1.0,SSPL 1.0,True
@@ -3733,11 +3487,10 @@ SSPL-1.0,SSPL 1,False
 SSPL-1.0,"Server Side Public License, Version 1.0",False
 SSPL-1.0,Server Side Public License v1.0,False
 SSPL-1.0,Server Side Public License VERSION 1,False
+SSPL-1.0,scancode:mongodb-sspl-1.0,False
 RPSL-1.0,RealNetworks Public Source License v1.0,True
 RPSL-1.0,RealNetworks Public Source License V1.0,True
 RPSL-1.0,RealNetworks Public Source License 1.0,True
-RPSL-1.0,scancode:rpsl-1.0,True
-RPSL-1.0,osi:RPSL-1.0,True
 RPSL-1.0,"RealNetworks Public Source License, Version 1.0",True
 RPSL-1.0,scancode://rpsl-1.0,True
 RPSL-1.0,RealNetworks Public Source License,False
@@ -3746,12 +3499,14 @@ RPSL-1.0,RPSL,False
 RPSL-1.0,"RPSL, Version 1.0",False
 RPSL-1.0,"RPSL, 1.0",False
 RPSL-1.0,RealNetworks Public Source License Version 1.0,False
+RPSL-1.0,scancode:rpsl-1.0,False
+RPSL-1.0,osi:RPSL-1.0,False
 MIT-open-group,MIT Open Group Variant,True
 MIT-open-group,MIT Open Group,True
-MIT-open-group,scancode:mit-open-group,True
 MIT-open-group,MIT Open Group variant,True
 MIT-open-group,scancode://x11-opengroup,True
 MIT-open-group,X11-Style (Open Group),True
+MIT-open-group,scancode:mit-open-group,False
 BSD-3-Clause-LBNL,Lawrence Berkeley National Labs BSD variant license,True
 BSD-3-Clause-LBNL,BSD 3-Clause License (Lawrence Berkeley National Labs),True
 BSD-3-Clause-LBNL,scancode://lbnl-bsd,True
@@ -3760,18 +3515,13 @@ BSD-3-Clause-LBNL,LBNL BSD,False
 CECILL-B,CeCILL-B Free Software License Agreement,True
 CECILL-B,CeCILL-B License,True
 CECILL-B,CECILL B License,True
-CECILL-B,scancode:cecill-b,True
-CECILL-B,CeCILL-B Free Software License (FRA),True
-CECILL-B,CeCILL-B-FSL,True
 CECILL-B,scancode://cecill-b,True
 CECILL-B,CECILL B,False
 CECILL-B,CeCILL-B FREE SOFTWARE LICENSE AGREEMENT Notice,False
 CECILL-B,http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html,False
 CECILL-B,https://spdx.org/licenses/cecill-b,False
-CECILL-B,`CECILL-B` - [CEA CNRS INRIA Logiciel Libre](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt),False
+CECILL-B,scancode:cecill-b,False
 Frameworx-1.0,Frameworx License 1.0,True
-Frameworx-1.0,scancode:frameworx-1.0,True
-Frameworx-1.0,osi:Frameworx-1.0,True
 Frameworx-1.0,"Frameworx License, Version 1.0",True
 Frameworx-1.0,Frameworx Open License 1.0,True
 Frameworx-1.0,scancode://frameworx-1.0,True
@@ -3779,8 +3529,9 @@ Frameworx-1.0,Frameworx 1.0,True
 Frameworx-1.0,"Frameworx, Version 1.0",False
 Frameworx-1.0,"Frameworx License, 1.0",False
 Frameworx-1.0,THE FRAMEWORX OPEN LICENSE 1.0,False
+Frameworx-1.0,scancode:frameworx-1.0,False
+Frameworx-1.0,osi:Frameworx-1.0,False
 RHeCos-1.1,RHeCos License 1.1,True
-RHeCos-1.1,scancode:ecosrh-1.1,True
 RHeCos-1.1,Red Hat eCos Public License v1.1,True
 RHeCos-1.1,scancode://ecosrh-1.1,True
 RHeCos-1.1,Red Hat eCos Public License 1.1,True
@@ -3788,25 +3539,24 @@ RHeCos-1.1,"RHeCos, Version 1.1",False
 RHeCos-1.1,RHeCos 1.1,False
 RHeCos-1.1,"RHeCos License, Version 1.1",False
 RHeCos-1.1,"RHeCos License, 1.1",False
+RHeCos-1.1,scancode:ecosrh-1.1,False
 LAL-1.2,LAL 1.2,True
 LAL-1.2,Licence Art Libre 1.2,True
 LAL-1.2,Licence Art Libre (Free Art License),False
 LAL-1.2,"LAL, Version 1.2",False
 LAL-1.2,"LAL, 1.2",False
 OML,Open Market License,True
-OML,scancode:fastcgi-devkit,True
 OML,scancode://fastcgi-devkit,True
 OML,FastCGI DevKit,True
 OML,OM License,False
+OML,scancode:fastcgi-devkit,False
 UCL-1.0,Upstream Compatibility License 1.0,True
-UCL-1.0,scancode:ucl-1.0,True
-UCL-1.0,osi:UCL-1.0,True
 UCL-1.0,Upstream Compatibility License v1.0,True
 UCL-1.0,scancode://ucl-1.0,True
 UCL-1.0,Upstream Compatibility License v. 1.0,False
+UCL-1.0,scancode:ucl-1.0,False
+UCL-1.0,osi:UCL-1.0,False
 APL-1.0,Adaptice Public License 1.0,True
-APL-1.0,scancode:adapt-1.0,True
-APL-1.0,osi:APL-1.0,True
 APL-1.0,Adaptive Public License 1.0,True
 APL-1.0,apl1.0,True
 APL-1.0,"Adaptive Public License, Version 1.0",True
@@ -3816,31 +3566,32 @@ APL-1.0,"APL, Version 1.0",False
 APL-1.0,ADAPTIVE PUBLIC LICENSE Version 1.0,False
 APL-1.0,ADAPTIVE PUBLIC LICENSE 1.0,False
 APL-1.0,Adaptive Public License Version 1.0,False
+APL-1.0,scancode:adapt-1.0,False
+APL-1.0,osi:APL-1.0,False
 OLDAP-2.2,Open LDAP Public License v2.2,True
 OLDAP-2.2,OpenLDAP Public License 2.2,True
-OLDAP-2.2,scancode:openldap-2.2,True
 OLDAP-2.2,scancode://openldap-2.2,True
 OLDAP-2.2,"OLDAP, Version 2.2",False
 OLDAP-2.2,"OLDAP, 2.2",False
 OLDAP-2.2,"OLDAP License, Version 2.2",False
 OLDAP-2.2,"OLDAP License, 2.2",False
 OLDAP-2.2,"OpenLDAP Public License Version 2.2, 1 March 2000",False
+OLDAP-2.2,scancode:openldap-2.2,False
 CERN-OHL-W-2.0,CERN Open Hardware Licence Weakly Reciprocal 2.0,True
-CERN-OHL-W-2.0,scancode:cern-ohl-w-2.0,True
 CERN-OHL-W-2.0,CERN Open Hardware Licence Version 2 - Weakly Reciprocal,True
 CERN-OHL-W-2.0,scancode://cern-ohl-w-2.0,True
+CERN-OHL-W-2.0,scancode:cern-ohl-w-2.0,False
 DRL-1.0,Detection Rule License 1.0,True
-DRL-1.0,scancode:drl-1.0,True
 DRL-1.0,scancode://drl-1.0,True
+DRL-1.0,scancode:drl-1.0,False
 CC-BY-ND-1.0,Creative Commons BY-ND 1.0 (generic),True
-CC-BY-ND-1.0,scancode:cc-by-nd-1.0,True
 CC-BY-ND-1.0,Creative Commons Attribution No Derivatives 1.0 Generic,True
 CC-BY-ND-1.0,scancode://cc-by-nd-1.0,True
 CC-BY-ND-1.0,Creative Commons Attribution-NoDerivs 1.0,False
+CC-BY-ND-1.0,scancode:cc-by-nd-1.0,False
 GFDL-1.3-no-invariants-or-later,GNU Free Documentation License v1.3 or later - no invariants,True
 GFDL-1.3-no-invariants-or-later,scancode://gfdl-1.3-no-invariants-or-later,True
 CECILL-1.1,CeCILL Free Software License Agreement 1.1,True
-CECILL-1.1,scancode:cecill-1.1,True
 CECILL-1.1,CeCILL Free Software License Agreement v1.1,True
 CECILL-1.1,scancode://cecill-1.1,True
 CECILL-1.1,CeCILL 1.1 English,True
@@ -3848,54 +3599,54 @@ CECILL-1.1,FREE SOFTWARE LICENSING AGREEMENT CeCILL Notice,False
 CECILL-1.1,https://spdx.org/licenses/cecill-1.1,False
 CECILL-1.1,http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt,False
 CECILL-1.1,http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html,False
+CECILL-1.1,scancode:cecill-1.1,False
 Noweb,Noweb License,True
-Noweb,scancode:noweb,True
 Noweb,scancode://noweb,True
 Noweb,NOWEB LICENSE,False
 Noweb,NOWEB License,False
 Noweb,Noweb is copyright,False
 Noweb,Noweb is protected by copyright,False
+Noweb,scancode:noweb,False
 MakeIndex,MakeIndex License,True
-MakeIndex,scancode:makeindex,True
 MakeIndex,scancode://makeindex,True
 MakeIndex,MakeIndex Distribution Notice,True
 MakeIndex,MAKEINDEX LICENSE,False
 MakeIndex,MAKEINDEX License,False
+MakeIndex,scancode:makeindex,False
 MS-RL,Microsoft Reciprocal License,True
-MS-RL,scancode:ms-rl,True
-MS-RL,osi:MS-RL,True
 MS-RL,Microsoft Reciprocal License (MS-RL),True
 MS-RL,scancode://ms-rl,True
 MS-RL,"MS, Version RL",False
 MS-RL,MS RL,False
 MS-RL,"MS License, Version RL",False
 MS-RL,"MS License, RL",False
+MS-RL,scancode:ms-rl,False
+MS-RL,osi:MS-RL,False
 TORQUE-1.1,TORQUE v2.5+ Software License v1.1,True
 TORQUE-1.1,TORQUE License 1.1,True
-TORQUE-1.1,scancode:torque-1.1,True
 TORQUE-1.1,scancode://torque-1.1,True
 TORQUE-1.1,TORQUE 1.1,True
 TORQUE-1.1,TORQUEv1.1,False
 TORQUE-1.1,"TORQUE, Version 1.1",False
 TORQUE-1.1,"TORQUE License, Version 1.1",False
 TORQUE-1.1,"TORQUE License, 1.1",False
+TORQUE-1.1,scancode:torque-1.1,False
 AFL-3.0,Academic Free License v3.0,True
 AFL-3.0,Academic Free License 3.0,True
-AFL-3.0,scancode:afl-3.0,True
-AFL-3.0,osi:AFL-3.0,True
-AFL-3.0,osi:afl-3.0,True
 AFL-3.0,"Academic Free License, Version 3.0",True
 AFL-3.0,License :: OSI Approved :: Academic Free License (AFL),True
 AFL-3.0,scancode://afl-3.0,True
 AFL-3.0,AFL 3.0,True
 AFL-3.0,"AFL, Version 3.0",False
 AFL-3.0,"AFL, 3.0",False
+AFL-3.0,scancode:afl-3.0,False
+AFL-3.0,osi:AFL-3.0,False
+AFL-3.0,osi:afl-3.0,False
 GFDL-1.1-invariants-only,GNU Free Documentation License 1.1 (invariants),True
 GFDL-1.1-invariants-only,GNU Free Documentation License v1.1 only - invariants,True
 GFDL-1.1-invariants-only,scancode://gfdl-1.1-invariants-only,True
 FTL,Freetype Project License,True
 FTL,FreeType Project License,True
-FTL,scancode:freetype,True
 FTL,FreeType Project LICENSE,True
 FTL,scancode://freetype,True
 FTL,and may include FreeType,False
@@ -3905,9 +3656,9 @@ FTL,http://www.freetype.org/FTL.TXT,False
 FTL,http://www.freetype.org/license.html,False
 FTL,https://spdx.org/licenses/ftl,False
 FTL,FreeType License,False
+FTL,scancode:freetype,False
 AFL-2.0,Academic Free License v2.0,True
 AFL-2.0,Academic Free License 2.0,True
-AFL-2.0,scancode:afl-2.0,True
 AFL-2.0,scancode://afl-2.0,True
 AFL-2.0,AFL 2.0,True
 AFL-2.0,"AFL, Version 2.0",False
@@ -3916,29 +3667,30 @@ AFL-2.0,Academic Free License version 2.0,False
 AFL-2.0,Academic Free License Version 2.0,False
 AFL-2.0,ACADEMIC FREE LICENSE Version 2.0,False
 AFL-2.0,Academic Free License v. 2.0,False
+AFL-2.0,scancode:afl-2.0,False
 LPPL-1.3a,LPPL 1.3a,True
-LPPL-1.3a,scancode:lppl-1.3a,True
 LPPL-1.3a,LaTeX Project Public License v1.3a,True
 LPPL-1.3a,scancode://lppl-1.3a,True
 LPPL-1.3a,"LPPL, Version 1.3a",False
+LPPL-1.3a,scancode:lppl-1.3a,False
 OLDAP-1.2,Open LDAP Public License v1.2,True
 OLDAP-1.2,OpenLDAP Public License 1.2,True
-OLDAP-1.2,scancode:openldap-1.2,True
 OLDAP-1.2,scancode://openldap-1.2,True
 OLDAP-1.2,"OLDAP, Version 1.2",False
 OLDAP-1.2,"OLDAP, 1.2",False
 OLDAP-1.2,"OLDAP License, Version 1.2",False
 OLDAP-1.2,"OLDAP License, 1.2",False
 OLDAP-1.2,"The OpenLDAP Public License Version 1.2, 1 September 1998",False
+OLDAP-1.2,scancode:openldap-1.2,False
 ODbL-1.0,ODbL,True
 ODbL-1.0,ODbL 1.0,True
-ODbL-1.0,scancode:odbl-1.0,True
 ODbL-1.0,Open Data Commons Open Database License 1.0,True
 ODbL-1.0,Open Data Commons Open Database License v1.0,True
 ODbL-1.0,scancode://odbl-1.0,True
 ODbL-1.0,"ODbL, Version 1.0",False
 ODbL-1.0,"ODbL, 1.0",False
 ODbL-1.0,ODC Open Database License,False
+ODbL-1.0,scancode:odbl-1.0,False
 LiLiQ-Rplus-1.1,LiLiQ-R+,True
 LiLiQ-Rplus-1.1,LiLiQ Rplus License 1.1,True
 LiLiQ-Rplus-1.1,"Licence Libre du Québec – Réciprocité forte, Version 1.1",True
@@ -3955,23 +3707,21 @@ LiLiQ-Rplus-1.1,https://www.forge.gouv.qc.ca/participez/licence-logicielle/licen
 LiLiQ-Rplus-1.1,http://opensource.org/licenses/LiLiQ-Rplus-1.1 [no longer live],False
 LiLiQ-Rplus-1.1,https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-in-english/quebec-free-and-open-source-licence-strong-reciprocity-liliq-r-v1-1/,False
 Qhull,Qhull License,True
-Qhull,scancode:qhull,True
 Qhull,scancode://qhull,True
+Qhull,scancode:qhull,False
 OCCT-PL,Open CASCADE Technology Public License,True
 OCCT-PL,OCCT PL,True
-OCCT-PL,scancode:occt-pl,True
 OCCT-PL,scancode://occt-pl,True
+OCCT-PL,scancode:occt-pl,False
 NTP,NTP License,True
-NTP,scancode:network-time-protocol,True
-NTP,scancode:ntpl,True
-NTP,osi:NTP,True
 NTP,NTP License (NTP),True
 NTP,scancode://mit-old-style-no-advert,True
 NTP,MIT Old Style no advertising,True
 NTP,scancode://ntpl,True
+NTP,scancode:network-time-protocol,False
+NTP,scancode:ntpl,False
+NTP,osi:NTP,False
 EUPL-1.1,European Union Public License 1.1,True
-EUPL-1.1,scancode:eupl-1.1,True
-EUPL-1.1,osi:EUPL-1.1,True
 EUPL-1.1,"European Union Public License, Version 1.1",True
 EUPL-1.1,License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1),True
 EUPL-1.1,"European Union Public Licence, v.1.1",True
@@ -3986,15 +3736,15 @@ EUPL-1.1,European Union Public License v.1.1,False
 EUPL-1.1,European Union Public License (EUPL) version 1.1,False
 EUPL-1.1,European Union Public License v1.1,False
 EUPL-1.1,European Union Public License version 1.1,False
+EUPL-1.1,scancode:eupl-1.1,False
+EUPL-1.1,osi:EUPL-1.1,False
 CPOL-1.02,Code Project Open License 1.02,True
-CPOL-1.02,scancode:cpol-1.02,True
 CPOL-1.02,scancode://cpol-1.02,True
 CPOL-1.02,CPOL 1.02,True
 CPOL-1.02,Code Project Open License (CPOL) 1.02,False
 CPOL-1.02,"CPOL, Version 1.02",False
+CPOL-1.02,scancode:cpol-1.02,False
 OCLC-2.0,OCLC License 2.0,True
-OCLC-2.0,scancode:oclc-2.0,True
-OCLC-2.0,osi:OCLC-2.0,True
 OCLC-2.0,OCLC Research Public License 2.0,True
 OCLC-2.0,oclc2,True
 OCLC-2.0,"The OCLC Research Public License, Version 2.0",True
@@ -4002,38 +3752,39 @@ OCLC-2.0,scancode://oclc-2.0,True
 OCLC-2.0,"OCLC, Version 2.0",False
 OCLC-2.0,OCLC 2.0,False
 OCLC-2.0,"OCLC License, Version 2.0",False
+OCLC-2.0,scancode:oclc-2.0,False
+OCLC-2.0,osi:OCLC-2.0,False
 OLDAP-2.1,Open LDAP Public License v2.1,True
 OLDAP-2.1,OpenLDAP Public License 2.1,True
-OLDAP-2.1,scancode:openldap-2.1,True
 OLDAP-2.1,scancode://openldap-2.1,True
 OLDAP-2.1,"OLDAP, Version 2.1",False
 OLDAP-2.1,"OLDAP, 2.1",False
 OLDAP-2.1,"OLDAP License, Version 2.1",False
 OLDAP-2.1,"OLDAP License, 2.1",False
 OLDAP-2.1,OpenLDAP Public License Version 2.1,False
+OLDAP-2.1,scancode:openldap-2.1,False
 Intel-ACPI,Intel ACPI Software License Agreement,True
 Intel-ACPI,Intel ACPI License,True
-Intel-ACPI,scancode:intel-acpi,True
 Intel-ACPI,scancode://intel-acpi,True
 Intel-ACPI,Intel ACPI SLA,True
 Intel-ACPI,Intel ACPI,False
 Intel-ACPI,INTEL ACPI,False
 Intel-ACPI,ACPI - Software License Agreement,False
+Intel-ACPI,scancode:intel-acpi,False
 OFL-1.0-RFN,SIL Open Font License 1.0 with Reserved Font Name,True
 OFL-1.0-RFN,scancode://ofl-1.0-rfn,True
 OFL-1.0-RFN,OFL 1.0 Reserved Font Name,True
 CC0-1.0,Creative Commons Zero v1.0 Universal,True
 CC0-1.0,CC0 Universal 1.0,True
-CC0-1.0,scancode:cc0-1.0,True
 CC0-1.0,CC0 1.0,True
 CC0-1.0,Creative Commons CC0 1.0 Universal,True
 CC0-1.0,scancode://cc0-1.0,True
 CC0-1.0,Creative Commons Zero 1.0,True
 CC0-1.0,Creative Commons CC0 1.0 Universal License,False
+CC0-1.0,scancode:cc0-1.0,False
 LGPL-2.0-or-later,GNU Library General Public License v2 or later,True
 LGPL-2.0-or-later,LGPL-2.0+,True
 LGPL-2.0-or-later,GNU Library General Public License 2.0 (or any later version),True
-LGPL-2.0-or-later,scancode:lgpl-2.0-plus,True
 LGPL-2.0-or-later,scancode://lgpl-2.0-plus,True
 LGPL-2.0-or-later,LGPL 2.0 or later,True
 LGPL-2.0-or-later,GNU Library General Public License,False
@@ -4065,8 +3816,8 @@ LGPL-2.0-or-later,GNU Lesser General Public License >= 2.0,False
 LGPL-2.0-or-later,"GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version",False
 LGPL-2.0-or-later,"GNU Library General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version",False
 LGPL-2.0-or-later,"GNU Library General Public License as published by the Free Software Foundation; either version 2, or (at your option) any later version",False
+LGPL-2.0-or-later,scancode:lgpl-2.0-plus,False
 SGI-B-1.1,SGI B License 1.1,True
-SGI-B-1.1,scancode:sgi-freeb-1.1,True
 SGI-B-1.1,SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000]),True
 SGI-B-1.1,SGI Free Software License B v1.1,True
 SGI-B-1.1,scancode://sgi-freeb-1.1,True
@@ -4081,20 +3832,21 @@ SGI-B-1.1,"SGI-B License, 1.1",False
 SGI-B-1.1,SGI FREE SOFTWARE LICENSE B (Version 1.1 02/22/2000),False
 SGI-B-1.1,http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc,False
 SGI-B-1.1,https://spdx.org/licenses/sgi-b-1.1,False
+SGI-B-1.1,scancode:sgi-freeb-1.1,False
 CC-BY-NC-ND-3.0,Creative Commons BY-NC-ND 3.0 (unported),True
-CC-BY-NC-ND-3.0,scancode:cc-by-nc-nd-3.0,True
 CC-BY-NC-ND-3.0,Creative Commons Attribution-NoDerivs 3.0 Unported,False
 CC-BY-NC-ND-3.0,Creative Comnons Attribution-NonCommercial-NoDerivs 3.0 Unported,True
 CC-BY-NC-ND-3.0,Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported,True
 CC-BY-NC-ND-3.0,scancode://cc-by-nc-nd-3.0,True
 CC-BY-NC-ND-3.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-ND-3.0,Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported,False
+CC-BY-NC-ND-3.0,scancode:cc-by-nc-nd-3.0,False
 etalab-2.0,Etalab Open License 2.0,True
-etalab-2.0,scancode:etalab-2.0,True
 etalab-2.0,scancode://etalab-2.0,True
 etalab-2.0,See https://www.etalab.gouv.fr/licence-ouverte-open-licence,False
 etalab-2.0,Licence Ouverte 2.0.,False
 etalab-2.0,OPEN LICENCE 2.0,False
+etalab-2.0,scancode:etalab-2.0,False
 CC-BY-NC-SA-2.0-FR,Creative Commons Attribution-NonCommercial-ShareAlike 2.0 France,True
 GPL-3.0-only,GPL-3.0,False
 GPL-3.0-only,GPL3.0,False
@@ -4111,10 +3863,7 @@ GPL-3.0-only,GNU General Public License v3.0 or later,False
 GPL-3.0-only,gpl-3.0,False
 GPL-3.0-only,GNU GPLv3,False
 GPL-3.0-only,GNU General Public License 3.0 (or any later version),False
-GPL-3.0-only,scancode:gpl-3.0-plus,False
-GPL-3.0-only,osi:GPL-3.0,False
 GPL-3.0-only,GNU General Public License 3.0,False
-GPL-3.0-only,scancode:gpl-3.0,False
 GPL-3.0-only,"GNU General Public License, Version 3.0",False
 GPL-3.0-only,License :: OSI Approved :: GNU General Public License (GPL),False
 GPL-3.0-only,License :: OSI Approved :: GNU General Public License v3 (GPLv3),False
@@ -4161,6 +3910,8 @@ GPL-3.0-only,GPL-3.0-or License later,False
 GPL-3.0-only,GPL version 3 or later,False
 GPL-3.0-only,GPL version 3.0 or later,False
 GPL-3.0-only,"GNU General Public License (GNU GPL), version 3 or later",False
+GPL-3.0-only,scancode:gpl-3.0-plus,False
+GPL-3.0-only,osi:GPL-3.0,False
 GPL-3.0-only,GNU General Public License (GPLV3+),False
 GPL-3.0-only,"GNU General Public License, Versions 2 and 3",False
 GPL-3.0-only,GNU GENERAL PUBLIC LICENSE - Version 3,False
@@ -4209,9 +3960,9 @@ GPL-3.0-only,"General public licence, v 3",False
 GPL-3.0-only,gpl_v3,False
 GPL-3.0-only,GPL V3,False
 GPL-3.0-only,"GNU General Public License"" .SS ""Version 3",False
+GPL-3.0-only,scancode:gpl-3.0,False
 Zend-2.0,Zend License v2.0,True
 Zend-2.0,Zend License 2.0,True
-Zend-2.0,scancode:zend-2.0,True
 Zend-2.0,"Zend Engine License, Version 2.00",True
 Zend-2.0, Zend-2.0,True
 Zend-2.0,scancode://zend-2.0,True
@@ -4221,10 +3972,9 @@ Zend-2.0,"Zend, Version 2.0",False
 Zend-2.0,Zend 2.0,False
 Zend-2.0,"Zend License, Version 2.0",False
 Zend-2.0,"The Zend Engine License, version 2.00",False
+Zend-2.0,scancode:zend-2.0,False
 MirOS,MirOS License,True
 MirOS,MirOS Licence,True
-MirOS,scancode:mir-os,True
-MirOS,osi:MirOS,True
 MirOS,The MirOS Licence (MirOS),True
 MirOS,The MirOS Licence,True
 MirOS,scancode://mir-os,True
@@ -4232,9 +3982,10 @@ MirOS,http://opensource.org/licenses/miros.html,False
 MirOS,https://www.mirbsd.org/MirOS-Licence,False
 MirOS,http://www.opensource.org/licenses/miros,False
 MirOS,https://www.opensource.org/licenses/miros,False
+MirOS,scancode:mir-os,False
+MirOS,osi:MirOS,False
 BSD-3-Clause-No-Nuclear-License-2014,BSD 3-Clause No Nuclear License 2014,True
 BSD-3-Clause-No-Nuclear-License-2014,BSD 3-Clause License (no-nuclear use acknowledgement 2014),True
-BSD-3-Clause-No-Nuclear-License-2014,scancode:oracle-bsd-no-nuclear,True
 BSD-3-Clause-No-Nuclear-License-2014,scancode://oracle-bsd-no-nuclear,True
 BSD-3-Clause-No-Nuclear-License-2014,Oracle BSD-Style with Nuclear Restrictions,True
 BSD-3-Clause-No-Nuclear-License-2014,"BSD 3 Clause No Nuclear License, Version 2014",False
@@ -4245,8 +3996,8 @@ BSD-3-Clause-No-Nuclear-License-2014,"BSD 3 Clause No Nuclear License License, V
 BSD-3-Clause-No-Nuclear-License-2014,"BSD 3 Clause No Nuclear License License, 2014",False
 BSD-3-Clause-No-Nuclear-License-2014,"BSD-3-Clause-No-Nuclear-License License, Version 2014",False
 BSD-3-Clause-No-Nuclear-License-2014,BSD-3-Clause-No-Nuclear-License License 2014,False
+BSD-3-Clause-No-Nuclear-License-2014,scancode:oracle-bsd-no-nuclear,False
 BitTorrent-1.0,BitTorrent License 1.0,True
-BitTorrent-1.0,scancode:bittorrent-1.0,True
 BitTorrent-1.0,BitTorrent Open Source License v1.0,True
 BitTorrent-1.0,scancode://bittorrent-1.0,True
 BitTorrent-1.0,BitTorrent 1.0,True
@@ -4255,18 +4006,17 @@ BitTorrent-1.0,"BitTorrent, 1.0",False
 BitTorrent-1.0,"BitTorrent License, Version 1.0",False
 BitTorrent-1.0,"BitTorrent License, 1.0",False
 BitTorrent-1.0,BitTorrent Open Source License Version 1.0,False
+BitTorrent-1.0,scancode:bittorrent-1.0,False
 CC-BY-ND-3.0,Creative Commons BY-ND 3.0 (unported),True
-CC-BY-ND-3.0,scancode:cc-by-nd-3.0,True
 CC-BY-ND-3.0,Creative Commons Attribution No Derivatives 3.0 Unported,True
 CC-BY-ND-3.0,scancode://cc-by-nd-3.0,True
 CC-BY-ND-3.0,Creative Commons Attribution-NoDerivs 3.0 Unported,False
+CC-BY-ND-3.0,scancode:cc-by-nd-3.0,False
 MIT,MIT license (also X11),True
 MIT,The MIT License,True
 MIT,MIT License,True
 MIT,Expat License,True
 MIT,Expat,True
-MIT,scancode:mit,True
-MIT,osi:MIT,True
 MIT,mit-license,True
 MIT,MIT/Expat License,True
 MIT,License :: OSI Approved :: MIT License,True
@@ -4291,30 +4041,30 @@ MIT,'license': 'MIT',False
 MIT,"""License"": ""MIT""",False
 MIT,https://angular.io/license,False
 MIT,MIT LICENSE,False
+MIT,scancode:mit,False
+MIT,osi:MIT,False
 NIST-PD-fallback,NIST Public Domain Notice (with license fallback),True
-NIST-PD-fallback,scancode:nist-pd-fallback,True
 NIST-PD-fallback,NIST Public Domain Notice with license fallback,True
 NIST-PD-fallback,scancode://nist-pd-fallback,True
 NIST-PD-fallback,NIST Public Domain Notice with fallback,True
+NIST-PD-fallback,scancode:nist-pd-fallback,False
 CC-BY-NC-3.0-DE,Creative Commons Attribution Non Commercial 3.0 Germany,True
 FSFULLR,FSF Unlimited License (with License Retention),True
 FSFULLR,FSF Unlimited License (with retention),True
-FSFULLR,scancode:fsf-unlimited,True
 FSFULLR,scancode://fsf-unlimited,True
 FSFULLR,FSF-Unlimited,True
 FSFULLR,This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it,False
+FSFULLR,scancode:fsf-unlimited,False
 CC-BY-NC-1.0,Creative Commons BY-NC 1.0 (generic),True
-CC-BY-NC-1.0,scancode:cc-by-nc-1.0,True
 CC-BY-NC-1.0,Creative Comnons Attribution-NonCommercial 1.0 Generic,True
 CC-BY-NC-1.0,Creative Commons Attribution Non Commercial 1.0 Generic,True
 CC-BY-NC-1.0,scancode://cc-by-nc-1.0,True
 CC-BY-NC-1.0,Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa),False
 CC-BY-NC-1.0,Creative Commons Attribution-NonCommercial 1.0,False
+CC-BY-NC-1.0,scancode:cc-by-nc-1.0,False
 Python-2.0,PSF-2.0,True
 Python-2.0,Python Software Foundation License 2.0,False
 Python-2.0,Python License 2.0,False
-Python-2.0,scancode:python,False
-Python-2.0,osi:Python-2.0,False
 Python-2.0,"Python License, Version 2.0",False
 Python-2.0,License :: OSI Approved :: Python Software Foundation License,False
 Python-2.0,PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2,False
@@ -4323,6 +4073,8 @@ Python-2.0,scancode://python,False
 Python-2.0,Python Software Foundation License 2,False
 Python-2.0,Python Software Foundation License,False
 Python-2.0,PSF-2,False
+Python-2.0,scancode:python,False
+Python-2.0,osi:Python-2.0,False
 ANTLR-PD-fallback,ANTLR Software Rights Notice with license fallback,True
 ANTLR-PD-fallback,scancode://antlr-pd-fallback,True
 ANTLR-PD-fallback,ANTLR-PD with fallback,True
@@ -4332,31 +4084,29 @@ MulanPSL-1.0,scancode://mulanpsl-1.0,True
 MulanPSL-1.0,Mulan PSL v1,True
 MulanPSL-1.0,"木兰宽松许可证, 第1版 木兰宽松许可证， 第1版",False
 CC-BY-4.0,Creative Commons BY 4.0,True
-CC-BY-4.0,scancode:cc-by-4.0,True
 CC-BY-4.0,Creative Commons Attribution 4.0,True
 CC-BY-4.0,Creative Commons Attribution 4.0 International,True
 CC-BY-4.0,scancode://cc-by-4.0,True
 CC-BY-4.0,CC-BY 4.0,True
 CC-BY-4.0,Creative Commons Attribution unported (CC-BY) v4.0,False
+CC-BY-4.0,scancode:cc-by-4.0,False
 Rdisc,Rdisc License,True
-Rdisc,scancode:rdisc,True
 Rdisc,scancode://rdisc,True
 Rdisc,RDISC LICENSE,False
 Rdisc,RDISC License,False
+Rdisc,scancode:rdisc,False
 MIT-enna,enna License,True
 MIT-enna,MIT License (with enna advertising),True
-MIT-enna,scancode:enna,True
 MIT-enna,scancode://enna,True
 MIT-enna,MIT,False
 MIT-enna,MIT enna,False
 MIT-enna,MIT ENNA,False
+MIT-enna,scancode:enna,False
 BSD-4-Clause-UC,BSD-4-Clause (University of California-Specific),True
 BSD-4-Clause-UC,BSD 3-Clause License (UC; without 3rd Clause),True
 BSD-4-Clause-UC,scancode://bsd-original-uc,True
 BSD-4-Clause-UC,BSD-Original-UC,True
 MPL-2.0,Mozilla Public License 2.0,True
-MPL-2.0,scancode:mpl-2.0,True
-MPL-2.0,osi:MPL-2.0,True
 MPL-2.0,mozilla2.0,True
 MPL-2.0,"Mozilla Public License, Version 2.0",True
 MPL-2.0,License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0),True
@@ -4373,24 +4123,25 @@ MPL-2.0,Mozilla License Version 2.0,False
 MPL-2.0,Mozilla Public Licence 2.0,False
 MPL-2.0,MPLv2.0,False
 MPL-2.0,MPL-2,False
+MPL-2.0,scancode:mpl-2.0,False
+MPL-2.0,osi:MPL-2.0,False
 YPL-1.0,YPL 1.0,True
-YPL-1.0,scancode:ypl-1.0,True
 YPL-1.0,Yahoo! Public License v1.0,True
 YPL-1.0,scancode://ypl-1.0,True
 YPL-1.0,"YPL, Version 1.0",False
 YPL-1.0,"Yahoo! Public License, Version 1.0",False
+YPL-1.0,scancode:ypl-1.0,False
 ZPL-2.0,Zope Public License 2.0,True
-ZPL-2.0,scancode:zpl-2.0,True
-ZPL-2.0,osi:ZPL-2.0,True
 ZPL-2.0,"The Zope Public License, Version 2.0",True
 ZPL-2.0,Zope-2.0,True
 ZPL-2.0,License :: OSI Approved :: Zope Public License,True
 ZPL-2.0,Zope Public License (ZPL) Version 2.0,True
 ZPL-2.0,scancode://zpl-2.0,True
 ZPL-2.0,ZPL 2.0,True
+ZPL-2.0,scancode:zpl-2.0,False
+ZPL-2.0,osi:ZPL-2.0,False
 copyleft-next-0.3.1,copyleft-next 0.3.1,True
 copyleft-next-0.3.1,copyleft next License 0.3.1,True
-copyleft-next-0.3.1,scancode:copyleft-next-0.3.1,True
 copyleft-next-0.3.1,scancode://copyleft-next-0.3.1,True
 copyleft-next-0.3.1,copyleft-next,False
 copyleft-next-0.3.1,"copyleft next, Version 0.3.1",False
@@ -4401,68 +4152,68 @@ copyleft-next-0.3.1,"copyleft next License, Version 0.3.1",False
 copyleft-next-0.3.1,"copyleft next License, 0.3.1",False
 copyleft-next-0.3.1,"copyleft-next License, Version 0.3.1",False
 copyleft-next-0.3.1,copyleft-next License 0.3.1,False
+copyleft-next-0.3.1,scancode:copyleft-next-0.3.1,False
 GFDL-1.3-invariants-or-later,GNU Free Documentation License v1.3 or later - invariants,True
 GFDL-1.3-invariants-or-later,scancode://gfdl-1.3-invariants-or-later,True
 LPL-1.02,Lucent Public License v1.02,True
 LPL-1.02,LPL 1.02,True
-LPL-1.02,scancode:lucent-pl-1.02,True
-LPL-1.02,osi:LPL-1.02,True
 LPL-1.02,Lucent Public License 1.02,True
 LPL-1.02,"Lucent Public License, Version 1.02",True
 LPL-1.02,scancode://lucent-pl-1.02,True
 LPL-1.02,"LPL, Version 1.02",False
 LPL-1.02,Lucent Public License Version 1.02,False
+LPL-1.02,scancode:lucent-pl-1.02,False
+LPL-1.02,osi:LPL-1.02,False
 NLOD-1.0,Norwegian Licence (Open Government Data),True
-NLOD-1.0,scancode:nlod-1.0,True
 NLOD-1.0,Norwegian Licence for Open Government Data (NLOD) 1.0,True
 NLOD-1.0,scancode://nlod-1.0,True
 NLOD-1.0,Norwegian Licence for Open Government Data,False
+NLOD-1.0,scancode:nlod-1.0,False
 MIT-Modern-Variant,MIT License Modern Variant,True
 MIT-Modern-Variant,scancode://mit-modern,True
 MIT-Modern-Variant,MIT Modern Variant,True
 MTLL,Matrix Template Library License,True
-MTLL,scancode:mtll,True
 MTLL,scancode://mtll,True
 MTLL,MTL License,False
 MTLL,MTL LICENSE,False
 MTLL,Software License for MTL,False
+MTLL,scancode:mtll,False
 ECL-1.0,Educational Community License v1.0,True
 ECL-1.0,Educational Community License 1.0,True
-ECL-1.0,scancode:ecl-1.0,True
-ECL-1.0,osi:ECL-1.0,True
 ECL-1.0,"Educational Community License, Version 1.0",True
 ECL-1.0,scancode://ecl-1.0,True
 ECL-1.0,ECL 1.0,True
 ECL-1.0,"ECL, Version 1.0",False
 ECL-1.0,Educational Community License version 1.0,False
+ECL-1.0,scancode:ecl-1.0,False
+ECL-1.0,osi:ECL-1.0,False
 EPICS,EPICS Open License,True
-EPICS,scancode:epics,True
 EPICS,scancode://epics,True
 EPICS,http://www.aps.anl.gov/epics/license/open.php,False
+EPICS,scancode:epics,False
 BSD-3-Clause-Attribution,BSD with attribution,True
 BSD-3-Clause-Attribution,BSD 3-Clause License (attribution),True
-BSD-3-Clause-Attribution,scancode:bsd-ack,True
 BSD-3-Clause-Attribution,scancode://bsd-ack,True
 BSD-3-Clause-Attribution,BSD Acknowledgment License,True
 BSD-3-Clause-Attribution,BSD 3-Clause Attribution,False
+BSD-3-Clause-Attribution,scancode:bsd-ack,False
 GFDL-1.2-invariants-only,GNU Free Documentation License 1.2 (invariants),True
 GFDL-1.2-invariants-only,GNU Free Documentation License v1.2 only - invariants,True
 GFDL-1.2-invariants-only,scancode://gfdl-1.2-invariants-only,True
 AMDPLPA,AMD's plpa_map.c License,True
 AMDPLPA,AMDPLPA License,True
-AMDPLPA,scancode:amdplpa,True
 AMDPLPA,scancode://amdplpa,True
 AMDPLPA,AMD PLPA License,True
 AMDPLPA,AMDPLPA LICENSE,False
+AMDPLPA,scancode:amdplpa,False
 FSFUL,FSF Unlimited License,True
-FSFUL,scancode:fsf-free,True
 FSFUL,scancode://fsf-free,True
 FSFUL,FSF Free Software License,True
+FSFUL,scancode:fsf-free,False
 CC-BY-3.0-AT,Creative Commons BY 3.0 (Austria),True
-CC-BY-3.0-AT,scancode:cc-by-3.0-at,True
 CC-BY-3.0-AT,Creative Commons Attribution 3.0 Austria,True
+CC-BY-3.0-AT,scancode:cc-by-3.0-at,False
 CDLA-Sharing-1.0,Community Data License Agreement Sharing 1.0,True
-CDLA-Sharing-1.0,scancode:cdla-sharing-1.0,True
 CDLA-Sharing-1.0,scancode://cdla-sharing-1.0,True
 CDLA-Sharing-1.0,CDLA Sharing 1.0,True
 CDLA-Sharing-1.0,"CDLA Sharing, Version 1.0",False
@@ -4473,15 +4224,16 @@ CDLA-Sharing-1.0,CDLA Sharing License 1.0,False
 CDLA-Sharing-1.0,"CDLA-Sharing License, Version 1.0",False
 CDLA-Sharing-1.0,CDLA-Sharing License 1.0,False
 CDLA-Sharing-1.0,Community Data License Agreement - Sharing - Version 1.0,False
+CDLA-Sharing-1.0,scancode:cdla-sharing-1.0,False
 OLDAP-2.6,Open LDAP Public License v2.6,True
 OLDAP-2.6,OpenLDAP Public License 2.6,True
-OLDAP-2.6,scancode:openldap-2.6,True
 OLDAP-2.6,scancode://openldap-2.6,True
 OLDAP-2.6,"OLDAP, Version 2.6",False
 OLDAP-2.6,OLDAP 2.6,False
 OLDAP-2.6,"OLDAP License, Version 2.6",False
 OLDAP-2.6,OLDAP License 2.6,False
 OLDAP-2.6,OpenLDAP Public License Version 2.6,False
+OLDAP-2.6,scancode:openldap-2.6,False
 LAL-1.3,LAL 1.3,True
 LAL-1.3,Licence Art Libre 1.3,True
 LAL-1.3,Licence Art Libre (Free Art License),False
@@ -4495,16 +4247,15 @@ OPUBL-1.0,scancode://openpub,True
 OPUBL-1.0,Open Publication,False
 OPUBL-1.0,"Open Publication License, Version 1.0",False
 Bahyph,Bahyph License,True
-Bahyph,scancode:bahyph,True
 Bahyph,scancode://bahyph,True
 Bahyph,BAHYPH LICENSE,False
 Bahyph,BAHYPH License,False
+Bahyph,scancode:bahyph,False
 CC-BY-SA-3.0-AT,Creative Commons BY-SA 3.0 (Austria),True
-CC-BY-SA-3.0-AT,scancode:cc-by-sa-3.0-at,True
 CC-BY-SA-3.0-AT,Creative Commons Attribution Share Alike 3.0 Austria,True
+CC-BY-SA-3.0-AT,scancode:cc-by-sa-3.0-at,False
 AFL-2.1,Academic Free License v2.1,True
 AFL-2.1,Academic Free License 2.1,True
-AFL-2.1,scancode:afl-2.1,True
 AFL-2.1,Academic Free License Version 2.1,True
 AFL-2.1,scancode://afl-2.1,True
 AFL-2.1,AFL 2.1,True
@@ -4513,28 +4264,28 @@ AFL-2.1,"AFL, 2.1",False
 AFL-2.1,Academic Free License version 2.1,False
 AFL-2.1,ACADEMIC FREE LICENSE Version 2.1,False
 AFL-2.1,Academic Free License v. 2.1,False
+AFL-2.1,scancode:afl-2.1,False
 NTP-0,NTP No Attribution,True
 NTP-0,scancode://ntp-0,True
 OSL-2.1,Open Software License 2.1,True
-OSL-2.1,scancode:osl-2.1,True
-OSL-2.1,osi:OSL-2.1,True
 OSL-2.1,"Open Software License, Version 2.1",True
 OSL-2.1,"Open Software License, version 2.1",True
 OSL-2.1,scancode://osl-2.1,True
 OSL-2.1,OSL 2.1,True
 OSL-2.1,Open Software License,False
 OSL-2.1,Open Software Licensev. 2.1,False
+OSL-2.1,scancode:osl-2.1,False
+OSL-2.1,osi:OSL-2.1,False
 NCGL-UK-2.0,Non-Commercial Government Licence,True
-NCGL-UK-2.0,scancode:ncgl-uk-2.0,True
 NCGL-UK-2.0,scancode://ncgl-uk-2.0,True
+NCGL-UK-2.0,scancode:ncgl-uk-2.0,False
 Glulxe,Glulxe License,True
-Glulxe,scancode:glulxe,True
 Glulxe,scancode://glulxe,True
 Glulxe,GLULXE LICENSE,False
 Glulxe,GLULXE License,False
+Glulxe,scancode:glulxe,False
 copyleft-next-0.3.0,copyleft-next 0.3.0,True
 copyleft-next-0.3.0,copyleft next License 0.3.0,True
-copyleft-next-0.3.0,scancode:copyleft-next-0.3.0,True
 copyleft-next-0.3.0,scancode://copyleft-next-0.3.0,True
 copyleft-next-0.3.0,copyleft-next,False
 copyleft-next-0.3.0,"copyleft next, Version 0.3.0",False
@@ -4545,25 +4296,25 @@ copyleft-next-0.3.0,"copyleft next License, Version 0.3.0",False
 copyleft-next-0.3.0,"copyleft next License, 0.3.0",False
 copyleft-next-0.3.0,"copyleft-next License, Version 0.3.0",False
 copyleft-next-0.3.0,copyleft-next License 0.3.0,False
+copyleft-next-0.3.0,scancode:copyleft-next-0.3.0,False
 dvipdfm,dvipdfm License,True
-dvipdfm,scancode:dvipdfm,True
 dvipdfm,scancode://dvipdfm,True
 dvipdfm,DVIPDFM LICENSE,False
 dvipdfm,DVIPDFM License,False
+dvipdfm,scancode:dvipdfm,False
 libtiff,libtiff License,True
 libtiff,scancode://x11-tiff,True
 libtiff,X11-Style (Tiff),True
 GLWTPL,Good Luck With That Public License,True
-GLWTPL,scancode:glwtpl,True
 GLWTPL,scancode://glwtpl,True
 GLWTPL,GOOD LUCK WITH THAT PUBLIC LICENSE,False
+GLWTPL,scancode:glwtpl,False
 CAL-1.0,Cryptographic Autonomy License 1.0,True
-CAL-1.0,scancode:cal-1.0,True
-CAL-1.0,osi:CAL-1.0,True
 CAL-1.0,scancode://cal-1.0,True
 CAL-1.0,Cryptographic Autonomy License,False
+CAL-1.0,scancode:cal-1.0,False
+CAL-1.0,osi:CAL-1.0,False
 Artistic-1.0-Perl,Artistic License 1.0 (Perl),True
-Artistic-1.0-Perl,scancode:artistic-perl-1.0,True
 Artistic-1.0-Perl,scancode://artistic-perl-1.0,True
 Artistic-1.0-Perl,Artistic-Perl-1.0,True
 Artistic-1.0-Perl,Artistic License,False
@@ -4576,20 +4327,21 @@ Artistic-1.0-Perl,"Artistic 1.0 License, Version Perl",False
 Artistic-1.0-Perl,Artistic 1.0 License Perl,False
 Artistic-1.0-Perl,"Artistic-1.0 License, Version Perl",False
 Artistic-1.0-Perl,"Artistic-1.0 License, Perl",False
+Artistic-1.0-Perl,scancode:artistic-perl-1.0,False
 gSOAP-1.3b,gSOAP Public License 1.3b,True
-gSOAP-1.3b,scancode:gsoap-1.3b,True
 gSOAP-1.3b,gSOAP Public License Version 1.3b,True
 gSOAP-1.3b,gSOAP Public License v1.3b,True
 gSOAP-1.3b,scancode://gsoap-1.3b,True
+gSOAP-1.3b,scancode:gsoap-1.3b,False
 OLDAP-2.5,Open LDAP Public License v2.5,True
 OLDAP-2.5,OpenLDAP Public License 2.5,True
-OLDAP-2.5,scancode:openldap-2.5,True
 OLDAP-2.5,scancode://openldap-2.5,True
 OLDAP-2.5,"OLDAP, Version 2.5",False
 OLDAP-2.5,"OLDAP, 2.5",False
 OLDAP-2.5,"OLDAP License, Version 2.5",False
 OLDAP-2.5,OLDAP License 2.5,False
 OLDAP-2.5,OpenLDAP Public License Version 2.5,False
+OLDAP-2.5,scancode:openldap-2.5,False
 Interbase-1.0,Interbase Public License 1.0,True
 Interbase-1.0,"InterBase Public License, Version 1.0",True
 Interbase-1.0,"INTERBASE PUBLIC LICENSE, Version 1.0 by ""Borland Software Corporation""",True
@@ -4601,7 +4353,7 @@ Interbase-1.0,"Interbase License, Version 1.0",False
 Interbase-1.0,"Interbase License, 1.0",False
 Interbase-1.0,INTERBASE PUBLIC LICENSE,False
 MS-PL,Microsoft Public License,True
-MS-PL,scancode:ms-pl,True
-MS-PL,osi:MS-PL,True
 MS-PL,Microsoft Public License (MS-PL),True
 MS-PL,scancode://ms-pl,True
+MS-PL,scancode:ms-pl,False
+MS-PL,osi:MS-PL,False

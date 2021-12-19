@@ -6,8 +6,6 @@
 
 -   `JasPer License 2.0`
 
--   `scancode:jasper-2.0`
-
 -   `JasPer License Version 2.0`
 
 -   `scancode://jasper-2.0`
@@ -185,7 +183,6 @@
             "JasPer-2.0",
             "JasPer License",
             "JasPer License 2.0",
-            "scancode:jasper-2.0",
             "JasPer License Version 2.0",
             "scancode://jasper-2.0",
             "JasPer 2.0"
@@ -198,7 +195,8 @@
             "JasPer 2.0",
             "JasPer License, 2.0",
             "JasPer License Version 2.0",
-            "JasPer License v2.0"
+            "JasPer License v2.0",
+            "scancode:jasper-2.0"
         ],
         "__impliedComments": [
             [
@@ -496,8 +494,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "JasPer License 2.0",
-                        "JasPer-2.0",
-                        "scancode:jasper-2.0"
+                        "JasPer-2.0"
                     ],
                     "__impliedId": "JasPer-2.0",
                     "__impliedAmbiguousNames": [
@@ -505,7 +502,8 @@
                         "JasPer 2.0",
                         "JasPer License, 2.0",
                         "JasPer License Version 2.0",
-                        "JasPer License v2.0"
+                        "JasPer License v2.0",
+                        "scancode:jasper-2.0"
                     ],
                     "__impliedComments": [
                         [

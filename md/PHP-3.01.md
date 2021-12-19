@@ -6,8 +6,6 @@
 
 -   `PHP License 3.01`
 
--   `scancode:php-3.01`
-
 -   `PHP License, version 3.01`
 
 -   `scancode://php-3.01`
@@ -206,7 +204,6 @@
             "PHP-3.01",
             "PHP License v3.01",
             "PHP License 3.01",
-            "scancode:php-3.01",
             "PHP License, version 3.01",
             "scancode://php-3.01"
         ],
@@ -216,7 +213,8 @@
             "PHP, 3.01",
             "PHP License, Version 3.01",
             "PHP License 3.01",
-            "PHP License, version 3.01"
+            "PHP License, version 3.01",
+            "scancode:php-3.01"
         ],
         "__impliedComments": [
             [
@@ -500,8 +498,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "PHP License 3.01",
-                        "PHP-3.01",
-                        "scancode:php-3.01"
+                        "PHP-3.01"
                     ],
                     "__impliedId": "PHP-3.01",
                     "__impliedAmbiguousNames": [
@@ -509,7 +506,8 @@
                         "PHP, 3.01",
                         "PHP License, Version 3.01",
                         "PHP License 3.01",
-                        "PHP License, version 3.01"
+                        "PHP License, version 3.01",
+                        "scancode:php-3.01"
                     ],
                     "__impliedComments": [
                         [

@@ -32,13 +32,7 @@
 
 -   `GNU General Public License 3.0 (or any later version)`
 
--   `scancode:gpl-3.0-plus`
-
--   `osi:GPL-3.0`
-
 -   `GNU General Public License 3.0`
-
--   `scancode:gpl-3.0`
 
 -   `GNU General Public License, Version 3.0`
 
@@ -1262,10 +1256,7 @@
             "gpl-3.0",
             "GNU GPLv3",
             "GNU General Public License 3.0 (or any later version)",
-            "scancode:gpl-3.0-plus",
-            "osi:GPL-3.0",
             "GNU General Public License 3.0",
-            "scancode:gpl-3.0",
             "GNU General Public License, Version 3.0",
             "License :: OSI Approved :: GNU General Public License (GPL)",
             "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
@@ -1320,6 +1311,8 @@
             "GPL version 3 or later",
             "GPL version 3.0 or later",
             "GNU General Public License (GNU GPL), version 3 or later",
+            "scancode:gpl-3.0-plus",
+            "osi:GPL-3.0",
             "GNU General Public License (GPLV3+)",
             "GNU General Public License, Versions 2 and 3",
             "GNU GENERAL PUBLIC LICENSE - Version 3",
@@ -1369,7 +1362,8 @@
             "General public licence, v 3",
             "gpl_v3",
             "GPL V3",
-            "GNU General Public License\" .SS \"Version 3"
+            "GNU General Public License\" .SS \"Version 3",
+            "scancode:gpl-3.0"
         ],
         "__impliedComments": [
             [
@@ -2178,9 +2172,7 @@
                     "__impliedNames": [
                         "GNU General Public License 3.0 (or any later version)",
                         "GPL-3.0+",
-                        "GPL-3.0-or-later",
-                        "scancode:gpl-3.0-plus",
-                        "osi:GPL-3.0"
+                        "GPL-3.0-or-later"
                     ],
                     "__impliedId": "GPL-3.0-or-later",
                     "__impliedAmbiguousNames": [
@@ -2221,7 +2213,9 @@
                         "GPL-3.0-or License later",
                         "GPL version 3 or later",
                         "GPL version 3.0 or later",
-                        "GNU General Public License (GNU GPL), version 3 or later"
+                        "GNU General Public License (GNU GPL), version 3 or later",
+                        "scancode:gpl-3.0-plus",
+                        "osi:GPL-3.0"
                     ],
                     "__impliedComments": [
                         [

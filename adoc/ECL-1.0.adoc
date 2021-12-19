@@ -13,8 +13,6 @@
 *Other Names:*
 
 * `Educational Community License 1.0`
-* `scancode:ecl-1.0`
-* `osi:ECL-1.0`
 * `Educational Community License, Version 1.0`
 * `scancode://ecl-1.0`
 * `ECL 1.0`
@@ -230,8 +228,6 @@ repository] is generated)
         "ECL-1.0",
         "Educational Community License v1.0",
         "Educational Community License 1.0",
-        "scancode:ecl-1.0",
-        "osi:ECL-1.0",
         "Educational Community License, Version 1.0",
         "scancode://ecl-1.0",
         "ECL 1.0"
@@ -244,7 +240,9 @@ repository] is generated)
         "Educational Community License, Version 1.0",
         "ECL, Version 1.0",
         "ECL-1.0",
-        "Educational Community License version 1.0"
+        "Educational Community License version 1.0",
+        "scancode:ecl-1.0",
+        "osi:ECL-1.0"
     ],
     "__impliedComments": [
         [
@@ -631,9 +629,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Educational Community License 1.0",
-                    "ECL-1.0",
-                    "scancode:ecl-1.0",
-                    "osi:ECL-1.0"
+                    "ECL-1.0"
                 ],
                 "__impliedId": "ECL-1.0",
                 "__impliedAmbiguousNames": [
@@ -642,7 +638,9 @@ repository] is generated)
                     "ECL, Version 1.0",
                     "ECL-1.0",
                     "ECL 1.0",
-                    "Educational Community License version 1.0"
+                    "Educational Community License version 1.0",
+                    "scancode:ecl-1.0",
+                    "osi:ECL-1.0"
                 ],
                 "__impliedComments": [
                     [

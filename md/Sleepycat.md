@@ -10,10 +10,6 @@
 
 -   `Berkeley-Database`
 
--   `scancode:sleepycat`
-
--   `osi:Sleepycat`
-
 -   `The Sleepycat License`
 
 -   `License :: OSI Approved :: Sleepycat License`
@@ -161,8 +157,6 @@
             "Sleepycat Software Product License",
             "Sleepycat License",
             "Berkeley-Database",
-            "scancode:sleepycat",
-            "osi:Sleepycat",
             "The Sleepycat License",
             "License :: OSI Approved :: Sleepycat License",
             "scancode://sleepycat"
@@ -172,7 +166,9 @@
         "__impliedAmbiguousNames": [
             "Sleepycat License",
             "Sleepycat",
-            "Berkeley DB License"
+            "Berkeley DB License",
+            "scancode:sleepycat",
+            "osi:Sleepycat"
         ],
         "__impliedComments": [
             [
@@ -434,12 +430,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Berkeley Database License",
-                        "Berkeley-Database",
-                        "scancode:sleepycat"
+                        "Berkeley-Database"
                     ],
                     "__impliedId": "Berkeley-Database",
                     "__impliedAmbiguousNames": [
-                        "Berkeley DB License"
+                        "Berkeley DB License",
+                        "scancode:sleepycat"
                     ],
                     "__impliedComments": [
                         [

@@ -8,8 +8,6 @@
 
 -   `ODbL 1.0`
 
--   `scancode:odbl-1.0`
-
 -   `Open Data Commons Open Database License 1.0`
 
 -   `scancode://odbl-1.0`
@@ -633,7 +631,6 @@
             "odbl-1.0",
             "ODbL",
             "ODbL 1.0",
-            "scancode:odbl-1.0",
             "Open Data Commons Open Database License 1.0",
             "Open Data Commons Open Database License v1.0",
             "scancode://odbl-1.0"
@@ -642,7 +639,8 @@
         "__impliedAmbiguousNames": [
             "ODbL, Version 1.0",
             "ODbL, 1.0",
-            "ODC Open Database License"
+            "ODC Open Database License",
+            "scancode:odbl-1.0"
         ],
         "__impliedComments": [
             [
@@ -817,14 +815,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "ODbL 1.0",
-                        "ODbL-1.0",
-                        "scancode:odbl-1.0"
+                        "ODbL-1.0"
                     ],
                     "__impliedId": "ODbL-1.0",
                     "__impliedAmbiguousNames": [
                         "ODbL, Version 1.0",
                         "ODbL, 1.0",
-                        "ODC Open Database License"
+                        "ODC Open Database License",
+                        "scancode:odbl-1.0"
                     ],
                     "__impliedComments": [
                         [

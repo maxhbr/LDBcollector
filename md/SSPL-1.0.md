@@ -8,8 +8,6 @@
 
 -   `Server Side Public License 1.0`
 
--   `scancode:mongodb-sspl-1.0`
-
 -   `scancode://mongodb-sspl-1.0`
 
 -   `SSPL 1.0`
@@ -639,7 +637,6 @@
             "SSPL-1.0",
             "Server Side Public License Version 1",
             "Server Side Public License 1.0",
-            "scancode:mongodb-sspl-1.0",
             "Server Side Public License, v 1",
             "scancode://mongodb-sspl-1.0",
             "SSPL 1.0"
@@ -651,7 +648,8 @@
             "SSPL-1.0",
             "Server Side Public License, Version 1.0",
             "Server Side Public License v1.0",
-            "Server Side Public License VERSION 1"
+            "Server Side Public License VERSION 1",
+            "scancode:mongodb-sspl-1.0"
         ],
         "__impliedComments": [
             [
@@ -768,8 +766,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Server Side Public License 1.0",
-                        "SSPL-1.0",
-                        "scancode:mongodb-sspl-1.0"
+                        "SSPL-1.0"
                     ],
                     "__impliedId": "SSPL-1.0",
                     "__impliedAmbiguousNames": [
@@ -777,7 +774,8 @@
                         "SSPL-1.0",
                         "Server Side Public License, Version 1.0",
                         "Server Side Public License v1.0",
-                        "Server Side Public License VERSION 1"
+                        "Server Side Public License VERSION 1",
+                        "scancode:mongodb-sspl-1.0"
                     ],
                     "__impliedComments": [
                         [

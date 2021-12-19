@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY 3.0 (US)`
 
--   `scancode:cc-by-3.0-us`
-
 -   `scancode://cc-by-3.0-us`
 
 ## Comments on (easy) usability
@@ -151,13 +149,13 @@
         "__impliedNames": [
             "CC-BY-3.0-US",
             "Creative Commons BY 3.0 (US)",
-            "scancode:cc-by-3.0-us",
             "Creative Commons Attribution 3.0 United States",
             "scancode://cc-by-3.0-us"
         ],
         "__impliedId": "CC-BY-3.0-US",
         "__impliedAmbiguousNames": [
-            "CC-BY-3.0-US"
+            "CC-BY-3.0-US",
+            "scancode:cc-by-3.0-us"
         ],
         "__impliedComments": [
             [
@@ -299,12 +297,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY 3.0 (US)",
-                        "CC-BY-3.0-US",
-                        "scancode:cc-by-3.0-us"
+                        "CC-BY-3.0-US"
                     ],
                     "__impliedId": "CC-BY-3.0-US",
                     "__impliedAmbiguousNames": [
-                        "CC-BY-3.0-US"
+                        "CC-BY-3.0-US",
+                        "scancode:cc-by-3.0-us"
                     ],
                     "__impliedComments": [
                         [

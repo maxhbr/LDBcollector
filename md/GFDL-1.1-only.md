@@ -8,8 +8,6 @@
 
 -   `GFDL-1.1`
 
--   `scancode:gfdl-1.1`
-
 -   `GNU Free Documentation License Version 1.1`
 
 -   `scancode://gfdl-1.1`
@@ -440,7 +438,6 @@
             "GFDL-1.1-only",
             "GNU Free Documentation License 1.1",
             "GFDL-1.1",
-            "scancode:gfdl-1.1",
             "GNU Free Documentation License Version 1.1",
             "GNU Free Documentation License v1.1 only",
             "scancode://gfdl-1.1",
@@ -455,7 +452,8 @@
             "GFDL, v1.1",
             "GFDL-1.1",
             "GFDL version 1.1",
-            "Change license on the manual to GFDLv1.1"
+            "Change license on the manual to GFDLv1.1",
+            "scancode:gfdl-1.1"
         ],
         "__impliedComments": [
             [
@@ -638,8 +636,7 @@
                     "__impliedNames": [
                         "GNU Free Documentation License 1.1",
                         "GFDL-1.1",
-                        "GFDL-1.1-only",
-                        "scancode:gfdl-1.1"
+                        "GFDL-1.1-only"
                     ],
                     "__impliedId": "GFDL-1.1-only",
                     "__impliedAmbiguousNames": [
@@ -649,7 +646,8 @@
                         "GFDL, v1.1",
                         "GFDL-1.1",
                         "GFDL version 1.1",
-                        "Change license on the manual to GFDLv1.1"
+                        "Change license on the manual to GFDLv1.1",
+                        "scancode:gfdl-1.1"
                     ],
                     "__impliedComments": [
                         [

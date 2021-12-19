@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:allegro-4`
-
 -   `scancode://allegro-4`
 
 -   `Allegro 4 License`
@@ -87,7 +85,6 @@
         "__impliedNames": [
             "Giftware",
             "Giftware License",
-            "scancode:allegro-4",
             "scancode://allegro-4",
             "Allegro 4 License"
         ],
@@ -96,7 +93,8 @@
         "__impliedAmbiguousNames": [
             "Giftware",
             "GIFTWARE",
-            "Allegro 4"
+            "Allegro 4",
+            "scancode:allegro-4"
         ],
         "__impliedComments": [
             [
@@ -249,14 +247,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Giftware License",
-                        "Giftware",
-                        "scancode:allegro-4"
+                        "Giftware"
                     ],
                     "__impliedId": "Giftware",
                     "__impliedAmbiguousNames": [
                         "Giftware",
                         "GIFTWARE",
-                        "Allegro 4"
+                        "Allegro 4",
+                        "scancode:allegro-4"
                     ],
                     "__impliedComments": [
                         [

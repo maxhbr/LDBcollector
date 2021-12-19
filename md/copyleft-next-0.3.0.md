@@ -6,8 +6,6 @@
 
 -   `copyleft next License 0.3.0`
 
--   `scancode:copyleft-next-0.3.0`
-
 -   `scancode://copyleft-next-0.3.0`
 
 ## Comments on (easy) usability
@@ -287,7 +285,6 @@
             "copyleft-next-0.3.0",
             "copyleft-next 0.3.0",
             "copyleft next License 0.3.0",
-            "scancode:copyleft-next-0.3.0",
             "scancode://copyleft-next-0.3.0"
         ],
         "__impliedId": "copyleft-next-0.3.0",
@@ -300,7 +297,8 @@
             "copyleft next License, Version 0.3.0",
             "copyleft next License, 0.3.0",
             "copyleft-next License, Version 0.3.0",
-            "copyleft-next License 0.3.0"
+            "copyleft-next License 0.3.0",
+            "scancode:copyleft-next-0.3.0"
         ],
         "__impliedComments": [
             [
@@ -415,8 +413,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "copyleft next License 0.3.0",
-                        "copyleft-next-0.3.0",
-                        "scancode:copyleft-next-0.3.0"
+                        "copyleft-next-0.3.0"
                     ],
                     "__impliedId": "copyleft-next-0.3.0",
                     "__impliedAmbiguousNames": [
@@ -427,7 +424,8 @@
                         "copyleft next License, Version 0.3.0",
                         "copyleft next License, 0.3.0",
                         "copyleft-next License, Version 0.3.0",
-                        "copyleft-next License 0.3.0"
+                        "copyleft-next License 0.3.0",
+                        "scancode:copyleft-next-0.3.0"
                     ],
                     "__impliedComments": [
                         [

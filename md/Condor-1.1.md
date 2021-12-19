@@ -6,8 +6,6 @@
 
 -   `Condor Public License 1.1`
 
--   `scancode:condor-1.1`
-
 -   `scancode://condor-1.1`
 
 ## Comments on (easy) usability
@@ -193,7 +191,6 @@
             "Condor-1.1",
             "Condor Public License v1.1",
             "Condor Public License 1.1",
-            "scancode:condor-1.1",
             "scancode://condor-1.1"
         ],
         "__impliedId": "Condor-1.1",
@@ -205,7 +202,8 @@
             "Condor Public License Version 1.1",
             "https://spdx.org/licenses/condor-1.1",
             "http://www.cs.wisc.edu/condor/license.html",
-            "http://www.condorproject.org"
+            "http://www.condorproject.org",
+            "scancode:condor-1.1"
         ],
         "__impliedComments": [
             [
@@ -360,8 +358,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Condor Public License 1.1",
-                        "Condor-1.1",
-                        "scancode:condor-1.1"
+                        "Condor-1.1"
                     ],
                     "__impliedId": "Condor-1.1",
                     "__impliedAmbiguousNames": [
@@ -372,7 +369,8 @@
                         "Condor Public License Version 1.1",
                         "https://spdx.org/licenses/condor-1.1",
                         "http://www.cs.wisc.edu/condor/license.html",
-                        "http://www.condorproject.org"
+                        "http://www.condorproject.org",
+                        "scancode:condor-1.1"
                     ],
                     "__impliedComments": [
                         [

@@ -6,8 +6,6 @@
 
 -   `SCEA License`
 
--   `scancode:scea-1.0`
-
 -   `scancode://scea-1.0`
 
 -   `SCEA Shared Source License 1.0`
@@ -124,7 +122,6 @@
             "SCEA",
             "SCEA Shared Source License",
             "SCEA License",
-            "scancode:scea-1.0",
             "scancode://scea-1.0",
             "SCEA Shared Source License 1.0"
         ],
@@ -134,7 +131,8 @@
             "SCEA",
             "SCEA License",
             "SCEA LICENSE",
-            "SCEA Shared Source License 1.0"
+            "SCEA Shared Source License 1.0",
+            "scancode:scea-1.0"
         ],
         "__impliedComments": [
             [
@@ -267,14 +265,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "SCEA License",
-                        "SCEA",
-                        "scancode:scea-1.0"
+                        "SCEA"
                     ],
                     "__impliedId": "SCEA",
                     "__impliedAmbiguousNames": [
                         "SCEA License",
                         "SCEA LICENSE",
-                        "SCEA Shared Source License 1.0"
+                        "SCEA Shared Source License 1.0",
+                        "scancode:scea-1.0"
                     ],
                     "__impliedComments": [
                         [

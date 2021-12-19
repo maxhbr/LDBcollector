@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:bsd-zero`
-
--   `osi:0BSD`
-
 -   `scancode://bsd-zero`
 
 ## Description
@@ -108,14 +104,14 @@
             "0BSD",
             "BSD Zero Clause License",
             "0bsd",
-            "scancode:bsd-zero",
-            "osi:0BSD",
             "scancode://bsd-zero"
         ],
         "__impliedId": "0BSD",
         "__impliedAmbiguousNames": [
             "BSD Zero Clause License",
-            "0BSD"
+            "0BSD",
+            "scancode:bsd-zero",
+            "osi:0BSD"
         ],
         "__impliedComments": [
             [
@@ -248,14 +244,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD Zero Clause License",
-                        "0BSD",
-                        "scancode:bsd-zero",
-                        "osi:0BSD"
+                        "0BSD"
                     ],
                     "__impliedId": "0BSD",
                     "__impliedAmbiguousNames": [
                         "BSD Zero Clause License",
-                        "0BSD"
+                        "0BSD",
+                        "scancode:bsd-zero",
+                        "osi:0BSD"
                     ],
                     "__impliedComments": [
                         [

@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:ofl-1.1`
-
--   `osi:OFL-1.1`
-
 -   `Open Font License 1.1`
 
 -   `SIL Open Font License, Version 1.1`
@@ -276,8 +272,6 @@
             "OFL-1.1",
             "ofl-1.1",
             "SIL Open Font License 1.1",
-            "scancode:ofl-1.1",
-            "osi:OFL-1.1",
             "Open Font License 1.1",
             "SIL Open Font License, Version 1.1",
             "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007",
@@ -291,7 +285,9 @@
             "OFL 1.1",
             "OFL-1.1",
             "SIL OPEN FONT LICENSE Version 1.1",
-            "SIL Open Font License, Version 1.1"
+            "SIL Open Font License, Version 1.1",
+            "scancode:ofl-1.1",
+            "osi:OFL-1.1"
         ],
         "__impliedComments": [
             [
@@ -669,9 +665,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "SIL Open Font License 1.1",
-                        "OFL-1.1",
-                        "scancode:ofl-1.1",
-                        "osi:OFL-1.1"
+                        "OFL-1.1"
                     ],
                     "__impliedId": "OFL-1.1",
                     "__impliedAmbiguousNames": [
@@ -679,7 +673,9 @@
                         "OFL 1.1",
                         "OFL-1.1",
                         "SIL OPEN FONT LICENSE Version 1.1",
-                        "SIL Open Font License, Version 1.1"
+                        "SIL Open Font License, Version 1.1",
+                        "scancode:ofl-1.1",
+                        "osi:OFL-1.1"
                     ],
                     "__impliedComments": [
                         [

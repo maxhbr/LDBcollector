@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `AMPAS License`
-* `scancode:ampas`
 * `scancode://ampas`
 * `AMPAS BSD-Style License`
 
@@ -81,7 +80,6 @@ repository] is generated)
         "AMPAS",
         "Academy of Motion Picture Arts and Sciences BSD",
         "AMPAS License",
-        "scancode:ampas",
         "scancode://ampas",
         "AMPAS BSD-Style License"
     ],
@@ -90,7 +88,8 @@ repository] is generated)
     "__impliedAmbiguousNames": [
         "AMPAS BSD",
         "AMPAS License",
-        "AMPAS LICENSE"
+        "AMPAS LICENSE",
+        "scancode:ampas"
     ],
     "__impliedComments": [
         [
@@ -222,13 +221,13 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "AMPAS License",
-                    "AMPAS",
-                    "scancode:ampas"
+                    "AMPAS"
                 ],
                 "__impliedId": "AMPAS",
                 "__impliedAmbiguousNames": [
                     "AMPAS License",
-                    "AMPAS LICENSE"
+                    "AMPAS LICENSE",
+                    "scancode:ampas"
                 ],
                 "__impliedComments": [
                     [

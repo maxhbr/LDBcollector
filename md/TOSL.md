@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:tosl`
-
 -   `scancode://tosl`
 
 -   `TOSL 1.0a`
@@ -110,7 +108,6 @@
         "__impliedNames": [
             "TOSL",
             "Trusster Open Source License",
-            "scancode:tosl",
             "scancode://tosl",
             "TOSL 1.0a"
         ],
@@ -118,7 +115,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "TOSL",
-            "Trusster Open Source License version 1.0a"
+            "Trusster Open Source License version 1.0a",
+            "scancode:tosl"
         ],
         "__impliedComments": [
             [
@@ -264,13 +262,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "TOSL",
-                        "TOSL",
-                        "scancode:tosl"
+                        "TOSL"
                     ],
                     "__impliedId": "TOSL",
                     "__impliedAmbiguousNames": [
                         "TOSL",
-                        "Trusster Open Source License version 1.0a"
+                        "Trusster Open Source License version 1.0a",
+                        "scancode:tosl"
                     ],
                     "__impliedComments": [
                         [

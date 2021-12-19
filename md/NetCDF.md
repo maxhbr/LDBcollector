@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:netcdf`
-
 -   `NetCDF Copyright(version 2009)`
 
 -   `NetCDF Copyright`
@@ -154,7 +152,6 @@
             "NetCDF",
             "NetCDF license",
             "NetCDF License",
-            "scancode:netcdf",
             "NetCDF Copyright(version 2009)",
             "NetCDF Copyright",
             "scancode://netcdf"
@@ -165,7 +162,8 @@
             "NetCDF",
             "NetCDF License",
             "NETCDF LICENSE",
-            "NETCDF License"
+            "NETCDF License",
+            "scancode:netcdf"
         ],
         "__impliedComments": [
             [
@@ -412,14 +410,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "NetCDF License",
-                        "NetCDF",
-                        "scancode:netcdf"
+                        "NetCDF"
                     ],
                     "__impliedId": "NetCDF",
                     "__impliedAmbiguousNames": [
                         "NetCDF License",
                         "NETCDF LICENSE",
-                        "NETCDF License"
+                        "NETCDF License",
+                        "scancode:netcdf"
                     ],
                     "__impliedComments": [
                         [

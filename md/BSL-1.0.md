@@ -8,10 +8,6 @@
 
 -   `BSL (v1)`
 
--   `scancode:boost-1.0`
-
--   `osi:BSL-1.0`
-
 -   `bsl1.0`
 
 -   `Boost Software License 1.0 (BSL-1.0)`
@@ -225,8 +221,6 @@
             "BSL (v1)",
             "Boost Software License 1.0",
             "bsl-1.0",
-            "scancode:boost-1.0",
-            "osi:BSL-1.0",
             "bsl1.0",
             "Boost Software License 1.0 (BSL-1.0)",
             "Boost Software License - Version 1.0",
@@ -241,7 +235,9 @@
             "BSL v1.0",
             "Boost Software License - Version 1.0",
             "Boost Software License, Version 1.0",
-            "Boost Software License v1.0"
+            "Boost Software License v1.0",
+            "scancode:boost-1.0",
+            "osi:BSL-1.0"
         ],
         "__impliedComments": [
             [
@@ -604,9 +600,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Boost Software License 1.0",
-                        "BSL-1.0",
-                        "scancode:boost-1.0",
-                        "osi:BSL-1.0"
+                        "BSL-1.0"
                     ],
                     "__impliedId": "BSL-1.0",
                     "__impliedAmbiguousNames": [
@@ -616,7 +610,9 @@
                         "BSL v1.0",
                         "Boost Software License - Version 1.0",
                         "Boost Software License, Version 1.0",
-                        "Boost Software License v1.0"
+                        "Boost Software License v1.0",
+                        "scancode:boost-1.0",
+                        "osi:BSL-1.0"
                     ],
                     "__impliedComments": [
                         [

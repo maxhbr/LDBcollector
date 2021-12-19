@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:mpl-2.0`
-
--   `osi:MPL-2.0`
-
 -   `mozilla2.0`
 
 -   `Mozilla Public License, Version 2.0`
@@ -677,8 +673,6 @@
             "MPL-2.0",
             "Mozilla Public License 2.0",
             "mpl-2.0",
-            "scancode:mpl-2.0",
-            "osi:MPL-2.0",
             "mozilla2.0",
             "Mozilla Public License, Version 2.0",
             "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
@@ -700,7 +694,9 @@
             "Mozilla Public Licence 2.0",
             "Mozilla Public License, Version 2.0",
             "MPLv2.0",
-            "MPL-2"
+            "MPL-2",
+            "scancode:mpl-2.0",
+            "osi:MPL-2.0"
         ],
         "__impliedComments": [
             [
@@ -1235,9 +1231,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Mozilla Public License 2.0",
-                        "MPL-2.0",
-                        "scancode:mpl-2.0",
-                        "osi:MPL-2.0"
+                        "MPL-2.0"
                     ],
                     "__impliedId": "MPL-2.0",
                     "__impliedAmbiguousNames": [
@@ -1251,7 +1245,9 @@
                         "Mozilla Public Licence 2.0",
                         "Mozilla Public License, Version 2.0",
                         "MPLv2.0",
-                        "MPL-2"
+                        "MPL-2",
+                        "scancode:mpl-2.0",
+                        "osi:MPL-2.0"
                     ],
                     "__impliedComments": [
                         [

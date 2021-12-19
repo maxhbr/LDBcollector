@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:unicode-tou`
-
 -   `scancode://unicode-tou`
 
 ## Comments on (easy) usability
@@ -193,7 +191,6 @@
         "__impliedNames": [
             "Unicode-TOU",
             "Unicode Terms of Use",
-            "scancode:unicode-tou",
             "scancode://unicode-tou"
         ],
         "__impliedId": "Unicode-TOU",
@@ -204,7 +201,8 @@
             "UNICODE-TOU",
             "Unicode Terms of Use",
             "http://www.unicode.org/terms_of_use.html",
-            "GPL-1+ or Artistic, and Unicode"
+            "GPL-1+ or Artistic, and Unicode",
+            "scancode:unicode-tou"
         ],
         "__impliedComments": [
             [
@@ -339,8 +337,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Unicode Terms of Use",
-                        "Unicode-TOU",
-                        "scancode:unicode-tou"
+                        "Unicode-TOU"
                     ],
                     "__impliedId": "Unicode-TOU",
                     "__impliedAmbiguousNames": [
@@ -350,7 +347,8 @@
                         "UNICODE-TOU",
                         "Unicode Terms of Use",
                         "http://www.unicode.org/terms_of_use.html",
-                        "GPL-1+ or Artistic, and Unicode"
+                        "GPL-1+ or Artistic, and Unicode",
+                        "scancode:unicode-tou"
                     ],
                     "__impliedComments": [
                         [

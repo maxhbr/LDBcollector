@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:latex2e`
-
 -   `scancode://latex2e`
 
 ## Comments on (easy) usability
@@ -74,7 +72,6 @@
         "__impliedNames": [
             "Latex2e",
             "Latex2e License",
-            "scancode:latex2e",
             "scancode://latex2e"
         ],
         "__impliedId": "Latex2e",
@@ -84,7 +81,8 @@
             "Latex2e License",
             "LATEX2E LICENSE",
             "LATEX2E License",
-            "https://spdx.org/licenses/latex2e"
+            "https://spdx.org/licenses/latex2e",
+            "scancode:latex2e"
         ],
         "__impliedComments": [
             [
@@ -232,15 +230,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Latex2e License",
-                        "Latex2e",
-                        "scancode:latex2e"
+                        "Latex2e"
                     ],
                     "__impliedId": "Latex2e",
                     "__impliedAmbiguousNames": [
                         "Latex2e License",
                         "LATEX2E LICENSE",
                         "LATEX2E License",
-                        "https://spdx.org/licenses/latex2e"
+                        "https://spdx.org/licenses/latex2e",
+                        "scancode:latex2e"
                     ],
                     "__impliedComments": [
                         [

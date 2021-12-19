@@ -6,8 +6,6 @@
 
 -   `Glide License`
 
--   `scancode:glide`
-
 -   `scancode://glide`
 
 -   `3DFX GLIDE`
@@ -315,7 +313,6 @@
             "Glide",
             "3dfx Glide License",
             "Glide License",
-            "scancode:glide",
             "scancode://glide",
             "3DFX GLIDE"
         ],
@@ -326,7 +323,8 @@
             "Glide License",
             "GLIDE LICENSE",
             "GLIDE License",
-            "3DFX GLIDE Source Code General Public License"
+            "3DFX GLIDE Source Code General Public License",
+            "scancode:glide"
         ],
         "__impliedComments": [
             [
@@ -460,15 +458,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Glide License",
-                        "Glide",
-                        "scancode:glide"
+                        "Glide"
                     ],
                     "__impliedId": "Glide",
                     "__impliedAmbiguousNames": [
                         "Glide License",
                         "GLIDE LICENSE",
                         "GLIDE License",
-                        "3DFX GLIDE Source Code General Public License"
+                        "3DFX GLIDE Source Code General Public License",
+                        "scancode:glide"
                     ],
                     "__impliedComments": [
                         [

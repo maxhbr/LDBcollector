@@ -4,12 +4,6 @@
 
 **Other Names:**
 
--   `BSD 1-Clause License (copyright variant)`
-
--   `BSD-1-Clause-copyright`
-
--   `scancode:bsd-1-clause`
-
 -   `scancode://bsd-1-clause`
 
 ## Comments on (easy) usability
@@ -25,7 +19,7 @@
 ## General Comments
 
 -   “category: BSD” (source: [Metaeffekt
-    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License-(copyright-variant).yaml "Metaeffekt Universe")
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License.yaml "Metaeffekt Universe")
     (CC-BY-4.0))
 
 ## URLs
@@ -70,10 +64,6 @@
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Metaeffekt
-    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License-(copyright-variant).yaml "Metaeffekt Universe")
-    (CC-BY-4.0)
-
--   [Metaeffekt
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
@@ -89,9 +79,6 @@
         "__impliedNames": [
             "BSD-1-Clause",
             "BSD 1-Clause License",
-            "BSD 1-Clause License (copyright variant)",
-            "BSD-1-Clause-copyright",
-            "scancode:bsd-1-clause",
             "scancode://bsd-1-clause"
         ],
         "__impliedId": "BSD-1-Clause",
@@ -100,7 +87,8 @@
             "BSD 1 CLAUSE",
             "BSD-1-Clause",
             "BSD-1-CLAUSE",
-            "BSD-1-clause"
+            "BSD-1-clause",
+            "scancode:bsd-1-clause"
         ],
         "__impliedComments": [
             [
@@ -197,23 +185,35 @@
                 }
             },
             "Metaeffekt Universe": {
-                "spdxIdentifier": null,
-                "shortName": "BSD-1-Clause-copyright",
+                "spdxIdentifier": "BSD-1-Clause",
+                "shortName": null,
                 "category": "BSD",
-                "alternativeNames": [],
-                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License-(copyright-variant).yaml",
+                "alternativeNames": [
+                    "BSD 1 Clause",
+                    "BSD 1 CLAUSE",
+                    "BSD-1-Clause",
+                    "BSD-1-CLAUSE",
+                    "BSD-1-clause"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-1-Clause-License.yaml",
                 "otherIds": [
                     "scancode:bsd-1-clause"
                 ],
-                "canonicalName": "BSD 1-Clause License (copyright variant)",
+                "canonicalName": "BSD 1-Clause License",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD 1-Clause License (copyright variant)",
-                        "BSD-1-Clause-copyright",
+                        "BSD 1-Clause License",
+                        "BSD-1-Clause"
+                    ],
+                    "__impliedId": "BSD-1-Clause",
+                    "__impliedAmbiguousNames": [
+                        "BSD 1 Clause",
+                        "BSD 1 CLAUSE",
+                        "BSD-1-Clause",
+                        "BSD-1-CLAUSE",
+                        "BSD-1-clause",
                         "scancode:bsd-1-clause"
                     ],
-                    "__impliedId": "BSD-1-Clause-copyright",
-                    "__impliedAmbiguousNames": [],
                     "__impliedComments": [
                         [
                             "Metaeffekt Universe",

@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:noweb`
 * `scancode://noweb`
 
 === Comments on (easy) usability
@@ -83,7 +82,6 @@ repository] is generated)
     "__impliedNames": [
         "Noweb",
         "Noweb License",
-        "scancode:noweb",
         "scancode://noweb"
     ],
     "__impliedId": "Noweb",
@@ -94,7 +92,8 @@ repository] is generated)
         "NOWEB LICENSE",
         "NOWEB License",
         "Noweb is copyright",
-        "Noweb is protected by copyright"
+        "Noweb is protected by copyright",
+        "scancode:noweb"
     ],
     "__impliedComments": [
         [
@@ -235,8 +234,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Noweb License",
-                    "Noweb",
-                    "scancode:noweb"
+                    "Noweb"
                 ],
                 "__impliedId": "Noweb",
                 "__impliedAmbiguousNames": [
@@ -244,7 +242,8 @@ repository] is generated)
                     "NOWEB LICENSE",
                     "NOWEB License",
                     "Noweb is copyright",
-                    "Noweb is protected by copyright"
+                    "Noweb is protected by copyright",
+                    "scancode:noweb"
                 ],
                 "__impliedComments": [
                     [

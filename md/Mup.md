@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:mup`
-
 -   `scancode://mup`
 
 ## Comments on (easy) usability
@@ -89,7 +87,6 @@
         "__impliedNames": [
             "Mup",
             "Mup License",
-            "scancode:mup",
             "scancode://mup"
         ],
         "__impliedId": "Mup",
@@ -98,7 +95,8 @@
             "Mup",
             "Mup License",
             "MUP LICENSE",
-            "MUP License"
+            "MUP License",
+            "scancode:mup"
         ],
         "__impliedComments": [
             [
@@ -245,14 +243,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Mup License",
-                        "Mup",
-                        "scancode:mup"
+                        "Mup"
                     ],
                     "__impliedId": "Mup",
                     "__impliedAmbiguousNames": [
                         "Mup License",
                         "MUP LICENSE",
-                        "MUP License"
+                        "MUP License",
+                        "scancode:mup"
                     ],
                     "__impliedComments": [
                         [

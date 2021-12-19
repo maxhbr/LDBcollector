@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:hippocratic-2.1`
-
 -   `scancode://hippocratic-2.1`
 
 -   `Hippocratic License v2.1`
@@ -86,7 +84,6 @@
         "__impliedNames": [
             "Hippocratic-2.1",
             "Hippocratic License 2.1",
-            "scancode:hippocratic-2.1",
             "scancode://hippocratic-2.1",
             "Hippocratic License v2.1"
         ],
@@ -96,7 +93,8 @@
             "https://firstdonoharm.dev/version/2/1",
             "Hippocratic-2.1",
             "Hippocratic License Version 2.1",
-            "Hippocratic License version 2.1"
+            "Hippocratic License version 2.1",
+            "scancode:hippocratic-2.1"
         ],
         "__impliedComments": [
             [
@@ -206,8 +204,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Hippocratic License 2.1",
-                        "Hippocratic-2.1",
-                        "scancode:hippocratic-2.1"
+                        "Hippocratic-2.1"
                     ],
                     "__impliedId": "Hippocratic-2.1",
                     "__impliedAmbiguousNames": [
@@ -215,7 +212,8 @@
                         "https://firstdonoharm.dev/version/2/1",
                         "Hippocratic-2.1",
                         "Hippocratic License Version 2.1",
-                        "Hippocratic License version 2.1"
+                        "Hippocratic License version 2.1",
+                        "scancode:hippocratic-2.1"
                     ],
                     "__impliedComments": [
                         [

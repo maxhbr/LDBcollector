@@ -6,8 +6,6 @@
 
 -   `RHeCos License 1.1`
 
--   `scancode:ecosrh-1.1`
-
 -   `scancode://ecosrh-1.1`
 
 -   `Red Hat eCos Public License 1.1`
@@ -496,7 +494,6 @@
         "__impliedNames": [
             "RHeCos-1.1",
             "RHeCos License 1.1",
-            "scancode:ecosrh-1.1",
             "Red Hat eCos Public License v1.1",
             "scancode://ecosrh-1.1",
             "Red Hat eCos Public License 1.1"
@@ -507,7 +504,8 @@
             "RHeCos 1.1",
             "RHeCos License, Version 1.1",
             "RHeCos License, 1.1",
-            "Red Hat eCos Public License v1.1"
+            "Red Hat eCos Public License v1.1",
+            "scancode:ecosrh-1.1"
         ],
         "__impliedComments": [
             [
@@ -629,8 +627,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "RHeCos License 1.1",
-                        "RHeCos-1.1",
-                        "scancode:ecosrh-1.1"
+                        "RHeCos-1.1"
                     ],
                     "__impliedId": "RHeCos-1.1",
                     "__impliedAmbiguousNames": [
@@ -638,7 +635,8 @@
                         "RHeCos 1.1",
                         "RHeCos License, Version 1.1",
                         "RHeCos License, 1.1",
-                        "Red Hat eCos Public License v1.1"
+                        "Red Hat eCos Public License v1.1",
+                        "scancode:ecosrh-1.1"
                     ],
                     "__impliedComments": [
                         [

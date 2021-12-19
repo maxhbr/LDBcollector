@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `Permission Terms (curl)`
-* `scancode:curl`
 * `scancode://curl`
 
 === Comments on (easy) usability
@@ -92,7 +91,6 @@ repository] is generated)
         "curl",
         "curl License",
         "Permission Terms (curl)",
-        "scancode:curl",
         "scancode://curl",
         "cURL License"
     ],
@@ -101,7 +99,8 @@ repository] is generated)
         "CURL LICENSE",
         "CURL License",
         "Curl License",
-        "curl license"
+        "curl license",
+        "scancode:curl"
     ],
     "__impliedComments": [
         [
@@ -227,15 +226,15 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Permission Terms (curl)",
-                    "curl",
-                    "scancode:curl"
+                    "curl"
                 ],
                 "__impliedId": "curl",
                 "__impliedAmbiguousNames": [
                     "CURL LICENSE",
                     "CURL License",
                     "Curl License",
-                    "curl license"
+                    "curl license",
+                    "scancode:curl"
                 ],
                 "__impliedComments": [
                     [

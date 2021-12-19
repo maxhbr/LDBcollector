@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `Intel ACPI License`
-* `scancode:intel-acpi`
 * `scancode://intel-acpi`
 * `Intel ACPI SLA`
 
@@ -184,7 +183,6 @@ repository] is generated)
         "Intel-ACPI",
         "Intel ACPI Software License Agreement",
         "Intel ACPI License",
-        "scancode:intel-acpi",
         "scancode://intel-acpi",
         "Intel ACPI SLA"
     ],
@@ -195,7 +193,8 @@ repository] is generated)
         "INTEL ACPI",
         "Intel-ACPI",
         "INTEL-ACPI",
-        "ACPI - Software License Agreement"
+        "ACPI - Software License Agreement",
+        "scancode:intel-acpi"
     ],
     "__impliedComments": [
         [
@@ -344,8 +343,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Intel ACPI License",
-                    "Intel-ACPI",
-                    "scancode:intel-acpi"
+                    "Intel-ACPI"
                 ],
                 "__impliedId": "Intel-ACPI",
                 "__impliedAmbiguousNames": [
@@ -353,7 +351,8 @@ repository] is generated)
                     "INTEL ACPI",
                     "Intel-ACPI",
                     "INTEL-ACPI",
-                    "ACPI - Software License Agreement"
+                    "ACPI - Software License Agreement",
+                    "scancode:intel-acpi"
                 ],
                 "__impliedComments": [
                     [

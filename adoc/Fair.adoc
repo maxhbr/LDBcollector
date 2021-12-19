@@ -11,8 +11,6 @@
 
 *Other Names:*
 
-* `scancode:fair`
-* `osi:Fair`
 * `Fair License (Fair)`
 * `scancode://fair`
 
@@ -91,8 +89,6 @@ repository] is generated)
     "__impliedNames": [
         "Fair",
         "Fair License",
-        "scancode:fair",
-        "osi:Fair",
         "Fair License (Fair)",
         "scancode://fair"
     ],
@@ -105,7 +101,9 @@ repository] is generated)
         "FAIR License",
         "http://opensource.org/licenses/fair.php",
         "http://www.opensource.org/licenses/fair.php",
-        "https://spdx.org/licenses/fair"
+        "https://spdx.org/licenses/fair",
+        "scancode:fair",
+        "osi:Fair"
     ],
     "__impliedComments": [
         [
@@ -338,9 +336,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Fair License",
-                    "Fair",
-                    "scancode:fair",
-                    "osi:Fair"
+                    "Fair"
                 ],
                 "__impliedId": "Fair",
                 "__impliedAmbiguousNames": [
@@ -349,7 +345,9 @@ repository] is generated)
                     "FAIR License",
                     "http://opensource.org/licenses/fair.php",
                     "http://www.opensource.org/licenses/fair.php",
-                    "https://spdx.org/licenses/fair"
+                    "https://spdx.org/licenses/fair",
+                    "scancode:fair",
+                    "osi:Fair"
                 ],
                 "__impliedComments": [
                     [

@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:psutils`
-
 -   `scancode://psutils`
 
 -   `PS Utilities License`
@@ -102,7 +100,6 @@
         "__impliedNames": [
             "psutils",
             "psutils License",
-            "scancode:psutils",
             "scancode://psutils",
             "PS Utilities License"
         ],
@@ -113,7 +110,8 @@
             "psutils License",
             "PSUTILS LICENSE",
             "PSUTILS License",
-            "PS Utilities Package"
+            "PS Utilities Package",
+            "scancode:psutils"
         ],
         "__impliedComments": [
             [
@@ -253,15 +251,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "psutils License",
-                        "psutils",
-                        "scancode:psutils"
+                        "psutils"
                     ],
                     "__impliedId": "psutils",
                     "__impliedAmbiguousNames": [
                         "psutils License",
                         "PSUTILS LICENSE",
                         "PSUTILS License",
-                        "PS Utilities Package"
+                        "PS Utilities Package",
+                        "scancode:psutils"
                     ],
                     "__impliedComments": [
                         [

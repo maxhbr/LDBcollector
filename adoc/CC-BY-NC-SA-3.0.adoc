@@ -16,7 +16,6 @@ Unported
 *Other Names:*
 
 * `Creative Commons BY-NC-SA 3.0 (unported)`
-* `scancode:cc-by-nc-sa-3.0`
 * `Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported`
 * `scancode://cc-by-nc-sa-3.0`
 
@@ -582,7 +581,6 @@ this repository] is generated)
     "__impliedNames": [
         "CC-BY-NC-SA-3.0",
         "Creative Commons BY-NC-SA 3.0 (unported)",
-        "scancode:cc-by-nc-sa-3.0",
         "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported",
         "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
         "scancode://cc-by-nc-sa-3.0"
@@ -592,7 +590,8 @@ this repository] is generated)
         "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
         "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
         "CC-BY-NC-SA-3.0",
-        "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported"
+        "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported",
+        "scancode:cc-by-nc-sa-3.0"
     ],
     "__impliedRatingState": [
         [
@@ -1036,14 +1035,14 @@ this repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Creative Commons BY-NC-SA 3.0 (unported)",
-                    "CC-BY-NC-SA-3.0",
-                    "scancode:cc-by-nc-sa-3.0"
+                    "CC-BY-NC-SA-3.0"
                 ],
                 "__impliedId": "CC-BY-NC-SA-3.0",
                 "__impliedAmbiguousNames": [
                     "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
                     "CC-BY-NC-SA-3.0",
-                    "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported"
+                    "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported",
+                    "scancode:cc-by-nc-sa-3.0"
                 ],
                 "__impliedComments": [
                     [

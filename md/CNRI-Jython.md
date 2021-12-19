@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:cnri-jython`
-
 -   `scancode://cnri-jython`
 
 ## Comments on (easy) usability
@@ -81,7 +79,6 @@
         "__impliedNames": [
             "CNRI-Jython",
             "CNRI Jython License",
-            "scancode:cnri-jython",
             "scancode://cnri-jython"
         ],
         "__impliedId": "CNRI-Jython",
@@ -89,7 +86,8 @@
             "CNRI Jython",
             "CNRI JYTHON",
             "CNRI-Jython",
-            "CNRI-JYTHON"
+            "CNRI-JYTHON",
+            "scancode:cnri-jython"
         ],
         "__impliedComments": [
             [
@@ -210,15 +208,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "CNRI Jython License",
-                        "CNRI-Jython",
-                        "scancode:cnri-jython"
+                        "CNRI-Jython"
                     ],
                     "__impliedId": "CNRI-Jython",
                     "__impliedAmbiguousNames": [
                         "CNRI Jython",
                         "CNRI JYTHON",
                         "CNRI-Jython",
-                        "CNRI-JYTHON"
+                        "CNRI-JYTHON",
+                        "scancode:cnri-jython"
                     ],
                     "__impliedComments": [
                         [

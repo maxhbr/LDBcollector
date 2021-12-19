@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:leptonica`
-
 -   `scancode://leptonica`
 
 ## Comments on (easy) usability
@@ -75,7 +73,6 @@
         "__impliedNames": [
             "Leptonica",
             "Leptonica License",
-            "scancode:leptonica",
             "scancode://leptonica"
         ],
         "__impliedId": "Leptonica",
@@ -84,7 +81,8 @@
             "Leptonica",
             "Leptonica License",
             "LEPTONICA LICENSE",
-            "LEPTONICA License"
+            "LEPTONICA License",
+            "scancode:leptonica"
         ],
         "__impliedComments": [
             [
@@ -217,14 +215,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Leptonica License",
-                        "Leptonica",
-                        "scancode:leptonica"
+                        "Leptonica"
                     ],
                     "__impliedId": "Leptonica",
                     "__impliedAmbiguousNames": [
                         "Leptonica License",
                         "LEPTONICA LICENSE",
-                        "LEPTONICA License"
+                        "LEPTONICA License",
+                        "scancode:leptonica"
                     ],
                     "__impliedComments": [
                         [

@@ -38,15 +38,7 @@
 
 -   `GNU Affero General Public License 3.0 (or any later version)`
 
--   `scancode:agpl-3.0-plus`
-
--   `scancode:agpl-2.0`
-
--   `osi:AGPL-3.0`
-
 -   `GNU Affero General Public License 3.0`
-
--   `scancode:agpl-3.0`
 
 -   `GNU Affero General Public License v3`
 
@@ -1241,11 +1233,7 @@
             "agpl-3.0",
             "GNU AGPLv3",
             "GNU Affero General Public License 3.0 (or any later version)",
-            "scancode:agpl-3.0-plus",
-            "scancode:agpl-2.0",
-            "osi:AGPL-3.0",
             "GNU Affero General Public License 3.0",
-            "scancode:agpl-3.0",
             "GNU Affero General Public License v3",
             "agpl-v3",
             "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
@@ -1291,6 +1279,9 @@
             "General Affero Public License version 3+",
             "Affero GNU Public License Version 3+",
             "version 2 of the Affero General Public License",
+            "scancode:agpl-3.0-plus",
+            "scancode:agpl-2.0",
+            "osi:AGPL-3.0",
             "GNU AFFERO GENERAL PUBLIC LICENSE Version 3",
             "GNU AFFERO GENERAL PUBLIC LICENSE v3",
             "GNU AFFERO GENERAL PUBLIC LICENSE, version 3",
@@ -1312,7 +1303,8 @@
             "Affero GPL3",
             "General Affero Public License version 3",
             "Affero GNU Public License Version 3",
-            "AGPL-3"
+            "AGPL-3",
+            "scancode:agpl-3.0"
         ],
         "__impliedComments": [
             [
@@ -2145,10 +2137,7 @@
                     "__impliedNames": [
                         "GNU Affero General Public License 3.0 (or any later version)",
                         "AGPL-3.0+",
-                        "AGPL-3.0-or-later",
-                        "scancode:agpl-3.0-plus",
-                        "scancode:agpl-2.0",
-                        "osi:AGPL-3.0"
+                        "AGPL-3.0-or-later"
                     ],
                     "__impliedId": "AGPL-3.0-or-later",
                     "__impliedAmbiguousNames": [
@@ -2181,7 +2170,10 @@
                         "Affero GPL3+",
                         "General Affero Public License version 3+",
                         "Affero GNU Public License Version 3+",
-                        "version 2 of the Affero General Public License"
+                        "version 2 of the Affero General Public License",
+                        "scancode:agpl-3.0-plus",
+                        "scancode:agpl-2.0",
+                        "osi:AGPL-3.0"
                     ],
                     "__impliedComments": [
                         [

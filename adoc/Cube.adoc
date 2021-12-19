@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:cube`
 * `scancode://cube`
 
 === Comments on (easy) usability
@@ -93,14 +92,14 @@ repository] is generated)
     "__impliedNames": [
         "Cube",
         "Cube License",
-        "scancode:cube",
         "scancode://cube"
     ],
     "__impliedId": "Cube",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Cube",
-        "Cube License"
+        "Cube License",
+        "scancode:cube"
     ],
     "__impliedComments": [
         [
@@ -231,12 +230,12 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Cube License",
-                    "Cube",
-                    "scancode:cube"
+                    "Cube"
                 ],
                 "__impliedId": "Cube",
                 "__impliedAmbiguousNames": [
-                    "Cube License"
+                    "Cube License",
+                    "scancode:cube"
                 ],
                 "__impliedComments": [
                     [

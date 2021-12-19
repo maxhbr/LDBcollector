@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `LaTeX Project Public License 1.0`
-* `scancode:lppl-1.0`
 * `scancode://lppl-1.0`
 * `LPPL 1.0`
 
@@ -264,7 +263,6 @@ repository] is generated)
     "__impliedNames": [
         "LPPL-1.0",
         "LaTeX Project Public License 1.0",
-        "scancode:lppl-1.0",
         "LaTeX Project Public License v1.0",
         "scancode://lppl-1.0",
         "LPPL 1.0"
@@ -274,7 +272,8 @@ repository] is generated)
         "LPPL, 1.0",
         "LPPL-1.0",
         "LPPL Version 1.0",
-        "LaTeX Project Public License 1.0"
+        "LaTeX Project Public License 1.0",
+        "scancode:lppl-1.0"
     ],
     "__impliedComments": [
         [
@@ -409,15 +408,15 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "LaTeX Project Public License 1.0",
-                    "LPPL-1.0",
-                    "scancode:lppl-1.0"
+                    "LPPL-1.0"
                 ],
                 "__impliedId": "LPPL-1.0",
                 "__impliedAmbiguousNames": [
                     "LPPL, 1.0",
                     "LPPL-1.0",
                     "LPPL Version 1.0",
-                    "LaTeX Project Public License 1.0"
+                    "LaTeX Project Public License 1.0",
+                    "scancode:lppl-1.0"
                 ],
                 "__impliedComments": [
                     [

@@ -6,8 +6,6 @@
 
 -   `Taiwan Open Government Data License 1.0`
 
--   `scancode:ogdl-taiwan-1.0`
-
 -   `scancode://ogdl-taiwan-1.0`
 
 ## Comments on (easy) usability
@@ -122,13 +120,13 @@
         "__impliedNames": [
             "OGDL-Taiwan-1.0",
             "Taiwan Open Government Data License 1.0",
-            "scancode:ogdl-taiwan-1.0",
             "Taiwan Open Government Data License, version 1.0",
             "scancode://ogdl-taiwan-1.0"
         ],
         "__impliedId": "OGDL-Taiwan-1.0",
         "__impliedAmbiguousNames": [
-            "Taiwan Open Government Data License 1.0"
+            "Taiwan Open Government Data License 1.0",
+            "scancode:ogdl-taiwan-1.0"
         ],
         "__impliedComments": [
             [
@@ -236,12 +234,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Taiwan Open Government Data License 1.0",
-                        "OGDL-Taiwan-1.0",
-                        "scancode:ogdl-taiwan-1.0"
+                        "OGDL-Taiwan-1.0"
                     ],
                     "__impliedId": "OGDL-Taiwan-1.0",
                     "__impliedAmbiguousNames": [
-                        "Taiwan Open Government Data License 1.0"
+                        "Taiwan Open Government Data License 1.0",
+                        "scancode:ogdl-taiwan-1.0"
                     ],
                     "__impliedComments": [
                         [

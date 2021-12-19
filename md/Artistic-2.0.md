@@ -8,12 +8,6 @@
 
 -   `Artistic License (v. 2.0)`
 
--   `scancode:artistic-2.0`
-
--   `osi:Artistic-2.0`
-
--   `osi:artistic-license-2.0`
-
 -   `artistic-license-2.0`
 
 -   `Artistic License, Version 2.0`
@@ -522,9 +516,6 @@
             "Artistic License (v. 2.0)",
             "Artistic License 2.0",
             "artistic-2.0",
-            "scancode:artistic-2.0",
-            "osi:Artistic-2.0",
-            "osi:artistic-license-2.0",
             "artistic-license-2.0",
             "Artistic License, Version 2.0",
             "License :: OSI Approved :: Artistic License",
@@ -540,7 +531,10 @@
             "Artistic License, Version 2.0",
             "Artistic License 2.0",
             "Artistic License (2.0)",
-            "Artistic-2"
+            "Artistic-2",
+            "scancode:artistic-2.0",
+            "osi:Artistic-2.0",
+            "osi:artistic-license-2.0"
         ],
         "__impliedComments": [
             [
@@ -1073,10 +1067,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Artistic License 2.0",
-                        "Artistic-2.0",
-                        "scancode:artistic-2.0",
-                        "osi:Artistic-2.0",
-                        "osi:artistic-license-2.0"
+                        "Artistic-2.0"
                     ],
                     "__impliedId": "Artistic-2.0",
                     "__impliedAmbiguousNames": [
@@ -1085,7 +1076,10 @@
                         "Artistic License, Version 2.0",
                         "Artistic License 2.0",
                         "Artistic License (2.0)",
-                        "Artistic-2"
+                        "Artistic-2",
+                        "scancode:artistic-2.0",
+                        "osi:Artistic-2.0",
+                        "osi:artistic-license-2.0"
                     ],
                     "__impliedComments": [
                         [

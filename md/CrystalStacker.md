@@ -6,8 +6,6 @@
 
 -   `Crystal Stacker License`
 
--   `scancode:crystal-stacker`
-
 -   `scancode://crystal-stacker`
 
 ## Comments on (easy) usability
@@ -79,7 +77,6 @@
             "CrystalStacker",
             "CrystalStacker License",
             "Crystal Stacker License",
-            "scancode:crystal-stacker",
             "scancode://crystal-stacker"
         ],
         "__impliedId": "CrystalStacker",
@@ -90,7 +87,8 @@
             "CrystalStacker License",
             "Crystal Stacker License",
             "CRYSTALSTACKER LICENSE",
-            "CRYSTALSTACKER License"
+            "CRYSTALSTACKER License",
+            "scancode:crystal-stacker"
         ],
         "__impliedComments": [
             [
@@ -225,8 +223,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "CrystalStacker License",
-                        "CrystalStacker",
-                        "scancode:crystal-stacker"
+                        "CrystalStacker"
                     ],
                     "__impliedId": "CrystalStacker",
                     "__impliedAmbiguousNames": [
@@ -234,7 +231,8 @@
                         "CrystalStacker License",
                         "Crystal Stacker License",
                         "CRYSTALSTACKER LICENSE",
-                        "CRYSTALSTACKER License"
+                        "CRYSTALSTACKER License",
+                        "scancode:crystal-stacker"
                     ],
                     "__impliedComments": [
                         [

@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `TU Berlin License 1.0`
-* `scancode:tu-berlin`
 * `scancode://tu-berlin`
 
 === Comments on (easy) usability
@@ -73,7 +72,6 @@ repository] is generated)
         "TU-Berlin-1.0",
         "Technische Universitaet Berlin License 1.0",
         "TU Berlin License 1.0",
-        "scancode:tu-berlin",
         "scancode://tu-berlin"
     ],
     "__impliedId": "TU-Berlin-1.0",
@@ -85,7 +83,8 @@ repository] is generated)
         "TU Berlin License, Version 1.0",
         "TU Berlin License 1.0",
         "TU-Berlin License, Version 1.0",
-        "TU-Berlin License, 1.0"
+        "TU-Berlin License, 1.0",
+        "scancode:tu-berlin"
     ],
     "__impliedComments": [
         [
@@ -205,8 +204,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "TU Berlin License 1.0",
-                    "TU-Berlin-1.0",
-                    "scancode:tu-berlin"
+                    "TU-Berlin-1.0"
                 ],
                 "__impliedId": "TU-Berlin-1.0",
                 "__impliedAmbiguousNames": [
@@ -217,7 +215,8 @@ repository] is generated)
                     "TU Berlin License, Version 1.0",
                     "TU Berlin License 1.0",
                     "TU-Berlin License, Version 1.0",
-                    "TU-Berlin License, 1.0"
+                    "TU-Berlin License, 1.0",
+                    "scancode:tu-berlin"
                 ],
                 "__impliedComments": [
                     [

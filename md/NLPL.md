@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:nlpl`
-
 -   `scancode://nlpl`
 
 ## Comments on (easy) usability
@@ -90,14 +88,14 @@
         "__impliedNames": [
             "NLPL",
             "No Limit Public License",
-            "scancode:nlpl",
             "scancode://nlpl"
         ],
         "__impliedId": "NLPL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "NLPL",
-            "NO LIMIT PUBLIC LICENSE"
+            "NO LIMIT PUBLIC LICENSE",
+            "scancode:nlpl"
         ],
         "__impliedComments": [
             [
@@ -242,12 +240,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "NLPL",
-                        "NLPL",
-                        "scancode:nlpl"
+                        "NLPL"
                     ],
                     "__impliedId": "NLPL",
                     "__impliedAmbiguousNames": [
-                        "NO LIMIT PUBLIC LICENSE"
+                        "NO LIMIT PUBLIC LICENSE",
+                        "scancode:nlpl"
                     ],
                     "__impliedComments": [
                         [

@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:saxpath`
-
 -   `scancode://saxpath`
 
 ## Comments on (easy) usability
@@ -113,7 +111,6 @@
         "__impliedNames": [
             "Saxpath",
             "Saxpath License",
-            "scancode:saxpath",
             "scancode://saxpath"
         ],
         "__impliedId": "Saxpath",
@@ -122,7 +119,8 @@
             "Saxpath",
             "Saxpath License",
             "SAXPATH LICENSE",
-            "SAXPATH License"
+            "SAXPATH License",
+            "scancode:saxpath"
         ],
         "__impliedComments": [
             [
@@ -269,14 +267,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Saxpath License",
-                        "Saxpath",
-                        "scancode:saxpath"
+                        "Saxpath"
                     ],
                     "__impliedId": "Saxpath",
                     "__impliedAmbiguousNames": [
                         "Saxpath License",
                         "SAXPATH LICENSE",
-                        "SAXPATH License"
+                        "SAXPATH License",
+                        "scancode:saxpath"
                     ],
                     "__impliedComments": [
                         [

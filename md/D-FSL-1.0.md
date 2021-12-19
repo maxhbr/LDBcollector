@@ -2,10 +2,6 @@
 
 [TABLE]
 
-**Other Names:**
-
--   `scancode:d-fsl-1.0-de`
-
 ## Comments on (easy) usability
 
 ## General Comments
@@ -54,13 +50,13 @@
     {
         "__impliedNames": [
             "D-FSL-1.0",
-            "Deutsche Freie Software Lizenz",
-            "scancode:d-fsl-1.0-de"
+            "Deutsche Freie Software Lizenz"
         ],
         "__impliedId": "D-FSL-1.0",
         "__impliedAmbiguousNames": [
             "D-FSL-1.0",
-            "Deutsche Freie Software Lizenz"
+            "Deutsche Freie Software Lizenz",
+            "scancode:d-fsl-1.0-de"
         ],
         "__impliedComments": [
             [
@@ -161,13 +157,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Deutsche Freie Software Lizenz",
-                        "D-FSL-1.0",
-                        "scancode:d-fsl-1.0-de"
+                        "D-FSL-1.0"
                     ],
                     "__impliedId": "D-FSL-1.0",
                     "__impliedAmbiguousNames": [
                         "D-FSL-1.0",
-                        "Deutsche Freie Software Lizenz"
+                        "Deutsche Freie Software Lizenz",
+                        "scancode:d-fsl-1.0-de"
                     ],
                     "__impliedComments": [
                         [

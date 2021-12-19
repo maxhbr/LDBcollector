@@ -6,8 +6,6 @@
 
 -   `TORQUE License 1.1`
 
--   `scancode:torque-1.1`
-
 -   `scancode://torque-1.1`
 
 -   `TORQUE 1.1`
@@ -106,7 +104,6 @@
             "TORQUE-1.1",
             "TORQUE v2.5+ Software License v1.1",
             "TORQUE License 1.1",
-            "scancode:torque-1.1",
             "scancode://torque-1.1",
             "TORQUE 1.1"
         ],
@@ -118,7 +115,8 @@
             "TORQUE 1.1",
             "TORQUE License, Version 1.1",
             "TORQUE License, 1.1",
-            "TORQUE v2.5+ Software License v1.1"
+            "TORQUE v2.5+ Software License v1.1",
+            "scancode:torque-1.1"
         ],
         "__impliedComments": [
             [
@@ -267,8 +265,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "TORQUE License 1.1",
-                        "TORQUE-1.1",
-                        "scancode:torque-1.1"
+                        "TORQUE-1.1"
                     ],
                     "__impliedId": "TORQUE-1.1",
                     "__impliedAmbiguousNames": [
@@ -276,7 +273,8 @@
                         "TORQUE 1.1",
                         "TORQUE License, Version 1.1",
                         "TORQUE License, 1.1",
-                        "TORQUE v2.5+ Software License v1.1"
+                        "TORQUE v2.5+ Software License v1.1",
+                        "scancode:torque-1.1"
                     ],
                     "__impliedComments": [
                         [

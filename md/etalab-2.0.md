@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:etalab-2.0`
-
 -   `scancode://etalab-2.0`
 
 ## Comments on (easy) usability
@@ -134,7 +132,6 @@
         "__impliedNames": [
             "etalab-2.0",
             "Etalab Open License 2.0",
-            "scancode:etalab-2.0",
             "scancode://etalab-2.0"
         ],
         "__impliedId": "etalab-2.0",
@@ -143,7 +140,8 @@
             "etalab-2.0",
             "See https://www.etalab.gouv.fr/licence-ouverte-open-licence",
             "Licence Ouverte 2.0.",
-            "OPEN LICENCE 2.0"
+            "OPEN LICENCE 2.0",
+            "scancode:etalab-2.0"
         ],
         "__impliedComments": [
             [
@@ -284,8 +282,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Etalab Open License 2.0",
-                        "etalab-2.0",
-                        "scancode:etalab-2.0"
+                        "etalab-2.0"
                     ],
                     "__impliedId": "etalab-2.0",
                     "__impliedAmbiguousNames": [
@@ -293,7 +290,8 @@
                         "etalab-2.0",
                         "See https://www.etalab.gouv.fr/licence-ouverte-open-licence",
                         "Licence Ouverte 2.0.",
-                        "OPEN LICENCE 2.0"
+                        "OPEN LICENCE 2.0",
+                        "scancode:etalab-2.0"
                     ],
                     "__impliedComments": [
                         [

@@ -6,8 +6,6 @@
 
 -   `CeCILL Free Software License Agreement 2.0`
 
--   `scancode:cecill-2.0`
-
 -   `scancode://cecill-2.0`
 
 -   `CeCILL 2.0`
@@ -569,7 +567,6 @@
         "__impliedNames": [
             "CECILL-2.0",
             "CeCILL Free Software License Agreement 2.0",
-            "scancode:cecill-2.0",
             "CeCILL Free Software License Agreement v2.0",
             "scancode://cecill-2.0",
             "CeCILL 2.0"
@@ -578,7 +575,8 @@
         "__impliedAmbiguousNames": [
             "CeCILL Free Software License Agreement v2.0",
             "CECILL-2.0",
-            "CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice"
+            "CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice",
+            "scancode:cecill-2.0"
         ],
         "__impliedComments": [
             [
@@ -712,14 +710,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "CeCILL Free Software License Agreement 2.0",
-                        "CECILL-2.0",
-                        "scancode:cecill-2.0"
+                        "CECILL-2.0"
                     ],
                     "__impliedId": "CECILL-2.0",
                     "__impliedAmbiguousNames": [
                         "CeCILL Free Software License Agreement v2.0",
                         "CECILL-2.0",
-                        "CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice"
+                        "CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice",
+                        "scancode:cecill-2.0"
                     ],
                     "__impliedComments": [
                         [

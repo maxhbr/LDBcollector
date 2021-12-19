@@ -6,8 +6,6 @@
 
 -   `BSD Source Code License`
 
--   `scancode:bsd-source-code`
-
 -   `scancode://bsd-source-code`
 
 ## Comments on (easy) usability
@@ -88,7 +86,6 @@
             "BSD-Source-Code",
             "BSD Source Code Attribution",
             "BSD Source Code License",
-            "scancode:bsd-source-code",
             "scancode://bsd-source-code"
         ],
         "__impliedId": "BSD-Source-Code",
@@ -96,7 +93,8 @@
             "BSD Source Code",
             "BSD SOURCE CODE",
             "BSD-Source-Code",
-            "BSD-SOURCE-CODE"
+            "BSD-SOURCE-CODE",
+            "scancode:bsd-source-code"
         ],
         "__impliedComments": [
             [
@@ -201,15 +199,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD Source Code License",
-                        "BSD-Source-Code",
-                        "scancode:bsd-source-code"
+                        "BSD-Source-Code"
                     ],
                     "__impliedId": "BSD-Source-Code",
                     "__impliedAmbiguousNames": [
                         "BSD Source Code",
                         "BSD SOURCE CODE",
                         "BSD-Source-Code",
-                        "BSD-SOURCE-CODE"
+                        "BSD-SOURCE-CODE",
+                        "scancode:bsd-source-code"
                     ],
                     "__impliedComments": [
                         [

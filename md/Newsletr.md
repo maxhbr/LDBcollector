@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:newsletr`
-
 -   `scancode://newsletr`
 
 ## Comments on (easy) usability
@@ -84,14 +82,14 @@
         "__impliedNames": [
             "Newsletr",
             "Newsletr License",
-            "scancode:newsletr",
             "scancode://newsletr"
         ],
         "__impliedId": "Newsletr",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Newsletr",
-            "NEWSLETR"
+            "NEWSLETR",
+            "scancode:newsletr"
         ],
         "__impliedComments": [
             [
@@ -237,13 +235,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Newsletr License",
-                        "Newsletr",
-                        "scancode:newsletr"
+                        "Newsletr"
                     ],
                     "__impliedId": "Newsletr",
                     "__impliedAmbiguousNames": [
                         "Newsletr",
-                        "NEWSLETR"
+                        "NEWSLETR",
+                        "scancode:newsletr"
                     ],
                     "__impliedComments": [
                         [

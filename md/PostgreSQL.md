@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:postgresql`
-
--   `osi:PostgreSQL`
-
 -   `The PostgreSQL Licence`
 
 -   `scancode://postgresql`
@@ -179,8 +175,6 @@
             "PostgreSQL",
             "PostgreSQL License",
             "postgresql",
-            "scancode:postgresql",
-            "osi:PostgreSQL",
             "The PostgreSQL Licence",
             "scancode://postgresql"
         ],
@@ -190,7 +184,9 @@
             "PostgreSQL",
             "License: PostgreSQL",
             "PostgreSQL License",
-            "POSTGRESQL License"
+            "POSTGRESQL License",
+            "scancode:postgresql",
+            "osi:PostgreSQL"
         ],
         "__impliedComments": [
             [
@@ -500,15 +496,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "PostgreSQL License",
-                        "PostgreSQL",
-                        "scancode:postgresql",
-                        "osi:PostgreSQL"
+                        "PostgreSQL"
                     ],
                     "__impliedId": "PostgreSQL",
                     "__impliedAmbiguousNames": [
                         "License: PostgreSQL",
                         "PostgreSQL License",
-                        "POSTGRESQL License"
+                        "POSTGRESQL License",
+                        "scancode:postgresql",
+                        "osi:PostgreSQL"
                     ],
                     "__impliedComments": [
                         [

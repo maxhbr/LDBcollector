@@ -8,11 +8,7 @@
 
 -   `DOM4J`
 
--   `scancode:dom4j`
-
 -   `Plexus License`
-
--   `scancode:classworlds`
 
 -   `scancode://dom4j`
 
@@ -201,9 +197,7 @@
             "Plexus Classworlds License",
             "DOM4J License",
             "DOM4J",
-            "scancode:dom4j",
             "Plexus License",
-            "scancode:classworlds",
             "scancode://dom4j",
             "Dom4j License"
         ],
@@ -212,9 +206,11 @@
         "__impliedAmbiguousNames": [
             "Plexus",
             "DOM4J License",
+            "scancode:dom4j",
             "Plexus License",
             "PLEXUS LICENSE",
-            "PLEXUS License"
+            "PLEXUS License",
+            "scancode:classworlds"
         ],
         "__impliedComments": [
             [
@@ -525,12 +521,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "DOM4J License",
-                        "DOM4J",
-                        "scancode:dom4j"
+                        "DOM4J"
                     ],
                     "__impliedId": "DOM4J",
                     "__impliedAmbiguousNames": [
-                        "DOM4J License"
+                        "DOM4J License",
+                        "scancode:dom4j"
                     ],
                     "__impliedComments": [
                         [

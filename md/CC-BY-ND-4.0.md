@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-ND 4.0 (international)`
 
--   `scancode:cc-by-nd-4.0`
-
 -   `scancode://cc-by-nd-4.0`
 
 ## Comments on (easy) usability
@@ -451,7 +449,6 @@
         "__impliedNames": [
             "CC-BY-ND-4.0",
             "Creative Commons BY-ND 4.0 (international)",
-            "scancode:cc-by-nd-4.0",
             "Creative Commons Attribution No Derivatives 4.0 International",
             "scancode://cc-by-nd-4.0"
         ],
@@ -459,7 +456,8 @@
         "__impliedAmbiguousNames": [
             "Creative Commons Attribution No Derivatives 4.0 International",
             "Creative Commons Attribution-NoDerivatives 4.0 International",
-            "CC-BY-ND-4.0"
+            "CC-BY-ND-4.0",
+            "scancode:cc-by-nd-4.0"
         ],
         "__impliedComments": [
             [
@@ -562,14 +560,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-ND 4.0 (international)",
-                        "CC-BY-ND-4.0",
-                        "scancode:cc-by-nd-4.0"
+                        "CC-BY-ND-4.0"
                     ],
                     "__impliedId": "CC-BY-ND-4.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution No Derivatives 4.0 International",
                         "Creative Commons Attribution-NoDerivatives 4.0 International",
-                        "CC-BY-ND-4.0"
+                        "CC-BY-ND-4.0",
+                        "scancode:cc-by-nd-4.0"
                     ],
                     "__impliedComments": [
                         [

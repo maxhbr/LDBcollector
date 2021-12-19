@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:antlr-pd-fallback`
-
 -   `ANTLR 2 License`
 
 -   `scancode://antlr-pd`
@@ -142,7 +140,6 @@
         "__impliedNames": [
             "ANTLR-PD",
             "ANTLR Software Rights Notice",
-            "scancode:antlr-pd-fallback",
             "ANTLR 2 License",
             "scancode://antlr-pd"
         ],
@@ -150,7 +147,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "ANTLR-PD",
-            "ANTLR Software Rights Notice"
+            "ANTLR Software Rights Notice",
+            "scancode:antlr-pd-fallback"
         ],
         "__impliedComments": [
             [
@@ -405,13 +403,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "ANTLR Software Rights Notice",
-                        "ANTLR-PD",
-                        "scancode:antlr-pd-fallback"
+                        "ANTLR-PD"
                     ],
                     "__impliedId": "ANTLR-PD",
                     "__impliedAmbiguousNames": [
                         "ANTLR-PD",
-                        "ANTLR Software Rights Notice"
+                        "ANTLR Software Rights Notice",
+                        "scancode:antlr-pd-fallback"
                     ],
                     "__impliedComments": [
                         [

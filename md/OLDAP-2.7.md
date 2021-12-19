@@ -6,8 +6,6 @@
 
 -   `OpenLDAP Public License 2.7`
 
--   `scancode:openldap-2.7`
-
 -   `The OpenLDAP Public License`
 
 -   `scancode://openldap-2.7`
@@ -172,7 +170,6 @@
             "OLDAP-2.7",
             "Open LDAP Public License v2.7",
             "OpenLDAP Public License 2.7",
-            "scancode:openldap-2.7",
             "The OpenLDAP Public License",
             "scancode://openldap-2.7"
         ],
@@ -183,7 +180,8 @@
             "OLDAP License, Version 2.7",
             "OLDAP License 2.7",
             "OpenLDAP Public License Version 2.7",
-            "https://spdx.org/licenses/oldap-2.7"
+            "https://spdx.org/licenses/oldap-2.7",
+            "scancode:openldap-2.7"
         ],
         "__impliedComments": [
             [
@@ -451,8 +449,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "OpenLDAP Public License 2.7",
-                        "OLDAP-2.7",
-                        "scancode:openldap-2.7"
+                        "OLDAP-2.7"
                     ],
                     "__impliedId": "OLDAP-2.7",
                     "__impliedAmbiguousNames": [
@@ -461,7 +458,8 @@
                         "OLDAP License, Version 2.7",
                         "OLDAP License 2.7",
                         "OpenLDAP Public License Version 2.7",
-                        "https://spdx.org/licenses/oldap-2.7"
+                        "https://spdx.org/licenses/oldap-2.7",
+                        "scancode:openldap-2.7"
                     ],
                     "__impliedComments": [
                         [

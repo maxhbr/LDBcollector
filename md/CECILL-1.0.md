@@ -6,8 +6,6 @@
 
 -   `CeCILL Free Software License Agreement 1.0`
 
--   `scancode:cecill-1.0`
-
 -   `scancode://cecill-1.0`
 
 -   `CeCILL 1.0`
@@ -300,7 +298,6 @@
         "__impliedNames": [
             "CECILL-1.0",
             "CeCILL Free Software License Agreement 1.0",
-            "scancode:cecill-1.0",
             "CeCILL Free Software License Agreement v1.0",
             "scancode://cecill-1.0",
             "CeCILL 1.0"
@@ -309,7 +306,8 @@
         "__impliedAmbiguousNames": [
             "CeCILL Free Software License Agreement v1.0",
             "CECILL-1.0",
-            "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL Avertissement"
+            "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL Avertissement",
+            "scancode:cecill-1.0"
         ],
         "__impliedComments": [
             [
@@ -435,14 +433,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "CeCILL Free Software License Agreement 1.0",
-                        "CECILL-1.0",
-                        "scancode:cecill-1.0"
+                        "CECILL-1.0"
                     ],
                     "__impliedId": "CECILL-1.0",
                     "__impliedAmbiguousNames": [
                         "CeCILL Free Software License Agreement v1.0",
                         "CECILL-1.0",
-                        "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL Avertissement"
+                        "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL Avertissement",
+                        "scancode:cecill-1.0"
                     ],
                     "__impliedComments": [
                         [

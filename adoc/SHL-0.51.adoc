@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `Solderpad Hardware License 0.51`
-* `scancode:shl-0.51`
 * `scancode://shl-0.51`
 
 === Comments on (easy) usability
@@ -137,7 +136,6 @@ repository] is generated)
     "__impliedNames": [
         "SHL-0.51",
         "Solderpad Hardware License 0.51",
-        "scancode:shl-0.51",
         "Solderpad Hardware License, Version 0.51",
         "scancode://shl-0.51",
         "SolderPad Hardware License, Version 0.51"
@@ -148,7 +146,8 @@ repository] is generated)
         "SOLDERPAD HARDWARE LICENSE version 0.51",
         "SOLDERPAD HARDWARE LICENSE Version 0.51",
         "Solderpad Hardware License Version 0.51",
-        "SHL-0.51"
+        "SHL-0.51",
+        "scancode:shl-0.51"
     ],
     "__impliedComments": [
         [
@@ -260,8 +259,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Solderpad Hardware License 0.51",
-                    "SHL-0.51",
-                    "scancode:shl-0.51"
+                    "SHL-0.51"
                 ],
                 "__impliedId": "SHL-0.51",
                 "__impliedAmbiguousNames": [
@@ -269,7 +267,8 @@ repository] is generated)
                     "SOLDERPAD HARDWARE LICENSE version 0.51",
                     "SOLDERPAD HARDWARE LICENSE Version 0.51",
                     "Solderpad Hardware License Version 0.51",
-                    "SHL-0.51"
+                    "SHL-0.51",
+                    "scancode:shl-0.51"
                 ],
                 "__impliedComments": [
                     [

@@ -9,10 +9,6 @@
 
 *Other Names:*
 
-- =scancode:rpl-1.5=
-
-- =osi:RPL-1.5=
-
 - =Reciprocal Public License, Version 1.5=
 
 - =scancode://rpl-1.5=
@@ -335,8 +331,6 @@
       "__impliedNames": [
           "RPL-1.5",
           "Reciprocal Public License 1.5",
-          "scancode:rpl-1.5",
-          "osi:RPL-1.5",
           "Reciprocal Public License, Version 1.5",
           "scancode://rpl-1.5",
           "RPL 1.5"
@@ -345,7 +339,9 @@
       "__impliedAmbiguousNames": [
           "Reciprocal Public License",
           "Reciprocal Public License 1.5",
-          "RPL-1.5"
+          "RPL-1.5",
+          "scancode:rpl-1.5",
+          "osi:RPL-1.5"
       ],
       "__impliedComments": [
           [
@@ -592,14 +588,14 @@
               "_implications": {
                   "__impliedNames": [
                       "Reciprocal Public License 1.5",
-                      "RPL-1.5",
-                      "scancode:rpl-1.5",
-                      "osi:RPL-1.5"
+                      "RPL-1.5"
                   ],
                   "__impliedId": "RPL-1.5",
                   "__impliedAmbiguousNames": [
                       "Reciprocal Public License 1.5",
-                      "RPL-1.5"
+                      "RPL-1.5",
+                      "scancode:rpl-1.5",
+                      "osi:RPL-1.5"
                   ],
                   "__impliedComments": [
                       [

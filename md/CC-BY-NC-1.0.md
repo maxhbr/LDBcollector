@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-NC 1.0 (generic)`
 
--   `scancode:cc-by-nc-1.0`
-
 -   `Creative Comnons Attribution-NonCommercial 1.0 Generic`
 
 -   `scancode://cc-by-nc-1.0`
@@ -216,7 +214,6 @@
         "__impliedNames": [
             "CC-BY-NC-1.0",
             "Creative Commons BY-NC 1.0 (generic)",
-            "scancode:cc-by-nc-1.0",
             "Creative Comnons Attribution-NonCommercial 1.0 Generic",
             "Creative Commons Attribution Non Commercial 1.0 Generic",
             "scancode://cc-by-nc-1.0"
@@ -226,7 +223,8 @@
             "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
             "Creative Commons Attribution Non Commercial 1.0 Generic",
             "CC-BY-NC-1.0",
-            "Creative Commons Attribution-NonCommercial 1.0"
+            "Creative Commons Attribution-NonCommercial 1.0",
+            "scancode:cc-by-nc-1.0"
         ],
         "__impliedRatingState": [
             [
@@ -602,14 +600,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-NC 1.0 (generic)",
-                        "CC-BY-NC-1.0",
-                        "scancode:cc-by-nc-1.0"
+                        "CC-BY-NC-1.0"
                     ],
                     "__impliedId": "CC-BY-NC-1.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Non Commercial 1.0 Generic",
                         "CC-BY-NC-1.0",
-                        "Creative Commons Attribution-NonCommercial 1.0"
+                        "Creative Commons Attribution-NonCommercial 1.0",
+                        "scancode:cc-by-nc-1.0"
                     ],
                     "__impliedComments": [
                         [

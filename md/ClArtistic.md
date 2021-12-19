@@ -8,8 +8,6 @@
 
 -   `ClArtistic License`
 
--   `scancode:artistic-clarified`
-
 -   `scancode://artistic-clarified`
 
 ## Comments on (easy) usability
@@ -221,7 +219,6 @@
             "Artistic (clarified)",
             "Clarified Artistic License",
             "ClArtistic License",
-            "scancode:artistic-clarified",
             "scancode://artistic-clarified"
         ],
         "__impliedId": "ClArtistic",
@@ -229,7 +226,8 @@
         "__impliedAmbiguousNames": [
             "Artistic clarified",
             "ClArtistic",
-            "CLARTISTIC"
+            "CLARTISTIC",
+            "scancode:artistic-clarified"
         ],
         "__impliedComments": [
             [
@@ -406,13 +404,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "ClArtistic License",
-                        "ClArtistic",
-                        "scancode:artistic-clarified"
+                        "ClArtistic"
                     ],
                     "__impliedId": "ClArtistic",
                     "__impliedAmbiguousNames": [
                         "ClArtistic",
-                        "CLARTISTIC"
+                        "CLARTISTIC",
+                        "scancode:artistic-clarified"
                     ],
                     "__impliedComments": [
                         [

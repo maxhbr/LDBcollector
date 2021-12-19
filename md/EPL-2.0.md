@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:epl-2.0`
-
--   `osi:EPL-2.0`
-
 -   `eclipse-2.0`
 
 -   `Eclipse Public License - v 2.0`
@@ -593,8 +589,6 @@
             "EPL-2.0",
             "Eclipse Public License 2.0",
             "epl-2.0",
-            "scancode:epl-2.0",
-            "osi:EPL-2.0",
             "eclipse-2.0",
             "Eclipse Public License - v 2.0",
             "scancode://epl-2.0",
@@ -624,7 +618,9 @@
             "Eclipse Public License -v 2.0",
             "Eclipse Public License v 2.0",
             "Eclipse Public License, V 2.0",
-            "Eclipse Public License v. 2.0"
+            "Eclipse Public License v. 2.0",
+            "scancode:epl-2.0",
+            "osi:EPL-2.0"
         ],
         "__impliedComments": [
             [
@@ -1196,9 +1192,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Eclipse Public License 2.0",
-                        "EPL-2.0",
-                        "scancode:epl-2.0",
-                        "osi:EPL-2.0"
+                        "EPL-2.0"
                     ],
                     "__impliedId": "EPL-2.0",
                     "__impliedAmbiguousNames": [
@@ -1222,7 +1216,9 @@
                         "Eclipse Public License -v 2.0",
                         "Eclipse Public License v 2.0",
                         "Eclipse Public License, V 2.0",
-                        "Eclipse Public License v. 2.0"
+                        "Eclipse Public License v. 2.0",
+                        "scancode:epl-2.0",
+                        "osi:EPL-2.0"
                     ],
                     "__impliedComments": [
                         [

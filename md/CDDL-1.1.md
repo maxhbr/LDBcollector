@@ -6,8 +6,6 @@
 
 -   `CDDL 1.1`
 
--   `scancode:cddl-1.1`
-
 -   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1`
 
 -   `scancode://cddl-1.1`
@@ -322,7 +320,6 @@
             "CDDL-1.1",
             "Common Development and Distribution License 1.1",
             "CDDL 1.1",
-            "scancode:cddl-1.1",
             "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1",
             "scancode://cddl-1.1"
         ],
@@ -334,7 +331,8 @@
             "Common Development and Distribution License 1.1 (\"CDDL\")",
             "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
             "https://oss.oracle.com/licenses/CDDL+GPL-1.1",
-            "Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved"
+            "Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved",
+            "scancode:cddl-1.1"
         ],
         "__impliedComments": [
             [
@@ -884,8 +882,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "CDDL 1.1",
-                        "CDDL-1.1",
-                        "scancode:cddl-1.1"
+                        "CDDL-1.1"
                     ],
                     "__impliedId": "CDDL-1.1",
                     "__impliedAmbiguousNames": [
@@ -894,7 +891,8 @@
                         "Common Development and Distribution License 1.1 (\"CDDL\")",
                         "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
                         "https://oss.oracle.com/licenses/CDDL+GPL-1.1",
-                        "Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved"
+                        "Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved",
+                        "scancode:cddl-1.1"
                     ],
                     "__impliedComments": [
                         [

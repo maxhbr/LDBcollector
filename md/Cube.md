@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:cube`
-
 -   `scancode://cube`
 
 ## Comments on (easy) usability
@@ -94,14 +92,14 @@
         "__impliedNames": [
             "Cube",
             "Cube License",
-            "scancode:cube",
             "scancode://cube"
         ],
         "__impliedId": "Cube",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Cube",
-            "Cube License"
+            "Cube License",
+            "scancode:cube"
         ],
         "__impliedComments": [
             [
@@ -232,12 +230,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Cube License",
-                        "Cube",
-                        "scancode:cube"
+                        "Cube"
                     ],
                     "__impliedId": "Cube",
                     "__impliedAmbiguousNames": [
-                        "Cube License"
+                        "Cube License",
+                        "scancode:cube"
                     ],
                     "__impliedComments": [
                         [

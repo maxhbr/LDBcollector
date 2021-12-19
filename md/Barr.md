@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:barr-tex`
-
 -   `scancode://barr-tex`
 
 -   `Barr TeX License`
@@ -78,7 +76,6 @@
         "__impliedNames": [
             "Barr",
             "Barr License",
-            "scancode:barr-tex",
             "scancode://barr-tex",
             "Barr TeX License"
         ],
@@ -88,7 +85,8 @@
             "Barr",
             "Barr License",
             "BARR LICENSE",
-            "BARR License"
+            "BARR License",
+            "scancode:barr-tex"
         ],
         "__impliedComments": [
             [
@@ -221,14 +219,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Barr License",
-                        "Barr",
-                        "scancode:barr-tex"
+                        "Barr"
                     ],
                     "__impliedId": "Barr",
                     "__impliedAmbiguousNames": [
                         "Barr License",
                         "BARR LICENSE",
-                        "BARR License"
+                        "BARR License",
+                        "scancode:barr-tex"
                     ],
                     "__impliedComments": [
                         [

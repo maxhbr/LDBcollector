@@ -12,8 +12,6 @@
 *Other Names:*
 
 * `CUA OPL 1.0`
-* `scancode:cua-opl-1.0`
-* `osi:CUA-OPL-1.0`
 * `CUA Office Public License 1.0`
 * `CUA Office Public License`
 * `scancode://cua-opl-1.0`
@@ -544,8 +542,6 @@ repository] is generated)
     "__impliedNames": [
         "CUA-OPL-1.0",
         "CUA OPL 1.0",
-        "scancode:cua-opl-1.0",
-        "osi:CUA-OPL-1.0",
         "CUA Office Public License 1.0",
         "CUA Office Public License",
         "CUA Office Public License v1.0",
@@ -558,7 +554,9 @@ repository] is generated)
         "CUA-OPL, Version 1.0",
         "CUA-OPL 1.0",
         "CUA-OPL-1.0",
-        "CUA Office Public License Version 1.0"
+        "CUA Office Public License Version 1.0",
+        "scancode:cua-opl-1.0",
+        "osi:CUA-OPL-1.0"
     ],
     "__impliedComments": [
         [
@@ -763,9 +761,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "CUA OPL 1.0",
-                    "CUA-OPL-1.0",
-                    "scancode:cua-opl-1.0",
-                    "osi:CUA-OPL-1.0"
+                    "CUA-OPL-1.0"
                 ],
                 "__impliedId": "CUA-OPL-1.0",
                 "__impliedAmbiguousNames": [
@@ -774,7 +770,9 @@ repository] is generated)
                     "CUA-OPL, Version 1.0",
                     "CUA-OPL 1.0",
                     "CUA-OPL-1.0",
-                    "CUA Office Public License Version 1.0"
+                    "CUA Office Public License Version 1.0",
+                    "scancode:cua-opl-1.0",
+                    "osi:CUA-OPL-1.0"
                 ],
                 "__impliedComments": [
                     [

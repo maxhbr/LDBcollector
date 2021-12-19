@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:sax-pd`
-
 -   `scancode://sax-pd`
 
 ## Comments on (easy) usability
@@ -112,7 +110,6 @@
         "__impliedNames": [
             "SAX-PD",
             "SAX Public Domain Notice",
-            "scancode:sax-pd",
             "Sax Public Domain Notice",
             "scancode://sax-pd"
         ],
@@ -122,7 +119,8 @@
             "for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)",
             "http://www.saxproject.org/copying.html",
             "https://spdx.org/licenses/sax-pd",
-            "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"
+            "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt",
+            "scancode:sax-pd"
         ],
         "__impliedComments": [
             [
@@ -260,8 +258,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "SAX Public Domain Notice",
-                        "SAX-PD",
-                        "scancode:sax-pd"
+                        "SAX-PD"
                     ],
                     "__impliedId": "SAX-PD",
                     "__impliedAmbiguousNames": [
@@ -269,7 +266,8 @@
                         "for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)",
                         "http://www.saxproject.org/copying.html",
                         "https://spdx.org/licenses/sax-pd",
-                        "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"
+                        "http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt",
+                        "scancode:sax-pd"
                     ],
                     "__impliedComments": [
                         [

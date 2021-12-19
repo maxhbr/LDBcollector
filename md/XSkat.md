@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:xskat`
-
 -   `scancode://xskat`
 
 ## Comments on (easy) usability
@@ -88,7 +86,6 @@
         "__impliedNames": [
             "XSkat",
             "XSkat License",
-            "scancode:xskat",
             "scancode://xskat"
         ],
         "__impliedId": "XSkat",
@@ -99,7 +96,8 @@
             "XSKAT LICENSE",
             "XSKAT License",
             "under XSkat",
-            "under XSKAT"
+            "under XSKAT",
+            "scancode:xskat"
         ],
         "__impliedComments": [
             [
@@ -248,8 +246,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "XSkat License",
-                        "XSkat",
-                        "scancode:xskat"
+                        "XSkat"
                     ],
                     "__impliedId": "XSkat",
                     "__impliedAmbiguousNames": [
@@ -257,7 +254,8 @@
                         "XSKAT LICENSE",
                         "XSKAT License",
                         "under XSkat",
-                        "under XSKAT"
+                        "under XSKAT",
+                        "scancode:xskat"
                     ],
                     "__impliedComments": [
                         [

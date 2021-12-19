@@ -6,8 +6,6 @@
 
 -   `OpenLDAP Public License 2.3`
 
--   `scancode:openldap-2.3`
-
 -   `scancode://openldap-2.3`
 
 ## Comments on (easy) usability
@@ -122,7 +120,6 @@
             "OLDAP-2.3",
             "Open LDAP Public License v2.3",
             "OpenLDAP Public License 2.3",
-            "scancode:openldap-2.3",
             "scancode://openldap-2.3"
         ],
         "__impliedId": "OLDAP-2.3",
@@ -131,7 +128,8 @@
             "OLDAP, 2.3",
             "OLDAP License, Version 2.3",
             "OLDAP License, 2.3",
-            "OpenLDAP Public License Version 2.3"
+            "OpenLDAP Public License Version 2.3",
+            "scancode:openldap-2.3"
         ],
         "__impliedComments": [
             [
@@ -267,8 +265,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "OpenLDAP Public License 2.3",
-                        "OLDAP-2.3",
-                        "scancode:openldap-2.3"
+                        "OLDAP-2.3"
                     ],
                     "__impliedId": "OLDAP-2.3",
                     "__impliedAmbiguousNames": [
@@ -276,7 +273,8 @@
                         "OLDAP, 2.3",
                         "OLDAP License, Version 2.3",
                         "OLDAP License, 2.3",
-                        "OpenLDAP Public License Version 2.3"
+                        "OpenLDAP Public License Version 2.3",
+                        "scancode:openldap-2.3"
                     ],
                     "__impliedComments": [
                         [

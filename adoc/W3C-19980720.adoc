@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:w3c-software-19980720`
 * `W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)`
 * `scancode://w3c-software-19980720`
 * `W3C-SOFTWARE-19980720`
@@ -220,7 +219,6 @@ repository] is generated)
     "__impliedNames": [
         "W3C-19980720",
         "W3C Software Notice and License (1998-07-20)",
-        "scancode:w3c-software-19980720",
         "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)",
         "scancode://w3c-software-19980720",
         "W3C-SOFTWARE-19980720"
@@ -229,7 +227,8 @@ repository] is generated)
     "__impliedAmbiguousNames": [
         "W3C Software Notice and License (1998-07-20)",
         "W3C-19980720",
-        "http://www.w3.org/Consortium/Legal/copyright-software-19980720"
+        "http://www.w3.org/Consortium/Legal/copyright-software-19980720",
+        "scancode:w3c-software-19980720"
     ],
     "__impliedComments": [
         [
@@ -530,14 +529,14 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "W3C Software Notice and License (1998-07-20)",
-                    "W3C-19980720",
-                    "scancode:w3c-software-19980720"
+                    "W3C-19980720"
                 ],
                 "__impliedId": "W3C-19980720",
                 "__impliedAmbiguousNames": [
                     "W3C Software Notice and License (1998-07-20)",
                     "W3C-19980720",
-                    "http://www.w3.org/Consortium/Legal/copyright-software-19980720"
+                    "http://www.w3.org/Consortium/Legal/copyright-software-19980720",
+                    "scancode:w3c-software-19980720"
                 ],
                 "__impliedComments": [
                     [

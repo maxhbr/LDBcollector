@@ -6,8 +6,6 @@
 
 -   `Aladdin Free Public License 8.0`
 
--   `scancode:afpl-8.0`
-
 -   `scancode://afpl-8.0`
 
 -   `Aladdin FPL v8`
@@ -282,7 +280,6 @@
             "Aladdin",
             "Aladdin Free Public License",
             "Aladdin Free Public License 8.0",
-            "scancode:afpl-8.0",
             "scancode://afpl-8.0",
             "Aladdin FPL v8"
         ],
@@ -290,7 +287,8 @@
         "__impliedAmbiguousNames": [
             "Aladdin License",
             "ALADDIN LICENSE",
-            "ALADDIN License"
+            "ALADDIN License",
+            "scancode:afpl-8.0"
         ],
         "__impliedComments": [
             [
@@ -431,14 +429,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Aladdin Free Public License 8.0",
-                        "Aladdin",
-                        "scancode:afpl-8.0"
+                        "Aladdin"
                     ],
                     "__impliedId": "Aladdin",
                     "__impliedAmbiguousNames": [
                         "Aladdin License",
                         "ALADDIN LICENSE",
-                        "ALADDIN License"
+                        "ALADDIN License",
+                        "scancode:afpl-8.0"
                     ],
                     "__impliedComments": [
                         [

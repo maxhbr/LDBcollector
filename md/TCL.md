@@ -6,8 +6,6 @@
 
 -   `TCL License`
 
--   `scancode:tcl`
-
 -   `scancode://tcl`
 
 -   `scancode://ttcl`
@@ -129,7 +127,6 @@
             "TCL",
             "TCL/TK License",
             "TCL License",
-            "scancode:tcl",
             "scancode://tcl",
             "scancode://ttcl",
             "LicenseRef-scancode-ttcl"
@@ -138,7 +135,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "TCL",
-            "TCL License"
+            "TCL License",
+            "scancode:tcl"
         ],
         "__impliedComments": [
             [
@@ -301,12 +299,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "TCL License",
-                        "TCL",
-                        "scancode:tcl"
+                        "TCL"
                     ],
                     "__impliedId": "TCL",
                     "__impliedAmbiguousNames": [
-                        "TCL License"
+                        "TCL License",
+                        "scancode:tcl"
                     ],
                     "__impliedComments": [
                         [

@@ -8,8 +8,6 @@
 
 -   `GFDL-1.3`
 
--   `scancode:gfdl-1.3`
-
 -   `GNU Free Documentation License Version 1.3`
 
 -   `scancode://gfdl-1.3`
@@ -788,7 +786,6 @@
             "GFDL-1.3-only",
             "GNU Free Documentation License 1.3",
             "GFDL-1.3",
-            "scancode:gfdl-1.3",
             "GNU Free Documentation License Version 1.3",
             "GNU Free Documentation License v1.3 only",
             "scancode://gfdl-1.3",
@@ -804,7 +801,8 @@
             "GFDL-1.3",
             "GFDL version 1.3",
             "Change license on the manual to GFDLv1.3",
-            "GNU FDL license 1.3"
+            "GNU FDL license 1.3",
+            "scancode:gfdl-1.3"
         ],
         "__impliedComments": [
             [
@@ -1738,8 +1736,7 @@
                     "__impliedNames": [
                         "GNU Free Documentation License 1.3",
                         "GFDL-1.3",
-                        "GFDL-1.3-only",
-                        "scancode:gfdl-1.3"
+                        "GFDL-1.3-only"
                     ],
                     "__impliedId": "GFDL-1.3-only",
                     "__impliedAmbiguousNames": [
@@ -1750,7 +1747,8 @@
                         "GFDL-1.3",
                         "GFDL version 1.3",
                         "Change license on the manual to GFDLv1.3",
-                        "GNU FDL license 1.3"
+                        "GNU FDL license 1.3",
+                        "scancode:gfdl-1.3"
                     ],
                     "__impliedComments": [
                         [

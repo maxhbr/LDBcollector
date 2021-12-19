@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-SA 2.5`
 
--   `scancode:cc-by-sa-2.5`
-
 -   `Creative Commons Attribution-ShareAlike 2.5`
 
 -   `scancode://cc-by-sa-2.5`
@@ -213,7 +211,6 @@
         "__impliedNames": [
             "CC-BY-SA-2.5",
             "Creative Commons BY-SA 2.5",
-            "scancode:cc-by-sa-2.5",
             "Creative Commons Attribution-ShareAlike 2.5",
             "Creative Commons Attribution Share Alike 2.5 Generic",
             "scancode://cc-by-sa-2.5"
@@ -223,7 +220,8 @@
             "Creative Commons Attribution Share Alike 2.5",
             "CC-BY-SA-2.5",
             "Creative Commons Attribution-ShareAlike 2.5",
-            "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)"
+            "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)",
+            "scancode:cc-by-sa-2.5"
         ],
         "__impliedComments": [
             [
@@ -568,15 +566,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-SA 2.5",
-                        "CC-BY-SA-2.5",
-                        "scancode:cc-by-sa-2.5"
+                        "CC-BY-SA-2.5"
                     ],
                     "__impliedId": "CC-BY-SA-2.5",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Share Alike 2.5",
                         "CC-BY-SA-2.5",
                         "Creative Commons Attribution-ShareAlike 2.5",
-                        "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)"
+                        "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)",
+                        "scancode:cc-by-sa-2.5"
                     ],
                     "__impliedComments": [
                         [

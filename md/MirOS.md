@@ -8,10 +8,6 @@
 
 -   `MirOS Licence`
 
--   `scancode:mir-os`
-
--   `osi:MirOS`
-
 -   `The MirOS Licence (MirOS)`
 
 -   `scancode://mir-os`
@@ -194,8 +190,6 @@
             "MirOS",
             "MirOS License",
             "MirOS Licence",
-            "scancode:mir-os",
-            "osi:MirOS",
             "The MirOS Licence (MirOS)",
             "The MirOS Licence",
             "scancode://mir-os"
@@ -209,7 +203,9 @@
             "http://opensource.org/licenses/miros.html",
             "https://www.mirbsd.org/MirOS-Licence",
             "http://www.opensource.org/licenses/miros",
-            "https://www.opensource.org/licenses/miros"
+            "https://www.opensource.org/licenses/miros",
+            "scancode:mir-os",
+            "osi:MirOS"
         ],
         "__impliedComments": [
             [
@@ -614,9 +610,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "MirOS Licence",
-                        "MirOS",
-                        "scancode:mir-os",
-                        "osi:MirOS"
+                        "MirOS"
                     ],
                     "__impliedId": "MirOS",
                     "__impliedAmbiguousNames": [
@@ -624,7 +618,9 @@
                         "http://opensource.org/licenses/miros.html",
                         "https://www.mirbsd.org/MirOS-Licence",
                         "http://www.opensource.org/licenses/miros",
-                        "https://www.opensource.org/licenses/miros"
+                        "https://www.opensource.org/licenses/miros",
+                        "scancode:mir-os",
+                        "osi:MirOS"
                     ],
                     "__impliedComments": [
                         [

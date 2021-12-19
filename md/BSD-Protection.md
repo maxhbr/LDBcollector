@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:bsd-protection`
-
 -   `scancode://bsd-protection`
 
 ## Comments on (easy) usability
@@ -199,14 +197,14 @@
         "__impliedNames": [
             "BSD-Protection",
             "BSD Protection License",
-            "scancode:bsd-protection",
             "scancode://bsd-protection"
         ],
         "__impliedId": "BSD-Protection",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "BSD Protection License",
-            "BSD Protection"
+            "BSD Protection",
+            "scancode:bsd-protection"
         ],
         "__impliedComments": [
             [
@@ -343,12 +341,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD Protection License",
-                        "BSD-Protection",
-                        "scancode:bsd-protection"
+                        "BSD-Protection"
                     ],
                     "__impliedId": "BSD-Protection",
                     "__impliedAmbiguousNames": [
-                        "BSD Protection License"
+                        "BSD Protection License",
+                        "scancode:bsd-protection"
                     ],
                     "__impliedComments": [
                         [

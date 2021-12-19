@@ -6,10 +6,6 @@
 
 -   `Naumen License`
 
--   `scancode:naumen`
-
--   `osi:Naumen`
-
 -   `scancode://naumen`
 
 ## Comments on (easy) usability
@@ -134,8 +130,6 @@
             "Naumen",
             "Naumen Public License",
             "Naumen License",
-            "scancode:naumen",
-            "osi:Naumen",
             "NAUMEN Public License",
             "scancode://naumen"
         ],
@@ -146,7 +140,9 @@
             "Naumen License",
             "NAUMEN LICENSE",
             "NAUMEN License",
-            "NAUMEN Public License"
+            "NAUMEN Public License",
+            "scancode:naumen",
+            "osi:Naumen"
         ],
         "__impliedComments": [
             [
@@ -412,16 +408,16 @@
                 "_implications": {
                     "__impliedNames": [
                         "Naumen License",
-                        "Naumen",
-                        "scancode:naumen",
-                        "osi:Naumen"
+                        "Naumen"
                     ],
                     "__impliedId": "Naumen",
                     "__impliedAmbiguousNames": [
                         "Naumen License",
                         "NAUMEN LICENSE",
                         "NAUMEN License",
-                        "NAUMEN Public License"
+                        "NAUMEN Public License",
+                        "scancode:naumen",
+                        "osi:Naumen"
                     ],
                     "__impliedComments": [
                         [

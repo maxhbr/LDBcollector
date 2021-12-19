@@ -6,10 +6,6 @@
 
 -   `BSD 2-Clause Patent License`
 
--   `scancode:bsd-plus-patent`
-
--   `osi:BSDplusPatent`
-
 -   `scancode://bsd-plus-patent`
 
 -   `BSD-2-Clause Plus Patent`
@@ -147,15 +143,15 @@
             "BSD-2-Clause-Patent",
             "BSD-2-Clause Plus Patent License",
             "BSD 2-Clause Patent License",
-            "scancode:bsd-plus-patent",
-            "osi:BSDplusPatent",
             "scancode://bsd-plus-patent",
             "BSD-2-Clause Plus Patent"
         ],
         "__impliedId": "BSD-2-Clause-Patent",
         "__impliedAmbiguousNames": [
             "BSD-2-Clause-Patent",
-            "BSD-2-Clause Plus Patent License"
+            "BSD-2-Clause Plus Patent License",
+            "scancode:bsd-plus-patent",
+            "osi:BSDplusPatent"
         ],
         "__impliedComments": [
             [
@@ -313,14 +309,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD 2-Clause Patent License",
-                        "BSD-2-Clause-Patent",
-                        "scancode:bsd-plus-patent",
-                        "osi:BSDplusPatent"
+                        "BSD-2-Clause-Patent"
                     ],
                     "__impliedId": "BSD-2-Clause-Patent",
                     "__impliedAmbiguousNames": [
                         "BSD-2-Clause-Patent",
-                        "BSD-2-Clause Plus Patent License"
+                        "BSD-2-Clause Plus Patent License",
+                        "scancode:bsd-plus-patent",
+                        "osi:BSDplusPatent"
                     ],
                     "__impliedComments": [
                         [

@@ -6,10 +6,6 @@
 
 -   `Frameworx License 1.0`
 
--   `scancode:frameworx-1.0`
-
--   `osi:Frameworx-1.0`
-
 -   `Frameworx License, Version 1.0`
 
 -   `scancode://frameworx-1.0`
@@ -144,8 +140,6 @@
         "__impliedNames": [
             "Frameworx-1.0",
             "Frameworx License 1.0",
-            "scancode:frameworx-1.0",
-            "osi:Frameworx-1.0",
             "Frameworx License, Version 1.0",
             "Frameworx Open License 1.0",
             "scancode://frameworx-1.0",
@@ -157,7 +151,9 @@
             "Frameworx 1.0",
             "Frameworx License, Version 1.0",
             "Frameworx License, 1.0",
-            "THE FRAMEWORX OPEN LICENSE 1.0"
+            "THE FRAMEWORX OPEN LICENSE 1.0",
+            "scancode:frameworx-1.0",
+            "osi:Frameworx-1.0"
         ],
         "__impliedComments": [
             [
@@ -345,9 +341,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Frameworx License 1.0",
-                        "Frameworx-1.0",
-                        "scancode:frameworx-1.0",
-                        "osi:Frameworx-1.0"
+                        "Frameworx-1.0"
                     ],
                     "__impliedId": "Frameworx-1.0",
                     "__impliedAmbiguousNames": [
@@ -355,7 +349,9 @@
                         "Frameworx 1.0",
                         "Frameworx License, Version 1.0",
                         "Frameworx License, 1.0",
-                        "THE FRAMEWORX OPEN LICENSE 1.0"
+                        "THE FRAMEWORX OPEN LICENSE 1.0",
+                        "scancode:frameworx-1.0",
+                        "osi:Frameworx-1.0"
                     ],
                     "__impliedComments": [
                         [

@@ -8,10 +8,6 @@
 
 -   `Entessa License`
 
--   `scancode:entessa-1.0`
-
--   `osi:Entessa`
-
 -   `Entessa Public License 1.0`
 
 -   `scancode://entessa-1.0`
@@ -153,8 +149,6 @@
             "Entessa Public License v1.0",
             "Entessa Public License",
             "Entessa License",
-            "scancode:entessa-1.0",
-            "osi:Entessa",
             "Entessa Public License 1.0",
             "scancode://entessa-1.0",
             "Entessa 1.0"
@@ -167,7 +161,9 @@
             "ENTESSA LICENSE",
             "ENTESSA License",
             "Entessa Public License",
-            "ENTESSA Public License"
+            "ENTESSA Public License",
+            "scancode:entessa-1.0",
+            "osi:Entessa"
         ],
         "__impliedComments": [
             [
@@ -389,9 +385,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Entessa License",
-                        "Entessa",
-                        "scancode:entessa-1.0",
-                        "osi:Entessa"
+                        "Entessa"
                     ],
                     "__impliedId": "Entessa",
                     "__impliedAmbiguousNames": [
@@ -399,7 +393,9 @@
                         "ENTESSA LICENSE",
                         "ENTESSA License",
                         "Entessa Public License",
-                        "ENTESSA Public License"
+                        "ENTESSA Public License",
+                        "scancode:entessa-1.0",
+                        "osi:Entessa"
                     ],
                     "__impliedComments": [
                         [

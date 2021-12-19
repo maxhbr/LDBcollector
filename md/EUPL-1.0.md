@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:eupl-1.0`
-
 -   `scancode://eupl-1.0`
 
 -   `EUPL 1.0`
@@ -241,7 +239,6 @@
         "__impliedNames": [
             "EUPL-1.0",
             "European Union Public License 1.0",
-            "scancode:eupl-1.0",
             "scancode://eupl-1.0",
             "EUPL 1.0"
         ],
@@ -257,7 +254,8 @@
             "European Union Public License v.1.0",
             "European Union Public License, Version 1.0",
             "European Union Public License (EUPL) version 1.0",
-            "European Union Public License v1.0"
+            "European Union Public License v1.0",
+            "scancode:eupl-1.0"
         ],
         "__impliedComments": [
             [
@@ -402,8 +400,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "European Union Public License 1.0",
-                        "EUPL-1.0",
-                        "scancode:eupl-1.0"
+                        "EUPL-1.0"
                     ],
                     "__impliedId": "EUPL-1.0",
                     "__impliedAmbiguousNames": [
@@ -416,7 +413,8 @@
                         "European Union Public License v.1.0",
                         "European Union Public License, Version 1.0",
                         "European Union Public License (EUPL) version 1.0",
-                        "European Union Public License v1.0"
+                        "European Union Public License v1.0",
+                        "scancode:eupl-1.0"
                     ],
                     "__impliedComments": [
                         [

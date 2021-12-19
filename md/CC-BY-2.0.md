@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY 2.0`
 
--   `scancode:cc-by-2.0`
-
 -   `scancode://cc-by-2.0`
 
 ## Comments on (easy) usability
@@ -188,7 +186,6 @@
         "__impliedNames": [
             "CC-BY-2.0",
             "Creative Commons BY 2.0",
-            "scancode:cc-by-2.0",
             "Creative Commons Attribution 2.0 Generic",
             "scancode://cc-by-2.0"
         ],
@@ -196,7 +193,8 @@
         "__impliedAmbiguousNames": [
             "CC-BY-2.0",
             "Creative Commons Attribution 2.0",
-            "http://creativecommons.org/licenses/by/2.0"
+            "http://creativecommons.org/licenses/by/2.0",
+            "scancode:cc-by-2.0"
         ],
         "__impliedComments": [
             [
@@ -476,14 +474,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY 2.0",
-                        "CC-BY-2.0",
-                        "scancode:cc-by-2.0"
+                        "CC-BY-2.0"
                     ],
                     "__impliedId": "CC-BY-2.0",
                     "__impliedAmbiguousNames": [
                         "CC-BY-2.0",
                         "Creative Commons Attribution 2.0",
-                        "http://creativecommons.org/licenses/by/2.0"
+                        "http://creativecommons.org/licenses/by/2.0",
+                        "scancode:cc-by-2.0"
                     ],
                     "__impliedComments": [
                         [

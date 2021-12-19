@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY 1.0`
 
--   `scancode:cc-by-1.0`
-
 -   `scancode://cc-by-1.0`
 
 ## Comments on (easy) usability
@@ -127,7 +125,6 @@
         "__impliedNames": [
             "CC-BY-1.0",
             "Creative Commons BY 1.0",
-            "scancode:cc-by-1.0",
             "Creative Commons Attribution 1.0 Generic",
             "scancode://cc-by-1.0"
         ],
@@ -136,7 +133,8 @@
             "Creative Commons Attribution License (CC-by), v1.0",
             "Creative Commons Attribution 1.0",
             "CC-BY-1.0",
-            "http://creativecommons.org/licenses/by/1.0"
+            "http://creativecommons.org/licenses/by/1.0",
+            "scancode:cc-by-1.0"
         ],
         "__impliedComments": [
             [
@@ -270,14 +268,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY 1.0",
-                        "CC-BY-1.0",
-                        "scancode:cc-by-1.0"
+                        "CC-BY-1.0"
                     ],
                     "__impliedId": "CC-BY-1.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution 1.0",
                         "CC-BY-1.0",
-                        "http://creativecommons.org/licenses/by/1.0"
+                        "http://creativecommons.org/licenses/by/1.0",
+                        "scancode:cc-by-1.0"
                     ],
                     "__impliedComments": [
                         [

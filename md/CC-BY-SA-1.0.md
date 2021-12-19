@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-SA 1.0`
 
--   `scancode:cc-by-sa-1.0`
-
 -   `Creative Commons ShareAlike 1.0 Generic`
 
 -   `Creative Commons Attribution-ShareAlike 1.0 Generic`
@@ -201,7 +199,6 @@
         "__impliedNames": [
             "CC-BY-SA-1.0",
             "Creative Commons BY-SA 1.0",
-            "scancode:cc-by-sa-1.0",
             "Creative Commons ShareAlike 1.0 Generic",
             "Creative Commons Attribution-ShareAlike 1.0 Generic",
             "Creative Commons Attribution Share Alike 1.0 Generic",
@@ -212,7 +209,8 @@
             "Creative Commons Attribution-Share Alike Generic (CC-BY-SA), v1.0",
             "Creative Commons Attribution Share Alike 1.0",
             "CC-BY-SA-1.0",
-            "Creative Commons Attribution-ShareAlike 1.0"
+            "Creative Commons Attribution-ShareAlike 1.0",
+            "scancode:cc-by-sa-1.0"
         ],
         "__impliedComments": [
             [
@@ -505,14 +503,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-SA 1.0",
-                        "CC-BY-SA-1.0",
-                        "scancode:cc-by-sa-1.0"
+                        "CC-BY-SA-1.0"
                     ],
                     "__impliedId": "CC-BY-SA-1.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Share Alike 1.0",
                         "CC-BY-SA-1.0",
-                        "Creative Commons Attribution-ShareAlike 1.0"
+                        "Creative Commons Attribution-ShareAlike 1.0",
+                        "scancode:cc-by-sa-1.0"
                     ],
                     "__impliedComments": [
                         [

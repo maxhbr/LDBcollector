@@ -12,10 +12,6 @@
 
 -   `Expat`
 
--   `scancode:mit`
-
--   `osi:MIT`
-
 -   `mit-license`
 
 -   `MIT/Expat License`
@@ -264,8 +260,6 @@
             "mit",
             "Expat License",
             "Expat",
-            "scancode:mit",
-            "osi:MIT",
             "mit-license",
             "MIT/Expat License",
             "License :: OSI Approved :: MIT License",
@@ -297,7 +291,9 @@
             "'license': 'MIT'",
             "\"License\": \"MIT\"",
             "https://angular.io/license",
-            "MIT LICENSE"
+            "MIT LICENSE",
+            "scancode:mit",
+            "osi:MIT"
         ],
         "__impliedComments": [
             [

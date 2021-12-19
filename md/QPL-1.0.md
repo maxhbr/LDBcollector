@@ -8,10 +8,6 @@
 
 -   `QPL 1.0`
 
--   `scancode:qpl-1.0`
-
--   `osi:QPL-1.0`
-
 -   `The Q Public License Version (QPL-1.0)`
 
 -   `License :: OSI Approved :: Qt Public License (QPL)`
@@ -254,8 +250,6 @@
             "Q Public License 1.0",
             "Q Public License",
             "QPL 1.0",
-            "scancode:qpl-1.0",
-            "osi:QPL-1.0",
             "The Q Public License Version (QPL-1.0)",
             "License :: OSI Approved :: Qt Public License (QPL)",
             "Q PUBLIC LICENSE version 1.0",
@@ -269,7 +263,9 @@
             "QPL",
             "QPL, Version 1.0",
             "QPL 1.0",
-            "Q PUBLIC LICENSE version 1.0"
+            "Q PUBLIC LICENSE version 1.0",
+            "scancode:qpl-1.0",
+            "osi:QPL-1.0"
         ],
         "__impliedComments": [
             [
@@ -705,15 +701,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "QPL 1.0",
-                        "QPL-1.0",
-                        "scancode:qpl-1.0",
-                        "osi:QPL-1.0"
+                        "QPL-1.0"
                     ],
                     "__impliedId": "QPL-1.0",
                     "__impliedAmbiguousNames": [
                         "QPL, Version 1.0",
                         "QPL 1.0",
-                        "Q PUBLIC LICENSE version 1.0"
+                        "Q PUBLIC LICENSE version 1.0",
+                        "scancode:qpl-1.0",
+                        "osi:QPL-1.0"
                     ],
                     "__impliedComments": [
                         [

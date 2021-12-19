@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `MIT License (with enna advertising)`
-* `scancode:enna`
 * `scancode://enna`
 
 === Comments on (easy) usability
@@ -98,7 +97,6 @@ repository] is generated)
         "MIT-enna",
         "enna License",
         "MIT License (with enna advertising)",
-        "scancode:enna",
         "scancode://enna"
     ],
     "__impliedId": "MIT-enna",
@@ -108,7 +106,8 @@ repository] is generated)
         "MIT enna",
         "MIT ENNA",
         "MIT-enna",
-        "MIT-ENNA"
+        "MIT-ENNA",
+        "scancode:enna"
     ],
     "__impliedComments": [
         [
@@ -258,15 +257,15 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "MIT License (with enna advertising)",
-                    "MIT-enna",
-                    "scancode:enna"
+                    "MIT-enna"
                 ],
                 "__impliedId": "MIT-enna",
                 "__impliedAmbiguousNames": [
                     "MIT enna",
                     "MIT ENNA",
                     "MIT-enna",
-                    "MIT-ENNA"
+                    "MIT-ENNA",
+                    "scancode:enna"
                 ],
                 "__impliedComments": [
                     [

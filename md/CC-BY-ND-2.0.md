@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-ND 2.0 (generic)`
 
--   `scancode:cc-by-nd-2.0`
-
 -   `scancode://cc-by-nd-2.0`
 
 ## Comments on (easy) usability
@@ -116,7 +114,6 @@
         "__impliedNames": [
             "CC-BY-ND-2.0",
             "Creative Commons BY-ND 2.0 (generic)",
-            "scancode:cc-by-nd-2.0",
             "Creative Commons Attribution No Derivatives 2.0 Generic",
             "scancode://cc-by-nd-2.0"
         ],
@@ -124,7 +121,8 @@
         "__impliedAmbiguousNames": [
             "Creative Commons Attribution No Derivatives 2.0 Generic",
             "CC-BY-ND-2.0",
-            "Creative Commons Attribution-NoDerivs 2.0"
+            "Creative Commons Attribution-NoDerivs 2.0",
+            "scancode:cc-by-nd-2.0"
         ],
         "__impliedComments": [
             [
@@ -227,14 +225,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-ND 2.0 (generic)",
-                        "CC-BY-ND-2.0",
-                        "scancode:cc-by-nd-2.0"
+                        "CC-BY-ND-2.0"
                     ],
                     "__impliedId": "CC-BY-ND-2.0",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution No Derivatives 2.0 Generic",
                         "CC-BY-ND-2.0",
-                        "Creative Commons Attribution-NoDerivs 2.0"
+                        "Creative Commons Attribution-NoDerivs 2.0",
+                        "scancode:cc-by-nd-2.0"
                     ],
                     "__impliedComments": [
                         [

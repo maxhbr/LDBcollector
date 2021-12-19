@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:gnuplot`
-
 -   `scancode://gnuplot`
 
 ## Comments on (easy) usability
@@ -87,7 +85,6 @@
         "__impliedNames": [
             "gnuplot",
             "gnuplot License",
-            "scancode:gnuplot",
             "scancode://gnuplot"
         ],
         "__impliedId": "gnuplot",
@@ -96,7 +93,8 @@
             "gnuplot",
             "gnuplot License",
             "GNUPLOT LICENSE",
-            "GNUPLOT License"
+            "GNUPLOT License",
+            "scancode:gnuplot"
         ],
         "__impliedComments": [
             [
@@ -235,14 +233,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "gnuplot License",
-                        "gnuplot",
-                        "scancode:gnuplot"
+                        "gnuplot"
                     ],
                     "__impliedId": "gnuplot",
                     "__impliedAmbiguousNames": [
                         "gnuplot License",
                         "GNUPLOT LICENSE",
-                        "GNUPLOT License"
+                        "GNUPLOT License",
+                        "scancode:gnuplot"
                     ],
                     "__impliedComments": [
                         [

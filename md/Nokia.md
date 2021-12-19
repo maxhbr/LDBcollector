@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:nokos-1.0a`
-
--   `osi:nokia`
-
 -   `Nokia Open Source License, Version 1.0a`
 
 -   `License :: OSI Approved :: Nokia Open Source License`
@@ -478,8 +474,6 @@
         "__impliedNames": [
             "Nokia",
             "Nokia Open Source License",
-            "scancode:nokos-1.0a",
-            "osi:nokia",
             "Nokia Open Source License, Version 1.0a",
             "License :: OSI Approved :: Nokia Open Source License",
             "scancode://nokos-1.0a",
@@ -494,7 +488,9 @@
             "NOKIA License",
             "Nokia Open Source License",
             "NOKIA Open Source License",
-            "NOKOS License"
+            "NOKOS License",
+            "scancode:nokos-1.0a",
+            "osi:nokia"
         ],
         "__impliedComments": [
             [
@@ -728,9 +724,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Nokia Open Source License",
-                        "Nokia",
-                        "scancode:nokos-1.0a",
-                        "osi:nokia"
+                        "Nokia"
                     ],
                     "__impliedId": "Nokia",
                     "__impliedAmbiguousNames": [
@@ -739,7 +733,9 @@
                         "NOKIA License",
                         "Nokia Open Source License",
                         "NOKIA Open Source License",
-                        "NOKOS License"
+                        "NOKOS License",
+                        "scancode:nokos-1.0a",
+                        "osi:nokia"
                     ],
                     "__impliedComments": [
                         [

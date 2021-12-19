@@ -2,7 +2,6 @@
     "__impliedNames": [
         "CC-BY-NC-4.0",
         "Creative Commons BY-NC 4.0 (international)",
-        "scancode:cc-by-nc-4.0",
         "Creative Commons Attribution-NonCommercial 4.0",
         "Creative Commons Attribution Non Commercial 4.0 International",
         "scancode://cc-by-nc-4.0"
@@ -12,7 +11,8 @@
         "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
         "CC-BY-NC-4.0",
         "Creative Commons Attribution Non Commercial 4.0 International",
-        "Creative Commons Attribution-NonCommercial 4.0 International"
+        "Creative Commons Attribution-NonCommercial 4.0 International",
+        "scancode:cc-by-nc-4.0"
     ],
     "__impliedRatingState": [
         [
@@ -226,14 +226,14 @@
             "_implications": {
                 "__impliedNames": [
                     "Creative Commons BY-NC 4.0 (international)",
-                    "CC-BY-NC-4.0",
-                    "scancode:cc-by-nc-4.0"
+                    "CC-BY-NC-4.0"
                 ],
                 "__impliedId": "CC-BY-NC-4.0",
                 "__impliedAmbiguousNames": [
                     "CC-BY-NC-4.0",
                     "Creative Commons Attribution Non Commercial 4.0 International",
-                    "Creative Commons Attribution-NonCommercial 4.0 International"
+                    "Creative Commons Attribution-NonCommercial 4.0 International",
+                    "scancode:cc-by-nc-4.0"
                 ],
                 "__impliedComments": [
                     [

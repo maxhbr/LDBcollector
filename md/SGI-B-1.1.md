@@ -6,8 +6,6 @@
 
 -   `SGI B License 1.1`
 
--   `scancode:sgi-freeb-1.1`
-
 -   `SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])`
 
 -   `scancode://sgi-freeb-1.1`
@@ -97,7 +95,6 @@
         "__impliedNames": [
             "SGI-B-1.1",
             "SGI B License 1.1",
-            "scancode:sgi-freeb-1.1",
             "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])",
             "SGI Free Software License B v1.1",
             "scancode://sgi-freeb-1.1",
@@ -116,7 +113,8 @@
             "SGI FREE SOFTWARE LICENSE B (Version 1.1 02/22/2000)",
             "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc",
             "https://spdx.org/licenses/sgi-b-1.1",
-            "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+            "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])",
+            "scancode:sgi-freeb-1.1"
         ],
         "__impliedComments": [
             [
@@ -269,8 +267,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "SGI B License 1.1",
-                        "SGI-B-1.1",
-                        "scancode:sgi-freeb-1.1"
+                        "SGI-B-1.1"
                     ],
                     "__impliedId": "SGI-B-1.1",
                     "__impliedAmbiguousNames": [
@@ -285,7 +282,8 @@
                         "SGI FREE SOFTWARE LICENSE B (Version 1.1 02/22/2000)",
                         "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc",
                         "https://spdx.org/licenses/sgi-b-1.1",
-                        "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+                        "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])",
+                        "scancode:sgi-freeb-1.1"
                     ],
                     "__impliedComments": [
                         [

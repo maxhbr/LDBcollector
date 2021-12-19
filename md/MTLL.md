@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:mtll`
-
 -   `scancode://mtll`
 
 ## Comments on (easy) usability
@@ -97,7 +95,6 @@
         "__impliedNames": [
             "MTLL",
             "Matrix Template Library License",
-            "scancode:mtll",
             "scancode://mtll"
         ],
         "__impliedId": "MTLL",
@@ -106,7 +103,8 @@
             "MTLL",
             "MTL License",
             "MTL LICENSE",
-            "Software License for MTL"
+            "Software License for MTL",
+            "scancode:mtll"
         ],
         "__impliedComments": [
             [
@@ -253,14 +251,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "MTLL",
-                        "MTLL",
-                        "scancode:mtll"
+                        "MTLL"
                     ],
                     "__impliedId": "MTLL",
                     "__impliedAmbiguousNames": [
                         "MTL License",
                         "MTL LICENSE",
-                        "Software License for MTL"
+                        "Software License for MTL",
+                        "scancode:mtll"
                     ],
                     "__impliedComments": [
                         [

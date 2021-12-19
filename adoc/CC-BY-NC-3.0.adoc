@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `Creative Commons BY-NC 3.0 (unported)`
-* `scancode:cc-by-nc-3.0`
 * `scancode://cc-by-nc-3.0`
 
 === Comments on (easy) usability
@@ -409,7 +408,6 @@ repository] is generated)
     "__impliedNames": [
         "CC-BY-NC-3.0",
         "Creative Commons BY-NC 3.0 (unported)",
-        "scancode:cc-by-nc-3.0",
         "Creative Commons Attribution Non Commercial 3.0 Unported",
         "scancode://cc-by-nc-3.0"
     ],
@@ -418,7 +416,8 @@ repository] is generated)
         "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
         "Creative Commons Attribution Non Commercial 3.0 Unported",
         "CC-BY-NC-3.0",
-        "Creative Commons Attribution-NonCommercial 3.0 Unported"
+        "Creative Commons Attribution-NonCommercial 3.0 Unported",
+        "scancode:cc-by-nc-3.0"
     ],
     "__impliedRatingState": [
         [
@@ -589,14 +588,14 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Creative Commons BY-NC 3.0 (unported)",
-                    "CC-BY-NC-3.0",
-                    "scancode:cc-by-nc-3.0"
+                    "CC-BY-NC-3.0"
                 ],
                 "__impliedId": "CC-BY-NC-3.0",
                 "__impliedAmbiguousNames": [
                     "Creative Commons Attribution Non Commercial 3.0 Unported",
                     "CC-BY-NC-3.0",
-                    "Creative Commons Attribution-NonCommercial 3.0 Unported"
+                    "Creative Commons Attribution-NonCommercial 3.0 Unported",
+                    "scancode:cc-by-nc-3.0"
                 ],
                 "__impliedComments": [
                     [

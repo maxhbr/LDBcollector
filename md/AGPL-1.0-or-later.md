@@ -8,8 +8,6 @@
 
 -   `AGPL-1.0+`
 
--   `scancode:agpl-1.0-plus`
-
 -   `scancode://agpl-1.0-plus`
 
 -   `AGPL 1.0 or later`
@@ -377,14 +375,14 @@
             "Affero General Public License v1.0 or later",
             "Affero General Public License 1.0 or later",
             "AGPL-1.0+",
-            "scancode:agpl-1.0-plus",
             "scancode://agpl-1.0-plus",
             "AGPL 1.0 or later"
         ],
         "__impliedId": "AGPL-1.0-or-later",
         "__impliedAmbiguousNames": [
             "Affero General Public License",
-            "https://spdx.org/licenses/agpl-1.0-or-later"
+            "https://spdx.org/licenses/agpl-1.0-or-later",
+            "scancode:agpl-1.0-plus"
         ],
         "__impliedComments": [
             [
@@ -540,12 +538,12 @@
                     "__impliedNames": [
                         "Affero General Public License 1.0 or later",
                         "AGPL-1.0+",
-                        "AGPL-1.0-or-later",
-                        "scancode:agpl-1.0-plus"
+                        "AGPL-1.0-or-later"
                     ],
                     "__impliedId": "AGPL-1.0-or-later",
                     "__impliedAmbiguousNames": [
-                        "https://spdx.org/licenses/agpl-1.0-or-later"
+                        "https://spdx.org/licenses/agpl-1.0-or-later",
+                        "scancode:agpl-1.0-plus"
                     ],
                     "__impliedComments": [
                         [

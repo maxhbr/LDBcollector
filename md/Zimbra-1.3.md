@@ -6,8 +6,6 @@
 
 -   `Zimbra License 1.3`
 
--   `scancode:zimbra-1.3`
-
 -   `scancode://zimbra-1.3`
 
 -   `Zimbra PL 1.3`
@@ -212,7 +210,6 @@
         "__impliedNames": [
             "Zimbra-1.3",
             "Zimbra License 1.3",
-            "scancode:zimbra-1.3",
             "Zimbra Public License v1.3",
             "scancode://zimbra-1.3",
             "Zimbra PL 1.3"
@@ -223,7 +220,8 @@
             "Zimbra, 1.3",
             "Zimbra License, Version 1.3",
             "Zimbra License 1.3",
-            "Zimbra Public License, Version 1.3"
+            "Zimbra Public License, Version 1.3",
+            "scancode:zimbra-1.3"
         ],
         "__impliedComments": [
             [
@@ -351,8 +349,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Zimbra License 1.3",
-                        "Zimbra-1.3",
-                        "scancode:zimbra-1.3"
+                        "Zimbra-1.3"
                     ],
                     "__impliedId": "Zimbra-1.3",
                     "__impliedAmbiguousNames": [
@@ -360,7 +357,8 @@
                         "Zimbra, 1.3",
                         "Zimbra License, Version 1.3",
                         "Zimbra License 1.3",
-                        "Zimbra Public License, Version 1.3"
+                        "Zimbra Public License, Version 1.3",
+                        "scancode:zimbra-1.3"
                     ],
                     "__impliedComments": [
                         [

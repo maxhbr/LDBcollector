@@ -12,8 +12,6 @@
 *Other Names:*
 
 * `Watcom License 1.0`
-* `scancode:sybase`
-* `osi:Watcom-1.0`
 * `The Sybase Open Source Licence`
 * `scancode://sybase`
 * `Open Watcom 1.0`
@@ -450,8 +448,6 @@ repository] is generated)
         "Watcom-1.0",
         "Sybase Open Watcom Public License 1.0",
         "Watcom License 1.0",
-        "scancode:sybase",
-        "osi:Watcom-1.0",
         "The Sybase Open Source Licence",
         "scancode://sybase",
         "Open Watcom 1.0"
@@ -462,7 +458,9 @@ repository] is generated)
         "Watcom 1.0",
         "Watcom License, Version 1.0",
         "Watcom License, 1.0",
-        "Sybase Open Watcom Public License version 1.0"
+        "Sybase Open Watcom Public License version 1.0",
+        "scancode:sybase",
+        "osi:Watcom-1.0"
     ],
     "__impliedComments": [
         [
@@ -682,9 +680,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Watcom License 1.0",
-                    "Watcom-1.0",
-                    "scancode:sybase",
-                    "osi:Watcom-1.0"
+                    "Watcom-1.0"
                 ],
                 "__impliedId": "Watcom-1.0",
                 "__impliedAmbiguousNames": [
@@ -692,7 +688,9 @@ repository] is generated)
                     "Watcom 1.0",
                     "Watcom License, Version 1.0",
                     "Watcom License, 1.0",
-                    "Sybase Open Watcom Public License version 1.0"
+                    "Sybase Open Watcom Public License version 1.0",
+                    "scancode:sybase",
+                    "osi:Watcom-1.0"
                 ],
                 "__impliedComments": [
                     [

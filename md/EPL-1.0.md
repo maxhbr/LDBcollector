@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:epl-1.0`
-
--   `osi:EPL-1.0`
-
 -   `eclipse-1.0`
 
 -   `Eclipse Public License, Version 1.0`
@@ -452,8 +448,6 @@
             "EPL-1.0",
             "Eclipse Public License 1.0",
             "epl-1.0",
-            "scancode:epl-1.0",
-            "osi:EPL-1.0",
             "eclipse-1.0",
             "Eclipse Public License, Version 1.0",
             "scancode://epl-1.0",
@@ -485,7 +479,9 @@
             "Eclipse Public License - v1.0",
             "Eclipse Public License -v 1.0",
             "Eclipse Public License v 1.0",
-            "Eclipse Public License, V 1.0"
+            "Eclipse Public License, V 1.0",
+            "scancode:epl-1.0",
+            "osi:EPL-1.0"
         ],
         "__impliedComments": [
             [
@@ -1270,9 +1266,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Eclipse Public License 1.0",
-                        "EPL-1.0",
-                        "scancode:epl-1.0",
-                        "osi:EPL-1.0"
+                        "EPL-1.0"
                     ],
                     "__impliedId": "EPL-1.0",
                     "__impliedAmbiguousNames": [
@@ -1297,7 +1291,9 @@
                         "Eclipse Public License - v1.0",
                         "Eclipse Public License -v 1.0",
                         "Eclipse Public License v 1.0",
-                        "Eclipse Public License, V 1.0"
+                        "Eclipse Public License, V 1.0",
+                        "scancode:epl-1.0",
+                        "osi:EPL-1.0"
                     ],
                     "__impliedComments": [
                         [

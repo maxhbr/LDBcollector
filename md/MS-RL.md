@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:ms-rl`
-
--   `osi:MS-RL`
-
 -   `Microsoft Reciprocal License (MS-RL)`
 
 -   `scancode://ms-rl`
@@ -261,8 +257,6 @@
             "MS-RL",
             "Microsoft Reciprocal License",
             "ms-rl",
-            "scancode:ms-rl",
-            "osi:MS-RL",
             "Microsoft Reciprocal License (MS-RL)",
             "scancode://ms-rl"
         ],
@@ -275,7 +269,9 @@
             "MS, Version RL",
             "MS RL",
             "MS License, Version RL",
-            "MS License, RL"
+            "MS License, RL",
+            "scancode:ms-rl",
+            "osi:MS-RL"
         ],
         "__impliedComments": [
             [
@@ -726,9 +722,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Microsoft Reciprocal License",
-                        "MS-RL",
-                        "scancode:ms-rl",
-                        "osi:MS-RL"
+                        "MS-RL"
                     ],
                     "__impliedId": "MS-RL",
                     "__impliedAmbiguousNames": [
@@ -738,7 +732,9 @@
                         "MS, Version RL",
                         "MS RL",
                         "MS License, Version RL",
-                        "MS License, RL"
+                        "MS License, RL",
+                        "scancode:ms-rl",
+                        "osi:MS-RL"
                     ],
                     "__impliedComments": [
                         [

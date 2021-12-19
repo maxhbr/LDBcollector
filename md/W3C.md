@@ -6,10 +6,6 @@
 
 -   `W3C Software Notice and License`
 
--   `scancode:w3c`
-
--   `osi:W3C`
-
 -   `W3C License`
 
 -   `The W3C Software Notice and License`
@@ -246,8 +242,6 @@
             "W3C",
             "W3C Software Notice and License (2002-12-31)",
             "W3C Software Notice and License",
-            "scancode:w3c",
-            "osi:W3C",
             "W3C License",
             "The W3C Software Notice and License",
             "License :: OSI Approved :: W3C License",
@@ -260,7 +254,9 @@
         "__impliedAmbiguousNames": [
             "W3C",
             "W3C Software Notice and License (2002-12-31)",
-            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
+            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
+            "scancode:w3c",
+            "osi:W3C"
         ],
         "__impliedComments": [
             [
@@ -686,14 +682,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "W3C Software Notice and License (2002-12-31)",
-                        "W3C",
-                        "scancode:w3c",
-                        "osi:W3C"
+                        "W3C"
                     ],
                     "__impliedId": "W3C",
                     "__impliedAmbiguousNames": [
                         "W3C Software Notice and License (2002-12-31)",
-                        "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
+                        "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
+                        "scancode:w3c",
+                        "osi:W3C"
                     ],
                     "__impliedComments": [
                         [

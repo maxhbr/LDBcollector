@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY 4.0`
 
--   `scancode:cc-by-4.0`
-
 -   `Creative Commons Attribution 4.0`
 
 -   `scancode://cc-by-4.0`
@@ -633,7 +631,6 @@
             "CC-BY-4.0",
             "cc-by-4.0",
             "Creative Commons BY 4.0",
-            "scancode:cc-by-4.0",
             "Creative Commons Attribution 4.0",
             "Creative Commons Attribution 4.0 International",
             "scancode://cc-by-4.0",
@@ -643,7 +640,8 @@
         "__impliedAmbiguousNames": [
             "Creative Commons Attribution unported (CC-BY) v4.0",
             "CC-BY-4.0",
-            "Creative Commons Attribution 4.0"
+            "Creative Commons Attribution 4.0",
+            "scancode:cc-by-4.0"
         ],
         "__impliedComments": [
             [
@@ -1045,13 +1043,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY 4.0",
-                        "CC-BY-4.0",
-                        "scancode:cc-by-4.0"
+                        "CC-BY-4.0"
                     ],
                     "__impliedId": "CC-BY-4.0",
                     "__impliedAmbiguousNames": [
                         "CC-BY-4.0",
-                        "Creative Commons Attribution 4.0"
+                        "Creative Commons Attribution 4.0",
+                        "scancode:cc-by-4.0"
                     ],
                     "__impliedComments": [
                         [

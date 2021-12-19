@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:osl-2.0`
-
 -   `scancode://osl-2.0`
 
 -   `OSL 2.0`
@@ -152,7 +150,6 @@
         "__impliedNames": [
             "OSL-2.0",
             "Open Software License 2.0",
-            "scancode:osl-2.0",
             "scancode://osl-2.0",
             "OSL 2.0"
         ],
@@ -163,7 +160,8 @@
             "OSL 2.0",
             "Open Software License 2.0",
             "OSL-2.0",
-            "The Open Software License v. 2.0"
+            "The Open Software License v. 2.0",
+            "scancode:osl-2.0"
         ],
         "__impliedComments": [
             [
@@ -359,14 +357,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Open Software License 2.0",
-                        "OSL-2.0",
-                        "scancode:osl-2.0"
+                        "OSL-2.0"
                     ],
                     "__impliedId": "OSL-2.0",
                     "__impliedAmbiguousNames": [
                         "Open Software License 2.0",
                         "OSL-2.0",
-                        "The Open Software License v. 2.0"
+                        "The Open Software License v. 2.0",
+                        "scancode:osl-2.0"
                     ],
                     "__impliedComments": [
                         [

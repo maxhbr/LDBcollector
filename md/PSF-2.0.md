@@ -8,10 +8,6 @@
 
 -   `Python License 2.0`
 
--   `scancode:python`
-
--   `osi:Python-2.0`
-
 -   `Python License, Version 2.0`
 
 -   `License :: OSI Approved :: Python Software Foundation License`
@@ -234,8 +230,6 @@
             "PSF-2.0",
             "Python Software Foundation License 2.0",
             "Python License 2.0",
-            "scancode:python",
-            "osi:Python-2.0",
             "Python License, Version 2.0",
             "License :: OSI Approved :: Python Software Foundation License",
             "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
@@ -247,7 +241,9 @@
         "__impliedAmbiguousNames": [
             "Python Software Foundation License",
             "PSF-2",
-            "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
+            "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
+            "scancode:python",
+            "osi:Python-2.0"
         ],
         "__impliedComments": [
             [
@@ -635,15 +631,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Python Software Foundation License 2.0",
-                        "Python-2.0",
-                        "scancode:python",
-                        "osi:Python-2.0"
+                        "Python-2.0"
                     ],
                     "__impliedId": "Python-2.0",
                     "__impliedAmbiguousNames": [
                         "Python Software Foundation License",
                         "PSF-2",
-                        "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
+                        "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
+                        "scancode:python",
+                        "osi:Python-2.0"
                     ],
                     "__impliedComments": [
                         [

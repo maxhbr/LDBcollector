@@ -6,8 +6,6 @@
 
 -   `SGI B License 1.0`
 
--   `scancode:sgi-fslb-1.0`
-
 -   `scancode://sgi-fslb-1.0`
 
 -   `SGI Free Software License B 1.0`
@@ -97,7 +95,6 @@
         "__impliedNames": [
             "SGI-B-1.0",
             "SGI B License 1.0",
-            "scancode:sgi-fslb-1.0",
             "SGI Free Software License B v1.0",
             "scancode://sgi-fslb-1.0",
             "SGI Free Software License B 1.0"
@@ -112,7 +109,8 @@
             "SGI B License 1.0",
             "SGI-B License, Version 1.0",
             "SGI-B License, 1.0",
-            "SGI FREE SOFTWARE LICENSE B (Version 1.0 1/25/2000)"
+            "SGI FREE SOFTWARE LICENSE B (Version 1.0 1/25/2000)",
+            "scancode:sgi-fslb-1.0"
         ],
         "__impliedComments": [
             [
@@ -229,8 +227,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "SGI B License 1.0",
-                        "SGI-B-1.0",
-                        "scancode:sgi-fslb-1.0"
+                        "SGI-B-1.0"
                     ],
                     "__impliedId": "SGI-B-1.0",
                     "__impliedAmbiguousNames": [
@@ -242,7 +239,8 @@
                         "SGI B License 1.0",
                         "SGI-B License, Version 1.0",
                         "SGI-B License, 1.0",
-                        "SGI FREE SOFTWARE LICENSE B (Version 1.0 1/25/2000)"
+                        "SGI FREE SOFTWARE LICENSE B (Version 1.0 1/25/2000)",
+                        "scancode:sgi-fslb-1.0"
                     ],
                     "__impliedComments": [
                         [

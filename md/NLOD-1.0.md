@@ -6,8 +6,6 @@
 
 -   `Norwegian Licence (Open Government Data)`
 
--   `scancode:nlod-1.0`
-
 -   `scancode://nlod-1.0`
 
 ## Comments on (easy) usability
@@ -131,14 +129,14 @@
         "__impliedNames": [
             "NLOD-1.0",
             "Norwegian Licence (Open Government Data)",
-            "scancode:nlod-1.0",
             "Norwegian Licence for Open Government Data (NLOD) 1.0",
             "scancode://nlod-1.0"
         ],
         "__impliedId": "NLOD-1.0",
         "__impliedAmbiguousNames": [
             "Norwegian Licence for Open Government Data",
-            "NLOD-1.0"
+            "NLOD-1.0",
+            "scancode:nlod-1.0"
         ],
         "__impliedComments": [
             [
@@ -247,13 +245,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Norwegian Licence (Open Government Data)",
-                        "NLOD-1.0",
-                        "scancode:nlod-1.0"
+                        "NLOD-1.0"
                     ],
                     "__impliedId": "NLOD-1.0",
                     "__impliedAmbiguousNames": [
                         "Norwegian Licence for Open Government Data",
-                        "NLOD-1.0"
+                        "NLOD-1.0",
+                        "scancode:nlod-1.0"
                     ],
                     "__impliedComments": [
                         [

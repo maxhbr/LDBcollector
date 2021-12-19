@@ -8,8 +8,6 @@
 
 *Other Names:*
 
-- =scancode:can-ogl-2.0-en=
-
 - =Open Government License 2.0 (Canada)=
 
 - =OGL-CA-2.0=
@@ -121,7 +119,6 @@
       "__impliedNames": [
           "OGL-Canada-2.0",
           "Open Government Licence - Canada",
-          "scancode:can-ogl-2.0-en",
           "Open Government License 2.0 (Canada)",
           "OGL-CA-2.0",
           "scancode://can-ogl-2.0-en",
@@ -130,7 +127,8 @@
       "__impliedId": "OGL-Canada-2.0",
       "__impliedAmbiguousNames": [
           "OGL-Canada-2.0",
-          "Open Government Licence - Canada"
+          "Open Government Licence - Canada",
+          "scancode:can-ogl-2.0-en"
       ],
       "__impliedComments": [
           [
@@ -270,13 +268,13 @@
               "_implications": {
                   "__impliedNames": [
                       "Open Government Licence - Canada",
-                      "OGL-Canada-2.0",
-                      "scancode:can-ogl-2.0-en"
+                      "OGL-Canada-2.0"
                   ],
                   "__impliedId": "OGL-Canada-2.0",
                   "__impliedAmbiguousNames": [
                       "OGL-Canada-2.0",
-                      "Open Government Licence - Canada"
+                      "Open Government Licence - Canada",
+                      "scancode:can-ogl-2.0-en"
                   ],
                   "__impliedComments": [
                       [

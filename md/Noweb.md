@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:noweb`
-
 -   `scancode://noweb`
 
 ## Comments on (easy) usability
@@ -81,7 +79,6 @@
         "__impliedNames": [
             "Noweb",
             "Noweb License",
-            "scancode:noweb",
             "scancode://noweb"
         ],
         "__impliedId": "Noweb",
@@ -92,7 +89,8 @@
             "NOWEB LICENSE",
             "NOWEB License",
             "Noweb is copyright",
-            "Noweb is protected by copyright"
+            "Noweb is protected by copyright",
+            "scancode:noweb"
         ],
         "__impliedComments": [
             [
@@ -233,8 +231,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Noweb License",
-                        "Noweb",
-                        "scancode:noweb"
+                        "Noweb"
                     ],
                     "__impliedId": "Noweb",
                     "__impliedAmbiguousNames": [
@@ -242,7 +239,8 @@
                         "NOWEB LICENSE",
                         "NOWEB License",
                         "Noweb is copyright",
-                        "Noweb is protected by copyright"
+                        "Noweb is protected by copyright",
+                        "scancode:noweb"
                     ],
                     "__impliedComments": [
                         [

@@ -6,10 +6,6 @@
 
 -   `IPA License`
 
--   `scancode:ipa-font`
-
--   `osi:IPA`
-
 -   `IPA Font License Agreement v1.0`
 
 -   `scancode://ipa-font`
@@ -187,8 +183,6 @@
             "IPA",
             "IPA Font License",
             "IPA License",
-            "scancode:ipa-font",
-            "osi:IPA",
             "IPA Font License Agreement v1.0",
             "scancode://ipa-font",
             "IPA Font License 1.0"
@@ -199,7 +193,9 @@
             "IPA",
             "IPA License",
             "IPA LICENSE",
-            "IPA Font License Agreement v1.0"
+            "IPA Font License Agreement v1.0",
+            "scancode:ipa-font",
+            "osi:IPA"
         ],
         "__impliedComments": [
             [
@@ -447,15 +443,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "IPA License",
-                        "IPA",
-                        "scancode:ipa-font",
-                        "osi:IPA"
+                        "IPA"
                     ],
                     "__impliedId": "IPA",
                     "__impliedAmbiguousNames": [
                         "IPA License",
                         "IPA LICENSE",
-                        "IPA Font License Agreement v1.0"
+                        "IPA Font License Agreement v1.0",
+                        "scancode:ipa-font",
+                        "osi:IPA"
                     ],
                     "__impliedComments": [
                         [

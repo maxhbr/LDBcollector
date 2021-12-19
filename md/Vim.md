@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:vim`
-
 -   `scancode://vim`
 
 ## Description
@@ -200,7 +198,6 @@
             "Vim License",
             "vim",
             "VIM License",
-            "scancode:vim",
             "scancode://vim"
         ],
         "__impliedId": "Vim",
@@ -210,7 +207,8 @@
             "VIM LICENSE",
             "vim License",
             "vim license",
-            "VIM licnese"
+            "VIM licnese",
+            "scancode:vim"
         ],
         "__impliedComments": [
             [
@@ -366,15 +364,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "VIM License",
-                        "Vim",
-                        "scancode:vim"
+                        "Vim"
                     ],
                     "__impliedId": "Vim",
                     "__impliedAmbiguousNames": [
                         "VIM LICENSE",
                         "vim License",
                         "vim license",
-                        "VIM licnese"
+                        "VIM licnese",
+                        "scancode:vim"
                     ],
                     "__impliedComments": [
                         [

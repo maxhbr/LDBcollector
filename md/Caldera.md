@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:caldera`
-
 -   `scancode://caldera`
 
 ## Comments on (easy) usability
@@ -97,14 +95,14 @@
         "__impliedNames": [
             "Caldera",
             "Caldera License",
-            "scancode:caldera",
             "scancode://caldera"
         ],
         "__impliedId": "Caldera",
         "__impliedAmbiguousNames": [
             "Caldera License",
             "CALDERA LICENSE",
-            "CALDERA License"
+            "CALDERA License",
+            "scancode:caldera"
         ],
         "__impliedComments": [
             [
@@ -208,14 +206,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Caldera License",
-                        "Caldera",
-                        "scancode:caldera"
+                        "Caldera"
                     ],
                     "__impliedId": "Caldera",
                     "__impliedAmbiguousNames": [
                         "Caldera License",
                         "CALDERA LICENSE",
-                        "CALDERA License"
+                        "CALDERA License",
+                        "scancode:caldera"
                     ],
                     "__impliedComments": [
                         [

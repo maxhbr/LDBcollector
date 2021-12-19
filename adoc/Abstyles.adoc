@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:abstyles`
 * `scancode://abstyles`
 
 === Comments on (easy) usability
@@ -75,7 +74,6 @@ repository] is generated)
     "__impliedNames": [
         "Abstyles",
         "Abstyles License",
-        "scancode:abstyles",
         "scancode://abstyles"
     ],
     "__impliedId": "Abstyles",
@@ -84,7 +82,8 @@ repository] is generated)
         "Abstyles",
         "Abstyles License",
         "ABSTYLES LICENSE",
-        "ABSTYLES License"
+        "ABSTYLES License",
+        "scancode:abstyles"
     ],
     "__impliedComments": [
         [
@@ -231,14 +230,14 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Abstyles License",
-                    "Abstyles",
-                    "scancode:abstyles"
+                    "Abstyles"
                 ],
                 "__impliedId": "Abstyles",
                 "__impliedAmbiguousNames": [
                     "Abstyles License",
                     "ABSTYLES LICENSE",
-                    "ABSTYLES License"
+                    "ABSTYLES License",
+                    "scancode:abstyles"
                 ],
                 "__impliedComments": [
                     [

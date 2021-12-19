@@ -13,7 +13,6 @@
 *Other Names:*
 
 * `IBM pibs License`
-* `scancode:ibm-pibs`
 * `scancode://ibm-pibs`
 * `IBM PowerPC Software`
 
@@ -95,7 +94,6 @@ repository] is generated)
         "IBM-pibs",
         "IBM PowerPC Initialization and Boot Software",
         "IBM pibs License",
-        "scancode:ibm-pibs",
         "scancode://ibm-pibs",
         "IBM PowerPC Software"
     ],
@@ -104,7 +102,8 @@ repository] is generated)
         "IBM pibs",
         "IBM PIBS",
         "IBM-pibs",
-        "IBM-PIBS"
+        "IBM-PIBS",
+        "scancode:ibm-pibs"
     ],
     "__impliedComments": [
         [
@@ -221,15 +220,15 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "IBM pibs License",
-                    "IBM-pibs",
-                    "scancode:ibm-pibs"
+                    "IBM-pibs"
                 ],
                 "__impliedId": "IBM-pibs",
                 "__impliedAmbiguousNames": [
                     "IBM pibs",
                     "IBM PIBS",
                     "IBM-pibs",
-                    "IBM-PIBS"
+                    "IBM-PIBS",
+                    "scancode:ibm-pibs"
                 ],
                 "__impliedComments": [
                     [

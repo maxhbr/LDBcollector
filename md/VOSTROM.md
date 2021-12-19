@@ -6,8 +6,6 @@
 
 -   `VOSTROM License`
 
--   `scancode:vostrom`
-
 -   `scancode://vostrom`
 
 -   `VOSTROM Public License`
@@ -125,7 +123,6 @@
             "VOSTROM",
             "VOSTROM Public License for Open Source",
             "VOSTROM License",
-            "scancode:vostrom",
             "scancode://vostrom",
             "VOSTROM Public License"
         ],
@@ -135,7 +132,8 @@
             "VOSTROM",
             "VOSTROM License",
             "VOSTROM LICENSE",
-            "VOSTROM Public License"
+            "VOSTROM Public License",
+            "scancode:vostrom"
         ],
         "__impliedComments": [
             [
@@ -274,14 +272,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "VOSTROM License",
-                        "VOSTROM",
-                        "scancode:vostrom"
+                        "VOSTROM"
                     ],
                     "__impliedId": "VOSTROM",
                     "__impliedAmbiguousNames": [
                         "VOSTROM License",
                         "VOSTROM LICENSE",
-                        "VOSTROM Public License"
+                        "VOSTROM Public License",
+                        "scancode:vostrom"
                     ],
                     "__impliedComments": [
                         [

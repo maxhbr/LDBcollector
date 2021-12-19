@@ -6,8 +6,6 @@
 
 -   `Spencer License (4-Clause)`
 
--   `scancode:hs-regexp`
-
 -   `scancode://hs-regexp`
 
 -   `Henry Spencer Regexp License`
@@ -90,7 +88,6 @@
             "Spencer-94",
             "Spencer License 94",
             "Spencer License (4-Clause)",
-            "scancode:hs-regexp",
             "scancode://hs-regexp",
             "Henry Spencer Regexp License"
         ],
@@ -99,7 +96,8 @@
             "Spencer License, 92",
             "Spencer License, 93",
             "Spencer License, 94",
-            "Spencer License, 97"
+            "Spencer License, 97",
+            "scancode:hs-regexp"
         ],
         "__impliedComments": [
             [
@@ -224,15 +222,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Spencer License (4-Clause)",
-                        "Spencer-94",
-                        "scancode:hs-regexp"
+                        "Spencer-94"
                     ],
                     "__impliedId": "Spencer-94",
                     "__impliedAmbiguousNames": [
                         "Spencer License, 92",
                         "Spencer License, 93",
                         "Spencer License, 94",
-                        "Spencer License, 97"
+                        "Spencer License, 97",
+                        "scancode:hs-regexp"
                     ],
                     "__impliedComments": [
                         [

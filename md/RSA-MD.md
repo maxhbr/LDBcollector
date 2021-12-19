@@ -8,8 +8,6 @@
 
 -   `RSA MD License`
 
--   `scancode:rsa-md5`
-
 -   `scancode://rsa-md5`
 
 -   `RSA-MD5 License`
@@ -83,7 +81,6 @@
             "RSA-MD",
             "RSA Message-Digest License ",
             "RSA MD License",
-            "scancode:rsa-md5",
             "RSA Message-Digest License",
             "scancode://rsa-md5",
             "RSA-MD5 License"
@@ -93,7 +90,8 @@
             "RSA MD License",
             "RSA MD LICENSE",
             "RSA-MD License",
-            "RSA-MD LICENSE"
+            "RSA-MD LICENSE",
+            "scancode:rsa-md5"
         ],
         "__impliedComments": [
             [
@@ -204,15 +202,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "RSA MD License",
-                        "RSA-MD",
-                        "scancode:rsa-md5"
+                        "RSA-MD"
                     ],
                     "__impliedId": "RSA-MD",
                     "__impliedAmbiguousNames": [
                         "RSA MD License",
                         "RSA MD LICENSE",
                         "RSA-MD License",
-                        "RSA-MD LICENSE"
+                        "RSA-MD LICENSE",
+                        "scancode:rsa-md5"
                     ],
                     "__impliedComments": [
                         [

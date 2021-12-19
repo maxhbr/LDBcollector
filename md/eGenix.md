@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:egenix-1.0.0`
-
 -   `scancode://egenix-1.1.0`
 
 -   `eGenix Public License 1.1.0`
@@ -113,7 +111,6 @@
         "__impliedNames": [
             "eGenix",
             "eGenix.com Public License 1.1.0",
-            "scancode:egenix-1.0.0",
             "scancode://egenix-1.1.0",
             "eGenix Public License 1.1.0"
         ],
@@ -126,7 +123,8 @@
             "EGENIX License",
             "eGenix.com Public License 1.1.0",
             "eGenix.com Public License Agreement",
-            "EGENIX.COM PUBLIC LICENSE AGREEMENT"
+            "EGENIX.COM PUBLIC LICENSE AGREEMENT",
+            "scancode:egenix-1.0.0"
         ],
         "__impliedComments": [
             [
@@ -267,8 +265,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "eGenix.com Public License 1.1.0",
-                        "eGenix",
-                        "scancode:egenix-1.0.0"
+                        "eGenix"
                     ],
                     "__impliedId": "eGenix",
                     "__impliedAmbiguousNames": [
@@ -277,7 +274,8 @@
                         "EGENIX License",
                         "eGenix.com Public License 1.1.0",
                         "eGenix.com Public License Agreement",
-                        "EGENIX.COM PUBLIC LICENSE AGREEMENT"
+                        "EGENIX.COM PUBLIC LICENSE AGREEMENT",
+                        "scancode:egenix-1.0.0"
                     ],
                     "__impliedComments": [
                         [

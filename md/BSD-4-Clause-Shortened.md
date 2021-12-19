@@ -8,8 +8,6 @@
 
 -   `BSD 4-Clause License (shortened)`
 
--   `scancode:bsd-4-clause-shortened`
-
 -   `scancode://bsd-4-clause-shortened`
 
 ## Comments on (easy) usability
@@ -88,11 +86,13 @@
             "BSD 4-Clause Shortened",
             "BSD 4-Clause License (shortened)",
             "BSD-4-Clause-shortened",
-            "scancode:bsd-4-clause-shortened",
             "BSD 4 Clause Shortened",
             "scancode://bsd-4-clause-shortened"
         ],
         "__impliedId": "BSD-4-Clause-Shortened",
+        "__impliedAmbiguousNames": [
+            "scancode:bsd-4-clause-shortened"
+        ],
         "__impliedComments": [
             [
                 "Metaeffekt Universe",
@@ -193,11 +193,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD 4-Clause License (shortened)",
-                        "BSD-4-Clause-shortened",
-                        "scancode:bsd-4-clause-shortened"
+                        "BSD-4-Clause-shortened"
                     ],
                     "__impliedId": "BSD-4-Clause-shortened",
-                    "__impliedAmbiguousNames": [],
+                    "__impliedAmbiguousNames": [
+                        "scancode:bsd-4-clause-shortened"
+                    ],
                     "__impliedComments": [
                         [
                             "Metaeffekt Universe",

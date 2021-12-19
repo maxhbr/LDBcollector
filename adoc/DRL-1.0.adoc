@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:drl-1.0`
 * `scancode://drl-1.0`
 
 === Comments on (easy) usability
@@ -83,10 +82,12 @@ repository] is generated)
     "__impliedNames": [
         "DRL-1.0",
         "Detection Rule License 1.0",
-        "scancode:drl-1.0",
         "scancode://drl-1.0"
     ],
     "__impliedId": "DRL-1.0",
+    "__impliedAmbiguousNames": [
+        "scancode:drl-1.0"
+    ],
     "__impliedComments": [
         [
             "Metaeffekt Universe",
@@ -191,11 +192,12 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Detection Rule License 1.0",
-                    "DRL-1.0",
-                    "scancode:drl-1.0"
+                    "DRL-1.0"
                 ],
                 "__impliedId": "DRL-1.0",
-                "__impliedAmbiguousNames": [],
+                "__impliedAmbiguousNames": [
+                    "scancode:drl-1.0"
+                ],
                 "__impliedComments": [
                     [
                         "Metaeffekt Universe",

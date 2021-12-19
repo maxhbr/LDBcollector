@@ -6,8 +6,6 @@
 
 -   `Solderpad Hardware License 0.5`
 
--   `scancode:shl-0.5`
-
 -   `scancode://shl-0.5`
 
 ## Comments on (easy) usability
@@ -176,7 +174,6 @@
         "__impliedNames": [
             "SHL-0.5",
             "Solderpad Hardware License 0.5",
-            "scancode:shl-0.5",
             "Solderpad Hardware License v0.5",
             "scancode://shl-0.5",
             "SolderPad Hardware License v0.5"
@@ -187,7 +184,8 @@
             "SOLDERPAD HARDWARE LICENSE version 0.5",
             "SOLDERPAD HARDWARE LICENSE Version 0.5",
             "Solderpad Hardware License Version 0.5",
-            "SHL-0.5"
+            "SHL-0.5",
+            "scancode:shl-0.5"
         ],
         "__impliedComments": [
             [
@@ -299,8 +297,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Solderpad Hardware License 0.5",
-                        "SHL-0.5",
-                        "scancode:shl-0.5"
+                        "SHL-0.5"
                     ],
                     "__impliedId": "SHL-0.5",
                     "__impliedAmbiguousNames": [
@@ -308,7 +305,8 @@
                         "SOLDERPAD HARDWARE LICENSE version 0.5",
                         "SOLDERPAD HARDWARE LICENSE Version 0.5",
                         "Solderpad Hardware License Version 0.5",
-                        "SHL-0.5"
+                        "SHL-0.5",
+                        "scancode:shl-0.5"
                     ],
                     "__impliedComments": [
                         [

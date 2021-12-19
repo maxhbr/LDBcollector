@@ -6,10 +6,6 @@
 
 -   `RealNetworks Public Source License 1.0`
 
--   `scancode:rpsl-1.0`
-
--   `osi:RPSL-1.0`
-
 -   `RealNetworks Public Source License, Version 1.0`
 
 -   `scancode://rpsl-1.0`
@@ -638,8 +634,6 @@
             "RealNetworks Public Source License v1.0",
             "RealNetworks Public Source License V1.0",
             "RealNetworks Public Source License 1.0",
-            "scancode:rpsl-1.0",
-            "osi:RPSL-1.0",
             "RealNetworks Public Source License, Version 1.0",
             "scancode://rpsl-1.0"
         ],
@@ -651,7 +645,9 @@
             "RPSL",
             "RPSL, Version 1.0",
             "RPSL, 1.0",
-            "RealNetworks Public Source License Version 1.0"
+            "RealNetworks Public Source License Version 1.0",
+            "scancode:rpsl-1.0",
+            "osi:RPSL-1.0"
         ],
         "__impliedComments": [
             [
@@ -907,15 +903,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "RealNetworks Public Source License 1.0",
-                        "RPSL-1.0",
-                        "scancode:rpsl-1.0",
-                        "osi:RPSL-1.0"
+                        "RPSL-1.0"
                     ],
                     "__impliedId": "RPSL-1.0",
                     "__impliedAmbiguousNames": [
                         "RPSL, Version 1.0",
                         "RPSL, 1.0",
-                        "RealNetworks Public Source License Version 1.0"
+                        "RealNetworks Public Source License Version 1.0",
+                        "scancode:rpsl-1.0",
+                        "osi:RPSL-1.0"
                     ],
                     "__impliedComments": [
                         [

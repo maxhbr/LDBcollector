@@ -8,16 +8,6 @@
 
 -   `zlib/libpng License`
 
--   `scancode:zlib`
-
--   `scancode:aladdin-md5`
-
--   `scancode:d-zlib`
-
--   `scancode:fastbuild-2012-2020`
-
--   `osi:Zlib`
-
 -   `zlib/libpng license`
 
 -   `zlib-license`
@@ -264,11 +254,6 @@
             "zlib License",
             "zlib",
             "zlib/libpng License",
-            "scancode:zlib",
-            "scancode:aladdin-md5",
-            "scancode:d-zlib",
-            "scancode:fastbuild-2012-2020",
-            "osi:Zlib",
             "zlib/libpng license",
             "zlib-license",
             "The zlib/libpng License (Zlib)",
@@ -288,7 +273,12 @@
             "For conditions of distribution and use, see copyright notice in zlib.h",
             "This program is based on zlib",
             "http://www.gzip.org/zlib/zlib_license.html",
-            "Aladdin MD5 License"
+            "Aladdin MD5 License",
+            "scancode:zlib",
+            "scancode:aladdin-md5",
+            "scancode:d-zlib",
+            "scancode:fastbuild-2012-2020",
+            "osi:Zlib"
         ],
         "__impliedComments": [
             [
@@ -754,12 +744,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "zlib License",
-                        "Zlib",
-                        "scancode:zlib",
-                        "scancode:aladdin-md5",
-                        "scancode:d-zlib",
-                        "scancode:fastbuild-2012-2020",
-                        "osi:Zlib"
+                        "Zlib"
                     ],
                     "__impliedId": "Zlib",
                     "__impliedAmbiguousNames": [
@@ -770,7 +755,12 @@
                         "For conditions of distribution and use, see copyright notice in zlib.h",
                         "This program is based on zlib",
                         "http://www.gzip.org/zlib/zlib_license.html",
-                        "Aladdin MD5 License"
+                        "Aladdin MD5 License",
+                        "scancode:zlib",
+                        "scancode:aladdin-md5",
+                        "scancode:d-zlib",
+                        "scancode:fastbuild-2012-2020",
+                        "osi:Zlib"
                     ],
                     "__impliedComments": [
                         [

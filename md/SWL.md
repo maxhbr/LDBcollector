@@ -6,8 +6,6 @@
 
 -   `Scheme Widget Library Software License Agreement`
 
--   `scancode:swl`
-
 -   `scancode://swl`
 
 -   `Scheme Widget Library (SWL) Software License`
@@ -93,7 +91,6 @@
             "SWL",
             "Scheme Widget Library (SWL) Software License Agreement",
             "Scheme Widget Library Software License Agreement",
-            "scancode:swl",
             "scancode://swl",
             "Scheme Widget Library (SWL) Software License"
         ],
@@ -104,7 +101,8 @@
             "Scheme Widget Library (SWL) Software License Agreement",
             "SWL License",
             "SWL license",
-            "under SWL"
+            "under SWL",
+            "scancode:swl"
         ],
         "__impliedComments": [
             [
@@ -258,15 +256,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Scheme Widget Library Software License Agreement",
-                        "SWL",
-                        "scancode:swl"
+                        "SWL"
                     ],
                     "__impliedId": "SWL",
                     "__impliedAmbiguousNames": [
                         "Scheme Widget Library (SWL) Software License Agreement",
                         "SWL License",
                         "SWL license",
-                        "under SWL"
+                        "under SWL",
+                        "scancode:swl"
                     ],
                     "__impliedComments": [
                         [

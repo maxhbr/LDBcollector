@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:rdisc`
-
 -   `scancode://rdisc`
 
 ## Comments on (easy) usability
@@ -83,7 +81,6 @@
         "__impliedNames": [
             "Rdisc",
             "Rdisc License",
-            "scancode:rdisc",
             "scancode://rdisc"
         ],
         "__impliedId": "Rdisc",
@@ -92,7 +89,8 @@
             "Rdisc",
             "Rdisc License",
             "RDISC LICENSE",
-            "RDISC License"
+            "RDISC License",
+            "scancode:rdisc"
         ],
         "__impliedComments": [
             [
@@ -239,14 +237,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Rdisc License",
-                        "Rdisc",
-                        "scancode:rdisc"
+                        "Rdisc"
                     ],
                     "__impliedId": "Rdisc",
                     "__impliedAmbiguousNames": [
                         "Rdisc License",
                         "RDISC LICENSE",
-                        "RDISC License"
+                        "RDISC License",
+                        "scancode:rdisc"
                     ],
                     "__impliedComments": [
                         [

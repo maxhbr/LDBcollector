@@ -6,8 +6,6 @@
 
 -   `AMDPLPA License`
 
--   `scancode:amdplpa`
-
 -   `scancode://amdplpa`
 
 -   `AMD PLPA License`
@@ -154,7 +152,6 @@
             "AMDPLPA",
             "AMD's plpa_map.c License",
             "AMDPLPA License",
-            "scancode:amdplpa",
             "scancode://amdplpa",
             "AMD PLPA License"
         ],
@@ -163,7 +160,8 @@
         "__impliedAmbiguousNames": [
             "AMDPLPA",
             "AMDPLPA License",
-            "AMDPLPA LICENSE"
+            "AMDPLPA LICENSE",
+            "scancode:amdplpa"
         ],
         "__impliedComments": [
             [
@@ -295,13 +293,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "AMDPLPA License",
-                        "AMDPLPA",
-                        "scancode:amdplpa"
+                        "AMDPLPA"
                     ],
                     "__impliedId": "AMDPLPA",
                     "__impliedAmbiguousNames": [
                         "AMDPLPA License",
-                        "AMDPLPA LICENSE"
+                        "AMDPLPA LICENSE",
+                        "scancode:amdplpa"
                     ],
                     "__impliedComments": [
                         [

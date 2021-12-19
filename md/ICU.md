@@ -8,10 +8,6 @@
 
 -   `X11 License`
 
--   `scancode:slf4j-2005`
-
--   `scancode:x11-xconsortium`
-
 -   `ICU License (ICU 1.8.1 and later)`
 
 -   `scancode://x11-xconsortium`
@@ -195,8 +191,6 @@
             "ICU",
             "ICU License",
             "X11 License",
-            "scancode:slf4j-2005",
-            "scancode:x11-xconsortium",
             "ICU License (ICU 1.8.1 and later)",
             "scancode://x11-xconsortium",
             "X11-Style (X Consortium)",
@@ -205,13 +199,15 @@
         "__impliedId": "ICU",
         "__impliedAmbiguousNames": [
             "ICU License",
+            "scancode:slf4j-2005",
             "X License",
             "MIT/X Consortium",
             "X/MIT License",
             "X11 License",
             "MIT/X11",
             "X11 LICENSE",
-            "Expat~X with X exception"
+            "Expat~X with X exception",
+            "scancode:x11-xconsortium"
         ],
         "__impliedComments": [
             [
@@ -475,12 +471,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "ICU License",
-                        "ICU",
-                        "scancode:slf4j-2005"
+                        "ICU"
                     ],
                     "__impliedId": "ICU",
                     "__impliedAmbiguousNames": [
-                        "ICU License"
+                        "ICU License",
+                        "scancode:slf4j-2005"
                     ],
                     "__impliedComments": [
                         [

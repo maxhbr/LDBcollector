@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:makeindex`
-
 -   `scancode://makeindex`
 
 -   `MakeIndex Distribution Notice`
@@ -91,7 +89,6 @@
         "__impliedNames": [
             "MakeIndex",
             "MakeIndex License",
-            "scancode:makeindex",
             "scancode://makeindex",
             "MakeIndex Distribution Notice"
         ],
@@ -102,7 +99,8 @@
             "MakeIndex License",
             "MAKEINDEX LICENSE",
             "MAKEINDEX License",
-            "MakeIndex Distribution Notice"
+            "MakeIndex Distribution Notice",
+            "scancode:makeindex"
         ],
         "__impliedComments": [
             [
@@ -250,15 +248,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "MakeIndex License",
-                        "MakeIndex",
-                        "scancode:makeindex"
+                        "MakeIndex"
                     ],
                     "__impliedId": "MakeIndex",
                     "__impliedAmbiguousNames": [
                         "MakeIndex License",
                         "MAKEINDEX LICENSE",
                         "MAKEINDEX License",
-                        "MakeIndex Distribution Notice"
+                        "MakeIndex Distribution Notice",
+                        "scancode:makeindex"
                     ],
                     "__impliedComments": [
                         [

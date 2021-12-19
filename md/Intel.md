@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:intel-bsd-export-control`
-
--   `osi:Intel`
-
 -   `intel-osl`
 
 -   `The Intel Open Source License`
@@ -183,8 +179,6 @@
         "__impliedNames": [
             "Intel",
             "Intel Open Source License",
-            "scancode:intel-bsd-export-control",
-            "osi:Intel",
             "intel-osl",
             "The Intel Open Source License",
             "License :: OSI Approved :: Intel Open Source License",
@@ -198,7 +192,9 @@
             "Intel Open Source License",
             "Intel BSD - Export Control",
             "http://opensource.org/licenses/intel",
-            "https://opensource.org/licenses/intel"
+            "https://opensource.org/licenses/intel",
+            "scancode:intel-bsd-export-control",
+            "osi:Intel"
         ],
         "__impliedComments": [
             [
@@ -508,16 +504,16 @@
                 "_implications": {
                     "__impliedNames": [
                         "Intel Open Source License",
-                        "Intel",
-                        "scancode:intel-bsd-export-control",
-                        "osi:Intel"
+                        "Intel"
                     ],
                     "__impliedId": "Intel",
                     "__impliedAmbiguousNames": [
                         "Intel Open Source License",
                         "Intel BSD - Export Control",
                         "http://opensource.org/licenses/intel",
-                        "https://opensource.org/licenses/intel"
+                        "https://opensource.org/licenses/intel",
+                        "scancode:intel-bsd-export-control",
+                        "osi:Intel"
                     ],
                     "__impliedComments": [
                         [

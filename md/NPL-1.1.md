@@ -6,8 +6,6 @@
 
 -   `Netscape Public License 1.1`
 
--   `scancode:npl-1.1`
-
 -   `Netscape Public License Version 1.1`
 
 -   `scancode://npl-1.1`
@@ -276,7 +274,6 @@
         "__impliedNames": [
             "NPL-1.1",
             "Netscape Public License 1.1",
-            "scancode:npl-1.1",
             "Netscape Public License Version 1.1",
             "Netscape Public License v1.1",
             "scancode://npl-1.1",
@@ -288,7 +285,8 @@
             "http://www.mozilla.org/NPL/",
             "Netscape Public License and MPL / GPL dual license",
             "mozilla.org/mpl/MPL/NPL/1.1/",
-            "https://spdx.org/licenses/npl-1.1"
+            "https://spdx.org/licenses/npl-1.1",
+            "scancode:npl-1.1"
         ],
         "__impliedComments": [
             [
@@ -853,8 +851,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Netscape Public License 1.1",
-                        "NPL-1.1",
-                        "scancode:npl-1.1"
+                        "NPL-1.1"
                     ],
                     "__impliedId": "NPL-1.1",
                     "__impliedAmbiguousNames": [
@@ -862,7 +859,8 @@
                         "http://www.mozilla.org/NPL/",
                         "Netscape Public License and MPL / GPL dual license",
                         "mozilla.org/mpl/MPL/NPL/1.1/",
-                        "https://spdx.org/licenses/npl-1.1"
+                        "https://spdx.org/licenses/npl-1.1",
+                        "scancode:npl-1.1"
                     ],
                     "__impliedComments": [
                         [

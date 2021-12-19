@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:apsl-2.0`
-
--   `osi:APSL-2.0`
-
 -   `Apple Public Source License, Version 2.0`
 
 -   `License :: OSI Approved :: Apple Public Source License`
@@ -235,8 +231,6 @@
         "__impliedNames": [
             "APSL-2.0",
             "Apple Public Source License 2.0",
-            "scancode:apsl-2.0",
-            "osi:APSL-2.0",
             "Apple Public Source License, Version 2.0",
             "License :: OSI Approved :: Apple Public Source License",
             "scancode://apsl-2.0",
@@ -253,7 +247,9 @@
             "APPLE PUBLIC SOURCE LICENSE 2.0",
             "APPLE PUBLIC SOURCE LICENSE v2.0",
             "APPLE PUBLIC SOURCE LICENSE Version 2.0",
-            "Apple Public Source License Ver. 2.0"
+            "Apple Public Source License Ver. 2.0",
+            "scancode:apsl-2.0",
+            "osi:APSL-2.0"
         ],
         "__impliedComments": [
             [
@@ -509,9 +505,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Apple Public Source License 2.0",
-                        "APSL-2.0",
-                        "scancode:apsl-2.0",
-                        "osi:APSL-2.0"
+                        "APSL-2.0"
                     ],
                     "__impliedId": "APSL-2.0",
                     "__impliedAmbiguousNames": [
@@ -521,7 +515,9 @@
                         "APPLE PUBLIC SOURCE LICENSE 2.0",
                         "APPLE PUBLIC SOURCE LICENSE v2.0",
                         "APPLE PUBLIC SOURCE LICENSE Version 2.0",
-                        "Apple Public Source License Ver. 2.0"
+                        "Apple Public Source License Ver. 2.0",
+                        "scancode:apsl-2.0",
+                        "osi:APSL-2.0"
                     ],
                     "__impliedComments": [
                         [

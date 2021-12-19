@@ -6,8 +6,6 @@
 
 -   `ODC By License 1.0`
 
--   `scancode:odc-by-1.0`
-
 -   `Open Data Commons Attribution License 1.0`
 
 -   `scancode://odc-by-1.0`
@@ -477,7 +475,6 @@
         "__impliedNames": [
             "ODC-By-1.0",
             "ODC By License 1.0",
-            "scancode:odc-by-1.0",
             "ODC-BY-1.0",
             "Open Data Commons Attribution License 1.0",
             "Open Data Commons Attribution License v1.0",
@@ -490,7 +487,8 @@
             "ODC By License, Version 1.0",
             "ODC By License, 1.0",
             "ODC Attribution License",
-            "ODC-By"
+            "ODC-By",
+            "scancode:odc-by-1.0"
         ],
         "__impliedComments": [
             [
@@ -631,8 +629,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "ODC By License 1.0",
-                        "ODC-By-1.0",
-                        "scancode:odc-by-1.0"
+                        "ODC-By-1.0"
                     ],
                     "__impliedId": "ODC-By-1.0",
                     "__impliedAmbiguousNames": [
@@ -641,7 +638,8 @@
                         "ODC By License, Version 1.0",
                         "ODC By License, 1.0",
                         "ODC Attribution License",
-                        "ODC-By"
+                        "ODC-By",
+                        "scancode:odc-by-1.0"
                     ],
                     "__impliedComments": [
                         [

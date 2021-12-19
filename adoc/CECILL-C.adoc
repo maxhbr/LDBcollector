@@ -13,9 +13,6 @@
 
 * `CeCILL-C License`
 * `CECILL C License`
-* `scancode:cecill-c`
-* `CeCILL-C Free Software License (FRA)`
-* `CeCILL-C-FSL`
 * `scancode://cecill-c`
 
 === Comments on (easy) usability
@@ -308,8 +305,6 @@ license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CECILL-C-License.yaml[Metaeffekt
 Universe] (CC-BY-4.0)
-* https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-C-Free-Software-License-(FRA).yaml[Metaeffekt
-Universe] (CC-BY-4.0)
 * https://spdx.org/licenses/CECILL-C.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml[Scancode]
@@ -323,9 +318,6 @@ repository] is generated)
         "CECILL-C",
         "CeCILL-C License",
         "CECILL C License",
-        "scancode:cecill-c",
-        "CeCILL-C Free Software License (FRA)",
-        "CeCILL-C-FSL",
         "CeCILL-C Free Software License Agreement",
         "scancode://cecill-c"
     ],
@@ -340,7 +332,7 @@ repository] is generated)
         "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice",
         "https://spdx.org/licenses/cecill-c",
         "eCILL-C Free Software License Agreement",
-        "CeCILL-C Free Software License (FRA)"
+        "scancode:cecill-c"
     ],
     "__impliedComments": [
         [
@@ -513,8 +505,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "CECILL C License",
-                    "CECILL-C",
-                    "scancode:cecill-c"
+                    "CECILL-C"
                 ],
                 "__impliedId": "CECILL-C",
                 "__impliedAmbiguousNames": [
@@ -524,7 +515,8 @@ repository] is generated)
                     "CECILL-C License",
                     "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice",
                     "https://spdx.org/licenses/cecill-c",
-                    "eCILL-C Free Software License Agreement"
+                    "eCILL-C Free Software License Agreement",
+                    "scancode:cecill-c"
                 ],
                 "__impliedComments": [
                     [

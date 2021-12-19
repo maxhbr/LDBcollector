@@ -6,8 +6,6 @@
 
 -   `MIT (NFA) License`
 
--   `scancode:mit-no-false-attribs`
-
 -   `scancode://mit-no-false-attribs`
 
 -   `MIT no false attribution License`
@@ -160,7 +158,6 @@
             "MITNFA",
             "MIT +no-false-attribs license",
             "MIT (NFA) License",
-            "scancode:mit-no-false-attribs",
             "MIT +no-false-attribs License",
             "scancode://mit-no-false-attribs",
             "MIT no false attribution License"
@@ -169,7 +166,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "MITNFA",
-            "MIT +no-false-attribs license"
+            "MIT +no-false-attribs license",
+            "scancode:mit-no-false-attribs"
         ],
         "__impliedComments": [
             [
@@ -455,13 +453,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "MIT (NFA) License",
-                        "MITNFA",
-                        "scancode:mit-no-false-attribs"
+                        "MITNFA"
                     ],
                     "__impliedId": "MITNFA",
                     "__impliedAmbiguousNames": [
                         "MITNFA",
-                        "MIT +no-false-attribs license"
+                        "MIT +no-false-attribs license",
+                        "scancode:mit-no-false-attribs"
                     ],
                     "__impliedComments": [
                         [

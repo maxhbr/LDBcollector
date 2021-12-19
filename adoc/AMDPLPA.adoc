@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `AMDPLPA License`
-* `scancode:amdplpa`
 * `scancode://amdplpa`
 * `AMD PLPA License`
 
@@ -151,7 +150,6 @@ repository] is generated)
         "AMDPLPA",
         "AMD's plpa_map.c License",
         "AMDPLPA License",
-        "scancode:amdplpa",
         "scancode://amdplpa",
         "AMD PLPA License"
     ],
@@ -160,7 +158,8 @@ repository] is generated)
     "__impliedAmbiguousNames": [
         "AMDPLPA",
         "AMDPLPA License",
-        "AMDPLPA LICENSE"
+        "AMDPLPA LICENSE",
+        "scancode:amdplpa"
     ],
     "__impliedComments": [
         [
@@ -292,13 +291,13 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "AMDPLPA License",
-                    "AMDPLPA",
-                    "scancode:amdplpa"
+                    "AMDPLPA"
                 ],
                 "__impliedId": "AMDPLPA",
                 "__impliedAmbiguousNames": [
                     "AMDPLPA License",
-                    "AMDPLPA LICENSE"
+                    "AMDPLPA LICENSE",
+                    "scancode:amdplpa"
                 ],
                 "__impliedComments": [
                     [

@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:afmparse`
-
 -   `scancode://afmparse`
 
 ## Comments on (easy) usability
@@ -85,7 +83,6 @@
         "__impliedNames": [
             "Afmparse",
             "Afmparse License",
-            "scancode:afmparse",
             "scancode://afmparse",
             "afmparse License"
         ],
@@ -95,7 +92,8 @@
             "Afmparse",
             "Afmparse License",
             "AFMPARSE LICENSE",
-            "AFMPARSE License"
+            "AFMPARSE License",
+            "scancode:afmparse"
         ],
         "__impliedComments": [
             [
@@ -228,14 +226,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Afmparse License",
-                        "Afmparse",
-                        "scancode:afmparse"
+                        "Afmparse"
                     ],
                     "__impliedId": "Afmparse",
                     "__impliedAmbiguousNames": [
                         "Afmparse License",
                         "AFMPARSE LICENSE",
-                        "AFMPARSE License"
+                        "AFMPARSE License",
+                        "scancode:afmparse"
                     ],
                     "__impliedComments": [
                         [

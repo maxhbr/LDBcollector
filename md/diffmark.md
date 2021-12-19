@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:diffmark`
-
 -   `scancode://diffmark`
 
 ## Comments on (easy) usability
@@ -83,7 +81,6 @@
             "diffmark",
             "diffmark license",
             "diffmark License",
-            "scancode:diffmark",
             "scancode://diffmark"
         ],
         "__impliedId": "diffmark",
@@ -93,7 +90,8 @@
             "diffmark License",
             "diffmark license",
             "DIFFMARK LICENSE",
-            "DIFFMARK License"
+            "DIFFMARK License",
+            "scancode:diffmark"
         ],
         "__impliedComments": [
             [
@@ -241,15 +239,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "diffmark License",
-                        "diffmark",
-                        "scancode:diffmark"
+                        "diffmark"
                     ],
                     "__impliedId": "diffmark",
                     "__impliedAmbiguousNames": [
                         "diffmark License",
                         "diffmark license",
                         "DIFFMARK LICENSE",
-                        "DIFFMARK License"
+                        "DIFFMARK License",
+                        "scancode:diffmark"
                     ],
                     "__impliedComments": [
                         [

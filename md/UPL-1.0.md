@@ -6,10 +6,6 @@
 
 -   `UPL`
 
--   `scancode:upl-1.0`
-
--   `osi:UPL`
-
 -   `The Universal Permissive License (UPL), Version 1.0`
 
 -   `scancode://upl-1.0`
@@ -160,15 +156,15 @@
             "UPL",
             "Universal Permissive License v1.0",
             "upl-1.0",
-            "scancode:upl-1.0",
-            "osi:UPL",
             "The Universal Permissive License (UPL), Version 1.0",
             "scancode://upl-1.0",
             "UPL 1.0"
         ],
         "__impliedId": "UPL-1.0",
         "__impliedAmbiguousNames": [
-            "The Universal Permissive License (UPL), Version 1.0"
+            "The Universal Permissive License (UPL), Version 1.0",
+            "scancode:upl-1.0",
+            "osi:UPL"
         ],
         "__impliedComments": [
             [
@@ -348,13 +344,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "UPL-1.0",
-                        "UPL-1.0",
-                        "scancode:upl-1.0",
-                        "osi:UPL"
+                        "UPL-1.0"
                     ],
                     "__impliedId": "UPL-1.0",
                     "__impliedAmbiguousNames": [
-                        "The Universal Permissive License (UPL), Version 1.0"
+                        "The Universal Permissive License (UPL), Version 1.0",
+                        "scancode:upl-1.0",
+                        "osi:UPL"
                     ],
                     "__impliedComments": [
                         [

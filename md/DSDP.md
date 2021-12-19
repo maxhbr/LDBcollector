@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:dsdp`
-
 -   `scancode://dsdp`
 
 ## Comments on (easy) usability
@@ -119,7 +117,6 @@
         "__impliedNames": [
             "DSDP",
             "DSDP License",
-            "scancode:dsdp",
             "scancode://dsdp"
         ],
         "__impliedId": "DSDP",
@@ -127,7 +124,8 @@
         "__impliedAmbiguousNames": [
             "DSDP",
             "DSDP LICENSE",
-            "DSDP License"
+            "DSDP License",
+            "scancode:dsdp"
         ],
         "__impliedComments": [
             [
@@ -291,13 +289,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "DSDP License",
-                        "DSDP",
-                        "scancode:dsdp"
+                        "DSDP"
                     ],
                     "__impliedId": "DSDP",
                     "__impliedAmbiguousNames": [
                         "DSDP LICENSE",
-                        "DSDP License"
+                        "DSDP License",
+                        "scancode:dsdp"
                     ],
                     "__impliedComments": [
                         [

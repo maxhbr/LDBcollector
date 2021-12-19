@@ -12,12 +12,6 @@
 
 -   `Apache Software License, Version 1.1`
 
--   `scancode:apache-1.1`
-
--   `osi:Apache-1.1`
-
--   `scancode:phorum-2.0`
-
 -   `scancode://apache-1.1`
 
 -   `Apache 1.1`
@@ -263,9 +257,6 @@
             "ASL 1.1",
             "Apache Software License, Version 1.1",
             "Apache License 1.1",
-            "scancode:apache-1.1",
-            "osi:Apache-1.1",
-            "scancode:phorum-2.0",
             "scancode://apache-1.1",
             "Apache 1.1"
         ],
@@ -285,7 +276,10 @@
             "The P6Spy Software License, Version 1.1",
             "Apache License 1.1",
             "The CyberNeko Software License, Version 1.0",
-            "https://spdx.org/licenses/apache-1.1"
+            "https://spdx.org/licenses/apache-1.1",
+            "scancode:apache-1.1",
+            "osi:Apache-1.1",
+            "scancode:phorum-2.0"
         ],
         "__impliedComments": [
             [
@@ -702,10 +696,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Apache License 1.1",
-                        "Apache-1.1",
-                        "scancode:apache-1.1",
-                        "osi:Apache-1.1",
-                        "scancode:phorum-2.0"
+                        "Apache-1.1"
                     ],
                     "__impliedId": "Apache-1.1",
                     "__impliedAmbiguousNames": [
@@ -721,7 +712,10 @@
                         "The P6Spy Software License, Version 1.1",
                         "Apache License 1.1",
                         "The CyberNeko Software License, Version 1.0",
-                        "https://spdx.org/licenses/apache-1.1"
+                        "https://spdx.org/licenses/apache-1.1",
+                        "scancode:apache-1.1",
+                        "osi:Apache-1.1",
+                        "scancode:phorum-2.0"
                     ],
                     "__impliedComments": [
                         [

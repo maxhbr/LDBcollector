@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:imlib2`
-
 -   `scancode://imlib2`
 
 ## Comments on (easy) usability
@@ -161,7 +159,6 @@
         "__impliedNames": [
             "Imlib2",
             "Imlib2 License",
-            "scancode:imlib2",
             "scancode://imlib2"
         ],
         "__impliedId": "Imlib2",
@@ -170,7 +167,8 @@
             "Imlib2",
             "Imlib2 License",
             "IMLIB2 LICENSE",
-            "IMLIB2 License"
+            "IMLIB2 License",
+            "scancode:imlib2"
         ],
         "__impliedComments": [
             [
@@ -512,14 +510,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Imlib2 License",
-                        "Imlib2",
-                        "scancode:imlib2"
+                        "Imlib2"
                     ],
                     "__impliedId": "Imlib2",
                     "__impliedAmbiguousNames": [
                         "Imlib2 License",
                         "IMLIB2 LICENSE",
-                        "IMLIB2 License"
+                        "IMLIB2 License",
+                        "scancode:imlib2"
                     ],
                     "__impliedComments": [
                         [

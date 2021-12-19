@@ -6,8 +6,6 @@
 
 -   `Lesser General Public License (Linguistic Resources)`
 
--   `scancode:lgpllr`
-
 -   `scancode://lgpllr`
 
 ## Comments on (easy) usability
@@ -281,14 +279,14 @@
         "__impliedNames": [
             "LGPLLR",
             "Lesser General Public License (Linguistic Resources)",
-            "scancode:lgpllr",
             "Lesser General Public License For Linguistic Resources",
             "scancode://lgpllr"
         ],
         "__impliedId": "LGPLLR",
         "__impliedAmbiguousNames": [
             "LGPLLR",
-            "Lesser General Public License For Linguistic Resources"
+            "Lesser General Public License For Linguistic Resources",
+            "scancode:lgpllr"
         ],
         "__impliedComments": [
             [
@@ -391,13 +389,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Lesser General Public License (Linguistic Resources)",
-                        "LGPLLR",
-                        "scancode:lgpllr"
+                        "LGPLLR"
                     ],
                     "__impliedId": "LGPLLR",
                     "__impliedAmbiguousNames": [
                         "LGPLLR",
-                        "Lesser General Public License For Linguistic Resources"
+                        "Lesser General Public License For Linguistic Resources",
+                        "scancode:lgpllr"
                     ],
                     "__impliedComments": [
                         [

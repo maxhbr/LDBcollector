@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:naist-2003`
-
 -   `scancode://naist-2003`
 
 -   `Nara Institute License 2003`
@@ -124,13 +122,13 @@
         "__impliedNames": [
             "NAIST-2003",
             "Nara Institute of Science and Technology License (2003)",
-            "scancode:naist-2003",
             "scancode://naist-2003",
             "Nara Institute License 2003"
         ],
         "__impliedId": "NAIST-2003",
         "__impliedAmbiguousNames": [
-            "Nara Institute of Science and Technology License (2003)"
+            "Nara Institute of Science and Technology License (2003)",
+            "scancode:naist-2003"
         ],
         "__impliedComments": [
             [
@@ -258,12 +256,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Nara Institute of Science and Technology License (2003)",
-                        "NAIST-2003",
-                        "scancode:naist-2003"
+                        "NAIST-2003"
                     ],
                     "__impliedId": "NAIST-2003",
                     "__impliedAmbiguousNames": [
-                        "Nara Institute of Science and Technology License (2003)"
+                        "Nara Institute of Science and Technology License (2003)",
+                        "scancode:naist-2003"
                     ],
                     "__impliedComments": [
                         [

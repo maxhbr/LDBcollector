@@ -6,10 +6,6 @@
 
 -   `Educational Community License 2.0`
 
--   `scancode:ecl-2.0`
-
--   `osi:ECL-2.0`
-
 -   `ecl2`
 
 -   `Educational Community License, Version 2.0`
@@ -339,8 +335,6 @@
             "Educational Community License v2.0",
             "ecl-2.0",
             "Educational Community License 2.0",
-            "scancode:ecl-2.0",
-            "osi:ECL-2.0",
             "ecl2",
             "Educational Community License, Version 2.0",
             "scancode://ecl-2.0",
@@ -354,7 +348,9 @@
             "Educational Community License, Version 2.0",
             "ECL, Version 2.0",
             "ECL-2.0",
-            "Educational Community License version 2.0"
+            "Educational Community License version 2.0",
+            "scancode:ecl-2.0",
+            "osi:ECL-2.0"
         ],
         "__impliedComments": [
             [
@@ -607,9 +603,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Educational Community License 2.0",
-                        "ECL-2.0",
-                        "scancode:ecl-2.0",
-                        "osi:ECL-2.0"
+                        "ECL-2.0"
                     ],
                     "__impliedId": "ECL-2.0",
                     "__impliedAmbiguousNames": [
@@ -618,7 +612,9 @@
                         "ECL, Version 2.0",
                         "ECL-2.0",
                         "ECL 2.0",
-                        "Educational Community License version 2.0"
+                        "Educational Community License version 2.0",
+                        "scancode:ecl-2.0",
+                        "osi:ECL-2.0"
                     ],
                     "__impliedComments": [
                         [

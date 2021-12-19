@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:cpal-1.0`
-
--   `osi:CPAL-1.0`
-
 -   `cpal_1.0`
 
 -   `Common Public Attribution License Version 1.0 (CPAL-1.0)`
@@ -396,8 +392,6 @@
         "__impliedNames": [
             "CPAL-1.0",
             "Common Public Attribution License 1.0",
-            "scancode:cpal-1.0",
-            "osi:CPAL-1.0",
             "cpal_1.0",
             "Common Public Attribution License Version 1.0 (CPAL-1.0)",
             "Common Public Attribution License Version 1.0",
@@ -409,7 +403,9 @@
             "Common Public Attribution License",
             "Common Public Attribution License 1.0",
             "CPAL-1.0",
-            "Common Public Attribution License Version 1.0"
+            "Common Public Attribution License Version 1.0",
+            "scancode:cpal-1.0",
+            "osi:CPAL-1.0"
         ],
         "__impliedComments": [
             [
@@ -1098,15 +1094,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Common Public Attribution License 1.0",
-                        "CPAL-1.0",
-                        "scancode:cpal-1.0",
-                        "osi:CPAL-1.0"
+                        "CPAL-1.0"
                     ],
                     "__impliedId": "CPAL-1.0",
                     "__impliedAmbiguousNames": [
                         "Common Public Attribution License 1.0",
                         "CPAL-1.0",
-                        "Common Public Attribution License Version 1.0"
+                        "Common Public Attribution License Version 1.0",
+                        "scancode:cpal-1.0",
+                        "osi:CPAL-1.0"
                     ],
                     "__impliedComments": [
                         [

@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:eurosym`
 * `scancode://eurosym`
 
 === Comments on (easy) usability
@@ -80,7 +79,6 @@ repository] is generated)
     "__impliedNames": [
         "Eurosym",
         "Eurosym License",
-        "scancode:eurosym",
         "scancode://eurosym"
     ],
     "__impliedId": "Eurosym",
@@ -89,7 +87,8 @@ repository] is generated)
         "Eurosym",
         "Eurosym License",
         "EUROSYM LICENSE",
-        "EUROSYM License"
+        "EUROSYM License",
+        "scancode:eurosym"
     ],
     "__impliedComments": [
         [
@@ -228,14 +227,14 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Eurosym License",
-                    "Eurosym",
-                    "scancode:eurosym"
+                    "Eurosym"
                 ],
                 "__impliedId": "Eurosym",
                 "__impliedAmbiguousNames": [
                     "Eurosym License",
                     "EUROSYM LICENSE",
-                    "EUROSYM License"
+                    "EUROSYM License",
+                    "scancode:eurosym"
                 ],
                 "__impliedComments": [
                     [

@@ -2,8 +2,6 @@
     "__impliedNames": [
         "OSL-2.1",
         "Open Software License 2.1",
-        "scancode:osl-2.1",
-        "osi:OSL-2.1",
         "Open Software License, Version 2.1",
         "Open Software License, version 2.1",
         "scancode://osl-2.1",
@@ -16,7 +14,9 @@
         "OSL 2.1",
         "Open Software License 2.1",
         "OSL-2.1",
-        "Open Software Licensev. 2.1"
+        "Open Software Licensev. 2.1",
+        "scancode:osl-2.1",
+        "osi:OSL-2.1"
     ],
     "__impliedComments": [
         [
@@ -479,15 +479,15 @@
             "_implications": {
                 "__impliedNames": [
                     "Open Software License 2.1",
-                    "OSL-2.1",
-                    "scancode:osl-2.1",
-                    "osi:OSL-2.1"
+                    "OSL-2.1"
                 ],
                 "__impliedId": "OSL-2.1",
                 "__impliedAmbiguousNames": [
                     "Open Software License 2.1",
                     "OSL-2.1",
-                    "Open Software Licensev. 2.1"
+                    "Open Software Licensev. 2.1",
+                    "scancode:osl-2.1",
+                    "osi:OSL-2.1"
                 ],
                 "__impliedComments": [
                     [

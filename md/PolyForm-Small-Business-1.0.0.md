@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:polyform-small-business-1.0.0`
-
 -   `scancode://polyform-small-business-1.0.0`
 
 ## Comments on (easy) usability
@@ -174,13 +172,13 @@
         "__impliedNames": [
             "PolyForm-Small-Business-1.0.0",
             "Polyform Small Business License 1.0.0",
-            "scancode:polyform-small-business-1.0.0",
             "PolyForm Small Business License 1.0.0",
             "scancode://polyform-small-business-1.0.0"
         ],
         "__impliedId": "PolyForm-Small-Business-1.0.0",
         "__impliedAmbiguousNames": [
-            "[Polyform-Small-Business"
+            "[Polyform-Small-Business",
+            "scancode:polyform-small-business-1.0.0"
         ],
         "__impliedComments": [
             [
@@ -281,12 +279,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Polyform Small Business License 1.0.0",
-                        "PolyForm-Small-Business-1.0.0",
-                        "scancode:polyform-small-business-1.0.0"
+                        "PolyForm-Small-Business-1.0.0"
                     ],
                     "__impliedId": "PolyForm-Small-Business-1.0.0",
                     "__impliedAmbiguousNames": [
-                        "[Polyform-Small-Business"
+                        "[Polyform-Small-Business",
+                        "scancode:polyform-small-business-1.0.0"
                     ],
                     "__impliedComments": [
                         [

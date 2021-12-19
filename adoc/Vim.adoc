@@ -11,7 +11,6 @@
 
 *Other Names:*
 
-* `scancode:vim`
 * `scancode://vim`
 
 === Description
@@ -215,7 +214,6 @@ repository] is generated)
         "Vim License",
         "vim",
         "VIM License",
-        "scancode:vim",
         "scancode://vim"
     ],
     "__impliedId": "Vim",
@@ -225,7 +223,8 @@ repository] is generated)
         "VIM LICENSE",
         "vim License",
         "vim license",
-        "VIM licnese"
+        "VIM licnese",
+        "scancode:vim"
     ],
     "__impliedComments": [
         [
@@ -381,15 +380,15 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "VIM License",
-                    "Vim",
-                    "scancode:vim"
+                    "Vim"
                 ],
                 "__impliedId": "Vim",
                 "__impliedAmbiguousNames": [
                     "VIM LICENSE",
                     "vim License",
                     "vim license",
-                    "VIM licnese"
+                    "VIM licnese",
+                    "scancode:vim"
                 ],
                 "__impliedComments": [
                     [

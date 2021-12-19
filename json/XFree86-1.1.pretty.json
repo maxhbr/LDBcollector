@@ -2,13 +2,13 @@
     "__impliedNames": [
         "XFree86-1.1",
         "XFree86 License 1.1",
-        "scancode:xfree86-1.1",
         "XFree86 1.1 License",
         "scancode://xfree86-1.1"
     ],
     "__impliedId": "XFree86-1.1",
     "__impliedAmbiguousNames": [
-        "XFree86-1.1"
+        "XFree86-1.1",
+        "scancode:xfree86-1.1"
     ],
     "__impliedComments": [
         [
@@ -271,12 +271,12 @@
             "_implications": {
                 "__impliedNames": [
                     "XFree86 License 1.1",
-                    "XFree86-1.1",
-                    "scancode:xfree86-1.1"
+                    "XFree86-1.1"
                 ],
                 "__impliedId": "XFree86-1.1",
                 "__impliedAmbiguousNames": [
-                    "XFree86-1.1"
+                    "XFree86-1.1",
+                    "scancode:xfree86-1.1"
                 ],
                 "__impliedComments": [
                     [

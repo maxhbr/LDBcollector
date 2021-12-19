@@ -18,16 +18,6 @@
         {
             "spdx_id": "EUDatagrid",
             "comment": null,
-            "license_expression": "scancode:eu-datagrid"
-        },
-        {
-            "spdx_id": "EUDatagrid",
-            "comment": null,
-            "license_expression": "osi:EUDatagrid"
-        },
-        {
-            "spdx_id": "EUDatagrid",
-            "comment": null,
             "license_expression": "EU DataGrid Software License"
         },
         {
@@ -68,11 +58,6 @@
         {
             "spdx_id": "VOSTROM",
             "comment": null,
-            "license_expression": "scancode:vostrom"
-        },
-        {
-            "spdx_id": "VOSTROM",
-            "comment": null,
             "license_expression": "VOSTROM Public License for Open Source"
         },
         {
@@ -108,11 +93,6 @@
         {
             "spdx_id": "CC-BY-SA-1.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-sa-1.0"
-        },
-        {
-            "spdx_id": "CC-BY-SA-1.0",
-            "comment": null,
             "license_expression": "Creative Commons ShareAlike 1.0 Generic"
         },
         {
@@ -139,11 +119,6 @@
             "spdx_id": "CC-BY-SA-2.5",
             "comment": null,
             "license_expression": "Creative Commons BY-SA 2.5"
-        },
-        {
-            "spdx_id": "CC-BY-SA-2.5",
-            "comment": null,
-            "license_expression": "scancode:cc-by-sa-2.5"
         },
         {
             "spdx_id": "CC-BY-SA-2.5",
@@ -238,11 +213,6 @@
         {
             "spdx_id": "ClArtistic",
             "comment": null,
-            "license_expression": "scancode:artistic-clarified"
-        },
-        {
-            "spdx_id": "ClArtistic",
-            "comment": null,
             "license_expression": "Clarified Artistic License"
         },
         {
@@ -263,11 +233,6 @@
         {
             "spdx_id": "SMPPL",
             "comment": null,
-            "license_expression": "scancode:smppl"
-        },
-        {
-            "spdx_id": "SMPPL",
-            "comment": null,
             "license_expression": "Secure Messaging Protocol Public License"
         },
         {
@@ -279,16 +244,6 @@
             "spdx_id": "CUA-OPL-1.0",
             "comment": null,
             "license_expression": "CUA OPL 1.0"
-        },
-        {
-            "spdx_id": "CUA-OPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:cua-opl-1.0"
-        },
-        {
-            "spdx_id": "CUA-OPL-1.0",
-            "comment": null,
-            "license_expression": "osi:CUA-OPL-1.0"
         },
         {
             "spdx_id": "CUA-OPL-1.0",
@@ -323,11 +278,6 @@
         {
             "spdx_id": "OLDAP-1.3",
             "comment": null,
-            "license_expression": "scancode:openldap-1.3"
-        },
-        {
-            "spdx_id": "OLDAP-1.3",
-            "comment": null,
             "license_expression": "Open LDAP Public License v1.3"
         },
         {
@@ -358,11 +308,6 @@
         {
             "spdx_id": "Giftware",
             "comment": null,
-            "license_expression": "scancode:allegro-4"
-        },
-        {
-            "spdx_id": "Giftware",
-            "comment": null,
             "license_expression": "Giftware License"
         },
         {
@@ -379,11 +324,6 @@
             "spdx_id": "BitTorrent-1.1",
             "comment": null,
             "license_expression": "BitTorrent License 1.1"
-        },
-        {
-            "spdx_id": "BitTorrent-1.1",
-            "comment": null,
-            "license_expression": "scancode:bittorrent-1.1"
         },
         {
             "spdx_id": "BitTorrent-1.1",
@@ -419,16 +359,6 @@
             "spdx_id": "ISC",
             "comment": null,
             "license_expression": "ISC License"
-        },
-        {
-            "spdx_id": "ISC",
-            "comment": null,
-            "license_expression": "scancode:isc"
-        },
-        {
-            "spdx_id": "ISC",
-            "comment": null,
-            "license_expression": "osi:ISC"
         },
         {
             "spdx_id": "ISC",
@@ -488,11 +418,6 @@
         {
             "spdx_id": "LPPL-1.1",
             "comment": null,
-            "license_expression": "scancode:lppl-1.1"
-        },
-        {
-            "spdx_id": "LPPL-1.1",
-            "comment": null,
             "license_expression": "LaTeX Project Public License v1.1"
         },
         {
@@ -524,16 +449,6 @@
             "spdx_id": "ECL-2.0",
             "comment": null,
             "license_expression": "Educational Community License 2.0"
-        },
-        {
-            "spdx_id": "ECL-2.0",
-            "comment": null,
-            "license_expression": "scancode:ecl-2.0"
-        },
-        {
-            "spdx_id": "ECL-2.0",
-            "comment": null,
-            "license_expression": "osi:ECL-2.0"
         },
         {
             "spdx_id": "ECL-2.0",
@@ -583,16 +498,6 @@
         {
             "spdx_id": "Entessa",
             "comment": null,
-            "license_expression": "scancode:entessa-1.0"
-        },
-        {
-            "spdx_id": "Entessa",
-            "comment": null,
-            "license_expression": "osi:Entessa"
-        },
-        {
-            "spdx_id": "Entessa",
-            "comment": null,
             "license_expression": "Entessa Public License"
         },
         {
@@ -633,11 +538,6 @@
         {
             "spdx_id": "Spencer-86",
             "comment": null,
-            "license_expression": "scancode:hs-regexp-orig"
-        },
-        {
-            "spdx_id": "Spencer-86",
-            "comment": null,
             "license_expression": "Spencer License 86"
         },
         {
@@ -654,11 +554,6 @@
             "spdx_id": "O-UDA-1.0",
             "comment": null,
             "license_expression": "Open Use of Data Agreement 1.0"
-        },
-        {
-            "spdx_id": "O-UDA-1.0",
-            "comment": null,
-            "license_expression": "scancode:o-uda-1.0"
         },
         {
             "spdx_id": "O-UDA-1.0",
@@ -693,32 +588,7 @@
         {
             "spdx_id": "BSD-4-Clause",
             "comment": null,
-            "license_expression": "BSD-4-Clause-copyright"
-        },
-        {
-            "spdx_id": "BSD-4-Clause",
-            "comment": null,
-            "license_expression": "BSD 4-Clause License (copyright variant)"
-        },
-        {
-            "spdx_id": "BSD-4-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-original"
-        },
-        {
-            "spdx_id": "BSD-4-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-original-voices"
-        },
-        {
-            "spdx_id": "BSD-4-Clause",
-            "comment": null,
             "license_expression": "BSD 4-Clause License"
-        },
-        {
-            "spdx_id": "BSD-4-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-original"
         },
         {
             "spdx_id": "BSD-4-Clause",
@@ -758,11 +628,6 @@
         {
             "spdx_id": "Condor-1.1",
             "comment": null,
-            "license_expression": "scancode:condor-1.1"
-        },
-        {
-            "spdx_id": "Condor-1.1",
-            "comment": null,
             "license_expression": "Condor Public License v1.1"
         },
         {
@@ -779,11 +644,6 @@
             "spdx_id": "ODC-By-1.0",
             "comment": null,
             "license_expression": "ODC By License 1.0"
-        },
-        {
-            "spdx_id": "ODC-By-1.0",
-            "comment": null,
-            "license_expression": "scancode:odc-by-1.0"
         },
         {
             "spdx_id": "ODC-By-1.0",
@@ -814,16 +674,6 @@
             "spdx_id": "IPA",
             "comment": null,
             "license_expression": "IPA License"
-        },
-        {
-            "spdx_id": "IPA",
-            "comment": null,
-            "license_expression": "scancode:ipa-font"
-        },
-        {
-            "spdx_id": "IPA",
-            "comment": null,
-            "license_expression": "osi:IPA"
         },
         {
             "spdx_id": "IPA",
@@ -898,11 +748,6 @@
         {
             "spdx_id": "BSD-4-Clause-Shortened",
             "comment": null,
-            "license_expression": "scancode:bsd-4-clause-shortened"
-        },
-        {
-            "spdx_id": "BSD-4-Clause-Shortened",
-            "comment": null,
             "license_expression": "BSD 4 Clause Shortened"
         },
         {
@@ -929,11 +774,6 @@
             "spdx_id": "CC-BY-NC-ND-2.5",
             "comment": null,
             "license_expression": "Creative Commons BY-NC-ND 2.5"
-        },
-        {
-            "spdx_id": "CC-BY-NC-ND-2.5",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nc-nd-2.5"
         },
         {
             "spdx_id": "CC-BY-NC-ND-2.5",
@@ -988,11 +828,6 @@
         {
             "spdx_id": "Latex2e",
             "comment": null,
-            "license_expression": "scancode:latex2e"
-        },
-        {
-            "spdx_id": "Latex2e",
-            "comment": null,
             "license_expression": "Latex2e License"
         },
         {
@@ -1009,11 +844,6 @@
             "spdx_id": "OGL-Canada-2.0",
             "comment": null,
             "license_expression": "Open Government Licence - Canada"
-        },
-        {
-            "spdx_id": "OGL-Canada-2.0",
-            "comment": null,
-            "license_expression": "scancode:can-ogl-2.0-en"
         },
         {
             "spdx_id": "OGL-Canada-2.0",
@@ -1049,16 +879,6 @@
             "spdx_id": "ZPL-2.1",
             "comment": null,
             "license_expression": "Zope Public License 2.1"
-        },
-        {
-            "spdx_id": "ZPL-2.1",
-            "comment": null,
-            "license_expression": "osi:ZPL-2.1"
-        },
-        {
-            "spdx_id": "ZPL-2.1",
-            "comment": null,
-            "license_expression": "scancode:zpl-2.1"
         },
         {
             "spdx_id": "ZPL-2.1",
@@ -1118,16 +938,6 @@
         {
             "spdx_id": "VSL-1.0",
             "comment": null,
-            "license_expression": "scancode:vsl-1.0"
-        },
-        {
-            "spdx_id": "VSL-1.0",
-            "comment": null,
-            "license_expression": "osi:VSL-1.0"
-        },
-        {
-            "spdx_id": "VSL-1.0",
-            "comment": null,
             "license_expression": "Vovida Software License 1.0"
         },
         {
@@ -1173,11 +983,6 @@
         {
             "spdx_id": "RSA-MD",
             "comment": null,
-            "license_expression": "scancode:rsa-md5"
-        },
-        {
-            "spdx_id": "RSA-MD",
-            "comment": null,
             "license_expression": "RSA Message-Digest License"
         },
         {
@@ -1218,11 +1023,6 @@
         {
             "spdx_id": "Parity-7.0.0",
             "comment": null,
-            "license_expression": "scancode:parity-7.0.0"
-        },
-        {
-            "spdx_id": "Parity-7.0.0",
-            "comment": null,
             "license_expression": "The Parity Public License 7.0.0"
         },
         {
@@ -1243,11 +1043,6 @@
         {
             "spdx_id": "CC-BY-SA-2.0-UK",
             "comment": null,
-            "license_expression": "scancode:cc-by-sa-2.0-uk"
-        },
-        {
-            "spdx_id": "CC-BY-SA-2.0-UK",
-            "comment": null,
             "license_expression": "Creative Commons Attribution Share Alike 2.0 England and Wales"
         },
         {
@@ -1264,11 +1059,6 @@
             "spdx_id": "SCEA",
             "comment": null,
             "license_expression": "SCEA License"
-        },
-        {
-            "spdx_id": "SCEA",
-            "comment": null,
-            "license_expression": "scancode:scea-1.0"
         },
         {
             "spdx_id": "SCEA",
@@ -1294,11 +1084,6 @@
             "spdx_id": "SHL-0.5",
             "comment": null,
             "license_expression": "Solderpad Hardware License 0.5"
-        },
-        {
-            "spdx_id": "SHL-0.5",
-            "comment": null,
-            "license_expression": "scancode:shl-0.5"
         },
         {
             "spdx_id": "SHL-0.5",
@@ -1343,87 +1128,7 @@
         {
             "spdx_id": "BSD-3-Clause",
             "comment": null,
-            "license_expression": "BSD-3-Clause-Copyright"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "BSD 3-Clause License (copyright variant)"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-3-clause-no-trademark"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-new"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "osi:BSD-3"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-new-nomod"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "BSD-3-Clause-001"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "BSD 3-Clause License Var001"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:libzip"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:twisted-snmp"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-3-clause-no-change"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-intel"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
             "license_expression": "BSD 3-Clause License"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-new"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-intel"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "osi:BSD-3"
-        },
-        {
-            "spdx_id": "BSD-3-Clause",
-            "comment": null,
-            "license_expression": "osi:BSD-3-Clause"
         },
         {
             "spdx_id": "BSD-3-Clause",
@@ -1513,11 +1218,6 @@
         {
             "spdx_id": "Saxpath",
             "comment": null,
-            "license_expression": "scancode:saxpath"
-        },
-        {
-            "spdx_id": "Saxpath",
-            "comment": null,
             "license_expression": "Saxpath License"
         },
         {
@@ -1544,11 +1244,6 @@
             "spdx_id": "APAFML",
             "comment": null,
             "license_expression": "APAFML License"
-        },
-        {
-            "spdx_id": "APAFML",
-            "comment": null,
-            "license_expression": "scancode:apafml"
         },
         {
             "spdx_id": "APAFML",
@@ -1618,11 +1313,6 @@
         {
             "spdx_id": "APSL-1.1",
             "comment": null,
-            "license_expression": "scancode:apsl-1.1"
-        },
-        {
-            "spdx_id": "APSL-1.1",
-            "comment": null,
             "license_expression": "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
         },
         {
@@ -1653,11 +1343,6 @@
         {
             "spdx_id": "HTMLTIDY",
             "comment": null,
-            "license_expression": "scancode:tidy"
-        },
-        {
-            "spdx_id": "HTMLTIDY",
-            "comment": null,
             "license_expression": "HTML Tidy License"
         },
         {
@@ -1683,11 +1368,6 @@
         {
             "spdx_id": "CC-BY-NC-SA-1.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-nc-sa-1.0"
-        },
-        {
-            "spdx_id": "CC-BY-NC-SA-1.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic"
         },
         {
@@ -1699,11 +1379,6 @@
             "spdx_id": "CC-BY-NC-2.0",
             "comment": null,
             "license_expression": "Creative Commons BY-NC 2.0 (generic)"
-        },
-        {
-            "spdx_id": "CC-BY-NC-2.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nc-2.0"
         },
         {
             "spdx_id": "CC-BY-NC-2.0",
@@ -1748,11 +1423,6 @@
         {
             "spdx_id": "Mup",
             "comment": null,
-            "license_expression": "scancode:mup"
-        },
-        {
-            "spdx_id": "Mup",
-            "comment": null,
             "license_expression": "Mup License"
         },
         {
@@ -1779,16 +1449,6 @@
             "spdx_id": "EFL-1.0",
             "comment": null,
             "license_expression": "Eiffel Forum License 1.0"
-        },
-        {
-            "spdx_id": "EFL-1.0",
-            "comment": null,
-            "license_expression": "scancode:efl-1.0"
-        },
-        {
-            "spdx_id": "EFL-1.0",
-            "comment": null,
-            "license_expression": "osi:EFL-1.0"
         },
         {
             "spdx_id": "EFL-1.0",
@@ -1978,32 +1638,12 @@
         {
             "spdx_id": "LGPL-3.0-only",
             "comment": null,
-            "license_expression": "scancode:lgpl-3.0-plus"
-        },
-        {
-            "spdx_id": "LGPL-3.0-only",
-            "comment": null,
-            "license_expression": "osi:LGPL-3.0"
-        },
-        {
-            "spdx_id": "LGPL-3.0-only",
-            "comment": null,
             "license_expression": "GNU Lesser General Public License 3.0"
         },
         {
             "spdx_id": "LGPL-3.0-only",
             "comment": null,
             "license_expression": "LGPL-3.0"
-        },
-        {
-            "spdx_id": "LGPL-3.0-only",
-            "comment": null,
-            "license_expression": "scancode:lgpl-3.0"
-        },
-        {
-            "spdx_id": "LGPL-3.0-only",
-            "comment": null,
-            "license_expression": "osi:LGPL-3.0"
         },
         {
             "spdx_id": "LGPL-3.0-only",
@@ -2123,21 +1763,6 @@
         {
             "spdx_id": "NPOSL-3.0",
             "comment": null,
-            "license_expression": "scancode:nosl-3.0"
-        },
-        {
-            "spdx_id": "NPOSL-3.0",
-            "comment": null,
-            "license_expression": "osi:NPOSL-3.0"
-        },
-        {
-            "spdx_id": "NPOSL-3.0",
-            "comment": null,
-            "license_expression": "osi:NOSL3.0"
-        },
-        {
-            "spdx_id": "NPOSL-3.0",
-            "comment": null,
             "license_expression": "Non-Profit Open Software License 3.0"
         },
         {
@@ -2173,11 +1798,6 @@
         {
             "spdx_id": "CC-BY-ND-4.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-nd-4.0"
-        },
-        {
-            "spdx_id": "CC-BY-ND-4.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution No Derivatives 4.0 International"
         },
         {
@@ -2208,17 +1828,7 @@
         {
             "spdx_id": "Xerox",
             "comment": null,
-            "license_expression": "scancode:mit-export-control"
-        },
-        {
-            "spdx_id": "Xerox",
-            "comment": null,
             "license_expression": "Xerox License"
-        },
-        {
-            "spdx_id": "Xerox",
-            "comment": null,
-            "license_expression": "scancode:mit-export-control"
         },
         {
             "spdx_id": "Xerox",
@@ -2239,11 +1849,6 @@
             "spdx_id": "OGL-UK-3.0",
             "comment": null,
             "license_expression": "Open Government Licence 3.0"
-        },
-        {
-            "spdx_id": "OGL-UK-3.0",
-            "comment": null,
-            "license_expression": "scancode:ogl-uk-3.0"
         },
         {
             "spdx_id": "OGL-UK-3.0",
@@ -2274,16 +1879,6 @@
             "spdx_id": "AAL",
             "comment": null,
             "license_expression": "Attribution Assurance License"
-        },
-        {
-            "spdx_id": "AAL",
-            "comment": null,
-            "license_expression": "scancode:attribution"
-        },
-        {
-            "spdx_id": "AAL",
-            "comment": null,
-            "license_expression": "osi:attribution"
         },
         {
             "spdx_id": "AAL",
@@ -2324,16 +1919,6 @@
             "spdx_id": "QPL-1.0",
             "comment": null,
             "license_expression": "QPL 1.0"
-        },
-        {
-            "spdx_id": "QPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:qpl-1.0"
-        },
-        {
-            "spdx_id": "QPL-1.0",
-            "comment": null,
-            "license_expression": "osi:QPL-1.0"
         },
         {
             "spdx_id": "QPL-1.0",
@@ -2388,11 +1973,6 @@
         {
             "spdx_id": "Dotseqn",
             "comment": null,
-            "license_expression": "scancode:dotseqn"
-        },
-        {
-            "spdx_id": "Dotseqn",
-            "comment": null,
             "license_expression": "Dotseqn License"
         },
         {
@@ -2443,11 +2023,6 @@
         {
             "spdx_id": "MIT-advertising",
             "comment": null,
-            "license_expression": "scancode:enlightenment"
-        },
-        {
-            "spdx_id": "MIT-advertising",
-            "comment": null,
             "license_expression": "Enlightenment License (e16)"
         },
         {
@@ -2468,11 +2043,6 @@
         {
             "spdx_id": "SSH-OpenSSH",
             "comment": null,
-            "license_expression": "scancode:tatu-ylonen"
-        },
-        {
-            "spdx_id": "SSH-OpenSSH",
-            "comment": null,
             "license_expression": "SSH OpenSSH license"
         },
         {
@@ -2489,11 +2059,6 @@
             "spdx_id": "LGPLLR",
             "comment": null,
             "license_expression": "Lesser General Public License (Linguistic Resources)"
-        },
-        {
-            "spdx_id": "LGPLLR",
-            "comment": null,
-            "license_expression": "scancode:lgpllr"
         },
         {
             "spdx_id": "LGPLLR",
@@ -2548,11 +2113,6 @@
         {
             "spdx_id": "TU-Berlin-2.0",
             "comment": null,
-            "license_expression": "scancode:tu-berlin-2.0"
-        },
-        {
-            "spdx_id": "TU-Berlin-2.0",
-            "comment": null,
             "license_expression": "Technische Universitaet Berlin License 2.0"
         },
         {
@@ -2573,11 +2133,6 @@
         {
             "spdx_id": "CC-BY-ND-2.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-nd-2.0"
-        },
-        {
-            "spdx_id": "CC-BY-ND-2.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution No Derivatives 2.0 Generic"
         },
         {
@@ -2589,11 +2144,6 @@
             "spdx_id": "CC-BY-NC-ND-4.0",
             "comment": null,
             "license_expression": "Creative Commons BY-NC-ND 4.0 (international)"
-        },
-        {
-            "spdx_id": "CC-BY-NC-ND-4.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nc-nd-4.0"
         },
         {
             "spdx_id": "CC-BY-NC-ND-4.0",
@@ -2633,17 +2183,7 @@
         {
             "spdx_id": "Plexus",
             "comment": null,
-            "license_expression": "scancode:dom4j"
-        },
-        {
-            "spdx_id": "Plexus",
-            "comment": null,
             "license_expression": "Plexus License"
-        },
-        {
-            "spdx_id": "Plexus",
-            "comment": null,
-            "license_expression": "scancode:classworlds"
         },
         {
             "spdx_id": "Plexus",
@@ -2679,16 +2219,6 @@
             "spdx_id": "SPL-1.0",
             "comment": null,
             "license_expression": "Sun Public License 1.0"
-        },
-        {
-            "spdx_id": "SPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:spl-1.0"
-        },
-        {
-            "spdx_id": "SPL-1.0",
-            "comment": null,
-            "license_expression": "osi:SPL-1.0"
         },
         {
             "spdx_id": "SPL-1.0",
@@ -2749,16 +2279,6 @@
             "spdx_id": "CPAL-1.0",
             "comment": null,
             "license_expression": "Common Public Attribution License 1.0"
-        },
-        {
-            "spdx_id": "CPAL-1.0",
-            "comment": null,
-            "license_expression": "scancode:cpal-1.0"
-        },
-        {
-            "spdx_id": "CPAL-1.0",
-            "comment": null,
-            "license_expression": "osi:CPAL-1.0"
         },
         {
             "spdx_id": "CPAL-1.0",
@@ -2833,21 +2353,6 @@
         {
             "spdx_id": "Apache-1.1",
             "comment": null,
-            "license_expression": "scancode:apache-1.1"
-        },
-        {
-            "spdx_id": "Apache-1.1",
-            "comment": null,
-            "license_expression": "osi:Apache-1.1"
-        },
-        {
-            "spdx_id": "Apache-1.1",
-            "comment": null,
-            "license_expression": "scancode:phorum-2.0"
-        },
-        {
-            "spdx_id": "Apache-1.1",
-            "comment": null,
             "license_expression": "Apache Software License 1.1"
         },
         {
@@ -2894,16 +2399,6 @@
             "spdx_id": "UPL-1.0",
             "comment": null,
             "license_expression": "upl-1.0"
-        },
-        {
-            "spdx_id": "UPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:upl-1.0"
-        },
-        {
-            "spdx_id": "UPL-1.0",
-            "comment": null,
-            "license_expression": "osi:UPL"
         },
         {
             "spdx_id": "UPL-1.0",
@@ -2973,11 +2468,6 @@
         {
             "spdx_id": "mpich2",
             "comment": null,
-            "license_expression": "scancode:mpich"
-        },
-        {
-            "spdx_id": "mpich2",
-            "comment": null,
             "license_expression": "mpich2 License"
         },
         {
@@ -3038,11 +2528,6 @@
         {
             "spdx_id": "eGenix",
             "comment": null,
-            "license_expression": "scancode:egenix-1.0.0"
-        },
-        {
-            "spdx_id": "eGenix",
-            "comment": null,
             "license_expression": "eGenix.com Public License 1.1.0"
         },
         {
@@ -3064,11 +2549,6 @@
             "spdx_id": "GFDL-1.2-only",
             "comment": null,
             "license_expression": "GFDL-1.2"
-        },
-        {
-            "spdx_id": "GFDL-1.2-only",
-            "comment": null,
-            "license_expression": "scancode:gfdl-1.2"
         },
         {
             "spdx_id": "GFDL-1.2-only",
@@ -3099,11 +2579,6 @@
             "spdx_id": "Unicode-TOU",
             "comment": null,
             "license_expression": "Unicode Terms of Use"
-        },
-        {
-            "spdx_id": "Unicode-TOU",
-            "comment": null,
-            "license_expression": "scancode:unicode-tou"
         },
         {
             "spdx_id": "Unicode-TOU",
@@ -3139,11 +2614,6 @@
             "spdx_id": "APSL-1.2",
             "comment": null,
             "license_expression": "Apple Public Source License 1.2"
-        },
-        {
-            "spdx_id": "APSL-1.2",
-            "comment": null,
-            "license_expression": "scancode:apsl-1.2"
         },
         {
             "spdx_id": "APSL-1.2",
@@ -3208,16 +2678,6 @@
         {
             "spdx_id": "Apache-2.0",
             "comment": null,
-            "license_expression": "scancode:apache-2.0"
-        },
-        {
-            "spdx_id": "Apache-2.0",
-            "comment": null,
-            "license_expression": "osi:Apache-2.0"
-        },
-        {
-            "spdx_id": "Apache-2.0",
-            "comment": null,
             "license_expression": "Apache Software License 2.0"
         },
         {
@@ -3278,11 +2738,6 @@
         {
             "spdx_id": "BSD-Source-Code",
             "comment": null,
-            "license_expression": "scancode:bsd-source-code"
-        },
-        {
-            "spdx_id": "BSD-Source-Code",
-            "comment": null,
             "license_expression": "BSD Source Code Attribution"
         },
         {
@@ -3299,11 +2754,6 @@
             "spdx_id": "CC-BY-NC-4.0",
             "comment": null,
             "license_expression": "Creative Commons BY-NC 4.0 (international)"
-        },
-        {
-            "spdx_id": "CC-BY-NC-4.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nc-4.0"
         },
         {
             "spdx_id": "CC-BY-NC-4.0",
@@ -3329,11 +2779,6 @@
             "spdx_id": "TMate",
             "comment": null,
             "license_expression": "TMate License"
-        },
-        {
-            "spdx_id": "TMate",
-            "comment": null,
-            "license_expression": "scancode:tmate"
         },
         {
             "spdx_id": "TMate",
@@ -3368,11 +2813,6 @@
         {
             "spdx_id": "OPL-1.0",
             "comment": null,
-            "license_expression": "scancode:open-public"
-        },
-        {
-            "spdx_id": "OPL-1.0",
-            "comment": null,
             "license_expression": "Open Public License v1.0"
         },
         {
@@ -3389,11 +2829,6 @@
             "spdx_id": "CECILL-1.0",
             "comment": null,
             "license_expression": "CeCILL Free Software License Agreement 1.0"
-        },
-        {
-            "spdx_id": "CECILL-1.0",
-            "comment": null,
-            "license_expression": "scancode:cecill-1.0"
         },
         {
             "spdx_id": "CECILL-1.0",
@@ -3429,16 +2864,6 @@
             "spdx_id": "EPL-2.0",
             "comment": null,
             "license_expression": "Eclipse Public License 2.0"
-        },
-        {
-            "spdx_id": "EPL-2.0",
-            "comment": null,
-            "license_expression": "scancode:epl-2.0"
-        },
-        {
-            "spdx_id": "EPL-2.0",
-            "comment": null,
-            "license_expression": "osi:EPL-2.0"
         },
         {
             "spdx_id": "EPL-2.0",
@@ -3498,16 +2923,6 @@
         {
             "spdx_id": "LPPL-1.3c",
             "comment": null,
-            "license_expression": "scancode:lppl-1.3c"
-        },
-        {
-            "spdx_id": "LPPL-1.3c",
-            "comment": null,
-            "license_expression": "osi:LPPL-1.3c"
-        },
-        {
-            "spdx_id": "LPPL-1.3c",
-            "comment": null,
             "license_expression": "LaTeX Project Public License 1.3c"
         },
         {
@@ -3558,11 +2973,6 @@
         {
             "spdx_id": "Zed",
             "comment": null,
-            "license_expression": "scancode:zed"
-        },
-        {
-            "spdx_id": "Zed",
-            "comment": null,
             "license_expression": "Zed License"
         },
         {
@@ -3589,11 +2999,6 @@
             "spdx_id": "SGI-B-2.0",
             "comment": null,
             "license_expression": "SGI B License 2.0"
-        },
-        {
-            "spdx_id": "SGI-B-2.0",
-            "comment": null,
-            "license_expression": "scancode:sgi-freeb-2.0"
         },
         {
             "spdx_id": "SGI-B-2.0",
@@ -3628,11 +3033,6 @@
         {
             "spdx_id": "BSD-3-Clause-Open-MPI",
             "comment": null,
-            "license_expression": "scancode:bsd-3-clause-open-mpi"
-        },
-        {
-            "spdx_id": "BSD-3-Clause-Open-MPI",
-            "comment": null,
             "license_expression": "Open MPI License"
         },
         {
@@ -3659,21 +3059,6 @@
             "spdx_id": "CDDL-1.0",
             "comment": null,
             "license_expression": "CDDL 1.0"
-        },
-        {
-            "spdx_id": "CDDL-1.0",
-            "comment": null,
-            "license_expression": "scancode:cddl-1.0"
-        },
-        {
-            "spdx_id": "CDDL-1.0",
-            "comment": null,
-            "license_expression": "osi:CDDL-1.0"
-        },
-        {
-            "spdx_id": "CDDL-1.0",
-            "comment": null,
-            "license_expression": "osi:cddl1"
         },
         {
             "spdx_id": "CDDL-1.0",
@@ -3758,11 +3143,6 @@
         {
             "spdx_id": "Hippocratic-2.1",
             "comment": null,
-            "license_expression": "scancode:hippocratic-2.1"
-        },
-        {
-            "spdx_id": "Hippocratic-2.1",
-            "comment": null,
             "license_expression": "Hippocratic License 2.1"
         },
         {
@@ -3788,11 +3168,6 @@
         {
             "spdx_id": "Linux-OpenIB",
             "comment": null,
-            "license_expression": "scancode:linux-openib"
-        },
-        {
-            "spdx_id": "Linux-OpenIB",
-            "comment": null,
             "license_expression": "Linux Kernel Variant of OpenIB.org license"
         },
         {
@@ -3814,11 +3189,6 @@
             "spdx_id": "IJG",
             "comment": null,
             "license_expression": "IJG License"
-        },
-        {
-            "spdx_id": "IJG",
-            "comment": null,
-            "license_expression": "scancode:ijg"
         },
         {
             "spdx_id": "IJG",
@@ -3859,11 +3229,6 @@
             "spdx_id": "TCL",
             "comment": null,
             "license_expression": "TCL License"
-        },
-        {
-            "spdx_id": "TCL",
-            "comment": null,
-            "license_expression": "scancode:tcl"
         },
         {
             "spdx_id": "TCL",
@@ -3913,11 +3278,6 @@
         {
             "spdx_id": "NBPL-1.0",
             "comment": null,
-            "license_expression": "scancode:nbpl-1.0"
-        },
-        {
-            "spdx_id": "NBPL-1.0",
-            "comment": null,
             "license_expression": "Net Boolean Public License v1"
         },
         {
@@ -3929,11 +3289,6 @@
             "spdx_id": "Zimbra-1.3",
             "comment": null,
             "license_expression": "Zimbra License 1.3"
-        },
-        {
-            "spdx_id": "Zimbra-1.3",
-            "comment": null,
-            "license_expression": "scancode:zimbra-1.3"
         },
         {
             "spdx_id": "Zimbra-1.3",
@@ -3959,16 +3314,6 @@
             "spdx_id": "MPL-1.0",
             "comment": null,
             "license_expression": "Mozilla Public License 1.0"
-        },
-        {
-            "spdx_id": "MPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:mpl-1.0"
-        },
-        {
-            "spdx_id": "MPL-1.0",
-            "comment": null,
-            "license_expression": "osi:MPL-1.0"
         },
         {
             "spdx_id": "MPL-1.0",
@@ -4013,31 +3358,6 @@
         {
             "spdx_id": "LGPL-2.1-or-later",
             "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL (v2.1)"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License Version 2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
             "license_expression": "LGPL-2.1+"
         },
         {
@@ -4053,67 +3373,17 @@
         {
             "spdx_id": "LGPL-2.1-or-later",
             "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License v2.1 only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
             "license_expression": "GNU Lesser General Public License v2.1 or later"
         },
         {
             "spdx_id": "LGPL-2.1-or-later",
             "comment": null,
-            "license_expression": "lgpl-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "GNU LGPLv2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
             "license_expression": "LGPL-2.1+"
         },
         {
             "spdx_id": "LGPL-2.1-or-later",
             "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
             "license_expression": "LGPL-2.1+"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1-only"
         },
         {
             "spdx_id": "LGPL-2.1-or-later",
@@ -4128,102 +3398,7 @@
         {
             "spdx_id": "LGPL-2.1-or-later",
             "comment": null,
-            "license_expression": "scancode:lgpl-2.1-plus"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "osi:LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License 2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "scancode:lgpl-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "osi:LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License 2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License, Version 2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License Version 2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
             "license_expression": "GNU Lesser General Public License v2.1 or later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License v2.1 only"
         },
         {
             "spdx_id": "LGPL-2.1-or-later",
@@ -4236,34 +3411,9 @@
             "license_expression": "LGPL 2.1 or later"
         },
         {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL-2.1-only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "scancode://lgpl-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-or-later",
-            "comment": null,
-            "license_expression": "LGPL 2.1"
-        },
-        {
             "spdx_id": "CC-PDDC",
             "comment": null,
             "license_expression": "Creative Commons Public Domain Dedication and Certification"
-        },
-        {
-            "spdx_id": "CC-PDDC",
-            "comment": null,
-            "license_expression": "scancode:aop-pd"
-        },
-        {
-            "spdx_id": "CC-PDDC",
-            "comment": null,
-            "license_expression": "scancode:cc-pd"
         },
         {
             "spdx_id": "CC-PDDC",
@@ -4298,11 +3448,6 @@
         {
             "spdx_id": "Imlib2",
             "comment": null,
-            "license_expression": "scancode:imlib2"
-        },
-        {
-            "spdx_id": "Imlib2",
-            "comment": null,
             "license_expression": "Imlib2 License"
         },
         {
@@ -4333,16 +3478,6 @@
         {
             "spdx_id": "Multics",
             "comment": null,
-            "license_expression": "scancode:multics"
-        },
-        {
-            "spdx_id": "Multics",
-            "comment": null,
-            "license_expression": "osi:Multics"
-        },
-        {
-            "spdx_id": "Multics",
-            "comment": null,
             "license_expression": "Multics License"
         },
         {
@@ -4369,11 +3504,6 @@
             "spdx_id": "D-FSL-1.0",
             "comment": null,
             "license_expression": "Deutsche Freie Software Lizenz"
-        },
-        {
-            "spdx_id": "D-FSL-1.0",
-            "comment": null,
-            "license_expression": "scancode:d-fsl-1.0-de"
         },
         {
             "spdx_id": "D-FSL-1.0",
@@ -4418,11 +3548,6 @@
         {
             "spdx_id": "BlueOak-1.0.0",
             "comment": null,
-            "license_expression": "scancode:blueoak-1.0.0"
-        },
-        {
-            "spdx_id": "BlueOak-1.0.0",
-            "comment": null,
             "license_expression": "Blue Oak Model License 1.0.0"
         },
         {
@@ -4449,11 +3574,6 @@
             "spdx_id": "GFDL-1.1-only",
             "comment": null,
             "license_expression": "GFDL-1.1"
-        },
-        {
-            "spdx_id": "GFDL-1.1-only",
-            "comment": null,
-            "license_expression": "scancode:gfdl-1.1"
         },
         {
             "spdx_id": "GFDL-1.1-only",
@@ -4493,16 +3613,6 @@
         {
             "spdx_id": "RPL-1.5",
             "comment": null,
-            "license_expression": "scancode:rpl-1.5"
-        },
-        {
-            "spdx_id": "RPL-1.5",
-            "comment": null,
-            "license_expression": "osi:RPL-1.5"
-        },
-        {
-            "spdx_id": "RPL-1.5",
-            "comment": null,
             "license_expression": "Reciprocal Public License 1.5"
         },
         {
@@ -4534,16 +3644,6 @@
             "spdx_id": "OFL-1.1",
             "comment": null,
             "license_expression": "SIL Open Font License 1.1"
-        },
-        {
-            "spdx_id": "OFL-1.1",
-            "comment": null,
-            "license_expression": "scancode:ofl-1.1"
-        },
-        {
-            "spdx_id": "OFL-1.1",
-            "comment": null,
-            "license_expression": "osi:OFL-1.1"
         },
         {
             "spdx_id": "OFL-1.1",
@@ -4584,21 +3684,6 @@
             "spdx_id": "CPL-1.0",
             "comment": null,
             "license_expression": "Common Public License 1.0"
-        },
-        {
-            "spdx_id": "CPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:cpl-0.5"
-        },
-        {
-            "spdx_id": "CPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:cpl-1.0"
-        },
-        {
-            "spdx_id": "CPL-1.0",
-            "comment": null,
-            "license_expression": "osi:CPL-1.0"
         },
         {
             "spdx_id": "CPL-1.0",
@@ -4788,37 +3873,12 @@
         {
             "spdx_id": "AGPL-3.0-only",
             "comment": null,
-            "license_expression": "scancode:agpl-3.0-plus"
-        },
-        {
-            "spdx_id": "AGPL-3.0-only",
-            "comment": null,
-            "license_expression": "scancode:agpl-2.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-only",
-            "comment": null,
-            "license_expression": "osi:AGPL-3.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-only",
-            "comment": null,
             "license_expression": "GNU Affero General Public License 3.0"
         },
         {
             "spdx_id": "AGPL-3.0-only",
             "comment": null,
             "license_expression": "AGPL-3.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-only",
-            "comment": null,
-            "license_expression": "scancode:agpl-3.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-only",
-            "comment": null,
-            "license_expression": "osi:AGPL-3.0"
         },
         {
             "spdx_id": "AGPL-3.0-only",
@@ -4938,11 +3998,6 @@
         {
             "spdx_id": "gnuplot",
             "comment": null,
-            "license_expression": "scancode:gnuplot"
-        },
-        {
-            "spdx_id": "gnuplot",
-            "comment": null,
             "license_expression": "gnuplot License"
         },
         {
@@ -4964,11 +4019,6 @@
             "spdx_id": "NLPL",
             "comment": null,
             "license_expression": "No Limit Public License"
-        },
-        {
-            "spdx_id": "NLPL",
-            "comment": null,
-            "license_expression": "scancode:nlpl"
         },
         {
             "spdx_id": "NLPL",
@@ -4998,11 +4048,6 @@
         {
             "spdx_id": "ADSL",
             "comment": null,
-            "license_expression": "scancode:adsl"
-        },
-        {
-            "spdx_id": "ADSL",
-            "comment": null,
             "license_expression": "Amazon Digital Services License"
         },
         {
@@ -5028,11 +4073,6 @@
         {
             "spdx_id": "psfrag",
             "comment": null,
-            "license_expression": "scancode:psfrag"
-        },
-        {
-            "spdx_id": "psfrag",
-            "comment": null,
             "license_expression": "psfrag License"
         },
         {
@@ -5054,16 +4094,6 @@
             "spdx_id": "Watcom-1.0",
             "comment": null,
             "license_expression": "Watcom License 1.0"
-        },
-        {
-            "spdx_id": "Watcom-1.0",
-            "comment": null,
-            "license_expression": "scancode:sybase"
-        },
-        {
-            "spdx_id": "Watcom-1.0",
-            "comment": null,
-            "license_expression": "osi:Watcom-1.0"
         },
         {
             "spdx_id": "Watcom-1.0",
@@ -5098,11 +4128,6 @@
         {
             "spdx_id": "SGI-B-1.0",
             "comment": null,
-            "license_expression": "scancode:sgi-fslb-1.0"
-        },
-        {
-            "spdx_id": "SGI-B-1.0",
-            "comment": null,
             "license_expression": "SGI Free Software License B v1.0"
         },
         {
@@ -5124,11 +4149,6 @@
             "spdx_id": "W3C-19980720",
             "comment": null,
             "license_expression": "W3C Software Notice and License (1998-07-20)"
-        },
-        {
-            "spdx_id": "W3C-19980720",
-            "comment": null,
-            "license_expression": "scancode:w3c-software-19980720"
         },
         {
             "spdx_id": "W3C-19980720",
@@ -5159,16 +4179,6 @@
             "spdx_id": "NASA-1.3",
             "comment": null,
             "license_expression": "NASA License 1.3"
-        },
-        {
-            "spdx_id": "NASA-1.3",
-            "comment": null,
-            "license_expression": "scancode:nasa-1.3"
-        },
-        {
-            "spdx_id": "NASA-1.3",
-            "comment": null,
-            "license_expression": "osi:NASA-1.3"
         },
         {
             "spdx_id": "NASA-1.3",
@@ -5218,16 +4228,6 @@
         {
             "spdx_id": "Fair",
             "comment": null,
-            "license_expression": "scancode:fair"
-        },
-        {
-            "spdx_id": "Fair",
-            "comment": null,
-            "license_expression": "osi:Fair"
-        },
-        {
-            "spdx_id": "Fair",
-            "comment": null,
             "license_expression": "Fair License"
         },
         {
@@ -5254,11 +4254,6 @@
             "spdx_id": "CERN-OHL-1.1",
             "comment": null,
             "license_expression": "CERN Open Hardware License 1.1"
-        },
-        {
-            "spdx_id": "CERN-OHL-1.1",
-            "comment": null,
-            "license_expression": "scancode:cern-ohl-1.1"
         },
         {
             "spdx_id": "CERN-OHL-1.1",
@@ -5303,11 +4298,6 @@
         {
             "spdx_id": "OLDAP-1.1",
             "comment": null,
-            "license_expression": "scancode:openldap-1.1"
-        },
-        {
-            "spdx_id": "OLDAP-1.1",
-            "comment": null,
             "license_expression": "Open LDAP Public License v1.1"
         },
         {
@@ -5333,11 +4323,6 @@
         {
             "spdx_id": "OGDL-Taiwan-1.0",
             "comment": null,
-            "license_expression": "scancode:ogdl-taiwan-1.0"
-        },
-        {
-            "spdx_id": "OGDL-Taiwan-1.0",
-            "comment": null,
             "license_expression": "Taiwan Open Government Data License, version 1.0"
         },
         {
@@ -5359,16 +4344,6 @@
             "spdx_id": "NGPL",
             "comment": null,
             "license_expression": "Nethack General Public License"
-        },
-        {
-            "spdx_id": "NGPL",
-            "comment": null,
-            "license_expression": "scancode:ngpl"
-        },
-        {
-            "spdx_id": "NGPL",
-            "comment": null,
-            "license_expression": "osi:NGPL"
         },
         {
             "spdx_id": "NGPL",
@@ -5428,16 +4403,6 @@
         {
             "spdx_id": "BSL-1.0",
             "comment": null,
-            "license_expression": "scancode:boost-1.0"
-        },
-        {
-            "spdx_id": "BSL-1.0",
-            "comment": null,
-            "license_expression": "osi:BSL-1.0"
-        },
-        {
-            "spdx_id": "BSL-1.0",
-            "comment": null,
             "license_expression": "Boost Software License 1.0"
         },
         {
@@ -5493,11 +4458,6 @@
         {
             "spdx_id": "Sendmail",
             "comment": null,
-            "license_expression": "scancode:sendmail"
-        },
-        {
-            "spdx_id": "Sendmail",
-            "comment": null,
             "license_expression": "SENDMAIL LICENSE (version 2004)"
         },
         {
@@ -5538,11 +4498,6 @@
         {
             "spdx_id": "OLDAP-2.4",
             "comment": null,
-            "license_expression": "scancode:openldap-2.4"
-        },
-        {
-            "spdx_id": "OLDAP-2.4",
-            "comment": null,
             "license_expression": "Open LDAP Public License v2.4"
         },
         {
@@ -5573,11 +4528,6 @@
         {
             "spdx_id": "CrystalStacker",
             "comment": null,
-            "license_expression": "scancode:crystal-stacker"
-        },
-        {
-            "spdx_id": "CrystalStacker",
-            "comment": null,
             "license_expression": "CrystalStacker License"
         },
         {
@@ -5603,11 +4553,6 @@
         {
             "spdx_id": "blessing",
             "comment": null,
-            "license_expression": "scancode:blessing"
-        },
-        {
-            "spdx_id": "blessing",
-            "comment": null,
             "license_expression": "SQLite Blessing"
         },
         {
@@ -5629,11 +4574,6 @@
             "spdx_id": "CC-BY-SA-4.0",
             "comment": null,
             "license_expression": "Creative Commons BY-SA 4.0"
-        },
-        {
-            "spdx_id": "CC-BY-SA-4.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-sa-4.0"
         },
         {
             "spdx_id": "CC-BY-SA-4.0",
@@ -5664,11 +4604,6 @@
             "spdx_id": "CC-BY-2.5",
             "comment": null,
             "license_expression": "Creative Commons BY 2.5"
-        },
-        {
-            "spdx_id": "CC-BY-2.5",
-            "comment": null,
-            "license_expression": "scancode:cc-by-2.5"
         },
         {
             "spdx_id": "CC-BY-2.5",
@@ -5713,22 +4648,12 @@
         {
             "spdx_id": "ICU",
             "comment": null,
-            "license_expression": "scancode:slf4j-2005"
-        },
-        {
-            "spdx_id": "ICU",
-            "comment": null,
             "license_expression": "X11"
         },
         {
             "spdx_id": "ICU",
             "comment": null,
             "license_expression": "X11 License"
-        },
-        {
-            "spdx_id": "ICU",
-            "comment": null,
-            "license_expression": "scancode:x11-xconsortium"
         },
         {
             "spdx_id": "ICU",
@@ -5798,11 +4723,6 @@
         {
             "spdx_id": "diffmark",
             "comment": null,
-            "license_expression": "scancode:diffmark"
-        },
-        {
-            "spdx_id": "diffmark",
-            "comment": null,
             "license_expression": "diffmark license"
         },
         {
@@ -5828,11 +4748,6 @@
         {
             "spdx_id": "libpng-2.0",
             "comment": null,
-            "license_expression": "scancode:libpng-v2"
-        },
-        {
-            "spdx_id": "libpng-2.0",
-            "comment": null,
             "license_expression": "PNG Reference Library version 2"
         },
         {
@@ -5849,16 +4764,6 @@
             "spdx_id": "RSCPL",
             "comment": null,
             "license_expression": "Ricoh Source Code Public License"
-        },
-        {
-            "spdx_id": "RSCPL",
-            "comment": null,
-            "license_expression": "scancode:ricoh-1.0"
-        },
-        {
-            "spdx_id": "RSCPL",
-            "comment": null,
-            "license_expression": "osi:RSCPL"
         },
         {
             "spdx_id": "RSCPL",
@@ -5903,11 +4808,6 @@
         {
             "spdx_id": "FSFAP",
             "comment": null,
-            "license_expression": "scancode:fsf-ap"
-        },
-        {
-            "spdx_id": "FSFAP",
-            "comment": null,
             "license_expression": "FSF All Permissive License"
         },
         {
@@ -5924,11 +4824,6 @@
             "spdx_id": "NPL-1.1",
             "comment": null,
             "license_expression": "Netscape Public License 1.1"
-        },
-        {
-            "spdx_id": "NPL-1.1",
-            "comment": null,
-            "license_expression": "scancode:npl-1.1"
         },
         {
             "spdx_id": "NPL-1.1",
@@ -5973,11 +4868,6 @@
         {
             "spdx_id": "OSL-1.1",
             "comment": null,
-            "license_expression": "scancode:osl-1.1"
-        },
-        {
-            "spdx_id": "OSL-1.1",
-            "comment": null,
             "license_expression": "Open Software License 1.1"
         },
         {
@@ -6008,11 +4898,6 @@
         {
             "spdx_id": "MIT-feh",
             "comment": null,
-            "license_expression": "scancode:mit-ack"
-        },
-        {
-            "spdx_id": "MIT-feh",
-            "comment": null,
             "license_expression": "feh License"
         },
         {
@@ -6029,11 +4914,6 @@
             "spdx_id": "PDDL-1.0",
             "comment": null,
             "license_expression": "PDDL 1.0"
-        },
-        {
-            "spdx_id": "PDDL-1.0",
-            "comment": null,
-            "license_expression": "scancode:pddl-1.0"
         },
         {
             "spdx_id": "PDDL-1.0",
@@ -6068,11 +4948,6 @@
         {
             "spdx_id": "CERN-OHL-1.2",
             "comment": null,
-            "license_expression": "scancode:cern-ohl-1.2"
-        },
-        {
-            "spdx_id": "CERN-OHL-1.2",
-            "comment": null,
             "license_expression": "CERN Open Hardware Licence v1.2"
         },
         {
@@ -6093,11 +4968,6 @@
         {
             "spdx_id": "CC-BY-3.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-3.0"
-        },
-        {
-            "spdx_id": "CC-BY-3.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution 3.0 Unported"
         },
         {
@@ -6114,11 +4984,6 @@
             "spdx_id": "CC-BY-NC-ND-2.0",
             "comment": null,
             "license_expression": "Creative Commons BY-NC-ND 2.0 (generic)"
-        },
-        {
-            "spdx_id": "CC-BY-NC-ND-2.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nc-nd-2.0"
         },
         {
             "spdx_id": "CC-BY-NC-ND-2.0",
@@ -6173,11 +5038,6 @@
         {
             "spdx_id": "Borceux",
             "comment": null,
-            "license_expression": "scancode:borceux"
-        },
-        {
-            "spdx_id": "Borceux",
-            "comment": null,
             "license_expression": "Borceux license"
         },
         {
@@ -6209,16 +5069,6 @@
             "spdx_id": "NCSA",
             "comment": null,
             "license_expression": "NCSA License"
-        },
-        {
-            "spdx_id": "NCSA",
-            "comment": null,
-            "license_expression": "scancode:uoi-ncsa"
-        },
-        {
-            "spdx_id": "NCSA",
-            "comment": null,
-            "license_expression": "osi:NCSA"
         },
         {
             "spdx_id": "NCSA",
@@ -6283,16 +5133,6 @@
         {
             "spdx_id": "Naumen",
             "comment": null,
-            "license_expression": "scancode:naumen"
-        },
-        {
-            "spdx_id": "Naumen",
-            "comment": null,
-            "license_expression": "osi:Naumen"
-        },
-        {
-            "spdx_id": "Naumen",
-            "comment": null,
             "license_expression": "Naumen Public License"
         },
         {
@@ -6328,11 +5168,6 @@
         {
             "spdx_id": "Caldera",
             "comment": null,
-            "license_expression": "scancode:caldera"
-        },
-        {
-            "spdx_id": "Caldera",
-            "comment": null,
             "license_expression": "Caldera License"
         },
         {
@@ -6354,11 +5189,6 @@
             "spdx_id": "PHP-3.01",
             "comment": null,
             "license_expression": "PHP License 3.01"
-        },
-        {
-            "spdx_id": "PHP-3.01",
-            "comment": null,
-            "license_expression": "scancode:php-3.01"
         },
         {
             "spdx_id": "PHP-3.01",
@@ -6418,11 +5248,6 @@
         {
             "spdx_id": "DOC",
             "comment": null,
-            "license_expression": "scancode:ace-tao"
-        },
-        {
-            "spdx_id": "DOC",
-            "comment": null,
             "license_expression": "DOC License"
         },
         {
@@ -6439,16 +5264,6 @@
             "spdx_id": "OGC-1.0",
             "comment": null,
             "license_expression": "OGC Software License 1.0"
-        },
-        {
-            "spdx_id": "OGC-1.0",
-            "comment": null,
-            "license_expression": "scancode:ogc-1.0"
-        },
-        {
-            "spdx_id": "OGC-1.0",
-            "comment": null,
-            "license_expression": "scancode:ogc-2006"
         },
         {
             "spdx_id": "OGC-1.0",
@@ -6598,16 +5413,6 @@
         {
             "spdx_id": "GPL-3.0-or-later",
             "comment": null,
-            "license_expression": "scancode:gpl-3.0-plus"
-        },
-        {
-            "spdx_id": "GPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "osi:GPL-3.0"
-        },
-        {
-            "spdx_id": "GPL-3.0-or-later",
-            "comment": null,
             "license_expression": "GPL-3.0-only"
         },
         {
@@ -6619,16 +5424,6 @@
             "spdx_id": "GPL-3.0-or-later",
             "comment": null,
             "license_expression": "GPL-3.0"
-        },
-        {
-            "spdx_id": "GPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "scancode:gpl-3.0"
-        },
-        {
-            "spdx_id": "GPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "osi:GPL-3.0"
         },
         {
             "spdx_id": "GPL-3.0-or-later",
@@ -6738,11 +5533,6 @@
         {
             "spdx_id": "SAX-PD",
             "comment": null,
-            "license_expression": "scancode:sax-pd"
-        },
-        {
-            "spdx_id": "SAX-PD",
-            "comment": null,
             "license_expression": "Sax Public Domain Notice"
         },
         {
@@ -6758,37 +5548,12 @@
         {
             "spdx_id": "CNRI-Python",
             "comment": null,
-            "license_expression": "CNRI-Python-1.6"
-        },
-        {
-            "spdx_id": "CNRI-Python",
-            "comment": null,
-            "license_expression": "CNRI Open Source License Agreement (Python 1.6)"
-        },
-        {
-            "spdx_id": "CNRI-Python",
-            "comment": null,
-            "license_expression": "scancode:cnri-python-1.6"
-        },
-        {
-            "spdx_id": "CNRI-Python",
-            "comment": null,
             "license_expression": "CNRI Open Source License Agreement (Python 1.6b1)"
         },
         {
             "spdx_id": "CNRI-Python",
             "comment": null,
             "license_expression": "CNRI-Python-1.6b1"
-        },
-        {
-            "spdx_id": "CNRI-Python",
-            "comment": null,
-            "license_expression": "scancode:cnri-python-1.6"
-        },
-        {
-            "spdx_id": "CNRI-Python",
-            "comment": null,
-            "license_expression": "osi:CNRI-Python"
         },
         {
             "spdx_id": "CNRI-Python",
@@ -6843,16 +5608,6 @@
         {
             "spdx_id": "HPND",
             "comment": null,
-            "license_expression": "scancode:historical"
-        },
-        {
-            "spdx_id": "HPND",
-            "comment": null,
-            "license_expression": "osi:HPND"
-        },
-        {
-            "spdx_id": "HPND",
-            "comment": null,
             "license_expression": "Historical Permission Notice and Disclaimer"
         },
         {
@@ -6884,26 +5639,6 @@
             "spdx_id": "CECILL-C",
             "comment": null,
             "license_expression": "CECILL C License"
-        },
-        {
-            "spdx_id": "CECILL-C",
-            "comment": null,
-            "license_expression": "scancode:cecill-c"
-        },
-        {
-            "spdx_id": "CECILL-C",
-            "comment": null,
-            "license_expression": "CeCILL-C-FSL"
-        },
-        {
-            "spdx_id": "CECILL-C",
-            "comment": null,
-            "license_expression": "CeCILL-C Free Software License (FRA)"
-        },
-        {
-            "spdx_id": "CECILL-C",
-            "comment": null,
-            "license_expression": "scancode:cecill-c"
         },
         {
             "spdx_id": "CECILL-C",
@@ -6948,42 +5683,7 @@
         {
             "spdx_id": "GPL-2.0-only",
             "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0+"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL2.0+"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL2+"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL (v2 or later)"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
             "license_expression": "GNU General Public License v2.0 only"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GNU General Public License v2.0 or later"
         },
         {
             "spdx_id": "GPL-2.0-only",
@@ -7003,87 +5703,12 @@
         {
             "spdx_id": "GPL-2.0-only",
             "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
             "license_expression": "GNU General Public License v2.0 only"
         },
         {
             "spdx_id": "GPL-2.0-only",
             "comment": null,
-            "license_expression": "GNU General Public License v2.0 or later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
             "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0+"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GNU General Public License 2.0 (or any later version)"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0+"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "scancode:gpl-2.0-plus"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "osi:GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GNU General Public License 2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "scancode:gpl-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "osi:GPL-2.0"
         },
         {
             "spdx_id": "GPL-2.0-only",
@@ -7098,7 +5723,17 @@
         {
             "spdx_id": "GPL-2.0-only",
             "comment": null,
-            "license_expression": "GPL-2.0-or-later"
+            "license_expression": "GPL-2.0"
+        },
+        {
+            "spdx_id": "GPL-2.0-only",
+            "comment": null,
+            "license_expression": "GPL-2.0"
+        },
+        {
+            "spdx_id": "GPL-2.0-only",
+            "comment": null,
+            "license_expression": "GNU General Public License 2.0"
         },
         {
             "spdx_id": "GPL-2.0-only",
@@ -7123,11 +5758,6 @@
         {
             "spdx_id": "GPL-2.0-only",
             "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
             "license_expression": "GPL-2.0"
         },
         {
@@ -7139,31 +5769,6 @@
             "spdx_id": "GPL-2.0-only",
             "comment": null,
             "license_expression": "GNU General Public License v2.0 only"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GNU General Public License v2.0 or later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL-2.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "scancode://gpl-2.0-plus"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
-            "license_expression": "GPL 2.0 or later"
         },
         {
             "spdx_id": "GPL-2.0-only",
@@ -7214,16 +5819,6 @@
             "spdx_id": "PSF-2.0",
             "comment": null,
             "license_expression": "Python Software Foundation License 2.0"
-        },
-        {
-            "spdx_id": "PSF-2.0",
-            "comment": null,
-            "license_expression": "scancode:python"
-        },
-        {
-            "spdx_id": "PSF-2.0",
-            "comment": null,
-            "license_expression": "osi:Python-2.0"
         },
         {
             "spdx_id": "PSF-2.0",
@@ -7358,16 +5953,6 @@
         {
             "spdx_id": "W3C",
             "comment": null,
-            "license_expression": "scancode:w3c"
-        },
-        {
-            "spdx_id": "W3C",
-            "comment": null,
-            "license_expression": "osi:W3C"
-        },
-        {
-            "spdx_id": "W3C",
-            "comment": null,
             "license_expression": "W3C License"
         },
         {
@@ -7438,11 +6023,6 @@
         {
             "spdx_id": "xinetd",
             "comment": null,
-            "license_expression": "scancode:xinetd"
-        },
-        {
-            "spdx_id": "xinetd",
-            "comment": null,
             "license_expression": "xinetd License"
         },
         {
@@ -7469,16 +6049,6 @@
             "spdx_id": "OGTSL",
             "comment": null,
             "license_expression": "Open Group Test Suite License"
-        },
-        {
-            "spdx_id": "OGTSL",
-            "comment": null,
-            "license_expression": "scancode:opengroup"
-        },
-        {
-            "spdx_id": "OGTSL",
-            "comment": null,
-            "license_expression": "osi:OGTSL"
         },
         {
             "spdx_id": "OGTSL",
@@ -7563,11 +6133,6 @@
         {
             "spdx_id": "AGPL-1.0-only",
             "comment": null,
-            "license_expression": "scancode:agpl-1.0"
-        },
-        {
-            "spdx_id": "AGPL-1.0-only",
-            "comment": null,
             "license_expression": "Affero General Public License v1.0 only"
         },
         {
@@ -7608,11 +6173,6 @@
         {
             "spdx_id": "WTFPL",
             "comment": null,
-            "license_expression": "scancode:wtfpl-2.0"
-        },
-        {
-            "spdx_id": "WTFPL",
-            "comment": null,
             "license_expression": "Do What The F*ck You Want To Public License"
         },
         {
@@ -7639,11 +6199,6 @@
             "spdx_id": "W3C-20150513",
             "comment": null,
             "license_expression": "W3C License 20150513"
-        },
-        {
-            "spdx_id": "W3C-20150513",
-            "comment": null,
-            "license_expression": "scancode:w3c-software-doc-20150513"
         },
         {
             "spdx_id": "W3C-20150513",
@@ -7703,22 +6258,7 @@
         {
             "spdx_id": "Sleepycat",
             "comment": null,
-            "license_expression": "scancode:sleepycat"
-        },
-        {
-            "spdx_id": "Sleepycat",
-            "comment": null,
             "license_expression": "Sleepycat License"
-        },
-        {
-            "spdx_id": "Sleepycat",
-            "comment": null,
-            "license_expression": "scancode:sleepycat"
-        },
-        {
-            "spdx_id": "Sleepycat",
-            "comment": null,
-            "license_expression": "osi:Sleepycat"
         },
         {
             "spdx_id": "Sleepycat",
@@ -7773,11 +6313,6 @@
         {
             "spdx_id": "JasPer-2.0",
             "comment": null,
-            "license_expression": "scancode:jasper-2.0"
-        },
-        {
-            "spdx_id": "JasPer-2.0",
-            "comment": null,
             "license_expression": "JasPer License Version 2.0"
         },
         {
@@ -7804,16 +6339,6 @@
             "spdx_id": "Nokia",
             "comment": null,
             "license_expression": "Nokia Open Source License"
-        },
-        {
-            "spdx_id": "Nokia",
-            "comment": null,
-            "license_expression": "scancode:nokos-1.0a"
-        },
-        {
-            "spdx_id": "Nokia",
-            "comment": null,
-            "license_expression": "osi:nokia"
         },
         {
             "spdx_id": "Nokia",
@@ -7853,11 +6378,6 @@
         {
             "spdx_id": "OGL-UK-2.0",
             "comment": null,
-            "license_expression": "scancode:ogl-uk-2.0"
-        },
-        {
-            "spdx_id": "OGL-UK-2.0",
-            "comment": null,
             "license_expression": "Open Government Licence 2.0 (United Kingdom)"
         },
         {
@@ -7883,16 +6403,6 @@
         {
             "spdx_id": "RPL-1.1",
             "comment": null,
-            "license_expression": "scancode:rpl-1.1"
-        },
-        {
-            "spdx_id": "RPL-1.1",
-            "comment": null,
-            "license_expression": "osi:RPL-1.1"
-        },
-        {
-            "spdx_id": "RPL-1.1",
-            "comment": null,
             "license_expression": "Reciprocal Public License, Version 1.1"
         },
         {
@@ -7914,11 +6424,6 @@
             "spdx_id": "SHL-0.51",
             "comment": null,
             "license_expression": "Solderpad Hardware License 0.51"
-        },
-        {
-            "spdx_id": "SHL-0.51",
-            "comment": null,
-            "license_expression": "scancode:shl-0.51"
         },
         {
             "spdx_id": "SHL-0.51",
@@ -8028,11 +6533,6 @@
         {
             "spdx_id": "C-UDA-1.0",
             "comment": null,
-            "license_expression": "scancode:c-uda-1.0"
-        },
-        {
-            "spdx_id": "C-UDA-1.0",
-            "comment": null,
             "license_expression": "Computational Use of Data Agreement v1.0"
         },
         {
@@ -8059,16 +6559,6 @@
             "spdx_id": "Xnet",
             "comment": null,
             "license_expression": "MIT License (X.Net)"
-        },
-        {
-            "spdx_id": "Xnet",
-            "comment": null,
-            "license_expression": "scancode:xnet"
-        },
-        {
-            "spdx_id": "Xnet",
-            "comment": null,
-            "license_expression": "osi:Xnet"
         },
         {
             "spdx_id": "Xnet",
@@ -8114,16 +6604,6 @@
             "spdx_id": "APSL-2.0",
             "comment": null,
             "license_expression": "Apple Public Source License 2.0"
-        },
-        {
-            "spdx_id": "APSL-2.0",
-            "comment": null,
-            "license_expression": "scancode:apsl-2.0"
-        },
-        {
-            "spdx_id": "APSL-2.0",
-            "comment": null,
-            "license_expression": "osi:APSL-2.0"
         },
         {
             "spdx_id": "APSL-2.0",
@@ -8193,11 +6673,6 @@
         {
             "spdx_id": "NPL-1.0",
             "comment": null,
-            "license_expression": "scancode:npl-1.0"
-        },
-        {
-            "spdx_id": "NPL-1.0",
-            "comment": null,
             "license_expression": "Netscape Public License v1.0"
         },
         {
@@ -8209,41 +6684,6 @@
             "spdx_id": "NPL-1.0",
             "comment": null,
             "license_expression": "NPL 1.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL2"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL (v2)"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU General Public License Version 2"
         },
         {
             "spdx_id": "GPL-2.0-or-later",
@@ -8268,72 +6708,17 @@
         {
             "spdx_id": "GPL-2.0-or-later",
             "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU General Public License v2.0 only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
             "license_expression": "GNU General Public License v2.0 or later"
         },
         {
             "spdx_id": "GPL-2.0-or-later",
             "comment": null,
-            "license_expression": "gpl-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU GPLv2"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU General Public License v2.0 only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
             "license_expression": "GNU General Public License v2.0 or later"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
         },
         {
             "spdx_id": "GPL-2.0-or-later",
             "comment": null,
             "license_expression": "GPL-2.0+"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
         },
         {
             "spdx_id": "GPL-2.0-or-later",
@@ -8344,101 +6729,6 @@
             "spdx_id": "GPL-2.0-or-later",
             "comment": null,
             "license_expression": "GPL-2.0+"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "scancode:gpl-2.0-plus"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "osi:GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU General Public License 2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "scancode:gpl-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "osi:GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU General Public License 2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU General Public License, Version 2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "License :: OSI Approved :: GNU General Public License v2 (GPLv2)"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU General Public License Version 2"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GNU General Public License v2.0 only"
         },
         {
             "spdx_id": "GPL-2.0-or-later",
@@ -8456,29 +6746,9 @@
             "license_expression": "GPL 2.0 or later"
         },
         {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-2.0-only"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "scancode://gpl-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-or-later",
-            "comment": null,
-            "license_expression": "GPL 2.0"
-        },
-        {
             "spdx_id": "CECILL-2.0",
             "comment": null,
             "license_expression": "CeCILL Free Software License Agreement 2.0"
-        },
-        {
-            "spdx_id": "CECILL-2.0",
-            "comment": null,
-            "license_expression": "scancode:cecill-2.0"
         },
         {
             "spdx_id": "CECILL-2.0",
@@ -8499,11 +6769,6 @@
             "spdx_id": "OFL-1.0",
             "comment": null,
             "license_expression": "SIL Open Font License 1.0"
-        },
-        {
-            "spdx_id": "OFL-1.0",
-            "comment": null,
-            "license_expression": "scancode:ofl-1.0-no-rfn"
         },
         {
             "spdx_id": "OFL-1.0",
@@ -8544,16 +6809,6 @@
             "spdx_id": "EPL-1.0",
             "comment": null,
             "license_expression": "Eclipse Public License 1.0"
-        },
-        {
-            "spdx_id": "EPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:epl-1.0"
-        },
-        {
-            "spdx_id": "EPL-1.0",
-            "comment": null,
-            "license_expression": "osi:EPL-1.0"
         },
         {
             "spdx_id": "EPL-1.0",
@@ -8604,11 +6859,6 @@
             "spdx_id": "NOSL",
             "comment": null,
             "license_expression": "Netizen Open Source License 1.0"
-        },
-        {
-            "spdx_id": "NOSL",
-            "comment": null,
-            "license_expression": "scancode:nosl-1.0"
         },
         {
             "spdx_id": "NOSL",
@@ -8673,11 +6923,6 @@
         {
             "spdx_id": "CERN-OHL-S-2.0",
             "comment": null,
-            "license_expression": "scancode:cern-ohl-s-2.0"
-        },
-        {
-            "spdx_id": "CERN-OHL-S-2.0",
-            "comment": null,
             "license_expression": "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
         },
         {
@@ -8703,11 +6948,6 @@
         {
             "spdx_id": "SWL",
             "comment": null,
-            "license_expression": "scancode:swl"
-        },
-        {
-            "spdx_id": "SWL",
-            "comment": null,
             "license_expression": "Scheme Widget Library (SWL) Software License Agreement"
         },
         {
@@ -8724,11 +6964,6 @@
             "spdx_id": "CC-BY-NC-SA-2.5",
             "comment": null,
             "license_expression": "Creative Commons BY-NC-SA 2.5 (generic)"
-        },
-        {
-            "spdx_id": "CC-BY-NC-SA-2.5",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nc-sa-2.5"
         },
         {
             "spdx_id": "CC-BY-NC-SA-2.5",
@@ -8764,31 +6999,6 @@
             "spdx_id": "Zlib",
             "comment": null,
             "license_expression": "zlib License"
-        },
-        {
-            "spdx_id": "Zlib",
-            "comment": null,
-            "license_expression": "scancode:zlib"
-        },
-        {
-            "spdx_id": "Zlib",
-            "comment": null,
-            "license_expression": "scancode:aladdin-md5"
-        },
-        {
-            "spdx_id": "Zlib",
-            "comment": null,
-            "license_expression": "scancode:d-zlib"
-        },
-        {
-            "spdx_id": "Zlib",
-            "comment": null,
-            "license_expression": "scancode:fastbuild-2012-2020"
-        },
-        {
-            "spdx_id": "Zlib",
-            "comment": null,
-            "license_expression": "osi:Zlib"
         },
         {
             "spdx_id": "Zlib",
@@ -8848,11 +7058,6 @@
         {
             "spdx_id": "CC-BY-NC-SA-3.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-nc-sa-3.0"
-        },
-        {
-            "spdx_id": "CC-BY-NC-SA-3.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported"
         },
         {
@@ -8878,11 +7083,6 @@
         {
             "spdx_id": "iMatix",
             "comment": null,
-            "license_expression": "scancode:sfl-license"
-        },
-        {
-            "spdx_id": "iMatix",
-            "comment": null,
             "license_expression": "iMatix Standard Function Library Agreement"
         },
         {
@@ -8899,11 +7099,6 @@
             "spdx_id": "CC-BY-ND-2.5",
             "comment": null,
             "license_expression": "Creative Commons BY-ND 2.5 (generic)"
-        },
-        {
-            "spdx_id": "CC-BY-ND-2.5",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nd-2.5"
         },
         {
             "spdx_id": "CC-BY-ND-2.5",
@@ -8929,16 +7124,6 @@
             "spdx_id": "PHP-3.0",
             "comment": null,
             "license_expression": "PHP License 3.0"
-        },
-        {
-            "spdx_id": "PHP-3.0",
-            "comment": null,
-            "license_expression": "scancode:php-3.0"
-        },
-        {
-            "spdx_id": "PHP-3.0",
-            "comment": null,
-            "license_expression": "osi:PHP-3.0"
         },
         {
             "spdx_id": "PHP-3.0",
@@ -8993,11 +7178,6 @@
         {
             "spdx_id": "Barr",
             "comment": null,
-            "license_expression": "scancode:barr-tex"
-        },
-        {
-            "spdx_id": "Barr",
-            "comment": null,
             "license_expression": "Barr License"
         },
         {
@@ -9023,11 +7203,6 @@
         {
             "spdx_id": "curl",
             "comment": null,
-            "license_expression": "scancode:curl"
-        },
-        {
-            "spdx_id": "curl",
-            "comment": null,
             "license_expression": "curl License"
         },
         {
@@ -9048,11 +7223,6 @@
         {
             "spdx_id": "Zimbra-1.4",
             "comment": null,
-            "license_expression": "scancode:zimbra-1.4"
-        },
-        {
-            "spdx_id": "Zimbra-1.4",
-            "comment": null,
             "license_expression": "Zimbra Public License v1.4"
         },
         {
@@ -9069,11 +7239,6 @@
             "spdx_id": "TOSL",
             "comment": null,
             "license_expression": "Trusster Open Source License"
-        },
-        {
-            "spdx_id": "TOSL",
-            "comment": null,
-            "license_expression": "scancode:tosl"
         },
         {
             "spdx_id": "TOSL",
@@ -9103,11 +7268,6 @@
         {
             "spdx_id": "AFL-1.2",
             "comment": null,
-            "license_expression": "scancode:afl-1.2"
-        },
-        {
-            "spdx_id": "AFL-1.2",
-            "comment": null,
             "license_expression": "Academic Free License v1.2"
         },
         {
@@ -9129,11 +7289,6 @@
             "spdx_id": "CC-BY-NC-SA-2.0",
             "comment": null,
             "license_expression": "Creative Commons BY-NC-SA 2.0 (generic)"
-        },
-        {
-            "spdx_id": "CC-BY-NC-SA-2.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nc-sa-2.0"
         },
         {
             "spdx_id": "CC-BY-NC-SA-2.0",
@@ -9168,11 +7323,6 @@
         {
             "spdx_id": "GD",
             "comment": null,
-            "license_expression": "scancode:libgd-2018"
-        },
-        {
-            "spdx_id": "GD",
-            "comment": null,
             "license_expression": "GD License"
         },
         {
@@ -9198,11 +7348,6 @@
         {
             "spdx_id": "OLDAP-2.3",
             "comment": null,
-            "license_expression": "scancode:openldap-2.3"
-        },
-        {
-            "spdx_id": "OLDAP-2.3",
-            "comment": null,
             "license_expression": "Open LDAP Public License v2.3"
         },
         {
@@ -9224,11 +7369,6 @@
             "spdx_id": "Unicode-DFS-2016",
             "comment": null,
             "license_expression": "Unicode DFS License 2016"
-        },
-        {
-            "spdx_id": "Unicode-DFS-2016",
-            "comment": null,
-            "license_expression": "scancode:unicode-dfs-2016"
         },
         {
             "spdx_id": "Unicode-DFS-2016",
@@ -9263,11 +7403,6 @@
         {
             "spdx_id": "IBM-pibs",
             "comment": null,
-            "license_expression": "scancode:ibm-pibs"
-        },
-        {
-            "spdx_id": "IBM-pibs",
-            "comment": null,
             "license_expression": "IBM PowerPC Initialization and Boot Software"
         },
         {
@@ -9294,16 +7429,6 @@
             "spdx_id": "CATOSL-1.1",
             "comment": null,
             "license_expression": "Computer Associates Trusted Open Source License 1.1"
-        },
-        {
-            "spdx_id": "CATOSL-1.1",
-            "comment": null,
-            "license_expression": "scancode:ca-tosl-1.1"
-        },
-        {
-            "spdx_id": "CATOSL-1.1",
-            "comment": null,
-            "license_expression": "osi:CATOSL-1.1"
         },
         {
             "spdx_id": "CATOSL-1.1",
@@ -9343,11 +7468,6 @@
         {
             "spdx_id": "CC-BY-NC-ND-1.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-nc-nd-1.0"
-        },
-        {
-            "spdx_id": "CC-BY-NC-ND-1.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution Non Commercial No Derivatives 1.0 Generic"
         },
         {
@@ -9373,11 +7493,6 @@
         {
             "spdx_id": "DSDP",
             "comment": null,
-            "license_expression": "scancode:dsdp"
-        },
-        {
-            "spdx_id": "DSDP",
-            "comment": null,
             "license_expression": "DSDP License"
         },
         {
@@ -9399,16 +7514,6 @@
             "spdx_id": "BSD-2-Clause-Patent",
             "comment": null,
             "license_expression": "BSD 2-Clause Patent License"
-        },
-        {
-            "spdx_id": "BSD-2-Clause-Patent",
-            "comment": null,
-            "license_expression": "scancode:bsd-plus-patent"
-        },
-        {
-            "spdx_id": "BSD-2-Clause-Patent",
-            "comment": null,
-            "license_expression": "osi:BSDplusPatent"
         },
         {
             "spdx_id": "BSD-2-Clause-Patent",
@@ -9463,11 +7568,6 @@
         {
             "spdx_id": "CC-BY-NC-2.5",
             "comment": null,
-            "license_expression": "scancode:cc-by-nc-2.5"
-        },
-        {
-            "spdx_id": "CC-BY-NC-2.5",
-            "comment": null,
             "license_expression": "Creative Commons Attribution Non Commercial 2.5 Generic"
         },
         {
@@ -9484,11 +7584,6 @@
             "spdx_id": "Unlicense",
             "comment": null,
             "license_expression": "unlicense"
-        },
-        {
-            "spdx_id": "Unlicense",
-            "comment": null,
-            "license_expression": "scancode:unlicense"
         },
         {
             "spdx_id": "Unlicense",
@@ -9523,11 +7618,6 @@
         {
             "spdx_id": "AGPL-1.0-or-later",
             "comment": null,
-            "license_expression": "scancode:agpl-1.0-plus"
-        },
-        {
-            "spdx_id": "AGPL-1.0-or-later",
-            "comment": null,
             "license_expression": "Affero General Public License v1.0 or later"
         },
         {
@@ -9549,11 +7639,6 @@
             "spdx_id": "GL2PS",
             "comment": null,
             "license_expression": "GL2PS License"
-        },
-        {
-            "spdx_id": "GL2PS",
-            "comment": null,
-            "license_expression": "scancode:gl2ps"
         },
         {
             "spdx_id": "GL2PS",
@@ -9593,11 +7678,6 @@
         {
             "spdx_id": "zlib-acknowledgement",
             "comment": null,
-            "license_expression": "scancode:zlib-acknowledgement"
-        },
-        {
-            "spdx_id": "zlib-acknowledgement",
-            "comment": null,
             "license_expression": "zlib/libpng License with Acknowledgement"
         },
         {
@@ -9619,11 +7699,6 @@
             "spdx_id": "TU-Berlin-1.0",
             "comment": null,
             "license_expression": "TU Berlin License 1.0"
-        },
-        {
-            "spdx_id": "TU-Berlin-1.0",
-            "comment": null,
-            "license_expression": "scancode:tu-berlin"
         },
         {
             "spdx_id": "TU-Berlin-1.0",
@@ -9678,11 +7753,6 @@
         {
             "spdx_id": "Apache-1.0",
             "comment": null,
-            "license_expression": "scancode:apache-1.0"
-        },
-        {
-            "spdx_id": "Apache-1.0",
-            "comment": null,
             "license_expression": "Apache Software License, Version 1.0"
         },
         {
@@ -9718,11 +7788,6 @@
         {
             "spdx_id": "Crossword",
             "comment": null,
-            "license_expression": "scancode:crossword"
-        },
-        {
-            "spdx_id": "Crossword",
-            "comment": null,
             "license_expression": "Crossword License"
         },
         {
@@ -9748,17 +7813,7 @@
         {
             "spdx_id": "HPND-sell-variant",
             "comment": null,
-            "license_expression": "scancode:historical-sell-variant"
-        },
-        {
-            "spdx_id": "HPND-sell-variant",
-            "comment": null,
             "license_expression": "Permission Terms (HPND; sell)"
-        },
-        {
-            "spdx_id": "HPND-sell-variant",
-            "comment": null,
-            "license_expression": "scancode:x11-keith-packard"
         },
         {
             "spdx_id": "HPND-sell-variant",
@@ -9814,16 +7869,6 @@
             "spdx_id": "BSD-2-Clause",
             "comment": null,
             "license_expression": "BSD 2-Clause License"
-        },
-        {
-            "spdx_id": "BSD-2-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-simplified"
-        },
-        {
-            "spdx_id": "BSD-2-Clause",
-            "comment": null,
-            "license_expression": "osi:BSD-2-Clause"
         },
         {
             "spdx_id": "BSD-2-Clause",
@@ -9898,11 +7943,6 @@
         {
             "spdx_id": "AMPAS",
             "comment": null,
-            "license_expression": "scancode:ampas"
-        },
-        {
-            "spdx_id": "AMPAS",
-            "comment": null,
             "license_expression": "Academy of Motion Picture Arts and Sciences BSD"
         },
         {
@@ -9919,11 +7959,6 @@
             "spdx_id": "YPL-1.1",
             "comment": null,
             "license_expression": "YPL 1.1"
-        },
-        {
-            "spdx_id": "YPL-1.1",
-            "comment": null,
-            "license_expression": "scancode:ypl-1.1"
         },
         {
             "spdx_id": "YPL-1.1",
@@ -9973,11 +8008,6 @@
         {
             "spdx_id": "Glide",
             "comment": null,
-            "license_expression": "scancode:glide"
-        },
-        {
-            "spdx_id": "Glide",
-            "comment": null,
             "license_expression": "3dfx Glide License"
         },
         {
@@ -10003,62 +8033,12 @@
         {
             "spdx_id": "Artistic-1.0",
             "comment": null,
-            "license_expression": "Artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "Artistic License 1.0 w/clause 8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "Artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
             "license_expression": "Artistic 1.0 (original)"
         },
         {
             "spdx_id": "Artistic-1.0",
             "comment": null,
-            "license_expression": "Artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "Artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "Artistic License 1.0 (cl8)"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "scancode:artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "osi:Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
             "license_expression": "Artistic License 1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "scancode:artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "osi:Artistic-1.0"
         },
         {
             "spdx_id": "Artistic-1.0",
@@ -10079,31 +8059,6 @@
             "spdx_id": "Artistic-1.0",
             "comment": null,
             "license_expression": "Artistic License 1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "Artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "Artistic License 1.0 w/clause 8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "Artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "scancode://artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0",
-            "comment": null,
-            "license_expression": "Artistic 1.0 w/clause 8"
         },
         {
             "spdx_id": "Artistic-1.0",
@@ -10129,16 +8084,6 @@
             "spdx_id": "OSL-1.0",
             "comment": null,
             "license_expression": "Open Software License 1.0"
-        },
-        {
-            "spdx_id": "OSL-1.0",
-            "comment": null,
-            "license_expression": "scancode:osl-1.0"
-        },
-        {
-            "spdx_id": "OSL-1.0",
-            "comment": null,
-            "license_expression": "osi:OSL-1.0"
         },
         {
             "spdx_id": "OSL-1.0",
@@ -10178,16 +8123,6 @@
         {
             "spdx_id": "0BSD",
             "comment": null,
-            "license_expression": "scancode:bsd-zero"
-        },
-        {
-            "spdx_id": "0BSD",
-            "comment": null,
-            "license_expression": "osi:0BSD"
-        },
-        {
-            "spdx_id": "0BSD",
-            "comment": null,
             "license_expression": "BSD Zero Clause License"
         },
         {
@@ -10218,11 +8153,6 @@
         {
             "spdx_id": "OLDAP-2.7",
             "comment": null,
-            "license_expression": "scancode:openldap-2.7"
-        },
-        {
-            "spdx_id": "OLDAP-2.7",
-            "comment": null,
             "license_expression": "The OpenLDAP Public License"
         },
         {
@@ -10244,11 +8174,6 @@
             "spdx_id": "TAPR-OHL-1.0",
             "comment": null,
             "license_expression": "TAPR Open Hardware 1.0"
-        },
-        {
-            "spdx_id": "TAPR-OHL-1.0",
-            "comment": null,
-            "license_expression": "scancode:tapr-ohl-1.0"
         },
         {
             "spdx_id": "TAPR-OHL-1.0",
@@ -10283,11 +8208,6 @@
         {
             "spdx_id": "Adobe-2006",
             "comment": null,
-            "license_expression": "scancode:adobe-scl"
-        },
-        {
-            "spdx_id": "Adobe-2006",
-            "comment": null,
             "license_expression": "Adobe Systems Incorporated Source Code License Agreement"
         },
         {
@@ -10309,11 +8229,6 @@
             "spdx_id": "AFL-1.1",
             "comment": null,
             "license_expression": "Academic Free License 1.1"
-        },
-        {
-            "spdx_id": "AFL-1.1",
-            "comment": null,
-            "license_expression": "scancode:afl-1.1"
         },
         {
             "spdx_id": "AFL-1.1",
@@ -10343,11 +8258,6 @@
         {
             "spdx_id": "Spencer-94",
             "comment": null,
-            "license_expression": "scancode:hs-regexp"
-        },
-        {
-            "spdx_id": "Spencer-94",
-            "comment": null,
             "license_expression": "Spencer License 94"
         },
         {
@@ -10369,11 +8279,6 @@
             "spdx_id": "XSkat",
             "comment": null,
             "license_expression": "XSkat License"
-        },
-        {
-            "spdx_id": "XSkat",
-            "comment": null,
-            "license_expression": "scancode:xskat"
         },
         {
             "spdx_id": "XSkat",
@@ -10408,11 +8313,6 @@
         {
             "spdx_id": "Newsletr",
             "comment": null,
-            "license_expression": "scancode:newsletr"
-        },
-        {
-            "spdx_id": "Newsletr",
-            "comment": null,
             "license_expression": "Newsletr License"
         },
         {
@@ -10429,11 +8329,6 @@
             "spdx_id": "CC-BY-SA-2.0",
             "comment": null,
             "license_expression": "Creative Commons BY-SA 2.0"
-        },
-        {
-            "spdx_id": "CC-BY-SA-2.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-sa-2.0"
         },
         {
             "spdx_id": "CC-BY-SA-2.0",
@@ -10463,11 +8358,6 @@
         {
             "spdx_id": "ZPL-1.1",
             "comment": null,
-            "license_expression": "scancode:zpl-1.1"
-        },
-        {
-            "spdx_id": "ZPL-1.1",
-            "comment": null,
             "license_expression": "Zope Public License 1.1"
         },
         {
@@ -10489,11 +8379,6 @@
             "spdx_id": "GFDL-1.3-only",
             "comment": null,
             "license_expression": "GFDL-1.3"
-        },
-        {
-            "spdx_id": "GFDL-1.3-only",
-            "comment": null,
-            "license_expression": "scancode:gfdl-1.3"
         },
         {
             "spdx_id": "GFDL-1.3-only",
@@ -10533,11 +8418,6 @@
         {
             "spdx_id": "EUPL-1.0",
             "comment": null,
-            "license_expression": "scancode:eupl-1.0"
-        },
-        {
-            "spdx_id": "EUPL-1.0",
-            "comment": null,
             "license_expression": "European Union Public License 1.0"
         },
         {
@@ -10568,27 +8448,7 @@
         {
             "spdx_id": "BSD-3-Clause-Clear",
             "comment": null,
-            "license_expression": "BSD-3-Clause-Clear-copyright-variant"
-        },
-        {
-            "spdx_id": "BSD-3-Clause-Clear",
-            "comment": null,
-            "license_expression": "BSD 3-Clause Clear License (copyright variant)"
-        },
-        {
-            "spdx_id": "BSD-3-Clause-Clear",
-            "comment": null,
-            "license_expression": "scancode:clear-bsd"
-        },
-        {
-            "spdx_id": "BSD-3-Clause-Clear",
-            "comment": null,
             "license_expression": "BSD 3-Clause Clear License"
-        },
-        {
-            "spdx_id": "BSD-3-Clause-Clear",
-            "comment": null,
-            "license_expression": "scancode:clear-bsd"
         },
         {
             "spdx_id": "BSD-3-Clause-Clear",
@@ -10643,11 +8503,6 @@
         {
             "spdx_id": "GPL-1.0-or-later",
             "comment": null,
-            "license_expression": "scancode:gpl-1.0-plus"
-        },
-        {
-            "spdx_id": "GPL-1.0-or-later",
-            "comment": null,
             "license_expression": "GNU General Public License v1.0 or later"
         },
         {
@@ -10673,11 +8528,6 @@
         {
             "spdx_id": "CNRI-Jython",
             "comment": null,
-            "license_expression": "scancode:cnri-jython"
-        },
-        {
-            "spdx_id": "CNRI-Jython",
-            "comment": null,
             "license_expression": "CNRI Jython License"
         },
         {
@@ -10699,11 +8549,6 @@
             "spdx_id": "Adobe-Glyph",
             "comment": null,
             "license_expression": "Adobe Glyph License"
-        },
-        {
-            "spdx_id": "Adobe-Glyph",
-            "comment": null,
-            "license_expression": "scancode:adobe-glyph"
         },
         {
             "spdx_id": "Adobe-Glyph",
@@ -10734,11 +8579,6 @@
             "spdx_id": "MITNFA",
             "comment": null,
             "license_expression": "MIT (NFA) License"
-        },
-        {
-            "spdx_id": "MITNFA",
-            "comment": null,
-            "license_expression": "scancode:mit-no-false-attribs"
         },
         {
             "spdx_id": "MITNFA",
@@ -10778,11 +8618,6 @@
         {
             "spdx_id": "APSL-1.0",
             "comment": null,
-            "license_expression": "scancode:apsl-1.0"
-        },
-        {
-            "spdx_id": "APSL-1.0",
-            "comment": null,
             "license_expression": "Apple Public Source License 1.0"
         },
         {
@@ -10799,11 +8634,6 @@
             "spdx_id": "JPNIC",
             "comment": null,
             "license_expression": "JPNIC License"
-        },
-        {
-            "spdx_id": "JPNIC",
-            "comment": null,
-            "license_expression": "scancode:jpnic-idnkit"
         },
         {
             "spdx_id": "JPNIC",
@@ -10838,11 +8668,6 @@
         {
             "spdx_id": "BSD-Protection",
             "comment": null,
-            "license_expression": "scancode:bsd-protection"
-        },
-        {
-            "spdx_id": "BSD-Protection",
-            "comment": null,
             "license_expression": "BSD Protection License"
         },
         {
@@ -10859,11 +8684,6 @@
             "spdx_id": "OGL-UK-1.0",
             "comment": null,
             "license_expression": "Open Government Licence 1.0"
-        },
-        {
-            "spdx_id": "OGL-UK-1.0",
-            "comment": null,
-            "license_expression": "scancode:ogl-uk-1.0"
         },
         {
             "spdx_id": "OGL-UK-1.0",
@@ -10933,11 +8753,6 @@
         {
             "spdx_id": "ImageMagick",
             "comment": null,
-            "license_expression": "scancode:imagemagick"
-        },
-        {
-            "spdx_id": "ImageMagick",
-            "comment": null,
             "license_expression": "ImageMagick License"
         },
         {
@@ -10973,11 +8788,6 @@
         {
             "spdx_id": "OSL-2.0",
             "comment": null,
-            "license_expression": "scancode:osl-2.0"
-        },
-        {
-            "spdx_id": "OSL-2.0",
-            "comment": null,
             "license_expression": "Open Software License 2.0"
         },
         {
@@ -11003,11 +8813,6 @@
         {
             "spdx_id": "OLDAP-2.0",
             "comment": null,
-            "license_expression": "scancode:openldap-2.0"
-        },
-        {
-            "spdx_id": "OLDAP-2.0",
-            "comment": null,
             "license_expression": "Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)"
         },
         {
@@ -11029,16 +8834,6 @@
             "spdx_id": "bzip2-1.0.6",
             "comment": null,
             "license_expression": "bzip2 License 1.0.6"
-        },
-        {
-            "spdx_id": "bzip2-1.0.6",
-            "comment": null,
-            "license_expression": "scancode:bzip2-libbzip-2010"
-        },
-        {
-            "spdx_id": "bzip2-1.0.6",
-            "comment": null,
-            "license_expression": "scancode:bzip2-libbzip-1.0.5"
         },
         {
             "spdx_id": "bzip2-1.0.6",
@@ -11069,11 +8864,6 @@
             "spdx_id": "Eurosym",
             "comment": null,
             "license_expression": "Eurosym License"
-        },
-        {
-            "spdx_id": "Eurosym",
-            "comment": null,
-            "license_expression": "scancode:eurosym"
         },
         {
             "spdx_id": "Eurosym",
@@ -11118,11 +8908,6 @@
         {
             "spdx_id": "CC-BY-NC-ND-3.0-IGO",
             "comment": null,
-            "license_expression": "scancode:cc-by-nc-nd-3.0-igo"
-        },
-        {
-            "spdx_id": "CC-BY-NC-ND-3.0-IGO",
-            "comment": null,
             "license_expression": "Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO"
         },
         {
@@ -11139,16 +8924,6 @@
             "spdx_id": "LPL-1.0",
             "comment": null,
             "license_expression": "LPL 1.0"
-        },
-        {
-            "spdx_id": "LPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:lucent-pl-1.0"
-        },
-        {
-            "spdx_id": "LPL-1.0",
-            "comment": null,
-            "license_expression": "osi:LPL-1.0"
         },
         {
             "spdx_id": "LPL-1.0",
@@ -11184,16 +8959,6 @@
             "spdx_id": "CECILL-2.1",
             "comment": null,
             "license_expression": "CeCILL Free Software License Agreement 2.1"
-        },
-        {
-            "spdx_id": "CECILL-2.1",
-            "comment": null,
-            "license_expression": "scancode:cecill-2.1"
-        },
-        {
-            "spdx_id": "CECILL-2.1",
-            "comment": null,
-            "license_expression": "osi:CECILL-2.1"
         },
         {
             "spdx_id": "CECILL-2.1",
@@ -11253,21 +9018,6 @@
         {
             "spdx_id": "MIT-0",
             "comment": null,
-            "license_expression": "scancode:ekioh"
-        },
-        {
-            "spdx_id": "MIT-0",
-            "comment": null,
-            "license_expression": "scancode:pd-mit"
-        },
-        {
-            "spdx_id": "MIT-0",
-            "comment": null,
-            "license_expression": "scancode:tigra-calendar-4.0"
-        },
-        {
-            "spdx_id": "MIT-0",
-            "comment": null,
             "license_expression": "MIT No Attribution"
         },
         {
@@ -11293,11 +9043,6 @@
         {
             "spdx_id": "Spencer-99",
             "comment": null,
-            "license_expression": "scancode:henry-spencer-1999"
-        },
-        {
-            "spdx_id": "Spencer-99",
-            "comment": null,
             "license_expression": "Spencer License 99"
         },
         {
@@ -11314,11 +9059,6 @@
             "spdx_id": "PolyForm-Noncommercial-1.0.0",
             "comment": null,
             "license_expression": "Polyform Noncommercial License 1.0.0"
-        },
-        {
-            "spdx_id": "PolyForm-Noncommercial-1.0.0",
-            "comment": null,
-            "license_expression": "scancode:polyform-noncommercial-1.0.0"
         },
         {
             "spdx_id": "PolyForm-Noncommercial-1.0.0",
@@ -11344,11 +9084,6 @@
             "spdx_id": "Abstyles",
             "comment": null,
             "license_expression": "Abstyles License"
-        },
-        {
-            "spdx_id": "Abstyles",
-            "comment": null,
-            "license_expression": "scancode:abstyles"
         },
         {
             "spdx_id": "Abstyles",
@@ -11404,11 +9139,6 @@
             "spdx_id": "NRL",
             "comment": null,
             "license_expression": "NRL License"
-        },
-        {
-            "spdx_id": "NRL",
-            "comment": null,
-            "license_expression": "scancode:nrl"
         },
         {
             "spdx_id": "NRL",
@@ -11473,11 +9203,6 @@
         {
             "spdx_id": "NAIST-2003",
             "comment": null,
-            "license_expression": "scancode:naist-2003"
-        },
-        {
-            "spdx_id": "NAIST-2003",
-            "comment": null,
             "license_expression": "Nara Institute of Science and Technology License (2003)"
         },
         {
@@ -11499,11 +9224,6 @@
             "spdx_id": "XFree86-1.1",
             "comment": null,
             "license_expression": "XFree86 License 1.1"
-        },
-        {
-            "spdx_id": "XFree86-1.1",
-            "comment": null,
-            "license_expression": "scancode:xfree86-1.1"
         },
         {
             "spdx_id": "XFree86-1.1",
@@ -11553,11 +9273,6 @@
         {
             "spdx_id": "CC-BY-3.0-US",
             "comment": null,
-            "license_expression": "scancode:cc-by-3.0-us"
-        },
-        {
-            "spdx_id": "CC-BY-3.0-US",
-            "comment": null,
             "license_expression": "Creative Commons Attribution 3.0 United States"
         },
         {
@@ -11584,16 +9299,6 @@
             "spdx_id": "EFL-2.0",
             "comment": null,
             "license_expression": "Eiffel Forum License 2.0"
-        },
-        {
-            "spdx_id": "EFL-2.0",
-            "comment": null,
-            "license_expression": "scancode:efl-2.0"
-        },
-        {
-            "spdx_id": "EFL-2.0",
-            "comment": null,
-            "license_expression": "osi:EFL-2.0"
         },
         {
             "spdx_id": "EFL-2.0",
@@ -11633,11 +9338,6 @@
         {
             "spdx_id": "LPPL-1.0",
             "comment": null,
-            "license_expression": "scancode:lppl-1.0"
-        },
-        {
-            "spdx_id": "LPPL-1.0",
-            "comment": null,
             "license_expression": "LaTeX Project Public License v1.0"
         },
         {
@@ -11659,16 +9359,6 @@
             "spdx_id": "IPL-1.0",
             "comment": null,
             "license_expression": "IBM Public License 1.0"
-        },
-        {
-            "spdx_id": "IPL-1.0",
-            "comment": null,
-            "license_expression": "scancode:ibmpl-1.0"
-        },
-        {
-            "spdx_id": "IPL-1.0",
-            "comment": null,
-            "license_expression": "osi:IPL-1.0"
         },
         {
             "spdx_id": "IPL-1.0",
@@ -11733,11 +9423,6 @@
         {
             "spdx_id": "ANTLR-PD",
             "comment": null,
-            "license_expression": "scancode:antlr-pd-fallback"
-        },
-        {
-            "spdx_id": "ANTLR-PD",
-            "comment": null,
             "license_expression": "ANTLR 2 License"
         },
         {
@@ -11754,11 +9439,6 @@
             "spdx_id": "PolyForm-Small-Business-1.0.0",
             "comment": null,
             "license_expression": "Polyform Small Business License 1.0.0"
-        },
-        {
-            "spdx_id": "PolyForm-Small-Business-1.0.0",
-            "comment": null,
-            "license_expression": "scancode:polyform-small-business-1.0.0"
         },
         {
             "spdx_id": "PolyForm-Small-Business-1.0.0",
@@ -11823,11 +9503,6 @@
         {
             "spdx_id": "GPL-1.0-only",
             "comment": null,
-            "license_expression": "scancode:gpl-1.0"
-        },
-        {
-            "spdx_id": "GPL-1.0-only",
-            "comment": null,
             "license_expression": "GNU General Public License Version 1"
         },
         {
@@ -11868,11 +9543,6 @@
         {
             "spdx_id": "FreeImage",
             "comment": null,
-            "license_expression": "scancode:freeimage-1.0"
-        },
-        {
-            "spdx_id": "FreeImage",
-            "comment": null,
             "license_expression": "FreeImage Public License v1.0"
         },
         {
@@ -11894,11 +9564,6 @@
             "spdx_id": "OLDAP-2.2.1",
             "comment": null,
             "license_expression": "OpenLDAP Public License 2.2.1"
-        },
-        {
-            "spdx_id": "OLDAP-2.2.1",
-            "comment": null,
-            "license_expression": "scancode:openldap-2.2.1"
         },
         {
             "spdx_id": "OLDAP-2.2.1",
@@ -11958,11 +9623,6 @@
         {
             "spdx_id": "Afmparse",
             "comment": null,
-            "license_expression": "scancode:afmparse"
-        },
-        {
-            "spdx_id": "Afmparse",
-            "comment": null,
             "license_expression": "Afmparse License"
         },
         {
@@ -11988,11 +9648,6 @@
         {
             "spdx_id": "OLDAP-2.2.2",
             "comment": null,
-            "license_expression": "scancode:openldap-2.2.2"
-        },
-        {
-            "spdx_id": "OLDAP-2.2.2",
-            "comment": null,
             "license_expression": "Open LDAP Public License 2.2.2"
         },
         {
@@ -12014,11 +9669,6 @@
             "spdx_id": "Parity-6.0.0",
             "comment": null,
             "license_expression": "Parity Public License 6.0.0"
-        },
-        {
-            "spdx_id": "Parity-6.0.0",
-            "comment": null,
-            "license_expression": "scancode:parity-6.0.0"
         },
         {
             "spdx_id": "Parity-6.0.0",
@@ -12058,37 +9708,7 @@
         {
             "spdx_id": "LGPL-2.1-only",
             "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1+"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL2.1+"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL (v2.1 or later)"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
             "license_expression": "GNU Lesser General Public License v2.1 only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License v2.1 or later"
         },
         {
             "spdx_id": "LGPL-2.1-only",
@@ -12108,82 +9728,7 @@
         {
             "spdx_id": "LGPL-2.1-only",
             "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
             "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1+"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1+"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License 2.1 (or any later version)"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1+"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "scancode:lgpl-2.1-plus"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "osi:LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License 2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "scancode:lgpl-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "osi:LGPL-2.1"
         },
         {
             "spdx_id": "LGPL-2.1-only",
@@ -12198,7 +9743,17 @@
         {
             "spdx_id": "LGPL-2.1-only",
             "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
+            "license_expression": "LGPL-2.1"
+        },
+        {
+            "spdx_id": "LGPL-2.1-only",
+            "comment": null,
+            "license_expression": "LGPL-2.1"
+        },
+        {
+            "spdx_id": "LGPL-2.1-only",
+            "comment": null,
+            "license_expression": "GNU Lesser General Public License 2.1"
         },
         {
             "spdx_id": "LGPL-2.1-only",
@@ -12223,11 +9778,6 @@
         {
             "spdx_id": "LGPL-2.1-only",
             "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
             "license_expression": "LGPL-2.1"
         },
         {
@@ -12238,32 +9788,7 @@
         {
             "spdx_id": "LGPL-2.1-only",
             "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "GNU Lesser General Public License v2.1 or later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
             "license_expression": "GNU Lesser General Public License v2.1 only"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL-2.1-or-later"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "scancode://lgpl-2.1-plus"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
-            "license_expression": "LGPL 2.1 or later"
         },
         {
             "spdx_id": "LGPL-2.1-only",
@@ -12284,21 +9809,6 @@
             "spdx_id": "MPL-1.1",
             "comment": null,
             "license_expression": "Mozilla Public License 1.1"
-        },
-        {
-            "spdx_id": "MPL-1.1",
-            "comment": null,
-            "license_expression": "scancode:dpl-1.1"
-        },
-        {
-            "spdx_id": "MPL-1.1",
-            "comment": null,
-            "license_expression": "scancode:monetdb-1.1"
-        },
-        {
-            "spdx_id": "MPL-1.1",
-            "comment": null,
-            "license_expression": "osi:MPL-1.1"
         },
         {
             "spdx_id": "MPL-1.1",
@@ -12378,11 +9888,6 @@
         {
             "spdx_id": "Cube",
             "comment": null,
-            "license_expression": "scancode:cube"
-        },
-        {
-            "spdx_id": "Cube",
-            "comment": null,
             "license_expression": "Cube License"
         },
         {
@@ -12404,11 +9909,6 @@
             "spdx_id": "SISSL",
             "comment": null,
             "license_expression": "SISSL 1.1"
-        },
-        {
-            "spdx_id": "SISSL",
-            "comment": null,
-            "license_expression": "osi:SISSL"
         },
         {
             "spdx_id": "SISSL",
@@ -12473,16 +9973,6 @@
         {
             "spdx_id": "PostgreSQL",
             "comment": null,
-            "license_expression": "scancode:postgresql"
-        },
-        {
-            "spdx_id": "PostgreSQL",
-            "comment": null,
-            "license_expression": "osi:PostgreSQL"
-        },
-        {
-            "spdx_id": "PostgreSQL",
-            "comment": null,
             "license_expression": "PostgreSQL License"
         },
         {
@@ -12518,11 +10008,6 @@
         {
             "spdx_id": "CERN-OHL-P-2.0",
             "comment": null,
-            "license_expression": "scancode:cern-ohl-p-2.0"
-        },
-        {
-            "spdx_id": "CERN-OHL-P-2.0",
-            "comment": null,
             "license_expression": "CERN Open Hardware Licence Version 2 - Permissive"
         },
         {
@@ -12549,16 +10034,6 @@
             "spdx_id": "OSL-3.0",
             "comment": null,
             "license_expression": "Open Software License 3.0"
-        },
-        {
-            "spdx_id": "OSL-3.0",
-            "comment": null,
-            "license_expression": "scancode:osl-3.0"
-        },
-        {
-            "spdx_id": "OSL-3.0",
-            "comment": null,
-            "license_expression": "osi:OSL-3.0"
         },
         {
             "spdx_id": "OSL-3.0",
@@ -12598,11 +10073,6 @@
         {
             "spdx_id": "LPPL-1.2",
             "comment": null,
-            "license_expression": "scancode:lppl-1.2"
-        },
-        {
-            "spdx_id": "LPPL-1.2",
-            "comment": null,
             "license_expression": "LaTeX Project Public License v1.2"
         },
         {
@@ -12633,11 +10103,6 @@
         {
             "spdx_id": "xpp",
             "comment": null,
-            "license_expression": "scancode:indiana-extreme-1.2"
-        },
-        {
-            "spdx_id": "xpp",
-            "comment": null,
             "license_expression": "XPP License"
         },
         {
@@ -12659,11 +10124,6 @@
             "spdx_id": "OLDAP-2.8",
             "comment": null,
             "license_expression": "OpenLDAP Public License 2.8"
-        },
-        {
-            "spdx_id": "OLDAP-2.8",
-            "comment": null,
-            "license_expression": "scancode:openldap-2.8"
         },
         {
             "spdx_id": "OLDAP-2.8",
@@ -12698,11 +10158,6 @@
         {
             "spdx_id": "AML",
             "comment": null,
-            "license_expression": "scancode:aml"
-        },
-        {
-            "spdx_id": "AML",
-            "comment": null,
             "license_expression": "Apple MIT License"
         },
         {
@@ -12724,16 +10179,6 @@
             "spdx_id": "Motosoto",
             "comment": null,
             "license_expression": "Motosoto License"
-        },
-        {
-            "spdx_id": "Motosoto",
-            "comment": null,
-            "license_expression": "scancode:motosoto-0.9.1"
-        },
-        {
-            "spdx_id": "Motosoto",
-            "comment": null,
-            "license_expression": "osi:Motosoto"
         },
         {
             "spdx_id": "Motosoto",
@@ -12788,11 +10233,6 @@
         {
             "spdx_id": "Vim",
             "comment": null,
-            "license_expression": "scancode:vim"
-        },
-        {
-            "spdx_id": "Vim",
-            "comment": null,
             "license_expression": "Vim License"
         },
         {
@@ -12818,11 +10258,6 @@
         {
             "spdx_id": "TCP-wrappers",
             "comment": null,
-            "license_expression": "scancode:tcp-wrappers"
-        },
-        {
-            "spdx_id": "TCP-wrappers",
-            "comment": null,
             "license_expression": "TCP Wrappers License"
         },
         {
@@ -12839,11 +10274,6 @@
             "spdx_id": "Sendmail-8.23",
             "comment": null,
             "license_expression": "Sendmail 8.23"
-        },
-        {
-            "spdx_id": "Sendmail-8.23",
-            "comment": null,
-            "license_expression": "scancode:sendmail-8.23"
         },
         {
             "spdx_id": "Sendmail-8.23",
@@ -12874,11 +10304,6 @@
             "spdx_id": "Ruby",
             "comment": null,
             "license_expression": "Ruby License"
-        },
-        {
-            "spdx_id": "Ruby",
-            "comment": null,
-            "license_expression": "scancode:ruby"
         },
         {
             "spdx_id": "Ruby",
@@ -12948,11 +10373,6 @@
         {
             "spdx_id": "NetCDF",
             "comment": null,
-            "license_expression": "scancode:netcdf"
-        },
-        {
-            "spdx_id": "NetCDF",
-            "comment": null,
             "license_expression": "NetCDF Copyright(version 2009)"
         },
         {
@@ -12983,27 +10403,7 @@
         {
             "spdx_id": "BSD-1-Clause",
             "comment": null,
-            "license_expression": "BSD-1-Clause-copyright"
-        },
-        {
-            "spdx_id": "BSD-1-Clause",
-            "comment": null,
-            "license_expression": "BSD 1-Clause License (copyright variant)"
-        },
-        {
-            "spdx_id": "BSD-1-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-1-clause"
-        },
-        {
-            "spdx_id": "BSD-1-Clause",
-            "comment": null,
             "license_expression": "BSD 1-Clause License"
-        },
-        {
-            "spdx_id": "BSD-1-Clause",
-            "comment": null,
-            "license_expression": "scancode:bsd-1-clause"
         },
         {
             "spdx_id": "BSD-1-Clause",
@@ -13029,11 +10429,6 @@
             "spdx_id": "Leptonica",
             "comment": null,
             "license_expression": "Leptonica License"
-        },
-        {
-            "spdx_id": "Leptonica",
-            "comment": null,
-            "license_expression": "scancode:leptonica"
         },
         {
             "spdx_id": "Leptonica",
@@ -13198,21 +10593,6 @@
         {
             "spdx_id": "AGPL-3.0-or-later",
             "comment": null,
-            "license_expression": "scancode:agpl-3.0-plus"
-        },
-        {
-            "spdx_id": "AGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "scancode:agpl-2.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "osi:AGPL-3.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-or-later",
-            "comment": null,
             "license_expression": "AGPL-3.0-only"
         },
         {
@@ -13224,16 +10604,6 @@
             "spdx_id": "AGPL-3.0-or-later",
             "comment": null,
             "license_expression": "AGPL-3.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "scancode:agpl-3.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "osi:AGPL-3.0"
         },
         {
             "spdx_id": "AGPL-3.0-or-later",
@@ -13353,11 +10723,6 @@
         {
             "spdx_id": "Beerware",
             "comment": null,
-            "license_expression": "scancode:beerware"
-        },
-        {
-            "spdx_id": "Beerware",
-            "comment": null,
             "license_expression": "Beerware License"
         },
         {
@@ -13393,16 +10758,6 @@
         {
             "spdx_id": "EUPL-1.2",
             "comment": null,
-            "license_expression": "scancode:eupl-1.2"
-        },
-        {
-            "spdx_id": "EUPL-1.2",
-            "comment": null,
-            "license_expression": "osi:EUPL-1.2"
-        },
-        {
-            "spdx_id": "EUPL-1.2",
-            "comment": null,
             "license_expression": "European Union Public License 1.2"
         },
         {
@@ -13428,16 +10783,6 @@
         {
             "spdx_id": "OSET-PL-2.1",
             "comment": null,
-            "license_expression": "scancode:oset-pl-2.1"
-        },
-        {
-            "spdx_id": "OSET-PL-2.1",
-            "comment": null,
-            "license_expression": "osi:OPL-2.1"
-        },
-        {
-            "spdx_id": "OSET-PL-2.1",
-            "comment": null,
             "license_expression": "OSET Public License version 2.1"
         },
         {
@@ -13453,11 +10798,6 @@
         {
             "spdx_id": "CC-BY-1.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-1.0"
-        },
-        {
-            "spdx_id": "CC-BY-1.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution 1.0 Generic"
         },
         {
@@ -13469,11 +10809,6 @@
             "spdx_id": "SISSL-1.2",
             "comment": null,
             "license_expression": "SISSL 1.2"
-        },
-        {
-            "spdx_id": "SISSL-1.2",
-            "comment": null,
-            "license_expression": "scancode:sun-sissl-1.2"
         },
         {
             "spdx_id": "SISSL-1.2",
@@ -13503,11 +10838,6 @@
         {
             "spdx_id": "CC-BY-NC-3.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-nc-3.0"
-        },
-        {
-            "spdx_id": "CC-BY-NC-3.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution Non Commercial 3.0 Unported"
         },
         {
@@ -13524,11 +10854,6 @@
             "spdx_id": "OLDAP-1.4",
             "comment": null,
             "license_expression": "OpenLDAP Public License 1.4"
-        },
-        {
-            "spdx_id": "OLDAP-1.4",
-            "comment": null,
-            "license_expression": "scancode:openldap-1.4"
         },
         {
             "spdx_id": "OLDAP-1.4",
@@ -13578,17 +10903,7 @@
         {
             "spdx_id": "X11",
             "comment": null,
-            "license_expression": "scancode:slf4j-2005"
-        },
-        {
-            "spdx_id": "X11",
-            "comment": null,
             "license_expression": "X11 License"
-        },
-        {
-            "spdx_id": "X11",
-            "comment": null,
-            "license_expression": "scancode:x11-xconsortium"
         },
         {
             "spdx_id": "X11",
@@ -13663,16 +10978,6 @@
         {
             "spdx_id": "Intel",
             "comment": null,
-            "license_expression": "scancode:intel-bsd-export-control"
-        },
-        {
-            "spdx_id": "Intel",
-            "comment": null,
-            "license_expression": "osi:Intel"
-        },
-        {
-            "spdx_id": "Intel",
-            "comment": null,
             "license_expression": "Intel Open Source License"
         },
         {
@@ -13718,11 +11023,6 @@
         {
             "spdx_id": "CDLA-Permissive-1.0",
             "comment": null,
-            "license_expression": "scancode:cdla-permissive-1.0"
-        },
-        {
-            "spdx_id": "CDLA-Permissive-1.0",
-            "comment": null,
             "license_expression": "Community Data License Agreement Permissive 1.0"
         },
         {
@@ -13739,11 +11039,6 @@
             "spdx_id": "NIST-PD",
             "comment": null,
             "license_expression": "NIST Public Domain Notice"
-        },
-        {
-            "spdx_id": "NIST-PD",
-            "comment": null,
-            "license_expression": "scancode:nist-pd"
         },
         {
             "spdx_id": "NIST-PD",
@@ -13798,27 +11093,7 @@
         {
             "spdx_id": "SMLNJ",
             "comment": null,
-            "license_expression": "CUP-PGL"
-        },
-        {
-            "spdx_id": "SMLNJ",
-            "comment": null,
-            "license_expression": "CUP Parser Generator License"
-        },
-        {
-            "spdx_id": "SMLNJ",
-            "comment": null,
-            "license_expression": "scancode:standard-ml-nj"
-        },
-        {
-            "spdx_id": "SMLNJ",
-            "comment": null,
             "license_expression": "SMLNJ License"
-        },
-        {
-            "spdx_id": "SMLNJ",
-            "comment": null,
-            "license_expression": "scancode:standard-ml-nj"
         },
         {
             "spdx_id": "SMLNJ",
@@ -13848,11 +11123,6 @@
         {
             "spdx_id": "BUSL-1.1",
             "comment": null,
-            "license_expression": "scancode:bsl-1.1"
-        },
-        {
-            "spdx_id": "BUSL-1.1",
-            "comment": null,
             "license_expression": "Business Source License 1.1"
         },
         {
@@ -13874,11 +11144,6 @@
             "spdx_id": "CDDL-1.1",
             "comment": null,
             "license_expression": "CDDL 1.1"
-        },
-        {
-            "spdx_id": "CDDL-1.1",
-            "comment": null,
-            "license_expression": "scancode:cddl-1.1"
         },
         {
             "spdx_id": "CDDL-1.1",
@@ -13909,11 +11174,6 @@
             "spdx_id": "CC-BY-SA-3.0",
             "comment": null,
             "license_expression": "Creative Commons BY-SA 3.0"
-        },
-        {
-            "spdx_id": "CC-BY-SA-3.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-sa-3.0"
         },
         {
             "spdx_id": "CC-BY-SA-3.0",
@@ -13954,11 +11214,6 @@
             "spdx_id": "Wsuipa",
             "comment": null,
             "license_expression": "Wsuipa License"
-        },
-        {
-            "spdx_id": "Wsuipa",
-            "comment": null,
-            "license_expression": "scancode:wsuipa"
         },
         {
             "spdx_id": "Wsuipa",
@@ -14004,11 +11259,6 @@
             "spdx_id": "Unicode-DFS-2015",
             "comment": null,
             "license_expression": "Unicode DFS License 2015"
-        },
-        {
-            "spdx_id": "Unicode-DFS-2015",
-            "comment": null,
-            "license_expression": "scancode:unicode-dfs-2015"
         },
         {
             "spdx_id": "Unicode-DFS-2015",
@@ -14063,11 +11313,6 @@
         {
             "spdx_id": "OLDAP-2.0.1",
             "comment": null,
-            "license_expression": "scancode:openldap-2.0.1"
-        },
-        {
-            "spdx_id": "OLDAP-2.0.1",
-            "comment": null,
             "license_expression": "Open LDAP Public License v2.0.1"
         },
         {
@@ -14098,11 +11343,6 @@
         {
             "spdx_id": "psutils",
             "comment": null,
-            "license_expression": "scancode:psutils"
-        },
-        {
-            "spdx_id": "psutils",
-            "comment": null,
             "license_expression": "psutils License"
         },
         {
@@ -14119,11 +11359,6 @@
             "spdx_id": "CC-BY-2.0",
             "comment": null,
             "license_expression": "Creative Commons BY 2.0"
-        },
-        {
-            "spdx_id": "CC-BY-2.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-2.0"
         },
         {
             "spdx_id": "CC-BY-2.0",
@@ -14169,21 +11404,6 @@
             "spdx_id": "Artistic-2.0",
             "comment": null,
             "license_expression": "Artistic License 2.0"
-        },
-        {
-            "spdx_id": "Artistic-2.0",
-            "comment": null,
-            "license_expression": "scancode:artistic-2.0"
-        },
-        {
-            "spdx_id": "Artistic-2.0",
-            "comment": null,
-            "license_expression": "osi:Artistic-2.0"
-        },
-        {
-            "spdx_id": "Artistic-2.0",
-            "comment": null,
-            "license_expression": "osi:artistic-license-2.0"
         },
         {
             "spdx_id": "Artistic-2.0",
@@ -14238,117 +11458,12 @@
         {
             "spdx_id": "Artistic-1.0-cl8",
             "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic 1.0 (original)"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic License 1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
             "license_expression": "Artistic License 1.0 w/clause 8"
         },
         {
             "spdx_id": "Artistic-1.0-cl8",
             "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic 1.0 (original)"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
             "license_expression": "Artistic License 1.0 (cl8)"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "scancode:artistic-1.0-cl8"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "osi:Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic License 1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "scancode:artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "osi:Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic License, Version 1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic License 1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic License (Perl) 1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic License 1.0"
         },
         {
             "spdx_id": "Artistic-1.0-cl8",
@@ -14366,21 +11481,6 @@
             "license_expression": "Artistic 1.0 w/clause 8"
         },
         {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "scancode://artistic-1.0"
-        },
-        {
-            "spdx_id": "Artistic-1.0-cl8",
-            "comment": null,
-            "license_expression": "Artistic 1.0"
-        },
-        {
             "spdx_id": "Aladdin",
             "comment": null,
             "license_expression": "Aladdin Free Public License"
@@ -14389,11 +11489,6 @@
             "spdx_id": "Aladdin",
             "comment": null,
             "license_expression": "Aladdin Free Public License 8.0"
-        },
-        {
-            "spdx_id": "Aladdin",
-            "comment": null,
-            "license_expression": "scancode:afpl-8.0"
         },
         {
             "spdx_id": "Aladdin",
@@ -14578,16 +11673,6 @@
         {
             "spdx_id": "LGPL-3.0-or-later",
             "comment": null,
-            "license_expression": "scancode:lgpl-3.0-plus"
-        },
-        {
-            "spdx_id": "LGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "osi:LGPL-3.0"
-        },
-        {
-            "spdx_id": "LGPL-3.0-or-later",
-            "comment": null,
             "license_expression": "LGPL-3.0-only"
         },
         {
@@ -14599,16 +11684,6 @@
             "spdx_id": "LGPL-3.0-or-later",
             "comment": null,
             "license_expression": "LGPL-3.0"
-        },
-        {
-            "spdx_id": "LGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "scancode:lgpl-3.0"
-        },
-        {
-            "spdx_id": "LGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "osi:LGPL-3.0"
         },
         {
             "spdx_id": "LGPL-3.0-or-later",
@@ -14723,11 +11798,6 @@
         {
             "spdx_id": "SNIA",
             "comment": null,
-            "license_expression": "scancode:snia"
-        },
-        {
-            "spdx_id": "SNIA",
-            "comment": null,
             "license_expression": "SNIA Public License 1.1"
         },
         {
@@ -14763,11 +11833,6 @@
         {
             "spdx_id": "SSPL-1.0",
             "comment": null,
-            "license_expression": "scancode:mongodb-sspl-1.0"
-        },
-        {
-            "spdx_id": "SSPL-1.0",
-            "comment": null,
             "license_expression": "Server Side Public License, v 1"
         },
         {
@@ -14794,16 +11859,6 @@
             "spdx_id": "RPSL-1.0",
             "comment": null,
             "license_expression": "RealNetworks Public Source License 1.0"
-        },
-        {
-            "spdx_id": "RPSL-1.0",
-            "comment": null,
-            "license_expression": "scancode:rpsl-1.0"
-        },
-        {
-            "spdx_id": "RPSL-1.0",
-            "comment": null,
-            "license_expression": "osi:RPSL-1.0"
         },
         {
             "spdx_id": "RPSL-1.0",
@@ -14844,11 +11899,6 @@
             "spdx_id": "MIT-open-group",
             "comment": null,
             "license_expression": "MIT Open Group"
-        },
-        {
-            "spdx_id": "MIT-open-group",
-            "comment": null,
-            "license_expression": "scancode:mit-open-group"
         },
         {
             "spdx_id": "MIT-open-group",
@@ -14913,26 +11963,6 @@
         {
             "spdx_id": "CECILL-B",
             "comment": null,
-            "license_expression": "scancode:cecill-b"
-        },
-        {
-            "spdx_id": "CECILL-B",
-            "comment": null,
-            "license_expression": "CeCILL-B-FSL"
-        },
-        {
-            "spdx_id": "CECILL-B",
-            "comment": null,
-            "license_expression": "CeCILL-B Free Software License (FRA)"
-        },
-        {
-            "spdx_id": "CECILL-B",
-            "comment": null,
-            "license_expression": "scancode:cecill-b"
-        },
-        {
-            "spdx_id": "CECILL-B",
-            "comment": null,
             "license_expression": "CeCILL-B Free Software License Agreement"
         },
         {
@@ -14949,16 +11979,6 @@
             "spdx_id": "Frameworx-1.0",
             "comment": null,
             "license_expression": "Frameworx License 1.0"
-        },
-        {
-            "spdx_id": "Frameworx-1.0",
-            "comment": null,
-            "license_expression": "scancode:frameworx-1.0"
-        },
-        {
-            "spdx_id": "Frameworx-1.0",
-            "comment": null,
-            "license_expression": "osi:Frameworx-1.0"
         },
         {
             "spdx_id": "Frameworx-1.0",
@@ -14989,11 +12009,6 @@
             "spdx_id": "RHeCos-1.1",
             "comment": null,
             "license_expression": "RHeCos License 1.1"
-        },
-        {
-            "spdx_id": "RHeCos-1.1",
-            "comment": null,
-            "license_expression": "scancode:ecosrh-1.1"
         },
         {
             "spdx_id": "RHeCos-1.1",
@@ -15038,11 +12053,6 @@
         {
             "spdx_id": "OML",
             "comment": null,
-            "license_expression": "scancode:fastcgi-devkit"
-        },
-        {
-            "spdx_id": "OML",
-            "comment": null,
             "license_expression": "Open Market License"
         },
         {
@@ -15063,16 +12073,6 @@
         {
             "spdx_id": "UCL-1.0",
             "comment": null,
-            "license_expression": "scancode:ucl-1.0"
-        },
-        {
-            "spdx_id": "UCL-1.0",
-            "comment": null,
-            "license_expression": "osi:UCL-1.0"
-        },
-        {
-            "spdx_id": "UCL-1.0",
-            "comment": null,
             "license_expression": "Upstream Compatibility License v1.0"
         },
         {
@@ -15084,16 +12084,6 @@
             "spdx_id": "APL-1.0",
             "comment": null,
             "license_expression": "Adaptice Public License 1.0"
-        },
-        {
-            "spdx_id": "APL-1.0",
-            "comment": null,
-            "license_expression": "scancode:adapt-1.0"
-        },
-        {
-            "spdx_id": "APL-1.0",
-            "comment": null,
-            "license_expression": "osi:APL-1.0"
         },
         {
             "spdx_id": "APL-1.0",
@@ -15138,11 +12128,6 @@
         {
             "spdx_id": "OLDAP-2.2",
             "comment": null,
-            "license_expression": "scancode:openldap-2.2"
-        },
-        {
-            "spdx_id": "OLDAP-2.2",
-            "comment": null,
             "license_expression": "Open LDAP Public License v2.2"
         },
         {
@@ -15163,11 +12148,6 @@
         {
             "spdx_id": "CERN-OHL-W-2.0",
             "comment": null,
-            "license_expression": "scancode:cern-ohl-w-2.0"
-        },
-        {
-            "spdx_id": "CERN-OHL-W-2.0",
-            "comment": null,
             "license_expression": "CERN Open Hardware Licence Version 2 - Weakly Reciprocal"
         },
         {
@@ -15179,11 +12159,6 @@
             "spdx_id": "DRL-1.0",
             "comment": null,
             "license_expression": "Detection Rule License 1.0"
-        },
-        {
-            "spdx_id": "DRL-1.0",
-            "comment": null,
-            "license_expression": "scancode:drl-1.0"
         },
         {
             "spdx_id": "DRL-1.0",
@@ -15204,11 +12179,6 @@
             "spdx_id": "CC-BY-ND-1.0",
             "comment": null,
             "license_expression": "Creative Commons BY-ND 1.0 (generic)"
-        },
-        {
-            "spdx_id": "CC-BY-ND-1.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nd-1.0"
         },
         {
             "spdx_id": "CC-BY-ND-1.0",
@@ -15238,11 +12208,6 @@
         {
             "spdx_id": "CECILL-1.1",
             "comment": null,
-            "license_expression": "scancode:cecill-1.1"
-        },
-        {
-            "spdx_id": "CECILL-1.1",
-            "comment": null,
             "license_expression": "CeCILL Free Software License Agreement v1.1"
         },
         {
@@ -15268,11 +12233,6 @@
         {
             "spdx_id": "Noweb",
             "comment": null,
-            "license_expression": "scancode:noweb"
-        },
-        {
-            "spdx_id": "Noweb",
-            "comment": null,
             "license_expression": "Noweb License"
         },
         {
@@ -15294,11 +12254,6 @@
             "spdx_id": "MakeIndex",
             "comment": null,
             "license_expression": "MakeIndex License"
-        },
-        {
-            "spdx_id": "MakeIndex",
-            "comment": null,
-            "license_expression": "scancode:makeindex"
         },
         {
             "spdx_id": "MakeIndex",
@@ -15338,16 +12293,6 @@
         {
             "spdx_id": "MS-RL",
             "comment": null,
-            "license_expression": "scancode:ms-rl"
-        },
-        {
-            "spdx_id": "MS-RL",
-            "comment": null,
-            "license_expression": "osi:MS-RL"
-        },
-        {
-            "spdx_id": "MS-RL",
-            "comment": null,
             "license_expression": "Microsoft Reciprocal License"
         },
         {
@@ -15383,11 +12328,6 @@
         {
             "spdx_id": "TORQUE-1.1",
             "comment": null,
-            "license_expression": "scancode:torque-1.1"
-        },
-        {
-            "spdx_id": "TORQUE-1.1",
-            "comment": null,
             "license_expression": "TORQUE v2.5+ Software License v1.1"
         },
         {
@@ -15414,21 +12354,6 @@
             "spdx_id": "AFL-3.0",
             "comment": null,
             "license_expression": "Academic Free License 3.0"
-        },
-        {
-            "spdx_id": "AFL-3.0",
-            "comment": null,
-            "license_expression": "scancode:afl-3.0"
-        },
-        {
-            "spdx_id": "AFL-3.0",
-            "comment": null,
-            "license_expression": "osi:AFL-3.0"
-        },
-        {
-            "spdx_id": "AFL-3.0",
-            "comment": null,
-            "license_expression": "osi:afl-3.0"
         },
         {
             "spdx_id": "AFL-3.0",
@@ -15493,11 +12418,6 @@
         {
             "spdx_id": "FTL",
             "comment": null,
-            "license_expression": "scancode:freetype"
-        },
-        {
-            "spdx_id": "FTL",
-            "comment": null,
             "license_expression": "FreeType Project LICENSE"
         },
         {
@@ -15528,11 +12448,6 @@
         {
             "spdx_id": "AFL-2.0",
             "comment": null,
-            "license_expression": "scancode:afl-2.0"
-        },
-        {
-            "spdx_id": "AFL-2.0",
-            "comment": null,
             "license_expression": "Academic Free License v2.0"
         },
         {
@@ -15549,11 +12464,6 @@
             "spdx_id": "LPPL-1.3a",
             "comment": null,
             "license_expression": "LPPL 1.3a"
-        },
-        {
-            "spdx_id": "LPPL-1.3a",
-            "comment": null,
-            "license_expression": "scancode:lppl-1.3a"
         },
         {
             "spdx_id": "LPPL-1.3a",
@@ -15579,11 +12489,6 @@
             "spdx_id": "OLDAP-1.2",
             "comment": null,
             "license_expression": "OpenLDAP Public License 1.2"
-        },
-        {
-            "spdx_id": "OLDAP-1.2",
-            "comment": null,
-            "license_expression": "scancode:openldap-1.2"
         },
         {
             "spdx_id": "OLDAP-1.2",
@@ -15614,11 +12519,6 @@
             "spdx_id": "ODbL-1.0",
             "comment": null,
             "license_expression": "ODbL 1.0"
-        },
-        {
-            "spdx_id": "ODbL-1.0",
-            "comment": null,
-            "license_expression": "scancode:odbl-1.0"
         },
         {
             "spdx_id": "ODbL-1.0",
@@ -15688,11 +12588,6 @@
         {
             "spdx_id": "Qhull",
             "comment": null,
-            "license_expression": "scancode:qhull"
-        },
-        {
-            "spdx_id": "Qhull",
-            "comment": null,
             "license_expression": "Qhull License"
         },
         {
@@ -15718,11 +12613,6 @@
         {
             "spdx_id": "OCCT-PL",
             "comment": null,
-            "license_expression": "scancode:occt-pl"
-        },
-        {
-            "spdx_id": "OCCT-PL",
-            "comment": null,
             "license_expression": "Open CASCADE Technology Public License"
         },
         {
@@ -15739,21 +12629,6 @@
             "spdx_id": "NTP",
             "comment": null,
             "license_expression": "NTP License"
-        },
-        {
-            "spdx_id": "NTP",
-            "comment": null,
-            "license_expression": "scancode:network-time-protocol"
-        },
-        {
-            "spdx_id": "NTP",
-            "comment": null,
-            "license_expression": "scancode:ntpl"
-        },
-        {
-            "spdx_id": "NTP",
-            "comment": null,
-            "license_expression": "osi:NTP"
         },
         {
             "spdx_id": "NTP",
@@ -15813,16 +12688,6 @@
         {
             "spdx_id": "EUPL-1.1",
             "comment": null,
-            "license_expression": "scancode:eupl-1.1"
-        },
-        {
-            "spdx_id": "EUPL-1.1",
-            "comment": null,
-            "license_expression": "osi:EUPL-1.1"
-        },
-        {
-            "spdx_id": "EUPL-1.1",
-            "comment": null,
             "license_expression": "European Union Public License 1.1"
         },
         {
@@ -15863,11 +12728,6 @@
         {
             "spdx_id": "CPOL-1.02",
             "comment": null,
-            "license_expression": "scancode:cpol-1.02"
-        },
-        {
-            "spdx_id": "CPOL-1.02",
-            "comment": null,
             "license_expression": "Code Project Open License 1.02"
         },
         {
@@ -15889,16 +12749,6 @@
             "spdx_id": "OCLC-2.0",
             "comment": null,
             "license_expression": "OCLC License 2.0"
-        },
-        {
-            "spdx_id": "OCLC-2.0",
-            "comment": null,
-            "license_expression": "scancode:oclc-2.0"
-        },
-        {
-            "spdx_id": "OCLC-2.0",
-            "comment": null,
-            "license_expression": "osi:OCLC-2.0"
         },
         {
             "spdx_id": "OCLC-2.0",
@@ -15943,11 +12793,6 @@
         {
             "spdx_id": "OLDAP-2.1",
             "comment": null,
-            "license_expression": "scancode:openldap-2.1"
-        },
-        {
-            "spdx_id": "OLDAP-2.1",
-            "comment": null,
             "license_expression": "Open LDAP Public License v2.1"
         },
         {
@@ -15969,11 +12814,6 @@
             "spdx_id": "Intel-ACPI",
             "comment": null,
             "license_expression": "Intel ACPI License"
-        },
-        {
-            "spdx_id": "Intel-ACPI",
-            "comment": null,
-            "license_expression": "scancode:intel-acpi"
         },
         {
             "spdx_id": "Intel-ACPI",
@@ -16023,11 +12863,6 @@
         {
             "spdx_id": "CC0-1.0",
             "comment": null,
-            "license_expression": "scancode:cc0-1.0"
-        },
-        {
-            "spdx_id": "CC0-1.0",
-            "comment": null,
             "license_expression": "CC0 1.0"
         },
         {
@@ -16073,11 +12908,6 @@
         {
             "spdx_id": "LGPL-2.0-or-later",
             "comment": null,
-            "license_expression": "scancode:lgpl-2.0-plus"
-        },
-        {
-            "spdx_id": "LGPL-2.0-or-later",
-            "comment": null,
             "license_expression": "GNU Library General Public License v2 or later"
         },
         {
@@ -16094,11 +12924,6 @@
             "spdx_id": "SGI-B-1.1",
             "comment": null,
             "license_expression": "SGI B License 1.1"
-        },
-        {
-            "spdx_id": "SGI-B-1.1",
-            "comment": null,
-            "license_expression": "scancode:sgi-freeb-1.1"
         },
         {
             "spdx_id": "SGI-B-1.1",
@@ -16128,11 +12953,6 @@
         {
             "spdx_id": "CC-BY-NC-ND-3.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-nc-nd-3.0"
-        },
-        {
-            "spdx_id": "CC-BY-NC-ND-3.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution-NoDerivs 3.0 Unported"
         },
         {
@@ -16154,11 +12974,6 @@
             "spdx_id": "etalab-2.0",
             "comment": null,
             "license_expression": "Etalab Open License 2.0"
-        },
-        {
-            "spdx_id": "etalab-2.0",
-            "comment": null,
-            "license_expression": "scancode:etalab-2.0"
         },
         {
             "spdx_id": "etalab-2.0",
@@ -16323,32 +13138,12 @@
         {
             "spdx_id": "GPL-3.0-only",
             "comment": null,
-            "license_expression": "scancode:gpl-3.0-plus"
-        },
-        {
-            "spdx_id": "GPL-3.0-only",
-            "comment": null,
-            "license_expression": "osi:GPL-3.0"
-        },
-        {
-            "spdx_id": "GPL-3.0-only",
-            "comment": null,
             "license_expression": "GNU General Public License 3.0"
         },
         {
             "spdx_id": "GPL-3.0-only",
             "comment": null,
             "license_expression": "GPL-3.0"
-        },
-        {
-            "spdx_id": "GPL-3.0-only",
-            "comment": null,
-            "license_expression": "scancode:gpl-3.0"
-        },
-        {
-            "spdx_id": "GPL-3.0-only",
-            "comment": null,
-            "license_expression": "osi:GPL-3.0"
         },
         {
             "spdx_id": "GPL-3.0-only",
@@ -16473,11 +13268,6 @@
         {
             "spdx_id": "Zend-2.0",
             "comment": null,
-            "license_expression": "scancode:zend-2.0"
-        },
-        {
-            "spdx_id": "Zend-2.0",
-            "comment": null,
             "license_expression": "Zend Engine License, Version 2.00"
         },
         {
@@ -16514,16 +13304,6 @@
             "spdx_id": "MirOS",
             "comment": null,
             "license_expression": "MirOS Licence"
-        },
-        {
-            "spdx_id": "MirOS",
-            "comment": null,
-            "license_expression": "scancode:mir-os"
-        },
-        {
-            "spdx_id": "MirOS",
-            "comment": null,
-            "license_expression": "osi:MirOS"
         },
         {
             "spdx_id": "MirOS",
@@ -16568,11 +13348,6 @@
         {
             "spdx_id": "BSD-3-Clause-No-Nuclear-License-2014",
             "comment": null,
-            "license_expression": "scancode:oracle-bsd-no-nuclear"
-        },
-        {
-            "spdx_id": "BSD-3-Clause-No-Nuclear-License-2014",
-            "comment": null,
             "license_expression": "BSD 3-Clause No Nuclear License 2014"
         },
         {
@@ -16593,11 +13368,6 @@
         {
             "spdx_id": "BitTorrent-1.0",
             "comment": null,
-            "license_expression": "scancode:bittorrent-1.0"
-        },
-        {
-            "spdx_id": "BitTorrent-1.0",
-            "comment": null,
             "license_expression": "BitTorrent Open Source License v1.0"
         },
         {
@@ -16614,11 +13384,6 @@
             "spdx_id": "CC-BY-ND-3.0",
             "comment": null,
             "license_expression": "Creative Commons BY-ND 3.0 (unported)"
-        },
-        {
-            "spdx_id": "CC-BY-ND-3.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nd-3.0"
         },
         {
             "spdx_id": "CC-BY-ND-3.0",
@@ -16669,16 +13434,6 @@
             "spdx_id": "MIT",
             "comment": null,
             "license_expression": "MIT License"
-        },
-        {
-            "spdx_id": "MIT",
-            "comment": null,
-            "license_expression": "scancode:mit"
-        },
-        {
-            "spdx_id": "MIT",
-            "comment": null,
-            "license_expression": "osi:MIT"
         },
         {
             "spdx_id": "MIT",
@@ -16743,11 +13498,6 @@
         {
             "spdx_id": "NIST-PD-fallback",
             "comment": null,
-            "license_expression": "scancode:nist-pd-fallback"
-        },
-        {
-            "spdx_id": "NIST-PD-fallback",
-            "comment": null,
             "license_expression": "NIST Public Domain Notice with license fallback"
         },
         {
@@ -16783,11 +13533,6 @@
         {
             "spdx_id": "FSFULLR",
             "comment": null,
-            "license_expression": "scancode:fsf-unlimited"
-        },
-        {
-            "spdx_id": "FSFULLR",
-            "comment": null,
             "license_expression": "FSF Unlimited License (with License Retention)"
         },
         {
@@ -16804,11 +13549,6 @@
             "spdx_id": "CC-BY-NC-1.0",
             "comment": null,
             "license_expression": "Creative Commons BY-NC 1.0 (generic)"
-        },
-        {
-            "spdx_id": "CC-BY-NC-1.0",
-            "comment": null,
-            "license_expression": "scancode:cc-by-nc-1.0"
         },
         {
             "spdx_id": "CC-BY-NC-1.0",
@@ -16844,16 +13584,6 @@
             "spdx_id": "Python-2.0",
             "comment": null,
             "license_expression": "Python Software Foundation License 2.0"
-        },
-        {
-            "spdx_id": "Python-2.0",
-            "comment": null,
-            "license_expression": "scancode:python"
-        },
-        {
-            "spdx_id": "Python-2.0",
-            "comment": null,
-            "license_expression": "osi:Python-2.0"
         },
         {
             "spdx_id": "Python-2.0",
@@ -16978,11 +13708,6 @@
         {
             "spdx_id": "CC-BY-4.0",
             "comment": null,
-            "license_expression": "scancode:cc-by-4.0"
-        },
-        {
-            "spdx_id": "CC-BY-4.0",
-            "comment": null,
             "license_expression": "Creative Commons Attribution 4.0"
         },
         {
@@ -17023,11 +13748,6 @@
         {
             "spdx_id": "Rdisc",
             "comment": null,
-            "license_expression": "scancode:rdisc"
-        },
-        {
-            "spdx_id": "Rdisc",
-            "comment": null,
             "license_expression": "Rdisc License"
         },
         {
@@ -17054,11 +13774,6 @@
             "spdx_id": "MIT-enna",
             "comment": null,
             "license_expression": "MIT License (with enna advertising)"
-        },
-        {
-            "spdx_id": "MIT-enna",
-            "comment": null,
-            "license_expression": "scancode:enna"
         },
         {
             "spdx_id": "MIT-enna",
@@ -17123,16 +13838,6 @@
         {
             "spdx_id": "MPL-2.0",
             "comment": null,
-            "license_expression": "scancode:mpl-2.0"
-        },
-        {
-            "spdx_id": "MPL-2.0",
-            "comment": null,
-            "license_expression": "osi:MPL-2.0"
-        },
-        {
-            "spdx_id": "MPL-2.0",
-            "comment": null,
             "license_expression": "Mozilla Public License 2.0"
         },
         {
@@ -17188,11 +13893,6 @@
         {
             "spdx_id": "YPL-1.0",
             "comment": null,
-            "license_expression": "scancode:ypl-1.0"
-        },
-        {
-            "spdx_id": "YPL-1.0",
-            "comment": null,
             "license_expression": "Yahoo! Public License v1.0"
         },
         {
@@ -17214,16 +13914,6 @@
             "spdx_id": "ZPL-2.0",
             "comment": null,
             "license_expression": "Zope Public License 2.0"
-        },
-        {
-            "spdx_id": "ZPL-2.0",
-            "comment": null,
-            "license_expression": "scancode:zpl-2.0"
-        },
-        {
-            "spdx_id": "ZPL-2.0",
-            "comment": null,
-            "license_expression": "osi:ZPL-2.0"
         },
         {
             "spdx_id": "ZPL-2.0",
@@ -17278,11 +13968,6 @@
         {
             "spdx_id": "copyleft-next-0.3.1",
             "comment": null,
-            "license_expression": "scancode:copyleft-next-0.3.1"
-        },
-        {
-            "spdx_id": "copyleft-next-0.3.1",
-            "comment": null,
             "license_expression": "copyleft-next 0.3.1"
         },
         {
@@ -17318,16 +14003,6 @@
         {
             "spdx_id": "LPL-1.02",
             "comment": null,
-            "license_expression": "scancode:lucent-pl-1.02"
-        },
-        {
-            "spdx_id": "LPL-1.02",
-            "comment": null,
-            "license_expression": "osi:LPL-1.02"
-        },
-        {
-            "spdx_id": "LPL-1.02",
-            "comment": null,
             "license_expression": "Lucent Public License 1.02"
         },
         {
@@ -17354,11 +14029,6 @@
             "spdx_id": "NLOD-1.0",
             "comment": null,
             "license_expression": "Norwegian Licence (Open Government Data)"
-        },
-        {
-            "spdx_id": "NLOD-1.0",
-            "comment": null,
-            "license_expression": "scancode:nlod-1.0"
         },
         {
             "spdx_id": "NLOD-1.0",
@@ -17408,11 +14078,6 @@
         {
             "spdx_id": "MTLL",
             "comment": null,
-            "license_expression": "scancode:mtll"
-        },
-        {
-            "spdx_id": "MTLL",
-            "comment": null,
             "license_expression": "Matrix Template Library License"
         },
         {
@@ -17439,16 +14104,6 @@
             "spdx_id": "ECL-1.0",
             "comment": null,
             "license_expression": "Educational Community License 1.0"
-        },
-        {
-            "spdx_id": "ECL-1.0",
-            "comment": null,
-            "license_expression": "scancode:ecl-1.0"
-        },
-        {
-            "spdx_id": "ECL-1.0",
-            "comment": null,
-            "license_expression": "osi:ECL-1.0"
         },
         {
             "spdx_id": "ECL-1.0",
@@ -17493,11 +14148,6 @@
         {
             "spdx_id": "EPICS",
             "comment": null,
-            "license_expression": "scancode:epics"
-        },
-        {
-            "spdx_id": "EPICS",
-            "comment": null,
             "license_expression": "EPICS Open License"
         },
         {
@@ -17524,11 +14174,6 @@
             "spdx_id": "BSD-3-Clause-Attribution",
             "comment": null,
             "license_expression": "BSD 3-Clause License (attribution)"
-        },
-        {
-            "spdx_id": "BSD-3-Clause-Attribution",
-            "comment": null,
-            "license_expression": "scancode:bsd-ack"
         },
         {
             "spdx_id": "BSD-3-Clause-Attribution",
@@ -17578,11 +14223,6 @@
         {
             "spdx_id": "AMDPLPA",
             "comment": null,
-            "license_expression": "scancode:amdplpa"
-        },
-        {
-            "spdx_id": "AMDPLPA",
-            "comment": null,
             "license_expression": "AMD's plpa_map.c License"
         },
         {
@@ -17613,11 +14253,6 @@
         {
             "spdx_id": "FSFUL",
             "comment": null,
-            "license_expression": "scancode:fsf-free"
-        },
-        {
-            "spdx_id": "FSFUL",
-            "comment": null,
             "license_expression": "FSF Unlimited License"
         },
         {
@@ -17638,22 +14273,12 @@
         {
             "spdx_id": "CC-BY-3.0-AT",
             "comment": null,
-            "license_expression": "scancode:cc-by-3.0-at"
-        },
-        {
-            "spdx_id": "CC-BY-3.0-AT",
-            "comment": null,
             "license_expression": "Creative Commons Attribution 3.0 Austria"
         },
         {
             "spdx_id": "CDLA-Sharing-1.0",
             "comment": null,
             "license_expression": "Community Data License Agreement Sharing 1.0"
-        },
-        {
-            "spdx_id": "CDLA-Sharing-1.0",
-            "comment": null,
-            "license_expression": "scancode:cdla-sharing-1.0"
         },
         {
             "spdx_id": "CDLA-Sharing-1.0",
@@ -17679,11 +14304,6 @@
             "spdx_id": "OLDAP-2.6",
             "comment": null,
             "license_expression": "OpenLDAP Public License 2.6"
-        },
-        {
-            "spdx_id": "OLDAP-2.6",
-            "comment": null,
-            "license_expression": "scancode:openldap-2.6"
         },
         {
             "spdx_id": "OLDAP-2.6",
@@ -17758,11 +14378,6 @@
         {
             "spdx_id": "Bahyph",
             "comment": null,
-            "license_expression": "scancode:bahyph"
-        },
-        {
-            "spdx_id": "Bahyph",
-            "comment": null,
             "license_expression": "Bahyph License"
         },
         {
@@ -17783,11 +14398,6 @@
         {
             "spdx_id": "CC-BY-SA-3.0-AT",
             "comment": null,
-            "license_expression": "scancode:cc-by-sa-3.0-at"
-        },
-        {
-            "spdx_id": "CC-BY-SA-3.0-AT",
-            "comment": null,
             "license_expression": "Creative Commons Attribution Share Alike 3.0 Austria"
         },
         {
@@ -17799,11 +14409,6 @@
             "spdx_id": "AFL-2.1",
             "comment": null,
             "license_expression": "Academic Free License 2.1"
-        },
-        {
-            "spdx_id": "AFL-2.1",
-            "comment": null,
-            "license_expression": "scancode:afl-2.1"
         },
         {
             "spdx_id": "AFL-2.1",
@@ -17853,16 +14458,6 @@
         {
             "spdx_id": "OSL-2.1",
             "comment": null,
-            "license_expression": "scancode:osl-2.1"
-        },
-        {
-            "spdx_id": "OSL-2.1",
-            "comment": null,
-            "license_expression": "osi:OSL-2.1"
-        },
-        {
-            "spdx_id": "OSL-2.1",
-            "comment": null,
             "license_expression": "Open Software License, Version 2.1"
         },
         {
@@ -17893,11 +14488,6 @@
         {
             "spdx_id": "NCGL-UK-2.0",
             "comment": null,
-            "license_expression": "scancode:ncgl-uk-2.0"
-        },
-        {
-            "spdx_id": "NCGL-UK-2.0",
-            "comment": null,
             "license_expression": "Non-Commercial Government Licence"
         },
         {
@@ -17919,11 +14509,6 @@
             "spdx_id": "Glulxe",
             "comment": null,
             "license_expression": "Glulxe License"
-        },
-        {
-            "spdx_id": "Glulxe",
-            "comment": null,
-            "license_expression": "scancode:glulxe"
         },
         {
             "spdx_id": "Glulxe",
@@ -17953,11 +14538,6 @@
         {
             "spdx_id": "copyleft-next-0.3.0",
             "comment": null,
-            "license_expression": "scancode:copyleft-next-0.3.0"
-        },
-        {
-            "spdx_id": "copyleft-next-0.3.0",
-            "comment": null,
             "license_expression": "copyleft-next 0.3.0"
         },
         {
@@ -17979,11 +14559,6 @@
             "spdx_id": "dvipdfm",
             "comment": null,
             "license_expression": "dvipdfm License"
-        },
-        {
-            "spdx_id": "dvipdfm",
-            "comment": null,
-            "license_expression": "scancode:dvipdfm"
         },
         {
             "spdx_id": "dvipdfm",
@@ -18033,11 +14608,6 @@
         {
             "spdx_id": "GLWTPL",
             "comment": null,
-            "license_expression": "scancode:glwtpl"
-        },
-        {
-            "spdx_id": "GLWTPL",
-            "comment": null,
             "license_expression": "Good Luck With That Public License"
         },
         {
@@ -18058,16 +14628,6 @@
         {
             "spdx_id": "CAL-1.0",
             "comment": null,
-            "license_expression": "scancode:cal-1.0"
-        },
-        {
-            "spdx_id": "CAL-1.0",
-            "comment": null,
-            "license_expression": "osi:CAL-1.0"
-        },
-        {
-            "spdx_id": "CAL-1.0",
-            "comment": null,
             "license_expression": "Cryptographic Autonomy License 1.0"
         },
         {
@@ -18084,11 +14644,6 @@
             "spdx_id": "Artistic-1.0-Perl",
             "comment": null,
             "license_expression": "Artistic License 1.0 (Perl)"
-        },
-        {
-            "spdx_id": "Artistic-1.0-Perl",
-            "comment": null,
-            "license_expression": "scancode:artistic-perl-1.0"
         },
         {
             "spdx_id": "Artistic-1.0-Perl",
@@ -18114,11 +14669,6 @@
             "spdx_id": "gSOAP-1.3b",
             "comment": null,
             "license_expression": "gSOAP Public License 1.3b"
-        },
-        {
-            "spdx_id": "gSOAP-1.3b",
-            "comment": null,
-            "license_expression": "scancode:gsoap-1.3b"
         },
         {
             "spdx_id": "gSOAP-1.3b",
@@ -18149,11 +14699,6 @@
             "spdx_id": "OLDAP-2.5",
             "comment": null,
             "license_expression": "OpenLDAP Public License 2.5"
-        },
-        {
-            "spdx_id": "OLDAP-2.5",
-            "comment": null,
-            "license_expression": "scancode:openldap-2.5"
         },
         {
             "spdx_id": "OLDAP-2.5",
@@ -18219,16 +14764,6 @@
             "spdx_id": "MS-PL",
             "comment": null,
             "license_expression": "Microsoft Public License"
-        },
-        {
-            "spdx_id": "MS-PL",
-            "comment": null,
-            "license_expression": "scancode:ms-pl"
-        },
-        {
-            "spdx_id": "MS-PL",
-            "comment": null,
-            "license_expression": "osi:MS-PL"
         },
         {
             "spdx_id": "MS-PL",

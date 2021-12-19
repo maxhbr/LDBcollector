@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `SNIA License`
-* `scancode:snia`
 * `scancode://snia`
 
 === Comments on (easy) usability
@@ -211,7 +210,6 @@ repository] is generated)
         "SNIA",
         "SNIA Public License 1.1",
         "SNIA License",
-        "scancode:snia",
         "scancode://snia"
     ],
     "__impliedId": "SNIA",
@@ -220,7 +218,8 @@ repository] is generated)
         "SNIA",
         "SNIA License",
         "SNIA LICENSE",
-        "STORAGE NETWORKING INDUSTRY ASSOCIATION"
+        "STORAGE NETWORKING INDUSTRY ASSOCIATION",
+        "scancode:snia"
     ],
     "__impliedComments": [
         [
@@ -367,14 +366,14 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "SNIA License",
-                    "SNIA",
-                    "scancode:snia"
+                    "SNIA"
                 ],
                 "__impliedId": "SNIA",
                 "__impliedAmbiguousNames": [
                     "SNIA License",
                     "SNIA LICENSE",
-                    "STORAGE NETWORKING INDUSTRY ASSOCIATION"
+                    "STORAGE NETWORKING INDUSTRY ASSOCIATION",
+                    "scancode:snia"
                 ],
                 "__impliedComments": [
                     [

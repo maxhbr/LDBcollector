@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:opengroup`
-
--   `osi:OGTSL`
-
 -   `The Open Group Test Suite License (OGTSL)`
 
 -   `License :: OSI Approved :: Open Group Test Suite License`
@@ -151,8 +147,6 @@
         "__impliedNames": [
             "OGTSL",
             "Open Group Test Suite License",
-            "scancode:opengroup",
-            "osi:OGTSL",
             "The Open Group Test Suite License (OGTSL)",
             "License :: OSI Approved :: Open Group Test Suite License",
             "scancode://opengroup"
@@ -161,7 +155,9 @@
         "__impliedAmbiguousNames": [
             "Open Group Test Suite License",
             "OGTS license",
-            "OGTSL license"
+            "OGTSL license",
+            "scancode:opengroup",
+            "osi:OGTSL"
         ],
         "__impliedComments": [
             [
@@ -380,15 +376,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Open Group Test Suite License",
-                        "OGTSL",
-                        "scancode:opengroup",
-                        "osi:OGTSL"
+                        "OGTSL"
                     ],
                     "__impliedId": "OGTSL",
                     "__impliedAmbiguousNames": [
                         "Open Group Test Suite License",
                         "OGTS license",
-                        "OGTSL license"
+                        "OGTSL license",
+                        "scancode:opengroup",
+                        "osi:OGTSL"
                     ],
                     "__impliedComments": [
                         [

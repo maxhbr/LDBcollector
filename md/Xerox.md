@@ -8,8 +8,6 @@
 
 -   `MIT-Export-Control`
 
--   `scancode:mit-export-control`
-
 -   `scancode://mit-export-control`
 
 ## Comments on (easy) usability
@@ -102,7 +100,6 @@
             "Xerox License",
             "MIT with Export Control",
             "MIT-Export-Control",
-            "scancode:mit-export-control",
             "scancode://mit-export-control"
         ],
         "__impliedId": "Xerox",
@@ -110,6 +107,7 @@
         "__impliedAmbiguousNames": [
             "Xerox",
             "mit-export-control",
+            "scancode:mit-export-control",
             "https://spdx.org/licenses/xerox",
             "Xerox License",
             "XEROX LICENSE",
@@ -264,12 +262,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "MIT with Export Control",
-                        "MIT-Export-Control",
-                        "scancode:mit-export-control"
+                        "MIT-Export-Control"
                     ],
                     "__impliedId": "MIT-Export-Control",
                     "__impliedAmbiguousNames": [
-                        "mit-export-control"
+                        "mit-export-control",
+                        "scancode:mit-export-control"
                     ],
                     "__impliedComments": [
                         [

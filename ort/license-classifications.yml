@@ -781,18 +781,8 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - condition:disclose-source
-  - condition:document-changes
-  - condition:same-license--library
-  - limitation:liability
-  - limitation:warranty
   - osi-approved
-  id: LGPL-2.1-only
+  id: LGPL-2.1-or-later
 - categories:
   - permissive
   - maybe-rating:Attention
@@ -1410,19 +1400,9 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - condition:disclose-source
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
   - osi-approved
   - fsf-free
-  id: GPL-2.0-only
+  id: GPL-2.0-or-later
 - categories:
   - weak-copyleft
   - copyleft
@@ -2516,7 +2496,7 @@ categorizations:
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - osi-approved
-  id: Artistic-1.0
+  id: Artistic-1.0-cl8
 - categories:
   - copyleft
   - maybe-rating:Stop

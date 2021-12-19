@@ -10,8 +10,6 @@
 
 -   `Affero General Public License 1.0`
 
--   `scancode:agpl-1.0`
-
 -   `scancode://agpl-1.0`
 
 -   `AGPL 1.0`
@@ -392,7 +390,6 @@
             "Affero General Public License (v. 1)",
             "Affero General Public License 1.0",
             "Affero General Public License v1.0 only",
-            "scancode:agpl-1.0",
             "scancode://agpl-1.0",
             "AGPL 1.0"
         ],
@@ -403,7 +400,8 @@
             "AGPLv1",
             "AGPL-1.0",
             "Affero General Public License v1.0",
-            "AFFERO GENERAL PUBLIC LICENSE Version 1"
+            "AFFERO GENERAL PUBLIC LICENSE Version 1",
+            "scancode:agpl-1.0"
         ],
         "__impliedComments": [
             [
@@ -598,14 +596,14 @@
                     "__impliedNames": [
                         "Affero General Public License 1.0",
                         "AGPL-1.0",
-                        "AGPL-1.0-only",
-                        "scancode:agpl-1.0"
+                        "AGPL-1.0-only"
                     ],
                     "__impliedId": "AGPL-1.0-only",
                     "__impliedAmbiguousNames": [
                         "AGPL-1.0",
                         "Affero General Public License v1.0",
-                        "AFFERO GENERAL PUBLIC LICENSE Version 1"
+                        "AFFERO GENERAL PUBLIC LICENSE Version 1",
+                        "scancode:agpl-1.0"
                     ],
                     "__impliedComments": [
                         [

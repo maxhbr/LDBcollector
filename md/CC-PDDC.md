@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:aop-pd`
-
--   `scancode:cc-pd`
-
 -   `Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification`
 
 -   `scancode://cc-pd`
@@ -87,8 +83,6 @@
         "__impliedNames": [
             "CC-PDDC",
             "Creative Commons Public Domain Dedication and Certification",
-            "scancode:aop-pd",
-            "scancode:cc-pd",
             "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification",
             "scancode://cc-pd",
             "CC-PD"
@@ -97,7 +91,9 @@
         "__impliedAmbiguousNames": [
             "CC-PDDC",
             "Creative Commons Public Domain Dedication and Certification",
-            "AOP Public Domain License"
+            "AOP Public Domain License",
+            "scancode:aop-pd",
+            "scancode:cc-pd"
         ],
         "__impliedComments": [
             [
@@ -268,15 +264,15 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons Public Domain Dedication and Certification",
-                        "CC-PDDC",
-                        "scancode:aop-pd",
-                        "scancode:cc-pd"
+                        "CC-PDDC"
                     ],
                     "__impliedId": "CC-PDDC",
                     "__impliedAmbiguousNames": [
                         "CC-PDDC",
                         "Creative Commons Public Domain Dedication and Certification",
-                        "AOP Public Domain License"
+                        "AOP Public Domain License",
+                        "scancode:aop-pd",
+                        "scancode:cc-pd"
                     ],
                     "__impliedComments": [
                         [

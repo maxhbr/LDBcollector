@@ -5,7 +5,6 @@
         "wtfpl",
         "WTF Public License 2.0",
         "WTFPL-2.0",
-        "scancode:wtfpl-2.0",
         "scancode://wtfpl-2.0",
         "WTFPL 2.0",
         "Do What The Fuck You Want To Public License (WTFPL) 2"
@@ -21,7 +20,8 @@
         "Do What The Fuck You Want To Public License, Version 2",
         "Do What you Want",
         "http://www.wtfpl.net/about/",
-        "http://sam.zoy.org/wtfpl/"
+        "http://sam.zoy.org/wtfpl/",
+        "scancode:wtfpl-2.0"
     ],
     "__impliedComments": [
         [
@@ -259,8 +259,7 @@
                 "__impliedNames": [
                     "WTF Public License 2.0",
                     "WTFPL-2.0",
-                    "WTFPL",
-                    "scancode:wtfpl-2.0"
+                    "WTFPL"
                 ],
                 "__impliedId": "WTFPL",
                 "__impliedAmbiguousNames": [
@@ -272,7 +271,8 @@
                     "Do What The Fuck You Want To Public License, Version 2",
                     "Do What you Want",
                     "http://www.wtfpl.net/about/",
-                    "http://sam.zoy.org/wtfpl/"
+                    "http://sam.zoy.org/wtfpl/",
+                    "scancode:wtfpl-2.0"
                 ],
                 "__impliedComments": [
                     [

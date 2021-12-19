@@ -6,8 +6,6 @@
 
 -   `BitTorrent License 1.0`
 
--   `scancode:bittorrent-1.0`
-
 -   `scancode://bittorrent-1.0`
 
 -   `BitTorrent 1.0`
@@ -389,7 +387,6 @@
         "__impliedNames": [
             "BitTorrent-1.0",
             "BitTorrent License 1.0",
-            "scancode:bittorrent-1.0",
             "BitTorrent Open Source License v1.0",
             "scancode://bittorrent-1.0",
             "BitTorrent 1.0"
@@ -401,7 +398,8 @@
             "BitTorrent-1.0",
             "BitTorrent License, Version 1.0",
             "BitTorrent License, 1.0",
-            "BitTorrent Open Source License Version 1.0"
+            "BitTorrent Open Source License Version 1.0",
+            "scancode:bittorrent-1.0"
         ],
         "__impliedComments": [
             [
@@ -530,8 +528,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "BitTorrent License 1.0",
-                        "BitTorrent-1.0",
-                        "scancode:bittorrent-1.0"
+                        "BitTorrent-1.0"
                     ],
                     "__impliedId": "BitTorrent-1.0",
                     "__impliedAmbiguousNames": [
@@ -540,7 +537,8 @@
                         "BitTorrent-1.0",
                         "BitTorrent License, Version 1.0",
                         "BitTorrent License, 1.0",
-                        "BitTorrent Open Source License Version 1.0"
+                        "BitTorrent Open Source License Version 1.0",
+                        "scancode:bittorrent-1.0"
                     ],
                     "__impliedComments": [
                         [

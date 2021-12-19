@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:ca-tosl-1.1`
-
--   `osi:CATOSL-1.1`
-
 -   `Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)`
 
 -   `ca-tosl1.1`
@@ -447,8 +443,6 @@
         "__impliedNames": [
             "CATOSL-1.1",
             "Computer Associates Trusted Open Source License 1.1",
-            "scancode:ca-tosl-1.1",
-            "osi:CATOSL-1.1",
             "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)",
             "ca-tosl1.1",
             "Computer Associates Trusted Open Source License, Version 1.1",
@@ -462,7 +456,9 @@
             "CATOSL, Version 1.1",
             "CATOSL, 1.1",
             "CATOSL-1.1",
-            "Computer Associates Trusted Open Source License Version 1.1"
+            "Computer Associates Trusted Open Source License Version 1.1",
+            "scancode:ca-tosl-1.1",
+            "osi:CATOSL-1.1"
         ],
         "__impliedComments": [
             [
@@ -697,16 +693,16 @@
                 "_implications": {
                     "__impliedNames": [
                         "Computer Associates Trusted Open Source License 1.1",
-                        "CATOSL-1.1",
-                        "scancode:ca-tosl-1.1",
-                        "osi:CATOSL-1.1"
+                        "CATOSL-1.1"
                     ],
                     "__impliedId": "CATOSL-1.1",
                     "__impliedAmbiguousNames": [
                         "CATOSL, Version 1.1",
                         "CATOSL, 1.1",
                         "CATOSL-1.1",
-                        "Computer Associates Trusted Open Source License Version 1.1"
+                        "Computer Associates Trusted Open Source License Version 1.1",
+                        "scancode:ca-tosl-1.1",
+                        "osi:CATOSL-1.1"
                     ],
                     "__impliedComments": [
                         [

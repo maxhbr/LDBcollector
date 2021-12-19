@@ -6,8 +6,6 @@
 
 -   `Parity Public License 7.0.0`
 
--   `scancode:parity-7.0.0`
-
 -   `scancode://parity-7.0.0`
 
 ## Comments on (easy) usability
@@ -124,14 +122,14 @@
             "Parity-7.0.0",
             "The Parity Public License 7.0.0",
             "Parity Public License 7.0.0",
-            "scancode:parity-7.0.0",
             "scancode://parity-7.0.0"
         ],
         "__impliedId": "Parity-7.0.0",
         "__impliedAmbiguousNames": [
             "The Parity Public License",
             "Parity-7.0.0",
-            "The Parity Public License 7.0.0"
+            "The Parity Public License 7.0.0",
+            "scancode:parity-7.0.0"
         ],
         "__impliedComments": [
             [
@@ -240,13 +238,13 @@
                 "_implications": {
                     "__impliedNames": [
                         "Parity Public License 7.0.0",
-                        "Parity-7.0.0",
-                        "scancode:parity-7.0.0"
+                        "Parity-7.0.0"
                     ],
                     "__impliedId": "Parity-7.0.0",
                     "__impliedAmbiguousNames": [
                         "Parity-7.0.0",
-                        "The Parity Public License 7.0.0"
+                        "The Parity Public License 7.0.0",
+                        "scancode:parity-7.0.0"
                     ],
                     "__impliedComments": [
                         [

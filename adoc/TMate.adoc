@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `TMate License`
-* `scancode:tmate`
 * `TMate Open Source License for "TMate JavaSVN library"`
 * `scancode://tmate`
 
@@ -181,7 +180,6 @@ repository] is generated)
         "TMate",
         "TMate Open Source License",
         "TMate License",
-        "scancode:tmate",
         "TMate Open Source License for \"TMate JavaSVN library\"",
         "scancode://tmate"
     ],
@@ -193,7 +191,8 @@ repository] is generated)
         "TMATE LICENSE",
         "TMATE License",
         "TMate Open Source License",
-        "http://svnkit.com/license.html"
+        "http://svnkit.com/license.html",
+        "scancode:tmate"
     ],
     "__impliedComments": [
         [
@@ -512,8 +511,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "TMate License",
-                    "TMate",
-                    "scancode:tmate"
+                    "TMate"
                 ],
                 "__impliedId": "TMate",
                 "__impliedAmbiguousNames": [
@@ -521,7 +519,8 @@ repository] is generated)
                     "TMATE LICENSE",
                     "TMATE License",
                     "TMate Open Source License",
-                    "http://svnkit.com/license.html"
+                    "http://svnkit.com/license.html",
+                    "scancode:tmate"
                 ],
                 "__impliedComments": [
                     [

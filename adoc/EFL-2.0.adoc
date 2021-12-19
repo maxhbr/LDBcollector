@@ -12,8 +12,6 @@
 *Other Names:*
 
 * `Eiffel Forum License 2.0`
-* `scancode:efl-2.0`
-* `osi:EFL-2.0`
 * `Eiffel Forum License, Version 2`
 * `License :: OSI Approved :: Eiffel Forum License`
 * `scancode://efl-2.0`
@@ -128,8 +126,6 @@ repository] is generated)
         "EFL-2.0",
         "Eiffel Forum License v2.0",
         "Eiffel Forum License 2.0",
-        "scancode:efl-2.0",
-        "osi:EFL-2.0",
         "Eiffel Forum License, Version 2",
         "License :: OSI Approved :: Eiffel Forum License",
         "scancode://efl-2.0",
@@ -141,7 +137,9 @@ repository] is generated)
         "EFL 2.0",
         "EFL, Version 2.0",
         "EFL-2.0",
-        "Eiffel Forum License, version 2"
+        "Eiffel Forum License, version 2",
+        "scancode:efl-2.0",
+        "osi:EFL-2.0"
     ],
     "__impliedComments": [
         [
@@ -403,16 +401,16 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "Eiffel Forum License 2.0",
-                    "EFL-2.0",
-                    "scancode:efl-2.0",
-                    "osi:EFL-2.0"
+                    "EFL-2.0"
                 ],
                 "__impliedId": "EFL-2.0",
                 "__impliedAmbiguousNames": [
                     "EFL, Version 2.0",
                     "EFL 2.0",
                     "EFL-2.0",
-                    "Eiffel Forum License, version 2"
+                    "Eiffel Forum License, version 2",
+                    "scancode:efl-2.0",
+                    "osi:EFL-2.0"
                 ],
                 "__impliedComments": [
                     [

@@ -12,7 +12,6 @@
 *Other Names:*
 
 * `FreeImage Public License 1.0`
-* `scancode:freeimage-1.0`
 * `scancode://freeimage-1.0`
 
 === Comments on (easy) usability
@@ -196,7 +195,6 @@ repository] is generated)
     "__impliedNames": [
         "FreeImage",
         "FreeImage Public License 1.0",
-        "scancode:freeimage-1.0",
         "FreeImage Public License v1.0",
         "scancode://freeimage-1.0"
     ],
@@ -206,7 +204,8 @@ repository] is generated)
         "FREEIMAGE PUBLIC LICENSE",
         "FREEIMAGE Public License",
         "FreeImage Public License",
-        "FREEIMAGE Public LICENSE"
+        "FREEIMAGE Public LICENSE",
+        "scancode:freeimage-1.0"
     ],
     "__impliedComments": [
         [
@@ -312,8 +311,7 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "FreeImage Public License 1.0",
-                    "FreeImage",
-                    "scancode:freeimage-1.0"
+                    "FreeImage"
                 ],
                 "__impliedId": "FreeImage",
                 "__impliedAmbiguousNames": [
@@ -321,7 +319,8 @@ repository] is generated)
                     "FREEIMAGE PUBLIC LICENSE",
                     "FREEIMAGE Public License",
                     "FreeImage Public License",
-                    "FREEIMAGE Public LICENSE"
+                    "FREEIMAGE Public LICENSE",
+                    "scancode:freeimage-1.0"
                 ],
                 "__impliedComments": [
                     [

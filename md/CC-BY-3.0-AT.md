@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY 3.0 (Austria)`
 
--   `scancode:cc-by-3.0-at`
-
 ## Comments on (easy) usability
 
 ## General Comments
@@ -43,12 +41,12 @@
         "__impliedNames": [
             "CC-BY-3.0-AT",
             "Creative Commons BY 3.0 (Austria)",
-            "scancode:cc-by-3.0-at",
             "Creative Commons Attribution 3.0 Austria"
         ],
         "__impliedId": "CC-BY-3.0-AT",
         "__impliedAmbiguousNames": [
-            "Creative Commons BY 3.0 (Austria)"
+            "Creative Commons BY 3.0 (Austria)",
+            "scancode:cc-by-3.0-at"
         ],
         "__impliedComments": [
             [
@@ -113,12 +111,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY 3.0 (Austria)",
-                        "CC-BY-3.0-AT",
-                        "scancode:cc-by-3.0-at"
+                        "CC-BY-3.0-AT"
                     ],
                     "__impliedId": "CC-BY-3.0-AT",
                     "__impliedAmbiguousNames": [
-                        "Creative Commons BY 3.0 (Austria)"
+                        "Creative Commons BY 3.0 (Austria)",
+                        "scancode:cc-by-3.0-at"
                     ],
                     "__impliedComments": [
                         [

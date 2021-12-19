@@ -6,8 +6,6 @@
 
 -   `APAFML License`
 
--   `scancode:apafml`
-
 -   `scancode://apafml`
 
 ## Comments on (easy) usability
@@ -79,13 +77,13 @@
             "APAFML",
             "Adobe Postscript AFM License",
             "APAFML License",
-            "scancode:apafml",
             "scancode://apafml"
         ],
         "__impliedId": "APAFML",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "APAFML"
+            "APAFML",
+            "scancode:apafml"
         ],
         "__impliedComments": [
             [
@@ -216,12 +214,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "APAFML License",
-                        "APAFML",
-                        "scancode:apafml"
+                        "APAFML"
                     ],
                     "__impliedId": "APAFML",
                     "__impliedAmbiguousNames": [
-                        "APAFML"
+                        "APAFML",
+                        "scancode:apafml"
                     ],
                     "__impliedComments": [
                         [

@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:sendmail`
-
 -   `SENDMAIL LICENSE (version 2004)`
 
 -   `SENDMAIL LICENSE (version 2012)`
@@ -226,7 +224,6 @@
         "__impliedNames": [
             "Sendmail",
             "Sendmail License",
-            "scancode:sendmail",
             "SENDMAIL LICENSE (version 2004)",
             "SENDMAIL LICENSE (version 2012)",
             "SENDMAIL LICENSE (version 1998)",
@@ -236,7 +233,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Sendmail",
-            "Sendmail License"
+            "Sendmail License",
+            "scancode:sendmail"
         ],
         "__impliedComments": [
             [
@@ -567,12 +565,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Sendmail License",
-                        "Sendmail",
-                        "scancode:sendmail"
+                        "Sendmail"
                     ],
                     "__impliedId": "Sendmail",
                     "__impliedAmbiguousNames": [
-                        "Sendmail License"
+                        "Sendmail License",
+                        "scancode:sendmail"
                     ],
                     "__impliedComments": [
                         [

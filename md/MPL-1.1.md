@@ -4,12 +4,6 @@
 
 **Other Names:**
 
--   `scancode:dpl-1.1`
-
--   `scancode:monetdb-1.1`
-
--   `osi:MPL-1.1`
-
 -   `mozilla1.1`
 
 -   `Mozilla Public License, Version 1.1`
@@ -522,9 +516,6 @@
         "__impliedNames": [
             "MPL-1.1",
             "Mozilla Public License 1.1",
-            "scancode:dpl-1.1",
-            "scancode:monetdb-1.1",
-            "osi:MPL-1.1",
             "mozilla1.1",
             "Mozilla Public License, Version 1.1",
             "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
@@ -543,7 +534,10 @@
             "MPLv1.1",
             "MOZILLA PUBLIC LICENSE 1.1",
             "MOZILLA PUBLIC LICENSE Version 1.1",
-            "Mozilla Public License (MPL) version 1.1"
+            "Mozilla Public License (MPL) version 1.1",
+            "scancode:dpl-1.1",
+            "scancode:monetdb-1.1",
+            "osi:MPL-1.1"
         ],
         "__impliedComments": [
             [
@@ -1262,10 +1256,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Mozilla Public License 1.1",
-                        "MPL-1.1",
-                        "scancode:dpl-1.1",
-                        "scancode:monetdb-1.1",
-                        "osi:MPL-1.1"
+                        "MPL-1.1"
                     ],
                     "__impliedId": "MPL-1.1",
                     "__impliedAmbiguousNames": [
@@ -1276,7 +1267,10 @@
                         "MPLv1.1",
                         "MOZILLA PUBLIC LICENSE 1.1",
                         "MOZILLA PUBLIC LICENSE Version 1.1",
-                        "Mozilla Public License (MPL) version 1.1"
+                        "Mozilla Public License (MPL) version 1.1",
+                        "scancode:dpl-1.1",
+                        "scancode:monetdb-1.1",
+                        "osi:MPL-1.1"
                     ],
                     "__impliedComments": [
                         [

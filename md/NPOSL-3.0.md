@@ -6,12 +6,6 @@
 
 -   `NPOSL 3.0`
 
--   `scancode:nosl-3.0`
-
--   `osi:NPOSL-3.0`
-
--   `osi:NOSL3.0`
-
 -   `nosl3.0`
 
 -   `The Non-Profit Open Software License, Version 3.0`
@@ -166,9 +160,6 @@
             "NPOSL-3.0",
             "Non-Profit Open Software License 3.0",
             "NPOSL 3.0",
-            "scancode:nosl-3.0",
-            "osi:NPOSL-3.0",
-            "osi:NOSL3.0",
             "nosl3.0",
             "The Non-Profit Open Software License, Version 3.0",
             "scancode://nosl-3.0",
@@ -179,7 +170,10 @@
             "Non-Profit Open Software License",
             "NPOSL, Version 3.0",
             "NPOSL, 3.0",
-            "Non-Profit Open Software License 3.0"
+            "Non-Profit Open Software License 3.0",
+            "scancode:nosl-3.0",
+            "osi:NPOSL-3.0",
+            "osi:NOSL3.0"
         ],
         "__impliedComments": [
             [
@@ -376,16 +370,16 @@
                 "_implications": {
                     "__impliedNames": [
                         "NPOSL 3.0",
-                        "NPOSL-3.0",
-                        "scancode:nosl-3.0",
-                        "osi:NPOSL-3.0",
-                        "osi:NOSL3.0"
+                        "NPOSL-3.0"
                     ],
                     "__impliedId": "NPOSL-3.0",
                     "__impliedAmbiguousNames": [
                         "NPOSL, Version 3.0",
                         "NPOSL, 3.0",
-                        "Non-Profit Open Software License 3.0"
+                        "Non-Profit Open Software License 3.0",
+                        "scancode:nosl-3.0",
+                        "osi:NPOSL-3.0",
+                        "osi:NOSL3.0"
                     ],
                     "__impliedComments": [
                         [

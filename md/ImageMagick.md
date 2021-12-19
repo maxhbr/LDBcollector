@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:imagemagick`
-
 -   `scancode://imagemagick`
 
 ## Comments on (easy) usability
@@ -220,14 +218,14 @@
         "__impliedNames": [
             "ImageMagick",
             "ImageMagick License",
-            "scancode:imagemagick",
             "scancode://imagemagick"
         ],
         "__impliedId": "ImageMagick",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "ImageMagick",
-            "ImageMagick License"
+            "ImageMagick License",
+            "scancode:imagemagick"
         ],
         "__impliedComments": [
             [
@@ -642,12 +640,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "ImageMagick License",
-                        "ImageMagick",
-                        "scancode:imagemagick"
+                        "ImageMagick"
                     ],
                     "__impliedId": "ImageMagick",
                     "__impliedAmbiguousNames": [
-                        "ImageMagick License"
+                        "ImageMagick License",
+                        "scancode:imagemagick"
                     ],
                     "__impliedComments": [
                         [

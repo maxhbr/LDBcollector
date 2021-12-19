@@ -6,8 +6,6 @@
 
 -   `Netizen Open Source License 1.0`
 
--   `scancode:nosl-1.0`
-
 -   `scancode://nosl-1.0`
 
 -   `NOSL 1.0`
@@ -554,7 +552,6 @@
             "NOSL",
             "Netizen Open Source License",
             "Netizen Open Source License 1.0",
-            "scancode:nosl-1.0",
             "scancode://nosl-1.0",
             "NOSL 1.0"
         ],
@@ -562,7 +559,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "NOSL",
-            "NETIZEN OPEN SOURCE LICENSE"
+            "NETIZEN OPEN SOURCE LICENSE",
+            "scancode:nosl-1.0"
         ],
         "__impliedComments": [
             [
@@ -709,12 +707,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Netizen Open Source License 1.0",
-                        "NOSL",
-                        "scancode:nosl-1.0"
+                        "NOSL"
                     ],
                     "__impliedId": "NOSL",
                     "__impliedAmbiguousNames": [
-                        "NETIZEN OPEN SOURCE LICENSE"
+                        "NETIZEN OPEN SOURCE LICENSE",
+                        "scancode:nosl-1.0"
                     ],
                     "__impliedComments": [
                         [

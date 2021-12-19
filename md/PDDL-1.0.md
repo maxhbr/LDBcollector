@@ -6,8 +6,6 @@
 
 -   `PDDL 1.0`
 
--   `scancode:pddl-1.0`
-
 -   `Open Data Commons Public Domain Dedication and Licence 1.0`
 
 -   `ODC-PDDL-1.0`
@@ -207,7 +205,6 @@
         "__impliedNames": [
             "PDDL-1.0",
             "PDDL 1.0",
-            "scancode:pddl-1.0",
             "Open Data Commons Public Domain Dedication and Licence 1.0",
             "ODC-PDDL-1.0",
             "Open Data Commons Public Domain Dedication & License 1.0",
@@ -219,7 +216,8 @@
             "PDDL 1.0",
             "Public Domain Dedication & License",
             "http://opendatacommons.org/licenses/pddl/1-0/",
-            "https://opendatacommons.org/licenses/pddl/"
+            "https://opendatacommons.org/licenses/pddl/",
+            "scancode:pddl-1.0"
         ],
         "__impliedComments": [
             [
@@ -404,8 +402,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "PDDL 1.0",
-                        "PDDL-1.0",
-                        "scancode:pddl-1.0"
+                        "PDDL-1.0"
                     ],
                     "__impliedId": "PDDL-1.0",
                     "__impliedAmbiguousNames": [
@@ -413,7 +410,8 @@
                         "PDDL 1.0",
                         "Public Domain Dedication & License",
                         "http://opendatacommons.org/licenses/pddl/1-0/",
-                        "https://opendatacommons.org/licenses/pddl/"
+                        "https://opendatacommons.org/licenses/pddl/",
+                        "scancode:pddl-1.0"
                     ],
                     "__impliedComments": [
                         [

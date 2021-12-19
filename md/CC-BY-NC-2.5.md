@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-NC 2.5 (generic)`
 
--   `scancode:cc-by-nc-2.5`
-
 -   `scancode://cc-by-nc-2.5`
 
 ## Comments on (easy) usability
@@ -137,7 +135,6 @@
         "__impliedNames": [
             "CC-BY-NC-2.5",
             "Creative Commons BY-NC 2.5 (generic)",
-            "scancode:cc-by-nc-2.5",
             "Creative Commons Attribution Non Commercial 2.5 Generic",
             "scancode://cc-by-nc-2.5"
         ],
@@ -146,7 +143,8 @@
             "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
             "Creative Commons Attribution Non Commercial 2.5 Generic",
             "CC-BY-NC-2.5",
-            "Creative Commons Attribution-NonCommercial 2.5"
+            "Creative Commons Attribution-NonCommercial 2.5",
+            "scancode:cc-by-nc-2.5"
         ],
         "__impliedRatingState": [
             [
@@ -317,14 +315,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-NC 2.5 (generic)",
-                        "CC-BY-NC-2.5",
-                        "scancode:cc-by-nc-2.5"
+                        "CC-BY-NC-2.5"
                     ],
                     "__impliedId": "CC-BY-NC-2.5",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Non Commercial 2.5 Generic",
                         "CC-BY-NC-2.5",
-                        "Creative Commons Attribution-NonCommercial 2.5"
+                        "Creative Commons Attribution-NonCommercial 2.5",
+                        "scancode:cc-by-nc-2.5"
                     ],
                     "__impliedComments": [
                         [

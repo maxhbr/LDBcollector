@@ -13,7 +13,6 @@
 *Other Names:*
 
 * `IJG License`
-* `scancode:ijg`
 * `scancode://ijg`
 * `JPEG License`
 
@@ -186,7 +185,6 @@ repository] is generated)
         "IJG",
         "Independent JPEG Group License",
         "IJG License",
-        "scancode:ijg",
         "scancode://ijg",
         "JPEG License"
     ],
@@ -195,7 +193,8 @@ repository] is generated)
     "__impliedAmbiguousNames": [
         "IJG",
         "IJG License",
-        "IJG LICENSE"
+        "IJG LICENSE",
+        "scancode:ijg"
     ],
     "__impliedComments": [
         [
@@ -370,13 +369,13 @@ repository] is generated)
             "_implications": {
                 "__impliedNames": [
                     "IJG License",
-                    "IJG",
-                    "scancode:ijg"
+                    "IJG"
                 ],
                 "__impliedId": "IJG",
                 "__impliedAmbiguousNames": [
                     "IJG License",
-                    "IJG LICENSE"
+                    "IJG LICENSE",
+                    "scancode:ijg"
                 ],
                 "__impliedComments": [
                     [

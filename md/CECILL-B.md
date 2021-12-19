@@ -8,12 +8,6 @@
 
 -   `CECILL B License`
 
--   `scancode:cecill-b`
-
--   `CeCILL-B Free Software License (FRA)`
-
--   `CeCILL-B-FSL`
-
 -   `scancode://cecill-b`
 
 ## Comments on (easy) usability
@@ -322,10 +316,6 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CECILL-B-License.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
--   [Metaeffekt
-    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[ce]/CeCILL-B-Free-Software-License-(FRA).yaml "Metaeffekt Universe")
-    (CC-BY-4.0)
-
 -   [SPDX](https://spdx.org/licenses/CECILL-B.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -340,9 +330,6 @@
             "CeCILL-B Free Software License Agreement",
             "CeCILL-B License",
             "CECILL B License",
-            "scancode:cecill-b",
-            "CeCILL-B Free Software License (FRA)",
-            "CeCILL-B-FSL",
             "scancode://cecill-b"
         ],
         "__impliedId": "CECILL-B",
@@ -356,7 +343,7 @@
             "CeCILL-B Free Software License Agreement",
             "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
             "https://spdx.org/licenses/cecill-b",
-            "`CECILL-B` - [CEA CNRS INRIA Logiciel Libre](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt)"
+            "scancode:cecill-b"
         ],
         "__impliedComments": [
             [
@@ -534,8 +521,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "CECILL B License",
-                        "CECILL-B",
-                        "scancode:cecill-b"
+                        "CECILL-B"
                     ],
                     "__impliedId": "CECILL-B",
                     "__impliedAmbiguousNames": [
@@ -545,7 +531,8 @@
                         "CeCILL-B FREE SOFTWARE LICENSE AGREEMENT Notice",
                         "CeCILL-B Free Software License Agreement",
                         "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
-                        "https://spdx.org/licenses/cecill-b"
+                        "https://spdx.org/licenses/cecill-b",
+                        "scancode:cecill-b"
                     ],
                     "__impliedComments": [
                         [

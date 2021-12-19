@@ -6,8 +6,6 @@
 
 -   `Creative Commons BY-NC-ND 2.5`
 
--   `scancode:cc-by-nc-nd-2.5`
-
 -   `Creative Commons Attribution-NoDerivs 2.5 Generic`
 
 -   `scancode://cc-by-nc-nd-2.5`
@@ -198,7 +196,6 @@
         "__impliedNames": [
             "CC-BY-NC-ND-2.5",
             "Creative Commons BY-NC-ND 2.5",
-            "scancode:cc-by-nc-nd-2.5",
             "Creative Commons Attribution-NoDerivs 2.5 Generic",
             "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
             "scancode://cc-by-nc-nd-2.5"
@@ -208,7 +205,8 @@
             "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)",
             "Creative Commons Attribution Non Commercial No Derivatives 2.5",
             "CC-BY-NC-ND-2.5",
-            "Creative Commons Attribution-NonCommercial-NoDerivs 2.5"
+            "Creative Commons Attribution-NonCommercial-NoDerivs 2.5",
+            "scancode:cc-by-nc-nd-2.5"
         ],
         "__impliedRatingState": [
             [
@@ -529,14 +527,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Creative Commons BY-NC-ND 2.5",
-                        "CC-BY-NC-ND-2.5",
-                        "scancode:cc-by-nc-nd-2.5"
+                        "CC-BY-NC-ND-2.5"
                     ],
                     "__impliedId": "CC-BY-NC-ND-2.5",
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Non Commercial No Derivatives 2.5",
                         "CC-BY-NC-ND-2.5",
-                        "Creative Commons Attribution-NonCommercial-NoDerivs 2.5"
+                        "Creative Commons Attribution-NonCommercial-NoDerivs 2.5",
+                        "scancode:cc-by-nc-nd-2.5"
                     ],
                     "__impliedComments": [
                         [

@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:osl-1.0`
-
--   `osi:OSL-1.0`
-
 -   `Open Software License, Version 1.0`
 
 -   `scancode://osl-1.0`
@@ -281,8 +277,6 @@
         "__impliedNames": [
             "OSL-1.0",
             "Open Software License 1.0",
-            "scancode:osl-1.0",
-            "osi:OSL-1.0",
             "Open Software License, Version 1.0",
             "scancode://osl-1.0",
             "OSL 1.0"
@@ -294,7 +288,9 @@
             "OSL 1.0",
             "OSL, Version 1.0",
             "Open Software License v. 1.0",
-            "Open Software License version 1.0"
+            "Open Software License version 1.0",
+            "scancode:osl-1.0",
+            "osi:OSL-1.0"
         ],
         "__impliedComments": [
             [
@@ -511,16 +507,16 @@
                 "_implications": {
                     "__impliedNames": [
                         "Open Software License 1.0",
-                        "OSL-1.0",
-                        "scancode:osl-1.0",
-                        "osi:OSL-1.0"
+                        "OSL-1.0"
                     ],
                     "__impliedId": "OSL-1.0",
                     "__impliedAmbiguousNames": [
                         "OSL, Version 1.0",
                         "OSL 1.0",
                         "Open Software License v. 1.0",
-                        "Open Software License version 1.0"
+                        "Open Software License version 1.0",
+                        "scancode:osl-1.0",
+                        "osi:OSL-1.0"
                     ],
                     "__impliedComments": [
                         [

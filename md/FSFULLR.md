@@ -6,8 +6,6 @@
 
 -   `FSF Unlimited License (with retention)`
 
--   `scancode:fsf-unlimited`
-
 -   `scancode://fsf-unlimited`
 
 -   `FSF-Unlimited`
@@ -77,7 +75,6 @@
             "FSFULLR",
             "FSF Unlimited License (with License Retention)",
             "FSF Unlimited License (with retention)",
-            "scancode:fsf-unlimited",
             "scancode://fsf-unlimited",
             "FSF-Unlimited"
         ],
@@ -85,7 +82,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "FSFULLR",
-            "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
+            "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it",
+            "scancode:fsf-unlimited"
         ],
         "__impliedComments": [
             [
@@ -216,12 +214,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "FSF Unlimited License (with retention)",
-                        "FSFULLR",
-                        "scancode:fsf-unlimited"
+                        "FSFULLR"
                     ],
                     "__impliedId": "FSFULLR",
                     "__impliedAmbiguousNames": [
-                        "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"
+                        "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it",
+                        "scancode:fsf-unlimited"
                     ],
                     "__impliedComments": [
                         [

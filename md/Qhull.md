@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:qhull`
-
 -   `scancode://qhull`
 
 ## Comments on (easy) usability
@@ -106,13 +104,13 @@
         "__impliedNames": [
             "Qhull",
             "Qhull License",
-            "scancode:qhull",
             "scancode://qhull"
         ],
         "__impliedId": "Qhull",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Qhull"
+            "Qhull",
+            "scancode:qhull"
         ],
         "__impliedComments": [
             [
@@ -258,11 +256,12 @@
                     "__impliedNames": [
                         "Qhull License",
                         "Qhull",
-                        "Qhull",
-                        "scancode:qhull"
+                        "Qhull"
                     ],
                     "__impliedId": "Qhull",
-                    "__impliedAmbiguousNames": [],
+                    "__impliedAmbiguousNames": [
+                        "scancode:qhull"
+                    ],
                     "__impliedComments": [
                         [
                             "Metaeffekt Universe",

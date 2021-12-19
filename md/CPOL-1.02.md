@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:cpol-1.02`
-
 -   `scancode://cpol-1.02`
 
 -   `CPOL 1.02`
@@ -247,7 +245,6 @@
         "__impliedNames": [
             "CPOL-1.02",
             "Code Project Open License 1.02",
-            "scancode:cpol-1.02",
             "scancode://cpol-1.02",
             "CPOL 1.02"
         ],
@@ -257,7 +254,8 @@
             "CPOL-1.02",
             "Code Project Open License (CPOL) 1.02",
             "CPOL, Version 1.02",
-            "CPOL 1.02"
+            "CPOL 1.02",
+            "scancode:cpol-1.02"
         ],
         "__impliedComments": [
             [
@@ -664,8 +662,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Code Project Open License 1.02",
-                        "CPOL-1.02",
-                        "scancode:cpol-1.02"
+                        "CPOL-1.02"
                     ],
                     "__impliedId": "CPOL-1.02",
                     "__impliedAmbiguousNames": [
@@ -673,7 +670,8 @@
                         "CPOL-1.02",
                         "Code Project Open License (CPOL) 1.02",
                         "CPOL, Version 1.02",
-                        "CPOL 1.02"
+                        "CPOL 1.02",
+                        "scancode:cpol-1.02"
                     ],
                     "__impliedComments": [
                         [

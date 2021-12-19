@@ -6,8 +6,6 @@
 
 -   `Unicode DFS License 2016`
 
--   `scancode:unicode-dfs-2016`
-
 -   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE`
 
 -   `scancode://unicode-dfs-2016`
@@ -160,7 +158,6 @@
             "Unicode-DFS-2016",
             "Unicode License Agreement - Data Files and Software (2016)",
             "Unicode DFS License 2016",
-            "scancode:unicode-dfs-2016",
             "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE",
             "scancode://unicode-dfs-2016",
             "Unicode DFS 2016"
@@ -174,7 +171,8 @@
             "Unicode DFS License, Version 2016",
             "Unicode DFS License, 2016",
             "Unicode-DFS License, Version 2016",
-            "Unicode-DFS License, 2016"
+            "Unicode-DFS License, 2016",
+            "scancode:unicode-dfs-2016"
         ],
         "__impliedComments": [
             [
@@ -328,8 +326,7 @@
                 "_implications": {
                     "__impliedNames": [
                         "Unicode DFS License 2016",
-                        "Unicode-DFS-2016",
-                        "scancode:unicode-dfs-2016"
+                        "Unicode-DFS-2016"
                     ],
                     "__impliedId": "Unicode-DFS-2016",
                     "__impliedAmbiguousNames": [
@@ -340,7 +337,8 @@
                         "Unicode DFS License, Version 2016",
                         "Unicode DFS License, 2016",
                         "Unicode-DFS License, Version 2016",
-                        "Unicode-DFS License, 2016"
+                        "Unicode-DFS License, 2016",
+                        "scancode:unicode-dfs-2016"
                     ],
                     "__impliedComments": [
                         [

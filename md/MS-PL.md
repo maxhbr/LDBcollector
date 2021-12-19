@@ -4,10 +4,6 @@
 
 **Other Names:**
 
--   `scancode:ms-pl`
-
--   `osi:MS-PL`
-
 -   `Microsoft Public License (MS-PL)`
 
 -   `scancode://ms-pl`
@@ -326,8 +322,6 @@
             "MS-PL",
             "Microsoft Public License",
             "ms-pl",
-            "scancode:ms-pl",
-            "osi:MS-PL",
             "Microsoft Public License (MS-PL)",
             "Ms-PL",
             "scancode://ms-pl"
@@ -336,7 +330,9 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "MS-PL",
-            "Microsoft Public License"
+            "Microsoft Public License",
+            "scancode:ms-pl",
+            "osi:MS-PL"
         ],
         "__impliedComments": [
             [
@@ -822,14 +818,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "Microsoft Public License",
-                        "MS-PL",
-                        "scancode:ms-pl",
-                        "osi:MS-PL"
+                        "MS-PL"
                     ],
                     "__impliedId": "MS-PL",
                     "__impliedAmbiguousNames": [
                         "MS-PL",
-                        "Microsoft Public License"
+                        "Microsoft Public License",
+                        "scancode:ms-pl",
+                        "osi:MS-PL"
                     ],
                     "__impliedComments": [
                         [

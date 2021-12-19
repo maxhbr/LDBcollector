@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:mpich`
-
 -   `scancode://mpich`
 
 -   `MPICH License`
@@ -117,7 +115,6 @@
         "__impliedNames": [
             "mpich2",
             "mpich2 License",
-            "scancode:mpich",
             "scancode://mpich",
             "MPICH License"
         ],
@@ -127,7 +124,8 @@
             "MIT",
             "mpich2 License",
             "MPICH2 LICENSE",
-            "MPICH2 License"
+            "MPICH2 License",
+            "scancode:mpich"
         ],
         "__impliedComments": [
             [
@@ -280,14 +278,14 @@
                 "_implications": {
                     "__impliedNames": [
                         "mpich2 License",
-                        "mpich2",
-                        "scancode:mpich"
+                        "mpich2"
                     ],
                     "__impliedId": "mpich2",
                     "__impliedAmbiguousNames": [
                         "mpich2 License",
                         "MPICH2 LICENSE",
-                        "MPICH2 License"
+                        "MPICH2 License",
+                        "scancode:mpich"
                     ],
                     "__impliedComments": [
                         [

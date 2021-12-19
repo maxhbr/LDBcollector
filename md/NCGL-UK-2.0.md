@@ -4,8 +4,6 @@
 
 **Other Names:**
 
--   `scancode:ncgl-uk-2.0`
-
 -   `scancode://ncgl-uk-2.0`
 
 ## Comments on (easy) usability
@@ -128,12 +126,12 @@
         "__impliedNames": [
             "NCGL-UK-2.0",
             "Non-Commercial Government Licence",
-            "scancode:ncgl-uk-2.0",
             "scancode://ncgl-uk-2.0"
         ],
         "__impliedId": "NCGL-UK-2.0",
         "__impliedAmbiguousNames": [
-            "Non-Commercial Government Licence"
+            "Non-Commercial Government Licence",
+            "scancode:ncgl-uk-2.0"
         ],
         "__impliedComments": [
             [
@@ -239,12 +237,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Non-Commercial Government Licence",
-                        "NCGL-UK-2.0",
-                        "scancode:ncgl-uk-2.0"
+                        "NCGL-UK-2.0"
                     ],
                     "__impliedId": "NCGL-UK-2.0",
                     "__impliedAmbiguousNames": [
-                        "Non-Commercial Government Licence"
+                        "Non-Commercial Government Licence",
+                        "scancode:ncgl-uk-2.0"
                     ],
                     "__impliedComments": [
                         [
