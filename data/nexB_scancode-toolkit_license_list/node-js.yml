@@ -5,6 +5,7 @@ category: Permissive
 owner: Joyent
 homepage_url: https://raw.githubusercontent.com/nodejs/node/master/LICENSE
 notes: composite
+spdx_license_key: LicenseRef-scancode-node-js
 other_urls:
     - https://nodejs.org/en/
 minimum_coverage: 70
@@ -29,6 +30,7 @@ ignorable_copyrights:
     - copyright Joyent, Inc. and other Node contributors
     - copyrighted by Apple Computer, Inc.
     - copyrighted by Sun Microsystems Inc.
+    - copyrighted by the University of Cambridge and Google, Inc.
 ignorable_authors:
     - Eric Young (eay@cryptsoft.com)
     - Mathias Pettersson and Brian Hammond
@@ -51,6 +53,7 @@ ignorable_holders:
     - The Perl Foundation
     - Tjarda Koster
     - the Massachusetts Institute of Technology
+    - the University of Cambridge and Google, Inc.
     - the V8 project authors
 ignorable_urls:
     - http://jelloween.deviantart.com/

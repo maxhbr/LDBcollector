@@ -3,6 +3,7 @@ short_name: Agere BSD
 name: Agere Systems BSD Software license
 category: Permissive
 owner: LSI Corporation
+homepage_url: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/LICENCE.agere
 notes: |
     commonly found in Linux The driver is coverred by the following copyright
     and software license. ... license text ... The following statement from
@@ -19,6 +20,7 @@ notes: |
     firmware was developed by Agere and runs on the DISC processor embedded
     within the Hermes 1/2/2.5 Wireless MAC devices. Hope this helps. Sincerely,
     Viren Pathare Intellectual Property Licensing Manager Agere
+spdx_license_key: LicenseRef-scancode-agere-bsd
 other_urls:
     - https://github.com/mdamt/linux-firmware/blob/bf9f8648fdf1d1d63db471554781f897d219bd62/LICENCE.agere
 minimum_coverage: 80
