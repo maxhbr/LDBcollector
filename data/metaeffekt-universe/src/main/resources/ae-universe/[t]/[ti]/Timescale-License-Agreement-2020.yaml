@@ -5,5 +5,8 @@ canonicalName: "Timescale License Agreement 2020"
 category: "Timescale"
 shortName: "TSL-2020"
 
+alternativeNames:
+  - "Timescale License Agreement 2020"
+
 otherIds: 
   - "scancode:tsl-2020"

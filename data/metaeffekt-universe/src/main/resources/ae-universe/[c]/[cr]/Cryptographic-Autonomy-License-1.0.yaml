@@ -5,6 +5,9 @@ canonicalName: "Cryptographic Autonomy License 1.0"
 category: "Cryptographic Autonomy License 1.0"
 spdxIdentifier: "CAL-1.0"
 
+alternativeNames:
+  - "Cryptographic Autonomy License 1.0"
+
 otherIds: 
   - "scancode:cal-1.0"
   - "osi:CAL-1.0"

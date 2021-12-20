@@ -7,8 +7,5 @@ shortName: "Bash-gpl"
 
 type: "exception"
 
-alternativeNames:
-  - "Bash Exception (to GPL)"
-
 otherIds: 
   - "scancode:bash-exception-gpl"

@@ -5,5 +5,8 @@ canonicalName: "Acroname Brainstem Development Kit License"
 category: "Acroname Brainstem Development Kit License"
 shortName: "Acroname-BDK"
 
+alternativeNames:
+  - "Acroname Brainstem Development Kit License"
+
 otherIds: 
   - "scancode:acroname-bdk"

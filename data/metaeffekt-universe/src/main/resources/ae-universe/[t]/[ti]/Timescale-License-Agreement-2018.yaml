@@ -5,5 +5,8 @@ canonicalName: "Timescale License Agreement 2018"
 category: "Timescale"
 shortName: "TSL-2018"
 
+alternativeNames:
+  - "Timescale License Agreement 2018"
+
 otherIds: 
   - "scancode:tsl-2018"
