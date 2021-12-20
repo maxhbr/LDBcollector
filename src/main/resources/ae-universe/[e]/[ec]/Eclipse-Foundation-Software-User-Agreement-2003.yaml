@@ -5,5 +5,8 @@ canonicalName: "Eclipse Foundation Software User Agreement 2003"
 category: "Eclipse SUA"
 shortName: "Eclipse-SUA-2003"
 
+alternativeNames:
+  - "Eclipse Foundation Software User Agreement 2003"
+
 otherIds: 
   - "scancode:eclipse-sua-2003"

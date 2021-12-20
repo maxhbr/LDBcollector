@@ -5,5 +5,8 @@ canonicalName: "Splunk Software License Agreement"
 category: "Splunk Software License Agreement"
 shortName: "Splunk-SLA"
 
+alternativeNames:
+  - "Splunk Software License Agreement"
+
 otherIds: 
   - "scancode:splunk-sla"

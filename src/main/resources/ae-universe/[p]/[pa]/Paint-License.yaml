@@ -5,5 +5,8 @@ canonicalName: "Paint License"
 category: "Paint License"
 shortName: "Paint"
 
+alternativeNames:
+  - "Paint License"
+
 otherIds: 
   - "scancode:paint-net"

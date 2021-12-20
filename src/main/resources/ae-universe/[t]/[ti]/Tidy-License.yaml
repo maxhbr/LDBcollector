@@ -5,5 +5,8 @@ canonicalName: "Tidy License"
 category: "Tidy"
 spdxIdentifier: "HTMLTIDY"
 
+alternativeNames:
+  - "Tidy License"
+
 otherIds: 
   - "scancode:tidy"

@@ -7,5 +7,8 @@ shortName: "Trolltech-1.1"
 
 type: "excpetion"
 
+alternativeNames:
+  - "Trolltech Exception 1.1"
+
 otherIds: 
   - "scancode:trolltech-gpl-exception-1.1"

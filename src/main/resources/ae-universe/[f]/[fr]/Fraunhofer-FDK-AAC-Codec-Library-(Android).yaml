@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "Fraunhofer FDK AAC Codec Library (Android)"
 category: "Fraunhofer FDK AAC Codec Library"
-shortName: "Fraunhofer-FDK-AAC-Codec"
+spdxIdentifier: "FDK-AAC"
 
 alternativeNames:
   - "http://opencore-amr.git.sourceforge.net/git/gitweb.cgi?p=opencore-amr/fdk-aac;a=blob;f=NOTICE"

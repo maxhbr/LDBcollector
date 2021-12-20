@@ -5,5 +5,8 @@ canonicalName: "Unlimited Linking Exception (to LGPL)"
 category: "Unlimited Linking"
 shortName: "Unlimited-Linking-lgpl"
 
+alternativeNames:
+  - "Unlimited Linking Exception (to LGPL)"
+
 otherIds: 
   - "scancode:unlimited-linking-exception-lgpl"
