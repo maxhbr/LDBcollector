@@ -1312,7 +1312,6 @@
             "GPL version 3.0 or later",
             "GNU General Public License (GNU GPL), version 3 or later",
             "scancode:gpl-3.0-plus",
-            "osi:GPL-3.0",
             "GNU General Public License (GPLV3+)",
             "GNU General Public License, Versions 2 and 3",
             "GNU GENERAL PUBLIC LICENSE - Version 3",
@@ -1363,7 +1362,8 @@
             "gpl_v3",
             "GPL V3",
             "GNU General Public License\" .SS \"Version 3",
-            "scancode:gpl-3.0"
+            "scancode:gpl-3.0",
+            "osi:GPL-3.0"
         ],
         "__impliedComments": [
             [
@@ -2164,8 +2164,7 @@
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-3.0-(or-any-later-version).yaml",
                 "otherIds": [
-                    "scancode:gpl-3.0-plus",
-                    "osi:GPL-3.0"
+                    "scancode:gpl-3.0-plus"
                 ],
                 "canonicalName": "GNU General Public License 3.0 (or any later version)",
                 "_implications": {
@@ -2214,8 +2213,7 @@
                         "GPL version 3 or later",
                         "GPL version 3.0 or later",
                         "GNU General Public License (GNU GPL), version 3 or later",
-                        "scancode:gpl-3.0-plus",
-                        "osi:GPL-3.0"
+                        "scancode:gpl-3.0-plus"
                     ],
                     "__impliedComments": [
                         [

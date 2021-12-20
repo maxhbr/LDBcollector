@@ -1361,6 +1361,11 @@
             "license_expression": "Copyfree Open Innovation License"
         },
         {
+            "spdx_id": "COIL-1.0",
+            "comment": null,
+            "license_expression": "Copyfree Open Innovation License"
+        },
+        {
             "spdx_id": "CC-BY-NC-SA-1.0",
             "comment": null,
             "license_expression": "Creative Commons BY-NC-SA 1.0 (generic)"
@@ -7414,6 +7419,11 @@
             "spdx_id": "IBM-pibs",
             "comment": null,
             "license_expression": "IBM PowerPC Software"
+        },
+        {
+            "spdx_id": "FDK-AAC",
+            "comment": null,
+            "license_expression": "Fraunhofer FDK AAC Codec Library (Android)"
         },
         {
             "spdx_id": "FDK-AAC",

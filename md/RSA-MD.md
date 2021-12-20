@@ -91,7 +91,8 @@
             "RSA MD LICENSE",
             "RSA-MD License",
             "RSA-MD LICENSE",
-            "scancode:rsa-md5"
+            "RSA Data Security MD4",
+            "scancode:rsa-md4"
         ],
         "__impliedComments": [
             [
@@ -192,11 +193,12 @@
                     "RSA MD License",
                     "RSA MD LICENSE",
                     "RSA-MD License",
-                    "RSA-MD LICENSE"
+                    "RSA-MD LICENSE",
+                    "RSA Data Security MD4"
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[r]/[rs]/RSA-MD-License.yaml",
                 "otherIds": [
-                    "scancode:rsa-md5"
+                    "scancode:rsa-md4"
                 ],
                 "canonicalName": "RSA MD License",
                 "_implications": {
@@ -210,7 +212,8 @@
                         "RSA MD LICENSE",
                         "RSA-MD License",
                         "RSA-MD LICENSE",
-                        "scancode:rsa-md5"
+                        "RSA Data Security MD4",
+                        "scancode:rsa-md4"
                     ],
                     "__impliedComments": [
                         [

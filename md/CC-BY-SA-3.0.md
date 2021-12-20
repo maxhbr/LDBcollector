@@ -594,6 +594,7 @@
             "Creative Common Attribution-ShareAlike 3.0",
             "http://creativecommons.org/licenses/by-sa/3.0",
             "Creative Commons Attribution-Share Alike 3.0",
+            "https://creativecommons.org/licenses/by-sa/3.0/",
             "scancode:cc-by-sa-3.0"
         ],
         "__impliedComments": [
@@ -979,7 +980,8 @@
                     "Creative Commons Attribution-ShareAlike 3.0",
                     "Creative Common Attribution-ShareAlike 3.0",
                     "http://creativecommons.org/licenses/by-sa/3.0",
-                    "Creative Commons Attribution-Share Alike 3.0"
+                    "Creative Commons Attribution-Share Alike 3.0",
+                    "https://creativecommons.org/licenses/by-sa/3.0/"
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-3.0.yaml",
                 "otherIds": [
@@ -999,6 +1001,7 @@
                         "Creative Common Attribution-ShareAlike 3.0",
                         "http://creativecommons.org/licenses/by-sa/3.0",
                         "Creative Commons Attribution-Share Alike 3.0",
+                        "https://creativecommons.org/licenses/by-sa/3.0/",
                         "scancode:cc-by-sa-3.0"
                     ],
                     "__impliedComments": [

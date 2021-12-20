@@ -6,6 +6,10 @@
 
 ## General Comments
 
+-   “category: Copyfree Open Innovation License” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Copyfree-Open-Innovation-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
+
 ## URLs
 
 -   **SPDX:** https://spdx.org/licenses/COIL-1.0.json
@@ -20,6 +24,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Copyfree-Open-Innovation-License.yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/COIL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -31,6 +39,18 @@
             "Copyfree Open Innovation License"
         ],
         "__impliedId": "COIL-1.0",
+        "__impliedAmbiguousNames": [
+            "Copyfree Open Innovation License",
+            "https://coil.apotheon.org/plaintext/01.0.txt"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Copyfree Open Innovation License"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -70,6 +90,37 @@
                     ]
                 },
                 "spdxLicenseId": "COIL-1.0"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "COIL-1.0",
+                "shortName": null,
+                "category": "Copyfree Open Innovation License",
+                "alternativeNames": [
+                    "Copyfree Open Innovation License",
+                    "https://coil.apotheon.org/plaintext/01.0.txt"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Copyfree-Open-Innovation-License.yaml",
+                "otherIds": [],
+                "canonicalName": "Copyfree Open Innovation License",
+                "_implications": {
+                    "__impliedNames": [
+                        "Copyfree Open Innovation License",
+                        "COIL-1.0"
+                    ],
+                    "__impliedId": "COIL-1.0",
+                    "__impliedAmbiguousNames": [
+                        "Copyfree Open Innovation License",
+                        "https://coil.apotheon.org/plaintext/01.0.txt"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Copyfree Open Innovation License"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__isOsiApproved": false,

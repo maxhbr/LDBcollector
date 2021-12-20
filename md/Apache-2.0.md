@@ -600,6 +600,7 @@
             "http://www.apache.org/licenses/LICENSE-2.0",
             "https://www.apache.org/licenses/LICENSE-2.0",
             "http://xml.apache.org/xerces2-j/",
+            "Apache License, = = Version 2.0",
             "scancode:apache-2.0",
             "osi:Apache-2.0"
         ],
@@ -1241,7 +1242,8 @@
                     "Apache (Software) License, version 2.0",
                     "http://www.apache.org/licenses/LICENSE-2.0",
                     "https://www.apache.org/licenses/LICENSE-2.0",
-                    "http://xml.apache.org/xerces2-j/"
+                    "http://xml.apache.org/xerces2-j/",
+                    "Apache License, = = Version 2.0"
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-2.0.yaml",
                 "otherIds": [
@@ -1321,6 +1323,7 @@
                         "http://www.apache.org/licenses/LICENSE-2.0",
                         "https://www.apache.org/licenses/LICENSE-2.0",
                         "http://xml.apache.org/xerces2-j/",
+                        "Apache License, = = Version 2.0",
                         "scancode:apache-2.0",
                         "osi:Apache-2.0"
                     ],

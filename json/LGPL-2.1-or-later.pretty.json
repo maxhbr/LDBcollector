@@ -55,8 +55,8 @@
         "GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the License, or (at your option) any later version",
         "GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version",
         "GNU Lesser General Public License, V2.1 or later",
-        "scancode:lgpl-2.1-plus",
-        "osi:LGPL-2.1"
+        "GNU Lesser General Public License as ~ published by the Free Software Foundation; either version 2.1 of ~ the License, or (at your option) any later version",
+        "scancode:lgpl-2.1-plus"
     ],
     "__impliedComments": [
         [
@@ -343,12 +343,12 @@
                 "GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1, or (at your option) any later version",
                 "GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the License, or (at your option) any later version",
                 "GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version",
-                "GNU Lesser General Public License, V2.1 or later"
+                "GNU Lesser General Public License, V2.1 or later",
+                "GNU Lesser General Public License as ~ published by the Free Software Foundation; either version 2.1 of ~ the License, or (at your option) any later version"
             ],
             "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Lesser-General-Public-License-2.1-(or-any-later-version).yaml",
             "otherIds": [
-                "scancode:lgpl-2.1-plus",
-                "osi:LGPL-2.1"
+                "scancode:lgpl-2.1-plus"
             ],
             "canonicalName": "GNU Lesser General Public License 2.1 (or any later version)",
             "_implications": {
@@ -401,8 +401,8 @@
                     "GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the License, or (at your option) any later version",
                     "GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version",
                     "GNU Lesser General Public License, V2.1 or later",
-                    "scancode:lgpl-2.1-plus",
-                    "osi:LGPL-2.1"
+                    "GNU Lesser General Public License as ~ published by the Free Software Foundation; either version 2.1 of ~ the License, or (at your option) any later version",
+                    "scancode:lgpl-2.1-plus"
                 ],
                 "__impliedComments": [
                     [

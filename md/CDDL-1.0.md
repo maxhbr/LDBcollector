@@ -442,6 +442,7 @@
             "Common Development and Distribution License (CDDL), Version 1.0",
             "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
             "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved",
+            "Common Development and Distribution License, Version 1.0",
             "scancode:cddl-1.0",
             "osi:CDDL-1.0",
             "osi:cddl1"
@@ -1073,7 +1074,8 @@
                     "Common Development and Distribution Licence version 1.0 (CDDL)",
                     "Common Development and Distribution License (CDDL), Version 1.0",
                     "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
-                    "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved"
+                    "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved",
+                    "Common Development and Distribution License, Version 1.0"
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cd]/CDDL-1.0.yaml",
                 "otherIds": [
@@ -1098,6 +1100,7 @@
                         "Common Development and Distribution License (CDDL), Version 1.0",
                         "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
                         "Copyright 2000-2007 Sun Microsystems, Inc. All rights reserved",
+                        "Common Development and Distribution License, Version 1.0",
                         "scancode:cddl-1.0",
                         "osi:CDDL-1.0",
                         "osi:cddl1"

@@ -253,7 +253,8 @@ RSA-MD,RSA-MD5 License,True
 RSA-MD,RSA MD LICENSE,False
 RSA-MD,RSA-MD License,False
 RSA-MD,RSA-MD LICENSE,False
-RSA-MD,scancode:rsa-md5,False
+RSA-MD,RSA Data Security MD4,False
+RSA-MD,scancode:rsa-md4,False
 CDL-1.0,Common Documentation License 1.0,True
 CDL-1.0,scancode://acdl-1.0,True
 CDL-1.0,ACDL 1.0,True
@@ -365,6 +366,7 @@ HTMLTIDY,Tidy License,True
 HTMLTIDY,scancode://tidy,True
 HTMLTIDY,scancode:tidy,False
 COIL-1.0,Copyfree Open Innovation License,True
+COIL-1.0,https://coil.apotheon.org/plaintext/01.0.txt,False
 CC-BY-NC-SA-1.0,Creative Commons BY-NC-SA 1.0 (generic),True
 CC-BY-NC-SA-1.0,Creative Commons Attribution Non Commercial Share Alike 1.0 Generic,True
 CC-BY-NC-SA-1.0,scancode://cc-by-nc-sa-1.0,True
@@ -501,7 +503,6 @@ LGPL-3.0-only,"GNU Lesser General Public License as published by the Free Softwa
 LGPL-3.0-only,"GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",False
 LGPL-3.0-only,GNU Lesser General Public License (LGPL) version 3 or later,False
 LGPL-3.0-only,scancode:lgpl-3.0-plus,False
-LGPL-3.0-only,osi:LGPL-3.0,False
 LGPL-3.0-only,GNU General Lesser Public License (LGPL) version 3.0,False
 LGPL-3.0-only,GNU General Lesser Public License (LGPL) version 3.00,False
 LGPL-3.0-only,"GNU General Lesser Public License, Version 3.0",False
@@ -557,6 +558,7 @@ LGPL-3.0-only,"FSF Lesser GNU Public License, Version 3",False
 LGPL-3.0-only,Lesser GPL 3.0,False
 LGPL-3.0-only,"The GNU Lesser General Public License, Versions 2.1 and 3",False
 LGPL-3.0-only,scancode:lgpl-3.0,False
+LGPL-3.0-only,osi:LGPL-3.0,False
 NPOSL-3.0,Non-Profit Open Software License 3.0,True
 NPOSL-3.0,NPOSL 3.0,True
 NPOSL-3.0,nosl3.0,True
@@ -856,6 +858,7 @@ Apache-2.0,"Apache (Software) License, version 2.0",False
 Apache-2.0,http://www.apache.org/licenses/LICENSE-2.0,False
 Apache-2.0,https://www.apache.org/licenses/LICENSE-2.0,False
 Apache-2.0,http://xml.apache.org/xerces2-j/,False
+Apache-2.0,"Apache License, = = Version 2.0",False
 Apache-2.0,scancode:apache-2.0,False
 Apache-2.0,osi:Apache-2.0,False
 BSD-Source-Code,BSD Source Code Attribution,True
@@ -1085,8 +1088,8 @@ LGPL-2.1-or-later,"GNU Lesser General Public License as published by the Free So
 LGPL-2.1-or-later,"GNU Lesser General Public License as published by the Free Software Foundation, either version 2.1 of the License, or (at your option) any later version",False
 LGPL-2.1-or-later,"GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version",False
 LGPL-2.1-or-later,"GNU Lesser General Public License, V2.1 or later",False
+LGPL-2.1-or-later,"GNU Lesser General Public License as ~ published by the Free Software Foundation; either version 2.1 of ~ the License, or (at your option) any later version",False
 LGPL-2.1-or-later,scancode:lgpl-2.1-plus,False
-LGPL-2.1-or-later,osi:LGPL-2.1,False
 CC-PDDC,Creative Commons Public Domain Dedication and Certification,True
 CC-PDDC,Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification,True
 CC-PDDC,scancode://cc-pd,True
@@ -1161,6 +1164,7 @@ CPL-1.0,Common Public License (CPL) -- V1.0,False
 CPL-1.0,Common Public License - v 1.0,False
 CPL-1.0,Common Public License v1.0,False
 CPL-1.0,Common Public License version 1.0,False
+CPL-1.0,Common Public License v. 1.0,False
 CPL-1.0,scancode:cpl-0.5,False
 CPL-1.0,scancode:cpl-1.0,False
 CPL-1.0,osi:CPL-1.0,False
@@ -1222,8 +1226,6 @@ AGPL-3.0-only,General Affero Public License version 3+,False
 AGPL-3.0-only,Affero GNU Public License Version 3+,False
 AGPL-3.0-only,version 2 of the Affero General Public License,False
 AGPL-3.0-only,scancode:agpl-3.0-plus,False
-AGPL-3.0-only,scancode:agpl-2.0,False
-AGPL-3.0-only,osi:AGPL-3.0,False
 AGPL-3.0-only,GNU AFFERO GENERAL PUBLIC LICENSE v3,False
 AGPL-3.0-only,"GNU AFFERO GENERAL PUBLIC LICENSE, version 3",False
 AGPL-3.0-only,"GNU AFFERO PUBLIC LICENSE, Version 3",False
@@ -1242,6 +1244,7 @@ AGPL-3.0-only,General Affero Public License version 3,False
 AGPL-3.0-only,Affero GNU Public License Version 3,False
 AGPL-3.0-only,AGPL-3,False
 AGPL-3.0-only,scancode:agpl-3.0,False
+AGPL-3.0-only,osi:AGPL-3.0,False
 gnuplot,gnuplot License,True
 gnuplot,scancode://gnuplot,True
 gnuplot,GNUPLOT LICENSE,False
@@ -1633,7 +1636,6 @@ GPL-3.0-or-later,GPL version 3 or later,False
 GPL-3.0-or-later,GPL version 3.0 or later,False
 GPL-3.0-or-later,"GNU General Public License (GNU GPL), version 3 or later",False
 GPL-3.0-or-later,scancode:gpl-3.0-plus,False
-GPL-3.0-or-later,osi:GPL-3.0,False
 GPL-3.0-or-later,GNU General Public License (GPLV3+),False
 GPL-3.0-or-later,"GNU General Public License, Versions 2 and 3",False
 GPL-3.0-or-later,GNU GENERAL PUBLIC LICENSE - Version 3,False
@@ -1683,6 +1685,7 @@ GPL-3.0-or-later,gpl_v3,False
 GPL-3.0-or-later,GPL V3,False
 GPL-3.0-or-later,"GNU General Public License"" .SS ""Version 3",False
 GPL-3.0-or-later,scancode:gpl-3.0,False
+GPL-3.0-or-later,osi:GPL-3.0,False
 SAX-PD,SAX Public Domain Notice,True
 SAX-PD,Sax Public Domain Notice,True
 SAX-PD,scancode://sax-pd,True
@@ -1990,7 +1993,6 @@ GPL-2.0-or-later,"GNU General Public License (GPL) version 2, or any later versi
 GPL-2.0-or-later,GNU General Public License Version 2 or later,False
 GPL-2.0-or-later,GNU General Public License v2 or later,False
 GPL-2.0-or-later,GNU General Public License version 2+,False
-GPL-2.0-or-later,licensed under the terms of the GNU General Public License,False
 GPL-2.0-or-later,"GNU General Public License, Version 2.0 or any later version",False
 GPL-2.0-or-later,"GNU General Public License; either version 2 of the License, or (at your option) any later version",False
 GPL-2.0-or-later,"GNU LGP (GNU General Public License), V2 or later",False
@@ -2020,7 +2022,6 @@ GPL-2.0-or-later,"GNU General Public License as published by the Free Software F
 GPL-2.0-or-later,"GNU General Public License, either version 2 or (at your opinion) any newer version",False
 GPL-2.0-or-later,"GNU General Public License, V2 or later",False
 GPL-2.0-or-later,scancode:gpl-2.0-plus,False
-GPL-2.0-or-later,osi:GPL-2.0,False
 CECILL-2.0,CeCILL Free Software License Agreement 2.0,True
 CECILL-2.0,CeCILL Free Software License Agreement v2.0,True
 CECILL-2.0,scancode://cecill-2.0,True
@@ -2222,7 +2223,11 @@ IBM-pibs,IBM PowerPC Software,True
 IBM-pibs,IBM pibs,False
 IBM-pibs,IBM PIBS,False
 IBM-pibs,scancode:ibm-pibs,False
+FDK-AAC,Fraunhofer FDK AAC Codec Library (Android),True
 FDK-AAC,Fraunhofer FDK AAC Codec Library,True
+FDK-AAC,http://opencore-amr.git.sourceforge.net/git/gitweb.cgi?p=opencore-amr/fdk-aac;a=blob;f=NOTICE,False
+FDK-AAC,Fraunhofer FDK AAC Codec Library for Android,False
+FDK-AAC,scancode:fraunhofer-fdk-aac-codec,False
 CATOSL-1.1,Computer Associates Trusted Open Source License 1.1,True
 CATOSL-1.1,Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1),True
 CATOSL-1.1,ca-tosl1.1,True
@@ -2349,6 +2354,8 @@ BSD-2-Clause,Two-clause BSD-style license,False
 BSD-2-Clause,"BSD 2-clause ""Simplified"" License",False
 BSD-2-Clause,bsd_2,False
 BSD-2-Clause,https://www.freebsd.org/copyright/freebsd-license.html,False
+BSD-2-Clause,two-clause BSD License,False
+BSD-2-Clause,2-Clause BSD license,False
 BSD-2-Clause,scancode:bsd-simplified,False
 BSD-2-Clause,osi:BSD-2-Clause,False
 CC-BY-SA-3.0-DE,Creative Commons Attribution Share Alike 3.0 Germany,True
@@ -2464,6 +2471,7 @@ CC-BY-SA-2.0,Creative Commons Attribution Share Alike 2.0 Generic,True
 CC-BY-SA-2.0,scancode://cc-by-sa-2.0,True
 CC-BY-SA-2.0,Creative Commons Attribution Share Alike 2.0,False
 CC-BY-SA-2.0,Creative Commons Attribution-ShareAlike 2.0,False
+CC-BY-SA-2.0,http://creativecommons.org/licenses/by-sa/2.0/,False
 CC-BY-SA-2.0,scancode:cc-by-sa-2.0,False
 ZPL-1.1,Zope Public License 1.1,True
 ZPL-1.1,scancode://zpl-1.1,True
@@ -2851,6 +2859,7 @@ LGPL-2.1-only,"The GNU Lesser General Public License, Versions 2.1",False
 LGPL-2.1-only,"GNU Lesser General Public License as published by the Free Software Foundation, version 2.1",False
 LGPL-2.1-only,"This is the first released version of the Lesser GPL.  It also counts as the successor of the GNU Library Public License, version 2, hence the version number 2.1.",False
 LGPL-2.1-only,GNU Lesser Public License (LGPL) Version 2.1,False
+LGPL-2.1-only,GNU Lesser General Public License as published by the Free Software Foundation; version 2.1 of the License,False
 LGPL-2.1-only,http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html,False
 LGPL-2.1-only,https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html,False
 LGPL-2.1-only,scancode:lgpl-2.1,False
@@ -3049,8 +3058,6 @@ AGPL-3.0-or-later,General Affero Public License version 3+,False
 AGPL-3.0-or-later,Affero GNU Public License Version 3+,False
 AGPL-3.0-or-later,version 2 of the Affero General Public License,False
 AGPL-3.0-or-later,scancode:agpl-3.0-plus,False
-AGPL-3.0-or-later,scancode:agpl-2.0,False
-AGPL-3.0-or-later,osi:AGPL-3.0,False
 AGPL-3.0-or-later,GNU AFFERO GENERAL PUBLIC LICENSE v3,False
 AGPL-3.0-or-later,"GNU AFFERO GENERAL PUBLIC LICENSE, version 3",False
 AGPL-3.0-or-later,"GNU AFFERO PUBLIC LICENSE, Version 3",False
@@ -3069,6 +3076,7 @@ AGPL-3.0-or-later,General Affero Public License version 3,False
 AGPL-3.0-or-later,Affero GNU Public License Version 3,False
 AGPL-3.0-or-later,AGPL-3,False
 AGPL-3.0-or-later,scancode:agpl-3.0,False
+AGPL-3.0-or-later,osi:AGPL-3.0,False
 Beerware,Beerware License,True
 Beerware,scancode://beerware,True
 Beerware,Beer-Ware License,True
@@ -3203,10 +3211,8 @@ CDDL-1.1,scancode://cddl-1.1,True
 CDDL-1.1,Common Development and Distribution License,False
 CDDL-1.1,COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1,False
 CDDL-1.1,COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1,False
-CDDL-1.1,"Common Development and Distribution License 1.1 (""CDDL"")",False
 CDDL-1.1,COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1),False
 CDDL-1.1,https://oss.oracle.com/licenses/CDDL+GPL-1.1,False
-CDDL-1.1,Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved,False
 CDDL-1.1,scancode:cddl-1.1,False
 CC-BY-SA-3.0,Creative Commons BY-SA 3.0,True
 CC-BY-SA-3.0,Creative Commons Attribution-ShareAlike 3.0 Unported,True
@@ -3218,6 +3224,7 @@ CC-BY-SA-3.0,Creative Commons Attribution-ShareAlike 3.0,False
 CC-BY-SA-3.0,Creative Common Attribution-ShareAlike 3.0,False
 CC-BY-SA-3.0,http://creativecommons.org/licenses/by-sa/3.0,False
 CC-BY-SA-3.0,Creative Commons Attribution-Share Alike 3.0,False
+CC-BY-SA-3.0,https://creativecommons.org/licenses/by-sa/3.0/,False
 CC-BY-SA-3.0,scancode:cc-by-sa-3.0,False
 CC-BY-SA-2.1-JP,Creative Commons BY-SA 2.1 (JP),True
 CC-BY-SA-2.1-JP,Creative Commons Attribution Share Alike 2.1 Japan,True
@@ -3413,7 +3420,6 @@ LGPL-3.0-or-later,"GNU Lesser General Public License as published by the Free So
 LGPL-3.0-or-later,"GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",False
 LGPL-3.0-or-later,GNU Lesser General Public License (LGPL) version 3 or later,False
 LGPL-3.0-or-later,scancode:lgpl-3.0-plus,False
-LGPL-3.0-or-later,osi:LGPL-3.0,False
 LGPL-3.0-or-later,GNU General Lesser Public License (LGPL) version 3.0,False
 LGPL-3.0-or-later,GNU General Lesser Public License (LGPL) version 3.00,False
 LGPL-3.0-or-later,"GNU General Lesser Public License, Version 3.0",False
@@ -3469,6 +3475,7 @@ LGPL-3.0-or-later,"FSF Lesser GNU Public License, Version 3",False
 LGPL-3.0-or-later,Lesser GPL 3.0,False
 LGPL-3.0-or-later,"The GNU Lesser General Public License, Versions 2.1 and 3",False
 LGPL-3.0-or-later,scancode:lgpl-3.0,False
+LGPL-3.0-or-later,osi:LGPL-3.0,False
 SNIA,SNIA Public License 1.1,True
 SNIA,SNIA License,True
 SNIA,scancode://snia,True
@@ -3708,6 +3715,7 @@ LiLiQ-Rplus-1.1,http://opensource.org/licenses/LiLiQ-Rplus-1.1 [no longer live],
 LiLiQ-Rplus-1.1,https://www.forge.gouv.qc.ca/participez/licence-logicielle/licence-libre-du-quebec-liliq-in-english/quebec-free-and-open-source-licence-strong-reciprocity-liliq-r-v1-1/,False
 Qhull,Qhull License,True
 Qhull,scancode://qhull,True
+Qhull,www.qhull.org,False
 Qhull,scancode:qhull,False
 OCCT-PL,Open CASCADE Technology Public License,True
 OCCT-PL,OCCT PL,True
@@ -3911,7 +3919,6 @@ GPL-3.0-only,GPL version 3 or later,False
 GPL-3.0-only,GPL version 3.0 or later,False
 GPL-3.0-only,"GNU General Public License (GNU GPL), version 3 or later",False
 GPL-3.0-only,scancode:gpl-3.0-plus,False
-GPL-3.0-only,osi:GPL-3.0,False
 GPL-3.0-only,GNU General Public License (GPLV3+),False
 GPL-3.0-only,"GNU General Public License, Versions 2 and 3",False
 GPL-3.0-only,GNU GENERAL PUBLIC LICENSE - Version 3,False
@@ -3961,6 +3968,7 @@ GPL-3.0-only,gpl_v3,False
 GPL-3.0-only,GPL V3,False
 GPL-3.0-only,"GNU General Public License"" .SS ""Version 3",False
 GPL-3.0-only,scancode:gpl-3.0,False
+GPL-3.0-only,osi:GPL-3.0,False
 Zend-2.0,Zend License v2.0,True
 Zend-2.0,Zend License 2.0,True
 Zend-2.0,"Zend Engine License, Version 2.00",True

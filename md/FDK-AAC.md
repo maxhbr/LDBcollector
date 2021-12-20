@@ -2,9 +2,17 @@
 
 [TABLE]
 
+**Other Names:**
+
+-   `Fraunhofer FDK AAC Codec Library (Android)`
+
 ## Comments on (easy) usability
 
 ## General Comments
+
+-   “category: Fraunhofer FDK AAC Codec Library” (source: [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/Fraunhofer-FDK-AAC-Codec-Library-(Android).yaml "Metaeffekt Universe")
+    (CC-BY-4.0))
 
 ## URLs
 
@@ -22,6 +30,10 @@
 
 -   LicenseName
 
+-   [Metaeffekt
+    Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/Fraunhofer-FDK-AAC-Codec-Library-(Android).yaml "Metaeffekt Universe")
+    (CC-BY-4.0)
+
 -   [SPDX](https://spdx.org/licenses/FDK-AAC.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -30,9 +42,23 @@
     {
         "__impliedNames": [
             "FDK-AAC",
+            "Fraunhofer FDK AAC Codec Library (Android)",
             "Fraunhofer FDK AAC Codec Library"
         ],
         "__impliedId": "FDK-AAC",
+        "__impliedAmbiguousNames": [
+            "http://opencore-amr.git.sourceforge.net/git/gitweb.cgi?p=opencore-amr/fdk-aac;a=blob;f=NOTICE",
+            "Fraunhofer FDK AAC Codec Library for Android",
+            "scancode:fraunhofer-fdk-aac-codec"
+        ],
+        "__impliedComments": [
+            [
+                "Metaeffekt Universe",
+                [
+                    "category: Fraunhofer FDK AAC Codec Library"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -77,6 +103,40 @@
                     ]
                 },
                 "spdxLicenseId": "FDK-AAC"
+            },
+            "Metaeffekt Universe": {
+                "spdxIdentifier": "FDK-AAC",
+                "shortName": null,
+                "category": "Fraunhofer FDK AAC Codec Library",
+                "alternativeNames": [
+                    "http://opencore-amr.git.sourceforge.net/git/gitweb.cgi?p=opencore-amr/fdk-aac;a=blob;f=NOTICE",
+                    "Fraunhofer FDK AAC Codec Library for Android"
+                ],
+                "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/Fraunhofer-FDK-AAC-Codec-Library-(Android).yaml",
+                "otherIds": [
+                    "scancode:fraunhofer-fdk-aac-codec"
+                ],
+                "canonicalName": "Fraunhofer FDK AAC Codec Library (Android)",
+                "_implications": {
+                    "__impliedNames": [
+                        "Fraunhofer FDK AAC Codec Library (Android)",
+                        "FDK-AAC"
+                    ],
+                    "__impliedId": "FDK-AAC",
+                    "__impliedAmbiguousNames": [
+                        "http://opencore-amr.git.sourceforge.net/git/gitweb.cgi?p=opencore-amr/fdk-aac;a=blob;f=NOTICE",
+                        "Fraunhofer FDK AAC Codec Library for Android",
+                        "scancode:fraunhofer-fdk-aac-codec"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Metaeffekt Universe",
+                            [
+                                "category: Fraunhofer FDK AAC Codec Library"
+                            ]
+                        ]
+                    ]
+                }
             }
         },
         "__isOsiApproved": false,

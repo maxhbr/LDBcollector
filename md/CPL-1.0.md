@@ -432,6 +432,7 @@
             "Common Public License 1.0",
             "Common Public License v1.0",
             "Common Public License version 1.0",
+            "Common Public License v. 1.0",
             "scancode:cpl-0.5",
             "scancode:cpl-1.0",
             "osi:CPL-1.0"
@@ -1113,7 +1114,8 @@
                     "Common Public License - v 1.0",
                     "Common Public License 1.0",
                     "Common Public License v1.0",
-                    "Common Public License version 1.0"
+                    "Common Public License version 1.0",
+                    "Common Public License v. 1.0"
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[co]/Common-Public-License-1.0.yaml",
                 "otherIds": [
@@ -1137,6 +1139,7 @@
                         "Common Public License 1.0",
                         "Common Public License v1.0",
                         "Common Public License version 1.0",
+                        "Common Public License v. 1.0",
                         "scancode:cpl-0.5",
                         "scancode:cpl-1.0",
                         "osi:CPL-1.0"

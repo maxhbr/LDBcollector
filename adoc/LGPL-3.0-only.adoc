@@ -1042,7 +1042,6 @@ this repository] is generated)
         "GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",
         "GNU Lesser General Public License (LGPL) version 3 or later",
         "scancode:lgpl-3.0-plus",
-        "osi:LGPL-3.0",
         "GNU General Lesser Public License (LGPL) version 3.0",
         "GNU General Lesser Public License (LGPL) version 3.00",
         "GNU General Lesser Public License, Version 3.0",
@@ -1101,7 +1100,8 @@ this repository] is generated)
         "Lesser GPL 3.0",
         "The GNU Lesser General Public License, Versions 2.1 and 3",
         "LGPL-3",
-        "scancode:lgpl-3.0"
+        "scancode:lgpl-3.0",
+        "osi:LGPL-3.0"
     ],
     "__impliedComments": [
         [
@@ -2132,8 +2132,7 @@ this repository] is generated)
             ],
             "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Lesser-General-Public-License-3.0-(or-any-later-version).yaml",
             "otherIds": [
-                "scancode:lgpl-3.0-plus",
-                "osi:LGPL-3.0"
+                "scancode:lgpl-3.0-plus"
             ],
             "canonicalName": "GNU Lesser General Public License 3.0 (or any later version)",
             "_implications": {
@@ -2225,8 +2224,7 @@ this repository] is generated)
                     "GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version",
                     "GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version",
                     "GNU Lesser General Public License (LGPL) version 3 or later",
-                    "scancode:lgpl-3.0-plus",
-                    "osi:LGPL-3.0"
+                    "scancode:lgpl-3.0-plus"
                 ],
                 "__impliedComments": [
                     [

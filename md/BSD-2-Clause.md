@@ -257,6 +257,8 @@
             "bsd_2",
             "https://www.freebsd.org/copyright/freebsd-license.html",
             "FreeBSD License",
+            "two-clause BSD License",
+            "2-Clause BSD license",
             "scancode:bsd-simplified",
             "osi:BSD-2-Clause"
         ],
@@ -642,7 +644,9 @@
                     "BSD 2-clause \"Simplified\" License",
                     "bsd_2",
                     "https://www.freebsd.org/copyright/freebsd-license.html",
-                    "FreeBSD License"
+                    "FreeBSD License",
+                    "two-clause BSD License",
+                    "2-Clause BSD license"
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-2-Clause-License.yaml",
                 "otherIds": [
@@ -671,6 +675,8 @@
                         "bsd_2",
                         "https://www.freebsd.org/copyright/freebsd-license.html",
                         "FreeBSD License",
+                        "two-clause BSD License",
+                        "2-Clause BSD license",
                         "scancode:bsd-simplified",
                         "osi:BSD-2-Clause"
                     ],

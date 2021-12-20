@@ -197,6 +197,7 @@
         "__impliedId": "CAL-1.0",
         "__impliedAmbiguousNames": [
             "Cryptographic Autonomy License",
+            "Cryptographic Autonomy License 1.0",
             "scancode:cal-1.0",
             "osi:CAL-1.0"
         ],
@@ -315,7 +316,9 @@
                 "spdxIdentifier": "CAL-1.0",
                 "shortName": null,
                 "category": "Cryptographic Autonomy License 1.0",
-                "alternativeNames": [],
+                "alternativeNames": [
+                    "Cryptographic Autonomy License 1.0"
+                ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Cryptographic-Autonomy-License-1.0.yaml",
                 "otherIds": [
                     "scancode:cal-1.0",
@@ -329,6 +332,7 @@
                     ],
                     "__impliedId": "CAL-1.0",
                     "__impliedAmbiguousNames": [
+                        "Cryptographic Autonomy License 1.0",
                         "scancode:cal-1.0",
                         "osi:CAL-1.0"
                     ],

@@ -1,13 +1,13 @@
 ## Stats:
 ### Stats on Facts:
-Number of facts: 6438
+Number of facts: 6462
     BlueOak License List: 241
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 430
     Google OSS Policy: 112
     HansHammel license-compatibility-checker: 165
     Hitachi open-license: 711
-    Metaeffekt Universe: 1762
+    Metaeffekt Universe: 1786
     OSADL License Checklist: 77
     Open Knowledge International: 111
     OpenChainPolicyTemplate: 92
@@ -19,10 +19,10 @@ Number of facts: 6438
     choosealicense.com: 41
     finos/OSLC-handbook: 43
     librariesio license-compatibility: 65
-Number of clusters: 3612
+Number of clusters: 3636
 ### Stats on Licenses:
 Number of Licenses: 449
-Number of facts: 3311
+Number of facts: 3313
     BlueOak License List: 249
     Debian Free Software Guidelines: 83
     Fedora Project Wiki: 169
@@ -30,7 +30,7 @@ Number of facts: 3311
     HansHammel license-compatibility-checker: 171
     Hitachi open-license: 131
     LicenseName: 449
-    Metaeffekt Universe: 418
+    Metaeffekt Universe: 420
     OSADL License Checklist: 89
     Open Knowledge International: 92
     OpenChainPolicyTemplate: 90
@@ -47,14 +47,14 @@ Number of clusters: 462
 #### based on licenses
 Number of clusters: 449
 ### Stats on Gaps:
-Number of facts: 3705
+Number of facts: 3727
     BlueOak License List: 2
     Debian Free Software Guidelines: 5
     Fedora Project Wiki: 267
     Google OSS Policy: 2
     HansHammel license-compatibility-checker: 4
     Hitachi open-license: 585
-    Metaeffekt Universe: 1353
+    Metaeffekt Universe: 1375
     Open Knowledge International: 23
     OpenChainPolicyTemplate: 6
     OpenSourceInitiative: 4

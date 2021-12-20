@@ -110,6 +110,8 @@
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Qhull",
+            "Qhull License",
+            "www.qhull.org",
             "scancode:qhull"
         ],
         "__impliedComments": [
@@ -244,9 +246,12 @@
             },
             "Metaeffekt Universe": {
                 "spdxIdentifier": "Qhull",
-                "shortName": "Qhull",
+                "shortName": null,
                 "category": "Qhull License",
-                "alternativeNames": [],
+                "alternativeNames": [
+                    "Qhull License",
+                    "www.qhull.org"
+                ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[q]/[qh]/Qhull-License.yaml",
                 "otherIds": [
                     "scancode:qhull"
@@ -255,11 +260,12 @@
                 "_implications": {
                     "__impliedNames": [
                         "Qhull License",
-                        "Qhull",
                         "Qhull"
                     ],
                     "__impliedId": "Qhull",
                     "__impliedAmbiguousNames": [
+                        "Qhull License",
+                        "www.qhull.org",
                         "scancode:qhull"
                     ],
                     "__impliedComments": [

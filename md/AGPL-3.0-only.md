@@ -1280,8 +1280,6 @@
             "Affero GNU Public License Version 3+",
             "version 2 of the Affero General Public License",
             "scancode:agpl-3.0-plus",
-            "scancode:agpl-2.0",
-            "osi:AGPL-3.0",
             "GNU AFFERO GENERAL PUBLIC LICENSE Version 3",
             "GNU AFFERO GENERAL PUBLIC LICENSE v3",
             "GNU AFFERO GENERAL PUBLIC LICENSE, version 3",
@@ -1304,7 +1302,8 @@
             "General Affero Public License version 3",
             "Affero GNU Public License Version 3",
             "AGPL-3",
-            "scancode:agpl-3.0"
+            "scancode:agpl-3.0",
+            "osi:AGPL-3.0"
         ],
         "__impliedComments": [
             [
@@ -2128,9 +2127,7 @@
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-Affero-General-Public-License-3.0-(or-any-later-version).yaml",
                 "otherIds": [
-                    "scancode:agpl-3.0-plus",
-                    "scancode:agpl-2.0",
-                    "osi:AGPL-3.0"
+                    "scancode:agpl-3.0-plus"
                 ],
                 "canonicalName": "GNU Affero General Public License 3.0 (or any later version)",
                 "_implications": {
@@ -2171,9 +2168,7 @@
                         "General Affero Public License version 3+",
                         "Affero GNU Public License Version 3+",
                         "version 2 of the Affero General Public License",
-                        "scancode:agpl-3.0-plus",
-                        "scancode:agpl-2.0",
-                        "osi:AGPL-3.0"
+                        "scancode:agpl-3.0-plus"
                     ],
                     "__impliedComments": [
                         [

@@ -611,7 +611,6 @@
             "GNU General Public License v2 or later",
             "GNU General Public License v2.0 or later",
             "GNU General Public License version 2+",
-            "licensed under the terms of the GNU General Public License",
             "GNU General Public License, Version 2.0 or any later version",
             "GNU General Public License; either version 2 of the License, or (at your option) any later version",
             "GNU LGP (GNU General Public License), V2 or later",
@@ -643,8 +642,7 @@
             "GNU General Public License as published by the Free Software Foundation (the \"GPL\"); either version 2 of the GPL, or (at your option) any later version",
             "GNU General Public License, either version 2 or (at your opinion) any newer version",
             "GNU General Public License, V2 or later",
-            "scancode:gpl-2.0-plus",
-            "osi:GPL-2.0"
+            "scancode:gpl-2.0-plus"
         ],
         "__impliedComments": [
             [
@@ -920,7 +918,6 @@
                     "GNU General Public License v2 or later",
                     "GNU General Public License v2.0 or later",
                     "GNU General Public License version 2+",
-                    "licensed under the terms of the GNU General Public License",
                     "GNU General Public License, Version 2.0 or any later version",
                     "GNU General Public License; either version 2 of the License, or (at your option) any later version",
                     "GNU LGP (GNU General Public License), V2 or later",
@@ -955,8 +952,7 @@
                 ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[g]/[gn]/GNU-General-Public-License-2.0-(or-any-later-version).yaml",
                 "otherIds": [
-                    "scancode:gpl-2.0-plus",
-                    "osi:GPL-2.0"
+                    "scancode:gpl-2.0-plus"
                 ],
                 "canonicalName": "GNU General Public License 2.0 (or any later version)",
                 "_implications": {
@@ -973,7 +969,6 @@
                         "GNU General Public License v2 or later",
                         "GNU General Public License v2.0 or later",
                         "GNU General Public License version 2+",
-                        "licensed under the terms of the GNU General Public License",
                         "GNU General Public License, Version 2.0 or any later version",
                         "GNU General Public License; either version 2 of the License, or (at your option) any later version",
                         "GNU LGP (GNU General Public License), V2 or later",
@@ -1005,8 +1000,7 @@
                         "GNU General Public License as published by the Free Software Foundation (the \"GPL\"); either version 2 of the GPL, or (at your option) any later version",
                         "GNU General Public License, either version 2 or (at your opinion) any newer version",
                         "GNU General Public License, V2 or later",
-                        "scancode:gpl-2.0-plus",
-                        "osi:GPL-2.0"
+                        "scancode:gpl-2.0-plus"
                     ],
                     "__impliedComments": [
                         [

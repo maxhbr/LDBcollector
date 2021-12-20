@@ -1068,6 +1068,7 @@
           "GNU Lesser General Public License as published by the Free Software Foundation, version 2.1",
           "This is the first released version of the Lesser GPL.  It also counts as the successor of the GNU Library Public License, version 2, hence the version number 2.1.",
           "GNU Lesser Public License (LGPL) Version 2.1",
+          "GNU Lesser General Public License as published by the Free Software Foundation; version 2.1 of the License",
           "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
           "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
           "scancode:lgpl-2.1",
@@ -1807,6 +1808,7 @@
                   "GNU Lesser General Public License as published by the Free Software Foundation, version 2.1",
                   "This is the first released version of the Lesser GPL.  It also counts as the successor of the GNU Library Public License, version 2, hence the version number 2.1.",
                   "GNU Lesser Public License (LGPL) Version 2.1",
+                  "GNU Lesser General Public License as published by the Free Software Foundation; version 2.1 of the License",
                   "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
                   "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
               ],
@@ -1859,6 +1861,7 @@
                       "GNU Lesser General Public License as published by the Free Software Foundation, version 2.1",
                       "This is the first released version of the Lesser GPL.  It also counts as the successor of the GNU Library Public License, version 2, hence the version number 2.1.",
                       "GNU Lesser Public License (LGPL) Version 2.1",
+                      "GNU Lesser General Public License as published by the Free Software Foundation; version 2.1 of the License",
                       "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
                       "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
                       "scancode:lgpl-2.1",

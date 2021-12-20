@@ -95,6 +95,7 @@
         ],
         "__impliedId": "HTMLTIDY",
         "__impliedAmbiguousNames": [
+            "Tidy License",
             "scancode:tidy"
         ],
         "__impliedComments": [
@@ -186,7 +187,9 @@
                 "spdxIdentifier": "HTMLTIDY",
                 "shortName": null,
                 "category": "Tidy",
-                "alternativeNames": [],
+                "alternativeNames": [
+                    "Tidy License"
+                ],
                 "_sourceURL": "https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[t]/[ti]/Tidy-License.yaml",
                 "otherIds": [
                     "scancode:tidy"
@@ -199,6 +202,7 @@
                     ],
                     "__impliedId": "HTMLTIDY",
                     "__impliedAmbiguousNames": [
+                        "Tidy License",
                         "scancode:tidy"
                     ],
                     "__impliedComments": [
