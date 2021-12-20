@@ -3,34 +3,34 @@ Project providing insights on the metaeffekt license database.
 
 The following links provide letter-specific overviews on the license information:
 
-[3](src/main/resources/ae-universe/[3]/overview.md) -
-[4](src/main/resources/ae-universe/[4]/overview.md) -
-[a](src/main/resources/ae-universe/[a]/overview.md) -
-[b](src/main/resources/ae-universe/[b]/overview.md) -
-[c](src/main/resources/ae-universe/[c]/overview.md) -
-[d](src/main/resources/ae-universe/[d]/overview.md) -
-[e](src/main/resources/ae-universe/[e]/overview.md) -
-[f](src/main/resources/ae-universe/[f]/overview.md) -
-[g](src/main/resources/ae-universe/[g]/overview.md) -
-[h](src/main/resources/ae-universe/[h]/overview.md) -
-[i](src/main/resources/ae-universe/[i]/overview.md) -
-[j](src/main/resources/ae-universe/[j]/overview.md) -
-[k](src/main/resources/ae-universe/[k]/overview.md) -
-[l](src/main/resources/ae-universe/[l]/overview.md) -
-[m](src/main/resources/ae-universe/[m]/overview.md) -
-[n](src/main/resources/ae-universe/[n]/overview.md) -
-[o](src/main/resources/ae-universe/[o]/overview.md) -
-[p](src/main/resources/ae-universe/[p]/overview.md) -
-[q](src/main/resources/ae-universe/[q]/overview.md) -
-[r](src/main/resources/ae-universe/[r]/overview.md) -
-[s](src/main/resources/ae-universe/[s]/overview.md) -
-[t](src/main/resources/ae-universe/[t]/overview.md) -
-[u](src/main/resources/ae-universe/[u]/overview.md) -
-[v](src/main/resources/ae-universe/[v]/overview.md) -
-[w](src/main/resources/ae-universe/[w]/overview.md) -
-[x](src/main/resources/ae-universe/[x]/overview.md) -
-[y](src/main/resources/ae-universe/[y]/overview.md) -
-[z](src/main/resources/ae-universe/[z]/overview.md)
+[3](src/main/resources/ae-universe/[3]/README.md) -
+[4](src/main/resources/ae-universe/[4]/README.md) -
+[a](src/main/resources/ae-universe/[a]/README.md) -
+[b](src/main/resources/ae-universe/[b]/README.md) -
+[c](src/main/resources/ae-universe/[c]/README.md) -
+[d](src/main/resources/ae-universe/[d]/README.md) -
+[e](src/main/resources/ae-universe/[e]/README.md) -
+[f](src/main/resources/ae-universe/[f]/README.md) -
+[g](src/main/resources/ae-universe/[g]/README.md) -
+[h](src/main/resources/ae-universe/[h]/README.md) -
+[i](src/main/resources/ae-universe/[i]/README.md) -
+[j](src/main/resources/ae-universe/[j]/README.md) -
+[k](src/main/resources/ae-universe/[k]/README.md) -
+[l](src/main/resources/ae-universe/[l]/README.md) -
+[m](src/main/resources/ae-universe/[m]/README.md) -
+[n](src/main/resources/ae-universe/[n]/README.md) -
+[o](src/main/resources/ae-universe/[o]/README.md) -
+[p](src/main/resources/ae-universe/[p]/README.md) -
+[q](src/main/resources/ae-universe/[q]/README.md) -
+[r](src/main/resources/ae-universe/[r]/README.md) -
+[s](src/main/resources/ae-universe/[s]/README.md) -
+[t](src/main/resources/ae-universe/[t]/README.md) -
+[u](src/main/resources/ae-universe/[u]/README.md) -
+[v](src/main/resources/ae-universe/[v]/README.md) -
+[w](src/main/resources/ae-universe/[w]/README.md) -
+[x](src/main/resources/ae-universe/[x]/README.md) -
+[y](src/main/resources/ae-universe/[y]/README.md) -
+[z](src/main/resources/ae-universe/[z]/README.md)
 
 The yaml files within the subfolders show metadata on the individual licenses and exceptions.
 The files also contain alternative names that support the normalization of licenses and exceptions.

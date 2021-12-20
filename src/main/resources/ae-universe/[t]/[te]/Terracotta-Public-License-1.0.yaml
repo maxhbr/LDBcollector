@@ -5,5 +5,8 @@ canonicalName: "Terracotta Public License 1.0"
 category: "Terracotta Public License"
 shortName: "TPL-1.0"
 
+alternativeNames:
+  - "Terracotta Public License 1.0"
+
 otherIds: 
   - "scancode:tpl-1.0"

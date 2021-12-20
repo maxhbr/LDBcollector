@@ -7,5 +7,8 @@ shortName: "Sencha-FLOSS"
 
 type: "exception"
 
+alternativeNames:
+  - "Sencha Open Source Floss Exception (GPL 3.0)"
+
 otherIds: 
   - "scancode:sencha-app-floss-exception"

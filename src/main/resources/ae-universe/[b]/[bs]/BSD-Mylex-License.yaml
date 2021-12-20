@@ -5,5 +5,8 @@ canonicalName: "BSD Mylex License"
 category: "BSD-Mylex"
 shortName: "BSD-Mylex"
 
+alternativeNames:
+  - "BSD Mylex License"
+
 otherIds: 
   - "scancode:bsd-mylex"

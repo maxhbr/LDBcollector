@@ -5,5 +5,8 @@ canonicalName: "ZIPList5 Geocode End-User Workstation License Agreement"
 category: "ZIPList5 Geocode End-User Workstation License Agreement"
 shortName: "ZIPList5-Geocode-EULA-workstation"
 
+alternativeNames:
+  - "ZIPList5 Geocode End-User Workstation License Agreement"
+
 otherIds: 
   - "scancode:ziplist5-geocode-end-user-workstation"

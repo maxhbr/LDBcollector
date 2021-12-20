@@ -5,5 +5,8 @@ canonicalName: "BSD-InnoSys License"
 category: "BSD"
 shortName: "BSD-InnoSys"
 
+alternativeNames:
+  - "BSD-InnoSys License"
+
 otherIds: 
   - "scancode:bsd-innosys"

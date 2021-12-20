@@ -20,6 +20,7 @@ alternativeNames:
   - "GNU library license version 2"
   - "GNU Lesser/Library General Public License version 2"
   - "LGPL-2"
+  - "GNU Lesser General Public License version 2"
 
 otherIds: 
   - "scancode:lgpl-2.0"

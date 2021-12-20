@@ -5,5 +5,8 @@ canonicalName: "BSD Brian Clapper License"
 category: "BSD"
 shortName: "BSD-Brian-Clapper"
 
+alternativeNames:
+  - "BSD Brian Clapper License"
+
 otherIds: 
   - "scancode:brian-clapper"

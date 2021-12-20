@@ -20,6 +20,8 @@ alternativeNames:
   - "bsd_2"
   - "https://www.freebsd.org/copyright/freebsd-license.html"
   - "FreeBSD License"
+  - "two-clause BSD License"
+  - "2-Clause BSD license"
 
 otherIds: 
   - "scancode:bsd-simplified"

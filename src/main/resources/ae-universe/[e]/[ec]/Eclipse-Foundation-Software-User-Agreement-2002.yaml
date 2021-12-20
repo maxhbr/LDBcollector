@@ -5,5 +5,8 @@ canonicalName: "Eclipse Foundation Software User Agreement 2002"
 category: "Eclipse SUA"
 shortName: "Eclipse-SUA-2002"
 
+alternativeNames:
+  - "Eclipse Foundation Software User Agreement 2002"
+
 otherIds: 
   - "scancode:eclipse-sua-2002"

@@ -3,8 +3,11 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "Qhull License"
 category: "Qhull License"
-shortName: "Qhull"
 spdxIdentifier: "Qhull"
+
+alternativeNames:
+  - "Qhull License"
+  - "www.qhull.org"
 
 otherIds: 
   - "scancode:qhull"

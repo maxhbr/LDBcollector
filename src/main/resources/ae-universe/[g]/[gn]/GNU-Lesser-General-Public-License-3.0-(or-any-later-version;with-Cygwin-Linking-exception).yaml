@@ -5,5 +5,8 @@ canonicalName: "GNU Lesser General Public License 3.0 (or any later version; wit
 category: "LGPL+Cygwin"
 shortName: "LGPL-3.0-Cygwin-Linking"
 
+alternativeNames:
+  - "GNU Lesser General Public License 3.0 (or any later version; with Cygwin Linking exception)"
+
 otherIds: 
   - "scancode:lgpl-3.0-cygwin"

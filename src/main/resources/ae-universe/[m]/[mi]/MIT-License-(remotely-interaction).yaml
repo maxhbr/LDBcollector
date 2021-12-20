@@ -5,5 +5,8 @@ canonicalName: "MIT License (remotely interaction)"
 category: "MIT"
 shortName: "MIT-remotly-interaction"
 
+alternativeNames:
+  - "MIT License (remotely interaction)"
+
 otherIds: 
   - "scancode:saas-mit"

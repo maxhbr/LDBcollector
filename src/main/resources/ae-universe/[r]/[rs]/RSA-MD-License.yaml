@@ -10,6 +10,7 @@ alternativeNames:
   - "RSA MD LICENSE"
   - "RSA-MD License"
   - "RSA-MD LICENSE"
+  - "RSA Data Security MD4"
 
 otherIds: 
-  - "scancode:rsa-md5"
+  - "scancode:rsa-md4"

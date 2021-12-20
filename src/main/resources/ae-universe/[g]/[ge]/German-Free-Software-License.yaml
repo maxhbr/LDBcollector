@@ -5,5 +5,8 @@ canonicalName: "German Free Software License"
 category: "German Free Software License"
 shortName: "D-FSL-1.0-EN"
 
+alternativeNames:
+  - "German Free Software License"
+
 otherIds: 
   - "scancode:d-fsl-1.0-en"

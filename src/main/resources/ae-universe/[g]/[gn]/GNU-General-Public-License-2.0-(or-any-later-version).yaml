@@ -13,7 +13,6 @@ alternativeNames:
   - "GNU General Public License v2 or later"
   - "GNU General Public License v2.0 or later"
   - "GNU General Public License version 2+"
-  - "licensed under the terms of the GNU General Public License"
   - "GNU General Public License, Version 2.0 or any later version"
   - "GNU General Public License; either version 2 of the License, or (at your option) any later version"
   - "GNU LGP (GNU General Public License), V2 or later"
@@ -48,4 +47,3 @@ alternativeNames:
 
 otherIds: 
   - "scancode:gpl-2.0-plus"
-  - "osi:GPL-2.0"

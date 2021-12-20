@@ -5,5 +5,8 @@ canonicalName: "Telerik EULA"
 category: "Telerik"
 shortName: "Telerik-eula"
 
+alternativeNames:
+  - "Telerik EULA"
+
 otherIds: 
   - "scancode:telerik-eula"

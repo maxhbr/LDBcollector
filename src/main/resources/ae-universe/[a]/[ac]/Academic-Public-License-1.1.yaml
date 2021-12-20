@@ -5,5 +5,8 @@ canonicalName: "Academic Public License 1.1"
 category: "Academic Public License"
 shortName: "APL-1.1"
 
+alternativeNames:
+  - "Academic Public License 1.1"
+
 otherIds: 
   - "scancode:apl-1.1"
