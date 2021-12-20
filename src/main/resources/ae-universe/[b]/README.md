@@ -188,7 +188,7 @@
 |[BSD 4-Clause License Var006]([bs]/BSD-4-Clause-License-Var006.yaml)|BSD|BSD-4-Clause-006| | | | |terms|
 |[BSD 5-Clause License]([bs]/BSD-5-Clause-License.yaml)|BSD|BSD-5-Clause| | | [xmldb-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xmldb-1.0.LICENSE) | [apache-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.LICENSE) |terms|
 |[BSD alike]([bs]/BSD-alike.yaml)|BSD|BSD-alike| | | | |terms|
-|[BSD alike (AES)]([bs]/BSD-alike-(AES).yaml)|BSD|BSD-alike-AES| | | | [brian-gladman-3-clause](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/brian-gladman-3-clause.LICENSE) |terms|
+|[BSD alike (AES)]([bs]/BSD-alike-(AES).yaml)|BSD|BSD-alike-AES| | | | |terms|
 |[BSD alike (CORE SDI)]([bs]/BSD-alike-(CORE-SDI).yaml)|BSD|BSD-alike-core-SDI| | | | [other-permissive](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/other-permissive.LICENSE) |terms|
 |[BSD alike (display obligation)]([bs]/BSD-alike-(display-obligation).yaml)|BSD|BSD-alike-display| | | [bsd-1988](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-1988.LICENSE), [flex-2.5](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/flex-2.5.LICENSE) | [bsd-1988](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-1988.LICENSE) |terms|
 |[BSD Alike (Energy Plus)]([bs]/BSD-Alike-(Energy-Plus).yaml)|BSD|BSD-Energy-Plus| | | [energyplus-bsd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/energyplus-bsd.LICENSE) | |terms|
