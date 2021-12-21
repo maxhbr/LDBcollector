@@ -2,11 +2,13 @@
 
 * Run the script this way:
 
-      ./tsv2toml.py input.tsv $(pwd)/approved
+      ./tsv2toml.py good.tsv $(pwd)/approved
 
-  The input.tsv file is the exported spreadsheet from Google.  The
-  second argument to the script is the subdirectory to store the
-  licenses.  Right now we're only writing out approved licenses.
+  The good.tsv file is the exported spreadsheet from Google with the
+  column header row removed and any summary total rows below the
+  license rows removed.  The second argument to the script is the
+  subdirectory to store the licenses.  Right now we're only writing
+  out approved licenses.
 
 * The script will display which rows caused problems and save the bad
   rows to "bad.tsv" which can be imported in to another Google

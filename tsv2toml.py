@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 #
 # Quick and Dirty script to convert license CSV file to individual TOML files.
+# And by CSV, I mean TSV because CSV from Google's spreadsheet is unusual and
+# TSV is more reliable.
 #
 # David Cantrell <dcantrell@redhat.com>
 #
@@ -13,6 +15,73 @@ import textwrap
 def usage(cmd):
     print("Usage: %s [tsv file] [output dir]" % os.path.basename(cmd))
 
+def write_licenses(outdir, licenses):
+    if not os.path.isdir(outdir):
+        os.makedirs(outdir, exist_ok=True)
+
+    for license in licenses.keys():
+        entry = licenses[license]
+        output_file = os.path.join(outdir, license.replace(" ", "_") + ".toml")
+
+        # write output file
+        o = open(output_file, "w")
+        o.write("[license]\n\n")
+        o.write("expression = \"%s\"\n" % license)
+        o.write("status = \"approved\"\n")
+
+        if entry["text"] != "":
+            entry["text"] = entry["text"].strip()
+            o.write("\ntext = '''\n")
+            o.write("\n".join(textwrap.wrap(entry["text"], width=80)))
+            o.write("\n'''\n")
+
+        if "fedora_names" in entry.keys() or "fedora_abbrev" in entry.keys() or "fedora_notes" in entry.keys():
+            o.write("\n[fedora]\n\n")
+            have = False
+
+            if "fedora_names" in entry.keys() and entry["fedora_names"] != []:
+                o.write("name = [\n")
+                i = 1
+
+                for name in entry["fedora_names"]:
+                    o.write("    \"%s\"" % name)
+
+                    if i < len(entry["fedora_names"]):
+                        o.write(",\n")
+
+                    i += 1
+
+                o.write("\n]\n")
+                have = True
+
+            if "fedora_abbrev" in entry.keys() and entry["fedora_abbrev"] != []:
+                if have:
+                    o.write("\n")
+
+                o.write("abbreviation = [\n")
+                i = 1
+
+                for abbrev in entry["fedora_abbrev"]:
+                    o.write("    \"%s\"" % abbrev)
+
+                    if i < len(entry["fedora_abbrev"]):
+                        o.write(",\n")
+
+                    i += 1
+
+                o.write("\n]\n")
+                have = True
+
+            if "fedora_notes" in entry.keys() and entry["fedora_notes"] != "":
+                if have:
+                    o.write("\n")
+
+                o.write("notes = '''\n")
+                o.write("\n".join(textwrap.wrap(entry["fedora_notes"], width=80)))
+                o.write("\n'''\n")
+
+        o.close()
+
 def write_bad_row(output, row):
     o = open(output, "a")
     o.write("\t".join(row))
@@ -21,6 +90,7 @@ def write_bad_row(output, row):
 
 if __name__ == "__main__":
     line = 1
+    licenses = {}
 
     if len(sys.argv) != 3:
         usage(sys.argv[0])
@@ -59,11 +129,6 @@ if __name__ == "__main__":
         #     7 Notes (2021)
         #     8 Fedora license URL
         #     9 Notes on license (old)
-
-        # The first row are the column headers
-        if len(row) >= 2 and row[0] == "Fedora Full Name" and row[1] == "Fedora Short Name":
-            line += 1
-            continue
 
         # get the fedora name
         if len(row) >= 1:
@@ -107,40 +172,34 @@ if __name__ == "__main__":
             line += 1
             continue
 
-        if not os.path.isdir(outdir):
-            os.makedirs(outdir, exist_ok=True)
+        # add to the licenses hash
+        entry = licenses.get(spdx_expression)
 
-        output_file = os.path.join(outdir, spdx_expression.replace(" ", "_") + ".toml")
+        if entry is None:
+            # new license entry
+            new_entry = {}
+            new_entry["text"] = text
+            new_entry["fedora_names"] = [fedora_name]
+            new_entry["fedora_abbrev"] = [fedora_abbrev]
+            new_entry["fedora_notes"] = notes
+            licenses[spdx_expression] = new_entry
+        else:
+            # existing entry, add the fedora data
+            if fedora_name not in entry["fedora_names"]:
+                entry["fedora_names"].append(fedora_name)
 
-        # write output file
-        o = open(output_file, "w")
-        o.write("[license]\n\n")
-        o.write("expression = \"%s\"\n" % spdx_expression)
-        o.write("status = \"approved\"\n")
+            if fedora_abbrev not in entry["fedora_abbrev"]:
+                entry["fedora_abbrev"].append(fedora_abbrev)
 
-        if text != "":
-            o.write("\ntext = '''\n")
-            o.write("\n".join(textwrap.wrap(text, width=80)))
-            o.write("\n'''\n")
-
-        if fedora_name != "" or fedora_abbrev != "" or notes != "":
-            o.write("\n[fedora]\n\n")
-
-            if fedora_name != "":
-                o.write("name = \"%s\"\n" % fedora_name)
-
-            if fedora_abbrev != "":
-                o.write("abbreviation = \"%s\"\n" % fedora_abbrev)
+            if text != "":
+                entry["text"] += "\n\n" + text
 
             if notes != "":
-                if fedora_name != "" or fedora_abbrev != "":
-                    o.write("\n")
+                entry["fedora_notes"] += "\n\n" + notes
 
-                o.write("notes = '''\n")
-                o.write("\n".join(textwrap.wrap(notes, width=80)))
-                o.write("\n'''\n")
-
-        o.close()
         line += 1
 
     f.close()
+
+    # write the results
+    write_licenses(outdir, licenses)

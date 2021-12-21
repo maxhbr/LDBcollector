@@ -48,13 +48,20 @@ status = ""
 # the fields in it are optional.
 #[fedora]
 
-# The name Fedora uses to refer to this license.  This field is a
-# string wrapped in double quotes.
-#name = ""
+# The names Fedora uses to refer to this license.  This field is a
+# list of strings.
+#name = [
+#    "License Full Name",
+#    "Another Name For This License"
+#]
 
-# The short abbreviation Fedora uses to represent this license in RPM
-# packages.  This field is a string wrapped in double quotes.
-#abbreviation = ""
+# The short abbreviations Fedora uses to represent this license in RPM
+# packages.  This field is a list of strings.
+#abbreviation = [
+#    "ShortName",
+#    "ShorterName",
+#    "AnotherName"
+#]
 
 # Any additional notes, history, or other information about this
 # license and its use in Fedora.  This field is a multiline literal
