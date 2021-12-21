@@ -1037,6 +1037,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # url:https://enterprise.dejacode.com/licenses/public/fsf-unlimited-no-warranty/?_list_filters=q%3Dfsf%2Bunlimited
+  - id: "LicenseRef-fsf-unlimited-no-warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "CC-BY-SA-4.0"
     categories:
       - "copyleft-strong"
@@ -1760,6 +1766,28 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # url:https://spdx.org/licenses/GPL-3.0-or-later.html
+  # url:https://spdx.org/licenses/Autoconf-exception-3.0.html
+  - id: "GPL-3.0-or-later WITH Autoconf-exception-3.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
+  # url:https://spdx.org/licenses/Libtool-exception.html
+  - id: "GPL-3.0-or-later WITH Libtool-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
   - id: "LicenseRef-GPL-2.0-or-later-with-bison-exception-2.0"
     categories:
       - "copyleft-strong"
@@ -2114,6 +2142,10 @@ categorizations:
 
   # url:https://spdx.org/licenses/Autoconf-exception-2.0.html
   - id: "Autoconf-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-Autoconf-exception"
     categories:
       - "property:AutoConf-or-other-exception"
 
