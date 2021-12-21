@@ -539,6 +539,15 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
+  # url:https://spdx.org/licenses/LGPL-3.0-only.html
+  - id: "LGPL-3.0"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
   # url:https://spdx.org/licenses/Libpng.html
   - id: "Libpng"
     categories:
@@ -1022,6 +1031,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # url:https://enterprise.dejacode.com/licenses/public/fsf-unlimited-no-warranty/?_list_filters=q%3Dfsf%2Bunlimited
+  - id: "LicenseRef-FSF-Unlimited-No-Warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "CC-BY-SA-4.0"
     categories:
       - "copyleft-strong"
@@ -1037,6 +1052,18 @@ categorizations:
       - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
+  - id: "Autoconf-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "Libtool-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "TeX-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "openvpn-openssl-exception"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1046,6 +1073,10 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   - id: "LicenseRef-scancode-warranty-disclaimer"
+    categories:
+      - "irrelevant"
+
+  - id: "NOT-public-domain"
     categories:
       - "irrelevant"
 
@@ -1645,6 +1676,24 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  # url:https://spdx.org/licenses/GPL-2.0-or-later.html
+  # url:https://spdx.org/licenses/Autoconf-exception-2.0.html
+  - id: "GPL-2.0-or-later WITH Autoconf-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # url:https://spdx.org/licenses/GPL-2.0-or-later.html
+  # url:https://spdx.org/licenses/Libtool-exception.html
+  - id: "GPL-2.0-or-later WITH Libtool-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   - id: "NewBSD"
     categories:
       - "permissive"
@@ -1691,6 +1740,10 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "Bison-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "LicenseRef-Bison-exception-2.2"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1698,6 +1751,16 @@ categorizations:
   # url:https://spdx.org/licenses/GPL-3.0-or-later.html
   # url:https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-3.0-or-later-WITH-Bison-exception-2.2"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
+  - id: "LicenseRef-GPL-2.0-or-later-with-bison-exception-2.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
@@ -1772,6 +1835,11 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-MIT-old-style-no-adv"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "Python-2.2"
     categories:
       - "property:include-in-notice-file"
@@ -1831,6 +1899,18 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  - id: "See-file.README"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "Same-license-as"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "See-file"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "See-URL"
     categories:
       - "property:unclear-scanner-finding"
@@ -1861,6 +1941,10 @@ categorizations:
       - "permissive"
 
   - id: "X11-style"
+    categories:
+      - "permissive"
+
+  - id: "X11-possibility"
     categories:
       - "permissive"
 
