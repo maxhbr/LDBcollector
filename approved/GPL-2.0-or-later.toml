@@ -4,10 +4,21 @@ expression = "GPL-2.0-or-later"
 status = "approved"
 
 text = '''
-http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+This is GPL-2.0+
 '''
 
 [fedora]
 
-name = "GNU General Public License v2.0 or later"
-abbreviation = "GPLv2+"
+name = [
+    "Creative Commons GNU GPL",
+    "GNU General Public License v2.0 or later"
+]
+
+abbreviation = [
+    "GPLv2+"
+]
+
+notes = '''
+http://creativecommons.org/choose/cc-gpl  http://www.gnu.org/licenses/old-
+licenses/gpl-2.0.html
+'''

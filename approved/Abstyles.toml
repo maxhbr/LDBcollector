@@ -4,14 +4,19 @@ expression = "Abstyles"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Abstyles
+Document License.  Meets Open Source definition.
 '''
 
 [fedora]
 
-name = "Abstyles License"
-abbreviation = "Abstyles"
+name = [
+    "Abstyles License"
+]
+
+abbreviation = [
+    "Abstyles"
+]
 
 notes = '''
-Document License.  Meets Open Source definition.
+https://fedoraproject.org/wiki/Licensing/Abstyles
 '''

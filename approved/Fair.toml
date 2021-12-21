@@ -3,11 +3,16 @@
 expression = "Fair"
 status = "approved"
 
-text = '''
-http://opensource.org/licenses/fair.php
-'''
-
 [fedora]
 
-name = "Fair License"
-abbreviation = "Fair"
+name = [
+    "Fair License"
+]
+
+abbreviation = [
+    "Fair"
+]
+
+notes = '''
+http://opensource.org/licenses/fair.php
+'''

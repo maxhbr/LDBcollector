@@ -4,14 +4,19 @@ expression = "MIT-feh"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/MIT#feh
+Slight variant to MIT license. May be one package license
 '''
 
 [fedora]
 
-name = "feh License"
-abbreviation = "MIT"
+name = [
+    "feh License"
+]
+
+abbreviation = [
+    "MIT"
+]
 
 notes = '''
-Slight variant to MIT license. May be one package license
+https://fedoraproject.org/wiki/Licensing/MIT#feh
 '''

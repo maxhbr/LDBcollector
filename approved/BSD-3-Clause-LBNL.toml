@@ -4,15 +4,20 @@ expression = "BSD-3-Clause-LBNL"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/LBNLBSD
+BSD like license with a provision at the end that makes any non licensed
+additions subject to a FOSS license
 '''
 
 [fedora]
 
-name = "Lawrence Berkeley National Labs BSD variant license"
-abbreviation = "LBNL BSD"
+name = [
+    "Lawrence Berkeley National Labs BSD variant license"
+]
+
+abbreviation = [
+    "LBNL BSD"
+]
 
 notes = '''
-BSD like license with a provision at the end that makes any non licensed
-additions subject to a FOSS license
+https://fedoraproject.org/wiki/Licensing/LBNLBSD
 '''

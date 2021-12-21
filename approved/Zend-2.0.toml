@@ -4,15 +4,20 @@ expression = "Zend-2.0"
 status = "approved"
 
 text = '''
-http://www.zend.com/license/2_00.txt
+Currently identified by fossology as "Zend-2.0", which is consistent with SPDX
+naming scheme
 '''
 
 [fedora]
 
-name = "Zend License v2.0"
-abbreviation = "Zend"
+name = [
+    "Zend License v2.0"
+]
+
+abbreviation = [
+    "Zend"
+]
 
 notes = '''
-Currently identified by fossology as "Zend-2.0", which is consistent with SPDX
-naming scheme
+http://www.zend.com/license/2_00.txt
 '''

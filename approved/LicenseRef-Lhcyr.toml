@@ -1,0 +1,22 @@
+[license]
+
+expression = "LicenseRef-Lhcyr"
+status = "approved"
+
+text = '''
+Permissive license.    old, not worth adding
+'''
+
+[fedora]
+
+name = [
+    "Lhcyr License"
+]
+
+abbreviation = [
+    "Lhcyr"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Lhcyr
+'''

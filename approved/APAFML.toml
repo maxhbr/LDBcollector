@@ -4,15 +4,20 @@ expression = "APAFML"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM
+Permissive license, specifically for Adobe AFM files  It shows up in the open
+source package iText. See http://itextpdf.com/terms-of-use/adobe.html
 '''
 
 [fedora]
 
-name = "Adobe Postscript AFM License"
-abbreviation = "APAFML"
+name = [
+    "Adobe Postscript AFM License"
+]
+
+abbreviation = [
+    "APAFML"
+]
 
 notes = '''
-Permissive license, specifically for Adobe AFM files  It shows up in the open
-source package iText. See http://itextpdf.com/terms-of-use/adobe.html
+https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM
 '''

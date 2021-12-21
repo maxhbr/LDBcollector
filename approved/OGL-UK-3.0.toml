@@ -3,15 +3,16 @@
 expression = "OGL-UK-3.0"
 status = "approved"
 
-text = '''
-http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
-'''
-
 [fedora]
 
-name = "Open Government License"
-abbreviation = "OGL"
+name = [
+    "Open Government License"
+]
+
+abbreviation = [
+    "OGL"
+]
 
 notes = '''
-SPDX uses version number and "UK" as there are other "Open Government" licenses
+http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 '''

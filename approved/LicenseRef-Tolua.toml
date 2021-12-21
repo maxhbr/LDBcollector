@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-Tolua"
+status = "approved"
+
+[fedora]
+
+name = [
+    "Tolua License"
+]
+
+abbreviation = [
+    "Tolua"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Tolua
+'''

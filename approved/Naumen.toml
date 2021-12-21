@@ -3,11 +3,16 @@
 expression = "Naumen"
 status = "approved"
 
-text = '''
-http://opensource.org/licenses/naumen.php
-'''
-
 [fedora]
 
-name = "Naumen Public License"
-abbreviation = "Naumen"
+name = [
+    "Naumen Public License"
+]
+
+abbreviation = [
+    "Naumen"
+]
+
+notes = '''
+http://opensource.org/licenses/naumen.php
+'''

@@ -1,0 +1,24 @@
+[license]
+
+expression = "LicenseRef-Logica"
+status = "approved"
+
+text = '''
+Appears to be specific to Logica code and under the laws of Ireland license
+appears here: https://github.com/OpenSmpp/opensmpp/blob/master/LICENSE_LOGICA,
+The license indicates that it has been superseded.
+'''
+
+[fedora]
+
+name = [
+    "Logica Open Source License"
+]
+
+abbreviation = [
+    "Logica"
+]
+
+notes = '''
+http://opensmpp.logica.com/CommonPart/Download/Download.htm
+'''

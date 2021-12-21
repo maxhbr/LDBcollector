@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-CRC32"
+status = "approved"
+
+[fedora]
+
+name = [
+    "CRC32 License"
+]
+
+abbreviation = [
+    "CRC32"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/CRC32
+'''

@@ -4,15 +4,20 @@ expression = "Adobe-2006"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/AdobeLicense
+Permissive license with a reverse indemnification clause.  Indemnity flows from
+Licensee to Adobe.
 '''
 
 [fedora]
 
-name = "Adobe Systems Incorporated Source Code License Agreement"
-abbreviation = "Adobe"
+name = [
+    "Adobe Systems Incorporated Source Code License Agreement"
+]
+
+abbreviation = [
+    "Adobe"
+]
 
 notes = '''
-Permissive license with a reverse indemnification clause.  Indemnity flows from
-Licensee to Adobe.
+https://fedoraproject.org/wiki/Licensing/AdobeLicense
 '''

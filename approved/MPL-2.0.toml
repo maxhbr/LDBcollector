@@ -3,11 +3,16 @@
 expression = "MPL-2.0"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/MPLv2.0
-'''
-
 [fedora]
 
-name = "Mozilla Public License v2.0"
-abbreviation = "MPLv2.0"
+name = [
+    "Mozilla Public License v2.0"
+]
+
+abbreviation = [
+    "MPLv2.0"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/MPLv2.0
+'''

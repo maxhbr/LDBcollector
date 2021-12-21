@@ -3,11 +3,16 @@
 expression = "Entessa"
 status = "approved"
 
-text = '''
-http://opensource.org/licenses/entessa.php
-'''
-
 [fedora]
 
-name = "Entessa Public License"
-abbreviation = "Entessa"
+name = [
+    "Entessa Public License"
+]
+
+abbreviation = [
+    "Entessa"
+]
+
+notes = '''
+http://opensource.org/licenses/entessa.php
+'''

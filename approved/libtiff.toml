@@ -4,14 +4,22 @@ expression = "libtiff"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/libtiff
+BSD/MIT like
 '''
 
 [fedora]
 
-name = "libtiff License"
-abbreviation = "libtiff"
+name = [
+    "libtiff License",
+    "MIT:Hylafax Variant"
+]
+
+abbreviation = [
+    "libtiff",
+    "MIT"
+]
 
 notes = '''
-BSD/MIT like
+https://fedoraproject.org/wiki/Licensing/libtiff
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant
 '''

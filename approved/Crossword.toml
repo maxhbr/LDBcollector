@@ -4,14 +4,19 @@ expression = "Crossword"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Crossword
+Permissive license. May be single package license.
 '''
 
 [fedora]
 
-name = "Crossword License"
-abbreviation = "Crossword"
+name = [
+    "Crossword License"
+]
+
+abbreviation = [
+    "Crossword"
+]
 
 notes = '''
-Permissive license. May be single package license.
+https://fedoraproject.org/wiki/Licensing/Crossword
 '''

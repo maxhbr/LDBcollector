@@ -4,14 +4,19 @@ expression = "JasPer-2.0"
 status = "approved"
 
 text = '''
-http://www.ece.uvic.ca/~mdadams/jasper/LICENSE
+MIT/BSD like
 '''
 
 [fedora]
 
-name = "JasPer License"
-abbreviation = "JasPer"
+name = [
+    "JasPer License"
+]
+
+abbreviation = [
+    "JasPer"
+]
 
 notes = '''
-MIT/BSD like
+http://www.ece.uvic.ca/~mdadams/jasper/LICENSE
 '''

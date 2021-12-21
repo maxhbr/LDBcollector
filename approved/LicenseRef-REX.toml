@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-REX"
+status = "approved"
+
+[fedora]
+
+name = [
+    "REX License"
+]
+
+abbreviation = [
+    "REX"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/REX
+'''

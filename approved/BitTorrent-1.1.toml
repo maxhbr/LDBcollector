@@ -4,14 +4,19 @@ expression = "BitTorrent-1.1"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License
+SPDX List also has BitTorrent-1.0
 '''
 
 [fedora]
 
-name = "BitTorrent License"
-abbreviation = "BitTorrent"
+name = [
+    "BitTorrent License"
+]
+
+abbreviation = [
+    "BitTorrent"
+]
 
 notes = '''
-SPDX List also has BitTorrent-1.0
+https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License
 '''

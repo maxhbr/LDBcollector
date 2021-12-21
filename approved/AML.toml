@@ -4,15 +4,20 @@ expression = "AML"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Apple_MIT_License
+MIT-like license with a provision regarding no patent grant for derivative
+works.
 '''
 
 [fedora]
 
-name = "Apple MIT License"
-abbreviation = "AML"
+name = [
+    "Apple MIT License"
+]
+
+abbreviation = [
+    "AML"
+]
 
 notes = '''
-MIT-like license with a provision regarding no patent grant for derivative
-works.
+https://fedoraproject.org/wiki/Licensing/Apple_MIT_License
 '''

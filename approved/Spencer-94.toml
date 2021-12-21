@@ -1,9 +1,0 @@
-[license]
-
-expression = "Spencer-94"
-status = "approved"
-
-[fedora]
-
-name = "Henry Spencer Reg-Ex Library License"
-abbreviation = "HSRL"

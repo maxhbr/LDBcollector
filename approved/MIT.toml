@@ -3,17 +3,17 @@
 expression = "MIT"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/MIT
-'''
-
 [fedora]
 
-name = "MIT license (also X11)"
-abbreviation = "MIT"
+name = [
+    "MIT:Modern Style with sublicense"
+]
+
+abbreviation = [
+    "MIT"
+]
 
 notes = '''
-SPDX has many of the variations accounted for; eventually would want to check
-anything tagged as MIT in Fedora and check for actual license text This link
-goes to MIT "category" page - not a specific license text
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Style_with_
+sublicense
 '''

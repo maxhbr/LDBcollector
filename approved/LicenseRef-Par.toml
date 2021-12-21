@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-Par"
+status = "approved"
+
+[fedora]
+
+name = [
+    "Par License"
+]
+
+abbreviation = [
+    "Par"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Par
+'''

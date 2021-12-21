@@ -3,11 +3,16 @@
 expression = "mpich2"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/MIT
-'''
-
 [fedora]
 
-name = "mpich2 License"
-abbreviation = "MIT"
+name = [
+    "mpich2 License"
+]
+
+abbreviation = [
+    "MIT"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/MIT
+'''

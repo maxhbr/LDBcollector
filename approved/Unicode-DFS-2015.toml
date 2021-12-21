@@ -3,11 +3,16 @@
 expression = "Unicode-DFS-2015"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Unicode
-'''
-
 [fedora]
 
-name = "Unicode License"
-abbreviation = "Unicode"
+name = [
+    "Unicode License"
+]
+
+abbreviation = [
+    "Unicode"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Unicode
+'''

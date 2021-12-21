@@ -4,14 +4,19 @@ expression = "MakeIndex"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/MakeIndex
+Strong Copyleft.
 '''
 
 [fedora]
 
-name = "MakeIndex License"
-abbreviation = "MakeIndex"
+name = [
+    "MakeIndex License"
+]
+
+abbreviation = [
+    "MakeIndex"
+]
 
 notes = '''
-Strong Copyleft.
+https://fedoraproject.org/wiki/Licensing/MakeIndex
 '''

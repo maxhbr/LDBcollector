@@ -4,14 +4,19 @@ expression = "CPL-1.0"
 status = "approved"
 
 text = '''
-http://www.eclipse.org/legal/cpl-v10.html
+SPDX short identifier adds version #
 '''
 
 [fedora]
 
-name = "Common Public License"
-abbreviation = "CPL"
+name = [
+    "Common Public License"
+]
+
+abbreviation = [
+    "CPL"
+]
 
 notes = '''
-SPDX short identifier adds version #
+http://www.eclipse.org/legal/cpl-v10.html
 '''

@@ -3,11 +3,16 @@
 expression = "Sleepycat"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Sleepycat
-'''
-
 [fedora]
 
-name = "Sleepycat Software Product License"
-abbreviation = "Sleepycat"
+name = [
+    "Sleepycat Software Product License"
+]
+
+abbreviation = [
+    "Sleepycat"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Sleepycat
+'''

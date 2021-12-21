@@ -1,0 +1,18 @@
+[license]
+
+expression = "NTP"
+status = "approved"
+
+[fedora]
+
+name = [
+    "MIT:NTP variant"
+]
+
+abbreviation = [
+    "MIT"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#NTP_variant
+'''

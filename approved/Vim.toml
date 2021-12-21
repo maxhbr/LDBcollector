@@ -3,11 +3,16 @@
 expression = "Vim"
 status = "approved"
 
-text = '''
-http://vimdoc.sourceforge.net/htmldoc/uganda.html
-'''
-
 [fedora]
 
-name = "Vim License"
-abbreviation = "Vim"
+name = [
+    "Vim License"
+]
+
+abbreviation = [
+    "Vim"
+]
+
+notes = '''
+http://vimdoc.sourceforge.net/htmldoc/uganda.html
+'''

@@ -3,11 +3,16 @@
 expression = "GPL-2.0-only"
 status = "approved"
 
-text = '''
-http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-'''
-
 [fedora]
 
-name = "GNU General Public License v2.0 only"
-abbreviation = "GPLv2"
+name = [
+    "GNU General Public License v2.0 only"
+]
+
+abbreviation = [
+    "GPLv2"
+]
+
+notes = '''
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+'''

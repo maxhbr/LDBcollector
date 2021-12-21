@@ -3,11 +3,16 @@
 expression = "xpp"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/xpp
-'''
-
 [fedora]
 
-name = "XPP License"
-abbreviation = "xpp"
+name = [
+    "XPP License"
+]
+
+abbreviation = [
+    "xpp"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/xpp
+'''

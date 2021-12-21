@@ -4,14 +4,19 @@ expression = "CPAL-1.0"
 status = "approved"
 
 text = '''
-https://www.socialtext.net/open/index.cgi?cpal_license_in_wikitext
+SPDX short identifier adds version #
 '''
 
 [fedora]
 
-name = "CPAL License 1.0"
-abbreviation = "CPAL"
+name = [
+    "CPAL License 1.0"
+]
+
+abbreviation = [
+    "CPAL"
+]
 
 notes = '''
-SPDX short identifier adds version #
+https://www.socialtext.net/open/index.cgi?cpal_license_in_wikitext
 '''

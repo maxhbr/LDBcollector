@@ -3,11 +3,16 @@
 expression = "Ruby"
 status = "approved"
 
-text = '''
-http://www.ruby-lang.org/en/LICENSE.txt
-'''
-
 [fedora]
 
-name = "Ruby License"
-abbreviation = "Ruby"
+name = [
+    "Ruby License"
+]
+
+abbreviation = [
+    "Ruby"
+]
+
+notes = '''
+http://www.ruby-lang.org/en/LICENSE.txt
+'''

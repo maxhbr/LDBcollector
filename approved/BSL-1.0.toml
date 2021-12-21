@@ -3,11 +3,19 @@
 expression = "BSL-1.0"
 status = "approved"
 
-text = '''
-http://www.boost.org/LICENSE_1_0.txt
-'''
-
 [fedora]
 
-name = "Boost Software License"
-abbreviation = "Boost"
+name = [
+    "Boost Software License",
+    "MIT:Thrift variant"
+]
+
+abbreviation = [
+    "Boost",
+    "MIT"
+]
+
+notes = '''
+http://www.boost.org/LICENSE_1_0.txt
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Thrift_variant
+'''

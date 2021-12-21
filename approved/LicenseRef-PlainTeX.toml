@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-PlainTeX"
+status = "approved"
+
+[fedora]
+
+name = [
+    "PlainTeX License"
+]
+
+abbreviation = [
+    "PlainTeX"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/PlainTeX
+'''

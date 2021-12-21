@@ -1,0 +1,22 @@
+[license]
+
+expression = "LicenseRef-DMIT"
+status = "approved"
+
+text = '''
+looks to be used by docbook project?
+'''
+
+[fedora]
+
+name = [
+    "Docbook MIT License"
+]
+
+abbreviation = [
+    "DMIT"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/DMIT
+'''

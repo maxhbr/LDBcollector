@@ -3,11 +3,16 @@
 expression = "SWL"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/SWL
-'''
-
 [fedora]
 
-name = "Scheme Widget Library (SWL) Software License Agreement"
-abbreviation = "SWL"
+name = [
+    "Scheme Widget Library (SWL) Software License Agreement"
+]
+
+abbreviation = [
+    "SWL"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/SWL
+'''

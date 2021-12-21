@@ -3,11 +3,16 @@
 expression = "NOSL"
 status = "approved"
 
-text = '''
-http://bits.netizen.com.au/licenses/NOSL/nosl.txt
-'''
-
 [fedora]
 
-name = "Netizen Open Source License"
-abbreviation = "NOSL"
+name = [
+    "Netizen Open Source License"
+]
+
+abbreviation = [
+    "NOSL"
+]
+
+notes = '''
+http://bits.netizen.com.au/licenses/NOSL/nosl.txt
+'''

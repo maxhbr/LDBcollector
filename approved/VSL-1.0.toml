@@ -3,11 +3,16 @@
 expression = "VSL-1.0"
 status = "approved"
 
-text = '''
-http://opensource.org/licenses/vovidapl.php
-'''
-
 [fedora]
 
-name = "Vovida Software License v. 1.0"
-abbreviation = "VSL"
+name = [
+    "Vovida Software License v. 1.0"
+]
+
+abbreviation = [
+    "VSL"
+]
+
+notes = '''
+http://opensource.org/licenses/vovidapl.php
+'''

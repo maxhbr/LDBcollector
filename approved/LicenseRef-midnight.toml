@@ -1,0 +1,22 @@
+[license]
+
+expression = "LicenseRef-midnight"
+status = "approved"
+
+text = '''
+FOSS license for single package
+'''
+
+[fedora]
+
+name = [
+    "midnight License"
+]
+
+abbreviation = [
+    "midnight"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/midnight
+'''

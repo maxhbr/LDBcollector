@@ -4,14 +4,19 @@ expression = "CECILL-B"
 status = "approved"
 
 text = '''
-http://www.cecill.info/licences.en.html
+SPDX List also has CECILL-1.0
 '''
 
 [fedora]
 
-name = "CeCILL-B License"
-abbreviation = "CeCILL-B"
+name = [
+    "CeCILL-B License"
+]
+
+abbreviation = [
+    "CeCILL-B"
+]
 
 notes = '''
-SPDX List also has CECILL-1.0
+http://www.cecill.info/licences.en.html
 '''

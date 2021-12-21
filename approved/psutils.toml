@@ -3,11 +3,16 @@
 expression = "psutils"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/psutils
-'''
-
 [fedora]
 
-name = "psutils License"
-abbreviation = "psutils"
+name = [
+    "psutils License"
+]
+
+abbreviation = [
+    "psutils"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/psutils
+'''

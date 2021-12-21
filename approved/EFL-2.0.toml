@@ -3,11 +3,16 @@
 expression = "EFL-2.0"
 status = "approved"
 
-text = '''
-http://www.fsf.org/licensing/licenses/eiffel-forum-license-2.html
-'''
-
 [fedora]
 
-name = "Eiffel Forum License 2.0"
-abbreviation = "EFL 2.0"
+name = [
+    "Eiffel Forum License 2.0"
+]
+
+abbreviation = [
+    "EFL 2.0"
+]
+
+notes = '''
+http://www.fsf.org/licensing/licenses/eiffel-forum-license-2.html
+'''

@@ -4,14 +4,19 @@ expression = "AMPAS"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD
+BSD variant; specifically disclaims rights to trademarks, patents, etc.
 '''
 
 [fedora]
 
-name = "Academy of Motion Picture Arts and Sciences BSD"
-abbreviation = "AMPAS BSD"
+name = [
+    "Academy of Motion Picture Arts and Sciences BSD"
+]
+
+abbreviation = [
+    "AMPAS BSD"
+]
 
 notes = '''
-BSD variant; specifically disclaims rights to trademarks, patents, etc.
+https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD
 '''

@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-RSA"
+status = "approved"
+
+[fedora]
+
+name = [
+    "RSA License"
+]
+
+abbreviation = [
+    "RSA"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/RSA
+'''

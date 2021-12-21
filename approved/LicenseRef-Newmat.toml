@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-Newmat"
+status = "approved"
+
+[fedora]
+
+name = [
+    "Newmat License"
+]
+
+abbreviation = [
+    "Newmat"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Newmat_License
+'''

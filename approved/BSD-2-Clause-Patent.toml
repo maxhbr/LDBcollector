@@ -3,11 +3,16 @@
 expression = "BSD-2-Clause-Patent"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/BSD-2-Clause-Patent
-'''
-
 [fedora]
 
-name = "BSD + Patent"
-abbreviation = "BSD-2-Clause-Patent"
+name = [
+    "BSD + Patent"
+]
+
+abbreviation = [
+    "BSD-2-Clause-Patent"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/BSD-2-Clause-Patent
+'''

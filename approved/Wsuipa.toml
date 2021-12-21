@@ -4,14 +4,19 @@ expression = "Wsuipa"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Wsuipa
+part of TEX
 '''
 
 [fedora]
 
-name = "Wsuipa License"
-abbreviation = "Wsuipa"
+name = [
+    "Wsuipa License"
+]
+
+abbreviation = [
+    "Wsuipa"
+]
 
 notes = '''
-part of TEX
+https://fedoraproject.org/wiki/Licensing/Wsuipa
 '''

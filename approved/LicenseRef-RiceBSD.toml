@@ -1,0 +1,25 @@
+[license]
+
+expression = "LicenseRef-RiceBSD"
+status = "approved"
+
+text = '''
+link is broken, license is old and no current link, also found:
+http://www.caam.rice.edu/software/ARPACK/RiceBSD.txt which appears that it was
+changed at some point to be simply a BSD-3-Clause Fedora link works now -
+license is BSD-3-Clause with an additional clause re: modifications.
+'''
+
+[fedora]
+
+name = [
+    "Rice BSD"
+]
+
+abbreviation = [
+    "RiceBSD"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Rice_BSD_License
+'''

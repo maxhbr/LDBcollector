@@ -5,5 +5,10 @@ status = "approved"
 
 [fedora]
 
-name = "GNU Lesser General Public License v2 (or 2.1) or later"
-abbreviation = "LGPLv2+"
+name = [
+    "GNU Lesser General Public License v2 (or 2.1) or later"
+]
+
+abbreviation = [
+    "LGPLv2+"
+]

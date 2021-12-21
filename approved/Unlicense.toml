@@ -3,11 +3,16 @@
 expression = "Unlicense"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Unlicense
-'''
-
 [fedora]
 
-name = "Unlicense"
-abbreviation = "Unlicense"
+name = [
+    "Unlicense"
+]
+
+abbreviation = [
+    "Unlicense"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Unlicense
+'''

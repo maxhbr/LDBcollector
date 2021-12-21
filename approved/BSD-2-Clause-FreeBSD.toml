@@ -4,14 +4,19 @@ expression = "BSD-2-Clause-FreeBSD"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD
+Fedora uses identifier, "BSD"
 '''
 
 [fedora]
 
-name = "BSD License (two clause)"
-abbreviation = "BSD"
+name = [
+    "BSD License (two clause)"
+]
+
+abbreviation = [
+    "BSD"
+]
 
 notes = '''
-Fedora uses identifier, "BSD"
+https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD
 '''

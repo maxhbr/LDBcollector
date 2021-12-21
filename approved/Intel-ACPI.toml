@@ -4,14 +4,19 @@ expression = "Intel-ACPI"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Intel_ACPI_Software_License_Agreement
+Intel specific license.
 '''
 
 [fedora]
 
-name = "Intel ACPI Software License Agreement"
-abbreviation = "Intel ACPI"
+name = [
+    "Intel ACPI Software License Agreement"
+]
+
+abbreviation = [
+    "Intel ACPI"
+]
 
 notes = '''
-Intel specific license.
+https://fedoraproject.org/wiki/Licensing/Intel_ACPI_Software_License_Agreement
 '''

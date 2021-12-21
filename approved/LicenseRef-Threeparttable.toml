@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-Threeparttable"
+status = "approved"
+
+[fedora]
+
+name = [
+    "Threeparttable License"
+]
+
+abbreviation = [
+    "Threeparttable"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Threeparttable
+'''

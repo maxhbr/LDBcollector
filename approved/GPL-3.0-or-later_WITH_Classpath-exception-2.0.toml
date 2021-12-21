@@ -3,11 +3,16 @@
 expression = "GPL-3.0-or-later WITH Classpath-exception-2.0"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
-'''
-
 [fedora]
 
-name = "GNU General Public License v3.0 or later, with Classpath exception"
-abbreviation = "GPLv3+ with exceptions"
+name = [
+    "GNU General Public License v3.0 or later, with Classpath exception"
+]
+
+abbreviation = [
+    "GPLv3+ with exceptions"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
+'''

@@ -3,11 +3,16 @@
 expression = "Qhull"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Qhull
-'''
-
 [fedora]
 
-name = "Qhull License"
-abbreviation = "Qhull"
+name = [
+    "Qhull License"
+]
+
+abbreviation = [
+    "Qhull"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Qhull
+'''

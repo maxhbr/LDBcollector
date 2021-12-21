@@ -4,15 +4,20 @@ expression = "FSFULLR"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention
-_Variant
+Permissive license.
 '''
 
 [fedora]
 
-name = "FSF Unlimited License (with License Retention)"
-abbreviation = "FSFULLR"
+name = [
+    "FSF Unlimited License (with License Retention)"
+]
+
+abbreviation = [
+    "FSFULLR"
+]
 
 notes = '''
-Permissive license.
+https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention
+_Variant
 '''

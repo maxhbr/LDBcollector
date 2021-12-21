@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-radvd"
+status = "approved"
+
+[fedora]
+
+name = [
+    "radvd License"
+]
+
+abbreviation = [
+    "radvd"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/radvd_License
+'''

@@ -4,14 +4,19 @@ expression = "DOC"
 status = "approved"
 
 text = '''
-http://www.cs.wustl.edu/~schmidt/ACE-copying.html
+Permissive license. May be single package license, but package is oft used.
 '''
 
 [fedora]
 
-name = "DOC License"
-abbreviation = "DOC"
+name = [
+    "DOC License"
+]
+
+abbreviation = [
+    "DOC"
+]
 
 notes = '''
-Permissive license. May be single package license, but package is oft used.
+http://www.cs.wustl.edu/~schmidt/ACE-copying.html
 '''

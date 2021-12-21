@@ -1,0 +1,23 @@
+[license]
+
+expression = "LicenseRef-Rsfs"
+status = "approved"
+
+text = '''
+this text is part of a longer letter and so is making a call of what is the
+license to begin with - see: http://mirror.utexas.edu/ctan/fonts/rsfs/README
+'''
+
+[fedora]
+
+name = [
+    "Rsfs License"
+]
+
+abbreviation = [
+    "Rsfs"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Rsfs
+'''

@@ -3,11 +3,16 @@
 expression = "Nokia"
 status = "approved"
 
-text = '''
-http://opensource.org/licenses/nokia.html
-'''
-
 [fedora]
 
-name = "Nokia Open Source License"
-abbreviation = "Nokia"
+name = [
+    "Nokia Open Source License"
+]
+
+abbreviation = [
+    "Nokia"
+]
+
+notes = '''
+http://opensource.org/licenses/nokia.html
+'''

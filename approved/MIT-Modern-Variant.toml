@@ -1,0 +1,18 @@
+[license]
+
+expression = "MIT-Modern-Variant"
+status = "approved"
+
+[fedora]
+
+name = [
+    "13.1Modern Variants"
+]
+
+abbreviation = [
+    "MIT"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants
+'''

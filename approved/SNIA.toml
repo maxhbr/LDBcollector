@@ -4,16 +4,21 @@ expression = "SNIA"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/SNIA_Public_License
+The reference URL given in the license text doesn't work anymore
+http://www.snia.org/smi/developers/open_source/ There is an ambiguity in the
+version number between 1.0 and 1.1
 '''
 
 [fedora]
 
-name = "SNIA Public License 1.1"
-abbreviation = "SNIA"
+name = [
+    "SNIA Public License 1.1"
+]
+
+abbreviation = [
+    "SNIA"
+]
 
 notes = '''
-The reference URL given in the license text doesn't work anymore
-http://www.snia.org/smi/developers/open_source/ There is an ambiguity in the
-version number between 1.0 and 1.1
+https://fedoraproject.org/wiki/Licensing/SNIA_Public_License
 '''

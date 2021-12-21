@@ -3,11 +3,16 @@
 expression = "Saxpath"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Saxpath_License
-'''
-
 [fedora]
 
-name = "Saxpath License"
-abbreviation = "Saxpath"
+name = [
+    "Saxpath License"
+]
+
+abbreviation = [
+    "Saxpath"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Saxpath_License
+'''

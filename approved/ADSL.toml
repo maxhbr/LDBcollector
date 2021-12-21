@@ -4,14 +4,19 @@ expression = "ADSL"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense
+Permissive license
 '''
 
 [fedora]
 
-name = "Amazon Digital Services License"
-abbreviation = "ADSL"
+name = [
+    "Amazon Digital Services License"
+]
+
+abbreviation = [
+    "ADSL"
+]
 
 notes = '''
-Permissive license
+https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense
 '''

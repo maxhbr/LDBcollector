@@ -4,14 +4,19 @@ expression = "MIT-CMU"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
+MIT/BSD variant.
 '''
 
 [fedora]
 
-name = "CMU License (BSD like)"
-abbreviation = "MIT"
+name = [
+    "CMU License (BSD like)"
+]
+
+abbreviation = [
+    "MIT"
+]
 
 notes = '''
-MIT/BSD variant.
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
 '''

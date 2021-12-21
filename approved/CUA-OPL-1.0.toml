@@ -4,14 +4,19 @@ expression = "CUA-OPL-1.0"
 status = "approved"
 
 text = '''
-http://opensource.org/licenses/cuaoffice.php
+Fedora uses short identifier, "MPLv1.1"
 '''
 
 [fedora]
 
-name = "CUA Office Public License Version 1.0"
-abbreviation = "MPLv1.1"
+name = [
+    "CUA Office Public License Version 1.0"
+]
+
+abbreviation = [
+    "MPLv1.1"
+]
 
 notes = '''
-Fedora uses short identifier, "MPLv1.1"
+http://opensource.org/licenses/cuaoffice.php
 '''

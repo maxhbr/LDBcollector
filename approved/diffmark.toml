@@ -4,15 +4,20 @@ expression = "diffmark"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/diffmark
+License text "1. you can do what you want with it 2. I refuse any responsibility
+for the consequences" May be single package license
 '''
 
 [fedora]
 
-name = "diffmark license"
-abbreviation = "diffmark"
+name = [
+    "diffmark license"
+]
+
+abbreviation = [
+    "diffmark"
+]
 
 notes = '''
-License text "1. you can do what you want with it 2. I refuse any responsibility
-for the consequences" May be single package license
+https://fedoraproject.org/wiki/Licensing/diffmark
 '''

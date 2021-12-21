@@ -1,0 +1,25 @@
+[license]
+
+expression = "LicenseRef-JPython"
+status = "approved"
+
+text = '''
+link broken, see
+https://web.archive.org/web/20160310111940/https://www.jython.org/license.html -
+stack of 3 licenses, each of which can be respresented by SPDX: PSF-2.0 AND
+BSD-3-Clause AND CNRI-Jython
+'''
+
+[fedora]
+
+name = [
+    "JPython License (old)"
+]
+
+abbreviation = [
+    "JPython"
+]
+
+notes = '''
+http://www.jython.org/license.html
+'''

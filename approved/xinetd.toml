@@ -3,11 +3,16 @@
 expression = "xinetd"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Xinetd_License
-'''
-
 [fedora]
 
-name = "xinetd License"
-abbreviation = "xinetd"
+name = [
+    "xinetd License"
+]
+
+abbreviation = [
+    "xinetd"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Xinetd_License
+'''

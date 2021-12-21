@@ -3,11 +3,16 @@
 expression = "NCSA"
 status = "approved"
 
-text = '''
-http://otm.illinois.edu/uiuc_openSource
-'''
-
 [fedora]
 
-name = "NCSA/University of Illinois Open Source License"
-abbreviation = "NCSA"
+name = [
+    "NCSA/University of Illinois Open Source License"
+]
+
+abbreviation = [
+    "NCSA"
+]
+
+notes = '''
+http://otm.illinois.edu/uiuc_openSource
+'''

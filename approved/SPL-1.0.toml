@@ -3,11 +3,16 @@
 expression = "SPL-1.0"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Sun_Public_License
-'''
-
 [fedora]
 
-name = "Sun Public License"
-abbreviation = "SPL"
+name = [
+    "Sun Public License"
+]
+
+abbreviation = [
+    "SPL"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Sun_Public_License
+'''

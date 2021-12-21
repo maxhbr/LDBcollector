@@ -4,14 +4,19 @@ expression = "Beerware"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Beerware
+Very permissive license.
 '''
 
 [fedora]
 
-name = "Beerware License"
-abbreviation = "Beerware"
+name = [
+    "Beerware License"
+]
+
+abbreviation = [
+    "Beerware"
+]
 
 notes = '''
-Very permissive license.
+https://fedoraproject.org/wiki/Licensing/Beerware
 '''

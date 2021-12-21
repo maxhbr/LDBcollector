@@ -4,15 +4,20 @@ expression = "BSD-Protection"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/BSD_Protection_License
+Copyleft license that allows for binary distribution under closed source
+license.
 '''
 
 [fedora]
 
-name = "BSD Protection License"
-abbreviation = "BSD Protection"
+name = [
+    "BSD Protection License"
+]
+
+abbreviation = [
+    "BSD Protection"
+]
 
 notes = '''
-Copyleft license that allows for binary distribution under closed source
-license.
+https://fedoraproject.org/wiki/Licensing/BSD_Protection_License
 '''

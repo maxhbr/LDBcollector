@@ -4,14 +4,19 @@ expression = "Afmparse"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Afmparse
+Permissive license
 '''
 
 [fedora]
 
-name = "Afmparse License"
-abbreviation = "Afmparse"
+name = [
+    "Afmparse License"
+]
+
+abbreviation = [
+    "Afmparse"
+]
 
 notes = '''
-Permissive license
+https://fedoraproject.org/wiki/Licensing/Afmparse
 '''

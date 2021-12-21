@@ -4,14 +4,19 @@ expression = "Bahyph"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Bahyph
+Very permissive license (may be for single product).
 '''
 
 [fedora]
 
-name = "Bahyph License"
-abbreviation = "Bahyph"
+name = [
+    "Bahyph License"
+]
+
+abbreviation = [
+    "Bahyph"
+]
 
 notes = '''
-Very permissive license (may be for single product).
+https://fedoraproject.org/wiki/Licensing/Bahyph
 '''

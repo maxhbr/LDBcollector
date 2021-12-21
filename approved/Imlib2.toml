@@ -3,11 +3,16 @@
 expression = "Imlib2"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Imlib2
-'''
-
 [fedora]
 
-name = "Imlib2 License"
-abbreviation = "Imlib2"
+name = [
+    "Imlib2 License"
+]
+
+abbreviation = [
+    "Imlib2"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Imlib2
+'''

@@ -4,14 +4,19 @@ expression = "TOSL"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/TOSL
+per Fedora, sleepycat like but one substantial difference
 '''
 
 [fedora]
 
-name = "Trusster Open Source License"
-abbreviation = "TOSL"
+name = [
+    "Trusster Open Source License"
+]
+
+abbreviation = [
+    "TOSL"
+]
 
 notes = '''
-per Fedora, sleepycat like but one substantial difference
+https://fedoraproject.org/wiki/Licensing/TOSL
 '''

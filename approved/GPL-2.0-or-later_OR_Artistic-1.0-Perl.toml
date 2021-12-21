@@ -4,16 +4,21 @@ expression = "GPL-2.0-or-later OR Artistic-1.0-Perl"
 status = "approved"
 
 text = '''
-Some perl packages explicitly state GPLv2+, only use this license for those
-cases
+this would be covered by using the short identifiers for each licnese choice
+with the "OR" operator
 '''
 
 [fedora]
 
-name = "Perl License (variant)"
-abbreviation = "GPLv2+ or Artistic"
+name = [
+    "Perl License (variant)"
+]
+
+abbreviation = [
+    "GPLv2+ or Artistic"
+]
 
 notes = '''
-this would be covered by using the short identifiers for each licnese choice
-with the "OR" operator
+Some perl packages explicitly state GPLv2+, only use this license for those
+cases
 '''

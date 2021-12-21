@@ -3,11 +3,16 @@
 expression = "EUPL-1.2"
 status = "approved"
 
-text = '''
-https://opensource.org/licenses/EUPL-1.2
-'''
-
 [fedora]
 
-name = "European Union Public License 1.2"
-abbreviation = "EUPL 1.2"
+name = [
+    "European Union Public License 1.2"
+]
+
+abbreviation = [
+    "EUPL 1.2"
+]
+
+notes = '''
+https://opensource.org/licenses/EUPL-1.2
+'''

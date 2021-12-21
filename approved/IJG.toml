@@ -3,11 +3,16 @@
 expression = "IJG"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/IJG
-'''
-
 [fedora]
 
-name = "Independent JPEG Group License"
-abbreviation = "IJG"
+name = [
+    "Independent JPEG Group License"
+]
+
+abbreviation = [
+    "IJG"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/IJG
+'''

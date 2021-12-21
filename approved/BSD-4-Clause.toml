@@ -4,17 +4,20 @@ expression = "BSD-4-Clause"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/BSD#BSDwithAdvertising
+Fedora should link to: https://fedoraproject.org/wiki/Licensing:BSD?rd=Licensing
+/BSD#Original_BSD_License_.28BSD_with_advertising.29  similar to BSD-4-Clause
 '''
 
 [fedora]
 
-name = "BSD License (Advertising Variant)"
-abbreviation = "BSD with advertising"
+name = [
+    "BSD License (Advertising Variant)"
+]
+
+abbreviation = [
+    "BSD with advertising"
+]
 
 notes = '''
-this is actually the BSD-4-Clause (Fedora records some extra stuff at top of
-file, but that is not really part of license) Fedora should link to: https://fed
-oraproject.org/wiki/Licensing:BSD?rd=Licensing/BSD#Original_BSD_License_.28BSD_w
-ith_advertising.29  similar to BSD-4-Clause
+https://fedoraproject.org/wiki/Licensing/BSD#BSDwithAdvertising
 '''

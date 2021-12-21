@@ -4,14 +4,19 @@ expression = "Dotseqn"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/Dotseqn
+Permissive license. Appears to be single file/package
 '''
 
 [fedora]
 
-name = "Dotseqn License"
-abbreviation = "Dotseqn"
+name = [
+    "Dotseqn License"
+]
+
+abbreviation = [
+    "Dotseqn"
+]
 
 notes = '''
-Permissive license. Appears to be single file/package
+https://fedoraproject.org/wiki/Licensing/Dotseqn
 '''

@@ -3,11 +3,16 @@
 expression = "TCL"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/TCL
-'''
-
 [fedora]
 
-name = "TCL/TK License"
-abbreviation = "TCL"
+name = [
+    "TCL/TK License"
+]
+
+abbreviation = [
+    "TCL"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/TCL
+'''

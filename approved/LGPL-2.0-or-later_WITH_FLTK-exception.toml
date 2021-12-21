@@ -4,14 +4,19 @@ expression = "LGPL-2.0-or-later WITH FLTK-exception"
 status = "approved"
 
 text = '''
-http://www.fltk.org/COPYING.php
+LGPLv2 with exception.
 '''
 
 [fedora]
 
-name = "FLTK License"
-abbreviation = "LGPLv2 with exceptions"
+name = [
+    "FLTK License"
+]
+
+abbreviation = [
+    "LGPLv2 with exceptions"
+]
 
 notes = '''
-LGPLv2 with exception.
+http://www.fltk.org/COPYING.php
 '''

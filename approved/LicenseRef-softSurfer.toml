@@ -1,0 +1,18 @@
+[license]
+
+expression = "LicenseRef-softSurfer"
+status = "approved"
+
+[fedora]
+
+name = [
+    "softSurfer License"
+]
+
+abbreviation = [
+    "softSurfer"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/softSurfer
+'''

@@ -3,16 +3,16 @@
 expression = "NIST-PD-fallback"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/NISTSL
-'''
-
 [fedora]
 
-name = "NIST Software License"
-abbreviation = "NISTSL"
+name = [
+    "NIST Software License"
+]
+
+abbreviation = [
+    "NISTSL"
+]
 
 notes = '''
-new license to Fedora.  SPDX version and in wild does not have superflous
-paragraph at beg and end as shows in Fedora license text page?
+https://fedoraproject.org/wiki/Licensing/NISTSL
 '''

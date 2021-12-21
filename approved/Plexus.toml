@@ -3,11 +3,16 @@
 expression = "Plexus"
 status = "approved"
 
-text = '''
-https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License
-'''
-
 [fedora]
 
-name = "Plexus Classworlds License"
-abbreviation = "Plexus"
+name = [
+    "Plexus Classworlds License"
+]
+
+abbreviation = [
+    "Plexus"
+]
+
+notes = '''
+https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License
+'''

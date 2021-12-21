@@ -3,11 +3,16 @@
 expression = "RPSL-1.0"
 status = "approved"
 
-text = '''
-http://www.opensource.org/licenses/real.php
-'''
-
 [fedora]
 
-name = "RealNetworks Public Source License V1.0"
-abbreviation = "RPSL"
+name = [
+    "RealNetworks Public Source License V1.0"
+]
+
+abbreviation = [
+    "RPSL"
+]
+
+notes = '''
+http://www.opensource.org/licenses/real.php
+'''
