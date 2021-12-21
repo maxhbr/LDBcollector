@@ -163,7 +163,7 @@ categories:
       fully categorized.
 
 categorizations:
-  # url:https://spdx.org/licenses/AGPL-1.0-only.html
+  # https://spdx.org/licenses/AGPL-1.0-only.html
   - id: "AGPL-1.0"
     categories:
       - "copyleft-strong"
@@ -171,7 +171,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/AGPL-1.0-only.html
+  # https://spdx.org/licenses/AGPL-1.0-only.html
   - id: "AGPL-1.0-only"
     categories:
       - "copyleft-strong"
@@ -179,7 +179,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/AGPL-1.0-or-later.html
+  # https://spdx.org/licenses/AGPL-1.0-or-later.html
   - id: "AGPL-1.0-or-later"
     categories:
       - "copyleft-strong"
@@ -187,7 +187,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/AGPL-3.0-only.html
+  # https://spdx.org/licenses/AGPL-3.0-only.html
   - id: "AGPL-3.0"
     categories:
       - "copyleft-strong"
@@ -197,7 +197,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/AGPL-3.0-only.html
+  # https://spdx.org/licenses/AGPL-3.0-only.html
   - id: "AGPL-3.0-only"
     categories:
       - "copyleft-strong"
@@ -207,7 +207,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/AFL-3.0.html
+  # https://spdx.org/licenses/AFL-3.0.html
   - id: "AGPL-3.0-or-later"
     categories:
       - "copyleft-strong"
@@ -217,21 +217,21 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/Apache-2.0.html
+  # https://spdx.org/licenses/Apache-2.0.html
   - id: "Apache-2.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/Artistic-1.0.html
+  # https://spdx.org/licenses/Artistic-1.0.html
   - id: "Artistic-1.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:artistic-license"
 
-  # url:https://spdx.org/licenses/Artistic-2.0.html
+  # https://spdx.org/licenses/Artistic-2.0.html
   - id: "Artistic-2.0"
     categories:
       - "copyleft-strong"
@@ -240,85 +240,85 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/BSD-1-Clause.html
+  # https://spdx.org/licenses/BSD-1-Clause.html
   - id: "BSD-1-Clause"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/BSD-2-Clause.html
+  # https://spdx.org/licenses/BSD-2-Clause.html
   - id: "BSD-2-Clause"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-2-clause-freebsd.yml
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-2-clause-freebsd.yml
   - id: "BSD-2-Clause-FreeBSD"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-2-clause-netbsd.yml
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-2-clause-netbsd.yml
   - id: "BSD-2-Clause-NetBSD"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/BSD-3-Clause.html
+  # https://spdx.org/licenses/BSD-3-Clause.html
   - id: "BSD-3-Clause"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/BSD-4-Clause.html
+  # https://spdx.org/licenses/BSD-4-Clause.html
   - id: "BSD-4-Clause"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:advertising-clause"
 
-  # url:https://spdx.org/licenses/BSD-4-Clause-UC.html
+  # https://spdx.org/licenses/BSD-4-Clause-UC.html
   - id: "BSD-4-Clause-UC"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-1.0.html
+  # https://spdx.org/licenses/CC-BY-1.0.html
   - id: "CC-BY-1.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-2.0.html
+  # https://spdx.org/licenses/CC-BY-2.0.html
   - id: "CC-BY-2.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-2.5.html
+  # https://spdx.org/licenses/CC-BY-2.5.html
   - id: "CC-BY-2.5"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-3.0.html
+  # https://spdx.org/licenses/CC-BY-3.0.html
   - id: "CC-BY-3.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-4.0.html
+  # https://spdx.org/licenses/CC-BY-4.0.html
   - id: "CC-BY-4.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC0-1.0.html
+  # https://spdx.org/licenses/CC0-1.0.html
   - id: "CC0-1.0"
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/CDDL-1.0.html
+  # https://spdx.org/licenses/CDDL-1.0.html
   - id: "CDDL-1.0"
     categories:
       - "copyleft-file-level"
@@ -326,7 +326,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/CDDL-1.1.html
+  # https://spdx.org/licenses/CDDL-1.1.html
   - id: "CDDL-1.1"
     categories:
       - "copyleft-file-level"
@@ -334,7 +334,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/EPL-1.0.html
+  # https://spdx.org/licenses/EPL-1.0.html
   - id: "EPL-1.0"
     categories:
       - "copyleft-module-level"
@@ -342,7 +342,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/EPL-2.0.html
+  # https://spdx.org/licenses/EPL-2.0.html
   - id: "EPL-2.0"
     categories:
       - "copyleft-file-level"
@@ -350,7 +350,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/EUPL-1.1.html
+  # https://spdx.org/licenses/EUPL-1.1.html
   - id: "EUPL-1.1"
     categories:
       - "copyleft-strong"
@@ -358,7 +358,7 @@ categorizations:
       - "property:network-clause"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/EUPL-1.2.html
+  # https://spdx.org/licenses/EUPL-1.2.html
   - id: "EUPL-1.2"
     categories:
       - "copyleft-strong"
@@ -366,50 +366,50 @@ categorizations:
       - "property:network-clause"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/GPL-1.0-or-later.html
+  # https://spdx.org/licenses/GPL-1.0-or-later.html
   - id: "GPL-1.0+"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/GPL-1.0-only.html
+  # https://spdx.org/licenses/GPL-1.0-only.html
   - id: "GPL-1.0-only"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/GPL-1.0-or-later.html
+  # https://spdx.org/licenses/GPL-1.0-or-later.html
   - id: "GPL-1.0-or-later"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/GPL-2.0-only.html
   - id: "GPL-2.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
   - id: "GPL-2.0+"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/GPL-2.0-only.html
   - id: "GPL-2.0-only"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/GPL-2.0-only.html
-  # url:https://spdx.org/licenses/Classpath-exception-2.0.html
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "GPL-2.0-only WITH Classpath-exception-2.0"
     categories:
       - "copyleft-strong"
@@ -417,8 +417,8 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-only.html
-  # url:https://spdx.org/licenses/Classpath-exception-2.0.html
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "GPL-2.0 WITH Classpath-exception-2.0"
     categories:
       - "copyleft-strong"
@@ -426,8 +426,8 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-only.html
-  # url:https://spdx.org/licenses/OpenJDK-assembly-exception-1.0.html
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/OpenJDK-assembly-exception-1.0.html
   - id: "GPL-2.0 WITH OpenJDK-assembly-exception-1.0"
     categories:
       - "copyleft-strong"
@@ -435,8 +435,8 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-only.html
-  # url:https://spdx.org/licenses/Font-exception-2.0.html
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Font-exception-2.0.html
   - id: "GPL-2.0-only WITH Font-exception-2.0"
     categories:
       - "copyleft-strong"
@@ -444,14 +444,14 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
   - id: "GPL-2.0-or-later"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/GPL-3.0-only.html
   - id: "GPL-3.0"
     categories:
       - "copyleft-strong"
@@ -460,7 +460,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
   - id: "GPL-3.0+"
     categories:
       - "copyleft-strong"
@@ -469,7 +469,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/GPL-3.0-only.html
   - id: "GPL-3.0-only"
     categories:
       - "copyleft-strong"
@@ -478,7 +478,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
   - id: "GPL-3.0-or-later"
     categories:
       - "copyleft-strong"
@@ -487,48 +487,48 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/GFDL-1.3.html
+  # https://spdx.org/licenses/GFDL-1.3.html
   - id: "GFDL-1.3"
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
       - "property:unchecked"
 
-  # url:https://spdx.org/licenses/JSON.html
+  # https://spdx.org/licenses/JSON.html
   - id: "JSON"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/LGPL-2.0-only.html
+  # https://spdx.org/licenses/LGPL-2.0-only.html
   - id: "LGPL-2.0-only"
     categories:
       - "copyleft-LGPL"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/LGPL-2.0-or-later.html
+  # https://spdx.org/licenses/LGPL-2.0-or-later.html
   - id: "LGPL-2.0-or-later"
     categories:
       - "copyleft-LGPL"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/LGPL-2.1-only.html
+  # https://spdx.org/licenses/LGPL-2.1-only.html
   - id: "LGPL-2.1-only"
     categories:
       - "copyleft-LGPL"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/LGPL-2.1-or-later.html
+  # https://spdx.org/licenses/LGPL-2.1-or-later.html
   - id: "LGPL-2.1-or-later"
     categories:
       - "copyleft-LGPL"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/LGPL-3.0-only.html
+  # https://spdx.org/licenses/LGPL-3.0-only.html
   - id: "LGPL-3.0-only"
     categories:
       - "copyleft-LGPL"
@@ -537,7 +537,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/LGPL-3.0-or-later.html
+  # https://spdx.org/licenses/LGPL-3.0-or-later.html
   - id: "LGPL-3.0-or-later"
     categories:
       - "copyleft-LGPL"
@@ -546,7 +546,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/LGPL-3.0-only.html
+  # https://spdx.org/licenses/LGPL-3.0-only.html
   - id: "LGPL-3.0"
     categories:
       - "copyleft-LGPL"
@@ -555,37 +555,37 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/Libpng.html
+  # https://spdx.org/licenses/Libpng.html
   - id: "Libpng"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/MIT.html
+  # https://spdx.org/licenses/MIT.html
   - id: "MIT"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/MIT-0.html
+  # https://spdx.org/licenses/MIT-0.html
   - id: "MIT-0"
     categories:
       - "permissive"
 
-  # url:https://spdx.org/licenses/MIT-feh.html
+  # https://spdx.org/licenses/MIT-feh.html
   - id: "MIT-feh"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/MPL-1.0.html
+  # https://spdx.org/licenses/MPL-1.0.html
   - id: "MPL-1.0"
     categories:
       - "copyleft-file-level"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/MPL-1.1.html
+  # https://spdx.org/licenses/MPL-1.1.html
   - id: "MPL-1.1"
     categories:
       - "copyleft-file-level"
@@ -593,7 +593,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/MPL-2.0.html
+  # https://spdx.org/licenses/MPL-2.0.html
   - id: "MPL-2.0"
     categories:
       - "copyleft-file-level"
@@ -601,14 +601,14 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/MS-PL.html
+  # https://spdx.org/licenses/MS-PL.html
   - id: "MS-PL"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/MS-RL.html
+  # https://spdx.org/licenses/MS-RL.html
   - id: "MS-RL"
     categories:
       - "copyleft-file-level"
@@ -616,134 +616,134 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/ODbL-1.0.html
+  # https://spdx.org/licenses/ODbL-1.0.html
   - id: "ODbL-1.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/OFL-1.0.html
+  # https://spdx.org/licenses/OFL-1.0.html
   - id: "OFL-1.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/OFL-1.1.html
+  # https://spdx.org/licenses/OFL-1.1.html
   - id: "OFL-1.1"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/OpenSSL.html
+  # https://spdx.org/licenses/OpenSSL.html
   - id: "OpenSSL"
     categories:
       - "permissive"
       - "property:advertising-clause"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/Python-2.0.html
+  # https://spdx.org/licenses/Python-2.0.html
   - id: "Python-2.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/Ruby.html
+  # https://spdx.org/licenses/Ruby.html
   - id: "Ruby"
     categories:
       - "copyleft-file-level"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/SAX-PD.html
+  # https://spdx.org/licenses/SAX-PD.html
   - id: "SAX-PD"
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/Unlicense.html
+  # https://spdx.org/licenses/Unlicense.html
   - id: "Unlicense"
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/W3C.html
+  # https://spdx.org/licenses/W3C.html
   - id: "W3C"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/WTFPL.html
+  # https://spdx.org/licenses/WTFPL.html
   - id: "WTFPL"
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/X11.html
+  # https://spdx.org/licenses/X11.html
   - id: "X11"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/Zlib.html
+  # https://spdx.org/licenses/Zlib.html
   - id: "Zlib"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/bzip2-1.0.5.html
+  # https://spdx.org/licenses/bzip2-1.0.5.html
   - id: "bzip2-1.0.5"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/bzip2-1.0.5.html
+  # https://spdx.org/licenses/bzip2-1.0.5.html
   - id: "bzip2-1.0.6"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/curl.html
+  # https://spdx.org/licenses/curl.html
   - id: "curl"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/Apache-1.1.html
+  # https://spdx.org/licenses/Apache-1.1.html
   - id: "Apache-1.1"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/Apache-1.0.html
+  # https://spdx.org/licenses/Apache-1.0.html
   - id: "Apache-1.0"
     categories:
       - "permissive"
       - "property:advertising-clause"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/Artistic-1.0-Perl.html
+  # https://spdx.org/licenses/Artistic-1.0-Perl.html
   - id: "Artistic-1.0-Perl"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/CC-PDDC.html
+  # https://spdx.org/licenses/CC-PDDC.html
   - id: "CC-PDDC"
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/CNRI-Jython.html
+  # https://spdx.org/licenses/CNRI-Jython.html
   - id: "CNRI-Jython"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CNRI-Python.html
+  # https://spdx.org/licenses/CNRI-Python.html
   - id: "CNRI-Python"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CPL-1.0.html
+  # https://spdx.org/licenses/CPL-1.0.html
   - id: "CPL-1.0"
     categories:
       - "copyleft-module-level"
@@ -751,19 +751,19 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/FSFAP.html
+  # https://spdx.org/licenses/FSFAP.html
   - id: "FSFAP"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/HPND.html
+  # https://spdx.org/licenses/HPND.html
   - id: "HPND"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/IPL-1.0.html
+  # https://spdx.org/licenses/IPL-1.0.html
   - id: "IPL-1.0"
     categories:
       - "copyleft-module-level"
@@ -771,13 +771,13 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/ISC.html
+  # https://spdx.org/licenses/ISC.html
   - id: "ISC"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/LPL-1.02.html
+  # https://spdx.org/licenses/LPL-1.02.html
   - id: "LPL-1.02"
     categories:
       - "copyleft-strong"
@@ -785,57 +785,57 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/LPPL-1.0.html
+  # https://spdx.org/licenses/LPPL-1.0.html
   - id: "LPPL-1.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/LPPL-1.3c.html
+  # https://spdx.org/licenses/LPPL-1.3c.html
   - id: "LPPL-1.3c"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/ICU.html
+  # https://spdx.org/licenses/ICU.html
   - id: "ICU"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/bsd-3-clause-no-change.html
+  # https://scancode-licensedb.aboutcode.org/bsd-3-clause-no-change.html
   - id: "LicenseRef-scancode-bsd-3-clause-no-change"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/bsd-axis-nomod.html
+  # https://scancode-licensedb.aboutcode.org/bsd-axis-nomod.html
   - id: "LicenseRef-scancode-bsd-axis-nomod"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/docbook.html
+  # https://scancode-licensedb.aboutcode.org/docbook.html
   - id: "LicenseRef-scancode-docbook"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/ecma-documentation.html
+  # https://scancode-licensedb.aboutcode.org/ecma-documentation.html
   - id: "LicenseRef-scancode-ecma-documentation"
     categories:
       - "free-restricted"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/efsl-1.0.html
+  # https://scancode-licensedb.aboutcode.org/efsl-1.0.html
   - id: "LicenseRef-scancode-efsl-1.0"
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/h2-1.0.html
+  # https://scancode-licensedb.aboutcode.org/h2-1.0.html
   - id: "LicenseRef-scancode-h2-1.0"
     categories:
       - "copyleft-file-level"
@@ -843,93 +843,93 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://scancode-licensedb.aboutcode.org/ietf.html
+  # https://scancode-licensedb.aboutcode.org/ietf.html
   - id: "LicenseRef-scancode-ietf"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/ietf-trust.html
+  # https://scancode-licensedb.aboutcode.org/ietf-trust.html
   - id: "LicenseRef-scancode-ietf-trust"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/iso-8879.html
+  # https://scancode-licensedb.aboutcode.org/iso-8879.html
   - id: "LicenseRef-scancode-iso-8879"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/jdom.html
+  # https://scancode-licensedb.aboutcode.org/jdom.html
   - id: "LicenseRef-scancode-jdom"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/jpython-1.1.html
+  # https://scancode-licensedb.aboutcode.org/jpython-1.1.html
   - id: "LicenseRef-scancode-jpython-1.1"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/jython.html
+  # https://scancode-licensedb.aboutcode.org/jython.html
   - id: "LicenseRef-scancode-jython"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/libpbm.html
+  # https://scancode-licensedb.aboutcode.org/libpbm.html
   - id: "LicenseRef-scancode-libpbm"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/mit-specification-disclaimer.html
+  # https://scancode-licensedb.aboutcode.org/mit-specification-disclaimer.html
   - id: "LicenseRef-scancode-mit-specification-disclaimer"
     categories:
       - "permissive"
 
-  # url:https://scancode-licensedb.aboutcode.org/ms-ws-routing-spec.html
+  # https://scancode-licensedb.aboutcode.org/ms-ws-routing-spec.html
   - id: "LicenseRef-scancode-ms-ws-routing-spec"
     categories:
       - "permissive"
 
-  # url:https://scancode-licensedb.aboutcode.org/oasis-ws-security-spec.html
+  # https://scancode-licensedb.aboutcode.org/oasis-ws-security-spec.html
   - id: "LicenseRef-scancode-oasis-ws-security-spec"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/openssl.html
+  # https://scancode-licensedb.aboutcode.org/openssl.html
   - id: "LicenseRef-scancode-openssl"
     categories:
       - "permissive"
       - "property:advertising-clause"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/other-permissive.html
+  # https://scancode-licensedb.aboutcode.org/other-permissive.html
   - id: "LicenseRef-scancode-other-permissive"
     categories:
       - "permissive"
 
-  # url:https://scancode-licensedb.aboutcode.org/proprietary-license.html
+  # https://scancode-licensedb.aboutcode.org/proprietary-license.html
   - id: "LicenseRef-scancode-proprietary-license"
     categories:
       - "commercial"
 
-  # url:https://scancode-licensedb.aboutcode.org/protobuf.html
+  # https://scancode-licensedb.aboutcode.org/protobuf.html
   - id: "LicenseRef-scancode-protobuf"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://scancode-licensedb.aboutcode.org/public-domain-disclaimer.html
+  # https://scancode-licensedb.aboutcode.org/public-domain-disclaimer.html
   - id: "LicenseRef-scancode-public-domain-disclaimer"
     categories:
       - "public-domain"
 
-  # url:https://scancode-licensedb.aboutcode.org/service-comp-arch.html
+  # https://scancode-licensedb.aboutcode.org/service-comp-arch.html
   - id: "LicenseRef-scancode-service-comp-arch"
     categories:
       - "permissive"
@@ -1032,19 +1032,19 @@ categorizations:
       - "property:non-commercial"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/FSFULLR.html
+  # https://spdx.org/licenses/FSFULLR.html
   - id: "FSFULLR"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://enterprise.dejacode.com/licenses/public/fsf-unlimited-no-warranty/?_list_filters=q%3Dfsf%2Bunlimited
+  # https://enterprise.dejacode.com/licenses/public/fsf-unlimited-no-warranty/?_list_filters=q%3Dfsf%2Bunlimited
   - id: "LicenseRef-FSF-Unlimited-No-Warranty"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://enterprise.dejacode.com/licenses/public/fsf-unlimited-no-warranty/?_list_filters=q%3Dfsf%2Bunlimited
+  # https://enterprise.dejacode.com/licenses/public/fsf-unlimited-no-warranty/?_list_filters=q%3Dfsf%2Bunlimited
   - id: "LicenseRef-fsf-unlimited-no-warranty"
     categories:
       - "permissive"
@@ -1195,7 +1195,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/FSFUL.html
+  # https://spdx.org/licenses/FSFUL.html
   - id: "FSFUL"
     categories:
       - "permissive"
@@ -1211,7 +1211,7 @@ categorizations:
       - "property:non-commercial"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/NTP.html
+  # https://spdx.org/licenses/NTP.html
   - id: "NTP"
     categories:
       - "permissive"
@@ -1416,8 +1416,8 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/LGPL-3.0-or-later.html
-  # url:https://spdx.org/licenses/openvpn-openssl-exception.html
+  # https://spdx.org/licenses/LGPL-3.0-or-later.html
+  # https://spdx.org/licenses/openvpn-openssl-exception.html
   - id: "LGPL-3.0-or-later WITH openvpn-openssl-exception"
     categories:
       - "copyleft-LGPL"
@@ -1427,8 +1427,8 @@ categorizations:
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/LGPL-3.0-or-later.html
-  # url:https://spdx.org/licenses/openvpn-openssl-exception.html
+  # https://spdx.org/licenses/LGPL-3.0-or-later.html
+  # https://spdx.org/licenses/openvpn-openssl-exception.html
   - id: "LicenseRef-scancode-openssl-exception-lgpl-3.0-plus"
     categories:
       - "property:unchecked"
@@ -1446,7 +1446,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/MIT-CMU.html
+  # https://spdx.org/licenses/MIT-CMU.html
   - id: "MIT-CMU"
     categories:
       - "permissive"
@@ -1486,8 +1486,8 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/GPL-1.0-or-later.html
-  # url:https://spdx.org/licenses/Linux-syscall-note.html
+  # https://spdx.org/licenses/GPL-1.0-or-later.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
   - id: "GPL-1.0-or-later WITH Linux-syscall-note"
     categories:
       - "copyleft-strong"
@@ -1495,8 +1495,8 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-or-later.html
-  # url:https://spdx.org/licenses/Linux-syscall-note.html
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
   - id: "GPL-2.0-or-later WITH Linux-syscall-note"
     categories:
       - "copyleft-strong"
@@ -1504,8 +1504,8 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-only.html
-  # url:https://spdx.org/licenses/Linux-syscall-note.html
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
   - id: "GPL-2.0 WITH Linux-syscall-note"
     categories:
       - "copyleft-strong"
@@ -1544,8 +1544,8 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
-  # url:https://spdx.org/licenses/Bison-exception-2.2.html
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-3.0-or-later WITH Bison-exception-2.2"
     categories:
       - "copyleft-strong"
@@ -1568,8 +1568,8 @@ categorizations:
     categories:
       - "permissive"
 
-  # url:https://spdx.org/licenses/LGPL-2.0-or-later.html
-  # url:https://spdx.org/licenses/Linux-syscall-note.html
+  # https://spdx.org/licenses/LGPL-2.0-or-later.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
   - id: "LGPL-2.0-or-later WITH Linux-syscall-note"
     categories:
       - "copyleft-LGPL"
@@ -1585,7 +1585,7 @@ categorizations:
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/LGPL-2.1-only.html
+  # https://spdx.org/licenses/LGPL-2.1-only.html
   - id: "LGPL-2.1"
     categories:
       - "copyleft-LGPL"
@@ -1613,7 +1613,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/LGPL-2.0-only.html
+  # https://spdx.org/licenses/LGPL-2.0-only.html
   - id: "LGPL-2.0"
     categories:
       - "copyleft-LGPL"
@@ -1644,8 +1644,8 @@ categorizations:
       - "property:unchecked"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-only.html
-  # url:https://spdx.org/licenses/GCC-exception-2.0.html
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/GCC-exception-2.0.html
   - id: "GPL-2.0-with-GCC-exception"
     categories:
       - "copyleft-strong"
@@ -1680,8 +1680,8 @@ categorizations:
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/GPL-2.0-or-later.html
-  # url:https://spdx.org/licenses/Autoconf-exception-2.0.html
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-2.0.html
   - id: "GPL-2.0-or-later-WITH-Autoconf-exception-2.0"
     categories:
       - "copyleft-strong"
@@ -1689,8 +1689,8 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-or-later.html
-  # url:https://spdx.org/licenses/Autoconf-exception-2.0.html
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-2.0.html
   - id: "GPL-2.0-or-later WITH Autoconf-exception-2.0"
     categories:
       - "copyleft-strong"
@@ -1698,8 +1698,8 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-2.0-or-later.html
-  # url:https://spdx.org/licenses/Libtool-exception.html
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Libtool-exception.html
   - id: "GPL-2.0-or-later WITH Libtool-exception"
     categories:
       - "copyleft-strong"
@@ -1761,8 +1761,8 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
-  # url:https://spdx.org/licenses/Bison-exception-2.2.html
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-3.0-or-later-WITH-Bison-exception-2.2"
     categories:
       - "copyleft-strong"
@@ -1772,8 +1772,8 @@ categorizations:
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
-  # url:https://spdx.org/licenses/Autoconf-exception-3.0.html
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-3.0.html
   - id: "GPL-3.0-or-later WITH Autoconf-exception-3.0"
     categories:
       - "copyleft-strong"
@@ -1783,8 +1783,8 @@ categorizations:
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
-  # url:https://spdx.org/licenses/Libtool-exception.html
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Libtool-exception.html
   - id: "GPL-3.0-or-later WITH Libtool-exception"
     categories:
       - "copyleft-strong"
@@ -1794,7 +1794,7 @@ categorizations:
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
   - id: "LicenseRef-GPL-2.0-or-later-with-bison-exception-2.0"
     categories:
       - "copyleft-strong"
@@ -2005,82 +2005,82 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/json-js-pd.LICENSE
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/json-js-pd.LICENSE
   - id: "LicenseRef-scancode-json-js-pd"
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/xpp.html
+  # https://spdx.org/licenses/xpp.html
   - id: "xpp"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:advertising-clause"
 
-  # url:https://spdx.org/licenses/YPL-1.0.html
+  # https://spdx.org/licenses/YPL-1.0.html
   - id: "YPL-1.0"
     categories:
       - "copyleft-file-level"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/cc-devnations-2.0.LICENSE
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/cc-devnations-2.0.LICENSE
   - id: "LicenseRef-scancode-cc-devnations-2.0"
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/BSD-3-Clause-Clear.html
+  # https://spdx.org/licenses/BSD-3-Clause-Clear.html
   - id: "BSD-3-Clause-Clear"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/mx4j.LICENSE
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/mx4j.LICENSE
   - id: "LicenseRef-scancode-mx4j"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-simplified-darwin.LICENSE
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-simplified-darwin.LICENSE
   - id: "LicenseRef-scancode-bsd-simplified-darwin"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/iptc-2006.LICENSE
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/iptc-2006.LICENSE
   - id: "LicenseRef-scancode-iptc-2006"
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-ND-3.0.html
+  # https://spdx.org/licenses/CC-BY-ND-3.0.html
   - id: "CC-BY-ND-3.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
 
-  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/json-pd.LICENSE
+  # https://github.com/nexB/scancode-licensedb/blob/main/docs/json-pd.LICENSE
   - id: "LicenseRef-scancode-json-pd"
     categories:
       - "public-domain"
 
-  # url:https://spdx.org/licenses/AFL-1.1.html
+  # https://spdx.org/licenses/AFL-1.1.html
   - id: "AFL-1.1"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/AFL-1.2.html
+  # https://spdx.org/licenses/AFL-1.2.html
   - id: "AFL-1.2"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/AFL-3.0.html
+  # https://spdx.org/licenses/AFL-3.0.html
   - id: "AFL-3.0"
     categories:
       - "permissive"
@@ -2088,13 +2088,13 @@ categorizations:
       - "property:patent-clause"
       - "property:network-clause"
 
-  # url:https://spdx.org/licenses/AMDPLPA.html
+  # https://spdx.org/licenses/AMDPLPA.html
   - id: "AMDPLPA"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/APL-1.0.html
+  # https://spdx.org/licenses/APL-1.0.html
   - id: "APL-1.0"
     categories:
       - "copyleft-module-level"
@@ -2102,7 +2102,7 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/APSL-1.0.html
+  # https://spdx.org/licenses/APSL-1.0.html
   - id: "APSL-1.0"
     categories:
       - "copyleft-file-level"
@@ -2110,7 +2110,7 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/APSL-1.1.html
+  # https://spdx.org/licenses/APSL-1.1.html
   - id: "APSL-1.1"
     categories:
       - "copyleft-file-level"
@@ -2118,7 +2118,7 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/APSL-1.2.html
+  # https://spdx.org/licenses/APSL-1.2.html
   - id: "APSL-1.2"
     categories:
       - "copyleft-file-level"
@@ -2126,7 +2126,7 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/APSL-2.0.html
+  # https://spdx.org/licenses/APSL-2.0.html
   - id: "APSL-2.0"
     categories:
       - "copyleft-file-level"
@@ -2134,12 +2134,12 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/Adobe-2006.html
+  # https://spdx.org/licenses/Adobe-2006.html
   - id: "Adobe-2006"
     categories:
       - "permissive"
 
-  # url:https://spdx.org/licenses/Artistic-1.0-cl8.html
+  # https://spdx.org/licenses/Artistic-1.0-cl8.html
   - id: "Artistic-1.0-cl8"
     categories:
       - "copyleft-file-level"
@@ -2147,7 +2147,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:artistic-license"
 
-  # url:https://spdx.org/licenses/Autoconf-exception-2.0.html
+  # https://spdx.org/licenses/Autoconf-exception-2.0.html
   - id: "Autoconf-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -2156,19 +2156,19 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/Autoconf-exception-3.0.html
+  # https://spdx.org/licenses/Autoconf-exception-3.0.html
   - id: "Autoconf-exception-3.0"
     categories:
       - "property:AutoConf-or-other-exception"
 
-  # url:https://spdx.org/licenses/BSD-Protection.html
+  # https://spdx.org/licenses/BSD-Protection.html
   - id: "BSD-Protection"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  # url:https://spdx.org/licenses/BitTorrent-1.0.html
+  # https://spdx.org/licenses/BitTorrent-1.0.html
   - id: "BitTorrent-1.0"
     categories:
       - "copyleft-file-level"
@@ -2176,7 +2176,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/BitTorrent-1.1.html
+  # https://spdx.org/licenses/BitTorrent-1.1.html
   - id: "BitTorrent-1.1"
     categories:
       - "copyleft-file-level"
@@ -2184,12 +2184,12 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/Borceux.html
+  # https://spdx.org/licenses/Borceux.html
   - id: "Borceux"
     categories:
       - "permissive"
 
-  # url:https://spdx.org/licenses/CATOSL-1.1.html
+  # https://spdx.org/licenses/CATOSL-1.1.html
   - id: "CATOSL-1.1"
     categories:
       - "copyleft-file-level"
@@ -2197,109 +2197,109 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-1.0.html
+  # https://spdx.org/licenses/CC-BY-NC-1.0.html
   - id: "CC-BY-NC-1.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-2.0.html
+  # https://spdx.org/licenses/CC-BY-NC-2.0.html
   - id: "CC-BY-NC-2.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-2.5.html
+  # https://spdx.org/licenses/CC-BY-NC-2.5.html
   - id: "CC-BY-NC-2.5"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-3.0.html
+  # https://spdx.org/licenses/CC-BY-NC-3.0.html
   - id: "CC-BY-NC-3.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-4.0.html
+  # https://spdx.org/licenses/CC-BY-NC-4.0.html
   - id: "CC-BY-NC-4.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-ND-1.0.html
+  # https://spdx.org/licenses/CC-BY-NC-ND-1.0.html
   - id: "CC-BY-NC-ND-1.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
+  # https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
   - id: "CC-BY-NC-ND-2.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
+  # https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
   - id: "CC-BY-NC-ND-2.5"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
+  # https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
   - id: "CC-BY-NC-ND-3.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
+  # https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
   - id: "CC-BY-NC-SA-1.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-SA-2.0.html
+  # https://spdx.org/licenses/CC-BY-NC-SA-2.0.html
   - id: "CC-BY-NC-SA-2.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-NC-SA-3.0.html
+  # https://spdx.org/licenses/CC-BY-NC-SA-3.0.html
   - id: "CC-BY-NC-SA-3.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-  # url:https://spdx.org/licenses/CC-BY-ND-1.0.html
+  # https://spdx.org/licenses/CC-BY-ND-1.0.html
   - id: "CC-BY-ND-1.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-ND-2.0.html
+  # https://spdx.org/licenses/CC-BY-ND-2.0.html
   - id: "CC-BY-ND-2.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-ND-2.5.html
+  # https://spdx.org/licenses/CC-BY-ND-2.5.html
   - id: "CC-BY-ND-2.5"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/CC-BY-ND-4.0.html
+  # https://spdx.org/licenses/CC-BY-ND-4.0.html
   - id: "CC-BY-ND-4.0"
     categories:
       - "source-available"
