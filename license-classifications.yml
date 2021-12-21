@@ -487,6 +487,13 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
+  # url:https://spdx.org/licenses/GFDL-1.3.html
+  - id: "GFDL-1.3"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
   # url:https://spdx.org/licenses/JSON.html
   - id: "JSON"
     categories:
