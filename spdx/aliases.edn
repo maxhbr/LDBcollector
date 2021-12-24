@@ -50,11 +50,13 @@
   "gnu\\s+lesser\\s+general\\s+public\\s+license(\\s*[,-])?(\\s+v(ersion)?)?\\s+2\\.1"                                                                  #{"LGPL-2.1"}
   "gnu\\s+lesser\\s+general\\s+public\\s+license(\\s*[,-])?(\\s+v(ersion)?)?\\s+3"                                                                      #{"LGPL-3.0"}
   "gnu\\s+library\\s+general\\s+public\\s+license"                                                                                                      #{"LGPL-2.0"}     ; There was only ever one version of the "GNU Library General Public License" (v2.0) - "Library" was renamed to "Lesser" as of v2.1
+  "gwt\\s+terms"                                                                                                                                        #{"Apache-2.0"}   ; See http://www.gwtproject.org/terms.html
   "lesser\\s+general\\s+public\\s+license(\\s*[,-])?(\\s+v(ersion)?)?\\s+3\\s+or\\s+greater"                                                            #{"LGPL-3.0"}
   "mozilla\\s+public\\s+license"                                                                                                                        #{"MPL-1.0"}
   "mozilla\\s+public\\s+license(\\s+v(ersion)?)?\\s+1(\\.0|\\s+|\\z)"                                                                                   #{"MPL-1.0"}
   "mozilla\\s+public\\s+license(\\s+v(ersion)?)?\\s+1.1"                                                                                                #{"MPL-1.1"}
   "mozilla\\s+public\\s+license(\\s+v(ersion)?)?\\s+2(\\.0|\\s+|\\z)"                                                                                   #{"MPL-2.0"}
+  "new\\s+bsd\\s+license"                                                                                                                               #{"BSD-3-Clause"}
   "public\\s+domain"                                                                                                                                    #{"NON-SPDX-Public-Domain"}   ; Note: not an SPDX license
   "similar\\s+to\\s+apache\\s+license\\s+but\\s+with\\s+the\\s+acknowledgment\\s+clause\\s+removed"                                                     #{"Plexus"}       ; Note: see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
   "the\\s+mx4j\\s+license(\\s*[,-])?\\s+version\\s+1\\.0"                                                                                               #{"Apache-1.1"}   ; See https://wiki.spdx.org/view/Legal_Team/License_List/Licenses_Under_Consideration#Processed_License_Requests
