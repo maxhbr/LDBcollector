@@ -95,5 +95,4 @@
   [deps]
   (when deps
     (into {}
-          (for [[k v] deps]
-            [k (assoc v :lice-comb/licenses (dep->ids [k v]))]))))
+          (pmap #(let [[k v] %] [k (assoc v :lice-comb/licenses (dep->ids [k v]))]) deps))))
