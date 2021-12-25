@@ -186,8 +186,8 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
 
 Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit Ausnahmen können auch als beschränktes Copyleft verstanden werden.
 
-1. Affero General Public License (v. 1): http://www.affero.org/oagpl.html
-1. Affero General Public License (v. 2): http://www.affero.org/agpl2.html
+1. Affero General Public License (v. 1): http://web.archive.org/web/20190826200024/http://www.affero.org/oagpl.html
+1. Affero General Public License (v. 2): http://web.archive.org/web/20191008070005/http://www.affero.org/agpl2.html
 1. Alternate Route Open Source License (v. 1.1): http://www.wsdot.wa.gov/eesc/bridge/alternateroute/arosl.htm
 1. CrossPoint Quelltextlizenz: http://www.crosspoint.de/srclicense.html
 1. eCos License (v. 2.0): http://www.gnu.org/licenses/ecos-license.html
