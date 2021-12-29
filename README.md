@@ -41,6 +41,8 @@ Express the correct maven dependencies in your `deps.edn`:
 
 ## Contributor Information
 
+[Contributor FAQ](https://github.com/pmonks/lice-comb/wiki/FAQ#contributor-faqs)
+
 [Contributing Guidelines](https://github.com/pmonks/lice-comb/blob/main/.github/CONTRIBUTING.md)
 
 [Bug Tracker](https://github.com/pmonks/lice-comb/issues)
