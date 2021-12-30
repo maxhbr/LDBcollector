@@ -488,7 +488,21 @@ categorizations:
       - "property:patent-clause"
 
   # https://spdx.org/licenses/GFDL-1.3.html
+  - id: "GFDL-1.2-or-later"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.3.html
   - id: "GFDL-1.3"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.3.html
+  - id: "GFDL"
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
@@ -1253,6 +1267,12 @@ categorizations:
       - "property:advertising-clause"
       - "property:include-in-notice-file"
 
+  - id: "RSA-Cryptoki"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+
   - id: "RSA-MD"
     categories:
       - "property:advertising-clause"
@@ -1847,6 +1867,10 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  - id: "GNU-Manpages"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "ISC-style"
     categories:
       - "permissive"
@@ -1983,6 +2007,10 @@ categorizations:
     categories:
       - "permissive"
 
+  - id: "ISC-possibility"
+    categories:
+      - "permissive"
+
   - id: "Zlib-possibility"
     categories:
       - "permissive"
@@ -2033,6 +2061,12 @@ categorizations:
 
   # https://spdx.org/licenses/BSD-3-Clause-Clear.html
   - id: "BSD-3-Clause-Clear"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/JPNIC.html
+  - id: "JPNIC"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
