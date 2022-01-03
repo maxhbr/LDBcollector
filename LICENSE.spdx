@@ -1,7 +1,7 @@
 SPDXVersion: SPDX-2.2.1
 DataLicense: CC0-1.0
 Creator: Peter Monks
-PackageName: lice-comb
+PackageName: com.github.pmonks/lice-comb
 PackageOriginator: Peter Monks
 PackageHomePage: https://github.com/pmonks/lice-comb
 PackageLicenseDeclared: Apache-2.0
