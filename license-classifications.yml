@@ -443,6 +443,14 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
+    #
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  - id: "LicenseRef-gpl-2.0-or-later-with-ada-linking-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   - id: "GPL-2.0-or-later"
@@ -496,6 +504,13 @@ categorizations:
 
   # https://spdx.org/licenses/GFDL-1.3.html
   - id: "GFDL-1.3"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.3.html
+  - id: "GFDL-1.3-or-later"
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
@@ -1095,6 +1110,10 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "OpenSSL-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "LicenseRef-scancode-mysql-floss-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1104,6 +1123,10 @@ categorizations:
       - "irrelevant"
 
   - id: "NOT-public-domain"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-NOT-public-domain"
     categories:
       - "irrelevant"
 
@@ -1286,6 +1309,11 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-mit-old-style"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "scancode-mit-old-style"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -1573,6 +1601,45 @@ categorizations:
       - "property:antitivo-clause"
       - "property:distribute-source-code"
       - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+    #
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # http://git.openembedded.org/openembedded-core/tree/meta/files/common-licenses/GPL-2.0-with-autoconf-exception
+  - id: "GPL-3.0-or-later-with-Autoconf-macro-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  - id: "LicenseRef-GPL-3.0-or-later-with-TeX-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Bison-exception-2.2.html
+  - id: "GPL-2.0-or-later WITH Bison-exception-2.2"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/openvpn-openssl-exception.html
+  - id: "LicenseRef-GPL-2.0-with-OpenSSL-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
   - id: "LicenseRef-SunPro"
@@ -1982,6 +2049,14 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  - id: "MPL"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-MPL"
+    categories:
+      - "property:unclear-scanner-finding"
+
   # Inaccurate but permissive license hits.
   - id: "BSD-style"
     categories:
@@ -1992,6 +2067,14 @@ categorizations:
       - "permissive"
 
   - id: "MIT-CMU-style"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-MIT-CMU-style"
+    categories:
+      - "permissive"
+
+  - id: "BSL-style"
     categories:
       - "permissive"
 
@@ -2020,6 +2103,10 @@ categorizations:
       - "permissive"
 
   - id: "BSD-possibility"
+    categories:
+      - "permissive"
+
+  - id: "MIT-possibility"
     categories:
       - "permissive"
 
@@ -2220,6 +2307,10 @@ categorizations:
 
   # https://spdx.org/licenses/Borceux.html
   - id: "Borceux"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-permissive-no-attribution-requirement"
     categories:
       - "permissive"
 
