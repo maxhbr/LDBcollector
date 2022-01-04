@@ -2,7 +2,7 @@ name: dependencies
 on:
   push:
   schedule:
-    - cron: '0 21 * * *'
+    - cron: '0 21 * * 0'
 
 jobs:
   antq:
