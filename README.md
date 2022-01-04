@@ -11,7 +11,7 @@
 
 A Clojure library for software license detection.  It does this by combing through text, files, and even entire directory structures, and attempting to detect what license(s) they contain.
 
-This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.
+This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, I can thoroughly recommend [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial).
 
 ## Using the library
 
@@ -40,6 +40,8 @@ Express the correct maven dependencies in your `deps.edn`:
 ```
 
 ## Contributor Information
+
+[Contributor FAQ](https://github.com/pmonks/lice-comb/wiki/FAQ#contributor-faqs)
 
 [Contributing Guidelines](https://github.com/pmonks/lice-comb/blob/main/.github/CONTRIBUTING.md)
 
