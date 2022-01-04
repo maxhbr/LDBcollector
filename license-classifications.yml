@@ -860,12 +860,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # https://spdx.org/licenses/Intel.html
-  - id: "Intel"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-
   # https://spdx.org/licenses/IPL-1.0.html
   - id: "IPL-1.0"
     categories:
@@ -1738,6 +1732,16 @@ categorizations:
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  - id: "LicenseRef-GPL-3.0-or-later-with-Autoconf-macro-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-2.0-or-later WITH Bison-exception-2.2"
@@ -1746,6 +1750,53 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  - id: "LicenseRef-GPL-2.0-or-later-with-TeX-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  - id: "LicenseRef-GPL-2.0-or-later-with-autoconf-macro-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://github.com/gpg/libgpg-error/blob/220a427b4f997ef6af1b2d4e82ef1dc96e0cd6ff/lang/cl/mkerrcodes.awk
+  - id: "LicenseRef-GPL-2.0-or-later-with-mkerrcodes.awk-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/openvpn-openssl-exception.html
+  - id: "LicenseRef-GPL-2.0-with-openssl-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://www.openldap.org/software/release/license.html
+  - id: "LicenseRef-OpenLDAP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # hhttp://pcre.sourceforge.net/license.txttps://www.openldap.org/software/release/license.html
+  - id: "LicenseRef-PCRE"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
 
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/openvpn-openssl-exception.html
@@ -2044,6 +2095,34 @@ categorizations:
       - "property:include-in-notice-file"
       - "permissive"
 
+  - id: "LicenseRef-Python"
+    categories:
+      - "property:include-in-notice-file"
+      - "permissive"
+
+  # https://github.com/joelagnel/meta-ti/blob/fd86d69fde9203136bd2f22d4f5e7c810f44c42d/licenses/TI-TFL
+  - id: "LicenseRef-TI-TFL"
+    categories:
+      - "property:include-in-notice-file"
+      - "proprietary-free"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/MTLL.html
+  - id: "MTLL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-Scanner-WebM"
+    categories:
+      - "property:include-in-notice-file"
+      - "permissive"
+
+  - id: "Debian-SPI-style"
+    categories:
+      - "property:include-in-notice-file"
+      - "permissive"
+
   - id: "gary-s-brown"
     categories:
       - "permissive"
@@ -2057,6 +2136,10 @@ categorizations:
       - "property:unclear-scanner-finding"
 
   - id: "GNU-Manpages"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "Debian-SPI-style"
     categories:
       - "property:unclear-scanner-finding"
 
@@ -2248,6 +2331,14 @@ categorizations:
 
   # https://github.com/nexB/scancode-licensedb/blob/main/docs/json-js-pd.LICENSE
   - id: "LicenseRef-scancode-json-js-pd"
+    categories:
+      - "public-domain"
+
+  - id: "LicenseRef-PD"
+    categories:
+      - "public-domain"
+
+  - id: "LicenseRef-Public-domain-ref"
     categories:
       - "public-domain"
 
