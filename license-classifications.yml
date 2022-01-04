@@ -224,6 +224,12 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:patent-clause"
 
+  # https://spdx.org/licenses/Intel.html
+  - id: "Intel"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/Artistic-1.0.html
   - id: "Artistic-1.0"
     categories:
@@ -260,6 +266,11 @@ categorizations:
 
   # https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-2-clause-netbsd.yml
   - id: "BSD-2-Clause-NetBSD"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "BSD-4-Clause-NetBSD"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -380,6 +391,13 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
+  # https://spdx.org/licenses/GPL-1.0-only.html
+  - id: "GPL-1.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
   # https://spdx.org/licenses/GPL-1.0-or-later.html
   - id: "GPL-1.0-or-later"
     categories:
@@ -495,8 +513,22 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
+  # https://spdx.org/licenses/Latex2e.html
+  - id: "Latex2e"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
   # https://spdx.org/licenses/GFDL-1.3.html
   - id: "GFDL-1.2-or-later"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.2.html
+  - id: "GFDL-1.2"
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
@@ -550,12 +582,30 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
+  # https://spdx.org/licenses/LGPL-2.1-only.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
+  - id: "LGPL-2.1 WITH Linux-syscall-note"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/LGPL-2.1-or-later.html
   - id: "LGPL-2.1-or-later"
     categories:
       - "copyleft-LGPL"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LGPL-2.1-or-later.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
+  - id: "LGPL-2.1-or-later WITH Linux-syscall-note"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/LGPL-3.0-only.html
   - id: "LGPL-3.0-only"
@@ -788,6 +838,30 @@ categorizations:
 
   # https://spdx.org/licenses/HPND.html
   - id: "HPND"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/HPND-sell-variant.html
+  - id: "HPND-sell-variant"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/IBM-pibs.html
+  - id: "IBM-pibs"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/Info-ZIP.html
+  - id: "Info-ZIP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/Intel.html
+  - id: "Intel"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -1254,6 +1328,11 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-CMU"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "LicenseRef-scancode-bsd-1988"
     categories:
       - "property:unchecked"
@@ -1452,6 +1531,10 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "LicenseRef-Elfutils-Exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "LicenseRef-scancode-mit-modern"
     categories:
       - "property:unchecked"
@@ -1552,6 +1635,15 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/eCos-exception-2.0.html
+  - id: "GPL-2.0-or-later WITH eCos-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/GPL-2.0-only.html
   # https://spdx.org/licenses/Linux-syscall-note.html
   - id: "GPL-2.0 WITH Linux-syscall-note"
@@ -1606,6 +1698,28 @@ categorizations:
   # https://spdx.org/licenses/GPL-3.0-or-later.html
   # http://git.openembedded.org/openembedded-core/tree/meta/files/common-licenses/GPL-2.0-with-autoconf-exception
   - id: "GPL-3.0-or-later-with-Autoconf-macro-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/Autoconf-exception-3.0.html
+  - id: "GPL-3.0-only WITH Autoconf-exception-3.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-only.html
+  # https://spdx.org/licenses/GCC-exception-3.1.html
+  - id: "GPL-3.0-only WITH GCC-exception-3.1"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
@@ -1719,6 +1833,14 @@ categorizations:
 
   - id: "FSF"
     categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  - id: "LicenseRef-FSF"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
       - "property:unchecked"
 
   - id: "SunPro"
@@ -2059,6 +2181,10 @@ categorizations:
 
   # Inaccurate but permissive license hits.
   - id: "BSD-style"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-BSD-style"
     categories:
       - "permissive"
 
