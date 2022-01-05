@@ -1901,7 +1901,18 @@ categorizations:
 
   - id: "GCC-exception-2.0"
     categories:
-      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "Bootloader-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "GCC-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "GCC-exception-3.1"
+    categories:
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-2.0-only.html
@@ -1914,6 +1925,13 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   - id: "GPL-2.0-or-later WITH GCC-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "GPL-2.0-or-later-with-autoconf-macro-exception"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
@@ -2131,15 +2149,19 @@ categorizations:
     categories:
       - "permissive"
 
+  - id: "Apple.Sample"
+    categories:
+      - "permissive"
+
   - id: "Apache-possibility"
     categories:
       - "property:unclear-scanner-finding"
 
-  - id: "GNU-Manpages"
+  - id: "Apache"
     categories:
       - "property:unclear-scanner-finding"
 
-  - id: "Debian-SPI-style"
+  - id: "GNU-Manpages"
     categories:
       - "property:unclear-scanner-finding"
 
@@ -2645,4 +2667,14 @@ categorizations:
   - id: "CC-BY-ND-4.0"
     categories:
       - "source-available"
+      - "property:include-in-notice-file"
+
+  - id: "AMD"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "BSD-2"
+    categories:
+      - "permissive"
       - "property:include-in-notice-file"
