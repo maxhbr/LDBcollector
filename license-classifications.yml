@@ -2141,6 +2141,11 @@ categorizations:
       - "property:include-in-notice-file"
       - "permissive"
 
+  - id: "verbatim-distribution-license"
+    categories:
+      - "property:include-in-notice-file"
+      - "permissive"
+
   - id: "gary-s-brown"
     categories:
       - "permissive"
