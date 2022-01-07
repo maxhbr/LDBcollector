@@ -17,9 +17,12 @@
 ;
 
 (ns lice-comb.spdx-test
-  (:require [clojure.test    :refer [deftest testing is]]
-            [clojure.java.io :as io]
-            [lice-comb.spdx  :refer [name->ids uri->id text->ids]]))
+  (:require [clojure.test               :refer [deftest testing is use-fixtures]]
+            [clojure.java.io            :as io]
+            [lice-comb.test-boilerplate :refer [fixture]]
+            [lice-comb.spdx             :refer [name->ids uri->id text->ids]]))
+
+(use-fixtures :once fixture)
 
 ; Note: these tests should be extended indefinitely, as it exercises the guts of the matching algorithm
 (deftest name->ids-tests

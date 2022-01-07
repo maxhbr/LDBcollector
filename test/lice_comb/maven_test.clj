@@ -17,8 +17,11 @@
 ;
 
 (ns lice-comb.maven-test
-  (:require [clojure.test    :refer [deftest testing is]]
-            [lice-comb.maven :refer [pom->ids]]))
+  (:require [clojure.test               :refer [deftest testing is use-fixtures]]
+            [lice-comb.test-boilerplate :refer [fixture]]
+            [lice-comb.maven            :refer [pom->ids]]))
+
+(use-fixtures :once fixture)
 
 (def test-data-path "./test/lice_comb/data")
 
