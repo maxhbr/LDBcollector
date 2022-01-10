@@ -1960,16 +1960,15 @@ categorizations:
 
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/Autoconf-exception-2.0.html
-  - id: "GPL-2.0-or-later-WITH-Autoconf-exception-2.0"
+  - id: "GPL-2.0-or-later WITH Autoconf-exception-2.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
-  # https://spdx.org/licenses/GPL-2.0-or-later.html
-  # https://spdx.org/licenses/Autoconf-exception-2.0.html
-  - id: "GPL-2.0-or-later WITH Autoconf-exception-2.0"
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "GPL-2.0-or-later-WITH-Autoconf-exception-2.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
