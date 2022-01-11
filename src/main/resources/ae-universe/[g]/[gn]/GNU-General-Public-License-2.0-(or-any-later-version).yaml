@@ -44,6 +44,8 @@ alternativeNames:
   - "GNU General Public License as published by the Free Software Foundation (the \"GPL\"); either version 2 of the GPL, or (at your option) any later version"
   - "GNU General Public License, either version 2 or (at your opinion) any newer version"
   - "GNU General Public License, V2 or later"
+  - "GNU General Public License either version 2 or (at your option) any later version"
+  - "GNU General Public License, as published by the Free Sofware Foundation; either version 2 of the license or (at your option) any later version"
 
 otherIds: 
   - "scancode:gpl-2.0-plus"

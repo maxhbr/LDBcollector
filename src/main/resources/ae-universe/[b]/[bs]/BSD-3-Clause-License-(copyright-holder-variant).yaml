@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "BSD 3-Clause License (copyright holder variant)"
+category: "BSD"
+shortName: "BSD-3-Clause-Copyright"
+
+alternativeNames:
+  - "http://asm.objectweb.org/license.html"
+
+otherIds: 
+  - "scancode:bsd-3-clause-no-trademark"
+  - "scancode:bsd-new"
+  - "osi:BSD-3"
+  - "scancode:bsd-new-nomod"

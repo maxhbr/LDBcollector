@@ -7,8 +7,5 @@ shortName: "MIT-alike-PKINIT"
 
 unspecific: true
 
-alternativeNames:
-  - "MIT alike (PKINIT)"
-
 otherIds: 
   - "scancode:michigan-disclaimer"

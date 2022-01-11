@@ -48,8 +48,10 @@ alternativeNames:
   - "Version 2 of the GNU General Public License"
   - "GNU Public License version 2"
   - "GPL version 2"
-  - "GNU General Public License, v. 2.0"
   - "GNU General Public License (v2.0"
+  - "GNU Public License (GPL) Version2"
+  - "GNU General Public License, v.2"
+  - "GNU General Public License (Version 2.0)"
 
 otherIds: 
   - "scancode:gpl-2.0"

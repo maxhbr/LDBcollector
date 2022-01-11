@@ -90,6 +90,7 @@ alternativeNames:
   - "GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version"
   - "GNU Lesser General Public License (LGPL) as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version"
   - "GNU Lesser General Public License (LGPL) version 3 or later"
+  - "Lesser GNU General Public License as published by the Free Software Foundation either version 3 of the License or (at your option) any later version"
 
 otherIds: 
   - "scancode:lgpl-3.0-plus"

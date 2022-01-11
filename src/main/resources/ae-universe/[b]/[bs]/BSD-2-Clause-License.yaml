@@ -22,6 +22,7 @@ alternativeNames:
   - "FreeBSD License"
   - "two-clause BSD License"
   - "2-Clause BSD license"
+  - "2 clause BSD license"
 
 otherIds: 
   - "scancode:bsd-simplified"

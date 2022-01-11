@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "Developer Certificate of Origin 1.1"
-category: "Developer Certificate of Origin 1.1"
+category: "Developer Certificate of Origin"
 shortName: "DCO-1.1"
 
 alternativeNames:
@@ -10,7 +10,6 @@ alternativeNames:
   - "Developer Certificate of Origin Version 1.1"
   - "Developer's Certificate of Origin 1.1"
   - "http://developercertificate.org/"
-  - "GnuPG Developer's Certificate of Origin.  Version 1.0"
 
 otherIds: 
   - "scancode:dco-1.1"
