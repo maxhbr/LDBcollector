@@ -37,8 +37,8 @@
 |[Yensdesign License]([ye]/Yensdesign-License.yaml)|Yensdesign License|Yensdesign| | | [yensdesign](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yensdesign.LICENSE) | [yensdesign](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yensdesign.LICENSE) |terms|
 |[YOLO License 1.0]([yo]/YOLO-License-1.0.yaml)|YOLO License|YOLO-1.0| | | [yolo-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yolo-1.0.LICENSE) | |terms|
 |[YOLO License 2.0]([yo]/YOLO-License-2.0.yaml)|YOLO License|YOLO-2.0| | | [yolo-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yolo-2.0.LICENSE) | |terms|
-|[YPL 1.0]([yp]/YPL-1.0.yaml)|YPL| |[YPL-1.0](https://spdx.org/licenses/preview/YPL-1.0.html)| | [ypl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.0.LICENSE) | [ypl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.0.LICENSE) |terms|
-|[YPL 1.1]([yp]/YPL-1.1.yaml)|YPL| |[YPL-1.1](https://spdx.org/licenses/preview/YPL-1.1.html)| | [ypl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.1.LICENSE) | [ypl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.1.LICENSE) |terms|
+|[YPL 1.0]([yp]/YPL-1.0.yaml)|YPL| |[YPL-1.0](https://spdx.org/licenses/YPL-1.0.html)| | [ypl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.0.LICENSE) | [ypl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.0.LICENSE) |terms|
+|[YPL 1.1]([yp]/YPL-1.1.yaml)|YPL| |[YPL-1.1](https://spdx.org/licenses/YPL-1.1.html)| | [ypl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.1.LICENSE) | [ypl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.1.LICENSE) |terms|
 
 This is generated content.
 
