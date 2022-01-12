@@ -1446,7 +1446,6 @@ categorizations:
 
   - id: "PSF-2.0"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1472,25 +1471,21 @@ categorizations:
 
   - id: "LicenseRef-scancode-psf-3.7.2"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-secret-labs-2011"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "NCSA"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "Qhull"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1507,7 +1502,6 @@ categorizations:
 
   - id: "LicenseRef-scancode-sunpro"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1517,7 +1511,6 @@ categorizations:
 
   - id: "LicenseRef-scancode-mit-nagy"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1531,13 +1524,11 @@ categorizations:
 
   - id: "LicenseRef-scancode-mit-modern"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-srgb"
     categories:
-      - "property:unchecked"
       - "proprietary-free"
       - "property:include-in-notice-file"
 
@@ -1556,8 +1547,6 @@ categorizations:
   # https://spdx.org/licenses/openvpn-openssl-exception.html
   - id: "LicenseRef-scancode-openssl-exception-lgpl-3.0-plus"
     categories:
-      - "property:unchecked"
-      - "property:include-in-notice-file"
       - "copyleft-LGPL"
       - "property:include-in-notice-file"
       - "property:antitivo-clause"
@@ -1567,7 +1556,6 @@ categorizations:
 
   - id: "LicenseRef-scancode-mit-synopsys"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1579,7 +1567,6 @@ categorizations:
 
   - id: "ZPL-2.1"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1602,7 +1589,6 @@ categorizations:
 
   - id: "LicenseRef-scancode-mozilla-gc"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
