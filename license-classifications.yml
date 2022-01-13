@@ -430,7 +430,7 @@ categorizations:
   # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "GPL-2.0-only WITH Classpath-exception-2.0"
     categories:
-      - "copyleft-strong"
+      - "copyleft-module-level"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
@@ -439,7 +439,7 @@ categorizations:
   # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "GPL-2.0 WITH Classpath-exception-2.0"
     categories:
-      - "copyleft-strong"
+      - "copyleft-module-level"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
@@ -447,7 +447,7 @@ categorizations:
   # https://scancode-licensedb.aboutcode.org/oracle-openjdk-classpath-exception-2.0.html
   - id: "LicenseRef-scancode-oracle-openjdk-classpath-exception-2.0"
     categories:
-      - "copyleft-strong"
+      - "copyleft-module-level"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
