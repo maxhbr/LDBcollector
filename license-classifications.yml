@@ -444,6 +444,14 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  # https://scancode-licensedb.aboutcode.org/oracle-openjdk-classpath-exception-2.0.html
+  - id: "LicenseRef-scancode-oracle-openjdk-classpath-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/GPL-2.0-only.html
   # https://spdx.org/licenses/OpenJDK-assembly-exception-1.0.html
   - id: "GPL-2.0 WITH OpenJDK-assembly-exception-1.0"
