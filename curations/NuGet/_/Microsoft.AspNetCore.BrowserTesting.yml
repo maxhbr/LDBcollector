@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.BrowserTesting:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Shared/BrowserTesting/src"

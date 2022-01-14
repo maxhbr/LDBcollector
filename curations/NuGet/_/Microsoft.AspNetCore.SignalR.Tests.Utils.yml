@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.SignalR.Tests.Utils:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/SignalR/common/testassets/Tests.Utils"

@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.Extensions.Caching.SqlServer:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Caching/SqlServer/src"

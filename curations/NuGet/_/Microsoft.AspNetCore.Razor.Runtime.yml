@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.Razor.Runtime:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/Razor.Runtime/src"

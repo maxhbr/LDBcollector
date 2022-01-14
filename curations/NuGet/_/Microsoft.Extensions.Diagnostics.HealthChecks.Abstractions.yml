@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/HealthChecks/Abstractions/src"

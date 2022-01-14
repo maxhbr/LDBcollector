@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.AzureAppServices.HostingStartup:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Azure/AzureAppServices.HostingStartup/src"

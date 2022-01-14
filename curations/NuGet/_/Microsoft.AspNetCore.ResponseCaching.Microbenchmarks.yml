@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.ResponseCaching.Microbenchmarks:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Middleware/perf/ResponseCaching.Microbenchmarks"

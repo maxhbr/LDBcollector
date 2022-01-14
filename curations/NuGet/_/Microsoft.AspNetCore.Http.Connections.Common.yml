@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.Http.Connections.Common:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/SignalR/common/Http.Connections.Common/src"

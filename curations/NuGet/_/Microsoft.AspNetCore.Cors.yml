@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.Cors:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Middleware/CORS/src"

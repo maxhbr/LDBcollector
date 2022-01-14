@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.SpaServices.Extensions:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Middleware/Spa/SpaServices.Extensions/src"

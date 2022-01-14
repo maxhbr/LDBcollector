@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.Mvc.Formatters.Json:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/Mvc.Formatters.Json/src"

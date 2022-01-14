@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.Http.Connections.Client:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/SignalR/clients/csharp/Http.Connections.Client/src"

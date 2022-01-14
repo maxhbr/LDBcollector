@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.Extensions.Identity.Core:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Identity/Extensions.Core/src"
