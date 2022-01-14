@@ -45,6 +45,24 @@ tasks.register("generateAzureSdkForNetCurations") {
     }
 }
 
+tasks.register("generateDotNetRuntimeCurations") {
+    group = "generate curations"
+
+    doLast {
+        getFilesFromRepository(owner = "dotnet", repository = "runtime")
+            .filter { it.startsWith("src/libraries/") && it.endsWith(".sln") }
+            .forEach {
+                val project = it.substringAfterLast("/").removeSuffix(".sln")
+                val path = it.substringBeforeLast("/")
+                val id = Identifier("NuGet::$project")
+
+                if (project.contains("System.") || project.contains("Microsoft.")) {
+                    createPathCuration(id, path)
+                }
+            }
+    }
+}
+
 fun getFilesFromRepository(
     owner: String,
     repository: String,
