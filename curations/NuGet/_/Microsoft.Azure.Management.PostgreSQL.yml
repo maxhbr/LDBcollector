@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.Azure.Management.PostgreSQL:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/postgresql/Microsoft.Azure.Management.PostgreSQL"

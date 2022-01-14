@@ -1,0 +1,5 @@
+- id: "NuGet::Azure.IoT.Hub.Service:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/iot/Azure.IoT.Hub.Service"

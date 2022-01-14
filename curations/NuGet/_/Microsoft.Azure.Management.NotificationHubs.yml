@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.Azure.Management.NotificationHubs:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/notificationhubs/Microsoft.Azure.Management.NotificationHubs"

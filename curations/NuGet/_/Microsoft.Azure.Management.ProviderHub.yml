@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.Azure.Management.ProviderHub:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/providerhub/Microsoft.Azure.Management.ProviderHub"
