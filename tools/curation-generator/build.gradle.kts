@@ -63,6 +63,23 @@ tasks.register("generateDotNetRuntimeCurations") {
     }
 }
 
+tasks.register("generateAspNetCoreCurations") {
+    group = "generate curations"
+
+    doLast {
+        getFilesFromRepository(owner = "dotnet", repository = "aspnetcore")
+            .filter { it.startsWith("src/") && it.endsWith(".csproj") }
+            .forEach {
+                val project = it.substringAfterLast("/").removeSuffix(".csproj")
+                val path = it.substringBeforeLast("/")
+                val id = Identifier("NuGet::$project")
+                if (project.startsWith("Microsoft.") && !project.endsWith("Tests") && !project.endsWith("Test")) {
+                    createPathCuration(id, path)
+                }
+            }
+    }
+}
+
 fun getFilesFromRepository(
     owner: String,
     repository: String,
