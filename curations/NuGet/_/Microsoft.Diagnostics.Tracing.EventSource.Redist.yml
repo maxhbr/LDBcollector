@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.Diagnostics.Tracing.EventSource.Redist:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/libraries/Microsoft.Diagnostics.Tracing.EventSource.Redist"
