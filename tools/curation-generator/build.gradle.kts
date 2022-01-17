@@ -91,7 +91,6 @@ tasks.register("verifyPackageCurations") {
         val issues = mutableListOf<String>()
 
         curationsDir.walk().filter { it.isFile }.forEach { file ->
-            count++
             val relativePath = file.relativeTo(curationsDir).invariantSeparatorsPath
 
             runCatching {
@@ -135,6 +134,8 @@ tasks.register("verifyPackageCurations") {
                                 "'$relativePath'. The expected file is '$expectedPath'."
                     }
                 }
+            }.onSuccess {
+                ++count
             }.onFailure { e ->
                 issues += "Could not parse curations from file '$relativePath': ${e.message}"
             }
