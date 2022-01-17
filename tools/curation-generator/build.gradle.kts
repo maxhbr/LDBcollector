@@ -1,6 +1,7 @@
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
+import com.fasterxml.jackson.module.kotlin.readValue
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.ossreviewtoolkit.model.Identifier
@@ -8,6 +9,7 @@ import org.ossreviewtoolkit.model.PackageCuration
 import org.ossreviewtoolkit.model.PackageCurationData
 import org.ossreviewtoolkit.model.VcsInfoCurationData
 import org.ossreviewtoolkit.model.jsonMapper
+import org.ossreviewtoolkit.model.mapper
 import org.ossreviewtoolkit.model.mapperConfig
 import org.ossreviewtoolkit.utils.common.encodeOr
 import org.ossreviewtoolkit.utils.common.safeMkdirs
@@ -15,6 +17,7 @@ import org.ossreviewtoolkit.utils.common.safeMkdirs
 val githubUsername: String by project
 val githubToken: String by project
 
+val curationsDir = rootDir.resolve("../../curations")
 val mapper = YAMLMapper(YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER)).apply(mapperConfig)
 
 buildscript {
@@ -80,6 +83,72 @@ tasks.register("generateAspNetCoreCurations") {
     }
 }
 
+tasks.register("verifyPackageCurations") {
+    group = "verification"
+
+    doLast {
+        var count = 0
+        val issues = mutableListOf<String>()
+
+        curationsDir.walk().filter { it.isFile }.forEach { file ->
+            count++
+            val relativePath = file.relativeTo(curationsDir).invariantSeparatorsPath
+
+            runCatching {
+                if (file.extension != "yml") {
+                    issues += "The file '$relativePath' does not use the expected extension '.yml'."
+                }
+
+                val curations = file.mapper().readValue<List<PackageCuration>>(file)
+
+                if (curations.isEmpty()) {
+                    issues += "The file '$relativePath' does not contain any curations."
+                }
+
+                curations.forEach { curation ->
+                    if (curation.id.name.isBlank()) {
+                        issues += "Only curations for specific packages are allowed, but the curation for package " +
+                                "'${curation.id.toCoordinates()}' in file '$relativePath' does not have a package name."
+                    }
+
+                    if (curation.data.authors != null) {
+                        issues += "Curating authors is not allowed, but the curation for package " +
+                                "'${curation.id.toCoordinates()}' in file '$relativePath' sets the authors to " +
+                                "'${curation.data.authors}'."
+                    }
+
+                    if (curation.data.concludedLicense != null) {
+                        issues += "Curating concluded licenses is not allowed, but the curation for package " +
+                                "'${curation.id.toCoordinates()}' in file '$relativePath' sets the concluded license " +
+                                "to '${curation.data.concludedLicense}'."
+                    }
+
+                    if (curation.data.declaredLicenseMapping.isNotEmpty()) {
+                        issues += "Curating declared licenses is not allowed, but the curation for package " +
+                                "'${curation.id.toCoordinates()}' in file '$relativePath' sets the declared license " +
+                                "mapping to '${curation.data.declaredLicenseMapping}'."
+                    }
+
+                    val expectedPath = curation.id.toCurationPath()
+                    if (relativePath != expectedPath) {
+                        issues += "The curation for package '${curation.id.toCoordinates()}' is in the wrong file " +
+                                "'$relativePath'. The expected file is '$expectedPath'."
+                    }
+                }
+            }.onFailure { e ->
+                issues += "Could not parse curations from file '$relativePath': ${e.message}"
+            }
+
+        }
+
+        if (issues.isNotEmpty()) {
+            throw GradleException("Found ${issues.size} curation issues:\n${issues.joinToString("\n")}")
+        } else {
+            println("Successfully verified $count package curations.")
+        }
+    }
+}
+
 fun getFilesFromRepository(
     owner: String,
     repository: String,
@@ -117,7 +186,7 @@ fun createPathCuration(id: Identifier, path: String) {
         )
     )
 
-    val file = rootDir.resolve("../../curations/${id.toCurationPath()}")
+    val file = curationsDir.resolve(id.toCurationPath())
     file.parentFile.safeMkdirs()
     mapper.writeValue(file, listOf(curation))
 }
