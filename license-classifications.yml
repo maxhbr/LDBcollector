@@ -528,6 +528,27 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:unchecked"
 
+  # https://spdx.org/licenses/GFDL-1.1.html
+  - id: "GFDL-1.1"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.1.html
+  - id: "GFDL-1.1-or-later"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # https://spdx.org/licenses/GFDL-1.1.html
+  - id: "GFDL-1.1-only"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
   # https://spdx.org/licenses/GFDL-1.3.html
   - id: "GFDL-1.2-or-later"
     categories:
@@ -758,6 +779,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/W3C.html
+  - id: "W3C-style"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/WTFPL.html
   - id: "WTFPL"
     categories:
@@ -892,6 +919,20 @@ categorizations:
 
   # https://spdx.org/licenses/LPPL-1.0.html
   - id: "LPPL-1.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+        #
+  # https://spdx.org/licenses/LPPL-1.0.html
+  - id: "LPPL-1.0-or-later"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LPPL-1.2.html
+  - id: "LPPL-1.2-or-later"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
@@ -1199,6 +1240,10 @@ categorizations:
       - "irrelevant"
 
   - id: "NOT-public-domain"
+    categories:
+      - "irrelevant"
+
+  - id: "Patent-ref"
     categories:
       - "irrelevant"
 
@@ -1785,6 +1830,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/OLDAP-2.8.html
+  - id: "OLDAP-2.8"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # hhttp://pcre.sourceforge.net/license.txttps://www.openldap.org/software/release/license.html
   - id: "LicenseRef-PCRE"
     categories:
@@ -2139,6 +2190,12 @@ categorizations:
       - "property:include-in-notice-file"
       - "permissive"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-verbatim-distribution-license"
+    categories:
+      - "property:include-in-notice-file"
+      - "permissive"
+
   - id: "gary-s-brown"
     categories:
       - "permissive"
@@ -2187,6 +2244,16 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-MIT-old-style-no-adv"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-mit-no-advert-export-control"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mit-old-style-no-advert"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -2519,6 +2586,11 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/Autoconf-exception-3.0.html
+  - id: "gnu-javamail-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/BSD-Protection.html
   - id: "BSD-Protection"
     categories:
@@ -2673,6 +2745,147 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "BSD-2"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "NotreDame-style"
+    categories:
+      - "permissive"
+
+  - id: "Unicode-TOU"
+    categories:
+      - "proprietary-free"
+
+    # https://www.highcharts.com/license
+  - id: "LicenseRef-highsoft-standard-license-agreement"
+    categories:
+      - "commercial"
+
+  # https://spdx.org/licenses/Spencer-86.html
+  - id: "Spencer-86"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/Spencer-94.html
+  - id: "Spencer-94"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "redistribution-only-license"
+    categories:
+      - "proprietary-free"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-redistribution-only-license"
+    categories:
+      - "proprietary-free"
+
+  - id: "tso-license"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-tso-license"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "Non-profit"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Non-profit"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-GLib-manual"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  - id: "LicenseRef-Red-Hat-Permissive-No-Warranty-No-Liability"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-tim-janik-2003"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/Unicode-DFS-2015.html
+  - id: "Unicode-DFS-2015"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "Not-Free"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-verbatim-no-modifications"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-scancode-frontier-1.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+  - id: "LicenseRef-bsd-original-uc-1986"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-naist-2003"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "naist-2003"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://tldp.org/COPYRIGHT.html
+  - id: "LDPL"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-agafari-font-non-commercial"
+    categories:
+      - "free-restricted"
+      - "property:non-commercial"
+
+  - id: "RedHat"
+    categories:
+      - "commercial"
+
+  - id: "U-Mich-style"
+    categories:
+      - "permissive"
+
+  - id: "U-Michigan"
+    categories:
+      - "permissive"
+
+  # https://spdx.org/licenses/OLDAP-2.8.html
+  - id: "OLDAP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/OLDAP-2.8.html
+  - id: "WordNet-3.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
