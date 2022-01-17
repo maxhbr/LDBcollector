@@ -37,7 +37,7 @@ tasks.register("generateAzureSdkForNetCurations") {
 
     doLast {
         getFilesFromRepository(owner = "Azure", repository = "azure-sdk-for-net")
-            .filter { it.startsWith("sdk/") && it.endsWith(".sln") && it.contains("Azure.") }
+            .filter { it.startsWith("sdk/") && it.endsWith(".sln") && "Azure." in it }
             .forEach {
                 val project = it.substringAfterLast("/").removeSuffix(".sln")
                 val path = it.substringBeforeLast("/")
@@ -59,7 +59,7 @@ tasks.register("generateDotNetRuntimeCurations") {
                 val path = it.substringBeforeLast("/")
                 val id = Identifier("NuGet::$project")
 
-                if (project.contains("System.") || project.contains("Microsoft.")) {
+                if ("System." in project || "Microsoft." in project) {
                     createPathCuration(id, path)
                 }
             }
