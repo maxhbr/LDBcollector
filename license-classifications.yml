@@ -1184,14 +1184,20 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # https://enterprise.dejacode.com/licenses/public/fsf-unlimited-no-warranty/?_list_filters=q%3Dfsf%2Bunlimited
+  # https://scancode-licensedb.aboutcode.org/fsf-unlimited-no-warranty.html
   - id: "LicenseRef-FSF-Unlimited-No-Warranty"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # https://enterprise.dejacode.com/licenses/public/fsf-unlimited-no-warranty/?_list_filters=q%3Dfsf%2Bunlimited
+  # https://scancode-licensedb.aboutcode.org/fsf-unlimited-no-warranty.html
   - id: "LicenseRef-fsf-unlimited-no-warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/fsf-unlimited-no-warranty.html
+  - id: "fsf-unlimited-no-warranty"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -1240,6 +1246,10 @@ categorizations:
       - "irrelevant"
 
   - id: "NOT-public-domain"
+    categories:
+      - "irrelevant"
+
+  - id: "GPL-exception"
     categories:
       - "irrelevant"
 
@@ -1493,6 +1503,11 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "CC-BY-SA-2.5"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+
+  - id: "CC-BY-SA-2.0"
     categories:
       - "copyleft-file-level"
       - "property:include-in-notice-file"
@@ -2212,6 +2227,18 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  - id: "LGPL-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "Perl-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "Sun-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "Apache"
     categories:
       - "property:unclear-scanner-finding"
@@ -2825,6 +2852,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/Unicode-DFS-2016.html
+  - id: "Unicode-DFS-2016"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "Not-Free"
     categories:
       - "property:unclear-scanner-finding"
@@ -2889,3 +2922,52 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  - id: "NRL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:advertising-clause"
+
+  - id: "USC"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "Unicode"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/ietf.html
+  - id: "IETF"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/ietf.html
+  - id: "IETF-style"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # http://publib.boulder.ibm.com/tividd/td/TWS/SC32-1267-00/en_US/HTML/eqqm1mst68.htm
+  - id: "SSLeay"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:advertising-clause"
+
+  # https://web.cs.ucdavis.edu/~rogaway/ocb/license1.pdf
+  - id: "LicenseRef-scancode-ocb-open-source-2013"
+    categories:
+      - "proprietary-free"
+
+  # https://spdx.org/licenses/libselinux-1.0.html
+  - id: "libselinux-1.0"
+    categories:
+      - "public-domain"
+
+  - id: "LicenseRef-IBM-US-Government-Restriction"
+    categories:
+      - "proprietary-free"
