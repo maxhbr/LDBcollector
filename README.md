@@ -8,8 +8,16 @@ This repository contains configuration files for the [OSS Review Toolkit](https:
 
 The [curations](./curations/) directory contains
 [package curations](https://github.com/oss-review-toolkit/ort/blob/master/docs/config-file-curations-yml.md) for
-open source packages. At this time, only technical curations are allowed, for example adding missing VCS information.
-Curations for legally relevant properties like licenses or authors are forbidden.
+open source packages.
+
+Package curations submitted to this repository must adhere to the following rules:
+
+* Declaring authors, declared licenses, and concluded licenses is currently not allowed.
+* Curations that apply to whole namespaces by only setting the type and namespace of the identifier are not allowed.
+* The curation file path must be `curations/[type]/[namespace]/[name].yml`. If the namespace is empty, use "_". For
+  example a curation for the package `NuGet::Azure.Core:1.2.0` must be in the file `curation/NuGet/_/Azure.Core.yml`.
+
+Package configurations containing license finding curations or path excludes are not yet supported.
 
 ### Tools
 
