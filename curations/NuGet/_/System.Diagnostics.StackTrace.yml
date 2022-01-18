@@ -1,4 +1,4 @@
-- id: "NuGet::System.Diagnostics.StackTrace:"
+- id: "NuGet::System.Diagnostics.StackTrace:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

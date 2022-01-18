@@ -1,4 +1,4 @@
-- id: "NuGet::System.Net.WebProxy:"
+- id: "NuGet::System.Net.WebProxy:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

@@ -1,4 +1,4 @@
-- id: "NuGet::System.Diagnostics.EventLog:"
+- id: "NuGet::System.Diagnostics.EventLog:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

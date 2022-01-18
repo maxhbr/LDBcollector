@@ -1,4 +1,4 @@
-- id: "NuGet::Microsoft.Extensions.DependencyModel:"
+- id: "NuGet::Microsoft.Extensions.DependencyModel:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

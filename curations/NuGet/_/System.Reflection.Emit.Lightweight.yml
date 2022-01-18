@@ -1,4 +1,4 @@
-- id: "NuGet::System.Reflection.Emit.Lightweight:"
+- id: "NuGet::System.Reflection.Emit.Lightweight:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

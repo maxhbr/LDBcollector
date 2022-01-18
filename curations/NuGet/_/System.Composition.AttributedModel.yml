@@ -1,4 +1,4 @@
-- id: "NuGet::System.Composition.AttributedModel:"
+- id: "NuGet::System.Composition.AttributedModel:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

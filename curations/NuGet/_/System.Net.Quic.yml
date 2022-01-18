@@ -1,4 +1,4 @@
-- id: "NuGet::System.Net.Quic:"
+- id: "NuGet::System.Net.Quic:[6.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

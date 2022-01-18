@@ -1,4 +1,4 @@
-- id: "NuGet::System.Runtime.CompilerServices.Unsafe:"
+- id: "NuGet::System.Runtime.CompilerServices.Unsafe:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

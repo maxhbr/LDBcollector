@@ -1,4 +1,4 @@
-- id: "NuGet::Microsoft.Extensions.Logging.EventLog:"
+- id: "NuGet::Microsoft.Extensions.Logging.EventLog:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

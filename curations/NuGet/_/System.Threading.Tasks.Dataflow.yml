@@ -1,4 +1,4 @@
-- id: "NuGet::System.Threading.Tasks.Dataflow:"
+- id: "NuGet::System.Threading.Tasks.Dataflow:[5.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:
