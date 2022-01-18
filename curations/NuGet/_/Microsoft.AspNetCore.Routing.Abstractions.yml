@@ -1,4 +1,4 @@
-- id: "NuGet::Microsoft.AspNetCore.Routing.Abstractions:"
+- id: "NuGet::Microsoft.AspNetCore.Routing.Abstractions:[2.1.7,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

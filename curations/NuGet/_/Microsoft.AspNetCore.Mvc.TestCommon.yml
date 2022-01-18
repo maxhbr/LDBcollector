@@ -1,0 +1,10 @@
+- id: "NuGet::Microsoft.AspNetCore.Mvc.TestCommon:[2.1.7,2.1.8]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/test/Microsoft.AspNetCore.Mvc.TestCommon"
+- id: "NuGet::Microsoft.AspNetCore.Mvc.TestCommon:[2.1.9,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/shared/Mvc.TestCommon"

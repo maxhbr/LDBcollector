@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.Razor.Test.ComponentShim:[5.0.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/test/Microsoft.AspNetCore.Razor.Test.ComponentShim"

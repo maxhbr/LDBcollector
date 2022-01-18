@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.NodeServices.Sockets:[2.1.7,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/JavaScriptServices/src/Microsoft.AspNetCore.NodeServices.Sockets"

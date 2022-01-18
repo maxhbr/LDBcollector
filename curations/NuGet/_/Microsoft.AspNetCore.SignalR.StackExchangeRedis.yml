@@ -1,4 +1,9 @@
-- id: "NuGet::Microsoft.AspNetCore.SignalR.StackExchangeRedis:"
+- id: "NuGet::Microsoft.AspNetCore.SignalR.StackExchangeRedis:2.2.1"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/SignalR/src/Microsoft.AspNetCore.SignalR.StackExchangeRedis"
+- id: "NuGet::Microsoft.AspNetCore.SignalR.StackExchangeRedis:[2.2.2,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

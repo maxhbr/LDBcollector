@@ -1,0 +1,10 @@
+- id: "NuGet::Microsoft.AspNetCore.Razor.Internal.Transport:[5.0.0,5.0.13]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/tools/Microsoft.Aspnetcore.Razor.Internal.Transport"
+- id: "NuGet::Microsoft.AspNetCore.Razor.Internal.Transport:[6.0.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/tools/Microsoft.AspNetCore.Razor.Internal.Transport"

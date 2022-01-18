@@ -1,4 +1,4 @@
-- id: "NuGet::Microsoft.AspNetCore.TestHost:"
+- id: "NuGet::Microsoft.AspNetCore.TestHost:[2.1.7,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

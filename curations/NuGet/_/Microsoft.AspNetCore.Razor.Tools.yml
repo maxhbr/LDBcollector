@@ -1,0 +1,5 @@
+- id: "NuGet::Microsoft.AspNetCore.Razor.Tools:[2.1.7,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/src/Microsoft.AspNetCore.Razor.Tools"

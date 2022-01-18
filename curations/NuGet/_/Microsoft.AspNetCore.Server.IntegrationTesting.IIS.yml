@@ -1,4 +1,9 @@
-- id: "NuGet::Microsoft.AspNetCore.Server.IntegrationTesting.IIS:"
+- id: "NuGet::Microsoft.AspNetCore.Server.IntegrationTesting.IIS:[2.2.0,2.2.1]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/IISIntegration/src/Microsoft.AspNetCore.Server.IntegrationTesting.IIS"
+- id: "NuGet::Microsoft.AspNetCore.Server.IntegrationTesting.IIS:[2.2.2,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

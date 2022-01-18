@@ -1,4 +1,9 @@
-- id: "NuGet::Microsoft.DotNet.Web.ProjectTemplates:"
+- id: "NuGet::Microsoft.DotNet.Web.ProjectTemplates:[2.1.7,2.2.13]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Templating/src/Microsoft.DotNet.Web.ProjectTemplates"
+- id: "NuGet::Microsoft.DotNet.Web.ProjectTemplates:[3.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

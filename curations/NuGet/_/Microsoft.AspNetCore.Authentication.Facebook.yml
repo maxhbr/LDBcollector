@@ -1,4 +1,19 @@
-- id: "NuGet::Microsoft.AspNetCore.Authentication.Facebook:"
+- id: "NuGet::Microsoft.AspNetCore.Authentication.Facebook:2.1.7"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Security/src/Microsoft.AspNetCore.Authentication.Facebook"
+- id: "NuGet::Microsoft.AspNetCore.Authentication.Facebook:2.2.1"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Security/src/Microsoft.AspNetCore.Authentication.Facebook"
+- id: "NuGet::Microsoft.AspNetCore.Authentication.Facebook:[2.1.8,2.1.31]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Security/Authentication/Facebook/src"
+- id: "NuGet::Microsoft.AspNetCore.Authentication.Facebook:[2.2.2,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

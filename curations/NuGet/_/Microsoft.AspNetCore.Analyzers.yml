@@ -1,4 +1,14 @@
-- id: "NuGet::Microsoft.AspNetCore.Analyzers:"
+- id: "NuGet::Microsoft.AspNetCore.Analyzers:[2.1.0,2.1.5]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.Analyzers"
+- id: "NuGet::Microsoft.AspNetCore.Analyzers:[2.1.6,2.1.7]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Packages/Microsoft.AspNetCore.Analyzers"
+- id: "NuGet::Microsoft.AspNetCore.Analyzers:[3.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

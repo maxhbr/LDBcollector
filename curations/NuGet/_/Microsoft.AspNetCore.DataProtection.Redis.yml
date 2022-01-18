@@ -1,0 +1,15 @@
+- id: "NuGet::Microsoft.AspNetCore.DataProtection.Redis:2.1.6"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/DataProtection/src/Microsoft.AspNetCore.DataProtection.Redis"
+- id: "NuGet::Microsoft.AspNetCore.DataProtection.Redis:[2.0.1,2.0.2]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.DataProtection.Redis"
+- id: "NuGet::Microsoft.AspNetCore.DataProtection.Redis:[2.1.7,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/DataProtection/Redis/src"

@@ -1,4 +1,4 @@
-- id: "NuGet::Microsoft.AspNetCore.ANCMSymbols:"
+- id: "NuGet::Microsoft.AspNetCore.ANCMSymbols:[3.0.0,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

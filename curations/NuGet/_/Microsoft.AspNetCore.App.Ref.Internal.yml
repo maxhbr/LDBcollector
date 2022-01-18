@@ -1,4 +1,4 @@
-- id: "NuGet::Microsoft.AspNetCore.App.Ref.Internal:"
+- id: "NuGet::Microsoft.AspNetCore.App.Ref.Internal:[3.1.6,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

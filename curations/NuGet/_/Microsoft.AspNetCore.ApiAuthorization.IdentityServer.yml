@@ -1,4 +1,9 @@
-- id: "NuGet::Microsoft.AspNetCore.ApiAuthorization.IdentityServer:"
+- id: "NuGet::Microsoft.AspNetCore.ApiAuthorization.IdentityServer:2.2.1"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Identity/src/ApiAuth.IS"
+- id: "NuGet::Microsoft.AspNetCore.ApiAuthorization.IdentityServer:[2.2.2,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:

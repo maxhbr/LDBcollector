@@ -1,4 +1,14 @@
-- id: "NuGet::Microsoft.AspNetCore.DataProtection.Abstractions:"
+- id: "NuGet::Microsoft.AspNetCore.DataProtection.Abstractions:2.1.6"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/DataProtection/src/Microsoft.AspNetCore.DataProtection.Abstractions"
+- id: "NuGet::Microsoft.AspNetCore.DataProtection.Abstractions:[2.0.1,2.0.2]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.DataProtection.Abstractions"
+- id: "NuGet::Microsoft.AspNetCore.DataProtection.Abstractions:[2.1.7,)"
   curations:
     comment: "Set the VCS path of the module inside the multi-module repository."
     vcs:
