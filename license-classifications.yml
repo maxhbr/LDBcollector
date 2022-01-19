@@ -275,6 +275,11 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-BSD-4-Clause-NetBSD"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/BSD-3-Clause.html
   - id: "BSD-3-Clause"
     categories:
@@ -806,6 +811,12 @@ categorizations:
 
   # https://spdx.org/licenses/Zlib.html
   - id: "Zlib"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/Zlib.html
+  - id: "Zlib-style"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -1860,6 +1871,12 @@ categorizations:
 
   # https://www.openldap.org/software/release/license.html
   - id: "LicenseRef-OpenLDAP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+        #
+  # https://spdx.org/licenses/OLDAP-2.0.1.html
+  - id: "OLDAP-2.0.1"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -2970,6 +2987,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-Unicode"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "Unicode"
     categories:
       - "permissive"
@@ -3079,4 +3102,98 @@ categorizations:
   # https://raw.githubusercontent.com/copyleft-next/copyleft-next/master/Releases/copyleft-next-0.3.1
   - id: "copyleft-next-0.3.1"
     categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:unchecked"
+
+  - id: "LicenseRef-bsd-dpt"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-gpl-2.0-adaptec"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-michigan-disclaimer"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "RHeCos-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:unchecked"
+
+  - id: "LicenseRef-synopsys-attribution"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+
+  - id: "OSF-style"
+    categories:
       - "property:unclear-scanner-finding"
+
+  - id: "Keyspan-FW"
+    categories:
+      - "proprietary-free"
+      - "property:unchecked"
+
+  - id: "Nvidia-EULA-b"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-Xceive-license"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-broadcom-linux-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-cavium-linux-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-marvell-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-moxa-linux-firmware"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-qca-technology"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-stmicroelectronics-linux-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "SSH-OpenSSH"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-bsd-credit"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "SISSL"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:unchecked"
