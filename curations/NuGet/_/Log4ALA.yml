@@ -1,0 +1,5 @@
+- id: "NuGet::Log4ALA"
+  curations:
+    comment: "Set the VCS URL, found on the project homepage at https://ptv-logistics.github.io/Log4ALA/."
+    vcs:
+      url: "https://github.com/ptv-logistics/Log4ALA.git"
