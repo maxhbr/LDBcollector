@@ -240,7 +240,7 @@ categorizations:
   # https://spdx.org/licenses/Artistic-2.0.html
   - id: "Artistic-2.0"
     categories:
-      - "copyleft-strong"
+      - "copyleft-module-level"
       - "property:include-in-notice-file"
       - "property:artistic-license"
       - "property:distribute-source-code"
