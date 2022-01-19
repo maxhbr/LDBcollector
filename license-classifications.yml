@@ -3287,3 +3287,8 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  - id: "LicenseRef-Mediatek"
+    categories:
+      - "commercial"
+
