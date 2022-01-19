@@ -756,6 +756,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/OFL-1.1-no-RFN.html
+  - id: "OFL-1.1-no-RFN"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/OpenSSL.html
   - id: "OpenSSL"
     categories:
@@ -763,6 +769,12 @@ categorizations:
       - "property:advertising-clause"
       - "property:include-in-notice-file"
 
+  # https://www.python.org/download/releases/2.1.1/license/
+  - id: "Python-2.1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+        #
   # https://spdx.org/licenses/Python-2.0.html
   - id: "Python-2.0"
     categories:
@@ -1240,6 +1252,10 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "u-boot-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "Libtool-exception"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1249,6 +1265,10 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   - id: "openvpn-openssl-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "GPL-3.0-linking-source-exception"
     categories:
       - "property:AutoConf-or-other-exception"
 
@@ -1762,6 +1782,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "bzip2"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/GPL-3.0-or-later.html
   # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-3.0-or-later WITH Bison-exception-2.2"
@@ -1889,6 +1915,13 @@ categorizations:
 
   # hhttp://pcre.sourceforge.net/license.txttps://www.openldap.org/software/release/license.html
   - id: "LicenseRef-PCRE"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "PCRE"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -2267,6 +2300,10 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  - id: "RSA-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "GPL-possibility"
     categories:
       - "property:unclear-scanner-finding"
@@ -2388,6 +2425,10 @@ categorizations:
   - id: "Microsoft-possibility"
     categories:
       - "property:unclear-scanner-finding"
+
+  - id: "Microsoft"
+    categories:
+      - "proprietary-free"
 
   - id: "UnclassifiedLicense"
     categories:
@@ -2917,7 +2958,7 @@ categorizations:
 
   - id: "LicenseRef-verbatim-no-modifications"
     categories:
-      - "property:unclear-scanner-finding"
+      - "proprietary-free"
 
   - id: "LicenseRef-scancode-frontier-1.0"
     categories:
@@ -3070,6 +3111,10 @@ categorizations:
     categories:
       - "commercial"
 
+  - id: "HP-Compaq"
+    categories:
+      - "irrelevant"
+
   - id: "XFree86"
     categories:
       - "permissive"
@@ -3078,6 +3123,12 @@ categorizations:
   - id: "Intel-WLAN"
     categories:
       - "proprietary-free"
+      - "property:unchecked"
+
+  - id: "Intel-Binary"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
       - "property:unchecked"
 
   - id: "GPL-2.1sic"
@@ -3130,6 +3181,12 @@ categorizations:
       - "property:unchecked"
 
   - id: "LicenseRef-synopsys-attribution"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "synopsys-attribution"
     categories:
       - "free-restricted"
       - "property:include-in-notice-file"
@@ -3197,3 +3254,36 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:unchecked"
+
+  - id: "ZPL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-tested-software"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-Linux-HOWTO"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:unchecked"
+
+  - id: "eCos-2.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:unchecked"
+
+  - id: "eCos-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-freebsd-boot"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
