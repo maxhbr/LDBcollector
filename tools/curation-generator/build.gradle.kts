@@ -145,7 +145,7 @@ tasks.register("verifyPackageCurations") {
         if (issues.isNotEmpty()) {
             throw GradleException("Found ${issues.size} curation issues:\n${issues.joinToString("\n")}")
         } else {
-            println("Successfully verified $count package curations.")
+            logger.quiet("Successfully verified $count package curations.")
         }
     }
 }
@@ -175,7 +175,7 @@ fun getFilesFromRepository(
 }
 
 fun createPathCuration(id: Identifier, path: String) {
-    println("Creating path curation for id=${id.toCoordinates()} path=$path.")
+    logger.quiet("Creating path curation for id=${id.toCoordinates()} path=$path.")
 
     val curation = PackageCuration(
         id = id,
