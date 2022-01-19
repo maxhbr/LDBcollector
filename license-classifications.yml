@@ -709,6 +709,14 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
+  # https://spdx.org/licenses/CUA-OPL-1.0.html
+  - id: "CUA-OPL-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
   # https://spdx.org/licenses/MS-PL.html
   - id: "MS-PL"
     categories:
@@ -1386,6 +1394,17 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-CMU"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "CMU"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "CMU-style"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -2231,6 +2250,10 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  - id: "GPL-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "Perl-possibility"
     categories:
       - "property:unclear-scanner-finding"
@@ -2238,6 +2261,19 @@ categorizations:
   - id: "Sun-possibility"
     categories:
       - "property:unclear-scanner-finding"
+
+  - id: "HP-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "IJG-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "W3C-possibility"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
 
   - id: "Apache"
     categories:
@@ -2981,3 +3017,66 @@ categorizations:
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
+
+  - id: "W3C-IP"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-brian-gladman-3-clause"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "mif-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "CCPL"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "COMMERCIAL"
+    categories:
+      - "commercial"
+
+  - id: "DEC-Unknown-License"
+    categories:
+      - "commercial"
+
+  - id: "HP-DEC"
+    categories:
+      - "commercial"
+
+  - id: "XFree86"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "Intel-WLAN"
+    categories:
+      - "proprietary-free"
+      - "property:unchecked"
+
+  - id: "GPL-2.1sic"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "MS-LPL"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:unchecked"
+
+  - id: "Motorola"
+    categories:
+      - "commercial"
+
+  - id: "Not-for-sale"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # https://raw.githubusercontent.com/copyleft-next/copyleft-next/master/Releases/copyleft-next-0.3.1
+  - id: "copyleft-next-0.3.1"
+    categories:
+      - "property:unclear-scanner-finding"
