@@ -171,7 +171,6 @@ tasks.register("verifyPackageCurations") {
             }.onFailure { e ->
                 issues += "Could not parse curations from file '$relativePath': ${e.message}"
             }
-
         }
 
         if (issues.isNotEmpty()) {
