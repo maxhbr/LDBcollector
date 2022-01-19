@@ -2,6 +2,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.readValue
+import com.vdurmont.semver4j.Requirement
 import com.vdurmont.semver4j.Semver
 import java.io.IOException
 import okhttp3.OkHttpClient
@@ -140,6 +141,16 @@ tasks.register("verifyPackageCurations") {
                     if (curation.id.name.isBlank()) {
                         issues += "Only curations for specific packages are allowed, but the curation for package " +
                                 "'${curation.id.toCoordinates()}' in file '$relativePath' does not have a package name."
+                    }
+
+                    if (curation.id.version.isNotBlank()) {
+                        runCatching {
+                            Requirement.buildIvy(curation.id.version)
+                        }.onFailure {
+                            issues += "The version '${curation.id.version}' in file '$relativePath 'is not a valid " +
+                                    "Ivy version range. See: " +
+                                    "https://ant.apache.org/ivy/history/2.5.0/settings/version-matchers.html"
+                        }
                     }
 
                     if (curation.data.authors != null) {
