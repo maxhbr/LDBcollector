@@ -1,16 +1,18 @@
-# Curation Generator
+# Curations
 
-This Gradle project contains task to generate package curations. For example, tasks that use heuristics to
+This Gradle project contains tasks to manage package curations. For example, tasks that use heuristics to
 generate VCS path curations for packages from large multi-module repositories which are tedious which would
 otherwise be tedious to write by hand.
 
-To list all tasks use:
+## Generating Curations
+
+To list all generation tasks use:
 
 ```
 ./gradlew tasks --group "generate curations"
 ```
 
-At this time all tasks use the GitHub API and therefore require GitHub credentials which need to be passed
+At this time all generation tasks use the GitHub API and therefore require GitHub credentials which need to be passed
 as Gradle properties, for example: 
 
 ```

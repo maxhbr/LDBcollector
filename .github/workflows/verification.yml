@@ -25,5 +25,5 @@ jobs:
       - name: Verify package curations
         uses: burrunan/gradle-cache-action@v1
         with:
-          build-root-directory: tools/curation-generator
+          build-root-directory: tools/curations
           arguments: verifyPackageCurations
