@@ -1261,6 +1261,11 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "LicenseRef-Libtool-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "Libtool-exception"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1838,6 +1843,17 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/GCC-exception-3.1.html
+  - id: "GPL-3.0-or-later WITH GCC-exception-3.1"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
   - id: "LicenseRef-GPL-3.0-or-later-with-TeX-exception"
     categories:
       - "copyleft-strong"
@@ -2084,6 +2100,11 @@ categorizations:
       - "property:unchecked"
       - "property:AutoConf-or-other-exception"
 
+  - id: "LicenseRef-InnerNet-2.00"
+    categories:
+      - "property:unchecked"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "InnerNet-2.00"
     categories:
       - "property:unchecked"
@@ -3017,6 +3038,12 @@ categorizations:
       - "permissive"
 
   # https://spdx.org/licenses/OLDAP-2.8.html
+  - id: "LicenseRef-OLDAP"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "OLDAP"
     categories:
       - "permissive"
@@ -3318,6 +3345,10 @@ categorizations:
     categories:
       - "proprietary-free"
 
+  - id: "LicenseRef-netronome-firmware"
+    categories:
+      - "proprietary-free"
+
   - id: "LicenseRef-scancode-newlib-subdirectory"
     categories:
       - "copyleft-LGPL"
@@ -3334,3 +3365,8 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-amd-linux-firmware-export"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
