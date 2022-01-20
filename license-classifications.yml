@@ -3078,7 +3078,7 @@ categorizations:
   # https://web.cs.ucdavis.edu/~rogaway/ocb/license1.pdf
   - id: "LicenseRef-scancode-ocb-open-source-2013"
     categories:
-      - "proprietary-free"
+      - "permissive"
 
   # https://spdx.org/licenses/libselinux-1.0.html
   - id: "libselinux-1.0"
