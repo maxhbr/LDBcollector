@@ -3305,3 +3305,13 @@ categorizations:
   - id: "LicenseRef-scancode-netronome-firmware"
     categories:
       - "proprietary-free"
+
+  - id: "LicenseRef-scancode-newlib-subdirectory"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+  - id: "LicenseRef-scancode-binary-linux-firmware-patent"
+    categories:
+      - "proprietary-free"
