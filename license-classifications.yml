@@ -1248,6 +1248,11 @@ categorizations:
       - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
+  - id: "Universal-FOSS-exception-1.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+      - "property:include-in-notice-file"
+
   - id: "Autoconf-exception"
     categories:
       - "property:AutoConf-or-other-exception"
