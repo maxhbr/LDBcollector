@@ -3327,3 +3327,10 @@ categorizations:
   - id: "LicenseRef-scancode-binary-linux-firmware-patent"
     categories:
       - "proprietary-free"
+
+- id: "LicenseRef-GPL-2.0+-with-strongswan-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
