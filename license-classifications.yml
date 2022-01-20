@@ -3043,8 +3043,14 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
-
+        #
   # https://scancode-licensedb.aboutcode.org/ietf.html
+  - id: "LicenseRef-IETF"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "IETF"
     categories:
       - "permissive"
