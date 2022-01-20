@@ -2220,6 +2220,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-Rdisc"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "Rdisc"
     categories:
       - "permissive"
