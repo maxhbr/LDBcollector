@@ -1282,6 +1282,11 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "LicenseRef-OpenSSL-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "OpenSSL-exception"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -2407,6 +2412,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-Python-2.2"
+    categories:
+      - "property:include-in-notice-file"
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "Python-2.2"
     categories:
       - "property:include-in-notice-file"
@@ -2444,7 +2455,15 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  - id: "LicenseRef-GPL"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "LGPL"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-LGPL"
     categories:
       - "property:unclear-scanner-finding"
 
@@ -2508,6 +2527,10 @@ categorizations:
       - "permissive"
 
   - id: "LicenseRef-BSD-style"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-MIT-style"
     categories:
       - "permissive"
 
