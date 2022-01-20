@@ -3328,7 +3328,7 @@ categorizations:
     categories:
       - "proprietary-free"
 
-  - id: "LicenseRef-GPL-2.0+-with-strongswan-exception"
+  - id: "LicenseRef-GPL-2.0-or-later-with-strongswan-exception"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
