@@ -3087,6 +3087,11 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-W3C-IP"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "W3C-IP"
     categories:
       - "property:unclear-scanner-finding"
