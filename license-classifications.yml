@@ -3206,6 +3206,7 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  # https://scancode-licensedb.aboutcode.org/ms-lpl.html
   - id: "MS-LPL"
     categories:
       - "free-restricted"
