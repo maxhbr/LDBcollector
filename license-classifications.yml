@@ -3398,3 +3398,9 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-gnu-emacs-gpl-1988"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
