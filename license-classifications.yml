@@ -3194,8 +3194,7 @@ categorizations:
 
   - id: "Intel-WLAN"
     categories:
-      - "proprietary-free"
-      - "property:unchecked"
+      - "irrelevant"
 
   - id: "Intel-Binary"
     categories:
