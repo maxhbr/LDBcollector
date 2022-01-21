@@ -672,10 +672,13 @@ def propagate_choices(release_id):
             effective_license = usage.version.spdx_valid_license_expr
         unique_lic_ids = explode_SPDX_to_units(effective_license)
         if len(unique_lic_ids) == 1:
-            usage.license_expression = unique_lic_ids[0]
-            unique_license = License.objects.get(spdx_id__exact=unique_lic_ids[0])
-            usage.licenses_chosen.set(set([unique_license]))
-            usage.save()
+            try:
+                unique_license = License.objects.get(spdx_id__exact=unique_lic_ids[0])
+                usage.licenses_chosen.set(set([unique_license]))
+                usage.license_expression = unique_lic_ids[0]
+                usage.save()
+            except License.DoesNotExist:
+                print("Can't choose an unknown license", unique_lic_ids[0])
         else:
             choices = LicenseChoice.objects.filter(
                 Q(expression_in=effective_license),
