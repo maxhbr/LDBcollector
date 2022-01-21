@@ -3405,7 +3405,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  - id: "LicenseRef-GPL-2.0+-with-shtool-exception"
+  - id: "LicenseRef-GPL-2.0-or-later-with-shtool-exception"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
