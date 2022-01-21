@@ -3404,3 +3404,10 @@ categorizations:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
+
+  - id: "LicenseRef-GPL-2.0+-with-shtool-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
