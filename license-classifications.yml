@@ -3392,3 +3392,8 @@ categorizations:
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-motorola"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
