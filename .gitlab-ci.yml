@@ -1,12 +1,43 @@
-# You can override the included template(s) by including variable overrides
-# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
-# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
-# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
-# Note that environment variables can be set in several places
-# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
-stages:
-- test
-sast:
-  stage: test
-include:
-- template: Security/SAST.gitlab-ci.yml
+# SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+image: python:3.8-alpine
+
+pages:
+  stage: deploy
+  
+  script:
+  - apk --no-cache add curl
+  - apk --no-cache add build-base postgresql-dev python3-dev
+  - curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+  - source $HOME/.poetry/env
+  - poetry about
+  - poetry install
+  - cd hermine
+  - cp hermine/mysecrets.default.py hermine/mysecrets.py
+  - poetry run python manage.py makemigrations
+  - poetry run python manage.py migrate
+  - cd ..
+  - poetry run sphinx-build -b html docs/source docs/build/html
+  - mkdir public
+  - cp -r docs/build/html/* public/
+
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+variables:
+  DOCKER_DRIVER: overlay2
+# dco:
+#   image: christophebedard/dco-check:latest
+#   rules:
+#     - if: $CI_MERGE_REQUEST_ID
+#     - if: $CI_EXTERNAL_PULL_REQUEST_IID
+#     - if: $CI_COMMIT_BRANCH == 'master'
+#   script:
+#     - pip3 install -U dco-check
+#     - dco-check

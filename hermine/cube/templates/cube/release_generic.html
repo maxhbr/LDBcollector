@@ -1,0 +1,70 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}Generic obligations{% endblock %}
+
+{% block content %}
+
+  <div id="content-main">
+    <h1>/{{generic.name}}/ in {{release.product.name}} {{release.release_number}}</h1>
+<p>List of components for which the following generic obligation has to be fulfilled</p>
+<blockquote>{{generic.description}}</blockquote>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Version</th>
+      <th>Linking</th>
+      <th>Modified</th>
+      <th>License validated</th>
+      <th>License usage</th>
+      <th>Applicable Licenses</th>
+      <th>Edit</th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+{% for usage in usages %}
+
+
+    <tr>
+      <td><a href="{% url 'cube:component' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
+      <td>{{ usage.version.version_number }}</td>
+      <td>{{ usage.linking }}</td>
+      <td>{{ usage.modified|yesno:"yes,no,maybe" }}</td>
+      <td>{{ usage.version.spdx_valid_license_expr}}</td>
+      <td>{{ usage.license_expression }}</td>
+      <td>{% for license_chosen in usage.licenses_chosen.all %}
+        <span class="tag
+{% if license_chosen.color == "Green" %}
+is-success
+{% elif license_chosen.color == "Orange" %}
+is-warning
+{% elif license_chosen.color == "Red" %}
+is-danger
+{% else %}
+is-dark
+{% endif %}">
+    {{ license_chosen.spdx_id }}
+  </span>
+      {% endfor %}
+       </td>
+      <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></td>
+            </tr>
+{% endfor %}
+  </tbody>
+</table>
+
+</div>
+{% endblock %}
+
+
+

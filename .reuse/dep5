@@ -1,0 +1,52 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Hermine
+Upstream-Contact: Hermine-team <hermine@inno3.fr>
+Source: https://gitlab.com/hermine-project/hermine
+
+Files: hermine/cube/migrations/*
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: CC0-1.0
+
+Files: docs/*
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: AGPL-3.0-only
+
+Files: hermine/cube/static/cube/webfonts/*.woff
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: OFL-1.1
+
+Files: hermine/cube/static/cube/webfonts/*.woff2
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: OFL-1.1
+
+Files: hermine/cube/static/cube/webfonts/*.ttf
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: OFL-1.1
+
+Files: hermine/cube/static/cube/webfonts/*.eot
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: OFL-1.1
+
+Files: hermine/cube/static/cube/webfonts/*.svg
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: CC-BY-4.0 
+
+Files: hermine/cube/static/cube/css/*.map
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: OFL-1.1
+
+Files: hermine/cube/static/cube/css/*.map
+Copyright: 2021 Bulmaswatch <https://bulma.io/>
+License: MIT
+
+Files: .git*
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: AGPL-3.0-only
+
+Files: hermine/*
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: AGPL-3.0-only
+
+Files: testfiles/*
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: AGPL-3.0-only

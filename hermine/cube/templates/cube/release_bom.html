@@ -1,0 +1,81 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
+
+{% block content %}
+
+<h1 class="title is-1">{{ object.product.name }}</h1>
+<h2 class="title is-2">Release: {{object.release_number}}</h2>
+
+<div class="tabs is-centered is-boxed is-medium">
+  <ul>
+    <li>
+      <a href="/release/{{object.id}}">
+        <span class="icon is-small"><i class="fas fa-check-double" aria-hidden="true"></i></span>
+        <span>Validation steps</span>
+      </a>
+    </li>
+    <li>
+      <a href="/release/{{object.id}}/exploitation">
+        <span class="icon is-small"><i class="fas fa-handshake" aria-hidden="true"></i></span>
+        <span>Exploitation</span>
+      </a>
+    </li>
+    <li class="is-active">
+      <a>
+        <span class="icon is-small"><i class="fas fa-book" aria-hidden="true"></i></span>
+        <span>Bill of Materials</span>
+      </a>
+    </li>
+    <li>
+      <a href="/release/{{object.id}}/oblig">
+        <span class="icon is-small"><i class="fas fa-certificate" aria-hidden="true"></i></span>
+        <span>Obligations</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Scope</th>
+      <th>Component</th>
+      <th>Version</th>
+      <th>Concluded License</th>
+      <th>Chosen License</th>
+      <th>Modification</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+
+{% for usage in object.usage_set.all %}
+    <tr>
+      <td>{{ usage.scope }}</td>
+      <td><a href="{% url 'cube:component' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
+      <td>{{ usage.version.version_number }}</td>
+      <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr }}</td>
+      <td>{{ usage.license_expression }}</td>
+      <td>
+      {% if usage.component_modified == "Altered" %}
+        <span class="tag is-warning">
+        {% else %}
+          <span class="tag is-light">
+      {% endif %}
+      {{ usage.component_modified }}
+      </span>
+      </td>
+      <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></td>
+            </tr>
+{% endfor %}
+  </tbody>
+</table>
+{% endblock %}

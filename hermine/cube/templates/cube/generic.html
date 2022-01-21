@@ -1,0 +1,44 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+
+{% block title %}Generic obligation{{ generic.name }}{% endblock %}
+
+{% block content %}
+  <h1>Generic obligation: <strong>{{ generic.name }}</strong></h1>
+<div class="buttons">
+  <span class="tag is-dark is-medium">Type</span>  <span class="tag is-primary is-medium">{{generic.metacategory}}</span> -
+  <span class="tag is-dark is-medium">Team</span>  <span class="tag is-link is-medium">{{generic.team.name}}</span>
+  {% if generic.in_core %} <span class="tag is-dark is-medium">In core</span> {% endif %}
+</div>
+  <blockquote>{{ generic.description }}</blockquote>
+
+  <h2>{{ generic.obligation_set.all|length }} Obligations related to this generic obligation</h2>
+    <p> Present in the following licenses:
+    {% for obligation in generic.obligation_set.all %}
+      <a href="#{{ obligation.license.spdx_id }}">
+      <span class="tag {{ obligation.license|getColorTag }}">
+        {{ obligation.license.spdx_id }}
+      </span>
+    </a>
+    {% endfor %}
+    </p>
+    {% for obligation in generic.obligation_set.all %}
+      <hr>
+      <h2 id="{{ obligation.license.spdx_id }}">{{ obligation.name }}</h2>
+        <p>
+          <a href="/license/{{obligation.license.id}}"
+            <span class="tag {{ obligation.license|getColorTag }}">
+              {{ obligation.license.spdx_id }}
+            </span>
+          </a>
+        </p>
+        <blockquote>{{ obligation.verbatim }}</blockquote>
+    {% endfor %}
+{% endblock %}

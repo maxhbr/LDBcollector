@@ -1,0 +1,152 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}{{ license.long_name }} {% endblock %}
+
+{% block content %}
+  <h1 class="title is-1">{{ license.long_name }}</h1>
+  <h2 class="subtitle is-2">{{ license.spdx_id }}</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th><a href="https://spdx.org/licenses/{{ license.spdx_id }}.html" target="_blank"><button class="button is-link">SPDX page &nbsp; &nbsp; <span class="icon"><i class="fas fa-link"></i></span></button></a></th>
+        
+        <th><a href="/admin/cube/license/{{license.id}}/change/" target="_blank"><button class="button is-link">Edit this license &nbsp; &nbsp; <span class="icon"><i class="fas fa-edit"></i></span></button></a></th>
+      
+      </tr>
+      <tr>
+        <table>
+          <tr>
+            <form class="import_licenses" id="import_licenses" enctype="multipart/form-data" action="{% url 'cube:import_licenses' %}" method="post">
+              {% csrf_token %}
+              <th>{{ form }}</th>
+              <th><button class="button is-primary" value="Import JSON" type="submit">Import an interpretation &nbsp; &nbsp; <span class="icon"><i class="fas fa-upload"></i></span></button></th>
+            </form>
+            <th><a href="{{license.id}}/export/"><button class="button is-dark">Export this interpretation &nbsp; &nbsp; <span class="icon"><i class="fas fa-download"></i></span></button></a></th>
+            <th><a href="{{license.id}}/export/"><button class="button is-link">Share this interpretation with community &nbsp; &nbsp; <span class="icon"><i class="fas fa-share"></i></span></button></a></th>
+
+          </tr>
+        </table>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Validation :
+          <span class="tag
+            {% if license.color == "Green" %}
+              is-success
+              {% elif license.color == "Orange" %}
+              is-warning
+              {% elif license.color == "Red" %}
+              is-danger
+              {% else %}
+              is-dark
+            {% endif %}">
+            {{ license.color }}
+          </span>
+        </td>
+        <td>Copyleft :
+          <span class="tag
+            {% if license.copyleft == "None" %}
+              is-success
+              {% elif license.copyleft == "Weak" %}
+              is-warning
+              {% elif license.copyleft == "Strong" or license.copyleft == "Network" or license.copyleft == "NetworkWeak" %}
+              is-danger
+              {% else %}
+              is-dark
+            {% endif %}">
+            {{ license.copyleft|default:"Unknown" }}
+          </span>
+        </td>
+        <td>
+          Actually FOSS :
+          <span class="tag
+            {% if license.foss == "Yes" or license.foss == "Yes-Auto" %}
+              is-success
+              {% elif license.foss == "No" or license.foss == "No-Auto" %}
+              is-danger
+              {% else %}
+              is-warning
+            {% endif %}">
+            {{ license.foss|default:"Unknown" }}
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jurisdictional clause : <strong>{{ license.law_choice|default:"None" }}</strong>
+        </td>
+        {% if inspiration %}
+          <td>
+            <p>Is inspired by <a href="{% url 'cube:license' inspiration.id %}">{{inspiration.long_name}}</a></p>
+            {% elif license.inspiration_spdx %}
+              <p>Is inspired by {{license.inspiration_spdx}}</p>
+          </td>
+        {% endif %}
+        {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}
+          <td>
+            <button class="tag is-success">This license is covered by the obligations in the core</button>
+          </td>
+        {% endif %}
+      </tr>
+    </tbody>
+  </table>
+  {% if license.comment %}
+    <div class="box">
+      <p><b>Your comment :</b></p>
+      <p>{{ license.comment }}</p>
+    </div>
+  {% endif %}
+
+  {% if orphan_obligations %}
+    <h2 class="subtitle is-2">Obligations that are specific to this license</h2>
+    {% for obligation in orphan_obligations %}
+      <h3 class="subtitle is-3">{{ obligation.name }}</h3>
+      <h4 class="title is-4"> {{ obligation.passivity }}.</h4>
+      {% if obligation.passivity == "Active" %}
+        Apply if: 
+        <ul><li>{{ obligation|getModifTriggerOblig }}</li>
+        <li> {{ obligation|getExplTriggerOblig }}</li></ul>
+      {% endif %}
+      <blockquote>{{ obligation.verbatim}}</blockquote>
+    {% endfor %}
+  {% endif %}
+
+  {% if obligations_in_generic %}
+    <h2 class="subtitle is-2">Obligations that are related to a generic obligation that is <b>not</b> part of the core</h2>
+    {% for obligation in obligations_in_generic %}
+      <h3 class="subtitle is-3">{{ obligation.name }}</h3>
+      <h4 class="title is-4"> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </h4>
+      <h4 class="title is-4">{{ obligation.passivity }}.</h4>
+      {% if obligation.passivity == "Active" %}
+        Apply if: 
+        <ul><li>{{ obligation|getModifTriggerOblig }}</li>
+        <li> {{ obligation|getExplTriggerOblig }}</li></ul>
+      {% endif %}
+      <blockquote>{{ obligation.verbatim }}</blockquote>
+    {% endfor %}
+  {% endif %}
+
+  {% if obligations_in_core %}
+    <h2 class="subtitle is-2">Obligations that are related to a generic obligation that is part of the core</h2>
+    {% for obligation in obligations_in_core %}
+      <h3 class="subtitle is-3"> {{ obligation.name }}</h3>
+      <h4 class="title is-4"> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </h4>
+      <h4 class="title is-4">{{ obligation.passivity }}.</h4>
+      {% if obligation.passivity == "Active" %}
+        Apply if: 
+        <ul><li>{{ obligation|getModifTriggerOblig }}</li>
+        <li> {{ obligation|getExplTriggerOblig }}</li></ul>
+      {% endif %}
+      <blockquote>{{ obligation.verbatim}}</blockquote>
+    {% endfor %}
+  {% endif %}
+{% endblock %}

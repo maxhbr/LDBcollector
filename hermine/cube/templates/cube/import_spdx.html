@@ -1,0 +1,28 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}Import{% endblock %}
+
+{% block content %}
+<h1>Importing SPDX BOM YAML file</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<div class="box">
+<form action="{% url 'cube:import_spdx' %}" enctype="multipart/form-data" method="post">
+{% csrf_token %}
+<table>
+{{ form }}
+
+<tr>
+  <td></td>
+  <td><button class="button is-primary">Import now</button></td>
+</tr>
+</table>
+</form>
+</div>
+{% endblock %}

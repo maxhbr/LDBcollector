@@ -1,0 +1,46 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+
+<link rel="preload" href="{% static 'cube/css/bulma.css' %}" as="style">
+<link rel="stylesheet" type="text/css" href="{% static 'cube/css/bulma.css' %}">
+<link rel="preload" href="{% static 'cube/css/fontawesome-free-all.css' %}" as="style">
+<link rel="stylesheet" type="text/css" href="{% static 'cube/css/fontawesome-free-all.css' %}">
+<link rel="preload" href="{% static 'cube/css/login.css' %}" as="style">
+<link rel="stylesheet" type="text/css" href="{% static 'cube/css/login.css' %}">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Login page{% endblock %}</title>
+</head>
+  <body>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-4 is-offset-4">
+            <div class="box">
+              <h3 class="title is-3">You've been logged out allright.</h3>
+              <p>You can <a class="tag is-primary" href="{% url 'login' %}">login again</a> if you want</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="container has-text-centered">
+          <p class="footer-text">
+            <a href="https://www.aldiduzha.com?utm_source=Github" style="color: white;">Designed with <i class="fa fa-heart fa-fw" style="font-size: 10px; color: red;"></i> by Aldi Duzha</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

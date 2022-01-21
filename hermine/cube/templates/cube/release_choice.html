@@ -1,0 +1,72 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}{{ usage.version.component }} {{usage.version.version_number}} - Choose licenses{% endblock %}
+
+{% block content %}
+
+    <h1 class="title is-1"> Choosing among possible licences for {{ usage.version.component }} {{ usage.version.version_number }}</h1>
+    <h3  class="title is-3">As used in {{ usage.release.product.name }} {{ usage.release.release_number }} </h3>
+<h4 class="title is-4">Current expression is "{{ expression_in }}"</h4>
+{% if choices %}
+  <h4 class="title is-4">Choices already made relevant for this usage</h4>
+  <div class "content is-normal">
+    <ul>
+      {% for choice in choices.all %}
+      <li>Product: {{ choice.release.product.name|default:"Any" }},
+        Release: {{ choice.release.release_number|default:"Any" }},
+        Scope: {{ choice.scope|default:"Any" }},
+        Component : {{ choice.version.component|default:"Any" }},
+        Version: {{ choice.version.version_number|default:"Any" }},
+         </li>
+      {% endfor %}
+    </ul>
+{% endif %}
+<h2> Precising your choice for this license expression </h2>
+<form action= {% url "cube:release_send_choice" usage.release.id usage.id%} method="POST">
+  {% csrf_token %}
+  <div class="field">
+    <label class="label">The expression you choose</label>
+    <div class="control">
+      <input class="input is-primary" name="expression_out" required value={{expression_in}}>
+    </div>
+  </div>
+  <h2>And generalise this choice to </h2>
+  <span class="select">
+    <select name="range_scope">
+      <option value="scope" selected>The scope of this usage: {{ usage.scope }}</option>
+      <option value="any">Any scope</option>
+    </select>
+  </span>
+  <span class="select">
+    <select name="range_component">
+      <option value="version" selected>{{ usage.version.component }} {{ usage.version.version_number }}</option>
+      <option value="component">{{ usage.version.component }} (any version)</option>
+      <option value="any">Any component</option>
+    </select>
+  </span>
+  <span class="select">
+    <select name="range_product">
+      <option value="release" selected>{{ usage.release.product }} {{ usage.release.release_number }}</option>
+      <option value="product">{{ usage.release.product }} (any version)</option>
+      <option value="any">Any product</option>
+    </select>
+  </span>
+  <div class="field">
+    <label class="label">Explanation</label>
+            <div class="control">
+                <textarea class="textarea" name="explanation" placeholder="Explain your choice..."></textarea>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
+
+
+

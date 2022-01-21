@@ -1,0 +1,65 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}Components{% endblock %}
+
+{% block content %}
+
+
+<table class="table is-striped ">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Versions</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for component in object_list %}
+    <tr>
+      <td><a href="{% url 'cube:component' component.id %}">{{component.name}}</a></td>
+      <td>
+        {% for version in component.version_set.all %}
+          {{ version.version_number}}
+        {% endfor %}
+      </td>
+      <td>
+        {{ component.description|truncatechars:42 }}
+      </td>
+    </tr>
+
+{% endfor %}
+  </tbody>
+</table>
+
+
+
+
+
+
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1"><span class="current button is-link">1</span></a>
+            <a href="?page={{ page_obj.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
+        {% endif %}
+
+        <span class="current button is-primary">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}"><span class="current button is-link is-light">next</span></a>
+            <a href="?page={{ page_obj.paginator.num_pages }}"><span class="current button is-link">{{page_obj.paginator.num_pages}}</span></a>
+        {% endif %}
+    </span>
+</div>
+
+
+
+{% endblock %}

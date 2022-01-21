@@ -1,0 +1,111 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}Licenses{% endblock %}
+
+{% block content %}
+<h1 class="title is-1">Licenses</h1>
+
+  <form class="export_licenses" id="export_licenses" action="{% url 'cube:export_licenses' %}" method="get">
+    {% csrf_token %}
+    <button class="button is-primary" value="Export to JSON" type="submit">Export Licenses to JSON</button>
+  </form> 
+
+  <form class="import_licenses" id="import_licenses" enctype="multipart/form-data" action="{% url 'cube:import_licenses' %}" method="post">
+    {% csrf_token %}
+    <table>
+    <tr>
+      <th>{{ form }}</th>
+      <th><button class="button is-secondary" value="Import JSON" type="submit">Import</button></th>
+    </tr>
+    </table>
+ </form> 
+
+ <div class="pagination">
+  <span class="step-links">
+      {% if licenses.has_previous %}
+          <a href="/licenses/1"><span class="current button is-link">1</span></a>
+          <a href="/licenses/{{ licenses.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
+      {% endif %}
+
+      <span class="current button is-primary">
+          Page {{ licenses.number }} of {{ licenses.paginator.num_pages }}.
+      </span>
+
+      {% if licenses.has_next %}
+          <a href="/licenses/{{ licenses.next_page_number }}"><span class="current button is-link is-light">next</span></a>
+          <a href="/licenses/{{ licenses.paginator.num_pages }}"><span class="current button is-link">{{licenses.paginator.num_pages}}</span></a>
+      {% endif %}
+  </span>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>SPDX</th>
+      <th>Name</th>
+      <th>nb of obligations</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for license in licenses %}
+      <tr>
+        <td>
+          {% if license.color == "Green" %}
+            <span class="tag is-success">
+              {% elif license.color == "Orange" %}
+                <span class="tag is-warning">
+              {% elif license.color == "Red" %}
+                <span class="tag is-danger">
+              {% elif license.color == "Grey" %}
+                <span class="tag is-light">
+              {% else %}
+                <span class="tag is-dark">
+            {% endif %}
+              {{ license.color }}
+          </span>
+        </td>
+        <td><a href="{% url 'cube:license' license.id %}" >{{ license.spdx_id }}</td>
+        <td>{{ license.long_name }}</td>
+        <td> 
+          {% if license.color == "Grey" %}
+            Unknown
+            {% else %}
+              {{ license.obligation_set|length }}
+          {% endif %}
+        </td>
+        <td><a href="{% url 'cube:license' license.id %}">Details</a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="pagination">
+    <span class="step-links">
+        {% if licenses.has_previous %}
+            <a href="/licenses/1"><span class="current button is-link">1</span></a>
+            <a href="/licenses/{{ licenses.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
+        {% endif %}
+
+        <span class="current button is-primary">
+            Page {{ licenses.number }} of {{ licenses.paginator.num_pages }}.
+        </span>
+
+        {% if licenses.has_next %}
+            <a href="/licenses/{{ licenses.next_page_number }}"><span class="current button is-link is-light">next</span></a>
+            <a href="/licenses/{{ licenses.paginator.num_pages }}"><span class="current button is-link">{{licenses.paginator.num_pages}}</span></a>
+        {% endif %}
+    </span>
+</div>
+
+{% endblock %}
+
+
+

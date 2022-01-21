@@ -1,0 +1,52 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}Component{{ object.name }} {% endblock %}
+
+{% block content %}
+  <h1>{{ object.name }}</h1>
+  <p> This is the detail of what you know about this component. It can be completed manually here: 
+    <a href="/admin/cube/component/{{object.id}}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+  </p>
+  <h2>Description</h2>
+  <div class="box"> {{ object.description }}</div>
+  
+  {% if object.homepage_url %}
+    <p><span class="icon"><i class="fas fa-home"></i>
+      </span>Project home page: <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a>
+    </p>
+  {% endif %}
+  
+
+  <h2>Versions<h2>
+  {% for version in object.version_set.all %}
+    <h3>{{ object.name }} : {{ version.version_number }}</h3> 
+    <p>Edit this version here : <a href="/admin/cube/version/{{version.id}}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></p>
+    <p>The license expression is :</p>
+    <p> <span class="icon"><i class="fas fa-balance-scale"></i></span>
+      {% if version.corrected_license%}
+        <strong>{{version.corrected_license}}</strong> (corrected from {{ version.spdx_valid_license_expr }})
+        
+      {% else %}
+        <strong>{{version.spdx_valid_license_expr}}</strong>
+      {% endif %}
+      {% if version.spdx_valid_license_expr != version.declared_license_expr %}
+        (declared License expression was {{ version.declared_license_expr }})
+      {% endif %}.
+    <p>This component is used in the following releases of your products:</p>
+    <ul>
+      {% for usage in version.usage_set.all %}
+        <li><a href="{% url 'cube:release_synthesis' usage.release.id %}"> <strong>{{ usage.release.product.name }}</strong> : {{ usage.release.release_number }} </a> </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endblock %}
+
+
+

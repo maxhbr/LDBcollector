@@ -1,0 +1,15 @@
+*.log
+*.pot
+*.pyc
+__pycache__
+poetry.lock
+/static/
+/vrac/
+variousScripts
+db.sqlite3
+**.css.map
+docs/build/
+.vscode/
+# Secrets are secrets
+hermine/hermine/mysecrets.py
+.coverage

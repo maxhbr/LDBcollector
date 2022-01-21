@@ -1,0 +1,79 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+
+<link rel="preload" href="{% static 'cube/css/bulma.css' %}" as="style">
+<link rel="stylesheet" type="text/css" href="{% static 'cube/css/bulma.css' %}">
+<link rel="preload" href="{% static 'cube/css/fontawesome-free-all.css' %}" as="style">
+<link rel="stylesheet" type="text/css" href="{% static 'cube/css/fontawesome-free-all.css' %}">
+<link rel="preload" href="{% static 'cube/css/login.css' %}" as="style">
+<link rel="stylesheet" type="text/css" href="{% static 'cube/css/login.css' %}">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Hermine cube Login page{% endblock %}</title>
+</head>
+  <body>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-4 is-offset-4">
+            <div class="box">
+              <h3 class="title is-3">Please login to proceed.</h3>
+              <br />
+              <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <div class="field">
+                  <p class="control has-icons-left has-icons-right">
+                    <input class="input is-medium"  placeholder="Username" type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username"/>
+                    <span class="icon is-medium is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-medium is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <p class="control has-icons-left">
+                    <input class="input is-medium" type="password" placeholder="Password" name="password" autocomplete="current-password" required id="id_password"/>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    Remember me
+                  </label>
+                </div>
+                <button class="button is-block is-primary is-large is-fullwidth">Login</button><br />
+                <input type="hidden" name="next" value="{{ next }}">
+              </form>
+            </div>
+            <p class="has-text-grey">
+              <a href="#">Sign Up</a> &nbsp;·&nbsp;<a href="{% url 'password_reset' %}">Lost password?</a> &nbsp;·&nbsp;
+              <a href="#">Need Help?</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="container has-text-centered">
+          <p class="footer-text">
+            <a href="https://www.aldiduzha.com?utm_source=Github" style="color: white;">Designed with <i class="fa fa-heart fa-fw" style="font-size: 10px; color: red;"></i> by Aldi Duzha</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

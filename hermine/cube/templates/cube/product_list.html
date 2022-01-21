@@ -1,0 +1,86 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}Products{% endblock %}
+{% block pagetitle %}Your company Products{% endblock %}
+{% block content %}
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <div class="card tile is-child">
+        <div class="card-content">
+          <div class="level is-mobile">
+            <div class="level-item">
+              <div class="is-widget-label"><h3 class="subtitle is-spaced">
+                Products
+              </h3>
+                <h1 class="title">
+                  {{ nb_products }}
+                </h1>
+              </div>
+            </div>
+            <div class="level-item has-widget-icon">
+              <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i class="fas fa-cubes fa-2x"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="tile is-parent">
+        <div class="card tile is-child">
+          <div class="card-content">
+            <div class="level is-mobile">
+              <div class="level-item">
+                <div class="is-widget-label"><h3 class="subtitle is-spaced">
+                  Releases
+                </h3>
+                  <h1 class="title">
+                    {{ nb_releases }}
+                  </h1>
+                </div>
+              </div>
+              <div class="level-item has-widget-icon">
+                <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i class="fas fa-code-branch fa-2x"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<table class="table is-striped is-hoverable is-fullwidth">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Release</th>
+      <th>Status</th>
+      <th>Dependencies</th>
+      <th>Validation Steps</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for product in object_list %}
+  {% for release in product.release_set.all %}
+  <a href="{% url 'cube:release_synthesis' release.id %}">
+    <tr>
+      <td>{{product.name}}</td>
+      <td> <a href="{% url 'cube:release_synthesis' release.id %}">{{release.release_number}} </a> </td>
+      <td>{{release.ship_status}}</td>
+      <td>{{release.usage_set.all|length}}</td>
+      <td><progress class="progress is-primary" value="{{release.valid_step|default:1}}" max="5">15%</progress></td>
+      <td><a href="{% url 'cube:release_synthesis' release.id %}"><i class="far fa-eye fa-2x"></i></a></td>
+    </tr>
+  </a>
+{% endfor %}
+{% endfor %}
+</tbody>
+</table>
+  {% endblock %}
+
+

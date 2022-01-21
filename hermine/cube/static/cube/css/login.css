@@ -1,0 +1,65 @@
+/*
+ * SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+ * SPDX-FileCopyrightText: 2021 bulmaswatch <https://bulma.io/>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * SPDX-License-Identifier: MIT
+ */
+
+html,
+body {
+  font-family: 'Quicksand', serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+html {
+  overflow-y: hidden !important;
+  background-image: url('../media/background.jpg') !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section {
+  background-color: rgba(0,0,255,0) !important;}
+.hero.is-success {
+  background: #f2f6fa;
+}
+.hero .nav,
+.hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.box {
+  margin-top: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+input {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+p.subtitle {
+  padding-top: 1rem;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #bababa;
+}
+
+.languages {
+  margin-top: 10px;
+}
+
+.footer-text {
+  font-weight: initial;
+}

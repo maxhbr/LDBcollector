@@ -1,0 +1,35 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}{{ release.product.name }} {{release.release_number}}{% endblock %}
+
+{% block content %}
+
+<h1>Validation for {{ release.product.name }} {{release.release_number}}</h1>
+
+<h2> Validations</h2>
+
+<ul>
+{% for validation in validations %}
+
+<li>{{ validation }},</li>
+
+{% endfor %}
+</ul>
+<h2> Choices</h2>
+
+<ul>
+{% for choice in choices %}
+
+<li> {{ choice }},</li>
+
+{% endfor %}
+</ul>
+
+
+<p>Back to <a href="{% url 'cube:release_synthesis' release.id %}">release {{release.release_number}} of {{ release.product.name }}</a></p>
+{% endblock %}

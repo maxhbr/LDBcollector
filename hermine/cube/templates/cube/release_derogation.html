@@ -1,0 +1,70 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}{{ usage.version.component }} {{usage.version.version_number}} - Add derogation{% endblock %}
+
+{% block content %}
+    <h1 class="title is-1">{{ usage.version.component }}</h1>
+    <h2 class="title is-2">Release: {{usage.version.version_number}}</h2>
+    <h3  class="title is-3">Add a derogation for {{usage.licenses_chosen.count}} license{{usage.licenses_chosen.count|pluralize}} to allow this component:
+        {% for license_chosen in usage.licenses_chosen.all %}
+            <span class="tag
+            {% if license_chosen.color == "Orange" %}
+            is-warning
+            {% elif license_chosen.color == "Red" %}
+            is-danger
+            {% endif%}">
+            {{ license_chosen.spdx_id }}
+            </span>
+        {% endfor %}
+    </h3>
+    
+
+    {% if usage.scope%}
+        <p>The scope of use is <b>{{ usage.scope }}</b></p>
+    {% else%}
+        <p>The scope of this compoenent is <b>not defined</b></p>
+    {% endif %}
+    {% if usage.linking%}
+        <p>The linking of this component is <b>{{ usage.linking }}</b></p>
+    {% else%}
+        <p>The linking of this compoenent is <b>not defined</b></p>
+    {% endif %}
+    <label class="label"> Choose the scope of your derogation. </label>
+    <form action= {%url "cube:release_send_derogation" usage.release.id usage.id%} method="POST">
+        {% csrf_token %}
+        <span class="select">
+            <select name="action">
+                <option value="release">The whole release</option>
+                <option value="component" selected>Only this component</option>
+                {% if usage.linking%}
+                    <option value="linking" selected>Only this type of link</option>
+                {% endif %}
+                {% if usage.scope%}
+                    <option value="scope">Only the current scope ({{usage.scope}})</option>
+                    {% if usage.linking%}
+                        <option value="linkingscope" selected>Only for this type of link AND this scope ({{usage.scope}})</option>
+                    {% endif %}
+                {% endif %}
+            </select>
+        </span>
+        <div class="field">
+            <label class="label">Justification</label>
+            <div class="control">
+                <textarea class="textarea" name="justification" placeholder="Explain your choice..."></textarea>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+{% endblock %}
+
+
+
