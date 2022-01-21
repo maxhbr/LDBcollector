@@ -28,29 +28,41 @@ poetry install
 
 ## Running the application
 
-To run the application, you have to activate your virtual environment.
-With poetry, it means: 
+Clone the repo and go inside the directory
+
+```
+cd hermine
+```
+
+Activate your Python virtual environment. With poetry, it means: 
 ```
 poetry shell
 ```
+For the first run, edit your database credentials
 
-For the first run, you have to create a superuser:
 ```
-python manage.py createsuperuser
-```
+cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py 
+``` 
+and edit the `mysecrets.py` file you just created.
 
+
+```
+python hermine/manage.py makemigrations
+python hermine/manage.py migrate
+python hermine/manage.py createsuperuser
+```
 
 And then launch the django dev server:
 
 ```
 cd hermine
-python3 manage.py runserver
+python3 hermine/manage.py runserver
 ```
-You can then point your browser to [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+You can then point your browser to [http://127.0.0.1:8080/admin/](http://127.0.0.1:8080/admin/)
 
-and log in with admin/admin to create new users
+and log in as superuser to create new users
 
-or directly to [http://127.0.0.1:8000](http://127.0.0.1:8000) to use the application.
+or directly to [http://127.0.0.1:8080](http://127.0.0.1:8080) to use the application.
 
 You can find an in progress documentation at https://hermine-foss.org/ 
 
