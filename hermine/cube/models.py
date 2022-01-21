@@ -340,10 +340,18 @@ class LicenseChoice(models.Model):
     expression_in = models.CharField(max_length=500)
     expression_out = models.CharField(max_length=500)
 
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, blank=True, null=True)
-    release = models.ForeignKey(Release, on_delete=models.CASCADE, blank=True, null=True)
-    component = models.ForeignKey(Component, on_delete=models.CASCADE, blank=True, null=True)
-    version = models.ForeignKey(Version, on_delete=models.CASCADE, blank=True, null=True)
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, blank=True, null=True
+    )
+    release = models.ForeignKey(
+        Release, on_delete=models.CASCADE, blank=True, null=True
+    )
+    component = models.ForeignKey(
+        Component, on_delete=models.CASCADE, blank=True, null=True
+    )
+    version = models.ForeignKey(
+        Version, on_delete=models.CASCADE, blank=True, null=True
+    )
 
     scope = models.CharField(max_length=128, blank=True, null=True)
 

@@ -20,6 +20,7 @@ from cube.models import (
 Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data. Here the serialization is based on the Django REST Framework (DRF).
 """
 
+
 class ObligationSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of obligations on the following fields :
     "name", "license", "verbatim", "passivity", "trigger_expl", "trigger_mdf", "generic_id"
@@ -190,7 +191,14 @@ class ReleaseSerializer(serializers.ModelSerializer):
     class Meta:
         use_natural_foreign_keys = True
         model = Release
-        fields = ["id", "product", "release_number", "ship_status", "pub_date", "valid_step"]
+        fields = [
+            "id",
+            "product",
+            "release_number",
+            "ship_status",
+            "pub_date",
+            "valid_step",
+        ]
 
 
 class ProductSerializer(serializers.ModelSerializer):

@@ -7,6 +7,7 @@ from django import template
 
 register = template.Library()
 
+
 @register.filter
 def getModifTriggerSet(value):
     """Takes an obligation_set from a generic obligation and returns its Mofication Trigger
@@ -18,17 +19,18 @@ def getModifTriggerSet(value):
     :rtype: string
     """
     modif_trigger_list = (obligation.trigger_mdf for obligation in value)
-    if ("AlteredUnmodified" in modif_trigger_list) or (("Altered" and "Unmodified") in modif_trigger_list):
+    if ("AlteredUnmodified" in modif_trigger_list) or (
+        ("Altered" and "Unmodified") in modif_trigger_list
+    ):
         return "Altered or Unmodified"
-    elif ("Altered" in modif_trigger_list):
+    elif "Altered" in modif_trigger_list:
         return "Altered"
-    elif ("Unmodified" in modif_trigger_list):
+    elif "Unmodified" in modif_trigger_list:
         return "Unmodified"
-    else :
+    else:
         raise ValueError("No modification trigger was given")
 
-    
-    
+
 @register.filter
 def getModifTriggerOblig(value):
     """Returns the Modification trigger of an Obligation object.
@@ -39,29 +41,31 @@ def getModifTriggerOblig(value):
     :return: a string in ['Altered', 'Unmodified', 'AlteredUnmodified']
     :rtype: string
     """
-    if (value.trigger_mdf == "AlteredUnmodified") :
+    if value.trigger_mdf == "AlteredUnmodified":
         return "component is modified or not"
-    elif (value.trigger_mdf == "Altered") :
+    elif value.trigger_mdf == "Altered":
         return "component is modified"
-    elif (value.trigger_mdf == "Unmodified") :
+    elif value.trigger_mdf == "Unmodified":
         return "component is not modified"
-    else :
+    else:
         return "No modification trigger found"
+
 
 @register.filter
 def getExplTriggerOblig(value):
-    if (value.trigger_expl == "Distribution") :
+    if value.trigger_expl == "Distribution":
         return "source code or binaries are distributed "
-    elif (value.trigger_expl == "DistributionSource") :
+    elif value.trigger_expl == "DistributionSource":
         return "source code is distributed"
-    elif (value.trigger_expl == "DistributionNonSource") :
+    elif value.trigger_expl == "DistributionNonSource":
         return "binaries are distributed"
-    elif (value.trigger_expl == "NetworkAccess") :
+    elif value.trigger_expl == "NetworkAccess":
         return "component is accessible by network access"
-    elif (value.trigger_expl == "InternalUse") :
+    elif value.trigger_expl == "InternalUse":
         return "the component is used for internal usage"
-    else :
+    else:
         return "No modification trigger found"
+
 
 @register.filter
 def getColorTag(value):
@@ -73,11 +77,11 @@ def getColorTag(value):
     :return: A CSS string
     :rtype: string
     """
-    if value.color == "Green" :
+    if value.color == "Green":
         return "is-success"
-    elif value.color == "Orange" :
+    elif value.color == "Orange":
         return "is-warning"
-    elif value.color == "Red" :
+    elif value.color == "Red":
         return "is-danger"
-    else :
+    else:
         return "is-dark"

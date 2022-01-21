@@ -4,15 +4,11 @@
 
 # This file has to be completed under the name 'mysecrets.py' in this same folder.
 # Do not delete or modify this file, it's used for documentation build in CI !
-# Do not commit your authentication credential ! 
+# Do not commit your authentication credential !
 
-DATABASES = { 'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
-    }
-}
+DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sqlite3"}}
 
-SECRET_KEY = 'your-django-secret-key'
+SECRET_KEY = "your-django-secret-key"
 
 # For a Postgres DB, copy and fill the following :
 
@@ -24,5 +20,5 @@ SECRET_KEY = 'your-django-secret-key'
 #         "PASSWORD": "your-postgres-db-password",
 #         "HOST": "",
 #         "PORT": ""
-#     } 
+#     }
 # }

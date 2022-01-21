@@ -147,7 +147,7 @@ REST_FRAMEWORK = {
     ],
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 50,
-    'TEST_REQUEST_DEFAULT_FORMAT' : 'json'
+    "TEST_REQUEST_DEFAULT_FORMAT": "json",
 }
 
 ENTERPRISE_NAME = "inno3"
@@ -158,7 +158,4 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 1000000
 
 # Graph vizualization stuff
 
-GRAPH_MODELS = {
-  'all_applications': True,
-  'group_models': True,
-}
+GRAPH_MODELS = {"all_applications": True, "group_models": True}
