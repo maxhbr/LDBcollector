@@ -113,8 +113,6 @@ def get_licenses_to_check_or_create(release):
                     licenses_to_create.add(license)
                     print("unknown license", license)
 
-            
-
     response["licenses_to_check"] = licenses_to_check
     response["licenses_to_create"] = licenses_to_create
     return response
@@ -143,6 +141,7 @@ def index(request):
     }
     return render(request, "cube/index.html", context)
 
+
 @login_required
 def licenses(request, page=1):
     form = ImportLicensesForm(request.POST, request.FILES)
@@ -154,11 +153,9 @@ def licenses(request, page=1):
     except EmptyPage:
         licenses = paginator.page(paginator.num_pages)
 
-    context = {
-        "licenses": licenses,
-        "form": form,
-    }
+    context = {"licenses": licenses, "form": form}
     return render(request, "cube/license_list.html", context)
+
 
 @login_required
 def license(request, license_id):
@@ -342,7 +339,6 @@ def handle_licenses_file(request):
         print("Type of JSON neither is a list nor a dict")
 
 
-
 @csrf_exempt
 def upload_licenses_file(request):
     if request.method == "POST":
@@ -354,8 +350,9 @@ def upload_licenses_file(request):
             form = ImportLicensesForm()
     return redirect(request.META["HTTP_REFERER"])
 
+
 # def export_licenses(request):
-#     """An export function that uses the License Serializer on all the licenses. 
+#     """An export function that uses the License Serializer on all the licenses.
 #     Effective, but using the the other one which calls the API might allow to handle specific cases such as access restrictions
 #     """
 #     filename = "licenses.json"
@@ -366,27 +363,27 @@ def upload_licenses_file(request):
 #         response["Content-Disposition"] = "attachment; filename=%s" % filename
 #         return response
 def export_licenses(request):
-        """Calls API to retrieve list of licenses. Handles DRF pagination.
+    """Calls API to retrieve list of licenses. Handles DRF pagination.
 
         :return: HttpResponse that triggers the download of a JSON file containing every license in a JSON Array.
         :rtype: DjangoHttpResponse
         """
-        request_uri = settings.API_BASE_URL + "licenses/?format=json"
-        filename = "licenses.json"
-        with open(filename, "w+"):
-            r = requests.get(request_uri)
+    request_uri = settings.API_BASE_URL + "licenses/?format=json"
+    filename = "licenses.json"
+    with open(filename, "w+"):
+        r = requests.get(request_uri)
+        json_r = r.json()
+        licenseJSONArray = json_r["results"]
+        while json_r["next"]:
+            r = requests.get(json_r["next"])
             json_r = r.json()
-            licenseJSONArray = json_r["results"]
-            while json_r["next"]:
-                r = requests.get(json_r["next"])
-                json_r = r.json()
-                for license in json_r["results"]:
-                    licenseJSONArray.append(license)
-            response = HttpResponse(
-                json.dumps(licenseJSONArray, indent=4), content_type="application/json"
-            )
-            response["Content-Disposition"] = "attachment; filename=%s" % filename
-            return response
+            for license in json_r["results"]:
+                licenseJSONArray.append(license)
+        response = HttpResponse(
+            json.dumps(licenseJSONArray, indent=4), content_type="application/json"
+        )
+        response["Content-Disposition"] = "attachment; filename=%s" % filename
+        return response
 
 
 def export_specific_license(request, license_id):
@@ -395,7 +392,9 @@ def export_specific_license(request, license_id):
     serializer = LicenseSerializer
     data = serializer(l).data
     with open(filename, "w+"):
-        response = HttpResponse(json.dumps(data, indent=4), content_type="application/json")
+        response = HttpResponse(
+            json.dumps(data, indent=4), content_type="application/json"
+        )
         response["Content-Disposition"] = "attachment; filename=%s" % filename
         return response
 
@@ -554,19 +553,15 @@ def release_add_choice(request, release_id, usage_id):
     else:
         raise ("Choice cannot be done because no expression to process")
     choices = LicenseChoice.objects.filter(
-                    Q(expression_in=effective_license),
-                    Q(component=usage.version.component) | Q(component=None),
-                    Q(version=usage.version) | Q(version=None),
-                    Q(product=usage.release.product) | Q(product=None),
-                    Q(release=usage.release) | Q(release=None),
-                    Q(scope=usage.scope) | Q(scope=None),
-                )
+        Q(expression_in=effective_license),
+        Q(component=usage.version.component) | Q(component=None),
+        Q(version=usage.version) | Q(version=None),
+        Q(product=usage.release.product) | Q(product=None),
+        Q(release=usage.release) | Q(release=None),
+        Q(scope=usage.scope) | Q(scope=None),
+    )
 
-    context = {
-        "usage": usage,
-        "expression_in": effective_license,
-        "choices": choices,
-    }
+    context = {"usage": usage, "expression_in": effective_license, "choices": choices}
     return render(request, "cube/release_choice.html", context)
 
 
@@ -606,7 +601,7 @@ def release_send_choice(request, release_id, usage_id):
     usage.save()
 
     # Then we store this choice
-    if range_scope =="any":
+    if range_scope == "any":
         scope = None
     else:
         scope = usage.scope
@@ -627,19 +622,15 @@ def release_send_choice(request, release_id, usage_id):
     elif range_component == "product":
         release = None
 
-
     choice, created = LicenseChoice.objects.update_or_create(
-                expression_in=expression_in,
-                product=product,
-                release=release,
-                component=component,
-                version=version,
-                scope=scope,
-                defaults={
-                    "expression_out": expression_out,
-                    "explanation": explanation,
-                },
-            )
+        expression_in=expression_in,
+        product=product,
+        release=release,
+        component=component,
+        version=version,
+        scope=scope,
+        defaults={"expression_out": expression_out, "explanation": explanation},
+    )
 
     response = redirect("cube:release_synthesis", release_id)
     return response

@@ -18,17 +18,20 @@ from .models import Obligation
 from .models import Derogation
 from .models import LicenseChoice
 
+
 class ObligationInline(admin.StackedInline):
     model = Obligation
     extra = 1
+
 
 class ObligationInlineTab(admin.TabularInline):
     model = Obligation
     extra = 1
 
+
 class ObligationAdmin(admin.ModelAdmin):
     search_fields = ["name", "license__spdx_id"]
-     
+
 
 class VersionInlineTab(admin.TabularInline):
     model = Version
@@ -47,12 +50,12 @@ class LicenseAdmin(admin.ModelAdmin):
     search_fields = ["spdx_id"]
 
 
-
 class GenericAdmin(admin.ModelAdmin):
     inlines = [ObligationInlineTab]
     list_display = ("name", "in_core", "metacategory", "team")
     list_filter = ["in_core"]
     ordering = ["in_core"]
+
 
 class ComponentAdmin(admin.ModelAdmin):
     inlines = [VersionInlineTab]
@@ -65,7 +68,13 @@ class ReleaseAdmin(admin.ModelAdmin):
 
 class UsageAdmin(admin.ModelAdmin):
     list_display = ("__str__", "version")
-    search_fields = ["release__product__name", "version__component__name", "licenses_chosen__spdx_id", "pk", "status"]
+    search_fields = [
+        "release__product__name",
+        "version__component__name",
+        "licenses_chosen__spdx_id",
+        "pk",
+        "status",
+    ]
 
 
 class VersionAdmin(admin.ModelAdmin):
@@ -83,4 +92,3 @@ admin.site.register(Usage, UsageAdmin)
 admin.site.register(Generic, GenericAdmin)
 admin.site.register(Derogation)
 admin.site.register(LicenseChoice)
-

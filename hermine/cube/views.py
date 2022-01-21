@@ -136,19 +136,17 @@ class ReleaseView(LoginRequiredMixin, generic.DetailView):
 
         if len(r["usages_lic_grey"]) > 0 and validation_step > 2:
             validation_step = 2
-        
+
         if (
             len(r["usages_lic_red"]) == 0
             and len(r["usages_lic_orange"]) == 0
-            and len(r["usages_lic_grey"]) == 0):
+            and len(r["usages_lic_grey"]) == 0
+        ):
             step_4_valid = True
         else:
             step_4_valid = False
 
-        if (
-            step_4_valid
-            and validation_step == 4
-        ):
+        if step_4_valid and validation_step == 4:
             validation_step = 5
 
         context["usages_lic_red"] = r["usages_lic_red"]
@@ -244,4 +242,3 @@ class ComponentView(LoginRequiredMixin, generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
-
