@@ -17,9 +17,12 @@
 ;
 
 (ns lice-comb.files-test
-  (:require [clojure.test    :refer [deftest testing is]]
-            [clojure.java.io :as io]
-            [lice-comb.files :refer [probable-license-file? probable-license-files file->ids dir->ids zip->ids]]))
+  (:require [clojure.test               :refer [deftest testing is use-fixtures]]
+            [clojure.java.io            :as io]
+            [lice-comb.test-boilerplate :refer [fixture]]
+            [lice-comb.files            :refer [probable-license-file? probable-license-files file->ids dir->ids zip->ids]]))
+
+(use-fixtures :once fixture)
 
 (def test-data-path "./test/lice_comb/data")
 

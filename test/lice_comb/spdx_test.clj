@@ -17,9 +17,12 @@
 ;
 
 (ns lice-comb.spdx-test
-  (:require [clojure.test    :refer [deftest testing is]]
-            [clojure.java.io :as io]
-            [lice-comb.spdx  :refer [name->ids uri->id text->ids]]))
+  (:require [clojure.test               :refer [deftest testing is use-fixtures]]
+            [clojure.java.io            :as io]
+            [lice-comb.test-boilerplate :refer [fixture]]
+            [lice-comb.spdx             :refer [name->ids uri->id text->ids]]))
+
+(use-fixtures :once fixture)
 
 ; Note: these tests should be extended indefinitely, as it exercises the guts of the matching algorithm
 (deftest name->ids-tests
@@ -42,6 +45,11 @@
     (is (= #{"AGPL-3.0"}                         (name->ids "GNU Affero General Public License v3.0")))
     (is (= #{"AGPL-3.0-only"}                    (name->ids "GNU Affero General Public License v3.0 only")))
     (is (= #{"Apache-1.0"}                       (name->ids "Apache Software License")))
+    (is (= #{"Apache-1.0"}                       (name->ids "Apache License 1")))
+    (is (= #{"Apache-1.0"}                       (name->ids "Apache License 1.0")))
+    (is (= #{"Apache-1.0"}                       (name->ids "Apache License Version 1.0")))
+    (is (= #{"Apache-1.0"}                       (name->ids "Apache License, Version 1.0")))
+    (is (= #{"Apache-1.0"}                       (name->ids "Apache Software License - Version 1.0")))
     (is (= #{"Apache-1.1"}                       (name->ids "Apache License 1.1")))
     (is (= #{"Apache-1.1"}                       (name->ids "Apache License Version 1.1")))
     (is (= #{"Apache-1.1"}                       (name->ids "Apache License, Version 1.1")))
@@ -71,6 +79,7 @@
     (is (= #{"CC-BY-3.0"}                        (name->ids "Creative Commons Legal Code Attribution 3.0 Unported")))
     (is (= #{"CC-BY-4.0"}                        (name->ids "Attribution 4.0 International")))
     (is (= #{"CC-BY-SA-4.0"}                     (name->ids "Creative Commons Attribution Share Alike 4.0 International")))
+    (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1")))
     (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0")))
     (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0")))
     (is (= #{"CDDL-1.1"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1")))

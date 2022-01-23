@@ -17,8 +17,11 @@
 ;
 
 (ns lice-comb.deps-test
-  (:require [clojure.test    :refer [deftest testing is]]
-            [lice-comb.deps  :refer [dep->ids deps-licenses]]))
+  (:require [clojure.test               :refer [deftest testing is use-fixtures]]
+            [lice-comb.test-boilerplate :refer [fixture]]
+            [lice-comb.deps             :refer [dep->ids deps-licenses]]))
+
+(use-fixtures :once fixture)
 
 (def gitlib-dir (str (System/getProperty "user.home") "/.gitlibs/libs"))
 
