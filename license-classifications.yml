@@ -1567,6 +1567,12 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-W3C-copyright-documents-19990405"
+    categories:
+      - "property:unchecked"
+      - "free-restricted"
+      - "property:include-in-notice-file"
+
   - id: "CC-BY-SA-2.5"
     categories:
       - "copyleft-file-level"
@@ -3411,3 +3417,8 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-Bellcore"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
