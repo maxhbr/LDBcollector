@@ -168,11 +168,11 @@ class VersionViewSet(viewsets.ModelViewSet):
         Handles if the user is accessing the viewset from root of api or from a nested componentset in a license
 
 
-        :return: 
+        :return: All the versions if query is made from /api/versions/, or only the relevant version if query is made from /api/components/<int: componen_id>/versions
         :rtype: QuerySet
         """
         try:
-            component = self.kwargs["id_id"]
+            component = self.kwargs["nested_1_pk"]
             response = Version.objects.filter(component__id=component)
         except:
             response = Version.objects.all()

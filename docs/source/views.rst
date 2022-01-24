@@ -4,7 +4,9 @@
 
 Views
 ===================================
+
 Functions related to the views of Hermine.
+
 
 .. automodule:: cube.views
     :members:

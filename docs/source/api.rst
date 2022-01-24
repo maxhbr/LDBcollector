@@ -6,12 +6,14 @@ API
 ========
 Hermine is a Free software under license `AGPL-3.0-only <https://www.gnu.org/licenses/agpl-3.0>`_.
 
+
 Authentication through API
 ---------------------------------
 
 Authentication is handled through a Token system.
 Make a POST request on 'api/token-auth/' with the fields 'username' and 'password' in a form-data.
 THis will give you a response like 
+
 
 .. code-block:: json
 
@@ -26,6 +28,7 @@ Note : there must be a white space between Token and the token itself.
 
 In a python requests in would look like 
 
+
 .. code-block:: python
     
     import requests
@@ -33,6 +36,7 @@ In a python requests in would look like
     url = 'http://127.0.0.1:8080/releases/'
     headers = {'Authorization': 'Token 1273e3f6XXXXXXXXXXXXXXXX71209ac3bf29'}
     r = requests.get(url, headers=headers)
+
 
 API endpoints for Models
 ---------------------------------
@@ -43,6 +47,7 @@ A detail view for an instance of a class can be found at '/api/<str:class_name>/
 
 More information about API endpoints parameters can be found in the Views page.
 
+
 Upload of SPDX file 
 ---------------------------------
 
@@ -52,6 +57,7 @@ While properly authenticated, you are allowed to POST a SPDX.yaml file to a chos
 
 * spdx_file : the file you want to upload. It should be a YAML file that comes from an ORT digest.
 * release_id :  the integer identifying the release you aim at
+
 
 Validation steps
 ---------------------------------
@@ -90,6 +96,7 @@ licenses_to_check
 
 licenses_to_create
     An array of licenses that need to be created in hermine's database.
+
 
 Step 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
