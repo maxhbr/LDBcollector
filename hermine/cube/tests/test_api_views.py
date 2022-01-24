@@ -84,8 +84,8 @@ class APILicenseTests(APITestCase):
             "name": "TestGeneric",
             "description": "This generic obligation is for testing purpose.",
             "in_core": "True",
-            "metacategory": "IP management",
-            "passivity": "Active",
+            "metacategory": "IPManagement",
+            "passivity": "Active"
         }
         r = self.c.post(url, data, format="json")
         self.assertEqual(r.status_code, 201)
@@ -218,8 +218,6 @@ class APILicenseTests(APITestCase):
             "declared_license_expr": SPDX_ID + "OR AND",
             "spdx_valid_license_expr": "",
             "corrected_license": SPDX_ID,
-            "scanned_licenses": "",
-            "purl": "",
         }
 
         r = self.c.post(url, data, format="json")
@@ -231,6 +229,37 @@ class APILicenseTests(APITestCase):
 
         # Assumes that the previously created component is the first one in the base (it's the case)
         url = "/api/versions/1/?format=json"
+
+        r = self.c.get(url)
+        self.assertEqual(r.status_code, 200)
+
+    def step17(self):
+        """Test to create a new Usage
+            """
+        url = "/api/usages/"
+
+        data = {
+            "release": 1,
+            "version": 1,
+            "status": "Validated",
+            "addition_method": "Manual",
+            "addition_date": "2022-01-19T17:01:40+01:00",
+            "linking": "Dynamic",
+            "component_modified": "Unmodified",
+            "exploitation": "Distribution",
+            "description": "This is a test Usage",
+            "licenses_chosen": [1],
+        }
+
+        r = self.c.post(url, data, format="json")
+        self.assertEqual(r.status_code, 201)
+
+    def step18(self):
+        """Test to retrieve the created Usage
+        """
+
+        # Assumes that the previously created component is the first one in the base (it's the case)
+        url = "/api/usages/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
