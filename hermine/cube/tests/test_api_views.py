@@ -235,6 +235,37 @@ class APILicenseTests(APITestCase):
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
+    def step17(self):
+        """Test to create a new Usage
+            """
+        url = "/api/usages/"
+
+        data = {
+            "release": 1,
+            "version": 1,
+            "status": "Validated",
+            "addition_method": "Manual",
+            "addition_date": "2022-01-19T17:01:40+01:00",
+            "linking": "Dynamic",
+            "component_modified": "Unmodified",
+            "exploitation": "Distribution",
+            "description": "This is a test Usage",
+            "licenses_chosen": [1],
+        }
+
+        r = self.c.post(url, data, format="json")
+        self.assertEqual(r.status_code, 201)
+
+    def step18(self):
+        """Test to retrieve the created Usage
+        """
+
+        # Assumes that the previously created component is the first one in the base (it's the case)
+        url = "/api/usages/1/?format=json"
+
+        r = self.c.get(url)
+        self.assertEqual(r.status_code, 200)
+
     def _steps(self):
         names = dir(self)
         names.sort(
