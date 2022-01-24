@@ -269,7 +269,6 @@ class VersionSerializer(serializers.ModelSerializer):
             "declared_license_expr",
             "spdx_valid_license_expr",
             "corrected_license",
-            "scanned_licenses",
             "purl",
         ]
 
