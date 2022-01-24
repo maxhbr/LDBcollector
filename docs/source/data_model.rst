@@ -7,6 +7,7 @@ The Data Model
 
 All the classes that constitute the model of Hermine. See the related class diagram at
 
+
 .. automodule:: cube.models
     :members:
 

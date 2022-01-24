@@ -10,5 +10,6 @@ Serializers also provide deserialization, allowing parsed data to be converted b
 
 Those serializers are mainly used for the API and for import / export functions.
 
+
 .. automodule:: cube.serializers
     :members:

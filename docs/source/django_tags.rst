@@ -4,7 +4,9 @@
 
 Django tags
 ===================================
+
 Django tags allow to display specific pieces of information from model logic in UI.
+
 
 .. automodule:: cube.templatetags.cube_tags
     :members:

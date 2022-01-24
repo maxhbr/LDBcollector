@@ -7,6 +7,7 @@ Developing Hermine
 
 This is the documentation for people who might want to contribute to Hermine Project. 
 
+
 .. toctree::
    :glob:
    :caption: Contents:
@@ -16,4 +17,5 @@ This is the documentation for people who might want to contribute to Hermine Pro
    django_tags
    views
    serializers
+   tests
    contribute
