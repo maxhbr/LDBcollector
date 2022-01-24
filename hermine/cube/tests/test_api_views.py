@@ -84,8 +84,8 @@ class APILicenseTests(APITestCase):
             "name": "TestGeneric",
             "description": "This generic obligation is for testing purpose.",
             "in_core": "True",
-            "metacategory": "IP management",
-            "passivity": "Active",
+            "metacategory": "IPManagement",
+            "passivity": "Active"
         }
         r = self.c.post(url, data, format="json")
         self.assertEqual(r.status_code, 201)
@@ -218,8 +218,6 @@ class APILicenseTests(APITestCase):
             "declared_license_expr": SPDX_ID + "OR AND",
             "spdx_valid_license_expr": "",
             "corrected_license": SPDX_ID,
-            "scanned_licenses": "",
-            "purl": "",
         }
 
         r = self.c.post(url, data, format="json")
