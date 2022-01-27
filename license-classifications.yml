@@ -275,6 +275,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "LicenseRef-BSD-4-Clause-NetBSD"
     categories:
       - "permissive"
@@ -584,6 +585,13 @@ categorizations:
 
   # https://spdx.org/licenses/GFDL-1.3.html
   - id: "GFDL"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-GFDL"
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
@@ -1248,6 +1256,12 @@ categorizations:
       - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Classpath-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+      - "property:include-in-notice-file"
+
   - id: "Universal-FOSS-exception-1.0"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1455,6 +1469,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-CMU-style"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "LicenseRef-scancode-bsd-1988"
     categories:
       - "property:unchecked"
@@ -1654,6 +1674,11 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "Font-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Font-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
 
@@ -2046,14 +2071,10 @@ categorizations:
   - id: "FSF"
     categories:
       - "permissive"
-      - "property:include-in-notice-file"
-      - "property:unchecked"
 
   - id: "LicenseRef-FSF"
     categories:
       - "permissive"
-      - "property:include-in-notice-file"
-      - "property:unchecked"
 
   - id: "SunPro"
     categories:
@@ -2064,7 +2085,17 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-GCC-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "Bootloader-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Bootloader-exception"
     categories:
       - "property:AutoConf-or-other-exception"
 
@@ -2072,7 +2103,17 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-GCC-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "GCC-exception-3.1"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-GCC-exception-3.1"
     categories:
       - "property:AutoConf-or-other-exception"
 
@@ -2200,6 +2241,11 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Bison-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "LicenseRef-Bison-exception-2.2"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -2312,6 +2358,11 @@ categorizations:
       - "property:include-in-notice-file"
       - "permissive"
 
+  - id: "LicenseRef-Debian-SPI-style"
+    categories:
+      - "property:include-in-notice-file"
+      - "permissive"
+
   - id: "verbatim-distribution-license"
     categories:
       - "property:include-in-notice-file"
@@ -2332,6 +2383,11 @@ categorizations:
       - "permissive"
 
   - id: "Apple.Sample"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Apple.Sample"
     categories:
       - "permissive"
 
@@ -2373,6 +2429,11 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "Apache"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Apache"
     categories:
       - "property:unclear-scanner-finding"
 
@@ -2532,6 +2593,7 @@ categorizations:
     categories:
       - "permissive"
 
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "LicenseRef-BSD-style"
     categories:
       - "permissive"
@@ -2553,6 +2615,11 @@ categorizations:
       - "permissive"
 
   - id: "BSL-style"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-BSL-style"
     categories:
       - "permissive"
 
@@ -2581,6 +2648,11 @@ categorizations:
       - "permissive"
 
   - id: "BSD-possibility"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-BSD-possibility"
     categories:
       - "permissive"
 
@@ -2768,6 +2840,11 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Autoconf-exception-3.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/Autoconf-exception-3.0.html
   - id: "gnu-javamail-exception"
     categories:
@@ -2931,6 +3008,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-BSD-2"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "NotreDame-style"
     categories:
       - "permissive"
@@ -3049,6 +3132,12 @@ categorizations:
       - "copyleft-file-level"
       - "property:include-in-notice-file"
 
+  # https://tldp.org/COPYRIGHT.html
+  - id: "LicenseRef-LDPL"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+
   - id: "LicenseRef-agafari-font-non-commercial"
     categories:
       - "free-restricted"
@@ -3150,6 +3239,11 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-IOS"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
   - id: "IPTC"
     categories:
       - "proprietary-free"
@@ -3181,7 +3275,15 @@ categorizations:
     categories:
       - "commercial"
 
+  - id: "LicenseRef-COMMERCIAL"
+    categories:
+      - "commercial"
+
   - id: "DEC-Unknown-License"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-DEC-Unknown-License"
     categories:
       - "commercial"
 
@@ -3189,7 +3291,17 @@ categorizations:
     categories:
       - "commercial"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-HP-DEC"
+    categories:
+      - "commercial"
+
   - id: "HP-Compaq"
+    categories:
+      - "irrelevant"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-HP-Compaq"
     categories:
       - "irrelevant"
 
@@ -3202,7 +3314,19 @@ categorizations:
     categories:
       - "irrelevant"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Intel-WLAN"
+    categories:
+      - "irrelevant"
+
   - id: "Intel-Binary"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Intel-Binary"
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
@@ -3422,3 +3546,8 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  # Proprietary recipes for Yocto.
+  - id: "LicenseRef-CLOSED"
+    categories:
+      - "irrelevant"
