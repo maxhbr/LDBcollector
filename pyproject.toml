@@ -19,6 +19,7 @@ drf-nested-routers = "^0.93.3"
 psycopg2-binary = "^2.9.2"
 python-dateutil = "^2.8.2"
 spdx-license-list = "^0.5.2"
+odfpy = "^1.4.1"
 
 [tool.poetry.dev-dependencies]
 Sphinx = "^4.2.0"
