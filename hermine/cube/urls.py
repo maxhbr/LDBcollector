@@ -29,9 +29,9 @@ urlpatterns = [
     path("products", views.ProductListView.as_view(), name="products"),
     path("release/<int:pk>", views.ReleaseView.as_view(), name="release_synthesis"),
     path("release/<int:pk>/bom", views.ReleaseBomView.as_view(), name="bom"),
-    path("release/<int:pk>/oblig", views.ReleaseObligView.as_view(), name="oblig"),
+    path("release/<int:pk>/obligations", views.ReleaseObligView.as_view(), name="oblig"),
     path(
-        "release/<int:release_id>/<int:generic_id>",
+        "release/<int:release_id>/obligations/<int:generic_id>",
         f_views.release_generic,
         name="release_generic",
     ),
