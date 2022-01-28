@@ -818,6 +818,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/W3C.html
+  - id: "LicenseRef-W3C-style"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/WTFPL.html
   - id: "WTFPL"
     categories:
@@ -964,7 +970,21 @@ categorizations:
       - "property:distribute-source-code"
         #
   # https://spdx.org/licenses/LPPL-1.0.html
+  - id: "LPPL-1.0+"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LPPL-1.0.html
   - id: "LPPL-1.0-or-later"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LPPL-1.2.html
+  - id: "LPPL-1.2+"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
@@ -1288,6 +1308,10 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "LicenseRef-TeX-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "openvpn-openssl-exception"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1322,6 +1346,11 @@ categorizations:
       - "irrelevant"
 
   - id: "Patent-ref"
+    categories:
+      - "irrelevant"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Patent-ref"
     categories:
       - "irrelevant"
 
@@ -1512,6 +1541,13 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "RSA-Cryptoki"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-RSA-Cryptoki"
     categories:
       - "permissive"
       - "property:advertising-clause"
@@ -1970,7 +2006,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # hhttp://pcre.sourceforge.net/license.txttps://www.openldap.org/software/release/license.html
+  # http://pcre.sourceforge.net/license.txt
   - id: "LicenseRef-PCRE"
     categories:
       - "permissive"
@@ -2031,6 +2067,11 @@ categorizations:
       - "property:distribute-source-code"
 
   - id: "Public-domainC"
+    categories:
+      - "public-domain"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Public-domainC"
     categories:
       - "public-domain"
 
@@ -2330,6 +2371,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "permissive"
 
+  # Duplicate of the previous classification due to tooling requirements.
   - id: "LicenseRef-Python"
     categories:
       - "property:include-in-notice-file"
@@ -2349,6 +2391,11 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-Scanner-WebM"
+    categories:
+      - "property:include-in-notice-file"
+      - "permissive"
+
+  - id: "LicenseRef-WebM"
     categories:
       - "property:include-in-notice-file"
       - "permissive"
@@ -2411,6 +2458,11 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Perl-possibility"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "Sun-possibility"
     categories:
       - "property:unclear-scanner-finding"
@@ -2424,6 +2476,12 @@ categorizations:
       - "property:unclear-scanner-finding"
 
   - id: "W3C-possibility"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-W3C-possibility"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -2556,7 +2614,17 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-file.LICENSE"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "See-file.README"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-file.README"
     categories:
       - "property:unclear-scanner-finding"
 
@@ -2564,7 +2632,17 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-Same-license-as"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "See-file"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-file"
     categories:
       - "property:unclear-scanner-finding"
 
@@ -2572,11 +2650,26 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-URL"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "See-doc.OTHER"
     categories:
       - "property:unclear-scanner-finding"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-doc.OTHER"
+    categories:
+      - "property:unclear-scanner-finding"
+
   - id: "See-file.COPYING"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-See-file.COPYING"
     categories:
       - "property:unclear-scanner-finding"
 
@@ -2631,7 +2724,17 @@ categorizations:
     categories:
       - "permissive"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-X11-style"
+    categories:
+      - "permissive"
+
   - id: "X11-possibility"
+    categories:
+      - "permissive"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-X11-possibility"
     categories:
       - "permissive"
 
@@ -2659,6 +2762,12 @@ categorizations:
   - id: "MIT-possibility"
     categories:
       - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-MIT-possibility"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
 
   - id: "LicenseRef-Permissive-attribution"
     categories:
@@ -3018,6 +3127,11 @@ categorizations:
     categories:
       - "permissive"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-NotreDame-style"
+    categories:
+      - "permissive"
+
   - id: "Unicode-TOU"
     categories:
       - "proprietary-free"
@@ -3155,6 +3269,10 @@ categorizations:
     categories:
       - "permissive"
 
+  - id: "LicenseRef-U-Michigan"
+    categories:
+      - "permissive"
+
   # https://spdx.org/licenses/OLDAP-2.8.html
   - id: "LicenseRef-OLDAP"
     categories:
@@ -3167,8 +3285,14 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # https://spdx.org/licenses/OLDAP-2.8.html
+  # https://scancode-licensedb.aboutcode.org/wordnet.html
   - id: "WordNet-3.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/wordnet.html
+  - id: "LicenseRef-WordNet-3.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -3180,6 +3304,11 @@ categorizations:
       - "property:advertising-clause"
 
   - id: "USC"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-USC"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -3215,6 +3344,13 @@ categorizations:
 
   # http://publib.boulder.ibm.com/tividd/td/TWS/SC32-1267-00/en_US/HTML/eqqm1mst68.htm
   - id: "SSLeay"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:advertising-clause"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-SSLeay"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -3310,6 +3446,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-XFree86"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "Intel-WLAN"
     categories:
       - "irrelevant"
@@ -3338,6 +3480,14 @@ categorizations:
 
   # https://scancode-licensedb.aboutcode.org/ms-lpl.html
   - id: "MS-LPL"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:unchecked"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-MS-LPL"
     categories:
       - "free-restricted"
       - "property:include-in-notice-file"
@@ -3403,6 +3553,10 @@ categorizations:
       - "property:unchecked"
 
   - id: "Nvidia-EULA-b"
+    categories:
+      - "commercial"
+
+  - id: "LicenseRef-Nvidia-EULA-b"
     categories:
       - "commercial"
 
