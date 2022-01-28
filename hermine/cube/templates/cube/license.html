@@ -110,7 +110,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <h2 class="subtitle is-2">Obligations that are specific to this license</h2>
     {% for obligation in orphan_obligations %}
       <h3 class="subtitle is-3">{{ obligation.name }}</h3>
-      <h4 class="title is-4"> {{ obligation.passivity }}.</h4>
+      <h4 class="title is-4"> {{ obligation.passivity }}</h4>
       {% if obligation.passivity == "Active" %}
         Apply if: 
         <ul><li>{{ obligation|getModifTriggerOblig }}</li>
@@ -125,7 +125,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% for obligation in obligations_in_generic %}
       <h3 class="subtitle is-3">{{ obligation.name }}</h3>
       <h4 class="title is-4"> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </h4>
-      <h4 class="title is-4">{{ obligation.passivity }}.</h4>
+      <h4 class="title is-4">{{ obligation.passivity }}</h4>
       {% if obligation.passivity == "Active" %}
         Apply if: 
         <ul><li>{{ obligation|getModifTriggerOblig }}</li>
@@ -140,7 +140,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% for obligation in obligations_in_core %}
       <h3 class="subtitle is-3"> {{ obligation.name }}</h3>
       <h4 class="title is-4"> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </h4>
-      <h4 class="title is-4">{{ obligation.passivity }}.</h4>
+      <h4 class="title is-4">{{ obligation.passivity }}</h4>
       {% if obligation.passivity == "Active" %}
         Apply if: 
         <ul><li>{{ obligation|getModifTriggerOblig }}</li>

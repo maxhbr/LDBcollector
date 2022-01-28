@@ -50,7 +50,6 @@ class LicenseViewSet(viewsets.ModelViewSet):
     API endpoint that allows licenses to be viewed or edited.
     """
 
-    template_name = "cube/license_list.html"
     # Allowing to have a dot in the URL (for example to access "api/licenses/AFL-1.1")
     lookup_value_regex = "[\w\-.]+"
     queryset = License.objects.all()
