@@ -45,6 +45,10 @@ from .f_views import (
     propagate_choices,
 )
 
+from .importTools import(
+    import_ort_evaluated_model_json_file,
+)
+
 
 class LicenseViewSet(viewsets.ModelViewSet):
     """
@@ -161,7 +165,7 @@ class UploadORTViewSet(viewsets.ViewSet):
         release_id = request.POST.get("release_id")
         if ort_file is not None:
             content_type = ort_file.content_type
-            import_ort_file(spdx_file, release_id)
+            import_ort_evaluated_model_json_file(ort_file, release_id)
             response = "POST API and you have uploaded a {} file".format(content_type)
         else:
             response = "You forgot to upload a file !"
