@@ -87,6 +87,8 @@ router = routers.SimpleRouter()
 router.register(r"api/generics", api_views.GenericViewSet, basename="generic")
 router.register(r"api/releases", api_views.ReleaseViewSet, basename="release")
 router.register(r"api/upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
+router.register(r"api/upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
+
 
 
 release_router = routers.NestedSimpleRouter(router, r"api/releases")

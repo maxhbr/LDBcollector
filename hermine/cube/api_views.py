@@ -21,6 +21,7 @@ from cube.serializers import (
     UploadSPDXSerializer,
     NormalisedLicensesSerializer,
     DerogationSerializer,
+    UploadORTSerializer,
 )
 
 from .models import (
@@ -140,6 +141,31 @@ class UploadSPDXViewSet(viewsets.ViewSet):
         response = "POST API and you have uploaded a {} file".format(content_type)
         return Response(response)
 
+class UploadORTViewSet(viewsets.ViewSet):
+    """
+    API endpoint that allows to upload an ORT output file to Hermine.
+    """
+
+    serializer_class = UploadORTSerializer
+
+    def get_serializer_context(self):
+        context = super(myModelViewSet, self).get_serializer_context()
+        context.update({"request": self.request})
+        return context
+
+    def list(self, request):
+        return Response("GET Upload SPDX API")
+
+    def put(self, request):
+        ort_file = request.FILES.get("ort_file")
+        release_id = request.POST.get("release_id")
+        if ort_file is not None:
+            content_type = ort_file.content_type
+            import_ort_file(spdx_file, release_id)
+            response = "POST API and you have uploaded a {} file".format(content_type)
+        else:
+            response = "You forgot to upload a file !"
+        return Response(response)
 
 class ComponentViewSet(viewsets.ModelViewSet):
     """
