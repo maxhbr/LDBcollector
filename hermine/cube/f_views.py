@@ -51,6 +51,10 @@ from .importTools import (
     import_spdx_file,
 )
 
+from odf.opendocument import OpenDocumentText
+from odf.style import Style, TextProperties, ParagraphProperties
+from odf.text import H, P, Span
+
 # Tool functions
 
 
@@ -750,3 +754,135 @@ def check_licenses_against_policy(release):
     response["derogations"] = derogations
 
     return response
+
+
+def print_license(request, license_id):
+    l = get_object_or_404(License, pk=license_id)
+    filename = l.spdx_id + ".odt"
+    with open(filename, "w+"):
+        response = HttpResponse(content_type="application/vnd.oasis.opendocument.text")
+        response["Content-Disposition"] = "attachment; filename=%s" % filename
+        
+        textdoc = OpenDocumentText()
+        s = textdoc.styles
+
+        h1style = Style(name="Heading 1", family="paragraph")
+        h1style.addElement(TextProperties(attributes={'fontsize':"24pt",'fontweight':"bold"}))
+        s.addElement(h1style)
+        h1style.addElement(ParagraphProperties(attributes={'marginbottom': '1cm'}))
+        h2style = Style(name="Heading 2", family="paragraph")
+        h2style.addElement(TextProperties(attributes={'fontsize':"18pt",'fontweight':"bold" }))
+        h2style.addElement(ParagraphProperties(attributes={'marginbottom': '0.6cm', 'margintop': '0.4cm'}))
+        s.addElement(h2style)
+
+        h3style = Style(name="Heading 3", family="paragraph")
+        h3style.addElement(TextProperties(attributes={'fontsize':"14pt",'fontweight':"bold" }))
+        h3style.addElement(ParagraphProperties(attributes={'marginbottom': '0.2cm', 'margintop': '0.4cm'}))
+
+        s.addElement(h3style)
+
+        itstyle = Style(name="Italic", family="paragraph")
+        itstyle.addElement(TextProperties(attributes={'textemphasize':"true"}))
+        itstyle.addElement(ParagraphProperties(attributes={'margintop': '3cm'}))
+
+        s.addElement(itstyle)
+
+        # An automatic style
+        boldstyle = Style(name="Bold", family="text")
+        boldprop = TextProperties(fontweight="bold")
+        boldstyle.addElement(boldprop)
+        textdoc.automaticstyles.addElement(boldstyle)
+
+        textdoc.automaticstyles.addElement(itstyle)
+
+        # Text
+        h=H(outlinelevel=1, stylename=h1style, text=l.long_name)
+        textdoc.text.addElement(h)
+        h=H(outlinelevel=1, stylename=h2style, text=l.spdx_id)
+        textdoc.text.addElement(h)
+
+        p = P(text="Validation Color: ")
+        v = Span(stylename=boldstyle, text=l.color)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        if l.color_explanation is not None:
+            p = P(text="Explanation: ")
+            v = Span(stylename=boldstyle, text=l.color_explanation)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+
+        p = P(text="Copyleft: ")
+        v = Span(stylename=boldstyle, text=l.copyleft)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        p = P(text="Considered as Free Open Source Sofware: ")
+        v = Span(stylename=boldstyle, text=l.foss)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        p = P(text="Approved by OSI: ")
+        v = Span(stylename=boldstyle, text=l.osi_approved)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        p = P(text="Has an ethical clause: ")
+        v = Span(stylename=boldstyle, text=l.ethical_clause)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        if l.verbatim:
+            p = P(text="Verbatim: ")
+            value = Span(text=l.verbatim)
+            p.addElement(value)
+            textdoc.text.addElement(p)
+
+        if l.comment:
+            p = P(text="Comment: ")
+            value = Span(stylename=boldstyle, text=l.comment)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+        
+        h=H(outlinelevel=1, stylename=h2style, text="List of identified obligations")
+        textdoc.text.addElement(h)
+
+        for o in l.obligation_set.all():
+            h=H(outlinelevel=1, stylename=h3style, text=o.name)
+            textdoc.text.addElement(h)
+            
+            if o.generic:
+                p = P(text="Related Generic Obligation: ")
+                v = Span(stylename=boldstyle, text=o.generic)
+                p.addElement(v)
+                textdoc.text.addElement(p)
+            
+            p = P(text="Passivity: ")
+            v = Span(stylename=boldstyle, text=o.passivity)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+
+            p = P(text="Mode of exploitation that triggers this obligation: ")
+            v = Span(stylename=boldstyle, text=o.trigger_expl)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+            
+            p = P(text="Status of modification that triggers this obligation: ")
+            v = Span(stylename=boldstyle, text=o.trigger_mdf)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+
+            if o.verbatim:
+                p = P(text="Verbatim of the obligation: ")
+                v = Span(text=o.verbatim)
+                p.addElement(v)
+                textdoc.text.addElement(p)
+
+
+        p = P(stylename=itstyle, text="This license interpretation was exported from a Hermine project. https://hermine-foss.org/.")
+        textdoc.text.addElement(p)
+
+        textdoc.save(response)
+
+        return response
+    return redirect("cube:license", license_id)

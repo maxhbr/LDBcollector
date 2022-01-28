@@ -19,6 +19,11 @@ urlpatterns = [
         f_views.export_specific_license,
         name="export_license",
     ),
+    path(
+        "license/<int:license_id>/print/",
+        f_views.print_license,
+        name="print_license",
+    ),
     path("generics", f_views.generics, name="generics"),
     path("generic/<int:generic_id>", f_views.generic, name="generic"),
     path("export/licenses", f_views.export_licenses, name="export_licenses"),
