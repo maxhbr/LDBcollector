@@ -343,6 +343,12 @@ class UploadSPDXSerializer(serializers.Serializer):
     class Meta:
         fields = ["release_id", "spdx_file"]
 
+class UploadORTSerializer(serializers.Serializer):
+    ort_file = serializers.FileField()
+    release_id = serializers.IntegerField()
+
+    class Meta:
+        fields = ["release_id", "ort_file"]
 
 class NormalisedLicensesSerializer(serializers.Serializer):
     unnormalised_license_set = LicenseSerializer(

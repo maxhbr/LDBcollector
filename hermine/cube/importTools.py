@@ -186,6 +186,63 @@ def import_ort_file(json_file, release_id):
             print("NO SCOPES FOR Project Id", project["id"])
 
 
+def import_ort_evaluated_model_json_file(json_file, release_id):
+    data = json.load(json_file)
+
+    for package in data["packages"]:
+        if package["is_project"]:
+            continue 
+        component, component_created = Component.objects.get_or_create(
+            name=package["purl"].split("@")[0].split(":")[1],
+            defaults={
+                "description": package["description"],
+                "homepage_url": package["homepage_url"],
+            },
+        )
+        if component_created:
+            print("Component " + component.name + " created")        
+
+        version, version_created = Version.objects.get_or_create(
+            component=component,
+            version_number=package["purl"].split("@")[1],
+            defaults={
+                "declared_license_expr": [
+                    data["licenses"][license_index]
+                    for license_index in package["declared_licenses"]
+                ],
+                "spdx_valid_license_expr": package["declared_licenses_processed"][
+                    "spdx_expression"
+                ],
+                # TODO : support ORT scanner function
+                # "scanned_licenses":
+                "purl": package["purl"],
+            },
+        )
+        if version_created:
+            print(
+                "Version "
+                + version.version_number
+                + " created for component "
+                + component.name
+            )
+
+        # Project_id is the name of the project of the package
+        project_id = [
+            data["packages"][path["project"]]
+            for path in data["paths"]
+            if path["pkg"] == package["_id"]
+        ][0]["id"]
+
+        for scope_index in package["scopes"]:
+            scope = data["scopes"][scope_index]["name"]  # or "Blank Scope"
+            usage, usage_created = Usage.objects.get_or_create(
+                version_id=version.id,
+                release_id=release_id,
+                scope=scope,
+                description=project_id,
+                # defaults={"addition_method": "Scan"},
+            )
+
 def import_yocto_file(manifest_file, release_id):
     # Importing data from Yocto's license.manifest
 
