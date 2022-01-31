@@ -3,8 +3,6 @@ SPDX-FileCopyrightText: 2021 HH Partners, Attorneys-at-law Ltd <doubleopen@hhpar
 SPDX-License-Identifier: CC0-1.0
 -->
 
-[![REUSE status](https://api.reuse.software/badge/github.com/doubleopen-project/policy-configuration)](https://api.reuse.software/info/github.com/doubleopen-project/policy-configuration)
-
 # Double Open Policy Configuration
 
 This repository is used to maintain the license classification (license-classifications.yml) created by Double Open.
