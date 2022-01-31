@@ -1295,6 +1295,10 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "LicenseRef-u-boot-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "LicenseRef-Libtool-exception"
     categories:
       - "property:AutoConf-or-other-exception"
