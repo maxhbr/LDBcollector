@@ -1,0 +1,5 @@
+- id: "NuGet::MongoDB.Driver"
+  curations:
+    comment: "Set the VCS URL found on https://docs.mongodb.com/drivers/csharp/."
+    vcs:
+      url: "https://github.com/mongodb/mongo-csharp-driver.git"
