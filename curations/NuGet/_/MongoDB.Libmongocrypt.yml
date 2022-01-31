@@ -1,0 +1,5 @@
+- id: "NuGet::MongoDB.Libmongocrypt"
+  curations:
+    comment: "Set the VCS URL manually found on GitHub."
+    vcs:
+      url: "https://github.com/mongodb/libmongocrypt.git"
