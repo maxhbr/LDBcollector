@@ -45,9 +45,7 @@ from .f_views import (
     propagate_choices,
 )
 
-from .importTools import(
-    import_ort_evaluated_model_json_file,
-)
+from .importTools import import_ort_evaluated_model_json_file
 
 
 class LicenseViewSet(viewsets.ModelViewSet):
@@ -55,8 +53,6 @@ class LicenseViewSet(viewsets.ModelViewSet):
     API endpoint that allows licenses to be viewed or edited.
     """
 
-    # Allowing to have a dot in the URL (for example to access "api/licenses/AFL-1.1")
-    lookup_value_regex = "[\w\-.]+"
     queryset = License.objects.all()
     serializer_class = LicenseSerializer
     lookup_field = "id"
@@ -86,7 +82,6 @@ class ProductViewSet(viewsets.ModelViewSet):
     API endpoint that allows products to be viewed or edited
     """
 
-    lookup_value_regex = "[\w\-.]+"
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = "id"
@@ -145,6 +140,7 @@ class UploadSPDXViewSet(viewsets.ViewSet):
         response = "POST API and you have uploaded a {} file".format(content_type)
         return Response(response)
 
+
 class UploadORTViewSet(viewsets.ViewSet):
     """
     API endpoint that allows to upload an ORT output file to Hermine.
@@ -171,13 +167,12 @@ class UploadORTViewSet(viewsets.ViewSet):
             response = "You forgot to upload a file !"
         return Response(response)
 
+
 class ComponentViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows components to be viewed or edited
     """
 
-    # Allowing to have a dot in the URL (for example to access "api/licenses/AFL-1.1")
-    lookup_value_regex = "[\w\-.]+"
     queryset = Component.objects.all()
     serializer_class = ComponentSerializer
     lookup_field = "pk"
