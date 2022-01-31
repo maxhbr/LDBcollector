@@ -475,7 +475,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
-    #
+
   # https://spdx.org/licenses/GPL-2.0-only.html
   - id: "LicenseRef-gpl-2.0-or-later-with-ada-linking-exception"
     categories:
@@ -2193,6 +2193,12 @@ categorizations:
       - "property:unchecked"
       - "property:AutoConf-or-other-exception"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-linking-exception"
+    categories:
+      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
+
   - id: "LicenseRef-InnerNet-2.00"
     categories:
       - "property:unchecked"
@@ -2746,6 +2752,10 @@ categorizations:
     categories:
       - "permissive"
 
+  - id: "LicenseRef-Zlib-possibility"
+    categories:
+      - "permissive"
+
   - id: "LicenseRef-BSD"
     categories:
       - "permissive"
@@ -2956,6 +2966,11 @@ categorizations:
 
   # https://spdx.org/licenses/Autoconf-exception-3.0.html
   - id: "gnu-javamail-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-gnu-javamail-exception"
     categories:
       - "property:AutoConf-or-other-exception"
 
@@ -3403,6 +3418,10 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
+  - id: "LicenseRef-mif-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "CCPL"
     categories:
       - "property:unclear-scanner-finding"
@@ -3616,6 +3635,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # Duplicate of the previous classification due to tooling requirements.
+  - id: "LicenseRef-ZPL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "LicenseRef-tested-software"
     categories:
       - "permissive"
@@ -3636,6 +3661,10 @@ categorizations:
       - "property:unchecked"
 
   - id: "eCos-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-eCos-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
 
