@@ -47,6 +47,31 @@ from .f_views import (
 
 from .importTools import import_ort_evaluated_model_json_file
 
+class RootViewSet(viewsets.ViewSet):
+    """
+    This is the root of the API.
+    Here is the list of API endpoints you can use:
+
+    - api/components/
+    - api/components/<int:component_id>/versions/
+    - api/generics/
+    - api/licenses/
+    - api/licenses/<int:license_id>/obligations/
+    - api/obligations/
+    - api/products/
+    - api/products/<int:product_id>/releases/
+    - api/releases/
+    - api/releases/<int:release_id>/validation-1/
+    - api/releases/<int:release_id>/validation-2/
+    - api/releases/<int:release_id>/validation-3/
+    - api/releases/<int:release_id>/validation-4/
+    - api/upload_ort
+    - api/usages/
+
+    """
+
+    def list(self, request):
+        return Response("Feel free to use the API")
 
 class LicenseViewSet(viewsets.ModelViewSet):
     """
