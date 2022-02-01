@@ -18,23 +18,17 @@ As the application itself, this documentation is very much a work in progress.
 
       .. container:: descr
 
-         .. figure:: /img/background.jpg
-            :target: use_hermine.html
-
          :doc:`/use_hermine`
             Discover Hermine’s features through an online manual.
 
       .. container:: descr
-
-         .. figure:: /img/Hero_reference.jpg
-            :target: dev_hermine.html
 
          :doc:`dev_hermine`
             Explore the internals of Hermine to better use it, integrate it, and contribute to it.
 
 
 .. toctree::
-   :glob:
+   :maxdepth: 2
    :caption: Contents:
 
    use_hermine
@@ -45,4 +39,3 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`
