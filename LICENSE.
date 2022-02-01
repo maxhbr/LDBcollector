@@ -1,0 +1,46 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+HERMINE PROJECT'S LICENCE
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+URI: https://hermine-foss.org/licenses
+
+////////////////////////////////////////////
+// English version (French version below) //
+////////////////////////////////////////////
+
+Hermine Project is free software, licensed under the terms of the GNU Affero General Public License as published by the Free Software Foundation, version 3 of the License.  You can redistribute it and/or modify since you respect the terms of  this License.
+
+You should have received a copy of the GNU Affero General Public License with Hermine Project. If not,
+see : <http://www.gnu.org/licenses/>.
+
+Finally, Hermine Project is made using those external components and libraries. They are listed at the end of this file.
+
+////////////////////
+// French version //
+////////////////////
+
+Le projet Hermine est un logiciel libre, diffusé selon les termes de la GNU Affero General Public License telle que publiée par la Free Software Foundation dans sa version 3. Vous ne pouvez le redistribuer ou le modifier que si vous respectez les termes de cette licence.
+
+Vous devriez avoir reçu une copie de la GNU Affero General Public License avec le logiciel Hermine.
+Si n'est pas le cas, vous la trouverez sur : <http://www.gnu.org/licenses/>.
+
+Enfin, Hermine utilise des composants et bibliothèques externes. Ils sont listés à la fin de ce fichier.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+External components, libraries and icons:
+- drf-nested-routers	0.93.4	Apache 2.0
+- requests	2.27.1	Apache 2.0
+- asgiref	3.4.1	BSD-3-Clause
+- djangorestframework	3.13.1	BSD-3-Clause
+- django	3.2.11	BSD-3-Clause
+- idna	3.3	BSD-3-Clause
+- sqlparse	0.4.2	BSD-3-Clause
+- python-dateutil	2.8.2	BSD-3-Clause OR Apache 2.0
+- psycopg2-binary	2.9.3	LGPL 3.0 WITH linking exception
+- charset-normalizer	2.0.10	MIT
+- pytz	2021.3	MIT
+- six	1.16.0	MIT
+- urllib3	1.26.8	MIT
+- django-extensions	3.1.5	MIT
+- certifi	2021.10.8	MPL-2.0
