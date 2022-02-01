@@ -9,7 +9,7 @@ SPDX-License-Identifier: MIT
 <!DOCTYPE html>
 <html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
   <head>
-  {% load static %}
+    {% load static %}
     <link rel="preload" href="{% static 'cube/css/main.min.css' %}" as="style">
     <link rel="stylesheet" type="text/css" href="{% static 'cube/css/main.min.css' %}">
     <link rel="preload" href="{% static 'cube/css/fontawesome-free-all.css' %}" as="style">
@@ -21,47 +21,33 @@ SPDX-License-Identifier: MIT
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon"href="{% static 'favicon.ico' %}">
-    <title>{% block title %}{% endblock %} - Hermine cube</title>
+    <title>{% block title %}{% endblock %} - Hermine</title>
   </head>
   <body>
     <div id="app">
       <nav id="navbar-main" class="navbar is-fixed-top">
         <div class="navbar-brand">
           <a class="navbar-item is-hidden-desktop jb-aside-mobile-toggle">
-            <span class="icon"><i class="mdi mdi-forwardburger mdi-24px"></i></span>
+            <span class="icon"><i class="fas fa-bars"></i></span>
           </a>
         </div>
         <div class="navbar-brand is-right">
           <a class="navbar-item is-hidden-desktop jb-navbar-menu-toggle" data-target="navbar-menu">
-            <span class="icon"><i class="mdi mdi-dots-vertical"></i></span>
+            <span class="icon"><i class="fas fa-ellipsis-v"></i></span>
           </a>
         </div>
         <div class="navbar-menu fadeIn animated faster" id="navbar-menu">
           <div class="navbar-end">
-            <div class="navbar-item has-dropdown has-dropdown-with-icons has-divider has-user-avatar is-hoverable">
-              <a class="navbar-link is-arrowless">
-                <div class="is-user-avatar">
-                  <span class="icon"><i class="fas fa-user"></i> </span>
-                </div>
-                <div class="is-user-name">
-                  <span>{%if user.first_name or user.last_name %}{{user.first_name}} {{user.last_name}}{%else%}{{user.username}}{%endif%}</span>
-                </div>
-                <span class="icon"><i class="mdi mdi-chevron-down"></i></span>
-              </a>
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="{% url 'admin:auth_user_change' user.id %}">
-                  <span class="icon"><i class="mdi mdi-settings"></i></span>
-                  <span>Settings</span>
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item" href="{% url 'logout' %}">
-                  <span class="icon"><i class="mdi mdi-logout"></i></span>
-                  <span>Log Out</span>
-                </a>
+            <a class="navbar-item" href="{% url 'admin:auth_user_change' user.id %}">
+              <div class="is-user-avatar">
+                <span class="icon"><i class="fas fa-user"></i> </span>
               </div>
-            </div>
+              <div class="is-user-name">
+                <span>{%if user.first_name or user.last_name %}{{user.first_name}} {{user.last_name}}{%else%}{{user.username}}{%endif%}</span>
+              </div>
+            </a>
             <a title="Log out" class="navbar-item is-desktop-icon-only" href="{% url 'logout' %}">
-              <span class="icon"><i class="mdi mdi-logout"></i></span>
+              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
               <span>Log out</span>
             </a>
           </div>
@@ -169,24 +155,6 @@ SPDX-License-Identifier: MIT
         </div>
       </footer>
 
-      <div id="sample-modal" class="modal">
-        <div class="modal-background jb-modal-close"></div>
-        <div class="modal-card">
-          <header class="modal-card-head">
-            <p class="modal-card-title">Confirm action</p>
-            <button class="delete jb-modal-close" aria-label="close"></button>
-          </header>
-          <section class="modal-card-body">
-            <p>This will permanently delete <b>Some Object</b></p>
-            <p>This is sample modal</p>
-          </section>
-          <footer class="modal-card-foot">
-            <button class="button jb-modal-close">Cancel</button>
-            <button class="button is-danger jb-modal-close">Delete</button>
-          </footer>
-        </div>
-        <button class="modal-close is-large jb-modal-close" aria-label="close"></button>
-      </div>
     </div>
 
   </body>
