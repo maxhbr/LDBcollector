@@ -7,7 +7,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Hermine Project
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) [![REUSE status](https://api.reuse.software/badge/gitlab.com/hermine-project/hermine)](https://api.reuse.software/info/gitlab.com/hermine-project/hermine)
 
 Hermine is an Open Source application to manage your SBOMs of Open Source components, their licenses and their respective obligations.
 
