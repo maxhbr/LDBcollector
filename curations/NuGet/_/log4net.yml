@@ -1,0 +1,15 @@
+- id: "NuGet::log4net:2.0.11"
+  curations:
+    comment: "Set the VCS revision because there are multiple tags matching the version."
+    vcs:
+      revision: "rel/2.0.11"
+- id: "NuGet::log4net:2.0.12"
+  curations:
+    comment: "Set the VCS revision because there are multiple tags matching the version."
+    vcs:
+      revision: "rel/2.0.12"
+- id: "NuGet::log4net:2.0.13"
+  curations:
+    comment: "Set the VCS revision because there are multiple tags matching the version."
+    vcs:
+      revision: "rel/2.0.13"
