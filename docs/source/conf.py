@@ -66,7 +66,7 @@ html_static_path = ['_static']
 html_theme_options = {
     'analytics_id': 'G-XXXXXXXXXX',  #  Provided by Google in your dashboard
     'analytics_anonymize_ip': False,
-    'logo_only': False,
+    'logo_only': True,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
@@ -78,3 +78,5 @@ html_theme_options = {
     'includehidden': True,
     'titles_only': False
 }
+
+html_logo = "./img/LogoHermine_noBG.png"
