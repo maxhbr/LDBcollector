@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022 Viktor Kuzhelny https://github.com/vikdiesel/admin-one-bulma-dashboard/
+//
+// SPDX-License-Identifier: MIT
+
 "use strict";
 
 /* Aside: submenus toggle */
@@ -29,29 +33,5 @@ Array.from(document.getElementsByClassName('jb-navbar-menu-toggle')).forEach(fun
     document.getElementById(e.currentTarget.getAttribute('data-target')).classList.toggle('is-active');
     dropdownIcon.classList.toggle('mdi-dots-vertical');
     dropdownIcon.classList.toggle('mdi-close');
-  });
-});
-/* Modal: open */
-
-Array.from(document.getElementsByClassName('jb-modal')).forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    var modalTarget = e.currentTarget.getAttribute('data-target');
-    document.getElementById(modalTarget).classList.add('is-active');
-    document.documentElement.classList.add('is-clipped');
-  });
-});
-/* Modal: close */
-
-Array.from(document.getElementsByClassName('jb-modal-close')).forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    e.currentTarget.closest('.modal').classList.remove('is-active');
-    document.documentElement.classList.remove('is-clipped');
-  });
-});
-/* Notification dismiss */
-
-Array.from(document.getElementsByClassName('jb-notification-dismiss')).forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    e.currentTarget.closest('.notification').classList.add('is-hidden');
   });
 });
