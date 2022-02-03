@@ -984,6 +984,13 @@ categorizations:
       - "property:distribute-source-code"
 
   # https://spdx.org/licenses/LPPL-1.2.html
+  - id: "LPPL-1.2"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+  # https://spdx.org/licenses/LPPL-1.2.html
   - id: "LPPL-1.2+"
     categories:
       - "copyleft-strong"
@@ -2333,13 +2340,23 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
+        #
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Bison-exception-2.2.html
+  - id: "GPL-2.0-or-later-with-bison-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
 
-  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "LicenseRef-GPL-2.0-or-later-with-bison-exception-2.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
-      - "property:antitivo-clause"
       - "property:distribute-source-code"
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
@@ -2568,6 +2585,10 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-Permissive-no-warranty"
+    categories:
+      - "permissive"
+
+  - id: "Permissive-no-warranty"
     categories:
       - "permissive"
 
