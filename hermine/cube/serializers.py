@@ -21,12 +21,41 @@ Serializers allow complex data such as querysets and model instances to be conve
 """
 
 
+class GenericSerializer(serializers.ModelSerializer):
+    """Allow serialization and deserialization of generic obligations on the following fields :
+    "id", "name", "description", "in_core", "metacategory", "team", "passivity"
+    Here the id is kept because generic obligations are considered as something so important to the work of Hermine that keeping a surrogate key to point them is reasonable.
+
+    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    """
+
+    class Meta:
+        use_natural_foreign_keys = True
+        model = Generic
+        fields = [
+            "id",
+            "name",
+            "description",
+            "in_core",
+            "metacategory",
+            "team",
+            "passivity",
+        ]
+
+
+class GenericNameField(serializers.CharField):
+    def get_attribute(self, instance):
+        return instance.generic.name if instance.generic is not None else None
+
+
 class ObligationSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of obligations on the following fields :
     "name", "license", "verbatim", "passivity", "trigger_expl", "trigger_mdf", "generic_id"
 
     :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
+
+    generic_name = GenericNameField(allow_null=True, required=False)
 
     class Meta:
         use_natural_foreign_keys = True
@@ -39,8 +68,39 @@ class ObligationSerializer(serializers.ModelSerializer):
             "passivity",
             "trigger_expl",
             "trigger_mdf",
-            "generic_id",
+            "generic",
+            "generic_name",
         ]
+
+    def get_generic_name(self, instance):
+        generic = instance.generic
+        return generic.name if generic is not None else None
+
+    @classmethod
+    def create(cls, validated_data):
+        # When creating new obligation, we link it to a generic obligation if one with the same **name** exists in base.
+        generic_name = validated_data.pop("generic_name", None)
+        if generic_name is not None:
+            validated_data["generic"] = Generic.objects.get(name=generic_name)
+        instance = Obligation.objects.create(**validated_data)
+        return instance
+
+    @classmethod
+    def update(cls, instance, validated_data):
+        generic_name = validated_data.pop("generic_name", None)
+        if generic_name is not None:
+            validated_data["generic"] = Generic.objects.get(name=generic_name)
+
+        for field, value in validated_data.items():
+            setattr(instance, field, value)
+        instance.save()
+        return instance
+
+
+class LicenseObligationSerializer(ObligationSerializer):
+    class Meta:
+        model = Obligation
+        exclude = ["license"]
 
 
 class LicenseSerializer(serializers.ModelSerializer):
@@ -51,7 +111,7 @@ class LicenseSerializer(serializers.ModelSerializer):
     :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
-    obligation_set = ObligationSerializer(
+    obligation_set = LicenseObligationSerializer(
         read_only=False, many=True, allow_null=True, required=False
     )
 
@@ -91,10 +151,8 @@ class LicenseSerializer(serializers.ModelSerializer):
         obligations_data = validated_data.pop("obligation_set")
         license = License.objects.create(**validated_data)
         for obligation_data in obligations_data:
-            try:
-                Obligation.objects.create(license=license, **obligation_data)
-            except Exception:
-                print("Could not create obligations of", license)
+            obligation_data["license"] = license
+            ObligationSerializer.create(obligation_data)
         return license
 
     def update(self, instance, validated_data):
@@ -111,41 +169,17 @@ class LicenseSerializer(serializers.ModelSerializer):
         Obligation.objects.filter(license=instance).delete()
         obligations_data = validated_data.pop("obligation_set")
         for obligation_data in obligations_data:
+            ObligationSerializer(obligation_data)
             if obligation_data["generic_id"]:
                 obligation_data["generic_id"] = obligation_data["generic_id"].id
             updated_obligation = Obligation.objects.create(
                 **obligation_data, license=instance
             )
-            try:
-                instance.obligation_set.add(updated_obligation)
-            except Exception:
-                print("Could not create obligations of", instance)
+            instance.obligation_set.add(updated_obligation)
         for field, value in validated_data.items():
             setattr(instance, field, value)
         instance.save()
         return instance
-
-
-class GenericSerializer(serializers.ModelSerializer):
-    """Allow serialization and deserialization of generic obligations on the following fields :
-    "id", "name", "description", "in_core", "metacategory", "team", "passivity"
-    Here the id is kept because generic obligations are considered as something so important to the work of Hermine that keeping a surrogate key to point them is reasonable.
-
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
-    """
-
-    class Meta:
-        use_natural_foreign_keys = True
-        model = Generic
-        fields = [
-            "id",
-            "name",
-            "description",
-            "in_core",
-            "metacategory",
-            "team",
-            "passivity",
-        ]
 
 
 class UsageSerializer(serializers.ModelSerializer):
@@ -343,12 +377,14 @@ class UploadSPDXSerializer(serializers.Serializer):
     class Meta:
         fields = ["release_id", "spdx_file"]
 
+
 class UploadORTSerializer(serializers.Serializer):
     ort_file = serializers.FileField()
     release_id = serializers.IntegerField()
 
     class Meta:
         fields = ["release_id", "ort_file"]
+
 
 class NormalisedLicensesSerializer(serializers.Serializer):
     unnormalised_license_set = LicenseSerializer(
