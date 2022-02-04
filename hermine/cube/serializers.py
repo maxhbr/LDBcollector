@@ -17,7 +17,8 @@ from cube.models import (
 )
 
 """
-Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data. Here the serialization is based on the Django REST Framework (DRF).
+Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types.
+Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data. Here the serialization is based on the Django REST Framework (DRF).
 """
 
 
@@ -44,6 +45,9 @@ class GenericSerializer(serializers.ModelSerializer):
 
 
 class GenericNameField(serializers.CharField):
+    """A class that allows us to add an extra field "generic_name" in serialization of Obligation.
+    """
+
     def get_attribute(self, instance):
         return instance.generic.name if instance.generic is not None else None
 
@@ -98,6 +102,12 @@ class ObligationSerializer(serializers.ModelSerializer):
 
 
 class LicenseObligationSerializer(ObligationSerializer):
+    """A serializer used for nested representation of Obligations. We don'need and we cannot fill the license field in that case. 
+
+    :param ObligationSerializer: The main serializer for obligations
+    :type ObligationSerializer: Serializer
+    """
+
     class Meta:
         model = Obligation
         exclude = ["license"]
