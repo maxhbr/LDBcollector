@@ -45,7 +45,7 @@ However, the license identification and matching strategies are not fully compat
 the level of granularity and paradigms set forth by {metæffekt}. Second, the data does not cover publicly
 available commercial licenses (at least not to the extend required).
 
-This is why {metæffekt} choose to create an overarching database of licenses, exceptions, 
+This is why {metæffekt} choose to create an overarching database of licenses, 
 references, exceptions, expressions; the {metæffekt}-universe.
 
 ## Is {metæffekt} handing back to the FOSS Compliance Community?
@@ -53,8 +53,7 @@ Sure. We intend to provide those parts of our {metæffekt}-universe to the commu
 
 The only issue is time and resources. {metæffekt} is a self-financed company that makes a
 living from customer projects. With our limited time and resources we have to be very focused. 
-We are ready to do community work, once we see that there is a benefit beyond simply publishing 
-materials.
+We are ready to do community work, once we see that there is an interest in our work.
 
 So if you see that this material can be useful to you or ease your work, let us know. We are looking forward to
 intensify our community work or to start off a new project.
