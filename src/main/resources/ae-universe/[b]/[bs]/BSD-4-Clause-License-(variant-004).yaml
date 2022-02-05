@@ -5,3 +5,6 @@ canonicalName: "BSD 4-Clause License (variant 004)"
 category: "BSD"
 shortName: "BSD-4-Clause-004"
 
+alternativeNames:
+  - "BSD 5-Clause License (Geoff Kuenning)"
+

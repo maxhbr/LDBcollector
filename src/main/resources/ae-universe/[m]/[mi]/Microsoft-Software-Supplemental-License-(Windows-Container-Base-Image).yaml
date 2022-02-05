@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Microsoft Software Supplemental License (Windows Container Base Image)"
+category: "Microsoft Software Supplemental"
+shortName: "MS-Windows-Container-Base-Image"
+
+alternativeNames:
+  - "Microsoft Windows Container Base Image EULA 2020"
+
+otherIds: 
+  - "scancode:ms-windows-container-base-image-eula-2020"

@@ -5,8 +5,5 @@ canonicalName: "Microsoft Windows Rally Development Kit License"
 category: "Microsoft Windows Rally Development Kit License"
 shortName: "Microsoft-Windows-Rally-DevKit"
 
-alternativeNames:
-  - "Microsoft Windows Rally Development Kit License"
-
 otherIds: 
   - "scancode:microsoft-windows-rally-devkit"

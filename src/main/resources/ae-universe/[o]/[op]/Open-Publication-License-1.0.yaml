@@ -4,6 +4,7 @@
 canonicalName: "Open Publication License 1.0"
 category: "Open Publication"
 shortName: "Open-Publication-1.0"
+spdxIdentifier: "OPUBL-1.0"
 
 alternativeNames:
   - "Open Publication License v1.0"

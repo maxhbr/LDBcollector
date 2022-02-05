@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "Permission Terms (GAP)"
 category: "Permission"
-shortName: "PT-(GAP)"
+shortName: "PT-GAP"
 
 alternativeNames:
   - "Permission Terms (GAP)"

@@ -7,8 +7,5 @@ shortName: "QT-Library"
 
 type: "exception"
 
-alternativeNames:
-  - "QT Library Exception"
-
 otherIds: 
   - "scancode:subcommander-exception-2.0-plus"

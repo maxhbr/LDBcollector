@@ -5,8 +5,5 @@ canonicalName: "Microsoft DirectX SDK EULA"
 category: "Microsoft DirectX SDK EULA"
 shortName: "MS-DirectX-SDK-EULA"
 
-alternativeNames:
-  - "Microsoft DirectX SDK EULA"
-
 otherIds: 
   - "scancode:ms-directx-sdk-eula"

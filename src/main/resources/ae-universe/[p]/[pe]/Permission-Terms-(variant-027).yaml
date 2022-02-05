@@ -4,6 +4,7 @@
 canonicalName: "Permission Terms (variant 027)"
 category: "Permission"
 shortName: "PT-Var027"
+spdxIdentifier: "NTP-0"
 
 otherIds: 
   - "scancode:ntp-0"

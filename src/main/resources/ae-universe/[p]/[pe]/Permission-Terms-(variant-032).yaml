@@ -5,5 +5,8 @@ canonicalName: "Permission Terms (variant 032)"
 category: "Permission"
 shortName: "PT-Var032"
 
+alternativeNames:
+  - "Open Group Permissions"
+
 otherIds: 
   - "scancode:libpbm"

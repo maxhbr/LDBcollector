@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "Elastic License 2.0"
 category: "Elastic"
-shortName: "Elastic-2.0"
+spdxIdentifier: "Elastic-2.0"
 
 alternativeNames:
   - "Elastic License 2.0"

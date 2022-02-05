@@ -66,6 +66,7 @@ alternativeNames:
   - "Lesser GPL 3.0"
   - "The GNU Lesser General Public License, Versions 2.1 and 3"
   - "LGPL-3"
+  - "https://www.gnu.org/licenses/lgpl-3.0.txt"
 
 otherIds: 
   - "scancode:lgpl-3.0"

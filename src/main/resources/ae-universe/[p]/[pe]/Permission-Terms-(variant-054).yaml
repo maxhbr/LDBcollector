@@ -5,5 +5,8 @@ canonicalName: "Permission Terms (variant 054)"
 category: "Permission"
 shortName: "PT-Var054"
 
+alternativeNames:
+  - "OSF 1990 License"
+
 otherIds: 
   - "scancode:osf-1990"

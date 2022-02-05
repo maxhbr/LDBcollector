@@ -6,6 +6,7 @@ category: "BSD Build System"
 shortName: "BSD-1-Clause-Build"
 
 alternativeNames:
+  - "BSD 1-Clause Build System License"
   - "bsd-1-clause-build"
 
 otherIds: 

@@ -5,8 +5,5 @@ canonicalName: "Z Shell License"
 category: "Z-Shell"
 shortName: "ZSH"
 
-alternativeNames:
-  - "Z Shell License"
-
 otherIds: 
   - "scancode:zsh"
