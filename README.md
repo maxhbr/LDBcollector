@@ -53,10 +53,10 @@ Sure. We intend to provide those parts of our {metæffekt}-universe to the commu
 
 The only issue is time and resources. {metæffekt} is a self-financed company that makes a
 living from customer projects. With our limited time and resources we have to be very focused. 
-We are ready to do community work, once we see that there is an interest in our work.
+We are ready to do community work, once we see that there is an interest in our results.
 
 So if you see that this material can be useful to you or ease your work, let us know. We are looking forward to
-intensify our community work or to start off a new project.
+intensify our community engagement or to start off new projects.
 
 ## Disclaimer
 
