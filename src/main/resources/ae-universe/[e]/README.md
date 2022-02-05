@@ -79,6 +79,7 @@
 |[European Union Public License 1.2 (ES)]([eu]/European-Union-Public-License-1.2-(ES).yaml)|EUPL|EUPL-1.2-ES| | | | |terms|
 |[European Union Public License 1.2 (ET)]([eu]/European-Union-Public-License-1.2-(ET).yaml)|EUPL|EUPL-1.2-ET| | | | |terms|
 |[European Union Public License 1.2 (FI)]([eu]/European-Union-Public-License-1.2-(FI).yaml)|EUPL|EUPL-1.2-FI| | | | |terms|
+|[European Union Public License 1.2 (FR)]([eu]/European-Union-Public-License-1.2-(FR).yaml)|EUPL|EUPL-1.2-FR| | | | |terms|
 |[European Union Public License 1.2 (HR)]([eu]/European-Union-Public-License-1.2-(HR).yaml)|EUPL|EUPL-1.2-HR| | | | |terms|
 |[European Union Public License 1.2 (HU)]([eu]/European-Union-Public-License-1.2-(HU).yaml)|EUPL|EUPL-1.2-HU| | | | |terms|
 |[European Union Public License 1.2 (IT)]([eu]/European-Union-Public-License-1.2-(IT).yaml)|EUPL|EUPL-1.2-IT| | | | |terms|
@@ -92,7 +93,6 @@
 |[European Union Public License 1.2 (SK)]([eu]/European-Union-Public-License-1.2-(SK).yaml)|EUPL|EUPL-1.2-SK| | | | |terms|
 |[European Union Public License 1.2 (SL)]([eu]/European-Union-Public-License-1.2-(SL).yaml)|EUPL|EUPL-1.2-SL| | | | |terms|
 |[European Union Public License 1.2 (SV)]([eu]/European-Union-Public-License-1.2-(SV).yaml)|EUPL|EUPL-1.2-SV| | | | |terms|
-|[European Union Public License 1.2 FR]([eu]/European-Union-Public-License-1.2-FR.yaml)|EUPL|EUPL-1.2-FR| | | | |terms|
 |[Eurosym License]([eu]/Eurosym-License.yaml)|Eurosym| |[Eurosym](https://spdx.org/licenses/Eurosym.html)| | [eurosym](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eurosym.LICENSE) | [eurosym](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eurosym.LICENSE) |terms|
 |[ExamDiff License]([ex]/ExamDiff-License.yaml)|ExamDiff License|ExamDiff| | | [examdiff](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/examdiff.LICENSE) | [examdiff](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/examdiff.LICENSE) |terms|
 |[Excelsior JET Runtime License]([ex]/Excelsior-JET-Runtime-License.yaml)|Excelsior JET Runtime License|Excelsior-JET-Runtime| | | [excelsior-jet-runtime](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/excelsior-jet-runtime.LICENSE) | [excelsior-jet-runtime](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/excelsior-jet-runtime.LICENSE) |terms|
