@@ -20,7 +20,7 @@ You can find the texts of these licences in the  LICENSES folder. Every file sho
 ## Installation
 
 This is a simple Django project, so the safest way to run it is to have a Python 
-virtual environnement, with the dependencies listed in the [[pyproject.toml]] file. 
+virtual environnement, with the dependencies listed in the [pyproject.toml](pyproject.toml) file. 
 
 If you use [poetry](https://python-poetry.org/docs/), you create the virtual 
 environment by cloning the repo and : 
