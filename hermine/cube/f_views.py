@@ -366,6 +366,7 @@ def upload_licenses_file(request):
 #         response = HttpResponse(json.dumps(data, indent=4), content_type="application/json")
 #         response["Content-Disposition"] = "attachment; filename=%s" % filename
 #         return response
+
 def export_licenses(request):
     """Calls API to retrieve list of licenses. Handles DRF pagination.
 
@@ -762,28 +763,42 @@ def print_license(request, license_id):
     with open(filename, "w+"):
         response = HttpResponse(content_type="application/vnd.oasis.opendocument.text")
         response["Content-Disposition"] = "attachment; filename=%s" % filename
-        
+
         textdoc = OpenDocumentText()
         s = textdoc.styles
 
         h1style = Style(name="Heading 1", family="paragraph")
-        h1style.addElement(TextProperties(attributes={'fontsize':"24pt",'fontweight':"bold"}))
+        h1style.addElement(
+            TextProperties(attributes={"fontsize": "24pt", "fontweight": "bold"})
+        )
         s.addElement(h1style)
-        h1style.addElement(ParagraphProperties(attributes={'marginbottom': '1cm'}))
+        h1style.addElement(ParagraphProperties(attributes={"marginbottom": "1cm"}))
         h2style = Style(name="Heading 2", family="paragraph")
-        h2style.addElement(TextProperties(attributes={'fontsize':"18pt",'fontweight':"bold" }))
-        h2style.addElement(ParagraphProperties(attributes={'marginbottom': '0.6cm', 'margintop': '0.4cm'}))
+        h2style.addElement(
+            TextProperties(attributes={"fontsize": "18pt", "fontweight": "bold"})
+        )
+        h2style.addElement(
+            ParagraphProperties(
+                attributes={"marginbottom": "0.6cm", "margintop": "0.4cm"}
+            )
+        )
         s.addElement(h2style)
 
         h3style = Style(name="Heading 3", family="paragraph")
-        h3style.addElement(TextProperties(attributes={'fontsize':"14pt",'fontweight':"bold" }))
-        h3style.addElement(ParagraphProperties(attributes={'marginbottom': '0.2cm', 'margintop': '0.4cm'}))
+        h3style.addElement(
+            TextProperties(attributes={"fontsize": "14pt", "fontweight": "bold"})
+        )
+        h3style.addElement(
+            ParagraphProperties(
+                attributes={"marginbottom": "0.2cm", "margintop": "0.4cm"}
+            )
+        )
 
         s.addElement(h3style)
 
         itstyle = Style(name="Italic", family="paragraph")
-        itstyle.addElement(TextProperties(attributes={'textemphasize':"true"}))
-        itstyle.addElement(ParagraphProperties(attributes={'margintop': '3cm'}))
+        itstyle.addElement(TextProperties(attributes={"textemphasize": "true"}))
+        itstyle.addElement(ParagraphProperties(attributes={"margintop": "3cm"}))
 
         s.addElement(itstyle)
 
@@ -796,9 +811,9 @@ def print_license(request, license_id):
         textdoc.automaticstyles.addElement(itstyle)
 
         # Text
-        h=H(outlinelevel=1, stylename=h1style, text=l.long_name)
+        h = H(outlinelevel=1, stylename=h1style, text=l.long_name)
         textdoc.text.addElement(h)
-        h=H(outlinelevel=1, stylename=h2style, text=l.spdx_id)
+        h = H(outlinelevel=1, stylename=h2style, text=l.spdx_id)
         textdoc.text.addElement(h)
 
         p = P(text="Validation Color: ")
@@ -843,20 +858,20 @@ def print_license(request, license_id):
             value = Span(stylename=boldstyle, text=l.comment)
             p.addElement(v)
             textdoc.text.addElement(p)
-        
-        h=H(outlinelevel=1, stylename=h2style, text="List of identified obligations")
+
+        h = H(outlinelevel=1, stylename=h2style, text="List of identified obligations")
         textdoc.text.addElement(h)
 
         for o in l.obligation_set.all():
-            h=H(outlinelevel=1, stylename=h3style, text=o.name)
+            h = H(outlinelevel=1, stylename=h3style, text=o.name)
             textdoc.text.addElement(h)
-            
+
             if o.generic:
                 p = P(text="Related Generic Obligation: ")
                 v = Span(stylename=boldstyle, text=o.generic)
                 p.addElement(v)
                 textdoc.text.addElement(p)
-            
+
             p = P(text="Passivity: ")
             v = Span(stylename=boldstyle, text=o.passivity)
             p.addElement(v)
@@ -866,7 +881,7 @@ def print_license(request, license_id):
             v = Span(stylename=boldstyle, text=o.trigger_expl)
             p.addElement(v)
             textdoc.text.addElement(p)
-            
+
             p = P(text="Status of modification that triggers this obligation: ")
             v = Span(stylename=boldstyle, text=o.trigger_mdf)
             p.addElement(v)
@@ -878,8 +893,10 @@ def print_license(request, license_id):
                 p.addElement(v)
                 textdoc.text.addElement(p)
 
-
-        p = P(stylename=itstyle, text="This license interpretation was exported from a Hermine project. https://hermine-foss.org/.")
+        p = P(
+            stylename=itstyle,
+            text="This license interpretation was exported from a Hermine project. https://hermine-foss.org/.",
+        )
         textdoc.text.addElement(p)
 
         textdoc.save(response)
