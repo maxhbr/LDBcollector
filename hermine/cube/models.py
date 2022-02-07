@@ -311,6 +311,9 @@ class Obligation(models.Model):
         max_length=40, choices=TRIGGER_MDF_CHOICES, default="AlteredUnmodified"
     )
 
+    class Meta:
+        unique_together = ["name", "license"]
+
     def __str__(self):
         return self.license.__str__() + " -" + self.name
 
