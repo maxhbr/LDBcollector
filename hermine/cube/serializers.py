@@ -111,7 +111,29 @@ class LicenseObligationSerializer(ObligationSerializer):
     class Meta:
         model = Obligation
         exclude = ["license"]
+    
+    @classmethod
+    def create(cls, license, validated_data):
+        # When creating new obligation, we link it to a generic obligation if one with the same **name** exists in base.
+        generic_name = validated_data.pop("generic_name", None)
+        if generic_name is not None:
+            validated_data["generic"] = Generic.objects.get(name=generic_name)
+        
+        validated_data["license"] = license
+        instance = Obligation.objects.create(**validated_data)
+        return instance
 
+    @classmethod
+    def update(cls, instance, license, validated_data):
+        generic_name = validated_data.pop("generic_name", None)
+        if generic_name is not None:
+            validated_data["generic"] = Generic.objects.get(name=generic_name)
+            
+        validated_data["license"] = license
+        for field, value in validated_data.items():
+            setattr(instance, field, value)
+        instance.save()
+        return instance
 
 class LicenseSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of licenses on the following fields :
@@ -161,8 +183,7 @@ class LicenseSerializer(serializers.ModelSerializer):
         obligations_data = validated_data.pop("obligation_set")
         license = License.objects.create(**validated_data)
         for obligation_data in obligations_data:
-            obligation_data["license"] = license
-            ObligationSerializer.create(obligation_data)
+            LicenseObligationSerializer.create(license.id, obligation_data)
         return license
 
     def update(self, instance, validated_data):
@@ -179,13 +200,7 @@ class LicenseSerializer(serializers.ModelSerializer):
         Obligation.objects.filter(license=instance).delete()
         obligations_data = validated_data.pop("obligation_set")
         for obligation_data in obligations_data:
-            ObligationSerializer(obligation_data)
-            if obligation_data["generic_id"]:
-                obligation_data["generic_id"] = obligation_data["generic_id"].id
-            updated_obligation = Obligation.objects.create(
-                **obligation_data, license=instance
-            )
-            instance.obligation_set.add(updated_obligation)
+            LicenseObligationSerializer.create(instance, obligation_data)
         for field, value in validated_data.items():
             setattr(instance, field, value)
         instance.save()

@@ -311,34 +311,30 @@ def upload_generics_file(request):
     return render(request, "cube/generic_list.html")
 
 
+def create_or_update_license(request, license):
+    try:
+        l = License.objects.get(spdx_id=license["spdx_id"])
+    except License.DoesNotExist:
+        print("Instantiation of a new License: ", license["spdx_id"])
+        l = License()
+        l.save()
+    s = LicenseSerializer(l, data=license)
+    s.is_valid(raise_exception=True)
+    print(s.errors)
+    s.save()
+
+
 def handle_licenses_file(request):
     licenseFile = request.FILES["file"]
     licenseArray = json.load(licenseFile)
     # Handling case of a JSON that only contains one license and is not a list (single license purpose)
     if type(licenseArray) is dict:
-        try:
-            l = License.objects.get(spdx_id=licenseArray["spdx_id"])
-        except License.DoesNotExist:
-            print("Instantiation of a new License object with pk = ", licenseArray)
-            l = License()
-            l.save()
-        s = LicenseSerializer(l, data=licenseArray)
-        s.is_valid(raise_exception=True)
-        print(s.errors)
-        s.save()
+        create_or_update_license(request, licenseArray)
     # Handling case of a JSON that contains multiple licenses and is a list (multiple licenses purpose)
     elif type(licenseArray) is list:
         for license in licenseArray:
-            try:
-                l = License.objects.get(spdx_id=license["spdx_id"])
-            except License.DoesNotExist:
-                print("Instantiation of a new License object with pk = ", license)
-                l = License()
-                l.save()
-            s = LicenseSerializer(l, data=license)
-            s.is_valid(raise_exception=True)
-            print(s.errors)
-            s.save()
+            create_or_update_license(request, license)
+
     else:
         print("Type of JSON neither is a list nor a dict")
 
