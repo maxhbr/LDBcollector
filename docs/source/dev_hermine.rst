@@ -5,8 +5,9 @@
 Developing Hermine
 ========================
 
-This is the documentation for people who might want to contribute to Hermine Project. 
+This is the documentation for contributing to the Hermine Project.
 
+The source code is hosted on Gitlab.com :https://gitlab.com/hermine-project/hermine
 
 .. toctree::
    :glob:
@@ -18,4 +19,3 @@ This is the documentation for people who might want to contribute to Hermine Pro
    views
    serializers
    tests
-   contribute
