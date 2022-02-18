@@ -11,8 +11,9 @@ pages:
   script:
   - apk --no-cache add curl
   - apk --no-cache add build-base postgresql-dev python3-dev
-  - curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-  - source $HOME/.poetry/env
+  - curl -sSL https://install.python-poetry.org | python -
+  # Add Poetry to path:
+  - export PATH="/root/.local/bin:$PATH"
   - poetry about
   - poetry install
   - cd hermine
