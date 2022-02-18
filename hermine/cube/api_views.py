@@ -35,11 +35,10 @@ from .models import (
 from .f_views import (
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
-    import_spdx_file,
     propagate_choices,
 )
 
-from .importers import import_ort_evaluated_model_json_file
+from .importers import import_ort_evaluated_model_json_file, import_spdx_file
 
 
 class RootViewSet(viewsets.ViewSet):

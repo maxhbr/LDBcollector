@@ -3,12 +3,24 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-import json
-import yaml
-import spdx_license_list
 from datetime import datetime
-from cube.models import Component, Version, Usage
+import json
+
 from rest_framework.parsers import JSONParser
+from spdx.parsers import (
+    jsonparser,
+    jsonyamlxmlbuilders,
+    tagvaluebuilders,
+    rdf,
+    rdfbuilders,
+    tagvalue,
+    xmlparser,
+    yamlparser,
+)
+from spdx.parsers.loggers import StandardLogger
+import spdx_license_list
+
+from cube.models import Component, Version, Usage
 from cube.serializers import LicenseSerializer
 
 
@@ -328,29 +340,26 @@ def import_yocto_file(manifest_file, release_id):
     print("Importing yocto data, ending :", datetime.now())
 
 
-def import_spdx_file(yaml_file, release_id):
+def import_spdx_file(spdx_file, release_id):
     # Importing SPDX BOM yaml
-    print("YAML import started", datetime.now())
-    data = yaml.safe_load(yaml_file)
-    for package in data["packages"]:
+    print("SPDX import started", datetime.now())
+    document, error = parse_spdx_file(spdx_file)
+    if error:
+        print("SPDX file contains errors (printed above), but import continues…")
+    for package in document.packages:
         current_scope = "Global"
-        comp_name = package["name"].rsplit("@")[0]
-        comp_url = package["downloadLocation"]
+        comp_name = package.name.rsplit("@")[0]
+        comp_url = package.download_location
         comp, created = Component.objects.get_or_create(
             name=comp_name, defaults={"homepage_url": comp_url}
         )
         # If necessary create version
-        if "versionInfo" not in package:
-            vers_number = "Current"
-        else:
-            vers_number = package["versionInfo"]
+        vers_number = package.version or "Current"
+        vers_lic_decl = package.license_declared.identifier
         # SPDX output sometimes return "NOASSERTION" instead of an empty value.
-        # Handling that.
-        if package["licenseDeclared"] != "NOASSERTION":
-            vers_lic_decl = package["licenseDeclared"]
-        else:
+        if vers_lic_decl == "NOASSERTION":
             vers_lic_decl = ""
-        vers_lic_concl = package["licenseConcluded"]
+        vers_lic_concl = package.conc_lics.identifier
         vers, vcreated = Version.objects.get_or_create(
             component=comp,
             version_number=vers_number,
@@ -360,10 +369,47 @@ def import_spdx_file(yaml_file, release_id):
             },
         )
         version_id = vers.id
-        u, ucreated = Usage.objects.get_or_create(
+        usage, usage_created = Usage.objects.get_or_create(
             version_id=version_id,
             release_id=release_id,
             scope=current_scope,
             defaults={"addition_method": "Scan"},
         )
-    print("YAML import done", datetime.now())
+    print("SPDX import done", datetime.now())
+
+
+# Function derivated from
+# https://github.com/spdx/tools-python/blob/21ea183f72a1179c62ec146a992ec5642cc5f002/spdx/parsers/parse_anything.py
+# SPDX-FileCopyrightText: spdx contributors
+# SPDX-License-Identifier: Apache-2.0
+def parse_spdx_file(spdx_file):
+    builder_module = jsonyamlxmlbuilders
+    filename = spdx_file.name
+    read_data = False
+    if filename.endswith(".rdf") or filename.endswith(".rdf.xml"):
+        parsing_module = rdf
+        builder_module = rdfbuilders
+    elif filename.endswith(".spdx"):
+        parsing_module = rdf
+        builder_module = rdfbuilders
+    elif filename.endswith(".tag"):
+        parsing_module = tagvalue
+        builder_module = tagvaluebuilders
+        read_data = True
+    elif filename.endswith(".json"):
+        parsing_module = jsonparser
+    elif filename.endswith(".xml"):
+        parsing_module = xmlparser
+    elif filename.endswith(".yaml") or filename.endswith(".yml"):
+        parsing_module = yamlparser
+    else:
+        return None, "FileType Not Supported" + filename
+
+    parser = parsing_module.Parser(builder_module.Builder(), StandardLogger())
+    if hasattr(parser, "build"):
+        parser.build()
+    if read_data:
+        data = spdx_file.read()
+        return parser.parse(data)
+    else:
+        return parser.parse(spdx_file)

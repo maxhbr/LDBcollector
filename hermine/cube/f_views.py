@@ -211,10 +211,9 @@ def import_bom(request):
         try:
             if form.cleaned_data["bom_type"] == "ORTBom":
                 import_ort_file(request.FILES["file"], form.cleaned_data["release"].id)
-
             elif form.cleaned_data["bom_type"] == "SPDXBom":
                 import_spdx_file(request.FILES["file"], form.cleaned_data["release"].id)
-        except:  # noqa: E722
+        except:  # noqa: E722 TODO
             print("The file you chose do not match the format you chose.")
             status = "error"
 
