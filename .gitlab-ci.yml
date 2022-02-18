@@ -11,9 +11,7 @@ pages:
   script:
   - apk --no-cache add curl
   - apk --no-cache add build-base postgresql-dev python3-dev
-  # Remove obsolete version of Poetry (see https://github.com/python-poetry/poetry/issues/5201)
-  - curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | POETRY_UNINSTALL=1 python -
-  - curl -sSL https://install.python-poetry.org | python -
+  - curl -sSL https://install.python-poetry.org | python - ; cat poetry-installer-error*
   # Add Poetry to path:
   - export PATH="/root/.local/bin:$PATH"
   - poetry about
