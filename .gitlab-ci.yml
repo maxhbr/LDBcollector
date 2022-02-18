@@ -10,7 +10,7 @@ pages:
   
   script:
   - apk --no-cache add curl
-  - apk --no-cache add build-base libffi-dev python3-dev
+  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev
   - curl -sSL https://install.python-poetry.org | python -
   # Add Poetry to path:
   - export PATH="/root/.local/bin:$PATH"
@@ -31,9 +31,6 @@ pages:
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
 
-after_script:
-  - echo "after_script"
-  -  cat poetry-installer-error*
 variables:
   DOCKER_DRIVER: overlay2
 # dco:
