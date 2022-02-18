@@ -34,7 +34,9 @@ urlpatterns = [
     path("products", views.ProductListView.as_view(), name="products"),
     path("release/<int:pk>", views.ReleaseView.as_view(), name="release_synthesis"),
     path("release/<int:pk>/bom", views.ReleaseBomView.as_view(), name="bom"),
-    path("release/<int:pk>/obligations", views.ReleaseObligView.as_view(), name="oblig"),
+    path(
+        "release/<int:pk>/obligations", views.ReleaseObligView.as_view(), name="oblig"
+    ),
     path(
         "release/<int:release_id>/obligations/<int:generic_id>",
         f_views.release_generic,
@@ -89,7 +91,6 @@ router.register(r"api/generics", api_views.GenericViewSet, basename="generic")
 router.register(r"api/releases", api_views.ReleaseViewSet, basename="release")
 router.register(r"api/upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
 router.register(r"api/upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
-
 
 
 release_router = routers.NestedSimpleRouter(router, r"api/releases")

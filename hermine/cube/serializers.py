@@ -45,8 +45,7 @@ class GenericSerializer(serializers.ModelSerializer):
 
 
 class GenericNameField(serializers.CharField):
-    """A class that allows us to add an extra field "generic_name" in serialization of Obligation.
-    """
+    """A class that allows us to add an extra field "generic_name" in serialization of Obligation."""
 
     def get_attribute(self, instance):
         return instance.generic.name if instance.generic is not None else None
@@ -102,7 +101,7 @@ class ObligationSerializer(serializers.ModelSerializer):
 
 
 class LicenseObligationSerializer(ObligationSerializer):
-    """A serializer used for nested representation of Obligations. We don'need and we cannot fill the license field in that case. 
+    """A serializer used for nested representation of Obligations. We don'need and we cannot fill the license field in that case.
 
     :param ObligationSerializer: The main serializer for obligations
     :type ObligationSerializer: Serializer
@@ -111,14 +110,14 @@ class LicenseObligationSerializer(ObligationSerializer):
     class Meta:
         model = Obligation
         exclude = ["license"]
-    
+
     @classmethod
     def create(cls, license, validated_data):
         # When creating new obligation, we link it to a generic obligation if one with the same **name** exists in base.
         generic_name = validated_data.pop("generic_name", None)
         if generic_name is not None:
             validated_data["generic"] = Generic.objects.get(name=generic_name)
-        
+
         validated_data["license"] = license
         instance = Obligation.objects.create(**validated_data)
         return instance
@@ -128,12 +127,13 @@ class LicenseObligationSerializer(ObligationSerializer):
         generic_name = validated_data.pop("generic_name", None)
         if generic_name is not None:
             validated_data["generic"] = Generic.objects.get(name=generic_name)
-            
+
         validated_data["license"] = license
         for field, value in validated_data.items():
             setattr(instance, field, value)
         instance.save()
         return instance
+
 
 class LicenseSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of licenses on the following fields :
@@ -313,7 +313,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
 class VersionSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of Versions on the following fields :
-    "component", "version_number", "declared_license_expr", "spdx_valid_license_expr", "corrected_license", "scanned_licenses", "purl", 
+    "component", "version_number", "declared_license_expr", "spdx_valid_license_expr", "corrected_license", "scanned_licenses", "purl",
 
     :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """

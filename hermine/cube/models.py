@@ -187,9 +187,7 @@ class License(models.Model):
 
 
 class Usage(models.Model):
-    """    A class that allows to qualify how a Version of a component is used in a Release of the your project. 
-
-    """
+    """A class that allows to qualify how a Version of a component is used in a Release of the your project."""
 
     STATUS_CHOICES = [
         ("Auto", "Auto validated"),
@@ -233,15 +231,15 @@ class Usage(models.Model):
 
 class Generic(models.Model):
     """A Generic obligation which is the simplification of the instances of several similar obligations.
-    
+
 
     :ivar name: (String) Short descritpion of the Generic obligation. Unique.
     :ivar description: (String) Longer description, optional.
-    :ivar in_core: (Boolean) If set to True, it means that this Generic obligation is assumed to systematically fit to the enterprise policy. Else, it means that it has to be manually checked.  
+    :ivar in_core: (Boolean) If set to True, it means that this Generic obligation is assumed to systematically fit to the enterprise policy. Else, it means that it has to be manually checked.
     :ivar metacategory: (String) A category of Generic oblgation.
     :ivar team: (Team) A foreign key to the competent Team.
-    :ivar passivity: (String) A Generic obligation needs to conduct some kind of action (Active) or NOT to do specific things (Passive) 
-    
+    :ivar passivity: (String) A Generic obligation needs to conduct some kind of action (Active) or NOT to do specific things (Passive)
+
     """
 
     PASSIVITY_CHOICES = [("Active", "Active"), ("Passive", "Passive")]
@@ -269,10 +267,10 @@ class Generic(models.Model):
 class Obligation(models.Model):
     """An obligation deduced from a license verbatim. An obligation comes from only one license.
 
-    :param models.Model: Django class to define models 
+    :param models.Model: Django class to define models
     :type models: models.Model
     :ivar license: (License) A foreign key to the License instance that implies the current obligation.
-    :ivar generic: (Generic) An optional foreign key that links to the generic obligation. 
+    :ivar generic: (Generic) An optional foreign key that links to the generic obligation.
     :ivvar name: (String) Quick description of the Obligation.
     :ivar verbatim: (String) Full text of the obligation, out of the license itself.
     :ivar passivity: (String) A string that indicates if the type of obligation is "Active" (basically, under certain confition you SHOULD perform some action) or "Passive" (under certain concondition you SHOULD NOT do something)
@@ -336,9 +334,7 @@ class Derogation(models.Model):
 
 
 class LicenseChoice(models.Model):
-    """ A class to store choices made for licenses
-
-    """
+    """A class to store choices made for licenses"""
 
     expression_in = models.CharField(max_length=500)
     expression_out = models.CharField(max_length=500)

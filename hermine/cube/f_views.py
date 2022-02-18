@@ -65,11 +65,11 @@ def flatten(t):
 def explode_SPDX_to_units(SPDX_expr):
     """Extract a list of every license from a SPDX valid expression.
 
-        :param SPDX_expr: A string that represents a valid SPDX expression. (Like ")
-        :type SPDX_expr: string
-        :return: A list of valid SPDX licenses contained in the expression.
-        :rtype: list
-        """
+    :param SPDX_expr: A string that represents a valid SPDX expression. (Like ")
+    :type SPDX_expr: string
+    :return: A list of valid SPDX licenses contained in the expression.
+    :rtype: list
+    """
     licenses = []
     raw_expression = SPDX_expr.replace("(", "").replace(")", "")
     # Next line allows us to consider an SPDX expression that has a 'WITH' clause as a full SPDX expression
@@ -363,12 +363,13 @@ def upload_licenses_file(request):
 #         response["Content-Disposition"] = "attachment; filename=%s" % filename
 #         return response
 
+
 def export_licenses(request):
     """Calls API to retrieve list of licenses. Handles DRF pagination.
 
-        :return: HttpResponse that triggers the download of a JSON file containing every license in a JSON Array.
-        :rtype: DjangoHttpResponse
-        """
+    :return: HttpResponse that triggers the download of a JSON file containing every license in a JSON Array.
+    :rtype: DjangoHttpResponse
+    """
     request_uri = settings.API_BASE_URL + "licenses/?format=json"
     filename = "licenses.json"
     with open(filename, "w+"):
@@ -646,7 +647,7 @@ def propagate_choices(release_id):
         release_id (int): The intern identifier of the concerned release
 
     Returns:
-        response: A python object that has two field : 
+        response: A python object that has two field :
             `to_resolve` the set of usages which needs an explicit choice
             `resolved` the set of usages for which a choice has just been made
     """

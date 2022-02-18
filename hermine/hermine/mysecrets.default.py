@@ -6,9 +6,7 @@
 # Do not delete or modify this file, it's used for documentation build in CI !
 # Do not commit your authentication credential !
 
-DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sqlite3"}}
-
-SECRET_KEY = "your-django-secret-key"
+# DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sqlite3"}}
 
 # For a Postgres DB, copy and fill the following :
 
@@ -22,3 +20,15 @@ SECRET_KEY = "your-django-secret-key"
 #         "PORT": ""
 #     }
 # }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "hermine",
+        "USER": "hermine",
+        "PASSWORD": "hermine",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
+    }
+}
+
+SECRET_KEY = "your-django-secret-key"

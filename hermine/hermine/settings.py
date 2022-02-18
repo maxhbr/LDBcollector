@@ -125,7 +125,7 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
-# The following line raises a Warning. Moving the folder to the right place does not fix it. 
+# The following line raises a Warning. Moving the folder to the right place does not fix it.
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "cube", "static")]
 LOGIN_REDIRECT_URL = "/"
 

@@ -191,7 +191,7 @@ def import_ort_evaluated_model_json_file(json_file, release_id):
 
     for package in data["packages"]:
         if package["is_project"]:
-            continue 
+            continue
         component, component_created = Component.objects.get_or_create(
             name=package["purl"].split("@")[0].split(":")[1],
             defaults={
@@ -200,7 +200,7 @@ def import_ort_evaluated_model_json_file(json_file, release_id):
             },
         )
         if component_created:
-            print("Component " + component.name + " created")        
+            print("Component " + component.name + " created")
 
         version, version_created = Version.objects.get_or_create(
             component=component,
@@ -242,6 +242,7 @@ def import_ort_evaluated_model_json_file(json_file, release_id):
                 description=project_id,
                 # defaults={"addition_method": "Scan"},
             )
+
 
 def import_yocto_file(manifest_file, release_id):
     # Importing data from Yocto's license.manifest

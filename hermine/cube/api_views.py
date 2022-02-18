@@ -47,6 +47,7 @@ from .f_views import (
 
 from .importers import import_ort_evaluated_model_json_file
 
+
 class RootViewSet(viewsets.ViewSet):
     """
     This is the root of the API.
@@ -72,6 +73,7 @@ class RootViewSet(viewsets.ViewSet):
 
     def list(self, request):
         return Response("Feel free to use the API")
+
 
 class LicenseViewSet(viewsets.ModelViewSet):
     """
@@ -213,7 +215,7 @@ class VersionViewSet(viewsets.ModelViewSet):
     """
 
     def get_queryset(self):
-        """ 
+        """
         Handles if the user is accessing the viewset from root of api or from a nested componentset in a license
 
 
@@ -237,7 +239,7 @@ class ObligationViewSet(viewsets.ModelViewSet):
     """
 
     def get_queryset(self):
-        """ 
+        """
         Handles if the user is accessing the viewset from root of api or from a nested obligationset in a license
 
 
