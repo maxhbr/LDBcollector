@@ -10,7 +10,7 @@ pages:
   
   script:
   - apk --no-cache add curl
-  - apk --no-cache add build-base postgresql-dev python3-dev
+  - apk --no-cache add build-base libffi-dev python3-dev
   - curl -sSL https://install.python-poetry.org | python -
   # Add Poetry to path:
   - export PATH="/root/.local/bin:$PATH"
