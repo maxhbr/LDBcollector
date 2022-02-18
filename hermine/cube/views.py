@@ -54,7 +54,7 @@ from .models import (
 )
 
 from .forms import ImportGenericsForm
-from .importTools import (
+from .importers import (
     import_licenses_file,
     import_ort_file,
     import_yocto_file,

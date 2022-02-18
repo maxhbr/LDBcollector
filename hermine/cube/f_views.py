@@ -44,7 +44,7 @@ from .models import (
 )
 from django.db.models import Q
 from .forms import ImportLicensesForm, ImportGenericsForm, ImportBomForm
-from .importTools import (
+from .importers import (
     import_licenses_file,
     import_ort_file,
     import_yocto_file,

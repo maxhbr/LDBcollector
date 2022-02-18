@@ -45,7 +45,7 @@ from .f_views import (
     propagate_choices,
 )
 
-from .importTools import import_ort_evaluated_model_json_file
+from .importers import import_ort_evaluated_model_json_file
 
 class RootViewSet(viewsets.ViewSet):
     """
