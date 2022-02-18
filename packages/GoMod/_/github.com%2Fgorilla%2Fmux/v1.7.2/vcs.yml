@@ -1,0 +1,15 @@
+---
+id: "GoMod::github.com/gorilla/mux:v1.7.2"
+vcs:
+  type: "Git"
+  url: "https://github.com/gorilla/mux.git"
+  revision: "ed099d42384823742bba0bf9a72b53b55c9e2e38"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: ".travis.yml/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "*_test.go"
+    reason: "TEST_OF"
+  - pattern: "test_*.go"
+    reason: "TEST_OF"
