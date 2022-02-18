@@ -25,13 +25,14 @@ Django = "^4.0.1"
 Sphinx = "^4.2.0"
 myst-parser = "^0.15.2"
 sphinx-rtd-theme = "^1.0.0"
-pylint = "^2.12.2"
 pip-audit = "^1.1.1"
 coverage = "^6.2"
 graphviz = "^0.19.1"
 pydot = "^1.4.2"
 dco-check = "^0.3.0"
 reuse = "^0.14.0"
+black = {version = "^22.1.0", allow-prereleases = true}
+flake8-black = "^0.2.4"
 
 [build-system]
 requires = ["poetry>=0.12"]

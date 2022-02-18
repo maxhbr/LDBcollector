@@ -2,7 +2,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-import requests, json
+import json
+import requests
 
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
@@ -10,23 +11,13 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import get_object_or_404, render, redirect
 from django.db.models import Count
 from django.conf import settings
-from django.core.serializers import serialize, deserialize
+from django.core.serializers import serialize
 from django.core.serializers.json import DjangoJSONEncoder
 from django.core.paginator import Paginator, EmptyPage
 
 from cube.serializers import (
     LicenseSerializer,
-    ObligationSerializer,
     GenericSerializer,
-    UsageSerializer,
-    ExploitationSerializer,
-    ProductSerializer,
-    ReleaseSerializer,
-    ComponentSerializer,
-    VersionSerializer,
-    UploadSPDXSerializer,
-    NormalisedLicensesSerializer,
-    DerogationSerializer,
 )
 
 from .models import (
@@ -34,20 +25,15 @@ from .models import (
     Release,
     Usage,
     License,
-    Obligation,
     Generic,
     Component,
     Derogation,
-    Version,
-    Team,
     LicenseChoice,
 )
 from django.db.models import Q
 from .forms import ImportLicensesForm, ImportGenericsForm, ImportBomForm
-from .importTools import (
-    import_licenses_file,
+from .importers import (
     import_ort_file,
-    import_yocto_file,
     import_spdx_file,
 )
 
@@ -65,14 +51,15 @@ def flatten(t):
 def explode_SPDX_to_units(SPDX_expr):
     """Extract a list of every license from a SPDX valid expression.
 
-        :param SPDX_expr: A string that represents a valid SPDX expression. (Like ")
-        :type SPDX_expr: string
-        :return: A list of valid SPDX licenses contained in the expression.
-        :rtype: list
-        """
+    :param SPDX_expr: A string that represents a valid SPDX expression. (Like ")
+    :type SPDX_expr: string
+    :return: A list of valid SPDX licenses contained in the expression.
+    :rtype: list
+    """
     licenses = []
     raw_expression = SPDX_expr.replace("(", "").replace(")", "")
-    # Next line allows us to consider an SPDX expression that has a 'WITH' clause as a full SPDX expression
+    # Next line allows us to consider an SPDX expression that has a 'WITH' clause as a
+    # full SPDX expression
     raw_expression = raw_expression.replace(" WITH ", "_WITH_")
     chunks = raw_expression.split()
     while "AND" in chunks:
@@ -108,11 +95,12 @@ def get_licenses_to_check_or_create(release):
 
         for license in SPDX_Licenses:
             try:
-                l = License.objects.get(spdx_id=license)
-                if l.color == "Grey":
-                    licenses_to_check.add(l)
+                license_instance = License.objects.get(spdx_id=license)
+                if license_instance.color == "Grey":
+                    licenses_to_check.add(license_instance)
             except License.DoesNotExist:
-                # It might happen that SPDX throws 'NOASSERTION' instead of an empty string. Handling that.
+                # It might happen that SPDX throws 'NOASSERTION' instead of an empty
+                # string. Handling that.
                 if license != "NOASSERTION":
                     licenses_to_create.add(license)
                     print("unknown license", license)
@@ -215,49 +203,6 @@ def generic(request, generic_id):
     return render(request, "cube/generic.html", context)
 
 
-@login_required
-def release_send_derogation(request, release_id, usage_id):
-    """Digests inputs from the associated form and send it to the database.
-
-    :param request: mandatory
-    :type request: HttpRequest
-    :param release_id: The id of this release
-    :type release_id: django AutoField
-    :param usage_id: The id of this usage
-    :type usage_id: django AutoField
-    :return: A redirection to this release main page.
-    :rtype: HttpResponseRedirect
-    """
-    actionvalue = request.POST["action"]
-    justificationvalue = request.POST["justification"]
-    usage_derog = linking = scope = None
-    usage = get_object_or_404(Usage, pk=usage_id)
-    release = get_object_or_404(Release, pk=release_id)
-    for license in usage.licenses_chosen.all():
-        if actionvalue == "component":
-            usage_derog = usage
-        if actionvalue == "linking":
-            linking = usage.linking
-        if actionvalue == "scope":
-            scope = usage.scope
-        if actionvalue == "linkingscope":
-            scope = usage.scope
-            linking = usage.linking
-
-        derogation = Derogation(
-            release=release,
-            usage=usage_derog,
-            license=license,
-            scope=scope,
-            justification=justificationvalue,
-            linking=linking,
-        )
-        derogation.save()
-
-    response = redirect("cube:release_synthesis", release_id)
-    return response
-
-
 def import_bom(request):
     form = ImportBomForm(request.POST, request.FILES)
     status = None
@@ -269,8 +214,7 @@ def import_bom(request):
 
             elif form.cleaned_data["bom_type"] == "SPDXBom":
                 import_spdx_file(request.FILES["file"], form.cleaned_data["release"].id)
-
-        except:
+        except:  # noqa: E722
             print("The file you chose do not match the format you chose.")
             status = "error"
 
@@ -290,7 +234,6 @@ def import_bom(request):
 
 def handle_generics_file(request):
     genericsFile = request.FILES["file"]
-    csrftoken = request.COOKIES["csrftoken"]
     genericsArray = json.load(genericsFile)
     for generic in genericsArray:
         try:
@@ -313,12 +256,12 @@ def upload_generics_file(request):
 
 def create_or_update_license(request, license):
     try:
-        l = License.objects.get(spdx_id=license["spdx_id"])
+        license_instance = License.objects.get(spdx_id=license["spdx_id"])
     except License.DoesNotExist:
         print("Instantiation of a new License: ", license["spdx_id"])
-        l = License()
-        l.save()
-    s = LicenseSerializer(l, data=license)
+        license_instance = License()
+        license_instance.save()
+    s = LicenseSerializer(license_instance, data=license)
     s.is_valid(raise_exception=True)
     print(s.errors)
     s.save()
@@ -327,10 +270,12 @@ def create_or_update_license(request, license):
 def handle_licenses_file(request):
     licenseFile = request.FILES["file"]
     licenseArray = json.load(licenseFile)
-    # Handling case of a JSON that only contains one license and is not a list (single license purpose)
+    # Handling case of a JSON that only contains one license and is not a list
+    # (single license purpose)
     if type(licenseArray) is dict:
         create_or_update_license(request, licenseArray)
-    # Handling case of a JSON that contains multiple licenses and is a list (multiple licenses purpose)
+    # Handling case of a JSON that contains multiple licenses and is a list
+    # (multiple licenses purpose)
     elif type(licenseArray) is list:
         for license in licenseArray:
             create_or_update_license(request, license)
@@ -353,22 +298,27 @@ def upload_licenses_file(request):
 
 # def export_licenses(request):
 #     """An export function that uses the License Serializer on all the licenses.
-#     Effective, but using the the other one which calls the API might allow to handle specific cases such as access restrictions
+#     Effective, but using the the other one which calls the API might allow to handle
+#     specific cases such as access restrictions
 #     """
 #     filename = "licenses.json"
 #     serializer = LicenseSerializer
 #     data = serializer(License.objects.all(), many=True).data
 #     with open(filename, "w+"):
-#         response = HttpResponse(json.dumps(data, indent=4), content_type="application/json")
+#         response = HttpResponse(
+#             json.dumps(data, indent=4), content_type="application/json"
+#         )
 #         response["Content-Disposition"] = "attachment; filename=%s" % filename
 #         return response
+
 
 def export_licenses(request):
     """Calls API to retrieve list of licenses. Handles DRF pagination.
 
-        :return: HttpResponse that triggers the download of a JSON file containing every license in a JSON Array.
-        :rtype: DjangoHttpResponse
-        """
+    :return: HttpResponse that triggers the download of a JSON file containing every
+        license in a JSON Array.
+    :rtype: DjangoHttpResponse
+    """
     request_uri = settings.API_BASE_URL + "licenses/?format=json"
     filename = "licenses.json"
     with open(filename, "w+"):
@@ -388,10 +338,10 @@ def export_licenses(request):
 
 
 def export_specific_license(request, license_id):
-    l = License.objects.get(id=license_id)
-    filename = l.spdx_id + ".json"
+    license_instance = License.objects.get(id=license_id)
+    filename = license_instance.spdx_id + ".json"
     serializer = LicenseSerializer
-    data = serializer(l).data
+    data = serializer(license_instance).data
     with open(filename, "w+"):
         response = HttpResponse(
             json.dumps(data, indent=4), content_type="application/json"
@@ -424,7 +374,8 @@ def release_generic(request, release_id, generic_id):
 
 @login_required
 def release_exploitation(request, release_id):
-    """Takes the user to the page that allows them to add an exploitation choice for each of the scopes in the release they're working on.
+    """Takes the user to the page that allows them to add an exploitation choice for
+    each of the scopes in the release they're working on.
 
     :param request: mandatory
     :type request: HttpRequest
@@ -470,7 +421,8 @@ def release_send_exploitation(request, release_id):
 
 @login_required
 def release_add_derogation(request, release_id, usage_id):
-    """Takes the user to the page that allows them to add a derogation for the release they're working on.
+    """Takes the user to the page that allows them to add a derogation for the release
+    they're working on.
 
     :param request: mandatory
     :type request: HttpRequest
@@ -532,7 +484,8 @@ def release_send_derogation(request, release_id, usage_id):
 
 @login_required
 def release_add_choice(request, release_id, usage_id):
-    """Takes the user to the page that allows them to add a choice for a usage that has a complex license expression.
+    """Takes the user to the page that allows them to add a choice for a usage that has
+    a complex license expression.
 
     :param request: mandatory
     :type request: HttpRequest
@@ -639,14 +592,15 @@ def release_send_choice(request, release_id, usage_id):
 
 def propagate_choices(release_id):
     """
-    Transfer license information from component to usage. Set usage.license_chosen if there is no ambiguity.
+    Transfer license information from component to usage. Set usage.license_chosen if
+    there is no ambiguity.
 
     Args:
 
         release_id (int): The intern identifier of the concerned release
 
     Returns:
-        response: A python object that has two field : 
+        response: A python object that has two field :
             `to_resolve` the set of usages which needs an explicit choice
             `resolved` the set of usages for which a choice has just been made
     """
@@ -754,8 +708,8 @@ def check_licenses_against_policy(release):
 
 
 def print_license(request, license_id):
-    l = get_object_or_404(License, pk=license_id)
-    filename = l.spdx_id + ".odt"
+    license_instance = get_object_or_404(License, pk=license_id)
+    filename = license_instance.spdx_id + ".odt"
     with open(filename, "w+"):
         response = HttpResponse(content_type="application/vnd.oasis.opendocument.text")
         response["Content-Disposition"] = "attachment; filename=%s" % filename
@@ -807,58 +761,58 @@ def print_license(request, license_id):
         textdoc.automaticstyles.addElement(itstyle)
 
         # Text
-        h = H(outlinelevel=1, stylename=h1style, text=l.long_name)
+        h = H(outlinelevel=1, stylename=h1style, text=license_instance.long_name)
         textdoc.text.addElement(h)
-        h = H(outlinelevel=1, stylename=h2style, text=l.spdx_id)
+        h = H(outlinelevel=1, stylename=h2style, text=license_instance.spdx_id)
         textdoc.text.addElement(h)
 
         p = P(text="Validation Color: ")
-        v = Span(stylename=boldstyle, text=l.color)
+        v = Span(stylename=boldstyle, text=license_instance.color)
         p.addElement(v)
         textdoc.text.addElement(p)
 
-        if l.color_explanation is not None:
+        if license_instance.color_explanation is not None:
             p = P(text="Explanation: ")
-            v = Span(stylename=boldstyle, text=l.color_explanation)
+            v = Span(stylename=boldstyle, text=license_instance.color_explanation)
             p.addElement(v)
             textdoc.text.addElement(p)
 
         p = P(text="Copyleft: ")
-        v = Span(stylename=boldstyle, text=l.copyleft)
+        v = Span(stylename=boldstyle, text=license_instance.copyleft)
         p.addElement(v)
         textdoc.text.addElement(p)
 
         p = P(text="Considered as Free Open Source Sofware: ")
-        v = Span(stylename=boldstyle, text=l.foss)
+        v = Span(stylename=boldstyle, text=license_instance.foss)
         p.addElement(v)
         textdoc.text.addElement(p)
 
         p = P(text="Approved by OSI: ")
-        v = Span(stylename=boldstyle, text=l.osi_approved)
+        v = Span(stylename=boldstyle, text=license_instance.osi_approved)
         p.addElement(v)
         textdoc.text.addElement(p)
 
         p = P(text="Has an ethical clause: ")
-        v = Span(stylename=boldstyle, text=l.ethical_clause)
+        v = Span(stylename=boldstyle, text=license_instance.ethical_clause)
         p.addElement(v)
         textdoc.text.addElement(p)
 
-        if l.verbatim:
+        if license_instance.verbatim:
             p = P(text="Verbatim: ")
-            value = Span(text=l.verbatim)
+            value = Span(text=license_instance.verbatim)
             p.addElement(value)
             textdoc.text.addElement(p)
 
-        if l.comment:
+        if license_instance.comment:
             p = P(text="Comment: ")
-            value = Span(stylename=boldstyle, text=l.comment)
+            value = Span(stylename=boldstyle, text=license_instance.comment)
             p.addElement(v)
             textdoc.text.addElement(p)
 
         h = H(outlinelevel=1, stylename=h2style, text="List of identified obligations")
         textdoc.text.addElement(h)
 
-        for o in l.obligation_set.all():
+        for o in license_instance.obligation_set.all():
             h = H(outlinelevel=1, stylename=h3style, text=o.name)
             textdoc.text.addElement(h)
 
@@ -891,7 +845,8 @@ def print_license(request, license_id):
 
         p = P(
             stylename=itstyle,
-            text="This license interpretation was exported from a Hermine project. https://hermine-foss.org/.",
+            text="This license interpretation was exported from a Hermine project."
+            + " https://hermine-foss.org/.",
         )
         textdoc.text.addElement(p)
 

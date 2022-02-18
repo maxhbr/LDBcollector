@@ -3,69 +3,18 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-import requests, json
-from urllib.request import urlopen
-from pprint import pprint
-
-from django.http import HttpResponseRedirect, HttpResponse
-from django.shortcuts import get_object_or_404, render, redirect
-from django.urls import reverse
 from django.views import generic
-from django.template import loader, RequestContext
-from django.db.models import Count
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.conf import settings
-from django.views.decorators.csrf import csrf_protect, csrf_exempt
-from django.core.serializers import serialize, deserialize
-from django.core.serializers.json import DjangoJSONEncoder
-from django.db.models import Q
-
-from rest_framework import viewsets
-from rest_framework.renderers import TemplateHTMLRenderer
-from rest_framework.response import Response
-from cube.serializers import (
-    LicenseSerializer,
-    ObligationSerializer,
-    GenericSerializer,
-    UsageSerializer,
-    ExploitationSerializer,
-    ProductSerializer,
-    ReleaseSerializer,
-    ComponentSerializer,
-    VersionSerializer,
-    UploadSPDXSerializer,
-    NormalisedLicensesSerializer,
-    DerogationSerializer,
-)
 
 from .models import (
     Product,
     Release,
-    Usage,
-    License,
-    Obligation,
-    Generic,
     Component,
-    Derogation,
-    Version,
-    Team,
-    LicenseChoice,
 )
-
-from .forms import ImportGenericsForm
-from .importTools import (
-    import_licenses_file,
-    import_ort_file,
-    import_yocto_file,
-    import_spdx_file,
-)
-
 from .f_views import (
     propagate_choices,
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
-    explode_SPDX_to_units,
 )
 
 
@@ -98,7 +47,9 @@ class ReleaseView(LoginRequiredMixin, generic.DetailView):
         validation_step = 1
 
         # ==== Step 1 ====
-        # Looking for licenses that haven't been normalized, that is to say the ones that do not have a name fitting SPDX standards or that do not have been manually corrected.
+        # Looking for licenses that haven't been normalized, that is to say the ones
+        # that do not have a name fitting SPDX standards or that do not have been
+        # manually corrected.
         unnormalized_usages = self.object.usage_set.all().filter(
             version__spdx_valid_license_expr="", version__corrected_license=""
         )
@@ -180,12 +131,15 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
 
     def matchObligationExploitation(self, expl, explTrigger):
         """
-        A small utility to check the pertinence of an Obligation in the exploitation context of a usage.
+        A small utility to check the pertinence of an Obligation in the exploitation
+        context of a usage.
 
         :param expl: The type of exploitation of the component
-        :type expl: A string in ["Distribution", "DistributionSource", "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
+        :type expl: A string in ["Distribution", "DistributionSource",
+            "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
         :param explTrigger: The type of exploitation that triggers the obligation
-        :type explTrigger: A string in ["Distribution", "DistributionSource", "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
+        :type explTrigger: A string in ["Distribution", "DistributionSource",
+            "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
         :return: True if the exploitation meets the exploitation trigger
         :rtype: Boolean
         """
@@ -206,7 +160,9 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
 
         for usage in self.object.usage_set.all():
             for license in usage.licenses_chosen.all():
-                # Those two lines allow filtering obligations depending on the Usage context (if the component has been modified and how it's being distributed)
+                # Those two lines allow filtering obligations depending on the Usage
+                # context (if the component has been modified and how it's being
+                # distributed)
                 obligations_filtered = [
                     o
                     for o in license.obligation_set.all()

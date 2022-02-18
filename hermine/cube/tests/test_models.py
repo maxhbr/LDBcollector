@@ -3,12 +3,10 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from django.test import TestCase, Client
-from django.urls import reverse
-from cube.models import *
-from cube.forms import *
-from cube.views import ReleaseView
-from cube.f_views import explode_SPDX_to_units
+from django.test import TestCase
+
+from cube.models import Product
+
 
 # Models TestCases
 class ProductTest(TestCase):

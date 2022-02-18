@@ -4,13 +4,8 @@
 
 import re
 
-from django.urls import reverse
-from django.test import TestCase, Client
 from django.contrib.auth.models import User
 
-
-from rest_framework.test import APIRequestFactory
-from rest_framework import status
 from rest_framework.test import APIClient
 from rest_framework.test import APITestCase
 
@@ -30,30 +25,30 @@ def natural_keys(text):
 
 
 class APILicenseTests(APITestCase):
-    """A class to test the naturel workflow with Endpoints. 
-    This test class is monolitihic, it means that each test is dependent on the success of the previous one.
-    If the test of the post of a new license fails, then the test will stop because the latter steps won't be able to be properly tested.
+    """A class to test the naturel workflow with Endpoints.
 
+    This test class is monolitihic, it means that each test is dependent on the success
+    of the previous one.
+
+    If the test of the post of a new license fails, then the test will stop because the
+    later steps won't be able to be properly tested.
     """
 
     def step1(self):
-        """Test to create a new user
-        """
+        """Test to create a new user"""
 
         User.objects.create_user("TestUser", "testuser@test.com", "password")
         self.c = APIClient()
         self.assertTrue(self.c.login(username="TestUser", password="password"))
 
     def step2(self):
-        """Test to retrieve licenses
-        """
+        """Test to retrieve licenses"""
         url = "/api/licenses/"
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
     def step3(self):
-        """Test to post a new license.
-        """
+        """Test to post a new license."""
         url = "/api/licenses/"
         data = {
             "spdx_id": SPDX_ID,
@@ -67,42 +62,40 @@ class APILicenseTests(APITestCase):
         self.assertEqual(r.status_code, 201)
 
     def step4(self):
-        """Test to retrieve the created license
-        """
+        """Test to retrieve the created license"""
 
-        # Assumes that the previously created license is the first one in the base (it's the case)
+        # Assumes that the previously created license is the first one in the base
+        # (it's the case).
         url = "/api/licenses/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
     def step5(self):
-        """Test to post a Generic obligation
-        """
+        """Test to post a Generic obligation"""
         url = "/api/generics/"
         data = {
             "name": "TestGeneric",
             "description": "This generic obligation is for testing purpose.",
             "in_core": "True",
             "metacategory": "IPManagement",
-            "passivity": "Active"
+            "passivity": "Active",
         }
         r = self.c.post(url, data, format="json")
         self.assertEqual(r.status_code, 201)
 
     def step6(self):
-        """Test to retrieve the created Generic obligation
-        """
+        """Test to retrieve the created Generic obligation"""
 
-        # Assumes that the previously created generic obligation is the first one in the base (it's the case)
+        # Assumes that the previously created generic obligation is the first one in
+        # the base (it's the case).
         url = "/api/generics/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
     def step7(self):
-        """Test to post a new obligation to the previously created license.
-        """
+        """Test to post a new obligation to the previously created license."""
         url = "/api/obligations/"
         data = {
             "license": 1,
@@ -117,18 +110,17 @@ class APILicenseTests(APITestCase):
         self.assertEqual(r.status_code, 201)
 
     def step8(self):
-        """Test to retrieve the created obligation
-        """
+        """Test to retrieve the created obligation"""
 
-        # Assumes that the previously created obligation is the first one in the base (it's the case)
+        # Assumes that the previously created obligation is the first one in the base
+        # (it's the case).
         url = "/api/obligations/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
     def step9(self):
-        """Test to create a new product
-        """
+        """Test to create a new product"""
         url = "/api/products/"
 
         data = {
@@ -144,18 +136,17 @@ class APILicenseTests(APITestCase):
         url = "/api/products/1/?format=json"
 
     def step10(self):
-        """Test to retrieve the created product
-        """
+        """Test to retrieve the created product"""
 
-        # Assumes that the previously created product is the first one in the base (it's the case)
+        # Assumes that the previously created product is the first one in the base
+        # (it's the case).
         url = "/api/products/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
     def step11(self):
-        """Test to create a new release
-        """
+        """Test to create a new release"""
         url = "/api/releases/"
 
         data = {
@@ -169,18 +160,17 @@ class APILicenseTests(APITestCase):
         self.assertEqual(r.status_code, 201)
 
     def step12(self):
-        """Test to retrieve the created release
-        """
+        """Test to retrieve the created release"""
 
-        # Assumes that the previously created product is the first one in the base (it's the case)
+        # Assumes that the previously created product is the first one in the base
+        # (it's the case).
         url = "/api/releases/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
     def step13(self):
-        """Test to create a new Component
-            """
+        """Test to create a new Component"""
         url = "/api/components/"
 
         data = {
@@ -198,18 +188,17 @@ class APILicenseTests(APITestCase):
         self.assertEqual(r.status_code, 201)
 
     def step14(self):
-        """Test to retrieve the created Component
-        """
+        """Test to retrieve the created Component"""
 
-        # Assumes that the previously created component is the first one in the base (it's the case)
+        # Assumes that the previously created component is the first one in the base
+        # (it's the case).
         url = "/api/components/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
     def step15(self):
-        """Test to create a new Version
-            """
+        """Test to create a new Version"""
         url = "/api/versions/"
 
         data = {
@@ -224,18 +213,17 @@ class APILicenseTests(APITestCase):
         self.assertEqual(r.status_code, 201)
 
     def step16(self):
-        """Test to retrieve the created Version
-        """
+        """Test to retrieve the created Version"""
 
-        # Assumes that the previously created component is the first one in the base (it's the case)
+        # Assumes that the previously created component is the first one in the base
+        # (it's the case).
         url = "/api/versions/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)
 
     def step17(self):
-        """Test to create a new Usage
-            """
+        """Test to create a new Usage"""
         url = "/api/usages/"
 
         data = {
@@ -255,10 +243,10 @@ class APILicenseTests(APITestCase):
         self.assertEqual(r.status_code, 201)
 
     def step18(self):
-        """Test to retrieve the created Usage
-        """
+        """Test to retrieve the created Usage"""
 
-        # Assumes that the previously created component is the first one in the base (it's the case)
+        # Assumes that the previously created component is the first one in the base
+        # (it's the case).
         url = "/api/usages/1/?format=json"
 
         r = self.c.get(url)

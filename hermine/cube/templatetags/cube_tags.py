@@ -12,9 +12,9 @@ register = template.Library()
 def getModifTriggerSet(value):
     """Takes an obligation_set from a generic obligation and returns its Mofication Trigger
 
-    :param value: A generic.obligation_set 
+    :param value: A generic.obligation_set
     :type value: list
-    :raises ValueError: 
+    :raises ValueError:
     :return: a string in ['Altered', 'Unmodified', 'AlteredUnmodified']
     :rtype: string
     """
@@ -34,10 +34,10 @@ def getModifTriggerSet(value):
 @register.filter
 def getModifTriggerOblig(value):
     """Returns the Modification trigger of an Obligation object.
-    
-    :param value: A generic.obligation_set 
+
+    :param value: A generic.obligation_set
     :type value: list
-    :raises ValueError: 
+    :raises ValueError:
     :return: a string in ['Altered', 'Unmodified', 'AlteredUnmodified']
     :rtype: string
     """
