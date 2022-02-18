@@ -34,6 +34,9 @@ reuse = "^0.14.0"
 black = {version = "^22.1.0", allow-prereleases = true}
 flake8-black = "^0.2.4"
 
+[tool.black]
+exclude = "hermine/cube/migrations"
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
