@@ -4,13 +4,8 @@
 
 import re
 
-from django.urls import reverse
-from django.test import TestCase, Client
 from django.contrib.auth.models import User
 
-
-from rest_framework.test import APIRequestFactory
-from rest_framework import status
 from rest_framework.test import APIClient
 from rest_framework.test import APITestCase
 
@@ -31,9 +26,12 @@ def natural_keys(text):
 
 class APILicenseTests(APITestCase):
     """A class to test the naturel workflow with Endpoints.
-    This test class is monolitihic, it means that each test is dependent on the success of the previous one.
-    If the test of the post of a new license fails, then the test will stop because the latter steps won't be able to be properly tested.
 
+    This test class is monolitihic, it means that each test is dependent on the success
+    of the previous one.
+
+    If the test of the post of a new license fails, then the test will stop because the
+    later steps won't be able to be properly tested.
     """
 
     def step1(self):
@@ -66,7 +64,8 @@ class APILicenseTests(APITestCase):
     def step4(self):
         """Test to retrieve the created license"""
 
-        # Assumes that the previously created license is the first one in the base (it's the case)
+        # Assumes that the previously created license is the first one in the base
+        # (it's the case).
         url = "/api/licenses/1/?format=json"
 
         r = self.c.get(url)
@@ -88,7 +87,8 @@ class APILicenseTests(APITestCase):
     def step6(self):
         """Test to retrieve the created Generic obligation"""
 
-        # Assumes that the previously created generic obligation is the first one in the base (it's the case)
+        # Assumes that the previously created generic obligation is the first one in
+        # the base (it's the case).
         url = "/api/generics/1/?format=json"
 
         r = self.c.get(url)
@@ -112,7 +112,8 @@ class APILicenseTests(APITestCase):
     def step8(self):
         """Test to retrieve the created obligation"""
 
-        # Assumes that the previously created obligation is the first one in the base (it's the case)
+        # Assumes that the previously created obligation is the first one in the base
+        # (it's the case).
         url = "/api/obligations/1/?format=json"
 
         r = self.c.get(url)
@@ -137,7 +138,8 @@ class APILicenseTests(APITestCase):
     def step10(self):
         """Test to retrieve the created product"""
 
-        # Assumes that the previously created product is the first one in the base (it's the case)
+        # Assumes that the previously created product is the first one in the base
+        # (it's the case).
         url = "/api/products/1/?format=json"
 
         r = self.c.get(url)
@@ -160,7 +162,8 @@ class APILicenseTests(APITestCase):
     def step12(self):
         """Test to retrieve the created release"""
 
-        # Assumes that the previously created product is the first one in the base (it's the case)
+        # Assumes that the previously created product is the first one in the base
+        # (it's the case).
         url = "/api/releases/1/?format=json"
 
         r = self.c.get(url)
@@ -187,7 +190,8 @@ class APILicenseTests(APITestCase):
     def step14(self):
         """Test to retrieve the created Component"""
 
-        # Assumes that the previously created component is the first one in the base (it's the case)
+        # Assumes that the previously created component is the first one in the base
+        # (it's the case).
         url = "/api/components/1/?format=json"
 
         r = self.c.get(url)
@@ -211,7 +215,8 @@ class APILicenseTests(APITestCase):
     def step16(self):
         """Test to retrieve the created Version"""
 
-        # Assumes that the previously created component is the first one in the base (it's the case)
+        # Assumes that the previously created component is the first one in the base
+        # (it's the case).
         url = "/api/versions/1/?format=json"
 
         r = self.c.get(url)
@@ -240,7 +245,8 @@ class APILicenseTests(APITestCase):
     def step18(self):
         """Test to retrieve the created Usage"""
 
-        # Assumes that the previously created component is the first one in the base (it's the case)
+        # Assumes that the previously created component is the first one in the base
+        # (it's the case).
         url = "/api/usages/1/?format=json"
 
         r = self.c.get(url)

@@ -6,7 +6,9 @@
 # Do not delete or modify this file, it's used for documentation build in CI !
 # Do not commit your authentication credential !
 
-# DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sqlite3"}}
+# DATABASES = {
+#     "default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sqlite3"}
+# }
 
 # For a Postgres DB, copy and fill the following :
 

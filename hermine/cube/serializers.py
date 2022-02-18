@@ -17,17 +17,26 @@ from cube.models import (
 )
 
 """
-Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types.
-Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data. Here the serialization is based on the Django REST Framework (DRF).
+Serializers allow complex data such as querysets and model instances to be converted to
+native Python datatypes that can then be easily rendered into JSON, XML or other
+content types.
+
+Serializers also provide deserialization, allowing parsed data to be converted back
+into complex types, after first validating the incoming data. Here the serialization is
+based on the Django REST Framework (DRF).
 """
 
 
 class GenericSerializer(serializers.ModelSerializer):
-    """Allow serialization and deserialization of generic obligations on the following fields :
+    """Allow serialization and deserialization of generic obligations on the following
+    fields:
     "id", "name", "description", "in_core", "metacategory", "team", "passivity"
-    Here the id is kept because generic obligations are considered as something so important to the work of Hermine that keeping a surrogate key to point them is reasonable.
+    Here the id is kept because generic obligations are considered as something so
+    important to the work of Hermine that keeping a surrogate key to point them is
+    reasonable.
 
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    :param serializers:
+        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
     class Meta:
@@ -45,7 +54,8 @@ class GenericSerializer(serializers.ModelSerializer):
 
 
 class GenericNameField(serializers.CharField):
-    """A class that allows us to add an extra field "generic_name" in serialization of Obligation."""
+    """A class that allows us to add an extra field "generic_name" in serialization of
+    Obligation."""
 
     def get_attribute(self, instance):
         return instance.generic.name if instance.generic is not None else None
@@ -53,9 +63,11 @@ class GenericNameField(serializers.CharField):
 
 class ObligationSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of obligations on the following fields :
-    "name", "license", "verbatim", "passivity", "trigger_expl", "trigger_mdf", "generic_id"
+    "name", "license", "verbatim", "passivity", "trigger_expl", "trigger_mdf",
+    "generic_id"
 
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    :param serializers:
+        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
     generic_name = GenericNameField(allow_null=True, required=False)
@@ -81,7 +93,8 @@ class ObligationSerializer(serializers.ModelSerializer):
 
     @classmethod
     def create(cls, validated_data):
-        # When creating new obligation, we link it to a generic obligation if one with the same **name** exists in base.
+        # When creating new obligation, we link it to a generic obligation if one with
+        # the same **name** exists in base.
         generic_name = validated_data.pop("generic_name", None)
         if generic_name is not None:
             validated_data["generic"] = Generic.objects.get(name=generic_name)
@@ -101,7 +114,8 @@ class ObligationSerializer(serializers.ModelSerializer):
 
 
 class LicenseObligationSerializer(ObligationSerializer):
-    """A serializer used for nested representation of Obligations. We don'need and we cannot fill the license field in that case.
+    """A serializer used for nested representation of Obligations. We don't need and
+    we cannot fill the license field in that case.
 
     :param ObligationSerializer: The main serializer for obligations
     :type ObligationSerializer: Serializer
@@ -113,7 +127,8 @@ class LicenseObligationSerializer(ObligationSerializer):
 
     @classmethod
     def create(cls, license, validated_data):
-        # When creating new obligation, we link it to a generic obligation if one with the same **name** exists in base.
+        # When creating new obligation, we link it to a generic obligation if one with
+        # the same **name** exists in base.
         generic_name = validated_data.pop("generic_name", None)
         if generic_name is not None:
             validated_data["generic"] = Generic.objects.get(name=generic_name)
@@ -136,11 +151,18 @@ class LicenseObligationSerializer(ObligationSerializer):
 
 
 class LicenseSerializer(serializers.ModelSerializer):
-    """Allow serialization and deserialization of licenses on the following fields :
-    "spdx_id", "long_name", "license_version", "radical", "autoupgrade", "steward", "inspiration_spdx", "copyleft", "color", "color_explanation", "url", "osi_approved", "fsf_approved", "foss", "patent_grant", "ethical_clause", "non_commmercial", "legal_uncertainty", "non_tivoisation", "technical_nature_constraint", "jurisdictional_clause","comment", "verbatim","obligation_set"
-    Obligations are nested in a license, and can be accessed with "/licenses/{license_name}/obligation/{obligation_name}"
+    """Allow serialization and deserialization of licenses on the following fields:
+    "spdx_id", "long_name", "license_version", "radical", "autoupgrade", "steward",
+    "inspiration_spdx", "copyleft", "color", "color_explanation", "url", "osi_approved",
+    "fsf_approved", "foss", "patent_grant", "ethical_clause", "non_commmercial",
+    "legal_uncertainty", "non_tivoisation", "technical_nature_constraint",
+    "jurisdictional_clause","comment", "verbatim","obligation_set"
 
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    Obligations are nested in a license, and can be accessed with
+    "/licenses/{license_name}/obligation/{obligation_name}"
+
+    :param serializers:
+        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
     obligation_set = LicenseObligationSerializer(
@@ -187,11 +209,13 @@ class LicenseSerializer(serializers.ModelSerializer):
         return license
 
     def update(self, instance, validated_data):
-        """Updates a license overwriting existing data. You should explicitely give every data you want to keep in the 'validated data parameter.
+        """Updates a license overwriting existing data. You should explicitely give
+        every data you want to keep in the 'validated data parameter.
 
         :param instance: The instance of license you want to update.
         :type instance: License
-        :param validated_data: A dict matching license serialization. Obligations are nested in 'obligation_set'.
+        :param validated_data: A dict matching license serialization.
+            Obligations are nested in 'obligation_set'.
         :type validated_data: [type]
         :return: [description]
         :rtype: [type]
@@ -244,7 +268,8 @@ class ReleaseSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of Releases on the following fields :
 
 
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    :param serializers:
+        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
     class Meta:
@@ -263,7 +288,8 @@ class ReleaseSerializer(serializers.ModelSerializer):
 class ProductSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of Products on the following fields :
 
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    :param serializers:
+        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
     release_set = ReleaseSerializer(
@@ -287,11 +313,13 @@ class ProductSerializer(serializers.ModelSerializer):
         return product
 
     def update(self, instance, validated_data):
-        """Updates a product overwriting existing data. You should explicitely give every data you want to keep in the 'validated data parameter.
+        """Updates a product overwriting existing data. You should explicitely give
+        every data you want to keep in the 'validated data parameter.
 
         :param instance: The instance of product you want to update.
         :type instance: Product
-        :param validated_data: A dict matching product serialization. Releases are nested in 'release_set'.
+        :param validated_data: A dict matching product serialization. Releases are
+            nested in 'release_set'.
         :type validated_data: [type]
         :return: [description]
         :rtype: [type]
@@ -313,9 +341,11 @@ class ProductSerializer(serializers.ModelSerializer):
 
 class VersionSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of Versions on the following fields :
-    "component", "version_number", "declared_license_expr", "spdx_valid_license_expr", "corrected_license", "scanned_licenses", "purl",
+    "component", "version_number", "declared_license_expr", "spdx_valid_license_expr",
+    "corrected_license", "scanned_licenses", "purl",
 
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    :param serializers:
+        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
     class Meta:
@@ -335,9 +365,11 @@ class VersionSerializer(serializers.ModelSerializer):
 class ComponentSerializer(serializers.ModelSerializer):
     """
     Allows serialization and deserialization of Products on the following fields :
-    "id", "name", "package_repo", "description", "programming_language", "spdx_expression", "homepage_url", "export_control_status"
+    "id", "name", "package_repo", "description", "programming_language",
+    "spdx_expression", "homepage_url", "export_control_status"
 
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    :param serializers:
+        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
     version_set = VersionSerializer(
@@ -371,11 +403,13 @@ class ComponentSerializer(serializers.ModelSerializer):
         return component
 
     def update(self, instance, validated_data):
-        """Updates a product overwriting existing data. You should explicitely give every data you want to keep in the 'validated data parameter.
+        """Updates a product overwriting existing data. You should explicitely give
+        every data you want to keep in the 'validated data parameter.
 
         :param instance: The instance of component you want to update.
         :type instance: Component
-        :param validated_data: A dict matching component serialization. Versions are nested in 'version_set'.
+        :param validated_data: A dict matching component serialization.
+            Versions are nested in 'version_set'.
         :type validated_data: [type]
         :return: [description]
         :rtype: [type]
@@ -422,8 +456,10 @@ class NormalisedLicensesSerializer(serializers.Serializer):
 
 class DerogationSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of Derogations on the following fields :
-    "license", "release", "usage", "linking", "scope", "justification",
-    :param serializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
+    "license", "release", "usage", "linking", "scope", "justification"
+
+    :param serializers:
+        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
     class Meta:

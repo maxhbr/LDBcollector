@@ -3,11 +3,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from django.test import TestCase, Client
-from django.urls import reverse
-from cube.models import *
-from cube.forms import *
-from cube.views import ReleaseView
+from django.test import TestCase
+
 from cube.f_views import explode_SPDX_to_units
 
 
@@ -16,7 +13,13 @@ class ExplodeSPDXReleaseViewTests(TestCase):
         """
         An SPDX expression that comes with all the difficulties one may face.
         """
-        SPDX_complex = "(MIT AND (BSD-3-Clause-No-Nuclear-License-2014 OR GPL-3.0-or-later WITH GPL-3.0-linking-source-exception OR GPL-2.0-only WITH Classpath-exception-2.0)) OR (AGPL-3.0-or-later WITH PS-or-PDF-font-exception-20170817 AND  Condor-1.1 AND (TORQUE-1.1 OR Artistic-1.0-cl8 OR MIT))"
+        SPDX_complex = (
+            "(MIT AND (BSD-3-Clause-No-Nuclear-License-2014 OR"
+            + " GPL-3.0-or-later WITH GPL-3.0-linking-source-exception OR GPL-2.0-only"
+            + " WITH Classpath-exception-2.0)) OR (AGPL-3.0-or-later WITH"
+            + " PS-or-PDF-font-exception-20170817 AND  Condor-1.1 AND"
+            + " (TORQUE-1.1 OR Artistic-1.0-cl8 OR MIT))"
+        )
         SPDX_exploded = [
             "MIT",
             "BSD-3-Clause-No-Nuclear-License-2014",

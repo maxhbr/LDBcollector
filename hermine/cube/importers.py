@@ -5,7 +5,6 @@
 
 import json
 import yaml
-import re
 import spdx_license_list
 from datetime import datetime
 from cube.models import Component, Version, Usage
@@ -59,12 +58,9 @@ def import_ort_file(json_file, release_id):
                 # If necessary create version
                 vers_number = package["package"]["purl"].split("@")[1]
                 vers_lic_decl = package["package"]["declared_licenses"]
-                try:
-                    vers_lic_proc = package["package"]["declared_licenses_processed"][
-                        "spdx_expression"
-                    ]
-                except:
-                    vers_lic_proc = ""
+                vers_lic_proc = package["package"]["declared_licenses_processed"].get(
+                    "spdx_expression", ""
+                )
                 if package_id in scan_packages:
                     vers_scan_lic = ",".join(scan_packages[package_id])
                     print(vers_scan_lic)
@@ -348,7 +344,8 @@ def import_spdx_file(yaml_file, release_id):
             vers_number = "Current"
         else:
             vers_number = package["versionInfo"]
-        # SPDX output sometimes return "NOASSERTION" instead of an empty value. Handling that.
+        # SPDX output sometimes return "NOASSERTION" instead of an empty value.
+        # Handling that.
         if package["licenseDeclared"] != "NOASSERTION":
             vers_lic_decl = package["licenseDeclared"]
         else:

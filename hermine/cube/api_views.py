@@ -5,7 +5,6 @@
 
 import json
 
-from pprint import pprint
 from rest_framework import viewsets
 from rest_framework.response import Response
 from cube.serializers import (
@@ -13,13 +12,11 @@ from cube.serializers import (
     ObligationSerializer,
     GenericSerializer,
     UsageSerializer,
-    ExploitationSerializer,
     ProductSerializer,
     ReleaseSerializer,
     ComponentSerializer,
     VersionSerializer,
     UploadSPDXSerializer,
-    NormalisedLicensesSerializer,
     DerogationSerializer,
     UploadORTSerializer,
 )
@@ -32,10 +29,7 @@ from .models import (
     Obligation,
     Generic,
     Component,
-    Derogation,
     Version,
-    Team,
-    LicenseChoice,
 )
 
 from .f_views import (
@@ -128,7 +122,8 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         """
-        Handles if the user is accessing the viewset from root of api or from a nested ReleaseSet in a product (api/products/<int:product_id>/releases)
+        Handles if the user is accessing the viewset from root of api or from a nested
+        # ReleaseSet in a product (api/products/<int:product_id>/releases)
 
         :return: Set of Release objects
         :rtype: QuerySet
@@ -152,7 +147,7 @@ class UploadSPDXViewSet(viewsets.ViewSet):
     serializer_class = UploadSPDXSerializer
 
     def get_serializer_context(self):
-        context = super(myModelViewSet, self).get_serializer_context()
+        context = super().get_serializer_context()
         context.update({"request": self.request})
         return context
 
@@ -176,7 +171,7 @@ class UploadORTViewSet(viewsets.ViewSet):
     serializer_class = UploadORTSerializer
 
     def get_serializer_context(self):
-        context = super(myModelViewSet, self).get_serializer_context()
+        context = super().get_serializer_context()
         context.update({"request": self.request})
         return context
 
@@ -216,18 +211,21 @@ class VersionViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         """
-        Handles if the user is accessing the viewset from root of api or from a nested componentset in a license
+        Handles if the user is accessing the viewset from root of api or from a nested
+        componentset in a license
 
 
-        :return: All the versions if query is made from /api/versions/, or only the relevant version if query is made from /api/components/<int: componen_id>/versions
+        :return: All the versions if query is made from /api/versions/, or only the
+            relevant version if query is made from
+            /api/components/<int: componen_id>/versions
         :rtype: QuerySet
         """
-        try:
-            component = self.kwargs["nested_1_pk"]
-            response = Version.objects.filter(component__id=component)
-        except:
-            response = Version.objects.all()
-        return response
+        component = self.kwargs.get("nested_1_pk")
+        return (
+            Version.objects.all()
+            if component is None
+            else Version.objects.filter(component__id=component)
+        )
 
     serializer_class = VersionSerializer
     lookup_field = "id"
@@ -240,18 +238,19 @@ class ObligationViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         """
-        Handles if the user is accessing the viewset from root of api or from a nested obligationset in a license
+        Handles if the user is accessing the viewset from root of api or from a nested
+        obligationset in a license
 
 
         :return: [description]
         :rtype: [type]
         """
-        try:
-            license = self.kwargs["id_id"]
-            response = Obligation.objects.filter(license__id=license)
-        except:
-            response = Obligation.objects.all()
-        return response
+        license = self.kwargs.get("id_id")
+        return (
+            Obligation.objects.all()
+            if license is None
+            else Obligation.objects.filter(license__id=license)
+        )
 
     serializer_class = ObligationSerializer
     lookup_field = "id"
@@ -291,7 +290,9 @@ class UnnormalisedUsagesViewSet(viewsets.ViewSet):
 # API VALIDATION STEP - 2
 class LicensesToCheckViewSet(viewsets.ViewSet):
     """
-    API endpoint that allows to know the Licenses that need to be checked or created (Validation Step 2)
+    API endpoint that allows to know the Licenses that need to be checked or created
+    (Validation Step 2)
+
     Can be found at 'api/releases/52/validation-2/'
     """
 
@@ -321,7 +322,10 @@ class LicensesToCheckViewSet(viewsets.ViewSet):
 # API VALIDATION STEP - 3
 class LicensesUsagesViewSet(viewsets.ViewSet):
     """
-    API endpoint that allows to know if every License Usage have been specified for complex SPDX expressions -i.a. the ones that have more than 1 SPDX identifier in it- (Validation Step 3)
+    API endpoint that allows to know if every License Usage have been specified for
+    complex SPDX expressions -i.a. the ones that have more than 1 SPDX identifier in
+    it- (Validation Step 3)
+
     Can be found at 'api/releases/52/validation-3/'
     """
 
@@ -346,7 +350,10 @@ class LicensesUsagesViewSet(viewsets.ViewSet):
 # API VALIDATION STEP - 4
 class LicensesAgainstPolicyViewSet(viewsets.ViewSet):
     """
-    API endpoint that allows to know the Licenses that need or have a derogation (Validation Step 4). 5 fields are populated with different models
+    API endpoint that allows to know the Licenses that need or have a derogation
+    (Validation Step 4).
+
+    5 fields are populated with different models
     `usages_lic_red` : Usage
     `usages_lic_orange` : Usage
     `usages_lic_grey` : Usage

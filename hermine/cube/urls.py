@@ -3,7 +3,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from django.conf.urls import include
 from django.urls import path
 from rest_framework_nested import routers
 from rest_framework.authtoken import views as authviews
