@@ -40,6 +40,7 @@ This repository is currently in incubation and not yet ready for contributions.
 
 # License
 
+Copyright (C) 2019-2022 Bosch.IO GmbH
 Copyright (C) 2022 Bosch.IO GmbH
 
 See the [LICENSE](./LICENSE) file in the root of this project for license details.
