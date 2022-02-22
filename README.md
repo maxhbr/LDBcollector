@@ -7,7 +7,7 @@ This repository contains configuration files for the [OSS Review Toolkit](https:
 ### Curations
 
 The [curations](./curations/) directory contains
-[package curations](https://github.com/oss-review-toolkit/ort/blob/master/docs/config-file-curations-yml.md) for
+[package curations](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-curations-yml.md) for
 open source packages.
 
 Package curations submitted to this repository must adhere to the following rules:
