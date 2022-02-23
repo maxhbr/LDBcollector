@@ -29,11 +29,11 @@
  * Import the license classifications from license-classifications.yml.
  */
 
-val permissiveLicenses = licenseClassifications.licensesByCategory["permissive"].orEmpty()
-
 val copyleftLicenses = licenseClassifications.licensesByCategory["copyleft"].orEmpty()
 
 val copyleftLimitedLicenses = licenseClassifications.licensesByCategory["copyleft-limited"].orEmpty()
+
+val permissiveLicenses = licenseClassifications.licensesByCategory["permissive"].orEmpty()
 
 val publicDomainLicenses = licenseClassifications.licensesByCategory["public-domain"].orEmpty()
 
