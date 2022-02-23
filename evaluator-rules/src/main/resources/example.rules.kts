@@ -53,8 +53,28 @@ val handledLicenses = listOf(
     it.toSet()
 }
 
+enum class PolicyRules() {
+    OSS_PROJECT,
+    PROPRIETARY_PROJECT
+}
+
 /**
- * Function to return Markdown-formatted text to aid users with resolving violations.
+ * Return set of policy rules based on project label passed to ORT.
+ */
+fun getEnabledPolicyRules(): PolicyRules =
+    when {
+        isLabeled("project", "oss-project") -> PolicyRules.OSS_PROJECT
+        else -> PolicyRules.PROPRIETARY_PROJECT
+    }
+
+/**
+ * Return true if a label with identical [key] exists whose comma separate values contains [value].
+ */
+fun isLabeled(key: String, value: String) =
+    ortResult.labels[key]?.split(",")?.map { it.trim() }?.contains(value) == true
+
+/**
+ * Return Markdown-formatted text to aid users with resolving violations.
  */
 
 fun PackageRule.howToFixDefault() = """
@@ -92,8 +112,7 @@ fun PackageRule.LicenseRule.isCopyleftLimited() =
  * Example policy rules
  */
 
-// Define the set of policy rules.
-val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
+fun RuleSet.unhandledLicenseRule() {
     // Define a rule that is executed for each package.
     packageRule("UNHANDLED_LICENSE") {
         // Do not trigger this rule on packages that have been excluded in the .ort.yml.
@@ -117,7 +136,9 @@ val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
             )
         }
     }
+}
 
+fun RuleSet.unmappedDeclaredLicenseRule() {
     packageRule("UNMAPPED_DECLARED_LICENSE") {
         require {
             -isExcluded()
@@ -131,7 +152,10 @@ val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
             )
         }
     }
+}
 
+
+fun RuleSet.copyleftInSourceRule() {
     packageRule("COPYLEFT_IN_SOURCE") {
         require {
             -isExcluded()
@@ -177,39 +201,9 @@ val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
             error(message, howToFixDefault())
         }
     }
+}
 
-    packageRule("VULNERABILITY_IN_PACKAGE") {
-        require {
-            -isExcluded()
-            +hasVulnerability()
-        }
-
-        issue(
-            Severity.WARNING,
-            "The package ${pkg.id.toCoordinates()} has a vulnerability",
-            howToFixDefault()
-        )
-    }
-
-    packageRule("HIGH_SEVERITY_VULNERABILITY_IN_PACKAGE") {
-        val maxAcceptedSeverity = "5.0"
-        val scoringSystem = "CVSS2"
-
-        require {
-            -isExcluded()
-            +hasVulnerability(maxAcceptedSeverity, scoringSystem) { value, threshold ->
-                value.toFloat() >= threshold.toFloat()
-            }
-        }
-
-        issue(
-            Severity.ERROR,
-            "The package ${pkg.id.toCoordinates()} has a vulnerability with $scoringSystem severity > " +
-                    "$maxAcceptedSeverity",
-            howToFixDefault()
-        )
-    }
-
+fun RuleSet.copyleftInDependencyRule() {
     // Define a rule that is executed for each dependency of a project.
     dependencyRule("COPYLEFT_IN_DEPENDENCY") {
         licenseRule("COPYLEFT_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
@@ -246,7 +240,9 @@ val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
             )
         }
     }
+}
 
+fun RuleSet.deprecatedScopeExludeInOrtYmlRule() {
     ortResultRule("DEPRECATED_SCOPE_EXCLUDE_REASON_IN_ORT_YML") {
         val reasons = ortResult.repository.config.excludes.scopes.mapTo(mutableSetOf()) { it.reason }
         val deprecatedReasons = setOf(ScopeExcludeReason.TEST_TOOL_OF)
@@ -259,6 +255,68 @@ val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
                         "kotlin/config/ScopeExcludeReason.kt."
             )
         }
+    }
+}
+
+fun RuleSet.vulnerabilityInPackageRule() {
+    packageRule("VULNERABILITY_IN_PACKAGE") {
+        require {
+            -isExcluded()
+            +hasVulnerability()
+        }
+
+        issue(
+            Severity.WARNING,
+            "The package ${pkg.id.toCoordinates()} has a vulnerability",
+            howToFixDefault()
+        )
+    }
+}
+
+fun RuleSet.vulnerabilityWithHighSeverityInPackageRule() {
+    packageRule("HIGH_SEVERITY_VULNERABILITY_IN_PACKAGE") {
+        val maxAcceptedSeverity = "5.0"
+        val scoringSystem = "CVSS2"
+
+        require {
+            -isExcluded()
+            +hasVulnerability(maxAcceptedSeverity, scoringSystem) { value, threshold ->
+                value.toFloat() >= threshold.toFloat()
+            }
+        }
+
+        issue(
+            Severity.ERROR,
+            "The package ${pkg.id.toCoordinates()} has a vulnerability with $scoringSystem severity > " +
+                    "$maxAcceptedSeverity",
+            howToFixDefault()
+        )
+    }
+}
+
+fun RuleSet.commonRules() {
+    unhandledLicenseRule()
+    unmappedDeclaredLicenseRule()
+
+    deprecatedScopeExludeInOrtYmlRule()
+
+    vulnerabilityInPackageRule()
+    vulnerabilityWithHighSeverityInPackageRule()
+}
+
+fun RuleSet.proprietaryProjectRules() {
+    copyleftInSourceRule()
+    copyleftInDependencyRule()
+}
+
+fun RuleSet.ossProjectRules() {
+}
+
+val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
+    commonRules()
+    when (getEnabledPolicyRules()) {
+        PolicyRules.PROPRIETARY_PROJECT -> proprietaryProjectRules()
+        PolicyRules.OSS_PROJECT -> ossProjectRules()
     }
 }
 
