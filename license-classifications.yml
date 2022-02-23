@@ -209,6 +209,10 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "ISC"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "JSON"
   categories:
   - "permissive"
@@ -254,7 +258,23 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "MIT-advertising"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "MIT-CMU"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "MIT-enna"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "MIT-feh"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
+- id: "MITNFA"
   categories:
   - "permissive"
   - "include-in-notice-file"
