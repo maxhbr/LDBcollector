@@ -112,48 +112,44 @@ fun PackageRule.LicenseRule.isCopyleftLimited() =
  * Example policy rules
  */
 
-fun RuleSet.unhandledLicenseRule() {
-    // Define a rule that is executed for each package.
-    packageRule("UNHANDLED_LICENSE") {
-        // Do not trigger this rule on packages that have been excluded in the .ort.yml.
-        require {
-            -isExcluded()
-        }
-
-        // Define a rule that is executed for each license of the package.
-        licenseRule("UNHANDLED_LICENSE", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+fun RuleSet.copyleftInDependencyRule() {
+    // Define a rule that is executed for each dependency of a project.
+    dependencyRule("COPYLEFT_IN_DEPENDENCY") {
+        licenseRule("COPYLEFT_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
             require {
-                -isExcluded()
-                -isHandled()
+                +isCopyleft()
             }
 
-            // Throw an error message including guidance how to fix the issue.
-            error(
-                "The license $license is currently not covered by policy rules. " +
-                        "The license was ${licenseSource.name.lowercase()} in package " +
-                        "${pkg.id.toCoordinates()}",
+            issue(
+                Severity.ERROR,
+                "The project ${project.id.toCoordinates()} has a dependency licensed under the ScanCode " +
+                        "copyleft categorized license $license.",
                 howToFixDefault()
             )
         }
     }
-}
 
-fun RuleSet.unmappedDeclaredLicenseRule() {
-    packageRule("UNMAPPED_DECLARED_LICENSE") {
+    dependencyRule("COPYLEFT_LIMITED_STATIC_LINK_IN_DIRECT_DEPENDENCY") {
         require {
-            -isExcluded()
+            +isAtTreeLevel(0)
+            +isStaticallyLinked()
         }
 
-        resolvedLicenseInfo.licenseInfo.declaredLicenseInfo.processed.unmapped.forEach { unmappedLicense ->
-            warning(
-                "The declared license '$unmappedLicense' could not be mapped to a valid license or parsed as an SPDX " +
-                        "expression. The license was found in package ${pkg.id.toCoordinates()}.",
+        licenseRule("LINKED_WEAK_COPYLEFT", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
+            require {
+                +isCopyleftLimited()
+            }
+
+            // Use issue() instead of error() if you want to set the severity.
+            issue(
+                Severity.WARNING,
+                "The project ${project.id.toCoordinates()} has a statically linked direct dependency licensed " +
+                        "under the ScanCode copyleft-left categorized license $license.",
                 howToFixDefault()
             )
         }
     }
 }
-
 
 fun RuleSet.copyleftInSourceRule() {
     packageRule("COPYLEFT_IN_SOURCE") {
@@ -199,45 +195,6 @@ fun RuleSet.copyleftInSourceRule() {
             }
 
             error(message, howToFixDefault())
-        }
-    }
-}
-
-fun RuleSet.copyleftInDependencyRule() {
-    // Define a rule that is executed for each dependency of a project.
-    dependencyRule("COPYLEFT_IN_DEPENDENCY") {
-        licenseRule("COPYLEFT_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
-            require {
-                +isCopyleft()
-            }
-
-            issue(
-                Severity.ERROR,
-                "The project ${project.id.toCoordinates()} has a dependency licensed under the ScanCode " +
-                        "copyleft categorized license $license.",
-                howToFixDefault()
-            )
-        }
-    }
-
-    dependencyRule("COPYLEFT_LIMITED_STATIC_LINK_IN_DIRECT_DEPENDENCY") {
-        require {
-            +isAtTreeLevel(0)
-            +isStaticallyLinked()
-        }
-
-        licenseRule("LINKED_WEAK_COPYLEFT", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
-            require {
-                +isCopyleftLimited()
-            }
-
-            // Use issue() instead of error() if you want to set the severity.
-            issue(
-                Severity.WARNING,
-                "The project ${project.id.toCoordinates()} has a statically linked direct dependency licensed " +
-                        "under the ScanCode copyleft-left categorized license $license.",
-                howToFixDefault()
-            )
         }
     }
 }
@@ -291,6 +248,48 @@ fun RuleSet.vulnerabilityWithHighSeverityInPackageRule() {
                     "$maxAcceptedSeverity",
             howToFixDefault()
         )
+    }
+}
+
+fun RuleSet.unhandledLicenseRule() {
+    // Define a rule that is executed for each package.
+    packageRule("UNHANDLED_LICENSE") {
+        // Do not trigger this rule on packages that have been excluded in the .ort.yml.
+        require {
+            -isExcluded()
+        }
+
+        // Define a rule that is executed for each license of the package.
+        licenseRule("UNHANDLED_LICENSE", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+            require {
+                -isExcluded()
+                -isHandled()
+            }
+
+            // Throw an error message including guidance how to fix the issue.
+            error(
+                "The license $license is currently not covered by policy rules. " +
+                        "The license was ${licenseSource.name.lowercase()} in package " +
+                        "${pkg.id.toCoordinates()}",
+                howToFixDefault()
+            )
+        }
+    }
+}
+
+fun RuleSet.unmappedDeclaredLicenseRule() {
+    packageRule("UNMAPPED_DECLARED_LICENSE") {
+        require {
+            -isExcluded()
+        }
+
+        resolvedLicenseInfo.licenseInfo.declaredLicenseInfo.processed.unmapped.forEach { unmappedLicense ->
+            warning(
+                "The declared license '$unmappedLicense' could not be mapped to a valid license or parsed as an SPDX " +
+                        "expression. The license was found in package ${pkg.id.toCoordinates()}.",
+                howToFixDefault()
+            )
+        }
     }
 }
 
