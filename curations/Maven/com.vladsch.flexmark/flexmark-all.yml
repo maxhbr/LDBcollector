@@ -1,0 +1,8 @@
+- id: "Maven:com.vladsch.flexmark:flexmark-all:0.34.30"
+  curations:
+    comment: |
+      No sources artifact published and no <scm> tag in POM. Repository found via Internet search. Version is not tagged
+      in Git, revision found via Git history search.
+    vcs:
+      url: https://github.com/vsch/flexmark-java.git
+      revision: 22adad6c8209bbf85dfd59483fa44a9e68ace664
