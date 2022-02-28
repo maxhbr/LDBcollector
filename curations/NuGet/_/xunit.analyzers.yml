@@ -1,0 +1,55 @@
+- id: "NuGet::xunit.analyzers:0.1.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.1.0 as there are no release tags."
+    vcs:
+      revision: "5ab146c13af4029d65b2e6525021fdaf7ab32f4f"
+- id: "NuGet::xunit.analyzers:0.2.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.2.0 as there are no release tags."
+    vcs:
+      revision: "d03259b78a54c6e0c14ff1f78d4d3930b339d318"
+- id: "NuGet::xunit.analyzers:0.3.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.3.0 as there are no release tags."
+    vcs:
+      revision: "3bb32ea22c1b741e203bf10fac305f53491ea844"
+- id: "NuGet::xunit.analyzers:0.4.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.4.0 as there are no release tags."
+    vcs:
+      revision: "6fd8bed410da8dfb9252b2cd74d6348cd3325fe8"
+- id: "NuGet::xunit.analyzers:0.5.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.5.0 as there are no release tags."
+    vcs:
+      revision: "06e188117c29895f776a81e06830bc37a866cf85"
+- id: "NuGet::xunit.analyzers:0.6.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.6.0 as there are no release tags."
+    vcs:
+      revision: "f1e29fec17f78a535aee5d780104b979abe7e371"
+- id: "NuGet::xunit.analyzers:0.6.1"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.6.1 as there are no release tags."
+    vcs:
+      revision: "5cc77e6030dafe31156e2e0c46730b2b7c737fb5"
+- id: "NuGet::xunit.analyzers:0.7.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.7.0 as there are no release tags."
+    vcs:
+      revision: "c31c360e2594ce3fc8193cf8ac23c0fdd22b587b"
+- id: "NuGet::xunit.analyzers:0.8.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.8.0 as there are no release tags."
+    vcs:
+      revision: "5cd27971da59390cdbbf9a310979e6dbeffdb84d"
+- id: "NuGet::xunit.analyzers:0.9.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.9.0 as there are no release tags."
+    vcs:
+      revision: "643131ab4dbb35b0db87aead92e5275c20d5c3c3"
+- id: "NuGet::xunit.analyzers:0.10.0"
+  curations:
+    comment: "Set the VCS revision based on the release branch rel/0.10.0 as there are no release tags."
+    vcs:
+      revision: "5f95a844bd00ab15fe7e2ac1bed6b9140c716031"
