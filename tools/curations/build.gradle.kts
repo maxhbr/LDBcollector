@@ -16,6 +16,7 @@ import org.ossreviewtoolkit.model.mapper
 import org.ossreviewtoolkit.model.mapperConfig
 import org.ossreviewtoolkit.utils.common.encodeOr
 import org.ossreviewtoolkit.utils.common.safeMkdirs
+import org.ossreviewtoolkit.utils.spdx.SpdxExpression.Strictness
 
 val githubUsername: String by project
 val githubToken: String by project
@@ -165,10 +166,14 @@ tasks.register("verifyPackageCurations") {
                                 "to '${curation.data.concludedLicense}'."
                     }
 
-                    if (curation.data.declaredLicenseMapping.isNotEmpty()) {
-                        issues += "Curating declared licenses is not allowed, but the curation for package " +
-                                "'${curation.id.toCoordinates()}' in file '$relativePath' sets the declared license " +
-                                "mapping to '${curation.data.declaredLicenseMapping}'."
+                    curation.data.declaredLicenseMapping.forEach { (source, target) ->
+                        runCatching {
+                            target.validate(Strictness.ALLOW_CURRENT)
+                        }.onFailure {
+                            issues += "The declared license mapping for package '${curation.id.toCoordinates()}' in " +
+                                    "file '$relativePath' maps '$source' to '$target', but '$target' is not a valid " +
+                                    "SPDX license expression: ${it.message}"
+                        }
                     }
 
                     val expectedPath = curation.id.toCurationPath()

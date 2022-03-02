@@ -12,7 +12,9 @@ open source packages.
 
 Package curations submitted to this repository must adhere to the following rules:
 
-* Declaring authors, declared licenses, and concluded licenses is currently not allowed.
+* Declaring authors and concluded licenses is currently not allowed.
+* Declared license mappings must map licenses to valid SPDX expressions. The curation comment must provide proof that
+  the mapping is correct.
 * Curations that apply to whole namespaces by only setting the type and namespace of the identifier are not allowed.
 * The curation file path must be `curations/[type]/[namespace]/[name].yml`. If the namespace is empty, use "_". For
   example a curation for the package `NuGet::Azure.Core:1.2.0` must be in the file `curation/NuGet/_/Azure.Core.yml`.
