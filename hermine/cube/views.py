@@ -187,8 +187,22 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
 
 class ComponentList(LoginRequiredMixin, generic.ListView):
     model = Component
-    paginate_by = 50
+    paginate_by = 30
     ordering = ["name"]
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        raw_query = """SELECT cube_component.id,cube_component.name, count(*) AS popularity
+        FROM cube_component
+        LEFT JOIN cube_version ON cube_version.component_id =cube_component.id
+        LEFT JOIN cube_usage ON cube_usage.version_id = cube_version.id
+        GROUP BY cube_component.id
+        ORDER BY popularity DESC LIMIT 10"""
+        populars = Component.objects.raw(raw_query)
+        for popular in populars:
+            print(popular.popularity)
+        context["populars"] = populars
+        return context
 
 
 class ComponentView(LoginRequiredMixin, generic.DetailView):
