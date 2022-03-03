@@ -5,7 +5,7 @@
 
 from django.test import TestCase
 
-from cube.f_views import explode_SPDX_to_units
+from cube.utils.licenses import explode_SPDX_to_units
 
 
 class ExplodeSPDXReleaseViewTests(TestCase):

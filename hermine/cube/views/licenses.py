@@ -1,0 +1,296 @@
+# SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+import json
+
+from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, EmptyPage
+from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404, redirect
+from odf.opendocument import OpenDocumentText
+from odf.style import Style, TextProperties, ParagraphProperties
+from odf.text import H, P, Span
+
+from cube.forms import ImportLicensesForm, ImportGenericsForm
+from cube.models import License, Generic
+from cube.serializers import LicenseSerializer, GenericSerializer
+
+
+@login_required
+def licenses(request, page=1):
+    form = ImportLicensesForm(request.POST, request.FILES)
+    licenses = License.objects.all()
+    paginator = Paginator(licenses, 50)
+
+    try:
+        licenses = paginator.page(page)
+    except EmptyPage:
+        licenses = paginator.page(paginator.num_pages)
+
+    context = {"licenses": licenses, "form": form}
+    return render(request, "cube/license_list.html", context)
+
+
+@login_required
+def license(request, license_id):
+    context = {}
+    license = get_object_or_404(License, pk=license_id)
+    orphan_obligations = license.obligation_set.filter(generic__isnull=True)
+    generic_obligations = license.obligation_set.filter(
+        generic__in_core=False
+    ).order_by("generic__id")
+    core_obligations = license.obligation_set.filter(generic__in_core=True).order_by(
+        "generic__id"
+    )
+    form = ImportLicensesForm
+    if license.inspiration:
+        context.update({"inspiration": license.inspiration})
+    elif license.inspiration_spdx:
+        try:
+            inspiration = License.objects.get(spdx_id=license.inspiration_spdx)
+            context.update({"inspiration": inspiration})
+        except Exception:
+            print(
+                "Unable to find the inspiration in database", license.inspiration_spdx
+            )
+    context.update(
+        {
+            "license": license,
+            "orphan_obligations": orphan_obligations,
+            "obligations_in_generic": generic_obligations,
+            "obligations_in_core": core_obligations,
+            "form": form,
+        }
+    )
+    return render(request, "cube/license.html", context)
+
+
+def create_or_update_license(request, license):
+    try:
+        license_instance = License.objects.get(spdx_id=license["spdx_id"])
+    except License.DoesNotExist:
+        print("Instantiation of a new License: ", license["spdx_id"])
+        license_instance = License()
+        license_instance.save()
+    s = LicenseSerializer(license_instance, data=license)
+    s.is_valid(raise_exception=True)
+    print(s.errors)
+    s.save()
+
+
+def handle_licenses_file(request):
+    licenseFile = request.FILES["file"]
+    licenseArray = json.load(licenseFile)
+    # Handling case of a JSON that only contains one license and is not a list
+    # (single license purpose)
+    if type(licenseArray) is dict:
+        create_or_update_license(request, licenseArray)
+    # Handling case of a JSON that contains multiple licenses and is a list
+    # (multiple licenses purpose)
+    elif type(licenseArray) is list:
+        for license in licenseArray:
+            create_or_update_license(request, license)
+
+    else:
+        print("Type of JSON neither is a list nor a dict")
+
+
+# def export_licenses(request):
+#     """An export function that uses the License Serializer on all the licenses.
+#     Effective, but using the the other one which calls the API might allow to handle
+#     specific cases such as access restrictions
+#     """
+#     filename = "licenses.json"
+#     serializer = LicenseSerializer
+#     data = serializer(License.objects.all(), many=True).data
+#     with open(filename, "w+"):
+#         response = HttpResponse(
+#             json.dumps(data, indent=4), content_type="application/json"
+#         )
+#         response["Content-Disposition"] = "attachment; filename=%s" % filename
+#         return response
+
+
+def print_license(request, license_id):
+    license_instance = get_object_or_404(License, pk=license_id)
+    filename = license_instance.spdx_id + ".odt"
+    with open(filename, "w+"):
+        response = HttpResponse(content_type="application/vnd.oasis.opendocument.text")
+        response["Content-Disposition"] = "attachment; filename=%s" % filename
+
+        textdoc = OpenDocumentText()
+        s = textdoc.styles
+
+        h1style = Style(name="Heading 1", family="paragraph")
+        h1style.addElement(
+            TextProperties(attributes={"fontsize": "24pt", "fontweight": "bold"})
+        )
+        s.addElement(h1style)
+        h1style.addElement(ParagraphProperties(attributes={"marginbottom": "1cm"}))
+        h2style = Style(name="Heading 2", family="paragraph")
+        h2style.addElement(
+            TextProperties(attributes={"fontsize": "18pt", "fontweight": "bold"})
+        )
+        h2style.addElement(
+            ParagraphProperties(
+                attributes={"marginbottom": "0.6cm", "margintop": "0.4cm"}
+            )
+        )
+        s.addElement(h2style)
+
+        h3style = Style(name="Heading 3", family="paragraph")
+        h3style.addElement(
+            TextProperties(attributes={"fontsize": "14pt", "fontweight": "bold"})
+        )
+        h3style.addElement(
+            ParagraphProperties(
+                attributes={"marginbottom": "0.2cm", "margintop": "0.4cm"}
+            )
+        )
+
+        s.addElement(h3style)
+
+        itstyle = Style(name="Italic", family="paragraph")
+        itstyle.addElement(TextProperties(attributes={"textemphasize": "true"}))
+        itstyle.addElement(ParagraphProperties(attributes={"margintop": "3cm"}))
+
+        s.addElement(itstyle)
+
+        # An automatic style
+        boldstyle = Style(name="Bold", family="text")
+        boldprop = TextProperties(fontweight="bold")
+        boldstyle.addElement(boldprop)
+        textdoc.automaticstyles.addElement(boldstyle)
+
+        textdoc.automaticstyles.addElement(itstyle)
+
+        # Text
+        h = H(outlinelevel=1, stylename=h1style, text=license_instance.long_name)
+        textdoc.text.addElement(h)
+        h = H(outlinelevel=1, stylename=h2style, text=license_instance.spdx_id)
+        textdoc.text.addElement(h)
+
+        p = P(text="Validation Color: ")
+        v = Span(stylename=boldstyle, text=license_instance.color)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        if license_instance.color_explanation is not None:
+            p = P(text="Explanation: ")
+            v = Span(stylename=boldstyle, text=license_instance.color_explanation)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+
+        p = P(text="Copyleft: ")
+        v = Span(stylename=boldstyle, text=license_instance.copyleft)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        p = P(text="Considered as Free Open Source Sofware: ")
+        v = Span(stylename=boldstyle, text=license_instance.foss)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        p = P(text="Approved by OSI: ")
+        v = Span(stylename=boldstyle, text=license_instance.osi_approved)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        p = P(text="Has an ethical clause: ")
+        v = Span(stylename=boldstyle, text=license_instance.ethical_clause)
+        p.addElement(v)
+        textdoc.text.addElement(p)
+
+        if license_instance.verbatim:
+            p = P(text="Verbatim: ")
+            value = Span(text=license_instance.verbatim)
+            p.addElement(value)
+            textdoc.text.addElement(p)
+
+        if license_instance.comment:
+            p = P(text="Comment: ")
+            value = Span(stylename=boldstyle, text=license_instance.comment)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+
+        h = H(outlinelevel=1, stylename=h2style, text="List of identified obligations")
+        textdoc.text.addElement(h)
+
+        for o in license_instance.obligation_set.all():
+            h = H(outlinelevel=1, stylename=h3style, text=o.name)
+            textdoc.text.addElement(h)
+
+            if generic:
+                p = P(text="Related Generic Obligation: ")
+                v = Span(stylename=boldstyle, text=generic)
+                p.addElement(v)
+                textdoc.text.addElement(p)
+
+            p = P(text="Passivity: ")
+            v = Span(stylename=boldstyle, text=o.passivity)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+
+            p = P(text="Mode of exploitation that triggers this obligation: ")
+            v = Span(stylename=boldstyle, text=o.trigger_expl)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+
+            p = P(text="Status of modification that triggers this obligation: ")
+            v = Span(stylename=boldstyle, text=o.trigger_mdf)
+            p.addElement(v)
+            textdoc.text.addElement(p)
+
+            if o.verbatim:
+                p = P(text="Verbatim of the obligation: ")
+                v = Span(text=o.verbatim)
+                p.addElement(v)
+                textdoc.text.addElement(p)
+
+        p = P(
+            stylename=itstyle,
+            text="This license interpretation was exported from a Hermine project."
+            + " https://hermine-foss.org/.",
+        )
+        textdoc.text.addElement(p)
+
+        textdoc.save(response)
+
+        return response
+    return redirect("cube:license", license_id)
+
+
+def handle_generics_file(request):
+    genericsFile = request.FILES["file"]
+    genericsArray = json.load(genericsFile)
+    for generic in genericsArray:
+        try:
+            g = Generic.objects.get(pk=generic["pk"])
+        except Generic.DoesNotExist:
+            print("instantiation of a new Generic object with pk = ", generic["pk"])
+            g = Generic(generic["pk"])
+        s = GenericSerializer(g, data=generic["fields"], partial=True)
+        s.is_valid(raise_exception=True)
+        s.save()
+
+
+@login_required
+def generics(request):
+    form = ImportGenericsForm(request.POST, request.FILES)
+    generics_incore = Generic.objects.filter(in_core=True)
+    generics_outcore = Generic.objects.filter(in_core=False)
+    context = {
+        "generics_incore": generics_incore,
+        "generics_outcore": generics_outcore,
+        "form": form,
+    }
+    return render(request, "cube/generic_list.html", context)
+
+
+@login_required
+def generic(request, generic_id):
+    generic = get_object_or_404(Generic, pk=generic_id)
+    context = {"generic": generic}
+    return render(request, "cube/generic.html", context)

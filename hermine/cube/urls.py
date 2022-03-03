@@ -7,29 +7,29 @@ from django.urls import path
 from rest_framework_nested import routers
 from rest_framework.authtoken import views as authviews
 
-from . import views, api_views, f_views
+from . import views, api_views
 
 app_name = "cube"
 urlpatterns = [
-    path("", f_views.index, name="racine"),
-    path("license/<int:license_id>", f_views.license, name="license"),
+    path("", views.index, name="racine"),
+    path("license/<int:license_id>", views.license, name="license"),
     path(
         "license/<int:license_id>/export/",
-        f_views.export_specific_license,
+        views.export_specific_license,
         name="export_license",
     ),
     path(
         "license/<int:license_id>/print/",
-        f_views.print_license,
+        views.print_license,
         name="print_license",
     ),
-    path("generics", f_views.generics, name="generics"),
-    path("generic/<int:generic_id>", f_views.generic, name="generic"),
-    path("export/licenses", f_views.export_licenses, name="export_licenses"),
-    path("export/generics", f_views.export_generics, name="export_generics"),
-    path("import/generics", f_views.upload_generics_file, name="import_generics"),
-    path("import/licenses", f_views.upload_licenses_file, name="import_licenses"),
-    path("import/bom", f_views.import_bom, name="import_bom"),
+    path("generics", views.generics, name="generics"),
+    path("generic/<int:generic_id>", views.generic, name="generic"),
+    path("export/licenses", views.export_licenses, name="export_licenses"),
+    path("export/generics", views.export_generics, name="export_generics"),
+    path("import/generics", views.upload_generics_file, name="import_generics"),
+    path("import/licenses", views.upload_licenses_file, name="import_licenses"),
+    path("import/bom", views.import_bom, name="import_bom"),
     path("products", views.ProductListView.as_view(), name="products"),
     path("release/<int:pk>", views.ReleaseView.as_view(), name="release_synthesis"),
     path("release/<int:pk>/bom", views.ReleaseBomView.as_view(), name="bom"),
@@ -38,50 +38,52 @@ urlpatterns = [
     ),
     path(
         "release/<int:release_id>/obligations/<int:generic_id>",
-        f_views.release_generic,
+        views.release_generic,
         name="release_generic",
     ),
     path(
         "release/<int:release_id>/derogation/<int:usage_id>/",
-        f_views.release_add_derogation,
+        views.release_add_derogation,
         name="release_add_derogation",
     ),
     path(
         "release/<int:release_id>/send_derogation/<int:usage_id>/",
-        f_views.release_send_derogation,
+        views.release_send_derogation,
         name="release_send_derogation",
     ),
     path(
         "release/<int:release_id>/choice/<int:usage_id>/",
-        f_views.release_add_choice,
+        views.release_add_choice,
         name="release_add_choice",
     ),
     path(
         "release/<int:release_id>/send_choice/<int:usage_id>/",
-        f_views.release_send_choice,
+        views.release_send_choice,
         name="release_send_choice",
     ),
     path(
         "release/<int:release_id>/exploitation",
-        f_views.release_exploitation,
+        views.release_exploitation,
         name="release_exploitation",
     ),
     path(
         "release/<int:release_id>/send_exploitation",
-        f_views.release_send_exploitation,
+        views.release_send_exploitation,
         name="release_send_exploitation",
     ),
-    path("licenses/<int:page>/", f_views.licenses, name="licenses"),
+    path("licenses/<int:page>/", views.licenses, name="licenses"),
     path("component/<int:pk>", views.ComponentView.as_view(), name="component"),
     path("components", views.ComponentList.as_view(), name="components"),
     path(
         "propagate_choices/<int:release_id>",
-        f_views.propagate_choices,
+        views.propagate_choices,
         name="propagate_choices",
     ),
-    path("about", f_views.about, name="about"),
+    path("about", views.about, name="about"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
+
+# API urls
 
 router = routers.SimpleRouter()
 
