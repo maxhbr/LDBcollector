@@ -5,8 +5,6 @@
 
 import json
 
-import requests
-from django.conf import settings
 from django.core.serializers import serialize
 from django.core.serializers.json import DjangoJSONEncoder
 from django.http import HttpResponse
@@ -22,22 +20,13 @@ def export_licenses(request):
         license in a JSON Array.
     :rtype: DjangoHttpResponse
     """
-    request_uri = settings.API_BASE_URL + "licenses/?format=json"
     filename = "licenses.json"
-    with open(filename, "w+"):
-        r = requests.get(request_uri)
-        json_r = r.json()
-        licenseJSONArray = json_r["results"]
-        while json_r["next"]:
-            r = requests.get(json_r["next"])
-            json_r = r.json()
-            for license in json_r["results"]:
-                licenseJSONArray.append(license)
-        response = HttpResponse(
-            json.dumps(licenseJSONArray, indent=4), content_type="application/json"
-        )
-        response["Content-Disposition"] = "attachment; filename=%s" % filename
-        return response
+    serializer = LicenseSerializer(License.objects.all(), many=True)
+    response = HttpResponse(
+        json.dumps(serializer.data, indent=4), content_type="application/json"
+    )
+    response["Content-Disposition"] = "attachment; filename=%s" % filename
+    return response
 
 
 def export_specific_license(request, license_id):
