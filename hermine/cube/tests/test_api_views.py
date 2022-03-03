@@ -263,7 +263,4 @@ class APILicenseTests(APITestCase):
 
     def test_steps(self):
         for name, step in self._steps():
-            try:
-                step()
-            except Exception as e:
-                self.fail("{} failed ({}: {})".format(step, type(e), e))
+            step()
