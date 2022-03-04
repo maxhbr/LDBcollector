@@ -98,7 +98,7 @@ if __name__ == "__main__":
 
     cwd = os.getcwd()
     outdir = sys.argv[2]
-    badrows = os.path.join(cwd, "bad.tsv")
+    badrows = os.path.join(cwd, "errors.tsv")
 
     f = open(os.path.realpath(sys.argv[1]), newline='')
     csvdata = csv.reader(f, delimiter='\t')
@@ -122,13 +122,12 @@ if __name__ == "__main__":
         #     0 Fedora Full Name
         #     1 Fedora Short Name
         #     2 SPDX Short Identifier
-        #     3 <empty column>
-        #     4 On SPDX list?
-        #     5 SPDX-Fedora identifiers compare?
-        #     6 1:1 replaceable?
-        #     7 Notes (2021)
-        #     8 Fedora license URL
-        #     9 Notes on license (old)
+        #     3 On SPDX list?
+        #     4 SPDX-Fedora identifiers compare?
+        #     5 1:1 replaceable?
+        #     6 Notes (2021)
+        #     7 Fedora license URL
+        #     8 Notes on license (old)
 
         # get the fedora name
         if len(row) >= 1:
@@ -143,31 +142,31 @@ if __name__ == "__main__":
             spdx_expression = row[2]
 
         # collect notes
-        if len(row) >= 8 and row[7] != "":
-            notes = row[7]
-        if len(row) >= 10 and row[9] != "":
+        if len(row) >= 7 and row[6] != "":
+            notes = row[6]
+        if len(row) >= 9 and row[8] != "":
             if notes == "":
-                notes = row[9]
+                notes = row[8]
             else:
-                notes += " " + row[9]
+                notes += "\n\n" + row[8]
 
         # collect text (url)
-        if len(row) >= 9 and row[8] != "":
-            text = row[8]
+        if len(row) >= 8 and row[7] != "":
+            text = row[7]
 
         # process
         if spdx_expression == "":
-            print("unable to convert line %d (missing SPDX expression), writing to bad.tsv" % line)
+            print("unable to convert line %d (missing SPDX expression), writing to errors.tsv" % line)
             write_bad_row(badrows, row)
             line += 1
             continue
         elif spdx_expression.find("<") != -1 or spdx_expression.find(">") != -1:
-            print("unable to convert line %d (<> found in field), writing to bad.tsv" % line)
+            print("unable to convert line %d (<> found in field), writing to errors.tsv" % line)
             write_bad_row(badrows, row)
             line += 1
             continue
         elif spdx_expression.find("...") != -1:
-            print("unable to convert line %d (... found in field), writing to bad.tsv" % line)
+            print("unable to convert line %d (... found in field), writing to errors.tsv" % line)
             write_bad_row(badrows, row)
             line += 1
             continue
