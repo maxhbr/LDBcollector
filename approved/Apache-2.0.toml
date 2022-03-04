@@ -3,6 +3,10 @@
 expression = "Apache-2.0"
 status = "approved"
 
+text = '''
+http://www.apache.org/licenses/LICENSE-2.0
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "ASL 2.0"
 ]
-
-notes = '''
-http://www.apache.org/licenses/LICENSE-2.0
-'''

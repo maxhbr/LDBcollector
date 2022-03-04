@@ -4,8 +4,7 @@ expression = "Condor-1.1"
 status = "approved"
 
 text = '''
-The URL provided by Fedora does not point to any license.  SPDX short identifier
-adds version #
+http://www.cs.wisc.edu/condor/condor-public-license.html
 '''
 
 [fedora]
@@ -19,5 +18,7 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.cs.wisc.edu/condor/condor-public-license.html
+URL has been updated to show Apache-2.0 (SPDX has original text)  The URL
+provided by Fedora does not point to any license.  SPDX short identifier adds
+version #
 '''

@@ -3,6 +3,10 @@
 expression = "IPL-1.0"
 status = "approved"
 
+text = '''
+http://www.opensource.org/licenses/ibmpl.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "IBM"
 ]
-
-notes = '''
-http://www.opensource.org/licenses/ibmpl.php
-'''

@@ -4,7 +4,7 @@ expression = "CECILL-C"
 status = "approved"
 
 text = '''
-SPDX List also has CECILL-1.0
+http://www.cecill.info/licences.en.html
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.cecill.info/licences.en.html
+SPDX List also has CECILL-1.0
 '''

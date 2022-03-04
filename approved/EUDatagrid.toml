@@ -3,6 +3,10 @@
 expression = "EUDatagrid"
 status = "approved"
 
+text = '''
+http://www.opensource.org/licenses/eudatagrid.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "EU Datagrid"
 ]
-
-notes = '''
-http://www.opensource.org/licenses/eudatagrid.php
-'''

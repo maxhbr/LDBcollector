@@ -3,6 +3,10 @@
 expression = "AGPL-3.0-or-later"
 status = "approved"
 
+text = '''
+http://www.fsf.org/licensing/licenses/agpl-3.0.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "AGPLv3+"
 ]
-
-notes = '''
-http://www.fsf.org/licensing/licenses/agpl-3.0.html
-'''

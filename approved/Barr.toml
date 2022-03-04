@@ -4,8 +4,7 @@ expression = "Barr"
 status = "approved"
 
 text = '''
-Shows up here: http://stuff.mit.edu/afs/athena/system/i386_deb50/os-
-ubuntu-9.04/usr/share/texmf-texlive/tex/latex/barr/diagxy.tex
+https://fedoraproject.org/wiki/Licensing/Barr
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Barr
+Shows up here: http://stuff.mit.edu/afs/athena/system/i386_deb50/os-
+ubuntu-9.04/usr/share/texmf-texlive/tex/latex/barr/diagxy.tex
 '''

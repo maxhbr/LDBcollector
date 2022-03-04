@@ -3,6 +3,10 @@
 expression = "Sleepycat"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/Sleepycat
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Sleepycat"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/Sleepycat
-'''

@@ -3,6 +3,10 @@
 expression = "MITNFA"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/MITNFA
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "MITNFA"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/MITNFA
-'''

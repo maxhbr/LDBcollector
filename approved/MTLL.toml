@@ -4,7 +4,7 @@ expression = "MTLL"
 status = "approved"
 
 text = '''
-Single package license. Apache-1.1-like
+https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License
+Single package license. Apache-1.1-like
 '''

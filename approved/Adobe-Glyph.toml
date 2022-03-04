@@ -4,7 +4,7 @@ expression = "Adobe-Glyph"
 status = "approved"
 
 text = '''
-MIT variant; Fedora does not use distinct short identifier
+https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
+MIT variant; Fedora does not use distinct short identifier
 '''

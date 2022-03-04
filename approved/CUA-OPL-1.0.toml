@@ -4,7 +4,7 @@ expression = "CUA-OPL-1.0"
 status = "approved"
 
 text = '''
-Fedora uses short identifier, "MPLv1.1"
+http://opensource.org/licenses/cuaoffice.php
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://opensource.org/licenses/cuaoffice.php
+Fedora uses short identifier, "MPLv1.1"
 '''

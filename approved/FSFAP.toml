@@ -3,6 +3,10 @@
 expression = "FSFAP"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/FSFAP
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "FSFAP"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/FSFAP
-'''

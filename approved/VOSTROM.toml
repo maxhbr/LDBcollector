@@ -3,6 +3,10 @@
 expression = "VOSTROM"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/VOSTROM
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "VOSTROM"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/VOSTROM
-'''

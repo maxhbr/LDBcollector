@@ -3,6 +3,10 @@
 expression = "OLDAP-2.8"
 status = "approved"
 
+text = '''
+http://www.openldap.org/software/release/license.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "OpenLDAP"
 ]
-
-notes = '''
-http://www.openldap.org/software/release/license.html
-'''

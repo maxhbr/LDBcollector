@@ -4,8 +4,7 @@ expression = "LicenseRef-Rsfs"
 status = "approved"
 
 text = '''
-this text is part of a longer letter and so is making a call of what is the
-license to begin with - see: http://mirror.utexas.edu/ctan/fonts/rsfs/README
+https://fedoraproject.org/wiki/Licensing/Rsfs
 '''
 
 [fedora]
@@ -19,5 +18,7 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Rsfs
+not found in Fedora currently, don't add to SPDX  this text is part of a longer
+letter and so is making a call of what is the license to begin with - see:
+http://mirror.utexas.edu/ctan/fonts/rsfs/README
 '''

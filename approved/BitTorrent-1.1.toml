@@ -4,7 +4,7 @@ expression = "BitTorrent-1.1"
 status = "approved"
 
 text = '''
-SPDX List also has BitTorrent-1.0
+https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License
 '''
 
 [fedora]
@@ -18,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License
+not found in Fedora currently, as it turns out  SPDX List also has
+BitTorrent-1.0
 '''

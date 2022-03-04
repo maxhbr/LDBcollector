@@ -3,6 +3,10 @@
 expression = "0BSD"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/ZeroClauseBSD
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "0BSD"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/ZeroClauseBSD
-'''

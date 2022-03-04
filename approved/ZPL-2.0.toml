@@ -3,6 +3,10 @@
 expression = "ZPL-2.0"
 status = "approved"
 
+text = '''
+http://www.zope.org/Resources/ZPL
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "ZPLv2.0"
 ]
-
-notes = '''
-http://www.zope.org/Resources/ZPL
-'''

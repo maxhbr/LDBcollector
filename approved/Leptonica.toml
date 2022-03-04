@@ -4,7 +4,7 @@ expression = "Leptonica"
 status = "approved"
 
 text = '''
-BSD like.  Official license site http://www.leptonica.com/about-the-license.html
+https://fedoraproject.org/wiki/Licensing/Leptonica
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Leptonica
+BSD like.  Official license site http://www.leptonica.com/about-the-license.html
 '''

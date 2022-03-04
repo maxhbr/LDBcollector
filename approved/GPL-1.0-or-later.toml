@@ -4,7 +4,11 @@ expression = "GPL-1.0-or-later"
 status = "approved"
 
 text = '''
-No version GPL
+A GPL or LGPL licensed package that lacks any statement of what version that
+it's licensed under in the source code/program output/accompanying docs is
+technically licensed under *any* version of the GPL or LGPL, not just the
+version in whatever COPYING file they include.  Note that this is not GPLv1+,
+because 1+ is the same as any version.
 '''
 
 [fedora]
@@ -19,9 +23,5 @@ abbreviation = [
 ]
 
 notes = '''
-A GPL or LGPL licensed package that lacks any statement of what version that
-it's licensed under in the source code/program output/accompanying docs is
-technically licensed under *any* version of the GPL or LGPL, not just the
-version in whatever COPYING file they include.  Note that this is not GPLv1+,
-because 1+ is the same as any version.
+No version GPL
 '''

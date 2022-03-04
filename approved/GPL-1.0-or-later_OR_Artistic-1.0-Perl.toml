@@ -4,8 +4,7 @@ expression = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 status = "approved"
 
 text = '''
-this would be covered by using the short identifiers for each licnese choice
-with the "OR" operator
+http://dev.perl.org/licenses/
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-http://dev.perl.org/licenses/
+this would be covered by using the short identifiers for each licnese choice
+with the "OR" operator
 '''

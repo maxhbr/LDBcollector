@@ -4,8 +4,7 @@ expression = "LicenseRef-VNLSL"
 status = "approved"
 
 text = '''
-no current copy of license elsewhere and seems old and very specific so not
-adding
+https://fedoraproject.org/wiki/Licensing/Vita_Nuova_Liberal_Source_License
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Vita_Nuova_Liberal_Source_License
+not found in Fedora currently, don't add to SPDX  no current copy of license
+elsewhere and seems old and very specific so not adding
 '''

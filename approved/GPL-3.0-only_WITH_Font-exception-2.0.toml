@@ -3,6 +3,10 @@
 expression = "GPL-3.0-only WITH Font-exception-2.0"
 status = "approved"
 
+text = '''
+http://www.gnu.org/licenses/gpl-faq.html#FontException
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "GPLv3 with exceptions"
 ]
-
-notes = '''
-http://www.gnu.org/licenses/gpl-faq.html#FontException
-'''

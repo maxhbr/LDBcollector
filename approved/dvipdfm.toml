@@ -4,7 +4,7 @@ expression = "dvipdfm"
 status = "approved"
 
 text = '''
-Permissive license. May be a one time license
+https://fedoraproject.org/wiki/Licensing/dvipdfm
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/dvipdfm
+Permissive license. May be a one time license
 '''

@@ -3,6 +3,10 @@
 expression = "Zed"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/Zed
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Zed"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/Zed
-'''

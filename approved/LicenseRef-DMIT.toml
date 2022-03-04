@@ -4,7 +4,7 @@ expression = "LicenseRef-DMIT"
 status = "approved"
 
 text = '''
-looks to be used by docbook project?
+https://fedoraproject.org/wiki/Licensing/DMIT
 '''
 
 [fedora]
@@ -18,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/DMIT
+not found in Fedora currently, don't add to SPDX  looks to be used by docbook
+project?
 '''

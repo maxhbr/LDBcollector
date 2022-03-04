@@ -4,7 +4,7 @@ expression = "MakeIndex"
 status = "approved"
 
 text = '''
-Strong Copyleft.
+https://fedoraproject.org/wiki/Licensing/MakeIndex
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/MakeIndex
+Strong Copyleft.
 '''

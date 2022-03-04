@@ -4,7 +4,7 @@ expression = "LicenseRef-Lhcyr"
 status = "approved"
 
 text = '''
-Permissive license.    old, not worth adding
+https://fedoraproject.org/wiki/Licensing/Lhcyr
 '''
 
 [fedora]
@@ -18,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Lhcyr
+not found in Fedora currently, don't add to SPDX  Permissive license.    old,
+not worth adding
 '''

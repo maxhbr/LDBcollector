@@ -4,7 +4,7 @@ expression = "SGI-B-2.0"
 status = "approved"
 
 text = '''
-Fedora uses short name, "MIT"
+http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf
+Fedora uses short name, "MIT"
 '''

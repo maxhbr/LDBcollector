@@ -4,8 +4,7 @@ expression = "eGenix"
 status = "approved"
 
 text = '''
-Based on CNRI license and may be for one project. Official license site
-http://www.egenix.com/products/eGenix.com-Public-License-1.1.0.pdf
+https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0
+Based on CNRI license and may be for one project. Official license site
+http://www.egenix.com/products/eGenix.com-Public-License-1.1.0.pdf
 '''

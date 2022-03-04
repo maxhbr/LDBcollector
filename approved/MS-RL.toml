@@ -3,6 +3,10 @@
 expression = "MS-RL"
 status = "approved"
 
+text = '''
+http://www.microsoft.com/opensource/licenses.mspx#Ms-RL
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "MS-RL"
 ]
-
-notes = '''
-http://www.microsoft.com/opensource/licenses.mspx#Ms-RL
-'''

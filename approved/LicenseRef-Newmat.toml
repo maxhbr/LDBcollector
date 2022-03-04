@@ -3,6 +3,10 @@
 expression = "LicenseRef-Newmat"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/Newmat_License
+'''
+
 [fedora]
 
 name = [
@@ -14,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Newmat_License
+not found in Fedora currently, don't add to SPDX
 '''

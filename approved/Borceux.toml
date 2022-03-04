@@ -4,7 +4,7 @@ expression = "Borceux"
 status = "approved"
 
 text = '''
-Permissive license. May be single package license.
+https://fedoraproject.org/wiki/Licensing/Borceux
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Borceux
+Permissive license. May be single package license.
 '''

@@ -4,8 +4,7 @@ expression = "Zend-2.0"
 status = "approved"
 
 text = '''
-Currently identified by fossology as "Zend-2.0", which is consistent with SPDX
-naming scheme
+http://www.zend.com/license/2_00.txt
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.zend.com/license/2_00.txt
+Currently identified by fossology as "Zend-2.0", which is consistent with SPDX
+naming scheme
 '''

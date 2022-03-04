@@ -4,7 +4,7 @@ expression = "TOSL"
 status = "approved"
 
 text = '''
-per Fedora, sleepycat like but one substantial difference
+https://fedoraproject.org/wiki/Licensing/TOSL
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/TOSL
+per Fedora, sleepycat like but one substantial difference
 '''

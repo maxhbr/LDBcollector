@@ -3,6 +3,10 @@
 expression = "Newsletr"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/Newsletr
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Newsletr"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/Newsletr
-'''

@@ -4,13 +4,7 @@ expression = "LicenseRef-ZPLv1.0"
 status = "approved"
 
 text = '''
-There is no link to version 1.0 of the license on
-http://old.zope.org/Resources/License/ eventhough this version is mentioned. The
-link http://www.zope.org/Resources/ZPL now gives a 404ish "Die Seite existiert
-leider nicht…" fine to add if someone can find a version of the license text; it
-is listed here: http://old.zope.org/Resources/License/ (as well as other older
-licenses) but no active link) Reject (old licensethat has been replaced at least
-3 times since 1.0 and can't find copy of old license)"
+http://www.zope.org/Resources/ZPL
 '''
 
 [fedora]
@@ -24,5 +18,12 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.zope.org/Resources/ZPL
+not found in Fedora currently, don't add to SPDX  There is no link to version
+1.0 of the license on http://old.zope.org/Resources/License/ eventhough this
+version is mentioned. The link http://www.zope.org/Resources/ZPL now gives a
+404ish "Die Seite existiert leider nicht…" fine to add if someone can find a
+version of the license text; it is listed here:
+http://old.zope.org/Resources/License/ (as well as other older licenses) but no
+active link) Reject (old licensethat has been replaced at least 3 times since
+1.0 and can't find copy of old license)"
 '''

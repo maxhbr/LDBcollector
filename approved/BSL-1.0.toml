@@ -3,6 +3,11 @@
 expression = "BSL-1.0"
 status = "approved"
 
+text = '''
+http://www.boost.org/LICENSE_1_0.txt
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Thrift_variant
+'''
+
 [fedora]
 
 name = [
@@ -16,6 +21,6 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.boost.org/LICENSE_1_0.txt
-https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Thrift_variant
+Fedora has same license text using two different Fedora ids: "Boost" and "MIT"
+Fedora has same license text using two different Fedora ids: "Boost" and "MIT"
 '''

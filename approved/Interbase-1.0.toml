@@ -4,8 +4,7 @@ expression = "Interbase-1.0"
 status = "approved"
 
 text = '''
-Fedora link does not provide license text:
-http://www.borland.com/devsupport/interbase/opensource/IPL.html
+http://www.firebirdsql.org/en/interbase-public-license/
 '''
 
 [fedora]
@@ -19,5 +18,7 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.firebirdsql.org/en/interbase-public-license/
+Fedora to update link to license to: http://www.firebirdsql.org/en/interbase-
+public-license/  Fedora link does not provide license text:
+http://www.borland.com/devsupport/interbase/opensource/IPL.html
 '''

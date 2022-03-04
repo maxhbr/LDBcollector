@@ -4,7 +4,7 @@ expression = "Latex2e"
 status = "approved"
 
 text = '''
-Copyleft license.
+https://fedoraproject.org/wiki/Licensing/Latex2e
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Latex2e
+Copyleft license.
 '''

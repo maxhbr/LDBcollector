@@ -4,9 +4,7 @@ expression = "MIT-enna"
 status = "approved"
 
 text = '''
-MIT variant  COPYING.PLAIN text referenced in the license can be found here
-http://git.enlightenment.org/enlightenment/modules/forecasts.git/plain/COPYING-
-PLAIN
+https://fedoraproject.org/wiki/Licensing/MIT#enna
 '''
 
 [fedora]
@@ -20,5 +18,7 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/MIT#enna
+MIT variant  COPYING.PLAIN text referenced in the license can be found here
+http://git.enlightenment.org/enlightenment/modules/forecasts.git/plain/COPYING-
+PLAIN
 '''

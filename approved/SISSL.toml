@@ -3,6 +3,10 @@
 expression = "SISSL"
 status = "approved"
 
+text = '''
+http://www.openoffice.org/licenses/sissl_license.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "SISSL"
 ]
-
-notes = '''
-http://www.openoffice.org/licenses/sissl_license.html
-'''

@@ -4,7 +4,7 @@ expression = "Eurosym"
 status = "approved"
 
 text = '''
-Copyleft license. German law applies
+https://fedoraproject.org/wiki/Licensing/Eurosym
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Eurosym
+Copyleft license. German law applies
 '''

@@ -3,6 +3,10 @@
 expression = "Sendmail-8.23"
 status = "approved"
 
+text = '''
+http://www.sendmail.org/ftp/LICENSE
+'''
+
 [fedora]
 
 name = [
@@ -14,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.sendmail.org/ftp/LICENSE
+SPDX also has https://spdx.org/licenses/Sendmail.html text on link Fedora has
+goes to "8.23" version
 '''

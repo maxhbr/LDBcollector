@@ -4,7 +4,7 @@ expression = "BSD-2-Clause-FreeBSD"
 status = "approved"
 
 text = '''
-Fedora uses identifier, "BSD"
+https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD
+Fedora uses identifier, "BSD"
 '''

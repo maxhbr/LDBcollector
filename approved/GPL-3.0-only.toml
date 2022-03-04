@@ -3,6 +3,10 @@
 expression = "GPL-3.0-only"
 status = "approved"
 
+text = '''
+http://www.fsf.org/licensing/licenses/gpl.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "GPLv3"
 ]
-
-notes = '''
-http://www.fsf.org/licensing/licenses/gpl.html
-'''

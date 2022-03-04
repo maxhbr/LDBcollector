@@ -3,6 +3,10 @@
 expression = "Imlib2"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/Imlib2
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Imlib2"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/Imlib2
-'''

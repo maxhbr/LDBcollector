@@ -3,6 +3,10 @@
 expression = "OSL-1-1"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing:OSL1.1?rd=Licensing/OSL1.1
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "OSL 1.0"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing:OSL1.1?rd=Licensing/OSL1.1
-'''

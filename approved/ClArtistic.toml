@@ -3,6 +3,10 @@
 expression = "ClArtistic"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/ArtisticClarified
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Artistic clarified"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/ArtisticClarified
-'''

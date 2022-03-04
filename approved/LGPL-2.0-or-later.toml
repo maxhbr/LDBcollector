@@ -4,7 +4,7 @@ expression = "LGPL-2.0-or-later"
 status = "approved"
 
 text = '''
-This is LGPL-2.0+
+http://creativecommons.org/choose/cc-lgpl
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://creativecommons.org/choose/cc-lgpl
+This is LGPL-2.0+
 '''

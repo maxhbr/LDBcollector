@@ -3,6 +3,10 @@
 expression = "LicenseRef-CPM"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/CPM
+'''
+
 [fedora]
 
 name = [
@@ -14,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/CPM
+not found in Fedora currently, don't add to SPDX
 '''

@@ -3,6 +3,10 @@
 expression = "OpenSSL"
 status = "approved"
 
+text = '''
+http://www.sdisw.com/openssl.htm
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "OpenSSL"
 ]
-
-notes = '''
-http://www.sdisw.com/openssl.htm
-'''

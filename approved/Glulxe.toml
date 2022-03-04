@@ -4,7 +4,7 @@ expression = "Glulxe"
 status = "approved"
 
 text = '''
-Permissive license. May be one package license.
+https://fedoraproject.org/wiki/Licensing/Glulxe
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Glulxe
+Permissive license. May be one package license.
 '''

@@ -4,7 +4,7 @@ expression = "Giftware"
 status = "approved"
 
 text = '''
-Permissive license.  done - added Allegro 4; Allegro 5 is same as zlib
+http://www.talula.demon.co.uk/allegro/license.html
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.talula.demon.co.uk/allegro/license.html
+Permissive license.  done - added Allegro 4; Allegro 5 is same as zlib
 '''

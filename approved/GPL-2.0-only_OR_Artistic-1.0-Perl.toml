@@ -4,8 +4,7 @@ expression = "GPL-2.0-only OR Artistic-1.0-Perl"
 status = "approved"
 
 text = '''
-this would be covered by using the short identifiers for each licnese choice
-with the "OR" operator
+Some perl packages explicitly state GPLv2, only use this license for those cases
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-Some perl packages explicitly state GPLv2, only use this license for those cases
+this would be covered by using the short identifiers for each licnese choice
+with the "OR" operator
 '''

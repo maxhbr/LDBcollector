@@ -3,6 +3,10 @@
 expression = "Unicode-DFS-2015"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/Unicode
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Unicode"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/Unicode
-'''

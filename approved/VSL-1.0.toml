@@ -3,6 +3,10 @@
 expression = "VSL-1.0"
 status = "approved"
 
+text = '''
+http://opensource.org/licenses/vovidapl.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "VSL"
 ]
-
-notes = '''
-http://opensource.org/licenses/vovidapl.php
-'''

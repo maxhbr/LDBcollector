@@ -3,6 +3,10 @@
 expression = "EUPL-1.1"
 status = "approved"
 
+text = '''
+http://ec.europa.eu/idabc/en/document/7774.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "EUPL 1.1"
 ]
-
-notes = '''
-http://ec.europa.eu/idabc/en/document/7774.html
-'''

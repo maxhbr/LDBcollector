@@ -4,8 +4,7 @@ expression = "MIT-advertising"
 status = "approved"
 
 text = '''
-This license is identical to MIT-FEH (except for templatized copyright
-statement)
+https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising
+This license is identical to MIT-FEH (except for templatized copyright
+statement)
 '''

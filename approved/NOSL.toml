@@ -3,6 +3,10 @@
 expression = "NOSL"
 status = "approved"
 
+text = '''
+http://bits.netizen.com.au/licenses/NOSL/nosl.txt
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "NOSL"
 ]
-
-notes = '''
-http://bits.netizen.com.au/licenses/NOSL/nosl.txt
-'''

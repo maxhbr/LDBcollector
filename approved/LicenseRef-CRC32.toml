@@ -3,6 +3,10 @@
 expression = "LicenseRef-CRC32"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/CRC32
+'''
+
 [fedora]
 
 name = [
@@ -14,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/CRC32
+not found in Fedora currently, don't add to SPDX
 '''

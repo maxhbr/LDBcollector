@@ -4,10 +4,7 @@ expression = "LicenseRef-Romio"
 status = "approved"
 
 text = '''
-see current license here: https://www.open-mpi.org/community/license.php - it
-appears that license was changed to BSD-3-Clause, so rejecting, can always add
-later, if older versions are in wide-use Fedora link works now and has licene
-text.
+https://fedoraproject.org/wiki/Licensing/Romio_License
 '''
 
 [fedora]
@@ -21,5 +18,8 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Romio_License
+not found in Fedora currently, don't add to SPDX  see current license here:
+https://www.open-mpi.org/community/license.php - it appears that license was
+changed to BSD-3-Clause, so rejecting, can always add later, if older versions
+are in wide-use Fedora link works now and has licene text.
 '''

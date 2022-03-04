@@ -3,6 +3,10 @@
 expression = "ErlPL-1.1"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/ErlangPublicLicense
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "ERPL"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/ErlangPublicLicense
-'''

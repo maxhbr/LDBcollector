@@ -3,6 +3,10 @@
 expression = "Vim"
 status = "approved"
 
+text = '''
+http://vimdoc.sourceforge.net/htmldoc/uganda.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Vim"
 ]
-
-notes = '''
-http://vimdoc.sourceforge.net/htmldoc/uganda.html
-'''

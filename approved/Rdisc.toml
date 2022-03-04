@@ -3,6 +3,10 @@
 expression = "Rdisc"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/Rdisc_License
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Rdisc"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/Rdisc_License
-'''

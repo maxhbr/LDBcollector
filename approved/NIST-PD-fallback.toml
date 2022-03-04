@@ -3,6 +3,10 @@
 expression = "NIST-PD-fallback"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/NISTSL
+'''
+
 [fedora]
 
 name = [
@@ -14,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/NISTSL
+new license to Fedora.  SPDX version and in wild does not have superflous
+paragraph at beg and end as shows in Fedora license text page?
 '''

@@ -3,6 +3,10 @@
 expression = "Fair"
 status = "approved"
 
+text = '''
+http://opensource.org/licenses/fair.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Fair"
 ]
-
-notes = '''
-http://opensource.org/licenses/fair.php
-'''

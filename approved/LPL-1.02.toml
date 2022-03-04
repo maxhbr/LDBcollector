@@ -4,7 +4,7 @@ expression = "LPL-1.02"
 status = "approved"
 
 text = '''
-SPDX List also has LPL-1.0
+http://plan9.bell-labs.com/plan9dist/license.html
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://plan9.bell-labs.com/plan9dist/license.html
+SPDX List also has LPL-1.0
 '''

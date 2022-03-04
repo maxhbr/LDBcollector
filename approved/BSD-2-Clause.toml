@@ -4,8 +4,7 @@ expression = "BSD-2-Clause"
 status = "approved"
 
 text = '''
-short identifier issue - need to deal with for all BSD variants  Fedora uses
-identifier, "BSD"
+http://creativecommons.org/licenses/BSD/  http://www.cryptix.org/LICENSE.TXT
 '''
 
 [fedora]
@@ -20,5 +19,6 @@ abbreviation = [
 ]
 
 notes = '''
-http://creativecommons.org/licenses/BSD/  http://www.cryptix.org/LICENSE.TXT
+short identifier issue - need to deal with for all BSD variants  Fedora uses
+identifier, "BSD"
 '''

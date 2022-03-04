@@ -3,6 +3,10 @@
 expression = "Motosoto"
 status = "approved"
 
+text = '''
+http://opensource.org/licenses/motosoto.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Motosoto"
 ]
-
-notes = '''
-http://opensource.org/licenses/motosoto.php
-'''

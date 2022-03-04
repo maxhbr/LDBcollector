@@ -4,9 +4,7 @@ expression = "Glide"
 status = "approved"
 
 text = '''
-License is specific to 3dfx corporation and glide software. License text shows
-up in opensuse. See https://gitorious.org/opensuse/license_o_o/source/f0086a864b
-2322ce268931aeb45edbe2718fd2a6:licenses/3DFX-GPL.txt
+http://www.users.on.net/~triforce/glidexp/COPYING.txt
 '''
 
 [fedora]
@@ -20,5 +18,7 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.users.on.net/~triforce/glidexp/COPYING.txt
+License is specific to 3dfx corporation and glide software. License text shows
+up in opensuse. See https://gitorious.org/opensuse/license_o_o/source/f0086a864b
+2322ce268931aeb45edbe2718fd2a6:licenses/3DFX-GPL.txt
 '''

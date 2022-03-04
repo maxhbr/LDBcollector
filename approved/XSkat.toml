@@ -3,6 +3,10 @@
 expression = "XSkat"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/XSkat_License
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "XSkat"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/XSkat_License
-'''

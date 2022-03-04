@@ -3,6 +3,10 @@
 expression = "AAL"
 status = "approved"
 
+text = '''
+http://opensource.org/licenses/attribution.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "AAL"
 ]
-
-notes = '''
-http://opensource.org/licenses/attribution.php
-'''

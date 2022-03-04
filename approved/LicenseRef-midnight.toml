@@ -4,7 +4,7 @@ expression = "LicenseRef-midnight"
 status = "approved"
 
 text = '''
-FOSS license for single package
+https://fedoraproject.org/wiki/Licensing/midnight
 '''
 
 [fedora]
@@ -18,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/midnight
+not found in Fedora currently, don't add to SPDX  FOSS license for single
+package
 '''

@@ -3,6 +3,10 @@
 expression = "MirOS"
 status = "approved"
 
+text = '''
+http://mirbsd.de/MirOS-Licence
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "MirOS"
 ]
-
-notes = '''
-http://mirbsd.de/MirOS-Licence
-'''

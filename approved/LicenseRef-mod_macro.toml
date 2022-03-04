@@ -4,8 +4,7 @@ expression = "LicenseRef-mod_macro"
 status = "approved"
 
 text = '''
-link broken - is this it?  https://people.apache.org/~fabien/mod_macro/LICENSE
-also see https://fossies.org/linux/mod_macro/LICENSE
+http://www.cri.ensmp.fr/~coelho/mod_macro/mod_macro/LICENSE
 '''
 
 [fedora]
@@ -19,5 +18,7 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.cri.ensmp.fr/~coelho/mod_macro/mod_macro/LICENSE
+not found in Fedora currently, don't add to SPDX  link broken - is this it?
+https://people.apache.org/~fabien/mod_macro/LICENSE also see
+https://fossies.org/linux/mod_macro/LICENSE
 '''

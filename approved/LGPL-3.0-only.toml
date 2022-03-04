@@ -3,6 +3,10 @@
 expression = "LGPL-3.0-only"
 status = "approved"
 
+text = '''
+http://www.fsf.org/licensing/licenses/lgpl.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "LGPLv3"
 ]
-
-notes = '''
-http://www.fsf.org/licensing/licenses/lgpl.html
-'''

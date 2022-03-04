@@ -3,6 +3,10 @@
 expression = "OSL-2.0"
 status = "approved"
 
+text = '''
+http://www.nexb.com/license/LICENSE-OSL-2.0.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "OSL 2.0"
 ]
-
-notes = '''
-http://www.nexb.com/license/LICENSE-OSL-2.0.html
-'''

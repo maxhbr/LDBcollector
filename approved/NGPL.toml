@@ -3,6 +3,10 @@
 expression = "NGPL"
 status = "approved"
 
+text = '''
+http://opensource.org/licenses/nethack.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "NGPL"
 ]
-
-notes = '''
-http://opensource.org/licenses/nethack.php
-'''

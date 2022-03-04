@@ -4,7 +4,7 @@ expression = "DSDP"
 status = "approved"
 
 text = '''
-MIT like license.
+https://fedoraproject.org/wiki/Licensing/DSDP
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/DSDP
+MIT like license.
 '''

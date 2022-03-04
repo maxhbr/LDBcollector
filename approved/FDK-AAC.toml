@@ -3,6 +3,10 @@
 expression = "FDK-AAC"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/FDK-AAC
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "FDK-AAC"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/FDK-AAC
-'''

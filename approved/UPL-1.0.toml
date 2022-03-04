@@ -3,6 +3,10 @@
 expression = "UPL-1.0"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/UPL
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "UPL"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/UPL
-'''

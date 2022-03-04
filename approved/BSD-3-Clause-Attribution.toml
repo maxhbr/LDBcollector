@@ -4,8 +4,7 @@ expression = "BSD-3-Clause-Attribution"
 status = "approved"
 
 text = '''
-Did not find BSD with attribution on any of the URL links for BSD licenses (see
-Note at bottom of table).
+https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution
+Did not find BSD with attribution on any of the URL links for BSD licenses (see
+Note at bottom of table).
 '''

@@ -4,7 +4,7 @@ expression = "Xerox"
 status = "approved"
 
 text = '''
-Currently identified by fossology as "Xerox"
+https://fedoraproject.org/wiki/Licensing/Xerox
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Xerox
+Currently identified by fossology as "Xerox"
 '''

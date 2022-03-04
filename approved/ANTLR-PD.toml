@@ -3,6 +3,10 @@
 expression = "ANTLR-PD"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/ANTLR-PD
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "ANTLR-PD"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/ANTLR-PD
-'''

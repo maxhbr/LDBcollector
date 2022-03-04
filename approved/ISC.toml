@@ -3,6 +3,10 @@
 expression = "ISC"
 status = "approved"
 
+text = '''
+https://www.isc.org/software/license
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "ISC"
 ]
-
-notes = '''
-https://www.isc.org/software/license
-'''

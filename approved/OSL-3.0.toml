@@ -3,6 +3,10 @@
 expression = "OSL-3.0"
 status = "approved"
 
+text = '''
+http://opensource.org/licenses/osl-3.0.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "OSL 3.0"
 ]
-
-notes = '''
-http://opensource.org/licenses/osl-3.0.php
-'''

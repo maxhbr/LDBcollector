@@ -3,6 +3,10 @@
 expression = "CC0-1.0"
 status = "approved"
 
+text = '''
+http://creativecommons.org/publicdomain/zero/1.0/legalcode
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "CC0"
 ]
-
-notes = '''
-http://creativecommons.org/publicdomain/zero/1.0/legalcode
-'''

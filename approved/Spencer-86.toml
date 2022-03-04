@@ -4,8 +4,7 @@ expression = "Spencer-86"
 status = "approved"
 
 text = '''
-Fedora shows 2 different licenses on this page, SPDX includes them both, plus
-also a third variant from 99
+https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
+Fedora shows 2 different licenses on this page, SPDX includes them both, plus
+also a third variant from 99
 '''

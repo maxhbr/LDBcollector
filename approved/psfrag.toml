@@ -3,6 +3,10 @@
 expression = "psfrag"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/psfrag
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "psfrag"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/psfrag
-'''

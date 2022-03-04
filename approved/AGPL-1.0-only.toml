@@ -3,6 +3,10 @@
 expression = "AGPL-1.0-only"
 status = "approved"
 
+text = '''
+http://www.affero.org/oagpl.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "AGPLv1"
 ]
-
-notes = '''
-http://www.affero.org/oagpl.html
-'''

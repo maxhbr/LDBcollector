@@ -3,6 +3,10 @@
 expression = "WTFPL"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/WTFPL
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "WTFPL"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/WTFPL
-'''

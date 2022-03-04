@@ -3,6 +3,10 @@
 expression = "YPL-1.1"
 status = "approved"
 
+text = '''
+http://www.zimbra.com/license/yahoo_public_license_1.1.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "YPLv1.1"
 ]
-
-notes = '''
-http://www.zimbra.com/license/yahoo_public_license_1.1.html
-'''

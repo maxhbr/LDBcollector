@@ -4,11 +4,7 @@ expression = "LicenseRef-BeOpen"
 status = "approved"
 
 text = '''
-Included on SPDX List as part of the greater Python v2 license. is this used by
-itself?  if so, then add as an individual license (Tom I. did a bunch of
-research on Python licensing some time ago - that may be useful here)  - should
-we ask Fedora about this, where it's used and frequency? Does Fedora treat the
-Python stack as separate licenses?
+https://fedoraproject.org/wiki/Licensing/BeOpen
 '''
 
 [fedora]
@@ -22,5 +18,9 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/BeOpen
+not found in Fedora currently, don't add to SPDX  Included on SPDX List as part
+of the greater Python v2 license. is this used by itself?  if so, then add as an
+individual license (Tom I. did a bunch of research on Python licensing some time
+ago - that may be useful here)  - should we ask Fedora about this, where it's
+used and frequency? Does Fedora treat the Python stack as separate licenses?
 '''

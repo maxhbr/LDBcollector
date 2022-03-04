@@ -4,11 +4,7 @@ expression = "LicenseRef-SLIB"
 status = "approved"
 
 text = '''
-The text at the given URL is not really the license it self, more an explanatory
-text mentionning public domain dedication and the actual license. On a side
-note, they seem to define a theshold for copyrightability at "a dozen of lines"
-"PM: Reject (not a license, but rather an explanation of how SLIB is licensed on
-file by file basis) DC: Reject (agree with PM) "
+http://www-swiss.ai.mit.edu/~jaffer/SLIB_COPYING.txt
 '''
 
 [fedora]
@@ -22,5 +18,10 @@ abbreviation = [
 ]
 
 notes = '''
-http://www-swiss.ai.mit.edu/~jaffer/SLIB_COPYING.txt
+not found in Fedora currently, don't add to SPDX  The text at the given URL is
+not really the license it self, more an explanatory text mentionning public
+domain dedication and the actual license. On a side note, they seem to define a
+theshold for copyrightability at "a dozen of lines" "PM: Reject (not a license,
+but rather an explanation of how SLIB is licensed on file by file basis) DC:
+Reject (agree with PM) "
 '''

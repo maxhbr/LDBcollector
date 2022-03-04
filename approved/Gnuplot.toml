@@ -4,8 +4,7 @@ expression = "Gnuplot"
 status = "approved"
 
 text = '''
-License requires changes to source to be packaged as patches and not appended to
-the original source, etc.
+https://fedoraproject.org/wiki/Licensing/Gnuplot
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/Gnuplot
+License requires changes to source to be packaged as patches and not appended to
+the original source, etc.
 '''

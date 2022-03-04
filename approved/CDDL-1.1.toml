@@ -3,6 +3,10 @@
 expression = "CDDL-1.1"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.1
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "CDDL-1.1"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.1
-'''

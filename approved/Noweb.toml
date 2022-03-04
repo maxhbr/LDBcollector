@@ -3,6 +3,10 @@
 expression = "Noweb"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/Noweb
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Noweb"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/Noweb
-'''

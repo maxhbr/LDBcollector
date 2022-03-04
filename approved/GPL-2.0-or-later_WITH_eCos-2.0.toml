@@ -3,6 +3,10 @@
 expression = "GPL-2.0-or-later WITH eCos-2.0"
 status = "approved"
 
+text = '''
+http://www.fsf.org/licensing/licenses/ecos-license.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "eCos"
 ]
-
-notes = '''
-http://www.fsf.org/licensing/licenses/ecos-license.html
-'''

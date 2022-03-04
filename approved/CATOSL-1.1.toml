@@ -4,7 +4,7 @@ expression = "CATOSL-1.1"
 status = "approved"
 
 text = '''
-SPDX short identifier adds version #
+http://opensource.org/licenses/ca-tosl1.1.php
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://opensource.org/licenses/ca-tosl1.1.php
+SPDX short identifier adds version #
 '''

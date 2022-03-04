@@ -3,6 +3,10 @@
 expression = "CrystalStacker"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/CrystalStacker
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "Crystal Stacker"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/CrystalStacker
-'''

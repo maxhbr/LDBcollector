@@ -3,6 +3,10 @@
 expression = "ECL-1.0"
 status = "approved"
 
+text = '''
+http://opensource.org/licenses/ecl1.php
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "ECL 1.0"
 ]
-
-notes = '''
-http://opensource.org/licenses/ecl1.php
-'''

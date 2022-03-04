@@ -4,7 +4,8 @@ expression = "libtiff"
 status = "approved"
 
 text = '''
-BSD/MIT like
+https://fedoraproject.org/wiki/Licensing/libtiff
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant
 '''
 
 [fedora]
@@ -20,6 +21,7 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/libtiff
-https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant
+Fedora has same license text using two different Fedora ids: "libtiff" and "MIT"
+BSD/MIT like  Fedora has same license text using two different Fedora ids:
+"libtiff" and "MIT"
 '''

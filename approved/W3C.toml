@@ -3,6 +3,10 @@
 expression = "W3C"
 status = "approved"
 
+text = '''
+http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "W3C"
 ]
-
-notes = '''
-http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
-'''

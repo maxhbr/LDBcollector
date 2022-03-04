@@ -3,6 +3,10 @@
 expression = "MPL-2.0"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/MPLv2.0
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "MPLv2.0"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/MPLv2.0
-'''

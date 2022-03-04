@@ -4,7 +4,7 @@ expression = "BSD 3-clause"
 status = "approved"
 
 text = '''
-This is BSD 3-clause
+http://www.eclipse.org/org/documents/edl-v10.php
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.eclipse.org/org/documents/edl-v10.php
+This is BSD 3-clause
 '''

@@ -4,10 +4,8 @@ expression = "SMLNJ"
 status = "approved"
 
 text = '''
-https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Standard_ML_of_New
-_Jersey_Variant  There are other versions of this license that are more generic
-(http://www2.cs.tum.edu/projects/cup/) , without ""Lucent""; this license needs
-to be templated for the usual variables.
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#MLton_variant
+https://fedoraproject.org/wiki/Licensing/MIT
 '''
 
 [fedora]
@@ -22,6 +20,11 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#MLton_variant
-https://fedoraproject.org/wiki/Licensing/MIT
+two license listed in Fedora with same text and same identifiers MLton and
+Standard ML of NJ  two license listed in Fedora with same text and same
+identifiers MLton and Standard ML of NJ  https://fedoraproject.org/wiki/Licensin
+g:MIT?rd=Licensing/MIT#Standard_ML_of_New_Jersey_Variant  There are other
+versions of this license that are more generic
+(http://www2.cs.tum.edu/projects/cup/) , without ""Lucent""; this license needs
+to be templated for the usual variables.
 '''

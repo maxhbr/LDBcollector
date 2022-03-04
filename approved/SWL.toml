@@ -3,6 +3,10 @@
 expression = "SWL"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/SWL
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "SWL"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/SWL
-'''

@@ -4,7 +4,7 @@ expression = "PHP-3.01"
 status = "approved"
 
 text = '''
-SPDX List also has PHP-3.0
+http://www.php.net/license/3_01.txt
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.php.net/license/3_01.txt
+SPDX List also has PHP-3.0
 '''

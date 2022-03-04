@@ -4,8 +4,7 @@ expression = "SCEA"
 status = "approved"
 
 text = '''
-note it is listed here too: http://en.opensuse.org/openSUSE:Accepted_licences
-and elsewhere
+http://research.scea.com/scea_shared_source_license.html
 '''
 
 [fedora]
@@ -19,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-http://research.scea.com/scea_shared_source_license.html
+note it is listed here too: http://en.opensuse.org/openSUSE:Accepted_licences
+and elsewhere
 '''

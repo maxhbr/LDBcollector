@@ -4,7 +4,9 @@ expression = "BSD-3-Clause"
 status = "approved"
 
 text = '''
-Same as BSD-3-Clause, but replaces "copyright holders" with "regents"
+https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD
+https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License
+https://www.unidata.ucar.edu/software/netcdf/copyright.html
 '''
 
 [fedora]
@@ -21,7 +23,6 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD
-https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License
-https://www.unidata.ucar.edu/software/netcdf/copyright.html
+Same as BSD-3-Clause, but replaces "copyright holders" with "regents"  license
+text on Fedora page is list of licenses
 '''

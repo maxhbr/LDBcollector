@@ -3,6 +3,10 @@
 expression = "NTP"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#NTP_variant
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "MIT"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#NTP_variant
-'''

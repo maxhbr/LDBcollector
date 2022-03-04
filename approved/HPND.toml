@@ -4,7 +4,8 @@ expression = "HPND"
 status = "approved"
 
 text = '''
-no longer used in practice per OSI
+http://opensource.org/licenses/historical.php  https://fedoraproject.org/wiki/Li
+censing:MIT?rd=Licensing/MIT#Old_Style_with_legal_disclaimer
 '''
 
 [fedora]
@@ -19,6 +20,8 @@ abbreviation = [
 ]
 
 notes = '''
-http://opensource.org/licenses/historical.php  https://fedoraproject.org/wiki/Li
-censing:MIT?rd=Licensing/MIT#Old_Style_with_legal_disclaimer
+two license listed in Fedora with same text and same identifiers Historical
+Permission Notice and MIT Old Style w/legal disclaimer  no longer used in
+practice per OSI  two license listed in Fedora with same text and same
+identifiers Historical Permission Notice and MIT Old Style w/legal disclaimer
 '''

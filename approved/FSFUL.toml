@@ -4,7 +4,7 @@ expression = "FSFUL"
 status = "approved"
 
 text = '''
-Permissive license.
+https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License
+Permissive license.
 '''

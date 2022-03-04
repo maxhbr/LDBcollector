@@ -4,7 +4,7 @@ expression = "MIT-CMU"
 status = "approved"
 
 text = '''
-MIT/BSD variant.
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
+MIT/BSD variant.
 '''

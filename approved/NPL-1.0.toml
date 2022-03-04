@@ -4,7 +4,7 @@ expression = "NPL-1.0"
 status = "approved"
 
 text = '''
-SPDX List also has NPL-1.1
+http://www.mozilla.org/NPL/NPL-1.0.html
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-http://www.mozilla.org/NPL/NPL-1.0.html
+SPDX List also has NPL-1.1
 '''

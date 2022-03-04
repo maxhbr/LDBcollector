@@ -3,6 +3,10 @@
 expression = "TCL"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/TCL
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "TCL"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/TCL
-'''

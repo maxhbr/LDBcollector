@@ -3,6 +3,10 @@
 expression = "TMate"
 status = "approved"
 
+text = '''
+http://svnkit.com/license.html
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "TMate"
 ]
-
-notes = '''
-http://svnkit.com/license.html
-'''

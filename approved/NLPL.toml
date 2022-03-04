@@ -3,6 +3,10 @@
 expression = "NLPL"
 status = "approved"
 
+text = '''
+https://fedoraproject.org/wiki/Licensing/NLPL
+'''
+
 [fedora]
 
 name = [
@@ -12,7 +16,3 @@ name = [
 abbreviation = [
     "NLPL"
 ]
-
-notes = '''
-https://fedoraproject.org/wiki/Licensing/NLPL
-'''
