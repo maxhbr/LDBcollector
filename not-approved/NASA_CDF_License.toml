@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/NasaCDF
+'''
+
+[fedora]
+
+name = [
+    "NASA CDF License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Commercial use restrictions, poorly worded
+'''

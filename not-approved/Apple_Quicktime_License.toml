@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://store.apple.com/Catalog/US/Images/quicktime.html
+'''
+
+[fedora]
+
+name = [
+    "Apple Quicktime License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+No source related permissions
+'''

@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://openmusic.linuxtag.org/yellow.html
+'''
+
+[fedora]
+
+name = [
+    "LinuxTag Yellow OpenMusic License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Commercial use restrictions
+'''

@@ -1,0 +1,18 @@
+[license]
+
+expression = "Watcom-1.0"
+status = "not approved"
+
+text = '''
+http://opensource.org/licenses/sybase.php
+'''
+
+[fedora]
+
+name = [
+    "Sybase Open Watcom Public License 1.0"
+]
+
+abbreviation = [
+    ""
+]

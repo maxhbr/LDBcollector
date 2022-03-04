@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/SunRPC
+'''
+
+[fedora]
+
+name = [
+    "Sun RPC License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Restrictions on modification, distribution
+'''

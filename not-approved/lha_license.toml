@@ -1,0 +1,18 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://packages.debian.org/changelogs/pool/non-free/l/lha/current/copyright
+'''
+
+[fedora]
+
+name = [
+    "lha license"
+]
+
+abbreviation = [
+    ""
+]

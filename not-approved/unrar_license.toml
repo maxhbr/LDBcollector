@@ -1,0 +1,23 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Unrar
+'''
+
+[fedora]
+
+name = [
+    "unrar license"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Use restrictions, forced removal clause, see license page for details  see notes
+on page
+'''

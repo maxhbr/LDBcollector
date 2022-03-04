@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://www.cacert.org/policy/NRPDisclaimerAndLicence.php
+'''
+
+[fedora]
+
+name = [
+    "CAcert Non-Related Persons Disclaimer and License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+No permission to redistribute  link broken
+'''

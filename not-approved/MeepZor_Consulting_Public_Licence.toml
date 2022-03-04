@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://meepzor.com/packages/autoresponder/LICENCE.txt
+'''
+
+[fedora]
+
+name = [
+    "MeepZor Consulting Public Licence"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Deprecated, upstream uses ASL 2.0 now
+'''

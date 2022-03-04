@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://www.opengroup.org/openmotif/license/
+'''
+
+[fedora]
+
+name = [
+    "Open Motif Public End User License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Commercial use restrictions
+'''

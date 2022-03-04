@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Scilab_License_Old
+'''
+
+[fedora]
+
+name = [
+    "Scilab License (OLD)"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Current versions of Scilab use the CeCILL license
+'''

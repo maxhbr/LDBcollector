@@ -1,0 +1,22 @@
+[license]
+
+expression = "OGTSL"
+status = "not approved"
+
+text = '''
+http://opensource.org/licenses/opengroup.php
+'''
+
+[fedora]
+
+name = [
+    "Open Group Test Suite License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Same flaws as Artistic 1.0  review w/Artistic
+'''

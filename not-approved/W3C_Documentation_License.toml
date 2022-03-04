@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://www.w3.org/Consortium/Legal/copyright-documents
+'''
+
+[fedora]
+
+name = [
+    "W3C Documentation License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Does not permit modification, different from W3C Software License
+'''

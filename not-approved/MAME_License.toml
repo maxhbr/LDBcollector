@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://mamedev.org/legal.html
+'''
+
+[fedora]
+
+name = [
+    "MAME License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Commercial use restrictions  broken link (now under GPLv2)
+'''

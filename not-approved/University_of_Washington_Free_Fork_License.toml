@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/UofWFreeFork
+'''
+
+[fedora]
+
+name = [
+    "University of Washington Free Fork License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+No longer used
+'''

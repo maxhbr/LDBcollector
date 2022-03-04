@@ -1,0 +1,18 @@
+[license]
+
+expression = "EFL-1.0"
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Eiffel_Forum_License_V1
+'''
+
+[fedora]
+
+name = [
+    "Eiffel Forum License 1.0"
+]
+
+abbreviation = [
+    ""
+]

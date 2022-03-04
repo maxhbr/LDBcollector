@@ -1,0 +1,25 @@
+[license]
+
+expression = "APSL-1.0"
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0
+'''
+
+[fedora]
+
+name = [
+    "Apple Public Source License 1.0"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+This license is non-free. At one point, it could be found at
+http://www.opensource.apple.com/apsl/1.0.txt, but that link now redirects to
+APSL 2.0. A copy of the license text has been taken from archive.org's October
+01, 2007 revision.
+'''

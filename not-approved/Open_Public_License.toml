@@ -1,0 +1,18 @@
+[license]
+
+expression = "OPL-1.0"
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Open_Public_License
+'''
+
+[fedora]
+
+name = [
+    "Open Public License"
+]
+
+abbreviation = [
+    ""
+]

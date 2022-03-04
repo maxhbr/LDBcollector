@@ -1,0 +1,26 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Siren14_Licensing_Agreement
+'''
+
+[fedora]
+
+name = [
+    "Siren14 License Agreement"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+This license is non-free. It was originally found at:
+http://www.polycom.com/global/pw_item_show_doc/0,,4424,00.pdf but that URL is
+gone. A copy of the latest available version from archive.org has been preserved
+here for reference. The license has been converted from PDF format to plain
+text.
+'''

@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://www.sun.com/software/communitysource/
+'''
+
+[fedora]
+
+name = [
+    "Sun Community Source License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+sounds familiar but link broken
+'''

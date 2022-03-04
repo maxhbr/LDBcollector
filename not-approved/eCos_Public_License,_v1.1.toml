@@ -1,0 +1,14 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+[fedora]
+
+name = [
+    "eCos Public License, v1.1"
+]
+
+abbreviation = [
+    ""
+]

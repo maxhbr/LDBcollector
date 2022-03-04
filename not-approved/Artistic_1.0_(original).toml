@@ -1,0 +1,22 @@
+[license]
+
+expression = "Artistic-1.0-Perl"
+status = "not approved"
+
+text = '''
+http://www.perl.com/pub/a/language/misc/Artistic.html
+'''
+
+[fedora]
+
+name = [
+    "Artistic 1.0 (original)"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+See: http://www.gnu.org/licenses/license-list.html#ArtisticLicense
+'''

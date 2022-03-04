@@ -1,0 +1,18 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://creativecommons.org/licenses/sampling+/1.0/legalcode
+'''
+
+[fedora]
+
+name = [
+    "Creative Commons Sampling Plus 1.0"
+]
+
+abbreviation = [
+    ""
+]

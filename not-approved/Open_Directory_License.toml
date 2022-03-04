@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://dmoz.org/license.html
+'''
+
+[fedora]
+
+name = [
+    "Open Directory License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+link broken
+'''

@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/IBM_Sample_Code_License
+'''
+
+[fedora]
+
+name = [
+    "IBM Sample Code License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Use restrictions  see notes on page
+'''

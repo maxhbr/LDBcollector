@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/LiteratFontLicense
+'''
+
+[fedora]
+
+name = [
+    "Literat Font License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Cannot modify
+'''

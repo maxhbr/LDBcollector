@@ -1,0 +1,23 @@
+[license]
+
+expression = "gSOAP-1.3b"
+status = "not approved"
+
+text = '''
+http://www.cs.fsu.edu/~engelen/license.html
+'''
+
+[fedora]
+
+name = [
+    "gSOAP Public License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Please note that while the "gSOAP Public License" is non-free, the "gSOAP
+Toolkit" is dual licensed as GPLv2 or gSOAP Public License.
+'''

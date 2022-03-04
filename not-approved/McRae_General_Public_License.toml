@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://pgl.yoyo.org/license/
+'''
+
+[fedora]
+
+name = [
+    "McRae General Public License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Commercial use restrictions
+'''

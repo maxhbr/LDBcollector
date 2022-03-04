@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+http://cr.yp.to/qmail/dist.html
+'''
+
+[fedora]
+
+name = [
+    "qmail License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+deprecated, qmail is now public domain
+'''

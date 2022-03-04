@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = "not approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/LarabieFontsLicense
+'''
+
+[fedora]
+
+name = [
+    "Larabie Fonts License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Cannot modify
+'''
