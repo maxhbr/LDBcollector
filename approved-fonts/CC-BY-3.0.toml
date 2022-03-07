@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "CC-BY-3.0" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution license"
+]
+
+abbreviation = [
+    "CC-BY"
+]

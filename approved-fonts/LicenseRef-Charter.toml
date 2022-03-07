@@ -1,0 +1,19 @@
+[license]
+
+expression = [ "LicenseRef-Charter" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Charter License"
+]
+
+abbreviation = [
+    "Charter"
+]
+
+notes = '''
+This license was found on the "charter" texlive 2010 component. It is a Free
+font license, GPL compatible.
+'''

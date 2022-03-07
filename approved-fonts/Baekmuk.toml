@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "Baekmuk" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Baekmuk License"
+]
+
+abbreviation = [
+    "Baekmuk"
+]

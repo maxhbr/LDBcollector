@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "Bitstream-Vera" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Bitstream Vera Font License"
+]
+
+abbreviation = [
+    "Bitstream Vera"
+]

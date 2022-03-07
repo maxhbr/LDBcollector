@@ -1,0 +1,26 @@
+[license]
+
+expression = [ "LicenseRef-HOFL" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Hack Open Font License"
+]
+
+abbreviation = [
+    "HOFL"
+]
+
+notes = '''
+The Hack Open Font License is a weird mix of the Bitstream Vera and SIL Open
+Font licenses. It has the common "must be renamed if modified" and "must not be
+sold by itself" clauses that are found in font licenses. These clauses might
+make a software license non-free (though, the first one seems to be acceptable
+by the FSF in some cases), but they have been considered acceptable for FOSS
+font licensing for some time now. It is worth noting that the Hack font upstream
+(the origination of this license) feels that the "sold by itself" clause can be
+trivially circumvented and has no issue with people doing that (e.g. font comes
+with a helloworld binary).
+'''

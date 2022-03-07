@@ -1,0 +1,20 @@
+[license]
+
+expression = [ "IPA" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "IPA Font License"
+]
+
+abbreviation = [
+    "IPA"
+]
+
+notes = '''
+While this license is Free (barely), it is not GPL compatible. This means that
+like Bitstream Vera, you cannot take a font under the IPA license and make a
+derived work which is under the GPL (or vice versa).
+'''

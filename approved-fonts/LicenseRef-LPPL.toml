@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-LPPL" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "GUST Font License"
+]
+
+abbreviation = [
+    "LPPL"
+]

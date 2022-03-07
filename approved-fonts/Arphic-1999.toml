@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "Arphic-1999" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Arphic Public License"
+]
+
+abbreviation = [
+    "Arphic"
+]

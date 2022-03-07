@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-XANO" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "XANO Mincho Font License"
+]
+
+abbreviation = [
+    "XANO"
+]

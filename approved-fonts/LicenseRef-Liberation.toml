@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-Liberation" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Liberation Font License"
+]
+
+abbreviation = [
+    "Liberation"
+]

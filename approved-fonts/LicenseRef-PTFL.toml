@@ -1,0 +1,20 @@
+[license]
+
+expression = [ "LicenseRef-PTFL" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "ParaType Font License"
+]
+
+abbreviation = [
+    "PTFL"
+]
+
+notes = '''
+This license is a derived OFL license from the Russian Foundry "ParaType". First
+noticed on the "PT Sans" font. It is Free. Please note that the license refers
+to itself as the "Free Font License Agreement".
+'''

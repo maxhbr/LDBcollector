@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-STIX" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "STIX Fonts User License"
+]
+
+abbreviation = [
+    "STIX"
+]

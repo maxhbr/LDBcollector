@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "OFL-1.1" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "SIL Open Font License 1.1"
+]
+
+abbreviation = [
+    "OFL"
+]

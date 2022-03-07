@@ -1,0 +1,18 @@
+[license]
+
+expression = [ "LicenseRef-Hersey" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Hershey Font License"
+]
+
+abbreviation = [
+    "Hershey"
+]
+
+notes = '''
+Copied from: http://www.ghostscript.com/doc/8.54/Hershey.htm
+'''

@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-Utopia" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Adobe/TUG Utopia license agreement"
+]
+
+abbreviation = [
+    "Utopia"
+]

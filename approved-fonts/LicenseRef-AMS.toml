@@ -1,0 +1,18 @@
+[license]
+
+expression = [ "LicenseRef-AMS" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "AMS Bluesky Font License"
+]
+
+abbreviation = [
+    "AMS"
+]
+
+notes = '''
+Taken from: http://www.ams.org/tex/type1-fonts.html
+'''

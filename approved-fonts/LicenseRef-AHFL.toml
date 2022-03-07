@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-AHFL" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Atkinson Hyperlegible Font License"
+]
+
+abbreviation = [
+    "AHFL"
+]

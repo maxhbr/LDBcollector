@@ -1,0 +1,18 @@
+[license]
+
+expression = [ "LicenseRef-Lucida" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Lucida Legal Notice"
+]
+
+abbreviation = [
+    "Lucida"
+]
+
+notes = '''
+The permission to modify is implicit here.
+'''

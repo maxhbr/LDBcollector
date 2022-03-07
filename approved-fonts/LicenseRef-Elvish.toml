@@ -1,0 +1,19 @@
+[license]
+
+expression = [ "LicenseRef-Elvish" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "Elvish Font License"
+]
+
+abbreviation = [
+    "Elvish"
+]
+
+notes = '''
+This license was found on the "elvish" component in texlive 2010. It is a Font
+License, Free but GPL-incompatible.
+'''

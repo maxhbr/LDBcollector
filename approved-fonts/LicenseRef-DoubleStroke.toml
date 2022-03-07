@@ -1,0 +1,18 @@
+[license]
+
+expression = [ "LicenseRef-DoubleStroke" ]
+status = "approved-fonts"
+
+[fedora]
+
+name = [
+    "DoubleStroke Font License"
+]
+
+abbreviation = [
+    "DoubleStroke"
+]
+
+notes = '''
+This Font license is Free, but GPL-incompatible.
+'''
