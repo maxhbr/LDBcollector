@@ -13,9 +13,9 @@ import csv
 import textwrap
 
 def usage(cmd):
-    print("Usage: %s [tsv file] [output dir]" % os.path.basename(cmd))
+    print("Usage: %s [tsv file] [output dir] [approved string]" % os.path.basename(cmd))
 
-def write_licenses(outdir, licenses):
+def write_licenses(outdir, licenses, approval):
     if not os.path.isdir(outdir):
         os.makedirs(outdir, exist_ok=True)
 
@@ -27,7 +27,7 @@ def write_licenses(outdir, licenses):
         o = open(output_file, "w")
         o.write("[license]\n\n")
         o.write("expression = [ \"%s\" ]\n" % license)
-        o.write("status = \"approved\"\n")
+        o.write("status = \"%s\"\n" % approval)
 
         if entry["text"] != "":
             entry["text"] = entry["text"].strip()
@@ -92,12 +92,13 @@ if __name__ == "__main__":
     line = 1
     licenses = {}
 
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         usage(sys.argv[0])
         sys.exit(1)
 
     cwd = os.getcwd()
     outdir = sys.argv[2]
+    approval = sys.argv[3]
     badrows = os.path.join(cwd, "errors.tsv")
 
     f = open(os.path.realpath(sys.argv[1]), newline='')
@@ -201,4 +202,4 @@ if __name__ == "__main__":
     f.close()
 
     # write the results
-    write_licenses(outdir, licenses)
+    write_licenses(outdir, licenses, approval)

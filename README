@@ -4,7 +4,8 @@
 
 * Run the script this way:
 
-      ./tsv2toml-good.py good.tsv $(pwd)/approved
+      ./tsv2toml-good.py good.tsv $(pwd)/approved "approved"
+      ./tsv2toml-good.py good-fonts.tsv $(pwd)/approved-fonts "approved-fonts"
 
   The good.tsv file is the exported spreadsheet from Google with the
   column header row removed and any summary total rows below the
