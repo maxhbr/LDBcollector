@@ -1,6 +1,6 @@
 [license]
 
-expression = "Rdisc"
+expression = [ "Rdisc" ]
 status = "approved"
 
 text = '''

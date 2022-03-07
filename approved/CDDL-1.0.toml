@@ -1,6 +1,6 @@
 [license]
 
-expression = "CDDL-1.0"
+expression = [ "CDDL-1.0" ]
 status = "approved"
 
 text = '''

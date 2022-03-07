@@ -1,6 +1,6 @@
 [license]
 
-expression = "OLDAP-2.8"
+expression = [ "OLDAP-2.8" ]
 status = "approved"
 
 text = '''

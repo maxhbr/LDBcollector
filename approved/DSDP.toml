@@ -1,6 +1,6 @@
 [license]
 
-expression = "DSDP"
+expression = [ "DSDP" ]
 status = "approved"
 
 text = '''

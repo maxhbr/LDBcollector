@@ -1,6 +1,6 @@
 [license]
 
-expression = "YPL-1.0"
+expression = [ "YPL-1.0" ]
 status = "not approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "Wsuipa"
+expression = [ "Wsuipa" ]
 status = "approved"
 
 text = '''

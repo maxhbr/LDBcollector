@@ -1,6 +1,6 @@
 [license]
 
-expression = "TORQUE-1.1"
+expression = [ "TORQUE-1.1" ]
 status = "approved"
 
 text = '''

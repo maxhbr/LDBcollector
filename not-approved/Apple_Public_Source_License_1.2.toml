@@ -1,6 +1,6 @@
 [license]
 
-expression = "APSL-1.2"
+expression = [ "APSL-1.2" ]
 status = "not approved"
 
 text = '''

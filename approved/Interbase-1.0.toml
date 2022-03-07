@@ -1,6 +1,6 @@
 [license]
 
-expression = "Interbase-1.0"
+expression = [ "Interbase-1.0" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "Dotseqn"
+expression = [ "Dotseqn" ]
 status = "approved"
 
 text = '''

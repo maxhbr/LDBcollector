@@ -1,6 +1,6 @@
 [license]
 
-expression = "NTP"
+expression = [ "NTP" ]
 status = "approved"
 
 text = '''

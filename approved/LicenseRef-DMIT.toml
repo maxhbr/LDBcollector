@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-DMIT"
+expression = [ "LicenseRef-DMIT" ]
 status = "approved"
 
 text = '''

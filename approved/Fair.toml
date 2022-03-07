@@ -1,6 +1,6 @@
 [license]
 
-expression = "Fair"
+expression = [ "Fair" ]
 status = "approved"
 
 text = '''

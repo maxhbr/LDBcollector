@@ -1,6 +1,6 @@
 [license]
 
-expression = "BSL-1.0"
+expression = [ "BSL-1.0" ]
 status = "approved"
 
 text = '''

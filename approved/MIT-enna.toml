@@ -1,6 +1,6 @@
 [license]
 
-expression = "MIT-enna"
+expression = [ "MIT-enna" ]
 status = "approved"
 
 text = '''

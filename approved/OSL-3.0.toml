@@ -1,6 +1,6 @@
 [license]
 
-expression = "OSL-3.0"
+expression = [ "OSL-3.0" ]
 status = "approved"
 
 text = '''

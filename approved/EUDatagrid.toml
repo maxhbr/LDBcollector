@@ -1,6 +1,6 @@
 [license]
 
-expression = "EUDatagrid"
+expression = [ "EUDatagrid" ]
 status = "approved"
 
 text = '''

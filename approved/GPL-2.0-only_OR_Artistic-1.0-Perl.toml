@@ -1,6 +1,6 @@
 [license]
 
-expression = "GPL-2.0-only OR Artistic-1.0-Perl"
+expression = [ "GPL-2.0-only OR Artistic-1.0-Perl" ]
 status = "approved"
 
 text = '''

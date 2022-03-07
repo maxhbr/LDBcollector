@@ -1,6 +1,6 @@
 [license]
 
-expression = "0BSD"
+expression = [ "0BSD" ]
 status = "approved"
 
 text = '''

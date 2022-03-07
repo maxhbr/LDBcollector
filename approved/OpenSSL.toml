@@ -1,6 +1,6 @@
 [license]
 
-expression = "OpenSSL"
+expression = [ "OpenSSL" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "SWL"
+expression = [ "SWL" ]
 status = "approved"
 
 text = '''

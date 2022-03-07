@@ -1,6 +1,6 @@
 [license]
 
-expression = "psfrag"
+expression = [ "psfrag" ]
 status = "approved"
 
 text = '''

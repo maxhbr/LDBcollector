@@ -1,6 +1,6 @@
 [license]
 
-expression = "MS-RL"
+expression = [ "MS-RL" ]
 status = "approved"
 
 text = '''

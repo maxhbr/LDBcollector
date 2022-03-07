@@ -1,6 +1,6 @@
 [license]
 
-expression = "Apache-1.1"
+expression = [ "Apache-1.1" ]
 status = "approved"
 
 text = '''

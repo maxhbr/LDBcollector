@@ -1,6 +1,6 @@
 [license]
 
-expression = "Unlicense"
+expression = [ "Unlicense" ]
 status = "approved"
 
 text = '''

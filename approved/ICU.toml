@@ -1,6 +1,6 @@
 [license]
 
-expression = "ICU"
+expression = [ "ICU" ]
 status = "approved"
 
 text = '''

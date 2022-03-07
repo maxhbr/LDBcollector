@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-PlainTeX"
+expression = [ "LicenseRef-PlainTeX" ]
 status = "approved"
 
 text = '''

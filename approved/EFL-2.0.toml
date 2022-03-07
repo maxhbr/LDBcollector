@@ -1,6 +1,6 @@
 [license]
 
-expression = "EFL-2.0"
+expression = [ "EFL-2.0" ]
 status = "approved"
 
 text = '''

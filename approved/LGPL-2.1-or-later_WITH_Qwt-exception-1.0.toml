@@ -1,6 +1,6 @@
 [license]
 
-expression = "LGPL-2.1-or-later WITH Qwt-exception-1.0"
+expression = [ "LGPL-2.1-or-later WITH Qwt-exception-1.0" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "FDK-AAC"
+expression = [ "FDK-AAC" ]
 status = "approved"
 
 text = '''

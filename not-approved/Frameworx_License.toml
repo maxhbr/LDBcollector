@@ -1,6 +1,6 @@
 [license]
 
-expression = "Frameworx-1.0"
+expression = [ "Frameworx-1.0" ]
 status = "not approved"
 
 text = '''

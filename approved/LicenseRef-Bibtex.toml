@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-Bibtex"
+expression = [ "LicenseRef-Bibtex" ]
 status = "approved"
 
 text = '''

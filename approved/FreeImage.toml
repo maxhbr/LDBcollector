@@ -1,6 +1,6 @@
 [license]
 
-expression = "FreeImage"
+expression = [ "FreeImage" ]
 status = "approved"
 
 text = '''

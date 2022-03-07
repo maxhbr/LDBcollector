@@ -1,6 +1,6 @@
 [license]
 
-expression = "FSFUL"
+expression = [ "FSFUL" ]
 status = "approved"
 
 text = '''

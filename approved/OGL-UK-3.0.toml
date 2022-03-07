@@ -1,6 +1,6 @@
 [license]
 
-expression = "OGL-UK-3.0"
+expression = [ "OGL-UK-3.0" ]
 status = "approved"
 
 text = '''

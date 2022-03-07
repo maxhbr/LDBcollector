@@ -1,6 +1,6 @@
 [license]
 
-expression = "SISSL"
+expression = [ "SISSL" ]
 status = "approved"
 
 text = '''

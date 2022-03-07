@@ -1,6 +1,6 @@
 [license]
 
-expression = "CPAL-1.0"
+expression = [ "CPAL-1.0" ]
 status = "approved"
 
 text = '''

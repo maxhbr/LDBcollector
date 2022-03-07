@@ -1,6 +1,6 @@
 [license]
 
-expression = "Cube"
+expression = [ "Cube" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "CPOL-1.02"
+expression = [ "CPOL-1.02" ]
 status = "not approved"
 
 text = '''

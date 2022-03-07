@@ -1,6 +1,6 @@
 [license]
 
-expression = "Intel-ACPI"
+expression = [ "Intel-ACPI" ]
 status = "approved"
 
 text = '''

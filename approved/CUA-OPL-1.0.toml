@@ -1,6 +1,6 @@
 [license]
 
-expression = "CUA-OPL-1.0"
+expression = [ "CUA-OPL-1.0" ]
 status = "approved"
 
 text = '''

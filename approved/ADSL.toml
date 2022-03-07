@@ -1,6 +1,6 @@
 [license]
 
-expression = "ADSL"
+expression = [ "ADSL" ]
 status = "approved"
 
 text = '''

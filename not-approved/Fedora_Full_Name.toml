@@ -1,6 +1,6 @@
 [license]
 
-expression = "SPDX id"
+expression = [ "SPDX id" ]
 status = "not approved"
 
 text = '''

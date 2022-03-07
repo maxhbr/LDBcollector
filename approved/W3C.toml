@@ -1,6 +1,6 @@
 [license]
 
-expression = "W3C"
+expression = [ "W3C" ]
 status = "approved"
 
 text = '''

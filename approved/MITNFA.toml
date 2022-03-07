@@ -1,6 +1,6 @@
 [license]
 
-expression = "MITNFA"
+expression = [ "MITNFA" ]
 status = "approved"
 
 text = '''

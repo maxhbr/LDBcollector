@@ -1,6 +1,6 @@
 [license]
 
-expression = "Adobe-Glyph"
+expression = [ "Adobe-Glyph" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "RPSL-1.0"
+expression = [ "RPSL-1.0" ]
 status = "approved"
 
 text = '''

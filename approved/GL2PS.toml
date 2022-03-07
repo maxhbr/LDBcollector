@@ -1,6 +1,6 @@
 [license]
 
-expression = "GL2PS"
+expression = [ "GL2PS" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "Beerware"
+expression = [ "Beerware" ]
 status = "approved"
 
 text = '''

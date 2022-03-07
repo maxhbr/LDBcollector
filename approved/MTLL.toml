@@ -1,6 +1,6 @@
 [license]
 
-expression = "MTLL"
+expression = [ "MTLL" ]
 status = "approved"
 
 text = '''

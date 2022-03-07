@@ -1,6 +1,6 @@
 [license]
 
-expression = "dvipdfm"
+expression = [ "dvipdfm" ]
 status = "approved"
 
 text = '''

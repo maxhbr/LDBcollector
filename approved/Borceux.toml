@@ -1,6 +1,6 @@
 [license]
 
-expression = "Borceux"
+expression = [ "Borceux" ]
 status = "approved"
 
 text = '''

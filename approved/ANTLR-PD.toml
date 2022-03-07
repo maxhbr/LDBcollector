@@ -1,6 +1,6 @@
 [license]
 
-expression = "ANTLR-PD"
+expression = [ "ANTLR-PD" ]
 status = "approved"
 
 text = '''

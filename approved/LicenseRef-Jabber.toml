@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-Jabber"
+expression = [ "LicenseRef-Jabber" ]
 status = "approved"
 
 text = '''

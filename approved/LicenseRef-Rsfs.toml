@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-Rsfs"
+expression = [ "LicenseRef-Rsfs" ]
 status = "approved"
 
 text = '''

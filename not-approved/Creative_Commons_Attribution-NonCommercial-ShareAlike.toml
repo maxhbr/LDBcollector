@@ -1,6 +1,16 @@
 [license]
 
-expression = "CC-BY-NC-SA-1.0                 CC-BY-NC-SA-2.0                 CC-BY-NC-SA-2.0-FR                 CC-BY-NC-SA-2.0-UK                 CC-BY-NC-SA-2.5                 CC-BY-NC-SA-3.0                 CC-BY-NC-SA-3.0-DE                 CC-BY-NC-SA-3.0-IGO                 CC-BY-NC-SA-4.0"
+expression = [
+    "CC-BY-NC-SA-1.0",
+    "CC-BY-NC-SA-2.0",
+    "CC-BY-NC-SA-2.0-FR",
+    "CC-BY-NC-SA-2.0-UK",
+    "CC-BY-NC-SA-2.5",
+    "CC-BY-NC-SA-3.0",
+    "CC-BY-NC-SA-3.0-DE",
+    "CC-BY-NC-SA-3.0-IGO",
+    "CC-BY-NC-SA-4.0"
+]
 status = "not approved"
 
 text = '''

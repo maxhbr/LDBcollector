@@ -1,6 +1,6 @@
 [license]
 
-expression = "XSkat"
+expression = [ "XSkat" ]
 status = "approved"
 
 text = '''

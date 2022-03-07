@@ -1,6 +1,6 @@
 [license]
 
-expression = "Bahyph"
+expression = [ "Bahyph" ]
 status = "approved"
 
 text = '''

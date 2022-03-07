@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-softSurfer"
+expression = [ "LicenseRef-softSurfer" ]
 status = "approved"
 
 text = '''

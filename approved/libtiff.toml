@@ -1,6 +1,6 @@
 [license]
 
-expression = "libtiff"
+expression = [ "libtiff" ]
 status = "approved"
 
 text = '''

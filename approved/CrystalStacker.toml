@@ -1,6 +1,6 @@
 [license]
 
-expression = "CrystalStacker"
+expression = [ "CrystalStacker" ]
 status = "approved"
 
 text = '''

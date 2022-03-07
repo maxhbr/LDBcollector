@@ -1,6 +1,6 @@
 [license]
 
-expression = "AGPL-3.0-only"
+expression = [ "AGPL-3.0-only" ]
 status = "approved"
 
 text = '''

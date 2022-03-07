@@ -1,6 +1,6 @@
 [license]
 
-expression = "Zed"
+expression = [ "Zed" ]
 status = "approved"
 
 text = '''

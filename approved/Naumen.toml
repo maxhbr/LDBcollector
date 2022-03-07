@@ -1,6 +1,6 @@
 [license]
 
-expression = "Naumen"
+expression = [ "Naumen" ]
 status = "approved"
 
 text = '''

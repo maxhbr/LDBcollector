@@ -1,6 +1,6 @@
 [license]
 
-expression = "LPPL-1.3a"
+expression = [ "LPPL-1.3a" ]
 status = "approved"
 
 text = '''

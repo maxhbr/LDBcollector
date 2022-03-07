@@ -1,6 +1,6 @@
 [license]
 
-expression = "xinetd"
+expression = [ "xinetd" ]
 status = "approved"
 
 text = '''

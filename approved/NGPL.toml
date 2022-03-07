@@ -1,6 +1,6 @@
 [license]
 
-expression = "NGPL"
+expression = [ "NGPL" ]
 status = "approved"
 
 text = '''

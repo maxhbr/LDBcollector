@@ -1,6 +1,6 @@
 [license]
 
-expression = "diffmark"
+expression = [ "diffmark" ]
 status = "approved"
 
 text = '''

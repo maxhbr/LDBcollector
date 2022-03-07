@@ -1,6 +1,6 @@
 [license]
 
-expression = "Eurosym"
+expression = [ "Eurosym" ]
 status = "approved"
 
 text = '''

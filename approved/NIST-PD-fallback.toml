@@ -1,6 +1,6 @@
 [license]
 
-expression = "NIST-PD-fallback"
+expression = [ "NIST-PD-fallback" ]
 status = "approved"
 
 text = '''

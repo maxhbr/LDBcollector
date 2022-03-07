@@ -1,6 +1,6 @@
 [license]
 
-expression = "Vim"
+expression = [ "Vim" ]
 status = "approved"
 
 text = '''

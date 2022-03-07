@@ -16,6 +16,11 @@
   rows to "errors.tsv" which can be imported in to another Google
   spreadsheet if you want.
 
+After the conversion, you will need to check the expression field to
+ensure it's a list of strings.  Most of these will just be a list of
+one element, but where there are more then it needs commas between the
+string members.
+
 Ideally we will just remedy the problem rows and run this script again
 until everything is imported.  At that point the spreadsheet can be
 discarded and all continuing work will be in the git repo.  Of course,

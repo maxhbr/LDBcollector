@@ -1,6 +1,6 @@
 [license]
 
-expression = "MIT-Modern-Variant"
+expression = [ "MIT-Modern-Variant" ]
 status = "approved"
 
 text = '''

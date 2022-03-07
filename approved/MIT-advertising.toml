@@ -1,6 +1,6 @@
 [license]
 
-expression = "MIT-advertising"
+expression = [ "MIT-advertising" ]
 status = "approved"
 
 text = '''

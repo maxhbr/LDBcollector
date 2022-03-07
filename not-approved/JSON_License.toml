@@ -1,6 +1,6 @@
 [license]
 
-expression = "JSON"
+expression = [ "JSON" ]
 status = "not approved"
 
 text = '''

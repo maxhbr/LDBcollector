@@ -1,6 +1,6 @@
 [license]
 
-expression = "ARL"
+expression = [ "ARL" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "Aladdin"
+expression = [ "Aladdin" ]
 status = "not approved"
 
 text = '''

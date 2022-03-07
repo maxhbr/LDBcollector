@@ -1,6 +1,6 @@
 [license]
 
-expression = "ClArtistic"
+expression = [ "ClArtistic" ]
 status = "approved"
 
 text = '''

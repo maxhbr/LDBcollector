@@ -1,6 +1,6 @@
 [license]
 
-expression = "BSD 3-clause"
+expression = [ "BSD 3-clause" ]
 status = "approved"
 
 text = '''

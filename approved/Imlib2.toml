@@ -1,6 +1,6 @@
 [license]
 
-expression = "Imlib2"
+expression = [ "Imlib2" ]
 status = "approved"
 
 text = '''

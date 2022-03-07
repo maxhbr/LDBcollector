@@ -1,6 +1,6 @@
 [license]
 
-expression = "Xerox"
+expression = [ "Xerox" ]
 status = "approved"
 
 text = '''

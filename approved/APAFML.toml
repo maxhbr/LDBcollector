@@ -1,6 +1,6 @@
 [license]
 
-expression = "APAFML"
+expression = [ "APAFML" ]
 status = "approved"
 
 text = '''

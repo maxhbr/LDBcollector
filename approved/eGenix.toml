@@ -1,6 +1,6 @@
 [license]
 
-expression = "eGenix"
+expression = [ "eGenix" ]
 status = "approved"
 
 text = '''

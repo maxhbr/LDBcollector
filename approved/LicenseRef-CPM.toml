@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-CPM"
+expression = [ "LicenseRef-CPM" ]
 status = "approved"
 
 text = '''

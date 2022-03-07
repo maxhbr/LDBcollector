@@ -1,6 +1,6 @@
 [license]
 
-expression = "SCEA"
+expression = [ "SCEA" ]
 status = "approved"
 
 text = '''

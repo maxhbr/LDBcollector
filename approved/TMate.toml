@@ -1,6 +1,6 @@
 [license]
 
-expression = "TMate"
+expression = [ "TMate" ]
 status = "approved"
 
 text = '''

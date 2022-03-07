@@ -1,6 +1,6 @@
 [license]
 
-expression = "MPL-1.1"
+expression = [ "MPL-1.1" ]
 status = "approved"
 
 text = '''

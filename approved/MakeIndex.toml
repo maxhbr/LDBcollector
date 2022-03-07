@@ -1,6 +1,6 @@
 [license]
 
-expression = "MakeIndex"
+expression = [ "MakeIndex" ]
 status = "approved"
 
 text = '''

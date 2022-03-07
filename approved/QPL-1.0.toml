@@ -1,6 +1,6 @@
 [license]
 
-expression = "QPL-1.0"
+expression = [ "QPL-1.0" ]
 status = "approved"
 
 text = '''

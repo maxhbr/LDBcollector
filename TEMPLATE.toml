@@ -6,16 +6,16 @@
 # All files must provide a 'license' block.
 [license]
 
-# The SPDX expression is the SPDX license expression as evaluated by
-# Fedora.  It is a string wrapped in double quotes.  For example:
+# The list of SPDX expressions for this license type in Fedora.  Each
+# expression is a string in the list.
 #
-#     spdx_expression = "GPL-3.0-or-later WITH Autoconf-exception-3.0"
+#     spdx_expression = [ "GPL-3.0-or-later WITH Autoconf-exception-3.0" ]
 #
 # This expression is constructed using valid SPDX license and
 # exception identifiers found at https://spdx.org/
 #
 # This is a required field.
-expression = ""
+expression = [ "" ]
 
 # The status of this license expression.  It is a string wrapped in
 # double quotes.  Generally 'approved', but may be any of:

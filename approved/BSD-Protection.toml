@@ -1,6 +1,6 @@
 [license]
 
-expression = "BSD-Protection"
+expression = [ "BSD-Protection" ]
 status = "approved"
 
 text = '''

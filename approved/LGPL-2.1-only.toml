@@ -1,6 +1,6 @@
 [license]
 
-expression = "LGPL-2.1-only"
+expression = [ "LGPL-2.1-only" ]
 status = "approved"
 
 [fedora]

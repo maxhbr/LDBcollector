@@ -1,6 +1,6 @@
 [license]
 
-expression = "PostgreSQL"
+expression = [ "PostgreSQL" ]
 status = "approved"
 
 text = '''

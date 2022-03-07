@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-midnight"
+expression = [ "LicenseRef-midnight" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "Barr"
+expression = [ "Barr" ]
 status = "approved"
 
 text = '''

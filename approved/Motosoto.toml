@@ -1,6 +1,6 @@
 [license]
 
-expression = "Motosoto"
+expression = [ "Motosoto" ]
 status = "approved"
 
 text = '''

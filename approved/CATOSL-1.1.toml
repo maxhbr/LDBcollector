@@ -1,6 +1,6 @@
 [license]
 
-expression = "CATOSL-1.1"
+expression = [ "CATOSL-1.1" ]
 status = "approved"
 
 text = '''

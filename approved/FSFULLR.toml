@@ -1,6 +1,6 @@
 [license]
 
-expression = "FSFULLR"
+expression = [ "FSFULLR" ]
 status = "approved"
 
 text = '''

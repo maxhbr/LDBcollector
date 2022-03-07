@@ -1,6 +1,6 @@
 [license]
 
-expression = "LGPL-2.0-or-later "
+expression = [ "LGPL-2.0-or-later " ]
 status = "approved"
 
 text = '''

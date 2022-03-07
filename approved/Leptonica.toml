@@ -1,6 +1,6 @@
 [license]
 
-expression = "Leptonica"
+expression = [ "Leptonica" ]
 status = "approved"
 
 text = '''

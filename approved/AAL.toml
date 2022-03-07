@@ -1,6 +1,6 @@
 [license]
 
-expression = "AAL"
+expression = [ "AAL" ]
 status = "approved"
 
 text = '''

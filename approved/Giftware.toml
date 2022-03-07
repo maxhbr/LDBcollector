@@ -1,6 +1,6 @@
 [license]
 
-expression = "Giftware"
+expression = [ "Giftware" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-Threeparttable"
+expression = [ "LicenseRef-Threeparttable" ]
 status = "approved"
 
 text = '''

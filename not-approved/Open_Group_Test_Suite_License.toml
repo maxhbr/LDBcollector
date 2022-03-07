@@ -1,6 +1,6 @@
 [license]
 
-expression = "OGTSL"
+expression = [ "OGTSL" ]
 status = "not approved"
 
 text = '''

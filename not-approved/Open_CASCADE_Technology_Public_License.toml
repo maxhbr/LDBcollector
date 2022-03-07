@@ -1,6 +1,6 @@
 [license]
 
-expression = "OCCT-exception-1.0"
+expression = [ "OCCT-exception-1.0" ]
 status = "not approved"
 
 text = '''

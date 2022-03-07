@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-JPython"
+expression = [ "LicenseRef-JPython" ]
 status = "approved"
 
 text = '''

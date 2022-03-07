@@ -1,6 +1,6 @@
 [license]
 
-expression = "Adobe-2006"
+expression = [ "Adobe-2006" ]
 status = "approved"
 
 text = '''

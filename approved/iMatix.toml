@@ -1,6 +1,6 @@
 [license]
 
-expression = "iMatix"
+expression = [ "iMatix" ]
 status = "approved"
 
 text = '''

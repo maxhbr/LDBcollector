@@ -1,6 +1,6 @@
 [license]
 
-expression = "NCSA"
+expression = [ "NCSA" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "IPL-1.0"
+expression = [ "IPL-1.0" ]
 status = "approved"
 
 text = '''

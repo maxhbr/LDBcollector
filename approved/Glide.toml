@@ -1,6 +1,6 @@
 [license]
 
-expression = "Glide"
+expression = [ "Glide" ]
 status = "approved"
 
 text = '''

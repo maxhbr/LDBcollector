@@ -1,6 +1,6 @@
 [license]
 
-expression = "JasPer-2.0"
+expression = [ "JasPer-2.0" ]
 status = "approved"
 
 text = '''

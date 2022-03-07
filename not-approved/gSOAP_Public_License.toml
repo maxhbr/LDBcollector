@@ -1,6 +1,6 @@
 [license]
 
-expression = "gSOAP-1.3b"
+expression = [ "gSOAP-1.3b" ]
 status = "not approved"
 
 text = '''

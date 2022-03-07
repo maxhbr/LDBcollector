@@ -1,6 +1,6 @@
 [license]
 
-expression = "Saxpath"
+expression = [ "Saxpath" ]
 status = "approved"
 
 text = '''

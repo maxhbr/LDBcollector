@@ -1,6 +1,6 @@
 [license]
 
-expression = "IJG"
+expression = [ "IJG" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "OML"
+expression = [ "OML" ]
 status = "approved"
 
 text = '''

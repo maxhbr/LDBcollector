@@ -1,6 +1,6 @@
 [license]
 
-expression = "SMLNJ"
+expression = [ "SMLNJ" ]
 status = "approved"
 
 text = '''

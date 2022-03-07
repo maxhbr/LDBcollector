@@ -1,6 +1,6 @@
 [license]
 
-expression = "Gnuplot"
+expression = [ "Gnuplot" ]
 status = "approved"
 
 text = '''

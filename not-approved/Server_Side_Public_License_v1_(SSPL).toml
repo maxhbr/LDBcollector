@@ -1,6 +1,6 @@
 [license]
 
-expression = "SSPL-1.0"
+expression = [ "SSPL-1.0" ]
 status = "not approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "BSD-2-Clause-Patent"
+expression = [ "BSD-2-Clause-Patent" ]
 status = "approved"
 
 text = '''

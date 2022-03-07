@@ -1,6 +1,6 @@
 [license]
 
-expression = "NPL-1.0"
+expression = [ "NPL-1.0" ]
 status = "approved"
 
 text = '''

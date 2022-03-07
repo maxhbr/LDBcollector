@@ -1,6 +1,6 @@
 [license]
 
-expression = "TOSL"
+expression = [ "TOSL" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "Zlib"
+expression = [ "Zlib" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "SNIA"
+expression = [ "SNIA" ]
 status = "approved"
 
 text = '''

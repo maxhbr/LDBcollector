@@ -1,6 +1,6 @@
 [license]
 
-expression = "ImageMagick"
+expression = [ "ImageMagick" ]
 status = "approved"
 
 text = '''

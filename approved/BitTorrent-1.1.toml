@@ -1,6 +1,6 @@
 [license]
 
-expression = "BitTorrent-1.1"
+expression = [ "BitTorrent-1.1" ]
 status = "approved"
 
 text = '''

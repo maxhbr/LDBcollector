@@ -1,6 +1,6 @@
 [license]
 
-expression = "Unicode-DFS-2015"
+expression = [ "Unicode-DFS-2015" ]
 status = "approved"
 
 text = '''

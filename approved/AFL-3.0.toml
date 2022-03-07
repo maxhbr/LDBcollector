@@ -1,6 +1,6 @@
 [license]
 
-expression = "AFL-3.0"
+expression = [ "AFL-3.0" ]
 status = "approved"
 
 text = '''

@@ -26,7 +26,7 @@ def write_licenses(outdir, licenses):
         # write output file
         o = open(output_file, "w")
         o.write("[license]\n\n")
-        o.write("expression = \"%s\"\n" % entry["spdx_expression"])
+        o.write("expression = [ \"%s\" ]\n" % entry["spdx_expression"])
         o.write("status = \"not approved\"\n")
 
         if entry["text"] != "":

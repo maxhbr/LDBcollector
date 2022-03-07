@@ -1,6 +1,6 @@
 [license]
 
-expression = "Artistic-1.0-Perl"
+expression = [ "Artistic-1.0-Perl" ]
 status = "not approved"
 
 text = '''

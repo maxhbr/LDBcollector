@@ -1,6 +1,6 @@
 [license]
 
-expression = "Afmparse"
+expression = [ "Afmparse" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "Condor-1.1"
+expression = [ "Condor-1.1" ]
 status = "approved"
 
 text = '''

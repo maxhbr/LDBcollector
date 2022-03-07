@@ -1,6 +1,6 @@
 [license]
 
-expression = "FSFAP"
+expression = [ "FSFAP" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "Nokia"
+expression = [ "Nokia" ]
 status = "approved"
 
 text = '''

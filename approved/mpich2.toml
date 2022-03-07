@@ -1,6 +1,6 @@
 [license]
 
-expression = "mpich2"
+expression = [ "mpich2" ]
 status = "approved"
 
 text = '''

@@ -1,6 +1,6 @@
 [license]
 
-expression = "AMDPLPA"
+expression = [ "AMDPLPA" ]
 status = "approved"
 
 text = '''

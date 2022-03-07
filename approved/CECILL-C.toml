@@ -1,6 +1,6 @@
 [license]
 
-expression = "CECILL-C"
+expression = [ "CECILL-C" ]
 status = "approved"
 
 text = '''

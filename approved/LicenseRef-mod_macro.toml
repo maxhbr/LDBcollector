@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-mod_macro"
+expression = [ "LicenseRef-mod_macro" ]
 status = "approved"
 
 text = '''

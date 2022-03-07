@@ -1,6 +1,6 @@
 [license]
 
-expression = "VSL-1.0"
+expression = [ "VSL-1.0" ]
 status = "approved"
 
 text = '''

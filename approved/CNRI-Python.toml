@@ -1,6 +1,6 @@
 [license]
 
-expression = "CNRI-Python"
+expression = [ "CNRI-Python" ]
 status = "approved"
 
 text = '''

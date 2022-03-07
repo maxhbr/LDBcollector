@@ -1,6 +1,6 @@
 [license]
 
-expression = "WTFPL"
+expression = [ "WTFPL" ]
 status = "approved"
 
 text = '''

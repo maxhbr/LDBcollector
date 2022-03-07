@@ -1,6 +1,6 @@
 [license]
 
-expression = "xpp"
+expression = [ "xpp" ]
 status = "approved"
 
 text = '''

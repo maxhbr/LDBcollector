@@ -1,6 +1,6 @@
 [license]
 
-expression = "Sleepycat"
+expression = [ "Sleepycat" ]
 status = "approved"
 
 text = '''

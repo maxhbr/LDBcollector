@@ -1,6 +1,6 @@
 [license]
 
-expression = "Latex2e"
+expression = [ "Latex2e" ]
 status = "approved"
 
 text = '''

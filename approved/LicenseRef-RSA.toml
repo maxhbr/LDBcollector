@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-RSA"
+expression = [ "LicenseRef-RSA" ]
 status = "approved"
 
 text = '''

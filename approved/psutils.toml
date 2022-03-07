@@ -1,6 +1,6 @@
 [license]
 
-expression = "psutils"
+expression = [ "psutils" ]
 status = "approved"
 
 text = '''

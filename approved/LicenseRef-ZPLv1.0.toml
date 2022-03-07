@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-ZPLv1.0"
+expression = [ "LicenseRef-ZPLv1.0" ]
 status = "approved"
 
 text = '''

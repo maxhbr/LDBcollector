@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-CRC32"
+expression = [ "LicenseRef-CRC32" ]
 status = "approved"
 
 text = '''

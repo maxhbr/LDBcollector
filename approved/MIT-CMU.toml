@@ -1,6 +1,6 @@
 [license]
 
-expression = "MIT-CMU"
+expression = [ "MIT-CMU" ]
 status = "approved"
 
 text = '''

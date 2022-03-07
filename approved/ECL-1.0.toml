@@ -1,6 +1,6 @@
 [license]
 
-expression = "ECL-1.0"
+expression = [ "ECL-1.0" ]
 status = "approved"
 
 text = '''

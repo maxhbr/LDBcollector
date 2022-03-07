@@ -1,6 +1,6 @@
 [license]
 
-expression = "MirOS"
+expression = [ "MirOS" ]
 status = "approved"
 
 text = '''

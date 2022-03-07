@@ -1,6 +1,6 @@
 [license]
 
-expression = "Mup"
+expression = [ "Mup" ]
 status = "approved"
 
 text = '''
