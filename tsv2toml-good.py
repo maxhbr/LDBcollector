@@ -21,12 +21,12 @@ def write_licenses(outdir, licenses, approval):
 
     for license in licenses.keys():
         entry = licenses[license]
-        output_file = os.path.join(outdir, license.replace(" ", "_") + ".toml")
+        output_file = os.path.join(outdir, license.strip().replace(" ", "_") + ".toml")
 
         # write output file
         o = open(output_file, "w")
         o.write("[license]\n\n")
-        o.write("expression = [ \"%s\" ]\n" % license)
+        o.write("expression = [ \"%s\" ]\n" % license.strip())
         o.write("status = \"%s\"\n" % approval)
 
         if entry["text"] != "":
