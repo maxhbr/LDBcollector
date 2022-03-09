@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-CDL" ]
+status = "approved-documentation"
+
+[fedora]
+
+name = [
+    "Apple's Common Documentation License, Version 1.0"
+]
+
+abbreviation = [
+    "CDL"
+]

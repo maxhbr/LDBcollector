@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "GFDL-1.2-no-invariants-only" ]
+status = "approved-documentation"
+
+[fedora]
+
+name = [
+    "GNU Free Documentation License v1.2 only - no invariants"
+]
+
+abbreviation = [
+    "GFDL"
+]

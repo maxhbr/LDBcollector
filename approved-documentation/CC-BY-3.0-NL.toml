@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "CC-BY-3.0-NL" ]
+status = "approved-documentation"
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution license 3.0 Netherlands"
+]
+
+abbreviation = [
+    "CC-BY"
+]

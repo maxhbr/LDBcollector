@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "OPUBL-1.0" ]
+status = "approved-documentation"
+
+[fedora]
+
+name = [
+    "Open Publication License, v1.0"
+]
+
+abbreviation = [
+    "Open Publication"
+]

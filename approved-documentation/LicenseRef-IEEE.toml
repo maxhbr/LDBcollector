@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-IEEE" ]
+status = "approved-documentation"
+
+[fedora]
+
+name = [
+    "IEEE and Open Group Documentation License"
+]
+
+abbreviation = [
+    "IEEE"
+]

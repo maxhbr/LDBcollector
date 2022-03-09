@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "CC-BY-4.0" ]
+status = "approved-documentation"
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution license 4.0"
+]
+
+abbreviation = [
+    "CC-BY"
+]
