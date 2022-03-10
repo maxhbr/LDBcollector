@@ -125,24 +125,35 @@ class LicenseObligationSerializer(ObligationSerializer):
         model = Obligation
         exclude = ["license"]
 
+    # Creates missing generic obligations
+    def to_internal_value(self, data):
+        generic_name = data.pop("generic_name", None)
+        if generic_name is None:
+            return super().to_internal_value(data)
+
+        # When creating new obligation, we link it to a generic obligation if one with
+        # the same **name** exists in base
+        try:
+            data["generic"] = Generic.objects.get(name=generic_name).pk
+            return super().to_internal_value(data)
+        except Generic.DoesNotExist:
+            generic_pk = data.get("generic", None)
+            if generic_pk is not None:
+                try:
+                    Generic.objects.get(pk=generic_pk)
+                except Generic.DoesNotExist:
+                    data["generic"] = Generic.objects.create(name=generic_name).pk
+
+            return super().to_internal_value(data)
+
     @classmethod
     def create(cls, license, validated_data):
-        # When creating new obligation, we link it to a generic obligation if one with
-        # the same **name** exists in base.
-        generic_name = validated_data.pop("generic_name", None)
-        if generic_name is not None:
-            validated_data["generic"] = Generic.objects.get(name=generic_name)
-
         validated_data["license"] = license
         instance = Obligation.objects.create(**validated_data)
         return instance
 
     @classmethod
     def update(cls, instance, license, validated_data):
-        generic_name = validated_data.pop("generic_name", None)
-        if generic_name is not None:
-            validated_data["generic"] = Generic.objects.get(name=generic_name)
-
         validated_data["license"] = license
         for field, value in validated_data.items():
             setattr(instance, field, value)

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from cube.models import License
+from cube.serializers import LicenseSerializer
 
 
 def check_licenses_against_policy(release):
@@ -113,3 +114,16 @@ def explode_SPDX_to_units(SPDX_expr):
             licenses.append(chunks[i])
         i += 1
     return licenses
+
+
+def create_or_update_license(license_dict):
+    try:
+        license_instance = License.objects.get(spdx_id=license_dict["spdx_id"])
+    except License.DoesNotExist:
+        print("Instantiation of a new License: ", license_dict["spdx_id"])
+        license_instance = License(spdx_id=license_dict["spdx_id"])
+        license_instance.save()
+    s = LicenseSerializer(license_instance, data=license_dict)
+    s.is_valid(raise_exception=True)
+    print(s.errors)
+    s.save()
