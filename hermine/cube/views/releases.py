@@ -11,7 +11,12 @@ from django.views import generic
 
 import cube.views.licenses
 from cube.models import Release, Usage, Generic, Derogation, LicenseChoice, License
-from cube.utils.licenses import check_licenses_against_policy, get_licenses_to_check_or_create, explode_SPDX_to_units
+from cube.utils.licenses import (
+    check_licenses_against_policy,
+    get_licenses_to_check_or_create,
+    explode_SPDX_to_units,
+    get_usages_obligations,
+)
 
 
 class ReleaseView(LoginRequiredMixin, generic.DetailView):
@@ -139,33 +144,11 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        generics_involved = set()
-        orphaned_licenses = set()
-
-        for usage in self.object.usage_set.all():
-            for license in usage.licenses_chosen.all():
-                # Those two lines allow filtering obligations depending on the Usage
-                # context (if the component has been modified and how it's being
-                # distributed)
-                obligations_filtered = [
-                    o
-                    for o in license.obligation_set.all()
-                    if usage.component_modified in o.trigger_mdf
-                ]
-                obligations_filtered = [
-                    o
-                    for o in obligations_filtered
-                    if self.matchObligationExploitation(
-                        usage.exploitation, o.trigger_expl
-                    )
-                ]
-                for obligation in obligations_filtered:
-                    if obligation.generic:
-                        generics_involved.add(obligation.generic)
-                    else:
-                        orphaned_licenses.add(license)
+        usages = self.object.usage_set.all()
+        generics_involved, orphaned_licenses = get_usages_obligations(usages)
         context["generics_involved"] = generics_involved
         context["orphaned_licenses"] = orphaned_licenses
+
         return context
 
 

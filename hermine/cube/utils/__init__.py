@@ -3,5 +3,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
+
 def flatten(t):
     return [item for sublist in t for item in sublist]

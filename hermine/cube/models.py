@@ -215,7 +215,14 @@ class Usage(models.Model):
         ("NetworkAccess", "Network access"),
         ("InternalUse", "Internal use"),
     ]
-    MODIFICATION_CHOICES = [("Altered", "Modified"), ("Unmodified", "Not modified")]
+
+    MODIFICATION_ALTERED = "Altered"
+    MODIFICATION_UNMODIFIED = "Unmodified"
+    MODIFICATION_ANY = MODIFICATION_ALTERED + MODIFICATION_UNMODIFIED
+    MODIFICATION_CHOICES = [
+        (MODIFICATION_ALTERED, "Modified"),
+        (MODIFICATION_UNMODIFIED, "Not modified"),
+    ]
 
     release = models.ForeignKey(Release, on_delete=models.CASCADE)
     version = models.ForeignKey(Version, on_delete=models.CASCADE)
@@ -226,7 +233,10 @@ class Usage(models.Model):
     addition_date = models.DateTimeField("date added", blank=True, null=True)
     linking = models.CharField(max_length=20, choices=LINKING_CHOICES, blank=True)
     component_modified = models.CharField(
-        max_length=20, choices=MODIFICATION_CHOICES, blank=True, default="Unmodified"
+        max_length=20,
+        choices=MODIFICATION_CHOICES,
+        blank=True,
+        default=MODIFICATION_UNMODIFIED,
     )
     exploitation = models.CharField(
         max_length=50, choices=EXPLOITATION_CHOICES, default=EXPLOITATION_CHOICES[0][0]
@@ -316,9 +326,12 @@ class Obligation(models.Model):
     ]
 
     TRIGGER_MDF_CHOICES = [
-        ("Altered", "Only if Modified"),
-        ("Unmodified", "Only if Not Modified"),
-        ("AlteredUnmodified", "Modified or Not"),
+        (Usage.MODIFICATION_ALTERED, "Only if Modified"),
+        (Usage.MODIFICATION_UNMODIFIED, "Only if Not Modified"),
+        (
+            Usage.MODIFICATION_ALTERED + Usage.MODIFICATION_UNMODIFIED,
+            "Modified or Not",
+        ),
     ]
 
     PASSIVITY_CHOICES = [("Active", "Active"), ("Passive", "Passive")]
@@ -335,7 +348,9 @@ class Obligation(models.Model):
         max_length=40, choices=TRIGGER_EXPL_CHOICES, default="Distribution"
     )
     trigger_mdf = models.CharField(
-        max_length=40, choices=TRIGGER_MDF_CHOICES, default="AlteredUnmodified"
+        max_length=40,
+        choices=TRIGGER_MDF_CHOICES,
+        default=Usage.MODIFICATION_ANY,
     )
 
     class Meta:

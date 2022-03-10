@@ -127,3 +127,58 @@ def create_or_update_license(license_dict):
     s.is_valid(raise_exception=True)
     print(s.errors)
     s.save()
+
+
+def get_usages_obligations(usages):
+    """
+    Get triggered obligations for a list of usages.
+
+    :param usages: A iterable of Usage objects
+    :return: A tuple with a list of generic and a list of licenses which obligations have no generics
+    """
+    generics_involved = set()
+    orphaned_licenses = set()
+
+    for usage in usages:
+        for license in usage.licenses_chosen.all():
+            # Those two lines allow filtering obligations depending on the Usage
+            # context (if the component has been modified and how it's being
+            # distributed)
+            obligations_filtered = license.obligation_set.filter(
+                trigger_mdf__contains=usage.component_modified
+            )
+            obligations_filtered = [
+                o
+                for o in obligations_filtered
+                if match_obligation_exploitation(usage.exploitation, o.trigger_expl)
+            ]
+            for obligation in obligations_filtered:
+                if obligation.generic:
+                    generics_involved.add(obligation.generic)
+                else:
+                    orphaned_licenses.add(license)
+    return generics_involved, orphaned_licenses
+
+
+def match_obligation_exploitation(expl, explTrigger):
+    """
+    A small utility to check the pertinence of an Obligation in the exploitation
+    context of a usage.
+
+    :param expl: The type of exploitation of the component
+    :type expl: A string in ["Distribution", "DistributionSource",
+        "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
+    :param explTrigger: The type of exploitation that triggers the obligation
+    :type explTrigger: A string in ["Distribution", "DistributionSource",
+        "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
+    :return: True if the exploitation meets the exploitation trigger
+    :rtype: Boolean
+    """
+    if explTrigger in expl:
+        return True
+    elif (
+        explTrigger == "DistributionSource" or explTrigger == "DistributionNonSource"
+    ) and expl == "Distribution":
+        return True
+    else:
+        return False
