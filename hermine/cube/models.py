@@ -208,12 +208,20 @@ class Usage(models.Model):
         ("Fixed", "Problem solved"),
     ]
     ADDITION_CHOICES = [("Scan", "Added by scan"), ("Manual", "Added manually")]
+
+    EXPLOITATION_DISTRIBUTION_SOURCE = "DistributionSource"
+    EXPLOITATION_DISTRIBUTION_NONSOURCE = "DistributionNonSource"
+    EXPLOITATION_DISTRIBUTION_BOTH = (
+        EXPLOITATION_DISTRIBUTION_SOURCE + EXPLOITATION_DISTRIBUTION_NONSOURCE
+    )
+    EXPLOITATION_NETWORK = "NetworkAccess"
+    EXPLOITATION_INTERNAL = "InternalUse"
     EXPLOITATION_CHOICES = [
-        ("Distribution", "Distribution source and object"),
-        ("DistributionSource", "Distribution - Source"),
-        ("DistributionNonSource", "Distribution Non source"),
-        ("NetworkAccess", "Network access"),
-        ("InternalUse", "Internal use"),
+        (EXPLOITATION_DISTRIBUTION_BOTH, "Distribution source and object"),
+        (EXPLOITATION_DISTRIBUTION_SOURCE, "Distribution - Source"),
+        (EXPLOITATION_DISTRIBUTION_NONSOURCE, "Distribution Non source"),
+        (EXPLOITATION_NETWORK, "Network access"),
+        (EXPLOITATION_INTERNAL, "Internal use"),
     ]
 
     MODIFICATION_ALTERED = "Altered"
@@ -318,11 +326,11 @@ class Obligation(models.Model):
     """
 
     TRIGGER_EXPL_CHOICES = [
-        ("Distribution", "Distribution Source or Object"),
-        ("DistributionSource", "Distribution of Source Code"),
-        ("DistributionNonSource", "Distribution Non Source"),
-        ("NetworkAccess", "Network Access"),
-        ("InternalUse", "Internal Use"),
+        (Usage.EXPLOITATION_DISTRIBUTION_BOTH, "Distribution Source or Object"),
+        (Usage.EXPLOITATION_DISTRIBUTION_SOURCE, "Distribution of Source Code"),
+        (Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE, "Distribution Non Source"),
+        (Usage.EXPLOITATION_NETWORK, "Network Access"),
+        (Usage.EXPLOITATION_INTERNAL, "Internal Use"),
     ]
 
     TRIGGER_MDF_CHOICES = [
@@ -345,7 +353,9 @@ class Obligation(models.Model):
     passivity = models.CharField(max_length=20, choices=PASSIVITY_CHOICES, blank=True)
 
     trigger_expl = models.CharField(
-        max_length=40, choices=TRIGGER_EXPL_CHOICES, default="Distribution"
+        max_length=40,
+        choices=TRIGGER_EXPL_CHOICES,
+        default=Usage.EXPLOITATION_DISTRIBUTION_BOTH,
     )
     trigger_mdf = models.CharField(
         max_length=40,

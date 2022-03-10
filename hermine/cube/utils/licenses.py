@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+from django.db.models import Q
+
 from cube.models import License
 from cube.serializers import LicenseSerializer
 
@@ -150,7 +152,10 @@ def get_usages_obligations(usages):
             obligations_filtered = [
                 o
                 for o in obligations_filtered
-                if match_obligation_exploitation(usage.exploitation, o.trigger_expl)
+                if (
+                    o.trigger_expl in usage.exploitation
+                    or usage.exploitation in o.trigger_expl
+                )  # Poor man bitwise OR
             ]
             for obligation in obligations_filtered:
                 if obligation.generic:
@@ -158,27 +163,3 @@ def get_usages_obligations(usages):
                 else:
                     orphaned_licenses.add(license)
     return generics_involved, orphaned_licenses
-
-
-def match_obligation_exploitation(expl, explTrigger):
-    """
-    A small utility to check the pertinence of an Obligation in the exploitation
-    context of a usage.
-
-    :param expl: The type of exploitation of the component
-    :type expl: A string in ["Distribution", "DistributionSource",
-        "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
-    :param explTrigger: The type of exploitation that triggers the obligation
-    :type explTrigger: A string in ["Distribution", "DistributionSource",
-        "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
-    :return: True if the exploitation meets the exploitation trigger
-    :rtype: Boolean
-    """
-    if explTrigger in expl:
-        return True
-    elif (
-        explTrigger == "DistributionSource" or explTrigger == "DistributionNonSource"
-    ) and expl == "Distribution":
-        return True
-    else:
-        return False
