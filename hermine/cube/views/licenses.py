@@ -72,7 +72,7 @@ def create_or_update_license(request, license):
         license_instance = License.objects.get(spdx_id=license["spdx_id"])
     except License.DoesNotExist:
         print("Instantiation of a new License: ", license["spdx_id"])
-        license_instance = License()
+        license_instance = License(spdx_id=license["spdx_id"])
         license_instance.save()
     s = LicenseSerializer(license_instance, data=license)
     s.is_valid(raise_exception=True)
