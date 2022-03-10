@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-from unittest import TestCase
+from django.test import TestCase
 
 from cube.models import Generic
 from cube.utils.licenses import create_or_update_license
