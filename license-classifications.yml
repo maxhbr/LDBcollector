@@ -812,6 +812,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/W3C-20150513.html
+  - id: "W3C-20150513"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/W3C.html
   - id: "W3C-style"
     categories:
@@ -837,6 +843,12 @@ categorizations:
 
   # https://spdx.org/licenses/Zlib.html
   - id: "Zlib"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/zlib-acknowledgement.html
+  - id: "zlib-acknowledgement"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -1288,6 +1300,15 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/LLVM-exception.html
+  - id: "LLVM-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-ada-linking-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
 
   - id: "Universal-FOSS-exception-1.0"
     categories:
@@ -3757,5 +3778,46 @@ categorizations:
 
   # Proprietary recipes for Yocto.
   - id: "LicenseRef-CLOSED"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-scancode-ms-net-library-2018-11"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-scancode-ms-net-library"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-scancode-ms-asp-net-web-optimization-framework"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-scancode-unknown-license-reference"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-scancode-free-unknown"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-scancode-unknown"
+    categories:
+      - "property:unclear-scanner-finding"
+
+  - id: "LicenseRef-scancode-bytemark"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-generic-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-mit-addition"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ms-patent-promise"
     categories:
       - "irrelevant"
