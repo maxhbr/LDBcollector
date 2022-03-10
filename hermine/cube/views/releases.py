@@ -160,8 +160,8 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
                     )
                 ]
                 for obligation in obligations_filtered:
-                    if cube.views.licenses.generic:
-                        generics_involved.add(cube.views.licenses.generic)
+                    if obligation.generic:
+                        generics_involved.add(obligation.generic)
                     else:
                         orphaned_licenses.add(license)
         context["generics_involved"] = generics_involved
