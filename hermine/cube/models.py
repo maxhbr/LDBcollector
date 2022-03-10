@@ -54,6 +54,10 @@ class Release(models.Model):
     def __str__(self):
         return self.product.__str__() + " " + self.release_number
 
+    class Meta:
+        verbose_name = "Product release"
+        verbose_name_plural = "Product releases"
+
 
 class Team(models.Model):
     name = models.CharField(max_length=200)
@@ -115,6 +119,10 @@ class Version(models.Model):
 
     def __str__(self):
         return self.component.__str__() + ":" + self.version_number
+
+    class Meta:
+        verbose_name = "Component version"
+        verbose_name_plural = "Component versions"
 
 
 class LicenseManager(models.Manager):
@@ -231,6 +239,10 @@ class Usage(models.Model):
     def __str__(self):
         return self.release.__str__() + " <=> " + self.version.__str__()
 
+    class Meta:
+        verbose_name = "Component usage"
+        verbose_name_plural = "Component usages"
+
 
 class Generic(models.Model):
     """A Generic obligation which is the simplification of the instances of several
@@ -268,6 +280,10 @@ class Generic(models.Model):
 
     def __str__(self):
         return ("[Core]" if self.in_core else "") + self.name
+
+    class Meta:
+        verbose_name = "Generic obligation"
+        verbose_name_plural = "Generic obligations"
 
 
 class Obligation(models.Model):
