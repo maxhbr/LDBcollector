@@ -1,0 +1,21 @@
+---
+id: "Crate::regex:1.4.3"
+vcs:
+  type: "Git"
+  url: "https://github.com/rust-lang/regex.git"
+  revision: "373d5ca4c594f5018be95cae3ad5b9dfc602945d"
+path_excludes:
+  - pattern: "**/*test*/**"
+    reason: "TEST_OF"
+  - pattern: "**/examples/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "bench/**"
+    reason: "TEST_OF"
+  - pattern: "examples/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "fuzz/**"
+    reason: "TEST_OF"
+  - pattern: "regex-debug/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"

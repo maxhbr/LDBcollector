@@ -1,0 +1,17 @@
+---
+id: "Crate::regex-automata:0.1.8"
+vcs:
+  type: "Git"
+  url: "https://github.com/BurntSushi/regex-automata.git"
+  revision: "58516d01ae12c6cae59b53c1326b06a950be6326"
+path_excludes:
+  - pattern: "bench/**"
+    reason: "TEST_OF"
+  - pattern: "ci/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "data/**"
+    reason: "TEST_OF"
+  - pattern: "regex-automata-debug/**"
+    reason: "TEST_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"

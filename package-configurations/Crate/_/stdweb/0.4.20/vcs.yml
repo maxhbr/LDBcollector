@@ -1,0 +1,17 @@
+---
+id: "Crate::stdweb:0.4.20"
+vcs:
+  type: "Git"
+  url: "https://github.com/koute/stdweb.git"
+  revision: "9b418d98df6fafaa4d4b87b04c304d0220292055"
+path_excludes:
+  - pattern: "benchmarks/**"
+    reason: "TEST_OF"
+  - pattern: "ci/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "examples/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "standalone-tests/**"
+    reason: "TEST_OF"
+  - pattern: "stdweb-internal-test-macro/**"
+    reason: "TEST_OF"

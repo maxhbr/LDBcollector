@@ -1,0 +1,13 @@
+---
+id: "Crate::memchr:2.4.1"
+vcs:
+  type: "Git"
+  url: "https://github.com/BurntSushi/memchr.git"
+  revision: "8e1da98fee06d66c13e66c330e3a3dd6ccf0e3a0"
+path_excludes:
+  - pattern: "ci/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "bench/**"
+    reason: "TEST_OF"
+  - pattern: "fuzz/**"
+    reason: "TEST_OF"
