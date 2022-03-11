@@ -1,0 +1,15 @@
+---
+id: "PyPI::pbr:5.5.1"
+vcs:
+  type: "Git"
+  url: "https://opendev.org/openstack/pbr.git"
+  revision: "5150198c294802f82ddc7ed5765546653bc19adf"
+path_excludes:
+  - pattern: "doc/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "pbr/tests/**"
+    reason: "TEST_OF"
+  - pattern: "playbooks/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

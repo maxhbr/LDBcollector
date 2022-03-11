@@ -1,0 +1,13 @@
+---
+id: "PyPI::pyparsing:2.4.7"
+vcs:
+  type: "Git"
+  url: "https://github.com/pyparsing/pyparsing.git"
+  revision: "6a844ee35ca5125490a28dbd6dd2d15b6498e605"
+path_excludes:
+  - pattern: "docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "examples/**"
+    reason: "EXAMPLE_OF"
+  - pattern: "test/**"
+    reason: "TEST_OF"

@@ -1,0 +1,18 @@
+---
+id: "PyPI::numpy:1.19.1"
+source_artifact_url: "https://files.pythonhosted.org/packages/2c/2f/7b4d0b639a42636362827e611cfeba67975ec875ae036dd846d459d52652/numpy-1.19.1.zip"
+path_excludes:
+  - pattern: "numpy-1.19.1/benchmarks/**"
+    reason: "TEST_OF"
+  - pattern: "numpy-1.19.1/doc/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "numpy-1.19.1/numpy/testing/**"
+    reason: "TEST_OF"
+license_finding_curations:
+  - path: "numpy-1.19.1/doc/neps/nep-0038-SIMD-optimizations.rst"
+    start_lines: "258"
+    line_count: 1
+    detected_license: "GPL-3.0-only"
+    concluded_license: "NONE"
+    reason: "REFERENCE"
+    comment: "Match in related work section on '`VOLK`_ is a GPL3 library'."

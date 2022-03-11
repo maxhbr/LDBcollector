@@ -1,0 +1,11 @@
+---
+id: "PyPI::wcwidth:0.2.5"
+vcs:
+  type: "Git"
+  url: "https://github.com/jquast/wcwidth.git"
+  revision: "29c32b382e3cca9f424020b38b31fee2cf416e00"
+path_excludes:
+  - pattern: "docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "tests/**"
+    reason: "DOCUMENTATION_OF"

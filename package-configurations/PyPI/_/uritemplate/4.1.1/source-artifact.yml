@@ -1,0 +1,8 @@
+---
+id: "PyPI::uritemplate:4.1.1"
+source_artifact_url: "https://files.pythonhosted.org/packages/d2/5a/4742fdba39cd02a56226815abfa72fe0aa81c33bed16ed045647d6000eba/uritemplate-4.1.1.tar.gz"
+path_excludes:
+  - pattern: "docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"

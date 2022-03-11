@@ -1,0 +1,11 @@
+---
+id: "PyPI::ldap3:2.9.1"
+vcs:
+  type: "Git"
+  url: "https://github.com/cannatag/ldap3.git"
+  revision: "3a2f89663c73d862b8ba7ca9e974012952ed3024"
+path_excludes:
+  - pattern: "docs/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "test/**"
+    reason: "TEST_OF"

@@ -1,0 +1,8 @@
+---
+id: "PyPI::pygments:2.7.3"
+source_artifact_url: "https://files.pythonhosted.org/packages/29/60/8ff9dcb5eac7f4da327ba9ecb74e1ad783b2d32423c06ef599e48c79b1e1/Pygments-2.7.3.tar.gz"
+path_excludes:
+  - pattern: "Pygments-2.7.3/doc/**"
+    reason: "DOCUMENTATION_OF"
+  - pattern: "Pygments-2.7.3/tests/**"
+    reason: "TEST_OF"
