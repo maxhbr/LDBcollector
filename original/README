@@ -1,0 +1,13 @@
+These *.tsv files are the original source files used to create the
+TOML files with the license data.  They came from a Google Spreadsheet
+over the course of a year of discussions and meetings combing through
+Fedora's license information on the wiki and various documentation
+sources.
+
+Here's how these files map to the TOML collections:
+
+bad.tsv                -> not-approved/
+good-content.tsv       -> approved-content/
+good-documentation.tsv -> approved-documentation/
+good-fonts.tsv         -> approved-fonts/
+good.tsv               -> approved/
