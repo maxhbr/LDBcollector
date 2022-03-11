@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:code-unit:1.0.8"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/code-unit.git"
+  revision: "1fc9f64c0927627ef78ba436c9b17d967e68e120"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

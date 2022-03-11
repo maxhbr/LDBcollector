@@ -1,0 +1,13 @@
+---
+id: "Composer:phpunit:php-code-coverage:9.2.15"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/php-code-coverage.git"
+  revision: "2e9da11878c4202f97915c1cb4bb1ca318a63f5f"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

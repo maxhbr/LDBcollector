@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:exporter:4.0.4"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/exporter.git"
+  revision: "65e8b7db476c5dd267e65eea9cab77584d3cfff9"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

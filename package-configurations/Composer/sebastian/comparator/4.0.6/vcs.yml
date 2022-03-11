@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:comparator:4.0.6"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/comparator.git"
+  revision: "55f4261989e546dc112258c7a75935a81a7ce382"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

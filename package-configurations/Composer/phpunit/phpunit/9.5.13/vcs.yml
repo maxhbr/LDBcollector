@@ -1,0 +1,15 @@
+---
+id: "Composer:phpunit:phpunit:9.5.13"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/phpunit.git"
+  revision: "597cb647654ede35e43b137926dfdfef0fb11743"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "build/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

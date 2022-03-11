@@ -1,0 +1,13 @@
+---
+id: "Composer:phpunit:php-file-iterator:3.0.5"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/php-file-iterator.git"
+  revision: "aa4be8575f26070b100fccb67faabb28f21f66f8"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

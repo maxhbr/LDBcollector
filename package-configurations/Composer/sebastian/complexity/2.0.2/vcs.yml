@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:complexity:2.0.2"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/complexity.git"
+  revision: "739b35e53379900cc9ac327b2147867b8b6efd88"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

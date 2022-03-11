@@ -1,0 +1,13 @@
+---
+id: "Composer:phpunit:php-timer:5.0.3"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/php-timer.git"
+  revision: "5a63ce20ed1b5bf577850e2c4e87f4aa902afbd2"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

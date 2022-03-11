@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:lines-of-code:1.0.3"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/lines-of-code.git"
+  revision: "c1c2e997aa3146983ed888ad08b15470a2e22ecc"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

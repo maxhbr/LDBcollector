@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:object-reflector:2.0.4"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/object-reflector.git"
+  revision: "b4f479ebdbf63ac605d183ece17d8d7fe49c15c7"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"

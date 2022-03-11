@@ -1,0 +1,13 @@
+---
+id: "Composer:sebastian:cli-parser:1.0.1"
+vcs:
+  type: "Git"
+  url: "https://github.com/sebastianbergmann/cli-parser.git"
+  revision: "442e7c7e687e42adc03470c7b668bc4b2402c0b2"
+path_excludes:
+  - pattern: ".github/**"
+    reason: "BUILD_TOOL_OF"
+  - pattern: "tests/**"
+    reason: "TEST_OF"
+  - pattern: "tools/**"
+    reason: "BUILD_TOOL_OF"
