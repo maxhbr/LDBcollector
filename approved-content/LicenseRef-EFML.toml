@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-EFML" ]
+status = "approved-content"
+
+[fedora]
+
+name = [
+    "Ethymonics Free Music License"
+]
+
+abbreviation = [
+    "EFML"
+]

@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "etalab-2.0" ]
+status = "approved-content"
+
+[fedora]
+
+name = [
+    "License Ouverte"
+]
+
+abbreviation = [
+    "Ouverte"
+]

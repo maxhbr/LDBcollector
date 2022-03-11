@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "LicenseRef-DMTF" ]
+status = "approved-content"
+
+[fedora]
+
+name = [
+    "Distributed Management Task Force License"
+]
+
+abbreviation = [
+    "DMTF"
+]

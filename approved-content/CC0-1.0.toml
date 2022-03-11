@@ -1,0 +1,14 @@
+[license]
+
+expression = [ "CC0-1.0" ]
+status = "approved-content"
+
+[fedora]
+
+name = [
+    "Creative Commons Zero 1.0 Universal"
+]
+
+abbreviation = [
+    "CC0"
+]

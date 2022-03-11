@@ -1,0 +1,42 @@
+Creative Commons Attribution license 1.0	CC-BY	CC-BY-1.0	YES		https://creativecommons.org/licenses/by/1.0/legalcode	
+Creative Commons Attribution license 2.0	CC-BY	CC-BY-2.0	YES		https://creativecommons.org/licenses/by/2.0/legalcode	
+Creative Commons Attribution license 2.5	CC-BY	CC-BY-2.5 	YES		https://creativecommons.org/licenses/by/2.5/legalcode	
+Creative Commons Attribution license 2.5 Australia	CC-BY	CC-BY-2.5-AU	YES		https://creativecommons.org/licenses/by/2.5/au/legalcode	
+Creative Commons Attribution license 3.0	CC-BY	CC-BY-3.0 	YES		https://creativecommons.org/licenses/by/3.0/legalcode	
+Creative Commons Attribution license 3.0 Austria	CC-BY	CC-BY-3.0-AT 	YES		https://creativecommons.org/licenses/by/3.0/at/legalcode	
+Creative Commons Attribution license 3.0 Germany	CC-BY	CC-BY-3.0-DE	YES		https://creativecommons.org/licenses/by/3.0/de/legalcode	
+Creative Commons Attribution license 3.0 Netherlands	CC-BY	CC-BY-3.0-NL	YES		https://creativecommons.org/licenses/by/3.0/nl/legalcode	
+Creative Commons Attribution license 3.0 United States	CC-BY	CC-BY-3.0-US	YES		https://creativecommons.org/licenses/by/3.0/us/legalcode	
+Creative Commons Attribution license 4.0	CC-BY	CC-BY-4.0	YES		https://creativecommons.org/licenses/by/4.0/legalcode	
+						
+Creative Commons Attribution-ShareAlike 1.0	CC-BY-SA	CC-BY-SA-1.0 	YES		https://creativecommons.org/licenses/by-sa/1.0/legalcode	
+Creative Commons Attribution-ShareAlike 2.0	CC-BY-SA	CC-BY-SA-2.0	YES		https://creativecommons.org/licenses/by-sa/2.0/legalcode	
+Creative Commons Attribution-ShareAlike2.0 England and Wales	CC-BY-SA	CC-BY-SA-2.0-UK 	YES		https://creativecommons.org/licenses/by-sa/2.0/uk/legalcode	
+Creative Commons Attribution-ShareAlike 2.1 Japan	CC-BY-SA	CC-BY-SA-2.1-JP 	YES		https://creativecommons.org/licenses/by-sa/2.1/jp/legalcode	
+Creative Commons Attribution-ShareAlike 2.5	CC-BY-SA	CC-BY-SA-2.5 	YES		https://creativecommons.org/licenses/by-sa/2.5/legalcode	
+Creative Commons Attribution-ShareAlike 3.0	CC-BY-SA	CC-BY-SA-3.0	YES		https://creativecommons.org/licenses/by-sa/3.0/legalcode	
+Creative Commons Attribution-ShareAlike 3.0 Austria	CC-BY-SA	CC-BY-SA-3.0-AT  	YES		https://creativecommons.org/licenses/by-sa/3.0/at/legalcode	
+Creative Commons Attribution-ShareAlike 3.0 Germany	CC-BY-SA	CC-BY-SA-3.0-DE  	YES		https://creativecommons.org/licenses/by-sa/3.0/de/legalcode	
+Creative Commons Attribution-ShareAlike 4.0	CC-BY-SA	CC-BY-SA-4.0 	YES		https://creativecommons.org/licenses/by-sa/4.0/legalcode	
+						
+Creative Commons Attribution-NoDerivs	CC-BY-ND	CC-BY-ND-1.0                	YES		http://creativecommons.org/licenses/by-nd/4.0/	
+Creative Commons Attribution-NoDerivs	CC-BY-ND	CC-BY-ND-2.0                                 	YES		http://creativecommons.org/licenses/by-nd/4.0/	
+Creative Commons Attribution-NoDerivs	CC-BY-ND	CC-BY-ND-2.5 	YES		http://creativecommons.org/licenses/by-nd/4.0/	
+Creative Commons Attribution-NoDerivs	CC-BY-ND	CC-BY-ND-3.0	YES		http://creativecommons.org/licenses/by-nd/4.0/	
+Creative Commons Attribution-NoDerivs	CC-BY-ND	CC-BY-ND-3.0-DE                	YES		http://creativecommons.org/licenses/by-nd/4.0/	
+Creative Commons Attribution-NoDerivs	CC-BY-ND	CC-BY-ND-4.0                     	YES		http://creativecommons.org/licenses/by-nd/4.0/	
+						
+Creative Commons Zero 1.0 Universal	CC0	CC0-1.0	YES		http://creativecommons.org/publicdomain/zero/1.0/legalcode	
+Data license Germany - attribution 2.0	DL-DE-BY	DL-DE-BY-2.0	YES		https://www.govdata.de/dl-de/by-2-0	
+Design Science License	DSL	LicenseRef-DSL	NO	not in current Fedora	http://www.fsf.org/licensing/licenses/dsl.html	
+Distributed Management Task Force License	DMTF	LicenseRef-DMTF	NO	only 1 package found in Fedora - https://sourcegraph.com/src.fedoraproject.org/rpms/cim-schema/-/blob/cim-schema.spec - but has MIT at top of spec file?? 	https://fedoraproject.org/wiki/Licensing/DMTF	
+EFF Open Audio License v1	OAL	LicenseRef-OAL	NO	only 1 package found in Fedora - https://sourcegraph.com/src.fedoraproject.org/rpms/freedink-data/-/blob/freedink-data.spec - license info for this package seems very complex??? unmaintained GNU game project	https://fedoraproject.org/wiki/Licensing/OpenAudioLicense	
+Ethymonics Free Music License	EFML	LicenseRef-EFML	NO	only 1 pakcage found in Fedora (music) - https://sourcegraph.com/src.fedoraproject.org/rpms/trackballs-music/-/blob/trackballs-music.spec	https://fedoraproject.org/wiki/Licensing/Ethymonics_Free_Music_License	
+Free Art License	Free Art	LAL-1.3	YES		http://artlibre.org/licence/lal/en/	
+						
+GeoGratis Licence Agreement	GeoGratis	LicenseRef-GeoGratis	?	only found in 1 package in Fedora - https://sourcegraph.com/src.fedoraproject.org/rpms/mapnik/-/blob/mapnik.spec - and only for demo utility sub-package. not even sure what the text of this license is b/c link here is broken	http://geogratis.cgdi.gc.ca/geogratis/en/licence.jsp	
+License Ouverte	Ouverte	etalab-2.0	YES		https://www.etalab.gouv.fr/licence-ouverte-open-licence	
+LinuxTag Green OpenMusic License	Green OpenMusic	LicenseRef-OpenMusic	NO	not in current Fedora	http://openmusic.linuxtag.org/green.html	
+Open Data Commons Public Domain Dedication and Licence	PDDL-1.0	PDDL-1.0	YES		https://fedoraproject.org/wiki/Licensing/PDDL	
+Open Data License (GeoLite Country and GeoLite City databases)	BSD with advertising	LicenseRef-OpenData			https://fedoraproject.org/wiki/Licensing/BSD#OpenData_Variant	This is similar to BSD-4-Clause, but removes reference to source and binary forms.
+Open Data Commons Open Database License	ODbl-1.0	ODbl-1.0	YES		https://opendatacommons.org/licenses/odbl/	ODbL-1.0 is an approved license specifically for content, but it should be noted that the elements of the covered dataset also must be under terms acceptable to Fedora.
