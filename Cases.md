@@ -14,7 +14,7 @@ ___
 ### Urheberrecht und Wettbewerbsrecht
 ___
 
-#### LG Manheim, Vergleich v. 27.12.2021, Az. 7 O 2/21
+#### LG Mannheim, Vergleich v. 27.12.2021, Az. 7 O 2/21
 
 Ayuso, Welte, Kedlecsik v. McHardy: Vergleich zu GPL-Durchsetzung 
 
