@@ -116,63 +116,64 @@ proprietäre Software überführen.
 1. MIT License: https://spdx.org/licenses/MIT.html#licenseText
 1. Mozart License: http://mozart.github.io/license-info/license.html
 1. Mulan Permissive Software License，Version 1 (Mulan PSL v1): http://license.coscl.org.cn/MulanPSL/
-1. Naumen Public License: http://www.worldlii.org/int/other/PubRL/2009/42.html
-1. NTP License: https://www.eecis.udel.edu/~mills/ntp/html/copyright.html
-1. NUnit License: http://nunit.org/docs/2.4/license.html
-1. OGC Software License, Version 1.0: https://www.ogc.org/ogc/software/1.0
-1. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
-1. Open Media Group Open Source License: https://web.archive.org/web/20090213173457/http://www.openmediagroup.com/license.html
-1. OpenLDAP Public License (v. 1.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=806557a5ad59804ef3a44d5abfbe91d706b0791f
-1. OpenLDAP Public License (v. 1.2): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7
-1. OpenLDAP Public License (v. 1.3): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=e5f8117f0ce088d0bd7a8e18ddf37eaa40eb09b1
-1. OpenLDAP Public License (v. 1.4): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=c9f95c2f3f2ffb5e0ae55fe7388af75547660941
-1. OpenLDAP Public License (v. 2.0): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea
-1. OpenLDAP Public License (v. 2.0.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=b6d68acd14e51ca3aab4428bf26522aa74873f0e
-1. OpenLDAP Public License (v. 2.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=b0d176738e96a0d3b9f85cb51e140a86f21be715
-1. OpenLDAP Public License (v. 2.2): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=470b0c18ec67621c85881b2733057fecf4a1acc3
-1. OpenLDAP Public License (v. 2.3): http://www.mibsoftware.com/librock/librock/license/oldap2_3.txt
-1. OpenLDAP Public License (v. 2.4): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cd1284c4a91a8a380d904eee68d1583f989ed386
-1. OpenLDAP Public License (v. 2.5): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=6852b9d90022e8593c98205413380536b1b5a7cf
-1. OpenLDAP Public License (v. 2.6): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=1cae062821881f41b73012ba816434897abf4205
-1. OpenLDAP Public License (v. 2.7): http://www.openldap.org/doc/admin21/license.html
-1. OpenLDAP Public License (v. 2.8): http://www.openldap.org/software/release/license.html
-1. OpenSSL License (Einordnung unklar): http://www.openssl.org/source/license.html
-1. Pangeia Informatica Copyright (v. 1.2): http://www.chkrootkit.org/COPYRIGHT
-1. Phorum License (v. 2.0): http://phorum.org/license.txt
-1. PHP License (v. 3.0): http://www.php.net/license/3_0.txt
-1. PHP License (v. 3.1): http://www.php.net/license/3_01.txt
-1. PostgreSQL License: https://www.postgresql.org/about/licence/
-1. Privaria Attribution Assurance License: https://web.archive.org/web/20050305170641/http://eepatents.com/privaria/#license
-1. Python 2.0.1 License: https://www.python.org/download/releases/2.0.1/license/
-1. Python 2.4.2 license: http://www.python.org/download/releases/2.4.2/license/
-1. Python Software Foundation License (v. 2): https://www.python.org/download/releases/2.7.7/license/
-1. Ruby License: http://www.ruby-lang.org/en/LICENSE.txt
-1. Sendmail License: http://www.sendmail.org/ftp/LICENSE
-1. skyBuilders Open Source License: http://www.skybuilders.com/OpenSourceLicense.html
-1. SpeechWorks Public License - Software (v. 1.1): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
-1. Standard ML of New Jersey Copyright Notice: http://cm.bell-labs.com/cm/cs/what/smlnj/license.html
-1. Suneido Free Software License: http://suneido.com/wp-content/uploads/delightful-downloads/2014/10/free_license.txt
-1. Tcl/Tk License Terms: http://www.tcl.tk/software/tcltk/license.html
-1. Tea Software License: http://teatrove.sourceforge.net/license.html
-1. The "No problem Bugroff" license: http://tunes.org/legalese/bugroff.html
-1. The SpeechWorks Public License (v. 1.1 ): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
-1. Trusster Open Source License (v. 1.0a): https://github.com/trusster/trusster/blob/master/truss/cpp/src/truss_verification_top.cpp
-1. Udanax Open-Source License: http://udanax.xanadu.com/license.html
-1. Universal Permissive License (v. 1.0): http://www.oracle.com/technetwork/licenses/upl-license-2927578.html
-1. University of Illinois/NCSA Open Source License (NSCA): https://web.archive.org/web/20100814031321/http://otm.illinois.edu/uiuc_openSource
-1. Unlicense: http://unlicense.org/
-1. Vovida Software License v 1.0: https://web.archive.org/web/20050410031206/http://www.vovida.org/document/VOCAL-1.4.0/license.txt
-1. W3C Software and Document Notice and License: http://www.w3.org/Consortium/Legal/copyright-software.html
-1. Wide Open License (WOL): http://www.dspguru.com/wol2.htm
-1. X11 License: http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3
-1. X Window System License: https://web.archive.org/web/20050406051821/%20http://www.x.org/Downloads_terms.html
-1. X.Net License: http://www.xnetinc.com/xiua/copyright.htm
-1. XFree86 Licence: http://www.xfree86.org/legal/licenses.html
-1. xinetd License: https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
-1. Zlib license: http://www.gzip.org/zlib/zlib_license.html
-1. Zope Public License (v. 1.1): http://old.zope.org/Resources/License/ZPL-1.1
-1. Zope Public License (v. 2.0): http://old.zope.org/Resources/License/ZPL-2.0
-1. Zope Public License (v. 2.1): https://web.archive.org/web/20060426220850/http://www.zope.org:80/Resources/ZPL/
+2. Mulan Permissive Software License，Version 2 (Mulan PSL v2): http://license.coscl.org.cn/MulanPSL2/
+3. Naumen Public License: http://www.worldlii.org/int/other/PubRL/2009/42.html
+4. NTP License: https://www.eecis.udel.edu/~mills/ntp/html/copyright.html
+5. NUnit License: http://nunit.org/docs/2.4/license.html
+6. OGC Software License, Version 1.0: https://www.ogc.org/ogc/software/1.0
+7. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
+8. Open Media Group Open Source License: https://web.archive.org/web/20090213173457/http://www.openmediagroup.com/license.html
+9. OpenLDAP Public License (v. 1.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=806557a5ad59804ef3a44d5abfbe91d706b0791f
+10. OpenLDAP Public License (v. 1.2): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7
+11. OpenLDAP Public License (v. 1.3): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=e5f8117f0ce088d0bd7a8e18ddf37eaa40eb09b1
+12. OpenLDAP Public License (v. 1.4): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=c9f95c2f3f2ffb5e0ae55fe7388af75547660941
+13. OpenLDAP Public License (v. 2.0): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea
+14. OpenLDAP Public License (v. 2.0.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=b6d68acd14e51ca3aab4428bf26522aa74873f0e
+15. OpenLDAP Public License (v. 2.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=b0d176738e96a0d3b9f85cb51e140a86f21be715
+16. OpenLDAP Public License (v. 2.2): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=470b0c18ec67621c85881b2733057fecf4a1acc3
+17. OpenLDAP Public License (v. 2.3): http://www.mibsoftware.com/librock/librock/license/oldap2_3.txt
+18. OpenLDAP Public License (v. 2.4): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cd1284c4a91a8a380d904eee68d1583f989ed386
+19. OpenLDAP Public License (v. 2.5): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=6852b9d90022e8593c98205413380536b1b5a7cf
+20. OpenLDAP Public License (v. 2.6): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=1cae062821881f41b73012ba816434897abf4205
+21. OpenLDAP Public License (v. 2.7): http://www.openldap.org/doc/admin21/license.html
+22. OpenLDAP Public License (v. 2.8): http://www.openldap.org/software/release/license.html
+23. OpenSSL License (Einordnung unklar): http://www.openssl.org/source/license.html
+24. Pangeia Informatica Copyright (v. 1.2): http://www.chkrootkit.org/COPYRIGHT
+25. Phorum License (v. 2.0): http://phorum.org/license.txt
+26. PHP License (v. 3.0): http://www.php.net/license/3_0.txt
+27. PHP License (v. 3.1): http://www.php.net/license/3_01.txt
+28. PostgreSQL License: https://www.postgresql.org/about/licence/
+29. Privaria Attribution Assurance License: https://web.archive.org/web/20050305170641/http://eepatents.com/privaria/#license
+30. Python 2.0.1 License: https://www.python.org/download/releases/2.0.1/license/
+31. Python 2.4.2 license: http://www.python.org/download/releases/2.4.2/license/
+32. Python Software Foundation License (v. 2): https://www.python.org/download/releases/2.7.7/license/
+33. Ruby License: http://www.ruby-lang.org/en/LICENSE.txt
+34. Sendmail License: http://www.sendmail.org/ftp/LICENSE
+35. skyBuilders Open Source License: http://www.skybuilders.com/OpenSourceLicense.html
+36. SpeechWorks Public License - Software (v. 1.1): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
+37. Standard ML of New Jersey Copyright Notice: http://cm.bell-labs.com/cm/cs/what/smlnj/license.html
+38. Suneido Free Software License: http://suneido.com/wp-content/uploads/delightful-downloads/2014/10/free_license.txt
+39. Tcl/Tk License Terms: http://www.tcl.tk/software/tcltk/license.html
+40. Tea Software License: http://teatrove.sourceforge.net/license.html
+41. The "No problem Bugroff" license: http://tunes.org/legalese/bugroff.html
+42. The SpeechWorks Public License (v. 1.1 ): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
+43. Trusster Open Source License (v. 1.0a): https://github.com/trusster/trusster/blob/master/truss/cpp/src/truss_verification_top.cpp
+44. Udanax Open-Source License: http://udanax.xanadu.com/license.html
+45. Universal Permissive License (v. 1.0): http://www.oracle.com/technetwork/licenses/upl-license-2927578.html
+46. University of Illinois/NCSA Open Source License (NSCA): https://web.archive.org/web/20100814031321/http://otm.illinois.edu/uiuc_openSource
+47. Unlicense: http://unlicense.org/
+48. Vovida Software License v 1.0: https://web.archive.org/web/20050410031206/http://www.vovida.org/document/VOCAL-1.4.0/license.txt
+49. W3C Software and Document Notice and License: http://www.w3.org/Consortium/Legal/copyright-software.html
+50. Wide Open License (WOL): http://www.dspguru.com/wol2.htm
+51. X11 License: http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3
+52. X Window System License: https://web.archive.org/web/20050406051821/%20http://www.x.org/Downloads_terms.html
+53. X.Net License: http://www.xnetinc.com/xiua/copyright.htm
+54. XFree86 Licence: http://www.xfree86.org/legal/licenses.html
+55. xinetd License: https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
+56. Zlib license: http://www.gzip.org/zlib/zlib_license.html
+57. Zope Public License (v. 1.1): http://old.zope.org/Resources/License/ZPL-1.1
+58. Zope Public License (v. 2.0): http://old.zope.org/Resources/License/ZPL-2.0
+59. Zope Public License (v. 2.1): https://web.archive.org/web/20060426220850/http://www.zope.org:80/Resources/ZPL/
 
 
 ### Lizenzen mit strengem Copyleft-Effekt
