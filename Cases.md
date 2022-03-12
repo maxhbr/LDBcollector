@@ -211,6 +211,37 @@ Wallace v. FSF
 
 Link: http://www.internetcases.com/library/cases/2005-11-28_wallace_v_fsf.pdf
 ___
+## Frankreich
+___
+#### TGI de Paris, 2019-06-21
+
+Entr’ouvert v. Orange
+
+Link: https://www.legalis.net/jurisprudences/tgi-de-paris-3eme-ch-3eme-section-jugement-du-21-juin-2019/
+
+#### Cour d’appel de Paris, 2021-03-19
+
+Entr’ouvert v. Orange
+
+Link: https://www.legalis.net/jurisprudences/cour-dappel-de-paris-pole-5-ch-2-arret-du-19-mars-2021/
+
+#### Le Tribunal de première instance de Nivelles, 2010-10-26, Case No. 09-1684-A.
+
+Allard et al v. Festival de Theatre de Spa
+
+Link: http://www.technollama.co.uk/wordpress/wp-content/uploads/2010/11/2010-10-26-D%C3%A9cision-trib.-Nivelles-Lich%C3%B4dmapwa.pdf
+
+#### Cour d'Appel de Paris, 2009-09-16, Case No. 04/24298
+
+AFPA v. EDU 4
+
+Link: http://fsffrance.org/news/arret-ca-paris-16.09.2009.pdf
+
+#### TGI de Paris, 2007-03-28, Case No. 05/16916
+
+S.A. Educaffix v. CNRS
+Link: https://www.doctrine.fr/d/TGI/Paris/2007/KFV64D3F65FB87F53D68B40
+___
 ## Spanien
 ___
 #### Audiencia Provincial de Madrid, Sección 28, 2007-07-05, Case No. 150/2007
@@ -242,12 +273,11 @@ ___
 ## Andere Länder
 ___
 
-#### TGI de Paris, 2019-06-21
+#### Wenshu Court, 2021-03-30, Case No. Yue 03 Min Chu No. 3928
 
-Entr’ouvert v. Orange
+Jining Luohe Network Technology Co., Ltd. v. Fujian Fengling Chuangjing Technology Co., Ltd et al
 
-Link: https://www.legalis.net/jurisprudences/tgi-de-paris-3eme-ch-3eme-section-jugement-du-21-juin-2019/
-
+Link: https://www-oschina-net.translate.goog/news/159435?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=nui
 
 #### District Court of Jerusalem, 2011-01-06, Case No. CA 3560/09, CA 3561/09
 
@@ -255,20 +285,10 @@ Link: http://www.law.co.il/media/computer-law/reuveni_rivlin.pdf
 
 http://beck-online.beck.de/default.aspx?sec=ICAgIGJlY2tjNGI3N2E3YWQ0OGY0ZmIyQSK0ihRiP6UgvZ2C0ObPOhA5xAgy8gB1fPRaOGMy7kpNyxD%2b7GSmif68yDvDr6UNm2Buc3FlPLT5KL5EdJexYzJgbOARFn3gEBvtt3F1IOwKi2TTjggfezvz3pXgVrVk
 
-#### Le Tribunal de première instance de Nivelles, 2010-10-26, Case No. 09-1684-A.
+#### Rechtbank Amsterdam, 2006-03-09, Case No. 334492 / KG 06-176 SR.
 
-Allard et al v. Festival de Theatre de Spa
+Curry v. Audax
 
-Link: http://www.technollama.co.uk/wordpress/wp-content/uploads/2010/11/2010-10-26-D%C3%A9cision-trib.-Nivelles-Lich%C3%B4dmapwa.pdf
+Link: http://zoeken.rechtspraak.nl/resultpage.aspx?snelzoeken=true&searchtype=ljn&ljn=AV4204&u_ljn=AV4204
 
-#### Cour d'Appel de Paris, 2009-09-16, Case No. 04/24298
-
-AFPA v. EDU 4
-
-Link: http://fsffrance.org/news/arret-ca-paris-16.09.2009.pdf
-
-
-#### TGI de Paris, 2007-03-28, Case No. 05/16916
-
-S.A. Educaffix v. CNRS
-Link: https://www.doctrine.fr/d/TGI/Paris/2007/KFV64D3F65FB87F53D68B40
+English translation at http://mirrors.creativecommons.org/judgements/Curry-Audax-English.pdf
