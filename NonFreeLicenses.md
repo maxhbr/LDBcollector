@@ -45,3 +45,5 @@ Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder
 1. YaST and SuSE Linux license terms: http://ftp2.de.freebsd.org/pub/linux/suse/5.3/i386.de/COPYRIGHT.yast
 1. YaST und SuSE Linux Lizenzbestimmungen: https://web.archive.org/web/20040407183411/http://www.suse.de/de/private/support/licenses/yast.html
 1. ZIB Academic License: https://web.archive.org/web/20090408081543/http://www.zib.de:80/Optimization/Software/ziblicense.html
+
+Eine Sammlung skurriler "Bad Licenses findet sich bei https://github.com/ErikMcClure/bad-licenses
