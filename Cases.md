@@ -16,7 +16,7 @@ ___
 
 #### LG Manheim, Vergleich v. 27.12.2021, Az. 7 O 2/21
 
-Ayuso, Welte, Kedlecsik v. McHary: Vergleich zu GPL-Durchsetzung 
+Ayuso, Welte, Kedlecsik v. McHardy: Vergleich zu GPL-Durchsetzung 
 
 Link: https://www.netfilter.org/files/2022-01-24-Beschluss_und_Vergleich.pdf
 
