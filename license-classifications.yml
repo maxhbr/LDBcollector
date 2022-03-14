@@ -3821,3 +3821,13 @@ categorizations:
   - id: "LicenseRef-scancode-ms-patent-promise"
     categories:
       - "irrelevant"
+
+  - id: "FTL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-reportbug"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
