@@ -9,6 +9,7 @@ from django.core.serializers import serialize
 from django.core.serializers.json import DjangoJSONEncoder
 from django.http import HttpResponse
 
+from cube.utils.licenses import export_licenses as export_licenses_json
 from cube.models import License, Generic
 from cube.serializers import LicenseSerializer
 
@@ -21,10 +22,8 @@ def export_licenses(request):
     :rtype: DjangoHttpResponse
     """
     filename = "licenses.json"
-    serializer = LicenseSerializer(License.objects.all(), many=True)
-    response = HttpResponse(
-        json.dumps(serializer.data, indent=4), content_type="application/json"
-    )
+    data = export_licenses_json(indent=True)
+    response = HttpResponse(data, content_type="application/json")
     response["Content-Disposition"] = "attachment; filename=%s" % filename
     return response
 

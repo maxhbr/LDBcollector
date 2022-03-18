@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+import json
+
 from cube.models import License
 from cube.serializers import LicenseSerializer
 
@@ -127,3 +129,9 @@ def create_or_update_license(license_dict):
     s.is_valid(raise_exception=True)
     print(s.errors)
     s.save()
+
+
+def export_licenses(indent=False):
+    serializer = LicenseSerializer(License.objects.all(), many=True)
+    data = json.dumps(serializer.data, indent=4 if indent else None)
+    return data
