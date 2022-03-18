@@ -14,7 +14,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument(
-            "--output_file", "-o", type=argparse.FileType("w", encoding="utf-8")
+            "--output-file", "-o", type=argparse.FileType("w", encoding="utf-8")
         )
         parser.add_argument(
             "--beautify", "-b", action="store_true", help="Indent output"

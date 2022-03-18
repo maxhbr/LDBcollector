@@ -16,7 +16,6 @@ from odf.text import H, P, Span
 from cube.forms import ImportLicensesForm, ImportGenericsForm
 from cube.models import License, Generic
 from cube.serializers import GenericSerializer
-from cube.utils.licenses import create_or_update_license
 
 
 @login_required
@@ -66,23 +65,6 @@ def license(request, license_id):
         }
     )
     return render(request, "cube/license.html", context)
-
-
-def handle_licenses_file(request):
-    licenseFile = request.FILES["file"]
-    licenseArray = json.load(licenseFile)
-    # Handling case of a JSON that only contains one license and is not a list
-    # (single license purpose)
-    if type(licenseArray) is dict:
-        create_or_update_license(licenseArray)
-    # Handling case of a JSON that contains multiple licenses and is a list
-    # (multiple licenses purpose)
-    elif type(licenseArray) is list:
-        for license in licenseArray:
-            create_or_update_license(license)
-
-    else:
-        print("Type of JSON neither is a list nor a dict")
 
 
 # def export_licenses(request):

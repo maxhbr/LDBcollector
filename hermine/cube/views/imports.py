@@ -3,7 +3,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 from cube.forms import ImportLicensesForm, ImportBomForm
 from cube.importers import import_ort_file, import_spdx_file
-from cube.views import handle_licenses_file, handle_generics_file
+from cube.views import handle_generics_file
+from cube.utils.licenses import handle_licenses_json
 
 
 @csrf_exempt
@@ -11,10 +12,8 @@ def upload_licenses_file(request):
     if request.method == "POST":
         form = ImportLicensesForm(request.POST, request.FILES)
         if form.is_valid():
-            handle_licenses_file(request)
+            handle_licenses_json(request.FILES["file"])
             return redirect(request.META["HTTP_REFERER"])
-        else:
-            form = ImportLicensesForm()
     return redirect(request.META["HTTP_REFERER"])
 
 
