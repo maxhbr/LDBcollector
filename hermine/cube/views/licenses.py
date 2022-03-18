@@ -3,8 +3,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-import json
-
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage
 from django.http import HttpResponse
@@ -15,7 +13,6 @@ from odf.text import H, P, Span
 
 from cube.forms import ImportLicensesForm, ImportGenericsForm
 from cube.models import License, Generic
-from cube.serializers import GenericSerializer
 
 
 @login_required
@@ -230,20 +227,6 @@ def print_license(request, license_id):
 
         return response
     return redirect("cube:license", license_id)
-
-
-def handle_generics_file(request):
-    genericsFile = request.FILES["file"]
-    genericsArray = json.load(genericsFile)
-    for generic in genericsArray:
-        try:
-            g = Generic.objects.get(pk=generic["pk"])
-        except Generic.DoesNotExist:
-            print("instantiation of a new Generic object with pk = ", generic["pk"])
-            g = Generic(generic["pk"])
-        s = GenericSerializer(g, data=generic["fields"], partial=True)
-        s.is_valid(raise_exception=True)
-        s.save()
 
 
 @login_required

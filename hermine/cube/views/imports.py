@@ -3,7 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from cube.forms import ImportLicensesForm, ImportBomForm
 from cube.importers import import_ort_file, import_spdx_file
-from cube.views import handle_generics_file
+from cube.utils.generics import handle_generics_json
 from cube.utils.licenses import handle_licenses_json
 
 
@@ -19,7 +19,7 @@ def upload_licenses_file(request):
 
 def upload_generics_file(request):
     if request.method == "POST":
-        handle_generics_file(request)
+        handle_generics_json(request.FILES["file"])
         return redirect("cube:generics")
 
     return render(request, "cube/generic_list.html")

@@ -5,13 +5,12 @@
 
 import json
 
-from django.core.serializers import serialize
-from django.core.serializers.json import DjangoJSONEncoder
 from django.http import HttpResponse
 
-from cube.utils.licenses import export_licenses as export_licenses_json
-from cube.models import License, Generic
+from cube.models import License
 from cube.serializers import LicenseSerializer
+from cube.utils.licenses import export_licenses as export_licenses_json
+from cube.utils.generics import export_generics as export_generics_json
 
 
 def export_licenses(request):
@@ -43,10 +42,10 @@ def export_specific_license(request, license_id):
 
 def export_generics(request):
     filename = "generics.json"
-    with open(filename, "w+"):
-        response = HttpResponse(
-            serialize("json", Generic.objects.all(), cls=DjangoJSONEncoder),
-            content_type="application/json",
-        )
-        response["Content-Disposition"] = "attachment; filename=%s" % filename
-        return response
+    data = export_generics_json(indent=True)
+    response = HttpResponse(
+        data,
+        content_type="application/json",
+    )
+    response["Content-Disposition"] = "attachment; filename=%s" % filename
+    return response
