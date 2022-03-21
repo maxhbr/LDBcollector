@@ -39,7 +39,7 @@ translationstring==1.4
 typing-extensions==3.7.4.3
 urllib3==1.26.5
 venusian==3.0.0
-waitress==1.4.4
+waitress==2.1.1
 WebOb==1.8.6
 WebTest==2.0.35
 zipp==3.4.0
