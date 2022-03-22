@@ -7,8 +7,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Hermine's documentation!
-===================================
+Welcome to Hermine's documentation
+==================================
 
 
 As the application itself, this documentation is very much a work in progress. 
