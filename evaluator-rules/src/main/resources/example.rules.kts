@@ -26,6 +26,13 @@
  *******************************************************/
 
 /**
+ * Variables defining the organization using ORT.
+ */
+val orgName = "Example Inc."
+val orgScanIssueTrackerName = "FOSS JIRA"
+val orgScanIssueTrackerMdLink = "[$orgScanIssueTrackerName](https://jira.example.com/FOSS)"
+
+/**
  * Import the license classifications from license-classifications.yml.
  */
 
@@ -37,8 +44,10 @@ val permissiveLicenses = licenseClassifications.licensesByCategory["permissive"]
 
 val publicDomainLicenses = licenseClassifications.licensesByCategory["public-domain"].orEmpty()
 
-// The complete set of licenses covered by policy rules.
-val handledLicenses = listOf(
+/**
+ * The complete set of licenses covered by policy rules.
+ */
+ val handledLicenses = listOf(
     permissiveLicenses,
     publicDomainLicenses,
     copyleftLicenses,
@@ -52,6 +61,16 @@ val handledLicenses = listOf(
 
     it.toSet()
 }
+
+/**
+ * List of licenses approved by organization to be used for its open source projects.
+ */
+val OrgOssProjectsApprovedLicenses = listOf(
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "MIT"
+).map { it.toSpdx() as SpdxSingleLicenseExpression }.toSortedSet(compareBy { it.toString() })
 
 /**
  * Variables used to generate MarkDown text of howToFixDefault()
@@ -68,8 +87,6 @@ var ortLicenseFindingCurationReasonMdLink = "[LicenseFindingCurationReason.kt](h
 val ortPackageConfigurationFileMdLink = "[package configuration](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-package-configuration-yml.md)"
 var ortPathExcludeReasonMdLink = "[PathExcludeReason.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/PathExcludeReason.kt)"
 val ortResolutionsYmlRuleViolationMdLink = "[rule violation resolution](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-resolutions-yml.md#resolving-policy-rule-violations)"
-val ortScanIssueTrackerName = "FOSS JIRA"
-val ortScanIssueTrackerMdLink = "[$ortScanIssueTrackerName](https://jira.example.com/FOSS)"
 val ortScopeExcludeReasonMdLink = "[ScopeExcludeReason.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/ScopeExcludeReason.kt)"
 val ortYmlFileMdLink = "[.ort.yml file](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-ort-yml.md)"
 val ortYmlFilePathExcludeMdLink = "[path exclude](https://github.com/oss-review-toolkit/ort/blob/main/docs/config-file-ort-yml.md#excluding-paths)"
@@ -195,6 +212,11 @@ fun getVcsMdLink(pkg: Package) : String {
 }
 
 /**
+ * Return true if [license] is on the list of the organization's approved licenses for its open source projects.
+ */
+fun isApprovedOrgOssProjectLicense(license: SpdxSingleLicenseExpression) = license in OrgOssProjectsApprovedLicenses
+
+/**
  * Return true if a label with identical [key] exists whose comma separate values contains [value].
  */
 fun isLabeled(key: String, value: String) =
@@ -261,7 +283,7 @@ fun PackageRule.howToFixUnhandledLicense(
     @Suppress("UNUSED_PARAMETER") severity: Severity
 ) : String {
     val createIssueText = """
-        |1. If an issue to add this license does not already exist in $ortScanIssueTrackerMdLink, please create it.
+        |1. If an issue to add this license does not already exist in $orgScanIssueTrackerMdLink, please create it.
         |2. Set the _Summary_ field to 'Add new license $license'.
         |3. Set the _Component/s_ field to _licenses_.
         |4. Set the _Description_ field to something like 'Please add this license to the review tooling.'
@@ -310,6 +332,11 @@ fun PackageRule.howToFixUnhandledLicense(
     }
 }
 
+fun PackageRule.howToFixOssProjectDefault() = """
+        A text written in MarkDown to help users resolve policy violations
+        which may link to additional resources.
+    """.trimIndent()
+
 fun PackageRule.howToFixUnmappedDeclaredLicense(
     license: String,
     @Suppress("UNUSED_PARAMETER") severity: Severity
@@ -357,7 +384,7 @@ fun PackageRule.howToFixUnmappedDeclaredLicense(
         """
             |Follow the steps below to add the $license to the review tooling:
             |
-            |1. If a ticket to add this license does not already exist in $ortScanIssueTrackerMdLink, please create it.
+            |1. If a ticket to add this license does not already exist in $orgScanIssueTrackerMdLink, please create it.
             |2. Set the _Summary_ field to 'Add new license mapping for license $license'.
             |3. Set the _Component/s_ field to _licenses_.
             |4. Set the _Description_ field to something like 'Please add a new declared license mapping for this license.'
@@ -908,6 +935,27 @@ fun resolveViolationInSourceCodeText(pkg: Package, license: String) : String {
  * Set of matchers to help keep policy rules easy to understand
  */
 
+fun PackageRule.hasDefinitionFileName(vararg definitionFileNames: String) =
+    object : RuleMatcher {
+        private val matchingNames = definitionFileNames.toSet()
+
+        override val description = "hasDefinitionFileName(${matchingNames.joinToString()})"
+
+        override fun matches(): Boolean {
+            val project = ruleSet.ortResult.getProject(pkg.id)
+            if (project == null) return false
+
+            return project.definitionFilePath.substringAfterLast('/') in matchingNames
+        }
+    }
+
+fun PackageRule.LicenseRule.isApprovedOrgOssProjectLicense() =
+    object : RuleMatcher {
+        override val description = "isApprovedOrgOssProjectLicense($license)"
+
+        override fun matches() = isApprovedOrgOssProjectLicense(license)
+    }
+
 fun PackageRule.LicenseRule.isHandled() =
     object : RuleMatcher {
         override val description = "isHandled($license)"
@@ -929,6 +977,18 @@ fun PackageRule.LicenseRule.isCopyleftLimited() =
 
         override fun matches() = license in copyleftLimitedLicenses
     }
+
+fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
+    NoneOf(
+        isType("Bundler"),
+        isType("DotNet"),
+        isType("GoDep"),
+        isType("GoMod"),
+        isType("Gradle"),
+        AllOf(isType("PIP"), Not(hasDefinitionFileName("setup.py"))),
+        isType("Pub"),
+        isType("Unmanaged")
+    )
 
 /**
  * Example policy rules
@@ -1079,6 +1139,25 @@ fun RuleSet.vulnerabilityWithHighSeverityInPackageRule() {
     }
 }
 
+fun RuleSet.unapprovedOssProjectLicenseRule() = packageRule("UNAPPROVED_OSS_PROJECT_LICENSE") {
+    require {
+        +isProject()
+        +packageManagerSupportsDeclaredLicenses()
+    }
+
+    licenseRule("UNAPPROVED_OSS_PROJECT_LICENSE", LicenseView.ONLY_DECLARED) {
+        require {
+            -isApprovedOrgOssProjectLicense()
+        }
+
+        error(
+            "Package ${pkg.id.toCoordinates()} declares $license which is not an " +
+                    "approved license within $orgName.",
+            howToFixOssProjectDefault()
+        )
+    }
+}
+
 fun RuleSet.unhandledLicenseRule() {
     // Define a rule that is executed for each package.
     packageRule("UNHANDLED_LICENSE") {
@@ -1131,12 +1210,13 @@ fun RuleSet.commonRules() {
     vulnerabilityWithHighSeverityInPackageRule()
 }
 
+fun RuleSet.ossProjectRules() {
+    unapprovedOssProjectLicenseRule()
+}
+
 fun RuleSet.proprietaryProjectRules() {
     copyleftInSourceRule()
     copyleftInDependencyRule()
-}
-
-fun RuleSet.ossProjectRules() {
 }
 
 val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
