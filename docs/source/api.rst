@@ -2,10 +2,8 @@
 ..
 .. SPDX-License-Identifier: CC-BY-4.0
 
-API
+REST API
 ========
-Hermine is a Free software under license `AGPL-3.0-only <https://www.gnu.org/licenses/agpl-3.0>`_.
-
 
 Authentication through API
 ---------------------------------
