@@ -16,4 +16,5 @@ caption: Contents
 ---
 install
 getting_started
+api
 ```
