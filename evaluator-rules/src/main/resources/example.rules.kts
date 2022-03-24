@@ -1112,6 +1112,15 @@ fun RuleSet.packageConfigurationInOrtYml() = ortResultRule("PACKAGE_CONFIGURATIO
     }
 }
 
+fun RuleSet.packageCurationInOrtYml() = ortResultRule("PACKAGE_CURATION_IN_ORT_YML") {
+    if (ortResult.repository.config.curations.packages.isNotEmpty()) {
+        error(
+            "The use of package curations is not allowed in the *.ort.yml file.",
+            "Please use a global package curation in the $ortConfigVcsMdLink."
+        )
+    }
+}
+
 fun RuleSet.vulnerabilityInPackageRule() {
     packageRule("VULNERABILITY_IN_PACKAGE") {
         require {
@@ -1216,6 +1225,7 @@ fun RuleSet.commonRules() {
     deprecatedScopeExludeInOrtYmlRule()
 
     packageConfigurationInOrtYml()
+    packageCurationInOrtYml()
 
     vulnerabilityInPackageRule()
     vulnerabilityWithHighSeverityInPackageRule()
