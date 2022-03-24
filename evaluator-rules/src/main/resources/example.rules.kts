@@ -1103,6 +1103,15 @@ fun RuleSet.deprecatedScopeExludeInOrtYmlRule() {
     }
 }
 
+fun RuleSet.packageConfigurationInOrtYml() = ortResultRule("PACKAGE_CONFIGURATION_IN_ORT_YML") {
+    if (ortResult.repository.config.packageConfigurations.isNotEmpty()) {
+        error(
+            "The use of package configurations is not allowed in the *.ort.yml file.",
+            "Please use a global package configuration in the $ortConfigVcsMdLink."
+        )
+    }
+}
+
 fun RuleSet.vulnerabilityInPackageRule() {
     packageRule("VULNERABILITY_IN_PACKAGE") {
         require {
@@ -1205,6 +1214,8 @@ fun RuleSet.commonRules() {
     unmappedDeclaredLicenseRule()
 
     deprecatedScopeExludeInOrtYmlRule()
+
+    packageConfigurationInOrtYml()
 
     vulnerabilityInPackageRule()
     vulnerabilityWithHighSeverityInPackageRule()
