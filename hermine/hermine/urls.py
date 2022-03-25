@@ -25,4 +25,5 @@ urlpatterns = [
     path("", include("cube.urls")),
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
+    path("oauth/", include("social_django.urls", namespace="social")),
 ]

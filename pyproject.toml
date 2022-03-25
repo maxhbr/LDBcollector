@@ -20,6 +20,7 @@ spdx-license-list = "^0.5.2"
 odfpy = "^1.4.1"
 Django = "^4.0.1"
 spdx-tools = "0.7.0a3"
+social-auth-app-django = "^5.0.0"
 
 [tool.poetry.dev-dependencies]
 Sphinx = "^4.2.0"

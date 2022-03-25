@@ -58,7 +58,11 @@ SPDX-License-Identifier: MIT
                   </label>
                 </div>
                 <button class="button is-block is-primary is-large is-fullwidth">Login</button><br />
-                <input type="hidden" name="next" value="{{ next }}">
+                {% if "default" in backends.backends %}
+                  <a class="button is-block is-primary is-large is-fullwidth"
+                     href="{% url "social:begin" "default" %}">OAuth</a><br />
+                  <input type="hidden" name="next" value="{{ next }}">
+                {% endif %}
               </form>
             </div>
             <p class="has-text-grey">
