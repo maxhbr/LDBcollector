@@ -2,7 +2,6 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-from django.db.models import Q
 import json
 
 from cube.models import License
