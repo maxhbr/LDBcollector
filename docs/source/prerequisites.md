@@ -19,4 +19,10 @@ We try to follow the [REUSE standard](https://reuse.software/). So if you add a 
 # SPDX-License-Identifier: AGPL-3.0-only 
 ```
 
+## Code linting
 
+We try to use [Black](https://pypi.org/project/black/) for harmonising code formatting.
+
+## Commit messages
+
+It would be nice to try to follow the [Conventional Commits standards](https://www.conventionalcommits.org/en/v1.0.0/)
