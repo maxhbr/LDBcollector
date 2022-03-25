@@ -10,6 +10,50 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
 
+<h2>Top 10 Most used components </h2>
+
+<table class="table is-striped ">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number of usages</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for popular in populars %}
+    <tr>
+      <td><a href="{% url 'cube:component' popular.id %}">{{popular.name}}</a></td>
+      <td>
+        {{popular.popularity}}
+      </td>
+      <td>
+        {{ component.description|truncatechars:42 }}
+      </td>
+    </tr>
+
+{% endfor %}
+  </tbody>
+</table>
+<h2>All components </h2>
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1"><span class="current button is-link">1</span></a>
+            <a href="?page={{ page_obj.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
+        {% endif %}
+
+        <span class="current button is-primary">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}"><span class="current button is-link is-light">next</span></a>
+            <a href="?page={{ page_obj.paginator.num_pages }}"><span class="current button is-link">{{page_obj.paginator.num_pages}}</span></a>
+        {% endif %}
+    </span>
+</div>
+
 
 <table class="table is-striped ">
   <thead>
