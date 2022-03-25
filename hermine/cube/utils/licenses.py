@@ -131,7 +131,7 @@ def create_or_update_license(license_dict):
     s = LicenseSerializer(license_instance, data=license_dict)
     s.is_valid(raise_exception=True)
     s.save()
-<<<<<<< hermine/cube/utils/licenses.py
+    return create
 
 
 def get_usages_obligations(usages):
@@ -166,8 +166,6 @@ def get_usages_obligations(usages):
                 else:
                     orphaned_licenses.add(license)
     return generics_involved, orphaned_licenses
-=======
-    return create
 
 
 def export_licenses(indent=False):
@@ -195,4 +193,3 @@ def handle_licenses_json(data):
         print(f"Licenses : {created} created / {updated} updated")
     else:
         print("Type of JSON neither is a list nor a dict")
->>>>>>> hermine/cube/utils/licenses.py
