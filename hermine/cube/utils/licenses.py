@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+import json
+
 from cube.models import License
 from cube.serializers import LicenseSerializer
 
@@ -117,13 +119,42 @@ def explode_SPDX_to_units(SPDX_expr):
 
 
 def create_or_update_license(license_dict):
+    create = False
     try:
         license_instance = License.objects.get(spdx_id=license_dict["spdx_id"])
     except License.DoesNotExist:
         print("Instantiation of a new License: ", license_dict["spdx_id"])
         license_instance = License(spdx_id=license_dict["spdx_id"])
         license_instance.save()
+        create = True
     s = LicenseSerializer(license_instance, data=license_dict)
     s.is_valid(raise_exception=True)
-    print(s.errors)
     s.save()
+    return create
+
+
+def export_licenses(indent=False):
+    serializer = LicenseSerializer(License.objects.all(), many=True)
+    data = json.dumps(serializer.data, indent=4 if indent else None)
+    return data
+
+
+def handle_licenses_json(data):
+    licenseArray = json.load(data)
+    # Handling case of a JSON that only contains one license and is not a list
+    # (single license purpose)
+    if type(licenseArray) is dict:
+        create_or_update_license(licenseArray)
+    # Handling case of a JSON that contains multiple licenses and is a list
+    # (multiple licenses purpose)
+    elif type(licenseArray) is list:
+        created, updated = 0, 0
+        for license in licenseArray:
+            if create_or_update_license(license):
+                created += 1
+            else:
+                updated += 1
+
+        print(f"Licenses : {created} created / {updated} updated")
+    else:
+        print("Type of JSON neither is a list nor a dict")

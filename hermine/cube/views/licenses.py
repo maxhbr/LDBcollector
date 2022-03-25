@@ -3,8 +3,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-import json
-
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage
 from django.http import HttpResponse
@@ -15,8 +13,6 @@ from odf.text import H, P, Span
 
 from cube.forms import ImportLicensesForm, ImportGenericsForm
 from cube.models import License, Generic
-from cube.serializers import GenericSerializer
-from cube.utils.licenses import create_or_update_license
 
 
 @login_required
@@ -66,23 +62,6 @@ def license(request, license_id):
         }
     )
     return render(request, "cube/license.html", context)
-
-
-def handle_licenses_file(request):
-    licenseFile = request.FILES["file"]
-    licenseArray = json.load(licenseFile)
-    # Handling case of a JSON that only contains one license and is not a list
-    # (single license purpose)
-    if type(licenseArray) is dict:
-        create_or_update_license(licenseArray)
-    # Handling case of a JSON that contains multiple licenses and is a list
-    # (multiple licenses purpose)
-    elif type(licenseArray) is list:
-        for license in licenseArray:
-            create_or_update_license(license)
-
-    else:
-        print("Type of JSON neither is a list nor a dict")
 
 
 # def export_licenses(request):
@@ -248,20 +227,6 @@ def print_license(request, license_id):
 
         return response
     return redirect("cube:license", license_id)
-
-
-def handle_generics_file(request):
-    genericsFile = request.FILES["file"]
-    genericsArray = json.load(genericsFile)
-    for generic in genericsArray:
-        try:
-            g = Generic.objects.get(pk=generic["pk"])
-        except Generic.DoesNotExist:
-            print("instantiation of a new Generic object with pk = ", generic["pk"])
-            g = Generic(generic["pk"])
-        s = GenericSerializer(g, data=generic["fields"], partial=True)
-        s.is_valid(raise_exception=True)
-        s.save()
 
 
 @login_required
