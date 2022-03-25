@@ -115,7 +115,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = "/static/"
-API_BASE_URL = "http://127.0.0.1:8080/api/"
+API_BASE_URL = "http://0.0.0.0:8080/api/"
 APPEND_SLASH = True
 # Added for django-simple-bulma
 
@@ -159,3 +159,14 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 1000000
 # Graph vizualization stuff
 
 GRAPH_MODELS = {"all_applications": True, "group_models": True}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('POSTGRES_NAME'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+        'HOST': 'db',
+        'PORT': 5432,
+    }
+}

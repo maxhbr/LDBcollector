@@ -1,0 +1,30 @@
+version: '3.3'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - db_volume:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      hermine_net:
+  web:
+    image: hermine:latest
+    command: python manage.py runserver 0.0.0.0:8080
+    volumes:
+      - .:/code
+    ports:
+      - "8080:8080"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      hermine_net:
+networks:
+  hermine_net:
+volumes:
+  db_volume:
