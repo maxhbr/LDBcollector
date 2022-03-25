@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+from django.db.models import Q
 import json
 
 from cube.models import License
@@ -130,6 +131,42 @@ def create_or_update_license(license_dict):
     s = LicenseSerializer(license_instance, data=license_dict)
     s.is_valid(raise_exception=True)
     s.save()
+<<<<<<< hermine/cube/utils/licenses.py
+
+
+def get_usages_obligations(usages):
+    """
+    Get triggered obligations for a list of usages.
+
+    :param usages: A iterable of Usage objects
+    :return: A tuple with a list of generic and a list of licenses which obligations have no generics
+    """
+    generics_involved = set()
+    orphaned_licenses = set()
+
+    for usage in usages:
+        for license in usage.licenses_chosen.all():
+            # Those two lines allow filtering obligations depending on the Usage
+            # context (if the component has been modified and how it's being
+            # distributed)
+            obligations_filtered = license.obligation_set.filter(
+                trigger_mdf__contains=usage.component_modified
+            )
+            obligations_filtered = [
+                o
+                for o in obligations_filtered
+                if (
+                    o.trigger_expl in usage.exploitation
+                    or usage.exploitation in o.trigger_expl
+                )  # Poor man bitwise OR
+            ]
+            for obligation in obligations_filtered:
+                if obligation.generic:
+                    generics_involved.add(obligation.generic)
+                else:
+                    orphaned_licenses.add(license)
+    return generics_involved, orphaned_licenses
+=======
     return create
 
 
@@ -158,3 +195,4 @@ def handle_licenses_json(data):
         print(f"Licenses : {created} created / {updated} updated")
     else:
         print("Type of JSON neither is a list nor a dict")
+>>>>>>> hermine/cube/utils/licenses.py

@@ -102,7 +102,7 @@ class APILicenseTests(APITestCase):
             "name": "TestObligation",
             "verbatim": "This obligation is for testing purpose. please delete it.",
             "passivity": "Active",
-            "trigger_expl": "Distribution",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
             "trigger_mdf": "Unmodified",
             "generic_id": 1,
         }
@@ -234,7 +234,7 @@ class APILicenseTests(APITestCase):
             "addition_date": "2022-01-19T17:01:40+01:00",
             "linking": "Dynamic",
             "component_modified": "Unmodified",
-            "exploitation": "Distribution",
+            "exploitation": "DistributionSourceDistributionNonSource",
             "description": "This is a test Usage",
             "licenses_chosen": [1],
         }
