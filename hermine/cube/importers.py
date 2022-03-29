@@ -203,8 +203,8 @@ def import_ort_evaluated_model_json_file(json_file, release_id):
         component, component_created = Component.objects.get_or_create(
             name=package["purl"].split("@")[0].split(":")[1],
             defaults={
-                "description": package["description"],
-                "homepage_url": package["homepage_url"],
+                "description": package.get("description",""),
+                "homepage_url": package.get("homepage_url",""),
             },
         )
         if component_created:
