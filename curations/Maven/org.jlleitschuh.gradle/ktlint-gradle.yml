@@ -1,0 +1,7 @@
+- id: "Maven:org.jlleitschuh.gradle:ktlint-gradle"
+  curations:
+    vcs:
+      type: "Git"
+      url: "https://github.com/JLLeitschuh/ktlint-gradle.git"
+    comment: |
+      Upstream meta data does not contain the SCM connection.
