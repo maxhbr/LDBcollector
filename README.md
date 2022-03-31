@@ -26,17 +26,11 @@ If you use [poetry](https://python-poetry.org/docs/), you create the virtual
 environment by cloning the repo and : 
 
 ```
-cd hermine-project/
+cd hermine/
 poetry install
 ```
 
 ## Running the application
-
-Clone the repo and go inside the directory
-
-```
-cd hermine
-```
 
 Activate your Python virtual environment. With poetry, it means: 
 ```
@@ -59,7 +53,6 @@ python hermine/manage.py createsuperuser
 And then launch the django dev server:
 
 ```
-cd hermine
 python3 hermine/manage.py runserver
 ```
 You can then point your browser to [http://127.0.0.1:8080/admin/](http://127.0.0.1:8080/admin/)
