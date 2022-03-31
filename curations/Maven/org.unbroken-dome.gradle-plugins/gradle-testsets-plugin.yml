@@ -1,0 +1,7 @@
+- id: "Maven:org.unbroken-dome.gradle-plugins:gradle-testsets-plugin"
+  curations:
+    vcs:
+      type: "Git"
+      url: "https://github.com/unbroken-dome/gradle-testsets-plugin.git"
+    comment: |
+      Upstream meta data does not contain the SCM connection.
