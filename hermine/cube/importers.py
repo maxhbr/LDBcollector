@@ -203,24 +203,35 @@ def import_ort_evaluated_model_json_file(json_file, release_id):
         component, component_created = Component.objects.get_or_create(
             name=package["purl"].split("@")[0].split(":")[1],
             defaults={
-                "description": package.get("description",""),
-                "homepage_url": package.get("homepage_url",""),
+                "description": package.get("description", ""),
+                "homepage_url": package.get("homepage_url", ""),
             },
         )
         if component_created:
-            print("Component " + component.name + " created")
+            print(f"Component {component.name} created")
+        else:
+            print(f"Component {component.name} already there")
 
+        declared_licenses_indices = package.get("declared_licenses", "")
+        declared_licenses = ""
+        if declared_licenses_indices:
+            declared_licenses = " ; ".join(
+                [
+                    data["licenses"][license_index]["id"]
+                    for license_index in declared_licenses_indices
+                ]
+            )
+        else:
+            declared_licenses = ""
+        print(f"declared_licenses {declared_licenses}")
         version, version_created = Version.objects.get_or_create(
             component=component,
             version_number=package["purl"].split("@")[1],
             defaults={
-                "declared_license_expr": [
-                    data["licenses"][license_index]
-                    for license_index in package["declared_licenses"]
-                ],
-                "spdx_valid_license_expr": package["declared_licenses_processed"][
-                    "spdx_expression"
-                ],
+                "declared_license_expr": declared_licenses,
+                "spdx_valid_license_expr": package["declared_licenses_processed"].get(
+                    "spdx_expression", ""
+                ),
                 # TODO : support ORT scanner function
                 # "scanned_licenses":
                 "purl": package["purl"],
@@ -228,10 +239,7 @@ def import_ort_evaluated_model_json_file(json_file, release_id):
         )
         if version_created:
             print(
-                "Version "
-                + version.version_number
-                + " created for component "
-                + component.name
+                f"Version {version.version_number} created for component {component.name}"
             )
 
         # Project_id is the name of the project of the package
