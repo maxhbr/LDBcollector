@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.8'
 
 services:
   db:
@@ -12,10 +12,10 @@ services:
     networks:
       hermine_net:
   web:
-    image: hermine:latest
-    command: python manage.py runserver 127.0.0.1:8080
-    volumes:
-      - .:/code
+    build:
+      context: .
+      args:
+        - DEFAULT_PORT=8080
     ports:
       - "8080:8080"
     environment:
@@ -23,6 +23,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - SECRET=secret
+    links:
+      - db
     networks:
       hermine_net:
 networks:
