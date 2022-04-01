@@ -41,14 +41,18 @@ http://127.0.0.1:8080/release/1/exploitation
 
 http://127.0.0.1:8080/release/1
 
-- Step 1 Check that all the packages have a proper SPDX expression 
-- Step 2 Check that all the licences involved have been analyzed by your legal departement
-- Step 3 Express your choices when several licences are proposed
-- Step 4 Check that the licences are compatible with your policy
+#### Validation Step 1
+Check that all the packages have a proper SPDX expression 
+#### Validation Step 2
+Check that all the licences involved have been analyzed by your legal departement
+#### Validation Step 3 
+Express your choices when several licences are proposed
+#### Validation Step 4 
+Check that the licences are compatible with your policy
 
 ### Read your obligations
 
-http://127.0.0.1:8080/release/24/obligations
+http://127.0.0.1:8080/release/1/obligations
 
 
 

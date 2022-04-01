@@ -80,3 +80,10 @@ html_theme_options = {
 }
 
 html_logo = "./img/LogoHermine_noBG.png"
+
+myst_enable_extensions = [
+    "colon_fence",
+    "deflist",
+    "fieldlist",
+    "tasklist",
+]
