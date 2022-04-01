@@ -7,7 +7,13 @@ f_log() {
     echo "== $(date) == $@"
 }
 
-f_log "Entrypoint start"
+PORT=$1
+if [ -z "$1" ]
+then
+  PORT=8080
+fi
+
+f_log "Entrypoint start on $PORT"
 
 python ./manage.py migrate
-python ./manage.py runserver 0.0.0.0:8080
+python ./manage.py runserver 0.0.0.0:$PORT
