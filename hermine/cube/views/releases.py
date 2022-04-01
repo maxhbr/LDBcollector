@@ -399,7 +399,7 @@ def release_send_choice(request, release_id, usage_id):
 
 def propagate_choices(release_id):
     """
-    Transfer license information from component to usage . Set usage.license_chosen if
+    Transfer license information from component to usage. Set usage.license_chosen if
     there is no ambiguity.
 
     Args:
