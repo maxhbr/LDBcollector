@@ -23,7 +23,8 @@ spdx-tools = "0.7.0a3"
 
 [tool.poetry.dev-dependencies]
 Sphinx = "^4.2.0"
-myst-parser = "^0.15.2"
+myst-parser = "0.17.0"
+mdit-py-plugins = "^0.3.0"
 sphinx-rtd-theme = "^1.0.0"
 pip-audit = "^1.1.1"
 coverage = "^6.2"
