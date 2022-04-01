@@ -192,6 +192,83 @@ SPDX-License-Identifier: AGPL-3.0-only
     </table>
   {% endif %}
 
+  <h4 class="title is-4">Step 2bis - Confirm ANDs</h4>
+<h5 class="title is-5">ANDs to confirm</h5>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Version</th>
+          <th>License expression</th>
+          <th>License corrected</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for version in to_confirm %}
+          <tr>
+            <td><a href="/component/{{version.component.id}}" target="_blank">{{version.component.name }}</a> </td>
+            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank">{{version.version_number }}</a></td>
+            <td>{{version.spdx_valid_license_expr }} </td>
+            <td>{{version.corrected_license}}</td>
+            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+<h5 class="title is-5">ANDs confirmed</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Version</th>
+          <th>License expression</th>
+          <th>License corrected</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for version in confirmed %}
+          <tr>
+            <td><a href="/component/{{version.component.id}}" target="_blank">{{version.component.name }}</a> </td>
+            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank">{{version.version_number }}</a></td>
+            <td>{{version.spdx_valid_license_expr }} </td>
+            <td>{{version.corrected_license}}</td>
+            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+<h5 class="title is-5">ANDs corrected</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Version</th>
+          <th>License expression</th>
+          <th>License corrected</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for version in corrected %}
+          <tr>
+            <td><a href="/component/{{version.component.id}}" target="_blank">{{version.component.name }}</a> </td>
+            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank">{{version.version_number }}</a></td>
+            <td>{{version.spdx_valid_license_expr }} </td>
+            <td>{{version.corrected_license}}</td>
+            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+
   <h4 class="title is-4">Step 3 - Resolve license choices for this release</h4>
 
   {% if resolved %}
