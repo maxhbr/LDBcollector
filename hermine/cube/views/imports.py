@@ -2,7 +2,7 @@ from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 
 from cube.forms import ImportLicensesForm, ImportBomForm
-from cube.importers import import_ort_file, import_spdx_file
+from cube.importers import import_ort_evaluated_model_json_file, import_spdx_file
 from cube.utils.generics import handle_generics_json
 from cube.utils.licenses import handle_licenses_json
 
@@ -32,7 +32,7 @@ def import_bom(request):
         status = "success"
         try:
             if form.cleaned_data["bom_type"] == "ORTBom":
-                import_ort_file(request.FILES["file"], form.cleaned_data["release"].id)
+                import_ort_evaluated_model_json_file(request.FILES["file"], form.cleaned_data["release"].id)
             elif form.cleaned_data["bom_type"] == "SPDXBom":
                 import_spdx_file(request.FILES["file"], form.cleaned_data["release"].id)
         except:  # noqa: E722 TODO
