@@ -23,6 +23,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - SECRET=secret
+      - SUPERUSER=admin
+      - PASSWORD=admin
     links:
       - db
     networks:
