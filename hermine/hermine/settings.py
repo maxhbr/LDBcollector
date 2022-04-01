@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "rest_framework",
     "rest_framework.authtoken",
+    "hermine",
 ]
 
 MIDDLEWARE = [
@@ -115,7 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = "/static/"
-API_BASE_URL = "http://127.0.0.1:8080/api/"
+API_BASE_URL = os.environ.get("API_BASE_URL", "http://0.0.0.0:8080/api/")
 APPEND_SLASH = True
 # Added for django-simple-bulma
 
