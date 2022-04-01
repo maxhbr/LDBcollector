@@ -5,12 +5,20 @@
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Q
+from django.db.models import Q, F
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 
 import cube.views.licenses
-from cube.models import Release, Usage, Generic, Derogation, LicenseChoice, License
+from cube.models import (
+    Release,
+    Usage,
+    Generic,
+    Derogation,
+    LicenseChoice,
+    License,
+    Version,
+)
 from cube.utils.licenses import (
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
@@ -62,14 +70,22 @@ class ReleaseView(LoginRequiredMixin, generic.DetailView):
             and validation_step == 2
         ):
             validation_step = 3
+        # ==== Step 2 bis ===
+        response = confirm_ands(self.object.id)
+        context["to_confirm"] = response["to_confirm"]
+        context["confirmed"] = response["confirmed"]
+        context["corrected"] = response["corrected"]
+
+        if len(response["to_confirm"]) == 0 and validation_step == 3:
+            validation_step = 4
 
         # ==== For step 3 ====
         response = propagate_choices(self.object.id)
         context["to_resolve"] = response["to_resolve"]
         context["resolved"] = response["resolved"]
 
-        if len(response["to_resolve"]) == 0 and validation_step == 3:
-            validation_step = 4
+        if len(response["to_resolve"]) == 0 and validation_step == 4:
+            validation_step = 5
 
         # ==== For step 4 ====
         r = check_licenses_against_policy(self.object)
@@ -86,8 +102,8 @@ class ReleaseView(LoginRequiredMixin, generic.DetailView):
         else:
             step_4_valid = False
 
-        if step_4_valid and validation_step == 4:
-            validation_step = 5
+        if step_4_valid and validation_step == 5:
+            validation_step = 6
 
         context["usages_lic_red"] = r["usages_lic_red"]
         context["usages_lic_orange"] = r["usages_lic_orange"]
@@ -442,4 +458,56 @@ def propagate_choices(release_id):
                 to_resolve.add(usage)
 
     response = {"to_resolve": to_resolve, "resolved": resolved}
+    return response
+
+
+def confirm_ands(release_id):
+    """
+    Because of unreliable metadata, many "Licence1 AND Licence2" expressions
+    actually meant to be "Licence1 AND Licence2". That's why any expression of
+    this type has to be manually validated.
+
+    Args:
+
+        release_id (int): The intern identifier of the concerned release
+
+    Returns:
+        response: A python object that has three fields :
+            `to_confirm` the set of versions that needs an explicit confirmation
+            `confirmed` the set of version whose AND has been confirmed
+            `corrected` the set of version whose AND has been corrected
+    """
+
+    release = Release.objects.get(pk=release_id)
+
+    to_confirm = set()
+    confirmed = set()
+    corrected = set()
+
+    # TODO we should take into account cases like "(MIT OR ISC)AND Apache-3.0)"
+    # with no space before the "AND"
+    to_confirm = (
+        Version.objects.filter(usage__release_id=release_id)
+        .filter(spdx_valid_license_expr__contains=" AND ")
+        .filter(Q(corrected_license="") | Q(corrected_license=None))
+    )
+    confirmed = (
+        Version.objects.filter(usage__release_id=release_id)
+        .filter(spdx_valid_license_expr__contains=" AND ")
+        .filter(Q(corrected_license=F("spdx_valid_license_expr")))
+    )
+    corrected = (
+        Version.objects.filter(usage__release_id=release_id)
+        .filter(spdx_valid_license_expr__contains=" AND ")
+        .exclude(
+            Q(corrected_license=F("spdx_valid_license_expr"))
+            | Q(corrected_license="")
+            | Q(corrected_license=None)
+        )
+    )
+    response = {
+        "to_confirm": to_confirm,
+        "confirmed": confirmed,
+        "corrected": corrected,
+    }
     return response

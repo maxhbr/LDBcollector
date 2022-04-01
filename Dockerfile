@@ -15,6 +15,7 @@ ARG APP_NAME=hermine
 ARG APP_PATH=/opt/$APP_NAME
 ARG PYTHON_VERSION=3.10.0
 ARG POETRY_VERSION=1.1.12
+ARG DEFAULT_PORT=8080
 
 ENV \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -24,7 +25,10 @@ ENV \
     POETRY_VERSION=$POETRY_VERSION \
     POETRY_HOME="/opt/poetry" \
     POETRY_VIRTUALENVS_IN_PROJECT=true \
-    POETRY_NO_INTERACTION=1
+    POETRY_NO_INTERACTION=1 \
+    PORT=$DEFAULT_PORT \
+    SUPERUSER="" \
+    PASSWORD=""
 
 WORKDIR $APP_PATH
 
@@ -40,7 +44,7 @@ COPY hermine $APP_PATH/
 COPY docker-entrypoint.sh $APP_PATH/
 COPY docker_secrets.py $APP_PATH/hermine/mysecrets.py
 
-EXPOSE 8080
+EXPOSE $PORT
 
 # run entrypoint.sh
-ENTRYPOINT ["/opt/hermine/docker-entrypoint.sh"]
+ENTRYPOINT /opt/hermine/docker-entrypoint.sh --port=$PORT -u=$SUPERUSER -p=$PASSWORD

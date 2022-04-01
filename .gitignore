@@ -13,3 +13,4 @@ docs/build/
 # Secrets are secrets
 hermine/hermine/mysecrets.py
 .coverage
+.idea
