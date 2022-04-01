@@ -14,8 +14,6 @@ services:
   web:
     image: hermine:latest
     command: python manage.py runserver 127.0.0.1:8080
-    volumes:
-      - .:/code
     ports:
       - "8080:8080"
     environment:
