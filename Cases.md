@@ -145,6 +145,13 @@ ___
 ### Sonstige Rechte
 ___
 
+#### OLG Köln, Urteil v. 30.9.2016, Az. 6 U 18/16
+
+Open LIMS
+
+Link: http://www.justiz.nrw.de/nrwe/olgs/koeln/j2016/6_U_18_16_Urteil_20160930.html
+
+https://www.ifross.org/artikel/olg-k-ln-rechtserhaltenden-markenbenutzung-bei-open-source-software
 
 #### OLG Düsseldorf, Urteil v. 24.04.2012, Az. 1-20 U 176/11
 
