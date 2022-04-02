@@ -179,7 +179,7 @@ ___
 Neo4j, Inc. v. PureThink, LLC
 memorandum
 
-Bestätigung (vorläufiges Verfahren, dass bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" die "Commons Clause" nicht entfernt und die Software als Open Source Software bzeichnet werden darf. Detaillierte Informationen zu den Hintergründen: https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/
+Bestätigung (vorläufiges Verfahren), dass bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" die "Commons Clause" nicht entfernt und die Software als Open Source Software bzeichnet werden darf. Detaillierte Informationen zu den Hintergründen: https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/
 
 Link: https://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscourts.cand.335295.140.0.pdf
 
@@ -187,7 +187,7 @@ Link: https://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscou
 #### US District Court, N.D. California, 2021-05-18, Case No. 5:18-cv-07182-EJD 
 
 Neo4j, Inc. v. PureThink, LLC
-partial summary judgmenthttps://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscourts.cand.335295.118.0.pdf
+partial summary judgment
 
 Bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" darf die "Commons Clause" nicht entfernt und die Software als Open Source Software bzeichnet werden.
 
