@@ -231,7 +231,7 @@ Versata v. Ameriprise
 
 Link: http://www.ifross.org/node/1542, http://scribd.com/doc/212507936/Versata-Software-v-Ameriprise, https://ia902501.us.archive.org/22/items/gov.uscourts.txwd.680419/gov.uscourts.txwd.680419.docket.html
 
-N.D.Tex. 2009-01-16, Case No. 3:2007cv01767
+#### N.D.Tex. 2009-01-16, Case No. 3:2007cv01767
 
 Chang et al v. Virgin Mobile USA LLC et al
 
@@ -243,7 +243,7 @@ Jacobsen v. Katzer
 
 Link: http://www.cafc.uscourts.gov/opinions/08-1001.pdf
 
-US Court of Appeals for the Seventh Circuit, 2006-11-09, Case No. 06-2454.
+#### US Court of Appeals for the Seventh Circuit, 2006-11-09, Case No. 06-2454.
 
 Wallace v. IBM
 
