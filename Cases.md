@@ -177,6 +177,7 @@ ___
 #### US Court of Appeals for the Ninth Circuit, 2022-02-18, Cas No. 21-16029
 
 Neo4j, Inc. v. PureThink, LLC
+
 memorandum
 
 Bestätigung (vorläufiges Verfahren), dass bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" die "Commons Clause" nicht entfernt und die Software als Open Source Software bezeichnet werden darf. Detaillierte Informationen zu den Hintergründen: https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/https://sfconservancy.org/blog/2022/mar/30/neo4j-v-purethink-open-source-affero-gpl/
@@ -187,6 +188,7 @@ Link: https://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscou
 #### US District Court, N.D. California, 2021-05-18, Case No. 5:18-cv-07182-EJD 
 
 Neo4j, Inc. v. PureThink, LLC
+
 partial summary judgment
 
 Bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" darf die "Commons Clause" nicht entfernt und die Software als Open Source Software bezeichnet werden.
@@ -197,6 +199,7 @@ Link: https://storage.courtlistener.com/recap/gov.uscourts.cand.335295/gov.uscou
 #### US District Court, N.D. California, 2020-11-13, Case No. 5:19-cv-06226-EJD
 
 Neo4j, Inc. v. Graph Found., Inc.
+
 order to dismiss
 
 Bei einer Lizenzierung unter der AGPL-3.0 mit "Commons Clause" darf die "Commons Clause" nicht entfernt werden.
@@ -207,6 +210,7 @@ Link: https://storage.courtlistener.com/recap/gov.uscourts.cand.349025/gov.uscou
 #### US District Court, E.D. New York, 2017-02-24, Case No. 16-CV-1462 (DRH)(ARL)
 
 Great Minds v. Fedex Office and Print Services Inc.
+
 dismissal
 
 Kopien durch kommerziellen Anbieter im Auftrag des nicht-kommerziell handelnden Lizenznehmers als nicht-kommerzielle Nutzung i.S.v. Creative Commons 4.0-BY-NC-SA international
@@ -216,6 +220,7 @@ Link: https://creativecommons.org/2017/02/24/update-great-minds-v-fedex-office-l
 #### US District Court, N.D. California, 2014-05-16, Case No. 5:13-cv-05161-PSG
 
 XimpleWare v. Versata et al
+
 partial dismissal
 
 Link: http://www.ifross.org/artikel/ximpleware-v-versata-et-al-gplv2-bezogene-patentrechtliche-fragen, http://ia601009.us.archive.org/15/items/gov.uscourts.cand.271648/gov.uscourts.cand.271648.85.0.pdf, https://ia601009.us.archive.org/15/items/gov.uscourts.cand.271648/gov.uscourts.cand.271648.docket.html
