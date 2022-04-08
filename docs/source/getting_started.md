@@ -10,7 +10,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 - In Hermine a "product" is a piece of software that you develop internally.
 - A "release" is a version of a product.
-- A "component" is a thrid party FOSS component used by you 
+- A "component" is a third party FOSS component used by you 
 - A "version" is a version of a component
 
 ## Manual workflow

@@ -7,11 +7,11 @@ Developing Hermine
 
 This is the documentation for contributing to the Hermine Project.
 
-The source code is hosted on Gitlab.com :https://gitlab.com/hermine-project/hermine
+The source code is hosted on Gitlab.com: https://gitlab.com/hermine-project/hermine
 
 .. toctree::
    :glob:
-   :caption: Contents:
+   :caption: Contents
 
    prerequisites
    data_model
