@@ -1,10 +1,11 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-mame"
+status = [ "not-approved" ]
 
 text = '''
 http://mamedev.org/legal.html
+https://web.archive.org/web/20140209072501/http://mamedev.org/legal.html
 '''
 
 [fedora]

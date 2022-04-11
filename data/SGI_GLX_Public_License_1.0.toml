@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-sgi-glx-1.0"
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/GLX_Public_License
@@ -18,11 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-All GLX code now uses Free B 2.0  The GLX 1.0 license is non-free, and yet, it
-was in use in XFree86 and Xorg for many years. In 2008, SGI created the SGI Free
-B 2.0 License (containing identical text to the MIT license), and migrated all
-GLX 1.0 code owned by SGI to the SGI Free B 2.0 license. (http://www.sgi.com/com
-pany_info/newsroom/press_releases/2008/september/opengl.html)  A copy of the GLX
-1.0 is archived here, taken from http://web.archive.org/web/20061104002735/www.s
-gi.com/products/software/opensource/glx/glxlicense.txt on January 4, 2010.
+All GLX code now uses Free B 2.0
 '''

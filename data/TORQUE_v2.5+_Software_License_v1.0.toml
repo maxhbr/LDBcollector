@@ -1,7 +1,7 @@
 [license]
 
 expression = ""
-status = [ "not approved" ]
+status = [ "not-approved" ]
 
 [fedora]
 
@@ -14,5 +14,7 @@ abbreviation = [
 ]
 
 notes = '''
-Commercial use restriction
+Commercial use restriction  no link at all. DejaCode has v1.1 - same for SPDX.
+v1.1 is "good" license. I'd say just remove this, as it's probably really old
+and who knows what the license text is
 '''

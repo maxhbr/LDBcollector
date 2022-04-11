@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-unrar"
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/Unrar
@@ -18,6 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-Use restrictions, forced removal clause, see license page for details  see notes
-on page
+Use restrictions, forced removal clause, see license page for details
 '''

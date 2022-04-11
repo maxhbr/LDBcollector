@@ -1,0 +1,18 @@
+[license]
+
+expression = "CC-BY-NC-SA-2.0"
+status = [ "not-approved" ]
+
+text = '''
+https://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
+'''
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic"
+]
+
+abbreviation = [
+    ""
+]

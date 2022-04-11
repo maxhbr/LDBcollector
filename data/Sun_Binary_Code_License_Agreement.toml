@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-SunBCL"
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/Sun_Binary_Code_License_Agreement
@@ -18,5 +18,6 @@ abbreviation = [
 ]
 
 notes = '''
-Non-free, unless resolved with Supplemental License Terms
+Non-free, unless resolved with Supplemental License Terms  DejaCode has many
+variants of this, but none seemed to match this, so using a generic identifier
 '''

@@ -1,10 +1,11 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-helix"
+status = [ "not-approved" ]
 
 text = '''
 https://helixcommunity.org/beula/
+https://enterprise.dejacode.com/licenses/public/helix/?_list_filters=q%3Dhelix#license-text
 '''
 
 [fedora]
@@ -18,5 +19,5 @@ abbreviation = [
 ]
 
 notes = '''
-No source permissions, binary EULA
+No source permissions, binary EULA  broken link
 '''

@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-OpenMusic-yellow"
+status = [ "not-approved" ]
 
 text = '''
 http://openmusic.linuxtag.org/yellow.html

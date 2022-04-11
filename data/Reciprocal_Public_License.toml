@@ -1,10 +1,11 @@
 [license]
 
-expression = "RPL-1.0 RPL-1.5"
-status = [ "not approved" ]
+expression = "RPL-1.0"
+status = [ "not-approved" ]
 
 text = '''
-http://www.opensource.org/licenses/rpl.php
+https://opensource.org/licenses/rpl1.0
+https://opensource.org/licenses/RPL-1.5
 '''
 
 [fedora]
@@ -16,7 +17,3 @@ name = [
 abbreviation = [
     ""
 ]
-
-notes = '''
-there are two versions of this license - are both "bad"?
-'''

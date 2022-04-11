@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-agere-sla"
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/Agere_LT_Modem_Driver_License

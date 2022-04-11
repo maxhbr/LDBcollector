@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-unsplash"
+status = [ "not-approved" ]
 
 text = '''
 https://unsplash.com/license

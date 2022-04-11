@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-Intel"
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/Intel_IPW3945_Daemon_License
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-No source permissions, binary EULA  see notes on page
+No source permissions, binary EULA
 '''

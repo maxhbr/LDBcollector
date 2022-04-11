@@ -1,12 +1,10 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-tpl-1.0"
+status = [ "not-approved" ]
 
 text = '''
-http://svn.terracotta.org/svn/ehcache/tags/ehcache-
-2.9.0/distribution/src/main/assembly/root/licenses/EHCACHE-TERRACOTTA-
-LICENSE.txt
+http://svn.terracotta.org/svn/ehcache/tags/ehcache-2.9.0/distribution/src/main/assembly/root/licenses/EHCACHE-TERRACOTTA-LICENSE.txt
 '''
 
 [fedora]

@@ -1,10 +1,11 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-aptana-1.0"
+status = [ "not-approved" ]
 
 text = '''
 http://aptana.com/legal/apl/
+https://enterprise.dejacode.com/licenses/public/aptana-1.0/?_list_filters=q%3Daptana#license-text
 '''
 
 [fedora]
@@ -18,5 +19,5 @@ abbreviation = [
 ]
 
 notes = '''
-No permission to redistribute
+No permission to redistribute  broken link
 '''

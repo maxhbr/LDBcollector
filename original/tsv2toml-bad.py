@@ -51,13 +51,13 @@ def write_licenses(outdir, licenses):
 
     for license in licenses.keys():
         entry = licenses[license]
-        output_file = os.path.join(outdir, license.strip().replace(" ", "_").replace("/", "-") + ".toml")
+        output_file = os.path.join(outdir, license.strip().replace(" ", "_").replace("/", "-").replace("(", "").replace(")", "") + ".toml")
 
         # write output file
         o = open(output_file, "w")
         o.write("[license]\n\n")
-        o.write("expression = [ \"%s\" ]\n" % entry["spdx_expression"].strip())
-        o.write("status = \"not approved\"\n")
+        o.write("expression = \"%s\"\n" % entry["spdx_expression"].strip())
+        o.write("status = [ \"not-approved\" ]\n")
 
         if entry["text"] != "":
             entry["text"] = entry["text"].strip()

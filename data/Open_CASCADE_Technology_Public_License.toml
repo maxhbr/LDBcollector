@@ -1,7 +1,7 @@
 [license]
 
 expression = "OCCT-exception-1.0"
-status = [ "not approved" ]
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/Open_CASCADE_Technology_Public_License
@@ -16,11 +16,3 @@ name = [
 abbreviation = [
     ""
 ]
-
-notes = '''
-this sounds like it should be a good license?  "According to fedora-legal [1]
-the licence allows OCCT to be included in fedora repos. It was archived from a
-copy taken from http://www.opencascade.org/getocc/license/ on 14-Apr-2020  [1] h
-ttps://lists.fedoraproject.org/archives/list/legal@lists.fedoraproject.org/threa
-d/TXITDIY4Y6A4BCJEFQDDAVHKBPCWUQG4/  "
-'''

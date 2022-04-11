@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-cc-nc-sampling-plus-1.0"
+status = [ "not-approved" ]
 
 text = '''
 http://creativecommons.org/licenses/sampling+/1.0/legalcode

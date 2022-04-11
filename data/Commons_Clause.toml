@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-commons-clause"
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/CommonsClause
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-Commercial use restrictions  see notes on page
+Commercial use restrictions
 '''

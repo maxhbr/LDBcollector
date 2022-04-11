@@ -1,10 +1,11 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-pine"
+status = [ "not-approved" ]
 
 text = '''
 http://www.washington.edu/pine/overview/legal.html
+https://enterprise.dejacode.com/licenses/public/pine/?_list_filters=q%3Dpine#license-text
 '''
 
 [fedora]
@@ -16,3 +17,7 @@ name = [
 abbreviation = [
     ""
 ]
+
+notes = '''
+broken link
+'''

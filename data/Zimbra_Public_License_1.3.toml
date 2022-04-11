@@ -1,7 +1,7 @@
 [license]
 
 expression = "Zimbra-1.3"
-status = [ "not approved" ]
+status = [ "not-approved" ]
 
 text = '''
 http://www.zimbra.com/license/zimbra-public-license-1-3.html
@@ -20,6 +20,5 @@ abbreviation = [
 notes = '''
 Badgeware clause does not make allowances for modifications in which it is not
 technically possible to preserve a 'logo', we must assume this provision
-constitutes an undue burden on the right of modification.  I think this is FSF
-free??
+constitutes an undue burden on the right of modification.
 '''

@@ -1,10 +1,11 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-odl"
+status = [ "not-approved" ]
 
 text = '''
 http://dmoz.org/license.html
+https://enterprise.dejacode.com/licenses/public/odl/#license-text
 '''
 
 [fedora]

@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-stanford-mrouted"
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/mrouted
@@ -16,7 +16,3 @@ name = [
 abbreviation = [
     ""
 ]
-
-notes = '''
-see notes on page
-'''

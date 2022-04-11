@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-amazon-sl"
+status = [ "not-approved" ]
 
 text = '''
 http://aws.amazon.com/asl/

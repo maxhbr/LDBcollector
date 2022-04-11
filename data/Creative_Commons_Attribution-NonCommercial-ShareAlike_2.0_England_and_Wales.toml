@@ -1,0 +1,18 @@
+[license]
+
+expression = "CC-BY-NC-SA-2.0-UK"
+status = [ "not-approved" ]
+
+text = '''
+https://creativecommons.org/licenses/by-nc-sa/2.0/uk/legalcode
+'''
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution-NonCommercial-ShareAlike 2.0 England and Wales"
+]
+
+abbreviation = [
+    ""
+]

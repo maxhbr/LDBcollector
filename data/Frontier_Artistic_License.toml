@@ -1,10 +1,10 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-frontier-1.0"
+status = [ "not-approved" ]
 
 text = '''
-http://www.spinwardstars.com/frontier/fal.html
+http://www.spinwardstars.com/frontier/fal.html  https://enterprise.dejacode.com/licenses/public/frontier-1.0/?_list_filters=q%3Dfrontier#license-text
 '''
 
 [fedora]
@@ -18,5 +18,5 @@ abbreviation = [
 ]
 
 notes = '''
-Non-free for the same reasons as regular Artistic 1.0 License
+Non-free for the same reasons as regular Artistic 1.0 License  broken link
 '''

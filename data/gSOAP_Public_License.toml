@@ -1,7 +1,7 @@
 [license]
 
 expression = "gSOAP-1.3b"
-status = [ "not approved" ]
+status = [ "not-approved" ]
 
 text = '''
 http://www.cs.fsu.edu/~engelen/license.html

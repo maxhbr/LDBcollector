@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-Iha"
+status = [ "not-approved" ]
 
 text = '''
 http://packages.debian.org/changelogs/pool/non-free/l/lha/current/copyright

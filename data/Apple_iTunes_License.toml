@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-iTunes"
+status = [ "not-approved" ]
 
 text = '''
 http://images.apple.com/legal/sla/docs/itunes.pdf

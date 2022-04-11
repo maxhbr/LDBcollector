@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-quicktime"
+status = [ "not-approved" ]
 
 text = '''
 http://store.apple.com/Catalog/US/Images/quicktime.html

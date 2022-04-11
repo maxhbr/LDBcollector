@@ -1,7 +1,7 @@
 [license]
 
 expression = "EFL-1.0"
-status = [ "not approved" ]
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/Eiffel_Forum_License_V1

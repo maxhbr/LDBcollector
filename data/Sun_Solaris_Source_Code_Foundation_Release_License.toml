@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-sun-ssscfr-1.1"
+status = [ "not-approved" ]
 
 text = '''
 http://www.mibsoftware.com/librock/librock/license/ssscfr.txt

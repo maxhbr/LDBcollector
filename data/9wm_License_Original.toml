@@ -1,7 +1,7 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-9wm"
+status = [ "not-approved" ]
 
 text = '''
 http://unauthorised.org/dhog/9wm/README

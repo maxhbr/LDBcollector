@@ -1,7 +1,7 @@
 [license]
 
 expression = "RSCPL"
-status = [ "not approved" ]
+status = [ "not-approved" ]
 
 text = '''
 http://opensource.org/licenses/ricohpl.php

@@ -1,0 +1,18 @@
+[license]
+
+expression = "CC-BY-NC-ND-3.0-DE"
+status = [ "not-approved" ]
+
+text = '''
+https://creativecommons.org/licenses/by-nc-nd/3.0/de/legalcode
+'''
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution-NonCommercial-NoDerivatives 3.0 Germany"
+]
+
+abbreviation = [
+    ""
+]

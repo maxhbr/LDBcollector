@@ -1,7 +1,7 @@
 [license]
 
 expression = "APSL-1.1"
-status = [ "not approved" ]
+status = [ "not-approved" ]
 
 text = '''
 https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.1

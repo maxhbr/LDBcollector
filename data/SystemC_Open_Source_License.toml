@@ -1,10 +1,11 @@
 [license]
 
-expression = ""
-status = [ "not approved" ]
+expression = "LicenseRef-SystemC-3.0"
+status = [ "not-approved" ]
 
 text = '''
 http://www.systemc.org/about/org_docs/license/
+http://web.archive.org/web/20111128143257/http://www.systemc.org/about/org_docs/license/
 '''
 
 [fedora]
@@ -16,3 +17,9 @@ name = [
 abbreviation = [
     ""
 ]
+
+notes = '''
+link broken, last time this page was recorded was before Accellera acquisition.
+DejaCode has 3.3. and mentions Accellera - might be the same as 3.0, didn't
+check
+'''
