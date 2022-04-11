@@ -1,0 +1,18 @@
+[license]
+
+expression = "IJG"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/IJG
+'''
+
+[fedora]
+
+name = [
+    "Independent JPEG Group License"
+]
+
+abbreviation = [
+    "IJG"
+]

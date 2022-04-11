@@ -1,0 +1,18 @@
+[license]
+
+expression = "MIT-0"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/MIT-0
+'''
+
+[fedora]
+
+name = [
+    "MIT No Attribution (MIT-0)"
+]
+
+abbreviation = [
+    "MIT-0"
+]

@@ -1,0 +1,22 @@
+[license]
+
+expression = "DOC"
+status = [ "approved" ]
+
+text = '''
+http://www.cs.wustl.edu/~schmidt/ACE-copying.html
+'''
+
+[fedora]
+
+name = [
+    "DOC License"
+]
+
+abbreviation = [
+    "DOC"
+]
+
+notes = '''
+Permissive license. May be single package license, but package is oft used.
+'''

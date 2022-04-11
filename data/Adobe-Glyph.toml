@@ -1,0 +1,22 @@
+[license]
+
+expression = "Adobe-Glyph"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
+'''
+
+[fedora]
+
+name = [
+    "Adobe Glyph List License"
+]
+
+abbreviation = [
+    "MIT"
+]
+
+notes = '''
+MIT variant; Fedora does not use distinct short identifier
+'''

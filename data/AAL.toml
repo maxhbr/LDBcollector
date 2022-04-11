@@ -1,0 +1,18 @@
+[license]
+
+expression = "AAL"
+status = [ "approved" ]
+
+text = '''
+http://opensource.org/licenses/attribution.php
+'''
+
+[fedora]
+
+name = [
+    "Attribution Assurance License"
+]
+
+abbreviation = [
+    "AAL"
+]

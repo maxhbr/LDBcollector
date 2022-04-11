@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/MSNTP
+'''
+
+[fedora]
+
+name = [
+    "MSNTP License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Commercial use restrictions
+'''

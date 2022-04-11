@@ -1,0 +1,22 @@
+[license]
+
+expression = "LPL-1.02"
+status = [ "approved" ]
+
+text = '''
+http://plan9.bell-labs.com/plan9dist/license.html
+'''
+
+[fedora]
+
+name = [
+    "Lucent Public License (Plan9)"
+]
+
+abbreviation = [
+    "LPL"
+]
+
+notes = '''
+SPDX List also has LPL-1.0
+'''

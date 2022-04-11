@@ -1,0 +1,18 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+http://squeak.org/SqueakLicense/
+'''
+
+[fedora]
+
+name = [
+    "Squeak License"
+]
+
+abbreviation = [
+    ""
+]

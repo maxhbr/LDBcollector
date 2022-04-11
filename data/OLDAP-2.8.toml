@@ -1,0 +1,18 @@
+[license]
+
+expression = "OLDAP-2.8"
+status = [ "approved" ]
+
+text = '''
+http://www.openldap.org/software/release/license.html
+'''
+
+[fedora]
+
+name = [
+    "OpenLDAP License"
+]
+
+abbreviation = [
+    "OpenLDAP"
+]

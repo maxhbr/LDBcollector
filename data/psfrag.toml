@@ -1,0 +1,18 @@
+[license]
+
+expression = "psfrag"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/psfrag
+'''
+
+[fedora]
+
+name = [
+    "psfrag License"
+]
+
+abbreviation = [
+    "psfrag"
+]

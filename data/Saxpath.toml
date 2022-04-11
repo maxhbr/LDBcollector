@@ -1,0 +1,18 @@
+[license]
+
+expression = "Saxpath"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Saxpath_License
+'''
+
+[fedora]
+
+name = [
+    "Saxpath License"
+]
+
+abbreviation = [
+    "Saxpath"
+]

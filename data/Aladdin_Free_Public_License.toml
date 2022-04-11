@@ -1,0 +1,18 @@
+[license]
+
+expression = "Aladdin"
+status = [ "not approved" ]
+
+text = '''
+http://www.artifex.com/downloads/doc/Public.htm
+'''
+
+[fedora]
+
+name = [
+    "Aladdin Free Public License"
+]
+
+abbreviation = [
+    ""
+]

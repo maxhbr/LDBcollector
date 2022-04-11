@@ -1,0 +1,18 @@
+[license]
+
+expression = "FDK-AAC"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/FDK-AAC
+'''
+
+[fedora]
+
+name = [
+    "Fraunhofer FDK AAC License"
+]
+
+abbreviation = [
+    "FDK-AAC"
+]

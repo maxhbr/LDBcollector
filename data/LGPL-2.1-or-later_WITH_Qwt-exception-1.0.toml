@@ -1,0 +1,18 @@
+[license]
+
+expression = "LGPL-2.1-or-later WITH Qwt-exception-1.0"
+status = [ "approved" ]
+
+text = '''
+http://qwt.sourceforge.net/qwtlicense.html
+'''
+
+[fedora]
+
+name = [
+    "Qwt License 1.0"
+]
+
+abbreviation = [
+    "LGPLv2+ with exceptions"
+]

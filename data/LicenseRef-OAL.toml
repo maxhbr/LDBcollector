@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-OAL"
+status = [ "approved-content" ]
+
+[fedora]
+
+name = [
+    "EFF Open Audio License v1"
+]
+
+abbreviation = [
+    "OAL"
+]

@@ -1,0 +1,29 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/ApplicationResponseMeasurementSDKLicens
+e
+'''
+
+[fedora]
+
+name = [
+    "License Agreement for Application Response Measurement (ARM) SDK"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+see notes on license page  This is non-free, because there is no permission to
+redistribute modified versions of code under this license, only to "Make copies
+of the original file you download and distribute it". That, combined with:
+"Except as expressly stated above, HP and tang-IT grant no other licenses,
+express or implied, by estoppel or otherwise, to any intellectual property
+rights." means that we cannot assume permission to distribute modified/derived
+works is implied.
+'''

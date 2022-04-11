@@ -1,0 +1,18 @@
+[license]
+
+expression = "AGPL-1.0-only"
+status = [ "approved" ]
+
+text = '''
+http://www.affero.org/oagpl.html
+'''
+
+[fedora]
+
+name = [
+    "Affero General Public License 1.0"
+]
+
+abbreviation = [
+    "AGPLv1"
+]

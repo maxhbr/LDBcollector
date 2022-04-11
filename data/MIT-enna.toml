@@ -1,0 +1,24 @@
+[license]
+
+expression = "MIT-enna"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/MIT#enna
+'''
+
+[fedora]
+
+name = [
+    "enna License"
+]
+
+abbreviation = [
+    "MIT"
+]
+
+notes = '''
+MIT variant  COPYING.PLAIN text referenced in the license can be found here
+http://git.enlightenment.org/enlightenment/modules/forecasts.git/plain/COPYING-
+PLAIN
+'''

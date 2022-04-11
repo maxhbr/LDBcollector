@@ -1,0 +1,22 @@
+[license]
+
+expression = "MIT-feh"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/MIT#feh
+'''
+
+[fedora]
+
+name = [
+    "feh License"
+]
+
+abbreviation = [
+    "MIT"
+]
+
+notes = '''
+Slight variant to MIT license. May be one package license
+'''

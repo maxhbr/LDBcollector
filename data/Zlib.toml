@@ -1,0 +1,18 @@
+[license]
+
+expression = "Zlib"
+status = [ "approved" ]
+
+text = '''
+http://www.gzip.org/zlib/zlib_license.html
+'''
+
+[fedora]
+
+name = [
+    "zlib/libpng License"
+]
+
+abbreviation = [
+    "zlib"
+]

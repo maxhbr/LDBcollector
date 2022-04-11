@@ -1,0 +1,23 @@
+[license]
+
+expression = "OSLC-2.0"
+status = [ "not approved" ]
+
+text = '''
+http://opensource.org/licenses/oclc2.php
+'''
+
+[fedora]
+
+name = [
+    "OCLC Public Research License 2.0"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Appears to limit the price at which a copy can be charged, not just simply
+prohibiting imposition of royalties.
+'''

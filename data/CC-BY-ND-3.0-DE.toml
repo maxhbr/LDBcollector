@@ -1,0 +1,14 @@
+[license]
+
+expression = "CC-BY-ND-3.0-DE"
+status = [ "approved-content" ]
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution-NoDerivs"
+]
+
+abbreviation = [
+    "CC-BY-ND"
+]

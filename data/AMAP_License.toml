@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/AMAP_License
+'''
+
+[fedora]
+
+name = [
+    "AMAP License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Additional restrictions are non-free and GPL incompatible
+'''

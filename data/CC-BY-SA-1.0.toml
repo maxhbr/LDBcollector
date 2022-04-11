@@ -1,0 +1,14 @@
+[license]
+
+expression = "CC-BY-SA-1.0"
+status = [ "approved-content", "approved-documentation" ]
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution-ShareAlike 1.0"
+]
+
+abbreviation = [
+    "CC-BY-SA"
+]

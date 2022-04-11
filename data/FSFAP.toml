@@ -1,0 +1,18 @@
+[license]
+
+expression = "FSFAP"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/FSFAP
+'''
+
+[fedora]
+
+name = [
+    "FSF All Permissive license"
+]
+
+abbreviation = [
+    "FSFAP"
+]

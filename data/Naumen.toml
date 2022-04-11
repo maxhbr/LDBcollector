@@ -1,0 +1,18 @@
+[license]
+
+expression = "Naumen"
+status = [ "approved" ]
+
+text = '''
+http://opensource.org/licenses/naumen.php
+'''
+
+[fedora]
+
+name = [
+    "Naumen Public License"
+]
+
+abbreviation = [
+    "Naumen"
+]

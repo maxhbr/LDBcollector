@@ -1,0 +1,25 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+http://svn.terracotta.org/svn/ehcache/tags/ehcache-
+2.9.0/distribution/src/main/assembly/root/licenses/EHCACHE-TERRACOTTA-
+LICENSE.txt
+'''
+
+[fedora]
+
+name = [
+    "Terracotta Public License 1.0"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Attribution requirements are burdensome, unclear, and potentially impossible to
+comply with (Section 14)
+'''

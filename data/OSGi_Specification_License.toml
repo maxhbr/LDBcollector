@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+http://www.osgi.org/Main/OSGiSpecificationLicense
+'''
+
+[fedora]
+
+name = [
+    "OSGi Specification License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Forbids modification
+'''

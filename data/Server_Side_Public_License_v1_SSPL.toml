@@ -1,0 +1,18 @@
+[license]
+
+expression = "SSPL-1.0"
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/SSPL
+'''
+
+[fedora]
+
+name = [
+    "Server Side Public License v1 (SSPL)"
+]
+
+abbreviation = [
+    ""
+]

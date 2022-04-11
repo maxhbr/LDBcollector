@@ -1,0 +1,25 @@
+[license]
+
+expression = "LicenseRef-SCRIP"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/SCRIP
+'''
+
+[fedora]
+
+name = [
+    "SCRIP License"
+]
+
+abbreviation = [
+    "SCRIP"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX  Way too specific "JL: this
+seems old and can't find it elsewhere... reject? PM: Add?-found wiki page and
+code available, although last contribution 3 yrs. ago (see
+http://oceans11.lanl.gov/trac/SCRIP/wiki ) - too specific, decided not to add"
+'''

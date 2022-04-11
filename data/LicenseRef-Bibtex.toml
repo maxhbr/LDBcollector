@@ -1,0 +1,27 @@
+[license]
+
+expression = "LicenseRef-Bibtex"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Bibtex
+'''
+
+[fedora]
+
+name = [
+    "Bibtex License"
+]
+
+abbreviation = [
+    "Bibtex"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX  Permissive license with
+requirement to rename any modified files.  need to consider how to manage
+variations (see: http://osl.ugr.es/CTAN/biblio/bibtex/contrib/sort-by-
+letters/README). that is, should we templatize the actual filenames in the
+""original"" license version, since they may or may not be included? - should we
+ask Fedora about this issue, are there variations with other filenames?
+'''

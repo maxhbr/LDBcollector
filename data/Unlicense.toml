@@ -1,0 +1,18 @@
+[license]
+
+expression = "Unlicense"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Unlicense
+'''
+
+[fedora]
+
+name = [
+    "Unlicense"
+]
+
+abbreviation = [
+    "Unlicense"
+]

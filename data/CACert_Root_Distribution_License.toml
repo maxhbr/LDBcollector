@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/CACert_Root_Distribution_License
+'''
+
+[fedora]
+
+name = [
+    "CACert Root Distribution License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Liability disclaimer is actually use restriction  see notes on page
+'''

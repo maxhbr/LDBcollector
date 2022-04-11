@@ -1,0 +1,22 @@
+[license]
+
+expression = "Xerox"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Xerox
+'''
+
+[fedora]
+
+name = [
+    "Xerox License"
+]
+
+abbreviation = [
+    "Xerox"
+]
+
+notes = '''
+Currently identified by fossology as "Xerox"
+'''

@@ -1,0 +1,18 @@
+[license]
+
+expression = "EPICS"
+status = [ "approved" ]
+
+text = '''
+http://www.aps.anl.gov/epics/license/open.php
+'''
+
+[fedora]
+
+name = [
+    "EPICS Open License"
+]
+
+abbreviation = [
+    "EPICS"
+]

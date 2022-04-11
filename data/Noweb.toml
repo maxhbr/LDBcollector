@@ -1,0 +1,18 @@
+[license]
+
+expression = "Noweb"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Noweb
+'''
+
+[fedora]
+
+name = [
+    "Noweb License"
+]
+
+abbreviation = [
+    "Noweb"
+]

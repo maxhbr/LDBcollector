@@ -1,0 +1,22 @@
+[license]
+
+expression = "Eurosym"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Eurosym
+'''
+
+[fedora]
+
+name = [
+    "Eurosym License"
+]
+
+abbreviation = [
+    "Eurosym"
+]
+
+notes = '''
+Copyleft license. German law applies
+'''

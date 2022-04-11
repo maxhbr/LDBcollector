@@ -1,0 +1,18 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+[fedora]
+
+name = [
+    "AT&T Public License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Deprecated license
+'''

@@ -1,0 +1,22 @@
+[license]
+
+expression = "Wsuipa"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Wsuipa
+'''
+
+[fedora]
+
+name = [
+    "Wsuipa License"
+]
+
+abbreviation = [
+    "Wsuipa"
+]
+
+notes = '''
+part of TEX
+'''

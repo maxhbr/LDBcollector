@@ -1,0 +1,22 @@
+[license]
+
+expression = "LicenseREf-LOSLA"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/LOSLA
+'''
+
+[fedora]
+
+name = [
+    "LEGO Open Source License Agreement"
+]
+
+abbreviation = [
+    "LOSLA"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX
+'''

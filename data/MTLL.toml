@@ -1,0 +1,22 @@
+[license]
+
+expression = "MTLL"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License
+'''
+
+[fedora]
+
+name = [
+    "Matrix Template Library License"
+]
+
+abbreviation = [
+    "MTLL"
+]
+
+notes = '''
+Single package license. Apache-1.1-like
+'''

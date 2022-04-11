@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/mrouted
+'''
+
+[fedora]
+
+name = [
+    "mrouted license (old)"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+see notes on page
+'''

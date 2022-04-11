@@ -1,0 +1,22 @@
+[license]
+
+expression = "Afmparse"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Afmparse
+'''
+
+[fedora]
+
+name = [
+    "Afmparse License"
+]
+
+abbreviation = [
+    "Afmparse"
+]
+
+notes = '''
+Permissive license
+'''

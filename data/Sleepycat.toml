@@ -1,0 +1,18 @@
+[license]
+
+expression = "Sleepycat"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Sleepycat
+'''
+
+[fedora]
+
+name = [
+    "Sleepycat Software Product License"
+]
+
+abbreviation = [
+    "Sleepycat"
+]

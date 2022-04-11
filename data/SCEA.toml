@@ -1,0 +1,23 @@
+[license]
+
+expression = "SCEA"
+status = [ "approved" ]
+
+text = '''
+http://research.scea.com/scea_shared_source_license.html
+'''
+
+[fedora]
+
+name = [
+    "SCEA Shared Source License"
+]
+
+abbreviation = [
+    "SCEA"
+]
+
+notes = '''
+note it is listed here too: http://en.opensuse.org/openSUSE:Accepted_licences
+and elsewhere
+'''

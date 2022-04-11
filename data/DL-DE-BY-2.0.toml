@@ -1,0 +1,14 @@
+[license]
+
+expression = "DL-DE-BY-2.0"
+status = [ "approved-content" ]
+
+[fedora]
+
+name = [
+    "Data license Germany - attribution 2.0"
+]
+
+abbreviation = [
+    "DL-DE-BY"
+]

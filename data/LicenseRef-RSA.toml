@@ -1,0 +1,22 @@
+[license]
+
+expression = "LicenseRef-RSA"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/RSA
+'''
+
+[fedora]
+
+name = [
+    "RSA License"
+]
+
+abbreviation = [
+    "RSA"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX
+'''

@@ -1,0 +1,18 @@
+[license]
+
+expression = "MPL-1.0"
+status = [ "approved" ]
+
+text = '''
+http://opensource.org/licenses/mozilla1.0.php
+'''
+
+[fedora]
+
+name = [
+    "Mozilla Public License v1.0"
+]
+
+abbreviation = [
+    "MPLv1.0"
+]

@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-OpenMusic"
+status = [ "approved-content" ]
+
+[fedora]
+
+name = [
+    "LinuxTag Green OpenMusic License"
+]
+
+abbreviation = [
+    "Green OpenMusic"
+]

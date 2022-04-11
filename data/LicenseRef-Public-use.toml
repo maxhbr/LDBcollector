@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-Public-use"
+status = [ "approved-documentation" ]
+
+[fedora]
+
+name = [
+    "Public Use License, v1.0"
+]
+
+abbreviation = [
+    "Public Use"
+]

@@ -1,0 +1,23 @@
+[license]
+
+expression = "LicenseRef-Lhcyr"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Lhcyr
+'''
+
+[fedora]
+
+name = [
+    "Lhcyr License"
+]
+
+abbreviation = [
+    "Lhcyr"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX  Permissive license.    old,
+not worth adding
+'''

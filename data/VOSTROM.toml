@@ -1,0 +1,18 @@
+[license]
+
+expression = "VOSTROM"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/VOSTROM
+'''
+
+[fedora]
+
+name = [
+    "VOSTROM Public License for Open Source"
+]
+
+abbreviation = [
+    "VOSTROM"
+]

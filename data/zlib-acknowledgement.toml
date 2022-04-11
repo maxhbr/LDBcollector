@@ -1,0 +1,29 @@
+[license]
+
+expression = "zlib-acknowledgement"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Nunit
+https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
+'''
+
+[fedora]
+
+name = [
+    "Nunit License",
+    "zlib/libpng License with Acknowledgement"
+]
+
+abbreviation = [
+    "MIT with advertising",
+    "zlib with acknowledgement"
+]
+
+notes = '''
+added to SPDX as "Nunit" and later realized it was same as zlib-acknowledgement
+with matching guidelines - use latter identifier  will need to templatize
+copyright/acknowledgement statement in middle of license text  - decided to not
+templatize; need to use different short name b/c "with" is an operator for SPDX
+license expression
+'''

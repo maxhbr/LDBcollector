@@ -1,0 +1,14 @@
+[license]
+
+expression = "FreeBSD-DOC"
+status = [ "approved-documentation" ]
+
+[fedora]
+
+name = [
+    "FreeBSD Documentation License"
+]
+
+abbreviation = [
+    "FBSDDL"
+]

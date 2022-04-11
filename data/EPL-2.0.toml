@@ -1,0 +1,18 @@
+[license]
+
+expression = "EPL-2.0"
+status = [ "approved" ]
+
+text = '''
+http://www.eclipse.org/legal/epl-v20.html
+'''
+
+[fedora]
+
+name = [
+    "Eclipse Public License 2.0"
+]
+
+abbreviation = [
+    "EPL-2.0"
+]

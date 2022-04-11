@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://helixcommunity.org/beula/
+'''
+
+[fedora]
+
+name = [
+    "Helix DNA Technology Binary Research Use License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+No source permissions, binary EULA
+'''

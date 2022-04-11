@@ -1,0 +1,14 @@
+[license]
+
+expression = "CC-BY-SA-2.1-JP"
+status = [ "approved-content", "approved-documentation" ]
+
+[fedora]
+
+name = [
+    "Creative Commons Attribution-ShareAlike 2.1 Japan"
+]
+
+abbreviation = [
+    "CC-BY-SA"
+]

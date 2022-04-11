@@ -1,0 +1,18 @@
+[license]
+
+expression = "ANTLR-PD"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/ANTLR-PD
+'''
+
+[fedora]
+
+name = [
+    "ANTLR Software Rights Notice"
+]
+
+abbreviation = [
+    "ANTLR-PD"
+]

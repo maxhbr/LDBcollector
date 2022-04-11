@@ -1,0 +1,22 @@
+[license]
+
+expression = "AFL-3.0"
+status = [ "approved" ]
+
+text = '''
+http://opensource.org/licenses/afl-3.0.php
+'''
+
+[fedora]
+
+name = [
+    "Academic Free License"
+]
+
+abbreviation = [
+    "AFL"
+]
+
+notes = '''
+SPDX List also has AFL-1.1, AFL-1.2, AFL-2.0, AFL-2.1
+'''

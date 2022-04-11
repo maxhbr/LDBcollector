@@ -1,0 +1,18 @@
+[license]
+
+expression = "Mup"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Mup
+'''
+
+[fedora]
+
+name = [
+    "Mup License"
+]
+
+abbreviation = [
+    "Mup"
+]

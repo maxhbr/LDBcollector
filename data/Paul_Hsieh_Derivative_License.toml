@@ -1,0 +1,18 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+http://www.azillionmonkeys.com/qed/license-derivative.html
+'''
+
+[fedora]
+
+name = [
+    "Paul Hsieh Derivative License"
+]
+
+abbreviation = [
+    ""
+]

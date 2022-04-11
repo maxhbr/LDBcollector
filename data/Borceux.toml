@@ -1,0 +1,22 @@
+[license]
+
+expression = "Borceux"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Borceux
+'''
+
+[fedora]
+
+name = [
+    "Borceux license"
+]
+
+abbreviation = [
+    "Borceux"
+]
+
+notes = '''
+Permissive license. May be single package license.
+'''

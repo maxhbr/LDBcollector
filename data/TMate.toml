@@ -1,0 +1,18 @@
+[license]
+
+expression = "TMate"
+status = [ "approved" ]
+
+text = '''
+http://svnkit.com/license.html
+'''
+
+[fedora]
+
+name = [
+    "TMate Open Source License"
+]
+
+abbreviation = [
+    "TMate"
+]

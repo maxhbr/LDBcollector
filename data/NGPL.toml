@@ -1,0 +1,18 @@
+[license]
+
+expression = "NGPL"
+status = [ "approved" ]
+
+text = '''
+http://opensource.org/licenses/nethack.php
+'''
+
+[fedora]
+
+name = [
+    "Nethack General Public License"
+]
+
+abbreviation = [
+    "NGPL"
+]

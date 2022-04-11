@@ -1,0 +1,23 @@
+[license]
+
+expression = "FreeImage"
+status = [ "approved" ]
+
+text = '''
+http://freeimage.sourceforge.net/freeimage-license.txt
+'''
+
+[fedora]
+
+name = [
+    "FreeImage Public License"
+]
+
+abbreviation = [
+    "MPLv1.0"
+]
+
+notes = '''
+Fedora does not use distinct short identifier from MPLv1.0 (needs to be
+verified).   diff in choice of law provision - ADDED
+'''

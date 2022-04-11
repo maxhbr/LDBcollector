@@ -1,0 +1,22 @@
+[license]
+
+expression = "AMDPLPA"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License
+'''
+
+[fedora]
+
+name = [
+    "AMD's plpa_map.c License"
+]
+
+abbreviation = [
+    "AMDPLPA"
+]
+
+notes = '''
+BSD variant. Single use case?
+'''

@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+http://opencontent.org/opl.shtml
+'''
+
+[fedora]
+
+name = [
+    "Open Content License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+link broken
+'''

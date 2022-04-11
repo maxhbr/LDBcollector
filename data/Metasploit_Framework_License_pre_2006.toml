@@ -1,0 +1,31 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License
+'''
+
+[fedora]
+
+name = [
+    "Metasploit Framework License (pre 2006)"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+There are two versions of this license.  1) Up to 2006, Metasploit was under a
+non-free license, originally found at:
+http://metasploit.com/svn/framework3/trunk/documentation/LICENSE but that URL is
+gone. A copy of that version from archive.org has been preserved here for
+reference.  2) At some point in 2006, Metasploit's Framework License switched to
+3-clause BSD, which is Free and GPL-compatible. It is noteworthy that the
+license text also tracks and includes the licensing for all of the bundled
+components within Metasploit. A copy of this license was taken from
+https://github.com/rapid7/metasploit-framework/blob/master/LICENSE on May 9,
+2014.
+'''

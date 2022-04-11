@@ -1,0 +1,18 @@
+[license]
+
+expression = "Motosoto"
+status = [ "approved" ]
+
+text = '''
+http://opensource.org/licenses/motosoto.php
+'''
+
+[fedora]
+
+name = [
+    "Motosoto License"
+]
+
+abbreviation = [
+    "Motosoto"
+]

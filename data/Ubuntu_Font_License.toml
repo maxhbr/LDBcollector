@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/UbuntuFontLicense
+'''
+
+[fedora]
+
+name = [
+    "Ubuntu Font License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Poorly written, cannot actually use fonts
+'''

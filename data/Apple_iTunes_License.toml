@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+http://images.apple.com/legal/sla/docs/itunes.pdf
+'''
+
+[fedora]
+
+name = [
+    "Apple iTunes License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+No source related permissions
+'''

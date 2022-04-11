@@ -1,0 +1,23 @@
+[license]
+
+expression = "LicenseRef-VNLSL"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Vita_Nuova_Liberal_Source_License
+'''
+
+[fedora]
+
+name = [
+    "Vita Nuova Liberal Source License"
+]
+
+abbreviation = [
+    "VNLSL"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX  no current copy of license
+elsewhere and seems old and very specific so not adding
+'''

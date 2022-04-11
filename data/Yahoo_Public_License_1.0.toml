@@ -1,0 +1,18 @@
+[license]
+
+expression = "YPL-1.0"
+status = [ "not approved" ]
+
+text = '''
+http://www.zimbra.com/license/yahoo_public_license_1.0.html
+'''
+
+[fedora]
+
+name = [
+    "Yahoo Public License 1.0"
+]
+
+abbreviation = [
+    ""
+]

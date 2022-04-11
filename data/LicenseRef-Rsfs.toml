@@ -1,0 +1,24 @@
+[license]
+
+expression = "LicenseRef-Rsfs"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Rsfs
+'''
+
+[fedora]
+
+name = [
+    "Rsfs License"
+]
+
+abbreviation = [
+    "Rsfs"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX  this text is part of a longer
+letter and so is making a call of what is the license to begin with - see:
+http://mirror.utexas.edu/ctan/fonts/rsfs/README
+'''

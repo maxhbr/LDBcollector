@@ -1,0 +1,28 @@
+[license]
+
+expression = "BSD-3-Clause"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD
+https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License
+https://www.unidata.ucar.edu/software/netcdf/copyright.html
+'''
+
+[fedora]
+
+name = [
+    "BSD License (no advertising)",
+    "Metasploit Framework License (post 2006)",
+    "NetCDF License"
+]
+
+abbreviation = [
+    "BSD",
+    "NetCDF"
+]
+
+notes = '''
+Same as BSD-3-Clause, but replaces "copyright holders" with "regents"  license
+text on Fedora page is list of licenses
+'''

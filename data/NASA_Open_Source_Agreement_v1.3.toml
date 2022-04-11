@@ -1,0 +1,18 @@
+[license]
+
+expression = "NASA-1.3"
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/NASA_Open_Source_Agreement
+'''
+
+[fedora]
+
+name = [
+    "NASA Open Source Agreement v1.3"
+]
+
+abbreviation = [
+    ""
+]

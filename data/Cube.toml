@@ -1,0 +1,24 @@
+[license]
+
+expression = "Cube"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Cube
+'''
+
+[fedora]
+
+name = [
+    "Cube License"
+]
+
+abbreviation = [
+    "Cube"
+]
+
+notes = '''
+Permissive license with requirement that you may not relicense the source code
+under any other license. Official site http://src.gnu-
+darwin.org/ports/games/assaultcube/work/AssaultCube/source/LICENSE
+'''

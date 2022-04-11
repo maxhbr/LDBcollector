@@ -1,0 +1,24 @@
+[license]
+
+expression = "BSD-2-Clause"
+status = [ "approved" ]
+
+text = '''
+http://creativecommons.org/licenses/BSD/  http://www.cryptix.org/LICENSE.TXT
+'''
+
+[fedora]
+
+name = [
+    "Creative Commons BSD",
+    "Cryptix General License"
+]
+
+abbreviation = [
+    "BSD"
+]
+
+notes = '''
+short identifier issue - need to deal with for all BSD variants  Fedora uses
+identifier, "BSD"
+'''

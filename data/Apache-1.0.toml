@@ -1,0 +1,18 @@
+[license]
+
+expression = "Apache-1.0"
+status = [ "approved" ]
+
+text = '''
+http://www.apache.org/licenses/LICENSE-1.0
+'''
+
+[fedora]
+
+name = [
+    "Apache Software License 1.0"
+]
+
+abbreviation = [
+    "ASL 1.0"
+]

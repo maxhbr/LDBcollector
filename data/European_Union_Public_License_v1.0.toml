@@ -1,0 +1,22 @@
+[license]
+
+expression = "EUPL-1.0"
+status = [ "not approved" ]
+
+text = '''
+http://ec.europa.eu/idabc/eupl
+'''
+
+[fedora]
+
+name = [
+    "European Union Public License v1.0"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Non-free due to Article 13.
+'''

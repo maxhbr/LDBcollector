@@ -1,0 +1,23 @@
+[license]
+
+expression = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+status = [ "approved" ]
+
+text = '''
+http://dev.perl.org/licenses/
+'''
+
+[fedora]
+
+name = [
+    "Perl License"
+]
+
+abbreviation = [
+    "GPL+ or Artistic"
+]
+
+notes = '''
+this would be covered by using the short identifiers for each licnese choice
+with the "OR" operator
+'''

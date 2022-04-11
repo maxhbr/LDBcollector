@@ -1,0 +1,18 @@
+[license]
+
+expression = "GPL-2.0-only WITH Classpath-exception-2.0"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
+'''
+
+[fedora]
+
+name = [
+    "GNU General Public License v2.0 only, with Classpath exception"
+]
+
+abbreviation = [
+    "GPLv2 with exceptions"
+]

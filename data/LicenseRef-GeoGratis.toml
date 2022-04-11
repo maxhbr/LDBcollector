@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-GeoGratis"
+status = [ "approved-content" ]
+
+[fedora]
+
+name = [
+    "GeoGratis Licence Agreement"
+]
+
+abbreviation = [
+    "GeoGratis"
+]

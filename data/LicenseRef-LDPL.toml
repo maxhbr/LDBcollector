@@ -1,0 +1,14 @@
+[license]
+
+expression = "LicenseRef-LDPL"
+status = [ "approved-documentation" ]
+
+[fedora]
+
+name = [
+    "Linux Documentation Project License"
+]
+
+abbreviation = [
+    "LDPL"
+]

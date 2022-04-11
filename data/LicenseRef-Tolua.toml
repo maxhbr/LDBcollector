@@ -1,0 +1,22 @@
+[license]
+
+expression = "LicenseRef-Tolua"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Tolua
+'''
+
+[fedora]
+
+name = [
+    "Tolua License"
+]
+
+abbreviation = [
+    "Tolua"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX
+'''

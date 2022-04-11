@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+http://aptana.com/legal/apl/
+'''
+
+[fedora]
+
+name = [
+    "Aptana Public License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+No permission to redistribute
+'''

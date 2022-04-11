@@ -1,0 +1,18 @@
+[license]
+
+expression = "CrystalStacker"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/CrystalStacker
+'''
+
+[fedora]
+
+name = [
+    "Crystal Stacker License"
+]
+
+abbreviation = [
+    "Crystal Stacker"
+]

@@ -1,0 +1,22 @@
+[license]
+
+expression = "SPDX id"
+status = [ "not approved" ]
+
+text = '''
+Upstream URL
+'''
+
+[fedora]
+
+name = [
+    "Fedora Full Name"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Fedora Notes  other notes
+'''

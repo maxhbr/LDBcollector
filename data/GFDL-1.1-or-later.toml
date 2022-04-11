@@ -1,0 +1,14 @@
+[license]
+
+expression = "GFDL-1.1-or-later"
+status = [ "approved-documentation" ]
+
+[fedora]
+
+name = [
+    "GNU Free Documentation License v1.1 or later"
+]
+
+abbreviation = [
+    "GFDL"
+]

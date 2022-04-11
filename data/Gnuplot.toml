@@ -1,0 +1,23 @@
+[license]
+
+expression = "Gnuplot"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Gnuplot
+'''
+
+[fedora]
+
+name = [
+    "gnuplot License"
+]
+
+abbreviation = [
+    "gnuplot"
+]
+
+notes = '''
+License requires changes to source to be packaged as patches and not appended to
+the original source, etc.
+'''

@@ -1,0 +1,24 @@
+[license]
+
+expression = "LGPL-2.0-or-later OR Artistic-1.0-Perl"
+status = [ "approved" ]
+
+text = '''
+Some perl packages explicitly state LGPLv2+ (extremely uncommon), only use this
+license for those cases
+'''
+
+[fedora]
+
+name = [
+    "Perl License (variant)"
+]
+
+abbreviation = [
+    "LGPLv2+ or Artistic"
+]
+
+notes = '''
+this would be covered by using the short identifiers for each licnese choice
+with the "OR" operator
+'''

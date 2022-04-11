@@ -1,0 +1,27 @@
+[license]
+
+expression = "libtiff"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/libtiff
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant
+'''
+
+[fedora]
+
+name = [
+    "libtiff License",
+    "MIT:Hylafax Variant"
+]
+
+abbreviation = [
+    "libtiff",
+    "MIT"
+]
+
+notes = '''
+Fedora has same license text using two different Fedora ids: "libtiff" and "MIT"
+BSD/MIT like  Fedora has same license text using two different Fedora ids:
+"libtiff" and "MIT"
+'''

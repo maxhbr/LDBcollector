@@ -1,0 +1,24 @@
+[license]
+
+expression = "LicenseRef-TGPPL"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/TGPPL
+'''
+
+[fedora]
+
+name = [
+    "Transitive Grace Period Public Licence"
+]
+
+abbreviation = [
+    "TGPPL"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX  This is really OSL-3.0 with a
+few minor changes having to do with the name and then the modifications to the
+license (last section).
+'''

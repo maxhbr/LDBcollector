@@ -1,0 +1,23 @@
+[license]
+
+expression = "GPL-1.0-or-later WITH Font-exception-2.0"
+status = [ "approved" ]
+
+text = '''
+A GPL or LGPL licensed package that lacks any statement of what version that
+it's licensed under in the source code/program output/accompanying docs is
+technically licensed under *any* version of the GPL or LGPL, not just the
+version in whatever COPYING file they include. And if they manage to grant the
+font embedding exception without specifying a version, you get this strange
+beast.
+'''
+
+[fedora]
+
+name = [
+    "GNU General Public License (no version), with font embedding exception"
+]
+
+abbreviation = [
+    "GPL+ with exceptions"
+]

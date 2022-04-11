@@ -1,0 +1,23 @@
+[license]
+
+expression = "MIT-advertising"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising
+'''
+
+[fedora]
+
+name = [
+    "Enlightenment License (e16)"
+]
+
+abbreviation = [
+    "MIT with advertising"
+]
+
+notes = '''
+This license is identical to MIT-FEH (except for templatized copyright
+statement)
+'''

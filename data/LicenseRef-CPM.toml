@@ -1,0 +1,22 @@
+[license]
+
+expression = "LicenseRef-CPM"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/CPM
+'''
+
+[fedora]
+
+name = [
+    "CP/M License"
+]
+
+abbreviation = [
+    "CPM"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX
+'''

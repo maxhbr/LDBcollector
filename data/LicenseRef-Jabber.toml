@@ -1,0 +1,28 @@
+[license]
+
+expression = "LicenseRef-Jabber"
+status = [ "approved" ]
+
+text = '''
+http://opensource.org/licenses/jabberpl.php
+'''
+
+[fedora]
+
+name = [
+    "Jabber Open Source License"
+]
+
+abbreviation = [
+    "Jabber"
+]
+
+notes = '''
+not found in Fedora currently, don't add to SPDX  OSI approved, but no longer
+used Research found that version on OSI site is not the same as version at
+http://archive.jabber.org/core/JOSL.pdf (substantive diff includes inclusion in
+the latter of a definition of Source Code and "reasonably necessarly" qualifier
+in patent grant) see https://lists.spdx.org/g/Spdx-
+legal/message/435?p=,,,20,0,0,0::Created,,jabber,20,2,0,22080275 for doc with
+diff
+'''

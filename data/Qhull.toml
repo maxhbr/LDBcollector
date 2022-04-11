@@ -1,0 +1,18 @@
+[license]
+
+expression = "Qhull"
+status = [ "approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Qhull
+'''
+
+[fedora]
+
+name = [
+    "Qhull License"
+]
+
+abbreviation = [
+    "Qhull"
+]

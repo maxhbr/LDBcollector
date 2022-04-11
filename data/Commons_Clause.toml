@@ -1,0 +1,22 @@
+[license]
+
+expression = ""
+status = [ "not approved" ]
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/CommonsClause
+'''
+
+[fedora]
+
+name = [
+    "Commons Clause"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Commercial use restrictions  see notes on page
+'''

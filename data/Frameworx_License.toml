@@ -1,0 +1,22 @@
+[license]
+
+expression = "Frameworx-1.0"
+status = [ "not approved" ]
+
+text = '''
+http://opensource.org/licenses/frameworx.php
+'''
+
+[fedora]
+
+name = [
+    "Frameworx License"
+]
+
+abbreviation = [
+    ""
+]
+
+notes = '''
+Non-free due to the limitation on charging for "Value-Added Services"
+'''
