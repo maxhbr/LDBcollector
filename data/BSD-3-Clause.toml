@@ -7,6 +7,7 @@ text = '''
 https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD
 https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License
 https://www.unidata.ucar.edu/software/netcdf/copyright.html
+http://www.eclipse.org/org/documents/edl-v10.php
 '''
 
 [fedora]
@@ -14,7 +15,8 @@ https://www.unidata.ucar.edu/software/netcdf/copyright.html
 name = [
     "BSD License (no advertising)",
     "Metasploit Framework License (post 2006)",
-    "NetCDF License"
+    "NetCDF License",
+    "Eclipse Distribution License 1.0"
 ]
 
 abbreviation = [
