@@ -1,0 +1,7 @@
+- id: "Maven:com.typesafe.sbteclipse:sbteclipse-plugin"
+  curations:
+    comment: |
+      No sources artifact published and no <scm> tag in POM. Repository found via Internet search. Versions are tagged
+      in Git.
+    vcs:
+      url: https://github.com/sbt/sbt-eclipse.git
