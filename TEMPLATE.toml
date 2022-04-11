@@ -6,27 +6,27 @@
 # All files must provide a 'license' block.
 [license]
 
-# The list of SPDX expressions for this license type in Fedora.  Each
-# expression is a string in the list.
+# The SPDX expression for this license type in Fedora.
 #
-#     spdx_expression = [ "GPL-3.0-or-later WITH Autoconf-exception-3.0" ]
+#     spdx_expression = "GPL-3.0-or-later WITH Autoconf-exception-3.0"
 #
 # This expression is constructed using valid SPDX license and
 # exception identifiers found at https://spdx.org/
 #
 # This is a required field.
-expression = [ "" ]
+expression = ""
 
-# The status of this license expression.  It is a string wrapped in
-# double quotes.  Generally 'approved', but may be any of:
+# The status identifiers for this license expression.  It is an array
+# of strings where each string may be any of:
 #
 #     approved
 #     not-approved
 #     approved-for-fonts
 #     approved-for-content
 #
-# This is a required field.
-status = ""
+# This is a required field.  At least one status is required, but a license
+# may have multiple listed.
+status = [ "" ]
 
 # Optional URL(s) to the license text or the contents of the license
 # itself.  This field is a multiline literal string.  For example:
