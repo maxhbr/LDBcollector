@@ -1,0 +1,8 @@
+- id: "Maven:org.eclipse.sw360:http-support"
+  curations:
+    comment: |
+      No SCM tag is in the POM, and no sources artifact is published.
+    vcs:
+      type: "Git"
+      url: "https://github.com/eclipse/sw360.git"
+      path: "clients/http-support"
