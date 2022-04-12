@@ -1,0 +1,11 @@
+# Build tools
+.gradle/
+build/
+
+# IDEs
+.idea/
+out/
+/*.iml
+
+# macOS
+.DS_Store
