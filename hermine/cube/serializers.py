@@ -404,7 +404,7 @@ class ComponentSerializer(serializers.ModelSerializer):
         read_only_field = "name"
 
     def create(self, validated_data):
-        versions_data = validated_data.pop("version_set")
+        versions_data = validated_data.pop("version_set", [])
         component = Component.objects.create(**validated_data)
         for version_data in versions_data:
             try:
