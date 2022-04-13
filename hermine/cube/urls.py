@@ -83,21 +83,6 @@ router.register(r"api/releases", api_views.ReleaseViewSet, basename="release")
 router.register(r"api/upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
 router.register(r"api/upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
 
-
-release_router = routers.NestedSimpleRouter(router, r"api/releases")
-release_router.register(
-    r"validation-1", api_views.UnnormalisedUsagesViewSet, basename="validation-1"
-)
-release_router.register(
-    r"validation-2", api_views.LicensesToCheckViewSet, basename="validation-2"
-)
-release_router.register(
-    r"validation-3", api_views.LicensesUsagesViewSet, basename="validation-3"
-)
-release_router.register(
-    r"validation-4", api_views.LicensesAgainstPolicyViewSet, basename="validation-4"
-)
-
 router.register(r"api/obligations", api_views.ObligationViewSet, basename="obligation")
 router.register(r"api/components", api_views.ComponentViewSet, basename="component")
 router.register(r"api/usages", api_views.UsageViewSet, basename="release_exploit")
@@ -124,4 +109,3 @@ urlpatterns += router.urls
 urlpatterns += obligation_router.urls
 urlpatterns += product_router.urls
 urlpatterns += version_router.urls
-urlpatterns += release_router.urls
