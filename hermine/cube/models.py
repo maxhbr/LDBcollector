@@ -107,7 +107,9 @@ class Component(models.Model):
 
 class Version(models.Model):
 
-    component = models.ForeignKey(Component, on_delete=models.CASCADE)
+    component = models.ForeignKey(
+        Component, on_delete=models.CASCADE, related_name="versions"
+    )
     version_number = models.CharField(max_length=200)
     declared_license_expr = models.CharField(max_length=200, blank=True)
     spdx_valid_license_expr = models.CharField(max_length=200, blank=True)

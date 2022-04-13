@@ -383,8 +383,11 @@ class ComponentSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
-    version_set = VersionSerializer(
-        read_only=False, many=True, allow_null=True, required=False
+    versions = VersionSerializer(
+        read_only=False,
+        many=True,
+        allow_null=True,
+        required=False,
     )
 
     class Meta:
@@ -399,12 +402,12 @@ class ComponentSerializer(serializers.ModelSerializer):
             "spdx_expression",
             "homepage_url",
             "export_control_status",
-            "version_set",
+            "versions",
         ]
         read_only_field = "name"
 
     def create(self, validated_data):
-        versions_data = validated_data.pop("version_set", [])
+        versions_data = validated_data.pop("versions", [])
         component = Component.objects.create(**validated_data)
         for version_data in versions_data:
             try:
@@ -420,14 +423,14 @@ class ComponentSerializer(serializers.ModelSerializer):
         :param instance: The instance of component you want to update.
         :type instance: Component
         :param validated_data: A dict matching component serialization.
-            Versions are nested in 'version_set'.
+            Versions are nested in 'versions'.
         :type validated_data: [type]
         :return: [description]
         :rtype: [type]
         """
 
         Version.objects.filter(component=instance).delete()
-        versions_data = validated_data.pop("version_set", [])
+        versions_data = validated_data.pop("versions", [])
         for version_data in versions_data:
             updated_version = Version.objects.create(**version_data, product=instance)
             try:

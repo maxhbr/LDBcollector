@@ -181,7 +181,7 @@ class APILicenseTests(APITestCase):
             "spdx_expression": "",
             "homepage_url": "http://test.com",
             "export_control_status": "",
-            "version_set": [],
+            "versions": [],
         }
 
         r = self.c.post(url, data, format="json")
