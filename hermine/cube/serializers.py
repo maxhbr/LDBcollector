@@ -427,7 +427,7 @@ class ComponentSerializer(serializers.ModelSerializer):
         """
 
         Version.objects.filter(component=instance).delete()
-        versions_data = validated_data.pop("version_set")
+        versions_data = validated_data.pop("version_set", [])
         for version_data in versions_data:
             updated_version = Version.objects.create(**version_data, product=instance)
             try:
