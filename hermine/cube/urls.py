@@ -3,9 +3,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from django.urls import path, include
-from rest_framework_nested import routers
+from django.urls import path
 from rest_framework.authtoken import views as authviews
+from rest_framework_nested import routers
 
 from . import views, api_views
 
@@ -69,11 +69,6 @@ urlpatterns = [
     path("licenses/<int:page>/", views.licenses, name="licenses"),
     path("component/<int:pk>", views.ComponentView.as_view(), name="component"),
     path("components", views.ComponentList.as_view(), name="components"),
-    path(
-        "propagate_choices/<int:release_id>",
-        views.propagate_choices,
-        name="propagate_choices",
-    ),
     path("about", views.about, name="about"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]

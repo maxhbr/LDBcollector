@@ -36,7 +36,7 @@ from .utils.licenses import (
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
 )
-from .views import propagate_choices
+from .utils.releases import propagate_choices
 
 from .importers import import_ort_evaluated_model_json_file, import_spdx_file
 
@@ -77,10 +77,6 @@ class LicenseViewSet(viewsets.ModelViewSet):
     serializer_class = LicenseSerializer
     lookup_field = "id"
 
-    def pre_save(self, obj):
-        # https://docs.djangoproject.com/fr/3.2/ref/signals/#pre-save
-        obj.samplesheet = self.request.FILES.get("file")
-
 
 class UsageViewSet(viewsets.ModelViewSet):
     queryset = Usage.objects.all()
@@ -105,10 +101,6 @@ class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = "id"
-
-    def pre_save(self, obj):
-        # https://docs.djangoproject.com/fr/3.2/ref/signals/#pre-save
-        obj.samplesheet = self.request.FILES.get("file")
 
 
 class ReleaseViewSet(viewsets.ModelViewSet):
@@ -197,10 +189,6 @@ class ComponentViewSet(viewsets.ModelViewSet):
     queryset = Component.objects.all()
     serializer_class = ComponentSerializer
     lookup_field = "pk"
-
-    def pre_save(self, obj):
-        # https://docs.djangoproject.com/fr/3.2/ref/signals/#pre-save
-        obj.samplesheet = self.request.FILES.get("file")
 
 
 class VersionViewSet(viewsets.ModelViewSet):
