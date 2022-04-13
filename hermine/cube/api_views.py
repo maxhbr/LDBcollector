@@ -6,6 +6,7 @@
 import json
 
 from rest_framework import viewsets
+from rest_framework.decorators import action
 from rest_framework.response import Response
 from cube.serializers import (
     LicenseSerializer,
@@ -36,7 +37,7 @@ from .utils.licenses import (
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
 )
-from .utils.releases import propagate_choices
+from .utils.releases import propagate_choices, update_validation_step
 
 from .importers import import_ort_evaluated_model_json_file, import_spdx_file
 
@@ -128,6 +129,16 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             response = Release.objects.filter(product__id=product_id)
 
         return response
+
+    @action(detail=True, methods=["post"])
+    def update_validation(self, request, pk=None):
+        """
+        Recalculate validation step of the release
+        """
+        release = self.get_object()
+        update_validation_step(release)
+
+        return Response(self.get_serializer_class()(release))
 
 
 class UploadSPDXViewSet(viewsets.ViewSet):

@@ -283,6 +283,8 @@ class ReleaseSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
+    validation_step = serializers.IntegerField(source="valid_step")
+
     class Meta:
         use_natural_foreign_keys = True
         model = Release
@@ -292,7 +294,7 @@ class ReleaseSerializer(serializers.ModelSerializer):
             "release_number",
             "ship_status",
             "pub_date",
-            "valid_step",
+            "validation_step",
         ]
 
 
