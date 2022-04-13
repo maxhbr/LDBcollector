@@ -262,6 +262,23 @@ class Usage(models.Model):
         verbose_name_plural = "Component usages"
 
 
+class Exploitation(models.Model):
+
+    release = models.ForeignKey(Release, on_delete=models.CASCADE, null=True)
+    scope = models.CharField(max_length=50)
+    exploitation = models.CharField(
+        max_length=50,
+        choices=Usage.EXPLOITATION_CHOICES,
+        default=Usage.EXPLOITATION_CHOICES[0][0],
+    )
+
+    def __str__(self):
+        return self.release.__str__() + " : " + str(self.scope)
+
+    class Meta:
+        unique_together = ["release", "scope"]
+
+
 class Generic(models.Model):
     """A Generic obligation which is the simplification of the instances of several
     similar obligations.

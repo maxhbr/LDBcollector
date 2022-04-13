@@ -17,7 +17,7 @@ from .models import Generic
 from .models import Obligation
 from .models import Derogation
 from .models import LicenseChoice
-
+from .models import Exploitation
 
 class ObligationInline(admin.StackedInline):
     model = Obligation
@@ -92,3 +92,4 @@ admin.site.register(Usage, UsageAdmin)
 admin.site.register(Generic, GenericAdmin)
 admin.site.register(Derogation)
 admin.site.register(LicenseChoice)
+admin.site.register(Exploitation)

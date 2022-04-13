@@ -18,6 +18,7 @@ from cube.models import (
     LicenseChoice,
     License,
     Version,
+    Exploitation,
 )
 from cube.utils.licenses import (
     check_licenses_against_policy,
@@ -192,13 +193,25 @@ def release_exploitation(request, release_id):
     :rtype: HttpResponse
     """
     release = Release.objects.get(pk=release_id)
+    # exploitation_set = Exploitation.objects.filter(release=release_id)
+    exploitation_set = release.exploitation_set.all()
+    print(">>>>>>>>>>>>> Ce qu'il y a en base : <<<<<<<<<")
+    exploitations =  dict()
+    for exploitation in exploitation_set:
+        print(f"{exploitation.scope} => {exploitation.exploitation}")
+        exploitations[exploitation.scope]=exploitation.exploitation
     usage_set = release.usage_set.all()
-    scope_dict = dict()
+    scopes = dict()
     for usage in usage_set:
-        scope_dict[usage.scope] = usage.exploitation
+        if usage.scope in exploitations:
+            scopes[usage.scope] = exploitations[usage.scope]
+        else:
+            scopes[usage.scope] = None
+    print("------La liste complète depuis la base :")
+    print(scopes.items())
     context = {
         "release": release,
-        "scope_dict": scope_dict,
+        "scopes": scopes.items(),
         "EXPLOITATION_CHOICES": Usage.EXPLOITATION_CHOICES,
     }
     return render(request, "cube/release_exploitation.html", context)
@@ -216,12 +229,18 @@ def release_send_exploitation(request, release_id):
     :rtype: HttpResponseRedirect
     """
     release = get_object_or_404(Release, pk=release_id)
-    usage_set = release.usage_set.all()
-    scope_set = set(u.scope for u in usage_set)
-    usages = [u for u in usage_set if u.scope in scope_set]
-    for usage in usages:
-        usage.exploitation = request.POST[usage.scope]
-        usage.save()
+    for scope in request.POST:
+        # We assume every field is a scope name execpt the csrf token
+        if "csrfmiddlewaretoken" not in scope:
+            exploitation = request.POST[scope]
+            print(f"scope : {scope}, exploitation {exploitation}")
+            new_exploit, created = Exploitation.objects.update_or_create(release=release, scope=scope,
+                  defaults={'exploitation': exploitation})
+            new_exploit.exploitation
+            usage_set = release.usage_set.filter(scope=scope)
+            for usage in usage_set:
+                usage.exploitation = exploitation
+                usage.save()
     response = redirect("cube:release_exploitation", release_id=release_id)
     return response
 
