@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_extensions",
+    "social_django",
     "rest_framework",
     "rest_framework.authtoken",
     "hermine",
@@ -69,6 +70,7 @@ TEMPLATES = [
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
+                "social_django.context_processors.backends",
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
@@ -98,6 +100,18 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
+
+# OAuth support
+
+if getattr(secrets, "OAUTH_CLIENT", None) is not None:
+    OAUTH_CLIENT = secrets.OAUTH_CLIENT
+    SOCIAL_AUTH_DEFAULT_KEY = OAUTH_CLIENT["client_id"]
+    SOCIAL_AUTH_DEFAULT_SECRET = OAUTH_CLIENT["client_secret"]
+    AUTHENTICATION_BACKENDS = [
+        "cube.oauth.OAuth2",
+        "django.contrib.auth.backends.ModelBackend",
+    ]
+    SOCIAL_AUTH_URL_NAMESPACE = "social"
 
 
 # Internationalization
