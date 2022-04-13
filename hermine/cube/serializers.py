@@ -364,7 +364,6 @@ class VersionSerializer(serializers.ModelSerializer):
         model = Version
         fields = [
             "id",
-            "component",
             "version_number",
             "declared_license_expr",
             "spdx_valid_license_expr",

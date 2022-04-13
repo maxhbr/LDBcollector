@@ -199,10 +199,9 @@ class APILicenseTests(APITestCase):
 
     def step15(self):
         """Test to create a new Version"""
-        url = "/api/versions/"
+        url = "/api/components/1/versions/"
 
         data = {
-            "component": 1,
             "version_number": "2.0",
             "declared_license_expr": SPDX_ID + "OR AND",
             "spdx_valid_license_expr": "",

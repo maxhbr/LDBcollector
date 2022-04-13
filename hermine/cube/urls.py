@@ -105,7 +105,6 @@ release_router.register(
 
 router.register(r"api/obligations", api_views.ObligationViewSet, basename="obligation")
 router.register(r"api/components", api_views.ComponentViewSet, basename="component")
-router.register(r"api/versions", api_views.VersionViewSet, basename="component")
 router.register(r"api/usages", api_views.UsageViewSet, basename="release_exploit")
 router.register(r"api/products", api_views.ProductViewSet, basename="product")
 
