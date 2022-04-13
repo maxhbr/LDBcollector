@@ -41,7 +41,9 @@ class Release(models.Model):
         ("Active", "In developpement"),
         ("Published", "Published"),
     ]
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="releases"
+    )
     release_number = models.CharField(max_length=200)
     ship_status = models.CharField(max_length=20, choices=SHIPPING_CHOICES, blank=True)
     pub_date = models.DateTimeField("date published", blank=True, null=True)

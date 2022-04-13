@@ -127,7 +127,7 @@ class APILicenseTests(APITestCase):
             "name": "Test",
             "description": "Please delete me when you see me.",
             "owner": 1,
-            "release_set": [],
+            "releases": [],
         }
 
         r = self.c.post(url, data, format="json")

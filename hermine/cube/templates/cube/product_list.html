@@ -66,7 +66,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   </thead>
   <tbody>
 {% for product in object_list %}
-  {% for release in product.release_set.all %}
+  {% for release in product.releases.all %}
   <a href="{% url 'cube:release_synthesis' release.id %}">
     <tr>
       <td>{{product.name}}</td>

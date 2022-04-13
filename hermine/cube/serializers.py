@@ -303,18 +303,18 @@ class ProductSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
-    release_set = ReleaseSerializer(
+    releases = ReleaseSerializer(
         read_only=False, many=True, allow_null=True, required=False
     )
 
     class Meta:
         use_natural_foreign_keys = True
         model = Product
-        fields = ["id", "name", "description", "owner", "release_set"]
+        fields = ["id", "name", "description", "owner", "releases"]
         read_only_field = "name"
 
     def create(self, validated_data):
-        releases_data = validated_data.pop("release_set")
+        releases_data = validated_data.pop("releases", [])
         product = Product.objects.create(**validated_data)
         for release_data in releases_data:
             try:
@@ -330,14 +330,14 @@ class ProductSerializer(serializers.ModelSerializer):
         :param instance: The instance of product you want to update.
         :type instance: Product
         :param validated_data: A dict matching product serialization. Releases are
-            nested in 'release_set'.
+            nested in 'releases'.
         :type validated_data: [type]
         :return: [description]
         :rtype: [type]
         """
 
         Release.objects.filter(product=instance).delete()
-        releases_data = validated_data.pop("release_set")
+        releases_data = validated_data.pop("releases")
         for release_data in releases_data:
             updated_release = Release.objects.create(**release_data, product=instance)
             try:
