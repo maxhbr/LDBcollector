@@ -36,6 +36,7 @@ from .models import (
 from .utils.licenses import (
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
+    get_usages_obligations,
 )
 from .utils.releases import propagate_choices, update_validation_step
 
@@ -257,6 +258,18 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         else:
             response["valid"] = True
         return Response(response)
+
+    @action(detail=True, methods=["get"])
+    def obligations(self, pk, **kwargs):
+        usages = self.get_object().usage_set.all()
+        generics_involved, orphaned_licenses = get_usages_obligations(usages)
+
+        return Response(
+            {
+                "generics": GenericSerializer(generics_involved, many=True).data,
+                "orphaned": LicenseSerializer(orphaned_licenses, many=True).data,
+            }
+        )
 
 
 class UploadSPDXViewSet(viewsets.ViewSet):

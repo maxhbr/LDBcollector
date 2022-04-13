@@ -66,30 +66,6 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
     model = Release
     template_name = "cube/release_oblig.html"
 
-    def matchObligationExploitation(self, expl, explTrigger):
-        """
-        A small utility to check the pertinence of an Obligation in the exploitation
-        context of a usage.
-
-        :param expl: The type of exploitation of the component
-        :type expl: A string in ["Distribution", "DistributionSource",
-            "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
-        :param explTrigger: The type of exploitation that triggers the obligation
-        :type explTrigger: A string in ["Distribution", "DistributionSource",
-            "DistributionNonSource", "NetworkA "Network access"),ccess", "InternalUse"
-        :return: True if the exploitation meets the exploitation trigger
-        :rtype: Boolean
-        """
-        if explTrigger in expl:
-            return True
-        elif (
-            explTrigger == "DistributionSource"
-            or explTrigger == "DistributionNonSource"
-        ) and expl == "Distribution":
-            return True
-        else:
-            return False
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         usages = self.object.usage_set.all()
