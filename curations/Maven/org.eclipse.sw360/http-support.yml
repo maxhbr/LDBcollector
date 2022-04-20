@@ -6,3 +6,11 @@
       type: "Git"
       url: "https://github.com/eclipse/sw360.git"
       path: "clients/http-support"
+
+- id: "Maven:org.eclipse.sw360:http-support:13.2.0-28"
+  curations:
+    comment: |
+      The version is not correctly tagged in the repository. Found the correct version by comparing the build date
+      of this weekly build (2021-04-17) with the latest commit before that date.
+    vcs:
+      revision: "4bf2932ba060384f5cd6975ef0e1fac78692dca8"
