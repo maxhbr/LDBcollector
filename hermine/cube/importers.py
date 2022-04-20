@@ -246,10 +246,12 @@ def import_ort_evaluated_model_json_file(json_file, release_id):
         # we store them in the description
         related_projects = []
         for path in package["paths"]:
-            related_projects.append(data["packages"][data["paths"][path]["project"]]["id"])
+            related_projects.append(
+                data["packages"][data["paths"][path]["project"]]["id"]
+            )
         description = "\n".join(related_projects)
         scope_indices = package.get("scopes")
-        if scope_indices is None or len(scope_indices)==0:
+        if scope_indices is None or len(scope_indices) == 0:
             scopes = {"Blank Scope"}
         else:
             scopes = set()

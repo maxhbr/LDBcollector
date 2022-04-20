@@ -1,5 +1,5 @@
 # SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
-# SPDX-License-Identifier: AGPL-3.0-only 
+# SPDX-License-Identifier: AGPL-3.0-only
 
 from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
@@ -35,7 +35,9 @@ def import_bom(request):
         status = "success"
         try:
             if form.cleaned_data["bom_type"] == "ORTBom":
-                import_ort_evaluated_model_json_file(request.FILES["file"], form.cleaned_data["release"].id)
+                import_ort_evaluated_model_json_file(
+                    request.FILES["file"], form.cleaned_data["release"].id
+                )
             elif form.cleaned_data["bom_type"] == "SPDXBom":
                 import_spdx_file(request.FILES["file"], form.cleaned_data["release"].id)
         except:  # noqa: E722 TODO

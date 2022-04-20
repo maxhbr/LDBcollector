@@ -19,6 +19,7 @@ from .models import Derogation
 from .models import LicenseChoice
 from .models import Exploitation
 
+
 class ObligationInline(admin.StackedInline):
     model = Obligation
     extra = 1
