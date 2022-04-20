@@ -77,17 +77,18 @@ urlpatterns = [
 
 router = routers.SimpleRouter()
 
-router.register(r"api", api_views.RootViewSet, basename="api_root")
-router.register(r"api/generics", api_views.GenericViewSet, basename="generic")
-router.register(r"api/releases", api_views.ReleaseViewSet, basename="release")
+# Validation pipeline endpoints
 router.register(r"api/upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
 router.register(r"api/upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
+router.register(r"api/releases", api_views.ReleaseViewSet, basename="release")
 
+# Models CRUD viewsets
+router.register(r"api", api_views.RootViewSet, basename="api_root")
+router.register(r"api/generics", api_views.GenericViewSet, basename="generic")
 router.register(r"api/obligations", api_views.ObligationViewSet, basename="obligation")
 router.register(r"api/components", api_views.ComponentViewSet, basename="component")
 router.register(r"api/usages", api_views.UsageViewSet, basename="release_exploit")
 router.register(r"api/products", api_views.ProductViewSet, basename="product")
-
 router.register(r"api/licenses", api_views.LicenseViewSet, basename="license")
 
 obligation_router = routers.NestedSimpleRouter(router, r"api/licenses")

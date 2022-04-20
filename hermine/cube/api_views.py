@@ -107,7 +107,7 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 class ReleaseViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows releases to be viewed or edited.
+    API endpoint that allows releases to be viewed or edited, and to check validation steps.
     """
 
     serializer_class = ReleaseSerializer
