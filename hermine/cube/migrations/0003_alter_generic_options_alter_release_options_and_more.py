@@ -6,36 +6,48 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('cube', '0002_change_exploitation_choices'),
+        ("cube", "0002_change_exploitation_choices"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='generic',
-            options={'verbose_name': 'Generic obligation', 'verbose_name_plural': 'Generic obligations'},
+            name="generic",
+            options={
+                "verbose_name": "Generic obligation",
+                "verbose_name_plural": "Generic obligations",
+            },
         ),
         migrations.AlterModelOptions(
-            name='release',
-            options={'verbose_name': 'Product release', 'verbose_name_plural': 'Product releases'},
+            name="release",
+            options={
+                "verbose_name": "Product release",
+                "verbose_name_plural": "Product releases",
+            },
         ),
         migrations.AlterModelOptions(
-            name='usage',
-            options={'verbose_name': 'Component usage', 'verbose_name_plural': 'Component usages'},
+            name="usage",
+            options={
+                "verbose_name": "Component usage",
+                "verbose_name_plural": "Component usages",
+            },
         ),
         migrations.AlterModelOptions(
-            name='version',
-            options={'verbose_name': 'Component version', 'verbose_name_plural': 'Component versions'},
+            name="version",
+            options={
+                "verbose_name": "Component version",
+                "verbose_name_plural": "Component versions",
+            },
         ),
         migrations.AlterUniqueTogether(
-            name='release',
+            name="release",
             unique_together=set(),
         ),
         migrations.AlterUniqueTogether(
-            name='version',
+            name="version",
             unique_together=set(),
         ),
         migrations.AlterUniqueTogether(
-            name='obligation',
-            unique_together={('name', 'license')},
+            name="obligation",
+            unique_together={("name", "license")},
         ),
     ]
