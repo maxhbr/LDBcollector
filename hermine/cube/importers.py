@@ -242,20 +242,25 @@ def import_ort_evaluated_model_json_file(json_file, release_id):
                 f"Version {version.version_number} created for component {component.name}"
             )
 
-        # Project_id is the name of the project of the package
-        project_id = [
-            data["packages"][path["project"]]
-            for path in data["paths"]
-            if path["pkg"] == package["_id"]
-        ][0]["id"]
-
-        for scope_index in package["scopes"]:
-            scope = data["scopes"][scope_index]["name"]  # or "Blank Scope"
+        # As we don't yet take into account the concept of subprojects
+        # we store them in the description
+        related_projects = []
+        for path in package["paths"]:
+            related_projects.append(data["packages"][data["paths"][path]["project"]]["id"])
+        description = "\n".join(related_projects)
+        scope_indices = package.get("scopes")
+        if scope_indices is None or len(scope_indices)==0:
+            scopes = {"Blank Scope"}
+        else:
+            scopes = set()
+            for scope_index in scope_indices:
+                scopes.add(data["scopes"][scope_index]["name"])
+        for scope in scopes:
             usage, usage_created = Usage.objects.get_or_create(
                 version_id=version.id,
                 release_id=release_id,
                 scope=scope,
-                description=project_id,
+                description=description,
                 # defaults={"addition_method": "Scan"},
             )
 
