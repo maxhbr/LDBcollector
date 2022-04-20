@@ -1,0 +1,7 @@
+- id: "Maven:bsf:bsf"
+  curations:
+    comment: |
+      The source code repository has moved from Subversion to Git.
+    vcs:
+      type: "Git"
+      url: "https://gitbox.apache.org/repos/asf/commons-bsf"
