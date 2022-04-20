@@ -2,7 +2,6 @@
 *.pot
 *.pyc
 __pycache__
-poetry.lock
 /static/
 /vrac/
 variousScripts
