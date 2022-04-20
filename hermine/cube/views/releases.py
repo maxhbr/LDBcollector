@@ -5,11 +5,13 @@
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Q, F
+from django.db.models import Q, F, Count
+from django.forms import Form, ChoiceField, Select
 from django.shortcuts import render, get_object_or_404, redirect
+from django.urls import reverse
 from django.views import generic
+from django.views.generic import UpdateView
 
-import cube.views.licenses
 from cube.models import (
     Release,
     Usage,
@@ -180,69 +182,46 @@ def release_generic(request, release_id, generic_id):
     return render(request, "cube/release_generic.html", context)
 
 
-@login_required
-def release_exploitation(request, release_id):
-    """Takes the user to the page that allows them to add an exploitation choice for
-    each of the scopes in the release they're working on.
+class ReleaseExploitationForm(Form):
+    def __init__(self, instance, *args, **kwargs):
+        self.release = instance
+        super().__init__(*args, **kwargs)
+        for scope in self.release.usage_set.values("scope").annotate(count=Count("*")):
+            self.fields[scope["scope"]] = ChoiceField(
+                choices=Usage.EXPLOITATION_CHOICES,
+                widget=Select(attrs={"class": "select"}),
+                label=f"{scope['scope']} ({scope['count']} components)",
+            )
 
-    :param request: mandatory
-    :type request: HttpRequest
-    :param release_id: The id of this release
-    :type release_id: django AutoField
-    :return: Renders the context into the template.
-    :rtype: HttpResponse
-    """
-    release = Release.objects.get(pk=release_id)
-    # exploitation_set = Exploitation.objects.filter(release=release_id)
-    exploitation_set = release.exploitation_set.all()
-    print(">>>>>>>>>>>>> Ce qu'il y a en base : <<<<<<<<<")
-    exploitations =  dict()
-    for exploitation in exploitation_set:
-        print(f"{exploitation.scope} => {exploitation.exploitation}")
-        exploitations[exploitation.scope]=exploitation.exploitation
-    usage_set = release.usage_set.all()
-    scopes = dict()
-    for usage in usage_set:
-        if usage.scope in exploitations:
-            scopes[usage.scope] = exploitations[usage.scope]
-        else:
-            scopes[usage.scope] = None
-    print("------La liste complète depuis la base :")
-    print(scopes.items())
-    context = {
-        "release": release,
-        "scopes": scopes.items(),
-        "EXPLOITATION_CHOICES": Usage.EXPLOITATION_CHOICES,
-    }
-    return render(request, "cube/release_exploitation.html", context)
+            try:
+                self.initial[scope["scope"]] = self.release.exploitation_set.get(
+                    scope=scope["scope"]
+                ).exploitation
+            except Exploitation.DoesNotExist:
+                pass
+
+    def save(self):
+        for scope, exploitation_type in self.cleaned_data.items():
+            Exploitation.objects.update_or_create(
+                release=self.release,
+                scope=scope,
+                defaults={"exploitation": exploitation_type},
+            )
+            self.release.usage_set.filter(scope=scope).update(
+                exploitation=exploitation_type
+            )
+
+        return self.release
 
 
-@login_required
-def release_send_exploitation(request, release_id):
-    """Digests inputs from the associated form and send it to the database.
+class ReleaseExploitationView(UpdateView):
+    model = Release
+    context_object_name = "release"
+    template_name = "cube/release_exploitation.html"
+    form_class = ReleaseExploitationForm
 
-    :param request: mandatory
-    :type request: HttpRequest
-    :param release_id: The id of this release
-    :type release_id: django AutoField
-    :return: A redirection to this release main page.
-    :rtype: HttpResponseRedirect
-    """
-    release = get_object_or_404(Release, pk=release_id)
-    for scope in request.POST:
-        # We assume every field is a scope name execpt the csrf token
-        if "csrfmiddlewaretoken" not in scope:
-            exploitation = request.POST[scope]
-            print(f"scope : {scope}, exploitation {exploitation}")
-            new_exploit, created = Exploitation.objects.update_or_create(release=release, scope=scope,
-                  defaults={'exploitation': exploitation})
-            new_exploit.exploitation
-            usage_set = release.usage_set.filter(scope=scope)
-            for usage in usage_set:
-                usage.exploitation = exploitation
-                usage.save()
-    response = redirect("cube:release_exploitation", release_id=release_id)
-    return response
+    def get_success_url(self):
+        return reverse("cube:release_exploitation", args=[self.object.pk])
 
 
 @login_required

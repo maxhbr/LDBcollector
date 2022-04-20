@@ -62,14 +62,9 @@ urlpatterns = [
         name="release_send_choice",
     ),
     path(
-        "release/<int:release_id>/exploitation",
-        views.release_exploitation,
+        "release/<int:pk>/exploitation",
+        views.ReleaseExploitationView.as_view(),
         name="release_exploitation",
-    ),
-    path(
-        "release/<int:release_id>/send_exploitation",
-        views.release_send_exploitation,
-        name="release_send_exploitation",
     ),
     path("licenses/<int:page>/", views.licenses, name="licenses"),
     path("component/<int:pk>", views.ComponentView.as_view(), name="component"),
