@@ -1,0 +1,5 @@
+- id: "Maven:io.netty:netty-tcnative-boringssl-static"
+  curations:
+    comment: |
+      This package does not contain source code.
+    is_meta_data_only: true
