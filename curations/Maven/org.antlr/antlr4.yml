@@ -1,0 +1,7 @@
+- id: "Maven:org.antlr:antlr4:[4.0.0,5.0.0["
+  curations:
+    comment: |
+      The library is licensed under BSD-3-Clause, see:
+      https://github.com/antlr/antlr4/blob/4.0/LICENSE.txt
+    declared_license_mapping:
+        "The BSD License": "BSD-3-Clause"
