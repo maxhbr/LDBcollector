@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from django.urls import path
+from django.urls import path, include
 from rest_framework.authtoken import views as authviews
 from rest_framework_nested import routers
 
@@ -75,41 +75,47 @@ urlpatterns = [
 
 # API urls
 
-router = routers.SimpleRouter()
+router = routers.DefaultRouter()
 
 # Validation pipeline endpoints
-router.register(r"api/upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
-router.register(r"api/upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
-router.register(r"api/releases", api_views.ReleaseViewSet, basename="release")
+router.register(r"upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
+router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
+router.register(r"releases", api_views.ReleaseViewSet, basename="release")
 
 # Generic obligations
-router.register(r"api/generics", api_views.GenericViewSet, basename="generic")
+router.register(r"generics", api_views.GenericViewSet, basename="generic")
 
 
 # Models CRUD viewsets
-router.register(r"api", api_views.RootViewSet, basename="api_root")
-router.register(r"api/obligations", api_views.ObligationViewSet, basename="obligation")
-router.register(r"api/components", api_views.ComponentViewSet, basename="component")
-router.register(r"api/usages", api_views.UsageViewSet, basename="release_exploit")
-router.register(r"api/products", api_views.ProductViewSet, basename="product")
-router.register(r"api/licenses", api_views.LicenseViewSet, basename="license")
+router.register(r"obligations", api_views.ObligationViewSet, basename="obligation")
+router.register(r"components", api_views.ComponentViewSet, basename="component")
+router.register(r"usages", api_views.UsageViewSet, basename="release_exploit")
+router.register(r"products", api_views.ProductViewSet, basename="product")
+router.register(r"licenses", api_views.LicenseViewSet, basename="license")
 
-obligation_router = routers.NestedSimpleRouter(router, r"api/licenses")
+obligation_router = routers.NestedSimpleRouter(router, r"licenses")
 obligation_router.register(
     r"obligations", api_views.ObligationViewSet, basename="license-obligations"
 )
 
-product_router = routers.NestedSimpleRouter(router, r"api/products")
+product_router = routers.NestedSimpleRouter(router, r"products")
 product_router.register(
     r"releases", api_views.ReleaseViewSet, basename="product-releases"
 )
 
-version_router = routers.NestedSimpleRouter(router, r"api/components")
+version_router = routers.NestedSimpleRouter(router, r"components")
 version_router.register(
     r"versions", api_views.VersionViewSet, basename="component-versions"
 )
 
-urlpatterns += router.urls
-urlpatterns += obligation_router.urls
-urlpatterns += product_router.urls
-urlpatterns += version_router.urls
+urlpatterns.append(
+    path(
+        "api/",
+        include(
+            router.urls
+            + obligation_router.urls
+            + product_router.urls
+            + version_router.urls,
+        ),
+    ),
+)
