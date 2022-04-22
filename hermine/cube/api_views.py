@@ -4,7 +4,9 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 import json
+from functools import reduce
 
+from django.db.models import Q
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -93,6 +95,19 @@ class GenericViewSet(viewsets.ModelViewSet):
     queryset = Generic.objects.all()
     serializer_class = GenericSerializer
     lookup_field = "id"
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        spdxs = self.request.query_params.get("spdx")
+
+        if spdxs is not None:
+            filter = reduce(
+                lambda a, b: a | b,
+                (Q(obligation__license__spdx_id=spdx) for spdx in spdxs.split(",")),
+            )
+            qs = qs.filter(filter)
+
+        return qs
 
 
 class ProductViewSet(viewsets.ModelViewSet):

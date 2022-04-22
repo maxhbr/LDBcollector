@@ -36,17 +36,6 @@ headers = {'Authorization': 'Token 1273e3f6XXXXXXXXXXXXXXXX71209ac3bf29'}
 r = requests.get(url, headers=headers)
 ```
 
-## Generic API endpoints for Models
-
-For the main models of the application, you can get a list of their instances at:
-`/api/<str:class_name>`. For example, the list of your products will be at 
-`api/products/`.    
-
-A detailed view for an instance of a class can be found at `/api/<str:class_name>/<int:instance_id>`.
-For example: `/api/products/1/`.
-
-You can check the list of the endpoints at `/api`.
-
 ## Uploading a BOM file
 
 ### ORT Evaluated model 
@@ -199,4 +188,24 @@ An example
               if: ${{ success() }}
             - uses: actions/upload-artifact@v2
 ```
+
+## Generic obligations endpoint
+
+```{py:function} GET api/generics/
+
+List generic obligations, optionnaly filtered by license or exploitation.
+
+:param str spdx: a comma-separated list of SPDX license id
+:return: a list of generic obligation
+```
     
+## Generic API endpoints for Models
+
+For the main models of the application, you can get a list of their instances at:
+`/api/<str:class_name>`. For example, the list of your products will be at 
+`api/products/`.
+
+A detailed view for an instance of a class can be found at `/api/<str:class_name>/<int:instance_id>`.
+For example: `/api/products/1/`.
+
+You can check the list of the endpoints at `/api`.
