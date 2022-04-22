@@ -18,8 +18,8 @@ tests:
   - export PATH="/root/.local/bin:$PATH"
   - poetry about
   - poetry install
+  - cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py
   - cd hermine
-  - cp hermine/mysecrets.default.py hermine/mysecrets.py
   - poetry run python manage.py test
 
 pages:
@@ -35,6 +35,7 @@ pages:
   - export PATH="/root/.local/bin:$PATH"
   - poetry about
   - poetry install
+  - cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py
   - poetry run sphinx-build -b html docs/source docs/build/html
   - mkdir public
   - cp -r docs/build/html/* public/
