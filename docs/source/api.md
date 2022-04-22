@@ -195,8 +195,14 @@ An example
 
 List generic obligations, optionnaly filtered by license or exploitation.
 
+
+Accept the following filtering parameters to list only obligations triggered by some
+licenses and usage contexts :
+
 :param str spdx: a comma-separated list of SPDX license id
-:return: a list of generic obligation
+:param str exploitation: an exploitation among Usage.EXPLOITATION_CHOICES
+:param str modification: a modification among Usage.MODIFICATION_CHOICES
+:return: a list of generic obligations
 ```
     
 ## Generic API endpoints for Models

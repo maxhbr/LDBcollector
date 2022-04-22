@@ -115,15 +115,16 @@ class GenericFilter(filters.FilterSet):
         exploitation = self.form.cleaned_data.get("exploitation")
         modification = self.form.cleaned_data.get("modification")
 
-        if exploitation is not None or modification is not None:
-            obligations = set()
+        if exploitation or modification:
+            obligations_pk = set()
             for license in licenses:
-                obligations.update(
-                    get_license_triggered_obligations(
+                obligations_pk.update(
+                    o.pk
+                    for o in get_license_triggered_obligations(
                         license, exploitation, modification
                     )
                 )
-            queryset = queryset.filter(obligation__in=obligations)
+            queryset = queryset.filter(obligation__in=obligations_pk).distinct()
 
         return queryset
 
