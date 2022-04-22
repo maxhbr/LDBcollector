@@ -5,6 +5,18 @@
       type: Git
       url: https://github.com/apache/logging-log4net.git
       revision: "rel/2.0.8"
+- id: "NuGet::log4net:2.0.9"
+  curations:
+    comment: "Set the VCS revision because there are multiple tags matching the version."
+    vcs:
+      type: Git
+      url: https://github.com/apache/logging-log4net.git
+      revision: "rel/2.0.9"
+- id: "NuGet::log4net:2.0.10"
+  curations:
+    comment: "Set the VCS revision because there are multiple tags matching the version."
+    vcs:
+      revision: "rel/2.0.10"
 - id: "NuGet::log4net:2.0.11"
   curations:
     comment: "Set the VCS revision because there are multiple tags matching the version."
@@ -20,3 +32,8 @@
     comment: "Set the VCS revision because there are multiple tags matching the version."
     vcs:
       revision: "rel/2.0.13"
+- id: "NuGet::log4net:2.0.14"
+  curations:
+    comment: "Set the VCS revision because there are multiple tags matching the version."
+    vcs:
+      revision: "rel/2.0.14"
