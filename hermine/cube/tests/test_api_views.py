@@ -127,7 +127,7 @@ class APILicenseTests(APITestCase):
             "name": "Test",
             "description": "Please delete me when you see me.",
             "owner": 1,
-            "release_set": [],
+            "releases": [],
         }
 
         r = self.c.post(url, data, format="json")
@@ -152,7 +152,7 @@ class APILicenseTests(APITestCase):
         data = {
             "release_number": "2.0",
             "ship_status": "Active",
-            "valid_step": 5,
+            "validation_step": 5,
             "product": 1,
         }
 
@@ -181,7 +181,7 @@ class APILicenseTests(APITestCase):
             "spdx_expression": "",
             "homepage_url": "http://test.com",
             "export_control_status": "",
-            "version_set": [],
+            "versions": [],
         }
 
         r = self.c.post(url, data, format="json")
@@ -199,10 +199,9 @@ class APILicenseTests(APITestCase):
 
     def step15(self):
         """Test to create a new Version"""
-        url = "/api/versions/"
+        url = "/api/components/1/versions/"
 
         data = {
-            "component": 1,
             "version_number": "2.0",
             "declared_license_expr": SPDX_ID + "OR AND",
             "spdx_valid_license_expr": "",
@@ -217,7 +216,7 @@ class APILicenseTests(APITestCase):
 
         # Assumes that the previously created component is the first one in the base
         # (it's the case).
-        url = "/api/versions/1/?format=json"
+        url = "/api/components/1/versions/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)

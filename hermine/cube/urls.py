@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from django.urls import path, include
-from rest_framework_nested import routers
 from rest_framework.authtoken import views as authviews
+from rest_framework_nested import routers
 
 from . import views, api_views
 
@@ -69,65 +69,53 @@ urlpatterns = [
     path("licenses/<int:page>/", views.licenses, name="licenses"),
     path("component/<int:pk>", views.ComponentView.as_view(), name="component"),
     path("components", views.ComponentList.as_view(), name="components"),
-    path(
-        "propagate_choices/<int:release_id>",
-        views.propagate_choices,
-        name="propagate_choices",
-    ),
     path("about", views.about, name="about"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
 
 # API urls
 
-router = routers.SimpleRouter()
+router = routers.DefaultRouter()
 
-router.register(r"api", api_views.RootViewSet, basename="api_root")
-router.register(r"api/generics", api_views.GenericViewSet, basename="generic")
-router.register(r"api/releases", api_views.ReleaseViewSet, basename="release")
-router.register(r"api/upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
-router.register(r"api/upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
+# Validation pipeline endpoints
+router.register(r"upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")
+router.register(r"upload_ort", api_views.UploadORTViewSet, basename="upload_ort")
+router.register(r"releases", api_views.ReleaseViewSet, basename="release")
+
+# Generic obligations
+router.register(r"generics", api_views.GenericViewSet, basename="generic")
 
 
-release_router = routers.NestedSimpleRouter(router, r"api/releases")
-release_router.register(
-    r"validation-1", api_views.UnnormalisedUsagesViewSet, basename="validation-1"
-)
-release_router.register(
-    r"validation-2", api_views.LicensesToCheckViewSet, basename="validation-2"
-)
-release_router.register(
-    r"validation-3", api_views.LicensesUsagesViewSet, basename="validation-3"
-)
-release_router.register(
-    r"validation-4", api_views.LicensesAgainstPolicyViewSet, basename="validation-4"
-)
+# Models CRUD viewsets
+router.register(r"obligations", api_views.ObligationViewSet, basename="obligation")
+router.register(r"components", api_views.ComponentViewSet, basename="component")
+router.register(r"usages", api_views.UsageViewSet, basename="release_exploit")
+router.register(r"products", api_views.ProductViewSet, basename="product")
+router.register(r"licenses", api_views.LicenseViewSet, basename="license")
 
-router.register(r"api/obligations", api_views.ObligationViewSet, basename="obligation")
-router.register(r"api/components", api_views.ComponentViewSet, basename="component")
-router.register(r"api/versions", api_views.VersionViewSet, basename="component")
-router.register(r"api/usages", api_views.UsageViewSet, basename="release_exploit")
-router.register(r"api/products", api_views.ProductViewSet, basename="product")
-
-router.register(r"api/licenses", api_views.LicenseViewSet, basename="license")
-
-obligation_router = routers.NestedSimpleRouter(router, r"api/licenses")
+obligation_router = routers.NestedSimpleRouter(router, r"licenses")
 obligation_router.register(
     r"obligations", api_views.ObligationViewSet, basename="license-obligations"
 )
 
-product_router = routers.NestedSimpleRouter(router, r"api/products")
+product_router = routers.NestedSimpleRouter(router, r"products")
 product_router.register(
     r"releases", api_views.ReleaseViewSet, basename="product-releases"
 )
 
-version_router = routers.NestedSimpleRouter(router, r"api/components")
+version_router = routers.NestedSimpleRouter(router, r"components")
 version_router.register(
     r"versions", api_views.VersionViewSet, basename="component-versions"
 )
 
-urlpatterns += router.urls
-urlpatterns += obligation_router.urls
-urlpatterns += product_router.urls
-urlpatterns += version_router.urls
-urlpatterns += release_router.urls
+urlpatterns.append(
+    path(
+        "api/",
+        include(
+            router.urls
+            + obligation_router.urls
+            + product_router.urls
+            + version_router.urls,
+        ),
+    ),
+)

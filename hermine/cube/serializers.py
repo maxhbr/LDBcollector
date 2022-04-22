@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from rest_framework import serializers
+
 from cube.models import (
     License,
     Obligation,
@@ -283,6 +284,8 @@ class ReleaseSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
+    validation_step = serializers.IntegerField(source="valid_step", read_only=True)
+
     class Meta:
         use_natural_foreign_keys = True
         model = Release
@@ -292,7 +295,7 @@ class ReleaseSerializer(serializers.ModelSerializer):
             "release_number",
             "ship_status",
             "pub_date",
-            "valid_step",
+            "validation_step",
         ]
 
 
@@ -303,18 +306,18 @@ class ProductSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
-    release_set = ReleaseSerializer(
+    releases = ReleaseSerializer(
         read_only=False, many=True, allow_null=True, required=False
     )
 
     class Meta:
         use_natural_foreign_keys = True
         model = Product
-        fields = ["id", "name", "description", "owner", "release_set"]
+        fields = ["id", "name", "description", "owner", "releases"]
         read_only_field = "name"
 
     def create(self, validated_data):
-        releases_data = validated_data.pop("release_set")
+        releases_data = validated_data.pop("releases", [])
         product = Product.objects.create(**validated_data)
         for release_data in releases_data:
             try:
@@ -330,14 +333,14 @@ class ProductSerializer(serializers.ModelSerializer):
         :param instance: The instance of product you want to update.
         :type instance: Product
         :param validated_data: A dict matching product serialization. Releases are
-            nested in 'release_set'.
+            nested in 'releases'.
         :type validated_data: [type]
         :return: [description]
         :rtype: [type]
         """
 
         Release.objects.filter(product=instance).delete()
-        releases_data = validated_data.pop("release_set")
+        releases_data = validated_data.pop("releases")
         for release_data in releases_data:
             updated_release = Release.objects.create(**release_data, product=instance)
             try:
@@ -364,7 +367,6 @@ class VersionSerializer(serializers.ModelSerializer):
         model = Version
         fields = [
             "id",
-            "component",
             "version_number",
             "declared_license_expr",
             "spdx_valid_license_expr",
@@ -383,8 +385,11 @@ class ComponentSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
-    version_set = VersionSerializer(
-        read_only=False, many=True, allow_null=True, required=False
+    versions = VersionSerializer(
+        read_only=False,
+        many=True,
+        allow_null=True,
+        required=False,
     )
 
     class Meta:
@@ -399,12 +404,12 @@ class ComponentSerializer(serializers.ModelSerializer):
             "spdx_expression",
             "homepage_url",
             "export_control_status",
-            "version_set",
+            "versions",
         ]
         read_only_field = "name"
 
     def create(self, validated_data):
-        versions_data = validated_data.pop("version_set")
+        versions_data = validated_data.pop("versions", [])
         component = Component.objects.create(**validated_data)
         for version_data in versions_data:
             try:
@@ -420,14 +425,14 @@ class ComponentSerializer(serializers.ModelSerializer):
         :param instance: The instance of component you want to update.
         :type instance: Component
         :param validated_data: A dict matching component serialization.
-            Versions are nested in 'version_set'.
+            Versions are nested in 'versions'.
         :type validated_data: [type]
         :return: [description]
         :rtype: [type]
         """
 
         Version.objects.filter(component=instance).delete()
-        versions_data = validated_data.pop("version_set")
+        versions_data = validated_data.pop("versions", [])
         for version_data in versions_data:
             updated_version = Version.objects.create(**version_data, product=instance)
             try:

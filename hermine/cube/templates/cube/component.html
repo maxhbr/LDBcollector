@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   
 
   <h2>Versions<h2>
-  {% for version in object.version_set.all %}
+  {% for version in object.versions.all %}
     <h3>{{ object.name }} : {{ version.version_number }}</h3> 
     <p>Edit this version here : <a href="/admin/cube/version/{{version.id}}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></p>
     <p>The license expression is :</p>

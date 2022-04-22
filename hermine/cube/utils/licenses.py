@@ -133,6 +133,35 @@ def create_or_update_license(license_dict):
     return create
 
 
+def get_license_triggered_obligations(
+    license: License, exploitation: str = None, modification: str = None
+):
+    """
+    Get triggered obligations for a licence and a usage context
+    (if the component has been modified and how it's being distributed)
+
+    :param license: A License instance
+    :param exploitation: A value from Usage.EXPLOITATION_CHOICES
+    :param modification: A value from Usage.MODIFICATION_CHOICES
+    :return: A queryset or list of Obligation instances
+    """
+    obligations = license.obligation_set.all()
+
+    if exploitation is not None:
+        obligations = obligations.filter(trigger_mdf__contains=modification)
+
+    if modification is not None:
+        obligations = [
+            o
+            for o in obligations
+            if (
+                o.trigger_expl in exploitation or exploitation in o.trigger_expl
+            )  # Poor man bitwise OR
+        ]
+
+    return obligations
+
+
 def get_usages_obligations(usages):
     """
     Get triggered obligations for a list of usages.
@@ -145,21 +174,9 @@ def get_usages_obligations(usages):
 
     for usage in usages:
         for license in usage.licenses_chosen.all():
-            # Those two lines allow filtering obligations depending on the Usage
-            # context (if the component has been modified and how it's being
-            # distributed)
-            obligations_filtered = license.obligation_set.filter(
-                trigger_mdf__contains=usage.component_modified
-            )
-            obligations_filtered = [
-                o
-                for o in obligations_filtered
-                if (
-                    o.trigger_expl in usage.exploitation
-                    or usage.exploitation in o.trigger_expl
-                )  # Poor man bitwise OR
-            ]
-            for obligation in obligations_filtered:
+            for obligation in get_license_triggered_obligations(
+                license, usage.exploitation, usage.component_modified
+            ):
                 if obligation.generic:
                     generics_involved.add(obligation.generic)
                 else:

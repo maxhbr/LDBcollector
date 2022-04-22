@@ -36,17 +36,6 @@ headers = {'Authorization': 'Token 1273e3f6XXXXXXXXXXXXXXXX71209ac3bf29'}
 r = requests.get(url, headers=headers)
 ```
 
-## Generic API endpoints for Models
-
-For the main models of the application, you can get a list of their instances at:
-`/api/<str:class_name>`. For example, the list of your products will be at 
-`api/products/`.    
-
-A detailed view for an instance of a class can be found at `/api/<str:class_name>/<int:instance_id>`.
-For example: `/api/products/1/`.
-
-You can check the list of the endpoints at `/api`.
-
 ## Uploading a BOM file
 
 ### ORT Evaluated model 
@@ -101,7 +90,7 @@ Every endpoint has a "valid" field that is set to True if every action that shou
 ### Step 1
 
 
-```{py:function} GET api/releases/<int:release_id>/validation-1/
+```{py:function} GET api/releases/<int:release_id>/validation_1/
 
 Adds the content of the SBOM as SPDX to a given release
 
@@ -109,7 +98,7 @@ Adds the content of the SBOM as SPDX to a given release
 :return: the status of the upload
 ```
 
-Can be found at 'api/releases/<int:release_id>/validation-1/'
+Can be found at 'api/releases/<int:release_id>/validation_1/'
 
 API endpoint that allows to know if there are Unnormalised Usages.
 
@@ -121,7 +110,7 @@ unnormalised_usages
 
 ### Step 2
 
-Can be found at 'api/releases/<int:release_id>/validation-2/'
+Can be found at 'api/releases/<int:release_id>/validation_2/'
 
 API endpoint that allows to know if there are Licenses that have not been checked by the legal team so far. 
 
@@ -141,7 +130,7 @@ Not implemented yet
 
 ### Step 3
 
-Can be found at 'api/releases/<int:release_id>/validation-3/'
+Can be found at 'api/releases/<int:release_id>/validation_3/'
 
 API endpoint that allows to know if there are complex license expressions in usages of this release.
 
@@ -161,7 +150,7 @@ resolved
 
 ### Step 4
 
-Can be found at 'api/releases/<int:release_id>/validation-4/'
+Can be found at 'api/releases/<int:release_id>/validation_4/'
 API endpoint that allows to know if there are Usages of unnacepted licenes in this release.
 In this case, you must set relevant derogations in Hermine UI.
 
@@ -189,14 +178,40 @@ An example
 ```bash
   - run : "curl -X PUT https://chantier.hermine-foss.org/api/upload_ort/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' -F 'ort_file=@.tortellini/out/evaluated-model.json' -F 'release_id=1' --silent"
               if: ${{ success() }}
-            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation-1/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation-1.json --silent"
+            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_1/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_1.json --silent"
               if: ${{ success() }}
-            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation-2/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation-2.json --silent"
+            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_2/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_2.json --silent"
               if: ${{ success() }}
-            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation-3/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation-3.json --silent"
+            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_3/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_3.json --silent"
               if: ${{ success() }}
-            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation-4/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation-4.json --silent"
+            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_4/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_4.json --silent"
               if: ${{ success() }}
             - uses: actions/upload-artifact@v2
 ```
+
+## Generic obligations endpoint
+
+```{py:function} GET api/generics/
+
+List generic obligations, optionnaly filtered by license or exploitation.
+
+
+Accept the following filtering parameters to list only obligations triggered by some
+licenses and usage contexts :
+
+:param str spdx: a comma-separated list of SPDX license id
+:param str exploitation: an exploitation among Usage.EXPLOITATION_CHOICES
+:param str modification: a modification among Usage.MODIFICATION_CHOICES
+:return: a list of generic obligations
+```
     
+## Generic API endpoints for Models
+
+For the main models of the application, you can get a list of their instances at:
+`/api/<str:class_name>`. For example, the list of your products will be at 
+`api/products/`.
+
+A detailed view for an instance of a class can be found at `/api/<str:class_name>/<int:instance_id>`.
+For example: `/api/products/1/`.
+
+You can check the list of the endpoints at `/api`.

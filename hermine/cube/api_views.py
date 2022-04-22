@@ -3,10 +3,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-import json
+from functools import reduce
 
+from django.db.models import Q
+from django_filters import rest_framework as filters, CharFilter
 from rest_framework import viewsets
+from rest_framework.decorators import action
 from rest_framework.response import Response
+
 from cube.serializers import (
     LicenseSerializer,
     ObligationSerializer,
@@ -20,7 +24,7 @@ from cube.serializers import (
     DerogationSerializer,
     UploadORTSerializer,
 )
-
+from .importers import import_ort_evaluated_model_json_file, import_spdx_file
 from .models import (
     Product,
     Release,
@@ -31,41 +35,13 @@ from .models import (
     Component,
     Version,
 )
-
 from .utils.licenses import (
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
+    get_usages_obligations,
+    get_license_triggered_obligations,
 )
-from .views import propagate_choices
-
-from .importers import import_ort_evaluated_model_json_file, import_spdx_file
-
-
-class RootViewSet(viewsets.ViewSet):
-    """
-    This is the root of the API.
-    Here is the list of API endpoints you can use:
-
-    - api/components/
-    - api/components/<int:component_id>/versions/
-    - api/generics/
-    - api/licenses/
-    - api/licenses/<int:license_id>/obligations/
-    - api/obligations/
-    - api/products/
-    - api/products/<int:product_id>/releases/
-    - api/releases/
-    - api/releases/<int:release_id>/validation-1/
-    - api/releases/<int:release_id>/validation-2/
-    - api/releases/<int:release_id>/validation-3/
-    - api/releases/<int:release_id>/validation-4/
-    - api/upload_ort
-    - api/usages/
-
-    """
-
-    def list(self, request):
-        return Response("Feel free to use the API")
+from .utils.releases import propagate_choices, update_validation_step
 
 
 class LicenseViewSet(viewsets.ModelViewSet):
@@ -77,14 +53,53 @@ class LicenseViewSet(viewsets.ModelViewSet):
     serializer_class = LicenseSerializer
     lookup_field = "id"
 
-    def pre_save(self, obj):
-        # https://docs.djangoproject.com/fr/3.2/ref/signals/#pre-save
-        obj.samplesheet = self.request.FILES.get("file")
-
 
 class UsageViewSet(viewsets.ModelViewSet):
     queryset = Usage.objects.all()
     serializer_class = UsageSerializer
+
+
+class SPDXFilter(filters.BaseInFilter, CharFilter):
+    pass
+
+
+class GenericFilter(filters.FilterSet):
+    spdx = SPDXFilter(
+        label="License SPDX id(s)", field_name="obligation__license__spdx_id"
+    )
+    exploitation = filters.ChoiceFilter(
+        label="Exploitation", choices=Usage.EXPLOITATION_CHOICES, method="no_op_filter"
+    )
+    modification = filters.ChoiceFilter(
+        label="Modification", choices=Usage.MODIFICATION_CHOICES, method="no_op_filter"
+    )
+
+    def no_op_filter(self, qs, name, value):
+        return qs
+
+    def filter_queryset(self, queryset):
+        queryset = super().filter_queryset(queryset)
+
+        spdx = self.form.cleaned_data.get("spdx")
+        licenses = License.objects.all()
+        if spdx is not None:
+            licenses = licenses.filter(spdx_id__in=spdx)
+
+        exploitation = self.form.cleaned_data.get("exploitation")
+        modification = self.form.cleaned_data.get("modification")
+
+        if exploitation or modification:
+            obligations_pk = set()
+            for license in licenses:
+                obligations_pk.update(
+                    o.pk
+                    for o in get_license_triggered_obligations(
+                        license, exploitation, modification
+                    )
+                )
+            queryset = queryset.filter(obligation__in=obligations_pk).distinct()
+
+        return queryset
 
 
 class GenericViewSet(viewsets.ModelViewSet):
@@ -95,6 +110,8 @@ class GenericViewSet(viewsets.ModelViewSet):
     queryset = Generic.objects.all()
     serializer_class = GenericSerializer
     lookup_field = "id"
+    filter_backends = (filters.DjangoFilterBackend,)
+    filterset_class = GenericFilter
 
 
 class ProductViewSet(viewsets.ModelViewSet):
@@ -106,14 +123,10 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     lookup_field = "id"
 
-    def pre_save(self, obj):
-        # https://docs.djangoproject.com/fr/3.2/ref/signals/#pre-save
-        obj.samplesheet = self.request.FILES.get("file")
-
 
 class ReleaseViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows releases to be viewed or edited.
+    API endpoint that allows releases to be viewed or edited, and to check validation steps.
     """
 
     serializer_class = ReleaseSerializer
@@ -136,6 +149,146 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             response = Release.objects.filter(product__id=product_id)
 
         return response
+
+    @action(detail=True, methods=["post"])
+    def update_validation(self, request, pk=None):
+        """
+        Recalculate validation step of the release
+        """
+        release = self.get_object()
+        update_validation_step(release)
+
+        return Response(self.get_serializer_class()(release))
+
+    @action(detail=True, methods=["get"])
+    def validation_1(self, pk, **kwargs):
+        """
+        API endpoint that allows to know if the Unnormalised Usages (Validation Step 1)
+        Can be found at 'api/releases/52/validation-1/'
+        """
+        response = {}
+        release = self.get_object()
+
+        unnormalised_usages = release.usage_set.all().filter(
+            version__spdx_valid_license_expr="", version__corrected_license=""
+        )
+        s = UsageSerializer(unnormalised_usages, many=True)
+
+        response["unnormalised_usages"] = s.data
+
+        if len(s.data) > 0:
+            response["valid"] = False
+        else:
+            response["valid"] = True
+        return Response(response)
+
+    @action(detail=True, methods=["get"])
+    def validation_2(self, pk, **kwargs):
+        """
+        API endpoint that allows to know the Licenses that need to be checked or created
+        (Validation Step 2)
+
+        Can be found at 'api/releases/52/validation-2/'
+        """
+        response = {}
+        release = self.get_object()
+
+        licenses = get_licenses_to_check_or_create(release)
+        for field, value in licenses.items():
+            try:
+                s = LicenseSerializer(value, many=True)
+                response[field] = s.data
+            except AttributeError:
+                response = "There was an error while serializing " + field
+        if len(response["licenses_to_check"]) + len(response["licenses_to_create"]) > 0:
+            response["valid"] = False
+        else:
+            response["valid"] = True
+        return Response(response)
+
+    @action(detail=True, methods=["get"])
+    def validation_3(self, pk, **kwargs):
+        """
+        API endpoint that allows to know if every License Usage have been specified for
+        complex SPDX expressions -i.a. the ones that have more than 1 SPDX identifier in
+        it- (Validation Step 3)
+
+        Can be found at 'api/releases/52/validation-3/'
+        """
+        response = {}
+        # This kwargs has a strange name, it's DRF fault
+        release = self.get_object()
+        usages = propagate_choices(release)
+        for field, value in usages.items():
+            try:
+                s = UsageSerializer(value, many=True)
+                response[field] = s.data
+            except AttributeError:
+                response = "There was an error while serializing " + field
+        if len(response["to_resolve"]) > 0:
+            response["valid"] = False
+        else:
+            response["valid"] = True
+        return Response(response)
+
+    @action(detail=True, methods=["get"])
+    def validation_4(self, pk, **kwargs):
+        """
+        API endpoint that allows to know the Licenses that need or have a derogation
+        (Validation Step 4).
+
+        5 fields are populated with different models
+        `usages_lic_red` : Usage
+        `usages_lic_orange` : Usage
+        `usages_lic_grey` : Usage
+        `involved_lic` : License
+        `derogations` : Derogation
+        Can be found at 'api/releases/52/validation-4/'
+        """
+        response = {}
+        # This kwargs has a strange name, it's DRF fault
+        release = self.get_object()
+
+        r = check_licenses_against_policy(release)
+        for field, value in r.items():
+            try:
+                if field.startswith("usages_"):
+                    s = UsageSerializer(value, many=True)
+                    response[field] = s.data
+
+                elif field.startswith("involved_"):
+                    s = LicenseSerializer(value, many=True)
+                    response[field] = s.data
+
+                elif field.startswith("derogations"):
+                    s = DerogationSerializer(value, many=True)
+                    response[field] = s.data
+
+            except AttributeError:
+                response = "There was an error while serializing " + field
+
+        if (
+            len(response["usages_lic_red"])
+            + len(response["usages_lic_orange"])
+            + len(response["usages_lic_grey"])
+            > 0
+        ):
+            response["valid"] = False
+        else:
+            response["valid"] = True
+        return Response(response)
+
+    @action(detail=True, methods=["get"])
+    def obligations(self, pk, **kwargs):
+        usages = self.get_object().usage_set.all()
+        generics_involved, orphaned_licenses = get_usages_obligations(usages)
+
+        return Response(
+            {
+                "generics": GenericSerializer(generics_involved, many=True).data,
+                "orphaned": LicenseSerializer(orphaned_licenses, many=True).data,
+            }
+        )
 
 
 class UploadSPDXViewSet(viewsets.ViewSet):
@@ -198,15 +351,13 @@ class ComponentViewSet(viewsets.ModelViewSet):
     serializer_class = ComponentSerializer
     lookup_field = "pk"
 
-    def pre_save(self, obj):
-        # https://docs.djangoproject.com/fr/3.2/ref/signals/#pre-save
-        obj.samplesheet = self.request.FILES.get("file")
-
 
 class VersionViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows versions to be viewed or edited.
     """
+
+    queryset = Version.objects.all()
 
     def get_queryset(self):
         """
@@ -219,12 +370,15 @@ class VersionViewSet(viewsets.ModelViewSet):
             /api/components/<int: componen_id>/versions
         :rtype: QuerySet
         """
-        component = self.kwargs.get("nested_1_pk")
-        return (
-            Version.objects.all()
-            if component is None
-            else Version.objects.filter(component__id=component)
-        )
+        qs = super().get_queryset()
+
+        if component := self.kwargs.get("nested_1_pk") is not None:
+            qs = qs.filter(component=component)
+
+        return qs
+
+    def perform_create(self, serializer):
+        serializer.save(component_id=self.kwargs.get("nested_1_pk"))
 
     serializer_class = VersionSerializer
     lookup_field = "id"
@@ -253,148 +407,3 @@ class ObligationViewSet(viewsets.ModelViewSet):
 
     serializer_class = ObligationSerializer
     lookup_field = "id"
-
-
-# API VALIDATION STEP - 1
-class UnnormalisedUsagesViewSet(viewsets.ViewSet):
-    """
-    API endpoint that allows to know if the Unnormalised Usages (Validation Step 1)
-    Can be found at 'api/releases/52/validation-1/'
-    """
-
-    def list(self, request, **kwargs):
-        response = {}
-
-        # This kwargs has a strange name, it's DRF fault
-        release = json.loads(kwargs["nested_1_id"])
-        try:
-            release = Release.objects.get(pk=release)
-        except Release.DoesNotExist:
-            return Response("No Release matching this ID")
-
-        unnormalised_usages = release.usage_set.all().filter(
-            version__spdx_valid_license_expr="", version__corrected_license=""
-        )
-        s = UsageSerializer(unnormalised_usages, many=True)
-
-        response["unnormalised_usages"] = s.data
-
-        if len(s.data) > 0:
-            response["valid"] = False
-        else:
-            response["valid"] = True
-        return Response(response)
-
-
-# API VALIDATION STEP - 2
-class LicensesToCheckViewSet(viewsets.ViewSet):
-    """
-    API endpoint that allows to know the Licenses that need to be checked or created
-    (Validation Step 2)
-
-    Can be found at 'api/releases/52/validation-2/'
-    """
-
-    def list(self, request, **kwargs):
-        response = {}
-        # This kwargs has a strange name, it's DRF fault
-        release = json.loads(kwargs["nested_1_id"])
-        try:
-            release = Release.objects.get(pk=release)
-        except Release.DoesNotExist:
-            return Response("No Release matching this ID")
-
-        licenses = get_licenses_to_check_or_create(release)
-        for field, value in licenses.items():
-            try:
-                s = LicenseSerializer(value, many=True)
-                response[field] = s.data
-            except AttributeError:
-                response = "There was an error while serializing " + field
-        if len(response["licenses_to_check"]) + len(response["licenses_to_create"]) > 0:
-            response["valid"] = False
-        else:
-            response["valid"] = True
-        return Response(response)
-
-
-# API VALIDATION STEP - 3
-class LicensesUsagesViewSet(viewsets.ViewSet):
-    """
-    API endpoint that allows to know if every License Usage have been specified for
-    complex SPDX expressions -i.a. the ones that have more than 1 SPDX identifier in
-    it- (Validation Step 3)
-
-    Can be found at 'api/releases/52/validation-3/'
-    """
-
-    def list(self, request, **kwargs):
-        response = {}
-        # This kwargs has a strange name, it's DRF fault
-        release = json.loads(kwargs["nested_1_id"])
-        usages = propagate_choices(release)
-        for field, value in usages.items():
-            try:
-                s = UsageSerializer(value, many=True)
-                response[field] = s.data
-            except AttributeError:
-                response = "There was an error while serializing " + field
-        if len(response["to_resolve"]) > 0:
-            response["valid"] = False
-        else:
-            response["valid"] = True
-        return Response(response)
-
-
-# API VALIDATION STEP - 4
-class LicensesAgainstPolicyViewSet(viewsets.ViewSet):
-    """
-    API endpoint that allows to know the Licenses that need or have a derogation
-    (Validation Step 4).
-
-    5 fields are populated with different models
-    `usages_lic_red` : Usage
-    `usages_lic_orange` : Usage
-    `usages_lic_grey` : Usage
-    `involved_lic` : License
-    `derogations` : Derogation
-    Can be found at 'api/releases/52/validation-4/'
-    """
-
-    def list(self, request, **kwargs):
-        response = {}
-        # This kwargs has a strange name, it's DRF fault
-        release = json.loads(kwargs["nested_1_id"])
-        try:
-            release = Release.objects.get(pk=release)
-        except Release.DoesNotExist:
-            return Response("No Release matching this ID")
-
-        r = check_licenses_against_policy(release)
-        for field, value in r.items():
-            try:
-                if field.startswith("usages_"):
-                    s = UsageSerializer(value, many=True)
-                    response[field] = s.data
-
-                elif field.startswith("involved_"):
-                    s = LicenseSerializer(value, many=True)
-                    response[field] = s.data
-
-                elif field.startswith("derogations"):
-                    s = DerogationSerializer(value, many=True)
-                    response[field] = s.data
-
-            except AttributeError:
-                response = "There was an error while serializing " + field
-
-        if (
-            len(response["usages_lic_red"])
-            + len(response["usages_lic_orange"])
-            + len(response["usages_lic_grey"])
-            > 0
-        ):
-            response["valid"] = False
-        else:
-            response["valid"] = True
-        return Response(response)

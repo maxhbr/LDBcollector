@@ -26,9 +26,11 @@ class ObligationsTestCase(TestCase):
         self.license1 = License.objects.create()
         self.generic1 = Generic.objects.create()
         self.obligation1 = Obligation.objects.create(
-            license=self.license1, generic=self.generic1
+            name="obligation1", license=self.license1, generic=self.generic1
         )
-        self.obligation2 = Obligation.objects.create(license=self.license1)
+        self.obligation2 = Obligation.objects.create(
+            name="obligation2", license=self.license1
+        )
         self.usage1 = Usage.objects.create(release=self.release1, version=self.version1)
         self.usage1.licenses_chosen.set([self.license1])
 
