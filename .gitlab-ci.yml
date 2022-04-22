@@ -5,9 +5,10 @@
 
 image: python:3.8-alpine
 
-pages:
-  stage: deploy
-  
+tests:
+  stage: test
+  rules:
+  - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
   script:
   - apk --no-cache add curl
   - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev cargo
@@ -19,27 +20,27 @@ pages:
   - poetry install
   - cd hermine
   - cp hermine/mysecrets.default.py hermine/mysecrets.py
-  - poetry run python manage.py makemigrations
-  - poetry run python manage.py migrate
-  - cd ..
+  - poetry run python manage.py test
+
+pages:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  script:
+  - apk --no-cache add curl
+  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev cargo
+  - pip install --upgrade pip
+  - curl -sSL https://install.python-poetry.org | python -
+  # Add Poetry to path:
+  - export PATH="/root/.local/bin:$PATH"
+  - poetry about
+  - poetry install
   - poetry run sphinx-build -b html docs/source docs/build/html
   - mkdir public
   - cp -r docs/build/html/* public/
-
   artifacts:
     paths:
     - public
-  rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
 
 variables:
   DOCKER_DRIVER: overlay2
-# dco:
-#   image: christophebedard/dco-check:latest
-#   rules:
-#     - if: $CI_MERGE_REQUEST_ID
-#     - if: $CI_EXTERNAL_PULL_REQUEST_IID
-#     - if: $CI_COMMIT_BRANCH == 'master'
-#   script:
-#     - pip3 install -U dco-check
-#     - dco-check
