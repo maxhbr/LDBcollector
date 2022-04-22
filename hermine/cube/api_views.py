@@ -39,6 +39,7 @@ from .utils.licenses import (
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
     get_usages_obligations,
+    get_license_triggered_obligations,
 )
 from .utils.releases import propagate_choices, update_validation_step
 
@@ -90,7 +91,41 @@ class SPDXFilter(filters.BaseInFilter, CharFilter):
 
 
 class GenericFilter(filters.FilterSet):
-    spdx = SPDXFilter(field_name="obligation__license__spdx_id")
+    spdx = SPDXFilter(
+        label="License SPDX id(s)", field_name="obligation__license__spdx_id"
+    )
+    exploitation = filters.ChoiceFilter(
+        label="Exploitation", choices=Usage.EXPLOITATION_CHOICES, method="no_op_filter"
+    )
+    modification = filters.ChoiceFilter(
+        label="Modification", choices=Usage.MODIFICATION_CHOICES, method="no_op_filter"
+    )
+
+    def no_op_filter(self, qs, name, value):
+        return qs
+
+    def filter_queryset(self, queryset):
+        queryset = super().filter_queryset(queryset)
+
+        spdx = self.form.cleaned_data.get("spdx")
+        licenses = License.objects.all()
+        if spdx is not None:
+            licenses = licenses.filter(spdx_id__in=spdx)
+
+        exploitation = self.form.cleaned_data.get("exploitation")
+        modification = self.form.cleaned_data.get("modification")
+
+        if exploitation is not None or modification is not None:
+            obligations = set()
+            for license in licenses:
+                obligations.update(
+                    get_license_triggered_obligations(
+                        license, exploitation, modification
+                    )
+                )
+            queryset = queryset.filter(obligation__in=obligations)
+
+        return queryset
 
 
 class GenericViewSet(viewsets.ModelViewSet):
