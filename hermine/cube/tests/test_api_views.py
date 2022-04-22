@@ -152,7 +152,7 @@ class APILicenseTests(APITestCase):
         data = {
             "release_number": "2.0",
             "ship_status": "Active",
-            "valid_step": 5,
+            "validation_step": 5,
             "product": 1,
         }
 
@@ -216,7 +216,7 @@ class APILicenseTests(APITestCase):
 
         # Assumes that the previously created component is the first one in the base
         # (it's the case).
-        url = "/api/versions/1/?format=json"
+        url = "/api/components/1/versions/1/?format=json"
 
         r = self.c.get(url)
         self.assertEqual(r.status_code, 200)

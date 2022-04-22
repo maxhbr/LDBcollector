@@ -284,7 +284,7 @@ class ReleaseSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
-    validation_step = serializers.IntegerField(source="valid_step")
+    validation_step = serializers.IntegerField(source="valid_step", read_only=True)
 
     class Meta:
         use_natural_foreign_keys = True

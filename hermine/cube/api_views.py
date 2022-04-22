@@ -384,6 +384,8 @@ class VersionViewSet(viewsets.ModelViewSet):
     API endpoint that allows versions to be viewed or edited.
     """
 
+    queryset = Version.objects.all()
+
     def get_queryset(self):
         """
         Handles if the user is accessing the viewset from root of api or from a nested
@@ -395,12 +397,15 @@ class VersionViewSet(viewsets.ModelViewSet):
             /api/components/<int: componen_id>/versions
         :rtype: QuerySet
         """
-        component = self.kwargs.get("nested_1_pk")
-        return (
-            Version.objects.all()
-            if component is None
-            else Version.objects.filter(component__id=component)
-        )
+        qs = super().get_queryset()
+
+        if component := self.kwargs.get("nested_1_pk") is not None:
+            qs = qs.filter(component=component)
+
+        return qs
+
+    def perform_create(self, serializer):
+        serializer.save(component_id=self.kwargs.get("nested_1_pk"))
 
     serializer_class = VersionSerializer
     lookup_field = "id"
