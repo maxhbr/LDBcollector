@@ -85,8 +85,12 @@ class UsageViewSet(viewsets.ModelViewSet):
     serializer_class = UsageSerializer
 
 
+class SPDXFilter(filters.BaseInFilter, CharFilter):
+    pass
+
+
 class GenericFilter(filters.FilterSet):
-    spdx = filters.CharFilter(field_name="obligation__license__spdx_id")
+    spdx = SPDXFilter(field_name="obligation__license__spdx_id")
 
 
 class GenericViewSet(viewsets.ModelViewSet):
