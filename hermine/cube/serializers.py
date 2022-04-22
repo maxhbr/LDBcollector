@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from rest_framework import serializers
+
 from cube.models import (
     License,
     Obligation,

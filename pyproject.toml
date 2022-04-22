@@ -21,6 +21,7 @@ odfpy = "^1.4.1"
 Django = "^4.0.4"
 spdx-tools = "0.7.0a3"
 social-auth-app-django = "^5.0.0"
+django-filter = "^21.1"
 
 [tool.poetry.dev-dependencies]
 Sphinx = "^4.2.0"

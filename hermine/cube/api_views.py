@@ -3,13 +3,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-import json
 from functools import reduce
 
 from django.db.models import Q
+from django_filters import rest_framework as filters, CharFilter
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
+
 from cube.serializers import (
     LicenseSerializer,
     ObligationSerializer,
@@ -23,7 +24,7 @@ from cube.serializers import (
     DerogationSerializer,
     UploadORTSerializer,
 )
-
+from .importers import import_ort_evaluated_model_json_file, import_spdx_file
 from .models import (
     Product,
     Release,
@@ -34,15 +35,12 @@ from .models import (
     Component,
     Version,
 )
-
 from .utils.licenses import (
     check_licenses_against_policy,
     get_licenses_to_check_or_create,
     get_usages_obligations,
 )
 from .utils.releases import propagate_choices, update_validation_step
-
-from .importers import import_ort_evaluated_model_json_file, import_spdx_file
 
 
 class RootViewSet(viewsets.ViewSet):
@@ -87,6 +85,10 @@ class UsageViewSet(viewsets.ModelViewSet):
     serializer_class = UsageSerializer
 
 
+class GenericFilter(filters.FilterSet):
+    spdx = filters.CharFilter(field_name="obligation__license__spdx_id")
+
+
 class GenericViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows generic obligations to be viewed or edited.
@@ -95,19 +97,8 @@ class GenericViewSet(viewsets.ModelViewSet):
     queryset = Generic.objects.all()
     serializer_class = GenericSerializer
     lookup_field = "id"
-
-    def get_queryset(self):
-        qs = super().get_queryset()
-        spdxs = self.request.query_params.get("spdx")
-
-        if spdxs is not None:
-            filter = reduce(
-                lambda a, b: a | b,
-                (Q(obligation__license__spdx_id=spdx) for spdx in spdxs.split(",")),
-            )
-            qs = qs.filter(filter)
-
-        return qs
+    filter_backends = (filters.DjangoFilterBackend,)
+    filterset_class = GenericFilter
 
 
 class ProductViewSet(viewsets.ModelViewSet):
