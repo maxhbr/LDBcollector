@@ -447,18 +447,12 @@ class ComponentSerializer(serializers.ModelSerializer):
 
 class UploadSPDXSerializer(serializers.Serializer):
     spdx_file = serializers.FileField()
-    release_id = serializers.IntegerField()
-
-    class Meta:
-        fields = ["release_id", "spdx_file"]
+    release_id = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
 
 
 class UploadORTSerializer(serializers.Serializer):
     ort_file = serializers.FileField()
-    release_id = serializers.IntegerField()
-
-    class Meta:
-        fields = ["release_id", "ort_file"]
+    release_id = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
 
 
 class NormalisedLicensesSerializer(serializers.Serializer):
