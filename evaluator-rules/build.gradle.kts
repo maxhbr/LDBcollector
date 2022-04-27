@@ -17,7 +17,8 @@
  * License-Filename: LICENSE
  */
 
-val ortGroupNameOnJitPack = "com.github.oss-review-toolkit.ort"
+val ortJitPackGroup: String by project
+val ortJitPackVersion: String by project
 
 repositories {
     mavenCentral()
@@ -28,19 +29,19 @@ repositories {
         }
 
         filter {
-            includeGroup(ortGroupNameOnJitPack)
+            includeGroup(ortJitPackGroup)
         }
     }
 }
 
 dependencies {
-    implementation("$ortGroupNameOnJitPack:evaluator:$version")
+    implementation("$ortJitPackGroup:evaluator:$ortJitPackVersion")
 }
 
 configurations.all {
     resolutionStrategy.dependencySubstitution.all {
         requested.let { selector ->
-            if (selector is ModuleComponentSelector && selector.group == ortGroupNameOnJitPack) {
+            if (selector is ModuleComponentSelector && selector.group == ortJitPackGroup) {
                 logger.info("Looking for a project named '${selector.module}' to substitute the artifact.")
                 val targetProject = rootProject.subprojects.find { it.name == selector.module }
                 if (targetProject != null) {
