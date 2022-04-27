@@ -20,6 +20,10 @@
 val ortJitPackGroup: String by project
 val ortJitPackVersion: String by project
 
+plugins {
+    `java-library`
+}
+
 repositories {
     mavenCentral()
 
