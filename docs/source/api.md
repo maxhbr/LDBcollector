@@ -189,7 +189,7 @@ An example
             - uses: actions/upload-artifact@v2
 ```
 
-## Generic obligations endpoint
+## Generic obligations endpoints
 
 ```{py:function} GET api/generics/
 
@@ -202,9 +202,73 @@ licenses and usage contexts :
 :param str spdx: a comma-separated list of SPDX license id
 :param str exploitation: an exploitation among Usage.EXPLOITATION_CHOICES
 :param str modification: a modification among Usage.MODIFICATION_CHOICES
-:return: a list of generic obligations
+:param str exploitation: an exploitation among Usage.EXPLOITATION_CHOICES
+:param str modification: a modification among Usage.MODIFICATION_CHOICES
 ```
     
+```{py:function} POST api/generics/sbom/
+
+List generic obligations for a list of components with their licenses and context.
+
+:param list packages: a list of package objects with
+:param str packages.package_id: a arbitrary identifier name (used in the response)
+:param str packages.spdx: the SPDX identifier for the package license
+:param str packages.exploitation: an exploitation among Usage.EXPLOITATION_CHOICES
+:param str packages.modification: a modification among Usage.MODIFICATION_CHOICES
+
+:return: a list of generic obligations with a `triggered_by` attributes containing
+the package identifier which triggered the obligation
+```
+
+### Example
+
+```
+POST /api/generics/sbom/
+{
+    "packages": [
+        {
+            "package_id": "foobar",
+            "spdx": "MIT",
+            "exploitation": "DistributionSource",
+            "modificaiton": "Altered"
+        },
+        {
+            "package_id": "barfoo",
+            "spdx": "Apache-2.0",
+            "exploitation": "DistributionSourceDistributionNonSource",
+            "modificaiton": "Unmodified"
+        }
+    ]
+}
+
+200 OK
+[
+        {
+            "id": 1,
+            "name": "Patent Grant",
+            "description": "",
+            "in_core": false,
+            "metacategory": "",
+            "team": null,
+            "passivity": "",
+            "triggered_by": ["foobar", "barfoo"]
+        },
+        {
+            "id": 12,
+            "name": "Indemnification of contributors",
+            "description": "",
+            "in_core": false,
+            "metacategory": "",
+            "team": null,
+            "passivity": "",
+            "triggered_by": ["barfoo"]
+        }
+    ]
+
+```
+
+
+
 ## Generic API endpoints for Models
 
 For the main models of the application, you can get a list of their instances at:
