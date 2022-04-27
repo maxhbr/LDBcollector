@@ -25,6 +25,7 @@ services:
       - SECRET=secret
       - SUPERUSER=admin
       - PASSWORD=admin
+      - HOST=example.com
     links:
       - db
     networks:
