@@ -3,8 +3,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
+from typing import Iterable
 
-from cube.models import License
+from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
 
 
@@ -160,6 +161,20 @@ def get_license_triggered_obligations(
         ]
 
     return obligations
+
+
+def get_licenses_triggered_obligations(
+    licenses: Iterable[License], exploitation: str = None, modification: str = None
+):
+    obligations_pk = set()
+    for license in licenses:
+        obligations_pk.update(
+            o.pk
+            for o in get_license_triggered_obligations(
+                license, exploitation, modification
+            )
+        )
+    return Obligation.objects.filter(pk__in=obligations_pk)
 
 
 def get_usages_obligations(usages):

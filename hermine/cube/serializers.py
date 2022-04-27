@@ -40,6 +40,10 @@ class GenericSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
+    triggered_by = serializers.ListField(
+        read_only=True, child=serializers.CharField(read_only=True)
+    )
+
     class Meta:
         use_natural_foreign_keys = True
         model = Generic
@@ -51,6 +55,7 @@ class GenericSerializer(serializers.ModelSerializer):
             "metacategory",
             "team",
             "passivity",
+            "triggered_by",
         ]
 
 
@@ -476,3 +481,20 @@ class DerogationSerializer(serializers.ModelSerializer):
         use_natural_foreign_keys = True
         model = Derogation
         fields = ["license", "release", "usage", "linking", "scope", "justification"]
+
+
+class SBOMItemSerializer(serializers.Serializer):
+    package_id = serializers.CharField()
+    spdx = serializers.SlugRelatedField(
+        queryset=License.objects.all(), slug_field="spdx_id"
+    )
+    exploitation = serializers.ChoiceField(
+        label="Exploitation", choices=Usage.EXPLOITATION_CHOICES
+    )
+    modification = serializers.ChoiceField(
+        label="Modification", choices=Usage.MODIFICATION_CHOICES
+    )
+
+
+class SBOMSerializer(serializers.Serializer):
+    packages = SBOMItemSerializer(many=True)
