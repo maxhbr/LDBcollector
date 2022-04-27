@@ -62,13 +62,16 @@ class UsageViewSet(viewsets.ModelViewSet):
     serializer_class = UsageSerializer
 
 
-class SPDXFilter(filters.BaseInFilter, CharFilter):
+class SPDXFilter(filters.BaseInFilter, filters.ModelChoiceFilter):
     pass
 
 
 class GenericFilter(filters.FilterSet):
     spdx = SPDXFilter(
-        label="License SPDX id(s)", field_name="obligation__license__spdx_id"
+        label="License SPDX id(s)",
+        field_name="obligation__license__spdx_id",
+        queryset=License.objects.all(),
+        to_field_name="spdx_id",
     )
     exploitation = filters.ChoiceFilter(
         label="Exploitation", choices=Usage.EXPLOITATION_CHOICES, method="no_op_filter"
