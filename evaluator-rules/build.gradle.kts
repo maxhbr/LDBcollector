@@ -39,7 +39,7 @@ repositories {
 }
 
 dependencies {
-    implementation("$ortJitPackGroup:evaluator:$ortJitPackVersion")
+    compileOnly("$ortJitPackGroup:evaluator:$ortJitPackVersion")
 }
 
 configurations.all {

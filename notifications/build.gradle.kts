@@ -52,7 +52,7 @@ repositories {
 }
 
 dependencies {
-    implementation("$ortJitPackGroup:notifier:$ortJitPackVersion")
+    compileOnly("$ortJitPackGroup:notifier:$ortJitPackVersion")
 }
 
 configurations.all {
