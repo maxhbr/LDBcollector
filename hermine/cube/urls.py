@@ -31,6 +31,7 @@ urlpatterns = [
     path("import/licenses", views.upload_licenses_file, name="import_licenses"),
     path("import/bom", views.import_bom, name="import_bom"),
     path("products", views.ProductListView.as_view(), name="products"),
+    path("product/<int:pk>", views.ProductDetailView.as_view(), name="product_detail"),
     path("release/<int:pk>", views.ReleaseView.as_view(), name="release_synthesis"),
     path("release/<int:pk>/bom", views.ReleaseBomView.as_view(), name="bom"),
     path(
