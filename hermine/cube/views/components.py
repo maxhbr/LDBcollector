@@ -18,7 +18,7 @@ class ComponentList(LoginRequiredMixin, generic.ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         populars = Component.objects.annotate(
-            popularity=Count("version__usage__id")
+            popularity=Count("versions__usage__id")
         ).order_by("-popularity")[:10]
         context["populars"] = populars
         return context
