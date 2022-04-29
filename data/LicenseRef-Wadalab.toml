@@ -1,7 +1,7 @@
 [license]
 
-expression = [ "LicenseRef-Wadalab" ]
-status = "approved-fonts"
+expression = "LicenseRef-Wadalab"
+status = [ "approved-fonts" ]
 
 [fedora]
 

@@ -1,7 +1,7 @@
 [license]
 
-expression = [ "LicenseRef-ec" ]
-status = "approved-fonts"
+expression = "LicenseRef-ec"
+status = [ "approved-fonts" ]
 
 [fedora]
 

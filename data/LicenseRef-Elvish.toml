@@ -1,7 +1,7 @@
 [license]
 
-expression = [ "LicenseRef-Elvish" ]
-status = "approved-fonts"
+expression = "LicenseRef-Elvish"
+status = [ "approved-fonts" ]
 
 [fedora]
 

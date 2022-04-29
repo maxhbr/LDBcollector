@@ -1,7 +1,7 @@
 [license]
 
-expression = [ "LicenseRef-Hersey" ]
-status = "approved-fonts"
+expression = "LicenseRef-Hersey"
+status = [ "approved-fonts" ]
 
 [fedora]
 

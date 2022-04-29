@@ -1,7 +1,7 @@
 [license]
 
-expression = [ "LicenseRef-Utopia" ]
-status = "approved-fonts"
+expression = "LicenseRef-Utopia"
+status = [ "approved-fonts" ]
 
 [fedora]
 

@@ -1,7 +1,7 @@
 [license]
 
-expression = [ "Arphic-1999" ]
-status = "approved-fonts"
+expression = "Arphic-1999"
+status = [ "approved-fonts" ]
 
 [fedora]
 

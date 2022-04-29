@@ -1,7 +1,7 @@
 [license]
 
-expression = [ "mplus" ]
-status = "approved-fonts"
+expression = "mplus"
+status = [ "approved-fonts" ]
 
 [fedora]
 

@@ -1,7 +1,7 @@
 [license]
 
-expression = [ "Bitstream-Vera" ]
-status = "approved-fonts"
+expression = "Bitstream-Vera"
+status = [ "approved-fonts" ]
 
 [fedora]
 
