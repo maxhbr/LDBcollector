@@ -1,10 +1,12 @@
-SRCDIRS = approved approved-content approved-documentation approved-fonts not-approved
+TOPDIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+SRCDIR  = $(TOPDIR)/data
 
 all:
 
-validate: $(SRCDIRS)
-	toml-validator approved/*.toml
-	toml-validator approved-content/*.toml
-	toml-validator approved-documentation/*.toml
-	toml-validator approved-fonts/*.toml
-	toml-validator not-approved/*.toml
+validate: toml-validate spec-validate
+
+toml-validate: $(SRCDIR)
+	toml-validator $(SRCDIR)/*.toml
+
+spec-validate: $(SRCDIR)
+	$(TOPDIR)/tools/validate-spec.py $(SRCDIR)
