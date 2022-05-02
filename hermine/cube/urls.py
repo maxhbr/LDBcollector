@@ -11,7 +11,8 @@ from . import views, api_views
 
 app_name = "cube"
 urlpatterns = [
-    path("", views.index, name="racine"),
+    path("", views.IndexView.as_view(), name="root"),
+    path("about", views.AboutView.as_view(), name="about"),
     path("license/<int:license_id>", views.license, name="license"),
     path(
         "license/<int:license_id>/export/",
@@ -70,7 +71,6 @@ urlpatterns = [
     path("licenses/<int:page>/", views.licenses, name="licenses"),
     path("component/<int:pk>", views.ComponentView.as_view(), name="component"),
     path("components", views.ComponentList.as_view(), name="components"),
-    path("about", views.about, name="about"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
 
