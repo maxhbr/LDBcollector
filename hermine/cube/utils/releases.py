@@ -11,76 +11,117 @@ from cube.utils.licenses import (
 )
 
 
-def update_validation_step(release):
-    info = dict()
-    validation_step = 1
-
-    # ==== Step 1 ====
-    # Looking for licenses that haven't been normalized, that is to say the ones
-    # that do not have a name fitting SPDX standards or that do not have been
-    # manually corrected.
+def validate_step_1(release):
+    """
+    Looking for licenses that haven't been normalized, that is to say the ones
+    that do not have a name fitting SPDX standards or that do not have been
+    manually corrected.
+    """
+    context = dict()
     unnormalized_usages = release.usage_set.all().filter(
         version__spdx_valid_license_expr="", version__corrected_license=""
     )
-    nb_validated_components = len(release.usage_set.all()) - len(unnormalized_usages)
-    if len(unnormalized_usages) == 0:
-        validation_step = 2
+    context["unormalized_usages"] = unnormalized_usages
+    context["nb_validated_components"] = len(release.usage_set.all()) - len(
+        unnormalized_usages
+    )
 
-    info["unnormalized_usages"] = unnormalized_usages
-    info["nb_validated_components"] = nb_validated_components
+    return len(unnormalized_usages) == 0, context
 
-    # ==== Step 2 ===
+
+def validate_step_2(release):
+    """
+    Check that all the licences in a release have been created and checked.
+    """
+    context = dict()
     licenses = get_licenses_to_check_or_create(release)
+    context["licenses_to_check"] = licenses["licenses_to_check"]
+    context["licenses_to_create"] = licenses["licenses_to_create"]
 
-    info["licenses_to_check"] = licenses["licenses_to_check"]
-    info["licenses_to_create"] = licenses["licenses_to_create"]
-    if (
-        len(info["licenses_to_check"]) == 0
-        and len(info["licenses_to_create"]) == 0
-        and validation_step == 2
-    ):
-        validation_step = 3
-    # ==== Step 2 bis ===
+    return (
+        len(context["licenses_to_check"]) == 0
+        and len(context["licenses_to_create"]) == 0
+    ), context
+
+
+def validate_step_3(release):
+    """
+    Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
+    """
+    context = dict()
     response = confirm_ands(release.id)
-    info["to_confirm"] = response["to_confirm"]
-    info["confirmed"] = response["confirmed"]
-    info["corrected"] = response["corrected"]
+    context["to_confirm"] = response["to_confirm"]
+    context["confirmed"] = response["confirmed"]
+    context["corrected"] = response["corrected"]
 
-    if len(response["to_confirm"]) == 0 and validation_step == 3:
-        validation_step = 4
+    return (len(response["to_confirm"]) == 0), context
 
-    # ==== For step 3 ====
+
+def validate_step_4(release):
+    """
+    Check all licenses choices are done.
+    """
+    context = dict()
     response = propagate_choices(release.id)
-    info["to_resolve"] = response["to_resolve"]
-    info["resolved"] = response["resolved"]
+    context["to_resolve"] = response["to_resolve"]
+    context["resolved"] = response["resolved"]
 
-    if len(response["to_resolve"]) == 0 and validation_step == 4:
-        validation_step = 5
+    return len(response["to_resolve"]) == 0, context
 
-    # ==== For step 4 ====
+
+def validate_step_5(release):
+    """
+    Check that the licences are compatible with policy.
+    """
+    context = dict()
     r = check_licenses_against_policy(release)
 
-    if len(r["usages_lic_grey"]) > 0 and validation_step > 2:
-        validation_step = 2
-
-    if (
+    step_5_valid = (
         len(r["usages_lic_red"]) == 0
         and len(r["usages_lic_orange"]) == 0
         and len(r["usages_lic_grey"]) == 0
-    ):
-        step_4_valid = True
-    else:
-        step_4_valid = False
+    )
 
-    if step_4_valid and validation_step == 5:
+    context["usages_lic_red"] = r["usages_lic_red"]
+    context["usages_lic_orange"] = r["usages_lic_orange"]
+    context["usages_lic_grey"] = r["usages_lic_grey"]
+    context["step_5_valid"] = step_5_valid
+    context["involved_lic"] = r["involved_lic"]
+    context["derogations"] = r["derogations"]
+
+    return step_5_valid, context
+
+
+def update_validation_step(release: Release):
+    info = dict()
+    validation_step = 1
+
+    step1, context = validate_step_1(release)
+    info.update(context)
+    if step1:
+        validation_step = 2
+
+    step2, context = validate_step_2(release)
+    info.update(context)
+    if step2 and validation_step == 2:
+        validation_step = 3
+
+    step3, context = validate_step_3(release)
+    info.update(context)
+    if step3 and validation_step == 3:
+        validation_step = 4
+
+    step4, context = validate_step_4(release)
+    info.update(context)
+    if step3 and validation_step == 4:
+        validation_step = 5
+
+    step5, context = validate_step_5(release)
+    if len(context["usages_lic_grey"]) > 0 and validation_step > 2:
+        validation_step = 2
+    info.update(context)
+    if step5 and validation_step == 5:
         validation_step = 6
-
-    info["usages_lic_red"] = r["usages_lic_red"]
-    info["usages_lic_orange"] = r["usages_lic_orange"]
-    info["usages_lic_grey"] = r["usages_lic_grey"]
-    info["step_4_valid"] = step_4_valid
-    info["involved_lic"] = r["involved_lic"]
-    info["derogations"] = r["derogations"]
 
     release.valid_step = validation_step
     release.save()

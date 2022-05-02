@@ -124,7 +124,6 @@ def create_or_update_license(license_dict):
     try:
         license_instance = License.objects.get(spdx_id=license_dict["spdx_id"])
     except License.DoesNotExist:
-        print("Instantiation of a new License: ", license_dict["spdx_id"])
         license_instance = License(spdx_id=license_dict["spdx_id"])
         license_instance.save()
         create = True

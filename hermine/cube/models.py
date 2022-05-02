@@ -61,7 +61,7 @@ class Release(models.Model):
     release_number = models.CharField(max_length=200)
     ship_status = models.CharField(max_length=20, choices=SHIPPING_CHOICES, blank=True)
     pub_date = models.DateTimeField("date published", blank=True, null=True)
-    # First unvalidated step : 5 = all are validated
+    # First unvalidated step : 6 = all are validated
     valid_step = models.IntegerField("Validation Step", blank=True, null=True)
 
     class Meta:

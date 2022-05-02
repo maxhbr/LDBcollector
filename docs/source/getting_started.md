@@ -43,12 +43,18 @@ http://127.0.0.1:8080/release/1
 
 #### Validation Step 1
 Check that all the packages have a proper SPDX expression 
+
 #### Validation Step 2
 Check that all the licences involved have been analyzed by your legal departement
-#### Validation Step 3 
-Express your choices when several licences are proposed
+
+#### Validation Step 3
+Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
+
 #### Validation Step 4 
-Check that the licences are compatible with your policy
+Express your choices when several licences are proposed.
+
+#### Validation Step 5
+Check that the licences are compatible with your policy.
 
 ### Read your obligations
 
