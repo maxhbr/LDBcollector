@@ -44,6 +44,10 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "Product category"
+        verbose_name_plural = "Product categories"
+
 
 class Release(models.Model):
     SHIPPING_CHOICES = [

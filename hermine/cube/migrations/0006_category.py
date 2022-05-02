@@ -38,5 +38,9 @@ class Migration(migrations.Migration):
                 ),
                 ("products", models.ManyToManyField(to="cube.product")),
             ],
+            options={
+                "verbose_name": "Product category",
+                "verbose_name_plural": "Product categories",
+            },
         ),
     ]
