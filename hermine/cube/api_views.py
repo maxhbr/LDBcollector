@@ -247,7 +247,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(response)
 
     @action(detail=True, methods=["get"])
-    def validation_3(self, pk, **kwargs):
+    def validation_4(self, pk, **kwargs):
         """
         API endpoint that allows to know if every License Usage have been specified for
         complex SPDX expressions -i.a. the ones that have more than 1 SPDX identifier in
@@ -272,7 +272,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(response)
 
     @action(detail=True, methods=["get"])
-    def validation_4(self, pk, **kwargs):
+    def validation_5(self, pk, **kwargs):
         """
         API endpoint that allows to know the Licenses that need or have a derogation
         (Validation Step 4).
