@@ -76,7 +76,7 @@ def validate_step_5(release):
     context = dict()
     r = check_licenses_against_policy(release)
 
-    step_4_valid = (
+    step_5_valid = (
         len(r["usages_lic_red"]) == 0
         and len(r["usages_lic_orange"]) == 0
         and len(r["usages_lic_grey"]) == 0
@@ -85,11 +85,11 @@ def validate_step_5(release):
     context["usages_lic_red"] = r["usages_lic_red"]
     context["usages_lic_orange"] = r["usages_lic_orange"]
     context["usages_lic_grey"] = r["usages_lic_grey"]
-    context["step_4_valid"] = step_4_valid
+    context["step_5_valid"] = step_5_valid
     context["involved_lic"] = r["involved_lic"]
     context["derogations"] = r["derogations"]
 
-    return step_4_valid, context
+    return step_5_valid, context
 
 
 def update_validation_step(release: Release):
@@ -103,24 +103,24 @@ def update_validation_step(release: Release):
 
     step2, context = validate_step_2(release)
     info.update(context)
-    if step2:
+    if step2 and validation_step == 2:
         validation_step = 3
 
     step3, context = validate_step_3(release)
     info.update(context)
-    if step3:
+    if step3 and validation_step == 3:
         validation_step = 4
 
     step4, context = validate_step_4(release)
     info.update(context)
-    if step3:
+    if step3 and validation_step == 4:
         validation_step = 5
 
     step5, context = validate_step_5(release)
     if len(context["usages_lic_grey"]) > 0 and validation_step > 2:
         validation_step = 2
     info.update(context)
-    if step5:
+    if step5 and validation_step == 5:
         validation_step = 6
 
     release.valid_step = validation_step

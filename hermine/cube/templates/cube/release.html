@@ -40,13 +40,22 @@ SPDX-License-Identifier: AGPL-3.0-only
       </li>
     </ul>
   </div>
-  {%if object.valid_step < 5%}
-    <p>You have reached validation step {{object.valid_step}} out of 4 </p>
-  {%else%}
-    <p>The release if fully validated</p>
-  {%endif%}
-  <progress class="progress is-large" value="{{object.valid_step |add:"-1"}}" max="4">80%</progress>
-
+  {% if object.valid_step < 6 %}
+    <p>You have reached validation step {{ object.valid_step }} out of 5 </p>
+    <progress class="progress is-large" value="{{ object.valid_step | add:"-1" }}" max="5"></progress>
+  {% else %}
+    <article class="message is-success is-large">
+      <div class="message-header">
+        <p>Finished</p>
+      </div>
+      <div class="message-body">
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span>
+          That's it ! All your usages are valid, qualified, and checked.
+          You can now proceed to the check of your obligations.
+      </div>
+    </article>
+    <hr />
+  {% endif %}
   <h4 class="title is-4">Step 1 - Check that licenses are normalised</h4>
 
   {% if unnormalized_usages %}
@@ -521,8 +530,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   {% endif %}
 
-  {% if step_4_valid %}
-
+  {% if step_5_valid %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
@@ -531,22 +539,6 @@ SPDX-License-Identifier: AGPL-3.0-only
         <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the components use policy compliant licences.
       </div>
     </article>
-
-  {% endif %}
-
-  {% if object.valid_step == 5 %}
-
-    <article class="message is-success">
-      <div class="message-header">
-        <p>Finished</p>
-      </div>
-      <div class="message-body">
-        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> 
-          That's it ! All your usages are valid, qualified, and checked. 
-          You can now proceed to the check of your obligations. 
-      </div>
-    </article>
-
   {% endif %}
 
 {% endblock %}
