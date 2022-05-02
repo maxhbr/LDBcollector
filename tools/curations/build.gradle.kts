@@ -32,7 +32,7 @@ buildscript {
 
     dependencies {
         classpath("com.squareup.okhttp3:okhttp:4.9.3")
-        classpath("com.github.oss-review-toolkit.ort:model:65a15f1a14")
+        classpath("com.github.oss-review-toolkit.ort:model:39d2cab6b0")
         classpath("com.vdurmont:semver4j:3.1.0")
     }
 }
