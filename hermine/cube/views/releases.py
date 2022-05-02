@@ -51,35 +51,26 @@ class ReleaseView(LoginRequiredMixin, generic.DetailView):
         }
 
 
-class ReleaseBomView(LoginRequiredMixin, generic.DetailView):
+class ReleaseBomView(LoginRequiredMixin, UpdateView):
     model = Release
-    template_name = "cube/release_bom.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return context
-
-
-class ReleaseImportBomView(LoginRequiredMixin, UpdateView):
     form_class = ImportBomForm
-    model = Release
-    template_name = "cube/import_bom.html"
     context_object_name = "release"
+    template_name = "cube/release_bom.html"
     import_status = None
 
     def form_valid(self, form):
         self.import_status = "success"
         try:
-            if form.cleaned_data["bom_type"] == "ORTBom":
+            if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
                 import_ort_evaluated_model_json_file(
-                    self.request.FILES["file"], form.cleaned_data["release"].id
+                    self.request.FILES["file"], self.object.pk
                 )
-            elif form.cleaned_data["bom_type"] == "SPDXBom":
-                import_spdx_file(
-                    self.request.FILES["file"], form.cleaned_data["release"].id
-                )
+            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_SPDX:
+                import_spdx_file(self.request.FILES["file"], self.object.pk)
         except:  # noqa: E722 TODO
             self.import_status = "error"
+
+        return super().render_to_response(self.get_context_data(form=form))
 
     def get_context_data(self, **kwargs):
         kwargs["import_status"] = self.import_status

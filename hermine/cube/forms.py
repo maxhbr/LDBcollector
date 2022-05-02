@@ -16,9 +16,11 @@ class ImportLicensesForm(forms.Form):
 
 
 class ImportBomForm(forms.ModelForm):
+    BOM_ORT = "ORTBom"
+    BOM_SPDX = "SPDXBom"
     BOM_CHOICES = (
-        ("ORTBom", "ORT Bill of Materials"),
-        ("SPDXBom", "SPDX Bill of Materials"),
+        (BOM_ORT, "ORT Bill of Materials"),
+        (BOM_SPDX, "SPDX Bill of Materials"),
     )
     bom_type = forms.ChoiceField(label="File format", choices=BOM_CHOICES)
     file = forms.FileField()

@@ -31,6 +31,8 @@ class UnauthenticatedTestCase(TestCase):
         reverse("cube:product_detail", kwargs={"pk": 1}),
         reverse("cube:components"),
         reverse("cube:component_detail", kwargs={"pk": 2}),
+        reverse("cube:release_detail", kwargs={"pk": 1}),
+        reverse("cube:release_bom", kwargs={"pk": 1}),
     ]
 
     def test_protected_views(self):

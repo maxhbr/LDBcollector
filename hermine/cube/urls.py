@@ -37,11 +37,6 @@ urlpatterns = [
     path("release/<int:pk>/", views.ReleaseView.as_view(), name="release_detail"),
     path("release/<int:pk>/bom/", views.ReleaseBomView.as_view(), name="release_bom"),
     path(
-        "release/<int:pk>/import/",
-        views.ReleaseImportBomView.as_view(),
-        name="release_import_bom",
-    ),
-    path(
         "release/<int:pk>/obligations/", views.ReleaseObligView.as_view(), name="oblig"
     ),
     path(
