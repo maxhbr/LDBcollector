@@ -26,33 +26,3 @@ def upload_generics_file(request):
         return redirect("cube:generics")
 
     return render(request, "cube/generic_list.html")
-
-
-def import_bom(request):
-    form = ImportBomForm(request.POST, request.FILES)
-    status = None
-    if form.is_valid():
-        status = "success"
-        try:
-            if form.cleaned_data["bom_type"] == "ORTBom":
-                import_ort_evaluated_model_json_file(
-                    request.FILES["file"], form.cleaned_data["release"].id
-                )
-            elif form.cleaned_data["bom_type"] == "SPDXBom":
-                import_spdx_file(request.FILES["file"], form.cleaned_data["release"].id)
-        except:  # noqa: E722 TODO
-            print("The file you chose do not match the format you chose.")
-            status = "error"
-
-        return render(
-            request,
-            "cube/import_bom.html",
-            {
-                "form": form,
-                "status": status,
-                "release_id": form.cleaned_data["release"].id,
-            },
-        )
-    else:
-        form = ImportBomForm()
-        return render(request, "cube/import_bom.html", {"form": form, "status": status})

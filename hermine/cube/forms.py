@@ -15,15 +15,14 @@ class ImportLicensesForm(forms.Form):
     file = forms.FileField(label="Upload a JSON containing license data")
 
 
-class ImportBomForm(forms.Form):
+class ImportBomForm(forms.ModelForm):
     BOM_CHOICES = (
         ("ORTBom", "ORT Bill of Materials"),
         ("SPDXBom", "SPDX Bill of Materials"),
     )
-    bom_type = forms.ChoiceField(
-        label="Produit et version concernée", choices=BOM_CHOICES
-    )
-    release = forms.ModelChoiceField(
-        label="Produit et version concernée", queryset=Release.objects.all()
-    )
+    bom_type = forms.ChoiceField(label="File format", choices=BOM_CHOICES)
     file = forms.FileField()
+
+    class Meta:
+        model = Release
+        fields = "bom_type", "file"
