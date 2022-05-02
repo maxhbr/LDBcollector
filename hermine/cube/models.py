@@ -34,6 +34,15 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+class Category(models.Model):
+    name = models.CharField(max_length=200, unique=True)
+    description = models.TextField(max_length=500, blank=True)
+    owner = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    products = models.ManyToManyField(Product)
+    def __str__(self):
+        return self.name
+
+
 
 class Release(models.Model):
     SHIPPING_CHOICES = [

@@ -8,6 +8,7 @@ from django.contrib import admin
 # Register your models here.
 
 from .models import Product
+from .models import Category
 from .models import Release
 from .models import Component
 from .models import Version
@@ -86,6 +87,7 @@ admin.site.register(License, LicenseAdmin)
 admin.site.register(Obligation, ObligationAdmin)
 
 admin.site.register(Product)
+admin.site.register(Category)
 admin.site.register(Release, ReleaseAdmin)
 admin.site.register(Component, ComponentAdmin)
 admin.site.register(Version, VersionAdmin)

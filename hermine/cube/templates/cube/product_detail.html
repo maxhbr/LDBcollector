@@ -10,7 +10,12 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
 <h1 class="title is-1">Product : {{ product.name }}</h1>
-  <p> {{ product.description }}  <a href="/admin/cube/product/{{product.id}}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+  <p> <b>Categories:</b>
+    {% for category in product.category_set.all %}
+    <span class="tag is-dark"> {{ category }}</span>
+    {% endfor %}
+  </p>
+  <p> <b>Description:</b> {{ product.description }}  <a href="/admin/cube/product/{{product.id}}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
   </p>
 <p><b>Owner:</b> {{ product.owner }} - {{ product.owner.first_name }} {{ product.owner.last_name }}</p>
 
