@@ -1487,6 +1487,11 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-ubuntu-font-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+
   - id: "ANTLR-PD"
     categories:
       - "permissive"
@@ -3830,4 +3835,29 @@ categorizations:
   - id: "LicenseRef-scancode-reportbug"
     categories:
       - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://opensource.apple.com/source/bzip2/bzip2-16/bzip2/manual.html
+  - id: "LicenseRef-bzip2-1.0.4"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/Apache-2.0.html
+  # https://spdx.org/licenses/LLVM-exception.html
+  - id: "Apache-2.0 WITH LLVM-exception"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-Firmware-imx-sdma-firmware"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-nxp-firmware-patent"
+    categories:
+      - "proprietary-free"
       - "property:include-in-notice-file"
