@@ -2,8 +2,7 @@
 SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 
-SPDX-License-Identifier: AGPL-3.0-only
--->
+SPDX-License-Identifier: AGPL-3.0-only -->
 
 {% extends "cube/cube.html" %}
 {% block title %}Products{% endblock %}
@@ -57,30 +56,43 @@ SPDX-License-Identifier: AGPL-3.0-only
   <thead>
     <tr>
       <th>Product</th>
-      <th>Release</th>
-      <th>Status</th>
-      <th>Dependencies</th>
-      <th>Validation Steps</th>
+      <th>Description</th>
+      <th>Owner</th>
+      <th># of releases</th>
       <th>Actions</th>
     </tr>
   </thead>
   <tbody>
 {% for product in object_list %}
-  {% for release in product.releases.all %}
-  <a href="{% url 'cube:release_synthesis' release.id %}">
     <tr>
-      <td>{{product.name}}</td>
-      <td> <a href="{% url 'cube:release_synthesis' release.id %}">{{release.release_number}} </a> </td>
-      <td>{{release.ship_status}}</td>
-      <td>{{release.usage_set.all|length}}</td>
-      <td><progress class="progress is-primary" value="{{release.valid_step|default:1}}" max="5">15%</progress></td>
-      <td><a href="{% url 'cube:release_synthesis' release.id %}"><i class="far fa-eye fa-2x"></i></a></td>
+      <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
+      <td> {{ product.description|truncatechars:50 }}</td>
+      <td>{{product.owner}}</td>
+      <td>{{product.releases.all|length}}</td>
+      <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a> |
+        <a href="/admin/cube/product/{{product.id}}" target="_blank"><i class="far fa-edit"></i></a></td>
     </tr>
   </a>
 {% endfor %}
-{% endfor %}
 </tbody>
 </table>
-  {% endblock %}
+
+<div class="pagination">
+  <span class="step-links">
+  {% if page_obj.has_previous %}
+    <a href="?page=1"><span class="current button is-link">1</span></a>
+    <a href="?page={{ page_obj.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
+  {% endif %}
+  <span class="current button is-primary">
+  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+  </span>
+  {% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}"><span class="current button is-link is-light">next</span></a>
+    <a href="?page={{ page_obj.paginator.num_pages }}"><span class="current button is-link">{{page_obj.paginator.num_pages}}</span></a>
+  {% endif %}
+  </span>
+</div>
+
+{% endblock %}
 
 

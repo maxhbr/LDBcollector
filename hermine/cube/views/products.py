@@ -12,7 +12,24 @@ from cube.models import Product, Release
 class ProductListView(LoginRequiredMixin, generic.ListView):
     model = Product
     template_name = "cube/product_list.html"
-    paginate_by = 100
+    paginate_by = 20
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["nb_products"] = Product.objects.all().count()
+        context["nb_releases"] = Release.objects.all().count()
+        return context
+
+class ProductDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Product
+    template_name = 'cube/product_detail.html'
+
+
+
+class ProductListView(LoginRequiredMixin, generic.ListView):
+    model = Product
+    template_name = "cube/product_list.html"
+    paginate_by = 20
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
