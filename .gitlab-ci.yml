@@ -20,6 +20,7 @@ tests:
   - poetry install
   - cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py
   - cd hermine
+  - poetry run black --check .
   - poetry run python manage.py test
 
 pages:
