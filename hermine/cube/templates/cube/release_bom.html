@@ -60,7 +60,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% for usage in object.usage_set.all %}
     <tr>
       <td>{{ usage.scope }}</td>
-      <td><a href="{% url 'cube:component' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
+      <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
       <td>{{ usage.version.version_number }}</td>
       <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr }}</td>
       <td>{{ usage.license_expression }}</td>

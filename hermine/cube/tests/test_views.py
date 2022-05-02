@@ -73,3 +73,21 @@ class ComponentViewsTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "test_component_alpha")  # component name
         self.assertContains(res, "test_product")  # product in which component is used
+
+
+class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_release_detail_view(self):
+        url = reverse("cube:release_detail", kwargs={"pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        self.assertContains(res, "Release: 1.0")  # release number
+
+    def test_release_bom_view(self):
+        url = reverse("cube:release_bom", kwargs={"pk": 1})
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        self.assertContains(
+            res, "test_component_alpha"
+        )  # test component alpha is used in release 1
