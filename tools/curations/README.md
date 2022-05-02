@@ -20,3 +20,17 @@ as Gradle properties, for example:
 ```
 
 To not add your GitHub token to your shell history, it is recommended to put it into an environment variable.
+
+## Verifying Curations
+
+To list all verification tasks use:
+
+```
+./gradlew tasks --group "verification"
+```
+
+For example, to verify that all package curations adhere to the rules of this repository, use:
+
+```
+./gradlew verifyPackageCurations
+```
