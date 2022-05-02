@@ -13,6 +13,10 @@ app_name = "cube"
 urlpatterns = [
     path("", views.IndexView.as_view(), name="root"),
     path("about/", views.AboutView.as_view(), name="about"),
+    path("products/", views.ProductListView.as_view(), name="products"),
+    path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
+    path("components/", views.ComponentList.as_view(), name="components"),
+    path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),
     path("license/<int:license_id>/", views.license, name="license"),
     path(
         "license/<int:license_id>/export/",
@@ -31,8 +35,6 @@ urlpatterns = [
     path("import/generics/", views.upload_generics_file, name="import_generics"),
     path("import/licenses/", views.upload_licenses_file, name="import_licenses"),
     path("import/bom/", views.import_bom, name="import_bom"),
-    path("products/", views.ProductListView.as_view(), name="products"),
-    path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
     path("release/<int:pk>/", views.ReleaseView.as_view(), name="release_synthesis"),
     path("release/<int:pk>/bom/", views.ReleaseBomView.as_view(), name="bom"),
     path(
@@ -69,8 +71,6 @@ urlpatterns = [
         name="release_exploitation",
     ),
     path("licenses/<int:page>/", views.licenses, name="licenses"),
-    path("component/<int:pk>/", views.ComponentView.as_view(), name="component"),
-    path("components/", views.ComponentList.as_view(), name="components"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
 
