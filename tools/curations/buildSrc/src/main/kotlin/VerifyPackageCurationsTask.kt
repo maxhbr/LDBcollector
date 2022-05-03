@@ -16,10 +16,13 @@ abstract class VerifyPackageCurationsTask : DefaultTask() {
 
     @TaskAction
     fun verify() {
-        var count = 0
+        var fileCount = 0
+        var curationCount = 0
         val issues = mutableListOf<String>()
 
         curationsDir.walk().filter { it.isFile }.forEach { file ->
+            fileCount++
+
             val relativePath = file.relativeTo(curationsDir).invariantSeparatorsPath
 
             runCatching {
@@ -28,6 +31,8 @@ abstract class VerifyPackageCurationsTask : DefaultTask() {
                 }
 
                 val curations = file.mapper().readValue<List<PackageCuration>>(file)
+
+                curationCount += curations.size
 
                 if (curations.isEmpty()) {
                     issues += "The file '$relativePath' does not contain any curations."
@@ -77,17 +82,20 @@ abstract class VerifyPackageCurationsTask : DefaultTask() {
                                 "'$relativePath'. The expected file is '$expectedPath'."
                     }
                 }
-            }.onSuccess {
-                ++count
             }.onFailure { e ->
                 issues += "Could not parse curations from file '$relativePath': ${e.message}"
             }
         }
 
         if (issues.isNotEmpty()) {
-            throw GradleException("Found ${issues.size} curation issues:\n${issues.joinToString("\n")}")
+            throw GradleException(
+                "Found ${issues.size} curation issue(s) in $fileCount package curation file(s) containing " +
+                        "$curationCount curation(s):\n${issues.joinToString("\n")}"
+            )
         } else {
-            logger.quiet("Successfully verified $count package curations.")
+            logger.quiet(
+                "Successfully verified $fileCount package curation file(s) containing $curationCount curation(s)."
+            )
         }
     }
 }
