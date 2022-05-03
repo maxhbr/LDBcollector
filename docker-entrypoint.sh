@@ -36,6 +36,7 @@ f_log "enter with $*"
 f_readArgs "$@"
 
 f_log "Entrypoint start on $PORT"
+python ./manage.py makemigrations
 python ./manage.py migrate
 if test -n "$USER" && test -n "$PASSWORD"
 then
