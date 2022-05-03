@@ -11,4 +11,10 @@ tasks {
 
     register<VerifyPackageConfigurationsTask>("verifyPackageConfigurations")
     register<VerifyPackageCurationsTask>("verifyPackageCurations")
+
+    register("verify") {
+        group = "verification"
+
+        setDependsOn(this@tasks.filter { it.group == "verification" && it != this })
+    }
 }
