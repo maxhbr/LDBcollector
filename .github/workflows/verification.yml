@@ -22,6 +22,11 @@ jobs:
           distribution: adopt
           java-version: 11
           cache: gradle
+      - name: Verify package configurations
+        uses: burrunan/gradle-cache-action@v1
+        with:
+          build-root-directory: tools/curations
+          arguments: verifyPackageConfigurations
       - name: Verify package curations
         uses: burrunan/gradle-cache-action@v1
         with:

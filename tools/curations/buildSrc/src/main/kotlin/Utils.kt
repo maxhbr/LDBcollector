@@ -7,6 +7,7 @@ import org.ossreviewtoolkit.model.Identifier
 import org.ossreviewtoolkit.model.PackageCuration
 import org.ossreviewtoolkit.model.PackageCurationData
 import org.ossreviewtoolkit.model.VcsInfoCurationData
+import org.ossreviewtoolkit.model.config.PackageConfiguration
 import org.ossreviewtoolkit.utils.common.encodeOr
 import java.io.File
 
@@ -15,6 +16,9 @@ private val versionRegex = Regex("^v?\\d+\\.\\d+\\.\\d+\$")
 
 val DefaultTask.curationsDir: File
     get() = project.rootDir.resolve("../../curations")
+
+val DefaultTask.packageConfigurationsDir: File
+    get() = project.rootDir.resolve("../../package-configurations")
 
 fun Identifier.toCurationPath() =
     "${type.encodeOr("_")}/${namespace.encodeOr("_")}/${name.encodeOr("_")}.yml"
@@ -58,5 +62,9 @@ fun List<PathCurationData>.toPathCurations(): List<PackageCuration> {
         )
     }
 }
+
+fun PackageConfiguration.expectedPath() =
+    "${id.type.encodeOr("_")}/${id.namespace.encodeOr("_")}/${id.name.encodeOr("_")}/" +
+            "${id.version.encodeOr("_")}/${if (vcs != null) "vcs" else "source-artifact"}.yml"
 
 fun String.isVersion() = matches(versionRegex)
