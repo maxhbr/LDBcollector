@@ -25,7 +25,8 @@ services:
       - SECRET=secret
       - SUPERUSER=admin
       - PASSWORD=admin
-      - HOST=example.com
+# Uncomment and put the specific hostname, otherwise localhost will be used.
+#      - HOST=example.com
     links:
       - db
     networks:

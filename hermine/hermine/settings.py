@@ -31,8 +31,10 @@ SECRET_KEY = secrets.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-if host := os.environ.get("HOST") is not None:
+if (host := os.environ.get("HOST")) is not None:
     ALLOWED_HOSTS = [host]
+else:
+    ALLOWED_HOSTS = []
 
 
 # Application definition
