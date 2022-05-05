@@ -3,7 +3,7 @@
 expression = "LicenseRef-sgi-glx-1.0"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/GLX_Public_License
 '''
 

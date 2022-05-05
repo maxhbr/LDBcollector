@@ -3,7 +3,7 @@
 expression = "BSD-3-Clause"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD
 https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License
 https://www.unidata.ucar.edu/software/netcdf/copyright.html

@@ -3,7 +3,7 @@
 expression = "EPL-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.eclipse.org/legal/epl-v20.html
 '''
 

@@ -3,7 +3,7 @@
 expression = "MIT-advertising"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising
 '''
 

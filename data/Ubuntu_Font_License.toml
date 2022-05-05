@@ -3,7 +3,7 @@
 expression = "LicenseRef-ubuntu-font-1.0"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/UbuntuFontLicense
 '''
 

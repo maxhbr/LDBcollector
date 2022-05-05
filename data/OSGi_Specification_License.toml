@@ -3,7 +3,7 @@
 expression = "LicenseRef-osgi-spec-2.0"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.osgi.org/Main/OSGiSpecificationLicense
 '''
 

@@ -3,7 +3,7 @@
 expression = "OLDAP-2.8"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.openldap.org/software/release/license.html
 '''
 

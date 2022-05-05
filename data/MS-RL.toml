@@ -3,7 +3,7 @@
 expression = "MS-RL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.microsoft.com/opensource/licenses.mspx#Ms-RL
 '''
 

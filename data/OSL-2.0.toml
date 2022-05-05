@@ -3,7 +3,7 @@
 expression = "OSL-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.nexb.com/license/LICENSE-OSL-2.0.html
 '''
 

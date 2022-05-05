@@ -3,7 +3,7 @@
 expression = "MPL-1.1"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.mozilla.org/MPL/MPL-1.1.html
 '''
 

@@ -3,7 +3,7 @@
 expression = "LicenseRef-AMAP"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/AMAP_License
 '''
 

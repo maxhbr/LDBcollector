@@ -3,7 +3,7 @@
 expression = "LicenseRef-paul-hsieh-exposition"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.azillionmonkeys.com/qed/license-exposition.html
 '''
 

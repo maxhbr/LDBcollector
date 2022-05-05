@@ -3,7 +3,7 @@
 expression = "LicenseRef-Larabie-font"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/LarabieFontsLicense
 '''
 

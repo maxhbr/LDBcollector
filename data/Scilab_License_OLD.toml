@@ -3,7 +3,7 @@
 expression = "LicenseRef-scilab-en-2005"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Scilab_License_Old
 '''
 

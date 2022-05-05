@@ -3,7 +3,7 @@
 expression = "Nokia"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/nokia.html
 '''
 

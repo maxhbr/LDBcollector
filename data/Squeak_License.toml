@@ -3,7 +3,7 @@
 expression = "LicenseRef-squeak"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://squeak.org/SqueakLicense/
 https://enterprise.dejacode.com/licenses/public/squeak/?_list_filters=q%3Dsqueak#license-text
 '''

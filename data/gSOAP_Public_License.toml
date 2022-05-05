@@ -3,7 +3,7 @@
 expression = "gSOAP-1.3b"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.cs.fsu.edu/~engelen/license.html
 '''
 

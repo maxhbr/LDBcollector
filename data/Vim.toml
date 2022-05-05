@@ -3,7 +3,7 @@
 expression = "Vim"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://vimdoc.sourceforge.net/htmldoc/uganda.html
 '''
 

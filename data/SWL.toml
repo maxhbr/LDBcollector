@@ -3,7 +3,7 @@
 expression = "SWL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/SWL
 '''
 

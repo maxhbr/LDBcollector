@@ -3,7 +3,7 @@
 expression = "DOC"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.cs.wustl.edu/~schmidt/ACE-copying.html
 '''
 

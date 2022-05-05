@@ -3,7 +3,7 @@
 expression = "Plexus"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License
 '''
 

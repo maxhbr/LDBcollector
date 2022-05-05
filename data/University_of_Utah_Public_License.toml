@@ -3,7 +3,7 @@
 expression = "LicenseRef-uofu-rfpl"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt
 https://enterprise.dejacode.com/licenses/public/uofu-rfpl/#license-text
 '''

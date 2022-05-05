@@ -3,7 +3,7 @@
 expression = "Sendmail-8.23"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.sendmail.org/ftp/LICENSE
 '''
 

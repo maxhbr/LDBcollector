@@ -3,7 +3,7 @@
 expression = "LicenseRef-IBMsample"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/IBM_Sample_Code_License
 '''
 

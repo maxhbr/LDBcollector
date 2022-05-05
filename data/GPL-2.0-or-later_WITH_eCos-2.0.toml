@@ -3,7 +3,7 @@
 expression = "GPL-2.0-or-later WITH eCos-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.fsf.org/licensing/licenses/ecos-license.html
 '''
 

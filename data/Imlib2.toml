@@ -3,7 +3,7 @@
 expression = "Imlib2"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Imlib2
 '''
 

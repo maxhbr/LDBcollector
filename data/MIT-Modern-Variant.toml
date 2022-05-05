@@ -3,7 +3,7 @@
 expression = "MIT-Modern-Variant"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants
 '''
 

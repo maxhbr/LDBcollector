@@ -3,7 +3,7 @@
 expression = "LicenseRef-Siren14"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Siren14_Licensing_Agreement
 '''
 

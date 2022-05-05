@@ -3,7 +3,7 @@
 expression = "MPL-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/MPLv2.0
 '''
 

@@ -3,7 +3,7 @@
 expression = "MPL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/mozilla1.0.php
 '''
 

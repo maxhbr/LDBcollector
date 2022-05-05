@@ -3,7 +3,7 @@
 expression = "Zend-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.zend.com/license/2_00.txt
 '''
 

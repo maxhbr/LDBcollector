@@ -3,7 +3,7 @@
 expression = "ZPL-2.1"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.zope.org/Resources/ZPL
 '''
 

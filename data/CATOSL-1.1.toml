@@ -3,7 +3,7 @@
 expression = "CATOSL-1.1"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/ca-tosl1.1.php
 '''
 

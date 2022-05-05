@@ -3,7 +3,7 @@
 expression = "LicenseRef-unrar"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Unrar
 '''
 

@@ -3,7 +3,7 @@
 expression = "LicenseRef-SCSL"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.sun.com/software/communitysource/
 '''
 

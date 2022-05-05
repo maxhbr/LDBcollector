@@ -3,7 +3,7 @@
 expression = "eGenix"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0
 '''
 

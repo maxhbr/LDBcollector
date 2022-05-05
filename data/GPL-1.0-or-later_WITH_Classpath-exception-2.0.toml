@@ -3,7 +3,7 @@
 expression = "GPL-1.0-or-later WITH Classpath-exception-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
 '''
 

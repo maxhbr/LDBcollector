@@ -3,7 +3,7 @@
 expression = "LicenseRef-lha"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://packages.debian.org/changelogs/pool/non-free/l/lha/current/copyright
 '''
 

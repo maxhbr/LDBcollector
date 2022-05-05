@@ -3,7 +3,7 @@
 expression = "LicenseRef-RSA"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/RSA
 '''
 

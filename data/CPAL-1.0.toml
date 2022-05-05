@@ -3,7 +3,7 @@
 expression = "CPAL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://www.socialtext.net/open/index.cgi?cpal_license_in_wikitext
 '''
 

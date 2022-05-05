@@ -3,7 +3,7 @@
 expression = "LicenseRef-unsplash"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://unsplash.com/license
 '''
 

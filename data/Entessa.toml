@@ -3,7 +3,7 @@
 expression = "Entessa"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/entessa.php
 '''
 

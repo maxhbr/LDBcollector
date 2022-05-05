@@ -3,7 +3,7 @@
 expression = "LicenseRef-pine"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.washington.edu/pine/overview/legal.html
 https://enterprise.dejacode.com/licenses/public/pine/?_list_filters=q%3Dpine#license-text
 '''

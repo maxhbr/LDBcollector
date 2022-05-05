@@ -3,7 +3,7 @@
 expression = "Frameworx-1.0"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/frameworx.php
 '''
 

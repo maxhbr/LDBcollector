@@ -3,7 +3,7 @@
 expression = "MirOS"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://mirbsd.de/MirOS-Licence
 '''
 

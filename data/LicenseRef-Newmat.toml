@@ -3,7 +3,7 @@
 expression = "LicenseRef-Newmat"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Newmat_License
 '''
 

@@ -3,7 +3,7 @@
 expression = "Interbase-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.firebirdsql.org/en/interbase-public-license/
 '''
 

@@ -3,7 +3,7 @@
 expression = "SNIA"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/SNIA_Public_License
 '''
 

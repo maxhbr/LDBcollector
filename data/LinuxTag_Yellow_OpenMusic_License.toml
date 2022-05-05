@@ -3,7 +3,7 @@
 expression = "LicenseRef-OpenMusic-yellow"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://openmusic.linuxtag.org/yellow.html
 '''
 

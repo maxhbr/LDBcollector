@@ -3,7 +3,7 @@
 expression = "Adobe-Glyph"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
 '''
 

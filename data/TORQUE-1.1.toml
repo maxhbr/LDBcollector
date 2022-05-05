@@ -3,7 +3,7 @@
 expression = "TORQUE-1.1"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/TORQUEv1.1
 '''
 

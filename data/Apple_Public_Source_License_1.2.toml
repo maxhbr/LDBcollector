@@ -3,7 +3,7 @@
 expression = "APSL-1.2"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.2
 '''
 

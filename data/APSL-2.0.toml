@@ -3,7 +3,7 @@
 expression = "APSL-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.opensource.apple.com/apsl/2.0.txt
 '''
 

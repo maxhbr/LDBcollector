@@ -3,7 +3,7 @@
 expression = "SMLNJ"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#MLton_variant
 https://fedoraproject.org/wiki/Licensing/MIT
 '''

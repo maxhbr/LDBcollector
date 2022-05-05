@@ -3,7 +3,7 @@
 expression = "Artistic-1.0-Perl"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.perl.com/pub/a/language/misc/Artistic.html
 '''
 

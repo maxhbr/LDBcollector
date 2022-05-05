@@ -3,7 +3,7 @@
 expression = "ECL-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.osedu.org/licenses/ECL-2.0/
 '''
 

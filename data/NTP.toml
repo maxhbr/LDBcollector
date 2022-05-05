@@ -3,7 +3,7 @@
 expression = "NTP"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#NTP_variant
 '''
 

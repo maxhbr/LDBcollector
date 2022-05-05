@@ -3,7 +3,7 @@
 expression = "LicenseRef-aptana-1.0"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://aptana.com/legal/apl/
 https://enterprise.dejacode.com/licenses/public/aptana-1.0/?_list_filters=q%3Daptana#license-text
 '''

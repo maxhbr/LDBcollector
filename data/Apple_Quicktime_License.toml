@@ -3,7 +3,7 @@
 expression = "LicenseRef-quicktime"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://store.apple.com/Catalog/US/Images/quicktime.html
 '''
 

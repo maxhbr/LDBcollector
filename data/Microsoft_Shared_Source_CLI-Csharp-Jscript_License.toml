@@ -3,7 +3,7 @@
 expression = "LicenseRef-MS-ss-cli"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Microsoft_Shared_Source_License
 '''
 

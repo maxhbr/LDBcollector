@@ -3,7 +3,7 @@
 expression = "NPL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.mozilla.org/NPL/NPL-1.0.html
 '''
 

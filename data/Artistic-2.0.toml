@@ -3,7 +3,7 @@
 expression = "Artistic-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.perlfoundation.org/artistic_license_2_0
 '''
 

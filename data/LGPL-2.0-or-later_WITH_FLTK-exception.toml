@@ -3,7 +3,7 @@
 expression = "LGPL-2.0-or-later WITH FLTK-exception"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.fltk.org/COPYING.php
 '''
 

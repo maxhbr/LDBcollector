@@ -3,7 +3,7 @@
 expression = "AAL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/attribution.php
 '''
 

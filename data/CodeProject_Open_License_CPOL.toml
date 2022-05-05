@@ -3,7 +3,7 @@
 expression = "CPOL-1.02"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.codeproject.com/info/cpol10.aspx
 '''
 

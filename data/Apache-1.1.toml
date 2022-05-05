@@ -3,7 +3,7 @@
 expression = "Apache-1.1"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://4suite.org/COPYRIGHT
 http://www.apache.org/licenses/LICENSE-1.1
 https://fedoraproject.org/wiki/Licensing/MX4J

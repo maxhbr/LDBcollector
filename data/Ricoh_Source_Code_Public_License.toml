@@ -3,7 +3,7 @@
 expression = "RSCPL"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/ricohpl.php
 '''
 

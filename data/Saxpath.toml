@@ -3,7 +3,7 @@
 expression = "Saxpath"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Saxpath_License
 '''
 

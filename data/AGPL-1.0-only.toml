@@ -3,7 +3,7 @@
 expression = "AGPL-1.0-only"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.affero.org/oagpl.html
 '''
 

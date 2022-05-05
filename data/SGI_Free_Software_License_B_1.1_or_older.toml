@@ -3,7 +3,7 @@
 expression = "SGI-B-1.0"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://oss.sgi.com/projects/FreeB/
 https://enterprise.dejacode.com/licenses/public/sgi-fslb-1.0/?_list_filters=q%3Dsgi#license-text
 '''

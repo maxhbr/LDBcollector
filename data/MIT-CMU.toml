@@ -3,7 +3,7 @@
 expression = "MIT-CMU"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
 '''
 

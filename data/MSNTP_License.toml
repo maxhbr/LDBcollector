@@ -3,7 +3,7 @@
 expression = "LicenseRef-msntp"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/MSNTP
 '''
 

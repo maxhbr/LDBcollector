@@ -3,7 +3,7 @@
 expression = "Ruby"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.ruby-lang.org/en/LICENSE.txt
 '''
 

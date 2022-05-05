@@ -3,7 +3,7 @@
 expression = "MTLL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License
 '''
 

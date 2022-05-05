@@ -3,7 +3,7 @@
 expression = "Glide"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.users.on.net/~triforce/glidexp/COPYING.txt
 '''
 

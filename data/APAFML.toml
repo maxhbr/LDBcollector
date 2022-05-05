@@ -3,7 +3,7 @@
 expression = "APAFML"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM
 '''
 

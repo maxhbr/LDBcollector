@@ -3,7 +3,7 @@
 expression = "LicenseRef-frontier-1.0"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.spinwardstars.com/frontier/fal.html
 https://enterprise.dejacode.com/licenses/public/frontier-1.0/?_list_filters=q%3Dfrontier#license-text
 '''

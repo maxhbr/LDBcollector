@@ -3,7 +3,7 @@
 expression = "GPL-1.0-or-later OR Artistic-1.0-Perl"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://dev.perl.org/licenses/
 '''
 

@@ -3,7 +3,7 @@
 expression = "LicenseRef-DIP-SIPA-font"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/DIP_SIPA_Font_License
 '''
 

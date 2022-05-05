@@ -3,7 +3,7 @@
 expression = "ICU"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_style_.28ICU_Variant.29
 '''
 

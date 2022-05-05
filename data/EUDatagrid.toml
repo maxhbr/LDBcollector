@@ -3,7 +3,7 @@
 expression = "EUDatagrid"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.opensource.org/licenses/eudatagrid.php
 '''
 

@@ -3,7 +3,7 @@
 expression = "LicenseRef-qmail"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://cr.yp.to/qmail/dist.html
 '''
 

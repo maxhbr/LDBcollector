@@ -3,7 +3,7 @@
 expression = "LGPL-3.0-or-later"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.fsf.org/licensing/licenses/lgpl.html
 '''
 

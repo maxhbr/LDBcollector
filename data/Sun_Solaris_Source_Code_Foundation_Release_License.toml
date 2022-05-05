@@ -3,7 +3,7 @@
 expression = "LicenseRef-sun-ssscfr-1.1"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
 '''
 

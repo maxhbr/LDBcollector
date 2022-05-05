@@ -3,7 +3,7 @@
 expression = "LicenseRef-CRC32"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/CRC32
 '''
 

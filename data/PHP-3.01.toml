@@ -3,7 +3,7 @@
 expression = "PHP-3.01"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.php.net/license/3_01.txt
 '''
 

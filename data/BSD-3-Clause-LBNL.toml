@@ -3,7 +3,7 @@
 expression = "BSD-3-Clause-LBNL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/LBNLBSD
 '''
 

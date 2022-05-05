@@ -3,7 +3,7 @@
 expression = "SPL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Sun_Public_License
 '''
 

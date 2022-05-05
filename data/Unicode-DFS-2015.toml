@@ -3,7 +3,7 @@
 expression = "Unicode-DFS-2015"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Unicode
 '''
 

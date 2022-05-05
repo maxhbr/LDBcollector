@@ -3,7 +3,7 @@
 expression = "LicenseRef-OpenMotif"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.opengroup.org/openmotif/license/
 '''
 

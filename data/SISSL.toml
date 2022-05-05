@@ -3,7 +3,7 @@
 expression = "SISSL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.openoffice.org/licenses/sissl_license.html
 '''
 

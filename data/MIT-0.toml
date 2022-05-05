@@ -3,7 +3,7 @@
 expression = "MIT-0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/MIT-0
 '''
 

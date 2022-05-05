@@ -3,7 +3,7 @@
 expression = "NRL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://web.mit.edu/network/isakmp/nrllicense.html
 '''
 

@@ -3,7 +3,7 @@
 expression = "LicenseRef-commons-clause"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/CommonsClause
 '''
 

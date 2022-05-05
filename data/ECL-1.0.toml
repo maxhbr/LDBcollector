@@ -3,7 +3,7 @@
 expression = "ECL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/ecl1.php
 '''
 

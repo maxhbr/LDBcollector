@@ -3,7 +3,7 @@
 expression = "RPSL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.opensource.org/licenses/real.php
 '''
 

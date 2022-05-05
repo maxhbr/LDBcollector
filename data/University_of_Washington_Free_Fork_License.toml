@@ -3,7 +3,7 @@
 expression = "LicenseRef-free-fork"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/UofWFreeFork
 '''
 

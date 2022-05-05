@@ -3,7 +3,7 @@
 expression = "IPL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.opensource.org/licenses/ibmpl.php
 '''
 

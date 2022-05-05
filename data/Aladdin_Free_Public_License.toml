@@ -3,7 +3,7 @@
 expression = "Aladdin"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.artifex.com/downloads/doc/Public.htm
 '''
 

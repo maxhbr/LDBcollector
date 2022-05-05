@@ -3,7 +3,7 @@
 expression = "ImageMagick"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.imagemagick.org/script/license.php
 '''
 

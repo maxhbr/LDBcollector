@@ -3,7 +3,7 @@
 expression = "LicenseRef-BeOpen"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/BeOpen
 '''
 

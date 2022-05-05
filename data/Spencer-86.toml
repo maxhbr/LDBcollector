@@ -3,7 +3,7 @@
 expression = "Spencer-86"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
 '''
 

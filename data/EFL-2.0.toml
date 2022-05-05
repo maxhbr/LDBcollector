@@ -3,7 +3,7 @@
 expression = "EFL-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.fsf.org/licensing/licenses/eiffel-forum-license-2.html
 '''
 

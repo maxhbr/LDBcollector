@@ -3,7 +3,7 @@
 expression = "LicenseRef-Jabber"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/jabberpl.php
 '''
 

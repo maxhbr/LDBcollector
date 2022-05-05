@@ -3,7 +3,7 @@
 expression = "ClArtistic"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/ArtisticClarified
 '''
 

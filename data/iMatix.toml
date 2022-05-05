@@ -3,7 +3,7 @@
 expression = "iMatix"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://legacy.imatix.com/html/sfl/sfl4.htm#license
 '''
 

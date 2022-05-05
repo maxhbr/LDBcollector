@@ -3,7 +3,7 @@
 expression = "FreeImage"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://freeimage.sourceforge.net/freeimage-license.txt
 '''
 

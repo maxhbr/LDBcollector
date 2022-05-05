@@ -3,7 +3,7 @@
 expression = "OSLC-2.0"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/oclc2.php
 '''
 

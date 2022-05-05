@@ -3,7 +3,7 @@
 expression = "zlib-acknowledgement"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Nunit
 https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
 '''

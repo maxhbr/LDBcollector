@@ -3,7 +3,7 @@
 expression = "BSD-2-Clause"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://creativecommons.org/licenses/BSD/
 http://www.cryptix.org/LICENSE.TXT
 '''

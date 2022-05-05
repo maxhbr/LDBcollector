@@ -3,7 +3,7 @@
 expression = "LicenseRef-ZPLv1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.zope.org/Resources/ZPL
 '''
 

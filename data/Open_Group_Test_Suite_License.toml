@@ -3,7 +3,7 @@
 expression = "OGTSL"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/opengroup.php
 '''
 

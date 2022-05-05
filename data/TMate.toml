@@ -3,7 +3,7 @@
 expression = "TMate"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://svnkit.com/license.html
 '''
 

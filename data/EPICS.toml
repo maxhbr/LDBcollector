@@ -3,7 +3,7 @@
 expression = "EPICS"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.aps.anl.gov/epics/license/open.php
 '''
 

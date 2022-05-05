@@ -3,7 +3,7 @@
 expression = "LicenseRef-PlainTeX"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/PlainTeX
 '''
 

@@ -3,7 +3,7 @@
 expression = "NOSL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://bits.netizen.com.au/licenses/NOSL/nosl.txt
 '''
 

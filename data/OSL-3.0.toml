@@ -3,7 +3,7 @@
 expression = "OSL-3.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/osl-3.0.php
 '''
 

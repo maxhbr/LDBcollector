@@ -3,7 +3,7 @@
 expression = "OpenSSL"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.sdisw.com/openssl.htm
 '''
 

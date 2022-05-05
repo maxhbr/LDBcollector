@@ -3,7 +3,7 @@
 expression = "JSON"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 http://www.json.org/license.html
 '''
 

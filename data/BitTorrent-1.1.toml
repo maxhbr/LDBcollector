@@ -3,7 +3,7 @@
 expression = "BitTorrent-1.1"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License
 '''
 

@@ -3,7 +3,7 @@
 expression = "LicenseRef-Par"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Par
 '''
 

@@ -3,7 +3,7 @@
 expression = "LicenseRef-mod_macro"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.cri.ensmp.fr/~coelho/mod_macro/mod_macro/LICENSE
 '''
 

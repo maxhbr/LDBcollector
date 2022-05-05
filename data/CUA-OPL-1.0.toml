@@ -3,7 +3,7 @@
 expression = "CUA-OPL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://opensource.org/licenses/cuaoffice.php
 '''
 

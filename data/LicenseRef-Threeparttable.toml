@@ -3,7 +3,7 @@
 expression = "LicenseRef-Threeparttable"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Threeparttable
 '''
 

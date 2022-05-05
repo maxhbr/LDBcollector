@@ -3,7 +3,7 @@
 expression = "LicenseRef-NPSL-0.94"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://nmap.org/npsl/npsl-annotated.html
 https://svn.nmap.org/nmap/LICENSE
 '''

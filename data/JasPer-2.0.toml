@@ -3,7 +3,7 @@
 expression = "JasPer-2.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.ece.uvic.ca/~mdadams/jasper/LICENSE
 '''
 

@@ -3,7 +3,7 @@
 expression = "ISC"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://www.isc.org/software/license
 '''
 

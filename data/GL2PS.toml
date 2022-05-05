@@ -3,7 +3,7 @@
 expression = "GL2PS"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.geuz.org/gl2ps/COPYING.GL2PS
 '''
 

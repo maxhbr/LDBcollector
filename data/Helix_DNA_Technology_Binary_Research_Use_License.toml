@@ -3,7 +3,7 @@
 expression = "LicenseRef-helix"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://helixcommunity.org/beula/
 https://enterprise.dejacode.com/licenses/public/helix/?_list_filters=q%3Dhelix#license-text
 '''

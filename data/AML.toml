@@ -3,7 +3,7 @@
 expression = "AML"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/Apple_MIT_License
 '''
 

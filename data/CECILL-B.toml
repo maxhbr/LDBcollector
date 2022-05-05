@@ -3,7 +3,7 @@
 expression = "CECILL-B"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.cecill.info/licences.en.html
 '''
 

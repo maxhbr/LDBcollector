@@ -3,7 +3,7 @@
 expression = "psfrag"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/psfrag
 '''
 

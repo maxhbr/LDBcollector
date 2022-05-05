@@ -3,7 +3,7 @@
 expression = "Adobe-2006"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/AdobeLicense
 '''
 

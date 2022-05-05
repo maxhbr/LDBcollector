@@ -3,7 +3,7 @@
 expression = "OSL-1.0"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.opensource.org/licenses/osl-1.0.txt
 '''
 

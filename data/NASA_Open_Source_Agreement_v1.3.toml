@@ -3,7 +3,7 @@
 expression = "NASA-1.3"
 status = [ "not-approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/NASA_Open_Source_Agreement
 '''
 

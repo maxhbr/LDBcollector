@@ -3,7 +3,7 @@
 expression = "MakeIndex"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/MakeIndex
 '''
 

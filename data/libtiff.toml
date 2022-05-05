@@ -3,7 +3,7 @@
 expression = "libtiff"
 status = [ "approved" ]
 
-text = '''
+url = '''
 https://fedoraproject.org/wiki/Licensing/libtiff
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant
 '''

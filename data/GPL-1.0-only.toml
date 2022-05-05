@@ -3,7 +3,7 @@
 expression = "GPL-1.0-only"
 status = [ "approved" ]
 
-text = '''
+url = '''
 http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt
 '''
 
