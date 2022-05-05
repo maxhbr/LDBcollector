@@ -28,16 +28,34 @@ expression = ""
 # may have multiple listed.
 status = [ "" ]
 
-# Optional URL(s) to the license text or the contents of the license
-# itself.  This field is a multiline literal string.  For example:
+# Optional URL(s) to the license text.  This field is a multiline
+# literal string.  For example:
 #
-#     text = '''
+#     url = '''
 #     https://www.gnu.org/licenses/gpl-3.0-standalone.html
 #     https://www.gnu.org/licenses/autoconf-exception-3.0.html
 #     '''
 #
-# In cases where the license is not available online, you may put the
-# text of license in this multiline field.
+# This field is optional.
+#url = '''
+#'''
+
+# Optional full text of the license.  This field is a multiline
+# literal string.  For example:
+#
+#     text = '''
+#     Lorem ipsum dolor sit amet, consectetur adipiscing
+#     elit. Vestibulum aliquam eros enim, eu tristique nisi tempus
+#     et. Nunc erat lacus, consequat eget lacinia eleifend, rutrum a
+#     lectus. Aliquam et risus vitae lacus pellentesque
+#     pellentesque. Pellentesque facilisis tempor fermentum. Ut id
+#     aliquet nisl. Sed tincidunt lorem ut lorem maximus
+#     bibendum. Duis hendrerit sem sed nunc faucibus
+#     consectetur. Morbi augue tortor, placerat id quam quis, suscipit
+#     sodales lacus. Interdum et malesuada fames ac ante ipsum primis
+#     in faucibus. Maecenas eu sem volutpat, congue metus ac, finibus
+#     sapien. In at quam porta, rutrum augue nec, semper lectus.
+#     '''
 #
 # This field is optional.
 #text = '''

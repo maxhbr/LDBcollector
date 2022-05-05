@@ -156,6 +156,16 @@ if __name__ == "__main__":
 
             keys.remove("status")
 
+        if "url" in keys:
+            if not isinstance(data["license"]["url"], str):
+                sys.stderr.write(
+                    "*** %s has 'url' value not of string type in the [license] block\n"  # noqa: E501
+                    % licensefile.name
+                )
+                r = 1
+
+            keys.remove("url")
+
         if "text" in keys:
             if not isinstance(data["license"]["text"], str):
                 sys.stderr.write(
