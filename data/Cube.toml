@@ -18,7 +18,7 @@ abbreviation = [
 ]
 
 notes = '''
-Permissive license with requirement that you may not relicense the source code
-under any other license. Official site http://src.gnu-
-darwin.org/ports/games/assaultcube/work/AssaultCube/source/LICENSE
+Permissive license with requirement that you may not relicense the
+source code under any other license. Official site
+http://src.gnu-darwin.org/ports/games/assaultcube/work/AssaultCube/source/LICENSE
 '''

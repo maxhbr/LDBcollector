@@ -14,10 +14,6 @@ name = [
     "SGI Free Software License B 1.1 or older"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Version 2.0 is MIT, free and GPL compat.
 '''

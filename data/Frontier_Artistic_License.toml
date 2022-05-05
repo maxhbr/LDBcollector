@@ -4,17 +4,14 @@ expression = "LicenseRef-frontier-1.0"
 status = [ "not-approved" ]
 
 text = '''
-http://www.spinwardstars.com/frontier/fal.html  https://enterprise.dejacode.com/licenses/public/frontier-1.0/?_list_filters=q%3Dfrontier#license-text
+http://www.spinwardstars.com/frontier/fal.html
+https://enterprise.dejacode.com/licenses/public/frontier-1.0/?_list_filters=q%3Dfrontier#license-text
 '''
 
 [fedora]
 
 name = [
     "Frontier Artistic License"
-]
-
-abbreviation = [
-    ""
 ]
 
 notes = '''

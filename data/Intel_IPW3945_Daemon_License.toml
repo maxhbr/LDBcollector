@@ -13,10 +13,6 @@ name = [
     "Intel IPW3945 Daemon License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 No source permissions, binary EULA
 '''

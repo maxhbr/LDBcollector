@@ -13,10 +13,6 @@ name = [
     "MSNTP License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Commercial use restrictions
 '''

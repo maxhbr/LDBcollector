@@ -13,10 +13,6 @@ name = [
     "qmail License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 deprecated, qmail is now public domain
 '''

@@ -13,10 +13,6 @@ name = [
     "AMAP License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Additional restrictions are non-free and GPL incompatible
 '''

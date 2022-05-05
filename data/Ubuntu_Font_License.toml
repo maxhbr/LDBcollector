@@ -13,10 +13,6 @@ name = [
     "Ubuntu Font License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Poorly written, cannot actually use fonts
 '''

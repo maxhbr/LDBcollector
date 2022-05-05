@@ -13,10 +13,6 @@ name = [
     "CACert Root Distribution License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Liability disclaimer is actually use restriction
 '''

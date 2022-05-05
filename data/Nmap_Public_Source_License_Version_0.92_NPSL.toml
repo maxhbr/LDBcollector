@@ -14,10 +14,6 @@ name = [
     "Nmap Public Source License Version 0.92 (NPSL)"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 The "Proprietary software companies" text in the preamble is a field of use
 restriction.  note, DejaCode has 0.93 but calls it an exception. Neither that

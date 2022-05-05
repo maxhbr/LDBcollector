@@ -13,10 +13,6 @@ name = [
     "European Union Public License v1.0"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Non-free due to Article 13.
 '''

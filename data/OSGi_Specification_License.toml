@@ -13,10 +13,6 @@ name = [
     "OSGi Specification License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Forbids modification
 '''

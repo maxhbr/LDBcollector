@@ -13,10 +13,6 @@ name = [
     "Scilab License (OLD)"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Current versions of Scilab use the CeCILL license
 '''

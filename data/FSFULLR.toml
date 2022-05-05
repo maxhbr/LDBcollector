@@ -4,8 +4,7 @@ expression = "FSFULLR"
 status = [ "approved" ]
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention
-_Variant
+https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant
 '''
 
 [fedora]

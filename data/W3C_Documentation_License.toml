@@ -13,10 +13,6 @@ name = [
     "W3C Documentation License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Does not permit modification, different from W3C Software License
 '''

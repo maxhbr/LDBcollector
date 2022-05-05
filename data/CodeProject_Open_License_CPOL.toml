@@ -13,10 +13,6 @@ name = [
     "CodeProject Open License (CPOL)"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Unacceptable use restrictions
 '''

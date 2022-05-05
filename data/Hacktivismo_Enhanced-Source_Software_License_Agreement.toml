@@ -4,17 +4,14 @@ expression = "LicenseRef-hessla"
 status = [ "not-approved" ]
 
 text = '''
-http://www.hacktivismo.com/about/hessla.php  https://enterprise.dejacode.com/licenses/public/hessla/?_list_filters=q%3Dhacktivismo#license-text
+http://www.hacktivismo.com/about/hessla.php
+https://enterprise.dejacode.com/licenses/public/hessla/?_list_filters=q%3Dhacktivismo#license-text
 '''
 
 [fedora]
 
 name = [
     "Hacktivismo Enhanced-Source Software License Agreement"
-]
-
-abbreviation = [
-    ""
 ]
 
 notes = '''

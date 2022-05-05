@@ -13,10 +13,6 @@ name = [
     "Sun RPC License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Restrictions on modification, distribution
 '''

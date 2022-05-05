@@ -13,10 +13,6 @@ name = [
     "SGI GLX Public License 1.0"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 All GLX code now uses Free B 2.0
 '''

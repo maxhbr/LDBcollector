@@ -13,10 +13,6 @@ name = [
     "Sun Community Source License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 sounds familiar but link broken - DejaCode has https://enterprise.dejacode.com/licenses/public/scsl-3.0/?_list_filters=q%3Dsun%2Bcommunity#essentials
 webarchive didn't help - going with generic id

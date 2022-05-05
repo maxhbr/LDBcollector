@@ -4,7 +4,8 @@ expression = "BSD-2-Clause"
 status = [ "approved" ]
 
 text = '''
-http://creativecommons.org/licenses/BSD/  http://www.cryptix.org/LICENSE.TXT
+http://creativecommons.org/licenses/BSD/
+http://www.cryptix.org/LICENSE.TXT
 '''
 
 [fedora]

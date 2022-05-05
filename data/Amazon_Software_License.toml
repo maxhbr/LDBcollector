@@ -13,10 +13,6 @@ name = [
     "Amazon Software License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Section 3.3 is a clear field-of-use restriction
 '''

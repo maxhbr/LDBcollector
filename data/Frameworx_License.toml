@@ -13,10 +13,6 @@ name = [
     "Frameworx License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Non-free due to the limitation on charging for "Value-Added Services"
 '''

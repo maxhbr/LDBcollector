@@ -4,15 +4,7 @@ expression = "LGPL-2.0-or-later"
 status = [ "approved" ]
 
 text = '''
-A GPL or LGPL licensed package that lacks any statement of what version that
-it's licensed under in the source code/program output/accompanying docs is
-technically licensed under *any* version of the GPL or LGPL, not just the
-version in whatever COPYING file they include. Note that this is LGPLv2+, not
-LGPL+, because version 2 was the first version of LGPL. Note that this license
-was originally referred to as the GNU Library General Public License v2, but all
-current versions (v2.1 or newer) of the license are correctly known as the GNU
-Lesser General Public License.  http://www.gnu.org/licenses/old-
-licenses/lgpl-2.1.html
+http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 '''
 
 [fedora]
@@ -25,3 +17,15 @@ name = [
 abbreviation = [
     "LGPLv2+"
 ]
+
+notes = '''
+A GPL or LGPL licensed package that lacks any statement of what
+version that it's licensed under in the source code/program
+output/accompanying docs is technically licensed under *any* version
+of the GPL or LGPL, not just the version in whatever COPYING file they
+include. Note that this is LGPLv2+, not LGPL+, because version 2 was
+the first version of LGPL. Note that this license was originally
+referred to as the GNU Library General Public License v2, but all
+current versions (v2.1 or newer) of the license are correctly known as
+the GNU Lesser General Public License.
+'''

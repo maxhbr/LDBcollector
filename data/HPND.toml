@@ -4,8 +4,8 @@ expression = "HPND"
 status = [ "approved" ]
 
 text = '''
-http://opensource.org/licenses/historical.php  https://fedoraproject.org/wiki/Li
-censing:MIT?rd=Licensing/MIT#Old_Style_with_legal_disclaimer
+http://opensource.org/licenses/historical.php
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Old_Style_with_legal_disclaimer
 '''
 
 [fedora]

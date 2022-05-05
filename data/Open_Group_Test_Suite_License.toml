@@ -13,10 +13,7 @@ name = [
     "Open Group Test Suite License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
-Same flaws as Artistic 1.0  review w/Artistic
+Same flaws as Artistic 1.0
+review w/Artistic
 '''

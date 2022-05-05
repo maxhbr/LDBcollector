@@ -1,16 +1,12 @@
 [license]
 
-expression = ""
+expression = "LicenseRef-TORQUE"
 status = [ "not-approved" ]
 
 [fedora]
 
 name = [
     "TORQUE v2.5+ Software License v1.0"
-]
-
-abbreviation = [
-    ""
 ]
 
 notes = '''

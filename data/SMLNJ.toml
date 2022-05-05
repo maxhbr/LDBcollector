@@ -20,11 +20,11 @@ abbreviation = [
 ]
 
 notes = '''
-two license listed in Fedora with same text and same identifiers MLton and
-Standard ML of NJ  two license listed in Fedora with same text and same
-identifiers MLton and Standard ML of NJ  https://fedoraproject.org/wiki/Licensin
-g:MIT?rd=Licensing/MIT#Standard_ML_of_New_Jersey_Variant  There are other
-versions of this license that are more generic
-(http://www2.cs.tum.edu/projects/cup/) , without ""Lucent""; this license needs
-to be templated for the usual variables.
+two license listed in Fedora with same text and same identifiers MLton
+and Standard ML of NJ two license listed in Fedora with same text and
+same identifiers MLton and Standard ML of NJ
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Standard_ML_of_New_Jersey_Variant
+There are other versions of this license that are more generic
+(http://www2.cs.tum.edu/projects/cup/) , without ""Lucent""; this
+license needs to be templated for the usual variables.
 '''

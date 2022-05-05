@@ -13,10 +13,6 @@ name = [
     "unrar license"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Use restrictions, forced removal clause, see license page for details
 '''

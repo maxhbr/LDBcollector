@@ -13,10 +13,6 @@ name = [
     "Apple Quicktime License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 No source related permissions
 '''

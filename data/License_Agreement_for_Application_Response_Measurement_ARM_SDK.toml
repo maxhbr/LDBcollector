@@ -4,16 +4,11 @@ expression = "LicenseRef-ARM-SDK"
 status = [ "not-approved" ]
 
 text = '''
-https://fedoraproject.org/wiki/Licensing/ApplicationResponseMeasurementSDKLicens
-e
+https://fedoraproject.org/wiki/Licensing/ApplicationResponseMeasurementSDKLicense
 '''
 
 [fedora]
 
 name = [
     "License Agreement for Application Response Measurement (ARM) SDK"
-]
-
-abbreviation = [
-    ""
 ]

@@ -13,13 +13,9 @@ name = [
     "Apple Public Source License 1.2"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 This license is non-free. It used to live at
-http://www.opensource.apple.com/apsl/1.2.txt, but Apple has taken down all
-copies of the APSL prior to 2.0. This copy was taken from archive.org's copy
-from April 15, 2008.
+http://www.opensource.apple.com/apsl/1.2.txt, but Apple has taken down
+all copies of the APSL prior to 2.0. This copy was taken from
+archive.org's copy from April 15, 2008.
 '''

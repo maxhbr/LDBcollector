@@ -13,10 +13,6 @@ name = [
     "Terracotta Public License 1.0"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 Attribution requirements are burdensome, unclear, and potentially impossible to
 comply with (Section 14)

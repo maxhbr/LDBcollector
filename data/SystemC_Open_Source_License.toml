@@ -14,10 +14,6 @@ name = [
     "SystemC Open Source License"
 ]
 
-abbreviation = [
-    ""
-]
-
 notes = '''
 link broken, last time this page was recorded was before Accellera acquisition.
 DejaCode has 3.3. and mentions Accellera - might be the same as 3.0, didn't
