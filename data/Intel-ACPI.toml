@@ -1,7 +1,7 @@
 [license]
 
 expression = "Intel-ACPI"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/Intel_ACPI_Software_License_Agreement

@@ -1,7 +1,7 @@
 [license]
 
 expression = "OSL-1.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.opensource.org/licenses/osl-1.0.txt

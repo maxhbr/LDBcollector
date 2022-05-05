@@ -1,7 +1,7 @@
 [license]
 
 expression = "Zend-2.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.zend.com/license/2_00.txt

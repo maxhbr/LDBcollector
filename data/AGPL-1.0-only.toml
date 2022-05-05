@@ -1,7 +1,7 @@
 [license]
 
 expression = "AGPL-1.0-only"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.affero.org/oagpl.html

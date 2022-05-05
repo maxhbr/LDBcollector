@@ -1,7 +1,7 @@
 [license]
 
 expression = "SCEA"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://research.scea.com/scea_shared_source_license.html

@@ -1,7 +1,7 @@
 [license]
 
 expression = "CUA-OPL-1.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://opensource.org/licenses/cuaoffice.php

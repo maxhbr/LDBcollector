@@ -1,7 +1,7 @@
 [license]
 
 expression = "AGPL-3.0-only"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.fsf.org/licensing/licenses/agpl-3.0.html

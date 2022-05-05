@@ -1,7 +1,7 @@
 [license]
 
 expression = "etalab-2.0"
-status = [ "approved-content" ]
+status = [ "allowed-content" ]
 
 [fedora]
 

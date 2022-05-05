@@ -1,7 +1,7 @@
 [license]
 
 expression = "Giftware"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.talula.demon.co.uk/allegro/license.html

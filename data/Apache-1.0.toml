@@ -1,7 +1,7 @@
 [license]
 
 expression = "Apache-1.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.apache.org/licenses/LICENSE-1.0

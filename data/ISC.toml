@@ -1,7 +1,7 @@
 [license]
 
 expression = "ISC"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://www.isc.org/software/license

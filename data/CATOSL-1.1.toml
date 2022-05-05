@@ -1,7 +1,7 @@
 [license]
 
 expression = "CATOSL-1.1"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://opensource.org/licenses/ca-tosl1.1.php

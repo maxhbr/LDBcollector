@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-Romio"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/Romio_License

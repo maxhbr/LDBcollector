@@ -1,7 +1,7 @@
 [license]
 
 expression = "MirOS"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://mirbsd.de/MirOS-Licence

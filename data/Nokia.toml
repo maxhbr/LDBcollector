@@ -1,7 +1,7 @@
 [license]
 
 expression = "Nokia"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://opensource.org/licenses/nokia.html

@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-Spin"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://www.spinroot.com/spin/spin_license.html

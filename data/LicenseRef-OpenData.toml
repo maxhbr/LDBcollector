@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-OpenData"
-status = [ "approved-content" ]
+status = [ "allowed-content" ]
 
 [fedora]
 

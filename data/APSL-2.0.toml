@@ -1,7 +1,7 @@
 [license]
 
 expression = "APSL-2.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.opensource.apple.com/apsl/2.0.txt

@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-AHFL"
-status = [ "approved-fonts" ]
+status = [ "allowed-fonts" ]
 
 [fedora]
 

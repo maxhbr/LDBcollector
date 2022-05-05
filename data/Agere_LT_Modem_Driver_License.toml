@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-agere-sla"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/Agere_LT_Modem_Driver_License

@@ -1,7 +1,7 @@
 [license]
 
 expression = "Ruby"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.ruby-lang.org/en/LICENSE.txt

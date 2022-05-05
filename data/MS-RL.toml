@@ -1,7 +1,7 @@
 [license]
 
 expression = "MS-RL"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.microsoft.com/opensource/licenses.mspx#Ms-RL

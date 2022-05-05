@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-LPPL"
-status = [ "approved-fonts" ]
+status = [ "allowed-fonts" ]
 
 [fedora]
 

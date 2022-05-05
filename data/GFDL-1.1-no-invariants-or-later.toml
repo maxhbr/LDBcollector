@@ -1,7 +1,7 @@
 [license]
 
 expression = "GFDL-1.1-no-invariants-or-later"
-status = [ "approved-documentation" ]
+status = [ "allowed-documentation" ]
 
 [fedora]
 

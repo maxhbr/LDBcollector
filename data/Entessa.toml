@@ -1,7 +1,7 @@
 [license]
 
 expression = "Entessa"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://opensource.org/licenses/entessa.php

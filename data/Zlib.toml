@@ -1,7 +1,7 @@
 [license]
 
 expression = "Zlib"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.gzip.org/zlib/zlib_license.html

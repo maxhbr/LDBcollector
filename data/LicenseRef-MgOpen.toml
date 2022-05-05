@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-MgOpen"
-status = [ "approved-fonts" ]
+status = [ "allowed-fonts" ]
 
 [fedora]
 

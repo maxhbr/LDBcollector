@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-OpenMusic"
-status = [ "approved-content" ]
+status = [ "allowed-content" ]
 
 [fedora]
 

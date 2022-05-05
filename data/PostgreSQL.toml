@@ -1,7 +1,7 @@
 [license]
 
 expression = "PostgreSQL"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/PostgreSQL_License

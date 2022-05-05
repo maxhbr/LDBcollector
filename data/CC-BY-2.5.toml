@@ -1,7 +1,7 @@
 [license]
 
 expression = "CC-BY-2.5"
-status = [ "approved-content", "approved-documentation" ]
+status = [ "allowed-content", "allowed-documentation" ]
 
 [fedora]
 

@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-hessla"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://www.hacktivismo.com/about/hessla.php

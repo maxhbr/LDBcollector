@@ -1,7 +1,7 @@
 [license]
 
 expression = "LGPL-2.1-only"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 [fedora]
 

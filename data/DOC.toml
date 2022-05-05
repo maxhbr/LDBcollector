@@ -1,7 +1,7 @@
 [license]
 
 expression = "DOC"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.cs.wustl.edu/~schmidt/ACE-copying.html

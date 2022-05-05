@@ -1,7 +1,7 @@
 [license]
 
 expression = "W3C"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231

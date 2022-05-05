@@ -1,7 +1,7 @@
 [license]
 
 expression = "Zimbra-1.3"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://www.zimbra.com/license/zimbra-public-license-1-3.html

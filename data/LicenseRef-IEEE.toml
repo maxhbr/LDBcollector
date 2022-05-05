@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-IEEE"
-status = [ "approved-documentation" ]
+status = [ "allowed-documentation" ]
 
 [fedora]
 

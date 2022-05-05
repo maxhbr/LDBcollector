@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-mame"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://mamedev.org/legal.html

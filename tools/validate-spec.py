@@ -41,11 +41,11 @@ import sys
 import toml
 
 status_values = [
-    "approved",
-    "approved-content",
-    "approved-documentation",
-    "approved-fonts",
-    "not-approved",
+    "allowed",
+    "allowed-content",
+    "allowed-documentation",
+    "allowed-fonts",
+    "not-allowed",
 ]
 
 
@@ -130,9 +130,9 @@ if __name__ == "__main__":
                 )
                 r = 1
             elif isinstance(status, list):
-                if "not-approved" in status and len(status) > 1:
+                if "not-allowed" in status and len(status) > 1:
                     sys.stderr.write(
-                        "*** %s has 'not-approved' status combined with other status in the [license] block\n"  # noqa: E501
+                        "*** %s has 'not-allowed' status combined with other status in the [license] block\n"  # noqa: E501
                         % licensefile.name
                     )
                     r = 1

@@ -1,7 +1,7 @@
 [license]
 
 expression = "Linux-man-pages-copyleft"
-status = [ "approved-documentation" ]
+status = [ "allowed-documentation" ]
 
 [fedora]
 

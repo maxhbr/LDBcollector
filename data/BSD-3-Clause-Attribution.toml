@@ -1,7 +1,7 @@
 [license]
 
 expression = "BSD-3-Clause-Attribution"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution

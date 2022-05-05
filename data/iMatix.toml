@@ -1,7 +1,7 @@
 [license]
 
 expression = "iMatix"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://legacy.imatix.com/html/sfl/sfl4.htm#license

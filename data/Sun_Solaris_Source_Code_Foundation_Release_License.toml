@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-sun-ssscfr-1.1"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://www.mibsoftware.com/librock/librock/license/ssscfr.txt

@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-Charter"
-status = [ "approved-fonts" ]
+status = [ "allowed-fonts" ]
 
 [fedora]
 

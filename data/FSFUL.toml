@@ -1,7 +1,7 @@
 [license]
 
 expression = "FSFUL"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License

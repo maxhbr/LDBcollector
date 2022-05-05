@@ -1,7 +1,7 @@
 [license]
 
 expression = "JasPer-2.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.ece.uvic.ca/~mdadams/jasper/LICENSE

@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-Liberation"
-status = [ "approved-fonts" ]
+status = [ "allowed-fonts" ]
 
 [fedora]
 

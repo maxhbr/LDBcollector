@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-Intel"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/Intel_IPW3945_Daemon_License

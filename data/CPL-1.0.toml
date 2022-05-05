@@ -1,7 +1,7 @@
 [license]
 
 expression = "CPL-1.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.eclipse.org/legal/cpl-v10.html

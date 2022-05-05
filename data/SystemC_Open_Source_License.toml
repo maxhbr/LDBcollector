@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-SystemC-3.0"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://www.systemc.org/about/org_docs/license/

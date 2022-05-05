@@ -1,7 +1,7 @@
 [license]
 
 expression = "Dotseqn"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/Dotseqn

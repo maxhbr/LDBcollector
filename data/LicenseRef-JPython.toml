@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-JPython"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.jython.org/license.html

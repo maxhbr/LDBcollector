@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-DoubleStroke"
-status = [ "approved-fonts" ]
+status = [ "allowed-fonts" ]
 
 [fedora]
 

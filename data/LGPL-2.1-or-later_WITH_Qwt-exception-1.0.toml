@@ -1,7 +1,7 @@
 [license]
 
 expression = "LGPL-2.1-or-later WITH Qwt-exception-1.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://qwt.sourceforge.net/qwtlicense.html

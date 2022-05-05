@@ -1,7 +1,7 @@
 [license]
 
 expression = "EPL-1.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.eclipse.org/legal/epl-v10.html

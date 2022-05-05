@@ -1,7 +1,7 @@
 [license]
 
 expression = "AAL"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://opensource.org/licenses/attribution.php

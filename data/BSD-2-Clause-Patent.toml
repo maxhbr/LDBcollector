@@ -1,7 +1,7 @@
 [license]
 
 expression = "BSD-2-Clause-Patent"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/BSD-2-Clause-Patent

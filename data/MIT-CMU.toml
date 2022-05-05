@@ -1,7 +1,7 @@
 [license]
 
 expression = "MIT-CMU"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style

@@ -1,7 +1,7 @@
 [license]
 
 expression = "CPAL-1.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://www.socialtext.net/open/index.cgi?cpal_license_in_wikitext

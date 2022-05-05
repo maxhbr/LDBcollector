@@ -1,7 +1,7 @@
 [license]
 
 expression = "ANTLR-PD"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/ANTLR-PD

@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-aptana-1.0"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://aptana.com/legal/apl/

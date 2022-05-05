@@ -1,7 +1,7 @@
 [license]
 
 expression = "Vim"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://vimdoc.sourceforge.net/htmldoc/uganda.html

@@ -1,7 +1,7 @@
 [license]
 
 expression = "Artistic-1.0-Perl"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://www.perl.com/pub/a/language/misc/Artistic.html

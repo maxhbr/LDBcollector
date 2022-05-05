@@ -1,7 +1,7 @@
 [license]
 
 expression = "TMate"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://svnkit.com/license.html

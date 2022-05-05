@@ -1,7 +1,7 @@
 [license]
 
 expression = "NCSA"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://otm.illinois.edu/uiuc_openSource

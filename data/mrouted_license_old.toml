@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-stanford-mrouted"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/mrouted

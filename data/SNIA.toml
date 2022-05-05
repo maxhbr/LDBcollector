@@ -1,7 +1,7 @@
 [license]
 
 expression = "SNIA"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/SNIA_Public_License

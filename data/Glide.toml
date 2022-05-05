@@ -1,7 +1,7 @@
 [license]
 
 expression = "Glide"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.users.on.net/~triforce/glidexp/COPYING.txt

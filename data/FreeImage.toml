@@ -1,7 +1,7 @@
 [license]
 
 expression = "FreeImage"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://freeimage.sourceforge.net/freeimage-license.txt

@@ -1,7 +1,7 @@
 [license]
 
 expression = "SISSL"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.openoffice.org/licenses/sissl_license.html

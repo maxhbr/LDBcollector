@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-commons-clause"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/CommonsClause

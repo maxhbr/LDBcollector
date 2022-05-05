@@ -1,7 +1,7 @@
 [license]
 
 expression = "Naumen"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://opensource.org/licenses/naumen.php

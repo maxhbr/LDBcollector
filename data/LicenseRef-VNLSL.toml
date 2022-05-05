@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-VNLSL"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/Vita_Nuova_Liberal_Source_License

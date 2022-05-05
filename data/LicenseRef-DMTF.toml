@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-DMTF"
-status = [ "approved-content" ]
+status = [ "allowed-content" ]
 
 [fedora]
 

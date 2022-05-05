@@ -40,11 +40,11 @@ import sys
 import json
 import toml
 
-approved_values = [
-    "approved",
-    "approved-content",
-    "approved-documentation",
-    "approved-fonts",
+allowed_values = [
+    "allowed",
+    "allowed-content",
+    "allowed-documentation",
+    "allowed-fonts",
 ]
 
 
@@ -136,13 +136,13 @@ if __name__ == "__main__":
         if isinstance(status, str):
             if status in approved_values:
                 approved = "yes"
-            elif status == "not-approved":
+            elif status == "not-allowed":
                 approved = "no"
         elif isinstance(status, list):
             for s in status:
                 if s in approved_values:
                     approved = "yes"
-                elif s == "not-approved":
+                elif s == "not-allowed":
                     approved = "no"
 
         # field: 'spdx_abbrev'

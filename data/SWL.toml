@@ -1,7 +1,7 @@
 [license]
 
 expression = "SWL"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/SWL

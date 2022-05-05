@@ -1,7 +1,7 @@
 [license]
 
 expression = "Watcom-1.0"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://opensource.org/licenses/sybase.php

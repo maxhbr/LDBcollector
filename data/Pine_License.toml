@@ -1,7 +1,7 @@
 [license]
 
 expression = "LicenseRef-pine"
-status = [ "not-approved" ]
+status = [ "not-allowed" ]
 
 url = '''
 http://www.washington.edu/pine/overview/legal.html

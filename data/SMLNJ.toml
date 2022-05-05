@@ -1,7 +1,7 @@
 [license]
 
 expression = "SMLNJ"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#MLton_variant

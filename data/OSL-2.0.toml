@@ -1,7 +1,7 @@
 [license]
 
 expression = "OSL-2.0"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://www.nexb.com/license/LICENSE-OSL-2.0.html

@@ -1,7 +1,7 @@
 [license]
 
 expression = "BSD-2-Clause"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://creativecommons.org/licenses/BSD/

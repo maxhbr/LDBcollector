@@ -1,7 +1,7 @@
 [license]
 
 expression = "NRL"
-status = [ "approved" ]
+status = [ "allowed" ]
 
 url = '''
 http://web.mit.edu/network/isakmp/nrllicense.html

@@ -1,6 +1,6 @@
-# All of the files in this provide information about a single approved
-# Fedora license.  The file format is TOML and the sections allowed
-# are described below.  For information on the TOML standard, see
+# All of the files in this provide information about a single allowed
+# Fedora license.  The file format is TOML and the sections are
+# described below.  For information on the TOML standard, see
 # https://toml.io/en/
 
 # All files must provide a 'license' block.
@@ -19,13 +19,15 @@ expression = ""
 # The status identifiers for this license expression.  It is an array
 # of strings where each string may be any of:
 #
-#     approved
-#     not-approved
-#     approved-for-fonts
-#     approved-for-content
+#     allowed
+#     allowed-content
+#     allowed-documentation
+#     allowed-fonts
+#     not-allowed
 #
 # This is a required field.  At least one status is required, but a license
-# may have multiple listed.
+# may have multiple listed.  Note that "not-allowed" should not be combined
+# with any allowed statuses.
 status = [ "" ]
 
 # Optional URL(s) to the license text.  This field is a multiline
