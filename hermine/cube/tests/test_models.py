@@ -5,7 +5,7 @@
 
 from django.test import TestCase
 
-from cube.models import Product
+from cube.models import Product, Component, Version
 
 
 # Models TestCases
@@ -21,3 +21,13 @@ class ProductTest(TestCase):
         p = self.create_product()
         self.assertTrue(isinstance(p, Product))
         self.assertEqual(p.__str__(), p.name)
+
+
+class ComponentTestCase(TestCase):
+    def test_version_purl_updates_component_repo(self):
+        component = Component.objects.create(name="component")
+        Version.objects.create(
+            component=component, version_number="1", purl="pkg:npm/namespace/package@1"
+        )
+        component.refresh_from_db()
+        self.assertEqual(component.package_repo, "npm")
