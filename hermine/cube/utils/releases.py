@@ -13,9 +13,7 @@ from cube.utils.licenses import (
 
 def validate_step_1(release):
     """
-    Looking for licenses that haven't been normalized, that is to say the ones
-    that do not have a name fitting SPDX standards or that do not have been
-    manually corrected.
+    Check for licenses that haven't been normalized.
     """
     context = dict()
     unnormalized_usages = release.usage_set.all().filter(

@@ -210,8 +210,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_1(self, pk, **kwargs):
         """
-        API endpoint that allows to know if the Unnormalised Usages (Validation Step 1)
-        Can be found at 'api/releases/52/validation_1/'
+        Check for licenses that haven't been normalized.
         """
         response = {}
         release = self.get_object()
@@ -226,10 +225,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_2(self, pk, **kwargs):
         """
-        API endpoint that allows to know the Licenses that need to be checked or created
-        (Validation Step 2)
-
-        Can be found at 'api/releases/52/validation_2/'
+        Check that all the licences in a release have been created and checked.
         """
         response = {}
         release = self.get_object()
@@ -241,16 +237,26 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(response)
 
     @action(detail=True, methods=["get"])
-    def validation_4(self, pk, **kwargs):
+    def validation_3(self, pk, **kwargs):
         """
-        API endpoint that allows to know if every License Usage have been specified for
-        complex SPDX expressions -i.a. the ones that have more than 1 SPDX identifier in
-        it- (Validation Step 3)
-
-        Can be found at 'api/releases/52/validation_4/'
+        Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
         """
         response = {}
-        # This kwargs has a strange name, it's DRF fault
+        release = self.get_object()
+
+        response["valid"], context = validate_step_3(release)
+        response["to_confirm"] = VersionSerializer(
+            context["to_confirm"], many=True
+        ).data
+
+        return Response(response)
+
+    @action(detail=True, methods=["get"])
+    def validation_4(self, pk, **kwargs):
+        """
+        Check all licenses choices are done.
+        """
+        response = {}
         release = self.get_object()
 
         response["valid"], context = validate_step_4(release)
@@ -262,16 +268,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_5(self, pk, **kwargs):
         """
-        API endpoint that allows to know the Licenses that need or have a derogation
-        (Validation Step 4).
-
-        5 fields are populated with different models
-        `usages_lic_red` : Usage
-        `usages_lic_orange` : Usage
-        `usages_lic_grey` : Usage
-        `involved_lic` : License
-        `derogations` : Derogation
-        Can be found at 'api/releases/52/validation_5/'
+        Check that the licences are compatible with policy.
         """
         response = {}
         release = self.get_object()
