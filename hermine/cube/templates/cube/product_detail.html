@@ -33,14 +33,15 @@ SPDX-License-Identifier: AGPL-3.0-only
   </thead>
   <tbody>
 {% for release in product.releases.all %}
-  <a href="{% url 'cube:release_synthesis' release.id %}">
+  <a href="{% url 'cube:release_detail' release.id %}">
     <tr>
       <td>{{product.name}}</td>
-      <td> <a href="{% url 'cube:release_synthesis' release.id %}">{{release.release_number}} </a> </td>
+      <td> <a href="{% url 'cube:release_detail' release.id %}">{{release.release_number}} </a> </td>
       <td>{{release.ship_status}}</td>
       <td>{{release.usage_set.all|length}}</td>
       <td><progress class="progress is-primary" value="{{release.valid_step|default:1}}" max="5">15%</progress></td>
-      <td><a href="{% url 'cube:release_synthesis' release.id %}"><i class="fas fa-info-circle"></i></a> |
+      <td><a href="{% url 'cube:release_detail' release.id %}"><i class="fas fa-info-circle"></i></a> |
+        <a href="{%  url "cube:release_bom" release.id %}"><i class="fas fa-upload"></i></a> |
         <a href="/admin/cube/release/{{release.id}}" target="_blank"><i class="far fa-edit"></i></a></td>
 
     </tr>

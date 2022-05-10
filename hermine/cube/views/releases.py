@@ -12,6 +12,8 @@ from django.urls import reverse
 from django.views import generic
 from django.views.generic import UpdateView
 
+from cube.forms import ImportBomForm
+from cube.importers import import_ort_evaluated_model_json_file, import_spdx_file
 from cube.models import (
     Release,
     Usage,
@@ -49,13 +51,30 @@ class ReleaseView(LoginRequiredMixin, generic.DetailView):
         }
 
 
-class ReleaseBomView(LoginRequiredMixin, generic.DetailView):
+class ReleaseBomView(LoginRequiredMixin, UpdateView):
     model = Release
+    form_class = ImportBomForm
+    context_object_name = "release"
     template_name = "cube/release_bom.html"
+    import_status = None
+
+    def form_valid(self, form):
+        self.import_status = "success"
+        try:
+            if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
+                import_ort_evaluated_model_json_file(
+                    self.request.FILES["file"], self.object.pk
+                )
+            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_SPDX:
+                import_spdx_file(self.request.FILES["file"], self.object.pk)
+        except:  # noqa: E722 TODO
+            self.import_status = "error"
+
+        return super().render_to_response(self.get_context_data(form=form))
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return context
+        kwargs["import_status"] = self.import_status
+        return super().get_context_data(**kwargs)
 
 
 class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
@@ -188,7 +207,7 @@ def release_send_derogation(request, release_id, usage_id):
         )
         derogation.save()
 
-    response = redirect("cube:release_synthesis", release_id)
+    response = redirect("cube:release_detail", release_id)
     return response
 
 
@@ -296,5 +315,5 @@ def release_send_choice(request, release_id, usage_id):
         defaults={"expression_out": expression_out, "explanation": explanation},
     )
 
-    response = redirect("cube:release_synthesis", release_id)
+    response = redirect("cube:release_detail", release_id)
     return response
