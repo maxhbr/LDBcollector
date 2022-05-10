@@ -6,6 +6,7 @@
 from datetime import datetime
 import json
 
+from django.db import transaction
 from rest_framework.parsers import JSONParser
 from spdx.parsers import (
     jsonparser,
@@ -194,8 +195,12 @@ def import_ort_file(json_file, release_id):
             print("NO SCOPES FOR Project Id", project["id"])
 
 
-def import_ort_evaluated_model_json_file(json_file, release_id):
+@transaction.atomic()
+def import_ort_evaluated_model_json_file(json_file, release_idk, replace=False):
     data = json.load(json_file)
+
+    if replace:
+        Usage.objects.filter(release=release_idk).delete()
 
     for package in data["packages"]:
         if package["is_project"]:
@@ -355,12 +360,17 @@ def import_yocto_file(manifest_file, release_id):
     print("Importing yocto data, ending :", datetime.now())
 
 
-def import_spdx_file(spdx_file, release_id):
+@transaction.atomic()
+def import_spdx_file(spdx_file, release_id, replace=False):
     # Importing SPDX BOM yaml
     print("SPDX import started", datetime.now())
     document, error = parse_spdx_file(spdx_file)
     if error:
         print("SPDX file contains errors (printed above), but import continues…")
+
+    if replace:
+        Usage.objects.filter(release=release_id).delete()
+
     for package in document.packages:
         current_scope = "Global"
         comp_name = package.name.rsplit("@")[0]

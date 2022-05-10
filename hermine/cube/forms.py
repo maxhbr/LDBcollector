@@ -22,8 +22,17 @@ class ImportBomForm(forms.ModelForm):
         (BOM_ORT, "ORT Bill of Materials"),
         (BOM_SPDX, "SPDX Bill of Materials"),
     )
+    IMPORT_MODE_MERGE = "Merge"
+    IMPORT_MODE_REPLACE = "Replace"
+    IMPORT_MODE_CHOICES = (
+        (IMPORT_MODE_REPLACE, "Replace all currently saved component usages"),
+        (IMPORT_MODE_MERGE, "Add new component usages while keeping previous ones"),
+    )
     bom_type = forms.ChoiceField(label="File format", choices=BOM_CHOICES)
     file = forms.FileField()
+    import_mode = forms.ChoiceField(
+        choices=IMPORT_MODE_CHOICES, widget=forms.RadioSelect
+    )
 
     class Meta:
         model = Release
