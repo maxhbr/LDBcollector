@@ -19,11 +19,41 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, re_path
+
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
+schema_view = get_schema_view(
+    openapi.Info(
+        title="Hermine API",
+        default_version="v1",
+        description="Hermine Rest API description...",
+        # terms_of_service="https://hermine-foss.org/",
+        contact=openapi.Contact(email="hermine@inno3.fr"),
+        license=openapi.License(name="AGPL-3.0-only"),
+    ),
+    public=False,
+    permission_classes=[permissions.IsAuthenticated],
+)
 
 urlpatterns = [
     path("", include("cube.urls")),
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
     path("oauth/", include("social_django.urls", namespace="social")),
+    re_path(
+        r"^swagger(?P<format>\.json|\.yaml)$",
+        schema_view.without_ui(cache_timeout=0),
+        name="schema-json",
+    ),
+    re_path(
+        r"^swagger/$",
+        schema_view.with_ui("swagger", cache_timeout=0),
+        name="schema-swagger-ui",
+    ),
+    re_path(
+        r"^redoc/$", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"
+    ),
 ]
