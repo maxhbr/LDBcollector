@@ -125,8 +125,9 @@ licenses_to_create
 
 ### Step 3
 
-Not implemented yet
+Can be found at 'api/releases/int:release_id/validation_3/'
 
+Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
 
 ### Step 4
 

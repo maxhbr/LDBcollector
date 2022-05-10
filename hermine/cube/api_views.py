@@ -7,7 +7,9 @@ from functools import reduce
 from itertools import groupby
 
 from django.db.models import Q
+from django.http import HttpResponse
 from django_filters import rest_framework as filters, CharFilter
+from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -51,6 +53,7 @@ from .utils.releases import (
     validate_step_2,
     validate_step_4,
     validate_step_5,
+    validate_step_3,
 )
 
 
@@ -210,15 +213,14 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_1(self, pk, **kwargs):
         """
-        API endpoint that allows to know if the Unnormalised Usages (Validation Step 1)
-        Can be found at 'api/releases/52/validation_1/'
+        Check for licenses that haven't been normalized.
         """
         response = {}
         release = self.get_object()
 
         response["valid"], context = validate_step_1(release)
         response["unnormalized_usages"] = UsageSerializer(
-            context["unormalized_usages"], many=True
+            context["unnormalized_usages"], many=True
         ).data
 
         return Response(response)
@@ -226,10 +228,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_2(self, pk, **kwargs):
         """
-        API endpoint that allows to know the Licenses that need to be checked or created
-        (Validation Step 2)
-
-        Can be found at 'api/releases/52/validation_2/'
+        Check that all the licences in a release have been created and checked.
         """
         response = {}
         release = self.get_object()
@@ -241,16 +240,26 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(response)
 
     @action(detail=True, methods=["get"])
-    def validation_4(self, pk, **kwargs):
+    def validation_3(self, pk, **kwargs):
         """
-        API endpoint that allows to know if every License Usage have been specified for
-        complex SPDX expressions -i.a. the ones that have more than 1 SPDX identifier in
-        it- (Validation Step 3)
-
-        Can be found at 'api/releases/52/validation_4/'
+        Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
         """
         response = {}
-        # This kwargs has a strange name, it's DRF fault
+        release = self.get_object()
+
+        response["valid"], context = validate_step_3(release)
+        response["to_confirm"] = VersionSerializer(
+            context["to_confirm"], many=True
+        ).data
+
+        return Response(response)
+
+    @action(detail=True, methods=["get"])
+    def validation_4(self, pk, **kwargs):
+        """
+        Check all licenses choices are done.
+        """
+        response = {}
         release = self.get_object()
 
         response["valid"], context = validate_step_4(release)
@@ -262,16 +271,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_5(self, pk, **kwargs):
         """
-        API endpoint that allows to know the Licenses that need or have a derogation
-        (Validation Step 4).
-
-        5 fields are populated with different models
-        `usages_lic_red` : Usage
-        `usages_lic_orange` : Usage
-        `usages_lic_grey` : Usage
-        `involved_lic` : License
-        `derogations` : Derogation
-        Can be found at 'api/releases/52/validation_5/'
+        Check that the licences are compatible with policy.
         """
         response = {}
         release = self.get_object()
@@ -287,6 +287,59 @@ class ReleaseViewSet(viewsets.ModelViewSet):
                 response[field] = DerogationSerializer(value, many=True).data
 
         return Response(response)
+
+    @action(
+        detail=True,
+        methods=["get"],
+    )
+    def junit(self, pk, **kwargs):
+        release = self.get_object()
+
+        step1 = TestCase(
+            "Usage normalization",
+        )
+        valid, context = validate_step_1(release)
+        if not valid:
+            step1.add_failure_info(
+                message=f"{len(context['unnormalized_usages'])} usages are not normalized/"
+            )
+
+        step2 = TestCase("Licenses")
+        valid, context = validate_step_2(release)
+        if not valid:
+            if len(context["licenses_to_check"]) > 0:
+                step2.add_failure_info(
+                    message=f"{len(context['licenses_to_check'])} licenses must be checked"
+                )
+            if len(context["licenses_to_create"]) > 0:
+                step2.add_failure_info(
+                    message=f"{len(context['licenses_to_create'])} licenses must be created"
+                )
+
+        step4 = TestCase("License choices")
+        valid, context = validate_step_4(release)
+        if not valid:
+            step4.add_failure_info(
+                f"{len(context['to_resolve'])} licenses choices to resolve"
+            )
+
+        step5 = TestCase("Policy compatibility")
+        valid, context = validate_step_5(release)
+        if not valid:
+            count = (
+                len(context["usages_lic_red"])
+                + len(context["usages_lic_orange"])
+                + len(context["usages_lic_grey"])
+            )
+            step5.add_failure_info(f"{count} invalid component usages")
+
+        ts = TestSuite(
+            f"{release} Hermine validation steps", [step1, step2, step4, step5]
+        )
+
+        return HttpResponse(
+            content=to_xml_report_string([ts]), content_type="application/xml"
+        )
 
     @action(detail=True, methods=["get"])
     def obligations(self, pk, **kwargs):
@@ -320,7 +373,7 @@ class UploadSPDXViewSet(viewsets.ViewSet):
         spdx_file = request.FILES.get("spdx_file")
         release_id = request.POST.get("release_id")
         content_type = spdx_file.content_type
-        import_spdx_file(spdx_file, release_id)
+        import_spdx_file(spdx_file, release_id, request.POST.get("replace", False))
         response = "POST API and you have uploaded a {} file".format(content_type)
         return Response(response)
 
@@ -345,7 +398,9 @@ class UploadORTViewSet(viewsets.ViewSet):
         release_id = request.POST.get("release_id")
         if ort_file is not None:
             content_type = ort_file.content_type
-            import_ort_evaluated_model_json_file(ort_file, release_id)
+            import_ort_evaluated_model_json_file(
+                ort_file, release_id, request.POST.get("replace", False)
+            )
             response = "POST API and you have uploaded a {} file".format(content_type)
         else:
             response = "You forgot to upload a file !"
