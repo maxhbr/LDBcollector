@@ -21,7 +21,7 @@ def validate_step_1(release):
     unnormalized_usages = release.usage_set.all().filter(
         version__spdx_valid_license_expr="", version__corrected_license=""
     )
-    context["unormalized_usages"] = unnormalized_usages
+    context["unnormalized_usages"] = unnormalized_usages
     context["nb_validated_components"] = len(release.usage_set.all()) - len(
         unnormalized_usages
     )

@@ -23,6 +23,7 @@ spdx-tools = "0.7.0a3"
 social-auth-app-django = "^5.0.0"
 django-filter = "^21.1"
 drf-yasg = "^1.20.0"
+junit-xml = "^1.9"
 
 [tool.poetry.dev-dependencies]
 Sphinx = "^4.2.0"
