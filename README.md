@@ -57,7 +57,7 @@ For this reason, **all development must occur either in branch `dev`, or (prefer
 
 ### Build Tasks
 
-`live-comb` uses [`tools.build`](https://clojure.org/guides/tools_build). You can get a list of available tasks by running:
+`lice-comb` uses [`tools.build`](https://clojure.org/guides/tools_build). You can get a list of available tasks by running:
 
 ```
 clojure -A:deps -T:build help/doc
