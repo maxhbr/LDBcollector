@@ -65,3 +65,8 @@ You can then point your browser to [http://127.0.0.1:8080/admin/](http://127.0.0
 and log in as superuser to create new users, or directly to [http://127.0.0.1:8080](http://127.0.0.1:8080) to use the application.
 
 
+## OAuth
+
+You can configure OAuth by configuring OAUTH_CLIENT entry in the mysecrets.py file.
+
+Users will be created on the fly at authentication by the OAuth server.
