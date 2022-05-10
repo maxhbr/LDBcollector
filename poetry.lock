@@ -624,7 +624,7 @@ defusedxml = "*"
 name = "packageurl-python"
 version = "0.9.9"
 description = "A purl aka. Package URL parser and builder"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -1238,7 +1238,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "f7006255da8e7992c48409044e1eba11d56d2dd902e60f7406b5d973e4f5755d"
+content-hash = "d6e5bf7e55e4db649f420030bf862df90fb07799e61f933303d6ccd071ab8eaa"
 
 [metadata.files]
 alabaster = [
