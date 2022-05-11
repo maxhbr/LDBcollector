@@ -2,6 +2,7 @@
 %global tag HEAD
 
 Name:           fedora-license-data
+Version:        1.0
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
