@@ -13,6 +13,20 @@ ___
 ___
 
 
+### LG Hamburg, Urteil v. 10.12.2020, Az. 310 O 62/20
+
+Vertragsstrafe bei Verletzung von CC-BY-SA 2.0
+
+Link: https://www.landesrecht-hamburg.de/bsha/document/JURE210002255
+
+
+### AG Hamburg, Urteil v. 06.10.2020, Az. 18b C 500/19
+
+Unwirksame Abmahnung bei Verletzung von CC-BY-SA 2.0, Notwendigkeit Einschaltung eines Rechtsanwaltes
+
+Link: https://www.landesrecht-hamburg.de/bsha/document/KORE550402021
+
+
 ### AG Aschaffenburg, Urteil v. 23.07.2020, Az. 34 C 2436/19
 
 Negative Feststellungsklage bei Abmahnung wegen CC-BY-SA 3.0 DE, "Cityscape Berlin"
@@ -85,6 +99,13 @@ Keine wirksame Abmahnung bei Geltendmachung einer Verletzung einer Creative Comm
 Link: www.ifross.org/Fremdartikel/AG_Kiel_Urteil_111C7-17.pdf
 
 
+### OLG Köln, Urteil v. 13.04.2018, Az. 6 U 131/17
+
+Kein Schadensersatzanspruch bei Verletzung von Creative Commons Lizenz
+
+Link: https://www.justiz.nrw.de/nrwe/olgs/koeln/j2018/6_U_131_17_Urteil_20180413.html
+
+
 ### AG Bochum, Urteil v. 11.04.2018, Az. 70 C 471/17
 
 Kommerzielle Nutzung von Werken unter CC-BY-NC 3.0 und Höhe Schadensersatz EUR 100,- 
@@ -118,6 +139,13 @@ Link: https://dejure.org/ext/f812818c4cb65cf07438646d5442c684
 Feststellungsklage stattgegeben wg Schadensersatz bei Verletzung von CC BY-SA 3.0
 
 Link: http://www.ifross.org/Fremdartikel/AG_Koeln_Urteil_148C307-16.pdf
+
+
+### LG Köln, Urteil v. 01.09.2016, Az. 14 O 307/15
+
+Unterlassung und Schadensersatz bei Verletzung von CC BY-SA 3.0
+
+Link: https://www.justiz.nrw.de/nrwe/lgs/koeln/lg_koeln/j2016/14_O_307_15_Urteil_20160901.html
 
 
 ### OLG Köln, Urteil v. 29.06.2016, Az. 6 W 72/16
