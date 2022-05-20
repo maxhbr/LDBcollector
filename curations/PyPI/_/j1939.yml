@@ -1,0 +1,5 @@
+- id: "PyPI::j1939:"
+  curations:
+    comment: The correct VCS URL was found via https://pypi.org/project/j1939/.
+    vcs:
+      url: https://github.com/benkfra/j1939.git
