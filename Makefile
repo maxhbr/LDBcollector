@@ -7,7 +7,7 @@ DESTDIR ?=
 PREFIX  ?= /usr
 DATADIR ?= /usr/share
 
-all: validate json
+all: spec-validate json
 
 validate: toml-validate spec-validate
 
