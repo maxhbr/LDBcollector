@@ -134,13 +134,13 @@ if __name__ == "__main__":
         status = data["license"]["status"]
 
         if isinstance(status, str):
-            if status in approved_values:
+            if status in allowed_values:
                 approved = "yes"
             elif status == "not-allowed":
                 approved = "no"
         elif isinstance(status, list):
             for s in status:
-                if s in approved_values:
+                if s in allowed_values:
                     approved = "yes"
                 elif s == "not-allowed":
                     approved = "no"

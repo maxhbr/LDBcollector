@@ -1,5 +1,6 @@
 %global forgeurl https://gitlab.com/fedora/legal/fedora-license-data
-%global tag HEAD
+%global commit c0df6cfe
+%forgemeta
 
 Name:           fedora-license-data
 Version:        1.0
@@ -8,7 +9,7 @@ Summary:        Fedora Linux license data
 
 License:        BSD-3-Clause AND CC0-1.0
 URL:            %{forgeurl}
-Source0:        %{forgesource}
+Source0:        https://gitlab.com/fedora/legal/%{name}/-/archive/%{commit}/%{name}-%{commit}.tar.gz
 
 BuildRequires:  make
 BuildRequires:  python3
@@ -29,7 +30,7 @@ The Fedora Legal team is responsible for this project.
 
 
 %prep
-%forgesetup
+%setup -q -n %{name}-%{commit}
 
 
 %build
