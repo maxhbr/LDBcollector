@@ -17,7 +17,7 @@ ___
 
 Keine Einhaltung von Lizenzbedingungen von CC-BY-SA-3.0 auf Twitter und Facebook durch Verlinkung, Notwendigkeit der eigenen Erfüllung der Lizenzpflichtenim Sochial-Media-Beitrag
 
-Link: www.ifross.org/Fremdartikel/OLG_Muenchen_Urteil_6_U_4750_20.pdf
+Link: https://www.ifross.org/Fremdartikel/OLG_Muenchen_Urteil_6_U_4750_20.pdf
 
 
 ### LG Hamburg, Urteil v. 10.12.2020, Az. 310 O 62/20
