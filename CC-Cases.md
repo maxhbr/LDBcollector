@@ -15,7 +15,7 @@ ___
 
 ### OLG München, Urteil v. 20.05.2021, Az. 6 U 4750/20
 
-Keine Einhaltung von Lizenzbedingungen von CC-BY-SA-3.0 auf Twitter und Facebook durch Verlinkung, Notwendigkeit der eigenen Erfüllung der Lizenzpflichtenim Sochial-Media-Beitrag
+Keine Einhaltung von Lizenzbedingungen von CC-BY-SA-3.0 auf Twitter und Facebook durch Verlinkung, Notwendigkeit der eigenen Erfüllung der Lizenzpflichten im Social-Media-Beitrag
 
 Link: https://www.ifross.org/Fremdartikel/OLG_Muenchen_Urteil_6_U_4750_20.pdf
 
