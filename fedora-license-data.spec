@@ -10,6 +10,7 @@ Summary:        Fedora Linux license data
 License:        BSD-3-Clause AND CC0-1.0
 URL:            %{forgeurl}
 Source0:        https://gitlab.com/fedora/legal/%{name}/-/archive/%{commit}/%{name}-%{commit}.tar.gz
+BuildArch:      noarch
 
 BuildRequires:  make
 BuildRequires:  python3
