@@ -132,18 +132,14 @@ if __name__ == "__main__":
 
         # field: 'approved'
         status = data["license"]["status"]
-
         if isinstance(status, str):
-            if status in allowed_values:
+            status = [status]
+
+        for s in status:
+            if s in allowed_values:
                 approved = "yes"
-            elif status == "not-allowed":
+            elif s == "not-allowed":
                 approved = "no"
-        elif isinstance(status, list):
-            for s in status:
-                if s in allowed_values:
-                    approved = "yes"
-                elif s == "not-allowed":
-                    approved = "no"
 
         # field: 'spdx_abbrev'
         spdx_abbrev = data["license"]["expression"]
@@ -162,7 +158,8 @@ if __name__ == "__main__":
         # sanity check
         assert isinstance(approved, str)
         assert isinstance(fedora_names, str) or isinstance(fedora_names, list)
-        assert isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)  # noqa: E501
+        assert (isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
+               ("not-allowed" in status)   # noqa: E501
         assert isinstance(spdx_abbrev, str)
 
         # add these keys to the main hash table
