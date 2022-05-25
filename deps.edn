@@ -22,7 +22,7 @@
     org.clojure/data.xml                  {:mvn/version "0.2.0-alpha6"}
     cheshire/cheshire                     {:mvn/version "5.10.2"}
     clj-xml-validation/clj-xml-validation {:mvn/version "1.0.2"}
-    camel-snake-kebab/camel-snake-kebab   {:mvn/version "0.4.2"}
+    camel-snake-kebab/camel-snake-kebab   {:mvn/version "0.4.3"}
     tolitius/xml-in                       {:mvn/version "0.1.1"}
 ;    org.spdx/java-spdx-library            {:mvn/version "1.0.8"}    ; For future SPDX file support (perhaps...)
    }
