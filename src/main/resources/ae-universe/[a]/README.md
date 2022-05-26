@@ -167,4 +167,4 @@ All company names, organization names, license names, and product names mentione
 
 SPDX-License-Identifier: CC-BY-4.0
 
-SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
