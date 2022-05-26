@@ -13,6 +13,5 @@ alternativeNames:
   - "MIT No Attribution"
 
 otherIds: 
-  - "scancode:ekioh"
-  - "scancode:pd-mit"
-  - "scancode:tigra-calendar-4.0"
+  - "osi:MIT-0"
+  - "scancode:mit-0"

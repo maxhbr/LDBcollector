@@ -58,6 +58,7 @@ alternativeNames:
   - "gpl_v3"
   - "GPL V3"
   - "GNU General Public License\" .SS \"Version 3"
+  - "GNU General Public License as published by the Free Software Foundation; version 3"
 
 otherIds: 
   - "scancode:gpl-3.0"

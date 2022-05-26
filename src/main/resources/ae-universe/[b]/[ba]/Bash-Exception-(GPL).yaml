@@ -1,0 +1,11 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Bash Exception (GPL)"
+category: "GPL Bash Exception"
+shortName: "Bash-Exception-GPL"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:bash-exception-gpl"

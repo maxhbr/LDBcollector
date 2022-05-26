@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Linking Exception (LGPL)"
+category: "LGPL Linking Exception"
+shortName: "Linking-Exception-LGPL"
+spdxIdentifier: "LGPL-3.0-linking-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:lgpl-3.0-linking-exception"

@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Trolltech Exception 1.2 (GPL)"
+category: "GPL Trolltech Exception"
+shortName: "Trolltech-Exception-1.2-GPL"
+
+type: "exception"
+
+alternativeNames:
+  - "Trolltech GPL Exception version 1.2"
+
+otherIds: 
+  - "scancode:trolltech-gpl-exception-1.2"

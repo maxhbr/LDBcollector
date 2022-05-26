@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "Carnegie Mellon UC Regents MIT-style License"
 category: "Carnegie Mellon UC Regents MIT-style License"
-shortName: "CMU-MIT"
+spdxIdentifier: "MIT-CMU"
 
 alternativeNames:
   - "cmu-mit"

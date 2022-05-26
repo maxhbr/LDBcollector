@@ -8,3 +8,5 @@ shortName: "PT-hpdarm"
 alternativeNames:
   - "Permission Terms (hpdarm)"
 
+otherIds: 
+  - "scancode:hdparm"

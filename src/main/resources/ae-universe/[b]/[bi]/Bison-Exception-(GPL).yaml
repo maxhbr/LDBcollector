@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Bison Exception (GPL)"
+category: "GPL Bison Exception"
+shortName: "Bison-Exception-GPL"
+spdxIdentifier: "Bison-exception-2.2"
+
+type: "exception"
+
+alternativeNames:
+  - "BISON-EXCEPTION"
+  - "BISON EXCEPTION"
+  - "BISON Exception"
+  - "Bison-exception-2.2"
+
+otherIds: 
+  - "scancode:bison-exception-2.2"

@@ -5,3 +5,5 @@ canonicalName: "JBossORG Eula"
 category: "JBoss"
 shortName: "JBoss-ORG"
 
+otherIds: 
+  - "scancode:jboss-eula"

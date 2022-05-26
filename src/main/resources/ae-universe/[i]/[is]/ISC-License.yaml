@@ -9,6 +9,8 @@ alternativeNames:
   - "ISC License"
   - "ISC Terms"
   - "ISC Permission"
+  - "isc license"
+  - "'init-license': 'ISC'"
 
 otherIds: 
   - "scancode:isc"

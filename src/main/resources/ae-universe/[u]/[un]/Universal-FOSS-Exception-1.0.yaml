@@ -3,6 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "Universal FOSS Exception 1.0"
 category: "Universal FOSS Exception"
+shortName: "Universal-FOSS-Exception-1.0"
 spdxIdentifier: "Universal-FOSS-exception-1.0"
 
 type: "exception"

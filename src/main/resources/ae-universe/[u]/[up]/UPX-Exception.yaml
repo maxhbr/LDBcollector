@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "UPX Exception"
-category: "UPX"
-shortName: "UPX-"
+category: "UPX Exception"
+shortName: "UPX-Exception"
 
 type: "exception"
 

@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
 canonicalName: "GNU Lesser General Public License 2.1 (or any later version; with Qwt exception 1.0)"
 category: "LGPL+Qwt"
-shortName: "LGPL-2.1+Qwt-1.0"
+shortName: "LGPL-2.1+Qwt-Exception-1.0"
 
 otherIds: 
   - "scancode:qwt-1.0"

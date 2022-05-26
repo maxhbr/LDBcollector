@@ -8,7 +8,7 @@ spdxIdentifier: "AFL-3.0"
 alternativeNames:
   - "AFL, Version 3.0"
   - "AFL, 3.0"
-  - "AFL-3.0"
+  - "AFL-3"
 
 otherIds: 
   - "scancode:afl-3.0"

@@ -6,7 +6,10 @@ category: "Elastic"
 spdxIdentifier: "Elastic-2.0"
 
 alternativeNames:
-  - "Elastic License 2.0"
+  - "Elastic 2.0"
+  - "Elastic v2.0"
+  - "Elastic License v2.0"
+  - "Elastic License Version 2.0"
 
 otherIds: 
   - "scancode:elastic-license-v2"

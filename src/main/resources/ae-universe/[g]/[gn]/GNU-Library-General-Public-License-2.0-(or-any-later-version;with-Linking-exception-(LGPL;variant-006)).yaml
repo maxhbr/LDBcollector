@@ -1,0 +1,9 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "GNU Library General Public License 2.0 (or any later version; with Linking exception (LGPL; variant 006))"
+category: "LGPL-Linking"
+shortName: "LGPL-2.0+-Linking-Exception-LGPL-006"
+
+otherIds: 
+  - "scancode:lgpl-2.0-plus-gcc"

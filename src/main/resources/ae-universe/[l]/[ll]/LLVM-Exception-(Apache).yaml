@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "LLVM Exception (Apache)"
+category: "Apache LLVM Exception"
+shortName: "LLVM-Exception-Apache"
+spdxIdentifier: "LLVM-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "LLVM exception"
+  - "LLVM EXCEPTION"
+  - "LLVM-exception"
+  - "LLVM-EXCEPTION"
+  - "Apache Exception LLVM"
+
+otherIds: 
+  - "scancode:apache-exception-llvm"
+  - "scancode:llvm-exception"

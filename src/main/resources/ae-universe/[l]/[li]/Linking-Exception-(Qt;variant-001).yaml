@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Linking Exception (Qt; variant 001)"
+category: "Qt Linking Exception"
+shortName: "Linking-Exception-Qt-001"
+
+type: "exception"
+
+alternativeNames:
+  - "qt-qca-exception-2.0"
+
+otherIds: 
+  - "scancode:qt-qca-exception-2.0"

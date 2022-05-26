@@ -8,3 +8,5 @@ shortName: "Hauppauge-End-User-FLA"
 alternativeNames:
   - "END-USER FIRMWARE LICENSE AGREEMENT"
 
+otherIds: 
+  - "scancode:hauppauge-firmware-eula"

@@ -6,6 +6,7 @@ category: "OLDAP"
 spdxIdentifier: "OLDAP-2.8"
 
 alternativeNames:
+  - "OpenLDAP Public License 3.3"
   - "OpenLDAP Public License 2.8"
   - "OLDAP, Version 2.8"
   - "OLDAP 2.8"

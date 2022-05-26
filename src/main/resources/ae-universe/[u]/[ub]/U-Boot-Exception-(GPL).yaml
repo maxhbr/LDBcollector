@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "U-Boot Exception (GPL)"
+category: "GPL U-Boot Exception"
+shortName: "U-Boot-Exception-GPL"
+spdxIdentifier: "u-boot-exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "https://spdx.org/licenses/u-boot-exception-2.0"
+  - "The U-Boot Exception"
+
+otherIds: 
+  - "scancode:u-boot-exception-2.0"

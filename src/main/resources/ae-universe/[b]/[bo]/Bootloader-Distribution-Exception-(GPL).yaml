@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Bootloader Distribution Exception (GPL)"
+category: "GPL Bootloader Distribution Exception"
+shortName: "Bootloader-Distribution-Exception-GPL"
+spdxIdentifier: "Bootloader-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:bootloader-exception"

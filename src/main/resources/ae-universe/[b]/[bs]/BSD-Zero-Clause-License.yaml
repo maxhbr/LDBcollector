@@ -8,6 +8,7 @@ spdxIdentifier: "0BSD"
 alternativeNames:
   - "BSD Zero Clause License"
   - "0BSD"
+  - "Zero-Clause BSD license"
 
 otherIds: 
   - "scancode:bsd-zero"

@@ -37,7 +37,6 @@ alternativeNames:
   - "Apache V2"
   - "Apache Source License 2.0"
   - "Apache Software License version 2.0"
-  - "Apache Software License v2.0"
   - "Apache Software License V2.0"
   - "Apache Software License - Version 2.0"
   - "Apache Software License (ASL) version 2.0"
@@ -72,6 +71,8 @@ alternativeNames:
   - "https://www.apache.org/licenses/LICENSE-2.0"
   - "http://xml.apache.org/xerces2-j/"
   - "Apache License, = = Version 2.0"
+  - "Apache (ASL) 2.0"
+  - "Apache Software License v2"
 
 otherIds: 
   - "scancode:apache-2.0"

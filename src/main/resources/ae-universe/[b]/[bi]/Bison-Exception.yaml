@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Bison Exception"
+category: "Bison Exception"
+shortName: "Bison-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "bison-exception-2.0"
+
+otherIds: 
+  - "scancode:bison-exception-2.0"

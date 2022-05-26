@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Linking Exception (GPL; variant 019)"
+category: "GLP Linkin Exception"
+shortName: "Linkin-Exception-GPL-019"
+
+type: "exception"
+
+alternativeNames:
+  - "SANE Exception 2.0"
+
+otherIds: 
+  - "scancode:gpl-2.0-plus-sane"

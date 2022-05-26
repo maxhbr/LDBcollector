@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Linking Exception (LGPL; variant 011)"
+category: "LGPL Linking Exception"
+shortName: "Linking-Exception-LGPL-011"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:lgpl-2.1-nokia-qt-1.0"
+  - "scancode:qt-company-exception-lgpl-2.1"

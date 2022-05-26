@@ -10,3 +10,5 @@ alternativeNames:
   - "HASKELLREPORT LICENSE"
   - "HASKELLREPORT License"
 
+otherIds: 
+  - "scancode:haskell-report"

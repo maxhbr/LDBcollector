@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "GStreamer Exception"
+category: "GStreamer Exception"
+shortName: "GStreamer-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "gstreamer-exception-2.0"
+
+otherIds: 
+  - "scancode:gstreamer-exception-2.0"

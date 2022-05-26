@@ -1,0 +1,11 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Linking Exception (GPL; variant 024)"
+category: "GPL Linking Exception"
+shortName: "Linking-Exception-GPL-024"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:openssl-exception-gpl-2.0-plus"

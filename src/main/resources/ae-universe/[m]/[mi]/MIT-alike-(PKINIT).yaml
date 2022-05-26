@@ -5,7 +5,5 @@ canonicalName: "MIT alike (PKINIT)"
 category: "MIT"
 shortName: "MIT-alike-PKINIT"
 
-unspecific: true
-
 otherIds: 
   - "scancode:michigan-disclaimer"

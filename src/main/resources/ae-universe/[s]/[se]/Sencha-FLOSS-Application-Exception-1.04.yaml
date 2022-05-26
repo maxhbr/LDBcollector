@@ -1,0 +1,11 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Sencha FLOSS Application Exception 1.04"
+category: "Sencha FLOSS Exception"
+shortName: "Sencha-FLOSS-Exception-1.04"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:sencha-app-floss-exception"
