@@ -31,7 +31,9 @@ then
 ```bash
 ort report -f EvaluatedModel -i /folder/for/analyzer/analyzer-result.json -o /folder/for/reporter  
 ```
-- Import the report at http://127.0.0.1:8080/import/bom 
+- Import the report at http://127.0.0.1:8080/release/1/bom/
+
+Where '1' is the id for the release you're working on.
 
 ### Express your exploitation choices
 

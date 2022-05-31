@@ -13,3 +13,4 @@ docs/build/
 hermine/hermine/mysecrets.py
 .coverage
 .idea
+hermine.iml
