@@ -21,7 +21,7 @@ json:
 	$(TOPDIR)/tools/mkjson.py $(SRCDIR) $(JSONDB)
 
 install:
-	install -D -m 0644 $(JSONDB) $(DESTDIR)$(DATADIR)/rpminspect/licenses/$(shell basename $(JSONDB))
+	install -D -m 0644 $(JSONDB) $(DESTDIR)$(DATADIR)/fedora-license-data/licenses/$(shell basename $(JSONDB))
 
 clean:
 	-rm -f $(JSONDB)
