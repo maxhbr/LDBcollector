@@ -1,6 +1,4 @@
 %global forgeurl https://gitlab.com/fedora/legal/fedora-license-data
-%global commit c0df6cfe
-%forgemeta
 
 Name:           fedora-license-data
 Version:        1.0
@@ -9,11 +7,15 @@ Summary:        Fedora Linux license data
 
 License:        BSD-3-Clause AND CC0-1.0
 URL:            %{forgeurl}
-Source0:        https://gitlab.com/fedora/legal/%{name}/-/archive/%{commit}/%{name}-%{commit}.tar.gz
 BuildArch:      noarch
+# git clone https://gitlab.com/fedora/legal/fedora-license-data.git
+# cd fedora-license-data
+# packit prepare-sources
+Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  make
 BuildRequires:  python3
+BuildRequires:  python3-toml
 
 %description
 This project contains information about licenses used in the Fedora
@@ -31,7 +33,7 @@ The Fedora Legal team is responsible for this project.
 
 
 %prep
-%setup -q -n %{name}-%{commit}
+%setup -q -n %{name}-%{version}
 
 
 %build
@@ -45,7 +47,7 @@ The Fedora Legal team is responsible for this project.
 %files
 %license LICENSE LICENSE.BSD-3-Clause LICENSE.CC0-1.0
 %doc AUTHORS README
-/usr/share/rpminspect/licenses/fedora-licenses.json
+/usr/share/rpminspect/
 
 
 %changelog
