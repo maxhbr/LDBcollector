@@ -46,7 +46,7 @@ The Fedora Legal team is responsible for this project.
 
 %files
 %license LICENSE LICENSE.BSD-3-Clause LICENSE.CC0-1.0
-%doc AUTHORS README
+%doc AUTHORS README.md
 %{_datadir}/%{name}/
 
 
