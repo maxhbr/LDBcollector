@@ -154,15 +154,22 @@ def propagate_choices(release_id):
         else:
             effective_license = usage.version.spdx_valid_license_expr
         unique_lic_ids = explode_SPDX_to_units(effective_license)
-        if len(unique_lic_ids) == 1:
+        chuncks = effective_license.replace("(", " ").replace(")", " ").upper().split()
+
+        if len(unique_lic_ids) == 1 or (
+            "OR" not in chuncks and usage.version.corrected_license
+        ):
             try:
-                unique_license = License.objects.get(spdx_id__exact=unique_lic_ids[0])
-                usage.licenses_chosen.set(set([unique_license]))
-                usage.license_expression = unique_lic_ids[0]
+                unique_licenses = set()
+                for unique_lic_id in unique_lic_ids:
+                    unique_license = License.objects.get(spdx_id__exact=unique_lic_id)
+                    unique_licenses.add(unique_license)
+                usage.licenses_chosen.set(unique_licenses)
+                usage.license_expression = effective_license
                 usage.save()
             except License.DoesNotExist:
                 print("Can't choose an unknown license", unique_lic_ids[0])
-        else:
+        elif "OR" in chuncks:
             choices = LicenseChoice.objects.filter(
                 Q(expression_in=effective_license),
                 Q(component=usage.version.component) | Q(component=None),
