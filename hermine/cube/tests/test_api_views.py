@@ -9,7 +9,7 @@ from rest_framework.test import APITestCase
 SPDX_ID = "testlicense"
 
 
-class APILicenseTests(APITestCase):
+class APICRUDTests(APITestCase):
     """A class to test the naturel workflow with Endpoints.
 
     This test class is monolitihic, it means that each test is dependent on the success
@@ -31,16 +31,7 @@ class APILicenseTests(APITestCase):
 
     def test_post_retrieve_license(self):
         """Test to post a new license."""
-        url = "/api/licenses/"
-        data = {
-            "spdx_id": SPDX_ID,
-            "long_name": "license posted through api",
-            "color": "Orange",
-            "copyleft": "Strong",
-            "foss": "Yes",
-            "obligation_set": [],
-        }
-        r = self.client.post(url, data)
+        r = self.create_license()
         self.assertEqual(r.status_code, 201)
 
         url = "/api/licenses/1/?format=json"
@@ -96,14 +87,7 @@ class APILicenseTests(APITestCase):
 
     def test_post_retrieve_product(self):
         """Test to create a new product"""
-        url = "/api/products/"
-        data = {
-            "name": "Test",
-            "description": "Please delete me when you see me.",
-            "owner": 1,
-            "releases": [],
-        }
-        r = self.client.post(url, data)
+        r = self.create_product()
         self.assertEqual(r.status_code, 201)
 
         url = "/api/products/1/?format=json"
@@ -112,24 +96,9 @@ class APILicenseTests(APITestCase):
 
     def test_post_retrieve_release(self):
         """Test to create a new release"""
-        url = "/api/products/"
-        data = {
-            "name": "Test",
-            "description": "Please delete me when you see me.",
-            "owner": 1,
-            "releases": [],
-        }
-        r = self.client.post(url, data)
+        self.create_product()
 
-        url = "/api/releases/"
-        data = {
-            "release_number": "2.0",
-            "ship_status": "Active",
-            "validation_step": 5,
-            "product": 1,
-        }
-
-        r = self.client.post(url, data)
+        r = self.create_release()
         self.assertEqual(r.status_code, 201)
 
         url = "/api/releases/1/?format=json"
@@ -138,18 +107,7 @@ class APILicenseTests(APITestCase):
 
     def test_post_retrieve_component(self):
         """Test to create a new Component"""
-        url = "/api/components/"
-        data = {
-            "name": "test_component_beta",
-            "package_repo": "npm",
-            "description": "TestComponent. To be deleted;",
-            "programming_language": "javascript",
-            "spdx_expression": "",
-            "homepage_url": "http://test.com",
-            "export_control_status": "",
-            "versions": [],
-        }
-        r = self.client.post(url, data)
+        r = self.create_component()
         self.assertEqual(r.status_code, 201)
 
         url = "/api/components/1/?format=json"
@@ -157,27 +115,9 @@ class APILicenseTests(APITestCase):
         self.assertEqual(r.status_code, 200)
 
     def test_post_retrieve_version(self):
-        url = "/api/components/"
-        data = {
-            "name": "test_component_beta",
-            "package_repo": "npm",
-            "description": "TestComponent. To be deleted;",
-            "programming_language": "javascript",
-            "spdx_expression": "",
-            "homepage_url": "http://test.com",
-            "export_control_status": "",
-            "versions": [],
-        }
-        r = self.client.post(url, data)
+        self.create_component()
 
-        url = "/api/components/1/versions/"
-        data = {
-            "version_number": "2.0",
-            "declared_license_expr": SPDX_ID + "OR AND",
-            "spdx_valid_license_expr": "",
-            "corrected_license": SPDX_ID,
-        }
-        r = self.client.post(url, data)
+        r = self.create_version()
         self.assertEqual(r.status_code, 201)
 
         url = "/api/components/1/versions/1/?format=json"
@@ -186,58 +126,11 @@ class APILicenseTests(APITestCase):
 
     def test_post_retrieve_usage(self):
         """Test to create a new Usage"""
-        url = "/api/products/"
-        data = {
-            "name": "Test",
-            "description": "Please delete me when you see me.",
-            "owner": 1,
-            "releases": [],
-        }
-        r = self.client.post(url, data)
-
-        url = "/api/releases/"
-        data = {
-            "release_number": "2.0",
-            "ship_status": "Active",
-            "validation_step": 5,
-            "product": 1,
-        }
-
-        r = self.client.post(url, data)
-
-        url = "/api/components/"
-        data = {
-            "name": "test_component_beta",
-            "package_repo": "npm",
-            "description": "TestComponent. To be deleted;",
-            "programming_language": "javascript",
-            "spdx_expression": "",
-            "homepage_url": "http://test.com",
-            "export_control_status": "",
-            "versions": [],
-        }
-        r = self.client.post(url, data)
-
-        url = "/api/components/1/versions/"
-        data = {
-            "version_number": "2.0",
-            "declared_license_expr": SPDX_ID + "OR AND",
-            "spdx_valid_license_expr": "",
-            "corrected_license": SPDX_ID,
-        }
-        r = self.client.post(url, data)
-
-        url = "/api/licenses/"
-        data = {
-            "spdx_id": SPDX_ID,
-            "long_name": "license posted through api",
-            "color": "Orange",
-            "copyleft": "Strong",
-            "foss": "Yes",
-            "obligation_set": [],
-        }
-        r = self.client.post(url, data)
-        self.assertEqual(r.status_code, 201)
+        self.create_product()
+        self.create_release()
+        self.create_component()
+        self.create_version()
+        self.create_license()
 
         url = "/api/usages/"
         data = {
@@ -259,3 +152,59 @@ class APILicenseTests(APITestCase):
         url = "/api/usages/1/?format=json"
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
+
+    def create_license(self):
+        url = "/api/licenses/"
+        data = {
+            "spdx_id": SPDX_ID,
+            "long_name": "license posted through api",
+            "color": "Orange",
+            "copyleft": "Strong",
+            "foss": "Yes",
+            "obligation_set": [],
+        }
+        return self.client.post(url, data)
+
+    def create_component(self):
+        url = "/api/components/"
+        data = {
+            "name": "test_component_beta",
+            "package_repo": "npm",
+            "description": "TestComponent. To be deleted;",
+            "programming_language": "javascript",
+            "spdx_expression": "",
+            "homepage_url": "http://test.com",
+            "export_control_status": "",
+            "versions": [],
+        }
+        return self.client.post(url, data)
+
+    def create_release(self):
+        url = "/api/releases/"
+        data = {
+            "release_number": "2.0",
+            "ship_status": "Active",
+            "validation_step": 5,
+            "product": 1,
+        }
+        return self.client.post(url, data)
+
+    def create_product(self):
+        url = "/api/products/"
+        data = {
+            "name": "Test",
+            "description": "Please delete me when you see me.",
+            "owner": 1,
+            "releases": [],
+        }
+        return self.client.post(url, data)
+
+    def create_version(self):
+        url = "/api/components/1/versions/"
+        data = {
+            "version_number": "2.0",
+            "declared_license_expr": SPDX_ID + "OR AND",
+            "spdx_valid_license_expr": "",
+            "corrected_license": SPDX_ID,
+        }
+        return self.client.post(url, data)
