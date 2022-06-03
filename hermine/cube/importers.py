@@ -5,6 +5,7 @@
 
 from datetime import datetime
 import json
+from typing import Optional
 
 from django.db import transaction
 from rest_framework.parsers import JSONParser
@@ -25,6 +26,7 @@ from cube.models import Component, Version, Usage
 from cube.serializers import LicenseSerializer
 
 
+# TODO : remove this dead code
 def import_licenses_file(licenses):
     licenses_data = JSONParser().parse(licenses)
     for license_data in licenses_data:
@@ -49,6 +51,7 @@ def is_spdx(expression):
     return valid
 
 
+# TODO : remove this dead code
 def import_ort_file(json_file, release_id):
     # Importing data from ORT's analyzer
     def add_package(package_id, current_scope, current_project):
@@ -196,7 +199,11 @@ def import_ort_file(json_file, release_id):
 
 
 @transaction.atomic()
-def import_ort_evaluated_model_json_file(json_file, release_idk, replace=False):
+def import_ort_evaluated_model_json_file(
+    json_file, release_idk, replace=False, defaults: Optional[dict] = None
+):
+    if defaults is None:
+        defaults = {}
     data = json.load(json_file)
 
     if replace:
@@ -284,10 +291,11 @@ def import_ort_evaluated_model_json_file(json_file, release_idk, replace=False):
                 release_id=release_idk,
                 scope=scope,
                 description=description,
-                # defaults={"addition_method": "Scan"},
+                defaults=defaults,
             )
 
 
+# TODO: remove dead code
 def import_yocto_file(manifest_file, release_id):
     # Importing data from Yocto's license.manifest
 
@@ -377,7 +385,11 @@ def import_yocto_file(manifest_file, release_id):
 
 
 @transaction.atomic()
-def import_spdx_file(spdx_file, release_id, replace=False):
+def import_spdx_file(
+    spdx_file, release_id, replace=False, defaults: Optional[dict] = None
+):
+    if defaults is None:
+        defaults = {}
     # Importing SPDX BOM yaml
     print("SPDX import started", datetime.now())
     document, error = parse_spdx_file(spdx_file)
@@ -414,7 +426,7 @@ def import_spdx_file(spdx_file, release_id, replace=False):
             version_id=version_id,
             release_id=release_id,
             scope=current_scope,
-            defaults={"addition_method": "Scan"},
+            defaults={"addition_method": "Scan", **defaults},
         )
     print("SPDX import done", datetime.now())
 

@@ -64,10 +64,18 @@ class ReleaseBomView(LoginRequiredMixin, UpdateView):
         try:
             if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
                 import_ort_evaluated_model_json_file(
-                    self.request.FILES["file"], self.object.pk, replace
+                    self.request.FILES["file"],
+                    self.object.pk,
+                    replace,
+                    defaults={"linking": form.cleaned_data.get("linking")},
                 )
             elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_SPDX:
-                import_spdx_file(self.request.FILES["file"], self.object.pk, replace)
+                import_spdx_file(
+                    self.request.FILES["file"],
+                    self.object.pk,
+                    replace,
+                    defaults={"linking": form.cleaned_data.get("linking")},
+                )
         except:  # noqa: E722 TODO
             self.import_status = "error"
 

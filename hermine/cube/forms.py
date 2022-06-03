@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from django import forms
-from .models import Release
+from .models import Release, LINKING_CHOICES
 
 
 class ImportGenericsForm(forms.Form):
@@ -32,6 +32,12 @@ class ImportBomForm(forms.ModelForm):
     file = forms.FileField()
     import_mode = forms.ChoiceField(
         choices=IMPORT_MODE_CHOICES, widget=forms.RadioSelect
+    )
+    linking = forms.ChoiceField(
+        choices=((None, "---"), *LINKING_CHOICES),
+        required=False,
+        initial=None,
+        label="Components linking",
     )
 
     class Meta:
