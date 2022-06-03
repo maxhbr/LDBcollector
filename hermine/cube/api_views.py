@@ -8,6 +8,7 @@ from itertools import groupby
 
 from django.db.models import Q
 from django.http import HttpResponse
+from django.urls import reverse
 from django_filters import rest_framework as filters, CharFilter
 from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import viewsets, status
@@ -222,6 +223,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["unnormalized_usages"] = UsageSerializer(
             context["unnormalized_usages"], many=True
         ).data
+        response["details"] = reverse("release_details", args={"pk": pk})
 
         return Response(response)
 
@@ -236,6 +238,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["valid"], context = validate_step_2(release)
         for field, value in context.items():
             response[field] = LicenseSerializer(value, many=True).data
+        response["details"] = reverse("release_details", args={"pk": pk})
 
         return Response(response)
 
@@ -251,6 +254,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["to_confirm"] = VersionSerializer(
             context["to_confirm"], many=True
         ).data
+        response["details"] = reverse("release_details", args={"pk": pk})
 
         return Response(response)
 
@@ -265,6 +269,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["valid"], context = validate_step_4(release)
         for field, value in context.items():
             response[field] = UsageSerializer(value, many=True).data
+        response["details"] = reverse("release_details", args={"pk": pk})
 
         return Response(response)
 
@@ -285,6 +290,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
                 response[field] = LicenseSerializer(value, many=True).data
             elif field.startswith("derogations"):
                 response[field] = DerogationSerializer(value, many=True).data
+        response["details"] = reverse("release_details", args={"pk": pk})
 
         return Response(response)
 
