@@ -6,6 +6,7 @@
 from datetime import datetime
 import json
 from typing import Optional
+import logging
 
 from django.db import transaction
 from rest_framework.parsers import JSONParser
@@ -24,6 +25,8 @@ import spdx_license_list
 
 from cube.models import Component, Version, Usage
 from cube.serializers import LicenseSerializer
+
+logger = logging.getLogger(__name__)
 
 
 # TODO : remove this dead code
@@ -391,10 +394,12 @@ def import_spdx_file(
     if defaults is None:
         defaults = {}
     # Importing SPDX BOM yaml
-    print("SPDX import started", datetime.now())
+    logger.info("SPDX import started")
     document, error = parse_spdx_file(spdx_file)
     if error:
-        print("SPDX file contains errors (printed above), but import continues…")
+        logger.warning(
+            "SPDX file contains errors (printed above), but import continues…"
+        )
 
     if replace:
         Usage.objects.filter(release=release_id).delete()
@@ -428,7 +433,7 @@ def import_spdx_file(
             scope=current_scope,
             defaults={"addition_method": "Scan", **defaults},
         )
-    print("SPDX import done", datetime.now())
+    logger.info("SPDX import done", datetime.now())
 
 
 # Function derivated from

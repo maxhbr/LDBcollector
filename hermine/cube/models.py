@@ -8,12 +8,17 @@ from django.contrib.auth.models import User
 
 # Constant for Usage and Derogation models
 
+LINKING_AGGREGATION = "Aggregation"
+LINKING_DYNAMIC = "Dynamic"
+LINKING_STATIC = "Static"
+LINKING_PACKAGE = "Package"
+LINKING_MINGLED = "Mingled"
 LINKING_CHOICES = [
-    ("Aggregation", "Mere aggregation"),
-    ("Dynamic", "Dynamic Linking"),
-    ("Static", "Static Linking"),
-    ("Package", "Package Manager"),
-    ("Mingled", "Source code directly derived"),
+    (LINKING_AGGREGATION, "Mere aggregation"),
+    (LINKING_DYNAMIC, "Dynamic Linking"),
+    (LINKING_STATIC, "Static Linking"),
+    (LINKING_PACKAGE, "Package Manager"),
+    (LINKING_MINGLED, "Source code directly derived"),
 ]
 
 SCOPE_MASK_CHOICES = [
