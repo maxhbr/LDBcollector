@@ -64,7 +64,7 @@ def getExplTriggerOblig(value):
     elif value.trigger_expl == "InternalUse":
         return "the component is used for internal usage"
     else:
-        return "No modification trigger found"
+        return "No exploitation trigger found"
 
 
 @register.filter
