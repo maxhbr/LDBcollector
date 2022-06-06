@@ -16,5 +16,6 @@ caption: Contents
 ---
 install
 getting_started
+analysing_licenses
 api
 ```
