@@ -51,6 +51,10 @@ Files: docker-compose.yml
 Copyright: Not copyrightable
 License: CC0-1.0
 
+Files: poetry.lock
+Copyright: Not copyrightable
+License: CC0-1.0
+
 Files: DCO.md
 Copyright : 2004, 2006 The Linux Foundation and its contributors
 License: LicenseRef-scancode-dco-1.1 
