@@ -85,15 +85,14 @@ class Team(models.Model):
 
 class Component(models.Model):
     """
-    A third party Component, specified in a Version object.
+    A third party FOSS Component
 
-    :ivar name: (String) Short descritpion of the Generic obligation. Unique.
+    :ivar name: (String) Name of the FOSS component Unique.
     :ivar package_repo: (String) repository of the package
-    :ivar description: (String) Longer descritpion of the Generic obligation.
+    :ivar description: (String) Descritpion of the FOSS component
     :ivar programming_language: (String) Name of programming languages used in this
         Component
     :ivar spdx_expression: (String) An expression of license for the component.
-        Though, it should not be here : a Version should have it.
     :ivar homepage_url: (URL) Url of the repository of the component
     :ivar export_control_status: (String) A string specifying the export control status
 
