@@ -14,3 +14,4 @@ hermine/hermine/mysecrets.py
 .coverage
 .idea
 hermine.iml
+**/.DS_Store

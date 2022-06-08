@@ -10,7 +10,7 @@ As the application itself, this documentation is very much a work in progress.
 :::
 
 The documentation is created with Sphinx, and written (mostly) in [Markdown](https://www.markdownguide.org/basic-syntax), thanks to [MyST](https://myst-parser.readthedocs.io/en/latest/sphinx/index.html).
-The [MyST documentation](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html) will guide you through the sphinx-specficic directives in Markdown. Some options like [code fences using colons](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#code-fences-using-colons) and [field lists](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#field-lists) have been activated. 
+The [MyST documentation](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html) will guide you through the sphinx-specific directives in Markdown. Some options like [code fences using colors](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#code-fences-using-colons) and [field lists](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#field-lists) have been activated. 
 
 You will find the source of this documentation in the `docs/source` folder of the repo.
 
