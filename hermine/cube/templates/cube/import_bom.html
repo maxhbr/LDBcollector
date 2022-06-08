@@ -9,7 +9,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}Import{% endblock %}
 
 {% block content %}
-  <h1>Importing ORT Analyzer results</h1>
+  <h1>Importing Analyzer results</h1>
 
   {% if status == "error" %}
     <article class="message is-danger">
@@ -17,7 +17,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Failure</p>
       </div>
       <div class="message-body">
-        <span class="icon has-text-danger"><i class="fas fa-exclamation-triangle"></i></span> The file you chose do not match the format you chose.
+        <span class="icon has-text-danger"><i class="fas fa-exclamation-triangle"></i></span> The file you choose do not match the format you choose.
       </div>
     </article>
   {% elif status == "success" %}
