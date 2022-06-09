@@ -48,7 +48,22 @@ SPDX-License-Identifier: AGPL-3.0-only
   </p>
 </div>
 
-        <p> Validation :
+        <p> Review status:
+          <span class="tag
+            {% if license.status == "Checked" %}
+              is-success
+              {% elif license.status == "Pending" %}
+              is-warning
+              {% elif license.status == "To_Discuss" %}
+              is-danger
+              {% else %}
+              is-dark
+            {% endif %}">
+            {{ license.get_status_display }}
+          </span>
+        </p>
+
+       <p> Validation :
           <span class="tag
             {% if license.color == "Green" %}
               is-success
