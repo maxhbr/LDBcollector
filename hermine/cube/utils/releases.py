@@ -167,9 +167,12 @@ def propagate_choices(release_id):
         unique_lic_ids = explode_SPDX_to_units(effective_license)
         chuncks = effective_license.replace("(", " ").replace(")", " ").upper().split()
 
-        if len(unique_lic_ids) == 1 or (
-            "OR" not in chuncks and usage.version.corrected_license
-        ):
+        only_ands = (
+            "OR" not in chuncks
+        )  # imply is_ambiguous is True so we need corrected_license
+        all_licenses_apply = only_ands and usage.version.corrected_license
+
+        if len(unique_lic_ids) == 1 or all_licenses_apply:
             try:
                 unique_licenses = set()
                 for unique_lic_id in unique_lic_ids:
@@ -180,7 +183,7 @@ def propagate_choices(release_id):
                 usage.save()
             except License.DoesNotExist:
                 print("Can't choose an unknown license", unique_lic_ids[0])
-        elif "OR" in chuncks:
+        elif usage.version.corrected_license or not is_ambiguous(effective_license):
             choices = LicenseChoice.objects.filter(
                 Q(expression_in=effective_license),
                 Q(component=usage.version.component) | Q(component=None),

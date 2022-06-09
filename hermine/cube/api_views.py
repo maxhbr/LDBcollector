@@ -3,13 +3,11 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from functools import reduce
 from itertools import groupby
 
-from django.db.models import Q
 from django.http import HttpResponse
 from django.urls import reverse
-from django_filters import rest_framework as filters, CharFilter
+from django_filters import rest_framework as filters
 from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
@@ -41,14 +39,11 @@ from .models import (
     Version,
 )
 from .utils.licenses import (
-    check_licenses_against_policy,
-    get_licenses_to_check_or_create,
     get_usages_obligations,
     get_license_triggered_obligations,
     get_licenses_triggered_obligations,
 )
 from .utils.releases import (
-    propagate_choices,
     update_validation_step,
     validate_step_1,
     validate_step_2,
