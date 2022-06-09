@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
+import re
 from typing import Iterable
 
 from cube.models import License, Obligation
@@ -20,7 +21,9 @@ def is_ambiguous(spdx_expression: str):
     :return: whether expression needs to be confirmed
     :rtype: bool
     """
-    return " AND " in spdx_expression and " OR " not in spdx_expression
+    return re.search(r"[)\s]AND[(\s]", spdx_expression) and not re.search(
+        r"[)\s]OR[(\s]", spdx_expression
+    )
 
 
 def check_licenses_against_policy(release):

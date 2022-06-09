@@ -88,3 +88,4 @@ class SPDXToolsTestCase(unittest.TestCase):
         self.assertFalse(is_ambiguous("MIT OR BSD"))
         self.assertTrue(is_ambiguous("MIT AND BSD"))
         self.assertFalse(is_ambiguous("MIT OR (BSD AND GPL-3.0-or-later)"))
+        self.assertFalse(is_ambiguous("MIT OR(BSD AND GPL-3.0-or-later)"))
