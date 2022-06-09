@@ -5,7 +5,7 @@ Version:        1.0
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
-License:        BSD-3-Clause AND CC0-1.0
+License:        CC0-1.0
 URL:            %{forgeurl}
 BuildArch:      noarch
 # git clone https://gitlab.com/fedora/legal/fedora-license-data.git
@@ -46,7 +46,7 @@ The Fedora Legal team is responsible for this project.
 
 %files
 %license LICENSE LICENSE.BSD-3-Clause LICENSE.CC0-1.0
-%doc AUTHORS README
+%doc AUTHORS README.md
 %{_datadir}/%{name}/
 
 
