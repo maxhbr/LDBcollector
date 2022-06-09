@@ -36,7 +36,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 
     <tr>
-      <td><a href="{% url 'cube:component' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
+      <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
       <td>{{ usage.version.version_number }}</td>
       <td>{{ usage.linking }}</td>
       <td>{{ usage.modified|yesno:"yes,no,maybe" }}</td>
