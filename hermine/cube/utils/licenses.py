@@ -9,6 +9,20 @@ from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
 
 
+def is_ambiguous(spdx_expression: str):
+    """
+    Because of unreliable metadata, many "Licence1 AND Licence2" expressions
+    actually meant to be "Licence1 OR Licence2". This function checks weither
+    an expressions can be trusted or not.
+
+    :param spdx_expression: an expression to test
+    :type spdx_expression: str
+    :return: whether expression needs to be confirmed
+    :rtype: bool
+    """
+    return " AND " in spdx_expression and " OR " not in spdx_expression
+
+
 def check_licenses_against_policy(release):
     response = {}
     usages_lic_red = set()
