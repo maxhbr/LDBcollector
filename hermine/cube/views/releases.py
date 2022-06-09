@@ -243,7 +243,7 @@ def release_add_choice(request, release_id, usage_id):
     elif usage.version.spdx_valid_license_expr:
         effective_license = usage.version.spdx_valid_license_expr
     else:
-        raise ("Choice cannot be done because no expression to process")
+        print("Choice cannot be done because no expression to process")
     choices = LicenseChoice.objects.filter(
         Q(expression_in=effective_license),
         Q(component=usage.version.component) | Q(component=None),
