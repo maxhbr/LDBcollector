@@ -8,6 +8,7 @@ from cube.utils.licenses import (
     get_licenses_to_check_or_create,
     check_licenses_against_policy,
     explode_SPDX_to_units,
+    is_ambiguous,
 )
 
 
@@ -42,17 +43,27 @@ def validate_step_2(release):
     ), context
 
 
-def validate_step_3(release):
+def validate_step_3(release: Release):
     """
     Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
     """
     context = dict()
-    response = confirm_ands(release.id)
-    context["to_confirm"] = response["to_confirm"]
-    context["confirmed"] = response["confirmed"]
-    context["corrected"] = response["corrected"]
+    ambigious_spdx = [
+        usage.version
+        for usage in release.usage_set.all()
+        if is_ambiguous(usage.version.spdx_valid_license_expr)
+    ]
+    context["to_confirm"] = [c for c in ambigious_spdx if not c.corrected_license]
+    context["confirmed"] = [
+        c for c in ambigious_spdx if c.corrected_license == c.spdx_valid_license_expr
+    ]
+    context["corrected"] = [
+        c
+        for c in ambigious_spdx
+        if c.corrected_license and c.corrected_license != c.spdx_valid_license_expr
+    ]
 
-    return (len(response["to_confirm"]) == 0), context
+    return (len(context["to_confirm"]) == 0), context
 
 
 def validate_step_4(release):
@@ -156,9 +167,12 @@ def propagate_choices(release_id):
         unique_lic_ids = explode_SPDX_to_units(effective_license)
         chuncks = effective_license.replace("(", " ").replace(")", " ").upper().split()
 
-        if len(unique_lic_ids) == 1 or (
-            "OR" not in chuncks and usage.version.corrected_license
-        ):
+        only_ands = (
+            "OR" not in chuncks
+        )  # imply is_ambiguous is True so we need corrected_license
+        all_licenses_apply = only_ands and usage.version.corrected_license
+
+        if len(unique_lic_ids) == 1 or all_licenses_apply:
             try:
                 unique_licenses = set()
                 for unique_lic_id in unique_lic_ids:
@@ -169,7 +183,7 @@ def propagate_choices(release_id):
                 usage.save()
             except License.DoesNotExist:
                 print("Can't choose an unknown license", unique_lic_ids[0])
-        elif "OR" in chuncks:
+        elif usage.version.corrected_license or not is_ambiguous(effective_license):
             choices = LicenseChoice.objects.filter(
                 Q(expression_in=effective_license),
                 Q(component=usage.version.component) | Q(component=None),
@@ -195,56 +209,4 @@ def propagate_choices(release_id):
                 to_resolve.add(usage)
 
     response = {"to_resolve": to_resolve, "resolved": resolved}
-    return response
-
-
-def confirm_ands(release_id):
-    """
-    Because of unreliable metadata, many "Licence1 AND Licence2" expressions
-    actually meant to be "Licence1 AND Licence2". That's why any expression of
-    this type has to be manually validated.
-
-    Args:
-
-        release_id (int): The intern identifier of the concerned release
-
-    Returns:
-        response: A python object that has three fields :
-            `to_confirm` the set of versions that needs an explicit confirmation
-            `confirmed` the set of version whose AND has been confirmed
-            `corrected` the set of version whose AND has been corrected
-    """
-
-    release = Release.objects.get(pk=release_id)
-
-    to_confirm = set()
-    confirmed = set()
-    corrected = set()
-
-    # TODO we should take into account cases like "(MIT OR ISC)AND Apache-3.0)"
-    # with no space before the "AND"
-    to_confirm = (
-        Version.objects.filter(usage__release_id=release_id)
-        .filter(spdx_valid_license_expr__contains=" AND ")
-        .filter(Q(corrected_license="") | Q(corrected_license=None))
-    )
-    confirmed = (
-        Version.objects.filter(usage__release_id=release_id)
-        .filter(spdx_valid_license_expr__contains=" AND ")
-        .filter(Q(corrected_license=F("spdx_valid_license_expr")))
-    )
-    corrected = (
-        Version.objects.filter(usage__release_id=release_id)
-        .filter(spdx_valid_license_expr__contains=" AND ")
-        .exclude(
-            Q(corrected_license=F("spdx_valid_license_expr"))
-            | Q(corrected_license="")
-            | Q(corrected_license=None)
-        )
-    )
-    response = {
-        "to_confirm": to_confirm,
-        "confirmed": confirmed,
-        "corrected": corrected,
-    }
     return response

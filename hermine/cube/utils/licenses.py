@@ -3,10 +3,27 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
+import re
 from typing import Iterable
 
 from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
+
+
+def is_ambiguous(spdx_expression: str):
+    """
+    Because of unreliable metadata, many "Licence1 AND Licence2" expressions
+    actually meant to be "Licence1 OR Licence2". This function checks weither
+    an expressions can be trusted or not.
+
+    :param spdx_expression: an expression to test
+    :type spdx_expression: str
+    :return: whether expression needs to be confirmed
+    :rtype: bool
+    """
+    return re.search(r"[)\s]AND[(\s]", spdx_expression) and not re.search(
+        r"[)\s]OR[(\s]", spdx_expression
+    )
 
 
 def check_licenses_against_policy(release):

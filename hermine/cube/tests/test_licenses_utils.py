@@ -1,6 +1,8 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
+import unittest
+
 from django.test import TestCase
 
 from cube.models import (
@@ -13,7 +15,7 @@ from cube.models import (
     Version,
     Generic,
 )
-from cube.utils.licenses import get_usages_obligations
+from cube.utils.licenses import get_usages_obligations, is_ambiguous
 
 
 class ObligationsTestCase(TestCase):
@@ -78,3 +80,12 @@ class ObligationsTestCase(TestCase):
 
         generics, licenses = get_usages_obligations([self.usage1])
         self.assertNotIn(self.generic1, generics)
+
+
+class SPDXToolsTestCase(unittest.TestCase):
+    def test_is_ambiguous(self):
+        self.assertFalse(is_ambiguous("MIT"))
+        self.assertFalse(is_ambiguous("MIT OR BSD"))
+        self.assertTrue(is_ambiguous("MIT AND BSD"))
+        self.assertFalse(is_ambiguous("MIT OR (BSD AND GPL-3.0-or-later)"))
+        self.assertFalse(is_ambiguous("MIT OR(BSD AND GPL-3.0-or-later)"))
