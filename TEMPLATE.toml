@@ -23,6 +23,7 @@ expression = ""
 #     allowed-content
 #     allowed-documentation
 #     allowed-fonts
+#     allowed-firmware
 #     not-allowed
 #
 # This is a required field.  At least one status is required, but a license
