@@ -201,18 +201,17 @@ def propagate_choices(release_id):
 def confirm_ands(release_id):
     """
     Because of unreliable metadata, many "Licence1 AND Licence2" expressions
-    actually meant to be "Licence1 AND Licence2". That's why any expression of
+    actually meant to be "Licence1 OR Licence2". That's why any expression of
     this type has to be manually validated.
 
-    Args:
+    :param release_id: The intern identifier of the concerned release
+    :type release_id: int
 
-        release_id (int): The intern identifier of the concerned release
-
-    Returns:
-        response: A python object that has three fields :
+    :return A python object that has three fields :
             `to_confirm` the set of versions that needs an explicit confirmation
             `confirmed` the set of version whose AND has been confirmed
             `corrected` the set of version whose AND has been corrected
+    :rtype: dict
     """
 
     release = Release.objects.get(pk=release_id)
@@ -223,19 +222,22 @@ def confirm_ands(release_id):
 
     # TODO we should take into account cases like "(MIT OR ISC)AND Apache-3.0)"
     # with no space before the "AND"
+    ambiguous_filter = Q(spdx_valid_license_expr__contains=" AND ") & ~Q(
+        spdx_valid_license_expr__contains=" OR "
+    )
     to_confirm = (
         Version.objects.filter(usage__release_id=release_id)
-        .filter(spdx_valid_license_expr__contains=" AND ")
+        .filter(ambiguous_filter)
         .filter(Q(corrected_license="") | Q(corrected_license=None))
     )
     confirmed = (
         Version.objects.filter(usage__release_id=release_id)
-        .filter(spdx_valid_license_expr__contains=" AND ")
+        .filter(ambiguous_filter)
         .filter(Q(corrected_license=F("spdx_valid_license_expr")))
     )
     corrected = (
         Version.objects.filter(usage__release_id=release_id)
-        .filter(spdx_valid_license_expr__contains=" AND ")
+        .filter(ambiguous_filter)
         .exclude(
             Q(corrected_license=F("spdx_valid_license_expr"))
             | Q(corrected_license="")
