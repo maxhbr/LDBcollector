@@ -8,6 +8,7 @@ from cube.utils.licenses import (
     get_licenses_to_check_or_create,
     check_licenses_against_policy,
     explode_SPDX_to_units,
+    is_ambiguous,
 )
 
 
@@ -42,17 +43,27 @@ def validate_step_2(release):
     ), context
 
 
-def validate_step_3(release):
+def validate_step_3(release: Release):
     """
     Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
     """
     context = dict()
-    response = confirm_ands(release.id)
-    context["to_confirm"] = response["to_confirm"]
-    context["confirmed"] = response["confirmed"]
-    context["corrected"] = response["corrected"]
+    ambigious_spdx = [
+        usage.version
+        for usage in release.usage_set.all()
+        if is_ambiguous(usage.version.spdx_valid_license_expr)
+    ]
+    context["to_confirm"] = [c for c in ambigious_spdx if not c.corrected_license]
+    context["confirmed"] = [
+        c for c in ambigious_spdx if c.corrected_license == c.spdx_valid_license_expr
+    ]
+    context["corrected"] = [
+        c
+        for c in ambigious_spdx
+        if c.corrected_license and c.corrected_license != c.spdx_valid_license_expr
+    ]
 
-    return (len(response["to_confirm"]) == 0), context
+    return (len(context["to_confirm"]) == 0), context
 
 
 def validate_step_4(release):
@@ -195,58 +206,4 @@ def propagate_choices(release_id):
                 to_resolve.add(usage)
 
     response = {"to_resolve": to_resolve, "resolved": resolved}
-    return response
-
-
-def confirm_ands(release_id):
-    """
-    Because of unreliable metadata, many "Licence1 AND Licence2" expressions
-    actually meant to be "Licence1 OR Licence2". That's why any expression of
-    this type has to be manually validated.
-
-    :param release_id: The intern identifier of the concerned release
-    :type release_id: int
-
-    :return A python object that has three fields :
-            `to_confirm` the set of versions that needs an explicit confirmation
-            `confirmed` the set of version whose AND has been confirmed
-            `corrected` the set of version whose AND has been corrected
-    :rtype: dict
-    """
-
-    release = Release.objects.get(pk=release_id)
-
-    to_confirm = set()
-    confirmed = set()
-    corrected = set()
-
-    # TODO we should take into account cases like "(MIT OR ISC)AND Apache-3.0)"
-    # with no space before the "AND"
-    ambiguous_filter = Q(spdx_valid_license_expr__contains=" AND ") & ~Q(
-        spdx_valid_license_expr__contains=" OR "
-    )
-    to_confirm = (
-        Version.objects.filter(usage__release_id=release_id)
-        .filter(ambiguous_filter)
-        .filter(Q(corrected_license="") | Q(corrected_license=None))
-    )
-    confirmed = (
-        Version.objects.filter(usage__release_id=release_id)
-        .filter(ambiguous_filter)
-        .filter(Q(corrected_license=F("spdx_valid_license_expr")))
-    )
-    corrected = (
-        Version.objects.filter(usage__release_id=release_id)
-        .filter(ambiguous_filter)
-        .exclude(
-            Q(corrected_license=F("spdx_valid_license_expr"))
-            | Q(corrected_license="")
-            | Q(corrected_license=None)
-        )
-    )
-    response = {
-        "to_confirm": to_confirm,
-        "confirmed": confirmed,
-        "corrected": corrected,
-    }
     return response
