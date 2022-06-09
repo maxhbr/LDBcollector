@@ -11,35 +11,44 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
   <h1 class="title is-1">{{ license.long_name }}</h1>
-  <h2 class="subtitle is-2">{{ license.spdx_id }}</h2>
+  <h2 class="subtitle is-4">SPDX ID : {{ license.spdx_id }}</h2>
 
-  <table>
-    <thead>
-      <tr>
-        <th><a href="https://spdx.org/licenses/{{ license.spdx_id }}.html" target="_blank"><button class="button is-link">SPDX page &nbsp; &nbsp; <span class="icon"><i class="fas fa-link"></i></span></button></a></th>
-        
-        <th><a href="/admin/cube/license/{{license.id}}/change/" target="_blank"><button class="button is-link">Edit this license &nbsp; &nbsp; <span class="icon"><i class="fas fa-edit"></i></span></button></a></th>
-      
-      </tr>
-      <tr>
-        <table>
-          <tr>
-            <form class="import_licenses" id="import_licenses" enctype="multipart/form-data" action="{% url 'cube:import_licenses' %}" method="post">
-              {% csrf_token %}
-              <th>{{ form }}</th>
-              <th><button class="button is-primary" value="Import JSON" type="submit">Import an interpretation &nbsp; &nbsp; <span class="icon"><i class="fas fa-upload"></i></span></button></th>
-            </form>
-            <th><a href="export/"><button class="button is-dark">Export this interpretation &nbsp; &nbsp; <span class="icon"><i class="fas fa-download"></i></span></button></a></th>
-            <th><a href="print/"><button class="button is-dark">Print this interpretation &nbsp; &nbsp; <span class="icon"><i class="fas fa-print"></i></span></button></a></th>
-            <th><a href="export/"><button class="button is-link">Share this interpretation with community &nbsp; &nbsp; <span class="icon"><i class="fas fa-share"></i></span></button></a></th>
+                                              <div class="field has-addons">
+  <p class="control">
+    <a href="/admin/cube/license/{{license.id}}/change/" target="_blank" class="button">
+      <span class="icon is-small">
+        <i class="fas fa-edit"></i>
+      </span>
+      <span>Edit this licence </span>
+    </a>
+  </p>
+  <p class="control">
+    <a href="export/" class="button">
+      <span class="icon is-small">
+        <i class="fas fa-download"></i>
+      </span>
+      <span>Export this licence as JSON</span>
+    </a>
+  </p>
+  <p class="control">
+    <a href="print/" class="button">
+      <span class="icon is-small">
+        <i class="fas fa-print"></i>
+      </span>
+      <span>Print this licence (ODT export)</span>
+    </a>
+  </p>
+  <p class="control">
+    <a href="https://spdx.org/licenses/{{ license.spdx_id }}.html" target="_blank" class="button">
+      <span class="icon is-small">
+        <i class="fas fa-link"></i>
+      </span>
+      <span>View SPDX page</span>
+    </a>
+  </p>
+</div>
 
-          </tr>
-        </table>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td> Validation :
+        <p> Validation :
           <span class="tag
             {% if license.color == "Green" %}
               is-success
@@ -50,10 +59,10 @@ SPDX-License-Identifier: AGPL-3.0-only
               {% else %}
               is-dark
             {% endif %}">
-            {{ license.color }}
+            {{ license.get_color_display }}
           </span>
-        </td>
-        <td>Copyleft :
+        </p>
+        <p>Copyleft :
           <span class="tag
             {% if license.copyleft == "None" %}
               is-success
@@ -64,10 +73,10 @@ SPDX-License-Identifier: AGPL-3.0-only
               {% else %}
               is-dark
             {% endif %}">
-            {{ license.copyleft|default:"Unknown" }}
+            {{ license.get_copyleft_display|default:"Unknown" }}
           </span>
-        </td>
-        <td>
+        </p>
+        <p>
           Actually FOSS :
           <span class="tag
             {% if license.foss == "Yes" or license.foss == "Yes-Auto" %}
@@ -77,29 +86,26 @@ SPDX-License-Identifier: AGPL-3.0-only
               {% else %}
               is-warning
             {% endif %}">
-            {{ license.foss|default:"Unknown" }}
+            {{ license.get_foss_display|default:"Unknown" }}
           </span>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Jurisdictional clause : <strong>{{ license.law_choice|default:"None" }}</strong>
-        </td>
+        </p>
+          <p>Jurisdictional clause : <strong>{{ license.law_choice|default:"None" }}</strong></p>
+
         {% if inspiration %}
-          <td>
+
             <p>Is inspired by <a href="{% url 'cube:license' inspiration.id %}">{{inspiration.long_name}}</a></p>
             {% elif license.inspiration_spdx %}
               <p>Is inspired by {{license.inspiration_spdx}}</p>
-          </td>
+
         {% endif %}
         {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}
-          <td>
+
             <button class="tag is-success">This license is covered by the obligations in the core</button>
-          </td>
+
         {% endif %}
-      </tr>
-    </tbody>
-  </table>
+
+
+
   {% if license.comment %}
     <div class="box">
       <p><b>Your comment :</b></p>
@@ -113,7 +119,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <h3 class="subtitle is-3">{{ obligation.name }}</h3>
       <h4 class="title is-4"> {{ obligation.passivity }}</h4>
       {% if obligation.passivity == "Active" %}
-        Apply if: 
+        Applies if:
         <ul><li>{{ obligation|getModifTriggerOblig }}</li>
         <li> {{ obligation|getExplTriggerOblig }}</li></ul>
       {% endif %}
@@ -128,7 +134,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <h4 class="title is-4"> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </h4>
       <h4 class="title is-4">{{ obligation.passivity }}</h4>
       {% if obligation.passivity == "Active" %}
-        Apply if: 
+        Applies if:
         <ul><li>{{ obligation|getModifTriggerOblig }}</li>
         <li> {{ obligation|getExplTriggerOblig }}</li></ul>
       {% endif %}
@@ -143,7 +149,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <h4 class="title is-4"> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </h4>
       <h4 class="title is-4">{{ obligation.passivity }}</h4>
       {% if obligation.passivity == "Active" %}
-        Apply if: 
+        Applies if:
         <ul><li>{{ obligation|getModifTriggerOblig }}</li>
         <li> {{ obligation|getExplTriggerOblig }}</li></ul>
       {% endif %}
