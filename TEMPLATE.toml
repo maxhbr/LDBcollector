@@ -1,4 +1,4 @@
-# All of the files in this provide information about a single allowed
+# Each file provides information about a single allowed or not-allowed
 # Fedora license.  The file format is TOML and the sections are
 # described below.  For information on the TOML standard, see
 # https://toml.io/en/
@@ -26,8 +26,10 @@ expression = ""
 #     not-allowed
 #
 # This is a required field.  At least one status is required, but a license
-# may have multiple listed.  Note that "not-allowed" should not be combined
-# with any allowed statuses.
+# may have multiple listed for specific "allowed" scenarios 
+# (e.g., "allowed-content" and "allowed-documentation").  Note that 
+# "not-allowed" should not be combined with any allowed statuses and "allowed"
+# need not be combined with any other allowed statuses.
 status = [ "" ]
 
 # Optional URL(s) to the license text.  This field is a multiline
@@ -63,9 +65,9 @@ status = [ "" ]
 #text = '''
 #'''
 
-# The 'fedora' block contains additional information for the Fedora
-# Project regarding the license.  This section is optional and any of
-# the fields in it are optional.
+# The 'fedora' block contains additional information specific to the 
+# Fedora Project regarding the license.  This section is optional 
+# and any o the fields in it are optional.
 #[fedora]
 
 # The names Fedora uses to refer to this license.  This field is a
@@ -75,7 +77,7 @@ status = [ "" ]
 #    "Another Name For This License"
 #]
 
-# The short abbreviations Fedora uses to represent this license in RPM
+# The short abbreviations Fedora has used to represent this license in RPM
 # packages.  This field is a list of strings.
 #abbreviation = [
 #    "ShortName",
