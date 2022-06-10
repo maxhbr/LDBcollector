@@ -8,172 +8,341 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 {% block title %}{{ license.long_name }} {% endblock %}
-
 {% block content %}
-  <h1 class="title is-1">{{ license.long_name }}</h1>
-  <h2 class="subtitle is-4">SPDX ID : {{ license.spdx_id }}</h2>
 
-                                              <div class="field has-addons">
-  <p class="control">
-    <a href="/admin/cube/license/{{license.id}}/change/" target="_blank" class="button">
-      <span class="icon is-small">
-        <i class="fas fa-edit"></i>
+<section class="hero is-small is-info">
+  <div class="hero-body">
+    <p class="subtitle">
+      <span class="icon is-medium">
+        <i class="fas fa-gavel"></i>
       </span>
-      <span>Edit this licence </span>
-    </a>
-  </p>
-  <p class="control">
-    <a href="export/" class="button">
-      <span class="icon is-small">
-        <i class="fas fa-download"></i>
-      </span>
-      <span>Export this licence as JSON</span>
-    </a>
-  </p>
-  <p class="control">
-    <a href="print/" class="button">
-      <span class="icon is-small">
-        <i class="fas fa-print"></i>
-      </span>
-      <span>Print this licence (ODT export)</span>
-    </a>
-  </p>
-  <p class="control">
-    <a href="https://spdx.org/licenses/{{ license.spdx_id }}.html" target="_blank" class="button">
-      <span class="icon is-small">
-        <i class="fas fa-link"></i>
-      </span>
-      <span>View SPDX page</span>
-    </a>
-  </p>
-</div>
+       LICENCE
+    </p>
+    <p class="title">
+      {{ license.long_name }}
+    </p>
+    
+  </div>
+</section>
 
-        <p> Review status:
-          <span class="tag
-            {% if license.status == "Checked" %}
-              is-success
-              {% elif license.status == "Pending" %}
-              is-warning
-              {% elif license.status == "To_Discuss" %}
-              is-danger
-              {% else %}
-              is-dark
-            {% endif %}">
-            {{ license.get_status_display }}
-          </span>
-        </p>
+<div class="container is-fluid">
 
-       <p> Validation :
-          <span class="tag
-            {% if license.color == "Green" %}
-              is-success
-              {% elif license.color == "Orange" %}
-              is-warning
-              {% elif license.color == "Red" %}
-              is-danger
-              {% else %}
-              is-dark
-            {% endif %}">
-            {{ license.get_color_display }}
-          </span>
-        </p>
-        <p>Copyleft :
-          <span class="tag
-            {% if license.copyleft == "None" %}
-              is-success
-              {% elif license.copyleft == "Weak" %}
-              is-warning
-              {% elif license.copyleft == "Strong" or license.copyleft == "Network" or license.copyleft == "NetworkWeak" %}
-              is-danger
-              {% else %}
-              is-dark
-            {% endif %}">
-            {{ license.get_copyleft_display|default:"Unknown" }}
-          </span>
-        </p>
-        <p>
-          Actually FOSS :
-          <span class="tag
-            {% if license.foss == "Yes" or license.foss == "Yes-Auto" %}
-              is-success
-              {% elif license.foss == "No" or license.foss == "No-Auto" %}
-              is-danger
-              {% else %}
-              is-warning
-            {% endif %}">
-            {{ license.get_foss_display|default:"Unknown" }}
-          </span>
-        </p>
-          <p>Jurisdictional clause : <strong>{{ license.law_choice|default:"None" }}</strong></p>
+  <section class="section">
 
+    <div class="columns">
+      <div class="column is-narrow">
+        <div style="width: 500px;">
+          <h2 class="title is-2">Métadonnées</h2>
+        </div>
+      </div>
+      <div class="column">
+        <div>
+          <a class="button" href="/admin/cube/license/{{license.id}}/change/" target="_blank">
+            <span class="icon">
+              <i class="fas fa-edit"></i>
+            </span>
+            <span>Edit this licence</span>
+          </a>
+        
+          <div class="dropdown is-hoverable">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Actions</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="export/" class="dropdown-item">
+                  <span class="icon is-small">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>Export this licence as JSON</span>
+                </a>
+                <a href="print/" class="dropdown-item">
+                  <span class="icon is-small">
+                    <i class="fas fa-print"></i>
+                  </span>
+                  <span>Print this licence (ODT export)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+ 
+
+      <div class="columns box">
+        <div class="column">
+          <p>Ref SPXD:
+            <a href="https://spdx.org/licenses/{{ license.spdx_id }}.html" target="_blank">
+              <span class="icon is-small">
+                <i class="fas fa-link"></i>
+              </span>
+              <span> {{ license.spdx_id }}</span>
+            </a>
+          </p>
+          <p>Review status:
+            <span class="tag
+              {% if license.status == "Checked" %}
+                is-success
+                {% elif license.status == "Pending" %}
+                is-warning
+                {% elif license.status == "To_Discuss" %}
+                is-danger
+                {% else %}
+                is-dark
+              {% endif %}">
+              {{ license.get_status_display }}
+            </span>
+          </p>
+  
+         
+        </div>
+        <div class="column">
+          <p>Validation :
+            <span class="tag
+              {% if license.color == "Green" %}
+                is-success
+                {% elif license.color == "Orange" %}
+                is-warning
+                {% elif license.color == "Red" %}
+                is-danger
+                {% else %}
+                is-dark
+              {% endif %}">
+              {{ license.get_color_display }}
+            </span>
+          </p>
+          <p>Copyleft :
+            <span class="tag
+              {% if license.copyleft == "None" %}
+                is-success
+                {% elif license.copyleft == "Weak" %}
+                is-warning
+                {% elif license.copyleft == "Strong" or license.copyleft == "Network" or license.copyleft == "NetworkWeak" %}
+                is-danger
+                {% else %}
+                is-dark
+              {% endif %}">
+              {{ license.get_copyleft_display|default:"Unknown" }}
+            </span>
+          </p>
+          <p>Actually FOSS :
+            <span class="tag
+              {% if license.foss == "Yes" or license.foss == "Yes-Auto" %}
+                is-success
+                {% elif license.foss == "No" or license.foss == "No-Auto" %}
+                is-danger
+                {% else %}
+                is-warning
+              {% endif %}">
+              {{ license.get_foss_display|default:"Unknown" }}
+            </span>
+          </p>
+        </div>
+
+        <div class="column">
+          <p>Jurisdictional clause : 
+            <strong>{{ license.law_choice|default:"None" }}</strong>
+          </p>
+
+          <!-- Show optionnal comment -->
+          {% if license.comment %}
+            <div class="box">
+              <p><b>Your comment :</b></p>
+              <p>{{ license.comment }}</p>
+            </div>
+          {% else %}
+            <p>Comment: <i>no comment</i></p>
+          {% endif %}
+        </div>
+      </div>
+        
+    </section>
+        
+  <h3>Inspiration</h3>
         {% if inspiration %}
 
-            <p>Is inspired by <a href="{% url 'cube:license' inspiration.id %}">{{inspiration.long_name}}</a></p>
-            {% elif license.inspiration_spdx %}
-              <p>Is inspired by {{license.inspiration_spdx}}</p>
+          <p>Is inspired by <a href="{% url 'cube:license' inspiration.id %}">{{inspiration.long_name}}</a></p>
+          {% elif license.inspiration_spdx %}
+          <p>Is inspired by {{license.inspiration_spdx}}</p>
 
+        {% else %}
+          <i>No inspiration</i>
         {% endif %}
+
         {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}
+        
         <p><div class="icon-text">
-  <span class="icon has-text-success">
-    <i class="fas fa-check"></i>
-  </span>
-  <span>This license is covered by the obligations in the core</span>
-</div></p>
-
+          <span class="icon has-text-success">
+            <i class="fas fa-check"></i>
+          </span>
+          <span>This license is covered by the obligations in the core</span>
+        </div></p>
 
         {% endif %}
 
 
+  <h2>Obligations</h2>
+  
 
-  {% if license.comment %}
-    <div class="box">
-      <p><b>Your comment :</b></p>
-      <p>{{ license.comment }}</p>
-    </div>
-  {% endif %}
+  <div class="tabs is-centered is-boxed">
+    <ul>
+      <li class="is-active"><a href="#specific">Specific to this licence</a></li>
+      <li><a href="#generic-out">Generic obligation, not core</a></li>
+      <li><a href="#generic-in">Generic obligation, in core</a></li>
+    </ul>
+  </div>
 
-  {% if orphan_obligations %}
-    <h2 class="subtitle is-2">Obligations that are specific to this license</h2>
-    {% for obligation in orphan_obligations %}
-      <h3 class="subtitle is-3">{{ obligation.name }}</h3>
-      <h4 class="title is-4"> {{ obligation.passivity }}</h4>
-      {% if obligation.passivity == "Active" %}
-        Applies if:
-        <ul><li>{{ obligation|getModifTriggerOblig }}</li>
-        <li> {{ obligation|getExplTriggerOblig }}</li></ul>
-      {% endif %}
-      <blockquote>{{ obligation.verbatim}}</blockquote>
-    {% endfor %}
-  {% endif %}
+  <section id="specific">
 
-  {% if obligations_in_generic %}
-    <h2 class="subtitle is-2">Obligations that are related to a generic obligation that is <b>not</b> part of the core</h2>
-    {% for obligation in obligations_in_generic %}
-      <h3 class="subtitle is-3">{{ obligation.name }}</h3>
-      <h4 class="title is-4"> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </h4>
-      <h4 class="title is-4">{{ obligation.passivity }}</h4>
-      {% if obligation.passivity == "Active" %}
-        Applies if:
-        <ul><li>{{ obligation|getModifTriggerOblig }}</li>
-        <li> {{ obligation|getExplTriggerOblig }}</li></ul>
-      {% endif %}
-      <blockquote>{{ obligation.verbatim }}</blockquote>
-    {% endfor %}
-  {% endif %}
+    <article class="message is-info">
+      <div class="message-body">
+        Obligations that are specific to this license
+      </div>
+    </article>
 
-  {% if obligations_in_core %}
-    <h2 class="subtitle is-2">Obligations that are related to a generic obligation that is part of the core</h2>
-    {% for obligation in obligations_in_core %}
-      <h3 class="subtitle is-3"> {{ obligation.name }}</h3>
-      <h4 class="title is-4"> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </h4>
-      <h4 class="title is-4">{{ obligation.passivity }}</h4>
-      {% if obligation.passivity == "Active" %}
-        Applies if:
-        <ul><li>{{ obligation|getModifTriggerOblig }}</li>
-        <li> {{ obligation|getExplTriggerOblig }}</li></ul>
-      {% endif %}
-      <blockquote>{{ obligation.verbatim}}</blockquote>
-    {% endfor %}
-  {% endif %}
+
+    {% if orphan_obligations %}
+      {% for obligation in orphan_obligations %}
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              {{ obligation.name }}
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <i> {{ obligation.passivity }}</i>
+              {% if obligation.passivity == "Active" %}
+                Applies if:
+                <ul><li>{{ obligation|getModifTriggerOblig }}</li>
+                <li> {{ obligation|getExplTriggerOblig }}</li></ul>
+              {% endif %}
+              <br>
+              <blockquote>{{ obligation.verbatim}}</blockquote>
+            </div>
+          </div>
+          
+        </div>
+      {% endfor %}
+    {% else %}
+      <article class="message is-warning">
+        <div class="message-body">
+          <i>No obligation here.</i>
+        </div>
+      </article>
+    {% endif %}
+  </section>
+
+
+
+
+  <div class="tabs is-centered is-boxed">
+    <ul>
+      <li><a href="#specific">Specific to this licence</a></li>
+      <li class="is-active"><a href="#generic-out">Generic obligation, not core</a></li>
+      <li><a href="#generic-in">Generic obligation, in core</a></li>
+    </ul>
+  </div>
+
+  <section id="generic-out">
+    <article class="message is-info">
+      <div class="message-body">
+        Obligations that are related to a generic obligation that is <b>not</b> part of the core
+      </div>
+    </article>
+
+    {% if obligations_in_generic %}
+      {% for obligation in obligations_in_generic %}
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{ obligation.name }}
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <p> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </p>
+            <p>{{ obligation.passivity }}</p>
+            {% if obligation.passivity == "Active" %}
+              Applies if:
+              <ul><li>{{ obligation|getModifTriggerOblig }}</li>
+              <li> {{ obligation|getExplTriggerOblig }}</li></ul>
+            {% endif %}
+            <br>
+            <blockquote>{{ obligation.verbatim }}</blockquote>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    {% else %}
+      <article class="message is-warning">
+        <div class="message-body">
+          <i>No obligation here.</i>
+        </div>
+      </article>
+    {% endif %}
+  </section>
+
+
+
+  <div class="tabs is-centered is-boxed">
+    <ul>
+      <li><a href="#specific">Specific to this licence</a></li>
+      <li><a href="#generic-out">Generic obligation, not core</a></li>
+      <li class="is-active"><a href="#generic-in">Generic obligation, in core</a></li>
+    </ul>
+  </div>
+
+  <section id="generic-in">
+    <article class="message is-info">
+      <div class="message-body">
+        Obligations that are related to a generic obligation that is part of the core
+      </div>
+    </article>
+    
+
+    {% if obligations_in_core %}
+      {% for obligation in obligations_in_core %}
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{ obligation.name }}
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <p> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </p>
+            <p>{{ obligation.passivity }}</p>
+            {% if obligation.passivity == "Active" %}
+              Applies if:
+              <ul>
+                <li>{{ obligation|getModifTriggerOblig }}</li>
+                <li> {{ obligation|getExplTriggerOblig }}</li>
+              </ul>
+            {% endif %}
+            <blockquote>{{ obligation.verbatim}}</blockquote>
+          </div>
+        </div>
+      </div>
+      
+      {% endfor %}
+    {% else %}
+      <article class="message is-warning">
+        <div class="message-body">
+          <i>No obligation here.</i>
+        </div>
+      </article>
+    {% endif %}
+  </section>
+
+</div>
+
+  
 {% endblock %}
