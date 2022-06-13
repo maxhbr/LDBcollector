@@ -175,7 +175,7 @@ class License(models.Model):
     ]
 
     spdx_id = models.CharField(max_length=200, unique=True)
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="To check")
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="To check", help_text="The review status of the license")
     long_name = models.CharField(max_length=200, blank=True)
     categories = models.CharField(max_length=200, blank=True)
     license_version = models.CharField(max_length=200, blank=True)

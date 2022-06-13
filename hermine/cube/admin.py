@@ -50,6 +50,22 @@ class LicenseAdmin(admin.ModelAdmin):
     list_display = ("spdx_id", "color", "status")
     list_filter = ["status"]
     search_fields = ["spdx_id"]
+    fieldsets = (
+        ('Identity', {
+            'fields': ('spdx_id', 'long_name', 'url','verbatim', 'osi_approved','fsf_approved', 'law_choice', 'venue_choice')
+        }),
+        ('Advanced options', {
+            'classes': ('collapse',),
+            'fields': ('license_version','radical', 'autoupgrade','inspiration_spdx','inspiration'),
+        }),
+
+        ('Evaluation', {
+            'fields': ('status', 'color', 'color_explanation','foss','legal_uncertainty', 'comment')
+        }),
+        ('Grants of rights', {
+            'fields': ('patent_grant', 'non_commmercial', 'ethical_clause')
+        }),
+    )
 
 
 class GenericAdmin(admin.ModelAdmin):
