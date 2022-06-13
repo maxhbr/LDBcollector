@@ -69,7 +69,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               {% else %}
                 <span class="tag is-dark">
             {% endif %}
-              {{ license.color }}
+              {{ license.get_color_display }}
           </span>
         </td>
         <td><a href="{% url 'cube:license' license.id %}" >{{ license.spdx_id }}</td>
