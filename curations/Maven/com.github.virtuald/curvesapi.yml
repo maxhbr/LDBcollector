@@ -1,0 +1,7 @@
+- id: "Maven:com.github.virtuald:curvesapi:[1.02,2.0["
+  curations:
+    comment: |
+      The library links to the BSD-3-Clause license in its POM, see:
+      https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.02/curvesapi-1.02.pom
+    declared_license_mapping:
+      BSD License: "BSD-3-Clause"
