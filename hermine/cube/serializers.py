@@ -302,6 +302,7 @@ class ReleaseSerializer(serializers.ModelSerializer):
             "ship_status",
             "pub_date",
             "validation_step",
+            "commit",
         ]
 
 

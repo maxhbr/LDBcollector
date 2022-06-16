@@ -68,6 +68,7 @@ class Release(models.Model):
     pub_date = models.DateTimeField("date published", blank=True, null=True)
     # First unvalidated step : 6 = all are validated
     valid_step = models.IntegerField("Validation Step", blank=True, null=True)
+    commit = models.CharField("Commit hash or ref", max_length=255, blank=True)
 
     class Meta:
         unique_together = ["product", "release_number"]
