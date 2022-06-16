@@ -6,33 +6,49 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 {% extends "cube/cube.html" %}
-{% block title %}OS policy{% endblock %}
+{% block title %}Generic obligation{% endblock %}
 
 {% block content %}
+
+<section class="hero is-small is-info">
+  <div class="hero-body">
+    <p class="title">
+      <span class="icon is-medium">
+        <i class="fas fa-award"></i>
+      </span>
+       GENERIC OBLIGATION
+    </p>
+  </div>
+</section>
+
+
   <div id="content-main">
-    <h1 class="title is-1">Open Source Policy</h1>
-    <h2 class="title is-2">Generic obligations</h2>
-    <p>Generic obligations allow you to gather similar obligations from different licenses in order to standardize the actions to be taken to fulfill them. Those actions can be taken at different levels (code, policy...) and have to be placed under the responsibility of the competent actors in in the organization.</p>
-    <p>You can download all he current Generic obligations by clicking on the followong button :</p>
-    <form class="export_generics" id="export_generics" action="{% url 'cube:export_generics' %}" method="get">
-      {% csrf_token %}
-      <button class="button is-primary" value="Export Generic Obligations" type="submit">Export Generic Obligations to JSON</button>
-    </form>
-    <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:import_generics' %}" method="post">
-      {% csrf_token %}
-      <table>
-      <tr>
-        <th>{{ form }}</th>
-        <th><button class="button is-secondary" value="Import JSON" type="submit">Import</button></th>
-      </tr>
-      </table>
-    </form> 
-    <h2>Generic obligations in the core </h2>
+
+    <section class="section box">
+      <p>Generic obligations allow you to gather similar obligations from different licenses in order to standardize the actions to be taken to fulfill them. Those actions can be taken at different levels (code, policy...) and have to be placed under the responsibility of the competent actors in in the organization.</p>
+      <p>You can download all he current Generic obligations by clicking on the followong button :</p>
+      <form class="export_generics" id="export_generics" action="{% url 'cube:export_generics' %}" method="get">
+        {% csrf_token %}
+        <button class="button is-primary" value="Export Generic Obligations" type="submit">Export Generic Obligations to JSON</button>
+      </form>
+      <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:import_generics' %}" method="post">
+        {% csrf_token %}
+        <table>
+        <tr>
+          <th>{{ form }}</th>
+          <th><button class="button is-secondary" value="Import JSON" type="submit">Import</button></th>
+        </tr>
+        </table>
+      </form>
+    </section>
+
+
+    <h2 class="title is-2"><strong>In the core ({{generics_incore|length}}</strong> generic obligations)</h2>
     <p>
       The <em>core</em> is the set of generic obligations considered as fitting enough your policy to be executed for every single component, even if the license of a component does not require the obligation expressly.
-      The core is currently consisting on the <strong>{{generics_incore|length}}</strong> following generic obligations&nbsp;:
     </p>
 
+    {% if generic %}
     <table class="table">
       <thead>
         <tr>
@@ -47,23 +63,30 @@ SPDX-License-Identifier: AGPL-3.0-only
         </tr>
       </thead>
       <tbody>
-        {% for generic in generics_incore %}
-          <tr>
-            <td> <button class="button is-dark">In core</button></td>
-            <td><div class="buttons"><button class="button is-primary">{{generic.metacategory}}</button></div></td>
-            <td><button class="button is-link">{{generic.team.name}}</td>
-            <td>{{generic.name}}</td>
-            <td>{{ generic.obligation_set.all|length }}</td>
-            <td>{{generic.passivity}}
-            <td><a href="{% url 'cube:generic' generic.id %}"><i class="far fa-eye fa-2x"></i></a></td>
-            <td><a href="/admin/cube/generic/{{generic.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></td>
+        
+          {% for generic in generics_incore %}
+            <tr>
+              <td> <button class="button is-dark">In core</button></td>
+              <td><div class="buttons"><button class="button is-primary">{{generic.metacategory}}</button></div></td>
+              <td><button class="button is-link">{{generic.team.name}}</td>
+              <td>{{generic.name}}</td>
+              <td>{{ generic.obligation_set.all|length }}</td>
+              <td>{{generic.passivity}}
+              <td><a href="{% url 'cube:generic' generic.id %}"><i class="far fa-eye fa-2x"></i></a></td>
+              <td><a href="/admin/cube/generic/{{generic.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></td>
 
-          </tr>
-        {% endfor %}
+            </tr>
+          {% endfor %}
+        
       </tbody>
     </table>
-    <h3 class="title is-3">Generic obligations out of the core</h3>
-    <p><strong>{{generics_outcore|length}}</strong> other generic obligations have been identified.</p>
+    {% else %}
+        <p>No generic obligation here.</p>
+      {% endif %}
+
+
+    <h2 class="title is-2">Out of the core (<strong>{{generics_outcore|length}}</strong> generic obligations)</h2>
+    
     <table class="table">
       <thead>
         <tr>
