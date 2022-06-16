@@ -22,11 +22,10 @@ services:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - SECRET=secret
+      - SECRET=${HERMINE_SECRET:?err}
       - SUPERUSER=admin
       - PASSWORD=admin
-# Uncomment and put the specific hostname, otherwise localhost will be used.
-#      - HOST=example.com
+      - HOST=${HERMINE_HOST:-localhost}
     links:
       - db
     networks:
