@@ -49,6 +49,7 @@ class APITestCase(BaseAPITestCase):
             "ship_status": "Active",
             "validation_step": 5,
             "product": 1,
+            "commit": "a9eb85ea214a6cfa6882f4be041d5cce7bee3e45",
         }
         return self.client.post(url, data)
 
