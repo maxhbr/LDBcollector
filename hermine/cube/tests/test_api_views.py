@@ -1,54 +1,22 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-
-import re
-
 from django.contrib.auth.models import User
+from django.urls import reverse
+from rest_framework.test import APITestCase as BaseAPITestCase
 
-from rest_framework.test import APIClient
-from rest_framework.test import APITestCase
+from cube.models import LINKING_PACKAGE
+from cube.utils.licenses import handle_licenses_json
 
 SPDX_ID = "testlicense"
 
 
-def atoi(text):
-    return int(text) if text.isdigit() else text
-
-
-def natural_keys(text):
-    """
-    alist.sort(key=natural_keys) sorts in human order
-    http://nedbatchelder.com/blog/200712/human_sorting.html
-    """
-    return [atoi(c) for c in re.split(r"(\d+)", text)]
-
-
-class APILicenseTests(APITestCase):
-    """A class to test the naturel workflow with Endpoints.
-
-    This test class is monolitihic, it means that each test is dependent on the success
-    of the previous one.
-
-    If the test of the post of a new license fails, then the test will stop because the
-    later steps won't be able to be properly tested.
-    """
-
-    def step1(self):
-        """Test to create a new user"""
-
+class APITestCase(BaseAPITestCase):
+    def setUp(self):
         User.objects.create_user("TestUser", "testuser@test.com", "password")
-        self.c = APIClient()
-        self.assertTrue(self.c.login(username="TestUser", password="password"))
+        self.client.login(username="TestUser", password="password")
 
-    def step2(self):
-        """Test to retrieve licenses"""
-        url = "/api/licenses/"
-        r = self.c.get(url)
-        self.assertEqual(r.status_code, 200)
-
-    def step3(self):
-        """Test to post a new license."""
+    def create_license(self):
         url = "/api/licenses/"
         data = {
             "spdx_id": SPDX_ID,
@@ -58,121 +26,10 @@ class APILicenseTests(APITestCase):
             "foss": "Yes",
             "obligation_set": [],
         }
-        r = self.c.post(url, data, format="json")
-        self.assertEqual(r.status_code, 201)
+        return self.client.post(url, data)
 
-    def step4(self):
-        """Test to retrieve the created license"""
-
-        # Assumes that the previously created license is the first one in the base
-        # (it's the case).
-        url = "/api/licenses/1/?format=json"
-
-        r = self.c.get(url)
-        self.assertEqual(r.status_code, 200)
-
-    def step5(self):
-        """Test to post a Generic obligation"""
-        url = "/api/generics/"
-        data = {
-            "name": "TestGeneric",
-            "description": "This generic obligation is for testing purpose.",
-            "in_core": "True",
-            "metacategory": "IPManagement",
-            "passivity": "Active",
-        }
-        r = self.c.post(url, data, format="json")
-        self.assertEqual(r.status_code, 201)
-
-    def step6(self):
-        """Test to retrieve the created Generic obligation"""
-
-        # Assumes that the previously created generic obligation is the first one in
-        # the base (it's the case).
-        url = "/api/generics/1/?format=json"
-
-        r = self.c.get(url)
-        self.assertEqual(r.status_code, 200)
-
-    def step7(self):
-        """Test to post a new obligation to the previously created license."""
-        url = "/api/obligations/"
-        data = {
-            "license": 1,
-            "name": "TestObligation",
-            "verbatim": "This obligation is for testing purpose. please delete it.",
-            "passivity": "Active",
-            "trigger_expl": "DistributionSourceDistributionNonSource",
-            "trigger_mdf": "Unmodified",
-            "generic_id": 1,
-        }
-        r = self.c.post(url, data, format="json")
-        self.assertEqual(r.status_code, 201)
-
-    def step8(self):
-        """Test to retrieve the created obligation"""
-
-        # Assumes that the previously created obligation is the first one in the base
-        # (it's the case).
-        url = "/api/obligations/1/?format=json"
-
-        r = self.c.get(url)
-        self.assertEqual(r.status_code, 200)
-
-    def step9(self):
-        """Test to create a new product"""
-        url = "/api/products/"
-
-        data = {
-            "name": "Test",
-            "description": "Please delete me when you see me.",
-            "owner": 1,
-            "releases": [],
-        }
-
-        r = self.c.post(url, data, format="json")
-        self.assertEqual(r.status_code, 201)
-
-        url = "/api/products/1/?format=json"
-
-    def step10(self):
-        """Test to retrieve the created product"""
-
-        # Assumes that the previously created product is the first one in the base
-        # (it's the case).
-        url = "/api/products/1/?format=json"
-
-        r = self.c.get(url)
-        self.assertEqual(r.status_code, 200)
-
-    def step11(self):
-        """Test to create a new release"""
-        url = "/api/releases/"
-
-        data = {
-            "release_number": "2.0",
-            "ship_status": "Active",
-            "validation_step": 5,
-            "product": 1,
-        }
-
-        r = self.c.post(url, data, format="json")
-        self.assertEqual(r.status_code, 201)
-
-    def step12(self):
-        """Test to retrieve the created release"""
-
-        # Assumes that the previously created product is the first one in the base
-        # (it's the case).
-        url = "/api/releases/1/?format=json"
-
-        r = self.c.get(url)
-        self.assertEqual(r.status_code, 200)
-
-    def step13(self):
-        """Test to create a new Component"""
+    def create_component(self):
         url = "/api/components/"
-
         data = {
             "name": "test_component_beta",
             "package_repo": "npm",
@@ -183,48 +40,159 @@ class APILicenseTests(APITestCase):
             "export_control_status": "",
             "versions": [],
         }
+        return self.client.post(url, data)
 
-        r = self.c.post(url, data, format="json")
-        self.assertEqual(r.status_code, 201)
+    def create_release(self):
+        url = "/api/releases/"
+        data = {
+            "release_number": "2.0",
+            "ship_status": "Active",
+            "validation_step": 5,
+            "product": 1,
+        }
+        return self.client.post(url, data)
 
-    def step14(self):
-        """Test to retrieve the created Component"""
+    def create_product(self):
+        url = "/api/products/"
+        data = {
+            "name": "Test",
+            "description": "Please delete me when you see me.",
+            "owner": 1,
+            "releases": [],
+        }
+        return self.client.post(url, data)
 
-        # Assumes that the previously created component is the first one in the base
-        # (it's the case).
-        url = "/api/components/1/?format=json"
-
-        r = self.c.get(url)
-        self.assertEqual(r.status_code, 200)
-
-    def step15(self):
-        """Test to create a new Version"""
+    def create_version(self):
         url = "/api/components/1/versions/"
-
         data = {
             "version_number": "2.0",
             "declared_license_expr": SPDX_ID + "OR AND",
             "spdx_valid_license_expr": "",
             "corrected_license": SPDX_ID,
         }
+        return self.client.post(url, data)
 
-        r = self.c.post(url, data, format="json")
-        self.assertEqual(r.status_code, 201)
 
-    def step16(self):
-        """Test to retrieve the created Version"""
+class APICRUDTests(APITestCase):
+    """A class to test the naturel workflow with Endpoints.
 
-        # Assumes that the previously created component is the first one in the base
-        # (it's the case).
-        url = "/api/components/1/versions/1/?format=json"
+    This test class is monolitihic, it means that each test is dependent on the success
+    of the previous one.
 
-        r = self.c.get(url)
+    If the test of the post of a new license fails, then the test will stop because the
+    later steps won't be able to be properly tested.
+    """
+
+    def test_retrieve_license(self):
+        """Test to retrieve licenses"""
+        url = "/api/licenses/"
+        r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
 
-    def step17(self):
-        """Test to create a new Usage"""
-        url = "/api/usages/"
+    def test_post_retrieve_license(self):
+        """Test to post a new license."""
+        r = self.create_license()
+        self.assertEqual(r.status_code, 201)
 
+        url = "/api/licenses/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
+    def test_post_retrieve_generic(self):
+        """Test to post a Generic obligation"""
+        url = "/api/generics/"
+        data = {
+            "name": "TestGeneric",
+            "description": "This generic obligation is for testing purpose.",
+            "in_core": "True",
+            "metacategory": "IPManagement",
+            "passivity": "Active",
+        }
+        r = self.client.post(url, data)
+        self.assertEqual(r.status_code, 201)
+
+        url = "/api/generics/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
+    def test_post_retrieve_obligations(self):
+        """Test to post a new obligation to the previously created license."""
+        url = "/api/licenses/"
+        data = {
+            "spdx_id": SPDX_ID,
+            "long_name": "license posted through api",
+            "color": "Orange",
+            "copyleft": "Strong",
+            "foss": "Yes",
+            "obligation_set": [],
+        }
+        self.client.post(url, data)
+
+        url = "/api/obligations/"
+        data = {
+            "license": 1,
+            "name": "TestObligation",
+            "verbatim": "This obligation is for testing purpose. please delete it.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "Unmodified",
+            "generic_id": 1,
+        }
+        r = self.client.post(url, data)
+        self.assertEqual(r.status_code, 201)
+
+        url = "/api/obligations/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
+    def test_post_retrieve_product(self):
+        """Test to create a new product"""
+        r = self.create_product()
+        self.assertEqual(r.status_code, 201)
+
+        url = "/api/products/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
+    def test_post_retrieve_release(self):
+        """Test to create a new release"""
+        self.create_product()
+
+        r = self.create_release()
+        self.assertEqual(r.status_code, 201)
+
+        url = "/api/releases/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
+    def test_post_retrieve_component(self):
+        """Test to create a new Component"""
+        r = self.create_component()
+        self.assertEqual(r.status_code, 201)
+
+        url = "/api/components/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
+    def test_post_retrieve_version(self):
+        self.create_component()
+
+        r = self.create_version()
+        self.assertEqual(r.status_code, 201)
+
+        url = "/api/components/1/versions/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
+    def test_post_retrieve_usage(self):
+        """Test to create a new Usage"""
+        self.create_product()
+        self.create_release()
+        self.create_component()
+        self.create_version()
+        self.create_license()
+
+        url = "/api/usages/"
         data = {
             "release": 1,
             "version": 1,
@@ -238,28 +206,59 @@ class APILicenseTests(APITestCase):
             "licenses_chosen": [1],
         }
 
-        r = self.c.post(url, data, format="json")
+        r = self.client.post(url, data)
         self.assertEqual(r.status_code, 201)
 
-    def step18(self):
-        """Test to retrieve the created Usage"""
-
-        # Assumes that the previously created component is the first one in the base
-        # (it's the case).
         url = "/api/usages/1/?format=json"
-
-        r = self.c.get(url)
+        r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
 
-    def _steps(self):
-        names = dir(self)
-        names.sort(
-            key=natural_keys
-        )  # Allows to have properly sorted steps since there are more than 9
-        for name in names:
-            if name.startswith("step"):
-                yield name, getattr(self, name)
 
-    def test_steps(self):
-        for name, step in self._steps():
-            step()
+class ReleaseStepsAPITestCase(APITestCase):
+    def import_licenses(cls):
+        with open("cube/fixtures/fake_licenses.json") as licenses_file:
+            handle_licenses_json(licenses_file)
+
+    def test_simple_sbom(self):
+        self.create_product()
+        self.create_release()
+
+        with open("cube/fixtures/fake_sbom.json", "r") as sbom_file:
+            url = reverse("cube:upload_spdx-list")
+            res = self.client.post(
+                url,
+                {
+                    "spdx_file": sbom_file,
+                    "release": 1,
+                    "replace": False,
+                    "linking": LINKING_PACKAGE,
+                },
+                format="multipart",
+            )
+        self.assertEqual(res.status_code, 201)
+
+        # TODO test step 1
+        res = self.client.get(reverse("cube:release-validation-1", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], True)
+
+        # Step 2
+        res = self.client.post(
+            reverse("cube:release-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(res.data["validation_step"], 2)  # unknown license
+        res = self.client.get(reverse("cube:release-validation-2", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], False)
+        self.assertEqual(len(res.data["licenses_to_create"]), 2)
+
+        self.import_licenses()
+        # TODO test step 3
+        # TODO test step 4
+
+        # Step 5
+        res = self.client.post(
+            reverse("cube:release-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["validation_step"], 5)  # policy compatibility
+        res = self.client.get(reverse("cube:release-validation-5", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], False)

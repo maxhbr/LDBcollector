@@ -1,0 +1,26 @@
+{
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "hello-imports.spdx.json",
+  "documentDescribes": [
+    "SPDXRef-dependency1",
+    "SPDXRef-dependency2"
+  ],
+  "packages": [
+    {
+      "name": "dependency1",
+      "SPDXID": "SPDXRef-dependency1",
+      "licenseConcluded": "LicenseRef-fakeLicense-Permissive-1.0",
+      "licenseDeclared": "LicenseRef-fakeLicense-Permissive-1.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "rsc.io/quote",
+      "SPDXID": "SPDXRef-dependency2",
+      "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
+      "licenseDeclared": "LicenseRef-fakeLicense-Permissive-1.0",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

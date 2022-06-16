@@ -1,15 +1,19 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
-from django.db.models import Q, F
+import logging
 
-from cube.models import Release, License, LicenseChoice, Version
+from django.db.models import Q
+
+from cube.models import Release, License, LicenseChoice
 from cube.utils.licenses import (
     get_licenses_to_check_or_create,
     check_licenses_against_policy,
     explode_SPDX_to_units,
     is_ambiguous,
 )
+
+logger = logging.getLogger(__name__)
 
 
 def validate_step_1(release):
@@ -182,7 +186,11 @@ def propagate_choices(release_id):
                 usage.license_expression = effective_license
                 usage.save()
             except License.DoesNotExist:
-                print("Can't choose an unknown license", unique_lic_ids[0])
+                logger.warning(
+                    "%s : can not choose unknown license %s",
+                    usage.version.component,
+                    unique_lic_ids[0],
+                )
         elif usage.version.corrected_license or not is_ambiguous(effective_license):
             choices = LicenseChoice.objects.filter(
                 Q(expression_in=effective_license),

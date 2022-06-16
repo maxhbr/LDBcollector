@@ -11,6 +11,7 @@ from django_filters import rest_framework as filters
 from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
+from rest_framework.mixins import CreateModelMixin
 from rest_framework.response import Response
 
 from cube.serializers import (
@@ -197,17 +198,17 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return response
 
     @action(detail=True, methods=["post"])
-    def update_validation(self, request, pk=None):
+    def update_validation(self, pk, **kwargs):
         """
         Recalculate validation step of the release
         """
         release = self.get_object()
         update_validation_step(release)
 
-        return Response(self.get_serializer_class()(release))
+        return Response(self.get_serializer_class()(release).data)
 
     @action(detail=True, methods=["get"])
-    def validation_1(self, pk, **kwargs):
+    def validation_1(self, request, **kwargs):
         """
         Check for licenses that haven't been normalized.
         """
@@ -218,12 +219,12 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["unnormalized_usages"] = UsageSerializer(
             context["unnormalized_usages"], many=True
         ).data
-        response["details"] = reverse("release_details", args={"pk": pk})
+        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
         return Response(response)
 
     @action(detail=True, methods=["get"])
-    def validation_2(self, pk, **kwargs):
+    def validation_2(self, request, **kwargs):
         """
         Check that all the licences in a release have been created and checked.
         """
@@ -231,14 +232,16 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         release = self.get_object()
 
         response["valid"], context = validate_step_2(release)
-        for field, value in context.items():
-            response[field] = LicenseSerializer(value, many=True).data
-        response["details"] = reverse("release_details", args={"pk": pk})
+        response["licenses_to_check"] = LicenseSerializer(
+            context["licenses_to_check"], many=True
+        ).data
+        response["licenses_to_create"] = context["licenses_to_create"]
+        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
         return Response(response)
 
     @action(detail=True, methods=["get"])
-    def validation_3(self, pk, **kwargs):
+    def validation_3(self, request, **kwargs):
         """
         Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
         """
@@ -249,12 +252,12 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["to_confirm"] = VersionSerializer(
             context["to_confirm"], many=True
         ).data
-        response["details"] = reverse("release_details", args={"pk": pk})
+        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
         return Response(response)
 
     @action(detail=True, methods=["get"])
-    def validation_4(self, pk, **kwargs):
+    def validation_4(self, request, **kwargs):
         """
         Check all licenses choices are done.
         """
@@ -264,12 +267,12 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response["valid"], context = validate_step_4(release)
         for field, value in context.items():
             response[field] = UsageSerializer(value, many=True).data
-        response["details"] = reverse("release_details", args={"pk": pk})
+        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
         return Response(response)
 
     @action(detail=True, methods=["get"])
-    def validation_5(self, pk, **kwargs):
+    def validation_5(self, request, **kwargs):
         """
         Check that the licences are compatible with policy.
         """
@@ -285,7 +288,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
                 response[field] = LicenseSerializer(value, many=True).data
             elif field.startswith("derogations"):
                 response[field] = DerogationSerializer(value, many=True).data
-        response["details"] = reverse("release_details", args={"pk": pk})
+        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
         return Response(response)
 
@@ -293,7 +296,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         detail=True,
         methods=["get"],
     )
-    def junit(self, pk, **kwargs):
+    def junit(self, request, **kwargs):
         release = self.get_object()
 
         step1 = TestCase(
@@ -355,64 +358,43 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         )
 
 
-class UploadSPDXViewSet(viewsets.ViewSet):
+class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
     """
     API endpoint that allows to upload an SPDX file to Hermine.
     """
 
     serializer_class = UploadSPDXSerializer
 
-    def get_serializer_context(self):
-        context = super().get_serializer_context()
-        context.update({"request": self.request})
-        return context
-
-    def list(self, request):
-        return Response("GET Upload SPDX API")
-
-    def put(self, request):
-        spdx_file = request.FILES.get("spdx_file")
-        release_id = request.POST.get("release_id")
-        content_type = spdx_file.content_type
+    def perform_create(self, serializer):
+        spdx_file = serializer.validated_data["spdx_file"]
+        release = serializer.validated_data["release"]
         import_spdx_file(
             spdx_file,
-            release_id,
-            request.POST.get("replace", False),
-            defaults={"linking": request.POST.get("linking")},
+            release.pk,
+            serializer.validated_data.get("replace", False),
+            defaults={"linking": serializer.validated_data.get("linking")},
         )
-        response = "POST API and you have uploaded a {} file".format(content_type)
+        response = "POST API and you have uploaded a file"
         return Response(response)
 
 
-class UploadORTViewSet(viewsets.ViewSet):
+class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
     """
     API endpoint that allows to upload an ORT output file to Hermine.
     """
 
     serializer_class = UploadORTSerializer
 
-    def get_serializer_context(self):
-        context = super().get_serializer_context()
-        context.update({"request": self.request})
-        return context
-
-    def list(self, request):
-        return Response("GET Upload SPDX API")
-
-    def put(self, request):
-        ort_file = request.FILES.get("ort_file")
-        release_id = request.POST.get("release_id")
-        if ort_file is not None:
-            content_type = ort_file.content_type
-            import_ort_evaluated_model_json_file(
-                ort_file,
-                release_id,
-                request.POST.get("replace", False),
-                defaults={"linking": request.POST.get("linking")},
-            )
-            response = "POST API and you have uploaded a {} file".format(content_type)
-        else:
-            response = "You forgot to upload a file !"
+    def perform_create(self, serializer):
+        ort_file = serializer.validated_data["ort_file"]
+        release = serializer.validated_data["release_id"]
+        import_ort_evaluated_model_json_file(
+            ort_file,
+            release.id,
+            serializer.validated_date.get("replace", False),
+            defaults={"linking": serializer.validated_data.get("linking")},
+        )
+        response = "POST API and you have uploaded a file"
         return Response(response)
 
 

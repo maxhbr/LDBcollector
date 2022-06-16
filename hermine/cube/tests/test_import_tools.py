@@ -3,7 +3,8 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.test import TestCase
 
-from cube.models import Generic
+from cube.importers import import_spdx_file
+from cube.models import Generic, Usage, LINKING_PACKAGE
 from cube.utils.licenses import create_or_update_license
 
 
@@ -66,3 +67,42 @@ class ImportLicensesTestCase(TestCase):
             create_or_update_license(license)
 
         self.assertEqual(Generic.objects.all().count(), 2)
+
+
+class ImportSBOMTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_import_spdx_file(self):
+        with open("../testfiles/venom_short.spdx.yaml") as f:
+            import_spdx_file(f, 1, defaults={"linking": LINKING_PACKAGE})
+        usage = Usage.objects.get(
+            version__component__name="github.com/gorilla/websocket",
+            version__version_number="v1.4.2",
+        )
+        self.assertEqual(
+            usage.release.pk,
+            1,
+        )
+        self.assertEqual(usage.linking, LINKING_PACKAGE)
+
+        with open("../testfiles/venom_short.spdx.yaml") as f:
+            import_spdx_file(f, 1, replace=False)
+        new_usage = Usage.objects.get(
+            version__component__name="github.com/gorilla/websocket",
+            version__version_number="v1.4.2",
+        )
+        self.assertEqual(
+            usage.pk,
+            new_usage.pk,
+        )
+
+        with open("../testfiles/venom_short.spdx.yaml") as f:
+            import_spdx_file(f, 1, replace=True)
+        new_usage = Usage.objects.get(
+            version__component__name="github.com/gorilla/websocket",
+            version__version_number="v1.4.2",
+        )
+        self.assertNotEqual(
+            usage.pk,
+            new_usage.pk,
+        )
