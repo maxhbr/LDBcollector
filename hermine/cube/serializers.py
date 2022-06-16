@@ -453,14 +453,14 @@ class ComponentSerializer(serializers.ModelSerializer):
 
 class UploadSPDXSerializer(serializers.Serializer):
     spdx_file = serializers.FileField()
-    release_id = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
+    release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
     linking = serializers.ChoiceField(choices=LINKING_CHOICES, required=False)
 
 
 class UploadORTSerializer(serializers.Serializer):
     ort_file = serializers.FileField()
-    release_id = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
+    release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
     linking = serializers.ChoiceField(choices=LINKING_CHOICES, required=False)
 

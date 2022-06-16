@@ -9,6 +9,10 @@ from typing import Iterable
 from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 def is_ambiguous(spdx_expression: str):
     """
@@ -102,7 +106,7 @@ def get_licenses_to_check_or_create(release):
                 # string. Handling that.
                 if license != "NOASSERTION":
                     licenses_to_create.add(license)
-                    print("unknown license", license)
+                    logger.info("unknown license", license)
 
     response["licenses_to_check"] = licenses_to_check
     response["licenses_to_create"] = licenses_to_create
@@ -237,6 +241,6 @@ def handle_licenses_json(data):
             else:
                 updated += 1
 
-        print(f"Licenses : {created} created / {updated} updated")
+        logger.info(f"Licenses : {created} created / {updated} updated")
     else:
-        print("Type of JSON neither is a list nor a dict")
+        logger.info("Type of JSON neither is a list nor a dict")

@@ -407,7 +407,7 @@ def import_spdx_file(
     for package in document.packages:
         current_scope = "Global"
         comp_name = package.name.rsplit("@")[0]
-        comp_url = package.download_location
+        comp_url = package.download_location or ""
         comp, created = Component.objects.get_or_create(
             name=comp_name, defaults={"homepage_url": comp_url}
         )
