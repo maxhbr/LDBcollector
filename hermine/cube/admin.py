@@ -44,6 +44,7 @@ class UsageInlineTab(admin.TabularInline):
     model = Usage
     extra = 1
 
+
 class CategoryInlineStacked(admin.StackedInline):
     model = Category.products.through
     extra = 1
@@ -114,6 +115,7 @@ class ComponentAdmin(admin.ModelAdmin):
     inlines = [VersionInlineTab]
     search_fields = ["name", "description"]
 
+
 class ProductAdmin(admin.ModelAdmin):
     inlines = [CategoryInlineStacked]
     search_fields = ["name", "description"]
@@ -141,7 +143,7 @@ class VersionAdmin(admin.ModelAdmin):
 admin.site.register(License, LicenseAdmin)
 admin.site.register(Obligation, ObligationAdmin)
 admin.site.register(Category)
-admin.site.register(Product,ProductAdmin)
+admin.site.register(Product, ProductAdmin)
 admin.site.register(Release, ReleaseAdmin)
 admin.site.register(Component, ComponentAdmin)
 admin.site.register(Version, VersionAdmin)
