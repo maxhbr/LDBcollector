@@ -5,33 +5,60 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Installing Hermine
 
-## Getting the code 
+## Getting last version of code
 
-To get the code, clone the project with the command: 
+Clone the project with the command:
 
 ```
 git clone https://gitlab.com/hermine-project/hermine.git
 ```
 
-## Installing the dependencies 
+## Docker Compose
+
+You can use [Docker Compose](https://docs.docker.com/compose/) to
+manage and start containers needed for Hermine. Note that it use the Django
+python development server so may not be suited for production workloads.
+
+You need to set `HERMINE_SECRET` environment variable before
+you can start the containers. The easiest way to do so is to
+write it in a .env file.
+
+```bash
+# configure secret key
+echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
+# optional : configure HOST if you use something else than localhost
+echo "HERMINE_HOST=example.com" >> .env
+# start the services in background
+docker-compose up -d
+```
+
+Hermine should be accessible at `http://localhost:8080`. By default, a superadmin user is
+created with `admin / admin` credential. You can update these credentials
+from `http://localhost:8080/admin/auth/user/`
+
+## Manual install
+
+You can install yourself dependencies and services for running Hermine.
+You need a system running Python 3.8 server. Using a MySQL or PostgreSQL
+server rather than the default SQLite is recommended for production.
+
+### Installing the dependencies
 
 Hermine is a simple Django 4 project, using Python 3.8.
 
-It is recommanded to run it in a Python virtual environnement, with the dependencies listed in the [pyproject.toml](https://gitlab.com/hermine-project/hermine/-/blob/main/pyproject.toml) file.
+You should run Hermin in a Python virtual environnement.
+Using [poetry](https://python-poetry.org/docs/), you can create the
+virtual environment and install the dependencies with:
 
-If you use [poetry](https://python-poetry.org/docs/), you can create the virtual environment and install the dependencies with:
-
-```
+```bash
 cd hermine/
 poetry install
 ```
 
-## Running the application
-
-
+### Running the server
 
 You have to first activate your Python virtual environment. With poetry, it means:
-```
+```bash
 poetry shell
 ```
 For the first run, you have to edit your database credentials:
@@ -46,7 +73,6 @@ By default, it just uses a simple SQlite database. To use another database, plea
 
 Create the database structure:
 ```bash
-python hermine/manage.py makemigrations
 python hermine/manage.py migrate
 ```
 
@@ -55,7 +81,7 @@ Then create a user with admin privileges:
 python hermine/manage.py createsuperuser
 ```
 
-And then launch the django dev server:
+And then launch the django development server:
 
 ```bash
 python hermine/manage.py runserver
@@ -64,9 +90,14 @@ python hermine/manage.py runserver
 You can then point your browser to [http://127.0.0.1:8080/admin/](http://127.0.0.1:8080/admin/)
 and log in as superuser to create new users, or directly to [http://127.0.0.1:8080](http://127.0.0.1:8080) to use the application.
 
+For production, you should use an uWSGI server rather than the Django development
+server. Refer to
+the [Django documentation](https://docs.djangoproject.com/fr/4.0/howto/deployment/).
+
 
 ## OAuth
 
-You can configure OAuth by configuring OAUTH_CLIENT entry in the mysecrets.py file.
+You can use an OAuth2 server as authentication backend by configuring
+OAUTH_CLIENT entry in the mysecrets.py file.
 
 Users will be created on the fly at authentication by the OAuth server.

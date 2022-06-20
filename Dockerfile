@@ -41,8 +41,8 @@ COPY pyproject.toml $APP_PATH/
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi
 COPY hermine $APP_PATH/
-COPY docker-entrypoint.sh $APP_PATH/
-COPY docker_secrets.py $APP_PATH/hermine/mysecrets.py
+COPY docker/docker-entrypoint.sh $APP_PATH/
+COPY docker/docker_secrets.py $APP_PATH/hermine/mysecrets.py
 
 EXPOSE $PORT
 
