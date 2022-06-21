@@ -10,35 +10,124 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block title %}Generic obligation{{ generic.name }}{% endblock %}
 
-{% block content %}
-  <h1>Generic obligation: <strong>{{ generic.name }}</strong></h1>
-<div class="buttons">
-  <span class="tag is-dark is-medium">Type</span>  <span class="tag is-primary is-medium">{{generic.metacategory}}</span> -
-  <span class="tag is-dark is-medium">Team</span>  <span class="tag is-link is-medium">{{generic.team.name}}</span>
-  {% if generic.in_core %} <span class="tag is-dark is-medium">In core</span> {% endif %}
-</div>
-  <blockquote>{{ generic.description }}</blockquote>
+{% block breadcrumbs %}
+    <li><a href="{% url 'cube:generics' %}">Generic Obligations</a></li>
+    <li class="is-active"><a href="#" aria-current="page">...</a></li>
+{% endblock %}
 
-  <h2>{{ generic.obligation_set.all|length }} Obligations related to this generic obligation</h2>
-    <p> Present in the following licenses:
+{% block actions %}
+  <a class="button" href="/admin/cube/generic/{{generic.id}}/change/" target="_blank">
+    <span class="icon">
+      <i class="fas fa-edit"></i>
+    </span>
+    <span>Edit this generic obligation</span>
+  </a>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    {{ generic.name }}
+  </h1>
+{% endblock %}
+
+{% block infoitem %}
+  <p class="subtitle" style="text-transform: uppercase;">
+    <span class="icon is-medium">
+      <i class="fas fa-award"></i>
+    </span>
+    Generic obligation
+  </p>
+{% endblock %}
+
+
+{% block content %}
+
+  <section class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon">
+          <i class="fas fa-info-circle"></i> 
+        </span>
+        Metadata linked to this generic obligation
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="columns">
+        <div class="column">
+          <p>Core status:
+            {% if generic.in_core %} 
+              <span class="tag is-light is-medium">In core</span>
+            {% else %}
+              <span class="tag is-dark is-medium">Out of core</span>
+            {% endif %}
+          </p>
+
+          <p>Number of linked obligations: {{ generic.obligation_set.all|length }}</p>
+        </div>
+
+        <div class="column">
+          <p>Metacategory: <span class="tag is-primary is-medium">{{generic.metacategory}}</span></p>
+          <p>Team: <span class="tag is-link is-medium">{{generic.team.name}}</span></p>
+          <p>Passivity:</p>
+        </div>
+
+        <div class="column">
+          <p>Description: </p>
+          <blockquote>{{ generic.description }}</blockquote>
+        </div>
+      
+    </div>
+  </section>
+
+  <section class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon">
+          <i class="fas fa-balance-scale"></i> 
+        </span>
+        Present in the following licenses
+      </p>
+    </header>
+    <div class="card-content">
+      <p>
+        {% for obligation in generic.obligation_set.all %}
+          <a href="#{{ obligation.license.spdx_id }}">
+          <span class="tag {{ obligation.license|getColorTag }}">
+            {{ obligation.license.spdx_id }}
+          </span>
+        </a>
+        {% endfor %}
+      </p>
+    </div>
+  </section>
+
+  <h3 class="title is-3">Detail of linked obligations</h3>
     {% for obligation in generic.obligation_set.all %}
-      <a href="#{{ obligation.license.spdx_id }}">
-      <span class="tag {{ obligation.license|getColorTag }}">
-        {{ obligation.license.spdx_id }}
-      </span>
-    </a>
-    {% endfor %}
-    </p>
-    {% for obligation in generic.obligation_set.all %}
-      <hr>
-      <h2 id="{{ obligation.license.spdx_id }}">{{ obligation.name }}</h2>
-        <p>
-          <a href="/license/{{obligation.license.id}}"
-            <span class="tag {{ obligation.license|getColorTag }}">
-              {{ obligation.license.spdx_id }}
-            </span>
-          </a>
-        </p>
-        <blockquote>{{ obligation.verbatim }}</blockquote>
+      <div class="card">
+        <header class="card-header">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <p class="card-header-title" id="{{ obligation.license.spdx_id }}">{{ obligation.name }}</p>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                <p>
+                  <a href="/license/{{obligation.license.id}}">
+                    <span class="tag {{ obligation.license|getColorTag }}">
+                      <i class="fas fa-balance-scale"> </i> . {{ obligation.license.spdx_id }}
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            « {{ obligation.verbatim }} »
+          </div>
+        </div>
+      </div>
     {% endfor %}
 {% endblock %}
