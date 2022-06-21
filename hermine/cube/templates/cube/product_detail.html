@@ -7,7 +7,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% load cube_tags %}
 {% block title %}Product : {{ product.name }}
 {% endblock %}
-
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:products'%}">Products</a></li>
+  <li>{{ product.name }}</li>
+</ul>
+{% endblock %}
 {% block content %}
 <h1 class="title is-1">Product : {{ product.name }}</h1>
   <p> <b>Categories:</b>

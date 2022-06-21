@@ -8,7 +8,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 {% block title %}Component{{ object.name }} {% endblock %}
-
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:components' %}">Components</a></li>
+  <li>{{ object.name }}</li>
+</ul>
+{% endblock %}
 {% block content %}
   <h1>{{ object.name }}</h1>
   <p> This is the detail of what you know about this component. It can be completed manually here: 

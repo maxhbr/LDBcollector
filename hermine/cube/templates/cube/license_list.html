@@ -7,52 +7,38 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% block title %}Licenses{% endblock %}
-
-{% block content %}
-
-<section class="hero is-small is-info">
-  <div class="hero-body">
-    <p class="title">
-      <span class="icon is-medium">
-        <i class="fas fa-balance-scale"></i>
-      </span>
-       LICENCES
-    </p>
-    <!-- <p class="subtitle">
-      Number of licence in the database : 
-    </p> -->
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-info is-inverted" href="/admin/cube/license/add/">
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li>Licenses</li>
+</ul>
+{% endblock %}
+{% block actions %}
+<a class="button is-info is-inverted" href="/admin/cube/license/add/">
             <span class="icon">
               <i class="fas fa-plus"></i>
             </span>
             <span>Create a new licence</span>
           </a>
-          
-          <form class="export_licenses" id="export_licenses" action="{% url 'cube:export_licenses' %}" method="get">
-            {% csrf_token %}
-            <button class="button" value="Export to JSON" type="submit">
-              <span class="icon">
+
+          <a href="{% url 'cube:export_licenses' %}" class="button">
+            <span class="icon">
                 <i class="fas fa-file-export"></i>
               </span>
               <span>Export</span>
-            </button>
-          </form>
-          
-          <!-- <a class="button">
-            <span class="icon">
-              <i class="fas fa-file-import"></i>
-            </span>
-            <span>Import</span>
-          </a> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</section>
+          </a>
+{% endblock %}
+{% block herozone %}
+<h1 class="title">
+  <span class="icon is-medium">
+  <i class="fas fa-balance-scale"></i>
+  </span>
+Licenses
+</h1>
+
+
+{% endblock %}
+{% block content %}
 
 
 <div class="container is-fluid">

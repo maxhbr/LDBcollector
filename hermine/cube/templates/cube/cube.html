@@ -124,7 +124,37 @@ SPDX-License-Identifier: MIT
 
         </div>
       </aside>
-
+<section class="section is-title-bar">
+  <div class="level">
+    <div class="level-left">
+      <div class="level-item">
+        {% block breadcrumbs %}
+        {% endblock %}
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+       {% block actions %}
+       {% endblock %}
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="hero is-hero-bar">
+    <div class="hero-body">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            {% block herozone %}
+            {% endblock %}
+          </div>
+        </div>
+        <div class="level-right" style="display: none;">
+          <div class="level-item"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
       <section class="section is-main-section content">
       {% block content %}
