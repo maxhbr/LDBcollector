@@ -13,4 +13,4 @@ class Command(BaseImportCommand):
     help = "Import licenses json file into Hermine"
 
     def handle(self, *args, input_file, **options):
-        handle_licenses_json(input_file)
+        handle_licenses_json(input_file.read())

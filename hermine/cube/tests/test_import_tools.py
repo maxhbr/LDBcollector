@@ -4,11 +4,25 @@
 from django.test import TestCase
 
 from cube.importers import import_spdx_file
-from cube.models import Generic, Usage, LINKING_PACKAGE
-from cube.utils.licenses import create_or_update_license
+from cube.models import Generic, Usage, LINKING_PACKAGE, License
+from cube.utils.generics import export_generics, handle_generics_json
+from cube.utils.licenses import (
+    create_or_update_license,
+    export_licenses,
+    handle_licenses_json,
+)
 
 
 class ImportLicensesTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_export_import(self):
+        count = License.objects.all().count()
+        export = export_licenses(indent=True)
+        License.objects.all().delete()
+        handle_licenses_json(export)
+        self.assertEqual(License.objects.all().count(), count)
+
     def test_generic_autocreation(self):
         json = [
             {
@@ -67,6 +81,17 @@ class ImportLicensesTestCase(TestCase):
             create_or_update_license(license)
 
         self.assertEqual(Generic.objects.all().count(), 2)
+
+
+class ImportGenericTestCase(TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_export_import(self):
+        count = Generic.objects.all().count()
+        export = export_generics(indent=True)
+        Generic.objects.all().delete()
+        handle_generics_json(export)
+        self.assertEqual(License.objects.all().count(), count)
 
 
 class ImportSBOMTestCase(TestCase):

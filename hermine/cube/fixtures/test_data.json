@@ -124,7 +124,7 @@
         "addition_date": "2022-01-19T16:01:40Z",
         "linking": "Dynamic",
         "component_modified": "Unmodified",
-        "exploitation": "Distribution",
+        "exploitation": "DistributionSourceDistributionNonSource",
         "description": "This is a test Usage",
         "scope": null,
         "license_expression": "",
@@ -144,7 +144,7 @@
         "addition_date": "2022-01-19T16:01:40Z",
         "linking": "Dynamic",
         "component_modified": "Unmodified",
-        "exploitation": "Distribution",
+        "exploitation": "DistributionSourceDistributionNonSource",
         "description": "This is a test Usage",
         "scope": null,
         "license_expression": "",
@@ -160,7 +160,7 @@
         "name": "License and copyright notices in documentation",
         "description": "Reproduce in documentation complete text of licenses and other texts relative to IP ownership.",
         "in_core": true,
-        "metacategory": "IP management",
+        "metacategory": "IPManagement",
         "team": null,
         "passivity": "Active"
     }
@@ -174,7 +174,7 @@
         "name": "Test Licence Distribution Unmodified",
         "verbatim": "Test Licence Distribution Unmodified",
         "passivity": "Active",
-        "trigger_expl": "Distribution",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "Unmodified"
     }
 },
@@ -187,7 +187,7 @@
         "name": "Test Licence Distribution Modified or not",
         "verbatim": "Test Licence Distribution Modified or not",
         "passivity": "Active",
-        "trigger_expl": "Distribution",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "AlteredUnmodified"
     }
 },
@@ -291,7 +291,7 @@
         "name": "TestObligation",
         "verbatim": "This obligation is for testing purpose. please delete it.",
         "passivity": "Active",
-        "trigger_expl": "Distribution",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "Unmodified"
     }
 },
@@ -304,7 +304,7 @@
         "name": "Test Licence NetworkAccess Unmodified",
         "verbatim": "Test Licence NetworkAccess Unmodified",
         "passivity": "",
-        "trigger_expl": "Distribution",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "Unmodified"
     }
 },
@@ -330,7 +330,7 @@
         "name": "Test Licence Distribution Altered",
         "verbatim": "Test Licence Distribution Altered",
         "passivity": "Active",
-        "trigger_expl": "Distribution",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "Altered"
     }
 },

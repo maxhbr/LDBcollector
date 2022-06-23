@@ -226,7 +226,7 @@ def export_licenses(indent=False):
 
 
 def handle_licenses_json(data):
-    licenseArray = json.load(data)
+    licenseArray = json.loads(data)
     # Handling case of a JSON that only contains one license and is not a list
     # (single license purpose)
     if type(licenseArray) is dict:
