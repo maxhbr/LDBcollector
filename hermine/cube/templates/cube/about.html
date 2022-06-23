@@ -7,10 +7,21 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% block title %}About{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium">
+      <i class="fas fa-question-circle"></i>
+    </span>
+    About Hermine
+  </h1>
+{% endblock %}
+
 {% block content %}
-  <h1 class="title is-1">About Hermine</h1>
+  
+  <h2>Objectives</h2>
   <p>Hermine is an Open Source project to ease legal compliance with third party software included in your developements. It provides a framework to organize your interpretation of the different Open Source licences and their application to the <abbr title="Software Bill Of Materials">SBOMs</abbr> of your software products.</p>
-  <p>It is aimed to interface with and complement existing Open Source tools, like OSS Review Toolkit. </p>
+  <p>It is aimed to interface with and complement existing Open Source tools, like <a href="https://oss-review-toolkit.org/" target="_blank">OSS Review Toolkit.</a></p>
 
   <h2>The Third party components we directly rely on</h2>
   <p>Hermine is built on top of other great Open Source projects</p>

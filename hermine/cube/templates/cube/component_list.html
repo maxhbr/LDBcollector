@@ -8,102 +8,180 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% block title %}Components{% endblock %}
 
+{% block breadcrumbs %}
+  <li>Components</li>
+{% endblock %}
+
+{% block actions %}
+  <a class="button is-info is-inverted" href="/admin/cube/component/add/">
+    <span class="icon">
+      <i class="fas fa-plus"></i>
+    </span>
+    <span>Create a new component</span>
+  </a>
+
+  <a href="/admin/cube/component/" class="button">
+    <span class="icon">
+        <i class="fas fa-cogs"></i>
+      </span>
+      <span>Manage component</span>
+  </a>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium">
+      <i class="fas fa-puzzle-piece"></i>
+    </span>
+    Components
+  </h1>
+{% endblock %}
+
+
 {% block content %}
 
-<h2>Top 10 Most used components </h2>
+  <h2>Top 10 Most used components </h2>
 
-<table class="table is-striped ">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Number of usages</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-{% for popular in populars %}
-    <tr>
-      <td><a href="{% url "cube:component_detail" popular.id %}">{{popular.name}}</a></td>
-      <td>
-        {{popular.popularity}}
-      </td>
-      <td>
-        {{ component.description|truncatechars:42 }}
-      </td>
-    </tr>
+  <div class="card has-table">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon"><i class="fas fa-award"></i></span>
+        {{component|length}} components
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="b-table has-pagination">
+        <div class="table-wrapper has-mobile-cards">
 
-{% endfor %}
-  </tbody>
-</table>
-<h2>All components </h2>
-<div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-            <a href="?page=1"><span class="current button is-link">1</span></a>
-            <a href="?page={{ page_obj.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
-        {% endif %}
+          {% if component|length >= 1 %}
 
-        <span class="current button is-primary">
-            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-        </span>
+            <table class="table is-striped ">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Number of usages</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+            {% for popular in populars %}
+                <tr>
+                  <td><a href="{% url "cube:component_detail" popular.id %}">{{popular.name}}</a></td>
+                  <td>
+                    {{popular.popularity}}
+                  </td>
+                  <td>
+                    {{ component.description|truncatechars:42 }}
+                  </td>
+                </tr>
 
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}"><span class="current button is-link is-light">next</span></a>
-            <a href="?page={{ page_obj.paginator.num_pages }}"><span class="current button is-link">{{page_obj.paginator.num_pages}}</span></a>
-        {% endif %}
-    </span>
+            {% endfor %}
+              </tbody>
+            </table>
+
+            {% else %}
+            <div class="card has-table">
+              <div class="card-content">
+                <section class="section">
+                  <div class="content has-text-grey has-text-centered">
+                    <p>
+                      <span class="icon is-large"><i class="fas fa-surprise fa-2x"></i></span>
+                    </p>
+                    <p>Nothing's here…</p></div>
+                </section>
+              </div>
+            </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <h2>All components </h2>
+  
+  <div class="card has-table">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon"><i class="fas fa-award"></i></span>
+        {{component|length}} component
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="b-table has-pagination">
+        <div class="table-wrapper has-mobile-cards">
+
+          {% if component|length >= 9 %}
+
+            <table class="table is-striped ">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Versions</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for component in object_list %}
+                    <tr>
+                      <td><a href="{% url "cube:component_detail" component.id %}">{{component.name}}</a></td>
+                      <td>
+                        {% for version in component.versions.all %}
+                          {{ version.version_number }}
+                        {% endfor %}
+                      </td>
+                      <td>
+                        {{ component.description|truncatechars:42 }}
+                      </td>
+                    </tr>
+
+                {% endfor %}
+              </tbody>
+            </table>
+
+            <div class="notification">
+              <nav class="pagination" role="navigation" aria-label="pagination">
+                {% if page_obj.has_previous %}
+                  <a class="pagination-previous" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                {% else %}
+                  <a class="pagination-previous is-disabled" aria-disabled="true" disabled title="This is the first page">First page</a>
+                {% endif %}
+            
+                <span class="pagination-list">
+                  Page {{ licenses.number }} of {{ licenses.paginator.num_pages }}.
+                </span>
+            
+                {% if page_obj.has_next %}
+                <a class="pagination-next" href="?page={{ page_obj.next_page_number }}">Next</a>
+                {% else %}
+                  <a class="pagination-next is-disabled" disabled aria-disabled="true" title="This is the last page">Last page</a>
+                {% endif %}
+              </nav>
+            </div>
+
+            {% else %}
+            <div class="card has-table">
+              <div class="card-content">
+                <section class="section">
+                  <div class="content has-text-grey has-text-centered">
+                    <p>
+                      <span class="icon is-large"><i class="fas fa-surprise fa-2x"></i></span>
+                    </p>
+                    <p>Nothing's here…</p></div>
+                </section>
+              </div>
+            </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 </div>
-
-
-<table class="table is-striped ">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Versions</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-{% for component in object_list %}
-    <tr>
-      <td><a href="{% url "cube:component_detail" component.id %}">{{component.name}}</a></td>
-      <td>
-        {% for version in component.versions.all %}
-          {{ version.version_number}}
-        {% endfor %}
-      </td>
-      <td>
-        {{ component.description|truncatechars:42 }}
-      </td>
-    </tr>
-
-{% endfor %}
-  </tbody>
-</table>
-
-
-
-
-
-
-<div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-            <a href="?page=1"><span class="current button is-link">1</span></a>
-            <a href="?page={{ page_obj.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
-        {% endif %}
-
-        <span class="current button is-primary">
-            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-        </span>
-
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}"><span class="current button is-link is-light">next</span></a>
-            <a href="?page={{ page_obj.paginator.num_pages }}"><span class="current button is-link">{{page_obj.paginator.num_pages}}</span></a>
-        {% endif %}
-    </span>
-</div>
-
 
 
 {% endblock %}
