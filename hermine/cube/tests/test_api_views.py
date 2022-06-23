@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from rest_framework.test import APITestCase as BaseAPITestCase
 
-from cube.models import LINKING_PACKAGE, Version, LicenseChoice
+from cube.models import LINKING_PACKAGE, Version, LicenseChoice, Derogation
 from cube.utils.licenses import handle_licenses_json
 
 SPDX_ID = "testlicense"
@@ -303,3 +303,14 @@ class ReleaseStepsAPITestCase(APITestCase):
         self.assertEqual(res.data["validation_step"], 5)  # policy compatibility
         res = self.client.get(reverse("cube:release-validation-5", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
+
+        ## Simulate fixing
+        Derogation.objects.create(license_id=2, release_id=1)
+        res = self.client.get(reverse("cube:release-validation-5", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], True)
+
+        ## Finished
+        res = self.client.post(
+            reverse("cube:release-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["validation_step"], 6)
