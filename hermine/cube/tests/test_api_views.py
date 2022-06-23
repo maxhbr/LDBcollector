@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from rest_framework.test import APITestCase as BaseAPITestCase
 
-from cube.models import LINKING_PACKAGE, Version
+from cube.models import LINKING_PACKAGE, Version, LicenseChoice
 from cube.utils.licenses import handle_licenses_json
 
 SPDX_ID = "testlicense"
@@ -274,12 +274,27 @@ class ReleaseStepsAPITestCase(APITestCase):
 
         ## Simulate fixing manually
         Version.objects.filter(component__name="dependency3").update(
-            corrected_license="LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0"
+            corrected_license="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0"
         )
         res = self.client.get(reverse("cube:release-validation-3", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
 
-        # TODO test step 4
+        # Step 4
+        res = self.client.post(
+            reverse("cube:release-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["validation_step"], 4)  # License choices
+        res = self.client.get(reverse("cube:release-validation-4", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], False)
+        self.assertEqual(len(res.data["to_resolve"]), 1)
+
+        ## Simulate
+        LicenseChoice.objects.create(
+            expression_in="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0",
+            expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0",
+        )
+        res = self.client.get(reverse("cube:release-validation-4", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], True)
 
         # Step 5
         res = self.client.post(
