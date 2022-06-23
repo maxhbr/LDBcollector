@@ -223,6 +223,9 @@ class License(models.Model):
     def __str__(self):
         return self.spdx_id
 
+    class Meta:
+        ordering = ("spdx_id",)
+
 
 class Usage(models.Model):
     """A class that allows to qualify how a Version of a component is used in a Release
