@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from rest_framework.test import APITestCase as BaseAPITestCase
 
-from cube.models import LINKING_PACKAGE
+from cube.models import LINKING_PACKAGE, Version
 from cube.utils.licenses import handle_licenses_json
 
 SPDX_ID = "testlicense"
@@ -238,7 +238,15 @@ class ReleaseStepsAPITestCase(APITestCase):
             )
         self.assertEqual(res.status_code, 201)
 
-        # TODO test step 1
+        # Step 1
+        res = self.client.get(reverse("cube:release-validation-1", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], False)
+        self.assertEqual(len(res.data["unnormalized_usages"]), 1)
+
+        ## Simulate fixing manually
+        Version.objects.filter(component__name="dependency1").update(
+            spdx_valid_license_expr="LicenseRef-fakeLicense-Permissive-1.0"
+        )
         res = self.client.get(reverse("cube:release-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
 

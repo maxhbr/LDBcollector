@@ -11,12 +11,12 @@
     {
       "name": "dependency1",
       "SPDXID": "SPDXRef-dependency1",
-      "licenseConcluded": "LicenseRef-fakeLicense-Permissive-1.0",
-      "licenseDeclared": "LicenseRef-fakeLicense-Permissive-1.0",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Permissive-1.0",
       "copyrightText": "NOASSERTION"
     },
     {
-      "name": "rsc.io/quote",
+      "name": "dependency2",
       "SPDXID": "SPDXRef-dependency2",
       "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
       "licenseDeclared": "LicenseRef-fakeLicense-Permissive-1.0",
