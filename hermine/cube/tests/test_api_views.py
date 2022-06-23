@@ -244,7 +244,7 @@ class ReleaseStepsAPITestCase(APITestCase):
         self.assertEqual(len(res.data["unnormalized_usages"]), 1)
 
         ## Simulate fixing manually
-        Version.objects.filter(component__name="dependency1").update(
+        Version.objects.filter(component__name="dependency2").update(
             spdx_valid_license_expr="LicenseRef-fakeLicense-Permissive-1.0"
         )
         res = self.client.get(reverse("cube:release-validation-1", kwargs={"id": 1}))
@@ -261,7 +261,24 @@ class ReleaseStepsAPITestCase(APITestCase):
         self.assertEqual(len(res.data["licenses_to_create"]), 2)
 
         self.import_licenses()
-        # TODO test step 3
+        res = self.client.get(reverse("cube:release-validation-2", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], True)
+
+        # Step 3
+        res = self.client.post(
+            reverse("cube:release-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["validation_step"], 3)  # ANDs confirmation
+        res = self.client.get(reverse("cube:release-validation-3", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], False)
+
+        ## Simulate fixing manually
+        Version.objects.filter(component__name="dependency3").update(
+            corrected_license="LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0"
+        )
+        res = self.client.get(reverse("cube:release-validation-3", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], True)
+
         # TODO test step 4
 
         # Step 5
