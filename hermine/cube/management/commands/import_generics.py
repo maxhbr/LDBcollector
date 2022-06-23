@@ -7,4 +7,4 @@ from cube.utils.generics import handle_generics_json
 
 class Command(BaseImportCommand):
     def handle(self, *args, input_file, **options):
-        handle_generics_json(input_file)
+        handle_generics_json(input_file.read())

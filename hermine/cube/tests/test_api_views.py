@@ -218,7 +218,7 @@ class APICRUDTests(APITestCase):
 class ReleaseStepsAPITestCase(APITestCase):
     def import_licenses(cls):
         with open("cube/fixtures/fake_licenses.json") as licenses_file:
-            handle_licenses_json(licenses_file)
+            handle_licenses_json(licenses_file.read())
 
     def test_simple_sbom(self):
         self.create_product()

@@ -10,11 +10,13 @@ from cube.serializers import GenericSerializer
 
 
 def export_generics(indent=False):
+    serializer = GenericSerializer(Generic.objects.all(), many=True)
+    data = json.dumps(serializer.data, indent=4 if indent else None)
     return serialize("json", Generic.objects.all(), indent=4 if indent else None)
 
 
 def handle_generics_json(data):
-    genericsArray = json.load(data)
+    genericsArray = json.loads(data)
     created, updated = 0, 0
     for generic in genericsArray:
         try:
