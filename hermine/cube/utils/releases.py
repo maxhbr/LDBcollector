@@ -126,7 +126,7 @@ def update_validation_step(release: Release):
 
     step4, context = validate_step_4(release)
     info.update(context)
-    if step3 and validation_step == 4:
+    if step4 and validation_step == 4:
         validation_step = 5
 
     step5, context = validate_step_5(release)

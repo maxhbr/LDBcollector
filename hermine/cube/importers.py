@@ -418,6 +418,8 @@ def import_spdx_file(
         if vers_lic_decl == "NOASSERTION":
             vers_lic_decl = ""
         vers_lic_concl = package.conc_lics.identifier
+        if vers_lic_concl == "NOASSERTION":
+            vers_lic_concl = ""
         vers, vcreated = Version.objects.get_or_create(
             component=comp,
             version_number=vers_number,

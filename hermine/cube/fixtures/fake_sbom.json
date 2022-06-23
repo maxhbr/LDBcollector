@@ -10,16 +10,23 @@
   "packages": [
     {
       "name": "dependency1",
-      "SPDXID": "SPDXRef-dependency1",
-      "licenseConcluded": "LicenseRef-fakeLicense-Permissive-1.0",
-      "licenseDeclared": "LicenseRef-fakeLicense-Permissive-1.0",
+      "SPDXID": "SPDXRef-dependency2",
+      "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
+      "licenseDeclared": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
       "copyrightText": "NOASSERTION"
     },
     {
-      "name": "rsc.io/quote",
-      "SPDXID": "SPDXRef-dependency2",
-      "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
-      "licenseDeclared": "LicenseRef-fakeLicense-Permissive-1.0",
+      "name": "dependency2",
+      "SPDXID": "SPDXRef-dependency1",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Permissive-1.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "dependency3",
+      "SPDXID": "SPDXRef-dependency3",
+      "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
+      "licenseDeclared": "LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
       "copyrightText": "NOASSERTION"
     }
   ]
