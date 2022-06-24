@@ -17,12 +17,12 @@ class MiscViewsTestCase(TestCase):
     def test_home(self):
         url = reverse("cube:root")
         res = self.client.get(url)
-        self.assertEqual(res.status_code, 200)
+        self.assertEqual(res.status_code, 302)
 
     def test_about(self):
         url = reverse("cube:about")
         res = self.client.get(url)
-        self.assertEqual(res.status_code, 200)
+        self.assertEqual(res.status_code, 302)
 
 
 class UnauthenticatedTestCase(TestCase):
