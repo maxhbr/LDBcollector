@@ -7,12 +7,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
-
 {% block title %}Generic obligation{{ generic.name }}{% endblock %}
-
 {% block breadcrumbs %}
-    <li><a href="{% url 'cube:generics' %}">Generic Obligations</a></li>
-    <li class="is-active"><a href="#" aria-current="page">...</a></li>
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:generics' %}">Generic obligations</a></li>
+  <li>{{ generic.name|truncatechars:42 }}</li>
+</ul>
 {% endblock %}
 
 {% block actions %}
@@ -25,11 +26,10 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block herozone %}
-  <h1 class="title">
-    {{ generic.name }}
-  </h1>
+<div class="hero-body">
+  <p class="title">{{ generic.name }}</p>
+</div>
 {% endblock %}
-
 {% block infoitem %}
   <p class="subtitle" style="text-transform: uppercase;">
     <span class="icon is-medium">
@@ -38,24 +38,19 @@ SPDX-License-Identifier: AGPL-3.0-only
     Generic obligation
   </p>
 {% endblock %}
-
-
 {% block content %}
-
-  <section class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        <span class="icon">
-          <i class="fas fa-info-circle"></i> 
-        </span>
-        Metadata linked to this generic obligation
-      </p>
-    </header>
-    <div class="card-content">
-      <div class="columns">
-        <div class="column">
-          <p>Core status:
-            {% if generic.in_core %} 
+<section class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      <span class="icon"><i class="fas fa-info-circle"></i></span>
+      Features of this generic obligation
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="columns">
+      <div class="column">
+        <p>Core status:
+            {% if generic.in_core %}
               <span class="tag is-light is-medium">In core</span>
             {% else %}
               <span class="tag is-dark is-medium">Out of core</span>
@@ -75,7 +70,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <p>Description: </p>
           <blockquote>{{ generic.description }}</blockquote>
         </div>
-      
+
     </div>
   </section>
 
@@ -83,9 +78,9 @@ SPDX-License-Identifier: AGPL-3.0-only
     <header class="card-header">
       <p class="card-header-title">
         <span class="icon">
-          <i class="fas fa-balance-scale"></i> 
+          <i class="fas fa-balance-scale"></i>
         </span>
-        Present in the following licenses
+        Related licenses
       </p>
     </header>
     <div class="card-content">
@@ -101,7 +96,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
   </section>
 
-  <h3 class="title is-3">Detail of linked obligations</h3>
+  <h3 class="title is-3">Related individual obligations</h3>
     {% for obligation in generic.obligation_set.all %}
       <div class="card">
         <header class="card-header">

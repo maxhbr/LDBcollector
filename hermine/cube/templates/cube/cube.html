@@ -74,13 +74,13 @@ SPDX-License-Identifier: MIT
             <li>
               <a href="{% url 'cube:products' %}" class="has-icon">
                 <span class="icon"><i class="fas fa-cubes"></i></span>
-                <span class="menu-item-label">Products</span>
+                <span class="menu-item-label">Your Products</span>
               </a>
             </li>
             <li>
               <a href="{% url 'cube:components' %}" class="has-icon">
                 <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
-                <span class="menu-item-label">Components</span>
+                <span class="menu-item-label">3rd p. Components</span>
               </a>
             </li>
           </ul>
@@ -124,85 +124,72 @@ SPDX-License-Identifier: MIT
 
         </div>
       </aside>
-    
-    <section class="section is-title-bar">
+<section class="section is-title-bar">
+  <div class="level">
+    <div class="level-left">
+      <div class="level-item">
+        {% block breadcrumbs %}
+        {% endblock %}
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+       {% block actions %}
+       {% endblock %}
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="hero is-hero-bar">
+    <div class="hero-body">
       <div class="level">
         <div class="level-left">
           <div class="level-item">
-            <!--<nav class="breadcrumb" aria-label="breadcrumbs">-->
-              <ul>
-                <li><a href="#">Hermine</a></li>
-                {% block breadcrumbs %}
-                {% endblock %}
-              </ul>
-            <!--</nav>-->
+            {% block herozone %}
+            {% endblock %}
           </div>
         </div>
         <div class="level-right">
           <div class="level-item">
-            <div class="buttons is-right">
-              {% block actions %}
-              {% endblock %}
-            </div>
+            {% block infoitem %}
+            {% endblock %}
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="hero is-small is-info">
-      <div class="hero-body">
-        <div class="level">
-          <div class="level-left">
-            <div class="level-item">
-              {% block herozone %}
-              {% endblock %}
-            </div>
-          </div>
-          <div class="level-right" >
-            <div class="level-item">
-              {% block infoitem %}
-              {% endblock %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section is-main-section content">
+      <section class="section is-main-section content">
       {% block content %}
       {% endblock %}
-    </section>
+      </section>
 
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="level">
-          <div class="level-left">
-            <div class="level-item">
-              © 2021, Hermine project contributors
-            </div>
-            <div class="level-item">
-              <a href="https://gitlab.com/hermine-project/hermine" style="height: 20px">
-                <img src="https://user-content.gitlab-static.net/994540c19b90ea166003d560ed33d3d0a7db35d3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4147504c5f76332d626c75652e737667">
-              </a>
-            </div>
-            <div class="level-item">
-              <a href="https://github.com/vikdiesel/admin-one-bulma-dashboard" style="height: 25px">
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                © 2021, Hermine project contributors
+              </div>
+              <div class="level-item">
+                <a href="https://github.com/vikdiesel/admin-one-bulma-dashboard" style="height: 20px">
 
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="level-right">
-            <div class="level-item">
-              <div class="logo">
-                <a href="https://hermine-foss.org"><img src="{% static 'cube/media/LogoHermine.svg' %}" alt="Hermine project Logo"></a>
+            <div class="level-right">
+              <div class="level-item">
+                <div class="logo">
+                  <a href="https://hermine-foss.org"><img src="{% static 'cube/media/LogoHermine.svg' %}" alt="Hermine project Logo"></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
-  </div>
-  <script type="text/javascript" src="{% static 'cube/js/main.js' %}"></script>
-</body>
+    </div>
+    <script type="text/javascript" src="{% static 'cube/js/main.js' %}"></script>
+  </body>
 </html>
+

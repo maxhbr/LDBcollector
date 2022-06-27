@@ -8,78 +8,79 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 {% block title %}{{ license.long_name }} {% endblock %}
-
 {% block breadcrumbs %}
-    <li><a href="{% url 'cube:licenses' page=1 %}">Licenses</a></li>
-    <li class="is-active"><a href="#" aria-current="page">{{ license.spdx_id }}</a></li>
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:licenses' page=1 %}">Licenses</a></li>
+  <li>{{ license.spdx_id }}</li>
+</ul>
 {% endblock %}
-
 {% block actions %}
-  <a class="button" href="/admin/cube/license/{{license.id}}/change/" target="_blank">
-    <span class="icon">
-      <i class="fas fa-edit"></i>
-    </span>
-    <span>Edit this licence</span>
-  </a>
+          <a class="button" href="/admin/cube/license/{{license.id}}/change/" target="_blank">
+            <span class="icon">
+              <i class="fas fa-edit"></i>
+            </span>
+            <span>Edit this licence</span>
+          </a>
 
-  <div class="dropdown is-hoverable is-right">
-    <div class="dropdown-trigger">
-      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-        <span>Actions</span>
-        <span class="icon is-small">
-          <i class="fas fa-angle-down" aria-hidden="true"></i>
-        </span>
-      </button>
-    </div>
-    <div class="dropdown-menu" id="dropdown-menu" role="menu">
-      <div class="dropdown-content">
-        <a href="export/" class="dropdown-item">
-          <span class="icon is-small">
-            <i class="fas fa-download"></i>
-          </span>
-          <span>Export as JSON</span>
-        </a>
-        <a href="print/" class="dropdown-item">
-          <span class="icon is-small">
-            <i class="fas fa-print"></i>
-          </span>
-          <span>Print (ODT export)</span>
-        </a>
-      </div>
-    </div>
-  </div>
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Actions</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="export/" class="dropdown-item">
+                  <span class="icon is-small">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>Export as JSON</span>
+                </a>
+                <a href="print/" class="dropdown-item">
+                  <span class="icon is-small">
+                    <i class="fas fa-print"></i>
+                  </span>
+                  <span>Print (ODT export)</span>
+                </a>
+              </div>
+            </div>
+          </div>
 {% endblock %}
-
 {% block herozone %}
-  <h1 class="title">
-    {{ license.long_name }}
-  </h1>
+<div class="hero-body">
+  <p class="title">{{ license.long_name }}</p>
+</div>
 {% endblock %}
-
 {% block infoitem %}
-  <p class="subtitle" style="text-transform: uppercase;">
-    <span class="icon is-medium">
-      <i class="fas fa-balance-scale"></i>
+<p class="subtitle" style="text-transform: uppercase;">
+  <span class="icon is-medium">
+    <i class="fas fa-balance-scale"></i>
     </span>
-    LICENCE
+    License
   </p>
 {% endblock %}
-
 {% block content %}
+<div class="container is-fluid">
 
-  <section class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        <span class="icon">
-          <i class="fas fa-info-circle"></i> 
-        </span>
-        Metadata linked to this generic obligation
-      </p>
-    </header>
-    <div class="card-content">
-      <div class="columns">
+  <section class="section">
+
+    <div class="columns">
+      <div class="column is-narrow">
+        <div style="width: 500px;">
+          <h3 class="title is-3">Métadonnées</h3>
+        </div>
+      </div>
+    </div>
+  
+ 
+
+      <div class="columns box">
         <div class="column">
-          <p>ID SPXD:
+          <p>Ref SPXD:
             <a href="https://spdx.org/licenses/{{ license.spdx_id }}.html" target="_blank">
               <span class="icon is-small">
                 <i class="fas fa-link"></i>
@@ -101,20 +102,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ license.get_status_display }}
             </span>
           </p>
-
-          {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}        
-          <p>
-              <span class="icon">
-                <i class="fas fa-check has-text-success"></i>
-              </span>
-              <span>This license is covered by the obligations in the core</span>
-          </p>
-        {% else %}
-          <p>
-            <span class="icon has-text-grey"><i class="fas fa-times"></i></span>
-            This license is NOT covered by the obligations in the core
-          </p>
-        {% endif %}
+  
          
         </div>
         <div class="column">
@@ -176,8 +164,19 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% endif %}
         </div>
       </div>
-    </div>
-  </section>
+        
+    </section>
+
+        {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}
+        
+        <p><div class="icon-text">
+          <span class="icon has-text-success">
+            <i class="fas fa-check"></i>
+          </span>
+          <span>This license is covered by the obligations in the core</span>
+        </div></p>
+
+        {% endif %}
 
 
   <h3 class="title is-3">Obligations</h3>
@@ -334,6 +333,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% endif %}
   </section>
 
+</div>
 
   
 {% endblock %}
