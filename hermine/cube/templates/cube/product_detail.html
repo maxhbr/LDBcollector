@@ -14,9 +14,22 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>{{ product.name }}</li>
 </ul>
 {% endblock %}
+{% block herozone %}
+  <div class="hero-body">
+    <p class="subtitle is-3" >
+      <span class="icon is-medium">
+        <i class="fas fa-cubes"></i>
+      </span>
+       Product
+    </p>
+    <p class="title">
+      {{ product.name }}
+    </p>
+
+  </div>
+{% endblock %}
 {% block content %}
-<h1 class="title is-1">Product : {{ product.name }}</h1>
-  <p> <b>Categories:</b>
+<p> <b>Categories:</b>
     {% for category in product.category_set.all %}
     <span class="tag is-dark"> {{ category }}</span>
     {% endfor %}
@@ -48,7 +61,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <td><progress class="progress is-primary" value="{{release.valid_step|default:1}}" max="5">15%</progress></td>
       <td><a href="{% url 'cube:release_detail' release.id %}"><i class="fas fa-info-circle"></i></a> |
         <a href="{%  url "cube:release_bom" release.id %}"><i class="fas fa-upload"></i></a> |
-        <a href="/admin/cube/release/{{release.id}}" target="_blank"><i class="far fa-edit"></i></a></td>
+        <a href="/admin/cube/release/{{release.id}}/change/" target="_blank"><i class="far fa-edit"></i></a></td>
 
     </tr>
   </a>

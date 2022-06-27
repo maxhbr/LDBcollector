@@ -7,39 +7,69 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% block title %}Generic obligation{% endblock %}
-
-{% block content %}
-
-<section class="hero is-small is-info">
-  <div class="hero-body">
-    <p class="title">
-      <span class="icon is-medium">
-        <i class="fas fa-award"></i>
-      </span>
-       Generic obligations
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li>Generic obligations</li>
+</ul>
+{% endblock %}
+{% block actions %}
+<form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:import_generics' %}" method="post">
+  {% csrf_token %}
+  <div class="field has-addons">
+    <p class="control">
+      <input class="input" name="file" type="file" placeholder="Your email">
+    </p>
+    <p class="control">
+      <button class="button" value="Import JSON" type="submit"><span class="icon">
+            <i class="fas fa-file-import"></i>
+          </span>
+          <span>Import</span></button>
     </p>
   </div>
-</section>
+</form>
 
+<a class="button" href="/admin/cube/generic/add/">
+            <span class="icon">
+              <i class="fas fa-plus"></i>
+            </span>
+            <span>Create a new generic obligation</span>
+          </a>
 
+          <a href="{% url 'cube:export_generics' %}" class="button">
+            <span class="icon">
+                <i class="fas fa-file-export"></i>
+              </span>
+              <span>Export as JSON</span>
+          </a>
+{% endblock %}<>
+{% block herozone %}
+<h1 class="title">
+  <span class="icon is-medium">
+  <i class="fas fa-award"></i>
+  </span>
+Generic obligations
+</h1>
+{% endblock %}
+{% block content %}
   <div id="content-main">
-
     <section class="section box">
       <p>Generic obligations allow you to gather similar obligations from different licenses in order to standardize the actions to be taken to fulfill them. Those actions can be taken at different levels (code, policy...) and have to be placed under the responsibility of the competent actors in in the organization.</p>
-      <p>You can download all he current Generic obligations by clicking on the followong button :</p>
-      <form class="export_generics" id="export_generics" action="{% url 'cube:export_generics' %}" method="get">
-        {% csrf_token %}
-        <button class="button is-primary" value="Export Generic Obligations" type="submit">Export Generic Obligations to JSON</button>
-      </form>
-      <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:import_generics' %}" method="post">
-        {% csrf_token %}
-        <table>
-        <tr>
-          <th>{{ form }}</th>
-          <th><button class="button is-secondary" value="Import JSON" type="submit">Import</button></th>
-        </tr>
-        </table>
-      </form>
+
+<form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:import_generics' %}" method="post">
+  {% csrf_token %}
+  <div class="field has-addons">
+    <p class="control">
+      <input class="input" name="file" type="file" placeholder="Your email">
+    </p>
+    <p class="control">
+      <button class="button" value="Import JSON" type="submit"><span class="icon">
+            <i class="fas fa-file-import"></i>
+          </span>
+          <span>Import</span></button>
+    </p>
+  </div>
+</form>
     </section>
 
 
