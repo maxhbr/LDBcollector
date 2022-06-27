@@ -149,8 +149,11 @@ SPDX-License-Identifier: MIT
             {% endblock %}
           </div>
         </div>
-        <div class="level-right" style="display: none;">
-          <div class="level-item"></div>
+        <div class="level-right">
+          <div class="level-item">
+            {% block infoitem %}
+            {% endblock %}
+          </div>
         </div>
       </div>
     </div>
@@ -177,7 +180,7 @@ SPDX-License-Identifier: MIT
             <div class="level-right">
               <div class="level-item">
                 <div class="logo">
-                  <a href="https://inno3.fr"><img src="{% static 'cube/media/LogoHermine.svg' %}" alt="Hermine project Logo"></a>
+                  <a href="https://hermine-foss.org"><img src="{% static 'cube/media/LogoHermine.svg' %}" alt="Hermine project Logo"></a>
                 </div>
               </div>
             </div>

@@ -56,40 +56,6 @@ Licenses
 
 <div class="container is-fluid">
 
-  <p></p>
-
-  <section class="section box">
-    <h3>Need to import licence(s)?</h3>
-    <form class="import_licenses" id="import_licenses" enctype="multipart/form-data" action="{% url 'cube:import_licenses' %}" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <button class="button" value="Import" type="submit">
-          <span class="icon">
-            <i class="fas fa-file-import"></i>
-          </span>
-          <span>Import</span>
-        </button>
-    </form>
-  </section>
-
-  <!--
-    FIRST TEST TO ADD A FILTER BAR
-    <section class="section box">
-    <div class="columns">
-      <div class="column">
-        Number of licence in the database :
-      </div>
-
-      <div class="column">
-        FILTER BAR
-      </div>
-
-      <div class="column">
-        <button class="button is-link">FILTER</button>
-      </div>
-    </div>
-  </section> -->
-
   <nav class="pagination" role="navigation" aria-label="pagination">
     {% if licenses.has_previous %}
       <a class="pagination-previous" href="/licenses/{{ licenses.previous_page_number }}">Previous</a>
@@ -112,7 +78,7 @@ Licenses
   <table class="table">
     <thead>
       <tr>
-        <th>Color</th>
+        <th>Policy status</th>
         <th>SPDX ID</th>
         <th>License Name</th>
         <th>Obligations Qty</th>

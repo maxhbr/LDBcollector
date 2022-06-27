@@ -7,12 +7,19 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
-
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
+  <li>{{object.release_number}}</li>
+</ul>
+{% endblock %}
+{% block herozone %}
+<div class="hero-body">
+  <p class="title">Release: {{object.release_number}}</p>
+</div>
+{% endblock %}
 {% block content %}
-
-<h1 class="title is-1">{{ object.product.name }}</h1>
-<h2 class="title is-2">Release: {{object.release_number}}</h2>
-
 <div class="tabs is-centered is-boxed is-medium">
   <ul>
     <li>
