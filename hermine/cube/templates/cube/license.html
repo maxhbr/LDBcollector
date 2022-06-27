@@ -259,7 +259,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </header>
         <div class="card-content">
           <div class="content">
-            <p> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </p>
+            <p> Generic : <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
             <p>{{ obligation.passivity }}</p>
             {% if obligation.passivity == "Active" %}
               Applies if:
@@ -309,7 +309,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </header>
         <div class="card-content">
           <div class="content">
-            <p> Generic : <a href="/admin/cube/generic/{{obligation.generic.id}}/change/" target="_blank">{{obligation.generic}}</a> </p>
+            <p> Generic : <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
             <p>{{ obligation.passivity }}</p>
             {% if obligation.passivity == "Active" %}
               Applies if:
