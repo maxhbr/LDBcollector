@@ -13,34 +13,7 @@ Clone the project with the command:
 git clone https://gitlab.com/hermine-project/hermine.git
 ```
 
-## Docker Compose
-
-You can use [Docker Compose](https://docs.docker.com/compose/) to
-manage and start containers needed for Hermine. Note that it use the Django
-python development server so may not be suited for production workloads.
-
-You need to set `HERMINE_SECRET` environment variable before
-you can start the containers. The easiest way to do so is to
-write it in a .env file.
-
-```bash
-# configure secret key
-echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
-# optional : configure HOST if you use something else than localhost
-echo "HERMINE_HOST=example.com" >> .env
-# start the services in background
-docker-compose up -d
-```
-
-Hermine should be accessible at `http://localhost:8080`. By default, a superadmin user is
-created with `admin / admin` credential. You can update these credentials
-from `http://localhost:8080/admin/auth/user/`
-
-## Manual install
-
-You can install yourself dependencies and services for running Hermine.
-You need a system running Python 3.8 server. Using a MySQL or PostgreSQL
-server rather than the default SQLite is recommended for production.
+## Development
 
 ### Installing the dependencies
 
@@ -95,7 +68,39 @@ server. Refer to
 the [Django documentation](https://docs.djangoproject.com/fr/4.0/howto/deployment/).
 
 
-## OAuth
+## Production
+
+### Docker Compose
+
+With [Docker Compose](https://docs.docker.com/compose/), you can run Hermine in
+production with just two environment variables and one command line.
+
+You just need to set `HERMINE_SECRET` and `HERMINE_HOST` environment variables before
+you can start the containers. The easiest way to do so is to
+write it in a .env file.
+
+```bash
+# configure secret key
+echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
+# optional : configure HOST if you use something else than localhost:80
+echo "HERMINE_HOST=example.com" >> .env
+# start the services in background
+docker-compose up -d
+```
+
+Hermine should be accessible at `https://example.com`. Caddy automatically sets up
+and renew HTTPS certificates.
+
+By default, a superadmin user is
+created with `admin / admin` credential. You can update these credentials
+from `http://localhost:8080/admin/auth/user/`
+
+### Manual install
+
+You can install yourself dependencies and services for running Hermine.
+You need a system running Python 3.8 server. Using a MySQL or PostgreSQL
+server rather than the default SQLite is recommended for production.
+### OAuth
 
 You can use an OAuth2 server as authentication backend by configuring
 OAUTH_CLIENT entry in the mysecrets.py file.
