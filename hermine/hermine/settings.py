@@ -33,6 +33,7 @@ DEBUG = True
 
 if (host := os.environ.get("HOST")) is not None:
     ALLOWED_HOSTS = [host]
+    CSRF_TRUSTED_ORIGINS = [host]
 else:
     ALLOWED_HOSTS = []
 
