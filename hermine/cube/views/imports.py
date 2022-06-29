@@ -4,8 +4,7 @@
 from django.shortcuts import redirect, render
 from django.views.decorators.csrf import csrf_exempt
 
-from cube.forms import ImportLicensesForm, ImportBomForm
-from cube.importers import import_ort_evaluated_model_json_file, import_spdx_file
+from cube.forms import ImportLicensesForm
 from cube.utils.generics import handle_generics_json
 from cube.utils.licenses import handle_licenses_json
 
