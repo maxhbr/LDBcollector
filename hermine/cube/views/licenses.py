@@ -188,6 +188,7 @@ def print_license(request, license_id):
         for o in license_instance.obligation_set.all():
             h = H(outlinelevel=1, stylename=h3style, text=o.name)
             textdoc.text.addElement(h)
+            generic = o.generic
 
             if generic:
                 p = P(text="Related Generic Obligation: ")
