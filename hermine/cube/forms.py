@@ -19,7 +19,7 @@ class ImportBomForm(forms.ModelForm):
     BOM_ORT = "ORTBom"
     BOM_SPDX = "SPDXBom"
     BOM_CHOICES = (
-        (BOM_ORT, "ORT Bill of Materials"),
+        (BOM_ORT, "ORT Evaluated model"),
         (BOM_SPDX, "SPDX Bill of Materials"),
     )
     IMPORT_MODE_MERGE = "Merge"
