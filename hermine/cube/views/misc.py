@@ -5,6 +5,7 @@
 
 #
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
 from django.shortcuts import render
 from django.views.generic import TemplateView
@@ -12,7 +13,7 @@ from django.views.generic import TemplateView
 from cube.models import License, Product, Component, Release
 
 
-class IndexView(TemplateView):
+class IndexView(LoginRequiredMixin, TemplateView):
     template_name = "cube/index.html"
 
     def get_context_data(self, **kwargs):
@@ -29,7 +30,7 @@ class IndexView(TemplateView):
         return kwargs
 
 
-class AboutView(TemplateView):
+class AboutView(LoginRequiredMixin, TemplateView):
     template_name = "cube/about.html"
 
 
