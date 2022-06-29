@@ -6,6 +6,7 @@ from urllib.parse import quote
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
+from django.utils.http import urlencode
 
 
 class ForceLoginMixin:
@@ -13,20 +14,10 @@ class ForceLoginMixin:
         self.client.force_login(User.objects.get(username="admin"))
 
 
-class MiscViewsTestCase(TestCase):
-    def test_home(self):
-        url = reverse("cube:root")
-        res = self.client.get(url)
-        self.assertEqual(res.status_code, 302)
-
-    def test_about(self):
-        url = reverse("cube:about")
-        res = self.client.get(url)
-        self.assertEqual(res.status_code, 302)
-
-
 class UnauthenticatedTestCase(TestCase):
     urls = [
+        reverse("cube:root"),
+        reverse("cube:about"),
         reverse("cube:products"),
         reverse("cube:product_detail", kwargs={"pk": 1}),
         reverse("cube:components"),
