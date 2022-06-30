@@ -18,7 +18,7 @@ from cube.models import License, Generic
 @login_required
 def licenses(request, page=1):
     form = ImportLicensesForm(request.POST, request.FILES)
-    licenses = License.objects.all().order_by('spdx_id')
+    licenses = License.objects.all().order_by("spdx_id")
     number_of_licenses = len(licenses)
     paginator = Paginator(licenses, 50)
 
