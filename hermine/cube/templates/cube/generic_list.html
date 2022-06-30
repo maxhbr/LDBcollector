@@ -6,94 +6,178 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 {% extends "cube/cube.html" %}
-{% block title %}OS policy{% endblock %}
-
-{% block content %}
-  <div id="content-main">
-    <h1 class="title is-1">Open Source Policy</h1>
-    <h2 class="title is-2">Generic obligations</h2>
-    <p>Generic obligations allow you to gather similar obligations from different licenses in order to standardize the actions to be taken to fulfill them. Those actions can be taken at different levels (code, policy...) and have to be placed under the responsibility of the competent actors in in the organization.</p>
-    <p>You can download all he current Generic obligations by clicking on the followong button :</p>
-    <form class="export_generics" id="export_generics" action="{% url 'cube:export_generics' %}" method="get">
-      {% csrf_token %}
-      <button class="button is-primary" value="Export Generic Obligations" type="submit">Export Generic Obligations to JSON</button>
-    </form>
-    <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:import_generics' %}" method="post">
-      {% csrf_token %}
-      <table>
-      <tr>
-        <th>{{ form }}</th>
-        <th><button class="button is-secondary" value="Import JSON" type="submit">Import</button></th>
-      </tr>
-      </table>
-    </form> 
-    <h2>Generic obligations in the core </h2>
-    <p>
-      The <em>core</em> is the set of generic obligations considered as fitting enough your policy to be executed for every single component, even if the license of a component does not require the obligation expressly.
-      The core is currently consisting on the <strong>{{generics_incore|length}}</strong> following generic obligations&nbsp;:
+{% block title %}Generic obligation{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li>Generic obligations</li>
+</ul>
+{% endblock %}
+{% block actions %}
+<form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:import_generics' %}" method="post">
+  {% csrf_token %}
+  <div class="field has-addons">
+    <p class="control">
+      <input class="input" name="file" type="file" placeholder="Your email">
     </p>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Core</th>
-          <th>Metacategory</th>
-          <th>Lead</th>
-          <th>Generic obligation</th>
-          <th>Number of licences</th>
-          <th>Passivity</th>
-          <th>Details</th>       
-          <th>Edit</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for generic in generics_incore %}
-          <tr>
-            <td> <button class="button is-dark">In core</button></td>
-            <td><div class="buttons"><button class="button is-primary">{{generic.metacategory}}</button></div></td>
-            <td><button class="button is-link">{{generic.team.name}}</td>
-            <td>{{generic.name}}</td>
-            <td>{{ generic.obligation_set.all|length }}</td>
-            <td>{{generic.passivity}}
-            <td><a href="{% url 'cube:generic' generic.id %}"><i class="far fa-eye fa-2x"></i></a></td>
-            <td><a href="/admin/cube/generic/{{generic.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></td>
-
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    <h3 class="title is-3">Generic obligations out of the core</h3>
-    <p><strong>{{generics_outcore|length}}</strong> other generic obligations have been identified.</p>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Core</th>
-          <th>Metacategory</th>
-          <th>Lead</th>
-          <th>Generic obligation</th>
-          <th>Number of licences</th>
-          <th>Passivity</th>
-          <th>Details</th>
-          <th>Edit</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for generic in generics_outcore %}
-          <tr>
-            <td> <button class="button is-light">Out of core</button></td>
-            <td><div class="buttons">
-            <button class="button is-primary">{{generic.metacategory}}</button></td>
-            <td><button class="button is-link">{{generic.team.name}}</td>
-            <td>{{generic.name}}</td>
-            <td>{{ generic.obligation_set.all|length }}</td>
-            <td>{{ generic.passivity}}</td>
-            <td><a href="{% url 'cube:generic' generic.id %}"><i class="far fa-eye fa-2x"></i></a></td>
-            <td><a href="/admin/cube/generic/{{generic.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <p class="control">
+      <button class="button" value="Import JSON" type="submit">
+        <span class="icon"><i class="fas fa-file-import"></i></span>
+      <span>Import</span></button>
+    </p>
   </div>
+</form>
+<a class="button" href="/admin/cube/generic/add/">
+  <span class="icon"><i class="fas fa-plus"></i></span>
+  <span>Create a new generic obligation</span>
+</a>
+<a href="{% url 'cube:export_generics' %}" class="button">
+  <span class="icon"><i class="fas fa-file-export"></i></span>
+  <span>Export as JSON</span>
+</a>
+{% endblock %}<>
+{% block herozone %}
+<h1 class="title">
+  <span class="icon is-medium">
+  <i class="fas fa-award"></i>
+  </span>
+Generic obligations
+</h1>
+{% endblock %}
+{% block content %}
+<div id="content-main">
+    <p>The <em>core</em> is the set of generic obligations considered as fitting enough your policy to be executed for every single component, even if the license of a component does not require the obligation expressly.
+  </p>
+  <div class="card has-table">
+    <header class="card-header">
+        <p class="card-header-title">
+          <span class="icon"><i class="fas fa-award"></i></span>
+          {{generics_incore|length}} generic obligations in the core
+        </p>
+      </header>
+      <div class="card-content">
+        <div class="b-table has-pagination">
+          <div class="table-wrapper has-mobile-cards">
+
+            {% if generics_incore|length >= 1 %}
+            <table class="table is-striped is-hoverable">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Category</th>
+                  <th>Lead</th>
+                  <th>Nb of licences</th>
+                  <th>Passivity</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for generic in generics_incore %}
+                  <tr>
+                    <td>{{generic.name}}</td>
+                    <td><div class="buttons"><button class="button is-primary">{{generic.metacategory}}</button></td>
+                    <td><button class="button is-link">{{generic.team.name}}</td>
+                    <td>{{ generic.obligation_set.all|length }}</td>
+                    <td>{{ generic.passivity}}</td>
+                    <td class="is-actions-cell">
+                      <div class="buttons is-right">
+                        <a class="button is-small" type="button" href="{% url 'cube:generic' generic.id %}">
+                          <span class="icon"><i class="fas fa-eye"></i></span>
+                        </a>
+                        <a class="button is-small " href="/admin/cube/generic/{{generic.id}}/change/" target="_blank" type="button">
+                          <span class="icon"><i class="fas fa-edit"></i></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+
+            {% else %}
+            <div class="card has-table">
+              <div class="card-content">
+                <section class="section">
+                  <div class="content has-text-grey has-text-centered">
+                    <p>
+                      <span class="icon is-large"><i class="fas fa-surprise fa-2x"></i></span>
+                    </p>
+                    <p>Nothing's here…</p></div>
+                </section>
+              </div>
+            </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="card has-table">
+      <header class="card-header">
+        <p class="card-header-title">
+          <span class="icon"><i class="fas fa-award"></i></span>
+          {{generics_outcore|length}} generic obligations out of the core
+        </p>
+      </header>
+      <div class="card-content">
+        <div class="b-table has-pagination">
+          <div class="table-wrapper has-mobile-cards">
+            {% if generics_outcore|length >= 1 %}
+            <table class="table is-striped is-hoverable">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Category</th>
+                  <th>Lead</th>
+                  <th>Nb of licences</th>
+                  <th>Passivity</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for generic in generics_outcore %}
+                  <tr>
+                    <td>{{generic.name}}</td>
+                    <td><div class="buttons"><button class="button is-primary">{{generic.metacategory}}</button></td>
+                    <td><button class="button is-link">{{generic.team.name}}</td>
+                    <td>{{ generic.obligation_set.all|length }}</td>
+                    <td>{{ generic.passivity}}</td>
+                    <td class="is-actions-cell">
+                      <div class="buttons is-right">
+                        <a class="button is-small" type="button" href="{% url 'cube:generic' generic.id %}">
+                          <span class="icon"><i class="fas fa-eye"></i></span>
+                        </a>
+                        <a class="button is-small" href="/admin/cube/generic/{{generic.id}}/change/" target="_blank" type="button">
+                          <span class="icon"><i class="fas fa-edit"></i></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+
+            {% else %}
+      <div class="card has-table">
+        <div class="card-content">
+          <section class="section">
+            <div class="content has-text-grey has-text-centered">
+              <p>
+                <span class="icon is-large"><i class="fas fa-surprise fa-2x"></i></span>
+              </p>
+              <p>Nothing's here…</p></div>
+          </section>
+        </div>
+      </div>
+      {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
 {% endblock %}
 
 

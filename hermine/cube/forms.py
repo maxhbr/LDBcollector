@@ -8,11 +8,11 @@ from .models import Release, LINKING_CHOICES
 
 
 class ImportGenericsForm(forms.Form):
-    file = forms.FileField(label="Import a JSON containing Generic Obligations")
+    file = forms.FileField()
 
 
 class ImportLicensesForm(forms.Form):
-    file = forms.FileField(label="Upload a JSON containing license data")
+    file = forms.FileField()
 
 
 class ImportBomForm(forms.ModelForm):

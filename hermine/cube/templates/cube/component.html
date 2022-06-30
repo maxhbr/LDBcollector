@@ -8,12 +8,36 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 {% block title %}Component{{ object.name }} {% endblock %}
-
-{% block content %}
-  <h1>{{ object.name }}</h1>
-  <p> This is the detail of what you know about this component. It can be completed manually here: 
-    <a href="/admin/cube/component/{{object.id}}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:components' %}">Components</a></li>
+  <li>{{ object.name }}</li>
+</ul>
+{% endblock %}
+{% block actions %}
+<a class="button" href="/admin/cube/component/{{object.id}}/change/" target="_blank">
+  <span class="icon">
+    <i class="fas fa-edit"></i>
+  </span>
+  <span>Edit this component</span>
+</a>
+{% endblock %}
+{% block herozone %}
+<div class="hero-body">
+  <p class="title">{{ object.name }}</p>
+</div>
+{% endblock %}
+{% block infoitem %}
+<p class="subtitle" style="text-transform: uppercase;">
+  <span class="icon is-medium">
+    <i class="fas fa-puzzle-piece"></i>
+    </span>
+    Component
   </p>
+{% endblock %}
+{% block content %}
+
   <h2>Description</h2>
   <div class="box"> {{ object.description }}</div>
   

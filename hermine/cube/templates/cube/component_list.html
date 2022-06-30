@@ -7,6 +7,20 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% block title %}Components{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li>Components</li>
+</ul>
+{% endblock %}
+{% block herozone %}
+<h1 class="title">
+  <span class="icon is-medium">
+  <i class="fas fa-puzzle-piece"></i>
+  </span>
+3rd Party Components
+</h1>
+{% endblock %}
 
 {% block content %}
 
@@ -28,7 +42,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {{popular.popularity}}
       </td>
       <td>
-        {{ component.description|truncatechars:42 }}
+        {{ popular.description|truncatechars:42 }}
       </td>
     </tr>
 
