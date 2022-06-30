@@ -20,7 +20,7 @@ You can use Hermine through the GUI for one shot analysis
 ### Import your raw SBOM
 
 - Create a product and a release for this product in Django's admin
-- Generate an export from ORT
+- Generate an `EvaluatedModel` report with ORT from the Analyzer results:
 
 ```bash
 ort analyze -i /path/to/sourcecode -o /folder/for/analyzer/ -f JSON
