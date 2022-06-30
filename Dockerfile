@@ -35,8 +35,8 @@ WORKDIR $APP_PATH
 # debug
 RUN apt update && apt install -y postgresql-client net-tools
 
-RUN pip install "poetry==$POETRY_VERSION"
-COPY pyproject.toml $APP_PATH/
+RUN pip install "poetry==$POETRY_VERSION" gunicorn
+COPY pyproject.toml poetry.lock $APP_PATH/
 
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi

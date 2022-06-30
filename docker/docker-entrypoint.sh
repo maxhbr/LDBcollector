@@ -37,9 +37,11 @@ f_readArgs "$@"
 
 f_log "Entrypoint start on $PORT"
 python ./manage.py migrate
+python ./manage.py collectstatic --noinput --clear
+
 if test -n "$USER" && test -n "$PASSWORD"
 then
   f_log "create superuser if none exists with $USER"
   python ./manage.py createsuperuser_if_none_exists --user="$USER" --password="$PASSWORD"
 fi
-python ./manage.py runserver 0.0.0.0:$PORT
+python -m gunicorn hermine.wsgi -b 0.0.0.0:"$PORT"

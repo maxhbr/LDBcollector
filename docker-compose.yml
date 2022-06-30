@@ -11,13 +11,13 @@ services:
       - POSTGRES_PASSWORD=postgres
     networks:
       hermine_net:
-  web:
+  django:
     build:
       context: .
       args:
         - DEFAULT_PORT=8080
-    ports:
-      - "8080:8080"
+    volumes:
+      - static_volume:/opt/static
     environment:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
@@ -26,11 +26,31 @@ services:
       - SUPERUSER=admin
       - PASSWORD=admin
       - HOST=${HERMINE_HOST:-localhost}
+      - STATIC_ROOT=/opt/static
     links:
       - db
     networks:
       hermine_net:
+  web:
+    image: caddy
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - $PWD/docker/Caddyfile:/etc/caddy/Caddyfile
+      - static_volume:/var/www/static
+    environment:
+      - HOST=${HERMINE_HOST:-localhost}
+    links:
+      - django
+    networks:
+      hermine_net:
+    ports:
+      - "443:443"
+      - "80:80"
 networks:
   hermine_net:
 volumes:
   db_volume:
+  static_volume:
+  caddy_data:
+  caddy_config:
