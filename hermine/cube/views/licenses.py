@@ -19,6 +19,7 @@ from cube.models import License, Generic
 def licenses(request, page=1):
     form = ImportLicensesForm(request.POST, request.FILES)
     licenses = License.objects.all()
+    number_of_licenses = len(licenses)
     paginator = Paginator(licenses, 50)
 
     try:
@@ -26,7 +27,11 @@ def licenses(request, page=1):
     except EmptyPage:
         licenses = paginator.page(paginator.num_pages)
 
-    context = {"licenses": licenses, "form": form}
+    context = {
+        "licenses": licenses,
+        "number_of_licenses": number_of_licenses,
+        "form": form,
+    }
     return render(request, "cube/license_list.html", context)
 
 

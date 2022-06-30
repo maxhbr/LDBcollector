@@ -64,23 +64,20 @@ SPDX-License-Identifier: AGPL-3.0-only
   </p>
 {% endblock %}
 {% block content %}
-<div class="container is-fluid">
 
-  <section class="section">
-
-    <div class="columns">
-      <div class="column is-narrow">
-        <div style="width: 500px;">
-          <h3 class="title is-3">Métadonnées</h3>
-        </div>
-      </div>
-    </div>
-  
- 
-
-      <div class="columns box">
+  <section class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon">
+          <i class="fas fa-info-circle"></i> 
+        </span>
+        Metadata linked to this license
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="columns">
         <div class="column">
-          <p>Ref SPXD:
+          <p>SPXD ID:
             <a href="https://spdx.org/licenses/{{ license.spdx_id }}.html" target="_blank">
               <span class="icon is-small">
                 <i class="fas fa-link"></i>
@@ -102,7 +99,20 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ license.get_status_display }}
             </span>
           </p>
-  
+
+          {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}        
+          <p>
+              <span class="icon">
+                <i class="fas fa-check has-text-success"></i>
+              </span>
+              <span>This license is covered by the obligations in the core</span>
+          </p>
+        {% else %}
+          <p>
+            <span class="icon has-text-grey"><i class="fas fa-times"></i></span>
+            This license is NOT covered by the obligations in the core
+          </p>
+        {% endif %}
          
         </div>
         <div class="column">
@@ -164,19 +174,8 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% endif %}
         </div>
       </div>
-        
-    </section>
-
-        {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}
-        
-        <p><div class="icon-text">
-          <span class="icon has-text-success">
-            <i class="fas fa-check"></i>
-          </span>
-          <span>This license is covered by the obligations in the core</span>
-        </div></p>
-
-        {% endif %}
+    </div>
+  </section>
 
 
   <h3 class="title is-3">Obligations</h3>
@@ -333,7 +332,6 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% endif %}
   </section>
 
-</div>
 
   
 {% endblock %}

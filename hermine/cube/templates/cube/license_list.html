@@ -53,89 +53,88 @@ Licenses
 {% endblock %}
 {% block content %}
 
+  
 
-<div class="container is-fluid">
-
-  <nav class="pagination" role="navigation" aria-label="pagination">
-    {% if licenses.has_previous %}
-      <a class="pagination-previous" href="/licenses/{{ licenses.previous_page_number }}">Previous</a>
-    {% else %}
-      <a class="pagination-previous is-disabled" aria-disabled="true" disabled title="This is the first page">First page</a>
-    {% endif %}
-
-    <span class="pagination-list">
-      Page {{ licenses.number }} of {{ licenses.paginator.num_pages }}.
-    </span>
-
-    {% if licenses.has_next %}
-    <a class="pagination-next" href="/licenses/{{ licenses.next_page_number }}">Next</a>
-    {% else %}
-      <a class="pagination-next is-disabled" disabled aria-disabled="true" title="This is the last page">Last page</a>
-    {% endif %}
-  </nav>
+  <div class="card has-table">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon"><i class="fas fa-balance-scale"></i></span>
+        <span> {{number_of_licenses}} Licences</span>
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="b-table has-pagination">
+        <div class="table-wrapper has-mobile-cards">
 
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Policy status</th>
-        <th>SPDX ID</th>
-        <th>License Name</th>
-        <th>Obligations Qty</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for license in licenses %}
-        <tr>
-          <td>
-            {% if license.color == "Green" %}
-              <span class="tag is-success">
-                {% elif license.color == "Orange" %}
-                  <span class="tag is-warning">
-                {% elif license.color == "Red" %}
-                  <span class="tag is-danger">
-                {% elif license.color == "Grey" %}
-                  <span class="tag is-light">
-                {% else %}
-                  <span class="tag is-dark">
-              {% endif %}
-                {{ license.get_color_display }}
-            </span>
-          </td>
-          <td><a href="{% url 'cube:license' license.id %}" >{{ license.spdx_id }}</td>
-          <td>{{ license.long_name }}</td>
-          <td> 
-            {% if license.color == "Grey" %}
-              Unknown
-              {% else %}
-                {{ license.obligation_set.all|length }}
+          <table class="table is-striped is-hoverable">
+            <thead>
+              <tr>
+                <th>Policy status</th>
+                <th>SPDX ID</th>
+                <th>License Name</th>
+                <th>Obligations</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for license in licenses %}
+                <tr>
+                  <td>
+                    {% if license.color == "Green" %}
+                      <span class="tag is-success">
+                        {% elif license.color == "Orange" %}
+                          <span class="tag is-warning">
+                        {% elif license.color == "Red" %}
+                          <span class="tag is-danger">
+                        {% elif license.color == "Grey" %}
+                          <span class="tag is-light">
+                        {% else %}
+                          <span class="tag is-dark">
+                      {% endif %}
+                        {{ license.get_color_display }}
+                    </span>
+                  </td>
+                  <td><a href="{% url 'cube:license' license.id %}" >{{ license.spdx_id }}</td>
+                  <td>{{ license.long_name }}</td>
+                  <td> 
+                    {% if license.color == "Grey" %}
+                      Unknown
+                      {% else %}
+                        {{ license.obligation_set.all|length }}
+                    {% endif %}
+                  </td>
+                  <td><a href="{% url 'cube:license' license.id %}">Details</a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+
+        </div>
+
+        <div class="notification">
+          <nav class="pagination" role="navigation" aria-label="pagination">
+            {% if licenses.has_previous %}
+              <a class="pagination-previous" href="/licenses/{{ licenses.previous_page_number }}">Previous</a>
+            {% else %}
+              <a class="pagination-previous is-disabled" aria-disabled="true" disabled title="This is the first page">First page</a>
             {% endif %}
-          </td>
-          <td><a href="{% url 'cube:license' license.id %}">Details</a></td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+        
+            <span class="pagination-list">
+              Page {{ licenses.number }} of {{ licenses.paginator.num_pages }}.
+            </span>
+        
+            {% if licenses.has_next %}
+            <a class="pagination-next" href="/licenses/{{ licenses.next_page_number }}">Next</a>
+            {% else %}
+              <a class="pagination-next is-disabled" disabled aria-disabled="true" title="This is the last page">Last page</a>
+            {% endif %}
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
-  <nav class="pagination" role="navigation" aria-label="pagination">
-    {% if licenses.has_previous %}
-      <a class="pagination-previous" href="/licenses/{{ licenses.previous_page_number }}">Previous</a>
-    {% else %}
-      <a class="pagination-previous is-disabled" aria-disabled="true" disabled title="This is the first page">First page</a>
-    {% endif %}
-
-    <span class="pagination-list">
-      Page {{ licenses.number }} of {{ licenses.paginator.num_pages }}.
-    </span>
-
-    {% if licenses.has_next %}
-    <a class="pagination-next" href="/licenses/{{ licenses.next_page_number }}">Next</a>
-    {% else %}
-      <a class="pagination-next is-disabled" disabled aria-disabled="true" title="This is the last page">Last page</a>
-    {% endif %}
-  </nav>
-
-</div>
 
 {% endblock %}
