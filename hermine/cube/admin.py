@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-
+from django import forms
 from django.contrib import admin
 
 # Register your models here.
@@ -19,6 +19,7 @@ from .models import Obligation
 from .models import Derogation
 from .models import LicenseChoice
 from .models import Exploitation
+from .utils.licenses import is_ambiguous
 
 
 class ObligationInline(admin.StackedInline):
@@ -137,6 +138,15 @@ class UsageAdmin(admin.ModelAdmin):
 
 
 class VersionAdmin(admin.ModelAdmin):
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.base_fields["spdx_valid_license_expr"].help_text = (
+            "✔ License expression is not ambiguous"
+            if not is_ambiguous(obj.spdx_valid_license_expr)
+            else "❌ License expression is ambiguous : corrected license needs to be specified"
+        )
+        return form
+
     search_fields = ["purl"]
 
 
