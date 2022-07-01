@@ -15,6 +15,7 @@ class ForceLoginMixin:
 
 
 class UnauthenticatedTestCase(TestCase):
+    fixtures = ["test_data.json"]
     urls = [
         reverse("cube:root"),
         reverse("cube:about"),
@@ -32,6 +33,10 @@ class UnauthenticatedTestCase(TestCase):
             self.assertRedirects(
                 res, reverse("login") + "?next=" + quote(url, safe="/")
             )
+        self.client.force_login(User.objects.get(username="admin"))
+        for url in self.urls:
+            res = self.client.get(url)
+            self.assertEqual(res.status_code, 200)
 
 
 class ProductViewsTestCase(ForceLoginMixin, TestCase):
