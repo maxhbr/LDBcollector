@@ -6,12 +6,12 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('cube', '0008_release_commit'),
+        ("cube", "0008_release_commit"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='license',
-            options={'ordering': ('spdx_id',)},
+            name="license",
+            options={"ordering": ("spdx_id",)},
         ),
     ]
