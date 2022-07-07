@@ -16,6 +16,7 @@ from cube.models import (
     Version,
     Derogation,
     LINKING_CHOICES,
+    LicenseChoice,
 )
 
 """
@@ -504,3 +505,9 @@ class SBOMItemSerializer(serializers.Serializer):
 
 class SBOMSerializer(serializers.Serializer):
     packages = SBOMItemSerializer(many=True)
+
+
+class LicenseChoiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LicenseChoice
+        fields = "__all__"
