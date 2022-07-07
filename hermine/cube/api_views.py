@@ -8,11 +8,13 @@ from itertools import groupby
 from django.http import HttpResponse
 from django.urls import reverse
 from django_filters import rest_framework as filters
+from drf_yasg.utils import swagger_auto_schema
 from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.mixins import CreateModelMixin
 from rest_framework.response import Response
+from rest_framework.routers import APIRootView
 
 from cube.serializers import (
     LicenseSerializer,
@@ -24,9 +26,13 @@ from cube.serializers import (
     ComponentSerializer,
     VersionSerializer,
     UploadSPDXSerializer,
-    DerogationSerializer,
     UploadORTSerializer,
     SBOMSerializer,
+    Validation1Serializer,
+    Validation2Serializer,
+    Validation3Serializer,
+    Validation4Serializer,
+    Validation5Serializer,
 )
 from .importers import import_ort_evaluated_model_json_file, import_spdx_file
 from .models import (
@@ -52,6 +58,12 @@ from .utils.releases import (
     validate_step_5,
     validate_step_3,
 )
+
+
+class RootView(APIRootView):
+    """Documentation for the API is available through Swagger at /api-doc"""
+
+    pass
 
 
 class LicenseViewSet(viewsets.ModelViewSet):
@@ -207,6 +219,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
         return Response(self.get_serializer_class()(release).data)
 
+    @swagger_auto_schema(
+        responses={200: Validation1Serializer},
+    )
     @action(detail=True, methods=["get"])
     def validation_1(self, request, **kwargs):
         """
@@ -216,13 +231,14 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         release = self.get_object()
 
         response["valid"], context = validate_step_1(release)
-        response["unnormalized_usages"] = UsageSerializer(
-            context["unnormalized_usages"], many=True
-        ).data
+        response["unnormalized_usages"] = context["unnormalized_usages"]
         response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
-        return Response(response)
+        return Response(Validation1Serializer(response).data)
 
+    @swagger_auto_schema(
+        responses={200: Validation2Serializer},
+    )
     @action(detail=True, methods=["get"])
     def validation_2(self, request, **kwargs):
         """
@@ -232,14 +248,14 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         release = self.get_object()
 
         response["valid"], context = validate_step_2(release)
-        response["licenses_to_check"] = LicenseSerializer(
-            context["licenses_to_check"], many=True
-        ).data
-        response["licenses_to_create"] = context["licenses_to_create"]
+        response.update(context)
         response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
-        return Response(response)
+        return Response(Validation2Serializer(response).data)
 
+    @swagger_auto_schema(
+        responses={200: Validation3Serializer},
+    )
     @action(detail=True, methods=["get"])
     def validation_3(self, request, **kwargs):
         """
@@ -249,13 +265,14 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         release = self.get_object()
 
         response["valid"], context = validate_step_3(release)
-        response["to_confirm"] = VersionSerializer(
-            context["to_confirm"], many=True
-        ).data
+        response["to_confirm"] = context["to_confirm"]
         response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
-        return Response(response)
+        return Response(Validation3Serializer(response).data)
 
+    @swagger_auto_schema(
+        responses={200: Validation4Serializer},
+    )
     @action(detail=True, methods=["get"])
     def validation_4(self, request, **kwargs):
         """
@@ -265,12 +282,14 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         release = self.get_object()
 
         response["valid"], context = validate_step_4(release)
-        for field, value in context.items():
-            response[field] = UsageSerializer(value, many=True).data
+        response.update(context)
         response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
-        return Response(response)
+        return Response(Validation4Serializer(response).data)
 
+    @swagger_auto_schema(
+        responses={200: Validation5Serializer},
+    )
     @action(detail=True, methods=["get"])
     def validation_5(self, request, **kwargs):
         """
@@ -280,17 +299,10 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         release = self.get_object()
 
         response["valid"], context = validate_step_5(release)
-
-        for field, value in context.items():
-            if field.startswith("usages_"):
-                response[field] = UsageSerializer(value, many=True).data
-            elif field.startswith("involved_"):
-                response[field] = LicenseSerializer(value, many=True).data
-            elif field.startswith("derogations"):
-                response[field] = DerogationSerializer(value, many=True).data
+        response.update(context)
         response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
 
-        return Response(response)
+        return Response(Validation5Serializer(response).data)
 
     @action(
         detail=True,
@@ -365,6 +377,10 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
     serializer_class = UploadSPDXSerializer
 
+    @swagger_auto_schema(responses={201: "Created"})
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
+
     def perform_create(self, serializer):
         spdx_file = serializer.validated_data["spdx_file"]
         release = serializer.validated_data["release"]
@@ -374,8 +390,7 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             serializer.validated_data.get("replace", False),
             defaults={"linking": serializer.validated_data.get("linking")},
         )
-        response = "POST API and you have uploaded a file"
-        return Response(response)
+        return Response()
 
 
 class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
@@ -384,6 +399,10 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
     """
 
     serializer_class = UploadORTSerializer
+
+    @swagger_auto_schema(responses={201: "Created"})
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
         ort_file = serializer.validated_data["ort_file"]
@@ -394,7 +413,6 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             serializer.validated_date.get("replace", False),
             defaults={"linking": serializer.validated_data.get("linking")},
         )
-        response = "POST API and you have uploaded a file"
         return Response(response)
 
 

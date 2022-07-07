@@ -5,6 +5,7 @@
 
 from django.urls import path, include
 from rest_framework.authtoken import views as authviews
+from rest_framework.routers import DefaultRouter
 from rest_framework_nested import routers
 
 from . import views, api_views
@@ -75,7 +76,12 @@ urlpatterns = [
 
 # API urls
 
-router = routers.DefaultRouter()
+
+class Router(routers.DefaultRouter):
+    APIRootView = api_views.RootView
+
+
+router = Router()
 
 # Validation pipeline endpoints
 router.register(r"upload_spdx", api_views.UploadSPDXViewSet, basename="upload_spdx")

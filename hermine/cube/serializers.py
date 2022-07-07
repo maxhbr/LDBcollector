@@ -504,3 +504,41 @@ class SBOMItemSerializer(serializers.Serializer):
 
 class SBOMSerializer(serializers.Serializer):
     packages = SBOMItemSerializer(many=True)
+
+
+class Validation1Serializer(serializers.Serializer):
+    valid = serializers.BooleanField(label="Step is valid", read_only=True)
+    unnormalized_usages = UsageSerializer(read_only=True, many=True)
+    details = serializers.URLField(read_only=True)
+
+
+class Validation2Serializer(serializers.Serializer):
+    valid = serializers.BooleanField(label="Step is valid", read_only=True)
+    licenses_to_check = LicenseSerializer(read_only=True, many=True)
+    licenses_to_create = serializers.ListField(
+        read_only=True, child=serializers.CharField()
+    )
+    details = serializers.URLField(read_only=True)
+
+
+class Validation3Serializer(serializers.Serializer):
+    valid = serializers.BooleanField(label="Step is valid", read_only=True)
+    to_confirm = VersionSerializer(read_only=True, many=True)
+    details = serializers.URLField(read_only=True)
+
+
+class Validation4Serializer(serializers.Serializer):
+    valid = serializers.BooleanField(label="Step is valid", read_only=True)
+    to_resolve = UsageSerializer(read_only=True, many=True)
+    resolved = UsageSerializer(read_only=True, many=True)
+    details = serializers.URLField(read_only=True)
+
+
+class Validation5Serializer(serializers.Serializer):
+    valid = serializers.BooleanField(label="Step is valid", read_only=True)
+    usages_lic_red = UsageSerializer(read_only=True, many=True)
+    usages_lic_orange = UsageSerializer(read_only=True, many=True)
+    usages_lic_grey = UsageSerializer(read_only=True, many=True)
+    involved_lic = LicenseSerializer(read_only=True, many=True)
+    derogations = DerogationSerializer(read_only=True, many=True)
+    details = serializers.URLField(read_only=True)
