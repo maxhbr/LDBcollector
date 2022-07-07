@@ -43,7 +43,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 {% for product in object_list %}
     <tr>
       <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
-      <td> {% for category in product.category_set.all %} <span class="tag is-dark">{{ category }}</span> {% endfor %}</td>
+      <td> {% for category in product.categories.all %} <span class="tag is-dark">{{ category }}</span> {% endfor %}</td>
       <td> {{ product.description|truncatechars:50 }}</td>
       <td>{{product.owner}}</td>
       <td>{{product.releases.all|length}}</td>
