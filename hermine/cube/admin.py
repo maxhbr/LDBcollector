@@ -36,6 +36,10 @@ class ObligationAdmin(admin.ModelAdmin):
     search_fields = ["name", "license__spdx_id"]
 
 
+class CategoryAdmin(admin.ModelAdmin):
+    search_fields = ("name",)
+
+
 class VersionInlineTab(admin.TabularInline):
     model = Version
     extra = 1
@@ -43,11 +47,6 @@ class VersionInlineTab(admin.TabularInline):
 
 class UsageInlineTab(admin.TabularInline):
     model = Usage
-    extra = 1
-
-
-class CategoryInlineStacked(admin.StackedInline):
-    model = Category.products.through
     extra = 1
 
 
@@ -118,7 +117,7 @@ class ComponentAdmin(admin.ModelAdmin):
 
 
 class ProductAdmin(admin.ModelAdmin):
-    inlines = [CategoryInlineStacked]
+    autocomplete_fields = ("categories",)
     search_fields = ["name", "description"]
 
 
@@ -152,7 +151,7 @@ class VersionAdmin(admin.ModelAdmin):
 
 admin.site.register(License, LicenseAdmin)
 admin.site.register(Obligation, ObligationAdmin)
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Release, ReleaseAdmin)
 admin.site.register(Component, ComponentAdmin)

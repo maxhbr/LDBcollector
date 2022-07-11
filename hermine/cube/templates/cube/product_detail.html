@@ -29,7 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 {% block content %}
 <p> <b>Categories:</b>
-    {% for category in product.category_set.all %}
+    {% for category in product.categories.all %}
     <span class="tag is-dark"> {{ category }}</span>
     {% endfor %}
   </p>
