@@ -98,7 +98,6 @@ def validate_step_5(release):
     context["usages_lic_red"] = r["usages_lic_red"]
     context["usages_lic_orange"] = r["usages_lic_orange"]
     context["usages_lic_grey"] = r["usages_lic_grey"]
-    context["step_5_valid"] = step_5_valid
     context["involved_lic"] = r["involved_lic"]
     context["derogations"] = r["derogations"]
 
