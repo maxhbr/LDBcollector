@@ -9,6 +9,7 @@ from typing import Optional
 import logging
 
 from django.db import transaction
+from packageurl import PackageURL
 from rest_framework.parsers import JSONParser
 from spdx.parsers import (
     jsonparser,
@@ -220,7 +221,7 @@ def import_ort_evaluated_model_json_file(
         # If there is no Purl field, we recreate it from the ORT ID
 
         if current_purl is None:
-            print(f"Purl is null for {package_id}")
+            logger.info(f"Purl is null for {package_id}")
             p_type = package_id[0 : package_id.find(":")]
             p_version = package_id[package_id.rfind(":") + 1 :]
             if len(p_version) == 0:
@@ -229,22 +230,21 @@ def import_ort_evaluated_model_json_file(
                 package["id"].find(":") + 1 : package["id"].rfind(":")
             ]
             # TODO Maybe trace the fact that it's generated
-            current_purl = f"pkg:{p_type.lower()}/{p_name}@{p_version}"
-        name = current_purl.split("@")[0].split(":")[1]
+            current_purl = str(
+                PackageURL(type=p_type.lower(), name=p_name, version=p_version)
+            )
+        purl = PackageURL.from_string(current_purl)
         component, component_created = Component.objects.get_or_create(
-            name=current_purl.split("@")[0].split(":")[1],
+            name=purl.name,
             defaults={
                 "description": package.get("description", ""),
                 "homepage_url": package.get("homepage_url", ""),
             },
         )
         if component_created:
-            print(f"Component {component.name} created")
-        #        else:
-        #            print(f"Component {component.name} already there")
+            logger.info(f"Component {component.name} created")
 
         declared_licenses_indices = package.get("declared_licenses", "")
-        declared_licenses = ""
         if declared_licenses_indices:
             declared_licenses = " ; ".join(
                 [
@@ -254,7 +254,6 @@ def import_ort_evaluated_model_json_file(
             )
         else:
             declared_licenses = ""
-        #        print(f"declared_licenses {declared_licenses}")
         version, version_created = Version.objects.get_or_create(
             component=component,
             version_number=current_purl.split("@")[1],
@@ -269,7 +268,7 @@ def import_ort_evaluated_model_json_file(
             },
         )
         if version_created:
-            print(
+            logger.info(
                 f"Version {version.version_number} created for component {component.name}"
             )
 
@@ -289,7 +288,7 @@ def import_ort_evaluated_model_json_file(
             for scope_index in scope_indices:
                 scopes.add(data["scopes"][scope_index]["name"])
         for scope in scopes:
-            usage, usage_created = Usage.objects.get_or_create(
+            Usage.objects.get_or_create(
                 version_id=version.id,
                 release_id=release_idk,
                 scope=scope,
@@ -429,7 +428,7 @@ def import_spdx_file(
             },
         )
         version_id = vers.id
-        usage, usage_created = Usage.objects.get_or_create(
+        Usage.objects.get_or_create(
             version_id=version_id,
             release_id=release_id,
             scope=current_scope,
