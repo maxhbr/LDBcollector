@@ -92,6 +92,7 @@ router.register(r"components", api_views.ComponentViewSet, basename="component")
 router.register(r"usages", api_views.UsageViewSet, basename="release_exploit")
 router.register(r"products", api_views.ProductViewSet, basename="product")
 router.register(r"licenses", api_views.LicenseViewSet, basename="license")
+router.register(r"choices", api_views.LicenseChoiceViewSet, basename="choices")
 
 obligation_router = routers.NestedSimpleRouter(router, r"licenses")
 obligation_router.register(

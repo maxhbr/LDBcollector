@@ -214,6 +214,30 @@ class APICRUDTests(APITestCase):
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
 
+    def test_post_retrieve_license_choice(self):
+        """Test to create a new Usage"""
+        self.create_product()
+        self.create_release()
+        self.create_component()
+        self.create_version()
+
+        url = "/api/choices/"
+        data = {
+            "product": 1,
+            "release": 1,
+            "component": 1,
+            "version": 1,
+            "expression_in": "testlicense1 OR testlicense2",
+            "expression_out": "testlicense1",
+        }
+
+        r = self.client.post(url, data)
+        self.assertEqual(r.status_code, 201)
+
+        url = "/api/choices/1/?format=json"
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+
 
 class ReleaseStepsAPITestCase(APITestCase):
     def import_licenses(cls):
@@ -288,10 +312,13 @@ class ReleaseStepsAPITestCase(APITestCase):
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["to_resolve"]), 1)
 
-        ## Simulate
-        LicenseChoice.objects.create(
-            expression_in="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0",
-            expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0",
+        ## Create choice through API
+        res = self.client.post(
+            reverse("cube:choices-list"),
+            data={
+                "expression_in": "LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0",
+                "expression_out": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
+            },
         )
         res = self.client.get(reverse("cube:release-validation-4", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)

@@ -27,6 +27,7 @@ from cube.serializers import (
     DerogationSerializer,
     UploadORTSerializer,
     SBOMSerializer,
+    LicenseChoiceSerializer,
 )
 from .importers import import_ort_evaluated_model_json_file, import_spdx_file
 from .models import (
@@ -38,6 +39,7 @@ from .models import (
     Generic,
     Component,
     Version,
+    LicenseChoice,
 )
 from .utils.licenses import (
     get_usages_obligations,
@@ -463,3 +465,8 @@ class ObligationViewSet(viewsets.ModelViewSet):
 
     serializer_class = ObligationSerializer
     lookup_field = "id"
+
+
+class LicenseChoiceViewSet(viewsets.ModelViewSet):
+    queryset = LicenseChoice.objects.all()
+    serializer_class = LicenseChoiceSerializer
