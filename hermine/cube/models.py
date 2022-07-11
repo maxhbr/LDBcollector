@@ -127,7 +127,6 @@ class Component(models.Model):
 
 
 class Version(models.Model):
-
     component = models.ForeignKey(
         Component, on_delete=models.CASCADE, related_name="versions"
     )
@@ -136,6 +135,12 @@ class Version(models.Model):
     spdx_valid_license_expr = models.CharField(max_length=200, blank=True)
     corrected_license = models.CharField(max_length=200, blank=True)
     purl = models.CharField(max_length=250, blank=True)
+
+    @property
+    def license_is_ambiguous(self):
+        from cube.utils.licenses import is_ambiguous
+
+        return not self.corrected_license and is_ambiguous(self.spdx_valid_license_expr)
 
     class Meta:
         unique_together = ["component", "version_number"]
