@@ -1,13 +1,13 @@
 ---
-id: "GoMod::github.com/gorilla/mux:v1.7.2"
+id: "Go::github.com/gorilla/mux:v1.8.0"
 vcs:
   type: "Git"
   url: "https://github.com/gorilla/mux.git"
-  revision: "ed099d42384823742bba0bf9a72b53b55c9e2e38"
+  revision: "98cb6bf42e086f6af920b965c38cacc07402d51b"
 path_excludes:
-  - pattern: ".github/**"
+  - pattern: ".circleci/**"
     reason: "BUILD_TOOL_OF"
-  - pattern: ".travis.yml/**"
+  - pattern: ".github/**"
     reason: "BUILD_TOOL_OF"
   - pattern: "*_test.go"
     reason: "TEST_OF"

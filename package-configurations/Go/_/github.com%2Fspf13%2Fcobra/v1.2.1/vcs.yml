@@ -1,9 +1,9 @@
 ---
-id: "GoMod::github.com/spf13/cobra:v1.3.0"
+id: "Go::github.com/spf13/cobra:v1.2.1"
 vcs:
   type: "Git"
   url: "https://github.com/spf13/cobra.git"
-  revision: "bfacc59f62c67ffd43e93655a8d933cefab0fa99"
+  revision: "de187e874d1ca382320088f8f6d76333408e5c2e"
 path_excludes:
   - pattern: "doc/**"
     reason: "DOCUMENTATION_OF"

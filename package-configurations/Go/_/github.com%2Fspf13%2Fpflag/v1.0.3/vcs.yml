@@ -1,5 +1,5 @@
 ---
-id: "GoMod::github.com/spf13/pflag:v1.0.3"
+id: "Go::github.com/spf13/pflag:v1.0.3"
 vcs:
   type: "Git"
   url: "https://github.com/spf13/pflag.git"
