@@ -6,6 +6,8 @@ import json
 import re
 from typing import Iterable
 
+from django.db import transaction
+
 from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
 
@@ -225,6 +227,7 @@ def export_licenses(indent=False):
     return data
 
 
+@transaction.atomic()
 def handle_licenses_json(data):
     licenseArray = json.loads(data)
     # Handling case of a JSON that only contains one license and is not a list

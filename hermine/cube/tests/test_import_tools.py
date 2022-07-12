@@ -31,7 +31,7 @@ class ImportLicensesTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(res.status_code, 200)
         License.objects.all().delete()
         res = self.client.post(
-            reverse("cube:import_licenses"),
+            reverse("cube:licenses", args=[1]),
             data={
                 "file": SimpleUploadedFile(
                     "lincenses.json", res.content, "application/json"
