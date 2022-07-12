@@ -2,9 +2,15 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+import json
+from json import JSONDecodeError
 
 from django import forms
+from django.core.exceptions import ValidationError
+from rest_framework import serializers
+
 from .models import Release, LINKING_CHOICES
+from .utils.licenses import handle_licenses_json
 
 
 class ImportGenericsForm(forms.Form):
@@ -13,6 +19,24 @@ class ImportGenericsForm(forms.Form):
 
 class ImportLicensesForm(forms.Form):
     file = forms.FileField()
+
+    def clean_file(self):
+        file = self.cleaned_data["file"].read()
+
+        try:
+            json.loads(file)
+        except JSONDecodeError:
+            raise ValidationError("The file is not a valid JSON file")
+
+        return file
+
+    def save(self):
+        try:
+            handle_licenses_json(self.cleaned_data["file"])
+        except serializers.ValidationError as e:
+            raise ValidationError(e.message)
+        except KeyError:
+            raise ValidationError('Each license object must have a "spdx_id" field.')
 
 
 class ImportBomForm(forms.ModelForm):

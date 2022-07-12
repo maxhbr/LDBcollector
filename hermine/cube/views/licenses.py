@@ -2,11 +2,14 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.core.paginator import Paginator, EmptyPage
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
+from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, FormView
 from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
@@ -15,58 +18,49 @@ from cube.forms import ImportLicensesForm, ImportGenericsForm
 from cube.models import License, Generic
 
 
-@login_required
-def licenses(request, page=1):
-    form = ImportLicensesForm(request.POST, request.FILES)
-    licenses = License.objects.all().order_by("spdx_id")
-    number_of_licenses = len(licenses)
-    paginator = Paginator(licenses, 50)
+class LicensesListView(LoginRequiredMixin, ListView, FormView):
+    model = License
+    context_object_name = "licenses"
+    paginate_by = 50
+    form_class = ImportLicensesForm
+    success_url = reverse_lazy("cube:licenses", args=[1])
 
-    try:
-        licenses = paginator.page(page)
-    except EmptyPage:
-        licenses = paginator.page(paginator.num_pages)
+    def post(self, *args, **kwargs):
+        self.object_list = self.get_queryset()
+        return super().post(*args, **kwargs)
 
-    context = {
-        "licenses": licenses,
-        "number_of_licenses": number_of_licenses,
-        "form": form,
-    }
-    return render(request, "cube/license_list.html", context)
-
-
-@login_required
-def license(request, license_id):
-    context = {}
-    license = get_object_or_404(License, pk=license_id)
-    orphan_obligations = license.obligation_set.filter(generic__isnull=True)
-    generic_obligations = license.obligation_set.filter(
-        generic__in_core=False
-    ).order_by("generic__id")
-    core_obligations = license.obligation_set.filter(generic__in_core=True).order_by(
-        "generic__id"
-    )
-    form = ImportLicensesForm
-    if license.inspiration:
-        context.update({"inspiration": license.inspiration})
-    elif license.inspiration_spdx:
+    def form_valid(self, form):
         try:
-            inspiration = License.objects.get(spdx_id=license.inspiration_spdx)
-            context.update({"inspiration": inspiration})
-        except Exception:
-            print(
-                "Unable to find the inspiration in database", license.inspiration_spdx
-            )
-    context.update(
-        {
-            "license": license,
-            "orphan_obligations": orphan_obligations,
-            "obligations_in_generic": generic_obligations,
-            "obligations_in_core": core_obligations,
-            "form": form,
-        }
-    )
-    return render(request, "cube/license.html", context)
+            form.save()
+        except ValidationError as e:
+            messages.add_message(self.request, messages.ERROR, e.message)
+            return super().form_invalid(form)
+        return super().form_valid(form)
+
+
+class LicenseDetailView(LoginRequiredMixin, DetailView):
+    model = License
+    template_name = "cube/license.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        license = self.object
+        orphan_obligations = license.obligation_set.filter(generic__isnull=True)
+        generic_obligations = license.obligation_set.filter(
+            generic__in_core=False
+        ).order_by("generic__id")
+        core_obligations = license.obligation_set.filter(
+            generic__in_core=True
+        ).order_by("generic__id")
+
+        context.update(
+            {
+                "license": license,
+                "orphan_obligations": orphan_obligations,
+                "obligations_in_generic": generic_obligations,
+                "obligations_in_core": core_obligations,
+            }
+        )
 
 
 # def export_licenses(request):

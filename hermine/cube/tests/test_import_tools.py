@@ -1,7 +1,9 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
+from django.urls import reverse
 
 from cube.importers import import_spdx_file
 from cube.models import Generic, Usage, LINKING_PACKAGE, License
@@ -11,9 +13,10 @@ from cube.utils.licenses import (
     export_licenses,
     handle_licenses_json,
 )
+from .mixins import ForceLoginMixin
 
 
-class ImportLicensesTestCase(TestCase):
+class ImportLicensesTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_export_import(self):
@@ -22,6 +25,20 @@ class ImportLicensesTestCase(TestCase):
         License.objects.all().delete()
         handle_licenses_json(export)
         self.assertEqual(License.objects.all().count(), count)
+
+    def test_export_import_pages(self):
+        res = self.client.get(reverse("cube:export_licenses"))
+        self.assertEqual(res.status_code, 200)
+        License.objects.all().delete()
+        res = self.client.post(
+            reverse("cube:licenses", args=[1]),
+            data={
+                "file": SimpleUploadedFile(
+                    "lincenses.json", res.content, "application/json"
+                )
+            },
+        )
+        self.assertRedirects(res, reverse("cube:licenses", args=[1]))
 
     def test_generic_autocreation(self):
         json = [
@@ -83,7 +100,7 @@ class ImportLicensesTestCase(TestCase):
         self.assertEqual(Generic.objects.all().count(), 2)
 
 
-class ImportGenericTestCase(TestCase):
+class ImportGenericTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_export_import(self):
@@ -91,7 +108,21 @@ class ImportGenericTestCase(TestCase):
         export = export_generics(indent=True)
         Generic.objects.all().delete()
         handle_generics_json(export)
-        self.assertEqual(License.objects.all().count(), count)
+        self.assertEqual(Generic.objects.all().count(), count)
+
+    def test_export_import_pages(self):
+        res = self.client.get(reverse("cube:export_generics"))
+        self.assertEqual(res.status_code, 200)
+        Generic.objects.all().delete()
+        res = self.client.post(
+            reverse("cube:import_generics"),
+            data={
+                "file": SimpleUploadedFile(
+                    "generics.json", res.content, "application/json"
+                )
+            },
+        )
+        self.assertRedirects(res, reverse("cube:generics"))
 
 
 class ImportSBOMTestCase(TestCase):

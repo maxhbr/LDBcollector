@@ -18,7 +18,7 @@ urlpatterns = [
     path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
     path("components/", views.ComponentList.as_view(), name="components"),
     path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),
-    path("license/<int:license_id>/", views.license, name="license"),
+    path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
     path(
         "license/<int:license_id>/export/",
         views.export_specific_license,
@@ -34,7 +34,6 @@ urlpatterns = [
     path("export/licenses/", views.export_licenses, name="export_licenses"),
     path("export/generics/", views.export_generics, name="export_generics"),
     path("import/generics/", views.upload_generics_file, name="import_generics"),
-    path("import/licenses/", views.upload_licenses_file, name="import_licenses"),
     path("release/<int:pk>/", views.ReleaseView.as_view(), name="release_detail"),
     path("release/<int:pk>/bom/", views.ReleaseBomView.as_view(), name="release_bom"),
     path(
@@ -70,7 +69,7 @@ urlpatterns = [
         views.ReleaseExploitationView.as_view(),
         name="release_exploitation",
     ),
-    path("licenses/<int:page>/", views.licenses, name="licenses"),
+    path("licenses/<int:page>/", views.LicensesListView.as_view(), name="licenses"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
 

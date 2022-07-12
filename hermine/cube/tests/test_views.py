@@ -6,12 +6,8 @@ from urllib.parse import quote
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
-from django.utils.http import urlencode
 
-
-class ForceLoginMixin:
-    def setUp(self):
-        self.client.force_login(User.objects.get(username="admin"))
+from .mixins import ForceLoginMixin
 
 
 class UnauthenticatedTestCase(TestCase):

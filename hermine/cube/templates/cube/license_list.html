@@ -14,7 +14,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </ul>
 {% endblock %}
 {% block actions %}
-<form class="import_licenses" id="import_licenses" enctype="multipart/form-data" action="{% url 'cube:import_licenses' %}" method="post">
+<form class="import_licenses" id="import_licenses" enctype="multipart/form-data" action="{% url 'cube:licenses' 1 %}" method="post">
   {% csrf_token %}
   <div class="field has-addons">
     <p class="control">
@@ -59,7 +59,7 @@ Licenses
     <header class="card-header">
       <p class="card-header-title">
         <span class="icon"><i class="fas fa-balance-scale"></i></span>
-        <span> {{number_of_licenses}} Licences</span>
+        <span> {{page_obj.paginator.count}} Licences</span>
       </p>
     </header>
     <div class="card-content">
@@ -114,18 +114,18 @@ Licenses
 
         <div class="notification">
           <nav class="pagination" role="navigation" aria-label="pagination">
-            {% if licenses.has_previous %}
-              <a class="pagination-previous" href="/licenses/{{ licenses.previous_page_number }}">Previous</a>
+            {% if page_obj.has_previous %}
+              <a class="pagination-previous" href="/licenses/{{ page_obj.previous_page_number }}">Previous</a>
             {% else %}
               <a class="pagination-previous is-disabled" aria-disabled="true" disabled title="This is the first page">First page</a>
             {% endif %}
         
             <span class="pagination-list">
-              Page {{ licenses.number }} of {{ licenses.paginator.num_pages }}.
+              Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
             </span>
         
-            {% if licenses.has_next %}
-            <a class="pagination-next" href="/licenses/{{ licenses.next_page_number }}">Next</a>
+            {% if page_obj.has_next %}
+            <a class="pagination-next" href="/licenses/{{ page_obj.next_page_number }}">Next</a>
             {% else %}
               <a class="pagination-next is-disabled" disabled aria-disabled="true" title="This is the last page">Last page</a>
             {% endif %}
