@@ -13,7 +13,7 @@ from cube.utils.licenses import (
     export_licenses,
     handle_licenses_json,
 )
-from mixins import ForceLoginMixin
+from .mixins import ForceLoginMixin
 
 
 class ImportLicensesTestCase(ForceLoginMixin, TestCase):

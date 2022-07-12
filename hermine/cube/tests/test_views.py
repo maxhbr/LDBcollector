@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
-from mixins import ForceLoginMixin
+from .mixins import ForceLoginMixin
 
 
 class UnauthenticatedTestCase(TestCase):
