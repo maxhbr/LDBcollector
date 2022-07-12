@@ -24,7 +24,7 @@ from cube.models import (
     Exploitation,
 )
 from cube.utils.licenses import (
-    explode_SPDX_to_units,
+    explode_spdx_to_units,
     get_usages_obligations,
 )
 from cube.utils.releases import update_validation_step
@@ -286,7 +286,7 @@ def release_send_choice(request, release_id, usage_id):
         expression_in = usage.version.spdx_valid_license_expr
     usage.license_expression = expression_out
     lic_to_add = set()
-    for uniq_lic_id in set(explode_SPDX_to_units(expression_out)):
+    for uniq_lic_id in set(explode_spdx_to_units(expression_out)):
         unique_license = License.objects.get(spdx_id__exact=uniq_lic_id)
         lic_to_add.add(unique_license)
     usage.licenses_chosen.set(lic_to_add)

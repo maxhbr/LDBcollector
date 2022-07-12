@@ -9,7 +9,7 @@ from cube.models import Release, License, LicenseChoice
 from cube.utils.licenses import (
     get_licenses_to_check_or_create,
     check_licenses_against_policy,
-    explode_SPDX_to_units,
+    explode_spdx_to_units,
     is_ambiguous,
 )
 
@@ -167,7 +167,7 @@ def propagate_choices(release_id):
             effective_license = usage.version.corrected_license
         else:
             effective_license = usage.version.spdx_valid_license_expr
-        unique_lic_ids = explode_SPDX_to_units(effective_license)
+        unique_lic_ids = explode_spdx_to_units(effective_license)
         chuncks = effective_license.replace("(", " ").replace(")", " ").upper().split()
 
         only_ands = (
@@ -205,7 +205,7 @@ def propagate_choices(release_id):
             if len(set(expression_outs)) == 1:
                 usage.license_expression = expression_outs[0]
                 lic_to_add = set()
-                for uniq_lic_id in set(explode_SPDX_to_units(expression_outs[0])):
+                for uniq_lic_id in set(explode_spdx_to_units(expression_outs[0])):
                     unique_license = License.objects.get(spdx_id__exact=uniq_lic_id)
                     lic_to_add.add(unique_license)
 

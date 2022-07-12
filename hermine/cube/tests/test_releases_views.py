@@ -5,7 +5,7 @@
 
 from django.test import TestCase
 
-from cube.utils.licenses import explode_SPDX_to_units
+from cube.utils.licenses import explode_spdx_to_units
 
 
 class ExplodeSPDXReleaseViewTests(TestCase):
@@ -21,14 +21,14 @@ class ExplodeSPDXReleaseViewTests(TestCase):
             + " (TORQUE-1.1 OR Artistic-1.0-cl8 OR MIT))"
         )
         SPDX_exploded = [
-            "MIT",
-            "BSD-3-Clause-No-Nuclear-License-2014",
-            "GPL-3.0-or-later WITH GPL-3.0-linking-source-exception",
-            "GPL-2.0-only WITH Classpath-exception-2.0",
             "AGPL-3.0-or-later WITH PS-or-PDF-font-exception-20170817",
-            "Condor-1.1",
-            "TORQUE-1.1",
             "Artistic-1.0-cl8",
+            "BSD-3-Clause-No-Nuclear-License-2014",
+            "Condor-1.1",
+            "GPL-2.0-only WITH Classpath-exception-2.0",
+            "GPL-3.0-or-later WITH GPL-3.0-linking-source-exception",
+            "MIT",
+            "TORQUE-1.1",
         ]
-        explosion = explode_SPDX_to_units(SPDX_complex)
+        explosion = explode_spdx_to_units(SPDX_complex)
         self.assertEqual(explosion, SPDX_exploded)
