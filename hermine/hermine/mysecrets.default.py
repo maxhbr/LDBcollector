@@ -36,4 +36,5 @@ DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sql
 #         "username": res.get("login"),
 #         "email": res.get("email"),
 #     },
+#    "id_key" : "uid", # the key for unique user id in user_url response (optional, "id" by default)
 # }

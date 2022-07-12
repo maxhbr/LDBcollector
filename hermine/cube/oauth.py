@@ -8,7 +8,7 @@ from social_core.backends.oauth import BaseOAuth2
 
 
 class OAuth2(BaseOAuth2):
-    """GitHub OAuth authentication backend"""
+    """OAuth2 authentication backend"""
 
     def auth_html(self):
         pass
@@ -16,6 +16,7 @@ class OAuth2(BaseOAuth2):
     name = "default"
     AUTHORIZATION_URL = settings.OAUTH_CLIENT["authorize_url"]
     ACCESS_TOKEN_URL = settings.OAUTH_CLIENT["access_token_url"]
+    ID_KEY = settings.OAUTH_CLIENT.get("id_key", "id")
 
     def get_user_details(self, response):
         return settings.OAUTH_CLIENT["user_details"](response)
