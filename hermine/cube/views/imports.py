@@ -14,14 +14,14 @@ def upload_licenses_file(request):
     if request.method == "POST":
         form = ImportLicensesForm(request.POST, request.FILES)
         if form.is_valid():
-            handle_licenses_json(request.FILES["file"])
-            return redirect(request.META["HTTP_REFERER"])
-    return redirect(request.META["HTTP_REFERER"])
+            handle_licenses_json(request.FILES["file"].read())
+            return redirect("cube:licenses", 1)
+    return redirect("cube:licenses", 1)
 
 
 def upload_generics_file(request):
     if request.method == "POST":
-        handle_generics_json(request.FILES["file"])
+        handle_generics_json(request.FILES["file"].read())
         return redirect("cube:generics")
 
     return render(request, "cube/generic_list.html")
