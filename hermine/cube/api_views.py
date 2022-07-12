@@ -135,6 +135,10 @@ class GenericViewSet(viewsets.ModelViewSet):
     filter_backends = (filters.DjangoFilterBackend,)
     filterset_class = GenericFilter
 
+    @swagger_auto_schema(
+        request_body=SBOMSerializer,
+        responses={200: GenericSerializer(many=True)},
+    )
     @action(detail=False, methods=["POST"])
     def sbom(self, request):
         """
