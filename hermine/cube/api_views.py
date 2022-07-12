@@ -415,7 +415,7 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             serializer.validated_date.get("replace", False),
             defaults={"linking": serializer.validated_data.get("linking")},
         )
-        return Response(response)
+        return Response()
 
 
 class ComponentViewSet(viewsets.ModelViewSet):
