@@ -124,7 +124,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
       </a>
 
-      <a href={% url 'cube:generic' 1 %} class="tile is-parent">
+      <a href={% url 'cube:generics' %} class="tile is-parent">
         <div class="card tile is-child">
           <div class="card-content">
             <div class="level is-mobile">
@@ -134,7 +134,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                     Generic obligations
                   </h3>
                   <h1 class="title">
-                    {{ generic|length }}
+                    {{ nb_generics }}
                   </h1>
                 </div>
               </div>
