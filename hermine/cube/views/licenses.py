@@ -40,27 +40,27 @@ class LicensesListView(LoginRequiredMixin, ListView, FormView):
 
 class LicenseDetailView(LoginRequiredMixin, DetailView):
     model = License
+    context_object_name = "license"
     template_name = "cube/license.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        license = self.object
-        orphan_obligations = license.obligation_set.filter(generic__isnull=True)
-        generic_obligations = license.obligation_set.filter(
+        orphan_obligations = self.object.obligation_set.filter(generic__isnull=True)
+        generic_obligations = self.object.obligation_set.filter(
             generic__in_core=False
         ).order_by("generic__id")
-        core_obligations = license.obligation_set.filter(
+        core_obligations = self.object.obligation_set.filter(
             generic__in_core=True
         ).order_by("generic__id")
 
         context.update(
             {
-                "license": license,
                 "orphan_obligations": orphan_obligations,
                 "obligations_in_generic": generic_obligations,
                 "obligations_in_core": core_obligations,
             }
         )
+        return context
 
 
 # def export_licenses(request):
