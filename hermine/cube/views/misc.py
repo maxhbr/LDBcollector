@@ -10,7 +10,7 @@ from django.db.models import Count
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-from cube.models import License, Product, Component, Release
+from cube.models import License, Product, Component, Release, Generic
 
 
 class IndexView(LoginRequiredMixin, TemplateView):
@@ -25,6 +25,7 @@ class IndexView(LoginRequiredMixin, TemplateView):
         context["nb_releases"] = Release.objects.all().count()
         context["nb_components"] = Component.objects.all().count()
         context["nb_licenses"] = License.objects.all().count()
+        context["nb_generics"] = Generic.objects.all().count()
         kwargs.update(context)
 
         return kwargs
