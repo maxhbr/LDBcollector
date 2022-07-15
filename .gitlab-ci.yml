@@ -1,20 +1,21 @@
-# SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
-# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
-#
-# SPDX-License-Identifier: CC0-1.0
-
+# You can override the included template(s) by including variable overrides
+# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
+# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
+# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 image: python:3.8-alpine
-
 tests:
   stage: test
   rules:
-  - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+  - if: "$CI_PIPELINE_SOURCE == 'merge_request_event'"
   script:
   - apk --no-cache add curl
-  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev cargo
+  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev
+    cargo
   - pip install --upgrade pip
   - curl -sSL https://install.python-poetry.org | python -
-  # Add Poetry to path:
   - export PATH="/root/.local/bin:$PATH"
   - poetry about
   - poetry install
@@ -22,17 +23,16 @@ tests:
   - cd hermine
   - poetry run black --check .
   - poetry run python manage.py test
-
 pages:
   stage: deploy
   rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
   script:
   - apk --no-cache add curl
-  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev cargo
+  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev
+    cargo
   - pip install --upgrade pip
   - curl -sSL https://install.python-poetry.org | python -
-  # Add Poetry to path:
   - export PATH="/root/.local/bin:$PATH"
   - poetry about
   - poetry install
@@ -43,6 +43,7 @@ pages:
   artifacts:
     paths:
     - public
-
 variables:
   DOCKER_DRIVER: overlay2
+include:
+- template: Security/Dependency-Scanning.gitlab-ci.yml
