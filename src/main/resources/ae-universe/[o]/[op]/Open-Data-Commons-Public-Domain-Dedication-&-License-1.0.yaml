@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Open Data Commons Public Domain Dedication & License 1.0"
+category: "PDDL"
+spdxIdentifier: "PDDL-1.0"
+
+alternativeNames:
+  - "PDDL, Version 1.0"
+  - "PDDL 1.0"
+  - "Public Domain Dedication & License"
+  - "http://opendatacommons.org/licenses/pddl/1-0/"
+  - "https://opendatacommons.org/licenses/pddl/"
+
+otherIds: 
+  - "scancode:pddl-1.0"

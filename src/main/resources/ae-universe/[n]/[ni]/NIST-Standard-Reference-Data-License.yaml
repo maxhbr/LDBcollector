@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "NIST Standard Reference Data License"
+category: "NIST Standard Reference Data License"
+shortName: "nist-srd"
+
+alternativeNames:
+  - "NIST Standard Reference Data License"
+
+otherIds: 
+  - "scancode:nist-srd"

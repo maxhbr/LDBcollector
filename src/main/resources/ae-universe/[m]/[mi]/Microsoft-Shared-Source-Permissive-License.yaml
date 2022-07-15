@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Microsoft Shared Source Permissive License"
+category: "Microsoft Shared Source Permissive License"
+shortName: "MS-SSPL"
+
+alternativeNames:
+  - "Microsoft Shared Source Permissive License (SS-PL)"
+
+otherIds: 
+  - "scancode:ms-sspl"

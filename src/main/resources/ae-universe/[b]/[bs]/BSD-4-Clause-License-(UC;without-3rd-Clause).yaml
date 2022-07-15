@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "BSD 4-Clause License (UC; without 3rd Clause)"
+category: "BSD"
+shortName: "BSD-4-Clause-UC"
+spdxIdentifier: "BSD-4-Clause-UC"
+
+alternativeNames:
+  - "BSD 4-Clause (University of California-Specific)"
+  - "http://www.freebsd.org/copyright/license.html"
+
