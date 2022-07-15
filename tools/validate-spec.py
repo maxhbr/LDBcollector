@@ -185,48 +185,49 @@ if __name__ == "__main__":
                 r = 1
 
         # check the fedora key
-        keys = [*data["fedora"]]
+        if "fedora" in keys:
+            keys = [*data["fedora"]]
 
-        if "name" in keys:
-            name = data["fedora"]["name"]
+            if "name" in keys:
+                name = data["fedora"]["name"]
 
-            if not isinstance(name, list) and not isinstance(name, str):
-                sys.stderr.write(
-                    "*** %s has 'name' value in the [fedora] block, but not a list or string\n"  # noqa: E501
-                    % licensefile.name
-                )
-                r = 1
+                if not isinstance(name, list) and not isinstance(name, str):
+                    sys.stderr.write(
+                        "*** %s has 'name' value in the [fedora] block, but not a list or string\n"  # noqa: E501
+                        % licensefile.name
+                    )
+                    r = 1
 
-            keys.remove("name")
+                keys.remove("name")
 
-        if "abbreviation" in keys:
-            abbreviation = data["fedora"]["abbreviation"]
+            if "abbreviation" in keys:
+                abbreviation = data["fedora"]["abbreviation"]
 
-            if not isinstance(abbreviation, list) and not isinstance(abbreviation, str):  # noqa: E501
-                sys.stderr.write(
-                    "*** %s has 'abbreviation' value in the [fedora] block, but not a list or string\n"  # noqa: E501
-                    % licensefile.name
-                )
-                r = 1
+                if not isinstance(abbreviation, list) and not isinstance(abbreviation, str):  # noqa: E501
+                    sys.stderr.write(
+                        "*** %s has 'abbreviation' value in the [fedora] block, but not a list or string\n"  # noqa: E501
+                        % licensefile.name
+                    )
+                    r = 1
 
-            keys.remove("abbreviation")
+                keys.remove("abbreviation")
 
-        if "notes" in keys:
-            if not isinstance(data["fedora"]["notes"], str):
-                sys.stderr.write(
-                    "*** %s has 'notes' value not of string type in the [fedora] block\n"  # noqa: E501
-                    % licensefile.name
-                )
-                r = 1
+            if "notes" in keys:
+                if not isinstance(data["fedora"]["notes"], str):
+                    sys.stderr.write(
+                        "*** %s has 'notes' value not of string type in the [fedora] block\n"  # noqa: E501
+                        % licensefile.name
+                    )
+                    r = 1
 
-            keys.remove("notes")
+                keys.remove("notes")
 
-        if len(keys) != 0:
-            for key in keys:
-                sys.stderr.write(
-                    "*** %s contains invalid '%s' key in the [fedora] block\n"
-                    % (licensefile.name, key)
-                )
-                r = 1
+            if len(keys) != 0:
+                for key in keys:
+                    sys.stderr.write(
+                        "*** %s contains invalid '%s' key in the [fedora] block\n"
+                        % (licensefile.name, key)
+                    )
+                    r = 1
 
     sys.exit(r)
