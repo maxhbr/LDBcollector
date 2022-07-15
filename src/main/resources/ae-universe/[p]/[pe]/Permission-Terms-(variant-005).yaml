@@ -5,3 +5,5 @@ canonicalName: "Permission Terms (variant 005)"
 category: "Permission"
 shortName: "PT-Var005"
 
+otherIds: 
+  - "scancode:x11-doc"

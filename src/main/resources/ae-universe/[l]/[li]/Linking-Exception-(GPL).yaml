@@ -4,7 +4,6 @@
 canonicalName: "Linking Exception (GPL)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL"
-spdxIdentifier: "GPL-2.0+-linking-exception"
 
 type: "exception"
 

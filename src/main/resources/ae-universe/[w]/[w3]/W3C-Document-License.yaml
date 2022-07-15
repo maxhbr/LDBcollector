@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "W3C Document License"
 category: "W3C"
-spdxIdentifier: "W3C-Document"
+shortName: "W3C-Document"
 
 alternativeNames:
   - "W3C Document License"

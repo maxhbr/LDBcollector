@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "TekHVC License"
 category: "TekHVC License"
-spdxIdentifier: "TekHVC"
+shortName: "TekHVC"
 
 alternativeNames:
   - "TekHVC License"

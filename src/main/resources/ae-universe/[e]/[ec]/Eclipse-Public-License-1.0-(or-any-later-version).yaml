@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Eclipse Public License 1.0 (or any later version)"
 category: "EPL"
-spdxIdentifier: "EPL-1.0+"
+shortName: "EPL-1.0+"
 
 alternativeNames:
   - "Eclipse Public License, V1.0 or later"

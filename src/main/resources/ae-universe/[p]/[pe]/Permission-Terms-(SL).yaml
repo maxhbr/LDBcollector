@@ -8,3 +8,5 @@ shortName: "PT-SL"
 alternativeNames:
   - "Permission Terms (SL)"
 
+otherIds: 
+  - "scancode:x11-tiff"

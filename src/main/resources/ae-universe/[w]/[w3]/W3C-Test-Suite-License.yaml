@@ -8,3 +8,5 @@ shortName: "W3C-Test-Suite"
 alternativeNames:
   - "W3C Test Suite Licence"
 
+otherIds: 
+  - "scancode:w3c-test-suite"

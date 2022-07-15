@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Unicode DFS License"
 category: "Unicode DFS"
-spdxIdentifier: "Unicode-DFS"
+shortName: "Unicode-DFS"
 
 alternativeNames:
   - "Unicode DFS, Version 2008"

@@ -5,3 +5,5 @@ canonicalName: "Permission Terms (variant 021)"
 category: "Permission"
 shortName: "PT-Var021"
 
+otherIds: 
+  - "scancode:x11-fsf"

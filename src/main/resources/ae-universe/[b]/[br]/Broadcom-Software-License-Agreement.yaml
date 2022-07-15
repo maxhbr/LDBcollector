@@ -8,3 +8,5 @@ shortName: "Broadcom"
 alternativeNames:
   - "Broadcom Software License Agreement"
 
+otherIds: 
+  - "scancode:broadcom-linux-firmware"

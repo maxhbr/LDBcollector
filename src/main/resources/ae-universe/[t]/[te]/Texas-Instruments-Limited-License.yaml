@@ -8,3 +8,5 @@ shortName: "TexasInstruments-Limited"
 alternativeNames:
   - "Texas Instruments Limited License"
 
+otherIds: 
+  - "scancode:ti-linux-firmware"

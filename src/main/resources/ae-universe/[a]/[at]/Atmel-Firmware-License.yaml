@@ -8,3 +8,5 @@ shortName: "Atmel-Firmware"
 alternativeNames:
   - "Atmel Firmware License"
 
+otherIds: 
+  - "scancode:atmel-linux-firmware"

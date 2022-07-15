@@ -8,3 +8,5 @@ shortName: "AMD-RL"
 alternativeNames:
   - "AMD Redistribution"
 
+otherIds: 
+  - "scancode:amd-linux-firmware"

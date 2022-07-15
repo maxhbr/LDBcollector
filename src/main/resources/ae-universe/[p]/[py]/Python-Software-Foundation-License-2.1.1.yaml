@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Python Software Foundation License 2.1.1"
 category: "Python Software Foundation License"
-spdxIdentifier: "Python-2.1.1"
+shortName: "Python-2.1.1"
 
 alternativeNames:
   - "PSF-2.1.1"

@@ -8,3 +8,5 @@ shortName: "Firmware"
 alternativeNames:
   - "Firmware License"
 
+otherIds: 
+  - "scancode:binary-linux-firmware"

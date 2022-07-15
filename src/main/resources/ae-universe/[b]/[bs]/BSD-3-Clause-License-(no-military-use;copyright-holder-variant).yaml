@@ -4,6 +4,7 @@
 canonicalName: "BSD 3-Clause License (no military use; copyright holder variant)"
 category: "BSD"
 shortName: "BSD-3-Clause-no-military-copyright"
+spdxIdentifier: "BSD-3-Clause-No-Military-License"
 
 otherIds: 
   - "scancode:bsd-3-clause-no-military"

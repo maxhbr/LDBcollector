@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Cryptographic Token Interface License"
 category: "Cryptographic Token Interface License"
-spdxIdentifier: "Cryptoki"
+shortName: "Cryptoki"
 
 alternativeNames:
   - "Cryptographic Token Interface License"

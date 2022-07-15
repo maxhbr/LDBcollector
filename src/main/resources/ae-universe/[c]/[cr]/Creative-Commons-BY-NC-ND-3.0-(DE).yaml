@@ -2,10 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Creative Commons BY-NC-ND 3.0 (DE)"
-category: "CC-BY-NC-ND-3.0-DE"
+category: "CC-BY-NC-ND"
 spdxIdentifier: "CC-BY-NC-ND-3.0-DE"
 
 alternativeNames:
   - "CC-BY-NC-ND-3.0-DE"
   - "Creative Commons Attribution Non Commercial No Derivatives 3.0 Germany"
 
+otherIds: 
+  - "scancode:cc-by-nc-nd-3.0-de"

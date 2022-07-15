@@ -3,9 +3,11 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Cadence License"
 category: "Cadence"
-spdxIdentifier: "Cadence"
+shortName: "Cadence"
 
 alternativeNames:
   - "Cadence License"
   - "CADENCE LICENSE"
 
+otherIds: 
+  - "scancode:cadence-linux-firmware"

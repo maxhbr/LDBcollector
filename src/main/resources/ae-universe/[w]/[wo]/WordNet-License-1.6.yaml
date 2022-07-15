@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "WordNet License 1.6"
 category: "WordNet"
-spdxIdentifier: "WordNet"
+shortName: "WordNet-1.6"
 
 alternativeNames:
   - "WordNet 1.6 License"

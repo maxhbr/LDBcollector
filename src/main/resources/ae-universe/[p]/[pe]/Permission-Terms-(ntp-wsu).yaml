@@ -8,3 +8,5 @@ shortName: "PT-ntp-wsu"
 alternativeNames:
   - "Permission Terms (ntp wsu)"
 
+otherIds: 
+  - "scancode:ghostpdl-permissive"

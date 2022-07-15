@@ -10,3 +10,5 @@ type: "exception"
 alternativeNames:
   - "CUPS Exceptions"
 
+otherIds: 
+  - "scancode:cups-apple-os-exception"

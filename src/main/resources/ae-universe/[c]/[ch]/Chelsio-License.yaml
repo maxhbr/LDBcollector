@@ -9,3 +9,5 @@ alternativeNames:
   - "Chelsio License"
   - "CHELSIO LICENSE"
 
+otherIds: 
+  - "scancode:chelsio-linux-firmware"

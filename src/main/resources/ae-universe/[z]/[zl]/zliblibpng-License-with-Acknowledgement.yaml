@@ -8,6 +8,7 @@ spdxIdentifier: "zlib-acknowledgement"
 alternativeNames:
   - "zlib-acknowledgement"
   - "zlib/libpng License with Acknowledgement"
+  - "zlib with acknowledgement"
 
 otherIds: 
   - "scancode:zlib-acknowledgement"

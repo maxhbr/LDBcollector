@@ -5,3 +5,5 @@ canonicalName: "Permission Terms (variant 019)"
 category: "Permission"
 shortName: "PT-Var019"
 
+otherIds: 
+  - "scancode:x11-lucent"

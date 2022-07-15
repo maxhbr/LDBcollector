@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Baekmuk License"
 category: "Baekmuk"
-shortName: "Baekmuk"
+spdxIdentifier: "Baekmuk"
 
 alternativeNames:
   - "baekmuk-fonts"

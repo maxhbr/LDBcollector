@@ -3,10 +3,10 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Data Licence BY 1.0 (DE)"
 category: "Data Licence BY"
-shortName: "DL-DE-BY-1.0"
+shortName: "DL-DE-BY-1.0-de"
 
 alternativeNames:
-  - "Data licence Germany – attribution – Version 1.0"
+  - "Datenlizenz Deutschland – Namensnennung – Version 1.0"
 
 otherIds: 
-  - "scancode:dl-de-by-1-0-en"
+  - "scancode:dl-de-by-1-0-de"

@@ -7,15 +7,19 @@ spdxIdentifier: "MPL-1.1"
 
 alternativeNames:
   - "Mozilla Public License, Version 1.1"
+  - "Mozilla Public License version 1.1"
   - "Mozilla Public License 1.1"
   - "MPL 1.1"
   - "MPL-1.1"
   - "MPLv1.1"
+  - "MPL v1.1"
+  - "MPL V1.1"
+  - "MPL version 1.1"
+  - "MPL Version 1.1"
   - "MOZILLA PUBLIC LICENSE 1.1"
   - "MOZILLA PUBLIC LICENSE Version 1.1"
   - "Mozilla Public License (MPL) version 1.1"
 
 otherIds: 
-  - "scancode:dpl-1.1"
-  - "scancode:monetdb-1.1"
+  - "scancode:mpl-1.1"
   - "osi:MPL-1.1"

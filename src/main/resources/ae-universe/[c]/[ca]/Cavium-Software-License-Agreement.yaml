@@ -9,3 +9,5 @@ alternativeNames:
   - "Cavium Software License Agreement"
   - "Cavium License"
 
+otherIds: 
+  - "scancode:cavium-linux-firmware"

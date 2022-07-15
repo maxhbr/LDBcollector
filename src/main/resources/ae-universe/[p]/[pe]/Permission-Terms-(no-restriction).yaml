@@ -8,3 +8,5 @@ shortName: "PT-no-restriction"
 alternativeNames:
   - "Permission Terms (no restriction)"
 
+otherIds: 
+  - "scancode:app-s2p"

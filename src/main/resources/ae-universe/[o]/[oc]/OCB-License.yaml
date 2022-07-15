@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "OCB License"
 category: "OCB"
-spdxIdentifier: "OCB"
+shortName: "OCB"
 
 alternativeNames:
   - "License for Open Source Software Implementations of OCB"

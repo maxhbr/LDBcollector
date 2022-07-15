@@ -5,3 +5,5 @@ canonicalName: "AlterMIME License"
 category: "AlterMIME"
 shortName: "AlterMIME"
 
+otherIds: 
+  - "scancode:altermime"

@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "UCD Terms of Use"
 category: "UCD"
-spdxIdentifier: "UCD-TOU"
+shortName: "UCD-TOU"
 
 alternativeNames:
   - "UCD Terms of Use"

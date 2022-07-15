@@ -3,6 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "GNU Free Documentation License 1.1 (invariants)"
 category: "GFDL"
+shortName: "GFDL-1.1-invariants"
 spdxIdentifier: "GFDL-1.1-invariants-only"
 
 alternativeNames:

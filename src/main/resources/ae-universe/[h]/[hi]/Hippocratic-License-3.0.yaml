@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Hippocratic License 3.0"
 category: "Hippocratic"
-spdxIdentifier: "Hippocratic-3.0"
+shortName: "Hippocratic-3.0"
 
 alternativeNames:
   - "Hippocratic License 3.0"

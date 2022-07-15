@@ -8,3 +8,5 @@ shortName: "Cypress-EULA"
 alternativeNames:
   - "Cypress Device End User License Agreement"
 
+otherIds: 
+  - "scancode:cypress-linux-firmware"

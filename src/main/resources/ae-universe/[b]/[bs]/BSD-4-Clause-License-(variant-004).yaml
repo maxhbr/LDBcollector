@@ -8,3 +8,5 @@ shortName: "BSD-4-Clause-004"
 alternativeNames:
   - "BSD 5-Clause License (Geoff Kuenning)"
 
+otherIds: 
+  - "scancode:geoff-kuenning-1993"
