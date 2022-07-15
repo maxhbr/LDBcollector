@@ -1,17 +1,16 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "CECILL B License"
-category: "CECILL B"
+canonicalName: "CeCILL B License"
+category: "CeCILL-B"
 spdxIdentifier: "CECILL-B"
 
 alternativeNames:
+  - "CeCILL B"
+  - "CeCILL-B"
   - "CECILL B"
   - "CECILL-B"
   - "CECILL B License"
-  - "CeCILL-B FREE SOFTWARE LICENSE AGREEMENT Notice"
-  - "CeCILL-B Free Software License Agreement"
-  - "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html"
   - "https://spdx.org/licenses/cecill-b"
 
 otherIds: 
