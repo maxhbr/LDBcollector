@@ -31,6 +31,7 @@ advertising or publicity pertaining to the Software or any derivatives
 without specific, written prior permission.
 '''
 
+[fedora]
 notes = '''
 Originally used by the OpenFlow project and later adopted by Mininet. 
 Tolerated in OpenvSwitch and related packages existing in Fedora as of
