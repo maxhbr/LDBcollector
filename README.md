@@ -1,5 +1,5 @@
 # {metæffekt}-universe
-Project providing insights on the metaeffekt license database.
+Project providing insights on the {metæffekt} license database.
 
 The following links provide letter-specific overviews on the license information:
 
@@ -46,7 +46,7 @@ the level of granularity and paradigms set forth by {metæffekt}. Second, the da
 available commercial licenses (at least not to the extend required).
 
 This is why {metæffekt} choose to create an overarching database of licenses, 
-references, exceptions, expressions; the {metæffekt}-universe.
+references, exceptions, and expressions; the {metæffekt}-universe.
 
 ## Is {metæffekt} handing back to the FOSS Compliance Community?
 Sure. We intend to provide those parts of our {metæffekt}-universe to the community, which we are allowed to share.
