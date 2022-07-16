@@ -96,4 +96,4 @@ to [contact@metaeffekt.com](mailto:contact@metaeffekt.com). Modifications will t
 internal dataset to produce the corrected outputs.
 
 ## Further information
-{metæffekt} provides visualization of {metæffekt}-universe on https://metaeffekt.com/#universe.
+{metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
