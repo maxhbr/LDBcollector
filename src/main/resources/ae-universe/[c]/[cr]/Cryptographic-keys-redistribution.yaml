@@ -1,9 +1,9 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "Cryptographic keys redistribution"
-category: "Cryptographic keys redistribution"
-shortName: "Crypto-keys-redistribution"
+canonicalName: "Cryptographic Keys Redistribution"
+category: "Cryptographic Keys Redistribution"
+shortName: "Crypto-Keys-Redistribution"
 
 alternativeNames:
   - "crypto-keys-redistribution"

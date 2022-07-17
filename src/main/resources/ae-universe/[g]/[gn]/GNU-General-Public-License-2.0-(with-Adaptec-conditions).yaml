@@ -1,9 +1,9 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "GPL 2.0 plus Adaptec conditions"
-category: "GPL 2.0 plus Adaptec conditions"
-shortName: "GPL-2.0-Adaptec"
+canonicalName: "GNU General Public License 2.0 (with Adaptec conditions)"
+category: "GPL-Adaptec"
+shortName: "GP-2.0-Adaptec"
 
 alternativeNames:
   - "gpl-2.0-adaptec"
