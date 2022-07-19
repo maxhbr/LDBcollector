@@ -561,7 +561,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `source-artifact.yml`.
             |   - Open the file `source-artifact.yml` in a text editor
             |   - Add a $ortPackageConfigurationFileMdLink entry with a $ortYmlFilePathExcludeMdLink
-            |     for each _directory_ found in (extracted) $sourcesUrlMdLink but not $binaryUrlMdLink.
+            |     for each _directory_ found in the (extracted) $sourcesUrlMdLink but not $binaryUrlMdLink.
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
@@ -664,7 +664,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |3. Find the lines which triggered this violation:
             !   - Expand the _Scan Results_ section  under ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
             |   - Filter the _Value_ column, selecting only the licenses to which the violation refers
-            |4. Open $vcsUrlMdLink in a web browser and find the source code for version `${pkg.id.version}`.
+            |4. Open the $vcsUrlMdLink in a web browser and find the source code for version `${pkg.id.version}`.
             |5. If the extracted $binaryUrlMdLink contains fewer files or directories than shown under 
             |   the _Scan Results_ for ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`, you may need to
             |   limit the number of files/directories the scanner scans. For example, if the repository contains other
@@ -697,7 +697,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |6. If there are license file findings for ${pkg.id.toCoordinates()} in directories in $vcsUrlMdLink but not in the extracted $binaryUrlMdLink:
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `vcs.yml`.
             |   - Open `vcs.yml` in a text editor.
-            |   - For each _directory_ found in $vcsUrlMdLink but not in extracted $binaryUrlMdLink, add a $ortPackageConfigurationFileMdLink entry 
+            |   - For each _directory_ found in the $vcsUrlMdLink but not in extracted $binaryUrlMdLink, add a $ortPackageConfigurationFileMdLink entry 
             |     with a $ortYmlFilePathExcludeMdLink.
             |     .
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
@@ -797,7 +797,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |2. Find the lines which triggered this violation:
             |   - Expand the _Scan Results_ section under ${pkg.id.toCoordinates()} in `*-scan-report-web-app.html`
             |   - Filter the _Value_ column, selecting only the licenses to which the violation refers
-            |3. Open $vcsUrlMdLink in a web browser and find the code for version `${pkg.id.version}`.
+            |3. Open the $vcsUrlMdLink in a web browser and find the code for version `${pkg.id.version}`.
             |4. If this package is in a repository containing other packages beside ${pkg.id.toCoordinates()}:
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Add an entry for `${pkg.id.toCoordinates()}` setting the `path` under `vcs`
@@ -826,7 +826,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |5. If there are license findings for ${pkg.id.toCoordinates()} in directories in $vcsUrlMdLink used only for building or testing the code:
             |   - Create a directory `${getPackageConfigurationFilePath(pkg.id)}` with a file named `vcs.yml`.
             |   - Open `vcs.yml` in a text editor.
-            |   - For each _directory_ found in $vcsUrlMdLink, but not in extracted $binaryUrlMdLink, add a 
+            |   - For each _directory_ found in the $vcsUrlMdLink, but not in extracted $binaryUrlMdLink, add a 
             |     $ortPackageConfigurationFileMdLink entry with a $ortYmlFilePathExcludeMdLink.
             |     Use the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
