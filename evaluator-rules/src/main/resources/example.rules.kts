@@ -873,7 +873,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   ```
             |
             |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the _reason_ field are defined in $ortPathExcludeReasonMdLink.
+            |     The available options for the _reason_ field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
