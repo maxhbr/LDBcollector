@@ -573,7 +573,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   ```
             |
             |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the _reason_ field are defined in $ortPathExcludeReasonMdLink.
+            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
@@ -608,7 +608,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   ```
             |
             |     For information on how to write a glob pattern, visit $globTutorialMdLink.
-            |     The available options for the _reason_ field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Note that reviewers are set automatically.
@@ -673,7 +673,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   - Add an entry for `${pkg.id.toCoordinates()}` setting the `path` under `vcs`
             |     to the repository directory that contains the source code for the $binaryUrlMdLink.
             |     (To find the correct directory, search the names of files in the extracted $binaryUrlMdLink within $vcsUrlMdLink.)
-            |     Use the following template, replacing the _path_ field as appropriate.
+            |     Use the following template, replacing the `path` field as appropriate.
             |
             |   ```
             |   - id: "${pkg.id.toCoordinatesWithoutVersion()}"
@@ -711,7 +711,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   ```
             |
             |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the _reason_ field are defined in $ortPathExcludeReasonMdLink.
+            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
@@ -746,7 +746,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   ```
             |
             |     For inofrmation on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the _reason_ field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
@@ -802,7 +802,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
             |   - Add an entry for `${pkg.id.toCoordinates()}` setting the `path` under `vcs`
             |     to the repository directory that contains the source code for the package.
-            |     Use the following template, changing the value of _path_ as appropriate.
+            |     Use the following template, changing the value of `path` as appropriate.
             |
             |   ```
             |   - id: "${pkg.id.toCoordinatesWithoutVersion()}"
@@ -839,7 +839,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   ```
             |
             |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the _reason_ field are defined in $ortPathExcludeReasonMdLink.
+            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
@@ -873,7 +873,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |   ```
             |
             |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the _reason_ field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
