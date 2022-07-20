@@ -1,10 +1,17 @@
 # Fedora License Data Project
 
-This project contains information about licenses used in the Fedora
-Linux project.  Licenses are categorized by their approval or
-non-approval and may include additional notes.  The data files provide
-mappings between the [SDPX license expressions](https://spdx.org/licenses/) and the older Fedora
+This project contains data for licenses that have been reviewed
+for use in the Fedora Linux project. For more on the criteria 
+Fedora applies for such review, see https://docs.fedoraproject.org/en-US/legal/license-approval
+
+Licenses are categorized by their status of approved (generally, or for specific uses) 
+or not-approved and published to [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal).
+The data may include additional notes and provides
+mappings between the [SPDX license expressions](https://spdx.org/licenses/) and the older Fedora
 license abbreviations.
+
+To request review of a new license for use in Fedora Linux, follow the process described
+at https://docs.fedoraproject.org/en-US/legal/license-review-process
 
 The project also intends to publish the combined license information
 in a number of data file formats and provide a package in Fedora for
