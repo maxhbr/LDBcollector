@@ -11,7 +11,10 @@
 #     spdx_expression = "GPL-3.0-or-later WITH Autoconf-exception-3.0"
 #
 # This expression is constructed using valid SPDX license and
-# exception identifiers found at https://spdx.org/
+# exception identifiers found at https://spdx.org/ and information
+# on how to contruct SPDX expressions at https://spdx.github.io/spdx-spec/SPDX-license-expressions/
+# Note: the SPDX expressions operators OR and AND should not be used 
+# in this context. 
 #
 # This is a required field.
 expression = ""
@@ -30,11 +33,16 @@ expression = ""
 # may have multiple listed for specific "allowed" scenarios 
 # (e.g., "allowed-content" and "allowed-documentation").  Note that 
 # "not-allowed" should not be combined with any allowed statuses and "allowed"
-# need not be combined with any other allowed statuses.
+# need not be combined with any other allowed statuses. For more information 
+# on how Fedora determines the status of a license, 
+# see https://docs.fedoraproject.org/en-US/legal/license-approval
 status = [ "" ]
 
 # Optional URL(s) to the license text.  This field is a multiline
-# literal string.  For example:
+# literal string.  For licenses that have an SPDX expression, 
+# the the corresponding SPDX URL will be auto-generated when the Docs packages
+# displaying this data is published, so you do not need to put SPDX URLs here. 
+# For example:
 #
 #     url = '''
 #     https://www.gnu.org/licenses/gpl-3.0-standalone.html
@@ -45,7 +53,8 @@ status = [ "" ]
 #url = '''
 #'''
 
-# Optional full text of the license.  This field is a multiline
+# Full text of the license for licenses that do not have an SPDX
+# expression.  This field is a multiline
 # literal string.  For example:
 #
 #     text = '''
@@ -68,7 +77,7 @@ status = [ "" ]
 
 # The 'fedora' block contains additional information specific to the 
 # Fedora Project regarding the license.  This section is optional 
-# and any o the fields in it are optional.
+# and any of the fields in it are optional.
 #[fedora]
 
 # The names Fedora uses to refer to this license.  This field is a
