@@ -1,9 +1,9 @@
 ---
-id: "Go::github.com/spf13/cobra:v1.0.0"
+id: "Go::github.com/spf13/cobra:1.3.0"
 vcs:
   type: "Git"
   url: "https://github.com/spf13/cobra.git"
-  revision: "a684a6d7f5e37385d954dd3b5a14fc6912c6ab9d"
+  revision: "bfacc59f62c67ffd43e93655a8d933cefab0fa99"
 path_excludes:
   - pattern: "doc/**"
     reason: "DOCUMENTATION_OF"
@@ -15,10 +15,10 @@ license_finding_curations:
   - path: "cobra/README.md"
     concluded_license: "Apache-2.0"
     reason: "DOCUMENTATION_OF"
-    comment: "Match on 'For example, GPLv2, GPLv3, LGPL, AGPL, MIT, 2-Clause BSD or 3-Clause BSD'."
+    comment: "Match on sentence 'For example, GPLv2, GPLv3, LGPL, AGPL, MIT, 2-Clause BSD or 3-Clause BSD'."
   - path: "cobra/cmd/license*"
     concluded_license: "Apache-2.0"
     reason: "INCORRECT"
     comment:
       "License files were included to enable developers to easily generate their own OSS licensed CLIs, see \
-      https://github.com/spf13/cobra/blob/v1.0.0/cobra/README.md#configuring-the-cobra-generator."
+      https://github.com/spf13/cobra/blob/v1.2.1/cobra/README.md#configuring-the-cobra-generator."

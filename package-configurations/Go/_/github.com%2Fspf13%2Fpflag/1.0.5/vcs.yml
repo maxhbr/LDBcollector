@@ -1,9 +1,9 @@
 ---
-id: "Go::github.com/spf13/pflag:v1.0.3"
+id: "Go::github.com/spf13/pflag:1.0.5"
 vcs:
   type: "Git"
   url: "https://github.com/spf13/pflag.git"
-  revision: "298182f68c66c05229eb03ac171abe6e309ee79a"
+  revision: "2e9d26c8c37aae03e3f9d4e90b7116f5accb7cab"
 path_excludes:
   - pattern: "*_test.go"
     reason: "TEST_OF"
@@ -13,4 +13,4 @@ license_finding_curations:
     reason: "INCORRECT"
     comment:
       "Match on 'Use of this source code ds governed by a BSD-style license' \
-      in https://github.com/spf13/pflag/blob/v1.0.3/duration_slice_test.go#L2-L3."
+      in https://github.com/spf13/pflag/blob/v1.0.5/duration_slice_test.go#L2-L3."

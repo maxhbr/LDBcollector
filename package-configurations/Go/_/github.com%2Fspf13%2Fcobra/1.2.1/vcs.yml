@@ -1,5 +1,5 @@
 ---
-id: "Go::github.com/spf13/cobra:v1.2.1"
+id: "Go::github.com/spf13/cobra:1.2.1"
 vcs:
   type: "Git"
   url: "https://github.com/spf13/cobra.git"

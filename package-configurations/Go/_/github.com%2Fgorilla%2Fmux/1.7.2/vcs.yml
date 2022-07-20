@@ -1,5 +1,5 @@
 ---
-id: "Go::github.com/gorilla/mux:v1.7.2"
+id: "Go::github.com/gorilla/mux:1.7.2"
 vcs:
   type: "Git"
   url: "https://github.com/gorilla/mux.git"
