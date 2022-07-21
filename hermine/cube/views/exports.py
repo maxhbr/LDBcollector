@@ -30,14 +30,10 @@ def export_licenses(request):
 def export_specific_license(request, license_id):
     license_instance = License.objects.get(id=license_id)
     filename = license_instance.spdx_id + ".json"
-    serializer = LicenseSerializer
-    data = serializer(license_instance).data
-    with open(filename, "w+"):
-        response = HttpResponse(
-            json.dumps(data, indent=4), content_type="application/json"
-        )
-        response["Content-Disposition"] = "attachment; filename=%s" % filename
-        return response
+    data = LicenseSerializer(license_instance).data
+    response = HttpResponse(json.dumps(data, indent=4), content_type="application/json")
+    response["Content-Disposition"] = "attachment; filename=%s" % filename
+    return response
 
 
 def export_generics(request):
