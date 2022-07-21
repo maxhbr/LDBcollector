@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+#
+# SPDX-License-Identifier: CC0-1.0
+#
 # You can override the included template(s) by including variable overrides
 # SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
 # Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
