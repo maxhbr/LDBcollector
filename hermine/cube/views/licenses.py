@@ -18,7 +18,26 @@ from cube.forms import ImportLicensesForm, ImportGenericsForm
 from cube.models import License, Generic
 
 
-class LicensesListView(LoginRequiredMixin, ListView, FormView):
+class FormErrorsToMessagesMixin:
+    def form_invalid(self, form):
+        for field, errs in form.errors.items():
+            for err in errs:
+                messages.add_message(self.request, messages.ERROR, err)
+        return super().form_invalid(form)
+
+    def form_valid(self, form):
+        try:
+            form.save()
+        except ValidationError as e:
+            messages.add_message(self.request, messages.ERROR, e.message)
+            return super().form_invalid(form)
+        messages.add_message(self.request, messages.SUCCESS, "File imported.")
+        return super().form_valid(form)
+
+
+class LicensesListView(
+    LoginRequiredMixin, FormErrorsToMessagesMixin, ListView, FormView
+):
     model = License
     context_object_name = "licenses"
     paginate_by = 50
@@ -28,14 +47,6 @@ class LicensesListView(LoginRequiredMixin, ListView, FormView):
     def post(self, *args, **kwargs):
         self.object_list = self.get_queryset()
         return super().post(*args, **kwargs)
-
-    def form_valid(self, form):
-        try:
-            form.save()
-        except ValidationError as e:
-            messages.add_message(self.request, messages.ERROR, e.message)
-            return super().form_invalid(form)
-        return super().form_valid(form)
 
 
 class LicenseDetailView(LoginRequiredMixin, DetailView):
@@ -229,21 +240,28 @@ def print_license(request, license_id):
     return redirect("cube:license", license_id)
 
 
-@login_required
-def generics(request):
-    form = ImportGenericsForm(request.POST, request.FILES)
-    generics_incore = Generic.objects.filter(in_core=True)
-    generics_outcore = Generic.objects.filter(in_core=False)
-    context = {
-        "generics_incore": generics_incore,
-        "generics_outcore": generics_outcore,
-        "form": form,
-    }
-    return render(request, "cube/generic_list.html", context)
+class GenericListView(
+    LoginRequiredMixin, FormErrorsToMessagesMixin, ListView, FormView
+):
+    model = Generic
+    context_object_name = "generics"
+    form_class = ImportGenericsForm
+    success_url = reverse_lazy("cube:generics")
+
+    def post(self, *args, **kwargs):
+        self.object_list = self.get_queryset()
+        return super().post(*args, **kwargs)
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = {
+            "generics_incore": self.object_list.filter(in_core=True),
+            "generics_outcore": self.object_list.filter(in_core=False),
+        }
+        context.update(**kwargs)
+        return super().get_context_data(object_list=object_list, **context)
 
 
-@login_required
-def generic(request, generic_id):
-    generic = get_object_or_404(Generic, pk=generic_id)
-    context = {"generic": generic}
-    return render(request, "cube/generic.html", context)
+class GenericDetailView(LoginRequiredMixin, DetailView):
+    model = Generic
+    context_object_name = "generic"
+    template_name = "cube/generic.html"

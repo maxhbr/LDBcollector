@@ -14,7 +14,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </ul>
 {% endblock %}
 {% block actions %}
-<form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:import_generics' %}" method="post">
+<form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:generics' %}" method="post">
   {% csrf_token %}
   <div class="field has-addons">
     <p class="control">

@@ -7,6 +7,5 @@ from .products import *
 from .releases import *
 from .components import *
 from .licenses import *
-from .imports import *
 from .exports import *
 from .misc import *
