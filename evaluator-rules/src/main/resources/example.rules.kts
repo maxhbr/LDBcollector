@@ -745,7 +745,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |     comment: "[A comment explaining why the scanner is incorrect.]"
             |   ```
             |
-            |     For inofrmation on how to write a glob pattern, please see this $globTutorialMdLink.
+            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
             |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
