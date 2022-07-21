@@ -156,7 +156,7 @@ def propagate_choices(release: Release):
             `resolved` the set of usages for which a choice has just been made
     """
     to_resolve = set()
-    resolved = set()
+    resolved = set(release.usage_set.all().exclude(license_expression=""))
 
     for usage in release.usage_set.all().filter(license_expression=""):
         effective_license = (
