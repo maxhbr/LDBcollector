@@ -6,13 +6,3 @@ status = [ "allowed" ]
 url = '''
 https://spdx.org/licenses/X11.html
 '''
-
-[fedora]
-
-name = [
-    "MIT license (also X11)"
-]
-
-abbreviation = [
-    "MIT"
-]
