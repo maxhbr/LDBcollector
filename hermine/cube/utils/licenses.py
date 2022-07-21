@@ -3,17 +3,16 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
+import logging
 import re
 from typing import Iterable, List
 
-from license_expression import get_spdx_licensing
+from license_expression import get_spdx_licensing, BaseSymbol
 
 from django.db import transaction
 
 from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
-
-import logging
 
 logger = logging.getLogger(__name__)
 
@@ -29,9 +28,18 @@ def is_ambiguous(spdx_expression: str):
     :return: whether expression needs to be confirmed
     :rtype: bool
     """
-    return re.search(r"[)\s]AND[(\s]", spdx_expression) and not re.search(
-        r"[)\s]OR[(\s]", spdx_expression
-    )
+    licensing = get_spdx_licensing()
+    parsed = licensing.parse(spdx_expression)
+    if parsed is None or isinstance(parsed, BaseSymbol) or "OR" in parsed.operator:
+        return False
+
+    for sub_expression in parsed.args:
+        if isinstance(sub_expression, BaseSymbol):
+            continue
+        if not is_ambiguous(sub_expression):
+            return False
+
+    return True
 
 
 def check_licenses_against_policy(release):
