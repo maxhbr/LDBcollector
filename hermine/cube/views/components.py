@@ -27,7 +27,3 @@ class ComponentList(LoginRequiredMixin, generic.ListView):
 class ComponentView(LoginRequiredMixin, generic.DetailView):
     template_name = "cube/component.html"
     model = Component
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return context
