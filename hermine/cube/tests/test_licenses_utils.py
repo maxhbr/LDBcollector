@@ -82,7 +82,7 @@ class ObligationsTestCase(TestCase):
         self.assertNotIn(self.generic1, generics)
 
 
-class SPDXToolsTestCase(unittest.TestCase):
+class SPDXToolsTestCase(TestCase):
     def test_is_ambiguous(self):
         self.assertFalse(is_ambiguous("MIT"))
         self.assertFalse(is_ambiguous("MIT OR BSD"))

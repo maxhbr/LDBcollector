@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+import logging
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -24,10 +25,12 @@ from cube.models import (
     Exploitation,
 )
 from cube.utils.licenses import (
-    explode_SPDX_to_units,
+    explode_spdx_to_units,
     get_usages_obligations,
 )
 from cube.utils.releases import update_validation_step
+
+logger = logging.getLogger(__name__)
 
 
 class ReleaseView(LoginRequiredMixin, generic.DetailView):
@@ -243,14 +246,9 @@ def release_add_choice(request, release_id, usage_id):
     elif usage.version.spdx_valid_license_expr:
         effective_license = usage.version.spdx_valid_license_expr
     else:
-        print("Choice cannot be done because no expression to process")
-    choices = LicenseChoice.objects.filter(
-        Q(expression_in=effective_license),
-        Q(component=usage.version.component) | Q(component=None),
-        Q(version=usage.version) | Q(version=None),
-        Q(product=usage.release.product) | Q(product=None),
-        Q(release=usage.release) | Q(release=None),
-        Q(scope=usage.scope) | Q(scope=None),
+        logger.info("Choice cannot be done because no expression to process")
+    choices = LicenseChoice.objects.for_usage(usage).filter(
+        Q(expression_in=effective_license)
     )
 
     context = {"usage": usage, "expression_in": effective_license, "choices": choices}
@@ -286,7 +284,7 @@ def release_send_choice(request, release_id, usage_id):
         expression_in = usage.version.spdx_valid_license_expr
     usage.license_expression = expression_out
     lic_to_add = set()
-    for uniq_lic_id in set(explode_SPDX_to_units(expression_out)):
+    for uniq_lic_id in set(explode_spdx_to_units(expression_out)):
         unique_license = License.objects.get(spdx_id__exact=uniq_lic_id)
         lic_to_add.add(unique_license)
     usage.licenses_chosen.set(lic_to_add)

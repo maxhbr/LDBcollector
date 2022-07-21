@@ -3,17 +3,35 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
+import logging
 import re
-from typing import Iterable
+from typing import Iterable, List
+
+from license_expression import get_spdx_licensing, BaseSymbol
 
 from django.db import transaction
 
 from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
 
-import logging
-
 logger = logging.getLogger(__name__)
+licensing = get_spdx_licensing()
+
+
+def has_ors(spdx_expression: str):
+    parsed = licensing.parse(spdx_expression)
+
+    if parsed is None or isinstance(parsed, BaseSymbol):
+        return False
+
+    if "OR" in parsed.operator:
+        return True
+
+    for sub_expression in parsed.args:
+        if has_ors(sub_expression):
+            return True
+
+    return False
 
 
 def is_ambiguous(spdx_expression: str):
@@ -27,9 +45,11 @@ def is_ambiguous(spdx_expression: str):
     :return: whether expression needs to be confirmed
     :rtype: bool
     """
-    return re.search(r"[)\s]AND[(\s]", spdx_expression) and not re.search(
-        r"[)\s]OR[(\s]", spdx_expression
-    )
+    parsed = licensing.parse(spdx_expression)
+    if parsed is None or isinstance(parsed, BaseSymbol) or has_ors(spdx_expression):
+        return False
+
+    return True
 
 
 def check_licenses_against_policy(release):
@@ -96,50 +116,36 @@ def get_licenses_to_check_or_create(release):
             raw_expression = usage.version.corrected_license
         else:
             raw_expression = usage.version.spdx_valid_license_expr
-        SPDX_Licenses = explode_SPDX_to_units(raw_expression)
+        spdx_licenses = explode_spdx_to_units(raw_expression)
 
-        for license in SPDX_Licenses:
+        for spdx_license in spdx_licenses:
             try:
-                license_instance = License.objects.get(spdx_id=license)
+                license_instance = License.objects.get(spdx_id=spdx_license)
                 if license_instance.color == "Grey":
                     licenses_to_check.add(license_instance)
             except License.DoesNotExist:
                 # It might happen that SPDX throws 'NOASSERTION' instead of an empty
                 # string. Handling that.
-                if license != "NOASSERTION":
-                    licenses_to_create.add(license)
-                    logger.info("unknown license", license)
+                if spdx_license != "NOASSERTION":
+                    licenses_to_create.add(spdx_license)
+                    logger.info("unknown license", spdx_license)
 
     response["licenses_to_check"] = licenses_to_check
     response["licenses_to_create"] = licenses_to_create
     return response
 
 
-def explode_SPDX_to_units(SPDX_expr):
+def explode_spdx_to_units(spdx_expr: str) -> List[str]:
     """Extract a list of every license from a SPDX valid expression.
 
-    :param SPDX_expr: A string that represents a valid SPDX expression. (Like ")
-    :type SPDX_expr: string
+    :param spdx_expr: A string that represents a valid SPDX expression. (Like ")
+    :type spdx_expr: string
     :return: A list of valid SPDX licenses contained in the expression.
     :rtype: list
     """
-    licenses = []
-    raw_expression = SPDX_expr.replace("(", "").replace(")", "")
-    # Next line allows us to consider an SPDX expression that has a 'WITH' clause as a
-    # full SPDX expression
-    raw_expression = raw_expression.replace(" WITH ", "_WITH_")
-    chunks = raw_expression.split()
-    while "AND" in chunks:
-        chunks.remove("AND")
-    while "OR" in chunks:
-        chunks.remove("OR")
-    i = 0
-    while i < len(chunks):
-        if chunks[i] not in licenses:
-            chunks[i] = chunks[i].replace("_WITH_", " WITH ")
-            licenses.append(chunks[i])
-        i += 1
-    return licenses
+    licensing = get_spdx_licensing()
+    parsed = licensing.parse(spdx_expr)
+    return sorted(list(parsed.objects))
 
 
 def create_or_update_license(license_dict):
