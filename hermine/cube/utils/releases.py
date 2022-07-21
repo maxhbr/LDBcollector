@@ -11,6 +11,7 @@ from cube.utils.licenses import (
     check_licenses_against_policy,
     explode_spdx_to_units,
     is_ambiguous,
+    has_ors,
 )
 
 logger = logging.getLogger(__name__)
@@ -75,7 +76,7 @@ def validate_step_4(release):
     Check all licenses choices are done.
     """
     context = dict()
-    response = propagate_choices(release.id)
+    response = propagate_choices(release)
     context["to_resolve"] = response["to_resolve"]
     context["resolved"] = response["resolved"]
 
@@ -141,75 +142,60 @@ def update_validation_step(release: Release):
     return info
 
 
-def propagate_choices(release_id):
+def propagate_choices(release: Release):
     """
     Transfer license information from component to usage. Set usage.license_chosen if
     there is no ambiguity.
 
     Args:
-
-        release_id (int): The intern identifier of the concerned release
+        release (int): The intern identifier of the concerned release
 
     Returns:
         response: A python object that has two field :
             `to_resolve` the set of usages which needs an explicit choice
             `resolved` the set of usages for which a choice has just been made
     """
-
-    release = Release.objects.get(pk=release_id)
-
     to_resolve = set()
     resolved = set()
 
-    unchosen_usages = release.usage_set.all().filter(license_expression="")
-    for usage in unchosen_usages:
-        if usage.version.corrected_license:
-            effective_license = usage.version.corrected_license
-        else:
-            effective_license = usage.version.spdx_valid_license_expr
-        unique_lic_ids = explode_spdx_to_units(effective_license)
-        chuncks = effective_license.replace("(", " ").replace(")", " ").upper().split()
+    for usage in release.usage_set.all().filter(license_expression=""):
+        effective_license = (
+            usage.version.corrected_license or usage.version.spdx_valid_license_expr
+        )
 
-        only_ands = (
-            "OR" not in chuncks
-        )  # imply is_ambiguous is True so we need corrected_license
-        all_licenses_apply = only_ands and usage.version.corrected_license
+        is_not_ambiguous = usage.version.corrected_license or not is_ambiguous(
+            effective_license
+        )
 
-        if len(unique_lic_ids) == 1 or all_licenses_apply:
+        if not has_ors(effective_license) and is_not_ambiguous:
+            licenses_spdx_ids = explode_spdx_to_units(effective_license)
+
             try:
-                unique_licenses = set()
-                for unique_lic_id in unique_lic_ids:
-                    unique_license = License.objects.get(spdx_id__exact=unique_lic_id)
-                    unique_licenses.add(unique_license)
-                usage.licenses_chosen.set(unique_licenses)
+                licenses = [
+                    License.objects.get(spdx_id=spdx_id)
+                    for spdx_id in licenses_spdx_ids
+                ]
+                usage.licenses_chosen.set(licenses)
                 usage.license_expression = effective_license
                 usage.save()
             except License.DoesNotExist:
                 logger.warning(
-                    "%s : can not choose unknown license %s",
+                    "%s : can not choose unknown license",
                     usage.version.component,
-                    unique_lic_ids[0],
                 )
-        elif usage.version.corrected_license or not is_ambiguous(effective_license):
-            choices = LicenseChoice.objects.filter(
-                Q(expression_in=effective_license),
-                Q(component=usage.version.component) | Q(component=None),
-                Q(version=usage.version) | Q(version=None),
-                Q(product=usage.release.product) | Q(product=None),
-                Q(release=usage.release) | Q(release=None),
-                Q(scope=usage.scope) | Q(scope=None),
+        elif is_not_ambiguous:
+            expression_outs = (
+                LicenseChoice.objects.for_usage(usage)
+                .filter(Q(expression_in=effective_license))
+                .values_list("expression_out", flat=True)
             )
-            expression_outs = []
-            for choice in choices:
-                expression_outs.append(choice.expression_out)
             if len(set(expression_outs)) == 1:
                 usage.license_expression = expression_outs[0]
-                lic_to_add = set()
-                for uniq_lic_id in set(explode_spdx_to_units(expression_outs[0])):
-                    unique_license = License.objects.get(spdx_id__exact=uniq_lic_id)
-                    lic_to_add.add(unique_license)
-
-                usage.licenses_chosen.set(lic_to_add)
+                licenses = [
+                    License.objects.get(spdx_id=spdx_id)
+                    for spdx_id in set(explode_spdx_to_units(expression_outs[0]))
+                ]
+                usage.licenses_chosen.set(licenses)
                 usage.save()
                 resolved.add(usage)
             else:

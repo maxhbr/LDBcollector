@@ -7,6 +7,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Constant for Usage and Derogation models
+from django.db.models import Q
 
 LINKING_AGGREGATION = "Aggregation"
 LINKING_DYNAMIC = "Dynamic"
@@ -440,8 +441,21 @@ class Derogation(models.Model):
         return self.license.__str__() + " : " + str(self.release.id)
 
 
+class LicenseChoiceManager(models.Manager):
+    def for_usage(self, usage: Usage):
+        return self.filter(
+            Q(component=usage.version.component) | Q(component=None),
+            Q(version=usage.version) | Q(version=None),
+            Q(product=usage.release.product) | Q(product=None),
+            Q(release=usage.release) | Q(release=None),
+            Q(scope=usage.scope) | Q(scope=None),
+        )
+
+
 class LicenseChoice(models.Model):
     """A class to store choices made for licenses"""
+
+    objects = LicenseChoiceManager()
 
     expression_in = models.CharField(max_length=500)
     expression_out = models.CharField(max_length=500)

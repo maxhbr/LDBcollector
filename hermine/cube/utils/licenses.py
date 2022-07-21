@@ -15,6 +15,23 @@ from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
 
 logger = logging.getLogger(__name__)
+licensing = get_spdx_licensing()
+
+
+def has_ors(spdx_expression: str):
+    parsed = licensing.parse(spdx_expression)
+
+    if parsed is None or isinstance(parsed, BaseSymbol):
+        return False
+
+    if "OR" in parsed.operator:
+        return True
+
+    for sub_expression in parsed.args:
+        if has_ors(sub_expression):
+            return True
+
+    return False
 
 
 def is_ambiguous(spdx_expression: str):
@@ -28,16 +45,9 @@ def is_ambiguous(spdx_expression: str):
     :return: whether expression needs to be confirmed
     :rtype: bool
     """
-    licensing = get_spdx_licensing()
     parsed = licensing.parse(spdx_expression)
-    if parsed is None or isinstance(parsed, BaseSymbol) or "OR" in parsed.operator:
+    if parsed is None or isinstance(parsed, BaseSymbol) or has_ors(spdx_expression):
         return False
-
-    for sub_expression in parsed.args:
-        if isinstance(sub_expression, BaseSymbol):
-            continue
-        if not is_ambiguous(sub_expression):
-            return False
 
     return True
 
