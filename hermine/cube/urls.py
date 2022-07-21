@@ -29,11 +29,10 @@ urlpatterns = [
         views.print_license,
         name="print_license",
     ),
-    path("generics/", views.generics, name="generics"),
-    path("generic/<int:generic_id>/", views.generic, name="generic"),
+    path("generics/", views.GenericListView.as_view(), name="generics"),
+    path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
     path("export/licenses/", views.export_licenses, name="export_licenses"),
     path("export/generics/", views.export_generics, name="export_generics"),
-    path("import/generics/", views.upload_generics_file, name="import_generics"),
     path("release/<int:pk>/", views.ReleaseView.as_view(), name="release_detail"),
     path("release/<int:pk>/bom/", views.ReleaseBomView.as_view(), name="release_bom"),
     path(

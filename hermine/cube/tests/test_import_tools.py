@@ -115,7 +115,7 @@ class ImportGenericTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(res.status_code, 200)
         Generic.objects.all().delete()
         res = self.client.post(
-            reverse("cube:import_generics"),
+            reverse("cube:generics"),
             data={
                 "file": SimpleUploadedFile(
                     "generics.json", res.content, "application/json"

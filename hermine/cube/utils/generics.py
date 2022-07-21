@@ -2,11 +2,15 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 import json
+import logging
 
 from django.core.serializers import serialize
+from django.db import transaction
 
 from cube.models import Generic
 from cube.serializers import GenericSerializer
+
+logger = logging.getLogger(__name__)
 
 
 def export_generics(indent=False):
@@ -15,6 +19,7 @@ def export_generics(indent=False):
     return serialize("json", Generic.objects.all(), indent=4 if indent else None)
 
 
+@transaction.atomic()
 def handle_generics_json(data):
     genericsArray = json.loads(data)
     created, updated = 0, 0
@@ -28,4 +33,4 @@ def handle_generics_json(data):
         s = GenericSerializer(g, data=generic["fields"], partial=True)
         s.is_valid(raise_exception=True)
         s.save()
-    print(f"Generics : {created} created / {updated} updated")
+    logger.info(f"Generics : {created} created / {updated} updated")

@@ -16,6 +16,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+
+from django.contrib import messages
+
 import hermine.mysecrets as secrets
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -85,6 +88,14 @@ TEMPLATES = [
         },
     }
 ]
+
+MESSAGE_TAGS = {
+    messages.INFO: "primary",
+    messages.SUCCESS: "success",
+    messages.WARNING: "warning",
+    messages.ERROR: "danger",
+}
+
 
 WSGI_APPLICATION = "hermine.wsgi.application"
 

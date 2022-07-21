@@ -10,14 +10,11 @@ from django.core.exceptions import ValidationError
 from rest_framework import serializers
 
 from .models import Release, LINKING_CHOICES
+from .utils.generics import handle_generics_json
 from .utils.licenses import handle_licenses_json
 
 
-class ImportGenericsForm(forms.Form):
-    file = forms.FileField()
-
-
-class ImportLicensesForm(forms.Form):
+class BaseJsonImportForm(forms.Form):
     file = forms.FileField()
 
     def clean_file(self):
@@ -30,9 +27,23 @@ class ImportLicensesForm(forms.Form):
 
         return file
 
+
+class ImportGenericsForm(BaseJsonImportForm):
     def save(self):
+        file = self.cleaned_data["file"]
         try:
-            handle_licenses_json(self.cleaned_data["file"])
+            handle_generics_json(file)
+        except serializers.ValidationError as e:
+            raise ValidationError(e.message)
+        except KeyError:
+            raise ValidationError('Each generic object must have a "id" field.')
+
+
+class ImportLicensesForm(BaseJsonImportForm):
+    def save(self):
+        file = self.cleaned_data["file"]
+        try:
+            handle_licenses_json(file)
         except serializers.ValidationError as e:
             raise ValidationError(e.message)
         except KeyError:
