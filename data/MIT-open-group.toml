@@ -1,0 +1,10 @@
+[license]
+expression = "MIT-open-group"
+status = [ "allowed" ]
+url = '''
+https://spdx.org/licenses/MIT-open-group.html
+https://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c
+'''
+
+[fedora]
+abbreviation = [ "MIT" ]
