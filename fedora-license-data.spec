@@ -15,7 +15,7 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  make
 BuildRequires:  python3
-BuildRequires:  python3-toml
+BuildRequires:  python%{python3_pkgversion}-toml
 
 %description
 This project contains information about licenses used in the Fedora
