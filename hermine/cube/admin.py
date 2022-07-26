@@ -19,6 +19,7 @@ from .models import Obligation
 from .models import Derogation
 from .models import LicenseChoice
 from .models import Exploitation
+from .models import Team
 from .utils.licenses import is_ambiguous
 
 
@@ -161,3 +162,4 @@ admin.site.register(Generic, GenericAdmin)
 admin.site.register(Derogation)
 admin.site.register(LicenseChoice)
 admin.site.register(Exploitation)
+admin.site.register(Team)
