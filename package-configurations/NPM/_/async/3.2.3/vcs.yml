@@ -1,0 +1,17 @@
+---
+id: "NPM::async:3.2.3"
+vcs:
+  type: "Git"
+  url: "https://github.com/caolan/async.git"
+  revision: "62943cac64876328780792319a37da7f7b3966dd"
+path_excludes:
+- pattern: "docs/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "logo/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "perf/**"
+  reason: "TEST_OF"
+- pattern: "support/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "test/**"
+  reason: "TEST_OF"
