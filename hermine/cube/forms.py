@@ -34,7 +34,7 @@ class ImportGenericsForm(BaseJsonImportForm):
         try:
             handle_generics_json(file)
         except serializers.ValidationError as e:
-            raise ValidationError(e.message)
+            raise ValidationError(str(e))
         except KeyError:
             raise ValidationError('Each generic object must have a "id" field.')
 
