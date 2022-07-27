@@ -158,7 +158,8 @@ if __name__ == "__main__":
         # sanity check
         assert isinstance(approved, str), \
                'approved is not string ({})'.format(licensefile)
-        assert isinstance(fedora_names, str) or isinstance(fedora_names, list), \
+        assert isinstance(fedora_names, str) or isinstance(fedora_names, list) or \
+               ("not-allowed" in status), \
                'name in [fedora] section is neither string nor list ({})'.format(licensefile)
         assert ((isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
                 ("not-allowed" in status)
