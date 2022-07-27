@@ -1,7 +1,7 @@
 [license]
 
 expression = "CC0-1.0"
-status = [ "allowed", "allowed-content" ]
+status = [ "allowed-content" ]
 
 url = '''
 http://creativecommons.org/publicdomain/zero/1.0/legalcode
