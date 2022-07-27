@@ -145,20 +145,23 @@ if __name__ == "__main__":
             if "abbreviation" in fedora_keys:
                 fedora_abbrevs = data["fedora"]["abbreviation"]
 
+                assert ((isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
+                        ("not-allowed" in status)
+                       ), \
+                       '{} does not have fedora_abbrevs or is not-allowed'.format(licensefile)
+
             # field: 'fedora_name' (could be a list)
             if "name" in fedora_keys:
                 fedora_names = data["fedora"]["name"]
 
+                assert isinstance(fedora_names, str) or isinstance(fedora_names, list) or \
+                       ("not-allowed" in status), \
+                       'name in [fedora] section is neither string nor list ({})'.format(licensefile)
+
         # sanity check
         assert isinstance(approved, str), \
                'approved is not string ({})'.format(licensefile)
-        assert isinstance(fedora_names, str) or isinstance(fedora_names, list) or \
-               ("not-allowed" in status), \
-               'name in [fedora] section is neither string nor list ({})'.format(licensefile)
-        assert ((isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
-                ("not-allowed" in status)
-               ), \
-               '{} does not have fedora_abbrevs or is not-allowed'.format(licensefile)
+
         assert isinstance(spdx_abbrev, str), \
                'spdx_abbrev is not string ({})'.format(licensefile)
 
