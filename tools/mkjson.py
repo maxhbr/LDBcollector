@@ -45,6 +45,7 @@ allowed_values = [
     "allowed-content",
     "allowed-documentation",
     "allowed-fonts",
+    "allowed-firmware",
 ]
 
 
