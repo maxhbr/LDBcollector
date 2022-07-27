@@ -156,11 +156,16 @@ if __name__ == "__main__":
                 fedora_names = data["fedora"]["name"]
 
         # sanity check
-        assert isinstance(approved, str)
-        assert isinstance(fedora_names, str) or isinstance(fedora_names, list)
-        assert (isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
-               ("not-allowed" in status)   # noqa: E501
-        assert isinstance(spdx_abbrev, str)
+        assert isinstance(approved, str), \
+               'approved is not string ({})'.format(licensefile)
+        assert isinstance(fedora_names, str) or isinstance(fedora_names, list), \
+               'name in [fedora] section is neither string nor list ({})'.format(licensefile)
+        assert ((isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
+                ("not-allowed" in status)
+               ), \
+               '{} does not have fedora_abbrevs or is not-allowed'.format(licensefile)
+        assert isinstance(spdx_abbrev, str), \
+               'spdx_abbrev is not string ({})'.format(licensefile)
 
         # add these keys to the main hash table
         if isinstance(fedora_abbrevs, str):
