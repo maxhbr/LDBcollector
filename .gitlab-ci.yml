@@ -1,0 +1,22 @@
+default:
+    image: fedora:latest
+
+    before_script:
+        - dnf install -y make git python3-pip python3-toml
+        - pip3 install toml-validator
+
+stages:
+    - toml-validate
+    - spec-validate
+
+workflow:
+    rules:
+        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+toml-validate:
+    script:
+        - make toml-validate
+
+spec-validate:
+    script:
+        - make spec-validate
