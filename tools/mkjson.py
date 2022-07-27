@@ -57,20 +57,13 @@ def add_license_data(
     i, licensedata, approved, fedora_names, fedora_abbrev, spdx_abbrev
 ):
     if isinstance(fedora_names, str):
-        if fedora_names == "":
-            licensedata[i] = {
-                "approved": approved,
-                "fedora_abbrev": fedora_abbrev,
-                "fedora_name": "",
-                "spdx_abbrev": spdx_abbrev,
-            }
-        else:
-            licensedata[i] = {
-                "approved": approved,
-                "fedora_abbrev": fedora_abbrev,
-                "fedora_name": fedora_names,
-                "spdx_abbrev": spdx_abbrev,
-            }
+        licensedata[i] = {
+            "approved": approved,
+            "fedora_abbrev": fedora_abbrev,
+            "fedora_name": fedora_names,
+            "spdx_abbrev": spdx_abbrev,
+        }
+        i += 1
     elif isinstance(fedora_names, list):
         for n in fedora_names:
             if n == "":
@@ -81,6 +74,7 @@ def add_license_data(
                 "fedora_name": n,
                 "spdx_abbrev": spdx_abbrev,
             }
+            i += 1
     else:
         licensedata[i] = {
             "approved": approved,
@@ -88,8 +82,7 @@ def add_license_data(
             "fedora_name": "",
             "spdx_abbrev": spdx_abbrev,
         }
-
-    i += 1
+        i += 1
 
     return i
 
