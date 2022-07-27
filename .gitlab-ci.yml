@@ -8,9 +8,9 @@ default:
 stages:
     - test
     
-workflow:
-    rules:
-        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+#workflow:
+#    rules:
+#        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
 
 toml-validate:
     stage: test
