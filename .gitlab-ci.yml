@@ -14,10 +14,18 @@ workflow:
 
 toml-validate:
     stage: test
+    artifacts:
+        paths:
+            - data/*.toml
+            - tools/*.py
     script:
         - make toml-validate
 
 spec-validate:
     stage: test
+    artifacts:
+        paths:
+            - data/*.toml
+            - tools/*.py
     script:
         - make spec-validate
