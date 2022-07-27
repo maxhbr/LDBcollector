@@ -6,17 +6,18 @@ default:
         - pip3 install toml-validator
 
 stages:
-    - toml-validate
-    - spec-validate
-
+    - test
+    
 workflow:
     rules:
         - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
 
 toml-validate:
+    stage: test
     script:
         - make toml-validate
 
 spec-validate:
+    stage: test
     script:
         - make spec-validate
