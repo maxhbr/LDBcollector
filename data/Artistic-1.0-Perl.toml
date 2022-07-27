@@ -13,6 +13,11 @@ name = [
     "Artistic 1.0 (original)"
 ]
 
+abbreviation = [
+    "Artistic"
+]
+
+
 notes = '''
 See: http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 '''
