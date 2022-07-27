@@ -1,0 +1,13 @@
+[license]
+expression = "Unicode-DFS-2016"
+status = [ "allowed" ]
+url = '''
+https://www.unicode.org/license.txt
+https://web.archive.org/web/20210830183830/https://www.unicode.org/license.html
+https://spdx.org/licenses/Unicode-DFS-2016.html
+'''
+
+[fedora]
+notes = '''
+A successor to Unicode-DFS-2015.
+'''
