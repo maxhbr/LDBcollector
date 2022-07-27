@@ -8,24 +8,24 @@ default:
 stages:
     - test
     
-#workflow:
-#    rules:
-#        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+workflow:
+    rules:
+        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
 
 toml-validate:
     stage: test
-    #artifacts:
-    #    paths:
-    #        - data/*.toml
-    #        - tools/*.py
+    artifacts:
+        paths:
+            - data/*.toml
+            - tools/*.py
     script:
         - make toml-validate
 
 spec-validate:
     stage: test
-    #artifacts:
-    #    paths:
-    #        - data/*.toml
-    #        - tools/*.py
+    artifacts:
+        paths:
+            - data/*.toml
+            - tools/*.py
     script:
         - make spec-validate
