@@ -225,7 +225,10 @@ if __name__ == "__main__":
         usage(prog)
 
     allowed = tsv.TsvWriter(open(os.path.join(cwd, "allowed.tsv"), "w"))
+    allowed.list_line(["\"Allowed\"", "\"Allowed Content\"", "\"Allowed Documentation\"", "\"Allowed Fonts\"", "\"Allowed Firmware\"", "\"SPDX Expression\"", "\"Fedora Abbreviation\"", "\"Full Name\"", "\"URL\"", "\"Notes\""])
+
     notallowed = tsv.TsvWriter(open(os.path.join(cwd, "not-allowed.tsv"), "w"))
+    notallowed.list_line(["\"SPDX Expression\"", "\"Full Name\"", "\"URL\"", "\"Notes\""])
 
     for licensefile in os.scandir(datadir):
         # all license data files must be *.toml files
