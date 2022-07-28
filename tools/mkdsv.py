@@ -77,6 +77,7 @@ def get_spdx_urls(expression):
 
     return r
 
+
 def write_allowed(keys, status, allowed):
     columns = []
 
@@ -140,17 +141,6 @@ def write_allowed(keys, status, allowed):
             url += "\n" + get_spdx_urls(data["license"]["expression"])
 
     columns.append("%s" % url)
-
-    # the 10th column is any fedora 'notes' field
-    if "fedora" in keys:
-        fedora_keys = [*data["fedora"]]
-
-        if "notes" in fedora_keys:
-            columns.append("%s" % " ".join(data["fedora"]["notes"].split()))
-        else:
-            columns.append("")
-    else:
-        columns.append("")
 
     allowed.writerow(columns)
 
@@ -226,7 +216,7 @@ if __name__ == "__main__":
 
     allowed_out = open(os.path.join(cwd, "allowed.dsv"), "w")
     allowed = csv.writer(allowed_out, delimiter='|')
-    allowed.writerow(["Allowed", "Allowed Content", "Allowed Documentation", "Allowed Fonts", "Allowed Firmware", "SPDX Expression", "Fedora Abbreviation", "Full Name", "URL", "Notes"])
+    allowed.writerow(["Allowed", "Allowed Content", "Allowed Documentation", "Allowed Fonts", "Allowed Firmware", "SPDX Expression", "Fedora Abbreviation", "Full Name", "URL"])
 
     notallowed_out = open(os.path.join(cwd, "not-allowed.dsv"), "w")
     notallowed = csv.writer(notallowed_out, delimiter='|')
