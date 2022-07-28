@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #
-# Generate a TSV file of all of the TOML data.
+# Generate a DSV file of all of the TOML data.
 # This is for inclusion in Fedora Legal documentation, which is AsciiDoc.
 #
 # Author:  David Cantrell <dcantrell@redhat.com>
@@ -40,7 +40,7 @@ import os
 import sys
 import json
 import toml
-import tsv
+import csv
 
 allowed_values = [
     "allowed",
@@ -83,12 +83,12 @@ def write_allowed(keys, status, allowed):
     # allowed columns are the first 5 columns
     for v in allowed_values:
         if v in status:
-            columns.append("\"Y\"")
+            columns.append("Y")
         else:
-            columns.append("\"N\"")
+            columns.append("")
 
     # the 6th column is the SPDX expression
-    columns.append("\"%s\"" % data["license"]["expression"])
+    columns.append("%s" % data["license"]["expression"])
 
     # the 7th column is the old Fedora abbreviation
     # the 8th column is the old Fedora name
@@ -105,9 +105,9 @@ def write_allowed(keys, status, allowed):
                 else:
                     alist += "\n" + a
 
-            columns.append("\"%s\"" % alist)
+            columns.append("%s" % alist)
         else:
-            columns.append("\"\"")
+            columns.append("")
 
         if "name" in fedora_keys:
             nlist = None
@@ -118,12 +118,12 @@ def write_allowed(keys, status, allowed):
                 else:
                     nlist += "\n" + n
 
-            columns.append("\"%s\"" % nlist)
+            columns.append("%s" % nlist)
         else:
-            columns.append("\"\"")
+            columns.append("")
     else:
-        columns.append("\"\"")
-        columns.append("\"\"")
+        columns.append("")
+        columns.append("")
 
     # the 9th column is any 'url' field plus URLs generated from the SPDX expression
     if "url" in keys:
@@ -139,27 +139,27 @@ def write_allowed(keys, status, allowed):
         else:
             url += "\n" + get_spdx_urls(data["license"]["expression"])
 
-    columns.append("\"%s\"" % url)
+    columns.append("%s" % url)
 
     # the 10th column is any fedora 'notes' field
     if "fedora" in keys:
         fedora_keys = [*data["fedora"]]
 
         if "notes" in fedora_keys:
-            columns.append("\"%s\"" % " ".join(data["fedora"]["notes"].split()))
+            columns.append("%s" % " ".join(data["fedora"]["notes"].split()))
         else:
-            columns.append("\"\"")
+            columns.append("")
     else:
-        columns.append("\"\"")
+        columns.append("")
 
-    allowed.list_line(columns)
+    allowed.writerow(columns)
 
 
 def write_not_allowed(keys, notallowed):
     columns = []
 
     # the 1st column is the SPDX expression
-    columns.append("\"%s\"" % data["license"]["expression"])
+    columns.append("%s" % data["license"]["expression"])
 
     # the 2nd column is the old Fedora name
     if "fedora" in keys:
@@ -174,11 +174,11 @@ def write_not_allowed(keys, notallowed):
                 else:
                     nlist += "\n" + n
 
-            columns.append("\"%s\"" % nlist)
+            columns.append("%s" % nlist)
         else:
-            columns.append("\"\"")
+            columns.append("")
     else:
-        columns.append("\"\"")
+        columns.append("")
 
     # the 3rd column is any 'url' field plus URLs generated from the SPDX expression
     if "url" in keys:
@@ -194,20 +194,20 @@ def write_not_allowed(keys, notallowed):
         else:
             url += "\n" + get_spdx_urls(data["license"]["expression"])
 
-    columns.append("\"%s\"" % url)
+    columns.append("%s" % url)
 
     # the 4th column is any fedora 'notes' field
     if "fedora" in keys:
         fedora_keys = [*data["fedora"]]
 
         if "notes" in fedora_keys:
-            columns.append("\"%s\"" % " ".join(data["fedora"]["notes"].split()))
+            columns.append("%s" % " ".join(data["fedora"]["notes"].split()))
         else:
-            columns.append("\"\"")
+            columns.append("")
     else:
-        columns.append("\"\"")
+        columns.append("")
 
-    notallowed.list_line(columns)
+    notallowed.writerow(columns)
 
 
 if __name__ == "__main__":
@@ -224,11 +224,13 @@ if __name__ == "__main__":
     if not os.path.isdir(datadir):
         usage(prog)
 
-    allowed = tsv.TsvWriter(open(os.path.join(cwd, "allowed.tsv"), "w"))
-    allowed.list_line(["\"Allowed\"", "\"Allowed Content\"", "\"Allowed Documentation\"", "\"Allowed Fonts\"", "\"Allowed Firmware\"", "\"SPDX Expression\"", "\"Fedora Abbreviation\"", "\"Full Name\"", "\"URL\"", "\"Notes\""])
+    allowed_out = open(os.path.join(cwd, "allowed.dsv"), "w")
+    allowed = csv.writer(allowed_out, delimiter='|')
+    allowed.writerow(["Allowed", "Allowed Content", "Allowed Documentation", "Allowed Fonts", "Allowed Firmware", "SPDX Expression", "Fedora Abbreviation", "Full Name", "URL", "Notes"])
 
-    notallowed = tsv.TsvWriter(open(os.path.join(cwd, "not-allowed.tsv"), "w"))
-    notallowed.list_line(["\"SPDX Expression\"", "\"Full Name\"", "\"URL\"", "\"Notes\""])
+    notallowed_out = open(os.path.join(cwd, "not-allowed.dsv"), "w")
+    notallowed = csv.writer(notallowed_out, delimiter='|')
+    notallowed.writerow(["SPDX Expression", "Full Name", "URL", "Notes"])
 
     for licensefile in os.scandir(datadir):
         # all license data files must be *.toml files
@@ -254,5 +256,5 @@ if __name__ == "__main__":
         else:
             write_allowed(keys, status, allowed)
 
-    allowed.close()
-    notallowed.close()
+    allowed_out.close()
+    notallowed_out.close()
