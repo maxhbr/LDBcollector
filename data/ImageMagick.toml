@@ -17,9 +17,3 @@ abbreviation = [
     "ImageMagick"
 ]
 
-notes = '''
-Weak copyleft license specific to imagemagick Apache 2.0 with the exception of
-the summary above the Terms and Conditions, the statement above the (c) notice,
-and the absence of ""(except as stated in this section)"" in section 3, patent
-grant
-'''

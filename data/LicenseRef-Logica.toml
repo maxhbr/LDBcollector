@@ -17,9 +17,3 @@ abbreviation = [
     "Logica"
 ]
 
-notes = '''
-not found in Fedora currently, don't add to SPDX  Appears to be specific to
-Logica code and under the laws of Ireland license appears here:
-https://github.com/OpenSmpp/opensmpp/blob/master/LICENSE_LOGICA,  The license
-indicates that it has been superseded.
-'''

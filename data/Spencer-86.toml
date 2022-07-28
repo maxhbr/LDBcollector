@@ -17,7 +17,3 @@ abbreviation = [
     "HSRL"
 ]
 
-notes = '''
-Fedora shows 2 different licenses on this page, SPDX includes them both, plus
-also a third variant from 99
-'''

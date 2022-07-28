@@ -17,7 +17,3 @@ abbreviation = [
     "DMIT"
 ]
 
-notes = '''
-not found in Fedora currently, don't add to SPDX  looks to be used by docbook
-project?
-'''

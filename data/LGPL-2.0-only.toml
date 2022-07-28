@@ -17,11 +17,3 @@ abbreviation = [
     "LGPLv2"
 ]
 
-notes = '''
-Note that this license was originally referred to as the GNU Library
-General Public License v2, but all current versions (v2.1 or newer) of
-the license are correctly known as the GNU Lesser General Public
-License.
-
-Fedora treats 2.0 and 2.1 as same, SPDX does not
-'''

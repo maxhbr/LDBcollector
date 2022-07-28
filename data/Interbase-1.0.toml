@@ -17,9 +17,3 @@ abbreviation = [
     "Interbase"
 ]
 
-notes = '''
-Fedora to update link to license to:
-http://www.firebirdsql.org/en/interbase-public-license/
-Fedora link does not provide license text:
-http://www.borland.com/devsupport/interbase/opensource/IPL.html
-'''

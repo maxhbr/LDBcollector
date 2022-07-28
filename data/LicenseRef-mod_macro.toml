@@ -17,8 +17,3 @@ abbreviation = [
     "mod_macro"
 ]
 
-notes = '''
-not found in Fedora currently, don't add to SPDX  link broken - is this it?
-https://people.apache.org/~fabien/mod_macro/LICENSE also see
-https://fossies.org/linux/mod_macro/LICENSE
-'''

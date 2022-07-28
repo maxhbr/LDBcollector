@@ -17,7 +17,3 @@ abbreviation = [
     "gnuplot"
 ]
 
-notes = '''
-License requires changes to source to be packaged as patches and not appended to
-the original source, etc.
-'''

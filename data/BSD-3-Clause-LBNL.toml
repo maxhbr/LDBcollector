@@ -17,7 +17,3 @@ abbreviation = [
     "LBNL BSD"
 ]
 
-notes = '''
-BSD like license with a provision at the end that makes any non licensed
-additions subject to a FOSS license
-'''

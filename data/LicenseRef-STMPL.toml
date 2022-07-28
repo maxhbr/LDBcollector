@@ -17,8 +17,3 @@ abbreviation = [
     "STMPL"
 ]
 
-notes = '''
-not found in Fedora currently, don't add to SPDX  this is the same as MPL 1.0
-except for the preamble and amendment at end, due to this and that no one has
-seen it used currently, did not add
-'''

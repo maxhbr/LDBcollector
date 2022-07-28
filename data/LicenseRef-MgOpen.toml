@@ -13,13 +13,3 @@ abbreviation = [
     "MgOpen"
 ]
 
-notes = '''
-This is a variant of the Bitstream Vera font license. It has a few minor
-changes, specifically, the Bitstream Vera license included a note at the end,
-after the ALL CAPS section, about the use of certain names in advertising which
-the MgOpen license does not have, and the MgOpen license includes one additional
-phrase in the third paragraph:    "or if the modifications are accepted for
-inclusion in the Font   Software itself by the each appointed Administrator."
-This license was found at:
-http://www.ellak.gr/fonts/mgopen/index.en.html#license
-'''

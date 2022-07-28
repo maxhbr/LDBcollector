@@ -17,6 +17,3 @@ abbreviation = [
     "MIT"
 ]
 
-notes = '''
-MIT variant; Fedora does not use distinct short identifier
-'''

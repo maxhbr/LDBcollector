@@ -17,7 +17,3 @@ abbreviation = [
     "Sendmail"
 ]
 
-notes = '''
-SPDX also has https://spdx.org/licenses/Sendmail.html text on link Fedora has
-goes to "8.23" version
-'''

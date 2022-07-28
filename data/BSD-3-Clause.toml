@@ -24,7 +24,3 @@ abbreviation = [
     "NetCDF"
 ]
 
-notes = '''
-Same as BSD-3-Clause, but replaces "copyright holders" with "regents"  license
-text on Fedora page is list of licenses
-'''

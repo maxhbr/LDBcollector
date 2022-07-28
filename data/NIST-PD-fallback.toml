@@ -17,7 +17,3 @@ abbreviation = [
     "NISTSL"
 ]
 
-notes = '''
-new license to Fedora.  SPDX version and in wild does not have superflous
-paragraph at beg and end as shows in Fedora license text page?
-'''

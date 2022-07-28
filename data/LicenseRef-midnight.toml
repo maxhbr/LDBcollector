@@ -17,7 +17,3 @@ abbreviation = [
     "midnight"
 ]
 
-notes = '''
-not found in Fedora currently, don't add to SPDX  FOSS license for single
-package
-'''

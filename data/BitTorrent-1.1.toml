@@ -17,7 +17,3 @@ abbreviation = [
     "BitTorrent"
 ]
 
-notes = '''
-not found in Fedora currently, as it turns out  SPDX List also has
-BitTorrent-1.0
-'''

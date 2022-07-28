@@ -20,8 +20,3 @@ abbreviation = [
     "MIT"
 ]
 
-notes = '''
-Fedora has same license text using two different Fedora ids: "libtiff" and "MIT"
-BSD/MIT like  Fedora has same license text using two different Fedora ids:
-"libtiff" and "MIT"
-'''

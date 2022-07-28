@@ -17,7 +17,3 @@ abbreviation = [
     "Zend"
 ]
 
-notes = '''
-Currently identified by fossology as "Zend-2.0", which is consistent with SPDX
-naming scheme
-'''

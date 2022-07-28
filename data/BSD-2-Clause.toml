@@ -19,7 +19,3 @@ abbreviation = [
     "BSD"
 ]
 
-notes = '''
-short identifier issue - need to deal with for all BSD variants  Fedora uses
-identifier, "BSD"
-'''

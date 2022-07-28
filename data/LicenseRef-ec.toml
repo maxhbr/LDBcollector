@@ -13,10 +13,3 @@ abbreviation = [
     "ec"
 ]
 
-notes = '''
-This license was found on the "ec" component in TeXLive. Originally, it was non-
-free, but the copyright holders agreed to drop a clause requiring distribution
-of the "unmodified fonts" in the event of modification. Even with this change,
-this license is considered to be on the "borderline" of Free, and it is not
-recommended for use.
-'''

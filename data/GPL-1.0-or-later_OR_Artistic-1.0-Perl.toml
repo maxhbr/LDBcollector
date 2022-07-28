@@ -17,7 +17,3 @@ abbreviation = [
     "GPL+ or Artistic"
 ]
 
-notes = '''
-this would be covered by using the short identifiers for each license choice
-with the "OR" operator
-'''

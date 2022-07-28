@@ -17,8 +17,3 @@ abbreviation = [
     "HaskellReport"
 ]
 
-notes = '''
-there are 3 variations here, but the difference can be accomodated via a license
-template as it's only a different in name; use same Fedora short identifier; add
-as one license with template
-'''

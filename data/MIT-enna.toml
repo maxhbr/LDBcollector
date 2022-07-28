@@ -17,8 +17,3 @@ abbreviation = [
     "MIT"
 ]
 
-notes = '''
-MIT variant  COPYING.PLAIN text referenced in the license can be found here
-http://git.enlightenment.org/enlightenment/modules/forecasts.git/plain/COPYING-
-PLAIN
-'''

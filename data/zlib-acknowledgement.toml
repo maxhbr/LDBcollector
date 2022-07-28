@@ -20,10 +20,3 @@ abbreviation = [
     "zlib with acknowledgement"
 ]
 
-notes = '''
-added to SPDX as "Nunit" and later realized it was same as zlib-acknowledgement
-with matching guidelines - use latter identifier  will need to templatize
-copyright/acknowledgement statement in middle of license text  - decided to not
-templatize; need to use different short name b/c "with" is an operator for SPDX
-license expression
-'''

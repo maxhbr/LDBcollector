@@ -17,7 +17,3 @@ abbreviation = [
     "VNLSL"
 ]
 
-notes = '''
-not found in Fedora currently, don't add to SPDX  no current copy of license
-elsewhere and seems old and very specific so not adding
-'''

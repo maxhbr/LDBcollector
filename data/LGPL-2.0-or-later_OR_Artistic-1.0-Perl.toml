@@ -13,10 +13,3 @@ abbreviation = [
     "LGPLv2+ or Artistic"
 ]
 
-notes = '''
-Some perl packages explicitly state LGPLv2+ (extremely uncommon), only
-use this license for those cases
-
-this would be covered by using the short identifiers for each license
-choice with the "OR" operator
-'''

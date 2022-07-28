@@ -17,6 +17,3 @@ abbreviation = [
     "AFL"
 ]
 
-notes = '''
-SPDX List also has AFL-1.1, AFL-1.2, AFL-2.0, AFL-2.1
-'''

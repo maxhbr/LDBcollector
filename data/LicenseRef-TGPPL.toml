@@ -17,8 +17,3 @@ abbreviation = [
     "TGPPL"
 ]
 
-notes = '''
-not found in Fedora currently, don't add to SPDX  This is really OSL-3.0 with a
-few minor changes having to do with the name and then the modifications to the
-license (last section).
-'''

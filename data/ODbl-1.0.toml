@@ -13,8 +13,3 @@ abbreviation = [
     "ODbl-1.0"
 ]
 
-notes = '''
-ODbL-1.0 is an approved license specifically for content, but it should be noted
-that the elements of the covered dataset also must be under terms acceptable to
-Fedora.
-'''
