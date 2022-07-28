@@ -16,8 +16,5 @@ name = [
 
 notes = '''
 The "Proprietary software companies" text in the preamble is a field of use
-restriction.  note, DejaCode has 0.93 but calls it an exception. Neither that
-version nor this one is an exception to GPL, but the license is "based on" GPL.
-I did not check if what DejaCode has and this link are the same (they look like
-it), but the short name in DejaCode uses "exception" and that is wrong
+restriction.  
 '''
