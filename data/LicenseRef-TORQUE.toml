@@ -10,7 +10,5 @@ name = [
 ]
 
 notes = '''
-Commercial use restriction  no link at all. DejaCode has v1.1 - same for SPDX.
-v1.1 is "good" license. I'd say just remove this, as it's probably really old
-and who knows what the license text is
+Commercial use restriction. No link or license text found for v1.0 (v1.1 is allowed in Fedora)
 '''
