@@ -7,7 +7,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Product
+from .models import Product, ExpressionValidation
 from .models import Category
 from .models import Release
 from .models import Component
@@ -150,6 +150,10 @@ class VersionAdmin(admin.ModelAdmin):
     search_fields = ["purl"]
 
 
+class UsageDecisionAdmin(admin.ModelAdmin):
+    readonly_fields = ("decision_type",)
+
+
 admin.site.register(License, LicenseAdmin)
 admin.site.register(Obligation, ObligationAdmin)
 admin.site.register(Category, CategoryAdmin)
@@ -160,6 +164,7 @@ admin.site.register(Version, VersionAdmin)
 admin.site.register(Usage, UsageAdmin)
 admin.site.register(Generic, GenericAdmin)
 admin.site.register(Derogation)
-admin.site.register(LicenseChoice)
+admin.site.register(LicenseChoice, UsageDecisionAdmin)
+admin.site.register(ExpressionValidation, UsageDecisionAdmin)
 admin.site.register(Exploitation)
 admin.site.register(Team)

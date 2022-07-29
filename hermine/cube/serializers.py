@@ -510,7 +510,7 @@ class SBOMSerializer(serializers.Serializer):
 class LicenseChoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = LicenseChoice
-        fields = "__all__"
+        exclude = ("decision_type",)
 
 
 class Validation1Serializer(serializers.Serializer):

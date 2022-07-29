@@ -443,7 +443,7 @@ class Derogation(models.Model):
         return self.license.__str__() + " : " + str(self.release.id)
 
 
-class LicenseChoiceManager(models.Manager):
+class UsageDecisionManager(models.Manager):
     def for_usage(self, usage: Usage):
         return self.filter(
             Q(component=usage.version.component) | Q(component=None),
@@ -454,10 +454,19 @@ class LicenseChoiceManager(models.Manager):
         )
 
 
-class LicenseChoice(models.Model):
+class UsageDecision(models.Model):
     """A class to store choices made for licenses"""
 
-    objects = LicenseChoiceManager()
+    LICENCE_CHOICE = "choice"
+    EXPRESSION_VALIDATION = "validation"
+    DECISION_TYPES = (
+        (LICENCE_CHOICE, "Licence choice"),
+        (EXPRESSION_VALIDATION, "Expression validation"),
+    )
+
+    decision_type = models.CharField(
+        max_length=500, choices=DECISION_TYPES, blank=False
+    )
 
     expression_in = models.CharField(max_length=500)
     expression_out = models.CharField(max_length=500)
@@ -481,3 +490,41 @@ class LicenseChoice(models.Model):
 
     def __str__(self):
         return self.expression_in + " => " + self.expression_out
+
+
+class LicenseChoiceManager(UsageDecisionManager):
+    def get_queryset(self):
+        return super().get_queryset().filter(decision_type=UsageDecision.LICENCE_CHOICE)
+
+
+class LicenseChoice(UsageDecision):
+    objects = LicenseChoiceManager()
+
+    def __init__(self, *args, **kwargs):
+        self._meta.get_field("decision_type").default = UsageDecision.LICENCE_CHOICE
+        super().__init__(*args, **kwargs)
+
+    class Meta:
+        proxy = True
+
+
+class ExpressionValidationManager(UsageDecisionManager):
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .filter(decision_type=UsageDecision.EXPRESSION_VALIDATION)
+        )
+
+
+class ExpressionValidation(UsageDecision):
+    objects = ExpressionValidationManager()
+
+    def __init__(self, *args, **kwargs):
+        self._meta.get_field(
+            "decision_type"
+        ).default = UsageDecision.EXPRESSION_VALIDATION
+        super().__init__(*args, **kwargs)
+
+    class Meta:
+        proxy = True
