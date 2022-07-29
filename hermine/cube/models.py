@@ -291,6 +291,7 @@ class Usage(models.Model):
     description = models.TextField(max_length=500, blank=True)
     licenses_chosen = models.ManyToManyField(License, blank=True)
     scope = models.CharField(max_length=50, blank=True, null=True)
+    project = models.TextField(max_length=750, blank=True, null=True)
     license_expression = models.CharField(max_length=500, blank=True)
 
     def __str__(self):
@@ -305,6 +306,7 @@ class Exploitation(models.Model):
 
     release = models.ForeignKey(Release, on_delete=models.CASCADE, null=True)
     scope = models.CharField(max_length=50)
+    project = models.TextField(max_length=750, blank=True, null=True)
     exploitation = models.CharField(
         max_length=50,
         choices=Usage.EXPLOITATION_CHOICES,
@@ -315,7 +317,7 @@ class Exploitation(models.Model):
         return self.release.__str__() + " : " + str(self.scope)
 
     class Meta:
-        unique_together = ["release", "scope"]
+        unique_together = ["release", "scope", "project"]
 
 
 class Generic(models.Model):

@@ -52,10 +52,13 @@ def import_ort_evaluated_model_json_file(
         defaults = {}
     data = json.load(json_file)
 
+    paths = data["paths"]
+    scopes = data["scopes"]
+    packages = data["packages"]
     if replace:
         Usage.objects.filter(release=release_idk).delete()
 
-    for package in data["packages"]:
+    for package in packages:
         if package["is_project"]:
             continue
         current_purl = package.get("purl")
@@ -113,30 +116,22 @@ def import_ort_evaluated_model_json_file(
             logger.info(
                 f"Version {version.version_number} created for component {component.name}"
             )
-
-        # As we don't yet take into account the concept of subprojects
-        # we store them in the description
-        related_projects = []
-        for path in package["paths"]:
-            related_projects.append(
-                data["packages"][data["paths"][path]["project"]]["id"]
-            )
-        description = "\n".join(related_projects)
-        scope_indices = package.get("scopes")
-        if scope_indices is None or len(scope_indices) == 0:
-            scopes = {"Blank Scope"}
-        else:
-            scopes = set()
-            for scope_index in scope_indices:
-                scopes.add(data["scopes"][scope_index]["name"])
-        for scope in scopes:
-            Usage.objects.get_or_create(
-                version_id=version.id,
-                release_id=release_idk,
-                scope=scope,
-                description=description,
-                defaults=defaults,
-            )
+        defaults = {}
+        path_ids = package.get("paths")
+        if path_ids:
+            for path_id in path_ids:
+                path = paths[path_id]
+                scope_id = path.get("scope")
+                project_id = path.get("project")
+                scope_name = scopes[scope_id]["name"]
+                project_name = packages[project_id]["id"]
+                Usage.objects.get_or_create(
+                    version_id=version.id,
+                    release_id=release_idk,
+                    scope=scope_name,
+                    project=project_name,
+                    defaults=defaults,
+                )
 
 
 @transaction.atomic()
