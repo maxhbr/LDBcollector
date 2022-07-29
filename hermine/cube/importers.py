@@ -116,7 +116,7 @@ def import_ort_evaluated_model_json_file(
             logger.info(
                 f"Version {version.version_number} created for component {component.name}"
             )
-        defaults = {}
+        linking = defaults["linking"]
         path_ids = package.get("paths")
         if path_ids:
             for path_id in path_ids:
@@ -130,7 +130,7 @@ def import_ort_evaluated_model_json_file(
                     release_id=release_idk,
                     scope=scope_name,
                     project=project_name,
-                    defaults=defaults,
+                    linking=linking,
                 )
 
 
