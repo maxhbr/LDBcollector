@@ -68,7 +68,7 @@ urlpatterns = [
         views.ReleaseExploitationView.as_view(),
         name="release_exploitation",
     ),
-    path("licenses/<int:page>/", views.LicensesListView.as_view(), name="licenses"),
+    path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
 

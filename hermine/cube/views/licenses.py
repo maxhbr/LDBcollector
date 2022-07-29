@@ -42,7 +42,7 @@ class LicensesListView(
     context_object_name = "licenses"
     paginate_by = 50
     form_class = ImportLicensesForm
-    success_url = reverse_lazy("cube:licenses", args=[1])
+    success_url = reverse_lazy("cube:licenses")
 
     def post(self, *args, **kwargs):
         self.object_list = self.get_queryset()

@@ -31,14 +31,14 @@ class ImportLicensesTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(res.status_code, 200)
         License.objects.all().delete()
         res = self.client.post(
-            reverse("cube:licenses", args=[1]),
+            reverse("cube:licenses"),
             data={
                 "file": SimpleUploadedFile(
                     "lincenses.json", res.content, "application/json"
                 )
             },
         )
-        self.assertRedirects(res, reverse("cube:licenses", args=[1]))
+        self.assertRedirects(res, reverse("cube:licenses"))
 
     def test_generic_autocreation(self):
         json = [
