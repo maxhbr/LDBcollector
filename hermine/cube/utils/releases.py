@@ -5,7 +5,7 @@ import logging
 
 from django.db.models import Q
 
-from cube.models import Release, License, LicenseChoice
+from cube.models import Release, License, LicenseChoice, ExpressionValidation
 from cube.utils.licenses import (
     get_licenses_to_check_or_create,
     check_licenses_against_policy,
@@ -54,18 +54,36 @@ def validate_step_3(release: Release):
     """
     context = dict()
     ambigious_spdx = [
-        usage.version
+        usage
         for usage in release.usage_set.all()
         if is_ambiguous(usage.version.spdx_valid_license_expr)
     ]
-    context["to_confirm"] = [c for c in ambigious_spdx if not c.corrected_license]
+
+    for usage in ambigious_spdx:
+        try:
+            usage.version.corrected_license = (
+                ExpressionValidation.objects.for_usage(usage)
+                .filter(expression_in=usage.version.declared_license_expr)
+                .values_list("expression_out", flat=True)
+                .get()
+            )
+            usage.version.save()
+        except ExpressionValidation.DoesNotExist:
+            continue
+
+    context["to_confirm"] = [
+        u.version for u in ambigious_spdx if not u.version.corrected_license
+    ]
     context["confirmed"] = [
-        c for c in ambigious_spdx if c.corrected_license == c.spdx_valid_license_expr
+        u.version
+        for u in ambigious_spdx
+        if u.version.corrected_license == u.version.spdx_valid_license_expr
     ]
     context["corrected"] = [
-        c
-        for c in ambigious_spdx
-        if c.corrected_license and c.corrected_license != c.spdx_valid_license_expr
+        u.version
+        for u in ambigious_spdx
+        if u.version.corrected_license
+        and u.version.corrected_license != u.version.spdx_valid_license_expr
     ]
 
     return (len(context["to_confirm"]) == 0), context

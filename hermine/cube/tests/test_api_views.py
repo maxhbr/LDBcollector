@@ -5,7 +5,13 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from rest_framework.test import APITestCase as BaseAPITestCase
 
-from cube.models import LINKING_PACKAGE, Version, LicenseChoice, Derogation
+from cube.models import (
+    LINKING_PACKAGE,
+    Version,
+    LicenseChoice,
+    Derogation,
+    ExpressionValidation,
+)
 from cube.utils.licenses import handle_licenses_json
 
 SPDX_ID = "testlicense"
@@ -297,8 +303,9 @@ class ReleaseStepsAPITestCase(APITestCase):
         self.assertEqual(res.data["valid"], False)
 
         ## Simulate fixing manually
-        Version.objects.filter(component__name="dependency3").update(
-            corrected_license="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0"
+        ExpressionValidation.objects.create(
+            expression_in="LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
+            expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0",
         )
         res = self.client.get(reverse("cube:release-validation-3", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
