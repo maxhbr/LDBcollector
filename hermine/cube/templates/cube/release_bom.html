@@ -90,12 +90,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 <table class="table">
   <thead>
     <tr>
+      <th>Sub project</th>
       <th>Scope</th>
       <th>Component</th>
       <th>Version</th>
       <th>Concluded License</th>
       <th>Chosen License</th>
       <th>Modification</th>
+      <th>Linking type</th>
       <th>Edit</th>
     </tr>
   </thead>
@@ -103,6 +105,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% for usage in object.usage_set.all %}
     <tr>
+      <td><abbr title="{{ usage.project|truncatechars:50 }}">{{ usage.project|truncatechars:20 }}</abbr></td>
       <td>{{ usage.scope }}</td>
       <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
       <td>{{ usage.version.version_number }}</td>
@@ -117,6 +120,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       {{ usage.component_modified }}
       </span>
       </td>
+      <td>{{ usage.linking }}</td>
       <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></td>
             </tr>
 {% endfor %}
