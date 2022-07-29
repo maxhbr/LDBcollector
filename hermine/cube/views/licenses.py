@@ -16,6 +16,7 @@ from odf.text import H, P, Span
 
 from cube.forms import ImportLicensesForm, ImportGenericsForm
 from cube.models import License, Generic
+from cube.views.mixins import SearchMixin
 
 
 class FormErrorsToMessagesMixin:
@@ -36,13 +37,14 @@ class FormErrorsToMessagesMixin:
 
 
 class LicensesListView(
-    LoginRequiredMixin, FormErrorsToMessagesMixin, ListView, FormView
+    LoginRequiredMixin, SearchMixin, FormErrorsToMessagesMixin, ListView, FormView
 ):
     model = License
     context_object_name = "licenses"
     paginate_by = 50
     form_class = ImportLicensesForm
-    success_url = reverse_lazy("cube:licenses", args=[1])
+    success_url = reverse_lazy("cube:licenses")
+    search_fields = ("long_name", "spdx_id")
 
     def post(self, *args, **kwargs):
         self.object_list = self.get_queryset()

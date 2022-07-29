@@ -16,7 +16,7 @@ urlpatterns = [
     path("about/", views.AboutView.as_view(), name="about"),
     path("products/", views.ProductListView.as_view(), name="products"),
     path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
-    path("components/", views.ComponentList.as_view(), name="components"),
+    path("components/", views.ComponentListView.as_view(), name="components"),
     path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
     path(
@@ -68,7 +68,7 @@ urlpatterns = [
         views.ReleaseExploitationView.as_view(),
         name="release_exploitation",
     ),
-    path("licenses/<int:page>/", views.LicensesListView.as_view(), name="licenses"),
+    path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
 
