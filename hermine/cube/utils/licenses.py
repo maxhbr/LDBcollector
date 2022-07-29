@@ -145,6 +145,8 @@ def explode_spdx_to_units(spdx_expr: str) -> List[str]:
     """
     licensing = get_spdx_licensing()
     parsed = licensing.parse(spdx_expr)
+    if parsed is None:
+        return []
     return sorted(list(parsed.objects))
 
 
