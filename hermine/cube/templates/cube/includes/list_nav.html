@@ -1,0 +1,36 @@
+<div class="level">
+  <div class="level-left">
+    <div class="level-item">
+      <form>
+        <div class="field has-addons">
+          <div class="control">
+            <label class="is-sr-only" for="search_field">Search</label>
+            <input id="search_field" class="input" name="search" placeholder="Search" value="{{ query }}" />
+          </div>
+          <div class="control">
+            <button class="button" type="submit">Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="level-item">
+      <div class="pagination">
+          <span class="step-links">
+              {% if page_obj.has_previous %}
+                  <a href="?page=1"><span class="current button is-link">first</span></a>
+                  <a href="?page={{ page_obj.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
+              {% endif %}
+
+              <span class="current button is-primary">
+                  page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+              </span>
+
+              {% if page_obj.has_next %}
+                  <a href="?page={{ page_obj.next_page_number }}"><span class="current button is-link is-light">next</span></a>
+                  <a href="?page={{ page_obj.paginator.num_pages }}"><span class="current button is-link">last</span></a>
+              {% endif %}
+          </span>
+      </div>
+    </div>
+  </div>
+</div>

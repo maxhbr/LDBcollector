@@ -24,6 +24,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
 
+{% if not page_obj.has_previous %}
 <h2>Top 10 Most used components </h2>
 
 <table class="table is-striped ">
@@ -49,25 +50,11 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endfor %}
   </tbody>
 </table>
+{% endif %}
+
 <h2>All components </h2>
-<div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-            <a href="?page=1"><span class="current button is-link">1</span></a>
-            <a href="?page={{ page_obj.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
-        {% endif %}
 
-        <span class="current button is-primary">
-            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-        </span>
-
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}"><span class="current button is-link is-light">next</span></a>
-            <a href="?page={{ page_obj.paginator.num_pages }}"><span class="current button is-link">{{page_obj.paginator.num_pages}}</span></a>
-        {% endif %}
-    </span>
-</div>
-
+{% include "cube/includes/list_nav.html" %}
 
 <table class="table is-striped ">
   <thead>
@@ -95,29 +82,6 @@ SPDX-License-Identifier: AGPL-3.0-only
   </tbody>
 </table>
 
-
-
-
-
-
-<div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-            <a href="?page=1"><span class="current button is-link">1</span></a>
-            <a href="?page={{ page_obj.previous_page_number }}"><span class="current button is-link is-light">previous</span></a>
-        {% endif %}
-
-        <span class="current button is-primary">
-            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-        </span>
-
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}"><span class="current button is-link is-light">next</span></a>
-            <a href="?page={{ page_obj.paginator.num_pages }}"><span class="current button is-link">{{page_obj.paginator.num_pages}}</span></a>
-        {% endif %}
-    </span>
-</div>
-
-
+{% include "cube/includes/list_nav.html" %}
 
 {% endblock %}

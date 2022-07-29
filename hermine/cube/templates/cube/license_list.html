@@ -53,7 +53,7 @@ Licenses
 {% endblock %}
 {% block content %}
 
-  
+{% include "cube/includes/list_nav.html" %}
 
   <div class="card has-table">
     <header class="card-header">
@@ -112,28 +112,12 @@ Licenses
 
         </div>
 
-        <div class="notification">
-          <nav class="pagination" role="navigation" aria-label="pagination">
-            {% if page_obj.has_previous %}
-              <a class="pagination-previous" href="{% url 'cube:licenses' %}?page={{ page_obj.previous_page_number }}">Previous</a>
-            {% else %}
-              <a class="pagination-previous is-disabled" aria-disabled="true" disabled title="This is the first page">First page</a>
-            {% endif %}
-        
-            <span class="pagination-list">
-              Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-            </span>
-        
-            {% if page_obj.has_next %}
-            <a class="pagination-next" href="{% url 'cube:licenses' %}?page={{ page_obj.next_page_number }}">Next</a>
-            {% else %}
-              <a class="pagination-next is-disabled" disabled aria-disabled="true" title="This is the last page">Last page</a>
-            {% endif %}
-          </nav>
-        </div>
       </div>
     </div>
   </div>
+
+{% include "cube/includes/list_nav.html" %}
+
   
 
 

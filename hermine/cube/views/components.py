@@ -8,12 +8,14 @@ from django.db.models import Count
 from django.views import generic
 
 from cube.models import Component
+from cube.views.mixins import SearchMixin
 
 
-class ComponentList(LoginRequiredMixin, generic.ListView):
+class ComponentListView(LoginRequiredMixin, SearchMixin, generic.ListView):
     model = Component
     paginate_by = 30
     ordering = ["name"]
+    search_fields = ("name", "description", "spdx_expression")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
