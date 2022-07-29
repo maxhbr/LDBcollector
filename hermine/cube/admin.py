@@ -47,6 +47,7 @@ class VersionInlineTab(admin.TabularInline):
 
 
 class UsageInlineTab(admin.TabularInline):
+    autocomplete_fields = ("version",)
     model = Usage
     extra = 1
 
@@ -123,6 +124,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class ReleaseAdmin(admin.ModelAdmin):
+    autocomplete_fields = ("product",)
     inlines = [UsageInlineTab]
 
 
