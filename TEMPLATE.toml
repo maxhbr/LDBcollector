@@ -53,6 +53,14 @@ status = [ "" ]
 #url = '''
 #'''
 
+# Any notes related to specific usage for a particular license. For example,
+# where an otherwise not-allowed license is permitted for older packages only.
+# This field is determined as part of the review process. This field is a multiline
+# literal string. 
+# 
+# This field is optional.
+#usage = '''
+
 # Full text of the license for licenses that do not have an SPDX
 # expression.  This field is a multiline
 # literal string.  For example:
