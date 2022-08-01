@@ -14,6 +14,14 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>{{ product.name }}</li>
 </ul>
 {% endblock %}
+{% block actions %}
+<a class="button is-info is-inverted" href="/admin/cube/release/add/?product={{ product.id }}" target="_blank">
+            <span class="icon">
+              <i class="fas fa-plus"></i>
+            </span>
+            <span>Create a release for this product</span>
+          </a>
+{% endblock %}
 {% block herozone %}
   <div class="hero-body">
     <p class="title">{{ product.name }}</p>
