@@ -145,6 +145,10 @@ class Version(models.Model):
 
         return not self.corrected_license and is_ambiguous(self.spdx_valid_license_expr)
 
+    @property
+    def effective_license(self):
+        return self.corrected_license or self.spdx_valid_license_expr
+
     class Meta:
         unique_together = ["component", "version_number"]
 

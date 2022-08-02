@@ -329,6 +329,7 @@ class ReleaseStepsAPITestCase(APITestCase):
         )
         res = self.client.get(reverse("cube:release-validation-4", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
+        self.assertEqual(len(res.data["resolved"]), 1)
 
         # Step 5
         res = self.client.post(
