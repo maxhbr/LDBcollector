@@ -59,11 +59,10 @@ def import_ort_evaluated_model_json_file(
     for package in packages:
         if package["is_project"]:
             continue
-        current_purl = package.get("purl")
         package_id = package["id"]
-        # If there is no Purl field, we recreate it from the ORT ID
 
-        if current_purl is None:
+        # If there is no Purl field, we recreate it from the ORT ID
+        if current_purl := package.get("purl") is None:
             logger.info(f"Purl is null for {package_id}")
             p_type = package_id[0 : package_id.find(":")]
             p_version = package_id[package_id.rfind(":") + 1 :]
@@ -75,10 +74,12 @@ def import_ort_evaluated_model_json_file(
             # TODO Maybe trace the fact that it's generated
             current_purl = str(
                 PackageURL(type=p_type.lower(), name=p_name, version=p_version)
-            )
+            )  # p_name can contain namespace at this point, not a problem because they are stored together anyway
+
         purl = PackageURL.from_string(current_purl)
         component, component_created = Component.objects.get_or_create(
-            name=purl.name,
+            name=f"{purl.namespace}/{purl.name}" if purl.namespace else purl.name,
+            package_repo=purl.type,
             defaults={
                 "description": package.get("description", ""),
                 "homepage_url": package.get("homepage_url", ""),
