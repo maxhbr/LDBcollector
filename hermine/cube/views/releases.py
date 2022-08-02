@@ -121,29 +121,35 @@ def release_generic(request, release_id, generic_id):
 class ReleaseExploitationForm(Form):
     def __init__(self, instance, *args, **kwargs):
         self.release = instance
+        self.scopes = self.release.usage_set.values_list("project", "scope").annotate(
+            count=Count("*")
+        )
         super().__init__(*args, **kwargs)
-        for scope in self.release.usage_set.values("scope").annotate(count=Count("*")):
-            self.fields[scope["scope"]] = ChoiceField(
+
+        for project, scope, count in self.scopes:
+            self.fields[project + scope] = ChoiceField(
                 choices=Usage.EXPLOITATION_CHOICES,
                 widget=Select(attrs={"class": "select"}),
-                label=f"{scope['scope']} ({scope['count']} components)",
+                label=f"{project or '(project undefined)'} - {scope} ({count} components)",
             )
 
             try:
-                self.initial[scope["scope"]] = self.release.exploitation_set.get(
-                    scope=scope["scope"]
+                self.initial[project + scope] = self.release.exploitation_set.get(
+                    project=project, scope=scope
                 ).exploitation
             except Exploitation.DoesNotExist:
                 pass
 
     def save(self):
-        for scope, exploitation_type in self.cleaned_data.items():
+        for project, scope, _ in self.scopes:
+            exploitation_type = self.cleaned_data[project + scope]
             Exploitation.objects.update_or_create(
                 release=self.release,
+                project=project,
                 scope=scope,
                 defaults={"exploitation": exploitation_type},
             )
-            self.release.usage_set.filter(scope=scope).update(
+            self.release.usage_set.filter(project=project, scope=scope).update(
                 exploitation=exploitation_type
             )
 

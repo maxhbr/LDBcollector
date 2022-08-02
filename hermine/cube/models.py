@@ -291,7 +291,7 @@ class Usage(models.Model):
     description = models.TextField(max_length=500, blank=True)
     licenses_chosen = models.ManyToManyField(License, blank=True)
     scope = models.CharField(max_length=50, blank=True, null=True)
-    project = models.TextField(max_length=750, blank=True)
+    project = models.CharField(max_length=750, blank=True)
     license_expression = models.CharField(max_length=500, blank=True)
 
     def __str__(self):
@@ -306,7 +306,7 @@ class Exploitation(models.Model):
 
     release = models.ForeignKey(Release, on_delete=models.CASCADE, null=True)
     scope = models.CharField(max_length=50)
-    project = models.TextField(max_length=750, blank=True)
+    project = models.CharField(max_length=750, blank=True)
     exploitation = models.CharField(
         max_length=50,
         choices=Usage.EXPLOITATION_CHOICES,
