@@ -210,9 +210,9 @@ SPDX-License-Identifier: AGPL-3.0-only
             <div class="content">
               <i> {{ obligation.passivity }}</i>
               {% if obligation.passivity == "Active" %}
-                Applies if:
-                <ul><li>{{ obligation|getModifTriggerOblig }}</li>
-                <li> {{ obligation|getExplTriggerOblig }}</li></ul>
+                Applies:
+                <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
+                <li> {{ obligation.get_trigger_expl_display }}</li></ul>
               {% endif %}
               <br>
               <blockquote>{{ obligation.verbatim}}</blockquote>
@@ -261,9 +261,9 @@ SPDX-License-Identifier: AGPL-3.0-only
             <p> Generic : <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
             <p>{{ obligation.passivity }}</p>
             {% if obligation.passivity == "Active" %}
-              Applies if:
-              <ul><li>{{ obligation|getModifTriggerOblig }}</li>
-              <li> {{ obligation|getExplTriggerOblig }}</li></ul>
+              Applies:
+              <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
+              <li> {{ obligation.get_trigger_expl_display }}</li></ul>
             {% endif %}
             <br>
             <blockquote>{{ obligation.verbatim }}</blockquote>
@@ -311,10 +311,10 @@ SPDX-License-Identifier: AGPL-3.0-only
             <p> Generic : <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
             <p>{{ obligation.passivity }}</p>
             {% if obligation.passivity == "Active" %}
-              Applies if:
+              Applies:
               <ul>
-                <li>{{ obligation|getModifTriggerOblig }}</li>
-                <li> {{ obligation|getExplTriggerOblig }}</li>
+                <li>{{ obligation.get_trigger_mdf_display }}</li>
+                <li> {{ obligation.get_trigger_expl_display }}</li>
               </ul>
             {% endif %}
             <blockquote>{{ obligation.verbatim}}</blockquote>

@@ -391,19 +391,22 @@ class Obligation(models.Model):
     """
 
     TRIGGER_EXPL_CHOICES = [
-        (Usage.EXPLOITATION_DISTRIBUTION_BOTH, "Distribution Source or Object"),
-        (Usage.EXPLOITATION_DISTRIBUTION_SOURCE, "Distribution of Source Code"),
-        (Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE, "Distribution Non Source"),
-        (Usage.EXPLOITATION_NETWORK, "Network Access"),
-        (Usage.EXPLOITATION_INTERNAL, "Internal Use"),
+        (
+            Usage.EXPLOITATION_DISTRIBUTION_BOTH,
+            "If source code or binaries are distributed",
+        ),
+        (Usage.EXPLOITATION_DISTRIBUTION_SOURCE, "If source code is distributed"),
+        (Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE, "If binaries are distributed"),
+        (Usage.EXPLOITATION_NETWORK, "If component is accessible by network access"),
+        (Usage.EXPLOITATION_INTERNAL, "If the component is used internally"),
     ]
 
     TRIGGER_MDF_CHOICES = [
-        (Usage.MODIFICATION_ALTERED, "Only if Modified"),
-        (Usage.MODIFICATION_UNMODIFIED, "Only if Not Modified"),
+        (Usage.MODIFICATION_ALTERED, "Only if component modified"),
+        (Usage.MODIFICATION_UNMODIFIED, "Only if component is not modified"),
         (
             Usage.MODIFICATION_ALTERED + Usage.MODIFICATION_UNMODIFIED,
-            "Modified or Not",
+            "If component is modified or not",
         ),
     ]
 
