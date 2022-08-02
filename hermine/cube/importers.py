@@ -46,10 +46,8 @@ def is_spdx(expression):
 
 @transaction.atomic()
 def import_ort_evaluated_model_json_file(
-    json_file, release_idk, replace=False, defaults: Optional[dict] = None
+    json_file, release_idk, replace=False, linking: Optional[str] = None
 ):
-    if defaults is None:
-        defaults = {}
     data = json.load(json_file)
 
     paths = data["paths"]
@@ -116,22 +114,20 @@ def import_ort_evaluated_model_json_file(
             logger.info(
                 f"Version {version.version_number} created for component {component.name}"
             )
-        linking = defaults["linking"]
-        path_ids = package.get("paths")
-        if path_ids:
-            for path_id in path_ids:
-                path = paths[path_id]
-                scope_id = path.get("scope")
-                project_id = path.get("project")
-                scope_name = scopes[scope_id]["name"]
-                project_name = packages[project_id]["id"]
-                Usage.objects.get_or_create(
-                    version_id=version.id,
-                    release_id=release_idk,
-                    scope=scope_name,
-                    project=project_name,
-                    linking=linking,
-                )
+        path_ids = package.get("paths", [])
+        for path_id in path_ids:
+            path = paths[path_id]
+            scope_id = path.get("scope")
+            project_id = path.get("project")
+            scope_name = scopes[scope_id]["name"]
+            project_name = packages[project_id]["id"]
+            Usage.objects.get_or_create(
+                version_id=version.id,
+                release_id=release_idk,
+                scope=scope_name,
+                project=project_name,
+                linking=linking,
+            )
 
 
 @transaction.atomic()

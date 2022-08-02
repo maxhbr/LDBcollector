@@ -60,7 +60,10 @@ class ImportBomForm(forms.ModelForm):
     IMPORT_MODE_MERGE = "Merge"
     IMPORT_MODE_REPLACE = "Replace"
     IMPORT_MODE_CHOICES = (
-        (IMPORT_MODE_REPLACE, "Replace all currently saved component usages"),
+        (
+            IMPORT_MODE_REPLACE,
+            "Delete all previously saved component usages and remplace with new import",
+        ),
         (IMPORT_MODE_MERGE, "Add new component usages while keeping previous ones"),
     )
     bom_type = forms.ChoiceField(label="File format", choices=BOM_CHOICES)

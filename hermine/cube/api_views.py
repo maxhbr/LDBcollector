@@ -417,7 +417,7 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             ort_file,
             release.id,
             serializer.validated_date.get("replace", False),
-            defaults={"linking": serializer.validated_data.get("linking")},
+            linking=serializer.validated_data.get("linking"),
         )
         return Response()
 
