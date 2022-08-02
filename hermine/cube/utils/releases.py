@@ -171,22 +171,25 @@ def propagate_choices(release: Release):
     Returns:
         response: A python object that has two field :
             `to_resolve` the set of usages which needs an explicit choice
-            `resolved` the set of usages for which a choice has just been made
+            `resolved` the set of usages for which a choice has been made
     """
+
+    resolved = {
+        usage
+        for usage in release.usage_set.all().exclude(license_expression="")
+        if has_ors(
+            usage.version.effective_license
+        )  # we want to list only usages for which a choice was actually necessary
+    }
+
     to_resolve = set()
-    resolved = set(release.usage_set.all().exclude(license_expression=""))
 
     for usage in release.usage_set.all().filter(license_expression=""):
-        effective_license = (
-            usage.version.corrected_license or usage.version.spdx_valid_license_expr
-        )
+        if usage.version.license_is_ambiguous:
+            continue
 
-        is_not_ambiguous = usage.version.corrected_license or not is_ambiguous(
-            effective_license
-        )
-
-        if not has_ors(effective_license) and is_not_ambiguous:
-            licenses_spdx_ids = explode_spdx_to_units(effective_license)
+        if not has_ors(usage.version.effective_license):
+            licenses_spdx_ids = explode_spdx_to_units(usage.version.effective_license)
 
             try:
                 licenses = [
@@ -194,17 +197,17 @@ def propagate_choices(release: Release):
                     for spdx_id in licenses_spdx_ids
                 ]
                 usage.licenses_chosen.set(licenses)
-                usage.license_expression = effective_license
+                usage.license_expression = usage.version.effective_license
                 usage.save()
             except License.DoesNotExist:
                 logger.warning(
                     "%s : can not choose unknown license",
                     usage.version.component,
                 )
-        elif is_not_ambiguous:
+        else:
             expression_outs = (
                 LicenseChoice.objects.for_usage(usage)
-                .filter(Q(expression_in=effective_license))
+                .filter(expression_in=usage.version.effective_license)
                 .values_list("expression_out", flat=True)
             )
             if len(set(expression_outs)) == 1:
