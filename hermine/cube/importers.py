@@ -62,7 +62,7 @@ def import_ort_evaluated_model_json_file(
         package_id = package["id"]
 
         # If there is no Purl field, we recreate it from the ORT ID
-        if current_purl := package.get("purl") is None:
+        if (current_purl := package.get("purl")) is None:
             logger.info(f"Purl is null for {package_id}")
             p_type = package_id[0 : package_id.find(":")]
             p_version = package_id[package_id.rfind(":") + 1 :]
