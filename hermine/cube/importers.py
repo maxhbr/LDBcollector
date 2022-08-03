@@ -29,6 +29,9 @@ from cube.serializers import LicenseSerializer
 
 logger = logging.getLogger(__name__)
 
+DEFAULT_PROJECT = "Blank Projet"
+DEFAULT_SCOPE = "Blank Scope"
+
 
 def is_spdx(expression):
     # Checks if elements of an expression are spdx compliant
@@ -116,12 +119,23 @@ def import_ort_evaluated_model_json_file(
                 f"Version {version.version_number} created for component {component.name}"
             )
         path_ids = package.get("paths", [])
-        for path_id in path_ids:
-            path = paths[path_id]
-            scope_id = path.get("scope")
-            project_id = path.get("project")
-            scope_name = scopes[scope_id]["name"]
-            project_name = packages[project_id]["id"]
+        if path_ids:
+            for path_id in path_ids:
+                path = paths[path_id]
+                scope_id = path.get("scope")
+                project_id = path.get("project")
+                scope_name = scopes[scope_id]["name"]
+                project_name = packages[project_id]["id"]
+                Usage.objects.get_or_create(
+                    version_id=version.id,
+                    release_id=release_idk,
+                    scope=scope_name,
+                    project=project_name,
+                    linking=linking,
+                )
+        else:
+            scope_name = DEFAULT_SCOPE
+            project_name = DEFAULT_PROJECT
             Usage.objects.get_or_create(
                 version_id=version.id,
                 release_id=release_idk,
