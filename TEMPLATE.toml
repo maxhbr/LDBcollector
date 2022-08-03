@@ -60,6 +60,7 @@ status = [ "" ]
 # 
 # This field is optional.
 #usage = '''
+#'''
 
 # Full text of the license for licenses that do not have an SPDX
 # expression.  This field is a multiline
