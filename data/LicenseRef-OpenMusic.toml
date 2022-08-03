@@ -1,7 +1,8 @@
 [license]
 
-expression = "LicenseRef-OpenMusic"
+expression = "LicenseRef-OpenMusic-green"
 status = [ "allowed-content" ]
+usage = "Note: clause VI must NOT be invoked
 
 [fedora]
 
