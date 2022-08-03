@@ -1096,7 +1096,7 @@ fun RuleSet.deprecatedScopeExludeInOrtYmlRule() {
     }
 }
 
-fun RuleSet.packageConfigurationInOrtYml() = ortResultRule("PACKAGE_CONFIGURATION_IN_ORT_YML") {
+fun RuleSet.packageConfigurationInOrtYmlRule() = ortResultRule("PACKAGE_CONFIGURATION_IN_ORT_YML") {
     if (ortResult.repository.config.packageConfigurations.isNotEmpty()) {
         error(
             "The use of package configurations is not allowed in the *.ort.yml file.",
@@ -1105,7 +1105,7 @@ fun RuleSet.packageConfigurationInOrtYml() = ortResultRule("PACKAGE_CONFIGURATIO
     }
 }
 
-fun RuleSet.packageCurationInOrtYml() = ortResultRule("PACKAGE_CURATION_IN_ORT_YML") {
+fun RuleSet.packageCurationInOrtYmlRule() = ortResultRule("PACKAGE_CURATION_IN_ORT_YML") {
     if (ortResult.repository.config.curations.packages.isNotEmpty()) {
         error(
             "The use of package curations is not allowed in the *.ort.yml file.",
@@ -1217,8 +1217,8 @@ fun RuleSet.commonRules() {
 
     deprecatedScopeExludeInOrtYmlRule()
 
-    packageConfigurationInOrtYml()
-    packageCurationInOrtYml()
+    packageConfigurationInOrtYmlRule()
+    packageCurationInOrtYmlRule()
 
     vulnerabilityInPackageRule()
     vulnerabilityWithHighSeverityInPackageRule()
