@@ -115,7 +115,7 @@ class Component(models.Model):
         (TOBECHECKED, "To check"),
         (CONFIRMED, "Confirmed"),
     ]
-    name = models.CharField(max_length=200, unique=True)
+    name = models.CharField(max_length=200)
     package_repo = models.CharField(max_length=200, blank=True)
     description = models.TextField(max_length=500, blank=True)
     programming_language = models.CharField(max_length=200, blank=True)
@@ -127,6 +127,9 @@ class Component(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        unique_together = ("name", "package_repo")
 
 
 class Version(models.Model):
