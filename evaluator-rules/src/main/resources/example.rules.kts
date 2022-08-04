@@ -1052,6 +1052,14 @@ fun RuleSet.copyleftInSourceRule() {
                 howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.ERROR)
             )
         }
+    }
+}
+
+fun RuleSet.copyleftLimitedInSourceRule() {
+    packageRule("COPYLEFT_LIMITED_IN_SOURCE") {
+        require {
+            -isExcluded()
+        }
 
         licenseRule("COPYLEFT_LIMITED_IN_SOURCE", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
             require {
@@ -1231,6 +1239,7 @@ fun RuleSet.ossProjectRules() {
 
 fun RuleSet.proprietaryProjectRules() {
     copyleftInSourceRule()
+    copyleftLimitedInSourceRule()
     // Define rules that get executed for each dependency of a project:
     copyleftInDependencyRule()
     copyleftLimitedInDependencyRule()
