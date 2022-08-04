@@ -191,6 +191,30 @@ class ReleaseExploitationView(UpdateView):
     def get_success_url(self):
         return reverse("cube:release_exploitation", args=[self.object.pk])
 
+class ReleaseSummaryView(UpdateView):
+    model = Release
+    context_object_name = "release"
+    template_name = "cube/release_summary.html"
+    form_class = ReleaseExploitationForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        form = context.pop("form")
+        context["scopes"] = [
+            {
+                "project": project,
+                "scope": scope,
+                "count": count,
+                "field": form[f"{project}{scope}"],
+            }
+            for (project, scope, count) in form.scopes
+        ]
+        return context
+
+    def get_success_url(self):
+        return reverse("cube:release_exploitation", args=[self.object.pk])
+
+
 
 @method_decorator(require_POST, "dispatch")
 class UpdateLicenseChoiceView(UpdateView):
