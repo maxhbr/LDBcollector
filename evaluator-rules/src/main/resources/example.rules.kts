@@ -1002,7 +1002,9 @@ fun RuleSet.copyleftInDependencyRule() {
             )
         }
     }
+}
 
+fun RuleSet.copyleftLimitedInDependencyRule() {
     dependencyRule("COPYLEFT_LIMITED_IN_DEPENDENCY") {
         require {
             +isAtTreeLevel(0)
@@ -1229,8 +1231,9 @@ fun RuleSet.ossProjectRules() {
 
 fun RuleSet.proprietaryProjectRules() {
     copyleftInSourceRule()
-    // Define a rule that is executed for each dependency of a project:
+    // Define rules that get executed for each dependency of a project:
     copyleftInDependencyRule()
+    copyleftLimitedInDependencyRule()
 }
 
 val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
