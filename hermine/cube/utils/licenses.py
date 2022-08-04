@@ -178,15 +178,17 @@ def get_license_triggered_obligations(
     """
     obligations = license.obligation_set.all()
 
-    if exploitation is not None:
+    if modification is not None:
         obligations = obligations.filter(trigger_mdf__contains=modification)
 
-    if modification is not None:
+    if exploitation is not None:
         obligations = [
             o
             for o in obligations
             if (
-                o.trigger_expl in exploitation or exploitation in o.trigger_expl
+                (o.trigger_expl in exploitation)
+                or (exploitation in o.trigger_expl)
+                or (o.passivity == "Passive")
             )  # Poor man bitwise OR
         ]
 
