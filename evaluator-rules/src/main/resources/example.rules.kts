@@ -988,7 +988,6 @@ fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
  */
 
 fun RuleSet.copyleftInDependencyRule() {
-    // Define a rule that is executed for each dependency of a project.
     dependencyRule("COPYLEFT_IN_DEPENDENCY") {
         licenseRule("COPYLEFT_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
             require {
@@ -1230,6 +1229,7 @@ fun RuleSet.ossProjectRules() {
 
 fun RuleSet.proprietaryProjectRules() {
     copyleftInSourceRule()
+    // Define a rule that is executed for each dependency of a project:
     copyleftInDependencyRule()
 }
 
