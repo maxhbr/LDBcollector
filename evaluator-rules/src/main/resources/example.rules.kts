@@ -1003,13 +1003,13 @@ fun RuleSet.copyleftInDependencyRule() {
         }
     }
 
-    dependencyRule("COPYLEFT_LIMITED_STATIC_LINK_IN_DIRECT_DEPENDENCY") {
+    dependencyRule("COPYLEFT_LIMITED_IN_DEPENDENCY") {
         require {
             +isAtTreeLevel(0)
             +isStaticallyLinked()
         }
 
-        licenseRule("LINKED_WEAK_COPYLEFT", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
+        licenseRule("COPYLEFT_LIMITED_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
             require {
                 +isCopyleftLimited()
             }
