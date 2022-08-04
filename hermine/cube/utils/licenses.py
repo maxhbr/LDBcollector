@@ -186,7 +186,9 @@ def get_license_triggered_obligations(
             o
             for o in obligations
             if (
-                o.trigger_expl in exploitation or exploitation in o.trigger_expl
+                (o.trigger_expl in exploitation)
+                or (exploitation in o.trigger_expl)
+                or (o.passivity == "Passive")
             )  # Poor man bitwise OR
         ]
 
