@@ -2,7 +2,9 @@
 
 expression = "ODbl-1.0"
 status = [ "allowed-content" ]
-usage = "Note: the elements of the covered dataset also must be under terms allowed for Fedora
+usage = ''' Note: the elements of the covered dataset also must be under terms allowed for Fedora
+'''
+
 [fedora]
 
 name = [
