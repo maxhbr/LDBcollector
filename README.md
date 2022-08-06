@@ -4,11 +4,11 @@ This project contains data for licenses that have been reviewed
 for use in the Fedora Linux project. For more on the criteria 
 Fedora applies for such review, see [License Approval(https://docs.fedoraproject.org/en-US/legal/license-approval)
 
-Licenses are categorized by their status of approved (generally, or for specific uses) 
-or not-approved and published to [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal).
+Licenses are categorized by their status of allowed (generally, or for specific uses) 
+or not-allowed and published to [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal).
 The data may include additional notes and provides
 mappings between the [SPDX license expressions](https://spdx.org/licenses/) and the older Fedora
-license abbreviations.
+"Callaway" short license names.
 
 To request review of a new license for use in Fedora Linux, follow the process described
 at https://docs.fedoraproject.org/en-US/legal/license-review-process
@@ -31,5 +31,5 @@ The RPM package contains the data in JSON format. If you need the data in a diff
 
 ## License
 
-CC0-1.0
-
+License data: CC0-1.0
+Scripts: BSD-3-Clause
