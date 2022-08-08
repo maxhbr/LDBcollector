@@ -4,14 +4,12 @@ expression = "BSD-2-Clause"
 status = [ "allowed" ]
 
 url = '''
-http://creativecommons.org/licenses/BSD/
 http://www.cryptix.org/LICENSE.TXT
 '''
 
 [fedora]
 
 name = [
-    "Creative Commons BSD",
     "Cryptix General License"
 ]
 
