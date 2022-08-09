@@ -1,0 +1,17 @@
+[license]
+expression = "LicenseRef-Fedora-Public-Domain"
+status = ["allowed"]
+url = """
+https://docs.fedoraproject.org/en-US/legal/license-field/#_public_domain
+https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_public_domain
+"""
+
+[fedora]
+name = ["Public Domain"]
+abbreviation = ["Public Domain"]
+notes = """
+This license identifier should only be used as placeholder value for existing
+packages that use the Callway "Public Domain" identifier. If you find a new
+package for inclusion in Fedora that has a public domain declaration that does
+not yet exist in this list, then submit it for review.
+"""
