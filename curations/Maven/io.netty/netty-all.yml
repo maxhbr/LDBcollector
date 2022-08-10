@@ -1,0 +1,9 @@
+# Netty uses version with 'x.x.x.FINAL' which is interpreted as a pre-release version by Semver4j. The actual version
+# range for this curation is '[4.1.69.Final,4.1.79.Final]', which isn't interpreted as a valid version range by
+# Semver4j. Therefore using a version range without the '.Final'.
+- id: "Maven:io.netty:netty-all:]4.1.68,4.1.79]"
+  curations:
+    comment: |
+      The JAR files of these netty-all versions do not contain any classes files nor do they distribute any
+      *-sources.jar, see e.g. https://repo1.maven.org/maven2/io/netty/netty-all/4.1.69.Final/.
+    is_meta_data_only: true
