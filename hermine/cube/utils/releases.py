@@ -205,10 +205,8 @@ def propagate_choices(release: Release):
                     usage.version.component,
                 )
         else:
-            expression_outs = (
-                LicenseChoice.objects.for_usage(usage)
-                .filter(expression_in=usage.version.effective_license)
-                .values_list("expression_out", flat=True)
+            expression_outs = LicenseChoice.objects.for_usage(usage).values_list(
+                "expression_out", flat=True
             )
             if len(set(expression_outs)) == 1:
                 usage.license_expression = expression_outs[0]

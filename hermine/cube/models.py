@@ -301,6 +301,10 @@ class Usage(models.Model):
     project = models.CharField(max_length=750, blank=True)
     license_expression = models.CharField(max_length=500, blank=True)
 
+    @property
+    def license_choices(self):
+        return LicenseChoice.objects.for_usage(self)
+
     def __str__(self):
         return self.release.__str__() + " <=> " + self.version.__str__()
 
@@ -502,6 +506,13 @@ class UsageDecision(models.Model):
 
 
 class LicenseChoiceManager(UsageDecisionManager):
+    def for_usage(self, usage: Usage):
+        return (
+            super()
+            .for_usage(usage)
+            .filter(expression_in=usage.version.effective_license)
+        )
+
     def get_queryset(self):
         return super().get_queryset().filter(decision_type=UsageDecision.LICENCE_CHOICE)
 

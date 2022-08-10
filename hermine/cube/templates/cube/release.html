@@ -309,6 +309,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>Chosen license for this release</th>
           <th>Update</th>
           <th>Edit</th>
+          <th>Rules applying</th>
         </tr>
       </thead>
       <tbody>
@@ -323,6 +324,13 @@ SPDX-License-Identifier: AGPL-3.0-only
               <a href="{% url 'cube:release_add_choice' usage.release.id usage.id %}"> Update expression </a>
             </td>
             <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td>{% if usage.license_choices|length > 1 %}{{ usage.license_choices|length }} rules apply. Edit rule {% endif %}
+              {% for choice in usage.license_choices %}
+                <a href="{% url "admin:cube_licensechoice_change" choice.pk %}">
+                  {% if usage.license_choices|length > 1 %}{{ choice.pk }}{% else %}Edit rule{% endif %}
+                </a>{% if not forloop.last %} {{ choice.pk }}, {% else %}.{% endif %}
+              {% endfor %}
+            </td>
           </tr>
         {% endfor %}
       </tbody>
