@@ -307,7 +307,6 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>Version</th>
           <th>License expression</th>
           <th>Choice for this release</th>
-          <th>Update choice</th>
           <th>Rules</th>
           <th>Edit usage</th>
         </tr>
@@ -321,14 +320,22 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{usage.version.effective_license}}</td>
             <td>{{usage.license_expression }} </td>
             <td>
-              <a href="{% url 'cube:release_add_choice' usage.release.id usage.id %}"> Update </a>
+              {% if usage.license_choices|length == 1 %}
+                <a href="{% url "admin:cube_licensechoice_change"  usage.license_choices.0.pk %}">Edit rule</a>
+                {% if usage.license_choices.0.expression_out != usage.license_expression %}
+                  <br><small>Choice does not match rule
+                  <form action="{% url "cube:usage_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
+                {% endif %}
+              {% else %}
+                {{ usage.license_choices|length }} rules apply. Edit rule
+                {% for choice in usage.license_choices %}
+                  <a href="{% url "admin:cube_licensechoice_change" choice.pk %}">
+                    {{ choice.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
+                {% endfor %}
+              {% endif %}
             </td>
-            <td>{% if usage.license_choices|length > 1 %}{{ usage.license_choices|length }} rules apply. Edit rule {% endif %}
-              {% for choice in usage.license_choices %}
-                <a href="{% url "admin:cube_licensechoice_change" choice.pk %}">
-                  {% if usage.license_choices|length > 1 %}{{ choice.pk }}{% if not forloop.last %}, {% else %}.{% endif %}
-                  {% else %}Edit rule{% endif %}</a>
-              {% endfor %}
             <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
             </td>
           </tr>
@@ -365,7 +372,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{usage.version.version_number }}</a></td>
             <td>{{usage.version.effective_license }} </td>
             <td>
-              <a href="{% url 'cube:release_add_choice' usage.release.id usage.id %}"> Choose expression </a>
+              <a href="{% url 'admin:cube_licensechoice_add' %}">Add choice rule</a>
             </td>
             <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>

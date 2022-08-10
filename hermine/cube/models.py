@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -504,6 +504,16 @@ class UsageDecision(models.Model):
     def __str__(self):
         return self.expression_in + " => " + self.expression_out
 
+    def clean(self):
+        if self.release is not None and self.product is not None:
+            raise ValidationError(
+                "Rule can only apply to a product or a specific release."
+            )
+        if self.component is not None and self.version is not None:
+            raise ValidationError(
+                "Rule can only apply to a component or a specific component version."
+            )
+
 
 class LicenseChoiceManager(UsageDecisionManager):
     def for_usage(self, usage: Usage):
@@ -526,6 +536,8 @@ class LicenseChoice(UsageDecision):
 
     class Meta:
         proxy = True
+        verbose_name = "License choice rule"
+        verbose_name_plural = "License choice rules"
 
 
 class ExpressionValidationManager(UsageDecisionManager):
