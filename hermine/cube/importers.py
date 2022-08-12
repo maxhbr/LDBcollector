@@ -10,7 +10,6 @@ import logging
 
 from django.db import transaction
 from packageurl import PackageURL
-from rest_framework.parsers import JSONParser
 from spdx.parsers import (
     jsonparser,
     jsonyamlxmlbuilders,
@@ -22,29 +21,13 @@ from spdx.parsers import (
     yamlparser,
 )
 from spdx.parsers.loggers import StandardLogger
-import spdx_license_list
 
 from cube.models import Component, Version, Usage
-from cube.serializers import LicenseSerializer
 
 logger = logging.getLogger(__name__)
 
 DEFAULT_PROJECT = "Blank Projet"
 DEFAULT_SCOPE = "Blank Scope"
-
-
-def is_spdx(expression):
-    # Checks if elements of an expression are spdx compliant
-    # But doesn't check if the expression itself is.
-    # Like "AND OR MIT BSD-3-Clause" would pass
-    operators = ["AND", "OR", "WITH", "(", ")"]
-    chunks = expression.split()
-    valid = True
-    for chunk in chunks:
-        if (chunk not in operators) and (chunk not in spdx_license_list.LICENSES):
-            valid = False
-            print(chunk, "not spdx")
-    return valid
 
 
 @transaction.atomic()

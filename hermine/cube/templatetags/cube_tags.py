@@ -5,70 +5,13 @@
 
 from django import template
 
+from cube.models import License
+
 register = template.Library()
 
 
 @register.filter
-def getModifTriggerSet(value):
-    """Takes an obligation_set from a generic obligation and returns its Mofication Trigger
-
-    :param value: A generic.obligation_set
-    :type value: list
-    :raises ValueError:
-    :return: a string in ['Altered', 'Unmodified', 'AlteredUnmodified']
-    :rtype: string
-    """
-    modif_trigger_list = (obligation.trigger_mdf for obligation in value)
-    if ("AlteredUnmodified" in modif_trigger_list) or (
-        ("Altered" and "Unmodified") in modif_trigger_list
-    ):
-        return "Altered or Unmodified"
-    elif "Altered" in modif_trigger_list:
-        return "Altered"
-    elif "Unmodified" in modif_trigger_list:
-        return "Unmodified"
-    else:
-        raise ValueError("No modification trigger was given")
-
-
-@register.filter
-def getModifTriggerOblig(value):
-    """Returns the Modification trigger of an Obligation object.
-
-    :param value: A generic.obligation_set
-    :type value: list
-    :raises ValueError:
-    :return: a string in ['Altered', 'Unmodified', 'AlteredUnmodified']
-    :rtype: string
-    """
-    if value.trigger_mdf == "AlteredUnmodified":
-        return "component is modified or not"
-    elif value.trigger_mdf == "Altered":
-        return "component is modified"
-    elif value.trigger_mdf == "Unmodified":
-        return "component is not modified"
-    else:
-        return "No modification trigger found"
-
-
-@register.filter
-def getExplTriggerOblig(value):
-    if value.trigger_expl == "Distribution":
-        return "source code or binaries are distributed "
-    elif value.trigger_expl == "DistributionSource":
-        return "source code is distributed"
-    elif value.trigger_expl == "DistributionNonSource":
-        return "binaries are distributed"
-    elif value.trigger_expl == "NetworkAccess":
-        return "component is accessible by network access"
-    elif value.trigger_expl == "InternalUse":
-        return "the component is used for internal usage"
-    else:
-        return "No exploitation trigger found"
-
-
-@register.filter
-def getColorTag(value):
+def getColorTag(value: License):
     """Returns the appropriated css tag according to the color of the license.
 
 
