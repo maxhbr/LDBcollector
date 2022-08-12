@@ -54,14 +54,9 @@ urlpatterns = [
         name="release_send_derogation",
     ),
     path(
-        "release/<int:release_id>/choice/<int:usage_id>/",
-        views.release_add_choice,
-        name="release_add_choice",
-    ),
-    path(
-        "release/<int:release_id>/send_choice/<int:usage_id>/",
-        views.release_send_choice,
-        name="release_send_choice",
+        "release/update_license_choice/<int:pk>/",
+        views.UpdateLicenseChoiceView.as_view(),
+        name="usage_update_license_choice",
     ),
     path(
         "release/<int:pk>/exploitation/",

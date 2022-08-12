@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -301,6 +301,10 @@ class Usage(models.Model):
     project = models.CharField(max_length=750, blank=True)
     license_expression = models.CharField(max_length=500, blank=True)
 
+    @property
+    def license_choices(self):
+        return LicenseChoice.objects.for_usage(self)
+
     def __str__(self):
         return self.release.__str__() + " <=> " + self.version.__str__()
 
@@ -503,8 +507,25 @@ class UsageDecision(models.Model):
     def __str__(self):
         return self.expression_in + " => " + self.expression_out
 
+    def clean(self):
+        if self.release is not None and self.product is not None:
+            raise ValidationError(
+                "Rule can only apply to a product or a specific release."
+            )
+        if self.component is not None and self.version is not None:
+            raise ValidationError(
+                "Rule can only apply to a component or a specific component version."
+            )
+
 
 class LicenseChoiceManager(UsageDecisionManager):
+    def for_usage(self, usage: Usage):
+        return (
+            super()
+            .for_usage(usage)
+            .filter(expression_in=usage.version.effective_license)
+        )
+
     def get_queryset(self):
         return super().get_queryset().filter(decision_type=UsageDecision.LICENCE_CHOICE)
 
@@ -518,6 +539,8 @@ class LicenseChoice(UsageDecision):
 
     class Meta:
         proxy = True
+        verbose_name = "License choice rule"
+        verbose_name_plural = "License choice rules"
 
 
 class ExpressionValidationManager(UsageDecisionManager):

@@ -7,7 +7,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Product, ExpressionValidation
+from .models import Product, ExpressionValidation, UsageDecision
 from .models import Category
 from .models import Release
 from .models import Component
@@ -124,6 +124,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class ReleaseAdmin(admin.ModelAdmin):
+    search_fields = ("release_number", "product__name")
     autocomplete_fields = ("product",)
     inlines = [UsageInlineTab]
 
@@ -153,7 +154,51 @@ class VersionAdmin(admin.ModelAdmin):
 
 
 class UsageDecisionAdmin(admin.ModelAdmin):
-    readonly_fields = ("decision_type",)
+    readonly_fields = ("decision_type", "product_summary", "component_summary")
+    list_display = ("__str__", "product_summary", "component_summary")
+    autocomplete_fields = ("product", "release", "component", "version")
+    fieldsets = (
+        (
+            "License",
+            {
+                "fields": (
+                    "expression_in",
+                    "expression_out",
+                    "product_summary",
+                    "component_summary",
+                )
+            },
+        ),
+        ("Update product conditions", {"fields": ("product", "release")}),
+        (
+            "Update component conditions",
+            {"fields": ("component", "version", "scope")},
+        ),
+        ("Details", {"fields": ("explanation",)}),
+    )
+
+    @admin.display(description="Product")
+    def product_summary(self, object):
+        if object.release is not None:
+            return object.release
+        elif object.product is not None:
+            return f"{object.product} (any release)"
+        else:
+            return "-"
+
+    @admin.display(description="Component")
+    def component_summary(self, object: UsageDecision):
+        result = "-"
+        if object.version is not None:
+            result = object.version
+        elif object.component:
+            result = f"{object.component} (any version)"
+        if object.scope:
+            result = f"{result} ({object.scope} scope)"
+        elif result != "-":
+            result = f"{result} (any scope)"
+
+        return result
 
 
 admin.site.register(License, LicenseAdmin)

@@ -6,11 +6,14 @@ import logging
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Q, Count
+from django.db.models import Count
 from django.forms import Form, ChoiceField, Select
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse
+from django.utils.decorators import method_decorator
 from django.views import generic
+from django.views.decorators.http import require_POST
 from django.views.generic import UpdateView
 
 from cube.forms import ImportBomForm
@@ -20,12 +23,9 @@ from cube.models import (
     Usage,
     Generic,
     Derogation,
-    LicenseChoice,
-    License,
     Exploitation,
 )
 from cube.utils.licenses import (
-    explode_spdx_to_units,
     get_usages_obligations,
 )
 from cube.utils.releases import update_validation_step
@@ -180,6 +180,23 @@ class ReleaseExploitationView(UpdateView):
         return reverse("cube:release_exploitation", args=[self.object.pk])
 
 
+@method_decorator(require_POST, "dispatch")
+class UpdateLicenseChoiceView(UpdateView):
+    model = Usage
+    fields = []
+
+    def form_valid(self, form):
+        self.object.license_expression = ""
+        self.object.save()
+        return HttpResponseRedirect(self.get_success_url())
+
+    def form_invalid(self, form):
+        return HttpResponseRedirect(self.get_success_url())
+
+    def get_success_url(self):
+        return reverse("cube:release_detail", kwargs={"pk": self.object.release.pk})
+
+
 @login_required
 def release_add_derogation(request, release_id, usage_id):
     """Takes the user to the page that allows them to add a derogation for the release
@@ -238,109 +255,6 @@ def release_send_derogation(request, release_id, usage_id):
             linking=linking,
         )
         derogation.save()
-
-    response = redirect("cube:release_detail", release_id)
-    return response
-
-
-@login_required
-def release_add_choice(request, release_id, usage_id):
-    """Takes the user to the page that allows them to add a choice for a usage that has
-    a complex license expression.
-
-    :param request: mandatory
-    :type request: HttpRequest
-    :param release_id: The id of this release
-    :type release_id: django AutoField
-    :param usage_id: The id of this usage
-    :type usage_id: django AutoField
-    :return: Renders the context into the template.
-    :rtype: HttpResponse
-    """
-    # TODO May be simplify the URL used: The release_id is not used to
-    # ensure consistency with the release deduced from the usage
-    usage = Usage.objects.get(pk=usage_id)
-
-    if usage.version.corrected_license:
-        effective_license = usage.version.corrected_license
-    elif usage.version.spdx_valid_license_expr:
-        effective_license = usage.version.spdx_valid_license_expr
-    else:
-        logger.info("Choice cannot be done because no expression to process")
-    choices = LicenseChoice.objects.for_usage(usage).filter(
-        Q(expression_in=effective_license)
-    )
-
-    context = {"usage": usage, "expression_in": effective_license, "choices": choices}
-    return render(request, "cube/release_choice.html", context)
-
-
-@login_required
-def release_send_choice(request, release_id, usage_id):
-    """Digests inputs from the associated form and send it to the database.
-
-    :param request: mandatory
-    :type request: HttpRequest
-    :param release_id: The id of this release
-    :type release_id: django AutoField
-    :param usage_id: The id of this usage
-    :type usage_id: django AutoField
-    :return: A redirection to this release main page.
-    :rtype: HttpResponseRedirect
-    """
-
-    expression_in = None
-    usage = get_object_or_404(Usage, pk=usage_id)
-    expression_out = request.POST["expression_out"]
-    range_scope = request.POST["range_scope"]
-    range_component = request.POST["range_component"]
-    range_product = request.POST["range_product"]
-    explanation = request.POST["explanation"]
-
-    # First we apply the choice to the usage
-    if usage.version.corrected_license:
-        expression_in = usage.version.corrected_license
-    else:
-        expression_in = usage.version.spdx_valid_license_expr
-    usage.license_expression = expression_out
-    lic_to_add = set()
-    for uniq_lic_id in set(explode_spdx_to_units(expression_out)):
-        unique_license = License.objects.get(spdx_id__exact=uniq_lic_id)
-        lic_to_add.add(unique_license)
-    usage.licenses_chosen.set(lic_to_add)
-    usage.save()
-
-    # Then we store this choice
-    if range_scope == "any":
-        scope = None
-    else:
-        scope = usage.scope
-
-    component = usage.version.component
-    version = usage.version
-    if range_component == "any":
-        component = None
-        version = None
-    elif range_component == "component":
-        version = None
-
-    product = usage.release.product
-    release = usage.release
-    if range_product == "any":
-        product = None
-        release = None
-    elif range_component == "product":
-        release = None
-
-    choice, created = LicenseChoice.objects.update_or_create(
-        expression_in=expression_in,
-        product=product,
-        release=release,
-        component=component,
-        version=version,
-        scope=scope,
-        defaults={"expression_out": expression_out, "explanation": explanation},
-    )
 
     response = redirect("cube:release_detail", release_id)
     return response

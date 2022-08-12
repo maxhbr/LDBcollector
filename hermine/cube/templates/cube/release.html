@@ -295,45 +295,49 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Your choices of usage</p>
       </div>
       <div class="message-body">
-        You've made the following choices about which license expression you wanted to use for those components.
+        You've made the licence choices for those components.
       </div>
     </article>
 
     <table class="table">
       <thead>
         <tr>
+          <th>Scope</th>
           <th>Component</th>
           <th>Version</th>
-          <th>Scope</th>
           <th>License expression</th>
-          <th>License usage</th>
-          <th>Applicable Licenses</th>
-          <th>Scope Mask</th>
-          <th>Edit</th>
+          <th>Choice for this release</th>
+          <th>Rules</th>
+          <th>Edit usage</th>
         </tr>
       </thead>
       <tbody>
         {% for usage in resolved %}
           <tr>
-            <td><a href="/component/{{usage.version.component.id}}" target="_blank">{{usage.version.component.name }}</a> </td>
-            <td><a href="/admin/cube/version/{{usage.version.id}}/change/" target="_blank">{{usage.version.version_number }}</a></td>
-            <td>{{usage.scope }} </td>
-            <td>{{usage.usagechoice.expression_in}}</td>
-            <td>{{usage.usagechoice.expression_out }} </td>
+            <td>{{usage.scope}} </td>
+            <td><a href="{%  url "cube:component_detail" usage.version.component.id %}" target="_blank">{{usage.version.component.name }}</a> </td>
+            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{usage.version.version_number }}</a></td>
+            <td>{{usage.version.effective_license}}</td>
+            <td>{{usage.license_expression }} </td>
             <td>
-              {% for license_chosen in usage.licenses_chosen.all %}
-                <a href="/license/{{license_chosen.id}}"
-                  <span class="tag {{ license_chosen|getColorTag }}">
-                    {{ license_chosen.spdx_id }}
-                  </span>
-                </a>
-              {% endfor %}
+              {% if usage.license_choices|length == 1 %}
+                <a href="{% url "admin:cube_licensechoice_change"  usage.license_choices.0.pk %}">Edit rule</a>
+                {% if usage.license_choices.0.expression_out != usage.license_expression %}
+                  <br><small>Choice does not match rule
+                  <form action="{% url "cube:usage_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
+                {% endif %}
+              {% else %}
+                {{ usage.license_choices|length }} rules apply. Edit rule
+                {% for choice in usage.license_choices %}
+                  <a href="{% url "admin:cube_licensechoice_change" choice.pk %}">
+                    {{ choice.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
+                {% endfor %}
+              {% endif %}
             </td>
-            <td>{{usage.usagechoice.scope_mask }} </td>
-            <td>
-              <a href="{% url 'cube:release_add_choice' usage.release.id usage.id %}"> Update expression </a>
+            <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
             </td>
-            <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -352,26 +356,25 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
+          <th>Scope</th>
           <th>Component</th>
           <th>Version</th>
-          <th>SPDX expression</th>
-          <th>Corrected expression</th>
-          <th>Scope</th>
-          <th>Edit</th>
+          <th>License expression</th>
+          <th>Add choice</th>
+          <th>Edit usage</th>
         </tr>
       </thead>
       <tbody>
         {% for usage in to_resolve %}
           <tr>
-            <td><a href="/component/{{usage.version.component.id}}" target="_blank">{{usage.version.component.name }}</a> </td>
-            <td><a href="/admin/cube/version/{{usage.version.id}}/change/" target="_blank">{{usage.version.version_number }}</a></td>
-            <td>{{usage.version.spdx_valid_license_expr }} </td>
-            <td>{{usage.version.corrected_license }} </td>
             <td>{{usage.scope }} </td>
+            <td><a href="{%  url "cube:component_detail" usage.version.component.id %}" target="_blank">{{usage.version.component.name }}</a> </td>
+            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{usage.version.version_number }}</a></td>
+            <td>{{usage.version.effective_license }} </td>
             <td>
-              <a href="{% url 'cube:release_add_choice' usage.release.id usage.id %}"> Choose expression </a>
+              <a href="{% url 'admin:cube_licensechoice_add' %}">Add choice rule</a>
             </td>
-            <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>

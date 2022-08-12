@@ -250,7 +250,15 @@ class LicenseSerializer(serializers.ModelSerializer):
         return instance
 
 
+class LicenseChoiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LicenseChoice
+        exclude = ("decision_type",)
+
+
 class UsageSerializer(serializers.ModelSerializer):
+    license_choices = LicenseChoiceSerializer(many=True, read_only=True)
+
     class Meta:
         model = Usage
         use_natural_foreign_keys = True
@@ -269,6 +277,7 @@ class UsageSerializer(serializers.ModelSerializer):
             "exploitation",
             "description",
             "licenses_chosen",
+            "license_choices",
             "scope",
         ]
 
@@ -505,12 +514,6 @@ class SBOMItemSerializer(serializers.Serializer):
 
 class SBOMSerializer(serializers.Serializer):
     packages = SBOMItemSerializer(many=True)
-
-
-class LicenseChoiceSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = LicenseChoice
-        exclude = ("decision_type",)
 
 
 class Validation1Serializer(serializers.Serializer):
