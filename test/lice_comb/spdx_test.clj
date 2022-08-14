@@ -124,7 +124,9 @@
     (is (= "Apache-2.0"                       (uri->id "http://www.apache.org/licenses/LICENSE-2.0.html")))
     (is (= "Apache-2.0"                       (uri->id "https://apache.org/licenses/LICENSE-2.0.txt")))
     (is (= "Apache-2.0"                       (uri->id "               https://www.apache.org/licenses/LICENSE-2.0             ")))   ; Test whitespace
-    (is (= "AGPL-3.0"                         (uri->id "https://www.gnu.org/licenses/agpl.txt")))
+    (is (let [license-id (uri->id "https://www.gnu.org/licenses/agpl.txt")]
+          (or (= "AGPL-3.0"      license-id)
+              (= "AGPL-3.0-only" license-id))))
     (is (= "CC-BY-SA-4.0"                     (uri->id "https://creativecommons.org/licenses/by-sa/4.0/legalcode")))
     (is (= "GPL-2.0-with-classpath-exception" (uri->id "https://www.gnu.org/software/classpath/license.html"))))
   (testing "URIs that appear in licensey things, but aren't in the SPDX license list"
