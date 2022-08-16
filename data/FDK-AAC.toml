@@ -1,7 +1,7 @@
 [license]
 
 expression = "FDK-AAC"
-status = [ "allowed" ]
+status = [ "not-allowed" ]
 
 url = '''
 https://fedoraproject.org/wiki/Licensing/FDK-AAC
@@ -16,3 +16,7 @@ name = [
 abbreviation = [
     "FDK-AAC"
 ]
+
+usage = '''
+Allowed only in continued Fedora packaging of fdk-aac-free.
+'''
