@@ -21,6 +21,7 @@ Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und 
 * [Open Hardware Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenHardwareLicenses.md)
 * [Sonstige Freie Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OtherFreeLicenses.md)
 * [Ähnliche Lizenzen, die nicht den Anforderungen der Open Source Definition genügen](https://github.com/ifrOSS/Lizenzcenter/blob/master/NonFreeLicenses.md)
+* [Ethical Licenses](https://github.com/LeChasseur/ifrOSS/blob/master/EthicalLicenses.md)
  
 Damit wird eine einfache Auffindbarkeit und Charakterisierung
 ermöglicht. Da fortlaufend neue Lizenzen erstellt werden, in
