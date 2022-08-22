@@ -7,6 +7,11 @@ url = '''
 http://creativecommons.org/publicdomain/zero/1.0/legalcode
 '''
 
+usage = '''
+Existing uses of CC0-1.0 on code files in Fedora packages prior to 2022-08-01, and subsequent upstream versions of those files in those packages, continue to be allowed. We encourage Fedora package maintainers to ask upstreams to relicense such files. 
+'''
+
+
 [fedora]
 
 name = [
