@@ -2,7 +2,7 @@ default:
     image: fedora:latest
 
     before_script:
-        - dnf install -y make git python3-pip python3-toml
+        - dnf install -y make git python3-pip '(python3-tomli if python3 < 3.11)'
         - pip3 install toml-validator
 
 stages:
