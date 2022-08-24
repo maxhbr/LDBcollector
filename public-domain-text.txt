@@ -26,6 +26,15 @@ text = '''
 text here
 '''
 
+package = x11vnc
+location = https://github.com/LibVNC/x11vnc/tree/af63109a17f1b1ec8b1e332d215501f11c4a33a0/misc/turbovnc
+text = '''
+This work has been (or is hereby) released into the public domain by
+its author, Karl J. Runge <runge@karlrunge.com>. This applies worldwide.
+In case this is not legally possible: Karl J. Runge grants anyone the
+right to use this work for any purpose, without any conditions, unless
+such conditions are required by law.
+'''
 
 package = xmlpull
 location = https://github.com/xmlpull-xpp3/xmlpull-xpp3/blob/master/xmlpull/LICENSE.txt
