@@ -38,11 +38,7 @@
 import os
 import sys
 import json
-
-try:
-    import tomllib  # Python 3.11+ standard library
-except ImportError:
-    import tomli as tomllib
+import toml
 
 allowed_values = [
     "allowed",
@@ -118,8 +114,7 @@ if __name__ == "__main__":
             continue
 
         # read in the data file
-        with open(licensefile.path, "rb") as f:
-            data = tomllib.load(f)
+        data = toml.load(licensefile.path)
 
         keys = [*data]
         license_keys = [*data["license"]]
