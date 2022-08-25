@@ -15,7 +15,11 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  make
 BuildRequires:  python3
+%if 0%{?fedora} || 0%{?rhel} >= 9
+BuildRequires:  (python%{python3_pkgversion}-toml if python%{python3_pkgversion} < 3.11)
+%else
 BuildRequires:  python%{python3_pkgversion}-toml
+%endif
 
 %description
 This project contains information about licenses used in the Fedora
