@@ -38,7 +38,13 @@
 
 import os
 import sys
-import toml
+
+try:
+    import tomllib as toml_module # Python 3.11+ standard library
+    toml_mode = "rb"
+except ImportError:
+    import toml as toml_module
+    toml_mode = "r"
 
 status_values = [
     "allowed",
@@ -77,7 +83,8 @@ if __name__ == "__main__":
             continue
 
         # read in the data file
-        data = toml.load(licensefile.path)
+        with open(licensefile.path, toml_mode) as f:
+            data = toml_module.load(f)
 
         # check the top level keys
         # the license key is required, the fedora key can exist
