@@ -1,0 +1,15 @@
+[license]
+
+expression = "NAIST-2003"
+
+status = [ "allowed" ]
+
+[fedora]
+
+name = [
+    "mecab-ipadic license"
+]
+
+abbreviation = [
+    "mecab-ipadic"
+]
