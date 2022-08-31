@@ -81,6 +81,7 @@ if __name__ == "__main__":
         usage(prog)
 
     valid_licenses_spdx = set()
+    valid_exceptions_spdx = set()
     valid_licenses_legacy = set()
 
     for licensefile in os.scandir(datadir):
@@ -125,6 +126,9 @@ if __name__ == "__main__":
 
         if approved:
             if spdx_abbrev:
+                spdx_abbrev, _, exception = spdx_abbrev.partition(" WITH ")
+                if exception:
+                    valid_exceptions_spdx.add(exception)
                 valid_licenses_spdx.add(spdx_abbrev)
             # nb: remove this when we don't want the old licenses allowed by rmplint
             for fedora_abbrev in fedora_abbrevs:
@@ -137,7 +141,8 @@ if __name__ == "__main__":
         if "b" in toml_w_mode:
             comment_lines = comment_lines.encode("utf-8")
         f.write(comment_lines)
-        rpmlint_dict = {"ValidLicenses": sorted(valid_licenses_spdx)}
+        rpmlint_dict = {"ValidLicenses": sorted(valid_licenses_spdx),
+                        "ValidLicenseExceptions": sorted(valid_exceptions_spdx)}
         toml_w_module.dump(rpmlint_dict, f)
 
     with open(outputfile_legacy, toml_w_mode) as f:
