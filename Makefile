@@ -1,7 +1,8 @@
 TOPDIR  := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 SRCDIR   = $(TOPDIR)/data
 JSONDB   = $(TOPDIR)/fedora-licenses.json
-RPMLINT  = $(TOPDIR)/rpmlint-licenses.toml
+RPMLINT_SPDX = $(TOPDIR)/fedora-spdx-licenses.toml
+RPMLINT_LEGACY = $(TOPDIR)/fedora-legacy-licenses.toml
 
 # Paths
 DESTDIR ?=
@@ -23,11 +24,12 @@ json:
 	$(TOPDIR)/tools/mkjson.py $(SRCDIR) $(JSONDB)
 
 rpmlint:
-	$(TOPDIR)/tools/mkrpmlint.py $(SRCDIR) $(RPMLINT)
+	$(TOPDIR)/tools/mkrpmlint.py $(SRCDIR) $(RPMLINT_SPDX) $(RPMLINT_LEGACY)
 
 install:
 	install -D -m 0644 $(JSONDB) $(DESTDIR)$(DATADIR)/fedora-license-data/licenses/$(shell basename $(JSONDB))
-	install -D -m 0644 $(RPMLINT) $(DESTDIR)$(ETCDIR)/xdg/rpmlint/licenses.toml
+	install -D -m 0644 $(RPMLINT_SPDX) $(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_SPDX))
+	install -D -m 0644 $(RPMLINT_LEGACY) $(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_LEGACY))
 
 clean:
 	-rm -f $(JSONDB)

@@ -55,7 +55,7 @@ The Fedora Legal team is responsible for this project.
 %{_datadir}/%{name}/
 # co-own the rpmlint directory not to depend on rpmlint
 %dir %{_sysconfdir}/xdg/rpmlint/
-%config(noreplace) %{_sysconfdir}/xdg/rpmlint/licenses.toml
+%config(noreplace) %{_sysconfdir}/xdg/rpmlint/*.toml
 
 
 %changelog

@@ -63,18 +63,19 @@ allowed_values = [
 
 
 def usage(prog):
-    print("Usage: %s [license data directory] [output file]" % prog)
+    print("Usage: %s [license data directory] [output spdx file] [output legacy file]" % prog)
     sys.exit(1)
 
 
 if __name__ == "__main__":
     prog = os.path.basename(sys.argv[0])
 
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         usage(prog)
 
     datadir = os.path.realpath(sys.argv[1])
-    outputfile = sys.argv[2]
+    outputfile_spdx = sys.argv[2]
+    outputfile_legacy = sys.argv[3]
 
     if not os.path.isdir(datadir):
         usage(prog)
@@ -129,15 +130,21 @@ if __name__ == "__main__":
             for fedora_abbrev in fedora_abbrevs:
                 valid_licenses_legacy.add(fedora_abbrev)
 
-    # combine the lists
-    valid_licenses_legacy -= valid_licenses_spdx
-    valid_licenses = sorted(valid_licenses_spdx) + sorted(valid_licenses_legacy)
-    rpmlint_dict = {"ValidLicenses": valid_licenses}
-
-    # write out the rpmlint toml file
-    with open(outputfile, toml_w_mode) as f:
-        comment_line = "# File generated and owned by fedora-license-data\n"
+    # write out the rpmlint toml files
+    with open(outputfile_spdx, toml_w_mode) as f:
+        comment_lines = "# File generated and owned by fedora-license-data\n"
+        comment_lines += "# The SPDX license identifiers\n"
         if "b" in toml_w_mode:
-            comment_line = comment_line.encode("utf-8")
-        f.write(comment_line)
+            comment_lines = comment_lines.encode("utf-8")
+        f.write(comment_lines)
+        rpmlint_dict = {"ValidLicenses": sorted(valid_licenses_spdx)}
+        toml_w_module.dump(rpmlint_dict, f)
+
+    with open(outputfile_legacy, toml_w_mode) as f:
+        comment_lines = "# File generated and owned by fedora-license-data\n"
+        comment_lines += "# The legacy (callaway) license identifiers\n"
+        if "b" in toml_w_mode:
+            comment_lines = comment_lines.encode("utf-8")
+        f.write(comment_lines)
+        rpmlint_dict = {"ValidLicenses": sorted(valid_licenses_legacy)}
         toml_w_module.dump(rpmlint_dict, f)
