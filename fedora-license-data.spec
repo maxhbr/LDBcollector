@@ -17,6 +17,7 @@ BuildRequires:  make
 BuildRequires:  python3
 %if 0%{?fedora} || 0%{?rhel} >= 9
 BuildRequires:  (python%{python3_pkgversion}-toml if python%{python3_pkgversion} < 3.11)
+BuildRequires:  python%{python3_pkgversion}-tomli-w
 %else
 BuildRequires:  python%{python3_pkgversion}-toml
 %endif
@@ -52,6 +53,9 @@ The Fedora Legal team is responsible for this project.
 %license LICENSE LICENSE.BSD-3-Clause LICENSE.CC0-1.0
 %doc AUTHORS README.md
 %{_datadir}/%{name}/
+# co-own the rpmlint directory not to depend on rpmlint
+%dir %{_sysconfdir}/xdg/rpmlint/
+%config(noreplace) %{_sysconfdir}/xdg/rpmlint/licenses.toml
 
 
 %changelog
