@@ -1,0 +1,13 @@
+[license]
+
+expression = "BSD-2-Clause-Views"
+status = [ "allowed" ]
+
+[fedora]
+
+name = [
+    "FreeBSD BSD Variant (2 clause BSD)",
+]
+abbreviation = [
+    "BSD",
+]
