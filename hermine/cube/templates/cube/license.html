@@ -79,10 +79,10 @@ SPDX-License-Identifier: AGPL-3.0-only
         <div class="column">
           <p>SPXD ID:
             <a href="https://spdx.org/licenses/{{ object.spdx_id }}.html" target="_blank">
+              <span> {{ object.spdx_id }}</span>
               <span class="icon is-small">
                 <i class="fas fa-link"></i>
               </span>
-              <span> {{ licence.spdx_id }}</span>
             </a>
           </p>
           <p>Review status:
@@ -181,7 +181,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <h3 class="title is-3">Obligations</h3>
   
 
-  <div class="tabs is-centered is-boxed">
+  <div id="specific" class="tabs is-centered is-boxed">
     <ul>
       <li class="is-active"><a href="#specific">Specific to this licence</a></li>
       <li><a href="#generic-out">Generic obligation, not core</a></li>
@@ -189,7 +189,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </ul>
   </div>
 
-  <section id="specific">
+  <section>
 
     <article class="message is-info">
       <div class="message-body">
@@ -202,17 +202,14 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% for obligation in orphan_obligations %}
         <div class="card">
           <header class="card-header">
-            <p class="card-header-title">
-              {{ obligation.name }}
-            </p>
+            <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
           </header>
           <div class="card-content">
             <div class="content">
-              <i> {{ obligation.passivity }}</i>
               {% if obligation.passivity == "Active" %}
-                Applies:
+                <p>Applies:</p>
                 <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
-                <li> {{ obligation.get_trigger_expl_display }}</li></ul>
+                <li>{{ obligation.get_trigger_expl_display }}</li></ul>
               {% endif %}
               <br>
               <blockquote>{{ obligation.verbatim}}</blockquote>
@@ -224,7 +221,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% else %}
       <article class="message is-warning">
         <div class="message-body">
-          <i>No obligation here.</i>
+          <i>This license has no specific obligations.</i>
         </div>
       </article>
     {% endif %}
@@ -233,7 +230,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 
 
-  <div class="tabs is-centered is-boxed">
+  <div id="generic-out" class="tabs is-centered is-boxed">
     <ul>
       <li><a href="#specific">Specific to this licence</a></li>
       <li class="is-active"><a href="#generic-out">Generic obligation, not core</a></li>
@@ -241,7 +238,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </ul>
   </div>
 
-  <section id="generic-out">
+  <section>
     <article class="message is-info">
       <div class="message-body">
         Obligations that are related to a generic obligation that is <b>not</b> part of the core
@@ -252,21 +249,19 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% for obligation in obligations_in_generic %}
       <div class="card">
         <header class="card-header">
-          <p class="card-header-title">
-            {{ obligation.name }}
-          </p>
+          <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
         </header>
         <div class="card-content">
           <div class="content">
-            <p> Generic : <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
-            <p>{{ obligation.passivity }}</p>
+
             {% if obligation.passivity == "Active" %}
-              Applies:
+              <p>Applies:</p>
               <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
               <li> {{ obligation.get_trigger_expl_display }}</li></ul>
             {% endif %}
             <br>
             <blockquote>{{ obligation.verbatim }}</blockquote>
+            <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
           </div>
         </div>
       </div>
@@ -274,7 +269,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% else %}
       <article class="message is-warning">
         <div class="message-body">
-          <i>No obligation here.</i>
+          <i>This license has no obligations relalted to generic obligations that are <strong>not</strong> included in the core.</i>
         </div>
       </article>
     {% endif %}
@@ -282,7 +277,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 
 
-  <div class="tabs is-centered is-boxed">
+  <div  id="generic-in" class="tabs is-centered is-boxed">
     <ul>
       <li><a href="#specific">Specific to this licence</a></li>
       <li><a href="#generic-out">Generic obligation, not core</a></li>
@@ -290,7 +285,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </ul>
   </div>
 
-  <section id="generic-in">
+  <section>
     <article class="message is-info">
       <div class="message-body">
         Obligations that are related to a generic obligation that is part of the core
@@ -302,22 +297,19 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% for obligation in obligations_in_core %}
       <div class="card">
         <header class="card-header">
-          <p class="card-header-title">
-            {{ obligation.name }}
-          </p>
+          <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
         </header>
         <div class="card-content">
           <div class="content">
-            <p> Generic : <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
-            <p>{{ obligation.passivity }}</p>
             {% if obligation.passivity == "Active" %}
-              Applies:
+              <p>Applies:</p>
               <ul>
                 <li>{{ obligation.get_trigger_mdf_display }}</li>
                 <li> {{ obligation.get_trigger_expl_display }}</li>
               </ul>
             {% endif %}
             <blockquote>{{ obligation.verbatim}}</blockquote>
+            <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
           </div>
         </div>
       </div>
@@ -326,7 +318,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% else %}
       <article class="message is-warning">
         <div class="message-body">
-          <i>No obligation here.</i>
+          <i>This license has no obligations relalted to generic obligations that are included in the core.</i>
         </div>
       </article>
     {% endif %}
