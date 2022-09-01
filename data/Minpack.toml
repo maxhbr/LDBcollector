@@ -1,0 +1,15 @@
+[license]
+
+expression = "Minpack"
+status = [ "allowed" ]
+
+
+[fedora]
+
+name = [
+    "Minpack License"
+]
+
+abbreviation = [
+    "Minpack"
+]
