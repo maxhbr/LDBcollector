@@ -29,3 +29,12 @@ spec-validate:
             - tools/*.py
     script:
         - make spec-validate
+
+rpmlint:
+    stage: test
+    artifacts:
+        paths:
+            - fedora-*-licenses.toml
+            - tools/mkrpmlint.py
+    script:
+        - make rpmlint
