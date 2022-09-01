@@ -399,8 +399,14 @@ class Obligation(models.Model):
             Usage.EXPLOITATION_DISTRIBUTION_BOTH,
             "If the component is distributed as source code or as binary",
         ),
-        (Usage.EXPLOITATION_DISTRIBUTION_SOURCE, "If the component is distributed as source code"),
-        (Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE, "If the component is distributed as binary"),
+        (
+            Usage.EXPLOITATION_DISTRIBUTION_SOURCE,
+            "If the component is distributed as source code",
+        ),
+        (
+            Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE,
+            "If the component is distributed as binary",
+        ),
         (Usage.EXPLOITATION_NETWORK, "If component is accessible by network access"),
         (Usage.EXPLOITATION_INTERNAL, "If the component is used internally"),
     ]
