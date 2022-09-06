@@ -351,10 +351,10 @@ class Generic(models.Model):
     METAGATEGORY_CHOICES = [
         ("Communication", "Communication constraints"),
         ("IPManagement", "IP management"),
-        ("LicenseAgreement", "License Agreement"),
+        ("LicenseAgreement", "License agreement"),
         ("Mentions", "Mentions"),
         ("ProvidingSourceCode", "Providing source code"),
-        ("TechnicalConstraints", "Technical Constraints"),
+        ("TechnicalConstraints", "Technical constraints"),
     ]
     name = models.CharField(max_length=200, unique=True)
     description = models.TextField(max_length=500, blank=True)
