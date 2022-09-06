@@ -14,23 +14,26 @@ parser.add_argument('datadir', help='path to directory with TOML files', default
 parser.add_argument('--verbose', '-v', action='count', default=0)
 opts = parser.parse_args()
 
-TEMPLATES = ["templates/allowed-license.adoc.j2"]
+TEMPLATES = ["templates/allowed-licenses.adoc.j2", "templates/not-allowed-licenses.adoc.j2"]
 #"license-overview-template.jinja2"
 
 # function used in Jinja template
 def spdx_url(license):
     """ Returns url to SPDX license """
     spd_expression = license['license']['expression']
+    if "WITH" in spd_expression:
+        expanded_list = spd_expression.split("WITH")
+        return "link:++https://spdx.org/licenses/{0}.html++[{0}] WITH link:++https://spdx.org/licenses/{1}.html++[{1}]".format(expanded_list[0].strip(), expanded_list[1].strip())
 #    if 'url' in license['license']:
 #        return license['license']['url'].strip()
-    return "https://spdx.org/licenses/{}.html".format(spd_expression)
+    return "link:++https://spdx.org/licenses/{0}.html++[{0}]".format(spd_expression)
 
 def additional_urls(license):
     """ returns additional urls if present, in html form """
     if 'url' in license['license']:
         RESULT = []
         for url in license['license']['url'].split():
-            RESULT.append('<a href="{0}">{0}</a>'.format(url))
+            RESULT.append('link:++{0}++[]'.format(url))
         return ' '.join(RESULT)
 
 

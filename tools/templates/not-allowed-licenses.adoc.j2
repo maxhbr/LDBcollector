@@ -1,0 +1,28 @@
+= *Not-Allowed* Licenses
+
+This page lists the licenses that are *not-allowed* for use in Fedora. This information is generated from the data maintained in the https://gitlab.com/fedora/legal/fedora-license-data[Fedora License Data] repository.
+
+[.datatable.dt-search]
+[.datatable.dt-search.dt-paging]
+|===
+| SPDX Expression | Name | URLs | Notes
+
+{% for license in NOTALLOWED_LICENSES -%}
+| {{ spdx_url(license) }}
+| {%- if 'fedora' in license -%}
+        {{ license['fedora']['name']|join(',') }}
+  {%- else -%}
+        {nbsp}
+  {%- endif %}
+| {{ additional_urls(license) }}
+| {%- if 'fedora' in license -%}
+          {%- if 'notes' in license['fedora'] -%}
+                  {{- license['fedora']['notes']|trim -}}
+          {%- else -%}
+                  &nbsp;
+          {%- endif -%}
+  {%- else -%}
+          &nbsp;
+  {%- endif -%}
+{%- endfor %}
+|===
