@@ -75,7 +75,7 @@ Generic obligations
                 {% for generic in generics_incore %}
                   <tr>
                     <td>{{generic.name}}</td>
-                    <td><div class="buttons"><button class="button is-primary">{{generic.metacategory}}</button></td>
+                    <td><div class="buttons"><button class="button is-primary">{{generic.get_metacategory_display}}</button></td>
                     <td><button class="button is-link">{{generic.team.name}}</td>
                     <td>{{ generic.obligation_set.all|length }}</td>
                     <td>{{ generic.passivity}}</td>
@@ -141,7 +141,7 @@ Generic obligations
                 {% for generic in generics_outcore %}
                   <tr>
                     <td>{{generic.name}}</td>
-                    <td><div class="buttons"><button class="button is-primary">{{generic.metacategory}}</button></td>
+                    <td><div class="buttons"><button class="button is-primary">{{generic.get_metacategory_display}}</button></td>
                     <td><button class="button is-link">{{generic.team.name}}</td>
                     <td>{{ generic.obligation_set.all|length }}</td>
                     <td>{{ generic.passivity}}</td>
