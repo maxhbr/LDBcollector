@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Ian Kaplan License]([ia]/Ian-Kaplan-License.yaml)</sup>|<sup>Ian Kaplan License</sup>|<sup>Ian-Kaplan</sup>| | |<sup> </sup>|<sup>[ian-kaplan](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ian-kaplan.LICENSE)</sup>|<sup>[ian-kaplan](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ian-kaplan.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Ian Piumarta License]([ia]/Ian-Piumarta-License.yaml)</sup>|<sup>Ian Piumarta License</sup>|<sup>Ian-Piumarta</sup>| | |<sup> </sup>|<sup>[ian-piumarta](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ian-piumarta.LICENSE)</sup>|<sup>[ian-piumarta](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ian-piumarta.LICENSE)</sup>|<sup>terms</sup>|

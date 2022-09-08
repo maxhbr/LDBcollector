@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Magpie Exception (AGPL 3.0)]([ma]/Magpie-Exception-(AGPL-3.0).yaml)</sup>|<sup>Magpie Exception</sup>|<sup>Magpie-exception-1.0</sup>| | |<sup> </sup>|<sup>[magpie-exception-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/magpie-exception-1.0.LICENSE)</sup>| |<sup>terms</sup>|
 |<sup>[MakeHuman Exception (GPL)]([ma]/MakeHuman-Exception-(GPL).yaml)</sup>|<sup>GPL MakeHuman Exception</sup>|<sup>MakeHuman-Exception-GPL</sup>| | |<sup> </sup>|<sup>[make-human-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/make-human-exception.LICENSE)</sup>|<sup>[make-human-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/make-human-exception.LICENSE)</sup>|<sup>exception</sup>|

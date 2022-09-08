@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[U-Boot Exception (GPL)]([ub]/U-Boot-Exception-(GPL).yaml)</sup>|<sup>GPL U-Boot Exception</sup>|<sup>U-Boot-Exception-GPL</sup>|<sup>[u-boot-exception-2.0](https://spdx.org/licenses/u-boot-exception-2.0.html)</sup>| |<sup> </sup>|<sup>[u-boot-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/u-boot-exception-2.0.LICENSE)</sup>|<sup>[u-boot-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/u-boot-exception-2.0.LICENSE)</sup>|<sup>exception</sup>|
 |<sup>[Ubuntu Font Licence 1.0]([ub]/Ubuntu-Font-Licence-1.0.yaml)</sup>|<sup>Ubuntu Font Licence</sup>|<sup>Ubuntu-Font-1.0</sup>| | |<sup> </sup>|<sup>[ubuntu-font-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ubuntu-font-1.0.LICENSE)</sup>|<sup>[ubuntu-font-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ubuntu-font-1.0.LICENSE)</sup>|<sup>terms</sup>|

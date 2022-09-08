@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Baekmuk License]([ba]/Baekmuk-License.yaml)</sup>|<sup>Baekmuk</sup>|<sup> </sup>|<sup>[Baekmuk](https://spdx.org/licenses/Baekmuk.html)</sup>| |<sup> </sup>|<sup>[baekmuk-fonts](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/baekmuk-fonts.LICENSE)</sup>|<sup>[baekmuk-fonts](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/baekmuk-fonts.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Bahyph License]([ba]/Bahyph-License.yaml)</sup>|<sup>Bahyph</sup>|<sup> </sup>|<sup>[Bahyph](https://spdx.org/licenses/Bahyph.html)</sup>| |<sup> </sup>|<sup>[bahyph](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bahyph.LICENSE)</sup>|<sup>[bahyph](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bahyph.LICENSE)</sup>|<sup>terms</sup>|

@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Paint License]([pa]/Paint-License.yaml)</sup>|<sup>Paint License</sup>|<sup>Paint</sup>| | |<sup> </sup>|<sup>[paint-net](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/paint-net.LICENSE)</sup>| |<sup>terms</sup>|
 |<sup>[Paolo Messina 2000]([pa]/Paolo-Messina-2000.yaml)</sup>|<sup>Paolo Messina 2000</sup>|<sup>Paolo-Messina-2000</sup>| | |<sup> </sup>|<sup>[paolo-messina-2000](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/paolo-messina-2000.LICENSE)</sup>|<sup>[paolo-messina-2000](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/paolo-messina-2000.LICENSE)</sup>|<sup>terms</sup>|

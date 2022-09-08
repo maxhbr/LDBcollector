@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Fabien Tassin License]([fa]/Fabien-Tassin-License.yaml)</sup>|<sup>Fabien Tassin License</sup>|<sup>Fabien-Tassin</sup>| | |<sup> </sup>|<sup>[fabien-tassin](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fabien-tassin.LICENSE)</sup>|<sup>[fabien-tassin](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fabien-tassin.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Fabric Software and Services Agreement 2017]([fa]/Fabric-Software-and-Services-Agreement-2017.yaml)</sup>|<sup>Fabric Software and Services Agreement 2017</sup>|<sup>Fabric-Agreement-2017</sup>| | |<sup> </sup>|<sup>[fabric-agreement-2017](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fabric-agreement-2017.LICENSE)</sup>|<sup>[fabric-agreement-2017](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fabric-agreement-2017.LICENSE)</sup>|<sup>terms</sup>|

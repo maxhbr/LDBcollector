@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Dante Treglia License]([da]/Dante-Treglia-License.yaml)</sup>|<sup>Dante Treglia License</sup>|<sup>Dante-Treglia</sup>| | |<sup> </sup>|<sup>[dante-treglia](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dante-treglia.LICENSE)</sup>|<sup>[dante-treglia](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dante-treglia.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Data Licence BY 1.0]([da]/Data-Licence-BY-1.0.yaml)</sup>|<sup>Data Licence BY</sup>|<sup>DL-DE-BY-1.0</sup>| | |<sup> </sup>|<sup>[dl-de-by-1-0-en](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dl-de-by-1-0-en.LICENSE)</sup>| |<sup>terms</sup>|

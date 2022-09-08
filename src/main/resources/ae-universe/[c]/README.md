@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[C/Migemo License]([cm]/CMigemo-License.yaml)</sup>|<sup>C/Migemo License</sup>|<sup>CMigemo</sup>| | |<sup> </sup>|<sup>[cmigemo](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmigemo.LICENSE)</sup>|<sup>[cmigemo](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmigemo.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Cadence License]([ca]/Cadence-License.yaml)</sup>|<sup>Cadence</sup>|<sup>Cadence</sup>| | |<sup> </sup>|<sup>[cadence-linux-firmware](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cadence-linux-firmware.LICENSE)</sup>|<sup>[bsd-new](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.LICENSE)</sup>|<sup>terms</sup>|

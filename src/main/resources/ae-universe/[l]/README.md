@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[LAL 1.2]([la]/LAL-1.2.yaml)</sup>|<sup>LAL</sup>|<sup> </sup>|<sup>[LAL-1.2](https://spdx.org/licenses/LAL-1.2.html)</sup>| |<sup> </sup>| | |<sup>terms</sup>|
 |<sup>[LAL 1.3]([la]/LAL-1.3.yaml)</sup>|<sup>LAL</sup>|<sup> </sup>|<sup>[LAL-1.3](https://spdx.org/licenses/LAL-1.3.html)</sup>| |<sup> </sup>| | |<sup>terms</sup>|

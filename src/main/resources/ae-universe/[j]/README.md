@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[JA-SiG License]([ja]/JA-SiG-License.yaml)</sup>|<sup>JA-SiG License</sup>|<sup>JA-SiG</sup>| | |<sup> </sup>|<sup>[ja-sig](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ja-sig.LICENSE)</sup>|<sup>[ja-sig](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ja-sig.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Jabber Open Source License 1.0]([ja]/Jabber-Open-Source-License-1.0.yaml)</sup>|<sup>JOSL</sup>|<sup>JOSL-1.0</sup>| | |<sup> </sup>|<sup>[josl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/josl-1.0.LICENSE)</sup>| |<sup>terms</sup>|

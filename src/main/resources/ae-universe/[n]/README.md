@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Nara Institute of Science and Technology License (2003)]([na]/Nara-Institute-of-Science-and-Technology-License-(2003).yaml)</sup>|<sup>NAIST</sup>|<sup> </sup>|<sup>[NAIST-2003](https://spdx.org/licenses/NAIST-2003.html)</sup>| |<sup> </sup>|<sup>[naist-2003](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naist-2003.LICENSE)</sup>|<sup>[naist-2003](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naist-2003.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[NASA License 1.3]([na]/NASA-License-1.3.yaml)</sup>|<sup>NASA</sup>|<sup> </sup>|<sup>[NASA-1.3](https://spdx.org/licenses/NASA-1.3.html)</sup>|<sup>[NASA-1.3](https://opensource.org/licenses/NASA-1.3)</sup>|<sup> </sup>|<sup>[nasa-1.3](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.LICENSE)</sup>|<sup>[nasa-1.3](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.LICENSE)</sup>|<sup>terms</sup>|

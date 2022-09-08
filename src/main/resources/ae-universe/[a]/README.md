@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Abstyles License]([ab]/Abstyles-License.yaml)</sup>|<sup>Abstyles</sup>|<sup> </sup>|<sup>[Abstyles](https://spdx.org/licenses/Abstyles.html)</sup>| |<sup>approved</sup>|<sup>[abstyles](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.LICENSE)</sup>|<sup>[abstyles](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Academic Free License (undefined)]([ac]/Academic-Free-License-(undefined).yaml)</sup>|<sup>AFL</sup>|<sup>AFL-?</sup>| | |<sup> </sup>| | |<sup>terms</sup>|

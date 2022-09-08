@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[W3C Document License]([w3]/W3C-Document-License.yaml)</sup>|<sup>W3C</sup>|<sup>W3C-Document</sup>| | |<sup> </sup>|<sup>[w3c-docs-20021231](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-docs-20021231.LICENSE)</sup>| |<sup>terms</sup>|
 |<sup>[W3C Document Notice and License]([w3]/W3C-Document-Notice-and-License.yaml)</sup>|<sup>W3C Document Notice and License</sup>|<sup>W3C-Document-Notice</sup>| | |<sup> </sup>|<sup>[w3c-docs-19990405](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-docs-19990405.LICENSE)</sup>|<sup>[w3c-docs-19990405](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-docs-19990405.LICENSE)</sup>|<sup>terms</sup>|

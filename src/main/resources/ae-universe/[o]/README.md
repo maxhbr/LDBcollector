@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[O Young Jong License]([oy]/O-Young-Jong-License.yaml)</sup>|<sup>O Young Jong License</sup>|<sup>O-Young-Jong</sup>| | |<sup> </sup>|<sup>[o-young-jong](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/o-young-jong.LICENSE)</sup>|<sup>[o-young-jong](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/o-young-jong.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[O'Reilly Code Sample Notice]([or]/O'Reilly-Code-Sample-Notice.yaml)</sup>|<sup>O'Reilly Code Sample Notice</sup>|<sup>OReilly-Notice</sup>| | |<sup> </sup>|<sup>[oreilly-notice](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oreilly-notice.LICENSE)</sup>|<sup>[oreilly-notice](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oreilly-notice.LICENSE)</sup>|<sup>terms</sup>|

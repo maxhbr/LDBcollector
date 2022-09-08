@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Gareth McCaughan License]([ga]/Gareth-McCaughan-License.yaml)</sup>|<sup>Gareth McCaughan License</sup>|<sup>Gareth-McCaughan</sup>| | |<sup> </sup>|<sup>[gareth-mccaughan](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gareth-mccaughan.LICENSE)</sup>|<sup>[gareth-mccaughan](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gareth-mccaughan.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Gary S. Brown License]([ga]/Gary-S.-Brown-License.yaml)</sup>|<sup>Gary S. Brown License</sup>|<sup>Gary-S-Brown</sup>| | |<sup> </sup>|<sup>[gary-s-brown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gary-s-brown.LICENSE)</sup>|<sup>[gary-s-brown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gary-s-brown.LICENSE)</sup>|<sup>terms</sup>|

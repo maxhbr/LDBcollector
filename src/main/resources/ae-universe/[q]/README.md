@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[QAPlug License]([qa]/QAPlug-License.yaml)</sup>|<sup>QAPlug License</sup>|<sup>QAPlug</sup>| | |<sup> </sup>|<sup>[qaplug](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qaplug.LICENSE)</sup>|<sup>[qaplug](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qaplug.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Qhull License]([qh]/Qhull-License.yaml)</sup>|<sup>Qhull License</sup>|<sup> </sup>|<sup>[Qhull](https://spdx.org/licenses/Qhull.html)</sup>| |<sup>approved</sup>|<sup>[qhull](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qhull.LICENSE)</sup>|<sup>[qhull](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qhull.LICENSE)</sup>|<sup>terms</sup>|

@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[X11 License]([x1]/X11-License.yaml)</sup>|<sup>X11</sup>|<sup> </sup>|<sup>[X11](https://spdx.org/licenses/X11.html)</sup>| |<sup>approved</sup>|<sup>[x11-xconsortium](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.LICENSE)</sup>|<sup>[x11-xconsortium](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[X11-R5 Authors]([x1]/X11-R5-Authors.yaml)</sup>|<sup>X11-R5 Authors</sup>|<sup>X11-R5-Authors</sup>| | |<sup> </sup>|<sup>[x11r5-authors](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11r5-authors.LICENSE)</sup>|<sup>[standard-ml-nj](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/standard-ml-nj.LICENSE)</sup>|<sup>terms</sup>|

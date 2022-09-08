@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Eclipse Distribution License (undefined)]([ec]/Eclipse-Distribution-License-(undefined).yaml)</sup>|<sup>BSD</sup>|<sup>EDL-?</sup>| | |<sup> </sup>| | |<sup>terms</sup>|
 |<sup>[Eclipse Foundation Software User Agreement 2001]([ec]/Eclipse-Foundation-Software-User-Agreement-2001.yaml)</sup>|<sup>Eclipse SUA</sup>|<sup>Eclipse-SUA-2001</sup>| | |<sup> </sup>|<sup>[eclipse-sua-2001](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eclipse-sua-2001.LICENSE)</sup>| |<sup>terms</sup>|

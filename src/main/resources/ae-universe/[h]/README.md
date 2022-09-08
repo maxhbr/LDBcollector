@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[H2 License 1.0]([h2]/H2-License-1.0.yaml)</sup>|<sup>H2 License 1.0</sup>|<sup>H2-1.0</sup>| | |<sup> </sup>|<sup>[h2-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/h2-1.0.LICENSE)</sup>|<sup>[h2-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/h2-1.0.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Hacktivismo Enhanced-Source Software License Agreement]([ha]/Hacktivismo-Enhanced-Source-Software-License-Agreement.yaml)</sup>|<sup>Hacktivismo Enhanced-Source Software License Agreement</sup>|<sup>HESSLA</sup>| | |<sup> </sup>|<sup>[hessla](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hessla.LICENSE)</sup>|<sup>[afl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.1.LICENSE), [gpl-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0.LICENSE), [unknown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unknown.LICENSE)</sup>|<sup>terms</sup>|

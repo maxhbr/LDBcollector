@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[Z Shell License]([zs]/Z-Shell-License.yaml)</sup>|<sup>Z-Shell</sup>|<sup>ZSH</sup>| | |<sup> </sup>|<sup>[zsh](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zsh.LICENSE)</sup>| |<sup>terms</sup>|
 |<sup>[Zapatec DHTML Javascript Calendar License Agreement]([za]/Zapatec-DHTML-Javascript-Calendar-License-Agreement.yaml)</sup>|<sup>Zapatec DHTML Javascript Calendar License Agreement</sup>|<sup>Zapatec-Calendar</sup>| | |<sup> </sup>|<sup>[zapatec-calendar](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zapatec-calendar.LICENSE)</sup>|<sup>[zapatec-calendar](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zapatec-calendar.LICENSE)</sup>|<sup>terms</sup>|

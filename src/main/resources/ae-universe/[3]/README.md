@@ -29,7 +29,7 @@
 [y](../[y]/README.md) - 
 [z](../[z]/README.md)
 
-|Canonical Name|Category|Short Name|SPDX Identifier|OSI|Open CoDE|ScanCode|Matched ScanCode|Type|
+|<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |<sup>[389 Directory Server Exception]([38]/389-Directory-Server-Exception.yaml)</sup>|<sup>389-Directory-Server-Exception</sup>|<sup>389-Exception</sup>|<sup>[389-exception](https://spdx.org/licenses/389-exception.html)</sup>| |<sup> </sup>|<sup>[389-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/389-exception.LICENSE)</sup>|<sup>[389-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/389-exception.LICENSE), [gpl-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0.LICENSE)</sup>|<sup>exception</sup>|
 |<sup>[3Com Microcode License]([3c]/3Com-Microcode-License.yaml)</sup>|<sup>3Com-MC</sup>|<sup>3Com-Microcode</sup>| | |<sup> </sup>|<sup>[3com-microcode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/3com-microcode.LICENSE)</sup>|<sup>[3com-microcode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/3com-microcode.LICENSE)</sup>|<sup>terms</sup>|
