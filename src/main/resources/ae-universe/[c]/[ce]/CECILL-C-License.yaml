@@ -4,6 +4,7 @@
 canonicalName: "CeCILL C License"
 category: "CeCILL-C"
 spdxIdentifier: "CECILL-C"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "CeCILL C"
