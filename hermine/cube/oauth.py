@@ -25,5 +25,5 @@ class OAuth2(BaseOAuth2):
         """Loads user data from service"""
         return self.get_json(
             settings.OAUTH_CLIENT["user_url"],
-            headers={"Authorization": f"token {access_token}"},
+            headers={"Authorization": f"bearer {access_token}"},
         )
