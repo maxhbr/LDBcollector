@@ -16,3 +16,4 @@ hermine/hermine/mysecrets.py
 .idea
 hermine.iml
 **/.DS_Store
+.env
