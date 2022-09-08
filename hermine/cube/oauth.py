@@ -17,6 +17,10 @@ class OAuth2(BaseOAuth2):
     AUTHORIZATION_URL = settings.OAUTH_CLIENT["authorize_url"]
     ACCESS_TOKEN_URL = settings.OAUTH_CLIENT["access_token_url"]
     ID_KEY = settings.OAUTH_CLIENT.get("id_key", "id")
+    ACCESS_TOKEN_METHOD = settings.OAUTH_CLIENT.get("access_token_method", "POST")
+
+    def get_scope(self):
+        return settings.OAUTH_CLIENT.get("scopes", "openid profile")
 
     def get_user_details(self, response):
         return settings.OAUTH_CLIENT["user_details"](response)
