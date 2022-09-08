@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Sencha Development Exception"
+category: "Sencha Development Exception"
+shortName: "Sencha-Development-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Sencha Open Source License Exception for Development"
+
+otherIds: 
+  - "scancode:sencha-dev-floss-exception"

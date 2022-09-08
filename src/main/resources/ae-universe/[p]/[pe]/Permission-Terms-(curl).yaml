@@ -4,6 +4,7 @@
 canonicalName: "Permission Terms (curl)"
 category: "Permission"
 spdxIdentifier: "curl"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "CURL LICENSE"

@@ -4,6 +4,7 @@
 canonicalName: "Amazon Digital Services License"
 category: "ADSL"
 spdxIdentifier: "ADSL"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Amazon Digital Services License"

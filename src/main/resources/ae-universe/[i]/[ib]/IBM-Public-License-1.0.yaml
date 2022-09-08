@@ -4,6 +4,7 @@
 canonicalName: "IBM Public License 1.0"
 category: "IPL"
 spdxIdentifier: "IPL-1.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "IPL, Version 1.0"

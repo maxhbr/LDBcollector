@@ -4,6 +4,7 @@
 canonicalName: "Creative Commons BY SA 2.0 (UK)"
 category: "CC-BY-SA"
 spdxIdentifier: "CC-BY-SA-2.0-UK"
+openCoDEStatus: "approved"
 
 otherIds: 
   - "scancode:cc-by-sa-2.0-uk"

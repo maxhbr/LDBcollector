@@ -4,6 +4,7 @@
 canonicalName: "FreeType Project License"
 category: "FreeType"
 spdxIdentifier: "FTL"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "and may include FreeType"

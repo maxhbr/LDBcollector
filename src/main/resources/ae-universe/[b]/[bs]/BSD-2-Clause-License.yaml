@@ -4,6 +4,7 @@
 canonicalName: "BSD 2-Clause License"
 category: "BSD"
 spdxIdentifier: "BSD-2-Clause"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "2-clause BSD license"

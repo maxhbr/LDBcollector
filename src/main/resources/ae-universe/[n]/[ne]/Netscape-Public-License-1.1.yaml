@@ -4,6 +4,7 @@
 canonicalName: "Netscape Public License 1.1"
 category: "Netscape Public License 1.1"
 spdxIdentifier: "NPL-1.1"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "http://www.mozilla.org/MPL/NPL-1.1.html"

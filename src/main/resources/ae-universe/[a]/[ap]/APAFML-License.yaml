@@ -4,6 +4,7 @@
 canonicalName: "APAFML License"
 category: "APAFML"
 spdxIdentifier: "APAFML"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "APAFML"

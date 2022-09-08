@@ -4,6 +4,7 @@
 canonicalName: "OpenLDAP Public License 2.8"
 category: "OLDAP"
 spdxIdentifier: "OLDAP-2.8"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "OpenLDAP Public License 3.3"

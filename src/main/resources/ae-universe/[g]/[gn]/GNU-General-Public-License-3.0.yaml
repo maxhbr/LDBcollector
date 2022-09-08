@@ -5,6 +5,7 @@ canonicalName: "GNU General Public License 3.0"
 category: "GPL"
 shortName: "GPL-3.0"
 spdxIdentifier: "GPL-3.0-only"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "GNU General Public License (GPLV3+)"
@@ -59,6 +60,7 @@ alternativeNames:
   - "GPL V3"
   - "GNU General Public License\" .SS \"Version 3"
   - "GNU General Public License as published by the Free Software Foundation; version 3"
+  - "version 3 of the GNU General Public License"
 
 otherIds: 
   - "scancode:gpl-3.0"

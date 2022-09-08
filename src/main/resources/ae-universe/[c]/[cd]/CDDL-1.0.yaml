@@ -4,6 +4,7 @@
 canonicalName: "CDDL 1.0"
 category: "CDDL"
 spdxIdentifier: "CDDL-1.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0"

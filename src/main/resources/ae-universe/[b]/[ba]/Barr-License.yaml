@@ -4,6 +4,7 @@
 canonicalName: "Barr License"
 category: "Barr"
 spdxIdentifier: "Barr"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Barr License"

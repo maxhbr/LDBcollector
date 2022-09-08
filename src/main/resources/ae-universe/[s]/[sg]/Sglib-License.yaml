@@ -1,12 +1,13 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "Linking Exception"
-category: "Linking Exception"
-shortName: "Linking-Exception"
+canonicalName: "Sglib License"
+category: "Sglib License"
+shortName: "Sglib"
 
 alternativeNames:
-  - "musl attribution exception"
+  - "http://www.xref-tech.com/sglib/"
+  - "Sglib License"
 
 otherIds: 
-  - "scancode:musl-exception"
+  - "scancode:sglib"

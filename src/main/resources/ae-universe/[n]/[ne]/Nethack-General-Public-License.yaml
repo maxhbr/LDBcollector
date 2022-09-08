@@ -4,6 +4,7 @@
 canonicalName: "Nethack General Public License"
 category: "Nethack General Public License"
 spdxIdentifier: "NGPL"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "NETHACK GENERAL PUBLIC LICENSE"

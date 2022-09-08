@@ -4,6 +4,7 @@
 canonicalName: "FSF Unlimited License (with retention)"
 category: "FSF Unlimited"
 spdxIdentifier: "FSFULLR"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "This file is free software; the Free Software Foundation gives unlimited permission to copy and/or distribute it"

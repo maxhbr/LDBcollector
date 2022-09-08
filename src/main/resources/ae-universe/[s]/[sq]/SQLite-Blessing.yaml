@@ -4,6 +4,7 @@
 canonicalName: "SQLite Blessing"
 category: "Public Domain"
 spdxIdentifier: "blessing"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "SQLite Blessing"

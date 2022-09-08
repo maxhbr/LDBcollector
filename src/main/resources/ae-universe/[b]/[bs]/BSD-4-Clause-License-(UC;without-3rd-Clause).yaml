@@ -5,6 +5,7 @@ canonicalName: "BSD 4-Clause License (UC; without 3rd Clause)"
 category: "BSD"
 shortName: "BSD-4-Clause-UC"
 spdxIdentifier: "BSD-4-Clause-UC"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "BSD 4-Clause (University of California-Specific)"

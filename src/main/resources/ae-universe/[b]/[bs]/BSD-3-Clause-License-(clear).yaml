@@ -4,6 +4,7 @@
 canonicalName: "BSD 3-Clause License (clear)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-Clear"
+openCoDEStatus: "not approved"
 
 alternativeNames:
   - "BSD-3-Clause-Clear"

@@ -4,6 +4,7 @@
 canonicalName: "Artistic License 1.0 (Perl)"
 category: "Artistic License"
 spdxIdentifier: "Artistic-1.0-Perl"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Artistic Perl License"

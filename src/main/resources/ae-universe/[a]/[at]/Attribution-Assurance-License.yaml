@@ -4,6 +4,7 @@
 canonicalName: "Attribution Assurance License"
 category: "AAL"
 spdxIdentifier: "AAL"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Attribution Assurance License"

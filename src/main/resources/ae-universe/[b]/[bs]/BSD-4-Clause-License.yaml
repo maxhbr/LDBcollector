@@ -4,6 +4,7 @@
 canonicalName: "BSD 4-Clause License"
 category: "BSD"
 spdxIdentifier: "BSD-4-Clause"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "BSD 4-Clause"

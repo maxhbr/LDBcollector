@@ -4,6 +4,7 @@
 canonicalName: "BSD Zero Clause License"
 category: "BSD"
 spdxIdentifier: "0BSD"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "BSD Zero Clause License"

@@ -4,6 +4,7 @@
 canonicalName: "XSkat License"
 category: "XSkat"
 spdxIdentifier: "XSkat"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "XSkat License"

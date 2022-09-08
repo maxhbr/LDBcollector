@@ -4,6 +4,7 @@
 canonicalName: "Carnegie Mellon UC Regents MIT-style License"
 category: "Carnegie Mellon UC Regents MIT-style License"
 spdxIdentifier: "MIT-CMU"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "cmu-mit"

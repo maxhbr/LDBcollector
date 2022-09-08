@@ -4,6 +4,7 @@
 canonicalName: "TOSL"
 category: "TOSL"
 spdxIdentifier: "TOSL"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "TOSL"

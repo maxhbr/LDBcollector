@@ -4,6 +4,7 @@
 canonicalName: "bzip2 License 1.0.6"
 category: "bzip2"
 spdxIdentifier: "bzip2-1.0.6"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "bzip2-1.0.6"

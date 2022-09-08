@@ -5,6 +5,7 @@ canonicalName: "GNU General Public License 1.0 (or any later version)"
 category: "GPL"
 shortName: "GPL-1.0+"
 spdxIdentifier: "GPL-1.0-or-later"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "GNU General Public License, Version 1.0+"

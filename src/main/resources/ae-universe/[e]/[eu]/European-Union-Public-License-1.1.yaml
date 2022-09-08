@@ -4,6 +4,7 @@
 canonicalName: "European Union Public License 1.1"
 category: "EUPL"
 spdxIdentifier: "EUPL-1.1"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "EUPL Version 1.1"

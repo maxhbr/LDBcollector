@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Open Motif Exception"
+category: "Open Motif Exception"
+shortName: "Open-Motif-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Open Motif exception to GPL 2.0 or later"
+
+otherIds: 
+  - "scancode:openmotif-exception-2.0-plus"

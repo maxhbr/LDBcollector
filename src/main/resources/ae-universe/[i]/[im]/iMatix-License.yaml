@@ -4,6 +4,7 @@
 canonicalName: "iMatix License"
 category: "iMatix"
 spdxIdentifier: "iMatix"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "iMatix License"

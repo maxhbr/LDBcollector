@@ -4,6 +4,7 @@
 canonicalName: "Historical Permission Notice and Disclaimer"
 category: "Historical Permission"
 spdxIdentifier: "HPND"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Historic Permission Notice and Disclaimer"

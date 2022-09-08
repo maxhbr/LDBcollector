@@ -4,6 +4,7 @@
 canonicalName: "Open Market License"
 category: "OML"
 spdxIdentifier: "OML"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "OM License"

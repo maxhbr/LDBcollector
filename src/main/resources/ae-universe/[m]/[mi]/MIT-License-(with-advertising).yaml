@@ -4,6 +4,7 @@
 canonicalName: "MIT License (with advertising)"
 category: "MIT"
 spdxIdentifier: "MIT-advertising"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "MIT advertising License"

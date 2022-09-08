@@ -4,6 +4,7 @@
 canonicalName: "ImageMagick License"
 category: "ImageMagick"
 spdxIdentifier: "ImageMagick"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "ImageMagick License"

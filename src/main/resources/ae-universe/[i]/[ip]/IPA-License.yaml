@@ -4,6 +4,7 @@
 canonicalName: "IPA License"
 category: "IPA"
 spdxIdentifier: "IPA"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "IPA License"

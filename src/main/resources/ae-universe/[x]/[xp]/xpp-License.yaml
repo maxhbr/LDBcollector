@@ -4,6 +4,7 @@
 canonicalName: "xpp License"
 category: "xpp"
 spdxIdentifier: "xpp"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "xpp License"

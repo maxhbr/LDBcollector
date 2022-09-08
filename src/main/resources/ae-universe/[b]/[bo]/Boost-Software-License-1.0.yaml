@@ -4,6 +4,7 @@
 canonicalName: "Boost Software License 1.0"
 category: "BSL"
 spdxIdentifier: "BSL-1.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "BSL-1.0"

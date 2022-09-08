@@ -4,6 +4,7 @@
 canonicalName: "Eclipse Public License 2.0"
 category: "EPL"
 spdxIdentifier: "EPL-2.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Eclipse Public License (EPL) v2.0"

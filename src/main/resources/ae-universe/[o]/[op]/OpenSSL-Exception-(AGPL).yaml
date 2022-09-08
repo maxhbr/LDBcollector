@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "OpenSSL Exception (AGPL)"
+category: "OpenSSL Exception AGPL"
+shortName: "OpenSSL-Exception-AGPL"
+
+type: "exception"
+
+alternativeNames:
+  - "OpenSSL exception to AGPL 3.0 - Monit style"
+
+otherIds: 
+  - "scancode:openssl-exception-agpl-3.0-monit"

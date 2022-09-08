@@ -4,6 +4,7 @@
 canonicalName: "PHP License 3.01"
 category: "PHP"
 spdxIdentifier: "PHP-3.01"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "PHP, Version 3.01"

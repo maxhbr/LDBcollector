@@ -5,6 +5,7 @@ canonicalName: "PNG Reference Library License 1.0"
 category: "Libpng"
 shortName: "Libpng-1.0"
 spdxIdentifier: "Libpng"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "PNG Reference Library License 1"

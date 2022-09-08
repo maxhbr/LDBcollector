@@ -4,6 +4,7 @@
 canonicalName: "LPL 1.0"
 category: "LPL"
 spdxIdentifier: "LPL-1.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "LPL, Version 1.0"

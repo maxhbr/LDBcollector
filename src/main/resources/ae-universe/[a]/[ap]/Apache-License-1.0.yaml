@@ -4,6 +4,7 @@
 canonicalName: "Apache License 1.0"
 category: "Apache License"
 spdxIdentifier: "Apache-1.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Apache License Version 1.0"

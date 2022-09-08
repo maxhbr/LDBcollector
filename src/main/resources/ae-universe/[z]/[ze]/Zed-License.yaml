@@ -4,6 +4,7 @@
 canonicalName: "Zed License"
 category: "Zed"
 spdxIdentifier: "Zed"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Zed License"

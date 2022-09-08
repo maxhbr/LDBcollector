@@ -4,6 +4,7 @@
 canonicalName: "SNIA License"
 category: "SNIA"
 spdxIdentifier: "SNIA"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "SNIA License"

@@ -4,6 +4,7 @@
 canonicalName: "Creative Commons BY-NC-SA 1.0 (generic)"
 category: "CC-BY-NC-SA"
 spdxIdentifier: "CC-BY-NC-SA-1.0"
+openCoDEStatus: "not approved"
 
 alternativeNames:
   - "Creative Commons Attribution Non Commercial Share Alike 1.0 Generic"

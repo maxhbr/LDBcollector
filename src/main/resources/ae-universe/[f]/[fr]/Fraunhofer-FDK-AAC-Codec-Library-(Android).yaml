@@ -4,6 +4,7 @@
 canonicalName: "Fraunhofer FDK AAC Codec Library (Android)"
 category: "Fraunhofer FDK AAC Codec Library"
 spdxIdentifier: "FDK-AAC"
+openCoDEStatus: "not approved"
 
 alternativeNames:
   - "http://opencore-amr.git.sourceforge.net/git/gitweb.cgi?p=opencore-amr/fdk-aac;a=blob;f=NOTICE"

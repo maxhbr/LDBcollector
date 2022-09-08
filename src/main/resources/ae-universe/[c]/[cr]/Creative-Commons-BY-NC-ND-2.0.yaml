@@ -4,9 +4,10 @@
 canonicalName: "Creative Commons BY-NC-ND 2.0"
 category: "CC-BY-NC-ND"
 spdxIdentifier: "CC-BY-NC-ND-2.0"
+openCoDEStatus: "not approved"
 
 alternativeNames:
-  - "Creative Commons BY-NC-ND 2.0 (generic)"
+  - "Creative Commons BY-NC-ND 2.0"
   - "Creative Commons Attribution Non Commercial No Derivatives 2.0 Generic"
   - "CC-BY-NC-ND-2.0"
   - "Creative Commons Attribution-NonCommercial-NoDerivs 2.0"

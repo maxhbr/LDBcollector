@@ -4,6 +4,7 @@
 canonicalName: "ICU License"
 category: "ICU"
 spdxIdentifier: "ICU"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "ICU License"

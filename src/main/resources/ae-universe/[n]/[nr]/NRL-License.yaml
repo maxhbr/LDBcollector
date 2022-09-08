@@ -4,6 +4,7 @@
 canonicalName: "NRL License"
 category: "NRL"
 spdxIdentifier: "NRL"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "NRL License"

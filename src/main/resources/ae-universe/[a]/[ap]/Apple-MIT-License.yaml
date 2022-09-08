@@ -4,6 +4,7 @@
 canonicalName: "Apple MIT License"
 category: "AML"
 spdxIdentifier: "AML"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Apple MIT License"

@@ -4,6 +4,7 @@
 canonicalName: "Mup License"
 category: "Mup"
 spdxIdentifier: "Mup"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Mup License"

@@ -4,6 +4,7 @@
 canonicalName: "ISC License"
 category: "ISC"
 spdxIdentifier: "ISC"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "ISC License"

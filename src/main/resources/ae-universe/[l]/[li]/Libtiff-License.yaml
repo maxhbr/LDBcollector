@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Libtiff License"
+category: "BSD"
+spdxIdentifier: "libtiff"
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "Permission Terms (SL)"
+
+otherIds: 
+  - "scancode:x11-tiff"

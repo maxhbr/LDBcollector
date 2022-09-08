@@ -4,6 +4,7 @@
 canonicalName: "Creative Commons BY-SA 4.0"
 category: "CC-BY-SA"
 spdxIdentifier: "CC-BY-SA-4.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Creative Commons Attribution-ShareAlike 4.0"

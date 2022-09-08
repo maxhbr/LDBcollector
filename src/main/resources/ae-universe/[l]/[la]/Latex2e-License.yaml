@@ -4,6 +4,7 @@
 canonicalName: "Latex2e License"
 category: "Latex2e"
 spdxIdentifier: "Latex2e"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Latex2e License"

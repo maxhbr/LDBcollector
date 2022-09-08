@@ -4,6 +4,7 @@
 canonicalName: "NLPL"
 category: "NLPL"
 spdxIdentifier: "NLPL"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "NO LIMIT PUBLIC LICENSE"

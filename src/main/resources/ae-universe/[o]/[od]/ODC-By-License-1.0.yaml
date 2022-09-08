@@ -4,6 +4,7 @@
 canonicalName: "ODC By License 1.0"
 category: "ODC By"
 spdxIdentifier: "ODC-By-1.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "ODC By, Version 1.0"

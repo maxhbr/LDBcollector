@@ -4,6 +4,7 @@
 canonicalName: "Beerware License"
 category: "Beerware"
 spdxIdentifier: "Beerware"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Beerware"

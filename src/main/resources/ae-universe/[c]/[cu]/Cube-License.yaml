@@ -4,6 +4,7 @@
 canonicalName: "Cube License"
 category: "Cube"
 spdxIdentifier: "Cube"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Cube License"

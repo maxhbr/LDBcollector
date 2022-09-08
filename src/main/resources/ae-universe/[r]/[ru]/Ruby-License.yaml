@@ -4,6 +4,7 @@
 canonicalName: "Ruby License"
 category: "Ruby"
 spdxIdentifier: "Ruby"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "Ruby License"

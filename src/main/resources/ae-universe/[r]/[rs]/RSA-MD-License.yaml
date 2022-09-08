@@ -4,6 +4,7 @@
 canonicalName: "RSA MD License"
 category: "RSA MD"
 spdxIdentifier: "RSA-MD"
+openCoDEStatus: "not approved"
 
 alternativeNames:
   - "RSA MD License"

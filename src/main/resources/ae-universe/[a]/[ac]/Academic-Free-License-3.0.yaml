@@ -4,6 +4,7 @@
 canonicalName: "Academic Free License 3.0"
 category: "AFL"
 spdxIdentifier: "AFL-3.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "AFL, Version 3.0"

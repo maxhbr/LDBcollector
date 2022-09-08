@@ -4,6 +4,7 @@
 canonicalName: "FreeBSD Documentation License"
 category: "FreeBSD Doc License"
 spdxIdentifier: "FreeBSD-DOC"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "FreeBSD Documentation License"

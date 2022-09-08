@@ -4,6 +4,7 @@
 canonicalName: "SCEA License"
 category: "SCEA"
 spdxIdentifier: "SCEA"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "SCEA License"

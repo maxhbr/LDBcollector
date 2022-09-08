@@ -4,6 +4,7 @@
 canonicalName: "DOC License"
 category: "DOC"
 spdxIdentifier: "DOC"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "DOC License"

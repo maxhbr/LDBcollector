@@ -4,6 +4,7 @@
 canonicalName: "QPL 1.0"
 category: "QPL"
 spdxIdentifier: "QPL-1.0"
+openCoDEStatus: "approved"
 
 alternativeNames:
   - "QPL, Version 1.0"

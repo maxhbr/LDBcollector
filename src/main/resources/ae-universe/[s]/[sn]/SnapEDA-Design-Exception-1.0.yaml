@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "SnapEDA Design Exception 1.0"
+category: "SnapEDA Design Exception 1.0"
+shortName: "SnapEDA-Design-Exception-1.0"
+
+type: "exception"
+
+alternativeNames:
+  - "SnapEDA Design Exception 1.0"
+
+otherIds: 
+  - "scancode:snapeda-design-exception-1.0"
