@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Libtool Exception (GPL)"
 category: "GPL Libtool Exception"
-shortName: "Libtool-Exception-GPl"
+shortName: "Libtool-Exception-GPL"
 spdxIdentifier: "Libtool-exception"
 
 type: "exception"
