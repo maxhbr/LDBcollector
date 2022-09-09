@@ -17,6 +17,7 @@ BuildRequires:  make
 BuildRequires:  python3
 %if 0%{?fedora} || 0%{?rhel} >= 9
 BuildRequires:  (python%{python3_pkgversion}-toml if python%{python3_pkgversion} < 3.11)
+BuildRequires:  python%{python3_pkgversion}-tomli-w
 %else
 BuildRequires:  python%{python3_pkgversion}-toml
 %endif
@@ -36,6 +37,23 @@ package checking tools.
 The Fedora Legal team is responsible for this project.
 
 
+%if 0%{?fedora} || 0%{?rhel} >= 10
+%package -n rpmlint-%{name}
+Summary:        Rpmlint configuration with valid license expressions
+# this package does not need to depend on the main one
+Requires:       rpmlint >= 2
+Supplements:    rpmlint >= 2
+
+%description -n rpmlint-%{name}
+This package contains information about licenses used in the Fedora
+Linux project. The licenses are stored in a way that makes rpmlint read it.
+Both the SPDX license expressions and the legacy (callaway) expressions are
+allowed.
+
+The Fedora Legal team is responsible for the content.
+%endif
+
+
 %prep
 %setup -q -n %{name}-%{version}
 
@@ -52,6 +70,16 @@ The Fedora Legal team is responsible for this project.
 %license LICENSE LICENSE.BSD-3-Clause LICENSE.CC0-1.0
 %doc AUTHORS README.md
 %{_datadir}/%{name}/
+
+
+%if 0%{?fedora} || 0%{?rhel} >= 10
+%files -n rpmlint-%{name}
+%license LICENSE.CC0-1.0
+%doc AUTHORS README.md
+%config(noreplace) %{_sysconfdir}/xdg/rpmlint/*.toml
+%else
+%exclude %{_sysconfdir}/xdg/rpmlint/*.toml
+%endif
 
 
 %changelog
