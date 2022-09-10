@@ -81,11 +81,8 @@ if __name__ == "__main__":
         if isinstance(status, str):
             status = [status]
 
-        for s in status:
-            if s in allowed_values:
-                approved = True
-            elif s == "not-allowed":
-                approved = False
+        if not status or any(s not in allowed_values for s in status):
+            continue
 
         # field: 'spdx_abbrev'
         spdx_abbrev = data["license"]["expression"]
@@ -97,15 +94,14 @@ if __name__ == "__main__":
             if "abbreviation" in fedora_keys:
                 fedora_abbrevs = data["fedora"]["abbreviation"]
 
-        if approved:
-            if spdx_abbrev:
-                spdx_abbrev, _, exception = spdx_abbrev.partition(" WITH ")
-                if exception:
-                    valid_exceptions_spdx.add(exception)
-                valid_licenses_spdx.add(spdx_abbrev)
-            # nb: remove this when we don't want the old licenses allowed by rmplint
-            for fedora_abbrev in fedora_abbrevs:
-                valid_licenses_legacy.add(fedora_abbrev)
+        if spdx_abbrev:
+            spdx_abbrev, _, exception = spdx_abbrev.partition(" WITH ")
+            if exception:
+                valid_exceptions_spdx.add(exception)
+            valid_licenses_spdx.add(spdx_abbrev)
+        # nb: remove this when we don't want the old licenses allowed by rmplint
+        for fedora_abbrev in fedora_abbrevs:
+            valid_licenses_legacy.add(fedora_abbrev)
 
     # write out the rpmlint toml files
     with open(outputfile_spdx, toml_w_mode) as f:
