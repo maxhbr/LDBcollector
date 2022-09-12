@@ -8,6 +8,7 @@ from itertools import groupby
 from django.http import HttpResponse
 from django.urls import reverse
 from django_filters import rest_framework as filters
+from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from junit_xml import TestCase, TestSuite, to_xml_report_string
 from rest_framework import viewsets, status
@@ -310,6 +311,29 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
         return Response(Validation5Serializer(response).data)
 
+    @swagger_auto_schema(
+        responses={
+            200: openapi.Response(
+                "An XML Junit report",
+                examples={
+                    "text/xml": """
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="4">
+    <testsuite disabled="0" errors="0" failures="1" name="Foobar" skipped="0" tests="4" time="0">
+        <testcase name="Usage normalization"/>
+        <testcase name="Licenses"/>
+        <testcase name="License choices"/>
+        <testcase name="Policy compatibility">
+            <failure type="failure" message="3 invalid component usages"/>
+        </testcase>
+    </testsuite>
+</testsuites>
+            """
+                },
+            )
+        },
+        operation_description="Returns an XML JUnit report, with one testsuite in which is validation step is a testcase.",
+    )
     @action(
         detail=True,
         methods=["get"],
