@@ -106,3 +106,11 @@ You can use an OAuth2 server as authentication backend by configuring
 OAUTH_CLIENT entry in the mysecrets.py file.
 
 Users will be created on the fly at authentication by the OAuth server.
+
+### Health check
+
+Hermine provides two test endpoints which you can use in your monitoring system.
+
+`/ping` always send a 200 response, and can be used to check server availability.
+
+`/ready` do the same but also tries to connect to Hermine database. It sends a 200 response if it succeeds.
