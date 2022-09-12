@@ -17,6 +17,11 @@ class OAuth2(BaseOAuth2):
     AUTHORIZATION_URL = settings.OAUTH_CLIENT["authorize_url"]
     ACCESS_TOKEN_URL = settings.OAUTH_CLIENT["access_token_url"]
     ID_KEY = settings.OAUTH_CLIENT.get("id_key", "id")
+    ACCESS_TOKEN_METHOD = settings.OAUTH_CLIENT.get("access_token_method", "POST")
+
+    # FIXME : override get_scope() OR redefine DEFAULT_SCOPE ?
+    def get_scope(self):
+        return settings.OAUTH_CLIENT.get("scope", "")
 
     def get_user_details(self, response):
         return settings.OAUTH_CLIENT["user_details"](response)
@@ -25,5 +30,5 @@ class OAuth2(BaseOAuth2):
         """Loads user data from service"""
         return self.get_json(
             settings.OAUTH_CLIENT["user_url"],
-            headers={"Authorization": f"token {access_token}"},
+            headers={"Authorization": f"bearer {access_token}"},
         )
