@@ -190,6 +190,27 @@ An example
             - uses: actions/upload-artifact@v2
 ```
 
+## JUnit
+
+A JUnit endpoint can be used at 'api/releases/int:release_id/junit/'.
+
+It returns a testsuite where each validation step is a testcase.
+
+Example :
+```xml
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="4">
+    <testsuite disabled="0" errors="0" failures="1" name="Foobar" skipped="0" tests="4" time="0">
+        <testcase name="Usage normalization"/>
+        <testcase name="Licenses"/>
+        <testcase name="License choices"/>
+        <testcase name="Policy compatibility">
+            <failure type="failure" message="3 invalid component usages"/>
+        </testcase>
+    </testsuite>
+</testsuites>
+```
+
 ## Generic obligations endpoints
 
 ```{py:function} GET api/generics/
