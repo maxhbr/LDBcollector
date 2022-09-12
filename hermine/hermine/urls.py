@@ -19,11 +19,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.db import connection, Error as DBError, OperationalError
+from django.http import HttpResponse, HttpResponseServerError
 from django.urls import include, path, re_path
-
-from rest_framework import permissions
-from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -38,8 +39,24 @@ schema_view = get_schema_view(
     permission_classes=(permissions.IsAuthenticated,),
 )
 
+
+def ready(r):
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute("SELECT 1;")
+            row = cursor.fetchone()
+            if row is None:
+                return HttpResponseServerError("Database: invalid response")
+    except DBError:
+        return HttpResponseServerError("Database: cannot connect")
+
+    return HttpResponse("OK")
+
+
 urlpatterns = [
     path("", include("cube.urls")),
+    path("ping/", lambda r: HttpResponse("OK")),
+    path("ready/", ready),
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
     path("oauth/", include("social_django.urls", namespace="social")),
