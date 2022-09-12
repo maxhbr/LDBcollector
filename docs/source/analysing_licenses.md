@@ -72,9 +72,16 @@ For instance, in the BSD-3-Clause, the following obligation is passive:
 
 #### Triggers of the obligation
 
-- Exploitation:
+An active obligation can be triggered by the combination of two factors. The first one is related to the exploitation of the software, the second one to its modification status. 
 
-- Modification:
+- **Exploitation**: This indicates if the obligations for the following 
+  - Distribution as source code
+  - Distribution as non source form
+  - Providing access through the network  
+
+If an obligation is triggered by two different types of exploitation, you'll have to create two instances of this obligation, one for each triggering scenario.
+
+- **Modification**: This indicates if the obligations applies only if the component is modified, only if it is not modified or in both cases.
 
 ### Generic obligations
 
