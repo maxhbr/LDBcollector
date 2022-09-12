@@ -1,0 +1,15 @@
+[license]
+expression = "GPL-2.0-or-later WITH x11vnc-openssl-exception"
+status = [ "allowed" ]
+url = '''
+https://spdx.org/licenses/x11vnc-openssl-exception.html
+https://raw.githubusercontent.com/LibVNC/x11vnc/af63109a17f1b1ec8b1e332d215501f11c4a33a0/src/cleanup.c
+'''
+
+[fedora]
+name = [
+    "GNU General Public License v2.0 or later, with exceptions"
+]
+abbreviation = [
+    "GPLv2+ with exceptions"
+]
