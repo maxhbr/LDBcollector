@@ -176,7 +176,10 @@ def propagate_choices(release: Release):
 
     resolved = {
         usage
-        for usage in release.usage_set.all().exclude(license_expression="")
+        for usage in release.usage_set.all()
+        .select_related("version", "version__component")
+        .prefetch_related("licenses_chosen")
+        .exclude(license_expression="")
         if has_ors(
             usage.version.effective_license
         )  # we want to list only usages for which a choice was actually necessary

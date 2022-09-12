@@ -45,6 +45,18 @@ class ReleaseView(LoginRequiredMixin, generic.DetailView):
     model = Release
     template_name = "cube/release.html"
 
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .prefetch_related(
+                "usage_set",
+                "usage_set__version",
+                "usage_set__version__component",
+                "usage_set__licenses_chosen",
+            )
+        )
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
