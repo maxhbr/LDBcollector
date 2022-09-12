@@ -44,4 +44,4 @@ then
   f_log "create superuser if none exists with $USER"
   python ./manage.py createsuperuser_if_none_exists --user="$USER" --password="$PASSWORD"
 fi
-python -m gunicorn hermine.wsgi -b 0.0.0.0:"$PORT"
+python -m gunicorn hermine.wsgi -b 0.0.0.0:"$PORT" -t 120
