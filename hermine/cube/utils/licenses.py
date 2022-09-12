@@ -4,12 +4,11 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
 import logging
-import re
+from functools import lru_cache
 from typing import Iterable, List
 
-from license_expression import get_spdx_licensing, BaseSymbol
-
 from django.db import transaction
+from license_expression import get_spdx_licensing, BaseSymbol
 
 from cube.models import License, Obligation
 from cube.serializers import LicenseSerializer
@@ -18,6 +17,7 @@ logger = logging.getLogger(__name__)
 licensing = get_spdx_licensing()
 
 
+@lru_cache(maxsize=1024)
 def has_ors(spdx_expression: str):
     parsed = licensing.parse(spdx_expression)
 
@@ -34,6 +34,7 @@ def has_ors(spdx_expression: str):
     return False
 
 
+@lru_cache(maxsize=1024)
 def is_ambiguous(spdx_expression: str):
     """
     Because of unreliable metadata, many "Licence1 AND Licence2" expressions
@@ -135,6 +136,7 @@ def get_licenses_to_check_or_create(release):
     return response
 
 
+@lru_cache(maxsize=1024)
 def explode_spdx_to_units(spdx_expr: str) -> List[str]:
     """Extract a list of every license from a SPDX valid expression.
 
