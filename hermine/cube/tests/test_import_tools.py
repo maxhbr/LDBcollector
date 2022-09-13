@@ -6,7 +6,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from cube.importers import import_spdx_file
-from cube.models import Generic, Usage, LINKING_PACKAGE, License
+from cube.models import Generic, Usage, License
 from cube.utils.generics import export_generics, handle_generics_json
 from cube.utils.licenses import (
     create_or_update_license,
@@ -130,7 +130,7 @@ class ImportSBOMTestCase(TestCase):
 
     def test_import_spdx_file(self):
         with open("../testfiles/venom_short.spdx.yaml") as f:
-            import_spdx_file(f, 1, defaults={"linking": LINKING_PACKAGE})
+            import_spdx_file(f, 1, defaults={"linking": Usage.LINKING_PACKAGE})
         usage = Usage.objects.get(
             version__component__name="github.com/gorilla/websocket",
             version__version_number="v1.4.2",
@@ -139,7 +139,7 @@ class ImportSBOMTestCase(TestCase):
             usage.release.pk,
             1,
         )
-        self.assertEqual(usage.linking, LINKING_PACKAGE)
+        self.assertEqual(usage.linking, Usage.LINKING_PACKAGE)
 
         with open("../testfiles/venom_short.spdx.yaml") as f:
             import_spdx_file(f, 1, replace=False)
