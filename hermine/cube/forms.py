@@ -9,7 +9,7 @@ from django import forms
 from django.core.exceptions import ValidationError
 from rest_framework import serializers
 
-from .models import Release, LINKING_CHOICES
+from .models import Release, Usage
 from .utils.generics import handle_generics_json
 from .utils.licenses import handle_licenses_json
 
@@ -72,7 +72,7 @@ class ImportBomForm(forms.ModelForm):
         choices=IMPORT_MODE_CHOICES, widget=forms.RadioSelect
     )
     linking = forms.ChoiceField(
-        choices=((None, "---"), *LINKING_CHOICES),
+        choices=((None, "---"), *Usage.LINKING_CHOICES),
         required=False,
         initial=None,
         label="Components linking",
