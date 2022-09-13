@@ -15,7 +15,6 @@ from cube.models import (
     Component,
     Version,
     Derogation,
-    LINKING_CHOICES,
     LicenseChoice,
 )
 
@@ -466,14 +465,14 @@ class UploadSPDXSerializer(serializers.Serializer):
     spdx_file = serializers.FileField()
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
-    linking = serializers.ChoiceField(choices=LINKING_CHOICES, required=False)
+    linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
 
 
 class UploadORTSerializer(serializers.Serializer):
     ort_file = serializers.FileField()
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
-    linking = serializers.ChoiceField(choices=LINKING_CHOICES, required=False)
+    linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
 
 
 class NormalisedLicensesSerializer(serializers.Serializer):

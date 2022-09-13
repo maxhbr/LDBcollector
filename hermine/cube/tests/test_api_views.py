@@ -6,9 +6,8 @@ from django.urls import reverse
 from rest_framework.test import APITestCase as BaseAPITestCase
 
 from cube.models import (
-    LINKING_PACKAGE,
     Version,
-    LicenseChoice,
+    Usage,
     Derogation,
     ExpressionValidation,
 )
@@ -262,7 +261,7 @@ class ReleaseStepsAPITestCase(APITestCase):
                     "spdx_file": sbom_file,
                     "release": 1,
                     "replace": False,
-                    "linking": LINKING_PACKAGE,
+                    "linking": Usage.LINKING_PACKAGE,
                 },
                 format="multipart",
             )
