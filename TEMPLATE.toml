@@ -1,3 +1,6 @@
+# Copyright Fedora License Data Project Authors.
+# SPDX-License-Identifier: CC0-1.0
+
 # Each file provides information about a single allowed or not-allowed
 # license.  The file format is TOML and the sections are
 # described below.  For information on the TOML standard, see

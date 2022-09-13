@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 # vim:expandtab:autoindent:tabstop=4:shiftwidth=4:filetype=python:textwidth=0:
 
+# Copyright Fedora License Data Project Authors.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
 import argparse
 import jinja2
 import json
