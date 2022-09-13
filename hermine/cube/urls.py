@@ -5,7 +5,6 @@
 
 from django.urls import path, include
 from rest_framework.authtoken import views as authviews
-from rest_framework.routers import DefaultRouter
 from rest_framework_nested import routers
 
 from . import views, api_views
@@ -95,7 +94,9 @@ router.register(r"choices", api_views.LicenseChoiceViewSet, basename="choices")
 
 obligation_router = routers.NestedSimpleRouter(router, r"licenses")
 obligation_router.register(
-    r"obligations", api_views.ObligationViewSet, basename="license-obligations"
+    r"obligations",
+    api_views.ObligationViewSet,
+    basename="license-obligations",
 )
 
 product_router = routers.NestedSimpleRouter(router, r"products")
