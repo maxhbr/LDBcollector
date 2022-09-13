@@ -23,15 +23,15 @@ SPDX-License-Identifier: AGPL-3.0-only
 <div class="tabs is-centered is-boxed is-medium">
   <ul>
     <li>
-      <a href="/release/{{object.id}}">
-        <span class="icon is-small"><i class="fas fa-check-double" aria-hidden="true"></i></span>
-        <span>Validation steps</span>
+      <a href="/release/{{object.id}}/summary">
+        <span class="icon is-small"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
+        <span>Summary</span>
       </a>
     </li>
     <li>
-      <a href="/release/{{object.id}}/exploitation">
-        <span class="icon is-small"><i class="fas fa-handshake" aria-hidden="true"></i></span>
-        <span>Exploitation</span>
+      <a href="/release/{{object.id}}">
+        <span class="icon is-small"><i class="fas fa-check-double" aria-hidden="true"></i></span>
+        <span>Validation steps</span>
       </a>
     </li>
     <li class="is-active">
@@ -49,43 +49,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   </ul>
 </div>
 
-<div class="card">
-  <div class="card-content">
-    <h3>Import BOM</h3>
-    {% if import_status == "error" %}
-      <article class="message is-danger">
-        <div class="message-header">
-          <p>Failure</p>
-        </div>
-        <div class="message-body">
-          <span class="icon has-text-danger"><i class="fas fa-exclamation-triangle"></i></span> The file you chose does not match the format you chose.
-        </div>
-      </article>
-    {% elif import_status == "success" %}
-      <article class="message is-success">
-        <div class="message-header">
-          <p>Success</p>
-        </div>
-        <div class="message-body">
-          <span class="icon has-text-success"><i class="fas fa-check-box"></i></span>
-          You successfully uploaded your file.
-          Go check the validation steps you need to achieve at the relevant
-          <b><a href="{% url 'cube:release_detail' release.id %}"> release page</a></b>.
-        </div>
-      </article>
-    {% endif %}
-    <form action="{% url 'cube:release_bom' release.id %}" enctype="multipart/form-data" method="post">
-      {% csrf_token %}
-      <table>
-        {{ form }}
-        <tr>
-          <td></td>
-          <td><button class="button is-primary">Import now</button></td>
-        </tr>
-      </table>
-    </form>
-  </div>
-</div>
+
 
 <table class="table">
   <thead>
