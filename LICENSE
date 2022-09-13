@@ -1,10 +1,7 @@
 The license data files in this project (e.g., the *.toml files and
-other files describing license information) are licensed under the
-Creative Commons Zero v1.0 Universal terms as described in the
-LICENSE.CC0-1.0 file.  The SPDX identifier for this license is
-CC0-1.0.
+other files describing license information) are released under CC0.
+See LICENSES/CC0-1.0.txt.
 
 Scripts, code, and other programs in this project are licensed under
-the BSD 3-Clause "New" or "Revised" License terms as described in
-LICENSE.BSD-3-Clause.  The SPDX identifier for this license is
-BSD-3-Clause.
+the 3-clause BSD license. See LICENSES/BSD-3-Clause.txt.
+
