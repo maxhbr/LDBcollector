@@ -14,7 +14,7 @@ from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views import generic
 from django.views.decorators.http import require_POST
-from django.views.generic import UpdateView
+from django.views.generic import UpdateView, DetailView
 
 from cube.forms import ImportBomForm
 from cube.importers import import_ort_evaluated_model_json_file, import_spdx_file
@@ -168,16 +168,16 @@ class ReleaseExploitationForm(Form):
         return self.release
 
 
-class ReleaseExploitationView(UpdateView):
+class ReleaseSummaryView(LoginRequiredMixin, UpdateView):
     model = Release
     context_object_name = "release"
-    template_name = "cube/release_exploitation.html"
+    template_name = "cube/release_summary.html"
     form_class = ReleaseExploitationForm
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         form = context.pop("form")
-        context["scopes"] = [
+        context["exploitation_form"] = [  # only way to loop properly
             {
                 "project": project,
                 "scope": scope,
@@ -186,10 +186,12 @@ class ReleaseExploitationView(UpdateView):
             }
             for (project, scope, count) in form.scopes
         ]
+        context["bom_form"] = ImportBomForm()
+
         return context
 
     def get_success_url(self):
-        return reverse("cube:release_exploitation", args=[self.object.pk])
+        return reverse("cube:release_summary", args=[self.object.pk])
 
 
 @method_decorator(require_POST, "dispatch")
@@ -206,7 +208,7 @@ class UpdateLicenseChoiceView(UpdateView):
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        return reverse("cube:release_detail", kwargs={"pk": self.object.release.pk})
+        return reverse("cube:release_summary", kwargs={"pk": self.object.release.pk})
 
 
 @login_required
@@ -268,5 +270,5 @@ def release_send_derogation(request, release_id, usage_id):
         )
         derogation.save()
 
-    response = redirect("cube:release_detail", release_id)
+    response = redirect("cube:release_validation", release_id)
     return response

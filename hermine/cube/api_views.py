@@ -239,7 +239,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
         response["valid"], context = validate_step_1(release)
         response["unnormalized_usages"] = context["unnormalized_usages"]
-        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
+        response["details"] = reverse(
+            "cube:release_validation", kwargs={"pk": release.pk}
+        )
 
         return Response(Validation1Serializer(response).data)
 
@@ -256,7 +258,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
         response["valid"], context = validate_step_2(release)
         response.update(context)
-        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
+        response["details"] = reverse(
+            "cube:release_validation", kwargs={"pk": release.pk}
+        )
 
         return Response(Validation2Serializer(response).data)
 
@@ -273,7 +277,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
         response["valid"], context = validate_step_3(release)
         response["to_confirm"] = context["to_confirm"]
-        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
+        response["details"] = reverse(
+            "cube:release_validation", kwargs={"pk": release.pk}
+        )
 
         return Response(Validation3Serializer(response).data)
 
@@ -290,7 +296,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
         response["valid"], context = validate_step_4(release)
         response.update(context)
-        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
+        response["details"] = reverse(
+            "cube:release_validation", kwargs={"pk": release.pk}
+        )
 
         return Response(Validation4Serializer(response).data)
 
@@ -307,7 +315,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
         response["valid"], context = validate_step_5(release)
         response.update(context)
-        response["details"] = reverse("cube:release_detail", kwargs={"pk": release.pk})
+        response["details"] = reverse(
+            "cube:release_validation", kwargs={"pk": release.pk}
+        )
 
         return Response(Validation5Serializer(response).data)
 
