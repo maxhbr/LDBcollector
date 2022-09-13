@@ -69,7 +69,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <p>This component is used in the following releases of your products:</p>
     <ul>
       {% for usage in version.usage_set.all %}
-        <li><a href="{% url 'cube:release_detail' usage.release.id %}"> <strong>{{ usage.release.product.name }}</strong> : {{ usage.release.release_number }} </a> </li>
+        <li><a href="{% url 'cube:release_summary' usage.release.id %}"> <strong>{{ usage.release.product.name }}</strong> : {{ usage.release.release_number }} </a> </li>
       {% endfor %}
     </ul>
   {% endfor %}

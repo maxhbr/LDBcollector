@@ -96,38 +96,15 @@ SPDX-License-Identifier: AGPL-3.0-only
         </p>
       </header>
       <div class="card-content">
-        {% if import_status == "error" %}
-      <article class="message is-danger">
-        <div class="message-header">
-          <p>Failure</p>
-        </div>
-        <div class="message-body">
-          <span class="icon has-text-danger"><i class="fas fa-exclamation-triangle"></i></span> The file you chose does not match the format you chose.
-        </div>
-      </article>
-    {% elif import_status == "success" %}
-      <article class="message is-success">
-        <div class="message-header">
-          <p>Success</p>
-        </div>
-        <div class="message-body">
-          <span class="icon has-text-success"><i class="fas fa-check-box"></i></span>
-          You successfully uploaded your file.
-          Go check the validation steps you need to achieve at the relevant
-          <b><a href="{% url 'cube:release_detail' release.id %}"> release page</a></b>.
-        </div>
-      </article>
-    {% endif %}
-    <form action="{% url 'cube:release_bom' release.id %}" enctype="multipart/form-data" method="post">
-      {% csrf_token %}
-      <table>
-        {{ form }}
-        <tr>
-          <td></td>
-          <td><button class="button is-primary">Import now</button></td>
-        </tr>
-      </table>
-    </form>
+        <form action="{% url 'cube:release_bom' release.id %}" enctype="multipart/form-data" method="post">
+          {% csrf_token %}
+          <table>
+            {{ bom_form }}
+            <tr>
+              <td></td>
+              <td><button class="button is-primary">Import now</button></td>
+            </tr>
+          </table>
         </form>
       </div>
     </div>
@@ -141,7 +118,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </p>
   </header>
   <div class="card-content">
-    <form action="{% url "cube:release_exploitation" release.id %}" method="POST">
+    <form action="{% url "cube:release_summary" release.id %}" method="POST">
     <table>
       <thead>
           <tr>
@@ -153,7 +130,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       </thead>
       <tbody>
           {% csrf_token %}
-          {% for scope in scopes %}
+          {% for scope in exploitation_form %}
             <tr>
               <td>{{ scope.project }}</td>
               <td>{{ scope.scope }}</td>
@@ -162,8 +139,6 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ scope.field.errors }}
             </tr>
           {% endfor %}
-
-
         </tbody>
       <tr>
         <td></td>

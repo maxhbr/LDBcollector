@@ -33,9 +33,13 @@ urlpatterns = [
     path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
     path("export/licenses/", views.export_licenses, name="export_licenses"),
     path("export/generics/", views.export_generics, name="export_generics"),
-    path("release/<int:pk>/", views.ReleaseView.as_view(), name="release_detail"),
     path(
-        "release/<int:pk>/summary/",
+        "release/<int:pk>/validation/",
+        views.ReleaseView.as_view(),
+        name="release_validation",
+    ),
+    path(
+        "release/<int:pk>/",
         views.ReleaseSummaryView.as_view(),
         name="release_summary",
     ),
@@ -62,11 +66,6 @@ urlpatterns = [
         "release/update_license_choice/<int:pk>/",
         views.UpdateLicenseChoiceView.as_view(),
         name="usage_update_license_choice",
-    ),
-    path(
-        "release/<int:pk>/exploitation/",
-        views.ReleaseExploitationView.as_view(),
-        name="release_exploitation",
     ),
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("api/token-auth/", authviews.obtain_auth_token),
