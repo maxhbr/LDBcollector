@@ -9,12 +9,11 @@
 # https://stackoverflow.com/questions/53835198/integrating-python-poetry-with-docker
 # https://bmaingret.github.io/blog/2021-11-15-Docker-and-Poetry
 
-FROM bitnami/python:3.10.0
+FROM bitnami/python:3.10
 
 ARG APP_NAME=hermine
 ARG APP_PATH=/opt/$APP_NAME
-ARG PYTHON_VERSION=3.10.0
-ARG POETRY_VERSION=1.1.12
+ARG POETRY_VERSION=1.2.0
 ARG DEFAULT_PORT=8080
 
 ENV \
