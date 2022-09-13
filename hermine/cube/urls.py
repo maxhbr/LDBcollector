@@ -34,7 +34,11 @@ urlpatterns = [
     path("export/licenses/", views.export_licenses, name="export_licenses"),
     path("export/generics/", views.export_generics, name="export_generics"),
     path("release/<int:pk>/", views.ReleaseView.as_view(), name="release_detail"),
-    path("release/<int:pk>/summary/", views.ReleaseSummaryView.as_view(), name="release_summary"),
+    path(
+        "release/<int:pk>/summary/",
+        views.ReleaseSummaryView.as_view(),
+        name="release_summary",
+    ),
     path("release/<int:pk>/bom/", views.ReleaseBomView.as_view(), name="release_bom"),
     path(
         "release/<int:pk>/obligations/", views.ReleaseObligView.as_view(), name="oblig"

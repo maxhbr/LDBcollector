@@ -191,6 +191,7 @@ class ReleaseExploitationView(UpdateView):
     def get_success_url(self):
         return reverse("cube:release_exploitation", args=[self.object.pk])
 
+
 class ReleaseSummaryView(UpdateView):
     model = Release
     context_object_name = "release"
@@ -213,7 +214,6 @@ class ReleaseSummaryView(UpdateView):
 
     def get_success_url(self):
         return reverse("cube:release_exploitation", args=[self.object.pk])
-
 
 
 @method_decorator(require_POST, "dispatch")
