@@ -5,8 +5,6 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-from cube.models import Usage
-
 
 class Product(models.Model):
     """
@@ -74,6 +72,8 @@ class Exploitation(models.Model):
     """
     Stores how a release is exploited (so all its Usage can be updated accordingly)
     """
+
+    from cube.models.components import Usage
 
     release = models.ForeignKey(Release, on_delete=models.CASCADE, null=True)
     scope = models.CharField(max_length=50)

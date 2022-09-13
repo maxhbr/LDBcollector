@@ -7,12 +7,7 @@ from django.db import models
 from django.db.models import Q
 
 from cube.models import (
-    Product,
-    Release,
-    Component,
-    Version,
     Usage,
-    License,
 )
 
 
@@ -47,16 +42,16 @@ class UsageDecision(models.Model):
     expression_out = models.CharField(max_length=500)
 
     product = models.ForeignKey(
-        Product, on_delete=models.CASCADE, blank=True, null=True
+        "Product", on_delete=models.CASCADE, blank=True, null=True
     )
     release = models.ForeignKey(
-        Release, on_delete=models.CASCADE, blank=True, null=True
+        "Release", on_delete=models.CASCADE, blank=True, null=True
     )
     component = models.ForeignKey(
-        Component, on_delete=models.CASCADE, blank=True, null=True
+        "Component", on_delete=models.CASCADE, blank=True, null=True
     )
     version = models.ForeignKey(
-        Version, on_delete=models.CASCADE, blank=True, null=True
+        "Version", on_delete=models.CASCADE, blank=True, null=True
     )
 
     scope = models.CharField(max_length=128, blank=True, null=True)
@@ -147,9 +142,9 @@ class Derogation(models.Model):
         ("linkingscope", "Every usage with the same scope AND the same linking"),
     ]
 
-    license = models.ForeignKey(License, on_delete=models.CASCADE)
-    release = models.ForeignKey(Release, on_delete=models.CASCADE, null=True)
-    usage = models.ForeignKey(Usage, on_delete=models.CASCADE, blank=True, null=True)
+    license = models.ForeignKey("License", on_delete=models.CASCADE)
+    release = models.ForeignKey("Release", on_delete=models.CASCADE, null=True)
+    usage = models.ForeignKey("Usage", on_delete=models.CASCADE, blank=True, null=True)
     linking = models.CharField(
         max_length=20, choices=Usage.LINKING_CHOICES, blank=True, null=True
     )
