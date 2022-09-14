@@ -1,6 +1,3 @@
-# Copyright Fedora License Data Project Authors.
-# SPDX-License-Identifier: CC0-1.0
-
 # Each file provides information about a single allowed or not-allowed
 # license.  The file format is TOML and the sections are
 # described below.  For information on the TOML standard, see
@@ -9,14 +6,18 @@
 # All files must provide a 'license' block.
 [license]
 
-# The SPDX expression for this license type in Fedora.
+# The SPDX expression for this license. For example:
 #
-#     spdx_expression = "GPL-3.0-or-later WITH Autoconf-exception-3.0"
+#     expression = "GPL-3.0-or-later WITH Autoconf-exception-3.0"
 #
-# This expression is constructed using valid SPDX license and
-# exception identifiers found at https://spdx.org/ and information
-# on how to contruct SPDX expressions at https://spdx.github.io/spdx-spec/SPDX-license-expressions/
-# Note: the SPDX expressions operators OR and AND should not be used 
+# This expression is constructed using valid SPDX license expression syntax,
+# including, where applicable, license and exception identifiers adopted by
+# SPDX. See:
+# SPDX License List: https://spdx.org/licenses/
+# SPDX License Exceptions: https://spdx.org/licenses/exceptions-index.html
+# Information on how to construct SPDX expressions:
+# https://spdx.github.io/spdx-spec/SPDX-license-expressions/
+# Note: the SPDX expression operators OR and AND should not be used 
 # in this context. 
 #
 # This is a required field.
@@ -42,8 +43,11 @@ expression = ""
 status = [ "" ]
 
 # Optional URL(s) to the license text.  This field is a multiline
-# literal string.  For licenses that have an SPDX expression, 
-# the the corresponding SPDX URL will be auto-generated when the Docs packages
+# literal string. For licenses that consist of an SPDX identifier that is
+# on the SPDX License List, or license expressions that include an SPDX
+# identifier that is on the SPDX license list WITH an exception that is on
+# the SPDX list of license exceptions, 
+# a corresponding SPDX URL will be auto-generated when the Docs packages
 # displaying this data is published, so you do not need to put SPDX URLs here. 
 # For example:
 #
