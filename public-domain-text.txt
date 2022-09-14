@@ -1,0 +1,57 @@
+# This file is for collecting the actual text found in Fedora
+# packages that have used the Callaway short name, "Public Domain" 
+# or the SPDX id, "LicenseRef-Fedora-Public-Domain"
+# As per the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_callaway_short_name_categories
+# 
+# This file is for collecting the text of such public domain dedications.
+#
+# Include the following information:
+# 
+# Fedora package name
+#
+# Location of where you found the public domain dedication text.
+# Preferably this would be a direct link to a file. If that is not possible,
+# provide enough information such that someone else can find the text in the wild
+# where you found it.
+#
+# The actual text of the public dedication found that corresponds to the use of 
+# the "Public Domain" (previously) or "LicenseRef-Fedora-Public-Domain" SPDX id.
+# Remove blank lines.
+#
+# Copy template below and add yours to top of list, adding a space between entries.
+
+package = 
+location = 
+text = '''
+text here
+'''
+
+package = x11vnc
+location = https://github.com/LibVNC/x11vnc/tree/af63109a17f1b1ec8b1e332d215501f11c4a33a0/misc/turbovnc
+text = '''
+This work has been (or is hereby) released into the public domain by
+its author, Karl J. Runge <runge@karlrunge.com>. This applies worldwide.
+In case this is not legally possible: Karl J. Runge grants anyone the
+right to use this work for any purpose, without any conditions, unless
+such conditions are required by law.
+'''
+
+package = xmlpull
+location = https://github.com/xmlpull-xpp3/xmlpull-xpp3/blob/master/xmlpull/LICENSE.txt
+text = '''
+All of the XMLPULL API source code, compiled code, and documentation 
+contained in this distribution *except* for tests (see separate LICENSE_TESTS.txt)
+are in the Public Domain.
+XMLPULL API comes with NO WARRANTY or guarantee of fitness for any purpose.
+'''
+
+package = xz.java
+location = https://git.tukaani.org/?p=xz-java.git;a=blob;f=COPYING;h=8dd17645c4610c3d5eed9bcdd2699ecfac00406b;hb=HEAD
+text = ''' 
+Licensing of XZ for Java
+========================
+All the files in this package have been written by Lasse Collin,
+Igor Pavlov, and/or Brett Okken. All these files have been put into
+the public domain. You can do whatever you want with these files.
+This software is provided "as is", without any warranty.
+'''
