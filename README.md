@@ -2,7 +2,7 @@
 
 This project contains data for licenses that have been reviewed
 for use in the Fedora Linux project. For more on the criteria 
-Fedora applies for such review, see [License Approval(https://docs.fedoraproject.org/en-US/legal/license-approval)
+Fedora applies for such review, see [License Approval](https://docs.fedoraproject.org/en-US/legal/license-approval)
 
 Licenses are categorized by their status of allowed (generally, or for specific uses) 
 or not-allowed and published to [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal).
