@@ -38,22 +38,30 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 {% block content %}
 
-  <h2>Description</h2>
-  <div class="box"> {{ object.description }}</div>
-  
-  {% if object.homepage_url %}
-    <p><span class="icon"><i class="fas fa-home"></i>
-      </span>Project home page: <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a>
-    </p>
-  {% endif %}
-  
+  <section class="card">
+    <header class="card-header">
+      <p class="card-header-title"><span class="icon"><i class="fas fa-info-circle"></i></span>
+        Metadata for the component</p>
+    </header>
+    <div class="card-content">
+      <div class="columns">
+        <div class="column">
+          <p>Description: {{ object.description }}</p>
+        </div>
+        <div class="column">
+          <p><span class="icon"><i class="fas fa-home"></i></span>Project home page:
+          <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <h2>Versions<h2>
   {% for version in object.versions.all %}
-    <h3>{{ object.name }} : {{ version.version_number }}</h3> 
-    <p>Edit this version here : <a href="/admin/cube/version/{{version.id}}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></p>
-    <p>The license expression is :</p>
-    <p> <span class="icon"><i class="fas fa-balance-scale"></i></span>
+    <h3>{{ object.name }} : {{ version.version_number }} <a title="Edit this version" href="/admin/cube/version/{{version.id}}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></h3>
+    <p>The license expression is : <span class="icon"><i class="fas fa-balance-scale"></i></span>
       {% if version.corrected_license%}
         <strong>{{version.corrected_license}}</strong> (corrected from {{ version.spdx_valid_license_expr }})
         
