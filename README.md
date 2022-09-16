@@ -45,7 +45,6 @@ and edit the `mysecrets.py` file you just created.
 
 
 ```
-python hermine/manage.py makemigrations
 python hermine/manage.py migrate
 python hermine/manage.py createsuperuser
 ```
@@ -53,7 +52,7 @@ python hermine/manage.py createsuperuser
 And then launch the django dev server:
 
 ```
-python3 hermine/manage.py runserver
+python hermine/manage.py runserver
 ```
 You can then point your browser to [http://127.0.0.1:8080/admin/](http://127.0.0.1:8080/admin/)
 
