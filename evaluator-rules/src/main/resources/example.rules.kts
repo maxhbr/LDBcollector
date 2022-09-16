@@ -1159,6 +1159,16 @@ fun RuleSet.missingGitignoreFileRule() = projectSourceRule("MISSING_GITIGNORE_FI
     )
 }
 
+fun RuleSet.missingLicenseFileRule() = projectSourceRule("MISSING_LICENSE_FILE") {
+    require {
+        -projectSourceHasFile("LICENSE")
+    }
+
+    error(
+        message = "The project's code repository does not contain the file 'LICENSE'."
+    )
+}
+
 fun RuleSet.missingReadmeFileRule() = projectSourceRule("MISSING_README_FILE") {
     require {
         -projectSourceHasFile("README.md")
@@ -1338,6 +1348,7 @@ fun RuleSet.commonRules() {
     missingCiConfigurationRule()
     missingContributingFileRule()
     missingGitignoreFileRule()
+    missingLicenseFileRule()
     missingReadmeFileRule()
     missingReadmeFileLicenseSectionRule()
     missingTestsRule()
