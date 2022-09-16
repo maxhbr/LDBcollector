@@ -1145,6 +1145,20 @@ fun RuleSet.missingContributingFileRule() = projectSourceRule("MISSING_CONTRIBUT
     error("The project's code repository does not contain the file 'CONTRIBUTING.md'.")
 }
 
+fun RuleSet.missingGitignoreFileRule() = projectSourceRule("MISSING_GITIGNORE_FILE") {
+    require {
+        +projectSourceHasVcsType(VcsType.GIT)
+        -projectSourceHasFile(".gitignore")
+    }
+
+    error(
+        message = "Adding a '.gitignore' file is recommended practice to prevent pushing files with sensitive " +
+            "information, compiled code, system files, caches, logs or generated files such as dist directories.",
+        howToFix = "A wide variety of gitignore template files for specific programming languages, frameworks, tools " +
+            "and environments can be found at https://github.com/github/gitignore."
+    )
+}
+
 fun RuleSet.missingReadmeFileRule() = projectSourceRule("MISSING_README_FILE") {
     require {
         -projectSourceHasFile("README.md")
@@ -1323,6 +1337,7 @@ fun RuleSet.commonRules() {
     dependencyInProjectSourceRule()
     missingCiConfigurationRule()
     missingContributingFileRule()
+    missingGitignoreFileRule()
     missingReadmeFileRule()
     missingReadmeFileLicenseSectionRule()
     missingTestsRule()
