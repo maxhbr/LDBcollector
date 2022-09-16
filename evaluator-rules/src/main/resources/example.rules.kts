@@ -1165,6 +1165,20 @@ fun RuleSet.missingReadmeFileLicenseSectionRule() = projectSourceRule("MISSING_R
     )
 }
 
+fun RuleSet.missingTestsRule() = projectSourceRule("MISSING_TESTS") {
+    require {
+        -projectSourceHasDirectory(
+            "**/*test*",
+            "**/*Test*",
+        )
+    }
+
+    error(
+        message = "This project does not seem to have any tests.",
+        howToFix = "Please setup tests. If you already have tests and the error persists, please contact support."
+    )
+}
+
 fun RuleSet.packageConfigurationInOrtYmlRule() = ortResultRule("PACKAGE_CONFIGURATION_IN_ORT_YML") {
     if (ortResult.repository.config.packageConfigurations.isNotEmpty()) {
         error(
@@ -1311,6 +1325,7 @@ fun RuleSet.commonRules() {
     missingContributingFileRule()
     missingReadmeFileRule()
     missingReadmeFileLicenseSectionRule()
+    missingTestsRule()
     wrongLicenseInLicenseFileRule()
 }
 
