@@ -41,7 +41,7 @@ def import_ort_evaluated_model_json_file(
     try:
         data = json.load(json_file)
     except ValueError:
-        raise SBOMImportFailure("Import failed, please check file format.")
+        raise SBOMImportFailure("Please check file format.")
 
     try:
         paths = data["paths"]
@@ -49,7 +49,7 @@ def import_ort_evaluated_model_json_file(
         packages = data["packages"]
         licenses = data["licenses"]
     except KeyError:
-        raise SBOMImportFailure("Import failed, please check file format.")
+        raise SBOMImportFailure("Please check file format.")
 
     if replace:
         Usage.objects.filter(release=release_idk).delete()
@@ -147,7 +147,7 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
     document, error = parse_spdx_file(spdx_file)
 
     if document is None:
-        raise SBOMImportFailure("Import failed, please check file format.")
+        raise SBOMImportFailure("Please check file format.")
 
     if error:
         logger.warning(
