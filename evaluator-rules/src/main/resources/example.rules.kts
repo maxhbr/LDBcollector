@@ -250,11 +250,11 @@ fun PackageRule.howToFixLicenseViolationDefault(
     licenseSource: LicenseSource,
     @Suppress("UNUSED_PARAMETER") severity: Severity
 ): String {
-    if (ortResult.isProject(pkg.id)) {
+    if (ortResult.isProject(pkg.metadata.id)) {
         // Violation is flagged for the project scanned.
         if (licenseSource == LicenseSource.DETECTED) {
             // License is detected by the scanner in the source code of the project.
-            return "${resolveViolationInSourceCodeText(pkg, license)}".trimMargin()
+            return "${resolveViolationInSourceCodeText(pkg.metadata, license)}".trimMargin()
         }
 
         // License is declared in project's package manifest file (pom, package.json, etc.).
@@ -264,11 +264,11 @@ fun PackageRule.howToFixLicenseViolationDefault(
     // Violation is thrown for one of the project's dependencies.
     if (licenseSource == LicenseSource.DETECTED) {
         // Violation thrown for license detected by the scanner in the source code of the dependency.
-        return "${resolveViolationInDependencySourceCodeText(pkg, license)}".trimMargin()
+        return "${resolveViolationInDependencySourceCodeText(pkg.metadata, license)}".trimMargin()
     }
 
     // Violation thrown for declared license in dependency's package manifest file (pom, package.json, etc.).
-    return "${resolveViolationInDependencyDeclaredLicenseText(pkg)}".trimMargin()
+    return "${resolveViolationInDependencyDeclaredLicenseText(pkg.metadata)}".trimMargin()
 }
 
 fun PackageRule.howToFixUnhandledLicense(
@@ -283,12 +283,12 @@ fun PackageRule.howToFixUnhandledLicense(
         |4. Set the _Description_ field to something like 'Please add this license to the review tooling.'
         |"""
 
-    if (ortResult.isProject(pkg.id)) {
+    if (ortResult.isProject(pkg.metadata.id)) {
         // Unhandled license is found in the project under review.
         if (licenseSource == LicenseSource.DETECTED) {
             // Unhandled license is detected by the scanner in the source code of the project.
             return """
-                |${resolveViolationInSourceCodeText(pkg, license)}
+                |${resolveViolationInSourceCodeText(pkg.metadata, license)}
                 |
                 |If the license identification is correct and can not be excluded, then
                 |follow the steps below to have Open Source Office add $license to the review tooling:
@@ -308,7 +308,7 @@ fun PackageRule.howToFixUnhandledLicense(
         if (licenseSource == LicenseSource.DETECTED) {
             // Unhandled license is detected by the scanner in the source code of the dependency.
             return """
-                |${resolveViolationInDependencySourceCodeText(pkg, license)}
+                |${resolveViolationInDependencySourceCodeText(pkg.metadata, license)}
                 |
                 |If the license identification is correct and can not be excluded, then
                 |follow the steps below to add $license to the review tooling:
@@ -341,24 +341,24 @@ fun PackageRule.howToFixUnmappedDeclaredLicense(
     )
 
     return if (license in genericDeclaredLicenses) {
-        val binaryUrlMdLink = getArtifactMdLink(pkg.binaryArtifact.url)
-        val vcsUrlMdLink = getVcsMdLink(pkg)
+        val binaryUrlMdLink = getArtifactMdLink(pkg.metadata.binaryArtifact.url)
+        val vcsUrlMdLink = getVcsMdLink(pkg.metadata)
 
         """
             |Try to resolve this violation by following the advice below:
             |
             |1. Clone $ortConfigVcsMdLink using Git.
             |2. Map declared license '$license' to an [SPDX license expression](https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/):
-            |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.id)}`.
+            |   - Open or create using a text editor `${getPackageCurationsFilePath(pkg.metadata.id)}`.
             |   - Determine the declared licenses for $binaryUrlMdLink by looking for the main license files in the $vcsUrlMdLink.
             |     Use the the following template, changing the text in square brackets (`[...]`) as appropriate.
             |
             |   ```
-            |   - id: "${pkg.id.toCoordinatesWithoutVersion()}"
+            |   - id: "${pkg.metadata.id.toCoordinatesWithoutVersion()}"
             |     curations:
             |       comment: "Mapping declared license based on \
-            |         [https://url-to-repository/tag-or-revision-for-version-${pkg.id.version}/LICENSE] and \
-            |         [https://url-to-repository/tag-or-revision-for-version-${pkg.id.version}/package-metadata-file]."
+            |         [https://url-to-repository/tag-or-revision-for-version-${pkg.metadata.id.version}/LICENSE] and \
+            |         [https://url-to-repository/tag-or-revision-for-version-${pkg.metadata.id.version}/package-metadata-file]."
             |       declared_license_mapping:
             |         "$license": "[SPDX license expression for the declared license.]"
             |   ```
@@ -367,7 +367,7 @@ fun PackageRule.howToFixUnmappedDeclaredLicense(
             |     Reviewers are set automatically.
             |
             |   ```
-            |   curations: Map declared license for ${pkg.id.toCoordinatesWithoutVersion()}
+            |   curations: Map declared license for ${pkg.metadata.id.toCoordinatesWithoutVersion()}
             |
             |   $relatesToIssueText
             |   ```
@@ -935,7 +935,7 @@ fun PackageRule.hasDefinitionFileName(vararg definitionFileNames: String) =
         override val description = "hasDefinitionFileName(${matchingNames.joinToString()})"
 
         override fun matches(): Boolean {
-            val project = ortResult.getProject(pkg.id)
+            val project = ortResult.getProject(pkg.metadata.id)
             if (project == null) return false
 
             return project.definitionFilePath.substringAfterLast('/') in matchingNames
@@ -1036,9 +1036,9 @@ fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
 
         val message = if (licenseSource == LicenseSource.DETECTED) {
             "The ScanCode copyleft categorized license $license was ${licenseSource.name.lowercase()} " +
-                    "in package ${pkg.id.toCoordinates()}."
+                    "in package ${pkg.metadata.id.toCoordinates()}."
         } else {
-            "The package ${pkg.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode copyleft " +
+            "The package ${pkg.metadata.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode copyleft " +
                     "catalogized license $license."
         }
 
@@ -1063,7 +1063,7 @@ fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOU
         val licenseSourceName = licenseSource.name.lowercase()
         val message = if (licenseSource == LicenseSource.DETECTED) {
             "The ScanCode copyleft-limited categorized license $license was $licenseSourceName in package " +
-                    "${pkg.id.toCoordinates()}."
+                    "${pkg.metadata.id.toCoordinates()}."
         } else {
             "The package ${pkg.id.toCoordinates()} has the $licenseSourceName ScanCode copyleft-limited " +
                     "categorized license $license."
@@ -1226,7 +1226,7 @@ fun RuleSet.vulnerabilityInPackageRule() = packageRule("VULNERABILITY_IN_PACKAGE
 
     issue(
         Severity.WARNING,
-        "The package ${pkg.id.toCoordinates()} has a vulnerability",
+        "The package ${pkg.metadata.id.toCoordinates()} has a vulnerability",
         howToFixDefault()
     )
 }
@@ -1244,7 +1244,7 @@ fun RuleSet.vulnerabilityWithHighSeverityInPackageRule() = packageRule("HIGH_SEV
 
     issue(
         Severity.ERROR,
-        "The package ${pkg.id.toCoordinates()} has a vulnerability with $scoringSystem severity > " +
+        "The package ${pkg.metadata.id.toCoordinates()} has a vulnerability with $scoringSystem severity > " +
                 "$maxAcceptedSeverity",
         howToFixDefault()
     )
@@ -1262,7 +1262,7 @@ fun RuleSet.unapprovedOssProjectLicenseRule() = packageRule("UNAPPROVED_OSS_PROJ
         }
 
         error(
-            "Package ${pkg.id.toCoordinates()} declares $license which is not an " +
+            "Package ${pkg.metadata.id.toCoordinates()} declares $license which is not an " +
                     "approved license within $orgName.",
             howToFixOssProjectDefault()
         )
@@ -1286,7 +1286,7 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
         error(
             "The license $license is currently not covered by policy rules. " +
                     "The license was ${licenseSource.name.lowercase()} in package " +
-                    "${pkg.id.toCoordinates()}",
+                    "${pkg.metadata.id.toCoordinates()}",
             howToFixUnhandledLicense(license.toString(), licenseSource, Severity.ERROR)
         )
     }
@@ -1300,7 +1300,7 @@ fun RuleSet.unmappedDeclaredLicenseRule() = packageRule("UNMAPPED_DECLARED_LICEN
     resolvedLicenseInfo.licenseInfo.declaredLicenseInfo.processed.unmapped.forEach { unmappedLicense ->
         warning(
             "The declared license '$unmappedLicense' could not be mapped to a valid license or parsed as an SPDX " +
-                    "expression. The license was found in package ${pkg.id.toCoordinates()}.",
+                    "expression. The license was found in package ${pkg.metadata.id.toCoordinates()}.",
             howToFixUnmappedDeclaredLicense(unmappedLicense, Severity.WARNING)
         )
     }
