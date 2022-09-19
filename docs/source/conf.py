@@ -20,8 +20,8 @@ import django
 
 
 # Specify settings module
-sys.path.insert(0, os.path.abspath("../../"))
-sys.path.append(os.path.abspath("../../hermine/"))
+sys.path.insert(0, os.path.abspath("../../hermine"))
+# sys.path.append(os.path.abspath("../../hermine/"))
 
 # Setup Django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hermine.settings")
