@@ -41,18 +41,3 @@ repositories {
 dependencies {
     compileOnly("$ortJitPackGroup:evaluator:$ortJitPackVersion")
 }
-
-configurations.all {
-    resolutionStrategy.dependencySubstitution.all {
-        requested.let { selector ->
-            if (selector is ModuleComponentSelector && selector.group == ortJitPackGroup) {
-                logger.info("Looking for a project named '${selector.module}' to substitute the artifact.")
-                val targetProject = rootProject.subprojects.find { it.name == selector.module }
-                if (targetProject != null) {
-                    logger.info("Found project $targetProject.")
-                    useTarget(targetProject)
-                }
-            }
-        }
-    }
-}
