@@ -47,7 +47,7 @@ val publicDomainLicenses = licenseClassifications.licensesByCategory["public-dom
 /**
  * The complete set of licenses covered by policy rules.
  */
- val handledLicenses = listOf(
+val handledLicenses = listOf(
     permissiveLicenses,
     publicDomainLicenses,
     copyleftLicenses,
@@ -127,7 +127,7 @@ fun getEnabledPolicyRules(): PolicyRules =
     }
 
 /**
- * Return file path of package configuration in the ORT configuration repository for package [id]. 
+ * Return file path of package configuration in the ORT configuration repository for package [id].
  *
  * For example, if 'PyPI::flower:0.9.7' is found in your scan,
  * then this function will return: 'package-configurations/PyPI/_/flower/0.9.7/vcs.yml'
@@ -137,7 +137,7 @@ fun getPackageConfigurationFilePath(id: Identifier): String =
     "package-configurations/${id.toPath(emptyValue = "_")}/"
 
 /**
- * Return the package configuration matcher for package [id]. 
+ * Return the package configuration matcher for package [id].
  *
  * For example, if 'PyPI::flower:0.9.7' is found in your scan,
  * then this function will return:
@@ -193,11 +193,11 @@ fun getPackageCurationsFilePath(id: Identifier): String =
     "curations/${id.type}/${id.namespace.ifBlank { "_" }}/${id.name}.yml"
 
 /**
- * Return a MarkDown link to the code repository for package [pkg]. 
+ * Return a MarkDown link to the code repository for package [pkg].
  */
 fun getVcsMdLink(pkg: Package) : String {
     if (pkg.vcsProcessed.url.isNullOrEmpty()) {
-         return "URL of the source code repository"
+        return "URL of the source code repository"
     }
 
     val vcsUrl = pkg.vcsProcessed.url.replaceCredentialsInUri()
@@ -388,8 +388,8 @@ fun PackageRule.howToFixUnmappedDeclaredLicense(
 
 fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
     val sourcesUrlMdLink = when (pkg.id.type) {
-        "Maven" -> {getArtifactMavenSourcesMdLink(pkg)}
-        "PIP", "PyPI" -> {getArtifactMdLink(pkg.sourceArtifact.url)}
+        "Maven" -> getArtifactMavenSourcesMdLink(pkg)
+        "PIP", "PyPI" -> getArtifactMdLink(pkg.sourceArtifact.url)
         else -> "the source artifact"
     }
 
@@ -538,8 +538,8 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
 
 fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : String {
     val sourcesUrlMdLink = when (pkg.id.type) {
-        "Maven" -> {getArtifactMavenSourcesMdLink(pkg)}
-        "PIP", "PyPI" -> {getArtifactMdLink(pkg.sourceArtifact.url)}
+        "Maven" -> getArtifactMavenSourcesMdLink(pkg)
+        "PIP", "PyPI" -> getArtifactMdLink(pkg.sourceArtifact.url)
         else -> "the source artifact"
     }
 
@@ -1024,30 +1024,30 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
 }
 
 fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
+    require {
+        -isExcluded()
+    }
+
+    licenseRule("COPYLEFT_IN_SOURCE", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
         require {
             -isExcluded()
+            +isCopyleft()
         }
 
-        licenseRule("COPYLEFT_IN_SOURCE", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
-            require {
-                -isExcluded()
-                +isCopyleft()
-            }
-
-            val message = if (licenseSource == LicenseSource.DETECTED) {
-                "The ScanCode copyleft categorized license $license was ${licenseSource.name.lowercase()} " +
-                        "in package ${pkg.id.toCoordinates()}."
-            } else {
-                "The package ${pkg.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode copyleft " +
-                        "catalogized license $license."
-            }
-
-            error(
-                message,
-                howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.ERROR)
-            )
+        val message = if (licenseSource == LicenseSource.DETECTED) {
+            "The ScanCode copyleft categorized license $license was ${licenseSource.name.lowercase()} " +
+                    "in package ${pkg.id.toCoordinates()}."
+        } else {
+            "The package ${pkg.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode copyleft " +
+                    "catalogized license $license."
         }
+
+        error(
+            message,
+            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.ERROR)
+        )
     }
+}
 
 fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOURCE") {
     require {
