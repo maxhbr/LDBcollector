@@ -4,13 +4,19 @@
 
 from rest_framework import serializers
 
-from cube.models import Product, Release, Usage
+from cube.models import Product, Release, Usage, Exploitation
 from cube.serializers import (
     UsageSerializer,
     LicenseSerializer,
     VersionSerializer,
     DerogationSerializer,
 )
+
+
+class ExploitationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exploitation
+        fields = ["scope", "project", "exploitation"]
 
 
 class ReleaseSerializer(serializers.ModelSerializer):
@@ -22,6 +28,7 @@ class ReleaseSerializer(serializers.ModelSerializer):
     """
 
     validation_step = serializers.IntegerField(source="valid_step", read_only=True)
+    exploitations = ExploitationSerializer(many=True, read_only=True)
 
     class Meta:
         use_natural_foreign_keys = True
@@ -34,6 +41,7 @@ class ReleaseSerializer(serializers.ModelSerializer):
             "pub_date",
             "validation_step",
             "commit",
+            "exploitations",
         ]
 
 

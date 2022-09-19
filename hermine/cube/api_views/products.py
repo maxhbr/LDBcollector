@@ -13,7 +13,7 @@ from rest_framework.mixins import CreateModelMixin
 from rest_framework.response import Response
 
 from cube.importers import import_spdx_file, import_ort_evaluated_model_json_file
-from cube.models import Product, Release
+from cube.models import Product, Release, Exploitation
 from cube.serializers import (
     ReleaseSerializer,
     LicenseSerializer,
@@ -27,6 +27,7 @@ from cube.serializers.products import (
     Validation3Serializer,
     Validation4Serializer,
     Validation5Serializer,
+    ExploitationSerializer,
 )
 from cube.serializers import (
     GenericSerializer,
@@ -270,6 +271,17 @@ class ReleaseViewSet(viewsets.ModelViewSet):
                 "orphaned": LicenseSerializer(orphaned_licenses, many=True).data,
             }
         )
+
+
+class ExploitationViewSet(viewsets.ModelViewSet):
+    serializer_class = ExploitationSerializer
+    lookup_field = "id"
+
+    def get_queryset(self):
+        return Exploitation.objects.filter(release=self.kwargs["release_id"])
+
+    def perform_create(self, serializer):
+        serializer.save(release_id=self.kwargs["release_id"])
 
 
 class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
