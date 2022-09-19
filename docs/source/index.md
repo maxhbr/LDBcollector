@@ -18,6 +18,7 @@ To build it locally, install the dev dependencies of the project and use the com
 
 ```bash
 sphinx-build -b html docs/source docs/build/html
+python -m http.server --directory docs/build/html
 ```
 
 This documentation is published under the CC-BY-4.0 license. 

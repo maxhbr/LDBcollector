@@ -4,8 +4,10 @@ SPDX-License-Identifier: CC-BY-4.0
 -->
 
 # Installing Hermine
+(Install-dev)=
+## Development
 
-## Getting last version of code
+### Getting last version of code
 
 Clone the project with the command:
 
@@ -13,13 +15,9 @@ Clone the project with the command:
 git clone https://gitlab.com/hermine-project/hermine.git
 ```
 
-## Development
-
 ### Installing the dependencies
 
-Hermine is a simple Django 4 project, using Python 3.8.
-
-You should run Hermin in a Python virtual environnement.
+You should run Hermine in a Python virtual environnement.
 Using [poetry](https://python-poetry.org/docs/), you can create the
 virtual environment and install the dependencies with:
 
@@ -41,7 +39,7 @@ cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py
 ```
 and adapt the `mysecrets.py` file you just created.
 
-By default, it just uses a simple SQlite database. To use another database, please refer to [Django's documentation](https://docs.djangoproject.com/en/4.0/topics/install/#get-your-database-running).
+By default, it uses a simple SQlite database. To use another database, please refer to [Django's documentation](https://docs.djangoproject.com/en/4.0/topics/install/#get-your-database-running).
 
 
 Create the database structure:
@@ -91,9 +89,16 @@ docker-compose up -d
 Hermine should be accessible at `https://example.com`. Caddy automatically sets up
 and renew HTTPS certificates.
 
-By default, a superadmin user is
-created with `admin / admin` credential. You can update these credentials
-from `http://localhost:8080/admin/auth/user/`
+By default, a superadmin user is created with `admin / admin` credential. 
+You can update these credentials from `http://example.com/admin/auth/user/`.
+
+To update your instance : 
+
+```bash
+cd hermine/
+git switch main && git pull
+docker-compose up -d --build
+```
 
 ### Manual install
 

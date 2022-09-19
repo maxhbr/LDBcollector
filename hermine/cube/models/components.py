@@ -93,8 +93,7 @@ class Usage(models.Model):
 
 
 class Component(models.Model):
-    """
-    A third party FOSS Component
+    """A third party FOSS Component.
 
     :ivar name: (String) Name of the FOSS component Unique.
     :ivar package_repo: (String) repository of the package
