@@ -1276,7 +1276,7 @@ fun RuleSet.wrongLicenseInLicenseFileRule() = projectSourceRule("WRONG_LICENSE_I
         +projectSourceHasFile("LICENSE")
     }
 
-    val allowedRootLicenses = setOf("Apackage-2.0", "MIT")
+    val allowedRootLicenses = orgOssProjectsApprovedLicenses.mapTo(mutableSetOf()) { it.simpleLicense() }
     val detectedRootLicenses = projectSourceGetDetectedLicensesByFilePath("LICENSE").values.flatten().toSet()
     val wrongLicenses = detectedRootLicenses - allowedRootLicenses
 
