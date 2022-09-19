@@ -1,0 +1,5 @@
+[versions]
+ort = "39d2cab6b0"
+
+[libraries]
+ortModel = { module = "com.github.oss-review-toolkit.ort:model", version.ref = "ort" }
