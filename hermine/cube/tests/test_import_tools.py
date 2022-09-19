@@ -130,7 +130,7 @@ class ImportSBOMTestCase(TestCase):
 
     def test_import_spdx_file(self):
         with open("../testfiles/venom_short.spdx.yaml") as f:
-            import_spdx_file(f, 1, defaults={"linking": Usage.LINKING_PACKAGE})
+            import_spdx_file(f, 1, linking=Usage.LINKING_PACKAGE)
         usage = Usage.objects.get(
             version__component__name="github.com/gorilla/websocket",
             version__version_number="v1.4.2",
