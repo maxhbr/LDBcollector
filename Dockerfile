@@ -38,7 +38,7 @@ RUN pip install "poetry==$POETRY_VERSION" gunicorn
 COPY pyproject.toml poetry.lock $APP_PATH/
 
 RUN poetry config virtualenvs.create false && \
-    poetry install --no-interaction --no-ansi
+    poetry install --no-interaction --no-ansi --without dev
 COPY hermine $APP_PATH/
 COPY docker/docker-entrypoint.sh $APP_PATH/
 COPY docker/docker_secrets.py $APP_PATH/hermine/mysecrets.py
