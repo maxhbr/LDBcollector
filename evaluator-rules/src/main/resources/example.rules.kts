@@ -65,7 +65,7 @@ val publicDomainLicenses = licenseClassifications.licensesByCategory["public-dom
 /**
  * List of licenses approved by organization to be used for its open source projects.
  */
-val OrgOssProjectsApprovedLicenses = listOf(
+val orgOssProjectsApprovedLicenses = listOf(
     "Apache-2.0",
     "BSD-2-Clause",
     "BSD-3-Clause",
@@ -208,7 +208,7 @@ fun getVcsMdLink(pkg: Package) : String {
 /**
  * Return true if [license] is on the list of the organization's approved licenses for its open source projects.
  */
-fun isApprovedOrgOssProjectLicense(license: SpdxSingleLicenseExpression) = license in OrgOssProjectsApprovedLicenses
+fun isApprovedOrgOssProjectLicense(license: SpdxSingleLicenseExpression) = license in orgOssProjectsApprovedLicenses
 
 /**
  * Return true if a label with identical [key] exists whose comma separate values contains [value].
