@@ -30,15 +30,27 @@ DEFAULT_PROJECT = "Blank Projet"
 DEFAULT_SCOPE = "Blank Scope"
 
 
+class SBOMImportFailure(Exception):
+    pass
+
+
 @transaction.atomic()
 def import_ort_evaluated_model_json_file(
-    json_file, release_idk, replace=False, linking: Optional[str] = None
+    json_file, release_idk, replace=False, linking: str = ""
 ):
-    data = json.load(json_file)
+    try:
+        data = json.load(json_file)
+    except ValueError:
+        raise SBOMImportFailure("Please check file format.")
 
-    paths = data["paths"]
-    scopes = data["scopes"]
-    packages = data["packages"]
+    try:
+        paths = data["paths"]
+        scopes = data["scopes"]
+        packages = data["packages"]
+        licenses = data["licenses"]
+    except KeyError:
+        raise SBOMImportFailure("Please check file format.")
+
     if replace:
         Usage.objects.filter(release=release_idk).delete()
 
@@ -78,7 +90,7 @@ def import_ort_evaluated_model_json_file(
         if declared_licenses_indices:
             declared_licenses = " ; ".join(
                 [
-                    data["licenses"][license_index]["id"]
+                    licenses[license_index]["id"]
                     for license_index in declared_licenses_indices
                 ]
             )
@@ -129,14 +141,14 @@ def import_ort_evaluated_model_json_file(
 
 
 @transaction.atomic()
-def import_spdx_file(
-    spdx_file, release_id, replace=False, defaults: Optional[dict] = None
-):
-    if defaults is None:
-        defaults = {}
+def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
     # Importing SPDX BOM yaml
     logger.info("SPDX import started")
     document, error = parse_spdx_file(spdx_file)
+
+    if document is None:
+        raise SBOMImportFailure("Please check file format.")
+
     if error:
         logger.warning(
             "SPDX file contains errors (printed above), but import continues…"
@@ -174,7 +186,7 @@ def import_spdx_file(
             version_id=version_id,
             release_id=release_id,
             scope=current_scope,
-            defaults={"addition_method": "Scan", **defaults},
+            defaults={"addition_method": "Scan", "linking": linking},
         )
     logger.info("SPDX import done", datetime.now())
 

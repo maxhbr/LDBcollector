@@ -302,7 +302,7 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
             spdx_file,
             release.pk,
             serializer.validated_data.get("replace", False),
-            defaults={"linking": serializer.validated_data.get("linking")},
+            linking=serializer.validated_data.get("linking", ""),
         )
         return Response()
 
@@ -325,6 +325,6 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
             ort_file,
             release.id,
             serializer.validated_date.get("replace", False),
-            linking=serializer.validated_data.get("linking"),
+            linking=serializer.validated_data.get("linking", ""),
         )
         return Response()

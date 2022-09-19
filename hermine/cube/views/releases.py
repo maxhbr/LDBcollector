@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
@@ -12,12 +13,17 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse
 from django.utils.decorators import method_decorator
+from django.utils.safestring import mark_safe
 from django.views import generic
 from django.views.decorators.http import require_POST
 from django.views.generic import UpdateView, DetailView
 
 from cube.forms import ImportBomForm
-from cube.importers import import_ort_evaluated_model_json_file, import_spdx_file
+from cube.importers import (
+    import_ort_evaluated_model_json_file,
+    import_spdx_file,
+    SBOMImportFailure,
+)
 from cube.models import (
     Release,
     Usage,
@@ -71,10 +77,11 @@ class ReleaseBomView(LoginRequiredMixin, UpdateView):
     form_class = ImportBomForm
     context_object_name = "release"
     template_name = "cube/release_bom.html"
-    import_status = None
+
+    def get_success_url(self):
+        return reverse("cube:release_bom", kwargs={"pk": self.object.pk})
 
     def form_valid(self, form):
-        self.import_status = "success"
         replace = form.cleaned_data["import_mode"] == ImportBomForm.IMPORT_MODE_REPLACE
         try:
             if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
@@ -91,13 +98,25 @@ class ReleaseBomView(LoginRequiredMixin, UpdateView):
                     replace,
                     linking=form.cleaned_data.get("linking"),
                 )
-        except:  # noqa: E722 TODO
-            self.import_status = "error"
+        except SBOMImportFailure as e:
+            form.add_error(None, e)
+            return super().form_invalid(form)
 
-        return super().render_to_response(self.get_context_data(form=form))
+        messages.add_message(
+            self.request,
+            messages.SUCCESS,
+            mark_safe(
+                f"""
+                You successfully uploaded your file.
+                Go check the validation steps you need to achieve at the relevant
+                <b><a href="{reverse("cube:release_validation", kwargs={"pk": self.object.id})}"> release page</a></b>.
+                """
+            ),
+        )
+
+        return super().form_valid(form)
 
     def get_context_data(self, **kwargs):
-        kwargs["import_status"] = self.import_status
         return super().get_context_data(**kwargs)
 
 
