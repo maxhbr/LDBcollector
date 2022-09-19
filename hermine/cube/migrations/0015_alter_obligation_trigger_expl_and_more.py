@@ -17,10 +17,16 @@ class Migration(migrations.Migration):
                 choices=[
                     (
                         "DistributionSourceDistributionNonSource",
-                        "If source code or binaries are distributed",
+                        "If the component is distributed as source code or as binary",
                     ),
-                    ("DistributionSource", "If source code is distributed"),
-                    ("DistributionNonSource", "If binaries are distributed"),
+                    (
+                        "DistributionSource",
+                        "If the component is distributed as source code",
+                    ),
+                    (
+                        "DistributionNonSource",
+                        "If the component is distributed as binary",
+                    ),
                     ("NetworkAccess", "If component is accessible by network access"),
                     ("InternalUse", "If the component is used internally"),
                 ],
@@ -33,9 +39,9 @@ class Migration(migrations.Migration):
             name="trigger_mdf",
             field=models.CharField(
                 choices=[
-                    ("Altered", "Only if component modified"),
-                    ("Unmodified", "Only if component is not modified"),
-                    ("AlteredUnmodified", "If component is modified or not"),
+                    ("Altered", "Only if the component is modified"),
+                    ("Unmodified", "Only if the component is not modified"),
+                    ("AlteredUnmodified", "Whether the component is modified or not"),
                 ],
                 default="AlteredUnmodified",
                 max_length=40,

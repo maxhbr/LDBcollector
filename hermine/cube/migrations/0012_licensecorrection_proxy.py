@@ -29,6 +29,8 @@ class Migration(migrations.Migration):
                 "proxy": True,
                 "indexes": [],
                 "constraints": [],
+                "verbose_name": "License choice rule",
+                "verbose_name_plural": "License choice rules",
             },
             bases=("cube.usagedecision",),
         ),
