@@ -1,7 +1,7 @@
 %global forgeurl https://gitlab.com/fedora/legal/fedora-license-data
 
 Name:           fedora-license-data
-Version:        1.0
+Version:        1.4
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
