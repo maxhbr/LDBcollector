@@ -10,6 +10,7 @@ from cube.models import (
     Usage,
     Derogation,
     ExpressionValidation,
+    Release,
 )
 from cube.utils.licenses import handle_licenses_json
 
@@ -243,6 +244,25 @@ class APICRUDTests(APITestCase):
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
 
+    def test_post_retreive_exploitation(self):
+        self.create_product()
+        self.create_release()
+
+        release_id = Release.objects.first().pk
+
+        url = reverse("cube:releases-exploitations-list", args=[release_id])
+        data = {
+            "scope": "testscope",
+            "project": "testproject",
+            "exploitation": Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE,
+        }
+        r = self.client.post(url, data)
+        self.assertEqual(r.status_code, 201)
+
+        r = self.client.get(url)
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.data["count"], 1)
+
 
 class ReleaseStepsAPITestCase(APITestCase):
     def import_licenses(cls):
@@ -268,7 +288,7 @@ class ReleaseStepsAPITestCase(APITestCase):
         self.assertEqual(res.status_code, 201)
 
         # Step 1
-        res = self.client.get(reverse("cube:release-validation-1", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["unnormalized_usages"]), 1)
 
@@ -276,29 +296,29 @@ class ReleaseStepsAPITestCase(APITestCase):
         Version.objects.filter(component__name="dependency2").update(
             spdx_valid_license_expr="LicenseRef-fakeLicense-Permissive-1.0"
         )
-        res = self.client.get(reverse("cube:release-validation-1", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
 
         # Step 2
         res = self.client.post(
-            reverse("cube:release-update-validation", kwargs={"id": 1})
+            reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.status_code, 200)
         self.assertEqual(res.data["validation_step"], 2)  # unknown license
-        res = self.client.get(reverse("cube:release-validation-2", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["licenses_to_create"]), 2)
 
         self.import_licenses()
-        res = self.client.get(reverse("cube:release-validation-2", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
 
         # Step 3
         res = self.client.post(
-            reverse("cube:release-update-validation", kwargs={"id": 1})
+            reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], 3)  # ANDs confirmation
-        res = self.client.get(reverse("cube:release-validation-3", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-3", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
 
         ## Simulate fixing manually
@@ -306,15 +326,15 @@ class ReleaseStepsAPITestCase(APITestCase):
             expression_in="LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
             expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0",
         )
-        res = self.client.get(reverse("cube:release-validation-3", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-3", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
 
         # Step 4
         res = self.client.post(
-            reverse("cube:release-update-validation", kwargs={"id": 1})
+            reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], 4)  # License choices
-        res = self.client.get(reverse("cube:release-validation-4", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-4", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["to_resolve"]), 1)
 
@@ -326,25 +346,25 @@ class ReleaseStepsAPITestCase(APITestCase):
                 "expression_out": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
             },
         )
-        res = self.client.get(reverse("cube:release-validation-4", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-4", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
         self.assertEqual(len(res.data["resolved"]), 1)
 
         # Step 5
         res = self.client.post(
-            reverse("cube:release-update-validation", kwargs={"id": 1})
+            reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], 5)  # policy compatibility
-        res = self.client.get(reverse("cube:release-validation-5", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
 
         ## Simulate fixing
         Derogation.objects.create(license_id=2, release_id=1)
-        res = self.client.get(reverse("cube:release-validation-5", kwargs={"id": 1}))
+        res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
 
         ## Finished
         res = self.client.post(
-            reverse("cube:release-update-validation", kwargs={"id": 1})
+            reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], 6)

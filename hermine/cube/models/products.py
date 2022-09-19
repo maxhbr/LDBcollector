@@ -75,7 +75,9 @@ class Exploitation(models.Model):
 
     from cube.models.components import Usage
 
-    release = models.ForeignKey(Release, on_delete=models.CASCADE, null=True)
+    release = models.ForeignKey(
+        Release, on_delete=models.CASCADE, related_name="exploitations"
+    )
     scope = models.CharField(max_length=50)
     project = models.CharField(max_length=750, blank=True)
     exploitation = models.CharField(

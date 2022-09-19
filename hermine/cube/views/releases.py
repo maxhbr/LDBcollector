@@ -146,7 +146,7 @@ class ReleaseExploitationForm(Form):
             )
 
             try:
-                self.initial[project + scope] = self.release.exploitation_set.get(
+                self.initial[project + scope] = self.release.exploitations.get(
                     project=project, scope=scope
                 ).exploitation
             except Exploitation.DoesNotExist:
@@ -160,9 +160,6 @@ class ReleaseExploitationForm(Form):
                 project=project,
                 scope=scope,
                 defaults={"exploitation": exploitation_type},
-            )
-            self.release.usage_set.filter(project=project, scope=scope).update(
-                exploitation=exploitation_type
             )
 
         return self.release
