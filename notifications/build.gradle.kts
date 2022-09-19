@@ -33,7 +33,7 @@ repositories {
         }
 
         filter {
-            includeGroup(ortJitPackGroup)
+            includeGroup(libs.ortNotifier.get().module.group)
         }
     }
 
@@ -52,5 +52,5 @@ repositories {
 }
 
 dependencies {
-    compileOnly("$ortJitPackGroup:notifier:$ortJitPackVersion")
+    compileOnly(libs.ortNotifier)
 }

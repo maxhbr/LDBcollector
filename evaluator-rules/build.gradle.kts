@@ -33,11 +33,11 @@ repositories {
         }
 
         filter {
-            includeGroup(ortJitPackGroup)
+            includeGroup(libs.ortEvaluator.get().module.group)
         }
     }
 }
 
 dependencies {
-    compileOnly("$ortJitPackGroup:evaluator:$ortJitPackVersion")
+    compileOnly(libs.ortEvaluator)
 }
