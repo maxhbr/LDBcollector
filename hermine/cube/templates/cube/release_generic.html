@@ -43,16 +43,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <td>{{ usage.version.spdx_valid_license_expr}}</td>
       <td>{{ usage.license_expression }}</td>
       <td>{% for license_chosen in usage.licenses_chosen.all %}
-        <span class="tag
-{% if license_chosen.color == "Green" %}
-is-success
-{% elif license_chosen.color == "Orange" %}
-is-warning
-{% elif license_chosen.color == "Red" %}
-is-danger
-{% else %}
-is-dark
-{% endif %}">
+        <span class="tag {{ license_chosen|licenseCSS }}">
     {{ license_chosen.spdx_id }}
   </span>
       {% endfor %}

@@ -54,7 +54,7 @@ class UsageInlineTab(admin.TabularInline):
 
 class LicenseAdmin(admin.ModelAdmin):
     inlines = [ObligationInline]
-    list_display = ("spdx_id", "color", "status")
+    list_display = ("spdx_id", "allowed", "status")
     list_filter = ["status"]
     search_fields = ["spdx_id"]
     fieldsets = (
@@ -91,8 +91,8 @@ class LicenseAdmin(admin.ModelAdmin):
             {
                 "fields": (
                     "status",
-                    "color",
-                    "color_explanation",
+                    "allowed",
+                    "allowed_explanation",
                     "foss",
                     "legal_uncertainty",
                     "comment",

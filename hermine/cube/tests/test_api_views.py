@@ -27,7 +27,7 @@ class APITestCase(BaseAPITestCase):
         data = {
             "spdx_id": SPDX_ID,
             "long_name": "license posted through api",
-            "color": "Orange",
+            "allowed": "context",
             "copyleft": "Strong",
             "foss": "Yes",
             "obligation_set": [],

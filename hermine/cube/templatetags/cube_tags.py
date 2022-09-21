@@ -11,20 +11,19 @@ register = template.Library()
 
 
 @register.filter
-def getColorTag(value: License):
+def licenseCSS(license: License):
     """Returns the appropriated css tag according to the color of the license.
 
-
-    :param value: A License object
-    :type value: License
+    :param license: A License object
+    :type license: License
     :return: A CSS string
     :rtype: string
     """
-    if value.color == "Green":
+    if license.allowed == License.ALLOWED_ALWAYS:
         return "is-success"
-    elif value.color == "Orange":
+    elif license.allowed == License.ALLOWED_CONTEXT:
         return "is-warning"
-    elif value.color == "Red":
+    elif license.allowed == License.ALLOWED_NEVER:
         return "is-danger"
     else:
         return "is-dark"

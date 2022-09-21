@@ -55,9 +55,9 @@ def is_ambiguous(spdx_expression: str):
 
 def check_licenses_against_policy(release):
     response = {}
-    usages_lic_red = set()
-    usages_lic_orange = set()
-    usages_lic_grey = set()
+    usages_lic_never_allowed = set()
+    usages_lic_context_allowed = set()
+    usages_lic_unknown = set()
     involved_lic = set()
 
     derogations = release.derogation_set.all()
@@ -85,16 +85,16 @@ def check_licenses_against_policy(release):
                 or usage in release_derogs[license.id]["usages"]
                 or usage.scope in release_derogs[license.id]["scopes"]
             )
-            if license.color == "Red" and not derogate:
-                usages_lic_red.add(usage)
-            elif license.color == "Orange" and not derogate:
-                usages_lic_orange.add(usage)
-            elif license.color == "Grey" and not derogate:
-                usages_lic_grey.add(usage)
+            if license.allowed == License.ALLOWED_NEVER and not derogate:
+                usages_lic_never_allowed.add(usage)
+            elif license.allowed == License.ALLOWED_CONTEXT and not derogate:
+                usages_lic_context_allowed.add(usage)
+            elif not license.allowed and not derogate:
+                usages_lic_unknown.add(usage)
 
-    response["usages_lic_red"] = usages_lic_red
-    response["usages_lic_orange"] = usages_lic_orange
-    response["usages_lic_grey"] = usages_lic_grey
+    response["usages_lic_never_allowed"] = usages_lic_never_allowed
+    response["usages_lic_context_allowed"] = usages_lic_context_allowed
+    response["usages_lic_unknown"] = usages_lic_unknown
     response["involved_lic"] = involved_lic
     response["derogations"] = derogations
 
@@ -122,7 +122,7 @@ def get_licenses_to_check_or_create(release):
         for spdx_license in spdx_licenses:
             try:
                 license_instance = License.objects.get(spdx_id=spdx_license)
-                if license_instance.color == "Grey":
+                if not license_instance.allowed:
                     licenses_to_check.add(license_instance)
             except License.DoesNotExist:
                 # It might happen that SPDX throws 'NOASSERTION' instead of an empty

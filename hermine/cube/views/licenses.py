@@ -152,13 +152,13 @@ def print_license(request, license_id):
         textdoc.text.addElement(h)
 
         p = P(text="Validation Color: ")
-        v = Span(stylename=boldstyle, text=license_instance.color)
+        v = Span(stylename=boldstyle, text=license_instance.allowed)
         p.addElement(v)
         textdoc.text.addElement(p)
 
-        if license_instance.color_explanation is not None:
+        if license_instance.allowed_explanation is not None:
             p = P(text="Explanation: ")
-            v = Span(stylename=boldstyle, text=license_instance.color_explanation)
+            v = Span(stylename=boldstyle, text=license_instance.allowed_explanation)
             p.addElement(v)
             textdoc.text.addElement(p)
 

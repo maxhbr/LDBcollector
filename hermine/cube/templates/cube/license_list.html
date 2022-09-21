@@ -6,6 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 {% extends "cube/cube.html" %}
+{% load cube_tags %}
 {% block title %}Licenses{% endblock %}
 {% block breadcrumbs %}
 <ul>
@@ -81,24 +82,14 @@ Licenses
               {% for license in licenses %}
                 <tr>
                   <td>
-                    {% if license.color == "Green" %}
-                      <span class="tag is-success">
-                        {% elif license.color == "Orange" %}
-                          <span class="tag is-warning">
-                        {% elif license.color == "Red" %}
-                          <span class="tag is-danger">
-                        {% elif license.color == "Grey" %}
-                          <span class="tag is-light">
-                        {% else %}
-                          <span class="tag is-dark">
-                      {% endif %}
-                        {{ license.get_color_display }}
+                    <span class="tag {{ license | licenseCSS }}">
+                        {{ license.get_allowed_display }}
                     </span>
                   </td>
                   <td><a href="{% url 'cube:license' license.id %}" >{{ license.spdx_id }}</td>
                   <td>{{ license.long_name }}</td>
                   <td> 
-                    {% if license.color == "Grey" %}
+                    {% if not license.allowed %}
                       Unknown
                       {% else %}
                         {{ license.obligation_set.all|length }}

@@ -157,13 +157,12 @@ In this case, you must set relevant derogations in Hermine UI.
 
 The response is a dictionnary with the following fields :
 
-usages_lic_red
-    An array of usages containing a license that has been marked as "red" by the legal team.
+usages_lic_never_allowed
+    An array of usages containing a license that has been marked as never allowed by the legal team.
 
-usages_lic_orange
-    An array of usages containing a license that has been marked as "orange" by the legal team, which means that this license can sometimes be accepted depending on the context.
-
-usages_lic_grey
+usages_lic_context_allowed
+    An array of usages containing a license that has been marked as allowed depending on context by the legal team.
+usages_lic_unknown
     An array of usages containing a license that still has to be reviewed by the legal team.
 
 involved_lic
