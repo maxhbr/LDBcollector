@@ -117,17 +117,8 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
         <div class="column">
           <p>Validation :
-            <span class="tag
-              {% if license.color == "Green" %}
-                is-success
-                {% elif license.color == "Orange" %}
-                is-warning
-                {% elif license.color == "Red" %}
-                is-danger
-                {% else %}
-                is-dark
-              {% endif %}">
-              {{ license.get_color_display }}
+            <span class="tag {{ license|licenseCSS }}">
+              {{ license.get_allowed_display }}
             </span>
           </p>
           <p>Copyleft :

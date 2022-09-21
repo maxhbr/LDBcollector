@@ -162,7 +162,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
 
-  {% if usages_lic_grey %}
+  {% if usages_lic_unknown %}
     <article class="message is-dark">
       <div class="message-header">
         <p>Some components use unreviewed licenses</p>
@@ -186,7 +186,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </tr>
       </thead>
       <tbody>
-        {% for usage in usages_lic_grey %}
+        {% for usage in usages_lic_unknown %}
           <tr>
             <td>{{usage.version.component.name }} </td>
             <td>{{usage.version.version_number }}</td>
@@ -195,8 +195,8 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{usage.license_expression }} </td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
-                <a href="/license/{{license_chosen.id}}"
-                  <span class="tag {{ license_chosen|getColorTag }}">
+                <a href="/license/{{license_chosen.id}}">
+                  <span class="tag {{ license_chosen|licenseCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
                 </a>
@@ -413,7 +413,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td>
               <a href="/license/{{derogation.license.id}}"
-                <span class="tag {{ derogation.license|getColorTag }}">
+                <span class="tag {{ derogation.license|licenseCSS }}">
                   {{ derogation.license.spdx_id }}
                 </span>>
               </a>
@@ -440,13 +440,13 @@ SPDX-License-Identifier: AGPL-3.0-only
     </table>
   {% endif %}
 
-  {% if usages_lic_red %}
+  {% if usages_lic_never_allowed %}
     <article class="message is-danger">
       <div class="message-header">
         <p>Some components use forbiden licenses</p>
       </div>
       <div class="message-body">
-        The following <strong>{{usages_lic_red|length}}</strong> components use licenses that are forbidden by your policy:
+        The following <strong>{{usages_lic_never_allowed|length}}</strong> components use licenses that are forbidden by your policy:
       </div>
     </article>
 
@@ -464,7 +464,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </tr>
       </thead>
       <tbody>
-        {% for usage in usages_lic_red %}
+        {% for usage in usages_lic_never_allowed %}
           <tr>
             <td>{{usage.version.component.name }} </td>
             <td>{{usage.version.version_number }}</td>
@@ -474,7 +474,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="/license/{{license_chosen.id}}"
-                  <span class="tag {{ license_chosen|getColorTag }}">
+                  <span class="tag {{ license_chosen|licenseCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
                 </a>
@@ -491,13 +491,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   {% endif %}
 
-  {% if usages_lic_orange %}
+  {% if usages_lic_context_allowed %}
     <article class="message is-warning">
       <div class="message-header">
         <p>Some components use context conditionned licenses</p>
       </div>
       <div class="message-body">
-        The following <strong>{{usages_lic_orange|length}}</strong> are under a license, the validity of which depends on the context: please check them
+        The following <strong>{{usages_lic_context_allowed|length}}</strong> are under a license, the validity of which depends on the context: please check them
       </div>
     </article>
 
@@ -515,7 +515,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </tr>
       </thead>
       <tbody>
-        {% for usage in usages_lic_orange %}
+        {% for usage in usages_lic_context_allowed %}
           <tr>
             <td>{{usage.version.component.name }} </td>
             <td>{{usage.version.version_number }}</td>
@@ -525,7 +525,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="/license/{{license_chosen.id}}"
-                    <span class="tag {{ license_chosen|getColorTag }}">
+                    <span class="tag {{ license_chosen|licenseCSS }}">
                       {{ license_chosen.spdx_id }}
                     </span>
                   </a>

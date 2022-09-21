@@ -109,14 +109,14 @@ def validate_step_5(release):
     r = check_licenses_against_policy(release)
 
     step_5_valid = (
-        len(r["usages_lic_red"]) == 0
-        and len(r["usages_lic_orange"]) == 0
-        and len(r["usages_lic_grey"]) == 0
+        len(r["usages_lic_never_allowed"]) == 0
+        and len(r["usages_lic_context_allowed"]) == 0
+        and len(r["usages_lic_unknown"]) == 0
     )
 
-    context["usages_lic_red"] = r["usages_lic_red"]
-    context["usages_lic_orange"] = r["usages_lic_orange"]
-    context["usages_lic_grey"] = r["usages_lic_grey"]
+    context["usages_lic_never_allowed"] = r["usages_lic_never_allowed"]
+    context["usages_lic_context_allowed"] = r["usages_lic_context_allowed"]
+    context["usages_lic_unknown"] = r["usages_lic_unknown"]
     context["involved_lic"] = r["involved_lic"]
     context["derogations"] = r["derogations"]
 
@@ -148,7 +148,7 @@ def update_validation_step(release: Release):
         validation_step = 5
 
     step5, context = validate_step_5(release)
-    if len(context["usages_lic_grey"]) > 0 and validation_step > 2:
+    if len(context["usages_lic_unknown"]) > 0 and validation_step > 2:
         validation_step = 2
     info.update(context)
     if step5 and validation_step == 5:

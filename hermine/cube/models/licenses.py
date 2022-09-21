@@ -24,11 +24,14 @@ class License(models.Model):
         ("Network", "Strong network copyleft"),
         ("NetworkWeak", "Weak network copyleft"),
     ]
-    COLOR_CHOICES = [
-        ("Green", "Always allowed"),
-        ("Red", "Never allowed"),
-        ("Orange", "Allowed depending on context"),
-        ("Grey", "No reviewed yet"),
+    ALLOWED_ALWAYS = "always"
+    ALLOWED_NEVER = "never"
+    ALLOWED_CONTEXT = "context"
+    ALLOWED_CHOICES = [
+        ("always", "Always allowed"),
+        ("never", "Never allowed"),
+        ("context", "Allowed depending on context"),
+        ("", "Not reviewed yet"),
     ]
     FOSS_CHOICES = [
         ("Yes", "We consider it is FOSS"),
@@ -62,8 +65,8 @@ class License(models.Model):
     )
 
     copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
-    color = models.CharField(max_length=20, choices=COLOR_CHOICES, default="Grey")
-    color_explanation = models.CharField(max_length=200, blank=True)
+    allowed = models.CharField(max_length=20, choices=ALLOWED_CHOICES, blank=True)
+    allowed_explanation = models.CharField(max_length=200, blank=True)
     url = models.URLField(max_length=200, blank=True)
     osi_approved = models.BooleanField(null=True)
     fsf_approved = models.BooleanField(null=True)

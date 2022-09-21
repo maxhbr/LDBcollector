@@ -246,9 +246,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         valid, context = validate_step_5(release)
         if not valid:
             count = (
-                len(context["usages_lic_red"])
-                + len(context["usages_lic_orange"])
-                + len(context["usages_lic_grey"])
+                len(context["usages_lic_never_allowed"])
+                + len(context["usages_lic_context_allowed"])
+                + len(context["usages_lic_unknown"])
             )
             step5.add_failure_info(f"{count} invalid component usages")
 

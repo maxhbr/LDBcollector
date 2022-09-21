@@ -129,9 +129,9 @@ class Validation4Serializer(serializers.Serializer):
 
 class Validation5Serializer(serializers.Serializer):
     valid = serializers.BooleanField(label="Step is valid", read_only=True)
-    usages_lic_red = UsageSerializer(read_only=True, many=True)
-    usages_lic_orange = UsageSerializer(read_only=True, many=True)
-    usages_lic_grey = UsageSerializer(read_only=True, many=True)
+    usages_lic_never_allowed = UsageSerializer(read_only=True, many=True)
+    usages_lic_context_allowed = UsageSerializer(read_only=True, many=True)
+    usages_lic_unknown = UsageSerializer(read_only=True, many=True)
     involved_lic = LicenseSerializer(read_only=True, many=True)
     derogations = DerogationSerializer(read_only=True, many=True)
     details = serializers.URLField(read_only=True)
