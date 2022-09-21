@@ -1,4 +1,4 @@
-Public Domain Erklärungen
+## Public Domain Erklärungen
 
 Diese Erklärungen dienen dazu, auf das Copyright an einem Werk zu verzichten bzw. einem Rechtsverzicht an Urheberrechten möglichst nahe zu kommen, um eine unbeschränkte Nutzung zu ermöglichen. 
 
