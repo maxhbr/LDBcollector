@@ -163,7 +163,7 @@ proprietäre Software überführen.
 45. Universal Permissive License (v. 1.0): http://www.oracle.com/technetwork/licenses/upl-license-2927578.html
 46. University of Illinois/NCSA Open Source License (NSCA): https://web.archive.org/web/20100814031321/http://otm.illinois.edu/uiuc_openSource
 47. Unlicense: http://unlicense.org/
-48. http://www.vbaccelerator.com/home/The_Site/Usage_Policy/article.htmlvbAccelerator Software License (v. 1.0): http://www.vbaccelerator.com/home/The_Site/Usage_Policy/article.html
+48. vbAccelerator Software License (v. 1.0): http://www.vbaccelerator.com/home/The_Site/Usage_Policy/article.html
 49. Vovida Software License v 1.0: https://web.archive.org/web/20050410031206/http://www.vovida.org/document/VOCAL-1.4.0/license.txt
 50. W3C Software and Document Notice and License: http://www.w3.org/Consortium/Legal/copyright-software.html
 51. Wide Open License (WOL): http://www.dspguru.com/wol2.htm
