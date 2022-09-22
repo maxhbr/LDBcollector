@@ -862,28 +862,6 @@ categorizations:
   - osi-approved
   id: CPL-1.0
 - categories:
-  - saas-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - condition:disclose-source
-  - condition:network-use-disclose
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: AGPL-3.0-only
-- categories:
   - weak-copyleft
   - copyleft
   - maybe-rating:Attention
@@ -1171,27 +1149,6 @@ categorizations:
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OGC-1.0
-- categories:
-  - strong-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:document-changes
-  - condition:disclose-source
-  - condition:same-license
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: GPL-3.0-only
 - categories:
   - permissive
   - maybe-rating:Attention
@@ -2376,10 +2333,6 @@ categorizations:
   id: OLDAP-1.4
 - categories:
   - permissive
-  - rating:Go
-  id: ICU
-- categories:
-  - permissive
   - osi-approved
   - fsf-free
   id: Intel
@@ -2502,27 +2455,6 @@ categorizations:
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: Aladdin
-- categories:
-  - weak-copyleft
-  - copyleft
-  - has-patent-hint
-  - maybe-rating:Attention
-  - maybe-rating:Stop
-  - maybe-rating:No-Go
-  - right:commercial-use
-  - right:modifications
-  - right:distribution
-  - right:patent-use
-  - right:private-use
-  - condition:include-copyright
-  - condition:disclose-source
-  - condition:document-changes
-  - condition:same-license--library
-  - limitation:liability
-  - limitation:warranty
-  - osi-approved
-  - fsf-free
-  id: LGPL-3.0-only
 - categories:
   - copyleft
   - maybe-rating:Attention
@@ -2959,11 +2891,6 @@ categorizations:
   - non-commercial
   - rating:No-Go
   id: CC-BY-NC-1.0
-- categories:
-  - permissive
-  - has-no-patent-hint
-  - rating:Go
-  id: PSF-2.0
 - categories:
   - permissive
   - rating:Go
