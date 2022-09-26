@@ -62,16 +62,6 @@
             },
             "spdxLicenseId": "curl"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt",
-            "spdxId": "curl",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "curl"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://curl.haxx.se/legal/licmix.html",

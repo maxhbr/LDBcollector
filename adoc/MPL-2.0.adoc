@@ -207,57 +207,6 @@ AND
 
 (source: Hitachi open-license)
 
-=== OSADL Rule
-
-....
-USE CASE Source code delivery
-	YOU MUST Provide License notice
-	YOU MUST Reference License text
-	YOU MUST NOT Modify Legal notices
-	IF Service offerings
-		ATTRIBUTE NOT Transferable
-		YOU MUST Indemnify Other contributors
-	IF Software modification
-		YOU MUST Grant License
-			ATTRIBUTE Original license
-	YOU MUST NOT Restrict Granted rights
-USE CASE Binary delivery
-	YOU MUST Inform Recipients
-		ATTRIBUTE Delayed source code delivery
-			ATTRIBUTE Reasonable
-			ATTRIBUTE Timely
-			ATTRIBUTE No profit
-	USE CASE License change
-		YOU MUST NOT Restrict Granted rights For Source code
-	IF Service offerings
-		ATTRIBUTE NOT Transferable
-		YOU MUST Indemnify Other contributors
-COMPATIBILITY BSD-2-Clause
-COMPATIBILITY BSD-2-Clause-Patent
-COMPATIBILITY BSD-3-Clause
-COMPATIBILITY BSL-1.0
-COMPATIBILITY bzip2-1.0.5
-COMPATIBILITY bzip2-1.0.6
-COMPATIBILITY CC0-1.0
-COMPATIBILITY curl
-COMPATIBILITY EFL-2.0
-COMPATIBILITY IBM-pibs
-COMPATIBILITY ICU
-COMPATIBILITY ISC
-COMPATIBILITY Libpng
-COMPATIBILITY MIT
-COMPATIBILITY NTP
-COMPATIBILITY UPL-1.0
-COMPATIBILITY WTFPL
-COMPATIBILITY X11
-COMPATIBILITY Zlib
-COMPATIBILITY ZPL-2.0
-COPYLEFT CLAUSE Yes
-PATENT HINTS Yes
-....
-
-(source: OSADL License Checklist)
-
 === Text
 
 ....
@@ -663,8 +612,6 @@ Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0.txt[OSADL
-License Checklist] (NOASSERTION)
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/MPL-2.0.yaml[finos/OSLC-handbook]
@@ -840,24 +787,6 @@ repository] is generated)
             },
             "licensename": "MPL-2.0",
             "copyleftkind": "WeakCopyleft"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0.txt",
-            "spdxId": "MPL-2.0",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights For Source code\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nCOPYLEFT CLAUSE Yes\nPATENT HINTS Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MPL-2.0"
-                ],
-                "__hasPatentHint": true,
-                "__impliedCopyleft": [
-                    [
-                        "OSADL License Checklist",
-                        "Copyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "Copyleft"
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -1658,10 +1587,6 @@ repository] is generated)
         [
             "HansHammel license-compatibility-checker",
             "WeakCopyleft"
-        ],
-        [
-            "OSADL License Checklist",
-            "Copyleft"
         ],
         [
             "Scancode",

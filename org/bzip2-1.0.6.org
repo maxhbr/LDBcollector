@@ -104,25 +104,6 @@
 
 (source: Hitachi open-license)
 
-** OSADL Rule
-#+begin_example
-  USE CASE Source code delivery
-  	YOU MUST Forward Copyright notices
-  	YOU MUST Forward License text
-  	YOU MUST Forward Warranty disclaimer
-  	YOU MUST NOT Appropriate
-  	IF Software modification
-  		YOU MUST Mark
-  		YOU MUST NOT Appropriate
-  		YOU MUST NOT Promote
-  USE CASE Binary delivery
-  	YOU MUST NOT Appropriate
-  	IF Software modification
-  		YOU MUST NOT Promote
-#+end_example
-
-(source: OSADL License Checklist)
-
 ** Text
 #+begin_example
   Redistribution and use in source and binary forms, with or without
@@ -169,9 +150,6 @@
 
 - [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bz]/bzip2-License-1.0.6.yaml][Metaeffekt
   Universe]] (CC-BY-4.0)
-
-- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt][OSADL
-  License Checklist]] (NOASSERTION)
 
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
@@ -259,16 +237,6 @@
                   ]
               },
               "spdxLicenseId": "bzip2-1.0.6"
-          },
-          "OSADL License Checklist": {
-              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt",
-              "spdxId": "bzip2-1.0.6",
-              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\t\tYOU MUST NOT Appropriate\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST NOT Promote\n",
-              "_implications": {
-                  "__impliedNames": [
-                      "bzip2-1.0.6"
-                  ]
-              }
           },
           "Scancode": {
               "otherUrls": [

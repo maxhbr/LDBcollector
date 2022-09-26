@@ -1663,16 +1663,6 @@
         {
             "spdx_id": "LGPL-3.0-only",
             "comment": null,
-            "license_expression": "LGPL-3.0-or-later"
-        },
-        {
-            "spdx_id": "LGPL-3.0-only",
-            "comment": null,
-            "license_expression": "LGPL-3.0"
-        },
-        {
-            "spdx_id": "LGPL-3.0-only",
-            "comment": null,
             "license_expression": "LGPL-3.0"
         },
         {
@@ -3903,16 +3893,6 @@
         {
             "spdx_id": "AGPL-3.0-only",
             "comment": null,
-            "license_expression": "AGPL-3.0-or-later"
-        },
-        {
-            "spdx_id": "AGPL-3.0-only",
-            "comment": null,
-            "license_expression": "AGPL-3.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-only",
-            "comment": null,
             "license_expression": "AGPL-3.0"
         },
         {
@@ -4659,11 +4639,6 @@
             "spdx_id": "ICU",
             "comment": null,
             "license_expression": "X11 License"
-        },
-        {
-            "spdx_id": "ICU",
-            "comment": null,
-            "license_expression": "X11"
         },
         {
             "spdx_id": "ICU",
@@ -5443,16 +5418,6 @@
         {
             "spdx_id": "GPL-3.0-or-later",
             "comment": null,
-            "license_expression": "GPL-3.0-only"
-        },
-        {
-            "spdx_id": "GPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "GPL-3.0"
-        },
-        {
-            "spdx_id": "GPL-3.0-or-later",
-            "comment": null,
             "license_expression": "GPL-3.0"
         },
         {
@@ -5748,11 +5713,6 @@
         {
             "spdx_id": "GPL-2.0-only",
             "comment": null,
-            "license_expression": "GPL-2.0"
-        },
-        {
-            "spdx_id": "GPL-2.0-only",
-            "comment": null,
             "license_expression": "GNU General Public License, Version 2.0"
         },
         {
@@ -5834,11 +5794,6 @@
             "spdx_id": "PSF-2.0",
             "comment": null,
             "license_expression": "Python License 2.0"
-        },
-        {
-            "spdx_id": "PSF-2.0",
-            "comment": null,
-            "license_expression": "Python-2.0"
         },
         {
             "spdx_id": "PSF-2.0",
@@ -9773,11 +9728,6 @@
         {
             "spdx_id": "LGPL-2.1-only",
             "comment": null,
-            "license_expression": "LGPL-2.1"
-        },
-        {
-            "spdx_id": "LGPL-2.1-only",
-            "comment": null,
             "license_expression": "GNU Lesser General Public License, Version 2.1"
         },
         {
@@ -10633,16 +10583,6 @@
         {
             "spdx_id": "AGPL-3.0-or-later",
             "comment": null,
-            "license_expression": "AGPL-3.0-only"
-        },
-        {
-            "spdx_id": "AGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "AGPL-3.0"
-        },
-        {
-            "spdx_id": "AGPL-3.0-or-later",
-            "comment": null,
             "license_expression": "AGPL-3.0"
         },
         {
@@ -10914,11 +10854,6 @@
             "spdx_id": "X11",
             "comment": null,
             "license_expression": "X11 License"
-        },
-        {
-            "spdx_id": "X11",
-            "comment": null,
-            "license_expression": "ICU"
         },
         {
             "spdx_id": "X11",
@@ -11704,16 +11639,6 @@
             "spdx_id": "LGPL-3.0-or-later",
             "comment": null,
             "license_expression": "GNU Lesser General Public License 3.0"
-        },
-        {
-            "spdx_id": "LGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "LGPL-3.0-only"
-        },
-        {
-            "spdx_id": "LGPL-3.0-or-later",
-            "comment": null,
-            "license_expression": "LGPL-3.0"
         },
         {
             "spdx_id": "LGPL-3.0-or-later",
@@ -13164,16 +13089,6 @@
             "spdx_id": "GPL-3.0-only",
             "comment": null,
             "license_expression": "GNU General Public License 3.0"
-        },
-        {
-            "spdx_id": "GPL-3.0-only",
-            "comment": null,
-            "license_expression": "GPL-3.0-or-later"
-        },
-        {
-            "spdx_id": "GPL-3.0-only",
-            "comment": null,
-            "license_expression": "GPL-3.0"
         },
         {
             "spdx_id": "GPL-3.0-only",

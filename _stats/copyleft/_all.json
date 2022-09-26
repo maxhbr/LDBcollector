@@ -14,9 +14,6 @@
         ],
         "SaaSCopyleft": [
             "BlueOak License List"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "ErlPL-1.1": {
@@ -97,9 +94,6 @@
         ]
     },
     "MS-PL": {
-        "MaybeCopyleft": [
-            "OSADL License Checklist"
-        ],
         "NoCopyleft": [
             "BlueOak License List",
             "Google OSS Policy",
@@ -141,7 +135,6 @@
             "librariesio license-compatibility"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -197,37 +190,6 @@
             "Scancode"
         ]
     },
-    "MPL-1.1": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode",
-            "librariesio license-compatibility"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
-    "CDDL-1.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
-    "MPL-2.0-no-copyleft-exception": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "OLDAP-1.4": {
         "NoCopyleft": [
             "BlueOak License List",
@@ -252,9 +214,6 @@
         "WeakCopyleft": [
             "BlueOak License List",
             "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "OSL-2.1": {
@@ -269,17 +228,6 @@
             "Scancode"
         ]
     },
-    "OpenSSL": {
-        "MaybeCopyleft": [
-            "OSADL License Checklist"
-        ],
-        "NoCopyleft": [
-            "BlueOak License List",
-            "Google OSS Policy",
-            "HansHammel license-compatibility-checker",
-            "Scancode"
-        ]
-    },
     "OSL-3.0": {
         "StrongCopyleft": [
             "HansHammel license-compatibility-checker"
@@ -289,7 +237,6 @@
             "librariesio license-compatibility"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -324,7 +271,6 @@
             "librariesio license-compatibility"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -415,9 +361,6 @@
         ],
         "SaaSCopyleft": [
             "librariesio license-compatibility"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "GPL-2.0-or-later": {
@@ -427,19 +370,7 @@
             "librariesio license-compatibility"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
-        ]
-    },
-    "LGPL-3.0-or-later": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode",
-            "librariesio license-compatibility"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "CPAL-1.0": {
@@ -472,33 +403,12 @@
             "Scancode"
         ]
     },
-    "LGPL-2.1-or-later": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode",
-            "librariesio license-compatibility"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "CECILL-2.1": {
         "NoCopyleft": [
             "HansHammel license-compatibility-checker"
         ],
         "WeakCopyleft": [
             "Scancode"
-        ]
-    },
-    "IPL-1.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "RPSL-1.0": {
@@ -518,9 +428,6 @@
         ],
         "SaaSCopyleft": [
             "BlueOak License List"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "Artistic-1.0-Perl": {
@@ -612,9 +519,6 @@
         "WeakCopyleft": [
             "BlueOak License List",
             "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "CECILL-2.0": {
@@ -642,9 +546,6 @@
         "WeakCopyleft": [
             "BlueOak License List",
             "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "SugarCRM-1.1.3": {
@@ -670,7 +571,6 @@
             "librariesio license-compatibility"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -712,17 +612,6 @@
             "Scancode"
         ]
     },
-    "MPL-2.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode",
-            "librariesio license-compatibility"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "BSD-Protection": {
         "StrongCopyleft": [
             "BlueOak License List"
@@ -755,7 +644,6 @@
             "librariesio license-compatibility"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -767,9 +655,6 @@
             "BlueOak License List",
             "Scancode",
             "librariesio license-compatibility"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "OSL-1.1": {
@@ -792,17 +677,6 @@
             "Scancode"
         ]
     },
-    "LGPL-2.1-only": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode",
-            "librariesio license-compatibility"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "APSL-1.2": {
         "WeakCopyleft": [
             "HansHammel license-compatibility-checker",
@@ -810,17 +684,6 @@
         ],
         "SaaSCopyleft": [
             "BlueOak License List"
-        ]
-    },
-    "LGPL-3.0-only": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "HansHammel license-compatibility-checker",
-            "Scancode",
-            "librariesio license-compatibility"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "OLDAP-1.2": {
@@ -849,7 +712,6 @@
             "librariesio license-compatibility"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     }

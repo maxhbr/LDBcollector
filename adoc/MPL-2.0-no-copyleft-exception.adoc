@@ -7,7 +7,6 @@
 |Shortname |MPL-2.0-no-copyleft-exception
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|Has Patent Hint |True
 |===
 
 *Other Names:*
@@ -44,57 +43,6 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *SPDX:* https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json
 * https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html
 
-=== OSADL Rule
-
-....
-USE CASE Source code delivery
-	YOU MUST Provide License notice
-	YOU MUST Reference License text
-	YOU MUST NOT Modify Legal notices
-	IF Service offerings
-		ATTRIBUTE NOT Transferable
-		YOU MUST Indemnify Other contributors
-	IF Software modification
-		YOU MUST Grant License
-			ATTRIBUTE Original license
-	YOU MUST NOT Restrict Granted rights
-USE CASE Binary delivery
-	YOU MUST Inform Recipients
-		ATTRIBUTE Delayed source code delivery
-			ATTRIBUTE Reasonable
-			ATTRIBUTE Timely
-			ATTRIBUTE No profit
-	USE CASE License change
-		YOU MUST NOT Restrict Granted rights For Source code
-	IF Service offerings
-		ATTRIBUTE NOT Transferable
-		YOU MUST Indemnify Other contributors
-COMPATIBILITY BSD-2-Clause
-COMPATIBILITY BSD-2-Clause-Patent
-COMPATIBILITY BSD-3-Clause
-COMPATIBILITY BSL-1.0
-COMPATIBILITY bzip2-1.0.5
-COMPATIBILITY bzip2-1.0.6
-COMPATIBILITY CC0-1.0
-COMPATIBILITY curl
-COMPATIBILITY EFL-2.0
-COMPATIBILITY IBM-pibs
-COMPATIBILITY ICU
-COMPATIBILITY ISC
-COMPATIBILITY Libpng
-COMPATIBILITY MIT
-COMPATIBILITY MPL-2.0
-COMPATIBILITY NTP
-COMPATIBILITY UPL-1.0
-COMPATIBILITY WTFPL
-COMPATIBILITY X11
-COMPATIBILITY Zlib
-COPYLEFT CLAUSE Yes
-PATENT HINTS Yes
-....
-
-(source: OSADL License Checklist)
-
 === Text
 
 ....
@@ -116,8 +64,6 @@ defined by the Mozilla Public License, v. 2.0.
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0-no-copyleft-exception.txt[OSADL
-License Checklist] (NOASSERTION)
 * https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html[SPDX]
 (all data [in this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml[Scancode]
@@ -152,7 +98,6 @@ License Checklist] (NOASSERTION)
             ]
         ]
     ],
-    "__hasPatentHint": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -206,24 +151,6 @@ License Checklist] (NOASSERTION)
                 ]
             },
             "spdxLicenseId": "MPL-2.0-no-copyleft-exception"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0-no-copyleft-exception.txt",
-            "spdxId": "MPL-2.0-no-copyleft-exception",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights For Source code\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOPYLEFT CLAUSE Yes\nPATENT HINTS Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MPL-2.0-no-copyleft-exception"
-                ],
-                "__hasPatentHint": true,
-                "__impliedCopyleft": [
-                    [
-                        "OSADL License Checklist",
-                        "Copyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "Copyleft"
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -383,10 +310,6 @@ License Checklist] (NOASSERTION)
         [
             "HansHammel license-compatibility-checker",
             "WeakCopyleft"
-        ],
-        [
-            "OSADL License Checklist",
-            "Copyleft"
         ],
         [
             "Scancode",

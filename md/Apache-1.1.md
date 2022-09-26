@@ -118,29 +118,6 @@
 
 (source: Hitachi open-license)
 
-## OSADL Rule
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	IF Documentation
-    		YOU MUST Credit Verbatim In Documentation "This product includes software developed by the Apache Software Foundation (http://www.apache.org/)."
-    	IF Software modification
-    		YOU MUST NOT Promote using "Apache" or "Apache Software Foundation"
-    		YOU MUST NOT Use "Apache" [ex. "Jakarta," "Apache," or "Apache Commons,"] in product name
-    USE CASE Binary delivery
-    	IF Documentation
-    		YOU MUST Credit Verbatim In Documentation "This product includes software developed by the Apache Software Foundation (http://www.apache.org/)."
-    	YOU MUST Forward Copyright notices In Documentation OR Distribution material
-    	YOU MUST Forward License text In Documentation OR Distribution material
-    	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
-    	IF Software modification
-    		YOU MUST NOT Promote using "Apache" or "Apache Software Foundation"
-    		YOU MUST NOT Use "Apache" [ex. "Jakarta," "Apache," or "Apache Commons,"] in product name
-
-(source: OSADL License Checklist)
-
 ## Text
 
     The Apache Software License, Version 1.1
@@ -226,10 +203,6 @@
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt "OSADL License Checklist")
-    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -385,16 +358,6 @@
                     ]
                 },
                 "spdxLicenseId": "Apache-1.1"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt",
-                "spdxId": "Apache-1.1",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim In Documentation \"This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache\" or \"Apache Software Foundation\"\n\t\tYOU MUST NOT Use \"Apache\" [ex. \"Jakarta,\" \"Apache,\" or \"Apache Commons,\"] in product name\nUSE CASE Binary delivery\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim In Documentation \"This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\"\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache\" or \"Apache Software Foundation\"\n\t\tYOU MUST NOT Use \"Apache\" [ex. \"Jakarta,\" \"Apache,\" or \"Apache Commons,\"] in product name\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "Apache-1.1"
-                    ]
-                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "NO",

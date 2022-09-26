@@ -119,16 +119,6 @@
 
 (source: Hitachi open-license)
 
-## OSADL Rule
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    USE CASE Binary delivery
-
-(source: OSADL License Checklist)
-
 ## Text
 
     Boost Software License - Version 1.0 - August 17th, 2003
@@ -185,10 +175,6 @@
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSL-1.0.txt "OSADL License Checklist")
-    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -338,16 +324,6 @@
                     ]
                 },
                 "spdxLicenseId": "BSL-1.0"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSL-1.0.txt",
-                "spdxId": "BSL-1.0",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "BSL-1.0"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

@@ -138,18 +138,6 @@ AND
 
 (source: Hitachi open-license)
 
-=== OSADL Rule
-
-....
-USE CASE Source code delivery
-	YOU MUST Forward Copyright notices
-	YOU MUST Forward License text
-	YOU MUST Forward Warranty disclaimer
-USE CASE Binary delivery
-....
-
-(source: OSADL License Checklist)
-
 === Text
 
 ....
@@ -199,8 +187,6 @@ Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/BSL-1.0.txt[OSADL
-License Checklist] (NOASSERTION)
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/BSL-1.0.yaml[finos/OSLC-handbook]
@@ -343,16 +329,6 @@ repository] is generated)
                 ]
             },
             "spdxLicenseId": "BSL-1.0"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSL-1.0.txt",
-            "spdxId": "BSL-1.0",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n",
-            "_implications": {
-                "__impliedNames": [
-                    "BSL-1.0"
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [

@@ -91,17 +91,6 @@
 
 (source: Hitachi open-license)
 
-## OSADL Rule
-
-    USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Provide Copyright notices In Documentation
-    	YOU MUST Provide License text In Documentation
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
-
 ## Text
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -158,14 +147,6 @@
 -   [Metaeffekt
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[x1]/X11-License.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt "OSADL License Checklist")
-    (NOASSERTION)
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/X11.txt "OSADL License Checklist")
-    (NOASSERTION)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -256,16 +237,6 @@
                     ]
                 },
                 "spdxLicenseId": "ICU"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt",
-                "spdxId": "ICU",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "ICU"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

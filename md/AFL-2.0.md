@@ -45,35 +45,6 @@
 
 -   http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
 
-## OSADL Rule
-
-    USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Reference License text
-    	YOU MUST Search License acceptance
-    		ATTRIBUTE Reasonable
-    	IF Software modification
-    		YOU MUST Forward Copyright notices
-    		YOU MUST Forward Patent notice
-    		YOU MUST Forward Trademark notice
-    		YOU MUST Forward License notice
-    		YOU MUST Provide Modification notice
-    		YOU MUST NOT Promote
-    		IF Modified work Under Original license
-    			EITHER
-    				YOU MUST Include Source code Of Modified work
-    					ATTRIBUTE Machine-readable
-    			OR
-    				YOU MUST Provide Delayed source code delivery Of Modified work
-    					ATTRIBUTE Machine-readable
-    					ATTRIBUTE Via Internet
-    					ATTRIBUTE No profit
-    					ATTRIBUTE Duration As long as distributed
-    				YOU MUST Reference Source code
-    					ATTRIBUTE Below Copyright notice
-    PATENT HINTS Yes
-
-(source: OSADL License Checklist)
-
 ## Text
 
     Academic Free License
@@ -146,10 +117,6 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-2.0.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.0.txt "OSADL License Checklist")
-    (NOASSERTION)
-
 -   [SPDX](https://spdx.org/licenses/AFL-2.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -192,7 +159,6 @@
                 ]
             ]
         ],
-        "__hasPatentHint": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -257,17 +223,6 @@
                 },
                 "licensename": "AFL-2.0",
                 "copyleftkind": "NoCopyleft"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.0.txt",
-                "spdxId": "AFL-2.0",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Reference License text\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notice\n\t\tYOU MUST Forward Trademark notice\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST NOT Promote\n\t\tIF Modified work Under Original license\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Source code Of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tOR\n\t\t\t\tYOU MUST Provide Delayed source code delivery Of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tATTRIBUTE Duration As long as distributed\n\t\t\t\tYOU MUST Reference Source code\n\t\t\t\t\tATTRIBUTE Below Copyright notice\nPATENT HINTS Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "AFL-2.0"
-                    ],
-                    "__hasPatentHint": true
-                }
             },
             "Scancode": {
                 "otherUrls": [

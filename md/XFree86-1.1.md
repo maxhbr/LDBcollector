@@ -80,29 +80,6 @@
 
 (source: Hitachi open-license)
 
-## OSADL Rule
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	IF Documentation
-    		YOU MUST Credit Verbatim "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors." in Documentation
-    	IF NOT Documentation
-    		YOU MUST Credit Verbatim "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors." In Source code delivery
-    	YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	IF Documentation
-    		YOU MUST Credit Verbatim "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors." in Documentation
-    	IF NOT Documentation
-    		YOU MUST Credit Verbatim "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors." In Binary delivery
-    	YOU MUST Forward Copyright notices In Documentation OR Distribution material
-    	YOU MUST Forward License text In Documentation OR Distribution material
-    	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
-
 ## Text
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -162,10 +139,6 @@
 -   [Metaeffekt
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[x]/[xf]/XFree86-License-1.1.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/XFree86-1.1.txt "OSADL License Checklist")
-    (NOASSERTION)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -242,16 +215,6 @@
                     ]
                 },
                 "spdxLicenseId": "XFree86-1.1"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/XFree86-1.1.txt",
-                "spdxId": "XFree86-1.1",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\" in Documentation\n\tIF NOT Documentation\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\" In Source code delivery\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\" in Documentation\n\tIF NOT Documentation\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\" In Binary delivery\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "XFree86-1.1"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,

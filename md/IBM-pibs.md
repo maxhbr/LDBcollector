@@ -31,15 +31,6 @@
 
 -   **SPDX:** https://spdx.org/licenses/IBM-pibs.json
 
-## OSADL Rule
-
-    USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Provide Copyright notice (Copyright notice)
-    	YOU MUST Provide License text
-    PATENT HINTS Yes
-
-(source: OSADL License Checklist)
-
 ## Text
 
     This source code has been made available to you by IBM on an AS-IS
@@ -76,10 +67,6 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ib]/IBM-pibs-License.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IBM-pibs.txt "OSADL License Checklist")
-    (NOASSERTION)
-
 -   [SPDX](https://spdx.org/licenses/IBM-pibs.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -112,7 +99,6 @@
                 ]
             ]
         ],
-        "__hasPatentHint": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -152,17 +138,6 @@
                     ]
                 },
                 "spdxLicenseId": "IBM-pibs"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/IBM-pibs.txt",
-                "spdxId": "IBM-pibs",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide Copyright notice (Copyright notice)\n\tYOU MUST Provide License text\nPATENT HINTS Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "IBM-pibs"
-                    ],
-                    "__hasPatentHint": true
-                }
             },
             "Scancode": {
                 "otherUrls": null,

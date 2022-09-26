@@ -149,48 +149,6 @@
 
 (source: Hitachi open-license)
 
-## OSADL Rule
-
-    USE CASE Source code delivery
-    	YOU MUST Grant License
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward Patent notices
-    	YOU MUST Forward Trademark notices
-    	YOU MUST Forward License text
-    	YOU MUST Use Original license
-    USE CASE Binary delivery
-    	YOU MUST Grant License
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward Patent notices
-    	YOU MUST Forward Trademark notices
-    	YOU MUST Use Compatible license
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY BSD-4-Clause
-    COMPATIBILITY BSD-4-Clause-UC
-    COMPATIBILITY BSL-1.0
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY EFL-2.0
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    COMPATIBILITY ZPL-2.0
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Questionable
-
-(source: OSADL License Checklist)
-
 ## Text
 
     Microsoft Public License (Ms-PL)
@@ -289,10 +247,6 @@
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MS-PL.txt "OSADL License Checklist")
-    (NOASSERTION)
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -354,7 +308,7 @@
                 ]
             ]
         ],
-        "__hasPatentHint": true,
+        "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -436,24 +390,6 @@
                     ]
                 },
                 "spdxLicenseId": "MS-PL"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MS-PL.txt",
-                "spdxId": "MS-PL",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\nUSE CASE Binary delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Questionable\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "MS-PL"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "MaybeCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "MaybeCopyleft"
-                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "NO",
@@ -1163,10 +1099,6 @@
             [
                 "HansHammel license-compatibility-checker",
                 "WeakCopyleft"
-            ],
-            [
-                "OSADL License Checklist",
-                "MaybeCopyleft"
             ],
             [
                 "Scancode",

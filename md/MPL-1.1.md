@@ -211,97 +211,6 @@
 
 (source: Hitachi open-license)
 
-## OSADL Rule
-
-    USE CASE Source code delivery
-    	YOU MUST Provide Standard license notice (Exhibit A)
-    	YOU MUST Provide License text
-    	IF Documentation
-    		YOU MUST Provide License text
-    	IF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks
-    		YOU MUST Provide File "LEGAL"
-    			ATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks
-    			IF ATTRIBUTE Dynamic
-    				YOU MUST Update File "LEGAL"
-    				YOU MUST Disseminate Patent notice AND Trademark notice
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Provide Modification report
-    			ATTRIBUTE Documentation of Software modifications
-    			ATTRIBUTE Modification date
-    		YOU MUST Provide Modification notice
-    			ATTRIBUTE Highlighted
-    			ATTRIBUTE Crediting Initial developer
-    			ATTRIBUTE Included In Source code
-    	YOU MUST NOT Restrict Granted rights
-    	USE CASE Service offerings
-    		YOU MUST Indemnify Other contributors
-    USE CASE Binary delivery
-    	YOU MUST Include Notice
-    		YOU MUST Reference Source code
-    		ATTRIBUTE Highlighted
-    		ATTRIBUTE Included in Binary delivery OR Documentation
-    	IF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks
-    		YOU MUST Provide File "LEGAL"
-    			ATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks
-    			IF ATTRIBUTE Dynamic
-    				YOU MUST Update File "LEGAL"
-    				YOU MUST Disseminate Patent notice AND Trademark notice
-    	IF Software modification
-    		YOU MUST Include Retrieval information of Source code in Notice
-    		YOU MUST Provide Source code
-    		EITHER	
-    			ATTRIBUTE Same medium
-    		OR
-    			ATTRIBUTE Via Internet
-    				ATTRIBUTE Duration 12 months
-    				EXCEPT IF Software modification Was Updated
-    					ATTRIBUTE Duration 6 months
-    		YOU MUST Provide Standard license notice (Exhibit A)
-    		YOU MUST Provide License text
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Provide Modification report
-    			ATTRIBUTE Documentation of Software modifications
-    			ATTRIBUTE Modification date
-    		YOU MUST Provide Modification notice
-    			ATTRIBUTE Highlighted
-    			ATTRIBUTE Crediting Initial developer
-    			ATTRIBUTE Included In Source code
-    			IF Binary delivery Includes Copyright notice OR Documentation Includes Copyright notice
-    				ATTRIBUTE Included in Binary delivery OR Documentation
-    	USE CASE License change
-    		YOU MUST Use Compatible license
-    		YOU MUST Indemnify Other Contributors
-    	YOU MUST NOT Restrict Granted rights For Source code
-    	USE CASE Service offerings
-    		YOU MUST Indemnify Other contributors
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY BSL-1.0
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY EFL-2.0
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    COMPATIBILITY ZPL-2.0
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Yes
-
-(source: OSADL License Checklist)
-
 ## Text
 
     MOZILLA PUBLIC LICENSE
@@ -487,10 +396,6 @@
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-1.1.txt "OSADL License Checklist")
-    (NOASSERTION)
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -565,7 +470,6 @@
                 ]
             ]
         ],
-        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -675,24 +579,6 @@
                 },
                 "licensename": "MPL-1.1",
                 "copyleftkind": "WeakCopyleft"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-1.1.txt",
-                "spdxId": "MPL-1.1",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Standard license notice (Exhibit A)\n\tYOU MUST Provide License text\n\tIF Documentation\n\t\tYOU MUST Provide License text\n\tIF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks\n\t\tYOU MUST Provide File \"LEGAL\"\n\t\t\tATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks\n\t\t\tIF ATTRIBUTE Dynamic\n\t\t\t\tYOU MUST Update File \"LEGAL\"\n\t\t\t\tYOU MUST Disseminate Patent notice AND Trademark notice\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\t\tATTRIBUTE Documentation of Software modifications\n\t\t\tATTRIBUTE Modification date\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Crediting Initial developer\n\t\t\tATTRIBUTE Included In Source code\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE Service offerings\n\t\tYOU MUST Indemnify Other contributors\nUSE CASE Binary delivery\n\tYOU MUST Include Notice\n\t\tYOU MUST Reference Source code\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Included in Binary delivery OR Documentation\n\tIF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks\n\t\tYOU MUST Provide File \"LEGAL\"\n\t\t\tATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks\n\t\t\tIF ATTRIBUTE Dynamic\n\t\t\t\tYOU MUST Update File \"LEGAL\"\n\t\t\t\tYOU MUST Disseminate Patent notice AND Trademark notice\n\tIF Software modification\n\t\tYOU MUST Include Retrieval information of Source code in Notice\n\t\tYOU MUST Provide Source code\n\t\tEITHER\t\n\t\t\tATTRIBUTE Same medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\t\t\t\tATTRIBUTE Duration 12 months\n\t\t\t\tEXCEPT IF Software modification Was Updated\n\t\t\t\t\tATTRIBUTE Duration 6 months\n\t\tYOU MUST Provide Standard license notice (Exhibit A)\n\t\tYOU MUST Provide License text\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\t\tATTRIBUTE Documentation of Software modifications\n\t\t\tATTRIBUTE Modification date\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Crediting Initial developer\n\t\t\tATTRIBUTE Included In Source code\n\t\t\tIF Binary delivery Includes Copyright notice OR Documentation Includes Copyright notice\n\t\t\t\tATTRIBUTE Included in Binary delivery OR Documentation\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Indemnify Other Contributors\n\tYOU MUST NOT Restrict Granted rights For Source code\n\tUSE CASE Service offerings\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "MPL-1.1"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft"
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -1556,10 +1442,6 @@
             [
                 "HansHammel license-compatibility-checker",
                 "WeakCopyleft"
-            ],
-            [
-                "OSADL License Checklist",
-                "Copyleft"
             ],
             [
                 "Scancode",

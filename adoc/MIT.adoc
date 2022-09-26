@@ -153,16 +153,6 @@ OBLIGATION: Include a copyright notice, list of terms and conditions, and discla
 
 (source: Hitachi open-license)
 
-=== OSADL Rule
-
-....
-USE CASE Source code delivery OR Binary delivery
-	YOU MUST Forward OR Provide Copyright notices
-	YOU MUST Forward OR Provide License text
-....
-
-(source: OSADL License Checklist)
-
 === Text
 
 ....
@@ -219,8 +209,6 @@ Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt[OSADL
-License Checklist] (NOASSERTION)
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/MIT.yaml[finos/OSLC-handbook]
@@ -393,16 +381,6 @@ repository] is generated)
             },
             "licensename": "MIT",
             "copyleftkind": "NoCopyleft"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt",
-            "spdxId": "MIT",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward OR Provide Copyright notices\n\tYOU MUST Forward OR Provide License text\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MIT"
-                ]
-            }
         },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "Yes",

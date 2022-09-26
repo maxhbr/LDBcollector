@@ -47,42 +47,6 @@
 
 -   **SPDX:** https://spdx.org/licenses/Artistic-1.0-Perl.json
 
-## OSADL Rule
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward Warranty disclaimer
-    	IF Software modification
-    		YOU MUST Provide Modification notice
-    		YOU MUST Provide Modification report In Source code
-    		YOU MUST Provide Modification date In Source code
-    		EITHER
-    			YOU MUST Publish Source code
-    				ATTRIBUTE No charge
-    		OR
-    			YOU MUST Rename Source code
-    			YOU MUST Provide Original source code
-    			YOU MUST Provide Documentation
-    				YOU MUST Provide Modification report
-    	YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	EITHER
-    		YOU MUST Provide Original source code
-    		YOU MUST Reference Original source code
-    	OR
-    		IF Software modification
-    			YOU MUST Provide Source code
-    				ATTRIBUTE Machine-readable
-    			YOU MUST NOT Promote
-    	OR
-    		IF Software modification
-    			YOU MUST Rename Source code
-    			YOU MUST Provide Modification report In Distribution material
-    			YOU MUST Reference Original source code In Distribution material
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
-
 ## Text
 
 
@@ -239,10 +203,6 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ar]/Artistic-License-1.0-(Perl).yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Artistic-1.0-Perl.txt "OSADL License Checklist")
-    (NOASSERTION)
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -338,16 +298,6 @@
                     ]
                 },
                 "spdxLicenseId": "Artistic-1.0-Perl"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Artistic-1.0-Perl.txt",
-                "spdxId": "Artistic-1.0-Perl",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Warranty disclaimer\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification report In Source code\n\t\tYOU MUST Provide Modification date In Source code\n\t\tEITHER\n\t\t\tYOU MUST Publish Source code\n\t\t\t\tATTRIBUTE No charge\r\n\t\tOR\r\n\t\t\tYOU MUST Rename Source code\n\t\t\tYOU MUST Provide Original source code\n\t\t\tYOU MUST Provide Documentation\n\t\t\t\tYOU MUST Provide Modification report\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tEITHER\n\t\tYOU MUST Provide Original source code\n\t\tYOU MUST Reference Original source code\n\tOR\r\n\t\tIF Software modification\n\t\t\tYOU MUST Provide Source code\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tYOU MUST NOT Promote\n\tOR\r\n\t\tIF Software modification\n\t\t\tYOU MUST Rename Source code\n\t\t\tYOU MUST Provide Modification report In Distribution material\n\t\t\tYOU MUST Reference Original source code In Distribution material\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "Artistic-1.0-Perl"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,

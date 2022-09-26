@@ -70,16 +70,6 @@
             },
             "spdxLicenseId": "ICU"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt",
-            "spdxId": "ICU",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "ICU"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"

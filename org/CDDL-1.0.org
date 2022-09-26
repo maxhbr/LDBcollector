@@ -5,7 +5,7 @@
 | Shortname       | CDDL-1.0                                        |
 | Rating          | Unknown, probably Attention or Stop or No-Go    |
 | Classification  | WeakCopyleft                                    |
-| Has Patent Hint | True                                            |
+| Has Patent Hint | False                                           |
 
 *Other Names:*
 
@@ -229,63 +229,6 @@
 
 (source: Hitachi open-license)
 
-** OSADL Rule
-#+begin_example
-  USE CASE Source code delivery
-  	YOU MUST Provide License text
-  	YOU MUST NOT Modify Copyright notices
-  	YOU MUST NOT Modify Patent notices
-  	YOU MUST NOT Modify Trademark notices
-  	IF Software modification
-  		YOU MUST Grant License
-  			ATTRIBUTE Original license
-  		YOU MUST Provide Copyright notice
-  	YOU MUST NOT Restrict Granted rights
-  USE CASE Binary delivery
-  	YOU MUST Provide License text
-  	YOU MUST NOT Modify Copyright notices
-  	YOU MUST NOT Modify Patent notices
-  	YOU MUST NOT Modify Trademark notices
-  	YOU MUST Provide Delayed source code delivery
-  	YOU MUST Provide Written offer
-  		ATTRIBUTE Reasonable
-  		EITHER
-  			ATTRIBUTE Customary medium
-  		OR
-  			ATTRIBUTE Via Internet
-  	IF Software modification
-  		YOU MUST Grant License
-  			ATTRIBUTE Original license
-  		YOU MUST Provide Copyright notice
-  	YOU MUST NOT Restrict Granted rights
-  	USE CASE License change
-  		YOU MUST Use Compatible license
-  		YOU MUST Indemnify Other Contributors
-  COMPATIBILITY BSD-2-Clause
-  COMPATIBILITY BSD-2-Clause-Patent
-  COMPATIBILITY BSD-3-Clause
-  COMPATIBILITY BSL-1.0
-  COMPATIBILITY bzip2-1.0.5
-  COMPATIBILITY bzip2-1.0.6
-  COMPATIBILITY CC0-1.0
-  COMPATIBILITY curl
-  COMPATIBILITY EFL-2.0
-  COMPATIBILITY IBM-pibs
-  COMPATIBILITY ICU
-  COMPATIBILITY ISC
-  COMPATIBILITY Libpng
-  COMPATIBILITY MIT
-  COMPATIBILITY NTP
-  COMPATIBILITY UPL-1.0
-  COMPATIBILITY WTFPL
-  COMPATIBILITY X11
-  COMPATIBILITY Zlib
-  PATENT HINTS Yes
-  COPYLEFT CLAUSE Yes
-#+end_example
-
-(source: OSADL License Checklist)
-
 ** Text
 #+begin_example
   COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0 
@@ -408,9 +351,6 @@
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
-- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/CDDL-1.0.txt][OSADL
-  License Checklist]] (NOASSERTION)
-
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
@@ -491,7 +431,7 @@
               ]
           ]
       ],
-      "__hasPatentHint": true,
+      "__hasPatentHint": false,
       "facts": {
           "Open Knowledge International": {
               "is_generic": null,
@@ -571,24 +511,6 @@
                   ]
               },
               "spdxLicenseId": "CDDL-1.0"
-          },
-          "OSADL License Checklist": {
-              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CDDL-1.0.txt",
-              "spdxId": "CDDL-1.0",
-              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License text\n\tYOU MUST NOT Modify Copyright notices\n\tYOU MUST NOT Modify Patent notices\n\tYOU MUST NOT Modify Trademark notices\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide License text\n\tYOU MUST NOT Modify Copyright notices\n\tYOU MUST NOT Modify Patent notices\n\tYOU MUST NOT Modify Trademark notices\n\tYOU MUST Provide Delayed source code delivery\n\tYOU MUST Provide Written offer\n\t\tATTRIBUTE Reasonable\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Indemnify Other Contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-              "_implications": {
-                  "__impliedNames": [
-                      "CDDL-1.0"
-                  ],
-                  "__hasPatentHint": true,
-                  "__impliedCopyleft": [
-                      [
-                          "OSADL License Checklist",
-                          "Copyleft"
-                      ]
-                  ],
-                  "__calculatedCopyleft": "Copyleft"
-              }
           },
           "Scancode": {
               "otherUrls": [
@@ -1399,10 +1321,6 @@
           [
               "HansHammel license-compatibility-checker",
               "WeakCopyleft"
-          ],
-          [
-              "OSADL License Checklist",
-              "Copyleft"
           ],
           [
               "Scancode",

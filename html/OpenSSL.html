@@ -17,11 +17,11 @@
 </tr>
 <tr class="odd">
 <td><p>Rating</p></td>
-<td><p>Unknown, probably Attention or Stop or No-Go</p></td>
+<td><p>Go</p></td>
 </tr>
 <tr class="even">
 <td><p>Classification</p></td>
-<td><p>MaybeCopyleft</p></td>
+<td><p>NoCopyleft</p></td>
 </tr>
 <tr class="odd">
 <td><p>Has Patent Hint</p></td>
@@ -111,46 +111,6 @@ REQUISITE: Get special permission in writing.
 </code></pre></li>
 </ul>
 <p> (source: Hitachi open-license)</p>
-<h2>OSADL Rule</h2>
-<pre><code>USE CASE Source code delivery OR Binary delivery
-	YOU MUST Forward Copyright notices
-	YOU MUST Forward License text
-	YOU MUST Forward Warranty disclaimer
-	YOU MUST Credit Verbatim &quot;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)&quot;
-	IF Advertisement
-		YOU MUST Credit Verbatim &quot;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)&quot;
-		YOU MUST Credit Verbatim &quot;This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)&quot;
-	USE CASE Include Windows code
-		YOU MUST Credit Verbatim &quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)&quot;
-	IF Software modification
-		YOU MUST NOT Promote Using &quot;OpenSSL Toolkit&quot; or &quot;OpenSSL Project&quot;
-		YOU MUST NOT Use &quot;OpenSSL&quot; in product name
-	YOU MUST NOT Modify License
-COMPATIBILITY BSD-2-Clause
-COMPATIBILITY BSD-2-Clause-Patent
-COMPATIBILITY BSD-3-Clause
-COMPATIBILITY BSD-4-Clause
-COMPATIBILITY BSD-4-Clause-UC
-COMPATIBILITY BSL-1.0
-COMPATIBILITY bzip2-1.0.5
-COMPATIBILITY bzip2-1.0.6
-COMPATIBILITY CC0-1.0
-COMPATIBILITY curl
-COMPATIBILITY EFL-2.0
-COMPATIBILITY IBM-pibs
-COMPATIBILITY ICU
-COMPATIBILITY ISC
-COMPATIBILITY Libpng
-COMPATIBILITY MIT
-COMPATIBILITY NTP
-COMPATIBILITY UPL-1.0
-COMPATIBILITY WTFPL
-COMPATIBILITY X11
-COMPATIBILITY Zlib
-COMPATIBILITY ZPL-2.0
-COPYLEFT CLAUSE Questionable
-</code></pre>
-<p> (source: OSADL License Checklist)</p>
 <h2>Text</h2>
 <pre><code>LICENSE ISSUES
   ==============
@@ -282,7 +242,6 @@ copied and put under another distribution licence
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[o]/[op]/OpenSSL-License.yaml" title="Metaeffekt Universe">Metaeffekt Universe</a> (CC-BY-4.0)</p></li>
-<li><p><a href="https://www.osadl.org/fileadmin/checklists/unreflicenses/OpenSSL.txt" title="OSADL License Checklist">OSADL License Checklist</a> (NOASSERTION)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/OpenSSL.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://spdx.org/licenses/OpenSSL.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
@@ -361,23 +320,6 @@ copied and put under another distribution licence
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;OpenSSL&quot;
-        },
-        &quot;OSADL License Checklist&quot;: {
-            &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/OpenSSL.txt&quot;,
-            &quot;spdxId&quot;: &quot;OpenSSL&quot;,
-            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \&quot;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \&quot;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n\t\tYOU MUST Credit Verbatim \&quot;This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\&quot;\n\tUSE CASE Include Windows code\n\t\tYOU MUST Credit Verbatim \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n\tIF Software modification\n\t\tYOU MUST NOT Promote Using \&quot;OpenSSL Toolkit\&quot; or \&quot;OpenSSL Project\&quot;\n\t\tYOU MUST NOT Use \&quot;OpenSSL\&quot; in product name\n\tYOU MUST NOT Modify License\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nCOPYLEFT CLAUSE Questionable\n&quot;,
-            &quot;_implications&quot;: {
-                &quot;__impliedNames&quot;: [
-                    &quot;OpenSSL&quot;
-                ],
-                &quot;__impliedCopyleft&quot;: [
-                    [
-                        &quot;OSADL License Checklist&quot;,
-                        &quot;MaybeCopyleft&quot;
-                    ]
-                ],
-                &quot;__calculatedCopyleft&quot;: &quot;MaybeCopyleft&quot;
-            }
         },
         &quot;Fedora Project Wiki&quot;: {
             &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,
@@ -847,15 +789,11 @@ copied and put under another distribution licence
             &quot;NoCopyleft&quot;
         ],
         [
-            &quot;OSADL License Checklist&quot;,
-            &quot;MaybeCopyleft&quot;
-        ],
-        [
             &quot;Scancode&quot;,
             &quot;NoCopyleft&quot;
         ]
     ],
-    &quot;__calculatedCopyleft&quot;: &quot;MaybeCopyleft&quot;,
+    &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;,
     &quot;__isOsiApproved&quot;: false,
     &quot;__impliedText&quot;: &quot;LICENSE ISSUES\n  ==============\n\n  The OpenSSL toolkit stays under a dual license, i.e. both the conditions of\n  the OpenSSL License and the original SSLeay license apply to the toolkit.\n  See below for the actual license texts. Actually both licenses are BSD-style\n  Open Source licenses. In case of any license issues related to OpenSSL\n  please contact openssl-core@openssl.org.\n\n  OpenSSL License\n  ---------------\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer. \n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n\n4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   openssl-core@openssl.org.\n\n5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n   nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n   permission of the OpenSSL Project.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit (http://www.openssl.org/)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThis product includes cryptographic software written by Eric Young\n(eay@cryptsoft.com).  This product includes software written by Tim\nHudson (tjh@cryptsoft.com).\n\n\n Original SSLeay License\n -----------------------\n\nCopyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\nAll rights reserved.\n\nThis package is an SSL implementation written\nby Eric Young (eay@cryptsoft.com).\nThe implementation was written so as to conform with Netscapes SSL.\n\nThis library is free for commercial and non-commercial use as long as\nthe following conditions are aheared to.  The following conditions\napply to all code found in this distribution, be it the RC4, RSA,\nlhash, DES, etc., code; not just the SSL code.  The SSL documentation\nincluded with this distribution is covered by the same copyright terms\nexcept that the holder is Tim Hudson (tjh@cryptsoft.com).\n\nCopyright remains Eric Young&#39;s, and as such any Copyright notices in\nthe code are not to be removed.\nIf this package is used in a product, Eric Young should be given attribution\nas the author of the parts of the library used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   \&quot;This product includes cryptographic software written by\n    Eric Young (eay@cryptsoft.com)\&quot;\n   The word &#39;cryptographic&#39; can be left out if the rouines from the library\n   being used are not cryptographic related :-).\n4. If you include any Windows specific code (or a derivative thereof) from \n   the apps directory (application code) you must include an acknowledgement:\n   \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence\n[including the GNU Public Licence.]&quot;,
     &quot;__impliedURLs&quot;: [
