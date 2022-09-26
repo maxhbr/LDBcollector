@@ -15,65 +15,92 @@ class LicenseManager(models.Manager):
 class License(models.Model):
     """
     A license identified by its SPDX id.
+
+
     """
 
+    COPYLEFT_NONE = "None"
+    COPYLEFT_STRONG = "Strong"
+    COPYLEFT_WEAK = "Weak"
+    COPYLEFT_NETWORK = "Network"
+    COPYLEFT_NETWORK_WEAK = "NetworkWeak"
     COPYLEFT_CHOICES = [
-        ("None", "Persmissive"),
-        ("Strong", "Strong copyleft"),
-        ("Weak", "Weak copyleft"),
-        ("Network", "Strong network copyleft"),
-        ("NetworkWeak", "Weak network copyleft"),
+        (COPYLEFT_NONE, "Permissive"),
+        (COPYLEFT_STRONG, "Strong copyleft"),
+        (COPYLEFT_WEAK, "Weak copyleft"),
+        (COPYLEFT_NETWORK, "Strong network copyleft"),
+        (COPYLEFT_NETWORK_WEAK, "Weak network copyleft"),
     ]
     ALLOWED_ALWAYS = "always"
     ALLOWED_NEVER = "never"
     ALLOWED_CONTEXT = "context"
     ALLOWED_CHOICES = [
-        ("always", "Always allowed"),
-        ("never", "Never allowed"),
-        ("context", "Allowed depending on context"),
+        (ALLOWED_ALWAYS, "Always allowed"),
+        (ALLOWED_NEVER, "Never allowed"),
+        (ALLOWED_CONTEXT, "Allowed depending on context"),
         ("", "Not reviewed yet"),
     ]
+    FOSS_YES = "Yes"
+    FOSS_YES_AUTO = "Yes-Auto"
+    FOSS_NO = "No"
+    FOSS_NO_AUTO = "No-Auto"
     FOSS_CHOICES = [
-        ("Yes", "We consider it is FOSS"),
-        ("Yes-Auto", "FOSS - deduced"),
-        ("No", "We consider it is NOT FOSS"),
-        ("No-Auto", "NOT FOSS - deduced"),
+        (FOSS_YES, "We consider it is FOSS"),
+        (FOSS_YES_AUTO, "FOSS - deduced"),
+        (FOSS_NO, "We consider it is NOT FOSS"),
+        (FOSS_NO_AUTO, "NOT FOSS - deduced"),
     ]
+    STATUS_CHECKED = "Checked"
+    STATUS_PENDING = "Pending"
+    STATUS_TO_DISCUSS = "To_Discuss"
+    STATUS_TO_CHECK = "To_Check"
     STATUS_CHOICES = [
-        ("Checked", "Checked"),
-        ("Pending", "Pending"),
-        ("To_Discuss", "To discuss"),
-        ("To_Check", "To check"),
+        (STATUS_CHECKED, "Checked"),
+        (STATUS_PENDING, "Pending"),
+        (STATUS_TO_DISCUSS, "To discuss"),
+        (STATUS_TO_CHECK, "To check"),
     ]
 
-    spdx_id = models.CharField(max_length=200, unique=True)
+    spdx_id = models.CharField("SPDX Identifier", max_length=200, unique=True)
     status = models.CharField(
+        "Review status",
         max_length=20,
         choices=STATUS_CHOICES,
         default="To check",
-        help_text="The review status of the license",
     )
-    long_name = models.CharField(max_length=200, blank=True)
+    long_name = models.CharField("Name", max_length=200, blank=True)
     categories = models.CharField(max_length=200, blank=True)
     license_version = models.CharField(max_length=200, blank=True)
     radical = models.CharField(max_length=200, blank=True)
     autoupgrade = models.BooleanField(null=True)
     steward = models.CharField(max_length=200, blank=True)
-    inspiration_spdx = models.CharField(max_length=200, null=True, blank=True)
+    inspiration_spdx = models.CharField(
+        max_length=200,
+        blank=True,
+        help_text="SPDX Identifier of another license which inspired this one",
+    )
     inspiration = models.ForeignKey(
-        "self", on_delete=models.SET_NULL, null=True, blank=True
+        "self",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        help_text="A Licence which inspired this one",
     )
 
     copyleft = models.CharField(max_length=20, choices=COPYLEFT_CHOICES, blank=True)
-    allowed = models.CharField(max_length=20, choices=ALLOWED_CHOICES, blank=True)
-    allowed_explanation = models.CharField(max_length=200, blank=True)
+    allowed = models.CharField(
+        "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True
+    )
+    allowed_explanation = models.CharField(
+        "OSS Policy explanation", max_length=200, blank=True
+    )
     url = models.URLField(max_length=200, blank=True)
-    osi_approved = models.BooleanField(null=True)
-    fsf_approved = models.BooleanField(null=True)
+    osi_approved = models.BooleanField(null=True, verbose_name="OSI Approved")
+    fsf_approved = models.BooleanField(null=True, verbose_name="FSF Approved")
     foss = models.CharField(max_length=20, choices=FOSS_CHOICES, blank=True)
     patent_grant = models.BooleanField(null=True)
     ethical_clause = models.BooleanField(null=True)
-    non_commmercial = models.BooleanField("Only non-commercial use", null=True)
+    non_commercial = models.BooleanField("Only non-commercial use", null=True)
     legal_uncertainty = models.BooleanField(null=True)
     non_tivoisation = models.BooleanField(null=True)
     technical_nature_constraint = models.BooleanField(null=True)
@@ -106,20 +133,8 @@ class Team(models.Model):
 
 
 class Generic(models.Model):
-    """
-    A Generic obligation which is the simplification of the instances of several
-    similar obligations.
-
-    :ivar name: (String) Short descritpion of the Generic obligation. Unique.
-    :ivar description: (String) Longer description, optional.
-    :ivar in_core: (Boolean) If set to True, it means that this Generic obligation is
-        assumed to systematically fit to the enterprise policy.
-        Otherwise, it means that it has to be manually checked.
-    :ivar metacategory: (String) A category of Generic oblgation.
-    :ivar team: (Team) A foreign key to the competent Team.
-    :ivar passivity: (String) A Generic obligation needs to conduct some kind of action
-        (Active) or NOT to do specific things (Passive)
-    """
+    """A Generic obligation which is the simplification of the instances of several
+    similar :class `Obligation`."""
 
     PASSIVITY_CHOICES = [("Active", "Active"), ("Passive", "Passive")]
     METAGATEGORY_CHOICES = [
@@ -130,14 +145,33 @@ class Generic(models.Model):
         ("ProvidingSourceCode", "Providing source code"),
         ("TechnicalConstraints", "Technical constraints"),
     ]
-    name = models.CharField(max_length=200, unique=True)
-    description = models.TextField(max_length=500, blank=True)
-    in_core = models.BooleanField(default=False)
+    name = models.CharField(
+        max_length=200,
+        unique=True,
+        help_text="Short description of the Generic obligation. Unique.",
+    )
+    description = models.TextField(
+        max_length=500, blank=True, help_text="Longer description, optional."
+    )
+    in_core = models.BooleanField(
+        default=False,
+        help_text="If True, means this Generic obligation is assumed to systematically fit to the enterprise policy. "
+        "Otherwise, means it has to be manually checked.",
+    )
     metacategory = models.CharField(
-        max_length=40, choices=METAGATEGORY_CHOICES, blank=True
+        max_length=40,
+        choices=METAGATEGORY_CHOICES,
+        blank=True,
+        help_text="A category of Generic obligation.",
     )
     team = models.ForeignKey(Team, on_delete=models.SET_NULL, null=True, blank=True)
-    passivity = models.CharField(max_length=20, choices=PASSIVITY_CHOICES, blank=True)
+    passivity = models.CharField(
+        max_length=20,
+        choices=PASSIVITY_CHOICES,
+        blank=True,
+        help_text="A Generic obligation needs to conduct some kind of action"
+        "(Active) or NOT to do specific things (Passive)",
+    )
 
     def __str__(self):
         return ("[Core]" if self.in_core else "") + self.name
@@ -148,26 +182,8 @@ class Generic(models.Model):
 
 
 class Obligation(models.Model):
-    """
-    An obligation deduced from a license verbatim. An obligation comes from only one
-    license.
-
-    :param models.Model: Django class to define models
-    :type models: models.Model
-    :ivar license: (License) A foreign key to the License instance that implies the
-        current obligation.
-    :ivar generic: (Generic) An optional foreign key that links to the generic
-        obligation.
-    :ivvar name: (String) Quick description of the Obligation.
-    :ivar verbatim: (String) Full text of the obligation, out of the license itself.
-    :ivar passivity: (String) A string that indicates if the type of obligation is
-        "Active" (basically, under certain confition you SHOULD perform some action) or
-        "Passive" (under certain concondition you SHOULD NOT do something)
-    :ivar trigger_expl: (String) A string that indicates the context necessary to
-        trigger this obligation
-    :ivar trigger_mdf: (String) A string that indicates status of modication necessary
-        to trigger this obligation
-    """
+    """An obligation deduced from a license verbatim. An obligation comes from only one
+    license."""
 
     TRIGGER_EXPL_CHOICES = [
         (
@@ -197,23 +213,38 @@ class Obligation(models.Model):
 
     PASSIVITY_CHOICES = [("Active", "Active"), ("Passive", "Passive")]
 
-    license = models.ForeignKey(License, on_delete=models.CASCADE)
+    license = models.ForeignKey(
+        License,
+        on_delete=models.CASCADE,
+        help_text="The License instance that implies the current obligation.",
+    )
     generic = models.ForeignKey(
         Generic, on_delete=models.PROTECT, blank=True, null=True
     )
     name = models.CharField(max_length=200)
-    verbatim = models.TextField(max_length=4000)
-    passivity = models.CharField(max_length=20, choices=PASSIVITY_CHOICES, blank=True)
+    verbatim = models.TextField(
+        max_length=4000,
+        help_text="Full text of the obligation, out of the license itself",
+    )
+    passivity = models.CharField(
+        max_length=20,
+        choices=PASSIVITY_CHOICES,
+        blank=True,
+        help_text='If the obligation is "Active" (under certain condition you SHOULD perform some action) or'
+        '"Passive" (under certain condition you SHOULD NOT do something)',
+    )
 
     trigger_expl = models.CharField(
         max_length=40,
         choices=TRIGGER_EXPL_CHOICES,
         default=Usage.EXPLOITATION_DISTRIBUTION_BOTH,
+        help_text="The context necessary to trigger this obligation",
     )
     trigger_mdf = models.CharField(
         max_length=40,
         choices=TRIGGER_MDF_CHOICES,
         default=Usage.MODIFICATION_ANY,
+        help_text="Status of modication necessary to trigger this obligation",
     )
 
     class Meta:

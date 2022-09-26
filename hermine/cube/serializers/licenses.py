@@ -119,7 +119,7 @@ class LicenseSerializer(serializers.ModelSerializer):
     """Allow serialization and deserialization of licenses on the following fields:
     "spdx_id", "long_name", "license_version", "radical", "autoupgrade", "steward",
     "inspiration_spdx", "copyleft", "color", "color_explanation", "url", "osi_approved",
-    "fsf_approved", "foss", "patent_grant", "ethical_clause", "non_commmercial",
+    "fsf_approved", "foss", "patent_grant", "ethical_clause", "non_commercial",
     "legal_uncertainty", "non_tivoisation", "technical_nature_constraint",
     "jurisdictional_clause","comment", "verbatim","obligation_set"
 
@@ -155,7 +155,7 @@ class LicenseSerializer(serializers.ModelSerializer):
             "foss",
             "patent_grant",
             "ethical_clause",
-            "non_commmercial",
+            "non_commercial",
             "legal_uncertainty",
             "non_tivoisation",
             "technical_nature_constraint",

@@ -374,7 +374,7 @@
 <text text-anchor="start" x="840" y="-414.6" font-family="Roboto" font-size="8.00" fill="#7b7b7b">CharField</text>
 <text text-anchor="start" x="878" y="-414.6" font-family="Roboto" font-size="8.00"> &#160;&#160;&#160;</text>
 <text text-anchor="start" x="692" y="-401.6" font-family="Roboto" font-size="8.00"> &#160;&#160;&#160;</text>
-<text text-anchor="start" x="702" y="-401.6" font-family="Roboto" font-size="8.00">non_commmercial</text>
+<text text-anchor="start" x="702" y="-401.6" font-family="Roboto" font-size="8.00">non_commercial</text>
 <text text-anchor="start" x="777" y="-401.6" font-family="Roboto" font-size="8.00"> &#160;&#160;&#160;</text>
 <text text-anchor="start" x="830" y="-401.6" font-family="Roboto" font-size="8.00"> &#160;&#160;&#160;</text>
 <text text-anchor="start" x="840" y="-401.6" font-family="Roboto" font-size="8.00">BooleanField</text>

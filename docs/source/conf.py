@@ -17,6 +17,8 @@
 import os
 import sys
 import django
+import inspect
+from django.utils.html import strip_tags
 
 
 # Specify settings module
@@ -87,3 +89,30 @@ myst_enable_extensions = [
     "fieldlist",
     "tasklist",
 ]
+
+
+def process_docstring(app, what, name, obj, options, lines):
+    from django.db import models
+
+    if inspect.isclass(obj) and issubclass(obj, models.Model):
+        fields = obj._meta.fields
+
+        for field in fields:
+            help_text = strip_tags(field.help_text)
+            verbose_name = field.verbose_name
+            lines.append(f":param {field.attname}: {help_text or verbose_name}")
+
+            if field.choices is not None:
+                lines[-1] += (
+                    ". Possible values: "
+                    + ", ".join(db_value for (db_value, label) in field.choices)
+                    + "."
+                )
+
+            lines.append(":type %s: %s" % (field.attname, type(field).__name__))
+
+    return lines
+
+
+def setup(app):
+    app.connect("autodoc-process-docstring", process_docstring)
