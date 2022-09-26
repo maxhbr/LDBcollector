@@ -42,10 +42,10 @@ logger = logging.getLogger(__name__)
 class ReleaseView(LoginRequiredMixin, generic.DetailView):
     """
     Shows 4 validation steps for a release of a product:
-    step 1 : checks that licence metadata are present and correct
-    step 2 : checks that all licences have been reviewed by legal dpt
-    step 3 : resolves choices in case of multi-licences
-    step 4 : checks that chosen licences are compatible with policy and derogs
+    step 1 : checks that license metadata are present and correct
+    step 2 : checks that all licenses have been reviewed by legal dpt
+    step 3 : resolves choices in case of multi-licenses
+    step 4 : checks that chosen licenses are compatible with policy and derogs
     """
 
     model = Release

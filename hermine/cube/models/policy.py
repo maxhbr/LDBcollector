@@ -27,10 +27,10 @@ class UsageDecision(models.Model):
     A generic class to generalize choices made about usages and licenses to several versions, release or products.
     """
 
-    LICENCE_CHOICE = "choice"
+    LICENSE_CHOICE = "choice"
     EXPRESSION_VALIDATION = "validation"
     DECISION_TYPES = (
-        (LICENCE_CHOICE, "Licence choice"),
+        (LICENSE_CHOICE, "License choice"),
         (EXPRESSION_VALIDATION, "Expression validation"),
     )
 
@@ -81,7 +81,7 @@ class LicenseChoiceManager(UsageDecisionManager):
         )
 
     def get_queryset(self):
-        return super().get_queryset().filter(decision_type=UsageDecision.LICENCE_CHOICE)
+        return super().get_queryset().filter(decision_type=UsageDecision.LICENSE_CHOICE)
 
 
 class LicenseChoice(UsageDecision):
@@ -92,7 +92,7 @@ class LicenseChoice(UsageDecision):
     objects = LicenseChoiceManager()
 
     def __init__(self, *args, **kwargs):
-        self._meta.get_field("decision_type").default = UsageDecision.LICENCE_CHOICE
+        self._meta.get_field("decision_type").default = UsageDecision.LICENSE_CHOICE
         super().__init__(*args, **kwargs)
 
     class Meta:

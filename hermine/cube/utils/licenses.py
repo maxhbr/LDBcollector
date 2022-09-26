@@ -37,8 +37,8 @@ def has_ors(spdx_expression: str):
 @lru_cache(maxsize=1024)
 def is_ambiguous(spdx_expression: str):
     """
-    Because of unreliable metadata, many "Licence1 AND Licence2" expressions
-    actually meant to be "Licence1 OR Licence2". This function checks weither
+    Because of unreliable metadata, many "License1 AND License2" expressions
+    actually meant to be "License1 OR License2". This function checks weither
     an expressions can be trusted or not.
 
     :param spdx_expression: an expression to test
@@ -170,7 +170,7 @@ def get_license_triggered_obligations(
     license: License, exploitation: str = None, modification: str = None
 ):
     """
-    Get triggered obligations for a licence and a usage context
+    Get triggered obligations for a license and a usage context
     (if the component has been modified and how it's being distributed)
 
     :param license: A License instance

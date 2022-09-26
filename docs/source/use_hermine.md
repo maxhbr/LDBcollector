@@ -7,7 +7,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 Hermine is an Open Source tool meant to complement existing ones in the field of Open Source legal compliance.
 It serves two main purposes: managing your SBOMs (Software Bill of Materials) 
-and helping you analyzing Open Source licences in order to automatically apply these to your SBOMs.
+and helping you analyzing Open Source licenses in order to automatically apply these to your SBOMs.
 
 
 ```{toctree}

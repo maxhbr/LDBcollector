@@ -13,8 +13,8 @@ Hermine is an Open Source application to manage your SBOMs of Open Source compon
 
 It still is in a very early stage, so please don't expect any stability for the moment.
 
-Hermine project's main license is AGPL-3.0-only. Documentation is under CC-BY-4.0.  Some file imported from other projects are licenced under MIT.
-You can find the texts of these licences in the  LICENSES folder. Every file should have a licence header.
+Hermine project's main license is AGPL-3.0-only. Documentation is under CC-BY-4.0.  Some file imported from other projects are licensed under MIT.
+You can find the texts of these licenses in the  LICENSES folder. Every file should have a license header.
 
 
 ## Installation
