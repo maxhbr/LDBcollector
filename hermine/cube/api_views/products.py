@@ -114,7 +114,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_2(self, request, **kwargs):
         """
-        Check that all the licences in a release have been created and checked.
+        Check that all the licenses in a release have been created and checked.
         """
         response = {}
         release = self.get_object()
@@ -171,7 +171,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_5(self, request, **kwargs):
         """
-        Check that the licences are compatible with policy.
+        Check that the licenses are compatible with policy.
         """
         response = {}
         release = self.get_object()

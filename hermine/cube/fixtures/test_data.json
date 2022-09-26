@@ -171,8 +171,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence Distribution Unmodified",
-        "verbatim": "Test Licence Distribution Unmodified",
+        "name": "Test License Distribution Unmodified",
+        "verbatim": "Test License Distribution Unmodified",
         "passivity": "Active",
         "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "Unmodified"
@@ -184,8 +184,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence Distribution Modified or not",
-        "verbatim": "Test Licence Distribution Modified or not",
+        "name": "Test License Distribution Modified or not",
+        "verbatim": "Test License Distribution Modified or not",
         "passivity": "Active",
         "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "AlteredUnmodified"
@@ -197,8 +197,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence DistributionSource Altered",
-        "verbatim": "Test Licence DistributionSource Altered",
+        "name": "Test License DistributionSource Altered",
+        "verbatim": "Test License DistributionSource Altered",
         "passivity": "Active",
         "trigger_expl": "DistributionSource",
         "trigger_mdf": "Altered"
@@ -210,8 +210,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence DistributionSource Unmodified",
-        "verbatim": "Test Licence DistributionSource Unmodified",
+        "name": "Test License DistributionSource Unmodified",
+        "verbatim": "Test License DistributionSource Unmodified",
         "passivity": "Active",
         "trigger_expl": "DistributionSource",
         "trigger_mdf": "Unmodified"
@@ -223,8 +223,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence DistributionSource Modified or not",
-        "verbatim": "Test Licence DistributionSource Modified or not",
+        "name": "Test License DistributionSource Modified or not",
+        "verbatim": "Test License DistributionSource Modified or not",
         "passivity": "Active",
         "trigger_expl": "DistributionSource",
         "trigger_mdf": "AlteredUnmodified"
@@ -236,8 +236,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence DistributionNonSource Altered",
-        "verbatim": "Test Licence DistributionNonSource Altered",
+        "name": "Test License DistributionNonSource Altered",
+        "verbatim": "Test License DistributionNonSource Altered",
         "passivity": "Active",
         "trigger_expl": "DistributionNonSource",
         "trigger_mdf": "Altered"
@@ -249,8 +249,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence DistributionNonSource Unmodified",
-        "verbatim": "Test Licence DistributionNonSource Unmodified",
+        "name": "Test License DistributionNonSource Unmodified",
+        "verbatim": "Test License DistributionNonSource Unmodified",
         "passivity": "",
         "trigger_expl": "DistributionNonSource",
         "trigger_mdf": "Unmodified"
@@ -262,8 +262,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence DistributionNonSource Modified or not",
-        "verbatim": "Test Licence DistributionNonSource Modified or not",
+        "name": "Test License DistributionNonSource Modified or not",
+        "verbatim": "Test License DistributionNonSource Modified or not",
         "passivity": "Active",
         "trigger_expl": "DistributionNonSource",
         "trigger_mdf": "AlteredUnmodified"
@@ -275,8 +275,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence NetworkAccess Altered",
-        "verbatim": "Test Licence NetworkAccess Altered",
+        "name": "Test License NetworkAccess Altered",
+        "verbatim": "Test License NetworkAccess Altered",
         "passivity": "Active",
         "trigger_expl": "NetworkAccess",
         "trigger_mdf": "Altered"
@@ -301,8 +301,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence NetworkAccess Unmodified",
-        "verbatim": "Test Licence NetworkAccess Unmodified",
+        "name": "Test License NetworkAccess Unmodified",
+        "verbatim": "Test License NetworkAccess Unmodified",
         "passivity": "",
         "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "Unmodified"
@@ -314,8 +314,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence NetworkAccess Modified or not",
-        "verbatim": "Test Licence NetworkAccess Modified or not",
+        "name": "Test License NetworkAccess Modified or not",
+        "verbatim": "Test License NetworkAccess Modified or not",
         "passivity": "",
         "trigger_expl": "NetworkAccess",
         "trigger_mdf": "AlteredUnmodified"
@@ -327,8 +327,8 @@
     "fields": {
         "license": 3,
         "generic": null,
-        "name": "Test Licence Distribution Altered",
-        "verbatim": "Test Licence Distribution Altered",
+        "name": "Test License Distribution Altered",
+        "verbatim": "Test License Distribution Altered",
         "passivity": "Active",
         "trigger_expl": "DistributionSourceDistributionNonSource",
         "trigger_mdf": "Altered"

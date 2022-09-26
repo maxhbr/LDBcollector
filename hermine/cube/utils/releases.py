@@ -35,7 +35,7 @@ def validate_step_1(release):
 
 def validate_step_2(release):
     """
-    Check that all the licences in a release have been created and checked.
+    Check that all the licenses in a release have been created and checked.
     """
     context = dict()
     licenses = get_licenses_to_check_or_create(release)
@@ -103,7 +103,7 @@ def validate_step_4(release):
 
 def validate_step_5(release):
     """
-    Check that the licences are compatible with policy.
+    Check that the licenses are compatible with policy.
     """
     context = dict()
     r = check_licenses_against_policy(release)

@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
             name="decision_type",
             field=models.CharField(
                 choices=[
-                    ("choice", "Licence choice"),
+                    ("choice", "License choice"),
                     ("validation", "Expression validation"),
                 ],
                 default="choice",
