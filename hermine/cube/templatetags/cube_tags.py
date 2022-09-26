@@ -12,7 +12,7 @@ register = template.Library()
 
 @register.filter
 def licenseCSS(license: License):
-    """Returns the appropriated css tag according to the color of the license.
+    """Returns the appropriated bulma CSS class according to license policy.
 
     :param license: A License object
     :type license: License

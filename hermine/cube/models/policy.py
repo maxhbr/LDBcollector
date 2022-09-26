@@ -38,8 +38,12 @@ class UsageDecision(models.Model):
         max_length=500, choices=DECISION_TYPES, blank=False
     )
 
-    expression_in = models.CharField(max_length=500)
-    expression_out = models.CharField(max_length=500)
+    expression_in = models.CharField(
+        max_length=500, help_text="The exact expression which must be changed"
+    )
+    expression_out = models.CharField(
+        max_length=500, help_text="The expression which will replace `expression_in`"
+    )
 
     product = models.ForeignKey(
         "Product", on_delete=models.CASCADE, blank=True, null=True
@@ -55,13 +59,16 @@ class UsageDecision(models.Model):
     )
 
     scope = models.CharField(max_length=128, blank=True, null=True)
-
     explanation = models.TextField(max_length=500, blank=True, null=True)
 
     def __str__(self):
         return self.expression_in + " => " + self.expression_out
 
     def clean(self):
+        """Model validation
+
+        :meta private:
+        """
         if self.release is not None and self.product is not None:
             raise ValidationError(
                 "Rule can only apply to a product or a specific release."

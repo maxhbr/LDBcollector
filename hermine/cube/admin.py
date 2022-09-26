@@ -101,7 +101,7 @@ class LicenseAdmin(admin.ModelAdmin):
         ),
         (
             "Grants of rights",
-            {"fields": ("patent_grant", "non_commmercial", "ethical_clause")},
+            {"fields": ("patent_grant", "non_commercial", "ethical_clause")},
         ),
     )
 

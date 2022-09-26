@@ -2,10 +2,10 @@
 ..
 .. SPDX-License-Identifier: CC-BY-4.0
 
-Django tags
+Django template filters
 ===================================
 
-Django tags allow to display specific pieces of information from model logic in UI.
+Custom template filters allow to display specific pieces of information from model logic in UI.
 
 
 .. automodule:: cube.templatetags.cube_tags

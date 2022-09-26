@@ -10,14 +10,24 @@ class Usage(models.Model):
     Qualifies how a Version of a component is used in a Release of a Product.
     """
 
+    STATUS_AUTO = "Auto"
+    STATUS_UNKNOWN = "Unknown"
+    STATUS_VALIDATED = "Validated"
+    STATUS_KO = "KO"
+    STATUS_FIXED = "Fixed"
     STATUS_CHOICES = [
-        ("Auto", "Auto validated"),
-        ("Unknown", "Unknown"),
-        ("Validated", "Validated"),
-        ("KO", "Problem"),
-        ("Fixed", "Problem solved"),
+        (STATUS_AUTO, "Auto validated"),
+        (STATUS_UNKNOWN, "Unknown"),
+        (STATUS_VALIDATED, "Validated"),
+        (STATUS_KO, "Problem"),
+        (STATUS_FIXED, "Problem solved"),
     ]
-    ADDITION_CHOICES = [("Scan", "Added by scan"), ("Manual", "Added manually")]
+    ADDITION_SCAN = "Scan"
+    ADDITION_MANUAL = "Manual"
+    ADDITION_CHOICES = [
+        (ADDITION_SCAN, "Added by scan"),
+        (ADDITION_MANUAL, "Added manually"),
+    ]
 
     EXPLOITATION_DISTRIBUTION_SOURCE = "DistributionSource"
     EXPLOITATION_DISTRIBUTION_NONSOURCE = "DistributionNonSource"
@@ -93,18 +103,7 @@ class Usage(models.Model):
 
 
 class Component(models.Model):
-    """A third party FOSS Component.
-
-    :ivar name: (String) Name of the FOSS component Unique.
-    :ivar package_repo: (String) repository of the package
-    :ivar description: (String) Descritpion of the FOSS component
-    :ivar programming_language: (String) Name of programming languages used in this
-        Component
-    :ivar spdx_expression: (String) An expression of license for the component.
-    :ivar homepage_url: (URL) Url of the repository of the component
-    :ivar export_control_status: (String) A string specifying the export control status
-
-    """
+    """A third party FOSS Component."""
 
     CLEARED = "CL"
     TOBECHECKED = "TBC"
@@ -114,8 +113,10 @@ class Component(models.Model):
         (TOBECHECKED, "To check"),
         (CONFIRMED, "Confirmed"),
     ]
-    name = models.CharField(max_length=200)
-    package_repo = models.CharField(max_length=200, blank=True)
+    name = models.CharField(
+        max_length=200, help_text="Unique name of the FOSS component."
+    )
+    package_repo = models.CharField("Package repository", max_length=200, blank=True)
     description = models.TextField(max_length=500, blank=True)
     programming_language = models.CharField(max_length=200, blank=True)
     spdx_expression = models.CharField(max_length=200, blank=True)
@@ -140,10 +141,24 @@ class Version(models.Model):
         Component, on_delete=models.CASCADE, related_name="versions"
     )
     version_number = models.CharField(max_length=200)
-    declared_license_expr = models.CharField(max_length=200, blank=True)
-    spdx_valid_license_expr = models.CharField(max_length=200, blank=True)
-    corrected_license = models.CharField(max_length=200, blank=True)
-    purl = models.CharField(max_length=250, blank=True)
+    declared_license_expr = models.CharField(
+        max_length=200,
+        blank=True,
+        help_text="Declared license expression (may not be SPDX valid)",
+    )
+    spdx_valid_license_expr = models.CharField(
+        max_length=200, blank=True, help_text="License expression validated by user"
+    )
+    corrected_license = models.CharField(
+        max_length=200,
+        blank=True,
+        help_text="Final license expression used in legal evaluation",
+    )
+    purl = models.CharField(
+        max_length=250,
+        blank=True,
+        help_text="Package URL (https://github.com/package-url/purl-spec)",
+    )
 
     @property
     def license_is_ambiguous(self):
