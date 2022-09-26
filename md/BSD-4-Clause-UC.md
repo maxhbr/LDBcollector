@@ -54,6 +54,25 @@
 
 -   http://www.gnu.org/philosophy/bsd.html
 
+## OSADL Rule
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    	IF Advertisement
+    		YOU MUST Credit In Advertisement Verbatim "This product includes software developed by the University of California, Berkeley and its contributors."
+    	YOU MUST NOT Promote
+    USE CASE Binary delivery
+    	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+    	YOU MUST Provide License text In Documentation OR Distribution material
+    	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+    	IF Advertisement
+    		YOU MUST Credit In Advertisement Verbatim "This product includes software developed by the University of California, Berkeley and its contributors."
+    	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 ## Text
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -148,6 +167,10 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[b]/[bs]/BSD-3-Clause-License-(UC;without-3rd-Clause).yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause-UC.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause-UC.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -235,6 +258,16 @@
                     ]
                 },
                 "spdxLicenseId": "BSD-4-Clause-UC"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause-UC.txt",
+                "spdxId": "BSD-4-Clause-UC",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Advertisement\r\n\t\tYOU MUST Credit In Advertisement Verbatim \"This product includes software developed by the University of California, Berkeley and its contributors.\"\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n\tIF Advertisement\r\n\t\tYOU MUST Credit In Advertisement Verbatim \"This product includes software developed by the University of California, Berkeley and its contributors.\"\n\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD-4-Clause-UC"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

@@ -131,6 +131,16 @@
 
 (source: Hitachi open-license)
 
+## OSADL Rule
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward License text
+    	YOU MUST Forward Copyright notices
+    	IF Software modification
+    		YOU MUST Provide Modification report
+
+(source: OSADL License Checklist)
+
 ## Text
 
     PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
@@ -179,6 +189,10 @@
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Python-2.0.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -329,6 +343,16 @@
                 },
                 "licensename": "Python-2.0",
                 "copyleftkind": "NoCopyleft"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Python-2.0.txt",
+                "spdxId": "Python-2.0",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward License text\n\tYOU MUST Forward Copyright notices\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "Python-2.0"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": null,

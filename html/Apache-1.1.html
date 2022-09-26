@@ -105,6 +105,27 @@ REQUISITE: Get special permission in writing.
 </code></pre></li>
 </ul>
 <p> (source: Hitachi open-license)</p>
+<h2>OSADL Rule</h2>
+<pre><code>USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward License text
+	YOU MUST Forward Warranty disclaimer
+	IF Documentation
+		YOU MUST Credit Verbatim In Documentation &quot;This product includes software developed by the Apache Software Foundation (http://www.apache.org/).&quot;
+	IF Software modification
+		YOU MUST NOT Promote using &quot;Apache&quot; or &quot;Apache Software Foundation&quot;
+		YOU MUST NOT Use &quot;Apache&quot; [ex. &quot;Jakarta,&quot; &quot;Apache,&quot; or &quot;Apache Commons,&quot;] in product name
+USE CASE Binary delivery
+	IF Documentation
+		YOU MUST Credit Verbatim In Documentation &quot;This product includes software developed by the Apache Software Foundation (http://www.apache.org/).&quot;
+	YOU MUST Forward Copyright notices In Documentation OR Distribution material
+	YOU MUST Forward License text In Documentation OR Distribution material
+	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
+	IF Software modification
+		YOU MUST NOT Promote using &quot;Apache&quot; or &quot;Apache Software Foundation&quot;
+		YOU MUST NOT Use &quot;Apache&quot; [ex. &quot;Jakarta,&quot; &quot;Apache,&quot; or &quot;Apache Commons,&quot;] in product name
+</code></pre>
+<p> (source: OSADL License Checklist)</p>
 <h2>Text</h2>
 <pre><code>The Apache Software License, Version 1.1
 
@@ -165,6 +186,7 @@ SUCH DAMAGE.
 <li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.1.yaml" title="Metaeffekt Universe">Metaeffekt Universe</a> (CC-BY-4.0)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
+<li><p><a href="https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt" title="OSADL License Checklist">OSADL License Checklist</a> (NOASSERTION)</p></li>
 <li><p><a href="https://opensource.org/licenses/" title="OpenSourceInitiative">OpenSourceInitiative</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
@@ -308,6 +330,16 @@ SUCH DAMAGE.
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;Apache-1.1&quot;
+        },
+        &quot;OSADL License Checklist&quot;: {
+            &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt&quot;,
+            &quot;spdxId&quot;: &quot;Apache-1.1&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim In Documentation \&quot;This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\&quot;\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \&quot;Apache\&quot; or \&quot;Apache Software Foundation\&quot;\n\t\tYOU MUST NOT Use \&quot;Apache\&quot; [ex. \&quot;Jakarta,\&quot; \&quot;Apache,\&quot; or \&quot;Apache Commons,\&quot;] in product name\nUSE CASE Binary delivery\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim In Documentation \&quot;This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\&quot;\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \&quot;Apache\&quot; or \&quot;Apache Software Foundation\&quot;\n\t\tYOU MUST NOT Use \&quot;Apache\&quot; [ex. \&quot;Jakarta,\&quot; \&quot;Apache,\&quot; or \&quot;Apache Commons,\&quot;] in product name\n&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Apache-1.1&quot;
+                ]
+            }
         },
         &quot;Fedora Project Wiki&quot;: {
             &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,

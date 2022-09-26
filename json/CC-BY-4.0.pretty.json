@@ -30,7 +30,7 @@
             ]
         ]
     ],
-    "__hasPatentHint": false,
+    "__hasPatentHint": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -98,6 +98,17 @@
                 ]
             },
             "spdxLicenseId": "CC-BY-4.0"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CC-BY-4.0.txt",
+            "spdxId": "CC-BY-4.0",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery OR Network service\n\tYOU MUST NOT Restrict Granted rights\n\tYOU MUST NOT Promote\n\tYOU MUST Forward Attribution notice\n\tYOU MUST Forward Copyright notice\n\tYOU MUST Forward License notice\n\tYOU MUST Forward Reference to Warranty disclaimer\n\tYOU MUST Forward Reference to Work\n\tYOU MUST Forward Modification notice\n\tYOU MUST Provide OR Reference License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\tATTRIBUTE Reasonable\n\tIF Requested by Copyright holder of Original work\n\t\tYOU MUST Delete Attribution notice\n\t\tYOU MUST Delete Copyright notice\n\t\tYOU MUST Delete License notice\n\t\tYOU MUST Delete Reference to Warranty disclaimer\n\t\tYOU MUST Delete Reference to Work\n\t\tATTRIBUTE Reasonable\n\tYOU MUST NOT Impede Fulfilling License obligations for Original work\nPATENT HINTS Yes\n",
+            "_implications": {
+                "__impliedNames": [
+                    "CC-BY-4.0"
+                ],
+                "__hasPatentHint": true
+            }
         },
         "Scancode": {
             "otherUrls": [

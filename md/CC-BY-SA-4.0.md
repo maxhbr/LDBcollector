@@ -175,6 +175,36 @@
 
 (source: Hitachi open-license)
 
+## OSADL Rule
+
+    USE CASE Source code delivery OR Binary delivery OR Network service
+    	YOU MUST NOT Restrict Granted rights
+    	YOU MUST NOT Promote
+    	YOU MUST Forward Attribution notice
+    	YOU MUST Forward Copyright notice
+    	YOU MUST Forward License notice
+    	YOU MUST Forward Reference to Warranty disclaimer
+    	YOU MUST Forward Reference to Work
+    	YOU MUST Forward Modification notice
+    	YOU MUST Provide OR Reference License text
+    	IF Software modification
+    		YOU MUST Provide Modification notice
+    		YOU MUST Use Compatible license
+    		YOU MUST Provide OR Reference License text of Compatible license
+    		YOU MUST NOT Restrict Granted rights
+    	ATTRIBUTE Reasonable
+    	IF Requested by Copyright holder of Original work
+    		YOU MUST Delete Attribution notice
+    		YOU MUST Delete Copyright notice
+    		YOU MUST Delete License notice
+    		YOU MUST Delete Reference to Warranty disclaimer
+    		YOU MUST Delete Reference to Work
+    		ATTRIBUTE Reasonable
+    PATENT HINTS Yes
+    COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
+
 ## Text
 
     Attribution-ShareAlike 4.0 International
@@ -632,6 +662,10 @@
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/CC-BY-SA-4.0.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -682,7 +716,7 @@
                 ]
             ]
         ],
-        "__hasPatentHint": false,
+        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -750,6 +784,24 @@
                     ]
                 },
                 "spdxLicenseId": "CC-BY-SA-4.0"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CC-BY-SA-4.0.txt",
+                "spdxId": "CC-BY-SA-4.0",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery OR Network service\n\tYOU MUST NOT Restrict Granted rights\n\tYOU MUST NOT Promote\n\tYOU MUST Forward Attribution notice\n\tYOU MUST Forward Copyright notice\n\tYOU MUST Forward License notice\n\tYOU MUST Forward Reference to Warranty disclaimer\n\tYOU MUST Forward Reference to Work\n\tYOU MUST Forward Modification notice\n\tYOU MUST Provide OR Reference License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Provide OR Reference License text of Compatible license\n\t\tYOU MUST NOT Restrict Granted rights\n\tATTRIBUTE Reasonable\n\tIF Requested by Copyright holder of Original work\n\t\tYOU MUST Delete Attribution notice\n\t\tYOU MUST Delete Copyright notice\n\t\tYOU MUST Delete License notice\n\t\tYOU MUST Delete Reference to Warranty disclaimer\n\t\tYOU MUST Delete Reference to Work\n\t\tATTRIBUTE Reasonable\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "CC-BY-SA-4.0"
+                    ],
+                    "__hasPatentHint": true,
+                    "__impliedCopyleft": [
+                        [
+                            "OSADL License Checklist",
+                            "Copyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "Copyleft"
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -1276,6 +1328,10 @@
             ]
         ],
         "__impliedCopyleft": [
+            [
+                "OSADL License Checklist",
+                "Copyleft"
+            ],
             [
                 "Scancode",
                 "Copyleft"

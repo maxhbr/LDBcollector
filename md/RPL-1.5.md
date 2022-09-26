@@ -49,6 +49,75 @@
 
 -   http://www.opensource.org/licenses/RPL-1.5
 
+## OSADL Rule
+
+    USE CASE Source code delivery
+    	YOU MUST Forward License notice
+    	IF Software modification
+    		YOU MUST Grant License
+    			ATTRIBUTE Original license
+    		YOU MUST Provide Modification report
+    		YOU MUST Provide Modification notice
+    		YOU MUST Forward Copyright notice
+    		YOU MUST Forward License text
+    		YOU MUST Disseminate Software modification
+    			ATTRIBUTE Beginning At the most 1 month after beginning of deployment
+    			ATTRIBUTE Modification report
+    			ATTRIBUTE Retrieval information
+    	IF Combined work
+    		IF Documentation
+    			EITHER
+    				YOU MUST Forward License text
+    			OR
+    				YOU MUST Reference License text
+    USE CASE Binary delivery
+    	YOU MUST Forward License notice
+    	YOU MUST Provide Source code
+    		ATTRIBUTE Beginning At the most 1 month after beginning of deployment
+    		ATTRIBUTE End At least 12 months after end of deployment
+    		ATTRIBUTE No profit
+    	IF Software modification
+    		YOU MUST Grant License
+    			ATTRIBUTE Original license
+    		YOU MUST Provide Modification report
+    		YOU MUST Provide Modification notice
+    		YOU MUST Forward Copyright notice
+    		YOU MUST Forward License text
+    		YOU MUST Disseminate Software modification
+    			ATTRIBUTE Beginning At the most 1 month after beginning of deployment
+    			ATTRIBUTE Modification report
+    			ATTRIBUTE Retrieval information
+    	IF Combined work
+    		IF Documentation
+    			EITHER
+    				YOU MUST Forward License text
+    			OR
+    				YOU MUST Reference License text
+    COMPATIBILITY BSD-2-Clause
+    COMPATIBILITY BSD-2-Clause-Patent
+    COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSL-1.0
+    COMPATIBILITY bzip2-1.0.5
+    COMPATIBILITY bzip2-1.0.6
+    COMPATIBILITY CC0-1.0
+    COMPATIBILITY curl
+    COMPATIBILITY EFL-2.0
+    COMPATIBILITY IBM-pibs
+    COMPATIBILITY ICU
+    COMPATIBILITY ISC
+    COMPATIBILITY Libpng
+    COMPATIBILITY MIT
+    COMPATIBILITY NTP
+    COMPATIBILITY UPL-1.0
+    COMPATIBILITY WTFPL
+    COMPATIBILITY X11
+    COMPATIBILITY Zlib
+    COMPATIBILITY ZPL-2.0
+    PATENT HINTS Yes
+    COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
+
 ## Text
 
     Reciprocal Public License (RPL)
@@ -238,6 +307,10 @@
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/RPL-1.5.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -288,6 +361,7 @@
                 ]
             ]
         ],
+        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -380,6 +454,24 @@
                 },
                 "licensename": "RPL-1.5",
                 "copyleftkind": "SaaSCopyleft"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/RPL-1.5.txt",
+                "spdxId": "RPL-1.5",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License notice\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Forward Copyright notice\n\t\tYOU MUST Forward License text\n\t\tYOU MUST Disseminate Software modification\n\t\t\tATTRIBUTE Beginning At the most 1 month after beginning of deployment\n\t\t\tATTRIBUTE Modification report\n\t\t\tATTRIBUTE Retrieval information\n\tIF Combined work\n\t\tIF Documentation\n\t\t\tEITHER\n\t\t\t\tYOU MUST Forward License text\n\t\t\tOR\n\t\t\t\tYOU MUST Reference License text\nUSE CASE Binary delivery\n\tYOU MUST Forward License notice\n\tYOU MUST Provide Source code\n\t\tATTRIBUTE Beginning At the most 1 month after beginning of deployment\n\t\tATTRIBUTE End At least 12 months after end of deployment\n\t\tATTRIBUTE No profit\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Forward Copyright notice\n\t\tYOU MUST Forward License text\n\t\tYOU MUST Disseminate Software modification\n\t\t\tATTRIBUTE Beginning At the most 1 month after beginning of deployment\n\t\t\tATTRIBUTE Modification report\n\t\t\tATTRIBUTE Retrieval information\n\tIF Combined work\n\t\tIF Documentation\n\t\t\tEITHER\n\t\t\t\tYOU MUST Forward License text\n\t\t\tOR\n\t\t\t\tYOU MUST Reference License text\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOMPATIBILITY ZPL-2.0\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "RPL-1.5"
+                    ],
+                    "__hasPatentHint": true,
+                    "__impliedCopyleft": [
+                        [
+                            "OSADL License Checklist",
+                            "Copyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "Copyleft"
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -611,6 +703,10 @@
             [
                 "HansHammel license-compatibility-checker",
                 "StrongCopyleft"
+            ],
+            [
+                "OSADL License Checklist",
+                "Copyleft"
             ],
             [
                 "Scancode",

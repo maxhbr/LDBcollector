@@ -35,6 +35,33 @@
 
 -   **SPDX:** https://spdx.org/licenses/NBPL-1.0.json
 
+## OSADL Rule
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward Warranty disclaimer
+    	IF Software modification
+    		YOU MUST Provide Modification notice
+    		YOU MUST Provide Modification report
+    		YOU MUST Provide Modification date
+    		EITHER
+    			YOU MUST Publish Source code
+    		OR
+    			YOU MUST Rename Source code
+    		YOU MUST NOT Promote
+    USE CASE Binary delivery
+    	EITHER
+    		YOU MUST Provide Retrieval information
+    	OR
+    		YOU MUST Provide Source code
+    			ATTRIBUTE Machine-readable
+    	OR
+    		YOU MUST Rename Source code
+    	YOU MUST Provide Modification report
+    	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 ## Text
 
     The Net Boolean Public License 
@@ -176,6 +203,10 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[n]/[nb]/NBPL-1.0.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/NBPL-1.0.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [SPDX](https://spdx.org/licenses/NBPL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -250,6 +281,16 @@
                     ]
                 },
                 "spdxLicenseId": "NBPL-1.0"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/NBPL-1.0.txt",
+                "spdxId": "NBPL-1.0",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Warranty disclaimer\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification report\n\t\tYOU MUST Provide Modification date\n\t\tEITHER\r\n\t\t\tYOU MUST Publish Source code\n\t\tOR\r\n\t\t\tYOU MUST Rename Source code\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tEITHER\r\n\t\tYOU MUST Provide Retrieval information\n\tOR\r\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\tOR\r\n\t\tYOU MUST Rename Source code\n\tYOU MUST Provide Modification report\n\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "NBPL-1.0"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": null,

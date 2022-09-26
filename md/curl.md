@@ -32,6 +32,15 @@
 
 -   http://curl.haxx.se/legal/licmix.html
 
+## OSADL Rule
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 ## Text
 
     Permission to use, copy, modify, and distribute this software for any purpose
@@ -65,6 +74,10 @@
 -   [Metaeffekt
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pe]/Permission-Terms-(curl).yaml "Metaeffekt Universe")
     (CC-BY-4.0)
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [SPDX](https://spdx.org/licenses/curl.html "SPDX") (all data \[in
     this repository\] is generated)
@@ -137,6 +150,16 @@
                     ]
                 },
                 "spdxLicenseId": "curl"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt",
+                "spdxId": "curl",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "curl"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

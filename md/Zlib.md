@@ -143,6 +143,21 @@
 
 (source: Hitachi open-license)
 
+## OSADL Rule
+
+    USE CASE Source code delivery
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    	IF Software modification
+    		YOU MUST Mark
+    	YOU MUST NOT Appropriate
+    USE CASE Binary delivery
+    	IF Software modification
+    		YOU MUST Mark
+    	YOU MUST NOT Appropriate
+
+(source: OSADL License Checklist)
+
 ## Text
 
     This software is provided 'as-is', without any express or implied warranty. In no
@@ -203,6 +218,10 @@
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Zlib.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -360,6 +379,16 @@
                     ]
                 },
                 "spdxLicenseId": "Zlib"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Zlib.txt",
+                "spdxId": "Zlib",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Software modification\n\t\tYOU MUST Mark\n\tYOU MUST NOT Appropriate\nUSE CASE Binary delivery\n\tIF Software modification\n\t\tYOU MUST Mark\n\tYOU MUST NOT Appropriate\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "Zlib"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",

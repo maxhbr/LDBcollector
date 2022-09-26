@@ -162,6 +162,76 @@
 
 (source: Hitachi open-license)
 
+## OSADL Rule
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward Warranty disclaimer
+    	IF Software modification
+    		EXCEPT IF Provided By Copyright holder
+    		YOU MUST Provide Modification report
+    		EITHER
+    			YOU MUST Provide Source code of Modified work
+    				ATTRIBUTE to Copyright holder of Original work
+    				ATTRIBUTE Original license
+    		OR
+    			YOU MUST NOT Impede Installation of Original work
+    			YOU MUST NOT Impede Running Original work
+    			YOU MUST Rename Modified work
+    		OR
+    			EITHER
+    				YOU MUST Use Original license
+    			OR
+    				YOU MUST Use Strong copyleft license
+    	YOU MUST NOT Require License fee
+    USE CASE Binary delivery
+    	YOU MUST Reference Source code
+    		IF Reference Expires
+    			EITHER
+    				YOU MUST Provide Reference On Request
+    					ATTRIBUTE Within 30 days
+    			OR
+    				YOU MUST End Binary delivery
+    					ATTRIBUTE Within 30 days
+    	IF Software modification
+    		EXCEPT IF Provided By Copyright holder
+    		YOU MUST Provide Modification report
+    		EITHER
+    			YOU MUST Provide Source code of Modified work
+    				ATTRIBUTE to Copyright holder of Original work
+    				ATTRIBUTE Original license
+    		OR
+    			YOU MUST NOT Impede Installation of Original work
+    			YOU MUST NOT Impede Running Original work
+    			YOU MUST Rename Modified work
+    		OR
+    			EITHER
+    				YOU MUST Use Original license
+    			OR
+    				YOU MUST Use Strong copyleft license
+    	IF Linked work
+    		EITHER
+    			YOU MUST NOT Provide Interface to Work
+    		OR
+    			YOU MUST Provide Modification report
+    			EITHER
+    				YOU MUST Provide Source code of Modified work
+    					ATTRIBUTE to Copyright holder of Original work
+    					ATTRIBUTE Original license
+    			OR
+    				YOU MUST NOT Impede Installation of Original work
+    				YOU MUST NOT Impede Running Original work
+    				YOU MUST Rename Modified work
+    			OR
+    				EITHER
+    					YOU MUST Use Original license
+    				OR
+    					YOU MUST Use Strong copyleft license
+    	YOU MUST NOT Require License fee
+    PATENT HINTS Yes
+
+(source: OSADL License Checklist)
+
 ## Text
 
                    The Artistic License 2.0
@@ -411,6 +481,10 @@
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Artistic-2.0.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -482,7 +556,7 @@
                 ]
             ]
         ],
-        "__hasPatentHint": false,
+        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -588,6 +662,17 @@
                 },
                 "licensename": "Artistic-2.0",
                 "copyleftkind": "NoCopyleft"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Artistic-2.0.txt",
+                "spdxId": "Artistic-2.0",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Warranty disclaimer\n\tIF Software modification\n\t\tEXCEPT IF Provided By Copyright holder\n\t\tYOU MUST Provide Modification report\n\t\tEITHER\n\t\t\tYOU MUST Provide Source code of Modified work\n\t\t\t\tATTRIBUTE to Copyright holder of Original work\n\t\t\t\tATTRIBUTE Original license\n\t\tOR\n\t\t\tYOU MUST NOT Impede Installation of Original work\n\t\t\tYOU MUST NOT Impede Running Original work\n\t\t\tYOU MUST Rename Modified work\n\t\tOR\n\t\t\tEITHER\n\t\t\t\tYOU MUST Use Original license\n\t\t\tOR\n\t\t\t\tYOU MUST Use Strong copyleft license\n\tYOU MUST NOT Require License fee\nUSE CASE Binary delivery\n\tYOU MUST Reference Source code\n\t\tIF Reference Expires\n\t\t\tEITHER\n\t\t\t\tYOU MUST Provide Reference On Request\n\t\t\t\t\tATTRIBUTE Within 30 days\n\t\t\tOR\n\t\t\t\tYOU MUST End Binary delivery\n\t\t\t\t\tATTRIBUTE Within 30 days\n\tIF Software modification\n\t\tEXCEPT IF Provided By Copyright holder\n\t\tYOU MUST Provide Modification report\n\t\tEITHER\n\t\t\tYOU MUST Provide Source code of Modified work\n\t\t\t\tATTRIBUTE to Copyright holder of Original work\n\t\t\t\tATTRIBUTE Original license\n\t\tOR\n\t\t\tYOU MUST NOT Impede Installation of Original work\n\t\t\tYOU MUST NOT Impede Running Original work\n\t\t\tYOU MUST Rename Modified work\n\t\tOR\n\t\t\tEITHER\n\t\t\t\tYOU MUST Use Original license\n\t\t\tOR\n\t\t\t\tYOU MUST Use Strong copyleft license\n\tIF Linked work\n\t\tEITHER\n\t\t\tYOU MUST NOT Provide Interface to Work\n\t\tOR\n\t\t\tYOU MUST Provide Modification report\n\t\t\tEITHER\n\t\t\t\tYOU MUST Provide Source code of Modified work\n\t\t\t\t\tATTRIBUTE to Copyright holder of Original work\n\t\t\t\t\tATTRIBUTE Original license\n\t\t\tOR\n\t\t\t\tYOU MUST NOT Impede Installation of Original work\n\t\t\t\tYOU MUST NOT Impede Running Original work\n\t\t\t\tYOU MUST Rename Modified work\n\t\t\tOR\n\t\t\t\tEITHER\n\t\t\t\t\tYOU MUST Use Original license\n\t\t\t\tOR\n\t\t\t\t\tYOU MUST Use Strong copyleft license\n\tYOU MUST NOT Require License fee\nPATENT HINTS Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "Artistic-2.0"
+                    ],
+                    "__hasPatentHint": true
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",

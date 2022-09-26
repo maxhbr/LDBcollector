@@ -63,6 +63,17 @@
 
 -   https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf
 
+## OSADL Rule
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notice
+    	EITHER
+    		YOU MUST Forward License text
+    	OR
+    		YOU MUST Reference License text
+
+(source: OSADL License Checklist)
+
 ## Text
 
     The Universal Permissive License (UPL), Version 1.0
@@ -120,6 +131,10 @@
 -   [Metaeffekt
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[u]/[up]/UPL-1.0.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -207,6 +222,16 @@
                     ]
                 },
                 "spdxLicenseId": "UPL-1.0"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt",
+                "spdxId": "UPL-1.0",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notice\n\tEITHER\n\t\tYOU MUST Forward License text\n\tOR\r\n\t\tYOU MUST Reference License text\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "UPL-1.0"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

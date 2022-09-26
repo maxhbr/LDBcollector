@@ -44,6 +44,19 @@
 
 (source: Hitachi open-license)
 
+** OSADL Rule
+#+begin_example
+  USE CASE Source code delivery
+  	YOU MUST NOT Appropriate
+  	YOU MUST Forward License text
+  	IF Software modification
+  		YOU MUST Mark
+  		YOU MUST NOT Appropriate
+  USE CASE Binary delivery
+#+end_example
+
+(source: OSADL License Checklist)
+
 ** Text
 #+begin_example
   This copy of the libpng notices is provided for your convenience.  In case of
@@ -169,6 +182,9 @@
 - [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[p]/[pn]/PNG-Reference-Library-License-1.0.yaml][Metaeffekt
   Universe]] (CC-BY-4.0)
 
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/Libpng.txt][OSADL
+  License Checklist]] (NOASSERTION)
+
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml][finos/OSLC-handbook]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
@@ -245,6 +261,16 @@
                   ]
               },
               "spdxLicenseId": "Libpng"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Libpng.txt",
+              "spdxId": "Libpng",
+              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST NOT Appropriate\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Mark\n\t\tYOU MUST NOT Appropriate\nUSE CASE Binary delivery\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "Libpng"
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [

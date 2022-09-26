@@ -143,6 +143,20 @@ REQUISITE: Get special permission in writing.
 </code></pre></li>
 </ul>
 <p> (source: Hitachi open-license)</p>
+<h2>OSADL Rule</h2>
+<pre><code>USE CASE Source code delivery
+	YOU MUST Forward License text
+	IF Software modification
+		YOU MUST Provide Modification report
+	YOU MUST Forward Copyright notices
+	YOU MUST NOT Promote
+	YOU MUST Credit FreeType Team
+USE CASE Binary delivery
+	YOU MUST Credit In Documentation FreeType Team
+	YOU MUST NOT Promote
+	YOU MUST Credit FreeType Team
+</code></pre>
+<p> (source: OSADL License Checklist)</p>
 <h2>Text</h2>
 <pre><code>The FreeType Project LICENSE
 ----------------------------
@@ -317,6 +331,7 @@ Legal Terms
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[f]/[fr]/FreeType-Project-License.yaml" title="Metaeffekt Universe">Metaeffekt Universe</a> (CC-BY-4.0)</p></li>
+<li><p><a href="https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt" title="OSADL License Checklist">OSADL License Checklist</a> (NOASSERTION)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://spdx.org/licenses/FTL.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
@@ -413,6 +428,16 @@ Legal Terms
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;FTL&quot;
+        },
+        &quot;OSADL License Checklist&quot;: {
+            &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt&quot;,
+            &quot;spdxId&quot;: &quot;FTL&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Forward Copyright notices\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\nUSE CASE Binary delivery\n\tYOU MUST Credit In Documentation FreeType Team\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\n&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;FTL&quot;
+                ]
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [

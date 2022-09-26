@@ -105,6 +105,31 @@
 
 (source: Hitachi open-license)
 
+## OSADL Rule
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    	YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    	IF Advertisement
+    		YOU MUST Credit Verbatim In Advertisement "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    	IF Software modification
+    		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
+    		YOU MUST NOT Use "Apache" in product name
+    USE CASE Binary delivery
+    	YOU MUST Forward Copyright notices In Documentation OR Distribution material
+    	YOU MUST Forward License text In Documentation OR Distribution material
+    	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
+    	YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    	IF Advertisement
+    		YOU MUST Credit Verbatim In Advertisement "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    	IF Software modification
+    		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
+    		YOU MUST NOT Use "Apache" in product name
+
+(source: OSADL License Checklist)
+
 ## Text
 
     Redistribution and use in source and binary forms, with or without
@@ -189,6 +214,10 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.0.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -270,6 +299,16 @@
                     ]
                 },
                 "spdxLicenseId": "Apache-1.0"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt",
+                "spdxId": "Apache-1.0",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim In Advertisement \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache Server\" or \"Apache Group\"\n\t\tYOU MUST NOT Use \"Apache\" in product name\nUSE CASE Binary delivery\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim In Advertisement \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache Server\" or \"Apache Group\"\n\t\tYOU MUST NOT Use \"Apache\" in product name\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apache-1.0"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "NO",

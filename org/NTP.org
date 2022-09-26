@@ -55,6 +55,17 @@
 
 - http://www.pgpool.net/mediawiki/index.php/pgpool-II_License
 
+** OSADL Rule
+#+begin_example
+  USE CASE Source code delivery OR Binary delivery
+  	YOU MUST Forward Copyright notices
+  	YOU MUST NOT Promote
+  	YOU MUST Forward Copyright notices In Documentation
+  	YOU MUST Forward License text In Documentation
+#+end_example
+
+(source: OSADL License Checklist)
+
 ** Text
 #+begin_example
   Permission to use, copy, modify, and distribute this software and its
@@ -84,6 +95,9 @@
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
+
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/NTP.txt][OSADL
+  License Checklist]] (NOASSERTION)
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -208,6 +222,16 @@
                   ]
               },
               "spdxLicenseId": "NTP"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/NTP.txt",
+              "spdxId": "NTP",
+              "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST NOT Promote\n\tYOU MUST Forward Copyright notices In Documentation\n\tYOU MUST Forward License text In Documentation\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "NTP"
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [

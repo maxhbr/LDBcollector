@@ -72,6 +72,35 @@
 
 -   http://www.opensource.org/licenses/afl-3.0
 
+## OSADL Rule
+
+    USE CASE Source code delivery OR Binary delivery OR Network service
+    	YOU MUST Reference License text
+    	YOU MUST Search License acceptance
+    		ATTRIBUTE Reasonable
+    	USE CASE License change
+    		YOU MUST Use Compatible license
+    	IF Software modification
+    		YOU MUST Forward Copyright notices
+    		YOU MUST Forward Patent notice
+    		YOU MUST Forward Trademark notice
+    		YOU MUST Forward License notice
+    		YOU MUST Provide Modification notice
+    		YOU MUST NOT Promote
+    		IF Modified work under Original license
+    			EITHER
+    				YOU MUST Include Source code of Modified work
+    					ATTRIBUTE Machine-readable
+    			OR
+    				YOU MUST Provide Delayed source code delivery of Modified work
+    					ATTRIBUTE Machine-readable
+    					ATTRIBUTE Via Internet
+    					ATTRIBUTE No profit
+    					ATTRIBUTE Duration As long as distributed
+    PATENT HINTS Yes
+
+(source: OSADL License Checklist)
+
 ## Text
 
     This Academic Free License (the "License") applies to any original work of authorship (the "Original Work") whose owner (the "Licensor") has placed the following licensing notice adjacent to the copyright notice for the Original Work:
@@ -154,6 +183,10 @@
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-3.0.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -304,6 +337,17 @@
                 },
                 "licensename": "AFL-3.0",
                 "copyleftkind": "NoCopyleft"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-3.0.txt",
+                "spdxId": "AFL-3.0",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery OR Network service\n\tYOU MUST Reference License text\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notice\n\t\tYOU MUST Forward Trademark notice\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST NOT Promote\n\t\tIF Modified work under Original license\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Source code of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tOR\n\t\t\t\tYOU MUST Provide Delayed source code delivery of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tATTRIBUTE Duration As long as distributed\nPATENT HINTS Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "AFL-3.0"
+                    ],
+                    "__hasPatentHint": true
+                }
             },
             "Scancode": {
                 "otherUrls": [

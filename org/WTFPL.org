@@ -88,6 +88,13 @@
 
 - http://fedoraproject.org/wiki/Licensing/WTFPL
 
+** OSADL Rule
+#+begin_example
+  USE CASE Source code delivery OR Binary delivery
+#+end_example
+
+(source: OSADL License Checklist)
+
 ** Text
 #+begin_example
   DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
@@ -139,6 +146,9 @@
 
 - [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[w]/[wt]/WTF-Public-License-2.0.yaml][Metaeffekt
   Universe]] (CC-BY-4.0)
+
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/WTFPL.txt][OSADL
+  License Checklist]] (NOASSERTION)
 
 - [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
   (CC0-1.0)
@@ -248,6 +258,16 @@
               },
               "licensename": "WTFPL",
               "copyleftkind": "NoCopyleft"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/WTFPL.txt",
+              "spdxId": "WTFPL",
+              "osadlRule": "USE CASE Source code delivery OR Binary delivery\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "WTFPL"
+                  ]
+              }
           },
           "Fedora Project Wiki": {
               "GPLv2 Compat?": "Yes",

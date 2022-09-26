@@ -94,6 +94,33 @@
 <li><p>http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense</p></li>
 <li><p>http://www.opensource.org/licenses/afl-3.0</p></li>
 </ul>
+<h2>OSADL Rule</h2>
+<pre><code>USE CASE Source code delivery OR Binary delivery OR Network service
+	YOU MUST Reference License text
+	YOU MUST Search License acceptance
+		ATTRIBUTE Reasonable
+	USE CASE License change
+		YOU MUST Use Compatible license
+	IF Software modification
+		YOU MUST Forward Copyright notices
+		YOU MUST Forward Patent notice
+		YOU MUST Forward Trademark notice
+		YOU MUST Forward License notice
+		YOU MUST Provide Modification notice
+		YOU MUST NOT Promote
+		IF Modified work under Original license
+			EITHER
+				YOU MUST Include Source code of Modified work
+					ATTRIBUTE Machine-readable
+			OR
+				YOU MUST Provide Delayed source code delivery of Modified work
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Via Internet
+					ATTRIBUTE No profit
+					ATTRIBUTE Duration As long as distributed
+PATENT HINTS Yes
+</code></pre>
+<p> (source: OSADL License Checklist)</p>
 <h2>Text</h2>
 <pre><code>This Academic Free License (the &quot;License&quot;) applies to any original work of authorship (the &quot;Original Work&quot;) whose owner (the &quot;Licensor&quot;) has placed the following licensing notice adjacent to the copyright notice for the Original Work:
 
@@ -152,6 +179,7 @@ e) to display the Original Work publicly.
 <li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ac]/Academic-Free-License-3.0.yaml" title="Metaeffekt Universe">Metaeffekt Universe</a> (CC-BY-4.0)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
+<li><p><a href="https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-3.0.txt" title="OSADL License Checklist">OSADL License Checklist</a> (NOASSERTION)</p></li>
 <li><p><a href="https://opensource.org/licenses/" title="OpenSourceInitiative">OpenSourceInitiative</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods" title="OpenChainPolicyTemplate">OpenChainPolicyTemplate</a> (CC0-1.0)</p></li>
 <li><p><a href="https://spdx.org/licenses/AFL-3.0.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
@@ -291,6 +319,17 @@ e) to display the Original Work publicly.
             },
             &quot;licensename&quot;: &quot;AFL-3.0&quot;,
             &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
+        },
+        &quot;OSADL License Checklist&quot;: {
+            &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-3.0.txt&quot;,
+            &quot;spdxId&quot;: &quot;AFL-3.0&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery OR Network service\n\tYOU MUST Reference License text\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notice\n\t\tYOU MUST Forward Trademark notice\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST NOT Promote\n\t\tIF Modified work under Original license\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Source code of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tOR\n\t\t\t\tYOU MUST Provide Delayed source code delivery of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tATTRIBUTE Duration As long as distributed\nPATENT HINTS Yes\n&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;AFL-3.0&quot;
+                ],
+                &quot;__hasPatentHint&quot;: true
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [

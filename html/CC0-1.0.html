@@ -25,7 +25,7 @@
 </tr>
 <tr class="odd">
 <td><p>Has Patent Hint</p></td>
-<td><p>False</p></td>
+<td><p>True</p></td>
 </tr>
 </tbody>
 </table>
@@ -105,6 +105,11 @@ Conditions: None
 </code></pre></li>
 </ul>
 <p> (source: Hitachi open-license)</p>
+<h2>OSADL Rule</h2>
+<pre><code>USE CASE Source code delivery OR Binary delivery
+PATENT HINTS Yes
+</code></pre>
+<p> (source: OSADL License Checklist)</p>
 <h2>Text</h2>
 <pre><code>Creative Commons Legal Code
 
@@ -240,6 +245,7 @@ express Statement of Purpose.
 <li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cc]/CC0-Universal-1.0.yaml" title="Metaeffekt Universe">Metaeffekt Universe</a> (CC-BY-4.0)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
+<li><p><a href="https://www.osadl.org/fileadmin/checklists/unreflicenses/CC0-1.0.txt" title="OSADL License Checklist">OSADL License Checklist</a> (NOASSERTION)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://spdx.org/licenses/CC0-1.0.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc0-1.0.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
@@ -278,7 +284,7 @@ express Statement of Purpose.
             ]
         ]
     ],
-    &quot;__hasPatentHint&quot;: false,
+    &quot;__hasPatentHint&quot;: true,
     &quot;facts&quot;: {
         &quot;Open Knowledge International&quot;: {
             &quot;is_generic&quot;: null,
@@ -362,6 +368,17 @@ express Statement of Purpose.
             },
             &quot;licensename&quot;: &quot;CC0-1.0&quot;,
             &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
+        },
+        &quot;OSADL License Checklist&quot;: {
+            &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/CC0-1.0.txt&quot;,
+            &quot;spdxId&quot;: &quot;CC0-1.0&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery\r\nPATENT HINTS Yes\n&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;CC0-1.0&quot;
+                ],
+                &quot;__hasPatentHint&quot;: true
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [

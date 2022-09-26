@@ -108,6 +108,29 @@ REQUISITE: Get special permission in writing.
 </code></pre></li>
 </ul>
 <p> (source: Hitachi open-license)</p>
+<h2>OSADL Rule</h2>
+<pre><code>USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward License text
+	YOU MUST Forward Warranty disclaimer
+	YOU MUST Credit Verbatim &quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).&quot;
+	IF Advertisement
+		YOU MUST Credit Verbatim In Advertisement &quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).&quot;
+	IF Software modification
+		YOU MUST NOT Promote using &quot;Apache Server&quot; or &quot;Apache Group&quot;
+		YOU MUST NOT Use &quot;Apache&quot; in product name
+USE CASE Binary delivery
+	YOU MUST Forward Copyright notices In Documentation OR Distribution material
+	YOU MUST Forward License text In Documentation OR Distribution material
+	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
+	YOU MUST Credit Verbatim &quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).&quot;
+	IF Advertisement
+		YOU MUST Credit Verbatim In Advertisement &quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).&quot;
+	IF Software modification
+		YOU MUST NOT Promote using &quot;Apache Server&quot; or &quot;Apache Group&quot;
+		YOU MUST NOT Use &quot;Apache&quot; in product name
+</code></pre>
+<p> (source: OSADL License Checklist)</p>
 <h2>Text</h2>
 <pre><code>Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
@@ -171,6 +194,7 @@ project, please see &lt;http://www.apache.org/&gt;.</code></pre>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[a]/[ap]/Apache-License-1.0.yaml" title="Metaeffekt Universe">Metaeffekt Universe</a> (CC-BY-4.0)</p></li>
+<li><p><a href="https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt" title="OSADL License Checklist">OSADL License Checklist</a> (NOASSERTION)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://spdx.org/licenses/Apache-1.0.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.0.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
@@ -245,6 +269,16 @@ project, please see &lt;http://www.apache.org/&gt;.</code></pre>
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;Apache-1.0&quot;
+        },
+        &quot;OSADL License Checklist&quot;: {
+            &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt&quot;,
+            &quot;spdxId&quot;: &quot;Apache-1.0&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \&quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\&quot;\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim In Advertisement \&quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\&quot;\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \&quot;Apache Server\&quot; or \&quot;Apache Group\&quot;\n\t\tYOU MUST NOT Use \&quot;Apache\&quot; in product name\nUSE CASE Binary delivery\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST Credit Verbatim \&quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\&quot;\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim In Advertisement \&quot;This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\&quot;\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \&quot;Apache Server\&quot; or \&quot;Apache Group\&quot;\n\t\tYOU MUST NOT Use \&quot;Apache\&quot; in product name\n&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Apache-1.0&quot;
+                ]
+            }
         },
         &quot;Fedora Project Wiki&quot;: {
             &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,

@@ -104,6 +104,69 @@
 
 - http://www.rosenlaw.com/OSL3.0.htm
 
+** OSADL Rule
+#+begin_example
+  USE CASE Source code delivery
+  	YOU MUST Reference License text OSL-3.0
+  	YOU MUST Search License acceptance
+  		ATTRIBUTE Reasonable
+  	IF Software modification
+  		YOU MUST Grant License
+  			ATTRIBUTE Original license
+  		YOU MUST Forward Copyright notices
+  		YOU MUST Forward Patent notices
+  		YOU MUST Forward Trademark notices
+  		YOU MUST Forward License notice
+  		YOU MUST Provide Modification notice
+  		YOU MUST NOT Promote
+  USE CASE Binary delivery OR Network service
+  	YOU MUST Reference License text OSL-3.0
+  	YOU MUST Search License acceptance
+  		ATTRIBUTE Reasonable
+  	IF Software modification
+  		YOU MUST Grant License
+  			ATTRIBUTE Original license
+  		YOU MUST Forward Copyright notices
+  		YOU MUST Forward Patent notices
+  		YOU MUST Forward Trademark notices
+  		YOU MUST Forward License notice
+  		YOU MUST Provide Modification notice
+  		EITHER
+  			YOU MUST Include Source code Of Modification
+  				ATTRIBUTE Machine-readable
+  		OR
+  			YOU MUST Provide Delayed source code delivery Of Modification
+  				ATTRIBUTE Machine-readable
+  				ATTRIBUTE Via Internet
+  				ATTRIBUTE No profit
+  				ATTRIBUTE Duration As long as distributed
+  		YOU MUST NOT Promote
+  COMPATIBILITY BSD-2-Clause
+  COMPATIBILITY BSD-2-Clause-Patent
+  COMPATIBILITY BSD-3-Clause
+  COMPATIBILITY BSL-1.0
+  COMPATIBILITY bzip2-1.0.5
+  COMPATIBILITY bzip2-1.0.6
+  COMPATIBILITY CC0-1.0
+  COMPATIBILITY curl
+  COMPATIBILITY EFL-2.0
+  COMPATIBILITY EUPL-1.1
+  COMPATIBILITY IBM-pibs
+  COMPATIBILITY ICU
+  COMPATIBILITY ISC
+  COMPATIBILITY Libpng
+  COMPATIBILITY MIT
+  COMPATIBILITY NTP
+  COMPATIBILITY UPL-1.0
+  COMPATIBILITY WTFPL
+  COMPATIBILITY X11
+  COMPATIBILITY Zlib
+  PATENT HINTS Yes
+  COPYLEFT CLAUSE Yes
+#+end_example
+
+(source: OSADL License Checklist)
+
 ** Text
 #+begin_example
   Open Software License ("OSL") v. 3.0
@@ -190,6 +253,9 @@
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
+
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/OSL-3.0.txt][OSADL
+  License Checklist]] (NOASSERTION)
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -345,6 +411,24 @@
               },
               "licensename": "OSL-3.0",
               "copyleftkind": "SaaSCopyleft"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/OSL-3.0.txt",
+              "spdxId": "OSL-3.0",
+              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Reference License text OSL-3.0\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery OR Network service\n\tYOU MUST Reference License text OSL-3.0\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tEITHER\n\t\t\tYOU MUST Include Source code Of Modification\n\t\t\t\tATTRIBUTE Machine-readable\n\t\tOR\n\t\t\tYOU MUST Provide Delayed source code delivery Of Modification\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\tATTRIBUTE No profit\n\t\t\t\tATTRIBUTE Duration As long as distributed\n\t\tYOU MUST NOT Promote\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EUPL-1.1\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "OSL-3.0"
+                  ],
+                  "__hasPatentHint": true,
+                  "__impliedCopyleft": [
+                      [
+                          "OSADL License Checklist",
+                          "Copyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "Copyleft"
+              }
           },
           "Fedora Project Wiki": {
               "GPLv2 Compat?": "NO",
@@ -785,6 +869,10 @@
           [
               "HansHammel license-compatibility-checker",
               "StrongCopyleft"
+          ],
+          [
+              "OSADL License Checklist",
+              "Copyleft"
           ],
           [
               "Scancode",

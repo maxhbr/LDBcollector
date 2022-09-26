@@ -22,6 +22,7 @@
             ]
         ]
     ],
+    "__hasPatentHint": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -61,6 +62,17 @@
                 ]
             },
             "spdxLicenseId": "IBM-pibs"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/IBM-pibs.txt",
+            "spdxId": "IBM-pibs",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide Copyright notice (Copyright notice)\n\tYOU MUST Provide License text\nPATENT HINTS Yes\n",
+            "_implications": {
+                "__impliedNames": [
+                    "IBM-pibs"
+                ],
+                "__hasPatentHint": true
+            }
         },
         "Scancode": {
             "otherUrls": null,

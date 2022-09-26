@@ -88,6 +88,81 @@
 
 -   https://opensource.org/licenses/EUPL-1.1
 
+## OSADL Rule
+
+    USE CASE Source code delivery
+    	YOU MUST NOT Modify Copyright notices
+    	YOU MUST NOT Modify Patent notices
+    	YOU MUST NOT Modify Trademark notices
+    	YOU MUST NOT Modify License notice
+    	YOU MUST NOT Modify Warranty disclaimer
+    	YOU MUST Forward License text
+    	IF Software modification
+    		YOU MUST Grant License
+    			ATTRIBUTE Original license
+    		YOU MUST Provide Modification notice
+    		YOU MUST Provide Modification date
+    	YOU MUST NOT Restrict Granted rights
+    	IF Service offerings
+    		ATTRIBUTE NOT Transferable
+    		YOU MUST Indemnify Other contributors
+    USE CASE Binary delivery
+    	EITHER
+    		YOU MUST Include Source code
+    			ATTRIBUTE Machine-readable
+    		YOU MUST NOT Modify Copyright notices
+    		YOU MUST NOT Modify Patent notices
+    		YOU MUST NOT Modify Trademark notices
+    		YOU MUST NOT Modify License notice
+    		YOU MUST NOT Modify Warranty disclaimer
+    		YOU MUST Forward License text
+    	OR
+    		YOU MUST Reference Source code
+    			ATTRIBUTE No charges
+    			ATTRIBUTE Duration As long as distributed
+    	IF Software modification
+    		YOU MUST Grant License
+    			ATTRIBUTE Original license
+    		YOU MUST Provide Modification notice
+    		YOU MUST Provide Modification date
+    	YOU MUST NOT Restrict Granted rights
+    	IF Service offerings
+    		ATTRIBUTE NOT Transferable
+    		YOU MUST Indemnify Other contributors
+    COMPATIBILITY BSD-2-Clause
+    COMPATIBILITY BSD-2-Clause-Patent
+    COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSL-1.0
+    COMPATIBILITY bzip2-1.0.5
+    COMPATIBILITY bzip2-1.0.6
+    COMPATIBILITY CC0-1.0
+    COMPATIBILITY curl
+    COMPATIBILITY EFL-2.0
+    COMPATIBILITY IBM-pibs
+    COMPATIBILITY ICU
+    COMPATIBILITY ISC
+    COMPATIBILITY Libpng
+    COMPATIBILITY MIT
+    COMPATIBILITY NTP
+    COMPATIBILITY UPL-1.0
+    COMPATIBILITY WTFPL
+    COMPATIBILITY X11
+    COMPATIBILITY Zlib
+    INCOMPATIBILITY Apache-1.0
+    INCOMPATIBILITY Apache-1.1
+    INCOMPATIBILITY BSD-4-Clause
+    INCOMPATIBILITY BSD-4-Clause-UC
+    INCOMPATIBILITY FTL
+    INCOMPATIBILITY IJG
+    INCOMPATIBILITY OpenSSL
+    INCOMPATIBILITY Python-2.0
+    INCOMPATIBILITY zlib-acknowledgement
+    INCOMPATIBILITY XFree86-1.1
+    PATENT HINTS Yes
+    COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
+
 ## Text
 
     EUROPEAN UNION PUBLIC LICENCE v. 1.2 
@@ -226,6 +301,10 @@
     Universe](https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[e]/[eu]/European-Union-Public-License-1.2.yaml "Metaeffekt Universe")
     (CC-BY-4.0)
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/EUPL-1.2.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
     (CC0-1.0)
 
@@ -354,6 +433,24 @@
                     ]
                 },
                 "spdxLicenseId": "EUPL-1.2"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/EUPL-1.2.txt",
+                "spdxId": "EUPL-1.2",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST NOT Modify Copyright notices\n\tYOU MUST NOT Modify Patent notices\n\tYOU MUST NOT Modify Trademark notices\n\tYOU MUST NOT Modify License notice\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\tYOU MUST NOT Restrict Granted rights\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nUSE CASE Binary delivery\n\tEITHER\n\t\tYOU MUST Include Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\tYOU MUST NOT Modify Copyright notices\n\t\tYOU MUST NOT Modify Patent notices\n\t\tYOU MUST NOT Modify Trademark notices\n\t\tYOU MUST NOT Modify License notice\n\t\tYOU MUST NOT Modify Warranty disclaimer\n\t\tYOU MUST Forward License text\n\tOR\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charges\n\t\t\tATTRIBUTE Duration As long as distributed\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\tYOU MUST NOT Restrict Granted rights\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "EUPL-1.2"
+                    ],
+                    "__hasPatentHint": true,
+                    "__impliedCopyleft": [
+                        [
+                            "OSADL License Checklist",
+                            "Copyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "Copyleft"
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -721,6 +818,10 @@
             [
                 "BlueOak License List",
                 "SaaSCopyleft"
+            ],
+            [
+                "OSADL License Checklist",
+                "Copyleft"
             ],
             [
                 "Scancode",

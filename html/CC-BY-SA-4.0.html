@@ -25,7 +25,7 @@
 </tr>
 <tr class="odd">
 <td><p>Has Patent Hint</p></td>
-<td><p>False</p></td>
+<td><p>True</p></td>
 </tr>
 </tbody>
 </table>
@@ -146,6 +146,34 @@ AND
 </code></pre></li>
 </ul>
 <p> (source: Hitachi open-license)</p>
+<h2>OSADL Rule</h2>
+<pre><code>USE CASE Source code delivery OR Binary delivery OR Network service
+	YOU MUST NOT Restrict Granted rights
+	YOU MUST NOT Promote
+	YOU MUST Forward Attribution notice
+	YOU MUST Forward Copyright notice
+	YOU MUST Forward License notice
+	YOU MUST Forward Reference to Warranty disclaimer
+	YOU MUST Forward Reference to Work
+	YOU MUST Forward Modification notice
+	YOU MUST Provide OR Reference License text
+	IF Software modification
+		YOU MUST Provide Modification notice
+		YOU MUST Use Compatible license
+		YOU MUST Provide OR Reference License text of Compatible license
+		YOU MUST NOT Restrict Granted rights
+	ATTRIBUTE Reasonable
+	IF Requested by Copyright holder of Original work
+		YOU MUST Delete Attribution notice
+		YOU MUST Delete Copyright notice
+		YOU MUST Delete License notice
+		YOU MUST Delete Reference to Warranty disclaimer
+		YOU MUST Delete Reference to Work
+		ATTRIBUTE Reasonable
+PATENT HINTS Yes
+COPYLEFT CLAUSE Yes
+</code></pre>
+<p> (source: OSADL License Checklist)</p>
 <h2>Text</h2>
 <pre><code>Attribution-ShareAlike 4.0 International
 
@@ -585,6 +613,7 @@ Creative Commons may be contacted at creativecommons.org.
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[c]/[cr]/Creative-Commons-BY-SA-4.0.yaml" title="Metaeffekt Universe">Metaeffekt Universe</a> (CC-BY-4.0)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
+<li><p><a href="https://www.osadl.org/fileadmin/checklists/unreflicenses/CC-BY-SA-4.0.txt" title="OSADL License Checklist">OSADL License Checklist</a> (NOASSERTION)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://spdx.org/licenses/CC-BY-SA-4.0.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-sa-4.0.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
@@ -626,7 +655,7 @@ Creative Commons may be contacted at creativecommons.org.
             ]
         ]
     ],
-    &quot;__hasPatentHint&quot;: false,
+    &quot;__hasPatentHint&quot;: true,
     &quot;facts&quot;: {
         &quot;Open Knowledge International&quot;: {
             &quot;is_generic&quot;: null,
@@ -694,6 +723,24 @@ Creative Commons may be contacted at creativecommons.org.
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;CC-BY-SA-4.0&quot;
+        },
+        &quot;OSADL License Checklist&quot;: {
+            &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/CC-BY-SA-4.0.txt&quot;,
+            &quot;spdxId&quot;: &quot;CC-BY-SA-4.0&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery OR Binary delivery OR Network service\n\tYOU MUST NOT Restrict Granted rights\n\tYOU MUST NOT Promote\n\tYOU MUST Forward Attribution notice\n\tYOU MUST Forward Copyright notice\n\tYOU MUST Forward License notice\n\tYOU MUST Forward Reference to Warranty disclaimer\n\tYOU MUST Forward Reference to Work\n\tYOU MUST Forward Modification notice\n\tYOU MUST Provide OR Reference License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Provide OR Reference License text of Compatible license\n\t\tYOU MUST NOT Restrict Granted rights\n\tATTRIBUTE Reasonable\n\tIF Requested by Copyright holder of Original work\n\t\tYOU MUST Delete Attribution notice\n\t\tYOU MUST Delete Copyright notice\n\t\tYOU MUST Delete License notice\n\t\tYOU MUST Delete Reference to Warranty disclaimer\n\t\tYOU MUST Delete Reference to Work\n\t\tATTRIBUTE Reasonable\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;CC-BY-SA-4.0&quot;
+                ],
+                &quot;__hasPatentHint&quot;: true,
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;OSADL License Checklist&quot;,
+                        &quot;Copyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;Copyleft&quot;
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [
@@ -1220,6 +1267,10 @@ Creative Commons may be contacted at creativecommons.org.
         ]
     ],
     &quot;__impliedCopyleft&quot;: [
+        [
+            &quot;OSADL License Checklist&quot;,
+            &quot;Copyleft&quot;
+        ],
         [
             &quot;Scancode&quot;,
             &quot;Copyleft&quot;

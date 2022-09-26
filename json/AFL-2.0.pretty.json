@@ -32,6 +32,7 @@
             ]
         ]
     ],
+    "__hasPatentHint": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -96,6 +97,17 @@
             },
             "licensename": "AFL-2.0",
             "copyleftkind": "NoCopyleft"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.0.txt",
+            "spdxId": "AFL-2.0",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Reference License text\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notice\n\t\tYOU MUST Forward Trademark notice\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST NOT Promote\n\t\tIF Modified work Under Original license\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Source code Of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tOR\n\t\t\t\tYOU MUST Provide Delayed source code delivery Of Modified work\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tATTRIBUTE Duration As long as distributed\n\t\t\t\tYOU MUST Reference Source code\n\t\t\t\t\tATTRIBUTE Below Copyright notice\nPATENT HINTS Yes\n",
+            "_implications": {
+                "__impliedNames": [
+                    "AFL-2.0"
+                ],
+                "__hasPatentHint": true
+            }
         },
         "Scancode": {
             "otherUrls": [

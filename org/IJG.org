@@ -1,10 +1,11 @@
 * Independent JPEG Group License (IJG)
-| Key            | Value                           |
-|----------------+---------------------------------|
-| Fullname       | Independent JPEG Group License  |
-| Shortname      | IJG                             |
-| Rating         | Unknown, probably Stop or No-Go |
-| Classification | NoCopyleft                      |
+| Key             | Value                           |
+|-----------------+---------------------------------|
+| Fullname        | Independent JPEG Group License  |
+| Shortname       | IJG                             |
+| Rating          | Unknown, probably Stop or No-Go |
+| Classification  | NoCopyleft                      |
+| Has Patent Hint | True                            |
 
 *Other Names:*
 
@@ -48,6 +49,24 @@
 ** Description from open-license
 
 (source: Hitachi open-license)
+
+** OSADL Rule
+#+begin_example
+  USE CASE Source code delivery
+  	YOU MUST Forward Copyright notices
+  	YOU MUST Forward License text
+  	YOU MUST Forward Warranty disclaimer
+  	YOU MUST NOT Appropriate
+  	IF Software modification
+  		YOU MUST Provide Modification report
+  	YOU MUST Indemnify Original authors
+  	YOU MUST NOT Promote
+  USE CASE Binary delivery
+  	YOU MUST Credit Verbatim "This software is based in part on the work of the Independent JPEG Group"
+  PATENT HINTS Yes
+#+end_example
+
+(source: OSADL License Checklist)
 
 ** Text
 #+begin_example
@@ -155,6 +174,9 @@
 - [[https://github.com/org-metaeffekt/metaeffekt-universe/blob/main/src/main/resources/ae-universe/[i]/[ij]/IJG-License.yaml][Metaeffekt
   Universe]] (CC-BY-4.0)
 
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt][OSADL
+  License Checklist]] (NOASSERTION)
+
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
 
@@ -190,6 +212,7 @@
               ]
           ]
       ],
+      "__hasPatentHint": true,
       "facts": {
           "LicenseName": {
               "implications": {
@@ -229,6 +252,17 @@
                   ]
               },
               "spdxLicenseId": "IJG"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt",
+              "spdxId": "IJG",
+              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Indemnify Original authors\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST Credit Verbatim \"This software is based in part on the work of the Independent JPEG Group\"\nPATENT HINTS Yes\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "IJG"
+                  ],
+                  "__hasPatentHint": true
+              }
           },
           "Fedora Project Wiki": {
               "GPLv2 Compat?": "Yes",

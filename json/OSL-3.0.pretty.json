@@ -136,6 +136,24 @@
             "licensename": "OSL-3.0",
             "copyleftkind": "SaaSCopyleft"
         },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/OSL-3.0.txt",
+            "spdxId": "OSL-3.0",
+            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Reference License text OSL-3.0\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery OR Network service\n\tYOU MUST Reference License text OSL-3.0\n\tYOU MUST Search License acceptance\n\t\tATTRIBUTE Reasonable\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Modification notice\n\t\tEITHER\n\t\t\tYOU MUST Include Source code Of Modification\n\t\t\t\tATTRIBUTE Machine-readable\n\t\tOR\n\t\t\tYOU MUST Provide Delayed source code delivery Of Modification\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\tATTRIBUTE No profit\n\t\t\t\tATTRIBUTE Duration As long as distributed\n\t\tYOU MUST NOT Promote\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSL-1.0\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EUPL-1.1\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+            "_implications": {
+                "__impliedNames": [
+                    "OSL-3.0"
+                ],
+                "__hasPatentHint": true,
+                "__impliedCopyleft": [
+                    [
+                        "OSADL License Checklist",
+                        "Copyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "Copyleft"
+            }
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "NO",
             "rating": "Good",
@@ -575,6 +593,10 @@
         [
             "HansHammel license-compatibility-checker",
             "StrongCopyleft"
+        ],
+        [
+            "OSADL License Checklist",
+            "Copyleft"
         ],
         [
             "Scancode",

@@ -105,6 +105,19 @@
 
 (source: Hitachi open-license)
 
+## OSADL Rule
+
+    EITHER
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    	YOU MUST Forward Copyright notices
+    OR
+    	YOU MUST Provide License text in Documentation
+    	YOU MUST Provide Warranty disclaimer in Documentation
+    	YOU MUST Provide Copyright notices in Documentation
+
+(source: OSADL License Checklist)
+
 ## Text
 
     Provided that these terms and disclaimer and all copyright notices
@@ -149,6 +162,10 @@
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MirOS.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -286,6 +303,16 @@
                     ]
                 },
                 "spdxLicenseId": "MirOS"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MirOS.txt",
+                "spdxId": "MirOS",
+                "osadlRule": "EITHER\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Forward Copyright notices\nOR\n\tYOU MUST Provide License text in Documentation\n\tYOU MUST Provide Warranty disclaimer in Documentation\n\tYOU MUST Provide Copyright notices in Documentation\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "MirOS"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",

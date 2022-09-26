@@ -123,6 +123,16 @@
             },
             "spdxLicenseId": "BSL-1.0"
         },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSL-1.0.txt",
+            "spdxId": "BSL-1.0",
+            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n",
+            "_implications": {
+                "__impliedNames": [
+                    "BSL-1.0"
+                ]
+            }
+        },
         "Scancode": {
             "otherUrls": [
                 "http://www.boost.org/users/license.html",

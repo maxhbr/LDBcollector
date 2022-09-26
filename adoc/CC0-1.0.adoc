@@ -7,7 +7,7 @@
 |Shortname |CC0-1.0
 |Rating |Go
 |Classification |NoCopyleft
-|Has Patent Hint |False
+|Has Patent Hint |True
 |===
 
 *Other Names:*
@@ -119,6 +119,15 @@ Conditions: None
 ....
 
 (source: Hitachi open-license)
+
+=== OSADL Rule
+
+....
+USE CASE Source code delivery OR Binary delivery
+PATENT HINTS Yes
+....
+
+(source: OSADL License Checklist)
 
 === Text
 
@@ -271,6 +280,8 @@ Universe] (CC-BY-4.0)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/CC0-1.0.txt[OSADL
+License Checklist] (NOASSERTION)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
 * https://spdx.org/licenses/CC0-1.0.html[SPDX] (all data [in this
@@ -315,7 +326,7 @@ repository] is generated)
             ]
         ]
     ],
-    "__hasPatentHint": false,
+    "__hasPatentHint": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -399,6 +410,17 @@ repository] is generated)
             },
             "licensename": "CC0-1.0",
             "copyleftkind": "NoCopyleft"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CC0-1.0.txt",
+            "spdxId": "CC0-1.0",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\nPATENT HINTS Yes\n",
+            "_implications": {
+                "__impliedNames": [
+                    "CC0-1.0"
+                ],
+                "__hasPatentHint": true
+            }
         },
         "Scancode": {
             "otherUrls": [

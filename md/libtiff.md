@@ -33,6 +33,17 @@
 
 -   https://fedoraproject.org/wiki/Licensing/libtiff
 
+## OSADL Rule
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Provide Copyright notices In Documentation
+    	YOU MUST Provide License text In Documentation
+    	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 ## Text
 
     Permission to use, copy, modify, distribute, and sell this software and its
@@ -73,6 +84,10 @@
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/libtiff.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [SPDX](https://spdx.org/licenses/libtiff.html "SPDX") (all data \[in
     this repository\] is generated)
@@ -133,6 +148,16 @@
                     ]
                 },
                 "spdxLicenseId": "libtiff"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/libtiff.txt",
+                "spdxId": "libtiff",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "libtiff"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",
