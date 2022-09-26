@@ -1,7 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE LambdaCase #-}
 module Generators.OrtLicenseClassificationYml
-    ( writeOrtLicenseClassificationYml
+    ( generateOrtLicenseClassification
+    , writeOrtLicenseClassificationYml
     ) where
 
 
@@ -11,6 +12,8 @@ import           MyPrelude
 import qualified Data.ByteString.Lazy as BL
 import           Data.Aeson.Encode.Pretty (encodePretty)
 import qualified Data.Yaml as Y
+import           Data.List (nub, groupBy, sortBy)
+import           Data.Function (on)
 
 import           Model.License
 import           Processors.ToPage (Page (..), LicenseDetails (..), unpackWithSource)
@@ -121,8 +124,8 @@ isOsiApprovedCategory = OLCY_Category "osi-approved" Nothing
 isFSFFreeCategory = OLCY_Category "fsf-free" Nothing
 
 ratingToCategoryName :: Rating -> [OLCY_Category_Name]
-ratingToCategoryName (RUnknown rs) = map (\r -> "maybe-rating:" ++ (show r)) rs
-ratingToCategoryName r             = ["rating:" ++ (show r)]
+ratingToCategoryName (RUnknown rs) = map (\r -> "maybe-rating:" ++ show r) rs
+ratingToCategoryName r             = ["rating:" ++ show r]
 ratingToCategory :: Rating -> [OLCY_Category]
 ratingToCategory r = map (`OLCY_Category` Nothing) (ratingToCategoryName r)
 
@@ -199,11 +202,20 @@ pageToCategorization page = let
   ++ categorizationsFromFSFFree
   )
 
+generateOrtLicenseClassification :: [Page] -> OrtLicenseClassificationYml
+generateOrtLicenseClassification  pages = let
+  categorizations = (
+    map (foldl1 (\(OLCY_Categorization id1 cs1) (OLCY_Categorization _ cs2) ->
+                   OLCY_Categorization id1 (nub (cs1 ++ cs2)))) .
+    groupBy ((==) `on`_OLCY_Category_id).
+    sortBy (compare `on` _OLCY_Category_id) .
+    map pageToCategorization) pages
+  allCategories = nub (categories ++ concatMap _OLCY_Category_categories categorizations)
+  in OrtLicenseClassificationYml allCategories categorizations
+
 writeOrtLicenseClassificationYml :: FilePath -> [Page] -> IO ()
 writeOrtLicenseClassificationYml  outputFolder pages = let
-  categorizations = map pageToCategorization pages
-  allCategories = nub (categories ++ concatMap _OLCY_Category_categories categorizations)
-  ortLicenseClassificationYml = OrtLicenseClassificationYml allCategories categorizations
+  ortLicenseClassificationYml = generateOrtLicenseClassification pages
   in do
     createDirectoryIfNotExists (outputFolder </> "ort")
     Y.encodeFile (outputFolder </> "ort" </> "license-classifications.yml") ortLicenseClassificationYml
