@@ -93,8 +93,8 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for usage in unnormalized_usages %}
             <tr>
-              <td>{{usage.version.component.name }} </td>
-              <td>{{usage.version.version_number }}</td>
+              <td><a href="/component/{{usage.version.component.id}}" target="_blank">{{usage.version.component.name }}</a></td>
+              <td><a href="/component/{{usage.version.component.id}}" target="_blank">{{usage.version.version_number }}</a></td>
               <td>{{usage.version.declared_license_expr }}</td>
               <td>{{usage.version.spdx_valid_license_expr }} </td>
               <td>{{usage.version.corrected_license }} </td>
