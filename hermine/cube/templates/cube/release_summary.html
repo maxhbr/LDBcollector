@@ -84,6 +84,12 @@ SPDX-License-Identifier: AGPL-3.0-only
             <input type="text" readonly value="{{release.pub_date}}" class="input is-static">
           </div>
         </div>
+        <div class="field">
+          <label class="label">Validated steps</label>
+          <div class="control is-clearfix">
+            <input type="text" readonly value="{{ release.valid_step | add:"-1" }}/5" class="input is-static">
+          </div>
+        </div>
       </div>
     </div>
   </div>
