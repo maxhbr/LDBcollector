@@ -13,21 +13,24 @@
       "SPDXID": "SPDXRef-dependency2",
       "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
       "licenseDeclared": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
-      "copyrightText": "NOASSERTION"
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1"
     },
     {
       "name": "dependency2",
       "SPDXID": "SPDXRef-dependency1",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "Permissive-1.0",
-      "copyrightText": "NOASSERTION"
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v2"
     },
     {
       "name": "dependency3",
       "SPDXID": "SPDXRef-dependency3",
       "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
       "licenseDeclared": "LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
-      "copyrightText": "NOASSERTION"
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v3"
     }
   ]
 }
