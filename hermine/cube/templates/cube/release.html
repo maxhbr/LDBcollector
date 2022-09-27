@@ -372,7 +372,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{usage.version.version_number }}</a></td>
             <td>{{usage.version.effective_license }} </td>
             <td>
-              <a href="{% url 'admin:cube_licensechoice_add' %}">Add choice rule</a>
+              <a href="{% url 'cube:licensechoice_create' usage.id %}">Add choice rule</a>
             </td>
             <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>

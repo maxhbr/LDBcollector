@@ -66,6 +66,11 @@ urlpatterns = [
         views.UpdateLicenseChoiceView.as_view(),
         name="usage_update_license_choice",
     ),
+    path(
+        "usage/<int:id>/add_license_choice/",
+        views.CreateLicenseChoiceView.as_view(),
+        name="licensechoice_create",
+    ),
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
