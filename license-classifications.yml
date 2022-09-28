@@ -11,7 +11,6 @@
 
 categories:
 - name: "copyleft"
-- name: "strong-copyleft"
 - name: "copyleft-limited"
 - name: "permissive"
   description: "Licenses with permissive obligations."
@@ -316,7 +315,7 @@ categorizations:
   - "include-in-notice-file"
 - id: "PSF"
   categories:
-  - "strong-copyleft"
+  - "copyleft"
   - "include-in-notice-file"
 - id: "Python-2.0"
   categories:
