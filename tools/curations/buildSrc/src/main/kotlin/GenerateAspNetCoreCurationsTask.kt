@@ -3,7 +3,7 @@ package org.ossreviewtoolkit.tools.curations
 import org.gradle.api.tasks.TaskAction
 import org.ossreviewtoolkit.model.Identifier
 
-open class GenerateAspNetCoreCurationsTask : AbstractGenerateCurationsTask() {
+open class GenerateAspNetCoreCurationsTask : BaseGenerateCurationsTask() {
     @TaskAction
     fun generate() {
         val data = mutableListOf<PathCurationData>()

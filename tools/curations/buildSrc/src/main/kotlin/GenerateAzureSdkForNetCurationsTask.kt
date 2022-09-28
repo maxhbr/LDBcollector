@@ -3,7 +3,7 @@ package org.ossreviewtoolkit.tools.curations
 import org.gradle.api.tasks.TaskAction
 import org.ossreviewtoolkit.model.Identifier
 
-open class GenerateAzureSdkForNetCurationsTask : AbstractGenerateCurationsTask() {
+open class GenerateAzureSdkForNetCurationsTask : BaseGenerateCurationsTask() {
     @TaskAction
     fun generate() {
         getFilesFromRepository(owner = "Azure", repository = "azure-sdk-for-net")
