@@ -18,7 +18,7 @@ import org.ossreviewtoolkit.model.mapperConfig
 import org.ossreviewtoolkit.utils.common.safeMkdirs
 import java.io.IOException
 
-abstract class AbstractGenerateCurationsTask : DefaultTask() {
+open class AbstractGenerateCurationsTask : DefaultTask() {
     private val githubUsername: String by project
     private val githubToken: String by project
 

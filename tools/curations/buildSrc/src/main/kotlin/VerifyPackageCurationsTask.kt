@@ -9,7 +9,7 @@ import org.ossreviewtoolkit.model.PackageCuration
 import org.ossreviewtoolkit.model.mapper
 import org.ossreviewtoolkit.utils.spdx.SpdxExpression
 
-abstract class VerifyPackageCurationsTask : DefaultTask() {
+open class VerifyPackageCurationsTask : DefaultTask() {
     init {
         group = "verification"
     }

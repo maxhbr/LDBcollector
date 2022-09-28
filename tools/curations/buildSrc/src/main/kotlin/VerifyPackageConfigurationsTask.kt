@@ -7,7 +7,7 @@ import org.gradle.api.tasks.TaskAction
 import org.ossreviewtoolkit.model.config.PackageConfiguration
 import org.ossreviewtoolkit.model.mapper
 
-abstract class VerifyPackageConfigurationsTask : DefaultTask() {
+open class VerifyPackageConfigurationsTask : DefaultTask() {
     init {
         group = "verification"
     }
