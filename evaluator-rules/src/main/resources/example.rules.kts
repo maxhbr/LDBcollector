@@ -46,6 +46,9 @@ val publicDomainLicenses = licenseClassifications.licensesByCategory["public-dom
 
 /**
  * The complete set of licenses covered by policy rules.
+ *
+ * // TODO: Update the handled licenses to cover all recently added categories. This requires adding
+ *          policy rules for new (offinding) categories, if any.
  */
 val handledLicenses = listOf(
     permissiveLicenses,
