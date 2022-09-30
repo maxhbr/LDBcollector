@@ -1,6 +1,6 @@
-The license data files in this project (e.g., the *.toml files and
-other files describing license information) are released under CC0.
-See LICENSES/CC0-1.0.txt.
+All non-software content created by this project, including license
+data files (the *.toml files and other files describing license
+information), is released under CC0. See LICENSES/CC0-1.0.txt.
 
 Scripts, code, and other programs in this project are licensed under
 the 3-clause BSD license. See LICENSES/BSD-3-Clause.txt.
