@@ -31,6 +31,6 @@ The RPM package contains the data in JSON format. If you need the data in a diff
 
 ## License
 
-License data: CC0-1.0
+License data and all other non-software content: CC0-1.0
 
 Scripts: BSD-3-Clause
