@@ -1,0 +1,20 @@
+---
+id: "NPM::spdx-correct:3.1.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/jslicense/spdx-correct.js.git"
+  revision: "6e556b4af7bee9899e7f16ae8f745719e5517e5d"
+path_excludes:
+- pattern: "package.json"
+  reason: "BUILD_TOOL_OF"
+- pattern: "test.js"
+  reason: "TEST_OF"
+- pattern: "README.md"
+  reason: "DOCUMENTATION_OF"
+license_finding_curations:
+- path: "index.js"
+  reason: "CODE"
+  concluded_license: "Apache-2.0"
+  comment: "The code contains listings of license identifiers which do not apply.\
+    \ The only license text is in the header of the file stating that it is licensed\
+    \ under 'Apache-2.0'."
