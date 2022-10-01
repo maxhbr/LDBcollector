@@ -1,0 +1,18 @@
+[license]
+
+expression = "GPL-1.0-or-later OR Artistic-1.0-Perl"
+status = [ "allowed" ]
+usage = '''
+This license expression is allowed for Perl packages.
+'''
+
+[fedora]
+
+name = [
+    "GNU General Public License v1.0 or later or Artistic License 1.0"
+]
+
+abbreviation = [
+    "GPL+ or Artistic"
+]
+
