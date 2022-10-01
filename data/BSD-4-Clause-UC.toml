@@ -1,0 +1,19 @@
+[license]
+
+expression = "BSD-4-Clause-UC"
+status = [ "allowed" ]
+
+usage = '''
+It is not clear that we should encourage use of this identifier in place of or in addition to BSD-4-Clause.
+'''
+
+[fedora]
+
+name = [
+    "BSD License (Advertising Variant)"
+]
+
+abbreviation = [
+    "BSD with advertising"
+]
+
