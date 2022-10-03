@@ -1,7 +1,7 @@
 %global forgeurl https://gitlab.com/fedora/legal/fedora-license-data
 
 Name:           fedora-license-data
-Version:        1.4
+Version:        1.5
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -83,6 +83,9 @@ cp LICENSES/* ./
 
 
 %changelog
+* Mon Oct 03 2022 msuchy <msuchy@redhat.com> - 1.5-1
+- 1.5 release
+
 * Mon Sep 19 2022 msuchy <msuchy@redhat.com> - 1.4-1
 - 1.4 release
 
