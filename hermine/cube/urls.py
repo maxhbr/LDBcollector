@@ -38,8 +38,8 @@ urlpatterns = [
         name="release_validation",
     ),
     path(
-        "release/<int:id>/validation/normalized_usages/",
-        views.NormalizedUsagesList.as_view(),
+        "release/<int:id>/validation/fixed_licenses/",
+        views.ReleaseFixedLicensesList.as_view(),
         name="release_normalized_usages",
     ),
     path(
@@ -75,6 +75,11 @@ urlpatterns = [
         "usage/<int:id>/add_license_choice/",
         views.CreateLicenseChoiceView.as_view(),
         name="licensechoice_create",
+    ),
+    path(
+        "usage/<int:id>/add_license_curation/",
+        views.CreateLicenseCurationView.as_view(),
+        name="licensecuration_create",
     ),
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("api/token-auth/", authviews.obtain_auth_token),

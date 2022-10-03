@@ -290,8 +290,8 @@ def release_send_derogation(request, release_id, usage_id):
     return response
 
 
-class NormalizedUsagesList(ListView):
-    template_name = "cube/release_normalized_usages.html"
+class ReleaseFixedLicensesList(ListView):
+    template_name = "cube/release_fixed_licenses.html"
     release = None
     context_object_name = "usages"
 

@@ -101,8 +101,12 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         release = self.get_object()
 
         response["valid"], context = validate_step_1(release)
-        response["invalid_expressions"] = context["invalid_expressions"]
-        response["fixed_expressions"] = context["fixed_expressions"]
+        response["invalid_expressions"] = [
+            usage.version for usage in context["invalid_expressions"]
+        ]
+        response["fixed_expressions"] = [
+            usage.version for usage in context["fixed_expressions"]
+        ]
         response["details"] = reverse(
             "cube:release_validation", kwargs={"pk": release.pk}
         )

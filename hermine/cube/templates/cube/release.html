@@ -81,15 +81,19 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tr>
           <th>Component</th>
           <th>Imported license expression</th>
+          <th>Add curation</th>
           <th>Edit version</th>
         </tr>
       </thead>
       <tbody>
-        {% for version in invalid_expressions %}
+        {% for usage in invalid_expressions %}
             <tr>
-              <td><a href="{% url "cube:component_detail" version.component.id %}" target="_blank">{{ version }}</a></td>
-              <td>{{ version.declared_license_expr }}</td>
-              <td><a href="{% url 'admin:cube_version_change' version.id  %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+              <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a></td>
+              <td>{{ usage.version.declared_license_expr }}</td>
+              <td>
+                <a href="{% url 'cube:licensecuration_create' usage.id %}">Add curation rule</a>
+              </td>
+              <td><a href="{% url 'admin:cube_version_change' usage.version.id  %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>

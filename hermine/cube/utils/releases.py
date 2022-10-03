@@ -5,7 +5,14 @@ import logging
 
 from django.db.models import Q, F
 
-from cube.models import Release, License, LicenseChoice, ExpressionValidation, Version
+from cube.models import (
+    Release,
+    License,
+    LicenseChoice,
+    ExpressionValidation,
+    Version,
+    LicenseCuration,
+)
 from cube.utils.licenses import (
     get_licenses_to_check_or_create,
     check_licenses_against_policy,
@@ -22,17 +29,34 @@ def validate_step_1(release):
     Check for components versions that do not have valid SPDX license expressions.
     """
     context = dict()
-    release_versions_qs = Version.objects.filter(usage__release=release)
-    invalid_expressions = release_versions_qs.filter(
-        spdx_valid_license_expr="",
-        corrected_license="",
+    invalid_expressions = release.usage_set.filter(
+        version__spdx_valid_license_expr="",
+        version__corrected_license="",
     )
-    context["invalid_expressions"] = invalid_expressions
-    context["fixed_expressions"] = release_versions_qs.exclude(
-        spdx_valid_license_expr=""
-    ).exclude(spdx_valid_license_expr=F("declared_license_expr"))
 
-    context["nb_validated_components"] = len(release_versions_qs) - len(
+    for usage in invalid_expressions:
+        try:
+            usage.version.spdx_valid_license_expr = (
+                LicenseCuration.objects.for_usage(usage)
+                .get(expression_in=usage.version.declared_license_expr)
+                .expression_out
+            )
+            usage.version.save()
+        except LicenseCuration.DoesNotExist:
+            continue
+
+    invalid_expressions = [
+        usage
+        for usage in invalid_expressions
+        if not usage.version.spdx_valid_license_expr
+    ]
+    context["invalid_expressions"] = invalid_expressions
+
+    context["fixed_expressions"] = release.usage_set.exclude(
+        version__spdx_valid_license_expr=""
+    ).exclude(version__spdx_valid_license_expr=F("version__declared_license_expr"))
+
+    context["nb_validated_components"] = len(release.usage_set.all()) - len(
         invalid_expressions
     )
 

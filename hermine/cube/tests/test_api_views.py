@@ -11,6 +11,7 @@ from cube.models import (
     Derogation,
     ExpressionValidation,
     Release,
+    LicenseCuration,
 )
 from cube.utils.licenses import handle_licenses_json
 
@@ -293,8 +294,9 @@ class ReleaseStepsAPITestCase(APITestCase):
         self.assertEqual(len(res.data["invalid_expressions"]), 1)
 
         ## Simulate fixing manually
-        Version.objects.filter(component__name="dependency2").update(
-            spdx_valid_license_expr="LicenseRef-fakeLicense-Permissive-1.0"
+        LicenseCuration.objects.create(
+            expression_in="Permissive-1.0",
+            expression_out="LicenseRef-fakeLicense-Permissive-1.0",
         )
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
