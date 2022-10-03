@@ -65,39 +65,31 @@ SPDX-License-Identifier: AGPL-3.0-only
     </article>
     <hr />
   {% endif %}
-  <h4 class="title is-4">Step 1 - Check that licenses are normalised</h4>
+  <h4 class="title is-4">Step 1 - Check that components have valid SPDX license expressions</h4>
 
-  {% if unnormalized_usages %}
+  {% if invalid_expressions %}
     <article class="message is-warning">
       <div class="message-header">
         <p>Some licenses need to be normalized</p>
       </div>
       <div class="message-body">
-        The following <strong>{{ unnormalized_usages|length }}</strong> components out <strong>{{ object.usage_set.all|length }}</strong> of have non validated licensing information.</div>
+        <strong>{{ invalid_expressions|length }}</strong> components license information are not valid SPDX expressions</div>
     </article>
-
-    <progress class="progress is-success" value="{{ nb_validated_components }}" max="{{ object.usage_set.all|length }}">75%</progress>
 
     <table class="table">
       <thead>
         <tr>
           <th>Component</th>
-          <th>Version</th>
-          <th>License declared</th>
-          <th>SPDX expression</th>
-          <th>Corrected expression</th>
+          <th>Imported license expression</th>
           <th>Edit version</th>
         </tr>
       </thead>
       <tbody>
-        {% for usage in unnormalized_usages %}
+        {% for version in invalid_expressions %}
             <tr>
-              <td><a href="/component/{{usage.version.component.id}}" target="_blank">{{usage.version.component.name }}</a></td>
-              <td><a href="/component/{{usage.version.component.id}}" target="_blank">{{usage.version.version_number }}</a></td>
-              <td>{{usage.version.declared_license_expr }}</td>
-              <td>{{usage.version.spdx_valid_license_expr }} </td>
-              <td>{{usage.version.corrected_license }} </td>
-              <td><a href="/admin/cube/version/{{usage.version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+              <td><a href="{% url "cube:component_detail" version.component.id %}" target="_blank">{{ version }}</a></td>
+              <td>{{ version.declared_license_expr }}</td>
+              <td><a href="{% url 'admin:cube_version_change' version.id  %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -114,8 +106,8 @@ SPDX-License-Identifier: AGPL-3.0-only
     </article>
   {% endif %}
 
-  {% if normalized_usages %}
-    <p>List <a href="{% url "cube:release_normalized_usages" object.id %}">{{ normalized_usages|length }} license normalizations</a> for this release.</p>
+  {% if fixed_expressions %}
+    <p>List <a href="{% url "cube:release_normalized_usages" object.id %}">{{ fixed_expressions|length }} license normalizations</a> for this release.</p>
   {% endif %}
 
 

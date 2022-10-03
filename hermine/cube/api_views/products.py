@@ -95,14 +95,14 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_1(self, request, **kwargs):
         """
-        Check for licenses that haven't been normalized.
+        Check for components versions that do not have valid SPDX license expressions.
         """
         response = {}
         release = self.get_object()
 
         response["valid"], context = validate_step_1(release)
-        response["unnormalized_usages"] = context["unnormalized_usages"]
-        response["normalized_usages"] = context["normalized_usages"]
+        response["invalid_expressions"] = context["invalid_expressions"]
+        response["fixed_expressions"] = context["fixed_expressions"]
         response["details"] = reverse(
             "cube:release_validation", kwargs={"pk": release.pk}
         )
@@ -221,7 +221,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         valid, context = validate_step_1(release)
         if not valid:
             step1.add_failure_info(
-                message=f"{len(context['unnormalized_usages'])} usages are not normalized/"
+                message=f"{len(context['invalid_expressions'])} components license information are not valid SPDX expressions"
             )
 
         step2 = TestCase("Licenses")

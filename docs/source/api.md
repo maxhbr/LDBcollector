@@ -100,12 +100,15 @@ Adds the content of the SBOM as SPDX to a given release
 
 Can be found at 'api/releases/<int:release_id>/validation_1/'
 
-API endpoint that allows to know if there are Unnormalised Usages.
+API endpoint that allows to know if there are components with license information
+which is not a valid SPDX expression.
 
-The response is a dictionnary with the following fields :
+The response is a dictionary with the following fields :
 
-unnormalised_usages
-    An array of usage objects for which no license expression has been expressed.
+invalid_expressions
+    An array of Version objects for which license expression is empty or invalid.
+fixed_expressions
+    An array of Version objects for which spdx_valid_expression is different from original imported expression.
  
 
 ### Step 2

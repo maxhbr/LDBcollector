@@ -290,7 +290,7 @@ class ReleaseStepsAPITestCase(APITestCase):
         # Step 1
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
-        self.assertEqual(len(res.data["unnormalized_usages"]), 1)
+        self.assertEqual(len(res.data["invalid_expressions"]), 1)
 
         ## Simulate fixing manually
         Version.objects.filter(component__name="dependency2").update(

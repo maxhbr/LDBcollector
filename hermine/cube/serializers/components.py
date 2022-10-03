@@ -43,11 +43,14 @@ class VersionSerializer(serializers.ModelSerializer):
         https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
     """
 
+    component = serializers.PrimaryKeyRelatedField(read_only=True, required=False)
+
     class Meta:
         use_natural_foreign_keys = True
         model = Version
         fields = [
             "id",
+            "component",
             "version_number",
             "declared_license_expr",
             "spdx_valid_license_expr",

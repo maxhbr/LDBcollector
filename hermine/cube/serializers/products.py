@@ -101,8 +101,8 @@ class ProductSerializer(serializers.ModelSerializer):
 
 class Validation1Serializer(serializers.Serializer):
     valid = serializers.BooleanField(label="Step is valid", read_only=True)
-    unnormalized_usages = UsageSerializer(read_only=True, many=True)
-    normalized_usages = UsageSerializer(read_only=True, many=True)
+    invalid_expressions = VersionSerializer(read_only=True, many=True)
+    fixed_expressions = VersionSerializer(read_only=True, many=True)
     details = serializers.URLField(read_only=True)
 
 

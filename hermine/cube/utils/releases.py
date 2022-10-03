@@ -5,7 +5,7 @@ import logging
 
 from django.db.models import Q, F
 
-from cube.models import Release, License, LicenseChoice, ExpressionValidation
+from cube.models import Release, License, LicenseChoice, ExpressionValidation, Version
 from cube.utils.licenses import (
     get_licenses_to_check_or_create,
     check_licenses_against_policy,
@@ -19,24 +19,24 @@ logger = logging.getLogger(__name__)
 
 def validate_step_1(release):
     """
-    Check for licenses that haven't been normalized.
+    Check for components versions that do not have valid SPDX license expressions.
     """
     context = dict()
-    unnormalized_usages = release.usage_set.all().filter(
-        version__spdx_valid_license_expr="", version__corrected_license=""
+    release_versions_qs = Version.objects.filter(usage__release=release)
+    invalid_expressions = release_versions_qs.filter(
+        spdx_valid_license_expr="",
+        corrected_license="",
     )
-    context["unnormalized_usages"] = unnormalized_usages
-    context["normalized_usages"] = (
-        release.usage_set.all()
-        .exclude(version__spdx_valid_license_expr="")
-        .exclude(version__spdx_valid_license_expr=F("version__declared_license_expr"))
+    context["invalid_expressions"] = invalid_expressions
+    context["fixed_expressions"] = release_versions_qs.exclude(
+        spdx_valid_license_expr=""
+    ).exclude(spdx_valid_license_expr=F("declared_license_expr"))
+
+    context["nb_validated_components"] = len(release_versions_qs) - len(
+        invalid_expressions
     )
 
-    context["nb_validated_components"] = len(release.usage_set.all()) - len(
-        unnormalized_usages
-    )
-
-    return len(unnormalized_usages) == 0, context
+    return len(invalid_expressions) == 0, context
 
 
 def validate_step_2(release):
