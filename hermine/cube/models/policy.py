@@ -29,9 +29,11 @@ class UsageDecision(models.Model):
 
     LICENSE_CHOICE = "choice"
     EXPRESSION_VALIDATION = "validation"
+    LICENSE_CURATION = "curation"
     DECISION_TYPES = (
         (LICENSE_CHOICE, "License choice"),
         (EXPRESSION_VALIDATION, "Expression validation"),
+        (LICENSE_CURATION, "License curation"),
     )
 
     decision_type = models.CharField(
@@ -129,6 +131,28 @@ class ExpressionValidation(UsageDecision):
         self._meta.get_field(
             "decision_type"
         ).default = UsageDecision.EXPRESSION_VALIDATION
+        super().__init__(*args, **kwargs)
+
+    class Meta:
+        proxy = True
+
+
+class LicenseCurationManager(UsageDecisionManager):
+    def get_queryset(self):
+        return (
+            super().get_queryset().filter(decision_type=UsageDecision.LICENSE_CURATION)
+        )
+
+
+class LicenseCuration(UsageDecision):
+    """
+    A human decision to replace an imported license string with the correct SPDX valid expression
+    """
+
+    objects = LicenseCurationManager()
+
+    def __init__(self, *args, **kwargs):
+        self._meta.get_field("decision_type").default = UsageDecision.LICENSE_CURATION
         super().__init__(*args, **kwargs)
 
     class Meta:
