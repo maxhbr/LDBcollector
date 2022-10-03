@@ -102,6 +102,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
         response["valid"], context = validate_step_1(release)
         response["unnormalized_usages"] = context["unnormalized_usages"]
+        response["normalized_usages"] = context["normalized_usages"]
         response["details"] = reverse(
             "cube:release_validation", kwargs={"pk": release.pk}
         )

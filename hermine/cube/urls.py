@@ -38,6 +38,11 @@ urlpatterns = [
         name="release_validation",
     ),
     path(
+        "release/<int:id>/validation/normalized_usages/",
+        views.NormalizedUsagesList.as_view(),
+        name="release_normalized_usages",
+    ),
+    path(
         "release/<int:pk>/",
         views.ReleaseSummaryView.as_view(),
         name="release_summary",

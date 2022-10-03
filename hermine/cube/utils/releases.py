@@ -3,7 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import Q
+from django.db.models import Q, F
 
 from cube.models import Release, License, LicenseChoice, ExpressionValidation
 from cube.utils.licenses import (
@@ -26,6 +26,12 @@ def validate_step_1(release):
         version__spdx_valid_license_expr="", version__corrected_license=""
     )
     context["unnormalized_usages"] = unnormalized_usages
+    context["normalized_usages"] = (
+        release.usage_set.all()
+        .exclude(version__spdx_valid_license_expr="")
+        .exclude(version__spdx_valid_license_expr=F("version__declared_license_expr"))
+    )
+
     context["nb_validated_components"] = len(release.usage_set.all()) - len(
         unnormalized_usages
     )

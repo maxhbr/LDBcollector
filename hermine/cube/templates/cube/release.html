@@ -73,8 +73,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Some licenses need to be normalized</p>
       </div>
       <div class="message-body">
-        The following <strong>{{ unnormalized_usages|length }}</strong> components out <strong>{{ object.usage_set.all|length }}</strong> of have non validated licensing information, please correct them: 
-      </div>
+        The following <strong>{{ unnormalized_usages|length }}</strong> components out <strong>{{ object.usage_set.all|length }}</strong> of have non validated licensing information.</div>
     </article>
 
     <progress class="progress is-success" value="{{ nb_validated_components }}" max="{{ object.usage_set.all|length }}">75%</progress>
@@ -110,9 +109,13 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Success</p>
       </div>
       <div class="message-body">
-        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the {{ object.usage_set.all|length }} components used have normalized licensing information.
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the {{ object.usage_set.all|length }} components used have SPDX valid licensing information.
       </div>
     </article>
+  {% endif %}
+
+  {% if normalized_usages %}
+    <p>List <a href="{% url "cube:release_normalized_usages" object.id %}">{{ normalized_usages|length }} license normalizations</a> for this release.</p>
   {% endif %}
 
 
