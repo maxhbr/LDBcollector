@@ -64,7 +64,7 @@ class UsageDecision(models.Model):
     explanation = models.TextField(max_length=500, blank=True, null=True)
 
     def __str__(self):
-        return self.expression_in + " => " + self.expression_out
+        return self.expression_in or "(blank)" + " → " + self.expression_out
 
     def clean(self):
         """Model validation

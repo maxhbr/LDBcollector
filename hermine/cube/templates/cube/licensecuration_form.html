@@ -9,7 +9,7 @@
 </ul>
 {% endblock %}
 {% block content %}
-  <form method="post" action="{% url "cube:licensechoice_create" form.usage.id %}">
+  <form method="post" action="{% url "cube:licensecuration_create" form.usage.id %}">
     {% csrf_token %}
     <table>
       <tr>

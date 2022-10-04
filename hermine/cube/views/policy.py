@@ -10,8 +10,10 @@ from cube.models import LicenseChoice, Usage, LicenseCuration
 
 
 class AbstractCreateUsageDecisionView(CreateView):
+    usage = None
+
     def dispatch(self, request, *args, **kwargs):
-        self.usage = get_object_or_404(Usage, pk=kwargs["id"])
+        self.usage = get_object_or_404(Usage, id=kwargs["id"])
         return super().dispatch(request, *args, **kwargs)
 
     def get_form_kwargs(self):
