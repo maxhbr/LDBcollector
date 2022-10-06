@@ -29,8 +29,3 @@ The source data are stored in [TOML](https://toml.io/en/) format. This was agree
 
 The RPM package contains the data in JSON format. If you need the data in a different format, you can send a merge request that converts the TOML data to a different format. We can have multiple output formats, but the source format has to be preserved.
 
-## License
-
-License data and all other non-software content: CC0-1.0
-
-Scripts: BSD-3-Clause
