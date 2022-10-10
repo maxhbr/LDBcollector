@@ -120,13 +120,23 @@ class License(models.Model):
         ordering = ("spdx_id",)
 
 
+class TeamManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
+
+
 class Team(models.Model):
     """
     A team assigned to generics obligations.
     """
 
-    name = models.CharField(max_length=200)
+    objects = TeamManager()
+
+    name = models.CharField(max_length=200, unique=True)
     icon = models.CharField(max_length=200, null=True, blank=True)
+
+    def natural_key(self):
+        return self.name
 
     def __str__(self):
         return self.name
@@ -172,6 +182,9 @@ class Generic(models.Model):
         help_text="A Generic obligation needs to conduct some kind of action"
         "(Active) or NOT to do specific things (Passive)",
     )
+
+    def natural_key(self):
+        return self.name
 
     def __str__(self):
         return ("[Core]" if self.in_core else "") + self.name
