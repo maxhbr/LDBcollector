@@ -20,7 +20,7 @@ urlpatterns = [
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
     path(
         "license/<int:license_id>/export/",
-        views.export_specific_license,
+        views.Export1LicenseView.as_view(),
         name="export_license",
     ),
     path(
@@ -30,8 +30,12 @@ urlpatterns = [
     ),
     path("generics/", views.GenericListView.as_view(), name="generics"),
     path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
-    path("export/licenses/", views.export_licenses, name="export_licenses"),
-    path("export/generics/", views.export_generics, name="export_generics"),
+    path(
+        "export/licenses/", views.ExportLicensesView.as_view(), name="export_licenses"
+    ),
+    path(
+        "export/generics/", views.ExportGenericsView.as_view(), name="export_generics"
+    ),
     path(
         "release/<int:pk>/validation/",
         views.ReleaseView.as_view(),
