@@ -133,7 +133,7 @@ private fun LicenseDetails.getLicenseId(): SpdxSingleLicenseExpression {
 
 private fun LicenseDetails.getCategories(): Set<String> {
     // TODO: Check if the category "Unstated License" could additionally be used by below mapping to move
-    // license IDs which do no correspond to "normal" license to separate categories.
+    // license IDs which do not correspond to a "normal" license to separate categories.
     val mappedCategory = when {
         isUnknown -> "unknown"
         isGeneric -> "generic"
@@ -142,7 +142,7 @@ private fun LicenseDetails.getCategories(): Set<String> {
 
     return setOfNotNull(
         mappedCategory,
-        // Include all licenses into the notice file to ensure there is not under-reporting by default.
+        // Include all licenses into the notice file to ensure there is no under-reporting by default.
         "include-in-notice-file",
         // The FSF has stated that a source code offer is required for Copyleft (limited) licences, so
         // include only these to not cause unnecessary effort by default.
