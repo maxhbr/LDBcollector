@@ -14,6 +14,13 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>{{object.release_number}}</li>
 </ul>
 {% endblock %}
+{% block actions %}
+<a href="{% url 'cube:release_bom_export' object.pk %}" class="button">
+  <span class="icon"><i class="fas fa-file-export"></i></span>
+  <span>Export as CSV</span>
+</a>
+{% endblock %}<>
+
 {% block herozone %}
 <div class="hero-body">
   <p class="title">Release: {{object.release_number}}</p>
