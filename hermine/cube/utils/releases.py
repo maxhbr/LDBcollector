@@ -3,9 +3,16 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import Q
+from django.db.models import Q, F
 
-from cube.models import Release, License, LicenseChoice, ExpressionValidation
+from cube.models import (
+    Release,
+    License,
+    LicenseChoice,
+    ExpressionValidation,
+    Version,
+    LicenseCuration,
+)
 from cube.utils.licenses import (
     get_licenses_to_check_or_create,
     check_licenses_against_policy,
@@ -19,18 +26,41 @@ logger = logging.getLogger(__name__)
 
 def validate_step_1(release):
     """
-    Check for licenses that haven't been normalized.
+    Check for components versions that do not have valid SPDX license expressions.
     """
     context = dict()
-    unnormalized_usages = release.usage_set.all().filter(
-        version__spdx_valid_license_expr="", version__corrected_license=""
-    )
-    context["unnormalized_usages"] = unnormalized_usages
-    context["nb_validated_components"] = len(release.usage_set.all()) - len(
-        unnormalized_usages
+    invalid_expressions = release.usage_set.filter(
+        version__spdx_valid_license_expr="",
+        version__corrected_license="",
     )
 
-    return len(unnormalized_usages) == 0, context
+    for usage in invalid_expressions:
+        try:
+            usage.version.spdx_valid_license_expr = (
+                LicenseCuration.objects.for_usage(usage)
+                .get(expression_in=usage.version.declared_license_expr)
+                .expression_out
+            )
+            usage.version.save()
+        except LicenseCuration.DoesNotExist:
+            continue
+
+    invalid_expressions = [
+        usage
+        for usage in invalid_expressions
+        if not usage.version.spdx_valid_license_expr
+    ]
+    context["invalid_expressions"] = invalid_expressions
+
+    context["fixed_expressions"] = release.usage_set.exclude(
+        version__spdx_valid_license_expr=""
+    ).exclude(version__spdx_valid_license_expr=F("version__declared_license_expr"))
+
+    context["nb_validated_components"] = len(release.usage_set.all()) - len(
+        invalid_expressions
+    )
+
+    return len(invalid_expressions) == 0, context
 
 
 def validate_step_2(release):

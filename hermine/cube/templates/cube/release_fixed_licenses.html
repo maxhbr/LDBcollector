@@ -1,0 +1,62 @@
+{% extends "cube/cube.html" %}
+
+{% block title %}{{ release.product.name }} {{ release.release_number }}{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
+  <li><a href="{% url "cube:release_summary" release.id %}">{{ release.release_number }}</a></li>
+  <li><a href="{% url "cube:release_validation" release.id %}">Validation</a></li>
+  <li>Normalized licenses</li>
+</ul>
+{% endblock %}
+{% block herozone %}
+<div class="hero-body">
+  <p class="title">{{ release.product.name }} {{ release.release_number }}</p>
+</div>
+{% endblock %}
+{% block content %}
+
+  {% if usages %}
+    <h5 class="title is-h5">Normalized licenses for this release</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>License imported</th>
+          <th>Valid SPDX license</th>
+          <th>Curations</th>
+          <th>Edit component version</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for usage in usages %}
+          <tr>
+            <td><a href="{%  url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a> </td>
+            <td>{{ usage.version.declared_license_expr }}</td>
+            <td>{{ usage.version.spdx_valid_license_expr }} </td>
+            <td>
+              {% if usage.license_curations|length == 1 %}
+                <a href="{% url "admin:cube_licensecuration_change"  usage.license_curations.0.pk %}">Edit rule</a>
+                {% if usage.license_curations.0.expression_out != usage.version.spdx_valid_license_expr %}
+                  <br><small>Expression does not match curation
+                  {% comment %}TODO : change update view{% endcomment %}
+                  <form action="{% url "cube:usage_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
+                {% endif %}
+              {% elif usage.license_curations|length > 1 %}
+                {{ usage.license_curations|length }} curations apply. Edit curations
+                {% for curation in usage.license_curations %}
+                  <a href="{% url "admin:cube_licensecuration_change" choice.pk %}">
+                    {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
+                {% endfor %}
+              {% endif %}
+            </td>
+            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% endblock %}

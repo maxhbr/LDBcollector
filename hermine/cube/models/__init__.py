@@ -10,8 +10,9 @@ from cube.models.components import Component, Version, Usage
 from cube.models.licenses import License, Team, Generic, Obligation
 from cube.models.policy import (
     UsageDecision,
-    LicenseChoice,
+    LicenseCuration,
     ExpressionValidation,
+    LicenseChoice,
     Derogation,
 )
 from cube.models.products import Product, Category, Release, Exploitation
