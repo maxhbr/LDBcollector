@@ -24,6 +24,7 @@ class UnauthenticatedTestCase(TestCase):
         reverse("cube:release_validation", kwargs={"pk": 1}),
         reverse("cube:release_summary", kwargs={"pk": 1}),
         reverse("cube:release_bom", kwargs={"pk": 1}),
+        reverse("cube:release_bom_export", kwargs={"pk": 1}),
         reverse("cube:licenses"),
         reverse("cube:license", kwargs={"pk": 3}),
         reverse("cube:generics"),
@@ -107,3 +108,14 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         self.assertRedirects(res, reverse("cube:release_validation", args=[1]))
         self.assertEqual(LicenseCuration.objects.all().count(), 1)
         self.assertEqual(LicenseChoice.objects.all().count(), 0)
+
+
+class ExportSBOMTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_export_simple_sbom(self):
+        url = reverse("cube:release_bom_export", args=[1])
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        self.assertContains(res, "name,version")
+        self.assertContains(res, "LicenseRef-FakeLicense OR AND")

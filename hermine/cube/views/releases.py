@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+import csv
 import logging
 
 from django.contrib import messages
@@ -9,11 +10,12 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count, F
 from django.forms import Form, ChoiceField, Select
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.utils.safestring import mark_safe
+from django.utils.text import slugify
 from django.views import generic
 from django.views.decorators.http import require_POST
 from django.views.generic import UpdateView, DetailView, ListView
@@ -165,9 +167,9 @@ class ReleaseExploitationForm(Form):
             )
 
             try:
-                self.initial[project + scope] = self.release.exploitations.get(
-                    project=project, scope=scope
-                ).exploitation
+                self.initial[
+                    project + scope
+                ] = self.release.exploitations.get().exploitation
             except Exploitation.DoesNotExist:
                 pass
 
@@ -208,6 +210,44 @@ class ReleaseSummaryView(LoginRequiredMixin, UpdateView):
 
     def get_success_url(self):
         return reverse("cube:release_summary", args=[self.object.pk])
+
+
+class ReleaseBomExportView(LoginRequiredMixin, DetailView):
+    model = Release
+
+    def get(self, request, **kwargs):
+        self.object = self.get_object()
+        response = HttpResponse(
+            content_type="text/csv",
+            headers={
+                "Content-Disposition": f'attachment; filename="{slugify(self.object)}.csv"'
+            },
+        )
+
+        writer = csv.writer(response)
+        writer.writerow(
+            [
+                "name",
+                "version",
+                "purl",
+                "declared_license_expr",
+                "spdx_valid_license_expr",
+                "corrected_license",
+            ]
+        )
+
+        for usage in self.object.usage_set.all():
+            writer.writerow(
+                [
+                    usage.version.component.name,
+                    usage.version.version_number,
+                    usage.version.purl,
+                    usage.version.declared_license_expr,
+                    usage.version.spdx_valid_license_expr,
+                    usage.version.corrected_license,
+                ]
+            )
+        return response
 
 
 @method_decorator(require_POST, "dispatch")

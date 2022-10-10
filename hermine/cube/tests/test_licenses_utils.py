@@ -15,7 +15,11 @@ from cube.models import (
     Version,
     Generic,
 )
-from cube.utils.licenses import get_usages_obligations, is_ambiguous
+from cube.utils.licenses import (
+    get_usages_obligations,
+    is_ambiguous,
+    explode_spdx_to_units,
+)
 
 
 class ObligationsTestCase(TestCase):
@@ -89,3 +93,29 @@ class SPDXToolsTestCase(TestCase):
         self.assertTrue(is_ambiguous("MIT AND BSD"))
         self.assertFalse(is_ambiguous("MIT OR (BSD AND GPL-3.0-or-later)"))
         self.assertFalse(is_ambiguous("MIT OR(BSD AND GPL-3.0-or-later)"))
+
+
+class ExplodeSPDXTestCase(TestCase):
+    def test_complicated_SPDX_expr(self):
+        """
+        An SPDX expression that comes with all the difficulties one may face.
+        """
+        SPDX_complex = (
+            "(MIT AND (BSD-3-Clause-No-Nuclear-License-2014 OR"
+            + " GPL-3.0-or-later WITH GPL-3.0-linking-source-exception OR GPL-2.0-only"
+            + " WITH Classpath-exception-2.0)) OR (AGPL-3.0-or-later WITH"
+            + " PS-or-PDF-font-exception-20170817 AND  Condor-1.1 AND"
+            + " (TORQUE-1.1 OR Artistic-1.0-cl8 OR MIT))"
+        )
+        SPDX_exploded = [
+            "AGPL-3.0-or-later WITH PS-or-PDF-font-exception-20170817",
+            "Artistic-1.0-cl8",
+            "BSD-3-Clause-No-Nuclear-License-2014",
+            "Condor-1.1",
+            "GPL-2.0-only WITH Classpath-exception-2.0",
+            "GPL-3.0-or-later WITH GPL-3.0-linking-source-exception",
+            "MIT",
+            "TORQUE-1.1",
+        ]
+        explosion = explode_spdx_to_units(SPDX_complex)
+        self.assertEqual(explosion, SPDX_exploded)
