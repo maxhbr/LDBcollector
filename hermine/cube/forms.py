@@ -10,6 +10,7 @@ from django.core.exceptions import ValidationError
 from rest_framework import serializers
 
 from .models import Release, Usage, LicenseChoice
+from .models.policy import LicenseCuration
 from .utils.generics import handle_generics_json
 from .utils.licenses import handle_licenses_json
 
@@ -83,7 +84,7 @@ class ImportBomForm(forms.ModelForm):
         fields = "bom_type", "file"
 
 
-class CreateLicenseChoiceForm(forms.ModelForm):
+class AbstractCreateUsageDecisionChoiceForm(forms.ModelForm):
     ANY = "any"
     PRODUCT = "product"
     RELEASE = "release"
@@ -143,7 +144,6 @@ class CreateLicenseChoiceForm(forms.ModelForm):
         super().save(**kwargs)
 
     class Meta:
-        model = LicenseChoice
         fields = (
             "expression_out",
             "product_release",
@@ -151,3 +151,13 @@ class CreateLicenseChoiceForm(forms.ModelForm):
             "scope_choice",
             "explanation",
         )
+
+
+class CreateLicenseCurationForm(AbstractCreateUsageDecisionChoiceForm):
+    class Meta(AbstractCreateUsageDecisionChoiceForm.Meta):
+        model = LicenseCuration
+
+
+class CreateLicenseChoiceForm(AbstractCreateUsageDecisionChoiceForm):
+    class Meta(AbstractCreateUsageDecisionChoiceForm.Meta):
+        model = LicenseChoice

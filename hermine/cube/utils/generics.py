@@ -4,8 +4,8 @@
 import json
 import logging
 
-from django.core.serializers import serialize
-from django.db import transaction
+from django.core.serializers import serialize, deserialize
+from django.db import transaction, IntegrityError
 
 from cube.models import Generic
 from cube.serializers import GenericSerializer
@@ -14,23 +14,27 @@ logger = logging.getLogger(__name__)
 
 
 def export_generics(indent=False):
-    serializer = GenericSerializer(Generic.objects.all(), many=True)
-    data = json.dumps(serializer.data, indent=4 if indent else None)
-    return serialize("json", Generic.objects.all(), indent=4 if indent else None)
+    return serialize(
+        "json",
+        Generic.objects.all(),
+        indent=4 if indent else None,
+        use_natural_foreign_keys=True,
+        use_natural_primary_keys=True,
+    )
 
 
 @transaction.atomic()
 def handle_generics_json(data):
-    genericsArray = json.loads(data)
     created, updated = 0, 0
-    for generic in genericsArray:
+    for generic in deserialize("json", data):
         try:
-            g = Generic.objects.get(pk=generic["pk"])
+            generic.object.id = Generic.objects.get(name=generic.object.name).id
+            generic.save()
             updated += 1
         except Generic.DoesNotExist:
-            g = Generic(generic["pk"])
+            generic.save()
             created += 1
-        s = GenericSerializer(g, data=generic["fields"], partial=True)
-        s.is_valid(raise_exception=True)
-        s.save()
+
     logger.info(f"Generics : {created} created / {updated} updated")
+
+    return

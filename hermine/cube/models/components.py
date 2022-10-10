@@ -89,6 +89,12 @@ class Usage(models.Model):
     license_expression = models.CharField(max_length=500, blank=True)
 
     @property
+    def license_curations(self):
+        from cube.models.policy import LicenseCuration
+
+        return LicenseCuration.objects.for_usage(self)
+
+    @property
     def license_choices(self):
         from cube.models.policy import LicenseChoice
 
@@ -147,12 +153,14 @@ class Version(models.Model):
         help_text="Declared license expression (may not be SPDX valid)",
     )
     spdx_valid_license_expr = models.CharField(
-        max_length=200, blank=True, help_text="License expression validated by user"
+        max_length=200,
+        blank=True,
+        help_text="License expression validated by user",
     )
     corrected_license = models.CharField(
         max_length=200,
         blank=True,
-        help_text="Final license expression used in legal evaluation",
+        help_text="Final license expression used in legal evaluation (required when validated expression is ambiguous)",
     )
     purl = models.CharField(
         max_length=250,

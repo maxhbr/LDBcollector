@@ -20,6 +20,7 @@ from .models import Derogation
 from .models import LicenseChoice
 from .models import Exploitation
 from .models import Team
+from .models.policy import LicenseCuration
 from .utils.licenses import is_ambiguous
 
 
@@ -143,8 +144,8 @@ class UsageAdmin(admin.ModelAdmin):
 class VersionAdmin(admin.ModelAdmin):
     def get_form(self, request, obj=None, **kwargs):
         form = super().get_form(request, obj, **kwargs)
-        form.base_fields["spdx_valid_license_expr"].help_text = (
-            "✔ License expression is not ambiguous"
+        form.base_fields["spdx_valid_license_expr"].help_text += "<br/><br/>" + (
+            "✔ This license expression is not ambiguous"
             if not is_ambiguous(obj.spdx_valid_license_expr)
             else "❌ License expression is ambiguous : corrected license needs to be specified"
         )
@@ -211,7 +212,8 @@ admin.site.register(Version, VersionAdmin)
 admin.site.register(Usage, UsageAdmin)
 admin.site.register(Generic, GenericAdmin)
 admin.site.register(Derogation)
-admin.site.register(LicenseChoice, UsageDecisionAdmin)
+admin.site.register(LicenseCuration, UsageDecisionAdmin)
 admin.site.register(ExpressionValidation, UsageDecisionAdmin)
+admin.site.register(LicenseChoice, UsageDecisionAdmin)
 admin.site.register(Exploitation)
 admin.site.register(Team)

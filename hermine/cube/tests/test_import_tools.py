@@ -109,6 +109,9 @@ class ImportGenericTestCase(ForceLoginMixin, TestCase):
         Generic.objects.all().delete()
         handle_generics_json(export)
         self.assertEqual(Generic.objects.all().count(), count)
+        # test importing twice is idempotent
+        handle_generics_json(export)
+        self.assertEqual(Generic.objects.all().count(), count)
 
     def test_export_import_pages(self):
         res = self.client.get(reverse("cube:export_generics"))

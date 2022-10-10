@@ -4,7 +4,7 @@
 
 from rest_framework import serializers
 
-from cube.models import License, Obligation, Generic
+from cube.models import License, Obligation, Generic, Team
 
 
 class GenericNameField(serializers.CharField):
@@ -211,9 +211,11 @@ class GenericSerializer(serializers.ModelSerializer):
     triggered_by = serializers.ListField(
         read_only=True, child=serializers.CharField(read_only=True)
     )
+    team = serializers.SlugRelatedField(
+        slug_field="name", queryset=Team.objects.all(), required=False, allow_null=True
+    )
 
     class Meta:
-        use_natural_foreign_keys = True
         model = Generic
         fields = [
             "id",

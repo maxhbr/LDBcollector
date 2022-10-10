@@ -8,7 +8,7 @@ import logging
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Count
+from django.db.models import Count, F
 from django.forms import Form, ChoiceField, Select
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
@@ -18,7 +18,7 @@ from django.utils.safestring import mark_safe
 from django.utils.text import slugify
 from django.views import generic
 from django.views.decorators.http import require_POST
-from django.views.generic import UpdateView, DetailView
+from django.views.generic import UpdateView, DetailView, ListView
 
 from cube.forms import ImportBomForm
 from cube.importers import (
@@ -328,3 +328,24 @@ def release_send_derogation(request, release_id, usage_id):
 
     response = redirect("cube:release_validation", release_id)
     return response
+
+
+class ReleaseFixedLicensesList(ListView):
+    template_name = "cube/release_fixed_licenses.html"
+    release = None
+    context_object_name = "usages"
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context["release"] = self.release
+        return context
+
+    def get_queryset(self):
+        self.release = get_object_or_404(Release, pk=self.kwargs["id"])
+        return (
+            self.release.usage_set.all()
+            .exclude(version__spdx_valid_license_expr="")
+            .exclude(
+                version__spdx_valid_license_expr=F("version__declared_license_expr")
+            )
+        )

@@ -7,6 +7,8 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
+from cube.forms import CreateLicenseCurationForm
+from cube.models import LicenseCuration, LicenseChoice
 from .mixins import ForceLoginMixin
 
 
@@ -91,6 +93,21 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         self.assertContains(
             res, "test_component_alpha"
         )  # test component alpha is used in release 1
+
+    def test_create_license_curation(self):
+        url = reverse("cube:licensecuration_create", args=[1])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "MIT",
+                "product_release": CreateLicenseCurationForm.PRODUCT,
+                "component_version": CreateLicenseCurationForm.COMPONENT,
+                "scope_choice": CreateLicenseCurationForm.ANY,
+            },
+        )
+        self.assertRedirects(res, reverse("cube:release_validation", args=[1]))
+        self.assertEqual(LicenseCuration.objects.all().count(), 1)
+        self.assertEqual(LicenseChoice.objects.all().count(), 0)
 
 
 class ExportSBOMTestCase(ForceLoginMixin, TestCase):
