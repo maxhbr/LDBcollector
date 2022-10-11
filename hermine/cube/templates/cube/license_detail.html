@@ -100,12 +100,6 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ license.get_allowed_display }}
             </span>
           </p>
-	{% if license.allowed == "context" %}
-            <div class="box">
-              <p><b>Allowed contexts:</b></p>
-              <p>{{ license.allowed_explanation }}</p>
-            </div>
-        {% endif %}
         </div>
         <div class="column">
           <p>Copyleft :
@@ -164,6 +158,54 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </div>
   </section>
+
+  {% if license.allowed == "context" or license.context_derogations %}
+    <section class="card">
+      <div class="card-content">
+        <article class="message is-info">
+          <div class="message-body">
+            This license is allowed only in specific contexts
+          </div>
+        </article>
+        {% if license.allowed_explanation %}
+          Explanation:
+          <p>{{ license.allowed_explanation }}</p>
+        {% else %}
+          <p>
+            <em>No general explanation registered</em> - <a href="{% url "cube:license_edit" license.id %}">Edit</a>
+          </p>
+        {% endif %}
+        {% if license.context_derogations %}
+          <h5>Authorized contexts:</h5>
+          <table>
+            <tr>
+              <th>Scope</th>
+              <th>Linking</th>
+              <th>Justification</th>
+              <th>Action</th>
+            </tr>
+            {% for derogation in license.context_derogations %}
+              <tr>
+                <td>{% if derogation.linking %}{{ derogation.linking }}{% else %}<em>any</em>{% endif %}</td>
+                <td>{% if derogation.scope %}{{ derogation.scope }}{% else %}<em>any</em>{% endif %}</td>
+                <td>
+                  {{ derogation.justification|default:"No justification given"|truncatewords:13 }}...
+                </td>
+                <td>
+                  <a href="/admin/cube/derogation/{{derogation.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+                  <a href="/admin/cube/derogation/{{derogation.id}}/delete/" target="_blank"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                </td>
+              </tr>
+            {% endfor %}
+          </table>
+          {% if license.derogations %}There are
+            <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}">
+              {{ license.context_derogations.count }} derogation{{ license.context_derogations.count|pluralize }}</a>
+              in total linked to this license. Some may be specific to products or components .{% endif %}
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
 
 
   <h2 class="title is-2">Obligations</h2>

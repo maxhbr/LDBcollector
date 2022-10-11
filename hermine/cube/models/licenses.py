@@ -111,7 +111,14 @@ class License(models.Model):
     objects = LicenseManager()
 
     def natural_key(self):
-        return self.spdx_id
+        return (self.spdx_id,)
+
+    def context_derogations(self):
+        from cube.models import Derogation
+
+        return Derogation.objects.filter(license=self).filter(
+            version=None, component=None, release=None, product=None
+        )
 
     def __str__(self):
         return self.spdx_id
