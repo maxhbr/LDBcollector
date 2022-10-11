@@ -10,7 +10,7 @@ from django.core.exceptions import ValidationError
 from rest_framework import serializers
 
 from .models import Release, Usage, LicenseChoice
-from .models.policy import LicenseCuration
+from .models.policy import LicenseCuration, Derogation
 from .utils.generics import handle_generics_json
 from .utils.licenses import handle_licenses_json
 
@@ -84,7 +84,7 @@ class ImportBomForm(forms.ModelForm):
         fields = "bom_type", "file"
 
 
-class AbstractCreateUsageDecisionChoiceForm(forms.ModelForm):
+class BaseUsageConditionForm(forms.ModelForm):
     ANY = "any"
     PRODUCT = "product"
     RELEASE = "release"
@@ -127,7 +127,6 @@ class AbstractCreateUsageDecisionChoiceForm(forms.ModelForm):
         )
 
     def save(self, **kwargs):
-        self.instance.expression_in = self.usage.version.effective_license
         if self.cleaned_data["product_release"] == self.PRODUCT:
             self.instance.product = self.usage.release.product
         elif self.cleaned_data["product_release"] == self.RELEASE:
@@ -141,7 +140,14 @@ class AbstractCreateUsageDecisionChoiceForm(forms.ModelForm):
         if self.cleaned_data["scope_choice"] == self.USAGE_SCOPE:
             self.instance.scope = self.usage.scope
 
-        super().save(**kwargs)
+        return super().save(**kwargs)
+
+
+class BaseCreateUsageDecisionChoiceForm(BaseUsageConditionForm):
+    def save(self, **kwargs):
+        self.instance.expression_in = self.usage.version.effective_license
+
+        return super().save(**kwargs)
 
     class Meta:
         fields = (
@@ -153,11 +159,46 @@ class AbstractCreateUsageDecisionChoiceForm(forms.ModelForm):
         )
 
 
-class CreateLicenseCurationForm(AbstractCreateUsageDecisionChoiceForm):
-    class Meta(AbstractCreateUsageDecisionChoiceForm.Meta):
+class CreateLicenseCurationForm(BaseCreateUsageDecisionChoiceForm):
+    class Meta(BaseCreateUsageDecisionChoiceForm.Meta):
         model = LicenseCuration
 
 
-class CreateLicenseChoiceForm(AbstractCreateUsageDecisionChoiceForm):
-    class Meta(AbstractCreateUsageDecisionChoiceForm.Meta):
+class CreateLicenseChoiceForm(BaseCreateUsageDecisionChoiceForm):
+    class Meta(BaseCreateUsageDecisionChoiceForm.Meta):
         model = LicenseChoice
+
+
+class DerogationForm(BaseUsageConditionForm):
+    USAGE_LINKING = "usage"
+    LINKING_CHOICES = ((BaseUsageConditionForm.ANY, "Apply to any linking"),)
+
+    linking_choice = forms.ChoiceField(choices=LINKING_CHOICES)
+
+    def __init__(self, *args, **kwargs):
+        self.license = kwargs.pop("license")
+        super().__init__(*args, **kwargs)
+        # Change labels of fields depending on usage linking
+        if self.usage.linking:
+            self.fields["linking_choice"].choices = (
+                (self.USAGE_LINKING, f"Only {self.usage.get_linking_display()}"),
+                (self.ANY, "Any linking"),
+            )
+
+    def save(self, **kwargs):
+        self.instance.license = self.license
+
+        if self.cleaned_data["linking_choice"] == self.USAGE_LINKING:
+            self.instance.linking = self.usage.linking
+
+        return super().save(**kwargs)
+
+    class Meta:
+        model = Derogation
+        fields = (
+            "product_release",
+            "component_version",
+            "linking_choice",
+            "scope_choice",
+            "justification",
+        )

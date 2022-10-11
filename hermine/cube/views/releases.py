@@ -18,7 +18,7 @@ from django.utils.safestring import mark_safe
 from django.utils.text import slugify
 from django.views import generic
 from django.views.decorators.http import require_POST
-from django.views.generic import UpdateView, DetailView, ListView
+from django.views.generic import UpdateView, DetailView, ListView, CreateView
 
 from cube.forms import ImportBomForm
 from cube.importers import (
@@ -265,69 +265,6 @@ class UpdateLicenseChoiceView(UpdateView):
 
     def get_success_url(self):
         return reverse("cube:release_summary", kwargs={"pk": self.object.release.pk})
-
-
-@login_required
-def release_add_derogation(request, release_id, usage_id):
-    """Takes the user to the page that allows them to add a derogation for the release
-    they're working on.
-
-    :param request: mandatory
-    :type request: HttpRequest
-    :param release_id: The id of this release
-    :type release_id: django AutoField
-    :param usage_id: The id of this usage
-    :type usage_id: django AutoField
-    :return: Renders the context into the template.
-    :rtype: HttpResponse
-    """
-    usage = Usage.objects.get(pk=usage_id)
-    release = Release.objects.get(pk=release_id)
-    context = {"usage": usage, "release": release}
-    return render(request, "cube/release_derogation.html", context)
-
-
-@login_required
-def release_send_derogation(request, release_id, usage_id):
-    """Digests inputs from the associated form and send it to the database.
-
-    :param request: mandatory
-    :type request: HttpRequest
-    :param release_id: The id of this release
-    :type release_id: django AutoField
-    :param usage_id: The id of this usage
-    :type usage_id: django AutoField
-    :return: A redirection to this release main page.
-    :rtype: HttpResponseRedirect
-    """
-    actionvalue = request.POST["action"]
-    justificationvalue = request.POST["justification"]
-    usage_derog = linking = scope = None
-    usage = get_object_or_404(Usage, pk=usage_id)
-    release = get_object_or_404(Release, pk=release_id)
-    for license in usage.licenses_chosen.all():
-        if actionvalue == "component":
-            usage_derog = usage
-        if actionvalue == "linking":
-            linking = usage.linking
-        if actionvalue == "scope":
-            scope = usage.scope
-        if actionvalue == "linkingscope":
-            scope = usage.scope
-            linking = usage.linking
-
-        derogation = Derogation(
-            release=release,
-            usage=usage_derog,
-            license=license,
-            scope=scope,
-            justification=justificationvalue,
-            linking=linking,
-        )
-        derogation.save()
-
-    response = redirect("cube:release_validation", release_id)
-    return response
 
 
 class ReleaseFixedLicensesList(ListView):

@@ -10,7 +10,7 @@ from typing import Iterable, List
 from django.db import transaction
 from license_expression import get_spdx_licensing, BaseSymbol
 
-from cube.models import License, Obligation
+from cube.models import License, Obligation, Derogation
 from cube.serializers import LicenseSerializer
 
 logger = logging.getLogger(__name__)
@@ -59,37 +59,30 @@ def check_licenses_against_policy(release):
     usages_lic_context_allowed = set()
     usages_lic_unknown = set()
     involved_lic = set()
+    derogations = set()
 
-    derogations = release.derogation_set.all()
     usages = release.usage_set.all()
-
-    release_derogs = dict()
-    for derog in derogations:
-        if derog.license.id not in release_derogs:
-            release_derogs[derog.license.id] = dict()
-            release_derogs[derog.license.id]["usages"] = set()
-            release_derogs[derog.license.id]["scopes"] = set()
-        if derog.usage:
-            release_derogs[derog.license.id]["usages"].add(derog.usage)
-        if derog.scope:
-            release_derogs[derog.license.id]["scopes"].add(derog.scope)
 
     for usage in usages:
         for license in usage.licenses_chosen.all():
             involved_lic.add(license)
-            derogate = (license.id in release_derogs) and (
-                (
-                    not (release_derogs[license.id]["usages"])
-                    and not (release_derogs[license.id]["scopes"])
-                )
-                or usage in release_derogs[license.id]["usages"]
-                or usage.scope in release_derogs[license.id]["scopes"]
+
+            if license.allowed == License.ALLOWED_ALWAYS:
+                continue
+
+            license_derogations = Derogation.objects.for_usage(usage).filter(
+                license=license
             )
-            if license.allowed == License.ALLOWED_NEVER and not derogate:
+            if license_derogations.exists():
+                for derogation in license_derogations:
+                    derogations.add(derogation)
+                continue
+
+            if license.allowed == License.ALLOWED_NEVER:
                 usages_lic_never_allowed.add(usage)
-            elif license.allowed == License.ALLOWED_CONTEXT and not derogate:
+            elif license.allowed == License.ALLOWED_CONTEXT:
                 usages_lic_context_allowed.add(usage)
-            elif not license.allowed and not derogate:
+            elif not license.allowed:
                 usages_lic_unknown.add(usage)
 
     response["usages_lic_never_allowed"] = usages_lic_never_allowed
