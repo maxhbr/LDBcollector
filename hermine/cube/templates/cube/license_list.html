@@ -71,31 +71,26 @@ Licenses
           <table class="table is-striped is-hoverable">
             <thead>
               <tr>
+                <th>License</th>
                 <th>Policy status</th>
-                <th>SPDX ID</th>
-                <th>License Name</th>
-                <th>Obligations</th>
-                <th>Action</th>
               </tr>
             </thead>
             <tbody>
               {% for license in licenses %}
                 <tr>
                   <td>
+                    <a href="{% url 'cube:license' license.id %}" >{{ license.long_name }} ({{ license.spdx_id }})</a>
+                    {% if license.allowed %}
+                      - <a href="{% url "admin:cube_obligation_changelist" %}?license__id__exact={{ license.id }}">
+                        {{ license.obligation_set.all.count }} obligation{{ license.obligation_set.all.count|pluralize }}
+                      </a>
+                    {% endif %}
+                  </td>
+                  <td>
                     <span class="tag {{ license | licenseCSS }}">
                         {{ license.get_allowed_display }}
                     </span>
                   </td>
-                  <td><a href="{% url 'cube:license' license.id %}" >{{ license.spdx_id }}</td>
-                  <td>{{ license.long_name }}</td>
-                  <td> 
-                    {% if not license.allowed %}
-                      Unknown
-                      {% else %}
-                        {{ license.obligation_set.all|length }}
-                    {% endif %}
-                  </td>
-                  <td><a href="{% url 'cube:license' license.id %}">Details</a></td>
                 </tr>
               {% endfor %}
             </tbody>
