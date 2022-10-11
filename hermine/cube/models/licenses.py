@@ -136,7 +136,7 @@ class Team(models.Model):
     icon = models.CharField(max_length=200, null=True, blank=True)
 
     def natural_key(self):
-        return self.name
+        return (self.name,)
 
     def __str__(self):
         return self.name
@@ -184,7 +184,7 @@ class Generic(models.Model):
     )
 
     def natural_key(self):
-        return self.name
+        return (self.name,)
 
     def __str__(self):
         return ("[Core]" if self.in_core else "") + self.name

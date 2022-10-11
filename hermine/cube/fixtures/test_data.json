@@ -1,5 +1,12 @@
 [
 {
+    "model": "cube.team",
+    "pk": 1,
+    "fields": {
+        "name": "Test team"
+    }
+},
+{
     "model": "cube.product",
     "pk": 1,
     "fields": {
@@ -161,7 +168,7 @@
         "description": "Reproduce in documentation complete text of licenses and other texts relative to IP ownership.",
         "in_core": true,
         "metacategory": "IPManagement",
-        "team": null,
+        "team": 1,
         "passivity": "Active"
     }
 },
@@ -335,162 +342,6 @@
     }
 },
 {
-    "model": "admin.logentry",
-    "pk": 1,
-    "fields": {
-        "action_time": "2022-01-14T15:36:23.511Z",
-        "user": 1,
-        "content_type": 4,
-        "object_id": "1",
-        "object_repr": "test_product",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 2,
-    "fields": {
-        "action_time": "2022-01-14T15:39:42.941Z",
-        "user": 1,
-        "content_type": 5,
-        "object_id": "1",
-        "object_repr": "test_product 1.0",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 3,
-    "fields": {
-        "action_time": "2022-01-14T16:02:00.166Z",
-        "user": 1,
-        "content_type": 1,
-        "object_id": "2",
-        "object_repr": "test_component_alpha",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"test_component_alpha:1.0\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 4,
-    "fields": {
-        "action_time": "2022-01-14T16:15:30.197Z",
-        "user": 1,
-        "content_type": 2,
-        "object_id": "1",
-        "object_repr": "[Core]License and copyright notices in documentation",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 5,
-    "fields": {
-        "action_time": "2022-01-17T09:13:51.870Z",
-        "user": 1,
-        "content_type": 3,
-        "object_id": "1",
-        "object_repr": "tobedeleted",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 6,
-    "fields": {
-        "action_time": "2022-01-17T11:22:00.009Z",
-        "user": 1,
-        "content_type": 3,
-        "object_id": "1",
-        "object_repr": "tobedeleted",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-        "action_time": "2022-01-17T11:29:35.889Z",
-        "user": 1,
-        "content_type": 3,
-        "object_id": "2",
-        "object_repr": "LicenseRef-FakeLicense-1.0",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 8,
-    "fields": {
-        "action_time": "2022-01-19T16:03:02.561Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "1",
-        "object_repr": "test_product 1.0 <=> test_component_alpha:1.0",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 9,
-    "fields": {
-        "action_time": "2022-01-24T13:41:01.073Z",
-        "user": 1,
-        "content_type": 4,
-        "object_id": "3",
-        "object_repr": "Test",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-        "action_time": "2022-01-24T13:41:01.076Z",
-        "user": 1,
-        "content_type": 4,
-        "object_id": "2",
-        "object_repr": "Test2",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 11,
-    "fields": {
-        "action_time": "2022-01-24T13:41:26.629Z",
-        "user": 1,
-        "content_type": 3,
-        "object_id": "4",
-        "object_repr": "testlicense",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 12,
-    "fields": {
-        "action_time": "2022-01-24T13:41:35.853Z",
-        "user": 1,
-        "content_type": 2,
-        "object_id": "2",
-        "object_repr": "[Core]TEEEEEEST",
-        "action_flag": 3,
-        "change_message": ""
-    }
-},
-{
     "model": "auth.user",
     "pk": 1,
     "fields": {
@@ -506,22 +357,6 @@
         "date_joined": "2022-01-14T15:34:44.147Z",
         "groups": [],
         "user_permissions": []
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "vmlmutduifjv6jrza1lc9na6p7bzztpx",
-    "fields": {
-        "session_data": ".eJxVjDsOwjAQBe_iGln-rWNT0nMGa3ft4ABypDipEHeHSCmgfTPzXiLhtta09bKkKYuz0OL0uxHyo7Qd5Du22yx5busykdwVedAur3Muz8vh_h1U7PVbI4EhF2HMKhf0oCwDQWCvvYtWM9qgzBCsj-BLAAuamdA5HK0hyoN4fwDY7TeZ:1n8ObW:GG7x345FGdB1MBjVYzU9NZ7gFbs3VETBtX1XsY6c_bk",
-        "expire_date": "2022-01-28T15:35:02.646Z"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "w0iyk5tuhpliapwopvtpnfi8z51qde0u",
-    "fields": {
-        "session_data": ".eJxVjDsOwjAQBe_iGln-rWNT0nMGa3ft4ABypDipEHeHSCmgfTPzXiLhtta09bKkKYuz0OL0uxHyo7Qd5Du22yx5busykdwVedAur3Muz8vh_h1U7PVbI4EhF2HMKhf0oCwDQWCvvYtWM9qgzBCsj-BLAAuamdA5HK0hyoN4fwDY7TeZ:1nBzFH:IzvlTQa88nfqzLW3NFb_dcLH_bbcLq7ZS3de0QChGyo",
-        "expire_date": "2022-02-07T13:18:55.032Z"
     }
 }
 ]
