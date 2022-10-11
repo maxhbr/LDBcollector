@@ -11,7 +11,62 @@ from cube.models import (
 )
 
 
-class UsageDecisionManager(models.Manager):
+class UsageConditionMixin(models.Model):
+    product = models.ForeignKey(
+        "Product", on_delete=models.CASCADE, blank=True, null=True
+    )
+    release = models.ForeignKey(
+        "Release", on_delete=models.CASCADE, blank=True, null=True
+    )
+    component = models.ForeignKey(
+        "Component", on_delete=models.CASCADE, blank=True, null=True
+    )
+    version = models.ForeignKey(
+        "Version", on_delete=models.CASCADE, blank=True, null=True
+    )
+    scope = models.CharField(max_length=128, blank=True, null=True)
+
+    @property
+    def condition_display(self):
+        result = ""
+        if self.release is not None:
+            result += f"product: {self.release} — "
+        elif self.product is not None:
+            result += f"product: {self.product} (any release) — "
+        else:
+            result += "product: any — "
+
+        if self.version is not None:
+            result += f"component: {self.version}"
+        elif self.component:
+            result += f"component: {self.component} (any version)"
+        else:
+            result += "component: any"
+
+        if self.scope:
+            return result + f" — scope: {self.scope}"
+        else:
+            return result + f" — scope: any"
+
+    def clean(self):
+        """Model validation
+
+        :meta private:
+        """
+        if self.release is not None and self.product is not None:
+            raise ValidationError(
+                "Rule can only apply to a product or a specific release."
+            )
+        if self.component is not None and self.version is not None:
+            raise ValidationError(
+                "Rule can only apply to a component or a specific component version."
+            )
+
+    class Meta:
+        abstract = True
+
+
+class UsageConditionManager(models.Manager):
     def for_usage(self, usage: Usage):
         return self.filter(
             Q(component=usage.version.component) | Q(component=None),
@@ -22,10 +77,13 @@ class UsageDecisionManager(models.Manager):
         )
 
 
-class UsageDecision(models.Model):
+class UsageDecision(UsageConditionMixin, models.Model):
     """
-    A generic class to generalize choices made about usages and licenses to several versions, release or products.
+    A generic class to generalize licenses curations, disambiguation or choices to
+    several versions, releases or products.
     """
+
+    objects = UsageConditionManager()
 
     LICENSE_CHOICE = "choice"
     EXPRESSION_VALIDATION = "validation"
@@ -47,41 +105,13 @@ class UsageDecision(models.Model):
         max_length=500, help_text="The expression which will replace `expression_in`"
     )
 
-    product = models.ForeignKey(
-        "Product", on_delete=models.CASCADE, blank=True, null=True
-    )
-    release = models.ForeignKey(
-        "Release", on_delete=models.CASCADE, blank=True, null=True
-    )
-    component = models.ForeignKey(
-        "Component", on_delete=models.CASCADE, blank=True, null=True
-    )
-    version = models.ForeignKey(
-        "Version", on_delete=models.CASCADE, blank=True, null=True
-    )
-
-    scope = models.CharField(max_length=128, blank=True, null=True)
     explanation = models.TextField(max_length=500, blank=True, null=True)
 
     def __str__(self):
         return self.expression_in or "(blank)" + " → " + self.expression_out
 
-    def clean(self):
-        """Model validation
 
-        :meta private:
-        """
-        if self.release is not None and self.product is not None:
-            raise ValidationError(
-                "Rule can only apply to a product or a specific release."
-            )
-        if self.component is not None and self.version is not None:
-            raise ValidationError(
-                "Rule can only apply to a component or a specific component version."
-            )
-
-
-class LicenseChoiceManager(UsageDecisionManager):
+class LicenseChoiceManager(UsageConditionManager):
     def for_usage(self, usage: Usage):
         return (
             super()
@@ -110,7 +140,7 @@ class LicenseChoice(UsageDecision):
         verbose_name_plural = "License choice rules"
 
 
-class ExpressionValidationManager(UsageDecisionManager):
+class ExpressionValidationManager(UsageConditionManager):
     def get_queryset(self):
         return (
             super()
@@ -137,7 +167,7 @@ class ExpressionValidation(UsageDecision):
         proxy = True
 
 
-class LicenseCurationManager(UsageDecisionManager):
+class LicenseCurationManager(UsageConditionManager):
     def get_queryset(self):
         return (
             super().get_queryset().filter(decision_type=UsageDecision.LICENSE_CURATION)
@@ -159,30 +189,30 @@ class LicenseCuration(UsageDecision):
         proxy = True
 
 
-class Derogation(models.Model):
+class DerogationManager(UsageConditionManager):
+    def for_usage(self, usage: Usage):
+        return super().for_usage(usage).filter(Q(linking=usage.linking) | Q(linking=""))
+
+
+class Derogation(UsageConditionMixin, models.Model):
     """
-    A release / usage specific derogation to policy allowing use of a license.
+    A derogation to policy allowing use of a license, which can be generalized to a component, a release or a product.
     """
 
-    SCOPE_MASK_CHOICES = [
-        ("usage", "Only this usage"),
-        ("release", "The whole release"),
-        ("component", "Every usage of this component"),
-        ("linking", "Every usage with this same linking"),
-        ("scope", "Every usage with the same scope"),
-        ("linkingscope", "Every usage with the same scope AND the same linking"),
-    ]
+    objects = DerogationManager()
 
     license = models.ForeignKey("License", on_delete=models.CASCADE)
-    release = models.ForeignKey("Release", on_delete=models.CASCADE, null=True)
-    usage = models.ForeignKey("Usage", on_delete=models.CASCADE, blank=True, null=True)
-    linking = models.CharField(
-        max_length=20, choices=Usage.LINKING_CHOICES, blank=True, null=True
-    )
-    scope = models.CharField(
-        max_length=50, choices=SCOPE_MASK_CHOICES, blank=True, null=True
-    )
-    justification = models.TextField(max_length=500, blank=True, null=True)
+    linking = models.CharField(max_length=20, choices=Usage.LINKING_CHOICES, blank=True)
+    justification = models.TextField(max_length=500, blank=True)
+
+    @property
+    def condition_display(self):
+        result = super().condition_display
+
+        if self.linking:
+            return result + f" — linking: {self.linking}"
+        else:
+            return result + " — linking: any"
 
     def __str__(self):
-        return self.license.__str__() + " : " + str(self.release.id)
+        return self.license.__str__()

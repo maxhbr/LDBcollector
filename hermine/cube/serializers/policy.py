@@ -24,4 +24,13 @@ class DerogationSerializer(serializers.ModelSerializer):
     class Meta:
         use_natural_foreign_keys = True
         model = Derogation
-        fields = ["license", "release", "usage", "linking", "scope", "justification"]
+        fields = [
+            "license",
+            "component",
+            "version",
+            "product",
+            "release",
+            "linking",
+            "scope",
+            "justification",
+        ]

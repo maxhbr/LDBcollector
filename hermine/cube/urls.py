@@ -66,27 +66,22 @@ urlpatterns = [
         name="release_generic",
     ),
     path(
-        "release/<int:release_id>/derogation/<int:usage_id>/",
-        views.release_add_derogation,
-        name="release_add_derogation",
-    ),
-    path(
-        "release/<int:release_id>/send_derogation/<int:usage_id>/",
-        views.release_send_derogation,
-        name="release_send_derogation",
-    ),
-    path(
         "release/update_license_choice/<int:pk>/",
         views.UpdateLicenseChoiceView.as_view(),
         name="usage_update_license_choice",
     ),
     path(
-        "usage/<int:id>/add_license_choice/",
+        "usage/<int:usage_pk>/add_derogation/<int:license_pk>/",
+        views.CreateDerogationView.as_view(),
+        name="add_derogation",
+    ),
+    path(
+        "usage/<int:usage_pk>/add_license_choice/",
         views.CreateLicenseChoiceView.as_view(),
         name="licensechoice_create",
     ),
     path(
-        "usage/<int:id>/add_license_curation/",
+        "usage/<int:usage_pk>/add_license_curation/",
         views.CreateLicenseCurationView.as_view(),
         name="licensecuration_create",
     ),

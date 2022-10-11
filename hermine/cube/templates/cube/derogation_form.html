@@ -1,0 +1,38 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}{{ form.usage.version }} - Add derogation{% endblock %}
+
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:product_detail' form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
+  <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
+  <li>Add derogation</li>
+</ul>
+{% endblock %}
+
+{% block content %}
+    <h1 class="title is-1">{{ form.usage.version }}</h1>
+    <h3  class="title is-3">Add a derogation for "{{ form.license }}" license
+    </h3>
+    
+
+    <form action="{% url "cube:add_derogation" form.usage.id form.license.id %}" method="post">
+        {% csrf_token %}
+        <table>
+          {{ form }}
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+
+
+{% endblock %}
+
+
+

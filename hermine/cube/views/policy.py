@@ -1,19 +1,24 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
 from django.views.generic import CreateView
 
-from cube.forms import CreateLicenseChoiceForm, CreateLicenseCurationForm
-from cube.models import LicenseChoice, Usage, LicenseCuration
+from cube.forms import (
+    CreateLicenseChoiceForm,
+    CreateLicenseCurationForm,
+    DerogationForm,
+)
+from cube.models import LicenseChoice, Usage, LicenseCuration, Derogation, License
 
 
-class AbstractCreateUsageDecisionView(CreateView):
+class AbstractCreateUsageConditionView(LoginRequiredMixin, CreateView):
     usage = None
 
     def dispatch(self, request, *args, **kwargs):
-        self.usage = get_object_or_404(Usage, id=kwargs["id"])
+        self.usage = get_object_or_404(Usage, id=kwargs["usage_pk"])
         return super().dispatch(request, *args, **kwargs)
 
     def get_form_kwargs(self):
@@ -25,11 +30,26 @@ class AbstractCreateUsageDecisionView(CreateView):
         return reverse("cube:release_validation", kwargs={"pk": self.usage.release.id})
 
 
-class CreateLicenseCurationView(AbstractCreateUsageDecisionView):
+class CreateLicenseCurationView(AbstractCreateUsageConditionView):
     model = LicenseCuration
     form_class = CreateLicenseCurationForm
 
 
-class CreateLicenseChoiceView(AbstractCreateUsageDecisionView):
+class CreateLicenseChoiceView(AbstractCreateUsageConditionView):
     model = LicenseChoice
     form_class = CreateLicenseChoiceForm
+
+
+class CreateDerogationView(AbstractCreateUsageConditionView):
+    model = Derogation
+    form_class = DerogationForm
+    license = None
+
+    def dispatch(self, request, *args, **kwargs):
+        self.license = get_object_or_404(License, id=kwargs["license_pk"])
+        return super().dispatch(request, *args, **kwargs)
+
+    def get_form_kwargs(self):
+        kwargs = super().get_form_kwargs()
+        kwargs["license"] = self.license
+        return kwargs
