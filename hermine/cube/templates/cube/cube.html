@@ -77,12 +77,25 @@ SPDX-License-Identifier: MIT
                 <span class="menu-item-label">Your Products</span>
               </a>
             </li>
+          <li><a class="has-icon has-dropdown-icon">
+            <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
+            <span class="menu-item-label">Components</span>
+            <div class="dropdown-icon"><span class="icon"><i class="fas fa-plus-square"></i></span>
+            </div>
+          </a>
+          <ul>
             <li>
-              <a href="{% url 'cube:components' %}" class="has-icon">
-                <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
-                <span class="menu-item-label">3rd p. Components</span>
+              <a href="{% url 'cube:components' %}" >
+                <span>Complete List</span>
               </a>
             </li>
+            <li>
+              <a href="{% url 'cube:populars' %}">
+                <span>Most used ones</span>
+              </a>
+            </li>
+          </ul>
+        </li>
           </ul>
           <p class="menu-label">Legal</p>
           <ul class="menu-list">

@@ -26,6 +26,19 @@ class ComponentListView(LoginRequiredMixin, SearchMixin, generic.ListView):
         return context
 
 
+class PopularListView(LoginRequiredMixin, generic.ListView):
+    model = Component
+    template_name = "cube/component_popular.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        populars = Component.objects.annotate(
+            popularity=Count("versions__usage__id")
+        ).order_by("-popularity")[:10]
+        context["populars"] = populars
+        return context
+
+
 class ComponentView(LoginRequiredMixin, generic.DetailView):
     template_name = "cube/component.html"
     model = Component
