@@ -1,0 +1,55 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}Derogations{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li>Derogations</li>
+</ul>
+{% endblock %}
+{% block herozone %}
+<h1 class="title">
+  <span class="icon is-medium"><i class="fas fa-clipboard-check"></i></span>
+Derogations
+</h1>
+{% endblock %}
+{% block content %}
+<div id="content-main">
+  <p>The derogations that have been added to allow the use of a restricted licence in the context of a specific project or component.</p>
+  <table class="table is-striped is-hoverable">
+    <thead>
+      <tr>
+        <th>License</th>
+        <th>Product / Release</th>
+        <th>Component / Version</th>
+        <th>Scope</th>
+        <th>Linking</th>
+        <th>Justification</th>
+      </tr>
+    </thead>
+    <tbody>
+  {% for derogation in derogations %}
+      <tr>
+        <td> <a href="{% url 'cube:license' derogation.license.id %}"><span class="tag {{ derogation.license|licenseCSS }}">
+                  {{ derogation.license.spdx_id }}
+                </span></a></td>
+        <td> {{ derogation.product|default:"" }} {{ derogation.release|default:"" }} </td>
+        <td> {{ derogation.component|default:"" }} {{ derogation.version|default:"" }} </td>
+        <td> {{ derogation.scope|default:"Any" }} </td>
+        <td> {{ derogation.get_linking_display|default:"Any" }} </td>
+        <td> {{ derogation.justification|default:"No Justification given" }} </td>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+{% endblock %}
+
+
+

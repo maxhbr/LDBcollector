@@ -30,6 +30,7 @@ urlpatterns = [
     ),
     path("generics/", views.GenericListView.as_view(), name="generics"),
     path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
+    path("derogations/", views.DerogationListView.as_view(), name="derogations"),
     path(
         "export/licenses/", views.ExportLicensesView.as_view(), name="export_licenses"
     ),
