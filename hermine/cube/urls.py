@@ -17,6 +17,7 @@ urlpatterns = [
     path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
     path("components/", views.ComponentListView.as_view(), name="components"),
     path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),
+    path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
     path(
         "license/<int:license_id>/export/",
@@ -85,7 +86,6 @@ urlpatterns = [
         views.CreateLicenseCurationView.as_view(),
         name="licensecuration_create",
     ),
-    path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
 

@@ -1,0 +1,262 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+
+{% block title %}{{ license.long_name }} {% endblock %}
+
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
+  <li>{{ license.spdx_id }}</li>
+</ul>
+{% endblock %}
+
+{% block actions %}
+<a class="button" href="{% url "admin:cube_license_change" license.id %}" target="_blank">
+  <span class="icon">
+    <i class="fas fa-edit"></i>
+  </span>
+  <span>Edit this license</span>
+</a>
+
+<div class="dropdown is-hoverable is-right">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span>Actions</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+      <a href="{% url "cube:export_license" license.id %}" class="dropdown-item">
+        <span class="icon is-small">
+          <i class="fas fa-download"></i>
+        </span>
+        <span>Export as JSON</span>
+      </a>
+      <a href="{% url "cube:print_license" license.id %}" class="dropdown-item">
+        <span class="icon is-small">
+          <i class="fas fa-print"></i>
+        </span>
+        <span>Print (ODT export)</span>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block herozone %}
+<div class="hero-body">
+  <p class="title">{{ license.long_name }}</p>
+</div>
+{% endblock %}
+
+{% block infoitem %}
+<p class="subtitle" style="text-transform: uppercase;">
+  <span class="icon is-medium">
+    <i class="fas fa-balance-scale"></i>
+    </span>
+    License
+  </p>
+{% endblock %}
+{% block content %}
+
+  <section class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon">
+          <i class="fas fa-info-circle"></i> 
+        </span>
+        Main characteristics of this license
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="columns">
+        <div class="column">
+          <p>SPXD identifier:
+            <a href="https://spdx.org/licenses/{{ object.spdx_id }}.html" target="_blank">
+              <span> {{ object.spdx_id }}</span>
+              <span class="icon is-small">
+                <i class="fas fa-link"></i>
+              </span>
+            </a>
+          </p>
+          <p>Review status:
+            <span class="tag {{ license|licenseReviewCSS }}">
+              {{ license.get_status_display }}
+            </span>
+          </p>
+          <p>FOSS policy status:
+            <span class="tag {{ license|licenseAllowedCSS }}">
+              {{ license.get_allowed_display }}
+            </span>
+          </p>
+	{% if license.allowed == "context" %}
+            <div class="box">
+              <p><b>Allowed contexts:</b></p>
+              <p>{{ license.allowed_explanation }}</p>
+            </div>
+        {% endif %}
+        </div>
+        <div class="column">
+          <p>Copyleft :
+            <span class="tag {{ license|licenseCopyleftCSS }}">
+              {{ license.get_copyleft_display|default:"Unknown" }}
+            </span>
+          </p>
+          <p>Actually FOSS :
+            <span class="tag {{ license|licenseFOSSCSS }}">
+              {{ license.get_foss_display|default:"Unknown" }}
+            </span>
+          </p>
+          <p>Patent Grant:
+            <strong>{{ license.patent_grant|yesno:"Yes,No,Maybe" }}</strong>
+          </p>
+          <p>Ethical clause:
+            <strong>{{ license.ethical_clause|yesno:"Yes,No,Maybe" }}</strong>
+          </p>
+          <p>Restricted to non-commercial use:
+            <strong>{{ license.non_commercial|yesno:"Yes,No,Maybe" }}</strong>
+          </p>
+        </div>
+
+        <div class="column">
+          <p>Choice of law:
+            <strong>{{ license.law_choice|default:"None" }}</strong>
+          </p>
+          <p>Choice of venue:
+            <strong>{{ license.venue_choice|default:"None" }}</strong>
+          </p>
+
+          <!-- Show optional comment -->
+          {% if license.comment %}
+            <div class="box">
+              <p><b>Your comment :</b></p>
+              <p>{{ license.comment }}</p>
+            </div>
+          {% else %}
+            <p>Comment: <i>no comment</i></p>
+          {% endif %}
+
+          {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}
+          <p>
+              <span class="icon">
+                <i class="fas fa-check has-text-success"></i>
+              </span>
+              <span>This license is covered by the obligations in the core</span>
+          </p>
+        {% else %}
+          <p>
+            <span class="icon has-text-grey"><i class="fas fa-times"></i></span>
+            This license is NOT covered by the obligations in the core
+          </p>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <h2 class="title is-2">Obligations</h2>
+
+  {% if orphan_obligations %}
+    <h3>Specific obligations</h3>
+    <article class="message is-info">
+      <div class="message-body">
+        Obligations that are specific to this license and not linked to generic obligations
+      </div>
+    </article>
+
+    {% for obligation in orphan_obligations %}
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            {% if obligation.passivity == "Active" %}
+              <p>Applies:</p>
+              <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
+              <li>{{ obligation.get_trigger_expl_display }}</li></ul>
+            {% endif %}
+            <br>
+            <blockquote>{{ obligation.verbatim}}</blockquote>
+          </div>
+        </div>
+
+      </div>
+    {% endfor %}
+  {% endif %}
+
+  {% if obligations_in_generic %}
+    <h3>Not in core obligations</h3>
+    <article class="message is-info">
+      <div class="message-body">
+        Obligations that are related to a generic obligation that is <b>not</b> part of the core
+      </div>
+    </article>
+
+    {% for obligation in obligations_in_generic %}
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+
+            {% if obligation.passivity == "Active" %}
+              <p>Applies:</p>
+              <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
+              <li> {{ obligation.get_trigger_expl_display }}</li></ul>
+            {% endif %}
+            <br>
+            <blockquote>{{ obligation.verbatim }}</blockquote>
+            <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% endif %}
+
+  {% if obligations_in_core %}
+    <h3>Core obligations</h3>
+    <article class="message is-info">
+      <div class="message-body">
+        Obligations that are related to a generic obligation that is part of the core
+      </div>
+    </article>
+
+
+    {% for obligation in obligations_in_core %}
+    <div class="card">
+      <header class="card-header">
+        <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          {% if obligation.passivity == "Active" %}
+            <p>Applies:</p>
+            <ul>
+              <li>{{ obligation.get_trigger_mdf_display }}</li>
+              <li> {{ obligation.get_trigger_expl_display }}</li>
+            </ul>
+          {% endif %}
+          <blockquote>{{ obligation.verbatim}}</blockquote>
+          <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+  {% endif %}
+
+{% endblock %}

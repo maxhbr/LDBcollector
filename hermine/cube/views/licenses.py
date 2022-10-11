@@ -53,8 +53,6 @@ class LicensesListView(
 
 class LicenseDetailView(LoginRequiredMixin, DetailView):
     model = License
-    context_object_name = "license"
-    template_name = "cube/license.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

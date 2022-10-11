@@ -195,7 +195,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="/license/{{license_chosen.id}}">
-                  <span class="tag {{ license_chosen|licenseCSS }}">
+                  <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
                 </a>
@@ -422,7 +422,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
-                  <span class="tag {{ license_chosen|licenseCSS }}">
+                  <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
                   <a href="{% url 'cube:add_derogation' usage.id license_chosen.id %}"> Add Derogation </a>
@@ -464,7 +464,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
-                  <span class="tag {{ license_chosen|licenseCSS }}">
+                  <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
                   <a href="{% url 'cube:add_derogation' usage.id license_chosen.id %}"> Add Derogation </a>
@@ -512,7 +512,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td>
               <a href="{% url "cube:license" derogation.license.id %}">
-                <span class="tag {{ derogation.license|licenseCSS }}">
+                <span class="tag {{ derogation.license|licenseAllowedCSS }}">
                   {{ derogation.license.spdx_id }}
                 </span>
               </a>
