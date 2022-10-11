@@ -188,6 +188,9 @@ class DerogationForm(BaseUsageConditionForm):
     def save(self, **kwargs):
         self.instance.license = self.license
 
+        if self.cleaned_data["linking_choice"] == self.USAGE_LINKING:
+            self.instance.linking = self.usage.linking
+
         return super().save(**kwargs)
 
     class Meta:
