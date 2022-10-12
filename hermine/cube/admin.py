@@ -67,6 +67,7 @@ class LicenseAdmin(admin.ModelAdmin):
                     "long_name",
                     "url",
                     "verbatim",
+                    "copyleft",
                     "osi_approved",
                     "fsf_approved",
                     "law_choice",
@@ -88,7 +89,7 @@ class LicenseAdmin(admin.ModelAdmin):
             },
         ),
         (
-            "Evaluation",
+            "Policy",
             {
                 "fields": (
                     "status",
