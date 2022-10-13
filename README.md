@@ -29,3 +29,6 @@ The source data are stored in [TOML](https://toml.io/en/) format. This was agree
 
 The RPM package contains the data in JSON format. If you need the data in a different format, you can send a merge request that converts the TOML data to a different format. We can have multiple output formats, but the source format has to be preserved.
 
+## Artifact
+
+There is available an artifact [fedora-licenses.json](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/fedora-licenses.json?job=json') which is updated after every push to `main` branch.
