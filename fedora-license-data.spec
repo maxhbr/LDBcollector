@@ -1,7 +1,7 @@
 %global forgeurl https://gitlab.com/fedora/legal/fedora-license-data
 
 Name:           fedora-license-data
-Version:        1.5
+Version:        1.6
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -83,6 +83,17 @@ cp LICENSES/* ./
 
 
 %changelog
+* Thu Oct 13 2022 Miroslav Suchý <msuchy@redhat.com> 1.6-1
+- Add MS-LPL as not-allowed
+- Add ISO-8879 to not-allowed with big usage exception
+- Delete redundant license info from README.md
+- Add LicenseRef-Glyphicons as not-allowed
+- Add Spencer-99
+- Add LicenseRef-UPX as not-allowed
+- Add LicenseRef-STREAM as not-allowed
+- Simplify overcomplicated condition to evaluate if a license is approved
+- Handle licenses with only SPDX identifier in mkjson.py
+
 * Mon Oct 03 2022 msuchy <msuchy@redhat.com> - 1.5-1
 - 1.5 release
 
