@@ -13,10 +13,6 @@ toml-validate:
     stage: test
     rules:
         - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    artifacts:
-        paths:
-            - data/*.toml
-            - tools/*.py
     script:
         - make toml-validate
 
@@ -24,10 +20,6 @@ spec-validate:
     stage: test
     rules:
         - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    artifacts:
-        paths:
-            - data/*.toml
-            - tools/*.py
     script:
         - make spec-validate
 
@@ -35,10 +27,6 @@ rpmlint:
     stage: test
     rules:
         - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    artifacts:
-        paths:
-            - fedora-*-licenses.toml
-            - tools/mkrpmlint.py
     script:
         - make rpmlint
 
