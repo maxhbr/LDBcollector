@@ -34,10 +34,12 @@ class License(models.Model):
     ALLOWED_ALWAYS = "always"
     ALLOWED_NEVER = "never"
     ALLOWED_CONTEXT = "context"
+    ALLOWED_NOTFOSS = "notfoss"
     ALLOWED_CHOICES = [
         (ALLOWED_ALWAYS, "Always allowed"),
         (ALLOWED_NEVER, "Never allowed"),
         (ALLOWED_CONTEXT, "Allowed depending on context"),
+        (ALLOWED_NOTFOSS, "Out of FOSS Policy"),
         ("", "Not reviewed yet"),
     ]
     FOSS_YES = "Yes"
@@ -101,7 +103,6 @@ class License(models.Model):
     patent_grant = models.BooleanField(null=True)
     ethical_clause = models.BooleanField(null=True)
     non_commercial = models.BooleanField("Only non-commercial use", null=True)
-    legal_uncertainty = models.BooleanField(null=True)
     non_tivoisation = models.BooleanField(null=True)
     technical_nature_constraint = models.BooleanField(null=True)
     law_choice = models.CharField(max_length=200, blank=True)
