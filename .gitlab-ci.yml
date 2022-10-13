@@ -9,12 +9,10 @@ stages:
     - test
     - deploy
     
-workflow:
-    rules:
-        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-
 toml-validate:
     stage: test
+    rules:
+        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
     artifacts:
         paths:
             - data/*.toml
@@ -24,6 +22,8 @@ toml-validate:
 
 spec-validate:
     stage: test
+    rules:
+        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
     artifacts:
         paths:
             - data/*.toml
@@ -33,6 +33,8 @@ spec-validate:
 
 rpmlint:
     stage: test
+    rules:
+        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
     artifacts:
         paths:
             - fedora-*-licenses.toml
@@ -42,6 +44,8 @@ rpmlint:
 
 json:
     stage: deploy
+    rules:
+        - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_REF_NAME == "main"'
     artifacts:
         paths:
             - fedora-licenses.json
