@@ -88,7 +88,11 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for usage in invalid_expressions %}
             <tr>
-              <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a></td>
+              <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a>
+                  (<a href="{{usage.version.component.homepage_url}}" target="_blank">webiste <span class="icon is-small">
+                <i class="fas fa-link"></i>
+              </span></a>)
+              </td>
               <td>{{ usage.version.declared_license_expr }}</td>
               <td>
                 <a href="{% url 'cube:licensecuration_create' usage.id %}">Add curation rule</a>
@@ -211,6 +215,16 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   <h4 class="title is-4">Step 3 - Confirm ANDs</h4>
 {% if to_confirm %}
+    <article class="message is-warning">
+      <div class="message-header">
+        <p>Some ANDs in licence expressions need to be confirmed</p>
+      </div>
+      <div class="message-body">
+         Certain ANDs in licence expression are actually ORs, triggering unnecessary constraints.
+         Please check and confirm/correct them.
+      </div>
+    </article>
+
   <h5 class="title is-5">ANDs to confirm</h5>
 
     <table class="table">
@@ -218,19 +232,25 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tr>
           <th>Component</th>
           <th>Version</th>
+          <th>Used in </th>
           <th>License expression</th>
-          <th>License corrected</th>
-          <th>Edit</th>
+          <th>Confirm or correct</th>
+          <th>Edit version</th>
         </tr>
       </thead>
       <tbody>
-        {% for version in to_confirm %}
+        {% for usage in to_confirm %}
           <tr>
-            <td><a href="/component/{{version.component.id}}" target="_blank">{{version.component.name }}</a> </td>
-            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank">{{version.version_number }}</a></td>
-            <td>{{version.spdx_valid_license_expr }} </td>
-            <td>{{version.corrected_license}}</td>
-            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td><a href="/component/{{usage.version.component.id}}" target="_blank">{{usage.version.component.name }}</a>
+                (<a href="{{usage.version.component.homepage_url}}" target="_blank">webiste <span class="icon is-small">
+                <i class="fas fa-link"></i></span></a>)
+            </td>
+            <td><a href="/admin/cube/version/{{usage.version.id}}/change/" target="_blank">{{usage.version.version_number }}</a></td>
+            <td>{{usage.scope}}</td>
+            <td>{{usage.version.spdx_valid_license_expr }} </td>
+            <td><a href="{% url 'cube:licensecuration_create' usage.id %}">Confirm </a> /
+                <a href="{% url 'cube:licensecuration_create' usage.id %}">Correct</a></td>
+            <td><a href="/admin/cube/version/{{usage.version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -252,9 +272,8 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tr>
           <th>Component</th>
           <th>Version</th>
-          <th>License expression</th>
-          <th>License corrected</th>
-          <th>Edit</th>
+          <th>Confirmed license expression</th>
+          <th>Edit version</th>
         </tr>
       </thead>
       <tbody>
@@ -262,7 +281,6 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td><a href="/component/{{version.component.id}}" target="_blank">{{version.component.name }}</a> </td>
             <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank">{{version.version_number }}</a></td>
-            <td>{{version.spdx_valid_license_expr }} </td>
             <td>{{version.corrected_license}}</td>
             <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
@@ -279,7 +297,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>Version</th>
           <th>License expression</th>
           <th>License corrected</th>
-          <th>Edit</th>
+          <th>Edit version</th>
         </tr>
       </thead>
       <tbody>
@@ -409,7 +427,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <thead>
         <tr>
           <th>Component</th>
-          <th>Corrected expression</th>
+          <th>Applicable expression</th>
           <th>Applicable Licenses</th>
           <th>Scope</th>
         </tr>
@@ -418,7 +436,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% for usage in usages_lic_never_allowed %}
           <tr>
             <td>{{ usage.version }} </td>
-            <td>{{ usage.version.corrected_license }}</td>
+            <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr  }}</td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
@@ -443,7 +461,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Some components use context conditioned licenses</p>
       </div>
       <div class="message-body">
-        The following <strong>{{usages_lic_context_allowed|length}}</strong> are under a license, the validity of which depends on the context: please check them
+        The following <strong>{{usages_lic_context_allowed|length}}</strong> components are under a license, the validity of which depends on the context: please check them
       </div>
     </article>
 
@@ -451,7 +469,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <thead>
         <tr>
           <th>Component</th>
-          <th>Corrected expression</th>
+          <th>Applicable expression</th>
           <th>Applicable Licenses</th>
           <th>Scope</th>
         </tr>
@@ -460,7 +478,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% for usage in usages_lic_context_allowed %}
           <tr>
             <td>{{ usage.version }} </td>
-            <td>{{ usage.version.corrected_license }} </td>
+            <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr  }}</td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
@@ -535,3 +553,4 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 
 {% endblock %}
+

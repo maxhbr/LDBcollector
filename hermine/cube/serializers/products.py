@@ -117,7 +117,7 @@ class Validation2Serializer(serializers.Serializer):
 
 class Validation3Serializer(serializers.Serializer):
     valid = serializers.BooleanField(label="Step is valid", read_only=True)
-    to_confirm = VersionSerializer(read_only=True, many=True)
+    to_confirm = UsageSerializer(read_only=True, many=True)
     details = serializers.URLField(read_only=True)
 
 

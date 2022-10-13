@@ -102,7 +102,7 @@ def validate_step_3(release: Release):
             continue
 
     context["to_confirm"] = [
-        u.version for u in ambigious_spdx if not u.version.corrected_license
+        u for u in ambigious_spdx if not u.version.corrected_license
     ]
     context["confirmed"] = [
         u.version
