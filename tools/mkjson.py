@@ -109,11 +109,7 @@ if __name__ == "__main__":
         if isinstance(status, str):
             status = [status]
 
-        for s in status:
-            if s in allowed_values:
-                approved = "yes"
-            elif s == "not-allowed":
-                approved = "no"
+        approved = "yes" if status and all(s in allowed_values for s in status) else "no"
 
         # field: 'spdx_abbrev'
         spdx_abbrev = data["license"]["expression"]
@@ -155,6 +151,13 @@ if __name__ == "__main__":
                 i = add_license_data(
                     i, licensedata, approved, fedora_names, a, spdx_abbrev
                 )
+        else:
+            # Handle licenses with only an SPDX abbreviation, not a Fedora abbreviation
+            licensedata[i] = {
+                "approved": approved,
+                "spdx_abbrev": spdx_abbrev,
+            }
+            i += 1
 
     # write out the license data
     rawdata = json.JSONEncoder().encode(licensedata)
