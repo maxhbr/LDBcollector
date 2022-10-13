@@ -7,6 +7,7 @@ default:
 
 stages:
     - test
+    - deploy
     
 workflow:
     rules:
@@ -38,3 +39,11 @@ rpmlint:
             - tools/mkrpmlint.py
     script:
         - make rpmlint
+
+json:
+    stage: deploy
+    artifacts:
+        paths:
+            - fedora-licenses.json
+    script:
+        - make json
