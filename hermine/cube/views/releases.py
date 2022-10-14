@@ -227,24 +227,30 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
         writer = csv.writer(response)
         writer.writerow(
             [
+                "sub project",
+                "scope",
                 "name",
                 "version",
                 "purl",
                 "declared_license_expr",
-                "spdx_valid_license_expr",
+                "normalized license",
                 "corrected_license",
+                "applicable license",
             ]
         )
 
         for usage in self.object.usage_set.all():
             writer.writerow(
                 [
+                    usage.project,
+                    usage.scope,
                     usage.version.component.name,
                     usage.version.version_number,
                     usage.version.purl,
                     usage.version.declared_license_expr,
                     usage.version.spdx_valid_license_expr,
                     usage.version.corrected_license,
+                    usage.license_expression,
                 ]
             )
         return response
