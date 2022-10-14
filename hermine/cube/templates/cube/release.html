@@ -430,13 +430,14 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>Applicable expression</th>
           <th>Applicable Licenses</th>
           <th>Scope</th>
+          <th>Edit usage</th>
         </tr>
       </thead>
       <tbody>
         {% for usage in usages_lic_never_allowed %}
           <tr>
             <td>{{ usage.version }} </td>
-            <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr  }}</td>
+            <td>{{ usage.license_expression }}</td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
@@ -448,6 +449,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               {% endfor %}
             </td>
             <td>{{ usage.scope }}</td>
+            <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -472,13 +474,14 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>Applicable expression</th>
           <th>Applicable Licenses</th>
           <th>Scope</th>
+          <th>Edit usage</th>
         </tr>
       </thead>
       <tbody>
         {% for usage in usages_lic_context_allowed %}
           <tr>
             <td>{{ usage.version }} </td>
-            <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr  }}</td>
+            <td>{{ usage.license_expression }}</td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
@@ -490,6 +493,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               {% endfor %}
             </td>
             <td>{{ usage.scope }}</td>
+            <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -553,4 +557,5 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 
 {% endblock %}
+
 

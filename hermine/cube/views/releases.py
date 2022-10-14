@@ -264,7 +264,7 @@ class UpdateLicenseChoiceView(UpdateView):
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        return reverse("cube:release_summary", kwargs={"pk": self.object.release.pk})
+        return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
 
 
 class ReleaseFixedLicensesList(ListView):
