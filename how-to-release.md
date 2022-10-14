@@ -12,3 +12,13 @@
  * fkinit
  * tito release all
  * do not forget to submit bodhi update
+
+== Update legal docs
+
+ * cd tools
+ * ./create-docs.py ../data
+ * cp not-allowed-licenses.adoc allowed-licenses.adoc ~/projects/fedora-legal-docs/modules/ROOT/pages/
+   alter the path to your fedora-legal-docs checkout
+ * cd ~/projects/fedora-legal-docs/
+ * git commit -a -m 'update licenses using fedora-license-data'
+ * review and create MR
