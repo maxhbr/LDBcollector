@@ -11,7 +11,7 @@ import jinja2
 import json
 import os
 import sys
-import toml
+import tomllib
 
 parser = argparse.ArgumentParser(description='Converts license data file to AsciiDoc page with overview of all licenses')
 parser.add_argument('datadir', help='path to directory with TOML files', default="data/")
@@ -61,7 +61,8 @@ for licensefile in os.scandir(opts.datadir):
         continue
 
     # read in the data file
-    data = toml.load(licensefile.path)
+    with open(licensefile.path, 'rb') as f:
+        data = tomllib.load(f)
     # {'license': {'expression': 'OpenSSL', 'status': ['allowed'], 'url': 'http://www.sdisw.com/openssl.htm\n'}, 'fedora': {'name': ['OpenSSL License'], 'abbreviation': ['OpenSSL']}}
 
     if 'allowed' in data["license"]["status"]:
