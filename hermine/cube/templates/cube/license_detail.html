@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block actions %}
-<a class="button" href="{% url "admin:cube_license_change" license.id %}" target="_blank">
+<a class="button" href="{% url "cube:license_edit" license.id %}" target="_blank">
   <span class="icon">
     <i class="fas fa-edit"></i>
   </span>

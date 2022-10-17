@@ -20,6 +20,9 @@ urlpatterns = [
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
     path(
+        "license/<int:pk>/edit/", views.LicenseUpdateView.as_view(), name="license_edit"
+    ),
+    path(
         "license/<int:license_id>/export/",
         views.Export1LicenseView.as_view(),
         name="export_license",
