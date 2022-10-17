@@ -62,6 +62,12 @@ class UsageConditionMixin(models.Model):
                 "Rule can only apply to a component or a specific component version."
             )
 
+        return super().clean()
+
+    def save(self, *args, **kwargs):
+        self.clean()
+        return super().save(*args, **kwargs)
+
     class Meta:
         abstract = True
 
@@ -140,7 +146,40 @@ class LicenseChoice(UsageDecision):
         verbose_name_plural = "License choice rules"
 
 
-class ExpressionValidationManager(UsageConditionManager):
+class ComponentDecisionManager(UsageConditionManager):
+    def create(
+        self,
+        release=None,
+        release_id=None,
+        product=None,
+        product_id=None,
+        scope=None,
+        **kwargs,
+    ):
+        if release is not None or release_id is not None:
+            raise ValidationError("Release field must be empty.")
+        if product is not None or product_id is not None:
+            raise ValidationError("Product field must be empty.")
+        if scope is not None:
+            raise ValidationError("Scope field must be empty.")
+        return super().create(**kwargs)
+
+
+class ComponentDecisionMixin(models.Model):
+    def clean(self):
+        if self.release:
+            raise ValidationError("Release field must be empty.")
+        if self.product:
+            raise ValidationError("Product field must be empty.")
+        if self.scope:
+            raise ValidationError("Scope field must be empty.")
+        return super().clean()
+
+    class Meta:
+        abstract = True
+
+
+class ExpressionValidationManager(ComponentDecisionManager):
     def get_queryset(self):
         return (
             super()
@@ -149,7 +188,7 @@ class ExpressionValidationManager(UsageConditionManager):
         )
 
 
-class ExpressionValidation(UsageDecision):
+class ExpressionValidation(ComponentDecisionMixin, UsageDecision):
     """
     A human decision about an ambiguous SPDX expression
     (typically contains only ANDs which could be badly registered ORs)
@@ -167,14 +206,14 @@ class ExpressionValidation(UsageDecision):
         proxy = True
 
 
-class LicenseCurationManager(UsageConditionManager):
+class LicenseCurationManager(ComponentDecisionManager):
     def get_queryset(self):
         return (
             super().get_queryset().filter(decision_type=UsageDecision.LICENSE_CURATION)
         )
 
 
-class LicenseCuration(UsageDecision):
+class LicenseCuration(ComponentDecisionMixin, UsageDecision):
     """
     A human decision to replace an imported license string with the correct SPDX valid expression
     """

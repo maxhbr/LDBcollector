@@ -100,9 +100,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
             url,
             {
                 "expression_out": "MIT",
-                "product_release": CreateLicenseCurationForm.PRODUCT,
-                "component_version": CreateLicenseCurationForm.COMPONENT,
-                "scope_choice": CreateLicenseCurationForm.ANY,
+                "component_version": CreateLicenseCurationForm.ANY,
             },
         )
         self.assertRedirects(res, reverse("cube:release_validation", args=[1]))
