@@ -87,7 +87,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <p>
         {% for obligation in generic.obligation_set.all %}
           <a href="#{{ obligation.license.spdx_id }}">
-          <span class="tag {{ obligation.license|licenseCSS }}">
+          <span class="tag {{ obligation.license|licenseAllowedCSS }}">
             {{ obligation.license.spdx_id }}
           </span>
         </a>
@@ -110,7 +110,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               <div class="level-item">
                 <p>
                   <a href="/license/{{obligation.license.id}}">
-                    <span class="tag {{ obligation.license|licenseCSS }}">
+                    <span class="tag {{ obligation.license|licenseAllowedCSS }}">
                       <i class="fas fa-balance-scale"> </i> . {{ obligation.license.spdx_id }}
                     </span>
                   </a>

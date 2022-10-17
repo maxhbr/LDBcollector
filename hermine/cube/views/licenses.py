@@ -6,10 +6,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ValidationError
+from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, FormView
+from django.views.generic import ListView, DetailView, FormView, UpdateView
 from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
@@ -53,43 +54,11 @@ class LicensesListView(
 
 class LicenseDetailView(LoginRequiredMixin, DetailView):
     model = License
-    context_object_name = "license"
-    template_name = "cube/license.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        orphan_obligations = self.object.obligation_set.filter(generic__isnull=True)
-        generic_obligations = self.object.obligation_set.filter(
-            generic__in_core=False
-        ).order_by("generic__id")
-        core_obligations = self.object.obligation_set.filter(
-            generic__in_core=True
-        ).order_by("generic__id")
-
-        context.update(
-            {
-                "orphan_obligations": orphan_obligations,
-                "obligations_in_generic": generic_obligations,
-                "obligations_in_core": core_obligations,
-            }
-        )
-        return context
 
 
-# def export_licenses(request):
-#     """An export function that uses the License Serializer on all the licenses.
-#     Effective, but using the the other one which calls the API might allow to handle
-#     specific cases such as access restrictions
-#     """
-#     filename = "licenses.json"
-#     serializer = LicenseSerializer
-#     data = serializer(License.objects.all(), many=True).data
-#     with open(filename, "w+"):
-#         response = HttpResponse(
-#             json.dumps(data, indent=4), content_type="application/json"
-#         )
-#         response["Content-Disposition"] = "attachment; filename=%s" % filename
-#         return response
+class LicenseUpdateView(LoginRequiredMixin, UpdateView):
+    model = License
+    fields = "__all__"
 
 
 def print_license(request, license_id):

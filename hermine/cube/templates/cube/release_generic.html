@@ -44,7 +44,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <td>{{ usage.version.spdx_valid_license_expr}}</td>
       <td>{{ usage.license_expression }}</td>
       <td>{% for license_chosen in usage.licenses_chosen.all %}
-        <span class="tag {{ license_chosen|licenseCSS }}">
+        <span class="tag {{ license_chosen|licenseAllowedCSS }}">
     {{ license_chosen.spdx_id }}
   </span>
       {% endfor %}

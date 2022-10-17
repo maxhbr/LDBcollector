@@ -3,6 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 
 from django.db import models
+from django.db.models import Q
 
 from cube.models import Usage
 
@@ -112,7 +113,20 @@ class License(models.Model):
     objects = LicenseManager()
 
     def natural_key(self):
-        return self.spdx_id
+        return (self.spdx_id,)
+
+    @property
+    def is_core_covered(self):
+        return not self.obligation_set.filter(
+            Q(generic__isnull=True) | Q(generic__in_core=False)
+        ).exists()
+
+    def context_derogations(self):
+        from cube.models import Derogation
+
+        return Derogation.objects.filter(license=self).filter(
+            version=None, component=None, release=None, product=None
+        )
 
     def __str__(self):
         return self.spdx_id
