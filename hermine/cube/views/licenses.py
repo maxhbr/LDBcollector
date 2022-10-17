@@ -6,6 +6,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ValidationError
+from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
@@ -53,25 +54,6 @@ class LicensesListView(
 
 class LicenseDetailView(LoginRequiredMixin, DetailView):
     model = License
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        orphan_obligations = self.object.obligation_set.filter(generic__isnull=True)
-        generic_obligations = self.object.obligation_set.filter(
-            generic__in_core=False
-        ).order_by("generic__id")
-        core_obligations = self.object.obligation_set.filter(
-            generic__in_core=True
-        ).order_by("generic__id")
-
-        context.update(
-            {
-                "orphan_obligations": orphan_obligations,
-                "obligations_in_generic": generic_obligations,
-                "obligations_in_core": core_obligations,
-            }
-        )
-        return context
 
 
 class LicenseUpdateView(LoginRequiredMixin, UpdateView):

@@ -141,19 +141,19 @@ SPDX-License-Identifier: AGPL-3.0-only
             <p>Comment: <i>no comment</i></p>
           {% endif %}
 
-          {% if orphan_obligations|length == 0 and obligations_in_generic|length == 0 %}
-          <p>
+          {% if license.is_core_covered %}
+            <p>
               <span class="icon">
                 <i class="fas fa-check has-text-success"></i>
               </span>
               <span>This license is covered by the obligations in the core</span>
-          </p>
-        {% else %}
-          <p>
-            <span class="icon has-text-grey"><i class="fas fa-times"></i></span>
-            This license is NOT covered by the obligations in the core
-          </p>
-        {% endif %}
+            </p>
+          {% else %}
+            <p>
+              <span class="icon has-text-grey"><i class="fas fa-times"></i></span>
+              This license is NOT covered by the obligations in the core
+            </p>
+          {% endif %}
         </div>
       </div>
     </div>
