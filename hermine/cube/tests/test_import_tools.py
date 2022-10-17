@@ -6,7 +6,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from cube.importers import import_spdx_file
-from cube.models import Generic, Usage, License
+from cube.models import Generic, Usage, License, Team
 from cube.utils.generics import export_generics, handle_generics_json
 from cube.utils.licenses import (
     create_or_update_license,
@@ -105,10 +105,13 @@ class ImportGenericTestCase(ForceLoginMixin, TestCase):
 
     def test_export_import(self):
         count = Generic.objects.all().count()
+        team_count = Team.objects.all().count()
         export = export_generics(indent=True)
         Generic.objects.all().delete()
+        Team.objects.all().delete()
         handle_generics_json(export)
         self.assertEqual(Generic.objects.all().count(), count)
+        self.assertEqual(Team.objects.all().count(), team_count)
         # test importing twice is idempotent
         handle_generics_json(export)
         self.assertEqual(Generic.objects.all().count(), count)
