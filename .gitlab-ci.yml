@@ -51,5 +51,3 @@ pages:
     - public
 variables:
   DOCKER_DRIVER: overlay2
-include:
-- template: Security/Dependency-Scanning.gitlab-ci.yml
