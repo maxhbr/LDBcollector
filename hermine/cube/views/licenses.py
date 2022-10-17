@@ -15,7 +15,7 @@ from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
 from cube.forms import ImportLicensesForm, ImportGenericsForm
-from cube.models import License, Generic
+from cube.models import License, Generic, Derogation
 from cube.views.mixins import SearchMixin
 
 
@@ -254,3 +254,15 @@ class GenericDetailView(LoginRequiredMixin, DetailView):
     model = Generic
     context_object_name = "generic"
     template_name = "cube/generic.html"
+
+
+class DerogationListView(LoginRequiredMixin, ListView):
+    model = Derogation
+    context_object_name = "derogations"
+    template_name = "cube/derogation_list.html"
+    queryset = Derogation.objects.exclude(
+        component__isnull=True,
+        version__isnull=True,
+        product__isnull=True,
+        release__isnull=True,
+    )

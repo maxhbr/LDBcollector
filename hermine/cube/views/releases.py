@@ -227,24 +227,30 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
         writer = csv.writer(response)
         writer.writerow(
             [
+                "sub project",
+                "scope",
                 "name",
                 "version",
                 "purl",
                 "declared_license_expr",
-                "spdx_valid_license_expr",
+                "normalized license",
                 "corrected_license",
+                "applicable license",
             ]
         )
 
         for usage in self.object.usage_set.all():
             writer.writerow(
                 [
+                    usage.project,
+                    usage.scope,
                     usage.version.component.name,
                     usage.version.version_number,
                     usage.version.purl,
                     usage.version.declared_license_expr,
                     usage.version.spdx_valid_license_expr,
                     usage.version.corrected_license,
+                    usage.license_expression,
                 ]
             )
         return response
@@ -264,7 +270,7 @@ class UpdateLicenseChoiceView(UpdateView):
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        return reverse("cube:release_summary", kwargs={"pk": self.object.release.pk})
+        return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
 
 
 class ReleaseFixedLicensesList(ListView):

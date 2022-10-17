@@ -27,6 +27,7 @@ from .utils.licenses import is_ambiguous
 class ObligationInline(admin.StackedInline):
     model = Obligation
     extra = 1
+    ordering = ["generic"]
 
 
 class ObligationInlineTab(admin.TabularInline):
@@ -67,8 +68,7 @@ class LicenseAdmin(admin.ModelAdmin):
                     "long_name",
                     "url",
                     "verbatim",
-                    "osi_approved",
-                    "fsf_approved",
+                    "copyleft",
                     "law_choice",
                     "venue_choice",
                 )
@@ -84,24 +84,25 @@ class LicenseAdmin(admin.ModelAdmin):
                     "autoupgrade",
                     "inspiration_spdx",
                     "inspiration",
+                    "osi_approved",
+                    "fsf_approved",
+                    "foss",
                 ),
             },
         ),
         (
-            "Evaluation",
+            "Policy",
             {
                 "fields": (
                     "status",
                     "allowed",
                     "allowed_explanation",
-                    "foss",
-                    "legal_uncertainty",
                     "comment",
                 )
             },
         ),
         (
-            "Grants of rights",
+            "Conditions of use",
             {"fields": ("patent_grant", "non_commercial", "ethical_clause")},
         ),
     )
