@@ -8,7 +8,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from cube.forms import CreateLicenseCurationForm
-from cube.models import LicenseCuration, LicenseChoice
+from cube.models import LicenseCuration, LicenseChoice, Exploitation
 from .mixins import ForceLoginMixin
 
 
@@ -79,6 +79,14 @@ class ComponentViewsTestCase(ForceLoginMixin, TestCase):
 
 class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
+
+    def test_release_summary_with_multiple_exploitation_choice(self):
+        url = reverse("cube:release_summary", kwargs={"pk": 1})
+        Exploitation.objects.create(release_id=1, scope="back")
+        Exploitation.objects.create(release_id=1, scope="front")
+        res = self.client.get(url)
+        self.assertEqual(res.status_code, 200)
+        self.assertContains(res, "Exploitation decisions")
 
     def test_release_validation_view(self):
         url = reverse("cube:release_validation", kwargs={"pk": 1})
