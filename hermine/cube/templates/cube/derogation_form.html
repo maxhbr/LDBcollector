@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 {% extends "cube/cube.html" %}
-{% block title %}{{ form.usage.version }} - Add derogation{% endblock %}
+{% block title %}{{ form.license }} - Add derogation{% endblock %}
 
 {% block breadcrumbs %}
 <ul>
@@ -16,12 +16,17 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>Add derogation</li>
 </ul>
 {% endblock %}
+{% block herozone %}
+<h1 class="title">Adding a derogation for {{ form.license }}</h1>
+{% endblock %}
 
 {% block content %}
-    <h1 class="title is-1">{{ form.usage.version }}</h1>
-    <h3  class="title is-3">Add a derogation for "{{ form.license }}" license
-    </h3>
-    
+<p>The license <b>{{ form.license }}</b> is only authorized in the following contexts: </p>
+<div class=ontent">
+  <blockquote>{{ form.license.allowed_explanation }}</blockquote>
+</div>
+
+<p>You can add a derogation allowing it's use in the context of {{ form.usage.release }} by providing a valid justification.</p>
 
     <form action="{% url "cube:add_derogation" form.usage.id form.license.id %}" method="post">
         {% csrf_token %}
@@ -33,6 +38,3 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 
 {% endblock %}
-
-
-

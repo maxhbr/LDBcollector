@@ -109,7 +109,9 @@ class License(models.Model):
     law_choice = models.CharField(max_length=200, blank=True)
     venue_choice = models.CharField(max_length=200, blank=True)
     comment = models.TextField(max_length=1500, blank=True)
-    verbatim = models.TextField(blank=True)
+    verbatim = models.TextField(
+        blank=True, help_text="Only necessary if the license has no official SPDX ID"
+    )
     objects = LicenseManager()
 
     def natural_key(self):

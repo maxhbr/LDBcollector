@@ -152,7 +152,7 @@ def release_generic(request, release_id, generic_id):
 
 
 class ReleaseExploitationForm(Form):
-    def __init__(self, instance, *args, **kwargs):
+    def __init__(self, instance: Release, *args, **kwargs):
         self.release = instance
         self.scopes = self.release.usage_set.values_list("project", "scope").annotate(
             count=Count("*")
@@ -167,9 +167,9 @@ class ReleaseExploitationForm(Form):
             )
 
             try:
-                self.initial[
-                    project + scope
-                ] = self.release.exploitations.get().exploitation
+                self.initial[project + scope] = self.release.exploitations.get(
+                    project=project, scope=scope
+                ).exploitation
             except Exploitation.DoesNotExist:
                 pass
 
