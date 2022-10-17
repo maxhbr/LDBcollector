@@ -180,7 +180,13 @@ class Migration(migrations.Migration):
                 ("law_choice", models.CharField(blank=True, max_length=200)),
                 ("venue_choice", models.CharField(blank=True, max_length=200)),
                 ("comment", models.TextField(blank=True, max_length=1500)),
-                ("verbatim", models.TextField(blank=True)),
+                (
+                    "verbatim",
+                    models.TextField(
+                        blank=True,
+                        help_text="Only necessary if the license has no official SPDX ID",
+                    ),
+                ),
                 (
                     "inspiration",
                     models.ForeignKey(
