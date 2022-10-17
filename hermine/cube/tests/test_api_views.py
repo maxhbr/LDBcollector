@@ -231,9 +231,7 @@ class APICRUDTests(APITestCase):
         url = "/api/choices/"
         data = {
             "product": 1,
-            "release": 1,
             "component": 1,
-            "version": 1,
             "expression_in": "testlicense1 OR testlicense2",
             "expression_out": "testlicense1",
         }
