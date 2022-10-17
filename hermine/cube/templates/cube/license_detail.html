@@ -207,18 +207,12 @@ SPDX-License-Identifier: AGPL-3.0-only
     </section>
   {% endif %}
 
-
   <h2 class="title is-2">Obligations</h2>
 
-  {% if orphan_obligations %}
-    <h3>Specific obligations</h3>
-    <article class="message is-info">
-      <div class="message-body">
-        Obligations that are specific to this license and not linked to generic obligations
-      </div>
-    </article>
-
-    {% for obligation in orphan_obligations %}
+  {% regroup license.obligation_set.all|dictsortreversed:"generic.metacategory" by generic.get_metacategory_display as metacategory_list %}
+  {% for metacategory in metacategory_list %}
+    <h3>{{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
+    {% for obligation in metacategory.list %}
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
@@ -231,74 +225,14 @@ SPDX-License-Identifier: AGPL-3.0-only
               <li>{{ obligation.get_trigger_expl_display }}</li></ul>
             {% endif %}
             <br>
-            <blockquote>{{ obligation.verbatim}}</blockquote>
-          </div>
-        </div>
-
-      </div>
-    {% endfor %}
-  {% endif %}
-
-  {% if obligations_in_generic %}
-    <h3>Not in core obligations</h3>
-    <article class="message is-info">
-      <div class="message-body">
-        Obligations that are related to a generic obligation that is <b>not</b> part of the core
-      </div>
-    </article>
-
-    {% for obligation in obligations_in_generic %}
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
-        </header>
-        <div class="card-content">
-          <div class="content">
-
-            {% if obligation.passivity == "Active" %}
-              <p>Applies:</p>
-              <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
-              <li> {{ obligation.get_trigger_expl_display }}</li></ul>
-            {% endif %}
-            <br>
             <blockquote>{{ obligation.verbatim }}</blockquote>
+          {% if obligation.generic %}
             <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
+          {% endif %}
           </div>
         </div>
       </div>
     {% endfor %}
-  {% endif %}
-
-  {% if obligations_in_core %}
-    <h3>Core obligations</h3>
-    <article class="message is-info">
-      <div class="message-body">
-        Obligations that are related to a generic obligation that is part of the core
-      </div>
-    </article>
-
-
-    {% for obligation in obligations_in_core %}
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          {% if obligation.passivity == "Active" %}
-            <p>Applies:</p>
-            <ul>
-              <li>{{ obligation.get_trigger_mdf_display }}</li>
-              <li> {{ obligation.get_trigger_expl_display }}</li>
-            </ul>
-          {% endif %}
-          <blockquote>{{ obligation.verbatim}}</blockquote>
-          <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
-        </div>
-      </div>
-    </div>
-
-    {% endfor %}
-  {% endif %}
+  {% endfor %}
 
 {% endblock %}
