@@ -441,6 +441,15 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Classpath-exception-2.0.html
+  - id: "GPL-2.0-or-later WITH Classpath-exception-2.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/GPL-2.0-only.html
   # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "GPL-2.0 WITH Classpath-exception-2.0"
@@ -688,10 +697,22 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/IJG.html
+  - id: "IJG"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/MIT-0.html
   - id: "MIT-0"
     categories:
       - "permissive"
+
+  # https://spdx.org/licenses/MIT-open-group.html
+  - id: "MIT-open-group"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
 
   # https://spdx.org/licenses/MIT-feh.html
   - id: "MIT-feh"
@@ -708,6 +729,14 @@ categorizations:
 
   # https://spdx.org/licenses/MPL-1.1.html
   - id: "MPL-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/NPL-1.1.html
+  - id: "NPL-1.1"
     categories:
       - "copyleft-file-level"
       - "property:include-in-notice-file"
@@ -1035,6 +1064,35 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/red-hat-attribution.LICENSE
+  - id: "LicenseRef-scancode-red-hat-attribution"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/ogc.LICENSE
+  - id: "LicenseRef-scancode-ogc"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/mit-no-advert-export-control.LICENSE
+  - id: "LicenseRef-scancode-mit-no-advert-export-control"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/snprintf.LICENSE
+  - id: "LicenseRef-scancode-snprintf"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/philippe-de-muyter.LICENSE
+  - id: "LicenseRef-scancode-philippe-de-muyter"
+    categories:
+      - "permissive"
+
   # https://scancode-licensedb.aboutcode.org/bsd-axis-nomod.html
   - id: "LicenseRef-scancode-bsd-axis-nomod"
     categories:
@@ -1287,7 +1345,6 @@ categorizations:
 
   - id: "LicenseRef-scancode-commercial-license"
     categories:
-      - "property:unchecked"
       - "commercial"
 
   - id: "Classpath-exception-2.0"
