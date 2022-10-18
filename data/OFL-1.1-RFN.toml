@@ -1,0 +1,17 @@
+[license]
+
+expression = "OFL-1.1-RFN"
+status = [ "allowed-fonts" ]
+
+[fedora]
+
+# Fedora's past designation of SIL OFL 1.1 as "good" for fonts was probably
+# understood to encompass OFL 1.1 fonts using the Reserved Font Name feature.
+
+name = [
+    "SIL Open Font License 1.1"
+]
+
+abbreviation = [
+    "OFL"
+]
