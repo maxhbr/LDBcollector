@@ -31,6 +31,9 @@ tests:
   - poetry run python manage.py test
 pages:
   stage: deploy
+  only:
+    changes:
+      - docs/*
   rules:
   - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
   script:
