@@ -20,9 +20,10 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
   <form method="post">
+     {% csrf_token %}
     <table>
       {{ form }}
     </table>
-    <input type="button" value="Save" :>
+    <input type="submit" value="Save"/>
   </form>
 {% endblock %}

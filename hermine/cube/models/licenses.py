@@ -4,6 +4,7 @@
 
 from django.db import models
 from django.db.models import Q
+from django.urls import reverse_lazy
 
 from cube.models import Usage
 
@@ -129,6 +130,9 @@ class License(models.Model):
         return Derogation.objects.filter(license=self).filter(
             version=None, component=None, release=None, product=None
         )
+
+    def get_absolute_url(self):
+        return reverse_lazy("cube:license", args=[self.id])
 
     def __str__(self):
         return self.spdx_id

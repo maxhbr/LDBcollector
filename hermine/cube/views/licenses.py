@@ -58,7 +58,23 @@ class LicenseDetailView(LoginRequiredMixin, DetailView):
 
 class LicenseUpdateView(LoginRequiredMixin, UpdateView):
     model = License
-    fields = "__all__"
+    fields = [
+        "spdx_id",
+        "long_name",
+        "url",
+        "copyleft",
+        "law_choice",
+        "venue_choice",
+        "status",
+        "allowed",
+        "allowed_explanation",
+        "patent_grant",
+        "foss",
+        "non_commercial",
+        "ethical_clause",
+        "comment",
+        "verbatim",
+    ]
 
 
 def print_license(request, license_id):
