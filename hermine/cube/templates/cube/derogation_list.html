@@ -36,7 +36,7 @@ Derogations
     <tbody>
   {% for derogation in derogations %}
       <tr>
-        <td> <a href="{% url 'cube:license' derogation.license.id %}"><span class="tag {{ derogation.license|licenseCSS }}">
+        <td> <a href="{% url 'cube:license' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
                   {{ derogation.license.spdx_id }}
                 </span></a></td>
         <td> {{ derogation.product|default:"" }} {{ derogation.release|default:"" }} </td>
