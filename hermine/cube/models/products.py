@@ -4,6 +4,7 @@
 
 from django.contrib.auth.models import User
 from django.db import models
+from django.urls import reverse_lazy
 
 
 class Product(models.Model):
@@ -17,6 +18,9 @@ class Product(models.Model):
     categories = models.ManyToManyField(
         "Category", db_table="cube_category_products", blank=True
     )
+
+    def get_absolute_url(self):
+        return reverse_lazy("cube:product_detail", args=[self.id])
 
     def __str__(self):
         return self.name

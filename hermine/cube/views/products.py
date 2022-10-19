@@ -5,7 +5,7 @@
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic
-
+from django.urls import reverse_lazy
 from cube.models import Product, Release
 
 
@@ -24,6 +24,12 @@ class ProductListView(LoginRequiredMixin, generic.ListView):
 class ProductDetailView(LoginRequiredMixin, generic.DetailView):
     model = Product
     template_name = "cube/product_detail.html"
+
+
+class ProductAddView(LoginRequiredMixin, generic.CreateView):
+    fields = "__all__"
+    model = Product
+    # success_url = reverse_lazy("cube:products")
 
 
 class ProductListView(LoginRequiredMixin, generic.ListView):

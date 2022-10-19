@@ -13,7 +13,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 </ul>
 {% endblock %}
 {% block actions %}
-<a class="button is-info is-inverted" href="/admin/cube/product/add/" target="_blank">
+<a class="button is-info is-inverted" href="{% url 'cube:product_add'%}">
             <span class="icon">
               <i class="fas fa-plus"></i>
             </span>
