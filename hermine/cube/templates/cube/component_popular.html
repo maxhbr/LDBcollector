@@ -10,7 +10,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
-  <li>Components</li>
+  <li><a href="{% url "cube:components" %}">Components</a></li>
+  <li>Most used components</li>
 </ul>
 {% endblock %}
 {% block herozone %}
@@ -18,33 +19,30 @@ SPDX-License-Identifier: AGPL-3.0-only
   <span class="icon is-medium">
   <i class="fas fa-puzzle-piece"></i>
   </span>
-3rd Party Components
+Top 10 Most used components
 </h1>
 {% endblock %}
 
 {% block content %}
-
-{% include "cube/includes/list_nav.html" %}
-
 <table class="table is-striped ">
   <thead>
     <tr>
+      <th>Type</th>
       <th>Name</th>
-      <th>Versions</th>
+      <th>Number of usages</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
-{% for component in object_list %}
+{% for popular in populars %}
     <tr>
-      <td><a href="{% url "cube:component_detail" component.id %}">{{component.name}}</a></td>
+      <td>{{popular.package_repo}}</td>
+      <td><a href="{% url "cube:component_detail" popular.id %}">{{popular.name}}</a></td>
       <td>
-        {% for version in component.versions.all %}
-          {{ version.version_number}}
-        {% endfor %}
+        {{popular.popularity}}
       </td>
       <td>
-        {{ component.description|truncatechars:42 }}
+        {{ popular.description|truncatechars:42 }}
       </td>
     </tr>
 
@@ -52,6 +50,6 @@ SPDX-License-Identifier: AGPL-3.0-only
   </tbody>
 </table>
 
-{% include "cube/includes/list_nav.html" %}
+
 
 {% endblock %}
