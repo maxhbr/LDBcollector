@@ -1,0 +1,58 @@
+<!--
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only -->
+
+{% extends "cube/cube.html" %}
+{% block title %}Catgegories{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li>Categories</li>
+</ul>
+{% endblock %}
+{% block actions %}
+<a class="button is-info is-inverted" href="{% url 'admin:cube_category_add' %}">
+            <span class="icon">
+              <i class="fas fa-plus"></i>
+            </span>
+            <span>Create a new category</span>
+          </a>
+{% endblock %}
+{% block herozone %}
+<h1 class="title">
+  <span class="icon is-medium"><i class="fas fa-tags"></i></span>
+  Product categories
+</h1>
+{% endblock %}
+
+{% block content %}
+
+<table class="table is-striped is-hoverable is-fullwidth">
+  <thead>
+    <tr>
+      <th>Categories</th>
+      <th>Description</th>
+      <th>Owner</th>
+      <th># of products</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for category in object_list %}
+    <tr>
+      <td><a href="{% url 'cube:category_detail' category.id %}">{{category.name}}</a></td>
+      <td> {{ category.description|truncatechars:50 }}</td>
+      <td>{{category.owner}}</td>
+      <td>{{category.product_set.all|length}}</td>
+      <td><a href="{% url 'cube:category_detail' category.id %}"><i class="fas fa-info-circle"></i></a> |
+        <a href="/admin/cube/category/{{category.id}}" target="_blank"><i class="far fa-edit"></i></a></td>
+    </tr>
+  </a>
+{% endfor %}
+</tbody>
+</table>
+
+{% endblock %}
+
+
