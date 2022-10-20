@@ -1,0 +1,66 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}Category : {{ category.name }}
+{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:categories'%}">Categories</a></li>
+  <li>{{ category.name }}</li>
+</ul>
+{% endblock %}
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">{{ category.name }}</p>
+  </div>
+{% endblock %}
+{% block infoitem %}
+<p class="subtitle" style="text-transform: uppercase;">
+  <span class="icon is-medium">
+    <i class="fas fa-tags"></i>
+    </span>
+    category
+  </p>
+{% endblock %}
+{% block content %}
+<p>
+  <b>Description:</b> {{ category.description }}  <a href="{% url 'admin:cube_category_change' category.id %} " target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+ </p>
+<p><b>Owner:</b> {{ category.owner }} - {{ category.owner.first_name }} {{ category.owner.last_name }}</p>
+
+  <h2 class="title is-2">Products for this category</h2>
+<table class="table is-striped is-hoverable is-fullwidth">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for product in object.product_set.all %}
+    <tr>
+      <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
+      <td>{{product.description|truncatechars:30}}</td>
+
+      <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a> |
+        <a href="{% url 'admin:cube_product_change' product.id %}" target="_blank"><i class="far fa-edit"></i></a></td>
+
+    </tr>
+  </a>
+{% endfor %}
+</tbody>
+</table>
+
+
+
+
+{% endblock %}
+
+
+
