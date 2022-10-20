@@ -1,0 +1,57 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only -->
+
+{% extends "cube/cube.html" %}
+{% block title %}Curations{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li>Curations</li>
+</ul>
+{% endblock %}
+{% block actions %}
+<a class="button is-info is-inverted" href="{% url 'admin:cube_licensecuration_add'%}">
+            <span class="icon">
+              <i class="fas fa-plus"></i>
+            </span>
+            <span>Create a new curation</span>
+          </a>
+{% endblock %}
+{% block herozone %}
+<h1 class="title">
+  <span class="icon is-medium"><i class="fas fa-band-aid"></i></span>
+  Your Curations
+</h1>
+{% endblock %}
+
+{% block content %}
+                                              {% include "cube/includes/list_nav.html" %}
+<table class="table is-striped is-hoverable is-fullwidth">
+  <thead>
+    <tr>
+      <th>Component/version</th>
+      <th>Stated license</th>
+      <th>Corrected license</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for curation in object_list %}
+    <tr>
+      <td> {% if curation.version %} {{ curation.version }} {% else %}{{ curation.component }}{% endif%}</td>
+      <td> {{ curation.expression_in }}</td>
+      <td> {{ curation.expression_out }}</td>
+      <td> {{ curation.explanation|truncatechars:50 }}</td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% endblock %}
+
+
+
+

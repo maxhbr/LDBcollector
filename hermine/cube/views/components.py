@@ -7,7 +7,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
 from django.views import generic
 
-from cube.models import Component
+from cube.models import Component, LicenseCuration
 from cube.views.mixins import SearchMixin
 
 
@@ -39,3 +39,8 @@ class PopularListView(LoginRequiredMixin, generic.ListView):
 class ComponentView(LoginRequiredMixin, generic.DetailView):
     template_name = "cube/component.html"
     model = Component
+
+
+class LicenseCurationListView(LoginRequiredMixin, generic.ListView):
+    model = LicenseCuration
+    template_name = "cube/licensecuration_list.html"
