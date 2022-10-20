@@ -36,6 +36,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
       <th>Stated license</th>
       <th>Corrected license</th>
       <th>Explanation</th>
+      <th>Edit curation</th>
     </tr>
   </thead>
   <tbody>
@@ -45,6 +46,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
       <td> {{ curation.expression_in }}</td>
       <td> {{ curation.expression_out }}</td>
       <td> {{ curation.explanation|truncatechars:50 }}</td>
+      <td><a href="{%url 'admin:cube_licensecuration_change' curation.id %}" target="_blank"><i class="far fa-edit"></i></a></td>
     </tr>
 {% endfor %}
 </tbody>
