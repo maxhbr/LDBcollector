@@ -30,13 +30,10 @@ class PopularListView(LoginRequiredMixin, generic.ListView):
     model = Component
     template_name = "cube/component_popular.html"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        populars = Component.objects.annotate(
+    def get_queryset(self):
+        return Component.objects.annotate(
             popularity=Count("versions__usage__id")
         ).order_by("-popularity")[:10]
-        context["populars"] = populars
-        return context
 
 
 class ComponentView(LoginRequiredMixin, generic.DetailView):

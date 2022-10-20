@@ -34,12 +34,12 @@ Top 10 Most used components
     </tr>
   </thead>
   <tbody>
-{% for popular in populars %}
+{% for component in component_list %}
     <tr>
-      <td>{{popular.package_repo}}</td>
-      <td><a href="{% url "cube:component_detail" popular.id %}">{{popular.name}}</a></td>
+      <td>{{ component.package_repo }}</td>
+      <td><a href="{% url "cube:component_detail" component.id %}">{{ component.name }}</a></td>
       <td>
-        {{popular.popularity}}
+        {{ component.popularity }}
       </td>
       <td>
         {{ popular.description|truncatechars:42 }}
