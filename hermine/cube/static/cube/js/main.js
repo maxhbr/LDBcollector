@@ -8,10 +8,10 @@
 Array.from(document.getElementsByClassName('menu is-menu-main')).forEach(function (el) {
   Array.from(el.getElementsByClassName('has-dropdown-icon')).forEach(function (elA) {
     elA.addEventListener('click', function (e) {
-      var dropdownIcon = e.currentTarget.getElementsByClassName('dropdown-icon')[0].getElementsByClassName('mdi')[0];
+      var dropdownIcon = e.currentTarget.getElementsByClassName('dropdown-icon')[0].getElementsByClassName('fas')[0];
       e.currentTarget.parentNode.classList.toggle('is-active');
-      dropdownIcon.classList.toggle('mdi-plus');
-      dropdownIcon.classList.toggle('mdi-minus');
+      dropdownIcon.classList.toggle('fa-plus-square');
+      dropdownIcon.classList.toggle('fa-minus-square');
     });
   });
 });
@@ -35,3 +35,4 @@ Array.from(document.getElementsByClassName('jb-navbar-menu-toggle')).forEach(fun
     dropdownIcon.classList.toggle('mdi-close');
   });
 });
+
