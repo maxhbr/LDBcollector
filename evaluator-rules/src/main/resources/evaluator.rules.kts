@@ -17,13 +17,11 @@
  * License-Filename: LICENSE
  */
 
-/*******************************************************
- * Example OSS Review Toolkit (ORT) .rules.kts file    *
- *                                                     *
- * Note this file only contains example how to write   *
- * rules. It's recommended you consult your own legal  *
- * when writing your own rules.                        *
- *******************************************************/
+/******************************************************************************
+ * DISCLAIMER: This file only illustrates how to write evaluator rules, it is *
+ *             no recommendation in any way. It is recommended to consult     *
+ *             your own legal counsel(s) for setting up your evaluator rules. *
+ ******************************************************************************/
 
 /**
  * Variables defining the organization using ORT.
