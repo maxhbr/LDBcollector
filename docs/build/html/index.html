@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Hermine’s documentation &mdash; Hermine  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using Hermine" href="use_hermine.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#">
+            <img src="_static/LogoHermine_noBG.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="use_hermine.html">Using Hermine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installing Hermine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install.html#development">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install.html#production">Production</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#main-concepts-used">Main concepts used</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#manual-workflow">Manual workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="analysing_licenses.html">Analysing licenses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#global-characterics">Global characterics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#obligations-and-generic-obligations">Obligations and generic obligations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html">REST API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#authentication-via-token">Authentication via Token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#uploading-a-bom-file">Uploading a BOM file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#checking-the-validation-steps">Checking the validation steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#junit">JUnit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#generic-obligations-endpoints">Generic obligations endpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#generic-api-endpoints-for-models">Generic API endpoints for Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev_hermine.html">Developing Hermine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coding_standards.html">Coding standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#developer-certificate-of-origin">Developer Certificate of Origin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#reuse-standard">REUSE standard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#code-linting">Code linting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#commit-messages">Commit messages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html">The Data Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.licenses">Models for license management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.policy">Models for validation rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.products">Models for internal product management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.components">Models for 3rd party components</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="django_tags.html">Django template filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">Tests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#running-the-tests">Running the tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#coverage">Coverage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Hermine</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Welcome to Hermine’s documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <!---  
+SPDX-FileCopyrightText: Hermine team <hermine@inno3.fr> 
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<section id="welcome-to-hermine-s-documentation">
+<h1>Welcome to Hermine’s documentation<a class="headerlink" href="#welcome-to-hermine-s-documentation" title="Permalink to this headline"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>As the application itself, this documentation is very much a work in progress.</p>
+</div>
+<p>The documentation is created with Sphinx, and written (mostly) in <a class="reference external" href="https://www.markdownguide.org/basic-syntax">Markdown</a>, thanks to <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/sphinx/index.html">MyST</a>.
+The <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html">MyST documentation</a> will guide you through the sphinx-specific directives in Markdown.
+Some options like <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#code-fences-using-colons">code fences using colors</a> and <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#field-lists">field lists</a> have been activated.</p>
+<p>You will find the source of this documentation in the <code class="docutils literal notranslate"><span class="pre">docs/source</span></code> folder of the <a class="reference external" href="https://gitlab.com/hermine-project/hermine/-/tree/main/docs">repo</a>.</p>
+<p>To build it locally, install the dev dependencies of the project and use the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-build -b html docs/source docs/build/html
+python -m http.server --directory docs/build/html
+</pre></div>
+</div>
+<p>This documentation is published under the CC-BY-4.0 license.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="use_hermine.html">Using Hermine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installing Hermine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysing_licenses.html">Analysing licenses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html">REST API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev_hermine.html">Developing Hermine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coding_standards.html">Coding standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html">The Data Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_tags.html">Django template filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">Tests</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="use_hermine.html" class="btn btn-neutral float-right" title="Using Hermine" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Hermine Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installing Hermine &mdash; Hermine  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting started" href="getting_started.html" />
+    <link rel="prev" title="Using Hermine" href="use_hermine.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/LogoHermine_noBG.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="use_hermine.html">Using Hermine</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Installing Hermine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#development">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#production">Production</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#main-concepts-used">Main concepts used</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#manual-workflow">Manual workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="analysing_licenses.html">Analysing licenses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#global-characterics">Global characterics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#obligations-and-generic-obligations">Obligations and generic obligations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html">REST API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#authentication-via-token">Authentication via Token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#uploading-a-bom-file">Uploading a BOM file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#checking-the-validation-steps">Checking the validation steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#junit">JUnit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#generic-obligations-endpoints">Generic obligations endpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#generic-api-endpoints-for-models">Generic API endpoints for Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev_hermine.html">Developing Hermine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coding_standards.html">Coding standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#developer-certificate-of-origin">Developer Certificate of Origin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#reuse-standard">REUSE standard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#code-linting">Code linting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#commit-messages">Commit messages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html">The Data Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.licenses">Models for license management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.policy">Models for validation rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.products">Models for internal product management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.components">Models for 3rd party components</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="django_tags.html">Django tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">Tests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#running-the-tests">Running the tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#coverage">Coverage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Hermine</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="use_hermine.html">Using Hermine</a> &raquo;</li>
+      <li>Installing Hermine</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/install.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <!---  
+SPDX-FileCopyrightText: Hermine team <hermine@inno3.fr> 
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<section id="installing-hermine">
+<h1>Installing Hermine<a class="headerlink" href="#installing-hermine" title="Permalink to this headline"></a></h1>
+<section id="development">
+<span id="install-dev"></span><h2>Development<a class="headerlink" href="#development" title="Permalink to this headline"></a></h2>
+<section id="getting-last-version-of-code">
+<h3>Getting last version of code<a class="headerlink" href="#getting-last-version-of-code" title="Permalink to this headline"></a></h3>
+<p>Clone the project with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">gitlab</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">hermine</span><span class="o">-</span><span class="n">project</span><span class="o">/</span><span class="n">hermine</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</section>
+<section id="installing-the-dependencies">
+<h3>Installing the dependencies<a class="headerlink" href="#installing-the-dependencies" title="Permalink to this headline"></a></h3>
+<p>You should run Hermine in a Python virtual environnement.
+Using <a class="reference external" href="https://python-poetry.org/docs/">poetry</a>, you can create the
+virtual environment and install the dependencies with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> hermine/
+poetry install
+</pre></div>
+</div>
+</section>
+<section id="running-the-server">
+<h3>Running the server<a class="headerlink" href="#running-the-server" title="Permalink to this headline"></a></h3>
+<p>You have to first activate your Python virtual environment. With poetry, it means:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry shell
+</pre></div>
+</div>
+<p>For the first run, you have to edit your database credentials:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="n">hermine</span><span class="o">/</span><span class="n">hermine</span><span class="o">/</span><span class="n">mysecrets</span><span class="o">.</span><span class="n">default</span><span class="o">.</span><span class="n">py</span> <span class="n">hermine</span><span class="o">/</span><span class="n">hermine</span><span class="o">/</span><span class="n">mysecrets</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>and adapt the <code class="docutils literal notranslate"><span class="pre">mysecrets.py</span></code> file you just created.</p>
+<p>By default, it uses a simple SQlite database. To use another database, please refer to <a class="reference external" href="https://docs.djangoproject.com/en/4.0/topics/install/#get-your-database-running">Django’s documentation</a>.</p>
+<p>Create the database structure:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python hermine/manage.py migrate
+</pre></div>
+</div>
+<p>Then create a user with admin privileges:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python hermine/manage.py createsuperuser
+</pre></div>
+</div>
+<p>And then launch the django development server:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python hermine/manage.py runserver
+</pre></div>
+</div>
+<p>You can then point your browser to <a class="reference external" href="http://127.0.0.1:8080/admin/">http://127.0.0.1:8080/admin/</a>
+and log in as superuser to create new users, or directly to <a class="reference external" href="http://127.0.0.1:8080">http://127.0.0.1:8080</a> to use the application.</p>
+<p>For production, you should use an uWSGI server rather than the Django development
+server. Refer to
+the <a class="reference external" href="https://docs.djangoproject.com/fr/4.0/howto/deployment/">Django documentation</a>.</p>
+</section>
+</section>
+<section id="production">
+<h2>Production<a class="headerlink" href="#production" title="Permalink to this headline"></a></h2>
+<section id="docker-compose">
+<h3>Docker Compose<a class="headerlink" href="#docker-compose" title="Permalink to this headline"></a></h3>
+<p>With <a class="reference external" href="https://docs.docker.com/compose/">Docker Compose</a>, you can run Hermine in
+production with just two environment variables and one command line.</p>
+<p>You just need to set <code class="docutils literal notranslate"><span class="pre">HERMINE_SECRET</span></code> and <code class="docutils literal notranslate"><span class="pre">HERMINE_HOST</span></code> environment variables before
+you can start the containers. The easiest way to do so is to
+write it in a .env file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># configure secret key</span>
+<span class="nb">echo</span> <span class="s2">&quot;HERMINE_SECRET=RANDOMSTRINGFORSECURITY&quot;</span> &gt; .env
+<span class="c1"># optional : configure HOST if you use something else than localhost:80</span>
+<span class="nb">echo</span> <span class="s2">&quot;HERMINE_HOST=example.com&quot;</span> &gt;&gt; .env
+<span class="c1"># start the services in background</span>
+docker-compose up -d
+</pre></div>
+</div>
+<p>Hermine should be accessible at <code class="docutils literal notranslate"><span class="pre">https://example.com</span></code>. Caddy automatically sets up
+and renew HTTPS certificates.</p>
+<p>By default, a superadmin user is created with <code class="docutils literal notranslate"><span class="pre">admin</span> <span class="pre">/</span> <span class="pre">admin</span></code> credential.
+You can update these credentials from <code class="docutils literal notranslate"><span class="pre">http://example.com/admin/auth/user/</span></code>.</p>
+<p>To update your instance :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> hermine/
+git switch main <span class="o">&amp;&amp;</span> git pull
+docker-compose up -d --build
+</pre></div>
+</div>
+</section>
+<section id="manual-install">
+<h3>Manual install<a class="headerlink" href="#manual-install" title="Permalink to this headline"></a></h3>
+<p>You can install yourself dependencies and services for running Hermine.
+You need a system running Python 3.8 server. Using a MySQL or PostgreSQL
+server rather than the default SQLite is recommended for production.</p>
+</section>
+<section id="oauth">
+<h3>OAuth<a class="headerlink" href="#oauth" title="Permalink to this headline"></a></h3>
+<p>You can use an OAuth2 server as authentication backend by configuring
+OAUTH_CLIENT entry in the mysecrets.py file.</p>
+<p>Users will be created on the fly at authentication by the OAuth server.</p>
+</section>
+<section id="health-check">
+<h3>Health check<a class="headerlink" href="#health-check" title="Permalink to this headline"></a></h3>
+<p>Hermine provides two test endpoints which you can use in your monitoring system.</p>
+<p><code class="docutils literal notranslate"><span class="pre">/ping</span></code> always send a 200 response, and can be used to check server availability.</p>
+<p><code class="docutils literal notranslate"><span class="pre">/ready</span></code> do the same but also tries to connect to Hermine database. It sends a 200 response if it succeeds.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="use_hermine.html" class="btn btn-neutral float-left" title="Using Hermine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Hermine Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

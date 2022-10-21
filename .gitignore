@@ -8,7 +8,6 @@ variousScripts
 db.sqlite3
 .env
 **.css.map
-docs/build/
 .vscode/
 # Secrets are secrets
 hermine/hermine/mysecrets.py

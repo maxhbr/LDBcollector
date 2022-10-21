@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Data Model &mdash; Hermine  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/LogoHermine_noBG.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="use_hermine.html">Using Hermine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installing Hermine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install.html#development">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install.html#production">Production</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#main-concepts-used">Main concepts used</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#manual-workflow">Manual workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="analysing_licenses.html">Analysing licenses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#global-characterics">Global characterics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#obligations-and-generic-obligations">Obligations and generic obligations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html">REST API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#authentication-via-token">Authentication via Token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#uploading-a-bom-file">Uploading a BOM file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#checking-the-validation-steps">Checking the validation steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#junit">JUnit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#generic-obligations-endpoints">Generic obligations endpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#generic-api-endpoints-for-models">Generic API endpoints for Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev_hermine.html">Developing Hermine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coding_standards.html">Coding standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#developer-certificate-of-origin">Developer Certificate of Origin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#reuse-standard">REUSE standard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#code-linting">Code linting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#commit-messages">Commit messages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html">The Data Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#models-for-license-management">Models for license management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#models-for-validation-rules">Models for validation rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#models-for-internal-product-management">Models for internal product management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#models-for-3rd-party-components">Models for 3rd party components</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="django_tags.html">Django tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="serializers.html">Serializers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">Tests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#test-fixture">Test fixture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#module-cube.tests.test_api_views">API tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Hermine</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>The Data Model</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/old_data_model.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="the-data-model">
+<h1>The Data Model<a class="headerlink" href="#the-data-model" title="Permalink to this headline"></a></h1>
+<p>The</p>
+<span class="target" id="module-cube.models.components"></span><dl class="py class">
+<dt class="sig sig-object py" id="cube.models.components.Component">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cube.models.components.</span></span><span class="sig-name descname"><span class="pre">Component</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cube.models.components.Component" title="Permalink to this definition"></a></dt>
+<dd><p>A third party FOSS Component.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – (String) Name of the FOSS component Unique.</p></li>
+<li><p><strong>package_repo</strong> – (String) repository of the package</p></li>
+<li><p><strong>description</strong> – (String) Descritpion of the FOSS component</p></li>
+<li><p><strong>programming_language</strong> – (String) Name of programming languages used in this
+Component</p></li>
+<li><p><strong>spdx_expression</strong> – (String) An expression of license for the component.</p></li>
+<li><p><strong>homepage_url</strong> – (URL) Url of the repository of the component</p></li>
+<li><p><strong>export_control_status</strong> – (String) A string specifying the export control status</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="cube.models.components.Component.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#cube.models.components.Component.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="cube.models.components.Component.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#cube.models.components.Component.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cube.models.components.Usage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cube.models.components.</span></span><span class="sig-name descname"><span class="pre">Usage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cube.models.components.Usage" title="Permalink to this definition"></a></dt>
+<dd><p>Qualifies how a Version of a component is used in a Release of a Product.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="cube.models.components.Usage.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#cube.models.components.Usage.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="cube.models.components.Usage.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#cube.models.components.Usage.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cube.models.components.Version">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cube.models.components.</span></span><span class="sig-name descname"><span class="pre">Version</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cube.models.components.Version" title="Permalink to this definition"></a></dt>
+<dd><p>A specific version of a third party component</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="cube.models.components.Version.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#cube.models.components.Version.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="cube.models.components.Version.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#cube.models.components.Version.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cube.models.licenses.License">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cube.models.licenses.</span></span><span class="sig-name descname"><span class="pre">License</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cube.models.licenses.License" title="Permalink to this definition"></a></dt>
+<dd><p>A license identified by its SPDX id.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="cube.models.licenses.License.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#cube.models.licenses.License.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="cube.models.licenses.License.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#cube.models.licenses.License.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Hermine Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

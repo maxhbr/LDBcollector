@@ -1,0 +1,17 @@
+.. SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+..
+.. SPDX-License-Identifier: CC-BY-4.0
+
+The Data Model
+===================================
+
+The
+
+.. automodule:: cube.models.components
+    :members:
+
+
+
+
+.. autoclass:: cube.models.licenses.License
+    :members:

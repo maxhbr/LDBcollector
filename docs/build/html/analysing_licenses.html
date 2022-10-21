@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analysing licenses &mdash; Hermine  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="REST API" href="api.html" />
+    <link rel="prev" title="Getting started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/LogoHermine_noBG.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="use_hermine.html">Using Hermine</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installing Hermine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install.html#development">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install.html#production">Production</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#main-concepts-used">Main concepts used</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#manual-workflow">Manual workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Analysing licenses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#global-characterics">Global characterics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obligations-and-generic-obligations">Obligations and generic obligations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html">REST API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#authentication-via-token">Authentication via Token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#uploading-a-bom-file">Uploading a BOM file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#checking-the-validation-steps">Checking the validation steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#junit">JUnit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#generic-obligations-endpoints">Generic obligations endpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#generic-api-endpoints-for-models">Generic API endpoints for Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev_hermine.html">Developing Hermine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coding_standards.html">Coding standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#developer-certificate-of-origin">Developer Certificate of Origin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#reuse-standard">REUSE standard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#code-linting">Code linting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coding_standards.html#commit-messages">Commit messages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html">The Data Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.licenses">Models for license management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.policy">Models for validation rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.products">Models for internal product management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.components">Models for 3rd party components</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="django_tags.html">Django template filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">Tests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#running-the-tests">Running the tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#coverage">Coverage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Hermine</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="use_hermine.html">Using Hermine</a> &raquo;</li>
+      <li>Analysing licenses</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/analysing_licenses.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <!---
+SPDX-FileCopyrightText: Hermine team <hermine@inno3.fr>
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<section id="analysing-licenses">
+<h1>Analysing licenses<a class="headerlink" href="#analysing-licenses" title="Permalink to this headline"></a></h1>
+<p>One goal of Hermine is to help you analyse FOSS licenses in a consistent and systematic way.
+The analysis of a license is divided in two parts:</p>
+<ul class="simple">
+<li><p>The global characterics of the license</p></li>
+<li><p>Its decomposition into different obligations.</p></li>
+</ul>
+<section id="global-characterics">
+<h2>Global characterics<a class="headerlink" href="#global-characterics" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>SPDX ID = The <a class="reference external" href="https://spdx.dev/ids/">short SPDX ID</a> of the license. In case an exception is added,
+this field would inlcude it. E.g. : <code class="docutils literal notranslate"><span class="pre">GPL-3.0-only</span> <span class="pre">WITH</span> <span class="pre">GCC-exception-3.1</span></code></p></li>
+<li><p>Status = The review status of the license,</p></li>
+<li><p>Long name = The full name, as defined by the SPDX standard</p></li>
+<li><p>categories = Currently, it is just a text to receive free text, that could be a comma separated list, for instance.</p></li>
+<li><p>license_version = The version of the license (e.g. “2.1” for LGPL-2.1-only).</p></li>
+<li><p>radical = The root of the name of the license (e.g. “LGPL” for LGPL-2.1-only).</p></li>
+<li><p>autoupgrade = True if the license authorize to apply latter versions of the license (e.g. : False for LGPL-2.1-only and True for LGPL-2.1-or-later)</p></li>
+<li><p>steward = The name of the entity that is allowed to create new versions of the license (e.g. : the Eclipse Foundation for the EPL-2.0)</p></li>
+<li><p>inspiration_spdx = The license that served as inspiration for the analysed license, mentionned by its SPDX ID, in case it’s not regitered in Hermine</p></li>
+<li><p>inspiration = The license that served as inspiration for the analysed license, in case it’s regitered in Hermine</p></li>
+<li><p>copyleft = The type of reciprocity clause of the license ; possible choices are: Persmissive, Strong copyleft, Weak copyleft, Strong network copyleft, Weak network copyleft</p></li>
+<li><p>color = The acceptability of the license;  possible choices are: Always allowed (Green), Never allowed (Red), Allowed depending on the context (Organge) (and Grey for “Not reviewed yet”)</p></li>
+<li><p>color_explanation = The motivation for non green choices, and the acceptable contexts for orange licenses.</p></li>
+<li><p>url = The reference URL of the license</p></li>
+<li><p>osi_approved = If the license has been approved by the OSI</p></li>
+<li><p>fsf_approved = If the license has been approved by the FSF</p></li>
+<li><p>foss = If the license if considered Free or Open Source software. Possible values are We consider it is FOSS, We consider it is NOT FOSS, FOSS - deduced (when it’s approved by the FSF or the OSI), NOT FOSS - deduced (when the FSF or the OSI have explicitely declared it as such)</p></li>
+<li><p>patent_grant = True when the license contains a patent grant, along the copyright grant.</p></li>
+<li><p>ethical_clause = If the license contains an ethical clause (e.g. the JSON License)</p></li>
+<li><p>Only non-commercial use = if the license allows only non-commercial uses (e.g. Creative commons with a NC clause)</p></li>
+<li><p>Legal uncertainty = True if you consider that the text of the license is ambiguous or misses key elements (canonical example is WTFPL).</p></li>
+<li><p>non_tivoisation = True if the license contains a clause against <a class="reference external" href="https://en.wikipedia.org/wiki/Tivoization">tivoization</a> (e.g. GPL-3.0-only)</p></li>
+<li><p>technical_nature_constraint = True if the license contains a clause on technincal nature of derivative works (e.g. LGPL-2.1-only)</p></li>
+<li><p>law_choice = The choice of applicable law</p></li>
+<li><p>venue_choice = The choice of venue</p></li>
+<li><p>comment = Any relevant comments for understanding the interpretation of the license</p></li>
+<li><p>verbatim = The whole text of the license</p></li>
+</ul>
+</section>
+<section id="obligations-and-generic-obligations">
+<h2>Obligations and generic obligations<a class="headerlink" href="#obligations-and-generic-obligations" title="Permalink to this headline"></a></h2>
+<section id="license-obligations">
+<h3>License obligations<a class="headerlink" href="#license-obligations" title="Permalink to this headline"></a></h3>
+<section id="text-of-the-obligations">
+<h4>Text of the obligations<a class="headerlink" href="#text-of-the-obligations" title="Permalink to this headline"></a></h4>
+<p>For each license that you analyse, you can extract from its text the part that is relevant to each indiviofual obligation.
+For instance, in the BSD-3-Clause, you would would copy in this :</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="passivity-of-the-obligation">
+<h4>Passivity of the obligation<a class="headerlink" href="#passivity-of-the-obligation" title="Permalink to this headline"></a></h4>
+<p>Some obligations will require that you perform a specific action to be in compliance with the license.
+We call them <em>Active</em> obligations.</p>
+<p>For instance, in the BSD-3-Clause, the following obligation is active:</p>
+<blockquote>
+<div><ol class="arabic simple" start="2">
+<li><p>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p></li>
+</ol>
+</div></blockquote>
+<p>While others, will require that you refrain from doing something.
+We call them <em>Passive</em> obligations.</p>
+<p>For instance, in the BSD-3-Clause, the following obligation is passive:</p>
+<blockquote>
+<div><ol class="arabic simple" start="3">
+<li><p>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="triggers-of-the-obligation">
+<h4>Triggers of the obligation<a class="headerlink" href="#triggers-of-the-obligation" title="Permalink to this headline"></a></h4>
+<p>An active obligation can be triggered by the combination of two factors. The first one is related to the exploitation of the software, the second one to its modification status.</p>
+<ul class="simple">
+<li><p><strong>Exploitation</strong>: This indicates if the obligations for the following</p>
+<ul>
+<li><p>Distribution as source code</p></li>
+<li><p>Distribution as non source form</p></li>
+<li><p>Providing access through the network</p></li>
+</ul>
+</li>
+</ul>
+<p>If an obligation is triggered by two different types of exploitation, you’ll have to create two instances of this obligation, one for each triggering scenario.</p>
+<ul class="simple">
+<li><p><strong>Modification</strong>: This indicates if the obligations applies only if the component is modified, only if it is not modified or in both cases.</p></li>
+</ul>
+</section>
+</section>
+<section id="generic-obligations">
+<h3>Generic obligations<a class="headerlink" href="#generic-obligations" title="Permalink to this headline"></a></h3>
+<p>A license obligation can be related to a generic obligation. A generic obligation is a way to group license obligations that would amount to the same operational actions.</p>
+</section>
+<section id="core-set-of-generic-obligations">
+<h3>Core set of generic obligations<a class="headerlink" href="#core-set-of-generic-obligations" title="Permalink to this headline"></a></h3>
+<p>Some generic obligations are very common and have a low cost of implementations. It appears often more effective to honor for every license, even if the license doesn’t explicitely require it.
+We called the set of such generic obligations “core generic obligations”.
+So if a release of a product has all its generic obligations in the core, you know that you don’t have any specific action to perform to reach compliance.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api.html" class="btn btn-neutral float-right" title="REST API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Hermine Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
