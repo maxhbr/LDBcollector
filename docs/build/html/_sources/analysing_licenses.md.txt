@@ -36,7 +36,6 @@ this field would inlcude it. E.g. : `GPL-3.0-only WITH GCC-exception-3.1`
 - Only non-commercial use = if the license allows only non-commercial uses (e.g. Creative commons with a NC clause) 
 - Legal uncertainty = True if you consider that the text of the license is ambiguous or misses key elements (canonical example is WTFPL).
 - non_tivoisation = True if the license contains a clause against [tivoization](https://en.wikipedia.org/wiki/Tivoization) (e.g. GPL-3.0-only)
-- technical_nature_constraint = True if the license contains a clause on technincal nature of derivative works (e.g. LGPL-2.1-only)
 - law_choice = The choice of applicable law 
 - venue_choice = The choice of venue
 - comment = Any relevant comments for understanding the interpretation of the license
