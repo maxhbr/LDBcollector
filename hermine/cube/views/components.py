@@ -47,7 +47,7 @@ class LicenseCurationListView(LoginRequiredMixin, generic.ListView):
     template_name = "cube/licensecuration_list.html"
 
 
-class LicenseCurationUpdateView(LoginRequiredMixin, generic.edit.UpdateView):
+class LicenseCurationUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = LicenseCuration
     fields = ["expression_in", "expression_out", "explanation"]
     template_name = "cube/licensecuration_update.html"
