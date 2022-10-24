@@ -1,0 +1,28 @@
+{% extends "cube/cube.html" %}
+{% block title %}Edit curation{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:licensecurations' %}">Curations</a></li>
+  <li>{{object.version|default:object.component}}</li>
+</ul>
+{% endblock %}
+{% block herozone %}
+<h1 class="title">
+  <span class="icon is-medium"><i class="fas fa-band-aid"></i></span>
+  Edit license curation for {% if object.version %} {{ object.version }} {% else %} {{ object.component }} (any version) {% endif %}
+</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <table>
+      <tr><th>Input license</th><td>{{ form.expression_in }}</td></tr>
+      <tr><th>Corrected license</th><td>{{ form.expression_out }}</td></tr>
+      <tr><th>Explanation</th><td>{{ form.explanation }}</td></tr>
+      <tr><th></th><td><input type="submit" value="Save"></td></tr>
+    </table>
+  </form>
+{% endblock %}
+

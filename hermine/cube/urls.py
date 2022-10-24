@@ -28,6 +28,11 @@ urlpatterns = [
         views.LicenseCurationListView.as_view(),
         name="licensecurations",
     ),
+    path(
+        "licensecurations/update/<int:pk>/",
+        views.LicenseCurationUpdateView.as_view(),
+        name="licensecuration_update",
+    ),
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
     path(

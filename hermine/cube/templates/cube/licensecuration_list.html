@@ -32,7 +32,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 <table class="table is-striped is-hoverable is-fullwidth">
   <thead>
     <tr>
-      <th>Component/version</th>
+      <th>Component:version</th>
       <th>Stated license</th>
       <th>Corrected license</th>
       <th>Explanation</th>
@@ -42,11 +42,11 @@ SPDX-License-Identifier: AGPL-3.0-only -->
   <tbody>
 {% for curation in object_list %}
     <tr>
-      <td> {% if curation.version %} {{ curation.version }} {% else %}{{ curation.component }}{% endif%}</td>
+      <td> {{ curation.version|default:curation.component}} </td>
       <td> {{ curation.expression_in }}</td>
       <td> {{ curation.expression_out }}</td>
       <td> {{ curation.explanation|truncatechars:50 }}</td>
-      <td><a href="{%url 'admin:cube_licensecuration_change' curation.id %}" target="_blank"><i class="far fa-edit"></i></a></td>
+      <td><a href="{%url 'cube:licensecuration_update' curation.id %}"><i class="far fa-edit"></i></a></td>
     </tr>
 {% endfor %}
 </tbody>

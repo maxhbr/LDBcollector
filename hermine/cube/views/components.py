@@ -5,6 +5,7 @@
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
+from django.urls import reverse_lazy
 from django.views import generic
 
 from cube.models import Component, LicenseCuration
@@ -44,3 +45,10 @@ class ComponentView(LoginRequiredMixin, generic.DetailView):
 class LicenseCurationListView(LoginRequiredMixin, generic.ListView):
     model = LicenseCuration
     template_name = "cube/licensecuration_list.html"
+
+
+class LicenseCurationUpdateView(LoginRequiredMixin, generic.edit.UpdateView):
+    model = LicenseCuration
+    fields = ["expression_in", "expression_out", "explanation"]
+    template_name = "cube/licensecuration_update.html"
+    success_url = reverse_lazy("cube:licensecurations")
