@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block actions %}
-<a class="button" href="{% url "cube:license_edit" license.id %}" target="_blank">
+<a class="button" href="{% url "cube:license_edit" license.id %}">
   <span class="icon">
     <i class="fas fa-edit"></i>
   </span>
@@ -49,7 +49,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </span>
         <span>Print (ODT export)</span>
       </a>
-      <a href="{% url "admin:cube_license_change" license.id %}" class="dropdown-item">
+      <a href="{% url "admin:cube_license_change" license.id %}" class="dropdown-item"  target="_blank">
         <span class="icon is-small">
           <i class="fas fa-edit"></i>
         </span>
@@ -243,3 +243,4 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endfor %}
 
 {% endblock %}
+

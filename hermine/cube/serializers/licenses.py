@@ -120,8 +120,7 @@ class LicenseSerializer(serializers.ModelSerializer):
     "spdx_id", "long_name", "license_version", "radical", "autoupgrade", "steward",
     "inspiration_spdx", "copyleft", "color", "color_explanation", "url", "osi_approved",
     "fsf_approved", "foss", "patent_grant", "ethical_clause", "non_commercial",
-    "non_tivoisation", "technical_nature_constraint",
-    "jurisdictional_clause","comment", "verbatim","obligation_set"
+    "non_tivoisation", "jurisdictional_clause","comment", "verbatim","obligation_set"
 
     Obligations are nested in a license, and can be accessed with
     "/licenses/{license_name}/obligation/{obligation_name}"
@@ -157,8 +156,10 @@ class LicenseSerializer(serializers.ModelSerializer):
             "ethical_clause",
             "non_commercial",
             "non_tivoisation",
-            "technical_nature_constraint",
             "law_choice",
+            "venue_choice",
+            "liability",
+            "warranty",
             "comment",
             "verbatim",
             "obligation_set",

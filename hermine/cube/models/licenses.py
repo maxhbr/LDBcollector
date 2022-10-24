@@ -64,6 +64,22 @@ class License(models.Model):
         (STATUS_TO_DISCUSS, "To discuss"),
         (STATUS_TO_CHECK, "To check"),
     ]
+    LIABILITY_FULL = "Full"
+    LIABILITY_PARTIAL = "Partial"
+    LIABILITY_ABSENT = "Absent"
+    LIABILITY_CHOICES = [
+        (LIABILITY_FULL, "Full clause"),
+        (LIABILITY_PARTIAL, "Partial clause"),
+        (LIABILITY_ABSENT, "No clause"),
+    ]
+    WARRANTY_FULL = "Full"
+    WARRANTY_PARTIAL = "Partial"
+    WARRANTY_ABSENT = "Absent"
+    WARRANTY_CHOICES = [
+        (WARRANTY_FULL, "Full clause"),
+        (WARRANTY_PARTIAL, "Partial clause"),
+        (WARRANTY_ABSENT, "No clause"),
+    ]
 
     spdx_id = models.CharField("SPDX Identifier", max_length=200, unique=True)
     status = models.CharField(
@@ -106,7 +122,15 @@ class License(models.Model):
     ethical_clause = models.BooleanField(null=True)
     non_commercial = models.BooleanField("Only non-commercial use", null=True)
     non_tivoisation = models.BooleanField(null=True)
-    technical_nature_constraint = models.BooleanField(null=True)
+    liability = models.CharField(
+        "Non Liability clause", max_length=30, choices=LIABILITY_CHOICES, blank=True
+    )
+    warranty = models.CharField(
+        "Warranty limitation clause",
+        max_length=30,
+        choices=WARRANTY_CHOICES,
+        blank=True,
+    )
     law_choice = models.CharField(max_length=200, blank=True)
     venue_choice = models.CharField(max_length=200, blank=True)
     comment = models.TextField(max_length=1500, blank=True)
