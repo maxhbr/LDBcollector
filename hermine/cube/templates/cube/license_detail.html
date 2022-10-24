@@ -214,7 +214,20 @@ SPDX-License-Identifier: AGPL-3.0-only
     </section>
   {% endif %}
 
-  <h2 class="title is-2">Obligations</h2>
+  <div class="level">
+    <div class="level-left">
+      <div class="level-item">
+        <h2 class="title is-2">Obligations</h2>
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+        <a href="{% url "cube:obligation_create" license.id %}" class="button">
+          <span class="icon"><i class="fas fa-plus"></i></span><span>Add obligation</span>
+        </a>
+      </div>
+    </div>
+  </div>
 
   {% regroup license.obligation_set.all by generic.get_metacategory_display as metacategory_list %}
   {% for metacategory in metacategory_list %}
@@ -238,6 +251,10 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% endif %}
           </div>
         </div>
+      <footer class="card-footer">
+        <a href="{% url "cube:obligation_edit" obligation.id %}" class="card-footer-item">Edit</a>
+        <a href="{% url "cube:obligation_delete" obligation.id %}" class="card-footer-item">Delete</a>
+      </footer>
       </div>
     {% endfor %}
   {% endfor %}

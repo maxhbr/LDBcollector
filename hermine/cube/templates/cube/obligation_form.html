@@ -1,0 +1,37 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}{% if object %}{{ object.license }} - Edit obligation{% else %}{{ license }} - Add obligation{% endif %}{% endblock %}
+
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url "cube:licenses" %}">Licenses</a></li>
+  {% if object %}
+    <li><a href="{% url 'cube:license' object.license.id %}">{{ object.license }}</a></li>
+    <li>Obligation <em>{{ object.name }}</em></li>
+    <li>Edit</li>
+  {% else %}
+    <li><a href="{% url 'cube:license' license.id %}">{{ license }}</a></li>
+    <li>Add obligation</li>
+  {% endif %}
+</ul>
+{% endblock %}
+{% block herozone %}
+<h1 class="title">{% if object %}Edit obligation <em>{{ object.name }}</em> ({{ object.license }}){% else %}Add obligation for {{ license }}{% endif %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+  {% csrf_token %}
+  <table>
+    {{ form }}
+  </table>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

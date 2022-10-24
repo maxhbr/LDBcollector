@@ -48,6 +48,21 @@ urlpatterns = [
         views.print_license,
         name="print_license",
     ),
+    path(
+        "license/<int:license_pk>/add_obligation/",
+        views.ObligationCreateView.as_view(),
+        name="obligation_create",
+    ),
+    path(
+        "obligation/<int:pk>/edit/",
+        views.ObligationUpdateView.as_view(),
+        name="obligation_edit",
+    ),
+    path(
+        "obligation/<int:pk>/delete/",
+        views.ObligationDeleteView.as_view(),
+        name="obligation_delete",
+    ),
     path("generics/", views.GenericListView.as_view(), name="generics"),
     path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
     path("derogations/", views.DerogationListView.as_view(), name="derogations"),
