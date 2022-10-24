@@ -10,8 +10,16 @@ from cube.forms import (
     CreateLicenseChoiceForm,
     CreateLicenseCurationForm,
     DerogationForm,
+    CreateExpressionValidationForm,
 )
-from cube.models import LicenseChoice, Usage, LicenseCuration, Derogation, License
+from cube.models import (
+    LicenseChoice,
+    Usage,
+    LicenseCuration,
+    Derogation,
+    License,
+    ExpressionValidation,
+)
 
 
 class AbstractCreateUsageConditionView(LoginRequiredMixin, CreateView):
@@ -33,6 +41,11 @@ class AbstractCreateUsageConditionView(LoginRequiredMixin, CreateView):
 class CreateLicenseCurationView(AbstractCreateUsageConditionView):
     model = LicenseCuration
     form_class = CreateLicenseCurationForm
+
+
+class CreateExpressionValidationView(AbstractCreateUsageConditionView):
+    model = ExpressionValidation
+    form_class = CreateExpressionValidationForm
 
 
 class CreateLicenseChoiceView(AbstractCreateUsageConditionView):

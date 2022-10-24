@@ -97,14 +97,19 @@ urlpatterns = [
         name="add_derogation",
     ),
     path(
-        "usage/<int:usage_pk>/add_license_choice/",
-        views.CreateLicenseChoiceView.as_view(),
-        name="licensechoice_create",
-    ),
-    path(
         "usage/<int:usage_pk>/add_license_curation/",
         views.CreateLicenseCurationView.as_view(),
         name="licensecuration_create",
+    ),
+    path(
+        "usage/<int:usage_pk>/add_expression_validation/",
+        views.CreateExpressionValidationView.as_view(),
+        name="expressionvalidation_create",
+    ),
+    path(
+        "usage/<int:usage_pk>/add_license_choice/",
+        views.CreateLicenseChoiceView.as_view(),
+        name="licensechoice_create",
     ),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
