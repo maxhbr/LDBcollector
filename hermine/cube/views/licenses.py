@@ -3,20 +3,25 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ValidationError
-from django.db.models import Q
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404, redirect
-from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, FormView, UpdateView
+from django.shortcuts import get_object_or_404, redirect
+from django.urls import reverse_lazy, reverse
+from django.views.generic import (
+    ListView,
+    DetailView,
+    FormView,
+    UpdateView,
+    CreateView,
+    DeleteView,
+)
 from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
 from cube.forms import ImportLicensesForm, ImportGenericsForm
-from cube.models import License, Generic, Derogation
+from cube.models import License, Generic, Derogation, Obligation
 from cube.views.mixins import SearchMixin
 
 
@@ -225,6 +230,41 @@ def print_license(request, license_id):
 
         return response
     return redirect("cube:license", license_id)
+
+
+class ObligationCreateView(LoginRequiredMixin, CreateView):
+    model = Obligation
+    fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
+    license = None
+
+    def dispatch(self, request, *args, **kwargs):
+        self.license = get_object_or_404(License, id=kwargs["license_pk"])
+        return super().dispatch(request, *args, **kwargs)
+
+    def get_context_data(self, **kwargs):
+        return super().get_context_data(license=self.license, **kwargs)
+
+    def form_valid(self, form):
+        form.instance.license = self.license
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse("cube:license", args=[self.object.license.id])
+
+
+class ObligationUpdateView(LoginRequiredMixin, UpdateView):
+    model = Obligation
+    fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
+
+    def get_success_url(self):
+        return reverse("cube:license", args=[self.object.license.id])
+
+
+class ObligationDeleteView(LoginRequiredMixin, DeleteView):
+    model = Obligation
+
+    def get_success_url(self):
+        return reverse("cube:license", args=[self.object.license.id])
 
 
 class GenericListView(
