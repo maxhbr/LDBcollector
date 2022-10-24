@@ -44,8 +44,8 @@ urlpatterns = [
         name="export_license",
     ),
     path(
-        "license/<int:license_id>/print/",
-        views.print_license,
+        "license/<int:pk>/print/",
+        views.PrintLicense.as_view(),
         name="print_license",
     ),
     path("generics/", views.GenericListView.as_view(), name="generics"),
