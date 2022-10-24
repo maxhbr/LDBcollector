@@ -217,13 +217,13 @@ SPDX-License-Identifier: AGPL-3.0-only
   <div class="level">
     <div class="level-left">
       <div class="level-item">
-        <h2 class="title is-2">Obligations</h2>
+        <h2 class="title is-2">Obligations attached to this license</h2>
       </div>
     </div>
     <div class="level-right">
       <div class="level-item">
         <a href="{% url "cube:obligation_create" license.id %}" class="button">
-          <span class="icon"><i class="fas fa-plus"></i></span><span>Add obligation</span>
+          <span class="icon"><i class="fas fa-plus"></i></span><span>Attach new obligation</span>
         </a>
       </div>
     </div>
@@ -231,33 +231,47 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   {% regroup license.obligation_set.all by generic.get_metacategory_display as metacategory_list %}
   {% for metacategory in metacategory_list %}
-    <h3>{{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
+    <h3>Obligations related to {{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
     {% for obligation in metacategory.list %}
       <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">{{ obligation.name }} ({{ obligation.passivity }})</p>
+        <header class="card-header level">
+            <div class="card-header-title level-left">
+              <p level-item>{{ obligation.name }} ({{ obligation.passivity }})</p>
+          </div>
+          <div class="level-right">
+            <div class="buttons has-addons level-item">
+              <a href="{% url "cube:obligation_edit" obligation.id %}" class="button">
+                <span class="icon is-small"><i class="fas fa-edit"></i></span>
+                <span>Edit obligation</span>
+              </a>
+              <a href="{% url "cube:obligation_delete" obligation.id %}" class="button">
+                <span class="icon is-small"><i class="fas fa-trash-alt"></i></span>
+                <span>Delete obligation</span>
+              </a>
+          </div>
+          </div>
         </header>
         <div class="card-content">
           <div class="content">
+            {% if obligation.generic %}
+              <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
+            {% endif %}
             {% if obligation.passivity == "Active" %}
               <p>Applies:</p>
               <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
               <li>{{ obligation.get_trigger_expl_display }}</li></ul>
             {% endif %}
             <br>
+            <details>
+              <summary><strong>Corresponding text in the license:</strong></summary>
             <blockquote>{{ obligation.verbatim }}</blockquote>
-          {% if obligation.generic %}
-            <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
-          {% endif %}
+            </details>
           </div>
         </div>
-      <footer class="card-footer">
-        <a href="{% url "cube:obligation_edit" obligation.id %}" class="card-footer-item">Edit</a>
-        <a href="{% url "cube:obligation_delete" obligation.id %}" class="card-footer-item">Delete</a>
-      </footer>
       </div>
     {% endfor %}
   {% endfor %}
 
 {% endblock %}
+
 
