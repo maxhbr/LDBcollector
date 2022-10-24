@@ -77,6 +77,15 @@ class ComponentViewsTestCase(ForceLoginMixin, TestCase):
         self.assertContains(res, "test_product")  # product in which component is used
 
 
+class LicenseViewsTestCase(ForceLoginMixin, TestCase):
+    fixtures = ["test_data.json"]
+
+    def test_license_details_display_obligations(self):
+        res = self.client.get(reverse("cube:license", args=[3]))
+        self.assertEqual(res.status_code, 200)
+        self.assertContains(res, "Test License Distribution Unmodified")
+
+
 class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 

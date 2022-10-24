@@ -3,7 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 
 from django.db import models
-from django.db.models import Q
+from django.db.models import Q, F
 from django.urls import reverse_lazy
 
 from cube.models import Usage
@@ -124,6 +124,7 @@ class License(models.Model):
             Q(generic__isnull=True) | Q(generic__in_core=False)
         ).exists()
 
+    @property
     def context_derogations(self):
         from cube.models import Derogation
 
@@ -283,6 +284,7 @@ class Obligation(models.Model):
 
     class Meta:
         unique_together = ["name", "license"]
+        ordering = [F("generic__metacategory").desc(nulls_last=True)]
 
     def __str__(self):
         return self.license.__str__() + " -" + self.name
