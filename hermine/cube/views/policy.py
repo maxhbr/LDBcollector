@@ -41,6 +41,7 @@ class AbstractCreateUsageConditionView(LoginRequiredMixin, CreateView):
 class CreateLicenseCurationView(AbstractCreateUsageConditionView):
     model = LicenseCuration
     form_class = CreateLicenseCurationForm
+    template_name_suffix = "_create"
 
 
 class CreateExpressionValidationView(AbstractCreateUsageConditionView):

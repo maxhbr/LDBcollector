@@ -50,5 +50,5 @@ class LicenseCurationListView(LoginRequiredMixin, generic.ListView):
 class LicenseCurationUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = LicenseCuration
     fields = ["expression_in", "expression_out", "explanation"]
-    template_name = "cube/licensecuration_update.html"
+    template_name_suffix = "_update"
     success_url = reverse_lazy("cube:licensecurations")
