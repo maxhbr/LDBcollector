@@ -216,7 +216,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   <h2 class="title is-2">Obligations</h2>
 
-  {% regroup license.obligation_set.all|dictsortreversed:"generic.metacategory" by generic.get_metacategory_display as metacategory_list %}
+  {% regroup license.obligation_set.all by generic.get_metacategory_display as metacategory_list %}
   {% for metacategory in metacategory_list %}
     <h3>{{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
     {% for obligation in metacategory.list %}
