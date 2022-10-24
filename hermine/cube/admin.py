@@ -71,6 +71,8 @@ class LicenseAdmin(admin.ModelAdmin):
                     "copyleft",
                     "law_choice",
                     "venue_choice",
+                    "liability",
+                    "warranty",
                 )
             },
         ),
