@@ -10,7 +10,7 @@ from django.core.exceptions import ValidationError
 from rest_framework import serializers
 
 from .models import Release, Usage, LicenseChoice
-from .models.policy import LicenseCuration, Derogation
+from .models.policy import LicenseCuration, Derogation, ExpressionValidation
 from .utils.generics import handle_generics_json
 from .utils.licenses import handle_licenses_json
 
@@ -179,6 +179,15 @@ class CreateLicenseCurationForm(BaseComponentDecisionForm):
 
     class Meta(BaseComponentDecisionForm.Meta):
         model = LicenseCuration
+
+
+class CreateExpressionValidationForm(BaseComponentDecisionForm):
+    def save(self, **kwargs):
+        self.instance.expression_in = self.usage.version.spdx_valid_license_expr
+        return super().save(**kwargs)
+
+    class Meta(BaseComponentDecisionForm.Meta):
+        model = ExpressionValidation
 
 
 class CreateLicenseChoiceForm(BaseCreateUsageDecisionChoiceForm):

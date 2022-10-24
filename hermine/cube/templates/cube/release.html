@@ -241,16 +241,16 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for usage in to_confirm %}
           <tr>
-            <td><a href="/component/{{usage.version.component.id}}" target="_blank">{{usage.version.component.name }}</a>
-                (<a href="{{usage.version.component.homepage_url}}" target="_blank">webiste <span class="icon is-small">
+            <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version.component.name }}</a>
+                (<a href="{{ usage.version.component.homepage_url }}" target="_blank">webiste <span class="icon is-small">
                 <i class="fas fa-link"></i></span></a>)
             </td>
-            <td><a href="/admin/cube/version/{{usage.version.id}}/change/" target="_blank">{{usage.version.version_number }}</a></td>
-            <td>{{usage.scope}}</td>
-            <td>{{usage.version.spdx_valid_license_expr }} </td>
-            <td><a href="{% url 'cube:licensecuration_create' usage.id %}">Confirm </a> /
-                <a href="{% url 'cube:licensecuration_create' usage.id %}">Correct</a></td>
-            <td><a href="/admin/cube/version/{{usage.version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{ usage.version.version_number }}</a></td>
+            <td>{{ usage.scope }}</td>
+            <td>{{ usage.version.spdx_valid_license_expr }} </td>
+            <td><a href="{% url 'cube:expressionvalidation_create' usage.id %}">Confirm </a> /
+                <a href="{% url 'cube:expressionvalidation_create' usage.id %}">Correct</a></td>
+            <td><a href="{% url "admin:cube_version_change" usage.version.id %}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
