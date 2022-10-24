@@ -82,10 +82,11 @@ class LicenseUpdateView(LoginRequiredMixin, UpdateView):
     ]
 
 
-def print_license(request, license_id):
-    license_instance = get_object_or_404(License, pk=license_id)
-    filename = license_instance.spdx_id + ".odt"
-    with open(filename, "w+"):
+class PrintLicense(LoginRequiredMixin, DetailView):
+    model = License
+
+    def render_to_response(self, context, **response_kwargs):
+        filename = self.object.spdx_id + ".odt"
         response = HttpResponse(content_type="application/vnd.oasis.opendocument.text")
         response["Content-Disposition"] = "attachment; filename=%s" % filename
 
@@ -136,58 +137,58 @@ def print_license(request, license_id):
         textdoc.automaticstyles.addElement(itstyle)
 
         # Text
-        h = H(outlinelevel=1, stylename=h1style, text=license_instance.long_name)
+        h = H(outlinelevel=1, stylename=h1style, text=self.object.long_name)
         textdoc.text.addElement(h)
-        h = H(outlinelevel=1, stylename=h2style, text=license_instance.spdx_id)
+        h = H(outlinelevel=1, stylename=h2style, text=self.object.spdx_id)
         textdoc.text.addElement(h)
 
         p = P(text="Validation Color: ")
-        v = Span(stylename=boldstyle, text=license_instance.allowed)
+        v = Span(stylename=boldstyle, text=self.object.allowed)
         p.addElement(v)
         textdoc.text.addElement(p)
 
-        if license_instance.allowed_explanation is not None:
+        if self.object.allowed_explanation is not None:
             p = P(text="Explanation: ")
-            v = Span(stylename=boldstyle, text=license_instance.allowed_explanation)
+            v = Span(stylename=boldstyle, text=self.object.allowed_explanation)
             p.addElement(v)
             textdoc.text.addElement(p)
 
         p = P(text="Copyleft: ")
-        v = Span(stylename=boldstyle, text=license_instance.copyleft)
+        v = Span(stylename=boldstyle, text=self.object.copyleft)
         p.addElement(v)
         textdoc.text.addElement(p)
 
         p = P(text="Considered as Free Open Source Sofware: ")
-        v = Span(stylename=boldstyle, text=license_instance.foss)
+        v = Span(stylename=boldstyle, text=self.object.foss)
         p.addElement(v)
         textdoc.text.addElement(p)
 
         p = P(text="Approved by OSI: ")
-        v = Span(stylename=boldstyle, text=license_instance.osi_approved)
+        v = Span(stylename=boldstyle, text=self.object.osi_approved)
         p.addElement(v)
         textdoc.text.addElement(p)
 
         p = P(text="Has an ethical clause: ")
-        v = Span(stylename=boldstyle, text=license_instance.ethical_clause)
+        v = Span(stylename=boldstyle, text=self.object.ethical_clause)
         p.addElement(v)
         textdoc.text.addElement(p)
 
-        if license_instance.verbatim:
+        if self.object.verbatim:
             p = P(text="Verbatim: ")
-            value = Span(text=license_instance.verbatim)
+            value = Span(text=self.object.verbatim)
             p.addElement(value)
             textdoc.text.addElement(p)
 
-        if license_instance.comment:
+        if self.object.comment:
             p = P(text="Comment: ")
-            value = Span(stylename=boldstyle, text=license_instance.comment)
+            value = Span(stylename=boldstyle, text=self.object.comment)
             p.addElement(v)
             textdoc.text.addElement(p)
 
         h = H(outlinelevel=1, stylename=h2style, text="List of identified obligations")
         textdoc.text.addElement(h)
 
-        for o in license_instance.obligation_set.all():
+        for o in self.object.obligation_set.all():
             h = H(outlinelevel=1, stylename=h3style, text=o.name)
             textdoc.text.addElement(h)
             generic = o.generic
@@ -229,7 +230,6 @@ def print_license(request, license_id):
         textdoc.save(response)
 
         return response
-    return redirect("cube:license", license_id)
 
 
 class ObligationCreateView(LoginRequiredMixin, CreateView):
