@@ -105,7 +105,9 @@ class UsageDecision(UsageConditionMixin, models.Model):
     )
 
     expression_in = models.CharField(
-        max_length=500, help_text="The exact expression which must be changed"
+        max_length=500,
+        blank=True,
+        help_text="The exact expression which must be changed",
     )
     expression_out = models.CharField(
         max_length=500, help_text="The expression which will replace `expression_in`"

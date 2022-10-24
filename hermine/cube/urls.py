@@ -23,6 +23,16 @@ urlpatterns = [
     path("components/", views.ComponentListView.as_view(), name="components"),
     path("components/popular/", views.PopularListView.as_view(), name="populars"),
     path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),
+    path(
+        "licensecurations/",
+        views.LicenseCurationListView.as_view(),
+        name="licensecurations",
+    ),
+    path(
+        "licensecurations/update/<int:pk>/",
+        views.LicenseCurationUpdateView.as_view(),
+        name="licensecuration_update",
+    ),
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
     path(
