@@ -43,7 +43,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use_hermine.html">Using Hermine</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Installing Hermine</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#development">Development</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#production">Production</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#docker-compose">Docker Compose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-production-install">Manual production install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#oauth">OAuth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#health-check">Health check</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
@@ -83,7 +86,7 @@
 <li class="toctree-l3"><a class="reference internal" href="data_model.html#module-cube.models.components">Models for 3rd party components</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="django_tags.html">Django tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_tags.html">Django template filters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tests.html">Tests</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tests.html#running-the-tests">Running the tests</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tests.html#coverage">Coverage</a></li>
@@ -174,12 +177,30 @@ server. Refer to
 the <a class="reference external" href="https://docs.djangoproject.com/fr/4.0/howto/deployment/">Django documentation</a>.</p>
 </section>
 </section>
-<section id="production">
-<h2>Production<a class="headerlink" href="#production" title="Permalink to this headline"></a></h2>
 <section id="docker-compose">
-<h3>Docker Compose<a class="headerlink" href="#docker-compose" title="Permalink to this headline"></a></h3>
-<p>With <a class="reference external" href="https://docs.docker.com/compose/">Docker Compose</a>, you can run Hermine in
-production with just two environment variables and one command line.</p>
+<h2>Docker Compose<a class="headerlink" href="#docker-compose" title="Permalink to this headline"></a></h2>
+<p>Hermine provides a <a class="reference external" href="https://docs.docker.com/compose/">Docker Compose</a> configuration with the
+following services :</p>
+<ul class="simple">
+<li><p>a PostgreSQL database</p></li>
+<li><p>a <a class="reference external" href="https://caddyserver.com/">Caddy</a> server to
+<a class="reference external" href="https://docs.djangoproject.com/en/4.1/howto/static-files/deployment/">serve static files</a>
+and proxy other requests to gunicorn</p></li>
+<li><p>a <a class="reference external" href="https://gunicorn.org/">gunicorn</a> server for the Python backend</p></li>
+</ul>
+<p>Two profiles are available :</p>
+<ul class="simple">
+<li><p>an <code class="docutils literal notranslate"><span class="pre">https</span></code> profile where Caddy is configured with automatic HTTPS. It can easily be
+deployed on a VPS.</p></li>
+<li><p>a <code class="docutils literal notranslate"><span class="pre">localhost</span></code> profile to use Hermine on a local machine (but not suited for development, where
+you should not use Docker)</p></li>
+</ul>
+<p>Configuration is made through a <a class="reference external" href="https://github.com/bkeepers/dotenv"><code class="docutils literal notranslate"><span class="pre">.env</span></code> file</a> which should be
+placed at the root of the project.</p>
+<p>By default, a superadmin user is created with <code class="docutils literal notranslate"><span class="pre">admin</span> <span class="pre">/</span> <span class="pre">admin</span></code> credential.
+You can update these credentials from <code class="docutils literal notranslate"><span class="pre">http://example.com/admin/auth/user/</span></code>.</p>
+<section id="https-profile">
+<h3>HTTPS profile<a class="headerlink" href="#https-profile" title="Permalink to this headline"></a></h3>
 <p>You just need to set <code class="docutils literal notranslate"><span class="pre">HERMINE_SECRET</span></code> and <code class="docutils literal notranslate"><span class="pre">HERMINE_HOST</span></code> environment variables before
 you can start the containers. The easiest way to do so is to
 write it in a .env file.</p>
@@ -188,38 +209,48 @@ write it in a .env file.</p>
 <span class="c1"># optional : configure HOST if you use something else than localhost:80</span>
 <span class="nb">echo</span> <span class="s2">&quot;HERMINE_HOST=example.com&quot;</span> &gt;&gt; .env
 <span class="c1"># start the services in background</span>
-docker-compose up -d
+docker-compose --profile https up -d
 </pre></div>
 </div>
 <p>Hermine should be accessible at <code class="docutils literal notranslate"><span class="pre">https://example.com</span></code>. Caddy automatically sets up
 and renew HTTPS certificates.</p>
-<p>By default, a superadmin user is created with <code class="docutils literal notranslate"><span class="pre">admin</span> <span class="pre">/</span> <span class="pre">admin</span></code> credential.
-You can update these credentials from <code class="docutils literal notranslate"><span class="pre">http://example.com/admin/auth/user/</span></code>.</p>
 <p>To update your instance :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> hermine/
 git switch main <span class="o">&amp;&amp;</span> git pull
-docker-compose up -d --build
+docker-compose --profile https up -d --build
 </pre></div>
 </div>
 </section>
-<section id="manual-install">
-<h3>Manual install<a class="headerlink" href="#manual-install" title="Permalink to this headline"></a></h3>
+<section id="localhost-profile">
+<h3>Localhost profile<a class="headerlink" href="#localhost-profile" title="Permalink to this headline"></a></h3>
+<p>You must set <code class="docutils literal notranslate"><span class="pre">PORT</span></code> insted of <code class="docutils literal notranslate"><span class="pre">HERMINE_HOST</span></code> variable.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># configure secret key</span>
+<span class="nb">echo</span> <span class="s2">&quot;HERMINE_SECRET=RANDOMSTRINGFORSECURITY&quot;</span> &gt; .env
+<span class="c1"># configure port</span>
+<span class="nb">echo</span> <span class="s2">&quot;PORT=9000&quot;</span> &gt;&gt; .env
+<span class="c1"># start the services in background</span>
+docker-compose --profile localhost up -d
+</pre></div>
+</div>
+</section>
+</section>
+<section id="manual-production-install">
+<h2>Manual production install<a class="headerlink" href="#manual-production-install" title="Permalink to this headline"></a></h2>
 <p>You can install yourself dependencies and services for running Hermine.
 You need a system running Python 3.8 server. Using a MySQL or PostgreSQL
 server rather than the default SQLite is recommended for production.</p>
 </section>
 <section id="oauth">
-<h3>OAuth<a class="headerlink" href="#oauth" title="Permalink to this headline"></a></h3>
+<h2>OAuth<a class="headerlink" href="#oauth" title="Permalink to this headline"></a></h2>
 <p>You can use an OAuth2 server as authentication backend by configuring
 OAUTH_CLIENT entry in the mysecrets.py file.</p>
 <p>Users will be created on the fly at authentication by the OAuth server.</p>
 </section>
 <section id="health-check">
-<h3>Health check<a class="headerlink" href="#health-check" title="Permalink to this headline"></a></h3>
+<h2>Health check<a class="headerlink" href="#health-check" title="Permalink to this headline"></a></h2>
 <p>Hermine provides two test endpoints which you can use in your monitoring system.</p>
 <p><code class="docutils literal notranslate"><span class="pre">/ping</span></code> always send a 200 response, and can be used to check server availability.</p>
 <p><code class="docutils literal notranslate"><span class="pre">/ready</span></code> do the same but also tries to connect to Hermine database. It sends a 200 response if it succeeds.</p>
-</section>
 </section>
 </section>
 
