@@ -22,7 +22,7 @@ from odf.text import H, P, Span
 
 from cube.forms import ImportLicensesForm, ImportGenericsForm
 from cube.models import License, Generic, Derogation, Obligation
-from cube.views.mixins import SearchMixin
+from cube.views.mixins import SearchMixin, LicenseRelatedMixin
 
 
 class FormErrorsToMessagesMixin:
@@ -232,21 +232,10 @@ class PrintLicense(LoginRequiredMixin, DetailView):
         return response
 
 
-class ObligationCreateView(LoginRequiredMixin, CreateView):
+class ObligationCreateView(LoginRequiredMixin, LicenseRelatedMixin, CreateView):
     model = Obligation
     fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
     license = None
-
-    def dispatch(self, request, *args, **kwargs):
-        self.license = get_object_or_404(License, id=kwargs["license_pk"])
-        return super().dispatch(request, *args, **kwargs)
-
-    def get_context_data(self, **kwargs):
-        return super().get_context_data(license=self.license, **kwargs)
-
-    def form_valid(self, form):
-        form.instance.license = self.license
-        return super().form_valid(form)
 
     def get_success_url(self):
         return reverse("cube:license", args=[self.object.license.id])

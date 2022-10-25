@@ -24,7 +24,12 @@ class UsageConditionMixin(models.Model):
     version = models.ForeignKey(
         "Version", on_delete=models.CASCADE, blank=True, null=True
     )
-    scope = models.CharField(max_length=128, blank=True, null=True)
+    scope = models.CharField(
+        max_length=128,
+        blank=True,
+        null=True,
+        help_text="Leave blank to apply for any scope",
+    )
 
     @property
     def condition_display(self):

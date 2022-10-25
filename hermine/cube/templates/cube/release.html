@@ -444,7 +444,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                   <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
-                  <a href="{% url 'cube:add_derogation' usage.id license_chosen.id %}"> Add Derogation </a>
+                  <a href="{% url 'cube:usage_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>
                 </a>
               {% endfor %}
             </td>
@@ -488,7 +488,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                   <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
-                  <a href="{% url 'cube:add_derogation' usage.id license_chosen.id %}"> Add Derogation </a>
+                  <a href="{% url 'cube:usage_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>
                 </a>
               {% endfor %}
             </td>

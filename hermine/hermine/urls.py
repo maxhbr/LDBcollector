@@ -36,7 +36,9 @@ schema_view = get_schema_view(
         license=openapi.License(name="AGPL-3.0-only"),
     ),
     public=False,
-    permission_classes=(permissions.IsAuthenticated,),
+    permission_classes=[
+        permissions.IsAuthenticated,
+    ],
 )
 
 

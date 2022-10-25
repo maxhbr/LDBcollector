@@ -6,35 +6,45 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 {% extends "cube/cube.html" %}
-{% block title %}{{ form.license }} - Add derogation{% endblock %}
+{% block title %}
+  {{ license }} - {% if object %}Edit{% else %}Add{% endif %} derogation
+{% endblock %}
 
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
-  <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
-  <li>Add derogation</li>
+  {% if form.usage %}
+    <li><a href="{% url 'cube:product_detail' form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
+    <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
+    <li>Add derogation</li>
+  {% else %}
+    <li><a href="{% url 'cube:license' license.id %}">{{ license }}</a></li>
+    <li>{% if object %}Edit{% else %}Add{% endif %} derogation</li>
+  {% endif %}
 </ul>
 {% endblock %}
+
 {% block herozone %}
-<h1 class="title">Adding a derogation for {{ form.license }}</h1>
+<h1 class="title">
+  {% if object %}Edit{% else %}Add{% endif %} derogation for <em>{{ license }}</em>
+</h1>
 {% endblock %}
 
 {% block content %}
-<p>The license <b>{{ form.license }}</b> is only authorized in the following contexts: </p>
+
+{% if license.allowed_explanation %}
+<p>The license <b>{{ license }}</b> must only authorized in the following contexts: </p>
 <div class=ontent">
-  <blockquote>{{ form.license.allowed_explanation }}</blockquote>
+  <blockquote>{{ license.allowed_explanation }}</blockquote>
 </div>
+{% endif %}
 
-<p>You can add a derogation allowing it's use in the context of {{ form.usage.release }} by providing a valid justification.</p>
-
-    <form action="{% url "cube:add_derogation" form.usage.id form.license.id %}" method="post">
-        {% csrf_token %}
-        <table>
-          {{ form }}
-        </table>
-        <input type="submit" value="Submit">
-    </form>
-
+<form method="post">
+  {% csrf_token %}
+  <table>
+    {{ form }}
+  </table>
+  <input type="submit" value="Submit">
+</form>
 
 {% endblock %}
