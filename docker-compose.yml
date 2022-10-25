@@ -41,13 +41,13 @@ services:
       - $PWD/docker/Caddyfile.localhost:/etc/caddy/Caddyfile
       - static_volume:/var/www/static
     environment:
-      - PORT=${PORT:?err}
+      - PORT=${PORT:-8000}
     links:
       - django
     networks:
       hermine_net:
     ports:
-      - "${PORT:?err}:${PORT:?err}"
+      - "${PORT:-800}:${PORT:-8000}"
     profiles: ["localhost"]
 
 
