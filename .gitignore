@@ -6,13 +6,13 @@ __pycache__
 /vrac/
 variousScripts
 db.sqlite3
-.env
 **.css.map
 .vscode/
-# Secrets are secrets
-hermine/hermine/mysecrets.py
 .coverage
 .idea
 hermine.iml
 **/.DS_Store
+
+# Secrets are secrets
+hermine/hermine/mysecrets.py
 .env

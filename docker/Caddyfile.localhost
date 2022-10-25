@@ -1,0 +1,15 @@
+{
+	auto_https off
+	http_port {$PORT}
+}
+
+localhost:{$PORT}
+
+root * /var/www/
+
+@notStatic {
+    not path /static/*
+}
+reverse_proxy @notStatic django:8080
+
+file_server /static/*

@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 
 services:
   db:
@@ -15,7 +15,7 @@ services:
     build:
       context: .
       args:
-        - DEFAULT_PORT=8080
+        - DJANGO_PORT=8080
     volumes:
       - static_volume:/opt/static
     environment:
@@ -31,7 +31,27 @@ services:
       - db
     networks:
       hermine_net:
-  web:
+
+
+  local_caddy:
+    image: caddy
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - $PWD/docker/Caddyfile.localhost:/etc/caddy/Caddyfile
+      - static_volume:/var/www/static
+    environment:
+      - PORT=${PORT:?err}
+    links:
+      - django
+    networks:
+      hermine_net:
+    ports:
+      - "${PORT:?err}:${PORT:?err}"
+    profiles: ["localhost"]
+
+
+  web_https:
     image: caddy
     volumes:
       - caddy_data:/data
@@ -40,6 +60,7 @@ services:
       - static_volume:/var/www/static
     environment:
       - HOST=${HERMINE_HOST:-localhost}
+      - DJANGO_PORT=8080
     links:
       - django
     networks:
@@ -47,6 +68,8 @@ services:
     ports:
       - "443:443"
       - "80:80"
+    profiles: ["https"]
+
 networks:
   hermine_net:
 volumes:

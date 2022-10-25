@@ -5,6 +5,6 @@ root * /var/www/
 @notStatic {
     not path /static/*
 }
-reverse_proxy @notStatic django:8080
+reverse_proxy @notStatic django:{$DJANGO_PORT}
 
 file_server /static/*
