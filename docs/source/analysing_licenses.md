@@ -13,7 +13,7 @@ The analysis of a license is divided in two parts:
 
 ## Global characterics
 
-## Identity of the license
+### Identity of the license
 
 - SPDX ID = The [short SPDX ID](https://spdx.dev/ids/) of the license. In case an exception is added,
 this field would inlcude it. E.g. : `GPL-3.0-only WITH GCC-exception-3.1`
@@ -26,20 +26,20 @@ this field would inlcude it. E.g. : `GPL-3.0-only WITH GCC-exception-3.1`
 - liability = If the license has a non-liability clause
 - warranty = If the license has a warranty limitation clause
 
-## Policy 
+### Policy 
 - Status = The review status of the license,
 - allowed = The acceptability of the license;  possible choices are: Always allowed (Green), Never allowed (Red), Allowed depending on the context (Organge) (and Grey for "Not reviewed yet")
 - allowed_explanation = The motivation for non green choices, and the acceptable contexts for orange licenses. 
 - comment = Any relevant comments for understanding the interpretation of the license
 
-## Conditions of use
+### Conditions of use
 
 - patent_grant = True when the license contains a patent grant, along the copyright grant.
 - ethical_clause = If the license contains an ethical clause (e.g. the JSON License)
 - Only non-commercial use = if the license allows only non-commercial uses (e.g. Creative commons with a NC clause) 
 
 
-## Other optional information
+### Other optional information
 
 - categories = Currently, it is just a text to receive free text, that could be a comma separated list, for instance.
 - license_version = The version of the license (e.g. "2.1" for LGPL-2.1-only). 
@@ -106,6 +106,7 @@ A license obligation can be related to a generic obligation. A generic obligatio
 Some generic obligations are very common and have a low cost of implementations. It appears often more effective to honor for every license, even if the license doesn't explicitely require it. 
 We called the set of such generic obligations "core generic obligations".
 So if a release of a product has all its generic obligations in the core, you know that you don't have any specific action to perform to reach compliance.
+
 
 
 

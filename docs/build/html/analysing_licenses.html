@@ -132,11 +132,41 @@ The analysis of a license is divided in two parts:</p>
 </ul>
 <section id="global-characterics">
 <h2>Global characterics<a class="headerlink" href="#global-characterics" title="Permalink to this headline"></a></h2>
+<section id="identity-of-the-license">
+<h3>Identity of the license<a class="headerlink" href="#identity-of-the-license" title="Permalink to this headline"></a></h3>
 <ul class="simple">
 <li><p>SPDX ID = The <a class="reference external" href="https://spdx.dev/ids/">short SPDX ID</a> of the license. In case an exception is added,
 this field would inlcude it. E.g. : <code class="docutils literal notranslate"><span class="pre">GPL-3.0-only</span> <span class="pre">WITH</span> <span class="pre">GCC-exception-3.1</span></code></p></li>
-<li><p>Status = The review status of the license,</p></li>
 <li><p>Long name = The full name, as defined by the SPDX standard</p></li>
+<li><p>url = The reference URL of the license</p></li>
+<li><p>verbatim = The whole text of the license, in case it is not referenced on the SPDX website.</p></li>
+<li><p>copyleft = The type of reciprocity clause of the license ; possible choices are: Persmissive, Strong copyleft, Weak copyleft, Strong network copyleft, Weak network copyleft</p></li>
+<li><p>law_choice = The choice of applicable law</p></li>
+<li><p>venue_choice = The choice of venue</p></li>
+<li><p>liability = If the license has a non-liability clause</p></li>
+<li><p>warranty = If the license has a warranty limitation clause</p></li>
+</ul>
+</section>
+<section id="policy">
+<h3>Policy<a class="headerlink" href="#policy" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Status = The review status of the license,</p></li>
+<li><p>allowed = The acceptability of the license;  possible choices are: Always allowed (Green), Never allowed (Red), Allowed depending on the context (Organge) (and Grey for “Not reviewed yet”)</p></li>
+<li><p>allowed_explanation = The motivation for non green choices, and the acceptable contexts for orange licenses.</p></li>
+<li><p>comment = Any relevant comments for understanding the interpretation of the license</p></li>
+</ul>
+</section>
+<section id="conditions-of-use">
+<h3>Conditions of use<a class="headerlink" href="#conditions-of-use" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>patent_grant = True when the license contains a patent grant, along the copyright grant.</p></li>
+<li><p>ethical_clause = If the license contains an ethical clause (e.g. the JSON License)</p></li>
+<li><p>Only non-commercial use = if the license allows only non-commercial uses (e.g. Creative commons with a NC clause)</p></li>
+</ul>
+</section>
+<section id="other-optional-information">
+<h3>Other optional information<a class="headerlink" href="#other-optional-information" title="Permalink to this headline"></a></h3>
+<ul class="simple">
 <li><p>categories = Currently, it is just a text to receive free text, that could be a comma separated list, for instance.</p></li>
 <li><p>license_version = The version of the license (e.g. “2.1” for LGPL-2.1-only).</p></li>
 <li><p>radical = The root of the name of the license (e.g. “LGPL” for LGPL-2.1-only).</p></li>
@@ -144,24 +174,12 @@ this field would inlcude it. E.g. : <code class="docutils literal notranslate"><
 <li><p>steward = The name of the entity that is allowed to create new versions of the license (e.g. : the Eclipse Foundation for the EPL-2.0)</p></li>
 <li><p>inspiration_spdx = The license that served as inspiration for the analysed license, mentionned by its SPDX ID, in case it’s not regitered in Hermine</p></li>
 <li><p>inspiration = The license that served as inspiration for the analysed license, in case it’s regitered in Hermine</p></li>
-<li><p>copyleft = The type of reciprocity clause of the license ; possible choices are: Persmissive, Strong copyleft, Weak copyleft, Strong network copyleft, Weak network copyleft</p></li>
-<li><p>color = The acceptability of the license;  possible choices are: Always allowed (Green), Never allowed (Red), Allowed depending on the context (Organge) (and Grey for “Not reviewed yet”)</p></li>
-<li><p>color_explanation = The motivation for non green choices, and the acceptable contexts for orange licenses.</p></li>
-<li><p>url = The reference URL of the license</p></li>
 <li><p>osi_approved = If the license has been approved by the OSI</p></li>
 <li><p>fsf_approved = If the license has been approved by the FSF</p></li>
 <li><p>foss = If the license if considered Free or Open Source software. Possible values are We consider it is FOSS, We consider it is NOT FOSS, FOSS - deduced (when it’s approved by the FSF or the OSI), NOT FOSS - deduced (when the FSF or the OSI have explicitely declared it as such)</p></li>
-<li><p>patent_grant = True when the license contains a patent grant, along the copyright grant.</p></li>
-<li><p>ethical_clause = If the license contains an ethical clause (e.g. the JSON License)</p></li>
-<li><p>Only non-commercial use = if the license allows only non-commercial uses (e.g. Creative commons with a NC clause)</p></li>
-<li><p>Legal uncertainty = True if you consider that the text of the license is ambiguous or misses key elements (canonical example is WTFPL).</p></li>
 <li><p>non_tivoisation = True if the license contains a clause against <a class="reference external" href="https://en.wikipedia.org/wiki/Tivoization">tivoization</a> (e.g. GPL-3.0-only)</p></li>
-<li><p>technical_nature_constraint = True if the license contains a clause on technincal nature of derivative works (e.g. LGPL-2.1-only)</p></li>
-<li><p>law_choice = The choice of applicable law</p></li>
-<li><p>venue_choice = The choice of venue</p></li>
-<li><p>comment = Any relevant comments for understanding the interpretation of the license</p></li>
-<li><p>verbatim = The whole text of the license</p></li>
 </ul>
+</section>
 </section>
 <section id="obligations-and-generic-obligations">
 <h2>Obligations and generic obligations<a class="headerlink" href="#obligations-and-generic-obligations" title="Permalink to this headline"></a></h2>
