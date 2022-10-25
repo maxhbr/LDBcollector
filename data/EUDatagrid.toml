@@ -13,6 +13,6 @@ name = [
     "EU Datagrid Software License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "EU Datagrid"
 ]

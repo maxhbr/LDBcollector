@@ -9,6 +9,6 @@ name = [
     "GNU Lesser General Public License v2 (or 2.1) only"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LGPLv2"
 ]

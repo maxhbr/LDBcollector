@@ -13,7 +13,7 @@ name = [
     "GL2PS License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "GL2PS"
 ]
 

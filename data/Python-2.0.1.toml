@@ -13,6 +13,6 @@ name = [
     "Python License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Python"
 ]

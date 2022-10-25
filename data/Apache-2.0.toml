@@ -13,6 +13,6 @@ name = [
     "Apache Software License 2.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ASL 2.0"
 ]

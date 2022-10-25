@@ -9,6 +9,6 @@ name = [
     "Linux Documentation Project License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LDPL"
 ]

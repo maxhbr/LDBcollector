@@ -191,17 +191,17 @@ if __name__ == "__main__":
 
                 keys.remove("name")
 
-            if "abbreviation" in keys:
-                abbreviation = data["fedora"]["abbreviation"]
+            if "legacy-abbreviation" in keys:
+                legacy_abbreviation = data["fedora"]["legacy-abbreviation"]
 
-                if not isinstance(abbreviation, list) and not isinstance(abbreviation, str):  # noqa: E501
+                if not isinstance(legacy_abbreviation, list) and not isinstance(legacy_abbreviation, str):  # noqa: E501
                     sys.stderr.write(
-                        "*** %s has 'abbreviation' value in the [fedora] block, but not a list or string\n"  # noqa: E501
+                        "*** %s has 'legacy-abbreviation' value in the [fedora] block, but not a list or string\n"  # noqa: E501
                         % licensefile.name
                     )
                     r = 1
 
-                keys.remove("abbreviation")
+                keys.remove("legacy-abbreviation")
 
             if "notes" in keys:
                 if not isinstance(data["fedora"]["notes"], str):

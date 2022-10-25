@@ -13,7 +13,7 @@ name = [
     "gnuplot License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "gnuplot"
 ]
 

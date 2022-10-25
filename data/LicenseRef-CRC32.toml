@@ -13,7 +13,7 @@ name = [
     "CRC32 License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CRC32"
 ]
 

@@ -13,6 +13,6 @@ name = [
     "OpenLDAP License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OpenLDAP"
 ]

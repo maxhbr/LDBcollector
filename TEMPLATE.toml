@@ -104,9 +104,9 @@ status = [ "" ]
 #    "Another Name For This License"
 #]
 
-# The short abbreviations Fedora formerly used to represent this license in RPM
+# The short legacy-abbreviations Fedora formerly used to represent this license in RPM
 # packages.  This field is a list of strings.
-#abbreviation = [
+#legacy-abbreviation = [
 #    "ShortName",
 #    "ShorterName",
 #    "AnotherName"

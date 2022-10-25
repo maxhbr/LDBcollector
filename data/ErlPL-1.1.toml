@@ -13,6 +13,6 @@ name = [
     "Erlang Public License 1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ERPL"
 ]

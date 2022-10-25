@@ -13,7 +13,7 @@ name = [
     "3dfx Glide License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Glide"
 ]
 

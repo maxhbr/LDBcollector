@@ -13,7 +13,7 @@ name = [
     "Apple MIT License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "AML"
 ]
 

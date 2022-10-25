@@ -13,6 +13,6 @@ name = [
     "Q Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "QPL"
 ]

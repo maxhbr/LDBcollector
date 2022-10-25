@@ -13,7 +13,7 @@ name = [
     "MakeIndex License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MakeIndex"
 ]
 

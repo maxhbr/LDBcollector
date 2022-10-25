@@ -13,7 +13,7 @@ name = [
     "Henry Spencer Reg-Ex Library License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "HSRL"
 ]
 

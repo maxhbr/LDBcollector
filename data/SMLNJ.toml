@@ -15,7 +15,7 @@ name = [
     "Standard ML of New Jersey License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

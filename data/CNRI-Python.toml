@@ -13,6 +13,6 @@ name = [
     "CNRI License (Old Python)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CNRI"
 ]

@@ -13,6 +13,6 @@ name = [
     "psutils License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "psutils"
 ]

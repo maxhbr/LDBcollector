@@ -13,7 +13,7 @@ name = [
     "SCRIP License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "SCRIP"
 ]
 

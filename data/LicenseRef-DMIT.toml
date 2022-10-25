@@ -13,7 +13,7 @@ name = [
     "Docbook MIT License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "DMIT"
 ]
 

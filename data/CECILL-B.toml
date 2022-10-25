@@ -13,7 +13,7 @@ name = [
     "CeCILL-B License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CeCILL-B"
 ]
 

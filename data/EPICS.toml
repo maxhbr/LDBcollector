@@ -13,6 +13,6 @@ name = [
     "EPICS Open License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "EPICS"
 ]

@@ -13,7 +13,7 @@ name = [
     "JPython License (old)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "JPython"
 ]
 

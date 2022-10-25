@@ -13,7 +13,7 @@ name = [
     "DOC License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "DOC"
 ]
 

@@ -13,6 +13,6 @@ name = [
     "Microsoft Reciprocal License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MS-RL"
 ]

@@ -13,7 +13,7 @@ name = [
     "feh License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

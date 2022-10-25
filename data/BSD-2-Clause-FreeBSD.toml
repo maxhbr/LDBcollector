@@ -13,7 +13,7 @@ name = [
     "BSD License (two clause)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD"
 ]
 

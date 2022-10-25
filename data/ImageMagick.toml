@@ -13,7 +13,7 @@ name = [
     "ImageMagick License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ImageMagick"
 ]
 

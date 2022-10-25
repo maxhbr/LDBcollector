@@ -10,7 +10,7 @@ name = [
     "GNU General Public License v1.0 or later"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "GPL+"
 ]
 

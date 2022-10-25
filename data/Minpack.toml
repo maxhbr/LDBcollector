@@ -10,6 +10,6 @@ name = [
     "Minpack License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Minpack"
 ]

@@ -8,6 +8,6 @@ status = [ "allowed" ]
 name = [
     "LGPLv3 with exceptions",
 ]
-abbreviation = [
+legacy-abbreviation = [
     "GNU Lesser General Public License v3.0 only, with exceptions",
 ]

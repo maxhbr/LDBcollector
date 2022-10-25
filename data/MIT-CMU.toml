@@ -13,7 +13,7 @@ name = [
     "CMU License (BSD like)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

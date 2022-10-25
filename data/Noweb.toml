@@ -13,6 +13,6 @@ name = [
     "Noweb License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Noweb"
 ]

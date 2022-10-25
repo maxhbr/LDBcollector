@@ -91,8 +91,8 @@ if __name__ == "__main__":
             fedora_keys = [*data["fedora"]]
 
             # field: 'fedora_abbrev'
-            if "abbreviation" in fedora_keys:
-                fedora_abbrevs = data["fedora"]["abbreviation"]
+            if "legacy-abbreviation" in fedora_keys:
+                fedora_abbrevs = data["fedora"]["legacy-abbreviation"]
 
         if spdx_abbrev:
             spdx_abbrev, _, exception = spdx_abbrev.partition(" WITH ")

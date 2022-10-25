@@ -13,6 +13,6 @@ name = [
     "Nethack General Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "NGPL"
 ]

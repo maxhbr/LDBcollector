@@ -13,6 +13,6 @@ name = [
     "Zope Public License v 2.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ZPLv2.0"
 ]

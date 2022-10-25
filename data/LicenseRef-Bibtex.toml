@@ -13,7 +13,7 @@ name = [
     "Bibtex License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Bibtex"
 ]
 

@@ -13,7 +13,7 @@ name = [
     "Haskell Language Report License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "HaskellReport"
 ]
 

@@ -13,7 +13,7 @@ name = [
     "Adobe Postscript AFM License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "APAFML"
 ]
 

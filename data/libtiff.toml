@@ -15,7 +15,7 @@ name = [
     "MIT:Hylafax Variant"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "libtiff",
     "MIT"
 ]

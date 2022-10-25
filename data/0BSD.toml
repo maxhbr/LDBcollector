@@ -13,6 +13,6 @@ name = [
     "Zero-Clause BSD"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "0BSD"
 ]

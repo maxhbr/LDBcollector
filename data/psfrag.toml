@@ -13,6 +13,6 @@ name = [
     "psfrag License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "psfrag"
 ]

@@ -13,6 +13,6 @@ name = [
     "Unicode License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Unicode"
 ]

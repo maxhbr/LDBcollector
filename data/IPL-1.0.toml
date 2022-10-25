@@ -13,6 +13,6 @@ name = [
     "IBM Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "IBM"
 ]

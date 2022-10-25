@@ -13,7 +13,7 @@ name = [
     "NRL License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD with advertising"
 ]
 

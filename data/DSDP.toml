@@ -13,7 +13,7 @@ name = [
     "DSDP License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "DSDP"
 ]
 

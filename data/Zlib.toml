@@ -13,6 +13,6 @@ name = [
     "zlib/libpng License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "zlib"
 ]

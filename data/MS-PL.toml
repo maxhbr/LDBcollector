@@ -13,6 +13,6 @@ name = [
     "Microsoft Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MS-PL"
 ]

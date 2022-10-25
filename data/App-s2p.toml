@@ -13,6 +13,6 @@ name = [
     "App::s2p License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "App-s2p"
 ]

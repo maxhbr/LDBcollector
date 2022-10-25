@@ -13,6 +13,6 @@ name = [
     "Yahoo Public License v 1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "YPLv1.1"
 ]

@@ -13,6 +13,6 @@ name = [
     "MIT No Attribution (MIT-0)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT-0"
 ]

@@ -13,6 +13,6 @@ name = [
     "OpenSSL License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OpenSSL"
 ]

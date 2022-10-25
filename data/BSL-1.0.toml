@@ -15,7 +15,7 @@ name = [
     "MIT:Thrift variant"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Boost",
     "MIT"
 ]

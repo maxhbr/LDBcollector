@@ -13,6 +13,6 @@ name = [
     "PostgreSQL License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "PostgreSQL"
 ]

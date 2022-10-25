@@ -25,7 +25,7 @@ name = [
     "Sequence Library License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ASL 1.1",
     "Phorum",
     "Sequence"

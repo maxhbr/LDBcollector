@@ -13,7 +13,7 @@ name = [
     "Latex2e License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Latex2e"
 ]
 

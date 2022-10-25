@@ -13,6 +13,6 @@ name = [
     "TMate Open Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "TMate"
 ]

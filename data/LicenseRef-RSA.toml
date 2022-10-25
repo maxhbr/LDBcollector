@@ -13,7 +13,7 @@ name = [
     "RSA License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "RSA"
 ]
 

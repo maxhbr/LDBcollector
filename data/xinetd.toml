@@ -13,6 +13,6 @@ name = [
     "xinetd License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "xinetd"
 ]

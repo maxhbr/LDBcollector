@@ -63,7 +63,7 @@ for licensefile in os.scandir(opts.datadir):
     # read in the data file
     with open(licensefile.path, 'rb') as f:
         data = tomllib.load(f)
-    # {'license': {'expression': 'OpenSSL', 'status': ['allowed'], 'url': 'http://www.sdisw.com/openssl.htm\n'}, 'fedora': {'name': ['OpenSSL License'], 'abbreviation': ['OpenSSL']}}
+    # {'license': {'expression': 'OpenSSL', 'status': ['allowed'], 'url': 'http://www.sdisw.com/openssl.htm\n'}, 'fedora': {'name': ['OpenSSL License'], 'legacy-abbreviation': ['OpenSSL']}}
 
     if 'allowed' in data["license"]["status"]:
         ALLOWED_LICENSES.append(data)

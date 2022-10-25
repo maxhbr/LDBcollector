@@ -13,7 +13,7 @@ name = [
     "SLIB License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "SLIB"
 ]
 

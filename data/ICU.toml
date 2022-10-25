@@ -13,6 +13,6 @@ name = [
     "MIT:Modern style (ICU Variant)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]

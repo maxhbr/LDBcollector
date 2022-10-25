@@ -13,6 +13,6 @@ name = [
     "Rdisc License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Rdisc"
 ]

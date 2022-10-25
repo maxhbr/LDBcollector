@@ -13,6 +13,6 @@ name = [
     "Sleepycat Software Product License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Sleepycat"
 ]

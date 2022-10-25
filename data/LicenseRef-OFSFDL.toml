@@ -9,6 +9,6 @@ name = [
     "Old FSF Documentation License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OFSFDL"
 ]

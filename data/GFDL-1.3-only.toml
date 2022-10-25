@@ -9,6 +9,6 @@ name = [
     "GNU Free Documentation License v1.3 only"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "GFDL"
 ]

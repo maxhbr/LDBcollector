@@ -13,6 +13,6 @@ name = [
     "Zed License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Zed"
 ]

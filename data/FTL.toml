@@ -13,6 +13,6 @@ name = [
     "Freetype License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "FTL"
 ]

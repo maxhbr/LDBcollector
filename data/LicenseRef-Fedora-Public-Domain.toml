@@ -8,5 +8,5 @@ https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_public_dom
 
 [fedora]
 name = ["Public Domain"]
-abbreviation = ["Public Domain"]
+legacy-abbreviation = ["Public Domain"]
 

@@ -13,7 +13,7 @@ name = [
     "BSD Protection License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD Protection"
 ]
 

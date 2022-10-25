@@ -13,7 +13,7 @@ name = [
     "radvd License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "radvd"
 ]
 

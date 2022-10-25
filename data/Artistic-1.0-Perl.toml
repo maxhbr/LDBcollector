@@ -13,7 +13,7 @@ name = [
     "Artistic 1.0 (original)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Artistic"
 ]
 

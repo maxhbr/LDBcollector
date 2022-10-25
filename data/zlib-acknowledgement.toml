@@ -15,7 +15,7 @@ name = [
     "zlib/libpng License with Acknowledgement"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT with advertising",
     "zlib with acknowledgement"
 ]

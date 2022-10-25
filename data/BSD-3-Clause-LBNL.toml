@@ -13,7 +13,7 @@ name = [
     "Lawrence Berkeley National Labs BSD variant license"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LBNL BSD"
 ]
 

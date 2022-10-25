@@ -19,7 +19,7 @@ name = [
     "Eclipse Distribution License 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD",
     "NetCDF"
 ]

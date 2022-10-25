@@ -13,7 +13,7 @@ name = [
     "Cryptix General License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD"
 ]
 

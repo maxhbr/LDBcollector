@@ -13,7 +13,7 @@ name = [
     "Condor Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Condor"
 ]
 

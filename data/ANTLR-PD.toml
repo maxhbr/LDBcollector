@@ -13,6 +13,6 @@ name = [
     "ANTLR Software Rights Notice"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ANTLR-PD"
 ]

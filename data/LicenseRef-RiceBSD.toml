@@ -13,7 +13,7 @@ name = [
     "Rice BSD"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "RiceBSD"
 ]
 

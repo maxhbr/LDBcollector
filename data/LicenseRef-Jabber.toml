@@ -13,7 +13,7 @@ name = [
     "Jabber Open Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Jabber"
 ]
 

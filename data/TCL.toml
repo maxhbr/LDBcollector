@@ -13,6 +13,6 @@ name = [
     "TCL/TK License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "TCL"
 ]

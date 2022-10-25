@@ -9,6 +9,6 @@ name = [
     "Distributed Management Task Force License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "DMTF"
 ]

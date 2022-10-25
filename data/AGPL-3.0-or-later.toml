@@ -13,6 +13,6 @@ name = [
     "Affero General Public License 3.0 or later"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "AGPLv3+"
 ]

@@ -13,7 +13,7 @@ name = [
     "FreeImage Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MPLv1.0"
 ]
 

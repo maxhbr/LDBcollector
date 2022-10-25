@@ -13,7 +13,7 @@ name = [
     "Trusster Open Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "TOSL"
 ]
 

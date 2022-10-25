@@ -13,7 +13,7 @@ name = [
     "mod_macro License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "mod_macro"
 ]
 

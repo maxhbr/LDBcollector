@@ -13,7 +13,7 @@ name = [
     "BitTorrent License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BitTorrent"
 ]
 

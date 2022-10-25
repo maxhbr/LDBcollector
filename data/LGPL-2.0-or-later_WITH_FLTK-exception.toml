@@ -13,7 +13,7 @@ name = [
     "FLTK License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LGPLv2 with exceptions"
 ]
 

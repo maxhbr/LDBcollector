@@ -15,7 +15,7 @@ name = [
     "MIT:Old Style with legal disclaimer"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

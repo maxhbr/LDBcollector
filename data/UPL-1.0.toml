@@ -13,6 +13,6 @@ name = [
     "Universal Permissive License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "UPL"
 ]

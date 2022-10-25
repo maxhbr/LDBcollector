@@ -13,6 +13,6 @@ name = [
     "W3C Software Notice and License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "W3C"
 ]

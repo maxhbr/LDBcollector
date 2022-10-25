@@ -13,6 +13,6 @@ name = [
     "Ruby License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Ruby"
 ]

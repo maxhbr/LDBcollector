@@ -13,6 +13,6 @@ name = [
     "Netizen Open Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "NOSL"
 ]

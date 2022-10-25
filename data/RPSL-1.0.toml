@@ -13,6 +13,6 @@ name = [
     "RealNetworks Public Source License V1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "RPSL"
 ]

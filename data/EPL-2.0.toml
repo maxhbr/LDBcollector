@@ -13,6 +13,6 @@ name = [
     "Eclipse Public License 2.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "EPL-2.0"
 ]

@@ -13,6 +13,6 @@ name = [
     "MIT +no-false-attribs license"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MITNFA"
 ]

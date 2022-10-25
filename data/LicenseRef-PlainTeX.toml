@@ -13,7 +13,7 @@ name = [
     "PlainTeX License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "PlainTeX"
 ]
 

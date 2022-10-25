@@ -13,6 +13,6 @@ name = [
     "MIT:NTP variant"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]

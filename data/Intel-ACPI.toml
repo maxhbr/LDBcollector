@@ -13,7 +13,7 @@ name = [
     "Intel ACPI Software License Agreement"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Intel ACPI"
 ]
 

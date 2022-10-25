@@ -13,6 +13,6 @@ name = [
     "GNU General Public License v1.0 only"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "GPLv1"
 ]

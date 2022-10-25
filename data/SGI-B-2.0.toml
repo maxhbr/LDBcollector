@@ -13,7 +13,7 @@ name = [
     "SGI Free Software License B 2.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

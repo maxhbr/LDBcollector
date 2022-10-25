@@ -13,6 +13,6 @@ name = [
     "Mup License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Mup"
 ]

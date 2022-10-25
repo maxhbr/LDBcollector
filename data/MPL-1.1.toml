@@ -13,6 +13,6 @@ name = [
     "Mozilla Public License v1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MPLv1.1"
 ]

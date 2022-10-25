@@ -13,6 +13,6 @@ name = [
     "MirOS License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MirOS"
 ]

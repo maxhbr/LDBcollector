@@ -13,6 +13,6 @@ name = [
     "Open Software License 3.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OSL 3.0"
 ]

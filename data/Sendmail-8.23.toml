@@ -13,7 +13,7 @@ name = [
     "Sendmail License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Sendmail"
 ]
 

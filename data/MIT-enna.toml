@@ -13,7 +13,7 @@ name = [
     "enna License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

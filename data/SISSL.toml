@@ -13,6 +13,6 @@ name = [
     "Sun Industry Standards Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "SISSL"
 ]

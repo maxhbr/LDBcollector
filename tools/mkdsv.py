@@ -70,16 +70,16 @@ def write_allowed(keys, status, allowed):
     # the 6th column is the SPDX expression
     columns.append("%s" % data["license"]["expression"])
 
-    # the 7th column is the old Fedora abbreviation
+    # the 7th column is the old Fedora legacy-abbreviation
     # the 8th column is the old Fedora name
     # if these are missing, they are empty
     if "fedora" in keys:
         fedora_keys = [*data["fedora"]]
 
-        if "abbreviation" in fedora_keys:
+        if "legacy-abbreviation" in fedora_keys:
             alist = None
 
-            for a in data["fedora"]["abbreviation"]:
+            for a in data["fedora"]["legacy-abbreviation"]:
                 if alist is None:
                     alist = a
                 else:

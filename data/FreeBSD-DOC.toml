@@ -9,6 +9,6 @@ name = [
     "FreeBSD Documentation License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "FBSDDL"
 ]

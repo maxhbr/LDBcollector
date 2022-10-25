@@ -12,6 +12,6 @@ name = [
     "SIL Open Font License 1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OFL"
 ]

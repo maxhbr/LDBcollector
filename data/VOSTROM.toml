@@ -13,6 +13,6 @@ name = [
     "VOSTROM Public License for Open Source"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "VOSTROM"
 ]

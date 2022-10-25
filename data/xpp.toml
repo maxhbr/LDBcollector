@@ -13,6 +13,6 @@ name = [
     "XPP License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "xpp"
 ]

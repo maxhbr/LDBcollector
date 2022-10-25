@@ -13,6 +13,6 @@ name = [
     "MIT:Modern Style with sublicense"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]

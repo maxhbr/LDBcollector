@@ -13,7 +13,7 @@ name = [
     "diffmark license"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "diffmark"
 ]
 

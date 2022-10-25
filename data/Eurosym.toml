@@ -13,7 +13,7 @@ name = [
     "Eurosym License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Eurosym"
 ]
 

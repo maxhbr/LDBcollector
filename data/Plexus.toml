@@ -13,6 +13,6 @@ name = [
     "Plexus Classworlds License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Plexus"
 ]

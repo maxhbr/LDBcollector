@@ -9,6 +9,6 @@ name = [
     "Bitstream Vera Font License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Bitstream Vera"
 ]

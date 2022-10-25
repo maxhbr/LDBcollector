@@ -13,7 +13,7 @@ name = [
     "LaTeX Project Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LPPL"
 ]
 

@@ -13,6 +13,6 @@ name = [
     "BSD + Patent"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD-2-Clause-Patent"
 ]

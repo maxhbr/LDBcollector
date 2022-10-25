@@ -13,6 +13,6 @@ name = [
     "Common Development Distribution License 1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CDDL-1.1"
 ]

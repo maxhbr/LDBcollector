@@ -13,6 +13,6 @@ name = [
     "Do What The F*ck You Want To Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "WTFPL"
 ]

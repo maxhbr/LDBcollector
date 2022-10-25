@@ -13,7 +13,7 @@ name = [
     "Matrix Template Library License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MTLL"
 ]
 

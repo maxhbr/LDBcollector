@@ -13,6 +13,6 @@ name = [
     "NCSA/University of Illinois Open Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "NCSA"
 ]

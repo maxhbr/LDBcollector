@@ -13,6 +13,6 @@ name = [
     "mpich2 License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]

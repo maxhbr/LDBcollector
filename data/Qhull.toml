@@ -13,6 +13,6 @@ name = [
     "Qhull License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Qhull"
 ]

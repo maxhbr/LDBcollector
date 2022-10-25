@@ -27,6 +27,6 @@ so, delete this exception statement from your version.
 name = [
     "GNU General Public License v2.0 or later, with exceptions"
 ]
-abbreviation = [
+legacy-abbreviation = [
     "GPLv2+ with exceptions"
 ]

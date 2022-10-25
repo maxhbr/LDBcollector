@@ -13,7 +13,7 @@ name = [
     "BSD License (Advertising Variant)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD with advertising"
 ]
 

@@ -13,6 +13,6 @@ name = [
     "FSF All Permissive license"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "FSFAP"
 ]

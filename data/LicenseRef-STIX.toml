@@ -9,6 +9,6 @@ name = [
     "STIX Fonts User License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "STIX"
 ]
