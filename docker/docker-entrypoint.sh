@@ -3,11 +3,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-# Default values
-PORT=8080
-USER=''
-PASSWORD=''
-
 f_log() {
     echo "== $(date) == $*"
 }

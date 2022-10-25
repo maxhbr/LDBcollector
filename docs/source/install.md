@@ -66,12 +66,29 @@ server. Refer to
 the [Django documentation](https://docs.djangoproject.com/fr/4.0/howto/deployment/).
 
 
-## Production
+## Docker Compose
 
-### Docker Compose
+Hermine provides a [Docker Compose](https://docs.docker.com/compose/) configuration with the
+following services :
+* a PostgreSQL database
+* a [Caddy](https://caddyserver.com/) server to
+[serve static files](https://docs.djangoproject.com/en/4.1/howto/static-files/deployment/)
+and proxy other requests to gunicorn
+* a [gunicorn](https://gunicorn.org/) server for the Python backend
 
-With [Docker Compose](https://docs.docker.com/compose/), you can run Hermine in
-production with just two environment variables and one command line.
+Two profiles are available :
+* an `https` profile where Caddy is configured with automatic HTTPS. It can easily be
+deployed on a VPS.
+* a `localhost` profile to use Hermine on a local machine (but not suited for development, where
+you should not use Docker)
+
+Configuration is made through a [`.env` file](https://github.com/bkeepers/dotenv) which should be
+placed at the root of the project.
+
+By default, a superadmin user is created with `admin / admin` credential.
+You can update these credentials from `http://example.com/admin/auth/user/`.
+
+### HTTPS profile
 
 You just need to set `HERMINE_SECRET` and `HERMINE_HOST` environment variables before
 you can start the containers. The easiest way to do so is to
@@ -83,36 +100,47 @@ echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
 # optional : configure HOST if you use something else than localhost:80
 echo "HERMINE_HOST=example.com" >> .env
 # start the services in background
-docker-compose up -d
+docker-compose --profile https up -d
 ```
 
 Hermine should be accessible at `https://example.com`. Caddy automatically sets up
 and renew HTTPS certificates.
-
-By default, a superadmin user is created with `admin / admin` credential. 
-You can update these credentials from `http://example.com/admin/auth/user/`.
 
 To update your instance : 
 
 ```bash
 cd hermine/
 git switch main && git pull
-docker-compose up -d --build
+docker-compose --profile https up -d --build
 ```
 
-### Manual install
+### Localhost profile
+
+You must set `PORT` insted of `HERMINE_HOST` variable.
+
+```bash
+# configure secret key
+echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
+# configure port
+echo "PORT=9000" >> .env
+# start the services in background
+docker-compose --profile localhost up -d
+```
+
+## Manual production install
 
 You can install yourself dependencies and services for running Hermine.
 You need a system running Python 3.8 server. Using a MySQL or PostgreSQL
 server rather than the default SQLite is recommended for production.
-### OAuth
+
+## OAuth
 
 You can use an OAuth2 server as authentication backend by configuring
 OAUTH_CLIENT entry in the mysecrets.py file.
 
 Users will be created on the fly at authentication by the OAuth server.
 
-### Health check
+## Health check
 
 Hermine provides two test endpoints which you can use in your monitoring system.
 
