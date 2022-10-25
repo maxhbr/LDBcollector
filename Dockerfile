@@ -24,9 +24,6 @@ ENV \
     POETRY_HOME="/opt/poetry" \
     POETRY_VIRTUALENVS_IN_PROJECT=true \
     POETRY_NO_INTERACTION=1 \
-    PORT=$DJANGO_PORT \
-    SUPERUSER="" \
-    PASSWORD=""
 
 WORKDIR $APP_PATH
 
@@ -45,4 +42,4 @@ COPY docker/docker_secrets.py $APP_PATH/hermine/mysecrets.py
 EXPOSE $PORT
 
 # run entrypoint.sh
-ENTRYPOINT /opt/hermine/docker-entrypoint.sh --port=$PORT -u=$SUPERUSER -p=$PASSWORD
+ENTRYPOINT /opt/hermine/docker-entrypoint.sh --port=$DJANGO_PORT -u=$SUPERUSER -p=$PASSWORD
