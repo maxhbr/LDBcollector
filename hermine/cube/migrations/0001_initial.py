@@ -500,7 +500,15 @@ class Migration(migrations.Migration):
                 ),
                 ("expression_in", models.CharField(max_length=500)),
                 ("expression_out", models.CharField(max_length=500)),
-                ("scope", models.CharField(blank=True, max_length=128, null=True)),
+                (
+                    "scope",
+                    models.CharField(
+                        blank=True,
+                        max_length=128,
+                        null=True,
+                        help_text="Leave blank to apply for any scope",
+                    ),
+                ),
                 (
                     "explanation",
                     models.TextField(blank=True, max_length=500, null=True),
