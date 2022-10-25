@@ -208,6 +208,8 @@ write it in a .env file.</p>
 <span class="nb">echo</span> <span class="s2">&quot;HERMINE_SECRET=RANDOMSTRINGFORSECURITY&quot;</span> &gt; .env
 <span class="c1"># optional : configure HOST if you use something else than localhost:80</span>
 <span class="nb">echo</span> <span class="s2">&quot;HERMINE_HOST=example.com&quot;</span> &gt;&gt; .env
+<span class="c1"># disable debug mode</span>
+<span class="nb">echo</span> <span class="s2">&quot;PRODUCTION=true&quot;</span> &gt;&gt; .env
 <span class="c1"># start the services in background</span>
 docker-compose --profile https up -d
 </pre></div>
@@ -228,6 +230,8 @@ docker-compose --profile https up -d --build
 <span class="nb">echo</span> <span class="s2">&quot;HERMINE_SECRET=RANDOMSTRINGFORSECURITY&quot;</span> &gt; .env
 <span class="c1"># configure port</span>
 <span class="nb">echo</span> <span class="s2">&quot;PORT=9000&quot;</span> &gt;&gt; .env
+<span class="c1"># disable debug mode</span>
+<span class="nb">echo</span> <span class="s2">&quot;PRODUCTION=true&quot;</span> &gt;&gt; .env
 <span class="c1"># start the services in background</span>
 docker-compose --profile localhost up -d
 </pre></div>
