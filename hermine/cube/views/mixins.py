@@ -5,6 +5,9 @@ from functools import reduce
 
 from django.db.models import Q
 from django.forms import Form, CharField
+from django.shortcuts import get_object_or_404
+
+from cube.models import License
 
 
 class SearchForm(Form):
@@ -45,3 +48,18 @@ class SearchMixin:
             context.update({"query": self.query})
 
         return context
+
+
+class LicenseRelatedMixin:
+    def dispatch(self, request, *args, **kwargs):
+        self.license = get_object_or_404(License, id=kwargs["license_pk"])
+        return super().dispatch(request, *args, **kwargs)
+
+    def get_context_data(self):
+        context = super().get_context_data()
+        context["license"] = self.license
+        return context
+
+    def form_valid(self, form):
+        form.instance.license = self.license
+        return super().form_valid(form)

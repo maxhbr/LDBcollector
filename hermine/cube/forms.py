@@ -202,7 +202,6 @@ class DerogationForm(BaseUsageConditionForm):
     linking_choice = forms.ChoiceField(choices=LINKING_CHOICES)
 
     def __init__(self, *args, **kwargs):
-        self.license = kwargs.pop("license")
         super().__init__(*args, **kwargs)
         # Change labels of fields depending on usage linking
         if self.usage.linking:
@@ -212,8 +211,6 @@ class DerogationForm(BaseUsageConditionForm):
             )
 
     def save(self, **kwargs):
-        self.instance.license = self.license
-
         if self.cleaned_data["linking_choice"] == self.USAGE_LINKING:
             self.instance.linking = self.usage.linking
 

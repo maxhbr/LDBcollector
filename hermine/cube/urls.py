@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from django.urls import path, include
+from django.views.generic import UpdateView
 from rest_framework.authtoken import views as authviews
 from rest_framework_nested import routers
 
@@ -52,6 +53,16 @@ urlpatterns = [
         "license/<int:license_pk>/add_obligation/",
         views.ObligationCreateView.as_view(),
         name="obligation_create",
+    ),
+    path(
+        "license/<int:license_pk>/add_derogation/",
+        views.DerogationLicenseContextCreateView.as_view(),
+        name="derogation_create",
+    ),
+    path(
+        "derogation/<int:pk>/edit/",
+        views.DerogationUpdateView.as_view(),
+        name="derogation_edit",
     ),
     path(
         "obligation/<int:pk>/edit/",
@@ -108,8 +119,8 @@ urlpatterns = [
     ),
     path(
         "usage/<int:usage_pk>/add_derogation/<int:license_pk>/",
-        views.CreateDerogationView.as_view(),
-        name="add_derogation",
+        views.DerogationUsageContextCreateView.as_view(),
+        name="usage_derogation_create",
     ),
     path(
         "usage/<int:usage_pk>/add_license_curation/",

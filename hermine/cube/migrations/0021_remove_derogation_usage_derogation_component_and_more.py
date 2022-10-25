@@ -107,6 +107,11 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="derogation",
             name="scope",
-            field=models.CharField(blank=True, max_length=128, null=True),
+            field=models.CharField(
+                blank=True,
+                max_length=128,
+                null=True,
+                help_text="Leave blank to apply for any scope",
+            ),
         ),
     ]
