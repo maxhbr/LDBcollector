@@ -11,7 +11,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 {% for license in ALLOWED_LICENSES %}
 | {{ spdx_url(license) }}
  | {%- if 'fedora' in license -%}
-        {{ license['fedora']['name']|join(',') }}
+        {{ license['fedora']['legacy-name']|join(',') }}
   {%- else -%}
         {nbsp}
   {%- endif -%}
@@ -36,7 +36,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 {% for license in CONTENT_LICENSES -%}
 | {{ spdx_url(license) }}
  | {%- if 'fedora' in license -%}
-        {{ license['fedora']['name']|join(',') }}
+        {{ license['fedora']['legacy-name']|join(',') }}
   {%- else -%}
         {nbsp}
   {%- endif -%}
@@ -60,7 +60,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 {% for license in DOCUMENTATION_LICENSES -%}
 | {{ spdx_url(license) }}
  | {%- if 'fedora' in license -%}
-        {{ license['fedora']['name']|join(',') }}
+        {{ license['fedora']['legacy-name']|join(',') }}
   {%- else -%}
         {nbsp}
   {%- endif -%}
@@ -84,7 +84,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 {% for license in FONTS_LICENSES %}
 | {{ spdx_url(license) }}
  | {%- if 'fedora' in license -%}
-        {{ license['fedora']['name']|join(',') }}
+        {{ license['fedora']['legacy-name']|join(',') }}
   {%- else -%}
         {nbsp}
   {%- endif -%}
@@ -109,7 +109,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 {% for license in FIRMWARE_LICENSES -%}
 | {{ spdx_url(license) }}
  | {%- if 'fedora' in license -%}
-        {{ license['fedora']['name']|join(',') }}
+        {{ license['fedora']['legacy-name']|join(',') }}
   {%- else -%}
         &nbsp;
   {%- endif -%}
@@ -160,7 +160,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 |  {{ license['license']['status']|join(',') }}
 | {{ spdx_url(license) }}
 | {%- if 'fedora' in license %}
-        {{ license['fedora']['name']|join(',') }}
+        {{ license['fedora']['legacy-name']|join(',') }}
   {%- else -%}
         {nbsp}
   {%- endif -%}

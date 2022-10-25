@@ -6,7 +6,7 @@ status = [ "allowed" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "mecab-ipadic license"
 ]
 

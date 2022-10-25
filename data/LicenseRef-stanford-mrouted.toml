@@ -9,6 +9,6 @@ https://fedoraproject.org/wiki/Licensing/mrouted
 
 [fedora]
 
-name = [
+legacy-name = [
     "mrouted license (old)"
 ]

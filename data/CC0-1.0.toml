@@ -14,7 +14,7 @@ Existing uses of CC0-1.0 on code files in Fedora packages prior to 2022-08-01, a
 
 [fedora]
 
-name = [
+legacy-name = [
     "Creative Commons Zero 1.0 Universal"
 ]
 

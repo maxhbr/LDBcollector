@@ -99,7 +99,7 @@ status = [ "" ]
 # The names Fedora formerly used to refer to this license, prior to Fedora's
 # adoption of SPDX expressions for license metadata in August 2022.  This field is a
 # list of strings.
-#name = [
+#legacy-name = [
 #    "License Full Name",
 #    "Another Name For This License"
 #]

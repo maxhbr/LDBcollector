@@ -10,7 +10,7 @@ https://svn.nmap.org/nmap/LICENSE
 
 [fedora]
 
-name = [
+legacy-name = [
     "Nmap Public Source License Version 0.92 (NPSL)"
 ]
 

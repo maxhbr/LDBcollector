@@ -9,7 +9,7 @@ http://www.opensource.apple.com/apsl/2.0.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "Apple Public Source License 2.0"
 ]
 

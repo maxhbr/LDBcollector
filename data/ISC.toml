@@ -9,7 +9,7 @@ https://www.isc.org/software/license
 
 [fedora]
 
-name = [
+legacy-name = [
     "ISC License (Bind, DHCP Server)"
 ]
 

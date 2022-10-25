@@ -5,7 +5,7 @@ status = [ "allowed-content" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "EFF Open Audio License v1"
 ]
 

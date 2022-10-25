@@ -9,7 +9,7 @@ https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Style_with_
 
 [fedora]
 
-name = [
+legacy-name = [
     "MIT:Modern Style with sublicense"
 ]
 

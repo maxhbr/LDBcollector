@@ -10,7 +10,7 @@ https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Hylafax_Variant
 
 [fedora]
 
-name = [
+legacy-name = [
     "libtiff License",
     "MIT:Hylafax Variant"
 ]

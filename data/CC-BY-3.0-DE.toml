@@ -5,7 +5,7 @@ status = [ "allowed-content", "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Creative Commons Attribution license 3.0 Germany"
 ]
 

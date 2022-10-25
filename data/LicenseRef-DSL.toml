@@ -5,7 +5,7 @@ status = [ "allowed-content" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Design Science License"
 ]
 

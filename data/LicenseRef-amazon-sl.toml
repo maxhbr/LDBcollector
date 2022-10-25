@@ -9,7 +9,7 @@ http://aws.amazon.com/asl/
 
 [fedora]
 
-name = [
+legacy-name = [
     "Amazon Software License"
 ]
 

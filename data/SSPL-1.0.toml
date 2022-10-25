@@ -9,6 +9,6 @@ https://fedoraproject.org/wiki/Licensing/SSPL
 
 [fedora]
 
-name = [
+legacy-name = [
     "Server Side Public License v1 (SSPL)"
 ]

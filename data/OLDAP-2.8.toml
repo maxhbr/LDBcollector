@@ -9,7 +9,7 @@ http://www.openldap.org/software/release/license.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "OpenLDAP License"
 ]
 

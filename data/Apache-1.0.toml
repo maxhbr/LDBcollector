@@ -9,7 +9,7 @@ http://www.apache.org/licenses/LICENSE-1.0
 
 [fedora]
 
-name = [
+legacy-name = [
     "Apache Software License 1.0"
 ]
 

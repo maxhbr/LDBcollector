@@ -10,7 +10,7 @@ https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Thrift_variant
 
 [fedora]
 
-name = [
+legacy-name = [
     "Boost Software License",
     "MIT:Thrift variant"
 ]

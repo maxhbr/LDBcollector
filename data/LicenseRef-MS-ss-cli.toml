@@ -9,6 +9,6 @@ https://fedoraproject.org/wiki/Licensing/Microsoft_Shared_Source_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "Microsoft's Shared Source CLI/C#/Jscript License"
 ]

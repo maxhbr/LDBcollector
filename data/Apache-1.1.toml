@@ -15,7 +15,7 @@ https://fedoraproject.org/wiki/Licensing/SequenceLibraryLicense
 
 [fedora]
 
-name = [
+legacy-name = [
     "4Suite Copyright License",
     "Apache Software License 1.1",
     "MX4J License",

@@ -9,7 +9,7 @@ http://www.gnu.org/licenses/gpl-faq.html#FontException
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU General Public License v3.0 only, with font embedding exception"
 ]
 

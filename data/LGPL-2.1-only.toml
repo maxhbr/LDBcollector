@@ -5,7 +5,7 @@ status = [ "allowed" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU Lesser General Public License v2 (or 2.1) only"
 ]
 

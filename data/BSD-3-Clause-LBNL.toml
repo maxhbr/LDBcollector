@@ -9,7 +9,7 @@ https://fedoraproject.org/wiki/Licensing/LBNLBSD
 
 [fedora]
 
-name = [
+legacy-name = [
     "Lawrence Berkeley National Labs BSD variant license"
 ]
 

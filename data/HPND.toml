@@ -10,7 +10,7 @@ https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Old_Style_with_leg
 
 [fedora]
 
-name = [
+legacy-name = [
     "Historical Permission Notice and Disclaimer",
     "MIT:Old Style with legal disclaimer"
 ]

@@ -5,7 +5,7 @@ status = [ "allowed" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "LGPLv3 with exceptions",
 ]
 legacy-abbreviation = [

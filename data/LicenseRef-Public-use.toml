@@ -5,7 +5,7 @@ status = [ "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Public Use License, v1.0"
 ]
 

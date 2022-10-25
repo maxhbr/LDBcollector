@@ -127,12 +127,12 @@ if __name__ == "__main__":
                        '{} does not have fedora_abbrevs or is not-allowed'.format(licensefile)
 
             # field: 'fedora_name' (could be a list)
-            if "name" in fedora_keys:
-                fedora_names = data["fedora"]["name"]
+            if "legacy-name" in fedora_keys:
+                fedora_names = data["fedora"]["legacy-name"]
 
                 assert isinstance(fedora_names, str) or isinstance(fedora_names, list) or \
                        ("not-allowed" in status), \
-                       'name in [fedora] section is neither string nor list ({})'.format(licensefile)
+                       'legacy-name in [fedora] section is neither string nor list ({})'.format(licensefile)
 
         # sanity check
         assert isinstance(approved, str), \

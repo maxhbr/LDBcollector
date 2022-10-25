@@ -9,7 +9,7 @@ http://www.mozilla.org/MPL/MPL-1.1.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Mozilla Public License v1.1"
 ]
 

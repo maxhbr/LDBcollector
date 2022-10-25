@@ -9,7 +9,7 @@ http://www.aps.anl.gov/epics/license/open.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "EPICS Open License"
 ]
 

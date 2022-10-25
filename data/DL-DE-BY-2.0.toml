@@ -5,7 +5,7 @@ status = [ "allowed-content" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Data license Germany - attribution 2.0"
 ]
 

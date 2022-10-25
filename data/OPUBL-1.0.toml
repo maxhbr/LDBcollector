@@ -7,7 +7,7 @@ usage =''' Allowed-for documentation if the copyright holder does not exercise a
 
 [fedora]
 
-name = [
+legacy-name = [
     "Open Publication License, v1.0"
 ]
 

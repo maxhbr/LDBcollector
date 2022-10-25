@@ -9,7 +9,7 @@ http://www.sendmail.org/ftp/LICENSE
 
 [fedora]
 
-name = [
+legacy-name = [
     "Sendmail License"
 ]
 

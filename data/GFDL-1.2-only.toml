@@ -5,7 +5,7 @@ status = [ "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU Free Documentation License v1.2 only"
 ]
 

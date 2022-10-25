@@ -9,7 +9,7 @@ https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD
 
 [fedora]
 
-name = [
+legacy-name = [
     "BSD License (two clause)"
 ]
 

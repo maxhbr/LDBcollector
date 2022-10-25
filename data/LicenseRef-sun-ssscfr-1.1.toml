@@ -9,6 +9,6 @@ http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "Sun Solaris Source Code (Foundation Release) License"
 ]

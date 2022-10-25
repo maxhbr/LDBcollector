@@ -9,7 +9,7 @@ http://www.osgi.org/Main/OSGiSpecificationLicense
 
 [fedora]
 
-name = [
+legacy-name = [
     "OSGi Specification License"
 ]
 

@@ -179,17 +179,17 @@ if __name__ == "__main__":
         if "fedora" in keys:
             keys = [*data["fedora"]]
 
-            if "name" in keys:
-                name = data["fedora"]["name"]
+            if "legacy-name" in keys:
+                legacy_name = data["fedora"]["legacy-name"]
 
-                if not isinstance(name, list) and not isinstance(name, str):
+                if not isinstance(legacy_name, list) and not isinstance(legacy_name, str):
                     sys.stderr.write(
                         "*** %s has 'name' value in the [fedora] block, but not a list or string\n"  # noqa: E501
                         % licensefile.name
                     )
                     r = 1
 
-                keys.remove("name")
+                keys.remove("legacy-name")
 
             if "legacy-abbreviation" in keys:
                 legacy_abbreviation = data["fedora"]["legacy-abbreviation"]

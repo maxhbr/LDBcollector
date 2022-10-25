@@ -71,7 +71,7 @@ def write_allowed(keys, status, allowed):
     columns.append("%s" % data["license"]["expression"])
 
     # the 7th column is the old Fedora legacy-abbreviation
-    # the 8th column is the old Fedora name
+    # the 8th column is the old Fedora legacy-name
     # if these are missing, they are empty
     if "fedora" in keys:
         fedora_keys = [*data["fedora"]]
@@ -89,10 +89,10 @@ def write_allowed(keys, status, allowed):
         else:
             columns.append("")
 
-        if "name" in fedora_keys:
+        if "legacy-name" in fedora_keys:
             nlist = None
 
-            for n in data["fedora"]["name"]:
+            for n in data["fedora"]["legacy-name"]:
                 if nlist is None:
                     nlist = n
                 else:
@@ -130,14 +130,14 @@ def write_not_allowed(keys, notallowed):
     # the 1st column is the SPDX expression
     columns.append("%s" % data["license"]["expression"])
 
-    # the 2nd column is the old Fedora name
+    # the 2nd column is the old Fedora legacy-name
     if "fedora" in keys:
         fedora_keys = [*data["fedora"]]
 
-        if "name" in fedora_keys:
+        if "legacy-name" in fedora_keys:
             nlist = None
 
-            for n in data["fedora"]["name"]:
+            for n in data["fedora"]["legacy-name"]:
                 if nlist is None:
                     nlist = n
                 else:

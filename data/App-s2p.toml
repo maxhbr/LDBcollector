@@ -9,7 +9,7 @@ https://fedoraproject.org/wiki/Licensing/App-s2p
 
 [fedora]
 
-name = [
+legacy-name = [
     "App::s2p License"
 ]
 

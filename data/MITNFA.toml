@@ -9,7 +9,7 @@ https://fedoraproject.org/wiki/Licensing/MITNFA
 
 [fedora]
 
-name = [
+legacy-name = [
     "MIT +no-false-attribs license"
 ]
 

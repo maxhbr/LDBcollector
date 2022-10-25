@@ -8,7 +8,7 @@ This license expression is allowed for Perl packages.
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU General Public License v1.0 or later or Artistic License 1.0"
 ]
 

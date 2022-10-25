@@ -9,7 +9,7 @@ https://fedoraproject.org/wiki/Licensing/NasaCDF
 
 [fedora]
 
-name = [
+legacy-name = [
     "NASA CDF License"
 ]
 

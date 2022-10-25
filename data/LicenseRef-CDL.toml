@@ -5,7 +5,7 @@ status = [ "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Apple's Common Documentation License, Version 1.0"
 ]
 

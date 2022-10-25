@@ -9,7 +9,7 @@ http://svn.terracotta.org/svn/ehcache/tags/ehcache-2.9.0/distribution/src/main/a
 
 [fedora]
 
-name = [
+legacy-name = [
     "Terracotta Public License 1.0"
 ]
 

@@ -5,7 +5,7 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "AMS Bluesky Font License"
 ]
 

@@ -9,7 +9,7 @@ It is not clear that we should encourage use of this identifier in place of or i
 
 [fedora]
 
-name = [
+legacy-name = [
     "BSD License (Advertising Variant)"
 ]
 
