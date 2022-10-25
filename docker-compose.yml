@@ -14,11 +14,10 @@ services:
   django:
     build:
       context: .
-      args:
-        - DJANGO_PORT=8080
     volumes:
       - static_volume:/opt/static
     environment:
+      - DJANGO_PORT=8080
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
@@ -47,7 +46,7 @@ services:
     networks:
       hermine_net:
     ports:
-      - "${PORT:-800}:${PORT:-8000}"
+      - "${PORT:-8000}:${PORT:-8000}"
     profiles: ["localhost"]
 
 

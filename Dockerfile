@@ -39,7 +39,7 @@ COPY hermine $APP_PATH/
 COPY docker/docker-entrypoint.sh $APP_PATH/
 COPY docker/docker_secrets.py $APP_PATH/hermine/mysecrets.py
 
-EXPOSE $PORT
+EXPOSE $DJANGO_PORT
 
 # run entrypoint.sh
-ENTRYPOINT /opt/hermine/docker-entrypoint.sh --port=$DJANGO_PORT -u=$SUPERUSER -p=$PASSWORD
+ENTRYPOINT /opt/hermine/docker-entrypoint.sh
