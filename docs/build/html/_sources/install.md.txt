@@ -99,6 +99,8 @@ write it in a .env file.
 echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
 # optional : configure HOST if you use something else than localhost:80
 echo "HERMINE_HOST=example.com" >> .env
+# disable debug mode
+echo "PRODUCTION=true" >> .env
 # start the services in background
 docker-compose --profile https up -d
 ```
@@ -123,6 +125,8 @@ You must set `PORT` insted of `HERMINE_HOST` variable.
 echo "HERMINE_SECRET=RANDOMSTRINGFORSECURITY" > .env
 # configure port
 echo "PORT=9000" >> .env
+# disable debug mode
+echo "PRODUCTION=true" >> .env
 # start the services in background
 docker-compose --profile localhost up -d
 ```
