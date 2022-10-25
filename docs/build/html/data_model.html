@@ -53,6 +53,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="analysing_licenses.html">Analysing licenses</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#global-characterics">Global characterics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#identity-of-the-license">Identity of the license</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#policy">Policy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#conditions-of-use">Conditions of use</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#other-optional-information">Other optional information</a></li>
 <li class="toctree-l3"><a class="reference internal" href="analysing_licenses.html#obligations-and-generic-obligations">Obligations and generic obligations</a></li>
 </ul>
 </li>
@@ -185,7 +189,8 @@ similar :class <cite>Obligation</cite>.</p>
 <li><p><strong>ethical_clause</strong> (<em>BooleanField</em>) – ethical clause</p></li>
 <li><p><strong>non_commercial</strong> (<em>BooleanField</em>) – Only non-commercial use</p></li>
 <li><p><strong>non_tivoisation</strong> (<em>BooleanField</em>) – non tivoisation</p></li>
-<li><p><strong>technical_nature_constraint</strong> (<em>BooleanField</em>) – technical nature constraint</p></li>
+<li><p><strong>liability</strong> (<em>CharField</em>) – Non Liability clause. Possible values: Full, Partial, Absent.</p></li>
+<li><p><strong>warranty</strong> (<em>CharField</em>) – Warranty limitation clause. Possible values: Full, Partial, Absent.</p></li>
 <li><p><strong>law_choice</strong> (<em>CharField</em>) – law choice</p></li>
 <li><p><strong>venue_choice</strong> (<em>CharField</em>) – venue choice</p></li>
 <li><p><strong>comment</strong> (<em>TextField</em>) – comment</p></li>
