@@ -9,8 +9,20 @@ from cube.serializers import UsageSerializer, VersionSerializer, ComponentSerial
 
 
 class UsageViewSet(viewsets.ModelViewSet):
-    queryset = Usage.objects.all()
+    """
+    API endpoint that allows usages to be viewed or edited
+    The list can be optionally restricted to the usages of a given release,
+    by provideing a `release` query parameter in the URL.
+    """
+
     serializer_class = UsageSerializer
+
+    def get_queryset(self):
+        queryset = Usage.objects.all()
+        release = self.request.query_params.get("release")
+        if release is not None:
+            queryset = queryset.filter(release=release)
+        return queryset
 
 
 class ComponentViewSet(viewsets.ModelViewSet):
