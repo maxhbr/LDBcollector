@@ -15,7 +15,7 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  make
 BuildRequires:  python3
-%if 0%{?fedora} || 0%{?rhel} >= 9
+%if 0%{?fedora} || 0%{?rhel} >= 8
 BuildRequires:  (python%{python3_pkgversion}-tomli if python%{python3_pkgversion} < 3.11)
 %else
 BuildRequires:  python%{python3_pkgversion}-tomli
