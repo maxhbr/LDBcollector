@@ -1,4 +1,4 @@
-#License Review Request
+# License Review Request
 
 ## License name
 
@@ -18,4 +18,4 @@
 
 ## Reason for license review
 
-(optional - link to Bugzilla issuse for package review)
+(optional - link to Bugzilla issue for package review)
