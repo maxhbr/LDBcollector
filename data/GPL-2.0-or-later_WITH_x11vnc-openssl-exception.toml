@@ -1,9 +1,26 @@
 [license]
+
 expression = "GPL-2.0-or-later WITH x11vnc-openssl-exception"
+
 status = [ "allowed" ]
+
+# Remove (?) when added to https://spdx.org/licenses/exceptions-index.html
 url = '''
-https://spdx.org/licenses/x11vnc-openssl-exception.html
-https://raw.githubusercontent.com/LibVNC/x11vnc/af63109a17f1b1ec8b1e332d215501f11c4a33a0/src/cleanup.c
+https://github.com/spdx/license-list-XML/blob/main/src/exceptions/x11vnc-openssl-exception.xml
+https://github.com/spdx/license-list-data/blob/master/text/x11vnc-openssl-exception.txt
+'''
+
+# Remove (?) when added to https://spdx.org/licenses/exceptions-index.html
+text = '''
+In addition, as a special exception, Karl J. Runge
+gives permission to link the code of its release of x11vnc with the
+OpenSSL project's "OpenSSL" library (or with modified versions of it
+that use the same license as the "OpenSSL" library), and distribute
+the linked executables.  You must obey the GNU General Public License
+in all respects for all of the code used other than "OpenSSL".  If you
+modify this file, you may extend this exception to your version of the
+file, but you are not obligated to do so.  If you do not wish to do
+so, delete this exception statement from your version.
 '''
 
 [fedora]
