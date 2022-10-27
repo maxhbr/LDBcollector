@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/DSDP
 
 [fedora]
 
-name = [
+legacy-name = [
     "DSDP License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "DSDP"
 ]
 

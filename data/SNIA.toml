@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/SNIA_Public_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "SNIA Public License 1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "SNIA"
 ]
 

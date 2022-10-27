@@ -9,10 +9,10 @@ http://www.eclipse.org/legal/epl-v10.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Eclipse Public License 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "EPL-1.0"
 ]

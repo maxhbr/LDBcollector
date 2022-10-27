@@ -9,10 +9,10 @@ http://freetype.fis.uniroma2.it/FTL.TXT
 
 [fedora]
 
-name = [
+legacy-name = [
     "Freetype License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "FTL"
 ]

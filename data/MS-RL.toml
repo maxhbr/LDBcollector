@@ -9,10 +9,10 @@ http://www.microsoft.com/opensource/licenses.mspx#Ms-RL
 
 [fedora]
 
-name = [
+legacy-name = [
     "Microsoft Reciprocal License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MS-RL"
 ]

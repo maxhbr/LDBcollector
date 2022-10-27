@@ -9,11 +9,11 @@ http://opensource.org/licenses/ca-tosl1.1.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "Computer Associates Trusted Open Source License 1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CATOSL"
 ]
 

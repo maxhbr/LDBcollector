@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Beerware
 
 [fedora]
 
-name = [
+legacy-name = [
     "Beerware License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Beerware"
 ]
 

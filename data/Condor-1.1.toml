@@ -9,11 +9,11 @@ http://www.cs.wisc.edu/condor/condor-public-license.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Condor Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Condor"
 ]
 

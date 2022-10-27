@@ -27,7 +27,7 @@ This project contains information about licenses used in the Fedora
 Linux project.  Licenses are categorized by their approval or
 non-approval and may include additional notes.  The data files provide
 mappings between the SDPX license expressions and the older Fedora
-license abbreviations.
+license legacy-abbreviations.
 
 The project also intends to publish the combined license information
 in a number of data file formats and provide a package in Fedora for

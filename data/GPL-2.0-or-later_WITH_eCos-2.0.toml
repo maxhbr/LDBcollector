@@ -9,10 +9,10 @@ http://www.fsf.org/licensing/licenses/ecos-license.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "eCos License v2.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "eCos"
 ]

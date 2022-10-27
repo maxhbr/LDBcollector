@@ -5,10 +5,10 @@ status = [ "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU Free Documentation License v1.2 or later - invariants"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "GFDL"
 ]

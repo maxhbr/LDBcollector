@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Bibtex
 
 [fedora]
 
-name = [
+legacy-name = [
     "Bibtex License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Bibtex"
 ]
 

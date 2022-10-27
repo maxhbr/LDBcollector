@@ -5,10 +5,10 @@ status = [ "allowed-content" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Free Art License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Free Art"
 ]

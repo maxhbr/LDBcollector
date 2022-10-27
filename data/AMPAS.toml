@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD
 
 [fedora]
 
-name = [
+legacy-name = [
     "Academy of Motion Picture Arts and Sciences BSD"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "AMPAS BSD"
 ]
 

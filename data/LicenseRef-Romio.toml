@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Romio_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "Romio License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Romio"
 ]
 

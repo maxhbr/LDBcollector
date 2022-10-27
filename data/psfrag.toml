@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/psfrag
 
 [fedora]
 
-name = [
+legacy-name = [
     "psfrag License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "psfrag"
 ]

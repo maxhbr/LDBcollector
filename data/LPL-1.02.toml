@@ -9,11 +9,11 @@ http://plan9.bell-labs.com/plan9dist/license.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Lucent Public License (Plan9)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LPL"
 ]
 

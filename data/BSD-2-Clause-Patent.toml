@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/BSD-2-Clause-Patent
 
 [fedora]
 
-name = [
+legacy-name = [
     "BSD + Patent"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD-2-Clause-Patent"
 ]

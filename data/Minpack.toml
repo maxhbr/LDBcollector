@@ -6,10 +6,10 @@ status = [ "allowed" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Minpack License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Minpack"
 ]

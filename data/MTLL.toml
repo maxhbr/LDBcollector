@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "Matrix Template Library License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MTLL"
 ]
 

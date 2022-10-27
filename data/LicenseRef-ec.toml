@@ -5,11 +5,11 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "ec Font License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ec"
 ]
 

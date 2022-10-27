@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Rice_BSD_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "Rice BSD"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "RiceBSD"
 ]
 

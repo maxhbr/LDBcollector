@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Crossword
 
 [fedora]
 
-name = [
+legacy-name = [
     "Crossword License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Crossword"
 ]
 

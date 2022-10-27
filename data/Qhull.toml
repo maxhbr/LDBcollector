@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/Qhull
 
 [fedora]
 
-name = [
+legacy-name = [
     "Qhull License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Qhull"
 ]

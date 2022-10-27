@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/MakeIndex
 
 [fedora]
 
-name = [
+legacy-name = [
     "MakeIndex License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MakeIndex"
 ]
 

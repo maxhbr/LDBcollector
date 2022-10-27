@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/CPM
 
 [fedora]
 
-name = [
+legacy-name = [
     "CP/M License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CPM"
 ]
 

@@ -9,11 +9,11 @@ http://freeimage.sourceforge.net/freeimage-license.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "FreeImage Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MPLv1.0"
 ]
 

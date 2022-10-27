@@ -9,10 +9,10 @@ http://www.opensource.org/licenses/osl-1.0.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "Open Software License 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OSL 1.0"
 ]

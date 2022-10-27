@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Eurosym
 
 [fedora]
 
-name = [
+legacy-name = [
     "Eurosym License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Eurosym"
 ]
 

@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/BSD_Protection_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "BSD Protection License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD Protection"
 ]
 

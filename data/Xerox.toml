@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Xerox
 
 [fedora]
 
-name = [
+legacy-name = [
     "Xerox License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Xerox"
 ]
 

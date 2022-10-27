@@ -179,29 +179,29 @@ if __name__ == "__main__":
         if "fedora" in keys:
             keys = [*data["fedora"]]
 
-            if "name" in keys:
-                name = data["fedora"]["name"]
+            if "legacy-name" in keys:
+                legacy_name = data["fedora"]["legacy-name"]
 
-                if not isinstance(name, list) and not isinstance(name, str):
+                if not isinstance(legacy_name, list) and not isinstance(legacy_name, str):
                     sys.stderr.write(
                         "*** %s has 'name' value in the [fedora] block, but not a list or string\n"  # noqa: E501
                         % licensefile.name
                     )
                     r = 1
 
-                keys.remove("name")
+                keys.remove("legacy-name")
 
-            if "abbreviation" in keys:
-                abbreviation = data["fedora"]["abbreviation"]
+            if "legacy-abbreviation" in keys:
+                legacy_abbreviation = data["fedora"]["legacy-abbreviation"]
 
-                if not isinstance(abbreviation, list) and not isinstance(abbreviation, str):  # noqa: E501
+                if not isinstance(legacy_abbreviation, list) and not isinstance(legacy_abbreviation, str):  # noqa: E501
                     sys.stderr.write(
-                        "*** %s has 'abbreviation' value in the [fedora] block, but not a list or string\n"  # noqa: E501
+                        "*** %s has 'legacy-abbreviation' value in the [fedora] block, but not a list or string\n"  # noqa: E501
                         % licensefile.name
                     )
                     r = 1
 
-                keys.remove("abbreviation")
+                keys.remove("legacy-abbreviation")
 
             if "notes" in keys:
                 if not isinstance(data["fedora"]["notes"], str):

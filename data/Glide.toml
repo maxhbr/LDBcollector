@@ -9,11 +9,11 @@ http://www.users.on.net/~triforce/glidexp/COPYING.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "3dfx Glide License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Glide"
 ]
 

@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Gnuplot
 
 [fedora]
 
-name = [
+legacy-name = [
     "gnuplot License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "gnuplot"
 ]
 

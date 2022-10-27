@@ -5,11 +5,11 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "ParaType Font License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "PTFL"
 ]
 

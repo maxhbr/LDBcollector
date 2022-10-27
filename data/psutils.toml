@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/psutils
 
 [fedora]
 
-name = [
+legacy-name = [
     "psutils License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "psutils"
 ]

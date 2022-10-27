@@ -9,11 +9,11 @@ http://www.talula.demon.co.uk/allegro/license.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Giftware License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Giftware"
 ]
 

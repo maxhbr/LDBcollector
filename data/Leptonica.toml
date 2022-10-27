@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Leptonica
 
 [fedora]
 
-name = [
+legacy-name = [
     "Leptonica License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Leptonica"
 ]
 

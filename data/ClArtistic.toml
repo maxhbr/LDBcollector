@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/ArtisticClarified
 
 [fedora]
 
-name = [
+legacy-name = [
     "Artistic (clarified)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Artistic clarified"
 ]

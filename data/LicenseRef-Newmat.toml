@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Newmat_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "Newmat License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Newmat"
 ]
 

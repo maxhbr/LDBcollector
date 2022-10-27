@@ -9,11 +9,11 @@ http://www.eclipse.org/legal/cpl-v10.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Common Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CPL"
 ]
 

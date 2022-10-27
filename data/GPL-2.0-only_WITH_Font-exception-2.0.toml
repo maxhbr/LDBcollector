@@ -9,10 +9,10 @@ http://www.gnu.org/licenses/gpl-faq.html#FontException
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU General Public License v2.0 only, with font embedding exception"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "GPLv2 with exceptions"
 ]

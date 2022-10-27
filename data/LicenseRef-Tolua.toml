@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Tolua
 
 [fedora]
 
-name = [
+legacy-name = [
     "Tolua License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Tolua"
 ]
 

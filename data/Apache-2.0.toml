@@ -9,10 +9,10 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 [fedora]
 
-name = [
+legacy-name = [
     "Apache Software License 2.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ASL 2.0"
 ]

@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "Haskell Language Report License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "HaskellReport"
 ]
 

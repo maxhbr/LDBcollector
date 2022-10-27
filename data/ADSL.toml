@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense
 
 [fedora]
 
-name = [
+legacy-name = [
     "Amazon Digital Services License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ADSL"
 ]
 

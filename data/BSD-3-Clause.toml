@@ -12,14 +12,14 @@ http://www.eclipse.org/org/documents/edl-v10.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "BSD License (no advertising)",
     "Metasploit Framework License (post 2006)",
     "NetCDF License",
     "Eclipse Distribution License 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD",
     "NetCDF"
 ]

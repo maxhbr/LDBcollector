@@ -9,10 +9,10 @@ http://www.osedu.org/licenses/ECL-2.0/
 
 [fedora]
 
-name = [
+legacy-name = [
     "Educational Community License 2.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ECL 2.0"
 ]

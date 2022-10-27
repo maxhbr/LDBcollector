@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/TOSL
 
 [fedora]
 
-name = [
+legacy-name = [
     "Trusster Open Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "TOSL"
 ]
 

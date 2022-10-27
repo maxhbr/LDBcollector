@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/PlainTeX
 
 [fedora]
 
-name = [
+legacy-name = [
     "PlainTeX License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "PlainTeX"
 ]
 

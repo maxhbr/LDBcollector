@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/BSD#BSDwithAdvertising
 
 [fedora]
 
-name = [
+legacy-name = [
     "BSD License (Advertising Variant)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD with advertising"
 ]
 

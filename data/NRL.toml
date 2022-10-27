@@ -9,11 +9,11 @@ http://web.mit.edu/network/isakmp/nrllicense.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "NRL License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD with advertising"
 ]
 

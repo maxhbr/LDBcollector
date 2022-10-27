@@ -9,6 +9,6 @@ http://opensource.org/licenses/sybase.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "Sybase Open Watcom Public License 1.0"
 ]

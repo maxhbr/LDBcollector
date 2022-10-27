@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/Newsletr
 
 [fedora]
 
-name = [
+legacy-name = [
     "Newsletr License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Newsletr"
 ]

@@ -9,10 +9,10 @@ http://mirbsd.de/MirOS-Licence
 
 [fedora]
 
-name = [
+legacy-name = [
     "MirOS License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MirOS"
 ]

@@ -5,10 +5,10 @@ status = [ "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Verbatim License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Verbatim"
 ]

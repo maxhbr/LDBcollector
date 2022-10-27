@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/AspellRu
 
 [fedora]
 
-name = [
+legacy-name = [
     "Aspell-ru License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ARL"
 ]
 

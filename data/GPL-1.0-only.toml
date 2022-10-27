@@ -9,10 +9,10 @@ http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU General Public License v1.0 only"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "GPLv1"
 ]

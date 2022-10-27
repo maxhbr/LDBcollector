@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/Noweb
 
 [fedora]
 
-name = [
+legacy-name = [
     "Noweb License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Noweb"
 ]

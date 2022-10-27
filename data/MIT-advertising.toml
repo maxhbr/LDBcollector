@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising
 
 [fedora]
 
-name = [
+legacy-name = [
     "Enlightenment License (e16)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT with advertising"
 ]
 

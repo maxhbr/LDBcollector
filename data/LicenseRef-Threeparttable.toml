@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Threeparttable
 
 [fedora]
 
-name = [
+legacy-name = [
     "Threeparttable License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Threeparttable"
 ]
 

@@ -5,10 +5,10 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Liberation Font License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Liberation"
 ]

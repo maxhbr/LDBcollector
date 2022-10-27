@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/BeOpen
 
 [fedora]
 
-name = [
+legacy-name = [
     "BeOpen Open Source License Agreement Version 1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BeOpen"
 ]
 

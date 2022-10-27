@@ -9,10 +9,10 @@ http://opensource.org/licenses/fair.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "Fair License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Fair"
 ]

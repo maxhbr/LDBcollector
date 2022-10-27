@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/MIT#enna
 
 [fedora]
 
-name = [
+legacy-name = [
     "enna License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

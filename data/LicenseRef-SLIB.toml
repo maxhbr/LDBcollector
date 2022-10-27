@@ -9,11 +9,11 @@ http://www-swiss.ai.mit.edu/~jaffer/SLIB_COPYING.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "SLIB License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "SLIB"
 ]
 

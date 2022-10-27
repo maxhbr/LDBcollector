@@ -5,10 +5,10 @@ status = [ "allowed-content", "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Creative Commons Attribution license 2.5"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CC-BY"
 ]

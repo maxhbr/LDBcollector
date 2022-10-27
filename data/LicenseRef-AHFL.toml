@@ -5,10 +5,10 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Atkinson Hyperlegible Font License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "AHFL"
 ]

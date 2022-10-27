@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/UPL
 
 [fedora]
 
-name = [
+legacy-name = [
     "Universal Permissive License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "UPL"
 ]

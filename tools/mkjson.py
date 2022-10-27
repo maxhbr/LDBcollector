@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
             # field: 'fedora_abbrev'
             if "abbreviation" in fedora_keys:
-                fedora_abbrevs = data["fedora"]["abbreviation"]
+                fedora_abbrevs = data["fedora"]["legacy-abbreviation"]
 
                 assert ((isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
                         ("not-allowed" in status)
@@ -127,12 +127,12 @@ if __name__ == "__main__":
                        '{} does not have fedora_abbrevs or is not-allowed'.format(licensefile)
 
             # field: 'fedora_name' (could be a list)
-            if "name" in fedora_keys:
-                fedora_names = data["fedora"]["name"]
+            if "legacy-name" in fedora_keys:
+                fedora_names = data["fedora"]["legacy-name"]
 
                 assert isinstance(fedora_names, str) or isinstance(fedora_names, list) or \
                        ("not-allowed" in status), \
-                       'name in [fedora] section is neither string nor list ({})'.format(licensefile)
+                       'legacy-name in [fedora] section is neither string nor list ({})'.format(licensefile)
 
         # sanity check
         assert isinstance(approved, str), \
@@ -152,7 +152,7 @@ if __name__ == "__main__":
                     i, licensedata, approved, fedora_names, a, spdx_abbrev
                 )
         else:
-            # Handle licenses with only an SPDX abbreviation, not a Fedora abbreviation
+            # Handle licenses with only an SPDX legacy-abbreviation, not a Fedora legacy-abbreviation
             licensedata[i] = {
                 "approved": approved,
                 "spdx_abbrev": spdx_abbrev,

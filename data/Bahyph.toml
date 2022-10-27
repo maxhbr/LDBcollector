@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Bahyph
 
 [fedora]
 
-name = [
+legacy-name = [
     "Bahyph License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Bahyph"
 ]
 

@@ -5,11 +5,11 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "MgOpen Font License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MgOpen"
 ]
 

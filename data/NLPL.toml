@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/NLPL
 
 [fedora]
 
-name = [
+legacy-name = [
     "No Limit Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "NLPL"
 ]

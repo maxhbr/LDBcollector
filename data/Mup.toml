@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/Mup
 
 [fedora]
 
-name = [
+legacy-name = [
     "Mup License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Mup"
 ]

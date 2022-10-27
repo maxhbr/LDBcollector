@@ -10,7 +10,7 @@ This page lists the licenses that are *not-allowed* for use in Fedora. This info
 {% for license in NOTALLOWED_LICENSES -%}
 | {{ spdx_url(license) }}
 | {%- if 'fedora' in license -%}
-        {{ license['fedora']['name']|join(',') }}
+        {{ license['fedora']['legacy-name']|join(',') }}
   {%- else -%}
         {nbsp}
   {%- endif %}

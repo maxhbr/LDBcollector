@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/LOSLA
 
 [fedora]
 
-name = [
+legacy-name = [
     "LEGO Open Source License Agreement"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LOSLA"
 ]
 

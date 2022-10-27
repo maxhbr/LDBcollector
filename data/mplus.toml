@@ -5,10 +5,10 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "mplus Font License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "mplus"
 ]

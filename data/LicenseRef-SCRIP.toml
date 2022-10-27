@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/SCRIP
 
 [fedora]
 
-name = [
+legacy-name = [
     "SCRIP License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "SCRIP"
 ]
 

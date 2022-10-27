@@ -6,10 +6,10 @@ status = [ "allowed" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "mecab-ipadic license"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "mecab-ipadic"
 ]

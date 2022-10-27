@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/Unicode
 
 [fedora]
 
-name = [
+legacy-name = [
     "Unicode License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Unicode"
 ]

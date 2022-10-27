@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/midnight
 
 [fedora]
 
-name = [
+legacy-name = [
     "midnight License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "midnight"
 ]
 

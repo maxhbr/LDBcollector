@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/TCL
 
 [fedora]
 
-name = [
+legacy-name = [
     "TCL/TK License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "TCL"
 ]

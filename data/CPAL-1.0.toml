@@ -9,11 +9,11 @@ https://www.socialtext.net/open/index.cgi?cpal_license_in_wikitext
 
 [fedora]
 
-name = [
+legacy-name = [
     "CPAL License 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CPAL"
 ]
 

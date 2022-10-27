@@ -9,11 +9,11 @@ http://www.imagemagick.org/script/license.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "ImageMagick License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ImageMagick"
 ]
 

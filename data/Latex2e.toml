@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Latex2e
 
 [fedora]
 
-name = [
+legacy-name = [
     "Latex2e License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Latex2e"
 ]
 

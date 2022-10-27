@@ -9,10 +9,10 @@ http://opensource.org/licenses/nethack.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "Nethack General Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "NGPL"
 ]

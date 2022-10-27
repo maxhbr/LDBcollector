@@ -7,11 +7,11 @@ usage = ''' Note: the elements of the covered dataset also must be under terms a
 
 [fedora]
 
-name = [
+legacy-name = [
     "Open Data Commons Open Database License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ODbl-1.0"
 ]
 

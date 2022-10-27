@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/SWL
 
 [fedora]
 
-name = [
+legacy-name = [
     "Scheme Widget Library (SWL) Software License Agreement"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "SWL"
 ]

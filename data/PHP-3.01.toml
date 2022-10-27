@@ -9,11 +9,11 @@ http://www.php.net/license/3_01.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "PHP License v3.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "PHP"
 ]
 

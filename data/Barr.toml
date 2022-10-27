@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Barr
 
 [fedora]
 
-name = [
+legacy-name = [
     "Barr License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Barr"
 ]
 

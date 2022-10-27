@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Dotseqn
 
 [fedora]
 
-name = [
+legacy-name = [
     "Dotseqn License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Dotseqn"
 ]
 

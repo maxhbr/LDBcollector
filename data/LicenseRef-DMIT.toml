@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/DMIT
 
 [fedora]
 
-name = [
+legacy-name = [
     "Docbook MIT License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "DMIT"
 ]
 

@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
 
 [fedora]
 
-name = [
+legacy-name = [
     "Adobe Glyph List License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

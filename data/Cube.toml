@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Cube
 
 [fedora]
 
-name = [
+legacy-name = [
     "Cube License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Cube"
 ]
 

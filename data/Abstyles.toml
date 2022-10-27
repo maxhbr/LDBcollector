@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/Abstyles
 
 [fedora]
 
-name = [
+legacy-name = [
     "Abstyles License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Abstyles"
 ]

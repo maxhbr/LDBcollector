@@ -5,10 +5,10 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "XANO Mincho Font License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "XANO"
 ]

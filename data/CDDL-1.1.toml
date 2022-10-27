@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.1
 
 [fedora]
 
-name = [
+legacy-name = [
     "Common Development Distribution License 1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CDDL-1.1"
 ]

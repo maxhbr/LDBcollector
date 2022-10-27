@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
 
 [fedora]
 
-name = [
+legacy-name = [
     "CMU License (BSD like)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

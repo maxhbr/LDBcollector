@@ -7,10 +7,10 @@ usage = ''' Note: clause VI must NOT be invoked
 
 [fedora]
 
-name = [
+legacy-name = [
     "LinuxTag Green OpenMusic License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Green OpenMusic"
 ]

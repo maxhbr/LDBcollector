@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention
 
 [fedora]
 
-name = [
+legacy-name = [
     "FSF Unlimited License (with License Retention)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "FSFULLR"
 ]
 

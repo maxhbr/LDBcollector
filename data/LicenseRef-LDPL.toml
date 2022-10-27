@@ -5,10 +5,10 @@ status = [ "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Linux Documentation Project License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LDPL"
 ]

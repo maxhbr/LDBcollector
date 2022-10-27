@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM
 
 [fedora]
 
-name = [
+legacy-name = [
     "Adobe Postscript AFM License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "APAFML"
 ]
 

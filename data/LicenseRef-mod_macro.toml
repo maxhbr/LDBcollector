@@ -9,11 +9,11 @@ http://www.cri.ensmp.fr/~coelho/mod_macro/mod_macro/LICENSE
 
 [fedora]
 
-name = [
+legacy-name = [
     "mod_macro License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "mod_macro"
 ]
 

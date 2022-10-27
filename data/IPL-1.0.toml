@@ -9,10 +9,10 @@ http://www.opensource.org/licenses/ibmpl.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "IBM Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "IBM"
 ]

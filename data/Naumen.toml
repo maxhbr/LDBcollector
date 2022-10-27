@@ -9,10 +9,10 @@ http://opensource.org/licenses/naumen.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "Naumen Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Naumen"
 ]

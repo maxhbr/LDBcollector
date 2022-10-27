@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/CRC32
 
 [fedora]
 
-name = [
+legacy-name = [
     "CRC32 License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CRC32"
 ]
 

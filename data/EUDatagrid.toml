@@ -9,10 +9,10 @@ http://www.opensource.org/licenses/eudatagrid.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "EU Datagrid Software License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "EU Datagrid"
 ]

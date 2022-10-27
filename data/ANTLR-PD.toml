@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/ANTLR-PD
 
 [fedora]
 
-name = [
+legacy-name = [
     "ANTLR Software Rights Notice"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ANTLR-PD"
 ]

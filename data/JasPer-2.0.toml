@@ -9,11 +9,11 @@ http://www.ece.uvic.ca/~mdadams/jasper/LICENSE
 
 [fedora]
 
-name = [
+legacy-name = [
     "JasPer License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "JasPer"
 ]
 

@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "BitTorrent License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BitTorrent"
 ]
 

@@ -7,4 +7,4 @@ https://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c
 '''
 
 [fedora]
-abbreviation = [ "MIT" ]
+legacy-abbreviation = [ "MIT" ]

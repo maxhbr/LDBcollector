@@ -9,10 +9,10 @@ http://svnkit.com/license.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "TMate Open Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "TMate"
 ]

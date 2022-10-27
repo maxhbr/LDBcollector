@@ -5,10 +5,10 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Arphic Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Arphic"
 ]

@@ -5,10 +5,10 @@ status = [ "allowed-documentation" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "IEEE and Open Group Documentation License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "IEEE"
 ]

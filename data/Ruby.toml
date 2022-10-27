@@ -9,10 +9,10 @@ http://www.ruby-lang.org/en/LICENSE.txt
 
 [fedora]
 
-name = [
+legacy-name = [
     "Ruby License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Ruby"
 ]

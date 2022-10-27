@@ -9,10 +9,10 @@ http://www.nexb.com/license/LICENSE-OSL-2.0.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Open Software License 2.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OSL 2.0"
 ]

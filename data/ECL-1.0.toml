@@ -9,10 +9,10 @@ http://opensource.org/licenses/ecl1.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "Educational Community License 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ECL 1.0"
 ]

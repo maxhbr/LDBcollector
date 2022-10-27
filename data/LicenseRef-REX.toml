@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/REX
 
 [fedora]
 
-name = [
+legacy-name = [
     "REX License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "REX"
 ]
 

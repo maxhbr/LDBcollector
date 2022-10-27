@@ -9,12 +9,12 @@ http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU Lesser General Public License (no version)",
     "GNU Lesser General Public License v2 (or 2.1) or later"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LGPLv2+"
 ]
 

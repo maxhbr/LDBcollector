@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/xpp
 
 [fedora]
 
-name = [
+legacy-name = [
     "XPP License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "xpp"
 ]

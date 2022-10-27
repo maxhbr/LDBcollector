@@ -9,10 +9,10 @@ http://doc.trolltech.com/4.0/qpl.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Q Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "QPL"
 ]

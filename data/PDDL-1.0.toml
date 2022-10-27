@@ -5,10 +5,10 @@ status = [ "allowed-content" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Open Data Commons Public Domain Dedication and Licence"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "PDDL-1.0"
 ]

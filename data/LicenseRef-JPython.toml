@@ -9,11 +9,11 @@ http://www.jython.org/license.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "JPython License (old)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "JPython"
 ]
 

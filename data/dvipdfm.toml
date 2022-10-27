@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/dvipdfm
 
 [fedora]
 
-name = [
+legacy-name = [
     "dvipdfm License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "dvipdfm"
 ]
 

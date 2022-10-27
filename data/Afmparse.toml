@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Afmparse
 
 [fedora]
 
-name = [
+legacy-name = [
     "Afmparse License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Afmparse"
 ]
 

@@ -9,10 +9,10 @@ https://opensource.org/licenses/EUPL-1.2
 
 [fedora]
 
-name = [
+legacy-name = [
     "European Union Public License 1.2"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "EUPL 1.2"
 ]

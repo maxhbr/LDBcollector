@@ -9,10 +9,10 @@ http://www.fsf.org/licensing/licenses/gpl.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "GNU General Public License v3.0 only"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "GPLv3"
 ]

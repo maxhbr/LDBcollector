@@ -9,10 +9,10 @@ http://www.openoffice.org/licenses/sissl_license.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Sun Industry Standards Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "SISSL"
 ]

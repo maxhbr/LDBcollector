@@ -9,10 +9,10 @@ http://www.sdisw.com/openssl.htm
 
 [fedora]
 
-name = [
+legacy-name = [
     "OpenSSL License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OpenSSL"
 ]

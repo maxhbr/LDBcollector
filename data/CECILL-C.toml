@@ -9,11 +9,11 @@ http://www.cecill.info/licences.en.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "CeCILL-C License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "CeCILL-C"
 ]
 

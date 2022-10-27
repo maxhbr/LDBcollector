@@ -5,9 +5,9 @@ status = [ "allowed" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "FreeBSD BSD Variant (2 clause BSD)",
 ]
-abbreviation = [
+legacy-abbreviation = [
     "BSD",
 ]

@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution
 
 [fedora]
 
-name = [
+legacy-name = [
     "BSD with attribution"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD with attribution"
 ]
 

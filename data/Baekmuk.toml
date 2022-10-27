@@ -5,10 +5,10 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Baekmuk License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Baekmuk"
 ]

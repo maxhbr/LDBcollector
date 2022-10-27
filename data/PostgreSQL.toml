@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/PostgreSQL_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "PostgreSQL License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "PostgreSQL"
 ]

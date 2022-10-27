@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/Sleepycat
 
 [fedora]
 
-name = [
+legacy-name = [
     "Sleepycat Software Product License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Sleepycat"
 ]

@@ -5,11 +5,11 @@ status = [ "allowed" ]
 
 [fedora]
 
-name = ["Academic Free License"]
+legacy-name = ["Academic Free License"]
 
-abbreviation = [ "AFL" ]
+legacy-abbreviation = [ "AFL" ]
 
 notes = '''
-The Fedora wiki list in its most recent version associated the Callaway short name "AFL" with AFL 3.0. However, AFL was undoubtedly meant to encompass earlier AFL versions encountered in Fedora packages, including at least AFL 2.0.
+The Fedora wiki list in its most recent version associated the Callaway short legacy-name "AFL" with AFL 3.0. However, AFL was undoubtedly meant to encompass earlier AFL versions encountered in Fedora packages, including at least AFL 2.0.
 '''
 

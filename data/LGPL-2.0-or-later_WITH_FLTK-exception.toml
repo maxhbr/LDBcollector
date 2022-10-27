@@ -9,11 +9,11 @@ http://www.fltk.org/COPYING.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "FLTK License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LGPLv2 with exceptions"
 ]
 

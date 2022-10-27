@@ -9,11 +9,11 @@ http://opensource.org/licenses/cuaoffice.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "CUA Office Public License Version 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MPLv1.1"
 ]
 

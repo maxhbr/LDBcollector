@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#NTP_variant
 
 [fedora]
 
-name = [
+legacy-name = [
     "MIT:NTP variant"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]

@@ -9,10 +9,10 @@ http://vimdoc.sourceforge.net/htmldoc/uganda.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Vim License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Vim"
 ]

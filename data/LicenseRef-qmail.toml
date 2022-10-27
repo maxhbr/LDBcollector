@@ -9,7 +9,7 @@ http://cr.yp.to/qmail/dist.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "qmail License"
 ]
 

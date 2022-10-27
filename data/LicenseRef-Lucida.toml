@@ -5,11 +5,11 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Lucida Legal Notice"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Lucida"
 ]
 

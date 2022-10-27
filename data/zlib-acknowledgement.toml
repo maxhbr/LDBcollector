@@ -10,12 +10,12 @@ https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
 
 [fedora]
 
-name = [
+legacy-name = [
     "Nunit License",
     "zlib/libpng License with Acknowledgement"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT with advertising",
     "zlib with acknowledgement"
 ]

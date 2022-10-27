@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/MIT-0
 
 [fedora]
 
-name = [
+legacy-name = [
     "MIT No Attribution (MIT-0)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT-0"
 ]

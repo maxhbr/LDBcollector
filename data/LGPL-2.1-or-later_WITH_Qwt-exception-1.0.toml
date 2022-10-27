@@ -9,10 +9,10 @@ http://qwt.sourceforge.net/qwtlicense.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "Qwt License 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "LGPLv2+ with exceptions"
 ]

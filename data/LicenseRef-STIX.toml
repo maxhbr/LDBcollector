@@ -5,10 +5,10 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "STIX Fonts User License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "STIX"
 ]

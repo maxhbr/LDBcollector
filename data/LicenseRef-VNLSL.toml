@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Vita_Nuova_Liberal_Source_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "Vita Nuova Liberal Source License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "VNLSL"
 ]
 

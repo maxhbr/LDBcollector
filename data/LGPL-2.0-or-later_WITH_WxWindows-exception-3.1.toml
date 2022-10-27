@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/wxWindows.html
 
 [fedora]
 
-name = [
+legacy-name = [
     "wxWindows Library License v 3.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "wxWindows"
 ]

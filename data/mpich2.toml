@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/MIT
 
 [fedora]
 
-name = [
+legacy-name = [
     "mpich2 License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]

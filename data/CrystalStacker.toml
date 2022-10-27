@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/CrystalStacker
 
 [fedora]
 
-name = [
+legacy-name = [
     "Crystal Stacker License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Crystal Stacker"
 ]

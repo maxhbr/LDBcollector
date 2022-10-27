@@ -10,12 +10,12 @@ https://fedoraproject.org/wiki/Licensing/MIT
 
 [fedora]
 
-name = [
+legacy-name = [
     "MIT:9MLton variant",
     "Standard ML of New Jersey License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MIT"
 ]
 

@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/Unlicense
 
 [fedora]
 
-name = [
+legacy-name = [
     "Unlicense"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Unlicense"
 ]

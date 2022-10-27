@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Apple_MIT_License
 
 [fedora]
 
-name = [
+legacy-name = [
     "Apple MIT License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "AML"
 ]
 

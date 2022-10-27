@@ -5,11 +5,11 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Charter License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Charter"
 ]
 

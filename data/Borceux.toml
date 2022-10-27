@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Borceux
 
 [fedora]
 
-name = [
+legacy-name = [
     "Borceux license"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Borceux"
 ]
 

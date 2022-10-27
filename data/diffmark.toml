@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/diffmark
 
 [fedora]
 
-name = [
+legacy-name = [
     "diffmark license"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "diffmark"
 ]
 

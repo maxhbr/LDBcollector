@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/IJG
 
 [fedora]
 
-name = [
+legacy-name = [
     "Independent JPEG Group License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "IJG"
 ]

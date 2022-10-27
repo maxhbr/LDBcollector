@@ -9,10 +9,10 @@ http://www.zope.org/Resources/ZPL
 
 [fedora]
 
-name = [
+legacy-name = [
     "Zope Public License v 2.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "ZPLv2.1"
 ]

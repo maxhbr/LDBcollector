@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Glulxe
 
 [fedora]
 
-name = [
+legacy-name = [
     "Glulxe License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Glulxe"
 ]
 

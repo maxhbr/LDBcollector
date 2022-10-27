@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/OSL2.1
 
 [fedora]
 
-name = [
+legacy-name = [
     "Open Software License 2.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OSL 2.1"
 ]

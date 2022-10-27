@@ -5,11 +5,11 @@ status = [ "allowed-content" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "Open Data License (GeoLite Country and GeoLite City databases)"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "BSD with advertising"
 ]
 

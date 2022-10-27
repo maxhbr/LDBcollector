@@ -9,10 +9,10 @@ http://opensource.org/licenses/vovidapl.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "Vovida Software License v. 1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "VSL"
 ]

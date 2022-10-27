@@ -9,10 +9,10 @@ http://opensource.org/licenses/mozilla1.0.php
 
 [fedora]
 
-name = [
+legacy-name = [
     "Mozilla Public License v1.0"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "MPLv1.0"
 ]

@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/STMPL
 
 [fedora]
 
-name = [
+legacy-name = [
     "SciTech MGL Public License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "STMPL"
 ]
 

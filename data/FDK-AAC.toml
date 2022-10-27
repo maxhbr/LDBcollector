@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/FDK-AAC
 
 [fedora]
 
-name = [
+legacy-name = [
     "Fraunhofer FDK AAC License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "FDK-AAC"
 ]
 

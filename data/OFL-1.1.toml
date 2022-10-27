@@ -5,10 +5,10 @@ status = [ "allowed-fonts" ]
 
 [fedora]
 
-name = [
+legacy-name = [
     "SIL Open Font License 1.1"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "OFL"
 ]

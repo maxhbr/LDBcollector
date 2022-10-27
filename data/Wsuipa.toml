@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Wsuipa
 
 [fedora]
 
-name = [
+legacy-name = [
     "Wsuipa License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Wsuipa"
 ]
 

@@ -9,10 +9,10 @@ https://fedoraproject.org/wiki/Licensing/FSFAP
 
 [fedora]
 
-name = [
+legacy-name = [
     "FSF All Permissive license"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "FSFAP"
 ]

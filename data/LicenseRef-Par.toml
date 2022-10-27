@@ -9,11 +9,11 @@ https://fedoraproject.org/wiki/Licensing/Par
 
 [fedora]
 
-name = [
+legacy-name = [
     "Par License"
 ]
 
-abbreviation = [
+legacy-abbreviation = [
     "Par"
 ]
 
