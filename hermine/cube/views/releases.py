@@ -236,6 +236,9 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
                 "normalized license",
                 "corrected_license",
                 "applicable license",
+                "modified",
+                "exploitation",
+                "linking type",
             ]
         )
 
@@ -251,6 +254,9 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
                     usage.version.spdx_valid_license_expr,
                     usage.version.corrected_license,
                     usage.license_expression,
+                    usage.component_modified,
+                    usage.exploitation,
+                    usage.linking,
                 ]
             )
         return response
