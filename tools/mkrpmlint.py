@@ -13,18 +13,11 @@ import os
 import sys
 
 try:
-    import tomllib as toml_module # Python 3.11+ standard library
-    toml_mode = "rb"
+    import tomllib
 except ImportError:
-    import toml as toml_module
-    toml_mode = "r"
+    import tomli as tomllib
 
-try:
-    import tomli_w as toml_w_module
-    toml_w_mode = "wb"
-except ImportError:
-    import toml as toml_w_module
-    toml_w_mode = "w"
+import tomli_w
 
 allowed_values = [
     "allowed",
@@ -66,8 +59,8 @@ if __name__ == "__main__":
             continue
 
         # read in the data file
-        with open(licensefile.path, toml_mode) as f:
-            data = toml_module.load(f)
+        with open(licensefile.path, "rb") as f:
+            data = tomllib.load(f)
 
         keys = [*data]
         license_keys = [*data["license"]]
@@ -104,21 +97,19 @@ if __name__ == "__main__":
             valid_licenses_legacy.add(fedora_abbrev)
 
     # write out the rpmlint toml files
-    with open(outputfile_spdx, toml_w_mode) as f:
+    with open(outputfile_spdx, "wb") as f:
         comment_lines = "# File generated and owned by fedora-license-data\n"
         comment_lines += "# The SPDX license identifiers\n"
-        if "b" in toml_w_mode:
-            comment_lines = comment_lines.encode("utf-8")
+        comment_lines = comment_lines.encode("utf-8")
         f.write(comment_lines)
         rpmlint_dict = {"ValidLicenses": sorted(valid_licenses_spdx),
                         "ValidLicenseExceptions": sorted(valid_exceptions_spdx)}
-        toml_w_module.dump(rpmlint_dict, f)
+        tomli_w.dump(rpmlint_dict, f)
 
-    with open(outputfile_legacy, toml_w_mode) as f:
+    with open(outputfile_legacy, "wb") as f:
         comment_lines = "# File generated and owned by fedora-license-data\n"
         comment_lines += "# The legacy (callaway) license identifiers\n"
-        if "b" in toml_w_mode:
-            comment_lines = comment_lines.encode("utf-8")
+        comment_lines = comment_lines.encode("utf-8")
         f.write(comment_lines)
         rpmlint_dict = {"ValidLicenses": sorted(valid_licenses_legacy)}
-        toml_w_module.dump(rpmlint_dict, f)
+        tomli_w.dump(rpmlint_dict, f)
