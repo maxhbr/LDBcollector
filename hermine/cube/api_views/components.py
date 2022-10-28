@@ -3,9 +3,15 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 
 from rest_framework import viewsets
+from rest_framework import generics
 
 from cube.models import Usage, Component, Version
-from cube.serializers import UsageSerializer, VersionSerializer, ComponentSerializer
+from cube.serializers import (
+    UsageSerializer,
+    UsageflatSerializer,
+    VersionSerializer,
+    ComponentSerializer,
+)
 
 
 class UsageViewSet(viewsets.ModelViewSet):
@@ -16,6 +22,23 @@ class UsageViewSet(viewsets.ModelViewSet):
     """
 
     serializer_class = UsageSerializer
+
+    def get_queryset(self):
+        queryset = Usage.objects.all()
+        release = self.request.query_params.get("release")
+        if release is not None:
+            queryset = queryset.filter(release=release)
+        return queryset
+
+
+class UsageflatList(generics.ListAPIView):
+    """
+    API endpoint to list all usages with explicit mention of the purl
+    of the version of the Component involved and can be filtered by release
+    """
+
+    queryset = Usage.objects.all()
+    serializer_class = UsageflatSerializer
 
     def get_queryset(self):
         queryset = Usage.objects.all()
