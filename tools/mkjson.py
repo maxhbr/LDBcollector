@@ -32,12 +32,12 @@ def usage(prog):
 
 
 def add_license_data(
-    i, licensedata, approved, fedora_names, fedora_abbrev, spdx_abbrev, url, usage, text
+    i, licensedata, approved, fedora_names, fedora_abbrev, spdx_abbrev, status, url, usage, text
 ):
     licensedata[i] = {
         "license": {
             "expression": spdx_abbrev,
-            "status": approved,
+            "status": status,
         },
         "fedora": {
             "legacy-name": fedora_names,
@@ -150,7 +150,7 @@ if __name__ == "__main__":
             fedora_keys = [*data["fedora"]]
 
             # field: 'fedora_abbrev'
-            if "abbreviation" in fedora_keys:
+            if "legacy-abbreviation" in fedora_keys:
                 fedora_abbrevs = data["fedora"]["legacy-abbreviation"]
 
                 assert ((isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
