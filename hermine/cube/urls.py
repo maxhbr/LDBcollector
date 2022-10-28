@@ -137,6 +137,11 @@ urlpatterns = [
         views.CreateLicenseChoiceView.as_view(),
         name="licensechoice_create",
     ),
+    path(
+        "api/usagesflat/",
+        api_views.UsageflatList.as_view(),
+        name="api_usagesflat",
+    ),
     path("api/token-auth/", authviews.obtain_auth_token),
 ]
 

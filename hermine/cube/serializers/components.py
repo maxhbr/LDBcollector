@@ -8,6 +8,21 @@ from cube.models import Usage, Version, Component, License
 from cube.serializers.policy import LicenseChoiceSerializer
 
 
+class UsageflatSerializer(serializers.ModelSerializer):
+    """Serializes a usages including the Purl of the Component version
+    it uses
+    """
+
+    version_purl = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Usage
+        fields = "__all__"
+
+    def get_version_purl(self, obj):
+        return obj.version.purl
+
+
 class UsageSerializer(serializers.ModelSerializer):
     license_choices = LicenseChoiceSerializer(many=True, read_only=True)
 
