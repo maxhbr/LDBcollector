@@ -39,3 +39,14 @@ json:
             - fedora-licenses.json
     script:
         - make json
+
+legal-doc:
+    stage: deploy
+    rules:
+        - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_REF_NAME == "main"'
+    artifacts:
+        paths:
+            - not-allowed-licenses.adoc
+            - allowed-licenses.adoc
+    script:
+        - make legal-doc
