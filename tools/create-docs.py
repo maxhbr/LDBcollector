@@ -82,7 +82,8 @@ for licensefile in os.scandir(opts.datadir):
 
 
 for template_filename in TEMPLATES:
-    with open(template_filename) as f:
+    filename = os.path.join(os.path.dirname(__file__), template_filename)
+    with open(filename) as f:
         template = jinja2.Template(f.read())
     template.globals.update(func_dict)
     msg = template.render(ALLOWED_LICENSES=ALLOWED_LICENSES,

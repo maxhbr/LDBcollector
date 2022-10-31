@@ -31,5 +31,8 @@ install:
 	install -D -m 0644 $(RPMLINT_SPDX) $(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_SPDX))
 	install -D -m 0644 $(RPMLINT_LEGACY) $(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_LEGACY))
 
+legal-doc:
+	$(TOPDIR)/tools/create-docs.py $(TOPDIR)/data
+
 clean:
 	-rm -f $(JSONDB)
