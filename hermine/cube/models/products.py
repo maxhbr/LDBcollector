@@ -35,6 +35,9 @@ class Category(models.Model):
     description = models.TextField(max_length=500, blank=True)
     owner = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 
+    def get_absolute_url(self):
+        return reverse_lazy("cube:category_detail", args=[self.id])
+
     def __str__(self):
         return self.name
 

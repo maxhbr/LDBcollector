@@ -35,6 +35,13 @@ class ProductAddView(LoginRequiredMixin, generic.CreateView):
     # success_url = reverse_lazy("cube:products")
 
 
+class ProductEditView(LoginRequiredMixin, generic.UpdateView):
+    fields = "__all__"
+    model = Product
+    template_name = "cube/product_edit.html"
+    # success_url = reverse_lazy("cube:products")
+
+
 class CategoryListView(LoginRequiredMixin, generic.ListView):
     model = Category
     template_name = "cube/category_list.html"
@@ -43,3 +50,14 @@ class CategoryListView(LoginRequiredMixin, generic.ListView):
 class CategoryDetailView(LoginRequiredMixin, generic.DetailView):
     model = Category
     template_name = "cube/category_detail.html"
+
+
+class CategoryAddView(LoginRequiredMixin, generic.CreateView):
+    fields = "__all__"
+    model = Category
+
+
+class CategoryEditView(LoginRequiredMixin, generic.UpdateView):
+    fields = "__all__"
+    model = Category
+    template_name = "cube/category_edit.html"

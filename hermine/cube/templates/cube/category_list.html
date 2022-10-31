@@ -12,7 +12,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 </ul>
 {% endblock %}
 {% block actions %}
-<a class="button is-info is-inverted" href="{% url 'admin:cube_category_add' %}">
+<a class="button is-info is-inverted" href="{% url 'cube:category_add' %}">
             <span class="icon">
               <i class="fas fa-plus"></i>
             </span>
@@ -46,7 +46,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
       <td>{{category.owner}}</td>
       <td>{{category.product_set.all|length}}</td>
       <td><a href="{% url 'cube:category_detail' category.id %}"><i class="fas fa-info-circle"></i></a> |
-        <a href="/admin/cube/category/{{category.id}}" target="_blank"><i class="far fa-edit"></i></a></td>
+        <a href="{% url 'cube:category_edit' category.id %}"><i class="far fa-edit"></i></a></td>
     </tr>
   </a>
 {% endfor %}

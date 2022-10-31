@@ -14,6 +14,15 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>{{ category.name }}</li>
 </ul>
 {% endblock %}
+{% block actions %}
+<a class="button" href="{% url "cube:category_edit" object.id %}">
+  <span class="icon">
+    <i class="fas fa-edit"></i>
+  </span>
+  <span>Edit this category</span>
+</a>
+{% endblock %}
+
 {% block herozone %}
   <div class="hero-body">
     <p class="title">{{ category.name }}</p>
@@ -29,8 +38,16 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 {% block content %}
 <p>
-  <b>Description:</b> {{ category.description }}  <a href="{% url 'admin:cube_category_change' category.id %} " target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
- </p>
+  <b>Description:</b>
+</p>
+{% if category.description %}
+<div class="box">
+  <p>{{ category.description }}</p>
+</div>
+{% else %}
+<p><i>No description</i></p>
+{% endif %}
+
 <p><b>Owner:</b> {{ category.owner }} - {{ category.owner.first_name }} {{ category.owner.last_name }}</p>
 
   <h2 class="title is-2">Products for this category</h2>

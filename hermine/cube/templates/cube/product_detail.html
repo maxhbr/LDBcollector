@@ -14,6 +14,12 @@ SPDX-License-Identifier: AGPL-3.0-only
 </ul>
 {% endblock %}
 {% block actions %}
+<a class="button" href="{% url "cube:product_edit" product.id %}">
+  <span class="icon">
+    <i class="fas fa-edit"></i>
+  </span>
+  <span>Edit this product</span>
+</a>
 <a class="button is-info is-inverted" href="/admin/cube/release/add/?product={{ product.id }}" target="_blank">
   <span class="icon"><i class="fas fa-plus"></i></span>
   <span>Create a release for this product</span>
@@ -39,10 +45,14 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endfor %}
 </p>
 <p>
-  <b>Description:</b> {{ product.description }}
-  <a href="/admin/cube/product/{{product.id}}" target="_blank">
-    <span class="icon"><i class="fas fa-edit"></i></span>
-  </a>
+  <b>Description:</b>
+  {% if product.description %}
+            <div class="box">
+              <p>{{ product.description }}</p>
+            </div>
+          {% else %}
+            <p><i>No description</i></p>
+          {% endif %}
 </p>
 <p>
   <b>Owner:</b> {{ product.owner }} - {{ product.owner.first_name }} {{ product.owner.last_name }}
