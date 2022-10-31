@@ -24,6 +24,12 @@ urlpatterns = [
     path(
         "category/<int:pk>/", views.CategoryDetailView.as_view(), name="category_detail"
     ),
+    path("category/add/", views.CategoryAddView.as_view(), name="category_add"),
+    path(
+        "category/edit/<int:pk>/",
+        views.CategoryEditView.as_view(),
+        name="category_edit",
+    ),
     path("components/", views.ComponentListView.as_view(), name="components"),
     path("components/popular/", views.PopularListView.as_view(), name="populars"),
     path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),

@@ -50,3 +50,14 @@ class CategoryListView(LoginRequiredMixin, generic.ListView):
 class CategoryDetailView(LoginRequiredMixin, generic.DetailView):
     model = Category
     template_name = "cube/category_detail.html"
+
+
+class CategoryAddView(LoginRequiredMixin, generic.CreateView):
+    fields = "__all__"
+    model = Category
+
+
+class CategoryEditView(LoginRequiredMixin, generic.UpdateView):
+    fields = "__all__"
+    model = Category
+    template_name = "cube/category_edit.html"
