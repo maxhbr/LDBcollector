@@ -298,3 +298,13 @@ class ReleaseFixedLicensesList(ListView):
                 version__spdx_valid_license_expr=F("version__declared_license_expr")
             )
         )
+
+class UsageListView(LoginRequiredMixin, generic.ListView):
+    model = Usage
+    template_name = "cube/release_bom_new.html"
+    paginate_by = 50
+    def get_queryset(self,*args,**kwargs):
+        queryset = Usage.objects.all()
+        release_id = self.kwargs['release_pk']
+        queryset = queryset.filter(release=release_id).order_by('project', 'scope')
+        return queryset
