@@ -233,7 +233,7 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
                 "version",
                 "purl",
                 "declared_license_expr",
-                "normalized license",
+                "normalized_license",
                 "corrected_license",
                 "applicable license",
                 "modified",
