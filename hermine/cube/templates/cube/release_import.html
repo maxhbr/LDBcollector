@@ -12,18 +12,12 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>Hermine</li>
   <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
   <li>{{object.release_number}}</li>
+  <li> Import components</li>
 </ul>
 {% endblock %}
-{% block actions %}
-<a href="{% url 'cube:release_bom_export' object.pk %}" class="button">
-  <span class="icon"><i class="fas fa-file-export"></i></span>
-  <span>Export as CSV</span>
-</a>
-{% endblock %}<>
-
 {% block herozone %}
 <div class="hero-body">
-  <p class="title">Release: {{object.release_number}}</p>
+  <p class="title">Release: {{object.release_number}} - Import components into this release</p>
 </div>
 {% endblock %}
 {% block content %}
@@ -35,8 +29,8 @@ SPDX-License-Identifier: AGPL-3.0-only
         <span>Summary</span>
       </a>
     </li>
-    <li>
-      <a href="{% url 'cube:release_import' object.pk %}">
+    <li class="is-active">
+      <a>
         <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
         <span>Import components</span>
       </a>
@@ -47,21 +41,26 @@ SPDX-License-Identifier: AGPL-3.0-only
         <span>Validation steps</span>
       </a>
     </li>
-    <li class="is-active">
-      <a>
+    <li>
+      <a href="{% url 'cube:release_bom_new' object.pk %}">
         <span class="icon is-small"><i class="fas fa-book" aria-hidden="true"></i></span>
         <span>Bill of Materials</span>
       </a>
     </li>
     <li>
-      <a href="/release/{{object.id}}/obligations">
+      <a href="{% url 'cube:release_oblig' object.pk %}">
         <span class="icon is-small"><i class="fas fa-certificate" aria-hidden="true"></i></span>
         <span>Obligations</span>
       </a>
     </li>
   </ul>
 </div>
-
+{% if messages %}
+    {% for message in messages %}
+    <div class="notification is-{{ message.tags }} is-light">{{ message }}
+    </div>
+    {% endfor %}
+{% endif %}
 <div class="card">
   <div class="card-content">
     <h3>Import BOM</h3>
@@ -75,7 +74,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
       </article>
     {% endif %}
-    <form action="{% url 'cube:release_bom' release.id %}" enctype="multipart/form-data" method="post">
+    <form action="{% url 'cube:release_import' release.id %}" enctype="multipart/form-data" method="post">
       {% csrf_token %}
       <table>
         {{ form }}
@@ -87,54 +86,5 @@ SPDX-License-Identifier: AGPL-3.0-only
     </form>
   </div>
 </div>
-
-<div class="level">
-  <div class="level-left"></div>
-  <div class="level-right">
-    <div class="level-item">
-      <a class="button" href="{% url "cube:release_bom_export" release.id %}">Export as CSV</a>
-    </div>
-  </div>
-</div>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Sub project</th>
-      <th>Scope</th>
-      <th>Component, version</th>
-      <th>Concluded License</th>
-      <th>Chosen License</th>
-      <th>Modification</th>
-      <th>Exploitation</th>
-      <th>Linking type</th>
-      <th>Edit</th>
-    </tr>
-  </thead>
-  <tbody>
-
-{% for usage in object.usage_set.all %}
-    <tr>
-      <td><abbr title="{{ usage.project|truncatechars:50 }}">{{ usage.project|truncatechars:20 }}</abbr></td>
-      <td>{{ usage.scope }}</td>
-      <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a> {{ usage.version.version_number }}</td>
-      <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr }}</td>
-      <td>{{ usage.license_expression }}</td>
-      <td>
-      {% if usage.component_modified == "Altered" %}
-        <span class="tag is-warning">
-        {% else %}
-          <span class="tag is-light">
-      {% endif %}
-      {{ usage.component_modified }}
-      </span>
-      </td>
-      <td>{{ usage.get_exploitation_display }}</td>
-      <td>{{ usage.linking }}</td>
-      <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></td>
-            </tr>
-{% endfor %}
-  </tbody>
-</table>
 {% endblock %}
 

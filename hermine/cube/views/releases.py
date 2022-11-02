@@ -122,6 +122,54 @@ class ReleaseBomView(LoginRequiredMixin, UpdateView):
         return super().get_context_data(**kwargs)
 
 
+class ReleaseImportView(LoginRequiredMixin, UpdateView):
+    model = Release
+    form_class = ImportBomForm
+    context_object_name = "release"
+    template_name = "cube/release_import.html"
+
+    def get_success_url(self):
+        return reverse("cube:release_import", kwargs={"pk": self.object.pk})
+
+    def form_valid(self, form):
+        replace = form.cleaned_data["import_mode"] == ImportBomForm.IMPORT_MODE_REPLACE
+        try:
+            if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
+                import_ort_evaluated_model_json_file(
+                    self.request.FILES["file"],
+                    self.object.pk,
+                    replace,
+                    linking=form.cleaned_data.get("linking"),
+                )
+            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_SPDX:
+                import_spdx_file(
+                    self.request.FILES["file"],
+                    self.object.pk,
+                    replace,
+                    linking=form.cleaned_data.get("linking"),
+                )
+        except SBOMImportFailure as e:
+            form.add_error(None, e)
+            return super().form_invalid(form)
+
+        messages.add_message(
+            self.request,
+            messages.SUCCESS,
+            mark_safe(
+                f"""
+                You successfully uploaded your file.
+                You can add components from another source or check the validation steps you need to achieve in the
+                <b><a href="{reverse("cube:release_validation", kwargs={"pk": self.object.id})}"> Validation tab</a></b>.
+                """
+            ),
+        )
+
+        return super().form_valid(form)
+
+    def get_context_data(self, **kwargs):
+        return super().get_context_data(**kwargs)
+
+
 class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
     """
     Lists relevant obligations for a given release
@@ -299,12 +347,14 @@ class ReleaseFixedLicensesList(ListView):
             )
         )
 
+
 class UsageListView(LoginRequiredMixin, generic.ListView):
     model = Usage
     template_name = "cube/release_bom_new.html"
     paginate_by = 50
-    def get_queryset(self,*args,**kwargs):
+
+    def get_queryset(self, *args, **kwargs):
         queryset = Usage.objects.all()
-        release_id = self.kwargs['release_pk']
-        queryset = queryset.filter(release=release_id).order_by('project', 'scope')
+        release_id = self.kwargs["release_pk"]
+        queryset = queryset.filter(release=release_id).order_by("project", "scope")
         return queryset
