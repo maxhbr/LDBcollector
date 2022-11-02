@@ -227,7 +227,7 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
         writer = csv.writer(response)
         writer.writerow(
             [
-                "sub project",
+                "sub_project",
                 "scope",
                 "name",
                 "version",
