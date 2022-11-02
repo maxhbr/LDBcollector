@@ -1,7 +1,7 @@
 %global forgeurl https://gitlab.com/fedora/legal/fedora-license-data
 
 Name:           fedora-license-data
-Version:        1.6
+Version:        1.7
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -83,6 +83,21 @@ cp LICENSES/* ./
 
 
 %changelog
+* Wed Nov 02 2022 Miroslav Suchý <msuchy@redhat.com> 1.7-1
+- redefine JSON format
+- Also use rich-deps on EL 8 (miro@hroncok.cz)
+- Once again, abandon the toml module, use tomllib/tomli/tomli-w instead
+  (miro@hroncok.cz)
+- Fix typos in license review template (dcavalca@fedoraproject.org)
+- rename [fedora]name to [fedora]legacy-name
+- rename [fedora]abbreviation to [fedora]legacy-abbreviation
+- Revise toml for GPL-2.0-or-later WITH x11vnc-openssl-exception
+  (rfontana@redhat.com)
+- Add FSFULLRWD (rfontana@redhat.com)
+- Add OFL-1.1-RFN as allowed-fonts (rfontana@redhat.com)
+- use tomllib instead of toml
+- document availablity of fedora-licenses.json artifact
+
 * Thu Oct 13 2022 Miroslav Suchý <msuchy@redhat.com> 1.6-1
 - Add MS-LPL as not-allowed
 - Add ISO-8879 to not-allowed with big usage exception
