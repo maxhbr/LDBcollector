@@ -66,6 +66,9 @@ class Release(models.Model):
     valid_step = models.IntegerField("Validation Step", blank=True, null=True)
     commit = models.CharField("Commit hash or ref", max_length=255, blank=True)
 
+    def get_absolute_url(self):
+        return reverse_lazy("cube:release_summary", args=[self.id])
+
     def __str__(self):
         return self.product.__str__() + " " + self.release_number
 

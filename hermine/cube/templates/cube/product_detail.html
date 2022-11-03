@@ -20,7 +20,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   </span>
   <span>Edit this product</span>
 </a>
-<a class="button is-info is-inverted" href="/admin/cube/release/add/?product={{ product.id }}" target="_blank">
+<a class="button is-info is-inverted" href="{% url 'cube:product_add_release' product.id %} ">
   <span class="icon"><i class="fas fa-plus"></i></span>
   <span>Create a release for this product</span>
 </a>

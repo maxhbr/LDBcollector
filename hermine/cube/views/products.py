@@ -42,6 +42,17 @@ class ProductEditView(LoginRequiredMixin, generic.UpdateView):
     # success_url = reverse_lazy("cube:products")
 
 
+class ProductAddReleaseView(LoginRequiredMixin, generic.CreateView):
+    fields = ["product", "release_number"]
+    model = Release
+    template_name = "cube/product_add_release.html"
+    # success_url = reverse_lazy("cube:products")
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["product"] = Product.objects.get(id=self.kwargs["product_pk"])
+        return context
+
+
 class CategoryListView(LoginRequiredMixin, generic.ListView):
     model = Category
     template_name = "cube/category_list.html"
