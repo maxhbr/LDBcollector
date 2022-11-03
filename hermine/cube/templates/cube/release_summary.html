@@ -20,6 +20,14 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>Summary</li>
 </ul>
 {% endblock %}
+{% block actions %}
+<a class="button" href="{% url "cube:release_edit" release.id %}">
+  <span class="icon">
+    <i class="fas fa-edit"></i>
+  </span>
+  <span>Edit this release</span>
+</a>
+{% endblock %}
 {% block herozone %}
 <div class="hero-body">
   <p class="title">Release: {{object.release_number}}</p>

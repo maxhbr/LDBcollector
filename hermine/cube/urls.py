@@ -98,6 +98,11 @@ urlpatterns = [
         "export/generics/", views.ExportGenericsView.as_view(), name="export_generics"
     ),
     path(
+        "release/<int:pk>/edit/",
+        views.ReleaseUpdateView.as_view(),
+        name="release_edit",
+    ),
+    path(
         "release/<int:pk>/validation/",
         views.ReleaseView.as_view(),
         name="release_validation",
