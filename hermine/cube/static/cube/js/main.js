@@ -10,8 +10,8 @@ Array.from(document.getElementsByClassName('menu is-menu-main')).forEach(functio
     elA.addEventListener('click', function (e) {
       var dropdownIcon = e.currentTarget.getElementsByClassName('dropdown-icon')[0].getElementsByClassName('fas')[0];
       e.currentTarget.parentNode.classList.toggle('is-active');
-      dropdownIcon.classList.toggle('fa-plus-square');
-      dropdownIcon.classList.toggle('fa-minus-square');
+      dropdownIcon.classList.toggle('fa-caret-left');
+      dropdownIcon.classList.toggle('fa-caret-down');
     });
   });
 });
@@ -35,4 +35,5 @@ Array.from(document.getElementsByClassName('jb-navbar-menu-toggle')).forEach(fun
     dropdownIcon.classList.toggle('mdi-close');
   });
 });
+
 
