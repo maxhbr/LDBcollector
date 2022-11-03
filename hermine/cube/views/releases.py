@@ -160,7 +160,7 @@ class ReleaseExploitationForm(Form):
         super().__init__(*args, **kwargs)
 
         for project, scope, count in self.scopes:
-            self.fields[project + scope] = ChoiceField(
+            self.fields[str(project) + str(scope)] = ChoiceField(
                 choices=Usage.EXPLOITATION_CHOICES,
                 widget=Select(attrs={"class": "select"}),
                 label=f"{project or '(project undefined)'} - {scope} ({count} components)",
@@ -316,3 +316,8 @@ class UsageListView(LoginRequiredMixin, generic.ListView):
         release_id = self.kwargs["release_pk"]
         queryset = queryset.filter(release=release_id).order_by("project", "scope")
         return queryset
+
+
+class ReleaseUpdateView(LoginRequiredMixin, UpdateView):
+    model = Release
+    fields = ["product", "release_number", "commit", "ship_status"]
