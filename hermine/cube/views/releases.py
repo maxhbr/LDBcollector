@@ -160,7 +160,7 @@ class ReleaseExploitationForm(Form):
         super().__init__(*args, **kwargs)
 
         for project, scope, count in self.scopes:
-            self.fields[project + scope] = ChoiceField(
+            self.fields[str(project) + str(scope)] = ChoiceField(
                 choices=Usage.EXPLOITATION_CHOICES,
                 widget=Select(attrs={"class": "select"}),
                 label=f"{project or '(project undefined)'} - {scope} ({count} components)",
