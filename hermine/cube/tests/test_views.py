@@ -23,7 +23,7 @@ class UnauthenticatedTestCase(TestCase):
         reverse("cube:component_detail", kwargs={"pk": 2}),
         reverse("cube:release_validation", kwargs={"pk": 1}),
         reverse("cube:release_summary", kwargs={"pk": 1}),
-        reverse("cube:release_bom", kwargs={"pk": 1}),
+        reverse("cube:release_bom", kwargs={"release_pk": 1}),
         reverse("cube:release_bom_export", kwargs={"pk": 1}),
         reverse("cube:licenses"),
         reverse("cube:license", kwargs={"pk": 3}),
@@ -104,7 +104,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         self.assertContains(res, "Release: 1.0")  # release number
 
     def test_release_bom_view(self):
-        url = reverse("cube:release_bom", kwargs={"pk": 1})
+        url = reverse("cube:release_bom", kwargs={"release_pk": 1})
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
         self.assertContains(
