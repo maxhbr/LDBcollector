@@ -43,13 +43,13 @@ class ProductEditView(LoginRequiredMixin, generic.UpdateView):
 
 
 class ProductAddReleaseView(LoginRequiredMixin, generic.CreateView):
-    fields = "__all__"
+    fields = ["product", "release_number"]
     model = Release
     template_name = "cube/product_add_release.html"
     # success_url = reverse_lazy("cube:products")
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["product"] = Product.objects.get(id=self.kwargs['product_pk'])
+        context["product"] = Product.objects.get(id=self.kwargs["product_pk"])
         return context
 
 
