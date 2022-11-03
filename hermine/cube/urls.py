@@ -117,16 +117,15 @@ urlpatterns = [
         views.ReleaseImportView.as_view(),
         name="release_import",
     ),
-    path("release/<int:pk>/bom/", views.ReleaseBomView.as_view(), name="release_bom"),
     path(
         "release/<int:pk>/bom/export/",
         views.ReleaseBomExportView.as_view(),
         name="release_bom_export",
     ),
     path(
-        "release/<int:release_pk>/bom_new/",
+        "release/<int:release_pk>/bom/",
         views.UsageListView.as_view(),
-        name="release_bom_new",
+        name="release_bom",
     ),
     path(
         "release/<int:pk>/obligations/",

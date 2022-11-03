@@ -1,21 +1,20 @@
 <!--
-SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
-SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
 
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 {% extends "cube/cube.html" %}
-{% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
+{% block title %}{{ release }}{% endblock %}
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
-  <li>{{object.release_number}}</li>
+  <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
+  <li>{{release.release_number}}</li>
 </ul>
 {% endblock %}
 {% block actions %}
-<a href="{% url 'cube:release_bom_export' object.pk %}" class="button">
+<a href="{% url 'cube:release_bom_export' release.pk %}" class="button">
   <span class="icon"><i class="fas fa-file-export"></i></span>
   <span>Export as CSV</span>
 </a>
@@ -23,26 +22,26 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block herozone %}
 <div class="hero-body">
-  <p class="title">Release: {{object.release_number}}</p>
+  <p class="title">Release: {{release.release_number}}</p>
 </div>
 {% endblock %}
 {% block content %}
 <div class="tabs is-centered is-boxed is-medium">
   <ul>
     <li>
-      <a href="{% url 'cube:release_summary' object.pk %}">
+      <a href="{% url 'cube:release_summary' release.pk %}">
         <span class="icon is-small"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
         <span>Summary</span>
       </a>
     </li>
     <li>
-      <a href="{% url 'cube:release_import' object.pk %}">
+      <a href="{% url 'cube:release_import' release.pk %}">
         <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
         <span>Import components</span>
       </a>
     </li>
     <li>
-      <a href="/release/{{object.id}}/validation/">
+      <a href="/release/{{release.id}}/validation/">
         <span class="icon is-small"><i class="fas fa-check-double" aria-hidden="true"></i></span>
         <span>Validation steps</span>
       </a>
@@ -54,49 +53,14 @@ SPDX-License-Identifier: AGPL-3.0-only
       </a>
     </li>
     <li>
-      <a href="/release/{{object.id}}/obligations">
+      <a href="/release/{{release.id}}/obligations">
         <span class="icon is-small"><i class="fas fa-certificate" aria-hidden="true"></i></span>
         <span>Obligations</span>
       </a>
     </li>
   </ul>
 </div>
-
-<div class="card">
-  <div class="card-content">
-    <h3>Import BOM</h3>
-    {% if form.errors %}
-      <article class="message is-danger">
-        <div class="message-header">
-          <p>Failure</p>
-        </div>
-        <div class="message-body">
-          <span class="icon has-text-danger"><i class="fas fa-exclamation-triangle"></i></span> Import failed.
-        </div>
-      </article>
-    {% endif %}
-    <form action="{% url 'cube:release_bom' release.id %}" enctype="multipart/form-data" method="post">
-      {% csrf_token %}
-      <table>
-        {{ form }}
-        <tr>
-          <td></td>
-          <td><button class="button is-primary">Import now</button></td>
-        </tr>
-      </table>
-    </form>
-  </div>
-</div>
-
-<div class="level">
-  <div class="level-left"></div>
-  <div class="level-right">
-    <div class="level-item">
-      <a class="button" href="{% url "cube:release_bom_export" release.id %}">Export as CSV</a>
-    </div>
-  </div>
-</div>
-
+{% include "cube/includes/list_nav.html" %}
 <table class="table">
   <thead>
     <tr>
@@ -113,7 +77,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   </thead>
   <tbody>
 
-{% for usage in object.usage_set.all %}
+{% for usage in object_list %}
     <tr>
       <td><abbr title="{{ usage.project|truncatechars:50 }}">{{ usage.project|truncatechars:20 }}</abbr></td>
       <td>{{ usage.scope }}</td>

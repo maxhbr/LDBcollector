@@ -74,54 +74,6 @@ class ReleaseView(LoginRequiredMixin, generic.DetailView):
         }
 
 
-class ReleaseBomView(LoginRequiredMixin, UpdateView):
-    model = Release
-    form_class = ImportBomForm
-    context_object_name = "release"
-    template_name = "cube/release_bom.html"
-
-    def get_success_url(self):
-        return reverse("cube:release_bom", kwargs={"pk": self.object.pk})
-
-    def form_valid(self, form):
-        replace = form.cleaned_data["import_mode"] == ImportBomForm.IMPORT_MODE_REPLACE
-        try:
-            if form.cleaned_data["bom_type"] == ImportBomForm.BOM_ORT:
-                import_ort_evaluated_model_json_file(
-                    self.request.FILES["file"],
-                    self.object.pk,
-                    replace,
-                    linking=form.cleaned_data.get("linking"),
-                )
-            elif form.cleaned_data["bom_type"] == ImportBomForm.BOM_SPDX:
-                import_spdx_file(
-                    self.request.FILES["file"],
-                    self.object.pk,
-                    replace,
-                    linking=form.cleaned_data.get("linking"),
-                )
-        except SBOMImportFailure as e:
-            form.add_error(None, e)
-            return super().form_invalid(form)
-
-        messages.add_message(
-            self.request,
-            messages.SUCCESS,
-            mark_safe(
-                f"""
-                You successfully uploaded your file.
-                Go check the validation steps you need to achieve at the relevant
-                <b><a href="{reverse("cube:release_validation", kwargs={"pk": self.object.id})}"> release page</a></b>.
-                """
-            ),
-        )
-
-        return super().form_valid(form)
-
-    def get_context_data(self, **kwargs):
-        return super().get_context_data(**kwargs)
-
-
 class ReleaseImportView(LoginRequiredMixin, UpdateView):
     model = Release
     form_class = ImportBomForm
@@ -350,7 +302,7 @@ class ReleaseFixedLicensesList(ListView):
 
 class UsageListView(LoginRequiredMixin, generic.ListView):
     model = Usage
-    template_name = "cube/release_bom_new.html"
+    template_name = "cube/release_bom.html"
     paginate_by = 50
 
     def get_context_data(self, *args, **kwargs):

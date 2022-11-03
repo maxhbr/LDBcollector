@@ -13,7 +13,7 @@ class ImportForm(TestCase):
     fixtures = ["test_data.json"]
 
     def test_import_bom_form_with_spdx(self):
-        url = reverse("cube:release_bom", kwargs={"pk": 1})
+        url = reverse("cube:release_bom", kwargs={"release_pk": 1})
         self.client.post(
             url,
             {
