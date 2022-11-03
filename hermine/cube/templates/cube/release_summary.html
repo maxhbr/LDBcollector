@@ -35,19 +35,25 @@ SPDX-License-Identifier: AGPL-3.0-only
         </a>
       </li>
       <li>
-        <a href="/release/{{object.id}}/validation/">
+        <a href="{% url 'cube:release_import' object.pk %}">
+          <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
+          <span>Import components</span>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'cube:release_validation' object.pk %}">
           <span class="icon is-small"><i class="fas fa-check-double" aria-hidden="true"></i></span>
           <span>Validation steps</span>
         </a>
       </li>
       <li>
-        <a href="/release/{{release.id}}/bom">
+        <a href="{% url 'cube:release_bom_new' object.pk %}">
           <span class="icon is-small"><i class="fas fa-book" aria-hidden="true"></i></span>
           <span>Bill of Materials</span>
         </a>
       </li>
       <li>
-        <a href="/release/{{release.id}}/obligations">
+        <a href="{% url 'cube:release_oblig' object.pk %}">
           <span class="icon is-small"><i class="fas fa-certificate" aria-hidden="true"></i></span>
           <span>Obligations</span>
         </a>
@@ -56,7 +62,6 @@ SPDX-License-Identifier: AGPL-3.0-only
   </div>
 
 <div class="tile is-ancestor">
-
   <div class="tile is-parent">
     <div class="card tile is-child">
       <header class="card-header">
@@ -97,62 +102,42 @@ SPDX-License-Identifier: AGPL-3.0-only
     <div class="card tile is-child">
       <header class="card-header">
         <p class="card-header-title">
-          <span class="icon"><i class="fas fa-upload"></i></span>
-          Add components to the release
+          <span class="icon"><i class="fas fa-sitemap"></i></span>
+        Exploitation decisions for the scopes of this release
         </p>
       </header>
       <div class="card-content">
-        <form action="{% url 'cube:release_bom' release.id %}" enctype="multipart/form-data" method="post">
-          {% csrf_token %}
-          <table>
-            {{ bom_form }}
+        <form action="{% url "cube:release_summary" release.id %}" method="POST">
+        <table>
+          <thead>
+              <tr>
+                <th>Sub project</th>
+                <th>Scope</th>
+                <th>Components</th>
+                <th>Exploitation</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% csrf_token %}
+              {% for scope in exploitation_form %}
+                <tr>
+                  <td>{{ scope.project }}</td>
+                  <td>{{ scope.scope }}</td>
+                  <td>{{ scope.count }}</td>
+                  <td>{{ scope.field }}</td>
+                  {{ scope.field.errors }}
+                </tr>
+              {% endfor %}
             <tr>
               <td></td>
-              <td><button class="button is-primary">Import now</button></td>
+              <td><button class="button is-primary">Update</button></td>
             </tr>
+          </tbody>
           </table>
         </form>
       </div>
-    </div>
   </div>
 </div>
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title">
-      <span class="icon"><i class="fas fa-sitemap"></i></span>
-      Exploitation decisions for the scopes of this release
-    </p>
-  </header>
-  <div class="card-content">
-    <form action="{% url "cube:release_summary" release.id %}" method="POST">
-    <table>
-      <thead>
-          <tr>
-            <th>Sub project</th>
-            <th>Scope</th>
-            <th>Components</th>
-            <th>Exploitation</th>
-          </tr>
-      </thead>
-      <tbody>
-          {% csrf_token %}
-          {% for scope in exploitation_form %}
-            <tr>
-              <td>{{ scope.project }}</td>
-              <td>{{ scope.scope }}</td>
-              <td>{{ scope.count }}</td>
-              <td>{{ scope.field }}</td>
-              {{ scope.field.errors }}
-            </tr>
-          {% endfor %}
-        </tbody>
-      <tr>
-        <td></td>
-        <td><button class="button is-primary">Update</button></td>
-      </tr>
-    </table>
-  </form>
-  </div>
-</div>
+
 
 {% endblock %}
