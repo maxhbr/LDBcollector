@@ -29,6 +29,19 @@ SPDX-License-Identifier: AGPL-3.0-only
   </p>
 {% endblock %}
 {% block content %}
+{% if form.errors %}
+  <article class="message is-danger">
+    <div class="message-header">
+      <p>Failure</p>
+    </div>
+    <div class="message-body">
+      <span class="icon has-text-danger"><i class="fas fa-exclamation-triangle"></i></span> Couldn't create a release because: {{ form.non_field_errors }} </div>
+    <ul>
+    </ul>
+  </article>
+{% endif %}
+
+
 <form method="post">
   {% csrf_token %}
   <input type="hidden" name="product" id="id_product" value="{{ product.id }}" >
@@ -37,6 +50,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <div class="control">
     <input class="input" type="text" name="release_number" maxlength="200" required id="id_release_number" placeholder="Number of this release">
   </div>
+
   <p class="help">Please type a release number (must be unique)</p>
 </div>
   <div class="control">
