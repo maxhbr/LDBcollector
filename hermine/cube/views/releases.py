@@ -353,6 +353,12 @@ class UsageListView(LoginRequiredMixin, generic.ListView):
     template_name = "cube/release_bom_new.html"
     paginate_by = 50
 
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        release = Release.objects.get(pk=self.kwargs["release_pk"])
+        context["release"] = release
+        return context
+
     def get_queryset(self, *args, **kwargs):
         queryset = Usage.objects.all()
         release_id = self.kwargs["release_pk"]
