@@ -98,7 +98,7 @@ Link: http://www.ifross.org/sites/default/files/130618%20Urteil%20Fantec.pdf
 
 AVM ./. Cybits (Hauptsache)
 
-Link: http://www.ifross.org/sites/default/files/LG%20Berlin%20AVM%20v%20Cybits_0.pdf
+Link: http://www.ifross.org/Fremdartikel/LG_Berlin_AVM_v_Cybits_0.pdf
 
 #### LG Bochum, Teilurteil v. 10.02.2011, Az. I-8 O 293/09
 
@@ -130,7 +130,7 @@ English translation: http://www.ifross.org/Fremdartikel/judgment_dc_frankfurt_gp
 
 WLAN-Router
 
-Link: http://www.ifross.org/Fremdartikel/LG%20Berlin%20GPL-Entscheidung21.2.06.pdf
+Link: http://www.ifross.de/Fremdartikel/LG_Berlin_GPL-Entscheidung_21_2_06.pdf
 
 #### LG München I, Urteil v. 19.05.2004, Az. 21 O 6123/04
 
