@@ -1247,6 +1247,25 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-scancode-apple-sscl"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-python-cwi"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ldpgpl-1a"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+
+  - id: "Vim"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+
   - id: "LicenseRef-scancode-ws-addressing-spec"
     categories:
       - "permissive"
@@ -3885,6 +3904,16 @@ categorizations:
       - "irrelevant"
 
   - id: "FTL"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "EDL-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-openpub"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
