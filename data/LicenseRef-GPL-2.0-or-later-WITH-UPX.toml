@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-GPL-2.0-or-later WITH UPX"
+expression = "LicenseRef-GPL-2.0-or-later-WITH-UPX"
 
 status = [ "not-allowed" ]
 
