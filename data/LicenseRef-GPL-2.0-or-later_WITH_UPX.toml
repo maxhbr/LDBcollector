@@ -1,6 +1,6 @@
 [license]
 
-expression = "LicenseRef-UPX"
+expression = "LicenseRef-GPL-2.0-or-later WITH UPX"
 
 status = [ "not-allowed" ]
 
@@ -15,9 +15,11 @@ our understanding is that certain statements in this file (particularly in the "
 
 Regardless of whether these statements are seen as a GPL exception or as an alternative license, they should be classified as "not-allowed" for Fedora. However, given the clarifications made by the UPX maintainers, UPX is permitted to be packaged in Fedora under GPLv2-or-later. The spec file license tag (assuming no other pertinent licensing information applies) should be "GPL-2.0-or-later".
 
-The equivalent TOML file LicenseRef-GPL-2.0-or-later_WITH_UPX.toml (with status "not-allowed") is also being added to the TOML file directory since some may prefer to view this as a GPL exception for Fedora classification purposes. 
+The equivalent TOML file LicenseRef-UPX.toml (with status "not-allowed") is also being added to the TOML file directory since some may prefer to view this as a distinct license rather than as a GPL exception for Fedora classification purposes. 
 
 This TOML file contains most of the contents of the LICENSE file (some material at the beginning and end is not relevant and has not been copied).
+
+We should change the SPDX expression if SPDX adds the 'ExpressionRef' construct permitting user-defined exceptions to something like 'GPL-2.0-or-later WITH ExceptionRef-UPX'.
 '''
 
 text = '''
