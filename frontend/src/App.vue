@@ -39,7 +39,7 @@
       Maintained by
       <b-link href="https://zhcxww.github.io/" target="_blank">Weiwei Xu</b-link>.<br />
       The content of this site, all source code and data available are under the
-      <b-link href="http://license.coscl.org.cn/MulanPubL-2.0/index.html" target="_blank"> Mulan PubL v2</b-link>.
+      <b-link href="https://spdx.org/licenses/MulanPSL-2.0.html" target="_blank"> Mulan PSL v2</b-link>.
     </div>
 
   </div>

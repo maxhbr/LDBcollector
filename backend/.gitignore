@@ -11,5 +11,5 @@ __pycache__/
 *.log
 temp_files
 .env
-depends.log
+*.log
 logging

@@ -122,23 +122,26 @@ export default {
       step_active: 0,
       licenses: [["MIT"], [ "GPL-2.0-only", "LGPL-2.1-or-later", "BSL-1.0", "Apache-2.0", "GPL-2.0-or-later"], ["LicenseRef-scancode-wordnet", "LicenseRef-scancode-public-domain", "LicenseRef-scancode-other-permissive", "LicenseRef-scancode-mit-old-style"]],
       table_data: [
-        {
-          compatibility: 0,
-          name: '许可证1'
-        },
-        {
-          compatibility: 0,
-          name: '许可证1'
-        },
-        {
-          compatibility: 0,
-          name: '许可证1'
-        },
-        {
-          compatibility: 0,
-          name: '许可证1'
-        },
-
+        {compatibility: 0,name: 'MIT'},
+        {compatibility: 0,name: 'Apache-2.0'},
+        {compatibility: 0,name: 'GPL-3.0-only'},
+        {compatibility: 0,name: 'BSD-3-Clause'},
+        {compatibility: 0,name: 'GPL-2.0-only'},
+        {compatibility: 0,name: 'AGPL-3.0-only'},
+        {compatibility: 0,name: 'MPL-2.0'},
+        {compatibility: 0,name: 'LGPL-3.0-only'},
+        {compatibility: 0,name: 'BSD-2-Clause'},
+        {compatibility: 0,name: 'Unlicense'},
+        {compatibility: 0,name: 'ISC'},
+        {compatibility: 0,name: 'EPL-1.0'},
+        {compatibility: 0,name: 'CC0-1.0'},
+        {compatibility: 0,name: 'LGPL-2.1-only'},
+        {compatibility: 0,name: 'WTFPL'},
+        {compatibility: 0,name: 'Zlib'},
+        {compatibility: 0,name: 'EPL-2.0'},
+        {compatibility: 0,name: 'MulanPSL-2.0'},
+        {compatibility: 0,name: 'MulanPubL-2.0'},
+        {compatibility: 0,name: 'Artistic-2.0'},
       ],
       cur_option: '',
       sort_options: [

@@ -6,17 +6,17 @@
 							<p class="instruction-font">说明：不同类型的开源许可证反映了您如何看待开源软件（或其他作品）的使用问题，<b>宽松型开源许可证</b>允许用户自由地使用、复制、修改和分发软件，
 									且重新分发修改后的软件允许用户重新选择许可方式，甚至闭源，用户拥有更多的自主权；<b>限制型开源许可证</b>允许用户自由地使用、复制、修改和分发软件，
 									但重新分发的软件通常须要在相同的开源许可证（或其兼容的开源许可证）下授权，以确保软件的持续开源;将软件放置<b>公共领域</b>，意味着您放弃对软件的版权保护，
-									任何人都可以无偿地使用和修改,甚至可以删除您的名字视为其自己的作品。如果您需要考虑<b>开源商业模式</b>和<b>项目社区发展</b>，更多参考请点击<a href="{% url 'ossls:license_type_choice' %}" target="_blank" style="color:blue">这里</a>。
+									任何人都可以无偿地使用和修改,甚至可以删除您的名字视为其自己的作品。
 							</p>
 						</div>
 						<div class="radio-area">
 							<!-- <div><label><input name="question1" type="radio" style="outline:none" value="宽松型开源许可证" />A、支持，宽松型开源许可证</label></div>
 							<div><label><input name="question1" type="radio" style="outline:none" value="限制型开源许可证" />B、不支持，限制型开源许可证</label></div>
 							<div><label><input name="question1" type="radio" style="outline:none" value="公共领域许可证" />C、无所谓，将作品放置公共领域</label></div> -->
-                            <b-form-group v-slot="{ ariaDescribedby }">
-                            <b-form-radio v-model="selected" :aria-describedby="ariaDescribedby" value="A">A、支持，宽松型开源许可证</b-form-radio>
-                            <b-form-radio v-model="selected" :aria-describedby="ariaDescribedby" value="B">B、不支持，限制型开源许可证</b-form-radio>
-                            <b-form-radio v-model="selected" :aria-describedby="ariaDescribedby" value="C">C、无所谓，将作品放置公共领域</b-form-radio>
+                            <b-form-group>
+                            <b-form-radio v-model="selected" value="A">A、支持，宽松型开源许可证</b-form-radio>
+                            <b-form-radio v-model="selected" value="B">B、不支持，限制型开源许可证</b-form-radio>
+                            <b-form-radio v-model="selected" value="C">C、无所谓，将作品放置公共领域</b-form-radio>
                             </b-form-group>
 						</div>
 					</div>

@@ -7,5 +7,5 @@ frontend-vue3
 test_scan
 temp_files
 .vscode
-depends.log
+*.log
 scancode-toolkit

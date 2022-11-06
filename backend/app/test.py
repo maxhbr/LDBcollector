@@ -121,7 +121,7 @@ def depend_detection(src_path,temp_path):
                     dest_file = file_path_list[dest_index] #src depends on dest
                     dependencies.append((src_file.replace(src_path,project_name) ,dest_file.replace(src_path,project_name)))
     return dependencies
-print(license_detection_files("/data/wwxu/PySC/test_scan","/data/wwxu/PySC/backend/temp_files/license.json"))
+#print(license_detection_files("/data/wwxu/PySC/test_scan","/data/wwxu/PySC/backend/temp_files/license.json"))
 #print(depend_detection("/data/wwxu/PySC/ninka","/data/wwxu/PySC/backend/temp_files/ninka/"))
 #print(depend_detection("/data/wwxu/PySC/backend/app","/data/wwxu/PySC/backend/temp_files/app/"))
 
@@ -175,3 +175,70 @@ def conflict_dection(file_license_results,dependencies):
 #print(license_compatibility_filter(list(res.values())))
 # dep=depend_detection("/data/wwxu/PySC/backend/app","/data/wwxu/PySC/backend/temp_files/backend/app/")
 # print(conflict_dection(res,dep,list(res.values())))
+
+def license_uncompatibility1_reason(licenseA,licenseB):
+    reason = '不能次级兼容的原因是，'
+    compatibility_terms = []
+    df = pd.read_csv("/data/wwxu/PySC/backend/app/konwledgebase/licenses_terms_63.csv")
+    licenseA_terms = df[df['license']==licenseA].to_dict(orient='records')[0]
+    licenseB_terms = df[df['license']==licenseB].to_dict(orient='records')[0]
+    restrictiveA = set()
+    restrictiveB = set()
+    if licenseA_terms['retain_attr'] == 1:
+        restrictiveA.add('保留归属')
+    if licenseA_terms['enhance_attr'] == 1:
+        restrictiveA.add('增强归属')
+    if licenseA_terms['modification'] == 1:
+        restrictiveA.add('添加修改声明')
+    if licenseA_terms['interaction'] == 1:
+        restrictiveA.add('网络部署公开源码')
+    if licenseA_terms['patent_term'] == 1:
+        restrictiveA.add('专利诉讼终止')
+    if licenseA_terms['acceptance'] == 1:
+        restrictiveA.add('明确接受许可')
+    if licenseB_terms['retain_attr'] == 1:
+        restrictiveB.add('保留归属')
+    if licenseB_terms['enhance_attr'] == 1:
+        restrictiveB.add('增强归属')
+    if licenseB_terms['modification'] == 1:
+        restrictiveB.add('添加修改声明')
+    if licenseB_terms['interaction'] == 1:
+        restrictiveB.add('网络部署公开源码')
+    if licenseB_terms['patent_term'] == 1:
+        restrictiveB.add('专利诉讼终止')
+    if licenseB_terms['acceptance'] == 1:
+        restrictiveB.add('明确接受许可')
+    if licenseA_terms['copyleft'] == 0 and licenseB_terms['copyleft'] != 0:
+        reason = reason + licenseB + "是限制型开源许可证，如果使用（包括但不限于链接、复制粘贴等方式）了" + licenseA + "授权的作品，要求" + licenseA \
+                 + "授权的作品将受" + licenseB + "的约束，而" + licenseA + "包含如下影响次级兼容的条款（" + licenseB + "中没有此等要求）" +"，使其不能在" + licenseB + "下再授权。"
+        compatibility_terms = list(restrictiveA.difference(restrictiveB))
+    elif licenseA_terms['copyleft'] == 0 and licenseB_terms['copyleft'] == 0 :
+        reason = reason + licenseA + "和" + licenseB + "都是宽松型开源许可证，但" + licenseA + "包含如下影响次级兼容的条款（" + licenseB + "中没有此等要求），使" + licenseA + "授权部分不能在" + licenseB + "下再授权。"
+        compatibility_terms = list(restrictiveA.difference(restrictiveB))
+    elif licenseA_terms['copyleft'] != 0 and licenseB_terms['copyleft'] != 0:
+        reason = reason + licenseA + "和" + licenseB + "都是限制型开源许可证，它们都包含copyleft的特性，且" + licenseB \
+                 + "不是" + licenseA +"的兼容后续版本，也不是其兼容次级许可证，使" + licenseA + "授权部分不能在" +licenseB + \
+                 "下再授权，进而无法满足" + licenseB + "的copyleft要求。"
+    elif licenseA_terms['copyleft'] != 0 and licenseB_terms['copyleft'] == 0:
+        reason = reason + licenseA + "是限制型开源许可证，而" + licenseB + "是宽松型开源许可证，修改或使用（包括但不限于链接、复制粘贴等方式）了" \
+                 + licenseA + "授权的作品，所产生的衍生作品须遵循" + licenseA + "的copyleft要求，使其不能在" + licenseB + "下再授权。"
+    return reason,compatibility_terms
+
+# 2、许可证兼容性判断工具页___许可证不组合兼容原因判断
+def license_uncompatibility2_reason(licenseA,licenseB):
+    reason = '不能组合兼容的原因是，'
+    df = pd.read_csv("/data/wwxu/PySC/backend/app/konwledgebase/licenses_terms_63.csv")
+    licenseA_terms = df[df['license'] == licenseA].to_dict(orient='records')[0]
+    licenseB_terms = df[df['license'] == licenseB].to_dict(orient='records')[0]
+    if licenseA_terms['copyleft'] != 3 and licenseB_terms['copyleft'] == 2 :
+        reason = reason + licenseB + "是库级弱限制型开源许可证，不限制通过接口调用该许可证授权作品的其他作品，但要求其约束部分（包括但不限于其包含的文件、其调用的组件等）都遵循其copyleft特性，若使用（包括但不限于调用、复制粘贴等方式）了" \
+                 + licenseA + "授权的作品，要求" + licenseA + "授权的部分须遵循" + licenseB + "的约束，因此无法满足组合兼容的场景。"
+    elif licenseA_terms['copyleft'] != 3 and licenseB_terms['copyleft'] == 3 :
+        reason = reason + licenseB + "是强限制型开源许可证，要求其授权作品的整体及其部分都遵循其copyleft特性，若使用（包括但不限于调用、复制粘贴等方式）了" \
+                 + licenseA + "授权的作品，要求" + licenseA + "授权的部分须遵循" + licenseB + "的约束，因此无法满足组合兼容的场景。"
+    elif licenseA_terms['copyleft'] == 3:
+        reason = reason + licenseA + "是强限制型开源许可证，要求其授权作品的整体及其部分都遵循其copyleft特性，因此无法满足组合兼容的场景。"
+    return reason
+
+# print(license_uncompatibility1_reason("Apache-2.0","MulanPubL-2.0"))
+print(license_uncompatibility2_reason("GPL-2.0-only","MIT"))
