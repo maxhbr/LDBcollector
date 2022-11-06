@@ -2,10 +2,9 @@ perl-5.28.1/
 perl-5.28.1.tar.gz
 ninka
 scancode
-depends
 frontend-vue3
 test_scan
 temp_files
 .vscode
-*.log
 scancode-toolkit
+*.log
