@@ -5,15 +5,14 @@ import os
 import pandas as pd 
 import tqdm
 def compatibility_judge(licenseA,licenseB):
-    # relative path need to be fixed
-    df = pd.read_csv('/data/wwxu/PySC/backend/app/konwledgebase/compatibility_63.csv', index_col=0)
+    df = pd.read_csv('./app/konwledgebase/compatibility_63.csv', index_col=0)
     compatibility_result = str(df.loc[licenseA, licenseB])
     return compatibility_result
 
 def license_detection_files(file_path,output_path):
     results={}
     pipe = subprocess.Popen(
-        ["/data/wwxu/PySC/scancode/scancode","-l" ,"-n","10","--license-score","95","--json", output_path, file_path,"--license-text"],#relative path
+        ["/data/wwxu/PySC/scancode-toolkit/scancode","-l" ,"-n","10","--license-score","95","--json", output_path, file_path,"--license-text"],#relative path
         stdout=subprocess.PIPE)
     return_code=pipe.wait()
     with open(output_path,"r") as f:
@@ -31,13 +30,13 @@ def license_detection_files(file_path,output_path):
     return results
 
 def license_compatibility_filter(in_licenses):
-    df = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/konwledgebase/license_recommended.csv'))
+    df = pd.read_csv(os.path.join('./app/konwledgebase/license_recommended.csv'))
     all_licenses = df['license'].tolist()
     compatible_licenses = df['license'].tolist()
     compatible_both_list = df['license'].tolist()
     compatible_secondary_list = df['license'].tolist()
     compatible_combine_list = df['license'].tolist()
-    df1 = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/konwledgebase/compatibility_63.csv'), index_col=0)
+    df1 = pd.read_csv(os.path.join('./app/konwledgebase/compatibility_63.csv'), index_col=0)
     check_license_list = df1.index.tolist()
     checked_list = []
     dual_no_checked_license = set()
@@ -93,7 +92,8 @@ def license_compatibility_filter(in_licenses):
             if dual_checked == 1:
                 checked_list.append(licenseA)
     llist = list(set(sum(in_licenses,[])))
-    return llist, checked_list, compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list,list(dual_no_checked_license)
+    return compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list
+    #return llist, checked_list, compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list,list(dual_no_checked_license)
 
 
 
@@ -106,7 +106,7 @@ def depend_detection(src_path,temp_path):
     for lang in surport_lang:
         # relative path need to be fixed
         proc = subprocess.Popen(
-            ["java","-jar","/data/wwxu/PySC/backend/depends/depends.jar" ,"-d=" + output_depend_path , lang , src_path , lang + 'depend'])
+            ["java","-jar","./depends/depends.jar" ,"-d=" + output_depend_path , lang , src_path , lang + 'depend'])
         proc.communicate()
         proc.wait()
         project_name=src_path.split("/")[-1]
@@ -122,16 +122,14 @@ def depend_detection(src_path,temp_path):
                     dest_file = file_path_list[dest_index] #src depends on dest
                     dependencies.append((src_file.replace(src_path,project_name) ,dest_file.replace(src_path,project_name)))
     return dependencies
-#print(license_detection_files("/data/wwxu/PySC/ninka","/data/wwxu/PySC/backend/temp_files/license.json"))
-#print(depend_detection("/data/wwxu/PySC/ninka","/data/wwxu/PySC/backend/temp_files/ninka/"))
-#print(depend_detection("/data/wwxu/PySC/backend/app","/data/wwxu/PySC/backend/temp_files/app/"))
+
+
 
 def conflict_dection(file_license_results,dependencies):
-    #relative path need to be fixed
-    df1 = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/konwledgebase/compatibility_63.csv'), index_col=0)
+    df1 = pd.read_csv(os.path.join('./app/konwledgebase/compatibility_63.csv'), index_col=0)
     check_license_list = df1.index.tolist()
     confilct_copyleft_set= set()
-    confilct_depend_dict = {}
+    confilct_depend_dict = []
     compatibility_result_ab = ''
     for dest_src in dependencies:
         src_file = dest_src[0]
@@ -146,7 +144,7 @@ def conflict_dection(file_license_results,dependencies):
                 if compatibility_result_ab != '0':
                     iscompatibility = 1
         if iscompatibility == 0 and ischeck == 1:
-            confilct_depend_dict[dest_file] = src_file+'的许可证'+licenseA+'不兼容'+dest_file+'的许可证'+licenseB
+            confilct_depend_dict.append({"src_file":src_file,"src_license":src_file,"dest_file":dest_file,"dest_license":licenseB})
 
     
     for fileA in tqdm.tqdm(file_license_results):
@@ -167,22 +165,8 @@ def conflict_dection(file_license_results,dependencies):
                     if f"{fileA}({licenseA}) and {fileB}({licenseB}) are not compatible." not in confilct_copyleft_set:
                         confilct_copyleft_set.add(f"{fileA}({licenseA}) and {fileB}({licenseB}) are not compatible.")
                 else:
-                    if f"Licenses in {fileA}({licenseA}) are not compatible." not in confilct_copyleft_set:
-                        confilct_copyleft_set.add(f"Licenses in {fileA}({licenseA}) are not compatible.")
+                    if f"Licenses in {fileA}({licenseA},{licenseB}) are not compatible." not in confilct_copyleft_set:
+                        confilct_copyleft_set.add(f"Licenses in {fileA}({licenseA},{licenseB}) are not compatible.")
 
     return list(confilct_copyleft_set),confilct_depend_dict
-#res=license_detection_files("/data/wwxu/PySC/backend/app","/data/wwxu/PySC/backend/temp_files/license.json")
-# print(res)
-#print(license_compatibility_filter(list(res.values())))
-# dep=depend_detection("/data/wwxu/PySC/backend/app","/data/wwxu/PySC/backend/temp_files/backend/app/")
-# print(conflict_dection(res,dep,list(res.values())))
 
-# 3、许可证选择工具页__许可证识别__遍历文件
-def show_files(pathname, files_path):
-    file_path = str(pathname.parent) + '\\' + pathname.name
-    if pathname.is_file():
-        files_path.append(file_path)
-    elif pathname.is_dir():
-        for cp in pathname.iterdir():
-            show_files(cp, files_path)
-    return files_path

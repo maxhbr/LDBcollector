@@ -12,4 +12,3 @@ __pycache__/
 temp_files
 .env
 *.log
-logging

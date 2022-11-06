@@ -92,7 +92,8 @@ def license_compatibility_filter(in_licenses):
             if dual_checked == 1:
                 checked_list.append(licenseA)
     llist = list(set(sum(in_licenses,[])))
-    return llist, checked_list, compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list,list(dual_no_checked_license)
+    return compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list
+    #return llist, checked_list, compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list,list(dual_no_checked_license)
 
 
 
@@ -173,7 +174,8 @@ def conflict_dection(file_license_results,dependencies):
 #res=license_detection_files("/data/wwxu/PySC/backend/app","/data/wwxu/PySC/backend/temp_files/license.json")
 # print(res)
 #print(license_compatibility_filter(list(res.values())))
-# dep=depend_detection("/data/wwxu/PySC/backend/app","/data/wwxu/PySC/backend/temp_files/backend/app/")
+dep=depend_detection("/data/wwxu/PySC/backend/app","/data/wwxu/PySC/backend/temp_files/backend/app/")
+print(dep)
 # print(conflict_dection(res,dep,list(res.values())))
 
 def license_uncompatibility1_reason(licenseA,licenseB):
@@ -240,5 +242,5 @@ def license_uncompatibility2_reason(licenseA,licenseB):
         reason = reason + licenseA + "是强限制型开源许可证，要求其授权作品的整体及其部分都遵循其copyleft特性，因此无法满足组合兼容的场景。"
     return reason
 
-# print(license_uncompatibility1_reason("Apache-2.0","MulanPubL-2.0"))
-print(license_uncompatibility2_reason("GPL-2.0-only","MIT"))
+
+

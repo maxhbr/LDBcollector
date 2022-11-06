@@ -28,15 +28,15 @@
                                 </template>
 
                                 <hr class="my-4">
-                                <p>
+                                <p style='font-family:Comic Sans MS, Comic Sans, cursive'>
                                     Our tool provides the function of open source license recommendation and <br />open 
                                     source license compatibility query. It trys to recommend the most suitable <br /> 
                                     open source license for you in a personalized way!
                                 </p>
                                 <hr class="my-4">
-                                <b-button to="/search">Choose a License</b-button>
-                                <b-button to="/">Compatibility query</b-button>
-                                <b-button style="height:38px" href="https://github.com/osslab-pku/licenserec"
+                                <b-button to="/rec">Choose a License</b-button>
+                                <b-button @click="jump_query">Compatibility query</b-button>
+                                <b-button style="height:38px" href="https://github.com/osslab-pku/RecLicense"
                                     target="_blank">
                                     <b-img style="height:24px" :src="require('../assets/github.svg')" fluid></b-img>
                                     
@@ -47,9 +47,6 @@
                 </el-card>
             </div>
             <p></p>
-            <!-- <div>
-                <b-button to="/search">Choose a License!</b-button>
-            </div> -->
         </div>
 
         <!-- <keep-alive>
@@ -79,10 +76,13 @@ export default {
             console.log(key, keyPath);
         },
 
-        jump_search() {
-            this.$router.push('/search');
-            // console.log("enter search");
-        }
+        jump_rec() {
+            this.$router.push('/rec');
+        },
+
+        jump_query() {
+            this.$router.push('/query');
+        },
     }
 }
 </script>
@@ -128,7 +128,6 @@ export default {
     font-size: 22px;
     box-shadow: 0 0 1px rgb(0 0 0 / 25%);
     transition: background-color 0.3s ease-in-out;
-
 }
 
 .header {
@@ -151,15 +150,11 @@ export default {
     border: 0
 }
 
-.search {
-    background: #3E3E3E;
-
-}
-
 .introduce {
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 
 }
 

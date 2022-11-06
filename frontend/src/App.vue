@@ -11,9 +11,9 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item to="/">Choose a license</b-nav-item>
-            <b-nav-item to="/">Compatibility query</b-nav-item>
-            <b-nav-item to="/">Usage trend</b-nav-item>
+            <b-nav-item to="/rec">Choose a license</b-nav-item>
+            <b-nav-item to="/query">Compatibility query</b-nav-item>
+            <b-nav-item to="/">Guide</b-nav-item>
             <b-nav-item to="/">About</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ms-auto">

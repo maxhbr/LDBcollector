@@ -11,18 +11,13 @@ from .compatibility_check import *
 import zipfile
 from pathlib import Path
 import rarfile
+from .query import license_compatibility_judge
 # 主页面
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
 
-
-@app.route('/ispkg',methods=['POST'])
-def ispkg():
-    pkg = request.json.get("pkg")
-    res= is_pkg(pkg)
-    return res
 @app.route('/zip', methods=['POST'])
 def upload():
     f = request.files.get("file")
@@ -41,5 +36,23 @@ def upload():
         z.close()
 
     licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
+    dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
+    confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
+    compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
+    print(confilct_copyleft_list)
+    return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
+    "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
+    "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
+    "compatible_combine_list":compatible_combine_list}
 
-    return licenses_in_files
+@app.route('/support_list', methods=['POST'])
+def support_lst():
+    df1 = pd.read_csv('./app/konwledgebase/compatibility_63.csv', index_col=0)
+    license_list = df1.index.tolist()
+    return license_list
+
+@app.route('/query', methods=['POST'])
+def query():
+    l1 = request.json.get("licenseA")
+    l2 = request.json.get("licenseB")
+    return license_compatibility_judge(l1,l2)

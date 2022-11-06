@@ -1,37 +1,33 @@
-/*
-检测页面
-包含上传文件、兼容性检测和推荐功能
-*/
 <template>
   <div id="page">
     <!-- 步骤条 -->
     <div class="steps">
       <el-steps :active="step_active" align-center finish-status="success">
-        <el-step title="兼容性检测"></el-step>
-        <el-step title="条款偏好选择"></el-step>
-        <el-step title="要素对比"></el-step>
+        <el-step title="Compatibility Check"></el-step>
+        <el-step title="Preferences"></el-step>
+        <el-step title="Term Comparison"></el-step>
       </el-steps>
     </div>
 
     <div id="main" class="main">
       <el-row :gutter="20" style="margin-top: 20px; height: 500px">
-        <el-col :span="18">
+        <el-col :span="17">
           <div class="file_box">
             <div>
               <el-card style="height: 500px;">
                 <div slot="header" class="clearfix">
-                  <span>开源许可证兼容性检测</span>
+                  <span style="color:white">License Compatibility Check</span>
                 </div>
                 <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
                   :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload" :on-change="file_change"
                   :limit=1 accept=".rar,.zip" drag :auto-upload="false" v-loading="loading">
                   
                   <i class="el-icon-upload" style="color: #095da7"></i>
-                  <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
-                  <div class="el-upload__tip" slot="tip">只能上传zip/rar文件</div>
+                  <div class="el-upload__text">Drag the file here, or <em>click to upload</em></div>
+                  <div class="el-upload__tip" slot="tip">Only zip/rar files can be uploaded</div>
                 </el-upload>
                 <div class="description" id="description" style="display: none">
-                <span>项目中已有的开源许可证</span>
+                <span>The licenses in the project</span>
                 <el-divider></el-divider>
                 <div style="overflow-y:scroll; height: 350px;">
                 <div v-for="(file, index) in licenses" style="text-align: left; margin: 10px">
@@ -51,11 +47,11 @@
             </div>
           </div>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="7">
           <div class="list">
             <el-card style="height: 500px">
               <div slot="header" class="clearfix">
-                <span>开源许可证推荐列表</span>
+                <span style="color:white">Recommendation List</span>
               </div>
               <div class="dropdown">
                 <!-- <el-dropdown trigger="click">
@@ -79,8 +75,8 @@
               <!-- <el-checkbox-group v-model="licenses" >
                   <el-checkbox v-for="license in licenses" :label="license" :key="license" style="display: block; float: left">{{license}}</el-checkbox>
                 </el-checkbox-group> -->
-              <el-table :data="table_data">
-                <el-table-column label="兼容性" width="70">
+              <el-table :data="table_data" style="overflow-y: scroll; height: 360px">
+                <el-table-column label="兼容性" width="70" >
                   <template slot-scope="scope">
                     <div class="circle"></div>
                   </template>
@@ -96,18 +92,18 @@
 
       <el-row :gutter="20" style="margin-top: 20px">
         <el-col :span="18">
-          <el-button type="primary" @click="upload_file">上传</el-button>
-          <el-button type="primary" @click="enter_questions" style="display: none">问题</el-button>
+          <b-button type="primary" @click="upload_file">Start check</b-button>
+          <b-button type="primary" @click="enter_questions" style="display: none">Next step</b-button>
         </el-col>
         <el-col :span="6">
 
         </el-col>
       </el-row>
-      <el-row>
+      <!-- <el-row>
         <el-col :span="24">
           <div style="margin-top: 20px; background: azure; height: 100px">开源许可证说明</div>
         </el-col>
-      </el-row>
+      </el-row> -->
     </div>
   </div>
 
@@ -116,7 +112,7 @@
 <script>
 import $ from 'jquery'
 export default {
-  name: 'search',
+  name: 'rec',
   data() {
     return {
       step_active: 0,
@@ -192,7 +188,7 @@ export default {
       .then(res => {
         if (res.status == 200) {
           console.log(res.data);
-          this.licenses = res.data;
+          this.licenses = res.data.licenses_in_files;
           var uploader = document.getElementById("uploader")
           uploader.setAttribute("style", "display: none")
           this.loading = false;
@@ -210,7 +206,7 @@ export default {
       $("#uploader").hide()
       $("#description").hide()
       $("#questions").show()
-      this.$router.push('/search/questions')
+      this.$router.push('/rec/questions')
     }
   }
 }
@@ -247,7 +243,7 @@ export default {
 
 .circle {
   background: #456BD9;
-  border: 15px solid #0F1C3F;
+  border: 10px solid #0F1C3F;
   border-radius: 50%;
   width: 15px;
 }
@@ -262,14 +258,14 @@ export default {
 }
 
 .el-step__title.is-process {
-  color: aliceblue;
+  color: rgb(21, 24, 26);
 }
 
 .main {
   position: relative;
   margin-top: 5%;
-  left: 17%;
-  width: 66%;
+  left: 13%;
+  width: 74%;
 }
 
 .steps {
@@ -278,6 +274,6 @@ export default {
 }
 
 .el-card__header {
-  background: azure;
+  background: #777;
 }
 </style>
