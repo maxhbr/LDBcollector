@@ -137,6 +137,12 @@ SPDX-License-Identifier: AGPL-3.0-only
           <p>Choice of venue:
             <strong>{{ license.venue_choice|default:"None" }}</strong>
           </p>
+          <p>Disclaimer of Warranty:
+            <strong>{{ license.get_warranty_display|default:"Unknown" }}</strong>
+          </p>
+          <p>Limitation of Liability:
+            <strong>{{ license.get_liability_display|default:"Unknown" }}</strong>
+          </p>
 
           <!-- Show optional comment -->
           {% if license.comment %}

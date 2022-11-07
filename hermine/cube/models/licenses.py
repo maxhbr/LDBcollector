@@ -123,10 +123,10 @@ class License(models.Model):
     non_commercial = models.BooleanField("Only non-commercial use", null=True)
     non_tivoisation = models.BooleanField(null=True)
     liability = models.CharField(
-        "Non Liability clause", max_length=30, choices=LIABILITY_CHOICES, blank=True
+        "Limitation of Liability", max_length=30, choices=LIABILITY_CHOICES, blank=True
     )
     warranty = models.CharField(
-        "Warranty limitation clause",
+        "Disclaimer of Warranty",
         max_length=30,
         choices=WARRANTY_CHOICES,
         blank=True,
