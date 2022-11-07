@@ -12,7 +12,7 @@ def compatibility_judge(licenseA,licenseB):
 def license_detection_files(file_path,output_path):
     results={}
     pipe = subprocess.Popen(
-        ["/data/wwxu/PySC/scancode-toolkit/scancode","-l" ,"-n","10","--license-score","95","--json", output_path, file_path,"--license-text"],#relative path
+        ["../scancode-toolkit/scancode","-l" ,"-n","10","--license-score","95","--json", output_path, file_path,"--license-text"],#relative path
         stdout=subprocess.PIPE)
     return_code=pipe.wait()
     with open(output_path,"r") as f:
@@ -144,7 +144,7 @@ def conflict_dection(file_license_results,dependencies):
                 if compatibility_result_ab != '0':
                     iscompatibility = 1
         if iscompatibility == 0 and ischeck == 1:
-            confilct_depend_dict.append({"src_file":src_file,"src_license":src_file,"dest_file":dest_file,"dest_license":licenseB})
+            confilct_depend_dict.append({"src_file":src_file,"src_license":licenseA,"dest_file":dest_file,"dest_license":licenseB})
 
     
     for fileA in tqdm.tqdm(file_license_results):

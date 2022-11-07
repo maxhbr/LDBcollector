@@ -12,6 +12,7 @@ import zipfile
 from pathlib import Path
 import rarfile
 from .query import license_compatibility_judge
+from .download_github import download_git
 # 主页面
 @app.route('/')
 @app.route('/index')
@@ -39,7 +40,28 @@ def upload():
     dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
     confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
     compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
-    print(confilct_copyleft_list)
+    
+    return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
+    "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
+    "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
+    "compatible_combine_list":compatible_combine_list}
+@app.route('/git', methods=['POST'])
+def download():
+    username= request.json.get("username")
+    reponame = request.json.get("reponame")
+    print(reponame)
+    file_path=download_git(username,reponame)
+    if file_path == "URL ERROR":
+        return "URL ERROR"
+    unzip_path=file_path[:-4]
+    z = zipfile.ZipFile(file_path, "r")
+    z.extractall(unzip_path)
+    z.close()
+    licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
+    dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
+    confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
+    compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
+    
     return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
     "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
     "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,

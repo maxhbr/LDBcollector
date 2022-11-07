@@ -29,7 +29,7 @@
         </b-collapse>
       </b-navbar>
     </div>
-    <div class="center-page" style="background-color:rgba(0,0,0,0)">
+    <div class="center-page" style="background-color:rgba(0,0,0,0);">
       <router-view name="first"></router-view>
     </div>
     <div id="app-footer" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
@@ -79,7 +79,6 @@ export default {
   margin-left: 5%;
   margin-bottom: 30px;
   position: relative;
-  
   background-color:rgba(0,0,0,0)
 }
 </style>

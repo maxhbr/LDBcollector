@@ -3,7 +3,7 @@ import pandas as pd
 # 2、许可证兼容性判断
 def compatibility_judge(licenseA,licenseB):
     df = pd.read_csv('./app/konwledgebase/compatibility_63.csv', index_col=0)
-    print(df)
+    
     compatibility_result = str(df.loc[licenseA, licenseB])
     return compatibility_result
 
@@ -15,30 +15,34 @@ def license_uncompatibility1_reason(licenseA,licenseB):
     licenseB_terms = df[df['license']==licenseB].to_dict(orient='records')[0]
     restrictiveA = set()
     restrictiveB = set()
+    if licenseA_terms['copyright'] == 0 or licenseA_terms['copyright'] == 1:
+        restrictiveA.add('Copyright')
     if licenseA_terms['retain_attr'] == 1:
-        restrictiveA.add('保留归属')
+        restrictiveA.add('Retain attribution')
     if licenseA_terms['enhance_attr'] == 1:
-        restrictiveA.add('增强归属')
+        restrictiveA.add('Enhance attribution')
     if licenseA_terms['modification'] == 1:
-        restrictiveA.add('添加修改声明')
+        restrictiveA.add('State changes')
     if licenseA_terms['interaction'] == 1:
-        restrictiveA.add('网络部署公开源码')
+        restrictiveA.add('Interaction')
     if licenseA_terms['patent_term'] == 1:
-        restrictiveA.add('专利诉讼终止')
+        restrictiveA.add('Patent termination')
     if licenseA_terms['acceptance'] == 1:
-        restrictiveA.add('明确接受许可')
+        restrictiveA.add('Acceptance')
+    if licenseB_terms['copyright'] == 0 or licenseB_terms['copyright'] == 1:
+        restrictiveB.add('Copyright')
     if licenseB_terms['retain_attr'] == 1:
-        restrictiveB.add('保留归属')
+        restrictiveB.add('Retain attribution')
     if licenseB_terms['enhance_attr'] == 1:
-        restrictiveB.add('增强归属')
+        restrictiveB.add('Enhance attribution')
     if licenseB_terms['modification'] == 1:
-        restrictiveB.add('添加修改声明')
+        restrictiveB.add('State changes')
     if licenseB_terms['interaction'] == 1:
-        restrictiveB.add('网络部署公开源码')
+        restrictiveB.add('Interaction')
     if licenseB_terms['patent_term'] == 1:
-        restrictiveB.add('专利诉讼终止')
+        restrictiveB.add('Patent termination')
     if licenseB_terms['acceptance'] == 1:
-        restrictiveB.add('明确接受许可')
+        restrictiveB.add('Acceptance')
     if licenseA_terms['copyleft'] == 0 and licenseB_terms['copyleft'] != 0:
         reason = reason + licenseB + "是限制型开源许可证，如果使用（包括但不限于链接、复制粘贴等方式）了" + licenseA + "授权的作品，要求" + licenseA \
                  + "授权的作品将受" + licenseB + "的约束，而" + licenseA + "包含如下影响次级兼容的条款（" + licenseB + "中没有此等要求）" +"，使其不能在" + licenseB + "下再授权。"
