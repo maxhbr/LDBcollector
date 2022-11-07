@@ -159,6 +159,7 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
 
     for package in document.packages:
         current_scope = "Global"
+        current_project = "Default"
         comp_name = package.name.rsplit("@")[0]
         comp_url = package.download_location or ""
         comp, created = Component.objects.get_or_create(
@@ -185,6 +186,7 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         Usage.objects.get_or_create(
             version_id=version_id,
             release_id=release_id,
+            project=current_project,
             scope=current_scope,
             defaults={"addition_method": "Scan", "linking": linking},
         )
