@@ -29,13 +29,29 @@ License: OFL-1.1
 
 Files: hermine/cube/static/cube/webfonts/*.svg
 Copyright: Font Awesome
-License: CC-BY-4.0 
+License: CC-BY-4.0
 
 Files: testfiles/*
 Copyright: Not copyrightable
 License: CC0-1.0
 
+Files: hermine/cube/fixtures/*
+Copyright: Not copyrightable
+License: CC0-1.0
+
+Files: examples/*.json
+Copyright: Not copyrightable
+License: CC0-1.0
+
+Files: examples/Hermine-License-Disclaimer_0.1b.txt
+Copyright: 2022 Hermine-team <hermine@inno3.fr>
+License: CC0-1.0
+
 Files: .gitignore
+Copyright: Not copyrightable
+License: CC0-1.0
+
+Files: env.example
 Copyright: Not copyrightable
 License: CC0-1.0
 
@@ -43,12 +59,16 @@ Files: setup.cfg
 Copyright: Not copyrightable
 License: CC0-1.0
 
+Files: docker/*
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
+License: CC0-1.0
+
 Files: docker_secrets.py
 Copyright: Not copyrightable
 License: CC0-1.0
 
 Files: docker-compose.yml
-Copyright: Not copyrightable
+Copyright: 2021 Hermine-team <hermine@inno3.fr>
 License: CC0-1.0
 
 Files: poetry.lock
@@ -56,5 +76,5 @@ Copyright: Not copyrightable
 License: CC0-1.0
 
 Files: DCO.md
-Copyright : 2004, 2006 The Linux Foundation and its contributors
+Copyright: 2004, 2006 The Linux Foundation and its contributors
 License: LicenseRef-scancode-dco-1.1 
