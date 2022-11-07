@@ -77,6 +77,8 @@ class LicenseUpdateView(LoginRequiredMixin, UpdateView):
         "foss",
         "non_commercial",
         "ethical_clause",
+        "warranty",
+        "liability",
         "comment",
         "verbatim",
     ]
