@@ -32,35 +32,60 @@ def usage(prog):
 
 
 def add_license_data(
-    i, licensedata, approved, fedora_names, fedora_abbrev, spdx_abbrev
+    i, licensedata, approved, fedora_names, fedora_abbrev, spdx_abbrev, status, url, usage, text
 ):
-    if isinstance(fedora_names, str):
-        licensedata[i] = {
-            "approved": approved,
-            "fedora_abbrev": fedora_abbrev,
-            "fedora_name": fedora_names,
-            "spdx_abbrev": spdx_abbrev,
-        }
-        i += 1
-    elif isinstance(fedora_names, list):
-        for n in fedora_names:
-            if n == "":
-                continue
-            licensedata[i] = {
+    licensedata[i] = {
+        "license": {
+            "expression": spdx_abbrev,
+            "status": status,
+        },
+        "fedora": {
+            "legacy-name": fedora_names,
+            "legacy-abbreviation": fedora_abbrev,
+        },
+    }
+    if url:
+        licensedata[i]["license"]["url"] = url
+    if usage:
+        licensedata[i]["license"]["usage"] = usage
+    if text:
+        licensedata[i]["license"]["text"] = text
+
+    # DEPRECATED part
+    if isinstance(fedora_abbrev, str):
+        fedora_abbrev = [fedora_abbrev, ]
+    for one_fedora_abbrev in fedora_abbrev:
+        if i not in licensedata.keys():
+            licensedata[i]= {}
+        if isinstance(fedora_names, str):
+            licensedata[i].update({
                 "approved": approved,
-                "fedora_abbrev": fedora_abbrev,
-                "fedora_name": n,
+                "fedora_abbrev": one_fedora_abbrev,
+                "fedora_name": fedora_names,
                 "spdx_abbrev": spdx_abbrev,
-            }
+            })
             i += 1
-    else:
-        licensedata[i] = {
-            "approved": approved,
-            "fedora_abbrev": fedora_abbrev,
-            "fedora_name": "",
-            "spdx_abbrev": spdx_abbrev,
-        }
-        i += 1
+        elif isinstance(fedora_names, list):
+            for n in fedora_names:
+                if n == "":
+                    continue
+                if i not in licensedata.keys():
+                    licensedata[i]= {}
+                licensedata[i].update({
+                    "approved": approved,
+                    "fedora_abbrev": one_fedora_abbrev,
+                    "fedora_name": n,
+                    "spdx_abbrev": spdx_abbrev,
+                })
+                i += 1
+        else:
+            licensedata[i].update({
+                "approved": approved,
+                "fedora_abbrev": one_fedora_abbrev,
+                "fedora_name": "",
+                "spdx_abbrev": spdx_abbrev,
+            })
+            i += 1
 
     return i
 
@@ -106,6 +131,15 @@ if __name__ == "__main__":
         status = data["license"]["status"]
         if isinstance(status, str):
             status = [status]
+        url = data["license"].get("url")
+        if url:
+            url = url.strip()
+        usage = data["license"].get("usage")
+        if usage:
+            usage = usage.strip()
+        text = data["license"].get("text")
+        if text:
+            text = text.strip()
 
         approved = "yes" if status and all(s in allowed_values for s in status) else "no"
 
@@ -116,7 +150,7 @@ if __name__ == "__main__":
             fedora_keys = [*data["fedora"]]
 
             # field: 'fedora_abbrev'
-            if "abbreviation" in fedora_keys:
+            if "legacy-abbreviation" in fedora_keys:
                 fedora_abbrevs = data["fedora"]["legacy-abbreviation"]
 
                 assert ((isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list)) or \
@@ -140,21 +174,28 @@ if __name__ == "__main__":
                'spdx_abbrev is not string ({})'.format(licensefile)
 
         # add these keys to the main hash table
-        if isinstance(fedora_abbrevs, str):
+        if isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list):
             i = add_license_data(
-                i, licensedata, approved, fedora_names, fedora_abbrevs, spdx_abbrev  # noqa: E501
+                i, licensedata, approved, fedora_names, fedora_abbrevs, spdx_abbrev,
+                status, url, usage, text  # noqa: E501
             )
-        elif isinstance(fedora_abbrevs, list):
-            for a in fedora_abbrevs:
-                i = add_license_data(
-                    i, licensedata, approved, fedora_names, a, spdx_abbrev
-                )
         else:
             # Handle licenses with only an SPDX legacy-abbreviation, not a Fedora legacy-abbreviation
             licensedata[i] = {
                 "approved": approved,
                 "spdx_abbrev": spdx_abbrev,
+                "license": {
+                    "expression": spdx_abbrev,
+                    "status": status,
+                },
+                "fedora": {},
             }
+            if url:
+                licensedata[i]["license"]["url"] = url
+            if usage:
+                licensedata[i]["license"]["usage"] = usage
+            if text:
+                licensedata[i]["license"]["text"] = text
             i += 1
 
     # write out the license data
