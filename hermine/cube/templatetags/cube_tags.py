@@ -55,6 +55,7 @@ def licenseCopyleftCSS(license: License):
     :type license: License
     :return: A CSS string
     :rtype string
+
     """
     if license.copyleft == License.COPYLEFT_NONE:
         return "is-success"
@@ -77,6 +78,7 @@ def licenseFOSSCSS(license: License):
     :type license: License
     :return: A CSS string
     :rtype string
+
     """
     if license.foss == License.FOSS_YES or license.foss == License.FOSS_YES_AUTO:
         return "is-success"
