@@ -45,7 +45,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 {% if usage.license_curations.0.expression_out != usage.version.spdx_valid_license_expr %}
                   <br><small>Expression does not match curation
                   {% comment %}TODO : change update view{% endcomment %}
-                  <form action="{% url "cube:usage_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
+                  <form action="{% url "cube:release_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
                     {% csrf_token %}
                     <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
                 {% endif %}

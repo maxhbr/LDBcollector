@@ -2,18 +2,18 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-
 from django.urls import path, include
-from django.views.generic import UpdateView
 from rest_framework.authtoken import views as authviews
 from rest_framework_nested import routers
 
+import cube.views.release_validation
 from . import views, api_views
 
 app_name = "cube"
 urlpatterns = [
     path("", views.IndexView.as_view(), name="root"),
     path("about/", views.AboutView.as_view(), name="about"),
+    # Product views
     path("products/", views.ProductListView.as_view(), name="products"),
     path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
     path(
@@ -25,6 +25,7 @@ urlpatterns = [
     path(
         "product/edit/<int:pk>/", views.ProductEditView.as_view(), name="product_edit"
     ),
+    # Product categories views
     path("categories/", views.CategoryListView.as_view(), name="categories"),
     path(
         "category/<int:pk>/", views.CategoryDetailView.as_view(), name="category_detail"
@@ -35,6 +36,7 @@ urlpatterns = [
         views.CategoryEditView.as_view(),
         name="category_edit",
     ),
+    # Components views
     path("components/", views.ComponentListView.as_view(), name="components"),
     path("components/popular/", views.PopularListView.as_view(), name="populars"),
     path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),
@@ -44,10 +46,16 @@ urlpatterns = [
         name="licensecurations",
     ),
     path(
+        "licensecurations/add/",
+        views.LicenseCurationCreateView.as_view(),
+        name="licensecuration_create",
+    ),
+    path(
         "licensecurations/update/<int:pk>/",
         views.LicenseCurationUpdateView.as_view(),
         name="licensecuration_update",
     ),
+    # Licenses and policy views
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
     path(
@@ -69,16 +77,6 @@ urlpatterns = [
         name="obligation_create",
     ),
     path(
-        "license/<int:license_pk>/add_derogation/",
-        views.DerogationLicenseContextCreateView.as_view(),
-        name="derogation_create",
-    ),
-    path(
-        "derogation/<int:pk>/edit/",
-        views.DerogationUpdateView.as_view(),
-        name="derogation_edit",
-    ),
-    path(
         "obligation/<int:pk>/edit/",
         views.ObligationUpdateView.as_view(),
         name="obligation_edit",
@@ -90,27 +88,33 @@ urlpatterns = [
     ),
     path("generics/", views.GenericListView.as_view(), name="generics"),
     path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
-    path("derogations/", views.DerogationListView.as_view(), name="derogations"),
     path(
         "export/licenses/", views.ExportLicensesView.as_view(), name="export_licenses"
     ),
     path(
         "export/generics/", views.ExportGenericsView.as_view(), name="export_generics"
     ),
+    # License policy views
+    path(
+        "license/<int:license_pk>/add_derogation/",
+        views.DerogationCreateView.as_view(),
+        name="derogation_create",
+    ),
+    path(
+        "derogation/<int:pk>/edit/",
+        views.DerogationUpdateView.as_view(),
+        name="derogation_edit",
+    ),
+    path(
+        "derogations/",
+        views.DerogationListView.as_view(),
+        name="derogations",
+    ),
+    # Releases views
     path(
         "release/<int:pk>/edit/",
         views.ReleaseUpdateView.as_view(),
         name="release_edit",
-    ),
-    path(
-        "release/<int:pk>/validation/",
-        views.ReleaseView.as_view(),
-        name="release_validation",
-    ),
-    path(
-        "release/<int:id>/validation/fixed_licenses/",
-        views.ReleaseFixedLicensesList.as_view(),
-        name="release_normalized_usages",
     ),
     path(
         "release/<int:pk>/",
@@ -139,34 +143,46 @@ urlpatterns = [
     ),
     path(
         "release/<int:release_id>/obligations/<int:generic_id>/",
-        views.release_generic,
+        views.ReleaseGenericView.as_view(),
         name="release_generic",
+    ),
+    # Release validation related views
+    path(
+        "release/<int:pk>/validation/",
+        views.ReleaseValidationView.as_view(),
+        name="release_validation",
+    ),
+    path(
+        "usage/<int:usage_pk>/add_license_curation/",
+        views.ReleaseLicenseCurationCreateView.as_view(),
+        name="release_licensecuration_create",
+    ),
+    path(
+        "release/<int:id>/validation/fixed_licenses/",
+        views.ReleaseFixedLicensesList.as_view(),
+        name="release_normalized_usages",
+    ),
+    path(
+        "usage/<int:usage_pk>/add_expression_validation/",
+        views.ReleaseExpressionValidationCreateView.as_view(),
+        name="release_expressionvalidation_create",
+    ),
+    path(
+        "usage/<int:usage_pk>/add_license_choice/",
+        views.ReleaseLicenseChoiceCreateView.as_view(),
+        name="release_licensechoice_create",
     ),
     path(
         "release/update_license_choice/<int:pk>/",
         views.UpdateLicenseChoiceView.as_view(),
-        name="usage_update_license_choice",
+        name="release_update_license_choice",
     ),
     path(
         "usage/<int:usage_pk>/add_derogation/<int:license_pk>/",
-        views.DerogationUsageContextCreateView.as_view(),
-        name="usage_derogation_create",
+        views.ReleaseDerogationCreateView.as_view(),
+        name="release_derogation_create",
     ),
-    path(
-        "usage/<int:usage_pk>/add_license_curation/",
-        views.CreateLicenseCurationView.as_view(),
-        name="licensecuration_create",
-    ),
-    path(
-        "usage/<int:usage_pk>/add_expression_validation/",
-        views.CreateExpressionValidationView.as_view(),
-        name="expressionvalidation_create",
-    ),
-    path(
-        "usage/<int:usage_pk>/add_license_choice/",
-        views.CreateLicenseChoiceView.as_view(),
-        name="licensechoice_create",
-    ),
+    # TODO move this in API urls
     path(
         "api/usagesflat/",
         api_views.UsageflatList.as_view(),
@@ -191,7 +207,6 @@ router.register(r"releases", api_views.ReleaseViewSet, basename="releases")
 
 # Generic obligations
 router.register(r"generics", api_views.GenericViewSet, basename="generics")
-
 
 # Models CRUD viewsets
 router.register(r"obligations", api_views.ObligationViewSet, basename="obligations")
