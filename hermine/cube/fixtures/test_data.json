@@ -71,7 +71,7 @@
         "version_number": "1.0",
         "declared_license_expr": "LicenseRef-FakeLicense OR AND",
         "spdx_valid_license_expr": "",
-        "corrected_license": "LicenseRef-FakeLicense",
+        "corrected_license": "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
         "purl": ""
     }
 },
@@ -132,10 +132,7 @@
         "exploitation": "DistributionSourceDistributionNonSource",
         "description": "This is a test Usage",
         "scope": "testscope",
-        "license_expression": "",
-        "licenses_chosen": [
-            3
-        ]
+        "license_expression": ""
     }
 },
 {
@@ -152,10 +149,7 @@
         "exploitation": "DistributionSourceDistributionNonSource",
         "description": "This is a test Usage",
         "scope": "testscope",
-        "license_expression": "",
-        "licenses_chosen": [
-            3
-        ]
+        "license_expression": ""
     }
 },
 {

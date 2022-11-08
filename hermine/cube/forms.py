@@ -191,6 +191,10 @@ class CreateExpressionValidationForm(BaseComponentDecisionForm):
 
 
 class CreateLicenseChoiceForm(BaseCreateUsageDecisionChoiceForm):
+    def save(self, **kwargs):
+        self.instance.expression_in = self.usage.version.effective_license
+        return super().save(**kwargs)
+
     class Meta(BaseCreateUsageDecisionChoiceForm.Meta):
         model = LicenseChoice
 
