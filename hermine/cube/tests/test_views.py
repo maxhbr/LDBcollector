@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
-from cube.forms import CreateLicenseCurationForm
+from cube.forms import CreateLicenseCurationForm, CreateLicenseChoiceForm
 from cube.models import LicenseCuration, LicenseChoice, Exploitation
 from .mixins import ForceLoginMixin
 
@@ -123,6 +123,22 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         self.assertRedirects(res, reverse("cube:release_validation", args=[1]))
         self.assertEqual(LicenseCuration.objects.all().count(), 1)
         self.assertEqual(LicenseChoice.objects.all().count(), 0)
+
+    def test_create_licence_choice_rule(self):
+        url = reverse("cube:licensechoice_create", args=[1])
+        res = self.client.post(
+            url,
+            {
+                "expression_out": "LicenseRef-FakeLicense-Permissive",
+                "product_release": CreateLicenseChoiceForm.PRODUCT,
+                "component_version": CreateLicenseChoiceForm.COMPONENT,
+                "scope_choice": CreateLicenseChoiceForm.ANY,
+            },
+        )
+        self.assertEqual(
+            LicenseChoice.objects.first().expression_in,
+            "LicenseRef-FakeLicense OR LicenseRef-FakeLicense-Permissive",
+        )
 
 
 class ExportSBOMTestCase(ForceLoginMixin, TestCase):
