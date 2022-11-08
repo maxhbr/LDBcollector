@@ -297,9 +297,11 @@ export default {
         var ele = "<b-popover target='"+src_lic+"' triggers='hover'>"+pair.dest_file+":"+pair.dest_license+"</b-popover>"
         console.log(ele);
         console.log(src_lic);
-        // $('#description').append("<b-popover target='"+src_lic+"' triggers='click'>"+pair.dest_file+":"+pair.dest_license+"</b-popover>")
-        $('#'+src_lic).append("<p>test</p>")
+        $('#description').append("<b-popover target='"+src_lic+"' triggers='click'>"+pair.dest_file+":"+pair.dest_license+"</b-popover>")
+        // $('#description').append("<p>test</p>")
       }
+      // $('#description').append("<p>test</p>")
+
     }
   }
 }
