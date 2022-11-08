@@ -7,3 +7,4 @@ test_scan
 temp_files
 .vscode
 *.log
+projects.json
