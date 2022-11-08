@@ -44,13 +44,14 @@
                 <span>The licenses in the project</span>
                 <el-divider></el-divider>
                 <div style="overflow-y:scroll; height: 350px;">
-                <b-popover target="AGPL-3.0-only" triggers="hover"><span style="color:cornflowerblue">MigrationHelperFrontend-master/MigrationHelperFrontend-master/test1</span><span>:MIT</span></b-popover>
+                <!-- <b-popover target="AGPL-3.0-only" triggers="hover" disabled="true"><span style="color:cornflowerblue">MigrationHelperFrontend-master/MigrationHelperFrontend-master/test1</span><span>:MIT</span></b-popover> -->
 
                 <div v-for="(file, index) in check_res.licenses_in_files" style="text-align: left; margin: 10px">
                   <div>
-                  <i class="el-icon-warning"></i><span style="color:cornflowerblue">{{index}}:</span>
+                  <i class="el-icon-warning"></i><span class="file-path">{{index}}:</span>
                   <span v-for="license in file">
-                    <span :id="license">{{license}},&nbsp</span>
+                    <span  :id="license">{{license}},&nbsp</span>
+                    <!-- <b-popover :target="license" triggers="hover" disabled="true"></b-popover> -->
                   </span>
                   </div>
                 </div>
@@ -296,7 +297,8 @@ export default {
         var ele = "<b-popover target='"+src_lic+"' triggers='hover'>"+pair.dest_file+":"+pair.dest_license+"</b-popover>"
         console.log(ele);
         console.log(src_lic);
-        $('#description').append("<b-popover target='"+src_lic+"' triggers='click'>"+pair.dest_file+":"+pair.dest_license+"</b-popover>")
+        // $('#description').append("<b-popover target='"+src_lic+"' triggers='click'>"+pair.dest_file+":"+pair.dest_license+"</b-popover>")
+        $('#'+src_lic).append("<p>test</p>")
       }
     }
   }
