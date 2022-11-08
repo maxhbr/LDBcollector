@@ -1,9 +1,7 @@
-subprocess
-json
-pandas
-tqdm
-werkzeug
-zipfile
-rarfile
-pathlib
-base64
+Flask==2.2.2
+joblib==1.0.1
+orjson==3.8.1
+pandas==1.2.4
+rarfile==4.0
+tqdm==4.64.1
+Werkzeug==2.2.2
