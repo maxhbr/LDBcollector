@@ -1,0 +1,6 @@
+license_expression: curl
+is_license_notice: yes
+referenced_filenames:
+    - COPYING
+ignorable_urls:
+    - http://curl.haxx.se/docs/copyright.html

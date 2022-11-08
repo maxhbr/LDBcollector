@@ -1,0 +1,94 @@
+{
+  "type": "maven",
+  "namespace": "org.codehaus.mojo",
+  "name": "build-helper-maven-plugin",
+  "version": "1.2-SNAPSHOT",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Build Helper Maven Plugin\nThis plugin contains various small independent goals to assist with Maven build lifecycle",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Dan Tran",
+      "email": "dantran@gmail.com",
+      "url": null
+    }
+  ],
+  "keywords": [],
+  "homepage_url": null,
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": "http://jira.codehaus.org/browse/MBUILDHELPER",
+  "code_view_url": "http://svn.codehaus.org/mojo/trunk/mojo/build-helper-maven-plugin",
+  "vcs_url": "svn+http://svn.codehaus.org/mojo/trunk/mojo/build-helper-maven-plugin",
+  "copyright": null,
+  "license_expression": "mit",
+  "declared_license": [
+    {
+      "name": "The MIT License",
+      "url": "http://www.opensource.org/licenses/mit-license.php",
+      "comments": null,
+      "distribution": "repo"
+    }
+  ],
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.codehaus.mojo/build-helper-maven-plugin@1.2-SNAPSHOT?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-project@2.0.2",
+      "extracted_requirement": "2.0.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-plugin-api@2.0",
+      "extracted_requirement": "2.0",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-artifact@2.0",
+      "extracted_requirement": "2.0",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.codehaus.plexus/plexus-utils@1.1",
+      "extracted_requirement": "1.1",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.2-SNAPSHOT/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.2-SNAPSHOT/build-helper-maven-plugin-1.2-SNAPSHOT.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.2-SNAPSHOT/build-helper-maven-plugin-1.2-SNAPSHOT.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.codehaus.mojo/build-helper-maven-plugin@1.2-SNAPSHOT"
+}

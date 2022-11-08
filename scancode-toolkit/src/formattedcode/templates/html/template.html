@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{#
+<!--
+#
+# Copyright (c) nexB Inc. and others. All rights reserved.
+# ScanCode is a trademark of nexB Inc.
+# SPDX-License-Identifier: Apache-2.0
+# See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
+# See https://github.com/nexB/scancode-toolkit for support or download.
+# See https://aboutcode.org for more information about nexB OSS projects.
+#
+-->
+#}
+  <head>
+    <meta charset="utf-8">
+    <title>ScanCode results</title>
+    <style type="text/css">
+      table {
+        border-collapse:collapse;
+        border: 1px solid gray;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      td {
+        padding: 5px 5px;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+      }
+      th {
+        padding:10px 5px;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        border-color: gray;
+        color: #fff;
+        background-color: #5E81B7;
+      }
+      tr:nth-child(even) { background-color:#FFFFFF; }
+      tr:nth-child(odd) { background-color:#F9F9F9; }
+      tr:hover { background-color: #EEEEEE; }
+      * {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    {% if files.license_copyright %}
+    <table>
+      <caption>Copyrights and Licenses Information</caption>
+      <thead>
+        <tr>
+          <th>path</th>
+          <th>start</th>
+          <th>end</th>
+          <th>what</th>
+          <th>value</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for path, data in files.license_copyright.items() %}
+          {% for row in data %}
+            <tr>
+              <td>{{ path }}</td>
+              <td>{{ row.start }}</td>
+              <td>{{ row.end }}</td>
+              <td>{{ row.what }}</td>
+              {% if row.what == 'license' %}
+                <td><a href="#license_{{ row.value }}">{{ row.value }}</a></td>
+              {% else %}
+                <td>{{ row.value|escape }}</td>
+              {% endif %}
+            </tr>
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+
+    {% if files.infos %}
+    <table>
+      <caption>File Information</caption>
+      <thead>
+        <tr>
+          <th>path</th>
+          <th>type</th>
+          <th>name</th>
+          <th>extension</th>
+          <th>date</th>
+          <th>size</th>
+          <th>sha1</th>
+          <th>md5</th>
+          <th>files_count</th>
+          <th>mime_type</th>
+          <th>file_type</th>
+          <th>programming_language</th>
+          <th>is_binary</th>
+          <th>is_text</th>
+          <th>is_archive</th>
+          <th>is_media</th>
+          <th>is_source</th>
+          <th>is_script</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for path, row in files.infos.items() %}
+            <tr>
+              <td>{{ path }}</td>
+              <td>{{ row.type }}</td>
+              <td>{{ row.name }}</td>
+              <td>{{ row.extension }}</td>
+              <td>{{ row.date }}</td>
+              <td>{{ row.size }}</td>
+              <td>{{ row.sha1 }}</td>
+              <td>{{ row.md5 }}</td>
+              <td>{{ row.file_count }}</td>
+              <td>{{ row.mime_type }}</td>
+              <td>{{ row.file_type }}</td>
+              <td>{{ row.programming_language }}</td>
+              <td>{{ row.is_binary }}</td>
+              <td>{{ row.is_text }}</td>
+              <td>{{ row.is_archive }}</td>
+              <td>{{ row.is_media }}</td>
+              <td>{{ row.is_source }}</td>
+              <td>{{ row.is_script }}</td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <table>
+      <caption>Holders</caption>
+      <thead>
+        <tr>
+          <th>path</th>
+          <th>holder</th>
+          <th>start</th>
+          <th>end</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for path, row in files.infos.items() %}
+        {% if row.holders %}
+        {% for data in row.holders %}
+        <tr>
+          <td>{{ path }}</td>
+          <td>{{ data.holder }}</td>
+          <td>{{ data.start_line }}</td>
+          <td>{{ data.end_line }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+    <table>
+      <caption>Authors</caption>
+      <thead>
+        <tr>
+          <th>path</th>
+          <th>Author</th>
+          <th>start</th>
+          <th>end</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for path, row in files.infos.items() %}
+        {% if row.authors %}
+        {% for data in row.authors %}
+        <tr>
+          <td>{{ path }}</td>
+          <td>{{ data.author }}</td>
+          <td>{{ data.start_line }}</td>
+          <td>{{ data.end_line }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+    <table>
+      <caption>Emails</caption>
+      <thead>
+        <tr>
+          <th>path</th>
+          <th>email</th>
+          <th>start</th>
+          <th>end</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for path, row in files.infos.items() %}
+        {% if row.emails %}
+        {% for data in row.emails %}
+        <tr>
+          <td>{{ path }}</td>
+          <td>{{ data.email |urlize(target='_blank') }}</td>
+          <td>{{ data.start_line }}</td>
+          <td>{{ data.end_line }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+    <table>
+      <caption>Urls</caption>
+      <thead>
+        <tr>
+          <th>path</th>
+          <th>url</th>
+          <th>start</th>
+          <th>end</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for path, row in files.infos.items() %}
+        {% if row.urls %}
+        {% for data in row.urls %}
+        <tr>
+          <td>{{ path }}</td>
+          <td>{{ data.url |urlize(target='_blank') }}</td>
+          <td>{{ data.start_line }}</td>
+          <td>{{ data.end_line }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+
+    {% if files.package_data %}
+    <table>
+      <caption>Package Information</caption>
+      <thead>
+        <tr>
+          <th>path</th>
+          <th>type</th>
+          <th>packaging</th>
+          <th>primary_language</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for path, data in files.package_data.items() %}
+          {% for row in data %}
+            <tr>
+              <td>{{ path }}</td>
+              <td>{{ row.type }}</td>
+              <td>{{ row.packaging }}</td>
+              <td>{{ row.primary_language }}</td>
+            </tr>
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+
+    {% if licenses %}
+    <table>
+      <caption>Licenses</caption>
+      <thead>
+        <tr>
+          <th>key</th>
+          <th>short_name</th>
+          <th>category</th>
+          <th>owner</th>
+          <th>reference_url</th>
+          <th>homepage_url</th>
+          <th>text_url</th>
+          <th>spdx_license_key</th>
+          <th>spdx_url</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for key, license in licenses.items() %}
+          <tr id="license_{{ license.key }}">
+            <td>{{ license.key }}</td>
+            <td>{{ license.short_name }}</td>
+            <td>{{ license.category }}</td>
+            <td>{{ license.owner }}</td>
+            <td>{{ license.reference_url|urlize(target='_blank') }}</td>
+            <td>{{ license.homepage_url|urlize(target='_blank') }}</td>
+            <td>{{ license.text_url|urlize(target='_blank') }}</td>
+            <td>{{ license.spdx_license_key }}</td>
+            <td>{{ license.spdx_url|urlize(target='_blank') }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+  </body>
+  <footer>
+    <p>ScanCode version {{ version }}</p>
+    <p>Generated with ScanCode and provided on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    No content created from ScanCode should be considered or used as legal advice. Consult an Attorney for any legal advice.
+    ScanCode is a free software code scanning tool from nexB Inc. and others.
+    Visit <a href="http://www.nexb.com/" target="_blank">http://www.nexb.com</a> and <a href="https://github.com/nexB/scancode-toolkit/" target="_blank">https://github.com/nexB/scancode-toolkit/</a> for support and download.
+  </footer>
+</html>

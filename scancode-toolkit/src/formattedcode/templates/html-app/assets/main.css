@@ -1,0 +1,78 @@
+/*
+#
+# Copyright (c) nexB Inc. and others. All rights reserved.
+# ScanCode is a trademark of nexB Inc.
+# SPDX-License-Identifier: Apache-2.0
+# See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
+# See https://github.com/nexB/scancode-toolkit for support or download.
+# See https://aboutcode.org for more information about nexB OSS projects.
+#
+*/
+footer {
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+td.details-control:before {
+    content:"\2b";
+    font-family:"Glyphicons Halflings";
+    cursor: pointer;
+    color: #0064CD;
+}
+tr.shown td.details-control:before {
+    content:"\2212";
+    font-family:"Glyphicons Halflings";
+}
+.icon-primary{color: #0064CD;}
+.icon-secondary{color: #0064CD;}
+.icon-empty{color: #A4B1BF;}
+table.table-wrap {
+  table-layout:fixed;
+  word-wrap: break-word;
+}
+.ellipsis td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#scan-result-header {
+  margin: 0px 40px 20px 10px;
+}
+
+#file-path {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#file-path p {
+  padding: 0px 20px 0px 20px;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+.data_table, #tree {
+border: 1px solid #CCC;
+border-radius: 4px;
+}
+.chart rect {
+  fill: #337ab7;
+}
+
+.chart text {
+  fill: black;
+  font: 12px sans-serif;
+  text-anchor: end;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.chart {width: 100%;}
+
+.total-files{ padding-top: 10px;}
+
+.nav-tabs { margin-bottom: 6px;}

@@ -1,0 +1,84 @@
+[
+  {
+    "type": "composer",
+    "namespace": "jandreasn",
+    "name": "a-timer",
+    "version": null,
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "PHP",
+    "description": null,
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Andreas Nilsson",
+        "email": null,
+        "url": null
+      },
+      {
+        "type": "person",
+        "role": "vendor",
+        "name": "jandreasn",
+        "email": null,
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "http://github.com/jandreasn/a-timer",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": "MIT",
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:composer/php",
+        "extracted_requirement": ">=5.6.0",
+        "scope": "require",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/phpunit/phpunit",
+        "extracted_requirement": "^5.6",
+        "scope": "require-dev",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/squizlabs/php_codesniffer",
+        "extracted_requirement": "^2.7",
+        "scope": "require-dev",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://packagist.org/packages/jandreasn/a-timer",
+    "repository_download_url": null,
+    "api_data_url": "https://packagist.org/p/packages/jandreasn/a-timer.json",
+    "datasource_id": "php_composer_json",
+    "purl": "pkg:composer/jandreasn/a-timer"
+  }
+]

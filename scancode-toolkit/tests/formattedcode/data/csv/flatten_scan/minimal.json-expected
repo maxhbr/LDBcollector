@@ -1,0 +1,82 @@
+[
+    {
+        "path": "srp/",
+        "type": "directory",
+        "scan_errors": ""
+    },
+    {
+        "path": "srp/build.info",
+        "type": "file",
+        "scan_errors": ""
+    },
+    {
+        "path": "srp/srp_lib.c",
+        "type": "file",
+        "scan_errors": ""
+    },
+    {
+        "path": "srp/srp_lib.c",
+        "license__key": "openssl",
+        "license__score": "100.00",
+        "license__short_name": "OpenSSL License",
+        "license__category": "Permissive",
+        "license__owner": "OpenSSL",
+        "license__homepage_url": "http://openssl.org/source/license.html",
+        "license__text_url": null,
+        "license__reference_url": "https://scancode-licensedb.aboutcode.org/openssl",
+        "license__spdx_license_key": "",
+        "license__spdx_url": null,
+        "start_line": 4,
+        "end_line": 7,
+        "matched_rule__identifier": "openssl_8.RULE",
+        "matched_rule__license_expression": "openssl",
+        "matched_rule__licenses": "openssl"
+    },
+    {
+        "path": "srp/srp_lib.c",
+        "copyright": "Copyright 2011-2016 The OpenSSL Project",
+        "start_line": 2,
+        "end_line": 2
+    },
+    {
+        "path": "srp/srp_lib.c",
+        "holder": "The OpenSSL Project",
+        "start_line": 2,
+        "end_line": 2
+    },
+    {
+        "path": "srp/srp_vfy.c",
+        "type": "file",
+        "scan_errors": ""
+    },
+    {
+        "path": "srp/srp_vfy.c",
+        "license__key": "openssl",
+        "license__score": "100.00",
+        "license__short_name": "OpenSSL License",
+        "license__category": "Permissive",
+        "license__owner": "OpenSSL",
+        "license__homepage_url": "http://openssl.org/source/license.html",
+        "license__text_url": null,
+        "license__reference_url": "https://scancode-licensedb.aboutcode.org/openssl",
+        "license__spdx_license_key": "",
+        "license__spdx_url": null,
+        "start_line": 4,
+        "end_line": 7,
+        "matched_rule__identifier": "openssl_8.RULE",
+        "matched_rule__license_expression": "openssl",
+        "matched_rule__licenses": "openssl"
+    },
+    {
+        "path": "srp/srp_vfy.c",
+        "copyright": "Copyright 2011-2016 The OpenSSL Project",
+        "start_line": 2,
+        "end_line": 2
+    },
+    {
+        "path": "srp/srp_vfy.c",
+        "holder": "The OpenSSL Project",
+        "start_line": 2,
+        "end_line": 2
+    }
+]

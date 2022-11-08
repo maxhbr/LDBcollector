@@ -1,0 +1,121 @@
+{
+  "type": "maven",
+  "namespace": "asm",
+  "name": "asm-parent",
+  "version": "3.0",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "ASM\nA very small and fast Java bytecode manipulation framework",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Eric Bruneton",
+      "email": "Eric.Bruneton@rd.francetelecom.com",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "developper",
+      "name": "Eugene Kuleshov",
+      "email": "eu@javatx.org",
+      "url": null
+    },
+    {
+      "type": "organization",
+      "role": "owner",
+      "name": "ObjectWeb",
+      "email": null,
+      "url": "http://www.objectweb.org/"
+    }
+  ],
+  "keywords": [],
+  "homepage_url": "http://asm.objectweb.org/",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": "http://forge.objectweb.org/tracker/?group_id=23",
+  "code_view_url": "http://cvs.forge.objectweb.org/cgi-bin/viewcvs.cgi/asm/asm/",
+  "vcs_url": "cvs+pserver:anonymous@cvs.forge.objectweb.org:/cvsroot/asm:asm",
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/asm/asm-parent@3.0?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/asm/asm@3.0",
+      "extracted_requirement": "3.0",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/asm/asm-tree@3.0",
+      "extracted_requirement": "3.0",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/asm/asm-analysis@3.0",
+      "extracted_requirement": "3.0",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/asm/asm-commons@3.0",
+      "extracted_requirement": "3.0",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/asm/asm-util@3.0",
+      "extracted_requirement": "3.0",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/asm/asm-xml@3.0",
+      "extracted_requirement": "3.0",
+      "scope": "dependencymanagement",
+      "is_runtime": false,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/asm/asm-parent/3.0/",
+  "repository_download_url": "https://repo1.maven.org/maven2/asm/asm-parent/3.0/asm-parent-3.0.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/asm/asm-parent/3.0/asm-parent-3.0.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/asm/asm-parent@3.0"
+}

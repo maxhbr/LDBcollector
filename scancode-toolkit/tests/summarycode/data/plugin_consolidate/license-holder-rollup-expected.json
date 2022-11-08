@@ -1,0 +1,642 @@
+{
+  "dependencies": [],
+  "packages": [],
+  "consolidated_components": [
+    {
+      "type": "holders",
+      "identifier": "corp_ibm_1",
+      "consolidated_license_expression": "gpl-1.0-plus AND gpl-2.0",
+      "consolidated_holders": [
+        "IBM Corp."
+      ],
+      "consolidated_copyright": "Copyright (c) IBM Corp.",
+      "core_license_expression": "gpl-1.0-plus AND gpl-2.0",
+      "core_holders": [
+        "IBM Corp."
+      ],
+      "other_license_expression": null,
+      "other_holders": [],
+      "files_count": 1
+    },
+    {
+      "type": "holders",
+      "identifier": "corp_oracle_1",
+      "consolidated_license_expression": "apache-2.0 AND unknown-license-reference",
+      "consolidated_holders": [
+        "Oracle Corp."
+      ],
+      "consolidated_copyright": "Copyright (c) Oracle Corp.",
+      "core_license_expression": "unknown-license-reference AND apache-2.0",
+      "core_holders": [
+        "Oracle Corp."
+      ],
+      "other_license_expression": null,
+      "other_holders": [],
+      "files_count": 1
+    },
+    {
+      "type": "holders",
+      "identifier": "omegacom_1",
+      "consolidated_license_expression": "gpl-1.0-plus AND gpl-2.0",
+      "consolidated_holders": [
+        "omega.com"
+      ],
+      "consolidated_copyright": "Copyright (c) omega.com",
+      "core_license_expression": "gpl-1.0-plus AND gpl-2.0",
+      "core_holders": [
+        "omega.com"
+      ],
+      "other_license_expression": null,
+      "other_holders": [],
+      "files_count": 1
+    }
+  ],
+  "consolidated_packages": [],
+  "files": [
+    {
+      "path": "license-holder-rollup",
+      "type": "directory",
+      "name": "license-holder-rollup",
+      "base_name": "license-holder-rollup",
+      "extension": "",
+      "size": 0,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [],
+      "license_expressions": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [],
+      "files_count": 3,
+      "dirs_count": 5,
+      "size_count": 144,
+      "scan_errors": []
+    },
+    {
+      "path": "license-holder-rollup/clear-majority",
+      "type": "directory",
+      "name": "clear-majority",
+      "base_name": "clear-majority",
+      "extension": "",
+      "size": 0,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [],
+      "license_expressions": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [],
+      "files_count": 1,
+      "dirs_count": 1,
+      "size_count": 46,
+      "scan_errors": []
+    },
+    {
+      "path": "license-holder-rollup/clear-majority/dir1",
+      "type": "directory",
+      "name": "dir1",
+      "base_name": "dir1",
+      "extension": "",
+      "size": 0,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [],
+      "license_expressions": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [
+        "omegacom_1"
+      ],
+      "files_count": 1,
+      "dirs_count": 0,
+      "size_count": 46,
+      "scan_errors": []
+    },
+    {
+      "path": "license-holder-rollup/clear-majority/dir1/file1",
+      "type": "file",
+      "name": "file1",
+      "base_name": "file1",
+      "extension": "",
+      "size": 46,
+      "sha1": "21aec44ff80c4f5c2957b4360647785ae25c7854",
+      "md5": "5b896afc8c6958d74694967f60bf4d70",
+      "sha256": "d792df04dffa67fadaa439594792af377e508806960a0094d84dfc8e608cd4f3",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [
+        {
+          "key": "gpl-1.0-plus",
+          "score": 100.0,
+          "name": "GNU General Public License 1.0 or later",
+          "short_name": "GPL 1.0 or later",
+          "category": "Copyleft",
+          "is_exception": false,
+          "is_unknown": false,
+          "owner": "Free Software Foundation (FSF)",
+          "homepage_url": "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html",
+          "text_url": "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html",
+          "reference_url": "https://scancode-licensedb.aboutcode.org/gpl-1.0-plus",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-1.0-plus.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml",
+          "spdx_license_key": "GPL-1.0-or-later",
+          "spdx_url": "https://spdx.org/licenses/GPL-1.0-or-later",
+          "start_line": 2,
+          "end_line": 2,
+          "matched_rule": {
+            "identifier": "gpl_208.RULE",
+            "license_expression": "gpl-1.0-plus",
+            "licenses": [
+              "gpl-1.0-plus"
+            ],
+            "referenced_filenames": [],
+            "is_license_text": false,
+            "is_license_notice": false,
+            "is_license_reference": true,
+            "is_license_tag": false,
+            "is_license_intro": false,
+            "has_unknown": false,
+            "matcher": "2-aho",
+            "rule_length": 3,
+            "matched_length": 3,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        },
+        {
+          "key": "gpl-2.0",
+          "score": 100.0,
+          "name": "GNU General Public License 2.0",
+          "short_name": "GPL 2.0",
+          "category": "Copyleft",
+          "is_exception": false,
+          "is_unknown": false,
+          "owner": "Free Software Foundation (FSF)",
+          "homepage_url": "http://www.gnu.org/licenses/gpl-2.0.html",
+          "text_url": "http://www.gnu.org/licenses/gpl-2.0.txt",
+          "reference_url": "https://scancode-licensedb.aboutcode.org/gpl-2.0",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-2.0.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-2.0.yml",
+          "spdx_license_key": "GPL-2.0-only",
+          "spdx_url": "https://spdx.org/licenses/GPL-2.0-only",
+          "start_line": 2,
+          "end_line": 2,
+          "matched_rule": {
+            "identifier": "gpl-2.0_840.RULE",
+            "license_expression": "gpl-2.0",
+            "licenses": [
+              "gpl-2.0"
+            ],
+            "referenced_filenames": [],
+            "is_license_text": false,
+            "is_license_notice": false,
+            "is_license_reference": true,
+            "is_license_tag": false,
+            "is_license_intro": false,
+            "has_unknown": false,
+            "matcher": "2-aho",
+            "rule_length": 3,
+            "matched_length": 3,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        }
+      ],
+      "license_expressions": [
+        "gpl-1.0-plus",
+        "gpl-2.0"
+      ],
+      "percentage_of_license_text": 44.44,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) omega.com",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "omega.com",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [
+        "omegacom_1"
+      ],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "license-holder-rollup/no-majority",
+      "type": "directory",
+      "name": "no-majority",
+      "base_name": "no-majority",
+      "extension": "",
+      "size": 0,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [],
+      "license_expressions": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [],
+      "files_count": 2,
+      "dirs_count": 2,
+      "size_count": 98,
+      "scan_errors": []
+    },
+    {
+      "path": "license-holder-rollup/no-majority/bar",
+      "type": "directory",
+      "name": "bar",
+      "base_name": "bar",
+      "extension": "",
+      "size": 0,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [],
+      "license_expressions": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [
+        "corp_ibm_1"
+      ],
+      "files_count": 1,
+      "dirs_count": 0,
+      "size_count": 46,
+      "scan_errors": []
+    },
+    {
+      "path": "license-holder-rollup/no-majority/bar/qux",
+      "type": "file",
+      "name": "qux",
+      "base_name": "qux",
+      "extension": "",
+      "size": 46,
+      "sha1": "8b94498ae812abc4f82304aa2f9766df45ba1873",
+      "md5": "87ad74664f4ba242df4bedf2a83b2169",
+      "sha256": "0e8b9334e6f8a9b51d745da57c2a958966c3ed8aab580922fb98e146e9c7552c",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [
+        {
+          "key": "gpl-1.0-plus",
+          "score": 100.0,
+          "name": "GNU General Public License 1.0 or later",
+          "short_name": "GPL 1.0 or later",
+          "category": "Copyleft",
+          "is_exception": false,
+          "is_unknown": false,
+          "owner": "Free Software Foundation (FSF)",
+          "homepage_url": "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html",
+          "text_url": "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html",
+          "reference_url": "https://scancode-licensedb.aboutcode.org/gpl-1.0-plus",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-1.0-plus.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml",
+          "spdx_license_key": "GPL-1.0-or-later",
+          "spdx_url": "https://spdx.org/licenses/GPL-1.0-or-later",
+          "start_line": 2,
+          "end_line": 2,
+          "matched_rule": {
+            "identifier": "gpl_208.RULE",
+            "license_expression": "gpl-1.0-plus",
+            "licenses": [
+              "gpl-1.0-plus"
+            ],
+            "referenced_filenames": [],
+            "is_license_text": false,
+            "is_license_notice": false,
+            "is_license_reference": true,
+            "is_license_tag": false,
+            "is_license_intro": false,
+            "has_unknown": false,
+            "matcher": "2-aho",
+            "rule_length": 3,
+            "matched_length": 3,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        },
+        {
+          "key": "gpl-2.0",
+          "score": 100.0,
+          "name": "GNU General Public License 2.0",
+          "short_name": "GPL 2.0",
+          "category": "Copyleft",
+          "is_exception": false,
+          "is_unknown": false,
+          "owner": "Free Software Foundation (FSF)",
+          "homepage_url": "http://www.gnu.org/licenses/gpl-2.0.html",
+          "text_url": "http://www.gnu.org/licenses/gpl-2.0.txt",
+          "reference_url": "https://scancode-licensedb.aboutcode.org/gpl-2.0",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-2.0.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/gpl-2.0.yml",
+          "spdx_license_key": "GPL-2.0-only",
+          "spdx_url": "https://spdx.org/licenses/GPL-2.0-only",
+          "start_line": 2,
+          "end_line": 2,
+          "matched_rule": {
+            "identifier": "gpl-2.0_840.RULE",
+            "license_expression": "gpl-2.0",
+            "licenses": [
+              "gpl-2.0"
+            ],
+            "referenced_filenames": [],
+            "is_license_text": false,
+            "is_license_notice": false,
+            "is_license_reference": true,
+            "is_license_tag": false,
+            "is_license_intro": false,
+            "has_unknown": false,
+            "matcher": "2-aho",
+            "rule_length": 3,
+            "matched_length": 3,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        }
+      ],
+      "license_expressions": [
+        "gpl-1.0-plus",
+        "gpl-2.0"
+      ],
+      "percentage_of_license_text": 44.44,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) IBM Corp.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "IBM Corp.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [
+        "corp_ibm_1"
+      ],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "license-holder-rollup/no-majority/foo",
+      "type": "directory",
+      "name": "foo",
+      "base_name": "foo",
+      "extension": "",
+      "size": 0,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [],
+      "license_expressions": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [
+        "corp_oracle_1"
+      ],
+      "files_count": 1,
+      "dirs_count": 0,
+      "size_count": 52,
+      "scan_errors": []
+    },
+    {
+      "path": "license-holder-rollup/no-majority/foo/baz",
+      "type": "file",
+      "name": "baz",
+      "base_name": "baz",
+      "extension": "",
+      "size": 52,
+      "sha1": "e77836a77dea5398842c5dea1eb4e117ae4af544",
+      "md5": "bf1dfc5106c2a5a818bd26aa414cd38d",
+      "sha256": "56b9cf21e16f43cfbd38acb731bef245396fad8b488f27aaf2758c6ab50f5ab5",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "licenses": [
+        {
+          "key": "unknown-license-reference",
+          "score": 50.0,
+          "name": "Unknown License file reference",
+          "short_name": "Unknown License reference",
+          "category": "Unstated License",
+          "is_exception": false,
+          "is_unknown": true,
+          "owner": "Unspecified",
+          "homepage_url": null,
+          "text_url": null,
+          "reference_url": "https://scancode-licensedb.aboutcode.org/unknown-license-reference",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/unknown-license-reference.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/unknown-license-reference.yml",
+          "spdx_license_key": "LicenseRef-scancode-unknown-license-reference",
+          "spdx_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/unknown-license-reference.LICENSE",
+          "start_line": 2,
+          "end_line": 2,
+          "matched_rule": {
+            "identifier": "license-intro_2.RULE",
+            "license_expression": "unknown-license-reference",
+            "licenses": [
+              "unknown-license-reference"
+            ],
+            "referenced_filenames": [],
+            "is_license_text": false,
+            "is_license_notice": false,
+            "is_license_reference": false,
+            "is_license_tag": false,
+            "is_license_intro": true,
+            "has_unknown": true,
+            "matcher": "2-aho",
+            "rule_length": 2,
+            "matched_length": 2,
+            "match_coverage": 100.0,
+            "rule_relevance": 50
+          }
+        },
+        {
+          "key": "apache-2.0",
+          "score": 100.0,
+          "name": "Apache License 2.0",
+          "short_name": "Apache 2.0",
+          "category": "Permissive",
+          "is_exception": false,
+          "is_unknown": false,
+          "owner": "Apache Software Foundation",
+          "homepage_url": "http://www.apache.org/licenses/",
+          "text_url": "http://www.apache.org/licenses/LICENSE-2.0",
+          "reference_url": "https://scancode-licensedb.aboutcode.org/apache-2.0",
+          "scancode_text_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/apache-2.0.LICENSE",
+          "scancode_data_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/apache-2.0.yml",
+          "spdx_license_key": "Apache-2.0",
+          "spdx_url": "https://spdx.org/licenses/Apache-2.0",
+          "start_line": 2,
+          "end_line": 2,
+          "matched_rule": {
+            "identifier": "spdx_license_id_apache-2.0_for_apache-2.0.RULE",
+            "license_expression": "apache-2.0",
+            "licenses": [
+              "apache-2.0"
+            ],
+            "referenced_filenames": [],
+            "is_license_text": false,
+            "is_license_notice": false,
+            "is_license_reference": true,
+            "is_license_tag": false,
+            "is_license_intro": false,
+            "has_unknown": false,
+            "matcher": "2-aho",
+            "rule_length": 3,
+            "matched_length": 3,
+            "match_coverage": 100.0,
+            "rule_relevance": 100
+          }
+        }
+      ],
+      "license_expressions": [
+        "unknown-license-reference",
+        "apache-2.0"
+      ],
+      "percentage_of_license_text": 55.56,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Oracle Corp.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Oracle Corp.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "package_data": [],
+      "for_packages": [],
+      "consolidated_to": [
+        "corp_oracle_1"
+      ],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

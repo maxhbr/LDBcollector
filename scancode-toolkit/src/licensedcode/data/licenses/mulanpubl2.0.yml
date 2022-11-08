@@ -1,0 +1,10 @@
+key: mulanpubl2.0
+language: zh-hans
+short_name: Mulan PubL v2
+name: Mulan Public License, Version 2
+category: Permissive
+owner: COSCI
+homepage_url: http://license.coscl.org.cn/MulanPubL-2.0/
+spdx_license_key: MulanPubL-2.0
+ignorable_urls:
+    - http://license.coscl.org.cn/MulanPubL-2.0/

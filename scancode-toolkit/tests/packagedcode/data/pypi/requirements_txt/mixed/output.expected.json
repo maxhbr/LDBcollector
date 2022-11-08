@@ -1,0 +1,123 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": null,
+    "version": null,
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": null,
+    "release_date": null,
+    "parties": [],
+    "keywords": [],
+    "homepage_url": null,
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": null,
+    "declared_license": null,
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:pypi/requirements",
+        "extracted_requirement": "--editable git+https://github.com/davidfischer/requirements-parser.git#egg=requirements",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {
+          "is_editable": true,
+          "link": "git+https://github.com/davidfischer/requirements-parser.git#egg=requirements",
+          "hash_options": [],
+          "is_constraint": false,
+          "is_archive": false,
+          "is_wheel": false,
+          "is_url": true,
+          "is_vcs_url": true,
+          "is_name_at_url": false,
+          "is_local_path": true
+        }
+      },
+      {
+        "purl": "pkg:pypi/django",
+        "extracted_requirement": "Django>=1.5,<1.6",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {
+          "is_editable": false,
+          "link": null,
+          "hash_options": [],
+          "is_constraint": false,
+          "is_archive": null,
+          "is_wheel": false,
+          "is_url": null,
+          "is_vcs_url": null,
+          "is_name_at_url": false,
+          "is_local_path": null
+        }
+      },
+      {
+        "purl": "pkg:pypi/numpy",
+        "extracted_requirement": "numpy",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {
+          "is_editable": false,
+          "link": null,
+          "hash_options": [],
+          "is_constraint": false,
+          "is_archive": null,
+          "is_wheel": false,
+          "is_url": null,
+          "is_vcs_url": null,
+          "is_name_at_url": false,
+          "is_local_path": null
+        }
+      },
+      {
+        "purl": "pkg:pypi/docparser",
+        "extracted_requirement": "DocParser[pdf]",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {
+          "is_editable": false,
+          "link": null,
+          "hash_options": [],
+          "is_constraint": false,
+          "is_archive": null,
+          "is_wheel": false,
+          "is_url": null,
+          "is_vcs_url": null,
+          "is_name_at_url": false,
+          "is_local_path": null
+        }
+      }
+    ],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "pip_requirements",
+    "purl": null
+  }
+]

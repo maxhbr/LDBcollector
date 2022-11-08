@@ -1,0 +1,311 @@
+{
+  "type": "maven",
+  "namespace": "org.apache.maven.plugins",
+  "name": "maven-site-plugin",
+  "version": "2.0-beta-6",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Maven Site plugin",
+  "release_date": null,
+  "parties": [
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Naoki Nose",
+      "email": "ikkoan@mail.goo.ne.jp",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Michael Wechner",
+      "email": "michael.wechner@wyona.com",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Christian Schulte",
+      "email": "cs@schulte.it",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Piotr Bzdyl",
+      "email": "piotr@bzdyl.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Domingos Creado",
+      "email": "dcreado@users.sf.net",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "John Allen",
+      "email": "john_h_allen@hotmail.com",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Laszlo Hornyak Kocka",
+      "email": "laszlo.hornyak@gmail.com",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Hermod Opstvedt",
+      "email": "hermod.opstvedt@dnbnor.no",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Yue Ni",
+      "email": "ni2yue4@gmail.com",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Arturo Vazquez",
+      "email": "vaz@root.com.mx",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Woonsan Ko",
+      "email": "woon_san@yahoo.com",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Martin Vysny",
+      "email": "mvy@whitestein.com",
+      "url": null
+    },
+    {
+      "type": "person",
+      "role": "contributor",
+      "name": "Petr Ferschmann",
+      "email": "pferschmann@softeu.com",
+      "url": null
+    }
+  ],
+  "keywords": [],
+  "homepage_url": null,
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": "http://jira.codehaus.org/browse/MSITE",
+  "code_view_url": "http://svn.apache.org/viewvc/maven/plugins/tags/maven-site-plugin-2.0-beta-6",
+  "vcs_url": "svn+http://svn.apache.org/repos/asf/maven/plugins/tags/maven-site-plugin-2.0-beta-6",
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.apache.maven.plugins/maven-site-plugin@2.0-beta-6?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-artifact@2.0.2",
+      "extracted_requirement": "2.0.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-artifact-manager@2.0.2",
+      "extracted_requirement": "2.0.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-model@2.0.2",
+      "extracted_requirement": "2.0.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-plugin-api@2.0",
+      "extracted_requirement": "2.0",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-project@2.0",
+      "extracted_requirement": "2.0",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven/maven-settings@2.0",
+      "extracted_requirement": "2.0",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.doxia/doxia-module-xhtml@1.0-alpha-10",
+      "extracted_requirement": "1.0-alpha-10",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.doxia/doxia-sink-api@1.0-alpha-10",
+      "extracted_requirement": "1.0-alpha-10",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.doxia/doxia-decoration-model@1.0-alpha-10",
+      "extracted_requirement": "1.0-alpha-10",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.doxia/doxia-site-renderer@1.0-alpha-10",
+      "extracted_requirement": "1.0-alpha-10",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.reporting/maven-reporting-api@2.0.4",
+      "extracted_requirement": "2.0.4",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.wagon/wagon-provider-api@1.0-beta-2",
+      "extracted_requirement": "1.0-beta-2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.codehaus.plexus/plexus-archiver@1.0-alpha-7",
+      "extracted_requirement": "1.0-alpha-7",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.codehaus.plexus/plexus-container-default@1.0-alpha-9",
+      "extracted_requirement": "1.0-alpha-9",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.codehaus.plexus/plexus-i18n@1.0-beta-7",
+      "extracted_requirement": "1.0-beta-7",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.codehaus.plexus/plexus-utils@1.4.5",
+      "extracted_requirement": "1.4.5",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.mortbay.jetty/jetty@6.1.5",
+      "extracted_requirement": "6.1.5",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.shared/maven-plugin-testing-harness@1.0-beta-1",
+      "extracted_requirement": "1.0-beta-1",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-site-plugin/2.0-beta-6/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-site-plugin/2.0-beta-6/maven-site-plugin-2.0-beta-6.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-site-plugin/2.0-beta-6/maven-site-plugin-2.0-beta-6.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.apache.maven.plugins/maven-site-plugin@2.0-beta-6"
+}

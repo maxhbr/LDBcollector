@@ -1,0 +1,60 @@
+[
+  {
+    "type": "cargo",
+    "namespace": null,
+    "name": "mdbook",
+    "version": "0.2.4-alpha.0",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Rust",
+    "description": "Create books from markdown files",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Mathieu David",
+        "email": "mathieudavid@mathieudavid.org",
+        "url": null
+      },
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Michael-F-Bryan",
+        "email": "michaelfbryan@gmail.com",
+        "url": null
+      },
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Matt Ickstadt",
+        "email": "mattico8@gmail.com",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": null,
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "https://github.com/rust-lang-nursery/mdBook",
+    "copyright": null,
+    "license_expression": "mpl-2.0",
+    "declared_license": "MPL-2.0",
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [],
+    "repository_homepage_url": "https://crates.io/crates/mdbook",
+    "repository_download_url": "https://crates.io/api/v1/crates/mdbook/0.2.4-alpha.0/download",
+    "api_data_url": "https://crates.io/api/v1/crates/mdbook",
+    "datasource_id": "cargo_toml",
+    "purl": "pkg:cargo/mdbook@0.2.4-alpha.0"
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": "agents_common",
+    "version": null,
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": "Function utils for OII agents",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "__author__",
+        "email": "juga@riseup.net",
+        "url": null
+      }
+    ],
+    "keywords": [
+      "agents",
+      "development",
+      "utils",
+      "Development Status :: 3 - Alpha",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "Natural Language :: English",
+      "Programming Language :: Python :: 2.7",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Utilities"
+    ],
+    "homepage_url": "https://lab.openintegrity.org/agents/agents-common-code",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "gpl-3.0 AND (free-unknown AND gpl-3.0)",
+    "declared_license": {
+      "license": "GPLv3",
+      "classifiers": [
+        "License :: OSI Approved :: GPLv3 License"
+      ]
+    },
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:pypi/ipython",
+        "extracted_requirement": "ipython",
+        "scope": "dev",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/coverage",
+        "extracted_requirement": "coverage",
+        "scope": "test",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://pypi.org/project/agents_common",
+    "repository_download_url": null,
+    "api_data_url": "https://pypi.org/pypi/agents_common/json",
+    "datasource_id": "pypi_setup_py",
+    "purl": "pkg:pypi/agents-common"
+  }
+]

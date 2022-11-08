@@ -1,0 +1,374 @@
+[
+  {
+    "type": "npm",
+    "namespace": null,
+    "name": "react-mobile-navigation-modal",
+    "version": "0.1.0-rc.3",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "JavaScript",
+    "description": "React mobile navigation modal.",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Rostyslav Khanas",
+        "email": "rk@try.cards",
+        "url": null
+      },
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "rtkhanas",
+        "email": "rtkhanas@gmail.com",
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": null,
+    "download_url": "https://registry.npmjs.org/react-mobile-navigation-modal/-/react-mobile-navigation-modal-0.1.0-rc.3.tgz",
+    "size": null,
+    "sha1": "0ae0b2065295b14c9db60852215b3f60d5510a99",
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": null,
+    "declared_license": [],
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:npm/binary-ui-icons",
+        "extracted_requirement": "^0.1.0-rc.8",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/binary-ui-stack",
+        "extracted_requirement": "^0.0.1-rc.4",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/binary-ui-styles",
+        "extracted_requirement": "^0.1.0-rc.8",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/invariant",
+        "extracted_requirement": "^2.2.1",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/react-mobile-navigation-core",
+        "extracted_requirement": "^0.1.0-rc.3",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/react-mobile-navigation-engine",
+        "extracted_requirement": "^0.1.0-rc.3",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel",
+        "extracted_requirement": "^6.3.26",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-cli",
+        "extracted_requirement": "^6.7.7",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-core",
+        "extracted_requirement": "^6.7.7",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-eslint",
+        "extracted_requirement": "^6.0.3",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-loader",
+        "extracted_requirement": "^6.2.1",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-plugin-transform-decorators-legacy",
+        "extracted_requirement": "^1.3.4",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-plugin-transform-object-rest-spread",
+        "extracted_requirement": "^6.5.0",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-preset-es2015",
+        "extracted_requirement": "^6.3.13",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-preset-es2015-allow-top-level-this",
+        "extracted_requirement": "0.0.1",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/babel-preset-react",
+        "extracted_requirement": "^6.3.13",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint",
+        "extracted_requirement": "^2.5.3",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-config-airbnb",
+        "extracted_requirement": "^9.0.1",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-plugin-import",
+        "extracted_requirement": "^1.5.0",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-plugin-jsx-a11y",
+        "extracted_requirement": "^1.0.2",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/eslint-plugin-react",
+        "extracted_requirement": "^5.0.1",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/node-uuid",
+        "extracted_requirement": "^1.4.7",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/react",
+        "extracted_requirement": "~15.3.2",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/react-art",
+        "extracted_requirement": "^0.15.1",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/react-dom",
+        "extracted_requirement": "~15.3.2",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/react-motion",
+        "extracted_requirement": "^0.4.7",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/react-redux",
+        "extracted_requirement": "^4.0.6",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/redux",
+        "extracted_requirement": "^3.0.5",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/rimraf",
+        "extracted_requirement": "^2.3.4",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/webpack",
+        "extracted_requirement": "^1.12.15",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/webpack-dev-server",
+        "extracted_requirement": "^1.14.1",
+        "scope": "devDependencies",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/react",
+        "extracted_requirement": "~15.3.2",
+        "scope": "peerDependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://www.npmjs.com/package/react-mobile-navigation-modal",
+    "repository_download_url": "https://registry.npmjs.org/react-mobile-navigation-modal/-/react-mobile-navigation-modal-0.1.0-rc.3.tgz",
+    "api_data_url": "https://registry.npmjs.org/react-mobile-navigation-modal/0.1.0-rc.3",
+    "datasource_id": "npm_package_json",
+    "purl": "pkg:npm/react-mobile-navigation-modal@0.1.0-rc.3"
+  }
+]

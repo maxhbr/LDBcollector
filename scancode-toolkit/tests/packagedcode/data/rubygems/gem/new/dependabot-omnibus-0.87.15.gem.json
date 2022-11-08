@@ -1,0 +1,159 @@
+[
+  {
+    "type": "gem",
+    "namespace": null,
+    "name": "dependabot-omnibus",
+    "version": "0.87.15",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Ruby",
+    "description": "Meta-package that depends on all core dependabot-core package managers\nAutomated dependency management for Ruby, JavaScript, Python, PHP, Elixir, Rust, Java, .NET, Elm and Go",
+    "release_date": "2019-01-09",
+    "parties": [
+      {
+        "type": null,
+        "role": "author",
+        "name": "Dependabot",
+        "email": null,
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://github.com/dependabot/dependabot-core",
+    "download_url": "https://rubygems.org/downloads/dependabot-omnibus-0.87.15.gem",
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "unknown",
+    "declared_license": [
+      "Nonstandard"
+    ],
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:gem/dependabot-cargo",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-core",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-docker",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-elm",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-git_submodules",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-go_modules",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-gradle",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-maven",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-nuget",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-python",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:gem/dependabot-terraform",
+        "extracted_requirement": "= 0.87.15",
+        "scope": "runtime",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": true,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://rubygems.org/gems/dependabot-omnibus/versions/0.87.15",
+    "repository_download_url": "https://rubygems.org/downloads/dependabot-omnibus-0.87.15.gem",
+    "api_data_url": "https://rubygems.org/api/v2/rubygems/dependabot-omnibus/versions/0.87.15.json",
+    "datasource_id": "gem_archive",
+    "purl": "pkg:gem/dependabot-omnibus@0.87.15"
+  }
+]

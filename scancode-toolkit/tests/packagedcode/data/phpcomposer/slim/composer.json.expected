@@ -1,0 +1,155 @@
+[
+  {
+    "type": "composer",
+    "namespace": "slim",
+    "name": "slim",
+    "version": null,
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "PHP",
+    "description": null,
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Josh Lockhart",
+        "email": "hello@joshlockhart.com",
+        "url": "https://joshlockhart.com"
+      },
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Andrew Smith",
+        "email": "a.smith@silentworks.co.uk",
+        "url": "http://silentworks.co.uk"
+      },
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Rob Allen",
+        "email": "rob@akrabat.com",
+        "url": "http://akrabat.com"
+      },
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Gabriel Manricks",
+        "email": "gmanricks@me.com",
+        "url": "http://gabrielmanricks.com"
+      },
+      {
+        "type": "person",
+        "role": "vendor",
+        "name": "slim",
+        "email": null,
+        "url": null
+      }
+    ],
+    "keywords": [],
+    "homepage_url": "https://slimframework.com",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": "MIT",
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:composer/php",
+        "extracted_requirement": ">=5.5.0",
+        "scope": "require",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/pimple/pimple",
+        "extracted_requirement": "^3.0",
+        "scope": "require",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/psr/http-message",
+        "extracted_requirement": "^1.0",
+        "scope": "require",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/nikic/fast-route",
+        "extracted_requirement": "^1.0",
+        "scope": "require",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/container-interop/container-interop",
+        "extracted_requirement": "^1.1",
+        "scope": "require",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/squizlabs/php_codesniffer",
+        "extracted_requirement": "^2.5",
+        "scope": "require-dev",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/phpunit/phpunit",
+        "extracted_requirement": "^4.0",
+        "scope": "require-dev",
+        "is_runtime": false,
+        "is_optional": true,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:composer/psr/http-message-implementation",
+        "extracted_requirement": "1.0",
+        "scope": "provide",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://packagist.org/packages/slim/slim",
+    "repository_download_url": null,
+    "api_data_url": "https://packagist.org/p/packages/slim/slim.json",
+    "datasource_id": "php_composer_json",
+    "purl": "pkg:composer/slim/slim"
+  }
+]

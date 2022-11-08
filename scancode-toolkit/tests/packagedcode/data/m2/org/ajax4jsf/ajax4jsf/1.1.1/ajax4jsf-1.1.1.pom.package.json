@@ -1,0 +1,199 @@
+{
+  "type": "maven",
+  "namespace": "org.ajax4jsf",
+  "name": "ajax4jsf",
+  "version": "1.1.1",
+  "qualifiers": {},
+  "subpath": null,
+  "primary_language": "Java",
+  "description": "Java Server Faces AJAX framework",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "http://labs.jboss.com/wiki/Ajax4jsf/framework",
+  "download_url": null,
+  "size": null,
+  "sha1": null,
+  "md5": null,
+  "sha256": null,
+  "sha512": null,
+  "bug_tracking_url": null,
+  "code_view_url": null,
+  "vcs_url": null,
+  "copyright": null,
+  "license_expression": null,
+  "declared_license": null,
+  "notice_text": null,
+  "source_packages": [
+    "pkg:maven/org.ajax4jsf/ajax4jsf@1.1.1?classifier=sources"
+  ],
+  "file_references": [],
+  "extra_data": {},
+  "dependencies": [
+    {
+      "purl": "pkg:maven/junit/junit@3.8.1",
+      "extracted_requirement": "3.8.1",
+      "scope": "test",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/opensymphony/oscache@2.3",
+      "extracted_requirement": "2.3",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/com.sun.facelets/jsf-facelets@1.1.11",
+      "extracted_requirement": "1.1.11",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/nekohtml/nekohtml@0.9.5",
+      "extracted_requirement": "0.9.5",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/net.sf.json-lib/json-lib@0.9",
+      "extracted_requirement": "0.9",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/commons-logging/commons-logging@1.0.4",
+      "extracted_requirement": "1.0.4",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/log4j/log4j@1.2.14",
+      "extracted_requirement": "1.2.14",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/commons-beanutils/commons-beanutils@1.7.0",
+      "extracted_requirement": "1.7.0",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/commons-digester/commons-digester@1.8",
+      "extracted_requirement": "1.8",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/commons-collections/commons-collections@3.2",
+      "extracted_requirement": "3.2",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.faces/jsf-api@1.1_02",
+      "extracted_requirement": "1.1_02",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.servlet/jstl@1.0",
+      "extracted_requirement": "1.0",
+      "scope": "compile",
+      "is_runtime": false,
+      "is_optional": true,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.el/el-api@1.0",
+      "extracted_requirement": "1.0",
+      "scope": "provided",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.servlet/servlet-api@2.4",
+      "extracted_requirement": "2.4",
+      "scope": "provided",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.servlet/jsp-api@2.0",
+      "extracted_requirement": "2.0",
+      "scope": "provided",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    },
+    {
+      "purl": "pkg:maven/javax.faces/jsf-impl@1.1_02",
+      "extracted_requirement": "1.1_02",
+      "scope": "runtime",
+      "is_runtime": true,
+      "is_optional": false,
+      "is_resolved": true,
+      "resolved_package": {},
+      "extra_data": {}
+    }
+  ],
+  "repository_homepage_url": "https://repo1.maven.org/maven2/org/ajax4jsf/ajax4jsf/1.1.1/",
+  "repository_download_url": "https://repo1.maven.org/maven2/org/ajax4jsf/ajax4jsf/1.1.1/ajax4jsf-1.1.1.jar",
+  "api_data_url": "https://repo1.maven.org/maven2/org/ajax4jsf/ajax4jsf/1.1.1/ajax4jsf-1.1.1.pom",
+  "datasource_id": "maven_pom",
+  "purl": "pkg:maven/org.ajax4jsf/ajax4jsf@1.1.1"
+}

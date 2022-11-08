@@ -1,0 +1,59 @@
+[
+  {
+    "type": "golang",
+    "namespace": "github.com/census-instrumentation",
+    "name": "opencensus-service",
+    "version": null,
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Go",
+    "description": null,
+    "release_date": null,
+    "parties": [],
+    "keywords": [],
+    "homepage_url": "https://pkg.go.dev/github.com/census-instrumentation/opencensus-service",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": "https://github.com/census-instrumentation/opencensus-service.git",
+    "copyright": null,
+    "license_expression": null,
+    "declared_license": null,
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:golang/contrib.go.opencensus.io@v0.0.0-20181029163544-2befc13012d0",
+        "extracted_requirement": "v0.0.0-20181029163544-2befc13012d0",
+        "scope": "require",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:golang/gopkg.in/yaml.v2@v2.2.5",
+        "extracted_requirement": "v2.2.5",
+        "scope": "require",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://pkg.go.dev/github.com/census-instrumentation/opencensus-service",
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "go_mod",
+    "purl": "pkg:golang/github.com/census-instrumentation/opencensus-service"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "model_version": "4.0.0",
+  "group_id": "org.openqa.selenium",
+  "artifact_id": "selenium-rc",
+  "version": "0.9.1",
+  "classifier": null,
+  "packaging": "pom",
+  "parent": {},
+  "name": "Selenium RC",
+  "description": null,
+  "inception_year": null,
+  "url": "http://www.openqa.org/selenium-rc",
+  "organization_name": null,
+  "organization_url": null,
+  "licenses": [],
+  "developers": [],
+  "contributors": [],
+  "modules": [
+    "server-coreless",
+    "selenium-server",
+    "xlator",
+    "clients"
+  ],
+  "mailing_lists": [],
+  "scm": {},
+  "issue_management": {},
+  "ci_management": {},
+  "distribution_management": {
+    "download_url": null,
+    "site": {},
+    "repository": {
+      "id": "openqa",
+      "name": "OpenQA Maven Repository",
+      "url": "scp://maven.openqa.org/home/maven/maven.openqa.org/htdocs"
+    },
+    "snapshot_repository": {}
+  },
+  "repositories": [
+    {
+      "id": "openqa",
+      "name": "OpenQA Maven Repository",
+      "url": "http://maven.openqa.org"
+    },
+    {
+      "id": "apache.snapshots",
+      "name": "Maven Snapshot Repository",
+      "url": "http://people.apache.org/maven-snapshot-repository"
+    }
+  ],
+  "plugin_repositories": [
+    {
+      "id": "snapshots",
+      "name": "Maven Plugin Snapshot Repository",
+      "url": "http://people.apache.org/maven-snapshot-repository"
+    }
+  ],
+  "dependencies": {
+    "dependencyManagement": [
+      {
+        "group_id": "org.openqa.selenium.server",
+        "artifact_id": "selenium-server-coreless",
+        "version": "0.9.1",
+        "required": true
+      },
+      {
+        "group_id": "org.openqa.selenium.server",
+        "artifact_id": "selenium-server",
+        "version": "0.9.1",
+        "required": true
+      },
+      {
+        "group_id": "org.openqa.selenium.core",
+        "artifact_id": "selenium-core",
+        "version": "0.8.3-SNAPSHOT",
+        "required": true
+      },
+      {
+        "group_id": "org.openqa.selenium.ide",
+        "artifact_id": "selenium-ide",
+        "version": "0.8.1-SNAPSHOT",
+        "required": true
+      },
+      {
+        "group_id": "ant",
+        "artifact_id": "ant",
+        "version": "1.6.5",
+        "required": true
+      },
+      {
+        "group_id": "jetty",
+        "artifact_id": "org.mortbay.jetty",
+        "version": "5.1.10",
+        "required": true
+      },
+      {
+        "group_id": "commons-logging",
+        "artifact_id": "commons-logging",
+        "version": "1.0.4",
+        "required": true
+      },
+      {
+        "group_id": "javax.servlet",
+        "artifact_id": "servlet-api",
+        "version": "2.4",
+        "required": true
+      },
+      {
+        "group_id": "rhino",
+        "artifact_id": "js",
+        "version": "1.6R2",
+        "required": true
+      },
+      {
+        "group_id": "junit",
+        "artifact_id": "junit",
+        "version": "3.8.1",
+        "required": true
+      }
+    ]
+  }
+}

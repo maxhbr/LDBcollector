@@ -1,0 +1,127 @@
+[
+  {
+    "type": "npm",
+    "namespace": null,
+    "name": "npm-research",
+    "version": "0.0.1",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "JavaScript",
+    "description": "Nice little utility to help you research NPM packages.",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "JP Richardson",
+        "email": "jprichardson@gmail.com",
+        "url": null
+      },
+      {
+        "type": "person",
+        "role": "maintainer",
+        "name": "jp",
+        "email": "jprichardson@gmail.com",
+        "url": null
+      }
+    ],
+    "keywords": [
+      "npm",
+      "github",
+      "bitbucket",
+      "research",
+      "search",
+      "package",
+      "packages"
+    ],
+    "homepage_url": null,
+    "download_url": "https://registry.npmjs.org/npm-research/-/npm-research-0.0.1.tgz",
+    "size": null,
+    "sha1": "85ef4a002119cb82482f82824e1218ed1b4b99df",
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": [
+      {
+        "type": "MIT",
+        "url": ""
+      }
+    ],
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:npm/open",
+        "extracted_requirement": "0.0.2",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/request",
+        "extracted_requirement": "~2.11.4",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/colors",
+        "extracted_requirement": "~0.6.0-1",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/batchflow",
+        "extracted_requirement": "~0.2.0",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/vcsurl",
+        "extracted_requirement": "0.0.1",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:npm/string",
+        "extracted_requirement": "~1.1.0",
+        "scope": "dependencies",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://www.npmjs.com/package/npm-research",
+    "repository_download_url": "https://registry.npmjs.org/npm-research/-/npm-research-0.0.1.tgz",
+    "api_data_url": "https://registry.npmjs.org/npm-research/0.0.1",
+    "datasource_id": "npm_package_json",
+    "purl": "pkg:npm/npm-research@0.0.1"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": null,
+    "version": null,
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": null,
+    "release_date": null,
+    "parties": [],
+    "keywords": [],
+    "homepage_url": null,
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": null,
+    "declared_license": null,
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {},
+    "dependencies": [
+      {
+        "purl": "pkg:pypi/myproject",
+        "extracted_requirement": "file:///path/to/your/lib/project#egg=MyProject",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {
+          "is_editable": false,
+          "link": "file:///path/to/your/lib/project#egg=MyProject",
+          "hash_options": [],
+          "is_constraint": false,
+          "is_archive": false,
+          "is_wheel": false,
+          "is_url": true,
+          "is_vcs_url": false,
+          "is_name_at_url": false,
+          "is_local_path": true
+        }
+      },
+      {
+        "purl": null,
+        "extracted_requirement": "/../lib/project",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {
+          "is_editable": false,
+          "link": "/../lib/project",
+          "hash_options": [],
+          "is_constraint": false,
+          "is_archive": false,
+          "is_wheel": null,
+          "is_url": false,
+          "is_vcs_url": false,
+          "is_name_at_url": false,
+          "is_local_path": true
+        }
+      },
+      {
+        "purl": "pkg:pypi/someotherproject",
+        "extracted_requirement": "path/to/SomeProject#egg=SomeOtherProject",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {
+          "is_editable": false,
+          "link": "path/to/SomeProject#egg=SomeOtherProject",
+          "hash_options": [],
+          "is_constraint": false,
+          "is_archive": false,
+          "is_wheel": false,
+          "is_url": false,
+          "is_vcs_url": false,
+          "is_name_at_url": false,
+          "is_local_path": true
+        }
+      },
+      {
+        "purl": "pkg:pypi/anotherproject",
+        "extracted_requirement": "--editable path/to/AnotherProject#egg=AnotherProject",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {
+          "is_editable": true,
+          "link": "path/to/AnotherProject#egg=AnotherProject",
+          "hash_options": [],
+          "is_constraint": false,
+          "is_archive": false,
+          "is_wheel": false,
+          "is_url": false,
+          "is_vcs_url": false,
+          "is_name_at_url": false,
+          "is_local_path": true
+        }
+      }
+    ],
+    "repository_homepage_url": null,
+    "repository_download_url": null,
+    "api_data_url": null,
+    "datasource_id": "pip_requirements",
+    "purl": null
+  }
+]

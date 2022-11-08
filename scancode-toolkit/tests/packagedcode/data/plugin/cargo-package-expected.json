@@ -1,0 +1,109 @@
+{
+  "dependencies": [],
+  "packages": [
+    {
+      "type": "cargo",
+      "namespace": null,
+      "name": "clap",
+      "version": "2.32.0",
+      "qualifiers": {},
+      "subpath": null,
+      "primary_language": "Rust",
+      "description": "A simple to use, efficient, and full featured  Command Line Argument Parser",
+      "release_date": null,
+      "parties": [
+        {
+          "type": "person",
+          "role": "author",
+          "name": "Kevin K.",
+          "email": "kbknapp@gmail.com",
+          "url": null
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://clap.rs/",
+      "download_url": null,
+      "size": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha512": null,
+      "bug_tracking_url": null,
+      "code_view_url": null,
+      "vcs_url": "https://github.com/clap-rs/clap",
+      "copyright": null,
+      "license_expression": "mit",
+      "declared_license": "MIT",
+      "notice_text": null,
+      "source_packages": [],
+      "extra_data": {},
+      "repository_homepage_url": "https://crates.io/crates/clap",
+      "repository_download_url": "https://crates.io/api/v1/crates/clap/2.32.0/download",
+      "api_data_url": "https://crates.io/api/v1/crates/clap",
+      "package_uid": "pkg:cargo/clap@2.32.0?uuid=fixed-uid-done-for-testing-5642512d1758",
+      "datafile_paths": [
+        "Cargo.toml"
+      ],
+      "datasource_ids": [
+        "cargo_toml"
+      ],
+      "purl": "pkg:cargo/clap@2.32.0"
+    }
+  ],
+  "files": [
+    {
+      "path": "Cargo.toml",
+      "type": "file",
+      "package_data": [
+        {
+          "type": "cargo",
+          "namespace": null,
+          "name": "clap",
+          "version": "2.32.0",
+          "qualifiers": {},
+          "subpath": null,
+          "primary_language": "Rust",
+          "description": "A simple to use, efficient, and full featured  Command Line Argument Parser",
+          "release_date": null,
+          "parties": [
+            {
+              "type": "person",
+              "role": "author",
+              "name": "Kevin K.",
+              "email": "kbknapp@gmail.com",
+              "url": null
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://clap.rs/",
+          "download_url": null,
+          "size": null,
+          "sha1": null,
+          "md5": null,
+          "sha256": null,
+          "sha512": null,
+          "bug_tracking_url": null,
+          "code_view_url": null,
+          "vcs_url": "https://github.com/clap-rs/clap",
+          "copyright": null,
+          "license_expression": null,
+          "declared_license": "MIT",
+          "notice_text": null,
+          "source_packages": [],
+          "file_references": [],
+          "extra_data": {},
+          "dependencies": [],
+          "repository_homepage_url": "https://crates.io/crates/clap",
+          "repository_download_url": "https://crates.io/api/v1/crates/clap/2.32.0/download",
+          "api_data_url": "https://crates.io/api/v1/crates/clap",
+          "datasource_id": "cargo_toml",
+          "purl": "pkg:cargo/clap@2.32.0"
+        }
+      ],
+      "for_packages": [
+        "pkg:cargo/clap@2.32.0?uuid=fixed-uid-done-for-testing-5642512d1758"
+      ],
+      "scan_errors": []
+    }
+  ]
+}

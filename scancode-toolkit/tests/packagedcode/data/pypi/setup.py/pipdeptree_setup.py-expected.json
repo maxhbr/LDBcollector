@@ -1,0 +1,84 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": "pipdeptree",
+    "version": null,
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": "Command line utility to show dependency tree of packages",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "Vineet Naik",
+        "email": "naikvin@gmail.com",
+        "url": null
+      }
+    ],
+    "keywords": [
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.3",
+      "Programming Language :: Python :: 3.4",
+      "Programming Language :: Python :: 3.5",
+      "Programming Language :: Python :: 3.6"
+    ],
+    "homepage_url": "https://github.com/naiquevin/pipdeptree",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": {
+      "license": "MIT License",
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ]
+    },
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [],
+    "extra_data": {
+      "python_requires": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+    },
+    "dependencies": [
+      {
+        "purl": "pkg:pypi/pip",
+        "extracted_requirement": "pip>=6.0.0",
+        "scope": "install",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      },
+      {
+        "purl": "pkg:pypi/graphviz",
+        "extracted_requirement": "graphviz",
+        "scope": "graphviz",
+        "is_runtime": true,
+        "is_optional": false,
+        "is_resolved": false,
+        "resolved_package": {},
+        "extra_data": {}
+      }
+    ],
+    "repository_homepage_url": "https://pypi.org/project/pipdeptree",
+    "repository_download_url": null,
+    "api_data_url": "https://pypi.org/pypi/pipdeptree/json",
+    "datasource_id": "pypi_setup_py",
+    "purl": "pkg:pypi/pipdeptree"
+  }
+]

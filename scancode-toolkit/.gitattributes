@@ -1,0 +1,13 @@
+# Ignore all Git auto CR/LF line endings conversions
+* -text
+pyproject.toml export-subst
+
+# data in the tests should be kept as is
+**/data/** binary
+**/assets/** binary
+**/samples/** binary
+*.pyz binary
+
+# *.json		text eol=lf
+# save the version details for git tarballs
+.VERSION  export-subst

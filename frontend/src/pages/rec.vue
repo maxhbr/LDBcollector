@@ -44,6 +44,8 @@
                 <span>The licenses in the project</span>
                 <el-divider></el-divider>
                 <div style="overflow-y:scroll; height: 350px;">
+                <b-popover target="AGPL-3.0-only" triggers="hover"><span style="color:cornflowerblue">MigrationHelperFrontend-master/MigrationHelperFrontend-master/test1</span><span>:MIT</span></b-popover>
+
                 <div v-for="(file, index) in check_res.licenses_in_files" style="text-align: left; margin: 10px">
                   <div>
                   <i class="el-icon-warning"></i><span style="color:cornflowerblue">{{index}}:</span>
@@ -52,7 +54,6 @@
                   </span>
                   </div>
                 </div>
-                <b-popover target="AGPL-3.0-only" triggers="hover"><span style="width:500px;color:cornflowerblue">MigrationHelperFrontend-master/MigrationHelperFrontend-master/test1</span><span>:MIT</span></b-popover>
                 </div>
                 </div>
                 <div>

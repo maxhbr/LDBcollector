@@ -1,0 +1,125 @@
+[
+  {
+    "type": "pypi",
+    "namespace": null,
+    "name": "python-mimeparse",
+    "version": "1.6.0",
+    "qualifiers": {},
+    "subpath": null,
+    "primary_language": "Python",
+    "description": "A module provides basic functions for parsing mime-type names and matching them against a list of media-ranges.\nPython-MimeParse\n================\n\n.. image:: https://travis-ci.org/dbtsai/python-mimeparse.svg?branch=master\n   :target: https://travis-ci.org/dbtsai/python-mimeparse\n\nThis module provides basic functions for handling mime-types. It can\nhandle matching mime-types against a list of media-ranges. See section\n5.3.2 of the HTTP 1.1 Semantics and Content specification [RFC 7231] for\na complete explanation: https://tools.ietf.org/html/rfc7231#section-5.3.2\n\nInstallation\n------------\n\nUse **pip**:\n\n.. code-block:: sh\n\n    $ pip install python-mimeparse\n\nIt supports Python 2.7 - 3.5 and PyPy.\n\nFunctions\n---------\n\n**parse_mime_type()**\n\nParses a mime-type into its component parts.\n\n**parse_media_range()**\n\nMedia-ranges are mime-types with wild-cards and a \"q\" quality parameter.\n\n**quality()**\n\nDetermines the quality (\"q\") of a mime-type when compared against a list of\nmedia-ranges.\n\n**quality_parsed()**\n\nJust like ``quality()`` except the second parameter must be pre-parsed.\n\n**best_match()**\n\nChoose the mime-type with the highest quality (\"q\") from a list of candidates.\n\nTesting\n-------\n\nRun the tests by typing: ``python mimeparse_test.py``. The tests require Python 2.6.\n\nTo make sure that the package works in all the supported environments, you can\nrun **tox** tests:\n\n.. code-block:: sh\n\n    $ pip install tox\n    $ tox\n\nThe format of the JSON test data file is as follows: A top-level JSON object\nwhich has a key for each of the functions to be tested. The value corresponding\nto that key is a list of tests. Each test contains: the argument or arguments\nto the function being tested, the expected results and an optional description.",
+    "release_date": null,
+    "parties": [
+      {
+        "type": "person",
+        "role": "author",
+        "name": "DB Tsai",
+        "email": "dbtsai@dbtsai.com",
+        "url": null
+      }
+    ],
+    "keywords": [
+      "mime-type",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Operating System :: OS Independent",
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Topic :: Internet :: WWW/HTTP",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "homepage_url": "https://github.com/dbtsai/python-mimeparse",
+    "download_url": null,
+    "size": null,
+    "sha1": null,
+    "md5": null,
+    "sha256": null,
+    "sha512": null,
+    "bug_tracking_url": null,
+    "code_view_url": null,
+    "vcs_url": null,
+    "copyright": null,
+    "license_expression": "mit",
+    "declared_license": {
+      "classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ]
+    },
+    "notice_text": null,
+    "source_packages": [],
+    "file_references": [
+      {
+        "path": "mimeparse.py",
+        "size": 6246,
+        "sha1": null,
+        "md5": null,
+        "sha256": "bd5bb1ec21fdb003f31b5f5502eb4961db0c5ef236f830cfc21296ae76536179",
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "python_mimeparse-1.6.0.dist-info/DESCRIPTION.rst",
+        "size": 1654,
+        "sha1": null,
+        "md5": null,
+        "sha256": "3b7ce99a4cd5559151b41e92e6b8fbec4821716e94e860879d4b42b089a49989",
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "python_mimeparse-1.6.0.dist-info/METADATA",
+        "size": 2468,
+        "sha1": null,
+        "md5": null,
+        "sha256": "74f097a62186c97d5ae6751d597c4669b676c790e02c117dc75e16fbfc3ff177",
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "python_mimeparse-1.6.0.dist-info/metadata.json",
+        "size": 935,
+        "sha1": null,
+        "md5": null,
+        "sha256": "4e1edf7804619f1b3dca66cffb6ef6370977d7afc0f9378a80d39b933f67be89",
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "python_mimeparse-1.6.0.dist-info/RECORD",
+        "size": null,
+        "sha1": null,
+        "md5": null,
+        "sha256": null,
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "python_mimeparse-1.6.0.dist-info/top_level.txt",
+        "size": 10,
+        "sha1": null,
+        "md5": null,
+        "sha256": "e9892849c0da62bd49fd528a0582af51a4d9032d4d046efbd209c5b0b1aecf18",
+        "sha512": null,
+        "extra_data": {}
+      },
+      {
+        "path": "python_mimeparse-1.6.0.dist-info/WHEEL",
+        "size": 110,
+        "sha1": null,
+        "md5": null,
+        "sha256": "02f47459e4e90dac53eb8e5b979150c542ba34fb1396cdadb69706260de3d578",
+        "sha512": null,
+        "extra_data": {}
+      }
+    ],
+    "extra_data": {
+      "Download-URL": "https://github.com/dbtsai/python-mimeparse/tarball/1.6.0"
+    },
+    "dependencies": [],
+    "repository_homepage_url": "https://pypi.org/project/python-mimeparse",
+    "repository_download_url": "https://pypi.org/packages/source/p/python-mimeparse/python-mimeparse-1.6.0.tar.gz",
+    "api_data_url": "https://pypi.org/pypi/python-mimeparse/1.6.0/json",
+    "datasource_id": "pypi_wheel_metadata",
+    "purl": "pkg:pypi/python-mimeparse@1.6.0"
+  }
+]
