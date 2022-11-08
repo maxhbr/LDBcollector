@@ -281,7 +281,7 @@ export default {
           console.log(res.data);
           this.check_res = res.data;
           this.table_data = [];
-          for (license of res.data.compatible_licenses) {
+          for (const license of res.data.compatible_licenses) {
             this.table_data.push({name: license})
           }
           this.generate_licenses_list();
