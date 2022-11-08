@@ -8,7 +8,7 @@ from cube.models import Usage, Version, Component, License
 from cube.serializers.policy import LicenseChoiceSerializer
 
 
-class UsageflatSerializer(serializers.ModelSerializer):
+class UsageFlatSerializer(serializers.ModelSerializer):
     """Serializes a usages including the Purl of the Component version
     it uses
     """

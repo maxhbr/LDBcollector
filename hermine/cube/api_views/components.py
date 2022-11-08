@@ -4,11 +4,12 @@
 
 from rest_framework import viewsets
 from rest_framework import generics
+from django_filters import rest_framework as filters
 
 from cube.models import Usage, Component, Version
 from cube.serializers import (
     UsageSerializer,
-    UsageflatSerializer,
+    UsageFlatSerializer,
     VersionSerializer,
     ComponentSerializer,
 )
@@ -21,31 +22,22 @@ class UsageViewSet(viewsets.ModelViewSet):
     by provideing a `release` query parameter in the URL.
     """
 
+    queryset = Usage.objects.all()
     serializer_class = UsageSerializer
-
-    def get_queryset(self):
-        queryset = Usage.objects.all()
-        release = self.request.query_params.get("release")
-        if release is not None:
-            queryset = queryset.filter(release=release)
-        return queryset
+    filter_backends = (filters.DjangoFilterBackend,)
+    filterset_fields = ("release",)
 
 
-class UsageflatList(generics.ListAPIView):
+class UsageFlatList(generics.ListAPIView):
     """
     API endpoint to list all usages with explicit mention of the purl
     of the version of the Component involved and can be filtered by release
     """
 
-    queryset = Usage.objects.all()
-    serializer_class = UsageflatSerializer
-
-    def get_queryset(self):
-        queryset = Usage.objects.all()
-        release = self.request.query_params.get("release")
-        if release is not None:
-            queryset = queryset.filter(release=release)
-        return queryset
+    queryset = Usage.objects.select_related("version").all()
+    serializer_class = UsageFlatSerializer
+    filter_backends = (filters.DjangoFilterBackend,)
+    filterset_fields = ("release",)
 
 
 class ComponentViewSet(viewsets.ModelViewSet):

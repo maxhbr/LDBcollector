@@ -169,7 +169,7 @@ urlpatterns = [
     ),
     path(
         "api/usagesflat/",
-        api_views.UsageflatList.as_view(),
+        api_views.UsageFlatList.as_view(),
         name="api_usagesflat",
     ),
     path("api/token-auth/", authviews.obtain_auth_token),
