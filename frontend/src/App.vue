@@ -30,7 +30,7 @@
       </b-navbar>
     </div>
     <div class="center-page" style="background-color:rgba(0,0,0,0);">
-      <router-view name="first"></router-view>
+      <router-view></router-view>
     </div>
     <div id="app-footer" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
       <hr class="my-4" />

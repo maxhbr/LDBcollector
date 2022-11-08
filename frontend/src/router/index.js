@@ -8,23 +8,23 @@ export default new Router({
     path: '/',
     name: 'index',
     // component: main, 
-    components : {first: ()=> import('@/pages/main')}
+    component: ()=> import('@/pages/main')
   },
   {
     path: '/rec',
     name: 'rec',
-    components : {first: ()=> import('@/pages/rec')},
-    children: [
-      {
-        path: '/rec/questions',
-        components: {second: ()=> import('@/components/questions')}
-      }
-    ]
+    component: ()=> import('@/pages/rec'),
+    // children: [
+    //   {
+    //     path: '/rec/questions',
+    //     components: {second: ()=> import('@/components/questions')}
+    //   }
+    // ]
   },
   {
     path: '/query',
     name: 'query',
-    components: {first: ()=> import('@/pages/query')}
+    components: ()=> import('@/pages/query')
   }
   ]
 })
