@@ -199,6 +199,8 @@ you should not use Docker)</p></li>
 placed at the root of the project.</p>
 <p>By default, a superadmin user is created with <code class="docutils literal notranslate"><span class="pre">admin</span> <span class="pre">/</span> <span class="pre">admin</span></code> credential.
 You can update these credentials from <code class="docutils literal notranslate"><span class="pre">http://example.com/admin/auth/user/</span></code>.</p>
+<p>In case you need to access the <code class="docutils literal notranslate"><span class="pre">django-admin</span></code> tool from outside Docker, you should use :
+<code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">exec</span> <span class="pre">-it</span> <span class="pre">hermine_django_1</span> <span class="pre">/opt/hermine/manage.py</span></code></p>
 <section id="https-profile">
 <h3>HTTPS profile<a class="headerlink" href="#https-profile" title="Permalink to this headline"></a></h3>
 <p>You just need to set <code class="docutils literal notranslate"><span class="pre">HERMINE_SECRET</span></code> and <code class="docutils literal notranslate"><span class="pre">HERMINE_HOST</span></code> environment variables before

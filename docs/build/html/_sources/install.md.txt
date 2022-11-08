@@ -88,6 +88,9 @@ placed at the root of the project.
 By default, a superadmin user is created with `admin / admin` credential.
 You can update these credentials from `http://example.com/admin/auth/user/`.
 
+In case you need to access the `django-admin` tool from outside Docker, you should use :
+`docker exec -it hermine_django_1 /opt/hermine/manage.py`
+
 ### HTTPS profile
 
 You just need to set `HERMINE_SECRET` and `HERMINE_HOST` environment variables before
