@@ -24,7 +24,7 @@ def license_uncompatibility1_reason(licenseA,licenseB):
     if licenseA_terms['modification'] == 1:
         restrictiveA.add('State changes')
     if licenseA_terms['interaction'] == 1:
-        restrictiveA.add('Interaction')
+        restrictiveA.add('Network deployments still need to open source the code')
     if licenseA_terms['patent_term'] == 1:
         restrictiveA.add('Patent termination')
     if licenseA_terms['acceptance'] == 1:
@@ -38,7 +38,7 @@ def license_uncompatibility1_reason(licenseA,licenseB):
     if licenseB_terms['modification'] == 1:
         restrictiveB.add('State changes')
     if licenseB_terms['interaction'] == 1:
-        restrictiveB.add('Interaction')
+        restrictiveB.add('Network deployments still need to open source the code')
     if licenseB_terms['patent_term'] == 1:
         restrictiveB.add('Patent termination')
     if licenseB_terms['acceptance'] == 1:

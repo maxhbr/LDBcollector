@@ -2,17 +2,16 @@ from flask import render_template
 from flask import request
 from app import app
 from werkzeug.utils import secure_filename
-import io
 import os
-import base64
-import json
 import datetime
-from .compatibility_check import *
 import zipfile
 from pathlib import Path
 import rarfile
+from .compatibility_check import *
 from .query import license_compatibility_judge
 from .download_github import download_git
+from .question import license_terms_choice
+from .compare import license_compare
 # 主页面
 @app.route('/')
 @app.route('/index')
@@ -78,3 +77,13 @@ def query():
     l1 = request.json.get("licenseA")
     l2 = request.json.get("licenseB")
     return license_compatibility_judge(l1,l2)
+
+@app.route('/choice', methods=['POST'])
+def choice():
+    answer = request.json.get("answer")
+    return license_terms_choice(answer)
+
+@app.route('/compare',methods=['POST'])
+def compare():
+    lst = request.json.get("recommend_list")
+    return license_compare(lst)
