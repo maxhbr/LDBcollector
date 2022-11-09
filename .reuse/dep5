@@ -39,12 +39,16 @@ Files: hermine/cube/fixtures/*
 Copyright: Not copyrightable
 License: CC0-1.0
 
-Files: examples/*.json
+Files: examples/boms/*.json
 Copyright: Not copyrightable
 License: CC0-1.0
 
-Files: examples/Hermine-License-Disclaimer_0.1b.txt
-Copyright: 2022 Hermine-team <hermine@inno3.fr>
+Files: examples/data/*.json
+Copyright: Hermine project
+License: ODbL-1.0
+
+Files: examples/data/Hermine-License-Disclaimer_0.1b.txt
+Copyright: Not copyrightable
 License: CC0-1.0
 
 Files: .gitignore
