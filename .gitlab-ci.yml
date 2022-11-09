@@ -36,6 +36,15 @@ pages:
     changes:
       - docs/**/*
   script:
+  - apk --no-cache add curl
+  - apk --no-cache add build-base libffi-dev postgresql-dev python3-dev openssl-dev cargo
+  - pip install --upgrade pip
+  - curl -sSL https://install.python-poetry.org | python -
+  - export PATH="/root/.local/bin:$PATH"
+  - poetry about
+  - poetry install
+  - cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py
+  - poetry run sphinx-build -b html docs/source docs/build/html
   - mkdir public
   - cp -r docs/build/html/* public/
   artifacts:
