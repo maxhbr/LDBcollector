@@ -6,21 +6,17 @@ import csv
 import logging
 
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Count, F
+from django.db.models import Count
 from django.forms import Form, ChoiceField, Select
-from django.http import HttpResponseRedirect, HttpResponse
-from django.shortcuts import render, get_object_or_404, redirect
+from django.http import HttpResponse
 from django.urls import reverse
-from django.utils.decorators import method_decorator
 from django.utils.safestring import mark_safe
 from django.utils.text import slugify
 from django.views import generic
-from django.views.decorators.http import require_POST
-from django.views.generic import UpdateView, DetailView, ListView, CreateView
+from django.views.generic import UpdateView, DetailView, TemplateView
 
-from cube.forms import ImportBomForm
+from cube.forms.importers import ImportBomForm
 from cube.importers import (
     import_ort_evaluated_model_json_file,
     import_spdx_file,
@@ -30,48 +26,13 @@ from cube.models import (
     Release,
     Usage,
     Generic,
-    Derogation,
     Exploitation,
 )
 from cube.utils.licenses import (
     get_usages_obligations,
 )
-from cube.utils.releases import update_validation_step
 
 logger = logging.getLogger(__name__)
-
-
-class ReleaseView(LoginRequiredMixin, generic.DetailView):
-    """
-    Shows 4 validation steps for a release of a product:
-    step 1 : checks that license metadata are present and correct
-    step 2 : checks that all licenses have been reviewed by legal dpt
-    step 3 : resolves choices in case of multi-licenses
-    step 4 : checks that chosen licenses are compatible with policy and derogs
-    """
-
-    model = Release
-    template_name = "cube/release.html"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .prefetch_related(
-                "usage_set",
-                "usage_set__version",
-                "usage_set__version__component",
-                "usage_set__licenses_chosen",
-            )
-        )
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-
-        return {
-            **context,
-            **update_validation_step(self.object),
-        }
 
 
 class ReleaseImportView(LoginRequiredMixin, UpdateView):
@@ -140,15 +101,17 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
         return context
 
 
-@login_required
-def release_generic(request, release_id, generic_id):
-    usages = Usage.objects.filter(
-        release__id=release_id, licenses_chosen__obligation__generic__id=generic_id
-    )
-    generic = Generic.objects.get(pk=generic_id)
-    release = Release.objects.get(pk=release_id)
-    context = {"usages": usages, "generic": generic, "release": release}
-    return render(request, "cube/release_generic.html", context)
+class ReleaseGenericView(LoginRequiredMixin, TemplateView):
+    template_name = "cube/release_generic.html"
+
+    def get_context_data(self, **kwargs):
+        usages = Usage.objects.filter(
+            release__id=self.kwargs["release_id"],
+            licenses_chosen__obligation__generic__id=self.kwargs["generic_id"],
+        )
+        generic = Generic.objects.get(pk=self.kwargs["generic_id"])
+        release = Release.objects.get(pk=self.kwargs["release_id"])
+        return {"usages": usages, "generic": generic, "release": release}
 
 
 class ReleaseExploitationForm(Form):
@@ -260,44 +223,6 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
                 ]
             )
         return response
-
-
-@method_decorator(require_POST, "dispatch")
-class UpdateLicenseChoiceView(UpdateView):
-    model = Usage
-    fields = []
-
-    def form_valid(self, form):
-        self.object.license_expression = ""
-        self.object.save()
-        return HttpResponseRedirect(self.get_success_url())
-
-    def form_invalid(self, form):
-        return HttpResponseRedirect(self.get_success_url())
-
-    def get_success_url(self):
-        return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
-
-
-class ReleaseFixedLicensesList(ListView):
-    template_name = "cube/release_fixed_licenses.html"
-    release = None
-    context_object_name = "usages"
-
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data(*args, **kwargs)
-        context["release"] = self.release
-        return context
-
-    def get_queryset(self):
-        self.release = get_object_or_404(Release, pk=self.kwargs["id"])
-        return (
-            self.release.usage_set.all()
-            .exclude(version__spdx_valid_license_expr="")
-            .exclude(
-                version__spdx_valid_license_expr=F("version__declared_license_expr")
-            )
-        )
 
 
 class UsageListView(LoginRequiredMixin, generic.ListView):

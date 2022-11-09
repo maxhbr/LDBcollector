@@ -7,7 +7,10 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
-from cube.forms import CreateLicenseCurationForm, CreateLicenseChoiceForm
+from cube.forms.release_validation import (
+    CreateLicenseCurationForm,
+    CreateLicenseChoiceForm,
+)
 from cube.models import LicenseCuration, LicenseChoice, Exploitation
 from .mixins import ForceLoginMixin
 
@@ -112,7 +115,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         )  # test component alpha is used in release 1
 
     def test_create_license_curation(self):
-        url = reverse("cube:licensecuration_create", args=[1])
+        url = reverse("cube:release_licensecuration_create", args=[1])
         res = self.client.post(
             url,
             {
@@ -125,7 +128,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(LicenseChoice.objects.all().count(), 0)
 
     def test_create_licence_choice_rule(self):
-        url = reverse("cube:licensechoice_create", args=[1])
+        url = reverse("cube:release_licensechoice_create", args=[1])
         res = self.client.post(
             url,
             {

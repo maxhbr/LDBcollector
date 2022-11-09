@@ -3,18 +3,22 @@ SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 {% extends "cube/cube.html" %}
-{% block title %}Edit curation{% endblock %}
+{% block title %}{% if object %}Edit{% else %}Add{% endif %} curation{% endblock %}
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
   <li><a href="{% url 'cube:licensecurations' %}">Curations</a></li>
-  <li>{{object.version|default:object.component}}</li>
+    <li>{% if object %}{{object.version|default:object.component}}{% else %}Add{% endif %}</li>
 </ul>
 {% endblock %}
 {% block herozone %}
 <h1 class="title">
   <span class="icon is-medium"><i class="fas fa-band-aid"></i></span>
+  {% if object %}
   Edit license curation for {% if object.version %} {{ object.version }} {% else %} {{ object.component }} (any version) {% endif %}
+  {% else %}
+  Add license curation
+  {% endif %}
 </h1>
 {% endblock %}
 
@@ -22,9 +26,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <form method="post">
     {% csrf_token %}
     <table>
-      <tr><th>Input license</th><td>{{ form.expression_in }}</td></tr>
-      <tr><th>Corrected license</th><td>{{ form.expression_out }}</td></tr>
-      <tr><th>Explanation</th><td>{{ form.explanation }}</td></tr>
+      {{ form }}
       <tr><th></th><td><input type="submit" value="Save"></td></tr>
     </table>
   </form>

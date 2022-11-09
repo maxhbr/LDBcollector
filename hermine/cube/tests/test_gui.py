@@ -1,11 +1,10 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
-from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
 
-from cube.forms import ImportBomForm
+from cube.forms.importers import ImportBomForm
 from cube.models import Usage
 
 

@@ -2,64 +2,13 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import get_object_or_404
 from django.urls import reverse
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, ListView
 
-from cube.forms import (
-    CreateLicenseChoiceForm,
-    CreateLicenseCurationForm,
-    DerogationForm,
-    CreateExpressionValidationForm,
-)
 from cube.models import (
-    LicenseChoice,
-    Usage,
-    LicenseCuration,
     Derogation,
-    License,
-    ExpressionValidation,
 )
 from cube.views.mixins import LicenseRelatedMixin
-
-
-class AbstractCreateUsageConditionView(LoginRequiredMixin, CreateView):
-    usage = None
-
-    def dispatch(self, request, *args, **kwargs):
-        self.usage = get_object_or_404(Usage, id=kwargs["usage_pk"])
-        return super().dispatch(request, *args, **kwargs)
-
-    def get_form_kwargs(self):
-        kwargs = super().get_form_kwargs()
-        kwargs["usage"] = self.usage
-        return kwargs
-
-    def get_success_url(self):
-        return reverse("cube:release_validation", kwargs={"pk": self.usage.release.id})
-
-
-class CreateLicenseCurationView(AbstractCreateUsageConditionView):
-    model = LicenseCuration
-    form_class = CreateLicenseCurationForm
-    template_name_suffix = "_create"
-
-
-class CreateExpressionValidationView(AbstractCreateUsageConditionView):
-    model = ExpressionValidation
-    form_class = CreateExpressionValidationForm
-
-
-class CreateLicenseChoiceView(AbstractCreateUsageConditionView):
-    model = LicenseChoice
-    form_class = CreateLicenseChoiceForm
-
-
-class DerogationUsageContextCreateView(
-    LicenseRelatedMixin, AbstractCreateUsageConditionView
-):
-    model = Derogation
-    form_class = DerogationForm
 
 
 class DerogationUpdateView(LoginRequiredMixin, UpdateView):
@@ -73,11 +22,21 @@ class DerogationUpdateView(LoginRequiredMixin, UpdateView):
         return reverse("cube:license", args=[self.object.license.id])
 
 
-class DerogationLicenseContextCreateView(
-    LoginRequiredMixin, LicenseRelatedMixin, CreateView
-):
+class DerogationCreateView(LoginRequiredMixin, LicenseRelatedMixin, CreateView):
     model = Derogation
     fields = ("linking", "scope")
 
     def get_success_url(self):
         return reverse("cube:license", args=[self.object.license.id])
+
+
+class DerogationListView(LoginRequiredMixin, ListView):
+    model = Derogation
+    context_object_name = "derogations"
+    template_name = "cube/derogation_list.html"
+    queryset = Derogation.objects.exclude(
+        component__isnull=True,
+        version__isnull=True,
+        product__isnull=True,
+        release__isnull=True,
+    )

@@ -6,7 +6,6 @@ from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import (
     ListView,
@@ -20,8 +19,8 @@ from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
-from cube.forms import ImportLicensesForm, ImportGenericsForm
-from cube.models import License, Generic, Derogation, Obligation
+from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
+from cube.models import License, Generic, Obligation
 from cube.views.mixins import SearchMixin, LicenseRelatedMixin
 
 
@@ -283,15 +282,3 @@ class GenericDetailView(LoginRequiredMixin, DetailView):
     model = Generic
     context_object_name = "generic"
     template_name = "cube/generic.html"
-
-
-class DerogationListView(LoginRequiredMixin, ListView):
-    model = Derogation
-    context_object_name = "derogations"
-    template_name = "cube/derogation_list.html"
-    queryset = Derogation.objects.exclude(
-        component__isnull=True,
-        version__isnull=True,
-        product__isnull=True,
-        release__isnull=True,
-    )
