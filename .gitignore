@@ -7,7 +7,6 @@ __pycache__
 variousScripts
 db.sqlite3
 **.css.map
-docs/build/
 .vscode/
 .coverage
 .idea
