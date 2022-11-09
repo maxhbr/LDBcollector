@@ -44,19 +44,29 @@ http://127.0.0.1:8080/release/1/exploitation
 http://127.0.0.1:8080/release/1
 
 #### Validation Step 1
-Check that all the packages have a proper SPDX expression 
+Checks that all the packages have a proper SPDX expression.
+Some package may miss licence information or carry information that doesn't follow 
+the SPDX standard.
 
 #### Validation Step 2
-Check that all the licenses involved have been analyzed by your legal departement
+Checks that all the licenses involved have been analyzed by your legal departement
 
 #### Validation Step 3
 Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
+In some situations multiple licences are just expressed as a list, which is 
+automatically converted as a cumulative expression ("A AND B"), while the reality of the 
+licencing is actually alternative ("A OR B"), causing often false alarms.
 
 #### Validation Step 4 
 Express your choices when several licenses are proposed.
 
+
 #### Validation Step 5
 Check that the licenses are compatible with your policy.
+You can add derogations in order to handle specific cases.
+
+### Read your validated SBOM
+
 
 ### Read your obligations
 
