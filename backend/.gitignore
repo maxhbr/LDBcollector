@@ -10,6 +10,5 @@ __pycache__/
 *.pyc
 *.log
 temp_files
-.env
 *.log
 token
