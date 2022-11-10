@@ -989,9 +989,14 @@ fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
  */
 
 fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY") {
+    require {
+        -isExcluded()
+    }
+
     licenseRule("COPYLEFT_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
         require {
             +isCopyleft()
+            -isExcluded()
         }
 
         issue(
@@ -1007,11 +1012,13 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
     require {
         +isAtTreeLevel(0)
         +isStaticallyLinked()
+        -isExcluded()
     }
 
     licenseRule("COPYLEFT_LIMITED_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_OR_DETECTED) {
         require {
             +isCopyleftLimited()
+            -isExcluded()
         }
 
         // Use issue() instead of error() if you want to set the severity.
