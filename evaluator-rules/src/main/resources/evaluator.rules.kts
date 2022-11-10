@@ -34,13 +34,15 @@ val orgScanIssueTrackerMdLink = "[$orgScanIssueTrackerName](https://jira.example
  * Import the license classifications from license-classifications.yml.
  */
 
-val copyleftLicenses = licenseClassifications.licensesByCategory["copyleft"].orEmpty()
+fun getLicensesForCategory(category: String): Set<SpdxSingleLicenseExpression> =
+    checkNotNull(licenseClassifications.licensesByCategory[category]) {
+        "Failed to obtain the license for category '$category', because that category does not exist."
+    }
 
-val copyleftLimitedLicenses = licenseClassifications.licensesByCategory["copyleft-limited"].orEmpty()
-
-val permissiveLicenses = licenseClassifications.licensesByCategory["permissive"].orEmpty()
-
-val publicDomainLicenses = licenseClassifications.licensesByCategory["public-domain"].orEmpty()
+val copyleftLicenses = getLicensesForCategory("copyleft")
+val copyleftLimitedLicenses = getLicensesForCategory("copyleft-limited")
+val permissiveLicenses = getLicensesForCategory("permissive")
+val publicDomainLicenses = getLicensesForCategory("public-domain")
 
 /**
  * The complete set of licenses covered by policy rules.
