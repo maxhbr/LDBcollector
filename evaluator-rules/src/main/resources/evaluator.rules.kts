@@ -1045,6 +1045,7 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
 
 fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
     require {
+        +isProject()
         -isExcluded()
     }
 
@@ -1071,6 +1072,7 @@ fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
 
 fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOURCE") {
     require {
+        +isProject()
         -isExcluded()
     }
 
