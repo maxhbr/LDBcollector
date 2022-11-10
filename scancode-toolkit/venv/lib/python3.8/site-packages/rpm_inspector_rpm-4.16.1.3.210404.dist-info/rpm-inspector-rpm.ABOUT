@@ -1,0 +1,12 @@
+about_resource: .
+homepage_url: https://github.com/nexB/scancode-plugins/tree/develop/builtins
+name: rpm-inspector-rpm
+owner: nexB Inc.
+copyright: Copyright (c) RPM authors and otehrs
+description: An RPM plugin for PackgedCode and ScanCode
+license_expression: apache-2.0 AND (gpl-2.0 AND lgpl-2.0)
+notice_file: rpm.NOTICE
+redistribute: yes
+attribute: yes
+track_changes: yes
+package_url: pkg:pypi/rpm-inspector-rpm

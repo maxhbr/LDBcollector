@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: extractcode-libarchive
+Version: 3.5.1.210531
+Summary: A ScanCode path provider plugin to provide a prebuilt native libarchive binary.
+Home-page: https://github.com/nexB/scancode-plugins
+Author: nexB
+Author-email: info@aboutcode.org
+License: apache-2.0 AND bsd-simplified
+Keywords: open source,extractcode,libarchive
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+
+A ScanCode path provider plugin to provide a prebuilt native libarchive binary.
+
+

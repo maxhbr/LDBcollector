@@ -1,0 +1,11 @@
+about_resource: .
+homepage_url: https://github.com/nexB/scancode-plugins/tree/develop/builtins
+name: packagedcode-msitools
+owner: nexB Inc.
+copyright: Copyright (c) Red Hat, Inc.
+description: A LocationProvider that provides msitool binaries for PackgedCode and ScanCode
+license_expression: apache-2.0 AND lgpl-2.1-plus AND gpl-2.0-plus AND mit
+redistribute: yes
+attribute: yes
+track_changes: yes
+package_url: pkg:pypi/packagedcode-msitools

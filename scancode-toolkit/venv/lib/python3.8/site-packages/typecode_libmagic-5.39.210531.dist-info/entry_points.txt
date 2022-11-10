@@ -1,0 +1,3 @@
+[scancode_location_provider]
+typecode_libmagic = typecode_libmagic:LibmagicPaths
+

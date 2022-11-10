@@ -1,0 +1,62 @@
+about_resource: file-5.39.tar.gz
+name: file
+version: '5.39'
+download_url: http://ftp.astron.com/pub/file/file-5.39.tar.gz
+description: |
+  Fine Free File Command
+  This is the home page for the open source implementation of the file(1) 
+  command that ships with most free operating systems (Linux, NetBSD, FreeBSD,
+  etc.) and has been ported to most systems where people use free software 
+  (including OS/2, DOS, MS Windows, etc.). The lone standout, OpenBSD, wrote
+  their own code, but still use our file command's configuration files.
+
+homepage_url: https://www.darwinsys.com/file/
+license_expression: bsd-simplified-darwin AND bsd-simplified AND public-domain AND bsd-new AND
+  isc AND (bsd-new OR gpl-1.0-plus) AND bsd-original
+copyright: |
+  Copyright (c) Ian F. Darwin, Christos Zoulas and others
+  Copyright (c) The NetBSD Foundation, Inc.
+  Copyright (c) Todd C. Miller <Todd.Miller@courtesan.com>
+  (c) Gilles Vollant
+  Copyright (c) Alois Schloegl <alois.schloegl@gmail.com>
+  Copyright (c) David TAILLANDIER
+  Copyright (c) Ignatios Souvatzis
+  Copyright (c) The Regents of the University of California
+  Copyright (c) by Andrew Tridgell
+  Copyright (c) by Martin Pool
+  Copyright by GARMIN Corporation. or http://www.openstreetmap.org
+  Copyright by the Massachusetts Institute of Technology
+
+notice_file: libmagic.NOTICE
+redistribute: no
+attribute: yes
+track_changes: yes
+
+checksum_md5: 1c450306053622803a25647d88f80f25
+checksum_sha1: a5a8941a8e4c436fe22933db6a71c5161c3fb10b
+package_url: pkg:generic/file@5.39?download_url=http://ftp.astron.com/pub/file/file-5.39.tar.gz
+licenses:
+  - key: public-domain
+    name: Public Domain
+    file: public-domain.LICENSE
+  - key: bsd-simplified
+    name: BSD-2-Clause
+    file: bsd-simplified.LICENSE
+  - key: bsd-new
+    name: BSD-3-Clause
+    file: bsd-new.LICENSE
+  - key: isc
+    name: ISC License
+    file: isc.LICENSE
+  - key: bsd-original
+    name: BSD-Original
+    file: bsd-original.LICENSE
+  - key: bsd-simplified-darwin
+    name: BSD Simplified Darwin
+    file: bsd-simplified-darwin.LICENSE
+  - key: gpl-1.0-plus
+    name: GNU General Public License 1.0 or later
+    file: gpl-1.0-plus.LICENSE
+  - key: gpl-1.0
+    name: GNU General Public License 1.0
+    file: gpl-1.0.LICENSE

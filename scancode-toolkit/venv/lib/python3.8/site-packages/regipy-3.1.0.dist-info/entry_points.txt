@@ -1,0 +1,7 @@
+[console_scripts]
+registry-diff = regipy.cli:reg_diff
+registry-dump = regipy.cli:registry_dump
+registry-parse-header = regipy.cli:parse_header
+registry-plugins-list = regipy.cli:list_plugins
+registry-plugins-run = regipy.cli:run_plugins
+registry-transaction-logs = regipy.cli:parse_transaction_log

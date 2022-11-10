@@ -1,0 +1,3 @@
+[scancode_location_provider]
+rpm_inspector_rpm = rpm_inspector_rpm:RpmPaths
+

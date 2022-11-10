@@ -1,0 +1,14 @@
+about_resource: .
+copyright: copyright (c) nexB. Inc. and others
+description: Commoncode provides a set of common functions and utilities for
+ handling various things like paths, dates, files and hashes. It started as
+ library in scancode-toolkit.
+keywords: utilities, commoncode, scancode-toolkit
+homepage_url: https://github.com/nexB/commoncode
+holder: nexB. Inc. and others
+holder_contact: info@aboutcode.org
+homepage_url: https://github.com/nexB/commoncode
+license_expression: apache-2.0
+name: commoncode
+package_url: pkg:pypi/commoncode
+primary_language: Python

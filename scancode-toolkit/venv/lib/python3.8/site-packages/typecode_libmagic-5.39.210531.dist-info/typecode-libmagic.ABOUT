@@ -1,0 +1,13 @@
+about_resource: .
+homepage_url: https://github.com/nexB/scancode-plugins/tree/develop/builtins
+name: typecode-libmagic
+owner: nexB Inc.
+copyright: Copyright (c) nexB Inc. and others.
+description: A libmagic plugin for TypeCode and ScanCode
+license_expression: bsd-simplified-darwin AND bsd-simplified AND public-domain AND bsd-new AND
+  isc AND (bsd-new OR gpl-1.0-plus) AND bsd-original
+notice_file: libmagic.NOTICE
+redistribute: no
+attribute: yes
+track_changes: yes
+package_url: pkg:pypi/typecode-libmagic

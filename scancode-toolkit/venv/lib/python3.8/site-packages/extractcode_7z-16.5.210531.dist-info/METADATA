@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: extractcode-7z
+Version: 16.5.210531
+Summary: A ScanCode path provider plugin to provide a prebuilt native sevenzip binary.
+Home-page: https://github.com/nexB/scancode-plugins
+Author: nexB
+Author-email: info@aboutcode.org
+License: apache-2.0 AND lgpl-2.1 and unrar and brian-gladman-3-clause
+Keywords: open source,extractcode,libarchive
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+
+A ScanCode path provider plugin to provide a prebuilt native sevenzip binary.
+
+

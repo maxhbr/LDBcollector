@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: regipy
+Version: 3.1.0
+Summary: Python Registry Parser
+Home-page: https://github.com/mkorman90/regipy/
+Author: Martin G. Korman
+Author-email: martin@centauri.co.il
+License: MIT
+Keywords: Python,Python3,registry,windows registry,registry parser
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: construct (>=2.10)
+Requires-Dist: attrs (>=21)
+Requires-Dist: inflection (>=0.5.1)
+Requires-Dist: pytz
+Provides-Extra: cli
+Requires-Dist: click (>=7.0.0) ; extra == 'cli'
+Requires-Dist: tabulate ; extra == 'cli'
+Provides-Extra: full
+Requires-Dist: click (>=7.0.0) ; extra == 'full'
+Requires-Dist: tabulatelibfwsi-python (>=20220123) ; extra == 'full'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-flake8 ; extra == 'test'
+
+
+.. image:: https://travis-ci.com/mkorman90/regipy.svg?branch=master
+    :target: https://travis-ci.com/mkorman90/regipy
+
+regipy
+==========
+Regipy is a python library for parsing offline registry hives!
+
+Features:
+
+* Use as a library
+* Recurse over the registry hive, from root or a given path and get all subkeys and values
+* Read specific subkeys and values
+* Apply transaction logs on a registry hive
+* Command Line Tools:
+    * Dump an entire registry hive to json
+    * Apply transaction logs on a registry hive
+    * Compare registry hives
+    * Execute plugins from a robust plugin system (i.e: amcache, shimcache, extract computer name...)
+
+:Project page: https://github.com/mkorman90/regipy
+
+Using as a library:
+--------------------
+.. code:: python
+
+    from regipy.registry import RegistryHive
+    reg = RegistryHive('/Users/martinkorman/Documents/TestEvidence/Registry/Vibranium-NTUSER.DAT')
+
+    # Iterate over a registry hive recursively:
+    for entry in reg.rec_subkeys(as_json=True):
+        print(entry)
+
+    # Iterate over a key and get all subkeys and their modification time:
+    for sk in reg.get_key('Software').get_subkeys():
+        print(sk.name, convert_wintime(sk.header.last_modified).isoformat())
+
+    # Get values from a specific registry key:
+    reg.get_key('Software\Microsoft\Internet Explorer\BrowserEmulation').get_values(as_json=True)
+
+    # Use plugins:
+    from regipy.plugins.ntuser.ntuser_persistence import NTUserPersistencePlugin
+    NTUserPersistencePlugin(reg, as_json=True).run()
+
+    # Run all supported plugins on a registry hive:
+    run_relevant_plugins(reg, as_json=True)
+
+Install
+^^^^^^^
+Install regipy and the command line tools dependencies:
+
+``pip install regipy[cli]``
+
+
+NOTE: using pip with ``regipy[cli]`` instead of the plain ``regipy`` is a
+significant change from version 1.9.x
+
+For using regipy as a library, install only ``regipy`` which comes with fewer
+dependencies:
+
+``pip install regipy``

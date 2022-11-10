@@ -1,0 +1,3 @@
+[scancode_location_provider]
+extractcode_7zip = extractcode_7z:SevenzipPaths
+
