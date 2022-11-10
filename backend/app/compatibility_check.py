@@ -1,10 +1,14 @@
-# from app import app
 import subprocess
 import json
 import os
 import pandas as pd 
 import tqdm
-# from .parse_dependency import *
+from .parse_dependency import *
+import pymongo
+mongo_client = pymongo.MongoClient('mongodb://127.0.0.1:27017')
+mongo_db = mongo_client['libraries']
+mongo_collection = mongo_db['projects']
+
 def compatibility_judge(licenseA,licenseB):
     df = pd.read_csv('./app/konwledgebase/compatibility_63.csv', index_col=0)
     compatibility_result = str(df.loc[licenseA, licenseB])
@@ -28,14 +32,22 @@ def license_detection_files(file_path,output_path):
                     if "scancode" not in license["spdx_license_key"]:
                         licenses_spdx.append(license["spdx_license_key"])
                 results[file["path"]]=list(set(licenses_spdx))
-
+    dep_license=get_dependencies_licenses(file_path)
+    results.update(dep_license)
     return results
 
-# def get_dependent_packages(file_path):
-#     lst=[]
-#     #py
-#     py_package=traverse(os.path.abspath(file_path))
-#     return lst
+def get_dependencies_licenses(file_path):
+    dep_license={}
+    dep=traverse(os.path.abspath(file_path))
+    for lang in dep:
+        for p in dep[lang]:
+            if lang !="JavaScript":
+                res=mongo_collection.find_one({"Name":p,"Language":lang})
+            else:
+                res=mongo_collection.find_one({ "$or" : [{"Name":p,"Language":"JavaScript"},{"Name":p,"Language":"TypeScript"} ]})
+            if res:
+                dep_license[f"dependency({p})"]=[res['Licenses']]
+    return dep_license
 
 
 def license_compatibility_filter(in_licenses):
@@ -175,7 +187,9 @@ def conflict_dection(file_license_results,dependencies):
     return list(confilct_copyleft_set),confilct_depend_dict
 
 if __name__ == "__main__":
-    res=license_detection_files("/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper","/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper.json")
-    depends=depend_detection("/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper","/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper/temp.json")
-    conflict_dection(res,depends)
-    license_compatibility_filter(res.values())
+    res=license_detection_files("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie.json")
+    depends=depend_detection("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie/temp.json")
+    print(conflict_dection(res,depends))
+    # license_compatibility_filter(res.values())
+    #print(get_dependencies_licenses("/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper"))
+    

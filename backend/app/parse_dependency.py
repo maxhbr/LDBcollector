@@ -41,7 +41,7 @@ def traverse(project_name):  # path为folder的绝对路径
                 elif "node_modules" not in temp and is_package_json_file(temp):
                     json_content=open(temp,"r").read()
                     dependency=parse_package_json(json_content)
-                    dependencies["JS"]=dependency
+                    dependencies["JavaScript"]=dependency
 
     return dependencies
 
