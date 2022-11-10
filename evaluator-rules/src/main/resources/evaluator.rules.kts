@@ -974,6 +974,16 @@ fun PackageRule.LicenseRule.isCopyleftLimited() =
         override fun matches() = license in copyleftLimitedLicenses
     }
 
+fun PackageRule.LicenseRule.isException() =
+    object : RuleMatcher {
+        override val description = "isException($license)"
+
+        override fun matches() =
+            license.simpleLicense().let {
+                it.endsWith("-exception") || it.contains("-exception")
+            }
+    }
+
 fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
     NoneOf(
         isType("Bundler"),
@@ -1290,6 +1300,7 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
         require {
             -isExcluded()
             -isHandled()
+            -isException()
         }
 
         // Throw an error message including guidance how to fix the issue.
