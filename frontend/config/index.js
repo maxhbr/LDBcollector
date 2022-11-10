@@ -12,6 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
+        // target: 'http://localhost:1120',//要访问的后端接口
         target: 'http://localhost:1120',//要访问的后端接口
         changeOrigin: true,
         pathRewrite: {

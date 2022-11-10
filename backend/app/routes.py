@@ -37,8 +37,8 @@ def upload():
 
     licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
     dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
-    print(licenses_in_files)
-    print(dependecy)
+    # print(licenses_in_files)
+    # print(dependecy)
     confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
     compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
     

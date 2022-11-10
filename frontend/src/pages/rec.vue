@@ -1,5 +1,5 @@
 <template>
-  <div id="page">
+  <div id="page" >
     <div class="steps">
       <el-steps :active="step_active" align-center finish-status="success">
         <el-step title="Compatibility Check"></el-step>
@@ -8,7 +8,7 @@
       </el-steps>
     </div>
 
-    <div id="main" class="main">
+    <div id="main" class="main" style="height: auto">
       <el-row :gutter="20" style="margin-top: 20px; height: 600px">
         <el-col :span="17">
           <div class="file_box">
@@ -17,7 +17,7 @@
                 <div slot="header" class="clearfix">
                   <span style="font-size: 20px;color:white">License Compatibility Check</span>
                 </div>
-                <div class="file-url" v-loading="loading">
+                <div class="file-url" v-loading="loading" element-loading-text="It may take a while...">
                 <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository url</p>
                 <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
                   :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload" :on-change="file_change" :before-remove="remove_file"
@@ -63,7 +63,7 @@
                   <questions @question_over="change_rec_license"></questions>
                 </div>
                 <div id="compare">
-                  <compare :licenses="table_data"></compare>
+                  <compare :licenses="table_data" ref="compare_comp"></compare>
                 </div>
                 </div>
               </el-card>
@@ -77,18 +77,13 @@
                 <span style="font-size: 20px;color:white">Recommendation List</span>
               </div>
               <div class="dropdown">
-                <el-select v-model="cur_option" placeholder="Please choose">
+                <el-select v-model="cur_option" placeholder="Please choose" @change="sort_license($event)">
                   <el-option v-for="item in sort_options" :key="item.value" :label="item.label" :value="item.value">
                   </el-option>
                 </el-select>
               </div>
-              <!-- <div v-for="license in licenses" :label="license" :key="license" >
-                <ul>
-              <el-radio>{{license}}</el-radio>
-                </ul> -->
-              <!-- <el-checkbox-group v-model="licenses" >
-                  <el-checkbox v-for="license in licenses" :label="license" :key="license" style="display: block; float: left">{{license}}</el-checkbox>
-                </el-checkbox-group> -->
+
+              <!-- Reconmmend List -->
               <el-table :data="table_data" style="overflow-y: scroll; height: 460px" :row-class-name="tabel_row_class">
                 <el-table-column label="Compatibility" width="70" align="center">
                   <template slot-scope="scope">
@@ -97,7 +92,6 @@
                 </el-table-column>
                 <el-table-column prop="name" label="Name" width="200"></el-table-column>
               </el-table>
-              <!-- </div> -->
 
             </el-card>
           </div>
@@ -106,31 +100,42 @@
 
       <el-row>
         <el-col :span="24">
-          <div style="margin-top: 20px; text-align: left;">
-            <i class="el-icon-warning" style="font-size: 24px"></i><span>: ; &nbsp</span>
-            <i class="el-icon-success" style="font-size: 24px"></i><span>: ; &nbsp</span>
-            <i class="el-icon-error" style="font-size: 24px"></i><span>: ; &nbsp</span>
-            <i class="circle" style="border-color: #1230da"></i><span>: ; &nbsp</span>
-            <i class="circle" style="border-color: #28d811"></i><span>: ; &nbsp</span>
-            <i class="circle" style="border-color: #c7db11"></i><span>: ; &nbsp</span>
+          <div style="margin-top: 20px; text-align: left; ">
+            <div id="question-icons">
+              <i class="el-icon-warning" style="font-size: 24px"></i><span>: ; &nbsp</span>
+              <i class="el-icon-success" style="font-size: 24px"></i><span>: ; &nbsp</span>
+              <i class="el-icon-error" style="font-size: 24px"></i><span>: ; &nbsp</span>
+              <i class="circle" style="border-color: #1230da"></i><span>: ; &nbsp</span>
+              <i class="circle" style="border-color: #28d811"></i><span>: ; &nbsp</span>
+              <i class="circle" style="border-color: #c7db11"></i><span>: ; &nbsp</span>
+            </div>
+            <div id="term-icons">
+              <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp&nbsp: ; </span>
+              <span class="icon-wrong"><i class="temp"></i></span><span>&nbsp&nbsp&nbsp: ; </span>
+              <i class="circle" style="border-color: #1230da"></i><span>: ; &nbsp</span>
+              <i class="circle" style="border-color: #28d811"></i><span>: ; &nbsp</span>
+              <i class="circle" style="border-color: #c7db11"></i><span>: ; &nbsp</span>
+            </div>
           </div>
         </el-col>
       </el-row>
 
       <el-row :gutter="20" style="margin-top: 20px">
         <el-col :span="18">
-          <b-button id="upload-button" variant="success" @click="upload_file_or_url">Start checking</b-button>
-          <b-button id="question-button"  @click="enter_questions">Next step</b-button>
-          <b-button id="skip-button"  @click="enter_questions">Skip this step</b-button>
-          <b-button id="back-button"  @click="back_upload" style="display: none">Previous Step</b-button>
+
+          <span id="upload-span"><b-button id="upload-button" variant="success" @click="upload_file_or_url">Start checking</b-button></span>
+          <span id="question-span"><b-button id="question-button"  @click="enter_questions(false)">Next step</b-button></span>
+          <span id="skip-span"><b-button id="skip-button"  @click="skip_upload">Skip this step</b-button></span>
+          <span id="back-span"><b-button id="back-button"  @click="back_upload">Previous Step</b-button></span>
+          <span id="reupload-span"><b-button variant="success" @click="reupload">Reupload</b-button></span>
         </el-col>
       </el-row>
 
       <el-row>
         <el-col :span="24">
-          <div style="margin-top: 20px; background: azure; height: 100px; text-align: left;">
+          <div style="margin-top: 20px; background: azure; text-align: left;">
             <div v-for="conflict in check_res.confilct_copyleft_list" >
-            <i class="el-icon-warning"></i>
+            <i class="el-icon-error" style="color: red"></i>
             <span>{{conflict}}</span>
             </div>
           </div>
@@ -155,29 +160,30 @@ export default {
       span_arr: [],
       support_list: [],
       step_active: 0,
-      licenses: [["MIT"], [ "GPL-2.0-only", "LGPL-2.1-or-later", "BSL-1.0", "Apache-2.0", "GPL-2.0-or-later"], ["LicenseRef-scancode-wordnet", "LicenseRef-scancode-public-domain", "LicenseRef-scancode-other-permissive", "LicenseRef-scancode-mit-old-style"]],
+      // licenses: [["MIT"], [ "GPL-2.0-only", "LGPL-2.1-or-later", "BSL-1.0", "Apache-2.0", "GPL-2.0-or-later"], ["LicenseRef-scancode-wordnet", "LicenseRef-scancode-public-domain", "LicenseRef-scancode-other-permissive", "LicenseRef-scancode-mit-old-style"]],
       table_data: [
-        {compatibility: 0,name: 'MIT'},
-        {compatibility: 0,name: 'Apache-2.0'},
-        {compatibility: 0,name: 'GPL-3.0-only'},
-        {compatibility: 0,name: 'BSD-3-Clause'},
-        {compatibility: 0,name: 'GPL-2.0-only'},
-        {compatibility: 0,name: 'AGPL-3.0-only'},
-        {compatibility: 0,name: 'MPL-2.0'},
-        {compatibility: 0,name: 'LGPL-3.0-only'},
-        {compatibility: 0,name: 'BSD-2-Clause'},
-        {compatibility: 0,name: 'Unlicense'},
-        {compatibility: 0,name: 'ISC'},
-        {compatibility: 0,name: 'EPL-1.0'},
-        {compatibility: 0,name: 'CC0-1.0'},
-        {compatibility: 0,name: 'LGPL-2.1-only'},
-        {compatibility: 0,name: 'WTFPL'},
-        {compatibility: 0,name: 'Zlib'},
-        {compatibility: 0,name: 'EPL-2.0'},
-        {compatibility: 0,name: 'MulanPSL-2.0'},
-        {compatibility: 0,name: 'MulanPubL-2.0'},
-        {compatibility: 0,name: 'Artistic-2.0'},
+        {compatibility: 0,name: 'MIT', readability: 59.57333333, usage: 59986},
+        {compatibility: 0,name: 'Apache-2.0', readability: 481.73, usage: 14537},
+        {compatibility: 0,name: 'GPL-3.0-only', readability: 1699.506667, usage: 9039},
+        {compatibility: 0,name: 'BSD-3-Clause', readability: 75.61666667, usage: 2503},
+        {compatibility: 0,name: 'GPL-2.0-only', readability: 894.4466667, usage: 1958},
+        {compatibility: 0,name: 'AGPL-3.0-only', readability: 1666.586667, usage: 1678},
+        {compatibility: 0,name: 'MPL-2.0', readability: 710.0233333, usage: 1027},
+        {compatibility: 0,name: 'LGPL-3.0-only', readability: 375.79, usage: 912},
+        {compatibility: 0,name: 'BSD-2-Clause', readability: 66.61, usage: 884},
+        {compatibility: 0,name: 'Unlicense', readability: 66.02333333, usage: 777},
+        {compatibility: 0,name: 'ISC', readability: 42.13666667, usage: 623},
+        {compatibility: 0,name: 'EPL-1.0', readability: 516.8866667, usage: 421},
+        {compatibility: 0,name: 'CC0-1.0', readability: 327.7833333, usage: 376},
+        {compatibility: 0,name: 'LGPL-2.1-only', readability: 1315.186667, usage: 310},
+        {compatibility: 0,name: 'WTFPL', readability: 28.14333333, usage: 184},
+        {compatibility: 0,name: 'Zlib', readability: 48.56, usage: 139},
+        {compatibility: 0,name: 'EPL-2.0', readability: 646.26, usage: 138},
+        {compatibility: 0,name: 'MulanPSL-2.0', readability: 235.5233333, usage: 0},
+        {compatibility: 0,name: 'MulanPubL-2.0', readability: 409.6733333, usage: 0},
+        {compatibility: 0,name: 'Artistic-2.0', readability: 417.62, usage: 43},
       ],
+      static_table: [],
       cur_option: '',
       sort_options: [
         {
@@ -212,9 +218,13 @@ export default {
   mounted() {
     $('.file-url').show()
     $('#questions').hide()
-    $('#questions-button').hide()
+    $('#question-span').hide()
+    $('#reupload-span').hide()
+    $('#back-span').hide()
     $('.description').hide()
+    $("#term-icons").hide()
     $("#compare").hide()
+    this.static_table = this.table_data;
     this.axios.post('/api/support_list')
     .then(res => {
       this.support_list = res.data;
@@ -254,10 +264,38 @@ export default {
           this.table_data.splice(index, 1)
         }
       }
+      this.$refs.compare_comp.term_compare();
 
-      console.log('enter');
+      this.step_active = 2;
       $('#compare').show();
       $('#questions').hide();
+      $("#back-span").hide()
+      $("#reupload-span").show()
+      $("#question-icons").hide()
+      $("#term-icons").show()
+
+      if (this.table_data.length == 0) {
+        this.$message.error("There are no recommended licenses according to your preference!")
+      } else {
+        this.$message.success("A list of recommended licenses has been produced based on your preferences!")
+      }
+    },
+
+    // 对推荐列表进行排序
+    sort_license(val) {
+      // 流行度
+      // console.log(val);
+      if (val == 0) {
+        this.table_data.sort((first, second) => {
+          return second.usage - first.usage;
+        })
+      }
+      // 可读性
+      if (val == 1) {
+        this.table_data.sort((first, second) => {
+          return second.readability - first.readability;
+        })
+      }
     },
 
     async upload_file_or_url() {
@@ -279,7 +317,6 @@ export default {
           'username': this.git_address.username,
           'reponame': this.git_address.reponame,
         }
-        console.log(data);
         url = '/api/git'
         config.headers['Content-Type'] = 'application/json';
       } else {
@@ -301,10 +338,12 @@ export default {
           $('.file-url').hide()
           this.loading = false;
           $('#description').show()
-          $('#upload-button').hide()
-          $('#question-button').show()
+          $('#upload-span').hide()
+          $('#skip-span').hide()
+          $('#question-span').show()
+          $("#back-span").show()
         } else {
-          console.log('wrong');
+          console.log('upload_file_or_url wrong');
         }
       }).catch(res => {
         console.log(res);
@@ -313,24 +352,60 @@ export default {
     },
 
     // 进入答题界面
-    enter_questions() {
-      $(".file-url").hide()
-      $("#description").hide()
-      $("#back-button").show()
-      $("#skip-button").hide()
-      $("#upload-button").hide()
-      $("#questions").show()
-      this.step_active = 1
+    enter_questions(is_skip) {
+      if (is_skip || this.check_res.confilct_copyleft_list.length == 0) {
+        console.log('enter');
+        $(".file-url").hide()
+        $("#description").hide()
+        $("#skip-span").hide()
+        console.log('tag1');
+        $("#upload-span").hide()
+        $("#question-span").hide()
+        $("#questions").show()
+        $("#back-span").show()
+
+        this.step_active = 1
+      } else {
+        this.$message.error("Make sure there are no conflicts in files until you proceed to next step!")
+      }
+      
+      // console.log('enter');
+      // $(".file-url").hide()
+      // $("#description").hide()
+      // $("#skip-span").hide()
+      // console.log('tag1');
+      // $("#upload-span").hide()
+      // $("#question-span").hide()
+      // $("#questions").show()
+      // $("#back-span").show()
+
+      // this.step_active = 1
+    },
+
+    skip_upload() {
+      console.log('skip');
+      this.check_res.compatible_both_list = ['MIT', 'Apache-2.0','GPL-3.0-only','BSD-3-Clause','GPL-2.0-only', 'AGPL-3.0-only', 'MPL-2.0','LGPL-3.0-only','BSD-2-Clause','Unlicense','ISC','EPL-1.0','CC0-1.0','LGPL-2.1-only','WTFPL','Zlib','EPL-2.0','MulanPSL-2.0','MulanPubL-2.0','Artistic-2.0'];
+      this.enter_questions(true);
     },
 
     back_upload() {
+      console.log('back');
       $(".file-url").show()
       $("#description").hide()
-      $("#back-button").hide()
-      $("#skip-button").show()
-      $("#upload-button").show()
+      $("#back-span").hide()
+      $("#skip-span").show()
+      $("#question-span").hide()
+      $("#upload-span").show()
       $("#questions").hide()
+      this.table_data = this.static_table;
+      // this.check_res = {}
+      this.check_res.confilct_copyleft_list = [],
+      this.check_res.compatible_both_list = [],
       this.step_active = 0
+    },
+
+    reupload() {
+      this.$router.go(0)
     },
 
     git_change() {
@@ -343,21 +418,6 @@ export default {
       }
     },
 
-    show_confict_depend_dict() {
-      for (const pair of this.check_res.confilct_depend_dict) {
-        var src_lic = pair.src_license;
-        var ele = "<b-popover target='"+src_lic+"' triggers='hover'>"+pair.dest_file+":"+pair.dest_license+"</b-popover>"
-        console.log(ele);
-        console.log(src_lic);
-        $('.'+src_lic).append("<p>test</p>")
-        $('.'+src_lic).attr('disabled', 'false')
-        // $('#description').append("<b-popover target='"+src_lic+"' triggers='click'>"+pair.dest_file+":"+pair.dest_license+"</b-popover>")
-        // $('#description').append("<p>test</p>")
-      }
-      // $('#description').append("<p>test</p>")
-
-    },
-
     generate_licenses_list() {
       this.licenses_in_files_list = [];
       this.span_arr = [];
@@ -366,12 +426,9 @@ export default {
           this.licenses_in_files_list.push({'path': path, 'license': license})
         }
       }
-      console.log(this.licenses_in_files_list);
 
       var contactDot = 0;
       this.licenses_in_files_list.forEach( (item,index) => {
-      //遍历tableData数据，给span_arr存入一个1，第二个item.path和前一个item.path是否相同，相同就给
-      //span_arr前一位加1，span_arr再存入0，因为span_arr为n的项表示n项合并，为0的项表示该项不显示,后面有span_arr打印结果
       if(index===0){
         this.span_arr.push(1)
       }else{
@@ -384,7 +441,6 @@ export default {
           }
         }
       })
-      console.log(this.span_arr);
     },
 
     span_method({row, column, rowIndex, columnIndex}) {
@@ -399,7 +455,6 @@ export default {
     },
 
     licenses_row_class({row, rowIndex}) {
-      console.log(row);
       for (const pair of this.check_res.confilct_depend_dict) {
         if (row.license == pair.dest_license || row.license == pair.src_license) {
           return "conflict-license";
@@ -411,11 +466,6 @@ export default {
         }
       }
     },
-
-    show_compatible_list() {
-
-    },
-
 
     has(arr, name) {
       var res = arr.find(item => item == name);
@@ -454,7 +504,8 @@ export default {
 }
 
 .conflict-license > * > * > i::before {
-  content: "\e79d"
+  content: "\e79d";
+  color: red;
 }
 
 .conflict-license > * >  .cell > span{
@@ -462,7 +513,8 @@ export default {
 }
 
 .support-license  > * > * > i::before {
-  content: "\e79c"
+  content: "\e79c";
+  color: #28d811;
 }
 
 .avatar-uploader .el-upload {
@@ -558,5 +610,59 @@ export default {
 
 .file-path {
   color: cornflowerblue
+}
+
+.el-icon-success {
+  color: #28d811;
+}
+
+.el-icon-error {
+  color: red;
+}
+
+.temp {
+    text-align: center;
+}
+
+.icon-success > .temp, .icon-wrong > .temp {
+    position: relative;
+    font-size: 1;
+    height: 20px;
+    width: auto;
+    margin-left: 15px;
+}
+
+.icon-success > .temp::before{
+    content: '√';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(22, 194, 74);
+    border: 2px solid rgb(22, 194, 74);
+    border-radius: 50%;
+}
+
+.icon-wrong > .temp::before{
+    content: '×';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+    border-radius: 50%;
 }
 </style>

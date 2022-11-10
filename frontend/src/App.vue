@@ -11,7 +11,7 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item to="/rec">Choose a license</b-nav-item>
+            <b-nav-item @click="enter_rec">Choose a license</b-nav-item>
             <b-nav-item to="/query">Compatibility query</b-nav-item>
             <b-nav-item to="/">Guide</b-nav-item>
             <b-nav-item to="/">About</b-nav-item>
@@ -51,6 +51,12 @@ export default {
   name: 'App',
   components: {
     bg
+  },
+
+  methods: {
+    enter_rec() {
+      this.$router.push('rec');
+    }
   }
 }
 </script>
@@ -77,6 +83,7 @@ export default {
   text-align: center;
   margin-right: 5%;
   margin-left: 5%;
+  margin-top: 120px;
   margin-bottom: 30px;
   position: relative;
   background-color:rgba(0,0,0,0)

@@ -1,9 +1,10 @@
-from app import app
+# from app import app
 import subprocess
 import json
 import os
 import pandas as pd 
 import tqdm
+# from .parse_dependency import *
 def compatibility_judge(licenseA,licenseB):
     df = pd.read_csv('./app/konwledgebase/compatibility_63.csv', index_col=0)
     compatibility_result = str(df.loc[licenseA, licenseB])
@@ -24,15 +25,23 @@ def license_detection_files(file_path,output_path):
                 licenses.sort(key=lambda e: - e["score"])
                 licenses_spdx=[]
                 for license in licenses:
-                    licenses_spdx.append(license["spdx_license_key"])
+                    if "scancode" not in license["spdx_license_key"]:
+                        licenses_spdx.append(license["spdx_license_key"])
                 results[file["path"]]=list(set(licenses_spdx))
 
     return results
 
+# def get_dependent_packages(file_path):
+#     lst=[]
+#     #py
+#     py_package=traverse(os.path.abspath(file_path))
+#     return lst
+
+
 def license_compatibility_filter(in_licenses):
     df = pd.read_csv(os.path.join('./app/konwledgebase/license_recommended.csv'))
     all_licenses = df['license'].tolist()
-    compatible_licenses = df['license'].tolist()
+
     compatible_both_list = df['license'].tolist()
     compatible_secondary_list = df['license'].tolist()
     compatible_combine_list = df['license'].tolist()
@@ -47,9 +56,6 @@ def license_compatibility_filter(in_licenses):
                 checked_list.append(licenseA)
                 for licenseB in all_licenses:
                     compatibility_result = str(df1.loc[licenseA, licenseB])
-                    if compatibility_result == '0':
-                        if licenseB in compatible_licenses:
-                            compatible_licenses.remove(licenseB)
                     if compatibility_result != '1,2':
                         if licenseB in compatible_both_list:
                             compatible_both_list.remove(licenseB)
@@ -81,8 +87,6 @@ def license_compatibility_filter(in_licenses):
                             is_remove_combine = 0
                     else:
                         dual_no_checked_license.add(sub_license)
-                if is_remove and licenseB in compatible_licenses and dual_checked == 1:
-                    compatible_licenses.remove(licenseB)
                 if is_remove_both and licenseB in compatible_both_list and dual_checked == 1:
                     compatible_both_list.remove(licenseB)
                 if is_remove_secondary and licenseB in compatible_secondary_list and dual_checked == 1:
@@ -91,7 +95,8 @@ def license_compatibility_filter(in_licenses):
                     compatible_combine_list.remove(licenseB)
             if dual_checked == 1:
                 checked_list.append(licenseA)
-    llist = list(set(sum(in_licenses,[])))
+    #llist = list(set(sum(in_licenses,[])))
+    compatible_licenses=list(set(compatible_both_list+compatible_secondary_list+compatible_combine_list))
     return compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list
     #return llist, checked_list, compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list,list(dual_no_checked_license)
 
@@ -120,7 +125,7 @@ def depend_detection(src_path,temp_path):
                     dest_index = one_denpendence['dest']
                     src_file = file_path_list[src_index]
                     dest_file = file_path_list[dest_index] #src depends on dest
-                    dependencies.append((src_file.replace(os.path.abspath(src_path),project_name) ,dest_file.replace(os.path.abspath(src_path),project_name)))
+                    dependencies.append((os.path.abspath(src_file).replace(os.path.abspath(src_path),project_name) ,os.path.abspath(dest_file).replace(os.path.abspath(src_path),project_name)))
     return dependencies
 
 
@@ -152,21 +157,25 @@ def conflict_dection(file_license_results,dependencies):
             iscompatibility = 0
             for lA in file_license_results[fileA]:
                 for lB in file_license_results[fileB]:
+                    ischeck = 0
                     if lA in check_license_list and lB in check_license_list:
                         ischeck = 1
                         compatibility_result_ab = compatibility_judge(lA, lB)
                         compatibility_result_ba = compatibility_judge(lB, lA)
                         if compatibility_result_ab != '0' or compatibility_result_ba != '0':
                             iscompatibility = 1
-            if iscompatibility == 0 and ischeck == 1:
-                if fileA != fileB:
-                    licenseA=" ".join(file_license_results[fileA])
-                    licenseB=" ".join(file_license_results[fileB])
-                    if f"{fileA}({licenseA}) and {fileB}({licenseB}) are not compatible." not in confilct_copyleft_set:
-                        confilct_copyleft_set.add(f"{fileA}({licenseA}) and {fileB}({licenseB}) are not compatible.")
-                else:
-                    if f"Licenses in {fileA}({licenseA},{licenseB}) are not compatible." not in confilct_copyleft_set:
-                        confilct_copyleft_set.add(f"Licenses in {fileA}({licenseA},{licenseB}) are not compatible.")
-
+                    if iscompatibility == 0 and ischeck == 1:
+                        if fileA != fileB:
+                            if f"{fileA}({lA}) and {fileB}({lB}) are not compatible." not in confilct_copyleft_set and f"{fileB}({lB}) and {fileA}({lA}) are not compatible." not in confilct_copyleft_set:
+                                confilct_copyleft_set.add(f"{fileA}({lA}) and {fileB}({lB}) are not compatible.")
+                        else:
+                            if f"Licenses({lA},{lB}) in {fileA} are not compatible." not in confilct_copyleft_set and f"Licenses({lB},{lA}) in {fileA} are not compatible." not in confilct_copyleft_set:
+                                confilct_copyleft_set.add(f"Licenses({lA},{lB}) in {fileA} are not compatible.")
+    print(confilct_copyleft_set)
     return list(confilct_copyleft_set),confilct_depend_dict
 
+if __name__ == "__main__":
+    res=license_detection_files("/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper","/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper.json")
+    depends=depend_detection("/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper","/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper/temp.json")
+    conflict_dection(res,depends)
+    license_compatibility_filter(res.values())

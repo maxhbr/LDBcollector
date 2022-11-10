@@ -1,7 +1,7 @@
 <template>
-    <div id="term-comparision" style="overflow-y: scroll; height: 515px;">
-        <el-table :data="license_terms" fit style="width: 100%;" :cell-class-name="cell_class" border>
-            <el-table-column prop="license" label="License"></el-table-column>
+    <div id="term-comparision" style="height: 515px;">
+        <el-table :data="license_terms" fit style="width: 100%;" :cell-class-name="cell_class" border height="500">
+            <el-table-column prop="license" label="License" fixed></el-table-column>
 
             <el-table-column prop="info" label="Info">
                 <template slot-scope="scope"><span>{{scope.row.info}}</span></template>
@@ -16,11 +16,11 @@
             </el-table-column>
 
             <el-table-column prop="copyright" label="Copyright" width="100">
-                <template slot-scope="scope"><span>{{scope.row.copyright}}</span></template>
+                <template slot-scope="scope"><span>{{specific_terms.copyright[scope.row.copyright+1]}}</span></template>
             </el-table-column>
 
             <el-table-column prop="patent" label="Patent">
-                <template slot-scope="scope"><span>{{scope.row.patent}}</span></template>
+                <template slot-scope="scope"><span>{{specific_terms.patent[scope.row.patent+1]}}</span></template>
             </el-table-column>
 
             <el-table-column prop="trademark" label="Trademark" width="100">
@@ -28,7 +28,7 @@
             </el-table-column>
 
             <el-table-column prop="copyleft" label="Copyleft">
-                <template slot-scope="scope"><span>{{scope.row.copyleft}}</span></template>
+                <template slot-scope="scope"><span>{{specific_terms.copyleft[scope.row.copyleft]}}</span></template>
             </el-table-column>
 
             <el-table-column prop="interaction" label="Interaction" width="100">
@@ -71,15 +71,15 @@
                 <template slot-scope="scope"><span>{{scope.row.vio_term}}</span></template>
             </el-table-column>
 
-            <el-table-column prop="compatible_version" label="Compatible version" width="100">
+            <el-table-column prop="compatible_version" label="Compatible version" :width="compatible_width">
                 <template slot-scope="scope"><span>{{scope.row.compatible_version}}</span></template>
             </el-table-column>
 
-            <el-table-column prop="secondary_license" label="Secondary license" width="95">
+            <el-table-column prop="secondary_license" label="Secondary license" :width="secondary_width">
                 <template slot-scope="scope"><span>{{scope.row.secondary_license}}</span></template>
             </el-table-column>
 
-            <el-table-column prop="gpl_combine" label="GPL combine" width="100">
+            <el-table-column prop="gpl_combine" label="GPL combine" :width="gpl_width">
                 <template slot-scope="scope"><span>{{scope.row.gpl_combine}}</span></template>
             </el-table-column>
         </el-table>
@@ -95,9 +95,13 @@ export default {
     data() {
         return {
             // licenses: ["MIT","MulanPSL-2.0","GPL-2.0-only"],
+            compatible_width: 100,
+            secondary_width: 100,
+            gpl_width: 100,
             specific_terms: {
-                copyleft: ['公共领域', '模糊授予版权', '明确授予版权'],
-                copyright: ['示宽松型', '文件级弱限制型', '库级弱限制型', '限制型']
+                copyright: ['公共领域', '模糊授予版权', '明确授予版权'],
+                copyleft: ['宽松型', '文件级弱限制型', '库级弱限制型', '限制型'],
+                patent: ['不授予专利权', '无提及', '明确授予专利权']
             },
             license_terms: [
                 {
@@ -135,11 +139,9 @@ export default {
         term_compare() {
             var temp = [];
             console.log("term")
-            console.log(this.licenses);
             for (const license of this.licenses) {
                 temp.push(license.name);
             }
-            console.log(temp)
 
             const config = {
                 headers: {
@@ -148,22 +150,42 @@ export default {
             };
             this.axios.post('/api/compare', {'recommend_list': temp}, config)
             .then(res => {
-                console.log(res.data);
                 this.license_terms = res.data;
+                // console.log(res.data);
+                this.adjust_width();
             }).catch(res => {
                 console.log('wrong');
             })
         },
 
-        cell_class({row, column, rowIndex, columnIndex}) {
-            // console.log(this.license_terms[rowIndex][column.property]);
+        adjust_width() {
+            var new_comp = 100;
+            var new_sec = 100;
+            var new_gpl = 100;
 
-            if (this.license_terms[rowIndex][column.property] == 1) {
-                return "icon-success"
+            for (const term of this.license_terms) {
+                var len_comp = term.compatible_version.length * 5;
+                var len_sec = term.secondary_license.length * 5;
+                var len_gpl = term.gpl_combine.length * 5;
+                new_comp = new_comp < len_comp  ? len_comp : new_comp;
+                new_sec = new_sec < len_sec ? len_sec : new_sec;
+                new_gpl = new_gpl < len_gpl ? len_gpl : new_gpl;
             }
+            this.compatible_width = new_comp;
+            this.secondary_width = new_sec;
+            this.gpl_width = new_gpl;
+        },
 
-            if (this.license_terms[rowIndex][column.property] == 0) {
-                return "icon-wrong"
+        cell_class({row, column, rowIndex, columnIndex}) {
+
+            if (column.property != 'copyleft' && column.property != 'copyright' && column.property != 'patent') {
+                if (this.license_terms[rowIndex][column.property] == 1) {
+                    return "icon-success"
+                }
+
+                if (this.license_terms[rowIndex][column.property] == 0) {
+                    return "icon-wrong"
+                }
             }
         }
     },
