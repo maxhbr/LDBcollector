@@ -7,4 +7,4 @@ def license_compare(compare_licenselist):
 
     return result_list
 
-#print(license_compare(["MIT","MulanPSL-2.0","GPL-2.0-only"]))
+# print(license_compare(["MIT","MulanPSL-2.0","GPL-2.0-only"]))

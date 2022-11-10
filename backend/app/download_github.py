@@ -16,12 +16,14 @@ def download_git(OWNER,REPO):
                 ["curl","-H" ,"Accept: application/vnd.github+json","-H",f"Authorization: Bearer {YOUR_TOKEN}",f"https://api.github.com/repos/{OWNER}/{REPO}"],
                 stdout=subprocess.PIPE)
         return_code=pipe.wait()
+        print(return_code)
         out=pipe.communicate()
+        print(out)
         if json.loads(out[0]).get("message","") == 'Not Found':
                 return 'URL ERROR'
         
         pipe = subprocess.Popen(
-                ["curl","-H" ,"Accept: application/vnd.github+json","-H",f"Authorization: Bearer {YOUR_TOKEN}",f"https://api.github.com/repos/{OWNER}/{REPO}/zipball","-L","-o", f"{filepath}/"+REPO+".zip"],
+                ["curl","-H" ,"Accept: application/vnd.github+json","-H",f"Authorization: Bearer {YOUR_TOKEN}",f"https://api.github.com/repos/{OWNER}/{REPO}/zipball","-L","-o", f"{filepath}/"+OWNER+"_"+REPO+".zip"],
                 stdout=subprocess.PIPE,stderr=subprocess.PIPE)
         return_code=pipe.wait()
         out=pipe.communicate()
@@ -29,7 +31,7 @@ def download_git(OWNER,REPO):
 
 
         if return_code == 0:
-                return f"{filepath}/"+REPO+".zip"
+                return f"{filepath}/"+OWNER+"_"+REPO+".zip"
         return "URL ERROR"
 
 # print(download_git("osslab-pku","licenserec"))

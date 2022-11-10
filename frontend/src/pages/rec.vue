@@ -43,18 +43,8 @@
                 <div class="description" id="description" style="display: none">
                 <span>The licenses in the project</span>
                 <el-divider></el-divider>
+
                 <div style="overflow-y:scroll; height: 450px;">
-                <!-- <b-popover target="AGPL-3.0-only" triggers="hover" disabled="true"><span style="color:cornflowerblue">MigrationHelperFrontend-master/MigrationHelperFrontend-master/test1</span><span>:MIT</span></b-popover> -->
-
-                  <!-- <div v-for="(licenses, file) in check_res.licenses_in_files" style="text-align: left; margin: 10px">
-                    <div>
-                    <i class="el-icon-warning"></i><span class="file-path">{{file}}:</span>
-                    <span v-for="license, index in licenses">
-                      <span :id="license">{{license}},&nbsp</span>
-                    </span>
-                    </div>
-                  </div> -->
-
                   <el-table :data="licenses_in_files_list" :span-method="span_method" :row-class-name="licenses_row_class">
                     <el-table-column width="50px">
                       <template slot-scope="scope"><i class="el-icon-warning"></i></template>
@@ -65,12 +55,15 @@
                       <template slot-scope="scope"><span>{{scope.row.license}}</span></template>
                     </el-table-column>
                   </el-table>
+                </div>
+                </div>
 
-                </div>
-                </div>
                 <div>
                 <div id="questions">
                   <questions @question_over="change_rec_license"></questions>
+                </div>
+                <div id="compare">
+                  <compare :licenses="table_data"></compare>
                 </div>
                 </div>
               </el-card>
@@ -97,7 +90,7 @@
                   <el-checkbox v-for="license in licenses" :label="license" :key="license" style="display: block; float: left">{{license}}</el-checkbox>
                 </el-checkbox-group> -->
               <el-table :data="table_data" style="overflow-y: scroll; height: 460px" :row-class-name="tabel_row_class">
-                <el-table-column label="Compatibility" width="70" >
+                <el-table-column label="Compatibility" width="70" align="center">
                   <template slot-scope="scope">
                     <div class="circle"></div>
                   </template>
@@ -111,9 +104,22 @@
         </el-col>
       </el-row>
 
+      <el-row>
+        <el-col :span="24">
+          <div style="margin-top: 20px; text-align: left;">
+            <i class="el-icon-warning" style="font-size: 24px"></i><span>: ; &nbsp</span>
+            <i class="el-icon-success" style="font-size: 24px"></i><span>: ; &nbsp</span>
+            <i class="el-icon-error" style="font-size: 24px"></i><span>: ; &nbsp</span>
+            <i class="circle" style="border-color: #1230da"></i><span>: ; &nbsp</span>
+            <i class="circle" style="border-color: #28d811"></i><span>: ; &nbsp</span>
+            <i class="circle" style="border-color: #c7db11"></i><span>: ; &nbsp</span>
+          </div>
+        </el-col>
+      </el-row>
+
       <el-row :gutter="20" style="margin-top: 20px">
         <el-col :span="18">
-          <b-button id="upload-button" variant="success" @click="upload_file_or_url">Start check</b-button>
+          <b-button id="upload-button" variant="success" @click="upload_file_or_url">Start checking</b-button>
           <b-button id="question-button"  @click="enter_questions">Next step</b-button>
           <b-button id="skip-button"  @click="enter_questions">Skip this step</b-button>
           <b-button id="back-button"  @click="back_upload" style="display: none">Previous Step</b-button>
@@ -139,9 +145,10 @@
 <script>
 import $ from 'jquery'
 import questions from '../components/questions.vue'
+import compare from '../components/compare.vue'
 export default {
   name: 'rec',
-  components: {questions},
+  components: {questions, compare},
   data() {
     return {
       licenses_in_files_list: [],
@@ -201,11 +208,13 @@ export default {
       }
     }
   },
+
   mounted() {
     $('.file-url').show()
     $('#questions').hide()
     $('#questions-button').hide()
     $('.description').hide()
+    $("#compare").hide()
     this.axios.post('/api/support_list')
     .then(res => {
       this.support_list = res.data;
@@ -238,13 +247,17 @@ export default {
       this.git_disabled = false;
     },
 
-    // 答题完成后，更改推荐列表
+    // 答题完成后，更改推荐列表并显示要素对比
     change_rec_license(val) {
       for (const [license, index] of this.table_data.entries()) {
         if (!this.has(val, license.name)) {
           this.table_data.splice(index, 1)
         }
       }
+
+      console.log('enter');
+      $('#compare').show();
+      $('#questions').hide();
     },
 
     async upload_file_or_url() {
@@ -485,7 +498,17 @@ export default {
   border: 10px solid #0F1C3F;
   border-radius: 50%;
   width: 15px;
-  margin-left: 10px
+  /* margin-left: 10px; */
+  /* font-family: element-icons!important; */
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: baseline;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
 }
 
 .circle.both {

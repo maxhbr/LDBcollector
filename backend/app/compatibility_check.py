@@ -120,7 +120,7 @@ def depend_detection(src_path,temp_path):
                     dest_index = one_denpendence['dest']
                     src_file = file_path_list[src_index]
                     dest_file = file_path_list[dest_index] #src depends on dest
-                    dependencies.append((src_file.replace(src_path,project_name) ,dest_file.replace(src_path,project_name)))
+                    dependencies.append((src_file.replace(os.path.abspath(src_path),project_name) ,dest_file.replace(os.path.abspath(src_path),project_name)))
     return dependencies
 
 

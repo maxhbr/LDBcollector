@@ -29,8 +29,8 @@
 							<div><label><input name="question2" type="radio" style="outline:none" value="库级__弱限制型开源许可证" />B、库级__弱限制型开源许可证</label></div>
 							<div><label><input name="question2" type="radio" style="outline:none" value="强限制型开源许可证" />C、强限制型开源许可证</label></div> -->
                             <b-form-group v-slot="{ ariaDescribedby }">
-                            <b-form-radio v-model="selected[1]" value="1">A、文件级__弱限制型开源许可证</b-form-radio>
-                            <b-form-radio v-model="selected[1]" value="2">B、库级__弱限制型开源许可证</b-form-radio>
+                            <b-form-radio v-model="selected[1]" value="1">A、文件级弱限制型开源许可证</b-form-radio>
+                            <b-form-radio v-model="selected[1]" value="2">B、库级弱限制型开源许可证</b-form-radio>
                             <b-form-radio v-model="selected[1]" value="3">C、强限制型开源许可证</b-form-radio>
                             </b-form-group>
 						</div>
@@ -179,7 +179,6 @@ export default {
 			.then(res => {
 				if (res.status == 200){
 					console.log('success');
-					console.log(res.data);
 					this.$emit("question_over", res.data)
 				} else {
 					console.log('wrong');

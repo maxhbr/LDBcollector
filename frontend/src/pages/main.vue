@@ -17,7 +17,6 @@
                         </b-img>
                         <div>
                             <b-jumbotron>
-
                                 <template #header>LicenseRec</template>
 
                                 <template #lead>

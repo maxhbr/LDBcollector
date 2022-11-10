@@ -4,7 +4,7 @@
             <div>
                 <b-card class="query_card">
                     <b-jumbotron>
-                        <template v-slot:header>Open Source License Compatibility Query</template>
+                        <template v-slot:header>License Compatibility Query</template>
 
                         <template v-slot:lead>
                             Please select two license to query their compatibility.
