@@ -14,6 +14,16 @@ cd scancode-toolkit
 source venv/bin/activate
 ```
 
+### Github API Access
+
+You should create a file named ```token``` which contains your own Github token in ```backend/app/token```.
+
+
+### MongoDB
+
+File ```backend/app/compatibility_check.py``` uses MongoDB to query the license of a package.
+You can generate the collection ```projects``` by ```data/projects.json``` which is from [libraries.io](https://libraries.io/).
+
 ### run flask:
 ```
 cd backend
