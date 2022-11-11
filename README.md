@@ -18,7 +18,7 @@ source venv/bin/activate
 ```
 cd backend
 
-pip install -r requirements.txt```
+pip install -r requirements.txt
 
 flask run -p 1120
 ```
