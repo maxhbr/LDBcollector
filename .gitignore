@@ -8,3 +8,4 @@ temp_files
 .vscode
 *.log
 projects.json
+data

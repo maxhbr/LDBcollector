@@ -108,7 +108,6 @@
               <i class="circle" style="border-color: #1230da"></i><span>: ; &nbsp</span>
               <i class="circle" style="border-color: #28d811"></i><span>: ; &nbsp</span>
               <i class="circle" style="border-color: #c7db11"></i><span>: ; &nbsp</span>
-              <i class="icon-test"></i><span>: ; &nbsp</span>
             </div>
             <div id="term-icons">
               <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp&nbsp: ; </span>
@@ -671,13 +670,5 @@ export default {
     color: red;
     border: 2px solid red;
     border-radius: 50%;
-}
-
-.icon-test {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: none;
-  border: 10px solid black;
 }
 </style>
