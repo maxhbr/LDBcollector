@@ -22,7 +22,7 @@ You should create a file named ```token``` which contains your own Github token 
 ### MongoDB
 
 File ```backend/app/compatibility_check.py``` uses MongoDB to query the license of a package.
-You can generate the collection ```projects``` by ```data/projects.json``` which is from [libraries.io](https://libraries.io/).
+You can generate the collection ```projects``` by [projects.json](https://drive.google.com/file/d/1os3KffCzM_psR5Fv3v5WKe0r397s4E1i/view?usp=sharing) which is from [libraries.io](https://libraries.io/).
 
 ### run flask:
 ```
