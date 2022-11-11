@@ -108,6 +108,7 @@
               <i class="circle" style="border-color: #1230da"></i><span>: ; &nbsp</span>
               <i class="circle" style="border-color: #28d811"></i><span>: ; &nbsp</span>
               <i class="circle" style="border-color: #c7db11"></i><span>: ; &nbsp</span>
+              <i class="icon-test"></i><span>: ; &nbsp</span>
             </div>
             <div id="term-icons">
               <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp&nbsp: ; </span>
@@ -278,6 +279,7 @@ export default {
         this.$message.error("There are no recommended licenses according to your preference!")
       } else {
         this.$message.success("A list of recommended licenses has been produced based on your preferences!")
+        this.step_active = 3;
       }
     },
 
@@ -329,19 +331,24 @@ export default {
       .then(res => {
         if (res.status == 200) {
           console.log(res.data);
-          this.check_res = res.data;
-          this.table_data = [];
-          for (const license of res.data.compatible_licenses) {
-            this.table_data.push({name: license})
+          if (res.data != "URL ERROR") {
+            this.check_res = res.data;
+            this.table_data = [];
+            for (const license of res.data.compatible_licenses) {
+              this.table_data.push({name: license})
+            }
+            this.generate_licenses_list();
+            $('.file-url').hide()
+            $('#description').show()
+            $('#upload-span').hide()
+            $('#skip-span').hide()
+            $('#question-span').show()
+            $("#back-span").show()
+          } else if (res.data == "URL ERROR") { // git url is wrong
+            this.$message.error("Make sure the git url is correct!")
           }
-          this.generate_licenses_list();
-          $('.file-url').hide()
           this.loading = false;
-          $('#description').show()
-          $('#upload-span').hide()
-          $('#skip-span').hide()
-          $('#question-span').show()
-          $("#back-span").show()
+          
         } else {
           console.log('upload_file_or_url wrong');
         }
@@ -626,7 +633,7 @@ export default {
 
 .icon-success > .temp, .icon-wrong > .temp {
     position: relative;
-    font-size: 1;
+    /* font-size: 1; */
     height: 20px;
     width: auto;
     margin-left: 15px;
@@ -664,5 +671,13 @@ export default {
     color: red;
     border: 2px solid red;
     border-radius: 50%;
+}
+
+.icon-test {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: none;
+  border: 10px solid black;
 }
 </style>
