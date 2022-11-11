@@ -46,7 +46,10 @@ def get_dependencies_licenses(file_path):
             else:
                 res=mongo_collection.find_one({ "$or" : [{"Name":p,"Language":"JavaScript"},{"Name":p,"Language":"TypeScript"} ]})
             if res:
-                dep_license[f"dependency({p})"]=[res['Licenses']]
+                if "," in res['Licenses']:
+                    dep_license[f"dependency({p})"]=res['Licenses'].split(",")
+                else:
+                    dep_license[f"dependency({p})"]=[res['Licenses']]
     return dep_license
 
 
