@@ -1,0 +1,24 @@
+diff --color=auto -u template/GPL-3.0-only.template.txt patched-template/GPL-3.0-only.template.txt
+--- template/GPL-3.0-only.template.txt	2022-08-11 17:28:58
++++ patched-template/GPL-3.0-only.template.txt	2022-11-12 15:19:56
+@@ -252,6 +252,6 @@
+ 
+ You should also get your employer (if you work as a programmer) or school, if any, to sign a "copyright disclaimer" for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see <https://www.gnu.org/licenses/>.
+ 
+-The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <https://www.gnu.org/ <<var;name="philicenses";original="licenses";match="philosophy|licenses">> /why-not-lgpl.html>.
++The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <https://www.gnu.org/<<var;name="philicenses";original="licenses";match="philosophy|licenses">>/why-not-lgpl.html>.
+ 
+ <<endOptional>>
+\ No newline at end of file
+diff --color=auto -u template/GPL-3.0-or-later.template.txt patched-template/GPL-3.0-or-later.template.txt
+--- template/GPL-3.0-or-later.template.txt	2022-08-11 17:28:58
++++ patched-template/GPL-3.0-or-later.template.txt	2022-11-12 15:20:21
+@@ -252,6 +252,6 @@
+ 
+ You should also get your employer (if you work as a programmer) or school, if any, to sign a "copyright disclaimer" for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see <https://www.gnu.org/licenses/>.
+ 
+-The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <https: <<var;name="philicenses";original="//www.gnu.org/licenses/why-not-lgpl.html>.";match="//www.gnu.org/philosophy/why-not-lgpl\.html>\.|//www.gnu.org/licenses/why-not-lgpl\.html>\.">>
++The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <https:<<var;name="philicenses";original="//www.gnu.org/licenses/why-not-lgpl.html>.";match="//www.gnu.org/philosophy/why-not-lgpl\.html>\.|//www.gnu.org/licenses/why-not-lgpl\.html>\.">>
+ 
+ <<endOptional>>
+\ No newline at end of file
