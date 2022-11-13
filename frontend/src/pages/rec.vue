@@ -124,9 +124,9 @@
         <el-col :span="18">
 
           <span id="upload-span"><b-button id="upload-button" variant="success" @click="upload_file_or_url">Start checking</b-button></span>
+          <span id="back-span"><b-button id="back-button"  @click="back_upload">Previous Step</b-button></span>
           <span id="question-span"><b-button id="question-button"  @click="enter_questions(false)">Next step</b-button></span>
           <span id="skip-span"><b-button id="skip-button"  @click="skip_upload">Skip this step</b-button></span>
-          <span id="back-span"><b-button id="back-button"  @click="back_upload">Previous Step</b-button></span>
           <span id="reupload-span"><b-button variant="success" @click="reupload">Reupload</b-button></span>
         </el-col>
       </el-row>
