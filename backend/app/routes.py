@@ -97,3 +97,4 @@ def choice():
 def compare():
     lst = request.json.get("recommend_list")
     return license_compare(lst)
+

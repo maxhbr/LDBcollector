@@ -130,6 +130,7 @@
                             <b-form-radio v-model="selected[6]" value="B">B、No.</b-form-radio>
 						</div>
 					</div>
+					<p></p>
 				<b-button variant="success" @click="previous_q" id="previous-button">Previous question</b-button>
                 <b-button variant="success" @click="next_q" id="next-button">Next question</b-button>
                 <b-button variant="success" @click="skip_q" id="skip-button" style="display: none">Skip</b-button>
@@ -169,11 +170,10 @@ export default {
 
                 var cur = '#' + 'license_question' + String(this.number--);
 
-				if (this.number == 2 && (this.selected[0] == '1' || this.selected[0] == '3')) {
+				if (this.number == 2 && (this.selected[0] == '1' || this.selected[0] == '3' || this.selected[0] == '')) {
 					this.number--;
 				}
                 var previous = '#' + 'license_question' + String(this.number);
-				console.log(this.number);
                 $(cur).hide();
                 $(previous).show();
             } 
@@ -188,12 +188,11 @@ export default {
 
                 var cur = '#' + 'license_question' + String(this.number++);
 
-				if (this.number == 2 && (this.selected[0] == '1' || this.selected[0] == '3')) {
+				if (this.number == 2 && (this.selected[0] == '1' || this.selected[0] == '3' || this.selected[0] == '')) {
 					this.number++;
 				}
 
                 var next = '#' + 'license_question' + String(this.number);
-				console.log(this.number);
                 $(cur).hide();
                 $(next).show();
 				$('#previous-button').show()
@@ -221,6 +220,7 @@ export default {
 			.then(res => {
 				if (res.status == 200){
 					console.log('success');
+					console.log(res)
 					this.$emit("question_over", res.data)
 				} else {
 					console.log('wrong');

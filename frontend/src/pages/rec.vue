@@ -45,14 +45,19 @@
                 <el-divider></el-divider>
 
                 <div style="overflow-y:scroll; height: 450px;">
-                  <el-table :data="licenses_in_files_list" :span-method="span_method" :row-class-name="licenses_row_class">
+                  <el-table :data="licenses_in_files_list" :span-method="span_method" :row-class-name="licenses_row_class" empty-text="No data">
                     <el-table-column width="50px">
                       <template slot-scope="scope"><i class="el-icon-warning"></i></template>
-                      <!-- <el-table-column prop="path"></el-table-column> -->
                     </el-table-column>
                     <el-table-column prop="path" label="path"></el-table-column>
                     <el-table-column label="license">
-                      <template slot-scope="scope"><span>{{scope.row.license}}</span></template>
+                      <template slot-scope="scope">
+                        <el-popover placement="bottom" width="400" trigger="click">
+                          <span>{{depend_dict[scope.row.license]}}</span>
+                          <span slot="reference">{{scope.row.license}}</span>
+
+                        </el-popover>
+                      </template>
                     </el-table-column>
                   </el-table>
                 </div>
@@ -84,7 +89,7 @@
               </div>
 
               <!-- Reconmmend List -->
-              <el-table :data="table_data" style="overflow-y: scroll; height: 460px;" :row-class-name="tabel_row_class">
+              <el-table :data="table_data" style="overflow-y: scroll; height: 460px;" :row-class-name="tabel_row_class" empty-text="No data">
                 <el-table-column label="Compatibility" width="110" align="center">
                   <template slot-scope="scope">
                     <div class="circle"></div>
@@ -102,9 +107,9 @@
         <el-col :span="24">
           <div style="margin-top: 20px; text-align: left; ">
             <div id="question-icons">
-              <i class="el-icon-error" style="font-size: 24px"></i><span>: There is a compatibility conflict between the licenses of upstream and downstream files that have a dependent relationship.</span>
-              <i class="el-icon-success" style="font-size: 24px"></i><span>: There is no conflict as described above. </span>
-              <i class="el-icon-warning" style="font-size: 24px"></i><span>: Do not support checking the compatibility of this license, please check manually.</span>
+              <i class="el-icon-error" ></i><span>: There is a compatibility conflict between the licenses of upstream and downstream files that have a dependent relationship.</span>
+              <i class="el-icon-success" ></i><span>: There is no conflict as described above. </span>
+              <i class="el-icon-warning" ></i><span>: Do not support checking the compatibility of this license, please check manually.</span>
               <i class="circle" style="border-color: #1230da"></i><span>: Both secondarily compatible and combinatively compatible.</span>
               <i class="circle" style="border-color: #28d811"></i><span>: Secondarily compatible.</span>
               <i class="circle" style="border-color: #c7db11"></i><span>: Combinatively compatible.</span>
@@ -156,6 +161,7 @@ export default {
   components: {questions, compare},
   data() {
     return {
+      depend_dict: {},
       licenses_in_files_list: [],
       span_arr: [],
       support_list: [],
@@ -209,7 +215,12 @@ export default {
         compatible_licenses: [],
         compatible_secondary_list: [],
         confilct_copyleft_list: [],
-        confilct_depend_dict: [],
+        confilct_depend_dict: [{
+          src_file: '',
+          src_license: '',
+          dest_file: '',
+          dest_license: ''
+        }],
         licenses_in_files: {}
       }
     }
@@ -259,11 +270,13 @@ export default {
 
     // 答题完成后，更改推荐列表并显示要素对比
     change_rec_license(val) {
-      for (const [license, index] of this.table_data.entries()) {
-        if (!this.has(val, license.name)) {
-          this.table_data.splice(index, 1)
+      var temp_table = []
+      for (const license of this.table_data) {
+        if (this.has(val, license.name)) {
+          temp_table.push(license)
         }
       }
+      this.table_data = temp_table;
       this.$refs.compare_comp.term_compare();
 
       this.step_active = 2;
@@ -332,11 +345,19 @@ export default {
           console.log(res.data);
           if (res.data != "URL ERROR") {
             this.check_res = res.data;
-            this.table_data = [];
-            for (const license of res.data.compatible_licenses) {
-              this.table_data.push({name: license})
+            // this.table_data = [];
+            // for (const license of res.data.compatible_licenses) {
+            //   this.table_data.push({name: license})
+            // }
+            var temp_table = []
+            for (const license of this.table_data) {
+              if (this.has(res.data.compatible_licenses, license.name)) {
+                temp_table.push(license)
+              }
             }
+            this.table_data = temp_table;
             this.generate_licenses_list();
+            this.generate_depend_dict();
             $('.file-url').hide()
             $('#description').show()
             $('#upload-span').hide()
@@ -449,6 +470,22 @@ export default {
       })
     },
 
+    generate_depend_dict() {
+      var temp_depend = {};
+      for (const license_in_file of Object.values(this.check_res.licenses_in_files)) {
+        for (const license of license_in_file) {
+          temp_depend[license] = ''
+        }
+      }
+      console.log(temp_depend);
+      for (const license of this.check_res.confilct_depend_dict) {
+        temp_depend[license.src_license] += 'In conflict with ' + license.dest_file + ':' + license.dest_license + ';'
+        temp_depend[license.dest_license] += 'In conflict with ' + license.src_file + ':' + license.src_license + ';'
+      }
+      console.log(temp_depend);
+      this.depend_dict = temp_depend;
+    },
+
     span_method({row, column, rowIndex, columnIndex}) {
       if (columnIndex === 1) {
         var _row = this.span_arr[rowIndex];
@@ -491,22 +528,24 @@ export default {
       if (this.has(this.check_res.compatible_combine_list, row.name)) {
         return "combine-row"
       }
-    }
+    },
+
+
   }
 }
 </script>
 
 <style>
 .both-row > * > * >.circle {
-  border: 10px solid #1230da;
+  border: 7px solid #1230da;
 }
 
 .secondary-row > * > * >.circle {
-  border: 10px solid #28d811;
+  border: 7px solid #28d811;
 }
 
 .combine-row > * > * >.circle {
-  border: 10px solid #c7db11;
+  border: 7px solid #c7db11;
 }
 
 .conflict-license > * > * > i::before {
@@ -553,12 +592,11 @@ export default {
 
 .circle {
   background: #456BD9;
-  border: 10px solid #0F1C3F;
+  border: 7px solid #0F1C3F;
   border-radius: 50%;
-  width: 15px;
+  /* width: 15px; */
   /* margin-left: 10px; */
   /* font-family: element-icons!important; */
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;

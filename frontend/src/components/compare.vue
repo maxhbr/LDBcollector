@@ -1,6 +1,6 @@
 <template>
     <div id="term-comparision" style="height: 515px;">
-        <el-table :data="license_terms" fit style="width: 100%;" :cell-class-name="cell_class" border height="500">
+        <el-table :data="license_terms" fit style="width: 100%;" :cell-class-name="cell_class" border height="500" empty-text="No data">
             <el-table-column prop="license" label="License" fixed></el-table-column>
 
             <el-table-column prop="info" label="Info">
@@ -138,7 +138,6 @@ export default {
     methods: {
         term_compare() {
             var temp = [];
-            console.log("term")
             for (const license of this.licenses) {
                 temp.push(license.name);
             }
