@@ -7,7 +7,7 @@ Environment: Ubantu20.04, Python3.8, Java1.8, Node.js v18.10.0
 ```
 cd scancode-toolkit
 
-./configure clean
+./configure --clean
 
 ./configure
 
