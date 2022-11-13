@@ -1,4 +1,4 @@
-diff --color=auto -u template/GPL-3.0-only.template.txt patched-template/GPL-3.0-only.template.txt
+diff --color=auto -Naur template/GPL-3.0-only.template.txt patched-template/GPL-3.0-only.template.txt
 --- template/GPL-3.0-only.template.txt	2022-08-11 17:28:58
 +++ patched-template/GPL-3.0-only.template.txt	2022-11-12 15:19:56
 @@ -252,6 +252,6 @@
@@ -10,7 +10,7 @@ diff --color=auto -u template/GPL-3.0-only.template.txt patched-template/GPL-3.0
  
  <<endOptional>>
 \ No newline at end of file
-diff --color=auto -u template/GPL-3.0-or-later.template.txt patched-template/GPL-3.0-or-later.template.txt
+diff --color=auto -Naur template/GPL-3.0-or-later.template.txt patched-template/GPL-3.0-or-later.template.txt
 --- template/GPL-3.0-or-later.template.txt	2022-08-11 17:28:58
 +++ patched-template/GPL-3.0-or-later.template.txt	2022-11-12 15:20:21
 @@ -252,6 +252,6 @@
