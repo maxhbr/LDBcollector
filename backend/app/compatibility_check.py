@@ -165,34 +165,34 @@ def conflict_dection(file_license_results,dependencies):
                     iscompatibility = 1
         if iscompatibility == 0 and ischeck == 1:
             confilct_depend_dict.append({"src_file":src_file,"src_license":licenseA,"dest_file":dest_file,"dest_license":licenseB})
-
     
-    for fileA in tqdm.tqdm(file_license_results):
-        for fileB in file_license_results:
+    license_file={}
+    for f in file_license_results:
+        for l in file_license_results[f]:
+            license_file[l]=license_file.get(l,[])+[f]
+
+    for lA in license_file:
+        for lB in license_file:
             iscompatibility = 0
-            for lA in file_license_results[fileA]:
-                for lB in file_license_results[fileB]:
-                    ischeck = 0
-                    if lA in check_license_list and lB in check_license_list:
-                        ischeck = 1
-                        compatibility_result_ab = compatibility_judge(lA, lB)
-                        compatibility_result_ba = compatibility_judge(lB, lA)
-                        if compatibility_result_ab != '0' or compatibility_result_ba != '0':
-                            iscompatibility = 1
-                    if iscompatibility == 0 and ischeck == 1:
-                        if fileA != fileB:
-                            if f"{fileA}({lA}) and {fileB}({lB}) are not compatible." not in confilct_copyleft_set and f"{fileB}({lB}) and {fileA}({lA}) are not compatible." not in confilct_copyleft_set:
-                                confilct_copyleft_set.add(f"{fileA}({lA}) and {fileB}({lB}) are not compatible.")
-                        else:
-                            if f"Licenses({lA},{lB}) in {fileA} are not compatible." not in confilct_copyleft_set and f"Licenses({lB},{lA}) in {fileA} are not compatible." not in confilct_copyleft_set:
-                                confilct_copyleft_set.add(f"Licenses({lA},{lB}) in {fileA} are not compatible.")
+            ischeck = 0
+            if lA in check_license_list and lB in check_license_list:
+                ischeck = 1
+                compatibility_result_ab = compatibility_judge(lA, lB)
+                compatibility_result_ba = compatibility_judge(lB, lA)
+                if compatibility_result_ab != '0' or compatibility_result_ba != '0':
+                    iscompatibility = 1
+            if iscompatibility == 0 and ischeck == 1:
+                fileAs=",".join(license_file[lA])
+                fileBs=",".join(license_file[lB])
+                if f"License {lA} in files({fileAs}) and License {lB} in files({fileBs}) are not compatible." not in confilct_copyleft_set and f"License {lB} in files({fileBs}) and License {lA} in files({fileAs}) are not compatible." not in confilct_copyleft_set:
+                    confilct_copyleft_set.add(f"License {lA} in files({fileAs}) and License {lB} in files({fileBs}) are not compatible.")
     print(confilct_copyleft_set)
     return list(confilct_copyleft_set),confilct_depend_dict
 
 if __name__ == "__main__":
-    res=license_detection_files("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie.json")
-    depends=depend_detection("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie/temp.json")
-    print(conflict_dection(res,depends))
+    # res=license_detection_files("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie.json")
+    # depends=depend_detection("/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie","/data/wwxu/PySC/backend/temp_files/2022-11-11 02:25:40.773691/Easesgr_reggie/temp.json")
+    # print(conflict_dection(res,depends))
     # license_compatibility_filter(res.values())
     #print(get_dependencies_licenses("/data/wwxu/PySC/backend/temp_files/2022-11-10 20:30:09.451573/hehao98_MigrationHelper"))
-    
+    pass

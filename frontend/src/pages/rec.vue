@@ -10,7 +10,7 @@
 
     <div id="main" class="main" style="height: auto">
       <el-row :gutter="20" style="margin-top: 20px; height: 600px">
-        <el-col :span="17">
+        <el-col :span="16">
           <div class="file_box">
             <div>
               <el-card style="height: 600px;">
@@ -70,7 +70,7 @@
             </div>
           </div>
         </el-col>
-        <el-col :span="7">
+        <el-col :span="8">
           <div class="list">
             <el-card style="height: 600px">
               <div slot="header" class="clearfix">
@@ -84,8 +84,8 @@
               </div>
 
               <!-- Reconmmend List -->
-              <el-table :data="table_data" style="overflow-y: scroll; height: 460px" :row-class-name="tabel_row_class">
-                <el-table-column label="Compatibility" width="70" align="center">
+              <el-table :data="table_data" style="overflow-y: scroll; height: 460px;" :row-class-name="tabel_row_class">
+                <el-table-column label="Compatibility" width="110" align="center">
                   <template slot-scope="scope">
                     <div class="circle"></div>
                   </template>
@@ -102,19 +102,19 @@
         <el-col :span="24">
           <div style="margin-top: 20px; text-align: left; ">
             <div id="question-icons">
-              <i class="el-icon-warning" style="font-size: 24px"></i><span>: ; &nbsp</span>
-              <i class="el-icon-success" style="font-size: 24px"></i><span>: ; &nbsp</span>
-              <i class="el-icon-error" style="font-size: 24px"></i><span>: ; &nbsp</span>
-              <i class="circle" style="border-color: #1230da"></i><span>: ; &nbsp</span>
-              <i class="circle" style="border-color: #28d811"></i><span>: ; &nbsp</span>
-              <i class="circle" style="border-color: #c7db11"></i><span>: ; &nbsp</span>
+              <i class="el-icon-error" style="font-size: 24px"></i><span>: There is a compatibility conflict between the licenses of upstream and downstream files that have a dependent relationship.</span>
+              <i class="el-icon-success" style="font-size: 24px"></i><span>: There is no conflict as described above. </span>
+              <i class="el-icon-warning" style="font-size: 24px"></i><span>: Do not support checking the compatibility of this license, please check manually.</span>
+              <i class="circle" style="border-color: #1230da"></i><span>: Both secondarily compatible and combinatively compatible.</span>
+              <i class="circle" style="border-color: #28d811"></i><span>: Secondarily compatible.</span>
+              <i class="circle" style="border-color: #c7db11"></i><span>: Combinatively compatible.</span>
             </div>
             <div id="term-icons">
-              <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp&nbsp: ; </span>
-              <span class="icon-wrong"><i class="temp"></i></span><span>&nbsp&nbsp&nbsp: ; </span>
-              <i class="circle" style="border-color: #1230da"></i><span>: ; &nbsp</span>
-              <i class="circle" style="border-color: #28d811"></i><span>: ; &nbsp</span>
-              <i class="circle" style="border-color: #c7db11"></i><span>: ; &nbsp</span>
+              <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp:The clause is explicitly included.</span>
+              <span class="icon-wrong"><i class="temp"></i></span><span>&nbsp&nbsp:The clause is not mentioned.</span>
+              <i class="circle" style="border-color: #1230da"></i><span>:Both secondarily compatible and combinatively compatible.</span>
+              <i class="circle" style="border-color: #28d811"></i><span>:Secondarily compatible.</span>
+              <i class="circle" style="border-color: #c7db11"></i><span>:Combinatively compatible.&nbsp</span>
             </div>
           </div>
         </el-col>

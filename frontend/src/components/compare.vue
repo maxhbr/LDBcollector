@@ -99,9 +99,9 @@ export default {
             secondary_width: 100,
             gpl_width: 100,
             specific_terms: {
-                copyright: ['公共领域', '模糊授予版权', '明确授予版权'],
-                copyleft: ['宽松型', '文件级弱限制型', '库级弱限制型', '限制型'],
-                patent: ['不授予专利权', '无提及', '明确授予专利权']
+                copyright: ['Public domain', 'Grant copyright vaguely.', 'Grant copyright explicitly.'],
+                copyleft: ['Permissive', 'File-level weakly restrictive', 'Library-level weakly restrictive', 'Restrictive'],
+                patent: ['Do not grant patent rights.', 'Do not mention patent rights.', 'Grant patent rights explicitly.']
             },
             license_terms: [
                 {

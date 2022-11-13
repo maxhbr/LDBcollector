@@ -27,28 +27,28 @@
                         </el-select>
                         <hr class="my-4">
 
-                        <div id="result" style="display: none">
+                        <div id="result" style="display: none;text-align:justify;text-align-last: center;">
                             <el-row>
-                                <el-col :span="6" class="label"><span>兼容结果：</span></el-col>
+                                <el-col :span="6" class="label"><span>Compatibility:</span></el-col>
                                 <el-col :span="18">
                                     <div class="msg_left">{{ result.iscompatibility }}</div>
                                 </el-col>
                             </el-row>
                             <el-row>
-                                <el-col :span="6" class="label"><span>如何使用：</span></el-col>
+                                <el-col :span="6" class="label"><span>How to use:</span></el-col>
                                 <el-col :span="18">
                                     <div class="msg_left">{{ result.how_to_use }}</div><br style="clear:both">
                                 </el-col>
 
                             </el-row>
                             <el-row>
-                                <el-col :span="6" class="label"><span>原因分析：</span></el-col>
+                                <el-col :span="6" class="label"><span>Reason:</span></el-col>
                                 <el-col :span="18">
                                     <div class="msg_left">{{ result.why_or_why_not }}</div>
                                 </el-col>
                             </el-row>
                             <el-row>
-                                <el-col :span="6" class="label"><span>影响次级兼容的条款：</span></el-col>
+                                <el-col :span="6" class="label"><span>The clauses which affect secondary compatibility.</span></el-col>
                                 <el-col :span="18">
                                     <div class="msg_left" v-for="term in result.compatibility_terms">{{ term }}</div>
                                 </el-col>
@@ -96,6 +96,11 @@ export default {
     },
     methods: {
         async begin_query() {
+            if (this.selected_A == '' && this.selected_B == "") {
+                this.$message.error("Please select two licenses first!");
+                return;
+            }
+
             var data = {
                 'licenseA': this.selected_A,
                 'licenseB': this.selected_B,
@@ -120,7 +125,7 @@ export default {
 
             var card_height = $('.card-body').css('height').substr(0, 3)
             var new_height = parseInt(card_height) + 100
-            $('#main').css({ 'height': String(new_height+430)+'px' })
+            // $('#main').css({ 'height': String(new_height+430)+'px' })
             this.loading = true;
             $('.header').css('margin-top', '20px')
             $('#result').show();

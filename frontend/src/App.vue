@@ -13,16 +13,16 @@
           <b-navbar-nav>
             <b-nav-item @click="enter_rec">Choose a license</b-nav-item>
             <b-nav-item to="/query">Compatibility query</b-nav-item>
-            <b-nav-item to="/">Guide</b-nav-item>
-            <b-nav-item to="/">About</b-nav-item>
+            <!-- <b-nav-item to="/">Guide</b-nav-item>
+            <b-nav-item to="/">About</b-nav-item> -->
           </b-navbar-nav>
           <b-navbar-nav class="ms-auto">
             <b-nav-item-dropdown right>
-              <template #button-content>
+              <!-- <template #button-content>
                 <em>User</em>
               </template>
               <b-dropdown-item href="#">Profile</b-dropdown-item>
-              <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+              <b-dropdown-item href="#">Sign Out</b-dropdown-item> -->
             </b-nav-item-dropdown>
            
           </b-navbar-nav>

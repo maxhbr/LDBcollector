@@ -12,6 +12,13 @@ from .query import license_compatibility_judge
 from .download_github import download_git
 from .question import license_terms_choice
 from .compare import license_compare
+import logging
+logging.basicConfig(
+    filename=f"./app/logging/backend.log",
+    filemode='a',
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    level=logging.INFO
+)
 # 主页面
 @app.route('/')
 @app.route('/index')
