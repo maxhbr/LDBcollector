@@ -138,7 +138,8 @@
 
       <el-row>
         <el-col :span="24">
-          <div style="margin-top: 20px; background: azure; text-align: left;">
+          <div style="margin-top: 20px; background: azure; text-align: left;" id="copyleft-area">
+            <p>Copyleft compatibility conflict:</p>
             <div v-for="conflict in check_res.confilct_copyleft_list" >
             <i class="el-icon-error" style="color: red"></i>
             <span>{{conflict}}</span>
@@ -235,6 +236,7 @@ export default {
     $('.description').hide()
     $("#term-icons").hide()
     $("#compare").hide()
+    $("#copyleft-area").hide()
     this.static_table = this.table_data;
     this.axios.post('/api/support_list')
     .then(res => {
@@ -364,6 +366,7 @@ export default {
             $('#skip-span').hide()
             $('#question-span').show()
             $("#back-span").show()
+            $("#copyleft-area").show()
           } else if (res.data == "URL ERROR") { // git url is wrong
             this.$message.error("Make sure the git url is correct!")
           }
@@ -424,6 +427,7 @@ export default {
       $("#question-span").hide()
       $("#upload-span").show()
       $("#questions").hide()
+      $("#copyleft-area").hide()
       this.table_data = this.static_table;
       // this.check_res = {}
       this.check_res.confilct_copyleft_list = [],
