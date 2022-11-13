@@ -134,6 +134,7 @@
       <el-row>
         <el-col :span="24">
           <div style="margin-top: 20px; background: azure; text-align: left;">
+            Copyleft conflict:<br/>
             <div v-for="conflict in check_res.confilct_copyleft_list" >
             <i class="el-icon-error" style="color: red"></i>
             <span>{{conflict}}</span>
