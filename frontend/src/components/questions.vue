@@ -134,6 +134,7 @@
                 <b-button variant="success" @click="next_q" id="next-button">Next question</b-button>
                 <b-button variant="success" @click="skip_q" id="skip-button" style="display: none">Skip</b-button>
                 <b-button variant="outline-primary" @click="submit_q" id="upload-button">Submit</b-button>
+				<p id="hint">If you are not concerned about this, you can <b style="color:red">skip this question</b> by clicking on "Next question".</p>
     </div>
 </template>
 
@@ -205,6 +206,7 @@ export default {
                 var next = '#' + 'license_question' + String(this.number);
                 $(cur).hide();
                 $(next).show();
+				
             }
 		},
 

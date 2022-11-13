@@ -18,7 +18,7 @@
                   <span style="font-size: 20px;color:white">License Compatibility Check</span>
                 </div>
                 <div class="file-url" v-loading="loading" element-loading-text="It may take a while...">
-                <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository url</p>
+                <p style="font-size: 17px; font-weight:400;">You can upload your project or input Github repository url. If you want to choose a license for a new project, you can just <b style="color:red">skip this step</b>.</p>
                 <el-upload class="avatar-uploader" id="uploader" ref="uploader" action="#" :show-file-list="true"
                   :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload" :on-change="file_change" :before-remove="remove_file"
                   :limit=1 accept=".rar,.zip" drag :auto-upload="false" :disabled="upload_disabled">
