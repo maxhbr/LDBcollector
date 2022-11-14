@@ -85,8 +85,8 @@ class ReleaseLicenseCurationCreateView(AbstractCreateUsageConditionView):
     template_name_suffix = "_create"
 
 
-class ReleaseFixedLicensesList(ListView):
-    template_name = "cube/release_fixed_licenses.html"
+class ReleaseCuratedLicensesList(ListView):
+    template_name = "cube/release_curated_licenses.html"
     release = None
     context_object_name = "usages"
 
@@ -104,6 +104,23 @@ class ReleaseFixedLicensesList(ListView):
                 version__spdx_valid_license_expr=F("version__declared_license_expr")
             )
         )
+
+
+@method_decorator(require_POST, "dispatch")
+class UpdateLicenseCurationView(UpdateView):
+    model = Usage
+    fields = []
+
+    def form_valid(self, form):
+        self.object.version.spdx_valid_license_expr = ""
+        self.object.version.save()
+        return HttpResponseRedirect(self.get_success_url())
+
+    def form_invalid(self, form):
+        return HttpResponseRedirect(self.get_success_url())
+
+    def get_success_url(self):
+        return reverse("cube:release_", kwargs={"pk": self.object.release.pk})
 
 
 @method_decorator(require_POST, "dispatch")

@@ -8,6 +8,7 @@ from functools import lru_cache
 from typing import Iterable, List
 
 from django.db import transaction
+from django.db.models import Q
 from license_expression import get_spdx_licensing, BaseSymbol
 
 from cube.models import License, Obligation, Derogation
@@ -94,29 +95,19 @@ def check_licenses_against_policy(release):
     return response
 
 
-def get_licenses_to_check_or_create(release):
+def get_licenses_to_create(release):
     response = {}
     validated_usages = release.usage_set.all().filter(
-        version__spdx_valid_license_expr__isnull=False
+        ~Q(version__spdx_valid_license_expr="") | ~Q(version__corrected_license="")
     )
-    corrected_usages = release.usage_set.all().filter(
-        version__corrected_license__isnull=False
-    )
-    validated_usages |= corrected_usages
-    licenses_to_check = set()
     licenses_to_create = set()
+
     for usage in validated_usages:
-        if usage.version.corrected_license:
-            raw_expression = usage.version.corrected_license
-        else:
-            raw_expression = usage.version.spdx_valid_license_expr
-        spdx_licenses = explode_spdx_to_units(raw_expression)
+        spdx_licenses = explode_spdx_to_units(usage.version.effective_license)
 
         for spdx_license in spdx_licenses:
             try:
                 license_instance = License.objects.get(spdx_id=spdx_license)
-                if not license_instance.allowed:
-                    licenses_to_check.add(license_instance)
             except License.DoesNotExist:
                 # It might happen that SPDX throws 'NOASSERTION' instead of an empty
                 # string. Handling that.
@@ -124,7 +115,6 @@ def get_licenses_to_check_or_create(release):
                     licenses_to_create.add(spdx_license)
                     logger.info("unknown license", spdx_license)
 
-    response["licenses_to_check"] = licenses_to_check
     response["licenses_to_create"] = licenses_to_create
     return response
 

@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
   <li><a href="{% url "cube:release_summary" release.id %}">{{ release.release_number }}</a></li>
   <li><a href="{% url "cube:release_validation" release.id %}">Validation</a></li>
-  <li>Normalized licenses</li>
+  <li>Curated licenses</li>
 </ul>
 {% endblock %}
 {% block herozone %}
@@ -44,8 +44,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 <a href="{% url "admin:cube_licensecuration_change"  usage.license_curations.0.pk %}">Edit rule</a>
                 {% if usage.license_curations.0.expression_out != usage.version.spdx_valid_license_expr %}
                   <br><small>Expression does not match curation
-                  {% comment %}TODO : change update view{% endcomment %}
-                  <form action="{% url "cube:release_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
+                  <form action="{% url "cube:release_update_license_curation" usage.pk %}" method="POST" class="form is-inline">
                     {% csrf_token %}
                     <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
                 {% endif %}

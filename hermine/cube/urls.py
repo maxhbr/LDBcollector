@@ -159,8 +159,13 @@ urlpatterns = [
     ),
     path(
         "release/<int:id>/validation/fixed_licenses/",
-        views.ReleaseFixedLicensesList.as_view(),
-        name="release_normalized_usages",
+        views.ReleaseCuratedLicensesList.as_view(),
+        name="release_curated_licenses",
+    ),
+    path(
+        "usage/<int:pk>/update_license_curation/",
+        views.UpdateLicenseCurationView.as_view(),
+        name="release_update_license_curation",
     ),
     path(
         "usage/<int:usage_pk>/add_expression_validation/",

@@ -122,7 +122,8 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
   {% if fixed_expressions %}
-    <p>List <a href="{% url "cube:release_normalized_usages" object.id %}">{{ fixed_expressions|length }} license normalizations</a> for this release.</p>
+    <p>List <a href="{% url "cube:release_curated_licenses" object.id %}">{{ fixed_expressions|length }} license curations</a>
+      for this release.</p>
   {% endif %}
 
 
@@ -138,86 +139,18 @@ SPDX-License-Identifier: AGPL-3.0-only
     </article>
     <ul>
       {% for license in licenses_to_create %}
-        <li>{{license}} : <a href="/admin/cube/license/add/?spdx_id={{license}}" target="_blank">Create license </a> </li>
+        <li>{{ license }}: <a href="{% url "admin:cube_license_add" %}?spdx_id={{ license }}" target="_blank">create license</a></li>
       {% endfor %}
     </ul>
-  {% endif %}
-
-  {% if licenses_to_check %}
-    <article class="message is-warning">
-      <div class="message-header">
-        <p>Some licenses need to be qualified</p>
-      </div>
-      <div class="message-body">
-        The following licenses need to be checked by the legal team: 
-      </div>
-    </article>
-
-    <ul>
-      {% for license in licenses_to_check %}
-        <li>{{license.spdx_id }} : {{license.long_name }}. <a href="/admin/cube/license/{{license.id}}/change/" target="_blank">Qualify this license</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {% if not licenses_to_check and not licenses_to_create %}
+  {% else %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
       </div>
       <div class="message-body">
-        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the licenses involved are known and qualified.
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the licenses involved exist in database.
       </div>
     </article>
-  {% endif %}
-
-
-  {% if usages_lic_unknown %}
-    <article class="message is-dark">
-      <div class="message-header">
-        <p>Some components use unreviewed licenses</p>
-      </div>
-      <div class="message-body">
-        The following <strong>N</strong> components out <strong>P</strong> use a non-reviewed license. Please review those
-      </div>
-    </article>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Component</th>
-          <th>Version</th>
-          <th>License declared</th>
-          <th>License validated</th>
-          <th>License usage</th>
-          <th>Applicable Licenses</th>
-          <th>Scope</th>
-          <th>Edit</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for usage in usages_lic_unknown %}
-          <tr>
-            <td>{{usage.version.component.name }} </td>
-            <td>{{usage.version.version_number }}</td>
-            <td>{{usage.version.declared_license }}</td>
-            <td>{{usage.version.spdx_valid_license_expr }} </td>
-            <td>{{usage.license_expression }} </td>
-            <td>
-              {% for license_chosen in usage.licenses_chosen.all %}
-                <a href="/license/{{license_chosen.id}}">
-                  <span class="tag {{ license_chosen|licenseAllowedCSS }}">
-                    {{ license_chosen.spdx_id }}
-                  </span>
-                </a>
-              {% endfor %}
-            </td>
-            <td>{{usage.scope }}</td>
-            <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
   {% endif %}
 
   <h4 class="title is-4">Step 3 - Confirm ANDs</h4>
@@ -420,6 +353,54 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
   <h4 class="title is-4">Step 5 - Check licenses against policy</h4>
 
+  {% if usages_lic_unknown %}
+    <article class="message is-dark">
+      <div class="message-header">
+        <p>Some components use unreviewed licenses</p>
+      </div>
+      <div class="message-body">
+        The following <strong>N</strong> components out <strong>P</strong> use a non-reviewed license. Please review those
+      </div>
+    </article>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Version</th>
+          <th>License declared</th>
+          <th>License validated</th>
+          <th>License usage</th>
+          <th>Applicable Licenses</th>
+          <th>Scope</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for usage in usages_lic_unknown %}
+          <tr>
+            <td>{{ usage.version.component.name }} </td>
+            <td>{{ usage.version.version_number }}</td>
+            <td>{{ usage.version.declared_license }}</td>
+            <td>{{ usage.version.spdx_valid_license_expr }} </td>
+            <td>{{ usage.license_expression }} </td>
+            <td>
+              {% for license_chosen in usage.licenses_chosen.all %}
+                <a href="/license/{{license_chosen.id}}">
+                  <span class="tag {{ license_chosen|licenseAllowedCSS }}">
+                    {{ license_chosen.spdx_id }}
+                  </span>
+                </a>
+              {% endfor %}
+            </td>
+            <td>{{ usage.scope }}</td>
+            <td><a href="/admin/cube/usage/{{ usage.id }}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+
   {% if usages_lic_never_allowed %}
     <article class="message is-danger">
       <div class="message-header">
@@ -510,7 +491,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 
 
-  {% if not usages_lic_context_allowed and not usages_lic_never_allowed%}
+  {% if not usages_lic_context_allowed and not usages_lic_never_allowed and not usages_lic_unknown %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
