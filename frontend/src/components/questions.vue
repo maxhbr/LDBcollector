@@ -20,9 +20,9 @@
 						</div>
 						<div class="radio-area">
                             <b-form-group>
-                            <b-form-radio v-model="selected[0]" value="1">A、Yes.</b-form-radio>
-                            <b-form-radio v-model="selected[0]" value="2">B、No.</b-form-radio>
-                            <b-form-radio v-model="selected[0]" value="3">C、It doesn't matter. Put the work in the public domain.</b-form-radio>
+                            <b-form-radio v-model="selected[0]" value="1">A. Yes.</b-form-radio>
+                            <b-form-radio v-model="selected[0]" value="2">B. No.</b-form-radio>
+                            <b-form-radio v-model="selected[0]" value="3">C. It doesn't matter. Put the work in the public domain.</b-form-radio>
                             </b-form-group>
 						</div>
 					</div>
@@ -41,9 +41,9 @@
 								</p></div>
 						<div class="radio-area">
                             <b-form-group v-slot="{ ariaDescribedby }">
-                            <b-form-radio v-model="selected[1]" value="1">A、File-level weakly restrictive open source licenses.</b-form-radio>
-                            <b-form-radio v-model="selected[1]" value="2">B、Library-level weakly restrictive open source licenses.</b-form-radio>
-                            <b-form-radio v-model="selected[1]" value="3">C、Strongly restrictive license.</b-form-radio>
+                            <b-form-radio v-model="selected[1]" value="1">A. File-level weakly restrictive open source licenses.</b-form-radio>
+                            <b-form-radio v-model="selected[1]" value="2">B. Library-level weakly restrictive open source licenses.</b-form-radio>
+                            <b-form-radio v-model="selected[1]" value="3">C. Strongly restrictive license.</b-form-radio>
                             </b-form-group>
 						</div>
 					</div>
@@ -57,9 +57,9 @@
 							They generally place a high value on the explicit grant of patent rights.</p></div>
 							<!-- 说明：软件的可专利性是开源软件正在面临的威胁之一，开源软件中可能包含软件专利，一些开源软件许可证未提及专利授权，尽管这可能并不意味着它们不授予专利权（即默示授予专利），然而明确的专利授权有利于保护开源软件的用户免受专利诉讼，尤其是面向一些拥有大量专利组合和其他专利组合风险的企业用户，他们普遍很重视专利权的明确授予。 -->
 						<div class="radio-area">
-                            <b-form-radio v-model="selected[2]" value="1">A、Do not mention patent rights.</b-form-radio>
-                            <b-form-radio v-model="selected[2]" value="2">B、Grant patent rights explicitly.</b-form-radio>
-                            <b-form-radio v-model="selected[2]" value="3">C、Do not grant patent rights.</b-form-radio>
+                            <b-form-radio v-model="selected[2]" value="1">A. Do not mention patent rights.</b-form-radio>
+                            <b-form-radio v-model="selected[2]" value="2">B. Grant patent rights explicitly.</b-form-radio>
+                            <b-form-radio v-model="selected[2]" value="3">C. Do not grant patent rights.</b-form-radio>
 						</div>
 					</div>
 					<div id="license_question4" class="terms_question_area" style="display:none;">
@@ -76,8 +76,8 @@
 							
 						</p></div>
 						<div class="radio-area">
-                            <b-form-radio v-model="selected[3]" value="1">A、Include anti-patent litigation clause.</b-form-radio>
-                            <b-form-radio v-model="selected[3]" value="2">B、Do not Include anti-patent litigation clause.</b-form-radio>
+                            <b-form-radio v-model="selected[3]" value="1">A. Include anti-patent litigation clause.</b-form-radio>
+                            <b-form-radio v-model="selected[3]" value="2">B. Do not include anti-patent litigation clause.</b-form-radio>
 						</div>
 					</div>
 					<div id="license_question5" class="terms_question_area" style="display:none;">
@@ -97,8 +97,8 @@
 							 You may also specify restrictions on trademark rights by attaching terms, signing other agreements, etc.
 						</p></div>
 						<div class="radio-area">
-                            <b-form-radio v-model="selected[4]" value="1">A、Do not mention trademark rights.</b-form-radio>
-                            <b-form-radio v-model="selected[4]" value="2">B、Do not grant trademark rights.</b-form-radio>
+                            <b-form-radio v-model="selected[4]" value="1">A. Do not mention trademark rights.</b-form-radio>
+                            <b-form-radio v-model="selected[4]" value="2">B. Do not grant trademark rights.</b-form-radio>
 						</div>
 					</div>
 					<div id="license_question6" class="terms_question_area" style="display:none;">
@@ -112,8 +112,8 @@
 									in the cloud also requires open source of the code.
 								</p></div>
 						<div class="radio-area">
-                            <b-form-radio v-model="selected[5]" value="1">A、Providing online services to others requires open source code.</b-form-radio>
-                            <b-form-radio v-model="selected[5]" value="2">B、Providing online services to others does not require open source code.</b-form-radio>
+                            <b-form-radio v-model="selected[5]" value="1">A. Users need to open source the code.</b-form-radio>
+                            <b-form-radio v-model="selected[5]" value="2">B. Users do not need to open source the code.</b-form-radio>
 						</div>
 					</div>
 					<div id="license_question7" class="terms_question_area" style="display:none;">
@@ -126,8 +126,8 @@
 							however, users may inadvertently cause license violations; and the existence of this clause will affect the compatibility of open source licenses.
 						</p></div>
 						<div class="radio-area">
-                            <b-form-radio v-model="selected[6]" value="A">A、Yes.</b-form-radio>
-                            <b-form-radio v-model="selected[6]" value="B">B、No.</b-form-radio>
+                            <b-form-radio v-model="selected[6]" value="A">A. Yes.</b-form-radio>
+                            <b-form-radio v-model="selected[6]" value="B">B. No.</b-form-radio>
 						</div>
 					</div>
 				<div style="display: inline-block">
