@@ -9,6 +9,7 @@ from django.db.models import Q
 from cube.models import (
     Usage,
 )
+from cube.utils.validators import validate_spdx_expression
 
 
 class UsageConditionMixin(models.Model):
@@ -115,7 +116,9 @@ class UsageDecision(UsageConditionMixin, models.Model):
         help_text="The exact expression which must be changed",
     )
     expression_out = models.CharField(
-        max_length=500, help_text="The expression which will replace `expression_in`"
+        max_length=500,
+        help_text="The expression which will replace `expression_in`",
+        validators=[validate_spdx_expression],
     )
 
     explanation = models.TextField(max_length=500, blank=True, null=True)
