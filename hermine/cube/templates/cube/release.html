@@ -154,7 +154,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
   <h4 class="title is-4">Step 3 - Confirm ANDs</h4>
-{% if to_confirm %}
+  {% if to_confirm %}
     <article class="message is-warning">
       <div class="message-header">
         <p>Some ANDs in licence expressions need to be confirmed</p>
@@ -165,7 +165,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </article>
 
-  <h5 class="title is-5">ANDs to confirm</h5>
+    <h5 class="title is-5">ANDs to confirm</h5>
 
     <table class="table">
       <thead>
@@ -195,7 +195,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
-{% else %}
+  {% else %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
@@ -204,56 +204,12 @@ SPDX-License-Identifier: AGPL-3.0-only
         <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the ANDs present in SPDX expressions have been confirmed or corrected.
       </div>
     </article>
-{% endif %}
-{% if confirmed %}
-<h5 class="title is-5">ANDs confirmed</h5>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Component</th>
-          <th>Version</th>
-          <th>Confirmed license expression</th>
-          <th>Edit version</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for version in confirmed %}
-          <tr>
-            <td><a href="/component/{{version.component.id}}" target="_blank">{{version.component.name }}</a> </td>
-            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank">{{version.version_number }}</a></td>
-            <td>{{version.corrected_license}}</td>
-            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-{% endif %}
-{% if corrected %}
-<h5 class="title is-5">ANDs corrected</h5>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Component</th>
-          <th>Version</th>
-          <th>License expression</th>
-          <th>License corrected</th>
-          <th>Edit version</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for version in corrected %}
-          <tr>
-            <td><a href="/component/{{version.component.id}}" target="_blank">{{version.component.name }}</a> </td>
-            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank">{{version.version_number }}</a></td>
-            <td>{{version.spdx_valid_license_expr }} </td>
-            <td>{{version.corrected_license}}</td>
-            <td><a href="/admin/cube/version/{{version.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-   {% endif %}
+  {% endif %}
 
+  {% if corrected or confirmed %}
+    <p>List <a href="{% url "cube:release_expression_validations" object.id %}">{{ corrected|length }} corrections and
+      {{ confirmed|length }} confirmations</a> for this release.</p>
+  {% endif %}
 
   <h4 class="title is-4">Step 4 - Resolve license choices for this release</h4>
 

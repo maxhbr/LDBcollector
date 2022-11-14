@@ -1,0 +1,70 @@
+<!--
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{% extends "cube/cube.html" %}
+
+{% block title %}{{ release.product.name }} {{ release.release_number }}{% endblock %}
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
+  <li><a href="{% url "cube:release_summary" release.id %}">{{ release.release_number }}</a></li>
+  <li><a href="{% url "cube:release_validation" release.id %}">Validation</a></li>
+  <li>Expression validations</li>
+</ul>
+{% endblock %}
+{% block herozone %}
+<div class="hero-body">
+  <p class="title">{{ release.product.name }} {{ release.release_number }}</p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+{% if confirmed_usages %}
+<h5 class="title is-5">ANDs confirmed</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Confirmed license expression</th>
+          <th>Edit version</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for usage in confirmed_usages %}
+          <tr>
+            <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a> </td>
+            <td>{{ usage.version.corrected_license }}</td>
+            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+{% endif %}
+{% if corrected_usages %}
+<h5 class="title is-5">ANDs corrected</h5>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>License expression</th>
+        <th>License corrected</th>
+        <th>Edit version</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for usage in corrected_usages %}
+        <tr>
+          <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a> </td>
+          <td>{{ usage.version.spdx_valid_license_expr }} </td>
+          <td>{{ usage.version.corrected_license}}</td>
+          <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+ {% endif %}
+
+{% endblock %}

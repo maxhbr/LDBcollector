@@ -10,7 +10,7 @@ from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views import generic
 from django.views.decorators.http import require_POST
-from django.views.generic import UpdateView, ListView, CreateView
+from django.views.generic import UpdateView, ListView, CreateView, TemplateView
 
 from cube.forms.release_validation import (
     CreateLicenseCurationForm,
@@ -132,6 +132,24 @@ class UpdateLicenseCurationView(UpdateView):
 class ReleaseExpressionValidationCreateView(AbstractCreateUsageConditionView):
     model = ExpressionValidation
     form_class = CreateExpressionValidationForm
+
+
+class ReleaseExpressionValidationList(TemplateView):
+    template_name = "cube/release_expression_validations.html"
+    release = None
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        self.release = get_object_or_404(Release, id=self.kwargs["id"])
+        context["release"] = self.release
+        usages = self.release.usage_set.all().exclude(version__corrected_license="")
+        context["confirmed_usages"] = usages.filter(
+            version__corrected_license=F("version__spdx_valid_license_expr")
+        )
+        context["corrected_usages"] = usages.exclude(
+            version__corrected_license=F("version__spdx_valid_license_expr")
+        )
+        return context
 
 
 @method_decorator(require_POST, "dispatch")
