@@ -79,6 +79,9 @@ class AbstractCreateUsageConditionView(LoginRequiredMixin, CreateView):
         return reverse("cube:release_validation", kwargs={"pk": self.usage.release.id})
 
 
+# Step 1
+
+
 class ReleaseLicenseCurationCreateView(AbstractCreateUsageConditionView):
     model = LicenseCuration
     form_class = CreateLicenseCurationForm
@@ -123,6 +126,14 @@ class UpdateLicenseCurationView(UpdateView):
         return reverse("cube:release_", kwargs={"pk": self.object.release.pk})
 
 
+# Step 3
+
+
+class ReleaseExpressionValidationCreateView(AbstractCreateUsageConditionView):
+    model = ExpressionValidation
+    form_class = CreateExpressionValidationForm
+
+
 @method_decorator(require_POST, "dispatch")
 class UpdateLicenseChoiceView(UpdateView):
     model = Usage
@@ -138,11 +149,6 @@ class UpdateLicenseChoiceView(UpdateView):
 
     def get_success_url(self):
         return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
-
-
-class ReleaseExpressionValidationCreateView(AbstractCreateUsageConditionView):
-    model = ExpressionValidation
-    form_class = CreateExpressionValidationForm
 
 
 class ReleaseLicenseChoiceCreateView(AbstractCreateUsageConditionView):
