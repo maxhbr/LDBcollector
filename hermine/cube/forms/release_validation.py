@@ -19,7 +19,10 @@ class BaseComponentDecisionForm(forms.ModelForm):
         ("", "All components"),
     )
 
-    component_version = forms.ChoiceField(choices=COMPONENT_VERSION_CHOICES)
+    component_version = forms.ChoiceField(
+        choices=COMPONENT_VERSION_CHOICES,
+        help_text="Rule will only apply to selected components",
+    )
 
     def __init__(self, *args, **kwargs):
         self.usage = kwargs.pop("usage")
@@ -47,6 +50,12 @@ class BaseComponentDecisionForm(forms.ModelForm):
 
 
 class CreateLicenseCurationForm(BaseComponentDecisionForm):
+    expression_out = forms.CharField(
+        label="Valid SPDX expression",
+        help_text='Must use license identifiers from <a href="https://spdx.org/licenses/">SPDX License List</a> '
+        "or <em>LicenseRef-[ref]</em> to refer other licenses.",
+    )
+
     def save(self, **kwargs):
         if self.usage:
             self.instance.expression_in = self.usage.version.declared_license_expr
