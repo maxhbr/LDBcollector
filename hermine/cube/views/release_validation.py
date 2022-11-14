@@ -88,7 +88,7 @@ class ReleaseLicenseCurationCreateView(AbstractCreateUsageConditionView):
     template_name_suffix = "_create"
 
 
-class ReleaseCuratedLicensesList(ListView):
+class ReleaseCuratedLicensesListView(ListView):
     template_name = "cube/release_curated_licenses.html"
     release = None
     context_object_name = "usages"
@@ -134,7 +134,7 @@ class ReleaseExpressionValidationCreateView(AbstractCreateUsageConditionView):
     form_class = CreateExpressionValidationForm
 
 
-class ReleaseExpressionValidationList(TemplateView):
+class ReleaseExpressionValidationListView(TemplateView):
     template_name = "cube/release_expression_validations.html"
     release = None
 
