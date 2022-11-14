@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="license_question1" class="terms_question_area">
+        			<div id="license_question1" class="terms_question_area">
 						<div><p class="question-font">Do you support "redistribution of derivative works under other licenses"?</p></div>
 						<div>
 							<p class="instruction-font">Note:
@@ -130,12 +130,13 @@
                             <b-form-radio v-model="selected[6]" value="B">B、No.</b-form-radio>
 						</div>
 					</div>
-					<p></p>
+				<div style="display: inline-block">
 				<b-button variant="success" @click="previous_q" id="previous-button">Previous question</b-button>
                 <b-button variant="success" @click="next_q" id="next-button">Next question</b-button>
                 <b-button variant="success" @click="skip_q" id="skip-button" style="display: none">Skip</b-button>
                 <b-button variant="outline-primary" @click="submit_q" id="upload-button">Submit</b-button>
 				<p id="hint">If you are not concerned about this, you can <b style="color:red">skip this question</b> by clicking on "Next question".</p>
+				</div>
     </div>
 </template>
 
@@ -172,6 +173,8 @@ export default {
 
 				if (this.number == 2 && (this.selected[0] == '1' || this.selected[0] == '3' || this.selected[0] == '')) {
 					this.number--;
+					$('#next-button').show();
+					$('#previous-button').hide();
 				}
                 var previous = '#' + 'license_question' + String(this.number);
                 $(cur).hide();
@@ -239,7 +242,7 @@ export default {
 
 <style>
 .terms_question_area{
-    height:375px;
+    height:400px;
     border-top: 0;
 	text-align: left;
 }
