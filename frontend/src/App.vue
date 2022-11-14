@@ -35,10 +35,10 @@
     <div id="app-footer" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
       <hr class="my-4" />
       © Copyright 2022
-      <b-link href="https://github.com/osslab-pku" target="_blank">OSS Lab</b-link>, Peking University. All rights reserved.<br />
+      <b-link href="https://osslab-pku.github.io/" target="_blank">OSS Lab</b-link>, Peking University. All rights reserved.<br />
       Maintained by
       <b-link href="https://zhcxww.github.io/" target="_blank">Weiwei Xu</b-link>.<br />
-      The content of this site, all source code and data available are under the
+      The content of this site, all source code and data available are licensed under the
       <b-link href="https://spdx.org/licenses/MulanPSL-2.0.html" target="_blank"> Mulan PSL v2</b-link>.
     </div>
 
