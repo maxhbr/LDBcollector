@@ -51,10 +51,10 @@ val publicDomainLicenses = getLicensesForCategory("public-domain")
  *          policy rules for new (offinding) categories, if any.
  */
 val handledLicenses = listOf(
-    permissiveLicenses,
-    publicDomainLicenses,
     copyleftLicenses,
-    copyleftLimitedLicenses
+    copyleftLimitedLicenses,
+    permissiveLicenses,
+    publicDomainLicenses
 ).flatten().let {
     it.getDuplicates().let { duplicates ->
         require(duplicates.isEmpty()) {
