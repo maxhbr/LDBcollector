@@ -1355,11 +1355,12 @@ fun RuleSet.commonRules() {
     unhandledLicenseRule()
     unmappedDeclaredLicenseRule()
 
+    // Rules applicable to the `.ort.yml` file:
     deprecatedScopeExludeInOrtYmlRule()
-
     packageConfigurationInOrtYmlRule()
     packageCurationInOrtYmlRule()
 
+    // Rules for dependencies:
     vulnerabilityInPackageRule()
     vulnerabilityWithHighSeverityInPackageRule()
 
@@ -1376,13 +1377,16 @@ fun RuleSet.commonRules() {
 }
 
 fun RuleSet.ossProjectRules() {
+    // Rules for project sources:
     unapprovedOssProjectLicenseRule()
 }
 
 fun RuleSet.proprietaryProjectRules() {
+    // Rules for project sources:
     copyleftInSourceRule()
     copyleftLimitedInSourceRule()
-    // Define rules that get executed for each dependency of a project:
+
+    // Rules for dependencies:
     copyleftInDependencyRule()
     copyleftLimitedInDependencyRule()
 }
