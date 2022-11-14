@@ -129,6 +129,8 @@ fun getEnabledPolicyRules(): PolicyRules =
         else -> PolicyRules.PROPRIETARY_PROJECT
     }
 
+val enablePriorToOssRules = ortResult.hasLabel("enable-prior-to-oss-rules")
+
 /**
  * Return file path of package configuration in the ORT configuration repository for package [id].
  *
@@ -1365,15 +1367,17 @@ fun RuleSet.commonRules() {
     vulnerabilityWithHighSeverityInPackageRule()
 
     // Prior to open sourcing use case rules (which get executed once):
-    dependencyInProjectSourceRule()
-    missingCiConfigurationRule()
-    missingContributingFileRule()
-    missingGitignoreFileRule()
-    missingLicenseFileRule()
-    missingReadmeFileRule()
-    missingReadmeFileLicenseSectionRule()
-    missingTestsRule()
-    wrongLicenseInLicenseFileRule()
+    if (enablePriorToOssRules) {
+        dependencyInProjectSourceRule()
+        missingCiConfigurationRule()
+        missingContributingFileRule()
+        missingGitignoreFileRule()
+        missingLicenseFileRule()
+        missingReadmeFileRule()
+        missingReadmeFileLicenseSectionRule()
+        missingTestsRule()
+        wrongLicenseInLicenseFileRule()
+    }
 }
 
 fun RuleSet.ossProjectRules() {
