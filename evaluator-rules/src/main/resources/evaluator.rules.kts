@@ -997,7 +997,7 @@ fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
     )
 
 /**
- * Example policy rules
+ * Policy rules
  */
 
 fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY") {
