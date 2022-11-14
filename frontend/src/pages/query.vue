@@ -1,6 +1,6 @@
 <template>
     <div id="app" v-loading="loading">
-        <div id="main" style="height: auto">
+        <div id="main1" style="height: auto">
             <div>
                 <b-card class="query_card">
                     <b-jumbotron>
@@ -125,7 +125,7 @@ export default {
 
             var card_height = $('.card-body').css('height').substr(0, 3)
             var new_height = parseInt(card_height) + 100
-            // $('#main').css({ 'height': String(new_height+430)+'px' })
+            // $('#main1').css({ 'height': String(new_height+430)+'px' })
             this.loading = true;
             $('.header').css('margin-top', '20px')
             $('#result').show();
@@ -139,7 +139,7 @@ export default {
 </script>
 
 <style>
-#main {
+#main1 {
     height: 630px;
 }
 

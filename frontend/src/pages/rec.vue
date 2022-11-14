@@ -8,7 +8,7 @@
       </el-steps>
     </div>
 
-    <div id="main" class="main" style="height: auto">
+    <div id="main1" class="main1" style="height: auto">
       <el-row :gutter="20" style="margin-top: 20px; height: 600px">
         <el-col :span="16">
           <div class="file_box">
@@ -279,7 +279,7 @@ export default {
         }
       }
       this.table_data = temp_table;
-      this.$refs.compare_comp.term_compare();
+      this.$refs.compare_comp.term_compare(this.table_data);
 
       this.step_active = 2;
       $('#compare').show();
@@ -636,7 +636,7 @@ export default {
   color: rgb(21, 24, 26);
 }
 
-.main {
+.main1 {
   position: relative;
   margin-top: 5%;
   left: 13%;

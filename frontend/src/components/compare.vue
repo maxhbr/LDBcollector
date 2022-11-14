@@ -132,13 +132,14 @@ export default {
     },
 
     mounted() {
-        this.term_compare();
     },
 
     methods: {
-        term_compare() {
+        term_compare(val) {
+            console.log(this.licenses);
+            console.log(val);
             var temp = [];
-            for (const license of this.licenses) {
+            for (const license of val) {
                 temp.push(license.name);
             }
 
