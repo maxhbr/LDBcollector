@@ -262,6 +262,8 @@ SPDX-License-Identifier: AGPL-3.0-only
     <p>List <a href="{% url "cube:release_license_choices" object.id %}">{{ resolved|length }} license choices</a>
       for this release.</p>
   {% endif %}
+
+
   <h4 class="title is-4">Step 5 - Check licenses against policy</h4>
 
   {% if usages_lic_unknown %}
@@ -270,7 +272,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Some components use unreviewed licenses</p>
       </div>
       <div class="message-body">
-        The following <strong>N</strong> components out <strong>P</strong> use a non-reviewed license. Please review those
+        {{ usages_lic_unknown|length }} components use a non-reviewed license.
       </div>
     </article>
 
@@ -278,34 +280,24 @@ SPDX-License-Identifier: AGPL-3.0-only
       <thead>
         <tr>
           <th>Component</th>
-          <th>Version</th>
-          <th>License declared</th>
-          <th>License validated</th>
-          <th>License usage</th>
           <th>Applicable Licenses</th>
-          <th>Scope</th>
-          <th>Edit</th>
+          <th>Edit usage</th>
         </tr>
       </thead>
       <tbody>
         {% for usage in usages_lic_unknown %}
           <tr>
-            <td>{{ usage.version.component.name }} </td>
-            <td>{{ usage.version.version_number }}</td>
-            <td>{{ usage.version.declared_license }}</td>
-            <td>{{ usage.version.spdx_valid_license_expr }} </td>
-            <td>{{ usage.license_expression }} </td>
+            <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
-                <a href="/license/{{license_chosen.id}}">
+                <a href="{% url "cube:license_edit" license_chosen.id %}">
                   <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
                 </a>
               {% endfor %}
             </td>
-            <td>{{ usage.scope }}</td>
-            <td><a href="/admin/cube/usage/{{ usage.id }}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td><a href="{% url "admin:cube_usage_change" usage.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -315,10 +307,10 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% if usages_lic_never_allowed %}
     <article class="message is-danger">
       <div class="message-header">
-        <p>Some components use forbiden licenses</p>
+        <p>Some components use forbidden licenses</p>
       </div>
       <div class="message-body">
-        The following <strong>{{usages_lic_never_allowed|length}}</strong> components use licenses that are forbidden by your policy:
+        {{ usages_lic_never_allowed|length }} components use licenses that are forbidden by your policy
       </div>
     </article>
 
@@ -326,17 +318,14 @@ SPDX-License-Identifier: AGPL-3.0-only
       <thead>
         <tr>
           <th>Component</th>
-          <th>Applicable expression</th>
           <th>Applicable Licenses</th>
-          <th>Scope</th>
           <th>Edit usage</th>
         </tr>
       </thead>
       <tbody>
         {% for usage in usages_lic_never_allowed %}
           <tr>
-            <td>{{ usage.version }} </td>
-            <td>{{ usage.license_expression }}</td>
+            <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
@@ -347,7 +336,6 @@ SPDX-License-Identifier: AGPL-3.0-only
                 </a>
               {% endfor %}
             </td>
-            <td>{{ usage.scope }}</td>
             <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
@@ -362,7 +350,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Some components use context conditioned licenses</p>
       </div>
       <div class="message-body">
-        The following <strong>{{usages_lic_context_allowed|length}}</strong> components are under a license, the validity of which depends on the context: please check them
+        {{ usages_lic_context_allowed|length }} components are under a license which is allowed depending on context
       </div>
     </article>
 
@@ -370,28 +358,24 @@ SPDX-License-Identifier: AGPL-3.0-only
       <thead>
         <tr>
           <th>Component</th>
-          <th>Applicable expression</th>
           <th>Applicable Licenses</th>
-          <th>Scope</th>
           <th>Edit usage</th>
         </tr>
       </thead>
       <tbody>
         {% for usage in usages_lic_context_allowed %}
           <tr>
-            <td>{{ usage.version }} </td>
-            <td>{{ usage.license_expression }}</td>
+            <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
                   <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
-                  <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>
                 </a>
+                <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation</a>
               {% endfor %}
             </td>
-            <td>{{ usage.scope }}</td>
             <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
@@ -399,8 +383,6 @@ SPDX-License-Identifier: AGPL-3.0-only
     </table>
 
   {% endif %}
-
-
 
   {% if not usages_lic_context_allowed and not usages_lic_never_allowed and not usages_lic_unknown %}
     <article class="message is-success">
@@ -445,15 +427,14 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ derogation.justification|default:"No justification given"|truncatewords:13 }}...
             </td>
             <td>
-              <a href="/admin/cube/derogation/{{derogation.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-              <a href="/admin/cube/derogation/{{derogation.id}}/delete/" target="_blank"><span class="icon"><i class="fas fa-trash"></i></span></a>
+              <a href="{% url "admin:cube_derogation_change" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+              <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
             </td>
           </tr>
         {% endfor %}
       </tbody>
     </table>
   {% endif %}
-
 
 {% endblock %}
 
