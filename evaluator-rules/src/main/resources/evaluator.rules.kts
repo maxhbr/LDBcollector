@@ -1024,7 +1024,6 @@ fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY"
 
 fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED_IN_DEPENDENCY") {
     require {
-        +isAtTreeLevel(0)
         +isStaticallyLinked()
         -isExcluded()
     }
@@ -1038,8 +1037,8 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
         // Use issue() instead of error() if you want to set the severity.
         issue(
             Severity.WARNING,
-            "The project ${project.id.toCoordinates()} has a statically linked direct dependency licensed " +
-                    "under the ScanCode 'copyleft-limited' categorized license $license.",
+            "The project ${project.id.toCoordinates()} has a statically linked dependency licensed under the "
+                    + "ScanCode 'copyleft-limited' categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
         )
     }
