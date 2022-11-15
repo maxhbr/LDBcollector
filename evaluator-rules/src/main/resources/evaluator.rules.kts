@@ -1004,6 +1004,7 @@ fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
 
 fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY") {
     require {
+        -isProject()
         -isExcluded()
     }
 
@@ -1015,8 +1016,8 @@ fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY"
 
         issue(
             Severity.ERROR,
-            "The project ${project.id.toCoordinates()} has a dependency licensed under the ScanCode " +
-                    "'copyleft' categorized license $license.",
+            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'copyleft' categorized " +
+                    "license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
         )
     }
@@ -1037,7 +1038,7 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
         // Use issue() instead of error() if you want to set the severity.
         issue(
             Severity.WARNING,
-            "The project ${project.id.toCoordinates()} has a statically linked dependency licensed under the "
+            "The dependency ${pkg.metadata.id.toCoordinates()} is statically linked and licensed under the "
                     + "ScanCode 'copyleft-limited' categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
         )
