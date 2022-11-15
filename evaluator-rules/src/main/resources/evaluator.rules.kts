@@ -41,6 +41,7 @@ fun getLicensesForCategory(category: String): Set<SpdxSingleLicenseExpression> =
 
 val copyleftLicenses = getLicensesForCategory("copyleft")
 val copyleftLimitedLicenses = getLicensesForCategory("copyleft-limited")
+val freeRestrictedLicenses = getLicensesForCategory("free-restricted")
 val permissiveLicenses = getLicensesForCategory("permissive")
 val proprietaryFreeLicenses = getLicensesForCategory("proprietary-free")
 val publicDomainLicenses = getLicensesForCategory("public-domain")
@@ -988,6 +989,13 @@ fun PackageRule.LicenseRule.isException() =
             }
     }
 
+fun PackageRule.LicenseRule.isFreeRestricted() =
+    object : RuleMatcher {
+        override val description = "isFreeRestricted($license)"
+
+        override fun matches() = license in freeRestrictedLicenses
+    }
+
 fun PackageRule.LicenseRule.isProprietaryFree() =
     object : RuleMatcher {
         override val description = "isProprietaryFree($license)"
@@ -1140,6 +1148,27 @@ fun RuleSet.deprecatedScopeExludeInOrtYmlRule() = ortResultRule("DEPRECATED_SCOP
             "Please use only non-deprecated scope exclude reasons, see " +
                     "https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/" +
                     "kotlin/config/ScopeExcludeReason.kt."
+        )
+    }
+}
+
+fun RuleSet.freeRestrictedInDependencyRule() = packageRule("FREE_RESTRICTED_IN_DEPENDENCY") {
+    require {
+        -isProject()
+        -isExcluded()
+    }
+
+    licenseRule("FREE_RESTRICTED_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+        require {
+            +isFreeRestricted()
+            -isExcluded()
+        }
+
+        issue(
+            Severity.ERROR,
+            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'free-restricted' " +
+                    "categorized license $license. This requires approval.",
+            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
         )
     }
 }
@@ -1419,6 +1448,7 @@ fun RuleSet.proprietaryProjectRules() {
     // Rules for dependencies:
     copyleftInDependencyRule()
     copyleftLimitedInDependencyRule()
+    freeRestrictedInDependencyRule()
     proprietaryFreeInDependencyRule()
 }
 
