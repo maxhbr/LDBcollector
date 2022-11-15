@@ -1044,7 +1044,6 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
             -isExcluded()
         }
 
-        // Use issue() instead of error() if you want to set the severity.
         issue(
             Severity.WARNING,
             "The dependency ${pkg.metadata.id.toCoordinates()} is statically linked and licensed under the "
@@ -1324,12 +1323,10 @@ fun RuleSet.unapprovedOssProjectLicenseRule() = packageRule("UNAPPROVED_OSS_PROJ
 }
 
 fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
-    // Do not trigger this rule on packages that have been excluded in the .ort.yml.
     require {
         -isExcluded()
     }
 
-    // Define a rule that is executed for each license of the package.
     licenseRule("UNHANDLED_LICENSE", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
         require {
             -isExcluded()
@@ -1337,7 +1334,6 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
             -isException()
         }
 
-        // Throw an error message including guidance how to fix the issue.
         error(
             "The license $license is currently not covered by policy rules. " +
                     "The license was ${licenseSource.name.lowercase()} in package " +
