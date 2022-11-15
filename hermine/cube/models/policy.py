@@ -240,7 +240,15 @@ class LicenseCuration(ComponentDecisionMixin, UsageDecision):
 
 class DerogationManager(UsageConditionManager):
     def for_usage(self, usage: Usage):
-        return super().for_usage(usage).filter(Q(linking=usage.linking) | Q(linking=""))
+        return (
+            super()
+            .for_usage(usage)
+            .filter(
+                Q(linking=usage.linking) | Q(linking=""),
+                Q(modification=usage.component_modified) | Q(modification=""),
+                Q(exploitation=usage.exploitation) | Q(exploitation=""),
+            )
+        )
 
 
 class Derogation(UsageConditionMixin, models.Model):
@@ -254,6 +262,12 @@ class Derogation(UsageConditionMixin, models.Model):
         "License", on_delete=models.CASCADE, related_name="derogations"
     )
     linking = models.CharField(max_length=20, choices=Usage.LINKING_CHOICES, blank=True)
+    modification = models.CharField(
+        max_length=20, choices=Usage.MODIFICATION_CHOICES, blank=True
+    )
+    exploitation = models.CharField(
+        max_length=50, choices=Usage.EXPLOITATION_CHOICES, blank=True
+    )
     justification = models.TextField(max_length=500, blank=True)
 
     @property

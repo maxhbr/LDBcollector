@@ -165,23 +165,43 @@ class CreateLicenseChoiceForm(BaseUsageConditionForm):
 
 
 class CreateDerogationForm(BaseUsageConditionForm):
-    USAGE_LINKING = "usage"
+    USAGE = "usage"
     LINKING_CHOICES = ((BaseUsageConditionForm.ANY, "Apply to any linking"),)
+    MODIFICATION_CHOICES = (
+        (BaseUsageConditionForm.ANY, "Apply to any component modification"),
+    )
+    EXPLOITATION_CHOICES = ((BaseUsageConditionForm.ANY, "Apply to any exploitation"),)
 
     linking_choice = forms.ChoiceField(choices=LINKING_CHOICES)
+    modification_choice = forms.ChoiceField(choices=MODIFICATION_CHOICES)
+    exploitation_choice = forms.ChoiceField(choices=EXPLOITATION_CHOICES)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Change labels of fields depending on usage linking
         if self.usage.linking:
             self.fields["linking_choice"].choices = (
-                (self.USAGE_LINKING, f"Only {self.usage.get_linking_display()}"),
+                (self.USAGE, f"Only {self.usage.get_linking_display()}"),
                 (self.ANY, "Any linking"),
+            )
+        if self.usage.component_modified:
+            self.fields["modification_choice"].choices = (
+                (self.USAGE, f"Only {self.usage.get_component_modified_display()}"),
+                (self.ANY, "Any modification"),
+            )
+        if self.usage.exploitation:
+            self.fields["exploitation_choice"].choices = (
+                (self.USAGE, f"Only {self.usage.get_exploitation_display()}"),
+                (self.ANY, "Any exploitation"),
             )
 
     def save(self, **kwargs):
-        if self.cleaned_data["linking_choice"] == self.USAGE_LINKING:
+        if self.cleaned_data["linking_choice"] == self.USAGE:
             self.instance.linking = self.usage.linking
+        if self.cleaned_data["modification_choice"] == self.USAGE:
+            self.instance.modification = self.usage.component_modified
+        if self.cleaned_data["exploitation_choice"] == self.USAGE:
+            self.instance.exploitation = self.usage.exploitation
 
         return super().save(**kwargs)
 
@@ -189,8 +209,10 @@ class CreateDerogationForm(BaseUsageConditionForm):
         model = Derogation
         fields = (
             "product_release",
+            "scope_choice",
             "component_version",
             "linking_choice",
-            "scope_choice",
+            "modification_choice",
+            "exploitation_choice",
             "justification",
         )

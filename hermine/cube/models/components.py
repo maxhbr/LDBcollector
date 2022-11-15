@@ -80,7 +80,9 @@ class Usage(models.Model):
         default=MODIFICATION_UNMODIFIED,
     )
     exploitation = models.CharField(
-        max_length=50, choices=EXPLOITATION_CHOICES, default=EXPLOITATION_CHOICES[0][0]
+        max_length=50,
+        choices=EXPLOITATION_CHOICES,
+        default=EXPLOITATION_DISTRIBUTION_BOTH,
     )
     description = models.TextField(max_length=500, blank=True)
     licenses_chosen = models.ManyToManyField("License", blank=True)
