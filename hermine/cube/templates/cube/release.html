@@ -279,6 +279,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
+          <th>Scope</th>
           <th>Component</th>
           <th>Applicable Licenses</th>
           <th>Edit usage</th>
@@ -287,6 +288,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for usage in usages_lic_unknown %}
           <tr>
+            <td>Scope</td>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
@@ -317,6 +319,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
+          <th>Scope</th>
           <th>Component</th>
           <th>Applicable Licenses</th>
           <th>Edit usage</th>
@@ -325,6 +328,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for usage in usages_lic_never_allowed %}
           <tr>
+            <td>{{ usage.scope }}</td>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
@@ -357,6 +361,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <table class="table">
       <thead>
         <tr>
+          <th>Scope</th>
           <th>Component</th>
           <th>Applicable Licenses</th>
           <th>Edit usage</th>
@@ -365,6 +370,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for usage in usages_lic_context_allowed %}
           <tr>
+            <td>{{ usage.scope }}</td>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}

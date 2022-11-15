@@ -28,7 +28,6 @@ SPDX-License-Identifier: AGPL-3.0-only
     <tr>
       <th>Scope</th>
       <th>Component</th>
-      <th>Version</th>
       <th>License expression</th>
       <th>Choice for this release</th>
       <th>Rules</th>
@@ -38,9 +37,8 @@ SPDX-License-Identifier: AGPL-3.0-only
   <tbody>
     {% for usage in usages %}
       <tr>
-        <td>{{ usage.scope }} </td>
-        <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{usage.version }}</a> </td>
-        <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{usage.version.version_number }}</a></td>
+        <td>{{ usage.scope }}</td>
+        <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a> </td>
         <td>{{usage.version.effective_license}}</td>
         <td>{{usage.license_expression }} </td>
         <td>
