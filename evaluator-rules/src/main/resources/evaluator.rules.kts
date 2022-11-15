@@ -1081,7 +1081,7 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
         }
 
         issue(
-            Severity.WARNING,
+            Severity.ERROR,
             "The dependency ${pkg.metadata.id.toCoordinates()} is statically linked and licensed under the "
                     + "ScanCode 'copyleft-limited' categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
