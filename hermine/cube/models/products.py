@@ -93,7 +93,7 @@ class Exploitation(models.Model):
     exploitation = models.CharField(
         max_length=50,
         choices=Usage.EXPLOITATION_CHOICES,
-        default=Usage.EXPLOITATION_CHOICES[0][0],
+        default=Usage.EXPLOITATION_DISTRIBUTION_BOTH,
     )
 
     def __str__(self):
