@@ -1039,7 +1039,7 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
         issue(
             Severity.WARNING,
             "The project ${project.id.toCoordinates()} has a statically linked direct dependency licensed " +
-                    "under the ScanCode copyleft-left categorized license $license.",
+                    "under the ScanCode copyleft-limited categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
         )
     }
