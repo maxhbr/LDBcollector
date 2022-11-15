@@ -255,8 +255,7 @@ fun PackageRule.howToFixDefault() = """
 
 fun PackageRule.howToFixLicenseViolationDefault(
     license: String,
-    licenseSource: LicenseSource,
-    @Suppress("UNUSED_PARAMETER") severity: Severity
+    licenseSource: LicenseSource
 ): String {
     if (ortResult.isProject(pkg.metadata.id)) {
         // Violation is flagged for the project scanned.
@@ -281,8 +280,7 @@ fun PackageRule.howToFixLicenseViolationDefault(
 
 fun PackageRule.howToFixUnhandledLicense(
     license: String,
-    licenseSource: LicenseSource,
-    @Suppress("UNUSED_PARAMETER") severity: Severity
+    licenseSource: LicenseSource
 ) : String {
     val createIssueText = """
         |1. If an issue to add this license does not already exist in $orgScanIssueTrackerMdLink, please create it.
@@ -339,10 +337,7 @@ fun PackageRule.howToFixOssProjectDefault() = """
         which may link to additional resources.
     """.trimIndent()
 
-fun PackageRule.howToFixUnmappedDeclaredLicense(
-    license: String,
-    @Suppress("UNUSED_PARAMETER") severity: Severity
-): String {
+fun PackageRule.howToFixUnmappedDeclaredLicense(license: String): String {
     val genericDeclaredLicenses = setOf(
         "BSD License",
         "The BSD License"
@@ -1035,7 +1030,7 @@ fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY"
             Severity.ERROR,
             "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'copyleft' categorized " +
                     "license $license.",
-            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
 }
@@ -1056,7 +1051,7 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
             Severity.WARNING,
             "The dependency ${pkg.metadata.id.toCoordinates()} is statically linked and licensed under the "
                     + "ScanCode 'copyleft-limited' categorized license $license.",
-            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
 }
@@ -1083,7 +1078,7 @@ fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
 
         error(
             message,
-            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.ERROR)
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
 }
@@ -1111,7 +1106,7 @@ fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOU
 
         error(
             message,
-            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.ERROR)
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
 }
@@ -1168,7 +1163,7 @@ fun RuleSet.freeRestrictedInDependencyRule() = packageRule("FREE_RESTRICTED_IN_D
             Severity.ERROR,
             "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'free-restricted' " +
                     "categorized license $license. This requires approval.",
-            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
 }
@@ -1295,7 +1290,7 @@ fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN
             Severity.ERROR,
             "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'proprietary-free' " +
                     "categorized license $license. This requires approval.",
-            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
 }
@@ -1367,7 +1362,7 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
             "The license $license is currently not covered by policy rules. " +
                     "The license was ${licenseSource.name.lowercase()} in package " +
                     "${pkg.metadata.id.toCoordinates()}",
-            howToFixUnhandledLicense(license.toString(), licenseSource, Severity.ERROR)
+            howToFixUnhandledLicense(license.toString(), licenseSource)
         )
     }
 }
@@ -1381,7 +1376,7 @@ fun RuleSet.unmappedDeclaredLicenseRule() = packageRule("UNMAPPED_DECLARED_LICEN
         warning(
             "The declared license '$unmappedLicense' could not be mapped to a valid license or parsed as an SPDX " +
                     "expression. The license was found in package ${pkg.metadata.id.toCoordinates()}.",
-            howToFixUnmappedDeclaredLicense(unmappedLicense, Severity.WARNING)
+            howToFixUnmappedDeclaredLicense(unmappedLicense)
         )
     }
 }
