@@ -42,6 +42,7 @@ fun getLicensesForCategory(category: String): Set<SpdxSingleLicenseExpression> =
 val copyleftLicenses = getLicensesForCategory("copyleft")
 val copyleftLimitedLicenses = getLicensesForCategory("copyleft-limited")
 val permissiveLicenses = getLicensesForCategory("permissive")
+val proprietaryFreeLicenses = getLicensesForCategory("proprietary-free")
 val publicDomainLicenses = getLicensesForCategory("public-domain")
 
 /**
@@ -54,6 +55,7 @@ val handledLicenses = listOf(
     copyleftLicenses,
     copyleftLimitedLicenses,
     permissiveLicenses,
+    proprietaryFreeLicenses,
     publicDomainLicenses
 ).flatten().let {
     it.getDuplicates().let { duplicates ->
@@ -986,6 +988,13 @@ fun PackageRule.LicenseRule.isException() =
             }
     }
 
+fun PackageRule.LicenseRule.isProprietaryFree() =
+    object : RuleMatcher {
+        override val description = "isProprietaryFree($license)"
+
+        override fun matches() = license in proprietaryFreeLicenses
+    }
+
 fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
     NoneOf(
         isType("Bundler"),
@@ -1242,6 +1251,27 @@ fun RuleSet.packageCurationInOrtYmlRule() = ortResultRule("PACKAGE_CURATION_IN_O
     }
 }
 
+fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN_DEPENDENCY") {
+    require {
+        -isProject()
+        -isExcluded()
+    }
+
+    licenseRule("PROPRIETARY_FREE_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+        require {
+            +isProprietaryFree()
+            -isExcluded()
+        }
+
+        issue(
+            Severity.ERROR,
+            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'proprietary-free' " +
+                    "categorized license $license. This requires approval.",
+            howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
+        )
+    }
+}
+
 fun RuleSet.vulnerabilityInPackageRule() = packageRule("VULNERABILITY_IN_PACKAGE") {
     require {
         -isExcluded()
@@ -1393,6 +1423,7 @@ fun RuleSet.proprietaryProjectRules() {
     // Rules for dependencies:
     copyleftInDependencyRule()
     copyleftLimitedInDependencyRule()
+    proprietaryFreeInDependencyRule()
 }
 
 val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
