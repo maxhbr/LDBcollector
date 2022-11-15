@@ -3,6 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import unittest
 
+from django.core.exceptions import ValidationError
 from django.test import TestCase
 
 from cube.models import (
@@ -20,6 +21,7 @@ from cube.utils.licenses import (
     is_ambiguous,
     explode_spdx_to_units,
 )
+from cube.utils.validators import validate_spdx_expression
 
 
 class ObligationsTestCase(TestCase):
@@ -93,6 +95,15 @@ class SPDXToolsTestCase(TestCase):
         self.assertTrue(is_ambiguous("MIT AND BSD"))
         self.assertFalse(is_ambiguous("MIT OR (BSD AND GPL-3.0-or-later)"))
         self.assertFalse(is_ambiguous("MIT OR(BSD AND GPL-3.0-or-later)"))
+
+    def test_validate_spdx_license(self):
+        with self.assertRaises(ValidationError):
+            validate_spdx_expression("foo")
+        validate_spdx_expression("LicenseRef-FakeLicense-1.0")
+        validate_spdx_expression("GPL-3.0-or-later")
+
+        with self.assertRaises(ValidationError):
+            validate_spdx_expression("LicenseRef-FakeLicense-1.0 OR Foo")
 
 
 class ExplodeSPDXTestCase(TestCase):

@@ -159,8 +159,13 @@ urlpatterns = [
     ),
     path(
         "release/<int:id>/validation/fixed_licenses/",
-        views.ReleaseFixedLicensesList.as_view(),
-        name="release_normalized_usages",
+        views.ReleaseCuratedLicensesListView.as_view(),
+        name="release_curated_licenses",
+    ),
+    path(
+        "usage/<int:pk>/update_license_curation/",
+        views.UpdateLicenseCurationView.as_view(),
+        name="release_update_license_curation",
     ),
     path(
         "usage/<int:usage_pk>/add_expression_validation/",
@@ -168,9 +173,24 @@ urlpatterns = [
         name="release_expressionvalidation_create",
     ),
     path(
+        "release/<int:id>/validation/expression_validations/",
+        views.ReleaseExpressionValidationListView.as_view(),
+        name="release_expression_validations",
+    ),
+    path(
+        "usage/<int:pk>/update_expression_validation/",
+        views.UpdateExpressionValidationView.as_view(),
+        name="release_update_expression_validation",
+    ),
+    path(
         "usage/<int:usage_pk>/add_license_choice/",
         views.ReleaseLicenseChoiceCreateView.as_view(),
         name="release_licensechoice_create",
+    ),
+    path(
+        "release/<int:id>/validation/license_choices/",
+        views.ReleaseLicenseChoiceListView.as_view(),
+        name="release_license_choices",
     ),
     path(
         "release/update_license_choice/<int:pk>/",

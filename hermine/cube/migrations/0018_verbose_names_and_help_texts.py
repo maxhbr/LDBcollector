@@ -3,6 +3,8 @@
 from django.db import migrations, models
 import django.db.models.deletion
 
+import cube.utils.validators
+
 
 class Migration(migrations.Migration):
 
@@ -265,6 +267,7 @@ class Migration(migrations.Migration):
             field=models.CharField(
                 help_text="The expression which will replace `expression_in`",
                 max_length=500,
+                validators=[cube.utils.validators.validate_spdx_expression],
             ),
         ),
         migrations.AlterField(

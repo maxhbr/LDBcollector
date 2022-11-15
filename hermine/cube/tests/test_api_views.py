@@ -233,7 +233,7 @@ class APICRUDTests(APITestCase):
             "product": 1,
             "component": 1,
             "expression_in": "testlicense1 OR testlicense2",
-            "expression_out": "testlicense1",
+            "expression_out": "LicenseRef-testlicense1",
         }
 
         r = self.client.post(url, data)

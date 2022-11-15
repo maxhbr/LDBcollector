@@ -5,8 +5,10 @@
 from django import forms
 
 from cube.models import LicenseCuration, ExpressionValidation, LicenseChoice, Derogation
+from cube.utils.licenses import explode_spdx_to_units
 
-## Component only steps (curations and expression validation)
+
+# Component only steps (curations and expression validation)
 
 
 class BaseComponentDecisionForm(forms.ModelForm):
@@ -19,7 +21,11 @@ class BaseComponentDecisionForm(forms.ModelForm):
         ("", "All components"),
     )
 
-    component_version = forms.ChoiceField(choices=COMPONENT_VERSION_CHOICES)
+    component_version = forms.ChoiceField(
+        label="Components or versions",
+        choices=COMPONENT_VERSION_CHOICES,
+        help_text="Rule will only apply to selected components",
+    )
 
     def __init__(self, *args, **kwargs):
         self.usage = kwargs.pop("usage")
@@ -47,6 +53,12 @@ class BaseComponentDecisionForm(forms.ModelForm):
 
 
 class CreateLicenseCurationForm(BaseComponentDecisionForm):
+    expression_out = forms.CharField(
+        label="Valid SPDX expression",
+        help_text='Must use license identifiers from <a href="https://spdx.org/licenses/">SPDX License List</a> '
+        "or <em>LicenseRef-[ref]</em> to refer other licenses.",
+    )
+
     def save(self, **kwargs):
         if self.usage:
             self.instance.expression_in = self.usage.version.declared_license_expr
@@ -57,6 +69,22 @@ class CreateLicenseCurationForm(BaseComponentDecisionForm):
 
 
 class CreateExpressionValidationForm(BaseComponentDecisionForm):
+    expression_out = forms.CharField(
+        label="Corrected SPDX expression",
+        help_text="Must be same expression if correct, or another expression if some ANDs are actually ORs",
+        widget=forms.TextInput(attrs={"size": 80}),
+    )
+
+    def clean(self):
+        if explode_spdx_to_units(
+            self.cleaned_data["expression_out"]
+        ) == explode_spdx_to_units(self.usage.version.spdx_valid_license_expr):
+            return
+
+        self.add_error(
+            "expression_out", "Expressions must use the same list of SPDX identifiers"
+        )
+
     def save(self, **kwargs):
         self.instance.expression_in = self.usage.version.spdx_valid_license_expr
         return super().save(**kwargs)
@@ -65,7 +93,7 @@ class CreateExpressionValidationForm(BaseComponentDecisionForm):
         model = ExpressionValidation
 
 
-### Usage steps
+# Usage steps (choices and derogations)
 
 
 class BaseUsageConditionForm(BaseComponentDecisionForm):
@@ -80,8 +108,14 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
     USAGE_SCOPE = "usage"
     SCOPE_CHOICES = ((USAGE_SCOPE, "This usage scope"), (ANY, "Any scope"))
 
-    product_release = forms.ChoiceField(choices=PRODUCT_RELEASE_CHOICES)
-    scope_choice = forms.ChoiceField(choices=SCOPE_CHOICES)
+    product_release = forms.ChoiceField(
+        label="Products or releases",
+        choices=PRODUCT_RELEASE_CHOICES,
+        help_text="Rule will only apply to selected products",
+    )
+    scope_choice = forms.ChoiceField(
+        label="Rule will only apply to selected scope", choices=SCOPE_CHOICES
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -109,6 +143,12 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
 
 
 class CreateLicenseChoiceForm(BaseUsageConditionForm):
+    expression_out = forms.CharField(
+        label="Final SPDX expression",
+        help_text="The final expression of the license chosen for this usage",
+        widget=forms.TextInput(attrs={"size": 80}),
+    )
+
     def save(self, **kwargs):
         self.instance.expression_in = self.usage.version.effective_license
         return super().save(**kwargs)
