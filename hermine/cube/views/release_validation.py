@@ -123,7 +123,9 @@ class UpdateLicenseCurationView(UpdateView):
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
+        return reverse(
+            "cube:release_curated_licenses", kwargs={"id": self.object.release.pk}
+        )
 
 
 # Step 3
@@ -166,7 +168,9 @@ class UpdateExpressionValidationView(UpdateView):
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
+        return reverse(
+            "cube:release_expression_validations", kwargs={"id": self.object.release.pk}
+        )
 
 
 # Step 4
@@ -206,7 +210,9 @@ class UpdateLicenseChoiceView(UpdateView):
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
+        return reverse(
+            "cube:release_license_choices", kwargs={"id": self.object.release.pk}
+        )
 
 
 class ReleaseDerogationCreateView(
