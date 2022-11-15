@@ -183,6 +183,11 @@ urlpatterns = [
         name="release_licensechoice_create",
     ),
     path(
+        "release/<int:id>/validation/license_choices/",
+        views.ReleaseLicenseChoiceListView.as_view(),
+        name="release_license_choices",
+    ),
+    path(
         "release/update_license_choice/<int:pk>/",
         views.UpdateLicenseChoiceView.as_view(),
         name="release_update_license_choice",

@@ -8,7 +8,7 @@ from cube.models import LicenseCuration, ExpressionValidation, LicenseChoice, De
 from cube.utils.licenses import explode_spdx_to_units
 
 
-## Component only steps (curations and expression validation)
+# Component only steps (curations and expression validation)
 
 
 class BaseComponentDecisionForm(forms.ModelForm):
@@ -22,6 +22,7 @@ class BaseComponentDecisionForm(forms.ModelForm):
     )
 
     component_version = forms.ChoiceField(
+        label="Components or versions",
         choices=COMPONENT_VERSION_CHOICES,
         help_text="Rule will only apply to selected components",
     )
@@ -92,7 +93,7 @@ class CreateExpressionValidationForm(BaseComponentDecisionForm):
         model = ExpressionValidation
 
 
-### Usage steps
+# Usage steps (choices and derogations)
 
 
 class BaseUsageConditionForm(BaseComponentDecisionForm):
@@ -107,8 +108,14 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
     USAGE_SCOPE = "usage"
     SCOPE_CHOICES = ((USAGE_SCOPE, "This usage scope"), (ANY, "Any scope"))
 
-    product_release = forms.ChoiceField(choices=PRODUCT_RELEASE_CHOICES)
-    scope_choice = forms.ChoiceField(choices=SCOPE_CHOICES)
+    product_release = forms.ChoiceField(
+        label="Products or releases",
+        choices=PRODUCT_RELEASE_CHOICES,
+        help_text="Rule will only apply to selected products",
+    )
+    scope_choice = forms.ChoiceField(
+        label="Rule will only apply to selected scope", choices=SCOPE_CHOICES
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -136,6 +143,12 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
 
 
 class CreateLicenseChoiceForm(BaseUsageConditionForm):
+    expression_out = forms.CharField(
+        label="Final SPDX expression",
+        help_text="The final expression of the license chosen for this usage",
+        widget=forms.TextInput(attrs={"size": 80}),
+    )
+
     def save(self, **kwargs):
         self.instance.expression_in = self.usage.version.effective_license
         return super().save(**kwargs)

@@ -26,7 +26,7 @@ from cube.models import (
     LicenseChoice,
     Derogation,
 )
-from cube.utils.releases import update_validation_step
+from cube.utils.releases import update_validation_step, propagate_choices
 from cube.views import LicenseRelatedMixin
 
 
@@ -152,6 +152,29 @@ class ReleaseExpressionValidationListView(TemplateView):
         return context
 
 
+# Step 4
+
+
+class ReleaseLicenseChoiceCreateView(AbstractCreateUsageConditionView):
+    model = LicenseChoice
+    form_class = CreateLicenseChoiceForm
+
+
+class ReleaseLicenseChoiceListView(ListView):
+    template_name = "cube/release_choices.html"
+    release = None
+    context_object_name = "usages"
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context["release"] = self.release
+        return context
+
+    def get_queryset(self):
+        self.release = get_object_or_404(Release, pk=self.kwargs["id"])
+        return propagate_choices(self.release)["resolved"]
+
+
 @method_decorator(require_POST, "dispatch")
 class UpdateLicenseChoiceView(UpdateView):
     model = Usage
@@ -167,11 +190,6 @@ class UpdateLicenseChoiceView(UpdateView):
 
     def get_success_url(self):
         return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
-
-
-class ReleaseLicenseChoiceCreateView(AbstractCreateUsageConditionView):
-    model = LicenseChoice
-    form_class = CreateLicenseChoiceForm
 
 
 class ReleaseDerogationCreateView(

@@ -228,7 +228,6 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tr>
           <th>Scope</th>
           <th>Component</th>
-          <th>Version</th>
           <th>License expression</th>
           <th>Add choice</th>
           <th>Edit usage</th>
@@ -237,10 +236,9 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for usage in to_resolve %}
           <tr>
-            <td>{{usage.scope }} </td>
-            <td><a href="{%  url "cube:component_detail" usage.version.component.id %}" target="_blank">{{usage.version.component.name }}</a> </td>
-            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{usage.version.version_number }}</a></td>
-            <td>{{usage.version.effective_license }} </td>
+            <td>{{ usage.scope }}</td>
+            <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a> </td>
+            <td>{{ usage.version.effective_license }}</td>
             <td>
               <a href="{% url 'cube:release_licensechoice_create' usage.id %}">Add choice rule</a>
             </td>
@@ -249,63 +247,20 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
-
   {% else %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
       </div>
       <div class="message-body">
-        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All license choices have been decided for this release.
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All license choices have been made for this release.
       </div>
     </article>
 
   {% endif %}
   {% if resolved %}
-<h5 class="title is-5">License choices for this release</h5>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Scope</th>
-          <th>Component</th>
-          <th>Version</th>
-          <th>License expression</th>
-          <th>Choice for this release</th>
-          <th>Rules</th>
-          <th>Edit usage</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for usage in resolved %}
-          <tr>
-            <td>{{usage.scope}} </td>
-            <td><a href="{%  url "cube:component_detail" usage.version.component.id %}" target="_blank">{{usage.version.component.name }}</a> </td>
-            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{usage.version.version_number }}</a></td>
-            <td>{{usage.version.effective_license}}</td>
-            <td>{{usage.license_expression }} </td>
-            <td>
-              {% if usage.license_choices|length == 1 %}
-                <a href="{% url "admin:cube_licensechoice_change"  usage.license_choices.0.pk %}">Edit rule</a>
-                {% if usage.license_choices.0.expression_out != usage.license_expression %}
-                  <br><small>Choice does not match rule
-                  <form action="{% url "cube:release_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
-                    {% csrf_token %}
-                    <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
-                {% endif %}
-              {% else %}
-                {{ usage.license_choices|length }} rules apply. Edit rule
-                {% for choice in usage.license_choices %}
-                  <a href="{% url "admin:cube_licensechoice_change" choice.pk %}">
-                    {{ choice.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
-                {% endfor %}
-              {% endif %}
-            </td>
-            <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <p>List <a href="{% url "cube:release_license_choices" object.id %}">{{ resolved|length }} license choices</a>
+      for this release.</p>
   {% endif %}
   <h4 class="title is-4">Step 5 - Check licenses against policy</h4>
 
