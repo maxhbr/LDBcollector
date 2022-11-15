@@ -13,7 +13,7 @@ from cube.views.mixins import LicenseRelatedMixin
 
 class DerogationUpdateView(LoginRequiredMixin, UpdateView):
     model = Derogation
-    fields = ("linking", "scope")
+    fields = ("scope", "linking", "modification", "exploitation", "justification")
 
     def get_context_data(self, **kwargs):
         return super().get_context_data(license=self.object.license, **kwargs)
@@ -24,7 +24,7 @@ class DerogationUpdateView(LoginRequiredMixin, UpdateView):
 
 class DerogationCreateView(LoginRequiredMixin, LicenseRelatedMixin, CreateView):
     model = Derogation
-    fields = ("linking", "scope")
+    fields = ("scope", "linking", "modification", "exploitation", "justification")
 
     def get_success_url(self):
         return reverse("cube:license", args=[self.object.license.id])
@@ -33,7 +33,6 @@ class DerogationCreateView(LoginRequiredMixin, LicenseRelatedMixin, CreateView):
 class DerogationListView(LoginRequiredMixin, ListView):
     model = Derogation
     context_object_name = "derogations"
-    template_name = "cube/derogation_list.html"
     queryset = Derogation.objects.exclude(
         component__isnull=True,
         version__isnull=True,

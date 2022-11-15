@@ -192,21 +192,25 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% if license.context_derogations %}
           <table>
             <tr>
-              <th>Linking</th>
               <th>Scope</th>
+              <th>Linking</th>
+              <th>Modification</th>
+              <th>Exploitation</th>
               <th>Justification</th>
               <th>Action</th>
             </tr>
             {% for derogation in license.context_derogations %}
               <tr>
-                <td>{% if derogation.linking %}{{ derogation.get_linking_display }}{% else %}<em>any</em>{% endif %}</td>
-                <td>{% if derogation.scope %}{{ derogation.scope }}{% else %}<em>any</em>{% endif %}</td>
+                <td>{{ derogation.scope|default:"Any" }}</td>
+                <td>{{ derogation.get_linking_display|default:"Any" }}</td>
+                <td>{{ derogation.get_modification_display|default:"Any" }}</td>
+                <td>{{ derogation.get_exploitation_display|default:"Any" }}</td>
                 <td>
                   {{ derogation.justification|default:"No justification given"|truncatewords:13 }}...
                 </td>
                 <td>
-                  <a href="{% url "cube:derogation_edit" derogation.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-                  <a href="/admin/cube/derogation/{{derogation.id}}/delete/" target="_blank"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                  <a href="{% url "cube:derogation_edit" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+                  <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
                 </td>
               </tr>
             {% endfor %}

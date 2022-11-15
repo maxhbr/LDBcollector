@@ -30,6 +30,8 @@ Derogations
         <th>Component / Version</th>
         <th>Scope</th>
         <th>Linking</th>
+        <th>Modification</th>
+        <th>Exploitation</th>
         <th>Justification</th>
       </tr>
     </thead>
@@ -43,6 +45,8 @@ Derogations
         <td> {{ derogation.component|default:"" }} {{ derogation.version|default:"" }} </td>
         <td> {{ derogation.scope|default:"Any" }} </td>
         <td> {{ derogation.get_linking_display|default:"Any" }} </td>
+        <td>{{ derogation.get_modification_display|default:"Any" }}</td>
+        <td>{{ derogation.get_exploitation_display|default:"Any" }}</td>
         <td> {{ derogation.justification|default:"No Justification given" }} </td>
   {% endfor %}
   </tbody>
