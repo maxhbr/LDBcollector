@@ -22,7 +22,7 @@ from spdx.parsers import (
 )
 from spdx.parsers.loggers import StandardLogger
 
-from cube.models import Component, Version, Usage
+from cube.models import Component, Version, Usage, Exploitation
 
 logger = logging.getLogger(__name__)
 
@@ -121,22 +121,36 @@ def import_ort_evaluated_model_json_file(
                 project_id = path.get("project")
                 scope_name = scopes[scope_id]["name"]
                 project_name = packages[project_id]["id"]
+                try:
+                    exploitation = Exploitation.objects.get(
+                        release=release_idk, project=project_name, scope=scope_name
+                    ).exploitation
+                except Exploitation.DoesNotExist:
+                    exploitation = ""
                 Usage.objects.get_or_create(
                     version_id=version.id,
                     release_id=release_idk,
                     scope=scope_name,
                     project=project_name,
                     linking=linking,
+                    exploitation=exploitation,
                 )
         else:
             scope_name = DEFAULT_SCOPE
             project_name = DEFAULT_PROJECT
+            try:
+                exploitation = Exploitation.objects.get(
+                    release=release_idk, project=project_name, scope=scope_name
+                ).exploitation
+            except Exploitation.DoesNotExist:
+                exploitation = ""
             Usage.objects.get_or_create(
                 version_id=version.id,
                 release_id=release_idk,
                 scope=scope_name,
                 project=project_name,
                 linking=linking,
+                exploitation=exploitation,
             )
 
 
@@ -183,6 +197,12 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
             },
         )
         version_id = vers.id
+        try:
+            exploitation = Exploitation.objects.get(
+                release=release_id, project=current_project, scope=current_scope
+            ).exploitation
+        except Exploitation.DoesNotExist:
+            exploitation = ""
         Usage.objects.get_or_create(
             version_id=version_id,
             release_id=release_id,
