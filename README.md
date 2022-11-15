@@ -1,6 +1,6 @@
 # LicenseRec
 
-The tool is available at [licenserec.com](http://licenserec.com/).
+The tool is available at [licenserec.com](licenserec.com/).
 
 Environment: Ubantu20.04, Python3.8, Java1.8, Node.js v18.10.0
 ## Backend
