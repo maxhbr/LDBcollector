@@ -178,6 +178,11 @@ urlpatterns = [
         name="release_expression_validations",
     ),
     path(
+        "usage/<int:pk>/update_expression_validation/",
+        views.UpdateExpressionValidationView.as_view(),
+        name="release_update_expression_validation",
+    ),
+    path(
         "usage/<int:usage_pk>/add_license_choice/",
         views.ReleaseLicenseChoiceCreateView.as_view(),
         name="release_licensechoice_create",

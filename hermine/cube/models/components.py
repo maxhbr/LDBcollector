@@ -95,6 +95,12 @@ class Usage(models.Model):
         return LicenseCuration.objects.for_usage(self)
 
     @property
+    def expression_validations(self):
+        from cube.models.policy import ExpressionValidation
+
+        return ExpressionValidation.objects.for_usage(self)
+
+    @property
     def license_choices(self):
         from cube.models.policy import LicenseChoice
 

@@ -123,7 +123,7 @@ class UpdateLicenseCurationView(UpdateView):
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        return reverse("cube:release_", kwargs={"pk": self.object.release.pk})
+        return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
 
 
 # Step 3
@@ -150,6 +150,23 @@ class ReleaseExpressionValidationListView(TemplateView):
             version__corrected_license=F("version__spdx_valid_license_expr")
         )
         return context
+
+
+@method_decorator(require_POST, "dispatch")
+class UpdateExpressionValidationView(UpdateView):
+    model = Usage
+    fields = []
+
+    def form_valid(self, form):
+        self.object.version.corrected_license = ""
+        self.object.version.save()
+        return HttpResponseRedirect(self.get_success_url())
+
+    def form_invalid(self, form):
+        return HttpResponseRedirect(self.get_success_url())
+
+    def get_success_url(self):
+        return reverse("cube:release_validation", kwargs={"pk": self.object.release.pk})
 
 
 # Step 4

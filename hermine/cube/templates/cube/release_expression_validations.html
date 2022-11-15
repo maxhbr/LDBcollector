@@ -29,6 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tr>
           <th>Component</th>
           <th>Confirmed license expression</th>
+          <th>Expression validation</th>
           <th>Edit version</th>
         </tr>
       </thead>
@@ -37,6 +38,23 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a> </td>
             <td>{{ usage.version.corrected_license }}</td>
+            <td>
+              {% if usage.expression_validations|length == 1 %}
+                <a href="{% url "admin:cube_expressionvalidation_change"  usage.expression_validations.0.pk %}">Edit rule</a>
+                {% if usage.expression_validations.0.expression_out != usage.version.corrected_license %}
+                  <br><small>Expression does not match curation
+                  <form action="{% url "cube:release_update_expression_validation" usage.pk %}" method="POST" class="form is-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
+                {% endif %}
+              {% elif usage.expression_validations|length > 1 %}
+                {{ usage.expression_validations|length }} curations apply. Edit curations
+                {% for curation in usage.expression_validations %}
+                  <a href="{% url "admin:cube_expressionvalidation_change" choice.pk %}">
+                    {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
+                {% endfor %}
+              {% endif %}
+            </td>
             <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
@@ -51,6 +69,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <th>Component</th>
         <th>License expression</th>
         <th>License corrected</th>
+        <th>Expression validation</th>
         <th>Edit version</th>
       </tr>
     </thead>
@@ -60,6 +79,23 @@ SPDX-License-Identifier: AGPL-3.0-only
           <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a> </td>
           <td>{{ usage.version.spdx_valid_license_expr }} </td>
           <td>{{ usage.version.corrected_license}}</td>
+          <td>
+            {% if usage.expression_validations|length == 1 %}
+              <a href="{% url "admin:cube_expressionvalidation_change"  usage.expression_validations.0.pk %}">Edit rule</a>
+              {% if usage.expression_validations.0.expression_out != usage.version.corrected_license %}
+                <br><small>Expression does not match curation
+                <form action="{% url "cube:release_update_expression_validation" usage.pk %}" method="POST" class="form is-inline">
+                  {% csrf_token %}
+                  <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
+              {% endif %}
+            {% elif usage.expression_validations|length > 1 %}
+              {{ usage.expression_validations|length }} curations apply. Edit curations
+              {% for curation in usage.expression_validations %}
+                <a href="{% url "admin:cube_expressionvalidation_change" choice.pk %}">
+                  {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
+              {% endfor %}
+            {% endif %}
+          </td>
           <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
         </tr>
       {% endfor %}
