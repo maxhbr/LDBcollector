@@ -107,7 +107,7 @@
         <el-col :span="24">
           <div style="margin-top: 20px; text-align: left; ">
             <div id="question-icons">
-              <i class="el-icon-error" ></i><span>: There is a compatibility conflict between the licenses of upstream and downstream files that have a dependent relationship.</span>
+              <i class="el-icon-error" ></i><span>: There is a compatibility conflict between the licenses of files that have a dependent relationship.</span>
               <i class="el-icon-success" ></i><span>: There is no conflict as described above. </span>
               <i class="el-icon-warning" ></i><span>: Do not support checking the compatibility of this license, please check manually.</span>
               <i class="circle" style="border-color: #1230da"></i><span>: Both secondarily compatible and combinatively compatible.</span>
