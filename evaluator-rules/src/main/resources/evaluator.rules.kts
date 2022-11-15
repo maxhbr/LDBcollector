@@ -1016,7 +1016,7 @@ fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY"
         issue(
             Severity.ERROR,
             "The project ${project.id.toCoordinates()} has a dependency licensed under the ScanCode " +
-                    "copyleft categorized license $license.",
+                    "'copyleft' categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
         )
     }
@@ -1039,7 +1039,7 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
         issue(
             Severity.WARNING,
             "The project ${project.id.toCoordinates()} has a statically linked direct dependency licensed " +
-                    "under the ScanCode copyleft-limited categorized license $license.",
+                    "under the ScanCode 'copyleft-limited' categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource, Severity.WARNING)
         )
     }
@@ -1058,11 +1058,11 @@ fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
         }
 
         val message = if (licenseSource == LicenseSource.DETECTED) {
-            "The ScanCode copyleft categorized license $license was ${licenseSource.name.lowercase()} " +
+            "The ScanCode 'copyleft' categorized license $license was ${licenseSource.name.lowercase()} " +
                     "in package ${pkg.metadata.id.toCoordinates()}."
         } else {
-            "The package ${pkg.metadata.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode copyleft " +
-                    "catalogized license $license."
+            "The package ${pkg.metadata.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode " +
+                    "'copyleft' catalogized license $license."
         }
 
         error(
@@ -1086,10 +1086,10 @@ fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOU
 
         val licenseSourceName = licenseSource.name.lowercase()
         val message = if (licenseSource == LicenseSource.DETECTED) {
-            "The ScanCode copyleft-limited categorized license $license was $licenseSourceName in package " +
+            "The ScanCode 'copyleft-limited' categorized license $license was $licenseSourceName in package " +
                     "${pkg.metadata.id.toCoordinates()}."
         } else {
-            "The package ${pkg.metadata.id.toCoordinates()} has the $licenseSourceName ScanCode copyleft-limited " +
+            "The package ${pkg.metadata.id.toCoordinates()} has the $licenseSourceName ScanCode 'copyleft-limited' " +
                     "categorized license $license."
         }
 
