@@ -1038,8 +1038,7 @@ fun RuleSet.commercialInDependencyRule() = packageRule("COMMERCIAL_IN_DEPENDENCY
             -isExcluded()
         }
 
-        issue(
-            Severity.ERROR,
+        error(
             "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'commercial' " +
                     "categorized license $license. This requires approval.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
@@ -1059,8 +1058,8 @@ fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY"
             -isExcluded()
         }
 
-        issue(
-            Severity.ERROR,
+
+        error(
             "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'copyleft' categorized " +
                     "license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
@@ -1080,8 +1079,7 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
             -isExcluded()
         }
 
-        issue(
-            Severity.ERROR,
+        error(
             "The dependency ${pkg.metadata.id.toCoordinates()} is statically linked and licensed under the "
                     + "ScanCode 'copyleft-limited' categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
@@ -1154,8 +1152,7 @@ fun RuleSet.dependencyInProjectSourceRule() = projectSourceRule("DEPENDENCY_IN_P
         val offendingDirs = projectSourceFindDirectories(pattern)
 
         if (offendingDirs.isNotEmpty()) {
-            issue(
-                Severity.ERROR,
+            error(
                 "The directories ${offendingDirs.joinToString()} belong to the package manager(s) " +
                         "${packageManagers.joinToString()} and must not be committed.",
                 "Please delete the directories: ${offendingDirs.joinToString()}."
@@ -1192,8 +1189,7 @@ fun RuleSet.freeRestrictedInDependencyRule() = packageRule("FREE_RESTRICTED_IN_D
             -isExcluded()
         }
 
-        issue(
-            Severity.ERROR,
+        error(
             "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'free-restricted' " +
                     "categorized license $license. This requires approval.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
@@ -1319,8 +1315,7 @@ fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN
             -isExcluded()
         }
 
-        issue(
-            Severity.ERROR,
+        error(
             "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'proprietary-free' " +
                     "categorized license $license. This requires approval.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
@@ -1335,8 +1330,7 @@ fun RuleSet.vulnerabilityInDependencyRule() = packageRule("VULNERABILITY_IN_DEPE
         +hasVulnerability()
     }
 
-    issue(
-        Severity.WARNING,
+    warning(
         "The package ${pkg.metadata.id.toCoordinates()} has a vulnerability",
         howToFixDefault()
     )
@@ -1354,8 +1348,7 @@ fun RuleSet.vulnerabilityWithHighSeverityInDependencyRule() = packageRule("HIGH_
         }
     }
 
-    issue(
-        Severity.ERROR,
+    error(
         "The package ${pkg.metadata.id.toCoordinates()} has a vulnerability with $scoringSystem severity > " +
                 "$maxAcceptedSeverity",
         howToFixDefault()
