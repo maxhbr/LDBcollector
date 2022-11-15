@@ -39,6 +39,7 @@ fun getLicensesForCategory(category: String): Set<SpdxSingleLicenseExpression> =
         "Failed to obtain the license for category '$category', because that category does not exist."
     }
 
+val commercialLicenses = getLicensesForCategory("commercial")
 val contributorLicenseAgreementLicenenses = getLicensesForCategory("contributor-license-agreement")
 val copyleftLicenses = getLicensesForCategory("copyleft")
 val copyleftLimitedLicenses = getLicensesForCategory("copyleft-limited")
@@ -54,6 +55,7 @@ val publicDomainLicenses = getLicensesForCategory("public-domain")
  *          policy rules for new (offinding) categories, if any.
  */
 val handledLicenses = listOf(
+    commercialLicenses,
     contributorLicenseAgreementLicenenses,
     copyleftLicenses,
     copyleftLimitedLicenses,
@@ -963,6 +965,13 @@ fun PackageRule.LicenseRule.isHandled() =
             license in handledLicenses && ("-exception" !in license.toString() || " WITH " in license.toString())
     }
 
+fun PackageRule.LicenseRule.isCommercial() =
+    object : RuleMatcher {
+        override val description = "isCommercial($license)"
+
+        override fun matches() = license in commercialLicenses
+    }
+
 fun PackageRule.LicenseRule.isCopyleft() =
     object : RuleMatcher {
         override val description = "isCopyleft($license)"
@@ -1016,6 +1025,27 @@ fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
 /**
  * Policy rules
  */
+
+fun RuleSet.commercialInDependencyRule() = packageRule("COMMERCIAL_IN_DEPENDENCY") {
+    require {
+        -isProject()
+        -isExcluded()
+    }
+
+    licenseRule("COMMERCIAL_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+        require {
+            +isCommercial()
+            -isExcluded()
+        }
+
+        issue(
+            Severity.ERROR,
+            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'commercial' " +
+                    "categorized license $license. This requires approval.",
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
+        )
+    }
+}
 
 fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY") {
     require {
@@ -1446,6 +1476,7 @@ fun RuleSet.proprietaryProjectRules() {
     copyleftLimitedInSourceRule()
 
     // Rules for dependencies:
+    commercialInDependencyRule()
     copyleftInDependencyRule()
     copyleftLimitedInDependencyRule()
     freeRestrictedInDependencyRule()
