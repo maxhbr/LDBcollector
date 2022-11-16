@@ -95,10 +95,13 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for usage in invalid_expressions %}
             <tr>
-              <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a>
-                  (<a href="{{usage.version.component.homepage_url}}" target="_blank">webiste <span class="icon is-small">
-                <i class="fas fa-link"></i>
-              </span></a>)
+              <td>
+                <a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a>
+              {% if usage.version.component.homepage_url %}
+                (<a href="{{usage.version.component.homepage_url}}" target="_blank">website <span class="icon is-small"><i class="fas fa-link"></i></span></a>)
+               {% else %}
+                (No website)
+               {% endif %}
               </td>
               <td>{{ usage.version.declared_license_expr }}</td>
               <td>
@@ -443,6 +446,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
 {% endblock %}
+
 
 
 
