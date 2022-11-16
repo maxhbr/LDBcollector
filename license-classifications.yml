@@ -14,6 +14,7 @@
 ---
 categories:
 - name: "commercial"
+- name: "contributor-license-agreement"
 - name: "copyleft"
 - name: "copyleft-limited"
 - name: "free-restricted"
@@ -2096,11 +2097,11 @@ categorizations:
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-cncf-corporate-cla-1.0"
   categories:
-  - "patent-license"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-cncf-individual-cla-1.0"
   categories:
-  - "patent-license"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-cockroach"
   categories:
@@ -2859,11 +2860,11 @@ categorizations:
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-google-cla"
   categories:
-  - "patent-license"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-google-corporate-cla"
   categories:
-  - "patent-license"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-google-maps-tos-2018-02-07"
   categories:
@@ -3487,7 +3488,7 @@ categorizations:
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-jetty-ccla-1.1"
   categories:
-  - "proprietary-free"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-jgraph"
   categories:
@@ -4079,7 +4080,7 @@ categorizations:
   - "include-source-code-offer-in-notice-file"
 - id: "LicenseRef-scancode-ms-cla"
   categories:
-  - "patent-license"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-ms-control-spy-2.0"
   categories:
@@ -4490,7 +4491,7 @@ categorizations:
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-newton-king-cla"
   categories:
-  - "unstated-license"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-nexb-eula-saas-1.1.0"
   categories:
@@ -4947,11 +4948,11 @@ categorizations:
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-owf-cla-1.0-copyright"
   categories:
-  - "permissive"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-owf-cla-1.0-copyright-patent"
   categories:
-  - "patent-license"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-owfa-1.0"
   categories:
@@ -5614,7 +5615,7 @@ categorizations:
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-square-cla"
   categories:
-  - "patent-license"
+  - "contributor-license-agreement"
   - "include-in-notice-file"
 - id: "LicenseRef-scancode-squeak"
   categories:
