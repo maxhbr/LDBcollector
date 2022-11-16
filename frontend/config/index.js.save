@@ -11,13 +11,13 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        
-        // target: 'http://localhost:1120',//要访问的后端接口
-        target: 'http://54.92.144.188:1120',//要访问的后端接口
+               // target: 'http://localhost:1120',//要访问的后端接口
+        target: 'http://127.0.0.1:1120',//要访问的后端接口
         changeOrigin: true,
         pathRewrite: {
         '^/api': '/'
-        
+        //这里的配置是正则表达式，以/api开头的将会被用用‘/api'替换掉，假如后台文档的接口是 /api/list/xxx
+        //前端api接口写：axios.get('/api/list/xxx') ， 被处理之后实际访问的是：http://news.baidu.com/api/list/xxx
         },
 
         }
@@ -25,7 +25,7 @@ module.exports = {
 
     // Various Dev Server settings
     host: '0.0.0.0', // can be overwritten by process.env.HOST
-    port: 80, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 1121, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
