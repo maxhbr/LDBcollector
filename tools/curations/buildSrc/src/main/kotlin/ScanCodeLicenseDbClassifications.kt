@@ -44,6 +44,19 @@ private val JSON_MAPPER = JsonMapper().apply {
     propertyNamingStrategy = PropertyNamingStrategies.SNAKE_CASE
 }
 
+private val CONTRIBUTOR_LICENSE_AGREEMENT_IDS = listOf(
+    "LicenseRef-scancode-cncf-corporate-cla-1.0",
+    "LicenseRef-scancode-cncf-individual-cla-1.0",
+    "LicenseRef-scancode-google-cla",
+    "LicenseRef-scancode-google-corporate-cla",
+    "LicenseRef-scancode-jetty-ccla-1.1",
+    "LicenseRef-scancode-ms-cla",
+    "LicenseRef-scancode-newton-king-cla",
+    "LicenseRef-scancode-owf-cla-1.0-copyright",
+    "LicenseRef-scancode-owf-cla-1.0-copyright-patent",
+    "LicenseRef-scancode-square-cla"
+).map { SpdxSingleLicenseExpression.parse(it) }.toSet()
+
 private data class License(
     val licenseKey: String,
     val spdxLicenseKey: String? = null,
@@ -137,6 +150,7 @@ private fun LicenseDetails.getCategories(): Set<String> {
     val mappedCategory = when {
         isUnknown -> "unknown"
         isGeneric -> "generic"
+        getLicenseId() in CONTRIBUTOR_LICENSE_AGREEMENT_IDS -> "contributor-license-agreement"
         else -> category.replace(' ', '-').toLowerCase()
     }
 
