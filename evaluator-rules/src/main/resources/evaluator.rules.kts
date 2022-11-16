@@ -47,6 +47,7 @@ val freeRestrictedLicenses = getLicensesForCategory("free-restricted")
 val permissiveLicenses = getLicensesForCategory("permissive")
 val proprietaryFreeLicenses = getLicensesForCategory("proprietary-free")
 val publicDomainLicenses = getLicensesForCategory("public-domain")
+val unstatedLicenses = getLicensesForCategory("unstated-license")
 
 /**
  * The complete set of licenses covered by policy rules.
@@ -62,7 +63,8 @@ val handledLicenses = listOf(
     freeRestrictedLicenses,
     permissiveLicenses,
     proprietaryFreeLicenses,
-    publicDomainLicenses
+    publicDomainLicenses,
+    unstatedLicenses
 ).flatten().let {
     it.getDuplicates().let { duplicates ->
         require(duplicates.isEmpty()) {
@@ -1010,6 +1012,13 @@ fun PackageRule.LicenseRule.isProprietaryFree() =
         override fun matches() = license in proprietaryFreeLicenses
     }
 
+fun PackageRule.LicenseRule.isUnstated() =
+    object : RuleMatcher {
+        override val description = "isUnstated($license)"
+
+        override fun matches() = license in unstatedLicenses
+    }
+
 fun PackageRule.packageManagerSupportsDeclaredLicenses(): RuleMatcher =
     NoneOf(
         isType("Bundler"),
@@ -1323,6 +1332,26 @@ fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN
     }
 }
 
+fun RuleSet.unstatedInDependencyRule() = packageRule("UNSTATED_IN_DEPENDENCY") {
+    require {
+        -isProject()
+        -isExcluded()
+    }
+
+    licenseRule("UNSTATED_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+        require {
+            +isUnstated()
+            -isExcluded()
+        }
+
+        error(
+            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'unstated-licenses' " +
+                    "categorized license $license. This requires approval.",
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
+        )
+    }
+}
+
 fun RuleSet.vulnerabilityInDependencyRule() = packageRule("VULNERABILITY_IN_DEPENDENCY") {
     require {
         -isProject()
@@ -1474,6 +1503,7 @@ fun RuleSet.proprietaryProjectRules() {
     copyleftLimitedInDependencyRule()
     freeRestrictedInDependencyRule()
     proprietaryFreeInDependencyRule()
+    unstatedInDependencyRule()
 }
 
 val ruleSet = ruleSet(ortResult, licenseInfoResolver, resolutionProvider) {
