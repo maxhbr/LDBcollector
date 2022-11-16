@@ -1296,7 +1296,7 @@ fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN
     }
 }
 
-fun RuleSet.vulnerabilityInPackageRule() = packageRule("VULNERABILITY_IN_PACKAGE") {
+fun RuleSet.vulnerabilityInDependencyRule() = packageRule("VULNERABILITY_IN_DEPENDENCY") {
     require {
         -isProject()
         -isExcluded()
@@ -1310,7 +1310,7 @@ fun RuleSet.vulnerabilityInPackageRule() = packageRule("VULNERABILITY_IN_PACKAGE
     )
 }
 
-fun RuleSet.vulnerabilityWithHighSeverityInPackageRule() = packageRule("HIGH_SEVERITY_VULNERABILITY_IN_PACKAGE") {
+fun RuleSet.vulnerabilityWithHighSeverityInDependencyRule() = packageRule("HIGH_SEVERITY_VULNERABILITY_IN_DEPENDENCY") {
     val maxAcceptedSeverity = "5.0"
     val scoringSystem = "CVSS2"
 
@@ -1416,8 +1416,8 @@ fun RuleSet.commonRules() {
     packageCurationInOrtYmlRule()
 
     // Rules for dependencies:
-    vulnerabilityInPackageRule()
-    vulnerabilityWithHighSeverityInPackageRule()
+    vulnerabilityInDependencyRule()
+    vulnerabilityWithHighSeverityInDependencyRule()
 
     // Prior to open sourcing use case rules (which get executed once):
     if (enablePriorToOssRules) {
