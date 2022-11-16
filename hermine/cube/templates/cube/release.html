@@ -366,6 +366,8 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tr>
           <th>Scope</th>
           <th>Component</th>
+          <th>Linking type</th>
+          <th>Modified</th>
           <th>Applicable Licenses</th>
           <th>Edit usage</th>
         </tr>
@@ -375,6 +377,8 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td>{{ usage.scope }}</td>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
+            <td>{{ usage.linking }}</td>
+            <td>{{ usage.component_modified }}</td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
                 <a href="{% url "cube:license" license_chosen.id %}">
