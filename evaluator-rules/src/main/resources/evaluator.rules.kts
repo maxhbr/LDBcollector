@@ -1298,6 +1298,7 @@ fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN
 
 fun RuleSet.vulnerabilityInPackageRule() = packageRule("VULNERABILITY_IN_PACKAGE") {
     require {
+        -isProject()
         -isExcluded()
         +hasVulnerability()
     }
@@ -1314,6 +1315,7 @@ fun RuleSet.vulnerabilityWithHighSeverityInPackageRule() = packageRule("HIGH_SEV
     val scoringSystem = "CVSS2"
 
     require {
+        -isProject()
         -isExcluded()
         +hasVulnerability(maxAcceptedSeverity, scoringSystem) { value, threshold ->
             value.toFloat() >= threshold.toFloat()
