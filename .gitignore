@@ -9,6 +9,7 @@ temp_files
 *.log
 projects.json
 data
+token
 
 # python ignores
 __pycache__/

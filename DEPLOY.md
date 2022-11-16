@@ -152,10 +152,15 @@ sudo systemctl enable mongodb
 
 ### 2.2 Backend
 
-Use `screen` or `nohup` to run the backend in the background.
+Use `screen` or `nohup` to run the backend in the background. 
+LicenseRec requires a Github token to clone repositories. You can create a Github token [here](https://github.com/settings/tokens) and supply it to the backend through the `GITHUB_TOKEN` environment variable or `app/token` file.
 
 ```bash
 screen -R reclic_backend
+# LicenseRec requires a Github token to clone repositories
+echo "YOUR_GITHUB_TOKEN" > ./backend/app/token
+# or:
+# export GITHUB_TOKEN=YOUR_GITHUB_TOKEN
 cd ./backend
 flask run --host=127.0.0.1 --port=5000
 (Ctrl+A+D to detach)
@@ -230,7 +235,12 @@ The LicenseRec Tool stores all the data in the MongoDB database and the `backend
 
 ### 1. Copy MongoDB Data
 
-Simplist way is to copy the whole MongoDB data directory.
+LicenseRec reuses the [libraries.io](https://libraries.io/) dataset to indentify the license of project dependencies. The dataset is stored in the `projects` collection in the MongoDB database. You can download the dataset from [here](https://drive.google.com/file/d/1os3KffCzM_psR5Fv3v5WKe0r397s4E1i/view?usp=sharing) and import it to the MongoDB database.
+
+**TODO**: google drive leaks the file owner's google account, thus the share is not suitable for double-blind review. Please upload the dataset to another place (e.g. figshare/zenodo) and update the link here.
+
+
+If another instance of LicenseRec is already running, just copy the whole MongoDB data directory will do the trick:
 
 ```bash
 sudo cp -r /var/lib/mongodb /path/to/your/data/dir/mongodb
