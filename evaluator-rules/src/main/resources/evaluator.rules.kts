@@ -44,10 +44,27 @@ val contributorLicenseAgreementLicenenses = getLicensesForCategory("contributor-
 val copyleftLicenses = getLicensesForCategory("copyleft")
 val copyleftLimitedLicenses = getLicensesForCategory("copyleft-limited")
 val freeRestrictedLicenses = getLicensesForCategory("free-restricted")
+val genericLicenses = getLicensesForCategory("generic")
 val permissiveLicenses = getLicensesForCategory("permissive")
 val proprietaryFreeLicenses = getLicensesForCategory("proprietary-free")
 val publicDomainLicenses = getLicensesForCategory("public-domain")
 val unstatedLicenses = getLicensesForCategory("unstated-license")
+
+// Set of licenses, which are not acted upon by the below policy rules.
+val ignoredLicenses = listOf(
+    // Contributor License agreement are not relevant for the "use" of open source.
+    "LicenseRef-scancode-generic-cla",
+    // Permissive licenses are not flagged anyway.
+    "LicenseRef-scancode-other-permissive",
+    // Public domain licenses are not flagged anyway.
+    "LicenseRef-scancode-public-domain",
+    // Disclaimers are not relevant because they have no obligations.
+    "LicenseRef-scancode-public-domain-disclaimer",
+    // Public domain licenses are not flagged anyway.
+    "LicenseRef-scancode-us-govt-public-domain",
+    // Disclaimers are not relevant because they have no obligations.
+    "LicenseRef-scancode-warranty-disclaimer"
+).map { SpdxSingleLicenseExpression.parse(it) }.toSet()
 
 /**
  * The complete set of licenses covered by policy rules.
@@ -61,6 +78,7 @@ val handledLicenses = listOf(
     copyleftLicenses,
     copyleftLimitedLicenses,
     freeRestrictedLicenses,
+    genericLicenses,
     permissiveLicenses,
     proprietaryFreeLicenses,
     publicDomainLicenses,
@@ -1005,6 +1023,20 @@ fun PackageRule.LicenseRule.isFreeRestricted() =
         override fun matches() = license in freeRestrictedLicenses
     }
 
+fun PackageRule.LicenseRule.isGeneric() =
+    object : RuleMatcher {
+        override val description = "isGeneric($license)"
+
+        override fun matches() = license in genericLicenses
+    }
+
+fun PackageRule.LicenseRule.isIgnored() =
+    object : RuleMatcher {
+        override val description = "isIgnored($license)"
+
+        override fun matches() = license in ignoredLicenses
+    }
+
 fun PackageRule.LicenseRule.isProprietaryFree() =
     object : RuleMatcher {
         override val description = "isProprietaryFree($license)"
@@ -1201,6 +1233,27 @@ fun RuleSet.freeRestrictedInDependencyRule() = packageRule("FREE_RESTRICTED_IN_D
         error(
             "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'free-restricted' " +
                     "categorized license $license. This requires approval.",
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
+        )
+    }
+}
+
+fun RuleSet.genericInDependencyRule() = packageRule("GENERIC_IN_DEPENDENCY") {
+    require {
+        -isProject()
+        -isExcluded()
+    }
+
+    licenseRule("GENERIC_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+        require {
+            +isGeneric()
+            -isIgnored()
+        }
+
+        error(
+            "The dependency ${pkg.metadata.id.toCoordinates()} might contain a license which is unknown to the " +
+                    " tooling. It was detected as $license which is just a trigger, but not a real license. Please " +
+                    "create a dedicated license identifier if the finding is valid.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
@@ -1502,6 +1555,7 @@ fun RuleSet.proprietaryProjectRules() {
     copyleftInDependencyRule()
     copyleftLimitedInDependencyRule()
     freeRestrictedInDependencyRule()
+    genericInDependencyRule()
     proprietaryFreeInDependencyRule()
     unstatedInDependencyRule()
 }
