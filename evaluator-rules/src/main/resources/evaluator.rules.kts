@@ -55,6 +55,7 @@ val publicDomainLicenses = getLicensesForCategory("public-domain")
 val handledLicenses = listOf(
     copyleftLicenses,
     copyleftLimitedLicenses,
+    freeRestrictedLicenses,
     permissiveLicenses,
     proprietaryFreeLicenses,
     publicDomainLicenses
