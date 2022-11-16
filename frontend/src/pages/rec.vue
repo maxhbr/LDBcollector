@@ -483,8 +483,8 @@ export default {
       }
       console.log(temp_depend);
       for (const license of this.check_res.confilct_depend_dict) {
-        temp_depend[license.src_license] += 'In conflict with ' + license.dest_file + ':' + license.dest_license + ';'
-        temp_depend[license.dest_license] += 'In conflict with ' + license.src_file + ':' + license.src_license + ';'
+        temp_depend[license.src_license] += 'Incompatibile with ' + license.dest_file + ':' + license.dest_license + ';'
+        temp_depend[license.dest_license] += 'Incompatibile with ' + license.src_file + ':' + license.src_license + ';'
       }
       console.log(temp_depend);
       this.depend_dict = temp_depend;

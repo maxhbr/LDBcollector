@@ -50,7 +50,7 @@
                             <el-row>
                                 <el-col :span="6" class="label"><span>The clauses which affect secondary compatibility.</span></el-col>
                                 <el-col :span="18">
-                                    <div class="msg_left" v-for="term in result.compatibility_terms">{{ term }}</div>
+                                    <div class="msg_left" v-for="term in result.compatibility_terms"><span>{{ term }}</span></div>
                                 </el-col>
                             </el-row>
 
