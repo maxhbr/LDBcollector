@@ -145,8 +145,6 @@ private fun LicenseDetails.getLicenseId(): SpdxSingleLicenseExpression {
 }
 
 private fun LicenseDetails.getCategories(): Set<String> {
-    // TODO: Check if the category "Unstated License" could additionally be used by below mapping to move
-    // license IDs which do not correspond to a "normal" license to separate categories.
     val mappedCategory = when {
         isUnknown -> "unknown"
         isGeneric -> "generic"
