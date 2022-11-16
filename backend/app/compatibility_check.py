@@ -5,7 +5,12 @@ import pandas as pd
 import tqdm
 from .parse_dependency import *
 import pymongo
-mongo_client = pymongo.MongoClient('mongodb://127.0.0.1:27017')
+
+MONGO_HOST = '127.0.0.1'  # docker container
+if "RECLIC_MONGO_PORT" in os.environ:
+    MONGO_HOST = 'mongodb'
+
+mongo_client = pymongo.MongoClient(f'mongodb://{MONGO_HOST}:27017/')
 mongo_db = mongo_client['libraries']
 mongo_collection = mongo_db['projects']
 

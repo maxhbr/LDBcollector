@@ -4,10 +4,17 @@ import datetime
 import random
 import json
 def download_git(OWNER,REPO):
-        with open("./app/token","r") as f:
-                token=f.readlines()
-                token=list(map(lambda e:e.strip(),token))
-                YOUR_TOKEN=token[random.randint(0,len(token)-1)]
+        if not os.path.exists('./app/token'):
+                # try to get token from environment variable
+                token = os.environ.get('GITHUB_TOKEN')
+                if token is None:
+                        raise Exception('No token found, please set GITHUB_TOKEN or create a token file')
+                YOUR_TOKEN = token
+        else:
+                with open("./app/token","r") as f:
+                        token=f.readlines()
+                        token=list(map(lambda e:e.strip(),token))
+                        YOUR_TOKEN=token[random.randint(0,len(token)-1)]
         filepath="./temp_files/"+ str( datetime.datetime.now())
         # print(YOUR_TOKEN)
         os.makedirs(filepath)

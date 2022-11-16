@@ -1,0 +1,60 @@
+version: "2.2"
+
+services:
+  mongodb:
+    image: mongo
+    volumes:
+      - ${RECLIC_DATA_DIR}/mongodb:/data/db
+    command: mongod --bind_ip=0.0.0.0
+    ports:
+      - "${RECLIC_MONGO_PORT}:27017"
+    mem_limit: "10g"
+    restart: always
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  backend:
+    build:
+      context: ../
+      dockerfile: ./deploy/backend.dockerfile
+    ports:
+      - "${RECLIC_BACKEND_PORT}:5000"
+    volumes:
+      - ${RECLIC_DATA_DIR}/files/:/backend/temp_files/
+    depends_on:
+      - mongodb
+    environment:
+      - GITHUB_TOKEN
+      - RECLIC_MONGO_PORT
+    mem_limit: "6g"
+    restart: always
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  frontend:
+    build:
+      context: ../
+      dockerfile: ./deploy/frontend.dockerfile
+      args:
+        NODE_ENV: ${NODE_ENV:-production}
+        REACT_APP_BASE_URL: ${REACT_APP_BASE_URL:-http://localhost:5000}
+    ports:
+      - "${RECLIC_HTTP_PORT}:80"
+      - "${RECLIC_HTTPS_PORT}:443"
+    restart: always
+    environment:
+      - REACT_APP_BASE_URL
+      - RECLIC_DOMAIN
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "5"
+    mem_limit: "2g"
+    volumes:
+      - ${RECLIC_DATA_DIR}/certs/:/data/caddy/certificates/acme-v02.api.letsencrypt.org-directory/
+    depends_on:
+      - backend
