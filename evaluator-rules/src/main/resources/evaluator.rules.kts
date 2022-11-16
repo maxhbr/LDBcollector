@@ -48,10 +48,14 @@ val genericLicenses = getLicensesForCategory("generic")
 val permissiveLicenses = getLicensesForCategory("permissive")
 val proprietaryFreeLicenses = getLicensesForCategory("proprietary-free")
 val publicDomainLicenses = getLicensesForCategory("public-domain")
+val unknownLicenses = getLicensesForCategory("unknown")
 val unstatedLicenses = getLicensesForCategory("unstated-license")
 
 // Set of licenses, which are not acted upon by the below policy rules.
 val ignoredLicenses = listOf(
+    /**
+     * 'generic' category:
+     */
     // Contributor License agreement are not relevant for the "use" of open source.
     "LicenseRef-scancode-generic-cla",
     // Permissive licenses are not flagged anyway.
@@ -63,7 +67,15 @@ val ignoredLicenses = listOf(
     // Public domain licenses are not flagged anyway.
     "LicenseRef-scancode-us-govt-public-domain",
     // Disclaimers are not relevant because they have no obligations.
-    "LicenseRef-scancode-warranty-disclaimer"
+    "LicenseRef-scancode-warranty-disclaimer",
+    /**
+     * 'unknown' category:
+     */
+    "LicenseRef-scancode-license-file-reference",
+    // References to files do not matter, because the target files are also scanned.
+    "LicenseRef-scancode-see-license",
+    // References to files do not matter, because the target files are also scanned.
+    "LicenseRef-scancode-unknown-license-reference"
 ).map { SpdxSingleLicenseExpression.parse(it) }.toSet()
 
 /**
@@ -82,6 +94,7 @@ val handledLicenses = listOf(
     permissiveLicenses,
     proprietaryFreeLicenses,
     publicDomainLicenses,
+    unknownLicenses,
     unstatedLicenses
 ).flatten().let {
     it.getDuplicates().let { duplicates ->
@@ -1044,6 +1057,13 @@ fun PackageRule.LicenseRule.isProprietaryFree() =
         override fun matches() = license in proprietaryFreeLicenses
     }
 
+fun PackageRule.LicenseRule.isUnknown() =
+    object : RuleMatcher {
+        override val description = "isUnknown($license)"
+
+        override fun matches() = license in unknownLicenses
+    }
+
 fun PackageRule.LicenseRule.isUnstated() =
     object : RuleMatcher {
         override val description = "isUnstated($license)"
@@ -1385,6 +1405,27 @@ fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN
     }
 }
 
+fun RuleSet.unkownInDependencyRule() = packageRule("UNKNOWN_IN_DEPENDENCY") {
+    require {
+        -isProject()
+        -isExcluded()
+    }
+
+    licenseRule("UNKNOWN_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+        require {
+            +isUnknown()
+            -isIgnored()
+        }
+
+        error(
+            "The dependency ${pkg.metadata.id.toCoordinates()} might contain a license which is unknown to the " +
+                    " tooling. It was detected as $license which is just a trigger, but not a real license. Please " +
+                    "create a dedicated license identifier if the finding is valid.",
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
+        )
+    }
+}
+
 fun RuleSet.unstatedInDependencyRule() = packageRule("UNSTATED_IN_DEPENDENCY") {
     require {
         -isProject()
@@ -1557,6 +1598,7 @@ fun RuleSet.proprietaryProjectRules() {
     freeRestrictedInDependencyRule()
     genericInDependencyRule()
     proprietaryFreeInDependencyRule()
+    unkownInDependencyRule()
     unstatedInDependencyRule()
 }
 
