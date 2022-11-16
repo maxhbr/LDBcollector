@@ -45,6 +45,7 @@ val freeRestrictedLicenses = getLicensesForCategory("free-restricted")
 val permissiveLicenses = getLicensesForCategory("permissive")
 val proprietaryFreeLicenses = getLicensesForCategory("proprietary-free")
 val publicDomainLicenses = getLicensesForCategory("public-domain")
+val contributorLicenseAgreementLicenenses = getLicensesForCategory("contributor-license-agreement")
 
 /**
  * The complete set of licenses covered by policy rules.
@@ -53,6 +54,7 @@ val publicDomainLicenses = getLicensesForCategory("public-domain")
  *          policy rules for new (offinding) categories, if any.
  */
 val handledLicenses = listOf(
+    contributorLicenseAgreementLicenenses,
     copyleftLicenses,
     copyleftLimitedLicenses,
     freeRestrictedLicenses,
