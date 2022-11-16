@@ -7,7 +7,7 @@ def compatibility_judge(licenseA,licenseB):
     compatibility_result = str(df.loc[licenseA, licenseB])
     return compatibility_result
 
-def license_uncompatibility1_reason(licenseA,licenseB):
+def license_incompatibility1_reason(licenseA,licenseB):
     reason = 'The reason for why it is not secondarily compatible is that'
     compatibility_terms = []
     df = pd.read_csv("./app/konwledgebase/licenses_terms_63.csv")
@@ -61,7 +61,7 @@ def license_uncompatibility1_reason(licenseA,licenseB):
     return reason,compatibility_terms
 
 # 2、许可证兼容性判断工具页___许可证不组合兼容原因判断
-def license_uncompatibility2_reason(licenseA,licenseB):
+def license_incompatibility2_reason(licenseA,licenseB):
     reason = 'The reason why it is not combinatively compatible is that'
     df = pd.read_csv("./app/konwledgebase/licenses_terms_63.csv")
     licenseA_terms = df[df['license'] == licenseA].to_dict(orient='records')[0]
@@ -115,22 +115,22 @@ def license_compatibility_judge(licenseA,licenseB):
         why_or_why_not = "You choose two same licenses."
     else:
         if compatibility_result == '0':
-            iscompatibility = licenseA + " is uncompatible with " + licenseB + "."
+            iscompatibility = licenseA + " is incompatible with " + licenseB + "."
             #how_to_use = "You can not" + licenseB + "授权的作品中使用（包括但不限于链接、复制粘贴等方式）" + licenseA + "授权的作品。"
             how_to_use = f"You may not use (including but not limited to linking, copy-pasting and so on) the work licensed under {licenseA} in the work licensed under {licenseB} ."
-            why_or_why_not,compatibility_terms = license_uncompatibility1_reason(licenseA, licenseB)
-            why_or_why_not = "(1)" + why_or_why_not + "(2)" +license_uncompatibility2_reason(licenseA, licenseB)
+            why_or_why_not,compatibility_terms = license_incompatibility1_reason(licenseA, licenseB)
+            why_or_why_not = "(1)" + why_or_why_not + "(2)" +license_incompatibility2_reason(licenseA, licenseB)
         elif compatibility_result == '1':
             iscompatibility = licenseA + " is secondarily compatible with " + licenseB + "."
             # how_to_use = license_compatibility3_reason(licenseA,licenseB) + "您修改或使用（包括但不限于链接、复制粘贴等方式）" + licenseA + "授权的作品，所产生的衍生作品可以采用" + licenseB + "授权，" \
             #              + "衍生作品的整体及其部分（包括原" + licenseA + "授权的部分）都将受" + licenseB + "的约束，请注意许可证信息的管理。"
             how_to_use=license_compatibility3_reason(licenseA,licenseB)+ f"The derivative work resulting from your modification or use (including but not limited to linking, copy-pasting and so on) of works licensed under {licenseA} can be licensed under {licenseB}, and the derivative work as a whole and its parts (including the part originally licensed under {licenseA}) will be subject to {licenseB}. Please pay attention to the management of license information."
-            why_or_why_not = license_uncompatibility2_reason(licenseA, licenseB)
+            why_or_why_not = license_incompatibility2_reason(licenseA, licenseB)
             
         elif compatibility_result == '2':
             iscompatibility = licenseA + " is combinatively compatible with " + licenseB + "."
             how_to_use = license_compatibility3_reason(licenseA,licenseB) + f"You can modify or use (including but not limited to linking, copy-pasting and so on) a work licensed under {licenseA}, and the resulting derivative work can be licensed under {licenseB} as a whole, provided that you ensure that the part of the derivative work originally licensed under {licenseA} and its modifications remain subject to {licenseA}, and that all parts other than that licensed under {licenseA} are subject to {licenseB}."
-            why_or_why_not,compatibility_terms =  license_uncompatibility1_reason(licenseA, licenseB)
+            why_or_why_not,compatibility_terms =  license_incompatibility1_reason(licenseA, licenseB)
         elif compatibility_result == '1,2':
             iscompatibility = licenseA + " is both secondarily compatible and combinatively compatible with " + licenseB + "."
             how_to_use = f"{license_compatibility3_reason(licenseA,licenseB)} You can choose any of the compatibility scenarios for license management. (1) If you choose secondary compatibility, you modify or use (including but not limited to linking, copy-pasting, etc.) the work licensed by {licenseA}, the resulting derivative work can be licensed under {licenseB}, and the whole of derivative work and its parts (including the part originally licensed under {licenseA}) will be subject to {licenseB}. Please pay attention to the management of license information; (2) If you choose combinative compatibility, you modify or use (including but not limited to linking, copy-pasting, etc.) the work licensed under {licenseA}, the whole of the resulting derivative work can be licensed under {licenseB}, provided that you ensure that the part of the derivative work originally licensed under {licenseA} and its modifications remain subject to the {licenseA}, and {licenseB} binds all parts of the derivative work other than those licensed under {licenseA}."

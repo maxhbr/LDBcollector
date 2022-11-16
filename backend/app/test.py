@@ -178,7 +178,7 @@ def conflict_dection(file_license_results,dependencies):
 #print(dep)
 # print(conflict_dection(res,dep,list(res.values())))
 
-def license_uncompatibility1_reason(licenseA,licenseB):
+def license_incompatibility1_reason(licenseA,licenseB):
     reason = '不能次级兼容的原因是，'
     compatibility_terms = []
     df = pd.read_csv("/data/wwxu/PySC/backend/app/konwledgebase/licenses_terms_63.csv")
@@ -227,7 +227,7 @@ def license_uncompatibility1_reason(licenseA,licenseB):
     return reason,compatibility_terms
 
 # 2、许可证兼容性判断工具页___许可证不组合兼容原因判断
-def license_uncompatibility2_reason(licenseA,licenseB):
+def license_incompatibility2_reason(licenseA,licenseB):
     reason = '不能组合兼容的原因是，'
     df = pd.read_csv("/data/wwxu/PySC/backend/app/konwledgebase/licenses_terms_63.csv")
     licenseA_terms = df[df['license'] == licenseA].to_dict(orient='records')[0]
@@ -243,4 +243,4 @@ def license_uncompatibility2_reason(licenseA,licenseB):
     return reason
 
 
-# print(license_uncompatibility1_reason("0BSD","MIT"))
+# print(license_incompatibility1_reason("0BSD","MIT"))
