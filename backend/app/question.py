@@ -1,6 +1,6 @@
 import pandas as pd
 def license_terms_choice(answer):
-    df = pd.read_csv("./app/konwledgebase/licenses_terms_63.csv")
+    df = pd.read_csv("./app/knowledgebase/licenses_terms_63.csv")
     licenses_spdx = df['license'].tolist()
     licenses_copyleft = df['copyleft'].tolist()
     licenses_copyright = df['copyright'].tolist()
@@ -9,7 +9,7 @@ def license_terms_choice(answer):
     licenses_trademark = df['trademark'].tolist()
     licenses_interaction = df['interaction'].tolist()
     licenses_modification = df['modification'].tolist()
-    df2 = pd.read_csv("./app/konwledgebase/license_recommended.csv")
+    df2 = pd.read_csv("./app/knowledgebase/license_recommended.csv")
     init_licenselist=df2['license'].tolist()
     # 初始化推荐列表
     licenselist_recommended = init_licenselist[:]
