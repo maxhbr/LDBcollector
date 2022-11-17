@@ -2,7 +2,7 @@ import pandas as pd
 
 # 2、许可证兼容性判断
 def compatibility_judge(licenseA,licenseB):
-    df = pd.read_csv('./app/konwledgebase/compatibility_63.csv', index_col=0)
+    df = pd.read_csv('./app/knowledgebase/compatibility_63.csv', index_col=0)
     
     compatibility_result = str(df.loc[licenseA, licenseB])
     return compatibility_result
@@ -10,7 +10,7 @@ def compatibility_judge(licenseA,licenseB):
 def license_incompatibility1_reason(licenseA,licenseB):
     reason = 'The reason for why it is not secondarily compatible is that'
     compatibility_terms = []
-    df = pd.read_csv("./app/konwledgebase/licenses_terms_63.csv")
+    df = pd.read_csv("./app/knowledgebase/licenses_terms_63.csv")
     licenseA_terms = df[df['license']==licenseA].to_dict(orient='records')[0]
     licenseB_terms = df[df['license']==licenseB].to_dict(orient='records')[0]
     restrictiveA = set()
@@ -63,7 +63,7 @@ def license_incompatibility1_reason(licenseA,licenseB):
 # 2、许可证兼容性判断工具页___许可证不组合兼容原因判断
 def license_incompatibility2_reason(licenseA,licenseB):
     reason = 'The reason why it is not combinatively compatible is that'
-    df = pd.read_csv("./app/konwledgebase/licenses_terms_63.csv")
+    df = pd.read_csv("./app/knowledgebase/licenses_terms_63.csv")
     licenseA_terms = df[df['license'] == licenseA].to_dict(orient='records')[0]
     licenseB_terms = df[df['license'] == licenseB].to_dict(orient='records')[0]
     if licenseA_terms['copyleft'] != 3 and licenseB_terms['copyleft'] == 2 :
@@ -88,7 +88,7 @@ def license_compatibility3_reason(licenseA,licenseB):
     versionA = []
     secondaryA = []
     combineA = []
-    df = pd.read_csv("./app/konwledgebase/licenses_terms_63.csv")
+    df = pd.read_csv("./app/knowledgebase/licenses_terms_63.csv")
     licenseA_terms = df[df['license'] == licenseA].to_dict(orient='records')[0]
     if licenseA_terms['compatible_version'] != '0':
         versionA = licenseA_terms['compatible_version'].split(',')

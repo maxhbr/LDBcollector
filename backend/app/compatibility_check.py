@@ -10,7 +10,7 @@ mongo_db = mongo_client['libraries']
 mongo_collection = mongo_db['projects']
 
 def compatibility_judge(licenseA,licenseB):
-    df = pd.read_csv('./app/konwledgebase/compatibility_63.csv', index_col=0)
+    df = pd.read_csv('./app/knowledgebase/compatibility_63.csv', index_col=0)
     compatibility_result = str(df.loc[licenseA, licenseB])
     return compatibility_result
 
@@ -54,13 +54,13 @@ def get_dependencies_licenses(file_path):
 
 
 def license_compatibility_filter(in_licenses):
-    df = pd.read_csv(os.path.join('./app/konwledgebase/license_recommended.csv'))
+    df = pd.read_csv(os.path.join('./app/knowledgebase/license_recommended.csv'))
     all_licenses = df['license'].tolist()
 
     compatible_both_list = df['license'].tolist()
     compatible_secondary_list = df['license'].tolist()
     compatible_combine_list = df['license'].tolist()
-    df1 = pd.read_csv(os.path.join('./app/konwledgebase/compatibility_63.csv'), index_col=0)
+    df1 = pd.read_csv(os.path.join('./app/knowledgebase/compatibility_63.csv'), index_col=0)
     check_license_list = df1.index.tolist()
     checked_list = []
     dual_no_checked_license = set()
@@ -146,7 +146,7 @@ def depend_detection(src_path,temp_path):
 
 
 def conflict_dection(file_license_results,dependencies):
-    df1 = pd.read_csv(os.path.join('./app/konwledgebase/compatibility_63.csv'), index_col=0)
+    df1 = pd.read_csv(os.path.join('./app/knowledgebase/compatibility_63.csv'), index_col=0)
     check_license_list = df1.index.tolist()
     confilct_copyleft_set= set()
     confilct_depend_dict = []
