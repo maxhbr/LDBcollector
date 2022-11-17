@@ -1444,6 +1444,7 @@ fun RuleSet.unkownInDependencyRule() = packageRule("UNKNOWN_IN_DEPENDENCY") {
         require {
             +isUnknown()
             -isIgnored()
+            -isExcluded()
         }
 
         error(
