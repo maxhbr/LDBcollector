@@ -57,6 +57,10 @@ private val CONTRIBUTOR_LICENSE_AGREEMENT_IDS = listOf(
     "LicenseRef-scancode-square-cla"
 ).map { SpdxSingleLicenseExpression.parse(it) }.toSet()
 
+private const val CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT = "contributor-license-agreement"
+private const val CATEGORY_GENERIC = "generic"
+private const val CATEGORY_UNKNOWN = "unknown"
+
 private data class License(
     val licenseKey: String,
     val spdxLicenseKey: String? = null,
@@ -146,16 +150,18 @@ private fun LicenseDetails.getLicenseId(): SpdxSingleLicenseExpression {
 
 private fun LicenseDetails.getCategories(): Set<String> {
     val mappedCategory = when {
-        isUnknown -> "unknown"
-        isGeneric -> "generic"
-        getLicenseId() in CONTRIBUTOR_LICENSE_AGREEMENT_IDS -> "contributor-license-agreement"
+        isUnknown -> CATEGORY_UNKNOWN
+        isGeneric -> CATEGORY_GENERIC
+        getLicenseId() in CONTRIBUTOR_LICENSE_AGREEMENT_IDS -> CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT
         else -> category.replace(' ', '-').toLowerCase()
     }
 
     return setOfNotNull(
         mappedCategory,
         // Include all licenses into the notice file to ensure there is no under-reporting by default.
-        "include-in-notice-file",
+        "include-in-notice-file".takeUnless {
+            mappedCategory in setOf(CATEGORY_UNKNOWN, CATEGORY_GENERIC, CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT)
+        },
         // The FSF has stated that a source code offer is required for Copyleft (limited) licences, so
         // include only these to not cause unnecessary effort by default.
         "include-source-code-offer-in-notice-file".takeIf { mappedCategory in setOf("copyleft", "copyleft-limited") }
