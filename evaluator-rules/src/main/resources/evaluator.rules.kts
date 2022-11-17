@@ -1162,16 +1162,9 @@ fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
             +isCopyleft()
         }
 
-        val message = if (licenseSource == LicenseSource.DETECTED) {
-            "The ScanCode 'copyleft' categorized license $license was ${licenseSource.name.lowercase()} " +
-                    "in project ${pkg.metadata.id.toCoordinates()}."
-        } else {
-            "The project ${pkg.metadata.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode " +
-                    "'copyleft' catalogized license $license."
-        }
-
         error(
-            message,
+            "The ScanCode 'copyleft' categorized license $license was ${licenseSource.name.lowercase()} in project " +
+                    "${pkg.metadata.id.toCoordinates()}.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
@@ -1189,17 +1182,9 @@ fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOU
             +isCopyleftLimited()
         }
 
-        val licenseSourceName = licenseSource.name.lowercase()
-        val message = if (licenseSource == LicenseSource.DETECTED) {
-            "The ScanCode 'copyleft-limited' categorized license $license was $licenseSourceName in project " +
-                    "${pkg.metadata.id.toCoordinates()}."
-        } else {
-            "The project ${pkg.metadata.id.toCoordinates()} has the $licenseSourceName ScanCode 'copyleft-limited' " +
-                    "categorized license $license."
-        }
-
         error(
-            message,
+            "The ScanCode 'copyleft-limited' categorized license $license was ${licenseSource.name.lowercase()} in " +
+                    "project ${pkg.metadata.id.toCoordinates()}.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
