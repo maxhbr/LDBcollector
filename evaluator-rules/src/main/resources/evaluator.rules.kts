@@ -1164,9 +1164,9 @@ fun RuleSet.copyleftInSourceRule() = packageRule("COPYLEFT_IN_SOURCE") {
 
         val message = if (licenseSource == LicenseSource.DETECTED) {
             "The ScanCode 'copyleft' categorized license $license was ${licenseSource.name.lowercase()} " +
-                    "in package ${pkg.metadata.id.toCoordinates()}."
+                    "in project ${pkg.metadata.id.toCoordinates()}."
         } else {
-            "The package ${pkg.metadata.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode " +
+            "The project ${pkg.metadata.id.toCoordinates()} has the ${licenseSource.name.lowercase()} ScanCode " +
                     "'copyleft' catalogized license $license."
         }
 
@@ -1191,10 +1191,10 @@ fun RuleSet.copyleftLimitedInSourceRule() = packageRule("COPYLEFT_LIMITED_IN_SOU
 
         val licenseSourceName = licenseSource.name.lowercase()
         val message = if (licenseSource == LicenseSource.DETECTED) {
-            "The ScanCode 'copyleft-limited' categorized license $license was $licenseSourceName in package " +
+            "The ScanCode 'copyleft-limited' categorized license $license was $licenseSourceName in project " +
                     "${pkg.metadata.id.toCoordinates()}."
         } else {
-            "The package ${pkg.metadata.id.toCoordinates()} has the $licenseSourceName ScanCode 'copyleft-limited' " +
+            "The project ${pkg.metadata.id.toCoordinates()} has the $licenseSourceName ScanCode 'copyleft-limited' " +
                     "categorized license $license."
         }
 
