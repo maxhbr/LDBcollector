@@ -45,6 +45,7 @@ val copyleftLicenses = getLicensesForCategory("copyleft")
 val copyleftLimitedLicenses = getLicensesForCategory("copyleft-limited")
 val freeRestrictedLicenses = getLicensesForCategory("free-restricted")
 val genericLicenses = getLicensesForCategory("generic")
+val patentLicenses = getLicensesForCategory("patent-license")
 val permissiveLicenses = getLicensesForCategory("permissive")
 val proprietaryFreeLicenses = getLicensesForCategory("proprietary-free")
 val publicDomainLicenses = getLicensesForCategory("public-domain")
@@ -91,6 +92,7 @@ val handledLicenses = listOf(
     copyleftLimitedLicenses,
     freeRestrictedLicenses,
     genericLicenses,
+    patentLicenses,
     permissiveLicenses,
     proprietaryFreeLicenses,
     publicDomainLicenses,
@@ -1057,6 +1059,13 @@ fun PackageRule.LicenseRule.isProprietaryFree() =
         override fun matches() = license in proprietaryFreeLicenses
     }
 
+fun PackageRule.LicenseRule.isPatent() =
+    object : RuleMatcher {
+        override val description = "isPatent($license)"
+
+        override fun matches() = license in patentLicenses
+    }
+
 fun PackageRule.LicenseRule.isUnknown() =
     object : RuleMatcher {
         override val description = "isUnknown($license)"
@@ -1385,6 +1394,26 @@ fun RuleSet.packageCurationInOrtYmlRule() = ortResultRule("PACKAGE_CURATION_IN_O
     }
 }
 
+fun RuleSet.patentInDependencyRule() = packageRule("PATENT_IN_DEPENDENCY") {
+    require {
+        -isProject()
+        -isExcluded()
+    }
+
+    licenseRule("PATENT_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
+        require {
+            +isPatent()
+            -isExcluded()
+        }
+
+        error(
+            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'patent-license' " +
+                    "categorized license $license. This requires approval.",
+            howToFixLicenseViolationDefault(license.toString(), licenseSource)
+        )
+    }
+}
+
 fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN_DEPENDENCY") {
     require {
         -isProject()
@@ -1597,6 +1626,7 @@ fun RuleSet.proprietaryProjectRules() {
     copyleftLimitedInDependencyRule()
     freeRestrictedInDependencyRule()
     genericInDependencyRule()
+    patentInDependencyRule()
     proprietaryFreeInDependencyRule()
     unkownInDependencyRule()
     unstatedInDependencyRule()
