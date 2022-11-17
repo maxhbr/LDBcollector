@@ -2098,11 +2098,9 @@ categorizations:
 - id: "LicenseRef-scancode-cncf-corporate-cla-1.0"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-cncf-individual-cla-1.0"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-cockroach"
   categories:
   - "source-available"
@@ -2139,11 +2137,9 @@ categorizations:
 - id: "LicenseRef-scancode-commercial-license"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-commercial-option"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-commonj-timer"
   categories:
   - "permissive"
@@ -2714,7 +2710,6 @@ categorizations:
 - id: "LicenseRef-scancode-free-unknown"
   categories:
   - "unknown"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-freebsd-boot"
   categories:
   - "permissive"
@@ -2783,19 +2778,15 @@ categorizations:
 - id: "LicenseRef-scancode-generic-cla"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-generic-export-compliance"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-generic-tos"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-generic-trademark"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-genivia-gsoap"
   categories:
   - "commercial"
@@ -2861,11 +2852,9 @@ categorizations:
 - id: "LicenseRef-scancode-google-cla"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-google-corporate-cla"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-google-maps-tos-2018-02-07"
   categories:
   - "proprietary-free"
@@ -3489,7 +3478,6 @@ categorizations:
 - id: "LicenseRef-scancode-jetty-ccla-1.1"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-jgraph"
   categories:
   - "permissive"
@@ -3711,7 +3699,6 @@ categorizations:
 - id: "LicenseRef-scancode-license-file-reference"
   categories:
   - "unknown"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-lil-1"
   categories:
   - "permissive"
@@ -4081,7 +4068,6 @@ categorizations:
 - id: "LicenseRef-scancode-ms-cla"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-ms-control-spy-2.0"
   categories:
   - "proprietary-free"
@@ -4492,7 +4478,6 @@ categorizations:
 - id: "LicenseRef-scancode-newton-king-cla"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-nexb-eula-saas-1.1.0"
   categories:
   - "commercial"
@@ -4909,11 +4894,9 @@ categorizations:
 - id: "LicenseRef-scancode-other-copyleft"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-other-permissive"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-otn-dev-dist"
   categories:
   - "proprietary-free"
@@ -4949,11 +4932,9 @@ categorizations:
 - id: "LicenseRef-scancode-owf-cla-1.0-copyright"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-owf-cla-1.0-copyright-patent"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-owfa-1.0"
   categories:
   - "patent-license"
@@ -5159,11 +5140,9 @@ categorizations:
 - id: "LicenseRef-scancode-proprietary"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-proprietary-license"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-prosperity-1.0.1"
   categories:
   - "proprietary-free"
@@ -5191,11 +5170,9 @@ categorizations:
 - id: "LicenseRef-scancode-public-domain"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-public-domain-disclaimer"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-purdue-bsd"
   categories:
   - "permissive"
@@ -5499,7 +5476,6 @@ categorizations:
 - id: "LicenseRef-scancode-see-license"
   categories:
   - "unknown"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-sencha-commercial"
   categories:
   - "commercial"
@@ -5616,7 +5592,6 @@ categorizations:
 - id: "LicenseRef-scancode-square-cla"
   categories:
   - "contributor-license-agreement"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-squeak"
   categories:
   - "proprietary-free"
@@ -6116,15 +6091,12 @@ categorizations:
 - id: "LicenseRef-scancode-unknown"
   categories:
   - "unknown"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-unknown-license-reference"
   categories:
   - "unknown"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-unknown-spdx"
   categories:
   - "unknown"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-unpbook"
   categories:
   - "permissive"
@@ -6132,7 +6104,6 @@ categorizations:
 - id: "LicenseRef-scancode-unpublished-source"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-unrar"
   categories:
   - "source-available"
@@ -6148,7 +6119,6 @@ categorizations:
 - id: "LicenseRef-scancode-us-govt-public-domain"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-us-govt-unlimited-rights"
   categories:
   - "permissive"
@@ -6257,7 +6227,6 @@ categorizations:
 - id: "LicenseRef-scancode-warranty-disclaimer"
   categories:
   - "generic"
-  - "include-in-notice-file"
 - id: "LicenseRef-scancode-waterfall-feed-parser"
   categories:
   - "free-restricted"
