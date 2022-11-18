@@ -90,10 +90,25 @@ sudo docker-compose down
 
 ### 1. Install Dependencies
 
-#### 1.1 Install MongoDB & Python
+
+#### 1.0 Install Python
 
 ```bash
-sudo apt-get install mongodb python3.8 python3.8-venv python3.8-pip
+sudo apt-get update
+sudo apt-get install -y python3 python3-pip python3-venv
+```
+
+#### 1.1 Install MongoDB
+
+Official documentation: https://docs.mongodb.com/manual/installation/
+
+```bash
+sudo apt-get update
+sudo apt-get install -y gnupg
+wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list  # for Ubuntu 20.04
+sudo apt-get update
+sudo apt-get install -y mongodb-org
 ```
 
 #### 1.2 Install Node.js
@@ -235,12 +250,13 @@ The LicenseRec Tool stores all the data in the MongoDB database and the `backend
 
 ### 1. Copy MongoDB Data
 
-LicenseRec reuses the [libraries.io](https://libraries.io/) dataset to indentify the license of project dependencies. The dataset is stored in the `projects` collection in the MongoDB database. You can download the dataset from [here](https://drive.google.com/file/d/1os3KffCzM_psR5Fv3v5WKe0r397s4E1i/view?usp=sharing) and import it to the MongoDB database.
+LicenseRec reuses the [libraries.io](https://libraries.io/) dataset to indentify the license of project dependencies. The dataset is stored in the `projects` collection in the `libraries` database. You can download the dataset from [here](https://drive.google.com/file/d/1os3KffCzM_psR5Fv3v5WKe0r397s4E1i/view?usp=sharing) and import it to the MongoDB database.
 
-**TODO**: google drive leaks the file owner's google account, thus the share is not suitable for double-blind review. Please upload the dataset to another place (e.g. figshare/zenodo) and update the link here.
+```bash
+mongoimport --uri=mongodb://127.0.0.1:<MONGO_PORT> --db=libraries --collection projects --drop projects.json
+```
 
-
-If another instance of LicenseRec is already running, just copy the whole MongoDB data directory will do the trick:
+If another instance of LicenseRec is already running, copying the whole MongoDB data directory will do the trick:
 
 ```bash
 sudo cp -r /var/lib/mongodb /path/to/your/data/dir/mongodb
