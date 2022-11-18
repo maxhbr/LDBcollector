@@ -438,7 +438,9 @@ export default {
           $('#skip-span').hide()
           $('#question-span').show()
           $("#back-span").show()
-          $("#copyleft-area").show()
+          if (this.check_res.confilct_copyleft_list.length > 0) {
+            $("#copyleft-area").show()
+          }
           this.loading = false;
     },
 
