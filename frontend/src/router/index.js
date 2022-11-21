@@ -25,6 +25,12 @@ export default new Router({
     path: '/query',
     name: 'query',
     component: ()=> import('@/pages/query')
+  },
+  {
+    path: '/guide',
+    name: 'guide',
+    component: () => import('@/pages/guide')
   }
+
   ]
 })

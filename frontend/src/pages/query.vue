@@ -13,7 +13,7 @@
                         <hr class="my-4">
 
                         <p style='font-family:Comic Sans MS, Comic Sans, cursive'>
-                            NOTE! License compatibility is directional. License A is compatible with License B <br />if
+                            NOTE! License compatibility is directed. License A is compatible with License B <br />if
                             the software
                             licensed under License A is modified or combined with other software <br />and the
                             resulting derivative software as a whole can be licensed under License B.
@@ -91,6 +91,7 @@ export default {
         this.axios.post('/api/support_list')
             .then(res => {
                 this.options = res.data;
+                this.options.sort();
                 console.log(res.data);
             })
     },
