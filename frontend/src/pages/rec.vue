@@ -602,7 +602,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .both-row > * > * >.circle {
   border: 7px solid #1230da;
 }
