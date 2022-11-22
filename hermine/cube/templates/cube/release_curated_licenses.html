@@ -51,7 +51,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               {% elif usage.license_curations|length > 1 %}
                 {{ usage.license_curations|length }} curations apply. Edit curations
                 {% for curation in usage.license_curations %}
-                  <a href="{% url "admin:cube_licensecuration_change" choice.pk %}">
+                  <a href="{% url "admin:cube_licensecuration_change" curation.pk %}">
                     {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
                 {% endfor %}
               {% endif %}
