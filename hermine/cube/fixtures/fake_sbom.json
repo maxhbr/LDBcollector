@@ -20,7 +20,7 @@
       "name": "dependency2",
       "SPDXID": "SPDXRef-dependency1",
       "licenseConcluded": "NOASSERTION",
-      "licenseDeclared": "Permissive-1.0",
+      "licenseDeclared": "Permissive-1.0 AND WeekCopyLeft-1.0",
       "copyrightText": "NOASSERTION",
       "versionInfo": "v2"
     },

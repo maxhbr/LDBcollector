@@ -293,8 +293,8 @@ class ReleaseStepsAPITestCase(APITestCase):
 
         ## Simulate fixing manually
         LicenseCuration.objects.create(
-            expression_in="Permissive-1.0",
-            expression_out="LicenseRef-fakeLicense-Permissive-1.0",
+            expression_in="Permissive-1.0 AND WeekCopyLeft-1.0",
+            expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
         )
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
@@ -336,7 +336,7 @@ class ReleaseStepsAPITestCase(APITestCase):
         self.assertEqual(res.data["validation_step"], 4)  # License choices
         res = self.client.get(reverse("cube:releases-validation-4", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
-        self.assertEqual(len(res.data["to_resolve"]), 1)
+        self.assertEqual(len(res.data["to_resolve"]), 2)
 
         ## Create choice through API
         res = self.client.post(
@@ -348,7 +348,7 @@ class ReleaseStepsAPITestCase(APITestCase):
         )
         res = self.client.get(reverse("cube:releases-validation-4", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
-        self.assertEqual(len(res.data["resolved"]), 1)
+        self.assertEqual(len(res.data["resolved"]), 2)
 
         # Step 5
         res = self.client.post(

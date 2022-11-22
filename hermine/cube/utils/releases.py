@@ -79,17 +79,17 @@ def validate_step_3(release: Release):
     Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
     """
     context = dict()
-    ambigious_spdx = [
+    ambiguous_spdx = [
         usage
         for usage in release.usage_set.all()
         if is_ambiguous(usage.version.spdx_valid_license_expr)
     ]
 
-    for usage in ambigious_spdx:
+    for usage in ambiguous_spdx:
         try:
             usage.version.corrected_license = (
                 ExpressionValidation.objects.for_usage(usage)
-                .filter(expression_in=usage.version.declared_license_expr)
+                .filter(expression_in=usage.version.spdx_valid_license_expr)
                 .values_list("expression_out", flat=True)
                 .get()
             )
@@ -98,16 +98,16 @@ def validate_step_3(release: Release):
             continue
 
     context["to_confirm"] = [
-        u for u in ambigious_spdx if not u.version.corrected_license
+        u for u in ambiguous_spdx if not u.version.corrected_license
     ]
     context["confirmed"] = [
         u.version
-        for u in ambigious_spdx
+        for u in ambiguous_spdx
         if u.version.corrected_license == u.version.spdx_valid_license_expr
     ]
     context["corrected"] = [
         u.version
-        for u in ambigious_spdx
+        for u in ambiguous_spdx
         if u.version.corrected_license
         and u.version.corrected_license != u.version.spdx_valid_license_expr
     ]
