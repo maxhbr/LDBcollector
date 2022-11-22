@@ -8,10 +8,10 @@ from django.views.generic import CreateView, UpdateView, ListView
 from cube.models import (
     Derogation,
 )
-from cube.views.mixins import LicenseRelatedMixin
+from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin
 
 
-class DerogationUpdateView(LoginRequiredMixin, UpdateView):
+class DerogationUpdateView(LoginRequiredMixin, SaveAuthorMixin, UpdateView):
     model = Derogation
     fields = ("scope", "linking", "modification", "exploitation", "justification")
 
@@ -22,7 +22,9 @@ class DerogationUpdateView(LoginRequiredMixin, UpdateView):
         return reverse("cube:license", args=[self.object.license.id])
 
 
-class DerogationCreateView(LoginRequiredMixin, LicenseRelatedMixin, CreateView):
+class DerogationCreateView(
+    LoginRequiredMixin, SaveAuthorMixin, LicenseRelatedMixin, CreateView
+):
     model = Derogation
     fields = ("scope", "linking", "modification", "exploitation", "justification")
 

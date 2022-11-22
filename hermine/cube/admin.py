@@ -158,25 +158,33 @@ class VersionAdmin(admin.ModelAdmin):
 
 
 class UsageDecisionAdmin(admin.ModelAdmin):
-    readonly_fields = ("decision_type", "product_summary", "component_summary")
+    readonly_fields = (
+        "created",
+        "updated",
+        "decision_type",
+        "product_summary",
+        "component_summary",
+    )
     list_display = ("__str__", "product_summary", "component_summary")
     autocomplete_fields = ("product", "release", "component", "version")
     fieldsets = (
+        ("", {"fields": ("created", "updated", "author")}),
         (
             "License",
             {
                 "fields": (
                     "expression_in",
                     "expression_out",
-                    "product_summary",
-                    "component_summary",
                 )
             },
         ),
-        ("Update product conditions", {"fields": ("product", "release")}),
+        (
+            "Update product conditions",
+            {"fields": ("product_summary", "product", "release")},
+        ),
         (
             "Update component conditions",
-            {"fields": ("component", "version", "scope")},
+            {"fields": ("component_summary", "component", "version", "scope")},
         ),
         ("Details", {"fields": ("explanation",)}),
     )
@@ -205,6 +213,41 @@ class UsageDecisionAdmin(admin.ModelAdmin):
         return result
 
 
+class DerogationAdmin(UsageDecisionAdmin):
+    readonly_fields = (
+        "created",
+        "updated",
+        "product_summary",
+        "component_summary",
+    )
+    fieldsets = (
+        ("", {"fields": ("created", "updated", "author")}),
+        (
+            "License",
+            {"fields": ("license",)},
+        ),
+        (
+            "Update product conditions",
+            {"fields": ("product_summary", "product", "release")},
+        ),
+        (
+            "Update component conditions",
+            {"fields": ("component_summary", "component", "version", "scope")},
+        ),
+        (
+            "Update usage conditions",
+            {
+                "fields": (
+                    "linking",
+                    "modification",
+                    "exploitation",
+                )
+            },
+        ),
+        ("Details", {"fields": ("justification",)}),
+    )
+
+
 admin.site.register(License, LicenseAdmin)
 admin.site.register(Obligation, ObligationAdmin)
 admin.site.register(Category, CategoryAdmin)
@@ -214,7 +257,7 @@ admin.site.register(Component, ComponentAdmin)
 admin.site.register(Version, VersionAdmin)
 admin.site.register(Usage, UsageAdmin)
 admin.site.register(Generic, GenericAdmin)
-admin.site.register(Derogation)
+admin.site.register(Derogation, DerogationAdmin)
 admin.site.register(LicenseCuration, UsageDecisionAdmin)
 admin.site.register(ExpressionValidation, UsageDecisionAdmin)
 admin.site.register(LicenseChoice, UsageDecisionAdmin)
