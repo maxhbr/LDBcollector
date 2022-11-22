@@ -31,6 +31,7 @@ from cube.models import (
 from cube.utils.licenses import (
     get_usages_obligations,
 )
+from cube.views.mixins import SearchMixin
 
 logger = logging.getLogger(__name__)
 
@@ -225,10 +226,11 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
         return response
 
 
-class UsageListView(LoginRequiredMixin, generic.ListView):
+class UsageListView(LoginRequiredMixin, SearchMixin, generic.ListView):
     model = Usage
     template_name = "cube/release_bom.html"
     paginate_by = 50
+    search_fields = ("version__purl",)
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
@@ -237,7 +239,7 @@ class UsageListView(LoginRequiredMixin, generic.ListView):
         return context
 
     def get_queryset(self, *args, **kwargs):
-        queryset = Usage.objects.all()
+        queryset = super().get_queryset(*args, **kwargs)
         release_id = self.kwargs["release_pk"]
         queryset = queryset.filter(release=release_id).order_by("project", "scope")
         return queryset
