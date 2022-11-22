@@ -113,28 +113,13 @@ fixed_expressions
 
 ### Step 2
 
-Can be found at 'api/releases/<int:release_id>/validation_2/'
-
-API endpoint that allows to know if there are Licenses that have not been checked by the legal team so far. 
-
-The response is a dictionnary with the following fields :
-
-licenses_to_check
-    An array of license objects that are considered as "grey" and therefore need a manual check.
-
-licenses_to_create
-    An array of licenses that need to be created in hermine's database.
-
-
-### Step 3
-
-Can be found at 'api/releases/int:release_id/validation_3/'
+Can be found at 'api/releases/int:release_id/validation_2/'
 
 Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
 
-### Step 4
+### Step 3
 
-Can be found at 'api/releases/<int:release_id>/validation_4/'
+Can be found at 'api/releases/<int:release_id>/validation_3/'
 
 API endpoint that allows to know if there are complex license expressions in usages of this release.
 
@@ -152,9 +137,9 @@ to_resolve
 resolved
     An array of usages linked to a version hat either has a complex "corrected_license" eother a "spdx_valid_license_expr" field, and for which an explicit choice as been made.
 
-### Step 5
+### Step 4
 
-Can be found at 'api/releases/<int:release_id>/validation_5/'
+Can be found at 'api/releases/<int:release_id>/validation_4/'
 API endpoint that allows to know if there are Usages of unnacepted licenes in this release.
 In this case, you must set relevant derogations in Hermine UI.
 
@@ -185,9 +170,9 @@ An example
               if: ${{ success() }}
             - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_2/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_2.json --silent"
               if: ${{ success() }}
-            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_4/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_4.json --silent"
+            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_3/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_3.json --silent"
               if: ${{ success() }}
-            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_5/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_5.json --silent"
+            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_4/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_4.json --silent"
               if: ${{ success() }}
             - uses: actions/upload-artifact@v2
 ```
@@ -204,7 +189,7 @@ Example :
 <testsuites disabled="0" errors="0" failures="1" tests="4">
     <testsuite disabled="0" errors="0" failures="1" name="Foobar" skipped="0" tests="4" time="0">
         <testcase name="Usage normalization"/>
-        <testcase name="Licenses"/>
+        <testcase name="ANDs confirmation"/>
         <testcase name="License choices"/>
         <testcase name="Policy compatibility">
             <failure type="failure" message="3 invalid component usages"/>

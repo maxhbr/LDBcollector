@@ -3,18 +3,16 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import Q, F
+from django.db.models import F
 
 from cube.models import (
     Release,
     License,
     LicenseChoice,
     ExpressionValidation,
-    Version,
     LicenseCuration,
 )
 from cube.utils.licenses import (
-    get_licenses_to_create,
     check_licenses_against_policy,
     explode_spdx_to_units,
     is_ambiguous,
@@ -22,6 +20,13 @@ from cube.utils.licenses import (
 )
 
 logger = logging.getLogger(__name__)
+
+
+STEP_CURATION = 1
+STEP_CONFIRM_AND = 2
+STEP_CHOICES = 3
+STEP_POLICY = 4
+STEP_VALIDATED = 5
 
 
 def validate_step_1(release):
@@ -63,18 +68,7 @@ def validate_step_1(release):
     return len(invalid_expressions) == 0, context
 
 
-def validate_step_2(release):
-    """
-    Check that all the licenses in a release have been created.
-    """
-    context = dict()
-    licenses = get_licenses_to_create(release)
-    context["licenses_to_create"] = licenses["licenses_to_create"]
-
-    return (len(context["licenses_to_create"]) == 0), context
-
-
-def validate_step_3(release: Release):
+def validate_step_2(release: Release):
     """
     Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
     """
@@ -115,7 +109,7 @@ def validate_step_3(release: Release):
     return (len(context["to_confirm"]) == 0), context
 
 
-def validate_step_4(release):
+def validate_step_3(release):
     """
     Check all licenses choices are done.
     """
@@ -127,14 +121,14 @@ def validate_step_4(release):
     return len(response["to_resolve"]) == 0, context
 
 
-def validate_step_5(release):
+def validate_step_4(release):
     """
     Check that the licenses are compatible with policy.
     """
     context = dict()
     r = check_licenses_against_policy(release)
 
-    step_5_valid = (
+    step_4_valid = (
         len(r["usages_lic_never_allowed"]) == 0
         and len(r["usages_lic_context_allowed"]) == 0
         and len(r["usages_lic_unknown"]) == 0
@@ -146,7 +140,7 @@ def validate_step_5(release):
     context["involved_lic"] = r["involved_lic"]
     context["derogations"] = r["derogations"]
 
-    return step_5_valid, context
+    return step_4_valid, context
 
 
 def update_validation_step(release: Release):
@@ -172,13 +166,6 @@ def update_validation_step(release: Release):
     info.update(context)
     if step4 and validation_step == 4:
         validation_step = 5
-
-    step5, context = validate_step_5(release)
-    if len(context["usages_lic_unknown"]) > 0 and validation_step > 2:
-        validation_step = 2
-    info.update(context)
-    if step5 and validation_step == 5:
-        validation_step = 6
 
     release.valid_step = validation_step
     release.save()

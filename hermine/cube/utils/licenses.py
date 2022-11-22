@@ -95,30 +95,6 @@ def check_licenses_against_policy(release):
     return response
 
 
-def get_licenses_to_create(release):
-    response = {}
-    validated_usages = release.usage_set.all().filter(
-        ~Q(version__spdx_valid_license_expr="") | ~Q(version__corrected_license="")
-    )
-    licenses_to_create = set()
-
-    for usage in validated_usages:
-        spdx_licenses = explode_spdx_to_units(usage.version.effective_license)
-
-        for spdx_license in spdx_licenses:
-            try:
-                license_instance = License.objects.get(spdx_id=spdx_license)
-            except License.DoesNotExist:
-                # It might happen that SPDX throws 'NOASSERTION' instead of an empty
-                # string. Handling that.
-                if spdx_license != "NOASSERTION":
-                    licenses_to_create.add(spdx_license)
-                    logger.info("unknown license", spdx_license)
-
-    response["licenses_to_create"] = licenses_to_create
-    return response
-
-
 @lru_cache(maxsize=1024)
 def explode_spdx_to_units(spdx_expr: str) -> List[str]:
     """Extract a list of every license from a SPDX valid expression.
