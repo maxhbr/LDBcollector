@@ -168,7 +168,7 @@ fun getArtifactMdLink(url: String): String =
  */
 fun getEnabledPolicyRules(): PolicyRules =
     when {
-        isLabeled("project", "oss-project") -> PolicyRules.OSS_PROJECT
+        ortResult.hasLabel("project", "oss-project") -> PolicyRules.OSS_PROJECT
         else -> PolicyRules.PROPRIETARY_PROJECT
     }
 
@@ -257,12 +257,6 @@ fun getVcsMdLink(pkg: Package) : String {
  * Return true if [license] is on the list of the organization's approved licenses for its open source projects.
  */
 fun isApprovedOrgOssProjectLicense(license: SpdxSingleLicenseExpression) = license in orgOssProjectsApprovedLicenses
-
-/**
- * Return true if a label with identical [key] exists whose comma separate values contains [value].
- */
-fun isLabeled(key: String, value: String) =
-    ortResult.labels[key]?.split(",")?.map { it.trim() }?.contains(value) == true
 
 /**
  * Return true if the [ortResult] contains a scan result for the source artifact of the package denoted by [id].
