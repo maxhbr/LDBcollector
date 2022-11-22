@@ -209,7 +209,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 <td>
                   {{ derogation.justification|default:"No justification given"|truncatewords:13 }}...
                 </td>
-                <td>{{ derogation.updated }} ({{ derogation.author }})</td>
+                <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
                 <td>
                   <a href="{% url "cube:derogation_edit" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
                   <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
