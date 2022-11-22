@@ -49,19 +49,15 @@ Some package may miss licence information or carry information that doesn't foll
 the SPDX standard.
 
 #### Validation Step 2
-Checks that all the licenses involved have been analyzed by your legal departement
-
-#### Validation Step 3
 Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
 In some situations multiple licences are just expressed as a list, which is 
 automatically converted as a cumulative expression ("A AND B"), while the reality of the 
 licencing is actually alternative ("A OR B"), causing often false alarms.
 
-#### Validation Step 4 
+#### Validation Step 3
 Express your choices when several licenses are proposed.
 
-
-#### Validation Step 5
+#### Validation Step 4
 Check that the licenses are compatible with your policy.
 You can add derogations in order to handle specific cases.
 
