@@ -1,7 +1,7 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
-
+from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.db.models import Q
@@ -12,7 +12,16 @@ from cube.models import (
 from cube.utils.validators import validate_spdx_expression
 
 
-class UsageConditionMixin(models.Model):
+class PolicyMixin(models.Model):
+    """
+    A mixin for all models in this file to filter a decision by component or usage.
+    """
+
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True
+    )
     product = models.ForeignKey(
         "Product", on_delete=models.CASCADE, blank=True, null=True
     )
@@ -89,7 +98,10 @@ class UsageConditionManager(models.Manager):
         )
 
 
-class UsageDecision(UsageConditionMixin, models.Model):
+## usagedecision table
+
+
+class UsageDecision(PolicyMixin, models.Model):
     """
     A generic class to generalize licenses curations, disambiguation or choices to
     several versions, releases or products.
@@ -238,6 +250,9 @@ class LicenseCuration(ComponentDecisionMixin, UsageDecision):
         proxy = True
 
 
+## derogation table
+
+
 class DerogationManager(UsageConditionManager):
     def for_usage(self, usage: Usage):
         return (
@@ -251,7 +266,7 @@ class DerogationManager(UsageConditionManager):
         )
 
 
-class Derogation(UsageConditionMixin, models.Model):
+class Derogation(PolicyMixin, models.Model):
     """
     A derogation to policy allowing use of a license, which can be generalized to a component, a release or a product.
     """

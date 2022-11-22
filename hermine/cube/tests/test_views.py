@@ -125,6 +125,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
         )
         self.assertRedirects(res, reverse("cube:release_validation", args=[1]))
         self.assertEqual(LicenseCuration.objects.all().count(), 1)
+        self.assertEqual(LicenseCuration.objects.first().author, self.user)
         self.assertEqual(LicenseChoice.objects.all().count(), 0)
 
     def test_create_licence_choice_rule(self):

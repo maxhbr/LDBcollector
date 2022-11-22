@@ -28,6 +28,7 @@ from cube.models import (
 )
 from cube.utils.releases import update_validation_step, propagate_choices
 from cube.views import LicenseRelatedMixin
+from cube.views.mixins import SaveAuthorMixin
 
 
 class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
@@ -63,7 +64,7 @@ class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
         }
 
 
-class AbstractCreateUsageConditionView(LoginRequiredMixin, CreateView):
+class AbstractCreateUsageConditionView(LoginRequiredMixin, SaveAuthorMixin, CreateView):
     usage = None
 
     def dispatch(self, request, *args, **kwargs):
