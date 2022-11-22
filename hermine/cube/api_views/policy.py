@@ -13,3 +13,6 @@ from cube.serializers import (
 class LicenseChoiceViewSet(viewsets.ModelViewSet):
     queryset = LicenseChoice.objects.all()
     serializer_class = LicenseChoiceSerializer
+
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)

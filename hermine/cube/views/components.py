@@ -11,7 +11,7 @@ from django.views import generic
 from cube.forms.components import LicenseCurationCreateForm
 from cube.forms.release_validation import CreateLicenseCurationForm
 from cube.models import Component, LicenseCuration
-from cube.views.mixins import SearchMixin
+from cube.views.mixins import SearchMixin, SaveAuthorMixin
 
 
 class ComponentListView(LoginRequiredMixin, SearchMixin, generic.ListView):
@@ -49,13 +49,17 @@ class LicenseCurationListView(LoginRequiredMixin, generic.ListView):
     template_name = "cube/licensecuration_list.html"
 
 
-class LicenseCurationCreateView(LoginRequiredMixin, generic.CreateView):
+class LicenseCurationCreateView(
+    LoginRequiredMixin, SaveAuthorMixin, generic.CreateView
+):
     model = LicenseCuration
     form_class = LicenseCurationCreateForm
     success_url = reverse_lazy("cube:licensecurations")
 
 
-class LicenseCurationUpdateView(LoginRequiredMixin, generic.UpdateView):
+class LicenseCurationUpdateView(
+    LoginRequiredMixin, SaveAuthorMixin, generic.UpdateView
+):
     model = LicenseCuration
     fields = ["expression_in", "expression_out", "explanation"]
     success_url = reverse_lazy("cube:licensecurations")

@@ -7,4 +7,5 @@ from django.contrib.auth.models import User
 
 class ForceLoginMixin:
     def setUp(self):
-        self.client.force_login(User.objects.get(username="admin"))
+        self.user = User.objects.get(username="admin")
+        self.client.force_login(self.user)

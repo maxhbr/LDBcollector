@@ -25,10 +25,12 @@ from cube.utils.releases import (
 SPDX_ID = "testlicense"
 
 
-class APITestCase(BaseAPITestCase):
+class BaseHermineAPITestCase(BaseAPITestCase):
     def setUp(self):
-        User.objects.create_user("TestUser", "testuser@test.com", "password")
-        self.client.login(username="TestUser", password="password")
+        self.user = User.objects.create_user(
+            "TestUser", "testuser@test.com", "password"
+        )
+        self.client.force_login(self.user)
 
     def create_license(self):
         url = "/api/licenses/"
@@ -88,7 +90,7 @@ class APITestCase(BaseAPITestCase):
         return self.client.post(url, data)
 
 
-class APICRUDTests(APITestCase):
+class APICRUDTests(BaseHermineAPITestCase):
     """A class to test the naturel workflow with Endpoints.
 
     This test class is monolitihic, it means that each test is dependent on the success
@@ -249,6 +251,7 @@ class APICRUDTests(APITestCase):
         url = "/api/choices/1/?format=json"
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.data["author"], self.user.pk)
 
     def test_post_retreive_exploitation(self):
         self.create_product()
@@ -270,7 +273,7 @@ class APICRUDTests(APITestCase):
         self.assertEqual(r.data["count"], 1)
 
 
-class ReleaseStepsAPITestCase(APITestCase):
+class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
     def import_licenses(cls):
         with open("cube/fixtures/fake_licenses.json") as licenses_file:
             handle_licenses_json(licenses_file.read())
