@@ -5,7 +5,7 @@ import pandas as pd
 import tqdm
 def compatibility_judge(licenseA,licenseB):
     # relative path need to be fixed
-    df = pd.read_csv('/data/wwxu/PySC/backend/app/konwledgebase/compatibility_63.csv', index_col=0)
+    df = pd.read_csv('/data/wwxu/PySC/backend/app/knowledgebase/compatibility_63.csv', index_col=0)
     compatibility_result = str(df.loc[licenseA, licenseB])
     return compatibility_result
 
@@ -30,13 +30,13 @@ def license_detection_files(file_path,output_path):
     return results
 
 def license_compatibility_filter(in_licenses):
-    df = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/konwledgebase/license_recommended.csv'))
+    df = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/knowledgebase/license_recommended.csv'))
     all_licenses = df['license'].tolist()
     compatible_licenses = df['license'].tolist()
     compatible_both_list = df['license'].tolist()
     compatible_secondary_list = df['license'].tolist()
     compatible_combine_list = df['license'].tolist()
-    df1 = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/konwledgebase/compatibility_63.csv'), index_col=0)
+    df1 = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/knowledgebase/compatibility_63.csv'), index_col=0)
     check_license_list = df1.index.tolist()
     checked_list = []
     dual_no_checked_license = set()
@@ -128,7 +128,7 @@ def depend_detection(src_path,temp_path):
 
 def conflict_dection(file_license_results,dependencies):
     #relative path need to be fixed
-    df1 = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/konwledgebase/compatibility_63.csv'), index_col=0)
+    df1 = pd.read_csv(os.path.join('/data/wwxu/PySC/backend/app/knowledgebase/compatibility_63.csv'), index_col=0)
     check_license_list = df1.index.tolist()
     confilct_copyleft_set= set()
     confilct_depend_dict = {}
@@ -181,7 +181,7 @@ def conflict_dection(file_license_results,dependencies):
 def license_incompatibility1_reason(licenseA,licenseB):
     reason = '不能次级兼容的原因是，'
     compatibility_terms = []
-    df = pd.read_csv("/data/wwxu/PySC/backend/app/konwledgebase/licenses_terms_63.csv")
+    df = pd.read_csv("/data/wwxu/PySC/backend/app/knowledgebase/licenses_terms_63.csv")
     licenseA_terms = df[df['license']==licenseA].to_dict(orient='records')[0]
     licenseB_terms = df[df['license']==licenseB].to_dict(orient='records')[0]
     restrictiveA = set()
@@ -229,7 +229,7 @@ def license_incompatibility1_reason(licenseA,licenseB):
 # 2、许可证兼容性判断工具页___许可证不组合兼容原因判断
 def license_incompatibility2_reason(licenseA,licenseB):
     reason = '不能组合兼容的原因是，'
-    df = pd.read_csv("/data/wwxu/PySC/backend/app/konwledgebase/licenses_terms_63.csv")
+    df = pd.read_csv("/data/wwxu/PySC/backend/app/knowledgebase/licenses_terms_63.csv")
     licenseA_terms = df[df['license'] == licenseA].to_dict(orient='records')[0]
     licenseB_terms = df[df['license'] == licenseB].to_dict(orient='records')[0]
     if licenseA_terms['copyleft'] != 3 and licenseB_terms['copyleft'] == 2 :

@@ -52,7 +52,7 @@
                     <el-table-column prop="path" label="path"></el-table-column>
                     <el-table-column label="license">
                       <template slot-scope="scope">
-                        <el-popover placement="bottom" width="400" trigger="click">
+                        <el-popover placement="bottom" width="400" trigger="hover">
                           <span>{{depend_dict[scope.row.license]}}</span>
                           <span slot="reference">{{scope.row.license}}</span>
 
@@ -242,9 +242,35 @@ export default {
     .then(res => {
       this.support_list = res.data;
     })
+
+    // this.timer = window.setInterval(() => {
+    //   setTimeout(() => {
+    //     this.test()
+    //   }, 0)
+    // }, 2000);
+  },
+
+  destroyed() {
+    // window.clearInterval(this.timer);
   },
 
   methods: {
+    // test() {
+    //   var data = {testdata: 'test'}
+    //   const config = {
+    //     headers: {
+    //       "Content-Type": "application/json"
+    //     }
+    //   }
+    //   this.axios.post('/api/test', data, config)
+    //   .then(res => {
+    //     console.log(res);
+    //   }).catch(res => {
+    //     console.log(res);
+    //   }) 
+    // },
+
+
     handleAvatarSuccess(res, file) {
       this.imageUrl = URL.createObjectURL(file.raw);
     },
@@ -344,41 +370,78 @@ export default {
       this.axios.post(url, data, config)
       .then(res => {
         if (res.status == 200) {
-          console.log(res.data);
+          console.log(res);
           if (res.data != "URL ERROR") {
-            this.check_res = res.data;
+            config.headers['Content-Type'] = 'application/json';
+            var unzip_path = res.data;
+            console.log(unzip_path);
+            var timer = window.setInterval(() => {
+              console.log("tick");
+              this.axios.post('/api/poll', {path: unzip_path}, config)
+              .then(res => {
+                if (res.data != 'doing') {
+                  console.log(res.data);
+                  this.check_res = res.data;
+                  window.clearInterval(timer)
+                  this.upload_done()
+                }
+              })
+            }, 2000)
+            // this.check_res = res.data;
             // this.table_data = [];
             // for (const license of res.data.compatible_licenses) {
             //   this.table_data.push({name: license})
             // }
-            var temp_table = []
-            for (const license of this.table_data) {
-              if (this.has(res.data.compatible_licenses, license.name)) {
-                temp_table.push(license)
-              }
-            }
-            this.table_data = temp_table;
-            this.generate_licenses_list();
-            this.generate_depend_dict();
-            $('.file-url').hide()
-            $('#description').show()
-            $('#upload-span').hide()
-            $('#skip-span').hide()
-            $('#question-span').show()
-            $("#back-span").show()
-            $("#copyleft-area").show()
+            // var temp_table = []
+            // for (const license of this.table_data) {
+            //   if (this.has(res.data.compatible_licenses, license.name)) {
+            //     temp_table.push(license)
+            //   }
+            // }
+            // this.table_data = temp_table;
+            // this.generate_licenses_list();
+            // this.generate_depend_dict();
+            // $('.file-url').hide()
+            // $('#description').show()
+            // $('#upload-span').hide()
+            // $('#skip-span').hide()
+            // $('#question-span').show()
+            // $("#back-span").show()
+            // $("#copyleft-area").show()
           } else if (res.data == "URL ERROR") { // git url is wrong
             this.$message.error("Make sure the git url is correct!")
           }
-          this.loading = false;
+          // this.loading = false;
           
         } else {
           console.log('upload_file_or_url wrong');
         }
       }).catch(res => {
         console.log(res);
-        this.loading = false;
+        // this.loading = false;
       })
+    },
+
+    upload_done() {
+        var temp_table = []
+          for (const license of this.table_data) {
+            if (this.has(this.check_res.compatible_licenses, license.name)) {
+              temp_table.push(license)
+            }
+          }
+          this.table_data = temp_table;
+          this.generate_licenses_list();
+          this.generate_depend_dict();
+          $('.file-url').hide()
+          $('#description').show()
+          $('#upload-span').hide()
+          $('#skip-span').hide()
+          $('#question-span').show()
+          $("#back-span").show()
+          if (this.check_res.confilct_copyleft_list.length > 0) {
+            $("#copyleft-area").show()
+          }
+          this.loading = false;
     },
 
     // 进入答题界面
@@ -539,7 +602,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .both-row > * > * >.circle {
   border: 7px solid #1230da;
 }

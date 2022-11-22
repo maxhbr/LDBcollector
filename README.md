@@ -2,6 +2,8 @@
 
 ![Image text](https://github.com/osslab-pku/RecLicense/blob/246743e3500447a2214816f22ee63fbeb0be985e/frontend/src/assets/tool.png)
 
+The tool is available at [licenserec.com](https://licenserec.com/).
+
 Upload your project and pick the best open source license on [licenserec.com](https://licenserec.com/)!
 
 ## Introduction

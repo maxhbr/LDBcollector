@@ -13,12 +13,30 @@ from .download_github import download_git
 from .question import license_terms_choice
 from .compare import license_compare
 import logging
+import threading
 logging.basicConfig(
     filename=f"./app/logging/backend.log",
     filemode='a',
     format="%(asctime)s [%(levelname)s] %(message)s",
     level=logging.INFO
 )
+job = {}
+lock = threading.Lock()
+
+def git_check(unzip_path):
+    licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
+    dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
+
+    confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
+    compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
+    
+    lock.acquire()
+    job[unzip_path] =  {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
+    "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
+    "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
+    "compatible_combine_list":compatible_combine_list}
+    lock.release()
+
 # 主页面
 @app.route('/')
 @app.route('/index')
@@ -42,17 +60,21 @@ def upload():
         z.extractall(unzip_path)
         z.close()
 
-    licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
-    dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
-    # print(licenses_in_files)
-    # print(dependecy)
-    confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
-    compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
+    # licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
+    # dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
+    # # print(licenses_in_files)
+    # # print(dependecy)
+    # confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
+    # compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
     
-    return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
-    "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
-    "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
-    "compatible_combine_list":compatible_combine_list}
+    # return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
+    # "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
+    # "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
+    # "compatible_combine_list":compatible_combine_list}
+
+    threading.Thread(target=git_check, args=(unzip_path,)).start()
+    return unzip_path
+
 @app.route('/git', methods=['POST'])
 def download():
     username= request.json.get("username")
@@ -65,20 +87,33 @@ def download():
     z = zipfile.ZipFile(file_path, "r")
     z.extractall(unzip_path)
     z.close()
-    licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
-    dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
+    # licenses_in_files=license_detection_files(unzip_path, unzip_path+".json")
+    # dependecy=depend_detection(unzip_path,unzip_path+"/temp.json")
 
-    confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
-    compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
+    # confilct_copyleft_list,confilct_depend_dict=conflict_dection(licenses_in_files,dependecy)
+    # compatible_licenses, compatible_both_list, compatible_secondary_list, compatible_combine_list = license_compatibility_filter(licenses_in_files.values())
     
-    return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
-    "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
-    "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
-    "compatible_combine_list":compatible_combine_list}
+    # return {"licenses_in_files":licenses_in_files,"confilct_depend_dict":confilct_depend_dict,
+    # "confilct_copyleft_list":confilct_copyleft_list,"compatible_licenses":compatible_licenses,
+    # "compatible_both_list":compatible_both_list,"compatible_secondary_list":compatible_secondary_list,
+    # "compatible_combine_list":compatible_combine_list}
+    threading.Thread(target=git_check, args=(unzip_path,)).start()
+    return unzip_path
+
+@app.route('/poll', methods=['POST'])
+def status():
+    path = request.json.get("path")
+    # print("path:", path)
+    lock.acquire()
+    res = job.get(path, 'doing')
+    if res != 'doing':
+        del job[path]
+    lock.release()
+    return res
 
 @app.route('/support_list', methods=['POST'])
 def support_lst():
-    df1 = pd.read_csv('./app/konwledgebase/compatibility_63.csv', index_col=0)
+    df1 = pd.read_csv('./app/knowledgebase/compatibility_63.csv', index_col=0)
     license_list = df1.index.tolist()
     return license_list
 
@@ -98,3 +133,8 @@ def compare():
     lst = request.json.get("recommend_list")
     return license_compare(lst)
 
+@app.route('/test', methods=['POST'])
+def test():
+    data = request.json.get("testdata")
+    print(data)
+    return 'success'

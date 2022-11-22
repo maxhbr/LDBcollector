@@ -6,7 +6,7 @@ from struct import pack
 from xml.etree import ElementTree
 import pandas as pd
 
-P2I_FILE = './app/konwledgebase/p2i.csv'
+P2I_FILE = './app/knowledgebase/p2i.csv'
 p2idf = pd.read_csv(P2I_FILE)
 
 def traverse(project_name):  # path为folder的绝对路径
