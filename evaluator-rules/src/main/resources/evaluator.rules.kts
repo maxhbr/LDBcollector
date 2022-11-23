@@ -962,8 +962,11 @@ fun resolveViolationInSourceCodeText(pkg: Package, license: String) : String {
 }
 
 /**
- * Set of matchers to help keep policy rules easy to understand
+ * Set of matchers to help keep policy rules easy to understand and corresponding helper functions.
  */
+
+fun isException(license: SpdxSingleLicenseExpression): Boolean =
+    ("-exception" in license.toString() && " WITH " !in license.toString())
 
 fun PackageRule.hasDefinitionFileName(vararg definitionFileNames: String) =
     object : RuleMatcher {
@@ -990,8 +993,7 @@ fun PackageRule.LicenseRule.isHandled() =
     object : RuleMatcher {
         override val description = "isHandled($license)"
 
-        override fun matches() =
-            license in handledLicenses && ("-exception" !in license.toString() || " WITH " in license.toString())
+        override fun matches() = license in handledLicenses && !isException(license)
     }
 
 fun PackageRule.LicenseRule.isCommercial() =
@@ -1019,10 +1021,7 @@ fun PackageRule.LicenseRule.isException() =
     object : RuleMatcher {
         override val description = "isException($license)"
 
-        override fun matches() =
-            license.simpleLicense().let {
-                it.endsWith("-exception") || it.contains("-exception")
-            }
+        override fun matches() = isException(license)
     }
 
 fun PackageRule.LicenseRule.isFreeRestricted() =
