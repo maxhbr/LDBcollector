@@ -1,7 +1,7 @@
 %global forgeurl https://gitlab.com/fedora/legal/fedora-license-data
 
 Name:           fedora-license-data
-Version:        1.7
+Version:        1.8
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -83,6 +83,13 @@ cp LICENSES/* ./
 
 
 %changelog
+* Thu Nov 24 2022 Miroslav Suchý <msuchy@redhat.com> 1.8-1
+- Add Public Domain license text used in libselinux (plautrba@redhat.com)
+- Make LicenseRef for GPLv2 with UPX exception more SPDX-confrmant
+  (rfontana@redhat.com)
+- Add the equivalent LicenseRef-UPX and LicenseRef-GPL-2.0-or-later WITH UPX
+  (rfontana@redhat.com)
+
 * Wed Nov 02 2022 Miroslav Suchý <msuchy@redhat.com> 1.7-1
 - redefine JSON format
 - Also use rich-deps on EL 8 (miro@hroncok.cz)
