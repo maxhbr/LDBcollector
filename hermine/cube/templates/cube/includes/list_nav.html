@@ -17,30 +17,31 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
       </form>
     </div>
+  </div>
+  <div class="level-right">
     <div class="level-item">
       <div class="pagination">
-          <span class="step-links">
-              {% if page_obj.has_previous %}
-                  <a href="?page=1"><button class="current button is-link">first</button></a>
-                  <a href="?page={{ page_obj.previous_page_number }}"><button class="current button is-link is-light">previous</button></a>
-             {% else %}
-                  <button class="current button is-link" disabled>first</button>
-                  <button class="current button is-link is-light" disabled>previous</button>
-             {% endif %}
-
-              <button class="current button is-primary">
-                  page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
-              </button>
-
-              {% if page_obj.has_next %}
-                  <a href="?page={{ page_obj.next_page_number }}"><button class="current button is-link is-light">next</button></a>
-                  <a href="?page={{ page_obj.paginator.num_pages }}"><button class="current button is-link">last</button></a>
-             {% else %}
-                  <button class="current button is-link is-light" disabled>next</button>
-                  <button class="current button is-link" disabled>last</button>
-             {% endif %}
-          </span>
+        <span class="step-links">
+          {% if page_obj.has_previous %}
+            <a href="?page=1"><button class="current button">first</button></a>
+            <a href="?page={{ page_obj.previous_page_number }}"><button class="current button is-link is-light">previous</button></a>
+          {% else %}
+            <button class="current button " disabled>first</button>
+            <button class="current button  is-light" disabled>previous</button>
+          {% endif %}
+            <button class="current button">
+              page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+            </button>
+            {% if page_obj.has_next %}
+              <a href="?page={{ page_obj.next_page_number }}"><button class="current button is-link is-light">next</button></a>
+              <a href="?page={{ page_obj.paginator.num_pages }}"><button class="current button ">last</button></a>
+           {% else %}
+              <button class="current button is-light" disabled>next</button>
+              <button class="current button " disabled>last</button>
+           {% endif %}
+        </span>
       </div>
     </div>
   </div>
 </div>
+
