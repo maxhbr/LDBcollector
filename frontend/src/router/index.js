@@ -30,6 +30,11 @@ export default new Router({
     path: '/guide',
     name: 'guide',
     component: () => import('@/pages/guide')
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('@/pages/about')
   }
 
   ]
