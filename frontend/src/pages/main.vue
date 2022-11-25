@@ -35,6 +35,7 @@
                                 <hr class="my-4">
                                 <b-button to="/rec">Choose a License</b-button>
                                 <b-button @click="jump_query">Compatibility query</b-button>
+                                <b-button to="/guide">Guideline</b-button>
                                 <b-button style="height:38px" href="https://github.com/osslab-pku/RecLicense"
                                     target="_blank">
                                     <b-img style="height:24px" :src="require('../assets/github.svg')" fluid></b-img>
