@@ -13,10 +13,10 @@
                         <hr class="my-4">
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-1  style="width:400px">Tip 1: Support
+                                <b-button block v-b-toggle.accordion-11  style="width:400px">Tip 1: Support
                                     continuous sharing.</b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-11" accordion="my-accordion" role="tabpanel">
                                 <!-- <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel"></b-collapse> -->
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">Restricted open
@@ -34,10 +34,10 @@
 
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-2  style="width:400px">Tip 2: Support
+                                <b-button block v-b-toggle.accordion-12  style="width:400px">Tip 2: Support
                                     User rights.</b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-12" accordion="my-accordion" role="tabpanel">
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">Permissive open
                                         source licenses allow users to freely use,
@@ -51,10 +51,10 @@
 
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-3 style="width:400px">Tip 3: Put
+                                <b-button block v-b-toggle.accordion-13 style="width:400px">Tip 3: Put
                                     into the public domain.</b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-13" accordion="my-accordion" role="tabpanel">
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">By placing
                                         software in the public domain, the
@@ -83,12 +83,12 @@
                         </template>
 
                         <hr class="my-4">
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-2">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-1 style="width:400px">Tip 1: Expand
+                                <b-button block v-b-toggle.accordion-21 style="width:400px">Tip 1: Expand
                                     the user base.</b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-21" accordion="my-accordion" role="tabpanel">
                                 <!-- <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel"></b-collapse> -->
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">The business
@@ -113,12 +113,12 @@
                             </b-collapse>
                         </b-card>
 
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-2">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-2 style="width:400px">Tip 2: Reduce
+                                <b-button block v-b-toggle.accordion-22 style="width:400px">Tip 2: Reduce
                                     peer competition.</b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-22" accordion="my-accordion" role="tabpanel">
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">The source code
                                         of software is always one of the core
@@ -136,12 +136,12 @@
                             </b-collapse>
                         </b-card>
 
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-2">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-3 style="width:400px">Tip 3: Control
+                                <b-button block v-b-toggle.accordion-23 style="width:400px">Tip 3: Control
                                     product development.</b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-23" accordion="my-accordion" role="tabpanel">
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">How to
                                         effectively control the development
@@ -187,12 +187,12 @@
                         </template>
 
                         <hr class="my-4">
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-3">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-1  style="width:400px">Tip 1: Users.
+                                <b-button block v-b-toggle.accordion-31  style="width:400px">Tip 1: Users.
                                     </b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-31" accordion="my-accordion" role="tabpanel">
                                 <!-- <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel"></b-collapse> -->
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">One way open
@@ -229,12 +229,12 @@
                             </b-collapse>
                         </b-card>
 
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-3">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-2  style="width:400px">Tip 2:
+                                <b-button block v-b-toggle.accordion-32  style="width:400px">Tip 2:
                                     Contributors.</b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-32" accordion="my-accordion" role="tabpanel">
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">Open source
                                         software projects rely on the continued
@@ -262,12 +262,12 @@
                             </b-collapse>
                         </b-card>
 
-                        <b-card no-body class="mb-1">
+                        <b-card no-body class="mb-3">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-3  style="width:400px">Tip 3: Partner
+                                <b-button block v-b-toggle.accordion-33  style="width:400px">Tip 3: Partner
                                     or competitor.</b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                            <b-collapse id="accordion-33" accordion="my-accordion" role="tabpanel">
                                 <b-card-body>
                                     <b-card-text style="width:600px;margin-left:auto;margin-right:auto;text-align:justify;text-align-last: center;">Open source
                                         licenses are the primary tool for gaining
