@@ -181,11 +181,13 @@ export default {
             if (column.property != 'copyleft' && column.property != 'copyright' && column.property != 'patent') {
                 if (this.license_terms[rowIndex][column.property] == 1) {
                     return "icon-success"
-                }
-
-                if (this.license_terms[rowIndex][column.property] == 0) {
+                } else if (this.license_terms[rowIndex][column.property] == 0) {
                     return "icon-wrong"
+                } else {
+                    return "special-column"
                 }
+            } else {
+                return "special-column"
             }
         }
     },
@@ -194,12 +196,7 @@ export default {
 </script>
 
 <style>
-.el-table .cell {
-    word-break: keep-all;
-}
-
-.cell {
-    text-align: center;
+.special-column > .cell {
     word-break: keep-all;
 }
 
@@ -209,6 +206,7 @@ export default {
     height: 20px;
     width: auto;
     margin-left: 15px;
+    /* word-break: keep-all; */
 }
 
 .icon-success > .cell::before{

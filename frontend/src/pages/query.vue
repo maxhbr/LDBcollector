@@ -139,7 +139,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #main1 {
     height: 630px;
 }
