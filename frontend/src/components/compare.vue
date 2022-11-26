@@ -194,6 +194,10 @@ export default {
 </script>
 
 <style>
+.el-table .cell {
+    word-break: keep-all;
+}
+
 .cell {
     text-align: center;
     word-break: keep-all;
