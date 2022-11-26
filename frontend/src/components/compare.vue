@@ -196,6 +196,7 @@ export default {
 <style>
 .cell {
     text-align: center;
+    word-break: keep-all;
 }
 
 .icon-success > .cell, .icon-wrong > .cell {
