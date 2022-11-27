@@ -1,5 +1,5 @@
 from flask import render_template
-from flask import request
+from flask import request, send_from_directory
 from app import app
 from werkzeug.utils import secure_filename
 import os
@@ -138,3 +138,7 @@ def test():
     data = request.json.get("testdata")
     print(data)
     return 'success'
+
+@app.route('/favico.ico', methods=['GET'])
+def ico():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')

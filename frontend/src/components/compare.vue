@@ -4,83 +4,83 @@
             <el-table-column prop="license" label="License" fixed></el-table-column>
 
             <el-table-column prop="info" label="Info">
-                <template slot-scope="scope"><span>{{scope.row.info}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.info}}</span></template>
             </el-table-column>
 
             <el-table-column prop="preamble" label="Preamble" width="100">
-                <template slot-scope="scope"><span>{{scope.row.preamble}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.preamble}}</span></template>
             </el-table-column>
 
             <el-table-column prop="define" label="Define">
-                <template slot-scope="scope"><span>{{scope.row.define}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.define}}</span></template>
             </el-table-column>
 
-            <el-table-column prop="copyright" label="Copyright" width="100">
-                <template slot-scope="scope"><span>{{specific_terms.copyright[scope.row.copyright+1]}}</span></template>
+            <el-table-column prop="copyright" label="Copyright" width="200">
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{specific_terms.copyright[scope.row.copyright+1]}}</span></template>
             </el-table-column>
 
-            <el-table-column prop="patent" label="Patent">
-                <template slot-scope="scope"><span>{{specific_terms.patent[scope.row.patent+1]}}</span></template>
+            <el-table-column prop="patent" label="Patent" width="200">
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{specific_terms.patent[scope.row.patent+1]}}</span></template>
             </el-table-column>
 
             <el-table-column prop="trademark" label="Trademark" width="100">
-                <template slot-scope="scope"><span>{{scope.row.trademark}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.trademark}}</span></template>
             </el-table-column>
 
-            <el-table-column prop="copyleft" label="Copyleft">
-                <template slot-scope="scope"><span>{{specific_terms.copyleft[scope.row.copyleft]}}</span></template>
+            <el-table-column prop="copyleft" label="Copyleft" width="200">
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{specific_terms.copyleft[scope.row.copyleft]}}</span></template>
             </el-table-column>
 
             <el-table-column prop="interaction" label="Interaction" width="100">
-                <template slot-scope="scope"><span>{{scope.row.interaction}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.interaction}}</span></template>
             </el-table-column>
 
             <el-table-column prop="modification" label="Modification" width="110">
-                <template slot-scope="scope"><span>{{scope.row.modification}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.modification}}</span></template>
             </el-table-column>
 
             <el-table-column prop="retain_attr" label="Retain attribution" width="100">
-                <template slot-scope="scope"><span>{{scope.row.retain_attr}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.retain_attr}}</span></template>
             </el-table-column>
 
             <el-table-column prop="enhance_attr" label="Enhance attribution" width="100">
-                <template slot-scope="scope"><span>{{scope.row.enhance_attr}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.enhance_attr}}</span></template>
             </el-table-column>
 
             <el-table-column prop="patent_term" label="Patent term" width="100">
-                <template slot-scope="scope"><span>{{scope.row.patent_term}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.patent_term}}</span></template>
             </el-table-column>
 
             <el-table-column prop="vio_term" label="Vio term">
-                <template slot-scope="scope"><span>{{scope.row.vio_term}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.vio_term}}</span></template>
             </el-table-column>
 
             <el-table-column prop="disclaimer" label="Disclaimer" width="100">
-                <template slot-scope="scope"><span>{{scope.row.disclaimer}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.disclaimer}}</span></template>
             </el-table-column>
 
             <el-table-column prop="law" label="Law">
-                <template slot-scope="scope"><span>{{scope.row.law}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.law}}</span></template>
             </el-table-column>
 
             <el-table-column prop="instruction" label="Instruction" width="100">
-                <template slot-scope="scope"><span>{{scope.row.instruction}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.instruction}}</span></template>
             </el-table-column>
 
             <el-table-column prop="vio_term" label="Vio term">
-                <template slot-scope="scope"><span>{{scope.row.vio_term}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.vio_term}}</span></template>
             </el-table-column>
 
             <el-table-column prop="compatible_version" label="Compatible version" :width="compatible_width">
-                <template slot-scope="scope"><span>{{scope.row.compatible_version}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.compatible_version}}</span></template>
             </el-table-column>
 
             <el-table-column prop="secondary_license" label="Secondary license" :width="secondary_width">
-                <template slot-scope="scope"><span>{{scope.row.secondary_license}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.secondary_license}}</span></template>
             </el-table-column>
 
             <el-table-column prop="gpl_combine" label="GPL combine" :width="gpl_width">
-                <template slot-scope="scope"><span>{{scope.row.gpl_combine}}</span></template>
+                <template slot-scope="scope"><span style="word-break: keep-all;">{{scope.row.gpl_combine}}</span></template>
             </el-table-column>
         </el-table>
         <!-- <b-button variant="success" @click="term_compare" style="margin-top: 20px">Submit</b-button> -->
@@ -181,11 +181,13 @@ export default {
             if (column.property != 'copyleft' && column.property != 'copyright' && column.property != 'patent') {
                 if (this.license_terms[rowIndex][column.property] == 1) {
                     return "icon-success"
-                }
-
-                if (this.license_terms[rowIndex][column.property] == 0) {
+                } else if (this.license_terms[rowIndex][column.property] == 0) {
                     return "icon-wrong"
+                } else {
+                    return "special-column"
                 }
+            } else {
+                return "special-column"
             }
         }
     },
@@ -194,12 +196,15 @@ export default {
 </script>
 
 <style>
+.special-column > .cell {
+    word-break: keep-all;
+}
+
 .el-table .cell {
     word-break: keep-all;
 }
 
-.cell {
-    text-align: center;
+.el-table__row > * > .cell {
     word-break: keep-all;
 }
 
