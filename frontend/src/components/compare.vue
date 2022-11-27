@@ -214,6 +214,7 @@ export default {
     height: 20px;
     width: auto;
     margin-left: 15px;
+    /* word-break: keep-all; */
 }
 
 .icon-success > .cell::before{

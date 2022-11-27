@@ -240,7 +240,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .terms_question_area{
     height:400px;
     border-top: 0;

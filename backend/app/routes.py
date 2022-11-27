@@ -41,10 +41,14 @@ def git_check(unzip_path):
 @app.route('/')
 @app.route('/index')
 def index():
+    ip=request.remote_addr
+    logging.info(f"user_ip: {ip}")
     return render_template('index.html')
 
 @app.route('/zip', methods=['POST'])
 def upload():
+    ip=request.remote_addr
+    logging.info(f"user_ip: {ip}")
     f = request.files.get("file")
     file_path = './temp_files/' + str( datetime.datetime.now())
     os.makedirs(file_path)
@@ -77,6 +81,8 @@ def upload():
 
 @app.route('/git', methods=['POST'])
 def download():
+    ip=request.remote_addr
+    logging.info(f"user_ip: {ip}")
     username= request.json.get("username")
     reponame = request.json.get("reponame")
     print(reponame)
@@ -125,6 +131,8 @@ def query():
 
 @app.route('/choice', methods=['POST'])
 def choice():
+    ip=request.remote_addr
+    logging.info(f"user_ip: {ip}")
     answer = request.json.get("answer")
     return license_terms_choice(answer)
 
