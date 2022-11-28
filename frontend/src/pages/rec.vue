@@ -115,8 +115,8 @@
               <i class="circle" style="border-color: #c7db11"></i><span>: Combinatively compatible.</span>
             </div>
             <div id="term-icons">
-              <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp:The clause is explicitly included.</span>
-              <span class="icon-wrong"><i class="temp"></i></span><span>&nbsp&nbsp:The clause is not mentioned.</span>
+              <span class="icon-success"><i class="temp"></i></span><span>&nbsp&nbsp:The term is explicitly included.</span>
+              <span class="icon-wrong"><i class="temp"></i></span><span>&nbsp&nbsp:The term is not mentioned.</span>
               <i class="circle" style="border-color: #1230da"></i><span>:Both secondarily compatible and combinatively compatible.</span>
               <i class="circle" style="border-color: #28d811"></i><span>:Secondarily compatible.</span>
               <i class="circle" style="border-color: #c7db11"></i><span>:Combinatively compatible.&nbsp</span>
