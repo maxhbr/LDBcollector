@@ -21,5 +21,5 @@ LicenseRec is licensed under [Mulan PSL v2](http://license.coscl.org.cn/MulanPub
 
 LicenseRec relies on the following open source projects:
 
-* [scancode-tookit](https://github.com/nexB/scancode-toolkit) is licensed under [Apache-2.0](https://opensource.org/licenses/Apache-2.0).
+* [scancode-tookit](https://github.com/nexB/scancode-toolkit) is licensed under [Apache-2.0](https://opensource.org/licenses/Apache-2.0).(We added and modified some detection rules.)
 * [depends](https://github.com/multilang-depends/depends) is licensed under [MIT](https://opensource.org/licenses/MIT).
