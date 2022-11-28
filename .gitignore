@@ -9,3 +9,19 @@ temp_files
 *.log
 projects.json
 data
+token
+
+# python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
