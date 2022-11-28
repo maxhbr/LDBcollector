@@ -12,8 +12,8 @@ module.exports = {
     proxyTable: {
       '/api': {
         
-        // target: 'http://localhost:1120',//要访问的后端接口
-        target: 'http://54.92.144.188:1120',//要访问的后端接口
+        target: 'http://localhost:1120',//要访问的后端接口
+        //target: 'http://54.92.144.188:1120',//要访问的后端接口
         changeOrigin: true,
         pathRewrite: {
         '^/api': '/'
@@ -24,8 +24,8 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: '0.0.0.0', // can be overwritten by process.env.HOST
-    port: 80, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    host: 'localhost', // can be overwritten by process.env.HOST
+    port: 1120, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
