@@ -5,7 +5,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Fedora Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation | URLs
 
 {% for license in ALLOWED_LICENSES %}
 | {{ spdx_url(license) }}
@@ -29,7 +29,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Fedora Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation | URLs
 
 {% for license in CONTENT_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -52,7 +52,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Fedora Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation | URLs
 
 {% for license in DOCUMENTATION_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -75,7 +75,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Fedora Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation | URLs
 
 {% for license in FONTS_LICENSES %}
 | {{ spdx_url(license) }}
@@ -99,7 +99,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 
 [.datatable.dt-search]
 |===
-|SPDX Expression | Name | Fedora Abbreviation | URLs
+|SPDX Expression | Name | Legacy Abbreviation | URLs
 
 {% for license in FIRMWARE_LICENSES -%}
 | {{ spdx_url(license) }}
@@ -123,7 +123,7 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 
 [.datatable.dt-search]
 |===
-| Allowed | Allowed-content | Allowed-documentation | Allowed-fonts | Allowed-firmware | Status | SPDX Expression | Name | Fedora Abbreviation | URLs
+| Allowed | Allowed-content | Allowed-documentation | Allowed-fonts | Allowed-firmware | Status | SPDX Expression | Name | Legacy Abbreviation | URLs
 
 {% for license in ALL_ALLOWED_LICENSES -%}
 | {%- if 'allowed' in license['license']['status'] -%}
