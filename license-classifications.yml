@@ -3955,3 +3955,8 @@ categorizations:
   - id: "LicenseRef-scancode-google-patent-license-golang"
     categories:
       - "permissive"
+
+  - id: "LicenseRef-scancode-facebook-patent-rights-2"
+    categories:
+      - "permissive"
+      - "property:patent-clause"
