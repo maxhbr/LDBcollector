@@ -1,6 +1,6 @@
 # LicenseRec
 
-![Image text](https://github.com/osslab-pku/RecLicense/blob/246743e3500447a2214816f22ee63fbeb0be985e/frontend/src/assets/tool.png)
+![Image text](https://github.com/osslab-pku/RecLicense/blob/1caf4372960a9a54cfcbfbbbdf9ee86ab922d61a/frontend/src/assets/tool.png)
 
 The tool is available at [licenserec.com](https://licenserec.com/).
 
