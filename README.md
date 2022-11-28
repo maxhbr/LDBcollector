@@ -8,7 +8,8 @@ Upload your project and pick the best open source license on [licenserec.com](ht
 
 ## Introduction
 
-**[TODO]** Add a brief introduction of the project.
+LicenseRec is an open source license recommendation tool that helps developers choose a optimal license for their OSS project.
+LicenseRec performs fine-grained license compatibility checks on OSS projects’ code and dependencies, and assists developers to choose the optimal license through an interactive wizard with guidelines of three aspects: personal open source style, business pattern, and community development.
 
 ## Installation
 
