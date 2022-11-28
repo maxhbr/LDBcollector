@@ -65,7 +65,7 @@
 					<div id="license_question4" class="terms_question_area" style="display:none;">
 						<div><p class="question-font">
 							<!-- 您是否希望许可证中包含“反专利诉讼”条款？ -->
-							Do you want the license to include an "anti-patent litigation" clause?
+							Do you want the license to include an "anti-patent litigation" term?
 						</p></div>
 						<div><p class="instruction-font">
 							<!-- 说明：“反专利诉讼”是指任何提起“声称被许可方侵犯了其在许可作品中的专利权”等此类法律诉讼的人，将失去已经授予其在该许可证中的权利。
@@ -76,8 +76,8 @@
 							
 						</p></div>
 						<div class="radio-area">
-                            <b-form-radio v-model="selected[3]" value="1">A. Include anti-patent litigation clause.</b-form-radio>
-                            <b-form-radio v-model="selected[3]" value="2">B. Do not include anti-patent litigation clause.</b-form-radio>
+                            <b-form-radio v-model="selected[3]" value="1">A. Include anti-patent litigation term.</b-form-radio>
+                            <b-form-radio v-model="selected[3]" value="2">B. Do not include anti-patent litigation term.</b-form-radio>
 						</div>
 					</div>
 					<div id="license_question5" class="terms_question_area" style="display:none;">
@@ -93,7 +93,7 @@
 							Note: Open source software may contain trademarks, and granting trademark rights would mean that the trademark owner would lose its rights to the trademark, 
 							so while some open source software licenses do not mention trademark rights, they implicitly do not grant trademark rights when using open source software; 
 							others explicitly do not grant trademark rights, or prohibit the use of the author's name to promote the software or sell services, such as endorsements, 
-							advertising, or other specific actions.However, some of the early popular open source licenses may not explicitly include this clause, such as MIT, BSD-2-Clause, GPL-2.0, GPL-3.0, etc.
+							advertising, or other specific actions.However, some of the early popular open source licenses may not explicitly include this term, such as MIT, BSD-2-Clause, GPL-2.0, GPL-3.0, etc.
 							 You may also specify restrictions on trademark rights by attaching terms, signing other agreements, etc.
 						</p></div>
 						<div class="radio-area">
@@ -123,7 +123,7 @@
 							“修改说明”有利于增强开源软件贡献者的可见性和软件的可维护性；然而，用户可能因为疏忽导致许可证违规；且该条款的存在与否将影响开源许可证的兼容性。 -->
 							Note: "Modification Notes" means that users are required to mark changes, dates, and authors of changes when distributing their modified software (derivative software). 
 							The "modification note" is intended to enhance the visibility of open source contributors and the maintainability of the software; 
-							however, users may inadvertently cause license violations; and the existence of this clause will affect the compatibility of open source licenses.
+							however, users may inadvertently cause license violations; and the existence of this term will affect the compatibility of open source licenses.
 						</p></div>
 						<div class="radio-area">
                             <b-form-radio v-model="selected[6]" value="A">A. Yes.</b-form-radio>
