@@ -4,11 +4,11 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 import json
 import logging
-from functools import lru_cache
-from typing import Iterable, List
+from functools import lru_cache, reduce
+from itertools import product
+from typing import Iterable, List, Any
 
 from django.db import transaction
-from django.db.models import Q
 from license_expression import get_spdx_licensing, BaseSymbol
 
 from cube.models import License, Obligation, Derogation
@@ -52,6 +52,49 @@ def is_ambiguous(spdx_expression: str):
         return False
 
     return True
+
+
+def get_ands_corrections(spdx_expression: str) -> Iterable[str]:
+    if not is_ambiguous(spdx_expression):
+        return {spdx_expression}
+
+    return {
+        str(expression)
+        for expression in _get_ands_corrections_expressions(
+            licensing.parse(spdx_expression)
+        )
+    }
+
+
+def _get_ands_corrections_expressions(parsed):
+    if isinstance(parsed, BaseSymbol):
+        return {parsed}
+
+    simplified = parsed.simplify()
+    simplified_or_expression = reduce(lambda a, b: a | b, simplified.args).simplify()
+
+    if all(isinstance(arg, BaseSymbol) for arg in parsed.args):
+        # no sub expressions
+        return {simplified, simplified_or_expression}
+
+    combinations = list(
+        product(*(_get_ands_corrections_expressions(arg) for arg in parsed.args))
+    )
+    and_combinations = [
+        reduce(lambda a, b: a & b, combination).simplify()
+        for combination in combinations
+    ]
+    or_combinations = [
+        reduce(lambda a, b: a | b, combination).simplify()
+        for combination in combinations
+    ]
+
+    return {
+        str(simplified),
+        simplified_or_expression,
+        *and_combinations,
+        *or_combinations,
+    }
 
 
 def check_licenses_against_policy(release):

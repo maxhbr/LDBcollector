@@ -5,7 +5,7 @@
 from django import forms
 
 from cube.models import LicenseCuration, ExpressionValidation, LicenseChoice, Derogation
-from cube.utils.licenses import explode_spdx_to_units
+from cube.utils.licenses import explode_spdx_to_units, get_ands_corrections
 
 
 # Component only steps (curations and expression validation)
@@ -69,11 +69,17 @@ class CreateLicenseCurationForm(BaseComponentDecisionForm):
 
 
 class CreateExpressionValidationForm(BaseComponentDecisionForm):
-    expression_out = forms.CharField(
+    expression_out = forms.ChoiceField(
         label="Corrected SPDX expression",
         help_text="Must be same expression if correct, or another expression if some ANDs are actually ORs",
-        widget=forms.TextInput(attrs={"size": 80}),
     )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        corrections = get_ands_corrections(self.usage.version.spdx_valid_license_expr)
+        self.fields["expression_out"].choices = (
+            (choice, choice) for choice in corrections
+        )
 
     def clean(self):
         if explode_spdx_to_units(
