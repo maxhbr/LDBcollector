@@ -20,6 +20,7 @@ from cube.utils.licenses import (
     get_usages_obligations,
     is_ambiguous,
     explode_spdx_to_units,
+    get_ands_corrections,
 )
 from cube.utils.validators import validate_spdx_expression
 
@@ -130,3 +131,41 @@ class ExplodeSPDXTestCase(TestCase):
         ]
         explosion = explode_spdx_to_units(SPDX_complex)
         self.assertEqual(explosion, SPDX_exploded)
+
+
+class GetAndsCorrectionsTestCase(TestCase):
+    def test_basic_get_ands_corrections(self):
+        # basic
+        self.assertEqual(
+            get_ands_corrections("MIT AND X11"),
+            {"MIT AND X11", "MIT OR X11"},
+        )
+
+    def test_not_ambiguous_expression(self):
+        self.assertEqual(get_ands_corrections("MIT OR X11"), {"MIT OR X11"})
+
+    def test_three_members_expression(self):
+        self.assertEqual(
+            get_ands_corrections("MIT AND X11 AND WTFPL"),
+            {"MIT AND WTFPL AND X11", "MIT OR WTFPL OR X11"},
+        )
+
+    def test_subexpressions(self):
+        self.assertEqual(
+            get_ands_corrections("MIT AND (X11 AND WTFPL)"),
+            {
+                "MIT AND WTFPL AND X11",
+                "MIT OR WTFPL OR X11",
+                "MIT OR (WTFPL AND X11)",
+                "MIT AND (WTFPL OR X11)",
+            },
+        )
+        self.assertEqual(
+            get_ands_corrections("(MIT AND X11) AND WTFPL"),
+            {
+                "MIT AND WTFPL AND X11",
+                "MIT OR WTFPL OR X11",
+                "WTFPL AND (MIT OR X11)",
+                "WTFPL OR (MIT AND X11)",
+            },
+        )
