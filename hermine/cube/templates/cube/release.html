@@ -58,7 +58,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   </div>
   {% if object.valid_step < 4 %}
     <p>You have completed validation step {{ object.valid_step }} out of 4 </p>
-    <progress class="progress is-large" value="{{ object.valid_step | add:"-1" }}" max="4"></progress>
+    <progress class="progress is-large" value="{{ object.valid_step }}" max="4"></progress>
   {% else %}
     <article class="message is-success is-large">
       <div class="message-header">
