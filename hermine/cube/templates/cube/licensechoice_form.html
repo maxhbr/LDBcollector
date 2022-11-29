@@ -3,6 +3,7 @@ SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 {% extends "cube/cube.html" %}
+{% load cube_tags %}
 {% block title %}{{ form.usage.release.product.name }} {{ form.usage.release.release_number }}{% endblock %}
 {% block breadcrumbs %}
 <ul>
@@ -13,15 +14,39 @@ SPDX-License-Identifier: AGPL-3.0-only
 </ul>
 {% endblock %}
 {% block content %}
-  <form method="post" action="{% url "cube:release_licensechoice_create" form.usage.id %}">
-    {% csrf_token %}
-    <table>
-      <tr>
-        <th>Component validated license expression:</th>
-        <td>{{ form.usage.version.effective_license }}</td>
-      </tr>
-      {{ form }}
-      <tr><th></th><td><input type="submit" value="Save"></td></tr>
-    </table>
-  </form>
+  <div class="columns">
+    <div class="column">
+      <form method="post" action="{% url "cube:release_licensechoice_create" form.usage.id %}">
+        {% csrf_token %}
+        <table>
+          <tr>
+            <th>Component validated license expression:</th>
+            <td>{{ form.usage.version.effective_license }}</td>
+          </tr>
+          {{ form }}
+          <tr><th></th><td><input type="submit" value="Save"></td></tr>
+        </table>
+      </form>
+    </div>
+    <div class="column is-two-fifths">
+      <div class="card">
+      <div class="card-content">
+      <h4 class="is-4"><i class="fa fa-info-circle" aria-hidden="true"></i> Licenses status</h4>
+      <table>
+        <tr>
+          <th>Identifier</th>
+          <th>Status</th>
+        </tr>
+        {% for license in form.usage.version.licenses %}
+          <tr>
+            <td><a href="{% url "cube:license" license.id %}">{{ license.spdx_id }}</a></td>
+            <td><span class="tag {{ license|licenseAllowedCSS }}">{{ license.get_allowed_display }}</span></td>
+          </tr>
+        {% endfor %}
+      </table>
+            </div>
+      </div>
+
+    </div>
+  </div>
 {% endblock %}
