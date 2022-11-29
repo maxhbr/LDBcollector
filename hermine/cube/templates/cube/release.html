@@ -56,9 +56,9 @@ SPDX-License-Identifier: AGPL-3.0-only
       </li>
     </ul>
   </div>
-  {% if object.valid_step < 6 %}
-    <p>You have reached validation step {{ object.valid_step }} out of 5 </p>
-    <progress class="progress is-large" value="{{ object.valid_step | add:"-1" }}" max="5"></progress>
+  {% if object.valid_step < 4 %}
+    <p>You have completed validation step {{ object.valid_step }} out of 4 </p>
+    <progress class="progress is-large" value="{{ object.valid_step | add:"-1" }}" max="4"></progress>
   {% else %}
     <article class="message is-success is-large">
       <div class="message-header">
@@ -129,34 +129,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       for this release.</p>
   {% endif %}
 
-
-  <h4 class="title is-4">Step 2 - Unknown licenses</h4>
-  {% if licenses_to_create %}
-    <article class="message is-warning">
-      <div class="message-header">
-        <p>Some licenses need to be created</p>
-      </div>
-      <div class="message-body">
-        The following licenses need to be added to the database:
-      </div>
-    </article>
-    <ul>
-      {% for license in licenses_to_create %}
-        <li>{{ license }}: <a href="{% url "admin:cube_license_add" %}?spdx_id={{ license }}" target="_blank">create license</a></li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <article class="message is-success">
-      <div class="message-header">
-        <p>Success</p>
-      </div>
-      <div class="message-body">
-        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the licenses involved exist in database.
-      </div>
-    </article>
-  {% endif %}
-
-  <h4 class="title is-4">Step 3 - Confirm ANDs</h4>
+  <h4 class="title is-4">Step 2 - Confirm ANDs</h4>
   {% if to_confirm %}
     <article class="message is-warning">
       <div class="message-header">
@@ -214,7 +187,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       {{ confirmed|length }} confirmations</a> for this release.</p>
   {% endif %}
 
-  <h4 class="title is-4">Step 4 - Resolve license choices for this release</h4>
+  <h4 class="title is-4">Step 3 - Resolve license choices for this release</h4>
 
   {% if to_resolve %}
     <article class="message is-warning">
@@ -267,7 +240,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
 
-  <h4 class="title is-4">Step 5 - Check licenses against policy</h4>
+  <h4 class="title is-4">Step 4 - Check licenses against policy</h4>
 
   {% if usages_lic_unknown %}
     <article class="message is-dark">

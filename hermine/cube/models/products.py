@@ -62,7 +62,7 @@ class Release(models.Model):
     release_number = models.CharField(max_length=200)
     ship_status = models.CharField(max_length=20, choices=SHIPPING_CHOICES, blank=True)
     pub_date = models.DateTimeField("date published", blank=True, null=True)
-    # First unvalidated step : 6 = all are validated
+    # Last completed step, 0 when none is validated
     valid_step = models.IntegerField("Validation Step", blank=True, null=True)
     commit = models.CharField("Commit hash or ref", max_length=255, blank=True)
 

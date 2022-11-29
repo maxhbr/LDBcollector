@@ -26,7 +26,6 @@ STEP_CURATION = 1
 STEP_CONFIRM_AND = 2
 STEP_CHOICES = 3
 STEP_POLICY = 4
-STEP_VALIDATED = 5
 
 
 def validate_step_1(release):
@@ -145,27 +144,27 @@ def validate_step_4(release):
 
 def update_validation_step(release: Release):
     info = dict()
-    validation_step = 1
+    validation_step = 0
 
     step1, context = validate_step_1(release)
     info.update(context)
     if step1:
-        validation_step = 2
+        validation_step = 1
 
     step2, context = validate_step_2(release)
     info.update(context)
-    if step2 and validation_step == 2:
-        validation_step = 3
+    if step2 and validation_step == 1:
+        validation_step = 2
 
     step3, context = validate_step_3(release)
     info.update(context)
-    if step3 and validation_step == 3:
-        validation_step = 4
+    if step3 and validation_step == 2:
+        validation_step = 3
 
     step4, context = validate_step_4(release)
     info.update(context)
-    if step4 and validation_step == 4:
-        validation_step = 5
+    if step4 and validation_step == 3:
+        validation_step = 4
 
     release.valid_step = validation_step
     release.save()
