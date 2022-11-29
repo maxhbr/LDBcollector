@@ -234,6 +234,12 @@ router.register(r"components", api_views.ComponentViewSet, basename="components"
 router.register(r"usages", api_views.UsageViewSet, basename="usages")
 router.register(r"products", api_views.ProductViewSet, basename="products")
 router.register(r"licenses", api_views.LicenseViewSet, basename="licenses")
+router.register(r"curations", api_views.LicenseCurationViewSet, basename="curations")
+router.register(
+    r"expression-validations",
+    api_views.ExpressionValidationViewSet,
+    basename="expression-validations",
+)
 router.register(r"choices", api_views.LicenseChoiceViewSet, basename="choices")
 
 obligation_router = routers.NestedSimpleRouter(router, r"licenses")
