@@ -6,7 +6,6 @@ from django.urls import reverse
 from rest_framework.test import APITestCase as BaseAPITestCase
 
 from cube.models import (
-    Version,
     Usage,
     Derogation,
     ExpressionValidation,
@@ -19,7 +18,7 @@ from cube.utils.releases import (
     STEP_CONFIRM_AND,
     STEP_CHOICES,
     STEP_POLICY,
-    STEP_VALIDATED,
+    STEP_CURATION,
 )
 
 SPDX_ID = "testlicense"
@@ -296,6 +295,11 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
             )
         self.assertEqual(res.status_code, 201)
 
+        res = self.client.post(
+            reverse("cube:releases-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["validation_step"], 0)
+
         # Step 1
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
@@ -309,14 +313,13 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
 
-        # Step 2
-        self.import_licenses()
         res = self.client.post(
             reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
-        self.assertEqual(
-            res.data["validation_step"], STEP_CONFIRM_AND
-        )  # ANDs confirmation
+        self.assertEqual(res.data["validation_step"], STEP_CURATION)
+
+        # Step 2
+        self.import_licenses()
         res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
 
@@ -327,12 +330,12 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         )
         res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
-
-        # Step 3
         res = self.client.post(
             reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
-        self.assertEqual(res.data["validation_step"], STEP_CHOICES)  # License choices
+        self.assertEqual(res.data["validation_step"], STEP_CONFIRM_AND)
+
+        # Step 3
         res = self.client.get(reverse("cube:releases-validation-3", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["to_resolve"]), 2)
@@ -349,13 +352,15 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(res.data["valid"], True)
         self.assertEqual(len(res.data["resolved"]), 2)
 
+        res = self.client.post(
+            reverse("cube:releases-update-validation", kwargs={"id": 1})
+        )
+        self.assertEqual(res.data["validation_step"], STEP_CHOICES)
+
         # Step 4
         res = self.client.post(
             reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
-        self.assertEqual(
-            res.data["validation_step"], STEP_POLICY
-        )  # policy compatibility
         res = self.client.get(reverse("cube:releases-validation-4", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
 
@@ -373,4 +378,4 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         res = self.client.post(
             reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
-        self.assertEqual(res.data["validation_step"], STEP_VALIDATED)
+        self.assertEqual(res.data["validation_step"], STEP_POLICY)
