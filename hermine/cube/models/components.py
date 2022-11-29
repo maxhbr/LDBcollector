@@ -186,6 +186,16 @@ class Version(models.Model):
     def effective_license(self):
         return self.corrected_license or self.spdx_valid_license_expr
 
+    @property
+    def licenses(self):
+        """Get all licenses object listed in effective_license expression"""
+        from cube.models import License
+        from cube.utils.licenses import explode_spdx_to_units
+
+        return License.objects.filter(
+            spdx_id__in=[id for id in explode_spdx_to_units(self.effective_license)]
+        )
+
     class Meta:
         unique_together = ["component", "version_number"]
 
