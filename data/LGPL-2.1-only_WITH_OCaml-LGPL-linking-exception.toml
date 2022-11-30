@@ -1,0 +1,6 @@
+[license]
+
+expression = "LGPL-2.1-only WITH OCaml-LGPL-linking-exception"
+
+status = [ "allowed" ]
+
