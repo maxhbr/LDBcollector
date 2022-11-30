@@ -26,6 +26,19 @@ text = '''
 text here
 '''
 
+package = dotnet7.0
+location = https://github.com/dotnet/fsharp/blob/186d3f6ce267c27f8acaa2c8f3df1472bf2a88bf/src/FSharp.Core/resumable.fs#L2-L3
+text = '''
+To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights
+to this software to the public domain worldwide. This software is distributed without any warranty.
+'''
+
+package = dotnet7.0
+location = https://github.com/dotnet/runtime/blob/e721ae953c61297aec73e8051696f2b9b30148c7/src/coreclr/inc/utilcode.h#L2417-L2425
+text = '''
+You can use this free for any purpose.  It's in the public domain.  It has no warranty.
+'''
+
 package = x11vnc
 location = https://github.com/LibVNC/x11vnc/tree/af63109a17f1b1ec8b1e332d215501f11c4a33a0/misc/turbovnc
 text = '''
