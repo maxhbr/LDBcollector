@@ -1,4 +1,9 @@
 %global forgeurl https://gitlab.com/fedora/legal/fedora-license-data
+%if 0%{?fedora} || 0%{?rhel} >= 10
+%bcond_without  rpmlint
+%else
+%bcond_with     rpmlint
+%endif
 
 Name:           fedora-license-data
 Version:        1.8
@@ -20,7 +25,10 @@ BuildRequires:  (python%{python3_pkgversion}-tomli if python%{python3_pkgversion
 %else
 BuildRequires:  python%{python3_pkgversion}-tomli
 %endif
+
+%if %{with rpmlint}
 BuildRequires:  python%{python3_pkgversion}-tomli-w
+%endif
 
 %description
 This project contains information about licenses used in the Fedora
@@ -37,7 +45,7 @@ package checking tools.
 The Fedora Legal team is responsible for this project.
 
 
-%if 0%{?fedora} || 0%{?rhel} >= 10
+%if %{with rpmlint}
 %package -n rpmlint-%{name}
 Summary:        Rpmlint configuration with valid license expressions
 # this package does not need to depend on the main one
@@ -59,11 +67,11 @@ The Fedora Legal team is responsible for the content.
 
 
 %build
-%make_build
+%make_build spec-validate json %{?with_rpmlint:rpmlint}
 cp LICENSES/* ./
 
 %install
-%make_install
+make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %files
@@ -72,13 +80,11 @@ cp LICENSES/* ./
 %{_datadir}/%{name}/
 
 
-%if 0%{?fedora} || 0%{?rhel} >= 10
+%if %{with rpmlint}
 %files -n rpmlint-%{name}
 %license CC0-1.0.txt
 %doc AUTHORS README.md
 %config(noreplace) %{_sysconfdir}/xdg/rpmlint/*.toml
-%else
-%exclude %{_sysconfdir}/xdg/rpmlint/*.toml
 %endif
 
 

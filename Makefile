@@ -26,10 +26,17 @@ json:
 rpmlint:
 	$(TOPDIR)/tools/mkrpmlint.py $(SRCDIR) $(RPMLINT_SPDX) $(RPMLINT_LEGACY)
 
-install:
-	install -D -m 0644 $(JSONDB) $(DESTDIR)$(DATADIR)/fedora-license-data/licenses/$(shell basename $(JSONDB))
-	install -D -m 0644 $(RPMLINT_SPDX) $(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_SPDX))
-	install -D -m 0644 $(RPMLINT_LEGACY) $(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_LEGACY))
+install-rpmlint:
+	install -D -p -m 0644 $(RPMLINT_SPDX) \
+		$(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_SPDX))
+	install -D -p -m 0644 $(RPMLINT_LEGACY) \
+		$(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_LEGACY))
+
+install-json:
+	install -D -p -m 0644 $(JSONDB) \
+		$(DESTDIR)$(DATADIR)/fedora-license-data/licenses/$(shell basename $(JSONDB))
+
+install: install-json install-rpmlint
 
 legal-doc:
 	$(TOPDIR)/tools/create-docs.py $(TOPDIR)/data
