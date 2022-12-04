@@ -26,6 +26,15 @@ text = '''
 text here
 '''
 
+package = perl-IO-HTML
+location = https://metacpan.org/release/CJM/IO-HTML-1.004/source/examples/detect-encoding.pl
+text = '''
+This example is hereby placed in the public domain.
+You may copy from it freely.
+
+Detect the encoding of files given on the command line
+'''
+
 package = dotnet7.0
 location = https://github.com/dotnet/fsharp/blob/186d3f6ce267c27f8acaa2c8f3df1472bf2a88bf/src/FSharp.Core/resumable.fs#L2-L3
 text = '''
