@@ -1,0 +1,27 @@
+4.26 KiB
+# This file is for collecting the actual text found in Fedora
+# packages that have used the Callaway short name, "Freely redistributable without restrictions" 
+# or the SPDX id, "LicenseRef-Fedora-MaxPermissive"
+# As per the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_callaway_short_name_categories
+# 
+# This file is for collecting the text of such license notices.
+#
+# Include the following information:
+# 
+# Fedora package name
+#
+# Location of where you found the license notice text.
+# Preferably this would be a direct link to a file. If that is not possible,
+# provide enough information such that someone else can find the text in the wild
+# where you found it.
+#
+# The actual text found that corresponds to the use of 
+# the "Freely redistributable without restrictions" (previously) or "LicenseRef-Fedora-MaxPermissive" SPDX id.
+# Remove blank lines.
+#
+# Copy template below and add yours to top of list, adding a space between entries.
+package = 
+location = 
+text = '''
+text here
+'''
