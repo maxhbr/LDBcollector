@@ -7,8 +7,6 @@ import logging
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Count
-from django.forms import Form, ChoiceField, Select
 from django.http import HttpResponse
 from django.urls import reverse
 from django.utils.safestring import mark_safe
@@ -17,6 +15,7 @@ from django.views import generic
 from django.views.generic import UpdateView, DetailView, TemplateView
 
 from cube.forms.importers import ImportBomForm
+from cube.forms.releases import ReleaseExploitationForm
 from cube.importers import (
     import_ort_evaluated_model_json_file,
     import_spdx_file,
@@ -26,7 +25,6 @@ from cube.models import (
     Release,
     Usage,
     Generic,
-    Exploitation,
 )
 from cube.utils.licenses import (
     get_usages_obligations,
@@ -119,65 +117,10 @@ class ReleaseGenericView(LoginRequiredMixin, TemplateView):
         return {"usages": usages, "generic": generic, "release": release}
 
 
-class ReleaseExploitationForm(Form):
-    def __init__(self, instance: Release, *args, **kwargs):
-        self.release = instance
-        self.scopes = self.release.usage_set.values_list("project", "scope").annotate(
-            count=Count("*")
-        )
-        super().__init__(*args, **kwargs)
-
-        for project, scope, count in self.scopes:
-            self.fields[str(project) + str(scope)] = ChoiceField(
-                choices=Usage.EXPLOITATION_CHOICES,
-                widget=Select(attrs={"class": "select"}),
-                label=f"{project or '(project undefined)'} - {scope} ({count} components)",
-            )
-
-            try:
-                self.initial[project + scope] = self.release.exploitations.get(
-                    project=project, scope=scope
-                ).exploitation
-            except Exploitation.DoesNotExist:
-                pass
-
-    def save(self):
-        for project, scope, _ in self.scopes:
-            exploitation_type = self.cleaned_data[project + scope]
-            Exploitation.objects.update_or_create(
-                release=self.release,
-                project=project,
-                scope=scope,
-                defaults={"exploitation": exploitation_type},
-            )
-
-        return self.release
-
-
-class ReleaseSummaryView(LoginRequiredMixin, UpdateView):
+class ReleaseSummaryView(LoginRequiredMixin, DetailView):
     model = Release
     context_object_name = "release"
     template_name = "cube/release_summary.html"
-    form_class = ReleaseExploitationForm
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        form = context.pop("form")
-        context["exploitation_form"] = [  # only way to loop properly
-            {
-                "project": project,
-                "scope": scope,
-                "count": count,
-                "field": form[f"{project}{scope}"],
-            }
-            for (project, scope, count) in form.scopes
-        ]
-        context["bom_form"] = ImportBomForm()
-
-        return context
-
-    def get_success_url(self):
-        return reverse("cube:release_summary", args=[self.object.pk])
 
 
 class ReleaseBomExportView(LoginRequiredMixin, DetailView):

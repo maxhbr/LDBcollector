@@ -42,7 +42,7 @@ class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
     """
 
     model = Release
-    template_name = "cube/release.html"
+    template_name = "cube/release_validation.html"
 
     def get_queryset(self):
         return (

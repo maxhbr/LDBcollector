@@ -125,6 +125,11 @@ urlpatterns = [
         name="release_summary",
     ),
     path(
+        "release/<int:pk>/exploitations/",
+        views.ReleaseExploitationsView.as_view(),
+        name="release_exploitations",
+    ),
+    path(
         "release/<int:pk>/import/",
         views.ReleaseImportView.as_view(),
         name="release_import",

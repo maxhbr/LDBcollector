@@ -128,7 +128,7 @@ def validate_exploitations(release: Release):
             exploitation = release.exploitations.get(scope=scope)
             scope_exploitations.add(exploitation)
         except Exploitation.DoesNotExist:
-            unset_scopes.add(scope)
+            unset_scopes.add((scope, count))
 
     context["exploitations"] = scope_exploitations
     context["unset_scopes"] = unset_scopes
