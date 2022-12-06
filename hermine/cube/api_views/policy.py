@@ -4,11 +4,12 @@
 
 from rest_framework import viewsets
 
-from cube.models import LicenseChoice, LicenseCuration, ExpressionValidation
+from cube.models import LicenseChoice, LicenseCuration, ExpressionValidation, Derogation
 from cube.serializers import (
     LicenseChoiceSerializer,
     LicenseCurationSerializer,
     ExpressionValidationSerializer,
+    DerogationSerializer,
 )
 
 
@@ -30,3 +31,8 @@ class ExpressionValidationViewSet(SaveAuthorMixin, viewsets.ModelViewSet):
 class LicenseChoiceViewSet(SaveAuthorMixin, viewsets.ModelViewSet):
     queryset = LicenseChoice.objects.all()
     serializer_class = LicenseChoiceSerializer
+
+
+class DerogationViewSet(SaveAuthorMixin, viewsets.ModelViewSet):
+    queryset = Derogation.objects.all()
+    serializer_class = DerogationSerializer

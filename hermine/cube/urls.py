@@ -241,6 +241,7 @@ router.register(
     basename="expression-validations",
 )
 router.register(r"choices", api_views.LicenseChoiceViewSet, basename="choices")
+router.register(r"derogations", api_views.DerogationViewSet, basename="derogations")
 
 obligation_router = routers.NestedSimpleRouter(router, r"licenses")
 obligation_router.register(
