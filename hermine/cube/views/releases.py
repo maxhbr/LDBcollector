@@ -226,7 +226,7 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
         return response
 
 
-class UsageListView(LoginRequiredMixin, SearchMixin, generic.ListView):
+class ReleaseSBOMView(LoginRequiredMixin, SearchMixin, generic.ListView):
     model = Usage
     template_name = "cube/release_bom.html"
     paginate_by = 50
