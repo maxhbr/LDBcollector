@@ -4,7 +4,19 @@
 
 from rest_framework import serializers
 
-from cube.models import LicenseChoice, Derogation
+from cube.models import LicenseChoice, Derogation, LicenseCuration, ExpressionValidation
+
+
+class LicenseCurationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LicenseCuration
+        exclude = ("decision_type", "release", "product", "scope")
+
+
+class ExpressionValidationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExpressionValidation
+        exclude = ("decision_type", "release", "product", "scope")
 
 
 class LicenseChoiceSerializer(serializers.ModelSerializer):
@@ -24,13 +36,4 @@ class DerogationSerializer(serializers.ModelSerializer):
     class Meta:
         use_natural_foreign_keys = True
         model = Derogation
-        fields = [
-            "license",
-            "component",
-            "version",
-            "product",
-            "release",
-            "linking",
-            "scope",
-            "justification",
-        ]
+        fields = "__all__"
