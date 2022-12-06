@@ -55,9 +55,12 @@ automatically converted as a cumulative expression ("A AND B"), while the realit
 licencing is actually alternative ("A OR B"), causing often false alarms.
 
 #### Validation Step 3
-Express your choices when several licenses are proposed.
+Check all scopes have their exploitation mode defined.
 
 #### Validation Step 4
+Express your choices when several licenses are proposed.
+
+#### Validation Step 5
 Check that the licenses are compatible with your policy.
 You can add derogations in order to handle specific cases.
 
