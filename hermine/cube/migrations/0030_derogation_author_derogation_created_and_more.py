@@ -18,6 +18,7 @@ class Migration(migrations.Migration):
             model_name="derogation",
             name="author",
             field=models.ForeignKey(
+                editable=False,
                 null=True,
                 on_delete=django.db.models.deletion.SET_NULL,
                 to=settings.AUTH_USER_MODEL,
@@ -40,6 +41,7 @@ class Migration(migrations.Migration):
             model_name="usagedecision",
             name="author",
             field=models.ForeignKey(
+                editable=False,
                 null=True,
                 on_delete=django.db.models.deletion.SET_NULL,
                 to=settings.AUTH_USER_MODEL,
