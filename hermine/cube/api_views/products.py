@@ -15,6 +15,9 @@ from rest_framework.response import Response
 from cube.importers import import_spdx_file, import_ort_evaluated_model_json_file
 from cube.models import Product, Release, Exploitation
 from cube.serializers import (
+    GenericSerializer,
+)
+from cube.serializers import (
     ReleaseSerializer,
     LicenseSerializer,
     UploadSPDXSerializer,
@@ -22,23 +25,21 @@ from cube.serializers import (
 )
 from cube.serializers.products import (
     ProductSerializer,
-    Validation1Serializer,
-    Validation2Serializer,
-    Validation2Serializer,
-    Validation3Serializer,
-    Validation4Serializer,
+    ExpressionValidationSerializer,
+    AndsValidationSerializer,
+    ChoicesValidationSerializer,
+    PolicyValidationSerializer,
     ExploitationSerializer,
-)
-from cube.serializers import (
-    GenericSerializer,
+    ExploitationsValidationSerializer,
 )
 from cube.utils.licenses import get_usages_obligations
 from cube.utils.releases import (
     update_validation_step,
-    validate_step_1,
-    validate_step_2,
-    validate_step_3,
-    validate_step_4,
+    validate_expressions,
+    validate_ands,
+    validate_exploitations,
+    validate_choices,
+    validate_policy,
 )
 
 
@@ -89,7 +90,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(self.get_serializer_class()(release).data)
 
     @swagger_auto_schema(
-        responses={200: Validation1Serializer},
+        responses={200: ExpressionValidationSerializer},
     )
     @action(detail=True, methods=["get"])
     def validation_1(self, request, **kwargs):
@@ -99,7 +100,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_step_1(release)
+        response["valid"], context = validate_expressions(release)
         response["invalid_expressions"] = [
             usage.version for usage in context["invalid_expressions"]
         ]
@@ -110,10 +111,10 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             "cube:release_validation", kwargs={"pk": release.pk}
         )
 
-        return Response(Validation1Serializer(response).data)
+        return Response(ExpressionValidationSerializer(response).data)
 
     @swagger_auto_schema(
-        responses={200: Validation2Serializer},
+        responses={200: AndsValidationSerializer},
     )
     @action(detail=True, methods=["get"])
     def validation_2(self, request, **kwargs):
@@ -123,51 +124,71 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_step_2(release)
+        response["valid"], context = validate_ands(release)
         response["to_confirm"] = context["to_confirm"]
         response["details"] = reverse(
             "cube:release_validation", kwargs={"pk": release.pk}
         )
 
-        return Response(Validation2Serializer(response).data)
+        return Response(AndsValidationSerializer(response).data)
 
     @swagger_auto_schema(
-        responses={200: Validation3Serializer},
+        responses={200: ExploitationsValidationSerializer},
     )
     @action(detail=True, methods=["get"])
     def validation_3(self, request, **kwargs):
+        """
+        Check all scopes have a defined exploitation
+        """
+        response = {}
+        release = self.get_object()
+
+        response["valid"], context = validate_exploitations(release)
+        response["exploitations"] = context["exploitations"]
+        response["unset_scopes"] = context["unset_scopes"]
+        response["details"] = reverse(
+            "cube:release_validation", kwargs={"pk": release.pk}
+        )
+
+        return Response(ExploitationsValidationSerializer(response).data)
+
+    @swagger_auto_schema(
+        responses={200: ChoicesValidationSerializer},
+    )
+    @action(detail=True, methods=["get"])
+    def validation_4(self, request, **kwargs):
         """
         Check all licenses choices are done.
         """
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_step_3(release)
+        response["valid"], context = validate_choices(release)
         response.update(context)
         response["details"] = reverse(
             "cube:release_validation", kwargs={"pk": release.pk}
         )
 
-        return Response(Validation3Serializer(response).data)
+        return Response(ChoicesValidationSerializer(response).data)
 
     @swagger_auto_schema(
-        responses={200: Validation4Serializer},
+        responses={200: PolicyValidationSerializer},
     )
     @action(detail=True, methods=["get"])
-    def validation_4(self, request, **kwargs):
+    def validation_5(self, request, **kwargs):
         """
         Check that the licenses are compatible with policy.
         """
         response = {}
         release = self.get_object()
 
-        response["valid"], context = validate_step_4(release)
+        response["valid"], context = validate_policy(release)
         response.update(context)
         response["details"] = reverse(
             "cube:release_validation", kwargs={"pk": release.pk}
         )
 
-        return Response(Validation4Serializer(response).data)
+        return Response(PolicyValidationSerializer(response).data)
 
     @swagger_auto_schema(
         responses={
@@ -178,8 +199,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="0" failures="1" tests="4">
     <testsuite disabled="0" errors="0" failures="1" name="Foobar" skipped="0" tests="4" time="0">
-        <testcase name="Usage normalization"/>
-        <testcase name="Licenses"/>
+        <testcase name="Licenses curation"/>
+        <testcase name="ANDs confirmation"/>
+        <testcase name="Scope exploitations"/>
         <testcase name="License choices"/>
         <testcase name="Policy compatibility">
             <failure type="failure" message="3 invalid component usages"/>
@@ -199,41 +221,49 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     def junit(self, request, **kwargs):
         release = self.get_object()
 
-        step1 = TestCase(
-            "Usage normalization",
+        expressions_step = TestCase(
+            "Licenses curation",
         )
-        valid, context = validate_step_1(release)
+        valid, context = validate_expressions(release)
         if not valid:
-            step1.add_failure_info(
+            expressions_step.add_failure_info(
                 message=f"{len(context['invalid_expressions'])} components license information are not valid SPDX expressions"
             )
 
-        step2 = TestCase("ANDs confirmation")
-        valid, context = validate_step_2(release)
+        ands_step = TestCase("ANDs confirmation")
+        valid, context = validate_ands(release)
         if not valid:
-            step2.add_failure_info(
+            ands_step.add_failure_info(
                 f"{len(context['to_confirm'])} expressions are ambiguous"
             )
 
-        step3 = TestCase("License choices")
-        valid, context = validate_step_3(release)
+        exploitation_step = TestCase("Scope exploitations")
+        valid, context = validate_exploitations(release)
         if not valid:
-            step3.add_failure_info(
+            exploitation_step.add_failure_info(
+                f"{len(context['unset_scopes'])} scopes have no exploitation defined"
+            )
+
+        choices_step = TestCase("License choices")
+        valid, context = validate_choices(release)
+        if not valid:
+            choices_step.add_failure_info(
                 f"{len(context['to_resolve'])} licenses choices to resolve"
             )
 
-        step4 = TestCase("Policy compatibility")
-        valid, context = validate_step_4(release)
+        policy_step = TestCase("Policy compatibility")
+        valid, context = validate_policy(release)
         if not valid:
             count = (
                 len(context["usages_lic_never_allowed"])
                 + len(context["usages_lic_context_allowed"])
                 + len(context["usages_lic_unknown"])
             )
-            step4.add_failure_info(f"{count} invalid component usages")
+            policy_step.add_failure_info(f"{count} invalid component usages")
 
         ts = TestSuite(
-            f"{release} Hermine validation steps", [step1, step2, step3, step4]
+            f"{release} Hermine validation steps",
+            [expressions_step, ands_step, exploitation_step, choices_step, policy_step],
         )
 
         return HttpResponse(

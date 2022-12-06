@@ -252,3 +252,28 @@ class ReleaseSBOMView(LoginRequiredMixin, SearchMixin, generic.ListView):
 class ReleaseUpdateView(LoginRequiredMixin, UpdateView):
     model = Release
     fields = ["product", "release_number", "commit", "ship_status"]
+
+
+class ReleaseExploitationsView(LoginRequiredMixin, UpdateView):
+    model = Release
+    form_class = ReleaseExploitationForm
+    template_name = "cube/release_exploitations.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        form = context.pop("form")
+        context["exploitation_form"] = [  # only way to loop properly
+            {
+                "project": project,
+                "scope": scope,
+                "count": count,
+                "field": form[f"{project}{scope}"],
+            }
+            for (project, scope, count) in form.scopes
+        ]
+        context["bom_form"] = ImportBomForm()
+
+        return context
+
+    def get_success_url(self):
+        return reverse("cube:release_exploitations", args=[self.object.pk])

@@ -3,7 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import F
+from django.db.models import F, Count
 
 from cube.models import (
     Release,
@@ -11,6 +11,7 @@ from cube.models import (
     LicenseChoice,
     ExpressionValidation,
     LicenseCuration,
+    Exploitation,
 )
 from cube.utils.licenses import (
     check_licenses_against_policy,
@@ -24,11 +25,12 @@ logger = logging.getLogger(__name__)
 
 STEP_CURATION = 1
 STEP_CONFIRM_AND = 2
-STEP_CHOICES = 3
-STEP_POLICY = 4
+STEP_EXPLOITATIONS = 3
+STEP_CHOICES = 4
+STEP_POLICY = 5
 
 
-def validate_step_1(release):
+def validate_expressions(release):
     """
     Check for components versions that do not have valid SPDX license expressions.
     """
@@ -67,7 +69,7 @@ def validate_step_1(release):
     return len(invalid_expressions) == 0, context
 
 
-def validate_step_2(release: Release):
+def validate_ands(release: Release):
     """
     Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
     """
@@ -108,7 +110,33 @@ def validate_step_2(release: Release):
     return (len(context["to_confirm"]) == 0), context
 
 
-def validate_step_3(release):
+def validate_exploitations(release: Release):
+    """
+    Check all scopes have a defined exploitation
+    """
+    context = dict()
+    scope_exploitations = set()
+    unset_scopes = set()
+    scopes = (
+        release.usage_set.all()
+        .order_by("scope")
+        .values_list("scope")
+        .annotate(Count("id"))
+    )
+    for scope, count in scopes:
+        try:
+            exploitation = release.exploitations.get(scope=scope)
+            scope_exploitations.add(exploitation)
+        except Exploitation.DoesNotExist:
+            unset_scopes.add(scope)
+
+    context["exploitations"] = scope_exploitations
+    context["unset_scopes"] = unset_scopes
+
+    return len(unset_scopes) == 0, context
+
+
+def validate_choices(release):
     """
     Check all licenses choices are done.
     """
@@ -120,14 +148,14 @@ def validate_step_3(release):
     return len(response["to_resolve"]) == 0, context
 
 
-def validate_step_4(release):
+def validate_policy(release):
     """
     Check that the licenses are compatible with policy.
     """
     context = dict()
     r = check_licenses_against_policy(release)
 
-    step_4_valid = (
+    step_5_valid = (
         len(r["usages_lic_never_allowed"]) == 0
         and len(r["usages_lic_context_allowed"]) == 0
         and len(r["usages_lic_unknown"]) == 0
@@ -139,32 +167,37 @@ def validate_step_4(release):
     context["involved_lic"] = r["involved_lic"]
     context["derogations"] = r["derogations"]
 
-    return step_4_valid, context
+    return step_5_valid, context
 
 
 def update_validation_step(release: Release):
     info = dict()
     validation_step = 0
 
-    step1, context = validate_step_1(release)
+    step1, context = validate_expressions(release)
     info.update(context)
     if step1:
         validation_step = 1
 
-    step2, context = validate_step_2(release)
+    step2, context = validate_ands(release)
     info.update(context)
     if step2 and validation_step == 1:
         validation_step = 2
 
-    step3, context = validate_step_3(release)
+    step3, context = validate_exploitations(release)
     info.update(context)
     if step3 and validation_step == 2:
         validation_step = 3
 
-    step4, context = validate_step_4(release)
+    step4, context = validate_choices(release)
     info.update(context)
     if step4 and validation_step == 3:
         validation_step = 4
+
+    step5, context = validate_policy(release)
+    info.update(context)
+    if step5 and validation_step == 4:
+        validation_step = 5
 
     release.valid_step = validation_step
     release.save()

@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </div>
 {% endblock %}
 {% block content %}
-  {%if object.valid_step != 4 %}
+  {%if object.valid_step != 5 %}
 
     <article class="message is-warning">
       <div class="message-header">
@@ -94,7 +94,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               <span class="tag is-primary"> In core</span>
             {% else %}
               <span class="tag is-danger"> Not in core</span>
-            {% endif %}</a>
+            {% endif %}
           </td>
           <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
           <td>{{generic.team.name}}</td>
