@@ -110,6 +110,9 @@ urlpatterns = [
         views.DerogationListView.as_view(),
         name="derogations",
     ),
+    path(
+        "licensechoices/", views.LicenseChoiceListView.as_view(), name="licensechoices"
+    ),
     # Releases views
     path(
         "release/<int:pk>/edit/",

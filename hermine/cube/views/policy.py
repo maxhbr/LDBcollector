@@ -7,6 +7,7 @@ from django.views.generic import CreateView, UpdateView, ListView
 
 from cube.models import (
     Derogation,
+    LicenseChoice,
 )
 from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin
 
@@ -40,4 +41,15 @@ class DerogationListView(LoginRequiredMixin, ListView):
         version__isnull=True,
         product__isnull=True,
         release__isnull=True,
+    )
+
+
+class LicenseChoiceListView(LoginRequiredMixin, ListView):
+    model = LicenseChoice
+    paginate_by = 50
+    queryset = LicenseChoice.objects.filter(
+        product__isnull=True,
+        release__isnull=True,
+        component__isnull=True,
+        version__isnull=True,
     )
