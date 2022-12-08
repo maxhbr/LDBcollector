@@ -1102,7 +1102,7 @@ fun RuleSet.commercialInDependencyRule() = packageRule("COMMERCIAL_IN_DEPENDENCY
         }
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'commercial' " +
+            "The dependency '${pkg.metadata.id.toCoordinates()}' is licensed under the ScanCode 'commercial' " +
                     "categorized license $license. This requires approval.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
@@ -1123,8 +1123,8 @@ fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY"
 
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'copyleft' categorized " +
-                    "license $license.",
+            "The dependency '${pkg.metadata.id.toCoordinates()}' is licensed under the ScanCode 'copyleft' " +
+                    "categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
     }
@@ -1143,7 +1143,7 @@ fun RuleSet.copyleftLimitedInDependencyRule() = dependencyRule("COPYLEFT_LIMITED
         }
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} is statically linked and licensed under the " +
+            "The dependency '${pkg.metadata.id.toCoordinates()}' is statically linked and licensed under the " +
                     "ScanCode 'copyleft-limited' categorized license $license.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
@@ -1238,7 +1238,7 @@ fun RuleSet.freeRestrictedInDependencyRule() = packageRule("FREE_RESTRICTED_IN_D
         }
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'free-restricted' " +
+            "The dependency '${pkg.metadata.id.toCoordinates()}' is licensed under the ScanCode 'free-restricted' " +
                     "categorized license $license. This requires approval.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
@@ -1258,7 +1258,7 @@ fun RuleSet.genericInDependencyRule() = packageRule("GENERIC_IN_DEPENDENCY") {
         }
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} might contain a license which is unknown to the " +
+            "The dependency '${pkg.metadata.id.toCoordinates()}' might contain a license which is unknown to the " +
                     " tooling. It was detected as $license which is just a trigger, but not a real license. Please " +
                     "create a dedicated license identifier if the finding is valid.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
@@ -1385,7 +1385,7 @@ fun RuleSet.patentInDependencyRule() = packageRule("PATENT_IN_DEPENDENCY") {
         }
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'patent-license' " +
+            "The dependency '${pkg.metadata.id.toCoordinates()}' is licensed under the ScanCode 'patent-license' " +
                     "categorized license $license. This requires approval.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
@@ -1405,7 +1405,7 @@ fun RuleSet.proprietaryFreeInDependencyRule() = packageRule("PROPRIETARY_FREE_IN
         }
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'proprietary-free' " +
+            "The dependency '${pkg.metadata.id.toCoordinates()}' is licensed under the ScanCode 'proprietary-free' " +
                     "categorized license $license. This requires approval.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
@@ -1426,7 +1426,7 @@ fun RuleSet.unkownInDependencyRule() = packageRule("UNKNOWN_IN_DEPENDENCY") {
         }
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} might contain a license which is unknown to the " +
+            "The dependency '${pkg.metadata.id.toCoordinates()}' might contain a license which is unknown to the " +
                     " tooling. It was detected as $license which is just a trigger, but not a real license. Please " +
                     "create a dedicated license identifier if the finding is valid.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
@@ -1447,7 +1447,7 @@ fun RuleSet.unstatedInDependencyRule() = packageRule("UNSTATED_IN_DEPENDENCY") {
         }
 
         error(
-            "The dependency ${pkg.metadata.id.toCoordinates()} is licensed under the ScanCode 'unstated-licenses' " +
+            "The dependency '${pkg.metadata.id.toCoordinates()}' is licensed under the ScanCode 'unstated-licenses' " +
                     "categorized license $license. This requires approval.",
             howToFixLicenseViolationDefault(license.toString(), licenseSource)
         )
@@ -1462,7 +1462,7 @@ fun RuleSet.vulnerabilityInDependencyRule() = packageRule("VULNERABILITY_IN_DEPE
     }
 
     warning(
-        "The package ${pkg.metadata.id.toCoordinates()} has a vulnerability",
+        "The package '${pkg.metadata.id.toCoordinates()}' has a vulnerability",
         howToFixDefault()
     )
 }
@@ -1480,7 +1480,7 @@ fun RuleSet.vulnerabilityWithHighSeverityInDependencyRule() = packageRule("HIGH_
     }
 
     error(
-        "The package ${pkg.metadata.id.toCoordinates()} has a vulnerability with $scoringSystem severity > " +
+        "The package '${pkg.metadata.id.toCoordinates()}' has a vulnerability with $scoringSystem severity > " +
                 "$maxAcceptedSeverity",
         howToFixDefault()
     )
@@ -1498,7 +1498,7 @@ fun RuleSet.unapprovedOssProjectLicenseRule() = packageRule("UNAPPROVED_OSS_PROJ
         }
 
         error(
-            "Package ${pkg.metadata.id.toCoordinates()} declares $license which is not an " +
+            "Package '${pkg.metadata.id.toCoordinates()}' declares $license which is not an " +
                     "approved license within $orgName.",
             howToFixOssProjectDefault()
         )
