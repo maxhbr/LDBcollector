@@ -1,8 +1,7 @@
 [license]
-expression = "LicenseRef-Fedora-MaxPermissive"
+expression = "LicenseRef-Fedora-UltraPermissive"
 status = ["allowed"]
 url = """
-https://docs.fedoraproject.org/en-US/legal/license-field/#_public_domain
 https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_freely_redistributable_without_restrictions
 """
 
