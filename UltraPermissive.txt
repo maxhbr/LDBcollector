@@ -1,9 +1,10 @@
 4.26 KiB
 # This file is for collecting the actual text found in Fedora
 # packages that have used the Callaway short name, "Freely redistributable without restrictions" 
-# or other texts that are comprised of ultra-permissive licenses, regardless of what Callaway 
+# or other texts that are comprised of ultra-permissive licenses that contain 
+# no conditions upon the license grant, regardless of what Callaway 
 # short name may have been used. The License: field for packages that have text listed here can use 
-# the SPDX id, "LicenseRef-Fedora-MaxPermissive" going forward.
+# the SPDX id, "LicenseRef-Fedora-UltraPermissive" going forward.
 # For more information, see the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_callaway_short_name_categories
 #
 # Include the following information:
