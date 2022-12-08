@@ -1462,7 +1462,7 @@ fun RuleSet.vulnerabilityInDependencyRule() = packageRule("VULNERABILITY_IN_DEPE
     }
 
     warning(
-        "The package '${pkg.metadata.id.toCoordinates()}' has a vulnerability",
+        "The package '${pkg.metadata.id.toCoordinates()}' has a vulnerability.",
         howToFixDefault()
     )
 }
@@ -1481,7 +1481,7 @@ fun RuleSet.vulnerabilityWithHighSeverityInDependencyRule() = packageRule("HIGH_
 
     error(
         "The package '${pkg.metadata.id.toCoordinates()}' has a vulnerability with $scoringSystem severity > " +
-                "$maxAcceptedSeverity",
+                "$maxAcceptedSeverity.",
         howToFixDefault()
     )
 }
