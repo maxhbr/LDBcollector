@@ -1,0 +1,10 @@
+[license]
+expression = "LicenseRef-Fedora-UltraPermissive"
+status = ["allowed"]
+url = """
+https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_freely_redistributable_without_restrictions
+"""
+
+[fedora]
+legacy-name = ["Freely redistributable without restrictions"]
+legacy-abbreviation = ["Freely redistributable without restrictions"]
