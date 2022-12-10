@@ -6,5 +6,5 @@ https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_freely_red
 """
 
 [fedora]
-legacy-name = ["Freely redistributable without restrictions"]
-legacy-abbreviation = ["Freely redistributable without restrictions"]
+legacy-name = ["Freely redistributable without restriction"]
+legacy-abbreviation = ["Freely redistributable without restriction"]

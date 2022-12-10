@@ -1,10 +1,9 @@
-4.26 KiB
 # This file is for collecting the actual text found in Fedora
-# packages that have used the Callaway short name, "Freely redistributable without restrictions" 
+# packages that have used the Callaway short name, "Freely redistributable without restriction" 
 # or other texts that are comprised of ultra-permissive licenses that contain 
 # no conditions upon the license grant, regardless of what Callaway 
 # short name may have been used. The License: field for packages that have text listed here can use 
-# the SPDX id, "LicenseRef-Fedora-UltraPermissive" going forward.
+# the SPDX-conformant identifier, "LicenseRef-Fedora-UltraPermissive" going forward.
 # For more information, see the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_callaway_short_name_categories
 #
 # Include the following information:
@@ -17,8 +16,7 @@
 # where you found it.
 #
 # The actual text found that corresponds to the use of 
-# the "Freely redistributable without restrictions" (previously) or "LicenseRef-Fedora-MaxPermissive" SPDX id.
-# Remove blank lines.
+# the "Freely redistributable without restrictions" (previously) or (proposed use of) "LicenseRef-Fedora-MaxPermissive" identifiers.
 #
 # Copy template below and add yours to top of list, adding a space between entries.
 package = 
@@ -26,3 +24,16 @@ location =
 text = '''
 text here
 '''
+
+package = ibus-table-chinese
+location = https://github.com/mike-fabian/ibus-table-chinese
+text = '''
+Freely redistributable without restriction
+'''
+# Also occurs in one file as "This table is freely redistributable without restriction"
+# Should not be confused with the identical Callaway metadata name
+# For extensive discussion see:
+# https://gitlab.com/fedora/legal/fedora-license-data/-/issues/6
+# https://gitlab.com/fedora/legal/fedora-license-data/-/issues/106
+# (which approves use of LicenseRef-Fedora-MaxPermissive for this case)
+# https://gitlab.gnome.org/GNOME/gnome-software/-/issues/2004
