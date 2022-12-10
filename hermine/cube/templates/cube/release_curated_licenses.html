@@ -29,6 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>Component</th>
           <th>License imported</th>
           <th>Valid SPDX license</th>
+          <th>Corrected license</th>
           <th>Curations</th>
           <th>Edit component version</th>
         </tr>
@@ -39,10 +40,11 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td><a href="{%  url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a> </td>
             <td>{{ usage.version.declared_license_expr }}</td>
             <td>{{ usage.version.spdx_valid_license_expr }} </td>
+            <td>{{ usage.version.corrected_license }} </td>
             <td>
               {% if usage.license_curations|length == 1 %}
                 <a href="{% url "admin:cube_licensecuration_change"  usage.license_curations.0.pk %}">Edit rule</a>
-                {% if usage.license_curations.0.expression_out != usage.version.spdx_valid_license_expr %}
+                {% if usage.license_curations.0.expression_out != usage.version.corrected_license %}
                   <br><small>Expression does not match curation
                   <form action="{% url "cube:release_update_license_curation" usage.pk %}" method="POST" class="form is-inline">
                     {% csrf_token %}
