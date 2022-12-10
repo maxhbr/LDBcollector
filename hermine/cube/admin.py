@@ -161,6 +161,7 @@ class UsageDecisionAdmin(admin.ModelAdmin):
     readonly_fields = (
         "created",
         "updated",
+        "author",
         "decision_type",
         "product_summary",
         "component_summary",
