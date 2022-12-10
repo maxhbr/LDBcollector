@@ -57,8 +57,8 @@ def validate_step_1(release):
     context["invalid_expressions"] = invalid_expressions
 
     context["fixed_expressions"] = release.usage_set.exclude(
-        version__spdx_valid_license_expr=""
-    ).exclude(version__spdx_valid_license_expr=F("version__declared_license_expr"))
+        version__corrected_license=""
+    ).exclude(version__spdx_valid_license_expr=F("version__corrected_license"))
 
     context["nb_validated_components"] = len(release.usage_set.all()) - len(
         invalid_expressions

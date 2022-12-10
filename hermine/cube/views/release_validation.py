@@ -101,7 +101,11 @@ class ReleaseCuratedLicensesListView(ListView):
 
     def get_queryset(self):
         self.release = get_object_or_404(Release, pk=self.kwargs["id"])
-        return self.release.usage_set.all().exclude(version__spdx_valid_license_expr="")
+        return (
+            self.release.usage_set.all()
+            .exclude(version__corrected_license="")
+            .exclude(version__spdx_valid_license_expr=F("version__corrected_license"))
+        )
 
 
 @method_decorator(require_POST, "dispatch")
