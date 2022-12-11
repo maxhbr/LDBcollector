@@ -218,13 +218,16 @@ def get_usages_obligations(usages):
     Get triggered obligations for a list of usages.
 
     :param usages: A iterable of Usage objects
-    :return: A tuple with a list of generic and a list of licenses which obligations have no generics
+    :return: A tuple with a list of generics, a list of licenses which
+    obligations have no generics and the sorted list of licenses involved
     """
     generics_involved = set()
     orphaned_licenses = set()
+    licenses_involved_set = set()
 
     for usage in usages:
         for license in usage.licenses_chosen.all():
+            licenses_involved_set.add(license)
             for obligation in get_license_triggered_obligations(
                 license, usage.exploitation, usage.component_modified
             ):
@@ -232,7 +235,8 @@ def get_usages_obligations(usages):
                     generics_involved.add(obligation.generic)
                 else:
                     orphaned_licenses.add(license)
-    return generics_involved, orphaned_licenses
+    licenses_involved = sorted(licenses_involved_set, key=lambda x: x.spdx_id)
+    return generics_involved, orphaned_licenses, licenses_involved
 
 
 def export_licenses(indent=False):

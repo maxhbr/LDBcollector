@@ -6,6 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 {% extends "cube/cube.html" %}
+{% load cube_tags %}
 {% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
 {% block breadcrumbs %}
 <ul>
@@ -69,7 +70,11 @@ SPDX-License-Identifier: AGPL-3.0-only
       </li>
     </ul>
   </div>
-
+  <h2 class="title is-2">Licenses involved in this release</h2>
+  <p>{% for license_involved in licenses_involved %}
+    <a href="{% url "cube:license" license_involved.id %}"><span class="tag {{ license_involved|licenseAllowedCSS }}">{{ license_involved.spdx_id }}</span></a>
+   {% endfor %}
+  </p>
   <h2 class="title is-2">List of generic obligations to follow</h2>
   <table class="table">
     <thead>
