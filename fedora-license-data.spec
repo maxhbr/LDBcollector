@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.8
+Version:        1.9
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -89,6 +89,19 @@ make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %changelog
+* Sun Dec 11 2022 Miroslav Suchý <msuchy@redhat.com> 1.9-1
+- Add ibus-table-chinese FRWR statement to UltraPermissive
+  (rfontana@redhat.com)
+- Update UltraPermissive.txt (jlovejoy@redhat.com)
+- Add new file for collecting Freely Redistributable (jlovejoy@redhat.com)
+- Add BSD-3-Clause-Modification (code@musicinmybrain.net)
+- Add public domain license in perl-IO-HTML (mspacek@redhat.com)
+- Add GPL-3.0-only WITH Qt-GPL-exception-1.0 (arthur@bols.dev)
+- packaging: Don't unnecessarily generate rpmlint data (gotmax@e.email)
+- Add public domain text found in .NET 7 source code (omajid@redhat.com)
+- data: add HSNCL license (dcavalca@fedoraproject.org)
+- Add the OCaml LGPL linking exception (loganjerry@gmail.com)
+
 * Thu Nov 24 2022 Miroslav Suchý <msuchy@redhat.com> 1.8-1
 - Add Public Domain license text used in libselinux (plautrba@redhat.com)
 - Make LicenseRef for GPLv2 with UPX exception more SPDX-confrmant
