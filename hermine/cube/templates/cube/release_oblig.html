@@ -79,28 +79,28 @@ SPDX-License-Identifier: AGPL-3.0-only
   <table class="table">
     <thead>
       <tr>
-        <th>In core</th>
+        <th>In core?</th>
         <th>Generic name</th>
         <th>Lead</th>
         <th>Metacategory</th>
         <th>Passivity</th>
+        <th>Components</th>
       </tr>
     </thead>
     <tbody>
       {% for generic in generics_involved %}
         <tr>
-          <td><a href="{% url 'cube:release_generic' object.id generic.id %}">
-            {% if generic.in_core %}
-              <button class="button is-success"> In core</button>
+          <td>{% if generic.in_core %}
+              <span class="tag is-primary"> In core</span>
             {% else %}
-              <button class="button is-danger">Not in core</button>
+              <span class="tag is-danger"> Not in core</span>
             {% endif %}</a>
           </td>
-
-          <td>{{generic.name}}</td>
+          <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
           <td>{{generic.team.name}}</td>
           <td>{{generic.metacategory}}</td>
           <td>{{generic.passivity}}</td>
+          <td><a href="{% url 'cube:release_generic' object.id generic.id %}">Concerned components</a></td>
         </tr>
       {% endfor %}
     </tbody>
