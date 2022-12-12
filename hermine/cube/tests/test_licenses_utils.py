@@ -44,7 +44,7 @@ class ObligationsTestCase(TestCase):
         self.usage1.licenses_chosen.set([self.license1])
 
     def test_simple_usage_obligation(self):
-        generics, licenses = get_usages_obligations([self.usage1])
+        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
 
         self.assertIn(self.generic1, generics)
         self.assertIn(self.license1, licenses)
@@ -53,7 +53,7 @@ class ObligationsTestCase(TestCase):
         self.obligation1.trigger_mdf = Usage.MODIFICATION_ALTERED
         self.obligation1.save()
 
-        generics, licenses = get_usages_obligations([self.usage1])
+        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
         self.assertNotIn(self.generic1, generics)
 
     def test_triggering_modification_obligation(self):
@@ -62,21 +62,21 @@ class ObligationsTestCase(TestCase):
         self.usage1.component_modified = Usage.MODIFICATION_ALTERED
         self.usage1.save()
 
-        generics, licenses = get_usages_obligations([self.usage1])
+        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
         self.assertIn(self.generic1, generics)
 
     def test_only_non_source_trigger(self):
         self.obligation1.trigger_expl = Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE
         self.obligation1.save()
 
-        generics, licenses = get_usages_obligations([self.usage1])
+        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
         self.assertIn(self.generic1, generics)
 
     def test_triggering_explotation_source_only(self):
         self.usage1.exploitation = Usage.EXPLOITATION_DISTRIBUTION_SOURCE
         self.usage1.save()
 
-        generics, licenses = get_usages_obligations([self.usage1])
+        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
         self.assertIn(self.generic1, generics)
 
     def test_non_triggering_explotation(self):
@@ -85,7 +85,7 @@ class ObligationsTestCase(TestCase):
         self.usage1.exploitation = Usage.EXPLOITATION_DISTRIBUTION_SOURCE
         self.usage1.save()
 
-        generics, licenses = get_usages_obligations([self.usage1])
+        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
         self.assertNotIn(self.generic1, generics)
 
 

@@ -95,10 +95,14 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         usages = self.object.usage_set.all()
-        generics_involved, orphaned_licenses = get_usages_obligations(usages)
+        (
+            generics_involved,
+            orphaned_licenses,
+            licenses_involved,
+        ) = get_usages_obligations(usages)
         context["generics_involved"] = generics_involved
         context["orphaned_licenses"] = orphaned_licenses
-
+        context["licenses_involved"] = licenses_involved
         return context
 
 
