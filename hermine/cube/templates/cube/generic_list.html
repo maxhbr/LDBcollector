@@ -74,9 +74,9 @@ Generic obligations
               <tbody>
                 {% for generic in generics_incore %}
                   <tr>
-                    <td>{{generic.name}}</td>
-                    <td><div class="buttons"><button class="button is-primary">{{generic.get_metacategory_display}}</button></td>
-                    <td><button class="button is-link">{{generic.team.name}}</td>
+                    <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
+                    <td>{{generic.get_metacategory_display}}</td>
+                    <td>{{generic.team.name}}</td>
                     <td>{{ generic.obligation_set.all|length }}</td>
                     <td>{{ generic.passivity}}</td>
                     <td class="is-actions-cell">
@@ -140,9 +140,9 @@ Generic obligations
               <tbody>
                 {% for generic in generics_outcore %}
                   <tr>
-                    <td>{{generic.name}}</td>
-                    <td><div class="buttons"><button class="button is-primary">{{generic.get_metacategory_display}}</button></td>
-                    <td><button class="button is-link">{{generic.team.name}}</td>
+                    <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
+                    <td>{{generic.get_metacategory_display}}</td>
+                    <td>{{generic.team.name}}</td>
                     <td>{{ generic.obligation_set.all|length }}</td>
                     <td>{{ generic.passivity}}</td>
                     <td class="is-actions-cell">
