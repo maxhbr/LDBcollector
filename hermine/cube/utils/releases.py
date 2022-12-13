@@ -120,15 +120,15 @@ def validate_exploitations(release: Release):
     scopes = (
         release.usage_set.all()
         .order_by("scope")
-        .values_list("scope")
+        .values_list("project", "scope")
         .annotate(Count("id"))
     )
-    for scope, count in scopes:
+    for project, scope, count in scopes:
         try:
             exploitation = release.exploitations.get(scope=scope)
             scope_exploitations.add(exploitation)
         except Exploitation.DoesNotExist:
-            unset_scopes.add((scope, count))
+            unset_scopes.add((project, scope, count))
 
     context["exploitations"] = scope_exploitations
     context["unset_scopes"] = unset_scopes
