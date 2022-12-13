@@ -161,7 +161,8 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% if unset_scopes %}
     <article class="message is-warning">
       <div class="message-header">
-        <p>Some scopes have no exploitation mode defined</p>
+        <p>Some scopes have no exploitation mode defined.
+          You need to <a href="{% url 'cube:release_exploitations' release.pk %}">update exploitations</a>.</p>
       </div>
     </article>
 
@@ -170,7 +171,6 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tr>
           <th>Scope</th>
           <th>Components</th>
-          <th>Set exploitation</th>
         </tr>
       </thead>
       <tbody>
@@ -178,7 +178,6 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td>{{ scope }}</td>
             <td>{{ components_count }}</td>
-            <td>Go to <a href="{% url 'cube:release_exploitations' release.pk %}">exploitations form</a></td>
           </tr>
         {% endfor %}
       </tbody>
