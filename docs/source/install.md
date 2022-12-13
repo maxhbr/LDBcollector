@@ -137,15 +137,19 @@ docker-compose --profile localhost up -d
 ## Manual production install
 
 You can install yourself dependencies and services for running Hermine.
-You need a system running Python 3.8 server. Using a MySQL or PostgreSQL
+You need a system running Python 3.8 server. Using a PostgreSQL
 server rather than the default SQLite is recommended for production.
 
 ## OAuth
 
-You can use an OAuth2 server as authentication backend by configuring
-OAUTH_CLIENT entry in the mysecrets.py file.
+You can use an OAuth2 server as authentication backend by uncommenting and 
+adjusting  the `OAUTH_CLIENT` entry in your `mysecrets.py` file. When using Docker, 
+these elements have to be set in your `.env` file.  Further information
+can be found in [Python Social Auth’s documentation](https://python-social-auth.readthedocs.io/en/latest/configuration/django.html) 
+on which Hermine relies.
 
 Users will be created on the fly at authentication by the OAuth server.
+
 
 ## Health check
 
