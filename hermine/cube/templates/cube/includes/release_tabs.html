@@ -1,0 +1,40 @@
+<div class="tabs is-centered is-boxed is-medium">
+  <ul>
+    <li{% if active_tab == "summary" %} class="is-active"{% endif %}>
+      <a href="{% url 'cube:release_summary' object.pk %}">
+      <span class="icon is-small"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
+      <span>Summary</span>
+      </a>
+    </li>
+    <li{% if active_tab == "import" %} class="is-active"{% endif %}>
+      <a href="{% url 'cube:release_import' object.pk %}">
+        <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
+        <span>Import components</span>
+      </a>
+    </li>
+    <li{% if active_tab == "exploitations" %} class="is-active"{% endif %}>
+      <a href="{% url 'cube:release_exploitations' object.pk %}">
+        <span class="icon is-small"><i class="fas fa-sitemap" aria-hidden="true"></i></span>
+        <span>Exploitations</span>
+      </a>
+    </li>
+    <li{% if active_tab == "validation" %} class="is-active"{% endif %}>
+      <a href="{% url 'cube:release_validation' object.pk %}">
+        <span class="icon is-small"><i class="fas fa-check-double" aria-hidden="true"></i></span>
+        <span>Validation steps</span>
+      </a>
+    </li>
+    <li{% if active_tab == "bom" %} class="is-active"{% endif %}>
+      <a href="{% url 'cube:release_bom' object.pk %}">
+        <span class="icon is-small"><i class="fas fa-book" aria-hidden="true"></i></span>
+        <span>Bill of Materials</span>
+      </a>
+    </li>
+    <li {% if active_tab == "obligations" %} class="is-active"{% endif %}>
+      <a href="{% url 'cube:release_oblig' object.pk %}">
+        <span class="icon is-small"><i class="fas fa-certificate" aria-hidden="true"></i></span>
+        <span>Obligations</span>
+      </a>
+    </li>
+  </ul>
+</div>

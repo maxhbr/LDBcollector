@@ -119,7 +119,13 @@ Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
 
 ### Step 3
 
-Can be found at 'api/releases/<int:release_id>/validation_3/'
+Can be found at 'api/releases/int:release_id/validation_2/'
+
+Check that all scopes in the release have a default exploitation mode defined.
+
+### Step 4
+
+Can be found at 'api/releases/<int:release_id>/validation_4/'
 
 API endpoint that allows to know if there are complex license expressions in usages of this release.
 
@@ -137,9 +143,9 @@ to_resolve
 resolved
     An array of usages linked to a version hat either has a complex "corrected_license" eother a "spdx_valid_license_expr" field, and for which an explicit choice as been made.
 
-### Step 4
+### Step 5
 
-Can be found at 'api/releases/<int:release_id>/validation_4/'
+Can be found at 'api/releases/<int:release_id>/validation_5/'
 API endpoint that allows to know if there are Usages of unnacepted licenes in this release.
 In this case, you must set relevant derogations in Hermine UI.
 
@@ -174,6 +180,8 @@ An example
               if: ${{ success() }}
             - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_4/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_4.json --silent"
               if: ${{ success() }}
+            - run : "curl https://chantier.hermine-foss.org/api/releases/1/validation_4/ -H 'Authorization: Token ${{ secrets.HERMINE_TOKEN }}' --output .hermine/validation_5.json --silent"
+              if: ${{ success() }}
             - uses: actions/upload-artifact@v2
 ```
 
@@ -188,8 +196,9 @@ Example :
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="0" failures="1" tests="4">
     <testsuite disabled="0" errors="0" failures="1" name="Foobar" skipped="0" tests="4" time="0">
-        <testcase name="Usage normalization"/>
+        <testcase name="ULicenses curation"/>
         <testcase name="ANDs confirmation"/>
+        <testcase name="Scope exploitations"/>
         <testcase name="License choices"/>
         <testcase name="Policy compatibility">
             <failure type="failure" message="3 invalid component usages"/>

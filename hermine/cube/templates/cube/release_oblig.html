@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </div>
 {% endblock %}
 {% block content %}
-  {%if object.valid_step != 4 %}
+  {%if object.valid_step != 5 %}
 
     <article class="message is-warning">
       <div class="message-header">
@@ -35,41 +35,8 @@ SPDX-License-Identifier: AGPL-3.0-only
   </article>
   {%endif%}
 
-  <div class="tabs is-centered is-boxed is-medium">
-    <ul>
-      <li>
-        <a href="{% url 'cube:release_summary' object.id %}">
-        <span class="icon is-small"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
-        <span>Summary</span>
-        </a>
-      </li>
-      <li>
-        <a href="{% url 'cube:release_import' object.pk %}">
-          <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
-          <span>Import components</span>
-        </a>
-      </li>
+  {% include "cube/includes/release_tabs.html" with active_tab="obligations" %}
 
-      <li>
-        <a href="/release/{{object.id}}/validation/">
-          <span class="icon is-small"><i class="fas fa-check-double" aria-hidden="true"></i></span>
-          <span>Validation steps</span>
-        </a>
-      </li>
-      <li>
-        <a href="{% url 'cube:release_bom' object.pk %}">
-          <span class="icon is-small"><i class="fas fa-book" aria-hidden="true"></i></span>
-          <span>Bill of Materials</span>
-        </a>
-      </li>
-      <li class="is-active">
-        <a>
-          <span class="icon is-small"><i class="fas fa-certificate" aria-hidden="true"></i></span>
-          <span>Obligations</span>
-        </a>
-      </li>
-    </ul>
-  </div>
   <h2 class="title is-2">Licenses involved in this release</h2>
   <p>{% for license_involved in licenses_involved %}
     <a href="{% url "cube:license" license_involved.id %}"><span class="tag {{ license_involved|licenseAllowedCSS }}">{{ license_involved.spdx_id }}</span></a>
@@ -94,7 +61,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               <span class="tag is-primary"> In core</span>
             {% else %}
               <span class="tag is-danger"> Not in core</span>
-            {% endif %}</a>
+            {% endif %}
           </td>
           <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
           <td>{{generic.team.name}}</td>

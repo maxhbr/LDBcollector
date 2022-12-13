@@ -35,13 +35,14 @@ class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
     """
     Shows 4 validation steps for a release of a product:
     step 1 : checks that license metadata are present and correct
-    step 2 : checks that all licenses have been reviewed by legal dpt
-    step 3 : resolves choices in case of multi-licenses
-    step 4 : checks that chosen licenses are compatible with policy and derogs
+    step 2 : checks that no licenses expression is ambiguous
+    step 3 : ensure all scopes have a defined exploitation
+    step 4 : resolves choices in case of multi-licenses
+    step 5 : checks that chosen licenses are compatible with policy and derogs
     """
 
     model = Release
-    template_name = "cube/release.html"
+    template_name = "cube/release_validation.html"
 
     def get_queryset(self):
         return (

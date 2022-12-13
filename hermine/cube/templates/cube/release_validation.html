@@ -22,43 +22,12 @@ SPDX-License-Identifier: AGPL-3.0-only
 </div>
 {% endblock %}
 {% block content %}
-  <div class="tabs is-centered is-boxed is-medium">
-    <ul>
-      <li>
-        <a href="{% url 'cube:release_summary' object.pk %}">
-        <span class="icon is-small"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
-        <span>Summary</span>
-        </a>
-      </li>
-      <li>
-        <a href="{% url 'cube:release_import' object.pk %}">
-          <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
-          <span>Import components</span>
-        </a>
-      </li>
-      <li class="is-active">
-        <a>
-          <span class="icon is-small"><i class="fas fa-check-double" aria-hidden="true"></i></span>
-          <span>Validation steps</span>
-        </a>
-      </li>
-      <li>
-        <a href="{% url 'cube:release_bom' object.pk %}">
-          <span class="icon is-small"><i class="fas fa-book" aria-hidden="true"></i></span>
-          <span>Bill of Materials</span>
-        </a>
-      </li>
-      <li>
-        <a  href="/release/{{object.id}}/obligations">
-          <span class="icon is-small"><i class="fas fa-certificate" aria-hidden="true"></i></span>
-          <span>Obligations</span>
-        </a>
-      </li>
-    </ul>
-  </div>
+
+  {% include "cube/includes/release_tabs.html" with active_tab="validation" %}
+
   {% if object.valid_step < 4 %}
-    <p>You have completed validation step {{ object.valid_step }} out of 4 </p>
-    <progress class="progress is-large" value="{{ object.valid_step }}" max="4"></progress>
+    <p>You have completed validation step {{ object.valid_step }} out of 5 </p>
+    <progress class="progress is-large" value="{{ object.valid_step }}" max="5"></progress>
   {% else %}
     <article class="message is-success is-large">
       <div class="message-header">
@@ -187,7 +156,47 @@ SPDX-License-Identifier: AGPL-3.0-only
       {{ confirmed|length }} confirmations</a> for this release.</p>
   {% endif %}
 
-  <h4 class="title is-4">Step 3 - Resolve license choices for this release</h4>
+  <h4 class="title is-4">Step 3 - Defined exploitation mode for each scope</h4>
+
+  {% if unset_scopes %}
+    <article class="message is-warning">
+      <div class="message-header">
+        <p>Some scopes have no exploitation mode defined.
+          You need to <a href="{% url 'cube:release_exploitations' release.pk %}">update exploitations</a>.</p>
+      </div>
+    </article>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Subproject</th>
+          <th>Scope</th>
+          <th>Components</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for project, scope, components_count in unset_scopes %}
+          <tr>
+            <td>{{ project }}</td>
+            <td>{{ scope }}</td>
+            <td>{{ components_count }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <article class="message is-success">
+      <div class="message-header">
+        <p>Success</p>
+      </div>
+      <div class="message-body">
+        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All scopes have an exploitation mode defined.
+      </div>
+    </article>
+
+  {% endif %}
+
+  <h4 class="title is-4">Step 4 - Resolve license choices for this release</h4>
 
   {% if to_resolve %}
     <article class="message is-warning">
@@ -240,7 +249,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
 
-  <h4 class="title is-4">Step 4 - Check licenses against policy</h4>
+  <h4 class="title is-4">Step 5 - Check licenses against policy</h4>
 
   {% if usages_lic_unknown %}
     <article class="message is-dark">

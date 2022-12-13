@@ -99,34 +99,41 @@ class ProductSerializer(serializers.ModelSerializer):
         return instance
 
 
-class Validation1Serializer(serializers.Serializer):
+## Validation step serializers
+
+
+class BaseValidationStepSerializer(serializers.Serializer):
     valid = serializers.BooleanField(label="Step is valid", read_only=True)
+    details = serializers.URLField(read_only=True)
+
+
+class ExpressionValidationSerializer(BaseValidationStepSerializer):
     invalid_expressions = VersionSerializer(read_only=True, many=True)
     fixed_expressions = VersionSerializer(read_only=True, many=True)
-    details = serializers.URLField(read_only=True)
 
 
-class Validation2Serializer(serializers.Serializer):
-    valid = serializers.BooleanField(label="Step is valid", read_only=True)
+class AndsValidationSerializer(BaseValidationStepSerializer):
     to_confirm = UsageSerializer(read_only=True, many=True)
-    details = serializers.URLField(read_only=True)
 
 
-class Validation3Serializer(serializers.Serializer):
-    valid = serializers.BooleanField(label="Step is valid", read_only=True)
+class ExploitationsValidationSerializer(BaseValidationStepSerializer):
+    exploitations = ExploitationSerializer(read_only=True, many=True)
+    unset_scopes = serializers.ListSerializer(
+        child=serializers.CharField(), read_only=True
+    )
+
+
+class ChoicesValidationSerializer(BaseValidationStepSerializer):
     to_resolve = UsageSerializer(read_only=True, many=True)
     resolved = UsageSerializer(read_only=True, many=True)
-    details = serializers.URLField(read_only=True)
 
 
-class Validation4Serializer(serializers.Serializer):
-    valid = serializers.BooleanField(label="Step is valid", read_only=True)
+class PolicyValidationSerializer(BaseValidationStepSerializer):
     usages_lic_never_allowed = UsageSerializer(read_only=True, many=True)
     usages_lic_context_allowed = UsageSerializer(read_only=True, many=True)
     usages_lic_unknown = UsageSerializer(read_only=True, many=True)
     involved_lic = LicenseSerializer(read_only=True, many=True)
     derogations = DerogationSerializer(read_only=True, many=True)
-    details = serializers.URLField(read_only=True)
 
 
 class UploadSPDXSerializer(serializers.Serializer):
