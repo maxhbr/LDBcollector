@@ -4,25 +4,19 @@
 
 from rest_framework import serializers
 
-from cube.models import LicenseChoice, Derogation, LicenseCuration, ExpressionValidation
+from cube.models import LicenseChoice, Derogation, LicenseCuration
 
 
 class LicenseCurationSerializer(serializers.ModelSerializer):
     class Meta:
         model = LicenseCuration
-        exclude = ("decision_type", "release", "product", "scope")
-
-
-class ExpressionValidationSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = ExpressionValidation
-        exclude = ("decision_type", "release", "product", "scope")
+        fields = "__all__"
 
 
 class LicenseChoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = LicenseChoice
-        exclude = ("decision_type",)
+        fields = "__all__"
 
 
 class DerogationSerializer(serializers.ModelSerializer):

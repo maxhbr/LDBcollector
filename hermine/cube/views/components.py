@@ -8,7 +8,7 @@ from django.db.models import Count
 from django.urls import reverse_lazy
 from django.views import generic
 
-from cube.forms.components import LicenseCurationCreateForm
+from cube.forms.components import LicenseCurationCreateForm, LicenseCurationUpdateForm
 from cube.forms.release_validation import CreateLicenseCurationForm
 from cube.models import Component, LicenseCuration
 from cube.views.mixins import SearchMixin, SaveAuthorMixin
@@ -61,5 +61,5 @@ class LicenseCurationUpdateView(
     LoginRequiredMixin, SaveAuthorMixin, generic.UpdateView
 ):
     model = LicenseCuration
-    fields = ["expression_in", "expression_out", "explanation"]
+    form_class = LicenseCurationUpdateForm
     success_url = reverse_lazy("cube:licensecurations")

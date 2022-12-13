@@ -9,9 +9,7 @@ from django.contrib.auth.models import User
 from cube.models.components import Component, Version, Usage
 from cube.models.licenses import License, Team, Generic, Obligation
 from cube.models.policy import (
-    UsageDecision,
     LicenseCuration,
-    ExpressionValidation,
     LicenseChoice,
     Derogation,
 )

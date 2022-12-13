@@ -39,18 +39,18 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version }}</a> </td>
             <td>{{ usage.version.corrected_license }}</td>
             <td>
-              {% if usage.expression_validations|length == 1 %}
-                <a href="{% url "admin:cube_expressionvalidation_change"  usage.expression_validations.0.pk %}">Edit rule</a>
-                {% if usage.expression_validations.0.expression_out != usage.version.corrected_license %}
+              {% if usage.version.curations|length == 1 %}
+                <a href="{% url "admin:cube_licensecuration_change"  usage.version.curations.0.pk %}">Edit rule</a>
+                {% if usage.version.curations.0.expression_out != usage.version.corrected_license %}
                   <br><small>Expression does not match curation
-                  <form action="{% url "cube:release_update_expression_validation" usage.pk %}" method="POST" class="form is-inline">
+                  <form action="{% url "cube:release_update_andsvalidation" usage.pk %}" method="POST" class="form is-inline">
                     {% csrf_token %}
                     <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
                 {% endif %}
-              {% elif usage.expression_validations|length > 1 %}
-                {{ usage.expression_validations|length }} curations apply. Edit curations
-                {% for curation in usage.expression_validations %}
-                  <a href="{% url "admin:cube_expressionvalidation_change" choice.pk %}">
+              {% elif usage.version.curations|length > 1 %}
+                {{ usage.version.curations|length }} curations apply. Edit curations
+                {% for curation in usage.version.curations %}
+                  <a href="{% url "admin:cube_licensecuration_change" choice.pk %}">
                     {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
                 {% endfor %}
               {% endif %}
@@ -80,18 +80,18 @@ SPDX-License-Identifier: AGPL-3.0-only
           <td>{{ usage.version.spdx_valid_license_expr }} </td>
           <td>{{ usage.version.corrected_license}}</td>
           <td>
-            {% if usage.expression_validations|length == 1 %}
-              <a href="{% url "admin:cube_expressionvalidation_change"  usage.expression_validations.0.pk %}">Edit rule</a>
-              {% if usage.expression_validations.0.expression_out != usage.version.corrected_license %}
+            {% if usage.version.curations|length == 1 %}
+              <a href="{% url "admin:cube_licensecuration_change"  usage.version.curations.0.pk %}">Edit rule</a>
+              {% if usage.version.curations.0.expression_out != usage.version.corrected_license %}
                 <br><small>Expression does not match curation
-                <form action="{% url "cube:release_update_expression_validation" usage.pk %}" method="POST" class="form is-inline">
+                <form action="{% url "cube:release_update_andsvalidation" usage.pk %}" method="POST" class="form is-inline">
                   {% csrf_token %}
                   <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
               {% endif %}
-            {% elif usage.expression_validations|length > 1 %}
-              {{ usage.expression_validations|length }} curations apply. Edit curations
-              {% for curation in usage.expression_validations %}
-                <a href="{% url "admin:cube_expressionvalidation_change" choice.pk %}">
+            {% elif usage.version.curations|length > 1 %}
+              {{ usage.version.curations|length }} curations apply. Edit curations
+              {% for curation in usage.version.curations %}
+                <a href="{% url "admin:cube_licensecuration_change" choice.pk %}">
                   {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
               {% endfor %}
             {% endif %}

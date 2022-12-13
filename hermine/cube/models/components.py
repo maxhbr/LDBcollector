@@ -91,18 +91,6 @@ class Usage(models.Model):
     license_expression = models.CharField(max_length=500, blank=True)
 
     @property
-    def license_curations(self):
-        from cube.models.policy import LicenseCuration
-
-        return LicenseCuration.objects.for_usage(self)
-
-    @property
-    def expression_validations(self):
-        from cube.models.policy import ExpressionValidation
-
-        return ExpressionValidation.objects.for_usage(self)
-
-    @property
     def license_choices(self):
         from cube.models.policy import LicenseChoice
 
@@ -183,6 +171,10 @@ class Version(models.Model):
         return not self.corrected_license and is_ambiguous(self.spdx_valid_license_expr)
 
     @property
+    def imported_license(self):
+        return self.spdx_valid_license_expr or self.declared_license_expr
+
+    @property
     def effective_license(self):
         return self.corrected_license or self.spdx_valid_license_expr
 
@@ -196,12 +188,16 @@ class Version(models.Model):
             spdx_id__in=[id for id in explode_spdx_to_units(self.effective_license)]
         )
 
+    @property
+    def curations(self):
+        from cube.models.policy import LicenseCuration
+
+        return LicenseCuration.objects.for_version(self)
+
     class Meta:
         unique_together = ["component", "version_number"]
+        verbose_name = "Component version"
+        verbose_name_plural = "Component versions"
 
     def __str__(self):
         return self.component.__str__() + ":" + self.version_number
-
-    class Meta:
-        verbose_name = "Component version"
-        verbose_name_plural = "Component versions"
