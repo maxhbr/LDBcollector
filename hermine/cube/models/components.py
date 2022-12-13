@@ -151,12 +151,12 @@ class Version(models.Model):
     spdx_valid_license_expr = models.CharField(
         max_length=200,
         blank=True,
-        help_text="License expression validated by user",
+        help_text="License expression concluded by analyzing tool (e.g. ORT)",
     )
     corrected_license = models.CharField(
         max_length=200,
         blank=True,
-        help_text="Final license expression used in legal evaluation (required when validated expression is ambiguous)",
+        help_text="Final license expression used in legal evaluation (required when validated expression is ambiguous or empty)",
     )
     purl = models.CharField(
         max_length=250,

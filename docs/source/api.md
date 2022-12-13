@@ -108,7 +108,7 @@ The response is a dictionary with the following fields :
 invalid_expressions
     An array of Version objects for which license expression is empty or invalid.
 fixed_expressions
-    An array of Version objects for which spdx_valid_expression is different from original imported expression.
+    An array of Version objects for which there is a corrected_license and no spdx_valid_license_expr.
  
 
 ### Step 2
@@ -196,7 +196,7 @@ Example :
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="0" failures="1" tests="4">
     <testsuite disabled="0" errors="0" failures="1" name="Foobar" skipped="0" tests="4" time="0">
-        <testcase name="ULicenses curation"/>
+        <testcase name="Licenses curation"/>
         <testcase name="ANDs confirmation"/>
         <testcase name="Scope exploitations"/>
         <testcase name="License choices"/>

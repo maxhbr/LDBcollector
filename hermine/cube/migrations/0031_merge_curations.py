@@ -172,4 +172,22 @@ class Migration(migrations.Migration):
             name="updated",
             field=models.DateTimeField(auto_now=True),
         ),
+        migrations.AlterField(
+            model_name="version",
+            name="corrected_license",
+            field=models.CharField(
+                blank=True,
+                help_text="Final license expression used in legal evaluation (required when validated expression is ambiguous or empty)",
+                max_length=200,
+            ),
+        ),
+        migrations.AlterField(
+            model_name="version",
+            name="spdx_valid_license_expr",
+            field=models.CharField(
+                blank=True,
+                help_text="License expression concluded by analyzing tool (e.g. ORT)",
+                max_length=200,
+            ),
+        ),
     ]
