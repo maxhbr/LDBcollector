@@ -125,7 +125,7 @@ def validate_exploitations(release: Release):
     )
     for project, scope, count in scopes:
         try:
-            exploitation = release.exploitations.get(scope=scope)
+            exploitation = release.exploitations.get(scope=scope, project=project)
             scope_exploitations.add(exploitation)
         except Exploitation.DoesNotExist:
             unset_scopes.add((project, scope, count))
