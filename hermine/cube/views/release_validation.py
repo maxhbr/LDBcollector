@@ -14,7 +14,7 @@ from django.views.generic import UpdateView, ListView, CreateView, TemplateView
 
 from cube.forms.release_validation import (
     CreateLicenseCurationForm,
-    CreateExpressionValidationForm,
+    CreateAndsValidationForm,
     CreateLicenseChoiceForm,
     CreateDerogationForm,
 )
@@ -22,7 +22,6 @@ from cube.models import (
     Release,
     Usage,
     LicenseCuration,
-    ExpressionValidation,
     LicenseChoice,
     Derogation,
 )
@@ -81,6 +80,19 @@ class AbstractCreateUsageConditionView(LoginRequiredMixin, SaveAuthorMixin, Crea
         return reverse("cube:release_validation", kwargs={"pk": self.usage.release.id})
 
 
+class AbstractResetCorrectedLicenseView(UpdateView):
+    model = Usage
+    fields = []
+
+    def form_valid(self, form):
+        self.object.version.corrected_license = ""
+        self.object.version.save()
+        return HttpResponseRedirect(self.get_success_url())
+
+    def form_invalid(self, form):
+        return HttpResponseRedirect(self.get_success_url())
+
+
 # Step 1
 
 
@@ -110,18 +122,7 @@ class ReleaseCuratedLicensesListView(ListView):
 
 
 @method_decorator(require_POST, "dispatch")
-class UpdateLicenseCurationView(UpdateView):
-    model = Usage
-    fields = []
-
-    def form_valid(self, form):
-        self.object.version.spdx_valid_license_expr = ""
-        self.object.version.save()
-        return HttpResponseRedirect(self.get_success_url())
-
-    def form_invalid(self, form):
-        return HttpResponseRedirect(self.get_success_url())
-
+class UpdateLicenseCurationView(AbstractResetCorrectedLicenseView):
     def get_success_url(self):
         return reverse(
             "cube:release_curated_licenses", kwargs={"id": self.object.release.pk}
@@ -131,20 +132,24 @@ class UpdateLicenseCurationView(UpdateView):
 # Step 3
 
 
-class ReleaseExpressionValidationCreateView(AbstractCreateUsageConditionView):
-    model = ExpressionValidation
-    form_class = CreateExpressionValidationForm
+class ReleaseAndsValidationCreateView(AbstractCreateUsageConditionView):
+    model = LicenseCuration
+    form_class = CreateAndsValidationForm
 
 
-class ReleaseExpressionValidationListView(TemplateView):
-    template_name = "cube/release_expression_validations.html"
+class ReleaseAndsValidationListView(TemplateView):
+    template_name = "cube/release_ands_validations.html"
     release = None
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         self.release = get_object_or_404(Release, id=self.kwargs["id"])
         context["release"] = self.release
-        usages = self.release.usage_set.all().exclude(version__corrected_license="")
+        usages = (
+            self.release.usage_set.all()
+            .exclude(version__corrected_license="")
+            .exclude(version__spdx_valid_license_expr="")
+        )
         context["confirmed_usages"] = usages.filter(
             version__corrected_license=F("version__spdx_valid_license_expr")
         )
@@ -155,21 +160,10 @@ class ReleaseExpressionValidationListView(TemplateView):
 
 
 @method_decorator(require_POST, "dispatch")
-class UpdateExpressionValidationView(UpdateView):
-    model = Usage
-    fields = []
-
-    def form_valid(self, form):
-        self.object.version.corrected_license = ""
-        self.object.version.save()
-        return HttpResponseRedirect(self.get_success_url())
-
-    def form_invalid(self, form):
-        return HttpResponseRedirect(self.get_success_url())
-
+class UpdateAndsValidationView(AbstractResetCorrectedLicenseView):
     def get_success_url(self):
         return reverse(
-            "cube:release_expression_validations", kwargs={"id": self.object.release.pk}
+            "cube:release_ands_validations", kwargs={"id": self.object.release.pk}
         )
 
 

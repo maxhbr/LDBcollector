@@ -8,7 +8,6 @@ from rest_framework.test import APITestCase as BaseAPITestCase
 from cube.models import (
     Usage,
     Derogation,
-    ExpressionValidation,
     Release,
     LicenseCuration,
     License,
@@ -310,7 +309,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         ## Simulate fixing manually
         LicenseCuration.objects.create(
             expression_in="Permissive-1.0 AND WeekCopyLeft-1.0",
-            expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
+            expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0",
         )
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
@@ -326,7 +325,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(res.data["valid"], False)
 
         ## Simulate fixing manually
-        ExpressionValidation.objects.create(
+        LicenseCuration.objects.create(
             expression_in="LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
             expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0",
         )

@@ -8,70 +8,33 @@ from django.db.models import Q
 
 from cube.models import (
     Usage,
+    Version,
 )
 from cube.utils.validators import validate_spdx_expression
 
 
-class PolicyMixin(models.Model):
-    """
-    A mixin for all models in this file to filter a decision by component or usage.
-    """
-
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-    author = models.ForeignKey(
-        settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, editable=False
-    )
-    product = models.ForeignKey(
-        "Product", on_delete=models.CASCADE, blank=True, null=True
-    )
-    release = models.ForeignKey(
-        "Release", on_delete=models.CASCADE, blank=True, null=True
-    )
+class AbstractComponentRule(models.Model):
     component = models.ForeignKey(
         "Component", on_delete=models.CASCADE, blank=True, null=True
     )
     version = models.ForeignKey(
         "Version", on_delete=models.CASCADE, blank=True, null=True
     )
-    scope = models.CharField(
-        max_length=128,
-        blank=True,
-        null=True,
-        help_text="Leave blank to apply for any scope",
-    )
 
     @property
     def condition_display(self):
-        result = ""
-        if self.release is not None:
-            result += f"product: {self.release} — "
-        elif self.product is not None:
-            result += f"product: {self.product} (any release) — "
-        else:
-            result += "product: any — "
-
         if self.version is not None:
-            result += f"component: {self.version}"
+            return f"component: {self.version}"
         elif self.component:
-            result += f"component: {self.component} (any version)"
+            return f"component: {self.component} (any version)"
         else:
-            result += "component: any"
-
-        if self.scope:
-            return result + f" — scope: {self.scope}"
-        else:
-            return result + f" — scope: any"
+            return "component: any"
 
     def clean(self):
         """Model validation
 
         :meta private:
         """
-        if self.release is not None and self.product is not None:
-            raise ValidationError(
-                "Rule can only apply to a product or a specific release."
-            )
         if self.component is not None and self.version is not None:
             raise ValidationError(
                 "Rule can only apply to a component or a specific component version."
@@ -87,39 +50,35 @@ class PolicyMixin(models.Model):
         abstract = True
 
 
-class UsageConditionManager(models.Manager):
-    def for_usage(self, usage: Usage):
+# Curations
+
+
+class LicenseCurationManager(models.Manager):
+    def for_version(self, version: Version):
         return self.filter(
-            Q(component=usage.version.component) | Q(component=None),
-            Q(version=usage.version) | Q(version=None),
-            Q(product=usage.release.product) | Q(product=None),
-            Q(release=usage.release) | Q(release=None),
-            Q(scope=usage.scope) | Q(scope=None),
+            Q(component=version.component) | Q(component=None),
+            Q(version=version) | Q(version=None),
+            Q(expression_in=version.imported_license),
         )
 
 
-## usagedecision table
-
-
-class UsageDecision(PolicyMixin, models.Model):
+class LicenseCuration(AbstractComponentRule):
     """
-    A generic class to generalize licenses curations, disambiguation or choices to
-    several versions, releases or products.
+    A human decision to replace an imported license string with the correct SPDX expression
     """
 
-    objects = UsageConditionManager()
+    objects = LicenseCurationManager()
 
-    LICENSE_CHOICE = "choice"
-    EXPRESSION_VALIDATION = "validation"
-    LICENSE_CURATION = "curation"
-    DECISION_TYPES = (
-        (LICENSE_CHOICE, "License choice"),
-        (EXPRESSION_VALIDATION, "Expression validation"),
-        (LICENSE_CURATION, "License curation"),
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, editable=False
     )
 
-    decision_type = models.CharField(
-        max_length=500, choices=DECISION_TYPES, blank=False
+    declared_expression = models.CharField(
+        max_length=500,
+        blank=True,
+        help_text="The declared expression before any curation (used only for curation exports)",
     )
 
     expression_in = models.CharField(
@@ -135,11 +94,81 @@ class UsageDecision(PolicyMixin, models.Model):
 
     explanation = models.TextField(max_length=500, blank=True, null=True)
 
-    def __str__(self):
-        return self.expression_in or "(blank)" + " → " + self.expression_out
+
+class AbstractUsageRule(AbstractComponentRule):
+    """
+    A mixin for all models in this file to filter a decision by component or usage.
+    """
+
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, editable=False
+    )
+    product = models.ForeignKey(
+        "Product", on_delete=models.CASCADE, blank=True, null=True
+    )
+    release = models.ForeignKey(
+        "Release", on_delete=models.CASCADE, blank=True, null=True
+    )
+
+    scope = models.CharField(
+        max_length=128,
+        blank=True,
+        null=True,
+        help_text="Leave blank to apply for any scope",
+    )
+
+    @property
+    def condition_display(self):
+        result = super().condition_display
+        if self.release is not None:
+            result += f" — product: {self.release}"
+        elif self.product is not None:
+            result += f" — product: {self.product} (any release)"
+        else:
+            result += " — product: any"
+
+        if self.version is not None:
+            result += f" — component: {self.version}"
+        elif self.component:
+            result += f" — component: {self.component} (any version)"
+        else:
+            result += " — component: any"
+
+        if self.scope:
+            return result + f" — scope: {self.scope}"
+        else:
+            return result + f" — scope: any"
+
+    def clean(self):
+        """Model validation
+
+        :meta private:
+        """
+        if self.release is not None and self.product is not None:
+            raise ValidationError(
+                "Rule can only apply to a product or a specific release."
+            )
+
+        return super().clean()
+
+    class Meta:
+        abstract = True
 
 
-class LicenseChoiceManager(UsageConditionManager):
+class AbstractUsageRuleManager(models.Manager):
+    def for_usage(self, usage: Usage):
+        return self.filter(
+            Q(component=usage.version.component) | Q(component=None),
+            Q(version=usage.version) | Q(version=None),
+            Q(product=usage.release.product) | Q(product=None),
+            Q(release=usage.release) | Q(release=None),
+            Q(scope=usage.scope) | Q(scope=None),
+        )
+
+
+class LicenseChoiceManager(AbstractUsageRuleManager):
     def for_usage(self, usage: Usage):
         return (
             super()
@@ -147,113 +176,38 @@ class LicenseChoiceManager(UsageConditionManager):
             .filter(expression_in=usage.version.effective_license)
         )
 
-    def get_queryset(self):
-        return super().get_queryset().filter(decision_type=UsageDecision.LICENSE_CHOICE)
 
-
-class LicenseChoice(UsageDecision):
+class LicenseChoice(AbstractUsageRule, models.Model):
     """
     A choice of license for when a SPDX expressions contains ORs
     """
 
     objects = LicenseChoiceManager()
 
-    def __init__(self, *args, **kwargs):
-        self._meta.get_field("decision_type").default = UsageDecision.LICENSE_CHOICE
-        super().__init__(*args, **kwargs)
+    expression_in = models.CharField(
+        max_length=500,
+        help_text="The exact expression which must be changed",
+    )
+    expression_out = models.CharField(
+        max_length=500,
+        help_text="The expression which will replace `expression_in`",
+        validators=[validate_spdx_expression],
+    )
+
+    explanation = models.TextField(max_length=500, blank=True, null=True)
+
+    def __str__(self):
+        return self.expression_in + " → " + self.expression_out
 
     class Meta:
-        proxy = True
         verbose_name = "License choice rule"
         verbose_name_plural = "License choice rules"
-
-
-class ComponentDecisionManager(UsageConditionManager):
-    def create(
-        self,
-        release=None,
-        release_id=None,
-        product=None,
-        product_id=None,
-        scope=None,
-        **kwargs,
-    ):
-        if release is not None or release_id is not None:
-            raise ValidationError("Release field must be empty.")
-        if product is not None or product_id is not None:
-            raise ValidationError("Product field must be empty.")
-        if scope is not None:
-            raise ValidationError("Scope field must be empty.")
-        return super().create(**kwargs)
-
-
-class ComponentDecisionMixin(models.Model):
-    def clean(self):
-        if self.release:
-            raise ValidationError("Release field must be empty.")
-        if self.product:
-            raise ValidationError("Product field must be empty.")
-        if self.scope:
-            raise ValidationError("Scope field must be empty.")
-        return super().clean()
-
-    class Meta:
-        abstract = True
-
-
-class ExpressionValidationManager(ComponentDecisionManager):
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .filter(decision_type=UsageDecision.EXPRESSION_VALIDATION)
-        )
-
-
-class ExpressionValidation(ComponentDecisionMixin, UsageDecision):
-    """
-    A human decision about an ambiguous SPDX expression
-    (typically contains only ANDs which could be badly registered ORs)
-    """
-
-    objects = ExpressionValidationManager()
-
-    def __init__(self, *args, **kwargs):
-        self._meta.get_field(
-            "decision_type"
-        ).default = UsageDecision.EXPRESSION_VALIDATION
-        super().__init__(*args, **kwargs)
-
-    class Meta:
-        proxy = True
-
-
-class LicenseCurationManager(ComponentDecisionManager):
-    def get_queryset(self):
-        return (
-            super().get_queryset().filter(decision_type=UsageDecision.LICENSE_CURATION)
-        )
-
-
-class LicenseCuration(ComponentDecisionMixin, UsageDecision):
-    """
-    A human decision to replace an imported license string with the correct SPDX valid expression
-    """
-
-    objects = LicenseCurationManager()
-
-    def __init__(self, *args, **kwargs):
-        self._meta.get_field("decision_type").default = UsageDecision.LICENSE_CURATION
-        super().__init__(*args, **kwargs)
-
-    class Meta:
-        proxy = True
 
 
 ## derogation table
 
 
-class DerogationManager(UsageConditionManager):
+class DerogationManager(AbstractUsageRuleManager):
     def for_usage(self, usage: Usage):
         return (
             super()
@@ -266,7 +220,7 @@ class DerogationManager(UsageConditionManager):
         )
 
 
-class Derogation(PolicyMixin, models.Model):
+class Derogation(AbstractUsageRule, models.Model):
     """
     A derogation to policy allowing use of a license, which can be generalized to a component, a release or a product.
     """

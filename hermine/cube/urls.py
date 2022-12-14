@@ -176,19 +176,19 @@ urlpatterns = [
         name="release_update_license_curation",
     ),
     path(
-        "usage/<int:usage_pk>/add_expression_validation/",
-        views.ReleaseExpressionValidationCreateView.as_view(),
-        name="release_expressionvalidation_create",
+        "usage/<int:usage_pk>/add_ands_validation/",
+        views.ReleaseAndsValidationCreateView.as_view(),
+        name="release_andsvalidation_create",
     ),
     path(
-        "release/<int:id>/validation/expression_validations/",
-        views.ReleaseExpressionValidationListView.as_view(),
-        name="release_expression_validations",
+        "release/<int:id>/validation/ands_validations/",
+        views.ReleaseAndsValidationListView.as_view(),
+        name="release_ands_validations",
     ),
     path(
-        "usage/<int:pk>/update_expression_validation/",
-        views.UpdateExpressionValidationView.as_view(),
-        name="release_update_expression_validation",
+        "usage/<int:pk>/update_ands_validation/",
+        views.UpdateAndsValidationView.as_view(),
+        name="release_update_andsvalidation",
     ),
     path(
         "usage/<int:usage_pk>/add_license_choice/",
@@ -243,11 +243,6 @@ router.register(r"usages", api_views.UsageViewSet, basename="usages")
 router.register(r"products", api_views.ProductViewSet, basename="products")
 router.register(r"licenses", api_views.LicenseViewSet, basename="licenses")
 router.register(r"curations", api_views.LicenseCurationViewSet, basename="curations")
-router.register(
-    r"expression-validations",
-    api_views.ExpressionValidationViewSet,
-    basename="expression-validations",
-)
 router.register(r"choices", api_views.LicenseChoiceViewSet, basename="choices")
 router.register(r"derogations", api_views.DerogationViewSet, basename="derogations")
 

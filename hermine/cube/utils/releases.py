@@ -9,7 +9,6 @@ from cube.models import (
     Release,
     License,
     LicenseChoice,
-    ExpressionValidation,
     LicenseCuration,
     Exploitation,
 )
@@ -42,25 +41,22 @@ def validate_expressions(release):
 
     for usage in invalid_expressions:
         try:
-            usage.version.spdx_valid_license_expr = (
-                LicenseCuration.objects.for_usage(usage)
-                .get(expression_in=usage.version.declared_license_expr)
-                .expression_out
+            usage.version.corrected_license = (
+                LicenseCuration.objects.for_version(usage.version).get().expression_out
             )
+
             usage.version.save()
         except LicenseCuration.DoesNotExist:
             continue
 
     invalid_expressions = [
-        usage
-        for usage in invalid_expressions
-        if not usage.version.spdx_valid_license_expr
+        usage for usage in invalid_expressions if not usage.version.corrected_license
     ]
     context["invalid_expressions"] = invalid_expressions
 
-    context["fixed_expressions"] = release.usage_set.exclude(
-        version__corrected_license=""
-    ).exclude(version__spdx_valid_license_expr=F("version__corrected_license"))
+    context["fixed_expressions"] = release.usage_set.filter(
+        version__spdx_valid_license_expr=""
+    ).exclude(version__corrected_license="")
 
     context["nb_validated_components"] = len(release.usage_set.all()) - len(
         invalid_expressions
@@ -83,13 +79,12 @@ def validate_ands(release: Release):
     for usage in ambiguous_spdx:
         try:
             usage.version.corrected_license = (
-                ExpressionValidation.objects.for_usage(usage)
-                .filter(expression_in=usage.version.spdx_valid_license_expr)
+                LicenseCuration.objects.for_version(usage.version)
                 .values_list("expression_out", flat=True)
                 .get()
             )
             usage.version.save()
-        except ExpressionValidation.DoesNotExist:
+        except LicenseCuration.DoesNotExist:
             continue
 
     context["to_confirm"] = [
