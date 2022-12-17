@@ -26,6 +26,83 @@ text = '''
 text here
 '''
 
+package = gdouros-aegean-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-aegyptus-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-akkadian-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-alexander-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-anaktoria-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-analecta-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-aroania-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-asea-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-avdira-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-musica-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
+package = gdouros-symbola-fonts
+location = https://web.archive.org/web/20150625020428/http://users.teilar.gr/~g1951d/
+text = '''
+in lieu of a licence
+Fonts and documents in this site are not pieces of property or merchandise items; they carry no trademark, copyright, license or other market tags; they are free for any use.
+'''
+
 package = perl-IO-HTML
 location = https://metacpan.org/release/CJM/IO-HTML-1.004/source/examples/detect-encoding.pl
 text = '''
