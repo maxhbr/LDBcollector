@@ -181,6 +181,12 @@ Still 100% Public Domain
 '''
 
 package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/lib/bundler/digest.rb#L3
+text = '''
+This code was extracted from https://github.com/Solistra/ruby-digest which is under public domain
+'''
+
+package = ruby
 location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/st.c#L1-L5
 text = '''
 This is a public domain general purpose hash table package
