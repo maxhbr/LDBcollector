@@ -181,6 +181,15 @@ Still 100% Public Domain
 '''
 
 package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/st.c#L1-L5
+text = '''
+This is a public domain general purpose hash table package
+originally written by Peter Moore @ UCB.
+The hash table data structures were redesigned and the package was
+rewritten by Vladimir Makarov <vmakarov@redhat.com>.
+'''
+
+package = ruby
 location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/include/ruby/st.h#L1-L5
 text = '''
 This is a public domain general purpose hash table package
