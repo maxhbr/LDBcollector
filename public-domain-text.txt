@@ -181,6 +181,12 @@ Still 100% Public Domain
 '''
 
 package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/win32/win32.c#L5147
+text = '''
+License: Public Domain, copied from mingw headers
+'''
+
+package = ruby
 location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/tgamma.c#L1-L7
 text = '''
 tgamma.c  - public domain implementation of function tgamma(3m)
