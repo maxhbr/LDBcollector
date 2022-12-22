@@ -1,0 +1,16 @@
+[license]
+
+expression = "IJG-short"
+status = [ "allowed" ]
+
+
+
+[fedora]
+
+legacy-name = [
+    "Independent JPEG Group License"
+]
+
+legacy-abbreviation = [
+    "IJG"
+]
