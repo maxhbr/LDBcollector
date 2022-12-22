@@ -181,6 +181,53 @@ Still 100% Public Domain
 '''
 
 package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/strftime.c#L4-L47
+text = '''
+Public-domain implementation of ANSI C library routine.
+
+It's written in old-style C for maximal portability.
+However, since I'm used to prototypes, I've included them too.
+
+If you want stuff in the System V ascftime routine, add the SYSV_EXT define.
+For extensions from SunOS, add SUNOS_EXT.
+For stuff needed to implement the P1003.2 date command, add POSIX2_DATE.
+For VMS dates, add VMS_EXT.
+For a an RFC822 time format, add MAILHEADER_EXT.
+For ISO week years, add ISO_DATE_EXT.
+For complete POSIX semantics, add POSIX_SEMANTICS.
+
+The code for %c, %x, and %X now follows the 1003.2 specification for
+the POSIX locale.
+This version ignores LOCALE information.
+It also doesn't worry about multi-byte characters.
+So there.
+
+This file is also shipped with GAWK (GNU Awk), gawk specific bits of
+code are included if GAWK is defined.
+
+Arnold Robbins
+January, February, March, 1991
+Updated March, April 1992
+Updated April, 1993
+Updated February, 1994
+Updated May, 1994
+Updated January, 1995
+Updated September, 1995
+Updated January, 1996
+
+Fixes from ado@elsie.nci.nih.gov
+February 1991, May 1992
+Fixes from Tor Lillqvist tml@tik.vtt.fi
+May, 1993
+Further fixes from ado@elsie.nci.nih.gov
+February 1994
+%z code from chip@chinacat.unicom.com
+Applied September 1995
+%V code fixed (again) and %G, %g added,
+January 1996
+'''
+
+package = ruby
 location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/win32/win32.c#L5147
 text = '''
 License: Public Domain, copied from mingw headers
