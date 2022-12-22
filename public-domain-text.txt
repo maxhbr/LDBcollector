@@ -181,6 +181,15 @@ Still 100% Public Domain
 '''
 
 package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/erf.c#L1-L5
+text = '''
+erf.c  - public domain implementation of error function erf(3m)
+reference - Haruhiko Okumura: C-gengo niyoru saishin algorithm jiten
+            (New Algorithm handbook in C language) (Gijyutsu hyouron
+            sha, Tokyo, 1991) p.227 [in Japanese]
+'''
+
+package = ruby
 location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/acosh.c#L8
 text = '''
 public domain rewrite of acosh(3), asinh(3) and atanh(3)
