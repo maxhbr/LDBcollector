@@ -181,6 +181,12 @@ Still 100% Public Domain
 '''
 
 package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/memcmp.c#L1
+text = '''
+public domain rewrite of memcmp(3)
+'''
+
+package = ruby
 location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/lgamma_r.c#L1-L9
 text = '''
 lgamma_r.c  - public domain implementation of function lgamma_r(3m)
