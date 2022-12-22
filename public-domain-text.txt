@@ -181,6 +181,12 @@ Still 100% Public Domain
 '''
 
 package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/alloca.c#L1-L27
+text = '''
+alloca -- (mostly) portable public-domain implementation -- D A Gwyn
+'''
+
+package = ruby
 location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/ext/date/date_strftime.c#L2-L4
 text = '''
 date_strftime.c: based on a public-domain implementation of ANSI C
