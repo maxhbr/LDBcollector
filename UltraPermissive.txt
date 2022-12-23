@@ -25,6 +25,12 @@ text = '''
 text here
 '''
 
+package = texlive-kix
+location = https://mirrors.rit.edu/CTAN/fonts/kixfont/kix.mf
+text = '''
+Available for any purpose, no warranties.
+'''
+
 package = texlive-docbytex
 location = https://mirror.math.princeton.edu/pub/CTAN/macros/generic/docbytex/README
 text = '''
