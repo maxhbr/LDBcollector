@@ -25,6 +25,15 @@ text = '''
 text here
 '''
 
+package = texlive-courseoutline
+location = https://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/courseoutline/courseoutline.cls
+text = '''
+Feel free to copy, modify, and distribute.
+I am interested in all changes you make.
+Please send changes to ngall@ucalgary.ca
+'''
+
+
 package = ibus-table-chinese
 location = https://github.com/mike-fabian/ibus-table-chinese
 text = '''
