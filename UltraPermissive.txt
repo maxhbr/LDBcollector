@@ -25,6 +25,14 @@ text = '''
 text here
 '''
 
+package = texlive-docbytex
+location = https://mirror.math.princeton.edu/pub/CTAN/macros/generic/docbytex/README
+text = '''
+You can do anything with the files from DocBy.TeX package without 
+any limit. If the macro will be usable for you, you can tell the author 
+about it. There is no warranty for this macro.
+'''
+
 package = texlive-courseoutline
 location = https://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/courseoutline/courseoutline.cls
 text = '''
@@ -32,7 +40,6 @@ Feel free to copy, modify, and distribute.
 I am interested in all changes you make.
 Please send changes to ngall@ucalgary.ca
 '''
-
 
 package = ibus-table-chinese
 location = https://github.com/mike-fabian/ibus-table-chinese
