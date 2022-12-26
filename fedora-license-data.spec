@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.9
+Version:        1.10
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -89,6 +89,28 @@ make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %changelog
+* Mon Dec 26 2022 Miroslav Suchý <msuchy@redhat.com> 1.10-1
+- Add GPL-2.0-only WITH GCC-exception-2.0
+- Update LicenseRef-HSNCL.toml - remove usage
+- Update UltraPermissive.txt: add for texlive-kix
+- add for texlive-docbytex
+- Update UltraPermissive.txt: add texlive-courseoutline
+- Add new file: LicenseRef-CoreMark-Pro
+- Add new file: LOOP
+- Add new file: TTWL
+- Add new file: TPDL
+- Add new file: MIT-Wu
+- Add new file: SunPro
+- remove Fedora block
+- Add new file: IJG-short
+- Add new file: Bitstream-Charter
+- Add new file: Knuth-CTAN
+- Add new file: libutil-David-Nugent
+- Add new file: W3C-19980720
+- Add Symlinks
+- add link to legal-doc artifacts
+- Old "Python" could be either "Python-2.0.1" or "PSF-2.0"
+
 * Sun Dec 11 2022 Miroslav Suchý <msuchy@redhat.com> 1.9-1
 - Add ibus-table-chinese FRWR statement to UltraPermissive
   (rfontana@redhat.com)
