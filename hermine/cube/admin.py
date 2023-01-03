@@ -148,6 +148,10 @@ class UsageAdmin(admin.ModelAdmin):
 class VersionAdmin(admin.ModelAdmin):
     def get_form(self, request, obj=None, **kwargs):
         form = super().get_form(request, obj, **kwargs)
+
+        if obj is None:
+            return form
+
         form.base_fields["spdx_valid_license_expr"].help_text += "<br/><br/>" + (
             "✔ This license expression is not ambiguous"
             if not is_ambiguous(obj.spdx_valid_license_expr)
