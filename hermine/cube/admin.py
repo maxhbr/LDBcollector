@@ -216,6 +216,8 @@ class UsageRuleAdminMixin(ComponentRuleAdminMixin):
 
     @admin.display(description="Product")
     def product_summary(self, object):
+        if object.category is not None:
+            return f"Category: {object.category}"
         if object.release is not None:
             return object.release
         elif object.product is not None:
@@ -238,7 +240,7 @@ class LicenseChoiceAdmin(UsageRuleAdminMixin, admin.ModelAdmin):
         ),
         (
             "Update product conditions",
-            {"fields": ("product_summary", "product", "release")},
+            {"fields": ("product_summary", "category", "product", "release")},
         ),
         (
             "Update component conditions",
@@ -258,7 +260,7 @@ class DerogationAdmin(UsageRuleAdminMixin, admin.ModelAdmin):
         ),
         (
             "Update product conditions",
-            {"fields": ("product_summary", "product", "release")},
+            {"fields": ("product_summary", "category", "product", "release")},
         ),
         (
             "Update component conditions",

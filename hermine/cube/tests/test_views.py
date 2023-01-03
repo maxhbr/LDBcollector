@@ -136,6 +136,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
                 "expression_out": "LicenseRef-FakeLicense-Permissive",
                 "product_release": CreateLicenseChoiceForm.PRODUCT,
                 "component_version": CreateLicenseChoiceForm.COMPONENT,
+                "exploitation_choice": CreateLicenseChoiceForm.ANY,
                 "scope_choice": CreateLicenseChoiceForm.ANY,
             },
         )

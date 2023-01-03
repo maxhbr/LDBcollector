@@ -4,7 +4,7 @@
 
 from django import forms
 
-from cube.models import LicenseCuration, LicenseChoice, Derogation
+from cube.models import LicenseCuration, LicenseChoice, Derogation, Category
 from cube.utils.licenses import explode_spdx_to_units, get_ands_corrections
 
 
@@ -106,13 +106,16 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
     ANY = "any"
     PRODUCT = "product"
     RELEASE = "release"
+    CATEGORY = "category"
+    USAGE = "usage"
     PRODUCT_RELEASE_CHOICES = (
         (RELEASE, "Apply to this release only"),
         (PRODUCT, "Apply to all product releases"),
+        (CATEGORY, "Apply to all category product"),
         ("", "All products"),
     )
-    USAGE_SCOPE = "usage"
-    SCOPE_CHOICES = ((USAGE_SCOPE, "This usage scope"), (ANY, "Any scope"))
+    SCOPE_CHOICES = ((USAGE, "This usage scope"), (ANY, "Any scope"))
+    EXPLOITATION_CHOICES = ((ANY, "Apply to any exploitation"),)
 
     product_release = forms.ChoiceField(
         label="Products or releases",
@@ -122,27 +125,47 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
     scope_choice = forms.ChoiceField(
         label="Rule will only apply to selected scope", choices=SCOPE_CHOICES
     )
+    exploitation_choice = forms.ChoiceField(choices=EXPLOITATION_CHOICES)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Change labels of fields depending on product and component  names
-        self.fields["product_release"].choices = (
-            (self.RELEASE, f"Only {self.usage.release}"),
-            (self.PRODUCT, f"All {self.usage.release.product} releases"),
-            (self.ANY, "All products"),
-        )
-        self.fields["scope_choice"].choices = (
-            (self.USAGE_SCOPE, f'Only "{self.usage.scope}" scope'),
-            (self.ANY, "Any scope"),
-        )
+        if self.usage.release:
+            self.fields["product_release"].choices = (
+                (self.RELEASE, f"Only {self.usage.release}"),
+                (self.PRODUCT, f"All {self.usage.release.product} releases"),
+                *(
+                    (
+                        category.id,
+                        f'All product in "{category.name}" category',
+                    )
+                    for category in self.usage.release.product.categories.all()
+                ),
+                (self.ANY, "All products"),
+            )
+        if self.usage.scope:
+            self.fields["scope_choice"].choices = (
+                (self.USAGE, f'Only "{self.usage.scope}" scope'),
+                (self.ANY, "Any scope"),
+            )
+        if self.usage.exploitation:
+            self.fields["exploitation_choice"].choices = (
+                (self.USAGE, f"Only {self.usage.get_exploitation_display()}"),
+                (self.ANY, "Any exploitation"),
+            )
 
     def save(self, **kwargs):
         if self.cleaned_data["product_release"] == self.PRODUCT:
             self.instance.product = self.usage.release.product
         elif self.cleaned_data["product_release"] == self.RELEASE:
             self.instance.release = self.usage.release
-
-        if self.cleaned_data["scope_choice"] == self.USAGE_SCOPE:
+        elif self.cleaned_data["product_release"] is not None:
+            self.instance.category = Category.objects.get(
+                pk=self.cleaned_data["product_release"]
+            )
+        if self.cleaned_data["exploitation_choice"] == self.USAGE:
+            self.instance.exploitation = self.usage.exploitation
+        if self.cleaned_data["scope_choice"] == self.USAGE:
             self.instance.scope = self.usage.scope
 
         return super().save(**kwargs)
@@ -165,22 +188,19 @@ class CreateLicenseChoiceForm(BaseUsageConditionForm):
             "expression_out",
             "product_release",
             "component_version",
+            "exploitation_choice",
             "scope_choice",
             "explanation",
         )
 
 
 class CreateDerogationForm(BaseUsageConditionForm):
-    USAGE = "usage"
     LINKING_CHOICES = ((BaseUsageConditionForm.ANY, "Apply to any linking"),)
     MODIFICATION_CHOICES = (
         (BaseUsageConditionForm.ANY, "Apply to any component modification"),
     )
-    EXPLOITATION_CHOICES = ((BaseUsageConditionForm.ANY, "Apply to any exploitation"),)
-
     linking_choice = forms.ChoiceField(choices=LINKING_CHOICES)
     modification_choice = forms.ChoiceField(choices=MODIFICATION_CHOICES)
-    exploitation_choice = forms.ChoiceField(choices=EXPLOITATION_CHOICES)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -195,19 +215,12 @@ class CreateDerogationForm(BaseUsageConditionForm):
                 (self.USAGE, f"Only {self.usage.get_component_modified_display()}"),
                 (self.ANY, "Any modification"),
             )
-        if self.usage.exploitation:
-            self.fields["exploitation_choice"].choices = (
-                (self.USAGE, f"Only {self.usage.get_exploitation_display()}"),
-                (self.ANY, "Any exploitation"),
-            )
 
     def save(self, **kwargs):
         if self.cleaned_data["linking_choice"] == self.USAGE:
             self.instance.linking = self.usage.linking
         if self.cleaned_data["modification_choice"] == self.USAGE:
             self.instance.modification = self.usage.component_modified
-        if self.cleaned_data["exploitation_choice"] == self.USAGE:
-            self.instance.exploitation = self.usage.exploitation
 
         return super().save(**kwargs)
 
