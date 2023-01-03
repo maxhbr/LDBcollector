@@ -23,12 +23,13 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 {% block herozone %}
 <h1 class="title">
   <span class="icon is-medium"><i class="fas fa-cubes"></i></span>
-  Your Products
+  All Products
 </h1>
 {% endblock %}
 
 {% block content %}
-                                              {% include "cube/includes/list_nav.html" %}
+{% include "cube/includes/list_nav.html" %}
+<p>The list of the software products that you develop internally.</p>
 <table class="table is-striped is-hoverable is-fullwidth">
   <thead>
     <tr>

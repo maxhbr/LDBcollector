@@ -7,7 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% block title %}
-  {{ license }} - {% if object %}Edit{% else %}Add{% endif %} derogation
+  {{ license }} - {% if object %}Edit{% else %}Add{% endif %} authorized context
 {% endblock %}
 
 {% block breadcrumbs %}
@@ -16,17 +16,17 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% if form.usage %}
     <li><a href="{% url 'cube:product_detail' form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
     <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
-    <li>Add derogation</li>
+    <li>Add authorized context</li>
   {% else %}
     <li><a href="{% url 'cube:license' license.id %}">{{ license }}</a></li>
-    <li>{% if object %}Edit{% else %}Add{% endif %} derogation</li>
+    <li>{% if object %}Edit{% else %}Add{% endif %} authorized context</li>
   {% endif %}
 </ul>
 {% endblock %}
 
 {% block herozone %}
 <h1 class="title">
-  {% if object %}Edit{% else %}Add{% endif %} derogation for <em>{{ license }}</em>
+  {% if object %}Edit{% else %}Add{% endif %} authorized context for <em>{{ license.long_name }}</em>
 </h1>
 {% endblock %}
 
@@ -44,7 +44,8 @@ SPDX-License-Identifier: AGPL-3.0-only
   <table>
     {{ form }}
   </table>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Save">
 </form>
 
 {% endblock %}
+
