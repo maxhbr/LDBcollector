@@ -105,6 +105,9 @@ class AbstractUsageRule(AbstractComponentRule):
     author = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, editable=False
     )
+    category = models.ForeignKey(
+        "Category", on_delete=models.CASCADE, blank=True, null=True
+    )
     product = models.ForeignKey(
         "Product", on_delete=models.CASCADE, blank=True, null=True
     )
@@ -118,6 +121,9 @@ class AbstractUsageRule(AbstractComponentRule):
         null=True,
         help_text="Leave blank to apply for any scope",
     )
+    exploitation = models.CharField(
+        max_length=50, blank=True, choices=Usage.EXPLOITATION_CHOICES
+    )
 
     @property
     def condition_display(self):
@@ -126,15 +132,10 @@ class AbstractUsageRule(AbstractComponentRule):
             result += f" — product: {self.release}"
         elif self.product is not None:
             result += f" — product: {self.product} (any release)"
+        if self.category is not None:
+            result += f' — product : any in "{self.category}" category'
         else:
             result += " — product: any"
-
-        if self.version is not None:
-            result += f" — component: {self.version}"
-        elif self.component:
-            result += f" — component: {self.component} (any version)"
-        else:
-            result += " — component: any"
 
         if self.scope:
             return result + f" — scope: {self.scope}"
@@ -146,9 +147,22 @@ class AbstractUsageRule(AbstractComponentRule):
 
         :meta private:
         """
-        if self.release is not None and self.product is not None:
+        if (
+            (
+                self.category is not None
+                and (self.product is not None or self.release is not None)
+            )
+            or (
+                self.product is not None
+                and (self.category is not None or self.release is not None)
+            )
+            or (
+                self.release is not None
+                and (self.category is not None or self.product is not None)
+            )
+        ):
             raise ValidationError(
-                "Rule can only apply to a product or a specific release."
+                "Rule can only apply to a category of product product, a specific product or a specific release."
             )
 
         return super().clean()
@@ -164,7 +178,9 @@ class AbstractUsageRuleManager(models.Manager):
             Q(version=usage.version) | Q(version=None),
             Q(product=usage.release.product) | Q(product=None),
             Q(release=usage.release) | Q(release=None),
+            Q(category__in=usage.release.product.categories.all()) | Q(category=None),
             Q(scope=usage.scope) | Q(scope=None),
+            Q(exploitation=usage.exploitation) | Q(exploitation=""),
         )
 
 
@@ -215,7 +231,6 @@ class DerogationManager(AbstractUsageRuleManager):
             .filter(
                 Q(linking=usage.linking) | Q(linking=""),
                 Q(modification=usage.component_modified) | Q(modification=""),
-                Q(exploitation=usage.exploitation) | Q(exploitation=""),
             )
         )
 
@@ -233,9 +248,6 @@ class Derogation(AbstractUsageRule, models.Model):
     linking = models.CharField(max_length=20, choices=Usage.LINKING_CHOICES, blank=True)
     modification = models.CharField(
         max_length=20, choices=Usage.MODIFICATION_CHOICES, blank=True
-    )
-    exploitation = models.CharField(
-        max_length=50, choices=Usage.EXPLOITATION_CHOICES, blank=True
     )
     justification = models.TextField(max_length=500, blank=True)
 
