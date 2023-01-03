@@ -33,10 +33,11 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block content %}
 
 {% if license.allowed_explanation %}
-<p>The license <b>{{ license }}</b> must only authorized in the following contexts: </p>
-<div class=ontent">
+<p>The usage of the license <b>{{ license }}</b> is restricted by the following policy: </p>
+<div class="content">
   <blockquote>{{ license.allowed_explanation }}</blockquote>
 </div>
+<p>You can add a context that reflects this policy.</p>
 {% endif %}
 
 <form method="post">
@@ -48,4 +49,5 @@ SPDX-License-Identifier: AGPL-3.0-only
 </form>
 
 {% endblock %}
+
 
