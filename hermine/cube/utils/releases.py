@@ -84,7 +84,7 @@ def validate_ands(release: Release):
                 .get()
             )
             usage.version.save()
-        except LicenseCuration.DoesNotExist:
+        except (LicenseCuration.DoesNotExist, LicenseCuration.MultipleObjectsReturned):
             continue
 
     context["to_confirm"] = [
