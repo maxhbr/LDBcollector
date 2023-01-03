@@ -174,18 +174,22 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   {% if license.allowed == "context" or license.context_derogations %}
     <section class="card">
+      <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon">
+          <i class="fas fa-exclamation-circle"></i>
+        </span>
+        This license is allowed only in specific contexts
+      </p>
+    </header>
+
       <div class="card-content">
-        <article class="message is-info">
-          <div class="message-body">
-            This license is allowed only in specific contexts
-          </div>
-        </article>
         {% if license.allowed_explanation %}
           <h5>Explanation:</h5>
           <p>{{ license.allowed_explanation }}</p>
         {% else %}
           <p>
-            <em>No general explanation registered</em> - <a href="{% url "cube:license_edit" license.id %}">Edit</a>
+            <em>No general explanation given for this OSS policy</em> - <a href="{% url "cube:license_edit" license.id %}">Edit</a>
           </p>
         {% endif %}
           <h5>Authorized contexts:</h5>
@@ -218,17 +222,18 @@ SPDX-License-Identifier: AGPL-3.0-only
             {% endfor %}
           </table>
           {% else %}
-            <p><em>There are no context wide derogation linked to this license.</em></p>
+            <p><em>There are no generic contexts of usage authorized for this license.</em></p>
           {% endif %}
+            <p><a href="{% url "cube:derogation_create" license.id %}" class="button">
+            <span class="icon"><i class="fas fa-plus"></i></span>
+            <span>Add an authorized context</span>
+          </a></p>
+
           {% if license.derogations.count > 0 %}
             <p>There are <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}">
-            {{ license.derogations.count }} derogation{{ license.derogations.count|pluralize }}</a>
-              in total linked to this license. Some may be specific to products or components.</p>
+            {{ license.derogations.count }} rule{{ license.derogations.count|pluralize }}</a>
+              in total allowing to use this license. Some may be specific to products or components.</p>
           {% endif %}
-          <p><a href="{% url "cube:derogation_create" license.id %}" class="button">
-            <span class="icon"><i class="fas fa-plus"></i></span>
-            <span>Add derogation</span>
-          </a></p>
 
       </div>
     </section>
