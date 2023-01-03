@@ -2,15 +2,12 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-from django.core.exceptions import ValidationError
 from django.test import TestCase
 
 from cube.models import (
     Product,
     Component,
     Version,
-    LicenseCuration,
-    Release,
 )
 
 
