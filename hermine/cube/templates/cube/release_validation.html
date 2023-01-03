@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   {% include "cube/includes/release_tabs.html" with active_tab="validation" %}
 
-  {% if object.valid_step < 4 %}
+  {% if object.valid_step < 5 %}
     <p>You have completed validation step {{ object.valid_step }} out of 5 </p>
     <progress class="progress is-large" value="{{ object.valid_step }}" max="5"></progress>
   {% else %}
