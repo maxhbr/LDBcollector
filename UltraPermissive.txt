@@ -25,6 +25,20 @@ text = '''
 text here
 '''
 
+
+package = perl-XML-Writer
+location = https://metacpan.org/release/JOSEPHW/XML-Writer-0.900/source/LICENSE
+text '''
+Writer.pm - write an XML document.
+
+Copyright (c) 1999 by Megginson Technologies.
+Copyright (c) 2003 Ed Avis <ed@membled.com>
+Copyright (c) 2004-2010 Joseph Walton <joe@kafsemo.org>
+
+Redistribution and use in source and compiled forms, with or without
+modification, are permitted under any circumstances.  No warranty.
+'''
+
 package = texlive-kix
 location = https://mirrors.rit.edu/CTAN/fonts/kixfont/kix.mf
 text = '''
