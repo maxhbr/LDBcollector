@@ -1,5 +1,10 @@
 # See the documentation for more information:
 # https://packit.dev/docs/configuration/
+---
+
+srpm_build_deps:
+  - tito
+  - git
 
 specfile_path: fedora-license-data.spec
 
@@ -14,3 +19,21 @@ upstream_tag_template: "v{version}"
 upstream_package_name: fedora-license-data
 # downstream (Fedora) RPM package name
 downstream_package_name: fedora-license-data
+
+jobs:
+  - job: copr_build
+    trigger: pull_request
+    identifier: fedora-license-data
+    metadata:
+      targets:
+        - fedora-rawhide
+    actions:
+      create-archive:
+        - bash -c "tito build --tgz --test -o ."
+        - bash -c "ls -1t ./*.tar.gz | head -n 1"
+      get-current-version:
+        - bash -c "git describe --match dist-git-[0-9]* --abbrev=0 HEAD | egrep -o [0-9]+\.[0-9]+"
+    specfile_path: fedora-license-data.spec
+    upstream_package_name: fedora-license-data
+    downstream_package_name: fedora-license-data
+    upstream_tag_template: 'fedora-license-data-{version}'
