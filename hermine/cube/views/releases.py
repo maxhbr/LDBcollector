@@ -7,6 +7,7 @@ import logging
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Count
 from django.http import HttpResponse
 from django.urls import reverse
 from django.utils.safestring import mark_safe
@@ -25,6 +26,7 @@ from cube.models import (
     Release,
     Usage,
     Generic,
+    Exploitation,
 )
 from cube.utils.licenses import (
     get_usages_obligations,
@@ -220,3 +222,54 @@ class ReleaseExploitationsView(LoginRequiredMixin, UpdateView):
 
     def get_success_url(self):
         return reverse("cube:release_exploitations", args=[self.object.pk])
+
+
+class ReleaseExploitationsListView(LoginRequiredMixin, generic.ListView):
+    model = Exploitation
+    template_name = "cube/release_list_exploitations.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        release = Release.objects.get(pk=self.kwargs["release_pk"])
+        release_id = self.kwargs["release_pk"]
+        scopes_in_release = (
+            release.usage_set.values("project", "scope")
+            .annotate(count=Count("*"))
+            .values("project", "scope", "count")
+            .order_by("project", "scope")
+        )
+        exploitations = (
+            Exploitation.objects.filter(release=release_id)
+            .order_by("project", "scope")
+            .values("project", "scope", "exploitation")
+        )
+        full_exploitations = dict()
+        for scope_in_release in scopes_in_release:
+            full_scope = scope_in_release["project"] + scope_in_release["scope"]
+            full_exploitations[full_scope] = dict()
+            full_exploitations[full_scope]["scope"] = scope_in_release["scope"]
+            full_exploitations[full_scope]["project"] = scope_in_release["project"]
+            full_exploitations[full_scope]["count"] = scope_in_release["count"]
+        for exploitation in exploitations:
+            full_scope = exploitation["project"] + exploitation["scope"]
+            print("exploitation,", full_scope)
+            if full_scope in full_exploitations:
+                full_exploitations[full_scope]["exploitation"] = exploitation[
+                    "exploitation"
+                ]
+            else:
+                full_exploitations[full_scope] = dict()
+                full_exploitations[full_scope]["scope"] = exploitation["scope"]
+                full_exploitations[full_scope]["project"] = exploitation["project"]
+                full_exploitations[full_scope]["exploitation"] = exploitation[
+                    "exploitation"
+                ]
+        context["full_exploitations"] = list(full_exploitations.values())
+        context["release"] = release
+        return context
+
+    def get_queryset(self, *args, **kwargs):
+        queryset = super().get_queryset(*args, **kwargs)
+        release_id = self.kwargs["release_pk"]
+        queryset = queryset.filter(release=release_id).order_by("project", "scope")
+        return queryset

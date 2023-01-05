@@ -130,6 +130,11 @@ urlpatterns = [
         name="release_exploitations",
     ),
     path(
+        "release/<int:release_pk>/list_exploitations/",
+        views.ReleaseExploitationsListView.as_view(),
+        name="release_list_exploitations",
+    ),
+    path(
         "release/<int:pk>/import/",
         views.ReleaseImportView.as_view(),
         name="release_import",
