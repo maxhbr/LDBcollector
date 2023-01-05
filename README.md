@@ -43,7 +43,7 @@ This repository is currently in incubation and not yet ready for contributions.
 
 # License
 
-Copyright (C) 2019-2022 [The ORT Project Authors](./NOTICE).
+Copyright (C) 2019-2023 [The ORT Project Authors](./NOTICE).
 
 See the [LICENSE](./LICENSE) file in the root of this project for license details.
 
