@@ -241,8 +241,12 @@ class ReleaseExploitationsListView(LoginRequiredMixin, generic.ListView):
         exploitations = (
             Exploitation.objects.filter(release=release_id)
             .order_by("project", "scope")
-            .values("project", "scope", "exploitation")
+            .values("project", "scope", "exploitation", "id")
         )
+        explicit_exploitations = dict()
+        for (key, value) in Exploitation._meta.get_field("exploitation").choices:
+            explicit_exploitations[key] = value
+
         full_exploitations = dict()
         for scope_in_release in scopes_in_release:
             full_scope = scope_in_release["project"] + scope_in_release["scope"]
@@ -254,16 +258,18 @@ class ReleaseExploitationsListView(LoginRequiredMixin, generic.ListView):
             full_scope = exploitation["project"] + exploitation["scope"]
             print("exploitation,", full_scope)
             if full_scope in full_exploitations:
-                full_exploitations[full_scope]["exploitation"] = exploitation[
-                    "exploitation"
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
                 ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
             else:
                 full_exploitations[full_scope] = dict()
                 full_exploitations[full_scope]["scope"] = exploitation["scope"]
                 full_exploitations[full_scope]["project"] = exploitation["project"]
-                full_exploitations[full_scope]["exploitation"] = exploitation[
-                    "exploitation"
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
                 ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
         context["full_exploitations"] = list(full_exploitations.values())
         context["release"] = release
         return context
@@ -273,3 +279,54 @@ class ReleaseExploitationsListView(LoginRequiredMixin, generic.ListView):
         release_id = self.kwargs["release_pk"]
         queryset = queryset.filter(release=release_id).order_by("project", "scope")
         return queryset
+
+
+class ReleaseEditExploitationView(LoginRequiredMixin, generic.edit.UpdateView):
+    model = Exploitation
+    fields = ["exploitation"]
+    template_name = "cube/release_edit_exploitation.html"
+
+    def get_success_url(self, *args, **kwargs):
+        release_id = self.kwargs["release_pk"]
+        return reverse("cube:release_list_exploitations", args=[release_id])
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        release = Release.objects.get(pk=self.kwargs["release_pk"])
+        context["release"] = release
+        return context
+
+
+class ReleaseAddExploitationView(LoginRequiredMixin, generic.edit.CreateView):
+    model = Exploitation
+    fields = ["release", "project", "scope", "exploitation"]
+    template_name = "cube/release_add_exploitation.html"
+
+    def get_success_url(self, *args, **kwargs):
+        release_id = self.kwargs["release_pk"]
+        return reverse("cube:release_list_exploitations", args=[release_id])
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        release = Release.objects.get(pk=self.kwargs["release_pk"])
+        scope = self.request.GET.get("scope") or "Default scope"
+        project = self.request.GET.get("project") or "Default project"
+        context["release"] = release
+        context["project"] = project
+        context["scope"] = scope
+        return context
+
+
+class ReleaseDeleteExploitationView(LoginRequiredMixin, generic.edit.DeleteView):
+    model = Exploitation
+    template_name = "cube/release_delete_exploitation.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        release = Release.objects.get(pk=self.kwargs["release_pk"])
+        context["release"] = release
+        return context
+
+    def get_success_url(self, *args, **kwargs):
+        release_id = self.kwargs["release_pk"]
+        return reverse("cube:release_list_exploitations", args=[release_id])
