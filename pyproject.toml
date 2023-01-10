@@ -26,6 +26,7 @@ packageurl-python = "^0.10.0"
 junit-xml = "^1.9"
 license-expression = "^30.0.0"
 tqdm = "^4.64.1"
+pyyaml = "^6.0"
 
 [tool.poetry.dev-dependencies]
 Sphinx = "^4.2.0"

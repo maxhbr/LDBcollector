@@ -55,6 +55,11 @@ urlpatterns = [
         views.LicenseCurationUpdateView.as_view(),
         name="licensecuration_update",
     ),
+    path(
+        "licensecurations/export/",
+        views.ExportLicenseCurationsView.as_view(),
+        name="licensecurations_export",
+    ),
     # Licenses and policy views
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),

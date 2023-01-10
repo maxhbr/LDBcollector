@@ -132,6 +132,13 @@ class Component(models.Model):
     def __str__(self):
         return self.name
 
+    @property
+    def namespace(self):
+        if "/" not in self.name:
+            return None
+
+        return self.name.split("/")[0]
+
     class Meta:
         unique_together = ("name", "package_repo")
 
