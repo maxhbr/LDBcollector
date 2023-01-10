@@ -9,28 +9,36 @@
   ],
   "packages": [
     {
-      "name": "dependency1",
-      "SPDXID": "SPDXRef-dependency2",
+      "name": "spdx-valid-dependency",
+      "SPDXID": "SPDXRef-dependency1",
       "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
       "licenseDeclared": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
       "copyrightText": "NOASSERTION",
       "versionInfo": "v1"
     },
     {
-      "name": "dependency2",
-      "SPDXID": "SPDXRef-dependency1",
+      "name": "spdx-invalid-dependency",
+      "SPDXID": "SPDXRef-dependency2",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "Permissive-1.0 AND WeekCopyLeft-1.0",
       "copyrightText": "NOASSERTION",
-      "versionInfo": "v2"
+      "versionInfo": "v1"
     },
     {
-      "name": "dependency3",
+      "name": "ambiguous-dependency",
       "SPDXID": "SPDXRef-dependency3",
       "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
       "licenseDeclared": "LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
       "copyrightText": "NOASSERTION",
-      "versionInfo": "v3"
+      "versionInfo": "v1"
+    },
+    {
+      "name": "no-assertion-dependency",
+      "SPDXID": "SPDXRef-dependency3",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1"
     }
   ]
 }

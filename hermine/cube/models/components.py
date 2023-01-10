@@ -4,6 +4,8 @@
 
 from django.db import models
 
+from cube.utils.validators import validate_spdx_expression
+
 
 class Usage(models.Model):
     """
@@ -152,6 +154,7 @@ class Version(models.Model):
         max_length=200,
         blank=True,
         help_text="License expression concluded by analyzing tool (e.g. ORT)",
+        validators=[validate_spdx_expression],
     )
     corrected_license = models.CharField(
         max_length=200,

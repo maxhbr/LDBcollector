@@ -12,6 +12,7 @@ from cube.models import (
     LicenseCuration,
     License,
     Exploitation,
+    Component,
 )
 from cube.utils.licenses import handle_licenses_json
 from cube.utils.releases import (
@@ -304,12 +305,17 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         # Step 1
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
-        self.assertEqual(len(res.data["invalid_expressions"]), 1)
+        self.assertEqual(len(res.data["invalid_expressions"]), 2)
 
         ## Simulate fixing manually
         LicenseCuration.objects.create(
             expression_in="Permissive-1.0 AND WeekCopyLeft-1.0",
             expression_out="LicenseRef-fakeLicense-WeakCopyleft-1.0 OR LicenseRef-fakeLicense-Permissive-1.0",
+        )
+        LicenseCuration.objects.create(
+            component=Component.objects.get(name="no-assertion-dependency"),
+            expression_in="NOASSERTION",
+            expression_out="LicenseRef-fakeLicense-Permissive-1.0",
         )
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
