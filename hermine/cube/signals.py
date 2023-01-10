@@ -33,14 +33,12 @@ def update_usages_exploitations(sender, instance: Exploitation, created, **kwarg
 
 
 @receiver(post_save, sender=Version, dispatch_uid="create_missing_licenses")
-def create_missing_licenses(sender, instance: License, created, **kwargs):
+def create_missing_licenses(sender, instance: Version, created, **kwargs):
     if not instance.effective_license:
         return
 
     spdx_licenses = explode_spdx_to_units(instance.effective_license)
 
     for spdx_license in spdx_licenses:
-        if spdx_license == "NOASSERTION":
-            continue
         logger.info("unknown license", spdx_license)
         License.objects.get_or_create(spdx_id=spdx_license)

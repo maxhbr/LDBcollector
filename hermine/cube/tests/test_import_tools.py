@@ -134,11 +134,11 @@ class ImportGenericTestCase(ForceLoginMixin, TestCase):
 class ImportSBOMTestCase(TestCase):
     fixtures = ["test_data.json"]
 
-    def test_import_spdx_file(self):
+    def test_import_sbom_linking_and_replace(self):
         with open("cube/fixtures/fake_sbom.json") as f:
             import_spdx_file(f, 1, linking=Usage.LINKING_PACKAGE)
         usage = Usage.objects.get(
-            version__component__name="dependency1",
+            version__component__name="spdx-valid-dependency",
             version__version_number="v1",
         )
         self.assertEqual(
@@ -150,7 +150,7 @@ class ImportSBOMTestCase(TestCase):
         with open("cube/fixtures/fake_sbom.json") as f:
             import_spdx_file(f, 1, replace=False)
         new_usage = Usage.objects.get(
-            version__component__name="dependency1",
+            version__component__name="spdx-valid-dependency",
             version__version_number="v1",
         )
         self.assertEqual(
@@ -161,7 +161,7 @@ class ImportSBOMTestCase(TestCase):
         with open("cube/fixtures/fake_sbom.json") as f:
             import_spdx_file(f, 1, replace=True)
         new_usage = Usage.objects.get(
-            version__component__name="dependency1",
+            version__component__name="spdx-valid-dependency",
             version__version_number="v1",
         )
         self.assertNotEqual(

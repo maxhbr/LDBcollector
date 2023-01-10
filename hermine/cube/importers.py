@@ -96,14 +96,17 @@ def import_ort_evaluated_model_json_file(
             )
         else:
             declared_licenses = ""
+        spdx_valid_license = package["declared_licenses_processed"].get(
+            "spdx_expression", ""
+        )
+        if spdx_valid_license == "NOASSERTON":
+            spdx_valid_license = ""
         version, version_created = Version.objects.get_or_create(
             component=component,
             version_number=current_purl.split("@")[1],
             defaults={
                 "declared_license_expr": declared_licenses,
-                "spdx_valid_license_expr": package["declared_licenses_processed"].get(
-                    "spdx_expression", ""
-                ),
+                "spdx_valid_license_expr": spdx_valid_license,
                 # TODO : support ORT scanner function
                 # "scanned_licenses":
                 "purl": current_purl,
@@ -182,9 +185,8 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         # If necessary create version
         vers_number = package.version or "Current"
         vers_lic_decl = package.license_declared.identifier
-        # SPDX output sometimes return "NOASSERTION" instead of an empty value.
-        if vers_lic_decl == "NOASSERTION":
-            vers_lic_decl = ""
+        # SPDX output sometimes return "NOASSERTION" instead of an empty value
+        # we want to keep it as declared but it is not a valid license expresson
         vers_lic_concl = package.conc_lics.identifier
         if vers_lic_concl == "NOASSERTION":
             vers_lic_concl = ""

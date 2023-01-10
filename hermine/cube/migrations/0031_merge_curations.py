@@ -188,6 +188,7 @@ class Migration(migrations.Migration):
                 blank=True,
                 help_text="License expression concluded by analyzing tool (e.g. ORT)",
                 max_length=200,
+                validators=[cube.utils.validators.validate_spdx_expression],
             ),
         ),
     ]
