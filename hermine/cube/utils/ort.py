@@ -101,6 +101,11 @@ def hermine_to_ort(curation: LicenseCuration):
     else:
         raise ValueError("Component unspecified")
 
+    if component.namespace and component.name.startswith(component.namespace):
+        name = component.name.replace(f"{component.namespace}/", "", 1)
+    else:
+        name = component.name
+
     return CurationEntry(
         curations=Curation(
             comment=curation.explanation,
@@ -111,7 +116,7 @@ def hermine_to_ort(curation: LicenseCuration):
         ),
         type=fix_type_case(component.package_repo),
         namespace=component.namespace or "",
-        name=component.name.removeprefix(component.namespace or ""),
+        name=name,
         version=curation.version.version_number
         if curation.version is not None
         else None,
