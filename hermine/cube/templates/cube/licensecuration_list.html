@@ -12,14 +12,22 @@ SPDX-License-Identifier: AGPL-3.0-only -->
   <li>Curations</li>
 </ul>
 {% endblock %}
+
 {% block actions %}
 <a class="button is-info is-inverted" href="{% url 'cube:licensecuration_create'%}">
-            <span class="icon">
-              <i class="fas fa-plus"></i>
-            </span>
-            <span>Create a new curation</span>
-          </a>
+  <span class="icon">
+    <i class="fas fa-plus"></i>
+  </span>
+  <span>Create a new curation</span>
+</a>
+<a class="button" href="{% url 'cube:licensecurations_export'%}">
+  <span class="icon">
+    <i class="fas fa-file-export"></i>
+  </span>
+  <span>Export as ORT curations</span>
+</a>
 {% endblock %}
+
 {% block herozone %}
 <h1 class="title">
   <span class="icon is-medium"><i class="fas fa-band-aid"></i></span>

@@ -8,46 +8,63 @@ import json
 from django.http import HttpResponse
 from django.views import View
 
-from cube.models import License
+from cube.models import License, LicenseCuration
 from cube.serializers import LicenseSerializer
 from cube.utils.licenses import export_licenses as export_licenses_json
 from cube.utils.generics import export_generics as export_generics_json
+from cube.utils.ort import export_curations
 
 
-class ExportLicensesView(View):
-    def get(self, request):
-        """Calls API to retrieve list of licenses. Handles DRF pagination.
+class BaseExportFileView(View):
+    filename = None
+    content_type = "application/json"
 
-        :return: HttpResponse that triggers the download of a JSON file containing every
-            license in a JSON Array.
-        :rtype: DjangoHttpResponse
-        """
-        filename = "licenses.json"
-        data = export_licenses_json(indent=True)
-        response = HttpResponse(data, content_type="application/json")
-        response["Content-Disposition"] = "attachment; filename=%s" % filename
-        return response
+    def get_filename(self):
+        return self.filename
 
+    def get_data(self):
+        raise NotImplementedError
 
-class Export1LicenseView(View):
-    def get(self, request, license_id):
-        license_instance = License.objects.get(id=license_id)
-        filename = license_instance.spdx_id + ".json"
-        data = LicenseSerializer(license_instance).data
-        response = HttpResponse(
-            json.dumps(data, indent=4), content_type="application/json"
+    def get(self, request, *args, **kwargs):
+        response = HttpResponse(self.get_data(), content_type=self.content_type)
+        response["Content-Disposition"] = (
+            "attachment; filename=%s" % self.get_filename()
         )
-        response["Content-Disposition"] = "attachment; filename=%s" % filename
         return response
 
 
-class ExportGenericsView(View):
-    def get(self, request):
-        filename = "generics.json"
-        data = export_generics_json()
-        response = HttpResponse(
-            data,
-            content_type="application/json",
-        )
-        response["Content-Disposition"] = "attachment; filename=%s" % filename
-        return response
+class ExportLicensesView(BaseExportFileView):
+    filename = "licenses.json"
+
+    def get_data(self):
+        return export_licenses_json(indent=True)
+
+
+class Export1LicenseView(BaseExportFileView):
+    license_instance = None
+
+    def get_filename(self):
+        return self.license_instance.spdx_id + ".json"
+
+    def get_data(self):
+        data = LicenseSerializer(self.license_instance).data
+        return json.dumps(data, indent=4)
+
+    def get(self, request, *args, **kwargs):
+        self.license_instance = License.objects.get(id=kwargs["license_id"])
+        return super().get(request, kwargs["license_id"])
+
+
+class ExportGenericsView(BaseExportFileView):
+    filename = "generics.json"
+
+    def get_data(self):
+        return export_generics_json()
+
+
+class ExportLicenseCurationsView(BaseExportFileView):
+    filename = "ort_curations.yaml"
+    content_type = "application/x-yaml"
+
+    def get_data(self):
+        return export_curations(LicenseCuration.objects.all())

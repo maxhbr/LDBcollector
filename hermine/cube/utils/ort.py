@@ -3,8 +3,10 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 from typing import Mapping, List
+
+import yaml
 
 from cube.models import LicenseCuration
 
@@ -120,4 +122,17 @@ def hermine_to_ort(curation: LicenseCuration):
         version=curation.version.version_number
         if curation.version is not None
         else None,
+    )
+
+
+def export_curations(queryset):
+    return yaml.dump(
+        list(
+            asdict(
+                hermine_to_ort(curation),
+                dict_factory=lambda x: {k: v for (k, v) in x if v is not None},
+            )
+            for curation in queryset.exclude(version=None, component=None)
+        ),
+        sort_keys=False,
     )
