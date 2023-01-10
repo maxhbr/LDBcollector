@@ -17,9 +17,20 @@ SPDX-License-Identifier: CC-BY-4.0
 
 You can use Hermine through the GUI for one shot analysis
 
+### Create a release
+
+- From the Product list page (<span class ="guilabel">Your procuts --> All products</span>), create a new product (button in the top left corner) 
+- Create a release for this product (button in the top left corner)
+
+### Express your exploitation choices
+
+http://127.0.0.1:8080/release/1/exploitation
+
+
 ### Import your raw SBOM
 
-- Create a product and a release for this product in Django's admin
+There is currently two 
+
 - Generate an `EvaluatedModel` report with ORT from the Analyzer results:
 
 ```bash
@@ -35,9 +46,7 @@ ort report -f EvaluatedModel -i /folder/for/analyzer/analyzer-result.json -o /fo
 
 Where '1' is the id for the release you're working on.
 
-### Express your exploitation choices
 
-http://127.0.0.1:8080/release/1/exploitation
 
 ### Validate your import
 
@@ -70,6 +79,7 @@ You can add derogations in order to handle specific cases.
 ### Read your obligations
 
 http://127.0.0.1:8080/release/1/obligations
+
 
 
 
