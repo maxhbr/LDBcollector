@@ -38,6 +38,8 @@ SPDX-License-Identifier: AGPL-3.0-only
   <blockquote>{{ license.allowed_explanation }}</blockquote>
 </div>
 <p>You can add a context that reflects this policy.</p>
+{% else %}
+<p><em>No explanation has been given for the restriction of this license.</em></p>
 {% endif %}
 
 <form method="post">
@@ -49,5 +51,6 @@ SPDX-License-Identifier: AGPL-3.0-only
 </form>
 
 {% endblock %}
+
 
 
