@@ -111,8 +111,8 @@ class License(models.Model):
     allowed = models.CharField(
         "OSS Policy", max_length=20, choices=ALLOWED_CHOICES, blank=True
     )
-    allowed_explanation = models.CharField(
-        "OSS Policy explanation", max_length=200, blank=True
+    allowed_explanation = models.TextField(
+        "OSS Policy explanation", max_length=1500, blank=True
     )
     url = models.URLField(max_length=200, blank=True)
     osi_approved = models.BooleanField(null=True, verbose_name="OSI Approved")
@@ -135,7 +135,9 @@ class License(models.Model):
     venue_choice = models.CharField(max_length=200, blank=True)
     comment = models.TextField(max_length=1500, blank=True)
     verbatim = models.TextField(
-        blank=True, help_text="Only necessary if the license has no official SPDX ID"
+        "Exact text of the license",
+        blank=True,
+        help_text="Only necessary if the license has no official SPDX ID",
     )
     objects = LicenseManager()
 
