@@ -7,15 +7,22 @@ import logging
 
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Count
 from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
 from django.urls import reverse
 from django.utils.safestring import mark_safe
 from django.utils.text import slugify
 from django.views import generic
-from django.views.generic import UpdateView, DetailView, TemplateView
+from django.views.generic import (
+    UpdateView,
+    DetailView,
+    TemplateView,
+    CreateView,
+    DeleteView,
+)
 
 from cube.forms.importers import ImportBomForm
-from cube.forms.releases import ReleaseExploitationForm
 from cube.importers import (
     import_ort_evaluated_model_json_file,
     import_spdx_file,
@@ -25,6 +32,7 @@ from cube.models import (
     Release,
     Usage,
     Generic,
+    Exploitation,
 )
 from cube.utils.licenses import (
     get_usages_obligations,
@@ -32,6 +40,19 @@ from cube.utils.licenses import (
 from cube.views.mixins import SearchMixin
 
 logger = logging.getLogger(__name__)
+
+
+class ReleaseContextMixin:
+    release = None
+
+    def dispatch(self, *args, **kwargs):
+        self.release = Release.objects.get(pk=self.kwargs["release_pk"])
+        return super().dispatch(*args, **kwargs)
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context["release"] = self.release
+        return context
 
 
 class ReleaseImportView(LoginRequiredMixin, UpdateView):
@@ -78,9 +99,6 @@ class ReleaseImportView(LoginRequiredMixin, UpdateView):
 
         return super().form_valid(form)
 
-    def get_context_data(self, **kwargs):
-        return super().get_context_data(**kwargs)
-
 
 class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
     """
@@ -104,17 +122,17 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
         return context
 
 
-class ReleaseGenericView(LoginRequiredMixin, TemplateView):
+class ReleaseGenericView(LoginRequiredMixin, ReleaseContextMixin, TemplateView):
     template_name = "cube/release_generic.html"
 
-    def get_context_data(self, **kwargs):
-        usages = Usage.objects.filter(
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context["usages"] = Usage.objects.filter(
             release__id=self.kwargs["release_id"],
             licenses_chosen__obligation__generic__id=self.kwargs["generic_id"],
         )
-        generic = Generic.objects.get(pk=self.kwargs["generic_id"])
-        release = Release.objects.get(pk=self.kwargs["release_id"])
-        return {"usages": usages, "generic": generic, "release": release}
+        context["generic"] = get_object_or_404(Generic, pk=self.kwargs["generic_id"])
+        return context
 
 
 class ReleaseSummaryView(LoginRequiredMixin, DetailView):
@@ -173,17 +191,13 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
         return response
 
 
-class ReleaseSBOMView(LoginRequiredMixin, SearchMixin, generic.ListView):
+class ReleaseSBOMView(
+    LoginRequiredMixin, SearchMixin, ReleaseContextMixin, generic.ListView
+):
     model = Usage
     template_name = "cube/release_bom.html"
     paginate_by = 50
     search_fields = ("version__purl",)
-
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data(*args, **kwargs)
-        release = Release.objects.get(pk=self.kwargs["release_pk"])
-        context["release"] = release
-        return context
 
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset(*args, **kwargs)
@@ -197,26 +211,96 @@ class ReleaseUpdateView(LoginRequiredMixin, UpdateView):
     fields = ["product", "release_number", "commit", "ship_status"]
 
 
-class ReleaseExploitationsView(LoginRequiredMixin, UpdateView):
-    model = Release
-    form_class = ReleaseExploitationForm
-    template_name = "cube/release_exploitations.html"
+class ReleaseExploitationsListView(
+    LoginRequiredMixin, ReleaseContextMixin, generic.ListView
+):
+    model = Exploitation
+    template_name = "cube/release_list_exploitations.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        form = context.pop("form")
-        context["exploitation_form"] = [  # only way to loop properly
-            {
-                "project": project,
-                "scope": scope,
-                "count": count,
-                "field": form[f"{project}{scope}"],
-            }
-            for (project, scope, count) in form.scopes
-        ]
-        context["bom_form"] = ImportBomForm()
+        scopes_in_release = (
+            self.release.usage_set.values("project", "scope")
+            .annotate(count=Count("*"))
+            .values("project", "scope", "count")
+            .order_by("project", "scope")
+        )
+        exploitations = self.get_queryset().values(
+            "project", "scope", "exploitation", "id"
+        )
+        explicit_exploitations = dict()
+        for (key, value) in Exploitation._meta.get_field("exploitation").choices:
+            explicit_exploitations[key] = value
 
+        full_exploitations = dict()
+        for scope_in_release in scopes_in_release:
+            full_scope = scope_in_release["project"] + scope_in_release["scope"]
+            full_exploitations[full_scope] = dict()
+            full_exploitations[full_scope]["scope"] = scope_in_release["scope"]
+            full_exploitations[full_scope]["project"] = scope_in_release["project"]
+            full_exploitations[full_scope]["count"] = scope_in_release["count"]
+        for exploitation in exploitations:
+            full_scope = exploitation["project"] + exploitation["scope"]
+            print("exploitation,", full_scope)
+            if full_scope in full_exploitations:
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
+                ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+            else:
+                full_exploitations[full_scope] = dict()
+                full_exploitations[full_scope]["scope"] = exploitation["scope"]
+                full_exploitations[full_scope]["project"] = exploitation["project"]
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
+                ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+
+        context["full_exploitations"] = list(full_exploitations.values())
         return context
 
-    def get_success_url(self):
-        return reverse("cube:release_exploitations", args=[self.object.pk])
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .filter(release=self.release)
+            .order_by("project", "scope")
+        )
+
+
+class ReleaseEditExploitationView(LoginRequiredMixin, ReleaseContextMixin, UpdateView):
+    model = Exploitation
+    fields = ["exploitation"]
+    template_name = "cube/release_edit_exploitation.html"
+
+    def get_success_url(self, *args, **kwargs):
+        release_id = self.kwargs["release_pk"]
+        return reverse("cube:release_list_exploitations", args=[release_id])
+
+
+class ReleaseAddExploitationView(LoginRequiredMixin, ReleaseContextMixin, CreateView):
+    model = Exploitation
+    fields = ["project", "scope", "exploitation"]
+    template_name = "cube/release_add_exploitation.html"
+
+    def get_success_url(self, *args, **kwargs):
+        return reverse("cube:release_list_exploitations", args=[self.release.id])
+
+    def get_initial(self):
+        scope = self.request.GET.get("scope", "Default scope")
+        project = self.request.GET.get("project", "Default project")
+        return {"project": project, "scope": scope}
+
+    def form_valid(self, form):
+        form.instance.release = self.release
+        return super().form_valid(form)
+
+
+class ReleaseDeleteExploitationView(
+    LoginRequiredMixin, ReleaseContextMixin, DeleteView
+):
+    model = Exploitation
+    template_name = "cube/release_delete_exploitation.html"
+
+    def get_success_url(self, *args, **kwargs):
+        return reverse("cube:release_list_exploitations", args=[self.release.id])

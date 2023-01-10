@@ -125,9 +125,24 @@ urlpatterns = [
         name="release_summary",
     ),
     path(
-        "release/<int:pk>/exploitations/",
-        views.ReleaseExploitationsView.as_view(),
-        name="release_exploitations",
+        "release/<int:release_pk>/exploitations/",
+        views.ReleaseExploitationsListView.as_view(),
+        name="release_list_exploitations",
+    ),
+    path(
+        "release/<int:release_pk>/edit_exploitation/<int:pk>/",
+        views.ReleaseEditExploitationView.as_view(),
+        name="release_edit_exploitation",
+    ),
+    path(
+        "release/<int:release_pk>/add_exploitation/",
+        views.ReleaseAddExploitationView.as_view(),
+        name="release_add_exploitation",
+    ),
+    path(
+        "release/<int:release_pk>/delete_exploitation/<int:pk>/",
+        views.ReleaseDeleteExploitationView.as_view(),
+        name="release_delete_exploitation",
     ),
     path(
         "release/<int:pk>/import/",
