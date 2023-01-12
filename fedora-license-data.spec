@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.10
+Version:        1.11
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -89,6 +89,14 @@ make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %changelog
+* Thu Jan 12 2023 Miroslav Suchý <msuchy@redhat.com> 1.11-1
+- Add BSD-1-Clause license as an approved license
+- add perl-XML-Writer to Update UltraPermissive.txt
+- move TTWL and add extension
+- Move TPDL.toml
+- Add new file: HPND-export-US
+- Update Bitstream-Charter.toml
+
 * Mon Dec 26 2022 Miroslav Suchý <msuchy@redhat.com> 1.10-1
 - Add GPL-2.0-only WITH GCC-exception-2.0
 - Update LicenseRef-HSNCL.toml - remove usage
