@@ -170,7 +170,7 @@ urlpatterns = [
         name="release_oblig",
     ),
     path(
-        "release/<int:release_id>/obligations/<int:generic_id>/",
+        "release/<int:release_pk>/obligations/<int:generic_id>/",
         views.ReleaseGenericView.as_view(),
         name="release_generic",
     ),
