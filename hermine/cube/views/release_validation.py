@@ -3,14 +3,20 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import F
+from django.db.models import F, Count
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views import generic
 from django.views.decorators.http import require_POST
-from django.views.generic import UpdateView, ListView, CreateView, TemplateView
+from django.views.generic import (
+    UpdateView,
+    ListView,
+    CreateView,
+    TemplateView,
+    DeleteView,
+)
 
 from cube.forms.release_validation import (
     CreateLicenseCurationForm,
@@ -24,10 +30,11 @@ from cube.models import (
     LicenseCuration,
     LicenseChoice,
     Derogation,
+    Exploitation,
 )
 from cube.utils.releases import update_validation_step, propagate_choices
 from cube.views import LicenseRelatedMixin
-from cube.views.mixins import SaveAuthorMixin
+from cube.views.mixins import SaveAuthorMixin, ReleaseContextMixin
 
 
 class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
@@ -129,9 +136,7 @@ class UpdateLicenseCurationView(AbstractResetCorrectedLicenseView):
         )
 
 
-# Step 3
-
-
+# Step 2
 class ReleaseAndsValidationCreateView(AbstractCreateUsageConditionView):
     model = LicenseCuration
     form_class = CreateAndsValidationForm
@@ -165,6 +170,108 @@ class UpdateAndsValidationView(AbstractResetCorrectedLicenseView):
         return reverse(
             "cube:release_ands_validations", kwargs={"id": self.object.release.pk}
         )
+
+
+# Step 3
+
+
+class ReleaseExploitationUpdateView(
+    LoginRequiredMixin, ReleaseContextMixin, UpdateView
+):
+    model = Exploitation
+    fields = ["exploitation"]
+    template_name = "cube/release_edit_exploitation.html"
+
+    def get_success_url(self, *args, **kwargs):
+        release_id = self.kwargs["release_pk"]
+        return reverse("cube:release_exploitations", args=[release_id])
+
+
+class ReleaseExploitationCreateView(
+    LoginRequiredMixin, ReleaseContextMixin, CreateView
+):
+    model = Exploitation
+    fields = ["project", "scope", "exploitation"]
+    template_name = "cube/release_exploitation_create.html"
+
+    def get_success_url(self, *args, **kwargs):
+        return reverse("cube:release_exploitations", args=[self.release.id])
+
+    def get_initial(self):
+        scope = self.request.GET.get("scope", "Default scope")
+        project = self.request.GET.get("project", "Default project")
+        return {"project": project, "scope": scope}
+
+    def form_valid(self, form):
+        form.instance.release = self.release
+        return super().form_valid(form)
+
+
+class ReleaseExploitationsListView(
+    LoginRequiredMixin, ReleaseContextMixin, generic.ListView
+):
+    model = Exploitation
+    template_name = "cube/release_exploitations.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        scopes_in_release = (
+            self.release.usage_set.values("project", "scope")
+            .annotate(count=Count("*"))
+            .values("project", "scope", "count")
+            .order_by("project", "scope")
+        )
+        exploitations = self.get_queryset().values(
+            "project", "scope", "exploitation", "id"
+        )
+        explicit_exploitations = dict()
+        for (key, value) in Exploitation._meta.get_field("exploitation").choices:
+            explicit_exploitations[key] = value
+
+        full_exploitations = dict()
+        for scope_in_release in scopes_in_release:
+            full_scope = scope_in_release["project"] + scope_in_release["scope"]
+            full_exploitations[full_scope] = dict()
+            full_exploitations[full_scope]["scope"] = scope_in_release["scope"]
+            full_exploitations[full_scope]["project"] = scope_in_release["project"]
+            full_exploitations[full_scope]["count"] = scope_in_release["count"]
+        for exploitation in exploitations:
+            full_scope = exploitation["project"] + exploitation["scope"]
+            print("exploitation,", full_scope)
+            if full_scope in full_exploitations:
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
+                ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+            else:
+                full_exploitations[full_scope] = dict()
+                full_exploitations[full_scope]["scope"] = exploitation["scope"]
+                full_exploitations[full_scope]["project"] = exploitation["project"]
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
+                ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+
+        context["full_exploitations"] = list(full_exploitations.values())
+        return context
+
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .filter(release=self.release)
+            .order_by("project", "scope")
+        )
+
+
+class ReleaseExploitationDeleteView(
+    LoginRequiredMixin, ReleaseContextMixin, DeleteView
+):
+    model = Exploitation
+    template_name = "cube/release_delete_exploitation.html"
+
+    def get_success_url(self, *args, **kwargs):
+        return reverse("cube:release_exploitations", args=[self.release.id])
 
 
 # Step 4

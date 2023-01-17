@@ -93,7 +93,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_release_summary_with_multiple_exploitation_choice(self):
-        url = reverse("cube:release_list_exploitations", kwargs={"release_pk": 1})
+        url = reverse("cube:release_exploitations", kwargs={"release_pk": 1})
         Exploitation.objects.create(release_id=1, scope="back")
         Exploitation.objects.create(release_id=1, scope="front")
         res = self.client.get(url)

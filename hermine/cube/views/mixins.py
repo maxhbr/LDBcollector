@@ -7,7 +7,7 @@ from django.db.models import Q
 from django.forms import Form, CharField
 from django.shortcuts import get_object_or_404
 
-from cube.models import License
+from cube.models import License, Release
 
 
 class SearchForm(Form):
@@ -69,3 +69,16 @@ class SaveAuthorMixin:
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+
+class ReleaseContextMixin:
+    release = None
+
+    def dispatch(self, *args, **kwargs):
+        self.release = Release.objects.get(pk=self.kwargs["release_pk"])
+        return super().dispatch(*args, **kwargs)
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context["release"] = self.release
+        return context

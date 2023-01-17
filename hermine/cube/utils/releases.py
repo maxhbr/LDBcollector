@@ -110,22 +110,21 @@ def validate_exploitations(release: Release):
     Check all scopes have a defined exploitation
     """
     context = dict()
-    scope_exploitations = set()
     unset_scopes = set()
     scopes = (
-        release.usage_set.all()
+        release.usage_set.filter(exploitation="")
         .order_by("scope")
         .values_list("project", "scope")
         .annotate(Count("id"))
     )
+
     for project, scope, count in scopes:
         try:
-            exploitation = release.exploitations.get(scope=scope, project=project)
-            scope_exploitations.add(exploitation)
+            release.exploitations.get(scope=scope, project=project)
         except Exploitation.DoesNotExist:
             unset_scopes.add((project, scope, count))
 
-    context["exploitations"] = scope_exploitations
+    context["exploitations"] = release.exploitations.all()
     context["unset_scopes"] = unset_scopes
 
     return len(unset_scopes) == 0, context
