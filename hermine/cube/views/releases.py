@@ -120,10 +120,59 @@ class ReleaseGenericView(LoginRequiredMixin, ReleaseContextMixin, TemplateView):
         return context
 
 
-class ReleaseSummaryView(LoginRequiredMixin, DetailView):
-    model = Release
-    context_object_name = "release"
+class ReleaseSummaryView(LoginRequiredMixin, ReleaseContextMixin, generic.ListView):
+    model = Exploitation
     template_name = "cube/release_summary.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        scopes_in_release = (
+            self.release.usage_set.values("project", "scope")
+            .annotate(count=Count("*"))
+            .values("project", "scope", "count")
+            .order_by("project", "scope")
+        )
+        exploitations = self.get_queryset().values(
+            "project", "scope", "exploitation", "id"
+        )
+        explicit_exploitations = dict()
+        for (key, value) in Exploitation._meta.get_field("exploitation").choices:
+            explicit_exploitations[key] = value
+
+        full_exploitations = dict()
+        for scope_in_release in scopes_in_release:
+            full_scope = scope_in_release["project"] + scope_in_release["scope"]
+            full_exploitations[full_scope] = dict()
+            full_exploitations[full_scope]["scope"] = scope_in_release["scope"]
+            full_exploitations[full_scope]["project"] = scope_in_release["project"]
+            full_exploitations[full_scope]["count"] = scope_in_release["count"]
+        for exploitation in exploitations:
+            full_scope = exploitation["project"] + exploitation["scope"]
+            print("exploitation,", full_scope)
+            if full_scope in full_exploitations:
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
+                ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+            else:
+                full_exploitations[full_scope] = dict()
+                full_exploitations[full_scope]["scope"] = exploitation["scope"]
+                full_exploitations[full_scope]["project"] = exploitation["project"]
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
+                ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+
+        context["full_exploitations"] = list(full_exploitations.values())
+        return context
+
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .filter(release=self.release)
+            .order_by("project", "scope")
+        )
 
 
 class ReleaseBomExportView(LoginRequiredMixin, DetailView):

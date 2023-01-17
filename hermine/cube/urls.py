@@ -134,7 +134,7 @@ urlpatterns = [
         name="release_edit",
     ),
     path(
-        "release/<int:pk>/",
+        "release/<int:release_pk>/",
         views.ReleaseSummaryView.as_view(),
         name="release_summary",
     ),

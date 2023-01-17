@@ -11,12 +11,12 @@ SPDX-License-Identifier: AGPL-3.0-only
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 
-{% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
+{% block title %}{{ release.product.name }} {{release.release_number}}{% endblock %}
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
-  <li>{{object.release_number}}</li>
+  <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
+  <li>{{release.release_number}}</li>
   <li>Summary</li>
 </ul>
 {% endblock %}
@@ -30,7 +30,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 {% block herozone %}
 <div class="hero-body">
-  <p class="title">Release: {{object.release_number}}</p>
+  <p class="title">Release: {{release.release_number}}</p>
 </div>
 {% endblock %}
 {% block content %}
@@ -87,39 +87,52 @@ SPDX-License-Identifier: AGPL-3.0-only
     <div class="card tile is-child">
       <header class="card-header">
         <p class="card-header-title">
-          <span class="icon"><i class="fas fa-info-circle"></i></span>
-          Scope exploitations
+          <span class="icon"><i class="fas fa-sitemap"></i></span>
+          Exploitation decisions for the different scopes of the release
         </p>
       </header>
       <div class="card-content">
-        <p>Scope-level exploitation decisions for this release.
-          See <a href="{% url 'cube:release_exploitations' release.id %}">full list of components exploitation mode</a>.</p>
         <table>
-          <thead><tr>
-            <th>Sub project</th>
-            <th>Scope</th>
-            <th>Exploitation</th>
-            <th>Actions</th>
-          </tr></thead>
+          <thead>
+              <tr>
+                <th>Sub project</th>
+                <th>Scope</th>
+                <th>Components</th>
+                <th>Exploitation</th>
+                <th>Actions</th>
+              </tr>
+          </thead>
           <tbody>
-          {% for exploitation in release.exploitations.all %}
+              {% for scope in full_exploitations %}
+                <tr>
+                  <td>{{ scope.project }}</td>
+                  <td>{{ scope.scope }}</td>
+                  <td>{{ scope.count }}</td>
+                  <td>
+                    {% if scope.exploitation %}
+                    {{ scope.exploitation }}
+                    {% else %}
+                    <span class="tag is-warning">No exploitation has been defined for this scope</span>
+                    {% endif%}
+                  </td>
+                  <td>
+                    {% if scope.exploitation %}
+                    <a href="{% url 'cube:release_edit_exploitation' release.id scope.exploitation_id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+                    <a href="{% url 'cube:release_delete_exploitation' release.id scope.exploitation_id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                    {% else %}
+                    <a href="{% url 'cube:release_exploitation_create' release.id %}?project={{scope.project}}&scope={{scope.scope}}"><span class="icon"><i class="fas fa-plus-circle"></i></span></a>
+                    {% endif%}
+                  </td>
+                </tr>
+              {% endfor %}
             <tr>
-              <td>{{ exploitation.project|default:"<em>Any</em>" }}</td>
-              <td>{{ exploitation.scope|default:"<em>Any</em>" }}</td>
-              <td>{{ exploitation.exploitation }}</td>
-              <td>
-                <a href="{% url 'cube:release_edit_exploitation' release.id exploitation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-                <a href="{% url 'cube:release_delete_exploitation' release.id exploitation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
-              </td>
+              <td><a href="{% url 'cube:release_exploitation_create' release.id %}" class="button is-primary">Create a new exploitation decision</a></td>
+              <td></td>
             </tr>
-          {% endfor %}
           </tbody>
-        </table>
-        <a href="{% url 'cube:release_exploitation_create' release.id %}" class="button is-primary">Create a new exploitation decision</a>
+          </table>
       </div>
-    </div>
   </div>
 </div>
-
 {% endblock %}
 
