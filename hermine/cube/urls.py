@@ -6,7 +6,6 @@ from django.urls import path, include
 from rest_framework.authtoken import views as authviews
 from rest_framework_nested import routers
 
-import cube.views.release_validation
 from . import views, api_views
 
 app_name = "cube"
@@ -130,26 +129,6 @@ urlpatterns = [
         name="release_summary",
     ),
     path(
-        "release/<int:release_pk>/exploitations/",
-        views.ReleaseExploitationsListView.as_view(),
-        name="release_list_exploitations",
-    ),
-    path(
-        "release/<int:release_pk>/edit_exploitation/<int:pk>/",
-        views.ReleaseEditExploitationView.as_view(),
-        name="release_edit_exploitation",
-    ),
-    path(
-        "release/<int:release_pk>/add_exploitation/",
-        views.ReleaseAddExploitationView.as_view(),
-        name="release_add_exploitation",
-    ),
-    path(
-        "release/<int:release_pk>/delete_exploitation/<int:pk>/",
-        views.ReleaseDeleteExploitationView.as_view(),
-        name="release_delete_exploitation",
-    ),
-    path(
         "release/<int:pk>/import/",
         views.ReleaseImportView.as_view(),
         name="release_import",
@@ -180,6 +159,7 @@ urlpatterns = [
         views.ReleaseValidationView.as_view(),
         name="release_validation",
     ),
+    ## Step 1
     path(
         "usage/<int:usage_pk>/add_license_curation/",
         views.ReleaseLicenseCurationCreateView.as_view(),
@@ -195,6 +175,7 @@ urlpatterns = [
         views.UpdateLicenseCurationView.as_view(),
         name="release_update_license_curation",
     ),
+    ### Step 2
     path(
         "usage/<int:usage_pk>/add_ands_validation/",
         views.ReleaseAndsValidationCreateView.as_view(),
@@ -210,6 +191,28 @@ urlpatterns = [
         views.UpdateAndsValidationView.as_view(),
         name="release_update_andsvalidation",
     ),
+    ### Step 3
+    path(
+        "release/<int:release_pk>/add_exploitation/",
+        views.ReleaseExploitationCreateView.as_view(),
+        name="release_add_exploitation",
+    ),
+    path(
+        "release/<int:release_pk>/exploitations/",
+        views.ReleaseExploitationsListView.as_view(),
+        name="release_list_exploitations",
+    ),
+    path(
+        "release/<int:release_pk>/edit_exploitation/<int:pk>/",
+        views.ReleaseEditExploitationView.as_view(),
+        name="release_edit_exploitation",
+    ),
+    path(
+        "release/<int:release_pk>/delete_exploitation/<int:pk>/",
+        views.ReleaseDeleteExploitationView.as_view(),
+        name="release_delete_exploitation",
+    ),
+    ## Step 4
     path(
         "usage/<int:usage_pk>/add_license_choice/",
         views.ReleaseLicenseChoiceCreateView.as_view(),
@@ -225,6 +228,7 @@ urlpatterns = [
         views.UpdateLicenseChoiceView.as_view(),
         name="release_update_license_choice",
     ),
+    ## Step 5
     path(
         "usage/<int:usage_pk>/add_derogation/<int:license_pk>/",
         views.ReleaseDerogationCreateView.as_view(),
