@@ -175,14 +175,16 @@ class UpdateAndsValidationView(AbstractResetCorrectedLicenseView):
 # Step 3
 
 
-class ReleaseEditExploitationView(LoginRequiredMixin, ReleaseContextMixin, UpdateView):
+class ReleaseExploitationUpdateView(
+    LoginRequiredMixin, ReleaseContextMixin, UpdateView
+):
     model = Exploitation
     fields = ["exploitation"]
     template_name = "cube/release_edit_exploitation.html"
 
     def get_success_url(self, *args, **kwargs):
         release_id = self.kwargs["release_pk"]
-        return reverse("cube:release_list_exploitations", args=[release_id])
+        return reverse("cube:release_exploitations", args=[release_id])
 
 
 class ReleaseExploitationCreateView(
@@ -193,7 +195,7 @@ class ReleaseExploitationCreateView(
     template_name = "cube/release_exploitation_create.html"
 
     def get_success_url(self, *args, **kwargs):
-        return reverse("cube:release_list_exploitations", args=[self.release.id])
+        return reverse("cube:release_exploitations", args=[self.release.id])
 
     def get_initial(self):
         scope = self.request.GET.get("scope", "Default scope")
@@ -262,14 +264,14 @@ class ReleaseExploitationsListView(
         )
 
 
-class ReleaseDeleteExploitationView(
+class ReleaseExploitationDeleteView(
     LoginRequiredMixin, ReleaseContextMixin, DeleteView
 ):
     model = Exploitation
     template_name = "cube/release_delete_exploitation.html"
 
     def get_success_url(self, *args, **kwargs):
-        return reverse("cube:release_list_exploitations", args=[self.release.id])
+        return reverse("cube:release_exploitations", args=[self.release.id])
 
 
 # Step 4
