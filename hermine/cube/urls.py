@@ -59,6 +59,11 @@ urlpatterns = [
         views.ExportLicenseCurationsView.as_view(),
         name="licensecurations_export",
     ),
+    path(
+        "licensecurations/<int:pk>/export/",
+        views.ExportSingleLicenseCurationView.as_view(),
+        name="licensecuration_export",
+    ),
     # Licenses and policy views
     path("licenses/", views.LicensesListView.as_view(), name="licenses"),
     path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
@@ -100,14 +105,19 @@ urlpatterns = [
     ),
     # License policy views
     path(
-        "license/<int:license_pk>/add_derogation/",
-        views.DerogationCreateView.as_view(),
-        name="derogation_create",
+        "license/<int:license_pk>/add_autorized_context/",
+        views.AuthorizedContextCreateView.as_view(),
+        name="authorized_context_create",
     ),
     path(
-        "derogation/<int:pk>/edit/",
-        views.DerogationUpdateView.as_view(),
-        name="derogation_edit",
+        "authorized_context/<int:pk>/edit/",
+        views.AuthorizedContextUpdateView.as_view(),
+        name="authorized_context_edit",
+    ),
+    path(
+        "authorized_context/",
+        views.AuthorizedContextListView.as_view(),
+        name="authorized_context_list",
     ),
     path(
         "derogations/",

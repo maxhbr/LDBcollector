@@ -118,7 +118,6 @@ class AbstractUsageRule(AbstractComponentRule):
     scope = models.CharField(
         max_length=128,
         blank=True,
-        null=True,
         help_text="Leave blank to apply for any scope",
     )
     exploitation = models.CharField(
@@ -179,7 +178,7 @@ class AbstractUsageRuleManager(models.Manager):
             Q(product=usage.release.product) | Q(product=None),
             Q(release=usage.release) | Q(release=None),
             Q(category__in=usage.release.product.categories.all()) | Q(category=None),
-            Q(scope=usage.scope) | Q(scope=None),
+            Q(scope=usage.scope) | Q(scope=""),
             Q(exploitation=usage.exploitation) | Q(exploitation=""),
         )
 

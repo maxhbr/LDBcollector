@@ -88,8 +88,12 @@ class Exploitation(models.Model):
     release = models.ForeignKey(
         Release, on_delete=models.CASCADE, related_name="exploitations"
     )
-    scope = models.CharField(max_length=50)
-    project = models.CharField(max_length=750, blank=True)
+    scope = models.CharField(
+        max_length=50, blank=True, help_text="Leave blank to apply for any scope"
+    )
+    project = models.CharField(
+        max_length=750, blank=True, help_text="Leave blank to apply for any project"
+    )
     exploitation = models.CharField(
         max_length=50,
         choices=Usage.EXPLOITATION_CHOICES,

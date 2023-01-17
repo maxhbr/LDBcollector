@@ -350,8 +350,8 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         ## Create exploitation manually
         Exploitation.objects.create(
             release_id=1,
-            scope="Global",
-            project="Default",
+            scope=Usage.DEFAULT_SCOPE,
+            project=Usage.DEFAULT_PROJECT,
             exploitation=Usage.EXPLOITATION_INTERNAL,
         )
         res = self.client.get(reverse("cube:releases-validation-3", kwargs={"id": 1}))
