@@ -6,12 +6,14 @@
 import json
 
 from django.http import HttpResponse
+from django.utils.text import slugify
 from django.views import View
+from django.views.generic.detail import SingleObjectMixin
 
 from cube.models import License, LicenseCuration
 from cube.serializers import LicenseSerializer
-from cube.utils.licenses import export_licenses as export_licenses_json
 from cube.utils.generics import export_generics as export_generics_json
+from cube.utils.licenses import export_licenses as export_licenses_json
 from cube.utils.ort import export_curations
 
 
@@ -68,3 +70,18 @@ class ExportLicenseCurationsView(BaseExportFileView):
 
     def get_data(self):
         return export_curations(LicenseCuration.objects.all())
+
+
+class ExportSingleLicenseCurationView(SingleObjectMixin, BaseExportFileView):
+    queryset = LicenseCuration.objects.exclude(component=None, version=None)
+    content_type = "application/x-yaml"
+
+    def dispatch(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        return super().dispatch(request, *args, **kwargs)
+
+    def get_filename(self):
+        return f"{slugify(str(self.object.version or self.object.component))}.yaml"
+
+    def get_data(self):
+        return export_curations(LicenseCuration.objects.filter(pk=self.object.pk))
