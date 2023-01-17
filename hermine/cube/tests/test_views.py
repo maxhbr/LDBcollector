@@ -25,7 +25,7 @@ class UnauthenticatedTestCase(TestCase):
         reverse("cube:components"),
         reverse("cube:component_detail", kwargs={"pk": 2}),
         reverse("cube:release_validation", kwargs={"pk": 1}),
-        reverse("cube:release_summary", kwargs={"pk": 1}),
+        reverse("cube:release_summary", kwargs={"release_pk": 1}),
         reverse("cube:release_bom", kwargs={"release_pk": 1}),
         reverse("cube:release_bom_export", kwargs={"pk": 1}),
         reverse("cube:licenses"),
