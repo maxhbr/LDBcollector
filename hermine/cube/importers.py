@@ -26,9 +26,6 @@ from cube.models import Component, Version, Usage, Exploitation
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_PROJECT = "Blank Projet"
-DEFAULT_SCOPE = "Blank Scope"
-
 
 class SBOMImportFailure(Exception):
     pass
@@ -139,8 +136,8 @@ def import_ort_evaluated_model_json_file(
                     exploitation=exploitation,
                 )
         else:
-            scope_name = DEFAULT_SCOPE
-            project_name = DEFAULT_PROJECT
+            scope_name = Usage.DEFAULT_SCOPE
+            project_name = Usage.DEFAULT_PROJECT
             try:
                 exploitation = Exploitation.objects.get(
                     release=release_idk, project=project_name, scope=scope_name
@@ -175,8 +172,8 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         Usage.objects.filter(release=release_id).delete()
 
     for package in document.packages:
-        current_scope = "Global"
-        current_project = "Default"
+        current_scope = Usage.DEFAULT_SCOPE
+        current_project = Usage.DEFAULT_PROJECT
         comp_name = package.name.rsplit("@")[0]
         comp_url = package.download_location or ""
         comp, created = Component.objects.get_or_create(
@@ -209,6 +206,7 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
             version_id=version_id,
             release_id=release_id,
             project=current_project,
+            exploitation=exploitation,
             scope=current_scope,
             defaults={"addition_method": "Scan", "linking": linking},
         )
