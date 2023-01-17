@@ -21,7 +21,7 @@ Derogations
 {% endblock %}
 {% block content %}
 <div id="content-main">
-  <p>The derogations that have been added to allow the use of a restricted licence in the context of a specific project or component.</p>
+  <p>Derogations allow use of a restricted licence in the context of a specific product or release.</p>
   <table class="table is-striped is-hoverable">
     <thead>
       <tr>
@@ -41,13 +41,13 @@ Derogations
         <td> <a href="{% url 'cube:license' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
                   {{ derogation.license.spdx_id }}
                 </span></a></td>
-        <td> {{ derogation.product|default:"" }} {{ derogation.release|default:"" }} </td>
-        <td> {{ derogation.component|default:"" }} {{ derogation.version|default:"" }} </td>
-        <td> {{ derogation.scope|default:"Any" }} </td>
-        <td> {{ derogation.get_linking_display|default:"Any" }} </td>
-        <td>{{ derogation.get_modification_display|default:"Any" }}</td>
-        <td>{{ derogation.get_exploitation_display|default:"Any" }}</td>
-        <td> {{ derogation.justification|default:"No Justification given" }} </td>
+        <td>{{ derogation.release|default:derogation.product }}</td>
+        <td>{{ derogation.version|default:derogation.component|default:"<em>Any</em>" }}</td>
+        <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
+        <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
+        <td>{{ derogation.get_modification_display|default:"<em>Any</em>" }}</td>
+        <td>{{ derogation.get_exploitation_display|default:"<em>Any</em>" }}</td>
+        <td>{{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}</td>
   {% endfor %}
   </tbody>
 </table>

@@ -12,9 +12,17 @@ from cube.models import (
 from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin
 
 
-class DerogationUpdateView(LoginRequiredMixin, SaveAuthorMixin, UpdateView):
+class AuthorizedContextUpdateView(LoginRequiredMixin, SaveAuthorMixin, UpdateView):
     model = Derogation
-    fields = ("scope", "linking", "modification", "exploitation", "justification")
+    fields = (
+        "scope",
+        "component",
+        "version",
+        "linking",
+        "modification",
+        "exploitation",
+        "justification",
+    )
 
     def get_context_data(self, **kwargs):
         return super().get_context_data(license=self.object.license, **kwargs)
@@ -23,11 +31,19 @@ class DerogationUpdateView(LoginRequiredMixin, SaveAuthorMixin, UpdateView):
         return reverse("cube:license", args=[self.object.license.id])
 
 
-class DerogationCreateView(
+class AuthorizedContextCreateView(
     LoginRequiredMixin, SaveAuthorMixin, LicenseRelatedMixin, CreateView
 ):
     model = Derogation
-    fields = ("scope", "linking", "modification", "exploitation", "justification")
+    fields = (
+        "scope",
+        "component",
+        "version",
+        "linking",
+        "modification",
+        "exploitation",
+        "justification",
+    )
 
     def get_success_url(self):
         return reverse("cube:license", args=[self.object.license.id])
@@ -37,10 +53,8 @@ class DerogationListView(LoginRequiredMixin, ListView):
     model = Derogation
     context_object_name = "derogations"
     queryset = Derogation.objects.exclude(
-        component__isnull=True,
-        version__isnull=True,
-        product__isnull=True,
-        release__isnull=True,
+        product=None,
+        release=None,
     )
 
 
