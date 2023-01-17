@@ -196,6 +196,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           {% if license.context_derogations %}
           <table>
             <tr>
+              <th>Product category</th>
               <th>Scope</th>
               <th>Component</th>
               <th>Linking</th>
@@ -207,6 +208,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             </tr>
             {% for derogation in license.context_derogations %}
               <tr>
+                <td>{{ derogation.category|default:"<em>Any</em>" }}</td>
                 <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
                 <td>{{ derogation.version|default:derogation.component|default:"<em>Any</em>" }}</td>
                 <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
@@ -216,7 +218,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                   {{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}
                 </td>
                 <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
-                <td>
+                <td style="white-space: nowrap">
                   <a href="{% url "cube:authorized_context_edit" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
                   <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
                 </td>

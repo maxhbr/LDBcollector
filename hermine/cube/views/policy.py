@@ -12,6 +12,12 @@ from cube.models import (
 from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin
 
 
+class AuthorizedContextListView(LoginRequiredMixin, ListView):
+    queryset = Derogation.objects.filter(product=None, release=None)
+    template_name = "cube/authorized_context_list.html"
+    context_object_name = "authorized_contexts"
+
+
 class AuthorizedContextUpdateView(LoginRequiredMixin, SaveAuthorMixin, UpdateView):
     model = Derogation
     fields = (

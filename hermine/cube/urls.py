@@ -111,6 +111,11 @@ urlpatterns = [
         name="authorized_context_edit",
     ),
     path(
+        "authorized_context/",
+        views.AuthorizedContextListView.as_view(),
+        name="authorized_context_list",
+    ),
+    path(
         "derogations/",
         views.DerogationListView.as_view(),
         name="derogations",
