@@ -6,29 +6,28 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
-{% block title %}Derogations{% endblock %}
+{% block title %}Authorized context{% endblock %}
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
   <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
-  <li>Derogations</li>
+  <li>Authorized contexts</li>
 </ul>
 {% endblock %}
 {% block herozone %}
 <h1 class="title">
   <span class="icon is-medium"><i class="fas fa-clipboard-check"></i></span>
-Derogations
+Authorized contexts
 </h1>
 {% endblock %}
 {% block content %}
 <div id="content-main">
-  <p>Derogations allow use of a restricted licence in the context of a specific product or release.
-    New derogations can only be created from the context of a release validation, but you can keep track of them here.</p>
+  <p>Authorized contexts allow use of a restricted licence for any all products or a category of products.</p>
   <table class="table is-striped is-hoverable">
     <thead>
       <tr>
         <th>License</th>
-        <th>Product / Release</th>
+        <th>Product category</th>
         <th>Component / Version</th>
         <th>Scope</th>
         <th>Linking</th>
@@ -40,12 +39,14 @@ Derogations
       </tr>
     </thead>
     <tbody>
-  {% for derogation in derogations %}
+  {% for derogation in authorized_contexts %}
       <tr>
-        <td> <a href="{% url 'cube:license' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
-                  {{ derogation.license.spdx_id }}
-                </span></a></td>
-        <td>{{ derogation.release|default:derogation.product }}</td>
+        <td>
+          <a href="{% url 'cube:license' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
+          {{ derogation.license.spdx_id }}
+          </span></a>
+        </td>
+        <td>{{ derogation.category|default:"<em>Any</em>" }}</td>
         <td>{{ derogation.version|default:derogation.component|default:"<em>Any</em>" }}</td>
         <td>{{ derogation.scope|default:"<em>Any</em>" }}</td>
         <td>{{ derogation.get_linking_display|default:"<em>Any</em>" }}</td>
@@ -54,7 +55,7 @@ Derogations
         <td>{{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}</td>
         <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
         <td style="white-space: nowrap">
-          <a href="{% url "admin:cube_derogation_change" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+          <a href="{% url "cube:authorized_context_edit" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
           <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
         </td>
   {% endfor %}

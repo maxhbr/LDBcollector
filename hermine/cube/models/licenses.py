@@ -155,7 +155,14 @@ class License(models.Model):
         from cube.models import Derogation
 
         return Derogation.objects.filter(license=self).filter(
-            version=None, component=None, release=None, product=None
+            release=None, product=None
+        )
+
+    def product_derogations(self):
+        from cube.models import Derogation
+
+        return Derogation.objects.filter(license=self).exclude(
+            product=None, release=None
         )
 
     def get_absolute_url(self):

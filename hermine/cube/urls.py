@@ -101,14 +101,19 @@ urlpatterns = [
     ),
     # License policy views
     path(
-        "license/<int:license_pk>/add_derogation/",
-        views.DerogationCreateView.as_view(),
-        name="derogation_create",
+        "license/<int:license_pk>/add_autorized_context/",
+        views.AuthorizedContextCreateView.as_view(),
+        name="authorized_context_create",
     ),
     path(
-        "derogation/<int:pk>/edit/",
-        views.DerogationUpdateView.as_view(),
-        name="derogation_edit",
+        "authorized_context/<int:pk>/edit/",
+        views.AuthorizedContextUpdateView.as_view(),
+        name="authorized_context_edit",
+    ),
+    path(
+        "authorized_context/",
+        views.AuthorizedContextListView.as_view(),
+        name="authorized_context_list",
     ),
     path(
         "derogations/",
