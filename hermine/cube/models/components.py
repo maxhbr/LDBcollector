@@ -12,6 +12,9 @@ class Usage(models.Model):
     Qualifies how a Version of a component is used in a Release of a Product.
     """
 
+    DEFAULT_PROJECT = "Default project"
+    DEFAULT_SCOPE = "Default scope"
+
     STATUS_AUTO = "Auto"
     STATUS_UNKNOWN = "Unknown"
     STATUS_VALIDATED = "Validated"
@@ -88,8 +91,8 @@ class Usage(models.Model):
     )
     description = models.TextField(max_length=500, blank=True)
     licenses_chosen = models.ManyToManyField("License", blank=True)
-    scope = models.CharField(max_length=50, blank=True)
-    project = models.CharField(max_length=750, blank=True)
+    scope = models.CharField(max_length=50, default=DEFAULT_SCOPE)
+    project = models.CharField(max_length=750, default=DEFAULT_PROJECT)
     license_expression = models.CharField(max_length=500, blank=True)
 
     @property
