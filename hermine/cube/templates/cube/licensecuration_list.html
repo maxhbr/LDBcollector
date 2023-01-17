@@ -58,7 +58,9 @@ SPDX-License-Identifier: AGPL-3.0-only -->
       <td> {{ curation.explanation|truncatechars:50 }}</td>
       <td>{{ curation.updated }} ({{ curation.author|default:"<em>author unknown</em>" }})</td>
       <td><a href="{%url 'cube:licensecuration_update' curation.id %}"><i class="far fa-edit"></i></a>
+        {% if curation.component or curation.version %}
         | <a href="{%url 'cube:licensecuration_export' curation.id %}"><i class="fa fa-download"></i></a></td>
+        {% endif %}
     </tr>
 {% endfor %}
 </tbody>
