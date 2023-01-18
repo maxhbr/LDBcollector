@@ -184,7 +184,7 @@ class ReleaseExploitationUpdateView(
 
     def get_success_url(self, *args, **kwargs):
         release_id = self.kwargs["release_pk"]
-        return reverse("cube:release_exploitations", args=[release_id])
+        return reverse("cube:release_summary", args=[release_id])
 
 
 class ReleaseExploitationCreateView(
@@ -195,7 +195,7 @@ class ReleaseExploitationCreateView(
     template_name = "cube/release_exploitation_create.html"
 
     def get_success_url(self, *args, **kwargs):
-        return reverse("cube:release_exploitations", args=[self.release.id])
+        return reverse("cube:release_summary", args=[self.release.id])
 
     def get_initial(self):
         scope = self.request.GET.get("scope", "Default scope")
@@ -271,7 +271,7 @@ class ReleaseExploitationDeleteView(
     template_name = "cube/release_delete_exploitation.html"
 
     def get_success_url(self, *args, **kwargs):
-        return reverse("cube:release_exploitations", args=[self.release.id])
+        return reverse("cube:release_summary", args=[self.release.id])
 
 
 # Step 4
