@@ -18,6 +18,7 @@ class OAuth2(BaseOAuth2):
     ACCESS_TOKEN_URL = settings.OAUTH_CLIENT["access_token_url"]
     ID_KEY = settings.OAUTH_CLIENT.get("id_key", "id")
     ACCESS_TOKEN_METHOD = settings.OAUTH_CLIENT.get("access_token_method", "POST")
+    REDIRECT_STATE = settings.OAUTH_CLIENT.get("redirect_state", True)
 
     # FIXME : override get_scope() OR redefine DEFAULT_SCOPE ?
     def get_scope(self):
