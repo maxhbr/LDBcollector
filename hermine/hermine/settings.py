@@ -196,4 +196,3 @@ GRAPH_MODELS = {"all_applications": True, "group_models": True}
 
 # Version file location
 VERSION_FILE_PATH = getattr(secrets, "VERSION_FILE_PATH", None)
-
