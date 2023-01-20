@@ -265,6 +265,10 @@ SPDX-License-Identifier: MIT
             </div>
             <div class="level-right">
               <div class="level-item">
+                {% load version %}
+                <span class='version'>{% version_date %}</span>
+              </div>
+              <div class="level-item">
                 <div class="logo">
                   <a href="https://hermine-foss.org">
                     <img src="{% static 'cube/media/LogoHermine.svg' %}" alt="Hermine project Logo">
