@@ -193,3 +193,6 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 1000000
 # Graph vizualization stuff
 
 GRAPH_MODELS = {"all_applications": True, "group_models": True}
+
+# Version file location
+VERSION_FILE_PATH = getattr(secrets, "VERSION_FILE_PATH", None)
