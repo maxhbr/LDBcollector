@@ -21,12 +21,11 @@ class AuthorizedContextListView(LoginRequiredMixin, ListView):
 class AuthorizedContextUpdateView(LoginRequiredMixin, SaveAuthorMixin, UpdateView):
     model = Derogation
     fields = (
-        "scope",
-        "component",
-        "version",
         "linking",
         "modification",
         "exploitation",
+        "scope",
+        "category",
         "justification",
     )
 
@@ -42,12 +41,11 @@ class AuthorizedContextCreateView(
 ):
     model = Derogation
     fields = (
-        "scope",
-        "component",
-        "version",
         "linking",
         "modification",
         "exploitation",
+        "scope",
+        "category",
         "justification",
     )
 
