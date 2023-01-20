@@ -13,6 +13,7 @@ docs/build/
 .idea
 hermine.iml
 **/.DS_Store
+hermine/hermine/VERSION.txt
 
 # Secrets are secrets
 hermine/hermine/mysecrets.py

@@ -52,3 +52,6 @@ DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sql
 #         "email": res.get("email"),
 #     },
 # }
+
+# Path to the current version to be displayed in the footer
+# VERSION_FILE_PATH = "hermine/hermine/VERSION.txt"
