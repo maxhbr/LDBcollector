@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
 from django.db.models import Count
 from django.urls import reverse_lazy
 from django.views import generic
@@ -67,6 +68,7 @@ class LicenseCurationUpdateView(
     success_url = reverse_lazy("cube:licensecurations")
 
 
+@login_required
 def component_update_funding(request, component_id):
     component = get_object_or_404(Component, pk=component_id)
     fundings = None

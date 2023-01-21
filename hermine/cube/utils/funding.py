@@ -21,6 +21,10 @@ def guess_type(url):
         type = "github"
     elif "opencollective.com" in url:
         type = "opencollective"
+    elif "patreon.com" in url:
+        type = "patreon"
+    elif "liberapay.com" in url:
+        type = "liberapay"
     else:
         type = "custom"
     return type
@@ -31,72 +35,79 @@ def get_packagist_funding(namespace, name):
     # name = "core"
     full_name = f"{namespace}/{name}"
     json_url = f"https://repo.packagist.org/p2/{full_name}.json"
-    r = requests.get(json_url)
-    data = r.json()
-    # We want uptodate info, so we only check the latest release
-    fundings = data["packages"][full_name][0].get("funding")
+    try:
+        r = requests.get(json_url)
+        data = r.json()
+        # We want uptodate info, so we only check the latest release
+        fundings = data["packages"][full_name][0].get("funding")
+    except requests.exceptions.RequestException as e:
+        print(f"Error while looking up funding: {e}")
+        fundings = None
     return fundings
 
 
 def get_pypi_funding(name):
-    # namespace = "api-platform"
-    # name = "core"
     json_url = f"https://pypi.org/pypi/{name}/json/"
-    r = requests.get(json_url)
-    data = r.json()
-    fundings = list()
-    project_urls = data["info"].get("project_urls")
-    if project_urls:
-        for (url_type, url) in project_urls.items():
-            if url_type == "Funding" or guess_type(url) != "custom":
-                type = guess_type(url)
-                fundings.append({"type": type, "url": url})
+    try:
+        r = requests.get(json_url)
+        data = r.json()
+        fundings = list()
+        project_urls = data["info"].get("project_urls")
+        if project_urls:
+            for (url_type, url) in project_urls.items():
+                if url_type == "Funding" or guess_type(url) != "custom":
+                    type = guess_type(url)
+                    fundings.append({"type": type, "url": url})
+    except requests.exceptions.RequestException as e:
+        print(f"Error while looking up funding: {e}")
+        fundings = None
     return fundings
 
 
 def get_npm_funding(namespace, name):
-    # name = "follow-redirects"
-    # name = "@turf/meta"
     if namespace:
         fullname = f"{namespace}/{name}"
     else:
         fullname = f"{name}"
-    print(f"Searching funding for {fullname}: ", end="")
     json_url = f"https://registry.npmjs.org/{fullname}/"
-    r = requests.get(json_url)
-    data = r.json()
-    fundings = list()
-    normalized_fundings = list()
-    versions = data.get("versions")
-    # We take the most up to date info
-    if versions:
-        for number, version in versions.items():
-            version_fundings = version.get("funding")
-            if version_fundings:
-                fundings = version_fundings
-    # We have to normalise, because fundings can be either a (type, url) dict, a string
-    # or a list of those
-    if isinstance(fundings, str):
-        url = fundings
-        normalized_fundings.append({"type": guess_type(url), "url": url})
-    elif isinstance(fundings, list):
-        for i in range(len(fundings)):
-            if isinstance(fundings[i], str):
-                url = fundings[i]
-                normalized_fundings.append({"type": guess_type(url), "url": url})
-            elif (
-                isinstance(fundings[i], dict)
-                and "url" in fundings[i]
-                and "type" not in fundings[i]
-            ):
-                fundings[i]["type"] = guess_type(fundings[i]["url"])
-                normalized_fundings.append(fundings[i])
-            else:
-                normalized_fundings.append(fundings[i])
-    elif isinstance(fundings, dict):
-        if "url" in fundings and "type" not in fundings:
-            fundings["type"] = guess_type(fundings["url"])
-        normalized_fundings.append(fundings)
+    try:
+        r = requests.get(json_url)
+        data = r.json()
+        fundings = list()
+        normalized_fundings = list()
+        versions = data.get("versions")
+        # We take the most up to date info
+        if versions:
+            for number, version in versions.items():
+                version_fundings = version.get("funding")
+                if version_fundings:
+                    fundings = version_fundings
+        # We have to normalise, because fundings can be either a (type, url) dict, a string
+        # or a list of those
+        if isinstance(fundings, str):
+            url = fundings
+            normalized_fundings.append({"type": guess_type(url), "url": url})
+        elif isinstance(fundings, list):
+            for i in range(len(fundings)):
+                if isinstance(fundings[i], str):
+                    url = fundings[i]
+                    normalized_fundings.append({"type": guess_type(url), "url": url})
+                elif (
+                    isinstance(fundings[i], dict)
+                    and "url" in fundings[i]
+                    and "type" not in fundings[i]
+                ):
+                    fundings[i]["type"] = guess_type(fundings[i]["url"])
+                    normalized_fundings.append(fundings[i])
+                else:
+                    normalized_fundings.append(fundings[i])
+        elif isinstance(fundings, dict):
+            if "url" in fundings and "type" not in fundings:
+                fundings["type"] = guess_type(fundings["url"])
+            normalized_fundings.append(fundings)
+    except requests.exceptions.RequestException as e:
+        print(f"Error while looking up funding: {e}")
+        normalized_fundings = None
     return normalized_fundings
 
 
