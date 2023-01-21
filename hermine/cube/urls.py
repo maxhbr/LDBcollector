@@ -40,6 +40,11 @@ urlpatterns = [
     path("components/popular/", views.PopularListView.as_view(), name="populars"),
     path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),
     path(
+        "component/<int:component_id>/update_funding/",
+        views.component_update_funding,
+        name="component_update_funding",
+    ),
+    path(
         "licensecurations/",
         views.LicenseCurationListView.as_view(),
         name="licensecurations",

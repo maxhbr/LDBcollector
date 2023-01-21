@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 # Constant for Usage and Derogation models
 
-from cube.models.components import Component, Version, Usage
+from cube.models.components import Component, Version, Usage, Funding
 from cube.models.licenses import License, Team, Generic, Obligation
 from cube.models.policy import (
     LicenseCuration,

@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <span class="icon is-medium">
   <i class="fas fa-puzzle-piece"></i>
   </span>
-Top 10 Most used components
+Top 50 Most used components
 </h1>
 {% endblock %}
 
@@ -31,6 +31,7 @@ Top 10 Most used components
       <th>Name</th>
       <th>Number of usages</th>
       <th>Description</th>
+      <th>Funding opportunity</th>
     </tr>
   </thead>
   <tbody>
@@ -44,6 +45,12 @@ Top 10 Most used components
       <td>
         {{ component.description|truncatechars:42 }}
       </td>
+      <td>{% if component.fundings.all %}
+
+          {% for funding in component.fundings.all %}
+           <a target="_blank" href="{{funding.url}}"><i class="fas fa-money-check-alt"></i></a>
+          {% endfor%}
+          {% endif%}</td>
     </tr>
 
 {% endfor %}

@@ -146,6 +146,21 @@ class Component(models.Model):
         unique_together = ("name", "package_repo")
 
 
+class Funding(models.Model):
+    """
+    A funding source of a third party component
+    """
+
+    component = models.ForeignKey(
+        Component, on_delete=models.CASCADE, related_name="fundings"
+    )
+    url = models.URLField(max_length=200)
+    type = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.url
+
+
 class Version(models.Model):
     """
     A specific version of a third party component
