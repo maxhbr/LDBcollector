@@ -52,6 +52,13 @@ SPDX-License-Identifier: AGPL-3.0-only
         <div class="column">
           <p><span class="icon"><i class="fas fa-home"></i></span>Project home page:
           <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a></p>
+          <p><a href="{% url 'cube:component_update_funding' object.id %}">Get/update funding info</a></p>
+          {% if object.fundings.all %}
+          <p>You can fund this project that you rely on: </p>
+          {% for funding in object.fundings.all %}
+          <p><i class="fas fa-money-check-alt"></i> <a target="_blank" href="{{funding.url}}">{{funding.url|truncatechars:45 }}</a> </p>
+          {% endfor%}
+          {% endif%}
         </div>
       </div>
     </div>

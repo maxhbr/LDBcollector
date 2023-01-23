@@ -11,6 +11,7 @@ from .models import Product
 from .models import Category
 from .models import Release
 from .models import Component
+from .models import Funding
 from .models import Version
 from .models import Usage
 from .models import License
@@ -46,6 +47,11 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class VersionInlineTab(admin.TabularInline):
     model = Version
+    extra = 1
+
+
+class FundingInlineTab(admin.TabularInline):
+    model = Funding
     extra = 1
 
 
@@ -119,8 +125,12 @@ class GenericAdmin(admin.ModelAdmin):
 
 
 class ComponentAdmin(admin.ModelAdmin):
-    inlines = [VersionInlineTab]
+    inlines = [VersionInlineTab, FundingInlineTab]
     search_fields = ["name", "description"]
+
+
+class FundingAdmin(admin.ModelAdmin):
+    search_fields = ["url"]
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -286,6 +296,7 @@ admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Release, ReleaseAdmin)
 admin.site.register(Component, ComponentAdmin)
+admin.site.register(Funding, FundingAdmin)
 admin.site.register(Version, VersionAdmin)
 admin.site.register(Usage, UsageAdmin)
 admin.site.register(Generic, GenericAdmin)
