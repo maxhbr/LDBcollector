@@ -2,11 +2,11 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Fedora License Data
 Source: https://gitlab.com/fedora/legal/fedora-license-data/
 
-Files: AUTHORS requirements.txt
+Files: AUTHORS requirements.txt .tito/* .gitlab/issue_templates/README
 Copyright: Not Copyrightable
 License: LicenseRef-Not-Copyrightable
 
-Files: how-to-release.md README.md TEMPLATE.toml
+Files: how-to-release.md README.md TEMPLATE.toml .gitlab/issue_templates/license-review.md
 Copyright: Fedora Project Authors
 License: CC0-1.0
 
