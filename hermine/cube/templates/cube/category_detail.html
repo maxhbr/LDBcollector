@@ -74,10 +74,22 @@ SPDX-License-Identifier: AGPL-3.0-only
 </tbody>
 </table>
 
-
-
-
+<h2 class="title is-2">Licences with authorized contexts specific to this category</h2>
+<table class="table is-striped is-hoverable is-fullwidth">
+  <thead>
+    <tr>
+      <th>License</th>
+      <th>Justification</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for context in object.derogation_set.all %}
+    <tr>
+      <td><a href="{% url 'cube:license' context.license.id %}">{{context.license}}</a></td>
+      <td>{{context.justification|truncatechars:30}}</td>
+    </tr>
+  </a>
+{% endfor %}
+</tbody>
+</table>
 {% endblock %}
-
-
-
