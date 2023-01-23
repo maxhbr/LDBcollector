@@ -157,7 +157,7 @@ https://www.ifross.org/artikel/olg-k-ln-rechtserhaltenden-markenbenutzung-bei-op
 
 satco europe GmbH ./. Dream Property GmbH
 
-Link: http://www.ifross.org/sites/default/files/OLG Duesseldorf satco europe v Dream Property.pdf
+Link: https://www.ifross.org/Fremdartikel/OLG_Duesseldorf_1-20_U_176-11.pdf
 
 #### OLG Düsseldorf, Urteil v. 28.09.2010, Az. I-20 U 41/09
 
