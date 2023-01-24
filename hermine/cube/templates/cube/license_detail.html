@@ -107,6 +107,16 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ license.get_allowed_display }}
             </span>
           </p>
+          <p>Explanation of FOSS policy:</p>
+          {% if license.allowed_explanation %}
+          <div class="box">
+           <p>{{ license.allowed_explanation }}</p>
+          </div>
+          {% else %}
+          <p>
+            <em>No explanation has been given for this OSS policy</em> - <a href="{% url "cube:license_edit" license.id %}">Edit</a>
+          </p>
+          {% endif %}
         </div>
         <div class="column">
           <p>Copyleft :
@@ -146,8 +156,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 
           <!-- Show optional comment -->
           {% if license.comment %}
+            <p>Your comment :</p>
             <div class="box">
-              <p><b>Your comment :</b></p>
               <p>{{ license.comment }}</p>
             </div>
           {% else %}
@@ -179,21 +189,13 @@ SPDX-License-Identifier: AGPL-3.0-only
         <span class="icon">
           <i class="fas fa-exclamation-circle"></i>
         </span>
-        This license is allowed only in specific contexts
+        Authorized contexts:
       </p>
     </header>
 
       <div class="card-content">
-        {% if license.allowed_explanation %}
-          <h5>Explanation:</h5>
-          <p>{{ license.allowed_explanation }}</p>
-        {% else %}
-          <p>
-            <em>No general explanation given for this OSS policy</em> - <a href="{% url "cube:license_edit" license.id %}">Edit</a>
-          </p>
-        {% endif %}
-          <h5>Authorized contexts:</h5>
           {% if license.context_derogations %}
+        <p>There is {{ license.context_derogations.count }} generic contexts authorized for this license (listed below) and {% if license.derogations.count > 0 %} <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
           <table>
             <tr>
               <th>Linking</th>
@@ -224,18 +226,14 @@ SPDX-License-Identifier: AGPL-3.0-only
             {% endfor %}
           </table>
           {% else %}
-            <p><em>There are no generic contexts of usage authorized for this license.</em></p>
+            <p><em>There are no generic contexts of usage authorized for this license.</em>{% if license.derogations.count > 0 %} There are <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
           {% endif %}
             <p><a href="{% url "cube:authorized_context_create" license.id %}" class="button">
             <span class="icon"><i class="fas fa-plus"></i></span>
             <span>Add an authorized context</span>
           </a></p>
 
-          {% if license.derogations.count > 0 %}
-            <p>There are <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}">
-            {{ license.product_derogations.count }} derogation{{ license.product_derogations.count|pluralize }}</a>
-              for this license applying to specific products.</p>
-          {% endif %}
+
 
       </div>
     </section>
@@ -300,5 +298,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endfor %}
 
 {% endblock %}
+
+
 
 
