@@ -291,7 +291,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
                     "spdx_file": sbom_file,
                     "release": 1,
                     "replace": False,
-                    "linking": Usage.LINKING_PACKAGE,
+                    "linking": Usage.LINKING_DYNAMIC,
                 },
                 format="multipart",
             )

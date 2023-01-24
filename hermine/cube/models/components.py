@@ -60,13 +60,11 @@ class Usage(models.Model):
     LINKING_AGGREGATION = "Aggregation"
     LINKING_DYNAMIC = "Dynamic"
     LINKING_STATIC = "Static"
-    LINKING_PACKAGE = "Package"
     LINKING_MINGLED = "Mingled"
     LINKING_CHOICES = [
         (LINKING_AGGREGATION, "Mere aggregation"),
         (LINKING_DYNAMIC, "Dynamic Linking"),
         (LINKING_STATIC, "Static Linking"),
-        (LINKING_PACKAGE, "Package Manager"),
         (LINKING_MINGLED, "Source code directly derived"),
     ]
 
