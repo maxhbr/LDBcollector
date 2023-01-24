@@ -18,7 +18,7 @@ class ImportForm(TestCase):
             {
                 "bom_type": ImportBomForm.BOM_SPDX,
                 "import_mode": ImportBomForm.IMPORT_MODE_REPLACE,
-                "linking": Usage.LINKING_PACKAGE,
+                "linking": Usage.LINKING_DYNAMIC,
                 "file": open("cube/fixtures/fake_sbom.json", "r"),
             },
         )
