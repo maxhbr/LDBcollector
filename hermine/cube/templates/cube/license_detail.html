@@ -109,8 +109,8 @@ SPDX-License-Identifier: AGPL-3.0-only
           </p>
           <p>Explanation of FOSS policy:</p>
           {% if license.allowed_explanation %}
-          <div class="box">
-           <p>{{ license.allowed_explanation }}</p>
+          <div class="content">
+           <blockquote>{{ license.allowed_explanation }}</blockquote>
           </div>
           {% else %}
           <p>
@@ -157,8 +157,8 @@ SPDX-License-Identifier: AGPL-3.0-only
           <!-- Show optional comment -->
           {% if license.comment %}
             <p>Your comment :</p>
-            <div class="box">
-              <p>{{ license.comment }}</p>
+            <div class="content">
+              <blockquote>{{ license.comment }}</blockquote>
             </div>
           {% else %}
             <p>Comment: <i>no comment</i></p>
