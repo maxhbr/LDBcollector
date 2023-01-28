@@ -39,6 +39,7 @@ def additional_urls(license):
         for url in license['license']['url'].split():
             RESULT.append('link:++{0}++[]'.format(url))
         return ' '.join(RESULT)
+    return ''
 
 
 func_dict = {
