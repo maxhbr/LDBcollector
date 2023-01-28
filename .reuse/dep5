@@ -2,10 +2,6 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Fedora License Data
 Source: https://gitlab.com/fedora/legal/fedora-license-data/
 
-Files: AUTHORS requirements.txt .gitlab-ci.yml .packit.yaml .tito/* .gitlab/issue_templates/README
-Copyright: Not Copyrightable
-License: LicenseRef-Not-Copyrightable
-
 Files: how-to-release.md README.md TEMPLATE.toml .gitlab/issue_templates/license-review.md
 Copyright: Fedora Project Authors
 License: CC0-1.0
@@ -13,6 +9,18 @@ License: CC0-1.0
 Files: fedora-license-data.spec
 Copyright: Fedora Project Authors
 License: MIT
+
+Files: DCO
+Copyright: 2005 Open Source Development Labs, Inc.
+License: CC-BY-SA-2.5
+
+Files: AUTHORS requirements.txt .gitlab-ci.yml .packit.yaml .tito/* .gitlab/issue_templates/README
+Copyright: Not Copyrightable
+License: LicenseRef-Not-Copyrightable
+
+Files: UltraPermissive.txt public-domain-text.txt data/*
+Copyright: Fedora Project Authors and None and Various
+License: CC0-1.0 AND LicenseRef-License-of-Licenses
 
 Files: tools/*
 Copyright: 2022 Red Hat, Inc.
@@ -22,7 +30,5 @@ Files: Makefile tools/templates/*
 Copyright: Fedora Project Authors
 License: BSD-3-Clause
 
-Files: UltraPermissive.txt public-domain-text.txt data/*
-Copyright: Fedora Project Authors and None and Various
-License: CC0-1.0 AND LicenseRef-License-of-Licenses
+
 
