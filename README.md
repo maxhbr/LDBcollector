@@ -22,11 +22,8 @@ package checking tools.
 
 The Fedora Legal team is responsible for this project.
 
-## Contribution
+## Source and Output Formats
 
-To create a merge request to this project you must log in using Fedora OpenID. You can do that on [SSO page](https://gitlab.com/groups/fedora/-/saml/sso).
-
-The source about licenses is stored in `data/` directory. One file per license.
 The source data are stored in [TOML](https://toml.io/en/) format. This was agreed as a simplest format for even non-technical contributors.
 
 The RPM package contains the data in JSON format. If you need the data in a different format, you can send a merge request that converts the TOML data to a different format. We can have multiple output formats, but the source format has to be preserved.
