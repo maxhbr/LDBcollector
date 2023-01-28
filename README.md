@@ -1,5 +1,7 @@
 # Fedora License Data Project
 
+[![REUSE status](https://api.reuse.software/badge/gitlab.com/fedora/legal/fedora-license-data)](https://api.reuse.software/info/gitlab.com/fedora/legal/fedora-license-data)
+
 This project contains data for licenses that have been reviewed
 for use in the Fedora Linux project. For more on the criteria 
 Fedora applies for such review, see [License Approval](https://docs.fedoraproject.org/en-US/legal/license-approval)
