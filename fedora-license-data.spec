@@ -68,21 +68,20 @@ The Fedora Legal team is responsible for the content.
 
 %build
 %make_build spec-validate json %{?with_rpmlint:rpmlint}
-cp LICENSES/* ./
 
 %install
 make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %files
-%license LICENSE BSD-3-Clause.txt CC0-1.0.txt
+%license LICENSES/*
 %doc AUTHORS README.md
 %{_datadir}/%{name}/
 
 
 %if %{with rpmlint}
 %files -n rpmlint-%{name}
-%license CC0-1.0.txt
+%license LICENSES/CC0-1.0.txt
 %doc AUTHORS README.md
 %config(noreplace) %{_sysconfdir}/xdg/rpmlint/*.toml
 %endif
