@@ -123,30 +123,25 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
 
 [.datatable.dt-search]
 |===
-| Allowed | Allowed-content | Allowed-documentation | Allowed-fonts | Allowed-firmware | Status | SPDX Expression | Name | Legacy Abbreviation | URLs
+| Allowed-content | Allowed-documentation | Allowed-fonts | Allowed-firmware | Status | SPDX Expression | Name | Legacy Abbreviation | URLs
 
 {% for license in ALL_ALLOWED_LICENSES -%}
-| {%- if 'allowed' in license['license']['status'] -%}
+| {%- if ('allowed-content' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
         &#10004;
   {%- else -%}
         {nbsp}
   {%- endif -%}
-| {%- if 'allowed-content' in license['license']['status'] -%}
+| {%- if ('allowed-documentation' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
         &#10004;
   {%- else -%}
         {nbsp}
   {%- endif -%}
-| {%- if 'allowed-documentation' in license['license']['status'] -%}
+| {%- if ('allowed-fonts' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
         &#10004;
   {%- else -%}
         {nbsp}
   {%- endif -%}
-| {%- if 'allowed-fonts' in license['license']['status'] -%}
-        &#10004;
-  {%- else -%}
-        {nbsp}
-  {%- endif -%}
-| {%- if 'allowed-firmware' in license['license']['status'] -%}
+| {%- if ('allowed-firmware' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
         &#10004;
   {%- else -%}
         {nbsp}
