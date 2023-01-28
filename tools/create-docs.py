@@ -71,9 +71,9 @@ for licensefile in os.scandir(opts.datadir):
         CONTENT_LICENSES.append(data)
     if 'allowed-documentation' in data["license"]["status"]:
         DOCUMENTATION_LICENSES.append(data)
-    if 'fonts-content' in data["license"]["status"]:
+    if 'allowed-fonts' in data["license"]["status"]:
         FONTS_LICENSES.append(data)
-    if 'firmware-content' in data["license"]["status"]:
+    if 'allowed-firmware' in data["license"]["status"]:
         FIRMWARE_LICENSES.append(data)
     if 'not-allowed' in data["license"]["status"]:
         NOTALLOWED_LICENSES.append(data)
