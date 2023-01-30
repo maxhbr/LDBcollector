@@ -18,5 +18,5 @@
  */
 
 object : HowToFixTextProvider {
-    override fun getHowToFixText(issue: OrtIssue): String? = null
+    override fun getHowToFixText(issue: Issue): String? = null
 }
