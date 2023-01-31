@@ -60,4 +60,4 @@ and log in as superuser to create new users
 
 or directly to [http://127.0.0.1:8080](http://127.0.0.1:8080) to use the application.
 
-You can find an in progress documentation at https://hermine-foss.org/
+You can find an in progress documentation at https://docs.hermine-foss.org/
