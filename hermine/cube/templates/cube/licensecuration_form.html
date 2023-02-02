@@ -30,5 +30,14 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tr><th></th><td><input type="submit" value="Save"></td></tr>
     </table>
   </form>
+
+  {% if request.resolver_match.url_name == 'release_andsvalidation_create' %}
+    <p>
+      Wrong license expression?
+      <a href="{% url "cube:release_licensecuration_create" form.usage.pk %}">
+        Correct original license expression instead</a>
+    </p>
+  {% endif %}
+
 {% endblock %}
 
