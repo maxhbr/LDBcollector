@@ -20,7 +20,7 @@ from cube.utils.release_validation import (
     STEP_CHOICES,
     STEP_POLICY,
 )
-from test_crud_api import BaseHermineAPITestCase
+from .mixins import BaseHermineAPITestCase
 
 
 class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
