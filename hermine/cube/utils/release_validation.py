@@ -17,6 +17,7 @@ from cube.utils.licenses import (
     explode_spdx_to_units,
     is_ambiguous,
     has_ors,
+    simplified,
 )
 
 logger = logging.getLogger(__name__)
@@ -145,23 +146,25 @@ def validate_ands(release: Release):
     context = dict()
     ambiguous_spdx = [
         usage
-        for usage in release.usage_set.exclude(
-            version__spdx_valid_license_expr=""
-        ).filter(version__corrected_license="")
+        for usage in release.usage_set.exclude(version__spdx_valid_license_expr="")
         if is_ambiguous(usage.version.spdx_valid_license_expr)
     ]
 
-    context["to_confirm"] = ambiguous_spdx
+    context["to_confirm"] = [
+        u for u in ambiguous_spdx if u.version.corrected_license == ""
+    ]
     context["confirmed"] = [
         u.version
         for u in ambiguous_spdx
         if u.version.corrected_license == u.version.spdx_valid_license_expr
+        or u.version.corrected_license == simplified(u.version.spdx_valid_license_expr)
     ]
     context["corrected"] = [
         u.version
         for u in ambiguous_spdx
         if u.version.corrected_license
         and u.version.corrected_license != u.version.spdx_valid_license_expr
+        and u.version.corrected_license != simplified(u.version.spdx_valid_license_expr)
     ]
 
     return (len(context["to_confirm"]) == 0), context

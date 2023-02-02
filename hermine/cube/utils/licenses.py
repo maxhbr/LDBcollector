@@ -90,11 +90,16 @@ def _get_ands_corrections_expressions(parsed):
     ]
 
     return {
-        str(simplified),
+        simplified,
         simplified_or_expression,
         *and_combinations,
         *or_combinations,
     }
+
+
+@lru_cache(maxsize=1024)
+def simplified(spdx_expression: str):
+    return str(licensing.parse(spdx_expression).simplify())
 
 
 def check_licenses_against_policy(release):
