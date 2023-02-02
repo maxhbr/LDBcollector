@@ -5,8 +5,6 @@
 from django.contrib.auth.models import User
 from rest_framework.test import APITestCase as BaseAPITestCase
 
-from test_crud_api import SPDX_ID
-
 
 class ForceLoginMixin:
     def setUp(self):
@@ -15,6 +13,8 @@ class ForceLoginMixin:
 
 
 class BaseHermineAPITestCase(BaseAPITestCase):
+    SPDX_ID = "LicenseRef-fakeLicense-1.0"
+
     def setUp(self):
         self.user = User.objects.create_user(
             "TestUser", "testuser@test.com", "password"
@@ -24,7 +24,7 @@ class BaseHermineAPITestCase(BaseAPITestCase):
     def create_license(self):
         url = "/api/licenses/"
         data = {
-            "spdx_id": SPDX_ID,
+            "spdx_id": self.SPDX_ID,
             "long_name": "license posted through api",
             "allowed": "context",
             "copyleft": "Strong",
@@ -72,8 +72,8 @@ class BaseHermineAPITestCase(BaseAPITestCase):
         url = "/api/components/1/versions/"
         data = {
             "version_number": "2.0",
-            "declared_license_expr": SPDX_ID + "OR AND",
+            "declared_license_expr": self.SPDX_ID + "OR AND",
             "spdx_valid_license_expr": "",
-            "corrected_license": SPDX_ID,
+            "corrected_license": self.SPDX_ID,
         }
         return self.client.post(url, data)

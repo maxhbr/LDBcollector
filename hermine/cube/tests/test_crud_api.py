@@ -9,8 +9,6 @@ from cube.models import (
 )
 from .mixins import BaseHermineAPITestCase
 
-SPDX_ID = "testlicense"
-
 
 class APICRUDTests(BaseHermineAPITestCase):
     """A class to test the naturel workflow with Endpoints.
@@ -58,7 +56,7 @@ class APICRUDTests(BaseHermineAPITestCase):
         """Test to post a new obligation to the previously created license."""
         url = "/api/licenses/"
         data = {
-            "spdx_id": SPDX_ID,
+            "spdx_id": self.SPDX_ID,
             "long_name": "license posted through api",
             "color": "Orange",
             "copyleft": "Strong",
