@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "spdx_id": "LicenseRef-fakeLicense-Permissive-1.0",
-        "long_name": "Fake permissive License-1.0",
+        "spdx_id": "LicenseRef-fakeLicense-Allowed-1.0",
+        "long_name": "Fake allowed License-1.0",
         "license_version": "1.0",
-        "radical": "fakeLicense-Permissive",
+        "radical": "fakeLicense-allowed",
         "autoupgrade": null,
         "steward": "",
         "inspiration_spdx": "",
@@ -67,10 +67,10 @@
     },
     {
         "id": 2,
-        "spdx_id": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
-        "long_name": "Fake Weak Copyleft License-1.0",
-        "license_version": "Fake Weak Copyleft License",
-        "radical": "Fake Weak Copyleft License-1.0",
+        "spdx_id": "LicenseRef-fakeLicense-ContextAllowed-1.0",
+        "long_name": "Fake Context Allowed License-1.0",
+        "license_version": "Fake Context Allowed License",
+        "radical": "Fake Context Allowed License-1.0",
         "autoupgrade": null,
         "steward": "",
         "inspiration_spdx": "",
