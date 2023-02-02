@@ -70,7 +70,7 @@ def propagate_choices(release: Release):
 
     to_resolve = set()
 
-    for usage in release.usage_set.all():
+    for usage in release.usage_set.filter(license_expression=""):
         if usage.version.license_is_ambiguous:
             continue
 
