@@ -34,6 +34,7 @@ from cube.models import (
 )
 from cube.utils.licenses import (
     get_usages_obligations,
+    get_generic_usages,
 )
 from cube.views.mixins import SearchMixin, ReleaseContextMixin
 
@@ -112,11 +113,14 @@ class ReleaseGenericView(LoginRequiredMixin, ReleaseContextMixin, TemplateView):
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        context["usages"] = Usage.objects.filter(
+        release_usages = Usage.objects.filter(
             release__id=self.kwargs["release_pk"],
             licenses_chosen__obligation__generic__id=self.kwargs["generic_id"],
         )
-        context["generic"] = get_object_or_404(Generic, pk=self.kwargs["generic_id"])
+        generic = get_object_or_404(Generic, pk=self.kwargs["generic_id"])
+        triggering_usages = get_generic_usages(release_usages, generic)
+        context["usages"] = triggering_usages
+        context["generic"] = generic
         return context
 
 

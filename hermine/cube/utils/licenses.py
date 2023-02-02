@@ -239,6 +239,27 @@ def get_usages_obligations(usages):
     return generics_involved, orphaned_licenses, licenses_involved
 
 
+def get_generic_usages(usages, generic):
+    """
+    Filters a list of usages to retain only those triggering the provided
+    generic obligation.
+    :param usages: An iterable of Usage objects
+    :param generic: A Generic object
+    :return: An iterable of Usage objects that actually trigger the generic obligation
+    """
+    triggering_usages = set()
+
+    for usage in usages:
+        for license in usage.licenses_chosen.all():
+            for obligation in get_license_triggered_obligations(
+                license, usage.exploitation, usage.component_modified
+            ):
+                if obligation.generic and obligation.generic == generic:
+                    triggering_usages.add(usage)
+
+    return triggering_usages
+
+
 def export_licenses(indent=False):
     serializer = LicenseSerializer(License.objects.all(), many=True)
     data = json.dumps(serializer.data, indent=4 if indent else None)
