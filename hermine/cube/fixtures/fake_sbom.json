@@ -5,14 +5,17 @@
   "name": "hello-imports.spdx.json",
   "documentDescribes": [
     "SPDXRef-dependency1",
-    "SPDXRef-dependency2"
+    "SPDXRef-dependency2",
+    "SPDXRef-dependency3",
+    "SPDXRef-dependency4",
+    "SPDXRef-dependency5"
   ],
   "packages": [
     {
       "name": "spdx-valid-dependency",
       "SPDXID": "SPDXRef-dependency1",
-      "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
-      "licenseDeclared": "LicenseRef-fakeLicense-WeakCopyleft-1.0",
+      "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0",
+      "licenseDeclared": "LicenseRef-fakeLicense-ContextAllowed-1.0",
       "copyrightText": "NOASSERTION",
       "versionInfo": "v1"
     },
@@ -20,23 +23,31 @@
       "name": "spdx-invalid-dependency",
       "SPDXID": "SPDXRef-dependency2",
       "licenseConcluded": "NOASSERTION",
-      "licenseDeclared": "Permissive-1.0 AND WeekCopyLeft-1.0",
+      "licenseDeclared": "Allowed-1.0 AND ContextAllowed-1.0",
       "copyrightText": "NOASSERTION",
       "versionInfo": "v1"
     },
     {
       "name": "ambiguous-dependency",
       "SPDXID": "SPDXRef-dependency3",
-      "licenseConcluded": "LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
-      "licenseDeclared": "LicenseRef-fakeLicense-WeakCopyleft-1.0 AND LicenseRef-fakeLicense-Permissive-1.0",
+      "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0 AND LicenseRef-fakeLicense-Allowed-1.0",
+      "licenseDeclared": "LicenseRef-fakeLicense-ContextAllowed-1.0 AND LicenseRef-fakeLicense-Allowed-1.0",
       "copyrightText": "NOASSERTION",
       "versionInfo": "v1"
     },
     {
       "name": "no-assertion-dependency",
-      "SPDXID": "SPDXRef-dependency3",
+      "SPDXID": "SPDXRef-dependency4",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1"
+    },
+    {
+      "name": "wrong-concluded-dependency",
+      "SPDXID": "SPDXRef-dependency5",
+      "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0",
+      "licenseDeclared": "NotAnalyzedLicense AND WeekCopyLeft-1.0",
       "copyrightText": "NOASSERTION",
       "versionInfo": "v1"
     }

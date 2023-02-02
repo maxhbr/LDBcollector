@@ -28,30 +28,103 @@ STEP_EXPLOITATIONS = 3
 STEP_CHOICES = 4
 STEP_POLICY = 5
 
-
-def validate_expressions(release):
-    """
-    Check for components versions that do not have valid SPDX license expressions.
-    """
-    context = dict()
-    invalid_expressions = release.usage_set.filter(
-        version__spdx_valid_license_expr="",
+# Functions with side effect to update releases according to curations and choices
+def apply_curations(release):
+    for usage in release.usage_set.filter(
         version__corrected_license="",
-    )
-
-    for usage in invalid_expressions:
+    ):
         try:
             usage.version.corrected_license = (
                 LicenseCuration.objects.for_version(usage.version).get().expression_out
             )
 
             usage.version.save()
-        except LicenseCuration.DoesNotExist:
+        except (LicenseCuration.DoesNotExist, LicenseCuration.MultipleObjectsReturned):
+            pass
+
+
+def propagate_choices(release: Release):
+    """
+    Transfer license information from component to usage. Set usage.license_chosen if
+    there is no ambiguity.
+
+    Args:
+        release (int): The intern identifier of the concerned release
+
+    Returns:
+        response: A python object that has two field :
+            `to_resolve` the set of usages which needs an explicit choice
+            `resolved` the set of usages for which a choice has been made
+    """
+
+    resolved = {
+        usage
+        for usage in release.usage_set.all()
+        .select_related("version", "version__component")
+        .prefetch_related("licenses_chosen")
+        .exclude(license_expression="")
+        if has_ors(
+            usage.version.effective_license
+        )  # we want to list only usages for which a choice was actually necessary
+    }
+
+    to_resolve = set()
+
+    for usage in release.usage_set.filter(license_expression=""):
+        if usage.version.license_is_ambiguous:
             continue
 
-    invalid_expressions = [
-        usage for usage in invalid_expressions if not usage.version.corrected_license
-    ]
+        if not has_ors(usage.version.effective_license):
+            licenses_spdx_ids = explode_spdx_to_units(usage.version.effective_license)
+
+            try:
+                licenses = [
+                    License.objects.get(spdx_id=spdx_id)
+                    for spdx_id in licenses_spdx_ids
+                ]
+                usage.licenses_chosen.set(licenses)
+                usage.license_expression = usage.version.effective_license
+                usage.save()
+            except License.DoesNotExist:
+                logger.warning(
+                    "%s : can not choose unknown license",
+                    usage.version.component,
+                )
+
+        elif not usage.license_expression:  # do not override already made choices
+            try:
+                expression_out = (
+                    LicenseChoice.objects.for_usage(usage)
+                    .values_list("expression_out", flat=True)
+                    .get()
+                )
+            except (LicenseChoice.DoesNotExist, LicenseChoice.MultipleObjectsReturned):
+                to_resolve.add(usage)
+            else:
+                usage.license_expression = expression_out
+                licenses = [
+                    License.objects.get(spdx_id=spdx_id)
+                    for spdx_id in set(explode_spdx_to_units(expression_out))
+                ]
+                usage.licenses_chosen.set(licenses)
+                usage.save()
+                resolved.add(usage)
+
+    response = {"to_resolve": to_resolve, "resolved": resolved}
+    return response
+
+
+# Validations step methods
+def validate_expressions(release):
+    """
+    Check for components versions that do not have valid SPDX license expressions.
+    """
+    apply_curations(release)
+
+    context = dict()
+    invalid_expressions = release.usage_set.filter(
+        version__spdx_valid_license_expr="", version__corrected_license=""
+    )
     context["invalid_expressions"] = invalid_expressions
 
     context["fixed_expressions"] = release.usage_set.filter(
@@ -67,29 +140,18 @@ def validate_expressions(release):
 
 def validate_ands(release: Release):
     """
-    Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
+    Confirm that ANDs operators in SPDX expressions are not poorly registered ORs.
     """
     context = dict()
     ambiguous_spdx = [
         usage
-        for usage in release.usage_set.all()
+        for usage in release.usage_set.exclude(
+            version__spdx_valid_license_expr=""
+        ).filter(version__corrected_license="")
         if is_ambiguous(usage.version.spdx_valid_license_expr)
     ]
 
-    for usage in ambiguous_spdx:
-        try:
-            usage.version.corrected_license = (
-                LicenseCuration.objects.for_version(usage.version)
-                .values_list("expression_out", flat=True)
-                .get()
-            )
-            usage.version.save()
-        except (LicenseCuration.DoesNotExist, LicenseCuration.MultipleObjectsReturned):
-            continue
-
-    context["to_confirm"] = [
-        u for u in ambiguous_spdx if not u.version.corrected_license
-    ]
+    context["to_confirm"] = ambiguous_spdx
     context["confirmed"] = [
         u.version
         for u in ambiguous_spdx
@@ -164,9 +226,12 @@ def validate_policy(release):
     return step_5_valid, context
 
 
+# Apply all rules and check validation steps
 def update_validation_step(release: Release):
     info = dict()
     validation_step = 0
+
+    apply_curations(release)
 
     step1, context = validate_expressions(release)
     info.update(context)
@@ -197,70 +262,3 @@ def update_validation_step(release: Release):
     release.save()
 
     return info
-
-
-def propagate_choices(release: Release):
-    """
-    Transfer license information from component to usage. Set usage.license_chosen if
-    there is no ambiguity.
-
-    Args:
-        release (int): The intern identifier of the concerned release
-
-    Returns:
-        response: A python object that has two field :
-            `to_resolve` the set of usages which needs an explicit choice
-            `resolved` the set of usages for which a choice has been made
-    """
-
-    resolved = {
-        usage
-        for usage in release.usage_set.all()
-        .select_related("version", "version__component")
-        .prefetch_related("licenses_chosen")
-        .exclude(license_expression="")
-        if has_ors(
-            usage.version.effective_license
-        )  # we want to list only usages for which a choice was actually necessary
-    }
-
-    to_resolve = set()
-
-    for usage in release.usage_set.all().filter(license_expression=""):
-        if usage.version.license_is_ambiguous:
-            continue
-
-        if not has_ors(usage.version.effective_license):
-            licenses_spdx_ids = explode_spdx_to_units(usage.version.effective_license)
-
-            try:
-                licenses = [
-                    License.objects.get(spdx_id=spdx_id)
-                    for spdx_id in licenses_spdx_ids
-                ]
-                usage.licenses_chosen.set(licenses)
-                usage.license_expression = usage.version.effective_license
-                usage.save()
-            except License.DoesNotExist:
-                logger.warning(
-                    "%s : can not choose unknown license",
-                    usage.version.component,
-                )
-        else:
-            expression_outs = LicenseChoice.objects.for_usage(usage).values_list(
-                "expression_out", flat=True
-            )
-            if len(set(expression_outs)) == 1:
-                usage.license_expression = expression_outs[0]
-                licenses = [
-                    License.objects.get(spdx_id=spdx_id)
-                    for spdx_id in set(explode_spdx_to_units(expression_outs[0]))
-                ]
-                usage.licenses_chosen.set(licenses)
-                usage.save()
-                resolved.add(usage)
-            else:
-                to_resolve.add(usage)
-
-    response = {"to_resolve": to_resolve, "resolved": resolved}
-    return response

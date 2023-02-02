@@ -33,13 +33,14 @@ from cube.serializers.products import (
     ExploitationsValidationSerializer,
 )
 from cube.utils.licenses import get_usages_obligations
-from cube.utils.releases import (
+from cube.utils.release_validation import (
     update_validation_step,
     validate_expressions,
     validate_ands,
     validate_exploitations,
     validate_choices,
     validate_policy,
+    apply_curations,
 )
 
 
@@ -99,6 +100,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         """
         response = {}
         release = self.get_object()
+        apply_curations(release)
 
         response["valid"], context = validate_expressions(release)
         response["invalid_expressions"] = [
@@ -123,6 +125,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         """
         response = {}
         release = self.get_object()
+        apply_curations(release)
 
         response["valid"], context = validate_ands(release)
         response["to_confirm"] = context["to_confirm"]
@@ -220,6 +223,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     )
     def junit(self, request, **kwargs):
         release = self.get_object()
+        apply_curations(release)
 
         expressions_step = TestCase(
             "Licenses curation",

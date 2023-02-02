@@ -2,7 +2,7 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 
-from django.db import models
+from django.db import models, transaction
 
 from cube.utils.validators import validate_spdx_expression
 
@@ -189,6 +189,25 @@ class Version(models.Model):
         blank=True,
         help_text="Package URL (https://github.com/package-url/purl-spec)",
     )
+
+    def save(self, *args, **kwargs):
+        if self.pk is None:
+            return super().save(*args, **kwargs)
+
+        with transaction.atomic():
+            changed_license = (
+                Version.objects.filter(pk=self.pk)
+                .values_list("corrected_license", flat=True)
+                .get()
+                != self.corrected_license
+            )
+
+            if changed_license:
+                Usage.objects.filter(version=self).update(license_expression="")
+                Usage.licenses_chosen.through.objects.filter(
+                    usage__version=self
+                ).delete()
+            return super().save(*args, **kwargs)
 
     @property
     def license_is_ambiguous(self):
