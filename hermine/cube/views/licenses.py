@@ -83,6 +83,30 @@ class LicenseUpdateView(LoginRequiredMixin, UpdateView):
     ]
 
 
+class LicenseAddView(LoginRequiredMixin, CreateView):
+    model = License
+    fields = [
+        "spdx_id",
+        "long_name",
+        "url",
+        "copyleft",
+        "law_choice",
+        "venue_choice",
+        "status",
+        "allowed",
+        "allowed_explanation",
+        "patent_grant",
+        "foss",
+        "non_commercial",
+        "ethical_clause",
+        "warranty",
+        "liability",
+        "comment",
+        "verbatim",
+    ]
+    template_name = "cube/license_form_create.html"
+
+
 class PrintLicense(LoginRequiredMixin, DetailView):
     model = License
 

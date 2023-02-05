@@ -1,0 +1,28 @@
+<!--
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+
+{% block title %}Add license{% endblock %}
+
+{% block breadcrumbs %}
+<ul>
+  <li>Hermine</li>
+  <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
+  <li>Add license</li>
+</ul>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+     {% csrf_token %}
+    <table>
+      {{ form }}
+    </table>
+    <input type="submit" value="Save"/>
+  </form>
+{% endblock %}

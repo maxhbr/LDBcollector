@@ -29,20 +29,40 @@ SPDX-License-Identifier: AGPL-3.0-only
     </p>
   </div>
 </form>
+<div class="dropdown is-hoverable is-right">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span>Actions</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+      <a href="{% url 'cube:export_licenses' %}" class="dropdown-item">
+        <span class="icon is-small">
+          <i class="fas fa-file-export"></i>
+        </span>
+        <span>Export licenses as JSON</span>
+      </a>
+      <a href="{% url 'cube:license_add' %}" class="dropdown-item">
+        <span class="icon is-small">
+          <i class="fas fa-plus"></i>
+        </span>
+        <span>Create new license</span>
+      </a>
+      <a href="{% url 'admin:cube_license_add' %}" class="dropdown-item"  target="_blank">
+        <span class="icon is-small">
+          <i class="fas fa-plus"></i>
+        </span>
+        <span>Create new license in admin</span>
+      </a>
 
-<a class="button" href="/admin/cube/license/add/" target="_blank">
-            <span class="icon">
-              <i class="fas fa-plus"></i>
-            </span>
-            <span>Create a new license</span>
-          </a>
+    </div>
+  </div>
+</div>
 
-          <a href="{% url 'cube:export_licenses' %}" class="button">
-            <span class="icon">
-                <i class="fas fa-file-export"></i>
-              </span>
-              <span>Export</span>
-          </a>
 {% endblock %}
 {% block herozone %}
 <h1 class="title">
