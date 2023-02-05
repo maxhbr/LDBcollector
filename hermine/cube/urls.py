@@ -75,6 +75,7 @@ urlpatterns = [
     path(
         "license/<int:pk>/edit/", views.LicenseUpdateView.as_view(), name="license_edit"
     ),
+    path("license/add/", views.LicenseAddView.as_view(), name="license_add"),
     path(
         "license/<int:license_id>/export/",
         views.Export1LicenseView.as_view(),
