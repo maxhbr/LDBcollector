@@ -1,5 +1,6 @@
-use ldbcolector::{demo};
+use ldbcolector::demo;
 
 fn main() {
-    let mut s = demo();
+    let s = demo();
+    println!("{s:#?}");
 }
