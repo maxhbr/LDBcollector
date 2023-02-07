@@ -12,7 +12,6 @@ use petgraph::dot::{Dot, Config};
 use std::collections::{HashMap};
 
 mod origin {
-    use super::*;
     #[derive(Debug, Clone, Deserialize, Serialize)] 
     pub enum DataLicense {
         DataLicense {
@@ -39,19 +38,19 @@ mod origin {
     }
 
     impl Origin {
-        fn new(name: &str, data_license: DataLicense) -> Self {
+        pub fn new(name: &str, data_license: DataLicense) -> Self {
             Self::Origin { 
                 name: String::from(name),
                 data_license: data_license
             }
         }
-        fn new_with_file(name: &str, file: &str, data_license: DataLicense) -> Self {
+        pub fn new_with_file(name: &str, file: &str, data_license: DataLicense) -> Self {
             Self::OriginFile { 
                 file: String::from(file),
                 origin: Box::new(Self::new(name, data_license))
             }
         }
-        fn new_with_url(name: &str, url: &str, data_license: DataLicense) -> Self {
+        pub fn new_with_url(name: &str, url: &str, data_license: DataLicense) -> Self {
             Self::OriginUrl { 
                 url: String::from(url),
                 origin: Box::new(Self::new(name, data_license))
@@ -64,23 +63,12 @@ mod origin {
     }
 }
 
-mod statement {
-    use super::*;
-    pub trait Projection<T> {
-        fn apply(self) -> Vec<T>;
-    }
-
-    pub trait Statement<T> : origin::HasOrigin + Clone + std::fmt::Debug {
-        fn apply(self) -> Vec<T>;
-    }
-}
-
 mod license {
     // https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#using-the-newtype-pattern-to-implement-external-traits-on-external-types
     #[derive(Debug, Clone, Deserialize, Serialize)] 
     pub struct LicenseName(String);
     impl LicenseName {
-        fn new(name: &str) -> Self {
+        pub fn new(name: &str) -> Self {
             Self(String::from(name))
         }
     }
@@ -94,6 +82,16 @@ mod license {
         fn hash<H: Hasher>(&self, state: &mut H) {
             self.0.to_lowercase().hash(state);
         }
+    }
+}
+
+mod statement {
+    pub trait Projection<T> {
+        fn apply(self) -> Vec<T>;
+    }
+
+    pub trait Statement<T> : origin::HasOrigin + Clone + std::fmt::Debug {
+        fn apply(self) -> Vec<T>;
     }
 }
 
@@ -129,15 +127,6 @@ mod state {
         }
     }
 }
-
-// struct LicenseAlias {
-//     left: LicenseName,
-//     rights: Vec<LicenseName>
-// }
-
-
-
-
 
 // // #[derive(Debug, Clone, Deserialize, Serialize)] 
 // pub struct Statement<T> 
@@ -181,8 +170,6 @@ pub fn demo() -> State {
 
     println!("==== Graph:");
     println!("{:?}", Dot::with_config(&s.graph, &[Config::EdgeNoLabel]));
-
-
 
     s
 }
