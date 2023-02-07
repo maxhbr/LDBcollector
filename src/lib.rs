@@ -96,12 +96,15 @@ mod statement {
 mod state {
     use super::license::*;
     use super::*;
-    use petgraph::algo::{dijkstra, min_spanning_tree};
+    use std::collections::hash_set::HashSet;
+    use std::cmp::Ordering;
+    use std::cmp::PartialOrd;
+    use std::fmt;
+    use petgraph::algo::{dijkstra, min_spanning_tree, tarjan_scc};
     use petgraph::dot::{Config, Dot};
     use petgraph::graph::{EdgeIndex, NodeIndex};
     use petgraph::stable_graph::StableGraph;
     use serde_derive::{Deserialize, Serialize};
-    use std::fmt;
 
     #[derive(Debug, Clone, Deserialize, Serialize)]
     pub enum LicenseRelation {
@@ -110,19 +113,23 @@ mod state {
 
     pub struct State {
         pub graph: StableGraph<LicenseName, LicenseRelation>,
-        pub lic_to_idx: HashMap<LicenseName, NodeIndex>,
+        pub license_to_idx: HashMap<LicenseName, NodeIndex>,
+        pub license_statements: HashMap<NodeIndex, ()>,
+        pub license_relation_statements: HashMap<NodeIndex, ()>,
     }
     impl State {
         pub fn new() -> Self {
             Self {
                 graph: StableGraph::<LicenseName, LicenseRelation>::new(),
-                lic_to_idx: HashMap::new(),
+                license_to_idx: HashMap::new(),
+                license_statements: HashMap::new(),
+                license_relation_statements: HashMap::new(),
             }
         }
         pub fn consistency_check(&self) -> () {
-            let map_and_graph_length_matches = self.lic_to_idx.len() == self.graph.edge_count();
+            let map_and_graph_length_matches = self.license_to_idx.len() == self.graph.edge_count();
             assert!(map_and_graph_length_matches);
-            let maps_are_consistent = self.lic_to_idx.clone().into_iter().all(|(lic, idx)| {
+            let maps_are_consistent = self.license_to_idx.clone().into_iter().all(|(lic, idx)| {
                 match self.graph.node_weight(idx) {
                     None => false,
                     Some(&ref rev_lic) => lic == *rev_lic,
@@ -131,11 +138,11 @@ mod state {
             assert!(maps_are_consistent);
         }
         pub fn add_license_(&mut self, lic: LicenseName) -> NodeIndex {
-            match self.lic_to_idx.get(&lic) {
+            match self.license_to_idx.get(&lic) {
                 Some(idx) => *idx,
                 None => {
                     let idx = self.graph.add_node(lic.clone());
-                    self.lic_to_idx.insert(lic.clone(), idx);
+                    self.license_to_idx.insert(lic.clone(), idx);
                     idx
                 }
             }
@@ -164,6 +171,30 @@ mod state {
             self.add_alias_(left, right, relation);
             self
         }
+        pub fn get_component(self) -> Vec<Vec<LicenseName>> {
+            let idx_components = tarjan_scc(&self.graph);
+            idx_components.into_iter()
+                .map(|mut idxs| {
+                    idxs.sort_by(|a, b| {
+                        match self.graph.find_edge(*a, *b) {
+                            Some(_) => Some(Ordering::Greater),
+                            None => None
+                        }.unwrap()
+                    });
+                    idxs
+                })
+                .map(|idxs| {
+                    idxs.iter()
+                        .filter_map(|idx| {
+                            self.graph.node_weight(*idx)
+                        })
+                        .map(|license_name| {
+                            license_name.clone()
+                        })
+                        .collect()
+                })
+                .collect()
+        }
         pub fn get_licenses_dot(&self) -> String {
             let dot = Dot::with_config(&self.graph, &[]);
             format!("{:?}", dot)
@@ -171,7 +202,14 @@ mod state {
     }
     impl fmt::Debug for State {
         fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-            f.debug_struct("State").field("graph", &self.graph).finish()
+            f.debug_struct("State")
+                .field("graph", &self.graph)
+                .field("license_statements", &self.license_statements)
+                .field(
+                    "license_relation_statements",
+                    &self.license_relation_statements,
+                )
+                .finish()
         }
     }
 }
@@ -208,13 +246,13 @@ mod state {
 pub fn demo() -> state::State {
     state::State::new()
         .add_alias(
-            license::LicenseName::new("MIT"),
             license::LicenseName::new("MIT License"),
+            license::LicenseName::new("MIT"),
             state::LicenseRelation::Same,
         )
         .add_alias(
-            license::LicenseName::new("mit"),
             license::LicenseName::new("The MIT"),
+            license::LicenseName::new("mit"),
             state::LicenseRelation::Same,
         )
 }
