@@ -4,111 +4,129 @@ use serde_derive::{Serialize, Deserialize};
 use std::fmt;
 // use std::intrinsics::type_name;
 // use std::collections::hash_map::DefaultHasher;
-// use std::hash::{Hash, Hasher};
+use std::hash::{Hash, Hasher};
 use petgraph::graph::{NodeIndex, EdgeIndex, Graph};
 use petgraph::algo::{dijkstra, min_spanning_tree};
 use petgraph::data::FromElements;
 use petgraph::dot::{Dot, Config};
 use std::collections::{HashMap};
 
-
-#[derive(Debug, Clone, Deserialize, Serialize)] 
-pub enum DataLicense {
-    DataLicense {
-        name: String,
-        url: Option<String>
-    },
-    Noassertion {}
-}
-
-#[derive(Debug, Clone, Deserialize, Serialize)] 
-pub enum Origin {
-    Origin {
-        name: String,
-        data_license: DataLicense
-    },
-    OriginFile {
-        file: String,
-        origin: Box<Origin>
-    },
-    OriginUrl {
-        url: String,
-        origin: Box<Origin>
+mod origin {
+    use super::*;
+    #[derive(Debug, Clone, Deserialize, Serialize)] 
+    pub enum DataLicense {
+        DataLicense {
+            name: String,
+            url: Option<String>
+        },
+        Noassertion {}
     }
-}
 
-impl Origin {
-    fn new(name: &str, data_license: DataLicense) -> Self {
-        Self::Origin { 
-            name: String::from(name),
-            data_license: data_license
+    #[derive(Debug, Clone, Deserialize, Serialize)] 
+    pub enum Origin {
+        Origin {
+            name: String,
+            data_license: DataLicense
+        },
+        OriginFile {
+            file: String,
+            origin: Box<Origin>
+        },
+        OriginUrl {
+            url: String,
+            origin: Box<Origin>
         }
     }
-    fn new_with_file(name: &str, file: &str, data_license: DataLicense) -> Self {
-        Self::OriginFile { 
-            file: String::from(file),
-            origin: Box::new(Self::new(name, data_license))
+
+    impl Origin {
+        fn new(name: &str, data_license: DataLicense) -> Self {
+            Self::Origin { 
+                name: String::from(name),
+                data_license: data_license
+            }
+        }
+        fn new_with_file(name: &str, file: &str, data_license: DataLicense) -> Self {
+            Self::OriginFile { 
+                file: String::from(file),
+                origin: Box::new(Self::new(name, data_license))
+            }
+        }
+        fn new_with_url(name: &str, url: &str, data_license: DataLicense) -> Self {
+            Self::OriginUrl { 
+                url: String::from(url),
+                origin: Box::new(Self::new(name, data_license))
+            }
         }
     }
-    fn new_with_url(name: &str, url: &str, data_license: DataLicense) -> Self {
-        Self::OriginUrl { 
-            url: String::from(url),
-            origin: Box::new(Self::new(name, data_license))
+
+    pub trait HasOrigin {
+        fn get_origin(&self) -> &Box<Origin>;
+    }
+}
+
+mod statement {
+    use super::*;
+    pub trait Projection<T> {
+        fn apply(self) -> Vec<T>;
+    }
+
+    pub trait Statement<T> : origin::HasOrigin + Clone + std::fmt::Debug {
+        fn apply(self) -> Vec<T>;
+    }
+}
+
+mod license {
+    // https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#using-the-newtype-pattern-to-implement-external-traits-on-external-types
+    #[derive(Debug, Clone, Deserialize, Serialize)] 
+    pub struct LicenseName(String);
+    impl LicenseName {
+        fn new(name: &str) -> Self {
+            Self(String::from(name))
+        }
+    }
+    impl PartialEq for LicenseName {
+        fn eq(&self, other: &Self) -> bool {
+            self.0.to_lowercase() == other.0.to_lowercase()
+        }
+    }
+    impl Eq for LicenseName {}
+    impl Hash for LicenseName {
+        fn hash<H: Hasher>(&self, state: &mut H) {
+            self.0.to_lowercase().hash(state);
         }
     }
 }
 
-pub trait HasOrigin {
-    fn get_origin(&self) -> &Box<Origin>;
-}
-
-pub trait Projection<T> {
-    fn apply(self) -> Vec<T>;
-}
-
-pub trait Statement<T> : HasOrigin + Clone + std::fmt::Debug {
-    fn apply(self) -> Vec<T>;
-}
-
-// https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#using-the-newtype-pattern-to-implement-external-traits-on-external-types
-#[derive(Debug, Clone, Deserialize, Serialize)] 
-pub struct LicenseName(String);
-impl LicenseName {
-    fn new(name: &str) -> Self {
-        Self(String::from(name))
+mod state {
+    pub struct State {
+        graph: Graph<LicenseName, ()>,
+        idx_to_lic: HashMap<NodeIndex, LicenseName>,
+        lic_to_idx: HashMap<LicenseName,NodeIndex>
     }
-}
-impl PartialEq for LicenseName {
-    fn eq(&self, other: &Self) -> bool {
-        self.0.to_lowercase() == other.0.to_lowercase()
-    }
-}
-impl Eq for LicenseName {}
-// impl IntoNodeReferences for LicenseName {
-//     fn node_references(self) -> Self::NodeReferences {
-
-//     }
-// }
-pub struct State {
-    graph: Graph<LicenseName, ()>,
-    idx_to_node: HashMap<NodeIndex, LicenseName>,
-    node_to_idx: HashMap<LicenseName,NodeIndex>
-}
-impl State {
-    fn new() -> Self {
-        Self {
-            graph: Graph::<LicenseName, ()>::new(),
-            idx_to_node: HashMap::new(),
-            node_to_idx: HashMap::new()
+    impl State {
+        fn new() -> Self {
+            Self {
+                graph: Graph::<LicenseName, ()>::new(),
+                idx_to_lic: HashMap::new(),
+                lic_to_idx: HashMap::new()
+            }
         }
-    }
-    fn add_license(&mut self, lic: LicenseName) -> NodeIndex {
-        self.graph.add_node(lic)
-    }
-    fn add_alias(&mut self, left: LicenseName, right: LicenseName) -> EdgeIndex {
-        let left_idx = self.add_license(left);
-        let right_idx = self.add_license(right);
-        self.graph.add_edge(left_idx, right_idx, ())
+        fn add_license(&mut self, lic: LicenseName) -> NodeIndex {
+            match self.lic_to_idx.get(&lic) {
+                Some(idx) => *idx,
+                None => {
+                    let idx = self.graph.add_node(lic.clone());
+                    self.lic_to_idx.insert(lic.clone(), idx);
+                    self.idx_to_lic.insert(idx, lic.clone());
+                    idx
+                }
+            }
+        }
+        fn add_alias(&mut self, left: LicenseName, right: LicenseName) -> EdgeIndex {
+            let left_idx = self.add_license(left);
+            let right_idx = self.add_license(right);
+            self.graph.add_edge(left_idx, right_idx, ())
+        }
     }
 }
 
@@ -154,13 +172,25 @@ pub fn demo() -> State {
     let mut s = State::new();
     s.add_alias(LicenseName::new("MIT"), LicenseName::new("MIT License"));
     s.add_alias(LicenseName::new("mit"), LicenseName::new("The MIT"));
+
+    println!("==== Maps:");
+    for (lic, idx) in &s.lic_to_idx {
+        let revLic = s.idx_to_lic.get(idx);
+        println!("{lic:?} -> {idx:?} -> {revLic:?}");
+    }
+
+    println!("==== Graph:");
     println!("{:?}", Dot::with_config(&s.graph, &[Config::EdgeNoLabel]));
+
+
+
     s
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
+    use super::license::*;
 
     // fn gen_example() -> dyn Statement<String> {
     //     let origin = Origin::new_with_url(
@@ -191,7 +221,7 @@ mod tests {
     }
 
     #[test]
-    fn basic_graph() {
+    fn demo_should_run() {
         let mut s = demo();
 
         // let serialized = serde_json::to_string(&data).unwrap();
