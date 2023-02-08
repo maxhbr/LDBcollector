@@ -6,7 +6,7 @@ import json
 import logging
 from functools import lru_cache, reduce
 from itertools import product
-from typing import Iterable, List, Any
+from typing import Iterable, List
 
 from django.db import transaction
 from license_expression import get_spdx_licensing, BaseSymbol
