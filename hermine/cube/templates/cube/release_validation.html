@@ -139,13 +139,22 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
-  {% else %}
+  {% elif object.valid_step > 1 %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
       </div>
       <div class="message-body">
         <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the ANDs present in SPDX expressions have been confirmed or corrected.
+      </div>
+    </article>
+  {% else %}
+    <article class="message is-info">
+      <div class="message-header">
+        <p>Waiting for previous steps</p>
+      </div>
+      <div class="message-body">
+        Validate step 1 to check ANDs which need to be confirmed or corrected.
       </div>
     </article>
   {% endif %}
@@ -234,7 +243,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
-  {% else %}
+  {% elif release.valid_step > 2 %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
@@ -243,7 +252,15 @@ SPDX-License-Identifier: AGPL-3.0-only
         <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All license choices have been made for this release.
       </div>
     </article>
-
+  {% else %}
+    <article class="message is-info">
+      <div class="message-header">
+        <p>Waiting for previous steps</p>
+      </div>
+      <div class="message-body">
+        Validate step 2 to check no license choice needs to be done.
+      </div>
+    </article>
   {% endif %}
   {% if resolved %}
     <p>List <a href="{% url "cube:release_license_choices" object.id %}">{{ resolved|length }} license choices</a>
@@ -382,14 +399,25 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
   {% if not usages_lic_context_allowed and not usages_lic_never_allowed and not usages_lic_unknown %}
-    <article class="message is-success">
-      <div class="message-header">
-        <p>Success</p>
-      </div>
-      <div class="message-body">
-        <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the components use policy compliant licenses.
-      </div>
-    </article>
+    {% if release.valid_step > 4 %}
+      <article class="message is-success">
+        <div class="message-header">
+          <p>Success</p>
+        </div>
+        <div class="message-body">
+          <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All the components use policy compliant licenses.
+        </div>
+      </article>
+    {% else %}
+      <article class="message is-info">
+        <div class="message-header">
+          <p>Waiting for previous steps</p>
+        </div>
+        <div class="message-body">
+          Validate previous steps to check all licenses against policy.
+        </div>
+      </article>
+    {% endif %}
   {% endif %}
 
 
