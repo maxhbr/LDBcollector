@@ -1,14 +1,14 @@
 [package]
-name = "ldbcolector"
+name = "ldbcollector"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "ldbcolector"
+name = "ldbcollector"
 path = "src/lib.rs"
 
 [[bin]]
-name = "ldbcolector-main"
+name = "ldbcollector-main"
 path = "src/main.rs"
 
 [dependencies]

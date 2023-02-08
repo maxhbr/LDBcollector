@@ -1,5 +1,5 @@
 {
-  description = "ldbcolector in rust";
+  description = "ldbcollector in rust";
 
   inputs = {
     nixpkgs.url      = "github:NixOS/nixpkgs/nixos-unstable";
@@ -22,7 +22,6 @@
             openssl
             pkg-config
             rust-bin.beta.latest.default
-            rutsfmt
           ];
         };
       }

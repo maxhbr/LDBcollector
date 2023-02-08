@@ -1,4 +1,4 @@
-use ldbcolector::*;
+use ldbcollector::*;
 use spdx::identifiers::LICENSES;
 
 fn add_spdx_licenses(s: state::State) -> state::State {
