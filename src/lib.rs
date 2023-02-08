@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-mod license {
+pub mod license {
     use serde_derive::{Deserialize, Serialize};
     use std::fmt;
     use std::hash::{Hash, Hasher};
@@ -30,7 +30,7 @@ mod license {
     }
 }
 
-mod origin {
+pub mod origin {
     use serde_derive::{Deserialize, Serialize};
 
     #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -81,7 +81,7 @@ mod origin {
     }
 }
 
-mod statement {
+pub mod statement {
     use super::*;
 
     pub trait Projection<T> {
@@ -93,7 +93,7 @@ mod statement {
     }
 }
 
-mod state {
+pub mod state {
     use super::license::*;
     use super::*;
     use std::collections::hash_set::HashSet;
@@ -174,17 +174,18 @@ mod state {
         pub fn get_component(self) -> Vec<Vec<LicenseName>> {
             let idx_components = tarjan_scc(&self.graph);
             idx_components.into_iter()
-                .map(|mut idxs| {
-                    idxs.sort_by(|a, b| {
-                        match self.graph.find_edge(*a, *b) {
-                            Some(_) => Some(Ordering::Greater),
-                            None => None
-                        }.unwrap()
-                    });
-                    idxs
-                })
-                .map(|idxs| {
-                    idxs.iter()
+                // TODO: sorting within strongly connected components is not doing anything
+                // .map(|mut idxs| {
+                //     idxs.sort_by(|a, b| {
+                //         match self.graph.find_edge(*a, *b) {
+                //             Some(_) => Some(Ordering::Greater),
+                //             None => None
+                //         }.unwrap()
+                //     });
+                //     idxs
+                // })
+                // TODO: add all weekly connected nodes first
+                .map(|idxs| idxs.iter()
                         .filter_map(|idx| {
                             self.graph.node_weight(*idx)
                         })
@@ -192,7 +193,7 @@ mod state {
                             license_name.clone()
                         })
                         .collect()
-                })
+                )
                 .collect()
         }
         pub fn get_licenses_dot(&self) -> String {

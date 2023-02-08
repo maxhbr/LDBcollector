@@ -1,0 +1,23 @@
+* yet another try in rust
+
+* Idea
+A handle for a license is just a string, like
+- ~"MIT"~, in the namespace SPDX-License-List version =3.19=
+- ~"bsd-3-clause-no-trademark"~, in the namespace scancode
+- ~"The 3-Clause BSD License"~, a full_name
+- ~"BSD"~
+These classify in different categories, e.g. short_names, full_names, or just some "names".
+Some have namespaces.
+** there are statemens about a license
+#+BEGIN_EXAMPLE 
+"There is a license called 'MIT'"
+"The License called 'MIT' is permissive"
+...
+#+END_EXAMPLE
+** there are statements between licenses
+#+BEGIN_EXAMPLE 
+"MIT is also called 'MIT Licensen' as full_name by SPDX"
+"BSD-3-Clause is of the radical BSD"
+"MIT is compatible to BSD-3-Clause"
+...
+#+END_EXAMPLE
