@@ -66,7 +66,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         ### Licenses with no concluded license
         LicenseCuration.objects.create(
             expression_in="Allowed-1.0 AND ContextAllowed-1.0",
-            expression_out="LicenseRef-fakeLicense-ContextAllowed-1.0 OR LicenseRef-fakeLicense-Allowed-1.0",
+            expression_out="LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
         )
         LicenseCuration.objects.create(
             component=Component.objects.get(name="no-assertion-dependency"),
@@ -77,7 +77,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         LicenseCuration.objects.create(
             component=Component.objects.get(name="wrong-concluded-dependency"),
             expression_in="LicenseRef-fakeLicense-ContextAllowed-1.0",
-            expression_out="LicenseRef-fakeLicense-NotAnalyzed-1.0 AND LicenseRef-fakeLicense-Allowed-1.0",
+            expression_out="LicenseRef-fakeLicense-Allowed-1.0 AND LicenseRef-fakeLicense-NotAnalyzed-1.0",
         )
         # Is everything right ?
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
@@ -100,8 +100,8 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
 
         ## Simulate fixing manually
         LicenseCuration.objects.create(
-            expression_in="LicenseRef-fakeLicense-ContextAllowed-1.0 AND LicenseRef-fakeLicense-Allowed-1.0",
-            expression_out="LicenseRef-fakeLicense-ContextAllowed-1.0 OR LicenseRef-fakeLicense-Allowed-1.0",
+            expression_in="LicenseRef-fakeLicense-Allowed-1.0 AND LicenseRef-fakeLicense-ContextAllowed-1.0",
+            expression_out="LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
         )
         res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
@@ -139,7 +139,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         res = self.client.post(
             reverse("cube:choices-list"),
             data={
-                "expression_in": "LicenseRef-fakeLicense-ContextAllowed-1.0 OR LicenseRef-fakeLicense-Allowed-1.0",
+                "expression_in": "LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
                 "expression_out": "LicenseRef-fakeLicense-Allowed-1.0",
             },
         )
