@@ -104,7 +104,8 @@ def import_ort_evaluated_model_json_file(
             version_number=current_purl.split("@")[1],
             defaults={
                 "declared_license_expr": declared_licenses,
-                "spdx_valid_license_expr": simplified(spdx_valid_license),
+                "spdx_valid_license_expr": spdx_valid_license
+                and simplified(spdx_valid_license),
                 # TODO : support ORT scanner function
                 # "scanned_licenses":
                 "purl": current_purl,
@@ -193,7 +194,8 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
             version_number=vers_number,
             defaults={
                 "declared_license_expr": vers_lic_decl,
-                "spdx_valid_license_expr": simplified(vers_lic_concl),
+                "spdx_valid_license_expr": vers_lic_concl
+                and simplified(vers_lic_concl),
             },
         )
         version_id = vers.id
