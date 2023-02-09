@@ -48,3 +48,20 @@ exclude = "hermine/cube/migrations"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+# See https://github.com/charliermarsh/ruff#configuration
+
+# Enable Pyflakes `E` and `F` codes by default.
+select = ["E", "F"]
+ignore = ["E501"]
+
+
+exclude = [
+    ".git",
+    ".venv",
+    "__pypackages__",
+    "hermine/cube/migrations",
+    "__init__.py",
+]
+

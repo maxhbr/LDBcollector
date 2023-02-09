@@ -5,7 +5,6 @@
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic
-from django.urls import reverse_lazy
 
 from cube.models import Product, Release, Category
 from cube.views.mixins import SearchMixin
@@ -46,6 +45,7 @@ class ProductAddReleaseView(LoginRequiredMixin, generic.CreateView):
     fields = ["product", "release_number"]
     model = Release
     template_name = "cube/product_add_release.html"
+
     # success_url = reverse_lazy("cube:products")
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

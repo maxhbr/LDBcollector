@@ -2,8 +2,6 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from django import template
-import time
-import os
 from django.conf import settings
 
 register = template.Library()

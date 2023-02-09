@@ -2,7 +2,6 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-from django import forms
 from django.contrib import admin
 
 # Register your models here.

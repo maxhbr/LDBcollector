@@ -77,8 +77,10 @@ class ReleaseImportView(LoginRequiredMixin, UpdateView):
             mark_safe(
                 f"""
                 You successfully uploaded your file.
-                You can add components from another source or check the validation steps you need to achieve in the
-                <b><a href="{reverse("cube:release_validation", kwargs={"pk": self.object.id})}"> Validation tab</a></b>.
+                You can add components from another source or check the
+                validation steps you need to achieve in the <b><a
+                href="{reverse("cube:release_validation",
+                kwargs={"pk": self.object.id})}"> Validation tab</a></b>.
                 """
             ),
         )
@@ -140,7 +142,7 @@ class ReleaseSummaryView(LoginRequiredMixin, ReleaseContextMixin, generic.ListVi
             "project", "scope", "exploitation", "id"
         )
         explicit_exploitations = dict()
-        for (key, value) in Exploitation._meta.get_field("exploitation").choices:
+        for key, value in Exploitation._meta.get_field("exploitation").choices:
             explicit_exploitations[key] = value
 
         full_exploitations = dict()

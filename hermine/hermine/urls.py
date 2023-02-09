@@ -19,7 +19,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.db import connection, Error as DBError, OperationalError
+from django.db import connection, Error as DBError
 from django.http import HttpResponse, HttpResponseServerError
 from django.urls import include, path, re_path
 from drf_yasg import openapi

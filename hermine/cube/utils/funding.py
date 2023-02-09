@@ -3,15 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 import requests
-import json
 from packageurl import PackageURL
-import time
-
-from django.db import transaction
-from license_expression import get_spdx_licensing, BaseSymbol
-
-from cube.models import Funding
-from cube.serializers import LicenseSerializer
 
 
 def guess_type(url):
@@ -54,7 +46,7 @@ def get_pypi_funding(name):
         fundings = list()
         project_urls = data["info"].get("project_urls")
         if project_urls:
-            for (url_type, url) in project_urls.items():
+            for url_type, url in project_urls.items():
                 if url_type == "Funding" or guess_type(url) != "custom":
                     type = guess_type(url)
                     fundings.append({"type": type, "url": url})
@@ -82,8 +74,8 @@ def get_npm_funding(namespace, name):
                 version_fundings = version.get("funding")
                 if version_fundings:
                     fundings = version_fundings
-        # We have to normalise, because fundings can be either a (type, url) dict, a string
-        # or a list of those
+        # We have to normalise, because fundings can be either a
+        # (type, url) dict, a string or a list of those
         if isinstance(fundings, str):
             url = fundings
             normalized_fundings.append({"type": guess_type(url), "url": url})

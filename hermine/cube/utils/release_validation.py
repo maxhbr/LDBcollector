@@ -29,6 +29,7 @@ STEP_EXPLOITATIONS = 3
 STEP_CHOICES = 4
 STEP_POLICY = 5
 
+
 # Functions with side effect to update releases according to curations and choices
 def apply_curations(release):
     for usage in release.usage_set.filter(
