@@ -16,3 +16,12 @@
 [submodule "data/openSUSE-cavil"]
 	path = data/openSUSE-cavil
 	url = https://github.com/openSUSE/cavil
+[submodule "data/librariesio-license-compatibility"]
+	path = data/librariesio-license-compatibility
+	url = https://github.com/librariesio/license-compatibility
+[submodule "data/HansHammel-license-compatibility-checker"]
+	path = data/HansHammel-license-compatibility-checker
+	url = https://github.com/HansHammel/license-compatibility-checker
+[submodule "data/okfn-licenses"]
+	path = data/okfn-licenses
+	url = https://github.com/okfn/licenses
