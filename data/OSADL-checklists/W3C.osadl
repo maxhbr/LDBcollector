@@ -1,0 +1,10 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide License text
+		ATTRIBUTE Viewable
+	YOU MUST Provide Legal notices
+	IF No Legal notices
+		YOU MUST Provide "W3C Software Short&#160;Notice" <a href="https://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html">https&#58;//www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html</a>
+	IF Software modification
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+	YOU MUST NOT Promote

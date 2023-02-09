@@ -1,0 +1,54 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide OR Reference License text
+	YOU MUST Forward License notice
+	YOU MUST Forward Reference To Warranty disclaimer
+	YOU MUST NOT Restrict Granted rights
+	YOU MUST NOT Use Technological measures
+		ATTRIBUTE Effective
+		ATTRIBUTE To Restrict Granted rights
+	YOU MUST Forward Copyright notice
+	YOU MUST Provide Attribution notice
+		ATTRIBUTE Reasonable
+	YOU MUST Provide Third-party attribution notice
+		ATTRIBUTE Reasonable
+	IF Title
+		YOU MUST Provide Title Of Work
+			ATTRIBUTE Reasonable
+	IF Reference To Copyright notice OR License
+		YOU MUST Provide Reference
+			ATTRIBUTE Reasonable
+	YOU MUST NOT Modify
+		ATTRIBUTE Prejudicial To Original Author's honor and reputation
+	IF Software modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Reasonable
+			ATTRIBUTE As Highlighted As Attribution notice For Authorship Of Modification
+	YOU MUST NOT Promote
+	YOU MUST NOT Sublicense
+USE CASE Image delivery OR Font delivery
+	YOU MUST Provide OR Reference License text
+	YOU MUST Forward License notice
+	YOU MUST Forward Reference To Warranty disclaimer
+	YOU MUST NOT Restrict Granted rights
+	YOU MUST NOT Use Technological measures
+		ATTRIBUTE Effective
+		ATTRIBUTE To Restrict Granted rights
+	YOU MUST Forward Copyright notice
+	YOU MUST Provide Attribution notice
+		ATTRIBUTE Reasonable
+	YOU MUST Provide Third-party attribution notice
+		ATTRIBUTE Reasonable
+	IF Title
+		YOU MUST Provide Title Of Work
+			ATTRIBUTE Reasonable
+	IF Reference To Copyright notice OR License
+		YOU MUST Provide Reference
+			ATTRIBUTE Reasonable
+	YOU MUST NOT Modify
+		ATTRIBUTE Prejudicial To Original Author's honor and reputation
+	IF Modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Reasonable
+			ATTRIBUTE As Highlighted As Attribution notice For Authorship Of Modification
+	YOU MUST NOT Promote
+	YOU MUST NOT Sublicense

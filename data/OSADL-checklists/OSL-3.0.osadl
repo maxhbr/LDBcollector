@@ -1,0 +1,65 @@
+USE CASE Source code delivery
+	YOU MUST Reference License text OSL-3.0
+	YOU MUST Search License acceptance
+		ATTRIBUTE Reasonable
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		YOU MUST Forward Copyright notices
+		YOU MUST Forward Patent notices
+		YOU MUST Forward Trademark notices
+		YOU MUST Forward License notice
+		YOU MUST Provide Modification notice
+		YOU MUST NOT Promote
+USE CASE Binary delivery
+	YOU MUST Reference License text OSL-3.0
+	YOU MUST Search License acceptance
+		ATTRIBUTE Reasonable
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		EITHER
+			YOU MUST Include Source code Of Modification
+				ATTRIBUTE Machine-readable
+		OR
+			YOU MUST Provide Delayed source code delivery Of Modification
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Via Internet
+				ATTRIBUTE No profit
+				ATTRIBUTE Duration As long as distributed
+		YOU MUST NOT Promote
+USE CASE Network services
+	YOU MUST Reference License text OSL-3.0
+	YOU MUST Search License acceptance
+		ATTRIBUTE Reasonable
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		YOU MUST NOT Promote
+COMPATIBILITY blessing
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY EUPL-1.1
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFULLR
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY NTP
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+PATENT HINTS Yes
+COPYLEFT CLAUSE Yes

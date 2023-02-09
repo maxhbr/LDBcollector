@@ -1,0 +1,8 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide License text
+	YOU MUST Provide Warranty disclaimer
+	YOU MUST Provide Copyright notice
+	IF Advertisement
+		YOU MUST Credit In Advertisement Verbatim "RSA Data Security, Inc. MD5 Message-Digest Algorithm"
+		IF Software modification
+			YOU MUST Credit In Advertisement Verbatim "derived from the RSA Data Security, Inc. MD5 Message-Digest Algorithm"

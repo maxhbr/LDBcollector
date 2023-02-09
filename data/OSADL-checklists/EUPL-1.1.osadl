@@ -1,0 +1,76 @@
+USE CASE Source code delivery
+	YOU MUST NOT Modify Copyright notices
+	YOU MUST NOT Modify Patent notices
+	YOU MUST NOT Modify Trademark notices
+	YOU MUST NOT Modify License notice
+	YOU MUST NOT Modify Warranty disclaimer
+	YOU MUST Provide License text
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+	YOU MUST NOT Restrict Granted rights
+	IF Service offerings
+		ATTRIBUTE NOT Transferable
+		YOU MUST Indemnify Other contributors
+USE CASE Binary delivery
+	EITHER
+		YOU MUST Include Source code
+			ATTRIBUTE Machine-readable
+		YOU MUST NOT Modify Copyright notices
+		YOU MUST NOT Modify Patent notices
+		YOU MUST NOT Modify Trademark notices
+		YOU MUST NOT Modify License notice
+		YOU MUST NOT Modify Warranty disclaimer
+		YOU MUST Provide License text
+	OR
+		YOU MUST Reference Source code
+			ATTRIBUTE Notice Following Copyright notice
+			ATTRIBUTE No charges
+			ATTRIBUTE Duration As long as distributed
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+	YOU MUST NOT Restrict Granted rights
+	IF Service offerings
+		ATTRIBUTE NOT Transferable
+		YOU MUST Indemnify Other contributors
+COMPATIBILITY blessing
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFULLR
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY NTP
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+INCOMPATIBILITY Apache-1.0
+INCOMPATIBILITY Apache-1.1
+INCOMPATIBILITY BSD-4-Clause
+INCOMPATIBILITY BSD-4-Clause-UC
+INCOMPATIBILITY FTL
+INCOMPATIBILITY IJG
+INCOMPATIBILITY OpenSSL
+INCOMPATIBILITY Python-2.0
+INCOMPATIBILITY zlib-acknowledgement
+INCOMPATIBILITY XFree86-1.1
+PATENT HINTS Yes
+COPYLEFT CLAUSE Yes

@@ -1,0 +1,49 @@
+USE CASE Source code delivery
+	YOU MUST Provide License notice
+	YOU MUST Reference License text
+	YOU MUST NOT Modify Legal notices
+	IF Service offerings
+		ATTRIBUTE NOT Transferable
+		YOU MUST Indemnify Other contributors
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+	YOU MUST NOT Restrict Granted rights
+USE CASE Binary delivery
+	YOU MUST Inform Recipients
+		ATTRIBUTE Delayed source code delivery
+			ATTRIBUTE Reasonable
+			ATTRIBUTE Timely
+			ATTRIBUTE No profit
+	IF License change
+		YOU MUST NOT Restrict Granted rights For Source code
+	IF Service offerings
+		ATTRIBUTE NOT Transferable
+		YOU MUST Indemnify Other contributors
+COMPATIBILITY Apache-2.0
+COMPATIBILITY blessing
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFULLR
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY NTP
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+COPYLEFT CLAUSE Yes
+PATENT HINTS Yes

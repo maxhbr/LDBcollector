@@ -1,23 +1,20 @@
 use ldbcollector::*;
-use spdx::identifiers::LICENSES;
+use ldbcollector::model::*;
+use std::fs;
+use std::process::Command;
 
-fn add_spdx_licenses(s: state::State) -> state::State {
-    LICENSES.into_iter()
-        .take(10)
-        .fold(s, |acc : state::State, (name,full_name,_)| 
-            acc.add_alias(
-                license::LicenseName::new(full_name),
-                license::LicenseName::new(name),
-                state::LicenseRelation::Same,
-            )
-        )
-
+fn write_focused_dot(g: graph::LicenseGraph, needle: core::LicenseName) -> () {
+    let focused = g.focus(needle);
+    println!("{:#?}", focused);
+    fs::write("graph.dot", format!("{}",focused.get_as_dot())).expect("Unable to write file");
 }
 
 fn main() {
-    let s0 = state::State::new();
-    let s1 = add_spdx_licenses(s0);
+    let g0 = graph::LicenseGraph::new();
+    let g1 = source_spdx::add_spdx(g0);
 
-    println!("{:#?}", s1);
-    println!("{:#?}", s1.get_component());
+    let g = g1;
+    println!("{:#?}", g);
+
+    write_focused_dot(g, lic!("BSD-3-Clause"));
 }

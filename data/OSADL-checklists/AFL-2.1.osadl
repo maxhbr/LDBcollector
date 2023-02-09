@@ -1,0 +1,24 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Reference License text
+	YOU MUST Search License acceptance
+		ATTRIBUTE Reasonable
+	IF Software modification
+		YOU MUST Forward Copyright notices
+		YOU MUST Forward Patent notice
+		YOU MUST Forward Trademark notice
+		YOU MUST Forward License notice
+		YOU MUST Provide Modification notice
+		YOU MUST NOT Promote
+		IF Modified work Under Original license
+			EITHER
+				YOU MUST Include Source code Of Modified work
+					ATTRIBUTE Machine-readable
+			OR
+				YOU MUST Provide Delayed source code delivery Of Modified work
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Via Internet
+					ATTRIBUTE No profit
+					ATTRIBUTE Duration As long as distributed
+				YOU MUST Reference Source code
+					ATTRIBUTE Below Copyright notice
+PATENT HINTS Yes

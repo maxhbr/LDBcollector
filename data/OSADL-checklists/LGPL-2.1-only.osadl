@@ -1,0 +1,212 @@
+USE CASE Source code delivery
+	YOU MUST Provide Copyright notice
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST Provide Warranty disclaimer
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST NOT Modify License notices
+	YOU MUST NOT Modify Warranty disclaimer
+	YOU MUST Provide License text
+	IF Software modification
+		YOU MUST Ensure Modified work Is Library
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		IF Software modification Uses Linked work
+			YOU MUST Ensure Functionality Without Linked work
+	YOU MUST NOT Restrict Granted rights
+USE CASE Binary delivery
+	YOU MUST Provide Copyright notice
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST Provide Warranty disclaimer
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST NOT Modify License notices
+	YOU MUST NOT Modify Warranty disclaimer
+	YOU MUST Provide License text
+	YOU MUST Provide Source code
+		ATTRIBUTE Machine-readable
+		ATTRIBUTE Customary medium
+		ATTRIBUTE Including Tool chain information
+		ATTRIBUTE Including Installation scripts
+		IF Binary delivery Via Internet
+			ATTRIBUTE Source code delivery Via Internet
+				ATTRIBUTE On same server
+				ATTRIBUTE Equivalent
+	IF Software modification
+		YOU MUST Ensure Modified work Is Library
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		IF Software modification Uses Linked work
+			YOU MUST Ensure Functionality Without Linked work
+	YOU MUST NOT Restrict Granted rights
+USE CASE Source code delivery Of Combined work
+	YOU MUST Permit Modification of Linked work
+		ATTRIBUTE For own use
+	YOU MUST Notify Library
+		ATTRIBUTE Highlighted
+	YOU MUST Provide License announcement
+		ATTRIBUTE Highlighted
+	YOU MUST Provide License text
+	IF Interactive AND Displaying Copyright notices
+		YOU MUST Display Copyright notices
+		YOU MUST Reference License text
+	YOU MUST Provide Copyright notice
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST Provide Warranty disclaimer
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST NOT Modify License notices
+	YOU MUST NOT Modify Warranty disclaimer
+	IF Software modification
+		YOU MUST Ensure Modified work Is Library
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		IF Software modification Uses Linked work
+			YOU MUST Ensure Functionality Without Linked work
+	YOU MUST NOT Restrict Granted rights
+USE CASE Binary delivery Of Combined work
+	YOU MUST Permit Modification of Linked work
+		ATTRIBUTE For own use
+	YOU MUST Permit Reverse engineering of Linked work
+		ATTRIBUTE For Debugging Of Modification
+		ATTRIBUTE For own use
+	YOU MUST Notify Library
+		ATTRIBUTE Highlighted
+	YOU MUST Provide License announcement
+		ATTRIBUTE Highlighted
+	YOU MUST Provide License text
+	IF Interactive AND Displaying Copyright notices
+		YOU MUST Display Copyright notices
+		YOU MUST Reference License text
+	EITHER
+		YOU MUST Use Shared library
+		YOU MUST Provide Source code Of the Library
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Customary medium
+			ATTRIBUTE Including Tool chain information
+			ATTRIBUTE Including Installation scripts
+		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
+	OR
+		YOU MUST Provide Linkable work
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Including Tool chain information
+		YOU MUST Provide Source code Of the Library
+			ATTRIBUTE Including Tool chain information
+			ATTRIBUTE Including Installation scripts
+		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
+	OR
+		YOU MUST Provide Written offer
+			ATTRIBUTE Duration 3 years
+			ATTRIBUTE No profit
+			ATTRIBUTE Delayed source code delivery Of the Library
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Customary medium
+				ATTRIBUTE Including Tool chain information
+				ATTRIBUTE Including Installation scripts
+			ATTRIBUTE Delayed delivery Of Linkable work
+				ATTRIBUTE Interoperability With Modified library
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Including Tool chain information
+			YOU MUST Enable Relinking With Modified library
+				EXCEPT IF Modified library NOT Interoperable
+	OR IF Binary delivery Via Internet
+		YOU MUST Provide Source code delivery Of the Library Via Internet
+			ATTRIBUTE On same server
+			ATTRIBUTE Equivalent
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Including Tool chain information
+			ATTRIBUTE Including Installation scripts
+		YOU MUST Provide Linkable work Via Internet
+			ATTRIBUTE On same server
+			ATTRIBUTE Equivalent
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Interoperability With Modified library
+			ATTRIBUTE Including Tool chain information
+		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
+	OR
+		YOU MUST Ensure Source code delivery Of the Library
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Including Tool chain information
+			ATTRIBUTE Including Installation scripts
+		YOU MUST Ensure Delivery Of Linkable work
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Including Tool chain information
+		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
+	IF Software modification Of Library
+		YOU MUST Ensure Modified work Is Library
+		YOU MUST Provide Modification notice
+		YOU MUST Provide Modification date
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		IF Software modification Uses Linked work
+			YOU MUST Ensure Functionality Without Linked work
+	YOU MUST NOT Restrict Granted rights
+USE CASE Source code delivery OR Binary delivery Of Combined library
+	YOU MUST Permit Binary delivery of Library
+	YOU MUST Provide Library
+		ATTRIBUTE Uncombined
+		ATTRIBUTE Original license
+	YOU MUST Provide License notices
+	YOU MUST Reference Library
+		ATTRIBUTE Uncombined
+	YOU MUST NOT Restrict Granted rights
+USE CASE Binary delivery Of Linked work With Header files Of Library Included In Linked work
+	IF More than 10 lines of code
+		YOU MUST Use GPL-2.0-or-later For Library AND Linked work
+			YOU MUST Provide Source code Of Library AND Linked work
+COMPATIBILITY Artistic-2.0
+COMPATIBILITY blessing
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFULLR
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY LGPL-2.1-or-later
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY MPL-2.0
+COMPATIBILITY NTP
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+DEPENDING COMPATIBILITY AGPL-3.0-only
+DEPENDING COMPATIBILITY AGPL-3.0-or-later
+DEPENDING COMPATIBILITY EPL-2.0
+INCOMPATIBILITY Apache-1.0
+INCOMPATIBILITY Apache-1.1
+INCOMPATIBILITY Apache-2.0
+INCOMPATIBILITY BSD-4-Clause
+INCOMPATIBILITY BSD-4-Clause-UC
+INCOMPATIBILITY FTL
+INCOMPATIBILITY IJG
+INCOMPATIBILITY OpenSSL
+INCOMPATIBILITY Python-2.0
+INCOMPATIBILITY zlib-acknowledgement
+INCOMPATIBILITY XFree86-1.1
+PATENT HINTS Yes
+COPYLEFT CLAUSE Yes

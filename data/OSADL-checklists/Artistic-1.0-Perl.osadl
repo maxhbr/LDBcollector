@@ -1,0 +1,41 @@
+USE CASE Source code delivery
+	YOU MUST Provide Copyright notices
+	YOU MUST Provide Warranty disclaimer
+	IF Software modification
+		YOU MUST Provide Modification notice In Source code
+		YOU MUST Provide Modification report In Source code
+		YOU MUST Provide Modification date In Source code
+		EITHER
+			YOU MUST Publish Modification
+			YOU MUST Grant License
+				EITHER
+					ATTRIBUTE Public domain
+				OR
+					ATTRIBUTE No profit
+					ATTRIBUTE Original license
+		OR
+			YOU MUST Provide Source code Of Modified work
+				ATTRIBUTE To Copyright holder Of Original work
+				ATTRIBUTE Compatible license
+		OR
+			YOU MUST Rename Target binary
+			YOU MUST Provide Original work
+			YOU MUST Provide Modification report
+	YOU MUST NOT Require License fee
+	YOU MUST NOT Promote
+USE CASE Binary delivery
+	IF Software modification
+		EITHER
+			YOU MUST Provide Original work
+			YOU MUST Reference Original work In Distribution material
+		OR
+			YOU MUST Provide Source code
+				ATTRIBUTE Machine-readable
+		OR
+			YOU MUST Rename Modified work
+			YOU MUST Provide Modification report In Distribution material
+			YOU MUST Reference Original work In Distribution material
+	IF Distributed With Other works
+		YOU MUST NOT Misrepresent Authorship
+	YOU MUST NOT Require License fee
+	YOU MUST NOT Promote

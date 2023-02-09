@@ -1,0 +1,18 @@
+[submodule "old-ldbcollector"]
+	path = old-ldbcollector
+	url = https://github.com/maxhbr/ldbcollector
+[submodule "data/nexB-scancode-licensedb"]
+	path = data/nexB-scancode-licensedb
+	url = https://github.com/nexB/scancode-licensedb
+[submodule "data/spdx-license-list-data"]
+	path = data/spdx-license-list-data
+	url = https://github.com/spdx/license-list-data
+[submodule "data/finos-OSLC-handbook"]
+	path = data/finos-OSLC-handbook
+	url = https://github.com/finos/OSLC-handbook
+[submodule "data/org-metaeffekt-metaeffekt-universe"]
+	path = data/org-metaeffekt-metaeffekt-universe
+	url = https://github.com/org-metaeffekt/metaeffekt-universe
+[submodule "data/openSUSE-cavil"]
+	path = data/openSUSE-cavil
+	url = https://github.com/openSUSE/cavil

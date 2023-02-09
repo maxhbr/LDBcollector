@@ -1,0 +1,65 @@
+USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward License text
+	YOU MUST Forward Warranty disclaimer
+	YOU MUST NOT Promote
+	IF Software modification
+		YOU MUST Use License For Modification
+			ATTRIBUTE No charge
+			ATTRIBUTE Reasonable
+USE CASE Binary delivery
+	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+	YOU MUST Provide License text In Documentation OR Distribution material
+	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+	YOU MUST NOT Promote
+	EITHER
+		YOU MUST Include Source code
+	OR
+		YOU MUST Provide Delayed source code delivery
+			ATTRIBUTE No profit
+	IF Software modification
+		YOU MUST Use License For Modification
+			ATTRIBUTE No charge
+			ATTRIBUTE Reasonable
+USE CASE Combined work delivery
+	YOU MUST NOT Promote
+	YOU MUST Use License For Combined work
+		ATTRIBUTE No charge
+		ATTRIBUTE Reasonable
+	IF Source code delivery
+		YOU MUST Forward Copyright notices
+		YOU MUST Forward License text
+		YOU MUST Forward Warranty disclaimer
+	IF Binary delivery
+		YOU MUST Provide Copyright notices In Documentation OR Distribution material
+		YOU MUST Provide License text In Documentation OR Distribution material
+		YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+		EITHER
+			YOU MUST Include Source code Of Combined work
+		OR
+			YOU MUST Provide Delayed source code delivery Of Combined work
+				ATTRIBUTE No profit
+COMPATIBILITY blessing
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFULLR
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY NTP
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COPYLEFT CLAUSE Yes

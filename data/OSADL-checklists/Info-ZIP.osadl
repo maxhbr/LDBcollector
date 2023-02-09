@@ -1,0 +1,22 @@
+USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward Attribution notice
+	YOU MUST Forward Warranty disclaimer
+	YOU MUST Forward License text
+	IF Software modification
+		YOU MUST Mark Modification
+		YOU MUST Rename Modified work
+USE CASE Binary delivery
+	IF NOT Binary delivery of standard UnZipSFX binary (including SFXWiz) as part of a self-extracting archive AND NOT Delete SFX banner AND NOT Disable SFX banner
+		YOU MUST Provide Copyright notices In Documentation OR Distribution material
+			EXCEPT IF Interactive AND Reference Legal notices
+		YOU MUST Provide Attribution notice In Documentation OR Distribution material
+			EXCEPT IF Interactive AND Reference Legal notices
+		YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+			EXCEPT IF Interactive AND Reference Legal notices
+		YOU MUST Provide License text In Documentation OR Distribution material
+			EXCEPT IF Interactive AND Reference Legal notices
+		IF Software modification
+			YOU MUST Mark Modification
+			YOU MUST Rename Modified work
+			YOU MUST NOT Use "Info-ZIP", "Zip", "UnZip", "UnZipSFX", "WiZ", "Pocket UnZip", "Pocket Zip", "MacZip"

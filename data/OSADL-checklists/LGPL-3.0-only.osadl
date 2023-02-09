@@ -1,0 +1,363 @@
+USE CASE Source code delivery
+	YOU MUST Provide Copyright notice
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST NOT Modify License notices
+	YOU MUST NOT Modify Warranty disclaimer
+	YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
+	IF Software modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
+		YOU MUST Provide Modification date
+		YOU MUST Provide Legal notices
+			ATTRIBUTE Highlighted
+		YOU MUST Grant License
+			ATTRIBUTE Original license LGPL-3.0-only
+		IF Interactive AND Displaying Appropriate legal notices
+			YOU MUST Display Appropriate legal notices
+				ATTRIBUTE Highlighted
+		IF Software modification Uses Linked work
+			EITHER
+				YOU MUST Ensure Functionality Without Linked work
+			OR
+				YOU MUST Use GPL-3.0-only
+		IF Non-permissive additional terms Added
+			EITHER
+				YOU MUST Include Non-permissive additional terms In Source code
+			OR
+				YOU MUST Reference Non-permissive additional terms In Source code
+	YOU MUST NOT Restrict Granted rights
+		EXCEPT IF Permitted Non-permissive additional terms
+	YOU MUST NOT Litigate Circumvention
+USE CASE Binary delivery
+	YOU MUST Provide Copyright notice
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST NOT Modify License notices
+	YOU MUST NOT Modify Warranty disclaimer
+	YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
+	EITHER IF Binary delivery On Customary medium OR Installed
+		EITHER
+			YOU MUST Provide Source code
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Customary medium
+				ATTRIBUTE Documented format
+				ATTRIBUTE Including Installation scripts
+				ATTRIBUTE Including Tool chain information
+		OR
+			YOU MUST Provide Written offer
+				ATTRIBUTE Duration At least 3 years
+				ATTRIBUTE Duration As long as product is supported
+				ATTRIBUTE Delayed source code delivery
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Documented format
+					ATTRIBUTE Including Installation scripts
+					ATTRIBUTE Including Tool chain information
+					EITHER
+						ATTRIBUTE Customary medium
+						ATTRIBUTE No profit
+					OR
+						ATTRIBUTE Via Internet
+						ATTRIBUTE No charge
+	OR IF Binary delivery Via Internet
+		YOU MUST Provide Source code
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Documented format
+			ATTRIBUTE Including Installation scripts
+			ATTRIBUTE Including Tool chain information
+			ATTRIBUTE Via Internet
+			ATTRIBUTE Duration As long as needed
+			EITHER IF Source code On same server
+				ATTRIBUTE No charge
+				ATTRIBUTE Equivalent
+			OR IF Source code On other server
+				ATTRIBUTE No charge
+				ATTRIBUTE Equivalent
+				YOU MUST Reference Source code
+	OR IF Binary delivery Via peer-to-peer transmission
+		YOU MUST Reference Source code
+			ATTRIBUTE No charge
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Documented format
+			ATTRIBUTE Including Installation scripts
+			ATTRIBUTE Including Tool chain information
+			ATTRIBUTE Via Internet
+			ATTRIBUTE Duration As long as needed
+	IF User product
+		YOU MUST Provide Installation information
+			ATTRIBUTE Included in Source code delivery Of the Library
+			EXCEPT IF Installation Is NOT Feasible
+	IF Software modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
+		YOU MUST Provide Modification date
+		YOU MUST Provide Legal notices
+			ATTRIBUTE Highlighted
+		YOU MUST Grant License
+			ATTRIBUTE Original license LGPL-3.0-only
+		IF Interactive AND Displaying Appropriate legal notices
+			YOU MUST Display Appropriate legal notices
+				ATTRIBUTE Highlighted
+		IF Software modification Uses Linked work
+			EITHER
+				YOU MUST Ensure Functionality Without Linked work
+			OR
+				YOU MUST Use GPL-3.0-only
+		IF Non-permissive additional terms Added
+			EITHER
+				YOU MUST Include Non-permissive additional terms In Source code
+					ATTRIBUTE With Source code delivery
+			OR
+				YOU MUST Reference Non-permissive additional terms In Source code
+					ATTRIBUTE With Source code delivery
+	YOU MUST NOT Restrict Granted rights
+		EXCEPT IF Permitted Non-permissive additional terms
+	YOU MUST NOT Litigate Circumvention
+USE CASE Source code delivery Of Combined work
+	YOU MUST NOT Impede Modification Of the Library
+	YOU MUST Notify Library
+		ATTRIBUTE Highlighted
+	YOU MUST Provide License announcement
+		ATTRIBUTE Highlighted
+	YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
+	IF Displaying Copyright notices
+		YOU MUST Display Copyright notices Of the Library
+		YOU MUST Reference License text GPL-3.0-only AND LGPL-3.0-only
+	YOU MUST NOT Modify Warranty disclaimer
+	IF Software modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
+		YOU MUST Provide Modification date
+		YOU MUST Provide Legal notices
+			ATTRIBUTE Highlighted
+		YOU MUST Grant License
+			ATTRIBUTE Original license LGPL-3.0-only
+		IF Interactive AND Displaying Appropriate legal notices
+			YOU MUST Display Appropriate legal notices
+				ATTRIBUTE Highlighted
+		IF Software modification Uses Linked work
+			EITHER
+				YOU MUST Ensure Functionality Without Linked work
+			OR
+				YOU MUST Use GPL-3.0-only
+		IF Non-permissive additional terms Added
+			EITHER
+				YOU MUST Include Non-permissive additional terms In Source code
+			OR
+				YOU MUST Reference Non-permissive additional terms In Source code
+	IF Combined work With AGPL-3.0-only
+		YOU MUST Fulfill License obligations Of AGPL-3.0-only
+	YOU MUST NOT Restrict Granted rights
+		EXCEPT IF Permitted Non-permissive additional terms
+	YOU MUST NOT Litigate Circumvention
+USE CASE Binary delivery Of Combined work
+	YOU MUST NOT Impede Modification Of the Library
+	YOU MUST NOT Impede Reverse engineering
+		ATTRIBUTE For Debugging Of Modification
+	YOU MUST Notify Library
+		ATTRIBUTE Highlighted
+	YOU MUST Provide License announcement
+		ATTRIBUTE Highlighted
+	YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
+	IF Displaying Copyright notices
+		YOU MUST Display Copyright notices Of the Library
+		YOU MUST Reference License text GPL-3.0-only AND LGPL-3.0-only
+	YOU MUST NOT Modify Warranty disclaimer
+	EITHER
+		YOU MUST Provide Linkable work
+		YOU MUST Permit Relinking With Modified library
+		YOU MUST Provide Source code Of the Library
+		EITHER IF Binary delivery On Customary medium OR Installed
+			EITHER
+				YOU MUST Provide Source code Of the Library
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Customary medium
+					ATTRIBUTE Documented format
+					ATTRIBUTE Including Installation scripts
+					ATTRIBUTE Including Tool chain information
+			OR
+				YOU MUST Provide Written offer
+					ATTRIBUTE Duration At least 3 years
+					ATTRIBUTE Duration As long as product is supported
+					ATTRIBUTE Delayed source code delivery Of the Library
+						ATTRIBUTE Machine-readable
+						ATTRIBUTE Documented format
+						ATTRIBUTE Including Installation scripts
+						ATTRIBUTE Including Tool chain information
+						EITHER
+							ATTRIBUTE Customary medium
+							ATTRIBUTE No profit
+						OR
+							ATTRIBUTE Via Internet
+							ATTRIBUTE No charge
+		OR IF Binary delivery Via Internet
+			YOU MUST Provide Source code Of the Library
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Documented format
+				ATTRIBUTE Including Installation scripts
+				ATTRIBUTE Including Tool chain information
+				ATTRIBUTE Via Internet
+				ATTRIBUTE Duration As long as needed
+				EITHER IF Source code On same server
+					ATTRIBUTE No charge
+					ATTRIBUTE Equivalent
+				OR IF Source code On other server
+					ATTRIBUTE No charge
+					ATTRIBUTE Equivalent
+					YOU MUST Reference Source code
+		OR IF Binary delivery Via peer-to-peer transmission
+			YOU MUST Reference Source code Of the Library
+				ATTRIBUTE No charge
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Documented format
+				ATTRIBUTE Including Installation scripts
+				ATTRIBUTE Including Tool chain information
+				ATTRIBUTE Via Internet
+				ATTRIBUTE Duration As long as needed
+
+	OR
+		YOU MUST Use Shared library
+		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
+		YOU MUST Provide Source code Of the Library
+			EITHER IF Binary delivery On Customary medium OR Installed
+				EITHER
+					YOU MUST Provide Source code Of the Library
+						ATTRIBUTE Machine-readable
+						ATTRIBUTE Customary medium
+						ATTRIBUTE Documented format
+						ATTRIBUTE Including Installation scripts
+						ATTRIBUTE Including Tool chain information
+				OR
+					YOU MUST Provide Written offer
+						ATTRIBUTE Duration At least 3 years
+						ATTRIBUTE Duration As long as product is supported
+						ATTRIBUTE Delayed source code delivery Of the Library
+							ATTRIBUTE Machine-readable
+							ATTRIBUTE Documented format
+							ATTRIBUTE Including Installation scripts
+							ATTRIBUTE Including Tool chain information
+							EITHER
+								ATTRIBUTE Customary medium
+								ATTRIBUTE No profit
+							OR
+								ATTRIBUTE Via Internet
+								ATTRIBUTE No charge
+			OR IF Binary delivery Via Internet
+				YOU MUST Provide Source code Of the Library
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Documented format
+					ATTRIBUTE Including Installation scripts
+					ATTRIBUTE Including Tool chain information
+					ATTRIBUTE Via Internet
+					ATTRIBUTE Duration As long as needed
+					EITHER IF Source code On same server
+						ATTRIBUTE No charge
+						ATTRIBUTE Equivalent
+					OR IF Source code On other server
+						ATTRIBUTE No charge
+						ATTRIBUTE Equivalent
+						YOU MUST Reference Source code
+			OR IF Binary delivery Via peer-to-peer transmission
+				YOU MUST Reference Source code Of the Library
+					ATTRIBUTE No charge
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Documented format
+					ATTRIBUTE Including Installation scripts
+					ATTRIBUTE Including Tool chain information
+					ATTRIBUTE Via Internet
+					ATTRIBUTE Duration As long as needed
+	IF User product
+		YOU MUST Provide Installation information
+			ATTRIBUTE Included in Source code delivery Of the Library
+			EXCEPT IF Installation Is NOT Feasible
+	IF Software modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
+		YOU MUST Provide Modification date
+		YOU MUST Provide Legal notices
+			ATTRIBUTE Highlighted
+		YOU MUST Grant License
+			ATTRIBUTE Original license LGPL-3.0-only
+		IF Interactive AND Displaying Appropriate legal notices
+			YOU MUST Display Appropriate legal notices
+				ATTRIBUTE Highlighted
+		IF Software modification Uses Linked work
+			EITHER
+				YOU MUST Ensure Functionality Without Linked work
+			OR
+				YOU MUST Use GPL-3.0-only
+		IF Non-permissive additional terms Added
+			EITHER
+				YOU MUST Include Non-permissive additional terms In Source code
+					ATTRIBUTE With Source code delivery
+			OR
+				YOU MUST Reference Non-permissive additional terms In Source code
+					ATTRIBUTE With Source code delivery
+	IF Combined work With AGPL-3.0-only
+		YOU MUST Fulfill License obligations Of AGPL-3.0-only
+	YOU MUST NOT Restrict Granted rights
+		EXCEPT IF Permitted Non-permissive additional terms
+	YOU MUST NOT Litigate Circumvention
+USE CASE Source code delivery OR Binary delivery Of Combined library
+	YOU MUST Provide Library
+		ATTRIBUTE Uncombined
+		ATTRIBUTE Original license LGPL-3.0-only
+	YOU MUST Provide License notices
+	YOU MUST Reference Library
+		ATTRIBUTE Uncombined
+	YOU MUST NOT Restrict Granted rights
+		EXCEPT IF Permitted Non-permissive additional terms
+	YOU MUST NOT Litigate Circumvention
+USE CASE Binary delivery Of Linked work With Header files Of Library Included In Linked work
+	IF Substantial work
+		YOU MUST Notify Library
+			ATTRIBUTE Highlighted
+		YOU MUST Provide License announcement
+			ATTRIBUTE Highlighted
+		YOU MUST Provide License text GPL-3.0-only AND LGPL-3.0-only
+COMPATIBILITY Apache-2.0
+COMPATIBILITY Artistic-2.0
+COMPATIBILITY blessing
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFULLR
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY LGPL-2.1-or-later
+COMPATIBILITY LGPL-3.0-or-later
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY MPL-2.0
+COMPATIBILITY NTP
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+DEPENDING COMPATIBILITY AGPL-3.0-only
+DEPENDING COMPATIBILITY AGPL-3.0-or-later
+DEPENDING COMPATIBILITY EPL-2.0
+INCOMPATIBILITY Apache-1.0
+INCOMPATIBILITY Apache-1.1
+INCOMPATIBILITY Artistic-2.0
+INCOMPATIBILITY BSD-4-Clause
+INCOMPATIBILITY BSD-4-Clause-UC
+INCOMPATIBILITY FTL
+INCOMPATIBILITY IJG
+INCOMPATIBILITY OpenSSL
+INCOMPATIBILITY Python-2.0
+INCOMPATIBILITY zlib-acknowledgement
+INCOMPATIBILITY XFree86-1.1
+PATENT HINTS Yes
+COPYLEFT CLAUSE Yes

@@ -1,0 +1,91 @@
+USE CASE Source code delivery
+	YOU MUST Provide Standard license notice (Exhibit A)
+	YOU MUST Provide License text
+	IF Documentation
+		YOU MUST Provide License text
+	IF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks
+		YOU MUST Provide File "LEGAL"
+			ATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks
+			IF ATTRIBUTE Dynamic
+				YOU MUST Update File "LEGAL"
+				YOU MUST Disseminate Patent notice AND Trademark notice
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		YOU MUST Provide Modification report
+			ATTRIBUTE Documentation of Software modifications
+			ATTRIBUTE Modification date
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
+			ATTRIBUTE Crediting Initial developer
+			ATTRIBUTE Included In Source code
+	YOU MUST NOT Restrict Granted rights
+	IF Service offerings
+		YOU MUST Indemnify Other contributors
+USE CASE Binary delivery
+	YOU MUST Include Notice
+		YOU MUST Reference Source code
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Included in Binary delivery OR Documentation
+	IF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks
+		YOU MUST Provide File "LEGAL"
+			ATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks
+			IF ATTRIBUTE Dynamic
+				YOU MUST Update File "LEGAL"
+				YOU MUST Disseminate Patent notice AND Trademark notice
+	IF Software modification
+		YOU MUST Include Retrieval information of Source code in Notice
+		YOU MUST Provide Source code
+		EITHER	
+			ATTRIBUTE Same medium
+		OR
+			ATTRIBUTE Via Internet
+				ATTRIBUTE Duration 12 months
+				EXCEPT IF Software modification Was Updated
+					ATTRIBUTE Duration 6 months
+		YOU MUST Provide Standard license notice (Exhibit A)
+		YOU MUST Provide License text
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		YOU MUST Provide Modification report
+			ATTRIBUTE Documentation of Software modifications
+			ATTRIBUTE Modification date
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
+			ATTRIBUTE Crediting Initial developer
+			ATTRIBUTE Included In Source code
+			IF Binary delivery Includes Copyright notice OR Documentation Includes Copyright notice
+				ATTRIBUTE Included in Binary delivery OR Documentation
+	IF License change
+		YOU MUST Use Compatible license
+		YOU MUST Indemnify Other Contributors
+	YOU MUST NOT Restrict Granted rights For Source code
+	IF Service offerings
+		YOU MUST Indemnify Other contributors
+COMPATIBILITY blessing
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFULLR
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY NTP
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+INCOMPATIBILITY Apache-2.0
+PATENT HINTS Yes
+COPYLEFT CLAUSE Yes

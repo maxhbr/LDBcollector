@@ -3,12 +3,15 @@
 * Idea
 A handle for a license is just a string, like
 - =MIT=
+  - a short_name / identifier
   - in the namespace SPDX-License-List version =3.19=
 - =bsd-3-clause-no-trademark=
   - in the namespace scancode
 - =The 3-Clause BSD License=
   - a full_name
 - =BSD=
+  - identifies a class or radical of licenses
+
 These classify in different categories, e.g. short_names, full_names, or just some "names".
 Some have namespaces.
 ** there are statemens about a license

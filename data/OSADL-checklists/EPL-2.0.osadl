@@ -1,0 +1,76 @@
+USE CASE Source code delivery
+	YOU MUST Provide License text
+	YOU MUST NOT Modify Copyright notices
+	YOU MUST NOT Modify Patent notices
+	YOU MUST NOT Modify Trademark notices
+	YOU MUST NOT Modify Attribution notices
+	YOU MUST NOT Modify Warranty disclaimers
+	YOU MUST NOT Modify Liability disclaimers
+	IF Software modification
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+	IF License change
+		YOU MUST Use Warranty disclaimer On behalf of Other contributors
+			ATTRIBUTE Effective
+		YOU MUST Use Liability disclaimer On behalf of Other contributors
+			ATTRIBUTE Effective
+		YOU MUST NOT Restrict Granted rights
+		YOU MUST Use Identical License obligations
+	IF Commercial distribution
+		YOU MUST Indemnify Other contributors
+USE CASE Binary delivery
+	YOU MUST Notify License
+	EITHER
+		YOU MUST Include Source code
+	OR
+		YOU MUST Provide Delayed source code delivery
+		YOU MUST Provide Written offer
+			ATTRIBUTE Reasonable
+			EITHER
+				ATTRIBUTE Customary medium
+			OR
+				ATTRIBUTE Via Internet
+	YOU MUST NOT Modify Copyright notices
+	YOU MUST NOT Modify Patent notices
+	YOU MUST NOT Modify Trademark notices
+	YOU MUST NOT Modify Attribution notices
+	YOU MUST NOT Modify Warranty disclaimers
+	YOU MUST NOT Modify Liability disclaimers
+	IF License change
+		YOU MUST Use Warranty disclaimer On behalf of Other contributors
+			ATTRIBUTE Effective
+		YOU MUST Use Liability disclaimer On behalf of Other contributors
+			ATTRIBUTE Effective
+		YOU MUST NOT Restrict Granted rights
+		YOU MUST Use Identical License obligations
+	IF Commercial distribution
+		YOU MUST Indemnify Other contributors
+COMPATIBILITY Apache-2.0
+COMPATIBILITY blessing
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY BSL-1.0
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY CPL-1.0
+COMPATIBILITY curl
+COMPATIBILITY EFL-2.0
+COMPATIBILITY EPL-1.0
+COMPATIBILITY FSFAP
+COMPATIBILITY FSFULLR
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY NTP
+COMPATIBILITY Unlicense
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
+COMPATIBILITY ZPL-2.0
+PATENT HINTS Yes
+COPYLEFT CLAUSE Yes
