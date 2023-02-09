@@ -234,7 +234,7 @@ class ReleaseExploitationsListView(
             "project", "scope", "exploitation", "id"
         )
         explicit_exploitations = dict()
-        for (key, value) in Exploitation._meta.get_field("exploitation").choices:
+        for key, value in Exploitation._meta.get_field("exploitation").choices:
             explicit_exploitations[key] = value
 
         full_exploitations = dict()

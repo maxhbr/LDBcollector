@@ -11,7 +11,6 @@ from django.views import generic
 from django.shortcuts import get_object_or_404, redirect
 
 from cube.forms.components import LicenseCurationCreateForm, LicenseCurationUpdateForm
-from cube.forms.release_validation import CreateLicenseCurationForm
 from cube.models import Component, LicenseCuration, Funding
 from cube.views.mixins import SearchMixin, SaveAuthorMixin
 from cube.utils.funding import get_fundings_from_purl

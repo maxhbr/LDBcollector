@@ -93,8 +93,8 @@ class GenericViewSet(viewsets.ModelViewSet):
         """
         Get list of generic obligations for a given SBOM.
 
-        Uploads a list of package with their licenses SPDX and return a list of generic obligations with
-        packages which triggered them.
+        Uploads a list of package with their licenses SPDX and return a list of
+        generic obligations with packages which triggered them.
         """
         serializer = SBOMSerializer(data=request.data)
         if not serializer.is_valid():

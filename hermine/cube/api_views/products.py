@@ -56,7 +56,8 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 class ReleaseViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows releases to be viewed or edited, and to check validation steps.
+    API endpoint that allows releases to be viewed or edited, and to check
+    validation steps.
     """
 
     serializer_class = ReleaseSerializer
@@ -64,8 +65,8 @@ class ReleaseViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         """
-        Handles if the user is accessing the viewset from root of api or from a nested
-        # ReleaseSet in a product (api/products/<int:product_id>/releases)
+        Handles if the user is accessing the viewset from root of api or from a
+        nested #ReleaseSet in a product (api/products/<int:product_id>/releases)
 
         :return: Set of Release objects
         :rtype: QuerySet
@@ -96,7 +97,8 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_1(self, request, **kwargs):
         """
-        Check for components versions that do not have valid SPDX license expressions.
+        Check for components versions that do not have valid SPDX license
+        expressions.
         """
         response = {}
         release = self.get_object()
@@ -121,7 +123,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def validation_2(self, request, **kwargs):
         """
-        Confirm ANDs operators in SPDX expressions are not poorly registered ORs.
+        Confirm ANDs operators in SPDX expressions are not poorly registered ORs
         """
         response = {}
         release = self.get_object()

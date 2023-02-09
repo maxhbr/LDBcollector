@@ -1,7 +1,6 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
-from urllib.parse import urlencode
 
 from django.conf import settings
 from social_core.backends.oauth import BaseOAuth2

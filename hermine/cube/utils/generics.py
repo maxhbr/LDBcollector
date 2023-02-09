@@ -1,14 +1,12 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
-import json
 import logging
 
 from django.core.serializers import serialize, deserialize
-from django.db import transaction, IntegrityError
+from django.db import transaction
 
 from cube.models import Generic, Team
-from cube.serializers import GenericSerializer
 
 logger = logging.getLogger(__name__)
 

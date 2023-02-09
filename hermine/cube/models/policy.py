@@ -149,7 +149,7 @@ class AbstractUsageRule(AbstractComponentRule):
         if self.scope:
             return result + f" — scope: {self.scope}"
         else:
-            return result + f" — scope: any"
+            return result + " — scope: any"
 
     def clean(self):
         """Model validation

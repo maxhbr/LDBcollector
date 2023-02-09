@@ -3,11 +3,9 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 
-#
-from django.contrib.auth.decorators import login_required
+
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
-from django.shortcuts import render
 from django.views.generic import TemplateView
 
 from cube.models import License, Product, Component, Release, Generic
@@ -33,8 +31,3 @@ class IndexView(LoginRequiredMixin, TemplateView):
 
 class AboutView(LoginRequiredMixin, TemplateView):
     template_name = "cube/about.html"
-
-
-def about(request):
-    context = {}
-    return render(request, "cube/about.html", context)
