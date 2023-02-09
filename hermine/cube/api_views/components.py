@@ -48,6 +48,8 @@ class ComponentViewSet(viewsets.ModelViewSet):
     queryset = Component.objects.all()
     serializer_class = ComponentSerializer
     lookup_field = "pk"
+    filter_backends = [filters.DjangoFilterBackend]
+    filterset_fields = ["name", "package_repo"]
 
 
 class VersionViewSet(viewsets.ModelViewSet):

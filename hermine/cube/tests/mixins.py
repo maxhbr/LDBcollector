@@ -47,6 +47,20 @@ class BaseHermineAPITestCase(BaseAPITestCase):
         }
         return self.client.post(url, data)
 
+    def create_component_other(self):
+        url = "/api/components/"
+        data = {
+            "name": "test_component_beta_other",
+            "package_repo": "composer",
+            "description": "Other TestComponent. To be deleted too;",
+            "programming_language": "PHP",
+            "spdx_expression": "",
+            "homepage_url": "http://test.com",
+            "export_control_status": "",
+            "versions": [],
+        }
+        return self.client.post(url, data)
+
     def create_release(self):
         url = "/api/releases/"
         data = {
