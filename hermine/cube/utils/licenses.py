@@ -6,7 +6,7 @@ import json
 import logging
 from functools import lru_cache, reduce
 from itertools import product
-from typing import Iterable, List, Any
+from typing import Iterable, List
 
 from django.db import transaction
 from license_expression import get_spdx_licensing, BaseSymbol
@@ -90,11 +90,16 @@ def _get_ands_corrections_expressions(parsed):
     ]
 
     return {
-        str(simplified),
+        simplified,
         simplified_or_expression,
         *and_combinations,
         *or_combinations,
     }
+
+
+@lru_cache(maxsize=1024)
+def simplified(spdx_expression: str):
+    return str(licensing.parse(spdx_expression).simplify())
 
 
 def check_licenses_against_policy(release):

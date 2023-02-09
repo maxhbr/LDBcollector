@@ -23,13 +23,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block content %}
 
 {% if confirmed_usages %}
-<h5 class="title is-5">ANDs confirmed</h5>
+<h5 class="title is-5">Confirmed expressions</h5>
     <table class="table">
       <thead>
         <tr>
           <th>Component</th>
           <th>Confirmed license expression</th>
-          <th>Expression validation</th>
+          <th>Edit curation rule</th>
           <th>Edit version</th>
         </tr>
       </thead>
@@ -40,7 +40,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ usage.version.corrected_license }}</td>
             <td>
               {% if usage.version.curations|length == 1 %}
-                <a href="{% url "admin:cube_licensecuration_change"  usage.version.curations.0.pk %}">Edit rule</a>
+                <a href="{% url "admin:cube_licensecuration_change"  usage.version.curations.0.pk %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
                 {% if usage.version.curations.0.expression_out != usage.version.corrected_license %}
                   <br><small>Expression does not match curation
                   <form action="{% url "cube:release_update_andsvalidation" usage.pk %}" method="POST" class="form is-inline">
@@ -61,15 +61,16 @@ SPDX-License-Identifier: AGPL-3.0-only
       </tbody>
     </table>
 {% endif %}
+
 {% if corrected_usages %}
-<h5 class="title is-5">ANDs corrected</h5>
+<h5 class="title is-5">Corrected expressions</h5>
   <table class="table">
     <thead>
       <tr>
         <th>Component</th>
         <th>License expression</th>
-        <th>License corrected</th>
-        <th>Expression validation</th>
+        <th>Corrected expression</th>
+        <th>Curation rule</th>
         <th>Edit version</th>
       </tr>
     </thead>

@@ -32,6 +32,7 @@ from cube.models import (
     Derogation,
     Exploitation,
 )
+from cube.utils.licenses import simplified
 from cube.utils.release_validation import update_validation_step, propagate_choices
 from cube.views import LicenseRelatedMixin
 from cube.views.mixins import SaveAuthorMixin, ReleaseContextMixin
@@ -155,12 +156,20 @@ class ReleaseAndsValidationListView(TemplateView):
             .exclude(version__corrected_license="")
             .exclude(version__spdx_valid_license_expr="")
         )
-        context["confirmed_usages"] = usages.filter(
-            version__corrected_license=F("version__spdx_valid_license_expr")
-        )
-        context["corrected_usages"] = usages.exclude(
-            version__corrected_license=F("version__spdx_valid_license_expr")
-        )
+        context["confirmed_usages"] = [
+            u
+            for u in usages
+            if u.version.corrected_license == u.version.spdx_valid_license_expr
+            or u.version.corrected_license
+            == simplified(u.version.spdx_valid_license_expr)
+        ]
+
+        context["corrected_usages"] = [
+            u
+            for u in usages
+            if u.version.corrected_license
+            != simplified(u.version.spdx_valid_license_expr)
+        ]
         return context
 
 

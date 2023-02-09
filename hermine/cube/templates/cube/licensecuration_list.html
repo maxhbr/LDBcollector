@@ -52,10 +52,16 @@ SPDX-License-Identifier: AGPL-3.0-only -->
   <tbody>
 {% for curation in object_list %}
     <tr>
-      <td> {{ curation.version|default:curation.component|default:'<em>any</em>'}} </td>
-      <td> {{ curation.expression_in }}</td>
-      <td> {%if  curation.expression_out == curation.expression_in %} <i class="fas fa-certificate"></i> <em>License confirmed </em>{% else %}{{ curation.expression_out }}{%endif%}</td>
-      <td> {{ curation.explanation|truncatechars:50 }}</td>
+      <td>{{ curation.version|default:curation.component|default:'<em>any</em>'}}</td>
+      <td>{{ curation.expression_in }}</td>
+      <td>
+        {% if curation.is_confirmation or curation.is_simplification %}
+          <i class="fas fa-check"></i> <em>Confirmed</em>
+        {% else %}
+          {{ curation.expression_out }}
+        {% endif %}
+      </td>
+      <td>{{ curation.explanation|truncatechars:50 }}</td>
       <td>{{ curation.updated }} ({{ curation.author|default:"<em>author unknown</em>" }})</td>
       <td><a href="{%url 'cube:licensecuration_update' curation.id %}"><i class="far fa-edit"></i></a>
         {% if curation.component or curation.version %}
