@@ -1,0 +1,18 @@
+[license]
+
+expression = "JPL-image"
+status = [ "allowed-content" ]
+
+url = '''
+https://www.jpl.nasa.gov/jpl-image-use-policy
+'''
+
+[fedora]
+
+legacy-name = [
+    "JPL Image Use Policy"
+]
+
+legacy-abbreviation = [
+    "JPL-image"
+]
