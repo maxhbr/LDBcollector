@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.12
+Version:        1.13
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -88,6 +88,11 @@ make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %changelog
+* Fri Feb 10 2023 Miroslav Suchý <msuchy@redhat.com> 1.13-1
+- Fix erroneous substitutions of legacy-name for name
+- Add NIST Public Domain license as approved
+- Add Blue Oak Model License 1.0.0 as approved
+
 * Sat Jan 28 2023 Miroslav Suchý <msuchy@redhat.com> 1.12-1
 - address change in LICENSING structure in spec file
 - Make REUSE conformant
