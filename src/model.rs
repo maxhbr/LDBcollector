@@ -9,24 +9,24 @@ pub mod core {
     //#############################################################################
     //## LicenseName
     #[derive(Debug, Clone, Copy)]
-    pub struct LicenseName(&'static str);
-    impl LicenseName {
-        pub fn new(name: &'static str) -> Self {
+    pub struct LicenseName<'a>(&'a str);
+    impl<'a> LicenseName<'a> {
+        pub fn new(name: &'a str) -> Self {
             Self(name)
         }
     }
-    impl core::fmt::Display for LicenseName {
+    impl<'a> core::fmt::Display for LicenseName<'a> {
         fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
             write!(f, "{}", self.0)
         }
     }
-    impl PartialEq for LicenseName {
+    impl<'a> PartialEq for LicenseName<'a> {
         fn eq(&self, other: &Self) -> bool {
             self.0.to_lowercase() == other.0.to_lowercase()
         }
     }
-    impl Eq for LicenseName {}
-    impl Hash for LicenseName {
+    impl<'a> Eq for LicenseName<'a> {}
+    impl<'a> Hash for LicenseName<'a> {
         fn hash<H: Hasher>(&self, state: &mut H) {
             self.0.to_lowercase().hash(state);
         }
@@ -65,14 +65,14 @@ pub mod core {
 pub mod graph {
     use super::core::*;
     use super::*;
+    use either::{Either, Left, Right};
+    use multimap::MultiMap;
+    use petgraph::algo::{dijkstra, has_path_connecting, min_spanning_tree, tarjan_scc};
+    use petgraph::dot::{Config, Dot};
+    use petgraph::graph::{Edge, EdgeIndex, Frozen, Node, NodeIndex};
+    use petgraph::stable_graph::StableGraph;
     use serde::Serialize;
     use serde_json::{Result, Value};
-    use either::{Either, Left, Right};
-    use petgraph::algo::{dijkstra, min_spanning_tree, tarjan_scc, has_path_connecting};
-    use petgraph::dot::{Config, Dot};
-    use petgraph::graph::{Edge, EdgeIndex, Node, NodeIndex, Frozen};
-    use petgraph::stable_graph::StableGraph;
-    use multimap::MultiMap;
 
     //#############################################################################
     //## Origin
@@ -85,7 +85,7 @@ pub mod graph {
     }
 
     impl<'a> Origin<'a> {
-        pub const fn new(name: &'static str, data_license: Option<LicenseItem>) -> Self {
+        pub const fn new(name: &'a str, data_license: Option<LicenseItem>) -> Self {
             Self {
                 name,
                 data_license,
@@ -94,8 +94,8 @@ pub mod graph {
             }
         }
         pub const fn new_with_file(
-            name: &'static str,
-            file: &'static str,
+            name: &'a str,
+            file: &'a str,
             data_license: Option<LicenseItem>,
         ) -> Self {
             Self {
@@ -106,8 +106,8 @@ pub mod graph {
             }
         }
         pub const fn new_with_url(
-            name: &'static str,
-            url: &'static str,
+            name: &'a str,
+            url: &'a str,
             data_license: Option<LicenseItem>,
         ) -> Self {
             Self {
@@ -119,27 +119,27 @@ pub mod graph {
         }
     }
 
-    pub trait HasOrigin {
-        fn get_origin(&self) -> &'static Origin;
+    pub trait HasOrigin<'a> {
+        fn get_origin(&self) -> &'a Origin;
     }
     //## end Origin
     //#############################################################################
 
     #[derive(Debug, Clone)]
-    pub enum LicenseGraphNode {
-        LicenseNameNode { license_name: LicenseName },
+    pub enum LicenseGraphNode<'a> {
+        LicenseNameNode { license_name: LicenseName<'a> },
         Statement { statement_content: String },
         StatementJson { statement_content: Value },
     }
-    impl<'a> LicenseGraphNode {
-        pub fn mk_statement(i: &str) -> Self{
+    impl<'a> LicenseGraphNode<'a> {
+        pub fn mk_statement(i: &str) -> Self {
             Self::Statement {
-                statement_content: String::from(i)
+                statement_content: String::from(i),
             }
         }
         pub fn mk_json_statement(i: impl Serialize) -> Self {
             Self::StatementJson {
-                statement_content: serde_json::to_value(i).unwrap()
+                statement_content: serde_json::to_value(i).unwrap(),
             }
         }
     }
@@ -152,8 +152,8 @@ pub mod graph {
 
     #[derive(Clone)]
     pub struct LicenseGraph<'a> {
-        pub graph: StableGraph<LicenseGraphNode, LicenseGraphEdge>,
-        pub license_to_idx: HashMap<LicenseName, NodeIndex>,
+        pub graph: StableGraph<LicenseGraphNode<'a>, LicenseGraphEdge>,
+        pub license_to_idx: HashMap<LicenseName<'a>, NodeIndex>,
         node_origins: MultiMap<NodeIndex, &'a Origin<'a>>,
         edge_origins: MultiMap<EdgeIndex, &'a Origin<'a>>,
     }
@@ -172,18 +172,20 @@ pub mod graph {
 
             let root_idx = *self.license_to_idx.get(&license_name).unwrap();
 
-            s.graph
-                .retain_nodes(|frozen_s, idx : NodeIndex| {
-                    has_path_connecting(&self.graph, idx, root_idx, Option::None)
-                });
-            s.license_to_idx.retain(|_, idx| { s.graph.node_weight(*idx).is_some() });
-            s.node_origins.retain(|idx, _| { s.graph.node_weight(*idx).is_some() });
-            s.edge_origins.retain(|idx, _| { s.graph.edge_weight(*idx).is_some() });
+            s.graph.retain_nodes(|frozen_s, idx: NodeIndex| {
+                has_path_connecting(&self.graph, idx, root_idx, Option::None)
+            });
+            s.license_to_idx
+                .retain(|_, idx| s.graph.node_weight(*idx).is_some());
+            s.node_origins
+                .retain(|idx, _| s.graph.node_weight(*idx).is_some());
+            s.edge_origins
+                .retain(|idx, _| s.graph.edge_weight(*idx).is_some());
 
             s
         }
 
-        fn add_node(&mut self, node: LicenseGraphNode) -> NodeIndex {
+        fn add_node(&mut self, node: LicenseGraphNode<'a>) -> NodeIndex {
             match node {
                 LicenseGraphNode::LicenseNameNode { license_name } => {
                     match self.license_to_idx.get(&license_name) {
@@ -194,29 +196,30 @@ pub mod graph {
                             idx
                         }
                     }
-                },
-                _ => {
-                    self.graph.add_node(node)
                 }
+                _ => self.graph.add_node(node),
             }
         }
         fn add_edges(
             &mut self,
-            left: LicenseGraphNode,
-            rights: Vec<LicenseGraphNode>,
+            left: LicenseGraphNode<'a>,
+            rights: Vec<LicenseGraphNode<'a>>,
             edge: LicenseGraphEdge,
         ) -> Vec<EdgeIndex> {
             let left_idx = self.add_node(left);
-            rights.into_iter().map(|right| {
-                let right_idx = self.add_node(right);
-                self.graph.add_edge(left_idx, right_idx, edge)
-            }).collect()
+            rights
+                .into_iter()
+                .map(|right| {
+                    let right_idx = self.add_node(right);
+                    self.graph.add_edge(left_idx, right_idx, edge)
+                })
+                .collect()
         }
 
         fn add_node_with_origin(
             &mut self,
-            node: LicenseGraphNode,
-            origin: &'static Origin,
+            node: LicenseGraphNode<'a>,
+            origin: &'a Origin,
         ) -> NodeIndex {
             let idx = self.add_node(node);
             self.node_origins.insert(idx, origin);
@@ -224,48 +227,66 @@ pub mod graph {
         }
         fn add_edges_with_origin(
             &mut self,
-            left: LicenseGraphNode,
-            rights: Vec<LicenseGraphNode>,
+            left: LicenseGraphNode<'a>,
+            rights: Vec<LicenseGraphNode<'a>>,
             edge: LicenseGraphEdge,
-            origin: &'static Origin,
+            origin: &'a Origin,
         ) -> Vec<EdgeIndex> {
             self.add_edges(left, rights, edge)
-                .into_iter().map(|idx|{
+                .into_iter()
+                .map(|idx| {
                     self.edge_origins.insert(idx, origin);
                     idx
-                }).collect()
+                })
+                .collect()
         }
 
-        pub fn add_license(mut self, lic: LicenseName, origin: &'static Origin,) -> Self {
-            self.add_node_with_origin(LicenseGraphNode::LicenseNameNode { license_name: lic }, origin);
+        pub fn add_license(mut self, lic: LicenseName<'a>, origin: &'a Origin) -> Self {
+            self.add_node_with_origin(
+                LicenseGraphNode::LicenseNameNode { license_name: lic },
+                origin,
+            );
             self
         }
-        pub fn add_aliases(mut self, names: Vec<LicenseName>, origin: &'static Origin,) -> Self {
+        pub fn add_aliases(mut self, names: Vec<LicenseName<'a>>, origin: &'a Origin) -> Self {
             match names.as_slice() {
-                [] => {},
+                [] => {}
                 [name] => {
-                    self.add_node_with_origin(LicenseGraphNode::LicenseNameNode { license_name: *name }, origin);
-                },
+                    self.add_node_with_origin(
+                        LicenseGraphNode::LicenseNameNode {
+                            license_name: *name,
+                        },
+                        origin,
+                    );
+                }
                 [best, others @ ..] => {
                     self.add_edges_with_origin(
-                        LicenseGraphNode::LicenseNameNode { license_name: *best },
-                        others.into_iter().map(|o| LicenseGraphNode::LicenseNameNode{ license_name: *o }).collect(),
+                        LicenseGraphNode::LicenseNameNode {
+                            license_name: *best,
+                        },
+                        others
+                            .into_iter()
+                            .map(|o| LicenseGraphNode::LicenseNameNode { license_name: *o })
+                            .collect(),
                         LicenseGraphEdge::Same,
                         origin,
                     );
-                },
+                }
             };
             self
         }
         pub fn add_relational_fact(
             mut self,
-            left: LicenseGraphNode,
-            rights: Vec<LicenseName>,
-            origin: &'static Origin,
+            left: LicenseGraphNode<'a>,
+            rights: Vec<LicenseName<'a>>,
+            origin: &'a Origin,
         ) -> Self {
             self.add_edges_with_origin(
                 left,
-                rights.into_iter().map(|o| LicenseGraphNode::LicenseNameNode{ license_name: o }).collect(),
+                rights
+                    .into_iter()
+                    .map(|o| LicenseGraphNode::LicenseNameNode { license_name: o })
+                    .collect(),
                 LicenseGraphEdge::AppliesTo,
                 origin,
             );
@@ -510,15 +531,25 @@ pub mod graph {
 //     }
 // }
 
-pub fn demo() -> graph::LicenseGraph<'static> {
-    static ORIGIN: &'static graph::Origin = &graph::Origin::new_with_file("Origin_name", "https://domain.invalid/license.txt", Option::None);
+pub fn demo<'a>() -> graph::LicenseGraph<'a> {
+    static ORIGIN: &'static graph::Origin = &graph::Origin::new_with_file(
+        "Origin_name",
+        "https://domain.invalid/license.txt",
+        Option::None,
+    );
     graph::LicenseGraph::new()
         .add_aliases(
-            vec!(core::LicenseName::new("MIT License"), core::LicenseName::new("MIT")),
+            vec![
+                core::LicenseName::new("MIT License"),
+                core::LicenseName::new("MIT"),
+            ],
             &ORIGIN,
         )
         .add_aliases(
-            vec!(core::LicenseName::new("The MIT"), core::LicenseName::new("mit")),
+            vec![
+                core::LicenseName::new("The MIT"),
+                core::LicenseName::new("mit"),
+            ],
             &ORIGIN,
         )
 }
