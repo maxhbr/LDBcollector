@@ -38,6 +38,12 @@ install-json:
 
 install: install-json install-rpmlint
 
+# this is not packaged. You may need
+#  pip install check-jsonschema
+# and add ~/.local/bin/check-jsonschema to your path
+check-json:
+	check-jsonschema --schemafile tools/fedora-license-schema.json fedora-licenses.json
+
 legal-doc:
 	$(TOPDIR)/tools/create-docs.py $(TOPDIR)/data
 
