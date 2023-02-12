@@ -6,7 +6,9 @@ use std::process::Command;
 fn write_focused_dot(g: graph::LicenseGraph, needle: core::LicenseName) -> () {
     let focused = g.focus(needle);
     println!("{:#?}", focused);
-    fs::write("graph.dot", format!("{}", focused.get_as_dot())).expect("Unable to write file");
+    let focused_dot = format!("{}", focused.get_as_dot());
+    println!("{}", focused_dot);
+    fs::write("graph.dot", focused_dot).expect("Unable to write file");
 }
 
 fn main() {
@@ -18,5 +20,7 @@ fn main() {
     let g = g3;
     // println!("{:#?}", g);
 
-    // write_focused_dot(g, lic!("BSD-3-Clause"));
+    // let needle = String::from("BSD-3-Clause");
+    let needle = String::from("GPL-2.0-or-later");
+    write_focused_dot(g, lic!(needle));
 }

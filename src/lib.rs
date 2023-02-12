@@ -3,7 +3,14 @@ pub mod model;
 #[macro_export]
 macro_rules! lic {
     ($l:tt) => {
-        $crate::model::core::LicenseName::new($l)
+        $crate::model::core::LicenseName::new(String::from($l))
+    };
+}
+
+#[macro_export]
+macro_rules! lic_string {
+    ($l:tt) => {
+        $crate::model::core::LicenseName::new($l.clone())
     };
 }
 
@@ -16,11 +23,14 @@ pub mod source_spdx {
     static ORIGIN: &'static Origin =
         &Origin::new_with_file("SPDX", "https://spdx.org/licenses/", Option::None);
 
-    fn licenses_satisfying_flag<'a>(flag_fn: impl Fn(LicenseId) -> bool) -> Vec<LicenseName<'a>> {
+    fn licenses_satisfying_flag(flag_fn: impl Fn(LicenseId) -> bool) -> Vec<LicenseName> {
         LICENSES
             .into_iter()
             .filter(|(name, _, _)| flag_fn(spdx::license_id(name).unwrap()))
-            .map(|(name, _, _)| lic!(name))
+            .map(|(name, _, _)| {
+                let name = String::from(*name);
+                lic!(name)
+            })
             .collect()
     }
 
@@ -28,12 +38,20 @@ pub mod source_spdx {
         LICENSES
             .into_iter()
             .fold(s, |acc: LicenseGraph, i @ (name, full_name, _)| {
-                acc.add_aliases(vec![lic!(full_name), lic!(name)], ORIGIN)
-                    .add_relational_fact(
-                        LicenseGraphNode::mk_json_statement(i),
-                        vec![lic!(full_name), lic!(name)],
-                        ORIGIN,
-                    )
+                let name = String::from(*name);
+                let full_name = String::from(*full_name);
+                acc.add_aliases(
+                    vec![
+                        LicenseName::new(name.clone()),
+                        LicenseName::new(full_name.clone()),
+                    ],
+                    ORIGIN,
+                )
+                .add_relational_fact(
+                    LicenseGraphNode::mk_json_statement(i),
+                    vec![lic!(full_name), lic!(name)],
+                    ORIGIN,
+                )
                 // .add_relational_fact(
                 //     LicenseGraphNode::mk_statement(
                 //         license_id(name).unwrap().text()
@@ -83,14 +101,6 @@ pub mod source_osadl {
         Option::None,
     );
 
-    // fn license_from_osadl_checklist<'a>(checklist: &Path) -> Option<LicenseName<'a>> {
-    //     checklist
-    //         .with_extension("")
-    //         .file_name()
-    //         .and_then(|license_name| license_name.to_str())
-    //         .map(|license_name| lic!(license_name))
-    // }
-
     pub fn add_osadl_checklist(s: LicenseGraph) -> LicenseGraph {
         fs::read_dir("./data/OSADL-checklists/")
             .unwrap()
@@ -113,7 +123,7 @@ pub mod source_osadl {
                 {
                     acc.add_relational_fact(
                         LicenseGraphNode::mk_statement(&contents),
-                        vec![], //vec!(LicenseName::new(lic_str)),
+                        vec![lic!(lic_str)],
                         ORIGIN,
                     )
                 } else {
@@ -148,21 +158,11 @@ pub mod source_blueoakcouncil {
         name: String,
         url: String,
     }
-    impl CopyleftFamilyVersion {
-        fn get_id(&self) -> &str {
-            &self.id
-        }
-    }
 
     #[derive(Debug, Serialize, Deserialize, Clone)]
     struct CopyleftFamily {
         name: String,
         versions: Vec<CopyleftFamilyVersion>,
-    }
-    impl CopyleftFamily {
-        fn get_family_name(&self) -> &str {
-            &self.name
-        }
     }
 
     #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -178,51 +178,42 @@ pub mod source_blueoakcouncil {
         Ok(cl)
     }
 
-    fn read_blueoakcouncil_copyleft_list_vec(
-    ) -> Result<Vec<(String, String, String, String, String)>, Box<dyn Error>> {
+    pub fn add_blueoakcouncil_copyleft_list(s: LicenseGraph) -> LicenseGraph {
         let CopyleftList {
             version: list_version,
             families: families_per_kind,
-        } = read_blueoakcouncil_copyleft_list()?;
+        } = read_blueoakcouncil_copyleft_list().expect("parsing of copyleft list should succeed");
 
-        println!("copyleft_list version: {}", list_version);
-        Ok(families_per_kind
-            .iter()
-            .flat_map(|(kind, families)| families.iter().map(move |family| (kind, family)))
-            .flat_map(
-                |(
-                    kind,
-                    CopyleftFamily {
-                        name: family_name,
-                        versions,
-                    },
-                )| {
-                    versions
-                        .iter()
-                        .map(move |version| (kind, family_name, version))
+        families_per_kind.iter().fold(s, |ss, (kind, families)| {
+            let kind = LicenseGraphNode::mk_statement(kind);
+            let (ss, ids) = families.iter().fold(
+                (ss, vec![]),
+                |(sss, mut ids): (_, Vec<LicenseName>),
+                 CopyleftFamily {
+                     name: family_name,
+                     versions,
+                 }| {
+                    let family_name = LicenseGraphNode::mk_statement(family_name);
+                    let (sss, mut idss) = versions.iter().fold(
+                        (sss, vec![]),
+                        |(ssss, mut ids): (_, Vec<LicenseName>),
+                         CopyleftFamilyVersion { id, name, url }| {
+                            let url = LicenseGraphNode::mk_statement(url);
+                            let id = lic_string!(id);
+                            let ssss = ssss
+                                .add_aliases(vec![id.clone(), lic_string!(name)], ORIGIN)
+                                .add_relational_fact(url, vec![id.clone()], ORIGIN);
+                            ids.push(id);
+                            (ssss, ids)
+                        },
+                    );
+                    let sss = sss.add_relational_fact(family_name, ids.clone(), ORIGIN);
+                    idss.append(&mut ids);
+                    (sss, idss)
                 },
-            )
-            .map(
-                |(kind, family_name, CopyleftFamilyVersion { id, name, url })| {
-                    (
-                        kind.clone(),
-                        family_name.clone(),
-                        id.clone(),
-                        name.clone(),
-                        url.clone(),
-                    )
-                },
-            )
-            .collect())
-    }
-
-    pub fn add_blueoakcouncil_copyleft_list(s: LicenseGraph) -> LicenseGraph {
-        let vec = read_blueoakcouncil_copyleft_list_vec().expect("...");
-        s
-        // vec.iter()
-        //     .fold(s,|acc,(kind,_,_,_,_)| {
-        //         acc.add_license(lic!(kind), ORIGIN)
-        //     })
+            );
+            ss.add_relational_fact(kind, ids, ORIGIN)
+        })
     }
 
     pub fn add_blueoakcouncil_license_list(s: LicenseGraph) -> LicenseGraph {
@@ -230,8 +221,6 @@ pub mod source_blueoakcouncil {
     }
 
     pub fn add_blueoakcouncil(s: LicenseGraph) -> LicenseGraph {
-        add_blueoakcouncil_license_list(
-            add_blueoakcouncil_copyleft_list(s)
-        )
+        add_blueoakcouncil_license_list(add_blueoakcouncil_copyleft_list(s))
     }
 }
