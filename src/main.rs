@@ -13,9 +13,10 @@ fn main() {
     let g0 = graph::LicenseGraph::new();
     let g1 = source_spdx::add_spdx(g0);
     let g2 = source_osadl::add_osadl_checklist(g1);
+    let g3 = source_blueoakcouncil::add_blueoakcouncil(g2);
 
-    let g = g2;
-    println!("{:#?}", g);
+    let g = g3;
+    // println!("{:#?}", g);
 
-    write_focused_dot(g, lic!("BSD-3-Clause"));
+    // write_focused_dot(g, lic!("BSD-3-Clause"));
 }

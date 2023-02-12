@@ -5,6 +5,8 @@ use std::hash::{Hash, Hasher};
 
 pub mod core {
     use super::*;
+    use libc::strcpy;
+    use std::borrow::Cow;
 
     //#############################################################################
     //## LicenseName
@@ -12,6 +14,8 @@ pub mod core {
     pub struct LicenseName<'a>(&'a str);
     impl<'a> LicenseName<'a> {
         pub fn new(name: &'a str) -> Self {
+            // let mut name_copy : &str = "";
+            // strcpy(name_copy.as_mut_ptr(),name.as_ptr());
             Self(name)
         }
     }
@@ -147,12 +151,13 @@ pub mod graph {
     #[derive(Debug, Clone, Copy)]
     pub enum LicenseGraphEdge {
         Same,
+        Better,
         AppliesTo,
     }
 
     #[derive(Clone)]
     pub struct LicenseGraph<'a> {
-        pub graph: StableGraph<LicenseGraphNode<'a>, LicenseGraphEdge>,
+        pub graph: StableGraph<LicenseGraphNode<'a>,LicenseGraphEdge>,
         pub license_to_idx: HashMap<LicenseName<'a>, NodeIndex>,
         node_origins: MultiMap<NodeIndex, &'a Origin<'a>>,
         edge_origins: MultiMap<EdgeIndex, &'a Origin<'a>>,
@@ -160,7 +165,7 @@ pub mod graph {
     impl<'a> LicenseGraph<'a> {
         pub fn new() -> Self {
             Self {
-                graph: StableGraph::<LicenseGraphNode, LicenseGraphEdge>::new(),
+                graph: StableGraph::<LicenseGraphNode<'a>,LicenseGraphEdge>::new(),
                 license_to_idx: HashMap::new(),
                 node_origins: MultiMap::new(),
                 edge_origins: MultiMap::new(),
@@ -196,8 +201,11 @@ pub mod graph {
                             idx
                         }
                     }
+                },
+                _ => {
+                    let idx = self.graph.add_node(node);
+                    idx
                 }
-                _ => self.graph.add_node(node),
             }
         }
         fn add_edges(
@@ -211,7 +219,8 @@ pub mod graph {
                 .into_iter()
                 .map(|right| {
                     let right_idx = self.add_node(right);
-                    self.graph.add_edge(left_idx, right_idx, edge)
+                    let idx = self.graph.add_edge(left_idx, right_idx, edge);
+                    idx 
                 })
                 .collect()
         }

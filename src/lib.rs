@@ -13,6 +13,9 @@ pub mod source_spdx {
     use spdx::identifiers::LICENSES;
     use spdx::*;
 
+    static ORIGIN: &'static Origin =
+        &Origin::new_with_file("SPDX", "https://spdx.org/licenses/", Option::None);
+
     fn licenses_satisfying_flag<'a>(flag_fn: impl Fn(LicenseId) -> bool) -> Vec<LicenseName<'a>> {
         LICENSES
             .into_iter()
@@ -22,8 +25,6 @@ pub mod source_spdx {
     }
 
     pub fn add_spdx(s: LicenseGraph) -> LicenseGraph {
-        static ORIGIN: &'static Origin =
-            &Origin::new_with_file("SPDX", "https://spdx.org/licenses/", Option::None);
         LICENSES
             .into_iter()
             .fold(s, |acc: LicenseGraph, i @ (name, full_name, _)| {
@@ -76,21 +77,21 @@ pub mod source_osadl {
 
     use super::model::graph::*;
 
-    fn license_from_osadl_checklist<'a>(checklist: &'a Path) -> Option<LicenseName<'a>> {
-        checklist
-            // .with_extension("")
-            .file_name()
-            .and_then(|license_name| license_name.to_str())
-            .map(|license_name| lic!(license_name))
-    }
+    static ORIGIN: &'static Origin = &Origin::new_with_file(
+        "OSADL",
+        "https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html",
+        Option::None,
+    );
+
+    // fn license_from_osadl_checklist<'a>(checklist: &Path) -> Option<LicenseName<'a>> {
+    //     checklist
+    //         .with_extension("")
+    //         .file_name()
+    //         .and_then(|license_name| license_name.to_str())
+    //         .map(|license_name| lic!(license_name))
+    // }
 
     pub fn add_osadl_checklist(s: LicenseGraph) -> LicenseGraph {
-        static ORIGIN: &'static Origin = &Origin::new_with_file(
-            "OSADL",
-            "https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html",
-            Option::None,
-        );
-
         fs::read_dir("./data/OSADL-checklists/")
             .unwrap()
             .filter_map(|result| {
@@ -105,10 +106,14 @@ pub mod source_osadl {
             .fold(s, |acc: LicenseGraph, checklist| {
                 let contents = fs::read_to_string(&checklist)
                     .expect("Should have been able to read OSADL rule");
-                if let Some(lic) = license_from_osadl_checklist(checklist.as_path()) {
+                if let Some(lic_str) = checklist
+                    .with_extension("")
+                    .file_name()
+                    .and_then(|license_name| license_name.to_str())
+                {
                     acc.add_relational_fact(
                         LicenseGraphNode::mk_statement(&contents),
-                        vec!(lic),
+                        vec![], //vec!(LicenseName::new(lic_str)),
                         ORIGIN,
                     )
                 } else {
@@ -119,3 +124,114 @@ pub mod source_osadl {
 }
 
 pub mod source_scancode {}
+
+pub mod source_blueoakcouncil {
+    use super::model::graph::*;
+    use crate::model::core::LicenseName;
+
+    use serde_derive::{Deserialize, Serialize};
+    use std::collections::HashMap;
+    use std::error::Error;
+    use std::fs::File;
+    use std::io::BufReader;
+    use std::path::Path;
+
+    static ORIGIN: &'static Origin = &Origin::new_with_file(
+        "Blue Oak Council",
+        "https://blueoakcouncil.org/",
+        Option::None,
+    );
+
+    #[derive(Debug, Serialize, Deserialize, Clone)]
+    struct CopyleftFamilyVersion {
+        id: String,
+        name: String,
+        url: String,
+    }
+    impl CopyleftFamilyVersion {
+        fn get_id(&self) -> &str {
+            &self.id
+        }
+    }
+
+    #[derive(Debug, Serialize, Deserialize, Clone)]
+    struct CopyleftFamily {
+        name: String,
+        versions: Vec<CopyleftFamilyVersion>,
+    }
+    impl CopyleftFamily {
+        fn get_family_name(&self) -> &str {
+            &self.name
+        }
+    }
+
+    #[derive(Debug, Serialize, Deserialize, Clone)]
+    struct CopyleftList {
+        version: String,
+        families: HashMap<String, Vec<CopyleftFamily>>,
+    }
+
+    fn read_blueoakcouncil_copyleft_list() -> Result<CopyleftList, Box<dyn Error>> {
+        let file = File::open("./data/blueoakcouncil/blue-oak-council-copyleft-list.json")?;
+        let reader = BufReader::new(file);
+        let cl = serde_json::from_reader(reader)?;
+        Ok(cl)
+    }
+
+    fn read_blueoakcouncil_copyleft_list_vec(
+    ) -> Result<Vec<(String, String, String, String, String)>, Box<dyn Error>> {
+        let CopyleftList {
+            version: list_version,
+            families: families_per_kind,
+        } = read_blueoakcouncil_copyleft_list()?;
+
+        println!("copyleft_list version: {}", list_version);
+        Ok(families_per_kind
+            .iter()
+            .flat_map(|(kind, families)| families.iter().map(move |family| (kind, family)))
+            .flat_map(
+                |(
+                    kind,
+                    CopyleftFamily {
+                        name: family_name,
+                        versions,
+                    },
+                )| {
+                    versions
+                        .iter()
+                        .map(move |version| (kind, family_name, version))
+                },
+            )
+            .map(
+                |(kind, family_name, CopyleftFamilyVersion { id, name, url })| {
+                    (
+                        kind.clone(),
+                        family_name.clone(),
+                        id.clone(),
+                        name.clone(),
+                        url.clone(),
+                    )
+                },
+            )
+            .collect())
+    }
+
+    pub fn add_blueoakcouncil_copyleft_list(s: LicenseGraph) -> LicenseGraph {
+        let vec = read_blueoakcouncil_copyleft_list_vec().expect("...");
+        s
+        // vec.iter()
+        //     .fold(s,|acc,(kind,_,_,_,_)| {
+        //         acc.add_license(lic!(kind), ORIGIN)
+        //     })
+    }
+
+    pub fn add_blueoakcouncil_license_list(s: LicenseGraph) -> LicenseGraph {
+        s
+    }
+
+    pub fn add_blueoakcouncil(s: LicenseGraph) -> LicenseGraph {
+        add_blueoakcouncil_license_list(
+            add_blueoakcouncil_copyleft_list(s)
+        )
+    }
+}
