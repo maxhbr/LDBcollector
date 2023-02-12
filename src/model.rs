@@ -100,7 +100,7 @@ pub mod graph {
     //## end Origin
     //#############################################################################
 
-    #[derive(Debug, Clone)]
+    #[derive(Clone)]
     pub enum LicenseGraphNode {
         LicenseNameNode { license_name: LicenseName },
         Statement { statement_content: String },
@@ -115,6 +115,21 @@ pub mod graph {
         pub fn mk_json_statement(i: impl Serialize) -> Self {
             Self::StatementJson {
                 statement_content: serde_json::to_value(i).unwrap(),
+            }
+        }
+    }
+    impl fmt::Debug for LicenseGraphNode {
+        fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+            match self {
+                Self::LicenseNameNode { license_name } => {
+                    write!(f, "{}", license_name)
+                }
+                Self::Statement { statement_content } => {
+                    write!(f, "{}", statement_content)
+                }
+                Self::StatementJson { statement_content } => {
+                    write!(f, "{:?}", statement_content)
+                }
             }
         }
     }
@@ -228,9 +243,29 @@ pub mod graph {
             );
             self
         }
+        pub fn add_relation(
+            mut self,
+            left: LicenseName,
+            rights: Vec<LicenseName>,
+            edge: LicenseGraphEdge,
+            origin: &'a Origin,
+        ) -> Self {
+            self.add_edges_with_origin(
+                LicenseGraphNode::LicenseNameNode { license_name: left },
+                rights
+                    .into_iter()
+                    .map(|o| LicenseGraphNode::LicenseNameNode {
+                        license_name: o.clone(),
+                    })
+                    .collect(),
+                edge,
+                origin,
+            );
+            self
+        }
         pub fn add_aliases(mut self, names: Vec<LicenseName>, origin: &'a Origin) -> Self {
             match names.as_slice() {
-                [] => {}
+                [] => self,
                 [name] => {
                     self.add_node_with_origin(
                         LicenseGraphNode::LicenseNameNode {
@@ -238,24 +273,17 @@ pub mod graph {
                         },
                         origin,
                     );
+                    self
                 }
-                [best, others @ ..] => {
-                    self.add_edges_with_origin(
-                        LicenseGraphNode::LicenseNameNode {
-                            license_name: best.clone(),
-                        },
-                        others
-                            .into_iter()
-                            .map(|o| LicenseGraphNode::LicenseNameNode {
-                                license_name: o.clone(),
-                            })
-                            .collect(),
+                [best, others @ ..] => others.iter().fold(self, |acc, other| {
+                    acc.add_relation(
+                        other.clone(),
+                        vec![best.clone()],
                         LicenseGraphEdge::Same,
                         origin,
-                    );
-                }
-            };
-            self
+                    )
+                }),
+            }
         }
         pub fn add_relational_fact(
             mut self,

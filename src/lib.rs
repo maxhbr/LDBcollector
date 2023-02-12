@@ -188,16 +188,17 @@ pub mod source_blueoakcouncil {
             let kind = LicenseGraphNode::mk_statement(kind);
             let (ss, ids) = families.iter().fold(
                 (ss, vec![]),
-                |(sss, mut ids): (_, Vec<LicenseName>),
+                |(sss, mut idss): (_, Vec<LicenseName>),
                  CopyleftFamily {
                      name: family_name,
                      versions,
                  }| {
-                    let family_name = LicenseGraphNode::mk_statement(family_name);
-                    let (sss, mut idss) = versions.iter().fold(
+                    let family_name = lic!(family_name);
+                    let (sss, mut ids) = versions.iter().fold(
                         (sss, vec![]),
                         |(ssss, mut ids): (_, Vec<LicenseName>),
                          CopyleftFamilyVersion { id, name, url }| {
+                            println!("{:?} -> {} -> {} , {}", kind, family_name, id, name);
                             let url = LicenseGraphNode::mk_statement(url);
                             let id = lic_string!(id);
                             let ssss = ssss
@@ -207,8 +208,14 @@ pub mod source_blueoakcouncil {
                             (ssss, ids)
                         },
                     );
-                    let sss = sss.add_relational_fact(family_name, ids.clone(), ORIGIN);
+                    let sss = sss.add_relation(
+                        family_name.clone(),
+                        ids.clone(),
+                        LicenseGraphEdge::Better,
+                        ORIGIN,
+                    );
                     idss.append(&mut ids);
+                    idss.push(family_name);
                     (sss, idss)
                 },
             );
