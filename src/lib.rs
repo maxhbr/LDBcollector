@@ -17,7 +17,7 @@ macro_rules! lic_string {
 pub mod source_spdx {
     use super::model::graph::*;
     use crate::model::core::LicenseName;
-    use spdx::identifiers::LICENSES;
+    use spdx::identifiers::{LICENSES,IMPRECISE_NAMES};
     use spdx::*;
 
     static ORIGIN: &'static Origin =
@@ -84,6 +84,23 @@ pub mod source_spdx {
                 licenses_satisfying_flag(|l| l.is_osi_approved()),
                 ORIGIN,
             )
+    }
+
+    static EMBARK_ORIGIN: &'static Origin =
+        &Origin::new_with_url("Embark SPDX lib", "https://github.com/EmbarkStudios/spdx", Option::None);
+
+    pub fn add_imprecise(s: LicenseGraph) -> LicenseGraph {
+        IMPRECISE_NAMES.into_iter()
+            .fold(s, |acc: LicenseGraph, i @ (imprecise, better)| {
+                let imprecise = String::from(*imprecise);
+                let better = String::from(*better);
+                acc.add_relation(
+                    lic_string!(imprecise),
+                    vec!(lic_string!(better)),
+                    LicenseGraphEdge::HintsTowards,
+                    EMBARK_ORIGIN,
+                )
+            })
     }
 }
 
@@ -325,8 +342,23 @@ pub mod source_scancode {
                 if !is_exception {
                     let names = l.clone().get_license_names();
                     let category = LicenseGraphNode::mk_statement(category);
-                    s.add_aliases(names.clone(), ORIGIN)
-                        .add_relational_fact(category, names, ORIGIN)
+                    let mut statements = vec!(category);
+
+                    if *is_deprecated {
+                        statements.push(LicenseGraphNode::mk_statement("is_deprecated"));
+                    };
+                    if *is_exception {
+                        statements.push(LicenseGraphNode::mk_statement("is_exception"));
+                    };
+                    text.clone().map(|text| statements.push(LicenseGraphNode::LicenseTextNode { license_text: text }));
+                    osi_url.clone().map(|text| statements.push(LicenseGraphNode::mk_statement("is_osi_approved")));
+                    notes.clone().map(|notes| statements.push(LicenseGraphNode::mk_statement(&notes)));
+
+                    statements.iter()
+                        .fold(s.add_aliases(names.clone(), ORIGIN), |s, statement| {
+                            s.add_relational_fact(statement.clone(), names.clone(), ORIGIN)
+                        })
+
                 } else {
                     s
                 }

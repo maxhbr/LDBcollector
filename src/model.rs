@@ -1,12 +1,9 @@
-use spdx::{LicenseId, LicenseItem};
-use std::collections::HashMap;
+use spdx::{LicenseItem};
 use std::fmt;
 use std::hash::{Hash, Hasher};
 
 pub mod core {
     use super::*;
-    use libc::strcpy;
-    use std::borrow::Cow;
 
     //#############################################################################
     //## LicenseName
@@ -42,7 +39,7 @@ pub mod graph {
     use super::*;
     use either::{Either, Left, Right};
     use multimap::MultiMap;
-    use petgraph::algo::{dijkstra, has_path_connecting, min_spanning_tree, tarjan_scc};
+    use petgraph::algo::{has_path_connecting};
     use petgraph::dot::{Config, Dot};
     use petgraph::graph::{Edge, EdgeIndex, Frozen, Node, NodeIndex};
     use petgraph::stable_graph::StableGraph;
@@ -142,6 +139,7 @@ pub mod graph {
     pub enum LicenseGraphEdge {
         Same,
         Better,
+        HintsTowards,
         AppliesTo,
     }
 
@@ -182,13 +180,14 @@ pub mod graph {
             let root_idx = self.get_idx_of_license(license_name).unwrap();
 
             s.graph.retain_nodes(|frozen_s, idx: NodeIndex| {
-                has_path_connecting(&self.graph, idx, root_idx, Option::None)
+                let incomming = has_path_connecting(&self.graph, idx, root_idx, Option::None);
+                let outgoing = has_path_connecting(&self.graph, root_idx, idx, Option::None);
+                incomming || outgoing
             });
             s.node_origins
                 .retain(|idx, _| s.graph.node_weight(*idx).is_some());
             s.edge_origins
                 .retain(|idx, _| s.graph.edge_weight(*idx).is_some());
-
             s
         }
 
@@ -200,23 +199,6 @@ pub mod graph {
                     idx
                 }
             }
-                
-            // match node.clone() {
-            //     LicenseGraphNode::LicenseNameNode { license_name } => {
-            //         match self.license_to_idx.get(&license_name) {
-            //             Some(idx) => *idx,
-            //             None => {
-            //                 let idx = self.graph.add_node(node);
-            //                 self.license_to_idx.insert(license_name, idx);
-            //                 idx
-            //             }
-            //         }
-            //     }
-            //     _ => {
-            //         let idx = self.graph.add_node(node);
-            //         idx
-            //     }
-            // }
         }
         fn add_edges(
             &mut self,
@@ -229,6 +211,10 @@ pub mod graph {
                 .into_iter()
                 .map(|right| {
                     let right_idx = self.add_node(right);
+
+                    // (&(self.graph)).edges_connecting(left_idx, right_idx)
+                    //     .collect();
+
                     let idx = self.graph.add_edge(left_idx, right_idx, edge.clone());
                     idx
                 })

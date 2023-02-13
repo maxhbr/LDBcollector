@@ -19,6 +19,7 @@ fn write_dot(g: graph::LicenseGraph) -> () {
 fn main() {
     let sources: Vec<Box<dyn for<'a> Fn(LicenseGraph<'a>) -> LicenseGraph<'a>>> = vec![
         Box::new(source_spdx::add_spdx),
+        Box::new(source_spdx::add_imprecise),
         Box::new(source_scancode::add_scancode),
         Box::new(source_osadl::add_osadl_checklist),
         Box::new(source_blueoakcouncil::add_blueoakcouncil),
@@ -31,7 +32,7 @@ fn main() {
     // println!("{:#?}", g);
     // write_dot(g);
 
-    let needle = String::from("BSD-3-Clause");
-    // let needle = String::from("GPL-2.0-or-later");
+    // let needle = String::from("BSD-3-Clause");
+    let needle = String::from("GPL-2.0-or-later");
     write_focused_dot(g, lic!(needle));
 }

@@ -25,3 +25,6 @@
 [submodule "data/okfn-licenses"]
 	path = data/okfn-licenses
 	url = https://github.com/okfn/licenses
+[submodule "data/hermine-project-hermine"]
+	path = data/hermine-project-hermine
+	url = git@gitlab.com:hermine-project/hermine.git
