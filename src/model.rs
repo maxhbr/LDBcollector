@@ -100,7 +100,7 @@ pub mod graph {
     //## end Origin
     //#############################################################################
 
-    #[derive(Clone)]
+    #[derive(Clone,Eq, PartialEq)]
     pub enum LicenseGraphNode {
         LicenseNameNode { license_name: LicenseName },
         LicenseTextNode { license_text: String },
@@ -181,6 +181,23 @@ pub mod graph {
         }
 
         fn add_node(&mut self, node: LicenseGraphNode) -> NodeIndex {
+            let idx = self.graph.node_indices()
+                .filter_map(|idx| {
+                    self.graph.node_weight(idx)
+                        .map(|weight| (idx,weight.clone()))
+                })
+                .filter(|(_,weight)| node == *weight)
+                .next();
+            match idx {
+                Some(idx) => idx,
+                None => {
+                    let idx = self.graph.add_node(node);
+                    self.license_to_idx.insert(license_name, idx);
+                    idx
+                }
+
+            }
+                
             match node.clone() {
                 LicenseGraphNode::LicenseNameNode { license_name } => {
                     match self.license_to_idx.get(&license_name) {
@@ -344,6 +361,7 @@ pub fn demo<'a>() -> graph::LicenseGraph<'a> {
 #[cfg(test)]
 mod tests {
     use super::core::*;
+    use super::graph::*;
     use super::*;
 
     #[test]
@@ -359,6 +377,14 @@ mod tests {
         assert_eq!(
             LicenseName::new(String::from("MIT")),
             LicenseName::new(String::from("mIt"))
+        );
+    }
+
+    #[test]
+    fn license_name_statement_tests() {
+        assert_eq!(
+            LicenseGraphNode::LicenseNameNode{ license_name: LicenseName::new(String::from("MIT")) },
+            LicenseGraphNode::LicenseNameNode{ license_name: LicenseName::new(String::from("mIt")) }
         );
     }
 

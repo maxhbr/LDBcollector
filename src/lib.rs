@@ -135,11 +135,13 @@ pub mod source_scancode {
     use super::model::graph::*;
     use crate::model::core::LicenseName;
 
+    use itertools::Itertools;
     use serde_derive::{Deserialize, Serialize};
-    use std::collections::HashMap;
     use std::error::Error;
     use std::fs::File;
     use std::io::BufReader;
+
+    static BASEPATH: &'static str = "./data/nexB-scancode-licensedb/docs/";
 
     static ORIGIN: &'static Origin = &Origin::new_with_url(
         "Scancode licensedb",
@@ -151,7 +153,7 @@ pub mod source_scancode {
     struct IndexEntry {
         license_key: String,
         category: String,
-        spdx_license_key: String,
+        spdx_license_key: Option<String>,
         other_spdx_license_keys: Vec<String>,
         is_exception: bool,
         is_deprecated: bool,
@@ -160,35 +162,177 @@ pub mod source_scancode {
         html: String,
         license: String,
     }
+    #[derive(Debug, Serialize, Deserialize, Clone)]
     struct Entry {
         key: String,
         short_name: String,
         name: String,
         category: String,
         owner: String,
-        homepage_url: String,
+        homepage_url: Option<String>,
         notes: Option<String>,
         spdx_license_key: Option<String>,
-        other_spdx_license_keys: Vec<String>,
+        other_spdx_license_keys: Option<Vec<String>>,
         osi_license_key: Option<String>,
-        text_urls: Vec<String>,
+        text_urls: Option<Vec<String>>,
         osi_url: Option<String>,
         faq_url: Option<String>,
-        other_urls: Vec<String>,
-        ignorable_copyrights: Vec<String>,
-        ignorable_holders: Vec<String>,
-        ignorable_urls: Vec<String>,
-        text: String,
+        other_urls: Option<Vec<String>>,
+        // ignorable_copyrights: Option<Vec<String>>,
+        // ignorable_holders: Option<Vec<String>>,
+        // ignorable_urls: Option<Vec<String>>,
+        text: Option<String>,
+    }
+    impl Entry {
+        fn get_license_names(self) -> Vec<LicenseName> {
+            let mut names = vec![];
+            match self {
+                Entry {
+                    key,
+                    short_name,
+                    name,
+                    category: _,
+                    owner: _,
+                    homepage_url: _,
+                    notes: _,
+                    spdx_license_key,
+                    other_spdx_license_keys: _,
+                    osi_license_key,
+                    text_urls: _,
+                    osi_url: _,
+                    faq_url: _,
+                    other_urls: _,
+                    text: _,
+                } => {
+                    spdx_license_key.map(|spdx_license_key| names.push(lic!(spdx_license_key)));
+                    names.push(lic!(key));
+                    names.push(lic!(short_name));
+                    names.push(lic!(name));
+
+                    // TODO
+                    // other_spdx_license_keys.map(|other_spdx_license_keys|
+                    //     other_spdx_license_keys
+                    //        .iter()
+                    //        .map(|other_spdx_license_key| names.push(lic!(other_spdx_license_key)))
+                    // );
+                    osi_license_key.map(|osi_license_key| names.push(lic!(osi_license_key)));
+                }
+            }
+            names.into_iter().unique().collect()
+        }
+        fn get_urls(self) -> Vec<String> {
+            let mut urls = vec![];
+            match self {
+                Entry {
+                    key: _,
+                    short_name: _,
+                    name: _,
+                    category: _,
+                    owner: _,
+                    homepage_url,
+                    notes: _,
+                    spdx_license_key: _,
+                    other_spdx_license_keys: _,
+                    osi_license_key: _,
+                    text_urls: _,
+                    osi_url,
+                    faq_url,
+                    other_urls: _,
+                    text: _,
+                } => {
+                    homepage_url.map(|url| urls.push(url));
+                    osi_url.map(|url| urls.push(url));
+                    faq_url.map(|url| urls.push(url));
+                    // TODO
+                    // other_urls,
+                    // TODO
+                    // text_urls,
+                }
+            }
+            urls
+        }
     }
 
     fn read_index() -> Result<Vec<IndexEntry>, Box<dyn Error>> {
-        let file = File::open("./data/nexB-scancode-licensedb/docs/index.json")?;
+        let file = File::open(format!("{}index.json", BASEPATH))?;
         let reader = BufReader::new(file);
         let index = serde_json::from_reader(reader)?;
         Ok(index)
     }
 
+    fn read_licenses() -> Result<Vec<(Entry, IndexEntry)>, Box<dyn Error>> {
+        let index = read_index()?;
+        index
+            .iter()
+            .map(
+                |ie @ IndexEntry {
+                     license_key,
+                     category,
+                     spdx_license_key,
+                     other_spdx_license_keys,
+                     is_exception,
+                     is_deprecated,
+                     json,
+                     yaml,
+                     html,
+                     license,
+                 }| {
+                    let file = File::open(format!("{}{}", BASEPATH, json))?;
+                    let reader = BufReader::new(file);
+                    let entry = serde_json::from_reader(reader)?;
+                    Ok((entry, ie.clone()))
+                },
+            )
+            .collect()
+    }
 
+    pub fn add_scancode(s: LicenseGraph) -> LicenseGraph {
+        let licenses = read_licenses().expect("Parsing of scancode licenses should work");
+        licenses.iter().fold(
+            s,
+            |s,
+             (
+                l @ Entry {
+                    key,
+                    short_name,
+                    name,
+                    category,
+                    owner,
+                    homepage_url,
+                    notes,
+                    spdx_license_key,
+                    other_spdx_license_keys,
+                    osi_license_key,
+                    text_urls,
+                    osi_url,
+                    faq_url,
+                    other_urls,
+                    text,
+                },
+                ie @ IndexEntry {
+                    license_key: _,
+                    category: _,
+                    spdx_license_key: _,
+                    other_spdx_license_keys: _,
+                    is_exception,
+                    is_deprecated,
+                    json,
+                    yaml,
+                    html,
+                    license,
+                },
+            )| {
+                if !is_exception {
+                    let names = l.clone().get_license_names();
+                    let category = LicenseGraphNode::mk_statement(category);
+                    s.add_aliases(names.clone(), ORIGIN)
+                        .add_relational_fact(category, names, ORIGIN)
+                } else {
+                    s
+                }
+            },
+        )
+    }
 }
 
 pub mod source_blueoakcouncil {
@@ -214,7 +358,7 @@ pub mod source_blueoakcouncil {
         url: String,
     }
 
-    fn add_license(s: LicenseGraph, lic: License) -> (LicenseGraph,LicenseName) {
+    fn add_license(s: LicenseGraph, lic: License) -> (LicenseGraph, LicenseName) {
         match lic {
             License { id, name, url } => {
                 let url = LicenseGraphNode::mk_statement(&url);
@@ -222,7 +366,7 @@ pub mod source_blueoakcouncil {
                 let s = s
                     .add_aliases(vec![id.clone(), lic_string!(name)], ORIGIN)
                     .add_relational_fact(url, vec![id.clone()], ORIGIN);
-                (s,id)
+                (s, id)
             }
         }
     }
@@ -262,10 +406,9 @@ pub mod source_blueoakcouncil {
                  }| {
                     let (sss, mut ids) = versions.iter().fold(
                         (sss, vec![]),
-                        |(ssss, mut ids): (_, Vec<LicenseName>),
-                         l@License { id, name, url }| {
+                        |(ssss, mut ids): (_, Vec<LicenseName>), l @ License { id, name, url }| {
                             println!("{:?} -> {} -> {} , {}", kind, family_name, id, name);
-                            let (ssss,id) = add_license(ssss, l.clone());
+                            let (ssss, id) = add_license(ssss, l.clone());
                             ids.push(id);
                             (ssss, ids)
                         },
@@ -307,24 +450,34 @@ pub mod source_blueoakcouncil {
         Ok(ll)
     }
 
-
     pub fn add_blueoakcouncil_license_list(s: LicenseGraph) -> LicenseGraph {
         let LicenseList {
             version: list_version,
-            ratings
+            ratings,
         } = read_blueoakcouncil_license_list().expect("parsing of copyleft list should succeed");
 
-        ratings.iter().fold(s, |ss, LicenseRating { name, notes, licenses }| {
-            let (ss, ids) = licenses.iter().fold(
-                (ss, vec![]),
-                |(sss, mut ids): (_, Vec<LicenseName>), l| {
-                    let (sss,id) = add_license(sss, l.clone());
-                    ids.push(id);
-                    (sss, ids)
-                });
-            let rating = LicenseGraphNode::mk_statement(&format!("{}\n{}", name, notes));
-            ss.add_relational_fact(rating, ids, ORIGIN)
-        })
+        ratings.iter().fold(
+            s,
+            |ss,
+             LicenseRating {
+                 name,
+                 notes,
+                 licenses,
+             }| {
+                let (ss, ids) = licenses.iter().fold(
+                    (ss, vec![]),
+                    |(sss, mut ids): (_, Vec<LicenseName>), l| {
+                        let (sss, id) = add_license(sss, l.clone());
+                        ids.push(id);
+                        (sss, ids)
+                    },
+                );
+                let kind = LicenseGraphNode::mk_statement("Permissive");
+                let rating = LicenseGraphNode::mk_statement(&format!("{}\n{}", name, notes));
+                ss.add_relational_fact(rating, ids.clone(), ORIGIN)
+                    .add_relational_fact(kind, ids, ORIGIN)
+            },
+        )
     }
 
     pub fn add_blueoakcouncil(s: LicenseGraph) -> LicenseGraph {
