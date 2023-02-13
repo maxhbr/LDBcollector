@@ -2,8 +2,8 @@ use ldbcollector::model::graph::LicenseGraph;
 use ldbcollector::model::*;
 use ldbcollector::*;
 use std::fs;
-use std::process::Command;
 use std::fs::File;
+use std::process::Command;
 
 fn write_focused_dot(g: graph::LicenseGraph, needle: core::LicenseName) -> () {
     let focused = g.focus(needle);
@@ -31,11 +31,11 @@ fn main() {
     env_logger::init();
     log::info!("    START ...");
     let sources: Vec<Box<dyn Fn(LicenseGraph) -> LicenseGraph>> = vec![
-        Box::new(source_spdx::add_spdx),
-        Box::new(source_spdx::add_imprecise),
-        Box::new(source_scancode::add_scancode),
-        Box::new(source_osadl::add_osadl_checklist),
-        Box::new(source_blueoakcouncil::add_blueoakcouncil),
+        // Box::new(source_spdx::add_spdx),
+        // Box::new(source_spdx::add_imprecise),
+        // // Box::new(source_scancode::add_scancode),
+        // Box::new(source_osadl::add_osadl_checklist),
+        // Box::new(source_blueoakcouncil::add_blueoakcouncil),
     ];
 
     log::info!("... START Collect...");

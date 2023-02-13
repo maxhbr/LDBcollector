@@ -1,7 +1,7 @@
-use spdx::{LicenseItem};
+use serde_derive::{Deserialize, Serialize};
+use spdx::LicenseItem;
 use std::fmt;
 use std::hash::{Hash, Hasher};
-use serde_derive::{Serialize, Deserialize};
 
 pub mod core {
     use super::*;
@@ -40,7 +40,7 @@ pub mod graph {
     use super::*;
     use either::{Either, Left, Right};
     use multimap::MultiMap;
-    use petgraph::algo::{has_path_connecting};
+    use petgraph::algo::has_path_connecting;
     use petgraph::dot::{Config, Dot};
     use petgraph::graph::{Edge, EdgeIndex, Frozen, Node, NodeIndex};
     use petgraph::stable_graph::StableGraph;
@@ -65,20 +65,14 @@ pub mod graph {
                 url: Option::None,
             }
         }
-        pub const fn new_with_file(
-            name: &'a str,
-            file: &'a str,
-        ) -> Self {
+        pub const fn new_with_file(name: &'a str, file: &'a str) -> Self {
             Self {
                 name,
                 file: Option::Some(file),
                 url: Option::None,
             }
         }
-        pub const fn new_with_url(
-            name: &'a str,
-            url: &'a str,
-        ) -> Self {
+        pub const fn new_with_url(name: &'a str, url: &'a str) -> Self {
             Self {
                 name,
                 file: Option::None,
@@ -93,7 +87,7 @@ pub mod graph {
     //## end Origin
     //#############################################################################
 
-    #[derive(Clone,Eq, PartialEq, Serialize, Deserialize)]
+    #[derive(Clone, Eq, PartialEq, Serialize, Deserialize)]
     pub enum LicenseGraphNode {
         LicenseNameNode { license_name: LicenseName },
         LicenseTextNode { license_text: String },
@@ -125,7 +119,9 @@ pub mod graph {
                 Self::Statement { statement_content } => {
                     write!(f, "{}", statement_content)
                 }
-                Self::StatementRule { statement_content: _ } => {
+                Self::StatementRule {
+                    statement_content: _,
+                } => {
                     write!(f, "$RULE")
                 }
                 Self::StatementJson { statement_content } => {
@@ -141,6 +137,18 @@ pub mod graph {
         Better,
         HintsTowards,
         AppliesTo,
+    }
+
+    #[derive(Debug, Clone, Serialize, Deserialize)]
+    pub enum LicenseGraphBuilderTask {
+        AddNodes {
+            nodes: Vec<LicenseGraphNode>,
+        },
+        AddEdge {
+            lefts: Vec<LicenseGraphNode>,
+            rights: Box<LicenseGraphBuilderTask>,
+            edge: LicenseGraphEdge,
+        },
     }
 
     #[derive(Clone)]
@@ -159,18 +167,22 @@ pub mod graph {
         }
 
         fn get_idx_of_node(&self, node: &LicenseGraphNode) -> Option<NodeIndex> {
-            self.graph.node_indices()
+            self.graph
+                .node_indices()
                 .filter_map(|idx| {
-                    self.graph.node_weight(idx)
-                        .map(|weight| (idx,weight.clone()))
+                    self.graph
+                        .node_weight(idx)
+                        .map(|weight| (idx, weight.clone()))
                 })
-                .filter(|(_,weight)| *node == *weight)
-                .map(|(idx,_)| idx.clone())
+                .filter(|(_, weight)| *node == *weight)
+                .map(|(idx, _)| idx.clone())
                 .next()
         }
 
         fn get_idx_of_license(&self, license_name: LicenseName) -> Option<NodeIndex> {
-            let node = LicenseGraphNode::LicenseNameNode { license_name: license_name };
+            let node = LicenseGraphNode::LicenseNameNode {
+                license_name: license_name,
+            };
             self.get_idx_of_node(&node)
         }
 
@@ -191,39 +203,30 @@ pub mod graph {
             s
         }
 
-        fn add_node(&mut self, node: LicenseGraphNode) -> NodeIndex {
+        fn add_node(&mut self, node: &LicenseGraphNode) -> NodeIndex {
             match self.get_idx_of_node(&node) {
                 Some(idx) => idx,
                 None => {
-                    let idx = self.graph.add_node(node);
+                    let idx = self.graph.add_node(node.clone());
                     idx
                 }
             }
         }
         fn add_edges(
             &mut self,
-            left: LicenseGraphNode,
-            rights: Vec<LicenseGraphNode>,
+            left: NodeIndex,
+            rights: Vec<NodeIndex>,
             edge: LicenseGraphEdge,
         ) -> Vec<EdgeIndex> {
-            let left_idx = self.add_node(left);
             rights
                 .into_iter()
-                .map(|right| {
-                    let right_idx = self.add_node(right);
-
-                    // (&(self.graph)).edges_connecting(left_idx, right_idx)
-                    //     .collect();
-
-                    let idx = self.graph.add_edge(left_idx, right_idx, edge.clone());
-                    idx
-                })
+                .map(|right| self.graph.add_edge(left, right, edge.clone()))
                 .collect()
         }
 
         fn add_node_with_origin(
             &mut self,
-            node: LicenseGraphNode,
+            node: &LicenseGraphNode,
             origin: &'static Origin,
         ) -> NodeIndex {
             let idx = self.add_node(node);
@@ -232,8 +235,8 @@ pub mod graph {
         }
         fn add_edges_with_origin(
             &mut self,
-            left: LicenseGraphNode,
-            rights: Vec<LicenseGraphNode>,
+            left: NodeIndex,
+            rights: Vec<NodeIndex>,
             edge: LicenseGraphEdge,
             origin: &'static Origin,
         ) -> Vec<EdgeIndex> {
@@ -246,72 +249,98 @@ pub mod graph {
                 .collect()
         }
 
-        pub fn add_license(mut self, lic: LicenseName, origin: &'static Origin) -> Self {
-            self.add_node_with_origin(
-                LicenseGraphNode::LicenseNameNode { license_name: lic },
-                origin,
-            );
-            self
-        }
-        pub fn add_relation(
-            mut self,
-            left: LicenseName,
-            rights: Vec<LicenseName>,
-            edge: LicenseGraphEdge,
+        pub fn apply_task(
+            &mut self,
+            task: &LicenseGraphBuilderTask,
             origin: &'static Origin,
-        ) -> Self {
-            self.add_edges_with_origin(
-                LicenseGraphNode::LicenseNameNode { license_name: left },
-                rights
-                    .into_iter()
-                    .map(|o| LicenseGraphNode::LicenseNameNode {
-                        license_name: o.clone(),
+        ) -> Vec<NodeIndex> {
+            match task {
+                LicenseGraphBuilderTask::AddNodes { nodes } => nodes
+                    .iter()
+                    .map(|node| self.add_node_with_origin(node, origin))
+                    .collect(),
+                LicenseGraphBuilderTask::AddEdge {
+                    lefts,
+                    rights,
+                    edge,
+                } => lefts
+                    .iter()
+                    .map(|left| {
+                        let left_idx = self.add_node_with_origin(left, origin);
+                        let right_idxs = self.apply_task(rights, origin);
+                        self.add_edges_with_origin(left_idx, right_idxs, edge.clone(), origin);
+                        left_idx
                     })
                     .collect(),
-                edge,
-                origin,
-            );
-            self
-        }
-        pub fn add_aliases(mut self, names: Vec<LicenseName>, origin: &'static Origin) -> Self {
-            match names.as_slice() {
-                [] => self,
-                [name] => {
-                    self.add_node_with_origin(
-                        LicenseGraphNode::LicenseNameNode {
-                            license_name: name.clone(),
-                        },
-                        origin,
-                    );
-                    self
-                }
-                [best, others @ ..] => others.iter().fold(self, |acc, other| {
-                    acc.add_relation(
-                        other.clone(),
-                        vec![best.clone()],
-                        LicenseGraphEdge::Same,
-                        origin,
-                    )
-                }),
             }
         }
-        pub fn add_relational_fact(
-            mut self,
-            left: LicenseGraphNode,
-            rights: Vec<LicenseName>,
-            origin: &'static Origin,
-        ) -> Self {
-            self.add_edges_with_origin(
-                left,
-                rights
-                    .into_iter()
-                    .map(|o| LicenseGraphNode::LicenseNameNode { license_name: o })
-                    .collect(),
-                LicenseGraphEdge::AppliesTo,
-                origin,
-            );
-            self
-        }
+
+        // pub fn add_license(mut self, lic: LicenseName, origin: &'static Origin) -> Self {
+        //     self.add_node_with_origin(
+        //         LicenseGraphNode::LicenseNameNode { license_name: lic },
+        //         origin,
+        //     );
+        //     self
+        // }
+        // pub fn add_relation(
+        //     mut self,
+        //     left: LicenseName,
+        //     rights: Vec<LicenseName>,
+        //     edge: LicenseGraphEdge,
+        //     origin: &'static Origin,
+        // ) -> Self {
+        //     self.add_edges_with_origin(
+        //         LicenseGraphNode::LicenseNameNode { license_name: left },
+        //         rights
+        //             .into_iter()
+        //             .map(|o| LicenseGraphNode::LicenseNameNode {
+        //                 license_name: o.clone(),
+        //             })
+        //             .collect(),
+        //         edge,
+        //         origin,
+        //     );
+        //     self
+        // }
+        // pub fn add_aliases(mut self, names: Vec<LicenseName>, origin: &'static Origin) -> Self {
+        //     match names.as_slice() {
+        //         [] => self,
+        //         [name] => {
+        //             self.add_node_with_origin(
+        //                 LicenseGraphNode::LicenseNameNode {
+        //                     license_name: name.clone(),
+        //                 },
+        //                 origin,
+        //             );
+        //             self
+        //         }
+        //         [best, others @ ..] => others.iter().fold(self, |acc, other| {
+        //             acc.add_relation(
+        //                 other.clone(),
+        //                 vec![best.clone()],
+        //                 LicenseGraphEdge::Same,
+        //                 origin,
+        //             )
+        //         }),
+        //     }
+        // }
+        // pub fn add_relational_fact(
+        //     mut self,
+        //     left: LicenseGraphNode,
+        //     rights: Vec<LicenseName>,
+        //     origin: &'static Origin,
+        // ) -> Self {
+        //     self.add_edges_with_origin(
+        //         left,
+        //         rights
+        //             .into_iter()
+        //             .map(|o| LicenseGraphNode::LicenseNameNode { license_name: o })
+        //             .collect(),
+        //         LicenseGraphEdge::AppliesTo,
+        //         origin,
+        //     );
+        //     self
+        // }
         pub fn get_as_dot(&self) -> String {
             let dot = Dot::with_config(&self.graph, &[]);
             format!("{:?}", dot)
@@ -322,28 +351,100 @@ pub mod graph {
             f.debug_struct("State").field("graph", &self.graph).finish()
         }
     }
+
+    trait Source {
+        fn get_origin(&self) -> Origin<'static>;
+        fn get_tasks(&self) -> Vec<LicenseGraphBuilderTask>;
+    }
+
+    #[derive(Debug, Clone, Serialize, Deserialize)]
+    #[serde(bound(deserialize = "'de: 'static"))]
+    pub enum LicenseGraphBuilder {
+        Init,
+        Add {
+            prev: Box<LicenseGraphBuilder>,
+            origin: Box<Origin<'static>>,
+            tasks: Vec<LicenseGraphBuilderTask>,
+        },
+    }
+    impl LicenseGraphBuilder {
+        pub fn new() -> Self {
+            Self::Init
+        }
+        pub fn add_tasks(
+            self,
+            tasks: Vec<LicenseGraphBuilderTask>,
+            origin: Box<Origin<'static>>,
+        ) -> Self {
+            Self::Add {
+                prev: Box::new(self),
+                origin: origin,
+                tasks: tasks,
+            }
+        }
+
+        pub fn add_source(self, source: &dyn Source) -> Self {
+            self.add_tasks(source.get_tasks(), Box::new(source.get_origin().clone()))
+        }
+
+        pub fn build(self) -> LicenseGraph {
+            match self {
+                Self::Init => LicenseGraph::new(),
+                Self::Add {
+                    prev,
+                    origin,
+                    tasks,
+                } => {
+                    let prev_graph = prev.build();
+                    tasks
+                        .iter()
+                        .fold(prev_graph, |mut prev_graph, task| {
+                            prev_graph.apply_task(task, Box::leak(origin.clone()));
+                            prev_graph
+                        })
+                }
+            }
+        }
+    }
 }
 
 pub fn demo() -> graph::LicenseGraph {
-    static ORIGIN: &'static graph::Origin = &graph::Origin::new_with_file(
-        "Origin_name",
-        "https://domain.invalid/license.txt",
-    );
-    graph::LicenseGraph::new()
-        .add_aliases(
-            vec![
-                core::LicenseName::new(String::from("MIT License")),
-                core::LicenseName::new(String::from("MIT")),
-            ],
-            &ORIGIN,
-        )
-        .add_aliases(
-            vec![
-                core::LicenseName::new(String::from("The MIT")),
-                core::LicenseName::new(String::from("mit")),
-            ],
-            &ORIGIN,
-        )
+    static ORIGIN: &'static graph::Origin =
+        &graph::Origin::new_with_file("Origin_name", "https://domain.invalid/license.txt");
+
+    let add_nodes_task = 
+            graph::LicenseGraphBuilderTask::AddNodes {
+                nodes: vec!(
+                graph::LicenseGraphNode::LicenseNameNode{ license_name: core::LicenseName::new(String::from("MIT")) },
+            )};
+    let add_alias_task = graph::LicenseGraphBuilderTask::AddEdge {
+        lefts: vec!(
+            graph::LicenseGraphNode::LicenseNameNode{ license_name: core::LicenseName::new(String::from("MIT License")) }
+        ),
+        rights: Box::new(add_nodes_task),
+        edge: graph::LicenseGraphEdge::Same
+     };
+
+    graph::LicenseGraphBuilder::new()
+        .add_tasks(vec!(
+            add_alias_task
+        ), Box::new(ORIGIN.clone()))
+        .build()
+    // graph::LicenseGraph::new()
+    //     .add_aliases(
+    //         vec![
+    //             core::LicenseName::new(String::from("MIT License")),
+    //             core::LicenseName::new(String::from("MIT")),
+    //         ],
+    //         &ORIGIN,
+    //     )
+    //     .add_aliases(
+    //         vec![
+    //             core::LicenseName::new(String::from("The MIT")),
+    //             core::LicenseName::new(String::from("mit")),
+    //         ],
+    //         &ORIGIN,
+    //     )
 }
 
 #[cfg(test)]
@@ -371,8 +472,12 @@ mod tests {
     #[test]
     fn license_name_statement_tests() {
         assert_eq!(
-            LicenseGraphNode::LicenseNameNode{ license_name: LicenseName::new(String::from("MIT")) },
-            LicenseGraphNode::LicenseNameNode{ license_name: LicenseName::new(String::from("mIt")) }
+            LicenseGraphNode::LicenseNameNode {
+                license_name: LicenseName::new(String::from("MIT"))
+            },
+            LicenseGraphNode::LicenseNameNode {
+                license_name: LicenseName::new(String::from("mIt"))
+            }
         );
     }
 
