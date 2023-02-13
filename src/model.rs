@@ -148,7 +148,6 @@ pub mod graph {
     #[derive(Clone)]
     pub struct LicenseGraph<'a> {
         pub graph: StableGraph<LicenseGraphNode, LicenseGraphEdge>,
-        pub license_to_idx: HashMap<LicenseName, NodeIndex>,
         node_origins: MultiMap<NodeIndex, &'a Origin<'a>>,
         edge_origins: MultiMap<EdgeIndex, &'a Origin<'a>>,
     }
@@ -156,22 +155,35 @@ pub mod graph {
         pub fn new() -> Self {
             Self {
                 graph: StableGraph::<LicenseGraphNode, LicenseGraphEdge>::new(),
-                license_to_idx: HashMap::new(),
                 node_origins: MultiMap::new(),
                 edge_origins: MultiMap::new(),
             }
         }
 
+        fn get_idx_of_node(&self, node: &LicenseGraphNode) -> Option<NodeIndex> {
+            self.graph.node_indices()
+                .filter_map(|idx| {
+                    self.graph.node_weight(idx)
+                        .map(|weight| (idx,weight.clone()))
+                })
+                .filter(|(_,weight)| *node == *weight)
+                .map(|(idx,_)| idx.clone())
+                .next()
+        }
+
+        fn get_idx_of_license(&self, license_name: LicenseName) -> Option<NodeIndex> {
+            let node = LicenseGraphNode::LicenseNameNode { license_name: license_name };
+            self.get_idx_of_node(&node)
+        }
+
         pub fn focus(self, license_name: LicenseName) -> Self {
             let mut s = self.clone();
 
-            let root_idx = *self.license_to_idx.get(&license_name).unwrap();
+            let root_idx = self.get_idx_of_license(license_name).unwrap();
 
             s.graph.retain_nodes(|frozen_s, idx: NodeIndex| {
                 has_path_connecting(&self.graph, idx, root_idx, Option::None)
             });
-            s.license_to_idx
-                .retain(|_, idx| s.graph.node_weight(*idx).is_some());
             s.node_origins
                 .retain(|idx, _| s.graph.node_weight(*idx).is_some());
             s.edge_origins
@@ -181,39 +193,30 @@ pub mod graph {
         }
 
         fn add_node(&mut self, node: LicenseGraphNode) -> NodeIndex {
-            let idx = self.graph.node_indices()
-                .filter_map(|idx| {
-                    self.graph.node_weight(idx)
-                        .map(|weight| (idx,weight.clone()))
-                })
-                .filter(|(_,weight)| node == *weight)
-                .next();
-            match idx {
+            match self.get_idx_of_node(&node) {
                 Some(idx) => idx,
                 None => {
                     let idx = self.graph.add_node(node);
-                    self.license_to_idx.insert(license_name, idx);
                     idx
                 }
-
             }
                 
-            match node.clone() {
-                LicenseGraphNode::LicenseNameNode { license_name } => {
-                    match self.license_to_idx.get(&license_name) {
-                        Some(idx) => *idx,
-                        None => {
-                            let idx = self.graph.add_node(node);
-                            self.license_to_idx.insert(license_name, idx);
-                            idx
-                        }
-                    }
-                }
-                _ => {
-                    let idx = self.graph.add_node(node);
-                    idx
-                }
-            }
+            // match node.clone() {
+            //     LicenseGraphNode::LicenseNameNode { license_name } => {
+            //         match self.license_to_idx.get(&license_name) {
+            //             Some(idx) => *idx,
+            //             None => {
+            //                 let idx = self.graph.add_node(node);
+            //                 self.license_to_idx.insert(license_name, idx);
+            //                 idx
+            //             }
+            //         }
+            //     }
+            //     _ => {
+            //         let idx = self.graph.add_node(node);
+            //         idx
+            //     }
+            // }
         }
         fn add_edges(
             &mut self,
