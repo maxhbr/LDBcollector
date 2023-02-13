@@ -2,4 +2,4 @@
   curations:
     comment: |
       This package does not contain source code.
-    is_meta_data_only: true
+    is_metadata_only: true

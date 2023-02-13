@@ -3,4 +3,4 @@
     comment: |
       From version 1.9.0 on this package is the parent POM for multiple packages in the AWS SDK for Java. Previous
       versions contain class files and distribute a *-sources.jar.
-    is_meta_data_only: true
+    is_metadata_only: true

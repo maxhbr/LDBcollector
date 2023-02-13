@@ -6,4 +6,4 @@
     comment: |
       The JAR files of these netty-all versions do not contain any classes files nor do they distribute any
       *-sources.jar, see e.g. https://repo1.maven.org/maven2/io/netty/netty-all/4.1.69.Final/.
-    is_meta_data_only: true
+    is_metadata_only: true
