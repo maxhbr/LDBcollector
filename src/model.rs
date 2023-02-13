@@ -103,6 +103,7 @@ pub mod graph {
     #[derive(Clone)]
     pub enum LicenseGraphNode {
         LicenseNameNode { license_name: LicenseName },
+        LicenseTextNode { license_text: String },
         Statement { statement_content: String },
         StatementJson { statement_content: Value },
     }
@@ -124,11 +125,14 @@ pub mod graph {
                 Self::LicenseNameNode { license_name } => {
                     write!(f, "{}", license_name)
                 }
+                Self::LicenseTextNode { license_text: _ } => {
+                    write!(f, "$TEXT")
+                }
                 Self::Statement { statement_content } => {
                     write!(f, "{}", statement_content)
                 }
                 Self::StatementJson { statement_content } => {
-                    write!(f, "{:?}", statement_content)
+                    write!(f, "{:#?}", statement_content)
                 }
             }
         }

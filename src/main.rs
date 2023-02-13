@@ -1,5 +1,6 @@
 use ldbcollector::model::*;
 use ldbcollector::*;
+use ldbcollector::model::graph::LicenseGraph;
 use std::fs;
 use std::process::Command;
 
@@ -16,16 +17,19 @@ fn write_dot(g: graph::LicenseGraph) -> () {
 }
 
 fn main() {
-    let g0 = graph::LicenseGraph::new();
-    let g1 = source_spdx::add_spdx(g0);
-    let g2 = source_osadl::add_osadl_checklist(g1);
-    let g3 = source_blueoakcouncil::add_blueoakcouncil(g2);
+    let sources: Vec<Box<dyn for<'a> Fn(LicenseGraph<'a>) -> LicenseGraph<'a>>>  = vec!(
+        Box::new(source_spdx::add_spdx),
+        Box::new(source_osadl::add_osadl_checklist),
+        Box::new(source_blueoakcouncil::add_blueoakcouncil),
+    );
 
-    let g = g3;
+    let g = sources.iter()
+        .fold(graph::LicenseGraph::new(), |acc,f| f(acc));
+
     // println!("{:#?}", g);
     // write_dot(g);
 
-    // let needle = String::from("BSD-3-Clause");
-    let needle = String::from("GPL-2.0-or-later");
+    let needle = String::from("BSD-3-Clause");
+    // let needle = String::from("GPL-2.0-or-later");
     write_focused_dot(g, lic!(needle));
 }
