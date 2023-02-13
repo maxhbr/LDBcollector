@@ -1,13 +1,14 @@
 use spdx::{LicenseItem};
 use std::fmt;
 use std::hash::{Hash, Hasher};
+use serde_derive::{Serialize, Deserialize};
 
 pub mod core {
     use super::*;
 
     //#############################################################################
     //## LicenseName
-    #[derive(Debug, Clone)]
+    #[derive(Debug, Clone, Serialize, Deserialize)]
     pub struct LicenseName(String);
     impl<'a> LicenseName {
         pub fn new(name: String) -> Self {
@@ -48,19 +49,18 @@ pub mod graph {
 
     //#############################################################################
     //## Origin
-    #[derive(Debug, Clone)]
+    #[derive(Debug, Clone, Serialize, Deserialize)]
     pub struct Origin<'a> {
         name: &'a str,
-        data_license: Option<LicenseItem>,
+        // data_license: Option<LicenseItem>, // TODO
         file: Option<&'a str>,
         url: Option<&'a str>,
     }
 
     impl<'a> Origin<'a> {
-        pub const fn new(name: &'a str, data_license: Option<LicenseItem>) -> Self {
+        pub const fn new(name: &'a str) -> Self {
             Self {
                 name,
-                data_license,
                 file: Option::None,
                 url: Option::None,
             }
@@ -68,11 +68,9 @@ pub mod graph {
         pub const fn new_with_file(
             name: &'a str,
             file: &'a str,
-            data_license: Option<LicenseItem>,
         ) -> Self {
             Self {
                 name,
-                data_license,
                 file: Option::Some(file),
                 url: Option::None,
             }
@@ -80,11 +78,9 @@ pub mod graph {
         pub const fn new_with_url(
             name: &'a str,
             url: &'a str,
-            data_license: Option<LicenseItem>,
         ) -> Self {
             Self {
                 name,
-                data_license,
                 file: Option::None,
                 url: Option::Some(url),
             }
@@ -97,11 +93,12 @@ pub mod graph {
     //## end Origin
     //#############################################################################
 
-    #[derive(Clone,Eq, PartialEq)]
+    #[derive(Clone,Eq, PartialEq, Serialize, Deserialize)]
     pub enum LicenseGraphNode {
         LicenseNameNode { license_name: LicenseName },
         LicenseTextNode { license_text: String },
         Statement { statement_content: String },
+        StatementRule { statement_content: String },
         StatementJson { statement_content: Value },
     }
     impl<'a> LicenseGraphNode {
@@ -128,6 +125,9 @@ pub mod graph {
                 Self::Statement { statement_content } => {
                     write!(f, "{}", statement_content)
                 }
+                Self::StatementRule { statement_content: _ } => {
+                    write!(f, "$RULE")
+                }
                 Self::StatementJson { statement_content } => {
                     write!(f, "{:#?}", statement_content)
                 }
@@ -135,7 +135,7 @@ pub mod graph {
         }
     }
 
-    #[derive(Debug, Clone)]
+    #[derive(Debug, Clone, Serialize, Deserialize)]
     pub enum LicenseGraphEdge {
         Same,
         Better,
@@ -144,12 +144,12 @@ pub mod graph {
     }
 
     #[derive(Clone)]
-    pub struct LicenseGraph<'a> {
+    pub struct LicenseGraph {
         pub graph: StableGraph<LicenseGraphNode, LicenseGraphEdge>,
-        node_origins: MultiMap<NodeIndex, &'a Origin<'a>>,
-        edge_origins: MultiMap<EdgeIndex, &'a Origin<'a>>,
+        node_origins: MultiMap<NodeIndex, &'static Origin<'static>>,
+        edge_origins: MultiMap<EdgeIndex, &'static Origin<'static>>,
     }
-    impl<'a> LicenseGraph<'a> {
+    impl LicenseGraph {
         pub fn new() -> Self {
             Self {
                 graph: StableGraph::<LicenseGraphNode, LicenseGraphEdge>::new(),
@@ -224,7 +224,7 @@ pub mod graph {
         fn add_node_with_origin(
             &mut self,
             node: LicenseGraphNode,
-            origin: &'a Origin,
+            origin: &'static Origin,
         ) -> NodeIndex {
             let idx = self.add_node(node);
             self.node_origins.insert(idx, origin);
@@ -235,7 +235,7 @@ pub mod graph {
             left: LicenseGraphNode,
             rights: Vec<LicenseGraphNode>,
             edge: LicenseGraphEdge,
-            origin: &'a Origin,
+            origin: &'static Origin,
         ) -> Vec<EdgeIndex> {
             self.add_edges(left, rights, edge)
                 .into_iter()
@@ -246,7 +246,7 @@ pub mod graph {
                 .collect()
         }
 
-        pub fn add_license(mut self, lic: LicenseName, origin: &'a Origin) -> Self {
+        pub fn add_license(mut self, lic: LicenseName, origin: &'static Origin) -> Self {
             self.add_node_with_origin(
                 LicenseGraphNode::LicenseNameNode { license_name: lic },
                 origin,
@@ -258,7 +258,7 @@ pub mod graph {
             left: LicenseName,
             rights: Vec<LicenseName>,
             edge: LicenseGraphEdge,
-            origin: &'a Origin,
+            origin: &'static Origin,
         ) -> Self {
             self.add_edges_with_origin(
                 LicenseGraphNode::LicenseNameNode { license_name: left },
@@ -273,7 +273,7 @@ pub mod graph {
             );
             self
         }
-        pub fn add_aliases(mut self, names: Vec<LicenseName>, origin: &'a Origin) -> Self {
+        pub fn add_aliases(mut self, names: Vec<LicenseName>, origin: &'static Origin) -> Self {
             match names.as_slice() {
                 [] => self,
                 [name] => {
@@ -299,7 +299,7 @@ pub mod graph {
             mut self,
             left: LicenseGraphNode,
             rights: Vec<LicenseName>,
-            origin: &'a Origin,
+            origin: &'static Origin,
         ) -> Self {
             self.add_edges_with_origin(
                 left,
@@ -317,18 +317,17 @@ pub mod graph {
             format!("{:?}", dot)
         }
     }
-    impl<'a> fmt::Debug for LicenseGraph<'a> {
+    impl fmt::Debug for LicenseGraph {
         fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
             f.debug_struct("State").field("graph", &self.graph).finish()
         }
     }
 }
 
-pub fn demo<'a>() -> graph::LicenseGraph<'a> {
+pub fn demo() -> graph::LicenseGraph {
     static ORIGIN: &'static graph::Origin = &graph::Origin::new_with_file(
         "Origin_name",
         "https://domain.invalid/license.txt",
-        Option::None,
     );
     graph::LicenseGraph::new()
         .add_aliases(

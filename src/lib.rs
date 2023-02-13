@@ -21,7 +21,7 @@ pub mod source_spdx {
     use spdx::*;
 
     static ORIGIN: &'static Origin =
-        &Origin::new_with_file("SPDX", "https://spdx.org/licenses/", Option::None);
+        &Origin::new_with_file("SPDX", "https://spdx.org/licenses/");
 
     fn licenses_satisfying_flag(flag_fn: impl Fn(LicenseId) -> bool) -> Vec<LicenseName> {
         LICENSES
@@ -87,7 +87,7 @@ pub mod source_spdx {
     }
 
     static EMBARK_ORIGIN: &'static Origin =
-        &Origin::new_with_url("Embark SPDX lib", "https://github.com/EmbarkStudios/spdx", Option::None);
+        &Origin::new_with_url("Embark SPDX lib", "https://github.com/EmbarkStudios/spdx");
 
     pub fn add_imprecise(s: LicenseGraph) -> LicenseGraph {
         IMPRECISE_NAMES.into_iter()
@@ -113,7 +113,6 @@ pub mod source_osadl {
     static ORIGIN: &'static Origin = &Origin::new_with_file(
         "OSADL",
         "https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html",
-        Option::None,
     );
 
     pub fn add_osadl_checklist(s: LicenseGraph) -> LicenseGraph {
@@ -137,7 +136,7 @@ pub mod source_osadl {
                     .and_then(|license_name| license_name.to_str())
                 {
                     acc.add_relational_fact(
-                        LicenseGraphNode::mk_statement(&contents),
+                        LicenseGraphNode::StatementRule{ statement_content: contents },
                         vec![lic!(lic_str)],
                         ORIGIN,
                     )
@@ -163,7 +162,6 @@ pub mod source_scancode {
     static ORIGIN: &'static Origin = &Origin::new_with_url(
         "Scancode licensedb",
         "https://scancode-licensedb.aboutcode.org/",
-        Option::None,
     );
 
     #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -341,6 +339,7 @@ pub mod source_scancode {
             )| {
                 if !is_exception {
                     let names = l.clone().get_license_names();
+                    log::debug!("{:?}", names);
                     let category = LicenseGraphNode::mk_statement(category);
                     let mut statements = vec!(category);
 
@@ -380,7 +379,6 @@ pub mod source_blueoakcouncil {
     static ORIGIN: &'static Origin = &Origin::new_with_url(
         "Blue Oak Council",
         "https://blueoakcouncil.org/",
-        Option::None,
     );
 
     #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -439,7 +437,7 @@ pub mod source_blueoakcouncil {
                     let (sss, mut ids) = versions.iter().fold(
                         (sss, vec![]),
                         |(ssss, mut ids): (_, Vec<LicenseName>), l @ License { id, name, url }| {
-                            println!("{:?} -> {} -> {} , {}", kind, family_name, id, name);
+                            log::debug!("{:?} -> {} -> {} , {}", kind, family_name, id, name);
                             let (ssss, id) = add_license(ssss, l.clone());
                             ids.push(id);
                             (ssss, ids)

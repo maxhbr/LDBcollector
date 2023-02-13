@@ -23,6 +23,10 @@
             pkg-config
             rust-bin.beta.latest.default
           ];
+
+          shellHook = ''
+            export RUST_LOG=debug
+          '';
         };
       }
     );
