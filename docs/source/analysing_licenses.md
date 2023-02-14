@@ -6,36 +6,42 @@ SPDX-License-Identifier: CC-BY-4.0
 # Analysing licenses
 
 One goal of Hermine is to help you analyse FOSS licenses in a consistent and systematic way.
-The analysis of a license is divided in two parts:
+The analysis of a license is divided in three parts:
 
 - The global characterics of the license
+- For licences that are only authorized in specific contexts, the list of authorized contexts
 - Its decomposition into different obligations.
 
 ## Global characterics
 
-### Identity of the license
+### Characterics pertaining to the identity of the license
 
-- SPDX ID = The [short SPDX ID](https://spdx.dev/ids/) of the license. In case an exception is added,
+- SPDX Identifier: The [short SPDX ID](https://spdx.dev/ids/) of the license. In case an exception is added,
 this field would inlcude it. E.g. : `GPL-3.0-only WITH GCC-exception-3.1`
-- Long name = The full name, as defined by the SPDX standard
-- url = The reference URL of the license
-- verbatim = The whole text of the license, in case it is not referenced on the SPDX website.
-- copyleft = The type of reciprocity clause of the license ; possible choices are: Persmissive, Strong copyleft, Weak copyleft, Strong network copyleft, Weak network copyleft  
-- law_choice = The choice of applicable law 
-- venue_choice = The choice of venue
-- liability = If the license has a non-liability clause
-- warranty = If the license has a warranty limitation clause
-
-### Policy 
-- Status = The review status of the license,
-- allowed = The acceptability of the license;  possible choices are: Always allowed (Green), Never allowed (Red), Allowed depending on the context (Organge) (and Grey for "Not reviewed yet")
-- allowed_explanation = The motivation for non green choices, and the acceptable contexts for orange licenses. 
-- comment = Any relevant comments for understanding the interpretation of the license
+- Name: The full name, as defined by the SPDX standard
+- Url:  = The reference URL of the license
+- Copyleft = The type of reciprocity clause of the license ; possible choices are:
+    - Persmissive, 
+    - Strong copyleft, 
+    - Weak copyleft, 
+    - Strong network copyleft, 
+    - Weak network copyleft 
+ - foss = If the license if considered Free or Open Source software. Possible values are We consider it is FOSS, We consider it is NOT FOSS, FOSS - deduced (when it's approved by the FSF or the OSI), NOT FOSS - deduced (when the FSF or the OSI have explicitely declared it as such)  
+- Law choice = The choice of applicable law 
+- Venue choice = The choice of venue
+- Limitation of Liability: If the license has a non-liability clause
+- Disclaimer of Warranty: If the license has a warranty disclaimer
+- Exact text of the license:  The whole text of the license, in case it is not referenced on the SPDX website.
+### Foss Policy 
+- Review status: The possible choices are : To check, Checked, To discuss, Pending
+- OSS Policy: The acceptability of the license;  possible choices are: Always allowed (Green), Never allowed (Red), Allowed depending on the context (Organge) (and Grey for "Not reviewed yet")
+- OSS Policy explanation: The motivation for non green choices, and the acceptable contexts for orange licenses. 
+- Comment: Any relevant comments for understanding the interpretation of the license
 
 ### Conditions of use
 
-- patent_grant = True when the license contains a patent grant, along the copyright grant.
-- ethical_clause = If the license contains an ethical clause (e.g. the JSON License)
+- Patent grant = True if the license contains a patent grant, along with the copyright grant.
+- Ethical clause = True if the license contains an ethical clause (e.g. the JSON License)
 - Only non-commercial use = if the license allows only non-commercial uses (e.g. Creative commons with a NC clause) 
 
 
@@ -50,10 +56,16 @@ this field would inlcude it. E.g. : `GPL-3.0-only WITH GCC-exception-3.1`
 - inspiration = The license that served as inspiration for the analysed license, in case it's regitered in Hermine 
 - osi_approved = If the license has been approved by the OSI
 - fsf_approved = If the license has been approved by the FSF
-- foss = If the license if considered Free or Open Source software. Possible values are We consider it is FOSS, We consider it is NOT FOSS, FOSS - deduced (when it's approved by the FSF or the OSI), NOT FOSS - deduced (when the FSF or the OSI have explicitely declared it as such)  
+
 - non_tivoisation = True if the license contains a clause against [tivoization](https://en.wikipedia.org/wiki/Tivoization) (e.g. GPL-3.0-only)
 
-
+## Authorized contexts
+For licences that are allowed only in certain contexts, it is possible to define them automatically if they only depend some technical criteria:
+- The type of linking between the dependency and your own code
+- The type of exploitation that will be made of the dependency
+- The modification status of the dependency
+- The scope in which the dependency is used
+- A category to which the product belongs
 
 
 ## Obligations and generic obligations
