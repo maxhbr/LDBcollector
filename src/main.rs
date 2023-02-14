@@ -30,25 +30,31 @@ fn write_dot(g: graph::LicenseGraph) -> () {
 fn main() {
     env_logger::init();
     log::info!("    START ...");
-    let sources: Vec<Box<dyn Fn(LicenseGraph) -> LicenseGraph>> = vec![
-        // Box::new(source_spdx::add_spdx),
-        // Box::new(source_spdx::add_imprecise),
-        // // Box::new(source_scancode::add_scancode),
-        // Box::new(source_osadl::add_osadl_checklist),
-        // Box::new(source_blueoakcouncil::add_blueoakcouncil),
+    let sources: Vec<Box<dyn graph::Source>> = vec![
+        Box::new(source_spdx::SpdxSource{}),
+        Box::new(source_spdx::EmbarkSpdxSource{}),
+        Box::new(source_scancode::EmbarkSpdxSource{}),
+        Box::new(source_osadl::OsadlSource{}),
+        Box::new(source_blueoakcouncil::CopyleftListSource{}),
+        Box::new(source_blueoakcouncil::LicenseListSource{})
     ];
 
     log::info!("... START Collect...");
-    let g = sources
+    let builder = sources
         .iter()
-        .fold(graph::LicenseGraph::new(), |acc, f| f(acc));
+        .fold(graph::LicenseGraphBuilder::new(), |builder, source| builder.add_source(source));
+    let serialized = serde_json::to_string(&builder).unwrap();
+    fs::write("data.json", serialized).expect("Unable to write file");
+
+    let g = builder.build();
     log::info!("... DONE Collect...");
 
     // log::debug!("{:#?}", g);
     // write_dot(g);
 
-    let needle = String::from("BSD-3-Clause");
-    // let needle = String::from("GPL-2.0-or-later");
+    // let needle = String::from("BSD-3-Clause");
+    let needle = String::from("GPL-3.0-only");
+    // let needle = String::from("MIT");
     write_focused_dot(g, lic!(needle));
     log::info!("... DONE");
 }

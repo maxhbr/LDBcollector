@@ -18,10 +18,18 @@
       with pkgs;
       {
         devShells.default = mkShell {
+          packages = with pkgs; [ 
+            cargo-generate
+            wasm-bindgen-cli
+            wasm
+            wasm-pack
+            wasmer
+          ];
           buildInputs = [
             openssl
             pkg-config
             rust-bin.beta.latest.default
+            nodejs
           ];
 
           shellHook = ''

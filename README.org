@@ -1,5 +1,8 @@
 * yet another try in rust
 
+* WASM?
+- see: https://rustwasm.github.io/docs/book/game-of-life/introduction.html
+
 * Idea
 A handle for a license is just a string, like
 - =MIT=
