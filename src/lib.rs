@@ -1,4 +1,13 @@
 pub mod model;
+mod utils;
+
+use wasm_bindgen::prelude::*;
+
+// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
+// allocator.
+#[cfg(feature = "wee_alloc")]
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[macro_export]
 macro_rules! lic {
@@ -6,6 +15,19 @@ macro_rules! lic {
         $crate::model::core::LicenseName::new(String::from($l))
     };
 }
+
+
+#[wasm_bindgen]
+extern {
+    fn alert(s: &str);
+}
+
+#[wasm_bindgen]
+pub fn greet() {
+    alert("Hello, ldbcollector-rust!");
+}
+
+// ############################################################################
 
 #[macro_export]
 macro_rules! lic_string {
