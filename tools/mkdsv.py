@@ -163,12 +163,12 @@ def write_not_allowed(keys, notallowed):
 
     columns.append("%s" % url)
 
-    # the 4th column is any fedora 'notes' field
+    # the 4th column is any fedora 'usage' field
     if "fedora" in keys:
         fedora_keys = [*data["fedora"]]
 
-        if "notes" in fedora_keys:
-            columns.append("%s" % " ".join(data["fedora"]["notes"].split()))
+        if "usage" in fedora_keys:
+            columns.append("%s" % " ".join(data["fedora"]["usage"].split()))
         else:
             columns.append("")
     else:
@@ -197,7 +197,7 @@ if __name__ == "__main__":
 
     notallowed_out = open(os.path.join(cwd, "not-allowed.dsv"), "w")
     notallowed = csv.writer(notallowed_out, delimiter='|')
-    notallowed.writerow(["SPDX Expression", "Full Name", "URL", "Notes"])
+    notallowed.writerow(["SPDX Expression", "Full Name", "URL", "Usage"])
 
     for licensefile in os.scandir(datadir):
         # all license data files must be *.toml files
