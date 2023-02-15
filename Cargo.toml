@@ -10,7 +10,7 @@ name = "ldbcollector"
 path = "src/lib.rs"
 
 [[bin]]
-name = "ldbcollector-main"
+name = "ldbcollector"
 path = "src/main.rs"
 
 [features]
@@ -29,7 +29,7 @@ multimap = "0.8.3"
 libc = "0.2.139"
 itertools = "0.10.5"
 log = "0.4.17"
-env_logger = "0.10.0"
+env_logger = "0.9.3" # 0.10.0 fails in nix build :(
 
 # wasm:
 wasm-bindgen = "0.2.63"

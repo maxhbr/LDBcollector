@@ -2,7 +2,7 @@
   description = "ldbcollector in rust";
 
   inputs = {
-    nixpkgs.url      = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url      = "github:NixOS/nixpkgs/nixpkgs-unstable";
     rust-overlay.url = "github:oxalica/rust-overlay";
     flake-utils.url  = "github:numtide/flake-utils";
   };
@@ -17,8 +17,12 @@
       in
       with pkgs;
       {
+        packages.default = let
+            cargo_nix = import ./Cargo.nix { inherit pkgs nixpkgs; };
+          in cargo_nix.rootCrate.build;
         devShells.default = mkShell {
           packages = with pkgs; [ 
+            crate2nix
             cargo-generate
             wasm-bindgen-cli
             wasm

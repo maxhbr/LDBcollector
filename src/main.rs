@@ -31,18 +31,20 @@ fn main() {
     env_logger::init();
     log::info!("    START ...");
     let sources: Vec<Box<dyn graph::Source>> = vec![
-        Box::new(source_spdx::SpdxSource{}),
-        Box::new(source_spdx::EmbarkSpdxSource{}),
-        Box::new(source_scancode::EmbarkSpdxSource{}),
-        Box::new(source_osadl::OsadlSource{}),
-        Box::new(source_blueoakcouncil::CopyleftListSource{}),
-        Box::new(source_blueoakcouncil::LicenseListSource{})
+        Box::new(source_spdx::SpdxSource {}),
+        Box::new(source_spdx::EmbarkSpdxSource {}),
+        Box::new(source_scancode::EmbarkSpdxSource {}),
+        Box::new(source_osadl::OsadlSource {}),
+        Box::new(source_blueoakcouncil::CopyleftListSource {}),
+        Box::new(source_blueoakcouncil::LicenseListSource {}),
     ];
 
     log::info!("... START Collect...");
     let builder = sources
         .iter()
-        .fold(graph::LicenseGraphBuilder::new(), |builder, source| builder.add_source(source));
+        .fold(graph::LicenseGraphBuilder::new(), |builder, source| {
+            builder.add_source(source)
+        });
     let serialized = serde_json::to_string(&builder).unwrap();
     fs::write("data.json", serialized).expect("Unable to write file");
 

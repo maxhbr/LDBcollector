@@ -16,16 +16,15 @@ macro_rules! lic {
     };
 }
 
+// #[wasm_bindgen]
+// extern "C" {
+//     fn alert(s: &str);
+// }
 
-#[wasm_bindgen]
-extern {
-    fn alert(s: &str);
-}
-
-#[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, ldbcollector-rust!");
-}
+// #[wasm_bindgen]
+// pub fn greet() {
+//     alert("Hello, ldbcollector-rust!");
+// }
 
 // ############################################################################
 

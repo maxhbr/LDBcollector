@@ -132,9 +132,7 @@ pub mod graph {
                 Self::StatementJson { statement_content } => {
                     write!(f, "{:#?}", statement_content)
                 }
-                Self::Note {
-                    text: _,
-                } => {
+                Self::Note { text: _ } => {
                     write!(f, "$NOTE")
                 }
             }
