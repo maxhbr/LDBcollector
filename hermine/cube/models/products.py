@@ -63,7 +63,7 @@ class Release(models.Model):
     ship_status = models.CharField(max_length=20, choices=SHIPPING_CHOICES, blank=True)
     pub_date = models.DateTimeField("date published", blank=True, null=True)
     # Last completed step, 0 when none is validated
-    valid_step = models.IntegerField("Validation Step", blank=True, null=True)
+    valid_step = models.IntegerField("Validation Step", default=0)
     commit = models.CharField("Commit hash or ref", max_length=255, blank=True)
 
     def get_absolute_url(self):
