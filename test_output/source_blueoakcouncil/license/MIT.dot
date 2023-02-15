@@ -1,0 +1,11 @@
+digraph {
+    0 [ label = "Permissive" ]
+    9 [ label = "Silver\lThese licenses use robust language but either fail to address patents explicitly or require more than simple notice of license terms and copyright notices." ]
+    55 [ label = "https://spdx.org/licenses/MIT.html" ]
+    56 [ label = "MIT" ]
+    57 [ label = "MIT License" ]
+    56 -> 57 [ label = "Same" ]
+    55 -> 56 [ label = "AppliesTo" ]
+    9 -> 55 [ label = "AppliesTo" ]
+    0 -> 9 [ label = "AppliesTo" ]
+}

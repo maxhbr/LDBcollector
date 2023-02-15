@@ -1,0 +1,5 @@
+digraph {
+    82 [ label = "$RULE" ]
+    83 [ label = "GPL-3.0-only" ]
+    82 -> 83 [ label = "AppliesTo" ]
+}

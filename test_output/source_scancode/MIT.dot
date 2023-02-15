@@ -1,0 +1,14 @@
+digraph {
+    8 [ label = "Permissive" ]
+    88 [ label = "is_osi_approved" ]
+    89 [ label = "$NOTE" ]
+    4777 [ label = "MIT" ]
+    4778 [ label = "MIT License" ]
+    4779 [ label = "$TEXT" ]
+    4777 -> 4777 [ label = "Same" ]
+    4777 -> 4778 [ label = "Same" ]
+    8 -> 4777 [ label = "AppliesTo" ]
+    4779 -> 4777 [ label = "AppliesTo" ]
+    88 -> 4777 [ label = "AppliesTo" ]
+    89 -> 4777 [ label = "AppliesTo" ]
+}

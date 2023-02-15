@@ -1,0 +1,14 @@
+digraph {
+    41 [ label = "Copyleft" ]
+    88 [ label = "is_osi_approved" ]
+    3300 [ label = "GPL-3.0-only" ]
+    3303 [ label = "GPL-3.0" ]
+    3304 [ label = "$TEXT" ]
+    3305 [ label = "$NOTE" ]
+    3303 -> 3300 [ label = "Same" ]
+    3303 -> 3303 [ label = "Same" ]
+    41 -> 3303 [ label = "AppliesTo" ]
+    3304 -> 3303 [ label = "AppliesTo" ]
+    88 -> 3303 [ label = "AppliesTo" ]
+    3305 -> 3303 [ label = "AppliesTo" ]
+}
