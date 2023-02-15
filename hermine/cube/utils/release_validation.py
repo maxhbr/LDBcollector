@@ -3,7 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import F, Count
+from django.db.models import Count
 
 from cube.models import (
     Release,
