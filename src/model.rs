@@ -386,11 +386,7 @@ pub mod graph {
         pub fn new() -> Self {
             Self::Init
         }
-        pub fn add_tasks(
-            self,
-            tasks: Vec<LicenseGraphBuilderTask>,
-            origin: Box<Origin>,
-        ) -> Self {
+        pub fn add_tasks(self, tasks: Vec<LicenseGraphBuilderTask>, origin: Box<Origin>) -> Self {
             Self::Add {
                 prev: Box::new(self),
                 origin,

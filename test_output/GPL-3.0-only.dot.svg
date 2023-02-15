@@ -141,15 +141,15 @@
 <polygon fill="black" stroke="black" points="1477.35,-369.03 1486.29,-363.35 1475.76,-362.21 1477.35,-369.03"/>
 <text text-anchor="middle" x="1153.75" y="-400.18" font-family="Times,serif" font-size="14.00">AppliesTo</text>
 </g>
-<!-- 9618 -->
+<!-- 9588 -->
 <g id="node23" class="node">
-<title>9618</title>
+<title>9588</title>
 <ellipse fill="none" stroke="black" cx="920.75" cy="-319.69" rx="32.49" ry="18"/>
 <text text-anchor="middle" x="920.75" y="-315.99" font-family="Times,serif" font-size="14.00">strong</text>
 </g>
-<!-- 31&#45;&gt;9618 -->
+<!-- 31&#45;&gt;9588 -->
 <g id="edge33" class="edge">
-<title>31&#45;&gt;9618</title>
+<title>31&#45;&gt;9588</title>
 <path fill="none" stroke="black" d="M944.61,-431.63C938.06,-426.09 931.61,-419.21 927.75,-411.38 918.29,-392.21 916.88,-367.96 917.64,-349.36"/>
 <polygon fill="black" stroke="black" points="921.12,-349.78 918.3,-339.57 914.14,-349.32 921.12,-349.78"/>
 <text text-anchor="middle" x="956.75" y="-400.18" font-family="Times,serif" font-size="14.00">AppliesTo</text>
@@ -352,35 +352,35 @@
 <polygon fill="black" stroke="black" points="1053.14,-132.57 1046.18,-124.58 1046.64,-135.17 1053.14,-132.57"/>
 <text text-anchor="middle" x="1086.75" y="-144.8" font-family="Times,serif" font-size="14.00">AppliesTo</text>
 </g>
-<!-- 9612 -->
+<!-- 9582 -->
 <g id="node21" class="node">
-<title>9612</title>
+<title>9582</title>
 <ellipse fill="none" stroke="black" cx="1295.75" cy="-192" rx="166.27" ry="18"/>
 <text text-anchor="middle" x="1295.75" y="-188.3" font-family="Times,serif" font-size="14.00">https://spdx.org/licenses/GPL&#45;3.0&#45;only.html</text>
 </g>
-<!-- 9612&#45;&gt;694 -->
+<!-- 9582&#45;&gt;694 -->
 <g id="edge30" class="edge">
-<title>9612&#45;&gt;694</title>
+<title>9582&#45;&gt;694</title>
 <path fill="none" stroke="black" d="M1245.58,-174.41C1200.24,-159.41 1133.85,-137.46 1088.6,-122.49"/>
 <polygon fill="black" stroke="black" points="1089.9,-119.23 1079.3,-119.41 1087.7,-125.88 1089.9,-119.23"/>
 <text text-anchor="middle" x="1210.75" y="-144.8" font-family="Times,serif" font-size="14.00">AppliesTo</text>
 </g>
-<!-- 9614 -->
+<!-- 9584 -->
 <g id="node22" class="node">
-<title>9614</title>
+<title>9584</title>
 <ellipse fill="none" stroke="black" cx="901.75" cy="-192" rx="114.28" ry="18"/>
 <text text-anchor="middle" x="901.75" y="-188.3" font-family="Times,serif" font-size="14.00">GNU General Public License</text>
 </g>
-<!-- 9614&#45;&gt;694 -->
+<!-- 9584&#45;&gt;694 -->
 <g id="edge31" class="edge">
-<title>9614&#45;&gt;694</title>
+<title>9584&#45;&gt;694</title>
 <path fill="none" stroke="black" d="M928.81,-174.21C950.37,-160.83 980.71,-142.01 1004.05,-127.53"/>
 <polygon fill="black" stroke="black" points="1005.64,-130.66 1012.3,-122.41 1001.95,-124.71 1005.64,-130.66"/>
 <text text-anchor="middle" x="994.75" y="-144.8" font-family="Times,serif" font-size="14.00">Better</text>
 </g>
-<!-- 9618&#45;&gt;9614 -->
+<!-- 9588&#45;&gt;9584 -->
 <g id="edge32" class="edge">
-<title>9618&#45;&gt;9614</title>
+<title>9588&#45;&gt;9584</title>
 <path fill="none" stroke="black" d="M918.14,-301.48C915.03,-280.91 909.79,-246.19 906.07,-221.57"/>
 <polygon fill="black" stroke="black" points="909.56,-221.27 904.6,-211.91 902.64,-222.32 909.56,-221.27"/>
 <text text-anchor="middle" x="937.75" y="-231.8" font-family="Times,serif" font-size="14.00">AppliesTo</text>

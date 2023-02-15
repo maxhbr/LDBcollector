@@ -24,6 +24,7 @@
           packages = with pkgs; [ 
             crate2nix
             cargo-generate
+            cargo-wasi
             wasm-bindgen-cli
             wasm
             wasm-pack
