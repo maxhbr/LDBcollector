@@ -148,6 +148,7 @@ pub mod graph {
     }
 
     #[derive(Debug, Clone, Serialize, Deserialize)]
+    // #[serde(bound(deserialize = "'de: 'static"))]
     pub enum LicenseGraphBuilderTask {
         Noop {},
         AddNodes {
