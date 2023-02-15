@@ -159,7 +159,7 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
             self.instance.product = self.usage.release.product
         elif self.cleaned_data["product_release"] == self.RELEASE:
             self.instance.release = self.usage.release
-        elif self.cleaned_data["product_release"] is not None:
+        elif self.cleaned_data["product_release"] != self.ANY:
             self.instance.category = Category.objects.get(
                 pk=self.cleaned_data["product_release"]
             )
