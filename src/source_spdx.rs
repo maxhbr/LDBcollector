@@ -4,11 +4,9 @@ use crate::model::*;
 use spdx::identifiers::{IMPRECISE_NAMES, LICENSES};
 use spdx::*;
 
-static ORIGIN: &'static Origin = &Origin::new_with_file("SPDX", "https://spdx.org/licenses/");
-
 pub struct SpdxSource {}
 impl Source for SpdxSource {
-    fn get_origin(&self) -> Origin<'static> {
+    fn get_origin(&self) -> Origin {
         Origin::new_with_file("SPDX", "https://spdx.org/licenses/")
     }
 
@@ -71,7 +69,7 @@ impl Source for SpdxSource {
 
 pub struct EmbarkSpdxSource {}
 impl Source for EmbarkSpdxSource {
-    fn get_origin(&self) -> Origin<'static> {
+    fn get_origin(&self) -> Origin {
         Origin::new_with_file("Embark SPDX lib", "https://github.com/EmbarkStudios/spdx")
     }
 

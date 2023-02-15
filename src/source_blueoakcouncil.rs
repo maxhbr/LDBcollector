@@ -48,7 +48,7 @@ fn read_blueoakcouncil_copyleft_list() -> Result<CopyleftList, Box<dyn Error>> {
 
 pub struct CopyleftListSource {}
 impl Source for CopyleftListSource {
-    fn get_origin(&self) -> Origin<'static> {
+    fn get_origin(&self) -> Origin {
         Origin::new_with_file("Blue Oak Council", "https://blueoakcouncil.org/")
     }
 
@@ -137,7 +137,7 @@ fn read_blueoakcouncil_license_list() -> Result<LicenseList, Box<dyn Error>> {
 
 pub struct LicenseListSource {}
 impl Source for LicenseListSource {
-    fn get_origin(&self) -> Origin<'static> {
+    fn get_origin(&self) -> Origin {
         Origin::new_with_file("Blue Oak Council", "https://blueoakcouncil.org/")
     }
 

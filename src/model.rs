@@ -54,33 +54,33 @@ pub mod graph {
     //#############################################################################
     //## Origin
     #[derive(Debug, Clone, Serialize, Deserialize)]
-    pub struct Origin<'a> {
-        name: &'a str,
+    pub struct Origin {
+        name: String,
         // data_license: Option<LicenseItem>, // TODO
-        file: Option<&'a str>,
-        url: Option<&'a str>,
+        file: Option<String>,
+        url: Option<String>,
     }
 
-    impl<'a> Origin<'a> {
-        pub const fn new(name: &'a str) -> Self {
+    impl Origin {
+        pub fn new(name: &str) -> Self {
             Self {
-                name,
+                name: String::from(name),
                 file: Option::None,
                 url: Option::None,
             }
         }
-        pub const fn new_with_file(name: &'a str, file: &'a str) -> Self {
+        pub fn new_with_file(name: &str, file: &str) -> Self {
             Self {
-                name,
-                file: Option::Some(file),
+                name: String::from(name),
+                file: Option::Some(String::from(file)),
                 url: Option::None,
             }
         }
-        pub const fn new_with_url(name: &'a str, url: &'a str) -> Self {
+        pub fn new_with_url(name: &str, url: &str) -> Self {
             Self {
-                name,
+                name: String::from(name),
                 file: Option::None,
-                url: Option::Some(url),
+                url: Option::Some(String::from(url)),
             }
         }
     }
@@ -148,7 +148,6 @@ pub mod graph {
     }
 
     #[derive(Debug, Clone, Serialize, Deserialize)]
-    // #[serde(bound(deserialize = "'de: 'static"))]
     pub enum LicenseGraphBuilderTask {
         Noop {},
         AddNodes {
@@ -195,8 +194,8 @@ pub mod graph {
     #[derive(Clone)]
     pub struct LicenseGraph {
         pub graph: StableGraph<LicenseGraphNode, LicenseGraphEdge>,
-        node_origins: MultiMap<NodeIndex, &'static Origin<'static>>,
-        edge_origins: MultiMap<EdgeIndex, &'static Origin<'static>>,
+        node_origins: MultiMap<NodeIndex, Origin>,
+        edge_origins: MultiMap<EdgeIndex, Origin>,
         accomplished_tasks: HashMap<u64, Vec<NodeIndex>>,
     }
     impl LicenseGraph {
@@ -273,7 +272,7 @@ pub mod graph {
             origin: &'static Origin,
         ) -> NodeIndex {
             let idx = self.add_node(node);
-            self.node_origins.insert(idx, origin);
+            self.node_origins.insert(idx, origin.clone());
             idx
         }
         fn add_edges_with_origin(
@@ -286,7 +285,7 @@ pub mod graph {
             self.add_edges(left, rights, edge)
                 .into_iter()
                 .map(|idx| {
-                    self.edge_origins.insert(idx, origin);
+                    self.edge_origins.insert(idx, origin.clone());
                     idx
                 })
                 .collect()
@@ -370,17 +369,16 @@ pub mod graph {
     }
 
     pub trait Source {
-        fn get_origin(&self) -> Origin<'static>;
+        fn get_origin(&self) -> Origin;
         fn get_tasks(&self) -> Vec<LicenseGraphBuilderTask>;
     }
 
     #[derive(Debug, Clone, Serialize, Deserialize)]
-    #[serde(bound(deserialize = "'de: 'static"))]
     pub enum LicenseGraphBuilder {
         Init,
         Add {
             prev: Box<LicenseGraphBuilder>,
-            origin: Box<Origin<'static>>,
+            origin: Box<Origin>,
             tasks: Vec<LicenseGraphBuilderTask>,
         },
     }
@@ -391,7 +389,7 @@ pub mod graph {
         pub fn add_tasks(
             self,
             tasks: Vec<LicenseGraphBuilderTask>,
-            origin: Box<Origin<'static>>,
+            origin: Box<Origin>,
         ) -> Self {
             Self::Add {
                 prev: Box::new(self),
@@ -428,7 +426,7 @@ pub mod graph {
 }
 
 pub fn demo() -> graph::LicenseGraph {
-    static ORIGIN: &'static graph::Origin =
+    let origin: &graph::Origin =
         &graph::Origin::new_with_file("Origin_name", "https://domain.invalid/license.txt");
 
     let add_nodes_task = graph::LicenseGraphBuilderTask::AddNodes {
@@ -445,7 +443,7 @@ pub fn demo() -> graph::LicenseGraph {
     };
 
     graph::LicenseGraphBuilder::new()
-        .add_tasks(vec![add_alias_task], Box::new(ORIGIN.clone()))
+        .add_tasks(vec![add_alias_task], Box::new(origin.clone()))
         .build()
 }
 

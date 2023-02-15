@@ -147,7 +147,7 @@ fn read_licenses() -> Result<Vec<(Entry, IndexEntry)>, Box<dyn Error>> {
 
 pub struct ScancodeSource {}
 impl Source for ScancodeSource {
-    fn get_origin(&self) -> Origin<'static> {
+    fn get_origin(&self) -> Origin {
         Origin::new_with_file(
             "Scancode licensedb",
             "https://scancode-licensedb.aboutcode.org/",

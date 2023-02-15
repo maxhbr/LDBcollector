@@ -5,7 +5,7 @@ use super::model::graph::*;
 
 pub struct OsadlSource {}
 impl Source for OsadlSource {
-    fn get_origin(&self) -> Origin<'static> {
+    fn get_origin(&self) -> Origin {
         Origin::new_with_file(
             "OSADL",
             "https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html",
