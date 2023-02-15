@@ -158,6 +158,11 @@ pub mod graph {
             rights: Box<LicenseGraphBuilderTask>,
             edge: LicenseGraphEdge,
         },
+        AddEdgeLeft {
+            lefts: Vec<LicenseGraphNode>,
+            rights: Box<LicenseGraphBuilderTask>,
+            edge: LicenseGraphEdge,
+        },
         JoinTasks {
             tasks: Vec<LicenseGraphBuilderTask>,
         },
@@ -223,7 +228,7 @@ pub mod graph {
             self.get_idx_of_node(&node)
         }
 
-        pub fn focus(self, license_name: LicenseName) -> Self {
+        pub fn focus(&self, license_name: LicenseName) -> Self {
             let mut s = self.clone();
 
             let root_idx = self.get_idx_of_license(license_name).unwrap();
@@ -308,20 +313,39 @@ pub mod graph {
                             lefts,
                             rights,
                             edge,
-                        } => lefts
-                            .iter()
-                            .map(|left| {
+                        } => {
+                            let right_idxs = self.apply_task(rights, origin);
+                            lefts
+                                .iter()
+                                .map(|left| {
+                                    let left_idx = self.add_node_with_origin(left, origin);
+                                    self.add_edges_with_origin(
+                                        left_idx,
+                                        right_idxs.clone(),
+                                        edge.clone(),
+                                        origin,
+                                    );
+                                    left_idx
+                                })
+                                .collect()
+                        }
+                        LicenseGraphBuilderTask::AddEdgeLeft {
+                            lefts,
+                            rights,
+                            edge,
+                        } => {
+                            let right_idxs = self.apply_task(rights, origin);
+                            lefts.iter().for_each(|left| {
                                 let left_idx = self.add_node_with_origin(left, origin);
-                                let right_idxs = self.apply_task(rights, origin);
                                 self.add_edges_with_origin(
                                     left_idx,
-                                    right_idxs,
+                                    right_idxs.clone(),
                                     edge.clone(),
                                     origin,
                                 );
-                                left_idx
-                            })
-                            .collect(),
+                            });
+                            right_idxs
+                        }
                         LicenseGraphBuilderTask::JoinTasks { tasks } => tasks
                             .iter()
                             .flat_map(|task| self.apply_task(task, origin))
@@ -375,6 +399,10 @@ pub mod graph {
             }
         }
 
+        pub fn add_unboxed_source(self, source: &dyn Source) -> Self {
+            self.add_tasks(source.get_tasks(), Box::new(source.get_origin().clone()))
+        }
+
         pub fn add_source(self, source: &Box<dyn Source>) -> Self {
             self.add_tasks(source.get_tasks(), Box::new(source.get_origin().clone()))
         }
@@ -420,11 +448,92 @@ pub fn demo() -> graph::LicenseGraph {
         .build()
 }
 
-#[cfg(test)]
-mod tests {
-    use super::core::*;
+pub mod dot {
+    use super::*;
+    use std::fs;
+    use std::fs::File;
+    use std::path::PathBuf;
+    use std::process::Command;
+
+    pub fn write_focused_dot(
+        out_file: String,
+        g: &graph::LicenseGraph,
+        needle: core::LicenseName,
+    ) -> Result<(), std::io::Error> {
+        let focused = g.focus(needle);
+        write_dot(out_file, &focused)
+    }
+
+    pub fn write_dot(out_file: String, g: &graph::LicenseGraph) -> Result<(), std::io::Error> {
+        let mut parent = PathBuf::from(out_file.clone());
+        if parent.pop() {
+            match parent.to_str() {
+                Option::Some(parent_str) => fs::create_dir_all(parent_str)?,
+                Option::None {} => {}
+            }
+        }
+
+        log::info!("... START gen dot...");
+        log::info!("{:#?}", g);
+        let g_dot = format!("{}", g.get_as_dot());
+        log::debug!("{}", g_dot);
+        fs::write(&out_file, g_dot)?;
+
+        let out_svg_file = format!("{}.svg", &out_file);
+        log::info!("... START gen dot svg...");
+        let svg = File::create(out_svg_file).unwrap();
+        Command::new("dot")
+            .arg("-Tsvg")
+            .arg(out_file)
+            .stdout(svg)
+            .spawn()?;
+        log::info!("... DONE gen dot svg");
+
+        Ok(())
+    }
+}
+
+pub mod test_helper {
+    use crate::model::core::LicenseName;
+
+    use super::dot::*;
     use super::graph::*;
     use super::*;
+    use std::fs;
+
+    pub fn test_single_origin(source_name: &str, source: &dyn Source) {
+        let test_output_dir = format!("test_output/{}/", source_name);
+        fs::create_dir_all(&test_output_dir).expect("create test output directory");
+
+        let builder = LicenseGraphBuilder::new().add_unboxed_source(source);
+        let serialized = serde_json::to_string(&builder).unwrap();
+        fs::write(format!("{}builder.json", &test_output_dir), serialized)
+            .expect("Unable to write file");
+
+        let graph = builder.build();
+        let needle = String::from("MIT");
+        write_focused_dot(
+            format!("{}{}.dot", &test_output_dir, &needle),
+            &graph,
+            LicenseName::new(needle),
+        )
+        .expect("failed to generate svg");
+        let needle = String::from("GPL-3.0-only");
+        write_focused_dot(
+            format!("{}{}.dot", &test_output_dir, &needle),
+            &graph,
+            LicenseName::new(needle),
+        )
+        .expect("failed to generate svg");
+        log::info!("... DONE");
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::model::core::*;
+    use crate::model::graph::*;
+    use crate::model::*;
 
     #[test]
     fn license_name_tests() {

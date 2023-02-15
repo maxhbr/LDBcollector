@@ -33,7 +33,7 @@ fn main() {
     let sources: Vec<Box<dyn graph::Source>> = vec![
         Box::new(source_spdx::SpdxSource {}),
         Box::new(source_spdx::EmbarkSpdxSource {}),
-        Box::new(source_scancode::EmbarkSpdxSource {}),
+        Box::new(source_scancode::ScancodeSource {}),
         Box::new(source_osadl::OsadlSource {}),
         Box::new(source_blueoakcouncil::CopyleftListSource {}),
         Box::new(source_blueoakcouncil::LicenseListSource {}),
