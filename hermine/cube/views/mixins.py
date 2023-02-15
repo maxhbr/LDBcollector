@@ -3,11 +3,11 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from functools import reduce
 
-from django.db.models import Q
+from django.db.models import Q, Count
 from django.forms import Form, CharField
 from django.shortcuts import get_object_or_404
 
-from cube.models import License, Release
+from cube.models import License, Release, Exploitation
 
 
 class SearchForm(Form):
@@ -81,4 +81,48 @@ class ReleaseContextMixin:
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
         context["release"] = self.release
+        return context
+
+
+class ReleaseExploitationFormMixin:
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        scopes_in_release = (
+            self.release.usage_set.values("project", "scope")
+            .annotate(count=Count("*"))
+            .values("project", "scope", "count")
+            .order_by("project", "scope")
+        )
+        exploitations = self.get_queryset().values(
+            "project", "scope", "exploitation", "id"
+        )
+        explicit_exploitations = dict()
+        for key, value in Exploitation._meta.get_field("exploitation").choices:
+            explicit_exploitations[key] = value
+
+        full_exploitations = dict()
+        for scope_in_release in scopes_in_release:
+            full_scope = scope_in_release["project"] + scope_in_release["scope"]
+            full_exploitations[full_scope] = dict()
+            full_exploitations[full_scope]["scope"] = scope_in_release["scope"]
+            full_exploitations[full_scope]["project"] = scope_in_release["project"]
+            full_exploitations[full_scope]["count"] = scope_in_release["count"]
+        for exploitation in exploitations:
+            full_scope = exploitation["project"] + exploitation["scope"]
+            print("exploitation,", full_scope)
+            if full_scope in full_exploitations:
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
+                ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+            else:
+                full_exploitations[full_scope] = dict()
+                full_exploitations[full_scope]["scope"] = exploitation["scope"]
+                full_exploitations[full_scope]["project"] = exploitation["project"]
+                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
+                    exploitation["exploitation"]
+                ]
+                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+
+        context["full_exploitations"] = list(full_exploitations.values())
         return context
