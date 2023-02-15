@@ -46,6 +46,7 @@ class UsageSerializer(serializers.ModelSerializer):
             "licenses_chosen",
             "license_choices",
             "scope",
+            "project",
         ]
 
 
