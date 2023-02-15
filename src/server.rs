@@ -5,16 +5,18 @@ use warp::Filter;
 use build_html::*;
 
 pub async fn serve(graph: Box<LicenseGraph>) {
+    let graph2 = graph.clone();
+
     // GET /hello/warp => 200 OK with body "Hello, warp!"
     let ldb = warp::path!("license" / String)
-        .map(|license: String| {
+        .map(move |license: String| {
             let focused = graph.focus(crate::model::core::LicenseName::new(license.to_string().clone()));
             format!("<body>\n<pre>\n{:?}\n</pre>\n</body>", focused.get_as_dot())
         });
 
     // GET / -> index html
-    let index = warp::path::end().map(||{
-        let license_names = graph.get_license_names();
+    let index = warp::path::end().map(move ||{
+        let license_names = graph2.get_license_names();
         let index: String = HtmlPage::new()
             .with_title("ldbcollector")
             .with_header(1, "Licenses:")
