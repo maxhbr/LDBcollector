@@ -59,7 +59,6 @@ class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
                 "usage_set",
                 "usage_set__version",
                 "usage_set__version__component",
-                "usage_set__licenses_chosen",
             )
         )
 

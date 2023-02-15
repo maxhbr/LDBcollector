@@ -44,7 +44,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
             )
         self.assertEqual(res.status_code, 201)
 
-    def test_valid(self):
+    def test_validation_view(self):
         self.create_product()
         self.create_release()
         import_licenses()
@@ -58,14 +58,13 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.create_exploitations()
         self.create_choices()
         self.create_derogations()
-
         self.import_sbom()
-        res = self.client.post(
-            reverse("cube:releases-update-validation", kwargs={"id": 1})
-        )
-        self.assertEqual(res.data["validation_step"], STEP_POLICY)
 
-    def test_step_by_step(self):
+        res = self.client.get(reverse("cube:release_validation", kwargs={"pk": 1}))
+        self.assertEqual(res.context["object"].valid_step, STEP_POLICY)
+        self.assertEqual(len(res.context["derogations"]), 1)
+
+    def test_step_by_step_api(self):
         self.create_product()
         self.create_release()
         self.import_sbom()
@@ -159,12 +158,14 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.create_derogations()
         res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
+        self.assertEqual(len(res.data["derogations"]), 1)
 
         ## Finished
         res = self.client.post(
             reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_POLICY)
+        res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
 
     def create_curations(self):
         # Licenses with no concluded license
