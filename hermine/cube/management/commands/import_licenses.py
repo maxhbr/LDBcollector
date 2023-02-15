@@ -2,8 +2,6 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 
-from django.core.management import BaseCommand
-
 from cube.management.commands._base_commands import BaseImportCommand
 from cube.utils.licenses import handle_licenses_json
 

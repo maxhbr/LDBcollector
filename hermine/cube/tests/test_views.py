@@ -130,7 +130,7 @@ class ReleaseViewsTestCase(ForceLoginMixin, TestCase):
 
     def test_create_licence_choice_rule(self):
         url = reverse("cube:release_licensechoice_create", args=[1])
-        res = self.client.post(
+        self.client.post(
             url,
             {
                 "expression_out": "LicenseRef-FakeLicense-Permissive",

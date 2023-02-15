@@ -112,7 +112,9 @@ class GenericViewSet(viewsets.ModelViewSet):
             ).distinct()
         )
 
-        sort_key = lambda generic: generic["generic"].pk
+        def sort_key(generic):
+            return generic["generic"].pk
+
         sorted_generics = groupby(sorted(generics, key=sort_key), sort_key)
         serializer_data = list()
         for generic_pk, generics in sorted_generics:

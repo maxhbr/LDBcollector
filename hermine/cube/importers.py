@@ -5,7 +5,6 @@
 
 from datetime import datetime
 import json
-from typing import Optional
 import logging
 
 from django.db import transaction
