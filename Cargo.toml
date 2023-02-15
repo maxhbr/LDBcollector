@@ -14,37 +14,31 @@ name = "ldbcollector"
 path = "src/main.rs"
 
 [features]
+# The `console_error_panic_hook` crate provides better debugging of panics by
+# logging them with `console.error`. This is great for development, but requires
+# all the `std::fmt` and `std::panicking` infrastructure, so isn't great for
+# code size when deploying.
 default = ["console_error_panic_hook"]
 
 [dependencies]
+build_html = "2.2.0"
 chrono = "0.4.0"
+console_error_panic_hook = { version = "0.1.6", optional = true }
 either = "1.8.1"
-env_logger = "0.9.3" # 0.10.0 fails in nix build :(
 iri-string = "0.7.0"
 itertools = "0.10.5"
 libc = "0.2.139"
 log = "0.4.17"
 multimap = "0.8.3"
 petgraph = "0.6.0"
+pretty_env_logger = "0.4.0"
 rust-embed="6.4.2"
 serde = "1.0.117"
 serde_derive = "1.0.117"
 serde_json = "1.0.59"
 spdx = "0.10.0"
-
-# wasm:
-wasm-bindgen = "0.2.63"
-
-# The `console_error_panic_hook` crate provides better debugging of panics by
-# logging them with `console.error`. This is great for development, but requires
-# all the `std::fmt` and `std::panicking` infrastructure, so isn't great for
-# code size when deploying.
-console_error_panic_hook = { version = "0.1.6", optional = true }
-
-# `wee_alloc` is a tiny allocator for wasm that is only ~1K in code size
-# compared to the default allocator's ~10K. It is slower than the default
-# allocator, however.
-wee_alloc = { version = "0.4.5", optional = true }
+tokio = { version = "1.25.0", features = ["full"] }
+warp = "0.3.3"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.13"

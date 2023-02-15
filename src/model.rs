@@ -357,6 +357,15 @@ pub mod graph {
             }
         }
 
+        pub fn get_license_names(&self) -> Vec<&LicenseName> {
+            self.graph.node_weights()
+                .filter_map(|w| match w {
+                    LicenseGraphNode::LicenseNameNode { license_name } => Option::Some(license_name),
+                    _ => Option::None{}
+                })
+                .collect()
+        }
+
         pub fn get_as_dot(&self) -> String {
             let dot = Dot::with_config(&self.graph, &[]);
             format!("{:?}", dot)
