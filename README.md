@@ -61,3 +61,8 @@ and log in as superuser to create new users
 or directly to [http://127.0.0.1:8080](http://127.0.0.1:8080) to use the application.
 
 You can find an in progress documentation at https://docs.hermine-foss.org/
+
+
+## Contributing
+
+You can find how to contribute to Hermine on the [documentation website](https://docs.hermine-foss.org/dev_hermine.html)
