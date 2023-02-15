@@ -42,6 +42,9 @@ reuse = "^1.0.0"
 black = {version = "^22.1.0", allow-prereleases = true}
 flake8-black = "^0.3.3"
 
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.246"
+
 [tool.black]
 exclude = "hermine/cube/migrations"
 
