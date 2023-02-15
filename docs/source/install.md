@@ -158,3 +158,19 @@ Hermine provides two test endpoints which you can use in your monitoring system.
 `/ping` always send a 200 response, and can be used to check server availability.
 
 `/ready` do the same but also tries to connect to Hermine database. It sends a 200 response if it succeeds.
+
+
+## Display version
+
+You can display a version in the footer, using your own versionning convention.
+
+You need to add a file in the application path containing one line with the version you want to display, and set this variable in your settings (mysecrets.py) : 
+```python
+# Path to the current version to be displayed in the footer 
+VERSION_FILE_PATH = "hermine/hermine/VERSION.txt"
+```
+For example, you can generate your file by adding in the .gitlabci building the Docker image :
+```bash
+LAST_COMMIT=$(git log -1 --pretty="%ad")
+echo "Last Updated: $LAST_COMMIT ($GITLAB_UPSTREAM_BRANCH)" > hermine/VERSION.txt
+```
