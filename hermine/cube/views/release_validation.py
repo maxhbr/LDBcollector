@@ -3,7 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import F, Count
+from django.db.models import F
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
@@ -35,7 +35,11 @@ from cube.models import (
 from cube.utils.licenses import simplified
 from cube.utils.release_validation import update_validation_step, propagate_choices
 from cube.views import LicenseRelatedMixin
-from cube.views.mixins import SaveAuthorMixin, ReleaseContextMixin
+from cube.views.mixins import (
+    SaveAuthorMixin,
+    ReleaseContextMixin,
+    ReleaseExploitationFormMixin,
+)
 
 
 class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
@@ -217,52 +221,13 @@ class ReleaseExploitationCreateView(
 
 
 class ReleaseExploitationsListView(
-    LoginRequiredMixin, ReleaseContextMixin, generic.ListView
+    LoginRequiredMixin,
+    ReleaseExploitationFormMixin,
+    ReleaseContextMixin,
+    generic.ListView,
 ):
     model = Exploitation
     template_name = "cube/release_exploitations.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        scopes_in_release = (
-            self.release.usage_set.values("project", "scope")
-            .annotate(count=Count("*"))
-            .values("project", "scope", "count")
-            .order_by("project", "scope")
-        )
-        exploitations = self.get_queryset().values(
-            "project", "scope", "exploitation", "id"
-        )
-        explicit_exploitations = dict()
-        for key, value in Exploitation._meta.get_field("exploitation").choices:
-            explicit_exploitations[key] = value
-
-        full_exploitations = dict()
-        for scope_in_release in scopes_in_release:
-            full_scope = scope_in_release["project"] + scope_in_release["scope"]
-            full_exploitations[full_scope] = dict()
-            full_exploitations[full_scope]["scope"] = scope_in_release["scope"]
-            full_exploitations[full_scope]["project"] = scope_in_release["project"]
-            full_exploitations[full_scope]["count"] = scope_in_release["count"]
-        for exploitation in exploitations:
-            full_scope = exploitation["project"] + exploitation["scope"]
-            print("exploitation,", full_scope)
-            if full_scope in full_exploitations:
-                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
-                    exploitation["exploitation"]
-                ]
-                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
-            else:
-                full_exploitations[full_scope] = dict()
-                full_exploitations[full_scope]["scope"] = exploitation["scope"]
-                full_exploitations[full_scope]["project"] = exploitation["project"]
-                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
-                    exploitation["exploitation"]
-                ]
-                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
-
-        context["full_exploitations"] = list(full_exploitations.values())
-        return context
 
     def get_queryset(self):
         return (

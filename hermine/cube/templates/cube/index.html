@@ -27,7 +27,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <h2>Development</h2>
     <div class="tile is-ancestor">
 
-      <a href={% url 'cube:products' %}  class="tile is-parent">
+      <a href="{% url 'cube:products' %}" class="tile is-parent">
         <div class="card tile is-child">
           <div class="card-content">
             <div class="level is-mobile">
@@ -49,7 +49,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
       </a>
       
-      <a href={% url 'cube:products' %} class="tile is-parent">
+      <a href="{% url 'cube:products' %}" class="tile is-parent">
         <div class="card tile is-child">
           <div class="card-content">
             <div class="level is-mobile">
@@ -72,7 +72,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
       </a>
 
-      <a href={% url 'cube:components' %} class="tile is-parent">
+      <a href="{% url 'cube:components' %}" class="tile is-parent">
         <div class="card tile is-child">
           <div class="card-content">
             <div class="level is-mobile">
@@ -100,7 +100,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <h2>Legal</h2>
     <div class="tile is-ancestor">
 
-      <a href={% url 'cube:licenses' %} class="tile is-parent">
+      <a href="{% url 'cube:licenses' %}" class="tile is-parent">
         <div class="card tile is-child">
           <div class="card-content">
             <div class="level is-mobile">
@@ -124,7 +124,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
       </a>
 
-      <a href={% url 'cube:generics' %} class="tile is-parent">
+      <a href="{% url 'cube:generics' %}" class="tile is-parent">
         <div class="card tile is-child">
           <div class="card-content">
             <div class="level is-mobile">
@@ -150,11 +150,3 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
   </section>
 {% endblock %}
-
-<!-- Scripts below are for demo only -->
-<script type="text/javascript" src="{% static 'cube/js/main.min.js' %}"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-<script type="text/javascript" src="{% static 'cube/js/chart.sample.min.js' %}"></script>
-
-<!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
-<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
