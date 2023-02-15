@@ -23,15 +23,13 @@ from cube.utils.release_validation import (
 from .mixins import BaseHermineAPITestCase
 
 
+def import_licenses():
+    with open("cube/fixtures/fake_licenses.json") as licenses_file:
+        handle_licenses_json(licenses_file.read())
+
+
 class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
-    def import_licenses(cls):
-        with open("cube/fixtures/fake_licenses.json") as licenses_file:
-            handle_licenses_json(licenses_file.read())
-
-    def test_simple_sbom(self):
-        self.create_product()
-        self.create_release()
-
+    def import_sbom(self):
         with open("cube/fixtures/fake_sbom.json", "r") as sbom_file:
             url = reverse("cube:upload_spdx-list")
             res = self.client.post(
@@ -45,6 +43,31 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
                 format="multipart",
             )
         self.assertEqual(res.status_code, 201)
+
+    def test_validation_view(self):
+        self.create_product()
+        self.create_release()
+        import_licenses()
+        License.objects.create(
+            spdx_id="LicenseRef-fakeLicense-NotAnalyzed-1.0",
+            allowed=License.ALLOWED_ALWAYS,
+        )
+
+        self.create_curations()
+        self.create_ands_corrections()
+        self.create_exploitations()
+        self.create_choices()
+        self.create_derogations()
+        self.import_sbom()
+
+        res = self.client.get(reverse("cube:release_validation", kwargs={"pk": 1}))
+        self.assertEqual(res.context["object"].valid_step, STEP_POLICY)
+        self.assertEqual(len(res.context["derogations"]), 1)
+
+    def test_step_by_step_api(self):
+        self.create_product()
+        self.create_release()
+        self.import_sbom()
 
         res = self.client.post(
             reverse("cube:releases-update-validation", kwargs={"id": 1})
@@ -62,23 +85,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
             2,  # valid and wrong-concluded
         )
 
-        ## Simulate fixing manually
-        ### Licenses with no concluded license
-        LicenseCuration.objects.create(
-            expression_in="Allowed-1.0 AND ContextAllowed-1.0",
-            expression_out="LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
-        )
-        LicenseCuration.objects.create(
-            component=Component.objects.get(name="no-assertion-dependency"),
-            expression_in="NOASSERTION",
-            expression_out="LicenseRef-fakeLicense-Allowed-1.0",
-        )
-        ### Licenses with wrong concluded licenses
-        LicenseCuration.objects.create(
-            component=Component.objects.get(name="wrong-concluded-dependency"),
-            expression_in="LicenseRef-fakeLicense-ContextAllowed-1.0",
-            expression_out="LicenseRef-fakeLicense-Allowed-1.0 AND LicenseRef-fakeLicense-NotAnalyzed-1.0",
-        )
+        self.create_curations()
         # Is everything right ?
         res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
@@ -94,15 +101,11 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(res.data["validation_step"], STEP_CURATION)
 
         # Step 2
-        self.import_licenses()
+        import_licenses()
         res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
 
-        ## Simulate fixing manually
-        LicenseCuration.objects.create(
-            expression_in="LicenseRef-fakeLicense-Allowed-1.0 AND LicenseRef-fakeLicense-ContextAllowed-1.0",
-            expression_out="LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
-        )
+        self.create_ands_corrections()
         res = self.client.get(reverse("cube:releases-validation-2", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
         res = self.client.post(
@@ -115,13 +118,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["unset_scopes"]), 1)
 
-        ## Create exploitation manually
-        Exploitation.objects.create(
-            release_id=1,
-            scope=Usage.DEFAULT_SCOPE,
-            project=Usage.DEFAULT_PROJECT,
-            exploitation=Usage.EXPLOITATION_INTERNAL,
-        )
+        self.create_exploitations()
         res = self.client.get(reverse("cube:releases-validation-3", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
 
@@ -135,14 +132,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(len(res.data["to_resolve"]), 2)
 
-        ## Create choice through API
-        res = self.client.post(
-            reverse("cube:choices-list"),
-            data={
-                "expression_in": "LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
-                "expression_out": "LicenseRef-fakeLicense-Allowed-1.0",
-            },
-        )
+        self.create_choices()
         res = self.client.get(reverse("cube:releases-validation-4", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
         self.assertEqual(
@@ -155,9 +145,7 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(res.data["validation_step"], STEP_CHOICES)
 
         # Step 5
-        res = self.client.post(
-            reverse("cube:releases-update-validation", kwargs={"id": 1})
-        )
+        self.client.post(reverse("cube:releases-update-validation", kwargs={"id": 1}))
         res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], False)
         self.assertEqual(
@@ -167,21 +155,72 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
             len(res.data["usages_lic_context_allowed"]), 1
         )  # spdx-valid-dependency
 
-        ## Simulate fixing
-        Derogation.objects.create(
-            license=License.objects.get(
-                spdx_id="LicenseRef-fakeLicense-ContextAllowed-1.0"
-            ),
-            release_id=1,
-        )
-        License.objects.filter(spdx_id="LicenseRef-fakeLicense-NotAnalyzed-1.0").update(
-            allowed=License.ALLOWED_ALWAYS
-        )
+        self.create_derogations()
         res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
         self.assertEqual(res.data["valid"], True)
+        self.assertEqual(len(res.data["derogations"]), 1)
 
         ## Finished
         res = self.client.post(
             reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_POLICY)
+        res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
+
+    def create_curations(self):
+        # Licenses with no concluded license
+        LicenseCuration.objects.create(
+            expression_in="Allowed-1.0 AND ContextAllowed-1.0",
+            expression_out="LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+        LicenseCuration.objects.create(
+            component=Component.objects.get_or_create(name="no-assertion-dependency")[
+                0
+            ],
+            expression_in="NOASSERTION",
+            expression_out="LicenseRef-fakeLicense-Allowed-1.0",
+        )
+        # Licenses with wrong concluded licenses
+        LicenseCuration.objects.create(
+            component=Component.objects.get_or_create(
+                name="wrong-concluded-dependency"
+            )[0],
+            expression_in="LicenseRef-fakeLicense-ContextAllowed-1.0",
+            expression_out="LicenseRef-fakeLicense-Allowed-1.0 AND LicenseRef-fakeLicense-NotAnalyzed-1.0",
+        )
+
+    def create_ands_corrections(self):
+        LicenseCuration.objects.create(
+            expression_in="LicenseRef-fakeLicense-Allowed-1.0 AND LicenseRef-fakeLicense-ContextAllowed-1.0",
+            expression_out="LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
+        )
+
+    def create_exploitations(self):
+        Exploitation.objects.create(
+            release_id=1,
+            scope=Usage.DEFAULT_SCOPE,
+            project=Usage.DEFAULT_PROJECT,
+            exploitation=Usage.EXPLOITATION_INTERNAL,
+        )
+
+    def create_choices(self):
+        self.client.post(
+            reverse("cube:choices-list"),
+            data={
+                "expression_in": "LicenseRef-fakeLicense-Allowed-1.0 OR LicenseRef-fakeLicense-ContextAllowed-1.0",
+                "expression_out": "LicenseRef-fakeLicense-Allowed-1.0",
+            },
+        )
+
+    def create_derogations(self):
+        Derogation.objects.create(
+            license=License.objects.get(
+                spdx_id="LicenseRef-fakeLicense-ContextAllowed-1.0"
+            ),
+            release_id=1,
+        )
+        allowed_license = License.objects.get(
+            spdx_id="LicenseRef-fakeLicense-NotAnalyzed-1.0"
+        )
+        allowed_license.allowed = License.ALLOWED_ALWAYS
+        allowed_license.save()
