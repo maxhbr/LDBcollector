@@ -1,7 +1,15 @@
 * yet another try in rust
 
-* WASM?
+* server?
+** WASM?
 - see: https://rustwasm.github.io/docs/book/game-of-life/introduction.html
+** web server
+*** to static?
+- https://gist.github.com/azizur/ffe8ee6a0a2bb418e5cc8ff101fad91a
+
+#+BEGIN_EXAMPLE
+wget -k -K  -E -r -l 10 -p -N -F --restrict-file-names=windows -nH localhost:3030
+#+END_EXAMPLE
 
 * Idea
 A handle for a license is just a string, like

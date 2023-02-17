@@ -1,4 +1,3 @@
-use ldbcollector::model::graph::{LicenseGraph, LicenseGraphBuilder};
 use ldbcollector::model::*;
 use ldbcollector::*;
 use rust_embed::RustEmbed;

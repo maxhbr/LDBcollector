@@ -1,5 +1,4 @@
-use crate::model::core::LicenseName;
-use crate::model::graph::*;
+use crate::model::*;
 
 use serde_derive::{Deserialize, Serialize};
 use std::collections::HashMap;
@@ -186,15 +185,15 @@ impl Source for LicenseListSource {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::model::*;
+    use crate::test_helper;
 
     #[test]
     fn tests_copyleft_source() {
-        // test_helper::test_single_origin("source_blueoakcouncil/copyleft", &CopyleftListSource {})
+        test_helper::test_single_origin("source_blueoakcouncil/copyleft", &CopyleftListSource {}, vec!("GPL-3.0-only"))
     }
 
     #[test]
     fn tests_license_source() {
-        // test_helper::test_single_origin("source_blueoakcouncil/license", &LicenseListSource {})
+        test_helper::test_single_origin("source_blueoakcouncil/license", &LicenseListSource {},  vec!("MIT"))
     }
 }

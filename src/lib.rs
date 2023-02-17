@@ -4,15 +4,65 @@ pub mod server;
 #[macro_export]
 macro_rules! lic {
     ($l:tt) => {
-        $crate::model::core::LicenseName::new(String::from($l))
+        $crate::model::LicenseName::new(String::from($l))
     };
 }
 
 #[macro_export]
 macro_rules! lic_string {
     ($l:tt) => {
-        $crate::model::core::LicenseName::new($l.clone())
+        $crate::model::LicenseName::new($l.clone())
     };
+}
+
+// ############################################################################
+
+pub mod sink_dot;
+pub mod sink_force_graph;
+pub mod sink_html;
+
+// ############################################################################
+
+pub mod test_helper {
+    use super::sink_dot::*;
+    use crate::model::*;
+    use std::fs;
+
+    pub fn test_graph(source_name: &str, graph: LicenseGraph, licenses: Vec<&str>) {
+        let test_output_dir = format!("test_output/{}/", source_name);
+        fs::create_dir_all(test_output_dir.clone())
+            .expect("Unable to create dir");
+
+        licenses.iter()
+           .for_each(|license| {
+                let needle = String::from(*license);
+                write_focused_dot(
+                    format!("{}{}.dot", &test_output_dir, &needle),
+                    &graph,
+                    LicenseName::new(needle),
+                )
+                .expect("failed to generate svg");
+           });
+    }
+
+    pub fn test_builder(source_name: &str, builder: LicenseGraphBuilder, licenses: Vec<&str>) {
+        let test_output_dir = format!("test_output/{}/", source_name);
+        fs::create_dir_all(test_output_dir.clone())
+            .expect("Unable to create dir");
+
+        let serialized = serde_json::to_string(&builder).unwrap();
+        fs::write(format!("{}builder.json", &test_output_dir), serialized)
+            .expect("Unable to write file");
+
+        let graph = builder.build();
+
+        test_graph(source_name, graph, licenses)
+    }
+
+    pub fn test_single_origin(source_name: &str, source: &dyn Source, licenses: Vec<&str>) {
+        let builder = LicenseGraphBuilder::new().add_unboxed_source(source);
+        test_builder(source_name, builder, licenses)
+    }
 }
 
 // ############################################################################
@@ -22,8 +72,8 @@ pub mod source_osadl;
 pub mod source_scancode;
 pub mod source_spdx;
 
-pub fn get_sources() -> Vec<Box<dyn crate::model::graph::Source>> {
-    let sources: Vec<Box<dyn crate::model::graph::Source>> = vec![
+pub fn get_sources() -> Vec<Box<dyn crate::model::Source>> {
+    let sources: Vec<Box<dyn crate::model::Source>> = vec![
         Box::new(crate::source_spdx::SpdxSource {}),
         Box::new(crate::source_spdx::EmbarkSpdxSource {}),
         Box::new(crate::source_scancode::ScancodeSource {}),
@@ -34,9 +84,9 @@ pub fn get_sources() -> Vec<Box<dyn crate::model::graph::Source>> {
     sources
 }
 
-pub fn get_builder() -> crate::model::graph::LicenseGraphBuilder {
+pub fn get_builder() -> crate::model::LicenseGraphBuilder {
     get_sources().iter().fold(
-        crate::model::graph::LicenseGraphBuilder::new(),
+        crate::model::LicenseGraphBuilder::new(),
         |builder, source| builder.add_source(source),
     )
 }
@@ -44,35 +94,12 @@ pub fn get_builder() -> crate::model::graph::LicenseGraphBuilder {
 #[cfg(test)]
 mod tests {
     use crate::get_builder;
-    use crate::model::core::*;
-    use crate::model::dot::*;
-    use crate::model::graph::*;
-    use crate::model::*;
-    use std::fs;
+    use crate::test_helper;
 
     #[test]
     fn all_origins_test() {
-        let test_output_dir = "test_output/";
         let builder = get_builder();
-        let serialized = serde_json::to_string(&builder).unwrap();
-        fs::write(format!("{}builder.json", &test_output_dir), serialized)
-            .expect("Unable to write file");
 
-        let graph = builder.build();
-        let needle = String::from("MIT");
-        write_focused_dot(
-            format!("{}{}.dot", &test_output_dir, &needle),
-            &graph,
-            LicenseName::new(needle),
-        )
-        .expect("failed to generate svg");
-        let needle = String::from("GPL-3.0-only");
-        write_focused_dot(
-            format!("{}{}.dot", &test_output_dir, &needle),
-            &graph,
-            LicenseName::new(needle),
-        )
-        .expect("failed to generate svg");
-        log::info!("... DONE");
+        test_helper::test_builder("all", builder, vec!("MIT", "BSD-3-Clause", "GPL-3.0-or-later"))
     }
 }

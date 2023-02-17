@@ -1,5 +1,3 @@
-use crate::model::core::LicenseName;
-use crate::model::graph::*;
 use crate::model::*;
 use spdx::identifiers::{IMPRECISE_NAMES, LICENSES};
 use spdx::*;
@@ -98,10 +96,10 @@ impl Source for EmbarkSpdxSource {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::model::*;
+    use crate::test_helper;
 
     #[test]
     fn tests_source() {
-        test_helper::test_single_origin("source_spdx", &SpdxSource {})
+        test_helper::test_single_origin("source_spdx", &SpdxSource {}, vec!("MIT","GPL-3.0-only"))
     }
 }

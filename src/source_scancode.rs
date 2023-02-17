@@ -1,4 +1,4 @@
-use crate::model::graph::*;
+use crate::model::*;
 
 use itertools::Itertools;
 use serde_derive::{Deserialize, Serialize};
@@ -228,10 +228,10 @@ impl Source for ScancodeSource {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::model::*;
+    use crate::test_helper;
 
     #[test]
     fn tests_source() {
-        test_helper::test_single_origin("source_scancode", &ScancodeSource {})
+        test_helper::test_single_origin("source_scancode", &ScancodeSource {}, vec!("MIT","GPL-3.0-only"))
     }
 }

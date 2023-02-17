@@ -5,7 +5,7 @@ digraph {
     31 [ label = "Copyleft" ]
     689 [ label = "GNU General Public License v3.0 only" ]
     694 [ label = "GPL-3.0-only" ]
-    695 [ label = "Array [\l    String(\"GPL-3.0-only\"),\l    String(\"GNU General Public License v3.0 only\"),\l    Number(27),\l]" ]
+    695 [ label = "$JSON" ]
     689 -> 694 [ label = "Same" ]
     695 -> 694 [ label = "AppliesTo" ]
     13 -> 695 [ label = "AppliesTo" ]

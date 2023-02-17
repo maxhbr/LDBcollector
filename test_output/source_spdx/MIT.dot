@@ -3,7 +3,7 @@ digraph {
     13 [ label = "is_fsf_free_libre" ]
     870 [ label = "MIT" ]
     871 [ label = "MIT License" ]
-    872 [ label = "Array [\l    String(\"MIT\"),\l    String(\"MIT License\"),\l    Number(3),\l]" ]
+    872 [ label = "$JSON" ]
     871 -> 870 [ label = "Same" ]
     872 -> 870 [ label = "AppliesTo" ]
     13 -> 872 [ label = "AppliesTo" ]
