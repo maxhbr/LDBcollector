@@ -73,19 +73,10 @@ pub fn to_force_graph_json(graph: LicenseGraph) -> String {
     serde_json::to_string(&to_force_graph(graph)).unwrap()
 }
 
-const HEADER: &str = r#"
-<head>
-  <style> body { margin: 0; } </style>
-  <script src="https://unpkg.com/force-graph"></script>
-</head>
-
-<body>
-  <div id="graph"></div>
-
-  <script>
+const JS_HEADER: &str = r#"
     const gData = 
 "#;
-const FOOTER: &str = r#"
+const JS_FOOTER: &str = r#"
 ;
 
 let selfLoopLinks = {};
@@ -209,13 +200,32 @@ const Graph = ForceGraph()
     ctx.restore();
   })
     .graphData(gData);
-// Spread nodes a little wider
-Graph.d3Force('charge').strength(-120);
+  // Spread nodes a little wider
+  Graph.d3Force('charge').strength(-120);
+"#;
 
+pub fn to_force_graph_js(graph: LicenseGraph) -> String {
+    format!("{}{}{}", JS_HEADER, to_force_graph_json(graph), JS_FOOTER)
+}
+
+
+const HTML_HEADER: &str = r#"
+<head>
+  <style> body { margin: 0; } </style>
+  <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+  <div id="graph"></div>
+
+  <script>
+"#;
+const HTML_FOOTER: &str = r#"
 </script>
 </body>
 "#;
 
+
 pub fn to_force_graph_html(graph: LicenseGraph) -> String {
-    format!("{}{}{}", HEADER, to_force_graph_json(graph), FOOTER)
+    format!("{}{}{}", HTML_HEADER, to_force_graph_js(graph), HTML_FOOTER)
 }

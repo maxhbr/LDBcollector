@@ -40,12 +40,12 @@ impl Hash for LicenseName {
 
 //#############################################################################
 //## Origin
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct Origin {
-    name: String,
+    pub name: String,
     // data_license: Option<LicenseItem>, // TODO
-    file: Option<String>,
-    url: Option<String>,
+    pub file: Option<String>,
+    pub url: Option<String>,
 }
 
 impl Origin {
@@ -181,8 +181,8 @@ impl Hash for LicenseGraphBuilderTask {
 #[derive(Clone)]
 pub struct LicenseGraph {
     pub graph: StableGraph<LicenseGraphNode, LicenseGraphEdge>,
-    node_origins: MultiMap<NodeIndex, Origin>,
-    edge_origins: MultiMap<EdgeIndex, Origin>,
+    pub node_origins: MultiMap<NodeIndex, Origin>,
+    pub edge_origins: MultiMap<EdgeIndex, Origin>,
     accomplished_tasks: HashMap<u64, Vec<NodeIndex>>,
 }
 impl LicenseGraph {
@@ -263,7 +263,15 @@ impl LicenseGraph {
         origin: &'static Origin,
     ) -> NodeIndex {
         let idx = self.add_node(node);
-        self.node_origins.insert(idx, origin.clone());
+        match self.node_origins.get_vec(&idx) {
+            Option::Some(vec) => {
+                if ! vec.contains(origin) {
+                    self.node_origins.insert(idx, origin.clone())
+                }
+            },
+            Option::None{} => 
+                self.node_origins.insert(idx, origin.clone())
+        };
         idx
     }
     fn add_edges_with_origin(

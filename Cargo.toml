@@ -25,6 +25,7 @@ build_html = "2.2.0"
 chrono = "0.4.0"
 console_error_panic_hook = { version = "0.1.6", optional = true }
 either = "1.8.1"
+graphviz-rust = "0.6.1"
 iri-string = "0.7.0"
 itertools = "0.10.5"
 libc = "0.2.139"

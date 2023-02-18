@@ -18,7 +18,7 @@ pub async fn serve(graph: Box<LicenseGraph>) {
                 Container::new(ContainerType::Div),
                 |acc, license_name| {
                     acc.with_container(Container::new(ContainerType::Div).with_link(
-                        format!("graph/{}", license_name),
+                        license_name,
                         format!("{:?}", license_name),
                     ))
                 },
@@ -30,35 +30,35 @@ pub async fn serve(graph: Box<LicenseGraph>) {
 
     let graph_for_dot = graph.clone();
     // GET /dot/MIT
-    let warp_dot = warp::path!("dot" / String).map(move |license: String| {
+    let warp_dot = warp::path!(String / "dot").map(move |license: String| {
         let focused = graph_for_dot.focus(LicenseName::new(license.to_string().clone()));
-        let html: String = HtmlPage::new()
-            .with_title("license")
-            .with_header(1, "dot:")
-            .with_preformatted(format!("{}", focused.get_as_dot()))
-            .with_header(1, "force_graph:")
-            .with_preformatted(to_force_graph_json(focused))
-            .to_html_string();
-        warp::reply::html(html)
+        format!("{}", focused.get_as_dot())
+    });
+
+    let graph_for_svg = graph.clone();
+    // GET /svg/MIT
+    let warp_svg = warp::path!(String / "svg").map(move |license: String| {
+        let focused = graph_for_svg.focus(LicenseName::new(license.to_string().clone()));
+        format!("{}", render_dot(focused))
     });
 
     let graph_for_graph = graph.clone();
     // GET /graph/MIT
-    let warp_graph = warp::path!("graph" / String).map(move |license: String| {
+    let warp_graph = warp::path!(String / "graph").map(move |license: String| {
         let focused = graph_for_graph.focus(LicenseName::new(license.to_string().clone()));
         warp::reply::html(to_force_graph_html(focused))
     });
 
     let graph_for_html = graph.clone();
     // GET /html/MIT
-    let warp_html = warp::path!("html" / String).map(move |license: String| {
+    let warp_html = warp::path!(String).map(move |license: String| {
         warp::reply::html(license_graph_to_tree_string(
             &graph_for_html,
             LicenseName::new(license.to_string().clone()),
         ))
     });
 
-    warp::serve(warp_index.or(warp_dot).or(warp_graph).or(warp_html))
+    warp::serve(warp_index.or(warp_dot).or(warp_svg).or(warp_graph).or(warp_html))
         .run(([127, 0, 0, 1], 3030))
         .await;
 }

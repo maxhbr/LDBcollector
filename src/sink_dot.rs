@@ -4,6 +4,15 @@ use std::fs::File;
 use std::path::PathBuf;
 use std::process::Command;
 
+use graphviz_rust::dot_generator::*;
+use graphviz_rust::dot_structures::*;
+use graphviz_rust::{
+    attributes::*,
+    cmd::{CommandArg, Format},
+    exec, parse,
+    printer::{DotPrinter, PrinterContext},
+};
+
 pub fn write_focused_dot(
     out_file: String,
     g: &LicenseGraph,
@@ -39,4 +48,17 @@ pub fn write_dot(out_file: String, g: &LicenseGraph) -> Result<(), std::io::Erro
     log::info!("... DONE gen dot svg");
 
     Ok(())
+}
+
+pub fn render_dot(graph: LicenseGraph) -> String {
+    log::debug!("parse dot");
+    let g = parse( &format!("{}", graph.get_as_dot()))
+        .unwrap();
+    log::debug!("render dot to svg");
+    exec(
+        g,
+        &mut PrinterContext::default(),
+        vec![Format::Svg.into()],
+    )
+    .unwrap()
 }
