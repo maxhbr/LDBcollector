@@ -46,7 +46,7 @@ fn main() {
             } else {
                 gen_builder_dump()
             }
-        },
+        }
         _ => gen_builder_dump(),
     };
     log::info!("... finished creating builder");

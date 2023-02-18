@@ -30,25 +30,22 @@ pub mod test_helper {
 
     pub fn test_graph(source_name: &str, graph: LicenseGraph, licenses: Vec<&str>) {
         let test_output_dir = format!("test_output/{}/", source_name);
-        fs::create_dir_all(test_output_dir.clone())
-            .expect("Unable to create dir");
+        fs::create_dir_all(test_output_dir.clone()).expect("Unable to create dir");
 
-        licenses.iter()
-           .for_each(|license| {
-                let needle = String::from(*license);
-                write_focused_dot(
-                    format!("{}{}.dot", &test_output_dir, &needle),
-                    &graph,
-                    LicenseName::new(needle),
-                )
-                .expect("failed to generate svg");
-           });
+        licenses.iter().for_each(|license| {
+            let needle = String::from(*license);
+            write_focused_dot(
+                format!("{}{}.dot", &test_output_dir, &needle),
+                &graph,
+                LicenseName::new(needle),
+            )
+            .expect("failed to generate svg");
+        });
     }
 
     pub fn test_builder(source_name: &str, builder: LicenseGraphBuilder, licenses: Vec<&str>) {
         let test_output_dir = format!("test_output/{}/", source_name);
-        fs::create_dir_all(test_output_dir.clone())
-            .expect("Unable to create dir");
+        fs::create_dir_all(test_output_dir.clone()).expect("Unable to create dir");
 
         let serialized = serde_json::to_string(&builder).unwrap();
         fs::write(format!("{}builder.json", &test_output_dir), serialized)
@@ -100,6 +97,10 @@ mod tests {
     fn all_origins_test() {
         let builder = get_builder();
 
-        test_helper::test_builder("all", builder, vec!("MIT", "BSD-3-Clause", "GPL-3.0-or-later"))
+        test_helper::test_builder(
+            "all",
+            builder,
+            vec!["MIT", "BSD-3-Clause", "GPL-3.0-or-later"],
+        )
     }
 }

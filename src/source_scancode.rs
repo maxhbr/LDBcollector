@@ -232,6 +232,10 @@ mod tests {
 
     #[test]
     fn tests_source() {
-        test_helper::test_single_origin("source_scancode", &ScancodeSource {}, vec!("MIT","GPL-3.0-only"))
+        test_helper::test_single_origin(
+            "source_scancode",
+            &ScancodeSource {},
+            vec!["MIT", "GPL-3.0-only"],
+        )
     }
 }

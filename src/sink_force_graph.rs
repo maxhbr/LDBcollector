@@ -29,29 +29,42 @@ fn node_index_to_id(idx: NodeIndex) -> String {
 fn to_force_graph(graph: LicenseGraph) -> ForceGraph {
     let graph = graph.get_internal_graph();
 
-    let mut nodes_map : HashMap<NodeIndex,ForceGraphNode> = HashMap::new();
-    let mut links : Vec<ForceGraphLink> = vec!();
+    let mut nodes_map: HashMap<NodeIndex, ForceGraphNode> = HashMap::new();
+    let mut links: Vec<ForceGraphLink> = vec![];
 
-    graph.edge_indices()
-        .for_each(|eidx|
-            match graph.edge_endpoints(eidx) {
-                Option::Some((lidx, ridx)) => {
-                    let eweight = graph.edge_weight(eidx).unwrap();
-                    let lweight = graph.node_weight(lidx).unwrap();
-                    let rweight = graph.node_weight(ridx).unwrap();
+    graph
+        .edge_indices()
+        .for_each(|eidx| match graph.edge_endpoints(eidx) {
+            Option::Some((lidx, ridx)) => {
+                let eweight = graph.edge_weight(eidx).unwrap();
+                let lweight = graph.node_weight(lidx).unwrap();
+                let rweight = graph.node_weight(ridx).unwrap();
 
-                    nodes_map.insert(lidx, ForceGraphNode{id: node_index_to_id(lidx), name: format!("{:?}", lweight)});
-                    nodes_map.insert(ridx, ForceGraphNode{id: node_index_to_id(ridx), name: format!("{:?}", rweight)});
+                nodes_map.insert(
+                    lidx,
+                    ForceGraphNode {
+                        id: node_index_to_id(lidx),
+                        name: format!("{:?}", lweight),
+                    },
+                );
+                nodes_map.insert(
+                    ridx,
+                    ForceGraphNode {
+                        id: node_index_to_id(ridx),
+                        name: format!("{:?}", rweight),
+                    },
+                );
 
-                    links.push(
-                        ForceGraphLink{source: node_index_to_id(lidx), target: node_index_to_id(ridx), name: format!("{:?}", eweight)}
-                    );
-                }
-                Option::None{} => {}
+                links.push(ForceGraphLink {
+                    source: node_index_to_id(lidx),
+                    target: node_index_to_id(ridx),
+                    name: format!("{:?}", eweight),
+                });
             }
-        );
+            Option::None {} => {}
+        });
 
-    let nodes : Vec<ForceGraphNode> = nodes_map.values().map(|node| node.clone()).collect();
+    let nodes: Vec<ForceGraphNode> = nodes_map.values().map(|node| node.clone()).collect();
 
     ForceGraph { nodes, links }
 }
@@ -60,7 +73,7 @@ pub fn to_force_graph_json(graph: LicenseGraph) -> String {
     serde_json::to_string(&to_force_graph(graph)).unwrap()
 }
 
-const HEADER : &str = r#"
+const HEADER: &str = r#"
 <head>
   <style> body { margin: 0; } </style>
   <script src="https://unpkg.com/force-graph"></script>
@@ -72,7 +85,7 @@ const HEADER : &str = r#"
   <script>
     const gData = 
 "#;
-const FOOTER : &str = r#"
+const FOOTER: &str = r#"
 ;
 
 let selfLoopLinks = {};

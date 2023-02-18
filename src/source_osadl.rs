@@ -1,6 +1,6 @@
+use super::model::*;
 use std::ffi::OsStr;
 use std::fs;
-use super::model::*;
 
 pub struct OsadlSource {}
 impl Source for OsadlSource {
@@ -58,6 +58,6 @@ mod tests {
 
     #[test]
     fn tests_source() {
-        test_helper::test_single_origin("source_osadl", &OsadlSource {}, vec!("BSD-3-Clause"))
+        test_helper::test_single_origin("source_osadl", &OsadlSource {}, vec!["BSD-3-Clause"])
     }
 }

@@ -189,11 +189,19 @@ mod tests {
 
     #[test]
     fn tests_copyleft_source() {
-        test_helper::test_single_origin("source_blueoakcouncil/copyleft", &CopyleftListSource {}, vec!("GPL-3.0-only"))
+        test_helper::test_single_origin(
+            "source_blueoakcouncil/copyleft",
+            &CopyleftListSource {},
+            vec!["GPL-3.0-only"],
+        )
     }
 
     #[test]
     fn tests_license_source() {
-        test_helper::test_single_origin("source_blueoakcouncil/license", &LicenseListSource {},  vec!("MIT"))
+        test_helper::test_single_origin(
+            "source_blueoakcouncil/license",
+            &LicenseListSource {},
+            vec!["MIT"],
+        )
     }
 }

@@ -6,8 +6,8 @@ use petgraph::stable_graph::StableGraph;
 use serde::Serialize;
 use serde_derive::{Deserialize, Serialize};
 use serde_json::{Result, Value};
-use std::collections::HashMap;
 use std::collections::hash_map::DefaultHasher;
+use std::collections::HashMap;
 use std::fmt;
 use std::hash::{Hash, Hasher};
 
@@ -195,7 +195,7 @@ impl LicenseGraph {
         }
     }
 
-    pub fn get_internal_graph(&self) -> &StableGraph::<LicenseGraphNode, LicenseGraphEdge> {
+    pub fn get_internal_graph(&self) -> &StableGraph<LicenseGraphNode, LicenseGraphEdge> {
         &self.graph
     }
 
@@ -349,10 +349,11 @@ impl LicenseGraph {
     }
 
     pub fn get_license_names(&self) -> Vec<&LicenseName> {
-        self.graph.node_weights()
+        self.graph
+            .node_weights()
             .filter_map(|w| match w {
                 LicenseGraphNode::LicenseNameNode { license_name } => Option::Some(license_name),
-                _ => Option::None{}
+                _ => Option::None {},
             })
             .collect()
     }
