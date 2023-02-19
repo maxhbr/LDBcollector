@@ -67,7 +67,6 @@ impl Source for CopyleftListSource {
                              name: family_name,
                              versions,
                          }| {
-                            let family_name = lic!(family_name);
                             let from_versions = versions
                                 .iter()
                                 .map(|l @ License { id, name, url: _ }| {
@@ -82,9 +81,7 @@ impl Source for CopyleftListSource {
                                 })
                                 .collect();
                             LicenseGraphBuilderTask::AddEdge {
-                                lefts: vec![LicenseGraphNode::LicenseNameNode {
-                                    license_name: family_name,
-                                }],
+                                lefts: vec![LicenseGraphNode::license_name(&family_name)],
                                 rights: Box::new(LicenseGraphBuilderTask::JoinTasks {
                                     tasks: from_versions,
                                 }),
@@ -93,7 +90,7 @@ impl Source for CopyleftListSource {
                         },
                     )
                     .collect();
-                let kind = LicenseGraphNode::mk_statement(kind);
+                let kind = LicenseGraphNode::license_type(kind);
                 LicenseGraphBuilderTask::AddEdge {
                     lefts: vec![kind],
                     rights: Box::new(LicenseGraphBuilderTask::JoinTasks {
@@ -105,7 +102,7 @@ impl Source for CopyleftListSource {
             .collect();
 
         vec![LicenseGraphBuilderTask::AddEdge {
-            lefts: vec![LicenseGraphNode::mk_statement("Copyleft")],
+            lefts: vec![LicenseGraphNode::license_type("Copyleft")],
             rights: Box::new(LicenseGraphBuilderTask::JoinTasks {
                 tasks: from_families_per_kind,
             }),
@@ -146,7 +143,7 @@ impl Source for LicenseListSource {
             ratings,
         } = read_blueoakcouncil_license_list().expect("parsing of copyleft list should succeed");
 
-        let kind = LicenseGraphNode::mk_statement("Permissive");
+        let kind = LicenseGraphNode::license_type("Permissive");
         let from_list = ratings
             .iter()
             .map(
@@ -156,7 +153,7 @@ impl Source for LicenseListSource {
                      licenses,
                  }| {
                     let from_licenses = licenses.iter().map(|l| add_license(l.clone())).collect();
-                    let rating = LicenseGraphNode::mk_statement(name);
+                    let rating = LicenseGraphNode::license_type(name);
                     let rating_note = LicenseGraphNode::note(notes);
                     LicenseGraphBuilderTask::AddEdgeLeft {
                         lefts: vec![rating_note],

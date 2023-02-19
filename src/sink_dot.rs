@@ -16,7 +16,7 @@ use graphviz_rust::{
 pub fn write_focused_dot(
     out_file: String,
     g: &LicenseGraph,
-    needle: LicenseName,
+    needle: String,
 ) -> Result<(), std::io::Error> {
     let focused = g.focus(needle);
     write_dot(out_file, &focused)

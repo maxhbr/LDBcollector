@@ -1,5 +1,2 @@
 digraph {
-    30 [ label = "BSD-3-Clause" ]
-    31 [ label = "$RULE" ]
-    31 -> 30 [ label = "AppliesTo" ]
 }

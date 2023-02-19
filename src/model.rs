@@ -183,8 +183,7 @@ impl LicenseData {
 pub enum LicenseGraphNode {
     Data(LicenseData),
     Note(String),
-    LicenseNameNode { license_name: LicenseName },
-    LicenseTextNode { license_text: String },
+    URL(String),
     Statement { statement_content: String },
     StatementRule { statement_content: String },
     StatementJson { statement_content: Value },
@@ -204,6 +203,9 @@ impl LicenseGraphNode {
     }
     pub fn note(note: &str) -> Self {
         Self::Note(String::from(note))
+    }
+    pub fn url(url: &str) -> Self {
+        Self::URL(String::from(url))
     }
 
 
@@ -228,11 +230,8 @@ impl fmt::Debug for LicenseGraphNode {
             Self::Note (_) => {
                 write!(f, "$NOTE")
             }
-            Self::LicenseNameNode { license_name } => {
-                write!(f, "{}", license_name)
-            }
-            Self::LicenseTextNode { license_text: _ } => {
-                write!(f, "$TEXT")
+            Self::URL (url) => {
+                write!(f, "{}", url)
             }
             Self::Statement { statement_content } => {
                 write!(f, "{}", statement_content)
@@ -285,15 +284,11 @@ pub enum LicenseGraphBuilderTask {
 impl LicenseGraphBuilderTask {
     pub fn mk_aliases_task(best: String, other_names: Vec<String>) -> Self {
         LicenseGraphBuilderTask::AddEdge {
-            lefts: vec![LicenseGraphNode::LicenseNameNode {
-                license_name: LicenseName::new(best),
-            }],
+            lefts: vec![LicenseGraphNode::license_name(&best)],
             rights: Box::new(LicenseGraphBuilderTask::AddNodes {
                 nodes: other_names
                     .iter()
-                    .map(|other_name| LicenseGraphNode::LicenseNameNode {
-                        license_name: LicenseName::new(other_name.clone()),
-                    })
+                    .map(|other_name| LicenseGraphNode::license_name(other_name))
                     .collect(),
             }),
             edge: LicenseGraphEdge::Same,
@@ -327,35 +322,33 @@ impl LicenseGraph {
         &self.graph
     }
 
-    fn get_idx_of_node(&self, node: &LicenseGraphNode) -> Option<NodeIndex> {
+    fn get_idxs_of_node(&self, node: &LicenseGraphNode) -> Vec<NodeIndex> {
         self.graph
             .node_indices()
-            .filter_map(|idx| {
-                self.graph
-                    .node_weight(idx)
-                    .map(|weight| (idx, weight.clone()))
-            })
-            .filter(|(_, weight)| *node == *weight)
-            .map(|(idx, _)| idx.clone())
-            .next()
+            .filter_map(|idx|
+                self.graph.node_weight(idx)
+                    .filter(|weight| *weight == node)
+                    .map(|_| idx))
+            .collect()
     }
 
-    pub fn get_idx_of_license(&self, license_name: LicenseName) -> Option<NodeIndex> {
-        let node = LicenseGraphNode::LicenseNameNode {
-            license_name: license_name,
-        };
-        self.get_idx_of_node(&node)
+    pub fn get_idxs_of_license(&self, license_name: String) -> Vec<NodeIndex> {
+        let node = LicenseGraphNode::license_name(&license_name);
+        self.get_idxs_of_node(&node)
     }
 
-    pub fn focus(&self, license_name: LicenseName) -> Self {
+    pub fn focus(&self, license_name: String) -> Self {
         let mut s = self.clone();
 
-        let root_idx = self.get_idx_of_license(license_name).unwrap();
+        let root_idxs = self.get_idxs_of_license(license_name);
 
         s.graph.retain_nodes(|frozen_s, idx: NodeIndex| {
-            let incomming = has_path_connecting(&self.graph, idx, root_idx, Option::None);
-            let outgoing = has_path_connecting(&self.graph, root_idx, idx, Option::None);
-            incomming || outgoing
+            root_idxs.iter()
+                .any(|root_idx| {
+                    let incomming = has_path_connecting(&self.graph, idx, *root_idx, Option::None);
+                    let outgoing = has_path_connecting(&self.graph, *root_idx, idx, Option::None);
+                    incomming || outgoing
+                })
         });
         s.node_origins
             .retain(|idx, _| s.graph.node_weight(*idx).is_some());
@@ -365,12 +358,12 @@ impl LicenseGraph {
     }
 
     fn add_node(&mut self, node: &LicenseGraphNode) -> NodeIndex {
-        match self.get_idx_of_node(&node) {
-            Some(idx) => idx,
-            None => {
-                let idx = self.graph.add_node(node.clone());
-                idx
-            }
+        let idxs = self.get_idxs_of_node(&node);
+        if idxs.len() > 0 {
+            *idxs.iter().next().unwrap()
+        } else {
+            let idx = self.graph.add_node(node.clone());
+            idx
         }
     }
     fn add_edges(
@@ -508,7 +501,18 @@ impl LicenseGraph {
         self.graph
             .node_weights()
             .filter_map(|w| match w {
-                LicenseGraphNode::LicenseNameNode { license_name } => Option::Some(license_name),
+                LicenseGraphNode::Data(data) => {
+                    match data {
+                        LicenseData::LicenseIdentifier(license_identifier) => {
+                            match license_identifier {
+                                LicenseIdentifier::LicenseName(license_name) => Option::Some(license_name),
+                            }
+                        },
+                        LicenseData::LicenseType(_) => Option::None {},
+                        LicenseData::LicenseText(_) => Option::None {},
+                        LicenseData::LicenseFlag(_) => Option::None {},
+                    }
+                }
                 _ => Option::None {},
             })
             .collect()
@@ -583,14 +587,10 @@ pub fn demo() -> LicenseGraph {
         &Origin::new_with_file("Origin_name", "https://domain.invalid/license.txt");
 
     let add_nodes_task = LicenseGraphBuilderTask::AddNodes {
-        nodes: vec![LicenseGraphNode::LicenseNameNode {
-            license_name: LicenseName::new(String::from("MIT")),
-        }],
+        nodes: vec![LicenseGraphNode::license_name("MIT")],
     };
     let add_alias_task = LicenseGraphBuilderTask::AddEdge {
-        lefts: vec![LicenseGraphNode::LicenseNameNode {
-            license_name: LicenseName::new(String::from("MIT License")),
-        }],
+        lefts: vec![LicenseGraphNode::license_name("MIT License")],
         rights: Box::new(add_nodes_task),
         edge: LicenseGraphEdge::Same,
     };
@@ -623,12 +623,9 @@ mod tests {
     #[test]
     fn license_name_statement_tests() {
         assert_eq!(
-            LicenseGraphNode::LicenseNameNode {
-                license_name: LicenseName::new(String::from("MIT"))
-            },
-            LicenseGraphNode::LicenseNameNode {
-                license_name: LicenseName::new(String::from("mIt"))
-            }
+            LicenseGraphNode::license_name("MIT")
+            ,
+            LicenseGraphNode::license_name("mIt")
         );
     }
 

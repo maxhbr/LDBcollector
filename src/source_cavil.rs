@@ -23,13 +23,9 @@ impl Source for CavilSource {
                 let id = pair.next().unwrap();
                 let alias = pair.next().unwrap();
                 LicenseGraphBuilderTask::AddEdge {
-                    lefts: vec![LicenseGraphNode::LicenseNameNode {
-                        license_name: lic!(alias),
-                    }],
+                    lefts: vec![LicenseGraphNode::license_name(alias)],
                     rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                        nodes: vec![LicenseGraphNode::LicenseNameNode {
-                            license_name: lic!(id),
-                        }],
+                        nodes: vec![LicenseGraphNode::license_name(id)],
                     }),
                     edge: LicenseGraphEdge::HintsTowards,
                 }

@@ -37,9 +37,7 @@ impl Source for OsadlSource {
                             statement_content: contents,
                         }],
                         rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                            nodes: vec![LicenseGraphNode::LicenseNameNode {
-                                license_name: lic!(lic_str),
-                            }],
+                            nodes: vec![LicenseGraphNode::license_name(lic_str)],
                         }),
                         edge: LicenseGraphEdge::AppliesTo,
                     }

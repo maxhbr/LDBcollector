@@ -103,15 +103,11 @@ impl Source for OslcHandbookSource {
                         LicenseGraphBuilderTask::AddEdgeUnion {
                             lefts: notes,
                             rights: Box::new(LicenseGraphBuilderTask::AddEdgeLeft {
-                                lefts: vec![LicenseGraphNode::LicenseNameNode {
-                                    license_name: lic!(name),
-                                }],
+                                lefts: vec![LicenseGraphNode::license_name(name)],
                                 rights: Box::new(LicenseGraphBuilderTask::AddNodes {
                                     nodes: licenseId
                                         .iter()
-                                        .map(|licenseId| LicenseGraphNode::LicenseNameNode {
-                                            license_name: lic!(licenseId),
-                                        })
+                                        .map(|licenseId| LicenseGraphNode::license_name(licenseId))
                                         .collect(),
                                 }),
                                 edge: LicenseGraphEdge::Same,

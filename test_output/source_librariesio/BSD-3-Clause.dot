@@ -1,0 +1,5 @@
+digraph {
+    36 [ label = "$DATA" ]
+    48 [ label = "$DATA" ]
+    48 -> 36 [ label = "AppliesTo" ]
+}

@@ -71,9 +71,9 @@ fn license_graph_to_tree_for_node(
 pub fn license_graph_to_tree(
     direction: Direction,
     graph: &LicenseGraph,
-    license_name: LicenseName,
+    license_name: String,
 ) -> LicenseGraphTree {
-    let root_idx = graph.get_idx_of_license(license_name).unwrap();
+    let root_idx = *graph.get_idxs_of_license(license_name).iter().next().unwrap();
     license_graph_to_tree_for_node(direction, graph, root_idx, HashSet::new())
 }
 
@@ -114,10 +114,7 @@ fn tree_to_html(
                 match weight {
                     LicenseGraphNode::Data (d) => c.add_preformatted(format!("{:#?}", d)),
                     LicenseGraphNode::Note ( note ) => c.add_paragraph(note),
-                    LicenseGraphNode::LicenseNameNode { license_name } => {}
-                    LicenseGraphNode::LicenseTextNode { license_text } => {
-                        c.add_preformatted(license_text)
-                    }
+                    LicenseGraphNode::URL ( url ) => c.add_paragraph(url),
                     LicenseGraphNode::Statement { statement_content } => {
                         c.add_paragraph(statement_content)
                     }
@@ -154,13 +151,13 @@ fn tree_to_html(
 pub fn license_graph_to_html(
     direction: Direction,
     graph: &LicenseGraph,
-    license_name: LicenseName,
+    license_name: String,
 ) -> Container {
     let tree = license_graph_to_tree(direction, graph, license_name);
     tree_to_html(direction, &tree, Option::None, &mut HashSet::new())
 }
 
-pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_name: LicenseName) -> String {
+pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_name: String) -> String {
     let focused = graph.focus(license_name.clone());
     HtmlPage::new()
         .with_title(format!("{:?}", &license_name))

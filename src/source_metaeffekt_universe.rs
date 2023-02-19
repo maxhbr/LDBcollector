@@ -49,34 +49,24 @@ impl Source for MetaeffektUniverseSource {
                  }| {
                     let nodes_from_otherIds: Vec<_> = otherIds
                         .iter()
-                        .map(|otherId| LicenseGraphNode::LicenseNameNode {
-                            license_name: lic!(otherId),
-                        })
+                        .map(|otherId| LicenseGraphNode::license_name(otherId))
                         .collect();
                     let nodes_from_alternativeNames: Vec<_> = alternativeNames
                         .iter()
-                        .map(|alternativeName| LicenseGraphNode::LicenseNameNode {
-                            license_name: lic!(alternativeName),
-                        })
+                        .map(|alternativeName| LicenseGraphNode::license_name(alternativeName))
                         .collect();
                     LicenseGraphBuilderTask::AddEdge {
                         lefts: [
                             vec![
-                                LicenseGraphNode::LicenseNameNode {
-                                    license_name: lic!(shortName),
-                                },
-                                LicenseGraphNode::LicenseNameNode {
-                                    license_name: lic!(spdxIdentifier),
-                                },
+                                LicenseGraphNode::license_name(&shortName),
+                                LicenseGraphNode::license_name(&spdxIdentifier),
                             ],
                             nodes_from_alternativeNames,
                             nodes_from_otherIds,
                         ]
                         .concat(),
                         rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                            nodes: vec![LicenseGraphNode::LicenseNameNode {
-                                license_name: lic!(canonicalName),
-                            }],
+                            nodes: vec![LicenseGraphNode::license_name(&canonicalName)],
                         }),
                         edge: LicenseGraphEdge::Same,
                     }

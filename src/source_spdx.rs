@@ -14,9 +14,7 @@ impl Source for SpdxSource {
             .flat_map(|i @ (name, full_name, _)| {
                 let license_name = String::from(*name);
                 let full_name = String::from(*full_name);
-                let node = LicenseGraphNode::LicenseNameNode {
-                    license_name: lic!(license_name),
-                };
+                let node = LicenseGraphNode::license_name(&license_name);
                 let add_json_task = LicenseGraphBuilderTask::AddEdge {
                     lefts: vec![LicenseGraphNode::mk_json_statement(i)],
                     rights: Box::new(LicenseGraphBuilderTask::AddNodes {
@@ -26,9 +24,7 @@ impl Source for SpdxSource {
                 };
                 vec![
                     LicenseGraphBuilderTask::AddEdge {
-                        lefts: vec![LicenseGraphNode::LicenseNameNode {
-                            license_name: lic!(full_name),
-                        }],
+                        lefts: vec![LicenseGraphNode::license_name(&full_name)],
                         rights: Box::new(LicenseGraphBuilderTask::AddNodes {
                             nodes: vec![node.clone()],
                         }),
@@ -78,13 +74,9 @@ impl Source for EmbarkSpdxSource {
                 let imprecise = String::from(*imprecise);
                 let better = String::from(*better);
                 LicenseGraphBuilderTask::AddEdge {
-                    lefts: vec![LicenseGraphNode::LicenseNameNode {
-                        license_name: lic_string!(imprecise),
-                    }],
+                    lefts: vec![LicenseGraphNode::license_name(&imprecise)],
                     rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                        nodes: vec![LicenseGraphNode::LicenseNameNode {
-                            license_name: lic_string!(better),
-                        }],
+                        nodes: vec![LicenseGraphNode::license_name(&better)],
                     }),
                     edge: LicenseGraphEdge::HintsTowards,
                 }

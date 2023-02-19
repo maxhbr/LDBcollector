@@ -37,7 +37,7 @@ pub mod test_helper {
             write_focused_dot(
                 format!("{}{}.dot", &test_output_dir, &needle),
                 &graph,
-                LicenseName::new(needle),
+                needle,
             )
             .expect("failed to generate svg");
         });

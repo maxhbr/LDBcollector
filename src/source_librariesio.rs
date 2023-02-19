@@ -30,15 +30,11 @@ impl Source for LibrariesioSource {
             .expect("should be able to parse librariesio json");
         map.iter()
             .map(|(ty, licenses)| LicenseGraphBuilderTask::AddEdge {
-                lefts: vec![LicenseGraphNode::Statement {
-                    statement_content: ty.clone(),
-                }],
+                lefts: vec![LicenseGraphNode::license_type(ty)],
                 rights: Box::new(LicenseGraphBuilderTask::AddNodes {
                     nodes: licenses
                         .iter()
-                        .map(|license| LicenseGraphNode::LicenseNameNode {
-                            license_name: lic!(license),
-                        })
+                        .map(|license| LicenseGraphNode::license_name(license))
                         .collect(),
                 }),
                 edge: LicenseGraphEdge::AppliesTo,

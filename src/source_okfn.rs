@@ -65,20 +65,14 @@ impl Source for OkfnSource {
                     LicenseGraphBuilderTask::AddEdge {
                         lefts: legacy_ids
                             .iter()
-                            .map(|id| LicenseGraphNode::LicenseNameNode {
-                                license_name: lic!(id),
-                            })
+                            .map(|id| LicenseGraphNode::license_name(id))
                             .collect(),
                         rights: Box::new(LicenseGraphBuilderTask::AddEdgeLeft {
-                            lefts: vec![LicenseGraphNode::Statement {
-                                statement_content: url,
-                            }],
+                            lefts: vec![LicenseGraphNode::url(&url)],
                             rights: Box::new(LicenseGraphBuilderTask::AddNodes {
                                 nodes: vec![id, title]
                                     .iter()
-                                    .map(|license_name| LicenseGraphNode::LicenseNameNode {
-                                        license_name: lic!(license_name),
-                                    })
+                                    .map(|license_name| LicenseGraphNode::license_name(license_name))
                                     .collect(),
                             }),
                             edge: LicenseGraphEdge::AppliesTo,
