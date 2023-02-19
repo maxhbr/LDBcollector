@@ -4,32 +4,33 @@ use crate::sink_force_graph::*;
 use crate::sink_html::*;
 use crate::*;
 use build_html::*;
-use warp::Filter;
 use regex::Regex;
+use warp::Filter;
 
 pub async fn serve(graph: Box<LicenseGraph>) {
     let graph_for_index = graph.clone();
     // GET / -> index html
     let warp_index = warp::path::end().map(move || {
         let license_names = graph_for_index.get_license_names();
-        let re = Regex::new(r"^[0-9A-Za-z_\-+]+$").unwrap();
+        let re = Regex::new(r"^[0-9A-Za-z_\-+.,]+$").unwrap();
         let html: String = HtmlPage::new()
             .with_title("ldbcollector")
             .with_header(1, "Licenses:")
-            .with_container(license_names.iter()
-                .filter(|license_name| re.is_match(&format!("{}", license_name)))
-                .fold(
-                    Container::new(ContainerType::UnorderedList),
-                    |acc, license_name| {
-                        acc.with_container(
-                            Container::new(ContainerType::Div)
-                                .with_link(license_name, format!("{:?}", license_name))
-                                .with_preformatted("")
-                                .with_link(format!("{}/graph", license_name), "graph")
-                                ,
-                        )
-                    },
-                )
+            .with_container(
+                license_names
+                    .iter()
+                    .filter(|license_name| re.is_match(&format!("{}", license_name)))
+                    .fold(
+                        Container::new(ContainerType::UnorderedList),
+                        |acc, license_name| {
+                            acc.with_container(
+                                Container::new(ContainerType::Div)
+                                    .with_link(license_name, format!("{:?}", license_name))
+                                    .with_preformatted("")
+                                    .with_link(format!("{}/graph", license_name), "graph"),
+                            )
+                        },
+                    ),
             )
             .to_html_string();
 
@@ -52,13 +53,9 @@ pub async fn serve(graph: Box<LicenseGraph>) {
         ))
     });
 
-    warp::serve(
-        warp_index
-            .or(warp_graph)
-            .or(warp_html),
-    )
-    .run(([127, 0, 0, 1], 3030))
-    .await;
+    warp::serve(warp_index.or(warp_graph).or(warp_html))
+        .run(([127, 0, 0, 1], 3030))
+        .await;
 }
 
 pub fn sync_serve(graph: Box<LicenseGraph>) {

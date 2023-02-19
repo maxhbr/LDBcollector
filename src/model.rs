@@ -78,16 +78,136 @@ pub trait HasOrigin<'a> {
 //## end Origin
 //#############################################################################
 
+//#############################################################################
+//## start License Data
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub enum LicenseIdentifier {
+    LicenseName(LicenseName)
+}
+impl LicenseIdentifier {
+    pub fn new(name: &str) -> Self {
+        Self::LicenseName(LicenseName::new(String::from(name)))
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub enum LicenseType {
+    PublicDomain (Option<String>),
+    Permissive (Option<String>),
+    Copyleft (Option<String>),
+    WeaklyProtective (Option<String>),
+    StronglyProtective (Option<String>),
+    NetworkProtective (Option<String>),
+    Unknown (Option<String>),
+    Unlicensed (Option<String>),
+}
+impl LicenseType{
+    fn get_names_for_type(&self) -> Vec<&str> {
+        match self {
+            LicenseType::PublicDomain(_) => vec!( "PublicDomain", "Public Domain" ),
+            LicenseType::Permissive(_) => vec!( "Permissive" ),
+            LicenseType::Copyleft(_) => vec!("Copyleft"),
+            LicenseType::WeaklyProtective(_) => vec!( "WeaklyProtective", "Weakly Protective", "weak"),
+            LicenseType::StronglyProtective(_) => vec!( "StronglyProtective", "Strongly Protective", "strong"),
+            LicenseType::NetworkProtective(_) => vec!( "NetworkProtective", "Network Protective", "network"),
+            LicenseType::Unlicensed(_) => vec!( "Unlicensed"),
+            LicenseType::Unknown(_) => vec!( "Unknown"),
+        }
+    }
+
+    fn type_matches_type(self, needle: &str) -> Option<Self> {
+        let needle_lower = needle.to_lowercase();
+        let matches = self.get_names_for_type()
+            .iter()
+            .map(|s| s.to_lowercase())
+            .any(|s| s == needle_lower);
+        if matches {
+            Option::Some(self)
+        } else {
+            Option::None
+        }
+    }
+
+    pub fn new(ty: &str) -> Self {
+        if let Option::Some(new) = Self::PublicDomain(Option::None).type_matches_type(ty) {
+            new
+        } else if let Option::Some(new) = Self::Permissive(Option::None).type_matches_type(ty) {
+            new
+        } else if let Option::Some(new) = Self::Copyleft(Option::None).type_matches_type(ty) {
+            new
+        } else if let Option::Some(new) = Self::WeaklyProtective(Option::None).type_matches_type(ty) {
+            new
+        } else if let Option::Some(new) = Self::StronglyProtective(Option::None).type_matches_type(ty) {
+            new
+        } else if let Option::Some(new) = Self::NetworkProtective(Option::None).type_matches_type(ty) {
+            new
+        } else if let Option::Some(new) = Self::Unlicensed(Option::None).type_matches_type(ty) {
+            new
+        } else {
+            let ty_str = String::from(ty);
+            Self::Unknown(Option::Some(ty_str))
+        }
+    }
+}
+impl core::fmt::Display for LicenseType {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{}", self.get_names_for_type()[0])
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub enum LicenseData {
+    LicenseIdentifier(LicenseIdentifier),
+    LicenseType(LicenseType),
+    LicenseText(String),
+    LicenseFlag(String),
+}
+impl LicenseData {
+    pub fn license_name(name: &str) -> Self {
+        LicenseData::LicenseIdentifier(LicenseIdentifier::new(name))
+    }
+    pub fn license_type(ty: &str) -> Self {
+        LicenseData::LicenseType(LicenseType::new(ty))
+    }
+    pub fn license_text(text: &str) -> Self {
+        LicenseData::LicenseText(String::from(text))
+    }
+    pub fn license_flag(flag: &str) -> Self {
+        LicenseData::LicenseFlag(String::from(flag))
+    }
+}
+//## end License Data
+//#############################################################################
+
 #[derive(Clone, Eq, PartialEq, Serialize, Deserialize)]
 pub enum LicenseGraphNode {
+    Data(LicenseData),
+    Note(String),
     LicenseNameNode { license_name: LicenseName },
     LicenseTextNode { license_text: String },
     Statement { statement_content: String },
     StatementRule { statement_content: String },
     StatementJson { statement_content: Value },
-    Note { text: String },
 }
-impl<'a> LicenseGraphNode {
+impl LicenseGraphNode {
+    pub fn license_name(name: &str) -> Self {
+        Self::Data(LicenseData::license_name(name))
+    }
+    pub fn license_type(ty: &str) -> Self {
+        Self::Data(LicenseData::license_type(ty))
+    }
+    pub fn license_text(text: &str) -> Self {
+        Self::Data(LicenseData::license_text(text))
+    }
+    pub fn license_flag(text: &str) -> Self {
+        Self::Data(LicenseData::license_flag(text))
+    }
+    pub fn note(note: &str) -> Self {
+        Self::Note(String::from(note))
+    }
+
+
+
     pub fn mk_statement(i: &str) -> Self {
         Self::Statement {
             statement_content: String::from(i),
@@ -102,6 +222,12 @@ impl<'a> LicenseGraphNode {
 impl fmt::Debug for LicenseGraphNode {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
+            Self::Data(d) => {
+                write!(f, "$DATA")
+            }
+            Self::Note (_) => {
+                write!(f, "$NOTE")
+            }
             Self::LicenseNameNode { license_name } => {
                 write!(f, "{}", license_name)
             }
@@ -118,9 +244,6 @@ impl fmt::Debug for LicenseGraphNode {
             }
             Self::StatementJson { statement_content } => {
                 write!(f, "$JSON")
-            }
-            Self::Note { text: _ } => {
-                write!(f, "$NOTE")
             }
         }
     }

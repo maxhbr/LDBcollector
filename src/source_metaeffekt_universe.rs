@@ -32,22 +32,21 @@ impl Source for MetaeffektUniverseSource {
                     let contents =
                         fs::read_to_string(&json).expect("Should have been able to read YAML");
                     log::debug!("parse: {:?}", &json);
-                    serde_yaml::from_str(&contents)
-                        .ok()
+                    serde_yaml::from_str(&contents).ok()
                 } else {
                     Option::None {}
                 }
             })
             .map(
                 |MetaeffektLicense {
-                        canonicalName,
-                        category,
-                        shortName,
-                        spdxIdentifier,
-                        openCoDEStatus,
-                        alternativeNames,
-                        otherIds,
-                    }| {
+                     canonicalName,
+                     category,
+                     shortName,
+                     spdxIdentifier,
+                     openCoDEStatus,
+                     alternativeNames,
+                     otherIds,
+                 }| {
                     let nodes_from_otherIds: Vec<_> = otherIds
                         .iter()
                         .map(|otherId| LicenseGraphNode::LicenseNameNode {

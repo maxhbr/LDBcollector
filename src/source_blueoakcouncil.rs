@@ -157,9 +157,7 @@ impl Source for LicenseListSource {
                  }| {
                     let from_licenses = licenses.iter().map(|l| add_license(l.clone())).collect();
                     let rating = LicenseGraphNode::mk_statement(name);
-                    let rating_note = LicenseGraphNode::Note {
-                        text: notes.clone(),
-                    };
+                    let rating_note = LicenseGraphNode::note(notes);
                     LicenseGraphBuilderTask::AddEdgeLeft {
                         lefts: vec![rating_note],
                         rights: Box::new(LicenseGraphBuilderTask::AddEdge {

@@ -190,24 +190,23 @@ impl Source for ScancodeSource {
                         license,
                     },
                 )| {
-                    let category = LicenseGraphNode::mk_statement(category);
-                    let mut statements = vec![category];
+                    let mut statements = vec![LicenseGraphNode::license_type(category)];
 
                     if *is_deprecated {
-                        statements.push(LicenseGraphNode::mk_statement("is_deprecated"));
+                        statements.push(LicenseGraphNode::license_flag("is_deprecated"));
                     };
                     if *is_exception {
-                        statements.push(LicenseGraphNode::mk_statement("is_exception"));
+                        statements.push(LicenseGraphNode::license_flag("is_exception"));
                     };
                     text.clone().map(|text| {
-                        statements.push(LicenseGraphNode::LicenseTextNode { license_text: text })
+                        statements.push(LicenseGraphNode::license_text(&text))
                     });
                     osi_url.clone().map(|text| {
-                        statements.push(LicenseGraphNode::mk_statement("is_osi_approved"))
+                        statements.push(LicenseGraphNode::license_flag("is_osi_approved"))
                     });
                     notes
                         .clone()
-                        .map(|notes| statements.push(LicenseGraphNode::Note { text: notes }));
+                        .map(|notes| statements.push(LicenseGraphNode::note( &notes )));
 
                     let names = l.clone().get_other_license_names();
                     log::debug!("{} -> {:?}", key, names);

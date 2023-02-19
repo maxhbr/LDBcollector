@@ -13,6 +13,7 @@ pub struct OslcHandbookTerm {
     description: String,
     use_case: Option<Vec<String>>,
     compliance_notes: Option<String>,
+    seeAlso: Option<Vec<String>>,
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -76,14 +77,14 @@ impl Source for OslcHandbookSource {
                         _ => false,
                     })
             })
-            .map(|path| {
+            .filter_map(|path| {
                 log::debug!("read: {:?}", &path);
                 let contents =
                     fs::read_to_string(&path).expect("Should have been able to read YAML");
                 log::debug!("parse: {:?}", &path);
-                let handbooks: OslcHandbook =
-                    serde_yaml::from_str(&contents).expect("Should have been able to parse YAML");
-                (contents, handbooks)
+                serde_yaml::from_str(&contents)
+                    .ok()
+                    .map(|handbooks: OslcHandbook| (contents, handbooks))
             })
             .map(|(contents, OslcHandbook(handbooks))| {
                 let rights = handbooks
@@ -91,17 +92,16 @@ impl Source for OslcHandbookSource {
                     .map(|handbook| {
                         let licenseId = &handbook.licenseId;
                         let name = &handbook.name;
-                        let notes = &handbook.notes;
+                        let notes : Vec<LicenseGraphNode> = handbook.notes
+                           .iter()
+                           .map(|notes| LicenseGraphNode::note(notes))
+                           .collect();
                         let terms = &handbook.terms;
 
                         log::debug!("{}", name);
 
                         LicenseGraphBuilderTask::AddEdgeUnion {
-                            lefts: vec!(
-                                // LicenseGraphNode::Note {
-                                //     text: format!("{:?}",notes)
-                                // }
-                            ),
+                            lefts: notes,
                             rights: Box::new(LicenseGraphBuilderTask::AddEdgeLeft {
                                 lefts: vec![LicenseGraphNode::LicenseNameNode {
                                     license_name: lic!(name),

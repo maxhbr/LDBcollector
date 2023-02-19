@@ -112,6 +112,8 @@ fn tree_to_html(
                 );
                 written_nodes.insert(*id);
                 match weight {
+                    LicenseGraphNode::Data (d) => c.add_preformatted(format!("{:#?}", d)),
+                    LicenseGraphNode::Note ( note ) => c.add_paragraph(note),
                     LicenseGraphNode::LicenseNameNode { license_name } => {}
                     LicenseGraphNode::LicenseTextNode { license_text } => {
                         c.add_preformatted(license_text)
@@ -125,7 +127,6 @@ fn tree_to_html(
                     LicenseGraphNode::StatementJson { statement_content } => {
                         c.add_preformatted(format!("{:#?}", statement_content))
                     }
-                    LicenseGraphNode::Note { text } => c.add_paragraph(text),
                 };
                 c.add_header(5, "Origins:");
                 c.add_container(origins.iter().fold(
