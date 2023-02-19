@@ -150,6 +150,11 @@ pub enum LicenseGraphBuilderTask {
         rights: Box<LicenseGraphBuilderTask>,
         edge: LicenseGraphEdge,
     },
+    AddEdgeUnion {
+        lefts: Vec<LicenseGraphNode>,
+        rights: Box<LicenseGraphBuilderTask>,
+        edge: LicenseGraphEdge,
+    },
     JoinTasks {
         tasks: Vec<LicenseGraphBuilderTask>,
     },
@@ -265,12 +270,11 @@ impl LicenseGraph {
         let idx = self.add_node(node);
         match self.node_origins.get_vec(&idx) {
             Option::Some(vec) => {
-                if ! vec.contains(origin) {
+                if !vec.contains(origin) {
                     self.node_origins.insert(idx, origin.clone())
                 }
-            },
-            Option::None{} => 
-                self.node_origins.insert(idx, origin.clone())
+            }
+            Option::None {} => self.node_origins.insert(idx, origin.clone()),
         };
         idx
     }
@@ -344,6 +348,27 @@ impl LicenseGraph {
                             );
                         });
                         right_idxs
+                    }
+                    LicenseGraphBuilderTask::AddEdgeUnion {
+                        lefts,
+                        rights,
+                        edge,
+                    } => {
+                        let right_idxs = self.apply_task(rights, origin);
+                        let left_idxs = lefts
+                            .iter()
+                            .map(|left| {
+                                let left_idx = self.add_node_with_origin(left, origin);
+                                self.add_edges_with_origin(
+                                    left_idx,
+                                    right_idxs.clone(),
+                                    edge.clone(),
+                                    origin,
+                                );
+                                left_idx
+                            })
+                            .collect();
+                        [right_idxs, left_idxs].concat()
                     }
                     LicenseGraphBuilderTask::JoinTasks { tasks } => tasks
                         .iter()

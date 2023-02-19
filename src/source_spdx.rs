@@ -5,7 +5,7 @@ use spdx::*;
 pub struct SpdxSource {}
 impl Source for SpdxSource {
     fn get_origin(&self) -> Origin {
-        Origin::new_with_file("SPDX", "https://spdx.org/licenses/")
+        Origin::new_with_url("SPDX", "https://spdx.org/licenses/")
     }
 
     fn get_tasks(&self) -> Vec<LicenseGraphBuilderTask> {

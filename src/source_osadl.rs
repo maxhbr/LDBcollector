@@ -5,7 +5,7 @@ use std::fs;
 pub struct OsadlSource {}
 impl Source for OsadlSource {
     fn get_origin(&self) -> Origin {
-        Origin::new_with_file(
+        Origin::new_with_url(
             "OSADL",
             "https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html",
         )

@@ -52,13 +52,7 @@ pub fn write_dot(out_file: String, g: &LicenseGraph) -> Result<(), std::io::Erro
 
 pub fn render_dot(graph: LicenseGraph) -> String {
     log::debug!("parse dot");
-    let g = parse( &format!("{}", graph.get_as_dot()))
-        .unwrap();
+    let g = parse(&format!("{}", graph.get_as_dot())).unwrap();
     log::debug!("render dot to svg");
-    exec(
-        g,
-        &mut PrinterContext::default(),
-        vec![Format::Svg.into()],
-    )
-    .unwrap()
+    exec(g, &mut PrinterContext::default(), vec![Format::Svg.into()]).unwrap()
 }

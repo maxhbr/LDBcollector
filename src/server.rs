@@ -5,41 +5,35 @@ use crate::sink_html::*;
 use crate::*;
 use build_html::*;
 use warp::Filter;
+use regex::Regex;
 
 pub async fn serve(graph: Box<LicenseGraph>) {
     let graph_for_index = graph.clone();
     // GET / -> index html
     let warp_index = warp::path::end().map(move || {
         let license_names = graph_for_index.get_license_names();
+        let re = Regex::new(r"^[0-9A-Za-z_\-+]+$").unwrap();
         let html: String = HtmlPage::new()
             .with_title("ldbcollector")
             .with_header(1, "Licenses:")
-            .with_container(license_names.iter().fold(
-                Container::new(ContainerType::Div),
-                |acc, license_name| {
-                    acc.with_container(Container::new(ContainerType::Div).with_link(
-                        license_name,
-                        format!("{:?}", license_name),
-                    ))
-                },
-            ))
+            .with_container(license_names.iter()
+                .filter(|license_name| re.is_match(&format!("{}", license_name)))
+                .fold(
+                    Container::new(ContainerType::UnorderedList),
+                    |acc, license_name| {
+                        acc.with_container(
+                            Container::new(ContainerType::Div)
+                                .with_link(license_name, format!("{:?}", license_name))
+                                .with_preformatted("")
+                                .with_link(format!("{}/graph", license_name), "graph")
+                                ,
+                        )
+                    },
+                )
+            )
             .to_html_string();
 
         warp::reply::html(html)
-    });
-
-    let graph_for_dot = graph.clone();
-    // GET /dot/MIT
-    let warp_dot = warp::path!(String / "dot").map(move |license: String| {
-        let focused = graph_for_dot.focus(LicenseName::new(license.to_string().clone()));
-        format!("{}", focused.get_as_dot())
-    });
-
-    let graph_for_svg = graph.clone();
-    // GET /svg/MIT
-    let warp_svg = warp::path!(String / "svg").map(move |license: String| {
-        let focused = graph_for_svg.focus(LicenseName::new(license.to_string().clone()));
-        format!("{}", render_dot(focused))
     });
 
     let graph_for_graph = graph.clone();
@@ -58,9 +52,13 @@ pub async fn serve(graph: Box<LicenseGraph>) {
         ))
     });
 
-    warp::serve(warp_index.or(warp_dot).or(warp_svg).or(warp_graph).or(warp_html))
-        .run(([127, 0, 0, 1], 3030))
-        .await;
+    warp::serve(
+        warp_index
+            .or(warp_graph)
+            .or(warp_html),
+    )
+    .run(([127, 0, 0, 1], 3030))
+    .await;
 }
 
 pub fn sync_serve(graph: Box<LicenseGraph>) {

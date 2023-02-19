@@ -208,7 +208,6 @@ pub fn to_force_graph_js(graph: LicenseGraph) -> String {
     format!("{}{}{}", JS_HEADER, to_force_graph_json(graph), JS_FOOTER)
 }
 
-
 const HTML_HEADER: &str = r#"
 <head>
   <style> body { margin: 0; } </style>
@@ -224,7 +223,6 @@ const HTML_FOOTER: &str = r#"
 </script>
 </body>
 "#;
-
 
 pub fn to_force_graph_html(graph: LicenseGraph) -> String {
     format!("{}{}{}", HTML_HEADER, to_force_graph_js(graph), HTML_FOOTER)

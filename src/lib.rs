@@ -65,7 +65,13 @@ pub mod test_helper {
 // ############################################################################
 
 pub mod source_blueoakcouncil;
+pub mod source_cavil;
+pub mod source_hanshammel;
+pub mod source_librariesio;
+pub mod source_metaeffekt_universe;
+pub mod source_okfn;
 pub mod source_osadl;
+pub mod source_oslc_handbook;
 pub mod source_scancode;
 pub mod source_spdx;
 
@@ -77,6 +83,12 @@ pub fn get_sources() -> Vec<Box<dyn crate::model::Source>> {
         Box::new(crate::source_osadl::OsadlSource {}),
         Box::new(crate::source_blueoakcouncil::CopyleftListSource {}),
         Box::new(crate::source_blueoakcouncil::LicenseListSource {}),
+        Box::new(crate::source_oslc_handbook::OslcHandbookSource {}),
+        Box::new(crate::source_hanshammel::HansHammelSource {}),
+        Box::new(crate::source_librariesio::LibrariesioSource {}),
+        Box::new(crate::source_okfn::OkfnSource {}),
+        Box::new(crate::source_cavil::CavilSource {}),
+        Box::new(crate::source_metaeffekt_universe::MetaeffektUniverseSource {}),
     ];
     sources
 }

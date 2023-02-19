@@ -1,14 +1,14 @@
 use crate::model::*;
 use crate::sink_dot::render_dot;
+use crate::sink_force_graph::*;
 use build_html::*;
 use itertools::Itertools;
-use petgraph::{Direction};
 use petgraph::dot::{Config, Dot};
 use petgraph::graph::{Edge, EdgeIndex, Frozen, Node, NodeIndex};
 use petgraph::stable_graph::StableGraph;
 use petgraph::visit::EdgeRef;
+use petgraph::Direction;
 use std::collections::HashSet;
-use crate::sink_force_graph::*;
 
 #[derive(Debug)]
 pub struct LicenseGraphTreeEdge<'a> {
@@ -34,13 +34,13 @@ fn license_graph_to_tree_for_node(
         .graph
         .edges_directed(idx, direction)
         .filter(|e| !(traversed_edges.contains(&e.id())))
-        .group_by(|e| 
+        .group_by(|e| {
             if direction == Direction::Outgoing {
                 e.target()
             } else {
                 e.source()
             }
-        )
+        })
         .into_iter()
         .map(|(next, es)| {
             let mut traversed_edges = traversed_edges.clone();
@@ -59,8 +59,7 @@ fn license_graph_to_tree_for_node(
     let weight = graph.graph.node_weight(idx).unwrap();
 
     let default = Vec::new();
-    let origins = graph.node_origins.get_vec(&idx)
-        .unwrap_or(&default);
+    let origins = graph.node_origins.get_vec(&idx).unwrap_or(&default);
     LicenseGraphTree {
         id: idx,
         weight,
@@ -69,84 +68,93 @@ fn license_graph_to_tree_for_node(
     }
 }
 
-pub fn license_graph_to_tree(direction: Direction, graph: &LicenseGraph, license_name: LicenseName) -> LicenseGraphTree {
+pub fn license_graph_to_tree(
+    direction: Direction,
+    graph: &LicenseGraph,
+    license_name: LicenseName,
+) -> LicenseGraphTree {
     let root_idx = graph.get_idx_of_license(license_name).unwrap();
     license_graph_to_tree_for_node(direction, graph, root_idx, HashSet::new())
 }
 
-fn tree_to_html(direction: Direction, tree: &LicenseGraphTree, from_edge: Option<&LicenseGraphTreeEdge>, written_nodes: &mut HashSet<NodeIndex>) -> Container {
-    
+fn tree_to_html(
+    direction: Direction,
+    tree: &LicenseGraphTree,
+    from_edge: Option<&LicenseGraphTreeEdge>,
+    written_nodes: &mut HashSet<NodeIndex>,
+) -> Container {
     match tree {
-        LicenseGraphTree { id, weight, edges, origins } =>{
-            let mut c =Container::new(ContainerType::Div)
-                            .with_attributes([("class", "tree")]);
+        LicenseGraphTree {
+            id,
+            weight,
+            edges,
+            origins,
+        } => {
+            let mut c = Container::new(ContainerType::Div).with_attributes([("class", "tree")]);
             match from_edge {
                 Option::Some(LicenseGraphTreeEdge { to, weights }) => {
-                    let weights : Vec<&LicenseGraphEdge> = weights.iter()
-                        .map(|(_,w)| *w)
-                        .collect();
+                    let weights: Vec<&LicenseGraphEdge> = weights.iter().map(|(_, w)| *w).collect();
                     let heading_template = if direction == Direction::Outgoing {
                         c.add_header(3, format!("{:?} {:?}&rarr;", weight, weights));
                     } else {
                         c.add_header(3, format!("&larr;{:?} {:?}", weights, weight));
                     };
-                },
+                }
                 Option::None {} => c.add_header(3, format!("{:?}", weight)),
             }
-
 
             if written_nodes.contains(id) {
                 c.with_link(format!("#{:?}", id), "&uarr;")
             } else {
-                c.add_container(Container::new(ContainerType::Div)
-                    .with_attributes([("class", "anchor"),("id", &format!("{:?}", id))]));
+                c.add_container(
+                    Container::new(ContainerType::Div)
+                        .with_attributes([("class", "anchor"), ("id", &format!("{:?}", id))]),
+                );
                 written_nodes.insert(*id);
                 match weight {
-                    LicenseGraphNode::LicenseNameNode { license_name } => {},
+                    LicenseGraphNode::LicenseNameNode { license_name } => {}
                     LicenseGraphNode::LicenseTextNode { license_text } => {
                         c.add_preformatted(license_text)
-                    },
+                    }
                     LicenseGraphNode::Statement { statement_content } => {
                         c.add_paragraph(statement_content)
-                    },
+                    }
                     LicenseGraphNode::StatementRule { statement_content } => {
                         c.add_preformatted(statement_content)
-                    },
+                    }
                     LicenseGraphNode::StatementJson { statement_content } => {
                         c.add_preformatted(format!("{:#?}", statement_content))
-                    },
-                    LicenseGraphNode::Note { text } => {
-                        c.add_paragraph(text)
-                    },
+                    }
+                    LicenseGraphNode::Note { text } => c.add_paragraph(text),
                 };
                 c.add_header(5, "Origins:");
-                c.add_container(origins.iter()
-                    .fold(Container::new(ContainerType::UnorderedList), |acc, origin| {
-                        match origin.url.clone() {
-                            Option::Some(url) => acc.with_link(url, &origin.name),
-                            Option::None{} => acc.with_paragraph(&origin.name),
-                        }
-                    }));
-                c.with_container(
-                        edges
-                            .iter()
-                            .fold(Container::new(ContainerType::Div), |acc, edge| {
-                                acc.with_container(
-                                    match edge {
-                                        LicenseGraphTreeEdge { to, weights } => {
-                                            tree_to_html(direction, &to, Option::Some(edge), written_nodes)
-                                        } 
-                                    }
-                                )
-                            }),
-                    )
-
+                c.add_container(origins.iter().fold(
+                    Container::new(ContainerType::UnorderedList),
+                    |acc, origin| match origin.url.clone() {
+                        Option::Some(url) => acc.with_link(url, &origin.name),
+                        Option::None {} => acc.with_paragraph(&origin.name),
+                    },
+                ));
+                c.with_container(edges.iter().fold(
+                    Container::new(ContainerType::Div),
+                    |acc, edge| {
+                        acc.with_container(match edge {
+                            LicenseGraphTreeEdge { to, weights } => {
+                                tree_to_html(direction, &to, Option::Some(edge), written_nodes)
+                            }
+                        })
+                    },
+                ))
             }
         }
     }
 }
 
-pub fn license_graph_to_html(direction: Direction, graph: &LicenseGraph, license_name: LicenseName) -> Container {
+pub fn license_graph_to_html(
+    direction: Direction,
+    graph: &LicenseGraph,
+    license_name: LicenseName,
+) -> Container {
     let tree = license_graph_to_tree(direction, graph, license_name);
     tree_to_html(direction, &tree, Option::None, &mut HashSet::new())
 }
@@ -171,14 +179,23 @@ pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_name: LicenseN
         "#,
         )
         .with_header(1, format!("{:?}", &license_name))
-        .with_container(Container::new(ContainerType::Div)
-            .with_attributes([("class", "svg")])
-            .with_raw(render_dot(focused.clone()))
+        .with_container(
+            Container::new(ContainerType::Div)
+                .with_attributes([("class", "svg")])
+                .with_raw(render_dot(focused.clone())),
         )
         .with_header(2, "backward")
-        .with_container(license_graph_to_html(Direction::Incoming, graph, license_name.clone()))
+        .with_container(license_graph_to_html(
+            Direction::Incoming,
+            graph,
+            license_name.clone(),
+        ))
         .with_header(2, "forward")
-        .with_container(license_graph_to_html(Direction::Outgoing, graph, license_name.clone()))
+        .with_container(license_graph_to_html(
+            Direction::Outgoing,
+            graph,
+            license_name.clone(),
+        ))
         .with_header(2, "dot")
         .with_preformatted(format!("{}", focused.get_as_dot()))
         // .with_container(
