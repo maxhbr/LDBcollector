@@ -1,0 +1,8 @@
+[license]
+
+expression = "JPL-image"
+status = [ "allowed-content" ]
+
+url = '''
+https://www.jpl.nasa.gov/jpl-image-use-policy
+'''
