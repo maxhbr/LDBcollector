@@ -134,7 +134,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ usage.scope }}</td>
             <td>{{ usage.version.spdx_valid_license_expr }} </td>
             <td><a href="{% url 'cube:release_andsvalidation_create' usage.id %}">Confirm / Correct</a></td>
-            <td><a href="{% url "admin:cube_version_change" usage.version.id %}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -462,6 +462,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% endif %}
 
 {% endblock %}
+
 
 
 
