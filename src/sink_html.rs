@@ -73,7 +73,7 @@ pub fn license_graph_to_tree(
     graph: &LicenseGraph,
     license_name: String,
 ) -> LicenseGraphTree {
-    let root_idx = *graph.get_idxs_of_license(license_name).iter().next().unwrap();
+    let root_idx = graph.get_idx_of_license(license_name).unwrap();
     license_graph_to_tree_for_node(direction, graph, root_idx, HashSet::new())
 }
 
@@ -121,9 +121,9 @@ fn tree_to_html(
                     LicenseGraphNode::StatementRule { statement_content } => {
                         c.add_preformatted(statement_content)
                     }
-                    LicenseGraphNode::StatementJson { statement_content } => {
-                        c.add_preformatted(format!("{:#?}", statement_content))
-                    }
+                    // LicenseGraphNode::StatementJson { statement_content } => {
+                    //     c.add_preformatted(format!("{:#?}", statement_content))
+                    // }
                 };
                 c.add_header(5, "Origins:");
                 c.add_container(origins.iter().fold(

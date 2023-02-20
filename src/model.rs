@@ -80,7 +80,7 @@ pub trait HasOrigin<'a> {
 
 //#############################################################################
 //## start License Data
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash)]
 pub enum LicenseIdentifier {
     LicenseName(LicenseName)
 }
@@ -90,7 +90,7 @@ impl LicenseIdentifier {
     }
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash)]
 pub enum LicenseType {
     PublicDomain (Option<String>),
     Permissive (Option<String>),
@@ -155,7 +155,7 @@ impl core::fmt::Display for LicenseType {
     }
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash)]
 pub enum LicenseData {
     LicenseIdentifier(LicenseIdentifier),
     LicenseType(LicenseType),
@@ -179,14 +179,13 @@ impl LicenseData {
 //## end License Data
 //#############################################################################
 
-#[derive(Clone, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Eq, PartialEq, Serialize, Deserialize, Hash)]
 pub enum LicenseGraphNode {
     Data(LicenseData),
     Note(String),
     URL(String),
     Statement { statement_content: String },
     StatementRule { statement_content: String },
-    StatementJson { statement_content: Value },
 }
 impl LicenseGraphNode {
     pub fn license_name(name: &str) -> Self {
@@ -206,19 +205,6 @@ impl LicenseGraphNode {
     }
     pub fn url(url: &str) -> Self {
         Self::URL(String::from(url))
-    }
-
-
-
-    pub fn mk_statement(i: &str) -> Self {
-        Self::Statement {
-            statement_content: String::from(i),
-        }
-    }
-    pub fn mk_json_statement(i: impl Serialize) -> Self {
-        Self::StatementJson {
-            statement_content: serde_json::to_value(i).unwrap(),
-        }
     }
 }
 impl fmt::Debug for LicenseGraphNode {
@@ -240,9 +226,6 @@ impl fmt::Debug for LicenseGraphNode {
                 statement_content: _,
             } => {
                 write!(f, "$RULE")
-            }
-            Self::StatementJson { statement_content } => {
-                write!(f, "$JSON")
             }
         }
     }
@@ -304,6 +287,7 @@ impl Hash for LicenseGraphBuilderTask {
 #[derive(Clone)]
 pub struct LicenseGraph {
     pub graph: StableGraph<LicenseGraphNode, LicenseGraphEdge>,
+    pub node_indexes: HashMap<LicenseGraphNode, NodeIndex>,
     pub node_origins: MultiMap<NodeIndex, Origin>,
     pub edge_origins: MultiMap<EdgeIndex, Origin>,
     accomplished_tasks: HashMap<u64, Vec<NodeIndex>>,
@@ -312,6 +296,7 @@ impl LicenseGraph {
     pub fn new() -> Self {
         Self {
             graph: StableGraph::<LicenseGraphNode, LicenseGraphEdge>::new(),
+            node_indexes: HashMap::new(),
             node_origins: MultiMap::new(),
             edge_origins: MultiMap::new(),
             accomplished_tasks: HashMap::new(),
@@ -322,33 +307,24 @@ impl LicenseGraph {
         &self.graph
     }
 
-    fn get_idxs_of_node(&self, node: &LicenseGraphNode) -> Vec<NodeIndex> {
-        self.graph
-            .node_indices()
-            .filter_map(|idx|
-                self.graph.node_weight(idx)
-                    .filter(|weight| *weight == node)
-                    .map(|_| idx))
-            .collect()
+    fn get_idx_of_node(&self, node: &LicenseGraphNode) -> Option<NodeIndex> {
+        self.node_indexes.get(node).copied()
     }
 
-    pub fn get_idxs_of_license(&self, license_name: String) -> Vec<NodeIndex> {
+    pub fn get_idx_of_license(&self, license_name: String) -> Option<NodeIndex> {
         let node = LicenseGraphNode::license_name(&license_name);
-        self.get_idxs_of_node(&node)
+        self.get_idx_of_node(&node)
     }
 
     pub fn focus(&self, license_name: String) -> Self {
         let mut s = self.clone();
 
-        let root_idxs = self.get_idxs_of_license(license_name);
+        let root_idx = self.get_idx_of_license(license_name).unwrap();
 
         s.graph.retain_nodes(|frozen_s, idx: NodeIndex| {
-            root_idxs.iter()
-                .any(|root_idx| {
-                    let incomming = has_path_connecting(&self.graph, idx, *root_idx, Option::None);
-                    let outgoing = has_path_connecting(&self.graph, *root_idx, idx, Option::None);
-                    incomming || outgoing
-                })
+            let incomming = has_path_connecting(&self.graph, idx, root_idx, Option::None);
+            let outgoing = has_path_connecting(&self.graph, root_idx, idx, Option::None);
+            incomming || outgoing
         });
         s.node_origins
             .retain(|idx, _| s.graph.node_weight(*idx).is_some());
@@ -358,11 +334,11 @@ impl LicenseGraph {
     }
 
     fn add_node(&mut self, node: &LicenseGraphNode) -> NodeIndex {
-        let idxs = self.get_idxs_of_node(&node);
-        if idxs.len() > 0 {
-            *idxs.iter().next().unwrap()
+        if let Option::Some(idx) = self.get_idx_of_node(&node) {
+            idx
         } else {
             let idx = self.graph.add_node(node.clone());
+            self.node_indexes.insert(node.clone(), idx);
             idx
         }
     }

@@ -16,7 +16,7 @@ struct License {
 fn add_license(lic: License) -> LicenseGraphBuilderTask {
     match lic {
         License { id, name, url } => {
-            let url = LicenseGraphNode::mk_statement(&url);
+            let url = LicenseGraphNode::url(&url);
             LicenseGraphBuilderTask::AddEdgeLeft {
                 lefts: vec![url],
                 rights: Box::new(LicenseGraphBuilderTask::mk_aliases_task(id, vec![name])),
