@@ -1,2 +1,9 @@
 digraph {
+    2 [ label = "$DATA:license_flag:is_osi_approved" ]
+    9 [ label = "$DATA:license_flag:is_fsf_free_libre" ]
+    576 [ label = "$DATA:license_name:LicenseName(LicenseName(\"MIT\"))" ]
+    577 [ label = "$DATA:license_name:LicenseName(LicenseName(\"MIT License\"))" ]
+    577 -> 576 [ label = "Same" ]
+    9 -> 577 [ label = "AppliesTo" ]
+    2 -> 577 [ label = "AppliesTo" ]
 }

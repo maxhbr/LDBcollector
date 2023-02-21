@@ -3,40 +3,23 @@ use petgraph::algo::has_path_connecting;
 use petgraph::dot::{Config, Dot};
 use petgraph::graph::{Edge, EdgeIndex, Frozen, Node, NodeIndex};
 use petgraph::stable_graph::StableGraph;
-use serde::Serialize;
 use serde_derive::{Deserialize, Serialize};
-use serde_json::{Result, Value};
 use std::collections::hash_map::DefaultHasher;
 use std::collections::HashMap;
 use std::fmt;
 use std::hash::{Hash, Hasher};
+use std::error::Error;
 
-//#############################################################################
-//## LicenseName
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct LicenseName(String);
-impl<'a> LicenseName {
-    pub fn new(name: String) -> Self {
-        Self(name)
-    }
+#[derive(thiserror::Error, Debug)]
+pub enum MyError {
+    #[error("Source contains no data")]
+    Err(String),
+    #[error("Read error")]
+    ReadError { source: std::io::Error },
+    #[error(transparent)]
+    IOError(#[from] std::io::Error),
 }
-impl core::fmt::Display for LicenseName {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl PartialEq for LicenseName {
-    fn eq(&self, other: &Self) -> bool {
-        self.0.to_lowercase() == other.0.to_lowercase()
-    }
-}
-impl Eq for LicenseName {}
-impl Hash for LicenseName {
-    fn hash<H: Hasher>(&self, state: &mut H) {
-        self.0.to_lowercase().hash(state);
-    }
-}
-//## end LicenseName
+
 
 //#############################################################################
 //## Origin
@@ -80,13 +63,50 @@ pub trait HasOrigin<'a> {
 
 //#############################################################################
 //## start License Data
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash)]
+#[derive(Clone, Serialize, Deserialize)]
 pub enum LicenseIdentifier {
-    LicenseName(LicenseName)
+    Name(String),
+    Namespaced {
+        namespace: String,
+        name: Box<LicenseIdentifier>,
+    }
 }
 impl LicenseIdentifier {
-    pub fn new(name: &str) -> Self {
-        Self::LicenseName(LicenseName::new(String::from(name)))
+    pub fn new(full_name: &str) -> Self {
+        match full_name.split(':').collect::<Vec<_>>().as_slice() {
+            [] => Self::Name(String::from(full_name)),
+            [start @ .., name] =>
+                start.iter().rev().fold( Self::Name(String::from(*name)),
+                    |acc, namespace| Self::Namespaced { namespace: String::from(*namespace), name: Box::new(acc) }
+                )
+        }
+    }
+}
+impl core::fmt::Display for LicenseIdentifier {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match self {
+            LicenseIdentifier::Name(license_name) => write!(f, "{}", license_name),
+            LicenseIdentifier::Namespaced { namespace, name } => write!(f, "{}:{}", namespace, name),
+        }
+    }
+}
+impl core::fmt::Debug for LicenseIdentifier {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match self {
+            LicenseIdentifier::Name(license_name) => write!(f, "{}", license_name),
+            LicenseIdentifier::Namespaced { namespace, name } => write!(f, "{}:{}", namespace, name),
+        }
+    }
+}
+impl PartialEq for LicenseIdentifier {
+    fn eq(&self, other: &Self) -> bool {
+        format!("{}", self).to_lowercase() == format!("{}", other).to_lowercase()
+    }
+}
+impl Eq for LicenseIdentifier {}
+impl Hash for LicenseIdentifier {
+    fn hash<H: Hasher>(&self, state: &mut H) {
+        format!("{}", self).to_lowercase().hash(state);
     }
 }
 
@@ -148,10 +168,27 @@ impl LicenseType{
             Self::Unknown(Option::Some(ty_str))
         }
     }
+    pub fn get_optional(&self) -> &Option<String> {
+        match self {
+            LicenseType::PublicDomain(o) => o,
+            LicenseType::Permissive(o) => o,
+            LicenseType::Copyleft(o) => o,
+            LicenseType::WeaklyProtective(o) => o,
+            LicenseType::StronglyProtective(o) => o,
+            LicenseType::NetworkProtective(o) => o,
+            LicenseType::Unknown(o) => o,
+            LicenseType::Unlicensed(o) => o,
+        }
+    }
 }
 impl core::fmt::Display for LicenseType {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "{}", self.get_names_for_type()[0])
+        let main_name = self.get_names_for_type()[0];
+        if let Option::Some(o) = self.get_optional() {
+            write!(f, "{} ({})", main_name, o)
+        } else {
+            write!(f, "{}", main_name)
+        }
     }
 }
 
@@ -211,7 +248,12 @@ impl fmt::Debug for LicenseGraphNode {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
             Self::Data(d) => {
-                write!(f, "$DATA")
+                match d {
+                    LicenseData::LicenseIdentifier(license_name) => write!(f, "{:?}", license_name),
+                    LicenseData::LicenseType(ty) => write!(f, "{}", ty),
+                    LicenseData::LicenseText(_) => write!(f, "$DATA:license_text"),
+                    LicenseData::LicenseFlag(flag) => write!(f, "$DATA:license_flag:{}", flag),
+                }
             }
             Self::Note (_) => {
                 write!(f, "$NOTE")
@@ -311,26 +353,27 @@ impl LicenseGraph {
         self.node_indexes.get(node).copied()
     }
 
-    pub fn get_idx_of_license(&self, license_name: String) -> Option<NodeIndex> {
-        let node = LicenseGraphNode::license_name(&license_name);
+    pub fn get_idx_of_license(&self, license_name: &str) -> Option<NodeIndex> {
+        let node = LicenseGraphNode::license_name(license_name);
         self.get_idx_of_node(&node)
     }
 
-    pub fn focus(&self, license_name: String) -> Self {
+    pub fn focus(&self, license_name: &str) ->  Result<Self,Box<dyn Error>> {
         let mut s = self.clone();
 
-        let root_idx = self.get_idx_of_license(license_name).unwrap();
+        let root_idx = self.get_idx_of_license(license_name)
+            .ok_or(MyError::Err(format!("failed to focus on {}", license_name)))?;
 
-        s.graph.retain_nodes(|frozen_s, idx: NodeIndex| {
-            let incomming = has_path_connecting(&self.graph, idx, root_idx, Option::None);
+        s.graph.retain_nodes(|_frozen_s, idx: NodeIndex| {
+            let incoming = has_path_connecting(&self.graph, idx, root_idx, Option::None);
             let outgoing = has_path_connecting(&self.graph, root_idx, idx, Option::None);
-            incomming || outgoing
+            incoming || outgoing
         });
         s.node_origins
             .retain(|idx, _| s.graph.node_weight(*idx).is_some());
         s.edge_origins
             .retain(|idx, _| s.graph.edge_weight(*idx).is_some());
-        s
+        Ok(s)
     }
 
     fn add_node(&mut self, node: &LicenseGraphNode) -> NodeIndex {
@@ -473,17 +516,13 @@ impl LicenseGraph {
         }
     }
 
-    pub fn get_license_names(&self) -> Vec<&LicenseName> {
+    pub fn get_license_names(&self) -> Vec<&LicenseIdentifier> {
         self.graph
             .node_weights()
             .filter_map(|w| match w {
                 LicenseGraphNode::Data(data) => {
                     match data {
-                        LicenseData::LicenseIdentifier(license_identifier) => {
-                            match license_identifier {
-                                LicenseIdentifier::LicenseName(license_name) => Option::Some(license_name),
-                            }
-                        },
+                        LicenseData::LicenseIdentifier(license_identifier) => Option::Some(license_identifier),
                         LicenseData::LicenseType(_) => Option::None {},
                         LicenseData::LicenseText(_) => Option::None {},
                         LicenseData::LicenseFlag(_) => Option::None {},
@@ -558,24 +597,6 @@ impl LicenseGraphBuilder {
     }
 }
 
-pub fn demo() -> LicenseGraph {
-    let origin: &Origin =
-        &Origin::new_with_file("Origin_name", "https://domain.invalid/license.txt");
-
-    let add_nodes_task = LicenseGraphBuilderTask::AddNodes {
-        nodes: vec![LicenseGraphNode::license_name("MIT")],
-    };
-    let add_alias_task = LicenseGraphBuilderTask::AddEdge {
-        lefts: vec![LicenseGraphNode::license_name("MIT License")],
-        rights: Box::new(add_nodes_task),
-        edge: LicenseGraphEdge::Same,
-    };
-
-    LicenseGraphBuilder::new()
-        .add_tasks(vec![add_alias_task], Box::new(origin.clone()))
-        .build()
-}
-
 #[cfg(test)]
 mod tests {
     use crate::model::*;
@@ -583,32 +604,77 @@ mod tests {
     #[test]
     fn license_name_tests() {
         assert_eq!(
-            LicenseName::new(String::from("MIT")),
-            LicenseName::new(String::from("MIT"))
+            LicenseIdentifier::new("MIT"),
+            LicenseIdentifier::new("MIT")
         );
         assert_eq!(
-            LicenseName::new(String::from("MIT")),
-            LicenseName::new(String::from("mit"))
+            LicenseIdentifier::new("MIT"),
+            LicenseIdentifier::new("mit")
         );
         assert_eq!(
-            LicenseName::new(String::from("MIT")),
-            LicenseName::new(String::from("mIt"))
+            LicenseIdentifier::new("MIT"),
+            LicenseIdentifier::new("mIt")
         );
     }
 
     #[test]
     fn license_name_statement_tests() {
         assert_eq!(
-            LicenseGraphNode::license_name("MIT")
-            ,
+            LicenseGraphNode::license_name("MIT"),
             LicenseGraphNode::license_name("mIt")
         );
+    }
+
+    fn demo() -> LicenseGraph {
+        let mut builder = LicenseGraphBuilder::new();
+
+        let tasks_a = vec![
+            LicenseGraphBuilderTask::AddEdge {
+                lefts: vec![LicenseGraphNode::license_name("MIT License")],
+                rights: Box::new(
+                    LicenseGraphBuilderTask::AddNodes {
+                        nodes: vec![LicenseGraphNode::license_name("MIT")],
+                    }
+                ),
+                edge: LicenseGraphEdge::Same,
+            }
+        ];
+
+        builder = builder.add_tasks(tasks_a, Box::new(
+            Origin::new_with_url("Origin_name_a", "https://domain.invalid/license.txt")
+        ));
+
+        let tasks_b = vec![
+            LicenseGraphBuilderTask::AddEdge {
+                lefts: vec![LicenseGraphNode::license_type("permissive")],
+                rights: Box::new (LicenseGraphBuilderTask::AddEdge {
+                    lefts: vec![LicenseGraphNode::license_name("the mit license")],
+                    rights: Box::new (LicenseGraphBuilderTask::AddNodes {
+                        nodes: vec![LicenseGraphNode::license_name("MIT")]
+                    }),
+                    edge: LicenseGraphEdge::HintsTowards
+                }),
+                edge: LicenseGraphEdge::AppliesTo
+            }
+        ];
+
+        builder = builder.add_tasks(tasks_b, Box::new(
+            Origin::new("Origin_name_b")
+        ));
+
+        builder.build()
     }
 
     #[test]
     fn demo_should_run() {
         let s = demo();
-        // s.consistency_check();
         println!("{s:#?}");
+
+        println!("{}", s.get_as_dot());
+
+        assert_eq!(s.graph.node_count(), 4);
+        assert_eq!(s.get_idx_of_license("mit"), s.get_idx_of_license("MIT"));
+        assert_ne!(s.get_idx_of_license("mit"), s.get_idx_of_license("BSD-3-Clause"));
+        assert_eq!(Option::None, s.get_idx_of_license("BSD-3-Clause"));
     }
 }

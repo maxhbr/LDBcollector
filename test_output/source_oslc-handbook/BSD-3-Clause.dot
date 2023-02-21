@@ -1,2 +1,5 @@
 digraph {
+    34 [ label = "$DATA:license_name:LicenseName(LicenseName(\"BSD-3-Clause\"))" ]
+    36 [ label = "https://opensource.org/licenses/BSD-3-Clause" ]
+    36 -> 34 [ label = "AppliesTo" ]
 }

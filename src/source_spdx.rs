@@ -29,7 +29,11 @@ impl Source for SpdxSource {
                             .iter()
                             .filter_map(|(flag, flag_bool)| {
                                 if *flag_bool {
-                                    Option::Some(LicenseGraphNode::license_flag(flag))
+                                    if *flag == "Copyleft" {
+                                        Option::Some(LicenseGraphNode::license_type(flag))
+                                    } else {
+                                        Option::Some(LicenseGraphNode::license_flag(flag))
+                                    }
                                 } else {
                                     Option::None
                                 }

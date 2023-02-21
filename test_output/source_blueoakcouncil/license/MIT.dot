@@ -1,2 +1,13 @@
 digraph {
+    55 [ label = "$DATA:license_name:LicenseName(LicenseName(\"MIT License\"))" ]
+    56 [ label = "$DATA:license_name:LicenseName(LicenseName(\"MIT\"))" ]
+    57 [ label = "https://spdx.org/licenses/MIT.html" ]
+    82 [ label = "$DATA:license_type:Unknown" ]
+    83 [ label = "$NOTE" ]
+    564 [ label = "$DATA:license_type:Permissive" ]
+    56 -> 55 [ label = "Same" ]
+    57 -> 56 [ label = "AppliesTo" ]
+    82 -> 56 [ label = "AppliesTo" ]
+    83 -> 82 [ label = "AppliesTo" ]
+    564 -> 82 [ label = "AppliesTo" ]
 }

@@ -73,7 +73,7 @@ pub fn license_graph_to_tree(
     graph: &LicenseGraph,
     license_name: String,
 ) -> LicenseGraphTree {
-    let root_idx = graph.get_idx_of_license(license_name).unwrap();
+    let root_idx = graph.get_idx_of_license(&license_name).unwrap();
     license_graph_to_tree_for_node(direction, graph, root_idx, HashSet::new())
 }
 
@@ -158,49 +158,55 @@ pub fn license_graph_to_html(
 }
 
 pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_name: String) -> String {
-    let focused = graph.focus(license_name.clone());
-    HtmlPage::new()
-        .with_title(format!("{:?}", &license_name))
-        .with_stylesheet("https://unpkg.com/modern-css-reset/dist/reset.min.css")
-        .with_script_link("https://unpkg.com/force-graph")
-        .with_style(
-            r#"
-        div.tree {
-            border-left: 8mm ridge rgba(220, 220, 220, .6);
-            margin: 5px;
-            padding: 5px;
+    match graph.focus(&license_name) {
+        Result::Ok(focused) => {
+            HtmlPage::new()
+                .with_title(format!("{:?}", &license_name))
+                .with_stylesheet("https://unpkg.com/modern-css-reset/dist/reset.min.css")
+                .with_script_link("https://unpkg.com/force-graph")
+                .with_style(
+                    r#"
+                div.tree {
+                    border-left: 8mm ridge rgba(220, 220, 220, .6);
+                    margin: 5px;
+                    padding: 5px;
+                }
+                div#graph {
+                    background: #EEEEEE;
+                }
+                p{font-family:"Liberation Serif";}
+                "#,
+                )
+                .with_header(1, format!("{:?}", &license_name))
+                .with_container(
+                    Container::new(ContainerType::Div)
+                        .with_attributes([("class", "svg")])
+                        .with_raw(render_dot(focused.clone())),
+                )
+                .with_header(2, "backward")
+                .with_container(license_graph_to_html(
+                    Direction::Incoming,
+                    graph,
+                    license_name.clone(),
+                ))
+                .with_header(2, "forward")
+                .with_container(license_graph_to_html(
+                    Direction::Outgoing,
+                    graph,
+                    license_name.clone(),
+                ))
+                .with_header(2, "dot")
+                .with_preformatted(format!("{}", focused.get_as_dot()))
+                // .with_container(
+                //     Container::new(ContainerType::Div).with_attributes([("id", "graph")])
+                // )
+                // .with_raw({
+                //     format!("<script>{}</script>", to_force_graph_js(focused ))
+                // })
+                .to_html_string()
+        },
+        Result::Err(err) => {
+            format!("{:?}", err)
         }
-        div#graph {
-            background: #EEEEEE;
-        }
-        p{font-family:"Liberation Serif";}
-        "#,
-        )
-        .with_header(1, format!("{:?}", &license_name))
-        .with_container(
-            Container::new(ContainerType::Div)
-                .with_attributes([("class", "svg")])
-                .with_raw(render_dot(focused.clone())),
-        )
-        .with_header(2, "backward")
-        .with_container(license_graph_to_html(
-            Direction::Incoming,
-            graph,
-            license_name.clone(),
-        ))
-        .with_header(2, "forward")
-        .with_container(license_graph_to_html(
-            Direction::Outgoing,
-            graph,
-            license_name.clone(),
-        ))
-        .with_header(2, "dot")
-        .with_preformatted(format!("{}", focused.get_as_dot()))
-        // .with_container(
-        //     Container::new(ContainerType::Div).with_attributes([("id", "graph")])
-        // )
-        // .with_raw({
-        //     format!("<script>{}</script>", to_force_graph_js(focused ))
-        // })
-        .to_html_string()
+    }
 }

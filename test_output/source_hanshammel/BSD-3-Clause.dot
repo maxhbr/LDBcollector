@@ -1,5 +1,5 @@
 digraph {
-    190 [ label = "$DATA" ]
-    262 [ label = "$DATA" ]
-    262 -> 190 [ label = "AppliesTo" ]
+    67 [ label = "$DATA:license_name:LicenseName(LicenseName(\"BSD-3-Clause\"))" ]
+    139 [ label = "$DATA:license_type:Permissive" ]
+    139 -> 67 [ label = "AppliesTo" ]
 }

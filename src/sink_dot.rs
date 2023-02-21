@@ -3,6 +3,7 @@ use std::fs;
 use std::fs::File;
 use std::path::PathBuf;
 use std::process::Command;
+use std::error::Error;
 
 use graphviz_rust::dot_generator::*;
 use graphviz_rust::dot_structures::*;
@@ -17,12 +18,12 @@ pub fn write_focused_dot(
     out_file: String,
     g: &LicenseGraph,
     needle: String,
-) -> Result<(), std::io::Error> {
-    let focused = g.focus(needle);
+) -> Result<(), Box<dyn Error>> {
+    let focused = g.focus(&needle)?;
     write_dot(out_file, &focused)
 }
 
-pub fn write_dot(out_file: String, g: &LicenseGraph) -> Result<(), std::io::Error> {
+pub fn write_dot(out_file: String, g: &LicenseGraph) -> Result<(), Box<dyn Error>> {
     let mut parent = PathBuf::from(out_file.clone());
     if parent.pop() {
         match parent.to_str() {

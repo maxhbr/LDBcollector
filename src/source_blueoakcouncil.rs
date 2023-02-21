@@ -153,7 +153,11 @@ impl Source for LicenseListSource {
                      licenses,
                  }| {
                     let from_licenses = licenses.iter().map(|l| add_license(l.clone())).collect();
-                    let rating = LicenseGraphNode::license_type(name);
+                    let rating = LicenseGraphNode::Data(
+                        LicenseData::LicenseType(
+                            LicenseType::Permissive(Option::Some(name.clone()))
+                        )
+                    );
                     let rating_note = LicenseGraphNode::note(notes);
                     LicenseGraphBuilderTask::AddEdgeLeft {
                         lefts: vec![rating_note],

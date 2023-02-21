@@ -40,8 +40,10 @@ pub async fn serve(graph: Box<LicenseGraph>) {
     let graph_for_graph = graph.clone();
     // GET /graph/MIT
     let warp_graph = warp::path!(String / "graph").map(move |license: String| {
-        let focused = graph_for_graph.focus(license);
-        warp::reply::html(to_force_graph_html(focused))
+        match graph_for_graph.focus(&license) {
+            Result::Ok(focused) => warp::reply::html(to_force_graph_html(focused)),
+            Result::Err(err) => warp::reply::html(format!("{:#?}", err))
+        }
     });
 
     let graph_for_html = graph.clone();

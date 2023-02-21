@@ -28,3 +28,20 @@
 [submodule "data/hermine-project-hermine"]
 	path = data/hermine-project-hermine
 	url = git@gitlab.com:hermine-project/hermine.git
+[submodule "data/oslic"]
+	path = data/oslic
+	url = https://github.com/telekom/oslic
+[submodule "data/wking-licenses-full/fsf-api"]
+	path = data/wking-licenses-full/fsf-api
+	url = https://github.com/wking/fsf-api
+[submodule "data/gh-pages"]
+	path = data/gh-pages
+	url = https://github.com/wking/fsf-api
+[submodule "data/fsf-api"]
+	path = data/fsf-api
+	url = https://github.com/wking/fsf-api
+	branch = gh-pages
+[submodule "data/wking-fsf-api"]
+	path = data/wking-fsf-api
+	url = https://github.com/wking/fsf-api
+	branch = gh-pages
