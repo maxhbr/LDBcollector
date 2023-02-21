@@ -1222,6 +1222,16 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
+  - id: "LicenseRef-scancode-jsr-107-jcache-spec-2013"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-sun-ejb-spec-3.0"
+    categories:
+      - "proprietary-free"
+      - "property:patent-clause"
+
   - id: "LicenseRef-scancode-sun-sdk-spec-1.1"
     categories:
       - "proprietary-free"
@@ -1327,6 +1337,10 @@ categorizations:
     categories:
       - "public-domain"
 
+  - id: "LicenseRef-scancode-us-govt-public-domain"
+    categories:
+      - "public-domain"
+
   - id: "CC-BY-NC-ND-4.0"
     categories:
       - "source-available"
@@ -1347,6 +1361,11 @@ categorizations:
 
   # https://scancode-licensedb.aboutcode.org/fsf-unlimited-no-warranty.html
   - id: "LicenseRef-fsf-unlimited-no-warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-fsf-unlimited-no-warranty"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -3960,3 +3979,23 @@ categorizations:
     categories:
       - "permissive"
       - "property:patent-clause"
+
+  - id: "LicenseRef-scancode-arm-llvm-sga"
+    categories:
+      - "permissive"
+      - "property:patent-clause"
+
+  - id: "NetCDF"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "OGC-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "OGL-UK-3.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
