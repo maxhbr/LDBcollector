@@ -1,15 +1,28 @@
 * yet another try in rust
 
-* server?
-** WASM?
-- see: https://rustwasm.github.io/docs/book/game-of-life/introduction.html
-** web server
-*** to static?
-- https://gist.github.com/azizur/ffe8ee6a0a2bb418e5cc8ff101fad91a
-
-#+BEGIN_EXAMPLE
-wget -k -K  -E -r -l 10 -p -N -F --restrict-file-names=windows -nH localhost:3030
-#+END_EXAMPLE
+* data
+** DONE blueoakcouncil
+- update.blueoakcouncil.sh
+** TODO fedora-legal-fedora-license-data
+** DONE finos-OSLC-handbook
+** TODO github-choosealicense.com
+** DONE HansHammel-license-compatibility-checker
+** TODO hermine-project-hermine
+** TODO Hitachi-open-license
+- Hitachi-open-license.translations.csv
+** TODO ifrOSS-ifrOSS
+** DONE librariesio-license-compatibility
+** DONE nexB-scancode-licensedb
+** DONE okfn-licenses
+** DONE openSUSE-cavil
+** DONE org-metaeffekt-metaeffekt-universe
+** DONE OSADL-checklists
+- update.OSADL-checklists.sh
+** TODO oslic
+** DONE spdx-license-list-data
+** NOPE tldrlegal
+** TODO warpr-licensedb
+** TODO wking-fsf-api
 
 * Idea
 A handle for a license is just a string, like
