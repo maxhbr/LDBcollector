@@ -45,3 +45,18 @@
 	path = data/wking-fsf-api
 	url = https://github.com/wking/fsf-api
 	branch = gh-pages
+[submodule "data/warpr-licensedb"]
+	path = data/warpr-licensedb
+	url = https://github.com/warpr/licensedb
+[submodule "data/Hitachi-open-license"]
+	path = data/Hitachi-open-license
+	url = https://github.com/Hitachi/open-license
+[submodule "data/ifrOSS-ifrOSS"]
+	path = data/ifrOSS-ifrOSS
+	url = https://github.com/ifrOSS/ifrOSS
+[submodule "data/fedora-legal-fedora-license-data"]
+	path = data/fedora-legal-fedora-license-data
+	url = https://gitlab.com/fedora/legal/fedora-license-data
+[submodule "data/github-choosealicense.com"]
+	path = data/github-choosealicense.com
+	url = https://github.com/github/choosealicense.com/
