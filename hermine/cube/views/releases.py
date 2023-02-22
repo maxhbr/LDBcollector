@@ -76,7 +76,7 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     form_class = ImportBomForm
     context_object_name = "release"
     template_name = "cube/release_import.html"
-    permission_required = "cube.change_release_sbom"
+    permission_required = "cube.change_release_bom"
 
     def get_success_url(self):
         return reverse("cube:release_import", kwargs={"pk": self.object.pk})

@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <span>Summary</span>
       </a>
     </li>
-    {% if perms.cube.change_release_sbom %}
+    {% if perms.cube.change_release_bom %}
     <li{% if active_tab == "import" %} class="is-active"{% endif %}>
       <a href="{% url 'cube:release_import' release.pk %}">
         <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
