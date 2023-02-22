@@ -6,20 +6,25 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 
 {% extends "cube/cube.html" %}
 {% block title %}Products{% endblock %}
+
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
   <li>Products</li>
 </ul>
 {% endblock %}
+
 {% block actions %}
-<a class="button is-info is-inverted" href="{% url 'cube:product_add'%}">
-            <span class="icon">
-              <i class="fas fa-plus"></i>
-            </span>
-            <span>Create a new product</span>
-          </a>
+{% if perms.cube.add_product %}
+  <a class="button is-info is-inverted" href="{% url 'cube:product_add'%}">
+    <span class="icon">
+      <i class="fas fa-plus"></i>
+    </span>
+    <span>Create a new product</span>
+  </a>
+{% endif %}
 {% endblock %}
+
 {% block herozone %}
 <h1 class="title">
   <span class="icon is-medium"><i class="fas fa-cubes"></i></span>
@@ -42,21 +47,20 @@ SPDX-License-Identifier: AGPL-3.0-only -->
     </tr>
   </thead>
   <tbody>
-{% for product in object_list %}
+  {% for product in object_list %}
     <tr>
       <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
       <td> {% for category in product.categories.all %} <a href="{% url 'cube:category_detail' category.id %}"><span class="tag is-dark">{{ category }}</span></a> {% endfor %}</td>
       <td> {{ product.description|truncatechars:50 }}</td>
       <td>{{product.owner}}</td>
       <td>{{product.releases.all|length}}</td>
-      <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a> |
-        <a href="/admin/cube/product/{{product.id}}" target="_blank"><i class="far fa-edit"></i></a></td>
+      <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a>
+        {% if perms.cube.change_product %} | <a href="{% url "cube:product_edit" product.id %}" target="_blank"><i class="far fa-edit"></i></a>{% endif %}
+      </td>
     </tr>
-  </a>
-{% endfor %}
-</tbody>
+  {% endfor %}
+  </tbody>
 </table>
-
 {% endblock %}
 
 

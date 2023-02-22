@@ -4,8 +4,9 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
-{% block title %}Product: {{ product.name }}
-{% endblock %}
+
+{% block title %}Product: {{ product.name }}{% endblock %}
+
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
@@ -13,28 +14,34 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>{{ product.name }}</li>
 </ul>
 {% endblock %}
+
 {% block actions %}
-<a class="button" href="{% url "cube:product_edit" product.id %}">
-  <span class="icon">
-    <i class="fas fa-edit"></i>
-  </span>
-  <span>Edit this product</span>
-</a>
+{% if perms.cube.change_product %}
+  <a class="button" href="{% url "cube:product_edit" product.id %}">
+    <span class="icon">
+      <i class="fas fa-edit"></i>
+    </span>
+    <span>Edit this product</span>
+  </a>
+{% endif %}
 <a class="button is-info is-inverted" href="{% url 'cube:product_add_release' product.id %} ">
   <span class="icon"><i class="fas fa-plus"></i></span>
   <span>Create a release for this product</span>
 </a>
 {% endblock %}
+
 {% block herozone %}
 <div class="hero-body">
   <p class="title">{{ product.name }}</p>
 </div>
 {% endblock %}
+
 {% block infoitem %}
 <p class="subtitle" style="text-transform: uppercase;">
   <span class="icon is-medium"><i class="fas fa-cubes"></i></span> Product
 </p>
 {% endblock %}
+
 {% block content %}
 <p>
   <b>Categories:</b>
@@ -46,14 +53,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 </p>
 <p>
   <b>Description:</b>
-  {% if product.description %}
-            <div class="box">
-              <p>{{ product.description }}</p>
-            </div>
-          {% else %}
-            <p><i>No description</i></p>
-          {% endif %}
 </p>
+  {% if product.description %}
+    <div class="box">
+      <p>{{ product.description }}</p>
+    </div>
+  {% else %}
+    <p><i>No description</i></p>
+  {% endif %}
 <p>
   <b>Owner:</b> {{ product.owner }} - {{ product.owner.first_name }} {{ product.owner.last_name }}
 </p>
@@ -71,7 +78,6 @@ SPDX-License-Identifier: AGPL-3.0-only
   </thead>
   <tbody>
     {% for release in product.releases.all %}
-    <a href="{% url 'cube:release_summary' release.id %}">
       <tr>
         <td>{{product.name}}</td>
         <td><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a>
@@ -88,7 +94,6 @@ SPDX-License-Identifier: AGPL-3.0-only
           <a href="{% url 'cube:release_edit' release.id %}"><i class="far fa-edit"></i></a>
         </td>
       </tr>
-    </a>
     {% endfor %}
   </tbody>
 </table>

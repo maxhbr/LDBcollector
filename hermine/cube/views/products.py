@@ -3,45 +3,51 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.views import generic
 
 from cube.models import Product, Release, Category
 from cube.views.mixins import SearchMixin
 
 
-class ProductListView(LoginRequiredMixin, SearchMixin, generic.ListView):
+class ProductListView(
+    LoginRequiredMixin, PermissionRequiredMixin, SearchMixin, generic.ListView
+):
+    permission_required = "cube.view_product"
     model = Product
     template_name = "cube/product_list.html"
     search_fields = ("name", "description")
     paginate_by = 10
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["nb_products"] = Product.objects.all().count()
-        context["nb_releases"] = Release.objects.all().count()
-        return context
 
-
-class ProductDetailView(LoginRequiredMixin, generic.DetailView):
+class ProductDetailView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
+    permission_required = "cube.view_product"
     model = Product
     template_name = "cube/product_detail.html"
 
 
-class ProductAddView(LoginRequiredMixin, generic.CreateView):
+class ProductAddView(LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView):
+    permission_required = "cube.add_product"
     fields = "__all__"
     model = Product
+    template_name = "cube/product_add.html"
     # success_url = reverse_lazy("cube:products")
 
 
-class ProductEditView(LoginRequiredMixin, generic.UpdateView):
+class ProductEditView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
+    permission_required = "cube.change_product"
     fields = "__all__"
     model = Product
     template_name = "cube/product_edit.html"
     # success_url = reverse_lazy("cube:products")
 
 
-class ProductAddReleaseView(LoginRequiredMixin, generic.CreateView):
+class ProductAddReleaseView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView
+):
+    permission_required = "cube.add_release"
     fields = ["product", "release_number"]
     model = Release
     template_name = "cube/product_add_release.html"
@@ -53,22 +59,27 @@ class ProductAddReleaseView(LoginRequiredMixin, generic.CreateView):
         return context
 
 
-class CategoryListView(LoginRequiredMixin, generic.ListView):
+class CategoryListView(LoginRequiredMixin, PermissionRequiredMixin, generic.ListView):
+    permission_required = "cube.view_category"
     model = Category
-    template_name = "cube/category_list.html"
 
 
-class CategoryDetailView(LoginRequiredMixin, generic.DetailView):
+class CategoryDetailView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
+    permission_required = "cube.view_category"
     model = Category
-    template_name = "cube/category_detail.html"
 
 
-class CategoryAddView(LoginRequiredMixin, generic.CreateView):
+class CategoryAddView(LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView):
+    permission_required = "cube.add_category"
     fields = "__all__"
     model = Category
+    template_name = "cube/category_add.html"
 
 
-class CategoryEditView(LoginRequiredMixin, generic.UpdateView):
+class CategoryEditView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
+    permission_required = "cube.change_category"
     fields = "__all__"
     model = Category
     template_name = "cube/category_edit.html"
