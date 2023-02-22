@@ -1,3 +1,15 @@
+{% if form.errors %}
+  <article class="message is-danger">
+    <div class="message-header">
+      <p>Failure</p>
+    </div>
+    <div class="message-body">
+      <span class="icon has-text-danger"><i class="fas fa-exclamation-triangle"></i></span>
+      {{ form.non_field_errors }}
+    </div>
+  </article>
+{% endif %}
+
 <form method="post">
   {% csrf_token %}
   <table>

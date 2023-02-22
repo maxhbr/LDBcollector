@@ -11,16 +11,18 @@ SPDX-License-Identifier: AGPL-3.0-only
 <ul>
   <li>Hermine</li>
   <li><a href="{% url 'cube:products'%}">Products</a></li>
-  <li><a href="{% url 'cube:products'%}">{{ release.product}}</a></li>
+  <li><a href="{% url 'cube:products'%}">{{ release.product }}</a></li>
   <li><a href="{% url 'cube:release_summary' release.id %}">{{ release.release_number }}</a></li>
 
 </ul>
 {% endblock %}
+
 {% block herozone %}
   <div class="hero-body">
     <p class="title">Edit release {{ release.release_number }}</p>
   </div>
 {% endblock %}
+
 {% block infoitem %}
 <p class="subtitle" style="text-transform: uppercase;">
   <span class="icon is-medium">
@@ -29,28 +31,9 @@ SPDX-License-Identifier: AGPL-3.0-only
     Product release
   </p>
 {% endblock %}
-{% block content %}
-{% if form.errors %}
-  <article class="message is-danger">
-    <div class="message-header">
-      <p>Failure</p>
-    </div>
-    <div class="message-body">
-      <span class="icon has-text-danger"><i class="fas fa-exclamation-triangle"></i></span> Couldn't edit the release because: {{ form.non_field_errors }} </div>
-    <ul>
-    </ul>
-  </article>
-{% endif %}
-  <form method="post">
-        {% csrf_token %}
-    <table>
-      {{ form }}
-    </table>
-      <div class="control">
-    <button type="submit" class="button is-link">Save</button>
-  </div>
-  </form>
 
+{% block content %}
+{% include "cube/includes/table_form.html" %}
 {% endblock %}
 
 

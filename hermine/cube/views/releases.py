@@ -6,7 +6,7 @@ import csv
 import logging
 
 from django.contrib import messages
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
@@ -44,11 +44,39 @@ from cube.views.mixins import (
 logger = logging.getLogger(__name__)
 
 
-class ReleaseImportView(LoginRequiredMixin, UpdateView):
+class ReleaseSummaryView(
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    ReleaseExploitationFormMixin,
+    ReleaseContextMixin,
+    generic.ListView,
+):
+    model = Exploitation
+    template_name = "cube/release_summary.html"
+    permission_required = "cube.view_release"
+
+    def get_queryset(self):
+        return (
+            super()
+            .get_queryset()
+            .filter(release=self.release)
+            .order_by("project", "scope")
+        )
+
+
+class ReleaseEditView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    model = Release
+    fields = ["product", "release_number", "commit", "ship_status"]
+    permission_required = "cube.change_release"
+    template_name = "cube/release_edit.html"
+
+
+class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Release
     form_class = ImportBomForm
     context_object_name = "release"
     template_name = "cube/release_import.html"
+    permission_required = "cube.change_release_sbom"
 
     def get_success_url(self):
         return reverse("cube:release_import", kwargs={"pk": self.object.pk})
@@ -91,13 +119,14 @@ class ReleaseImportView(LoginRequiredMixin, UpdateView):
         return super().form_valid(form)
 
 
-class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
+class ReleaseObligView(LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView):
     """
     Lists relevant obligations for a given release
     """
 
     model = Release
     template_name = "cube/release_oblig.html"
+    permission_required = "cube.view_release"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -113,8 +142,11 @@ class ReleaseObligView(LoginRequiredMixin, generic.DetailView):
         return context
 
 
-class ReleaseGenericView(LoginRequiredMixin, ReleaseContextMixin, TemplateView):
+class ReleaseGenericView(
+    LoginRequiredMixin, ReleaseContextMixin, PermissionRequiredMixin, TemplateView
+):
     template_name = "cube/release_generic.html"
+    permission_required = "cube.view_release"
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
@@ -129,26 +161,9 @@ class ReleaseGenericView(LoginRequiredMixin, ReleaseContextMixin, TemplateView):
         return context
 
 
-class ReleaseSummaryView(
-    LoginRequiredMixin,
-    ReleaseExploitationFormMixin,
-    ReleaseContextMixin,
-    generic.ListView,
-):
-    model = Exploitation
-    template_name = "cube/release_summary.html"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .filter(release=self.release)
-            .order_by("project", "scope")
-        )
-
-
-class ReleaseBomExportView(LoginRequiredMixin, DetailView):
+class ReleaseBomExportView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     model = Release
+    permission_required = "cube.view_release"
 
     def get(self, request, **kwargs):
         self.object = self.get_object()
@@ -198,20 +213,20 @@ class ReleaseBomExportView(LoginRequiredMixin, DetailView):
 
 
 class ReleaseSBOMView(
-    LoginRequiredMixin, SearchMixin, ReleaseContextMixin, generic.ListView
+    LoginRequiredMixin,
+    SearchMixin,
+    ReleaseContextMixin,
+    PermissionRequiredMixin,
+    generic.ListView,
 ):
     model = Usage
     template_name = "cube/release_bom.html"
     paginate_by = 50
     search_fields = ("version__purl",)
+    permission_required = "cube.view_release"
 
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset(*args, **kwargs)
         release_id = self.kwargs["release_pk"]
         queryset = queryset.filter(release=release_id).order_by("project", "scope")
         return queryset
-
-
-class ReleaseUpdateView(LoginRequiredMixin, UpdateView):
-    model = Release
-    fields = ["product", "release_number", "commit", "ship_status"]

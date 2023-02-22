@@ -33,7 +33,6 @@ class ProductAddView(LoginRequiredMixin, PermissionRequiredMixin, generic.Create
     fields = "__all__"
     model = Product
     template_name = "cube/product_add.html"
-    # success_url = reverse_lazy("cube:products")
 
 
 class ProductEditView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
@@ -41,18 +40,20 @@ class ProductEditView(LoginRequiredMixin, PermissionRequiredMixin, generic.Updat
     fields = "__all__"
     model = Product
     template_name = "cube/product_edit.html"
-    # success_url = reverse_lazy("cube:products")
 
 
-class ProductAddReleaseView(
+class ReleaseCreateView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView
 ):
     permission_required = "cube.add_release"
-    fields = ["product", "release_number"]
+    fields = ["release_number"]
     model = Release
-    template_name = "cube/product_add_release.html"
+    template_name = "cube/release_add.html"
 
-    # success_url = reverse_lazy("cube:products")
+    def form_valid(self, form):
+        form.instance.product = Product.objects.get(id=self.kwargs["product_pk"])
+        return super().form_valid(form)
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["product"] = Product.objects.get(id=self.kwargs["product_pk"])

@@ -17,8 +17,8 @@ urlpatterns = [
     path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
     path(
         "product/<int:product_pk>/add_release/",
-        views.ProductAddReleaseView.as_view(),
-        name="product_add_release",
+        views.ReleaseCreateView.as_view(),
+        name="release_add",
     ),
     path("product/add/", views.ProductAddView.as_view(), name="product_add"),
     path(
@@ -136,7 +136,7 @@ urlpatterns = [
     # Releases views
     path(
         "release/<int:pk>/edit/",
-        views.ReleaseUpdateView.as_view(),
+        views.ReleaseEditView.as_view(),
         name="release_edit",
     ),
     path(

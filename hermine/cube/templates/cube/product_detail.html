@@ -24,10 +24,12 @@ SPDX-License-Identifier: AGPL-3.0-only
     <span>Edit this product</span>
   </a>
 {% endif %}
-<a class="button is-info is-inverted" href="{% url 'cube:product_add_release' product.id %} ">
+{% if perms.cube.add_release %}
+<a class="button is-info is-inverted" href="{% url 'cube:release_add' product.id %} ">
   <span class="icon"><i class="fas fa-plus"></i></span>
   <span>Create a release for this product</span>
 </a>
+{% endif %}
 {% endblock %}
 
 {% block herozone %}
@@ -64,7 +66,9 @@ SPDX-License-Identifier: AGPL-3.0-only
 <p>
   <b>Owner:</b> {{ product.owner }} - {{ product.owner.first_name }} {{ product.owner.last_name }}
 </p>
+
 <h2 class="title is-2">Releases for this product</h2>
+{% if perms.cube.view_release %}
 <table class="table is-striped is-hoverable is-fullwidth">
   <thead>
     <tr>
@@ -97,5 +101,8 @@ SPDX-License-Identifier: AGPL-3.0-only
     {% endfor %}
   </tbody>
 </table>
+{% else %}
+You don't have the permission to view releases.
+{% endif %}
 {% endblock %}
 
