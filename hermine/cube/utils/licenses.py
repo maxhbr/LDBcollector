@@ -222,12 +222,12 @@ def get_usages_obligations(usages):
     """
     Get triggered obligations for a list of usages.
 
-    :param usages: A iterable of Usage objects
+    :param usages: An iterable of Usage objects
     :return: A tuple with a list of generics, a list of licenses which
     obligations have no generics and the sorted list of licenses involved
     """
     generics_involved = set()
-    orphaned_licenses = set()
+    specific_obligations = set()
     licenses_involved_set = set()
 
     for usage in usages:
@@ -239,9 +239,9 @@ def get_usages_obligations(usages):
                 if obligation.generic:
                     generics_involved.add(obligation.generic)
                 else:
-                    orphaned_licenses.add(license)
+                    specific_obligations.add(obligation)
     licenses_involved = sorted(licenses_involved_set, key=lambda x: x.spdx_id)
-    return generics_involved, orphaned_licenses, licenses_involved
+    return generics_involved, specific_obligations, licenses_involved
 
 
 def get_generic_usages(usages, generic):
