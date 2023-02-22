@@ -19,7 +19,6 @@ class UnauthenticatedTestCase(TestCase):
     fixtures = ["test_data.json"]
     urls = [
         reverse("cube:root"),
-        reverse("cube:about"),
         reverse("cube:products"),
         reverse("cube:product_detail", kwargs={"pk": 1}),
         reverse("cube:components"),
