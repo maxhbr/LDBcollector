@@ -279,12 +279,12 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["get"])
     def obligations(self, pk, **kwargs):
         usages = self.get_object().usage_set.all()
-        generics_involved, orphaned_licenses = get_usages_obligations(usages)
+        generics_involved, specifics = get_usages_obligations(usages)
 
         return Response(
             {
                 "generics": GenericSerializer(generics_involved, many=True).data,
-                "orphaned": LicenseSerializer(orphaned_licenses, many=True).data,
+                "specifics": LicenseSerializer(specifics, many=True).data,
             }
         )
 

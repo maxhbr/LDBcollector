@@ -133,11 +133,11 @@ class ReleaseObligView(LoginRequiredMixin, PermissionRequiredMixin, generic.Deta
         usages = self.object.usage_set.all()
         (
             generics_involved,
-            orphaned_licenses,
+            specifics_involved,
             licenses_involved,
         ) = get_usages_obligations(usages)
         context["generics_involved"] = generics_involved
-        context["orphaned_licenses"] = orphaned_licenses
+        context["specifics_involved"] = specifics_involved
         context["licenses_involved"] = licenses_involved
         return context
 
