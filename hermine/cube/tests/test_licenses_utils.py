@@ -46,7 +46,7 @@ class ObligationsTestCase(TestCase):
         generics, specifics, licenses_involved = get_usages_obligations([self.usage1])
 
         self.assertIn(self.generic1, generics)
-        self.assertIn(self.license1, licenses)
+        self.assertIn(self.license1, licenses_involved)
 
     def test_non_triggering_modification_obligation(self):
         self.obligation_with_generic.trigger_mdf = Usage.MODIFICATION_ALTERED
