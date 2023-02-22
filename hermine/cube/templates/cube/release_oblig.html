@@ -73,7 +73,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </tbody>
   </table>
 
-  {% if orphaned_licenses %}
+  {% if specifics_involved %}
     <h2 class="title is-2">List of license-specific obligations to follow</h2>
     <table class="table">
       <thead>
@@ -85,17 +85,13 @@ SPDX-License-Identifier: AGPL-3.0-only
         </tr>
       </thead>
       <tbody>
-        {% for license in orphaned_licenses %}
-            {% for obligation in license.obligation_set.all %}
-              {% if not obligation.generic %}
-                <tr>
-                  <td>{{license.spdx_id}}</td>
-                  <td>{{obligation.name}}</td>
-                  <td>{{obligation.verbatim}}</td>
-                  <td>{{obligation.passivity}}</td>
-                </tr>
-              {% endif %}
-          {% endfor %}
+        {% for obligation in specifics_involved %}
+          <tr>
+            <td>{{obligation.license.spdx_id}}</td>
+            <td>{{obligation.name}}</td>
+            <td>{{obligation.verbatim}}</td>
+            <td>{{obligation.passivity}}</td>
+          </tr>
         {% endfor %}
       </tbody>
     </table>

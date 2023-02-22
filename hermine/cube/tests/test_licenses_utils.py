@@ -33,59 +33,78 @@ class ObligationsTestCase(TestCase):
 
         self.license1 = License.objects.create()
         self.generic1 = Generic.objects.create()
-        self.obligation1 = Obligation.objects.create(
+        self.obligation_with_generic = Obligation.objects.create(
             name="obligation1", license=self.license1, generic=self.generic1
         )
-        self.obligation2 = Obligation.objects.create(
+        self.obligation_specific = Obligation.objects.create(
             name="obligation2", license=self.license1
         )
         self.usage1 = Usage.objects.create(release=self.release1, version=self.version1)
         self.usage1.licenses_chosen.set([self.license1])
 
     def test_simple_usage_obligation(self):
-        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
+        generics, specifics, licenses_involved = get_usages_obligations([self.usage1])
 
         self.assertIn(self.generic1, generics)
         self.assertIn(self.license1, licenses)
 
     def test_non_triggering_modification_obligation(self):
-        self.obligation1.trigger_mdf = Usage.MODIFICATION_ALTERED
-        self.obligation1.save()
+        self.obligation_with_generic.trigger_mdf = Usage.MODIFICATION_ALTERED
+        self.obligation_with_generic.save()
 
-        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
+        generics, specifics, licenses_involved = get_usages_obligations([self.usage1])
         self.assertNotIn(self.generic1, generics)
 
     def test_triggering_modification_obligation(self):
-        self.obligation1.trigger_mdf = Usage.MODIFICATION_ALTERED
-        self.obligation1.save()
+        self.obligation_with_generic.trigger_mdf = Usage.MODIFICATION_ALTERED
+        self.obligation_with_generic.save()
         self.usage1.component_modified = Usage.MODIFICATION_ALTERED
         self.usage1.save()
 
-        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
+        generics, specifics, licenses_involved = get_usages_obligations([self.usage1])
         self.assertIn(self.generic1, generics)
 
     def test_only_non_source_trigger(self):
-        self.obligation1.trigger_expl = Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE
-        self.obligation1.save()
+        self.obligation_with_generic.trigger_expl = (
+            Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE
+        )
+        self.obligation_with_generic.save()
 
-        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
+        generics, specifics, licenses_involved = get_usages_obligations([self.usage1])
         self.assertIn(self.generic1, generics)
 
-    def test_triggering_explotation_source_only(self):
+    def test_triggering_exploitation_source_only(self):
         self.usage1.exploitation = Usage.EXPLOITATION_DISTRIBUTION_SOURCE
         self.usage1.save()
 
-        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
+        generics, specifics, licenses_involved = get_usages_obligations([self.usage1])
         self.assertIn(self.generic1, generics)
 
-    def test_non_triggering_explotation(self):
-        self.obligation1.trigger_expl = Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE
-        self.obligation1.save()
+    def test_non_triggering_exploitation(self):
+        self.obligation_with_generic.trigger_expl = (
+            Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE
+        )
+        self.obligation_with_generic.save()
         self.usage1.exploitation = Usage.EXPLOITATION_DISTRIBUTION_SOURCE
         self.usage1.save()
 
-        generics, licenses, licenses_involved = get_usages_obligations([self.usage1])
+        generics, specifics, licenses_involved = get_usages_obligations([self.usage1])
         self.assertNotIn(self.generic1, generics)
+
+    def test_non_triggering_modification_and_exploitation(self):
+        self.obligation_with_generic.trigger_mdf = Usage.MODIFICATION_ALTERED
+        self.obligation_with_generic.trigger_expl = (
+            Usage.EXPLOITATION_DISTRIBUTION_SOURCE
+        )
+        self.obligation_with_generic.save()
+
+        self.usage1.component_modified = Usage.MODIFICATION_UNMODIFIED
+        self.usage1.exploitation = Usage.EXPLOITATION_NETWORK
+        self.usage1.save()
+
+        generics, specifics, licenses_involved = get_usages_obligations([self.usage1])
+        self.assertNotIn(self.generic1, generics)
+        self.assertNotIn(self.obligation_specific, specifics)
 
 
 class SPDXToolsTestCase(TestCase):
