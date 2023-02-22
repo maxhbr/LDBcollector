@@ -1,0 +1,9 @@
+<form method="post">
+  {% csrf_token %}
+  <table>
+    {{ form }}
+  </table>
+  <div class="control">
+    <button type="submit" class="button is-link">Save</button>
+  </div>
+</form>
