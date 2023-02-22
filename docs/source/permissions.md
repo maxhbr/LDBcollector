@@ -19,8 +19,9 @@ views, but you can still use them if you want fine control over the access to th
 
 Hermine uses permissions according to the following rules:
 
-*  the special permissions `cube.change_release_bom` is used for uploading releases SBOM.
 * `cube.view_release` gives access to a release summary, SBOM (view and export), validation state and obligations.
+* `cube.change_release` allows to change the release details and exploitation mode.
+*  the special permissions `cube.change_release_bom` is used for uploading releases SBOM.
 * `cube.view_*`, `cube.add_*`, and `cube.change_*` are used for other views.
 
 ## Groups
