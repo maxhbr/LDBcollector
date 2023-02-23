@@ -86,21 +86,29 @@ impl Source for FedoraLicenseDataSource {
                 )| {
                     log::debug!("{}", lic_str);
 
-                    let FedoraInfo { legacy_name, legacy_abbreviation, notes } = fedora.unwrap_or_default();
+                    let FedoraInfo {
+                        legacy_name,
+                        legacy_abbreviation,
+                        notes,
+                    } = fedora.unwrap_or_default();
                     let lic_str_nodes = vec![LicenseGraphNode::license_name(&lic_str)];
-                    let legacy_name_nodes : Vec<_> = [legacy_name.unwrap_or_default(), legacy_abbreviation.unwrap_or_default()].concat()
-                        .iter()
-                        .map(|legacy_name| LicenseGraphNode::license_name(legacy_name))
-                        .collect();
+                    let legacy_name_nodes: Vec<_> = [
+                        legacy_name.unwrap_or_default(),
+                        legacy_abbreviation.unwrap_or_default(),
+                    ]
+                    .concat()
+                    .iter()
+                    .map(|legacy_name| LicenseGraphNode::license_name(legacy_name))
+                    .collect();
                     let lic_str_task = Box::new(LicenseGraphBuilderTask::AddEdgeLeft {
                         lefts: legacy_name_nodes,
                         rights: Box::new(if expression != lic_str {
                             LicenseGraphBuilderTask::AddEdge {
                                 lefts: lic_str_nodes,
                                 rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                                    nodes: vec![LicenseGraphNode::license_name(&expression)]
+                                    nodes: vec![LicenseGraphNode::license_name(&expression)],
                                 }),
-                                edge: LicenseGraphEdge::Better
+                                edge: LicenseGraphEdge::Better,
                             }
                         } else {
                             LicenseGraphBuilderTask::AddNodes {
@@ -110,34 +118,43 @@ impl Source for FedoraLicenseDataSource {
                         edge: LicenseGraphEdge::Better,
                     });
 
-                    let text_nodes : Vec<_> = text.iter()
+                    let text_nodes: Vec<_> = text
+                        .iter()
                         .map(|text| LicenseGraphNode::license_text(text))
                         .collect();
 
-                    let url_nodes : Vec<_> = url.iter()
-                        .flat_map(|text|
-                            text.lines()
-                                .map(|url| LicenseGraphNode::url(url))
-                        )
+                    let url_nodes: Vec<_> = url
+                        .iter()
+                        .flat_map(|text| text.lines().map(|url| LicenseGraphNode::url(url)))
                         .collect();
 
-                    let usage_nodes : Vec<_> = usage.iter()
+                    let usage_nodes: Vec<_> = usage
+                        .iter()
                         .map(|usage| LicenseGraphNode::Note(format!("Fedora usage: {}", usage)))
                         .collect();
 
-                    let notes_nodes : Vec<_> = notes.iter()
+                    let notes_nodes: Vec<_> = notes
+                        .iter()
                         .map(|notes| LicenseGraphNode::Note(format!("Fedora notes: {}", notes)))
                         .collect();
 
                     LicenseGraphBuilderTask::AddEdge {
-                        lefts: [vec![
-                            LicenseGraphNode::StatementRule { statement_content: contents, },
-                            LicenseGraphNode::license_rating(&format!("Fedora Rating: {:?}", status)),
-                        ], text_nodes
-                        , url_nodes
-                        , usage_nodes
-                        , notes_nodes
-                        ].concat(),
+                        lefts: [
+                            vec![
+                                LicenseGraphNode::StatementRule {
+                                    statement_content: contents,
+                                },
+                                LicenseGraphNode::license_rating(&format!(
+                                    "Fedora Rating: {:?}",
+                                    status
+                                )),
+                            ],
+                            text_nodes,
+                            url_nodes,
+                            usage_nodes,
+                            notes_nodes,
+                        ]
+                        .concat(),
                         rights: lic_str_task,
                         edge: LicenseGraphEdge::AppliesTo,
                     }

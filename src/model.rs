@@ -1,7 +1,7 @@
 use multimap::MultiMap;
 use petgraph::algo::has_path_connecting;
 use petgraph::dot::{Config, Dot};
-use petgraph::graph::{Edge, EdgeIndex, Frozen, Node, NodeIndex};
+use petgraph::graph::{Edge, EdgeIndex, Frozen, Graph, Node, NodeIndex};
 use petgraph::stable_graph::StableGraph;
 use serde_derive::{Deserialize, Serialize};
 use std::collections::hash_map::DefaultHasher;
@@ -144,7 +144,12 @@ impl LicenseType {
                 vec!["StronglyProtective", "Strongly Protective", "strong"]
             }
             LicenseType::NetworkProtective(_) => {
-                vec!["NetworkProtective", "Network Protective", "network_copyleft", "network"]
+                vec![
+                    "NetworkProtective",
+                    "Network Protective",
+                    "network_copyleft",
+                    "network",
+                ]
             }
             LicenseType::Unlicensed(_) => vec!["Unlicensed"],
             LicenseType::Unknown(_) => vec!["Unknown"],
@@ -235,8 +240,8 @@ impl LicenseData {
     pub fn license_flag(flag: &str) -> Self {
         LicenseData::LicenseFlag(String::from(flag))
     }
-    pub fn license_rating(flag: &str) -> Self {
-        LicenseData::LicenseRating(String::from(flag))
+    pub fn license_rating(rating: &str) -> Self {
+        LicenseData::LicenseRating(String::from(rating))
     }
 }
 //## end License Data
@@ -247,6 +252,7 @@ pub enum LicenseGraphNode {
     Data(LicenseData),
     Note(String),
     URL(String),
+    Vec(Vec<LicenseGraphNode>),
     Statement { statement_content: String },
     StatementRule { statement_content: String },
 }
@@ -289,6 +295,9 @@ impl fmt::Debug for LicenseGraphNode {
             Self::URL(url) => {
                 write!(f, "{}", url)
             }
+            Self::Vec(vec) => {
+                write!(f, "{:?}", vec)
+            }
             Self::Statement { statement_content } => {
                 write!(f, "{}", statement_content)
             }
@@ -301,7 +310,7 @@ impl fmt::Debug for LicenseGraphNode {
     }
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
 pub enum LicenseGraphEdge {
     Same,
     Better,
@@ -338,9 +347,9 @@ impl LicenseGraphBuilderTask {
     pub fn mk_aliases_task(best: String, other_names: Vec<String>) -> Self {
         LicenseGraphBuilderTask::AddEdgeLeft {
             lefts: other_names
-                    .iter()
-                    .map(|other_name| LicenseGraphNode::license_name(other_name))
-                    .collect(),
+                .iter()
+                .map(|other_name| LicenseGraphNode::license_name(other_name))
+                .collect(),
             rights: Box::new(LicenseGraphBuilderTask::AddNodes {
                 nodes: vec![LicenseGraphNode::license_name(&best)],
             }),
@@ -422,7 +431,14 @@ impl LicenseGraph {
     ) -> Vec<EdgeIndex> {
         rights
             .into_iter()
-            .map(|right| self.graph.add_edge(left, right, edge.clone()))
+            .map(|right| {
+                let idx = self.graph.add_edge(left, right, edge.clone());
+                if edge == LicenseGraphEdge::Same {
+                    // TODO: realy add inverses of Same edges?
+                    self.graph.add_edge(right, left, edge.clone());
+                }
+                idx
+            })
             .collect()
     }
 
@@ -562,6 +578,37 @@ impl LicenseGraph {
 
     pub fn get_as_dot(&self) -> String {
         let dot = Dot::with_config(&self.graph, &[]);
+        format!("{:?}", dot)
+    }
+    pub fn get_condensed(&self) -> Graph<LicenseGraphNode, LicenseGraphEdge> {
+        petgraph::algo::condensation(Graph::from(self.graph.clone()), false).map(
+            |_idx, node| {
+                if node.len() == 1 {
+                    node.iter().next().unwrap().clone()
+                } else {
+                    LicenseGraphNode::Vec(node.clone())
+                }
+            },
+            |_idx, edge| edge.clone(),
+        )
+    }
+    pub fn get_condensed_as_dot(&self) -> String {
+        let condensed = self.get_condensed();
+        let condensed_and_filtered = condensed.filter_map(
+            |_, node| Option::Some(node),
+            |edx, edge| {
+                if let Some((ida, idb)) = condensed.edge_endpoints(edx) {
+                    if ida == idb {
+                        Option::None
+                    } else {
+                        Option::Some(edge)
+                    }
+                } else {
+                    Option::Some(edge)
+                }
+            },
+        );
+        let dot = Dot::with_config(&condensed_and_filtered, &[]);
         format!("{:?}", dot)
     }
 }

@@ -1,7 +1,8 @@
 use crate::model::*;
-use crate::sink_dot::render_dot;
+use crate::sink_dot::render_condensed_dot;
 use crate::sink_force_graph::*;
 use build_html::*;
+use graphviz_rust::attributes::weight;
 use itertools::Itertools;
 use petgraph::dot::{Config, Dot};
 use petgraph::graph::{Edge, EdgeIndex, Frozen, Node, NodeIndex};
@@ -77,6 +78,30 @@ pub fn license_graph_to_tree(
     license_graph_to_tree_for_node(direction, graph, root_idx, HashSet::new())
 }
 
+fn render_weight(weight: &LicenseGraphNode, c: &mut Container) -> () {
+    match weight {
+        LicenseGraphNode::Data(d) => c.add_preformatted(match d {
+            LicenseData::LicenseText(text) => text.clone(),
+            // LicenseData::LicenseIdentifier(_) => todo!(),
+            // LicenseData::LicenseType(_) => todo!(),
+            // LicenseData::LicenseFlag(_) => todo!(),
+            // LicenseData::LicenseRating(_) => todo!(),
+            _ => format!("{:#?}", d),
+        }),
+        LicenseGraphNode::Note(note) => c.add_paragraph(note),
+        LicenseGraphNode::URL(url) => c.add_paragraph(url),
+        LicenseGraphNode::Vec(vec) => {
+            let mut l = Container::new(ContainerType::UnorderedList);
+            vec.iter().for_each(|weight| render_weight(weight, &mut l));
+            c.add_container(l)
+        }
+        LicenseGraphNode::Statement { statement_content } => c.add_paragraph(statement_content),
+        LicenseGraphNode::StatementRule { statement_content } => {
+            c.add_preformatted(statement_content)
+        }
+    };
+}
+
 fn tree_to_html(
     direction: Direction,
     tree: &LicenseGraphTree,
@@ -111,26 +136,30 @@ fn tree_to_html(
                         .with_attributes([("class", "anchor"), ("id", &format!("{:?}", id))]),
                 );
                 written_nodes.insert(*id);
-                match weight {
-                    LicenseGraphNode::Data(d) => c.add_preformatted(
-                        match d {
-                            LicenseData::LicenseText(text) => text.clone(),
-                            // LicenseData::LicenseIdentifier(_) => todo!(),
-                            // LicenseData::LicenseType(_) => todo!(),
-                            // LicenseData::LicenseFlag(_) => todo!(),
-                            // LicenseData::LicenseRating(_) => todo!(),
-                            _ => format!("{:#?}", d)
-                        }
-                    ),
-                    LicenseGraphNode::Note(note) => c.add_paragraph(note),
-                    LicenseGraphNode::URL(url) => c.add_paragraph(url),
-                    LicenseGraphNode::Statement { statement_content } => {
-                        c.add_paragraph(statement_content)
-                    }
-                    LicenseGraphNode::StatementRule { statement_content } => {
-                        c.add_preformatted(statement_content)
-                    }
-                };
+                render_weight(*weight, &mut c);
+                // match weight {
+                //     LicenseGraphNode::Data(d) => c.add_preformatted(
+                //         match d {
+                //             LicenseData::LicenseText(text) => text.clone(),
+                //             // LicenseData::LicenseIdentifier(_) => todo!(),
+                //             // LicenseData::LicenseType(_) => todo!(),
+                //             // LicenseData::LicenseFlag(_) => todo!(),
+                //             // LicenseData::LicenseRating(_) => todo!(),
+                //             _ => format!("{:#?}", d)
+                //         }
+                //     ),
+                //     LicenseGraphNode::Note(note) => c.add_paragraph(note),
+                //     LicenseGraphNode::URL(url) => c.add_paragraph(url),
+                //     LicenseGraphNode::Vec(vec) => {
+
+                //     }
+                //     LicenseGraphNode::Statement { statement_content } => {
+                //         c.add_paragraph(statement_content)
+                //     }
+                //     LicenseGraphNode::StatementRule { statement_content } => {
+                //         c.add_preformatted(statement_content)
+                //     }
+                // };
                 c.add_header(5, "Edge Origins:");
                 c.add_header(5, "Node Origins:");
                 c.add_container(origins.iter().fold(
@@ -188,7 +217,7 @@ pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_name: String) 
                 .with_container(
                     Container::new(ContainerType::Div)
                         .with_attributes([("class", "svg")])
-                        .with_raw(render_dot(focused.clone())),
+                        .with_raw(render_condensed_dot(focused.clone())),
                 )
                 .with_header(2, "backward")
                 .with_container(license_graph_to_html(

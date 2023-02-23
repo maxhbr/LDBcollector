@@ -57,3 +57,10 @@ pub fn render_dot(graph: LicenseGraph) -> String {
     log::debug!("render dot to svg");
     exec(g, &mut PrinterContext::default(), vec![Format::Svg.into()]).unwrap()
 }
+
+pub fn render_condensed_dot(graph: LicenseGraph) -> String {
+    log::debug!("parse dot");
+    let g = parse(&format!("{}", graph.get_condensed_as_dot())).unwrap();
+    log::debug!("render dot to svg");
+    exec(g, &mut PrinterContext::default(), vec![Format::Svg.into()]).unwrap()
+}
