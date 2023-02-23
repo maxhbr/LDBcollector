@@ -92,10 +92,11 @@ impl Source for OslcHandbookSource {
                     .map(|handbook| {
                         let licenseId = &handbook.licenseId;
                         let name = &handbook.name;
-                        let notes : Vec<LicenseGraphNode> = handbook.notes
-                           .iter()
-                           .map(|notes| LicenseGraphNode::note(notes))
-                           .collect();
+                        let notes: Vec<LicenseGraphNode> = handbook
+                            .notes
+                            .iter()
+                            .map(|notes| LicenseGraphNode::note(notes))
+                            .collect();
                         let terms = &handbook.terms;
 
                         log::debug!("{}", name);

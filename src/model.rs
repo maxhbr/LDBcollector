@@ -6,9 +6,9 @@ use petgraph::stable_graph::StableGraph;
 use serde_derive::{Deserialize, Serialize};
 use std::collections::hash_map::DefaultHasher;
 use std::collections::HashMap;
+use std::error::Error;
 use std::fmt;
 use std::hash::{Hash, Hasher};
-use std::error::Error;
 
 #[derive(thiserror::Error, Debug)]
 pub enum MyError {
@@ -19,7 +19,6 @@ pub enum MyError {
     #[error(transparent)]
     IOError(#[from] std::io::Error),
 }
-
 
 //#############################################################################
 //## Origin
@@ -69,16 +68,23 @@ pub enum LicenseIdentifier {
     Namespaced {
         namespace: String,
         name: Box<LicenseIdentifier>,
-    }
+    },
 }
 impl LicenseIdentifier {
     pub fn new(full_name: &str) -> Self {
         match full_name.split(':').collect::<Vec<_>>().as_slice() {
             [] => Self::Name(String::from(full_name)),
-            [start @ .., name] =>
-                start.iter().rev().fold( Self::Name(String::from(*name)),
-                    |acc, namespace| Self::Namespaced { namespace: String::from(*namespace), name: Box::new(acc) }
-                )
+            [start @ .., name] => {
+                start
+                    .iter()
+                    .rev()
+                    .fold(Self::Name(String::from(*name)), |acc, namespace| {
+                        Self::Namespaced {
+                            namespace: String::from(*namespace),
+                            name: Box::new(acc),
+                        }
+                    })
+            }
         }
     }
 }
@@ -86,7 +92,9 @@ impl core::fmt::Display for LicenseIdentifier {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
             LicenseIdentifier::Name(license_name) => write!(f, "{}", license_name),
-            LicenseIdentifier::Namespaced { namespace, name } => write!(f, "{}:{}", namespace, name),
+            LicenseIdentifier::Namespaced { namespace, name } => {
+                write!(f, "{}:{}", namespace, name)
+            }
         }
     }
 }
@@ -94,7 +102,9 @@ impl core::fmt::Debug for LicenseIdentifier {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
             LicenseIdentifier::Name(license_name) => write!(f, "{}", license_name),
-            LicenseIdentifier::Namespaced { namespace, name } => write!(f, "{}:{}", namespace, name),
+            LicenseIdentifier::Namespaced { namespace, name } => {
+                write!(f, "{}:{}", namespace, name)
+            }
         }
     }
 }
@@ -112,32 +122,39 @@ impl Hash for LicenseIdentifier {
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash)]
 pub enum LicenseType {
-    PublicDomain (Option<String>),
-    Permissive (Option<String>),
-    Copyleft (Option<String>),
-    WeaklyProtective (Option<String>),
-    StronglyProtective (Option<String>),
-    NetworkProtective (Option<String>),
-    Unknown (Option<String>),
-    Unlicensed (Option<String>),
+    PublicDomain(Option<String>),
+    Permissive(Option<String>),
+    Copyleft(Option<String>),
+    WeaklyProtective(Option<String>),
+    StronglyProtective(Option<String>),
+    NetworkProtective(Option<String>),
+    Unknown(Option<String>),
+    Unlicensed(Option<String>),
 }
-impl LicenseType{
+impl LicenseType {
     fn get_names_for_type(&self) -> Vec<&str> {
         match self {
-            LicenseType::PublicDomain(_) => vec!( "PublicDomain", "Public Domain" ),
-            LicenseType::Permissive(_) => vec!( "Permissive" ),
-            LicenseType::Copyleft(_) => vec!("Copyleft"),
-            LicenseType::WeaklyProtective(_) => vec!( "WeaklyProtective", "Weakly Protective", "weak"),
-            LicenseType::StronglyProtective(_) => vec!( "StronglyProtective", "Strongly Protective", "strong"),
-            LicenseType::NetworkProtective(_) => vec!( "NetworkProtective", "Network Protective", "network"),
-            LicenseType::Unlicensed(_) => vec!( "Unlicensed"),
-            LicenseType::Unknown(_) => vec!( "Unknown"),
+            LicenseType::PublicDomain(_) => vec!["PublicDomain", "Public Domain"],
+            LicenseType::Permissive(_) => vec!["Permissive"],
+            LicenseType::Copyleft(_) => vec!["Copyleft"],
+            LicenseType::WeaklyProtective(_) => {
+                vec!["WeaklyProtective", "Weakly Protective", "weak"]
+            }
+            LicenseType::StronglyProtective(_) => {
+                vec!["StronglyProtective", "Strongly Protective", "strong"]
+            }
+            LicenseType::NetworkProtective(_) => {
+                vec!["NetworkProtective", "Network Protective", "network_copyleft", "network"]
+            }
+            LicenseType::Unlicensed(_) => vec!["Unlicensed"],
+            LicenseType::Unknown(_) => vec!["Unknown"],
         }
     }
 
     fn type_matches_type(self, needle: &str) -> Option<Self> {
         let needle_lower = needle.to_lowercase();
-        let matches = self.get_names_for_type()
+        let matches = self
+            .get_names_for_type()
             .iter()
             .map(|s| s.to_lowercase())
             .any(|s| s == needle_lower);
@@ -155,11 +172,16 @@ impl LicenseType{
             new
         } else if let Option::Some(new) = Self::Copyleft(Option::None).type_matches_type(ty) {
             new
-        } else if let Option::Some(new) = Self::WeaklyProtective(Option::None).type_matches_type(ty) {
+        } else if let Option::Some(new) = Self::WeaklyProtective(Option::None).type_matches_type(ty)
+        {
             new
-        } else if let Option::Some(new) = Self::StronglyProtective(Option::None).type_matches_type(ty) {
+        } else if let Option::Some(new) =
+            Self::StronglyProtective(Option::None).type_matches_type(ty)
+        {
             new
-        } else if let Option::Some(new) = Self::NetworkProtective(Option::None).type_matches_type(ty) {
+        } else if let Option::Some(new) =
+            Self::NetworkProtective(Option::None).type_matches_type(ty)
+        {
             new
         } else if let Option::Some(new) = Self::Unlicensed(Option::None).type_matches_type(ty) {
             new
@@ -198,6 +220,7 @@ pub enum LicenseData {
     LicenseType(LicenseType),
     LicenseText(String),
     LicenseFlag(String),
+    LicenseRating(String),
 }
 impl LicenseData {
     pub fn license_name(name: &str) -> Self {
@@ -211,6 +234,9 @@ impl LicenseData {
     }
     pub fn license_flag(flag: &str) -> Self {
         LicenseData::LicenseFlag(String::from(flag))
+    }
+    pub fn license_rating(flag: &str) -> Self {
+        LicenseData::LicenseRating(String::from(flag))
     }
 }
 //## end License Data
@@ -237,6 +263,9 @@ impl LicenseGraphNode {
     pub fn license_flag(text: &str) -> Self {
         Self::Data(LicenseData::license_flag(text))
     }
+    pub fn license_rating(rating: &str) -> Self {
+        Self::Data(LicenseData::license_rating(rating))
+    }
     pub fn note(note: &str) -> Self {
         Self::Note(String::from(note))
     }
@@ -247,18 +276,17 @@ impl LicenseGraphNode {
 impl fmt::Debug for LicenseGraphNode {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
-            Self::Data(d) => {
-                match d {
-                    LicenseData::LicenseIdentifier(license_name) => write!(f, "{:?}", license_name),
-                    LicenseData::LicenseType(ty) => write!(f, "{}", ty),
-                    LicenseData::LicenseText(_) => write!(f, "$DATA:license_text"),
-                    LicenseData::LicenseFlag(flag) => write!(f, "$DATA:license_flag:{}", flag),
-                }
-            }
-            Self::Note (_) => {
+            Self::Data(d) => match d {
+                LicenseData::LicenseIdentifier(license_name) => write!(f, "{:?}", license_name),
+                LicenseData::LicenseType(ty) => write!(f, "{}", ty),
+                LicenseData::LicenseText(_) => write!(f, "$DATA:license_text"),
+                LicenseData::LicenseFlag(flag) => write!(f, "$DATA:license_flag:{}", flag),
+                LicenseData::LicenseRating(rating) => write!(f, "{}", rating),
+            },
+            Self::Note(_) => {
                 write!(f, "$NOTE")
             }
-            Self::URL (url) => {
+            Self::URL(url) => {
                 write!(f, "{}", url)
             }
             Self::Statement { statement_content } => {
@@ -308,13 +336,13 @@ pub enum LicenseGraphBuilderTask {
 }
 impl LicenseGraphBuilderTask {
     pub fn mk_aliases_task(best: String, other_names: Vec<String>) -> Self {
-        LicenseGraphBuilderTask::AddEdge {
-            lefts: vec![LicenseGraphNode::license_name(&best)],
-            rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                nodes: other_names
+        LicenseGraphBuilderTask::AddEdgeLeft {
+            lefts: other_names
                     .iter()
                     .map(|other_name| LicenseGraphNode::license_name(other_name))
                     .collect(),
+            rights: Box::new(LicenseGraphBuilderTask::AddNodes {
+                nodes: vec![LicenseGraphNode::license_name(&best)],
             }),
             edge: LicenseGraphEdge::Same,
         }
@@ -358,10 +386,11 @@ impl LicenseGraph {
         self.get_idx_of_node(&node)
     }
 
-    pub fn focus(&self, license_name: &str) ->  Result<Self,Box<dyn Error>> {
+    pub fn focus(&self, license_name: &str) -> Result<Self, Box<dyn Error>> {
         let mut s = self.clone();
 
-        let root_idx = self.get_idx_of_license(license_name)
+        let root_idx = self
+            .get_idx_of_license(license_name)
             .ok_or(MyError::Err(format!("failed to focus on {}", license_name)))?;
 
         s.graph.retain_nodes(|_frozen_s, idx: NodeIndex| {
@@ -520,14 +549,12 @@ impl LicenseGraph {
         self.graph
             .node_weights()
             .filter_map(|w| match w {
-                LicenseGraphNode::Data(data) => {
-                    match data {
-                        LicenseData::LicenseIdentifier(license_identifier) => Option::Some(license_identifier),
-                        LicenseData::LicenseType(_) => Option::None {},
-                        LicenseData::LicenseText(_) => Option::None {},
-                        LicenseData::LicenseFlag(_) => Option::None {},
+                LicenseGraphNode::Data(data) => match data {
+                    LicenseData::LicenseIdentifier(license_identifier) => {
+                        Option::Some(license_identifier)
                     }
-                }
+                    _ => Option::None {},
+                },
                 _ => Option::None {},
             })
             .collect()
@@ -603,18 +630,9 @@ mod tests {
 
     #[test]
     fn license_name_tests() {
-        assert_eq!(
-            LicenseIdentifier::new("MIT"),
-            LicenseIdentifier::new("MIT")
-        );
-        assert_eq!(
-            LicenseIdentifier::new("MIT"),
-            LicenseIdentifier::new("mit")
-        );
-        assert_eq!(
-            LicenseIdentifier::new("MIT"),
-            LicenseIdentifier::new("mIt")
-        );
+        assert_eq!(LicenseIdentifier::new("MIT"), LicenseIdentifier::new("MIT"));
+        assert_eq!(LicenseIdentifier::new("MIT"), LicenseIdentifier::new("mit"));
+        assert_eq!(LicenseIdentifier::new("MIT"), LicenseIdentifier::new("mIt"));
     }
 
     #[test]
@@ -628,39 +646,35 @@ mod tests {
     fn demo() -> LicenseGraph {
         let mut builder = LicenseGraphBuilder::new();
 
-        let tasks_a = vec![
-            LicenseGraphBuilderTask::AddEdge {
-                lefts: vec![LicenseGraphNode::license_name("MIT License")],
-                rights: Box::new(
-                    LicenseGraphBuilderTask::AddNodes {
-                        nodes: vec![LicenseGraphNode::license_name("MIT")],
-                    }
-                ),
-                edge: LicenseGraphEdge::Same,
-            }
-        ];
+        let tasks_a = vec![LicenseGraphBuilderTask::AddEdge {
+            lefts: vec![LicenseGraphNode::license_name("MIT License")],
+            rights: Box::new(LicenseGraphBuilderTask::AddNodes {
+                nodes: vec![LicenseGraphNode::license_name("MIT")],
+            }),
+            edge: LicenseGraphEdge::Same,
+        }];
 
-        builder = builder.add_tasks(tasks_a, Box::new(
-            Origin::new_with_url("Origin_name_a", "https://domain.invalid/license.txt")
-        ));
+        builder = builder.add_tasks(
+            tasks_a,
+            Box::new(Origin::new_with_url(
+                "Origin_name_a",
+                "https://domain.invalid/license.txt",
+            )),
+        );
 
-        let tasks_b = vec![
-            LicenseGraphBuilderTask::AddEdge {
-                lefts: vec![LicenseGraphNode::license_type("permissive")],
-                rights: Box::new (LicenseGraphBuilderTask::AddEdge {
-                    lefts: vec![LicenseGraphNode::license_name("the mit license")],
-                    rights: Box::new (LicenseGraphBuilderTask::AddNodes {
-                        nodes: vec![LicenseGraphNode::license_name("MIT")]
-                    }),
-                    edge: LicenseGraphEdge::HintsTowards
+        let tasks_b = vec![LicenseGraphBuilderTask::AddEdge {
+            lefts: vec![LicenseGraphNode::license_type("permissive")],
+            rights: Box::new(LicenseGraphBuilderTask::AddEdge {
+                lefts: vec![LicenseGraphNode::license_name("the mit license")],
+                rights: Box::new(LicenseGraphBuilderTask::AddNodes {
+                    nodes: vec![LicenseGraphNode::license_name("MIT")],
                 }),
-                edge: LicenseGraphEdge::AppliesTo
-            }
-        ];
+                edge: LicenseGraphEdge::HintsTowards,
+            }),
+            edge: LicenseGraphEdge::AppliesTo,
+        }];
 
-        builder = builder.add_tasks(tasks_b, Box::new(
-            Origin::new("Origin_name_b")
-        ));
+        builder = builder.add_tasks(tasks_b, Box::new(Origin::new("Origin_name_b")));
 
         builder.build()
     }
@@ -674,7 +688,10 @@ mod tests {
 
         assert_eq!(s.graph.node_count(), 4);
         assert_eq!(s.get_idx_of_license("mit"), s.get_idx_of_license("MIT"));
-        assert_ne!(s.get_idx_of_license("mit"), s.get_idx_of_license("BSD-3-Clause"));
+        assert_ne!(
+            s.get_idx_of_license("mit"),
+            s.get_idx_of_license("BSD-3-Clause")
+        );
         assert_eq!(Option::None, s.get_idx_of_license("BSD-3-Clause"));
     }
 }

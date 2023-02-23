@@ -1,9 +1,9 @@
 use crate::model::*;
+use std::error::Error;
 use std::fs;
 use std::fs::File;
 use std::path::PathBuf;
 use std::process::Command;
-use std::error::Error;
 
 use graphviz_rust::dot_generator::*;
 use graphviz_rust::dot_structures::*;

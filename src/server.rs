@@ -39,20 +39,18 @@ pub async fn serve(graph: Box<LicenseGraph>) {
 
     let graph_for_graph = graph.clone();
     // GET /graph/MIT
-    let warp_graph = warp::path!(String / "graph").map(move |license: String| {
-        match graph_for_graph.focus(&license) {
-            Result::Ok(focused) => warp::reply::html(to_force_graph_html(focused)),
-            Result::Err(err) => warp::reply::html(format!("{:#?}", err))
-        }
-    });
+    let warp_graph =
+        warp::path!(String / "graph").map(move |license: String| {
+            match graph_for_graph.focus(&license) {
+                Result::Ok(focused) => warp::reply::html(to_force_graph_html(focused)),
+                Result::Err(err) => warp::reply::html(format!("{:#?}", err)),
+            }
+        });
 
     let graph_for_html = graph.clone();
     // GET /html/MIT
     let warp_html = warp::path!(String).map(move |license: String| {
-        warp::reply::html(license_graph_to_tree_string(
-            &graph_for_html,
-            license,
-        ))
+        warp::reply::html(license_graph_to_tree_string(&graph_for_html, license))
     });
 
     warp::serve(warp_index.or(warp_graph).or(warp_html))

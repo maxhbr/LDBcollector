@@ -94,7 +94,7 @@ fn tree_to_html(
             match from_edge {
                 Option::Some(LicenseGraphTreeEdge { to, weights }) => {
                     let weights: Vec<&LicenseGraphEdge> = weights.iter().map(|(_, w)| *w).collect();
-                    let heading_template = if direction == Direction::Outgoing {
+                    if direction == Direction::Outgoing {
                         c.add_header(3, format!("{:?} {:?}&rarr;", weight, weights));
                     } else {
                         c.add_header(3, format!("&larr;{:?} {:?}", weights, weight));
@@ -112,20 +112,27 @@ fn tree_to_html(
                 );
                 written_nodes.insert(*id);
                 match weight {
-                    LicenseGraphNode::Data (d) => c.add_preformatted(format!("{:#?}", d)),
-                    LicenseGraphNode::Note ( note ) => c.add_paragraph(note),
-                    LicenseGraphNode::URL ( url ) => c.add_paragraph(url),
+                    LicenseGraphNode::Data(d) => c.add_preformatted(
+                        match d {
+                            LicenseData::LicenseText(text) => text.clone(),
+                            // LicenseData::LicenseIdentifier(_) => todo!(),
+                            // LicenseData::LicenseType(_) => todo!(),
+                            // LicenseData::LicenseFlag(_) => todo!(),
+                            // LicenseData::LicenseRating(_) => todo!(),
+                            _ => format!("{:#?}", d)
+                        }
+                    ),
+                    LicenseGraphNode::Note(note) => c.add_paragraph(note),
+                    LicenseGraphNode::URL(url) => c.add_paragraph(url),
                     LicenseGraphNode::Statement { statement_content } => {
                         c.add_paragraph(statement_content)
                     }
                     LicenseGraphNode::StatementRule { statement_content } => {
                         c.add_preformatted(statement_content)
                     }
-                    // LicenseGraphNode::StatementJson { statement_content } => {
-                    //     c.add_preformatted(format!("{:#?}", statement_content))
-                    // }
                 };
-                c.add_header(5, "Origins:");
+                c.add_header(5, "Edge Origins:");
+                c.add_header(5, "Node Origins:");
                 c.add_container(origins.iter().fold(
                     Container::new(ContainerType::UnorderedList),
                     |acc, origin| match origin.url.clone() {
@@ -204,7 +211,7 @@ pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_name: String) 
                 //     format!("<script>{}</script>", to_force_graph_js(focused ))
                 // })
                 .to_html_string()
-        },
+        }
         Result::Err(err) => {
             format!("{:?}", err)
         }

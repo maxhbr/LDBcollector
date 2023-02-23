@@ -198,15 +198,14 @@ impl Source for ScancodeSource {
                     if *is_exception {
                         statements.push(LicenseGraphNode::license_flag("is_exception"));
                     };
-                    text.clone().map(|text| {
-                        statements.push(LicenseGraphNode::license_text(&text))
-                    });
+                    text.clone()
+                        .map(|text| statements.push(LicenseGraphNode::license_text(&text)));
                     osi_url.clone().map(|text| {
                         statements.push(LicenseGraphNode::license_flag("is_osi_approved"))
                     });
                     notes
                         .clone()
-                        .map(|notes| statements.push(LicenseGraphNode::note( &notes )));
+                        .map(|notes| statements.push(LicenseGraphNode::note(&notes)));
 
                     let names = l.clone().get_other_license_names();
                     log::debug!("{} -> {:?}", key, names);

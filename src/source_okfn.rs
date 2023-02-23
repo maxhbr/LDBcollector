@@ -72,7 +72,9 @@ impl Source for OkfnSource {
                             rights: Box::new(LicenseGraphBuilderTask::AddNodes {
                                 nodes: vec![id, title]
                                     .iter()
-                                    .map(|license_name| LicenseGraphNode::license_name(license_name))
+                                    .map(|license_name| {
+                                        LicenseGraphNode::license_name(license_name)
+                                    })
                                     .collect(),
                             }),
                             edge: LicenseGraphEdge::AppliesTo,

@@ -66,6 +66,7 @@ pub mod test_helper {
 
 pub mod source_blueoakcouncil;
 pub mod source_cavil;
+pub mod source_fedora_license_data;
 pub mod source_hanshammel;
 pub mod source_librariesio;
 pub mod source_metaeffekt_universe;
@@ -89,6 +90,7 @@ pub fn get_sources() -> Vec<Box<dyn crate::model::Source>> {
         Box::new(crate::source_okfn::OkfnSource {}),
         Box::new(crate::source_cavil::CavilSource {}),
         Box::new(crate::source_metaeffekt_universe::MetaeffektUniverseSource {}),
+        Box::new(crate::source_fedora_license_data::FedoraLicenseDataSource {}),
     ];
     sources
 }

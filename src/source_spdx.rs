@@ -40,15 +40,13 @@ impl Source for SpdxSource {
                             })
                             .collect()
                     },
-                    rights: Box::new(
-                        LicenseGraphBuilderTask::AddEdge {
-                            lefts: vec![LicenseGraphNode::license_name(&full_name)],
-                            rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                                nodes: vec![node.clone()],
-                            }),
-                            edge: LicenseGraphEdge::Same,
-                        },
-                    ),
+                    rights: Box::new(LicenseGraphBuilderTask::AddEdge {
+                        lefts: vec![LicenseGraphNode::license_name(&full_name)],
+                        rights: Box::new(LicenseGraphBuilderTask::AddNodes {
+                            nodes: vec![node.clone()],
+                        }),
+                        edge: LicenseGraphEdge::Same,
+                    }),
                     edge: LicenseGraphEdge::AppliesTo,
                 }
             })
