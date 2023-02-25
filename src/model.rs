@@ -254,6 +254,7 @@ pub enum LicenseGraphNode {
     Note(String),
     URL(String),
     Vec(Vec<LicenseGraphNode>),
+    Raw(String),
     Statement { statement_content: String },
     StatementRule { statement_content: String },
 }
@@ -298,6 +299,9 @@ impl fmt::Debug for LicenseGraphNode {
             }
             Self::Vec(vec) => {
                 write!(f, "{:?}", vec)
+            }
+            Self::Raw(raw) => {
+                write!(f, "$Raw")
             }
             Self::Statement { statement_content } => {
                 write!(f, "{}", statement_content)

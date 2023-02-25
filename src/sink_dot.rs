@@ -51,7 +51,7 @@ pub fn write_dot(out_file: String, g: &LicenseGraph) -> Result<(), Box<dyn Error
     Ok(())
 }
 
-fn render(graph: &LicenseGraph, condensed: bool, use_fdp: bool) -> String {
+pub fn render_dot(graph: &LicenseGraph, condensed: bool, use_fdp: bool) -> String {
     log::debug!("parse dot");
     let g = if condensed {
         parse(&format!("{}", graph.get_condensed_as_dot())).unwrap()
@@ -79,12 +79,4 @@ fn render(graph: &LicenseGraph, condensed: bool, use_fdp: bool) -> String {
         );
     }
     exec(g, &mut PrinterContext::default(), args).unwrap()
-}
-
-pub fn render_dot(graph: &LicenseGraph) -> String {
-    render(graph, false, false)
-}
-
-pub fn render_condensed_dot(graph: &LicenseGraph) -> String {
-    render(graph, true, true)
 }

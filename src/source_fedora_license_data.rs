@@ -91,7 +91,6 @@ impl Source for FedoraLicenseDataSource {
                         legacy_abbreviation,
                         notes,
                     } = fedora.unwrap_or_default();
-                    let lic_str_nodes = vec![LicenseGraphNode::license_name(&lic_str)];
                     let legacy_name_nodes: Vec<_> = [
                         legacy_name.unwrap_or_default(),
                         legacy_abbreviation.unwrap_or_default(),
@@ -100,24 +99,6 @@ impl Source for FedoraLicenseDataSource {
                     .iter()
                     .map(|legacy_name| LicenseGraphNode::license_name(legacy_name))
                     .collect();
-                    let lic_str_task = Box::new(LicenseGraphBuilderTask::AddEdgeLeft {
-                        lefts: legacy_name_nodes,
-                        rights: Box::new(if expression != lic_str {
-                            LicenseGraphBuilderTask::AddEdge {
-                                lefts: lic_str_nodes,
-                                rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                                    nodes: vec![LicenseGraphNode::license_name(&expression)],
-                                }),
-                                edge: LicenseGraphEdge::Better,
-                            }
-                        } else {
-                            LicenseGraphBuilderTask::AddNodes {
-                                nodes: lic_str_nodes,
-                            }
-                        }),
-                        edge: LicenseGraphEdge::Better,
-                    });
-
                     let text_nodes: Vec<_> = text
                         .iter()
                         .map(|text| LicenseGraphNode::license_text(text))
@@ -138,24 +119,47 @@ impl Source for FedoraLicenseDataSource {
                         .map(|notes| LicenseGraphNode::Note(format!("Fedora notes: {}", notes)))
                         .collect();
 
+                    let scancode_key: Vec<_> = scancode_key
+                        .iter()
+                        .map(|scancode_key| LicenseGraphNode::license_name(scancode_key))
+                        .collect();
+
+                    let lic_str_nodes = vec![LicenseGraphNode::license_name(&lic_str)];
                     LicenseGraphBuilderTask::AddEdge {
                         lefts: [
-                            vec![
-                                LicenseGraphNode::StatementRule {
-                                    statement_content: contents,
-                                },
-                                LicenseGraphNode::license_rating(&format!(
-                                    "Fedora Rating: {:?}",
-                                    status
-                                )),
-                            ],
+                            vec!(LicenseGraphNode::license_rating(&format!(
+                                "Fedora Rating: {:?}",
+                                status
+                            ))),
                             text_nodes,
                             url_nodes,
                             usage_nodes,
                             notes_nodes,
-                        ]
-                        .concat(),
-                        rights: lic_str_task,
+                        ].concat(),
+                        rights: Box::new(LicenseGraphBuilderTask::AddEdgeLeft {
+                            lefts: legacy_name_nodes,
+                            rights: Box::new(
+                                LicenseGraphBuilderTask::AddEdge {
+                                    lefts: vec![
+                                        LicenseGraphNode::Raw(contents),
+                                    ],
+                                    rights: Box::new(if expression != lic_str {
+                                            LicenseGraphBuilderTask::AddEdge {
+                                                lefts: lic_str_nodes,
+                                                rights: Box::new(LicenseGraphBuilderTask::AddNodes {
+                                                    nodes: vec![LicenseGraphNode::license_name(&expression)],
+                                                }),
+                                                edge: LicenseGraphEdge::Better,
+                                            }
+                                        } else {
+                                            LicenseGraphBuilderTask::AddNodes {
+                                                nodes: lic_str_nodes,
+                                            }
+                                        }),
+                                    edge: LicenseGraphEdge::AppliesTo,
+                                }),
+                            edge: LicenseGraphEdge::Better,
+                        }),
                         edge: LicenseGraphEdge::AppliesTo,
                     }
                 },

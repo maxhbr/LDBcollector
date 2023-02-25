@@ -50,9 +50,9 @@ pub async fn serve(graph: Box<LicenseGraph>) {
                 if format == "graph" {
                     warp::reply::html(to_force_graph_html(focused))
                 } else if format == "svg" {
-                    warp::reply::html(render_condensed_dot(&focused))
+                    warp::reply::html(render_dot(&focused, true, true))
                 } else if format == "svg_raw" {
-                    warp::reply::html(render_dot(&focused))
+                    warp::reply::html(render_dot(&focused, false, true))
                 } else {
                     warp::reply::html(format!("unsupported format {:?}", format))
                 }

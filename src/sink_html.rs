@@ -1,5 +1,5 @@
 use crate::model::*;
-use crate::sink_dot::render_condensed_dot;
+use crate::sink_dot::*;
 use crate::sink_force_graph::*;
 use build_html::*;
 use graphviz_rust::attributes::weight;
@@ -14,7 +14,7 @@ use std::collections::HashSet;
 #[derive(Debug)]
 pub struct LicenseGraphTreeEdge<'a> {
     to: LicenseGraphTree<'a>,
-    weights: Vec<(EdgeIndex, &'a LicenseGraphEdge)>,
+    weights: Vec<(EdgeIndex, &'a LicenseGraphEdge, Vec<Origin>)>,
 }
 
 #[derive(Debug)]
@@ -48,8 +48,10 @@ fn license_graph_to_tree_for_node(
             let weights = es
                 .into_iter()
                 .map(|e| {
+                    let default = Vec::new();
+                    let origins = graph.edge_origins.get_vec(&e.id()).unwrap_or(&default);
                     traversed_edges.insert(e.id());
-                    (e.id(), e.weight())
+                    (e.id(), e.weight(), origins.clone())
                 })
                 .collect();
             let to = license_graph_to_tree_for_node(direction, graph, next, traversed_edges);
@@ -100,11 +102,23 @@ fn render_weight(weight: &LicenseGraphNode, c: &mut Container) -> () {
             vec.iter().for_each(|weight| render_weight(weight, &mut l));
             c.add_container(l)
         }
+        LicenseGraphNode::Raw(raw) => c.add_preformatted(raw),
         LicenseGraphNode::Statement { statement_content } => c.add_paragraph(statement_content),
         LicenseGraphNode::StatementRule { statement_content } => {
             c.add_preformatted(statement_content)
         }
     };
+}
+
+fn origins_to_html(origins: &Vec<Origin>) -> Container {
+    origins.iter()
+        .fold(
+            Container::new(ContainerType::UnorderedList),
+            |acc, origin| match origin.url.clone() {
+                Option::Some(url) => acc.with_link(url, &origin.name),
+                Option::None {} => acc.with_paragraph(&origin.name),
+            },
+        )
 }
 
 fn tree_to_html(
@@ -121,9 +135,14 @@ fn tree_to_html(
             origins,
         } => {
             let mut c = Container::new(ContainerType::Div).with_attributes([("class", "tree")]);
+            let mut edge_origins : Vec<Origin> = vec!();
             match from_edge {
                 Option::Some(LicenseGraphTreeEdge { to, weights }) => {
-                    let weights: Vec<&LicenseGraphEdge> = weights.iter().map(|(_, w)| *w).collect();
+                    let weights: Vec<&LicenseGraphEdge> = weights.iter()
+                        .map(|(_, w, o)| {
+                            edge_origins.append(&mut o.clone());
+                            *w
+                        }).collect();
                     if direction == Direction::Outgoing {
                         c.add_header(3, format!("{:?} {:?}&rarr;", weight, weights));
                     } else {
@@ -135,6 +154,8 @@ fn tree_to_html(
 
             if written_nodes.contains(id) {
                 c.with_link(format!("#{:?}", id), "&uarr;")
+                    .with_header(5, "Edge Origins:")
+                    .with_container(origins_to_html(&edge_origins))
             } else {
                 c.add_container(
                     Container::new(ContainerType::Div)
@@ -143,15 +164,9 @@ fn tree_to_html(
                 written_nodes.insert(*id);
                 render_weight(*weight, &mut c);
                 c.add_header(5, "Edge Origins:");
-                // TODO
+                c.add_container(origins_to_html(&edge_origins));
                 c.add_header(5, "Node Origins:");
-                c.add_container(origins.iter().fold(
-                    Container::new(ContainerType::UnorderedList),
-                    |acc, origin| match origin.url.clone() {
-                        Option::Some(url) => acc.with_link(url, &origin.name),
-                        Option::None {} => acc.with_paragraph(&origin.name),
-                    },
-                ));
+                c.add_container(origins_to_html(origins));
                 c.with_container(edges.iter().fold(
                     Container::new(ContainerType::Div),
                     |acc, edge| {
@@ -218,14 +233,17 @@ pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_names: Vec<&st
                     display: block;
                     margin: auto;
                 }
+                table, th, td {
+                    border: 1px solid;
+                }
                 "#,
             )
+            .with_header(1, format!("{:?}", &license_names))
             .with_container(
                 Container::new(ContainerType::Div)
                     .with_attributes([("class", "svg")])
-                    .with_raw(render_condensed_dot(&focused)),
+                    .with_raw(render_dot(&focused, false, true)),
             )
-            .with_header(1, format!("{:?}", &license_names))
             .with_table(
                 Table::from(vec![license_names
                     .iter()
