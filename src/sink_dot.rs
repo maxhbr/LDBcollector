@@ -9,7 +9,7 @@ use graphviz_rust::dot_generator::*;
 use graphviz_rust::dot_structures::*;
 use graphviz_rust::{
     attributes::*,
-    cmd::{CommandArg, Format},
+    cmd::{CommandArg, Format, Layout},
     exec, parse,
     printer::{DotPrinter, PrinterContext},
 };
@@ -51,16 +51,40 @@ pub fn write_dot(out_file: String, g: &LicenseGraph) -> Result<(), Box<dyn Error
     Ok(())
 }
 
-pub fn render_dot(graph: LicenseGraph) -> String {
+fn render(graph: &LicenseGraph, condensed: bool, use_fdp: bool) -> String {
     log::debug!("parse dot");
-    let g = parse(&format!("{}", graph.get_as_dot())).unwrap();
+    let g = if condensed {
+        parse(&format!("{}", graph.get_condensed_as_dot())).unwrap()
+    } else {
+        parse(&format!("{}", graph.get_as_dot())).unwrap()
+    };
+
     log::debug!("render dot to svg");
-    exec(g, &mut PrinterContext::default(), vec![Format::Svg.into()]).unwrap()
+
+    let mut args = vec![];
+    args.extend(vec![Format::Svg.into()]);
+    if use_fdp {
+        args.extend(vec![Layout::Fdp.into()]);
+        // -Lg         - Don't use grid
+        // -LO         - Use old attractive force
+        // -Ln<i>      - Set number of iterations to i
+        // -LU<i>      - Set unscaled factor to i
+        // -LC<v>      - Set overlap expansion factor to v
+        // -LT[*]<v>   - Set temperature (temperature factor) to v
+        args.extend(
+            ["-Goverlap=prism", "-Lg"]
+                .iter()
+                .map(|arg| CommandArg::Custom(String::from(*arg)))
+                .collect::<Vec<_>>(),
+        );
+    }
+    exec(g, &mut PrinterContext::default(), args).unwrap()
 }
 
-pub fn render_condensed_dot(graph: LicenseGraph) -> String {
-    log::debug!("parse dot");
-    let g = parse(&format!("{}", graph.get_condensed_as_dot())).unwrap();
-    log::debug!("render dot to svg");
-    exec(g, &mut PrinterContext::default(), vec![Format::Svg.into()]).unwrap()
+pub fn render_dot(graph: &LicenseGraph) -> String {
+    render(graph, false, false)
+}
+
+pub fn render_condensed_dot(graph: &LicenseGraph) -> String {
+    render(graph, true, true)
 }

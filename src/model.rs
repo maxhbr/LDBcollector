@@ -3,6 +3,7 @@ use petgraph::algo::has_path_connecting;
 use petgraph::dot::{Config, Dot};
 use petgraph::graph::{Edge, EdgeIndex, Frozen, Graph, Node, NodeIndex};
 use petgraph::stable_graph::StableGraph;
+use petgraph::visit::EdgeRef;
 use serde_derive::{Deserialize, Serialize};
 use std::collections::hash_map::DefaultHasher;
 use std::collections::HashMap;
@@ -395,23 +396,30 @@ impl LicenseGraph {
         self.get_idx_of_node(&node)
     }
 
-    pub fn focus(&self, license_name: &str) -> Result<Self, Box<dyn Error>> {
+    pub fn focus_many(&self, license_names: Vec<&str>) -> Result<Self, Box<dyn Error>> {
         let mut s = self.clone();
 
-        let root_idx = self
-            .get_idx_of_license(license_name)
-            .ok_or(MyError::Err(format!("failed to focus on {}", license_name)))?;
+        let root_idxs: Vec<NodeIndex> = license_names
+            .iter()
+            .filter_map(|license_name| self.get_idx_of_license(license_name))
+            .collect();
 
         s.graph.retain_nodes(|_frozen_s, idx: NodeIndex| {
-            let incoming = has_path_connecting(&self.graph, idx, root_idx, Option::None);
-            let outgoing = has_path_connecting(&self.graph, root_idx, idx, Option::None);
-            incoming || outgoing
+            root_idxs.iter().any(|root_idx| {
+                let incoming = has_path_connecting(&self.graph, idx, *root_idx, Option::None);
+                let outgoing = has_path_connecting(&self.graph, *root_idx, idx, Option::None);
+                incoming || outgoing
+            })
         });
         s.node_origins
             .retain(|idx, _| s.graph.node_weight(*idx).is_some());
         s.edge_origins
             .retain(|idx, _| s.graph.edge_weight(*idx).is_some());
         Ok(s)
+    }
+
+    pub fn focus(&self, license_name: &str) -> Result<Self, Box<dyn Error>> {
+        self.focus_many(vec![license_name])
     }
 
     fn add_node(&mut self, node: &LicenseGraphNode) -> NodeIndex {
@@ -432,12 +440,23 @@ impl LicenseGraph {
         rights
             .into_iter()
             .map(|right| {
-                let idx = self.graph.add_edge(left, right, edge.clone());
-                if edge == LicenseGraphEdge::Same {
-                    // TODO: realy add inverses of Same edges?
-                    self.graph.add_edge(right, left, edge.clone());
+                match self
+                    .graph
+                    .edges_connecting(left, right)
+                    .filter(|e| *e.weight() == edge)
+                    .map(|e| e.id())
+                    .next()
+                {
+                    Some(idx) => idx,
+                    None => self.graph.add_edge(left, right, edge.clone()),
                 }
-                idx
+
+                // let idx = self.graph.add_edge(left, right, edge.clone());
+                // // if edge == LicenseGraphEdge::Same {
+                // //     // TODO: realy add inverses of Same edges?
+                // //     self.graph.add_edge(right, left, edge.clone());
+                // // }
+                // idx
             })
             .collect()
     }

@@ -16,44 +16,61 @@ pub async fn serve(graph: Box<LicenseGraph>) {
         let html: String = HtmlPage::new()
             .with_title("ldbcollector")
             .with_header(1, "Licenses:")
-            .with_container(
-                license_names
-                    .iter()
-                    .filter(|license_name| re.is_match(&format!("{}", license_name)))
-                    .fold(
-                        Container::new(ContainerType::UnorderedList),
-                        |acc, license_name| {
-                            acc.with_container(
+            .with_table(
+                Table::from(
+                    license_names
+                        .iter()
+                        .filter(|license_name| re.is_match(&format!("{}", license_name)))
+                        .map(|license_name| {
+                            vec![
                                 Container::new(ContainerType::Div)
                                     .with_link(license_name, format!("{:?}", license_name))
-                                    .with_preformatted("")
-                                    .with_link(format!("{}/graph", license_name), "graph"),
-                            )
-                        },
-                    ),
+                                    .to_html_string(),
+                                Container::new(ContainerType::Div)
+                                    .with_link(format!("{}/graph", license_name), "graph")
+                                    .to_html_string(),
+                                Container::new(ContainerType::Div)
+                                    .with_link(format!("{}/svg", license_name), "svg")
+                                    .to_html_string(),
+                            ]
+                        }),
+                )
+                .with_header_row(["License Name", "graph", "svg"]),
             )
             .to_html_string();
 
         warp::reply::html(html)
     });
 
-    let graph_for_graph = graph.clone();
+    let graph_for_formats = graph.clone();
     // GET /graph/MIT
-    let warp_graph =
-        warp::path!(String / "graph").map(move |license: String| {
-            match graph_for_graph.focus(&license) {
-                Result::Ok(focused) => warp::reply::html(to_force_graph_html(focused)),
-                Result::Err(err) => warp::reply::html(format!("{:#?}", err)),
+    let warp_formats = warp::path!(String / String).map(move |license: String, format: String| {
+        match graph_for_formats.focus(&license) {
+            Result::Ok(focused) => {
+                if format == "graph" {
+                    warp::reply::html(to_force_graph_html(focused))
+                } else if format == "svg" {
+                    warp::reply::html(render_condensed_dot(&focused))
+                } else if format == "svg_raw" {
+                    warp::reply::html(render_dot(&focused))
+                } else {
+                    warp::reply::html(format!("unsupported format {:?}", format))
+                }
             }
-        });
-
-    let graph_for_html = graph.clone();
-    // GET /html/MIT
-    let warp_html = warp::path!(String).map(move |license: String| {
-        warp::reply::html(license_graph_to_tree_string(&graph_for_html, license))
+            Result::Err(err) => warp::reply::html(format!("{:#?}", err)),
+        }
     });
 
-    warp::serve(warp_index.or(warp_graph).or(warp_html))
+    let graph_for_html = graph.clone();
+    // GET /MIT
+    let warp_html = warp::path!(String).map(move |license_list: String| {
+        warp::reply::html(license_graph_to_tree_string(
+            &graph_for_html,
+            license_list.split(",").collect(),
+        ))
+    });
+
+    warp::serve(warp_index.or(warp_formats).or(warp_html))
         .run(([127, 0, 0, 1], 3030))
         .await;
 }

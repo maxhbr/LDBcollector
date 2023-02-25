@@ -69,13 +69,18 @@ fn license_graph_to_tree_for_node(
     }
 }
 
-pub fn license_graph_to_tree(
+fn license_graph_to_tree(
     direction: Direction,
     graph: &LicenseGraph,
     license_name: String,
-) -> LicenseGraphTree {
-    let root_idx = graph.get_idx_of_license(&license_name).unwrap();
-    license_graph_to_tree_for_node(direction, graph, root_idx, HashSet::new())
+) -> Option<LicenseGraphTree> {
+    let root_idx = graph.get_idx_of_license(&license_name)?;
+    Some(license_graph_to_tree_for_node(
+        direction,
+        graph,
+        root_idx,
+        HashSet::new(),
+    ))
 }
 
 fn render_weight(weight: &LicenseGraphNode, c: &mut Container) -> () {
@@ -137,30 +142,8 @@ fn tree_to_html(
                 );
                 written_nodes.insert(*id);
                 render_weight(*weight, &mut c);
-                // match weight {
-                //     LicenseGraphNode::Data(d) => c.add_preformatted(
-                //         match d {
-                //             LicenseData::LicenseText(text) => text.clone(),
-                //             // LicenseData::LicenseIdentifier(_) => todo!(),
-                //             // LicenseData::LicenseType(_) => todo!(),
-                //             // LicenseData::LicenseFlag(_) => todo!(),
-                //             // LicenseData::LicenseRating(_) => todo!(),
-                //             _ => format!("{:#?}", d)
-                //         }
-                //     ),
-                //     LicenseGraphNode::Note(note) => c.add_paragraph(note),
-                //     LicenseGraphNode::URL(url) => c.add_paragraph(url),
-                //     LicenseGraphNode::Vec(vec) => {
-
-                //     }
-                //     LicenseGraphNode::Statement { statement_content } => {
-                //         c.add_paragraph(statement_content)
-                //     }
-                //     LicenseGraphNode::StatementRule { statement_content } => {
-                //         c.add_preformatted(statement_content)
-                //     }
-                // };
                 c.add_header(5, "Edge Origins:");
+                // TODO
                 c.add_header(5, "Node Origins:");
                 c.add_container(origins.iter().fold(
                     Container::new(ContainerType::UnorderedList),
@@ -184,24 +167,44 @@ fn tree_to_html(
     }
 }
 
-pub fn license_graph_to_html(
+fn license_graph_to_html(
     direction: Direction,
     graph: &LicenseGraph,
-    license_name: String,
+    license_name: &str,
 ) -> Container {
-    let tree = license_graph_to_tree(direction, graph, license_name);
-    tree_to_html(direction, &tree, Option::None, &mut HashSet::new())
+    match license_graph_to_tree(direction, graph, String::from(license_name)) {
+        Some(tree) => tree_to_html(direction, &tree, Option::None, &mut HashSet::new()),
+        None => Container::new(ContainerType::Div).with_paragraph(format!(
+            "failed `license_graph_to_html` for {}",
+            license_name
+        )),
+    }
 }
 
-pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_name: String) -> String {
-    match graph.focus(&license_name) {
-        Result::Ok(focused) => {
-            HtmlPage::new()
-                .with_title(format!("{:?}", &license_name))
-                .with_stylesheet("https://unpkg.com/modern-css-reset/dist/reset.min.css")
-                .with_script_link("https://unpkg.com/force-graph")
-                .with_style(
-                    r#"
+fn license_graph_to_html_both_directions(graph: &LicenseGraph, license_name: &str) -> Container {
+    Container::new(ContainerType::Div)
+        .with_header(2, "backward")
+        .with_container(license_graph_to_html(
+            Direction::Incoming,
+            graph,
+            license_name.clone(),
+        ))
+        .with_header(2, "forward")
+        .with_container(license_graph_to_html(
+            Direction::Outgoing,
+            graph,
+            license_name.clone(),
+        ))
+}
+
+pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_names: Vec<&str>) -> String {
+    match graph.focus_many(license_names.clone()) {
+        Result::Ok(focused) => HtmlPage::new()
+            .with_title(format!("{:?}", license_names))
+            .with_stylesheet("https://unpkg.com/modern-css-reset/dist/reset.min.css")
+            .with_script_link("https://unpkg.com/force-graph")
+            .with_style(
+                r#"
                 div.tree {
                     border-left: 8mm ridge rgba(220, 220, 220, .6);
                     margin: 5px;
@@ -211,36 +214,28 @@ pub fn license_graph_to_tree_string(graph: &LicenseGraph, license_name: String) 
                     background: #EEEEEE;
                 }
                 p{font-family:"Liberation Serif";}
+                .svg > svg {
+                    display: block;
+                    margin: auto;
+                }
                 "#,
-                )
-                .with_header(1, format!("{:?}", &license_name))
-                .with_container(
-                    Container::new(ContainerType::Div)
-                        .with_attributes([("class", "svg")])
-                        .with_raw(render_condensed_dot(focused.clone())),
-                )
-                .with_header(2, "backward")
-                .with_container(license_graph_to_html(
-                    Direction::Incoming,
-                    graph,
-                    license_name.clone(),
-                ))
-                .with_header(2, "forward")
-                .with_container(license_graph_to_html(
-                    Direction::Outgoing,
-                    graph,
-                    license_name.clone(),
-                ))
-                .with_header(2, "dot")
-                .with_preformatted(format!("{}", focused.get_as_dot()))
-                // .with_container(
-                //     Container::new(ContainerType::Div).with_attributes([("id", "graph")])
-                // )
-                // .with_raw({
-                //     format!("<script>{}</script>", to_force_graph_js(focused ))
-                // })
-                .to_html_string()
-        }
+            )
+            .with_container(
+                Container::new(ContainerType::Div)
+                    .with_attributes([("class", "svg")])
+                    .with_raw(render_condensed_dot(&focused)),
+            )
+            .with_header(1, format!("{:?}", &license_names))
+            .with_table(
+                Table::from(vec![license_names
+                    .iter()
+                    .map(|license_name| {
+                        license_graph_to_html_both_directions(graph, *license_name).to_html_string()
+                    })
+                    .collect::<Vec<_>>()])
+                .with_header_row(license_names),
+            )
+            .to_html_string(),
         Result::Err(err) => {
             format!("{:?}", err)
         }
