@@ -32,15 +32,12 @@ impl Source for OsadlSource {
                     .and_then(|license_name| license_name.to_str())
                 {
                     log::debug!("{}", lic_str);
-                    LicenseGraphBuilderTask::AddEdge {
-                        lefts: vec![LicenseGraphNode::StatementRule {
+                    LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(lic_str)).edge(
+                        LicenseGraphEdge::AppliesTo,
+                        vec![LicenseGraphNode::StatementRule {
                             statement_content: contents,
                         }],
-                        rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                            nodes: vec![LicenseGraphNode::license_name(lic_str)],
-                        }),
-                        edge: LicenseGraphEdge::AppliesTo,
-                    }
+                    )
                 } else {
                     LicenseGraphBuilderTask::Noop {}
                 }

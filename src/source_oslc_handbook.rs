@@ -2,6 +2,7 @@ use super::model::*;
 use serde_derive::{Deserialize, Serialize};
 use std::ffi::OsStr;
 use std::fs;
+use std::rc::Rc;
 
 use std::fmt;
 
@@ -87,6 +88,7 @@ impl Source for OslcHandbookSource {
                     .map(|handbooks: OslcHandbook| (contents, handbooks))
             })
             .map(|(contents, OslcHandbook(handbooks))| {
+                let contents = Rc::new(contents.clone());
                 let rights = handbooks
                     .iter()
                     .map(|handbook| {
@@ -101,29 +103,35 @@ impl Source for OslcHandbookSource {
 
                         log::debug!("{}", name);
 
-                        LicenseGraphBuilderTask::AddEdgeUnion {
-                            lefts: notes,
-                            rights: Box::new(LicenseGraphBuilderTask::AddEdgeLeft {
-                                lefts: vec![LicenseGraphNode::license_name(name)],
-                                rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                                    nodes: licenseId
-                                        .iter()
-                                        .map(|licenseId| LicenseGraphNode::license_name(licenseId))
-                                        .collect(),
-                                }),
-                                edge: LicenseGraphEdge::Same,
-                            }),
-                            edge: LicenseGraphEdge::AppliesTo,
-                        }
+                        LicenseGraphBuilderTask::new(
+                            licenseId
+                                .iter()
+                                .map(|licenseId| LicenseGraphNode::license_name(licenseId))
+                                .collect(),
+                        )
+                        .edge(
+                            LicenseGraphEdge::Same,
+                            vec![LicenseGraphNode::license_name(name)],
+                        )
+                        .edge_union(LicenseGraphEdge::AppliesTo, notes)
+                        .edge(
+                            LicenseGraphEdge::AppliesTo,
+                            vec![LicenseGraphNode::StatementRule {
+                                statement_content: contents.to_string(),
+                            }],
+                        )
+                        .edge(
+                            LicenseGraphEdge::AppliesTo,
+                            terms
+                                .iter()
+                                .map(|term| LicenseGraphNode::StatementRule {
+                                    statement_content: format!("{:#?}", term),
+                                })
+                                .collect(),
+                        )
                     })
                     .collect();
-                LicenseGraphBuilderTask::AddEdge {
-                    lefts: vec![LicenseGraphNode::StatementRule {
-                        statement_content: contents,
-                    }],
-                    rights: Box::new(LicenseGraphBuilderTask::JoinTasks { tasks: rights }),
-                    edge: LicenseGraphEdge::AppliesTo,
-                }
+                LicenseGraphBuilderTask::join(rights)
             })
             .collect()
     }

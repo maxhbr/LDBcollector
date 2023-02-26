@@ -55,21 +55,18 @@ impl Source for MetaeffektUniverseSource {
                         .iter()
                         .map(|alternativeName| LicenseGraphNode::license_name(alternativeName))
                         .collect();
-                    LicenseGraphBuilderTask::AddEdge {
-                        lefts: [
+                    LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(&canonicalName))
+                        .edge(
+                            LicenseGraphEdge::Same,
                             vec![
                                 LicenseGraphNode::license_name(&shortName),
                                 LicenseGraphNode::license_name(&spdxIdentifier),
                             ],
-                            nodes_from_alternativeNames,
-                            nodes_from_otherIds,
-                        ]
-                        .concat(),
-                        rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                            nodes: vec![LicenseGraphNode::license_name(&canonicalName)],
-                        }),
-                        edge: LicenseGraphEdge::Same,
-                    }
+                        )
+                        .edge(
+                            LicenseGraphEdge::Better,
+                            [nodes_from_alternativeNames, nodes_from_otherIds].concat(),
+                        )
                 },
             )
             .collect()

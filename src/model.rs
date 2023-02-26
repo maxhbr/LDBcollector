@@ -349,6 +349,37 @@ pub enum LicenseGraphBuilderTask {
     },
 }
 impl LicenseGraphBuilderTask {
+    pub fn new(nodes: Vec<LicenseGraphNode>) -> Self {
+        Self::AddNodes { nodes }
+    }
+    pub fn new1(node: LicenseGraphNode) -> Self {
+        Self::AddNodes { nodes: vec![node] }
+    }
+    pub fn edge(self, edge: LicenseGraphEdge, lefts: Vec<LicenseGraphNode>) -> Self {
+        Self::AddEdge {
+            lefts,
+            rights: Box::new(self),
+            edge,
+        }
+    }
+    pub fn edge_left(self, edge: LicenseGraphEdge, lefts: Vec<LicenseGraphNode>) -> Self {
+        Self::AddEdgeLeft {
+            lefts,
+            rights: Box::new(self),
+            edge,
+        }
+    }
+    pub fn edge_union(self, edge: LicenseGraphEdge, lefts: Vec<LicenseGraphNode>) -> Self {
+        Self::AddEdgeUnion {
+            lefts,
+            rights: Box::new(self),
+            edge,
+        }
+    }
+    pub fn join(tasks: Vec<LicenseGraphBuilderTask>) -> Self {
+        Self::JoinTasks { tasks }
+    }
+
     pub fn mk_aliases_task(best: String, other_names: Vec<String>) -> Self {
         LicenseGraphBuilderTask::AddEdgeLeft {
             lefts: other_names

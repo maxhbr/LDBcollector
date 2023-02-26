@@ -209,14 +209,8 @@ impl Source for ScancodeSource {
 
                     let names = l.clone().get_other_license_names();
                     log::debug!("{} -> {:?}", key, names);
-                    LicenseGraphBuilderTask::AddEdge {
-                        lefts: statements,
-                        rights: Box::new(LicenseGraphBuilderTask::mk_aliases_task(
-                            key.clone(),
-                            names,
-                        )),
-                        edge: LicenseGraphEdge::AppliesTo,
-                    }
+                    LicenseGraphBuilderTask::mk_aliases_task(key.clone(), names)
+                        .edge(LicenseGraphEdge::AppliesTo, statements)
                 },
             )
             .collect()

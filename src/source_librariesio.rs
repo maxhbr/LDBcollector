@@ -29,15 +29,17 @@ impl Source for LibrariesioSource {
         let LicensesJson(map) = read_librariesio_compatibility_checker_licenses_json()
             .expect("should be able to parse librariesio json");
         map.iter()
-            .map(|(ty, licenses)| LicenseGraphBuilderTask::AddEdge {
-                lefts: vec![LicenseGraphNode::license_type(ty)],
-                rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                    nodes: licenses
+            .map(|(ty, licenses)| {
+                LicenseGraphBuilderTask::new(
+                    licenses
                         .iter()
                         .map(|license| LicenseGraphNode::license_name(license))
                         .collect(),
-                }),
-                edge: LicenseGraphEdge::AppliesTo,
+                )
+                .edge(
+                    LicenseGraphEdge::AppliesTo,
+                    vec![LicenseGraphNode::license_type(ty)],
+                )
             })
             .collect()
     }

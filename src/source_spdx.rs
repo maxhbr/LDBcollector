@@ -15,8 +15,13 @@ impl Source for SpdxSource {
                 let license_name = String::from(*name);
                 let full_name = String::from(*full_name);
                 let node = LicenseGraphNode::license_name(&license_name);
-                LicenseGraphBuilderTask::AddEdge {
-                    lefts: {
+
+                LicenseGraphBuilderTask::new1(node.clone())
+                    .edge(
+                        LicenseGraphEdge::Same,
+                        vec![LicenseGraphNode::license_name(&full_name)],
+                    )
+                    .edge(LicenseGraphEdge::AppliesTo, {
                         let spdx_license = spdx::license_id(name).unwrap();
                         let flags: Vec<(&str, bool)> = vec![
                             ("is_deprecated", spdx_license.is_deprecated()),
@@ -39,16 +44,7 @@ impl Source for SpdxSource {
                                 }
                             })
                             .collect()
-                    },
-                    rights: Box::new(LicenseGraphBuilderTask::AddEdge {
-                        lefts: vec![LicenseGraphNode::license_name(&full_name)],
-                        rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                            nodes: vec![node.clone()],
-                        }),
-                        edge: LicenseGraphEdge::Same,
-                    }),
-                    edge: LicenseGraphEdge::AppliesTo,
-                }
+                    })
             })
             .collect()
     }

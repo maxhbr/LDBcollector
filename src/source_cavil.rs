@@ -22,13 +22,11 @@ impl Source for CavilSource {
                 let mut pair = line.split("\t");
                 let id = pair.next().unwrap();
                 let alias = pair.next().unwrap();
-                LicenseGraphBuilderTask::AddEdge {
-                    lefts: vec![LicenseGraphNode::license_name(alias)],
-                    rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                        nodes: vec![LicenseGraphNode::license_name(id)],
-                    }),
-                    edge: LicenseGraphEdge::HintsTowards,
-                }
+
+                LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(id)).edge(
+                    LicenseGraphEdge::HintsTowards,
+                    vec![LicenseGraphNode::license_name(alias)],
+                )
             })
             .collect()
     }

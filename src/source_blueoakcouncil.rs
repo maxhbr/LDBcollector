@@ -1,5 +1,6 @@
 use crate::model::*;
 
+use itertools::join;
 use serde_derive::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::error::Error;
@@ -17,11 +18,12 @@ fn add_license(lic: License) -> LicenseGraphBuilderTask {
     match lic {
         License { id, name, url } => {
             let url = LicenseGraphNode::url(&url);
-            LicenseGraphBuilderTask::AddEdgeLeft {
-                lefts: vec![url],
-                rights: Box::new(LicenseGraphBuilderTask::mk_aliases_task(id, vec![name])),
-                edge: LicenseGraphEdge::AppliesTo,
-            }
+            LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(&id))
+                .edge_union(
+                    LicenseGraphEdge::Same,
+                    vec![LicenseGraphNode::license_name(&name)],
+                )
+                .edge_left(LicenseGraphEdge::AppliesTo, vec![url])
         }
     }
 }
@@ -80,34 +82,23 @@ impl Source for CopyleftListSource {
                                     add_license(l.clone())
                                 })
                                 .collect();
-                            LicenseGraphBuilderTask::AddEdge {
-                                lefts: vec![LicenseGraphNode::license_name(&family_name)],
-                                rights: Box::new(LicenseGraphBuilderTask::JoinTasks {
-                                    tasks: from_versions,
-                                }),
-                                edge: LicenseGraphEdge::Better,
-                            }
+                            LicenseGraphBuilderTask::join(from_versions).edge(
+                                LicenseGraphEdge::Better,
+                                vec![LicenseGraphNode::license_name(&family_name)],
+                            )
                         },
                     )
                     .collect();
                 let kind = LicenseGraphNode::license_type(kind);
-                LicenseGraphBuilderTask::AddEdge {
-                    lefts: vec![kind],
-                    rights: Box::new(LicenseGraphBuilderTask::JoinTasks {
-                        tasks: from_families,
-                    }),
-                    edge: LicenseGraphEdge::AppliesTo,
-                }
+                LicenseGraphBuilderTask::join(from_families)
+                    .edge(LicenseGraphEdge::AppliesTo, vec![kind])
             })
             .collect();
 
-        vec![LicenseGraphBuilderTask::AddEdge {
-            lefts: vec![LicenseGraphNode::license_type("Copyleft")],
-            rights: Box::new(LicenseGraphBuilderTask::JoinTasks {
-                tasks: from_families_per_kind,
-            }),
-            edge: LicenseGraphEdge::AppliesTo,
-        }]
+        vec![LicenseGraphBuilderTask::join(from_families_per_kind).edge(
+            LicenseGraphEdge::AppliesTo,
+            vec![LicenseGraphNode::license_type("Copyleft")],
+        )]
     }
 }
 
@@ -144,38 +135,32 @@ impl Source for LicenseListSource {
         } = read_blueoakcouncil_license_list().expect("parsing of copyleft list should succeed");
 
         let kind = LicenseGraphNode::license_type("Permissive");
-        let from_list = ratings
-            .iter()
-            .map(
-                |LicenseRating {
-                     name,
-                     notes,
-                     licenses,
-                 }| {
-                    let from_licenses = licenses.iter().map(|l| add_license(l.clone())).collect();
-                    let rating = LicenseGraphNode::Data(LicenseData::LicenseType(
-                        LicenseType::Permissive(Option::Some(name.clone())),
-                    ));
-                    let rating_note = LicenseGraphNode::note(notes);
-                    LicenseGraphBuilderTask::AddEdgeLeft {
-                        lefts: vec![rating_note],
-                        rights: Box::new(LicenseGraphBuilderTask::AddEdge {
-                            lefts: vec![rating],
-                            rights: Box::new(LicenseGraphBuilderTask::JoinTasks {
-                                tasks: from_licenses,
-                            }),
-                            edge: LicenseGraphEdge::AppliesTo,
-                        }),
-                        edge: LicenseGraphEdge::AppliesTo,
-                    }
-                },
-            )
-            .collect();
-        vec![LicenseGraphBuilderTask::AddEdge {
-            lefts: vec![kind],
-            rights: Box::new(LicenseGraphBuilderTask::JoinTasks { tasks: from_list }),
-            edge: LicenseGraphEdge::AppliesTo,
-        }]
+        let task = LicenseGraphBuilderTask::join(
+            ratings
+                .iter()
+                .map(
+                    |LicenseRating {
+                         name,
+                         notes,
+                         licenses,
+                     }| {
+                        let from_licenses = LicenseGraphBuilderTask::join(
+                            licenses.iter().map(|l| add_license(l.clone())).collect(),
+                        );
+                        let rating = LicenseGraphNode::Data(LicenseData::LicenseType(
+                            LicenseType::Permissive(Option::Some(name.clone())),
+                        ));
+                        let rating_note = LicenseGraphNode::note(notes);
+
+                        from_licenses
+                            .edge(LicenseGraphEdge::AppliesTo, vec![rating])
+                            .edge_left(LicenseGraphEdge::AppliesTo, vec![rating_note])
+                    },
+                )
+                .collect(),
+        )
+        .edge(LicenseGraphEdge::AppliesTo, vec![kind]);
+        vec![task]
     }
 }
 

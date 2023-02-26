@@ -111,14 +111,13 @@ fn render_weight(weight: &LicenseGraphNode, c: &mut Container) -> () {
 }
 
 fn origins_to_html(origins: &Vec<Origin>) -> Container {
-    origins.iter()
-        .fold(
-            Container::new(ContainerType::UnorderedList),
-            |acc, origin| match origin.url.clone() {
-                Option::Some(url) => acc.with_link(url, &origin.name),
-                Option::None {} => acc.with_paragraph(&origin.name),
-            },
-        )
+    origins.iter().fold(
+        Container::new(ContainerType::UnorderedList),
+        |acc, origin| match origin.url.clone() {
+            Option::Some(url) => acc.with_link(url, &origin.name),
+            Option::None {} => acc.with_paragraph(&origin.name),
+        },
+    )
 }
 
 fn tree_to_html(
@@ -135,14 +134,16 @@ fn tree_to_html(
             origins,
         } => {
             let mut c = Container::new(ContainerType::Div).with_attributes([("class", "tree")]);
-            let mut edge_origins : Vec<Origin> = vec!();
+            let mut edge_origins: Vec<Origin> = vec![];
             match from_edge {
                 Option::Some(LicenseGraphTreeEdge { to, weights }) => {
-                    let weights: Vec<&LicenseGraphEdge> = weights.iter()
+                    let weights: Vec<&LicenseGraphEdge> = weights
+                        .iter()
                         .map(|(_, w, o)| {
                             edge_origins.append(&mut o.clone());
                             *w
-                        }).collect();
+                        })
+                        .collect();
                     if direction == Direction::Outgoing {
                         c.add_header(3, format!("{:?} {:?}&rarr;", weight, weights));
                     } else {
