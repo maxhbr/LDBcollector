@@ -1,6 +1,5 @@
 use crate::model::*;
 use spdx::identifiers::{IMPRECISE_NAMES, LICENSES};
-use spdx::*;
 
 pub struct SpdxSource {}
 impl Source for SpdxSource {
@@ -11,7 +10,7 @@ impl Source for SpdxSource {
     fn get_tasks(&self) -> Vec<LicenseGraphBuilderTask> {
         LICENSES
             .into_iter()
-            .map(|i @ (name, full_name, _)| {
+            .map(|(name, full_name, _)| {
                 let license_name = String::from(*name);
                 let full_name = String::from(*full_name);
                 let node = LicenseGraphNode::license_name(&license_name);
@@ -62,13 +61,8 @@ impl Source for EmbarkSpdxSource {
             .map(|i @ (imprecise, better)| {
                 let imprecise = String::from(*imprecise);
                 let better = String::from(*better);
-                LicenseGraphBuilderTask::AddEdge {
-                    lefts: vec![LicenseGraphNode::license_name(&imprecise)],
-                    rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                        nodes: vec![LicenseGraphNode::license_name(&better)],
-                    }),
-                    edge: LicenseGraphEdge::HintsTowards,
-                }
+                LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(&better))
+                    .edge(LicenseGraphEdge::HintsTowards, vec![LicenseGraphNode::license_name(&imprecise)])
             })
             .collect()
     }
