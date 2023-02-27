@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.13
+Version:        1.14
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -88,6 +88,19 @@ make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %changelog
+* Mon Feb 27 2023 Miroslav Suchý <msuchy@redhat.com> 1.14-1
+- Add GPL-3.0-or-later WITH Autoconf-exception-macro
+- Add GNAT-exception.
+- Add AdaCore-doc.
+- combine gdouros fonts entry
+- Add public domain text covering gdouros-*-fonts
+- Add GPL-2.0-or-later WITH Autoconf-exception-generic
+- Add JPL-image license
+- Update mkdsv.py to replace "notes" with "usage" for not allowed table
+- Update not-allowed-licenses.adoc.j2 to have usage
+- add text of BUSL-1.1.toml
+- Update LPPL-1.3a.toml
+
 * Fri Feb 10 2023 Miroslav Suchý <msuchy@redhat.com> 1.13-1
 - Fix erroneous substitutions of legacy-name for name
 - Add NIST Public Domain license as approved
