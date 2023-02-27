@@ -25,6 +25,8 @@ TEMPLATES = ["templates/allowed-licenses.adoc.j2", "templates/not-allowed-licens
 def spdx_url(license):
     """ Returns url to SPDX license """
     spd_expression = license['license']['expression']
+    if spd_expression.startswith("LicenseRef-"):
+        return 'link:++https://gitlab.com/fedora/legal/fedora-license-data/-/blob/main/data/{0}.toml++[{0}] link:++https://docs.fedoraproject.org/en-US/legal/license-review-process/#_what_is_licenseref++[icon:info-circle[]]'.format(spd_expression)
     if "WITH" in spd_expression:
         expanded_list = spd_expression.split("WITH")
         return "link:++https://spdx.org/licenses/{0}.html++[{0}] WITH link:++https://spdx.org/licenses/{1}.html++[{1}]".format(expanded_list[0].strip(), expanded_list[1].strip())
