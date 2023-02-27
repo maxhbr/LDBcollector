@@ -22,6 +22,10 @@ package checking tools.
 
 The Fedora Legal team is responsible for this project.
 
+## Contribution
+
+To create a merge request to this project you must log in using Fedora OpenID. You can do that on [SSO page](https://gitlab.com/groups/fedora/-/saml/sso).
+
 ## Source and Output Formats
 
 The source data are stored in [TOML](https://toml.io/en/) format. This was agreed as a simplest format for even non-technical contributors.
