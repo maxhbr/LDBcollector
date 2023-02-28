@@ -1,1 +1,10 @@
 #+title: ldbcollector
+
+
+The original project, which is more mature: https://github.com/maxhbr/LDBcollector/
+
+This is a rewrite, it contains
+
+- [[./data/]]
+- [[./rust/]] implementation
+- [[./gh-pages/]] output
