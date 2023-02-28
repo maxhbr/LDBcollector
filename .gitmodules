@@ -67,3 +67,6 @@
 	path = gh-pages
 	url = https://github.com/maxhbr/ldBcollector-rust
 	branch = gh-pages
+[submodule "data/AmadeusITGroup-oscad2"]
+	path = data/AmadeusITGroup-oscad2
+	url = https://github.com/AmadeusITGroup/oscad2/
