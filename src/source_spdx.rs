@@ -11,18 +11,15 @@ impl Source for SpdxSource {
         LICENSES
             .into_iter()
             .map(|i @ (name, full_name, _)| {
-                let license_name = String::from(*name);
-                let full_name = String::from(*full_name);
-                let node = LicenseGraphNode::license_name(&license_name);
-
-                LicenseGraphBuilderTask::new1(node.clone())
+                LicenseGraphBuilderTask::new1(LicenseGraphNode::namespaced_license_name("spdx", name))
+                    .edge1(LicenseGraphEdge::Better, LicenseGraphNode::license_name(name))
                     .edge(
                         LicenseGraphEdge::AppliesTo,
                         vec![LicenseGraphNode::Raw(format!("{:#?}", i))],
                     )
                     .edge(
                         LicenseGraphEdge::Same,
-                        vec![LicenseGraphNode::license_name(&full_name)],
+                        vec![LicenseGraphNode::license_name(full_name)],
                     )
                     .edge_add(LicenseGraphEdge::AppliesTo, {
                         let spdx_license = spdx::license_id(name).unwrap();
@@ -35,7 +32,7 @@ impl Source for SpdxSource {
                         ];
                         flags
                             .iter()
-                            .filter_map(|(flag, flag_bool)| {
+                            .filter_map(|(flag, flag_bool)|
                                 if *flag_bool {
                                     if *flag == "Copyleft" {
                                         Option::Some(LicenseGraphNode::license_type(flag))
@@ -44,8 +41,7 @@ impl Source for SpdxSource {
                                     }
                                 } else {
                                     Option::None
-                                }
-                            })
+                                })
                             .collect()
                     })
             })
