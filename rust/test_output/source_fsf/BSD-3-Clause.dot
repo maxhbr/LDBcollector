@@ -1,0 +1,12 @@
+digraph {
+    327 [ label = "ModifiedBSD" ]
+    328 [ label = "fsf:ModifiedBSD" ]
+    329 [ label = "Modified BSD license" ]
+    330 [ label = "$Raw" ]
+    331 [ label = "BSD-3-Clause" ]
+    328 -> 327 [ label = "Same" ]
+    329 -> 327 [ label = "Same" ]
+    330 -> 328 [ label = "AppliesTo" ]
+    330 -> 329 [ label = "AppliesTo" ]
+    331 -> 330 [ label = "Same" ]
+}

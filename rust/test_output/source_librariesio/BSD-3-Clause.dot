@@ -1,0 +1,5 @@
+digraph {
+    30 [ label = "BSD-3-Clause" ]
+    42 [ label = "Permissive" ]
+    42 -> 30 [ label = "AppliesTo" ]
+}

@@ -1,9 +1,0 @@
-digraph {
-    33 [ label = "[$RULE, $RULE]" ]
-    34 [ label = "BSD-3-Clause" ]
-    35 [ label = "BSD 3-Clause \"New\" or \"Revised\" License" ]
-    36 [ label = "$RULE" ]
-    35 -> 34 [ label = "Same" ]
-    36 -> 35 [ label = "AppliesTo" ]
-    33 -> 36 [ label = "AppliesTo" ]
-}

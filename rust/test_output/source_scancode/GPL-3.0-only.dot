@@ -1,0 +1,6 @@
+digraph {
+    4678 [ label = "gpl-3.0" ]
+    4679 [ label = "GPL-3.0-only" ]
+    4679 -> 4678 [ label = "Same" ]
+    4678 -> 4678 [ label = "Same" ]
+}

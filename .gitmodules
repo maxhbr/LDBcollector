@@ -63,3 +63,7 @@
 [submodule "data/ErikMcClure-bad-licenses"]
 	path = data/ErikMcClure-bad-licenses
 	url = https://github.com/ErikMcClure/bad-licenses
+[submodule "gh-pages"]
+	path = gh-pages
+	url = https://github.com/maxhbr/ldBcollector-rust
+	branch = gh-pages

@@ -1,0 +1,15 @@
+digraph {
+    3 [ label = "$DATA:license_flag:is_osi_approved" ]
+    13 [ label = "$DATA:license_flag:is_fsf_free_libre" ]
+    30 [ label = "$DATA:license_flag:is_gnu" ]
+    31 [ label = "Copyleft" ]
+    690 [ label = "GNU General Public License v3.0 only" ]
+    694 [ label = "GPL-3.0-only" ]
+    695 [ label = "$Raw" ]
+    695 -> 694 [ label = "AppliesTo" ]
+    690 -> 695 [ label = "Same" ]
+    13 -> 695 [ label = "AppliesTo" ]
+    30 -> 695 [ label = "AppliesTo" ]
+    3 -> 695 [ label = "AppliesTo" ]
+    31 -> 695 [ label = "AppliesTo" ]
+}

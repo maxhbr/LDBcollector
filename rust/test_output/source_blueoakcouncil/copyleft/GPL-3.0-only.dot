@@ -1,0 +1,13 @@
+digraph {
+    87 [ label = "GPL-3.0-only" ]
+    88 [ label = "GNU General Public License v3.0 only" ]
+    89 [ label = "https://spdx.org/licenses/GPL-3.0-only.html" ]
+    93 [ label = "GNU General Public License" ]
+    101 [ label = "StronglyProtective" ]
+    193 [ label = "Copyleft" ]
+    88 -> 87 [ label = "Same" ]
+    89 -> 87 [ label = "AppliesTo" ]
+    93 -> 87 [ label = "Better" ]
+    101 -> 93 [ label = "AppliesTo" ]
+    193 -> 101 [ label = "AppliesTo" ]
+}
