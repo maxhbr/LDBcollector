@@ -18,7 +18,7 @@
       with pkgs;
       {
         packages.default = let
-            cargo_nix = import ./Cargo.nix { inherit pkgs nixpkgs; };
+            cargo_nix = import ./rust/Cargo.nix { inherit pkgs nixpkgs; };
           in cargo_nix.rootCrate.build;
         devShells.default = mkShell {
           packages = with pkgs; [ 
