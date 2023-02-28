@@ -1,14 +1,6 @@
 digraph {
-    41 [ label = "$DATA:license_type:Copyleft" ]
-    88 [ label = "$DATA:license_flag:is_osi_approved" ]
-    3300 [ label = "$DATA:license_name:LicenseName(LicenseName(\"GPL-3.0-only\"))" ]
-    3303 [ label = "$DATA:license_name:LicenseName(LicenseName(\"GPL-3.0\"))" ]
-    3304 [ label = "$DATA:license_text" ]
-    3305 [ label = "$NOTE" ]
-    3303 -> 3300 [ label = "Same" ]
-    3303 -> 3303 [ label = "Same" ]
-    41 -> 3303 [ label = "AppliesTo" ]
-    3304 -> 3303 [ label = "AppliesTo" ]
-    88 -> 3303 [ label = "AppliesTo" ]
-    3305 -> 3303 [ label = "AppliesTo" ]
+    4678 [ label = "gpl-3.0" ]
+    4679 [ label = "GPL-3.0-only" ]
+    4679 -> 4678 [ label = "Same" ]
+    4678 -> 4678 [ label = "Same" ]
 }

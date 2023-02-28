@@ -122,12 +122,14 @@ impl Source for OslcHandbookSource {
                         )
                         .edge(
                             LicenseGraphEdge::AppliesTo,
-                            terms
-                                .iter()
-                                .map(|term| LicenseGraphNode::StatementRule {
-                                    statement_content: format!("{:#?}", term),
-                                })
-                                .collect(),
+                            LicenseGraphNode::vec(
+                                terms
+                                    .iter()
+                                    .map(|term| LicenseGraphNode::StatementRule {
+                                        statement_content: format!("{:#?}", term),
+                                    })
+                                    .collect(),
+                            ),
                         )
                     })
                     .collect();

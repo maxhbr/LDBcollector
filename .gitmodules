@@ -60,3 +60,6 @@
 [submodule "data/github-choosealicense.com"]
 	path = data/github-choosealicense.com
 	url = https://github.com/github/choosealicense.com/
+[submodule "data/ErikMcClure-bad-licenses"]
+	path = data/ErikMcClure-bad-licenses
+	url = https://github.com/ErikMcClure/bad-licenses

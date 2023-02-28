@@ -7,7 +7,11 @@ cd "$(dirname "$0")"
 
 echo "#########################################################################"
 echo "## formatting"
-find . -iname '*.rs' -print -exec rustfmt {} \;
+fmt() {
+    find "$1" -iname '*.rs' -print -exec rustfmt --edition 2021 {} \;
+}
+fmt src
+fmt tests
 
 echo "#########################################################################"
 echo "## crate2nix"

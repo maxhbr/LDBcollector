@@ -88,6 +88,12 @@ impl LicenseIdentifier {
             }
         }
     }
+    pub fn new_namespaced(namespace: &str, name: &str) -> Self {
+        Self::Namespaced {
+            namespace: String::from(namespace),
+            name: Box::new(Self::new(name)),
+        }
+    }
 }
 impl core::fmt::Display for LicenseIdentifier {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
@@ -232,6 +238,9 @@ impl LicenseData {
     pub fn license_name(name: &str) -> Self {
         LicenseData::LicenseIdentifier(LicenseIdentifier::new(name))
     }
+    pub fn namespaced_license_name(namespace: &str, name: &str) -> Self {
+        LicenseData::LicenseIdentifier(LicenseIdentifier::new_namespaced(namespace, name))
+    }
     pub fn license_type(ty: &str) -> Self {
         LicenseData::LicenseType(LicenseType::new(ty))
     }
@@ -262,6 +271,9 @@ impl LicenseGraphNode {
     pub fn license_name(name: &str) -> Self {
         Self::Data(LicenseData::license_name(name))
     }
+    pub fn namespaced_license_name(namespace: &str, name: &str) -> Self {
+        Self::Data(LicenseData::namespaced_license_name(namespace, name))
+    }
     pub fn license_type(ty: &str) -> Self {
         Self::Data(LicenseData::license_type(ty))
     }
@@ -279,6 +291,14 @@ impl LicenseGraphNode {
     }
     pub fn url(url: &str) -> Self {
         Self::URL(String::from(url))
+    }
+    pub fn vec(vec: Vec<LicenseGraphNode>) -> Vec<LicenseGraphNode> {
+        let len = vec.len();
+        if len <= 1 {
+            vec
+        } else {
+            vec![Self::Vec(vec)]
+        }
     }
 }
 impl fmt::Debug for LicenseGraphNode {
@@ -330,9 +350,8 @@ pub enum LicenseGraphBuilderTask {
         nodes: Vec<LicenseGraphNode>,
     },
     AddEdge {
-        lefts: Vec<LicenseGraphNode>,
+        left_pairs: Vec<(LicenseGraphEdge, Vec<LicenseGraphNode>)>,
         rights: Box<LicenseGraphBuilderTask>,
-        edge: LicenseGraphEdge,
     },
     AddEdgeLeft {
         lefts: Vec<LicenseGraphNode>,
@@ -357,9 +376,38 @@ impl LicenseGraphBuilderTask {
     }
     pub fn edge(self, edge: LicenseGraphEdge, lefts: Vec<LicenseGraphNode>) -> Self {
         Self::AddEdge {
-            lefts,
+            left_pairs: vec![(edge, lefts)],
             rights: Box::new(self),
-            edge,
+        }
+    }
+    pub fn edge1(self, edge: LicenseGraphEdge, lefts: LicenseGraphNode) -> Self {
+        Self::AddEdge {
+            left_pairs: vec![(edge, vec![lefts])],
+            rights: Box::new(self),
+        }
+    }
+    pub fn edge_add(self, edge: LicenseGraphEdge, lefts: Vec<LicenseGraphNode>) -> Self {
+        match self {
+            Self::AddEdge {
+                mut left_pairs,
+                rights,
+            } => {
+                left_pairs.push((edge, lefts));
+                Self::AddEdge { left_pairs, rights }
+            }
+            _ => self.edge(edge, lefts),
+        }
+    }
+    pub fn edge_add1(self, edge: LicenseGraphEdge, lefts: LicenseGraphNode) -> Self {
+        match self {
+            Self::AddEdge {
+                mut left_pairs,
+                rights,
+            } => {
+                left_pairs.push((edge, vec![lefts]));
+                Self::AddEdge { left_pairs, rights }
+            }
+            _ => self.edge1(edge, lefts),
         }
     }
     pub fn edge_left(self, edge: LicenseGraphEdge, lefts: Vec<LicenseGraphNode>) -> Self {
@@ -546,15 +594,12 @@ impl LicenseGraph {
                         .iter()
                         .map(|node| self.add_node_with_origin(node, origin))
                         .collect(),
-                    LicenseGraphBuilderTask::AddEdge {
-                        lefts,
-                        rights,
-                        edge,
-                    } => {
+                    LicenseGraphBuilderTask::AddEdge { left_pairs, rights } => {
                         let right_idxs = self.apply_task(rights, origin);
-                        lefts
+                        left_pairs
                             .iter()
-                            .map(|left| {
+                            .flat_map(|(edge, nodes)| nodes.iter().map(move |node| (edge, node)))
+                            .map(|(edge, left)| {
                                 let left_idx = self.add_node_with_origin(left, origin);
                                 self.add_edges_with_origin(
                                     left_idx,
@@ -747,35 +792,30 @@ mod tests {
     fn demo() -> LicenseGraph {
         let mut builder = LicenseGraphBuilder::new();
 
-        let tasks_a = vec![LicenseGraphBuilderTask::AddEdge {
-            lefts: vec![LicenseGraphNode::license_name("MIT License")],
-            rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                nodes: vec![LicenseGraphNode::license_name("MIT")],
-            }),
-            edge: LicenseGraphEdge::Same,
-        }];
+        let tasks_a = LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name("MIT")).edge(
+            LicenseGraphEdge::Same,
+            vec![LicenseGraphNode::license_name("MIT License")],
+        );
 
         builder = builder.add_tasks(
-            tasks_a,
+            vec![tasks_a],
             Box::new(Origin::new_with_url(
                 "Origin_name_a",
                 "https://domain.invalid/license.txt",
             )),
         );
 
-        let tasks_b = vec![LicenseGraphBuilderTask::AddEdge {
-            lefts: vec![LicenseGraphNode::license_type("permissive")],
-            rights: Box::new(LicenseGraphBuilderTask::AddEdge {
-                lefts: vec![LicenseGraphNode::license_name("the mit license")],
-                rights: Box::new(LicenseGraphBuilderTask::AddNodes {
-                    nodes: vec![LicenseGraphNode::license_name("MIT")],
-                }),
-                edge: LicenseGraphEdge::HintsTowards,
-            }),
-            edge: LicenseGraphEdge::AppliesTo,
-        }];
+        let tasks_b = LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name("MIT"))
+            .edge(
+                LicenseGraphEdge::HintsTowards,
+                vec![LicenseGraphNode::license_name("the mit license")],
+            )
+            .edge(
+                LicenseGraphEdge::AppliesTo,
+                vec![LicenseGraphNode::license_type("permissive")],
+            );
 
-        builder = builder.add_tasks(tasks_b, Box::new(Origin::new("Origin_name_b")));
+        builder = builder.add_tasks(vec![tasks_b], Box::new(Origin::new("Origin_name_b")));
 
         builder.build()
     }

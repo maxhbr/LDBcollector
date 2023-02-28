@@ -95,16 +95,16 @@ impl Entry {
                 text_urls: _,
                 osi_url,
                 faq_url,
-                other_urls: _,
+                other_urls,
                 text: _,
             } => {
                 homepage_url.map(|url| urls.push(url));
                 osi_url.map(|url| urls.push(url));
                 faq_url.map(|url| urls.push(url));
-                // TODO
-                // other_urls,
-                // TODO
-                // text_urls,
+                other_urls
+                    .unwrap_or(vec![])
+                    .iter()
+                    .for_each(|other_url| urls.push(other_url.clone()));
             }
         }
         urls
@@ -124,16 +124,16 @@ fn read_licenses() -> Result<Vec<(Entry, IndexEntry)>, Box<dyn Error>> {
         .iter()
         .map(
             |ie @ IndexEntry {
-                 license_key,
-                 category,
-                 spdx_license_key,
-                 other_spdx_license_keys,
-                 is_exception,
-                 is_deprecated,
+                 license_key: _,
+                 category: _,
+                 spdx_license_key: _,
+                 other_spdx_license_keys: _,
+                 is_exception: _,
+                 is_deprecated: _,
                  json,
-                 yaml,
-                 html,
-                 license,
+                 yaml: _,
+                 html: _,
+                 license: _,
              }| {
                 log::debug!("... READ {}", json);
                 let file = File::open(format!("{}{}", BASEPATH, json))?;
@@ -162,19 +162,19 @@ impl Source for ScancodeSource {
                 |(
                     l @ Entry {
                         key,
-                        short_name,
-                        name,
+                        short_name: _,
+                        name: _,
                         category,
-                        owner,
-                        homepage_url,
+                        owner: _,
+                        homepage_url: _,
                         notes,
-                        spdx_license_key,
-                        other_spdx_license_keys,
-                        osi_license_key,
-                        text_urls,
+                        spdx_license_key: _,
+                        other_spdx_license_keys: _,
+                        osi_license_key: _,
+                        text_urls: _,
                         osi_url,
-                        faq_url,
-                        other_urls,
+                        faq_url: _,
+                        other_urls: _,
                         text,
                     },
                     ie @ IndexEntry {
@@ -184,33 +184,75 @@ impl Source for ScancodeSource {
                         other_spdx_license_keys: _,
                         is_exception,
                         is_deprecated,
-                        json,
-                        yaml,
-                        html,
-                        license,
+                        json: _,
+                        yaml: _,
+                        html: _,
+                        license: _,
                     },
                 )| {
-                    let mut statements = vec![LicenseGraphNode::license_type(category)];
+                    let mut task =
+                        LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(key))
+                            .edge_left(
+                                LicenseGraphEdge::Same,
+                                l.clone()
+                                    .get_other_license_names()
+                                    .iter()
+                                    .map(|other_name| LicenseGraphNode::license_name(other_name))
+                                    .collect(),
+                            )
+                            .edge1(
+                                LicenseGraphEdge::AppliesTo,
+                                LicenseGraphNode::Raw(format!("{:#?}", l)),
+                            )
+                            .edge1(
+                                LicenseGraphEdge::AppliesTo,
+                                LicenseGraphNode::license_type(category),
+                            )
+                            .edge_add(LicenseGraphEdge::AppliesTo, {
+                                let urls = l.clone().get_urls();
+                                LicenseGraphNode::vec(
+                                    urls.iter().map(|url| LicenseGraphNode::url(url)).collect(),
+                                )
+                            })
+                            .edge_add(
+                                LicenseGraphEdge::AppliesTo,
+                                [
+                                    if *is_deprecated {
+                                        vec![LicenseGraphNode::license_flag("is_deprecated")]
+                                    } else {
+                                        vec![]
+                                    },
+                                    if *is_exception {
+                                        vec![LicenseGraphNode::license_flag("is_exception")]
+                                    } else {
+                                        vec![]
+                                    },
+                                    match osi_url {
+                                        Some(_) => {
+                                            vec![LicenseGraphNode::license_flag("is_osi_approved")]
+                                        }
+                                        None => vec![],
+                                    },
+                                ]
+                                .concat(),
+                            )
+                            .edge_add(
+                                LicenseGraphEdge::AppliesTo,
+                                match text {
+                                    Some(text) => vec![LicenseGraphNode::license_text(&text)],
+                                    None => vec![],
+                                },
+                            )
+                            .edge_add(
+                                LicenseGraphEdge::AppliesTo,
+                                match notes {
+                                    Some(notes) => vec![LicenseGraphNode::note(notes)],
+                                    None => vec![],
+                                },
+                            );
 
-                    if *is_deprecated {
-                        statements.push(LicenseGraphNode::license_flag("is_deprecated"));
-                    };
-                    if *is_exception {
-                        statements.push(LicenseGraphNode::license_flag("is_exception"));
-                    };
-                    text.clone()
-                        .map(|text| statements.push(LicenseGraphNode::license_text(&text)));
-                    osi_url.clone().map(|text| {
-                        statements.push(LicenseGraphNode::license_flag("is_osi_approved"))
-                    });
-                    notes
-                        .clone()
-                        .map(|notes| statements.push(LicenseGraphNode::note(&notes)));
-
-                    let names = l.clone().get_other_license_names();
-                    log::debug!("{} -> {:?}", key, names);
-                    LicenseGraphBuilderTask::mk_aliases_task(key.clone(), names)
-                        .edge(LicenseGraphEdge::AppliesTo, statements)
+                    log::debug!("{}", key);
+                    task
                 },
             )
             .collect()

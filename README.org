@@ -3,7 +3,7 @@
 * data
 ** DONE blueoakcouncil
 - update.blueoakcouncil.sh
-** TODO fedora-legal-fedora-license-data :NEXT:
+** DONE fedora-legal-fedora-license-data
 ** DONE finos-OSLC-handbook
 ** TODO github-choosealicense.com
 ** DONE HansHammel-license-compatibility-checker
@@ -23,6 +23,7 @@
 ** NOPE tldrlegal
 ** TODO warpr-licensedb
 ** TODO wking-fsf-api :NEXT:
+
 
 * Idea
 A handle for a license is just a string, like

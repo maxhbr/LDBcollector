@@ -10,17 +10,21 @@ impl Source for SpdxSource {
     fn get_tasks(&self) -> Vec<LicenseGraphBuilderTask> {
         LICENSES
             .into_iter()
-            .map(|(name, full_name, _)| {
+            .map(|i @ (name, full_name, _)| {
                 let license_name = String::from(*name);
                 let full_name = String::from(*full_name);
                 let node = LicenseGraphNode::license_name(&license_name);
 
                 LicenseGraphBuilderTask::new1(node.clone())
                     .edge(
+                        LicenseGraphEdge::AppliesTo,
+                        vec![LicenseGraphNode::Raw(format!("{:#?}", i))],
+                    )
+                    .edge(
                         LicenseGraphEdge::Same,
                         vec![LicenseGraphNode::license_name(&full_name)],
                     )
-                    .edge(LicenseGraphEdge::AppliesTo, {
+                    .edge_add(LicenseGraphEdge::AppliesTo, {
                         let spdx_license = spdx::license_id(name).unwrap();
                         let flags: Vec<(&str, bool)> = vec![
                             ("is_deprecated", spdx_license.is_deprecated()),
@@ -61,8 +65,10 @@ impl Source for EmbarkSpdxSource {
             .map(|i @ (imprecise, better)| {
                 let imprecise = String::from(*imprecise);
                 let better = String::from(*better);
-                LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(&better))
-                    .edge(LicenseGraphEdge::HintsTowards, vec![LicenseGraphNode::license_name(&imprecise)])
+                LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(&better)).edge(
+                    LicenseGraphEdge::HintsTowards,
+                    vec![LicenseGraphNode::license_name(&imprecise)],
+                )
             })
             .collect()
     }

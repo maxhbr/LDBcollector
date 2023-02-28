@@ -19,7 +19,7 @@ fn add_license(lic: License) -> LicenseGraphBuilderTask {
         License { id, name, url } => {
             let url = LicenseGraphNode::url(&url);
             LicenseGraphBuilderTask::new1(LicenseGraphNode::license_name(&id))
-                .edge_union(
+                .edge_left(
                     LicenseGraphEdge::Same,
                     vec![LicenseGraphNode::license_name(&name)],
                 )
