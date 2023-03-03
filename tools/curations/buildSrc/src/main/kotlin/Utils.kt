@@ -1,6 +1,5 @@
 package org.ossreviewtoolkit.tools.curations
 
-import com.vdurmont.semver4j.Semver
 import org.gradle.api.DefaultTask
 import org.gradle.api.logging.Logging
 import org.ossreviewtoolkit.model.Identifier
@@ -9,6 +8,8 @@ import org.ossreviewtoolkit.model.PackageCurationData
 import org.ossreviewtoolkit.model.VcsInfoCurationData
 import org.ossreviewtoolkit.model.config.PackageConfiguration
 import org.ossreviewtoolkit.utils.common.encodeOr
+import org.semver4j.Semver
+
 import java.io.File
 
 private val logger = Logging.getLogger("utils")
@@ -27,7 +28,7 @@ fun List<PathCurationData>.toPathCurations(): List<PackageCuration> {
     var lastPath = ""
 
     // Group subsequent versions which belong to the same path.
-    val grouped = sortedBy { Semver(it.tag.removePrefix("v")) }
+    val grouped = sortedBy { Semver.coerce(it.tag.removePrefix("v")) }
         .fold(mutableListOf<MutableList<PathCurationData>>()) { acc, cur ->
             if (cur.path != lastPath) {
                 acc.add(mutableListOf())

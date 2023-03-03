@@ -1,13 +1,14 @@
 package org.ossreviewtoolkit.tools.curations
 
 import com.fasterxml.jackson.module.kotlin.readValue
-import com.vdurmont.semver4j.Requirement
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
 import org.gradle.api.tasks.TaskAction
 import org.ossreviewtoolkit.model.PackageCuration
 import org.ossreviewtoolkit.model.mapper
 import org.ossreviewtoolkit.utils.spdx.SpdxExpression
+import org.semver4j.RangesList
+import org.semver4j.RangesListFactory
 
 open class VerifyPackageCurationsTask : DefaultTask() {
     init {
@@ -45,12 +46,11 @@ open class VerifyPackageCurationsTask : DefaultTask() {
                     }
 
                     val version = curation.id.version
-                    if (version.isNotBlank()) {
-                        runCatching {
-                            Requirement.buildIvy(version)
-                        }.onFailure {
-                            issues += "The version '$version' in file '$relativePath' is not a valid Ivy version " +
-                            "range. See: https://ant.apache.org/ivy/history/2.5.0/settings/version-matchers.html"
+                    if (version.isNotBlank() && version.hasVersionRangeIndicators()) {
+                        val range = RangesListFactory.create(version)
+                        if (range.get().size == 0) {
+                            issues += "The version '${version}' in file '$relativePath' contains version range " +
+                                    "indicators, but cannot be parsed to a valid version range."
                         }
                     }
 
@@ -99,3 +99,7 @@ open class VerifyPackageCurationsTask : DefaultTask() {
         }
     }
 }
+
+private fun String.hasVersionRangeIndicators() = versionRangeIndicators.any { contains(it, ignoreCase = true) }
+
+private val versionRangeIndicators = listOf(",", "~", "*", "+", ">", "<", "=", " - ", "^", ".x", "||")
