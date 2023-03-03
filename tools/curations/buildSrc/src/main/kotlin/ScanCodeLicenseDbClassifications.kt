@@ -153,7 +153,7 @@ private fun LicenseDetails.getCategories(): Set<String> {
         isUnknown -> CATEGORY_UNKNOWN
         isGeneric -> CATEGORY_GENERIC
         getLicenseId() in CONTRIBUTOR_LICENSE_AGREEMENT_IDS -> CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT
-        else -> category.replace(' ', '-').toLowerCase()
+        else -> category.replace(' ', '-').lowercase()
     }
 
     return setOfNotNull(
