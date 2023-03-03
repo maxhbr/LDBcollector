@@ -1,5 +1,6 @@
+{-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Source.Fedora
-    ( FedoraData (..)
+    ( FedoraLicenseData (..)
     ) where
 
 import Ldbcollector.Model hiding (ByteString) 
@@ -19,23 +20,48 @@ data FedoraEntryLicense
     , _text :: Maybe String
     , _scancode_key :: Maybe String
     }
+instance FromJSON FedoraEntryLicense where
+  parseJSON = withObject "FedoraEntryLicense" $ \v -> FedoraEntryLicense
+    <$> v .: "expression"
+    <*> v .: "status"
+    <*> v .: "urls"
+    <*> v .: "text"
+    <*> v .:? "scancode-key"
 data FedoraEntryFedora
     = FedoraEntryFedora
     { _legacy_names :: [String]
     , _legacy_abbreviation :: [String]
     , _notes :: Maybe String
     }
+instance FromJSON FedoraEntryFedora where
+  parseJSON = withObject "FedoraEntryFedora" $ \v -> FedoraEntryFedora
+    <$> v .: "legacy-names"
+    <*> v .: "legacy-abbreviation"
+    <*> v .:? "notes"
 data FedoraEntry
     = FedoraEntry
     { _license :: FedoraEntryLicense
     , _fedora :: Maybe FedoraEntryFedora
     }
+instance FromJSON FedoraEntry where
+  parseJSON = withObject "FedoraEntry" $ \v -> FedoraEntry
+    <$> v .: "license"
+    <*> v .:? "fedora"
 
-applyToml :: FilePath -> LicenseGraphM ()
-applyToml toml = _
+applyFedoraEntry :: FedoraEntry -> LicenseGraphM ()
+applyFedoraEntry = undefined
+
+applyJson :: FilePath -> LicenseGraphM ()
+applyJson json = do
+    stderrLog ("read " ++ json)
+    decoded <- MTL.lift (eitherDecodeFileStrict json :: IO (Either String FedoraEntry))
+    case decoded of
+      Left err -> fail err
+      Right entry -> applyFedoraEntry entry
 
 newtype FedoraLicenseData = FedoraLicenseData FilePath
 instance Source FedoraLicenseData where
     applySource (FedoraLicenseData dir) = do
-        tomls <- MTL.lift . fmap glob (dir </> "*.toml")
-        mapM_ applyToml tomls
+        stderrLog ("read " ++ dir)
+        jsons <- MTL.lift $ glob (dir </> "*.json")
+        mapM_ applyJson jsons

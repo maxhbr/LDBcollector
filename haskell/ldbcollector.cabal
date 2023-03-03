@@ -74,7 +74,8 @@ library
     other-modules:
         Ldbcollector.Source.Scancode,
         Ldbcollector.Source.SPDX,
-        Ldbcollector.Source.Cavil
+        Ldbcollector.Source.Cavil,
+        Ldbcollector.Source.Fedora
 
     -- LANGUAGE extensions used by modules in this package.
     other-extensions: OverloadedStrings

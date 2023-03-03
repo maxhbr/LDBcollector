@@ -20,6 +20,7 @@ newtype CavilLicenseChanges = CavilLicenseChanges FilePath
 
 instance Source CavilLicenseChanges where
     applySource (CavilLicenseChanges txt) = do
+        stderrLog ("read " ++ txt)
         csvData <- lift $ B.readFile txt
         let csvLines = tail $ lines csvData
         mapM_ (\bs -> case split '\t' bs of

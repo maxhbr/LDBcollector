@@ -86,6 +86,7 @@ applyScancodeData scd = do
 
 applyJson :: FilePath -> LicenseGraphM ()
 applyJson json = do
+    stderrLog ("read " ++ json)
     decoded <- MTL.lift (eitherDecodeFileStrict json :: IO (Either String ScancodeData))
     case decoded of
       Left err -> fail err
