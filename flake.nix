@@ -17,9 +17,10 @@
       in
       with pkgs;
       {
-        packages.default = let
+        packages.ldbcollector-rust = let
             cargo_nix = import ./rust/Cargo.nix { inherit pkgs nixpkgs; };
           in cargo_nix.rootCrate.build;
+        packages.ldbcollector-haskell = pkgs.callPackage ./haskell/default.nix {};
         devShells.default = mkShell {
           packages = with pkgs; [ 
             crate2nix
@@ -29,6 +30,8 @@
             wasm
             wasm-pack
             wasmer
+
+            plantuml graphviz zlib
           ];
           buildInputs = [
             openssl
