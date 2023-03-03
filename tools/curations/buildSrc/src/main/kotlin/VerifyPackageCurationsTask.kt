@@ -49,8 +49,9 @@ open class VerifyPackageCurationsTask : DefaultTask() {
                     if (version.isNotBlank() && version.hasVersionRangeIndicators()) {
                         val range = RangesListFactory.create(version)
                         if (range.get().size == 0) {
-                            issues += "The version '${version}' in file '$relativePath' contains version range " +
-                                    "indicators, but cannot be parsed to a valid version range."
+                            issues += "The version of package '${curation.id.toCoordinates()}' in file " +
+                                    "'$relativePath' contains version range indicators, but cannot be parsed to a " +
+                                    "valid version range."
                         }
                     }
 
