@@ -48,7 +48,7 @@ open class VerifyPackageCurationsTask : DefaultTask() {
                         runCatching {
                             Requirement.buildIvy(curation.id.version)
                         }.onFailure {
-                            issues += "The version '${curation.id.version}' in file '$relativePath 'is not a valid " +
+                            issues += "The version '${curation.id.version}' in file '$relativePath' is not a valid " +
                                     "Ivy version range. See: " +
                                     "https://ant.apache.org/ivy/history/2.5.0/settings/version-matchers.html"
                         }
