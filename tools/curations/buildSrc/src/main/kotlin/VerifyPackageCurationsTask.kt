@@ -44,13 +44,13 @@ open class VerifyPackageCurationsTask : DefaultTask() {
                                 "'${curation.id.toCoordinates()}' in file '$relativePath' does not have a package name."
                     }
 
-                    if (curation.id.version.isNotBlank()) {
+                    val version = curation.id.version
+                    if (version.isNotBlank()) {
                         runCatching {
-                            Requirement.buildIvy(curation.id.version)
+                            Requirement.buildIvy(version)
                         }.onFailure {
-                            issues += "The version '${curation.id.version}' in file '$relativePath' is not a valid " +
-                                    "Ivy version range. See: " +
-                                    "https://ant.apache.org/ivy/history/2.5.0/settings/version-matchers.html"
+                            issues += "The version '$version' in file '$relativePath' is not a valid Ivy version " +
+                            "range. See: https://ant.apache.org/ivy/history/2.5.0/settings/version-matchers.html"
                         }
                     }
 
