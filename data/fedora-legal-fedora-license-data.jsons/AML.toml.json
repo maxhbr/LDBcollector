@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "AML",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Apple_MIT_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Apple MIT License"
+    ],
+    "legacy-abbreviation": [
+      "AML"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "etalab-2.0",
+    "status": [
+      "allowed-content"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "License Ouverte"
+    ],
+    "legacy-abbreviation": [
+      "Ouverte"
+    ]
+  }
+}

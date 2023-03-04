@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-Threeparttable",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Threeparttable\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Threeparttable License"
+    ],
+    "legacy-abbreviation": [
+      "Threeparttable"
+    ]
+  }
+}

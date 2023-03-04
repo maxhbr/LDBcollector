@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-Metasploit-1.2",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Metasploit Framework License (pre 2006)"
+    ]
+  }
+}

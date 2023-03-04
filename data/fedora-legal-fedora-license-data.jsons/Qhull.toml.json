@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Qhull",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Qhull\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Qhull License"
+    ],
+    "legacy-abbreviation": [
+      "Qhull"
+    ]
+  }
+}

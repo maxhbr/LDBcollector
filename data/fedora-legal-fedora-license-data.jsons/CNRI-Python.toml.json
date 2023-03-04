@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CNRI-Python",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.handle.net/python_licenses/python1.6_9-5-00.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "CNRI License (Old Python)"
+    ],
+    "legacy-abbreviation": [
+      "CNRI"
+    ]
+  }
+}

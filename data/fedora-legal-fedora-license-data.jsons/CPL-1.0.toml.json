@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CPL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.eclipse.org/legal/cpl-v10.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Common Public License"
+    ],
+    "legacy-abbreviation": [
+      "CPL"
+    ]
+  }
+}

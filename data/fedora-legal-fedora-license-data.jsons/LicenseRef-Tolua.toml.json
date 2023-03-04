@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-Tolua",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Tolua\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Tolua License"
+    ],
+    "legacy-abbreviation": [
+      "Tolua"
+    ]
+  }
+}

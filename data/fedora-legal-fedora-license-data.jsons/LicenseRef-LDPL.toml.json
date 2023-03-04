@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-LDPL",
+    "status": [
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Linux Documentation Project License"
+    ],
+    "legacy-abbreviation": [
+      "LDPL"
+    ]
+  }
+}

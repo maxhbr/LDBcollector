@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Sleepycat",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Sleepycat\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Sleepycat Software Product License"
+    ],
+    "legacy-abbreviation": [
+      "Sleepycat"
+    ]
+  }
+}

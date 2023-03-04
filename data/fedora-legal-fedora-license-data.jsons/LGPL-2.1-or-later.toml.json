@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LGPL-2.1-or-later",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU Lesser General Public License v2 (or 2.1) or later"
+    ],
+    "legacy-abbreviation": [
+      "LGPLv2+"
+    ]
+  }
+}

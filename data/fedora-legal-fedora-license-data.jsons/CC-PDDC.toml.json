@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "CC-PDDC",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://creativecommons.org/licenses/publicdomain/\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Creative Commons Public Domain Dedication and Certification"
+    ]
+  }
+}

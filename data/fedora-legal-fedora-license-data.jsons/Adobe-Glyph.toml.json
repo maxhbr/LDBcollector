@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Adobe-Glyph",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Adobe Glyph List License"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

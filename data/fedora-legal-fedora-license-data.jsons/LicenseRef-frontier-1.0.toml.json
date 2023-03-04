@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-frontier-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.spinwardstars.com/frontier/fal.html\nhttps://enterprise.dejacode.com/licenses/public/frontier-1.0/?_list_filters=q%3Dfrontier#license-text\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Frontier Artistic License"
+    ],
+    "notes": "Non-free for the same reasons as regular Artistic 1.0 License  broken link\n"
+  }
+}

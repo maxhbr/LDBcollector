@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "OSL-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.nexb.com/license/LICENSE-OSL-2.0.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Software License 2.0"
+    ],
+    "legacy-abbreviation": [
+      "OSL 2.0"
+    ]
+  }
+}

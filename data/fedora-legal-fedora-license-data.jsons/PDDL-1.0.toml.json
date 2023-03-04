@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "PDDL-1.0",
+    "status": [
+      "allowed-content"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Data Commons Public Domain Dedication and Licence"
+    ],
+    "legacy-abbreviation": [
+      "PDDL-1.0"
+    ]
+  }
+}

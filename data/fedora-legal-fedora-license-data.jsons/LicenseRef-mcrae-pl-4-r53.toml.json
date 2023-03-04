@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-mcrae-pl-4-r53",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://pgl.yoyo.org/license/\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "McRae General Public License"
+    ],
+    "notes": "Commercial use restrictions\n"
+  }
+}

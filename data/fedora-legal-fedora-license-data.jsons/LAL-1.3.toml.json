@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LAL-1.3",
+    "status": [
+      "allowed-content"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Free Art License"
+    ],
+    "legacy-abbreviation": [
+      "Free Art"
+    ]
+  }
+}

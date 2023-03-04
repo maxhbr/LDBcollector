@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MirOS",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://mirbsd.de/MirOS-Licence\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "MirOS License"
+    ],
+    "legacy-abbreviation": [
+      "MirOS"
+    ]
+  }
+}

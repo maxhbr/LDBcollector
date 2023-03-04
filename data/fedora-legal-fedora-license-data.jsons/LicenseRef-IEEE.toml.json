@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-IEEE",
+    "status": [
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "IEEE and Open Group Documentation License"
+    ],
+    "legacy-abbreviation": [
+      "IEEE"
+    ]
+  }
+}

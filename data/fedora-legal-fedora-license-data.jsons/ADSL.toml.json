@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ADSL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Amazon Digital Services License"
+    ],
+    "legacy-abbreviation": [
+      "ADSL"
+    ]
+  }
+}

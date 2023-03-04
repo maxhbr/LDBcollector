@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MIT-enna",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/MIT#enna\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "enna License"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

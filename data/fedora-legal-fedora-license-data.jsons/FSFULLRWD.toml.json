@@ -1,0 +1,10 @@
+{
+  "license": {
+    "expression": "FSFULLRWD",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://github.com/spdx/license-list-XML/blob/main/src/FSFULLRWD.xml\nhttps://github.com/spdx/license-list-data/blob/master/text/FSFULLRWD.txt\n",
+    "text": "This Makefile.in is free software; the Free Software Foundation\ngives unlimited permission to copy and/or distribute it,\nwith or without modifications, as long as this notice is preserved.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY, to the extent permitted by law; without\neven the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n"
+  }
+}

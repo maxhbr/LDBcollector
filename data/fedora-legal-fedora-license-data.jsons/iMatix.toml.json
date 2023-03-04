@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "iMatix",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://legacy.imatix.com/html/sfl/sfl4.htm#license\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "iMatix Standard Function Library Agreement"
+    ],
+    "legacy-abbreviation": [
+      "iMatix"
+    ]
+  }
+}

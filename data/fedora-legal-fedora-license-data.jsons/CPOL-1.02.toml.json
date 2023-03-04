@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "CPOL-1.02",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.codeproject.com/info/cpol10.aspx\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "CodeProject Open License (CPOL)"
+    ],
+    "notes": "Unacceptable use restrictions\n"
+  }
+}

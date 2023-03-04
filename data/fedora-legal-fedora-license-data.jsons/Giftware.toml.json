@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Giftware",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.talula.demon.co.uk/allegro/license.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Giftware License"
+    ],
+    "legacy-abbreviation": [
+      "Giftware"
+    ]
+  }
+}

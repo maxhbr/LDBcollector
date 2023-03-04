@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-W3C-20150201",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.w3.org/Consortium/Legal/copyright-documents\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "W3C Documentation License"
+    ],
+    "notes": "Does not permit modification, different from W3C Software License\n"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-CRC32",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/CRC32\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "CRC32 License"
+    ],
+    "legacy-abbreviation": [
+      "CRC32"
+    ]
+  }
+}

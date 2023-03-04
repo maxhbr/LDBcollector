@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ICU",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_style_.28ICU_Variant.29\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "MIT:Modern style (ICU Variant)"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "YPL-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.zimbra.com/license/yahoo_public_license_1.0.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Yahoo Public License 1.0"
+    ]
+  }
+}

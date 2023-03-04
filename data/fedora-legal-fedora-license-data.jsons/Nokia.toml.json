@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Nokia",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/nokia.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Nokia Open Source License"
+    ],
+    "legacy-abbreviation": [
+      "Nokia"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Borceux",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Borceux\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Borceux license"
+    ],
+    "legacy-abbreviation": [
+      "Borceux"
+    ]
+  }
+}

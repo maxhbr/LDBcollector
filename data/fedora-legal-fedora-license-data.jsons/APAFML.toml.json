@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "APAFML",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Adobe Postscript AFM License"
+    ],
+    "legacy-abbreviation": [
+      "APAFML"
+    ]
+  }
+}

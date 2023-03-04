@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "diffmark",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/diffmark\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "diffmark license"
+    ],
+    "legacy-abbreviation": [
+      "diffmark"
+    ]
+  }
+}

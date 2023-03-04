@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Bahyph",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Bahyph\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Bahyph License"
+    ],
+    "legacy-abbreviation": [
+      "Bahyph"
+    ]
+  }
+}

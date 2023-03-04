@@ -1,15 +1,15 @@
 {-# LANGUAGE OverloadedStrings #-}
 module SourceSpec where
 
-import           Test.Hspec hiding (focus)
+import           Test.Hspec                 hiding (focus)
 import           Test.QuickCheck
 
 import qualified Data.Graph.Inductive.Graph as G
-import qualified Data.Map as Map
-import qualified Data.Vector as V
+import qualified Data.Map                   as Map
+import qualified Data.Vector                as V
 
-import Ldbcollector.Model 
-import Ldbcollector.Source
+import           Ldbcollector.Model
+import           Ldbcollector.Source
 
 testGraph lg = do
     let gr_size = (length . G.nodes . _gr) lg
@@ -29,7 +29,7 @@ sourceSpec = do
         describe "focused" $ do
             (_, focusedLg) <- runIO $ runLicenseGraphM (do
                 applySources
-                getFocused ((V.fromList . map (LicenseName . newLN)) 
+                getFocused ((V.fromList . map (LicenseName . newLN))
                         [ "BSD-3-Clause"
                         , "MIT"
                         , "GPL-3.0-only"

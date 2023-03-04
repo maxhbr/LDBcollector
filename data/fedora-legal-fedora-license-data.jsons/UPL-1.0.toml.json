@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "UPL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/UPL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Universal Permissive License"
+    ],
+    "legacy-abbreviation": [
+      "UPL"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-sgi-glx-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/GLX_Public_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "SGI GLX Public License 1.0"
+    ],
+    "notes": "All GLX code now uses Free B 2.0\n"
+  }
+}

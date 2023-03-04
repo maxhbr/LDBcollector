@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Xerox",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Xerox\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Xerox License"
+    ],
+    "legacy-abbreviation": [
+      "Xerox"
+    ]
+  }
+}

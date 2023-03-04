@@ -1,0 +1,18 @@
+{
+  "license": {
+    "expression": "SMLNJ",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#MLton_variant\nhttps://fedoraproject.org/wiki/Licensing/MIT\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "MIT:9MLton variant",
+      "Standard ML of New Jersey License"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

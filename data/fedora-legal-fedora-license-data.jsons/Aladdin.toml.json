@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "Aladdin",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.artifex.com/downloads/doc/Public.htm\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Aladdin Free Public License"
+    ]
+  }
+}

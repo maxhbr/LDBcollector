@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-RSA",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/RSA\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "RSA License"
+    ],
+    "legacy-abbreviation": [
+      "RSA"
+    ]
+  }
+}

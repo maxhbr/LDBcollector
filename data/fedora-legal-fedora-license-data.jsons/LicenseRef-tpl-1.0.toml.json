@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-tpl-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://svn.terracotta.org/svn/ehcache/tags/ehcache-2.9.0/distribution/src/main/assembly/root/licenses/EHCACHE-TERRACOTTA-LICENSE.txt\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Terracotta Public License 1.0"
+    ],
+    "notes": "Attribution requirements are burdensome, unclear, and potentially impossible to\ncomply with (Section 14)\n"
+  }
+}

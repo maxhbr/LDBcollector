@@ -1,0 +1,10 @@
+{
+  "license": {
+    "expression": "Unicode-DFS-2016",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://www.unicode.org/license.txt\nhttps://web.archive.org/web/20210830183830/https://www.unicode.org/license.html\nhttps://spdx.org/licenses/Unicode-DFS-2016.html\n"
+  },
+  "fedora": {}
+}

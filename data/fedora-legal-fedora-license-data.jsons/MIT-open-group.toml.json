@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "MIT-open-group",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://spdx.org/licenses/MIT-open-group.html\nhttps://gitlab.freedesktop.org/xorg/app/xmag/-/raw/4a7f2c54/CutPaste.c\n"
+  },
+  "fedora": {
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

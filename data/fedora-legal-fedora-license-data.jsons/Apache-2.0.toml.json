@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Apache-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.apache.org/licenses/LICENSE-2.0\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Apache Software License 2.0"
+    ],
+    "legacy-abbreviation": [
+      "ASL 2.0"
+    ]
+  }
+}

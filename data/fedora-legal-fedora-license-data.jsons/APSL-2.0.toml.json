@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "APSL-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.opensource.apple.com/apsl/2.0.txt\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Apple Public Source License 2.0"
+    ],
+    "legacy-abbreviation": [
+      "APSL 2.0"
+    ]
+  }
+}

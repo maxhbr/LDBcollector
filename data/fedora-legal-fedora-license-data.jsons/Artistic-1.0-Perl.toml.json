@@ -1,0 +1,18 @@
+{
+  "license": {
+    "expression": "Artistic-1.0-Perl",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.perl.com/pub/a/language/misc/Artistic.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Artistic 1.0 (original)"
+    ],
+    "legacy-abbreviation": [
+      "Artistic"
+    ],
+    "notes": "See: http://www.gnu.org/licenses/license-list.html#ArtisticLicense\n"
+  }
+}

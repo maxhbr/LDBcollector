@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "NCSA",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://otm.illinois.edu/uiuc_openSource\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "NCSA/University of Illinois Open Source License"
+    ],
+    "legacy-abbreviation": [
+      "NCSA"
+    ]
+  }
+}

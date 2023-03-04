@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "NPL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.mozilla.org/NPL/NPL-1.0.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Netscape Public License"
+    ],
+    "legacy-abbreviation": [
+      "Netscape"
+    ]
+  }
+}

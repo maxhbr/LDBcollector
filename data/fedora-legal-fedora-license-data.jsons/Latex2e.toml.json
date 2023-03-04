@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Latex2e",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Latex2e\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Latex2e License"
+    ],
+    "legacy-abbreviation": [
+      "Latex2e"
+    ]
+  }
+}

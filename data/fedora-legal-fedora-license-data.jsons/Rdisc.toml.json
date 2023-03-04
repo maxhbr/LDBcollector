@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Rdisc",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Rdisc_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Rdisc License"
+    ],
+    "legacy-abbreviation": [
+      "Rdisc"
+    ]
+  }
+}

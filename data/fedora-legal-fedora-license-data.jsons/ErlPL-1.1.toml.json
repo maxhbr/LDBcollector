@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ErlPL-1.1",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/ErlangPublicLicense\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Erlang Public License 1.1"
+    ],
+    "legacy-abbreviation": [
+      "ERPL"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-quicktime",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://store.apple.com/Catalog/US/Images/quicktime.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Apple Quicktime License"
+    ],
+    "notes": "No source related permissions\n"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "Arphic-1999",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Arphic Public License"
+    ],
+    "legacy-abbreviation": [
+      "Arphic"
+    ]
+  }
+}

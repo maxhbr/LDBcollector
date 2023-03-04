@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Zed",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Zed\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Zed License"
+    ],
+    "legacy-abbreviation": [
+      "Zed"
+    ]
+  }
+}

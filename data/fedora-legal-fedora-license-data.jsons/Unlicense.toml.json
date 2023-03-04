@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Unlicense",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Unlicense\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Unlicense"
+    ],
+    "legacy-abbreviation": [
+      "Unlicense"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-qmail",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://cr.yp.to/qmail/dist.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "qmail License"
+    ],
+    "notes": "deprecated, qmail is now public domain\n"
+  }
+}

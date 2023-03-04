@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "GPL-1.0-or-later OR Artistic-1.0-Perl",
+    "status": [
+      "allowed"
+    ],
+    "usage": "This license expression is allowed for Perl packages.\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU General Public License v1.0 or later or Artistic License 1.0"
+    ],
+    "legacy-abbreviation": [
+      "GPL+ or Artistic"
+    ]
+  }
+}

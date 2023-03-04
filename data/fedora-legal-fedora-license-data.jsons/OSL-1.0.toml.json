@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "OSL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.opensource.org/licenses/osl-1.0.txt\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Software License 1.0"
+    ],
+    "legacy-abbreviation": [
+      "OSL 1.0"
+    ]
+  }
+}

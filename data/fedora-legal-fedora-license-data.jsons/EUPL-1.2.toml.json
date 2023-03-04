@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "EUPL-1.2",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://opensource.org/licenses/EUPL-1.2\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "European Union Public License 1.2"
+    ],
+    "legacy-abbreviation": [
+      "EUPL 1.2"
+    ]
+  }
+}

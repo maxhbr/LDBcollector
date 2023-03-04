@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-radvd",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/radvd_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "radvd License"
+    ],
+    "legacy-abbreviation": [
+      "radvd"
+    ]
+  }
+}

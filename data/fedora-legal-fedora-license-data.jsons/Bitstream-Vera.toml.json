@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "Bitstream-Vera",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Bitstream Vera Font License"
+    ],
+    "legacy-abbreviation": [
+      "Bitstream Vera"
+    ]
+  }
+}

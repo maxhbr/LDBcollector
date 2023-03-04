@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-paul-hsieh-derivative",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.azillionmonkeys.com/qed/license-derivative.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Paul Hsieh Derivative License"
+    ]
+  }
+}

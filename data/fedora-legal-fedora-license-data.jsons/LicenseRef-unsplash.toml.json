@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-unsplash",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://unsplash.com/license\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Unsplash License"
+    ],
+    "notes": "Some use restrictions\n"
+  }
+}

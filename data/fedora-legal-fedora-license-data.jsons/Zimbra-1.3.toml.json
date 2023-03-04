@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "Zimbra-1.3",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.zimbra.com/license/zimbra-public-license-1-3.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Zimbra Public License 1.3"
+    ],
+    "notes": "Badgeware clause does not make allowances for modifications in which it is not\ntechnically possible to preserve a 'logo', we must assume this provision\nconstitutes an undue burden on the right of modification.\n"
+  }
+}

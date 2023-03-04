@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MS-PL",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.microsoft.com/opensource/licenses.mspx#Ms-PL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Microsoft Public License"
+    ],
+    "legacy-abbreviation": [
+      "MS-PL"
+    ]
+  }
+}

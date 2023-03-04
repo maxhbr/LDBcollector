@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-iTunes",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://images.apple.com/legal/sla/docs/itunes.pdf\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Apple iTunes License"
+    ],
+    "notes": "No source related permissions\n"
+  }
+}

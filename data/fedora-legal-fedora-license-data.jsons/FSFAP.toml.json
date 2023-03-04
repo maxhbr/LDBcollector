@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "FSFAP",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/FSFAP\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "FSF All Permissive license"
+    ],
+    "legacy-abbreviation": [
+      "FSFAP"
+    ]
+  }
+}

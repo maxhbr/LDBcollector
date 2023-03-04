@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-Logica",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensmpp.logica.com/CommonPart/Download/Download.htm\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Logica Open Source License"
+    ],
+    "legacy-abbreviation": [
+      "Logica"
+    ]
+  }
+}

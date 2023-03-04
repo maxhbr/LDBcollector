@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "OSLC-2.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://opensource.org/licenses/oclc2.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "OCLC Public Research License 2.0"
+    ],
+    "notes": "Appears to limit the price at which a copy can be charged, not just simply\nprohibiting imposition of royalties.\n"
+  }
+}

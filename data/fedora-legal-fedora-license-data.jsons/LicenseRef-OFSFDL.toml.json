@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-OFSFDL",
+    "status": [
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Old FSF Documentation License"
+    ],
+    "legacy-abbreviation": [
+      "OFSFDL"
+    ]
+  }
+}

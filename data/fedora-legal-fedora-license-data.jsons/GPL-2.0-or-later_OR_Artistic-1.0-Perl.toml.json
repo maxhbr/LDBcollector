@@ -1,0 +1,9 @@
+{
+  "license": {
+    "expression": "GPL-2.0-or-later OR Artistic-1.0-Perl",
+    "status": [
+      "allowed"
+    ],
+    "usage": "This license expression is allowed for Perl packages.\n"
+  }
+}

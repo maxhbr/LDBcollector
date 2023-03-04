@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "OPUBL-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "usage": " Allowed-for documentation if the copyright holder does not exercise any of the “LICENSE OPTIONS” listed in Section VI\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Publication License, v1.0"
+    ],
+    "legacy-abbreviation": [
+      "Open Publication"
+    ]
+  }
+}

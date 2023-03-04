@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "checkmk",
+    "status": [
+      "allowed"
+    ]
+  }
+}

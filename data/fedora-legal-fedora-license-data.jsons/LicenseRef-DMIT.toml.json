@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-DMIT",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/DMIT\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Docbook MIT License"
+    ],
+    "legacy-abbreviation": [
+      "DMIT"
+    ]
+  }
+}

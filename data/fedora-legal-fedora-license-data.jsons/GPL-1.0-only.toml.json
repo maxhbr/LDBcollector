@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "GPL-1.0-only",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU General Public License v1.0 only"
+    ],
+    "legacy-abbreviation": [
+      "GPLv1"
+    ]
+  }
+}

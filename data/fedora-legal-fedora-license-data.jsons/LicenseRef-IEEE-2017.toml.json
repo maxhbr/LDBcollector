@@ -1,0 +1,9 @@
+{
+  "license": {
+    "expression": "LicenseRef-IEEE-2017",
+    "status": [
+      "not-allowed"
+    ],
+    "text": "The Institute of Electrical and Electronics Engineers and The Open Group,\nhave given us permission to reprint portions of their documentation.\n\nIn the following statement, the phrase ``this text'' refers to portions of\nthe system documentation.\n\nPortions of this text are reprinted and reproduced in electronic form in\nthe Linux man-pages project, from IEEE Std 1003.1-2017, Standard for\nInformation Technology -- Portable Operating System Interface (POSIX), The\nOpen Group Base Specifications Issue 7, 2018 Edition, Copyright (C) 2018\nby The Institute of Electrical and Electronics Engineers, Inc and The Open\nGroup.  In the event of any discrepancy between these versions and the\noriginal IEEE and The Open Group Standard, the original IEEE and The Open\nGroup Standard is the referee document.  The original Standard can be\nobtained online at http://www.opengroup.org/unix/online.html .\n\nThis notice shall appear on any product containing this material.\n"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "xinetd",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Xinetd_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "xinetd License"
+    ],
+    "legacy-abbreviation": [
+      "xinetd"
+    ]
+  }
+}

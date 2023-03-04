@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Spencer-86",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Henry Spencer Reg-Ex Library License"
+    ],
+    "legacy-abbreviation": [
+      "HSRL"
+    ]
+  }
+}

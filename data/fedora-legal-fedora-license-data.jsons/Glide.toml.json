@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Glide",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.users.on.net/~triforce/glidexp/COPYING.txt\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "3dfx Glide License"
+    ],
+    "legacy-abbreviation": [
+      "Glide"
+    ]
+  }
+}

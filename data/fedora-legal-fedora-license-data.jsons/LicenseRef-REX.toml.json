@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-REX",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/REX\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "REX License"
+    ],
+    "legacy-abbreviation": [
+      "REX"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Dotseqn",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Dotseqn\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Dotseqn License"
+    ],
+    "legacy-abbreviation": [
+      "Dotseqn"
+    ]
+  }
+}

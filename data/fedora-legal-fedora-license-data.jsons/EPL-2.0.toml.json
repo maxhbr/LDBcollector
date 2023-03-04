@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "EPL-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.eclipse.org/legal/epl-v20.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Eclipse Public License 2.0"
+    ],
+    "legacy-abbreviation": [
+      "EPL-2.0"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "FSFULLR",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "FSF Unlimited License (with License Retention)"
+    ],
+    "legacy-abbreviation": [
+      "FSFULLR"
+    ]
+  }
+}

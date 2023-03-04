@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "RPSL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.opensource.org/licenses/real.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "RealNetworks Public Source License V1.0"
+    ],
+    "legacy-abbreviation": [
+      "RPSL"
+    ]
+  }
+}

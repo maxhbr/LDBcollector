@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-Rsfs",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Rsfs\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Rsfs License"
+    ],
+    "legacy-abbreviation": [
+      "Rsfs"
+    ]
+  }
+}

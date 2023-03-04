@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CATOSL-1.1",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/ca-tosl1.1.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Computer Associates Trusted Open Source License 1.1"
+    ],
+    "legacy-abbreviation": [
+      "CATOSL"
+    ]
+  }
+}

@@ -66,6 +66,7 @@ library
         MyPrelude,
         Ldbcollector.Model.LicenseName,
         Ldbcollector.Model.LicenseGraph,
+        Ldbcollector.Model.LicenseGraphTask,
         Ldbcollector.Model,
         Ldbcollector.Source,
         Ldbcollector.Sink.GraphViz

@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "Knuth-CTAN",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Knuth License"
+    ],
+    "legacy-abbreviation": [
+      "Knuth"
+    ]
+  }
+}

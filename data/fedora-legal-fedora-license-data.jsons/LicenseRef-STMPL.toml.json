@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-STMPL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/STMPL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "SciTech MGL Public License"
+    ],
+    "legacy-abbreviation": [
+      "STMPL"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-Literat-font",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/LiteratFontLicense\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Literat Font License"
+    ],
+    "notes": "Cannot modify\n"
+  }
+}

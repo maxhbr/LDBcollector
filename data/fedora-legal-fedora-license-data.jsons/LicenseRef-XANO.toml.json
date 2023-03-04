@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-XANO",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "XANO Mincho Font License"
+    ],
+    "legacy-abbreviation": [
+      "XANO"
+    ]
+  }
+}

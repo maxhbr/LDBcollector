@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-OpenData",
+    "status": [
+      "allowed-content"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Data License (GeoLite Country and GeoLite City databases)"
+    ],
+    "legacy-abbreviation": [
+      "BSD with advertising"
+    ]
+  }
+}

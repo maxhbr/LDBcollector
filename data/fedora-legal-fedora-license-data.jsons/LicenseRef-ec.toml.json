@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-ec",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "ec Font License"
+    ],
+    "legacy-abbreviation": [
+      "ec"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Newsletr",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Newsletr\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Newsletr License"
+    ],
+    "legacy-abbreviation": [
+      "Newsletr"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "FreeBSD-DOC",
+    "status": [
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "FreeBSD Documentation License"
+    ],
+    "legacy-abbreviation": [
+      "FBSDDL"
+    ]
+  }
+}

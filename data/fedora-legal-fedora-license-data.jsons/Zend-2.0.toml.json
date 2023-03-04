@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Zend-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.zend.com/license/2_00.txt\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Zend License v2.0"
+    ],
+    "legacy-abbreviation": [
+      "Zend"
+    ]
+  }
+}

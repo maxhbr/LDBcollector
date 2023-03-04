@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "BSD-2-Clause-Patent",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/BSD-2-Clause-Patent\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "BSD + Patent"
+    ],
+    "legacy-abbreviation": [
+      "BSD-2-Clause-Patent"
+    ]
+  }
+}

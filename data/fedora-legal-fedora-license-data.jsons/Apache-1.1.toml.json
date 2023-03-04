@@ -1,0 +1,25 @@
+{
+  "license": {
+    "expression": "Apache-1.1",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://4suite.org/COPYRIGHT\nhttp://www.apache.org/licenses/LICENSE-1.1\nhttps://fedoraproject.org/wiki/Licensing/MX4J\nhttp://www.clearsilver.net/license.hdf\nhttp://www.quickfixengine.org/quickfix/doc/html/license.html\nhttp://phorum.org/license.txt\nhttps://fedoraproject.org/wiki/Licensing/SequenceLibraryLicense\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "4Suite Copyright License",
+      "Apache Software License 1.1",
+      "MX4J License",
+      "Neotonic Clearsilver License",
+      "QuickFix License",
+      "Phorum License",
+      "Sequence Library License"
+    ],
+    "legacy-abbreviation": [
+      "ASL 1.1",
+      "Phorum",
+      "Sequence"
+    ]
+  }
+}

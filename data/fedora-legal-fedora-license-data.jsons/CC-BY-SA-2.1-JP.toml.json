@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CC-BY-SA-2.1-JP",
+    "status": [
+      "allowed-content",
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Creative Commons Attribution-ShareAlike 2.1 Japan"
+    ],
+    "legacy-abbreviation": [
+      "CC-BY-SA"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "DL-DE-BY-2.0",
+    "status": [
+      "allowed-content"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Data license Germany - attribution 2.0"
+    ],
+    "legacy-abbreviation": [
+      "DL-DE-BY"
+    ]
+  }
+}

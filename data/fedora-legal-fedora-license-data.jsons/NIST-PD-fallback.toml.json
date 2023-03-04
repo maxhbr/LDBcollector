@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "NIST-PD-fallback",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/NISTSL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "NIST Software License"
+    ],
+    "legacy-abbreviation": [
+      "NISTSL"
+    ]
+  }
+}

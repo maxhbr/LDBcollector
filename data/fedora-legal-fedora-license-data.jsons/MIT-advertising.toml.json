@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MIT-advertising",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Enlightenment License (e16)"
+    ],
+    "legacy-abbreviation": [
+      "MIT with advertising"
+    ]
+  }
+}

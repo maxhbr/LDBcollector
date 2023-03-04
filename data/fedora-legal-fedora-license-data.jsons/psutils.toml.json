@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "psutils",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/psutils\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "psutils License"
+    ],
+    "legacy-abbreviation": [
+      "psutils"
+    ]
+  }
+}

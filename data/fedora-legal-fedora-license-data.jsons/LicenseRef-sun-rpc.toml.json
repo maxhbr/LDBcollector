@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-sun-rpc",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/SunRPC\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Sun RPC License"
+    ],
+    "notes": "Restrictions on modification, distribution\n"
+  }
+}

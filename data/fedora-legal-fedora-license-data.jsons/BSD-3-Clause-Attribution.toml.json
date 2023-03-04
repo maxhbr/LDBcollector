@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "BSD-3-Clause-Attribution",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "BSD with attribution"
+    ],
+    "legacy-abbreviation": [
+      "BSD with attribution"
+    ]
+  }
+}

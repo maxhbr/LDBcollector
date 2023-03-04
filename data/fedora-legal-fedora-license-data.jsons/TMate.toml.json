@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "TMate",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://svnkit.com/license.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "TMate Open Source License"
+    ],
+    "legacy-abbreviation": [
+      "TMate"
+    ]
+  }
+}

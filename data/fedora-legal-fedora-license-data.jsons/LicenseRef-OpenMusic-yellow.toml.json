@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-OpenMusic-yellow",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://openmusic.linuxtag.org/yellow.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "LinuxTag Yellow OpenMusic License"
+    ],
+    "notes": "Commercial use restrictions\n"
+  }
+}

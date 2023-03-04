@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-stanford-mrouted",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/mrouted\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "mrouted license (old)"
+    ]
+  }
+}

@@ -1,11 +1,11 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import qualified Data.Vector as V
+import qualified Data.Vector                as V
 
-import Ldbcollector.Model
-import Ldbcollector.Source
-import Ldbcollector.Sink.GraphViz
+import           Ldbcollector.Model
+import           Ldbcollector.Sink.GraphViz
+import           Ldbcollector.Source
 
 main :: IO ()
 main = do

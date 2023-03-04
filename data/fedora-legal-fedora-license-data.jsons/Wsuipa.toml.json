@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Wsuipa",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Wsuipa\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Wsuipa License"
+    ],
+    "legacy-abbreviation": [
+      "Wsuipa"
+    ]
+  }
+}

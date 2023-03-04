@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-commons-clause",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/CommonsClause\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Commons Clause"
+    ],
+    "notes": "Commercial use restrictions\n"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CUA-OPL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/cuaoffice.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "CUA Office Public License Version 1.0"
+    ],
+    "legacy-abbreviation": [
+      "MPLv1.1"
+    ]
+  }
+}

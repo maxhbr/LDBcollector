@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LGPL-3.0-only",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.fsf.org/licensing/licenses/lgpl.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU Lesser General Public License v3.0 only"
+    ],
+    "legacy-abbreviation": [
+      "LGPLv3"
+    ]
+  }
+}

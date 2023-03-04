@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LGPL-2.0-or-later WITH WxWindows-exception-3.1",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/wxWindows.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "wxWindows Library License v 3.1"
+    ],
+    "legacy-abbreviation": [
+      "wxWindows"
+    ]
+  }
+}

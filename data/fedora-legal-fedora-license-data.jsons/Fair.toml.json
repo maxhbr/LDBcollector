@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Fair",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/fair.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Fair License"
+    ],
+    "legacy-abbreviation": [
+      "Fair"
+    ]
+  }
+}

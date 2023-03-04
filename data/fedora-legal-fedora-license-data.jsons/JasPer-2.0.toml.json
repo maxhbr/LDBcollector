@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "JasPer-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.ece.uvic.ca/~mdadams/jasper/LICENSE\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "JasPer License"
+    ],
+    "legacy-abbreviation": [
+      "JasPer"
+    ]
+  }
+}

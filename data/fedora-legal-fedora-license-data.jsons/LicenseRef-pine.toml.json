@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-pine",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.washington.edu/pine/overview/legal.html\nhttps://enterprise.dejacode.com/licenses/public/pine/?_list_filters=q%3Dpine#license-text\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Pine License"
+    ],
+    "notes": ""
+  }
+}

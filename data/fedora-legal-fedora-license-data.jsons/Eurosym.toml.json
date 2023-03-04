@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Eurosym",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Eurosym\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Eurosym License"
+    ],
+    "legacy-abbreviation": [
+      "Eurosym"
+    ]
+  }
+}

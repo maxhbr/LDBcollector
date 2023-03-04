@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-cc-nc-sampling-plus-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://creativecommons.org/licenses/sampling+/1.0/legalcode\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Creative Commons Sampling Plus 1.0"
+    ]
+  }
+}

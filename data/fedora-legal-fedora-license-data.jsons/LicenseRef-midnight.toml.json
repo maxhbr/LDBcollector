@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-midnight",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/midnight\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "midnight License"
+    ],
+    "legacy-abbreviation": [
+      "midnight"
+    ]
+  }
+}

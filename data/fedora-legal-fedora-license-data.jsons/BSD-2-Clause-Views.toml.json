@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "BSD-2-Clause-Views",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "FreeBSD BSD Variant (2 clause BSD)"
+    ],
+    "legacy-abbreviation": [
+      "BSD"
+    ]
+  }
+}

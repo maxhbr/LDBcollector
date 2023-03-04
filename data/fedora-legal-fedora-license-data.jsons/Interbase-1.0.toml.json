@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Interbase-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.firebirdsql.org/en/interbase-public-license/\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Interbase Public License"
+    ],
+    "legacy-abbreviation": [
+      "Interbase"
+    ]
+  }
+}

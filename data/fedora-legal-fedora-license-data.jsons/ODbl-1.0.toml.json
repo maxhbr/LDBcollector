@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ODbl-1.0",
+    "status": [
+      "allowed-content"
+    ],
+    "usage": " Note: the elements of the covered dataset also must be under terms allowed for Fedora\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Data Commons Open Database License"
+    ],
+    "legacy-abbreviation": [
+      "ODbl-1.0"
+    ]
+  }
+}

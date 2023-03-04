@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Entessa",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/entessa.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Entessa Public License"
+    ],
+    "legacy-abbreviation": [
+      "Entessa"
+    ]
+  }
+}

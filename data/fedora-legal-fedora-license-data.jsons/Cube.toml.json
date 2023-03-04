@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Cube",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Cube\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Cube License"
+    ],
+    "legacy-abbreviation": [
+      "Cube"
+    ]
+  }
+}

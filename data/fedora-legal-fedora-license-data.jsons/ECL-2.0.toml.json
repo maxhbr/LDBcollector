@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ECL-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.osedu.org/licenses/ECL-2.0/\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Educational Community License 2.0"
+    ],
+    "legacy-abbreviation": [
+      "ECL 2.0"
+    ]
+  }
+}

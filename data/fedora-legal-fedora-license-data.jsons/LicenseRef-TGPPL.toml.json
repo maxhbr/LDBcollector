@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-TGPPL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/TGPPL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Transitive Grace Period Public Licence"
+    ],
+    "legacy-abbreviation": [
+      "TGPPL"
+    ]
+  }
+}

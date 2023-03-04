@@ -3,7 +3,7 @@ module Main (main) where
 import           Test.Hspec
 import           Test.QuickCheck
 
-import           ModelSpec 
+import           ModelSpec
 import           SourceSpec
 
 main :: IO ()

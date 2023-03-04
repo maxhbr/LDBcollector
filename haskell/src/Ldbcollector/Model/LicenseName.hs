@@ -4,8 +4,8 @@ module Ldbcollector.Model.LicenseName
   , newLN, newNLN
   ) where
 
-import MyPrelude
 import           Data.Text as T
+import           MyPrelude
 
 data LicenseName where
     LicenseName :: Maybe Text -> Text -> LicenseName
@@ -16,7 +16,7 @@ newNLN :: Text -> Text -> LicenseName
 newNLN ns = LicenseName (Just ns)
 
 licenseNameToText :: LicenseName -> Text
-licenseNameToText (LicenseName Nothing ln) = ln
+licenseNameToText (LicenseName Nothing ln)   = ln
 licenseNameToText (LicenseName (Just ns) ln) = ns <> ":" <> ln
 
 instance Eq LicenseName where

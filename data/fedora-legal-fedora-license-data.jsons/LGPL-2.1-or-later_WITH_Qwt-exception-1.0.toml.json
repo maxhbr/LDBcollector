@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LGPL-2.1-or-later WITH Qwt-exception-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://qwt.sourceforge.net/qwtlicense.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Qwt License 1.0"
+    ],
+    "legacy-abbreviation": [
+      "LGPLv2+ with exceptions"
+    ]
+  }
+}

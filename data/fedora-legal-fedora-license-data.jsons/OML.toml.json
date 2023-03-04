@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "OML",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Open_Market_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Market License"
+    ],
+    "legacy-abbreviation": [
+      "OML"
+    ]
+  }
+}

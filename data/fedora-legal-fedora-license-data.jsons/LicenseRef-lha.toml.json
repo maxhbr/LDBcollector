@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-lha",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://packages.debian.org/changelogs/pool/non-free/l/lha/current/copyright\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "lha license"
+    ]
+  }
+}

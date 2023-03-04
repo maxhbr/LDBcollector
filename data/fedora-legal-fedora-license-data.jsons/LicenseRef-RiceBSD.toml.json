@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-RiceBSD",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Rice_BSD_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Rice BSD"
+    ],
+    "legacy-abbreviation": [
+      "RiceBSD"
+    ]
+  }
+}

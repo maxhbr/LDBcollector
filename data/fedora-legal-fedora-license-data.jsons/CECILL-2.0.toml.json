@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CECILL-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.cecill.info/licences.en.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "CeCILL License v2"
+    ],
+    "legacy-abbreviation": [
+      "CeCILL"
+    ]
+  }
+}

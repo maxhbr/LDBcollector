@@ -1,18 +1,18 @@
 module Ldbcollector.Sink.GraphViz where
 
-import qualified Data.Graph.Inductive.Graph as G
-import qualified Data.Graph.Inductive.Monad as G
+import qualified Control.Exception                 as Ex
+import qualified Control.Monad.State               as MTL
+import qualified Data.Graph.Inductive.Graph        as G
+import qualified Data.Graph.Inductive.Monad        as G
 import qualified Data.Graph.Inductive.PatriciaTree as G
-import qualified Data.Graph.Inductive.Query.DFS as G
-import qualified Data.GraphViz                 as GV
-import qualified Data.GraphViz.Attributes.Complete
-                                               as GV
-import qualified Data.GraphViz.Commands.IO     as GV
-import qualified Data.GraphViz.Printing        as GV
-import qualified Control.Monad.State as MTL
-import qualified Control.Exception as Ex
+import qualified Data.Graph.Inductive.Query.DFS    as G
+import qualified Data.GraphViz                     as GV
+import qualified Data.GraphViz.Attributes.Complete as GV
+import qualified Data.GraphViz.Commands.IO         as GV
+import qualified Data.GraphViz.Printing            as GV
+import qualified Data.Vector                       as V
 
-import Ldbcollector.Model
+import           Ldbcollector.Model
 
 computeDigraph :: LicenseGraphType -> GV.DotGraph G.Node
 computeDigraph graph = let
@@ -30,6 +30,7 @@ computeDigraph graph = let
             , GV.fmtNode          = \(n, l) ->
                                     let nodeLabel = graph `G.lab` n
                                         label = case nodeLabel of
+                                                    Just (Vec v) -> GV.toLabelValue ((unlines . map show) v)
                                                     Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
                                                     Nothing -> GV.toLabelValue "(/)"
                                         styling = case nodeLabel of

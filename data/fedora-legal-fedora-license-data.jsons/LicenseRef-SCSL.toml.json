@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-SCSL",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.sun.com/software/communitysource/\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Sun Community Source License"
+    ],
+    "notes": "Note as of 2022: link now link broken and webarchive not helpful, but kept here anyway\n\n"
+  }
+}

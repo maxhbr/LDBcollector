@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-JPython",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.jython.org/license.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "JPython License (old)"
+    ],
+    "legacy-abbreviation": [
+      "JPython"
+    ]
+  }
+}

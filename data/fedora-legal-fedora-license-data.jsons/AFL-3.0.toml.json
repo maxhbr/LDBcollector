@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "AFL-3.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/afl-3.0.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Academic Free License"
+    ],
+    "legacy-abbreviation": [
+      "AFL"
+    ]
+  }
+}

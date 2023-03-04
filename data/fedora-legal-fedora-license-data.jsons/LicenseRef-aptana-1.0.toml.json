@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-aptana-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://aptana.com/legal/apl/\nhttps://enterprise.dejacode.com/licenses/public/aptana-1.0/?_list_filters=q%3Daptana#license-text\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Aptana Public License"
+    ],
+    "notes": "No permission to redistribute  broken link\n"
+  }
+}

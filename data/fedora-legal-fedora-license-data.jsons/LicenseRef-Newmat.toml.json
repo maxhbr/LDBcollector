@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-Newmat",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Newmat_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Newmat License"
+    ],
+    "legacy-abbreviation": [
+      "Newmat"
+    ]
+  }
+}

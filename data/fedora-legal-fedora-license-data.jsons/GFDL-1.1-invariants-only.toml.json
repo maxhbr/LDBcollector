@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "GFDL-1.1-invariants-only",
+    "status": [
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU Free Documentation License v1.1 only - invariants"
+    ],
+    "legacy-abbreviation": [
+      "GFDL"
+    ]
+  }
+}

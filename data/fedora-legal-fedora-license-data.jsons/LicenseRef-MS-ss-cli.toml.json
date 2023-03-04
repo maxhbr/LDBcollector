@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-MS-ss-cli",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Microsoft_Shared_Source_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Microsoft's Shared Source CLI/C#/Jscript License"
+    ]
+  }
+}

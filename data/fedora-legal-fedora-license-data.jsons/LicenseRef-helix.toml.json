@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-helix",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://helixcommunity.org/beula/\nhttps://enterprise.dejacode.com/licenses/public/helix/?_list_filters=q%3Dhelix#license-text\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Helix DNA Technology Binary Research Use License"
+    ],
+    "notes": "No source permissions, binary EULA  broken link\n"
+  }
+}

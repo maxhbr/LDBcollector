@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MIT-Modern-Variant",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Modern_Variants\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "13.1Modern Variants"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

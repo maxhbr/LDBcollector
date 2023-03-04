@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-mame",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://mamedev.org/legal.html\nhttps://web.archive.org/web/20140209072501/http://mamedev.org/legal.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "MAME License"
+    ],
+    "notes": "Commercial use restrictions. (project appears to have switched to GPLv2)\n"
+  }
+}

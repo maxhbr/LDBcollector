@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "GL2PS",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.geuz.org/gl2ps/COPYING.GL2PS\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "GL2PS License"
+    ],
+    "legacy-abbreviation": [
+      "GL2PS"
+    ]
+  }
+}

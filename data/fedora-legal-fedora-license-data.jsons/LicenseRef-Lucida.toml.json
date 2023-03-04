@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-Lucida",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Lucida Legal Notice"
+    ],
+    "legacy-abbreviation": [
+      "Lucida"
+    ]
+  }
+}

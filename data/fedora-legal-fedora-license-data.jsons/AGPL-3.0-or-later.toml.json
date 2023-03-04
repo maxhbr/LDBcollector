@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "AGPL-3.0-or-later",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.fsf.org/licensing/licenses/agpl-3.0.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Affero General Public License 3.0 or later"
+    ],
+    "legacy-abbreviation": [
+      "AGPLv3+"
+    ]
+  }
+}

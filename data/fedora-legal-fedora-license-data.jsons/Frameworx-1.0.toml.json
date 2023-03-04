@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "Frameworx-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://opensource.org/licenses/frameworx.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Frameworx License"
+    ],
+    "notes": "Non-free due to the limitation on charging for \"Value-Added Services\"\n"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "AMPAS",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Academy of Motion Picture Arts and Sciences BSD"
+    ],
+    "legacy-abbreviation": [
+      "AMPAS BSD"
+    ]
+  }
+}

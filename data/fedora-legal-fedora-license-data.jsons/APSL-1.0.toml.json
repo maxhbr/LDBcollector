@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "APSL-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Apple Public Source License 1.0"
+    ],
+    "notes": "This license is non-free. At one point, it could be found at\nhttp://www.opensource.apple.com/apsl/1.0.txt, but that link now\nredirects to APSL 2.0. A copy of the license text has been taken from\narchive.org's October 01, 2007 revision.\n"
+  }
+}

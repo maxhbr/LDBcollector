@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-STIX",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "STIX Fonts User License"
+    ],
+    "legacy-abbreviation": [
+      "STIX"
+    ]
+  }
+}

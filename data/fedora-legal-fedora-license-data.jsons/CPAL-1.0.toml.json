@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CPAL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://www.socialtext.net/open/index.cgi?cpal_license_in_wikitext\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "CPAL License 1.0"
+    ],
+    "legacy-abbreviation": [
+      "CPAL"
+    ]
+  }
+}

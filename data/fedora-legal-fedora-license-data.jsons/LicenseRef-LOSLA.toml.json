@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-LOSLA",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/LOSLA\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "LEGO Open Source License Agreement"
+    ],
+    "legacy-abbreviation": [
+      "LOSLA"
+    ]
+  }
+}

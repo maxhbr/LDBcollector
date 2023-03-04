@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Abstyles",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Abstyles\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Abstyles License"
+    ],
+    "legacy-abbreviation": [
+      "Abstyles"
+    ]
+  }
+}

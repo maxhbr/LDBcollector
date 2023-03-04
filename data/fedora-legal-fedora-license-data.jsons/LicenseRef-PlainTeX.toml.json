@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-PlainTeX",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/PlainTeX\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "PlainTeX License"
+    ],
+    "legacy-abbreviation": [
+      "PlainTeX"
+    ]
+  }
+}

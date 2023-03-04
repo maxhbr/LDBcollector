@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Unicode-DFS-2015",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Unicode\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Unicode License"
+    ],
+    "legacy-abbreviation": [
+      "Unicode"
+    ]
+  }
+}

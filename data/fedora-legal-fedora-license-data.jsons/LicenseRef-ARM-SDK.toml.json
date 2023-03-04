@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-ARM-SDK",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/ApplicationResponseMeasurementSDKLicense\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "License Agreement for Application Response Measurement (ARM) SDK"
+    ]
+  }
+}

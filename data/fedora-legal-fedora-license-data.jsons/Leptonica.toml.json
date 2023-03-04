@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Leptonica",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Leptonica\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Leptonica License"
+    ],
+    "legacy-abbreviation": [
+      "Leptonica"
+    ]
+  }
+}

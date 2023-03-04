@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "OFL-1.1-RFN",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "SIL Open Font License 1.1"
+    ],
+    "legacy-abbreviation": [
+      "OFL"
+    ]
+  }
+}

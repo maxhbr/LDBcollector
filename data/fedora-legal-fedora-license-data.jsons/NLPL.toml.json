@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "NLPL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/NLPL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "No Limit Public License"
+    ],
+    "legacy-abbreviation": [
+      "NLPL"
+    ]
+  }
+}

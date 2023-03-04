@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "VSL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/vovidapl.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Vovida Software License v. 1.0"
+    ],
+    "legacy-abbreviation": [
+      "VSL"
+    ]
+  }
+}

@@ -3,15 +3,15 @@ module Ldbcollector.Source.Cavil
     ( CavilLicenseChanges (..)
     ) where
 
-import Prelude hiding (unwords, lines)
-import Ldbcollector.Model hiding (decode, unwords, lines)
+import           Ldbcollector.Model    hiding (decode, lines, unwords)
+import           Prelude               hiding (lines, unwords)
 
-import qualified Data.ByteString as B
-import Data.Csv
-import qualified Data.Vector as V
-import           Data.Char (ord)
+import qualified Data.ByteString       as B
 import           Data.ByteString.Char8 (lines, split, unwords)
-import           Data.Text.Encoding as T
+import           Data.Char             (ord)
+import           Data.Csv
+import           Data.Text.Encoding    as T
+import qualified Data.Vector           as V
 
 
 -- data/openSUSE-cavil/lib/Cavil/resources/license_changes.txt

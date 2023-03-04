@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "psfrag",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/psfrag\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "psfrag License"
+    ],
+    "legacy-abbreviation": [
+      "psfrag"
+    ]
+  }
+}

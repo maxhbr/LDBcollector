@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Motosoto",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/motosoto.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Motosoto License"
+    ],
+    "legacy-abbreviation": [
+      "Motosoto"
+    ]
+  }
+}

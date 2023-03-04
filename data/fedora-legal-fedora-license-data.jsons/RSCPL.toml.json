@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "RSCPL",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://opensource.org/licenses/ricohpl.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Ricoh Source Code Public License"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "license": {
+    "expression": "HPND",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/historical.php\nhttps://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Old_Style_with_legal_disclaimer\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Historical Permission Notice and Disclaimer",
+      "MIT:Old Style with legal disclaimer"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

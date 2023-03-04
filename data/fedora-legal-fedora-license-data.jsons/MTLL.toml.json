@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MTLL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Matrix Template Library License"
+    ],
+    "legacy-abbreviation": [
+      "MTLL"
+    ]
+  }
+}

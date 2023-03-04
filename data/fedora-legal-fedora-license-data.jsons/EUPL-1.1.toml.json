@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "EUPL-1.1",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://ec.europa.eu/idabc/en/document/7774.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "European Union Public License 1.1"
+    ],
+    "legacy-abbreviation": [
+      "EUPL 1.1"
+    ]
+  }
+}

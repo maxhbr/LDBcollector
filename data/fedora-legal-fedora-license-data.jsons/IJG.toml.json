@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "IJG",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/IJG\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Independent JPEG Group License"
+    ],
+    "legacy-abbreviation": [
+      "IJG"
+    ]
+  }
+}

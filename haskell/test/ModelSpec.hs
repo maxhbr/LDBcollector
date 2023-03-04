@@ -5,11 +5,11 @@ import           Test.Hspec
 import           Test.QuickCheck
 
 import qualified Data.Graph.Inductive.Graph as G
-import qualified Data.Map as Map
+import qualified Data.Map                   as Map
 
-import Ldbcollector.Model 
+import           Ldbcollector.Model
 
-modelSpec = 
+modelSpec =
     describe "LicenseName" $ do
         it "Equals should behave as expected" $ do
             newLN "MIT" `shouldBe` newLN "MIT"

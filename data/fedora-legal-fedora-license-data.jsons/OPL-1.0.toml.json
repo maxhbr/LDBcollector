@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "OPL-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Open_Public_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Public License"
+    ]
+  }
+}

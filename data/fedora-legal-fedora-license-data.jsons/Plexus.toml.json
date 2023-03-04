@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Plexus",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Plexus Classworlds License"
+    ],
+    "legacy-abbreviation": [
+      "Plexus"
+    ]
+  }
+}

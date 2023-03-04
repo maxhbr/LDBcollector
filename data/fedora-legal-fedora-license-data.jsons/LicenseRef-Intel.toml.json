@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-Intel",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Intel_IPW3945_Daemon_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Intel IPW3945 Daemon License"
+    ],
+    "notes": "No source permissions, binary EULA\n"
+  }
+}

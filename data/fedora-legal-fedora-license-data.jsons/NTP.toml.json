@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "NTP",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#NTP_variant\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "MIT:NTP variant"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

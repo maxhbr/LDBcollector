@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "APL-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://opensource.org/licenses/apl1.0.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Adaptive Public License"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "license": {
+    "expression": "CC-BY-3.0",
+    "status": [
+      "allowed-content",
+      "allowed-documentation",
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Creative Commons Attribution license 3.0"
+    ],
+    "legacy-abbreviation": [
+      "CC-BY"
+    ]
+  }
+}

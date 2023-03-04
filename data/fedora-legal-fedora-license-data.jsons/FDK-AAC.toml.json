@@ -1,0 +1,18 @@
+{
+  "license": {
+    "expression": "FDK-AAC",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/FDK-AAC\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Fraunhofer FDK AAC License"
+    ],
+    "legacy-abbreviation": [
+      "FDK-AAC"
+    ],
+    "usage": "Allowed only in continued Fedora packaging of fdk-aac-free.\n"
+  }
+}

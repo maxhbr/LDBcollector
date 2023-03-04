@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "OCCT-exception-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Open_CASCADE_Technology_Public_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open CASCADE Technology Public License"
+    ]
+  }
+}

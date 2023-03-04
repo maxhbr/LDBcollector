@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ECL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/ecl1.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Educational Community License 1.0"
+    ],
+    "legacy-abbreviation": [
+      "ECL 1.0"
+    ]
+  }
+}

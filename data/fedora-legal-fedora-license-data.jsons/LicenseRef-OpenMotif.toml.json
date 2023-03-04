@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-OpenMotif",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.opengroup.org/openmotif/license/\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Open Motif Public End User License"
+    ],
+    "notes": "Commercial use restrictions\n"
+  }
+}

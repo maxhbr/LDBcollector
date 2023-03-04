@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "FSFUL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "FSF Unlimited License"
+    ],
+    "legacy-abbreviation": [
+      "FSFUL"
+    ]
+  }
+}

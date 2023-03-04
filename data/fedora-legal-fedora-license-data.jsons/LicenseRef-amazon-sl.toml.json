@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-amazon-sl",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://aws.amazon.com/asl/\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Amazon Software License"
+    ],
+    "notes": "Section 3.3 is a clear field-of-use restriction\n"
+  }
+}

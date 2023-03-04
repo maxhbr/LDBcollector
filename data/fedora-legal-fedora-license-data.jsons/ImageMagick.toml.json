@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ImageMagick",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.imagemagick.org/script/license.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "ImageMagick License"
+    ],
+    "legacy-abbreviation": [
+      "ImageMagick"
+    ]
+  }
+}

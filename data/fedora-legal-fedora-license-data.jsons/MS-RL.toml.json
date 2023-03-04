@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MS-RL",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.microsoft.com/opensource/licenses.mspx#Ms-RL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Microsoft Reciprocal License"
+    ],
+    "legacy-abbreviation": [
+      "MS-RL"
+    ]
+  }
+}

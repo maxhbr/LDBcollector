@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "App-s2p",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/App-s2p\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "App::s2p License"
+    ],
+    "legacy-abbreviation": [
+      "App-s2p"
+    ]
+  }
+}

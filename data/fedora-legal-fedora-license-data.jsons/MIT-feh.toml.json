@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MIT-feh",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/MIT#feh\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "feh License"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

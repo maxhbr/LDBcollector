@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CrystalStacker",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/CrystalStacker\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Crystal Stacker License"
+    ],
+    "legacy-abbreviation": [
+      "Crystal Stacker"
+    ]
+  }
+}

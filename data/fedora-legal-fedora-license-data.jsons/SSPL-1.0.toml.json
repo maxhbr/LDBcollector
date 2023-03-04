@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "SSPL-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/SSPL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Server Side Public License v1 (SSPL)"
+    ]
+  }
+}

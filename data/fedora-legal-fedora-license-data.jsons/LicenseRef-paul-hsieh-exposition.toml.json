@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-paul-hsieh-exposition",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.azillionmonkeys.com/qed/license-exposition.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Paul Hsieh Exposition License"
+    ]
+  }
+}

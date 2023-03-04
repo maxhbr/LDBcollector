@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ClArtistic",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/ArtisticClarified\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Artistic (clarified)"
+    ],
+    "legacy-abbreviation": [
+      "Artistic clarified"
+    ]
+  }
+}

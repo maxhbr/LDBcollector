@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-Punknova",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Punknova Font License"
+    ],
+    "legacy-abbreviation": [
+      "Punknova"
+    ]
+  }
+}

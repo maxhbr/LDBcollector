@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "gSOAP-1.3b",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.cs.fsu.edu/~engelen/license.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "gSOAP Public License"
+    ],
+    "notes": "Please note that while the \"gSOAP Public License\" is non-free, the \"gSOAP\nToolkit\" is dual licensed as GPLv2 or gSOAP Public License.\n"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "DOC",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.cs.wustl.edu/~schmidt/ACE-copying.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "DOC License"
+    ],
+    "legacy-abbreviation": [
+      "DOC"
+    ]
+  }
+}

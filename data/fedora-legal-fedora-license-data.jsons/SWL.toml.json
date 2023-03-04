@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "SWL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/SWL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Scheme Widget Library (SWL) Software License Agreement"
+    ],
+    "legacy-abbreviation": [
+      "SWL"
+    ]
+  }
+}

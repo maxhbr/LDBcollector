@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "SGI-B-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://oss.sgi.com/projects/FreeB/\nhttps://enterprise.dejacode.com/licenses/public/sgi-fslb-1.0/?_list_filters=q%3Dsgi#license-text\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "SGI Free Software License B 1.1 or older"
+    ],
+    "notes": "Version 2.0 is MIT, free and GPL compat.\n"
+  }
+}

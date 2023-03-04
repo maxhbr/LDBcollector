@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-agere-sla",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Agere_LT_Modem_Driver_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Agere LT Modem Driver License"
+    ],
+    "notes": "This license is non-free. A copy of this license was obtained from\nhttp://www.mepis.org/node/10356 and is preserved here for reference.\n"
+  }
+}

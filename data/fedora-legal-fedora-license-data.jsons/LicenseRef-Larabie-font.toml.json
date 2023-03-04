@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-Larabie-font",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/LarabieFontsLicense\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Larabie Fonts License"
+    ],
+    "notes": "Cannot modify\n"
+  }
+}

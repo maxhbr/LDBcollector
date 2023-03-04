@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-SystemC-3.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.systemc.org/about/org_docs/license/\nhttp://web.archive.org/web/20111128143257/http://www.systemc.org/about/org_docs/license/\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "SystemC Open Source License"
+    ],
+    "notes": "link broken, last time this page was recorded was before Accellera acquisition.\n\n"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-Spin",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.spinroot.com/spin/spin_license.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Spin Commercial License"
+    ]
+  }
+}

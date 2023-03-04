@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "BSD-4-Clause",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/BSD#BSDwithAdvertising\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "BSD License (Advertising Variant)"
+    ],
+    "legacy-abbreviation": [
+      "BSD with advertising"
+    ]
+  }
+}

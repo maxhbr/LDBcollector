@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "PHP-3.01",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.php.net/license/3_01.txt\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "PHP License v3.0"
+    ],
+    "legacy-abbreviation": [
+      "PHP"
+    ]
+  }
+}

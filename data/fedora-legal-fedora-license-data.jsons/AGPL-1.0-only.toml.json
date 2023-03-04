@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "AGPL-1.0-only",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.affero.org/oagpl.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Affero General Public License 1.0"
+    ],
+    "legacy-abbreviation": [
+      "AGPLv1"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "TOSL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/TOSL\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Trusster Open Source License"
+    ],
+    "legacy-abbreviation": [
+      "TOSL"
+    ]
+  }
+}

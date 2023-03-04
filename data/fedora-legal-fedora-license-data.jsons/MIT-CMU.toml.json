@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MIT-CMU",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "CMU License (BSD like)"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "0BSD",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/ZeroClauseBSD\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Zero-Clause BSD"
+    ],
+    "legacy-abbreviation": [
+      "0BSD"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ANTLR-PD",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/ANTLR-PD\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "ANTLR Software Rights Notice"
+    ],
+    "legacy-abbreviation": [
+      "ANTLR-PD"
+    ]
+  }
+}

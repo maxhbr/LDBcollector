@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-squeak",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://squeak.org/SqueakLicense/\nhttps://enterprise.dejacode.com/licenses/public/squeak/?_list_filters=q%3Dsqueak#license-text\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Squeak License"
+    ],
+    "notes": "link broken\n"
+  }
+}

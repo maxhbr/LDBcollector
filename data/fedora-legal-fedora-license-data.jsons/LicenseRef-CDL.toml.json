@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-CDL",
+    "status": [
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Apple's Common Documentation License, Version 1.0"
+    ],
+    "legacy-abbreviation": [
+      "CDL"
+    ]
+  }
+}

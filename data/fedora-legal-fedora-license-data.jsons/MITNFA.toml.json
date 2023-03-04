@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MITNFA",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/MITNFA\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "MIT +no-false-attribs license"
+    ],
+    "legacy-abbreviation": [
+      "MITNFA"
+    ]
+  }
+}

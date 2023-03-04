@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "IPA",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "IPA Font License"
+    ],
+    "legacy-abbreviation": [
+      "IPA"
+    ]
+  }
+}

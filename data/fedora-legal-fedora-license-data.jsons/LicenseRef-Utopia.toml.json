@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-Utopia",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Adobe/TUG Utopia license agreement"
+    ],
+    "legacy-abbreviation": [
+      "Utopia"
+    ]
+  }
+}

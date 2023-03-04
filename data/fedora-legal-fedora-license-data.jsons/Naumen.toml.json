@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Naumen",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/naumen.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Naumen Public License"
+    ],
+    "legacy-abbreviation": [
+      "Naumen"
+    ]
+  }
+}

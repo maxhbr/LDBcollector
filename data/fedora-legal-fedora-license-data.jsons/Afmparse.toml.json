@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Afmparse",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Afmparse\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Afmparse License"
+    ],
+    "legacy-abbreviation": [
+      "Afmparse"
+    ]
+  }
+}

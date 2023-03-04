@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "RPL-1.0",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://opensource.org/licenses/rpl1.0\nhttps://opensource.org/licenses/RPL-1.5\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Reciprocal Public License"
+    ]
+  }
+}

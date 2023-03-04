@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "mpich2",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/MIT\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "mpich2 License"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

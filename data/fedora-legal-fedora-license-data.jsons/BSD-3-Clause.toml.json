@@ -1,0 +1,21 @@
+{
+  "license": {
+    "expression": "BSD-3-Clause",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD\nhttps://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License\nhttps://www.unidata.ucar.edu/software/netcdf/copyright.html\nhttp://www.eclipse.org/org/documents/edl-v10.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "BSD License (no advertising)",
+      "Metasploit Framework License (post 2006)",
+      "NetCDF License",
+      "Eclipse Distribution License 1.0"
+    ],
+    "legacy-abbreviation": [
+      "BSD",
+      "NetCDF"
+    ]
+  }
+}

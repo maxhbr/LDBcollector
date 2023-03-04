@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Gnuplot",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Gnuplot\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "gnuplot License"
+    ],
+    "legacy-abbreviation": [
+      "gnuplot"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "JSON",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.json.org/license.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "JSON License"
+    ],
+    "notes": "The clause \"The Software shall be used for Good, not Evil.\" is impossible to\nparse or comply with.\n"
+  }
+}

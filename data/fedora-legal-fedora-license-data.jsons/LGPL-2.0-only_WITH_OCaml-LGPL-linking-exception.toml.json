@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "LGPL-2.0-only WITH OCaml-LGPL-linking-exception",
+    "status": [
+      "allowed"
+    ]
+  }
+}

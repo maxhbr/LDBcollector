@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-BeOpen",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/BeOpen\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "BeOpen Open Source License Agreement Version 1"
+    ],
+    "legacy-abbreviation": [
+      "BeOpen"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "Minpack",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Minpack License"
+    ],
+    "legacy-abbreviation": [
+      "Minpack"
+    ]
+  }
+}

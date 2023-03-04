@@ -1,4 +1,4 @@
-{-# LANGUAGE LambdaCase                #-}
+{-# LANGUAGE LambdaCase #-}
 module Ldbcollector.Model.LicenseGraph
   ( LicenseGraphNode (..)
   , mkLGValue
@@ -13,41 +13,39 @@ module Ldbcollector.Model.LicenseGraph
   , stderrLog
   ) where
 
-import MyPrelude
+import           MyPrelude
 
-import qualified Data.Graph.Inductive.Basic as G
-import qualified Data.Graph.Inductive.Graph as G
-import qualified Data.Graph.Inductive.Monad as G
+import qualified Control.Monad.State               as MTL
+import           Data.Aeson                        as A
+import           Data.Aeson.Encode.Pretty          as A
+import qualified Data.ByteString.Char8             as B (unpack)
+import qualified Data.ByteString.Lazy              as BL (toStrict)
+import qualified Data.Graph.Inductive.Basic        as G
+import qualified Data.Graph.Inductive.Graph        as G
+import qualified Data.Graph.Inductive.Monad        as G
 import qualified Data.Graph.Inductive.PatriciaTree as G
-import qualified Data.Graph.Inductive.Query.DFS as G
-import           Data.Aeson as A
-import           Data.Aeson.Encode.Pretty as A
-import qualified Control.Monad.State as MTL
-import qualified Data.Map as Map
-import qualified Data.Vector as V
-import           System.Console.Pretty          ( Color(Green)
-                                                , color
-                                                )
-import qualified System.FilePath               as FP
-import           System.IO                      ( hPutStrLn
-                                                , stderr
-                                                )
-import           Data.String (IsString(..))
-import qualified Data.ByteString.Lazy as BL (toStrict)
-import qualified Data.ByteString.Char8 as B (unpack)
+import qualified Data.Graph.Inductive.Query.DFS    as G
+import qualified Data.Map                          as Map
+import           Data.String                       (IsString (..))
+import qualified Data.Vector                       as V
+import           System.Console.Pretty             (Color (Green), color)
+import qualified System.FilePath                   as FP
+import           System.IO                         (hPutStrLn, stderr)
 
 
-import Ldbcollector.Model.LicenseName
+import           Ldbcollector.Model.LicenseName
 
 data LicenseGraphNode where
     LicenseName :: LicenseName -> LicenseGraphNode
     Data :: Text -> LicenseGraphNode
     LGValue :: A.Value -> LicenseGraphNode
+    Vec :: [LicenseGraphNode] -> LicenseGraphNode
     deriving (Eq, Ord)
 instance Show LicenseGraphNode where
     show (LicenseName ln) = show ln
-    show (Data d) = show d
-    show (LGValue v) = B.unpack . BL.toStrict $ A.encodePretty v
+    show (Data d)         = show d
+    show (LGValue v)      = B.unpack . BL.toStrict $ A.encodePretty v
+    show (Vec v)          = show v
 mkLGValue :: ToJSON a => a -> LicenseGraphNode
 mkLGValue = LGValue . toJSON
 instance IsString LicenseGraphNode where
@@ -61,8 +59,8 @@ data LicenseGraphEdge where
 type LicenseGraphType = G.Gr LicenseGraphNode LicenseGraphEdge
 data LicenseGraph
     = LicenseGraph
-    { _gr :: G.Gr LicenseGraphNode LicenseGraphEdge
-    , _node_map :: Map.Map LicenseGraphNode G.Node
+    { _gr           :: G.Gr LicenseGraphNode LicenseGraphEdge
+    , _node_map     :: Map.Map LicenseGraphNode G.Node
     , _node_map_rev :: Map.Map G.Node LicenseGraphNode
     }
 instance Show LicenseGraph where
@@ -114,7 +112,7 @@ addEdge (a,b,e) = do
     unless (na == nb) $ do
         MTL.modify
             (\state -> state { _gr = (na, nb, e) `G.insEdge` _gr state })
-        when (e == Same) $ 
+        when (e == Same) $
             MTL.modify
                 (\state -> state { _gr = (nb, na, e) `G.insEdge` _gr state })
     return na
@@ -125,7 +123,7 @@ addEdges = V.mapM addEdge
 
 focus' :: Vector G.Node -> LicenseGraph -> LicenseGraph
 focus' needles (LicenseGraph gr node_map node_map_rev) = let
-        
+
         reachableForNeedle needle = G.reachable needle gr ++ G.reachable needle (G.grev gr)
         allReachable = concatMap reachableForNeedle (V.toList needles)
         isReachable n = n `elem` allReachable
@@ -141,7 +139,7 @@ focus needles inner = do
     frozen <- MTL.get
     (a,_) <- (MTL.lift . runLicenseGraphM' frozen) $ do
         stderrLog "focus graph"
-        needleIds <- addNodes needles 
+        needleIds <- addNodes needles
         state <- MTL.modify (focus' needleIds)
         stderrLog "work on focused graph"
         inner

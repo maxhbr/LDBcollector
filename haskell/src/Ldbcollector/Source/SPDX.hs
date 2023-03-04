@@ -3,21 +3,19 @@ module Ldbcollector.Source.SPDX
   ( SPDXLicenseIds(SPDXLicenseIds)
   ) where
 
-import Ldbcollector.Model 
 import qualified Data.Graph.Inductive.Graph as G
+import           Ldbcollector.Model
 
-import Distribution.SPDX.Extra (LicenseId)
+import qualified Data.Vector as V
+import           Distribution.SPDX.Extra    (LicenseId)
 
 data SPDXLicenseIds = SPDXLicenseIds
 
 instance Source SPDXLicenseIds where
-    applySource _ = let
+    getTask _ = return $ let
             spdxLicenseIds :: [LicenseId]
             spdxLicenseIds = enumFrom (toEnum 0)
-            fun :: LicenseId -> LicenseGraphM G.Node
-            fun licenseId = let 
-                    nameAsText = pack $ show licenseId
-                    name = LicenseName $ newLN nameAsText
-                    namespacedName = LicenseName $ newNLN "SPDX" nameAsText
-                in addEdge (name, namespacedName, Better)
-        in mapM_ fun spdxLicenseIds
+            getTaskForId licenseId =
+                Edge ((Add . LicenseName . newLN . pack . show) licenseId) Better $
+                    Add ((LicenseName . newNLN "SPDX" . pack . show) licenseId)
+        in AddTs . V.fromList $ map getTaskForId spdxLicenseIds

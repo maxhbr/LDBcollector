@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "ISC",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://www.isc.org/software/license\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "ISC License (Bind, DHCP Server)"
+    ],
+    "legacy-abbreviation": [
+      "ISC"
+    ]
+  }
+}

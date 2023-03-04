@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-Public-use",
+    "status": [
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Public Use License, v1.0"
+    ],
+    "legacy-abbreviation": [
+      "Public Use"
+    ]
+  }
+}

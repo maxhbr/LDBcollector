@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "PSF-2.0",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Python License"
+    ],
+    "legacy-abbreviation": [
+      "Python"
+    ]
+  }
+}

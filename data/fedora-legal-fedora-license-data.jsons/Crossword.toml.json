@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Crossword",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Crossword\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Crossword License"
+    ],
+    "legacy-abbreviation": [
+      "Crossword"
+    ]
+  }
+}

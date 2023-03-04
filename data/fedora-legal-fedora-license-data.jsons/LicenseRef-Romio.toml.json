@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-Romio",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Romio_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Romio License"
+    ],
+    "legacy-abbreviation": [
+      "Romio"
+    ]
+  }
+}

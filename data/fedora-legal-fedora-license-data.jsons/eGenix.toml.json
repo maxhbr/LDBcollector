@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "eGenix",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "eGenix.com Public License 1.1.0"
+    ],
+    "legacy-abbreviation": [
+      "eGenix"
+    ]
+  }
+}

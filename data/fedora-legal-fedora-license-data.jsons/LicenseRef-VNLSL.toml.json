@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-VNLSL",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Vita_Nuova_Liberal_Source_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Vita Nuova Liberal Source License"
+    ],
+    "legacy-abbreviation": [
+      "VNLSL"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Barr",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Barr\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Barr License"
+    ],
+    "legacy-abbreviation": [
+      "Barr"
+    ]
+  }
+}

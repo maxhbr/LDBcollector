@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "NAIST-2003",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "mecab-ipadic license"
+    ],
+    "legacy-abbreviation": [
+      "mecab-ipadic"
+    ]
+  }
+}

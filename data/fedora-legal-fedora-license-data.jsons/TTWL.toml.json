@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "TTWL",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Text-Tabs+Wrap License"
+    ],
+    "legacy-abbreviation": [
+      "TTWL"
+    ]
+  }
+}

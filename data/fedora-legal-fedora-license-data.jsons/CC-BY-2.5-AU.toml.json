@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "CC-BY-2.5-AU",
+    "status": [
+      "allowed-content",
+      "allowed-documentation"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Creative Commons Attribution license 2.5 Australia"
+    ],
+    "legacy-abbreviation": [
+      "CC-BY"
+    ]
+  }
+}

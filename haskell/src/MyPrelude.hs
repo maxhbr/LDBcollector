@@ -5,27 +5,27 @@ module MyPrelude
     , createParentDirectoryIfNotExists
     ) where
 
-import           Prelude as X
-import           GHC.Generics as X
-import           Control.Applicative as X
-import           Control.Monad as X
-import           Data.Aeson as X
-import           Data.ByteString.Lazy as X (ByteString)
-import           Data.List as X
-import           Data.Map as X (Map)
-import           Data.Maybe as X
-import           Data.Monoid as X
-import           Data.Text as X (Text, unpack, pack)
-import           Data.Vector as X (Vector)
-import           Debug.Trace as X (trace)
+import           Control.Applicative        as X
+import           Control.Monad              as X
+import           Data.Aeson                 as X
+import           Data.ByteString.Lazy       as X (ByteString)
+import           Data.List                  as X
+import           Data.Map                   as X (Map)
+import           Data.Maybe                 as X
+import           Data.Monoid                as X
+import           Data.Text                  as X (Text, pack, unpack)
+import           Data.Vector                as X (Vector)
+import           Debug.Trace                as X (trace)
+import           GHC.Generics               as X
+import           Prelude                    as X
 -- import           Text.Pandoc.Builder as X (Pandoc, Blocks, Inlines)
-import           System.Directory as X
-import           System.FilePath as X
-import           System.IO as X (hPutStrLn, stderr)
-import           System.FilePath.Glob as X (glob)
-import           Data.Graph.Inductive.Graph as X (Node, LNode)
-import           Control.Monad.State as X (lift)
-import           Data.String as X (IsString (fromString))
+import           Control.Monad.State        as X (lift)
+import           Data.Graph.Inductive.Graph as X (LNode, Node)
+import           Data.String                as X (IsString (fromString))
+import           System.Directory           as X
+import           System.FilePath            as X
+import           System.FilePath.Glob       as X (glob)
+import           System.IO                  as X (hPutStrLn, stderr)
 
 tShow :: (Show a) => a -> Text
 tShow = pack . show

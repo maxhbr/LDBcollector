@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Saxpath",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Saxpath_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Saxpath License"
+    ],
+    "legacy-abbreviation": [
+      "Saxpath"
+    ]
+  }
+}

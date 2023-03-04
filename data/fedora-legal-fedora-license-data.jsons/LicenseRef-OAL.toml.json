@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-OAL",
+    "status": [
+      "allowed-content"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "EFF Open Audio License v1"
+    ],
+    "legacy-abbreviation": [
+      "OAL"
+    ]
+  }
+}

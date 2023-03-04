@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Noweb",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Noweb\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Noweb License"
+    ],
+    "legacy-abbreviation": [
+      "Noweb"
+    ]
+  }
+}

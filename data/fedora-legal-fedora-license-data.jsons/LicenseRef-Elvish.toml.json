@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-Elvish",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Elvish Font License"
+    ],
+    "legacy-abbreviation": [
+      "Elvish"
+    ]
+  }
+}

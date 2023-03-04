@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-hessla",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.hacktivismo.com/about/hessla.php\nhttps://enterprise.dejacode.com/licenses/public/hessla/?_list_filters=q%3Dhacktivismo#license-text\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Hacktivismo Enhanced-Source Software License Agreement"
+    ],
+    "notes": "broken link\n"
+  }
+}

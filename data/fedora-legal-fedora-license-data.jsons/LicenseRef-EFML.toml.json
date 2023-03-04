@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-EFML",
+    "status": [
+      "allowed-content"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Ethymonics Free Music License"
+    ],
+    "legacy-abbreviation": [
+      "EFML"
+    ]
+  }
+}

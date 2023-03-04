@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-AMS",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "AMS Bluesky Font License"
+    ],
+    "legacy-abbreviation": [
+      "AMS"
+    ]
+  }
+}

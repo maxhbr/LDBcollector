@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-uofu-rfpl",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt\nhttps://enterprise.dejacode.com/licenses/public/uofu-rfpl/#license-text\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "University of Utah Public License"
+    ],
+    "notes": "link broken\n"
+  }
+}

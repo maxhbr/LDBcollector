@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-DoubleStroke",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "DoubleStroke Font License"
+    ],
+    "legacy-abbreviation": [
+      "DoubleStroke"
+    ]
+  }
+}

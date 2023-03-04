@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-GeoGratis",
+    "status": [
+      "allowed-content"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "GeoGratis Licence Agreement"
+    ],
+    "legacy-abbreviation": [
+      "GeoGratis"
+    ]
+  }
+}

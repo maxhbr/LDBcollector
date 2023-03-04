@@ -1,0 +1,18 @@
+{
+  "license": {
+    "expression": "CC0-1.0",
+    "status": [
+      "allowed-content"
+    ],
+    "url": "http://creativecommons.org/publicdomain/zero/1.0/legalcode\n",
+    "usage": "Existing uses of CC0-1.0 on code files in Fedora packages prior to\n2022-08-01, and subsequent upstream versions of those files in those\npackages, continue to be allowed. We encourage Fedora package\nmaintainers to ask upstreams to relicense such files.\n\nUpstream application of CC0-1.0 to trivial, noncreative, unoriginal,\nand nonexpressive material as part of an effort to achieve conformance\nto the REUSE specification (https://reuse.software/) (for example,\nCI/CD configuration files) is permitted regardless of whether such\nmaterial would normally be classified as \"content\". \n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Creative Commons Zero 1.0 Universal"
+    ],
+    "legacy-abbreviation": [
+      "CC0"
+    ]
+  }
+}

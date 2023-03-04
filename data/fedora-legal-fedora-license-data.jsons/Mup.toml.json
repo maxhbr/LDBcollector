@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Mup",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Mup\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Mup License"
+    ],
+    "legacy-abbreviation": [
+      "Mup"
+    ]
+  }
+}

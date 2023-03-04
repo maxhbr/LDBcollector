@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "GPL-3.0-or-later",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.fsf.org/licensing/licenses/gpl.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU General Public License v3.0 or later"
+    ],
+    "legacy-abbreviation": [
+      "GPLv3+"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Vim",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://vimdoc.sourceforge.net/htmldoc/uganda.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Vim License"
+    ],
+    "legacy-abbreviation": [
+      "Vim"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-TORQUE",
+    "status": [
+      "not-allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "TORQUE v2.5+ Software License v1.0"
+    ],
+    "notes": "Commercial use restriction. No link or license text found for v1.0 (v1.1 is allowed in Fedora)\n"
+  }
+}

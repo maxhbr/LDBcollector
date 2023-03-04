@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "xpp",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/xpp\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "XPP License"
+    ],
+    "legacy-abbreviation": [
+      "xpp"
+    ]
+  }
+}

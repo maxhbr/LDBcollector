@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Condor-1.1",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.cs.wisc.edu/condor/condor-public-license.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Condor Public License"
+    ],
+    "legacy-abbreviation": [
+      "Condor"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "license": {
+    "expression": "LicenseRef-9wm",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "http://unauthorised.org/dhog/9wm/README\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "9wm License (Original)"
+    ],
+    "notes": "The argument that there's a strongly-implied right to modify is unlikely to fly\nin many countries outside the US. NOTE: 9wm has since been relicensed to MIT.\n"
+  }
+}

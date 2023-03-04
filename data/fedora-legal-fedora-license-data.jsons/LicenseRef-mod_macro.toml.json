@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-mod_macro",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.cri.ensmp.fr/~coelho/mod_macro/mod_macro/LICENSE\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "mod_macro License"
+    ],
+    "legacy-abbreviation": [
+      "mod_macro"
+    ]
+  }
+}

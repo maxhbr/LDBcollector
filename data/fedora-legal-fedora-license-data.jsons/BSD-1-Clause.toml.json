@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "BSD-1-Clause",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://spdx.org/licenses/BSD-1-Clause.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "BSD 1 Clause license"
+    ],
+    "legacy-abbreviation": [
+      "BSD"
+    ]
+  }
+}

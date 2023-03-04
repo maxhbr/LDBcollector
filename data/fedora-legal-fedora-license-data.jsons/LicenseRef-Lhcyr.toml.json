@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-Lhcyr",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Lhcyr\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Lhcyr License"
+    ],
+    "legacy-abbreviation": [
+      "Lhcyr"
+    ]
+  }
+}

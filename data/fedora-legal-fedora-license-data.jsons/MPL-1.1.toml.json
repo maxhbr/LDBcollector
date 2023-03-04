@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MPL-1.1",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.mozilla.org/MPL/MPL-1.1.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Mozilla Public License v1.1"
+    ],
+    "legacy-abbreviation": [
+      "MPLv1.1"
+    ]
+  }
+}

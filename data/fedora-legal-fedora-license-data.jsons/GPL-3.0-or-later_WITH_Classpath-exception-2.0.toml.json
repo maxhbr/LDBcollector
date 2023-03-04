@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "GPL-3.0-or-later WITH Classpath-exception-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU General Public License v3.0 or later, with Classpath exception"
+    ],
+    "legacy-abbreviation": [
+      "GPLv3+ with exceptions"
+    ]
+  }
+}

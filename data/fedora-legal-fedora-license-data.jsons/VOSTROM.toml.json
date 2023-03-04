@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "VOSTROM",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/VOSTROM\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "VOSTROM Public License for Open Source"
+    ],
+    "legacy-abbreviation": [
+      "VOSTROM"
+    ]
+  }
+}

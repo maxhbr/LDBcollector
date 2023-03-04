@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "XSkat",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/XSkat_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "XSkat License"
+    ],
+    "legacy-abbreviation": [
+      "XSkat"
+    ]
+  }
+}

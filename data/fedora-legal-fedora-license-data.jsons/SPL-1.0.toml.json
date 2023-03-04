@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "SPL-1.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Sun_Public_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Sun Public License"
+    ],
+    "legacy-abbreviation": [
+      "SPL"
+    ]
+  }
+}

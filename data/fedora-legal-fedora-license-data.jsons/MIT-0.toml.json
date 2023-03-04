@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "MIT-0",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/MIT-0\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "MIT No Attribution (MIT-0)"
+    ],
+    "legacy-abbreviation": [
+      "MIT-0"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "BitTorrent-1.1",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "BitTorrent License"
+    ],
+    "legacy-abbreviation": [
+      "BitTorrent"
+    ]
+  }
+}

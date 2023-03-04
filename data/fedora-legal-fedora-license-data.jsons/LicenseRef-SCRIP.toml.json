@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-SCRIP",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/SCRIP\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "SCRIP License"
+    ],
+    "legacy-abbreviation": [
+      "SCRIP"
+    ]
+  }
+}

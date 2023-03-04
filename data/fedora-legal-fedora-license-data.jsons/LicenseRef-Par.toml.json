@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-Par",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Par\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Par License"
+    ],
+    "legacy-abbreviation": [
+      "Par"
+    ]
+  }
+}

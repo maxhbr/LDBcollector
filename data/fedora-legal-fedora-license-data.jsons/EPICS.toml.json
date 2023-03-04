@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "EPICS",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.aps.anl.gov/epics/license/open.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "EPICS Open License"
+    ],
+    "legacy-abbreviation": [
+      "EPICS"
+    ]
+  }
+}

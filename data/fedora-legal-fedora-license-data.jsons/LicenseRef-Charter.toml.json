@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-Charter",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Charter License"
+    ],
+    "legacy-abbreviation": [
+      "Charter"
+    ]
+  }
+}

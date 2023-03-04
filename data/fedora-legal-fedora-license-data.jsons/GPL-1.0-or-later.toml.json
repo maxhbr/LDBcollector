@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "GPL-1.0-or-later",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU General Public License (no version)",
+      "GNU General Public License v1.0 or later"
+    ],
+    "legacy-abbreviation": [
+      "GPL+"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "AAL",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.org/licenses/attribution.php\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Attribution Assurance License"
+    ],
+    "legacy-abbreviation": [
+      "AAL"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-Hershey",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Hershey Font License"
+    ],
+    "legacy-abbreviation": [
+      "Hershey"
+    ]
+  }
+}

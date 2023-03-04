@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LicenseRef-CPM",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/CPM\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "CP/M License"
+    ],
+    "legacy-abbreviation": [
+      "CPM"
+    ]
+  }
+}

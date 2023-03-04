@@ -1,0 +1,14 @@
+{
+  "license": {
+    "expression": "LicenseRef-Siren14",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Siren14_Licensing_Agreement\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "Siren14 License Agreement"
+    ]
+  }
+}

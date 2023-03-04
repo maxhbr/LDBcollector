@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "LicenseRef-LPPL",
+    "status": [
+      "allowed-fonts"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "GUST Font License"
+    ],
+    "legacy-abbreviation": [
+      "LPPL"
+    ]
+  }
+}

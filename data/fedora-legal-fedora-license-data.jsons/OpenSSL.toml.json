@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "OpenSSL",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://www.sdisw.com/openssl.htm\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "OpenSSL License"
+    ],
+    "legacy-abbreviation": [
+      "OpenSSL"
+    ]
+  }
+}
