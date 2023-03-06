@@ -118,3 +118,11 @@ status = [ "" ]
 # old Fedora licensing wiki page. 
 #notes = '''
 #'''
+
+# Some licenses have only one one-to-one mapping, but despite this it should not
+# be used for automatic conversion. The value is the warning the tooling should emit
+# when user wants to automatically convert the license
+# This is temporary field. It will be removed in future - when Fedora fully
+# migrates to SPDX.
+#reason-to-not-allow-automatic-conversion= '''
+#'''
