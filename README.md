@@ -1,5 +1,7 @@
 # LicenseRec
 
+这是[北京大学开源分析实验室](https://github.com/osslab-pku/)研发的工具，以帮助开源许可证的选择.
+
 ![Image text](https://github.com/osslab-pku/RecLicense/blob/1caf4372960a9a54cfcbfbbbdf9ee86ab922d61a/frontend/src/assets/tool.png)
 
 The tool is available at [licenserec.com](https://licenserec.com/) and the demonstration video is at [video.licenserec.com](https://video.licenserec.com/).
