@@ -9,9 +9,7 @@ import           MyPrelude
 
 import qualified Data.Vector                     as V
 
-import           Control.Monad                   (liftM2)
 import           Ldbcollector.Model.LicenseGraph
-import           Ldbcollector.Model.LicenseName
 
 data LicenseGraphTask where
     Noop :: LicenseGraphTask
@@ -48,16 +46,16 @@ applyEdgeTask left edge right = do
     rightNodes <- applyTask' right
     let pairs = liftM2 (,) leftNodes rightNodes
     let edges = V.map (\(leftNode,rightNode) -> (leftNode,rightNode,edge)) pairs
-    addEdges edges
+    _ <- addEdges edges
     return (leftNodes, rightNodes)
 
 applyTask' :: LicenseGraphTask -> LicenseGraphM (Vector LicenseGraphNode)
 applyTask' Noop = pure V.empty
 applyTask' (Add node) = do
-    addNode node
+    _ <- addNode node
     return (V.singleton node)
 applyTask' (Adds nodes) = do
-    addNodes nodes
+    _ <- addNodes nodes
     return nodes
 applyTask' (Edge left edge right) = do
     (leftNodes, _) <- applyEdgeTask left edge right

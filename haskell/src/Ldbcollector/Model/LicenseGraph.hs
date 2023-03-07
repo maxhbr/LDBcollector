@@ -1,10 +1,12 @@
 {-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Model.LicenseGraph
   ( LicenseGraphNode (..)
-  , mkLGValue
+  , mkLGValue, isEmptyLGN
   , LicenseGraphEdge (..)
   , LicenseGraph (..), LicenseGraphType
   , getLicenseGraphLicenseNames
+  , getLicenseGraphSize
   , LicenseGraphM
   , runLicenseGraphM, runLicenseGraphM'
   , addNode, addNodes
@@ -49,6 +51,13 @@ instance Show LicenseGraphNode where
     show (Vec v)          = show v
 mkLGValue :: ToJSON a => a -> LicenseGraphNode
 mkLGValue = LGValue . toJSON
+isEmptyLGN :: LicenseGraphNode -> Bool
+isEmptyLGN (Vec []) = True
+isEmptyLGN (Vec lgns) = all isEmptyLGN lgns
+isEmptyLGN (Data d) = d == ""
+isEmptyLGN (Rule r) = r == ""
+isEmptyLGN (LGValue v) = v == A.Null
+isEmptyLGN _       = False
 instance IsString LicenseGraphNode where
     fromString s = Data (pack s)
 data LicenseGraphEdge where
@@ -114,16 +123,20 @@ addNodes :: Vector LicenseGraphNode -> LicenseGraphM (Vector G.Node)
 addNodes = V.mapM addNode
 
 addEdge :: (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> LicenseGraphM G.Node
-addEdge (a,b,e) = do
-    na <- addNode a
-    nb <- addNode b
-    unless (na == nb) $ do
-        MTL.modify
-            (\state -> state { _gr = (na, nb, e) `G.insEdge` _gr state })
-        when (e == Same) $
-            MTL.modify
-                (\state -> state { _gr = (nb, na, e) `G.insEdge` _gr state })
-    return na
+addEdge = let
+        addEdge' :: G.LEdge LicenseGraphEdge -> LicenseGraphM ()
+        addEdge' edge = do
+            alreadyHasTheEdge <- MTL.gets ((`G.hasLEdge` edge) . _gr)
+            unless alreadyHasTheEdge $
+                MTL.modify (\state -> state { _gr = edge `G.insEdge` _gr state })
+    in \(a,b,e) -> do
+        na <- addNode a
+        nb <- addNode b
+        unless (na == nb) $ do
+            addEdge' (na, nb, e)
+            when (e == Same) $
+                addEdge' (nb, na, e)
+        return na
 addEdges :: Vector (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> LicenseGraphM (Vector G.Node)
 addEdges = V.mapM addEdge
 

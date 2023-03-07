@@ -65,10 +65,15 @@ applyTxt txt = do
         _:yaml:others -> do
             case Y.decodeEither' ((fromString . ("---\n"++)) yaml) of
                 Left err -> do
-                    putStrLn (show err)
+                    print err
                     return Noop
                 Right calData -> 
                     return $
+                        EdgeLeft (Add . Vec . map (Vec . map fromString) $ [
+                            _permissions calData,
+                            _conditions calData,
+                            _limitations calData
+                        ]) AppliesTo $
                         EdgeLeft (AddTs . V.fromList $
                            [ maybeToTask (Add . fromString) (_description calData)
                            , maybeToTask (Add . fromString) (_how calData)

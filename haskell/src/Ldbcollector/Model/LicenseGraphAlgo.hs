@@ -7,21 +7,12 @@ module Ldbcollector.Model.LicenseGraphAlgo
 import           MyPrelude
 
 import qualified Control.Monad.State               as MTL
-import           Data.Aeson                        as A
-import           Data.Aeson.Encode.Pretty          as A
-import qualified Data.ByteString.Char8             as B (unpack)
-import qualified Data.ByteString.Lazy              as BL (toStrict)
 import qualified Data.Graph.Inductive.Basic        as G
 import qualified Data.Graph.Inductive.Graph        as G
-import qualified Data.Graph.Inductive.Monad        as G
 import qualified Data.Graph.Inductive.PatriciaTree as G
 import qualified Data.Graph.Inductive.Query.DFS    as G
 import qualified Data.Map                          as Map
-import           Data.String                       (IsString (..))
 import qualified Data.Vector                       as V
-import           System.Console.Pretty             (Color (Green), color)
-import qualified System.FilePath                   as FP
-import           System.IO                         (hPutStrLn, stderr)
 
 
 import           Ldbcollector.Model.LicenseName
@@ -62,10 +53,10 @@ focus' needles (LicenseGraph gr node_map node_map_rev) = let
                         fun (incoming, node, a@(LicenseName _), outgoing) = let
                                 filteredIncoming = edgeFun incoming
                                 filteredOutgoing = edgeFun outgoing
-                                finalIncoming = nub $ filteredIncoming -- ++ reverseEdges filteredOutgoing
-                                finalOutgoing = nub $ filteredOutgoing -- ++ reverseEdges filteredIncoming
+                                finalIncoming = nub $ filteredIncoming ++ reverseEdges filteredOutgoing
+                                finalOutgoing = nub $ filteredOutgoing ++ reverseEdges filteredIncoming
                             in Just (finalIncoming, node, a, finalOutgoing)
-                        fun (incoming, node, a, outgoing) = Nothing
+                        fun _ = Nothing
                     in G.gfiltermap fun gr
             in V.concatMap (\needle -> V.fromList $ G.reachable needle (G.grev licenseNameSubgraph)) needles
 

@@ -33,7 +33,8 @@ computeDigraph graph = let
                 let nodeLabel = graph `G.lab` n
                     label = case nodeLabel of
                                 Just (Vec v) -> GV.toLabelValue ((unlines . map show) v)
-                                -- Just (LGValue _) -> GV.toLabelValue "$VALUE"
+                                Just (LGValue _) -> GV.toLabelValue "$VALUE"
+                                Just (Rule _) -> GV.toLabelValue "$Rule"
                                 Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
                                 Nothing -> GV.toLabelValue "(/)"
                     styling = case nodeLabel of
