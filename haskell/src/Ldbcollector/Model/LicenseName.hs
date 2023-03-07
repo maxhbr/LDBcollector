@@ -1,11 +1,13 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Model.LicenseName
   ( LicenseName
-  , newLN, newNLN
+  , newLN, newNLN, setNS
   ) where
 
-import           Data.Text as T
 import           MyPrelude
+
+import           Data.String                       (IsString (..))
+import           Data.Text as T
 
 data LicenseName where
     LicenseName :: Maybe Text -> Text -> LicenseName
@@ -14,6 +16,9 @@ newLN = LicenseName Nothing
 
 newNLN :: Text -> Text -> LicenseName
 newNLN ns = LicenseName (Just ns)
+
+setNS :: Text -> LicenseName -> LicenseName
+setNS ns (LicenseName _ n) = LicenseName (Just ns) n
 
 licenseNameToText :: LicenseName -> Text
 licenseNameToText (LicenseName Nothing ln)   = ln
@@ -27,3 +32,14 @@ instance Ord LicenseName where
 
 instance Show LicenseName where
     show = unpack . licenseNameToText
+
+instance IsString LicenseName where
+    fromString s = case T.splitOn ":" $ T.pack s of
+        [] -> undefined
+        [ln] -> LicenseName Nothing ln
+        ns:lns -> LicenseName (Just ns) (T.intercalate  ":" lns)
+
+instance FromJSON LicenseName where
+  parseJSON = withText "LicenseName" $ return . fromString . unpack
+instance ToJSON LicenseName where
+    toJSON = String . pack . show

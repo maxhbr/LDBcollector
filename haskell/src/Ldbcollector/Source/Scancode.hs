@@ -6,11 +6,8 @@ module Ldbcollector.Source.Scancode
 
 import           Ldbcollector.Model    hiding (ByteString)
 
-import qualified Control.Monad.State   as MTL
 import           Data.ByteString       (ByteString)
-import qualified Data.ByteString       as B
 import qualified Data.ByteString.Char8 as Char8
-import qualified Data.Map              as Map
 import qualified Data.Vector           as V
 
 data ScancodeData
@@ -23,9 +20,9 @@ data ScancodeData
   , _owner       :: Maybe String
   , _homepageUrl :: Maybe String
   , _notes       :: Maybe String
-  , _textUrls    :: Maybe [String]
+  , _textUrls    :: [String]
   , _osiUrl      :: Maybe String
-  , _otherUrls   :: Maybe [String]
+  , _otherUrls   :: [String]
   , _text        :: Maybe Text
   } deriving (Show, Generic)
 instance ToJSON ByteString where
@@ -40,9 +37,9 @@ instance FromJSON ScancodeData where
     <*> v .:? "owner"
     <*> v .:? "homepage_url"
     <*> v .:? "notes"
-    <*> v .:? "text_urls"
+    <*> v .:? "text_urls" .!= []
     <*> v .:? "osi_url"
-    <*> v .:? "other_urls"
+    <*> v .:? "other_urls" .!= []
     <*> v .:? "text"
 instance ToJSON ScancodeData
 
@@ -56,6 +53,11 @@ applyScancodeData scd = let
       EdgeLeft (
             AddTs (V.fromList
                 [ maybeToTask fromString (_category scd)
+                , maybeToTask fromString (_homepageUrl scd)
+                , maybeToTask fromString (_notes scd)
+                , maybeToTask fromString (_osiUrl scd)
+                , Add $ (Vec . map fromString) (_textUrls scd)
+                , Add $ (Vec . map fromString) (_otherUrls scd)
             ])
        ) AppliesTo $
       EdgeLeft (
@@ -66,7 +68,7 @@ applyScancodeData scd = let
        ) Better $
           fromValue scd
               (LicenseName . newNLN "scancode" . pack . _key)
-              (fmap (LicenseName . newNLN "SPDX" . pack) . _spdxId)
+              (fmap (LicenseName . newNLN "spdx" . pack) . _spdxId)
 
 applyJson :: FilePath -> IO LicenseGraphTask
 applyJson json = do

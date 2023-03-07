@@ -17,5 +17,5 @@ instance Source SPDXLicenseIds where
             spdxLicenseIds = enumFrom (toEnum 0)
             getTaskForId licenseId =
                 Edge ((Add . LicenseName . newLN . pack . show) licenseId) Better $
-                    Add ((LicenseName . newNLN "SPDX" . pack . show) licenseId)
+                    Add ((LicenseName . newNLN "spdx" . pack . show) licenseId)
         in AddTs . V.fromList $ map getTaskForId spdxLicenseIds

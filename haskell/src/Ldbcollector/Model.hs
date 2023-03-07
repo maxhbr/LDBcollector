@@ -6,6 +6,7 @@ module Ldbcollector.Model
 import           MyPrelude                           as X
 
 import           Ldbcollector.Model.LicenseGraph     as X
+import           Ldbcollector.Model.LicenseGraphAlgo as X
 import           Ldbcollector.Model.LicenseGraphTask as X
 import           Ldbcollector.Model.LicenseName      as X
 

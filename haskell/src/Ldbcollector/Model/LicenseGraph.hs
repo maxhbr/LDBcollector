@@ -3,13 +3,12 @@ module Ldbcollector.Model.LicenseGraph
   ( LicenseGraphNode (..)
   , mkLGValue
   , LicenseGraphEdge (..)
-  , LicenseGraph (_gr, _node_map, _node_map_rev), LicenseGraphType
+  , LicenseGraph (..), LicenseGraphType
+  , getLicenseGraphLicenseNames
   , LicenseGraphM
-  , runLicenseGraphM
+  , runLicenseGraphM, runLicenseGraphM'
   , addNode, addNodes
   , addEdge, addEdges
-  , focus
-  , getFocused
   , stderrLog
   ) where
 
@@ -38,12 +37,14 @@ import           Ldbcollector.Model.LicenseName
 data LicenseGraphNode where
     LicenseName :: LicenseName -> LicenseGraphNode
     Data :: Text -> LicenseGraphNode
+    Rule :: Text -> LicenseGraphNode
     LGValue :: A.Value -> LicenseGraphNode
     Vec :: [LicenseGraphNode] -> LicenseGraphNode
     deriving (Eq, Ord)
 instance Show LicenseGraphNode where
     show (LicenseName ln) = show ln
-    show (Data d)         = show d
+    show (Data d)         = unpack d
+    show (Rule r)         = unpack r
     show (LGValue v)      = B.unpack . BL.toStrict $ A.encodePretty v
     show (Vec v)          = show v
 mkLGValue :: ToJSON a => a -> LicenseGraphNode
@@ -51,9 +52,10 @@ mkLGValue = LGValue . toJSON
 instance IsString LicenseGraphNode where
     fromString s = Data (pack s)
 data LicenseGraphEdge where
-    Same      :: LicenseGraphEdge
-    Better    :: LicenseGraphEdge
-    AppliesTo :: LicenseGraphEdge
+    Same        :: LicenseGraphEdge
+    Better      :: LicenseGraphEdge
+    AppliesTo   :: LicenseGraphEdge
+    Potentially :: LicenseGraphEdge -> LicenseGraphEdge
     deriving (Show, Eq, Ord)
 
 type LicenseGraphType = G.Gr LicenseGraphNode LicenseGraphEdge
@@ -74,6 +76,12 @@ getLicenseGraphSize (LicenseGraph gr node_map node_map_rev) = let
         node_map_size = Map.size node_map
         node_map_rev_size =  Map.size node_map_rev
     in gr_size
+
+getLicenseGraphLicenseNames :: LicenseGraph -> Vector LicenseName
+getLicenseGraphLicenseNames = let
+        fun (LicenseName ln) = [ln]
+        fun _ = []
+    in V.fromList . concatMap (fun . snd) . G.labNodes . _gr
 
 type LicenseGraphM a = MTL.StateT LicenseGraph IO a
 
@@ -118,36 +126,6 @@ addEdge (a,b,e) = do
     return na
 addEdges :: Vector (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> LicenseGraphM (Vector G.Node)
 addEdges = V.mapM addEdge
-
--- ############################################################################
-
-focus' :: Vector G.Node -> LicenseGraph -> LicenseGraph
-focus' needles (LicenseGraph gr node_map node_map_rev) = let
-
-        reachableForNeedle needle = G.reachable needle gr ++ G.reachable needle (G.grev gr)
-        allReachable = concatMap reachableForNeedle (V.toList needles)
-        isReachable n = n `elem` allReachable
-    in LicenseGraph {
-        _gr = G.nfilter isReachable gr,
-        _node_map = Map.filter isReachable node_map,
-        _node_map_rev = Map.filterWithKey(\k a -> isReachable k) node_map_rev
-    }
-
-focus :: Vector LicenseGraphNode -> LicenseGraphM a -> LicenseGraphM a
-focus needles inner = do
-    stderrLog "get graph"
-    frozen <- MTL.get
-    (a,_) <- (MTL.lift . runLicenseGraphM' frozen) $ do
-        stderrLog "focus graph"
-        needleIds <- addNodes needles
-        state <- MTL.modify (focus' needleIds)
-        stderrLog "work on focused graph"
-        inner
-    stderrLog "end focusing"
-    return a
-
-getFocused :: Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
-getFocused needles = focus needles MTL.get
 
 -- ############################################################################
 

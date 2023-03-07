@@ -78,10 +78,10 @@ applyFedoraEntry id entry@(FedoraEntry fel@(FedoraEntryLicense
        ) Better $
       EdgeLeft (
             Adds (V.fromList ( map (LicenseName . newLN . pack) (legacy_names <> legacy_abbreviation)))
-       ) Better $
+       ) (Potentially Better) $
                 fromValue entry
                     (const $ (LicenseName . newNLN "fedora" . pack) id)
-                    (Just . LicenseName . newNLN "SPDX" . pack . _expression . _license)
+                    (Just . LicenseName . newNLN "spdx" . pack . _expression . _license)
 
 
 applyJson :: FilePath -> IO LicenseGraphTask

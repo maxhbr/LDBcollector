@@ -66,6 +66,7 @@ library
         MyPrelude,
         Ldbcollector.Model.LicenseName,
         Ldbcollector.Model.LicenseGraph,
+        Ldbcollector.Model.LicenseGraphAlgo,
         Ldbcollector.Model.LicenseGraphTask,
         Ldbcollector.Model,
         Ldbcollector.Source,
@@ -73,10 +74,15 @@ library
 
     -- Modules included in this library but not exported.
     other-modules:
-        Ldbcollector.Source.Scancode,
-        Ldbcollector.Source.SPDX,
+        Ldbcollector.Source.BlueOak,
         Ldbcollector.Source.Cavil,
-        Ldbcollector.Source.Fedora
+        Ldbcollector.Source.ChooseALicense,
+        Ldbcollector.Source.Fedora,
+        Ldbcollector.Source.FSF,
+        Ldbcollector.Source.SPDX,
+        Ldbcollector.Source.OSADL,
+        Ldbcollector.Source.OSLC,
+        Ldbcollector.Source.Scancode
 
     -- LANGUAGE extensions used by modules in this package.
     other-extensions: OverloadedStrings
@@ -85,7 +91,7 @@ library
     build-depends:    
         base ^>=4.16.4.0,
         -- Data
-        text, bytestring,
+        text, bytestring, split,
         -- network-uri,
         vector, containers, unordered-containers,
         fgl,
@@ -94,7 +100,7 @@ library
         directory, filepath, Glob,
         pretty-terminal,
         -- parsing
-        aeson, aeson-pretty, cassava, yaml,
+        aeson, aeson-pretty, cassava, yaml, libyaml,
         -- Sources
         spdx,
         -- Sinks
@@ -124,6 +130,12 @@ executable ldbcollector
     build-depends:
         base ^>=4.16.4.0,
         ldbcollector,
+        blaze-html,
+        blaze-markup,
+        scotty,
+        text,
+        mtl,
+        temporary,
         vector
 
     -- Directories containing source files.

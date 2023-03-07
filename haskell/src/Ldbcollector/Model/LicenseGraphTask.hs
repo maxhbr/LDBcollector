@@ -1,6 +1,6 @@
 module Ldbcollector.Model.LicenseGraphTask
     ( LicenseGraphTask (..)
-    , maybeToTask
+    , maybeToTask, ifToTask
     , applyTask
     , fromValue
     ) where
@@ -38,6 +38,9 @@ fromValue a getId getBetterId = let
 maybeToTask :: (a -> LicenseGraphTask) -> Maybe a -> LicenseGraphTask
 maybeToTask _ Nothing  = Noop
 maybeToTask f (Just a) = f a
+ifToTask :: LicenseGraphNode -> Bool -> LicenseGraphTask
+ifToTask _ False = Noop
+ifToTask n True  = Add n
 
 applyEdgeTask :: LicenseGraphTask -> LicenseGraphEdge -> LicenseGraphTask -> LicenseGraphM (Vector LicenseGraphNode, Vector LicenseGraphNode)
 applyEdgeTask left edge right = do
