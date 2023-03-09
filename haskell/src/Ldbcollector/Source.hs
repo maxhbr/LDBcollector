@@ -10,6 +10,7 @@ import           Ldbcollector.Source.OSADL
 import           Ldbcollector.Source.FSF
 import           Ldbcollector.Source.ChooseALicense
 import           Ldbcollector.Source.OSLC
+import           Ldbcollector.Source.Fossology
 
 
 applySources :: LicenseGraphM ()
@@ -24,3 +25,4 @@ applySources = do
     applySource (FSF "../data/wking-fsf-api")
     applySource (ChooseALicense "../data/github-choosealicense.com/_licenses/")
     applySource (OSLC "../data/finos-OSLC-handbook/src/")
+    applySource (FossologyLicenseRef "../data/fossology/licenseRef.json")

@@ -78,6 +78,7 @@ library
         Ldbcollector.Source.Cavil,
         Ldbcollector.Source.ChooseALicense,
         Ldbcollector.Source.Fedora,
+        Ldbcollector.Source.Fossology,
         Ldbcollector.Source.FSF,
         Ldbcollector.Source.SPDX,
         Ldbcollector.Source.OSADL,
