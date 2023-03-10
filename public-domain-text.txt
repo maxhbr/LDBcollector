@@ -26,6 +26,12 @@ text = '''
 text here
 '''
 
+package = python-pdfminer
+location = https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
+text = '''
+This code is in the public domain.
+'''
+
 package = imagej
 location = https://imagej.nih.gov/ij/disclaimer.html
 text = '''
