@@ -48,5 +48,6 @@ legal-doc:
         paths:
             - not-allowed-licenses.adoc
             - allowed-licenses.adoc
+            - all-allowed.adoc
     script:
         - make legal-doc

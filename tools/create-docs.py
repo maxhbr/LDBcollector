@@ -18,7 +18,7 @@ parser.add_argument('datadir', help='path to directory with TOML files', default
 parser.add_argument('--verbose', '-v', action='count', default=0)
 opts = parser.parse_args()
 
-TEMPLATES = ["templates/allowed-licenses.adoc.j2", "templates/not-allowed-licenses.adoc.j2"]
+TEMPLATES = ["templates/allowed-licenses.adoc.j2", "templates/not-allowed-licenses.adoc.j2", "templates/all-allowed.adoc.j2"]
 #"license-overview-template.jinja2"
 
 # function used in Jinja template
