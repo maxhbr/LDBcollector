@@ -3,10 +3,6 @@
 expression = "Spencer-94"
 status = [ "allowed" ]
 
-url = '''
-https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
-'''
-
 [fedora]
 
 legacy-name = [
