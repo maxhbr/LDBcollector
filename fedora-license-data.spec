@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.14
+Version:        1.15
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -88,6 +88,13 @@ make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %changelog
+* Sun Mar 12 2023 Miroslav Suchý <msuchy@redhat.com> 1.15-1
+- Update Spencer-94.toml
+- Add Spencer-94
+- Update public-domain-text.txt for ImageJ
+- Add GPL-2.0-or-later WITH SWI-exception
+- Add Info-ZIP
+
 * Mon Feb 27 2023 Miroslav Suchý <msuchy@redhat.com> 1.14-1
 - Add GPL-3.0-or-later WITH Autoconf-exception-macro
 - Add GNAT-exception.
