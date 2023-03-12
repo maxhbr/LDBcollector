@@ -17,7 +17,7 @@
 
  * cd tools
  * ./create-docs.py ../data
- * cp not-allowed-licenses.adoc allowed-licenses.adoc ~/projects/fedora-legal-docs/modules/ROOT/pages/
+ * cp not-allowed-licenses.adoc allowed-licenses.adoc all-allowed.adoc ~/projects/fedora-legal-docs/modules/ROOT/pages/
    alter the path to your fedora-legal-docs checkout
  * cd ~/projects/fedora-legal-docs/
  * git commit -a -m 'update licenses using fedora-license-data'

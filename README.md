@@ -40,3 +40,4 @@ The files for [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal):
 
  * [allowed-licenses.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/allowed-licenses.adoc?job=legal-doc)
  * [not-allowed-licenses.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/not-allowed-licenses.adoc?job=legal-doc)
+ * [all-allowed.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/all-allowed.adoc?job=legal-doc)

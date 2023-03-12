@@ -1,6 +1,13 @@
 = *Allowed* Licenses
 
-This page lists the licenses that are *allowed* for use in Fedora. If a license is marked as *allowed*, it is allowed for any use. If a license is marked as *allowed-fonts*, *allowed-content*, *allowed-documentation*, or *allowed-firmware*, then it is allowed only for certain categories of material as described in xref:license-approval.adoc[License Approval]. This information is generated from data maintained in the https://gitlab.com/fedora/legal/fedora-license-data[Fedora License Data] repository.
+This page lists the various category of *allowed* licenses in separate tables.
+That is: *allowed*, if it is allowed for any use and *allowed-fonts*,
+*allowed-content*, *allowed-documentation*, or *allowed-firmware*, if it is
+allowed only for certain categories of material as described in
+xref:license-approval.adoc[License Approval]. This information is generated
+from data maintained in the
+https://gitlab.com/fedora/legal/fedora-license-data[Fedora License Data]
+repository.
 
 = *Allowed* Licenses
 
@@ -116,48 +123,5 @@ This page lists the licenses that are *allowed* for use in Fedora. If a license 
         {nbsp}
   {%- endif -%}
  |  {{ additional_urls(license) }}
-{%- endfor %}
-|===
-
-
-= All licenses
-
-[.datatable.dt-search]
-|===
-| Allowed-content | Allowed-documentation | Allowed-fonts | Allowed-firmware | SPDX Expression | Name | Legacy Abbreviation | URLs
-
-{% for license in ALL_ALLOWED_LICENSES -%}
-| {%- if ('allowed-content' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
-        &#10004;
-  {%- else -%}
-        {nbsp}
-  {%- endif -%}
-| {%- if ('allowed-documentation' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
-        &#10004;
-  {%- else -%}
-        {nbsp}
-  {%- endif -%}
-| {%- if ('allowed-fonts' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
-        &#10004;
-  {%- else -%}
-        {nbsp}
-  {%- endif -%}
-| {%- if ('allowed-firmware' in license['license']['status']) or ('allowed' in license['license']['status']) -%}
-        &#10004;
-  {%- else -%}
-        {nbsp}
-  {%- endif -%}
-| {{ spdx_url(license) }}
-| {%- if 'fedora' in license %}
-        {{ license['fedora']['legacy-name']|join(',') }}
-  {%- else -%}
-        {nbsp}
-  {%- endif -%}
-| {%- if 'fedora' in license -%}
-        {{ license['fedora']['legacy-abbreviation']|join(',') }}
-  {%- else -%}
-        {nbsp}
-  {%- endif -%}
-| {{ additional_urls(license) }}
 {%- endfor %}
 |===
