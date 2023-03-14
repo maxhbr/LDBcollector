@@ -1,0 +1,18 @@
+[license]
+
+expression = "UCAR"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing/UCAR
+'''
+
+[fedora]
+
+legacy-name = [
+    "UCAR License"
+]
+
+legacy-abbreviation = [
+    "UCAR"
+]
