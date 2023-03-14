@@ -4,9 +4,34 @@
 
 ![Image text](https://github.com/osslab-pku/RecLicense/blob/1caf4372960a9a54cfcbfbbbdf9ee86ab922d61a/frontend/src/assets/tool.png)
 
+
+该工具可在[licenserec.com](https://licenserec.com/)找到，演示视频在[video.licenserec.com](https://video.licenserec.com/)。
+
+上传你的项目，并在[licenserec.com](https://licenserec.com/)上挑选最佳的开源许可证!
+
 The tool is available at [licenserec.com](https://licenserec.com/) and the demonstration video is at [video.licenserec.com](https://video.licenserec.com/).
 
 Upload your project and pick the best open source license on [licenserec.com](https://licenserec.com/)!
+
+
+## 简介
+
+LicenseRec是一个开源许可证推荐工具，帮助开发者为他们的开放源码软件项目选择一个最佳许可证。
+LicenseRec对开放源码软件项目的代码和依赖关系进行细粒度的许可证兼容性检查，并通过一个交互式的向导来帮助开发者选择最佳的许可证，该向导有三个方面的指引：个人开放源码风格、商业模式和社区发展。
+
+## 安装
+
+LicenseRec可以通过两种方式安装：使用Docker或手动。查看[DEPLOY.md](./DEPLOY.md)中的部署说明。
+
+## 许可证和鸣谢
+
+LicenseRec是根据[Mulan PSL v2](http://license.coscl.org.cn/MulanPubL-2.0/)授权的。详情见[LICENSE](LICENSE)。
+
+LicenseRec依赖于以下开源项目。
+
+* [scancode-tookit](https://github.com/nexB/scancode-toolkit)采用[Apache-2.0](https://opensource.org/licenses/Apache-2.0)授权。（我们增加和修改了一些检测规则。）
+* [depend](https://github.com/multilang-depends/depends) 采用[MIT](https://opensource.org/licenses/MIT)授权。
+
 
 ## Introduction
 
