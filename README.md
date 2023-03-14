@@ -10,6 +10,7 @@ LicenseRec是一个开源许可证推荐工具，帮助开发者为他们的开�
 LicenseRec对开放源码软件项目的代码和依赖关系进行细粒度的许可证兼容性检查，并通过一个交互式的向导来帮助开发者选择最佳的许可证，该向导有三个方面的指引：个人开放源码风格、商业模式和社区发展。
 
 该工具可在[licenserec.com](https://licenserec.com/)使用，演示视频在[video.licenserec.com](https://video.licenserec.com/)。该工具已发表在ICSE'23的DEMO Track上，论文参见：[LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://zhcxww.github.io/files/LicenseRec_DEMO.pdf).
+
 快来上传你的项目，在[licenserec.com](https://licenserec.com/)上挑选最佳的开源许可证吧!
 
 ## 安装
@@ -32,6 +33,7 @@ LicenseRec is an open source license recommendation tool that helps developers c
 LicenseRec performs fine-grained license compatibility checks on OSS projects’ code and dependencies, and assists developers to choose the optimal license through an interactive wizard with guidelines of three aspects: personal open source style, business pattern, and community development.
 
 The tool is available at [licenserec.com](https://licenserec.com/) and the demonstration video is at [video.licenserec.com](https://video.licenserec.com/).The tool has been published in the DEMO Track of ICSE'23, see the paper: [LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://zhcxww.github.io/ files/LicenseRec_DEMO.pdf).
+
 Upload your project and pick the best open source license on [licenserec.com](https://licenserec.com/)!
 
 ## Installation
