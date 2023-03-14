@@ -281,6 +281,66 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  - id: "BSD-4-Clause-Shortened"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-original-uc-1986"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "Zend-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:advertising-clause"
+
+  - id: "BSD-3-Clause-No-Nuclear-Warranty"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:nuclear-restriction"
+
+  - id: "LicenseRef-scancode-bitzi-pd"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-cve-tou"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "NIST-PD"
+    categories:
+      - "public-domain"
+
+  - id: "LicenseRef-scancode-blas-2017"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "BUSL-1.1"
+    categories:
+      - "commercial"
+      - "property:include-in-notice-file"
+
+  - id: "FreeImage"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+
+  - id: "Xerox"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-sun-bsd-extra"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+
   # https://spdx.org/licenses/BSD-3-Clause.html
   - id: "BSD-3-Clause"
     categories:
@@ -441,6 +501,13 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  - id: "GPL-2.0-only WITH Linux-syscall-note"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -479,6 +546,15 @@ categorizations:
   # https://spdx.org/licenses/GPL-2.0-only.html
   # https://spdx.org/licenses/Font-exception-2.0.html
   - id: "GPL-2.0-only WITH Font-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Universal-FOSS-exception-1.0.html
+  - id: "GPL-2.0-only WITH Universal-FOSS-exception-1.0"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
@@ -3910,6 +3986,10 @@ categorizations:
       - "permissive"
 
   - id: "LicenseRef-scancode-generic-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-mysql-linking-exception-2018"
     categories:
       - "property:AutoConf-or-other-exception"
 
