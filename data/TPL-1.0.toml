@@ -3,10 +3,6 @@
 expression = "TPL-1.0"
 status = [ "allowed" ]
 
-url = '''
-https://fedoraproject.org/wiki/Licensing:ThorPublicLicense
-'''
-
 [fedora]
 
 legacy-name = [
