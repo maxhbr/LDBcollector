@@ -32,7 +32,7 @@ LicenseRec依赖于以下开源项目。
 LicenseRec is an open source license recommendation tool that helps developers choose a optimal license for their OSS project.
 LicenseRec performs fine-grained license compatibility checks on OSS projects’ code and dependencies, and assists developers to choose the optimal license through an interactive wizard with guidelines of three aspects: personal open source style, business pattern, and community development.
 
-The tool is available at [licenserec.com](https://licenserec.com/) and the demonstration video is at [video.licenserec.com](https://video.licenserec.com/).The tool has been published in the DEMO Track of ICSE'23, see the paper: [LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://zhcxww.github.io/ files/LicenseRec_DEMO.pdf).
+The tool is available at [licenserec.com](https://licenserec.com/) and the demonstration video is at [video.licenserec.com](https://video.licenserec.com/).The tool has been published in the DEMO Track of ICSE'23, see the paper: [LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects](https://zhcxww.github.io/files/LicenseRec_DEMO.pdf).
 
 Upload your project and pick the best open source license on [licenserec.com](https://licenserec.com/)!
 
