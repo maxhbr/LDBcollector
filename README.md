@@ -6,11 +6,9 @@
 
 
 该工具可在[licenserec.com](https://licenserec.com/)找到，演示视频在[video.licenserec.com](https://video.licenserec.com/)。
-
 上传你的项目，并在[licenserec.com](https://licenserec.com/)上挑选最佳的开源许可证!
 
 The tool is available at [licenserec.com](https://licenserec.com/) and the demonstration video is at [video.licenserec.com](https://video.licenserec.com/).
-
 Upload your project and pick the best open source license on [licenserec.com](https://licenserec.com/)!
 
 
