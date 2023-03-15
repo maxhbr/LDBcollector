@@ -26,6 +26,48 @@ text = '''
 text here
 '''
 
+package = pl
+location = https://github.com/SWI-Prolog/packages-http/blob/master/examples/calc.pl
+text = '''
+Copyright (C): Public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-semweb/blob/master/murmur.c
+text = '''
+License: Public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-stomp/blob/master/examples/ping.pl
+text = '''
+@license This code is in the public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-xpce/blob/master/src/gnu/getdate-source.y
+text = '''
+This code is in the public domain and has no copyright.
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/swipl-devel/blob/master/scripts/swipl-bt
+text = '''
+This code is in the public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/pl-hash.c
+text = '''
+License: Public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/tools/functions.pm
+text = '''
+This code is in the public domain
+'''
+
 package = pvs-sbcl
 location = https://github.com/SRI-CSL/PVS/blob/master/src/md5.lisp
 text = '''
