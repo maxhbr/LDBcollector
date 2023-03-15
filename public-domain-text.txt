@@ -26,6 +26,117 @@ text = '''
 text here
 '''
 
+package = ecl
+location = https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/cmuutil.lsp
+text = '''
+This code was written as part of the CMU Common Lisp project at
+Carnegie Mellon University, and has been placed in the public domain.
+'''
+
+package = gap-pkg-profiling
+location = https://github.com/gap-packages/profiling/blob/master/src/md5.cc
+text = '''
+This code implements the MD5 message-digest algorithm.
+The algorithm is due to Ron Rivest.  This code was
+written by Colin Plumb in 1993, no copyright is claimed.
+This code is in the public domain; do with it what you wish.
+Equivalent code is available from RSA Data Security, Inc.
+This code has been tested against that, and is equivalent,
+except that you don't need to include two pages of legalese
+with every copy.
+'''
+
+package = icu4j
+location = https://github.com/unicode-org/icu/blob/main/icu4j/main/shared/licenses/LICENSE
+text = '''
+  ICU uses the public domain data and code derived from Time Zone
+Database for its time zone support. The ownership of the TZ database
+is explained in BCP 175: Procedure for Maintaining the Time Zone
+Database section 7.
+7.  Database Ownership
+    The TZ database itself is not an IETF Contribution or an IETF
+    document.  Rather it is a pre-existing and regularly updated work
+    that is in the public domain, and is intended to remain in the
+    public domain.  Therefore, BCPs 78 [RFC5378] and 79 [RFC3979] do
+    not apply to the TZ Database or contributions that individuals make
+    to it.  Should any claims be made and substantiated against the TZ
+    Database, the organization that is providing the IANA
+    Considerations defined in this RFC, under the memorandum of
+    understanding with the IETF, currently ICANN, may act in accordance
+    with all competent court orders.  No ownership claims will be made
+    by ICANN or the IETF Trust on the database or the code.  Any person
+    making a contribution to the database or code waives all rights to
+    future claims in that contribution or in the TZ Database.
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-http/blob/master/examples/calc.pl
+text = '''
+Copyright (C): Public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-semweb/blob/master/murmur.c
+text = '''
+License: Public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-stomp/blob/master/examples/ping.pl
+text = '''
+@license This code is in the public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/packages-xpce/blob/master/src/gnu/getdate-source.y
+text = '''
+This code is in the public domain and has no copyright.
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/swipl-devel/blob/master/scripts/swipl-bt
+text = '''
+This code is in the public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/pl-hash.c
+text = '''
+License: Public domain
+'''
+
+package = pl
+location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/tools/functions.pm
+text = '''
+This code is in the public domain
+'''
+
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/md5.lisp
+text = '''
+This file implements The MD5 Message-Digest Algorithm, as defined in
+RFC 1321 by R. Rivest, published April 1992.
+It was written by Pierre R. Mai, with copious input from the
+cmucl-help mailing-list hosted at cons.org, in November 2001 and
+has been placed into the public domain.
+'''
+
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/metering.lisp
+text = '''
+This code is in the public domain and is distributed without warranty
+of any kind.
+'''
+
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/Field/decimals.lisp
+text = '''
+License: Public domain
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
 package = python-pdfminer
 location = https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
 text = '''
