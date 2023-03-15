@@ -26,6 +26,32 @@ text = '''
 text here
 '''
 
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/md5.lisp
+text = '''
+This file implements The MD5 Message-Digest Algorithm, as defined in
+RFC 1321 by R. Rivest, published April 1992.
+It was written by Pierre R. Mai, with copious input from the
+cmucl-help mailing-list hosted at cons.org, in November 2001 and
+has been placed into the public domain.
+'''
+
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/metering.lisp
+text = '''
+This code is in the public domain and is distributed without warranty
+of any kind.
+'''
+
+package = pvs-sbcl
+location = https://github.com/SRI-CSL/PVS/blob/master/src/Field/decimals.lisp
+text = '''
+License: Public domain
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
 package = python-pdfminer
 location = https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
 text = '''
