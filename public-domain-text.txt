@@ -26,6 +26,15 @@ text = '''
 text here
 '''
 
+package = mona
+location = https://github.com/cs-au-dk/MONA/blob/master/Mem/dlmalloc.c
+text = '''
+This is a version (aka dlmalloc) of malloc/free/realloc written by
+Doug Lea and released to the public domain, as explained at
+http://creativecommons.org/licenses/publicdomain.  Send questions,
+comments, complaints, performance data, etc to dl@cs.oswego.edu
+'''
+
 package = pl
 location = https://github.com/SWI-Prolog/packages-http/blob/master/examples/calc.pl
 text = '''
