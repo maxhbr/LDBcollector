@@ -26,6 +26,12 @@ text = '''
 text here
 '''
 
+package = jo
+location = https://github.com/jpmens/jo/blob/2cc476178198774ad6bea89be0b9e4ed2d4bf4c5/base64.c#L3
+text = '''
+This code is public domain software.
+'''
+
 package = abseil-cpp
 location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/src/tzfile.h#L8
 text = '''
