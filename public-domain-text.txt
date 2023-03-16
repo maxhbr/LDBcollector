@@ -26,6 +26,19 @@ text = '''
 text here
 '''
 
+package = abseil-cpp
+location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/src/tzfile.h#L8
+text = '''
+This file is in the public domain, so clarified as of
+1996-06-05 by Arthur David Olson.
+'''
+
+package = abseil-cpp
+location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
+text = '''
+This file is in the public domain.
+'''
+
 package = ecl
 location = https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/cmuutil.lsp
 text = '''
