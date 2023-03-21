@@ -26,6 +26,12 @@ text = '''
 text here
 '''
 
+package = perl-Math-Int64
+location = https://github.com/salva/p5-Math-Int64/blob/master/templates/c_api_h.temp#L2
+text = '''
+* <% $c_api_h_filename %> - This file is in the public domain
+'''
+
 package = perl-Net-OpenID-Consumer
 location = https://metacpan.org/release/WROG/Net-OpenID-Consumer-1.18/source/examples/consumer.cgi
 text = '''
