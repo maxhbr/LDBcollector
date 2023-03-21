@@ -26,6 +26,13 @@ text = '''
 text here
 '''
 
+package = perl-libxml-perl
+location = https://metacpan.org/release/KMACLEOD/libxml-perl-0.08/source/lib/XML/Handler/Sample.pm
+text = '''
+# This template file is in the Public Domain.
+# You may do anything you want with this file.
+'''
+
 package = perl-Math-Int64
 location = https://github.com/salva/p5-Math-Int64/blob/master/templates/c_api_h.temp#L2
 text = '''
