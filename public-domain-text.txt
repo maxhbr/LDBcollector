@@ -26,6 +26,12 @@ text = '''
 text here
 '''
 
+package = perl-perlfaq
+location = https://metacpan.org/release/ETHER/perlfaq-5.20210520/source/lib/perlfaq.pod
+text = '''
+Code examples in all the perlfaq documents are in the public domain.
+'''
+
 package = jo
 location = https://github.com/jpmens/jo/blob/2cc476178198774ad6bea89be0b9e4ed2d4bf4c5/base64.c#L3
 text = '''
