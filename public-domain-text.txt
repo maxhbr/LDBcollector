@@ -26,6 +26,12 @@ text = '''
 text here
 '''
 
+package = perl-Net-OpenID-Server
+location = https://metacpan.org/release/ROBN/Net-OpenID-Server-1.09/source/examples/server.cgi
+text = '''
+This program is in the public domain.
+'''
+
 package = perl-perlfaq
 location = https://metacpan.org/release/ETHER/perlfaq-5.20210520/source/lib/perlfaq.pod
 text = '''
