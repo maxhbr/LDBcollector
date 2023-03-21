@@ -26,6 +26,37 @@ text = '''
 text here
 '''
 
+package = perl-libxml-perl
+location = https://metacpan.org/release/KMACLEOD/libxml-perl-0.08/source/lib/XML/Handler/Sample.pm
+text = '''
+# This template file is in the Public Domain.
+# You may do anything you want with this file.
+'''
+
+package = perl-Math-Int64
+location = https://github.com/salva/p5-Math-Int64/blob/master/templates/c_api_h.temp#L2
+text = '''
+* <% $c_api_h_filename %> - This file is in the public domain
+'''
+
+package = perl-Net-OpenID-Consumer
+location = https://metacpan.org/release/WROG/Net-OpenID-Consumer-1.18/source/examples/consumer.cgi
+text = '''
+This program is in the public domain.
+'''
+
+package = perl-Net-OpenID-Server
+location = https://metacpan.org/release/ROBN/Net-OpenID-Server-1.09/source/examples/server.cgi
+text = '''
+This program is in the public domain.
+'''
+
+package = perl-perlfaq
+location = https://metacpan.org/release/ETHER/perlfaq-5.20210520/source/lib/perlfaq.pod
+text = '''
+Code examples in all the perlfaq documents are in the public domain.
+'''
+
 package = jo
 location = https://github.com/jpmens/jo/blob/2cc476178198774ad6bea89be0b9e4ed2d4bf4c5/base64.c#L3
 text = '''
