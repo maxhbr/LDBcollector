@@ -55,8 +55,12 @@ Authorized contexts
         <td>{{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}</td>
         <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
         <td style="white-space: nowrap">
-          <a href="{% url "cube:authorized_context_edit" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+          {% if perms.cube.change_derogation %}
+          <a href="{% url "cube:authorized_context_edit" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+          {% endif %}{% if perms.cube.change_derogation and perms.cube.delete_derogation %} | {% endif %}
+          {% if perms.cube.delete_derogation %}
           <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+          {% endif %}
         </td>
   {% endfor %}
   </tbody>
