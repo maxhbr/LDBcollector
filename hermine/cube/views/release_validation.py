@@ -96,7 +96,9 @@ class AbstractCreateUsageConditionView(
         return reverse("cube:release_validation", kwargs={"pk": self.usage.release.id})
 
 
-class AbstractResetCorrectedLicenseView(LoginRequiredMixin, UpdateView):
+class AbstractResetCorrectedLicenseView(
+    LoginRequiredMixin, PermissionRequiredMixin, UpdateView
+):
     model = Usage
     fields = []
     permission_required = "cube.change_version"
@@ -120,7 +122,9 @@ class ReleaseLicenseCurationCreateView(AbstractCreateUsageConditionView):
     permission_required = "cube.add_licensecuration"
 
 
-class ReleaseCuratedLicensesListView(ListView):
+class ReleaseCuratedLicensesListView(
+    LoginRequiredMixin, PermissionRequiredMixin, ListView
+):
     template_name = "cube/release_validation_curated_licenses.html"
     release = None
     context_object_name = "usages"

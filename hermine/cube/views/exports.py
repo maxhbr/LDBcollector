@@ -5,6 +5,7 @@
 
 import json
 
+from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin
 from django.http import HttpResponse
 from django.utils.text import slugify
 from django.views import View
@@ -35,14 +36,20 @@ class BaseExportFileView(View):
         return response
 
 
-class ExportLicensesView(BaseExportFileView):
+class ExportLicensesView(
+    LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
+):
+    permission_required = "cube.view_license"
     filename = "licenses.json"
 
     def get_data(self):
         return export_licenses_json(indent=True)
 
 
-class Export1LicenseView(BaseExportFileView):
+class Export1LicenseView(
+    LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
+):
+    permission_required = "cube.view_license"
     license_instance = None
 
     def get_filename(self):
@@ -57,14 +64,20 @@ class Export1LicenseView(BaseExportFileView):
         return super().get(request, kwargs["license_id"])
 
 
-class ExportGenericsView(BaseExportFileView):
+class ExportGenericsView(
+    LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
+):
+    permission_required = "cube.view_generic"
     filename = "generics.json"
 
     def get_data(self):
         return export_generics_json()
 
 
-class ExportLicenseCurationsView(BaseExportFileView):
+class ExportLicenseCurationsView(
+    LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
+):
+    permission_required = "cube.view_licensecuration"
     filename = "ort_curations.yaml"
     content_type = "application/x-yaml"
 
@@ -72,7 +85,10 @@ class ExportLicenseCurationsView(BaseExportFileView):
         return export_curations(LicenseCuration.objects.all())
 
 
-class ExportSingleLicenseCurationView(SingleObjectMixin, BaseExportFileView):
+class ExportSingleLicenseCurationView(
+    LoginRequiredMixin, PermissionRequiredMixin, SingleObjectMixin, BaseExportFileView
+):
+    permission_required = "cube.view_licensecuration"
     queryset = LicenseCuration.objects.exclude(component=None, version=None)
     content_type = "application/x-yaml"
 
