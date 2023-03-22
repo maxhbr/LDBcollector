@@ -145,6 +145,10 @@ class ReleaseAdmin(admin.ModelAdmin):
 
 class UsageAdmin(admin.ModelAdmin):
     list_display = ("__str__", "version")
+    autocomplete_fields = (
+        "release",
+        "version",
+    )
     search_fields = [
         "release__product__name",
         "version__component__name",
