@@ -26,6 +26,12 @@ text = '''
 text here
 '''
 
+package = python-multiprocess
+location = https://github.com/uqfoundation/multiprocess/blob/273ee14261c9e08d794ab55f3398926e04a77364/py3.11/doc/html4css1.css#L6
+text = '''
+This stylesheet has been placed in the public domain.
+'''
+
 package = python-llvmlite
 location = https://github.com/numba/llvmlite/blob/v0.39.1/versioneer.py#L278-L280
 text = '''
