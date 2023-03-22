@@ -8,6 +8,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 {% block title %}Component{{ object.name }} {% endblock %}
+
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
@@ -15,19 +16,24 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>{{ object.name }}</li>
 </ul>
 {% endblock %}
+
 {% block actions %}
-<a class="button" href="/admin/cube/component/{{object.id}}/change/" target="_blank">
+{% if perms.cube.change_component %}
+<a class="button" href="{% url "admin:cube_component_change" %}" target="_blank">
   <span class="icon">
     <i class="fas fa-edit"></i>
   </span>
   <span>Edit this component</span>
 </a>
+{% endif %}
 {% endblock %}
+
 {% block herozone %}
 <div class="hero-body">
   <p class="title">{{ object.name }}</p>
 </div>
 {% endblock %}
+
 {% block infoitem %}
 <p class="subtitle" style="text-transform: uppercase;">
   <span class="icon is-medium">
@@ -36,8 +42,8 @@ SPDX-License-Identifier: AGPL-3.0-only
     Component
   </p>
 {% endblock %}
-{% block content %}
 
+{% block content %}
   <section class="card">
     <header class="card-header">
       <p class="card-header-title"><span class="icon"><i class="fas fa-info-circle"></i></span>
@@ -52,7 +58,9 @@ SPDX-License-Identifier: AGPL-3.0-only
         <div class="column">
           <p><span class="icon"><i class="fas fa-home"></i></span>Project home page:
           <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a></p>
+          {% if perms.cube.change_component %}
           <p><a href="{% url 'cube:component_update_funding' object.id %}">Get/update funding info</a></p>
+          {% endif %}
           {% if object.fundings.all %}
           <p>You can fund this project that you rely on: </p>
           {% for funding in object.fundings.all %}
