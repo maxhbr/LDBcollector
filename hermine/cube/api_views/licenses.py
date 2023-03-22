@@ -25,9 +25,20 @@ from cube.utils.licenses import (
 class LicenseViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows licenses to be viewed or edited.
+    Can be filtered by SPDX ID (`?spdx_id=MIT` for example).
     """
 
-    queryset = License.objects.all()
+    def get_queryset(self):
+        """
+        Optionally restricts the returned licences to a given spdx_id,
+        by filtering against a `spdx_id` query parameter in the URL.
+        """
+        queryset = License.objects.all()
+        spdx_id = self.request.query_params.get("spdx_id")
+        if spdx_id is not None:
+            queryset = queryset.filter(spdx_id=spdx_id)
+        return queryset
+
     serializer_class = LicenseSerializer
     lookup_field = "id"
 
