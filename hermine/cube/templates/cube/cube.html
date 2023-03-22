@@ -73,6 +73,7 @@ SPDX-License-Identifier: MIT
           </ul>
           <p class="menu-label">Development</p>
           <ul class="menu-list">
+            {% if perms.cube.view_product or perms.cube.view_category %}
             <li>
               <a class="has-icon has-dropdown-icon">
                 <span class="icon"><i class="fas fa-cubes"></i></span>
@@ -82,19 +83,24 @@ SPDX-License-Identifier: MIT
                 </div>
               </a>
               <ul>
+                {% if perms.cube.view_product %}
                 <li>
                   <a href="{% url 'cube:products' %}">
                     <span>All products</span>
                   </a>
                 </li>
+                {% endif %}
+                {% if perms.cube.view_category %}
                 <li>
                   <a href="{% url 'cube:categories' %}">
                     <span>Product categories</span>
                   </a>
                 </li>
+                {% endif %}
               </ul>
             </li>
-
+            {% endif %}
+            {% if perms.cube.view_component or perms.cube.view_licensecuration %}
             <li>
               <a class="has-icon has-dropdown-icon">
                 <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
@@ -104,6 +110,7 @@ SPDX-License-Identifier: MIT
                 </div>
               </a>
               <ul>
+                {% if perms.cube.view_component %}
                 <li>
                   <a href="{% url 'cube:components' %}">
                     <span>Complete List</span>
@@ -114,17 +121,22 @@ SPDX-License-Identifier: MIT
                     <span>Most used ones</span>
                   </a>
                 </li>
+                {% endif %}
+                {% if perms.cube.view_licensecuration %}
                 <li>
                   <a href="{% url 'cube:licensecurations' %}">
                     <span>Curations</span>
                   </a>
                 </li>
+                {% endif %}
               </ul>
             </li>
+            {% endif %}
           </ul>
           <p class="menu-label">Legal
           </p>
           <ul class="menu-list">
+            {% if perms.cube.view_license %}
             <li>
               <a href="{% url 'cube:licenses' %}" class="has-icon">
                 <span class="icon">
@@ -135,6 +147,8 @@ SPDX-License-Identifier: MIT
                 </span>
               </a>
             </li>
+            {% endif %}
+            {% if perms.cube.view_generic %}
             <li>
               <a href="{% url 'cube:generics' %}" class=" has-icon">
                 <span class="icon">
@@ -145,6 +159,8 @@ SPDX-License-Identifier: MIT
                 </span>
               </a>
             </li>
+            {% endif %}
+            {% if perms.cube.view_derogation %}
             <li>
               <a href="{% url 'cube:authorized_context_list' %}" class=" has-icon">
                 <span class="icon">
@@ -165,6 +181,8 @@ SPDX-License-Identifier: MIT
                 </span>
               </a>
             </li>
+            {% endif %}
+            {% if perms.cube.view_licensechoice %}
             <li>
               <a href="{% url 'cube:licensechoices' %}" class=" has-icon">
                 <span class="icon">
@@ -175,6 +193,7 @@ SPDX-License-Identifier: MIT
                 </span>
               </a>
             </li>
+            {% endif %}
           </ul>
           <p class="menu-label">Tools
           </p>
