@@ -19,12 +19,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block actions %}
+{% if perms.cube.change_license %}
 <a class="button" href="{% url "cube:license_edit" license.id %}">
   <span class="icon">
     <i class="fas fa-edit"></i>
   </span>
   <span>Edit this license</span>
 </a>
+{% endif %}
 
 <div class="dropdown is-hoverable is-right">
   <div class="dropdown-trigger">
@@ -49,13 +51,14 @@ SPDX-License-Identifier: AGPL-3.0-only
         </span>
         <span>Print (ODT export)</span>
       </a>
+      {% if perms.cube.change_license %}
       <a href="{% url "admin:cube_license_change" license.id %}" class="dropdown-item"  target="_blank">
         <span class="icon is-small">
           <i class="fas fa-edit"></i>
         </span>
         <span>Edit in admin</span>
       </a>
-
+      {% endif %}
     </div>
   </div>
 </div>
@@ -75,8 +78,8 @@ SPDX-License-Identifier: AGPL-3.0-only
     License
   </p>
 {% endblock %}
-{% block content %}
 
+{% block content %}
   <section class="card">
     <header class="card-header">
       <p class="card-header-title">
@@ -114,7 +117,7 @@ SPDX-License-Identifier: AGPL-3.0-only
           </div>
           {% else %}
           <p>
-            <em>No explanation has been given for this OSS policy</em> - <a href="{% url "cube:license_edit" license.id %}">Edit</a>
+            <em>No explanation has been given for this OSS policy</em> {% if perms.cube.change_license %}- <a href="{% url "cube:license_edit" license.id %}">Edit</a>{% endif %}
           </p>
           {% endif %}
         </div>
@@ -247,13 +250,16 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
     <div class="level-right">
       <div class="level-item">
+        {% if perms.cube.add_obligation %}
         <a href="{% url "cube:obligation_create" license.id %}" class="button">
           <span class="icon"><i class="fas fa-plus"></i></span><span>Attach new obligation</span>
         </a>
+        {% endif %}
       </div>
     </div>
   </div>
 
+  {% if perms.cube.view_obligations %}
   {% regroup license.obligation_set.all by generic.get_metacategory_display as metacategory_list %}
   {% for metacategory in metacategory_list %}
     <h3>Obligations related to {{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
@@ -296,6 +302,9 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     {% endfor %}
   {% endfor %}
+  {% else %}
+    <p>You do not have the permissions to view obligations attached to this license.</p>
+  {% endif %}
 
 {% endblock %}
 

@@ -7,13 +7,16 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% block title %}Generic obligation{% endblock %}
+
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
   <li>Generic obligations</li>
 </ul>
 {% endblock %}
+
 {% block actions %}
+{% if perms.cube.add_generic %}
 <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:generics' %}" method="post">
   {% csrf_token %}
   <div class="field has-addons">
@@ -27,15 +30,17 @@ SPDX-License-Identifier: AGPL-3.0-only
     </p>
   </div>
 </form>
-<a class="button" href="/admin/cube/generic/add/">
+<a class="button" href="{% url "admin:cube_generic_add" %}">
   <span class="icon"><i class="fas fa-plus"></i></span>
   <span>Create a new generic obligation</span>
 </a>
+{% endif %}
 <a href="{% url 'cube:export_generics' %}" class="button">
   <span class="icon"><i class="fas fa-file-export"></i></span>
   <span>Export as JSON</span>
 </a>
 {% endblock %}<>
+
 {% block herozone %}
 <h1 class="title">
   <span class="icon is-medium">
@@ -44,6 +49,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 Generic obligations
 </h1>
 {% endblock %}
+
 {% block content %}
 <div id="content-main">
     <p>The <em>core</em> is the set of generic obligations considered as fitting enough your policy to be executed for every single component, even if the license of a component does not require the obligation expressly.
@@ -52,7 +58,7 @@ Generic obligations
     <header class="card-header">
         <p class="card-header-title">
           <span class="icon"><i class="fas fa-award"></i></span>
-          {{generics_incore|length}} generic obligations in the core
+          {{ generics_incore|length }} generic obligations in the core
         </p>
       </header>
       <div class="card-content">
@@ -84,9 +90,11 @@ Generic obligations
                         <a class="button is-small" type="button" href="{% url 'cube:generic' generic.id %}">
                           <span class="icon"><i class="fas fa-eye"></i></span>
                         </a>
-                        <a class="button is-small " href="/admin/cube/generic/{{generic.id}}/change/" target="_blank" type="button">
+                        {% if perms.cube.change_generic %}
+                        <a class="button is-small " href="{% url "admin:cube_generic_change" generic.id %}" target="_blank" type="button">
                           <span class="icon"><i class="fas fa-edit"></i></span>
                         </a>
+                        {% endif %}
                       </div>
                     </td>
                   </tr>
@@ -150,9 +158,11 @@ Generic obligations
                         <a class="button is-small" type="button" href="{% url 'cube:generic' generic.id %}">
                           <span class="icon"><i class="fas fa-eye"></i></span>
                         </a>
-                        <a class="button is-small" href="/admin/cube/generic/{{generic.id}}/change/" target="_blank" type="button">
+                        {% if perms.cube.change_generic %}
+                        <a class="button is-small" href="{% url "admin:cube_generic_change" generic.id %}" target="_blank" type="button">
                           <span class="icon"><i class="fas fa-edit"></i></span>
                         </a>
+                        {% endif %}
                       </div>
                     </td>
                   </tr>

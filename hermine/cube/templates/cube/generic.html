@@ -8,6 +8,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 {% block title %}Generic obligation{{ generic.name }}{% endblock %}
+
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
@@ -17,12 +18,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block actions %}
-  <a class="button" href="/admin/cube/generic/{{generic.id}}/change/" target="_blank">
+  {% if perms.cube.change_generic %}
+  <a class="button" href="{% url "admin:cube_generic_change" generic.id %}" target="_blank">
     <span class="icon">
       <i class="fas fa-edit"></i>
     </span>
     <span>Edit this generic obligation</span>
   </a>
+  {% endif %}
 {% endblock %}
 
 {% block herozone %}
@@ -30,6 +33,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <p class="title">{{ generic.name }}</p>
 </div>
 {% endblock %}
+
 {% block infoitem %}
   <p class="subtitle" style="text-transform: uppercase;">
     <span class="icon is-medium">
@@ -38,6 +42,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     Generic obligation
   </p>
 {% endblock %}
+
 {% block content %}
 <section class="card">
   <header class="card-header">
@@ -74,6 +79,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
   </section>
 
+  {% if perms.cube.view_license %}
   <section class="card">
     <header class="card-header">
       <p class="card-header-title">
@@ -109,7 +115,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <div class="level-right">
               <div class="level-item">
                 <p>
-                  <a href="/license/{{obligation.license.id}}">
+                  <a href="{% url "cube:license" obligation.license.id %}">
                     <span class="tag {{ obligation.license|licenseAllowedCSS }}">
                       <i class="fas fa-balance-scale"> </i> . {{ obligation.license.spdx_id }}
                     </span>
@@ -126,4 +132,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
       </div>
     {% endfor %}
+  {% else %}
+    <p>You do not have the permission to view related licenses and obligations.</p>
+  {% endif %}
 {% endblock %}
