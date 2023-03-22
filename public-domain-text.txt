@@ -26,6 +26,14 @@ text = '''
 text here
 '''
 
+package = python-llvmlite
+location = https://github.com/numba/llvmlite/blob/v0.39.1/versioneer.py#L278-L280
+text = '''
+To make Versioneer easier to embed, all its code is hereby released into the
+public domain. The `_version.py` that it creates is also in the public
+domain.
+'''
+
 package = perl-libxml-perl
 location = https://metacpan.org/release/KMACLEOD/libxml-perl-0.08/source/lib/XML/Handler/Sample.pm
 text = '''
