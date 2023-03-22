@@ -212,7 +212,7 @@ class ReleaseBomExportView(LoginRequiredMixin, PermissionRequiredMixin, DetailVi
         return response
 
 
-class ReleaseSBOMView(
+class ReleaseBomView(
     LoginRequiredMixin,
     SearchMixin,
     ReleaseContextMixin,

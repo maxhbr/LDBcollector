@@ -156,7 +156,7 @@ urlpatterns = [
     ),
     path(
         "release/<int:release_pk>/bom/",
-        views.ReleaseSBOMView.as_view(),
+        views.ReleaseBomView.as_view(),
         name="release_bom",
     ),
     path(
