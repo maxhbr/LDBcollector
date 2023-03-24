@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.15
+Version:        1.16
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -88,6 +88,35 @@ make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %changelog
+* Fri Mar 24 2023 Miroslav Suchý <msuchy@redhat.com> 1.16-1
+- Add public-domain text for python-multiprocess
+- Add public domain text for versioneer in python-llvmlite
+- Add Martin-Birgmeier
+- Add public domain license in perl-libxml-perl
+- Add public domain license in perl-Math-Int64
+- Add public domain license in perl-Net-OpenID-Consumer
+- Add public domain license in perl-Net-OpenID-Server
+- Add public domain license in perl-perlfaq
+- Update GPL-2.0-only_WITH_389-exception.toml
+- Add new file: GPL-2.0-only WITH 389-exception
+- Add public-domain text for jo
+- Add public-domain license texts for abseil-cpp
+- Update public-domain-text.txt for ecl
+- Update public-domain-text.txt for gap-pkg-profiling
+- Update public-domain-text.txt for icu4j
+- Update public-domain-text.txt for mona
+- Update public-domain-text.txt for pl
+- Update public-domain-text.txt for pvs-sbcl
+- Add Blessing
+- Add new file: HPND-sell-variant-MIT-disclaimer
+- Add new file: OFFIS
+- Add new file: UCAR
+- Add new file: TPL-1.0
+- Add new file: Brian-Gladman-3-Clause
+- Add new file: OpenPBS.toml
+- Update public-domain-text.txt for python-pdfminer
+- Add MagniComp-EULA as not-allowed
+
 * Sun Mar 12 2023 Miroslav Suchý <msuchy@redhat.com> 1.15-1
 - Update Spencer-94.toml
 - Add Spencer-94
