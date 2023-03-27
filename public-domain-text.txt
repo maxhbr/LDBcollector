@@ -27,6 +27,13 @@ text here
 '''
 
 package = perl
+location = https://github.com/Perl/perl5/blob/blead/ext/SDBM_File/sdbm.h#L4-L5
+text = '''
+ * author: oz@nexus.yorku.ca
+ * status: public domain. 
+'''
+
+package = perl
           perl-Test-Simple
 location = https://github.com/Test-More/test-more/blob/master/lib/Test/Tutorial.pod
 text = '''
