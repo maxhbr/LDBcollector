@@ -26,6 +26,17 @@ text = '''
 text here
 '''
 
+package = perl
+          perl-Test-Simple
+location = https://github.com/Test-More/test-more/blob/master/lib/Test/Tutorial.pod
+text = '''
+Irrespective of its distribution, all code examples in these files
+are hereby placed into the public domain.  You are permitted and
+encouraged to use this code in your own programs for fun
+or for profit as you see fit.  A simple comment in the code giving
+credit would be courteous but is not required.
+'''
+
 package = python-multiprocess
 location = https://github.com/uqfoundation/multiprocess/blob/273ee14261c9e08d794ab55f3398926e04a77364/py3.11/doc/html4css1.css#L6
 text = '''
