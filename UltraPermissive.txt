@@ -25,6 +25,17 @@ text = '''
 text here
 '''
 
+package = perl
+location = https://github.com/Perl/perl5/blob/blead/pod/perlunicook.pod#copyright-and-licence
+text = '''
+Most of these examples taken from the current edition of the “Camel Book”;
+that is, from the 4ᵗʰ Edition of I<Programming Perl>, Copyright © 2012 Tom
+Christiansen <et al.>, 2012-02-13 by O’Reilly Media.  The code itself is
+freely redistributable, and you are encouraged to transplant, fold,
+spindle, and mutilate any of the examples in this manpage however you please
+for inclusion into your own programs without any encumbrance whatsoever.
+Acknowledgement via code comment is polite but not required.
+'''
 
 package = perl-XML-Writer
 location = https://metacpan.org/release/JOSEPHW/XML-Writer-0.900/source/LICENSE
