@@ -8,54 +8,54 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}Product: {{ product.name }}{% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:products'%}">Products</a></li>
-  <li>{{ product.name }}</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:products'%}">Products</a></li>
+    <li>{{ product.name }}</li>
+  </ul>
 {% endblock %}
 
 {% block actions %}
-{% if perms.cube.change_product %}
-  <a class="button" href="{% url "cube:product_edit" product.id %}">
-    <span class="icon">
-      <i class="fas fa-edit"></i>
-    </span>
-    <span>Edit this product</span>
-  </a>
-{% endif %}
-{% if perms.cube.add_release %}
-<a class="button is-info is-inverted" href="{% url 'cube:release_add' product.id %} ">
-  <span class="icon"><i class="fas fa-plus"></i></span>
-  <span>Create a release for this product</span>
-</a>
-{% endif %}
+  {% if perms.cube.change_product %}
+    <a class="button" href="{% url "cube:product_edit" product.id %}">
+      <span class="icon">
+        <i class="fas fa-edit"></i>
+      </span>
+      <span>Edit this product</span>
+    </a>
+  {% endif %}
+  {% if perms.cube.add_release %}
+    <a class="button is-info is-inverted" href="{% url 'cube:release_add' product.id %} ">
+      <span class="icon"><i class="fas fa-plus"></i></span>
+      <span>Create a release for this product</span>
+    </a>
+  {% endif %}
 {% endblock %}
 
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">{{ product.name }}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">{{ product.name }}</p>
+  </div>
 {% endblock %}
 
 {% block infoitem %}
-<p class="subtitle" style="text-transform: uppercase;">
-  <span class="icon is-medium"><i class="fas fa-cubes"></i></span> Product
-</p>
+  <p class="subtitle" style="text-transform: uppercase;">
+    <span class="icon is-medium"><i class="fas fa-cubes"></i></span> Product
+  </p>
 {% endblock %}
 
 {% block content %}
-<p>
-  <b>Categories:</b>
-  {% for category in product.categories.all %}
-    <a href="{% url 'cube:category_detail' category.id %}">
-      <span class="tag is-dark">{{ category }}</span>
-    </a>
-  {% endfor %}
-</p>
-<p>
-  <b>Description:</b>
-</p>
+  <p>
+    <b>Categories:</b>
+    {% for category in product.categories.all %}
+      <a href="{% url 'cube:category_detail' category.id %}">
+        <span class="tag is-dark">{{ category }}</span>
+      </a>
+    {% endfor %}
+  </p>
+  <p>
+    <b>Description:</b>
+  </p>
   {% if product.description %}
     <div class="box">
       <p>{{ product.description }}</p>
@@ -63,46 +63,46 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% else %}
     <p><i>No description</i></p>
   {% endif %}
-<p>
-  <b>Owner:</b> {{ product.owner }} - {{ product.owner.first_name }} {{ product.owner.last_name }}
-</p>
+  <p>
+    <b>Owner:</b> {{ product.owner }} - {{ product.owner.first_name }} {{ product.owner.last_name }}
+  </p>
 
-<h2 class="title is-2">Releases for this product</h2>
-{% if perms.cube.view_release %}
-<table class="table is-striped is-hoverable is-fullwidth">
-  <thead>
-    <tr>
-      <th>Product</th>
-      <th>Release</th>
-      <th>Status</th>
-      <th>Dependencies</th>
-      <th>Validation Steps</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for release in product.releases.all %}
-      <tr>
-        <td>{{product.name}}</td>
-        <td><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a>
-        </td>
-        <td>{{release.ship_status}}</td>
-        <td>{{release.usage_set.all|length}}</td>
-        <td>
-          <progress class="progress is-primary" value="{{release.valid_step|default:1}}" max="5">15%
-          </progress>
-        </td>
-        <td>
-          <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
-          <a href="{%  url 'cube:release_import' release.id %}"><i class="fas fa-upload"></i></a> |
-          <a href="{% url 'cube:release_edit' release.id %}"><i class="far fa-edit"></i></a>
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-{% else %}
-You don't have the permission to view releases.
-{% endif %}
+  <h2 class="title is-2">Releases for this product</h2>
+  {% if perms.cube.view_release %}
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Release</th>
+          <th>Status</th>
+          <th>Dependencies</th>
+          <th>Validation Steps</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for release in product.releases.all %}
+          <tr>
+            <td>{{product.name}}</td>
+            <td><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a>
+            </td>
+            <td>{{release.ship_status}}</td>
+            <td>{{release.usage_set.all|length}}</td>
+            <td>
+              <progress class="progress is-primary" value="{{release.valid_step|default:1}}" max="5">15%
+              </progress>
+            </td>
+            <td>
+              <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
+              <a href="{%  url 'cube:release_import' release.id %}"><i class="fas fa-upload"></i></a> |
+              <a href="{% url 'cube:release_edit' release.id %}"><i class="far fa-edit"></i></a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    You don't have the permission to view releases.
+  {% endif %}
 {% endblock %}
 

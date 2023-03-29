@@ -7,23 +7,23 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 {% extends "cube/cube.html" %}
 {% block title %}License choices{% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li>License choices rules</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li>License choices rules</li>
+  </ul>
 {% endblock %}
 
 {% block herozone %}
-<h1 class="title">
-  <span class="icon is-medium"><i class="fas fa-project-diagram"></i></span>
-  License choices rules
-</h1>
+  <h1 class="title">
+    <span class="icon is-medium"><i class="fas fa-project-diagram"></i></span>
+    License choices rules
+  </h1>
 {% endblock %}
 
 {% block content %}
-{% include "cube/includes/list_nav.html" %}
+  {% include "cube/includes/list_nav.html" %}
   <p>This is the list of <em>global</em> license choices, which apply on all components and products.
-  See <a href="{% url 'admin:cube_licensechoice_changelist' %}"> all license choices</a>.</p>
+    See <a href="{% url 'admin:cube_licensechoice_changelist' %}"> all license choices</a>.</p>
   <table class="table is-striped is-hoverable is-fullwidth">
     <thead>
       <tr>
@@ -35,21 +35,21 @@ SPDX-License-Identifier: AGPL-3.0-only -->
       </tr>
     </thead>
     <tbody>
-  {% for rule in object_list %}
-      <tr>
-        <td>{{ rule.expression_in }}</td>
-        <td>{{ rule.expression_out }}</td>
-        <td>{{ rule.explanation|truncatechars:50 }}</td>
-        <td>{{ rule.updated }} ({{ rule.author|default:"<em>author unknown</em>" }})</td>
-        <td>
-          {% if perms.cube.change_licensechoice %}
-          <a href="{%url 'admin:cube_licensechoice_change' rule.id %}"><i class="far fa-edit"></i></a>
-          {% endif %}
-        </td>
-      </tr>
-  {% endfor %}
-  </tbody>
-</table>
+      {% for rule in object_list %}
+        <tr>
+          <td>{{ rule.expression_in }}</td>
+          <td>{{ rule.expression_out }}</td>
+          <td>{{ rule.explanation|truncatechars:50 }}</td>
+          <td>{{ rule.updated }} ({{ rule.author|default:"<em>author unknown</em>" }})</td>
+          <td>
+            {% if perms.cube.change_licensechoice %}
+              <a href="{%url 'admin:cube_licensechoice_change' rule.id %}"><i class="far fa-edit"></i></a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 {% endblock %}
 
 

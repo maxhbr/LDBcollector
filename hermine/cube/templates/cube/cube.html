@@ -74,125 +74,125 @@ SPDX-License-Identifier: MIT
           <p class="menu-label">Development</p>
           <ul class="menu-list">
             {% if perms.cube.view_product or perms.cube.view_category %}
-            <li>
-              <a class="has-icon has-dropdown-icon">
-                <span class="icon"><i class="fas fa-cubes"></i></span>
-                <span class="menu-item-label">Your products</span>
-                <div class="dropdown-icon">
-                  <span class="icon"><i class="fas fa-caret-right"></i></span>
-                </div>
-              </a>
-              <ul>
-                {% if perms.cube.view_product %}
-                <li>
-                  <a href="{% url 'cube:products' %}">
-                    <span>All products</span>
-                  </a>
-                </li>
-                {% endif %}
-                {% if perms.cube.view_category %}
-                <li>
-                  <a href="{% url 'cube:categories' %}">
-                    <span>Product categories</span>
-                  </a>
-                </li>
-                {% endif %}
-              </ul>
-            </li>
+              <li>
+                <a class="has-icon has-dropdown-icon">
+                  <span class="icon"><i class="fas fa-cubes"></i></span>
+                  <span class="menu-item-label">Your products</span>
+                  <div class="dropdown-icon">
+                    <span class="icon"><i class="fas fa-caret-right"></i></span>
+                  </div>
+                </a>
+                <ul>
+                  {% if perms.cube.view_product %}
+                    <li>
+                      <a href="{% url 'cube:products' %}">
+                        <span>All products</span>
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if perms.cube.view_category %}
+                    <li>
+                      <a href="{% url 'cube:categories' %}">
+                        <span>Product categories</span>
+                      </a>
+                    </li>
+                  {% endif %}
+                </ul>
+              </li>
             {% endif %}
             {% if perms.cube.view_component or perms.cube.view_licensecuration %}
-            <li>
-              <a class="has-icon has-dropdown-icon">
-                <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
-                <span class="menu-item-label">Components</span>
-                <div class="dropdown-icon">
-                  <span class="icon"><i class="fas fa-caret-right"></i></span>
-                </div>
-              </a>
-              <ul>
-                {% if perms.cube.view_component %}
-                <li>
-                  <a href="{% url 'cube:components' %}">
-                    <span>Complete List</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'cube:populars' %}">
-                    <span>Most used ones</span>
-                  </a>
-                </li>
-                {% endif %}
-                {% if perms.cube.view_licensecuration %}
-                <li>
-                  <a href="{% url 'cube:licensecurations' %}">
-                    <span>Curations</span>
-                  </a>
-                </li>
-                {% endif %}
-              </ul>
-            </li>
+              <li>
+                <a class="has-icon has-dropdown-icon">
+                  <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
+                  <span class="menu-item-label">Components</span>
+                  <div class="dropdown-icon">
+                    <span class="icon"><i class="fas fa-caret-right"></i></span>
+                  </div>
+                </a>
+                <ul>
+                  {% if perms.cube.view_component %}
+                    <li>
+                      <a href="{% url 'cube:components' %}">
+                        <span>Complete List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'cube:populars' %}">
+                        <span>Most used ones</span>
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if perms.cube.view_licensecuration %}
+                    <li>
+                      <a href="{% url 'cube:licensecurations' %}">
+                        <span>Curations</span>
+                      </a>
+                    </li>
+                  {% endif %}
+                </ul>
+              </li>
             {% endif %}
           </ul>
           <p class="menu-label">Legal
           </p>
           <ul class="menu-list">
             {% if perms.cube.view_license %}
-            <li>
-              <a href="{% url 'cube:licenses' %}" class="has-icon">
-                <span class="icon">
-                  <i class="fas fa-balance-scale">
-                  </i>
-                </span>
-                <span class="menu-item-label">Licenses
-                </span>
-              </a>
-            </li>
+              <li>
+                <a href="{% url 'cube:licenses' %}" class="has-icon">
+                  <span class="icon">
+                    <i class="fas fa-balance-scale">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Licenses
+                  </span>
+                </a>
+              </li>
             {% endif %}
             {% if perms.cube.view_generic %}
-            <li>
-              <a href="{% url 'cube:generics' %}" class=" has-icon">
-                <span class="icon">
-                  <i class="fas fa-award">
-                  </i>
-                </span>
-                <span class="menu-item-label">Generic obligations
-                </span>
-              </a>
-            </li>
+              <li>
+                <a href="{% url 'cube:generics' %}" class=" has-icon">
+                  <span class="icon">
+                    <i class="fas fa-award">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Generic obligations
+                  </span>
+                </a>
+              </li>
             {% endif %}
             {% if perms.cube.view_derogation %}
-            <li>
-              <a href="{% url 'cube:authorized_context_list' %}" class=" has-icon">
-                <span class="icon">
-                  <i class="fas fa-clipboard-check">
-                  </i>
-                </span>
-                <span class="menu-item-label">Authorized contexts
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="{% url 'cube:derogations' %}" class=" has-icon">
-                <span class="icon">
-                  <i class="fas fa-clipboard-check">
-                  </i>
-                </span>
-                <span class="menu-item-label">Derogations
-                </span>
-              </a>
-            </li>
+              <li>
+                <a href="{% url 'cube:authorized_context_list' %}" class=" has-icon">
+                  <span class="icon">
+                    <i class="fas fa-clipboard-check">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Authorized contexts
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'cube:derogations' %}" class=" has-icon">
+                  <span class="icon">
+                    <i class="fas fa-clipboard-check">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Derogations
+                  </span>
+                </a>
+              </li>
             {% endif %}
             {% if perms.cube.view_licensechoice %}
-            <li>
-              <a href="{% url 'cube:licensechoices' %}" class=" has-icon">
-                <span class="icon">
-                  <i class="fas fa-project-diagram">
-                  </i>
-                </span>
-                <span class="menu-item-label">License choices
-                </span>
-              </a>
-            </li>
+              <li>
+                <a href="{% url 'cube:licensechoices' %}" class=" has-icon">
+                  <span class="icon">
+                    <i class="fas fa-project-diagram">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">License choices
+                  </span>
+                </a>
+              </li>
             {% endif %}
           </ul>
           <p class="menu-label">Tools

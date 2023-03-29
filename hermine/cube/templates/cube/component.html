@@ -10,34 +10,34 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}Component{{ object.name }} {% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:components' %}">Components</a></li>
-  <li>{{ object.name }}</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:components' %}">Components</a></li>
+    <li>{{ object.name }}</li>
+  </ul>
 {% endblock %}
 
 {% block actions %}
-{% if perms.cube.change_component %}
-<a class="button" href="{% url "admin:cube_component_change" object.id %}" target="_blank">
-  <span class="icon">
-    <i class="fas fa-edit"></i>
-  </span>
-  <span>Edit this component</span>
-</a>
-{% endif %}
+  {% if perms.cube.change_component %}
+    <a class="button" href="{% url "admin:cube_component_change" object.id %}" target="_blank">
+      <span class="icon">
+        <i class="fas fa-edit"></i>
+      </span>
+      <span>Edit this component</span>
+    </a>
+  {% endif %}
 {% endblock %}
 
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">{{ object.name }}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">{{ object.name }}</p>
+  </div>
 {% endblock %}
 
 {% block infoitem %}
-<p class="subtitle" style="text-transform: uppercase;">
-  <span class="icon is-medium">
-    <i class="fas fa-puzzle-piece"></i>
+  <p class="subtitle" style="text-transform: uppercase;">
+    <span class="icon is-medium">
+      <i class="fas fa-puzzle-piece"></i>
     </span>
     Component
   </p>
@@ -57,15 +57,15 @@ SPDX-License-Identifier: AGPL-3.0-only
         </div>
         <div class="column">
           <p><span class="icon"><i class="fas fa-home"></i></span>Project home page:
-          <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a></p>
+            <a target="_blank" href="{{ object.homepage_url }}"> {{ object.homepage_url }}</a></p>
           {% if perms.cube.change_component %}
-          <p><a href="{% url 'cube:component_update_funding' object.id %}">Get/update funding info</a></p>
+            <p><a href="{% url 'cube:component_update_funding' object.id %}">Get/update funding info</a></p>
           {% endif %}
           {% if object.fundings.all %}
-          <p>You can fund this project that you rely on: </p>
-          {% for funding in object.fundings.all %}
-          <p><i class="fas fa-money-check-alt"></i> <a target="_blank" href="{{funding.url}}">{{funding.url|truncatechars:45 }}</a> </p>
-          {% endfor%}
+            <p>You can fund this project that you rely on: </p>
+            {% for funding in object.fundings.all %}
+              <p><i class="fas fa-money-check-alt"></i> <a target="_blank" href="{{funding.url}}">{{funding.url|truncatechars:45 }}</a> </p>
+            {% endfor%}
           {% endif%}
         </div>
       </div>
@@ -80,7 +80,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <p>The license expression is : <span class="icon"><i class="fas fa-balance-scale"></i></span>
       {% if version.corrected_license%}
         <strong>{{version.corrected_license}}</strong> (corrected from {{ version.spdx_valid_license_expr }})
-        
+
       {% else %}
         <strong>{{version.spdx_valid_license_expr}}</strong>
       {% endif %}
@@ -90,12 +90,12 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% if version.license_is_ambiguous %}
         <br>❌ License expression is ambiguous, corrected license needs to be specified
       {% endif %}
-    <p>This component is used in the following releases of your products:</p>
-    <ul>
-      {% for usage in version.usage_set.all %}
-        <li><a href="{% url 'cube:release_summary' usage.release.id %}"> <strong>{{ usage.release.product.name }}</strong> : {{ usage.release.release_number }} </a> </li>
-      {% endfor %}
-    </ul>
+      <p>This component is used in the following releases of your products:</p>
+      <ul>
+        {% for usage in version.usage_set.all %}
+          <li><a href="{% url 'cube:release_summary' usage.release.id %}"> <strong>{{ usage.release.product.name }}</strong> : {{ usage.release.release_number }} </a> </li>
+        {% endfor %}
+      </ul>
   {% endfor %}
 {% endblock %}
 

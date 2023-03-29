@@ -8,21 +8,21 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}Category : {{ category.name }}
 {% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:categories'%}">Categories</a></li>
-  <li>{{ category.name }}</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:categories'%}">Categories</a></li>
+    <li>{{ category.name }}</li>
+  </ul>
 {% endblock %}
 {% block actions %}
-{% if perms.cube.change_category %}
-<a class="button" href="{% url "cube:category_edit" object.id %}">
-  <span class="icon">
-    <i class="fas fa-edit"></i>
-  </span>
-  <span>Edit this category</span>
-</a>
-{% endif %}
+  {% if perms.cube.change_category %}
+    <a class="button" href="{% url "cube:category_edit" object.id %}">
+      <span class="icon">
+        <i class="fas fa-edit"></i>
+      </span>
+      <span>Edit this category</span>
+    </a>
+  {% endif %}
 {% endblock %}
 
 {% block herozone %}
@@ -31,72 +31,72 @@ SPDX-License-Identifier: AGPL-3.0-only
   </div>
 {% endblock %}
 {% block infoitem %}
-<p class="subtitle" style="text-transform: uppercase;">
-  <span class="icon is-medium">
-    <i class="fas fa-tags"></i>
+  <p class="subtitle" style="text-transform: uppercase;">
+    <span class="icon is-medium">
+      <i class="fas fa-tags"></i>
     </span>
     category
   </p>
 {% endblock %}
 {% block content %}
-<p>
-  <b>Description:</b>
-</p>
-{% if category.description %}
-<div class="box">
-  <p>{{ category.description }}</p>
-</div>
-{% else %}
-<p><i>No description</i></p>
-{% endif %}
+  <p>
+    <b>Description:</b>
+  </p>
+  {% if category.description %}
+    <div class="box">
+      <p>{{ category.description }}</p>
+    </div>
+  {% else %}
+    <p><i>No description</i></p>
+  {% endif %}
 
-<p><b>Owner:</b> {{ category.owner }} - {{ category.owner.first_name }} {{ category.owner.last_name }}</p>
+  <p><b>Owner:</b> {{ category.owner }} - {{ category.owner.first_name }} {{ category.owner.last_name }}</p>
 
-<h2 class="title is-2">Products for this category</h2>
-{% if perms.cube.view_product %}
-<table class="table is-striped is-hoverable is-fullwidth">
-  <thead>
-    <tr>
-      <th>Product</th>
-      <th>Description</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-{% for product in object.product_set.all %}
-  <tr>
-    <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
-    <td>{{product.description|truncatechars:30}}</td>
-    <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a>
-      {% if perms.cube.change_product %} | <a href="{% url 'admin:cube_product_change' product.id %}" target="_blank"><i class="far fa-edit"></i></a>{% endif %}
-    </td>
-  </tr>
-{% endfor %}
-</tbody>
-</table>
-{% else %}
-You don't have the permission to view products.
-{% endif %}
+  <h2 class="title is-2">Products for this category</h2>
+  {% if perms.cube.view_product %}
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for product in object.product_set.all %}
+          <tr>
+            <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
+            <td>{{product.description|truncatechars:30}}</td>
+            <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a>
+              {% if perms.cube.change_product %} | <a href="{% url 'admin:cube_product_change' product.id %}" target="_blank"><i class="far fa-edit"></i></a>{% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    You don't have the permission to view products.
+  {% endif %}
 
-<h2 class="title is-2">Licences with authorized contexts specific to this category</h2>
-{% if perms.cube.view_license %}
-<table class="table is-striped is-hoverable is-fullwidth">
-  <thead>
-    <tr>
-      <th>License</th>
-      <th>Justification</th>
-    </tr>
-  </thead>
-  <tbody>
-{% for context in object.derogation_set.all %}
-  <tr>
-    <td><a href="{% url 'cube:license' context.license.id %}">{{context.license}}</a></td>
-    <td>{{context.justification|truncatechars:30}}</td>
-  </tr>
-{% endfor %}
-</tbody>
-</table>
-{% else %}
-You don't have the permission to view licenses.
-{% endif %}
+  <h2 class="title is-2">Licences with authorized contexts specific to this category</h2>
+  {% if perms.cube.view_license %}
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead>
+        <tr>
+          <th>License</th>
+          <th>Justification</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for context in object.derogation_set.all %}
+          <tr>
+            <td><a href="{% url 'cube:license' context.license.id %}">{{context.license}}</a></td>
+            <td>{{context.justification|truncatechars:30}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    You don't have the permission to view licenses.
+  {% endif %}
 {% endblock %}

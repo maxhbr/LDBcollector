@@ -6,18 +6,18 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block title %}{{ release.product.name }} {{ release.release_number }}{% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
-  <li><a href="{% url "cube:release_summary" release.id %}">{{ release.release_number }}</a></li>
-  <li><a href="{% url "cube:release_validation" release.id %}">Validation</a></li>
-  <li>Curated licenses</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
+    <li><a href="{% url "cube:release_summary" release.id %}">{{ release.release_number }}</a></li>
+    <li><a href="{% url "cube:release_validation" release.id %}">Validation</a></li>
+    <li>Curated licenses</li>
+  </ul>
 {% endblock %}
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">{{ release.product.name }} {{ release.release_number }}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">{{ release.product.name }} {{ release.release_number }}</p>
+  </div>
 {% endblock %}
 {% block content %}
 
@@ -46,18 +46,18 @@ SPDX-License-Identifier: AGPL-3.0-only
                 {% if perms.cube.change_licensecuration %}<a href="{% url "cube:licensecuration_update"  usage.version.curations.0.pk %}">Edit rule</a>{% endif %}
                 {% if usage.version.curations.0.expression_out != usage.version.corrected_license %}
                   <br><small>Expression does not match curation
-                  {% if perms.cube.change_version %}
-                    <form action="{% url "cube:release_update_license_curation" usage.pk %}" method="POST" class="form is-inline">
-                    {% csrf_token %}
-                    <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form>
-                  {% endif %}</small>
+                    {% if perms.cube.change_version %}
+                      <form action="{% url "cube:release_update_license_curation" usage.pk %}" method="POST" class="form is-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form>
+                    {% endif %}</small>
                 {% endif %}
               {% elif usage.version.curations|length > 1 %}
                 {{ usage.version.curations|length }} curations apply. {% if perms.cube.change_licensecuration %}Edit curations
-                {% for curation in usage.version.curations %}
-                  <a href="{% url "cube:licensecuration_update" curation.pk %}">
-                    {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
-                {% endfor %}{% endif %}
+                  {% for curation in usage.version.curations %}
+                    <a href="{% url "cube:licensecuration_update" curation.pk %}">
+                      {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
+                  {% endfor %}{% endif %}
               {% endif %}
             </td>
             <td>{% if perms.cube.change_version %}

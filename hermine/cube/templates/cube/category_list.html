@@ -7,55 +7,55 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}Catgegories{% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li>Categories</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li>Categories</li>
+  </ul>
 {% endblock %}
 
 {% block actions %}
-{% if perms.cube.add_category %}
-<a class="button is-info is-inverted" href="{% url 'cube:category_add' %}">
-  <span class="icon">
-    <i class="fas fa-plus"></i>
-  </span>
-  <span>Create a new category</span>
-</a>
-{% endif %}
+  {% if perms.cube.add_category %}
+    <a class="button is-info is-inverted" href="{% url 'cube:category_add' %}">
+      <span class="icon">
+        <i class="fas fa-plus"></i>
+      </span>
+      <span>Create a new category</span>
+    </a>
+  {% endif %}
 {% endblock %}
 
 {% block herozone %}
-<h1 class="title">
-  <span class="icon is-medium"><i class="fas fa-tags"></i></span>
-  Product categories
-</h1>
+  <h1 class="title">
+    <span class="icon is-medium"><i class="fas fa-tags"></i></span>
+    Product categories
+  </h1>
 {% endblock %}
 
 {% block content %}
-<table class="table is-striped is-hoverable is-fullwidth">
-  <thead>
-    <tr>
-      <th>Categories</th>
-      <th>Description</th>
-      <th>Owner</th>
-      <th># of products</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-{% for category in object_list %}
-  <tr>
-    <td><a href="{% url 'cube:category_detail' category.id %}">{{category.name}}</a></td>
-    <td>{{ category.description|truncatechars:50 }}</td>
-    <td>{{category.owner}}</td>
-    <td>{{category.product_set.all|length}}</td>
-    <td><a href="{% url 'cube:category_detail' category.id %}"><i class="fas fa-info-circle"></i></a>
-      {% if perms.cube.change_category %} | <a href="{% url 'cube:category_edit' category.id %}"><i class="far fa-edit"></i></a>{% endif %}
-    </td>
-  </tr>
-{% endfor %}
-</tbody>
-</table>
+  <table class="table is-striped is-hoverable is-fullwidth">
+    <thead>
+      <tr>
+        <th>Categories</th>
+        <th>Description</th>
+        <th>Owner</th>
+        <th># of products</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for category in object_list %}
+        <tr>
+          <td><a href="{% url 'cube:category_detail' category.id %}">{{category.name}}</a></td>
+          <td>{{ category.description|truncatechars:50 }}</td>
+          <td>{{category.owner}}</td>
+          <td>{{category.product_set.all|length}}</td>
+          <td><a href="{% url 'cube:category_detail' category.id %}"><i class="fas fa-info-circle"></i></a>
+            {% if perms.cube.change_category %} | <a href="{% url 'cube:category_edit' category.id %}"><i class="far fa-edit"></i></a>{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 {% endblock %}
 
 

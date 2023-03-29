@@ -9,67 +9,67 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% load cube_tags %}
 {% block title %}{{ release.product.name }} {{release.release_number}}{% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
-  <li><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a></li>
-  <li><a href="{% url 'cube:release_oblig' release.id %}">Obligations</a></li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
+    <li><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a></li>
+    <li><a href="{% url 'cube:release_oblig' release.id %}">Obligations</a></li>
+  </ul>
 {% endblock %}
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">Release: {{release.release_number}} — {{generic.name}}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">Release: {{release.release_number}} — {{generic.name}}</p>
+  </div>
 {% endblock %}"
 
 {% block content %}
 
   <div id="content-main">
-<p>List of components for which the following generic obligation has to be fulfilled</p>
-<blockquote>{{generic.description}}</blockquote>
+    <p>List of components for which the following generic obligation has to be fulfilled</p>
+    <blockquote>{{generic.description}}</blockquote>
 
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Version</th>
-      <th>Linking</th>
-      <th>Exploitation</th>
-      <th>Modified</th>
-      <th>License of this version</th>
-      <th>License of this usage</th>
-      <th>Applicable Licenses</th>
-      <th>Edit</th>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Version</th>
+          <th>Linking</th>
+          <th>Exploitation</th>
+          <th>Modified</th>
+          <th>License of this version</th>
+          <th>License of this usage</th>
+          <th>Applicable Licenses</th>
+          <th>Edit</th>
 
-    </tr>
-  </thead>
-  <tbody>
+        </tr>
+      </thead>
+      <tbody>
 
-{% for usage in usages %}
+        {% for usage in usages %}
 
 
-    <tr>
-      <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
-      <td>{{ usage.version.version_number }}</td>
-      <td>{{ usage.linking }}</td>
-      <td>{{ usage.get_exploitation_display }}</td>
-      <td>{{ usage.modified|yesno:"yes,no,maybe" }}</td>
-      <td>{{ usage.version.effective_license}}</td>
-      <td>{{ usage.license_expression }}</td>
-      <td>{% for license_chosen in usage.licenses_chosen.all %}
-        <span class="tag {{ license_chosen|licenseAllowedCSS }}">
-    {{ license_chosen.spdx_id }}
-  </span>
-      {% endfor %}
-       </td>
-      <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
-            </tr>
-{% endfor %}
-  </tbody>
-</table>
+          <tr>
+            <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
+            <td>{{ usage.version.version_number }}</td>
+            <td>{{ usage.linking }}</td>
+            <td>{{ usage.get_exploitation_display }}</td>
+            <td>{{ usage.modified|yesno:"yes,no,maybe" }}</td>
+            <td>{{ usage.version.effective_license}}</td>
+            <td>{{ usage.license_expression }}</td>
+            <td>{% for license_chosen in usage.licenses_chosen.all %}
+              <span class="tag {{ license_chosen|licenseAllowedCSS }}">
+                {{ license_chosen.spdx_id }}
+              </span>
+            {% endfor %}
+            </td>
+            <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
 
-</div>
+  </div>
 {% endblock %}
 
 

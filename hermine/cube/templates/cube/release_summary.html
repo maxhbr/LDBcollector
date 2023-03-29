@@ -11,69 +11,70 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}{{ release.product.name }} {{release.release_number}}{% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
-  <li>{{release.release_number}}</li>
-  <li>Summary</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
+    <li>{{release.release_number}}</li>
+    <li>Summary</li>
+  </ul>
 {% endblock %}
 
 {% block actions %}
-{% if perms.cube.change_release %}
-<a class="button" href="{% url "cube:release_edit" release.id %}">
-  <span class="icon">
-    <i class="fas fa-edit"></i>
-  </span>
-  <span>Edit this release</span>
-</a>
-{% endif %}
+  {% if perms.cube.change_release %}
+    <a class="button" href="{% url "cube:release_edit" release.id %}">
+      <span class="icon">
+        <i class="fas fa-edit"></i>
+      </span>
+      <span>Edit this release</span>
+    </a>
+  {% endif %}
 {% endblock %}
 
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">Release: {{release.release_number}}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">Release: {{release.release_number}}</p>
+  </div>
 {% endblock %}
 {% block content %}
   {% include "cube/includes/release_tabs.html" with active_tab="summary" %}
 
-<div class="tile is-ancestor">
-  <div class="tile is-parent">
-    <div class="card tile is-child">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon"><i class="fas fa-info-circle"></i></span>
-          Release details
-        </p>
-      </header>
-      <div class="card-content">
-        <div class="columns">
-          <div class="column">
-            <div class="field">
-              <label class="label">Status</label>
-              <div class="control is-clearfix">
-                <input type="text" readonly value="{{release.get_ship_status_display}}" class="input is-static">
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <div class="card tile is-child">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon"><i class="fas fa-info-circle"></i></span>
+            Release details
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label">Status</label>
+                <div class="control is-clearfix">
+                  <input type="text" readonly value="{{release.get_ship_status_display}}" class="input is-static">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Reference commit</label>
+                <div class="control is-clearfix">
+                  <input type="text" readonly value="{{release.commit}}" class="input is-static">
+                </div>
               </div>
             </div>
-            <div class="field">
-              <label class="label">Reference commit</label>
-              <div class="control is-clearfix">
-                <input type="text" readonly value="{{release.commit}}" class="input is-static">
+            <div class="column">
+              <div class="field">
+                <label class="label">Publication date</label>
+                <div class="control is-clearfix">
+                  <input type="text" readonly value="{{release.pub_date}}" class="input is-static">
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="field">
-              <label class="label">Publication date</label>
-              <div class="control is-clearfix">
-                <input type="text" readonly value="{{release.pub_date}}" class="input is-static">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Validated steps</label>
-              <div class="control is-clearfix">
-                <input type="text" readonly value="{{ release.valid_step }}/5" class="input is-static">
+              <div class="field">
+                <label class="label">Validated steps</label>
+                <div class="control is-clearfix">
+                  <input type="text" readonly value="{{ release.valid_step }}/5" class="input is-static">
+                </div>
               </div>
             </div>
           </div>
@@ -81,21 +82,20 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
     </div>
   </div>
-</div>
 
 
-<div class="tile is-ancestor">
-  <div class="tile is-parent">
-    <div class="card tile is-child">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon"><i class="fas fa-sitemap"></i></span>
-          Exploitation decisions for the different scopes of the release
-        </p>
-      </header>
-      <div class="card-content">
-        <table>
-          <thead>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <div class="card tile is-child">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon"><i class="fas fa-sitemap"></i></span>
+            Exploitation decisions for the different scopes of the release
+          </p>
+        </header>
+        <div class="card-content">
+          <table>
+            <thead>
               <tr>
                 <th>Sub project</th>
                 <th>Scope</th>
@@ -103,8 +103,8 @@ SPDX-License-Identifier: AGPL-3.0-only
                 <th>Exploitation</th>
                 <th>Actions</th>
               </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
               {% for scope in full_exploitations %}
                 <tr>
                   <td>{{ scope.project }}</td>
@@ -112,30 +112,30 @@ SPDX-License-Identifier: AGPL-3.0-only
                   <td>{{ scope.count }}</td>
                   <td>
                     {% if scope.exploitation %}
-                    {{ scope.exploitation }}
+                      {{ scope.exploitation }}
                     {% else %}
-                    <span class="tag is-warning">No exploitation has been defined for this scope</span>
+                      <span class="tag is-warning">No exploitation has been defined for this scope</span>
                     {% endif%}
                   </td>
                   <td>
                     {% if scope.exploitation %}
-                    <a href="{% url 'cube:release_edit_exploitation' release.id scope.exploitation_id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-                    <a href="{% url 'cube:release_delete_exploitation' release.id scope.exploitation_id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+                      <a href="{% url 'cube:release_edit_exploitation' release.id scope.exploitation_id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+                      <a href="{% url 'cube:release_delete_exploitation' release.id scope.exploitation_id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
                     {% else %}
-                    <a href="{% url 'cube:release_exploitation_create' release.id %}?project={{scope.project}}&scope={{scope.scope}}"><span class="icon"><i class="fas fa-plus-circle"></i></span></a>
+                      <a href="{% url 'cube:release_exploitation_create' release.id %}?project={{scope.project}}&scope={{scope.scope}}"><span class="icon"><i class="fas fa-plus-circle"></i></span></a>
                     {% endif%}
                   </td>
                 </tr>
               {% endfor %}
-            <tr>
-              <td><a href="{% url 'cube:release_exploitation_create' release.id %}" class="button is-primary">Create a new exploitation decision</a></td>
-              <td></td>
-            </tr>
-          </tbody>
+              <tr>
+                <td><a href="{% url 'cube:release_exploitation_create' release.id %}" class="button is-primary">Create a new exploitation decision</a></td>
+                <td></td>
+              </tr>
+            </tbody>
           </table>
+        </div>
       </div>
     </div>
   </div>
-</div>
 {% endblock %}
 

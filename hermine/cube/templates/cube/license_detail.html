@@ -11,69 +11,69 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}{{ license.long_name }} {% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
-  <li>{{ license.spdx_id }}</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
+    <li>{{ license.spdx_id }}</li>
+  </ul>
 {% endblock %}
 
 {% block actions %}
-{% if perms.cube.change_license %}
-<a class="button" href="{% url "cube:license_edit" license.id %}">
-  <span class="icon">
-    <i class="fas fa-edit"></i>
-  </span>
-  <span>Edit this license</span>
-</a>
-{% endif %}
-
-<div class="dropdown is-hoverable is-right">
-  <div class="dropdown-trigger">
-    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-      <span>Actions</span>
-      <span class="icon is-small">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
+  {% if perms.cube.change_license %}
+    <a class="button" href="{% url "cube:license_edit" license.id %}">
+      <span class="icon">
+        <i class="fas fa-edit"></i>
       </span>
-    </button>
-  </div>
-  <div class="dropdown-menu" id="dropdown-menu" role="menu">
-    <div class="dropdown-content">
-      <a href="{% url "cube:export_license" license.id %}" class="dropdown-item">
+      <span>Edit this license</span>
+    </a>
+  {% endif %}
+
+  <div class="dropdown is-hoverable is-right">
+    <div class="dropdown-trigger">
+      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+        <span>Actions</span>
         <span class="icon is-small">
-          <i class="fas fa-download"></i>
+          <i class="fas fa-angle-down" aria-hidden="true"></i>
         </span>
-        <span>Export as JSON</span>
-      </a>
-      <a href="{% url "cube:print_license" license.id %}" class="dropdown-item">
-        <span class="icon is-small">
-          <i class="fas fa-print"></i>
-        </span>
-        <span>Print (ODT export)</span>
-      </a>
-      {% if perms.cube.change_license %}
-      <a href="{% url "admin:cube_license_change" license.id %}" class="dropdown-item"  target="_blank">
-        <span class="icon is-small">
-          <i class="fas fa-edit"></i>
-        </span>
-        <span>Edit in admin</span>
-      </a>
-      {% endif %}
+      </button>
+    </div>
+    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+      <div class="dropdown-content">
+        <a href="{% url "cube:export_license" license.id %}" class="dropdown-item">
+          <span class="icon is-small">
+            <i class="fas fa-download"></i>
+          </span>
+          <span>Export as JSON</span>
+        </a>
+        <a href="{% url "cube:print_license" license.id %}" class="dropdown-item">
+          <span class="icon is-small">
+            <i class="fas fa-print"></i>
+          </span>
+          <span>Print (ODT export)</span>
+        </a>
+        {% if perms.cube.change_license %}
+          <a href="{% url "admin:cube_license_change" license.id %}" class="dropdown-item"  target="_blank">
+            <span class="icon is-small">
+              <i class="fas fa-edit"></i>
+            </span>
+            <span>Edit in admin</span>
+          </a>
+        {% endif %}
+      </div>
     </div>
   </div>
-</div>
 {% endblock %}
 
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">{{ license.long_name }}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">{{ license.long_name }}</p>
+  </div>
 {% endblock %}
 
 {% block infoitem %}
-<p class="subtitle" style="text-transform: uppercase;">
-  <span class="icon is-medium">
-    <i class="fas fa-balance-scale"></i>
+  <p class="subtitle" style="text-transform: uppercase;">
+    <span class="icon is-medium">
+      <i class="fas fa-balance-scale"></i>
     </span>
     License
   </p>
@@ -84,7 +84,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <header class="card-header">
       <p class="card-header-title">
         <span class="icon">
-          <i class="fas fa-info-circle"></i> 
+          <i class="fas fa-info-circle"></i>
         </span>
         Main characteristics of this license
       </p>
@@ -112,13 +112,13 @@ SPDX-License-Identifier: AGPL-3.0-only
           </p>
           <p>Explanation of FOSS policy:</p>
           {% if license.allowed_explanation %}
-          <div class="content">
-           <blockquote>{{ license.allowed_explanation }}</blockquote>
-          </div>
+            <div class="content">
+              <blockquote>{{ license.allowed_explanation }}</blockquote>
+            </div>
           {% else %}
-          <p>
-            <em>No explanation has been given for this OSS policy</em> {% if perms.cube.change_license %}- <a href="{% url "cube:license_edit" license.id %}">Edit</a>{% endif %}
-          </p>
+            <p>
+              <em>No explanation has been given for this OSS policy</em> {% if perms.cube.change_license %}- <a href="{% url "cube:license_edit" license.id %}">Edit</a>{% endif %}
+            </p>
           {% endif %}
         </div>
         <div class="column">
@@ -188,17 +188,17 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% if license.allowed == "context" or license.context_derogations %}
     <section class="card">
       <header class="card-header">
-      <p class="card-header-title">
-        <span class="icon">
-          <i class="fas fa-exclamation-circle"></i>
-        </span>
-        Authorized contexts:
-      </p>
-    </header>
+        <p class="card-header-title">
+          <span class="icon">
+            <i class="fas fa-exclamation-circle"></i>
+          </span>
+          Authorized contexts:
+        </p>
+      </header>
 
       <div class="card-content">
-          {% if license.context_derogations %}
-        <p>There is {{ license.context_derogations.count }} generic contexts authorized for this license (listed below) and {% if license.derogations.count > 0 %} <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
+        {% if license.context_derogations %}
+          <p>There is {{ license.context_derogations.count }} generic contexts authorized for this license (listed below) and {% if license.derogations.count > 0 %} <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
           <table>
             <tr>
               <th>Linking</th>
@@ -228,13 +228,13 @@ SPDX-License-Identifier: AGPL-3.0-only
               </tr>
             {% endfor %}
           </table>
-          {% else %}
-            <p><em>There are no generic contexts of usage authorized for this license.</em>{% if license.derogations.count > 0 %} There are <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
-          {% endif %}
-            <p><a href="{% url "cube:authorized_context_create" license.id %}" class="button">
-            <span class="icon"><i class="fas fa-plus"></i></span>
-            <span>Add an authorized context</span>
-          </a></p>
+        {% else %}
+          <p><em>There are no generic contexts of usage authorized for this license.</em>{% if license.derogations.count > 0 %} There are <a href="{% url "admin:cube_derogation_changelist" %}?license__id__exact={{ license.id }}"> {{ license.product_derogations.count }} product-specific derogation{{ license.product_derogations.count|pluralize }}</a>.{% endif %}</p>
+        {% endif %}
+        <p><a href="{% url "cube:authorized_context_create" license.id %}" class="button">
+          <span class="icon"><i class="fas fa-plus"></i></span>
+          <span>Add an authorized context</span>
+        </a></p>
 
 
 
@@ -251,57 +251,57 @@ SPDX-License-Identifier: AGPL-3.0-only
     <div class="level-right">
       <div class="level-item">
         {% if perms.cube.add_obligation %}
-        <a href="{% url "cube:obligation_create" license.id %}" class="button">
-          <span class="icon"><i class="fas fa-plus"></i></span><span>Attach new obligation</span>
-        </a>
+          <a href="{% url "cube:obligation_create" license.id %}" class="button">
+            <span class="icon"><i class="fas fa-plus"></i></span><span>Attach new obligation</span>
+          </a>
         {% endif %}
       </div>
     </div>
   </div>
 
   {% if perms.cube.view_obligation %}
-  {% regroup license.obligation_set.all by generic.get_metacategory_display as metacategory_list %}
-  {% for metacategory in metacategory_list %}
-    <h3>Obligations related to {{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
-    {% for obligation in metacategory.list %}
-      <div class="card">
-        <header class="card-header level">
+    {% regroup license.obligation_set.all by generic.get_metacategory_display as metacategory_list %}
+    {% for metacategory in metacategory_list %}
+      <h3>Obligations related to {{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
+      {% for obligation in metacategory.list %}
+        <div class="card">
+          <header class="card-header level">
             <div class="card-header-title level-left">
               <p level-item>{{ obligation.name }} {% if obligation.passivity %}({{ obligation.passivity }}){% endif %}</p>
-          </div>
-          <div class="level-right">
-            <div class="buttons has-addons level-item">
-              <a href="{% url "cube:obligation_edit" obligation.id %}" class="button">
-                <span class="icon is-small"><i class="fas fa-edit"></i></span>
-                <span>Edit obligation</span>
-              </a>
-              <a href="{% url "cube:obligation_delete" obligation.id %}" class="button">
-                <span class="icon is-small"><i class="fas fa-trash-alt"></i></span>
-                <span>Delete obligation</span>
-              </a>
-          </div>
-          </div>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            {% if obligation.generic %}
-              <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
-            {% endif %}
-            {% if obligation.passivity == "Active" %}
-              <p>Applies:</p>
-              <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
-              <li>{{ obligation.get_trigger_expl_display }}</li></ul>
-            {% endif %}
-            <br>
-            <details>
-              <summary><strong>Corresponding text in the license:</strong></summary>
-            <blockquote><pre  style="white-space: pre-wrap;">{{ obligation.verbatim }}</pre></blockquote>
-            </details>
+            </div>
+            <div class="level-right">
+              <div class="buttons has-addons level-item">
+                <a href="{% url "cube:obligation_edit" obligation.id %}" class="button">
+                  <span class="icon is-small"><i class="fas fa-edit"></i></span>
+                  <span>Edit obligation</span>
+                </a>
+                <a href="{% url "cube:obligation_delete" obligation.id %}" class="button">
+                  <span class="icon is-small"><i class="fas fa-trash-alt"></i></span>
+                  <span>Delete obligation</span>
+                </a>
+              </div>
+            </div>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              {% if obligation.generic %}
+                <p>Related to generic obligation: <a href="{% url 'cube:generic' obligation.generic.id %}">{{obligation.generic}}</a> </p>
+              {% endif %}
+              {% if obligation.passivity == "Active" %}
+                <p>Applies:</p>
+                <ul><li>{{ obligation.get_trigger_mdf_display }}</li>
+                  <li>{{ obligation.get_trigger_expl_display }}</li></ul>
+              {% endif %}
+              <br>
+              <details>
+                <summary><strong>Corresponding text in the license:</strong></summary>
+                <blockquote><pre  style="white-space: pre-wrap;">{{ obligation.verbatim }}</pre></blockquote>
+              </details>
+            </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
   {% else %}
     <p>You do not have the permissions to view obligations attached to this license.</p>
   {% endif %}
