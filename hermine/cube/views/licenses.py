@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib import messages
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.urls import reverse_lazy, reverse
@@ -42,48 +42,35 @@ class FormErrorsToMessagesMixin:
 
 
 class LicensesListView(
-    LoginRequiredMixin, SearchMixin, FormErrorsToMessagesMixin, ListView, FormView
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    SearchMixin,
+    FormErrorsToMessagesMixin,
+    ListView,
+    FormView,
 ):
+    permission_required = "cube.view_license"
     model = License
     context_object_name = "licenses"
     paginate_by = 50
     form_class = ImportLicensesForm
     success_url = reverse_lazy("cube:licenses")
     search_fields = ("long_name", "spdx_id")
+    template_name = "cube/license_list.html"
 
     def post(self, *args, **kwargs):
         self.object_list = self.get_queryset()
         return super().post(*args, **kwargs)
 
 
-class LicenseDetailView(LoginRequiredMixin, DetailView):
+class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+    permission_required = "cube.view_license"
     model = License
+    template_name = "cube/license_detail.html"
 
 
-class LicenseUpdateView(LoginRequiredMixin, UpdateView):
-    model = License
-    fields = [
-        "spdx_id",
-        "long_name",
-        "url",
-        "copyleft",
-        "law_choice",
-        "venue_choice",
-        "status",
-        "allowed",
-        "allowed_explanation",
-        "patent_grant",
-        "foss",
-        "non_commercial",
-        "ethical_clause",
-        "warranty",
-        "liability",
-        "comment",
-        "verbatim",
-    ]
-
-
-class LicenseAddView(LoginRequiredMixin, CreateView):
+class LicenseUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_license"
     model = License
     fields = [
         "spdx_id",
@@ -104,10 +91,36 @@ class LicenseAddView(LoginRequiredMixin, CreateView):
         "comment",
         "verbatim",
     ]
-    template_name = "cube/license_form_create.html"
+    template_name = "cube/license_update.html"
 
 
-class PrintLicense(LoginRequiredMixin, DetailView):
+class LicenseAddView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
+    permission_required = "cube.add_license"
+    model = License
+    fields = [
+        "spdx_id",
+        "long_name",
+        "url",
+        "copyleft",
+        "law_choice",
+        "venue_choice",
+        "status",
+        "allowed",
+        "allowed_explanation",
+        "patent_grant",
+        "foss",
+        "non_commercial",
+        "ethical_clause",
+        "warranty",
+        "liability",
+        "comment",
+        "verbatim",
+    ]
+    template_name = "cube/license_create.html"
+
+
+class PrintLicense(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+    permission_required = "cube.view_license"
     model = License
 
     def render_to_response(self, context, **response_kwargs):
@@ -257,7 +270,10 @@ class PrintLicense(LoginRequiredMixin, DetailView):
         return response
 
 
-class ObligationCreateView(LoginRequiredMixin, LicenseRelatedMixin, CreateView):
+class ObligationCreateView(
+    LoginRequiredMixin, PermissionRequiredMixin, LicenseRelatedMixin, CreateView
+):
+    permission_required = "cube.add_obligation"
     model = Obligation
     fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
     license = None
@@ -266,7 +282,8 @@ class ObligationCreateView(LoginRequiredMixin, LicenseRelatedMixin, CreateView):
         return reverse("cube:license", args=[self.object.license.id])
 
 
-class ObligationUpdateView(LoginRequiredMixin, UpdateView):
+class ObligationUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_obligation"
     model = Obligation
     fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
 
@@ -274,7 +291,8 @@ class ObligationUpdateView(LoginRequiredMixin, UpdateView):
         return reverse("cube:license", args=[self.object.license.id])
 
 
-class ObligationDeleteView(LoginRequiredMixin, DeleteView):
+class ObligationDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    permission_required = "cube.delete_obligation"
     model = Obligation
 
     def get_success_url(self):
@@ -282,9 +300,15 @@ class ObligationDeleteView(LoginRequiredMixin, DeleteView):
 
 
 class GenericListView(
-    LoginRequiredMixin, FormErrorsToMessagesMixin, ListView, FormView
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    FormErrorsToMessagesMixin,
+    ListView,
+    FormView,
 ):
+    permission_required = "cube.view_generic"
     model = Generic
+    template_name = "cube/generic_list.html"
     context_object_name = "generics"
     form_class = ImportGenericsForm
     success_url = reverse_lazy("cube:generics")
@@ -302,7 +326,8 @@ class GenericListView(
         return super().get_context_data(object_list=object_list, **context)
 
 
-class GenericDetailView(LoginRequiredMixin, DetailView):
+class GenericDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+    permission_required = "cube.view_generic"
     model = Generic
     context_object_name = "generic"
     template_name = "cube/generic.html"

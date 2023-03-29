@@ -17,8 +17,8 @@ urlpatterns = [
     path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
     path(
         "product/<int:product_pk>/add_release/",
-        views.ProductAddReleaseView.as_view(),
-        name="product_add_release",
+        views.ReleaseCreateView.as_view(),
+        name="release_add",
     ),
     path("product/add/", views.ProductAddView.as_view(), name="product_add"),
     path(
@@ -136,7 +136,7 @@ urlpatterns = [
     # Releases views
     path(
         "release/<int:pk>/edit/",
-        views.ReleaseUpdateView.as_view(),
+        views.ReleaseEditView.as_view(),
         name="release_edit",
     ),
     path(
@@ -156,7 +156,7 @@ urlpatterns = [
     ),
     path(
         "release/<int:release_pk>/bom/",
-        views.ReleaseSBOMView.as_view(),
+        views.ReleaseBomView.as_view(),
         name="release_bom",
     ),
     path(
@@ -199,7 +199,7 @@ urlpatterns = [
     ),
     path(
         "release/<int:id>/validation/ands_validations/",
-        views.ReleaseAndsValidationListView.as_view(),
+        views.ReleaseAndsConfirmationListView.as_view(),
         name="release_ands_validations",
     ),
     path(
@@ -235,7 +235,7 @@ urlpatterns = [
         name="release_licensechoice_create",
     ),
     path(
-        "release/<int:id>/validation/license_choices/",
+        "release/<int:release_pk>/validation/license_choices/",
         views.ReleaseLicenseChoiceListView.as_view(),
         name="release_license_choices",
     ),

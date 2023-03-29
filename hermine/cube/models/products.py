@@ -25,6 +25,10 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "Product"
+        verbose_name_plural = "Products"
+
 
 class Category(models.Model):
     """
@@ -59,7 +63,9 @@ class Release(models.Model):
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name="releases"
     )
-    release_number = models.CharField(max_length=200)
+    release_number = models.CharField(
+        max_length=200, help_text="Must be unique for a product"
+    )
     ship_status = models.CharField(max_length=20, choices=SHIPPING_CHOICES, blank=True)
     pub_date = models.DateTimeField("date published", blank=True, null=True)
     # Last completed step, 0 when none is validated
@@ -76,6 +82,9 @@ class Release(models.Model):
         unique_together = ["product", "release_number"]
         verbose_name = "Product release"
         verbose_name_plural = "Product releases"
+        permissions = [
+            ("change_release_bom", "Can upload a new BOM for a release"),
+        ]
 
 
 class Exploitation(models.Model):

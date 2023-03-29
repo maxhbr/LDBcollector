@@ -29,5 +29,5 @@ class IndexView(LoginRequiredMixin, TemplateView):
         return kwargs
 
 
-class AboutView(LoginRequiredMixin, TemplateView):
+class AboutView(TemplateView):
     template_name = "cube/about.html"

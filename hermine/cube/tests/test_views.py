@@ -3,10 +3,13 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 from urllib.parse import quote
 
+from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
+from rest_framework.views import APIView
 
+from cube import urls
 from cube.forms.release_validation import (
     CreateLicenseCurationForm,
     CreateLicenseChoiceForm,
@@ -19,7 +22,6 @@ class UnauthenticatedTestCase(TestCase):
     fixtures = ["test_data.json"]
     urls = [
         reverse("cube:root"),
-        reverse("cube:about"),
         reverse("cube:products"),
         reverse("cube:product_detail", kwargs={"pk": 1}),
         reverse("cube:components"),
@@ -44,6 +46,15 @@ class UnauthenticatedTestCase(TestCase):
         for url in self.urls:
             res = self.client.get(url)
             self.assertEqual(res.status_code, 200)
+
+    def test_all_views_have_permissions(self):
+        for view in urls.urlpatterns:
+            if (
+                hasattr(view, "view_class")
+                and not issubclass(view.view_class, APIView)
+                and not issubclass(view.view_class, PermissionRequiredMixin)
+            ):
+                self.assertNotIn(view.view_class.__name__, ("IndexView", "AboutView"))
 
 
 class ProductViewsTestCase(ForceLoginMixin, TestCase):

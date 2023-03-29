@@ -15,12 +15,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 </ul>
 {% endblock %}
 {% block actions %}
+{% if perms.cube.change_category %}
 <a class="button" href="{% url "cube:category_edit" object.id %}">
   <span class="icon">
     <i class="fas fa-edit"></i>
   </span>
   <span>Edit this category</span>
 </a>
+{% endif %}
 {% endblock %}
 
 {% block herozone %}
@@ -50,7 +52,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <p><b>Owner:</b> {{ category.owner }} - {{ category.owner.first_name }} {{ category.owner.last_name }}</p>
 
-  <h2 class="title is-2">Products for this category</h2>
+<h2 class="title is-2">Products for this category</h2>
+{% if perms.cube.view_product %}
 <table class="table is-striped is-hoverable is-fullwidth">
   <thead>
     <tr>
@@ -61,20 +64,22 @@ SPDX-License-Identifier: AGPL-3.0-only
   </thead>
   <tbody>
 {% for product in object.product_set.all %}
-    <tr>
-      <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
-      <td>{{product.description|truncatechars:30}}</td>
-
-      <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a> |
-        <a href="{% url 'admin:cube_product_change' product.id %}" target="_blank"><i class="far fa-edit"></i></a></td>
-
-    </tr>
-  </a>
+  <tr>
+    <td><a href="{% url 'cube:product_detail' product.id %}">{{product.name}}</a></td>
+    <td>{{product.description|truncatechars:30}}</td>
+    <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a>
+      {% if perms.cube.change_product %} | <a href="{% url 'admin:cube_product_change' product.id %}" target="_blank"><i class="far fa-edit"></i></a>{% endif %}
+    </td>
+  </tr>
 {% endfor %}
 </tbody>
 </table>
+{% else %}
+You don't have the permission to view products.
+{% endif %}
 
 <h2 class="title is-2">Licences with authorized contexts specific to this category</h2>
+{% if perms.cube.view_license %}
 <table class="table is-striped is-hoverable is-fullwidth">
   <thead>
     <tr>
@@ -84,12 +89,14 @@ SPDX-License-Identifier: AGPL-3.0-only
   </thead>
   <tbody>
 {% for context in object.derogation_set.all %}
-    <tr>
-      <td><a href="{% url 'cube:license' context.license.id %}">{{context.license}}</a></td>
-      <td>{{context.justification|truncatechars:30}}</td>
-    </tr>
-  </a>
+  <tr>
+    <td><a href="{% url 'cube:license' context.license.id %}">{{context.license}}</a></td>
+    <td>{{context.justification|truncatechars:30}}</td>
+  </tr>
 {% endfor %}
 </tbody>
 </table>
+{% else %}
+You don't have the permission to view licenses.
+{% endif %}
 {% endblock %}

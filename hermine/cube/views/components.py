@@ -3,8 +3,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.decorators import login_required, permission_required
 from django.db.models import Count
 from django.urls import reverse_lazy
 from django.views import generic
@@ -16,8 +16,12 @@ from cube.views.mixins import SearchMixin, SaveAuthorMixin
 from cube.utils.funding import get_fundings_from_purl
 
 
-class ComponentListView(LoginRequiredMixin, SearchMixin, generic.ListView):
+class ComponentListView(
+    LoginRequiredMixin, PermissionRequiredMixin, SearchMixin, generic.ListView
+):
+    permission_required = "cube.view_component"
     model = Component
+    template_name = "cube/component_list.html"
     paginate_by = 30
     ordering = ["name"]
     search_fields = ("name", "description", "spdx_expression")
@@ -31,7 +35,8 @@ class ComponentListView(LoginRequiredMixin, SearchMixin, generic.ListView):
         return context
 
 
-class PopularListView(LoginRequiredMixin, generic.ListView):
+class PopularListView(LoginRequiredMixin, PermissionRequiredMixin, generic.ListView):
+    permission_required = "cube.view_component"
     model = Component
     template_name = "cube/component_popular.html"
 
@@ -41,33 +46,42 @@ class PopularListView(LoginRequiredMixin, generic.ListView):
         ).order_by("-popularity")[:50]
 
 
-class ComponentView(LoginRequiredMixin, generic.DetailView):
+class ComponentView(LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView):
+    permission_required = "cube.view_component"
     template_name = "cube/component.html"
     model = Component
 
 
-class LicenseCurationListView(LoginRequiredMixin, generic.ListView):
+class LicenseCurationListView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.ListView
+):
+    permission_required = "cube.view_licensecuration"
     model = LicenseCuration
     template_name = "cube/licensecuration_list.html"
 
 
 class LicenseCurationCreateView(
-    LoginRequiredMixin, SaveAuthorMixin, generic.CreateView
+    LoginRequiredMixin, PermissionRequiredMixin, SaveAuthorMixin, generic.CreateView
 ):
+    permission_required = "cube.add_licensecuration"
     model = LicenseCuration
+    template_name = "cube/licensecuration_form.html"
     form_class = LicenseCurationCreateForm
     success_url = reverse_lazy("cube:licensecurations")
 
 
 class LicenseCurationUpdateView(
-    LoginRequiredMixin, SaveAuthorMixin, generic.UpdateView
+    LoginRequiredMixin, PermissionRequiredMixin, SaveAuthorMixin, generic.UpdateView
 ):
+    permission_required = "cube.change_licensecuration"
     model = LicenseCuration
+    template_name = "cube/licensecuration_form.html"
     form_class = LicenseCurationUpdateForm
     success_url = reverse_lazy("cube:licensecurations")
 
 
 @login_required
+@permission_required("cube.change_component")
 def component_update_funding(request, component_id):
     component = get_object_or_404(Component, pk=component_id)
     fundings = None

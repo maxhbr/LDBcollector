@@ -16,7 +16,7 @@ class BaseHermineAPITestCase(BaseAPITestCase):
     SPDX_ID = "LicenseRef-fakeLicense-1.0"
 
     def setUp(self):
-        self.user = User.objects.create_user(
+        self.user = User.objects.create_superuser(
             "TestUser", "testuser@test.com", "password"
         )
         self.client.force_login(self.user)

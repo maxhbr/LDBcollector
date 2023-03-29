@@ -1,7 +1,7 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.urls import reverse
 from django.views.generic import CreateView, UpdateView, ListView
 
@@ -12,14 +12,19 @@ from cube.models import (
 from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin
 
 
-class AuthorizedContextListView(LoginRequiredMixin, ListView):
+class AuthorizedContextListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     queryset = Derogation.objects.filter(product=None, release=None)
+    permission_required = "cube.view_derogation"
     template_name = "cube/authorized_context_list.html"
     context_object_name = "authorized_contexts"
 
 
-class AuthorizedContextUpdateView(LoginRequiredMixin, SaveAuthorMixin, UpdateView):
+class AuthorizedContextUpdateView(
+    LoginRequiredMixin, PermissionRequiredMixin, SaveAuthorMixin, UpdateView
+):
+    permission_required = "cube.change_derogation"
     model = Derogation
+    template_name = "cube/derogation_form.html"
     fields = (
         "linking",
         "modification",
@@ -37,8 +42,13 @@ class AuthorizedContextUpdateView(LoginRequiredMixin, SaveAuthorMixin, UpdateVie
 
 
 class AuthorizedContextCreateView(
-    LoginRequiredMixin, SaveAuthorMixin, LicenseRelatedMixin, CreateView
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    SaveAuthorMixin,
+    LicenseRelatedMixin,
+    CreateView,
 ):
+    permission_required = "cube.add_derogation"
     model = Derogation
     fields = (
         "linking",
@@ -53,7 +63,8 @@ class AuthorizedContextCreateView(
         return reverse("cube:license", args=[self.object.license.id])
 
 
-class DerogationListView(LoginRequiredMixin, ListView):
+class DerogationListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+    permission_required = "cube.view_derogation"
     model = Derogation
     context_object_name = "derogations"
     queryset = Derogation.objects.exclude(
@@ -62,8 +73,10 @@ class DerogationListView(LoginRequiredMixin, ListView):
     )
 
 
-class LicenseChoiceListView(LoginRequiredMixin, ListView):
+class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+    permission_required = "cube.view_licensechoice"
     model = LicenseChoice
+    template_name = "cube/licensechoice_list.html"
     paginate_by = 50
     queryset = LicenseChoice.objects.filter(
         product__isnull=True,

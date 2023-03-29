@@ -41,7 +41,11 @@ SPDX-License-Identifier: AGPL-3.0-only -->
         <td>{{ rule.expression_out }}</td>
         <td>{{ rule.explanation|truncatechars:50 }}</td>
         <td>{{ rule.updated }} ({{ rule.author|default:"<em>author unknown</em>" }})</td>
-        <td><a href="{%url 'admin:cube_licensechoice_change' rule.id %}"><i class="far fa-edit"></i></a></td>
+        <td>
+          {% if perms.cube.change_licensechoice %}
+          <a href="{%url 'admin:cube_licensechoice_change' rule.id %}"><i class="far fa-edit"></i></a>
+          {% endif %}
+        </td>
       </tr>
   {% endfor %}
   </tbody>

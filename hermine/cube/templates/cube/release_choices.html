@@ -43,22 +43,26 @@ SPDX-License-Identifier: AGPL-3.0-only
         <td>{{usage.license_expression }} </td>
         <td>
           {% if usage.license_choices|length == 1 %}
-            <a href="{% url "admin:cube_licensechoice_change"  usage.license_choices.0.pk %}">Edit rule</a>
+            {% if perms.cube.change_licensechoice %}<a href="{% url "admin:cube_licensechoice_change"  usage.license_choices.0.pk %}">Edit rule</a>{% endif %}
             {% if usage.license_choices.0.expression_out != usage.license_expression %}
               <br><small>Choice does not match rule
-              <form action="{% url "cube:release_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
+              {% if perms.cube.change_release %}
+                <form action="{% url "cube:release_update_license_choice" usage.pk %}" method="POST" class="form is-inline">
                 {% csrf_token %}
-                <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
+                <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form>
+              {% endif %}</small>
             {% endif %}
           {% else %}
-            {{ usage.license_choices|length }} rules apply. Edit rule
+            {{ usage.license_choices|length }} rules apply. {% if perms.cube.change_licensechoice %}Edit rule
             {% for choice in usage.license_choices %}
               <a href="{% url "admin:cube_licensechoice_change" choice.pk %}">
                 {{ choice.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
-            {% endfor %}
+            {% endfor %}{% endif %}
           {% endif %}
         </td>
-        <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+        <td>{% if perms.cube.change_usage %}
+          <a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+        {% endif %}</td>
       </tr>
     {% endfor %}
   </tbody>

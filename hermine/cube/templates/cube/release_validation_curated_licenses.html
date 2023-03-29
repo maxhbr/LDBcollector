@@ -42,23 +42,27 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ usage.version.spdx_valid_license_expr }} </td>
             <td>{{ usage.version.corrected_license }} </td>
             <td>
-              {% if usage.license_curations|length == 1 %}
-                <a href="{% url "admin:cube_licensecuration_change"  usage.license_curations.0.pk %}">Edit rule</a>
-                {% if usage.license_curations.0.expression_out != usage.version.corrected_license %}
+              {% if usage.version.curations|length == 1 %}
+                {% if perms.cube.change_licensecuration %}<a href="{% url "cube:licensecuration_update"  usage.version.curations.0.pk %}">Edit rule</a>{% endif %}
+                {% if usage.version.curations.0.expression_out != usage.version.corrected_license %}
                   <br><small>Expression does not match curation
-                  <form action="{% url "cube:release_update_license_curation" usage.pk %}" method="POST" class="form is-inline">
+                  {% if perms.cube.change_version %}
+                    <form action="{% url "cube:release_update_license_curation" usage.pk %}" method="POST" class="form is-inline">
                     {% csrf_token %}
-                    <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form></small>
+                    <button type="submit" class="button is-small is-inline" title="Apply new rule"><i class="fa fa-redo"></i></button></form>
+                  {% endif %}</small>
                 {% endif %}
-              {% elif usage.license_curations|length > 1 %}
-                {{ usage.license_curations|length }} curations apply. Edit curations
-                {% for curation in usage.license_curations %}
-                  <a href="{% url "admin:cube_licensecuration_change" curation.pk %}">
+              {% elif usage.version.curations|length > 1 %}
+                {{ usage.version.curations|length }} curations apply. {% if perms.cube.change_licensecuration %}Edit curations
+                {% for curation in usage.version.curations %}
+                  <a href="{% url "cube:licensecuration_update" curation.pk %}">
                     {{ curation.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
-                {% endfor %}
+                {% endfor %}{% endif %}
               {% endif %}
             </td>
-            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td>{% if perms.cube.change_version %}
+              <a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>

@@ -2,7 +2,7 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.db.models import F
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
@@ -42,7 +42,9 @@ from cube.views.mixins import (
 )
 
 
-class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
+class ReleaseValidationView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
     """
     Shows 4 validation steps for a release of a product:
     step 1 : checks that license metadata are present and correct
@@ -54,6 +56,7 @@ class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
 
     model = Release
     template_name = "cube/release_validation.html"
+    permission_required = "cube.view_release"
 
     def get_queryset(self):
         return (
@@ -75,7 +78,9 @@ class ReleaseValidationView(LoginRequiredMixin, generic.DetailView):
         }
 
 
-class AbstractCreateUsageConditionView(LoginRequiredMixin, SaveAuthorMixin, CreateView):
+class AbstractCreateUsageConditionView(
+    LoginRequiredMixin, PermissionRequiredMixin, SaveAuthorMixin, CreateView
+):
     usage = None
 
     def dispatch(self, request, *args, **kwargs):
@@ -91,9 +96,12 @@ class AbstractCreateUsageConditionView(LoginRequiredMixin, SaveAuthorMixin, Crea
         return reverse("cube:release_validation", kwargs={"pk": self.usage.release.id})
 
 
-class AbstractResetCorrectedLicenseView(UpdateView):
+class AbstractResetCorrectedLicenseView(
+    LoginRequiredMixin, PermissionRequiredMixin, UpdateView
+):
     model = Usage
     fields = []
+    permission_required = "cube.change_version"
 
     def form_valid(self, form):
         self.object.version.corrected_license = ""
@@ -110,13 +118,17 @@ class AbstractResetCorrectedLicenseView(UpdateView):
 class ReleaseLicenseCurationCreateView(AbstractCreateUsageConditionView):
     model = LicenseCuration
     form_class = CreateLicenseCurationForm
-    template_name_suffix = "_create"
+    template_name = "cube/licensecuration_create.html"
+    permission_required = "cube.add_licensecuration"
 
 
-class ReleaseCuratedLicensesListView(ListView):
-    template_name = "cube/release_curated_licenses.html"
+class ReleaseCuratedLicensesListView(
+    LoginRequiredMixin, PermissionRequiredMixin, ListView
+):
+    template_name = "cube/release_validation_curated_licenses.html"
     release = None
     context_object_name = "usages"
+    permission_required = "cube.view_release"
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
@@ -144,11 +156,13 @@ class UpdateLicenseCurationView(AbstractResetCorrectedLicenseView):
 class ReleaseAndsValidationCreateView(AbstractCreateUsageConditionView):
     model = LicenseCuration
     form_class = CreateAndsValidationForm
+    permission_required = "cube.add_licensecuration"
 
 
-class ReleaseAndsValidationListView(TemplateView):
-    template_name = "cube/release_ands_validations.html"
+class ReleaseAndsConfirmationListView(PermissionRequiredMixin, TemplateView):
+    template_name = "cube/release_validation_ands.html"
     release = None
+    permission_required = "cube.view_release"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -188,11 +202,12 @@ class UpdateAndsValidationView(AbstractResetCorrectedLicenseView):
 
 
 class ReleaseExploitationUpdateView(
-    LoginRequiredMixin, ReleaseContextMixin, UpdateView
+    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, UpdateView
 ):
     model = Exploitation
     fields = ["exploitation"]
     template_name = "cube/release_edit_exploitation.html"
+    permission_required = "cube.change_release"
 
     def get_success_url(self, *args, **kwargs):
         release_id = self.kwargs["release_pk"]
@@ -200,11 +215,12 @@ class ReleaseExploitationUpdateView(
 
 
 class ReleaseExploitationCreateView(
-    LoginRequiredMixin, ReleaseContextMixin, CreateView
+    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, CreateView
 ):
     model = Exploitation
     fields = ["project", "scope", "exploitation"]
     template_name = "cube/release_exploitation_create.html"
+    permission_required = "cube.change_release"
 
     def get_success_url(self, *args, **kwargs):
         return reverse("cube:release_summary", args=[self.release.id])
@@ -221,12 +237,14 @@ class ReleaseExploitationCreateView(
 
 class ReleaseExploitationsListView(
     LoginRequiredMixin,
+    PermissionRequiredMixin,
     ReleaseExploitationFormMixin,
     ReleaseContextMixin,
     generic.ListView,
 ):
     model = Exploitation
     template_name = "cube/release_exploitations.html"
+    permission_required = "cube.view_release"
 
     def get_queryset(self):
         return (
@@ -238,10 +256,11 @@ class ReleaseExploitationsListView(
 
 
 class ReleaseExploitationDeleteView(
-    LoginRequiredMixin, ReleaseContextMixin, DeleteView
+    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, DeleteView
 ):
     model = Exploitation
     template_name = "cube/release_delete_exploitation.html"
+    permission_required = "cube.change_release"
 
     def get_success_url(self, *args, **kwargs):
         return reverse("cube:release_summary", args=[self.release.id])
@@ -253,27 +272,26 @@ class ReleaseExploitationDeleteView(
 class ReleaseLicenseChoiceCreateView(AbstractCreateUsageConditionView):
     model = LicenseChoice
     form_class = CreateLicenseChoiceForm
+    permission_required = "cube.add_licensechoice"
 
 
-class ReleaseLicenseChoiceListView(ListView):
+class ReleaseLicenseChoiceListView(
+    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, ListView
+):
     template_name = "cube/release_choices.html"
     release = None
     context_object_name = "usages"
-
-    def get_context_data(self, *args, **kwargs):
-        context = super().get_context_data(*args, **kwargs)
-        context["release"] = self.release
-        return context
+    permission_required = "cube.view_release"
 
     def get_queryset(self):
-        self.release = get_object_or_404(Release, pk=self.kwargs["id"])
         return propagate_choices(self.release)["resolved"]
 
 
 @method_decorator(require_POST, "dispatch")
-class UpdateLicenseChoiceView(UpdateView):
+class UpdateLicenseChoiceView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Usage
     fields = []
+    permission_required = "cube.change_release"
 
     def form_valid(self, form):
         self.object.license_expression = ""
@@ -297,3 +315,4 @@ class ReleaseDerogationCreateView(
 ):
     model = Derogation
     form_class = CreateDerogationForm
+    permission_required = "cube.add_derogation"

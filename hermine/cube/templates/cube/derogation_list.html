@@ -7,6 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 {% block title %}Derogations{% endblock %}
+
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
@@ -14,12 +15,14 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>Derogations</li>
 </ul>
 {% endblock %}
+
 {% block herozone %}
 <h1 class="title">
   <span class="icon is-medium"><i class="fas fa-clipboard-check"></i></span>
 Derogations
 </h1>
 {% endblock %}
+
 {% block content %}
 <div id="content-main">
   <p>Derogations allow use of a restricted licence in the context of a specific product or release.
@@ -54,14 +57,17 @@ Derogations
         <td>{{ derogation.justification|default:"<em>No justification</em>"|truncatewords:13 }}</td>
         <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
         <td style="white-space: nowrap">
-          <a href="{% url "admin:cube_derogation_change" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+          {% if perms.cube.change_derogation %}
+          <a href="{% url "admin:cube_derogation_change" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+          {% endif %}{% if perms.cube.change_derogation and perms.cube.delete_derogation %} | {% endif %}
+          {% if perms.cube.delete_derogation %}
           <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+          {% endif %}
         </td>
   {% endfor %}
   </tbody>
 </table>
 </div>
-
 {% endblock %}
 
 

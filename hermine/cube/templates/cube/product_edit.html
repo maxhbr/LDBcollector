@@ -5,21 +5,23 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
-{% block title %}Edit Product
-{% endblock %}
+{% block title %}Edit Product{% endblock %}
+
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
   <li><a href="{% url 'cube:products'%}">Products</a></li>
-  <li><a href="{% url 'cube:product_detail' object.id%}"> {{ object.name }}</a></li>
-  <li> Edit </li>
+  <li><a href="{% url 'cube:product_detail' object.id%}">{{ object.name }}</a></li>
+  <li>Edit</li>
 </ul>
 {% endblock %}
+
 {% block herozone %}
   <div class="hero-body">
     <p class="title">Edit product</p>
   </div>
 {% endblock %}
+
 {% block infoitem %}
 <p class="subtitle" style="text-transform: uppercase;">
   <span class="icon is-medium">
@@ -28,17 +30,9 @@ SPDX-License-Identifier: AGPL-3.0-only
     Product
   </p>
 {% endblock %}
-{% block content %}
-  <form method="post">
-        {% csrf_token %}
-    <table>
-      {{ form }}
-    </table>
-      <div class="control">
-    <button type="submit" class="button is-link">Save</button>
-  </div>
-  </form>
 
+{% block content %}
+{% include "cube/includes/table_form.html" %}
 {% endblock %}
 
 

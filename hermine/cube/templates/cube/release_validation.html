@@ -73,10 +73,12 @@ SPDX-License-Identifier: AGPL-3.0-only
                {% endif %}
               </td>
               <td>{{ usage.version.declared_license_expr }}</td>
-              <td>
+              <td>{% if perms.cube.add_licensecuration %}
                 <a href="{% url 'cube:release_licensecuration_create' usage.id %}">Add curation rule</a>
-              </td>
-              <td><a href="{% url 'admin:cube_version_change' usage.version.id  %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+              {% endif %}</td>
+              <td>{% if perms.cube.change_version %}
+                <a href="{% url 'admin:cube_version_change' usage.version.id  %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+              {% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -133,8 +135,12 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{ usage.version.version_number }}</a></td>
             <td>{{ usage.scope }}</td>
             <td>{{ usage.version.spdx_valid_license_expr }} </td>
-            <td><a href="{% url 'cube:release_andsvalidation_create' usage.id %}">Confirm / Correct</a></td>
-            <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td>{% if perms.cube.add_licensecuration %}
+              <a href="{% url 'cube:release_andsvalidation_create' usage.id %}">Confirm / Correct</a>
+            {% endif %}</td>
+            <td>{% if perms.cube.change_version %}
+              <a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -235,10 +241,12 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ usage.scope }}</td>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a> </td>
             <td>{{ usage.version.effective_license }}</td>
-            <td>
+            <td>{% if perms.cube.add_licensechoice %}
               <a href="{% url 'cube:release_licensechoice_create' usage.id %}">Add choice rule</a>
-            </td>
-            <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            {% endif %}</td>
+            <td>{% if perms.cube.change_usage %}
+              <a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -296,14 +304,22 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
-                <a href="{% url "cube:license_edit" license_chosen.id %}">
+                {% if perms.cube.change_license %}
+                  <a href="{% url "cube:license_edit" license_chosen.id %}">
+                    <span class="tag {{ license_chosen|licenseAllowedCSS }}">
+                      {{ license_chosen.spdx_id }}
+                    </span>
+                  </a>
+                {% else %}
                   <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
-                </a>
+                {% endif %}
               {% endfor %}
             </td>
-            <td><a href="{% url "admin:cube_usage_change" usage.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td>{% if perms.cube.change_usage %}
+              <a href="{% url "admin:cube_usage_change" usage.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -336,15 +352,23 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a></td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
-                <a href="{% url "cube:license" license_chosen.id %}">
+                {% if perms.cube.change_license %}
+                  <a href="{% url "cube:license_edit" license_chosen.id %}">
+                    <span class="tag {{ license_chosen|licenseAllowedCSS }}">
+                      {{ license_chosen.spdx_id }}
+                    </span>
+                  </a>
+                {% else %}
                   <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
-                  <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>
-                </a>
+                {% endif %}
+                {% if perms.cube.add_derogation %}<a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>{% endif %}
               {% endfor %}
             </td>
-            <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td>{% if perms.cube.change_usage %}
+              <a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -382,15 +406,23 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ usage.component_modified }}</td>
             <td>
               {% for license_chosen in usage.licenses_chosen.all %}
-                <a href="{% url "cube:license" license_chosen.id %}">
+                {% if perms.cube.change_license %}
+                  <a href="{% url "cube:license_edit" license_chosen.id %}">
+                    <span class="tag {{ license_chosen|licenseAllowedCSS }}">
+                      {{ license_chosen.spdx_id }}
+                    </span>
+                  </a>
+                {% else %}
                   <span class="tag {{ license_chosen|licenseAllowedCSS }}">
                     {{ license_chosen.spdx_id }}
                   </span>
-                </a>
-                <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation</a>
+                {% endif %}
+                {% if perms.cube.add_derogation %}<a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation</a>{% endif %}
               {% endfor %}
             </td>
-            <td><a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td>{% if perms.cube.change_usage %}
+              <a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -439,11 +471,17 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% for derogation in derogations %}
           <tr>
             <td>
-              <a href="{% url "cube:license" derogation.license.id %}">
-                <span class="tag {{ derogation.license|licenseAllowedCSS }}">
-                  {{ derogation.license.spdx_id }}
-                </span>
-              </a>
+              {% if perms.cube.change_license %}
+                  <a href="{% url "cube:license_edit" derogation.license.id %}">
+                    <span class="tag {{ derogation.license|licenseAllowedCSS }}">
+                      {{ derogation.license.spdx_id }}
+                    </span>
+                  </a>
+                {% else %}
+                  <span class="tag {{ derogation.license|licenseAllowedCSS }}">
+                    {{ derogation.license.spdx_id }}
+                  </span>
+                {% endif %}
             </td>
             <td>
               {{ derogation.condition_display }}
@@ -452,8 +490,8 @@ SPDX-License-Identifier: AGPL-3.0-only
               {{ derogation.justification|default:"No justification given"|truncatewords:13 }}...
             </td>
             <td>
-              <a href="{% url "admin:cube_derogation_change" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
-              <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+              {% if perms.cube.change_derogation %}<a href="{% url "admin:cube_derogation_change" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>{% endif %}
+              {% if perms.cube.delete_derogation %} | <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>{% endif %}
             </td>
           </tr>
         {% endfor %}

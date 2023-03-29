@@ -7,11 +7,9 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% extends "cube/cube.html" %}
 {% load rest_framework %}
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-</head>
 
 {% block title %}{{ release.product.name }} {{release.release_number}}{% endblock %}
+
 {% block breadcrumbs %}
 <ul>
   <li>Hermine</li>
@@ -20,14 +18,18 @@ SPDX-License-Identifier: AGPL-3.0-only
   <li>Summary</li>
 </ul>
 {% endblock %}
+
 {% block actions %}
+{% if perms.cube.change_release %}
 <a class="button" href="{% url "cube:release_edit" release.id %}">
   <span class="icon">
     <i class="fas fa-edit"></i>
   </span>
   <span>Edit this release</span>
 </a>
+{% endif %}
 {% endblock %}
+
 {% block herozone %}
 <div class="hero-body">
   <p class="title">Release: {{release.release_number}}</p>
