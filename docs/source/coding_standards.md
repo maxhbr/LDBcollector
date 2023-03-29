@@ -24,7 +24,9 @@ We try to follow the [REUSE standard](https://reuse.software/). So if you add a 
 
 ## Code linting
 
-We use [Black](https://pypi.org/project/black/) for harmonising code formatting.
+We use [Black](https://pypi.org/project/black/) for harmonising code formatting, 
+[Ruff](https://github.com/charliermarsh/ruff) for linting and 
+[DjHTML](https://github.com/rtts/djhtml) for indenting Django Templates.
 
 ## Commit messages
 

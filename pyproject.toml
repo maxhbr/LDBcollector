@@ -44,6 +44,7 @@ flake8-black = "^0.3.3"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.246"
+djhtml = "^3.0.6"
 
 [tool.black]
 exclude = "hermine/cube/migrations"
