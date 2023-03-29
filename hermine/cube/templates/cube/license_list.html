@@ -95,6 +95,7 @@ Licenses
                 <th>License name</th>
                 <th>Policy status</th>
                 <th># of obligations</th>
+                <th>Review status</th>
               </tr>
             </thead>
             <tbody>
@@ -109,6 +110,7 @@ Licenses
                     </span>
                   </td>
                   <td>{% if license.allowed %}{{ license.obligation_set.all.count }} obligation{{ license.obligation_set.all.count|pluralize }}{% endif %}</td>
+                  <td>{% if license.status == 'Checked' %} <i class="fas fa-check-square"></i> {%else%} {{license.status}}{% endif %}</td>
                 </tr>
               {% endfor %}
             </tbody>
