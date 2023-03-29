@@ -150,6 +150,11 @@ urlpatterns = [
         name="release_import",
     ),
     path(
+        "release/<int:release_pk>/add_usage/",
+        views.ReleaseUsageCreateView.as_view(),
+        name="release_usage_create",
+    ),
+    path(
         "release/<int:pk>/bom/export/",
         views.ReleaseBomExportView.as_view(),
         name="release_bom_export",

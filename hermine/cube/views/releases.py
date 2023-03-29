@@ -20,6 +20,7 @@ from django.views.generic import (
 )
 
 from cube.forms.importers import ImportBomForm
+from cube.forms.releases import UsageForm
 from cube.importers import (
     import_ort_evaluated_model_json_file,
     import_spdx_file,
@@ -117,6 +118,21 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
         )
 
         return super().form_valid(form)
+
+
+class ReleaseUsageCreateView(
+    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, generic.CreateView
+):
+    permission_required = "cube.add_usage"
+    model = Usage
+    form_class = UsageForm
+
+    def form_valid(self, form):
+        form.instance.release = self.release
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse("cube:release_import", kwargs={"pk": self.object.release.pk})
 
 
 class ReleaseObligView(LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView):
