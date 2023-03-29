@@ -259,7 +259,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
   </div>
 
-  {% if perms.cube.view_obligations %}
+  {% if perms.cube.view_obligation %}
   {% regroup license.obligation_set.all by generic.get_metacategory_display as metacategory_list %}
   {% for metacategory in metacategory_list %}
     <h3>Obligations related to {{ metacategory.grouper|default:"Obligations specific to this license" }}</h3>
