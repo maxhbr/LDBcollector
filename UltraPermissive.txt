@@ -72,6 +72,18 @@ I am interested in all changes you make.
 Please send changes to ngall@ucalgary.ca
 '''
 
+package = hanamin-fonts
+location = http://fonts.jp/hanazono/
+text = '''
+This font is a free software.
+Unlimited permission is granted to use, copy, and distribute it, with
+or without modification, either commercially and noncommercially.
+THIS FONT IS PROVIDED "AS IS" WITHOUT WARRANTY.
+License of this document is same as the font.
+
+Copyright 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2016, 2017 GlyphWiki Project.
+'''
+
 package = ibus-table-chinese
 location = https://github.com/mike-fabian/ibus-table-chinese
 text = '''
