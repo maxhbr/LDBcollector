@@ -1,0 +1,14 @@
+/*
+ * SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+.select2-container {
+    background-color: white;
+    border: 1px solid #aaa;
+}
+
+.select2-search__field {
+    border: 1px solid #aaa !important;
+}

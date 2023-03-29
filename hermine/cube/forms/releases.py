@@ -3,8 +3,9 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 
 from django.db.models import Count
-from django.forms import Form, ChoiceField, Select
+from django.forms import Form, ChoiceField, Select, ModelForm
 
+from cube.forms.mixins import AutocompleteFormMixin
 from cube.models import Release, Usage, Exploitation
 
 
@@ -41,3 +42,10 @@ class ReleaseExploitationForm(Form):
             )
 
         return self.release
+
+
+class UsageForm(AutocompleteFormMixin, ModelForm):
+    class Meta:
+        model = Usage
+        fields = ["version", "scope", "project", "component_modified", "exploitation"]
+        autocomplete_fields = ["version"]
