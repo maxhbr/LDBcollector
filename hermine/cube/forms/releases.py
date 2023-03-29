@@ -47,5 +47,15 @@ class ReleaseExploitationForm(Form):
 class UsageForm(AutocompleteFormMixin, ModelForm):
     class Meta:
         model = Usage
-        fields = ["version", "scope", "project", "component_modified", "exploitation"]
+        fields = [
+            "version",
+            "scope",
+            "project",
+            "linking",
+            "component_modified",
+            "exploitation",
+        ]
+        labels = {
+            "version": "3rd party component and version",
+        }
         autocomplete_fields = ["version"]
