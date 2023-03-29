@@ -26,6 +26,7 @@ class Product(models.Model):
         return self.name
 
     class Meta:
+        ordering = ["name"]
         verbose_name = "Product"
         verbose_name_plural = "Products"
 
@@ -79,6 +80,7 @@ class Release(models.Model):
         return self.product.__str__() + " " + self.release_number
 
     class Meta:
+        ordering = ["product", "release_number"]
         unique_together = ["product", "release_number"]
         verbose_name = "Product release"
         verbose_name_plural = "Product releases"

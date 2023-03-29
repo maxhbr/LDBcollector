@@ -141,6 +141,7 @@ class Component(models.Model):
         return self.name.split("/")[0]
 
     class Meta:
+        ordering = ["name"]
         unique_together = ("name", "package_repo")
 
 
@@ -240,6 +241,7 @@ class Version(models.Model):
         return LicenseCuration.objects.for_version(self)
 
     class Meta:
+        ordering = ["component", "version_number"]
         unique_together = ["component", "version_number"]
         verbose_name = "Component version"
         verbose_name_plural = "Component versions"
