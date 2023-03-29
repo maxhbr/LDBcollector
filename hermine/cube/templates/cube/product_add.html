@@ -9,11 +9,11 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}Create Product{% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:products'%}">Products</a></li>
-  <li>New product</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:products'%}">Products</a></li>
+    <li>New product</li>
+  </ul>
 {% endblock %}
 
 {% block herozone %}
@@ -23,16 +23,16 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block infoitem %}
-<p class="subtitle" style="text-transform: uppercase;">
-  <span class="icon is-medium">
-    <i class="fas fa-cubes"></i>
+  <p class="subtitle" style="text-transform: uppercase;">
+    <span class="icon is-medium">
+      <i class="fas fa-cubes"></i>
     </span>
     Product
   </p>
 {% endblock %}
 
 {% block content %}
-{% include "cube/includes/table_form.html" %}
+  {% include "cube/includes/table_form.html" %}
 {% endblock %}
 
 

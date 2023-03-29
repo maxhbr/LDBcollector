@@ -9,17 +9,17 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
-  <li>{{object.release_number}}</li>
-  <li>Validation</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
+    <li>{{object.release_number}}</li>
+    <li>Validation</li>
+  </ul>
 {% endblock %}
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">Release: {{object.release_number}}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">Release: {{object.release_number}}</p>
+  </div>
 {% endblock %}
 {% block content %}
 
@@ -35,8 +35,8 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
       <div class="message-body">
         <span class="icon has-text-success"><i class="fas fa-check-square"></i></span>
-          That's it ! All your usages are valid, qualified, and checked.
-          You can now proceed to the check of your obligations.
+        That's it ! All your usages are valid, qualified, and checked.
+        You can now proceed to the check of your obligations.
       </div>
     </article>
     <hr />
@@ -63,22 +63,22 @@ SPDX-License-Identifier: AGPL-3.0-only
       </thead>
       <tbody>
         {% for usage in invalid_expressions %}
-            <tr>
-              <td>
-                <a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a>
+          <tr>
+            <td>
+              <a href="{% url "cube:component_detail" usage.version.component.id %}">{{ usage.version }}</a>
               {% if usage.version.component.homepage_url %}
                 (<a href="{{usage.version.component.homepage_url}}" target="_blank">website <span class="icon is-small"><i class="fas fa-link"></i></span></a>)
-               {% else %}
+              {% else %}
                 (No website)
-               {% endif %}
-              </td>
-              <td>{{ usage.version.declared_license_expr }}</td>
-              <td>{% if perms.cube.add_licensecuration %}
-                <a href="{% url 'cube:release_licensecuration_create' usage.id %}">Add curation rule</a>
-              {% endif %}</td>
-              <td>{% if perms.cube.change_version %}
-                <a href="{% url 'admin:cube_version_change' usage.version.id  %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
-              {% endif %}</td>
+              {% endif %}
+            </td>
+            <td>{{ usage.version.declared_license_expr }}</td>
+            <td>{% if perms.cube.add_licensecuration %}
+              <a href="{% url 'cube:release_licensecuration_create' usage.id %}">Add curation rule</a>
+            {% endif %}</td>
+            <td>{% if perms.cube.change_version %}
+              <a href="{% url 'admin:cube_version_change' usage.version.id  %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            {% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -107,8 +107,8 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Some ANDs in licence expressions need to be confirmed</p>
       </div>
       <div class="message-body">
-         Certain ANDs in licence expression are actually ORs, triggering unnecessary constraints.
-         Please check and confirm/correct them.
+        Certain ANDs in licence expression are actually ORs, triggering unnecessary constraints.
+        Please check and confirm/correct them.
       </div>
     </article>
 
@@ -129,7 +129,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% for usage in to_confirm %}
           <tr>
             <td><a href="{% url "cube:component_detail" usage.version.component.id %}" target="_blank">{{ usage.version.component.name }}</a>
-                (<a href="{{ usage.version.component.homepage_url }}" target="_blank">website <span class="icon is-small">
+              (<a href="{{ usage.version.component.homepage_url }}" target="_blank">website <span class="icon is-small">
                 <i class="fas fa-link"></i></span></a>)
             </td>
             <td><a href="{% url "admin:cube_version_change" usage.version.id %}" target="_blank">{{ usage.version.version_number }}</a></td>
@@ -196,7 +196,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ components_count }}</td>
             <td><a href="{% url 'cube:release_exploitation_create' release.id %}?project={{ project }}&scope={{ scope }}">
               Set exploitation mode
-              </a></td>
+            </a></td>
           </tr>
         {% endfor %}
       </tbody>
@@ -472,16 +472,16 @@ SPDX-License-Identifier: AGPL-3.0-only
           <tr>
             <td>
               {% if perms.cube.change_license %}
-                  <a href="{% url "cube:license_edit" derogation.license.id %}">
-                    <span class="tag {{ derogation.license|licenseAllowedCSS }}">
-                      {{ derogation.license.spdx_id }}
-                    </span>
-                  </a>
-                {% else %}
+                <a href="{% url "cube:license_edit" derogation.license.id %}">
                   <span class="tag {{ derogation.license|licenseAllowedCSS }}">
                     {{ derogation.license.spdx_id }}
                   </span>
-                {% endif %}
+                </a>
+              {% else %}
+                <span class="tag {{ derogation.license|licenseAllowedCSS }}">
+                  {{ derogation.license.spdx_id }}
+                </span>
+              {% endif %}
             </td>
             <td>
               {{ derogation.condition_display }}

@@ -5,12 +5,12 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% block title %}{{ form.usage.release.product.name }} {{ form.usage.release.release_number }}{% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
-  <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
-  <li>Add expression validation</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:product_detail' form.usage.release.product.id %}">{{ form.usage.release.product.name }}</a></li>
+    <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
+    <li>Add expression validation</li>
+  </ul>
 {% endblock %}
 {% block content %}
   <form method="post" action="{% url "cube:release_andsvalidation_create" form.usage.id %}">

@@ -9,17 +9,17 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% load cube_tags %}
 {% block title %}{{ object.product.name }} {{object.release_number}}{% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
-  <li>{{object.release_number}}</li>
-  <li>Obligations</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:product_detail' object.product.id %}">{{ object.product.name }}</a></li>
+    <li>{{object.release_number}}</li>
+    <li>Obligations</li>
+  </ul>
 {% endblock %}
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">Release: {{object.release_number}}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">Release: {{object.release_number}}</p>
+  </div>
 {% endblock %}
 {% block content %}
   {%if object.valid_step != 5 %}
@@ -29,10 +29,10 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Warning</p>
         <button class="delete" aria-label="delete"></button>
       </div>
-    <div class="message-body">
-      The components of this release have not been validated in their entirety.
-    </div>
-  </article>
+      <div class="message-body">
+        The components of this release have not been validated in their entirety.
+      </div>
+    </article>
   {%endif%}
 
   {% include "cube/includes/release_tabs.html" with active_tab="obligations" %}
@@ -40,7 +40,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <h2 class="title is-2">Licenses involved in this release</h2>
   <p>{% for license_involved in licenses_involved %}
     <a href="{% url "cube:license" license_involved.id %}"><span class="tag {{ license_involved|licenseAllowedCSS }}">{{ license_involved.spdx_id }}</span></a>
-   {% endfor %}
+  {% endfor %}
   </p>
   <h2 class="title is-2">List of generic obligations to follow</h2>
   <table class="table">
@@ -58,10 +58,10 @@ SPDX-License-Identifier: AGPL-3.0-only
       {% for generic in generics_involved %}
         <tr>
           <td>{% if generic.in_core %}
-              <span class="tag is-primary"> In core</span>
-            {% else %}
-              <span class="tag is-danger"> Not in core</span>
-            {% endif %}
+            <span class="tag is-primary"> In core</span>
+          {% else %}
+            <span class="tag is-danger"> Not in core</span>
+          {% endif %}
           </td>
           <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
           <td>{{generic.team.name}}</td>

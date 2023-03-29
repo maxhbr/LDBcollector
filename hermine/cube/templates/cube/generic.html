@@ -10,28 +10,28 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}Generic obligation{{ generic.name }}{% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:generics' %}">Generic obligations</a></li>
-  <li>{{ generic.name|truncatechars:42 }}</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:generics' %}">Generic obligations</a></li>
+    <li>{{ generic.name|truncatechars:42 }}</li>
+  </ul>
 {% endblock %}
 
 {% block actions %}
   {% if perms.cube.change_generic %}
-  <a class="button" href="{% url "admin:cube_generic_change" generic.id %}" target="_blank">
-    <span class="icon">
-      <i class="fas fa-edit"></i>
-    </span>
-    <span>Edit this generic obligation</span>
-  </a>
+    <a class="button" href="{% url "admin:cube_generic_change" generic.id %}" target="_blank">
+      <span class="icon">
+        <i class="fas fa-edit"></i>
+      </span>
+      <span>Edit this generic obligation</span>
+    </a>
   {% endif %}
 {% endblock %}
 
 {% block herozone %}
-<div class="hero-body">
-  <p class="title">{{ generic.name }}</p>
-</div>
+  <div class="hero-body">
+    <p class="title">{{ generic.name }}</p>
+  </div>
 {% endblock %}
 
 {% block infoitem %}
@@ -44,17 +44,17 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
-<section class="card">
-  <header class="card-header">
-    <p class="card-header-title">
-      <span class="icon"><i class="fas fa-info-circle"></i></span>
-      Features of this generic obligation
-    </p>
-  </header>
-  <div class="card-content">
-    <div class="columns">
-      <div class="column">
-        <p>Core status:
+  <section class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon"><i class="fas fa-info-circle"></i></span>
+        Features of this generic obligation
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="columns">
+        <div class="column">
+          <p>Core status:
             {% if generic.in_core %}
               <span class="tag is-light is-medium">In core</span>
             {% else %}
@@ -80,29 +80,29 @@ SPDX-License-Identifier: AGPL-3.0-only
   </section>
 
   {% if perms.cube.view_license %}
-  <section class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        <span class="icon">
-          <i class="fas fa-balance-scale"></i>
-        </span>
-        Related licenses
-      </p>
-    </header>
-    <div class="card-content">
-      <p>
-        {% for obligation in generic.obligation_set.all %}
-          <a href="#{{ obligation.license.spdx_id }}">
-          <span class="tag {{ obligation.license|licenseAllowedCSS }}">
-            {{ obligation.license.spdx_id }}
+    <section class="card">
+      <header class="card-header">
+        <p class="card-header-title">
+          <span class="icon">
+            <i class="fas fa-balance-scale"></i>
           </span>
-        </a>
-        {% endfor %}
-      </p>
-    </div>
-  </section>
+          Related licenses
+        </p>
+      </header>
+      <div class="card-content">
+        <p>
+          {% for obligation in generic.obligation_set.all %}
+            <a href="#{{ obligation.license.spdx_id }}">
+              <span class="tag {{ obligation.license|licenseAllowedCSS }}">
+                {{ obligation.license.spdx_id }}
+              </span>
+            </a>
+          {% endfor %}
+        </p>
+      </div>
+    </section>
 
-  <h3 class="title is-3">Related individual obligations</h3>
+    <h3 class="title is-3">Related individual obligations</h3>
     {% for obligation in generic.obligation_set.all %}
       <div class="card">
         <header class="card-header">

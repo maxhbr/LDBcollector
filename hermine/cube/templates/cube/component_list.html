@@ -9,50 +9,50 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}Components{% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li>Components</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li>Components</li>
+  </ul>
 {% endblock %}
 
 {% block herozone %}
-<h1 class="title">
-  <span class="icon is-medium">
-  <i class="fas fa-puzzle-piece"></i>
-  </span>
-3rd Party Components
-</h1>
+  <h1 class="title">
+    <span class="icon is-medium">
+      <i class="fas fa-puzzle-piece"></i>
+    </span>
+    3rd Party Components
+  </h1>
 {% endblock %}
 
 {% block content %}
-{% include "cube/includes/list_nav.html" %}
-<p>The list of the 3rd party (mostly Open Source) components that you reuse in your products.</p>
-<table class="table is-striped ">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Versions</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-{% for component in object_list %}
-    <tr>
-      <td><a href="{% url "cube:component_detail" component.id %}">{{ component.name }}</a></td>
-      <td>
-        {% for version in component.versions.all %}
-          {{ version.version_number }}
-        {% endfor %}
-      </td>
-      <td>
-        {{ component.description|truncatechars:42 }}
-      </td>
-    </tr>
+  {% include "cube/includes/list_nav.html" %}
+  <p>The list of the 3rd party (mostly Open Source) components that you reuse in your products.</p>
+  <table class="table is-striped ">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Versions</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for component in object_list %}
+        <tr>
+          <td><a href="{% url "cube:component_detail" component.id %}">{{ component.name }}</a></td>
+          <td>
+            {% for version in component.versions.all %}
+              {{ version.version_number }}
+            {% endfor %}
+          </td>
+          <td>
+            {{ component.description|truncatechars:42 }}
+          </td>
+        </tr>
 
-{% endfor %}
-  </tbody>
-</table>
+      {% endfor %}
+    </tbody>
+  </table>
 
-{% include "cube/includes/list_nav.html" %}
+  {% include "cube/includes/list_nav.html" %}
 
 {% endblock %}

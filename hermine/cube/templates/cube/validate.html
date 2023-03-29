@@ -9,27 +9,27 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block content %}
 
-<h1>Validation for {{ release.product.name }} {{release.release_number}}</h1>
+    <h1>Validation for {{ release.product.name }} {{release.release_number}}</h1>
 
-<h2> Validations</h2>
+    <h2> Validations</h2>
 
-<ul>
-{% for validation in validations %}
+    <ul>
+        {% for validation in validations %}
 
-<li>{{ validation }},</li>
+            <li>{{ validation }},</li>
 
-{% endfor %}
-</ul>
-<h2> Choices</h2>
+        {% endfor %}
+    </ul>
+    <h2> Choices</h2>
 
-<ul>
-{% for choice in choices %}
+    <ul>
+        {% for choice in choices %}
 
-<li> {{ choice }},</li>
+            <li> {{ choice }},</li>
 
-{% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
 
 
-<p>Back to <a href="{% url 'cube:release_summary' release.id %}">release {{release.release_number}} of {{ release.product.name }}</a></p>
+    <p>Back to <a href="{% url 'cube:release_summary' release.id %}">release {{release.release_number}} of {{ release.product.name }}</a></p>
 {% endblock %}

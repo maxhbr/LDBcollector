@@ -6,17 +6,17 @@ SPDX-License-Identifier: AGPL-3.0-only
   <ul>
     <li{% if active_tab == "summary" %} class="is-active"{% endif %}>
       <a href="{% url 'cube:release_summary' release.pk %}">
-      <span class="icon is-small"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
-      <span>Summary</span>
+        <span class="icon is-small"><i class="fas fa-clipboard-list" aria-hidden="true"></i></span>
+        <span>Summary</span>
       </a>
     </li>
     {% if perms.cube.change_release_bom %}
-    <li{% if active_tab == "import" %} class="is-active"{% endif %}>
-      <a href="{% url 'cube:release_import' release.pk %}">
-        <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
-        <span>Import components</span>
-      </a>
-    </li>
+      <li{% if active_tab == "import" %} class="is-active"{% endif %}>
+        <a href="{% url 'cube:release_import' release.pk %}">
+          <span class="icon is-small"><i class="fas fa-upload" aria-hidden="true"></i></span>
+          <span>Import components</span>
+        </a>
+      </li>
     {% endif %}
     <li{% if active_tab == "validation" %} class="is-active"{% endif %}>
       <a href="{% url 'cube:release_validation' release.pk %}">

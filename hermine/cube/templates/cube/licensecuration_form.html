@@ -5,22 +5,22 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% block title %}{% if object %}Edit{% else %}Add{% endif %} curation{% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:licensecurations' %}">Curations</a></li>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:licensecurations' %}">Curations</a></li>
     <li>{% if object %}{{object.version|default:object.component}}{% else %}Add{% endif %}</li>
-</ul>
+  </ul>
 {% endblock %}
 
 {% block herozone %}
-<h1 class="title">
-  <span class="icon is-medium"><i class="fas fa-band-aid"></i></span>
-  {% if object %}
-  Edit license curation for {% if object.version %} {{ object.version }} {% else %} {{ object.component }} (any version) {% endif %}
-  {% else %}
-  Add license curation
-  {% endif %}
-</h1>
+  <h1 class="title">
+    <span class="icon is-medium"><i class="fas fa-band-aid"></i></span>
+    {% if object %}
+      Edit license curation for {% if object.version %} {{ object.version }} {% else %} {{ object.component }} (any version) {% endif %}
+    {% else %}
+      Add license curation
+    {% endif %}
+  </h1>
 {% endblock %}
 
 {% block content %}

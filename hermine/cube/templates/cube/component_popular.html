@@ -8,54 +8,54 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% block title %}Components{% endblock %}
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url "cube:components" %}">Components</a></li>
-  <li>Most used components</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url "cube:components" %}">Components</a></li>
+    <li>Most used components</li>
+  </ul>
 {% endblock %}
 {% block herozone %}
-<h1 class="title">
-  <span class="icon is-medium">
-  <i class="fas fa-puzzle-piece"></i>
-  </span>
-Top 50 Most used components
-</h1>
+  <h1 class="title">
+    <span class="icon is-medium">
+      <i class="fas fa-puzzle-piece"></i>
+    </span>
+    Top 50 Most used components
+  </h1>
 {% endblock %}
 
 {% block content %}
-<table class="table is-striped ">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Number of usages</th>
-      <th>Description</th>
-      <th>Funding opportunity</th>
-    </tr>
-  </thead>
-  <tbody>
-{% for component in component_list %}
-    <tr>
-      <td>{{ component.package_repo }}</td>
-      <td><a href="{% url "cube:component_detail" component.id %}">{{ component.name }}</a></td>
-      <td>
-        {{ component.popularity }}
-      </td>
-      <td>
-        {{ component.description|truncatechars:42 }}
-      </td>
-      <td>{% if component.fundings.all %}
+  <table class="table is-striped ">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Number of usages</th>
+        <th>Description</th>
+        <th>Funding opportunity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for component in component_list %}
+        <tr>
+          <td>{{ component.package_repo }}</td>
+          <td><a href="{% url "cube:component_detail" component.id %}">{{ component.name }}</a></td>
+          <td>
+            {{ component.popularity }}
+          </td>
+          <td>
+            {{ component.description|truncatechars:42 }}
+          </td>
+          <td>{% if component.fundings.all %}
 
-          {% for funding in component.fundings.all %}
-           <a target="_blank" href="{{funding.url}}"><i class="fas fa-money-check-alt"></i></a>
-          {% endfor%}
+            {% for funding in component.fundings.all %}
+              <a target="_blank" href="{{funding.url}}"><i class="fas fa-money-check-alt"></i></a>
+            {% endfor%}
           {% endif%}</td>
-    </tr>
+        </tr>
 
-{% endfor %}
-  </tbody>
-</table>
+      {% endfor %}
+    </tbody>
+  </table>
 
 
 

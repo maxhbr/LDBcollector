@@ -10,17 +10,17 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}{{ license.long_name }}{% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
-  <li><a href="{% url "cube:license" license.id %}">{{ license.spdx_id }}</a></li>
-  <li>Edit</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
+    <li><a href="{% url "cube:license" license.id %}">{{ license.spdx_id }}</a></li>
+    <li>Edit</li>
+  </ul>
 {% endblock %}
 
 {% block content %}
   <form method="post">
-     {% csrf_token %}
+    {% csrf_token %}
     <table>
       {{ form }}
     </table>

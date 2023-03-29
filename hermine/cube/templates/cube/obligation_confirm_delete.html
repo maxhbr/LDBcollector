@@ -9,23 +9,23 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block title %}{{ object.license }} - Delete obligation{% endblock %}
 
 {% block breadcrumbs %}
-<ul>
-  <li>Hermine</li>
-  <li><a href="{% url "cube:licenses" %}">Licenses</a></li>
-  <li><a href="{% url 'cube:license' object.license.id %}">{{ object.license }}</a></li>
-  <li>Obligation <em>{{ object.name }}</em></li>
-  <li>Delete</li>
-</ul>
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url "cube:licenses" %}">Licenses</a></li>
+    <li><a href="{% url 'cube:license' object.license.id %}">{{ object.license }}</a></li>
+    <li>Obligation <em>{{ object.name }}</em></li>
+    <li>Delete</li>
+  </ul>
 {% endblock %}
 {% block herozone %}
-<h1 class="title">Delete obligation <em>{{ object.name }}</em> ({{ object.license }})</h1>
+  <h1 class="title">Delete obligation <em>{{ object.name }}</em> ({{ object.license }})</h1>
 {% endblock %}
 
 {% block content %}
-<form method="post">
-  {% csrf_token %}
-  <p>Are you sure you want to delete obligation <em>{{ object.name }}</em> for license {{ object.license }}?</p>
-  {{ form }}
+  <form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete obligation <em>{{ object.name }}</em> for license {{ object.license }}?</p>
+    {{ form }}
     <input type="submit" value="Confirm">
-</form>
+  </form>
 {% endblock %}
