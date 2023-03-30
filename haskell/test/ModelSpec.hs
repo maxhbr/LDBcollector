@@ -9,7 +9,7 @@ import qualified Data.Map                   as Map
 
 import           Ldbcollector.Model
 
-modelSpec =
+modelSpec = do
     describe "LicenseName" $ do
         it "Equals should behave as expected" $ do
             newLN "MIT" `shouldBe` newLN "MIT"

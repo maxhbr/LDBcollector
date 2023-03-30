@@ -12,15 +12,16 @@ import           Ldbcollector.Model.LicenseGraphTask as X
 import           Ldbcollector.Model.LicenseName      as X
 
 import qualified Data.Vector as V
+import qualified Control.Monad.State               as MTL
 
 class Source a where
     getOrigin :: a -> Origin
-    getFacts :: a -> Vector LicenseFact
-    applyFacts :: a -> LicenseGraphM ()
-    applyFacts a = let
+    getFacts :: a -> IO (Vector LicenseFact)
+    applySource :: a -> LicenseGraphM ()
+    applySource a = let
             origin = getOrigin a
             facts = getFacts a
-        in V.mapM_ (\fact -> withFact (origin, fact) $ (applyTask . getTask) fact) facts
+        in MTL.lift (getFacts a) >>= V.mapM_ (\fact -> withFact (origin, fact) $ (applyTask . getTask) fact)
     -- applySource :: a -> LicenseGraphM ()
     -- applySource a = lift (getTask a) >>= applyTask
     -- getTask :: a -> IO LicenseGraphTask

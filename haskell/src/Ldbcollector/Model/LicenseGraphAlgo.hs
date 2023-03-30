@@ -86,5 +86,5 @@ focus' = undefined
 --     stderrLog "end focusing"
 --     return a
 
--- getFocused :: Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
--- getFocused needles = focus needles MTL.get
+getFocused :: Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
+getFocused needles = undefined -- focus needles MTL.get

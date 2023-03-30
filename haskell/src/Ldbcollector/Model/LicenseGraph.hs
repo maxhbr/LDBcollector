@@ -75,6 +75,12 @@ getLicenseGraphSize (LicenseGraph gr node_map node_map_rev _) = let
         node_map_rev_size =  Map.size node_map_rev
     in gr_size
 
+getLicenseGraphLicenseNames :: LicenseGraph -> Vector LicenseName
+getLicenseGraphLicenseNames = let
+        fun (LGName ln) = [ln]
+        fun _ = []
+    in V.fromList . concatMap (fun . snd) . G.labNodes . _gr
+
 type LicenseGraphM a = MTL.StateT LicenseGraph IO a
 runLicenseGraphM' :: LicenseGraph -> LicenseGraphM a -> IO (a, LicenseGraph)
 runLicenseGraphM' initGraph = (`MTL.runStateT` initGraph)
@@ -164,18 +170,21 @@ applyEdgeTask left edge right = do
     _ <- insertEdges edges
     return (leftNodes, rightNodes)
 
+applyLnRelation ::  [LicenseName] -> LicenseFactTask -> LicenseNameRelation  -> WithFactM (Vector LicenseGraphNode)
+applyLnRelation lefts rightTask relation = do
+    rNodes <- applyTask' rightTask
+    lNodes <- mconcat <$> mapM (applyTask' . AddLN) lefts
+    let edges = V.concatMap (\tNode -> V.map (,tNode, LGNameRelation relation) lNodes) rNodes
+    _ <- insertEdges edges
+    return lNodes
+
 applyTask' :: LicenseFactTask -> WithFactM (Vector LicenseGraphNode)
 applyTask' Noop = pure mempty
 applyTask' (AddLN ln) = let
       node = LGName ln
     in insertNode node >> return (V.singleton node)
-applyTask' (SameLNs sames t) = do
-    tNodes <- applyTask' t
-    sNodes <- mconcat <$> mapM (applyTask' . AddLN) sames
-    let edges = V.concatMap (\tNode -> V.map (,tNode, LGNameRelation Same) sNodes) tNodes
-    _ <- insertEdges edges
-    return sNodes
--- applyTask' (Pure p) = p >> return mempty
+applyTask' (SameLNs sames t) = applyLnRelation sames t Same
+applyTask' (BetterLNs sames t) = applyLnRelation sames t Better
 
 applyTask :: LicenseFactTask -> WithFactM ()
 applyTask = void . applyTask'

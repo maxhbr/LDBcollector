@@ -7,6 +7,7 @@ module Ldbcollector.Model.LicenseFact
   , FactId
   , FromFact (..)
   , LicenseFact (..)
+  , wrapFact, wrapFacts, wrapFactV
   , LicenseFactTask (..)
   , LicenseFactC (..)
   ) where
@@ -19,10 +20,11 @@ import           Data.Aeson                        as A
 import qualified Data.ByteString.Base16            as B16
 import qualified Crypto.Hash.MD5 as MD5
 import qualified Data.Map                          as Map
+import qualified Data.Vector                       as V
 
 import           Ldbcollector.Model.LicenseName
 
-data Origin = Origin
+newtype Origin = Origin String
    deriving (Eq, Show, Ord)
 
 type FactId = String
@@ -40,7 +42,7 @@ data LicenseFactTask where
     Noop :: LicenseFactTask
     AddLN :: LicenseName -> LicenseFactTask
     SameLNs :: [LicenseName] -> LicenseFactTask -> LicenseFactTask
-    -- BetterLNs :: [LicenseName] -> LicenseFactTask -> LicenseFactTask
+    BetterLNs :: [LicenseName] -> LicenseFactTask -> LicenseFactTask
     -- ValueApplies :: [LicenseFactNode] -> A.Value -> LicenseName -> LicenseFactTask
 
 class (Eq a, Ord a) => LicenseFactC a where
@@ -55,6 +57,12 @@ class (Eq a, Ord a) => LicenseFactC a where
 data LicenseFact where
     LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
 instance Show LicenseFact where
+wrapFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => a -> LicenseFact
+wrapFact a = LicenseFact (typeOf a) a
+wrapFacts :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => [a] -> [LicenseFact]
+wrapFacts = map wrapFact
+wrapFactV :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => V.Vector a -> V.Vector LicenseFact
+wrapFactV = V.map wrapFact
 
 instance ToJSON LicenseFact where
     toJSON (LicenseFact _ v) = toJSON v

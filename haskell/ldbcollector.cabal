@@ -74,15 +74,15 @@ library
 
     -- Modules included in this library but not exported.
     other-modules:
-        Ldbcollector.Source.BlueOak,
-        Ldbcollector.Source.Cavil,
-        Ldbcollector.Source.ChooseALicense,
-        Ldbcollector.Source.Fedora,
-        Ldbcollector.Source.Fossology,
-        Ldbcollector.Source.FSF,
+        -- Ldbcollector.Source.BlueOak,
+        -- Ldbcollector.Source.Cavil,
+        -- Ldbcollector.Source.ChooseALicense,
+        -- Ldbcollector.Source.Fedora,
+        -- Ldbcollector.Source.Fossology,
+        -- Ldbcollector.Source.FSF,
         Ldbcollector.Source.SPDX,
-        Ldbcollector.Source.OSADL,
-        Ldbcollector.Source.OSLC,
+        -- Ldbcollector.Source.OSADL,
+        -- Ldbcollector.Source.OSLC,
         Ldbcollector.Source.Scancode
 
     -- LANGUAGE extensions used by modules in this package.
