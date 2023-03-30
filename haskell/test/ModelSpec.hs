@@ -17,3 +17,7 @@ modelSpec =
             newLN "MIT" `shouldBe` newLN "Mit"
             newLN "MIT" `shouldNotBe` newNLN "Namespace" "Mit"
             newNLN "Namespace" "MIT" `shouldBe` newNLN "Namespace" "Mit"
+    describe "LicenseFact" $ do
+        pure ()
+    describe "LicenseGraph" $ do
+        pure ()

@@ -1,7 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Model.LicenseName
-  ( LicenseName
+  ( LicenseName (..)
   , newLN, newNLN, setNS
+  , LicenseNameRelation (..)
   ) where
 
 import           MyPrelude
@@ -11,6 +12,8 @@ import           Data.Text as T
 
 data LicenseName where
     LicenseName :: Maybe Text -> Text -> LicenseName
+    LicenseFullName :: LicenseName -> LicenseName
+    LicenseShortName :: LicenseName -> LicenseName
 newLN :: Text -> LicenseName
 newLN = LicenseName Nothing
 
@@ -43,3 +46,10 @@ instance FromJSON LicenseName where
   parseJSON = withText "LicenseName" $ return . fromString . unpack
 instance ToJSON LicenseName where
     toJSON = String . pack . show
+
+data LicenseNameRelation where
+    Same        :: LicenseNameRelation
+    Better      :: LicenseNameRelation
+    AppliesTo   :: LicenseNameRelation
+    Potentially :: LicenseNameRelation -> LicenseNameRelation
+    deriving (Show, Eq, Ord)

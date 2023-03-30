@@ -93,6 +93,7 @@ library
         base ^>=4.16.4.0,
         -- Data
         text, bytestring, split,
+        cryptohash-md5, base16-bytestring,
         -- network-uri,
         vector, containers, unordered-containers,
         fgl,
