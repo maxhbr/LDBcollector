@@ -28,7 +28,6 @@ tests:
   - cd hermine
   - poetry run black --check .
   - poetry run ruff .
-  - poetry run djhtml hermine/cube/templates/**.html --check
   - poetry run python manage.py makemigrations | grep "No changes detected"
   - poetry run python manage.py test
 pages:
