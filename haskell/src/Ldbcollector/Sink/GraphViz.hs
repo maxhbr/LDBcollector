@@ -32,26 +32,27 @@ computeDigraph graph = let
             , GV.fmtNode          = \(n, l) ->
                 let nodeLabel = graph `G.lab` n
                     label = case nodeLabel of
-                                -- Just (Vec v) -> GV.toLabelValue ((unlines . map show) v)
-                                -- Just (LGValue _) -> GV.toLabelValue "$VALUE"
-                                -- Just (Rule _) -> GV.toLabelValue "$Rule"
-                                Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
+                                Just (LGName name) -> GV.toLabelValue (show name)
+                                Just (LGStatement stmt) -> GV.toLabelValue stmt
+                                Just (LGFact fact) -> GV.toLabelValue (getFactId fact) 
+                                -- Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
                                 Nothing -> GV.toLabelValue "(/)"
                     styling = case nodeLabel of
-                        -- Just (LGValue _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]
-                        --                     , GV.FontColor (GV.X11Color GV.Gray)
-                        --                     -- , GV.Shape GV.PlainText
-                        --                     ]
-                        -- Just (Rule _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]
-                        --                  , GV.FontColor (GV.X11Color GV.Gray)
-                        --                  -- , GV.Shape GV.PlainText
-                        --                  ]
+                        Just (LGStatement _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]
+                                                , GV.FontColor (GV.X11Color GV.Gray)
+                                                , GV.Shape GV.PlainText
+                                                ]
+                        Just (LGFact _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]
+                                                , GV.FontColor (GV.X11Color GV.Gray)
+                                                , GV.Shape GV.PlainText
+                                                ]
                         _ -> []
                 in  GV.Label label : styling
             , GV.fmtEdge          = \(a, b, _) ->
                 (case nub (edgeLabels a b) of
                     [] -> []
                     [LGNameRelation Same] -> []
+                    [LGAppliesTo] -> []
                     edgeLabels' -> (case edgeLabels' of
                         [LGNameRelation (Potentially _)] -> [GV.style GV.dashed]
                         _ -> []) ++ [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]

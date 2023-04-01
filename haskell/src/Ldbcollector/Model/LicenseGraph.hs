@@ -31,6 +31,7 @@ import qualified Data.Vector                       as V
 import           System.Console.Pretty             (Color (Green), color)
 
 import           Ldbcollector.Model.LicenseName
+import           Ldbcollector.Model.LicenseStatement
 import           Ldbcollector.Model.LicenseFact
 import qualified Control.Monad.Reader as MTL
 
@@ -42,15 +43,17 @@ stderrLog msg = MTL.liftIO $ hPutStrLn stderr (color Green msg)
 -- ############################################################################
 
 data LicenseGraphNode where
-    LGName     :: LicenseName -> LicenseGraphNode
-    LGFact     :: LicenseFact -> LicenseGraphNode
-    -- LGStatement :: LicenseStatement -> LicenseGraphNode
+    LGName      :: LicenseName -> LicenseGraphNode
+    LGStatement :: LicenseStatement -> LicenseGraphNode
+    LGFact      :: LicenseFact -> LicenseGraphNode
 deriving instance Show LicenseGraphNode
 deriving instance Eq LicenseGraphNode
 deriving instance Ord LicenseGraphNode
 
 data LicenseGraphEdge where
     LGNameRelation :: LicenseNameRelation -> LicenseGraphEdge
+    LGAppliesTo    :: LicenseGraphEdge
+    LGImpliedBy      :: LicenseGraphEdge
 deriving instance Show LicenseGraphEdge
 deriving instance Eq LicenseGraphEdge
 
@@ -91,8 +94,14 @@ type WithFactM a = MTL.ReaderT (Origin, LicenseFact) (MTL.StateT LicenseGraph IO
 withFact :: (Origin,LicenseFact) -> WithFactM a -> LicenseGraphM a
 withFact key = (`MTL.runReaderT` key)
 
+getIdOfNode :: LicenseGraphNode -> LicenseGraphM (Maybe G.Node)
+getIdOfNode lgn = MTL.gets ((lgn `Map.lookup`) . _node_map)
+
+getIdsOfNodes :: V.Vector LicenseGraphNode -> LicenseGraphM (V.Vector G.Node)
+getIdsOfNodes lgns = V.catMaybes <$> mapM getIdOfNode lgns
+
 insertNode' ::  LicenseGraphNode -> LicenseGraphM G.Node
-insertNode' lgn = MTL.gets ((lgn `Map.lookup`) . _node_map) >>= \case
+insertNode' lgn = getIdOfNode lgn >>= \case
   Just n  -> return n
   Nothing -> do
     n <- MTL.gets ((+ 1) . G.noNodes . _gr)
@@ -118,13 +127,32 @@ insertNodes :: Vector LicenseGraphNode -> WithFactM (Vector G.Node)
 insertNodes = V.mapM insertNode
 
 isAllowedLEdge :: G.LEdge LicenseGraphEdge -> LicenseGraphM Bool
-isAllowedLEdge (a, b, LGNameRelation _) = do 
+isAllowedLEdge (a, b, LGNameRelation _) = do
     an <- MTL.gets ((a `Map.lookup`) . _node_map_rev)
     bn <- MTL.gets ((b `Map.lookup`) . _node_map_rev)
-    return $ case an of 
+    return $ case an of
                 Just (LGName _) ->
                     case bn of
                         Just (LGName _) -> True
+                        _ -> False
+                _ -> False
+isAllowedLEdge (a, b, LGAppliesTo) = do
+    an <- MTL.gets ((a `Map.lookup`) . _node_map_rev)
+    bn <- MTL.gets ((b `Map.lookup`) . _node_map_rev)
+    return $ case an of
+                Just (LGStatement _) ->
+                    case bn of
+                        Just (LGName _) -> True
+                        Just (LGStatement _) -> True
+                        _ -> False
+                _ -> False
+isAllowedLEdge (a, b, LGImpliedBy) = do
+    an <- MTL.gets ((a `Map.lookup`) . _node_map_rev)
+    bn <- MTL.gets ((b `Map.lookup`) . _node_map_rev)
+    return $ case an of
+                Just (LGStatement _) -> 
+                    case bn of
+                        Just (LGFact _) -> True
                         _ -> False
                 _ -> False
 
@@ -134,7 +162,7 @@ insertEdge = let
         insertLEdge edge = do
             isAllowed <- MTL.lift $ isAllowedLEdge edge
             unless isAllowed $ fail ("tried to add not allowed edge: " ++ show edge)
-            
+
             alreadyHasTheEdge <- MTL.gets ((`G.hasLEdge` edge) . _gr)
             unless alreadyHasTheEdge $
                 MTL.modify (\state -> state { _gr = edge `G.insEdge` _gr state })
@@ -160,6 +188,13 @@ insertEdge = let
 insertEdges :: Vector (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> WithFactM (Vector G.Node)
 insertEdges = V.mapM insertEdge
 
+insertImpliedByFact :: LicenseGraphNode -> WithFactM (G.Node, G.Node)
+insertImpliedByFact lgn = do
+    lgnNode <- insertNode lgn 
+    factLG <- MTL.asks (LGFact . snd)
+    factNode <- insertNode factLG
+    void $ insertEdge (lgn, factLG, LGImpliedBy)
+    return (lgnNode, factNode)
 
 applyEdgeTask :: LicenseFactTask -> LicenseGraphEdge -> LicenseFactTask -> WithFactM (Vector LicenseGraphNode, Vector LicenseGraphNode)
 applyEdgeTask left edge right = do
@@ -180,11 +215,23 @@ applyLnRelation lefts rightTask relation = do
 
 applyTask' :: LicenseFactTask -> WithFactM (Vector LicenseGraphNode)
 applyTask' Noop = pure mempty
+applyTask' (AllTs ts) = mconcat <$> mapM applyTask' ts
 applyTask' (AddLN ln) = let
       node = LGName ln
     in insertNode node >> return (V.singleton node)
 applyTask' (SameLNs sames t) = applyLnRelation sames t Same
 applyTask' (BetterLNs sames t) = applyLnRelation sames t Better
+applyTask' (AppliesToLN stmt ln) = do
+    let stmtLG = LGStatement stmt
+    (stmtNode, factNode) <- insertImpliedByFact stmtLG
+    lNodes <- applyTask' (AddLN ln)
+    let edges = V.map (stmtLG, , LGAppliesTo) lNodes
+    _ <- insertEdges edges
+    return lNodes
+applyTask' (MAppliesToLN (Just stmt) ln) = applyTask' (AppliesToLN stmt ln)
+applyTask' (MAppliesToLN Nothing ln) = do
+    applyTask' (AddLN ln)
+    return mempty
 
 applyTask :: LicenseFactTask -> WithFactM ()
 applyTask = void . applyTask'

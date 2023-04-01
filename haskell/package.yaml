@@ -1,0 +1,103 @@
+name:                ldbcollector
+version:             0.1.0.0
+github:              "maxhbr/ldbcollector-rust"
+license:             BSD3
+author:              "Maximilian Huber"
+maintainer:          "gh@maxhbr.de"
+copyright:           "Maximilian Huber"
+
+extra-source-files:
+- README.org
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/maxhbr/ldbcollector-rust#readme>
+
+language: GHC2021
+
+dependencies:
+- base >= 4.7 && < 5
+# Data
+- text
+- bytestring
+- split
+- cryptohash-md5
+- base16-bytestring
+# network-uri
+- vector
+- containers
+- unordered-containers
+- fgl
+- mtl
+# System
+- directory
+- filepath
+- Glob
+- pretty-terminal
+# parsing
+- aeson
+- aeson-pretty
+- cassava
+- yaml
+- libyaml
+# Sources
+- spdx
+# Sinks
+- graphviz
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
+
+executables:
+  ldbcollector-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ldbcollector
+    - blaze-html
+    - blaze-markup
+    - scotty
+    - text
+    - mtl
+    - temporary
+    - vector
+
+tests:
+  ldbcollector-test:
+    main:                Main.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ldbcollector
+    - vector
+    - containers
+    - unordered-containers
+    - fgl
+    - hspec
+    - QuickCheck
+    - file-embed
+    - temporary
+

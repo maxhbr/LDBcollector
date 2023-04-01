@@ -45,42 +45,46 @@ instance ToJSON ScancodeData
 
 instance LicenseFactC ScancodeData where
     getType _ = "ScancodeData"
-    getTask scd = undefined
+    getTasks scd = let
+            mainName = (newNLN "scancode" . pack . _key) scd
+        in 
+            [ SameLNs [(newLN . pack . _shortName) scd
+                      ,(newLN . pack . _name) scd
+                      ] $
+              SameLNs [(newLN . pack . _key) scd] $
+              AddLN mainName
+            -- , MAppliesToLN "" mainName
+            , MAppliesToLN (_category scd) mainName
+            , MAppliesToLN (_homepageUrl scd) mainName
+            , MAppliesToLN (_notes scd) mainName
+            , MAppliesToLN (_osiUrl scd) mainName
+            ]
+
+    -- getTask scd = let
+    --         shortname = AddLn $ newLN (pack (_shortName scd))
+    --         name = AddLn $ newLN (pack (_name scd))
+    --     in
+    --     EdgeLeft (
+    --             AddTs (V.fromList
+    --                 [ maybeToTask fromString (_category scd)
+    --                 , maybeToTask fromString (_homepageUrl scd)
+    --                 , maybeToTask fromString (_notes scd)
+    --                 , maybeToTask fromString (_osiUrl scd)
+    --                 , Add $ (Vec . map fromString) (_textUrls scd)
+    --                 , Add $ (Vec . map fromString) (_otherUrls scd)
+    --             ])
+    --     ) AppliesTo $
+    --     EdgeLeft (
+    --             AddTs (V.fromList
+    --                 [ shortname
+    --                 , name
+    --             ])
+    --     ) Better $
+    --         fromValue scd
+    --             (newNLN "scancode" . pack . _key)
+    --             (fmap (newNLN "spdx" . pack) . _spdxId)
 
 newtype ScancodeLicenseDB = ScancodeLicenseDB FilePath
-
--- applyScancodeData :: ScancodeData -> LicenseGraphTask
--- applyScancodeData scd = let
---         shortname = Add $ LicenseName (newLN (pack (_shortName scd)))
---         name = Add $ LicenseName (newLN (pack (_name scd)))
---     in
---       EdgeLeft (
---             AddTs (V.fromList
---                 [ maybeToTask fromString (_category scd)
---                 , maybeToTask fromString (_homepageUrl scd)
---                 , maybeToTask fromString (_notes scd)
---                 , maybeToTask fromString (_osiUrl scd)
---                 , Add $ (Vec . map fromString) (_textUrls scd)
---                 , Add $ (Vec . map fromString) (_otherUrls scd)
---             ])
---        ) AppliesTo $
---       EdgeLeft (
---             AddTs (V.fromList
---                 [ shortname
---                 , name
---             ])
---        ) Better $
---           fromValue scd
---               (LicenseName . newNLN "scancode" . pack . _key)
---               (fmap (LicenseName . newNLN "spdx" . pack) . _spdxId)
-
--- applyJson :: FilePath -> IO LicenseGraphTask
--- applyJson json = do
---     putStrLn ("read " ++ json)
---     decoded <- eitherDecodeFileStrict json :: IO (Either String ScancodeData)
---     case decoded of
---       Left err           -> fail err
---       Right scancodeData -> return $ applyScancodeData scancodeData
 
 instance Source ScancodeLicenseDB where
     getOrigin _  = Origin "ScancodeLicenseDB"

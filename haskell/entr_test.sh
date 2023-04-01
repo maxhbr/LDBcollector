@@ -5,9 +5,9 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 entr_task() (
   set -ex
-  cabal --enable-nix build
-  cabal --enable-nix test
-  cabal --enable-nix run
+  stack build
+  stack test
+  stack run
 )
 export -f entr_task
 

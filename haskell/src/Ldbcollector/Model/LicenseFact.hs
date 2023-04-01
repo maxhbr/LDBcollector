@@ -23,6 +23,7 @@ import qualified Data.Map                          as Map
 import qualified Data.Vector                       as V
 
 import           Ldbcollector.Model.LicenseName
+import           Ldbcollector.Model.LicenseStatement
 
 newtype Origin = Origin String
    deriving (Eq, Show, Ord)
@@ -40,10 +41,24 @@ deriving instance Ord a => Ord (FromFact a)
 
 data LicenseFactTask where
     Noop :: LicenseFactTask
+    
+    AllTs :: [LicenseFactTask] -> LicenseFactTask
+
     AddLN :: LicenseName -> LicenseFactTask
     SameLNs :: [LicenseName] -> LicenseFactTask -> LicenseFactTask
     BetterLNs :: [LicenseName] -> LicenseFactTask -> LicenseFactTask
-    -- ValueApplies :: [LicenseFactNode] -> A.Value -> LicenseName -> LicenseFactTask
+
+    AppliesToLN :: LicenseStatement -> LicenseName -> LicenseFactTask
+    MAppliesToLN :: Maybe LicenseStatement -> LicenseName -> LicenseFactTask
+
+    AppliesToStmt :: LicenseStatement -> LicenseStatement -> LicenseFactTask
+
+data ApplicableLNs where
+    LN :: LicenseName -> ApplicableLNs
+    AlternativeLNs :: [ApplicableLNs] -> ApplicableLNs -> ApplicableLNs
+    ImpreciseLNs :: [ApplicableLNs] -> ApplicableLNs -> ApplicableLNs
+data ImpliedStmts where
+    Stmts :: [LicenseStatement] -> ImpliedStmts
 
 class (Eq a, Ord a) => LicenseFactC a where
     getType :: a -> String
@@ -52,7 +67,12 @@ class (Eq a, Ord a) => LicenseFactC a where
     getFactId a = let
         md5 = (C.unpack . C.fromStrict . B16.encode .  MD5.hashlazy . A.encode) a
         in getType a ++ ":" ++ md5
+    getApplicableLNs :: a -> ApplicableLNs
+    getImpliedStmts :: a -> ImpliedStmts
+    getTasks :: a -> [LicenseFactTask]
+    getTasks a = [getTask a]
     getTask :: a -> LicenseFactTask
+    getTask a = AllTs $ getTasks a
 
 data LicenseFact where
     LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
