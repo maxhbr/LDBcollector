@@ -30,9 +30,9 @@ data CALData
   , _hidden :: Maybe Bool
   , _description :: Maybe String
   , _how :: Maybe String
-  , _permissions :: [String]
-  , _conditions :: [String]
-  , _limitations :: [String]
+  , _permissions :: [Text]
+  , _conditions :: [Text]
+  , _limitations :: [Text]
 --   , _content :: ByteString
   } deriving (Show, Eq, Ord, Generic)
 instance FromJSON CALData where
@@ -53,13 +53,13 @@ instance ToJSON CALData
 
 instance LicenseFactC CALData where
     getType _ = "ChooseALicense"
-    getApplicableLNs (CALData {_id = id, _name = name, _spdxId = spdxId, _title = title, _nickname = nickname}) = let
-            
-        in case catMaybes [id, spdxId, name, title] of
+    getApplicableLNs (CALData {_id = id, _name = name, _spdxId = spdxId, _title = title, _nickname = nickname}) =
+        case catMaybes [id, spdxId, name, title] of
             best:others -> NLN best `AlternativeLNs` map LN others `ImpreciseLNs` map LN (maybeToList nickname)
             _ -> undefined
-
-
+    getImpliedStmts caldata = [ MStmt (_description caldata)
+                              , MStmt (_how caldata)
+                              ]
 
 newtype ChooseALicense
     = ChooseALicense FilePath
