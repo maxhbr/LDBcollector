@@ -28,11 +28,13 @@ library
       Ldbcollector.Model.LicenseFact
       Ldbcollector.Model.LicenseGraph
       Ldbcollector.Model.LicenseGraphAlgo
-      Ldbcollector.Model.LicenseGraphTask
       Ldbcollector.Model.LicenseName
       Ldbcollector.Model.LicenseStatement
       Ldbcollector.Sink.GraphViz
       Ldbcollector.Source
+      Ldbcollector.Source.BlueOak
+      Ldbcollector.Source.Cavil
+      Ldbcollector.Source.Fedora
       Ldbcollector.Source.Scancode
       Ldbcollector.Source.SPDX
       MyPrelude

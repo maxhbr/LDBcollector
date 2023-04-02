@@ -6,14 +6,13 @@ module Ldbcollector.Model
 import           MyPrelude                           as X
 
 import           Ldbcollector.Model.LicenseFact      as X
-import           Ldbcollector.Model.LicenseStatement as X
 import           Ldbcollector.Model.LicenseGraph     as X
 import           Ldbcollector.Model.LicenseGraphAlgo as X
-import           Ldbcollector.Model.LicenseGraphTask as X
 import           Ldbcollector.Model.LicenseName      as X
+import           Ldbcollector.Model.LicenseStatement as X
 
-import qualified Data.Vector as V
-import qualified Control.Monad.State               as MTL
+import qualified Control.Monad.State                 as MTL
+import qualified Data.Vector                         as V
 
 class Source a where
     getOrigin :: a -> Origin
@@ -21,8 +20,7 @@ class Source a where
     applySource :: a -> LicenseGraphM ()
     applySource a = let
             origin = getOrigin a
-            facts = getFacts a
-        in MTL.lift (getFacts a) >>= V.mapM_ (\fact -> withFact (origin, fact) $ (applyTask . getTask) fact)
+        in MTL.lift (getFacts a) >>= V.mapM_ (\fact -> withFact (origin, fact) applyFact)
     -- applySource :: a -> LicenseGraphM ()
     -- applySource a = lift (getTask a) >>= applyTask
     -- getTask :: a -> IO LicenseGraphTask

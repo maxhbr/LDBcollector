@@ -5,8 +5,8 @@ module Ldbcollector.Source.SPDX
 
 import           Ldbcollector.Model
 
-import qualified Data.Vector as V
-import           Distribution.SPDX.Extra    (LicenseId)
+import qualified Data.Vector             as V
+import           Distribution.SPDX.Extra (LicenseId)
 
 newtype LicenseIdFact = LicenseIdFact LicenseId
     deriving (Eq, Ord)
@@ -17,8 +17,8 @@ instance ToJSON LicenseIdFact where
 
 instance LicenseFactC LicenseIdFact where
     getType _ = "SPDX-LicenseId"
-    getTask (LicenseIdFact licenseId) = BetterLNs [(newLN . pack . show) licenseId] $
-                                            AddLN ((newNLN "spdx" . pack . show) licenseId)
+    getApplicableLNs (LicenseIdFact licenseId) = (NLN . newNLN "spdx" . pack . show) licenseId
+
 
 data SPDXLicenseIds = SPDXLicenseIds
 

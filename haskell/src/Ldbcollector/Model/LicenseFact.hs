@@ -8,7 +8,8 @@ module Ldbcollector.Model.LicenseFact
   , FromFact (..)
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
-  , LicenseFactTask (..)
+  , ApplicableLNs (..)
+  , ImpliedStmt (..)
   , LicenseFactC (..)
   ) where
 
@@ -39,26 +40,16 @@ deriving instance Show a => Show (FromFact a)
 deriving instance Eq a => Eq (FromFact a)
 deriving instance Ord a => Ord (FromFact a)
 
-data LicenseFactTask where
-    Noop :: LicenseFactTask
-    
-    AllTs :: [LicenseFactTask] -> LicenseFactTask
-
-    AddLN :: LicenseName -> LicenseFactTask
-    SameLNs :: [LicenseName] -> LicenseFactTask -> LicenseFactTask
-    BetterLNs :: [LicenseName] -> LicenseFactTask -> LicenseFactTask
-
-    AppliesToLN :: LicenseStatement -> LicenseName -> LicenseFactTask
-    MAppliesToLN :: Maybe LicenseStatement -> LicenseName -> LicenseFactTask
-
-    AppliesToStmt :: LicenseStatement -> LicenseStatement -> LicenseFactTask
-
 data ApplicableLNs where
     LN :: LicenseName -> ApplicableLNs
-    AlternativeLNs :: [ApplicableLNs] -> ApplicableLNs -> ApplicableLNs
-    ImpreciseLNs :: [ApplicableLNs] -> ApplicableLNs -> ApplicableLNs
-data ImpliedStmts where
-    Stmts :: [LicenseStatement] -> ImpliedStmts
+    NLN :: LicenseName -> ApplicableLNs
+    AlternativeLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
+    ImpreciseLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
+data ImpliedStmt where
+    Stmt :: LicenseStatement -> ImpliedStmt
+    MStmt :: Maybe LicenseStatement -> ImpliedStmt
+    StmtRel :: ImpliedStmt -> ImpliedStmt -> ImpliedStmt
+    LicenseText :: Text -> ImpliedStmt
 
 class (Eq a, Ord a) => LicenseFactC a where
     getType :: a -> String
@@ -68,11 +59,8 @@ class (Eq a, Ord a) => LicenseFactC a where
         md5 = (C.unpack . C.fromStrict . B16.encode .  MD5.hashlazy . A.encode) a
         in getType a ++ ":" ++ md5
     getApplicableLNs :: a -> ApplicableLNs
-    getImpliedStmts :: a -> ImpliedStmts
-    getTasks :: a -> [LicenseFactTask]
-    getTasks a = [getTask a]
-    getTask :: a -> LicenseFactTask
-    getTask a = AllTs $ getTasks a
+    getImpliedStmts :: a -> [ImpliedStmt]
+    getImpliedStmts _ = []
 
 data LicenseFact where
     LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
@@ -100,4 +88,5 @@ instance Ord LicenseFact where
            else t1 <= t2
 instance LicenseFactC LicenseFact where
     getFactId (LicenseFact _ a) = getFactId a
-    getTask (LicenseFact _ a) = getTask a
+    getApplicableLNs (LicenseFact _ a) = getApplicableLNs a
+    getImpliedStmts (LicenseFact _ a) = getImpliedStmts a

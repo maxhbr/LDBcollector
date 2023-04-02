@@ -16,8 +16,8 @@ import qualified Data.Map                          as Map
 import qualified Data.Vector                       as V
 
 
-import           Ldbcollector.Model.LicenseName
 import           Ldbcollector.Model.LicenseGraph
+import           Ldbcollector.Model.LicenseName
 
 condense :: LicenseGraph -> G.Gr LicenseGraphNode ()
 condense = undefined

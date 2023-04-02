@@ -1,4 +1,4 @@
-module Ldbcollector.Sink.GraphViz 
+module Ldbcollector.Sink.GraphViz
     ( writeGraphViz
     ) where
 
@@ -34,12 +34,11 @@ computeDigraph graph = let
                     label = case nodeLabel of
                                 Just (LGName name) -> GV.toLabelValue (show name)
                                 Just (LGStatement stmt) -> GV.toLabelValue stmt
-                                Just (LGFact fact) -> GV.toLabelValue (getFactId fact) 
+                                Just (LGFact fact) -> GV.toLabelValue (getFactId fact)
                                 -- Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
                                 Nothing -> GV.toLabelValue "(/)"
                     styling = case nodeLabel of
                         Just (LGStatement _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]
-                                                , GV.FontColor (GV.X11Color GV.Gray)
                                                 , GV.Shape GV.PlainText
                                                 ]
                         Just (LGFact _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]
@@ -52,10 +51,12 @@ computeDigraph graph = let
                 (case nub (edgeLabels a b) of
                     [] -> []
                     [LGNameRelation Same] -> []
+                    [LGNameRelation Better] -> [GV.style GV.dashed]
                     [LGAppliesTo] -> []
+                    [LGImpliedBy] -> []
                     edgeLabels' -> (case edgeLabels' of
                         [LGNameRelation (Potentially _)] -> [GV.style GV.dashed]
-                        _ -> []) ++ [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
+                        _                                -> []) ++ [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
                 )
             }
     in GV.graphToDot params graph

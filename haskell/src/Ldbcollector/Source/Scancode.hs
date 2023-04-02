@@ -45,44 +45,17 @@ instance ToJSON ScancodeData
 
 instance LicenseFactC ScancodeData where
     getType _ = "ScancodeData"
-    getTasks scd = let
-            mainName = (newNLN "scancode" . pack . _key) scd
-        in 
-            [ SameLNs [(newLN . pack . _shortName) scd
-                      ,(newLN . pack . _name) scd
-                      ] $
-              SameLNs [(newLN . pack . _key) scd] $
-              AddLN mainName
-            -- , MAppliesToLN "" mainName
-            , MAppliesToLN (_category scd) mainName
-            , MAppliesToLN (_homepageUrl scd) mainName
-            , MAppliesToLN (_notes scd) mainName
-            , MAppliesToLN (_osiUrl scd) mainName
-            ]
-
-    -- getTask scd = let
-    --         shortname = AddLn $ newLN (pack (_shortName scd))
-    --         name = AddLn $ newLN (pack (_name scd))
-    --     in
-    --     EdgeLeft (
-    --             AddTs (V.fromList
-    --                 [ maybeToTask fromString (_category scd)
-    --                 , maybeToTask fromString (_homepageUrl scd)
-    --                 , maybeToTask fromString (_notes scd)
-    --                 , maybeToTask fromString (_osiUrl scd)
-    --                 , Add $ (Vec . map fromString) (_textUrls scd)
-    --                 , Add $ (Vec . map fromString) (_otherUrls scd)
-    --             ])
-    --     ) AppliesTo $
-    --     EdgeLeft (
-    --             AddTs (V.fromList
-    --                 [ shortname
-    --                 , name
-    --             ])
-    --     ) Better $
-    --         fromValue scd
-    --             (newNLN "scancode" . pack . _key)
-    --             (fmap (newNLN "spdx" . pack) . _spdxId)
+    getApplicableLNs scd = (NLN . newNLN "scancode" . pack . _key) scd `AlternativeLNs`
+                                [ (LN . newLN . pack . _shortName) scd
+                                , (LN . newLN . pack . _name) scd
+                                ]
+    getImpliedStmts scd = [ MStmt (_category scd)
+                          , MStmt (_homepageUrl scd)
+                          , MStmt (_notes scd)
+                          , MStmt (_osiUrl scd)
+                          ] 
+                          ++ map Stmt (_textUrls scd)
+                          ++ map Stmt (_otherUrls scd)
 
 newtype ScancodeLicenseDB = ScancodeLicenseDB FilePath
 
