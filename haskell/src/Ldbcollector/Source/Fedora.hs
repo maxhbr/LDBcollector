@@ -36,7 +36,7 @@ data FedoraEntryFedora
     = FedoraEntryFedora
     { _legacy_names        :: [LicenseName]
     , _legacy_abbreviation :: [LicenseName]
-    , _notes               :: Maybe String
+    , _notes               :: Maybe Text
     }
     deriving (Show, Ord, Eq, Generic, ToJSON)
 instance FromJSON FedoraEntryFedora where
@@ -64,11 +64,11 @@ instance LicenseFactC FedoraEntry where
              `ImpreciseLNs` map LN (legacy_names ++ legacy_abbreviation)
     getApplicableLNs _ = undefined -- should not happen
     getImpliedStmts (FedoraEntry _ (FedoraEntryLicense { _status = status , _urls = urls , _text = text }) (FedoraEntryFedora {_notes = notes})) =
-        [ Stmt (show status)
+        [ stmt (show status)
         ]
-        ++ map Stmt urls
+        ++ map LicenseUrl urls
         ++ map LicenseText (maybeToList text)
-        ++ map Stmt (maybeToList notes)
+        ++ map LicenseText (maybeToList notes)
 
 
 -- applyFedoraEntry :: String -> FedoraEntry -> LicenseGraphTask

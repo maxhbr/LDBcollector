@@ -28,11 +28,11 @@ data CALData
   , _nickname :: Maybe LicenseName
   , _featured :: Maybe Bool
   , _hidden :: Maybe Bool
-  , _description :: Maybe String
-  , _how :: Maybe String
-  , _permissions :: [Text]
-  , _conditions :: [Text]
-  , _limitations :: [Text]
+  , _description :: Maybe Text
+  , _how :: Maybe Text
+  , _cal_permissions :: [Text]
+  , _cal_conditions :: [Text]
+  , _cal_limitations :: [Text]
 --   , _content :: ByteString
   } deriving (Show, Eq, Ord, Generic)
 instance FromJSON CALData where
@@ -57,9 +57,14 @@ instance LicenseFactC CALData where
         case catMaybes [id, spdxId, name, title] of
             best:others -> NLN best `AlternativeLNs` map LN others `ImpreciseLNs` map LN (maybeToList nickname)
             _ -> undefined
-    getImpliedStmts caldata = [ MStmt (_description caldata)
-                              , MStmt (_how caldata)
-                              ]
+    getImpliedStmts caldata@(CALData{ _cal_permissions = permissions
+                                    , _cal_conditions = conditions
+                                    , _cal_limitations = limitations }) =
+        map (MaybeStatement . fmap LicenseComment)
+            [ _description caldata
+            , _how caldata
+            ]
+        ++ [LicensePCL (PCL permissions conditions limitations)]
 
 newtype ChooseALicense
     = ChooseALicense FilePath
@@ -79,24 +84,6 @@ readTxt txt = do
                     print err
                     return Nothing
                 Right calData -> return (Just calData{_id = Just ((newNLN "cal" . pack) fromFilename)})
-                    -- return $
-                    --     EdgeLeft (Add . Vec . map (Vec . map fromString) $ [
-                    --         _permissions calData,
-                    --         _conditions calData,
-                    --         _limitations calData
-                    --     ]) AppliesTo $
-                    --     EdgeLeft (AddTs . V.fromList $
-                    --        [ maybeToTask (Add . fromString) (_description calData)
-                    --        , maybeToTask (Add . fromString) (_how calData)
-                    --        ]) AppliesTo $
-                    --     EdgeLeft (AddTs . V.fromList $
-                    --        [ maybeToTask (Add . LicenseName . newLN . pack) (_name calData)
-                    --        , maybeToTask (Add . LicenseName . newLN . pack) (_nickname calData)
-                    --        , (Add . LicenseName . newLN . pack) fromFilename
-                    --        ]) (Potentially Better) $
-                    --     fromValue calData
-                    --         (const $ (LicenseName . newNLN "choose-a-license" . pack) fromFilename)
-                    --         (fmap (LicenseName . newNLN "spdx" . pack) . _spdxId)
         _ -> return Nothing --(return . Add . LicenseName . fromString) fromFilename
 
 instance Source ChooseALicense where

@@ -9,7 +9,6 @@ module Ldbcollector.Model.LicenseFact
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
   , ApplicableLNs (..)
-  , ImpliedStmt (..)
   , LicenseFactC (..)
   ) where
 
@@ -45,11 +44,6 @@ data ApplicableLNs where
     NLN :: LicenseName -> ApplicableLNs
     AlternativeLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
     ImpreciseLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
-data ImpliedStmt where
-    Stmt :: LicenseStatement -> ImpliedStmt
-    MStmt :: Maybe LicenseStatement -> ImpliedStmt
-    StmtRel :: ImpliedStmt -> ImpliedStmt -> ImpliedStmt
-    LicenseText :: Text -> ImpliedStmt
 
 class (Eq a, Ord a) => LicenseFactC a where
     getType :: a -> String
@@ -59,7 +53,7 @@ class (Eq a, Ord a) => LicenseFactC a where
         md5 = (C.unpack . C.fromStrict . B16.encode .  MD5.hashlazy . A.encode) a
         in getType a ++ ":" ++ md5
     getApplicableLNs :: a -> ApplicableLNs
-    getImpliedStmts :: a -> [ImpliedStmt]
+    getImpliedStmts :: a -> [LicenseStatement]
     getImpliedStmts _ = []
 
 data LicenseFact where

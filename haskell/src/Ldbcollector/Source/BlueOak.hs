@@ -101,8 +101,8 @@ instance LicenseFactC BlueOakCouncilFact where
     getType _ = "BlueOakCouncil"
     getApplicableLNs (BOCPermissive _ bol) = alnFromBol bol
     getApplicableLNs (BOCCopyleft _ kind bol) = alnFromBol bol `ImpreciseLNs` [(LN . newLN . pack) kind]
-    getImpliedStmts (BOCPermissive rating bol) = [Stmt "Permissive", Stmt rating]
-    getImpliedStmts (BOCCopyleft kind _ bol) = [Stmt kind `StmtRel` Stmt "Copyleft"]
+    getImpliedStmts (BOCPermissive rating bol) = [stmt "Permissive", stmt rating]
+    getImpliedStmts (BOCCopyleft kind _ bol) = [stmt kind `SubStatements` [stmt "Copyleft"]]
 
 
 -- #############################################################################

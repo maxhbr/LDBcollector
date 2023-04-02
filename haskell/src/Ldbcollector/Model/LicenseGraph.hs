@@ -227,23 +227,33 @@ applyFactApplicableLNs (ln `ImpreciseLNs` alns) = do
     _ <- insertEdges (V.fromList edges)
     return node
 
-applyFactImpliedStmts :: [ImpliedStmt] -> WithFactM [LicenseGraphNode]
+applyFactImpliedStmts :: [LicenseStatement] -> WithFactM [LicenseGraphNode]
 applyFactImpliedStmts stmts = mconcat <$> mapM applyFactImpliedStmt stmts
 
-applyFactImpliedStmt :: ImpliedStmt -> WithFactM [LicenseGraphNode]
-applyFactImpliedStmt (Stmt stmt) = do
-    let stmtLG = LGStatement stmt
-    _ <- insertNode stmtLG
-    return [stmtLG]
-applyFactImpliedStmt (MStmt (Just stmt)) = applyFactImpliedStmt (Stmt stmt)
-applyFactImpliedStmt (MStmt Nothing)     = pure []
-applyFactImpliedStmt (stmt `StmtRel` stmt') = do
+applyFactImpliedStmt :: LicenseStatement -> WithFactM [LicenseGraphNode]
+applyFactImpliedStmt (stmt `SubStatements` stmts) = do
     nodes <- applyFactImpliedStmt stmt
-    nodes' <- applyFactImpliedStmt stmt'
+    nodes' <- mconcat <$> mapM applyFactImpliedStmt stmts
     let edges = V.fromList $ concatMap (\node -> map (, node, LGImpliedBy) nodes') nodes
     insertEdges edges
     return nodes
-applyFactImpliedStmt (LicenseText text) = do
-    let textLG = LGLicenseText text
-    _ <- insertNode textLG
-    return [textLG]
+applyFactImpliedStmt (MaybeStatement (Just stmt)) = applyFactImpliedStmt stmt
+applyFactImpliedStmt (MaybeStatement Nothing) = pure []
+applyFactImpliedStmt stmt = do
+    let stmtLG = LGStatement stmt
+    _ <- insertNode stmtLG
+    return [stmtLG]
+
+
+-- applyFactImpliedStmt (Stmt stmt) = do
+--     let stmtLG = LGStatement stmt
+--     _ <- insertNode stmtLG
+--     return [stmtLG]
+-- applyFactImpliedStmt (MStmt (Just stmt)) = applyFactImpliedStmt (Stmt stmt)
+-- applyFactImpliedStmt (MStmt Nothing)     = pure []
+-- applyFactImpliedStmt (stmt `StmtRel` stmt') = do
+--     nodes <- applyFactImpliedStmt stmt
+--     nodes' <- applyFactImpliedStmt stmt'
+--     let edges = V.fromList $ concatMap (\node -> map (, node, LGImpliedBy) nodes') nodes
+--     insertEdges edges
+--     return nodes

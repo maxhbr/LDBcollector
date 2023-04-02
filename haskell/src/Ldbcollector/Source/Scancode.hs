@@ -49,13 +49,13 @@ instance LicenseFactC ScancodeData where
                                 [ (LN . newLN . pack . _shortName) scd
                                 , (LN . newLN . pack . _name) scd
                                 ]
-    getImpliedStmts scd = [ MStmt (_category scd)
-                          , MStmt (_homepageUrl scd)
-                          , MStmt (_notes scd)
-                          , MStmt (_osiUrl scd)
-                          ] 
-                          ++ map Stmt (_textUrls scd)
-                          ++ map Stmt (_otherUrls scd)
+    getImpliedStmts scd = map mstmt [ _category scd
+                                    , _homepageUrl scd
+                                    , _notes scd
+                                    , _osiUrl scd
+                                    ] 
+                          ++ map LicenseUrl (_textUrls scd)
+                          ++ map LicenseUrl (_otherUrls scd)
 
 newtype ScancodeLicenseDB = ScancodeLicenseDB FilePath
 

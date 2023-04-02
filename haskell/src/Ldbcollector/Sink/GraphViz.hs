@@ -33,6 +33,9 @@ computeDigraph graph = let
                 let nodeLabel = graph `G.lab` n
                     label = case nodeLabel of
                                 Just (LGName name) -> GV.toLabelValue (show name)
+                                Just (LGStatement (LicenseRule r)) -> GV.toLabelValue "$RULE"
+                                Just (LGStatement (LicenseText r)) -> GV.toLabelValue "$TEXT"
+                                Just (LGStatement (LicenseComment r)) -> GV.toLabelValue "$COMMENT"
                                 Just (LGStatement stmt) -> GV.toLabelValue stmt
                                 Just (LGFact fact) -> GV.toLabelValue (getFactId fact)
                                 -- Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
@@ -43,7 +46,7 @@ computeDigraph graph = let
                                                 ]
                         Just (LGFact _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]
                                                 , GV.FontColor (GV.X11Color GV.Gray)
-                                                , GV.Shape GV.PlainText
+                                                , GV.Shape GV.Ellipse
                                                 ]
                         _ -> []
                 in  GV.Label label : styling

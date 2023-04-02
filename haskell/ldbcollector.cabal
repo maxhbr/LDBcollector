@@ -36,6 +36,10 @@ library
       Ldbcollector.Source.Cavil
       Ldbcollector.Source.ChooseALicense
       Ldbcollector.Source.Fedora
+      Ldbcollector.Source.Fossology
+      Ldbcollector.Source.FSF
+      Ldbcollector.Source.OSADL
+      Ldbcollector.Source.OSLC
       Ldbcollector.Source.Scancode
       Ldbcollector.Source.SPDX
       MyPrelude
