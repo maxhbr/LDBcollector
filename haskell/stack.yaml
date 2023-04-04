@@ -1,0 +1,13 @@
+resolver:
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/20/14.yaml
+#   url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/6.yaml
+
+packages:
+- .
+
+extra-deps:
+- spdx-1.0.0.3@sha256:a83bfd305fed2a23e7643d43a8431380c7569adc33e246a34589eac426ea1853,2116
+
+nix:
+  # enable: true
+  packages: [plantuml,graphviz,zlib,libffi]

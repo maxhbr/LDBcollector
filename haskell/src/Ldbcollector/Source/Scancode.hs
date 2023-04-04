@@ -19,12 +19,12 @@ data ScancodeData
   , _spdxId      :: Maybe String
   , _owner       :: Maybe String
   , _homepageUrl :: Maybe String
-  , _notes       :: Maybe String
+  , _notes       :: Maybe Text
   , _textUrls    :: [String]
   , _osiUrl      :: Maybe String
   , _otherUrls   :: [String]
   , _text        :: Maybe Text
-  } deriving (Show, Generic)
+  } deriving (Eq, Ord, Show, Generic)
 instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance FromJSON ScancodeData where
@@ -43,42 +43,35 @@ instance FromJSON ScancodeData where
     <*> v .:? "text"
 instance ToJSON ScancodeData
 
+instance LicenseFactC ScancodeData where
+    getType _ = "ScancodeData"
+    getApplicableLNs scd = (NLN . newNLN "scancode" . pack . _key) scd `AlternativeLNs`
+                                [ (LN . newLN . pack . _shortName) scd
+                                , (LN . newLN . pack . _name) scd
+                                ]
+    getImpliedStmts scd = map mstmt [ _category scd
+                                    , _homepageUrl scd
+                                    , _osiUrl scd
+                                    ] 
+                          ++ maybeToList (fmap LicenseComment (_notes scd))
+                          ++ maybeToList (fmap LicenseUrl (_osiUrl scd))
+                          ++ map LicenseUrl (_textUrls scd)
+                          ++ map LicenseUrl (_otherUrls scd)
+                          ++ maybeToList (fmap LicenseText (_text scd))
+
 newtype ScancodeLicenseDB = ScancodeLicenseDB FilePath
 
-applyScancodeData :: ScancodeData -> LicenseGraphTask
-applyScancodeData scd = let
-        shortname = Add $ LicenseName (newLN (pack (_shortName scd)))
-        name = Add $ LicenseName (newLN (pack (_name scd)))
-    in
-      EdgeLeft (
-            AddTs (V.fromList
-                [ maybeToTask fromString (_category scd)
-                , maybeToTask fromString (_homepageUrl scd)
-                , maybeToTask fromString (_notes scd)
-                , maybeToTask fromString (_osiUrl scd)
-                , Add $ (Vec . map fromString) (_textUrls scd)
-                , Add $ (Vec . map fromString) (_otherUrls scd)
-            ])
-       ) AppliesTo $
-      EdgeLeft (
-            AddTs (V.fromList
-                [ shortname
-                , name
-            ])
-       ) Better $
-          fromValue scd
-              (LicenseName . newNLN "scancode" . pack . _key)
-              (fmap (LicenseName . newNLN "spdx" . pack) . _spdxId)
-
-applyJson :: FilePath -> IO LicenseGraphTask
-applyJson json = do
-    putStrLn ("read " ++ json)
-    decoded <- eitherDecodeFileStrict json :: IO (Either String ScancodeData)
-    case decoded of
-      Left err           -> fail err
-      Right scancodeData -> return $ applyScancodeData scancodeData
-
 instance Source ScancodeLicenseDB where
-    getTask (ScancodeLicenseDB dir) = do
-        scancodeJsons <- (fmap (filter (not . isSuffixOf "index.json")) . glob) (dir </> "*.json")
-        AddTs . V.fromList <$> mapM applyJson scancodeJsons
+    getOrigin _  = Origin "ScancodeLicenseDB"
+    getFacts (ScancodeLicenseDB dir) = let
+            parseOrFailJson json = do
+                putStrLn ("read " ++ json)
+                decoded <- eitherDecodeFileStrict json :: IO (Either String ScancodeData)
+                case decoded of
+                    Left err           -> fail err
+                    Right scancodeData -> return scancodeData
+        in do
+            scancodeJsons <- (fmap (filter (not . isSuffixOf "index.json")) . glob) (dir </> "*.json")
+            scancodeDatas <- mapM parseOrFailJson scancodeJsons
+            (return . V.fromList) (wrapFacts scancodeDatas)
+

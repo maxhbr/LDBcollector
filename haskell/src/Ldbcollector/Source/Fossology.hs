@@ -10,18 +10,18 @@ import qualified Data.Vector as V
 
 data FossologyEntry
     = FossologyEntry
-    { _rf_shortname :: String
+    { _rf_shortname :: LicenseName
     , _rf_text :: Text
     , _rf_url :: Maybe String
     , _rf_add_date :: Maybe String
-    , _rf_copyleft :: Maybe String
-    , _rf_OSIapproved :: Maybe String
-    , _rf_fullname :: String
-    , _rf_FSFfree :: Maybe String
-    , _rf_GPLv2compatible :: Maybe String
-    , _rf_GPLv3compatible :: Maybe String
+    , _rf_copyleft :: Maybe Bool
+    , _rf_OSIapproved :: Maybe Bool
+    , _rf_fullname :: LicenseName
+    , _rf_FSFfree :: Maybe Bool
+    , _rf_GPLv2compatible :: Maybe Bool
+    , _rf_GPLv3compatible :: Maybe Bool
     , _rf_notes :: Maybe Text
-    , _rf_Fedora :: Maybe String
+    , _rf_Fedora :: Maybe LicenseName
     , _marydone :: Bool
     , _rf_active :: Bool
     , _rf_text_updatable :: Bool
@@ -30,7 +30,7 @@ data FossologyEntry
     , _rf_risk :: Maybe String
     , _rf_spdx_compatible :: Bool
     -- , _rf_flag :: Int
-    } deriving (Show, Generic)
+    } deriving (Show, Eq, Ord, Generic)
 instance FromJSON FossologyEntry where
   parseJSON = let
         toBool :: String -> Bool
@@ -38,16 +38,16 @@ instance FromJSON FossologyEntry where
         toBool "f" = False
         toBool _ = False
     in withObject "FossologyEntry" $ \v -> FossologyEntry
-        <$> v .: "rf_shortname"
+        <$> (newNLN "fossology" <$> v .: "rf_shortname")
         <*> v .: "rf_text"
         <*> v .:? "rf_url"
         <*> v .:? "rf_add_date"
-        <*> v .:? "rf_copyleft"
-        <*> v .:? "rf_OSIapproved"
+        <*> (fmap toBool <$> v .:? "rf_copyleft")
+        <*> (fmap toBool <$> v .:? "rf_OSIapproved")
         <*> v .: "rf_fullname"
-        <*> v .:? "rf_FSFfree"
-        <*> v .:? "rf_GPLv2compatible"
-        <*> v .:? "rf_GPLv3compatible"
+        <*> (fmap toBool <$> v .:? "rf_FSFfree")
+        <*> (fmap toBool <$> v .:? "rf_GPLv2compatible")
+        <*> (fmap toBool <$> v .:? "rf_GPLv3compatible")
         <*> v .:? "rf_notes"
         <*> v .:? "rf_Fedora"
         <*> (toBool <$> v .: "marydone")
@@ -60,21 +60,40 @@ instance FromJSON FossologyEntry where
         -- <*> v .: "rf_flag"
 instance ToJSON FossologyEntry
 
-applyFossologyLicenseRef :: FossologyEntry -> LicenseGraphTask
-applyFossologyLicenseRef entry = 
-    EdgeLeft (AddTs . V.fromList $
-         [ maybeToTask fromString  (_rf_url entry)
-         ]) AppliesTo $
-    EdgeLeft (Adds . V.fromList $
-         [ (LicenseName . fromString . _rf_fullname) entry
-         ]) Same $
-    fromValue entry (LicenseName . fromString . _rf_shortname) (const Nothing)
+instance LicenseFactC FossologyEntry where
+    getType _ = "Fossology"
+    getApplicableLNs entry =
+        NLN (_rf_shortname entry) `AlternativeLNs` map LN (_rf_fullname entry : maybeToList (_rf_Fedora entry))
+    getImpliedStmts entry =
+        [ MaybeStatement (fmap LicenseUrl (_rf_url entry))
+        , MaybeStatement (fmap LicenseComment (_rf_notes entry))
+        , LicenseText (_rf_text entry)
+        , MaybeStatement (fmap (ifToStmt "Copyleft") (_rf_copyleft entry))
+        , MaybeStatement (fmap (ifToStmt "OSIapproved") (_rf_OSIapproved entry))
+        , MaybeStatement (fmap (ifToStmt "FSFfree") (_rf_FSFfree entry))
+        , MaybeStatement (fmap (ifToStmt "GPLv2compatible") (_rf_GPLv2compatible entry))
+        , MaybeStatement (fmap (ifToStmt "GPLv3compatible") (_rf_GPLv3compatible entry))
+        ]
+
+
+
+
+-- applyFossologyLicenseRef :: FossologyEntry -> LicenseGraphTask
+-- applyFossologyLicenseRef entry = 
+--     EdgeLeft (AddTs . V.fromList $
+--          [ maybeToTask fromString  (_rf_url entry)
+--          ]) AppliesTo $
+--     EdgeLeft (Adds . V.fromList $
+--          [ (LicenseName . fromString . _rf_fullname) entry
+--          ]) Same $
+--     fromValue entry (LicenseName . fromString . _rf_shortname) (const Nothing)
 
 newtype Fossology = FossologyLicenseRef FilePath
 instance Source Fossology where
-    getTask (FossologyLicenseRef json) = do
+    getOrigin _ = Origin "Fossology"
+    getFacts (FossologyLicenseRef json) = do
         putStrLn ("read " ++ json)
         decoded <- eitherDecodeFileStrict json :: IO (Either String [FossologyEntry])
         case decoded of
             Left err           -> fail err
-            Right scancodeData -> (return . AddTs . V.fromList . map applyFossologyLicenseRef) scancodeData
+            Right fossologyData -> (return . V.fromList . map wrapFact) fossologyData

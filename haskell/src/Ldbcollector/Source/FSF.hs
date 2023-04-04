@@ -13,43 +13,39 @@ import qualified Data.Map as Map
 
 data FsfWkingData
     = FsfWkingData
-    { _id :: String
-    , _identifiers :: Map.Map String [String]
-    , _name :: String
+    { _id :: LicenseName
+    , _identifiers :: Map.Map Text [LicenseName]
+    , _name :: LicenseName
     , _tags :: [String]
     , _uris :: [String]
-    } deriving (Show, Generic)
+    } deriving (Show, Eq, Ord, Generic)
 instance FromJSON FsfWkingData where
   parseJSON = withObject "FsfWkingData" $ \v -> FsfWkingData
-    <$> v .: "id"
+    <$> (newNLN "fsf" <$> v .: "id")
     <*> v .:? "identifiers" .!= mempty
     <*> v .: "name"
     <*> v .:? "tags" .!= []
     <*> v .:? "uris" .!= []
 instance ToJSON FsfWkingData
 
-applyFsfWkingData :: FsfWkingData -> LicenseGraphTask
-applyFsfWkingData d = let
-        identifiersToTask = ( Adds . V.fromList . map LicenseName . concatMap (\(ns,names) -> map (newNLN (pack ns) . pack) names) . Map.toList . _identifiers) d
-    in  Edge (AddTs . V.fromList $
-            [ Add $ (Vec . map fromString) (_uris d)
-            , Add $ (Vec . map fromString) (_tags d)
-        ]) AppliesTo $
-            Edge (fromValue d
-                (LicenseName . newNLN "fsf" . pack . _id)
-                (const Nothing)) Same identifiersToTask
+instance LicenseFactC FsfWkingData where
+    getType _ = "FSF"
+    getApplicableLNs (FsfWkingData { _id = id, _identifiers = identifiers, _name = name}) =
+        NLN id `AlternativeLNs` (LN name : concatMap (\(scope, lns) -> map (NLN . setNS scope) lns) (Map.assocs identifiers))
+    getImpliedStmts entry = map LicenseUrl (_uris entry) ++ map stmt (_tags entry)
 
-applyJson :: FilePath -> IO LicenseGraphTask
-applyJson json = do
+parseFsfJSON :: FilePath -> IO FsfWkingData
+parseFsfJSON json = do
     putStrLn ("read " ++ json)
     decoded <- eitherDecodeFileStrict json :: IO (Either String FsfWkingData)
     case decoded of
       Left err           -> fail err
-      Right fsfWkingData -> return $ applyFsfWkingData fsfWkingData
+      Right fsfWkingData -> return fsfWkingData
 
 newtype FSF = FSF FilePath
 
 instance Source FSF where
-    getTask (FSF dir) = do
+    getOrigin _ = Origin "FSF"
+    getFacts (FSF dir) = do
         jsons <- (fmap (filter (not . isSuffixOf "licenses-full.json") . filter (not . isSuffixOf "licenses.json")) . glob) (dir </> "*.json")
-        AddTs . V.fromList <$> mapM applyJson jsons
+        V.fromList . wrapFacts <$> mapM parseFsfJSON jsons

@@ -21,24 +21,26 @@ import           Data.Either (rights)
 
 data CALData
   = CALData
-  { _name :: Maybe String
-  , _title :: Maybe String
-  , _spdxId :: Maybe String 
-  , _nickname :: Maybe String
+  { _id :: Maybe LicenseName 
+  , _name :: Maybe LicenseName
+  , _title :: Maybe LicenseName
+  , _spdxId :: Maybe LicenseName 
+  , _nickname :: Maybe LicenseName
   , _featured :: Maybe Bool
   , _hidden :: Maybe Bool
-  , _description :: Maybe String
-  , _how :: Maybe String
-  , _permissions :: [String]
-  , _conditions :: [String]
-  , _limitations :: [String]
+  , _description :: Maybe Text
+  , _how :: Maybe Text
+  , _cal_permissions :: [Text]
+  , _cal_conditions :: [Text]
+  , _cal_limitations :: [Text]
 --   , _content :: ByteString
-  } deriving (Show, Generic)
+  } deriving (Show, Eq, Ord, Generic)
 instance FromJSON CALData where
   parseJSON = withObject "CALData" $ \v -> CALData
-    <$> v .:? "name"
+    <$> pure Nothing
+    <*> v .:? "name"
     <*> v .:? "title"
-    <*> v .:? "spdxid"
+    <*> (fmap (setNS "spdx") <$>  v .:? "spdx-id")
     <*> v .:? "nickname"
     <*> v .:? "featured"
     <*> v .:? "hidden"
@@ -49,12 +51,26 @@ instance FromJSON CALData where
     <*> v .:? "limitations" .!= []
 instance ToJSON CALData
 
+instance LicenseFactC CALData where
+    getType _ = "ChooseALicense"
+    getApplicableLNs (CALData {_id = id, _name = name, _spdxId = spdxId, _title = title, _nickname = nickname}) =
+        case catMaybes [id, spdxId, name, title] of
+            best:others -> NLN best `AlternativeLNs` map LN others `ImpreciseLNs` map LN (maybeToList nickname)
+            _ -> undefined
+    getImpliedStmts caldata@(CALData{ _cal_permissions = permissions
+                                    , _cal_conditions = conditions
+                                    , _cal_limitations = limitations }) =
+        map (MaybeStatement . fmap LicenseComment)
+            [ _description caldata
+            , _how caldata
+            ]
+        ++ [LicensePCL (PCL permissions conditions limitations)]
 
 newtype ChooseALicense
     = ChooseALicense FilePath
 
-applyTxt :: FilePath -> IO LicenseGraphTask
-applyTxt txt = do
+readTxt :: FilePath -> IO (Maybe CALData)
+readTxt txt = do
     putStrLn ("read " ++ txt)
     let fromFilename = takeBaseName (takeBaseName txt)
     contents <- readFile txt
@@ -66,29 +82,12 @@ applyTxt txt = do
             case Y.decodeEither' ((fromString . ("---\n"++)) yaml) of
                 Left err -> do
                     print err
-                    return Noop
-                Right calData -> 
-                    return $
-                        EdgeLeft (Add . Vec . map (Vec . map fromString) $ [
-                            _permissions calData,
-                            _conditions calData,
-                            _limitations calData
-                        ]) AppliesTo $
-                        EdgeLeft (AddTs . V.fromList $
-                           [ maybeToTask (Add . fromString) (_description calData)
-                           , maybeToTask (Add . fromString) (_how calData)
-                           ]) AppliesTo $
-                        EdgeLeft (AddTs . V.fromList $
-                           [ maybeToTask (Add . LicenseName . newLN . pack) (_name calData)
-                           , maybeToTask (Add . LicenseName . newLN . pack) (_nickname calData)
-                           , (Add . LicenseName . newLN . pack) fromFilename
-                           ]) (Potentially Better) $
-                        fromValue calData
-                            (const $ (LicenseName . newNLN "choose-a-license" . pack) fromFilename)
-                            (fmap (LicenseName . newNLN "spdx" . pack) . _spdxId)
-        _ -> (return . Add . LicenseName . fromString) fromFilename
+                    return Nothing
+                Right calData -> return (Just calData{_id = Just ((newNLN "cal" . pack) fromFilename)})
+        _ -> return Nothing --(return . Add . LicenseName . fromString) fromFilename
 
 instance Source ChooseALicense where
-    getTask (ChooseALicense dir) = do
+    getOrigin _  = Origin "ChooseALicense"
+    getFacts (ChooseALicense dir) = do
         txts <- glob (dir </> "*.txt")
-        AddTs . V.fromList <$> mapM applyTxt txts
+        V.fromList . map wrapFact . catMaybes <$> mapM readTxt txts

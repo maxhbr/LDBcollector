@@ -5,8 +5,6 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 entr_task() (
   set -ex
-  stack build
-  stack test
   stack run
 )
 export -f entr_task

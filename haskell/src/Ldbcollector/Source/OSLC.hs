@@ -20,7 +20,7 @@ data OSLCUseCase
   | MB
   | US
   | MS
-  deriving (Show, Generic)
+  deriving (Show, Eq, Ord, Generic)
 instance ToJSON OSLCUseCase
 instance FromJSON OSLCUseCase
 
@@ -31,7 +31,7 @@ data OSLCTerm
   , _termUseCases :: Maybe [OSLCUseCase]
   , _termComplianceNotes :: Maybe Text
   , _termSeeAlso :: Maybe [Text]
-  } deriving (Show, Generic)
+  } deriving (Show, Eq, Ord, Generic)
 instance ToJSON OSLCTerm
 instance FromJSON OSLCTerm where
   parseJSON = withObject "OSLCTerm" $ \v -> OSLCTerm
@@ -43,42 +43,46 @@ instance FromJSON OSLCTerm where
 
 data OSLCData
   = OSLCData
-  { _name :: LicenseName
+  { _id :: Maybe LicenseName
+  , _name :: LicenseName
   , _licenseId :: [LicenseName]
   , _notes :: Maybe Text
   , _terms :: Maybe [OSLCTerm]
-  } deriving (Show, Generic)
+  } deriving (Show, Eq, Ord, Generic)
 instance ToJSON OSLCData
 instance FromJSON OSLCData where
   parseJSON = withObject "OSLCData" $ \v -> OSLCData
-    <$> v .: "name"
-    <*> ((v .: "licenseId") <|> fmap (:[]) (v .: "licenseId"))
+    <$> pure Nothing
+    <*> v .: "name"
+    <*> (map (newNLN "spdx") <$> ((v .: "licenseId") <|> fmap (:[]) (v .: "licenseId")))
     <*> v .:? "notes"
     <*> v .:? "terms"
 
-newtype OSLC = OSLC FilePath
+instance LicenseFactC OSLCData where
+    getType _ = "OSLC"
+    getApplicableLNs (OSLCData {_id = id, _name = name, _licenseId = licenseId}) = 
+        case maybeToList id ++ [name] ++ licenseId of
+            best:others -> NLN best `AlternativeLNs` map LN others
+            _ -> undefined
+    getImpliedStmts oslc = 
+        [ (MaybeStatement . fmap LicenseComment) (_notes oslc)
+        ]
 
-applyDecoded :: String -> OSLCData -> LicenseGraphTask
-applyDecoded fromFilename oslc =
-    EdgeLeft (AddTs . V.fromList $
-        [ maybeToTask (Add . Data) (_notes oslc)
-        ]) AppliesTo $
-    EdgeLeft ((Add . LicenseName . _name) oslc) (Potentially Better) $
-    Edge (fromValue oslc (const $ (LicenseName . newNLN "oslc" . pack) fromFilename) (const Nothing)) Better $
-        (Adds . V.fromList . map (LicenseName . setNS "spdx") . _licenseId) oslc
-
-applyYaml :: FilePath -> IO LicenseGraphTask
-applyYaml yaml = do
+parseYaml :: FilePath -> IO [OSLCData]
+parseYaml yaml = do
     putStrLn ("read " ++ yaml)
     let fromFilename = takeBaseName (takeBaseName yaml)
     contents <- readFile yaml
     case decodeEither' (fromString contents) :: Either ParseException [OSLCData] of
+        Right decodeds -> return $ map (\decoded -> decoded {_id = (Just . newNLN "oslc" . pack) fromFilename}) decodeds
         Left err -> do
-                putStrLn (show err)
-                return Noop
-        Right decodeds -> (return . AddTs . V.fromList) $ map (applyDecoded fromFilename) decodeds
+            print err
+            return mempty
+
+newtype OSLC = OSLC FilePath
 
 instance Source OSLC where
-    getTask (OSLC dir) = do
+    getOrigin _  = Origin "OSLC"
+    getFacts (OSLC dir) = do
         yamls <- glob (dir </> "*.yaml")
-        AddTs . V.fromList <$> mapM applyYaml yamls
+        V.fromList . map wrapFact . mconcat <$> mapM parseYaml yamls

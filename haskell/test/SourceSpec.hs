@@ -29,7 +29,7 @@ sourceSpec = do
         describe "focused" $ do
             (_, focusedLg) <- runIO $ runLicenseGraphM (do
                 applySources
-                getFocused ((V.fromList . map (LicenseName . newLN))
+                getFocused ((V.fromList . map (LGName . newLN))
                         [ "BSD-3-Clause"
                         , "MIT"
                         , "GPL-3.0-only"

@@ -22,6 +22,7 @@ import           Prelude                    as X
 import           Control.Monad.State        as X (lift)
 import           Data.Graph.Inductive.Graph as X (LNode, Node)
 import           Data.String                as X (IsString (fromString))
+import           Data.Typeable              as X
 import           System.Directory           as X
 import           System.FilePath            as X
 import           System.FilePath.Glob       as X (glob)

@@ -95,6 +95,7 @@ USE CASE Binary delivery Of Combined work
 			ATTRIBUTE Including Tool chain information
 			ATTRIBUTE Including Installation scripts
 		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
 	OR
 		YOU MUST Provide Linkable work
 			ATTRIBUTE Machine-readable
@@ -103,6 +104,7 @@ USE CASE Binary delivery Of Combined work
 			ATTRIBUTE Including Tool chain information
 			ATTRIBUTE Including Installation scripts
 		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
 	OR
 		YOU MUST Provide Written offer
 			ATTRIBUTE Duration 3 years
@@ -117,6 +119,7 @@ USE CASE Binary delivery Of Combined work
 				ATTRIBUTE Machine-readable
 				ATTRIBUTE Including Tool chain information
 			YOU MUST Enable Relinking With Modified library
+				EXCEPT IF Modified library NOT Interoperable
 	OR IF Binary delivery Via Internet
 		YOU MUST Provide Source code delivery Of the Library Via Internet
 			ATTRIBUTE On same server
@@ -131,6 +134,7 @@ USE CASE Binary delivery Of Combined work
 			ATTRIBUTE Interoperability With Modified library
 			ATTRIBUTE Including Tool chain information
 		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
 	OR
 		YOU MUST Ensure Source code delivery Of the Library
 			ATTRIBUTE Machine-readable
@@ -140,6 +144,7 @@ USE CASE Binary delivery Of Combined work
 			ATTRIBUTE Machine-readable
 			ATTRIBUTE Including Tool chain information
 		YOU MUST Enable Relinking With Modified library
+			EXCEPT IF Modified library NOT Interoperable
 	IF Software modification Of Library
 		YOU MUST Ensure Modified work Is Library
 		YOU MUST Provide Modification notice

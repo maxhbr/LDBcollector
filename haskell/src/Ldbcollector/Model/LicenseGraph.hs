@@ -1,86 +1,80 @@
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE GADTs             #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Model.LicenseGraph
-  ( LicenseGraphNode (..)
-  , mkLGValue, isEmptyLGN
-  , LicenseGraphEdge (..)
-  , LicenseGraph (..), LicenseGraphType
-  , getLicenseGraphLicenseNames
-  , getLicenseGraphSize
-  , LicenseGraphM
-  , runLicenseGraphM, runLicenseGraphM'
-  , addNode, addNodes
-  , addEdge, addEdges
-  , stderrLog
-  ) where
+  where
+--   ( LicenseGraphNode (..)
+--   , mkLGValue, isEmptyLGN
+--   , LicenseGraphEdge (..)
+--   , LicenseGraph (..), LicenseGraphType
+--   , getLicenseGraphLicenseNames
+--   , getLicenseGraphSize
+--   , LicenseGraphM
+--   , runLicenseGraphM, runLicenseGraphM'
+--   , addNode, addNodes
+--   , addEdge, addEdges
+--   , stderrLog
+--   ) where
 
 import           MyPrelude
 
-import qualified Control.Monad.State               as MTL
-import           Data.Aeson                        as A
-import           Data.Aeson.Encode.Pretty          as A
-import qualified Data.ByteString.Char8             as B (unpack)
-import qualified Data.ByteString.Lazy              as BL (toStrict)
-import qualified Data.Graph.Inductive.Basic        as G
-import qualified Data.Graph.Inductive.Graph        as G
-import qualified Data.Graph.Inductive.Monad        as G
-import qualified Data.Graph.Inductive.PatriciaTree as G
-import qualified Data.Graph.Inductive.Query.DFS    as G
-import qualified Data.Map                          as Map
-import           Data.String                       (IsString (..))
-import qualified Data.Vector                       as V
-import           System.Console.Pretty             (Color (Green), color)
-import qualified System.FilePath                   as FP
-import           System.IO                         (hPutStrLn, stderr)
+import qualified Control.Monad.State                 as MTL
+import           Data.Aeson                          as A
+import           Data.Aeson.Encode.Pretty            as A
+import qualified Data.ByteString.Char8               as B (unpack)
+import qualified Data.ByteString.Lazy                as BL (toStrict)
+import qualified Data.Graph.Inductive.Graph          as G
+import qualified Data.Graph.Inductive.PatriciaTree   as G
+import qualified Data.Map                            as Map
+import qualified Data.Set                            as Set
+import qualified Data.Vector                         as V
+import           System.Console.Pretty               (Color (Green), color)
 
-
+import qualified Control.Monad.Reader                as MTL
+import           Ldbcollector.Model.LicenseFact
 import           Ldbcollector.Model.LicenseName
+import           Ldbcollector.Model.LicenseStatement
+
+-- ############################################################################
+
+stderrLog :: String -> LicenseGraphM ()
+stderrLog msg = MTL.liftIO $ hPutStrLn stderr (color Green msg)
+
+-- ############################################################################
 
 data LicenseGraphNode where
-    LicenseName :: LicenseName -> LicenseGraphNode
-    Data :: Text -> LicenseGraphNode
-    Rule :: Text -> LicenseGraphNode
-    LGValue :: A.Value -> LicenseGraphNode
-    Vec :: [LicenseGraphNode] -> LicenseGraphNode
-    deriving (Eq, Ord)
-instance Show LicenseGraphNode where
-    show (LicenseName ln) = show ln
-    show (Data d)         = unpack d
-    show (Rule r)         = unpack r
-    show (LGValue v)      = B.unpack . BL.toStrict $ A.encodePretty v
-    show (Vec v)          = show v
-mkLGValue :: ToJSON a => a -> LicenseGraphNode
-mkLGValue = LGValue . toJSON
-isEmptyLGN :: LicenseGraphNode -> Bool
-isEmptyLGN (Vec []) = True
-isEmptyLGN (Vec lgns) = all isEmptyLGN lgns
-isEmptyLGN (Data d) = d == ""
-isEmptyLGN (Rule r) = r == ""
-isEmptyLGN (LGValue v) = v == A.Null
-isEmptyLGN _       = False
-instance IsString LicenseGraphNode where
-    fromString s = Data (pack s)
+    LGName        :: LicenseName -> LicenseGraphNode
+    LGStatement   :: LicenseStatement -> LicenseGraphNode
+    LGLicenseText :: Text -> LicenseGraphNode
+    LGFact        :: LicenseFact -> LicenseGraphNode
+    LGVec         :: [LicenseGraphNode] -> LicenseGraphNode
+deriving instance Show LicenseGraphNode
+deriving instance Eq LicenseGraphNode
+deriving instance Ord LicenseGraphNode
+
 data LicenseGraphEdge where
-    Same        :: LicenseGraphEdge
-    Better      :: LicenseGraphEdge
-    AppliesTo   :: LicenseGraphEdge
-    Potentially :: LicenseGraphEdge -> LicenseGraphEdge
-    deriving (Show, Eq, Ord)
+    LGNameRelation :: LicenseNameRelation -> LicenseGraphEdge
+    LGAppliesTo    :: LicenseGraphEdge
+    LGImpliedBy    :: LicenseGraphEdge
+deriving instance Show LicenseGraphEdge
+deriving instance Eq LicenseGraphEdge
 
 type LicenseGraphType = G.Gr LicenseGraphNode LicenseGraphEdge
+
 data LicenseGraph
     = LicenseGraph
     { _gr           :: G.Gr LicenseGraphNode LicenseGraphEdge
     , _node_map     :: Map.Map LicenseGraphNode G.Node
     , _node_map_rev :: Map.Map G.Node LicenseGraphNode
+    , _facts        :: Map.Map (Origin, LicenseFact) (Set.Set G.Node, Set.Set G.Edge)
     }
+emptyLG :: LicenseGraph
+emptyLG = LicenseGraph G.empty mempty mempty mempty
 instance Show LicenseGraph where
-    show (LicenseGraph gr _ _) = G.prettify gr
-getSameSubgraph :: LicenseGraph -> LicenseGraphType
-getSameSubgraph (LicenseGraph {_gr = gr}) = gr
+    show = G.prettify . _gr
 
 getLicenseGraphSize :: LicenseGraph -> Int
-getLicenseGraphSize (LicenseGraph gr node_map node_map_rev) = let
+getLicenseGraphSize (LicenseGraph gr node_map node_map_rev _) = let
         gr_size = length $ G.nodes gr
         node_map_size = Map.size node_map
         node_map_rev_size =  Map.size node_map_rev
@@ -88,59 +82,165 @@ getLicenseGraphSize (LicenseGraph gr node_map node_map_rev) = let
 
 getLicenseGraphLicenseNames :: LicenseGraph -> Vector LicenseName
 getLicenseGraphLicenseNames = let
-        fun (LicenseName ln) = [ln]
-        fun _ = []
+        fun (LGName ln) = [ln]
+        fun _           = []
     in V.fromList . concatMap (fun . snd) . G.labNodes . _gr
 
 type LicenseGraphM a = MTL.StateT LicenseGraph IO a
-
 runLicenseGraphM' :: LicenseGraph -> LicenseGraphM a -> IO (a, LicenseGraph)
 runLicenseGraphM' initGraph = (`MTL.runStateT` initGraph)
-
 runLicenseGraphM :: LicenseGraphM a -> IO (a, LicenseGraph)
-runLicenseGraphM = runLicenseGraphM' $ LicenseGraph G.empty mempty mempty
+runLicenseGraphM = runLicenseGraphM' emptyLG
 
-addNode :: LicenseGraphNode -> LicenseGraphM G.Node
-addNode = let
-        getUnusedNode :: LicenseGraphM G.Node
-        getUnusedNode = MTL.gets ((+ 1) . G.noNodes . _gr)
+type WithFactM a = MTL.ReaderT (Origin, LicenseFact) (MTL.StateT LicenseGraph IO) a
+withFact :: (Origin,LicenseFact) -> WithFactM a -> LicenseGraphM a
+withFact key = (`MTL.runReaderT` key)
 
-        insertLNode :: G.LNode LicenseGraphNode -> LicenseGraphM ()
-        insertLNode (n, lgn) = MTL.modify
-            (\state -> state
-                { _gr           = G.insNode (n, lgn) (_gr state)
-                , _node_map     = Map.insert lgn n (_node_map state)
-                , _node_map_rev = Map.insert n lgn (_node_map_rev state)
-                }
-            )
-    in \lgn -> MTL.gets ((lgn `Map.lookup`) . _node_map) >>= \case
+getIdOfNode :: LicenseGraphNode -> LicenseGraphM (Maybe G.Node)
+getIdOfNode lgn = MTL.gets ((lgn `Map.lookup`) . _node_map)
+
+getIdsOfNodes :: V.Vector LicenseGraphNode -> LicenseGraphM (V.Vector G.Node)
+getIdsOfNodes lgns = V.catMaybes <$> mapM getIdOfNode lgns
+
+insertNode' ::  LicenseGraphNode -> LicenseGraphM G.Node
+insertNode' lgn = getIdOfNode lgn >>= \case
   Just n  -> return n
   Nothing -> do
-        n <- getUnusedNode
-        insertLNode (n, lgn)
-        return n
-addNodes :: Vector LicenseGraphNode -> LicenseGraphM (Vector G.Node)
-addNodes = V.mapM addNode
+    n <- MTL.gets ((+ 1) . G.noNodes . _gr)
+    MTL.modify (\graph -> graph { _gr           = G.insNode (n, lgn) (_gr graph)
+                                , _node_map     = Map.insert lgn n (_node_map graph)
+                                , _node_map_rev = Map.insert n lgn (_node_map_rev graph)
+                                }
+               )
+    return n
 
-addEdge :: (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> LicenseGraphM G.Node
-addEdge = let
-        addEdge' :: G.LEdge LicenseGraphEdge -> LicenseGraphM ()
-        addEdge' edge = do
+insertNode :: LicenseGraphNode -> WithFactM G.Node
+insertNode lgn = do
+    n <- lift $ insertNode' lgn
+    key <- MTL.ask
+    MTL.modify (\graph -> graph { _facts = Map.insertWith (\(ns,es) (ns', es') -> (ns<>ns', es<>es'))
+                                                          key
+                                                          (Set.singleton n, mempty)
+                                                          (_facts graph)
+                                }
+               )
+    return n
+insertNodes :: Vector LicenseGraphNode -> WithFactM (Vector G.Node)
+insertNodes = V.mapM insertNode
+
+isAllowedLEdge :: G.LEdge LicenseGraphEdge -> LicenseGraphM Bool
+isAllowedLEdge (a, b, LGNameRelation _) = do
+    an <- MTL.gets ((a `Map.lookup`) . _node_map_rev)
+    bn <- MTL.gets ((b `Map.lookup`) . _node_map_rev)
+    return $ case an of
+                Just (LGName _) ->
+                    case bn of
+                        Just (LGName _) -> True
+                        _               -> False
+                _ -> False
+isAllowedLEdge (a, b, LGAppliesTo) = do
+    an <- MTL.gets ((a `Map.lookup`) . _node_map_rev)
+    bn <- MTL.gets ((b `Map.lookup`) . _node_map_rev)
+    return $ case an of
+                Just (LGFact _) ->
+                    case bn of
+                        Just (LGName _) -> True
+                        _               -> False
+                _ -> False
+isAllowedLEdge (a, b, LGImpliedBy) = do
+    an <- MTL.gets ((a `Map.lookup`) . _node_map_rev)
+    bn <- MTL.gets ((b `Map.lookup`) . _node_map_rev)
+    return $ case an of
+                Just (LGStatement _) ->
+                    case bn of
+                        Just (LGFact _) -> True
+                        Just (LGStatement _) -> True
+                        _               -> False
+                Just (LGLicenseText _) ->
+                    case bn of
+                        Just (LGFact _) -> True
+                        _               -> False
+                _ -> False
+
+insertEdge :: (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> WithFactM G.Node
+insertEdge = let
+        insertLEdge :: G.LEdge LicenseGraphEdge -> WithFactM ()
+        insertLEdge edge = do
+            isAllowed <- MTL.lift $ isAllowedLEdge edge
+            unless isAllowed $ fail ("tried to add not allowed edge: " ++ show edge)
+
             alreadyHasTheEdge <- MTL.gets ((`G.hasLEdge` edge) . _gr)
             unless alreadyHasTheEdge $
                 MTL.modify (\state -> state { _gr = edge `G.insEdge` _gr state })
+            potentialE <- MTL.gets (fmap G.toEdge . find (== edge) . G.labEdges . _gr)
+            case potentialE of
+                Just e -> do
+                    key <- MTL.ask
+                    MTL.modify (\graph -> graph { _facts = Map.insertWith (\(ns,es) (ns', es') -> (ns<>ns', es<>es'))
+                                                                          key
+                                                                          (mempty, Set.singleton e)
+                                                                          (_facts graph)
+                                                }
+                               )
+                Nothing -> pure ()
     in \(a,b,e) -> do
-        na <- addNode a
-        nb <- addNode b
+        na <- insertNode a
+        nb <- insertNode b
         unless (na == nb) $ do
-            addEdge' (na, nb, e)
-            when (e == Same) $
-                addEdge' (nb, na, e)
+            insertLEdge (na, nb, e)
+            -- when (e == LGNameRelation Same) $
+            --     insertLEdge (nb, na, e)
         return na
-addEdges :: Vector (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> LicenseGraphM (Vector G.Node)
-addEdges = V.mapM addEdge
+insertEdges :: Vector (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> WithFactM (Vector G.Node)
+insertEdges = V.mapM insertEdge
 
--- ############################################################################
+applyFact :: WithFactM G.Node
+applyFact = do
+    fact <- MTL.asks snd
+    let factLG = LGFact fact
+    factNode <- insertNode (LGFact fact)
+    lnNode <- applyFactApplicableLNs (getApplicableLNs fact)
+    insertEdge (factLG, lnNode, LGAppliesTo)
+    stmtNodes <- applyFactImpliedStmts (getImpliedStmts fact)
+    let edges = V.fromList $ map (,factLG, LGImpliedBy) stmtNodes
+    insertEdges edges
+    return factNode
 
-stderrLog :: String -> LicenseGraphM ()
-stderrLog msg = MTL.liftIO $ hPutStrLn stderr (color Green msg)
+applyFactApplicableLNs :: ApplicableLNs -> WithFactM LicenseGraphNode
+applyFactApplicableLNs (LN ln) = let
+      node = LGName ln
+    in insertNode node >> return node
+applyFactApplicableLNs (NLN ln) = let
+      namespacelessLN = unsetNS ln
+    in applyFactApplicableLNs $ if ln == namespacelessLN
+                                then LN ln
+                                else LN ln `AlternativeLNs` [LN namespacelessLN]
+applyFactApplicableLNs (ln `AlternativeLNs` alns) = do
+    node <- applyFactApplicableLNs ln
+    alnNodes <- mapM applyFactApplicableLNs alns
+    let edges = map (,node,LGNameRelation Same) alnNodes
+    _ <- insertEdges (V.fromList edges)
+    return node
+applyFactApplicableLNs (ln `ImpreciseLNs` alns) = do
+    node <- applyFactApplicableLNs ln
+    alnNodes <- mapM applyFactApplicableLNs alns
+    let edges = map (,node,LGNameRelation Better) alnNodes
+    _ <- insertEdges (V.fromList edges)
+    return node
+
+applyFactImpliedStmts :: [LicenseStatement] -> WithFactM [LicenseGraphNode]
+applyFactImpliedStmts stmts = mconcat <$> mapM applyFactImpliedStmt stmts
+
+applyFactImpliedStmt :: LicenseStatement -> WithFactM [LicenseGraphNode]
+applyFactImpliedStmt (stmt `SubStatements` stmts) = do
+    nodes <- applyFactImpliedStmt stmt
+    nodes' <- mconcat <$> mapM applyFactImpliedStmt stmts
+    let edges = V.fromList $ concatMap (\node -> map (, node, LGImpliedBy) nodes') nodes
+    insertEdges edges
+    return nodes
+applyFactImpliedStmt (MaybeStatement (Just stmt)) = applyFactImpliedStmt stmt
+applyFactImpliedStmt (MaybeStatement Nothing) = pure []
+applyFactImpliedStmt stmt = do
+    let stmtLG = LGStatement stmt
+    _ <- insertNode stmtLG
+    return [stmtLG]
