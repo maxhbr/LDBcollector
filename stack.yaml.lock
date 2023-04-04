@@ -11,13 +11,6 @@ packages:
       size: 569
   original:
     hackage: spdx-1.0.0.3@sha256:a83bfd305fed2a23e7643d43a8431380c7569adc33e246a34589eac426ea1853,2116
-- completed:
-    hackage: rdf4h-5.0.1@sha256:76ecd4aa6b536add8d7c6c13aedd3e028d492d0044f28dba9eb130cfed063fdc,6470
-    pantry-tree:
-      sha256: 4c81222dbdb1a97adfb7f47421c404e6144c704e6806501d8e7d259f106b0fdd
-      size: 4230
-  original:
-    hackage: rdf4h-5.0.1@sha256:76ecd4aa6b536add8d7c6c13aedd3e028d492d0044f28dba9eb130cfed063fdc
 snapshots:
 - completed:
     sha256: 1b1cb989b5728e6aee80592e84a3799d4b8c0fe1ea1f29dedfaf4cdd9c0f51c0

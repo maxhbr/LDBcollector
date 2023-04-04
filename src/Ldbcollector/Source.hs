@@ -14,13 +14,14 @@ import           Ldbcollector.Source.Fossology
 import           Ldbcollector.Source.OKFN
 import           Ldbcollector.Source.Metaeffekt
 import           Ldbcollector.Source.Warpr
-
+import           Ldbcollector.Source.OSI
 
 applySources :: LicenseGraphM ()
 applySources = do
     applySource SPDXLicenseIds
     applySource (ScancodeLicenseDB "./data/nexB-scancode-licensedb/docs/")
     applySource (FedoraLicenseData "./data/fedora-legal-fedora-license-data.jsons")
+    applySource (OSI "./data/OpenSourceOrg-licenses/licenses")
     applySource (BlueOakCouncilLicenseList "./data/blueoakcouncil/blue-oak-council-license-list.json")
     applySource (BlueOakCouncilCopyleftList "./data/blueoakcouncil/blue-oak-council-copyleft-list.json")
     applySource (OSADL "./data/OSADL-checklists")

@@ -7,7 +7,7 @@ packages:
 
 extra-deps:
 - spdx-1.0.0.3@sha256:a83bfd305fed2a23e7643d43a8431380c7569adc33e246a34589eac426ea1853,2116
-- rdf4h-5.0.1@sha256:76ecd4aa6b536add8d7c6c13aedd3e028d492d0044f28dba9eb130cfed063fdc
+# - rdf4h-5.0.1@sha256:76ecd4aa6b536add8d7c6c13aedd3e028d492d0044f28dba9eb130cfed063fdc
 
 nix:
   # enable: true

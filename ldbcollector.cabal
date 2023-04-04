@@ -41,6 +41,7 @@ library
       Ldbcollector.Source.Metaeffekt
       Ldbcollector.Source.OKFN
       Ldbcollector.Source.OSADL
+      Ldbcollector.Source.OSI
       Ldbcollector.Source.OSLC
       Ldbcollector.Source.Scancode
       Ldbcollector.Source.SPDX
@@ -68,7 +69,6 @@ library
     , libyaml
     , mtl
     , pretty-terminal
-    , rdf4h
     , spdx
     , split
     , swish
@@ -106,7 +106,6 @@ executable ldbcollector-exe
     , libyaml
     , mtl
     , pretty-terminal
-    , rdf4h
     , scotty
     , spdx
     , split
@@ -150,7 +149,6 @@ test-suite ldbcollector-test
     , libyaml
     , mtl
     , pretty-terminal
-    , rdf4h
     , spdx
     , split
     , swish
