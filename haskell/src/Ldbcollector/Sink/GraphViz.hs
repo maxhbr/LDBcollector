@@ -16,69 +16,81 @@ import qualified Data.GraphViz.Printing            as GV
 import qualified Data.Vector                       as V
 
 import           Ldbcollector.Model
-import qualified Data.HashMap.Internal.Strict as HMap
-import qualified Data.Map                     as Map
-import qualified Data.GraphViz.Attributes.HTML as GVH
+import qualified Data.HashMap.Internal.Strict      as HMap
+import qualified Data.Map                          as Map
+import qualified Data.GraphViz.Attributes.HTML     as GVH
+
+import qualified Text.Wrap                         as TW
 
 computeDigraph :: LicenseGraph -> GV.DotGraph G.Node
 computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
-        colors = cycle $ map (\(r,g,b) -> GV.RGB r g b) [ (255,215,0)
-                                                        , (255,177,78)
-                                                        , (250,135,117)
-                                                        , (234,95,148)
-                                                        , (205,52,181)
-                                                        , (157,2,215)
-                                                        , (0,0,255)
+        colors = cycle $ map (\(r,g,b) -> GV.RGB r g b) [ (0,135,108)  -- #00876c 
+                                                        , (55,148,105) -- #379469 
+                                                        , (88,160,102) -- #58a066 
+                                                        , (120,171,99) -- #78ab63 
+                                                        , (152,181,97) -- #98b561 
+                                                        , (184,191,98) -- #b8bf62 
+                                                        , (218,199,103)-- #dac767 
+                                                        , (222,178,86) -- #deb256 
+                                                        , (224,157,75) -- #e09d4b 
+                                                        , (225,135,69) -- #e18745 
+                                                        , (224,111,69) -- #e06f45 
+                                                        , (220,87,74)  -- #dc574a 
+                                                        , (212,61,81)  -- #d43d51 
                                                         ]
+                                                        -- [ (255,215,0)
+                                                        -- , (255,177,78)
+                                                        -- , (250,135,117)
+                                                        -- , (234,95,148)
+                                                        -- , (205,52,181)
+                                                        -- , (157,2,215)
+                                                        -- , (0,0,255)
+                                                        -- ]
         origins = (map fst . Map.keys) facts
-        factTypes = ( nub
-                    . sort
-                    . map getType
-                    . mapMaybe (\case
-                        (_,LGFact fact) -> Just fact
-                        _ -> Nothing)
-                    . G.labNodes
-                    ) graph
-        factColoringMap = Map.fromList $ zip factTypes colors
-        typeColoringLookup factType = Map.findWithDefault (GV.RGB 0 0 0) factType factColoringMap
-        factColoringLookup = typeColoringLookup . getType
+        factColoringMap = Map.fromList $ zip origins colors
+        typeColoringLookup origin = Map.findWithDefault (GV.RGB 0 0 0) origin factColoringMap
+
+        getOriginsOfNode :: G.Node -> [Origin]
+        getOriginsOfNode n = ( nub
+                             . sort
+                             . mapMaybe (\((origin, _), (nodes,_)) ->
+                                  if n `elem` nodes
+                                  then Just origin
+                                  else Nothing)
+                             . Map.assocs
+                             ) facts
 
         getColorOfNode :: (G.Node, Maybe LicenseGraphNode) -> GV.Attributes
-        getColorOfNode (n, Just (LGName _)) = let
-               types = ( nub
-                       . sort
-                       . map getType
-                       . mapMaybe (\((_,fact), (nodes,_)) ->
-                            if n `elem` nodes
-                            then Just fact
-                            else Nothing)
-                       . Map.assocs
-                       ) facts
-            in case types of 
-                [factType] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) factType ]
+        getColorOfNode (n, Just (LGName _)) =
+            case getOriginsOfNode n of 
+                [origin] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) origin ]
                 [] -> [GV.Style [GV.SItem GV.Dashed []]]
                 _ -> []
-        getColorOfNode (_, Just (LGFact fact)) = [ GV.FontColor (GV.X11Color GV.Gray)
-                                                 , (GV.Color . (:[]) . (`GV.WC` Nothing) . factColoringLookup) fact
-                                                 ]
+        getColorOfNode (n, Just (LGFact _)) = 
+            case getOriginsOfNode n of 
+                [origin] -> [ GV.FontColor (GV.X11Color GV.Gray)
+                            , (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) origin 
+                            ]
+                [] -> [GV.Style [GV.SItem GV.Dashed []]]
+                _ -> []
         getColorOfNode _ = []
+
+        getOriginsOfEdge :: G.Edge -> [Origin]
+        getOriginsOfEdge n = ( nub
+                             . sort
+                             . mapMaybe (\((origin, _), (_,edges)) ->
+                                  if n `elem` edges
+                                  then Just origin
+                                  else Nothing)
+                             . Map.assocs
+                             ) facts
 
         getColorOfEdge :: G.LEdge LicenseGraphEdge -> GV.Attributes
         getColorOfEdge edge = let
                 potentialE = (fmap G.toEdge . find (== edge) . G.labEdges) graph
             in case potentialE of
-                Just e -> let
-                        types = ( nub
-                                . sort
-                                . map getType
-                                . mapMaybe (\((_,fact), (_, edges)) ->
-                                    if e `elem` edges
-                                    then Just fact
-                                    else Nothing)
-                                . Map.assocs
-                                ) facts
-                    in case types of 
-                        [factType] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) factType ]
+                Just e -> case getOriginsOfEdge e of 
+                        [origin] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) origin ]
                         [] -> []
                         _ -> []
                 Nothing -> []
@@ -101,7 +113,7 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                                 Just (LGStatement (LicenseUrl url)) -> GV.toLabelValue url
                                 Just (LGStatement (LicenseRule r)) -> GV.toLabelValue "$RULE"
                                 Just (LGStatement (LicenseText r)) -> GV.toLabelValue "$TEXT"
-                                Just (LGStatement (LicenseComment r)) -> GV.toLabelValue "$COMMENT"
+                                Just (LGStatement (LicenseComment r)) -> GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 r)
                                 Just (LGStatement stmt) -> GV.toLabelValue stmt
                                 Just (LGFact fact) -> GV.toLabelValue (getFactId fact)
                                 -- Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
@@ -126,7 +138,8 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                     [LGImpliedBy] -> []
                     edgeLabels' -> (case edgeLabels' of
                         [LGNameRelation (Potentially _)] -> [GV.style GV.dashed]
-                        _                                -> []) ++ [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
+                        [LGNameRelation Same] -> [GV.style GV.bold]
+                        _ -> []) ++ [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
                 ) ++ getColorOfEdge (a, b, e)
             }
     in GV.graphToDot params graph

@@ -70,6 +70,7 @@ library
     , text
     , unordered-containers
     , vector
+    , word-wrap
     , yaml
   default-language: GHC2021
 
@@ -107,6 +108,7 @@ executable ldbcollector-exe
     , text
     , unordered-containers
     , vector
+    , word-wrap
     , yaml
   default-language: GHC2021
 
@@ -147,5 +149,6 @@ test-suite ldbcollector-test
     , text
     , unordered-containers
     , vector
+    , word-wrap
     , yaml
   default-language: GHC2021

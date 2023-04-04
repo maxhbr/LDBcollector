@@ -19,7 +19,7 @@ data ScancodeData
   , _spdxId      :: Maybe String
   , _owner       :: Maybe String
   , _homepageUrl :: Maybe String
-  , _notes       :: Maybe String
+  , _notes       :: Maybe Text
   , _textUrls    :: [String]
   , _osiUrl      :: Maybe String
   , _otherUrls   :: [String]
@@ -51,11 +51,13 @@ instance LicenseFactC ScancodeData where
                                 ]
     getImpliedStmts scd = map mstmt [ _category scd
                                     , _homepageUrl scd
-                                    , _notes scd
                                     , _osiUrl scd
                                     ] 
+                          ++ maybeToList (fmap LicenseComment (_notes scd))
+                          ++ maybeToList (fmap LicenseUrl (_osiUrl scd))
                           ++ map LicenseUrl (_textUrls scd)
                           ++ map LicenseUrl (_otherUrls scd)
+                          ++ maybeToList (fmap LicenseText (_text scd))
 
 newtype ScancodeLicenseDB = ScancodeLicenseDB FilePath
 

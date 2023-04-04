@@ -28,6 +28,7 @@ dependencies:
 - split
 - cryptohash-md5
 - base16-bytestring
+- word-wrap
 # network-uri
 - vector
 - containers

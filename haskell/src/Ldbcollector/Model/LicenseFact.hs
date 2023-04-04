@@ -51,7 +51,7 @@ class (Eq a, Ord a) => LicenseFactC a where
     default getFactId :: (ToJSON a) => a -> FactId
     getFactId a = let
         md5 = (C.unpack . C.fromStrict . B16.encode .  MD5.hashlazy . A.encode) a
-        in getType a ++ ":" ++ md5
+        in getType a ++ "\n" ++ md5
     getApplicableLNs :: a -> ApplicableLNs
     getImpliedStmts :: a -> [LicenseStatement]
     getImpliedStmts _ = []
