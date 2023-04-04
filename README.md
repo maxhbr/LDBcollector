@@ -34,7 +34,7 @@ The RPM package contains the data in JSON format. If you need the data in a diff
 
 ## Artifact
 
-There is available an artifact [fedora-licenses.json](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/fedora-licenses.json?job=json) which is updated after every push to `main` branch.
+There is available an artifact [fedora-licenses.json](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/fedora-licenses.json?job=json) which is updated after every push to `main` branch. Note that some fields are deprecated, please check `tools/fedora-license-schema.json`. 
 
 The files for [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal):
 

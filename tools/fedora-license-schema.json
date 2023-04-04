@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gitlab.com/fedora/legal/fedora-license-data/-/raw/main/fedora-license-schema.json",
+  "title": "fedora-license",
+  "description": "JSON with data of fedora licenses",
+  "type": "object",
+  "properties": {
+    "$ref": {
+      "type": "object",
+      "properties": {
+        "license": {
+          "type": "object",
+          "properties": {
+            "expression": { "type": "string" },
+            "status": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "url": { "type": "string" }
+          }
+        },
+        "fedora": {
+          "type": "object",
+          "properties": {
+            "legacy-name": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "legacy-abbreviation": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "approved": {
+          "description": "deprecated use license.status",
+          "type": "string"
+        },
+        "fedora_abbrev": {
+          "description": "deprecated use fedora.legacy-abbreviation",
+          "type": "string"
+        },
+        "fedora_name": {
+          "description": "deprecated use fedora.legacy-name",
+          "type": "string"
+        },
+        "spdx_abbrev": {
+          "description": "deprecated use license.expression",
+          "type": "string"
+        }
+      },
+      "required": [ "license", "fedora" ]
+    }
+  },
+  "required": [ ]
+}
+
