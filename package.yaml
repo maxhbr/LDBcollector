@@ -47,8 +47,10 @@ dependencies:
 - yaml
 - libyaml
 - swish
+- sqlite-simple
 # Sources
 - spdx
+- opensource
 # Sinks
 - graphviz
 

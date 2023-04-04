@@ -1,4 +1,5 @@
 {-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Sink.GraphViz
     ( writeGraphViz
     ) where
@@ -20,7 +21,33 @@ import qualified Data.HashMap.Internal.Strict      as HMap
 import qualified Data.Map                          as Map
 import qualified Data.GraphViz.Attributes.HTML     as GVH
 
+import qualified Data.Text.Lazy                    as LT
 import qualified Text.Wrap                         as TW
+
+instance GV.Labellable LicenseStatement where
+    toLabelValue (LicenseStatement stmt) = GV.toLabelValue stmt
+    toLabelValue (LicenseUrl url) = GV.toLabelValue url
+    toLabelValue (LicenseText txt) = GV.toLabelValue ("$TEXT" :: Text)
+    toLabelValue (LicenseRule txt) = GV.toLabelValue ("$RULE" :: Text)
+    toLabelValue (LicenseComment txt) = GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 txt)
+    toLabelValue (LicensePCL pcl) = let
+            header = GVH.Cells [ GVH.LabelCell [] (GVH.Text [GVH.Str "Permissions"])
+                               , GVH.LabelCell [] (GVH.Text [GVH.Str "Conditions"])
+                               , GVH.LabelCell [] (GVH.Text [GVH.Str "Limitations"])
+                               ]
+            linesToContent :: [Text] -> GVH.Cell
+            linesToContent = GVH.LabelCell [] . GVH.Text . intersperse newline . map (GVH.Str . LT.fromStrict)
+            newline = GVH.Newline []
+            content = GVH.Cells (map linesToContent [ _permissions pcl, _conditions pcl, _limitations pcl])
+        in GV.HtmlLabel . GVH.Table $ GVH.HTable Nothing [] [ header, content ]
+    toLabelValue (LicenseCompatibilities compatibilities) = let
+            mkLine (LicenseCompatibility other compatibility explanation) = 
+                GVH.Cells [ GVH.LabelCell [] (GVH.Text [GVH.Str . LT.pack $ show other])
+                          , GVH.LabelCell [] (GVH.Text [GVH.Str $ LT.pack compatibility])
+                        --   , GVH.LabelCell [] (GVH.Text [GVH.Str $ LT.fromStrict explanation])
+                          ]
+        in GV.HtmlLabel . GVH.Table $ GVH.HTable Nothing [] (map mkLine compatibilities)
+    toLabelValue statement = (GV.StrLabel . LT.pack . show) statement
 
 computeDigraph :: LicenseGraph -> GV.DotGraph G.Node
 computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
@@ -110,15 +137,10 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                 let nodeLabel = graph `G.lab` n
                     label = case nodeLabel of
                                 Just (LGName name) -> GV.toLabelValue (show name)
-                                Just (LGStatement (LicenseUrl url)) -> GV.toLabelValue url
-                                Just (LGStatement (LicenseRule r)) -> GV.toLabelValue "$RULE"
-                                Just (LGStatement (LicenseText r)) -> GV.toLabelValue "$TEXT"
-                                Just (LGStatement (LicenseComment r)) -> GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 r)
                                 Just (LGStatement stmt) -> GV.toLabelValue stmt
                                 Just (LGFact fact) -> GV.toLabelValue (getFactId fact)
                                 -- Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
-                                Nothing -> GV.toLabelValue "(/)"
-                                _ -> GV.toLabelValue "(?)"
+                                Nothing -> GV.toLabelValue ("(/)" :: Text)
                     coloring = getColorOfNode (n,nodeLabel)
                     styling = case nodeLabel of
                         Just (LGStatement _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]

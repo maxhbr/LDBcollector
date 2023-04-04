@@ -20,5 +20,7 @@ class Source a where
     applySource :: a -> LicenseGraphM ()
     applySource a = let
             origin = getOrigin a
-        in MTL.lift (getFacts a) >>= V.mapM_ (\fact -> withFact (origin, fact) applyFact)
+        in do
+            lift $ putStrLn ("# get " ++ show origin)
+            MTL.lift (getFacts a) >>= V.mapM_ (\fact -> withFact (origin, fact) applyFact)
 

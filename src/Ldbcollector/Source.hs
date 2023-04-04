@@ -15,13 +15,14 @@ import           Ldbcollector.Source.OKFN
 import           Ldbcollector.Source.Metaeffekt
 import           Ldbcollector.Source.Warpr
 import           Ldbcollector.Source.OSI
+import           Ldbcollector.Source.FOSSLight
 
 applySources :: LicenseGraphM ()
 applySources = do
     applySource SPDXLicenseIds
     applySource (ScancodeLicenseDB "./data/nexB-scancode-licensedb/docs/")
     applySource (FedoraLicenseData "./data/fedora-legal-fedora-license-data.jsons")
-    applySource (OSI "./data/OpenSourceOrg-licenses/licenses")
+    applySource OSI
     applySource (BlueOakCouncilLicenseList "./data/blueoakcouncil/blue-oak-council-license-list.json")
     applySource (BlueOakCouncilCopyleftList "./data/blueoakcouncil/blue-oak-council-copyleft-list.json")
     applySource (OSADL "./data/OSADL-checklists")
@@ -32,4 +33,5 @@ applySources = do
     applySource (OKFN "./data/okfn-licenses/licenses/groups/all.json")
     applySource (CavilLicenseChanges "./data/openSUSE-cavil/lib/Cavil/resources/license_changes.txt")
     applySource (Metaeffekt "./data/org-metaeffekt-metaeffekt-universe/src/main/resources/ae-universe")
-    applySource (Warpr "data/warpr-licensedb/data")
+    applySource (Warpr "./data/warpr-licensedb/data")
+    applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")

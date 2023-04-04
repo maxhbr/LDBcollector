@@ -51,8 +51,9 @@ instance ToJSON LicenseName where
     toJSON = String . pack . show
 
 data LicenseNameRelation where
-    Same        :: LicenseNameRelation
-    Better      :: LicenseNameRelation
-    AppliesTo   :: LicenseNameRelation
-    Potentially :: LicenseNameRelation -> LicenseNameRelation
+    Same         :: LicenseNameRelation
+    Better       :: LicenseNameRelation
+    AppliesTo    :: LicenseNameRelation
+    Potentially  :: LicenseNameRelation -> LicenseNameRelation
+    SupersededBy :: LicenseNameRelation
     deriving (Show, Eq, Ord)

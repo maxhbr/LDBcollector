@@ -36,6 +36,7 @@ library
       Ldbcollector.Source.Cavil
       Ldbcollector.Source.ChooseALicense
       Ldbcollector.Source.Fedora
+      Ldbcollector.Source.FOSSLight
       Ldbcollector.Source.Fossology
       Ldbcollector.Source.FSF
       Ldbcollector.Source.Metaeffekt
@@ -68,9 +69,11 @@ library
     , graphviz
     , libyaml
     , mtl
+    , opensource
     , pretty-terminal
     , spdx
     , split
+    , sqlite-simple
     , swish
     , text
     , unordered-containers
@@ -105,10 +108,12 @@ executable ldbcollector-exe
     , ldbcollector
     , libyaml
     , mtl
+    , opensource
     , pretty-terminal
     , scotty
     , spdx
     , split
+    , sqlite-simple
     , swish
     , temporary
     , text
@@ -148,9 +153,11 @@ test-suite ldbcollector-test
     , ldbcollector
     , libyaml
     , mtl
+    , opensource
     , pretty-terminal
     , spdx
     , split
+    , sqlite-simple
     , swish
     , temporary
     , text
