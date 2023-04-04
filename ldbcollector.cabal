@@ -38,6 +38,8 @@ library
       Ldbcollector.Source.Fedora
       Ldbcollector.Source.Fossology
       Ldbcollector.Source.FSF
+      Ldbcollector.Source.Metaeffekt
+      Ldbcollector.Source.OKFN
       Ldbcollector.Source.OSADL
       Ldbcollector.Source.OSLC
       Ldbcollector.Source.Scancode

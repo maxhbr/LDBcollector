@@ -25,8 +25,6 @@ data ScancodeData
   , _otherUrls   :: [String]
   , _text        :: Maybe Text
   } deriving (Eq, Ord, Show, Generic)
-instance ToJSON ByteString where
-  toJSON = toJSON . Char8.unpack
 instance FromJSON ScancodeData where
   parseJSON = withObject "ScancodeData" $ \v -> ScancodeData
     <$> v .: "key"

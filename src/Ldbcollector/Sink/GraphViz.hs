@@ -132,13 +132,12 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
             , GV.fmtEdge          = \(a, b, e) ->
                 (case nub (edgeLabels a b) of
                     [] -> []
-                    [LGNameRelation Same] -> []
+                    [LGNameRelation Same] -> [GV.style GV.bold]
                     [LGNameRelation Better] -> [GV.style GV.dashed]
                     [LGAppliesTo] -> []
                     [LGImpliedBy] -> []
                     edgeLabels' -> (case edgeLabels' of
                         [LGNameRelation (Potentially _)] -> [GV.style GV.dashed]
-                        [LGNameRelation Same] -> [GV.style GV.bold]
                         _ -> []) ++ [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
                 ) ++ getColorOfEdge (a, b, e)
             }

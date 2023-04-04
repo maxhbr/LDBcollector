@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Model.LicenseName
-  ( LicenseName
+  ( LicenseName (..)
   , newLN, newNLN, setNS, unsetNS
   , LicenseNameRelation (..)
   ) where

@@ -9,6 +9,7 @@ module Ldbcollector.Model.LicenseFact
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
   , ApplicableLNs (..)
+  , alternativesFromListOfLNs
   , LicenseFactC (..)
   ) where
 
@@ -44,6 +45,10 @@ data ApplicableLNs where
     NLN :: LicenseName -> ApplicableLNs
     AlternativeLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
     ImpreciseLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
+alternativesFromListOfLNs :: [LicenseName] -> ApplicableLNs
+alternativesFromListOfLNs (best:others) = NLN best `AlternativeLNs` map LN others
+alternativesFromListOfLNs [] = undefined
+
 
 class (Eq a, Ord a) => LicenseFactC a where
     getType :: a -> String

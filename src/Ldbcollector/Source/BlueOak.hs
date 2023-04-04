@@ -113,35 +113,6 @@ data BlueOakCouncil
      = BlueOakCouncilLicenseList FilePath
      | BlueOakCouncilCopyleftList FilePath
 
--- -- getTaskForLicense :: BlueOakLicense -> LicenseGraphTask
--- -- getTaskForLicense (BlueOakLicense name id url) =
--- --     EdgeLeft ((Add . fromString) url) AppliesTo $
--- --     Edge ((Add . LicenseName . newNLN "blueoak" . pack) id) Same$
--- --     EdgeUnion ((Add . LicenseName . newLN . pack) name) Same ((Add . LicenseName . newLN . pack) id)
-
--- -- getTaskForLicenseList :: BlueOakData -> LicenseGraphTask
--- -- getTaskForLicenseList (BlueOakData _ ratings) = let
--- --         ratingToTask (BlueOakRating rating licenses) =
--- --             Edge ((Add . fromString) rating) AppliesTo $
--- --             (AddTs . V.fromList . map getTaskForLicense) licenses
--- --     in Edge ((Add . fromString) "Permissive") AppliesTo $
--- --             (AddTs . V.fromList . map ratingToTask) ratings
-
-
--- getFactsForCopyleftList :: BlueOakCopyleftData -> Vector LicenseFact
--- getFactsForCopyleftList = undefined
-
--- -- getTaskForCopyleftList :: BlueOakCopyleftData -> LicenseGraphTask
--- -- getTaskForCopyleftList (BlueOakCopyleftData _ families) = let
--- --         groupToTask (BlueOakCopyleftGroup bocgName versions) =
--- --             Edge ((Add . LicenseName . newLN . pack) bocgName) (Potentially Better) $
--- --                 (AddTs . V.fromList . map getTaskForLicense) versions
--- --         kindToTask (copyleftKind, copyleftGroups) =
--- --             Edge ((Add . fromString) copyleftKind) AppliesTo $
--- --                 (AddTs . V.fromList . map groupToTask) copyleftGroups
--- --     in Edge ((Add . fromString) "Copyleft") AppliesTo $
--- --             (AddTs . V.fromList . map kindToTask . M.assocs) families
-
 instance Source BlueOakCouncil where
     getOrigin _  = Origin "BlueOakCouncil"
     getFacts (BlueOakCouncilLicenseList file) = do
