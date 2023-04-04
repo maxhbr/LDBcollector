@@ -44,6 +44,7 @@ library
       Ldbcollector.Source.OSLC
       Ldbcollector.Source.Scancode
       Ldbcollector.Source.SPDX
+      Ldbcollector.Source.Warpr
       MyPrelude
   other-modules:
       Paths_ldbcollector
@@ -67,8 +68,10 @@ library
     , libyaml
     , mtl
     , pretty-terminal
+    , rdf4h
     , spdx
     , split
+    , swish
     , text
     , unordered-containers
     , vector
@@ -103,9 +106,11 @@ executable ldbcollector-exe
     , libyaml
     , mtl
     , pretty-terminal
+    , rdf4h
     , scotty
     , spdx
     , split
+    , swish
     , temporary
     , text
     , unordered-containers
@@ -145,8 +150,10 @@ test-suite ldbcollector-test
     , libyaml
     , mtl
     , pretty-terminal
+    , rdf4h
     , spdx
     , split
+    , swish
     , temporary
     , text
     , unordered-containers

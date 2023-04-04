@@ -13,6 +13,7 @@ import           Ldbcollector.Source.OSLC
 import           Ldbcollector.Source.Fossology
 import           Ldbcollector.Source.OKFN
 import           Ldbcollector.Source.Metaeffekt
+import           Ldbcollector.Source.Warpr
 
 
 applySources :: LicenseGraphM ()
@@ -30,3 +31,4 @@ applySources = do
     applySource (OKFN "./data/okfn-licenses/licenses/groups/all.json")
     applySource (CavilLicenseChanges "./data/openSUSE-cavil/lib/Cavil/resources/license_changes.txt")
     applySource (Metaeffekt "./data/org-metaeffekt-metaeffekt-universe/src/main/resources/ae-universe")
+    applySource (Warpr "data/warpr-licensedb/data")

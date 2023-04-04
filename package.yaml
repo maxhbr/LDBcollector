@@ -46,6 +46,8 @@ dependencies:
 - cassava
 - yaml
 - libyaml
+- swish
+- rdf4h
 # Sources
 - spdx
 # Sinks

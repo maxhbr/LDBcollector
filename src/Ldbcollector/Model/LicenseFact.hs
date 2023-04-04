@@ -38,7 +38,8 @@ data FromFact a
     }
 deriving instance Show a => Show (FromFact a)
 deriving instance Eq a => Eq (FromFact a)
-deriving instance Ord a => Ord (FromFact a)
+instance (Eq a, Show a) => Ord (FromFact a) where
+    compare a b = show a `compare` show b
 
 data ApplicableLNs where
     LN :: LicenseName -> ApplicableLNs
@@ -50,7 +51,7 @@ alternativesFromListOfLNs (best:others) = NLN best `AlternativeLNs` map LN other
 alternativesFromListOfLNs [] = undefined
 
 
-class (Eq a, Ord a) => LicenseFactC a where
+class (Eq a) => LicenseFactC a where
     getType :: a -> String
     getFactId :: a -> FactId
     default getFactId :: (ToJSON a) => a -> FactId
