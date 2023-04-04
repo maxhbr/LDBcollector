@@ -359,9 +359,10 @@ Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfa
 1. SFL License Agreement: https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm
 1. SGI Free Software License B (v. 1.0): https://web.archive.org/web/20130114073135/http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung unklar)
 1. SGI Free Software License B (v. 1.1): https://web.archive.org/web/20170414231252/http://oss.sgi.com:80/projects/FreeB/SGIFreeSWLicB.1.1.doc (Einordnung unklar)
-1. Sleepycat License: https://fedoraproject.org/wiki/Licensing/Sleepycat
-1. Sleepycat Software Product License: http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html
-1. Vim License: http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
+2. Short code license: https://www.cl.cam.ac.uk/~mgk25/short-license.html
+3. Sleepycat License: https://fedoraproject.org/wiki/Licensing/Sleepycat
+4. Sleepycat Software Product License: http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html
+5. Vim License: http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
 
 
 ### Lizenzen mit Sonderrechten
