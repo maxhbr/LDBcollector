@@ -31,7 +31,7 @@
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI</sup>|<sup>Open CoDE</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|<sup>[4Suite License 1.1]([4s]/4Suite-License-1.1.yaml)</sup>|<sup>4Suite License</sup>|<sup>4Suite-1.1</sup>| | |<sup> </sup>|<sup>[4suite-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/4suite-1.1.LICENSE)</sup>| |<sup>terms</sup>|
+|<sup>[4Suite License 1.1]([4s]/4Suite-License-1.1.yaml)</sup>|<sup>4Suite License</sup>|<sup>4Suite-1.1</sup>| | |<sup> </sup>|<sup>[4suite-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/4suite-1.1.LICENSE)</sup>|<sup>[4suite-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/4suite-1.1.LICENSE)</sup>|<sup>terms</sup>|
 
 [3](../[3]/README.md) -
 [4](../[4]/README.md) -
