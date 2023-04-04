@@ -23,6 +23,7 @@ solche Einschränkungen nicht vorsehen. Für weitere Informationen siehe https:/
 16. Hippocratic License (v. 3.0): https://firstdonoharm.dev/version/3/0/license/
 17. inno3: https://inno3.frama.io/tm-contract-for-oss-maintainers/
 18. Just World License: https://github.com/raisely/NoHarm/blob/667bdd2b0fe1716f0e6daa425cc00ea97e6709f1/LICENSE.md 
-19. ml5.js license: https://github.com/ml5js/Code-of-Conduct/blob/main/LICENSE.md
-20. Non-Violent Public License (NPL): https://git.pixie.town/thufie/NPL
-21. Vaccine License: http://web.archive.org/web/20200826012936/https://vaccinelicense.com/vaccine-license/
+19. Kaitiakitanga License: https://github.com/TeHikuMedia/Kaitiakitanga-License/blob/tumu/LICENSE.md
+20. ml5.js license: https://github.com/ml5js/Code-of-Conduct/blob/main/LICENSE.md
+21. Non-Violent Public License (NPL): https://git.pixie.town/thufie/NPL
+22. Vaccine License: http://web.archive.org/web/20200826012936/https://vaccinelicense.com/vaccine-license/
