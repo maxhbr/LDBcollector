@@ -31,6 +31,10 @@ Files: hermine/cube/static/cube/webfonts/*.svg
 Copyright: Font Awesome
 License: CC-BY-4.0
 
+Files: hermine/cube/static/cube/webfonts/nunito/*
+Copyright: 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
+License: OFL-1.1
+
 Files: testfiles/*
 Copyright: Not copyrightable
 License: CC0-1.0
