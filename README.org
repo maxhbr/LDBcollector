@@ -6,5 +6,5 @@ The original project, which is more mature: https://github.com/maxhbr/LDBcollect
 This is a rewrite, it contains
 
 - [[./data/]]
-- [[./rust/]] implementation
+- [[./rust/]] POC implementation in rust
 - [[./gh-pages/]] output
