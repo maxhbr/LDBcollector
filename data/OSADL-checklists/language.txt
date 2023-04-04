@@ -1,0 +1,17 @@
+https://www.osadl.org/fileadmin/checklists/language/AND.txt
+https://www.osadl.org/fileadmin/checklists/language/ATTRIBUTE.txt
+https://www.osadl.org/fileadmin/checklists/language/COMPATIBILITY.txt
+https://www.osadl.org/fileadmin/checklists/language/COPYLEFT%20CLAUSE.txt
+https://www.osadl.org/fileadmin/checklists/language/DEPENDING%20COMPATIBILITY.txt
+https://www.osadl.org/fileadmin/checklists/language/EITHER%20IF.txt
+https://www.osadl.org/fileadmin/checklists/language/EITHER.txt
+https://www.osadl.org/fileadmin/checklists/language/EXCEPT%20IF.txt
+https://www.osadl.org/fileadmin/checklists/language/IF.txt
+https://www.osadl.org/fileadmin/checklists/language/INCOMPATIBILITY.txt
+https://www.osadl.org/fileadmin/checklists/language/NOT.txt
+https://www.osadl.org/fileadmin/checklists/language/OR%20IF.txt
+https://www.osadl.org/fileadmin/checklists/language/OR.txt
+https://www.osadl.org/fileadmin/checklists/language/PATENT%20HINTS.txt
+https://www.osadl.org/fileadmin/checklists/language/USE%20CASE.txt
+https://www.osadl.org/fileadmin/checklists/language/YOU%20MUST%20NOT.txt
+https://www.osadl.org/fileadmin/checklists/language/YOU%20MUST.txt

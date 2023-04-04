@@ -5,13 +5,19 @@ USE CASE Source code delivery
 	YOU MUST NOT Modify License notices
 	YOU MUST NOT Modify Warranty disclaimer
 	YOU MUST Provide License text
+	IF Combined work With AGPL-3.0-only OR AGPL-3.0-or-later
+		YOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later
 	IF Software modification
 		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
 		YOU MUST Provide Modification date
+		YOU MUST Provide Legal notices
+			ATTRIBUTE Highlighted
 		YOU MUST Grant License
 			ATTRIBUTE Original license
-		IF Interactive AND Displaying License announcement
+		IF Interactive AND Displaying Appropriate legal notices
 			YOU MUST Display Appropriate legal notices
+				ATTRIBUTE Highlighted
 		IF Non-permissive additional terms Added
 			EITHER
 				YOU MUST Include Non-permissive additional terms In Source code
@@ -19,7 +25,8 @@ USE CASE Source code delivery
 				YOU MUST Reference Non-permissive additional terms In Source code
 	YOU MUST NOT Restrict Granted rights
 		EXCEPT IF Permitted Non-permissive additional terms
-	YOU MUST NOT Litigate Circumvention
+	YOU MUST NOT Litigate Circumvention Of Technological measures
+	YOU MUST NOT Sublicense
 USE CASE Binary delivery
 	YOU MUST Provide Copyright notice
 		ATTRIBUTE Highlighted
@@ -27,51 +34,69 @@ USE CASE Binary delivery
 	YOU MUST NOT Modify License notices
 	YOU MUST NOT Modify Warranty disclaimer
 	YOU MUST Provide License text
-		IF Non-permissive additional terms
-			EITHER
-				YOU MUST Include Non-permissive additional terms In Source code
-			OR
-				YOU MUST Reference Non-permissive additional terms In Source code
-			YOU MUST Provide Non-permissive additional terms
-	YOU MUST Provide Source code
-		ATTRIBUTE Machine-readable
-		ATTRIBUTE Documented format
-		ATTRIBUTE Including Tool chain information
-	IF Binary delivery On Customary medium OR Installed
+	IF Combined work With AGPL-3.0-only OR AGPL-3.0-or-later
+		YOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later
+	EITHER IF Binary delivery On Customary medium OR Installed
 		EITHER
-			YOU MUST Include Source code
+			YOU MUST Provide Source code
+				ATTRIBUTE Machine-readable
 				ATTRIBUTE Customary medium
+				ATTRIBUTE Documented format
+				ATTRIBUTE Including Installation scripts
+				ATTRIBUTE Including Tool chain information
 		OR
-			YOU MUST Provide Delayed source code delivery
 			YOU MUST Provide Written offer
 				ATTRIBUTE Duration At least 3 years
 				ATTRIBUTE Duration As long as product is supported
-				ATTRIBUTE Source code delivery
+				ATTRIBUTE Delayed source code delivery
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Documented format
+					ATTRIBUTE Including Installation scripts
+					ATTRIBUTE Including Tool chain information
 					EITHER
 						ATTRIBUTE Customary medium
 						ATTRIBUTE No profit
 					OR
 						ATTRIBUTE Via Internet
 						ATTRIBUTE No charge
-	IF Binary delivery Via Internet
+	OR IF Binary delivery Via Internet
 		YOU MUST Provide Source code
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Documented format
+			ATTRIBUTE Including Installation scripts
+			ATTRIBUTE Including Tool chain information
 			ATTRIBUTE Via Internet
 			ATTRIBUTE Duration As long as needed
-			IF Source code On same server
+			EITHER IF Source code On same server
 				ATTRIBUTE No charge
-			IF Source code On other server
+				ATTRIBUTE Equivalent
+			OR IF Source code On other server
+				ATTRIBUTE No charge
 				ATTRIBUTE Equivalent
 				YOU MUST Reference Source code
-	IF Binary delivery Via peer-to-peer transmission
+	OR IF Binary delivery Via peer-to-peer transmission
 		YOU MUST Reference Source code
 			ATTRIBUTE No charge
+			ATTRIBUTE Machine-readable
+			ATTRIBUTE Documented format
+			ATTRIBUTE Including Installation scripts
+			ATTRIBUTE Including Tool chain information
+			ATTRIBUTE Via Internet
+			ATTRIBUTE Duration As long as needed
+	IF User product
+		YOU MUST Provide Installation information
+			EXCEPT IF Installation Is NOT Feasible
 	IF Software modification
 		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
 		YOU MUST Provide Modification date
+		YOU MUST Provide Legal notices
+			ATTRIBUTE Highlighted
 		YOU MUST Grant License
 			ATTRIBUTE Original license
-		IF Interactive AND Displaying License announcement
+		IF Interactive AND Displaying Appropriate legal notices
 			YOU MUST Display Appropriate legal notices
+				ATTRIBUTE Highlighted
 		IF Non-permissive additional terms Added
 			EITHER
 				YOU MUST Include Non-permissive additional terms In Source code
@@ -79,19 +104,10 @@ USE CASE Binary delivery
 			OR
 				YOU MUST Reference Non-permissive additional terms In Source code
 					ATTRIBUTE With Source code delivery
-	IF User product
-		YOU MUST Provide Installation information
-			EXCEPT IF Installation Is NOT Feasible
 	YOU MUST NOT Restrict Granted rights
 		EXCEPT IF Permitted Non-permissive additional terms
-	YOU MUST NOT Litigate Circumvention
-USE CASE Network service
-	IF Software modification
-		YOU MUST Provide Source code
-			ATTRIBUTE Via Internet
-			ATTRIBUTE No charges
-			ATTRIBUTE Customary method
-COMPATIBILITY AGPL-3.0-or-later
+	YOU MUST NOT Litigate Circumvention Of Technological measures
+	YOU MUST NOT Sublicense
 COMPATIBILITY Apache-2.0
 COMPATIBILITY Artistic-2.0
 COMPATIBILITY blessing
@@ -106,27 +122,30 @@ COMPATIBILITY curl
 COMPATIBILITY EFL-2.0
 COMPATIBILITY FSFAP
 COMPATIBILITY FSFULLR
+COMPATIBILITY GPL-1.0-or-later
+COMPATIBILITY GPL-2.0-or-later
 COMPATIBILITY IBM-pibs
 COMPATIBILITY ICU
 COMPATIBILITY ISC
+COMPATIBILITY LGPL-2.1-only
+COMPATIBILITY LGPL-2.1-or-later
+COMPATIBILITY LGPL-3.0-or-later
 COMPATIBILITY Libpng
 COMPATIBILITY MIT
 COMPATIBILITY MPL-2.0
 COMPATIBILITY NTP
 COMPATIBILITY Unlicense
 COMPATIBILITY UPL-1.0
+COMPATIBILITY W3C
+COMPATIBILITY W3C-19980720
+COMPATIBILITY W3C-20150513
 COMPATIBILITY WTFPL
 COMPATIBILITY X11
 COMPATIBILITY Zlib
 COMPATIBILITY ZPL-2.0
-DEPENDING COMPATIBILITY GPL-1.0-or-later
-DEPENDING COMPATIBILITY GPL-2.0-or-later
-DEPENDING COMPATIBILITY GPL-3.0-only
-DEPENDING COMPATIBILITY GPL-3.0-or-later
-DEPENDING COMPATIBILITY LGPL-2.1-only
-DEPENDING COMPATIBILITY LGPL-2.1-or-later
-DEPENDING COMPATIBILITY LGPL-3.0-only
-DEPENDING COMPATIBILITY LGPL-3.0-or-later
+DEPENDING COMPATIBILITY AGPL-3.0-only
+DEPENDING COMPATIBILITY AGPL-3.0-or-later
+DEPENDING COMPATIBILITY EPL-2.0
 INCOMPATIBILITY Apache-1.0
 INCOMPATIBILITY Apache-1.1
 INCOMPATIBILITY BSD-4-Clause

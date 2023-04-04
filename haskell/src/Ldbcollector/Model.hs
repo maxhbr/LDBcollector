@@ -21,8 +21,4 @@ class Source a where
     applySource a = let
             origin = getOrigin a
         in MTL.lift (getFacts a) >>= V.mapM_ (\fact -> withFact (origin, fact) applyFact)
-    -- applySource :: a -> LicenseGraphM ()
-    -- applySource a = lift (getTask a) >>= applyTask
-    -- getTask :: a -> IO LicenseGraphTask
-    -- getTask = return . Pure . applySource
 

@@ -43,10 +43,11 @@ stderrLog msg = MTL.liftIO $ hPutStrLn stderr (color Green msg)
 -- ############################################################################
 
 data LicenseGraphNode where
-    LGName      :: LicenseName -> LicenseGraphNode
-    LGStatement :: LicenseStatement -> LicenseGraphNode
+    LGName        :: LicenseName -> LicenseGraphNode
+    LGStatement   :: LicenseStatement -> LicenseGraphNode
     LGLicenseText :: Text -> LicenseGraphNode
-    LGFact      :: LicenseFact -> LicenseGraphNode
+    LGFact        :: LicenseFact -> LicenseGraphNode
+    LGVec         :: [LicenseGraphNode] -> LicenseGraphNode
 deriving instance Show LicenseGraphNode
 deriving instance Eq LicenseGraphNode
 deriving instance Ord LicenseGraphNode
@@ -54,7 +55,7 @@ deriving instance Ord LicenseGraphNode
 data LicenseGraphEdge where
     LGNameRelation :: LicenseNameRelation -> LicenseGraphEdge
     LGAppliesTo    :: LicenseGraphEdge
-    LGImpliedBy      :: LicenseGraphEdge
+    LGImpliedBy    :: LicenseGraphEdge
 deriving instance Show LicenseGraphEdge
 deriving instance Eq LicenseGraphEdge
 
@@ -187,8 +188,8 @@ insertEdge = let
         nb <- insertNode b
         unless (na == nb) $ do
             insertLEdge (na, nb, e)
-            when (e == LGNameRelation Same) $
-                insertLEdge (nb, na, e)
+            -- when (e == LGNameRelation Same) $
+            --     insertLEdge (nb, na, e)
         return na
 insertEdges :: Vector (LicenseGraphNode, LicenseGraphNode, LicenseGraphEdge) -> WithFactM (Vector G.Node)
 insertEdges = V.mapM insertEdge
@@ -243,17 +244,3 @@ applyFactImpliedStmt stmt = do
     let stmtLG = LGStatement stmt
     _ <- insertNode stmtLG
     return [stmtLG]
-
-
--- applyFactImpliedStmt (Stmt stmt) = do
---     let stmtLG = LGStatement stmt
---     _ <- insertNode stmtLG
---     return [stmtLG]
--- applyFactImpliedStmt (MStmt (Just stmt)) = applyFactImpliedStmt (Stmt stmt)
--- applyFactImpliedStmt (MStmt Nothing)     = pure []
--- applyFactImpliedStmt (stmt `StmtRel` stmt') = do
---     nodes <- applyFactImpliedStmt stmt
---     nodes' <- applyFactImpliedStmt stmt'
---     let edges = V.fromList $ concatMap (\node -> map (, node, LGImpliedBy) nodes') nodes
---     insertEdges edges
---     return nodes

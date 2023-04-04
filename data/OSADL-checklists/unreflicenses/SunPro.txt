@@ -1,0 +1,4 @@
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Provide License text
+		ATTRIBUTE Including Copyright notice
+

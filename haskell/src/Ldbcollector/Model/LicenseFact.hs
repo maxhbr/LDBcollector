@@ -55,6 +55,8 @@ class (Eq a, Ord a) => LicenseFactC a where
     getApplicableLNs :: a -> ApplicableLNs
     getImpliedStmts :: a -> [LicenseStatement]
     getImpliedStmts _ = []
+    getImpliedCompatibilities :: a -> [LicenseName]
+    getImpliedCompatibilities _ = []
 
 data LicenseFact where
     LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
@@ -81,6 +83,8 @@ instance Ord LicenseFact where
            then toJSON wv1 <= toJSON wv2
            else t1 <= t2
 instance LicenseFactC LicenseFact where
+    getType (LicenseFact _ a) = getType a
     getFactId (LicenseFact _ a) = getFactId a
     getApplicableLNs (LicenseFact _ a) = getApplicableLNs a
     getImpliedStmts (LicenseFact _ a) = getImpliedStmts a
+    getImpliedCompatibilities (LicenseFact _ a) = getImpliedCompatibilities a
