@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Linking Exception (LGPL; variant 005)"
 category: "LGPL Linking Exception"
-shortName: "Linkin-Exception-LGPL-005"
+shortName: "Linking-Exception-LGPL-005"
 spdxIdentifier: "GCC-exception-2.0"
 
 type: "exception"

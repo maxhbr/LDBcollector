@@ -11,6 +11,7 @@ alternativeNames:
   - "http://www.apache.org/licenses/LICENSE-1.0"
   - "Apache License 1.0"
   - "https://spdx.org/licenses/apache-1.0"
+  - "ASL 1.0"
 
 otherIds: 
   - "scancode:apache-1.0"

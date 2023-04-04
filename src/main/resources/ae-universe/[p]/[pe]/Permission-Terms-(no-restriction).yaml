@@ -4,9 +4,13 @@
 canonicalName: "Permission Terms (no restriction)"
 category: "Permission"
 shortName: "PT-no-restriction"
+spdxIdentifier: "App-s2p"
 
 alternativeNames:
   - "Permission Terms (no restriction)"
+  - "App-s2p"
+  - "App::s2p License"
+  - "Permission Terms (App-S2p)"
 
 otherIds: 
   - "scancode:app-s2p"

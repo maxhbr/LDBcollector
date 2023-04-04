@@ -2,16 +2,17 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Netscape Public License 1.1"
-category: "Netscape Public License 1.1"
+category: "Netscape Public License"
 spdxIdentifier: "NPL-1.1"
 openCoDEStatus: "approved"
 
 alternativeNames:
-  - "http://www.mozilla.org/MPL/NPL-1.1.html"
   - "http://www.mozilla.org/NPL/"
   - "Netscape Public License and MPL / GPL dual license"
   - "mozilla.org/mpl/MPL/NPL/1.1/"
   - "https://spdx.org/licenses/npl-1.1"
+  - "NPL-1.1"
+  - "Netscape Public License v1.1"
 
 otherIds: 
   - "scancode:npl-1.1"

@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "libutil David Nugent License"
+category: "libutil David Nugent"
+spdxIdentifier: "libutil-David-Nugent"
+
+alternativeNames:
+  - "libutil David Nugent License"
+  - "http://web.mit.edu/freebsd/head/lib/libutil/login_ok.3"
+  - "https://cgit.freedesktop.org/libbsd/tree/man/setproctitle.3bsd"
+

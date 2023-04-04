@@ -5,5 +5,7 @@ canonicalName: "Linking Exception (GPL; variant 014)"
 category: "GPL Linking Exception"
 shortName: "Linkin-Exception-GPL-014"
 
+type: "exception"
+
 otherIds: 
   - "scancode:gcc-linking-exception-2.0"

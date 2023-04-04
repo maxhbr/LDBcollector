@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "QTI Linux Firmware"
 category: "QTI Linux Firmware"
-shortName: "qti-linux-firmware"
+shortName: "QTI-Linux-Firmware"
 
 alternativeNames:
   - "QTI Linux Firmware"

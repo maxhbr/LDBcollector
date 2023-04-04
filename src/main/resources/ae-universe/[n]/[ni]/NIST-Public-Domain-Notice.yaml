@@ -7,6 +7,8 @@ spdxIdentifier: "NIST-PD"
 
 alternativeNames:
   - "nist-pd"
+  - "NIST-PD"
+  - "NIST Public Domain Notice"
 
 otherIds: 
   - "scancode:nist-pd"

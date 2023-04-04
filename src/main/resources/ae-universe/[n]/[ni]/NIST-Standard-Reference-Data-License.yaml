@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "NIST Standard Reference Data License"
 category: "NIST Standard Reference Data License"
-shortName: "nist-srd"
+shortName: "NIST-SRD"
 
 alternativeNames:
   - "NIST Standard Reference Data License"

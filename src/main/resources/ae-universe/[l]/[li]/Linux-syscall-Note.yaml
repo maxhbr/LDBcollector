@@ -5,9 +5,9 @@ canonicalName: "Linux syscall Note"
 category: "Linux syscall"
 spdxIdentifier: "Linux-syscall-note"
 
+type: "exception"
+
 alternativeNames:
   - "Linux-syscall"
   - "Linux-syscall-note"
 
-otherIds: 
-  - "scancode:linux-syscall-exception-gpl"

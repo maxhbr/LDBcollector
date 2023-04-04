@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Erlang Public License 1.1"
+category: "Erlang Public License"
+spdxIdentifier: "ErlPL-1.1"
+
+alternativeNames:
+  - "ErlPL-1.1"
+  - "http://www.erlang.org/EPLICENSE"
+  - "Erlang Public License v1.1"
+  - "https://spdx.org/licenses/erlpl-1.1"
+
+otherIds: 
+  - "scancode:erlangpl-1.1"

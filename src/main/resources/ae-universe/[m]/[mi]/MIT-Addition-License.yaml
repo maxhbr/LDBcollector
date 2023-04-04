@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "MIT Addition License"
 category: "MIT Addition License"
-shortName: "MIT-Addition"
+spdxIdentifier: "MIT-Wu"
 
 alternativeNames:
   - "See \"LICENSE-BigInteger\" for details"

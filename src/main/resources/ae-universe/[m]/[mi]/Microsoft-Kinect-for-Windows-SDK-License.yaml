@@ -3,10 +3,10 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Microsoft Kinect for Windows SDK License"
 category: "Microsoft Kinect for Windows SDK License"
-shortName: "MS-Kinext-Win-SDK"
+shortName: "MS-Kinect-Win-SDK"
 
 alternativeNames:
   - "Microsoft Kinect for Windows SDK License"
 
 otherIds: 
-  - "scancode:ms-kinext-win-sdk"
+  - "scancode:ms-kinect-win-sdk"

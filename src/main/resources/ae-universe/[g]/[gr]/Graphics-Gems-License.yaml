@@ -2,11 +2,13 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Graphics Gems License"
-category: "Graphics Gems License"
-shortName: "Graphics-Gems"
+category: "Graphics Gems"
+spdxIdentifier: "Graphics-Gems"
 
 alternativeNames:
   - "graphics-gems"
+  - "Graphics-Gems"
+  - "Graphics Gems License"
 
 otherIds: 
   - "scancode:graphics-gems"

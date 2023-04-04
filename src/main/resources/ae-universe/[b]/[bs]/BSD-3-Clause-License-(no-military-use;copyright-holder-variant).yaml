@@ -3,9 +3,5 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "BSD 3-Clause License (no military use; copyright holder variant)"
 category: "BSD"
-shortName: "BSD-3-Clause-no-military-copyright"
-spdxIdentifier: "BSD-3-Clause-No-Military-License"
-openCoDEStatus: "not approved"
+shortName: "BSD-3-Clause-no-military-copyright-variant"
 
-otherIds: 
-  - "scancode:bsd-3-clause-no-military"

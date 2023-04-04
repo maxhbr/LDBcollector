@@ -2,13 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "OpenPBS Software License 2.3"
-category: "OpenPBS Software License v2.3"
+category: "OpenPBS Software License"
 shortName: "OpenPBS-2.3"
 
 alternativeNames:
   - "http://fedoraproject.org/wiki/Licensing/OpenPBS"
   - "OpenPBS Software License v2.3"
   - "OpenPBS (Portable Batch System) v2.3 Software License"
+  - "OpenPBS Software License 2.3"
 
 otherIds: 
   - "scancode:openpbs-2.3"

@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Sun proprietary notice for Java sources"
+category: "Sun proprietary notice for Java sources"
+shortName: "Sun-Proprietary-JDK"
+
+alternativeNames:
+  - "Sun proprietary notice for Java sources"
+  - "SUN PROPRIETARY/CONFIDENTIAL"
+
+otherIds: 
+  - "scancode:sun-proprietary-jdk"

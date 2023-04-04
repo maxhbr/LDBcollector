@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "wxWindows Library Licence 3.1"
+category: "wxWindows Library Licence"
+spdxIdentifier: "wxWindows"
+
+alternativeNames:
+  - "wxWindows Library License"
+  - "http://www.opensource.org/licenses/wxwindows.php"
+  - "wxWindows licence"
+  - "wxWindows license"
+  - "wxWindows Library Licence 3.1"
+
+otherIds: 
+  - "scancode:wxwindows"
+  - "osi:WXwindows"

@@ -3,10 +3,13 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "NICTA Public Software Licence 1.0"
 category: "NICTA Public Software Licence"
-shortName: "NICTA-PSL-1.0"
+spdxIdentifier: "NICTA-1.0"
 
 alternativeNames:
   - "NICTA Public Software Licence 1.0"
+  - "NICTA-PSL-1.0"
+  - "NICTA-1.0"
+  - "NICTA Public Software License, Version 1.0"
 
 otherIds: 
   - "scancode:nicta-psl"

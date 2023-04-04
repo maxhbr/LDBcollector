@@ -4,6 +4,7 @@
 canonicalName: "Linking Exception (GPL; variant 023)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-023"
+spdxIdentifier: "openvpn-openssl-exception"
 
 type: "exception"
 

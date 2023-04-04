@@ -2,12 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Creative Commons BY-SA 3.0 (AT)"
-category: "CC-BY-SA"
+category: "CC-BY-SA-3.0-AT"
 spdxIdentifier: "CC-BY-SA-3.0-AT"
 openCoDEStatus: "approved"
 
 alternativeNames:
-  - "Creative Commons BY-SA 3.0 (Austria)"
+  - "CC-BY-SA-3.0-AT"
+  - "Creative Commons BY-SA 3.0 (AT)"
+  - "Creative Commons Attribution Share Alike 3.0 Austria"
 
 otherIds: 
   - "scancode:cc-by-sa-3.0-at"

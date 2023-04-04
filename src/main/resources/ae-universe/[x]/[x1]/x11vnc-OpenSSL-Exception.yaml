@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "x11vnc OpenSSL Exception"
+category: "x11"
+spdxIdentifier: "x11vnc-openssl-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "x11vnc OpenSSL Exception"
+  - "https://github.com/LibVNC/x11vnc/blob/master/src/8to24.c#L22"
+

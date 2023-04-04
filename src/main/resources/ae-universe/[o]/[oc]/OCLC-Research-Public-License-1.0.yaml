@@ -2,11 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "OCLC Research Public License 1.0"
-category: "OCLC Research Public License 1.0"
+category: "OCLC Research Public License"
 shortName: "OCLC-1.0"
 
 alternativeNames:
   - "http://www.free-soft.org/mirrors/www.opensource.org/licenses/oclc.php"
+  - "OCLC Research Public License 1.0"
 
 otherIds: 
   - "scancode:oclc-1.0"

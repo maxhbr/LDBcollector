@@ -5,6 +5,8 @@ canonicalName: "Commons Clause License Condition 1.0"
 category: "Commons Clause"
 shortName: "CCL-Condition-1.0"
 
+type: "modifier"
+
 alternativeNames:
   - "Commons Clause License"
   - "Commons Clause Version 1.0"

@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Clause 6 Exception to LGPL 2.1"
+category: "Clause 6 Exception to LGPL"
+shortName: "Clause-6-Exception-LGPL-2.1"
+
+type: "exception"
+
+alternativeNames:
+  - "Clause 6 Exception to LGPL 2.1"
+
+otherIds: 
+  - "scancode:clause-6-exception-lgpl-2.1"

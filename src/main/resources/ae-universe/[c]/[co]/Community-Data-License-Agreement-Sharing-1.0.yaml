@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Community Data License Agreement Sharing 1.0"
-category: "Community Data License Agreement Sharing 1.0"
+category: "Community Data License Agreement Sharing"
 spdxIdentifier: "CDLA-Sharing-1.0"
 
 alternativeNames:
@@ -17,5 +17,3 @@ alternativeNames:
   - "Community Data License Agreement - Sharing - Version 1.0"
   - "cdla-sharing-1.0"
 
-otherIds: 
-  - "scancode:cdla-sharing-1.0"

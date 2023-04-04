@@ -5,3 +5,7 @@ canonicalName: "SIL Open Font License 1.0 (reserved font name)"
 category: "OFL"
 spdxIdentifier: "OFL-1.0-RFN"
 
+alternativeNames:
+  - "OFL-1.0-RFN"
+  - "SIL Open Font License 1.0 with Reserved Font Name"
+

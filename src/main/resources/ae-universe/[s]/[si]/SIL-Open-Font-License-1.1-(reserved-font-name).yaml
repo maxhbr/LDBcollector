@@ -6,3 +6,5 @@ category: "OFL"
 spdxIdentifier: "OFL-1.1-RFN"
 openCoDEStatus: "approved"
 
+otherIds: 
+  - "osi:OFL-1.1"

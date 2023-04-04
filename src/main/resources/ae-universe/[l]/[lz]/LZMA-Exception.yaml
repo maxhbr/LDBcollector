@@ -8,5 +8,3 @@ spdxIdentifier: "LZMA-exception"
 
 type: "exception"
 
-otherIds: 
-  - "scancode:lzma-cpl-exception"

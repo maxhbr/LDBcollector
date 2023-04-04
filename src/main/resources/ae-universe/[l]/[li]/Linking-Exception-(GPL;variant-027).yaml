@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Linking Exception (GPL; variant 027)"
+category: "GCC Exception"
+shortName: "Linking-Exception-GPL-027"
+
+type: "exception"
+
+alternativeNames:
+  - "GCC Runtime Library exception 2.0"
+

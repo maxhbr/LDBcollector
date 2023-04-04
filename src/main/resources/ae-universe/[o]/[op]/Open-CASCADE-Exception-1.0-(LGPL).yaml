@@ -10,5 +10,5 @@ type: "exception"
 alternativeNames:
   - "Open CASCADE Exception 1.0"
   - "Open CASCADE Exception (version 1.0)"
-  - "OCCT-exception-1.0-LGPL"
+  - "OCCT-exception-1.0"
 

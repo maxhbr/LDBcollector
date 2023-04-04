@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "CodeSourcery 2004"
-category: "CodeSourcery 2004"
-shortName: "codesourcery-2004"
+category: "CodeSourcery"
+shortName: "CodeSourcery-2004"
 
 alternativeNames:
   - "CodeSourcery 2004"

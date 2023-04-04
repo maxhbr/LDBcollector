@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Apache License (undefined)"
 category: "Apache License"
-shortName: "Apache"
+shortName: "Apache-?"
 
 unspecific: true
 
@@ -18,6 +18,4 @@ alternativeNames:
   - "ASL"
   - "Apache Software Licensegradlew, Version 2.0"
   - "Apache Public License"
-  - "This product includes software developed at The Apache Software Foundation"
-  - "http://www.apache.org/licenses/"
 

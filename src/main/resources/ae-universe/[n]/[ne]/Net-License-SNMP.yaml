@@ -6,6 +6,7 @@ category: "Net"
 spdxIdentifier: "Net-SNMP"
 
 alternativeNames:
+  - "Net-SNMP License"
   - "Net, Version SNMP"
   - "Net SNMP"
   - "Net License, Version SNMP"

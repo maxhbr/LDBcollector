@@ -8,5 +8,9 @@ spdxIdentifier: "Bootloader-exception"
 
 type: "exception"
 
+alternativeNames:
+  - "Bootloader-exception"
+  - "Bootloader Distribution Exception"
+
 otherIds: 
   - "scancode:bootloader-exception"

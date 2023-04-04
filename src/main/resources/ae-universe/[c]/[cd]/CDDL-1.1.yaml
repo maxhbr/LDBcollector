@@ -8,10 +8,14 @@ openCoDEStatus: "approved"
 
 alternativeNames:
   - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1"
-  - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1"
   - "Common Development and Distribution License 1.1"
+  - "Common Development and Distribution Licence version 1.1 (CDDL)"
+  - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1"
+  - "Common Development and Distribution License, Version 1.1"
+  - "Common Development and Distribution License (CDDL), Version 1.1"
+  - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1"
   - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)"
-  - "https://oss.oracle.com/licenses/CDDL+GPL-1.1"
+  - "CDDL-1.1"
+  - "CDDL, v1.1"
+  - "CDDLv1.1"
 
-otherIds: 
-  - "scancode:cddl-1.1"

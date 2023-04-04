@@ -12,6 +12,11 @@ alternativeNames:
   - "https://www.mirbsd.org/MirOS-Licence"
   - "http://www.opensource.org/licenses/miros"
   - "https://www.opensource.org/licenses/miros"
+  - "MirOS License (MirOS)"
+  - "licenses.nuget.org/MirOS"
+  - "{{MirOS}} https://spdx.org/licenses/MirOS"
+  - "https://www.mirbsd.org/about.htm"
+  - "https://spdx.org/licenses/miros"
 
 otherIds: 
   - "scancode:mir-os"

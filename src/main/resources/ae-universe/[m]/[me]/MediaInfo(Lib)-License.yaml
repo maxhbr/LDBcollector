@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "MediaInfo(Lib) License"
+category: "MediaInfo(Lib) License"
+shortName: "MediaInfo-LIB"
+
+alternativeNames:
+  - "http://mediainfo.sourceforge.net/en"
+  - "MediaInfo(Lib) License"
+
+otherIds: 
+  - "scancode:mediainfo-lib"

@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+canonicalName: "Microsoft Mono Patent Promise"
+category: "Microsoft Mono Patent Promise"
+shortName: "MS-Mono-Patent-Promise"
+
+alternativeNames:
+  - "Microsoft Patent Promise for Mono"
+
+otherIds: 
+  - "scancode:ms-patent-promise-mono"

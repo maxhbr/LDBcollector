@@ -9,6 +9,13 @@ alternativeNames:
   - "Multics License"
   - "MULTICS LICENSE"
   - "MULTICS License"
+  - "http://opensource.org/licenses/multics.txt"
+  - "licenses.nuget.org/Multics"
+  - "{{Multics}} https://spdx.org/licenses/Multics"
+  - "http://www.multicians.org/"
+  - "https://spdx.org/licenses/multics"
+  - "http://www.opensource.org/licenses/multics"
+  - "https://www.opensource.org/licenses/multics"
 
 otherIds: 
   - "scancode:multics"

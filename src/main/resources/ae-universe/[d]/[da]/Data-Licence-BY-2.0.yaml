@@ -9,6 +9,8 @@ alternativeNames:
   - "Data Licence Germany BY 2.0"
   - "Data licence Germany – attribution – Version 2.0"
   - "https://www.govdata.de/dl-de/by-2-0"
+  - "licenses.nuget.org/DL-DE-BY-2.0"
+  - "{{DL-DE-BY-2.0}} https://spdx.org/licenses/DL-DE-BY-2.0"
 
 otherIds: 
   - "scancode:dl-de-by-2-0-en"

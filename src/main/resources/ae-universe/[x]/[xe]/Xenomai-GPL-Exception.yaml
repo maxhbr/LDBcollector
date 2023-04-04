@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Xenomai GPL Exception"
 category: "Xenomai GPL Exception"
-shortName: "xenomai-gpl-exception"
+shortName: "Xenomai-GPL-Exception"
 
 type: "exception"
 

@@ -7,6 +7,7 @@ shortName: "Tiger-Cryptography"
 
 alternativeNames:
   - "http://www.cs.technion.ac.il/~biham/Reports/Tiger/"
+  - "https://www.cs.technion.ac.il/~biham/Reports/Tiger"
   - "Tiger Cryptography"
 
 otherIds: 

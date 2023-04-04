@@ -3,11 +3,11 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Aladdin Free Public License 9.0"
 category: "Aladdin Free Public License"
-shortName: "AFPL-9.0"
+shortName: "Aladdin-9.0"
 
 alternativeNames:
   - "http://www.artifex.com/downloads/doc/Public.htm"
-  - "Aladdin Free Public License"
+  - "Aladdin Free Public License (Version 9, September 18, 2000)"
   - "AFPL Ghostscript"
   - "Thanks to L. Peter Deutsch <ghost@aladdin.com> for making gdevdjet.c and gdevdljm.[ch] available under a dual AFPL/GPL license.txt."
 
