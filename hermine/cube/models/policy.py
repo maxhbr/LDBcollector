@@ -104,6 +104,11 @@ class LicenseCuration(AbstractComponentRule):
 
         return self.expression_out == simplified(self.expression_in)
 
+    class Meta:
+        verbose_name = "License curation"
+        verbose_name_plural = "License curations"
+        permissions = (("export_licensecuration", "Can export license curations"),)
+
 
 class AbstractUsageRule(AbstractComponentRule):
     """

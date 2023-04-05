@@ -20,12 +20,14 @@ SPDX-License-Identifier: AGPL-3.0-only -->
     </span>
     <span>Create a new curation</span>
   </a>
-  <a class="button" href="{% url 'cube:licensecurations_export'%}">
-    <span class="icon">
-      <i class="fas fa-file-export"></i>
-    </span>
-    <span>Export as ORT curations</span>
-  </a>
+  {% if perms.cube.export_licensecuration %}
+    <a class="button" href="{% url 'cube:licensecurations_export'%}">
+      <span class="icon">
+        <i class="fas fa-file-export"></i>
+      </span>
+      <span>Export as ORT curations</span>
+    </a>
+  {% endif %}
 {% endblock %}
 
 {% block herozone %}
@@ -67,8 +69,10 @@ SPDX-License-Identifier: AGPL-3.0-only -->
             {% if perms.cube.change_licensecuration %}
               <a href="{%url 'cube:licensecuration_update' curation.id %}"><i class="far fa-edit"></i></a> |
             {% endif %}
-            {% if curation.component or curation.version %}
-              <a href="{%url 'cube:licensecuration_export' curation.id %}"><i class="fa fa-download"></i></a></td>
+            {% if perms.cube.export_licensecuration %}
+              {% if curation.component or curation.version %}
+                <a href="{%url 'cube:licensecuration_export' curation.id %}"><i class="fa fa-download"></i></a></td>
+              {% endif %}
             {% endif %}
           </tr>
       {% endfor %}

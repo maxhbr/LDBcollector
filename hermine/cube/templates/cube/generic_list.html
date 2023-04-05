@@ -16,7 +16,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block actions %}
-  {% if perms.cube.add_generic %}
+  {% if perms.cube.import_generic %}
     <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:generics' %}" method="post">
       {% csrf_token %}
       <div class="field has-addons">
@@ -35,10 +35,12 @@ SPDX-License-Identifier: AGPL-3.0-only
       <span>Create a new generic obligation</span>
     </a>
   {% endif %}
-  <a href="{% url 'cube:export_generics' %}" class="button">
-    <span class="icon"><i class="fas fa-file-export"></i></span>
-    <span>Export as JSON</span>
-  </a>
+  {% if perms.cube.export_generic %}
+    <a href="{% url 'cube:export_generics' %}" class="button">
+      <span class="icon"><i class="fas fa-file-export"></i></span>
+      <span>Export as JSON</span>
+    </a>
+  {% endif %}
 {% endblock %}<>
 
 {% block herozone %}
