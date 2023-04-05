@@ -39,12 +39,14 @@ SPDX-License-Identifier: AGPL-3.0-only
     </div>
     <div class="dropdown-menu" id="dropdown-menu" role="menu">
       <div class="dropdown-content">
-        <a href="{% url "cube:export_license" license.id %}" class="dropdown-item">
-          <span class="icon is-small">
-            <i class="fas fa-download"></i>
-          </span>
-          <span>Export as JSON</span>
-        </a>
+        {% if perms.cube.export_license %}
+          <a href="{% url "cube:export_license" license.id %}" class="dropdown-item">
+            <span class="icon is-small">
+              <i class="fas fa-download"></i>
+            </span>
+            <span>Export as JSON</span>
+          </a>
+        {% endif %}
         <a href="{% url "cube:print_license" license.id %}" class="dropdown-item">
           <span class="icon is-small">
             <i class="fas fa-print"></i>

@@ -173,6 +173,9 @@ class License(models.Model):
 
     class Meta:
         ordering = ("spdx_id",)
+        verbose_name = "License"
+        verbose_name_plural = "Licenses"
+        permissions = (("export_license", "Can export licenses"),)
 
 
 class TeamManager(models.Manager):
@@ -247,6 +250,7 @@ class Generic(models.Model):
     class Meta:
         verbose_name = "Generic obligation"
         verbose_name_plural = "Generic obligations"
+        permissions = (("export_generic", "Can export generic obligations"),)
 
 
 class Obligation(models.Model):

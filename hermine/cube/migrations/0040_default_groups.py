@@ -100,7 +100,7 @@ def create_default_groups(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("cube", "0038_alter_product_options_alter_release_options_and_more"),
+        ("cube", "0039_alter_generic_options_alter_license_options_and_more"),
     ]
 
     operations = [
