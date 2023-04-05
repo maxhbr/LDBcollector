@@ -339,3 +339,9 @@ limitation will apply even if NSA has been advised of the possibility
 of such damage. You acknowledge that this is a reasonable allocation of
 risk.
 '''
+
+package = dnsmasq
+location = https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob_plain;f=po/es.po;hb=HEAD
+text = '''
+This file is put in the public domain.
+'''
