@@ -15,6 +15,15 @@ class SearchForm(Form):
 
 
 class SearchMixin:
+    """
+    Mixin to add search capabilities to a view.
+
+    To use it, you must define a `search_fields` attribute on your view.
+    It must be a list of fields to search in.
+    The mixin will add a `query` attribute to the context, containing the
+    search query.
+    """
+
     search_fields = None
     query = None
 
