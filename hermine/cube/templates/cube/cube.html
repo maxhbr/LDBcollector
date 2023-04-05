@@ -195,40 +195,42 @@ SPDX-License-Identifier: MIT
               </li>
             {% endif %}
           </ul>
-          <p class="menu-label">Tools
-          </p>
-          <ul class="menu-list">
-            <li>
-              <a href="/api-doc" class="has-icon">
-                <span class="icon">
-                  <i class="fas fa-database">
-                  </i>
-                </span>
-                <span class="menu-item-label">API
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="/admin" class="has-icon">
-                <span class="icon">
-                  <i class="fas fa-cogs">
-                  </i>
-                </span>
-                <span class="menu-item-label">Django Admin
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="{% url 'cube:about' %}" class="has-icon">
-                <span class="icon">
-                  <i class="far fa-question-circle">
-                  </i>
-                </span>
-                <span class="menu-item-label">About
-                </span>
-              </a>
-            </li>
-          </ul>
+          {% if user.is_staff %}
+            <p class="menu-label">Tools
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a href="/api-doc" class="has-icon">
+                  <span class="icon">
+                    <i class="fas fa-database">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">API
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/admin" class="has-icon">
+                  <span class="icon">
+                    <i class="fas fa-cogs">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Django Admin
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'cube:about' %}" class="has-icon">
+                  <span class="icon">
+                    <i class="far fa-question-circle">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">About
+                  </span>
+                </a>
+              </li>
+            </ul>
+          {% endif %}
         </div>
       </aside>
       <section class="section is-title-bar">
