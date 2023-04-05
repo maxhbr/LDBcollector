@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.16
+Version:        1.17
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -88,6 +88,19 @@ make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
 
 
 %changelog
+* Wed Apr 05 2023 Miroslav Suchý <msuchy@redhat.com> 1.17-1
+- Add dnsmasq po files public domain notice
+- add schema of fedora-license.json
+- Add hanamin-fonts to UltraPermissive.txt
+- Add fontconfig to public-domain-text.txt
+- Add HPND-Markus-Kuhn
+- Add BSD-Advertising-Acknowledgement
+- Add Kazlib
+- Add CMU-Mach
+- Add perl-doc to UltraPermissive
+- Add public-domain text for perl-libs
+- Add public-domain text for perl-Test-Simple
+
 * Fri Mar 24 2023 Miroslav Suchý <msuchy@redhat.com> 1.16-1
 - Add public-domain text for python-multiprocess
 - Add public domain text for versioneer in python-llvmlite
