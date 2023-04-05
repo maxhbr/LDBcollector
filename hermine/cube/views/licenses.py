@@ -4,9 +4,13 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.decorators import (
+    permission_required as permission_required_decorator,
+)
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.urls import reverse_lazy, reverse
+from django.utils.decorators import method_decorator
 from django.views.generic import (
     ListView,
     DetailView,
@@ -58,6 +62,9 @@ class LicensesListView(
     search_fields = ("long_name", "spdx_id")
     template_name = "cube/license_list.html"
 
+    @method_decorator(
+        permission_required_decorator("cube.import_license", raise_exception=True)
+    )
     def post(self, *args, **kwargs):
         self.object_list = self.get_queryset()
         return super().post(*args, **kwargs)
@@ -313,6 +320,9 @@ class GenericListView(
     form_class = ImportGenericsForm
     success_url = reverse_lazy("cube:generics")
 
+    @method_decorator(
+        permission_required_decorator("cube.import_generic", raise_exception=True)
+    )
     def post(self, *args, **kwargs):
         self.object_list = self.get_queryset()
         return super().post(*args, **kwargs)

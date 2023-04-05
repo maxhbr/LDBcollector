@@ -12,7 +12,10 @@ class Migration(migrations.Migration):
         migrations.AlterModelOptions(
             name="generic",
             options={
-                "permissions": (("export_generic", "Can export generic obligations"),),
+                "permissions": (
+                    ("export_generic", "Can export generic obligations"),
+                    ("import_generic", "Can import generic obligations"),
+                ),
                 "verbose_name": "Generic obligation",
                 "verbose_name_plural": "Generic obligations",
             },
@@ -21,7 +24,10 @@ class Migration(migrations.Migration):
             name="license",
             options={
                 "ordering": ("spdx_id",),
-                "permissions": (("export_license", "Can export licenses"),),
+                "permissions": (
+                    ("export_license", "Can export licenses"),
+                    ("import_license", "Can import licenses"),
+                ),
                 "verbose_name": "License",
                 "verbose_name_plural": "Licenses",
             },
