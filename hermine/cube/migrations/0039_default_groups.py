@@ -2,67 +2,78 @@
 
 from django.db import migrations
 
-manage_products = []
+manage_products = [
+    "view_product",
+    "add_product",
+    "change_product",
+    "view_release",
+    "add_release",
+    "change_release",
+]
+release_components_and_usages = [
+    "change_release_bom",
+    "view_component",
+    "add_component",
+    "change_component",
+    "view_version",
+    "add_version",
+    "change_version",
+    "view_usage",
+    "add_usage",
+    "change_usage",
+    "delete_usage",
+    "view_exploitation",
+    "add_exploitation",
+    "change_exploitation",
+    "view_licensecuration",
+    "add_licensecuration",
+    "change_licensecuration",
+    "delete_licensecuration",
+]
+
+licenses_ro = [
+    "view_license",
+    "view_generic",
+    "view_obligation",
+]
 
 groups = {
     "Project manager (install preset)": [
-        # Manage products
-        "view_product",
-        "add_product",
-        "change_product",
-        "view_release",
-        "add_release",
-        "change_release",
-        # Release components and usages
-        "change_release_bom",
-        "view_component",
-        "add_component",
-        "change_component",
-        "view_version",
-        "add_version",
-        "change_version",
-        "view_usage",
-        "add_usage",
-        "change_usage",
-        "delete_usage",
-        "view_exploitation",
-        "add_exploitation",
-        "change_exploitation",
-        "view_licensecuration",
-        "add_licensecuration",
-        "change_licensecuration",
-        "delete_licensecuration",
-        # RO on licenses
-        "view_license",
+        *manage_products,
+        *release_components_and_usages,
+        *licenses_ro,
     ],
     "Legal (install preset)": [
         "view_license",
         "add_license",
         "change_license",
         "delete_license",
-        "view_licensederogation",
-        "add_licensederogation",
-        "change_licensederogation",
-        "delete_licensederogation",
+        "view_obligation",
+        "add_obligation",
+        "change_obligation",
+        "delete_obligation",
+        "view_generic",
+        "add_generic",
+        "change_generic",
+        "delete_generic",
+        "view_derogation",
+        "add_derogation",
+        "change_derogation",
+        "delete_derogation",
     ],
     "Compliance officer (install preset)": [
-        # RO on products
-        "view_product",
-        "view_release",
-        "view_component",
-        "view_version",
-        "view_usage",
-        # Manage curations choices and derogations
-        "view_licensecuration",
+        *manage_products,
+        *release_components_and_usages,
+        *licenses_ro,
+        # Add curations choices and derogations
         "add_licensecuration",
         "change_licensecuration",
-        "view_licensechoice",
         "add_licensechoice",
         "change_licensechoice",
-        "view_licensederogation",
-        "add_licensederogation",
-        "change_licensederogation",
-        "delete_licensederogation",
+        "delete_licensechoice",
+        "add_derogation",
+        "change_derogation",
+        "delete_derogation",
     ],
     "Guest (install preset)": [
         # RO on products
@@ -71,8 +82,7 @@ groups = {
         "view_component",
         "view_version",
         "view_usage",
-        # RO on licenses
-        "view_license",
+        *licenses_ro,
     ],
 }
 
