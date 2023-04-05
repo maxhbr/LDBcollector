@@ -10,15 +10,16 @@ SPDX-License-Identifier: MIT
   <head>
     {% load static %}
 
-    <link rel="preload" href="{% static 'cube/css/bulma.css' %}" as="style">
-    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/bulma.css' %}">
-    <link rel="preload" href="{% static 'cube/css/fontawesome-free-all.css' %}" as="style">
-    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/fontawesome-free-all.css' %}">
-    <link rel="preload" href="{% static 'cube/css/login.css' %}" as="style">
-    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/login.css' %}">
+    <link rel="preload" href="{% static 'cube/css/bulma.css' %}" as="style" />
+    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/bulma.css' %}" />
+    <link rel="preload" href="{% static 'cube/css/fontawesome-free-all.css' %}" as="style" />
+    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/fontawesome-free-all.css' %}" />
+    <link rel="preload" href="{% static 'cube/css/login.css' %}" as="style" />
+    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/login.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/nunito.css' %}" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>{% block title %}Hermine cube Login page{% endblock %}</title>
   </head>
   <body>
@@ -27,13 +28,24 @@ SPDX-License-Identifier: MIT
         <div class="container has-text-centered">
           <div class="column is-4 is-offset-4">
             <div class="box">
-              <h3 class="title is-3">Please login to proceed.</h3>
+              {% if form.errors %}
+                <article class="message is-warning">
+                  <div class="message-header">
+                    <p>Ooops, wrong credentials</p>
+                  </div>
+                  <div class="message-body">
+                    {{ form.non_field_errors }}
+                  </div>
+                </article>
+              {% else %}
+                <h3 class="title is-3">Please login to proceed.</h3>
+              {% endif %}
               <br />
               <form method="post" action="{% url 'login' %}">
                 {% csrf_token %}
                 <div class="field">
                   <p class="control has-icons-left has-icons-right">
-                    <input class="input is-medium"  placeholder="Username" type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username"/>
+                    <input class="input is-medium"  placeholder="Username" type="text" name="username"  autocapitalize="none" autocomplete="username" maxlength="150"  id="id_username" autofocus required/>
                     <span class="icon is-medium is-left">
                       <i class="fas fa-user"></i>
                     </span>
@@ -44,7 +56,7 @@ SPDX-License-Identifier: MIT
                 </div>
                 <div class="field">
                   <p class="control has-icons-left">
-                    <input class="input is-medium" type="password" placeholder="Password" name="password" autocomplete="current-password" required id="id_password"/>
+                    <input class="input is-medium" type="password" placeholder="Password" name="password" autocomplete="current-password" id="id_password" required/>
                     <span class="icon is-small is-left">
                       <i class="fas fa-lock"></i>
                     </span>
@@ -58,9 +70,8 @@ SPDX-License-Identifier: MIT
                 </div>
                 <button class="button is-block is-primary is-large is-fullwidth">Login</button><br />
                 {% if "default" in backends.backends %}
-                  <a class="button is-block is-primary is-large is-fullwidth"
-                     href="{% url "social:begin" "default" %}">OAuth</a><br />
-                  <input type="hidden" name="next" value="{{ next }}">
+                  <a class="button is-block is-primary is-large is-fullwidth" href="{% url 'social:begin' 'default' %}">OAuth</a><br />
+                  <input type="hidden" name="next" value="{{ next }}" />
                 {% endif %}
               </form>
             </div>
