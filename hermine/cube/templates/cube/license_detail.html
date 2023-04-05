@@ -278,14 +278,18 @@ SPDX-License-Identifier: AGPL-3.0-only
             </div>
             <div class="level-right">
               <div class="buttons has-addons level-item">
-                <a href="{% url "cube:obligation_edit" obligation.id %}" class="button">
-                  <span class="icon is-small"><i class="fas fa-edit"></i></span>
-                  <span>Edit obligation</span>
-                </a>
-                <a href="{% url "cube:obligation_delete" obligation.id %}" class="button">
-                  <span class="icon is-small"><i class="fas fa-trash-alt"></i></span>
-                  <span>Delete obligation</span>
-                </a>
+                {% if perms.cube.change_obligation %}
+                  <a href="{% url "cube:obligation_edit" obligation.id %}" class="button">
+                    <span class="icon is-small"><i class="fas fa-edit"></i></span>
+                    <span>Edit obligation</span>
+                  </a>
+                {% endif %}
+                {% if perms.cube.delete_obligation %}
+                  <a href="{% url "cube:obligation_delete" obligation.id %}" class="button">
+                    <span class="icon is-small"><i class="fas fa-trash-alt"></i></span>
+                    <span>Delete obligation</span>
+                  </a>
+                {% endif %}
               </div>
             </div>
           </header>
