@@ -29,7 +29,7 @@ instance LicenseFactC CavilLicenseChange where
 
 lineToMap :: B.ByteString -> Map LicenseName [LicenseName]
 lineToMap bs = let
-        onerror err input = Just '_'
+        onerror _ _ = Just '_'
     in case split '\t' bs of
             []         -> mempty
             [one]      -> M.singleton (newLN (T.decodeUtf8With onerror one)) []

@@ -57,6 +57,7 @@ dependencies:
 - blaze-html
 - blaze-markup
 - scotty
+- warp
 - temporary
 
 ghc-options:

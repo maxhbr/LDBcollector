@@ -22,6 +22,7 @@ import           Ldbcollector.Model.LicenseName
 getClusters :: LicenseGraphM [[LicenseName]]
 getClusters = do
     lng <- getLicenseNameGraph
+    node_map_rev <- MTL.gets _node_map_rev
     let keepOnlySame (incoming, node, a, outgoing) = let
             incoming' = filter ((== Same) . fst) incoming
             outgoing' = filter ((== Same) . fst) outgoing
@@ -29,10 +30,17 @@ getClusters = do
           in Just (both, node, a, both)
         lngOnlySame = G.gfiltermap keepOnlySame lng 
         componentNodes = G.scc lngOnlySame
-    node_map_rev <- MTL.gets _node_map_rev
-    return $ map (mapMaybe (\case
-                                LGName n -> Just n
-                                _ -> Nothing) . mapMaybe (`Map.lookup` node_map_rev)) componentNodes
+
+        nodesToGraphNodes = map (\n -> case lngOnlySame `G.lab` n of
+                                            Just name -> name
+                                            _ -> undefined)
+                                        
+        condensed = (G.nmap nodesToGraphNodes . G.condensation) lngOnlySame
+        clusters = (map snd . G.labNodes) condensed
+    return clusters
+    -- return $ map (mapMaybe (\case
+    --                             LGName n -> Just n
+    --                             _ -> Nothing) . mapMaybe (`Map.lookup` node_map_rev)) componentNodes
 
 -- ############################################################################
 

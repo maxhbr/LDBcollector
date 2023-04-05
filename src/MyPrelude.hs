@@ -8,6 +8,7 @@ module MyPrelude
 import           Control.Applicative        as X
 import           Control.Monad              as X
 import           Data.Aeson                 as X
+import           Data.Aeson.Encode.Pretty   as X (encodePretty)
 import           Data.ByteString.Lazy       as X (ByteString)
 import           Data.List                  as X
 import           Data.Map                   as X (Map)
