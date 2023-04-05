@@ -7,20 +7,20 @@ SPDX-License-Identifier: MIT
 
 <!DOCTYPE html>
 <html>
-<head>
-{% load static %}
+  <head>
+    {% load static %}
 
-<link rel="preload" href="{% static 'cube/css/bulma.css' %}" as="style">
-<link rel="stylesheet" type="text/css" href="{% static 'cube/css/bulma.css' %}">
-<link rel="preload" href="{% static 'cube/css/fontawesome-free-all.css' %}" as="style">
-<link rel="stylesheet" type="text/css" href="{% static 'cube/css/fontawesome-free-all.css' %}">
-<link rel="preload" href="{% static 'cube/css/login.css' %}" as="style">
-<link rel="stylesheet" type="text/css" href="{% static 'cube/css/login.css' %}">
+    <link rel="preload" href="{% static 'cube/css/bulma.css' %}" as="style">
+    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/bulma.css' %}">
+    <link rel="preload" href="{% static 'cube/css/fontawesome-free-all.css' %}" as="style">
+    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/fontawesome-free-all.css' %}">
+    <link rel="preload" href="{% static 'cube/css/login.css' %}" as="style">
+    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/login.css' %}">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% block title %}Login page{% endblock %}</title>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Login page{% endblock %}</title>
+  </head>
   <body>
     <section class="hero is-fullheight">
       <div class="hero-body">
