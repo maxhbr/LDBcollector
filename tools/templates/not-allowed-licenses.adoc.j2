@@ -21,8 +21,8 @@ https://gitlab.com/fedora/legal/fedora-license-data[Fedora License Data] reposit
         {nbsp}
   {%- endif %}
 | {{ additional_urls(license) }}
-| {%- if 'usage' in license -%}
-        {{- license['usage']|trim -}}
+| {%- if 'usage' in license['license'] -%}
+        {{- license['license']['usage']|trim -}}
   {%- else -%}
         &nbsp;
   {%- endif -%}
