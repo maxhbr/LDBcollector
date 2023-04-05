@@ -158,9 +158,7 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                     [LGNameRelation Better] -> [GV.style GV.dashed]
                     [LGAppliesTo] -> []
                     [LGImpliedBy] -> []
-                    edgeLabels' -> (case edgeLabels' of
-                        [LGNameRelation (Potentially _)] -> [GV.style GV.dashed]
-                        _ -> []) ++ [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
+                    edgeLabels' -> [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
                 ) ++ getColorOfEdge (a, b, e)
             }
     in GV.graphToDot params graph

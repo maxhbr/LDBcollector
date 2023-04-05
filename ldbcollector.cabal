@@ -30,6 +30,7 @@ library
       Ldbcollector.Model.LicenseGraphAlgo
       Ldbcollector.Model.LicenseName
       Ldbcollector.Model.LicenseStatement
+      Ldbcollector.Server
       Ldbcollector.Sink.GraphViz
       Ldbcollector.Source
       Ldbcollector.Source.BlueOak
@@ -59,6 +60,8 @@ library
     , aeson-pretty
     , base >=4.7 && <5
     , base16-bytestring
+    , blaze-html
+    , blaze-markup
     , bytestring
     , cassava
     , containers
@@ -71,10 +74,12 @@ library
     , mtl
     , opensource
     , pretty-terminal
+    , scotty
     , spdx
     , split
     , sqlite-simple
     , swish
+    , temporary
     , text
     , unordered-containers
     , vector
@@ -140,6 +145,8 @@ test-suite ldbcollector-test
     , aeson-pretty
     , base >=4.7 && <5
     , base16-bytestring
+    , blaze-html
+    , blaze-markup
     , bytestring
     , cassava
     , containers
@@ -155,6 +162,7 @@ test-suite ldbcollector-test
     , mtl
     , opensource
     , pretty-terminal
+    , scotty
     , spdx
     , split
     , sqlite-simple

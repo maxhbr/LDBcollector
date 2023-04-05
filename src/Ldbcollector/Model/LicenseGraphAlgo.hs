@@ -19,20 +19,20 @@ import qualified Data.Vector                       as V
 import           Ldbcollector.Model.LicenseGraph
 import           Ldbcollector.Model.LicenseName
 
-condense :: LicenseGraph -> G.Gr LicenseGraphNode ()
-condense g = let
-        node_map_rev = _node_map_rev g
-        nodesToGraphNodes :: [G.Node] -> [LicenseGraphNode]
-        nodesToGraphNodes = map (\n -> Map.findWithDefault (LGVec []) n node_map_rev)
-        flattenNodes :: [LicenseGraphNode] -> LicenseGraphNode
-        flattenNodes [n] = n
-        flattenNodes ns = LGVec ns
-    in (G.nmap (flattenNodes . nodesToGraphNodes) . G.condensation . _gr) g
-
-prettyPrintCondensed :: LicenseGraphM ()
-prettyPrintCondensed = do
-    condensed <- MTL.gets condense
-    lift (G.prettyPrint condensed)
+getClusters :: LicenseGraphM [[LicenseName]]
+getClusters = do
+    lng <- getLicenseNameGraph
+    let keepOnlySame (incoming, node, a, outgoing) = let
+            incoming' = filter ((== Same) . fst) incoming
+            outgoing' = filter ((== Same) . fst) outgoing
+            both = nub $ incoming' <> outgoing'
+          in Just (both, node, a, both)
+        lngOnlySame = G.gfiltermap keepOnlySame lng 
+        componentNodes = G.scc lngOnlySame
+    node_map_rev <- MTL.gets _node_map_rev
+    return $ map (mapMaybe (\case
+                                LGName n -> Just n
+                                _ -> Nothing) . mapMaybe (`Map.lookup` node_map_rev)) componentNodes
 
 -- ############################################################################
 
@@ -46,7 +46,6 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
                         incoming' = nub $ filter (\(l,_) -> predicate l) incoming
                         outgoing' = nub $ filter (\(l,_) -> predicate l) outgoing
                     in Just (incoming' <> filter isFlippable outgoing', node, a, outgoing' <> filter isFlippable incoming')
-                -- fun _ = Nothing
                 subGraph = G.gfiltermap fun gr
                 reachableForNeedle needle = V.fromList $ G.reachable needle subGraph ++ G.reachable needle (G.grev subGraph)
             in V.concatMap reachableForNeedle needles'
@@ -90,3 +89,20 @@ focus needles inner = do
 
 getFocused :: Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
 getFocused needles = focus needles MTL.get
+
+-- ############################################################################
+
+condense :: LicenseGraph -> G.Gr LicenseGraphNode ()
+condense g = let
+        node_map_rev = _node_map_rev g
+        nodesToGraphNodes :: [G.Node] -> [LicenseGraphNode]
+        nodesToGraphNodes = map (\n -> Map.findWithDefault (LGVec []) n node_map_rev)
+        flattenNodes :: [LicenseGraphNode] -> LicenseGraphNode
+        flattenNodes [n] = n
+        flattenNodes ns = LGVec ns
+    in (G.nmap (flattenNodes . nodesToGraphNodes) . G.condensation . _gr) g
+
+prettyPrintCondensed :: LicenseGraphM ()
+prettyPrintCondensed = do
+    condensed <- MTL.gets condense
+    lift (G.prettyPrint condensed)

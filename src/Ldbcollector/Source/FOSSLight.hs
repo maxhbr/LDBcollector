@@ -3,7 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
 module Ldbcollector.Source.FOSSLight
-  ( FOSSLight
+  ( FOSSLight (..)
   ) where
 
 import           Ldbcollector.Model
@@ -25,6 +25,10 @@ import qualified Database.SQLite.Simple.Internal as S
 import qualified Database.SQLite.Simple.Ok as S
 import qualified System.IO as IO
 
+
+instance S.FromField LicenseName where
+    fromField = fmap newLN . S.fromField
+
 -- CREATE TABLE `LICENSE_NICKNAME` (
 --   `LICENSE_NAME` varchar(200) NOT NULL COMMENT '라이선스 NAME',
 --   `LICENSE_NICKNAME` varchar(200) NOT NULL COMMENT '라이선스 닉네임',
@@ -32,7 +36,7 @@ import qualified System.IO as IO
 -- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 data FOSSLight_Nick
   = FOSSLight_Nick LicenseName LicenseName
-  deriving (Show)
+  deriving (Show, Eq, Generic)
 instance S.FromRow FOSSLight_Nick where
     fromRow = FOSSLight_Nick <$> S.field <*> S.field
 
@@ -49,7 +53,7 @@ data FOSSLight_License_Type
   | FOSSLight_License_Type_Permissive
   | FOSSLight_License_Type_Weak_Copyleft
   | FOSSLight_License_Type_UNKNOWN
-  deriving (Show)
+  deriving (Show, Eq, Generic)
 instance S.FromField FOSSLight_License_Type where
   fromField f@(S.Field (S.SQLText txt) _) = case T.unpack txt of
     "CP"  -> S.Ok FOSSLight_License_Type_Copyleft
@@ -103,7 +107,7 @@ data FOSSLight_License
   , _fossLight_MODIFIED_DATE             :: ()                      -- 16    `MODIFIED_DATE` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp() COMMENT '수정일',
   , _fossLight_REQ_LICENSE_TEXT          :: Bool                    -- 17    `REQ_LICENSE_TEXT_YN` char(1) DEFAULT 'N' COMMENT 'LICENSE TEXT 필수 입력 여부, MIT LIKE, BSD LIKE만 적용',
   , _fossLight_RESTRICTION               :: Maybe Text              -- 18    `RESTRICTION` varchar(100) DEFAULT NULL,
-  } deriving (Show)
+  } deriving (Show, Eq, Generic)
 
 instance S.FromField () where
   fromField _ = S.Ok ()
@@ -117,27 +121,27 @@ instance S.FromRow FOSSLight_License where
         <$> S.field
         <*> S.field
         <*> S.field
-        <*> fmap ynToBool (S.field)
-        <*> fmap ynToBool (S.field)
-        <*> fmap ynToBool (S.field)
+        <*> fmap ynToBool S.field
+        <*> fmap ynToBool S.field
+        <*> fmap ynToBool S.field
         <*> S.field
         <*> S.field
         <*> S.field
         <*> S.field
         <*> S.field
-        <*> fmap ynToBool (S.field)
+        <*> fmap ynToBool S.field
         <*> S.field
         <*> S.field
         <*> S.field
         <*> S.field
-        <*> fmap ynToBool (S.field)
+        <*> fmap ynToBool S.field
         <*> S.field
 
 data FOSSLightFact
   = FOSSLightFact
   { _FOSSLightFact_License :: FOSSLight_License
   , _FOSSLightFact_Nicks :: [LicenseName]
-  } deriving (Show)
+  } deriving (Show, Eq, Generic)
 instance ToJSON FOSSLightFact where
   toJSON (FOSSLightFact license _) =
     object [ "name" A..= _fossLight_name license ] -- TODO
@@ -145,7 +149,13 @@ instance ToJSON FOSSLightFact where
 
 instance LicenseFactC FOSSLightFact where
     getType _ = "FOSSLight"
-    getApplicableLNs (FOSSLightFact license nicks) = NLN (_fossLight_name license)
+    getApplicableLNs (FOSSLightFact license nicks) =
+        NLN (_fossLight_name license)
+        `AlternativeLNs`
+        map LN (maybeToList (_fossLight_SHORT_IDENTIFIER license))
+        `ImpreciseLNs`
+        map LN nicks
+    getImpliedStmts (FOSSLightFact license _) = [stmt (show (_fossLight_type license))]
 
 newtype FOSSLight = FOSSLight FilePath
 
@@ -158,7 +168,7 @@ instance Source FOSSLight where
           license_names <- S.query_ conn "SELECT License_ID,LICENSE_NAME from LICENSE_MASTER" :: IO [(Int,LicenseName)]
           licenses <- concat <$>
             mapM (\(i, name) -> do
-              putStrLn $ "get License for id=" ++ show i ++ " name=" ++ name
+              putStrLn $ "get License for id=" ++ show i ++ " name=" ++ show name
               let 
                   handleUnicodeException :: T.UnicodeException -> IO [FOSSLight_License]
                   handleUnicodeException e = do
@@ -182,98 +192,3 @@ instance Source FOSSLight where
             facts = map (wrapFact . rawFromLicense) licenses
     
         return (V.fromList facts)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- fossLightLFC :: LicenseFactClassifier
--- fossLightLFC = LFCWithLicense (LFLWithURL "https://github.com/fosslight/fosslight/blob/main/LICENSE" "AGPL-3.0-only") "FOSSLight"
--- instance LicenseFactClassifiable FOSSLightFact where
---   getLicenseFactClassifier _ = fossLightLFC
-
--- instance LFRaw FOSSLightFact where
---   getImpliedNames (FOSSLightFact lic _)            = CLSR (_fossLight_name lic : (maybeToList (_fossLight_SHORT_IDENTIFIER lic)))
---   getImpliedAmbiguousNames (FOSSLightFact _ nicks) = CLSR nicks
---   getImpliedJudgement flf@(FOSSLightFact lic _)    = SLSR (getLicenseFactClassifier flf) $ case _fossLight_USE lic of
---     True -> NeutralJudgement "This license is allowed for use at LG"
---     False -> NegativeJudgement "This license is prohibited to use at LG"
---   getImpliedFullName flf@(FOSSLightFact lic _)     = mkRLSR flf 20 $ _fossLight_name lic
---   getImpliedURLs flf@(FOSSLightFact lic _)         = case _fossLight_WEBPAGE lic of
---     Just webpage ->  CLSR [(Just "webpage", T.unpack webpage)]
---     Nothing -> NoCLSR
---   getImpliedText flf@(FOSSLightFact lic _)         = case _fossLight_LICENSE_TEXT lic of 
---     Just txt -> mkRLSR flf 10 txt
---     Nothing -> NoRLSR
---   getImpliedDescription flf@(FOSSLightFact lic _)  = case _fossLight_DESCRIPTION lic of
---     Just desc -> mkRLSR flf 5 (T.unpack desc)
---     Nothing -> NoRLSR
---   getImpliedCopyleft flf@(FOSSLightFact lic _)     = case _fossLight_type lic of
---     FOSSLight_License_Type_Copyleft -> mkSLSR flf StrongCopyleft
---     FOSSLight_License_Type_Proprietary -> NoSLSR
---     FOSSLight_License_Type_Proprietary_Free -> NoSLSR
---     FOSSLight_License_Type_Permissive -> mkSLSR flf NoCopyleft
---     FOSSLight_License_Type_Weak_Copyleft -> mkSLSR flf WeakCopyleft
---     FOSSLight_License_Type_UNKNOWN -> NoSLSR
-
--- {-
---  - ############################################################################################
---  -}
-
--- licensesMasterSqlite :: ByteString
--- licensesMasterSqlite = B.fromStrict $(embedFile "data/fosslight/fosslight.sqlite.db")
-
--- loadFOSSLightFacts :: IO Facts
--- loadFOSSLightFacts = let
---     extractLicensesFromSqlite :: FilePath -> IO.Handle -> IO ([FOSSLight_License],[FOSSLight_Nick])
---     extractLicensesFromSqlite tmpfile hfile = do
---       B.hPut hfile licensesMasterSqlite
---       IO.hClose hfile
---       conn <- S.open tmpfile
---       license_names <- S.query_ conn "SELECT License_ID,LICENSE_NAME from LICENSE_MASTER" :: IO [(Int,LicenseName)]
---       licenses <- fmap concat $
---         mapM (\(i, name) -> do
---           putStrLn $ "get License for id=" ++ show i ++ " name=" ++ name
---           let 
---               handleUnicodeException :: T.UnicodeException -> IO [FOSSLight_License]
---               handleUnicodeException e = do
---                 print e
---                 return []
---               handleResultError :: S.ResultError -> IO [FOSSLight_License]
---               handleResultError e = do
---                 print e
---                 return []
---               q = S.query_ conn ((S.Query . T.pack) $ "SELECT * from LICENSE_MASTER where LICENSE_ID=" ++ show i) :: IO [FOSSLight_License]
---           handle handleUnicodeException . handle handleResultError $ q :: IO [FOSSLight_License]
---           ) license_names
---       nicks <- S.query_ conn "SELECT * from LICENSE_NICKNAME" :: IO [FOSSLight_Nick]
---       S.close conn
---       return (licenses, nicks)
---   in do 
---     logThatFactsAreLoadedFrom "FOSSLight"
-
---     (licenses, nicks) <- IO.withSystemTempFile "fosslight.sqlite.db" extractLicensesFromSqlite
---     let rawToFact = LicenseFact (Just "https://github.com/fosslight/fosslight/blob/main/install/db/fosslight_create.sql")
---         rawFromLicense (license@FOSSLight_License { _fossLight_name = name } ) = let
---             nicksForLicense = map (\(FOSSLight_Nick _ nick) -> nick) $ filter (\n@(FOSSLight_Nick name' _) -> name == name') nicks
---           in FOSSLightFact license nicksForLicense
---         facts = map (rawToFact . rawFromLicense) licenses
-
---     logThatOneHasFoundFacts "FOSSLight" facts
---     return (V.fromList facts)

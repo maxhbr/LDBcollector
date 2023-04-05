@@ -63,7 +63,7 @@ type LicenseGraphType = G.Gr LicenseGraphNode LicenseGraphEdge
 
 data LicenseGraph
     = LicenseGraph
-    { _gr           :: G.Gr LicenseGraphNode LicenseGraphEdge
+    { _gr           :: LicenseGraphType
     , _node_map     :: Map.Map LicenseGraphNode G.Node
     , _node_map_rev :: Map.Map G.Node LicenseGraphNode
     , _facts        :: Map.Map (Origin, LicenseFact) (Set.Set G.Node, Set.Set G.Edge)
@@ -244,3 +244,25 @@ applyFactImpliedStmt stmt = do
     let stmtLG = LGStatement stmt
     _ <- insertNode stmtLG
     return [stmtLG]
+
+
+-- ############################################################################
+
+
+type LicenseNameGraphType = G.Gr LicenseName LicenseNameRelation
+
+toLicenseNameGraph :: LicenseGraphType -> LicenseNameGraphType
+toLicenseNameGraph = let
+        edgeFun :: (LicenseGraphEdge, G.Node) -> Maybe (LicenseNameRelation, G.Node)
+        edgeFun (LGNameRelation nr, n) = Just (nr, n)
+        edgeFun _ = Nothing
+        contextFun :: G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseName LicenseNameRelation
+        contextFun (incoming, n, LGName ln, outgoing) = let
+                incoming' = nub $ mapMaybe edgeFun incoming
+                outgoing' = nub $ mapMaybe edgeFun incoming
+            in Just (incoming', n, ln, outgoing')
+        contextFun _ = Nothing
+    in G.gfiltermap contextFun
+
+getLicenseNameGraph :: LicenseGraphM LicenseNameGraphType
+getLicenseNameGraph = MTL.gets (toLicenseNameGraph . _gr)

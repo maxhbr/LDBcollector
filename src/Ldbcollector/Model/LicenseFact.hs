@@ -46,9 +46,11 @@ data ApplicableLNs where
     NLN :: LicenseName -> ApplicableLNs
     AlternativeLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
     ImpreciseLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
+    deriving (Generic)
 alternativesFromListOfLNs :: [LicenseName] -> ApplicableLNs
 alternativesFromListOfLNs (best:others) = NLN best `AlternativeLNs` map LN others
 alternativesFromListOfLNs [] = undefined
+instance ToJSON ApplicableLNs
 
 
 class (Eq a) => LicenseFactC a where
@@ -61,8 +63,6 @@ class (Eq a) => LicenseFactC a where
     getApplicableLNs :: a -> ApplicableLNs
     getImpliedStmts :: a -> [LicenseStatement]
     getImpliedStmts _ = []
-    getImpliedCompatibilities :: a -> [LicenseName]
-    getImpliedCompatibilities _ = []
 
 data LicenseFact where
     LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
@@ -75,7 +75,13 @@ wrapFactV :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => V.Vector a -> V
 wrapFactV = V.map wrapFact
 
 instance ToJSON LicenseFact where
-    toJSON (LicenseFact _ v) = toJSON v
+    toJSON (LicenseFact _ v) = 
+        object [ "type" .= getType v
+               , "id" .= getFactId v
+               , "applicableLNs" .= getApplicableLNs v
+               , "impliedStmts" .= getImpliedStmts v
+               , "raw" .= v
+               ]
 instance Eq LicenseFact where
     wv1 == wv2 = let
             (LicenseFact t1 _) = wv1
@@ -93,4 +99,3 @@ instance LicenseFactC LicenseFact where
     getFactId (LicenseFact _ a) = getFactId a
     getApplicableLNs (LicenseFact _ a) = getApplicableLNs a
     getImpliedStmts (LicenseFact _ a) = getImpliedStmts a
-    getImpliedCompatibilities (LicenseFact _ a) = getImpliedCompatibilities a

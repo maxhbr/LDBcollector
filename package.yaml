@@ -53,6 +53,11 @@ dependencies:
 - opensource
 # Sinks
 - graphviz
+# Server
+- blaze-html
+- blaze-markup
+- scotty
+- temporary
 
 ghc-options:
 - -Wall
@@ -78,12 +83,8 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - ldbcollector
-    - blaze-html
-    - blaze-markup
-    - scotty
     - text
     - mtl
-    - temporary
     - vector
 
 tests:

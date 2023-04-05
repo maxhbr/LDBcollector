@@ -53,7 +53,6 @@ instance ToJSON LicenseName where
 data LicenseNameRelation where
     Same         :: LicenseNameRelation
     Better       :: LicenseNameRelation
-    AppliesTo    :: LicenseNameRelation
-    Potentially  :: LicenseNameRelation -> LicenseNameRelation
     SupersededBy :: LicenseNameRelation
+    -- Potentially  :: LicenseNameRelation -> LicenseNameRelation
     deriving (Show, Eq, Ord)
