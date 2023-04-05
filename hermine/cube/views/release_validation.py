@@ -39,6 +39,7 @@ from cube.views.mixins import (
     SaveAuthorMixin,
     ReleaseContextMixin,
     ReleaseExploitationFormMixin,
+    ReleaseExploitationRedirectMixin,
 )
 
 
@@ -202,28 +203,29 @@ class UpdateAndsValidationView(AbstractResetCorrectedLicenseView):
 
 
 class ReleaseExploitationUpdateView(
-    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, UpdateView
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    ReleaseContextMixin,
+    ReleaseExploitationRedirectMixin,
+    UpdateView,
 ):
     model = Exploitation
     fields = ["exploitation"]
     template_name = "cube/release_edit_exploitation.html"
     permission_required = "cube.change_release"
 
-    def get_success_url(self, *args, **kwargs):
-        release_id = self.kwargs["release_pk"]
-        return reverse("cube:release_summary", args=[release_id])
-
 
 class ReleaseExploitationCreateView(
-    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, CreateView
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    ReleaseContextMixin,
+    ReleaseExploitationRedirectMixin,
+    CreateView,
 ):
     model = Exploitation
     fields = ["project", "scope", "exploitation"]
     template_name = "cube/release_exploitation_create.html"
     permission_required = "cube.change_release"
-
-    def get_success_url(self, *args, **kwargs):
-        return reverse("cube:release_summary", args=[self.release.id])
 
     def get_initial(self):
         scope = self.request.GET.get("scope", "Default scope")

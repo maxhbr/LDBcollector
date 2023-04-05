@@ -194,7 +194,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ project }}</td>
             <td>{{ scope }}</td>
             <td>{{ components_count }}</td>
-            <td><a href="{% url 'cube:release_exploitation_create' release.id %}?project={{ project }}&scope={{ scope }}">
+            <td><a href="{% url 'cube:release_exploitation_create' release.id %}?project={{ project }}&scope={{ scope }}&redirect=validation">
               Set exploitation mode
             </a></td>
           </tr>

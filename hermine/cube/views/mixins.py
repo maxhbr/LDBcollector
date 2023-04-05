@@ -6,6 +6,7 @@ from functools import reduce
 from django.db.models import Q, Count
 from django.forms import Form, CharField
 from django.shortcuts import get_object_or_404
+from django.urls import reverse
 
 from cube.models import License, Release, Exploitation
 
@@ -91,6 +92,15 @@ class ReleaseContextMixin:
         context = super().get_context_data(*args, **kwargs)
         context["release"] = self.release
         return context
+
+
+class ReleaseExploitationRedirectMixin:
+    def get_success_url(self):
+        if self.request.GET.get("redirect") == "validation":
+            return reverse("cube:release_validation", args=[self.release.id])
+        if self.request.GET.get("redirect") == "exploitations":
+            return reverse("cube:release_exploitations", args=[self.release.id])
+        return reverse("cube:release_summary", args=[self.release.id])
 
 
 class ReleaseExploitationFormMixin:
