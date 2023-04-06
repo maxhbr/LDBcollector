@@ -8,3 +8,5 @@ shortName: "Agilio"
 alternativeNames:
   - "Agilio(r) Firmware License Agreement"
 
+otherIds: 
+  - "scancode:netronome-firmware"
