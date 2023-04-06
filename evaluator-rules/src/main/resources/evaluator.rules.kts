@@ -1121,7 +1121,6 @@ fun RuleSet.copyleftInDependencyRule() = dependencyRule("COPYLEFT_IN_DEPENDENCY"
             -isExcluded()
         }
 
-
         error(
             "The dependency '${pkg.metadata.id.toCoordinates()}' is licensed under the ScanCode 'copyleft' " +
                     "categorized license $license.",
