@@ -21,6 +21,8 @@ class Source a where
     applySource a = let
             origin = getOrigin a
         in do
-            lift $ putStrLn ("# get " ++ show origin)
-            MTL.lift (getFacts a) >>= V.mapM_ (\fact -> withFact (origin, fact) applyFact)
+            lift $ infoM rootLoggerName ("# get " ++ show origin)
+            facts <- force <$> MTL.lift (getFacts a)
+            -- MTL.lift (getFacts a) >>= 
+            V.mapM_ (\fact -> withFact (origin, fact) applyFact) facts
 

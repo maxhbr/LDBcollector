@@ -66,7 +66,9 @@ class (Eq a) => LicenseFactC a where
 
 data LicenseFact where
     LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
-instance Show LicenseFact where
+instance Show LicenseFact
+instance NFData LicenseFact where
+    rnf (LicenseFact _t a) = rwhnf a
 wrapFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => a -> LicenseFact
 wrapFact a = LicenseFact (typeOf a) a
 wrapFacts :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => [a] -> [LicenseFact]

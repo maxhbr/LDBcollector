@@ -63,7 +63,7 @@ instance Source ScancodeLicenseDB where
     getOrigin _  = Origin "ScancodeLicenseDB"
     getFacts (ScancodeLicenseDB dir) = let
             parseOrFailJson json = do
-                putStrLn ("read " ++ json)
+                logFileReadIO json
                 decoded <- eitherDecodeFileStrict json :: IO (Either String ScancodeData)
                 case decoded of
                     Left err           -> fail err

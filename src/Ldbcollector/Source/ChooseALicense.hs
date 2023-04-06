@@ -64,14 +64,14 @@ instance LicenseFactC CALData where
             [ _description caldata
             , _how caldata
             ]
-        ++ [LicensePCL (PCL permissions conditions limitations)]
+        ++ [LicensePCLR (PCLR permissions conditions limitations [])]
 
 newtype ChooseALicense
     = ChooseALicense FilePath
 
 readTxt :: FilePath -> IO (Maybe CALData)
 readTxt txt = do
-    putStrLn ("read " ++ txt)
+    logFileReadIO txt
     let fromFilename = takeBaseName (takeBaseName txt)
     contents <- readFile txt
     let contentLines = lines contents
@@ -81,7 +81,7 @@ readTxt txt = do
         _:yaml:others -> do
             case Y.decodeEither' ((fromString . ("---\n"++)) yaml) of
                 Left err -> do
-                    print err
+                    debugLogIO (show err)
                     return Nothing
                 Right calData -> return (Just calData{_id = Just ((newNLN "cal" . pack) fromFilename)})
         _ -> return Nothing --(return . Add . LicenseName . fromString) fromFilename

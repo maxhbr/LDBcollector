@@ -37,8 +37,14 @@ import           Ldbcollector.Model.LicenseStatement
 
 -- ############################################################################
 
+debugLog :: String -> LicenseGraphM ()
+debugLog = MTL.liftIO . debugLogIO
+logFileRead :: String -> LicenseGraphM ()
+logFileRead = MTL.liftIO . logFileReadIO
+infoLog :: String -> LicenseGraphM ()
+infoLog = MTL.liftIO . infoLogIO
 stderrLog :: String -> LicenseGraphM ()
-stderrLog msg = MTL.liftIO $ hPutStrLn stderr (color Green msg)
+stderrLog = MTL.liftIO . stderrLogIO
 
 -- ############################################################################
 

@@ -25,7 +25,7 @@ instance LicenseFactC WarprLicense where
 
 getWarprLicense :: FilePath -> IO WarprLicense
 getWarprLicense ttl = do
-    putStrLn ("read " ++ ttl)
+    logFileReadIO ttl
     let fromFilename = takeBaseName (takeBaseName ttl)
     ttlText <- T.readFile ttl
     case TTL.parseTurtlefromText ttlText of

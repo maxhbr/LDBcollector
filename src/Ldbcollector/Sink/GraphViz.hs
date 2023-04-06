@@ -30,15 +30,16 @@ instance GV.Labellable LicenseStatement where
     toLabelValue (LicenseText txt) = GV.toLabelValue ("$TEXT" :: Text)
     toLabelValue (LicenseRule txt) = GV.toLabelValue ("$RULE" :: Text)
     toLabelValue (LicenseComment txt) = GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 txt)
-    toLabelValue (LicensePCL pcl) = let
+    toLabelValue (LicensePCLR pclr) = let
             header = GVH.Cells [ GVH.LabelCell [] (GVH.Text [GVH.Str "Permissions"])
                                , GVH.LabelCell [] (GVH.Text [GVH.Str "Conditions"])
                                , GVH.LabelCell [] (GVH.Text [GVH.Str "Limitations"])
+                               , GVH.LabelCell [] (GVH.Text [GVH.Str "Restrictions"])
                                ]
             linesToContent :: [Text] -> GVH.Cell
             linesToContent = GVH.LabelCell [] . GVH.Text . intersperse newline . map (GVH.Str . LT.fromStrict)
             newline = GVH.Newline []
-            content = GVH.Cells (map linesToContent [ _permissions pcl, _conditions pcl, _limitations pcl])
+            content = GVH.Cells (map linesToContent [ _permissions pclr, _conditions pclr, _limitations pclr, _restrictions pclr])
         in GV.HtmlLabel . GVH.Table $ GVH.HTable Nothing [] [ header, content ]
     toLabelValue (LicenseCompatibilities compatibilities) = let
             mkLine (LicenseCompatibility other compatibility explanation) = 
@@ -181,5 +182,5 @@ writeGraphViz dot = do
         GV.writeDotFile dot digraph
         Ex.try $ GV.runGraphvizCommand command digraph format (dot <.> show format)
     case res of
-        Left (Ex.SomeException e) -> stderrLog $ "failed to convert dot to "++ show format ++ ": " ++ show e
-        Right svg -> stderrLog $ "wrote SVG " ++ svg
+        Left (Ex.SomeException e) -> debugLog $ "failed to convert dot to "++ show format ++ ": " ++ show e
+        Right svg -> debugLog $ "wrote SVG " ++ svg

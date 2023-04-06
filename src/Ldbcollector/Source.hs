@@ -19,6 +19,7 @@ import           Ldbcollector.Source.FOSSLight
 
 applySources :: LicenseGraphM ()
 applySources = do
+    lift $ infoM rootLoggerName "# get sources ..."
     applySource SPDXLicenseIds
     applySource (ScancodeLicenseDB "./data/nexB-scancode-licensedb/docs/")
     applySource (FedoraLicenseData "./data/fedora-legal-fedora-license-data.jsons")
@@ -35,3 +36,4 @@ applySources = do
     applySource (Metaeffekt "./data/org-metaeffekt-metaeffekt-universe/src/main/resources/ae-universe")
     applySource (Warpr "./data/warpr-licensedb/data")
     applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")
+    lift $ infoM rootLoggerName "# ... got sources"

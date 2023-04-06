@@ -43,7 +43,7 @@ linesToMap bss = M.unionsWith (<>) $ map lineToMap bss
 instance Source CavilLicenseChanges where
     getOrigin _  = Origin "CavilLicenseChanges"
     getFacts (CavilLicenseChanges txt) = do
-        putStrLn ("read " ++ txt)
+        logFileReadIO txt
         csvData <- B.readFile txt
         let csvLines = tail $ lines csvData
         let changesMap = linesToMap csvLines

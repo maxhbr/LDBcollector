@@ -37,6 +37,6 @@ instance Source OSI where
         response <- runExceptT OSI.allLicenses
         case response of
             Left err -> do
-                putStrLn $ "Error: " ++ err
+                stderrLogIO $ "Error: " ++ err
                 pure mempty
             Right licenses -> (return . V.fromList . map (wrapFact . OSILicense)) licenses

@@ -92,7 +92,7 @@ newtype Fossology = FossologyLicenseRef FilePath
 instance Source Fossology where
     getOrigin _ = Origin "Fossology"
     getFacts (FossologyLicenseRef json) = do
-        putStrLn ("read " ++ json)
+        logFileReadIO json
         decoded <- eitherDecodeFileStrict json :: IO (Either String [FossologyEntry])
         case decoded of
             Left err           -> fail err

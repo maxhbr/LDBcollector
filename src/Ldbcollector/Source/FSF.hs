@@ -36,7 +36,7 @@ instance LicenseFactC FsfWkingData where
 
 parseFsfJSON :: FilePath -> IO FsfWkingData
 parseFsfJSON json = do
-    putStrLn ("read " ++ json)
+    logFileReadIO json
     decoded <- eitherDecodeFileStrict json :: IO (Either String FsfWkingData)
     case decoded of
       Left err           -> fail err

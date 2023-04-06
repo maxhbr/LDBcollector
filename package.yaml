@@ -29,6 +29,7 @@ dependencies:
 - cryptohash-md5
 - base16-bytestring
 - word-wrap
+- deepseq
 # network-uri
 - vector
 - containers
@@ -40,6 +41,7 @@ dependencies:
 - filepath
 - Glob
 - pretty-terminal
+- hslogger
 # parsing
 - aeson
 - aeson-pretty

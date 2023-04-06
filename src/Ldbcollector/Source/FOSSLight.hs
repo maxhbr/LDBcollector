@@ -168,15 +168,16 @@ instance Source FOSSLight where
           license_names <- S.query_ conn "SELECT License_ID,LICENSE_NAME from LICENSE_MASTER" :: IO [(Int,LicenseName)]
           licenses <- concat <$>
             mapM (\(i, name) -> do
-              putStrLn $ "get License for id=" ++ show i ++ " name=" ++ show name
+              let nameString = "id=" ++ show i ++ " name=" ++ show name
+              debugLogIO $ "get License for " ++ nameString
               let 
                   handleUnicodeException :: T.UnicodeException -> IO [FOSSLight_License]
                   handleUnicodeException e = do
-                    print e
+                    debugLogIO (nameString ++ " error=" ++ show e)
                     return []
                   handleResultError :: S.ResultError -> IO [FOSSLight_License]
                   handleResultError e = do
-                    print e
+                    debugLogIO (nameString ++ " error=" ++ show e)
                     return []
                   q = S.query_ conn ((S.Query . T.pack) $ "SELECT * from LICENSE_MASTER where LICENSE_ID=" ++ show i) :: IO [FOSSLight_License]
               handle handleUnicodeException . handle handleResultError $ q :: IO [FOSSLight_License]

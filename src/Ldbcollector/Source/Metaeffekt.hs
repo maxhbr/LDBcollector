@@ -36,15 +36,15 @@ instance LicenseFactC MetaeffektLicense where
     getApplicableLNs l = let
             mainNames = maybeToList (_shortName l) ++ _canonicalName l: maybeToList (_spdxIdentifier l)
         in alternativesFromListOfLNs mainNames `ImpreciseLNs` map LN (_alternativeNames l <> _otherIds l)
-    getImpliedStmts l = [mstmt (fmap ("CoDEStatus:" ++) (_openCoDEStatus l))]
+    getImpliedStmts l = [mstmt (fmap ("CoDEStatus: " ++) (_openCoDEStatus l))]
 
 getMetaeffektLicense :: FilePath -> IO [MetaeffektLicense]
 getMetaeffektLicense yaml = do
-    putStrLn ("read " ++ yaml)
+    logFileReadIO yaml
     decoded <- Y.decodeFileEither yaml :: IO (Either Y.ParseException MetaeffektLicense)
     case decoded of
         Left err -> do
-            putStrLn ("ERROR: " ++ show err)
+            stderrLogIO ("ERROR: " ++ show err)
             return []
         Right d  -> return [d]
 

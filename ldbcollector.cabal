@@ -32,6 +32,7 @@ library
       Ldbcollector.Model.LicenseStatement
       Ldbcollector.Server
       Ldbcollector.Sink.GraphViz
+      Ldbcollector.Sink.Metrics
       Ldbcollector.Source
       Ldbcollector.Source.BlueOak
       Ldbcollector.Source.Cavil
@@ -66,10 +67,12 @@ library
     , cassava
     , containers
     , cryptohash-md5
+    , deepseq
     , directory
     , fgl
     , filepath
     , graphviz
+    , hslogger
     , libyaml
     , mtl
     , opensource
@@ -107,10 +110,12 @@ executable ldbcollector-exe
     , cassava
     , containers
     , cryptohash-md5
+    , deepseq
     , directory
     , fgl
     , filepath
     , graphviz
+    , hslogger
     , ldbcollector
     , libyaml
     , mtl
@@ -153,11 +158,13 @@ test-suite ldbcollector-test
     , cassava
     , containers
     , cryptohash-md5
+    , deepseq
     , directory
     , fgl
     , file-embed
     , filepath
     , graphviz
+    , hslogger
     , hspec
     , ldbcollector
     , libyaml

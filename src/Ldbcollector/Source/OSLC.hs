@@ -70,13 +70,13 @@ instance LicenseFactC OSLCData where
 
 parseYaml :: FilePath -> IO [OSLCData]
 parseYaml yaml = do
-    putStrLn ("read " ++ yaml)
+    logFileReadIO yaml
     let fromFilename = takeBaseName (takeBaseName yaml)
     contents <- readFile yaml
     case decodeEither' (fromString contents) :: Either ParseException [OSLCData] of
         Right decodeds -> return $ map (\decoded -> decoded {_id = (Just . newNLN "oslc" . pack) fromFilename}) decodeds
         Left err -> do
-            print err
+            debugLogIO (show err)
             return mempty
 
 newtype OSLC = OSLC FilePath

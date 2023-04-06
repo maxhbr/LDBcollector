@@ -30,7 +30,7 @@ instance LicenseFactC OSADLRule where
 
 getOSADL :: FilePath -> IO OSADLRule
 getOSADL osadl = do
-    putStrLn ("read " ++ osadl)
+    logFileReadIO osadl
     let id = takeBaseName osadl
     contents <- T.readFile osadl
     return (OSADLRule ((newNLN "osadl" . pack) id) contents)
@@ -72,6 +72,7 @@ instance FromJSON OSADLMatrix where
 
 getOSADLMatrix :: FilePath -> IO OSADLMatrix
 getOSADLMatrix json = do
+    logFileReadIO json
     decoded <- eitherDecodeFileStrict json :: IO (Either String OSADLMatrix)
     case decoded of
         Left err  -> fail err

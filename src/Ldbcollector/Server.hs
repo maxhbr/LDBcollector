@@ -6,6 +6,7 @@ module Ldbcollector.Server
 
 import           Ldbcollector.Model
 import           Ldbcollector.Sink.GraphViz
+import           Ldbcollector.Sink.Metrics
 
 import qualified Data.Vector                        as V
 
@@ -14,8 +15,8 @@ import qualified Data.Text.Lazy                     as T
 import qualified Data.Text.Encoding                 as Enc
 import qualified System.IO.Temp                     as Temp
 import qualified Text.Blaze.Html.Renderer.Text      as BT
-import qualified Text.Blaze.Html4.Strict            as B
-import qualified Text.Blaze.Html4.Strict.Attributes as B hiding (span, title)
+import qualified Text.Blaze.Html5                   as B
+import qualified Text.Blaze.Html5.Attributes        as B hiding (span, title)
 import qualified Data.ByteString.Lazy as BL
 
 import qualified Data.Graph.Inductive.Basic        as G
@@ -31,13 +32,17 @@ genSvg :: FilePath -> LicenseName -> LicenseGraph -> IO FilePath
 genSvg tmpdir lic licenseGraph = do
     let dot = tmpdir </> show lic <.> "dot"
     let svg = dot <.> "Svg"
-    _ <- runLicenseGraphM' licenseGraph $
-        focus ((V.singleton . LGName) lic) $
-            writeGraphViz dot
+    svgExists <- doesFileExist svg
+    unless svgExists $ do
+        _ <- runLicenseGraphM' licenseGraph $
+            focus ((V.singleton . LGName) lic) $
+                writeGraphViz dot
+        return ()
     return svg
 
 serve :: LicenseGraphM ()
 serve = do
+
     licenseGraph <- MTL.get
     let names = getLicenseGraphLicenseNames licenseGraph
     clusters <- getClusters
@@ -70,7 +75,7 @@ serve = do
                         B.head $ B.title (B.toMarkup ("ldbcollector-haskell: " <> licRaw))
                         B.body $ do
                             B.h1 (B.toMarkup licRaw)
-                            B.img B.! B.src (B.toValue $ "/svg/" <> licRaw) B.! B.alt "svg"
+                            -- B.iframe B.! B.src (B.toValue $ "/svg/" <> licRaw) B.! B.alt "svg"
                             B.ul $ mapM_ (\fact -> B.li $ do
                                 B.h3 (B.toMarkup (getFactId fact))
                                 B.pre (B.toMarkup (let

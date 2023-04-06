@@ -55,6 +55,7 @@ newtype OKFN = OKFN FilePath
 instance Source OKFN where
     getOrigin _ = Origin "OKFN"
     getFacts (OKFN allJSON) = do
+        logFileReadIO allJSON
         decoded <- eitherDecodeFileStrict allJSON :: IO (Either String (Map.Map String OKFNLicense))
         case decoded of
             Left err  -> fail err

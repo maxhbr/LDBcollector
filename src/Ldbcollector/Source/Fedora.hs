@@ -102,8 +102,8 @@ instance LicenseFactC FedoraEntry where
 
 getEntry :: FilePath -> IO FedoraEntry
 getEntry json = do
+    logFileReadIO json
     let id = takeBaseName (takeBaseName json)
-    -- stderrLog ("read " ++ json ++ " for " ++ id)
     decoded <- eitherDecodeFileStrict json :: IO (Either String FedoraEntry)
     case decoded of
       Left err    -> fail err

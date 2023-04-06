@@ -116,11 +116,13 @@ data BlueOakCouncil
 instance Source BlueOakCouncil where
     getOrigin _  = Origin "BlueOakCouncil"
     getFacts (BlueOakCouncilLicenseList file) = do
+        logFileReadIO file
         decoded <- eitherDecodeFileStrict file :: IO (Either String BlueOakData)
         case decoded of
             Left err  -> fail err
             Right bod -> return . V.fromList . map wrapFact $ permissiveToFacts bod
     getFacts (BlueOakCouncilCopyleftList file) = do
+        logFileReadIO file
         decoded <- eitherDecodeFileStrict file :: IO (Either String BlueOakCopyleftData)
         case decoded of
             Left err   -> fail err

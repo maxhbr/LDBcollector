@@ -6,13 +6,14 @@ import           MyPrelude
 
 import           Ldbcollector.Model.LicenseName
 
-data PCL
-    = PCL 
+data PCLR
+    = PCLR 
     { _permissions :: [Text]
     , _conditions :: [Text]
     , _limitations :: [Text]
+    , _restrictions :: [Text]
     } deriving (Eq, Show, Ord, Generic)
-instance ToJSON PCL
+instance ToJSON PCLR
 
 data LicenseCompatibility
     = LicenseCompatibility 
@@ -28,7 +29,7 @@ data LicenseStatement where
     LicenseUrl :: String -> LicenseStatement
     LicenseText :: Text -> LicenseStatement
     LicenseRule :: Text -> LicenseStatement
-    LicensePCL :: PCL -> LicenseStatement
+    LicensePCLR :: PCLR -> LicenseStatement
     LicenseCompatibilities :: [LicenseCompatibility] -> LicenseStatement
     SubStatements :: LicenseStatement -> [LicenseStatement] -> LicenseStatement
     MaybeStatement :: Maybe LicenseStatement -> LicenseStatement

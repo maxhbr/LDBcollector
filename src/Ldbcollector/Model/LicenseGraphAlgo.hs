@@ -1,4 +1,5 @@
 {-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE CPP #-}
 module Ldbcollector.Model.LicenseGraphAlgo
   where
 --   ( focus
@@ -22,25 +23,25 @@ import           Ldbcollector.Model.LicenseName
 getClusters :: LicenseGraphM [[LicenseName]]
 getClusters = do
     lng <- getLicenseNameGraph
-    node_map_rev <- MTL.gets _node_map_rev
     let keepOnlySame (incoming, node, a, outgoing) = let
-            incoming' = filter ((== Same) . fst) incoming
-            outgoing' = filter ((== Same) . fst) outgoing
-            both = nub $ incoming' <> outgoing'
-          in Just (both, node, a, both)
+                incoming' = filter ((== Same) . fst) incoming
+                outgoing' = filter ((== Same) . fst) outgoing
+                both = nub $ incoming' <> outgoing'
+            in Just (both, node, a, both)
         lngOnlySame = G.gfiltermap keepOnlySame lng 
-        componentNodes = G.scc lngOnlySame
 
+#if 1
+        componentNodes = G.scc lngOnlySame
+        clusters =  map (mapMaybe (lngOnlySame `G.lab`)) componentNodes
+#else
         nodesToGraphNodes = map (\n -> case lngOnlySame `G.lab` n of
                                             Just name -> name
                                             _ -> undefined)
-                                        
+
         condensed = (G.nmap nodesToGraphNodes . G.condensation) lngOnlySame
         clusters = (map snd . G.labNodes) condensed
+#endif
     return clusters
-    -- return $ map (mapMaybe (\case
-    --                             LGName n -> Just n
-    --                             _ -> Nothing) . mapMaybe (`Map.lookup` node_map_rev)) componentNodes
 
 -- ############################################################################
 
@@ -84,15 +85,15 @@ focus' needles (LicenseGraph gr node_map node_map_rev facts) = let
 
 focus :: Vector LicenseGraphNode -> LicenseGraphM a -> LicenseGraphM a
 focus needles inner = do
-    stderrLog "get graph"
+    infoLog "get graph"
     frozen <- MTL.get
     (a,_) <- (MTL.lift . runLicenseGraphM' frozen) $ do
-        stderrLog "focus graph"
+        infoLog "focus graph"
         needleIds <- getIdsOfNodes needles
         MTL.modify (focusSequentially needleIds)
-        stderrLog "work on focused graph"
+        infoLog "work on focused graph"
         inner
-    stderrLog "end focusing"
+    infoLog "end focusing"
     return a
 
 getFocused :: Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
