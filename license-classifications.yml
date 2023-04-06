@@ -595,6 +595,7 @@ categorizations:
     categories:
       - "permissive"
 
+  # https://spdx.org/licenses/BSL-1.0.html
   - id: "BSL-1.0"
     categories:
       - "permissive"
@@ -614,10 +615,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  - id: "Bison-exception"
-    categories:
-      - "property:AutoConf-or-other-exception"
-
+  # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "Bison-exception-2.2"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -643,6 +641,7 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/Bootloader-exception.html
   - id: "Bootloader-exception"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -955,6 +954,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
+  # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "Classpath-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1060,6 +1060,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/Font-exception-2.0.html
   - id: "Font-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1078,14 +1079,12 @@ categorizations:
     categories:
       - "proprietary-free"
 
-  - id: "GCC-exception"
-    categories:
-      - "property:AutoConf-or-other-exception"
-
+  # https://spdx.org/licenses/GCC-exception-2.0.html
   - id: "GCC-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/GCC-exception-3.1.html
   - id: "GCC-exception-3.1"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1224,15 +1223,6 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-2.0-only.html
-  # https://spdx.org/licenses/Linux-syscall-note.html
-  - id: "GPL-2.0 WITH Linux-syscall-note"
-    categories:
-      - "copyleft-strong"
-      - "property:include-in-notice-file"
-      - "property:distribute-source-code"
-      - "property:AutoConf-or-other-exception"
-
-  # https://spdx.org/licenses/GPL-2.0-only.html
   # https://spdx.org/licenses/OpenJDK-assembly-exception-1.0.html
   - id: "GPL-2.0 WITH OpenJDK-assembly-exception-1.0"
     categories:
@@ -1282,6 +1272,8 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://spdx.org/licenses/Linux-syscall-note.html
   - id: "GPL-2.0-only WITH Linux-syscall-note"
     categories:
       - "copyleft-module-level"
@@ -1711,11 +1703,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "InnerNet-2.00"
-    categories:
-      - "property:unchecked"
-
   # https://spdx.org/licenses/Intel.html
   - id: "Intel"
     categories:
@@ -1988,7 +1975,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # Duplicate of the previous classification due to tooling requirements.
+  # https://spdx.org/licenses/Libtool-exception.html
   - id: "Libtool-exception"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -2060,20 +2047,6 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-Bison-exception"
-    categories:
-      - "property:AutoConf-or-other-exception"
-
-  - id: "LicenseRef-Bison-exception-2.2"
-    categories:
-      - "property:AutoConf-or-other-exception"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-Bootloader-exception"
-    categories:
-      - "property:AutoConf-or-other-exception"
-
   # Proprietary recipes for Yocto.
   - id: "LicenseRef-CLOSED"
     categories:
@@ -2093,12 +2066,6 @@ categorizations:
   - id: "LicenseRef-COMMERCIAL"
     categories:
       - "commercial"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-Classpath-exception-2.0"
-    categories:
-      - "property:AutoConf-or-other-exception"
-      - "property:include-in-notice-file"
 
   - id: "LicenseRef-Cryptogams"
     categories:
@@ -2138,26 +2105,6 @@ categorizations:
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-Font-exception-2.0"
-    categories:
-      - "property:AutoConf-or-other-exception"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-GCC-exception"
-    categories:
-      - "property:AutoConf-or-other-exception"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-GCC-exception-2.0"
-    categories:
-      - "property:AutoConf-or-other-exception"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-GCC-exception-3.1"
-    categories:
-      - "property:AutoConf-or-other-exception"
 
   # Duplicate of the previous classification due to tooling requirements.
   - id: "LicenseRef-GFDL"
@@ -2299,10 +2246,6 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
-  - id: "LicenseRef-InnerNet-2.00"
-    categories:
-      - "property:unchecked"
-
   # Duplicate of the previous classification due to tooling requirements.
   - id: "LicenseRef-Intel-Binary"
     categories:
@@ -2337,10 +2280,6 @@ categorizations:
       - "copyleft-LGPL"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
-      - "property:AutoConf-or-other-exception"
-
-  - id: "LicenseRef-Libtool-exception"
-    categories:
       - "property:AutoConf-or-other-exception"
 
   # This is needed for the license to (not) be picked correctly for notice generation.
@@ -2388,14 +2327,6 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-MS-LPL"
-    categories:
-      - "free-restricted"
-      - "property:include-in-notice-file"
-      - "property:patent-clause"
-      - "property:unchecked"
-
   - id: "LicenseRef-Mediatek"
     categories:
       - "commercial"
@@ -2438,13 +2369,6 @@ categorizations:
   - id: "LicenseRef-OpenSSL-exception"
     categories:
       - "property:AutoConf-or-other-exception"
-
-  # http://pcre.sourceforge.net/license.txt
-  - id: "LicenseRef-PCRE"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "property:unchecked"
 
   - id: "LicenseRef-PD"
     categories:
@@ -2492,18 +2416,6 @@ categorizations:
     categories:
       - "property:include-in-notice-file"
       - "permissive"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-RSA-Cryptoki"
-    categories:
-      - "permissive"
-      - "property:advertising-clause"
-      - "property:include-in-notice-file"
-
-  - id: "LicenseRef-Rdisc"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
 
   - id: "LicenseRef-Red-Hat-Permissive-No-Warranty-No-Liability"
     categories:
@@ -2641,21 +2553,9 @@ categorizations:
     categories:
       - "permissive"
 
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-XFree86"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-
   - id: "LicenseRef-Xceive-license"
     categories:
       - "proprietary-free"
-      - "property:include-in-notice-file"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-ZPL"
-    categories:
-      - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-Zlib-possibility"
@@ -3038,6 +2938,11 @@ categorizations:
     categories:
       - "permissive"
 
+  # https://scancode-licensedb.aboutcode.org/gcc-exception-3.0.html
+  - id: "LicenseRef-scancode-exception-3.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "LicenseRef-scancode-facebook-patent-rights-2"
     categories:
       - "permissive"
@@ -3132,6 +3037,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/inner-net-2.0.html
   - id: "LicenseRef-scancode-inner-net-2.0"
     categories:
       - "permissive"
@@ -3411,6 +3317,8 @@ categorizations:
     categories:
       - "permissive"
 
+  # http://pcre.sourceforge.net/license.txt
+  # https://scancode-licensedb.aboutcode.org/pcre.html
   - id: "LicenseRef-scancode-pcre"
     categories:
       - "permissive"
@@ -3477,6 +3385,13 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/rsa-cryptoki.html
+  - id: "LicenseRef-scancode-rsa-cryptoki"
+    categories:
+      - "permissive"
+      - "property:advertising-clause"
+      - "property:include-in-notice-file"
+
   - id: "LicenseRef-scancode-rsa-md4"
     categories:
       - "permissive"
@@ -3540,6 +3455,12 @@ categorizations:
   - id: "LicenseRef-scancode-sunpro"
     categories:
       - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/synopsys-attribution.html
+  - id: "LicenseRef-scancode-synopsys-attribution"
+    categories:
+      - "free-restricted"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-taligent-jdk"
@@ -3651,9 +3572,21 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://scancode-licensedb.aboutcode.org/xfree86-1.0.html
+  - id: "LicenseRef-scancode-xfree86-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "LicenseRef-scancode-zipeg"
     categories:
       - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/zpl-1.0.html
+  - id: "LicenseRef-scancode-zpl-1.0"
+    categories:
+      - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-sflow-license"
@@ -3670,11 +3603,6 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
-  - id: "LicenseRef-synopsys-attribution"
-    categories:
-      - "free-restricted"
-      - "property:include-in-notice-file"
-
   - id: "LicenseRef-tested-software"
     categories:
       - "permissive"
@@ -3689,11 +3617,6 @@ categorizations:
   - id: "LicenseRef-u-boot-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
-
-  - id: "LicenseRef-ubuntu-font-1.0"
-    categories:
-      - "free-restricted"
-      - "property:include-in-notice-file"
 
   # Duplicate of the previous classification due to tooling requirements.
   - id: "LicenseRef-verbatim-distribution-license"
@@ -3798,7 +3721,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # https://scancode-licensedb.aboutcode.org/ms-lpl.html
+  # https://spdx.org/licenses/MS-LPL.html
   - id: "MS-LPL"
     categories:
       - "free-restricted"
@@ -4021,13 +3944,6 @@ categorizations:
     categories:
       - "property:AutoConf-or-other-exception"
 
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "PCRE"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-      - "property:unchecked"
-
   - id: "PSF-2.0"
     categories:
       - "permissive"
@@ -4109,12 +4025,6 @@ categorizations:
       - "property:distribute-source-code"
       - "property:unchecked"
 
-  - id: "RSA-Cryptoki"
-    categories:
-      - "permissive"
-      - "property:advertising-clause"
-      - "property:include-in-notice-file"
-
   - id: "RSA-MD"
     categories:
       - "property:advertising-clause"
@@ -4125,7 +4035,7 @@ categorizations:
     categories:
       - "property:unclear-scanner-finding"
 
-  # Duplicate of the previous classification due to tooling requirements.
+  # https://spdx.org/licenses/Rdisc.html
   - id: "Rdisc"
     categories:
       - "permissive"
@@ -4372,7 +4282,8 @@ categorizations:
     categories:
       - "permissive"
 
-  - id: "XFree86"
+  # https://spdx.org/licenses/XFree86-1.1.html
+  - id: "XFree86-1.1"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
@@ -4389,11 +4300,19 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-  - id: "ZPL"
+  # https://spdx.org/licenses/ZPL-1.1.html
+  - id: "ZPL-1.1"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/ZPL-2.0.html
+  - id: "ZPL-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/ZPL-2.1.html
   - id: "ZPL-2.1"
     categories:
       - "permissive"
@@ -4533,12 +4452,6 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "st-mcd-2.0"
-    categories:
-      - "free-restricted"
-      - "property:include-in-notice-file"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "synopsys-attribution"
     categories:
       - "free-restricted"
       - "property:include-in-notice-file"
