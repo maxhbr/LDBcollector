@@ -911,17 +911,6 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "CMU"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-
-  - id: "CMU-style"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-
   # https://spdx.org/licenses/CNRI-Jython.html
   - id: "CNRI-Jython"
     categories:
@@ -2052,17 +2041,6 @@ categorizations:
     categories:
       - "irrelevant"
 
-  - id: "LicenseRef-CMU"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-
-  # Duplicate of the previous classification due to tooling requirements.
-  - id: "LicenseRef-CMU-style"
-    categories:
-      - "permissive"
-      - "property:include-in-notice-file"
-
   - id: "LicenseRef-COMMERCIAL"
     categories:
       - "commercial"
@@ -2299,10 +2277,6 @@ categorizations:
       - "property:AutoConf-or-other-exception"
       - "copyleft-strong"
       - "property:distribute-source-code"
-
-  - id: "LicenseRef-MIT-CMU-style"
-    categories:
-      - "permissive"
 
   - id: "LicenseRef-MIT-old-style-no-adv"
     categories:
@@ -2887,6 +2861,24 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
+
+  # https://scancode-licensedb.aboutcode.org/cmu-mit.html
+  - id: "LicenseRef-scancode-cmu-mit"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/cmu-simple.html
+  - id: "LicenseRef-scancode-cmu-simple"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://scancode-licensedb.aboutcode.org/cmu-template.html
+  - id: "LicenseRef-scancode-cmu-template"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-cncf-individual-cla-1.0"
     categories:
@@ -3656,10 +3648,6 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
-
-  - id: "MIT-CMU-style"
-    categories:
-      - "permissive"
 
   # https://spdx.org/licenses/MIT-feh.html
   - id: "MIT-feh"
