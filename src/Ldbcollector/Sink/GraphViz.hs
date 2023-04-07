@@ -2,6 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Sink.GraphViz
     ( writeGraphViz
+    , genGraphViz
     ) where
 
 import qualified Control.Exception                 as Ex
@@ -21,8 +22,10 @@ import qualified Data.HashMap.Internal.Strict      as HMap
 import qualified Data.Map                          as Map
 import qualified Data.GraphViz.Attributes.HTML     as GVH
 
-import qualified Data.Text.Lazy                    as LT
-import qualified Text.Wrap                         as TW
+import qualified System.IO.Temp                     as Temp
+import qualified Data.Text.Lazy                     as LT
+import qualified Data.Text.Lazy.IO                  as LT
+import qualified Text.Wrap                          as TW
 
 instance GV.Labellable LicenseStatement where
     toLabelValue (LicenseStatement stmt) = GV.toLabelValue stmt
@@ -140,6 +143,7 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                                 Just (LGName name) -> GV.toLabelValue (show name)
                                 Just (LGStatement stmt) -> GV.toLabelValue stmt
                                 Just (LGFact fact) -> GV.toLabelValue (getFactId fact)
+                                Just lgn -> (GV.toLabelValue . show) lgn
                                 -- Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
                                 Nothing -> GV.toLabelValue ("(/)" :: Text)
                     coloring = getColorOfNode (n,nodeLabel)
@@ -169,7 +173,7 @@ getDigraph = MTL.gets computeDigraph
 
 writeGraphViz :: FilePath -> LicenseGraphM ()
 writeGraphViz dot = do
-    stderrLog $ "generate " ++ dot
+    debugLog $ "generate " ++ dot
 
     digraph <- getDigraph
     let format = GV.Svg
@@ -184,3 +188,26 @@ writeGraphViz dot = do
     case res of
         Left (Ex.SomeException e) -> debugLog $ "failed to convert dot to "++ show format ++ ": " ++ show e
         Right svg -> debugLog $ "wrote SVG " ++ svg
+
+genGraphViz :: LicenseGraphM LT.Text
+genGraphViz = do
+    lift $ debugM "genGraphViz" "getDigraph"
+    digraph <- getDigraph
+    let format = GV.Svg
+    let command = GV.Fdp
+    MTL.liftIO $ do
+        Temp.withSystemTempDirectory "genGraphViz" $ \tmpdir -> do
+            let dot = tmpdir <> dot
+            createParentDirectoryIfNotExists dot
+            debugM "genGraphViz" $ "write dot to " ++ dot
+            writeFile
+                (dot <.> "graph")
+                (G.prettify (GV.dotToGraph digraph :: G.Gr GV.Attributes GV.Attributes))
+            GV.writeDotFile dot digraph
+            debugM "genGraphViz" "runGraphvizCommand"
+            res <- Ex.try $ GV.runGraphvizCommand command digraph format (dot <.> show format)
+            case res of
+                Left (Ex.SomeException e) -> fail $ "failed to convert dot to "++ show format ++ ": " ++ show e
+                Right svg -> do
+                    debugM "genGraphViz" "readFile"
+                    LT.readFile svg

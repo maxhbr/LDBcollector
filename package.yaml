@@ -60,6 +60,7 @@ dependencies:
 - blaze-markup
 - scotty
 - warp
+- file-embed
 - temporary
 
 ghc-options:

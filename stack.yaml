@@ -1,12 +1,12 @@
 resolver:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/20/14.yaml
-#   url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/6.yaml
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/20/17.yaml
 
 packages:
 - .
 
 extra-deps:
 - spdx-1.0.0.3@sha256:a83bfd305fed2a23e7643d43a8431380c7569adc33e246a34589eac426ea1853,2116
+# - clay-0.14.0@sha256:382eced24317f9ed0f7a0a4789cdfc6fc8dd32895cdb0c4ea50a1613bee08af3,2128
 # - rdf4h-5.0.1@sha256:76ecd4aa6b536add8d7c6c13aedd3e028d492d0044f28dba9eb130cfed063fdc
 
 nix:

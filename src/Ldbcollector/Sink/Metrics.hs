@@ -14,6 +14,7 @@ import qualified Data.Map                          as Map
 writeMetrics :: LicenseGraphM ()
 writeMetrics = do
     lift $ updateGlobalLogger "Metrics" (setLevel DEBUG)
+    debugOrderAndSize
     lift $ infoM "Metrics" "metrics: "
     licenseGraph <- MTL.get
     let names = getLicenseGraphLicenseNames licenseGraph

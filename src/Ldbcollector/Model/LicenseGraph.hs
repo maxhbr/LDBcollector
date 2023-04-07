@@ -3,18 +3,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Model.LicenseGraph
   where
---   ( LicenseGraphNode (..)
---   , mkLGValue, isEmptyLGN
---   , LicenseGraphEdge (..)
---   , LicenseGraph (..), LicenseGraphType
---   , getLicenseGraphLicenseNames
---   , getLicenseGraphSize
---   , LicenseGraphM
---   , runLicenseGraphM, runLicenseGraphM'
---   , addNode, addNodes
---   , addEdge, addEdges
---   , stderrLog
---   ) where
 
 import           MyPrelude
 
@@ -251,6 +239,11 @@ applyFactImpliedStmt stmt = do
     _ <- insertNode stmtLG
     return [stmtLG]
 
+debugOrderAndSize :: LicenseGraphM ()
+debugOrderAndSize = do
+    order <- MTL.gets (G.order . _gr)
+    size <- MTL.gets (G.size . _gr)
+    debugLog ("order=" ++ show order ++ " size=" ++ show size)
 
 -- ############################################################################
 

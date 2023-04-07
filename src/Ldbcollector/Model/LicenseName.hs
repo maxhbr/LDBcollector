@@ -2,6 +2,7 @@
 module Ldbcollector.Model.LicenseName
   ( LicenseName (..)
   , newLN, newNLN, setNS, unsetNS
+  , fromText
   , LicenseNameRelation (..)
   ) where
 
@@ -39,11 +40,14 @@ instance Ord LicenseName where
 instance Show LicenseName where
     show = unpack . licenseNameToText
 
-instance IsString LicenseName where
-    fromString s = case T.splitOn ":" $ T.pack s of
+fromText :: Text -> LicenseName
+fromText t = case T.splitOn ":" t of
         []     -> undefined
         [ln]   -> LicenseName Nothing ln
         ns:lns -> LicenseName (Just ns) (T.intercalate  ":" lns)
+
+instance IsString LicenseName where
+    fromString = fromText . T.pack
 
 instance FromJSON LicenseName where
   parseJSON = withText "LicenseName" $ return . fromString . unpack

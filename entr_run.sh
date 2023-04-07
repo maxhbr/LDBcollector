@@ -11,10 +11,12 @@ export -f entr_task
 
 while sleep 1; do
   cat <<EOF | entr -dr bash -c entr_task
-$(find src -iname '*.hs')
-$(find test -iname '*.hs')
-$(find app -iname '*.hs')
-ldbcollector.cabal
+$0
+$(find src)
+$(find test)
+$(find app)
+package.yaml
+stack.yaml
 shell.nix
 EOF
 done
