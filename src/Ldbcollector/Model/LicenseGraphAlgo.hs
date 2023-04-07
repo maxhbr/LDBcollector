@@ -34,14 +34,6 @@ getClusters = do
 
         componentNodes = G.scc lngOnlySame
         clusters =  map (mapMaybe (lngOnlySame `G.lab`)) componentNodes
-
-
-
-
-
-
-
-
     return clusters
 
 -- ############################################################################
@@ -142,6 +134,7 @@ focusAndFilter needles origins inner = do
         needleIds <- getIdsOfNodes needles
         MTL.modify (focusSequentially needleIds)
         unless (null origins) $ do
+            debugOrderAndSize
             debugLog ("## filter origins on " ++ show origins)
             filterOrigins origins
         debugOrderAndSize

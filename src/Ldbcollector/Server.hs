@@ -114,26 +114,28 @@ genDetailsHtml licRaw licenseGraph origins = do
                     "var element = document.querySelector('#svgGraph');"
                     "panzoom(element);"
 
-
-formSvg :: LicenseName -> [Origin] -> LicenseGraph -> IO T.Text
-formSvg lic origins licenseGraph = do
-    fmap fst . runLicenseGraphM' licenseGraph $
-        focus ((V.singleton . LGName) lic) genGraphViz
-        -- focusAndFilter ((V.singleton . LGName) lic) origins genGraphViz
-
 formHtml :: [S.Param] -> LicenseGraph -> [Origin] -> IO H.Html
 formHtml params licenseGraph origins = do
     let paramMap = Map.fromList params
         licRaw = Map.findWithDefault "BSD-3-Clause" "license" paramMap
         lic = (fromText . T.toStrict) licRaw :: LicenseName
-        enableOrigins = (map (Origin . T.unpack . fst) . filter (\(_,value) -> value == "on")) params
-    ((subgraph,lnsubgraph),_) <-
+        enableOrigins = case (map (Origin . T.unpack . fst) . filter (\(_,value) -> value == "on")) params of
+            [] -> origins
+            enableOrigins -> enableOrigins
+        allLicenseNames = getLicenseGraphLicenseNames licenseGraph
+
+    debugLogIO ("params=" ++ show params)
+    debugLogIO ("licRaw=" ++ show licRaw)
+    debugLogIO ("lic=" ++ show lic)
+    debugLogIO ("enableOrigins=" ++ show enableOrigins)
+
+    ((subgraph,lnsubgraph,svg),_) <-
         runLicenseGraphM' licenseGraph $
-            focusAndFilter ((V.singleton . LGName) lic) origins $ do
-                subgraph <- MTL.gets _gr
-                lnsubgraph <- getLicenseNameGraph
-                return (subgraph, lnsubgraph)
-    svg <- formSvg lic enableOrigins licenseGraph
+            focusAndFilter ((V.singleton . LGName) lic) enableOrigins $ do
+                MTL.gets ((,,) . _gr)
+                     <*> getLicenseNameGraph
+                     <*> genGraphViz
+
     return . H.html $ do
             H.head $ do
                 H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
@@ -142,14 +144,6 @@ formHtml params licenseGraph origins = do
                 H.script H.! A.src "https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" $
                     pure ()
             H.body $ do
-                -- H.iframe
-                --     H.! H.id "svgGraph" 
-                --     H.! H.width "100%" 
-                --     H.! H.height "100%"
-                --     H.! H.src (H.toValue $ "/svg/" <> licRaw)
-                --     H.! H.alt "svg" $
-                --         pure ()
-                -- H.div H.! H.id "svgWrapper" $ do
                 -- H.object H.! A.id "svgGraph" H.! A.type_ "image/svg+xml" H.! A.data_ (H.toValue $ "/svg/" <> licRaw) $
                 --     pure ()
                 H.div H.! A.id "svgGraph" $ do
@@ -159,9 +153,11 @@ formHtml params licenseGraph origins = do
                         H.h1 (H.toMarkup licRaw)
 
                     H.form H.! A.action "" $ do
-                        H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw)
+                        H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
+                        H.datalist H.! A.id "licenses" $
+                            mapM_ (\license -> H.option H.! A.value (fromString $ show license) $ pure ()) allLicenseNames
                         mapM_ (\(Origin origin) -> do
-                                if (fromString origin, "on") `elem` params
+                                if Origin origin `elem` enableOrigins
                                     then H.input H.! A.type_ "checkbox" H.! A.name (fromString origin) H.! A.value "on" H.! A.checked "checked"
                                     else H.input H.! A.type_ "checkbox" H.! A.name (fromString origin) H.! A.value "on"
                                 H.label H.! A.for (fromString origin) $ fromString origin
