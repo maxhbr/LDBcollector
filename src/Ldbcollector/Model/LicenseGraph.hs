@@ -194,10 +194,10 @@ applyFact = do
     let factLG = LGFact fact
     factNode <- insertNode (LGFact fact)
     lnNode <- applyFactApplicableLNs (getApplicableLNs fact)
-    insertEdge (factLG, lnNode, LGAppliesTo)
+    _ <- insertEdge (factLG, lnNode, LGAppliesTo)
     stmtNodes <- applyFactImpliedStmts (getImpliedStmts fact)
     let edges = V.fromList $ map (,factLG, LGImpliedBy) stmtNodes
-    insertEdges edges
+    _ <- insertEdges edges
     return factNode
 
 applyFactApplicableLNs :: ApplicableLNs -> WithFactM LicenseGraphNode
@@ -230,7 +230,7 @@ applyFactImpliedStmt (stmt `SubStatements` stmts) = do
     nodes <- applyFactImpliedStmt stmt
     nodes' <- mconcat <$> mapM applyFactImpliedStmt stmts
     let edges = V.fromList $ concatMap (\node -> map (, node, LGImpliedBy) nodes') nodes
-    insertEdges edges
+    _ <- insertEdges edges
     return nodes
 applyFactImpliedStmt (MaybeStatement (Just stmt)) = applyFactImpliedStmt stmt
 applyFactImpliedStmt (MaybeStatement Nothing) = pure []
@@ -258,7 +258,7 @@ toLicenseNameGraph = let
         contextFun :: G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseName LicenseNameRelation
         contextFun (incoming, n, LGName ln, outgoing) = let
                 incoming' = nub $ mapMaybe edgeFun incoming
-                outgoing' = nub $ mapMaybe edgeFun incoming
+                outgoing' = nub $ mapMaybe edgeFun outgoing
             in Just (incoming', n, ln, outgoing')
         contextFun _ = Nothing
     in G.gfiltermap contextFun

@@ -38,17 +38,42 @@ getClusters = do
 
 -- ############################################################################
 
+filterOrigins :: [Origin] -> LicenseGraphM ()
+filterOrigins origins = do
+    MTL.modify (\lg@(LicenseGraph {_facts=facts}) -> let
+             facts' = Map.filterWithKey (\(o,_) _ -> o `elem` origins) facts
+        in lg {_facts = facts'})
+
 focusSequentially :: Vector G.Node -> LicenseGraph -> LicenseGraph
 focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
-        reachableInSubgraph predicate needles' = let
+
+        backed = Map.elems facts
+        backedNodes = mconcat $ map fst backed
+        backedEdges = mconcat $ map snd backed
+
+        onlyBackedFiltermapfun :: G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseGraphNode LicenseGraphEdge
+        onlyBackedFiltermapfun (incoming, node, label, outgoing) = let
+                edgeFilterFun :: G.Node -> G.Node -> LicenseGraphEdge -> Bool
+                edgeFilterFun a b edgeLabel = let
+                        potentialE = (fmap G.toEdge . find (== (a,b,edgeLabel)) . G.labEdges) gr
+                    in case potentialE of
+                        Just e -> e `elem` backedEdges
+                        Nothing -> False
+            in if node `elem` backedNodes
+                then Just (filter (\(edgeLabel, a) -> edgeFilterFun a node edgeLabel) incoming, node, label, filter (\(edgeLabel, b) -> edgeFilterFun node b edgeLabel) outgoing)
+                else Nothing
+        onlyPredicateFiltermapfun :: (LicenseGraphEdge -> Bool) -> G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseGraphNode LicenseGraphEdge
+        onlyPredicateFiltermapfun predicate (incoming, node, a, outgoing) = let
                 isFlippable (LGNameRelation Same,_) = True
                 isFlippable _ = False
-                fun :: G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseGraphNode LicenseGraphEdge
-                fun (incoming, node, a, outgoing) = let
-                        incoming' = nub $ filter (\(l,_) -> predicate l) incoming
-                        outgoing' = nub $ filter (\(l,_) -> predicate l) outgoing
-                    in Just (incoming' <> filter isFlippable outgoing', node, a, outgoing' <> filter isFlippable incoming')
-                subGraph = G.gfiltermap fun gr
+                incoming' = nub $ filter (\(l,_) -> predicate l) incoming
+                outgoing' = nub $ filter (\(l,_) -> predicate l) outgoing
+            in Just (incoming' <> filter isFlippable outgoing', node, a, outgoing' <> filter isFlippable incoming')
+
+        reachableInSubgraph predicate needles' = let
+                subGraph = G.gfiltermap (\ctx -> case onlyBackedFiltermapfun ctx of
+                                             Just ctx' -> onlyPredicateFiltermapfun predicate ctx'
+                                             Nothing -> Nothing) gr
                 reachableForNeedle needle = V.fromList $ G.reachable needle subGraph ++ G.reachable needle (G.grev subGraph)
             in V.concatMap reachableForNeedle needles'
         isLicenseExpandingRelation = (== LGNameRelation Same)
@@ -63,87 +88,28 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
         _facts = facts
     }
 
-focus' :: Vector G.Node -> LicenseGraph -> LicenseGraph
-focus' needles (LicenseGraph gr node_map node_map_rev facts) = let
-        allReachable = let
-                reachableForNeedle needle = G.reachable needle gr ++ G.reachable needle (G.grev gr)
-            in concatMap reachableForNeedle (V.toList needles)
-        isReachable n = n `elem` allReachable
-    in LicenseGraph {
-        _gr = G.nfilter isReachable gr,
-        _node_map = Map.filter isReachable node_map,
-        _node_map_rev = Map.filterWithKey (\k _ -> isReachable k) node_map_rev,
-        _facts = facts
-    }
-
-focus :: Vector LicenseGraphNode -> LicenseGraphM a -> LicenseGraphM a
-focus needles inner = do
-    infoLog "get graph"
-    frozen <- MTL.get
-    (a,_) <- (MTL.lift . runLicenseGraphM' frozen) $ do
-        infoLog "focus graph"
-        needleIds <- getIdsOfNodes needles
-        MTL.modify (focusSequentially needleIds)
-        infoLog "work on focused graph"
-        inner
-    infoLog "end focusing"
-    return a
-
-getFocused :: Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
-getFocused needles = focus needles MTL.get
-
--- ############################################################################
-
-keepOnlyBacked :: LicenseGraphM ()
-keepOnlyBacked = do
-    backed <- MTL.gets (Map.elems . _facts)
-    let backedNodes = mconcat $ map fst backed
-        backedEdges = mconcat $ map snd backed
-        -- subGraph = G.gfiltermap fun gr
-    MTL.modify (\lg@LicenseGraph {_gr=gr, _node_map=node_map, _node_map_rev=node_map_rev} -> let
-            filtermapfun :: G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseGraphNode LicenseGraphEdge
-            filtermapfun (incoming, node, label, outgoing) = let
-                    edgeFilterFun :: G.Node -> G.Node -> LicenseGraphEdge -> Bool
-                    edgeFilterFun a b edgeLabel = let
-                            potentialE = (fmap G.toEdge . find (== (a,b,edgeLabel)) . G.labEdges) gr
-                        in case potentialE of
-                            Just e -> e `elem` backedEdges
-                            Nothing -> False
-                in if node `elem` backedNodes
-                    then Just (filter (\(edgeLabel, a) -> edgeFilterFun a node edgeLabel) incoming, node, label, filter (\(edgeLabel, b) -> edgeFilterFun node b edgeLabel) outgoing)
-                    else Nothing
-        in lg{ _gr = G.gfiltermap filtermapfun gr
-             , _node_map = Map.filter (`elem` backedNodes) node_map
-             , _node_map_rev = Map.filterWithKey (\n _ -> n `elem` backedNodes) node_map_rev
-             })
-
-filterOrigins :: [Origin] -> LicenseGraphM ()
-filterOrigins origins = do
-    MTL.modify (\lg@(LicenseGraph {_facts=facts}) -> let
-             facts' = Map.filterWithKey (\(o,_) _ -> o `elem` origins) facts
-        in lg {_facts = facts'})
-    keepOnlyBacked
-
-focusAndFilter :: Vector LicenseGraphNode -> [Origin] -> LicenseGraphM a -> LicenseGraphM a
-focusAndFilter needles origins inner = do
+focus :: [Origin] -> Vector LicenseGraphNode -> LicenseGraphM a -> LicenseGraphM a
+focus origins needles inner = do
     debugLog "## freeze graph"
     debugOrderAndSize
     frozen <- MTL.get
     (a,_) <- (MTL.lift . runLicenseGraphM' frozen) $ do
+        unless (null origins) $ do
+            debugLog ("## filter origins on " ++ show origins)
+            filterOrigins origins
         debugLog ("## focus on " ++ show needles)
         needleIds <- getIdsOfNodes needles
         MTL.modify (focusSequentially needleIds)
-        unless (null origins) $ do
-            debugOrderAndSize
-            debugLog ("## filter origins on " ++ show origins)
-            filterOrigins origins
         debugOrderAndSize
         debugLog "## work on focused graph"
         inner
     debugLog "## done focusing"
     return a
 
--- ############################################################################
+getFocused :: [Origin] -> Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
+getFocused origins needles = focus origins needles MTL.get
+
+-- -- ############################################################################
 
 condense :: LicenseGraph -> G.Gr LicenseGraphNode ()
 condense g = let

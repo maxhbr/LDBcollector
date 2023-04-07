@@ -205,19 +205,6 @@ writeGraphViz dot = do
     digraph <- getDigraph
     _ <- MTL.liftIO $ renderDot digraph dot
     pure ()
-    -- debugOrderAndSize
-    -- let format = GV.Svg
-    -- let command = GV.Fdp
-    -- res <- MTL.liftIO $ do
-    --     createParentDirectoryIfNotExists dot
-    --     writeFile
-    --         (dot <.> "graph")
-    --         (G.prettify (GV.dotToGraph digraph :: G.Gr GV.Attributes GV.Attributes))
-    --     GV.writeDotFile dot digraph
-    --     Ex.try $ GV.runGraphvizCommand command digraph format (dot <.> show format)
-    -- case res of
-    --     Left (Ex.SomeException e) -> debugLog $ "failed to convert dot to "++ show format ++ ": " ++ show e
-    --     Right svg -> debugLog $ "wrote SVG " ++ svg
 
 genGraphViz :: LicenseGraphM LT.Text
 genGraphViz = do
@@ -227,22 +214,3 @@ genGraphViz = do
         Temp.withSystemTempDirectory "genGraphViz" $ \tmpdir -> do
             svg <- renderDot digraph (tmpdir </> "dot")
             LT.readFile svg
-
-    -- let format = GV.Svg
-    -- let command = GV.Fdp
-    -- MTL.liftIO $ do
-    --     Temp.withSystemTempDirectory "genGraphViz" $ \tmpdir -> do
-    --         let dot = tmpdir </> "dot"
-    --         createParentDirectoryIfNotExists dot
-    --         debugM "genGraphViz" $ "write dot to " ++ dot
-    --         writeFile
-    --             (dot <.> "graph")
-    --             (G.prettify (GV.dotToGraph digraph :: G.Gr GV.Attributes GV.Attributes))
-    --         GV.writeDotFile dot digraph
-    --         debugM "genGraphViz" "runGraphvizCommand"
-    --         res <- Ex.try $ GV.runGraphvizCommand command digraph format (dot <.> show format)
-    --         case res of
-    --             Left (Ex.SomeException e) -> fail $ "failed to convert dot to "++ show format ++ ": " ++ show e
-    --             Right svg -> do
-    --                 debugM "genGraphViz" "readFile"
-    --                 LT.readFile svg
