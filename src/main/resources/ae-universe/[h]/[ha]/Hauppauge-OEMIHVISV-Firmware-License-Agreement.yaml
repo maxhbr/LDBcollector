@@ -8,3 +8,5 @@ shortName: "Hauppauge-OEM/IHV/ISV-FLA"
 alternativeNames:
   - "OEM/IHV/ISV FIRMWARE LICENSE AGREEMENT"
 
+otherIds: 
+  - "scancode:hauppauge-firmware-oem"

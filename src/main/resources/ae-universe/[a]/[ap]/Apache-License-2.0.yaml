@@ -78,4 +78,5 @@ alternativeNames:
   - "www.apache.org/licenses/LICENSE-2.0"
 
 otherIds: 
+  - "scancode:apache-2.0"
   - "osi:Apache-2.0"

@@ -10,3 +10,5 @@ alternativeNames:
   - "MPICH2 LICENSE"
   - "MPICH2 License"
 
+otherIds: 
+  - "scancode:mpich"

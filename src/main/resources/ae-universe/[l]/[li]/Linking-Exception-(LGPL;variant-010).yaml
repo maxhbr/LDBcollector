@@ -7,3 +7,5 @@ shortName: "Linking-Exception-LGPL-010"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:openssl-exception-lgpl"

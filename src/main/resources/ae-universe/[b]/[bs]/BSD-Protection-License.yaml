@@ -8,3 +8,5 @@ spdxIdentifier: "BSD-Protection"
 alternativeNames:
   - "BSD Protection License"
 
+otherIds: 
+  - "scancode:bsd-protection"

@@ -9,3 +9,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "NRL License"
 
+otherIds: 
+  - "scancode:nrl"

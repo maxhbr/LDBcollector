@@ -11,3 +11,5 @@ alternativeNames:
   - "AFL, 1.1"
   - "AFL-1.1"
 
+otherIds: 
+  - "scancode:afl-1.1"

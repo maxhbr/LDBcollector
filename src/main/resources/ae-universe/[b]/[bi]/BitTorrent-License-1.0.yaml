@@ -13,3 +13,5 @@ alternativeNames:
   - "BitTorrent License, 1.0"
   - "BitTorrent Open Source License Version 1.0"
 
+otherIds: 
+  - "scancode:bittorrent-1.0"

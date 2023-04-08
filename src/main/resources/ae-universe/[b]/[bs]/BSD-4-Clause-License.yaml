@@ -11,3 +11,5 @@ alternativeNames:
   - "BSD-4-Clause"
   - "BSD-4-clause"
 
+otherIds: 
+  - "scancode:bsd-original"

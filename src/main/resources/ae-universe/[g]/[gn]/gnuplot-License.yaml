@@ -10,3 +10,5 @@ alternativeNames:
   - "GNUPLOT LICENSE"
   - "GNUPLOT License"
 
+otherIds: 
+  - "scancode:gnuplot"

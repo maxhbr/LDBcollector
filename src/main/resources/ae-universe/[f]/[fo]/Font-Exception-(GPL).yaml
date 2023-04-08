@@ -8,3 +8,5 @@ spdxIdentifier: "Font-exception-2.0"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:font-exception-gpl"

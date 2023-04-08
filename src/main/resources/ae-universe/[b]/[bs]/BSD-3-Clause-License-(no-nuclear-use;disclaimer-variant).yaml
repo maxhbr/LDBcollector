@@ -10,3 +10,5 @@ alternativeNames:
   - "BSD 3-Clause No Nuclear License"
   - "BSD 3 Clause No Nuclear License"
 
+otherIds: 
+  - "scancode:sun-bsd-no-nuclear"

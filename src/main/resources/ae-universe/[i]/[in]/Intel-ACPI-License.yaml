@@ -12,3 +12,5 @@ alternativeNames:
   - "INTEL-ACPI"
   - "ACPI - Software License Agreement"
 
+otherIds: 
+  - "scancode:intel-acpi"

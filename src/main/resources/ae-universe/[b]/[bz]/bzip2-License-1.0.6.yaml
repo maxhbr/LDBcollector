@@ -11,3 +11,5 @@ alternativeNames:
   - "bzip2 and libbzip2 License v1.0.6"
   - "libzip2 version 1.0.6"
 
+otherIds: 
+  - "scancode:bzip2-libbzip-2010"

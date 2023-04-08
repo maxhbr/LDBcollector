@@ -8,3 +8,5 @@ spdxIdentifier: "FSFULLRWD"
 alternativeNames:
   - "FSF Unlimited License (with License Retention and Warranty Disclaimer)"
 
+otherIds: 
+  - "scancode:fsf-unlimited-no-warranty"

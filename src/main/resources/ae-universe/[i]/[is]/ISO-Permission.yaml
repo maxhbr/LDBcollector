@@ -8,3 +8,5 @@ shortName: "ISO-Permission"
 alternativeNames:
   - "ISO Permission"
 
+otherIds: 
+  - "scancode:iso-8879"

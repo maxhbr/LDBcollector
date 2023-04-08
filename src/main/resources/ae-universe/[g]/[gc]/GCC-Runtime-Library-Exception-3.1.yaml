@@ -8,3 +8,5 @@ spdxIdentifier: "GCC-exception-3.1"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:gcc-exception-3.1"

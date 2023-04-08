@@ -12,3 +12,5 @@ alternativeNames:
   - "Solderpad Hardware License Version 0.51"
   - "SHL-0.51"
 
+otherIds: 
+  - "scancode:shl-0.51"

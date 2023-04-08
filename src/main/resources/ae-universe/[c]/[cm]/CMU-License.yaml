@@ -6,3 +6,5 @@ category: "MIT"
 spdxIdentifier: "MIT-CMU"
 openCoDEStatus: "approved"
 
+otherIds: 
+  - "scancode:cmu-uc"

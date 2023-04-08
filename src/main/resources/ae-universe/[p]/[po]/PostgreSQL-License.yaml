@@ -12,4 +12,5 @@ alternativeNames:
   - "POSTGRESQL License"
 
 otherIds: 
+  - "scancode:postgresql"
   - "osi:PostgreSQL"

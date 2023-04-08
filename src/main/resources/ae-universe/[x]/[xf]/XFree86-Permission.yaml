@@ -8,3 +8,5 @@ shortName: "XFree86"
 alternativeNames:
   - "XFree86 Permission"
 
+otherIds: 
+  - "scancode:xfree86-1.0"

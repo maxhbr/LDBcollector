@@ -8,3 +8,5 @@ spdxIdentifier: "XFree86-1.1"
 alternativeNames:
   - "XFree86-1.1"
 
+otherIds: 
+  - "scancode:xfree86-1.1"

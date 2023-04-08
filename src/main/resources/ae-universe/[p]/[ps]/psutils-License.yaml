@@ -11,3 +11,5 @@ alternativeNames:
   - "PSUTILS License"
   - "PS Utilities Package"
 
+otherIds: 
+  - "scancode:psutils"

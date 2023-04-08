@@ -13,4 +13,5 @@ alternativeNames:
   - "PSF License v2"
 
 otherIds: 
+  - "scancode:psf-2.0"
   - "osi:Python-2.0"

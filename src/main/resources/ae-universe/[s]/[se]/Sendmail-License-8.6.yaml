@@ -8,3 +8,5 @@ shortName: "Sendmail-8.6"
 alternativeNames:
   - "Sendmail License 8.6"
 
+otherIds: 
+  - "scancode:sendmail"

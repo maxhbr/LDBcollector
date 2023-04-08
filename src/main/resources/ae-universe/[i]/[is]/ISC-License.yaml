@@ -14,4 +14,5 @@ alternativeNames:
   - "'init-license': 'ISC'"
 
 otherIds: 
+  - "scancode:isc"
   - "osi:ISC"

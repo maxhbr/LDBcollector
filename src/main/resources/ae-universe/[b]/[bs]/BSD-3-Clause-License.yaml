@@ -45,6 +45,5 @@ alternativeNames:
 
 otherIds: 
   - "scancode:bsd-new"
-  - "scancode:bsd-intel"
   - "osi:BSD-3"
   - "osi:BSD-3-Clause"

@@ -11,3 +11,5 @@ alternativeNames:
   - "IBM-pibs"
   - "IBM-PIBS"
 
+otherIds: 
+  - "scancode:ibm-pibs"

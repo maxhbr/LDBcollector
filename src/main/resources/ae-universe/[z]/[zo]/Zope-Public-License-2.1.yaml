@@ -15,4 +15,5 @@ alternativeNames:
   - "ZPL V2.1"
 
 otherIds: 
+  - "scancode:zpl-2.1"
   - "osi:ZPL-2.1"

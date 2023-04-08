@@ -12,3 +12,5 @@ alternativeNames:
   - "OLDAP License, 2.2"
   - "OpenLDAP Public License Version 2.2, 1 March 2000"
 
+otherIds: 
+  - "scancode:openldap-2.2"

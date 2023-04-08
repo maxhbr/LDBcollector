@@ -8,3 +8,5 @@ shortName: "STMicroelectronicsNV-Firmware"
 alternativeNames:
   - "ST Microelectronics NV Firmware License"
 
+otherIds: 
+  - "scancode:stmicroelectronics-linux-firmware"

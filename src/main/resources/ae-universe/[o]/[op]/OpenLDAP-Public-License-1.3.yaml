@@ -12,3 +12,5 @@ alternativeNames:
   - "OLDAP License, 1.3"
   - "The OpenLDAP Public License Version 1.3, 17 January 1999"
 
+otherIds: 
+  - "scancode:openldap-1.3"

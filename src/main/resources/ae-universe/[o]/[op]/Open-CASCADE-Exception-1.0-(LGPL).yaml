@@ -12,3 +12,5 @@ alternativeNames:
   - "Open CASCADE Exception (version 1.0)"
   - "OCCT-exception-1.0"
 
+otherIds: 
+  - "scancode:occt-exception-1.0"

@@ -9,3 +9,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "Cube License"
 
+otherIds: 
+  - "scancode:cube"

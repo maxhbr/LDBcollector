@@ -8,5 +8,4 @@ shortName: "Linking-Exception-LGPL-011"
 type: "exception"
 
 otherIds: 
-  - "scancode:lgpl-2.1-nokia-qt-1.0"
   - "scancode:qt-company-exception-lgpl-2.1"

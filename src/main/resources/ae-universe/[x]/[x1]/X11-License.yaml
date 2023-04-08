@@ -15,3 +15,5 @@ alternativeNames:
   - "X11 LICENSE"
   - "Expat~X with X exception"
 
+otherIds: 
+  - "scancode:x11-xconsortium"

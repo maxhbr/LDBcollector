@@ -8,3 +8,5 @@ shortName: "PT-RSA-MD"
 alternativeNames:
   - "Permission Terms (RSA-MD; no representation; no warranty)"
 
+otherIds: 
+  - "scancode:rsa-1990"

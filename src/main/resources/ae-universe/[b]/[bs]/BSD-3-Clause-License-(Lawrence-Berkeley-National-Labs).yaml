@@ -8,3 +8,5 @@ shortName: "BSD-3-Clause-LBNL-001"
 alternativeNames:
   - "BSD-3-Clause-LBNL-001"
 
+otherIds: 
+  - "scancode:lbnl-bsd"

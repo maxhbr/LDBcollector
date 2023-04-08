@@ -9,3 +9,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "Trusster Open Source License version 1.0a"
 
+otherIds: 
+  - "scancode:tosl"

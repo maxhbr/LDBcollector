@@ -8,3 +8,5 @@ shortName: "Moxa-Technology"
 alternativeNames:
   - "Moxa Licence"
 
+otherIds: 
+  - "scancode:moxa-linux-firmware"

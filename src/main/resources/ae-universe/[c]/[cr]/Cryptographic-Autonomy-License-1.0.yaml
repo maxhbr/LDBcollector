@@ -7,6 +7,9 @@ spdxIdentifier: "CAL-1.0"
 
 alternativeNames:
   - "Cryptographic Autonomy License 1.0"
+  - "Cryptographic Autonomy License, v. 1.0"
+  - "http://cryptographicautonomylicense.com/license-text.html"
+  - "https://opensource.org/licenses/CAL-1.0"
 
 otherIds: 
   - "scancode:cal-1.0"

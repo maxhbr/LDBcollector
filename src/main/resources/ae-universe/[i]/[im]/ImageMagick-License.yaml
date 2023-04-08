@@ -9,3 +9,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "ImageMagick License"
 
+otherIds: 
+  - "scancode:imagemagick"

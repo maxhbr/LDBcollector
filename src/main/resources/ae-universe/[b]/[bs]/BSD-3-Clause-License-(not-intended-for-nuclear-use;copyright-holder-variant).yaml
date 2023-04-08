@@ -5,3 +5,5 @@ canonicalName: "BSD 3-Clause License (not intended for nuclear use; copyright ho
 category: "BSD"
 shortName: "BSD-3-Clause-No-Nuclear-Warranty-copyright-variant"
 
+otherIds: 
+  - "scancode:bsd-3-clause-no-nuclear-warranty"

@@ -12,3 +12,5 @@ alternativeNames:
   - "vim license"
   - "VIM licnese"
 
+otherIds: 
+  - "scancode:vim"

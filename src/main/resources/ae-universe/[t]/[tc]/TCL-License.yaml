@@ -9,3 +9,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "TCL License"
 
+otherIds: 
+  - "scancode:tcl"

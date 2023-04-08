@@ -14,3 +14,5 @@ alternativeNames:
   - "Classpath-exception"
   - "Classpath Exception"
 
+otherIds: 
+  - "scancode:classpath-exception-2.0"

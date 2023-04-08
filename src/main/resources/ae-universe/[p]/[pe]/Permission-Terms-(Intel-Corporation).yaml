@@ -8,3 +8,5 @@ shortName: "PT-Intel-Corporation"
 alternativeNames:
   - "Permission Terms (Intel Corporation)"
 
+otherIds: 
+  - "scancode:intel-osl-1993"

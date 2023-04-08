@@ -9,3 +9,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "FreeBSD Documentation License"
 
+otherIds: 
+  - "scancode:freebsd-doc"

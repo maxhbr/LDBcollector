@@ -15,3 +15,5 @@ alternativeNames:
   - "http://www.unicode.org/terms_of_use.html"
   - "GPL-1+ or Artistic, and Unicode"
 
+otherIds: 
+  - "scancode:unicode-tou"

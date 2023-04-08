@@ -8,3 +8,5 @@ shortName: "QualcommAtheros-Firmware"
 alternativeNames:
   - "QualcommAtheros Firmware License"
 
+otherIds: 
+  - "scancode:qca-linux-firmware"

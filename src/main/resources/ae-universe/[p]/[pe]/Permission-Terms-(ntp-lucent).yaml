@@ -8,3 +8,5 @@ shortName: "PT-ntp-lucent"
 alternativeNames:
   - "Permission Terms (ntp lucent)"
 
+otherIds: 
+  - "scancode:x11-lucent-variant"

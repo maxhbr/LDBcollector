@@ -8,3 +8,5 @@ shortName: "Google-TOS-2013"
 alternativeNames:
   - "Google Terms of Service"
 
+otherIds: 
+  - "scancode:google-tos-2013"

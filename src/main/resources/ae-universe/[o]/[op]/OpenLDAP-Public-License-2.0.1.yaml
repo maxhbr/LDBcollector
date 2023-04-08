@@ -12,3 +12,5 @@ alternativeNames:
   - "OLDAP License 2.0.1"
   - "Version 2.0.1, 21 December 1999"
 
+otherIds: 
+  - "scancode:openldap-2.0.1"

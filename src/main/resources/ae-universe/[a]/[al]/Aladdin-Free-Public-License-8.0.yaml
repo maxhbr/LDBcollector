@@ -10,3 +10,5 @@ openCoDEStatus: "not approved"
 alternativeNames:
   - "Aladdin Free Public License (Version 8, November 18, 1999)"
 
+otherIds: 
+  - "scancode:afpl-8.0"

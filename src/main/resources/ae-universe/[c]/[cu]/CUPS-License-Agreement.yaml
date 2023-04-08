@@ -9,3 +9,5 @@ alternativeNames:
   - "CUPS License"
   - "WWW: http://www.cups.org/"
 
+otherIds: 
+  - "scancode:cups"

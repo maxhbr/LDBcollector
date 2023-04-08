@@ -9,3 +9,5 @@ alternativeNames:
   - "libselinux public domain notice"
   - "libselinux-1.0"
 
+otherIds: 
+  - "scancode:selinux-nsa-declaration-1.0"

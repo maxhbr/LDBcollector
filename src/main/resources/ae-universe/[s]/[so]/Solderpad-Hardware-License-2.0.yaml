@@ -12,3 +12,5 @@ alternativeNames:
   - "SOLDERPAD HARDWARE LICENSE Version 2.0"
   - "SHL-2.0"
 
+otherIds: 
+  - "scancode:shl-2.0"

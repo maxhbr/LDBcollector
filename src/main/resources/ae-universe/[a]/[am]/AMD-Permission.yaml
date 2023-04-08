@@ -5,3 +5,5 @@ canonicalName: "AMD Permission"
 category: "AMD-Permission"
 shortName: "AMD-PT"
 
+otherIds: 
+  - "scancode:amd-linux-firmware-export"

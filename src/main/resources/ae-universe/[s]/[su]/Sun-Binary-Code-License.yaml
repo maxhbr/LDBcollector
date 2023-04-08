@@ -8,3 +8,5 @@ shortName: "Sun-Binary-Code"
 alternativeNames:
   - "Sun Microsystems, Inc. Binary Code License Agreement"
 
+otherIds: 
+  - "scancode:sun-bcl-11-06"
