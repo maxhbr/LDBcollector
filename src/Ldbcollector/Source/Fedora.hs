@@ -70,36 +70,6 @@ instance LicenseFactC FedoraEntry where
         ++ map LicenseText (maybeToList text)
         ++ map LicenseText (maybeToList notes)
 
-
--- applyFedoraEntry :: String -> FedoraEntry -> LicenseGraphTask
--- applyFedoraEntry id entry@(FedoraEntry fel@(FedoraEntryLicense
---             { _expression = expression
---             , _status = status
---             , _urls = urls
---             , _text = text
---             , _scancode_key = scancode_key
---         }) (FedoraEntryFedora
---             { _legacy_names = legacy_names
---             , _legacy_abbreviation = legacy_abbreviation
---             , _notes = notes
---         })) = 
---       EdgeLeft ( AddTs $ V.fromList [
---                 Add $ (Vec . map fromString) status,
---                 Add $ (Vec . map fromString) urls,
---                 maybeToTask fromString notes
---             ]
---        ) AppliesTo $
---       EdgeLeft (
---             maybeToTask (Add . LicenseName . newNLN "scancode" . pack) scancode_key
---        ) Better $
---       EdgeLeft (
---             Adds (V.fromList ( map (LicenseName . newLN . pack) (legacy_names <> legacy_abbreviation)))
---        ) (Potentially Better) $
---                 fromValue entry
---                     (const $ (LicenseName . newNLN "fedora" . pack) id)
---                     (Just . LicenseName . newNLN "spdx" . pack . _expression . _license)
-
-
 getEntry :: FilePath -> IO FedoraEntry
 getEntry json = do
     logFileReadIO json

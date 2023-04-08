@@ -1,8 +1,6 @@
-/* header {
-    position: fixed;
-    top: 0;
-    left: 0;
-} */
+body {
+    overflow: hidden;
+}
 
 #content {
     position: fixed;
@@ -11,15 +9,42 @@
     left: 0;
     bottom: 0;
     right: 0;
-    /* width: 100%; */
     height: 100%;
 }
 
-#content > * {
+header, #popup {
+    background-color: rgba(255, 255, 255, 0.501);
+    box-shadow: 10px 5px 20px  gray;
+    padding: 10px;
+}
+
+header {
     width: 300px;
-    background-color: white;
-    box-shadow: 10px 5px 5px  gray;
-    
+    display: table;
+    padding: 20px;
+}
+
+#popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 80%;
+    overflow: scroll;
+    /* left: 370px; */
+    /* bottom: 50px; */
+}
+#popup input[type="checkbox"] {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+}
+#popup input[type="checkbox"] ~ div {
+    display:none;
+}
+#popup input[type="checkbox"]:checked ~ div {
+    display:block;
 }
 
 #svgGraph {
@@ -32,10 +57,9 @@
     height: 100%;
 }
 
-form, input {
-    display: block;
+/* form, input {
     padding: 5px;
-}
+} */
 /* input[type='checkbox'] {
     display: block;
 } */

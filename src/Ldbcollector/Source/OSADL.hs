@@ -22,7 +22,9 @@ instance LicenseFactC OSADLRule where
     getApplicableLNs (OSADLRule id _) = NLN id `AlternativeLNs` [LN (setNS "spdx" id)]
     getImpliedStmts (OSADLRule _ rule) = let
             ruleLines = T.lines rule
-        in [ LicenseRule rule `SubStatements` [ "Copyleft" `ifToStmt` ("COPYLEFT CLAUSE Yes" `elem` ruleLines)
+        in [ LicenseRule rule `SubStatements` [ if "COPYLEFT CLAUSE Yes" `elem` ruleLines
+                                                then typestmt "Copyleft"
+                                                else MaybeStatement Nothing
                                               , "Patent hint" `ifToStmt` ("PATENT HINTS Yes" `elem` ruleLines)
                                               , "maybe Copyleft" `ifToStmt` ("COPYLEFT CLAUSE Questionable" `elem` ruleLines)
                                               ]

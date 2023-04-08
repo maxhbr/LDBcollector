@@ -41,6 +41,7 @@ library
       Ldbcollector.Source.FOSSLight
       Ldbcollector.Source.Fossology
       Ldbcollector.Source.FSF
+      Ldbcollector.Source.HitachiOpenLicense
       Ldbcollector.Source.Metaeffekt
       Ldbcollector.Source.OKFN
       Ldbcollector.Source.OSADL
@@ -76,6 +77,7 @@ library
     , hslogger
     , libyaml
     , mtl
+    , network-uri
     , opensource
     , pretty-terminal
     , scotty
@@ -121,6 +123,7 @@ executable ldbcollector-exe
     , ldbcollector
     , libyaml
     , mtl
+    , network-uri
     , opensource
     , pretty-terminal
     , scotty
@@ -171,6 +174,7 @@ test-suite ldbcollector-test
     , ldbcollector
     , libyaml
     , mtl
+    , network-uri
     , opensource
     , pretty-terminal
     , scotty

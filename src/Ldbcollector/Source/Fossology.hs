@@ -68,7 +68,10 @@ instance LicenseFactC FossologyEntry where
         [ MaybeStatement (fmap LicenseUrl (_rf_url entry))
         , MaybeStatement (fmap LicenseComment (_rf_notes entry))
         , LicenseText (_rf_text entry)
-        , MaybeStatement (fmap (ifToStmt "Copyleft") (_rf_copyleft entry))
+        , case _rf_copyleft entry of
+            Just True -> typestmt "Copyleft"
+            Just False -> typestmt "Permissive"
+            _ -> MaybeStatement Nothing
         , MaybeStatement (fmap (ifToStmt "OSIapproved") (_rf_OSIapproved entry))
         , MaybeStatement (fmap (ifToStmt "FSFfree") (_rf_FSFfree entry))
         , MaybeStatement (fmap (ifToStmt "GPLv2compatible") (_rf_GPLv2compatible entry))

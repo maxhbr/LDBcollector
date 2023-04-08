@@ -30,7 +30,7 @@ dependencies:
 - base16-bytestring
 - word-wrap
 - deepseq
-# network-uri
+- network-uri
 - vector
 - containers
 - unordered-containers

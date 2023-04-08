@@ -35,8 +35,8 @@ instance LicenseFactC MetaeffektLicense where
     getType _ = "MetaeffektLicense"
     getApplicableLNs l = let
             mainNames = maybeToList (_shortName l) ++ _canonicalName l: maybeToList (_spdxIdentifier l)
-        in alternativesFromListOfLNs mainNames `ImpreciseLNs` map LN (_alternativeNames l <> _otherIds l)
-    getImpliedStmts l = [mstmt (fmap ("CoDEStatus: " ++) (_openCoDEStatus l))]
+        in alternativesFromListOfLNs mainNames `ImpreciseLNs` map LN (_category l : _alternativeNames l <> _otherIds l)
+    getImpliedStmts l = [ mstmt (fmap ("CoDEStatus: " ++) (_openCoDEStatus l))]
 
 getMetaeffektLicense :: FilePath -> IO [MetaeffektLicense]
 getMetaeffektLicense yaml = do

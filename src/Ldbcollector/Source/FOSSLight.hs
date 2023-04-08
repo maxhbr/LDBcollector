@@ -155,7 +155,7 @@ instance LicenseFactC FOSSLightFact where
         map LN (maybeToList (_fossLight_SHORT_IDENTIFIER license))
         `ImpreciseLNs`
         map LN nicks
-    getImpliedStmts (FOSSLightFact license _) = [stmt (show (_fossLight_type license))]
+    getImpliedStmts (FOSSLightFact license _) = [typestmt (show (_fossLight_type license))]
 
 newtype FOSSLight = FOSSLight FilePath
 
