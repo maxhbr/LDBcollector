@@ -26,6 +26,31 @@ text = '''
 text here
 '''
 
+package = libinstpatch
+location = https://github.com/swami/libinstpatch/blob/v1.1.6/libinstpatch/md5.c#L2
+text = '''
+This code implements the MD5 message-digest algorithm.
+The algorithm is due to Ron Rivest.  This code was
+written by Colin Plumb in 1993, no copyright is claimed.
+This code is in the public domain; do with it what you wish.
+Equivalent code is available from RSA Data Security, Inc.
+This code has been tested against that, and is equivalent,
+except that you don't need to include two pages of legalese
+with every copy.
+'''
+
+package = libinstpatch
+location = https://github.com/swami/libinstpatch/blob/v1.1.6/examples/create_sf2.c#L11
+text = '''
+Use this example as you please (public domain)
+'''
+
+package = libinstpatch
+location = https://github.com/swami/libinstpatch/blob/v1.1.6/examples/split_sfont.c#L6
+text = '''
+Public domain use as you please
+'''
+
 package = perl
 location = https://github.com/Perl/perl5/blob/blead/ext/SDBM_File/sdbm.h#L4-L5
 text = '''
