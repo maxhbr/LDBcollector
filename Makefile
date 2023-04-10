@@ -1,5 +1,6 @@
 TOPDIR  := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 SRCDIR   = $(TOPDIR)/data
+GRAMMARDIR = $(TOPDIR)/grammar
 JSONDB   = $(TOPDIR)/fedora-licenses.json
 RPMLINT_SPDX = $(TOPDIR)/fedora-spdx-licenses.toml
 RPMLINT_LEGACY = $(TOPDIR)/fedora-legacy-licenses.toml
@@ -26,6 +27,14 @@ json:
 rpmlint:
 	$(TOPDIR)/tools/mkrpmlint.py $(SRCDIR) $(RPMLINT_SPDX) $(RPMLINT_LEGACY)
 
+grammar: json
+	$(GRAMMARDIR)/generate-spdx-ids.py $(JSONDB) > $(GRAMMARDIR)/fedora-spdx.txt
+	$(GRAMMARDIR)/create-grammar.py $(GRAMMARDIR)/grammar.lark \
+		$(GRAMMARDIR)/fedora-spdx.txt > $(GRAMMARDIR)/full-grammar.lark
+
+install-grammar: grammar
+	install -D -p $(GRAMMARDIR)/full-grammar.lark $(DESTDIR)$(DATADIR)/fedora-license-data/grammar.lark
+
 install-rpmlint:
 	install -D -p -m 0644 $(RPMLINT_SPDX) \
 		$(DESTDIR)$(ETCDIR)/xdg/rpmlint/$(shell basename $(RPMLINT_SPDX))
@@ -36,7 +45,10 @@ install-json:
 	install -D -p -m 0644 $(JSONDB) \
 		$(DESTDIR)$(DATADIR)/fedora-license-data/licenses/$(shell basename $(JSONDB))
 
-install: install-json install-rpmlint
+install: install-json install-rpmlint install-grammar
+
+check-grammar: grammar
+	$(GRAMMARDIR)/test-grammar.py --file $(GRAMMARDIR)/full-grammar.lark
 
 # this is not packaged. You may need
 #  pip install check-jsonschema
