@@ -9,6 +9,7 @@ import           Ldbcollector.Model
 import qualified Data.Vector as V
 import qualified Data.Text as T
 import qualified Data.Text.IO as T
+import qualified Text.Blaze.Html5                   as H
 
 data OSADLRule
   = OSADLRule
@@ -29,6 +30,7 @@ instance LicenseFactC OSADLRule where
                                               , "maybe Copyleft" `ifToStmt` ("COPYLEFT CLAUSE Questionable" `elem` ruleLines)
                                               ]
            ]
+    toMarkup (OSADLRule _ rule) = H.pre (H.toMarkup rule)
 
 getOSADL :: FilePath -> IO OSADLRule
 getOSADL osadl = do

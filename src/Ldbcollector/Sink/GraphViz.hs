@@ -27,6 +27,9 @@ import qualified Data.Text.Lazy                     as LT
 import qualified Data.Text.Lazy.IO                  as LT
 import qualified Text.Wrap                          as TW
 
+instance GV.Labellable FactId where
+    toLabelValue (FactId ty hash) = GV.toLabelValue (ty ++ "\n" ++ hash)
+
 instance GV.Labellable LicenseStatement where
     toLabelValue (LicenseStatement stmt) = GV.toLabelValue stmt
     toLabelValue (LicenseUrl url) = GV.toLabelValue url

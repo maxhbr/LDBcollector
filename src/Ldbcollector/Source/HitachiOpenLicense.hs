@@ -4,7 +4,7 @@
 {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE TemplateHaskell #-}
 module Ldbcollector.Source.HitachiOpenLicense
-  (
+  ( HitachiOpenLicense(..)
   )
   where
 
@@ -27,6 +27,7 @@ import qualified Data.Text as T
 import           Data.Maybe (catMaybes, maybeToList)
 import qualified Data.Vector as V
 import           Network.URI (parseURI)
+import qualified Text.Blaze.Html5        as H
 
 type URL
   = String
@@ -53,34 +54,21 @@ instance C.DefaultOrdered TranslationRow where
 normalizeKey :: String -> String
 normalizeKey = filter (not . Char.isSpace)
 
-class Translateable a where
-  getTranslateables :: a -> Set String
-  translate :: a -> a
-
-instance (Translateable a) => Translateable [a] where
-  getTranslateables = S.unions . map getTranslateables
-  translate = map translate
-instance (Translateable a) => Translateable (Maybe a) where
-  getTranslateables (Just a) = getTranslateables a
-  getTranslateables Nothing  = S.empty
-  translate (Just a) = Just (translate a)
-  translate Nothing  = Nothing
-
-translationsCSV :: Data.ByteString.ByteString
-translationsCSV = $(embedFile "data/Hitachi-open-license.translations.csv")
-translations :: Map String (Maybe String)
-translations = M.fromList . map (\(TranslationRow ja en) -> (normalizeKey ja
-                                                            , case en of
-                                                                ""  -> Nothing
-                                                                en' -> Just en')) . V.toList $
-    case (C.decodeByName (B.fromStrict translationsCSV) :: Either String (C.Header, V.Vector TranslationRow)) of
-        Right (_, rows) -> rows
-        Left err -> V.empty
-translateString :: String -> Maybe String
-translateString "" = Just ""
-translateString ja = case normalizeKey ja `M.lookup` translations of
+type TranslationMap = Map String (Maybe String)
+translateString :: TranslationMap -> String -> Maybe String
+translateString _            "" = Just ""
+translateString translations ja = case normalizeKey ja `M.lookup` translations of
     Just v -> v
     _      -> Nothing
+
+class Translateable a where
+  translate :: TranslationMap -> a -> a
+
+instance (Translateable a) => Translateable [a] where
+  translate translations = map (translate translations)
+instance (Translateable a) => Translateable (Maybe a) where
+  translate translations (Just a) = Just (translate translations a)
+  translate _ Nothing = Nothing
 
 -- #############################################################################
 -- #### Text ###################################################################
@@ -102,18 +90,17 @@ instance Show OlText where
     in case M.toList m of
       (_, v):_ -> M.findWithDefault v english m
       _        -> ""
+instance H.ToMarkup OlText where
+    toMarkup olt = fromString $ show olt
 instance Translateable OlText where
-  getTranslateables (OlText m) = case "ja" `M.lookup` m of
-    Just v -> S.singleton v
-    _      -> S.empty
-  translate t@(OlText m) = let
+  translate translations t@(OlText m) = let
       ja = M.findWithDefault "" "ja" m
       en = case "en" `M.lookup` m of
         Just "" -> Nothing
         en'     -> en'
     in case en of
       Just _ -> t
-      _      -> case translateString ja of
+      _      -> case translateString translations ja of
         Just en' -> OlText $ M.insert "en" en' m
         Nothing  -> t
 instance ToJSON OlText where
@@ -153,8 +140,7 @@ newtype DataWrapped a
 unwrapList :: [DataWrapped a] -> [a]
 unwrapList = map unwrap
 instance (Translateable a) => Translateable (DataWrapped a) where
-  getTranslateables (DataWrapped a) = getTranslateables a
-  translate (DataWrapped a) = DataWrapped (translate a)
+  translate translations (DataWrapped a) = DataWrapped (translate translations a)
 instance (ToJSON a) => ToJSON (DataWrapped a) where
   toJSON (DataWrapped a) = toJSON a
 instance (FromJSON a) => FromJSON (DataWrapped a) where
@@ -165,23 +151,31 @@ instance (FromJSON a) => FromJSON (DataWrapped a) where
 -- #### Ref ####################################################################
 -- #############################################################################
 
-newtype OlRef
+data OlRef a
   = OlRef String
+  | Ol a
   deriving (Generic, Eq)
-instance FromJSON OlRef where
+deriving instance (Show a) => Show (OlRef a)
+instance FromJSON (OlRef a) where
   parseJSON = withObject "OlRef" $ \v -> OlRef
     <$> v .: "ref"
+instance (ToJSON a) => ToJSON (OlRef a)
 
-class OlRefable a where
-  getRef :: a -> OlRef
-  matchesRef :: a -> OlRef -> Bool
-  matchesRef a ref = getRef a == ref
-  getForOlRef :: [a] -> OlRef -> Maybe a
-  getForOlRef list ref = case filter (`matchesRef` ref) list of
-    a:_ -> Just a
-    _   -> Nothing
-  getForOlRefs :: [a] -> [OlRef] -> [a]
-  getForOlRefs list = catMaybes . map (getForOlRef list)
+instance (Translateable a) => Translateable (OlRef a) where
+  translate translations (Ol a) = Ol (translate translations a)
+  translate _ a = a
+
+class (Eq a) => OlRefable a where
+    getRef :: a -> String
+    matchesRef :: a -> String -> Bool
+    matchesRef a ref = getRef a == ref
+    unOlRef :: [a] -> OlRef a -> OlRef a
+    unOlRef list (OlRef ref) = case find (`matchesRef` ref) list of
+        Just a -> Ol a
+        _   -> OlRef ref
+    unOlRef _ a = a
+    unOlRefs :: [a] -> [OlRef a] -> [OlRef a]
+    unOlRefs list = map (unOlRef list)
 
 -- #############################################################################
 -- #### Action #################################################################
@@ -199,9 +193,8 @@ data OlAction
 instance Show OlAction where
   show a = unwords (show (_action_name a) : map (\d -> "(" ++ d ++ ")") (olTextToList (_action_description a)))
 instance Translateable OlAction where
-  getTranslateables a = getTranslateables (_action_name a) `S.union` getTranslateables (_action_description a)
-  translate a = a { _action_name = translate (_action_name a)
-                  , _action_description = translate (_action_description a)}
+  translate translations a = a { _action_name = translate translations (_action_name a)
+                               , _action_description = translate translations (_action_description a)}
 instance ToJSON OlAction where
   toJSON a = objectWithoutEmpty [ "name" .= toJSON (_action_name a)
                                 , "description" .= toJSON (_action_description a)
@@ -216,7 +209,7 @@ instance FromJSON OlAction where
     <*> v .: "name"
     <*> v .: "description"
 instance OlRefable OlAction where
-  getRef = OlRef . _action_id
+  getRef = _action_id
 
 -- #############################################################################
 -- #### Condition ##############################################################
@@ -245,9 +238,8 @@ instance Show OlCondition where
                     , show (_condition_name c)
                     ] ++ map (\d -> "(" ++ d ++ ")") (olTextToList (_condition_description c)))
 instance Translateable OlCondition where
-  getTranslateables c = getTranslateables (_condition_name c) `S.union` getTranslateables (_condition_description c)
-  translate c = c { _condition_name = translate (_condition_name c)
-                  , _condition_description = translate (_condition_description c)}
+  translate translations c = c { _condition_name = translate translations (_condition_name c)
+                               , _condition_description = translate translations (_condition_description c)}
 instance ToJSON OlCondition where
   toJSON c = objectWithoutEmpty [ "name" .= toJSON (_condition_name c)
                                 , "description" .= toJSON (_condition_description c)
@@ -264,7 +256,7 @@ instance FromJSON OlCondition where
     <*> v .: "name"
     <*> v .: "description"
 instance OlRefable OlCondition where
-  getRef = OlRef . _condition_id
+  getRef = _condition_id
 
 -- #############################################################################
 -- #### ConditionTree ##########################################################
@@ -273,7 +265,7 @@ instance OlRefable OlCondition where
 data OlConditionTree
   = OlConditionTreeAnd [OlConditionTree]
   | OlConditionTreeOr [OlConditionTree]
-  | OlConditionTreeLeaf OlCondition
+  | OlConditionTreeLeaf (OlRef OlCondition)
   deriving (Generic, Eq)
 addIndentation :: [String] -> [String]
 addIndentation = map (unlines . map ("  " ++) . lines)
@@ -282,12 +274,9 @@ instance Show  OlConditionTree where
   show (OlConditionTreeOr as)  = concat ("OR\n": addIndentation (map show as))
   show (OlConditionTreeLeaf a) = show a
 instance Translateable OlConditionTree where
-  getTranslateables (OlConditionTreeAnd as) = getTranslateables as
-  getTranslateables (OlConditionTreeOr as)  = getTranslateables as
-  getTranslateables (OlConditionTreeLeaf a) = getTranslateables a
-  translate (OlConditionTreeAnd as) = OlConditionTreeAnd (translate as)
-  translate (OlConditionTreeOr as)  = OlConditionTreeOr (translate as)
-  translate (OlConditionTreeLeaf a) = OlConditionTreeLeaf (translate a)
+  translate translations (OlConditionTreeAnd as) = OlConditionTreeAnd (translate translations as)
+  translate translations (OlConditionTreeOr as)  = OlConditionTreeOr (translate translations as)
+  translate translations (OlConditionTreeLeaf a) = OlConditionTreeLeaf (translate translations a)
 instance ToJSON OlConditionTree where
   toJSON (OlConditionTreeAnd as) = object [ "AND" .=  toJSON as ]
   toJSON (OlConditionTreeOr as)  = object [ "OR" .= toJSON as ]
@@ -334,8 +323,9 @@ instance FromJSON OlConditionTree where
       leafParser v = fmap ((\case
                                Just con -> OlConditionTreeLeaf con
                                Nothing  -> emptyConditionTree)
-                            . getForOlRef conditions)
-                     (parseJSON (Object v) :: Parser OlRef)
+                            . Just -- TODO: ??
+                            )
+                     (parseJSON (Object v) :: Parser (OlRef OlCondition))
     in withObject "OlConditionTree" $ \v -> do
       treeType <- v .: "type" :: Parser String
       case treeType of
@@ -343,6 +333,11 @@ instance FromJSON OlConditionTree where
          "OR"   -> orParser v
          "LEAF" -> leafParser v
          _      -> undefined
+
+unOlRefsConditionTree :: [OlAction] -> [OlCondition] -> [OlNotice] -> OlConditionTree -> OlConditionTree
+unOlRefsConditionTree actions conditions notices (OlConditionTreeAnd as) = OlConditionTreeAnd  $ map (unOlRefsConditionTree actions conditions notices) as
+unOlRefsConditionTree actions conditions notices (OlConditionTreeOr as)  = OlConditionTreeOr   $ map (unOlRefsConditionTree actions conditions notices) as
+unOlRefsConditionTree actions conditions notices (OlConditionTreeLeaf a) = OlConditionTreeLeaf $ unOlRef conditions a
 
 -- #############################################################################
 -- #### Notice #################################################################
@@ -358,9 +353,8 @@ data OlNotice
   , _notice_description :: OlText
   } deriving (Generic, Eq, Show)
 instance Translateable OlNotice where
-  getTranslateables n = getTranslateables (_notice_content n) `S.union` getTranslateables (_notice_description n)
-  translate n = n { _notice_content = translate (_notice_content n)
-                  , _notice_description = translate (_notice_description n)}
+  translate translations n = n { _notice_content = translate translations (_notice_content n)
+                               , _notice_description = translate translations (_notice_description n)}
 instance ToJSON OlNotice where
   toJSON n = objectWithoutEmpty [ "content" .= toJSON (_notice_content n)
                                 , "description" .= toJSON (_notice_description n)
@@ -375,7 +369,7 @@ instance FromJSON OlNotice where
     <*> v .: "content"
     <*> v .: "description"
 instance OlRefable OlNotice where
-  getRef = OlRef . _notice_id
+  getRef = _notice_id
 
 -- #############################################################################
 -- #### License ################################################################
@@ -385,7 +379,7 @@ data OlPermission
   = OlPermission
   { _permission_summary :: OlText
   , _permission_description :: OlText
-  , _permission_actions :: [OlAction]
+  , _permission_actions :: [OlRef OlAction]
   , _permission_conditionHead :: Maybe OlConditionTree
   } deriving (Generic, Eq)
 instance Show OlPermission where
@@ -398,15 +392,10 @@ instance Show OlPermission where
         Nothing -> ["Conditions: None"]
     in unlines (summary ++ description ++ [actions] ++ conditions)
 instance Translateable OlPermission where
-  getTranslateables p =
-    getTranslateables (_permission_summary p)
-    `S.union` getTranslateables (_permission_description p)
-    `S.union` getTranslateables (_permission_actions p)
-    `S.union` getTranslateables (_permission_conditionHead p)
-  translate p = p { _permission_summary = translate (_permission_summary p)
-                  , _permission_description = translate (_permission_description p)
-                  , _permission_actions = translate (_permission_actions p)
-                  , _permission_conditionHead = translate (_permission_conditionHead p)}
+  translate translations p = p { _permission_summary = translate translations (_permission_summary p)
+                               , _permission_description = translate translations (_permission_description p)
+                               , _permission_actions = translate translations (_permission_actions p)
+                               , _permission_conditionHead = translate translations (_permission_conditionHead p)}
 instance ToJSON OlPermission where
   toJSON p = objectWithoutEmpty [ "summary" .= toJSON (_permission_summary p)
                                 , "description" .= toJSON (_permission_description p)
@@ -418,10 +407,16 @@ instance FromJSON OlPermission where
   parseJSON = withObject "OlPermission" $ \v -> OlPermission
     <$> v .: "summary"
     <*> v .: "description"
-    <*> (fmap (getForOlRefs actions) (v .: "actions" :: Parser [OlRef]) :: Parser [OlAction])
+    <*> (v .: "actions" :: Parser [OlRef OlAction])
     <*> v .:? "conditionHead"
 prettyPrintPermissions :: [OlPermission] -> String
 prettyPrintPermissions = Char8.unpack . encodePretty
+
+unOlRefPermission :: [OlAction] -> [OlCondition] -> [OlNotice] -> OlPermission -> OlPermission
+unOlRefPermission actions conditions notices permission@(OlPermission{_permission_actions = permission_actions, _permission_conditionHead = permission_conditionHead}) =
+    permission { _permission_actions = unOlRefs actions permission_actions
+               , _permission_conditionHead = fmap (unOlRefsConditionTree actions conditions notices) permission_conditionHead
+               }
 
 data OlLicense
  = OlLicense
@@ -433,20 +428,15 @@ data OlLicense
  , _license_summary :: OlText
  , _license_description :: OlText
  , _license_permissions :: [OlPermission]
- , _license_notices :: [OlNotice]
+ , _license_notices :: [OlRef OlNotice]
  , _license_content :: Text
  } deriving (Generic, Eq, Show)
 instance Translateable OlLicense where
-  getTranslateables l =
-    getTranslateables (_license_summary l)
-    `S.union` getTranslateables (_license_description l)
-    `S.union` getTranslateables (_license_permissions l)
-    `S.union` getTranslateables (_license_notices l)
-  translate l = l
-    { _license_summary = translate (_license_summary l)
-    , _license_description = translate (_license_description l)
-    , _license_permissions = translate (_license_permissions l)
-    , _license_notices = translate (_license_notices l) }
+  translate translations l = l
+    { _license_summary = translate translations (_license_summary l)
+    , _license_description = translate translations (_license_description l)
+    , _license_permissions = translate translations (_license_permissions l)
+    , _license_notices = translate translations (_license_notices l) }
 instance ToJSON OlLicense where
   toJSON l = objectWithoutEmpty [ "name"           .= toJSON (_license_name l)
                                 , "summary"        .= toJSON (_license_summary l)
@@ -462,13 +452,18 @@ instance FromJSON OlLicense where
     <*> v .: "uri"
     <*> v .: "baseUri"
     <*> v .: "id"
-    <*> v .: "name"
+    <*> (setNS "hitachi" <$> v .: "name")
     <*> v .: "summary"
     <*> v .: "description"
     <*> v .: "permissions"
-    <*> (fmap (getForOlRefs notices) (v .: "notices" :: Parser [OlRef]) :: Parser [OlNotice])
+    <*> v .: "notices"
     <*> fmap (T.filter (/= '\r')) (v .: "content" :: Parser Text)
 
+unOlRefLicense :: [OlAction] -> [OlCondition] -> [OlNotice] -> OlLicense -> OlLicense
+unOlRefLicense actions conditions notices (license@OlLicense{_license_notices = license_notices, _license_permissions = license_permissions}) =
+    license { _license_notices = unOlRefs notices license_notices
+            , _license_permissions = map (unOlRefPermission actions conditions notices) license_permissions
+            }
 
 -- #############################################################################
 -- #### fixes ##################################################################
@@ -574,6 +569,107 @@ fixName = maybeToList . (`M.lookup` nameFixes)
 -- #### general ################################################################
 -- #############################################################################
 
+olRefToMarkup :: (a -> H.Markup) -> OlRef a -> H.Markup
+olRefToMarkup _ (OlRef ref) = H.toMarkup ref
+olRefToMarkup f (Ol a) = f a
+
+conditionToMarkup :: OlCondition -> H.Markup
+conditionToMarkup (OlCondition { _condition_schemaVersion=condition_schemaVersion
+                               , _condition_uri=condition_uri
+                               , _condition_baseUri=condition_baseUri
+                               , _condition_id=condition_id
+                               , _condition_conditionType=condition_conditionType
+                               , _condition_name=condition_name
+                               , _condition_description=condition_description}) = do
+                                H.b (fromString (show condition_conditionType))
+                                ": "
+                                fromString (show condition_name)
+                                H.br
+                                fromString (show condition_description)
+
+conditionTreeToMarkup :: OlConditionTree -> H.Markup
+conditionTreeToMarkup (OlConditionTreeAnd ands) = do
+    H.b "AND"
+    H.ul $ mapM_ (H.li . conditionTreeToMarkup) ands
+conditionTreeToMarkup (OlConditionTreeOr ors) = do
+    H.b "OR"
+    H.ul $ mapM_ (H.li . conditionTreeToMarkup) ors
+conditionTreeToMarkup (OlConditionTreeLeaf condition) = olRefToMarkup conditionToMarkup condition
+
+actionToMarkup :: OlAction -> H.Markup
+actionToMarkup (OlAction { _action_schemaVersion=action_schemaVersion
+                             , _action_uri=action_uri
+                             , _action_baseUri=action_baseUri
+                             , _action_id=action_id
+                             , _action_name=action_name
+                             , _action_description=action_description}) =
+                                 do
+                                    H.b (H.toMarkup action_name)
+                                    ": "
+                                    H.br
+                                    H.span (H.toMarkup action_description)
+
+permissionToMarkup :: OlPermission -> H.Markup
+permissionToMarkup OlPermission { _permission_summary=permission_summary
+                                    , _permission_description=permission_description
+                                    , _permission_actions=permission_actions
+                                    , _permission_conditionHead=permission_conditionHead} = do
+                                        unless (isEmptyOlText permission_summary) $ do
+                                            H.h5 "Summary:"
+                                            H.span (H.toMarkup permission_summary)
+                                        unless (isEmptyOlText permission_description) $ do
+                                            H.h5 "Description:"
+                                            H.span (H.toMarkup permission_description)
+                                        H.h5 "Actions:"
+                                        H.ul $ mapM_ (H.li . olRefToMarkup actionToMarkup) permission_actions
+                                        H.h5 "Conditions:"
+                                        case permission_conditionHead of
+                                            Just conditionTree -> conditionTreeToMarkup conditionTree
+                                            Nothing -> H.span "None"
+
+noticeToMarkup :: OlNotice -> H.Markup
+noticeToMarkup (OlNotice {_notice_schemaVersion=notice_schemaVersion
+                         , _notice_uri=notice_uri
+                         , _notice_baseUri=notice_baseUri
+                         , _notice_id=notice_id
+                         , _notice_content=notice_content
+                         , _notice_description=notice_description}) = do
+                            unless (isEmptyOlText notice_description) $ do
+                                H.h5 "Description:"
+                                H.span (H.toMarkup notice_description)
+                            H.h5 "Content:"
+                            H.span (H.toMarkup notice_content)
+
+
+
+instance LicenseFactC OlLicense where
+    getType _ = "HitachiOpenLicense"
+    getApplicableLNs (OlLicense {_license_name = license_name}) = NLN license_name `AlternativeLNs` map LN (fixName license_name)
+    toMarkup (OlLicense { _license_schemaVersion=license_schemaVersion
+                        , _license_uri=license_uri
+                        , _license_baseUri=license_baseUri
+                        , _license_id=license_id
+                        , _license_name=license_name
+                        , _license_summary=license_summary
+                        , _license_description=license_description
+                        , _license_permissions=license_permissions
+                        , _license_notices=license_notices
+                        , _license_content=license_content
+                        })
+      = do
+        unless (isEmptyOlText license_summary) $ do
+            H.h4 "Summary:"
+            H.span (fromString (show license_summary))
+        unless (isEmptyOlText license_description) $ do
+            H.h4 "Description:"
+            H.span (fromString (show license_description))
+        H.h4 "Permissions:"
+        H.ul $ mapM_ (H.li . permissionToMarkup) license_permissions
+        H.h4 "Notices:"
+        H.ul $ mapM_ (H.li . olRefToMarkup noticeToMarkup) license_notices
+        H.h4 "Content:"
+        H.pre (H.toMarkup license_content)
+
 data HitachiOpenLicense = HitachiOpenLicense FilePath FilePath
 
 instance Source HitachiOpenLicense where
@@ -584,14 +680,21 @@ instance Source HitachiOpenLicense where
             noticesFile = dir </> "notices.json"
             licensesFile = dir </> "licenses.json"
         in do
-
+            translationsCsvContent <- B.readFile translationsCSV
+            let translations :: TranslationMap
+                translations = M.fromList . map (\(TranslationRow ja en) -> (normalizeKey ja
+                                                                        , case en of
+                                                                            ""  -> Nothing
+                                                                            en' -> Just en')) . V.toList $
+                    case (C.decodeByName translationsCsvContent :: Either String (C.Header, V.Vector TranslationRow)) of
+                        Right (_, rows) -> rows
+                        Left err -> V.empty
 
             actionsFileContent <- B.readFile actionsFile
             let actions :: [OlAction]
                 actions = case eitherDecode actionsFileContent of
                             Right actions -> unwrapList actions
                             Left err      -> trace ("ERR: Failed to parse actions JSON: " ++ err) []
-
 
             conditionsFileContent <- B.readFile conditionsFile
             let conditions :: [OlCondition]
@@ -610,46 +713,6 @@ instance Source HitachiOpenLicense where
                 licenses = case eitherDecode licensesFileContent of
                                 Right lics -> unwrapList lics
                                 Left err   -> trace ("ERR: Failed to parse licenses JSON: " ++ err) []
-            undefined
+            let finalLicenses = map ( translate translations . unOlRefLicense actions conditions notices) licenses
 
--- -- actionsFile :: Data.ByteString.ByteString
--- -- actionsFile = $(embedFile "data/hitachi-open-license/actions.json")
--- -- conditionsFile :: Data.ByteString.ByteString
--- -- conditionsFile = $(embedFile "data/hitachi-open-license/conditions.json")
--- -- noticesFile :: Data.ByteString.ByteString
--- -- noticesFile = $(embedFile "data/hitachi-open-license/notices.json")
--- -- licensesFile :: Data.ByteString.ByteString
--- -- licensesFile = $(embedFile "data/hitachi-open-license/licenses.json")
--- -- translationsCSV :: Data.ByteString.ByteString
--- -- translationsCSV = $(embedFile "data/hitachi-open-license/translations.csv")
-
--- loadOpenLicenseFacts :: IO Facts
--- loadOpenLicenseFacts = let
---     toFact lic = LicenseFact (Just (_license_uri lic)) lic
---   in logThatFactsWithNumberAreLoadedFrom "Hitachi open-license" $ do
---   (return . V.map toFact . V.map translate . V.fromList) licenses
-
--- loadOpenLicenseTranslateables :: [TranslationRow]
--- loadOpenLicenseTranslateables = (map (\t -> TranslationRow t (fromMaybe "" (translateString t)))
---                                   . filter (\s -> not (length s < 100 && isJust $ parseURI s))
---                                   . S.toList
---                                   . getTranslateables) licenses
-
--- instance LicenseFactClassifiable OlLicense where
---   getLicenseFactClassifier _ = olLFC
--- instance LFRaw OlLicense where
---   getLicenseFactVersion ole = LFVersion "429ef37c6f3f057e724b04db0a6cd94fa1aa2db9"
---   getImpliedNames ole       = CLSR (_license_name ole : fixName (_license_name ole))
---   getImpliedFullName ole    = mkRLSR ole 40 (_license_name ole)
---   getImpliedURLs ole        = CLSR [(Just "open-license", _license_uri ole)]
---   getImpliedText ole        = mkRLSR ole 30 (_license_content ole)
---   getImpliedComments ole    = let
---       permsL = case _license_permissions ole of
---         [] -> []
---         ps -> [prettyPrintPermissions ps]
---     in case olTextToList (_license_summary ole) ++ olTextToList (_license_description ole) of
---          [] -> NoSLSR
---          cs -> mkSLSR ole cs
---   -- getImpliedDescription ole = case olTextToRLSR ole (_license_description ole) of
---   --   NoRLSR -> olTextToRLSR ole (_license_summary ole)
---   --   rlsr   -> rlsr
+            (return . V.fromList) (wrapFacts finalLicenses)

@@ -37,6 +37,7 @@ instance S.FromField LicenseName where
 data FOSSLight_Nick
   = FOSSLight_Nick LicenseName LicenseName
   deriving (Show, Eq, Generic)
+instance ToJSON FOSSLight_Nick
 instance S.FromRow FOSSLight_Nick where
     fromRow = FOSSLight_Nick <$> S.field <*> S.field
 
@@ -62,6 +63,7 @@ instance S.FromField FOSSLight_License_Type where
     "PMS" -> S.Ok FOSSLight_License_Type_Permissive
     "WCP" -> S.Ok FOSSLight_License_Type_Weak_Copyleft
     _     -> S.returnError S.ConversionFailed f "failed to parse FOSSLight_License_Type"
+instance ToJSON FOSSLight_License_Type
 
 
 --     CREATE TABLE `LICENSE_MASTER` (
@@ -108,6 +110,7 @@ data FOSSLight_License
   , _fossLight_REQ_LICENSE_TEXT          :: Bool                    -- 17    `REQ_LICENSE_TEXT_YN` char(1) DEFAULT 'N' COMMENT 'LICENSE TEXT 필수 입력 여부, MIT LIKE, BSD LIKE만 적용',
   , _fossLight_RESTRICTION               :: Maybe Text              -- 18    `RESTRICTION` varchar(100) DEFAULT NULL,
   } deriving (Show, Eq, Generic)
+instance ToJSON FOSSLight_License
 
 instance S.FromField () where
   fromField _ = S.Ok ()
@@ -142,9 +145,7 @@ data FOSSLightFact
   { _FOSSLightFact_License :: FOSSLight_License
   , _FOSSLightFact_Nicks :: [LicenseName]
   } deriving (Show, Eq, Generic)
-instance ToJSON FOSSLightFact where
-  toJSON (FOSSLightFact license _) =
-    object [ "name" A..= _fossLight_name license ] -- TODO
+instance ToJSON FOSSLightFact
 
 
 instance LicenseFactC FOSSLightFact where

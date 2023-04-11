@@ -34,13 +34,14 @@ import           System.FilePath            as X
 import           System.FilePath.Glob       as X (glob)
 import           System.IO                  as X (hPutStrLn, stderr)
 import           System.Log.Logger          as X
+import           Text.Blaze                 as X (Markup)
 import           System.Log.Handler.Syslog
 import           System.Log.Handler.Simple
 import           System.Log.Handler (setFormatter)
 import           System.Log.Formatter
 import           Control.DeepSeq            as X (force, NFData (..), rwhnf)
 
-import           System.Console.Pretty               (Color (Green), color)
+import           System.Console.Pretty               (Color (Yellow), color)
 
 tShow :: (Show a) => a -> Text
 tShow = pack . show
@@ -58,7 +59,7 @@ logFileReadIO msg = debugM rootLoggerName ("read: " ++ msg)
 infoLogIO :: String -> IO ()
 infoLogIO msg = infoM rootLoggerName msg
 stderrLogIO :: String -> IO ()
-stderrLogIO msg = errorM rootLoggerName (color Green msg)
+stderrLogIO msg = errorM rootLoggerName (color Yellow msg)
 
 setupLogger :: IO ()
 setupLogger = do

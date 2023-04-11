@@ -30,6 +30,7 @@ import qualified Data.Graph.Inductive.Graph        as G
 import Data.FileEmbed (embedFile)
 import           Web.Scotty as S
 import qualified Network.Wai.Handler.Warp as Warp
+import Data.Yaml (ParseException(_anchorName))
 
 myOptions :: S.Options
 myOptions = S.Options 1 (Warp.setPort 3000 (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
@@ -49,6 +50,8 @@ genSvg tmpdir lic licenseGraph = do
 stylesheet :: Data.ByteString.ByteString
 stylesheet = $(embedFile "src/assets/styles.css")
 
+scriptJs :: Data.ByteString.ByteString
+scriptJs = $(embedFile "src/assets/script.js")
 
 listPageAction :: [[LicenseName]] -> ActionM ()
 listPageAction clusters = do
@@ -59,8 +62,23 @@ listPageAction clusters = do
                     H.li (H.ul $ mapM_ (H.li . (\n -> H.a H.! A.href ((H.toValue . ("./svg/"++)) n) $ H.toMarkup n) . show) cluster)) clusters
     html (BT.renderHtml page)
 
-formHtml :: [S.Param] -> LicenseGraph -> [Origin] -> IO H.Html
-formHtml params licenseGraph origins = do
+printFacts :: FactId -> LicenseGraph -> IO H.Html
+printFacts factId licenseGraph = do
+    (facts,_) <-
+        runLicenseGraphM' licenseGraph $
+            MTL.gets (filter (\(_,f) -> getFactId f == factId) . Map.keys . _facts)
+    return . H.html $ do
+        mapM_ (\(origin,fact) -> do
+            H.h1 (H.toMarkup (show origin))
+            H.h2 (H.toMarkup (show (getFactId fact)))
+            toMarkup fact
+            H.h3 "JSON"
+            H.pre (H.toMarkup (let
+                                onerror _ _ = Just '_'
+                            in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))) facts
+
+mainPage :: [S.Param] -> LicenseGraph -> [Origin] -> IO H.Html
+mainPage params licenseGraph origins = do
     let paramMap = Map.fromList params
         licRaw = Map.findWithDefault "BSD-3-Clause" "license" paramMap
         lic = (fromText . T.toStrict) licRaw :: LicenseName
@@ -101,57 +119,58 @@ formHtml params licenseGraph origins = do
                 H.script H.! A.src "https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" $
                     pure ()
             H.body $ do
+                H.input H.! A.type_ "checkbox" H.! A.id "svgCheckbox"
                 H.div H.! A.id "svgGraph" $ do
                     H.preEscapedToMarkup svg
-                H.div H.! A.id "content" $ do
-                    H.header $ do
-                        H.h1 (H.toMarkup licRaw)
-                        H.form H.! A.action "" $ do
-                            H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
-                            H.datalist H.! A.id "licenses" $
-                                mapM_ (\license -> H.option H.! A.value (fromString $ show license) $ pure ()) allLicenseNames
-                            H.h4 "Origins"
-                            H.ul $
-                                mapM_ (\(Origin origin) -> H.li $ do
-                                        if Origin origin `elem` enabledOrigins
-                                            then H.input H.! A.type_ "checkbox" H.! A.name (fromString origin) H.! A.value "on" H.! A.checked "checked"
-                                            else H.input H.! A.type_ "checkbox" H.! A.name (fromString origin) H.! A.value "on"
-                                        H.label H.! A.for (fromString origin) $ fromString origin
-                                    ) origins
-                            H.h4 "Options"
-                            H.ul $ do
-                                H.li $ do
-                                    if "on" == Map.findWithDefault "" "onlyLNs" paramMap
-                                        then H.input H.! A.type_ "checkbox" H.! A.name "onlyLNs" H.! A.value "on" H.! A.checked "checked"
-                                        else H.input H.! A.type_ "checkbox" H.! A.name "onlyLNs" H.! A.value "on"
-                                    H.label H.! A.for (fromString "onlyLNs") $ fromString "onlyLNs"
-                            H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
-                    H.div H.! A.id "popup" $ do
-                        H.input H.! A.type_ "checkbox" H.! A.id "popupCheckbox"
-                        H.div $ do
-                            H.ul $ mapM_ (H.li . fromString . show) allPotentialLicenseNames
-                            H.ul $ mapM_ (\fact -> H.li $ do
-                                H.h3 (H.toMarkup (getFactId fact))
-                                -- H.pre (H.toMarkup (let
-                                --                     onerror _ _ = Just '_'
-                                --                 in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))
-                                ) facts
-                            H.pre $
-                                H.toMarkup (G.prettify lnsubgraph)
-                H.script $ do
-                    "var element = document.querySelector('#svgGraph');"
-                    "var instance = panzoom(element, {"
-                    "    zoomSpeed: 0.065,"
-                    "    filterKey: function(/* e, dx, dy, dz */) {return true;}"
-                    "});"
-                    "const checkbox = document.getElementById('popupCheckbox');"
-                    "checkbox.addEventListener('change', (event) => {"
-                    "   if (event.currentTarget.checked) {"
-                    "    instance.pause();"
-                    "  } else {"
-                    "    instance.resume();"
-                    "  }"
-                    "});"
+                -- ########################################################
+                -- ########################################################
+                -- ########################################################
+                H.header $ do
+                    H.h1 (H.toMarkup licRaw)
+                    H.form H.! A.action "" $ do
+                        H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
+                        H.datalist H.! A.id "licenses" $
+                            mapM_ (\license -> H.option H.! A.value (fromString $ show license) $ pure ()) allLicenseNames
+                        H.h4 "Origins"
+                        H.ul $
+                            mapM_ (\(Origin origin) -> H.li $ do
+                                    if Origin origin `elem` enabledOrigins
+                                        then H.input H.! A.type_ "checkbox" H.! A.name (fromString origin) H.! A.value "on" H.! A.checked "checked"
+                                        else H.input H.! A.type_ "checkbox" H.! A.name (fromString origin) H.! A.value "on"
+                                    H.label H.! A.for (fromString origin) $ fromString origin
+                                ) origins
+                        H.h4 "Graph Options"
+                        H.ul $ do
+                            H.li $ do
+                                if "on" == Map.findWithDefault "" "onlyLNs" paramMap
+                                    then H.input H.! A.type_ "checkbox" H.! A.name "onlyLNs" H.! A.value "on" H.! A.checked "checked"
+                                    else H.input H.! A.type_ "checkbox" H.! A.name "onlyLNs" H.! A.value "on"
+                                H.label H.! A.for (fromString "onlyLNs") $ fromString "onlyLNs"
+                        H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
+                H.div H.! A.id "all" $ do
+                    -- ########################################################
+                    -- ########################################################
+                    -- ########################################################
+                    H.div H.! A.id "content" $ do
+                        H.h2 "LicenseNames"
+                        H.ul $ mapM_ (H.li . fromString . show) allPotentialLicenseNames
+                        H.h2 "Facts"
+                        H.ul $ mapM_ (\fact -> H.li $ do
+                            let factId@(FactId ty hash) = getFactId fact
+                            H.h3 $ do
+                                H.a H.! A.href (H.toValue $ "./fact" </> ty </> hash) $ H.toMarkup (show factId)
+                                -- ((H.toValue . ("./fact/"++)) n) $ H.toMarkup n) . show) cluster)) clusters
+                            toMarkup fact
+                            -- H.pre (H.toMarkup (let
+                            --                     onerror _ _ = Just '_'
+                            --                 in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))
+                            ) facts
+                        -- H.h2 "LicenseNameSubgraph"
+                        -- H.pre $
+                        --     H.toMarkup (G.prettify lnsubgraph)
+                H.script H.! A.src "/script.js" $
+                    pure ()
+                H.script "main();"
 
 serve :: LicenseGraphM ()
 serve = do
@@ -165,10 +184,17 @@ serve = do
         putStrLn $ "tmpdir=" ++ tmpdir
         scottyOpts myOptions $ do
             get "/styles.css" $ raw (BL.fromStrict stylesheet)
+            get "/script.js" $ raw (BL.fromStrict scriptJs)
             get "/" $ do
                 params <- S.params
-                page <- liftAndCatchIO $ formHtml params licenseGraph origins
+                page <- liftAndCatchIO $ mainPage params licenseGraph origins
                 html (BT.renderHtml page)
+            get "/fact/:facttype/:facthash" $ do
+                facttype <- fromString <$> param "facttype"
+                facthash <- fromString <$> param "facthash"
+                page <- liftAndCatchIO $ printFacts (FactId facttype facthash) licenseGraph
+                html (BT.renderHtml page)
+
             get "/clusters" $ listPageAction clusters
             get "/svg/:lic" $ do
                 lic <- fromString <$> param "lic"

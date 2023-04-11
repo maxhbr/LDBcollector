@@ -97,12 +97,14 @@ alnFromBol (BlueOakLicense name id _) = (NLN . newNLN "BlueOak" . pack) id `Alte
                                                 [ (LN . newLN . pack) name
                                                 ]
 
+getImpliedStmtsOfBOL :: BlueOakLicense -> [LicenseStatement]
+getImpliedStmtsOfBOL (BlueOakLicense {_url=url}) = [LicenseUrl url]
 instance LicenseFactC BlueOakCouncilFact where
     getType _ = "BlueOakCouncil"
     getApplicableLNs (BOCPermissive _ bol) = alnFromBol bol
     getApplicableLNs (BOCCopyleft _ kind bol) = alnFromBol bol `ImpreciseLNs` [(LN . newLN . pack) kind]
-    getImpliedStmts (BOCPermissive rating bol) = [typestmt "Permissive", stmt rating]
-    getImpliedStmts (BOCCopyleft kind _ bol) = [typestmt kind `SubStatements` [typestmt "Copyleft"]]
+    getImpliedStmts (BOCPermissive rating bol) = [typestmt "Permissive", stmt rating] ++ getImpliedStmtsOfBOL bol
+    getImpliedStmts (BOCCopyleft kind _ bol) = (typestmt kind `SubStatements` [typestmt "Copyleft"]) : getImpliedStmtsOfBOL bol
 
 
 -- #############################################################################

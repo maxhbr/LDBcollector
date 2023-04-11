@@ -4,7 +4,7 @@
 {-# LANGUAGE DefaultSignatures #-}
 module Ldbcollector.Model.LicenseFact
   ( Origin (..)
-  , FactId
+  , FactId (..)
   , FromFact (..)
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
@@ -29,7 +29,13 @@ import           Ldbcollector.Model.LicenseStatement
 newtype Origin = Origin String
    deriving (Eq, Show, Ord)
 
-type FactId = String
+data FactId
+    = FactId String String
+    deriving (Eq, Generic)
+instance Show FactId where
+    show (FactId ty hash) = ty ++ ":" ++ hash
+instance ToJSON FactId where
+    toJSON (FactId ty hash) = toJSON [ty, hash]
 
 data FromFact a
     = FromFact
@@ -52,17 +58,18 @@ alternativesFromListOfLNs (best:others) = NLN best `AlternativeLNs` map LN other
 alternativesFromListOfLNs [] = undefined
 instance ToJSON ApplicableLNs
 
-
 class (Eq a) => LicenseFactC a where
     getType :: a -> String
     getFactId :: a -> FactId
     default getFactId :: (ToJSON a) => a -> FactId
     getFactId a = let
         md5 = (C.unpack . C.fromStrict . B16.encode .  MD5.hashlazy . A.encode) a
-        in getType a ++ "\n" ++ md5
+        in FactId (getType a)  md5
     getApplicableLNs :: a -> ApplicableLNs
     getImpliedStmts :: a -> [LicenseStatement]
     getImpliedStmts _ = []
+    toMarkup :: a -> Markup
+    toMarkup _ = mempty
 
 data LicenseFact where
     LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
@@ -101,3 +108,4 @@ instance LicenseFactC LicenseFact where
     getFactId (LicenseFact _ a) = getFactId a
     getApplicableLNs (LicenseFact _ a) = getApplicableLNs a
     getImpliedStmts (LicenseFact _ a) = getImpliedStmts a
+    toMarkup (LicenseFact _ a) = toMarkup a

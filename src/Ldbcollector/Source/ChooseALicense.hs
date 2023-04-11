@@ -7,17 +7,11 @@ module Ldbcollector.Source.ChooseALicense
 
 import           Ldbcollector.Model    hiding (ByteString)
 
-import           Data.List as L
 import qualified Data.List.Split as Split
 import qualified Data.Vector as V
-import qualified Data.ByteString as B
-import           Data.ByteString (ByteString)
-import qualified Data.ByteString.Char8 as Char8
 
 import qualified Data.Yaml as Y
-import qualified Data.Yaml.Internal as Y
-import qualified Text.Libyaml as YY
-import           Data.Either (rights)
+import qualified Text.Blaze.Html5        as H
 
 data CALData
   = CALData
@@ -65,6 +59,27 @@ instance LicenseFactC CALData where
             , _how caldata
             ]
         ++ [LicensePCLR (PCLR permissions conditions limitations [])]
+    toMarkup (CALData { _id=id
+                      , _name=name
+                      , _title=title
+                      , _spdxId=spdxId
+                      , _nickname=nickname
+                      , _featured=featured
+                      , _hidden=hidden
+                      , _description=description
+                      , _how=how
+                      , _cal_permissions=cal_permissions
+                      , _cal_conditions=cal_conditions
+                      , _cal_limitations=cal_limitations}) = do
+                        case description of
+                            Just description' -> H.span (H.toMarkup description')
+                            Nothing -> pure ()
+                        H.h5 "permissions"
+                        H.ul $ mapM_ (H.li . H.toMarkup) cal_permissions
+                        H.h5 "conditions"
+                        H.ul $ mapM_ (H.li . H.toMarkup) cal_conditions
+                        H.h5 "limitations"
+                        H.ul $ mapM_ (H.li . H.toMarkup) cal_limitations
 
 newtype ChooseALicense
     = ChooseALicense FilePath

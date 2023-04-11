@@ -5,12 +5,13 @@ module Ldbcollector.Source.Warpr
     ) where
 
 import           Ldbcollector.Model
-import qualified Data.Vector           as V
-import qualified Data.Map              as Map
-import qualified Data.Text.Lazy as T
-import qualified Data.Text.Lazy.IO as T
+import qualified Data.Vector             as V
+import qualified Data.Map                as Map
+import qualified Data.Text.Lazy          as T
+import qualified Data.Text.Lazy.IO       as T
 import qualified Swish.RDF               as TTL
 import qualified Swish.RDF.Parser.Turtle as TTL
+import qualified Text.Blaze.Html5        as H
 
 data WarprLicense
     = WarprLicense LicenseName TTL.RDFGraph
@@ -22,6 +23,7 @@ instance LicenseFactC WarprLicense where
     getType _ = "WarprLicense"
     getApplicableLNs (WarprLicense l g) = NLN l
     getImpliedStmts (WarprLicense l g) = []
+    toMarkup (WarprLicense _ g) = H.pre (H.toMarkup (show g))
 
 getWarprLicense :: FilePath -> IO WarprLicense
 getWarprLicense ttl = do

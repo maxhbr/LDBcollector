@@ -2,7 +2,43 @@ body {
     overflow: hidden;
 }
 
-#content {
+#svgGraph {
+    position: fixed;
+    display: inline;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* width: 340; */
+}
+#svgGraph svg {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 300px;
+    max-height: 300px;
+}
+input#svgCheckbox[type="checkbox"] {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* margin: 0px; */
+    z-index: 10000;
+}
+input#svgCheckbox[type="checkbox"] ~ #svgGraph {
+    /* display:none; */
+    z-index: 10;
+}
+input#svgCheckbox[type="checkbox"]:checked ~ #svgGraph {
+    /* display:block; */
+    z-index: 1000;
+}
+input#svgCheckbox[type="checkbox"]:checked ~ #svgGraph svg {
+    box-shadow: 0px 0px 20px  gray;
+}
+
+#all {
     position: fixed;
     display: inline;
     top: 0;
@@ -10,56 +46,42 @@ body {
     bottom: 0;
     right: 0;
     height: 100%;
+    z-index: 100;
 }
 
-header, #popup {
-    background-color: rgba(255, 255, 255, 0.501);
+header, #content {
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 10px 5px 20px  gray;
     padding: 10px;
 }
 
 header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 300px;
     display: table;
     padding: 20px;
+    z-index: 9999;
 }
 
-#popup {
+#content {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    max-width: 80%;
+    left: 340px;
     overflow: scroll;
-    /* left: 370px; */
-    /* bottom: 50px; */
 }
-#popup input[type="checkbox"] {
+/* #content ~ input[type="checkbox"] {
     position: fixed;
     top: 0px;
-    right: 0px;
+    left: 0px;
     margin: 0px;
 }
-#popup input[type="checkbox"] ~ div {
+#content input[type="checkbox"] ~ div {
     display:none;
 }
-#popup input[type="checkbox"]:checked ~ div {
+#content input[type="checkbox"]:checked ~ div {
     display:block;
-}
-
-#svgGraph {
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* form, input {
-    padding: 5px;
-} */
-/* input[type='checkbox'] {
-    display: block;
 } */
