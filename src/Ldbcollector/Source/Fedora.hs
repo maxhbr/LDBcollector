@@ -74,7 +74,7 @@ getEntry json = do
 
 newtype FedoraLicenseData = FedoraLicenseData FilePath
 instance Source FedoraLicenseData where
-    getOrigin _  = Origin "Fedora"
+    getSource _  = Source "Fedora"
     getFacts (FedoraLicenseData dir) = do
         jsons <- glob (dir </> "*.json")
         V.fromList <$> mapM (fmap wrapFact . getEntry) jsons

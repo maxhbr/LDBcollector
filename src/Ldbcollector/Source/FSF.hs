@@ -45,7 +45,7 @@ parseFsfJSON json = do
 newtype FSF = FSF FilePath
 
 instance Source FSF where
-    getOrigin _ = Origin "FSF"
+    getSource _ = Source "FSF"
     getFacts (FSF dir) = do
         jsons <- (fmap (filter (not . isSuffixOf "licenses-full.json") . filter (not . isSuffixOf "licenses.json")) . glob) (dir </> "*.json")
         V.fromList . wrapFacts <$> mapM parseFsfJSON jsons

@@ -62,7 +62,7 @@ instance LicenseFactC ScancodeData where
 newtype ScancodeLicenseDB = ScancodeLicenseDB FilePath
 
 instance Source ScancodeLicenseDB where
-    getOrigin _  = Origin "ScancodeLicenseDB"
+    getSource _  = Source "ScancodeLicenseDB"
     getFacts (ScancodeLicenseDB dir) = let
             parseOrFailJson json = do
                 logFileReadIO json

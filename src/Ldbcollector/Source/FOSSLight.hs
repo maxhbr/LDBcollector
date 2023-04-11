@@ -168,7 +168,7 @@ instance LicenseFactC FOSSLightFact where
 newtype FOSSLight = FOSSLight FilePath
 
 instance Source FOSSLight where
-    getOrigin _ = Origin "FOSSLight"
+    getSource _ = Source "FOSSLight"
     getFacts (FOSSLight sqlite) = let
         extractLicensesFromSqlite :: IO ([FOSSLight_License],[FOSSLight_Nick])
         extractLicensesFromSqlite = do

@@ -3,7 +3,7 @@
 {-# LANGUAGE GADTs #-}
 {-# LANGUAGE DefaultSignatures #-}
 module Ldbcollector.Model.LicenseFact
-  ( Origin (..)
+  ( SourceRef (..)
   , FactId (..)
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
@@ -26,7 +26,7 @@ import           Ldbcollector.Model.LicenseName
 import           Ldbcollector.Model.LicenseStatement
 import qualified Text.Blaze as H
 
-newtype Origin = Origin String
+newtype SourceRef = Source String
    deriving (Eq, Show, Ord)
 
 data FactId

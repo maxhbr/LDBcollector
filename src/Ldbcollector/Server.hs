@@ -66,8 +66,8 @@ printFacts factId licenseGraph = do
         runLicenseGraphM' licenseGraph $
             MTL.gets (filter (\(_,f) -> getFactId f == factId) . Map.keys . _facts)
     return . H.html $ do
-        mapM_ (\(origin,fact) -> do
-            H.h1 (H.toMarkup (show origin))
+        mapM_ (\(source,fact) -> do
+            H.h1 (H.toMarkup (show source))
             H.h2 (H.toMarkup (show (getFactId fact)))
             toMarkup fact
             H.h3 "JSON"
@@ -75,24 +75,24 @@ printFacts factId licenseGraph = do
                                 onerror _ _ = Just '_'
                             in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))) facts
 
-mainPage :: [S.Param] -> LicenseGraph -> [Origin] -> IO H.Html
-mainPage params licenseGraph origins = do
+evaluateParams :: [S.Param] -> LicenseGraph -> [SourceRef] -> IO (LicenseGraph, LicenseNameGraphType, ByteString)
+evaluateParams  params licenseGraph sources = do
     let paramMap = Map.fromList params
         licRaw = Map.findWithDefault "BSD-3-Clause" "license" paramMap
         lic = (fromText . T.toStrict) licRaw :: LicenseName
-        enabledOrigins = case (map (Origin . T.unpack . fst) . filter (\(_,value) -> value == "on")) params of
-            [] -> origins
-            enabledOrigins -> enabledOrigins
+        enabledSources = case (map (Source . T.unpack . fst) . filter (\(_,value) -> value == "on")) params of
+            [] -> sources
+            enabledSources -> enabledSources
         allLicenseNames = getLicenseGraphLicenseNames licenseGraph
 
     debugLogIO ("params=" ++ show params)
     debugLogIO ("licRaw=" ++ show licRaw)
     debugLogIO ("lic=" ++ show lic)
-    debugLogIO ("enabledOrigins=" ++ show enabledOrigins)
+    debugLogIO ("enabledSources=" ++ show enabledSources)
 
-    ((subgraph,lnsubgraph,svg),_) <-
-        runLicenseGraphM' licenseGraph $
-            focus enabledOrigins ((V.singleton . LGName) lic) $ do
+    -- ((subgraph,lnsubgraph,svg),_) <-
+    fmap fst . runLicenseGraphM' licenseGraph $
+            focus enabledSources ((V.singleton . LGName) lic) $ do
                 MTL.gets ((,,) . _gr)
                      <*> getLicenseNameGraph
                      <*> (do 
@@ -102,6 +102,34 @@ mainPage params licenseGraph origins = do
                                                                                             _ -> False) gr})
                         genGraphViz
                      )
+
+mainPage :: [S.Param] -> LicenseGraph -> [SourceRef] -> IO H.Html
+mainPage params licenseGraph sources = do
+    let paramMap = Map.fromList params
+        licRaw = Map.findWithDefault "BSD-3-Clause" "license" paramMap
+        lic = (fromText . T.toStrict) licRaw :: LicenseName
+        enabledSources = case (map (Source . T.unpack . fst) . filter (\(_,value) -> value == "on")) params of
+            [] -> sources
+            enabledSources -> enabledSources
+        allLicenseNames = getLicenseGraphLicenseNames licenseGraph
+
+    debugLogIO ("params=" ++ show params)
+    debugLogIO ("licRaw=" ++ show licRaw)
+    debugLogIO ("lic=" ++ show lic)
+    debugLogIO ("enabledSources=" ++ show enabledSources)
+
+    (subgraph,lnsubgraph,svg) <- evaluateParams params licenseGraph sources
+        -- runLicenseGraphM' licenseGraph $
+        --     focus enabledSources ((V.singleton . LGName) lic) $ do
+        --         MTL.gets ((,,) . _gr)
+        --              <*> getLicenseNameGraph
+        --              <*> (do
+        --                 when ("on" == Map.findWithDefault "" "onlyLNs" paramMap) $
+        --                     MTL.modify (\lg@LicenseGraph{_gr=gr} -> lg{_gr=G.labfilter (\case
+        --                                                                                     LGName _ -> True
+        --                                                                                     _ -> False) gr})
+        --                 genGraphViz
+        --              )
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
                                _ -> Nothing
@@ -129,14 +157,14 @@ mainPage params licenseGraph origins = do
                         H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
                         H.datalist H.! A.id "licenses" $
                             mapM_ (\license -> H.option H.! A.value (fromString $ show license) $ pure ()) allLicenseNames
-                        H.h4 "Origins"
+                        H.h4 "Sources"
                         H.ul $
-                            mapM_ (\(Origin origin) -> H.li $ do
-                                    if Origin origin `elem` enabledOrigins
-                                        then H.input H.! A.type_ "checkbox" H.! A.name (fromString origin) H.! A.value "on" H.! A.checked "checked"
-                                        else H.input H.! A.type_ "checkbox" H.! A.name (fromString origin) H.! A.value "on"
-                                    H.label H.! A.for (fromString origin) $ fromString origin
-                                ) origins
+                            mapM_ (\(Source source) -> H.li $ do
+                                    if Source source `elem` enabledSources
+                                        then H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on" H.! A.checked "checked"
+                                        else H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on"
+                                    H.label H.! A.for (fromString source) $ fromString source
+                                ) sources
                         H.h4 "Graph Options"
                         H.ul $ do
                             H.li $ do
@@ -175,7 +203,7 @@ serve = do
     licenseGraph <- MTL.get
     let names = getLicenseGraphLicenseNames licenseGraph
     clusters <- getClusters
-    origins <- MTL.gets (nub . map fst . Map.keys . _facts)
+    sources <- MTL.gets (nub . map fst . Map.keys . _facts)
 
     infoLog "Start server on port 3000..."
     lift $ Temp.withSystemTempDirectory "ldbcollector-haskell" $ \tmpdir -> do
@@ -185,7 +213,7 @@ serve = do
             get "/script.js" $ raw (BL.fromStrict scriptJs)
             get "/" $ do
                 params <- S.params
-                page <- liftAndCatchIO $ mainPage params licenseGraph origins
+                page <- liftAndCatchIO $ mainPage params licenseGraph sources
                 html (BT.renderHtml page)
             get "/fact/:facttype/:facthash" $ do
                 facttype <- fromString <$> param "facttype"

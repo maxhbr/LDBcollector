@@ -22,8 +22,8 @@ writeMetrics = do
     licenseNameGraph <- getLicenseNameGraph
     let facts = _facts licenseGraph
 
-    let origins = (map fst . Map.keys ) facts
-    lift $ infoM "Metrics" $ "number of origins: " ++ show (length (nub origins))
+    let sources = (map fst . Map.keys ) facts
+    lift $ infoM "Metrics" $ "number of sources: " ++ show (length (nub sources))
     lift $ infoM "Metrics" $ "number of facts: " ++ show (length facts)
     lift $ infoM "Metrics" $ "number of license clusters: " ++ show (length clusters)
     lift $ infoM "Metrics" $ "number of license names: " ++ show (length names)

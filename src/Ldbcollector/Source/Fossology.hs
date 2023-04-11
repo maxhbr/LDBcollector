@@ -93,7 +93,7 @@ instance LicenseFactC FossologyEntry where
 
 newtype Fossology = FossologyLicenseRef FilePath
 instance Source Fossology where
-    getOrigin _ = Origin "Fossology"
+    getSource _ = Source "Fossology"
     getFacts (FossologyLicenseRef json) = do
         logFileReadIO json
         decoded <- eitherDecodeFileStrict json :: IO (Either String [FossologyEntry])

@@ -38,10 +38,10 @@ getClusters = do
 
 -- ############################################################################
 
-filterOrigins :: [Origin] -> LicenseGraphM ()
-filterOrigins origins = do
+filterSources :: [SourceRef] -> LicenseGraphM ()
+filterSources sources = do
     MTL.modify (\lg@(LicenseGraph {_facts=facts}) -> let
-             facts' = Map.filterWithKey (\(o,_) _ -> o `elem` origins) facts
+             facts' = Map.filterWithKey (\(o,_) _ -> o `elem` sources) facts
         in lg {_facts = facts'})
 
 focusSequentially :: Vector G.Node -> LicenseGraph -> LicenseGraph
@@ -88,15 +88,15 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
         _facts = facts
     }
 
-focus :: [Origin] -> Vector LicenseGraphNode -> LicenseGraphM a -> LicenseGraphM a
-focus origins needles inner = do
+focus :: [SourceRef] -> Vector LicenseGraphNode -> LicenseGraphM a -> LicenseGraphM a
+focus sources needles inner = do
     debugLog "## freeze graph"
     debugOrderAndSize
     frozen <- MTL.get
     (a,_) <- (MTL.lift . runLicenseGraphM' frozen) $ do
-        unless (null origins) $ do
-            debugLog ("## filter origins on " ++ show origins)
-            filterOrigins origins
+        unless (null sources) $ do
+            debugLog ("## filter sources on " ++ show sources)
+            filterSources sources
         debugLog ("## focus on " ++ show needles)
         needleIds <- getIdsOfNodes needles
         MTL.modify (focusSequentially needleIds)
@@ -106,8 +106,8 @@ focus origins needles inner = do
     debugLog "## done focusing"
     return a
 
-getFocused :: [Origin] -> Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
-getFocused origins needles = focus origins needles MTL.get
+getFocused :: [SourceRef] -> Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
+getFocused sources needles = focus sources needles MTL.get
 
 -- -- ############################################################################
 

@@ -102,7 +102,7 @@ readTxt txt = do
         _ -> return Nothing --(return . Add . LicenseName . fromString) fromFilename
 
 instance Source ChooseALicense where
-    getOrigin _  = Origin "ChooseALicense"
+    getSource _  = Source "ChooseALicense"
     getFacts (ChooseALicense dir) = do
         txts <- glob (dir </> "*.txt")
         V.fromList . map wrapFact . catMaybes <$> mapM readTxt txts

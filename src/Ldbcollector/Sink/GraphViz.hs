@@ -80,41 +80,41 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                                                         -- , (157,2,215)
                                                         -- , (0,0,255)
                                                         -- ]
-        origins = (map fst . Map.keys) facts
-        factColoringMap = Map.fromList $ zip origins colors
-        typeColoringLookup origin = Map.findWithDefault (GV.RGB 0 0 0) origin factColoringMap
+        sources = (map fst . Map.keys) facts
+        factColoringMap = Map.fromList $ zip sources colors
+        typeColoringLookup source = Map.findWithDefault (GV.RGB 0 0 0) source factColoringMap
 
-        getOriginsOfNode :: G.Node -> [Origin]
-        getOriginsOfNode n = ( nub
+        getSourcesOfNode :: G.Node -> [SourceRef]
+        getSourcesOfNode n = ( nub
                              . sort
-                             . mapMaybe (\((origin, _), (nodes,_)) ->
+                             . mapMaybe (\((source, _), (nodes,_)) ->
                                   if n `elem` nodes
-                                  then Just origin
+                                  then Just source
                                   else Nothing)
                              . Map.assocs
                              ) facts
 
         getColorOfNode :: (G.Node, Maybe LicenseGraphNode) -> GV.Attributes
         getColorOfNode (n, Just (LGName _)) =
-            case getOriginsOfNode n of 
-                [origin] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) origin ]
+            case getSourcesOfNode n of 
+                [source] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) source ]
                 [] -> [GV.Style [GV.SItem GV.Dashed []]]
                 _ -> []
         getColorOfNode (n, Just (LGFact _)) = 
-            case getOriginsOfNode n of 
-                [origin] -> [ GV.FontColor (GV.X11Color GV.Gray)
-                            , (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) origin 
+            case getSourcesOfNode n of 
+                [source] -> [ GV.FontColor (GV.X11Color GV.Gray)
+                            , (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) source 
                             ]
                 [] -> [GV.Style [GV.SItem GV.Dashed []]]
                 _ -> []
         getColorOfNode _ = []
 
-        getOriginsOfEdge :: G.Edge -> [Origin]
-        getOriginsOfEdge n = ( nub
+        getSourcesOfEdge :: G.Edge -> [SourceRef]
+        getSourcesOfEdge n = ( nub
                              . sort
-                             . mapMaybe (\((origin, _), (_,edges)) ->
+                             . mapMaybe (\((source, _), (_,edges)) ->
                                   if n `elem` edges
-                                  then Just origin
+                                  then Just source
                                   else Nothing)
                              . Map.assocs
                              ) facts
@@ -123,8 +123,8 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
         getColorOfEdge edge = let
                 potentialE = (fmap G.toEdge . find (== edge) . G.labEdges) graph
             in case potentialE of
-                Just e -> case getOriginsOfEdge e of 
-                        [origin] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) origin ]
+                Just e -> case getSourcesOfEdge e of 
+                        [source] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) source ]
                         [] -> []
                         _ -> []
                 Nothing -> []

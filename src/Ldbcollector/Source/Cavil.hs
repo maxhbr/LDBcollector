@@ -41,7 +41,7 @@ linesToMap :: [B.ByteString] -> Map LicenseName [LicenseName]
 linesToMap bss = M.unionsWith (<>) $ map lineToMap bss
 
 instance Source CavilLicenseChanges where
-    getOrigin _  = Origin "CavilLicenseChanges"
+    getSource _  = Source "CavilLicenseChanges"
     getFacts (CavilLicenseChanges txt) = do
         logFileReadIO txt
         csvData <- B.readFile txt

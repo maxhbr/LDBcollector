@@ -85,7 +85,7 @@ getOSADLMatrix json = do
 newtype OSADL
     = OSADL FilePath
 instance Source OSADL where
-    getOrigin _ = Origin "OSADL"
+    getSource _ = Source "OSADL"
     getFacts (OSADL dir) = do
         osadls <- glob (dir </> "unreflicenses" </> "*.txt")
         rules <- V.fromList . map wrapFact <$> mapM getOSADL osadls

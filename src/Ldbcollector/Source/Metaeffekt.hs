@@ -51,7 +51,7 @@ getMetaeffektLicense yaml = do
 newtype Metaeffekt = Metaeffekt FilePath
 
 instance Source Metaeffekt where
-    getOrigin _ = Origin "Metaeffekt"
+    getSource _ = Source "Metaeffekt"
     getFacts (Metaeffekt dir) = do
         yamls <- glob (dir </> "**/*.yaml")
         V.fromList . map wrapFact . mconcat <$> mapM getMetaeffektLicense yamls

@@ -32,7 +32,7 @@ instance LicenseFactC OSILicense where
 
 data OSI = OSI
 instance Source OSI where
-    getOrigin _ = Origin "OSI"
+    getSource _ = Source "OSI"
     getFacts OSI = do
         response <- runExceptT OSI.allLicenses
         case response of

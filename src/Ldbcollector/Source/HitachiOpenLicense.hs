@@ -673,7 +673,7 @@ instance LicenseFactC OlLicense where
 data HitachiOpenLicense = HitachiOpenLicense FilePath FilePath
 
 instance Source HitachiOpenLicense where
-    getOrigin _  = Origin "HitachiOpenLicense"
+    getSource _  = Source "HitachiOpenLicense"
     getFacts (HitachiOpenLicense dir translationsCSV) = let
             actionsFile = dir </> "actions.json"
             conditionsFile = dir </> "conditions.json"

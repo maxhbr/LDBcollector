@@ -15,14 +15,14 @@ import qualified Control.Monad.State                 as MTL
 import qualified Data.Vector                         as V
 
 class Source a where
-    getOrigin :: a -> Origin
+    getSource :: a -> SourceRef
     getFacts :: a -> IO (Vector LicenseFact)
     applySource :: a -> LicenseGraphM ()
     applySource a = let
-            origin = getOrigin a
+            source = getSource a
         in do
-            lift $ infoM rootLoggerName ("# get " ++ show origin)
+            lift $ infoM rootLoggerName ("# get " ++ show source)
             facts <- force <$> MTL.lift (getFacts a)
             -- MTL.lift (getFacts a) >>= 
-            V.mapM_ (\fact -> withFact (origin, fact) applyFact) facts
+            V.mapM_ (\fact -> withFact (source, fact) applyFact) facts
 

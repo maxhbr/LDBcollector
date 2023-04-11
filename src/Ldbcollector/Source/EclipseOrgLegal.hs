@@ -40,7 +40,7 @@ jsonToLicenses (EclipseOrgLegalLicensesJson approved restricted) = let
 
 newtype EclipseOrgLegal = EclipseOrgLegal FilePath
 instance Source EclipseOrgLegal where
-    getOrigin _  = Origin "Eclipse"
+    getSource _  = Source "Eclipse"
     getFacts (EclipseOrgLegal json) = do
         decoded <- eitherDecodeFileStrict json :: IO (Either String EclipseOrgLegalLicensesJson)
         case decoded of

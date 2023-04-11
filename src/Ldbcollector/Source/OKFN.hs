@@ -53,7 +53,7 @@ instance LicenseFactC OKFNLicense where
 newtype OKFN = OKFN FilePath
 
 instance Source OKFN where
-    getOrigin _ = Origin "OKFN"
+    getSource _ = Source "OKFN"
     getFacts (OKFN allJSON) = do
         logFileReadIO allJSON
         decoded <- eitherDecodeFileStrict allJSON :: IO (Either String (Map.Map String OKFNLicense))

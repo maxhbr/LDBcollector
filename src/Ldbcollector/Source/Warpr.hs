@@ -37,7 +37,7 @@ getWarprLicense ttl = do
 newtype Warpr = Warpr FilePath
 
 instance Source Warpr where
-    getOrigin _ = Origin "Warpr"
+    getSource _ = Source "Warpr"
     getFacts (Warpr dir) = do
         ttls <- glob (dir </> "*.ttl")
         V.fromList . map wrapFact <$> mapM getWarprLicense ttls

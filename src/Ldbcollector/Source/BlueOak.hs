@@ -116,7 +116,7 @@ data BlueOakCouncil
      | BlueOakCouncilCopyleftList FilePath
 
 instance Source BlueOakCouncil where
-    getOrigin _  = Origin "BlueOakCouncil"
+    getSource _  = Source "BlueOakCouncil"
     getFacts (BlueOakCouncilLicenseList file) = do
         logFileReadIO file
         decoded <- eitherDecodeFileStrict file :: IO (Either String BlueOakData)

@@ -60,7 +60,7 @@ data LicenseGraph
     { _gr           :: LicenseGraphType
     , _node_map     :: Map.Map LicenseGraphNode G.Node
     , _node_map_rev :: Map.Map G.Node LicenseGraphNode
-    , _facts        :: Map.Map (Origin, LicenseFact) (Set.Set G.Node, Set.Set G.Edge)
+    , _facts        :: Map.Map (SourceRef, LicenseFact) (Set.Set G.Node, Set.Set G.Edge)
     }
 emptyLG :: LicenseGraph
 emptyLG = LicenseGraph G.empty mempty mempty mempty
@@ -86,8 +86,8 @@ runLicenseGraphM' initGraph = (`MTL.runStateT` initGraph)
 runLicenseGraphM :: LicenseGraphM a -> IO (a, LicenseGraph)
 runLicenseGraphM = runLicenseGraphM' emptyLG
 
-type WithFactM a = MTL.ReaderT (Origin, LicenseFact) (MTL.StateT LicenseGraph IO) a
-withFact :: (Origin,LicenseFact) -> WithFactM a -> LicenseGraphM a
+type WithFactM a = MTL.ReaderT (SourceRef, LicenseFact) (MTL.StateT LicenseGraph IO) a
+withFact :: (SourceRef,LicenseFact) -> WithFactM a -> LicenseGraphM a
 withFact key = (`MTL.runReaderT` key)
 
 getIdOfNode :: LicenseGraphNode -> LicenseGraphM (Maybe G.Node)

@@ -23,7 +23,7 @@ instance LicenseFactC LicenseIdFact where
 data SPDXLicenseIds = SPDXLicenseIds
 
 instance Source SPDXLicenseIds where
-    getOrigin _  = Origin "SPDX"
+    getSource _  = Source "SPDX"
     getFacts SPDXLicenseIds = return $ let
             spdxLicenseIds :: [LicenseId]
             spdxLicenseIds = enumFrom (toEnum 0)

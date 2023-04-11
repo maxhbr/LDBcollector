@@ -82,7 +82,7 @@ parseYaml yaml = do
 newtype OSLC = OSLC FilePath
 
 instance Source OSLC where
-    getOrigin _  = Origin "OSLC"
+    getSource _  = Source "OSLC"
     getFacts (OSLC dir) = do
         yamls <- glob (dir </> "*.yaml")
         V.fromList . map wrapFact . mconcat <$> mapM parseYaml yamls
