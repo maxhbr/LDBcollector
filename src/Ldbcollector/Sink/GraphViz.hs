@@ -56,6 +56,22 @@ instance GV.Labellable LicenseStatement where
         in GV.HtmlLabel . GVH.Table $ GVH.HTable Nothing [] (map mkLine compatibilities)
     toLabelValue statement = (GV.StrLabel . LT.pack . show) statement
 
+simplifyEdgeLabel :: [LicenseGraphEdge] -> [LicenseGraphEdge]
+simplifyEdgeLabel [] = []
+simplifyEdgeLabel [a] = [a]
+simplifyEdgeLabel as = let
+        getAllLnRelations [] = Just []
+        getAllLnRelations (LGNameRelation r:as) = fmap (r :) (getAllLnRelations as)
+        getAllLnRelations _ = Nothing
+    in case getAllLnRelations as of
+        Just lns -> if Same `elem` lns
+                    then [LGNameRelation Same]
+                    else if Better `elem` lns
+                         then [LGNameRelation Better]
+                         else as
+        _ -> nub as
+
+
 computeDigraph :: LicenseGraph -> GV.DotGraph G.Node
 computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
         colors = cycle $ map (\(r,g,b) -> GV.RGB r g b) [ (0,135,108)  -- #00876c
@@ -159,12 +175,12 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                         _ -> []
                 in  GV.Label label : (coloring ++ styling)
             , GV.fmtEdge          = \(a, b, e) ->
-                (case nub (edgeLabels a b) of
+                (case simplifyEdgeLabel (edgeLabels a b) of
                     [] -> []
-                    [LGNameRelation Same] -> [GV.style GV.bold]
-                    [LGNameRelation Better] -> [GV.style GV.dashed]
-                    [LGAppliesTo] -> []
-                    [LGImpliedBy] -> []
+                    [LGNameRelation Same] -> [GV.style GV.bold, GV.Weight (GV.Dbl 0.7)]
+                    [LGNameRelation Better] -> [GV.style GV.dashed, GV.Weight (GV.Dbl 0.5)]
+                    [LGAppliesTo] -> [GV.Weight (GV.Dbl 0.5)]
+                    [LGImpliedBy] -> [GV.Weight (GV.Dbl 0.2)]
                     edgeLabels' -> [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
                 ) ++ getColorOfEdge (a, b, e)
             }
