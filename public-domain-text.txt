@@ -370,3 +370,9 @@ location = https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob_plain;f=po/es.
 text = '''
 This file is put in the public domain.
 '''
+
+package = groff
+location = http://git.savannah.gnu.org/gitweb/?p=groff.git;a=blob;f=LICENSES;hb=HEAD#l52
+text = '''
+The files contain no AT&T code and are in the public domain.
+'''
