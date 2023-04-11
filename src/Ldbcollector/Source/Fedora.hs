@@ -7,14 +7,7 @@ module Ldbcollector.Source.Fedora
 
 import           Ldbcollector.Model    hiding (ByteString)
 
-import qualified Control.Monad.State   as MTL
-import           Data.ByteString       (ByteString)
-import qualified Data.ByteString       as B
-import qualified Data.ByteString.Char8 as Char8
-import qualified Data.Map              as Map
 import qualified Data.Vector           as V
-import           GHC.Generics
-import           System.FilePath.Posix (takeBaseName)
 
 data FedoraEntryLicense
     = FedoraEntryLicense
@@ -83,6 +76,5 @@ newtype FedoraLicenseData = FedoraLicenseData FilePath
 instance Source FedoraLicenseData where
     getOrigin _  = Origin "Fedora"
     getFacts (FedoraLicenseData dir) = do
-        -- stderrLog ("read " ++ dir)
         jsons <- glob (dir </> "*.json")
         V.fromList <$> mapM (fmap wrapFact . getEntry) jsons

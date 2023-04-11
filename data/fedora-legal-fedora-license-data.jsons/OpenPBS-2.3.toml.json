@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "OpenPBS-2.3",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing:OpenPBS\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "OpenPBS (Portable Batch System) v2.3 Software License"
+    ],
+    "legacy-abbreviation": [
+      "OpenPBS"
+    ]
+  }
+}

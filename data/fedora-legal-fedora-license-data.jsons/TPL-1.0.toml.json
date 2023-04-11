@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "TPL-1.0",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "THOR Public Licence"
+    ],
+    "legacy-abbreviation": [
+      "TPL"
+    ]
+  }
+}

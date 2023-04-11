@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "GPL-3.0-or-later WITH GNAT-exception",
+    "status": [
+      "allowed"
+    ]
+  }
+}
