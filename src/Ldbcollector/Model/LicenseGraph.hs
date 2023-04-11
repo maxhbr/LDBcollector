@@ -203,12 +203,14 @@ applyFact = do
 applyFactApplicableLNs :: ApplicableLNs -> WithFactM LicenseGraphNode
 applyFactApplicableLNs (LN ln) = let
       node = LGName ln
-    in insertNode node >> return node
-applyFactApplicableLNs (NLN ln) = let
-      namespacelessLN = unsetNS ln
-    in applyFactApplicableLNs $ if ln == namespacelessLN
-                                then LN ln
-                                else LN ln `AlternativeLNs` [LN namespacelessLN]
+      namespacelessNode = LGName (unsetNS ln)
+    in do
+        _ <- insertNode node
+        unless (node == namespacelessNode) $ do
+            _ <- insertNode namespacelessNode
+            _ <- insertEdge (namespacelessNode, node, LGNameRelation Same)
+            pure ()
+        return node
 applyFactApplicableLNs (ln `AlternativeLNs` alns) = do
     node <- applyFactApplicableLNs ln
     alnNodes <- mapM applyFactApplicableLNs alns

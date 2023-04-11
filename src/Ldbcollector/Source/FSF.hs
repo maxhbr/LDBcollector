@@ -31,7 +31,7 @@ instance ToJSON FsfWkingData
 instance LicenseFactC FsfWkingData where
     getType _ = "FSF"
     getApplicableLNs (FsfWkingData { _id = id, _identifiers = identifiers, _name = name}) =
-        NLN id `AlternativeLNs` (LN name : concatMap (\(scope, lns) -> map (NLN . setNS scope) lns) (Map.assocs identifiers))
+        LN id `AlternativeLNs` (LN name : concatMap (\(scope, lns) -> map (LN . setNS scope) lns) (Map.assocs identifiers))
     getImpliedStmts entry = map LicenseUrl (_uris entry) ++ map stmt (_tags entry)
 
 parseFsfJSON :: FilePath -> IO FsfWkingData

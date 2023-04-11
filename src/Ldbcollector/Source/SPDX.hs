@@ -17,7 +17,7 @@ instance ToJSON LicenseIdFact where
 
 instance LicenseFactC LicenseIdFact where
     getType _ = "SPDX-LicenseId"
-    getApplicableLNs (LicenseIdFact licenseId) = (NLN . newNLN "spdx" . pack . show) licenseId
+    getApplicableLNs (LicenseIdFact licenseId) = (LN . newNLN "spdx" . pack . show) licenseId
 
 
 data SPDXLicenseIds = SPDXLicenseIds

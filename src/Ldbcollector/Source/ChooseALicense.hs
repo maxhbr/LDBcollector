@@ -49,7 +49,7 @@ instance LicenseFactC CALData where
     getType _ = "ChooseALicense"
     getApplicableLNs (CALData {_id = id, _name = name, _spdxId = spdxId, _title = title, _nickname = nickname}) =
         case catMaybes [id, spdxId, name, title] of
-            best:others -> NLN best `AlternativeLNs` map LN others `ImpreciseLNs` map LN (maybeToList nickname)
+            best:others -> LN best `AlternativeLNs` map LN others `ImpreciseLNs` map LN (maybeToList nickname)
             _ -> undefined
     getImpliedStmts caldata@(CALData{ _cal_permissions = permissions
                                     , _cal_conditions = conditions

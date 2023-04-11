@@ -20,7 +20,7 @@ instance ToJSON OSADLRule
 
 instance LicenseFactC OSADLRule where
     getType _ = "OSADLRule"
-    getApplicableLNs (OSADLRule id _) = NLN id `AlternativeLNs` [LN (setNS "spdx" id)]
+    getApplicableLNs (OSADLRule id _) = LN id `AlternativeLNs` [LN (setNS "spdx" id)]
     getImpliedStmts (OSADLRule _ rule) = let
             ruleLines = T.lines rule
         in [ LicenseRule rule `SubStatements` [ if "COPYLEFT CLAUSE Yes" `elem` ruleLines
@@ -64,7 +64,7 @@ instance FromJSON OSADLMatrixLicense where
                        <*> v .: "compatibilities"
 instance LicenseFactC OSADLMatrixLicense where
     getType _ = "OSADLMatrix"
-    getApplicableLNs (OSADLMatrixLicense name _) = NLN name
+    getApplicableLNs (OSADLMatrixLicense name _) = LN name
     getImpliedStmts (OSADLMatrixLicense _ cs) = let
             compatibilities = map (\(OSADLMatrixCompatibility other compatibility explanation) -> LicenseCompatibility other compatibility explanation) cs
         in [LicenseCompatibilities compatibilities]

@@ -63,7 +63,7 @@ instance ToJSON FossologyEntry
 instance LicenseFactC FossologyEntry where
     getType _ = "Fossology"
     getApplicableLNs entry =
-        NLN (_rf_shortname entry) `AlternativeLNs` map LN (_rf_fullname entry : maybeToList (_rf_Fedora entry))
+        LN (_rf_shortname entry) `AlternativeLNs` map LN (_rf_fullname entry : maybeToList (_rf_Fedora entry))
     getImpliedStmts entry =
         [ MaybeStatement (fmap LicenseUrl (_rf_url entry))
         , MaybeStatement (fmap LicenseComment (_rf_notes entry))

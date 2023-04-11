@@ -21,7 +21,7 @@ instance ToJSON WarprLicense where
 
 instance LicenseFactC WarprLicense where
     getType _ = "WarprLicense"
-    getApplicableLNs (WarprLicense l g) = NLN l
+    getApplicableLNs (WarprLicense l g) = LN l
     getImpliedStmts (WarprLicense l g) = []
     toMarkup (WarprLicense _ g) = H.pre (H.toMarkup (show g))
 

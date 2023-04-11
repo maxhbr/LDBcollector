@@ -60,7 +60,7 @@ instance FromJSON FedoraEntry where
 instance LicenseFactC FedoraEntry where
     getType _ = "FedoraEntry"
     getApplicableLNs (FedoraEntry (Just id) (FedoraEntryLicense {_expression = expression, _scancode_key = scancode_key}) (FedoraEntryFedora { _legacy_names = legacy_names , _legacy_abbreviation = legacy_abbreviation})) =
-        (NLN . newNLN "Fedora" . pack) id `AlternativeLNs` map NLN (expression : maybeToList scancode_key)
+        (LN . newNLN "Fedora" . pack) id `AlternativeLNs` map LN (expression : maybeToList scancode_key)
              `ImpreciseLNs` map LN (legacy_names ++ legacy_abbreviation)
     getApplicableLNs _ = undefined -- should not happen
     getImpliedStmts (FedoraEntry _ (FedoraEntryLicense { _status = status , _urls = urls , _text = text }) (FedoraEntryFedora {_notes = notes})) =

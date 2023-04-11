@@ -644,7 +644,7 @@ noticeToMarkup (OlNotice {_notice_schemaVersion=notice_schemaVersion
 
 instance LicenseFactC OlLicense where
     getType _ = "HitachiOpenLicense"
-    getApplicableLNs (OlLicense {_license_name = license_name}) = NLN license_name `AlternativeLNs` map LN (fixName license_name)
+    getApplicableLNs (OlLicense {_license_name = license_name}) = LN license_name `AlternativeLNs` map LN (fixName license_name)
     toMarkup (OlLicense { _license_schemaVersion=license_schemaVersion
                         , _license_uri=license_uri
                         , _license_baseUri=license_baseUri

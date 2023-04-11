@@ -158,12 +158,12 @@ instance ToJSON FOSSLightFact
 instance LicenseFactC FOSSLightFact where
     getType _ = "FOSSLight"
     getApplicableLNs (FOSSLightFact license nicks) =
-        NLN (_fossLight_name license)
+        LN (_fossLight_name license)
         `AlternativeLNs`
         map LN (maybeToList (_fossLight_SHORT_IDENTIFIER license))
         `ImpreciseLNs`
         map LN nicks
-    getImpliedStmts (FOSSLightFact license _) = [typestmt (show (_fossLight_type license))]
+    getImpliedStmts (FOSSLightFact license _) = [LicenseType (toLicenseType (_fossLight_type license))]
 
 newtype FOSSLight = FOSSLight FilePath
 

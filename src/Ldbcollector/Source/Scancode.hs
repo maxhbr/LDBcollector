@@ -43,7 +43,7 @@ instance ToJSON ScancodeData
 
 instance LicenseFactC ScancodeData where
     getType _ = "ScancodeData"
-    getApplicableLNs scd = (NLN . newNLN "scancode" . pack . _key) scd `AlternativeLNs`
+    getApplicableLNs scd = (LN . newNLN "scancode" . pack . _key) scd `AlternativeLNs`
                                 [ (LN . newLN . pack . _shortName) scd
                                 , (LN . newLN . pack . _name) scd
                                 ]

@@ -21,9 +21,9 @@ instance ToJSON OSILicense
 instance LicenseFactC OSILicense where
     getType _ = "OSILicense"
     getApplicableLNs (OSILicense l) =
-        (NLN . newNLN "osi" .  OSI.olId) l
+        (LN . newNLN "osi" .  OSI.olId) l
         `AlternativeLNs`
-        ((LN . newLN  .  OSI.olName) l : map (\i -> NLN $ newNLN (OSI.oiScheme i) (OSI.oiIdentifier i)) (OSI.olIdentifiers l))
+        ((LN . newLN  .  OSI.olName) l : map (\i -> LN $ newNLN (OSI.oiScheme i) (OSI.oiIdentifier i)) (OSI.olIdentifiers l))
         `ImpreciseLNs`
         map (LN . newLN . OSI.oonName) (OSI.olOther_names l)
     getImpliedStmts (OSILicense l) = let

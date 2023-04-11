@@ -25,6 +25,7 @@ import qualified Data.Vector                       as V
 
 import           Ldbcollector.Model.LicenseName
 import           Ldbcollector.Model.LicenseStatement
+import qualified Text.Blaze as H
 
 newtype Origin = Origin String
    deriving (Eq, Show, Ord)
@@ -49,14 +50,16 @@ instance (Eq a, Show a) => Ord (FromFact a) where
 
 data ApplicableLNs where
     LN :: LicenseName -> ApplicableLNs
-    NLN :: LicenseName -> ApplicableLNs
     AlternativeLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
     ImpreciseLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
     deriving (Generic)
 alternativesFromListOfLNs :: [LicenseName] -> ApplicableLNs
-alternativesFromListOfLNs (best:others) = NLN best `AlternativeLNs` map LN others
+alternativesFromListOfLNs (best:others) = LN best `AlternativeLNs` map LN others
 alternativesFromListOfLNs [] = undefined
 instance ToJSON ApplicableLNs
+-- instance H.ToMarkup ApplicableLNs where
+--     toMarkup (LN ln) = H.toMarkup ln
+
 
 class (Eq a) => LicenseFactC a where
     getType :: a -> String

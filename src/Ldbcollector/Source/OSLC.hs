@@ -62,7 +62,7 @@ instance LicenseFactC OSLCData where
     getType _ = "OSLC"
     getApplicableLNs (OSLCData {_id = id, _name = name, _licenseId = licenseId}) = 
         case maybeToList id ++ [name] ++ licenseId of
-            best:others -> NLN best `AlternativeLNs` map LN others
+            best:others -> LN best `AlternativeLNs` map LN others
             _ -> undefined
     getImpliedStmts oslc = 
         [ (MaybeStatement . fmap LicenseComment) (_notes oslc)

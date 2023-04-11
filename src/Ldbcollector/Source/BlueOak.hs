@@ -93,7 +93,7 @@ copyleftToFacts (BlueOakCopyleftData _ families) =
     concatMap (\(kind, groups) -> concatMap (\(BlueOakCopyleftGroup name versions) -> map (BOCCopyleft kind name) versions) groups) $ M.assocs families
 
 alnFromBol :: BlueOakLicense -> ApplicableLNs
-alnFromBol (BlueOakLicense name id _) = (NLN . newNLN "BlueOak" . pack) id `AlternativeLNs`
+alnFromBol (BlueOakLicense name id _) = (LN . newNLN "BlueOak" . pack) id `AlternativeLNs`
                                                 [ (LN . newLN . pack) name
                                                 ]
 

@@ -10,6 +10,7 @@ import           MyPrelude
 
 import           Data.String (IsString (..))
 import           Data.Text   as T
+import qualified Text.Blaze as H
 
 data LicenseName where
     LicenseName :: Maybe Text -> Text -> LicenseName
@@ -53,6 +54,9 @@ instance FromJSON LicenseName where
   parseJSON = withText "LicenseName" $ return . fromString . unpack
 instance ToJSON LicenseName where
     toJSON = String . pack . show
+
+instance H.ToMarkup LicenseName where
+    toMarkup = H.toMarkup .show
 
 data LicenseNameRelation where
     Same         :: LicenseNameRelation
