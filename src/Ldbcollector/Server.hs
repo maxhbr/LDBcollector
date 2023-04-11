@@ -8,7 +8,6 @@ module Ldbcollector.Server
 
 import           Ldbcollector.Model
 import           Ldbcollector.Sink.GraphViz
-import           Ldbcollector.Sink.Metrics
 
 import qualified Data.Vector                        as V
 
@@ -30,7 +29,6 @@ import qualified Data.Graph.Inductive.Graph        as G
 import Data.FileEmbed (embedFile)
 import           Web.Scotty as S
 import qualified Network.Wai.Handler.Warp as Warp
-import Data.Yaml (ParseException(_anchorName))
 
 myOptions :: S.Options
 myOptions = S.Options 1 (Warp.setPort 3000 (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))

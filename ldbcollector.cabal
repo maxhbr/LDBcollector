@@ -37,7 +37,7 @@ library
       Ldbcollector.Source.BlueOak
       Ldbcollector.Source.Cavil
       Ldbcollector.Source.ChooseALicense
-      Ldbcollector.Source.EclispeOrgLegal
+      Ldbcollector.Source.EclipseOrgLegal
       Ldbcollector.Source.Fedora
       Ldbcollector.Source.FOSSLight
       Ldbcollector.Source.Fossology

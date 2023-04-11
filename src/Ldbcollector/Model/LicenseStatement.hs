@@ -68,7 +68,6 @@ class ToLicenseType a where
 instance ToLicenseType String where
     toLicenseType = fromString
 
-
 data LicenseStatement where
     LicenseStatement :: String -> LicenseStatement
     LicenseType :: LicenseType -> LicenseStatement

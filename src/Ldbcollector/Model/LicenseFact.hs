@@ -5,7 +5,6 @@
 module Ldbcollector.Model.LicenseFact
   ( Origin (..)
   , FactId (..)
-  , FromFact (..)
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
   , ApplicableLNs (..)
@@ -38,16 +37,6 @@ instance Show FactId where
 instance ToJSON FactId where
     toJSON (FactId ty hash) = toJSON [ty, hash]
 
-data FromFact a
-    = FromFact
-    { originFacts :: [FactId]
-    , unFF :: a
-    }
-deriving instance Show a => Show (FromFact a)
-deriving instance Eq a => Eq (FromFact a)
-instance (Eq a, Show a) => Ord (FromFact a) where
-    compare a b = show a `compare` show b
-
 data ApplicableLNs where
     LN :: LicenseName -> ApplicableLNs
     AlternativeLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
@@ -57,8 +46,6 @@ alternativesFromListOfLNs :: [LicenseName] -> ApplicableLNs
 alternativesFromListOfLNs (best:others) = LN best `AlternativeLNs` map LN others
 alternativesFromListOfLNs [] = undefined
 instance ToJSON ApplicableLNs
--- instance H.ToMarkup ApplicableLNs where
---     toMarkup (LN ln) = H.toMarkup ln
 
 
 class (Eq a) => LicenseFactC a where

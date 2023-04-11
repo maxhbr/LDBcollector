@@ -17,6 +17,7 @@ import           Ldbcollector.Source.Warpr
 import           Ldbcollector.Source.OSI
 import           Ldbcollector.Source.FOSSLight
 import           Ldbcollector.Source.HitachiOpenLicense
+import           Ldbcollector.Source.EclipseOrgLegal
 
 applySources :: LicenseGraphM ()
 applySources = do
@@ -38,4 +39,5 @@ applySources = do
     applySource (Warpr "./data/warpr-licensedb/data")
     applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")
     applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv")
+    applySource (EclipseOrgLegal "data/eclipse.org-legal-licenses.json")
     lift $ infoM rootLoggerName "# ... got sources"
