@@ -1,4 +1,4 @@
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Sink.Metrics
     ( writeMetrics
@@ -6,10 +6,10 @@ module Ldbcollector.Sink.Metrics
 
 import           Ldbcollector.Model
 
-import qualified Control.Monad.State               as MTL
-import qualified Data.Graph.Inductive.Basic        as G
-import qualified Data.Graph.Inductive.Graph        as G
-import qualified Data.Map                          as Map
+import qualified Control.Monad.State        as MTL
+import qualified Data.Graph.Inductive.Basic as G
+import qualified Data.Graph.Inductive.Graph as G
+import qualified Data.Map                   as Map
 
 writeMetrics :: LicenseGraphM ()
 writeMetrics = do
@@ -27,7 +27,7 @@ writeMetrics = do
     lift $ infoM "Metrics" $ "number of facts: " ++ show (length facts)
     lift $ infoM "Metrics" $ "number of license clusters: " ++ show (length clusters)
     lift $ infoM "Metrics" $ "number of license names: " ++ show (length names)
-    
+
 
 
 

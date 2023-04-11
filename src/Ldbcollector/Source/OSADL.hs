@@ -6,14 +6,14 @@ module Ldbcollector.Source.OSADL
 
 import           Ldbcollector.Model
 
-import qualified Data.Vector as V
-import qualified Data.Text as T
-import qualified Data.Text.IO as T
-import qualified Text.Blaze.Html5                   as H
+import qualified Data.Text          as T
+import qualified Data.Text.IO       as T
+import qualified Data.Vector        as V
+import qualified Text.Blaze.Html5   as H
 
 data OSADLRule
   = OSADLRule
-  { spdxId :: LicenseName
+  { spdxId    :: LicenseName
   , osadlRule :: Text
   } deriving (Show, Eq, Ord, Generic)
 instance ToJSON OSADLRule
@@ -41,9 +41,9 @@ getOSADL osadl = do
 
 data OSADLMatrixCompatibility
     = OSADLMatrixCompatibility
-    { _other :: LicenseName
+    { _other         :: LicenseName
     , _compatibility :: String
-    , _explanation :: Text
+    , _explanation   :: Text
     } deriving (Show, Eq, Ord, Generic)
 instance FromJSON OSADLMatrixCompatibility where
   parseJSON = withObject "OSADLMatrixCompatibility" $ \v ->
@@ -54,7 +54,7 @@ instance ToJSON OSADLMatrixCompatibility
 
 data OSADLMatrixLicense
     = OSADLMatrixLicense
-    { _name :: LicenseName
+    { _name           :: LicenseName
     , compatibilities :: [OSADLMatrixCompatibility]
     } deriving (Show, Eq, Ord, Generic)
 instance ToJSON OSADLMatrixLicense
@@ -79,8 +79,8 @@ getOSADLMatrix json = do
     logFileReadIO json
     decoded <- eitherDecodeFileStrict json :: IO (Either String OSADLMatrix)
     case decoded of
-        Left err  -> fail err
-        Right m -> return m
+        Left err -> fail err
+        Right m  -> return m
 
 newtype OSADL
     = OSADL FilePath

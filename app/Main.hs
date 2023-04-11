@@ -1,17 +1,17 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import qualified Data.Vector                        as V
-import           Prelude                            hiding (div, head, id)
+import qualified Data.Vector                as V
+import           Prelude                    hiding (div, head, id)
 
-import qualified Control.Monad.State                as MTL
-import           Data.Monoid                        (mconcat)
+import qualified Control.Monad.State        as MTL
+import           Data.Monoid                (mconcat)
 
 import           Ldbcollector.Model
+import           Ldbcollector.Server
 import           Ldbcollector.Sink.GraphViz
 import           Ldbcollector.Sink.Metrics
 import           Ldbcollector.Source
-import           Ldbcollector.Server
 
 main :: IO ()
 main = do

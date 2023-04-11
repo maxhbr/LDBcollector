@@ -1,17 +1,17 @@
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Source.OSI
     ( OSI (..)
     ) where
 
+import qualified Data.Map                            as Map
+import qualified Data.Vector                         as V
+import qualified Data.Yaml                           as Y
+import qualified Data.Yaml.Internal                  as Y
 import           Ldbcollector.Model
-import qualified Data.Vector           as V
-import qualified Data.Map              as Map
-import qualified Data.Yaml as Y
-import qualified Data.Yaml.Internal as Y
 
+import           Control.Monad.Except                (runExceptT)
 import qualified Network.Protocol.OpenSource.License as OSI
-import           Control.Monad.Except (runExceptT)
 
 newtype OSILicense
     = OSILicense OSI.OSILicense

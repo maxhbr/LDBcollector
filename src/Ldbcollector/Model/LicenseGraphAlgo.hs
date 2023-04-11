@@ -1,5 +1,5 @@
+{-# LANGUAGE CPP        #-}
 {-# LANGUAGE LambdaCase #-}
-{-# LANGUAGE CPP #-}
 module Ldbcollector.Model.LicenseGraphAlgo
   where
 --   ( focus
@@ -17,9 +17,9 @@ import qualified Data.Map                          as Map
 import qualified Data.Vector                       as V
 
 
+import           Ldbcollector.Model.LicenseFact
 import           Ldbcollector.Model.LicenseGraph
 import           Ldbcollector.Model.LicenseName
-import           Ldbcollector.Model.LicenseFact
 
 getClusters :: LicenseGraphM [[LicenseName]]
 getClusters = do
@@ -57,7 +57,7 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
                 edgeFilterFun a b edgeLabel = let
                         potentialE = (fmap G.toEdge . find (== (a,b,edgeLabel)) . G.labEdges) gr
                     in case potentialE of
-                        Just e -> e `elem` backedEdges
+                        Just e  -> e `elem` backedEdges
                         Nothing -> False
             in if node `elem` backedNodes
                 then Just (filter (\(edgeLabel, a) -> edgeFilterFun a node edgeLabel) incoming, node, label, filter (\(edgeLabel, b) -> edgeFilterFun node b edgeLabel) outgoing)
@@ -65,7 +65,7 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
         onlyPredicateFiltermapfun :: (LicenseGraphEdge -> Bool) -> G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseGraphNode LicenseGraphEdge
         onlyPredicateFiltermapfun predicate (incoming, node, a, outgoing) = let
                 isFlippable (LGNameRelation Same,_) = True
-                isFlippable _ = False
+                isFlippable _                       = False
                 incoming' = nub $ filter (\(l,_) -> predicate l) incoming
                 outgoing' = nub $ filter (\(l,_) -> predicate l) outgoing
             in Just (incoming' <> filter isFlippable outgoing', node, a, outgoing' <> filter isFlippable incoming')
@@ -118,7 +118,7 @@ condense g = let
         nodesToGraphNodes = map (\n -> Map.findWithDefault (LGVec []) n node_map_rev)
         flattenNodes :: [LicenseGraphNode] -> LicenseGraphNode
         flattenNodes [n] = n
-        flattenNodes ns = LGVec ns
+        flattenNodes ns  = LGVec ns
     in (G.nmap (flattenNodes . nodesToGraphNodes) . G.condensation . _gr) g
 
 prettyPrintCondensed :: LicenseGraphM ()

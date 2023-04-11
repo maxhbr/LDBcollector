@@ -1,7 +1,7 @@
-{-# LANGUAGE LambdaCase #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE GADTs #-}
 {-# LANGUAGE DefaultSignatures #-}
+{-# LANGUAGE GADTs             #-}
+{-# LANGUAGE LambdaCase        #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Model.LicenseFact
   ( SourceRef (..)
   , FactId (..)
@@ -12,19 +12,19 @@ module Ldbcollector.Model.LicenseFact
   , LicenseFactC (..)
   ) where
 
-import           MyPrelude hiding (ByteString)
+import           MyPrelude                           hiding (ByteString)
 
-import           Data.ByteString                  (ByteString)
-import qualified Data.ByteString.Lazy.Char8        as C
-import           Data.Aeson                        as A
-import qualified Data.ByteString.Base16            as B16
-import qualified Crypto.Hash.MD5 as MD5
-import qualified Data.Map                          as Map
-import qualified Data.Vector                       as V
+import qualified Crypto.Hash.MD5                     as MD5
+import           Data.Aeson                          as A
+import           Data.ByteString                     (ByteString)
+import qualified Data.ByteString.Base16              as B16
+import qualified Data.ByteString.Lazy.Char8          as C
+import qualified Data.Map                            as Map
+import qualified Data.Vector                         as V
 
 import           Ldbcollector.Model.LicenseName
 import           Ldbcollector.Model.LicenseStatement
-import qualified Text.Blaze as H
+import qualified Text.Blaze                          as H
 
 newtype SourceRef = Source String
    deriving (Eq, Show, Ord)
@@ -44,7 +44,7 @@ data ApplicableLNs where
     deriving (Generic)
 alternativesFromListOfLNs :: [LicenseName] -> ApplicableLNs
 alternativesFromListOfLNs (best:others) = LN best `AlternativeLNs` map LN others
-alternativesFromListOfLNs [] = undefined
+alternativesFromListOfLNs []            = undefined
 instance ToJSON ApplicableLNs
 
 
@@ -74,7 +74,7 @@ wrapFactV :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => V.Vector a -> V
 wrapFactV = V.map wrapFact
 
 instance ToJSON LicenseFact where
-    toJSON (LicenseFact _ v) = 
+    toJSON (LicenseFact _ v) =
         object [ "type" .= getType v
                , "id" .= getFactId v
                , "applicableLNs" .= getApplicableLNs v

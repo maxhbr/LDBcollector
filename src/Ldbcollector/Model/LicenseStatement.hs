@@ -2,25 +2,25 @@
 module Ldbcollector.Model.LicenseStatement
   where
 
+import           Data.Char                      (toLower)
 import           MyPrelude
-import           Data.Char (toLower)
 
 import           Ldbcollector.Model.LicenseName
 
 data PCLR
-    = PCLR 
-    { _permissions :: [Text]
-    , _conditions :: [Text]
-    , _limitations :: [Text]
+    = PCLR
+    { _permissions  :: [Text]
+    , _conditions   :: [Text]
+    , _limitations  :: [Text]
     , _restrictions :: [Text]
     } deriving (Eq, Show, Ord, Generic)
 instance ToJSON PCLR
 
 data LicenseCompatibility
-    = LicenseCompatibility 
-    { _other :: LicenseName 
-    , _compatibility :: String 
-    , _explanation :: Text
+    = LicenseCompatibility
+    { _other         :: LicenseName
+    , _compatibility :: String
+    , _explanation   :: Text
     } deriving (Eq, Show, Ord, Generic)
 instance ToJSON LicenseCompatibility
 
@@ -48,7 +48,7 @@ instance IsString LicenseType where
                       , ("Weakly Protective", WeaklyProtective)
                       , ("weak", WeaklyProtective)
                       , ("StronglyProtective", StronglyProtective)
-                      , ("Strongly Protective", StronglyProtective) 
+                      , ("Strongly Protective", StronglyProtective)
                       , ("strong", StronglyProtective)
                       , ("NetworkProtective", NetworkProtective)
                       , ("Network Protective", NetworkProtective)
@@ -62,7 +62,7 @@ instance IsString LicenseType where
                       ]
         in case find (\(n,_) -> map toLower n == lowerStr) mapping of
             Just (_,a) -> a
-            Nothing -> UnknownLicenseType (Just str)
+            Nothing    -> UnknownLicenseType (Just str)
 class ToLicenseType a where
     toLicenseType :: a -> LicenseType
 instance ToLicenseType String where
@@ -93,5 +93,5 @@ mstmt = MaybeStatement . fmap fromString
 typestmt :: String -> LicenseStatement
 typestmt = LicenseType . fromString
 ifToStmt :: String -> Bool -> LicenseStatement
-ifToStmt stmt True = LicenseStatement stmt
+ifToStmt stmt True  = LicenseStatement stmt
 ifToStmt _    False = noStmt

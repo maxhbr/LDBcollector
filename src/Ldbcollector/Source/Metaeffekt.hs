@@ -1,24 +1,24 @@
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Source.Metaeffekt
     ( Metaeffekt (..)
     ) where
 
-import           Ldbcollector.Model
-import qualified Data.Vector           as V
-import qualified Data.Map              as Map
-import qualified Data.Yaml as Y
+import qualified Data.Map           as Map
+import qualified Data.Vector        as V
+import qualified Data.Yaml          as Y
 import qualified Data.Yaml.Internal as Y
+import           Ldbcollector.Model
 
 data MetaeffektLicense
     = MetaeffektLicense
-    { _canonicalName :: LicenseName
-    , _category :: LicenseName
-    , _shortName :: Maybe LicenseName
-    , _spdxIdentifier :: Maybe LicenseName
-    , _openCoDEStatus :: Maybe String
+    { _canonicalName    :: LicenseName
+    , _category         :: LicenseName
+    , _shortName        :: Maybe LicenseName
+    , _spdxIdentifier   :: Maybe LicenseName
+    , _openCoDEStatus   :: Maybe String
     , _alternativeNames :: [LicenseName]
-    , _otherIds ::  [LicenseName]
+    , _otherIds         ::  [LicenseName]
     } deriving (Eq, Ord, Show, Generic)
 instance FromJSON MetaeffektLicense where
   parseJSON = withObject "MetaeffektLicense" $ \v -> MetaeffektLicense

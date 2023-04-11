@@ -1,8 +1,8 @@
-{-# LANGUAGE DeriveGeneric #-}
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE DeriveGeneric     #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE QuasiQuotes #-}
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE QuasiQuotes       #-}
+{-# LANGUAGE TemplateHaskell   #-}
 module Ldbcollector.Source.HitachiOpenLicense
   ( HitachiOpenLicense(..)
   )
@@ -11,23 +11,23 @@ module Ldbcollector.Source.HitachiOpenLicense
 import           Ldbcollector.Model
 
 import           Data.Aeson
-import           Data.Aeson.Encode.Pretty (encodePretty)
-import           Data.Aeson.Types (Parser)
+import           Data.Aeson.Encode.Pretty   (encodePretty)
+import           Data.Aeson.Types           (Parser)
 import qualified Data.ByteString
-import qualified Data.ByteString.Lazy as B
+import qualified Data.ByteString.Lazy       as B
 import qualified Data.ByteString.Lazy.Char8 as Char8
-import qualified Data.Char as Char
-import qualified Data.Csv as C
-import           Data.FileEmbed (embedFile)
-import           Data.Map (Map)
-import           Data.Set (Set)
-import qualified Data.Set as S
-import qualified Data.Map as M
-import qualified Data.Text as T
-import           Data.Maybe (catMaybes, maybeToList)
-import qualified Data.Vector as V
-import           Network.URI (parseURI)
-import qualified Text.Blaze.Html5        as H
+import qualified Data.Char                  as Char
+import qualified Data.Csv                   as C
+import           Data.FileEmbed             (embedFile)
+import           Data.Map                   (Map)
+import qualified Data.Map                   as M
+import           Data.Maybe                 (catMaybes, maybeToList)
+import           Data.Set                   (Set)
+import qualified Data.Set                   as S
+import qualified Data.Text                  as T
+import qualified Data.Vector                as V
+import           Network.URI                (parseURI)
+import qualified Text.Blaze.Html5           as H
 
 type URL
   = String
@@ -68,7 +68,7 @@ instance (Translateable a) => Translateable [a] where
   translate translations = map (translate translations)
 instance (Translateable a) => Translateable (Maybe a) where
   translate translations (Just a) = Just (translate translations a)
-  translate _ Nothing = Nothing
+  translate _ Nothing             = Nothing
 
 -- #############################################################################
 -- #### Text ###################################################################
@@ -163,7 +163,7 @@ instance (ToJSON a) => ToJSON (OlRef a)
 
 instance (Translateable a) => Translateable (OlRef a) where
   translate translations (Ol a) = Ol (translate translations a)
-  translate _ a = a
+  translate _ a                 = a
 
 class (Eq a) => OlRefable a where
     getRef :: a -> String
@@ -172,7 +172,7 @@ class (Eq a) => OlRefable a where
     unOlRef :: [a] -> OlRef a -> OlRef a
     unOlRef list (OlRef ref) = case find (`matchesRef` ref) list of
         Just a -> Ol a
-        _   -> OlRef ref
+        _      -> OlRef ref
     unOlRef _ a = a
     unOlRefs :: [a] -> [OlRef a] -> [OlRef a]
     unOlRefs list = map (unOlRef list)
@@ -184,11 +184,11 @@ class (Eq a) => OlRefable a where
 data OlAction
   = OlAction
   { _action_schemaVersion :: String
-  , _action_uri :: URL
-  , _action_baseUri :: URL
-  , _action_id :: String
-  , _action_name :: OlText
-  , _action_description :: OlText
+  , _action_uri           :: URL
+  , _action_baseUri       :: URL
+  , _action_id            :: String
+  , _action_name          :: OlText
+  , _action_description   :: OlText
   } deriving (Generic, Eq)
 instance Show OlAction where
   show a = unwords (show (_action_name a) : map (\d -> "(" ++ d ++ ")") (olTextToList (_action_description a)))
@@ -226,12 +226,12 @@ instance FromJSON OlConditionType
 data OlCondition
   = OlCondition
   { _condition_schemaVersion :: String
-  , _condition_uri :: URL
-  , _condition_baseUri :: URL
-  , _condition_id :: String
+  , _condition_uri           :: URL
+  , _condition_baseUri       :: URL
+  , _condition_id            :: String
   , _condition_conditionType :: OlConditionType
-  , _condition_name :: OlText
-  , _condition_description :: OlText
+  , _condition_name          :: OlText
+  , _condition_description   :: OlText
   } deriving (Generic, Eq)
 instance Show OlCondition where
   show c = unwords ([ show (_condition_conditionType c) ++ ":"
@@ -346,11 +346,11 @@ unOlRefsConditionTree actions conditions notices (OlConditionTreeLeaf a) = OlCon
 data OlNotice
   = OlNotice
   { _notice_schemaVersion :: String
-  , _notice_uri :: URL
-  , _notice_baseUri :: URL
-  , _notice_id :: String
-  , _notice_content :: OlText
-  , _notice_description :: OlText
+  , _notice_uri           :: URL
+  , _notice_baseUri       :: URL
+  , _notice_id            :: String
+  , _notice_content       :: OlText
+  , _notice_description   :: OlText
   } deriving (Generic, Eq, Show)
 instance Translateable OlNotice where
   translate translations n = n { _notice_content = translate translations (_notice_content n)
@@ -377,9 +377,9 @@ instance OlRefable OlNotice where
 
 data OlPermission
   = OlPermission
-  { _permission_summary :: OlText
-  , _permission_description :: OlText
-  , _permission_actions :: [OlRef OlAction]
+  { _permission_summary       :: OlText
+  , _permission_description   :: OlText
+  , _permission_actions       :: [OlRef OlAction]
   , _permission_conditionHead :: Maybe OlConditionTree
   } deriving (Generic, Eq)
 instance Show OlPermission where
@@ -421,15 +421,15 @@ unOlRefPermission actions conditions notices permission@(OlPermission{_permissio
 data OlLicense
  = OlLicense
  { _license_schemaVersion :: String
- , _license_uri :: URL
- , _license_baseUri :: URL
- , _license_id :: String
- , _license_name :: LicenseName
- , _license_summary :: OlText
- , _license_description :: OlText
- , _license_permissions :: [OlPermission]
- , _license_notices :: [OlRef OlNotice]
- , _license_content :: Text
+ , _license_uri           :: URL
+ , _license_baseUri       :: URL
+ , _license_id            :: String
+ , _license_name          :: LicenseName
+ , _license_summary       :: OlText
+ , _license_description   :: OlText
+ , _license_permissions   :: [OlPermission]
+ , _license_notices       :: [OlRef OlNotice]
+ , _license_content       :: Text
  } deriving (Generic, Eq, Show)
 instance Translateable OlLicense where
   translate translations l = l
@@ -571,7 +571,7 @@ fixName = maybeToList . (`M.lookup` nameFixes)
 
 olRefToMarkup :: (a -> H.Markup) -> OlRef a -> H.Markup
 olRefToMarkup _ (OlRef ref) = H.toMarkup ref
-olRefToMarkup f (Ol a) = f a
+olRefToMarkup f (Ol a)      = f a
 
 conditionToMarkup :: OlCondition -> H.Markup
 conditionToMarkup (OlCondition { _condition_schemaVersion=condition_schemaVersion
@@ -688,7 +688,7 @@ instance Source HitachiOpenLicense where
                                                                             en' -> Just en')) . V.toList $
                     case (C.decodeByName translationsCsvContent :: Either String (C.Header, V.Vector TranslationRow)) of
                         Right (_, rows) -> rows
-                        Left err -> V.empty
+                        Left err        -> V.empty
 
             actionsFileContent <- B.readFile actionsFile
             let actions :: [OlAction]

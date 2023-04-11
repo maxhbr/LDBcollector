@@ -1,18 +1,18 @@
-{-# LANGUAGE DeriveGeneric #-}
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE DeriveGeneric     #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TemplateHaskell   #-}
 module Ldbcollector.Source.OSLC
   ( OSLC(..)
   ) where
 
 import           Ldbcollector.Model    hiding (ByteString)
 
-import qualified Data.Text as T
-import qualified Data.Vector as V
-import qualified Data.ByteString as B
-import           Data.ByteString (ByteString)
+import           Data.ByteString       (ByteString)
+import qualified Data.ByteString       as B
 import qualified Data.ByteString.Char8 as Char8
+import qualified Data.Text             as T
+import qualified Data.Vector           as V
 import           Data.Yaml
 
 data OSLCUseCase
@@ -26,11 +26,11 @@ instance FromJSON OSLCUseCase
 
 data OSLCTerm
   = OSLCTerm
-  { _termType :: Text
-  , _termDescription :: Text
-  , _termUseCases :: Maybe [OSLCUseCase]
+  { _termType            :: Text
+  , _termDescription     :: Text
+  , _termUseCases        :: Maybe [OSLCUseCase]
   , _termComplianceNotes :: Maybe Text
-  , _termSeeAlso :: Maybe [Text]
+  , _termSeeAlso         :: Maybe [Text]
   } deriving (Show, Eq, Ord, Generic)
 instance ToJSON OSLCTerm
 instance FromJSON OSLCTerm where
@@ -43,11 +43,11 @@ instance FromJSON OSLCTerm where
 
 data OSLCData
   = OSLCData
-  { _id :: Maybe LicenseName
-  , _name :: LicenseName
+  { _id        :: Maybe LicenseName
+  , _name      :: LicenseName
   , _licenseId :: [LicenseName]
-  , _notes :: Maybe Text
-  , _terms :: Maybe [OSLCTerm]
+  , _notes     :: Maybe Text
+  , _terms     :: Maybe [OSLCTerm]
   } deriving (Show, Eq, Ord, Generic)
 instance ToJSON OSLCData
 instance FromJSON OSLCData where
@@ -60,11 +60,11 @@ instance FromJSON OSLCData where
 
 instance LicenseFactC OSLCData where
     getType _ = "OSLC"
-    getApplicableLNs (OSLCData {_id = id, _name = name, _licenseId = licenseId}) = 
+    getApplicableLNs (OSLCData {_id = id, _name = name, _licenseId = licenseId}) =
         case maybeToList id ++ [name] ++ licenseId of
             best:others -> LN best `AlternativeLNs` map LN others
-            _ -> undefined
-    getImpliedStmts oslc = 
+            _           -> undefined
+    getImpliedStmts oslc =
         [ (MaybeStatement . fmap LicenseComment) (_notes oslc)
         ]
 

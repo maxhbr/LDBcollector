@@ -1,31 +1,31 @@
-{-# LANGUAGE DeriveGeneric #-}
+{-# LANGUAGE DeriveGeneric     #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TemplateHaskell   #-}
 module Ldbcollector.Source.ChooseALicense
   ( ChooseALicense (..)
   ) where
 
-import           Ldbcollector.Model    hiding (ByteString)
+import           Ldbcollector.Model hiding (ByteString)
 
-import qualified Data.List.Split as Split
-import qualified Data.Vector as V
+import qualified Data.List.Split    as Split
+import qualified Data.Vector        as V
 
-import qualified Data.Yaml as Y
-import qualified Text.Blaze.Html5        as H
+import qualified Data.Yaml          as Y
+import qualified Text.Blaze.Html5   as H
 
 data CALData
   = CALData
-  { _id :: Maybe LicenseName 
-  , _name :: Maybe LicenseName
-  , _title :: Maybe LicenseName
-  , _spdxId :: Maybe LicenseName 
-  , _nickname :: Maybe LicenseName
-  , _featured :: Maybe Bool
-  , _hidden :: Maybe Bool
-  , _description :: Maybe Text
-  , _how :: Maybe Text
+  { _id              :: Maybe LicenseName
+  , _name            :: Maybe LicenseName
+  , _title           :: Maybe LicenseName
+  , _spdxId          :: Maybe LicenseName
+  , _nickname        :: Maybe LicenseName
+  , _featured        :: Maybe Bool
+  , _hidden          :: Maybe Bool
+  , _description     :: Maybe Text
+  , _how             :: Maybe Text
   , _cal_permissions :: [Text]
-  , _cal_conditions :: [Text]
+  , _cal_conditions  :: [Text]
   , _cal_limitations :: [Text]
 --   , _content :: ByteString
   } deriving (Show, Eq, Ord, Generic)
@@ -92,7 +92,7 @@ readTxt txt = do
     let contentLines = lines contents
     let parts = (map unlines . Split.splitOn ["---"]) contentLines
 
-    case parts of 
+    case parts of
         _:yaml:others -> do
             case Y.decodeEither' ((fromString . ("---\n"++)) yaml) of
                 Left err -> do

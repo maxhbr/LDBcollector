@@ -1,23 +1,23 @@
 module Ldbcollector.Source where
 
 import           Ldbcollector.Model
+import           Ldbcollector.Source.BlueOak
 import           Ldbcollector.Source.Cavil
+import           Ldbcollector.Source.ChooseALicense
+import           Ldbcollector.Source.EclipseOrgLegal
 import           Ldbcollector.Source.Fedora
+import           Ldbcollector.Source.FOSSLight
+import           Ldbcollector.Source.Fossology
+import           Ldbcollector.Source.FSF
+import           Ldbcollector.Source.HitachiOpenLicense
+import           Ldbcollector.Source.Metaeffekt
+import           Ldbcollector.Source.OKFN
+import           Ldbcollector.Source.OSADL
+import           Ldbcollector.Source.OSI
+import           Ldbcollector.Source.OSLC
 import           Ldbcollector.Source.Scancode
 import           Ldbcollector.Source.SPDX
-import           Ldbcollector.Source.BlueOak
-import           Ldbcollector.Source.OSADL
-import           Ldbcollector.Source.FSF
-import           Ldbcollector.Source.ChooseALicense
-import           Ldbcollector.Source.OSLC
-import           Ldbcollector.Source.Fossology
-import           Ldbcollector.Source.OKFN
-import           Ldbcollector.Source.Metaeffekt
 import           Ldbcollector.Source.Warpr
-import           Ldbcollector.Source.OSI
-import           Ldbcollector.Source.FOSSLight
-import           Ldbcollector.Source.HitachiOpenLicense
-import           Ldbcollector.Source.EclipseOrgLegal
 
 applySources :: LicenseGraphM ()
 applySources = do

@@ -1,4 +1,4 @@
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Sink.GraphViz
     ( writeGraphViz
@@ -17,15 +17,15 @@ import qualified Data.GraphViz.Commands.IO         as GV
 import qualified Data.GraphViz.Printing            as GV
 import qualified Data.Vector                       as V
 
-import           Ldbcollector.Model
+import qualified Data.GraphViz.Attributes.HTML     as GVH
 import qualified Data.HashMap.Internal.Strict      as HMap
 import qualified Data.Map                          as Map
-import qualified Data.GraphViz.Attributes.HTML     as GVH
+import           Ldbcollector.Model
 
-import qualified System.IO.Temp                     as Temp
-import qualified Data.Text.Lazy                     as LT
-import qualified Data.Text.Lazy.IO                  as LT
-import qualified Text.Wrap                          as TW
+import qualified Data.Text.Lazy                    as LT
+import qualified Data.Text.Lazy.IO                 as LT
+import qualified System.IO.Temp                    as Temp
+import qualified Text.Wrap                         as TW
 
 instance GV.Labellable FactId where
     toLabelValue (FactId ty hash) = GV.toLabelValue (ty ++ "\n" ++ hash)
@@ -48,7 +48,7 @@ instance GV.Labellable LicenseStatement where
             content = GVH.Cells (map linesToContent [ _permissions pclr, _conditions pclr, _limitations pclr, _restrictions pclr])
         in GV.HtmlLabel . GVH.Table $ GVH.HTable Nothing [] [ header, content ]
     toLabelValue (LicenseCompatibilities compatibilities) = let
-            mkLine (LicenseCompatibility other compatibility explanation) = 
+            mkLine (LicenseCompatibility other compatibility explanation) =
                 GVH.Cells [ GVH.LabelCell [] (GVH.Text [GVH.Str . LT.pack $ show other])
                           , GVH.LabelCell [] (GVH.Text [GVH.Str $ LT.pack compatibility])
                         --   , GVH.LabelCell [] (GVH.Text [GVH.Str $ LT.fromStrict explanation])
@@ -58,19 +58,19 @@ instance GV.Labellable LicenseStatement where
 
 computeDigraph :: LicenseGraph -> GV.DotGraph G.Node
 computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
-        colors = cycle $ map (\(r,g,b) -> GV.RGB r g b) [ (0,135,108)  -- #00876c 
-                                                        , (55,148,105) -- #379469 
-                                                        , (88,160,102) -- #58a066 
-                                                        , (120,171,99) -- #78ab63 
-                                                        , (152,181,97) -- #98b561 
-                                                        , (184,191,98) -- #b8bf62 
-                                                        , (218,199,103)-- #dac767 
-                                                        , (222,178,86) -- #deb256 
-                                                        , (224,157,75) -- #e09d4b 
-                                                        , (225,135,69) -- #e18745 
-                                                        , (224,111,69) -- #e06f45 
-                                                        , (220,87,74)  -- #dc574a 
-                                                        , (212,61,81)  -- #d43d51 
+        colors = cycle $ map (\(r,g,b) -> GV.RGB r g b) [ (0,135,108)  -- #00876c
+                                                        , (55,148,105) -- #379469
+                                                        , (88,160,102) -- #58a066
+                                                        , (120,171,99) -- #78ab63
+                                                        , (152,181,97) -- #98b561
+                                                        , (184,191,98) -- #b8bf62
+                                                        , (218,199,103)-- #dac767
+                                                        , (222,178,86) -- #deb256
+                                                        , (224,157,75) -- #e09d4b
+                                                        , (225,135,69) -- #e18745
+                                                        , (224,111,69) -- #e06f45
+                                                        , (220,87,74)  -- #dc574a
+                                                        , (212,61,81)  -- #d43d51
                                                         ]
                                                         -- [ (255,215,0)
                                                         -- , (255,177,78)
@@ -96,14 +96,14 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
 
         getColorOfNode :: (G.Node, Maybe LicenseGraphNode) -> GV.Attributes
         getColorOfNode (n, Just (LGName _)) =
-            case getSourcesOfNode n of 
+            case getSourcesOfNode n of
                 [source] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) source ]
                 [] -> [GV.Style [GV.SItem GV.Dashed []]]
                 _ -> []
-        getColorOfNode (n, Just (LGFact _)) = 
-            case getSourcesOfNode n of 
+        getColorOfNode (n, Just (LGFact _)) =
+            case getSourcesOfNode n of
                 [source] -> [ GV.FontColor (GV.X11Color GV.Gray)
-                            , (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) source 
+                            , (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) source
                             ]
                 [] -> [GV.Style [GV.SItem GV.Dashed []]]
                 _ -> []
@@ -123,12 +123,12 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
         getColorOfEdge edge = let
                 potentialE = (fmap G.toEdge . find (== edge) . G.labEdges) graph
             in case potentialE of
-                Just e -> case getSourcesOfEdge e of 
+                Just e -> case getSourcesOfEdge e of
                         [source] -> [ (GV.Color . (:[]) . (`GV.WC` Nothing) . typeColoringLookup) source ]
                         [] -> []
                         _ -> []
                 Nothing -> []
-        
+
         edgeLabels a b =
             ( map (\(_, _, l) -> l)
             . filter (\(a', b', _) -> a == a' && b == b')

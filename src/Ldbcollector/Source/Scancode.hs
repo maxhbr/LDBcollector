@@ -49,10 +49,10 @@ instance LicenseFactC ScancodeData where
                                 ]
     getImpliedStmts scd = case _category scd of
                             Just category -> [typestmt category]
-                            _ -> []
+                            _             -> []
                           ++ map mstmt [ _homepageUrl scd
                                        , _osiUrl scd
-                                       ] 
+                                       ]
                           ++ maybeToList (fmap LicenseComment (_notes scd))
                           ++ maybeToList (fmap LicenseUrl (_osiUrl scd))
                           ++ map LicenseUrl (_textUrls scd)

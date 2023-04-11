@@ -1,7 +1,7 @@
-{-# LANGUAGE CPP #-}
+{-# LANGUAGE CPP               #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE LambdaCase #-}
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TemplateHaskell   #-}
 module Ldbcollector.Server
     ( serve
     ) where
@@ -9,26 +9,26 @@ module Ldbcollector.Server
 import           Ldbcollector.Model
 import           Ldbcollector.Sink.GraphViz
 
-import qualified Data.Vector                        as V
+import qualified Data.Vector                   as V
 
-import qualified Control.Monad.State                as MTL
-import qualified Data.Text.Lazy                     as T
-import qualified Data.Text.Lazy.IO                  as T
-import qualified Data.Text.Encoding                 as Enc
-import qualified System.IO.Temp                     as Temp
-import qualified Text.Blaze.Html.Renderer.Text      as BT
-import qualified Text.Blaze.Html5                   as H
-import qualified Text.Blaze.Html5.Attributes        as A
-import qualified Data.ByteString.Lazy as BL
+import qualified Control.Monad.State           as MTL
 import qualified Data.ByteString
-import qualified Data.Map as Map
+import qualified Data.ByteString.Lazy          as BL
+import qualified Data.Map                      as Map
+import qualified Data.Text.Encoding            as Enc
+import qualified Data.Text.Lazy                as T
+import qualified Data.Text.Lazy.IO             as T
+import qualified System.IO.Temp                as Temp
+import qualified Text.Blaze.Html.Renderer.Text as BT
+import qualified Text.Blaze.Html5              as H
+import qualified Text.Blaze.Html5.Attributes   as A
 
-import qualified Data.Graph.Inductive.Basic        as G
-import qualified Data.Graph.Inductive.Graph        as G
+import qualified Data.Graph.Inductive.Basic    as G
+import qualified Data.Graph.Inductive.Graph    as G
 
-import Data.FileEmbed (embedFile)
-import           Web.Scotty as S
-import qualified Network.Wai.Handler.Warp as Warp
+import           Data.FileEmbed                (embedFile)
+import qualified Network.Wai.Handler.Warp      as Warp
+import           Web.Scotty                    as S
 
 myOptions :: S.Options
 myOptions = S.Options 1 (Warp.setPort 3000 (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
@@ -75,27 +75,30 @@ printFacts factId licenseGraph = do
                                 onerror _ _ = Just '_'
                             in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))) facts
 
-evaluateParams :: [S.Param] -> LicenseGraph -> [SourceRef] -> IO (LicenseGraph, LicenseNameGraphType, ByteString)
-evaluateParams  params licenseGraph sources = do
+evaluateParams :: [S.Param] -> LicenseGraph -> IO (Map.Map T.Text T.Text, T.Text, LicenseName, [SourceRef], [SourceRef])
+evaluateParams  params licenseGraph = do
     let paramMap = Map.fromList params
         licRaw = Map.findWithDefault "BSD-3-Clause" "license" paramMap
         lic = (fromText . T.toStrict) licRaw :: LicenseName
+        allSources = (nub . map fst . Map.keys . _facts) licenseGraph
         enabledSources = case (map (Source . T.unpack . fst) . filter (\(_,value) -> value == "on")) params of
-            [] -> sources
-            enabledSources -> enabledSources
-        allLicenseNames = getLicenseGraphLicenseNames licenseGraph
+            []              -> allSources
+            enabledSources_ -> enabledSources_
 
     debugLogIO ("params=" ++ show params)
     debugLogIO ("licRaw=" ++ show licRaw)
     debugLogIO ("lic=" ++ show lic)
     debugLogIO ("enabledSources=" ++ show enabledSources)
 
-    -- ((subgraph,lnsubgraph,svg),_) <-
+    return (paramMap,licRaw,lic,allSources,enabledSources)
+
+conputeSubgraph :: LicenseGraph -> LicenseName -> [SourceRef] -> Map.Map T.Text T.Text -> IO (LicenseGraphType, LicenseNameGraphType, T.Text)
+conputeSubgraph licenseGraph lic enabledSources paramMap =
     fmap fst . runLicenseGraphM' licenseGraph $
             focus enabledSources ((V.singleton . LGName) lic) $ do
                 MTL.gets ((,,) . _gr)
                      <*> getLicenseNameGraph
-                     <*> (do 
+                     <*> (do
                         when ("on" == Map.findWithDefault "" "onlyLNs" paramMap) $
                             MTL.modify (\lg@LicenseGraph{_gr=gr} -> lg{_gr=G.labfilter (\case
                                                                                             LGName _ -> True
@@ -103,38 +106,21 @@ evaluateParams  params licenseGraph sources = do
                         genGraphViz
                      )
 
-mainPage :: [S.Param] -> LicenseGraph -> [SourceRef] -> IO H.Html
-mainPage params licenseGraph sources = do
-    let paramMap = Map.fromList params
-        licRaw = Map.findWithDefault "BSD-3-Clause" "license" paramMap
-        lic = (fromText . T.toStrict) licRaw :: LicenseName
-        enabledSources = case (map (Source . T.unpack . fst) . filter (\(_,value) -> value == "on")) params of
-            [] -> sources
-            enabledSources -> enabledSources
-        allLicenseNames = getLicenseGraphLicenseNames licenseGraph
+svgPage :: [S.Param] -> LicenseGraph -> IO T.Text
+svgPage params licenseGraph = do
+    (paramMap,licRaw,lic,allSources,enabledSources) <- evaluateParams params licenseGraph
+    (subgraph,lnsubgraph,svg) <- conputeSubgraph licenseGraph lic enabledSources paramMap
+    return svg
 
-    debugLogIO ("params=" ++ show params)
-    debugLogIO ("licRaw=" ++ show licRaw)
-    debugLogIO ("lic=" ++ show lic)
-    debugLogIO ("enabledSources=" ++ show enabledSources)
-
-    (subgraph,lnsubgraph,svg) <- evaluateParams params licenseGraph sources
-        -- runLicenseGraphM' licenseGraph $
-        --     focus enabledSources ((V.singleton . LGName) lic) $ do
-        --         MTL.gets ((,,) . _gr)
-        --              <*> getLicenseNameGraph
-        --              <*> (do
-        --                 when ("on" == Map.findWithDefault "" "onlyLNs" paramMap) $
-        --                     MTL.modify (\lg@LicenseGraph{_gr=gr} -> lg{_gr=G.labfilter (\case
-        --                                                                                     LGName _ -> True
-        --                                                                                     _ -> False) gr})
-        --                 genGraphViz
-        --              )
+mainPage :: [S.Param] -> LicenseGraph -> IO H.Html
+mainPage params licenseGraph = do
+    (paramMap,licRaw,lic,allSources,enabledSources) <- evaluateParams params licenseGraph
+    (subgraph,lnsubgraph,svg) <- conputeSubgraph licenseGraph lic enabledSources paramMap
+    let allLicenseNames = getLicenseGraphLicenseNames licenseGraph
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
-                               _ -> Nothing
+                               _        -> Nothing
                            . snd) . G.labNodes) subgraph
-
     let allPotentialLicenseNames = (map snd . G.labNodes) lnsubgraph
 
     return . H.html $ do
@@ -164,7 +150,7 @@ mainPage params licenseGraph sources = do
                                         then H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on" H.! A.checked "checked"
                                         else H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on"
                                     H.label H.! A.for (fromString source) $ fromString source
-                                ) sources
+                                ) allSources
                         H.h4 "Graph Options"
                         H.ul $ do
                             H.li $ do
@@ -201,9 +187,7 @@ mainPage params licenseGraph sources = do
 serve :: LicenseGraphM ()
 serve = do
     licenseGraph <- MTL.get
-    let names = getLicenseGraphLicenseNames licenseGraph
     clusters <- getClusters
-    sources <- MTL.gets (nub . map fst . Map.keys . _facts)
 
     infoLog "Start server on port 3000..."
     lift $ Temp.withSystemTempDirectory "ldbcollector-haskell" $ \tmpdir -> do
@@ -213,8 +197,13 @@ serve = do
             get "/script.js" $ raw (BL.fromStrict scriptJs)
             get "/" $ do
                 params <- S.params
-                page <- liftAndCatchIO $ mainPage params licenseGraph sources
+                page <- liftAndCatchIO $ mainPage params licenseGraph
                 html (BT.renderHtml page)
+            get "/svg/" $ do
+                params <- S.params
+                svg <- liftAndCatchIO $ svgPage params licenseGraph
+                setHeader "Content-Type" "image/svg+xml"
+                text svg
             get "/fact/:facttype/:facthash" $ do
                 facttype <- fromString <$> param "facttype"
                 facthash <- fromString <$> param "facthash"
@@ -222,7 +211,7 @@ serve = do
                 html (BT.renderHtml page)
 
             get "/clusters" $ listPageAction clusters
-            get "/svg/:lic" $ do
-                lic <- fromString <$> param "lic"
-                svg <- liftAndCatchIO $ genSvg tmpdir lic licenseGraph
-                file svg
+            -- get "/svg/:lic" $ do
+            --     lic <- fromString <$> param "lic"
+            --     svg <- liftAndCatchIO $ genSvg tmpdir lic licenseGraph
+            --     file svg

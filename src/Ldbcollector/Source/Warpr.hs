@@ -1,14 +1,14 @@
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Source.Warpr
     ( Warpr (..)
     ) where
 
-import           Ldbcollector.Model
-import qualified Data.Vector             as V
 import qualified Data.Map                as Map
 import qualified Data.Text.Lazy          as T
 import qualified Data.Text.Lazy.IO       as T
+import qualified Data.Vector             as V
+import           Ldbcollector.Model
 import qualified Swish.RDF               as TTL
 import qualified Swish.RDF.Parser.Turtle as TTL
 import qualified Text.Blaze.Html5        as H

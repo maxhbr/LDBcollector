@@ -1,29 +1,29 @@
-{-# LANGUAGE DeriveGeneric #-}
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE DeriveGeneric     #-}
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TemplateHaskell   #-}
 module Ldbcollector.Source.FOSSLight
   ( FOSSLight (..)
   ) where
 
 import           Ldbcollector.Model
 
-import qualified Data.Text as T
-import qualified Data.Text.Encoding.Error as T
-import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as B
-import qualified Data.Map as Map
 import           Control.Applicative
-import           Control.Exception (handle)
-import           Data.Csv as C
-import           Data.Aeson as A
-import qualified Database.SQLite.Simple as S
-import qualified Database.SQLite.Simple.FromRow as S
+import           Control.Exception                (handle)
+import           Data.Aeson                       as A
+import qualified Data.ByteString.Lazy             as B
+import           Data.Csv                         as C
+import qualified Data.Map                         as Map
+import qualified Data.Text                        as T
+import qualified Data.Text.Encoding.Error         as T
+import qualified Data.Vector                      as V
+import qualified Database.SQLite.Simple           as S
 import qualified Database.SQLite.Simple.FromField as S
-import qualified Database.SQLite.Simple.Types as S
-import qualified Database.SQLite.Simple.Internal as S
-import qualified Database.SQLite.Simple.Ok as S
-import qualified System.IO as IO
+import qualified Database.SQLite.Simple.FromRow   as S
+import qualified Database.SQLite.Simple.Internal  as S
+import qualified Database.SQLite.Simple.Ok        as S
+import qualified Database.SQLite.Simple.Types     as S
+import qualified System.IO                        as IO
 
 
 instance S.FromField LicenseName where
@@ -127,7 +127,7 @@ instance S.FromRow FOSSLight_License where
         ynToBool :: Maybe String -> Bool
         ynToBool (Just "Y") = True
         ynToBool _          = False
-      in FOSSLight_License 
+      in FOSSLight_License
         <$> S.field
         <*> S.field
         <*> S.field
@@ -150,7 +150,7 @@ instance S.FromRow FOSSLight_License where
 data FOSSLightFact
   = FOSSLightFact
   { _FOSSLightFact_License :: FOSSLight_License
-  , _FOSSLightFact_Nicks :: [LicenseName]
+  , _FOSSLightFact_Nicks   :: [LicenseName]
   } deriving (Show, Eq, Generic)
 instance ToJSON FOSSLightFact
 
@@ -178,7 +178,7 @@ instance Source FOSSLight where
             mapM (\(i, name) -> do
               let nameString = "id=" ++ show i ++ " name=" ++ show name
               debugLogIO $ "get License for " ++ nameString
-              let 
+              let
                   handleUnicodeException :: T.UnicodeException -> IO [FOSSLight_License]
                   handleUnicodeException e = do
                     debugLogIO (nameString ++ " error=" ++ show e)
@@ -193,11 +193,11 @@ instance Source FOSSLight where
           nicks <- S.query_ conn "SELECT * from LICENSE_NICKNAME" :: IO [FOSSLight_Nick]
           S.close conn
           return (licenses, nicks)
-      in do 
+      in do
         (licenses, nicks) <- extractLicensesFromSqlite
         let rawFromLicense (license@FOSSLight_License { _fossLight_name = name } ) = let
                 nicksForLicense = map (\(FOSSLight_Nick _ nick) -> nick) $ filter (\n@(FOSSLight_Nick name' _) -> name == name') nicks
               in FOSSLightFact license nicksForLicense
             facts = map (wrapFact . rawFromLicense) licenses
-    
+
         return (V.fromList facts)

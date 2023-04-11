@@ -8,16 +8,16 @@ import           Ldbcollector.Model    hiding (ByteString)
 
 import           Data.ByteString       (ByteString)
 import qualified Data.ByteString.Char8 as Char8
+import qualified Data.Map              as Map
 import qualified Data.Vector           as V
-import qualified Data.Map as Map
 
 data FsfWkingData
     = FsfWkingData
-    { _id :: LicenseName
+    { _id          :: LicenseName
     , _identifiers :: Map.Map Text [LicenseName]
-    , _name :: LicenseName
-    , _tags :: [String]
-    , _uris :: [String]
+    , _name        :: LicenseName
+    , _tags        :: [String]
+    , _uris        :: [String]
     } deriving (Show, Eq, Ord, Generic)
 instance FromJSON FsfWkingData where
   parseJSON = withObject "FsfWkingData" $ \v -> FsfWkingData

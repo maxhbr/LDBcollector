@@ -147,9 +147,9 @@ isAllowedLEdge (a, b, LGImpliedBy) = do
     return $ case an of
                 Just (LGStatement _) ->
                     case bn of
-                        Just (LGFact _) -> True
+                        Just (LGFact _)      -> True
                         Just (LGStatement _) -> True
-                        _               -> False
+                        _                    -> False
                 Just (LGLicenseText _) ->
                     case bn of
                         Just (LGFact _) -> True
@@ -256,7 +256,7 @@ toLicenseNameGraph :: LicenseGraphType -> LicenseNameGraphType
 toLicenseNameGraph = let
         edgeFun :: (LicenseGraphEdge, G.Node) -> Maybe (LicenseNameRelation, G.Node)
         edgeFun (LGNameRelation nr, n) = Just (nr, n)
-        edgeFun _ = Nothing
+        edgeFun _                      = Nothing
         contextFun :: G.Context LicenseGraphNode LicenseGraphEdge -> G.MContext LicenseName LicenseNameRelation
         contextFun (incoming, n, LGName ln, outgoing) = let
                 incoming' = nub $ mapMaybe edgeFun incoming

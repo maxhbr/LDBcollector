@@ -25,6 +25,7 @@ import           Debug.Trace                as X (trace)
 import           GHC.Generics               as X
 import           Prelude                    as X
 -- import           Text.Pandoc.Builder as X (Pandoc, Blocks, Inlines)
+import           Control.DeepSeq            as X (NFData (..), force, rwhnf)
 import           Control.Monad.State        as X (lift)
 import           Data.Graph.Inductive.Graph as X (LNode, Node)
 import           Data.String                as X (IsString (fromString))
@@ -33,15 +34,14 @@ import           System.Directory           as X
 import           System.FilePath            as X
 import           System.FilePath.Glob       as X (glob)
 import           System.IO                  as X (hPutStrLn, stderr)
+import           System.Log.Formatter
+import           System.Log.Handler         (setFormatter)
+import           System.Log.Handler.Simple
+import           System.Log.Handler.Syslog
 import           System.Log.Logger          as X
 import           Text.Blaze                 as X (Markup)
-import           System.Log.Handler.Syslog
-import           System.Log.Handler.Simple
-import           System.Log.Handler (setFormatter)
-import           System.Log.Formatter
-import           Control.DeepSeq            as X (force, NFData (..), rwhnf)
 
-import           System.Console.Pretty               (Color (Yellow), color)
+import           System.Console.Pretty      (Color (Yellow), color)
 
 tShow :: (Show a) => a -> Text
 tShow = pack . show

@@ -5,9 +5,9 @@ module Ldbcollector.Source.Fedora
     ( FedoraLicenseData (..)
     ) where
 
-import           Ldbcollector.Model    hiding (ByteString)
+import           Ldbcollector.Model hiding (ByteString)
 
-import qualified Data.Vector           as V
+import qualified Data.Vector        as V
 
 data FedoraEntryLicense
     = FedoraEntryLicense
@@ -39,7 +39,7 @@ instance FromJSON FedoraEntryFedora where
     <*> v .:? "notes"
 data FedoraEntry
     = FedoraEntry
-    { _id :: Maybe String
+    { _id      :: Maybe String
     , _license :: FedoraEntryLicense
     , _fedora  :: FedoraEntryFedora
     }

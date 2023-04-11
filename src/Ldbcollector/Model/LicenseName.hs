@@ -10,7 +10,7 @@ import           MyPrelude
 
 import           Data.String (IsString (..))
 import           Data.Text   as T
-import qualified Text.Blaze as H
+import qualified Text.Blaze  as H
 
 data LicenseName where
     LicenseName :: Maybe Text -> Text -> LicenseName

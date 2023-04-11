@@ -8,9 +8,9 @@ import           Prelude               hiding (lines, unwords)
 
 import qualified Data.ByteString       as B
 import           Data.ByteString.Char8 (lines, split, unwords)
+import qualified Data.Map              as M
 import           Data.Text.Encoding    as T
-import qualified Data.Map as M
-import qualified Data.Vector as V
+import qualified Data.Vector           as V
 
 
 -- data/openSUSE-cavil/lib/Cavil/resources/license_changes.txt
@@ -19,7 +19,7 @@ newtype CavilLicenseChanges = CavilLicenseChanges FilePath
 
 data CavilLicenseChange
     = CavilLicenseChange
-    { _clcName :: LicenseName
+    { _clcName  :: LicenseName
     , _clcAlias :: [LicenseName]
     } deriving (Eq, Ord, Show, Generic)
 instance ToJSON CavilLicenseChange
