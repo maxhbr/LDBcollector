@@ -1253,6 +1253,7 @@ fun RuleSet.genericInDependencyRule() = packageRule("GENERIC_IN_DEPENDENCY") {
     licenseRule("GENERIC_IN_DEPENDENCY", LicenseView.CONCLUDED_OR_DECLARED_AND_DETECTED) {
         require {
             +isGeneric()
+            -isExcluded()
             -isIgnored()
         }
 
