@@ -1,10 +1,11 @@
 #+title: ldbcollector
 
+This is a rewrite of the old ldbcollector, which is found in ./old-ldbcollector or in the branch v1.
 
-The original project, which is more mature: https://github.com/maxhbr/LDBcollector/
+This rewrite is not yet stable and for stable use the old version is prefered.
 
 This is a rewrite, it contains
 
 - [[./data/]]
-- [[./rust/]] POC implementation in rust
-- [[./gh-pages/]] output
+- [[./rust/]] POC implementation in rust, just for fun
+- [[./]] the project
