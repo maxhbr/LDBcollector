@@ -74,11 +74,11 @@ instance LicenseFactC CALData where
                         case description of
                             Just description' -> H.span (H.toMarkup description')
                             Nothing -> pure ()
-                        H.h5 "permissions"
+                        H.h5 "Permissions"
                         H.ul $ mapM_ (H.li . H.toMarkup) cal_permissions
-                        H.h5 "conditions"
+                        H.h5 "Conditions"
                         H.ul $ mapM_ (H.li . H.toMarkup) cal_conditions
-                        H.h5 "limitations"
+                        H.h5 "Limitations"
                         H.ul $ mapM_ (H.li . H.toMarkup) cal_limitations
 
 newtype ChooseALicense

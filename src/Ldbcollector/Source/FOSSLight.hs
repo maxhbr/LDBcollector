@@ -64,6 +64,13 @@ instance S.FromField FOSSLight_License_Type where
     "WCP" -> S.Ok FOSSLight_License_Type_Weak_Copyleft
     _     -> S.returnError S.ConversionFailed f "failed to parse FOSSLight_License_Type"
 instance ToJSON FOSSLight_License_Type
+instance ToLicenseType FOSSLight_License_Type where
+    toLicenseType FOSSLight_License_Type_Copyleft = Copyleft
+    toLicenseType FOSSLight_License_Type_Proprietary = Proprietary
+    toLicenseType FOSSLight_License_Type_Proprietary_Free = ProprietaryFree
+    toLicenseType FOSSLight_License_Type_Permissive = Permissive
+    toLicenseType FOSSLight_License_Type_Weak_Copyleft = WeaklyProtective
+    toLicenseType FOSSLight_License_Type_UNKNOWN = UnknownLicenseType Nothing
 
 
 --     CREATE TABLE `LICENSE_MASTER` (

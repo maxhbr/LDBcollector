@@ -31,7 +31,9 @@ data LicenseType
     | WeaklyProtective
     | StronglyProtective
     | NetworkProtective
-    | Unknown (Maybe String)
+    | UnknownLicenseType (Maybe String)
+    | Proprietary
+    | ProprietaryFree
     | Unlicensed
     deriving (Eq, Show, Ord, Generic)
 instance ToJSON LicenseType
@@ -53,11 +55,18 @@ instance IsString LicenseType where
                       , ("network_copyleft",  NetworkProtective)
                       , ("network", NetworkProtective)
                       , ("Unlicensed", Unlicensed)
+                      , ("Proprietary" , Proprietary)
+                      , ("ProprietaryFree" , ProprietaryFree)
+                      , ("proprietary_free" , ProprietaryFree)
                       , ("Unknown", Unknown Nothing)
                       ]
         in case find (\(n,_) -> map toLower n == lowerStr) mapping of
             Just (_,a) -> a
             Nothing -> Unknown (Just str)
+class ToLicenseType a where
+    toLicenseType :: a -> LicenseType
+instance ToLicenseType String where
+    toLicenseType = fromString
 
 
 data LicenseStatement where
