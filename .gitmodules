@@ -73,3 +73,6 @@
 [submodule "old-ldbcollector"]
 	path = old-ldbcollector
 	url = https://github.com/maxhbr/ldbcollector
+[submodule "data/fedora-modularity-check_modulemd"]
+	path = data/fedora-modularity-check_modulemd
+	url = https://github.com/fedora-modularity/check_modulemd
