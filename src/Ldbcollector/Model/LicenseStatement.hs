@@ -58,11 +58,11 @@ instance IsString LicenseType where
                       , ("Proprietary" , Proprietary)
                       , ("ProprietaryFree" , ProprietaryFree)
                       , ("proprietary_free" , ProprietaryFree)
-                      , ("Unknown", Unknown Nothing)
+                      , ("Unknown", UnknownLicenseType Nothing)
                       ]
         in case find (\(n,_) -> map toLower n == lowerStr) mapping of
             Just (_,a) -> a
-            Nothing -> Unknown (Just str)
+            Nothing -> UnknownLicenseType (Just str)
 class ToLicenseType a where
     toLicenseType :: a -> LicenseType
 instance ToLicenseType String where
