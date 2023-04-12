@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block actions %}
   {% if perms.cube.change_generic %}
-    <a class="button" href="{% url "admin:cube_generic_change" generic.id %}" target="_blank">
+    <a class="button" href="{% url "cube:generic_edit" generic.id %}">
       <span class="icon">
         <i class="fas fa-edit"></i>
       </span>

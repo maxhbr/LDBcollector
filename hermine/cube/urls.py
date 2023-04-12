@@ -103,6 +103,10 @@ urlpatterns = [
     ),
     path("generics/", views.GenericListView.as_view(), name="generics"),
     path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
+    path("generic/add/", views.GenericCreateView.as_view(), name="generic_add"),
+    path(
+        "generic/<int:pk>/edit/", views.GenericUpdateView.as_view(), name="generic_edit"
+    ),
     path(
         "export/licenses/", views.ExportLicensesView.as_view(), name="export_licenses"
     ),
