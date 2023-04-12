@@ -3,12 +3,13 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from functools import reduce
 
-from django.db.models import Q, Count
+from django.db.models import Q, Count, Subquery, OuterRef, F, Value
+from django.db.models.functions import Coalesce
 from django.forms import Form, CharField
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
 
-from cube.models import License, Release, Exploitation
+from cube.models import License, Release
 
 
 class SearchForm(Form):
@@ -98,50 +99,55 @@ class ReleaseExploitationRedirectMixin:
     def get_success_url(self):
         if self.request.GET.get("redirect") == "validation":
             return reverse("cube:release_validation", args=[self.release.id])
-        if self.request.GET.get("redirect") == "exploitations":
-            return reverse("cube:release_exploitations", args=[self.release.id])
         return reverse("cube:release_summary", args=[self.release.id])
 
 
 class ReleaseExploitationFormMixin:
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        scopes_in_release = (
+
+        # Existing scopes
+        scopes = list(
             self.release.usage_set.values("project", "scope")
             .annotate(count=Count("*"))
             .values("project", "scope", "count")
             .order_by("project", "scope")
         )
-        exploitations = self.get_queryset().values(
-            "project", "scope", "exploitation", "id"
+
+        # Attach existing exploitations to scopes
+        for scope in scopes:
+            scope["exploitation"] = self.release.exploitations.filter(
+                project=scope["project"], scope=scope["scope"]
+            ).first()
+
+        # Add exploitations with no usages
+        for exploitation in self.release.exploitations.filter(
+            *[(~Q(project=scope["project"], scope=scope["scope"])) for scope in scopes]
+        ):
+            scopes.append(
+                {
+                    "exploitation": exploitation,
+                    "count": 0,
+                    "project": exploitation.project,
+                    "scope": exploitation.scope,
+                }
+            )
+
+        # Usages with custom scopes
+        exploitation_rules_subquery = self.release.exploitations.filter(
+            project=OuterRef("project"), scope=OuterRef("scope")
+        ).values("exploitation")[:1]
+        custom_scopes = (
+            self.release.usage_set.annotate(
+                registered_exploitation=Coalesce(
+                    Subquery(exploitation_rules_subquery), Value("")
+                )
+            )
+            .exclude(exploitation=F("registered_exploitation"))
+            .exclude(exploitation="")
         )
-        explicit_exploitations = dict()
-        for key, value in Exploitation._meta.get_field("exploitation").choices:
-            explicit_exploitations[key] = value
 
-        full_exploitations = dict()
-        for scope_in_release in scopes_in_release:
-            full_scope = scope_in_release["project"] + scope_in_release["scope"]
-            full_exploitations[full_scope] = dict()
-            full_exploitations[full_scope]["scope"] = scope_in_release["scope"]
-            full_exploitations[full_scope]["project"] = scope_in_release["project"]
-            full_exploitations[full_scope]["count"] = scope_in_release["count"]
-        for exploitation in exploitations:
-            full_scope = exploitation["project"] + exploitation["scope"]
-            print("exploitation,", full_scope)
-            if full_scope in full_exploitations:
-                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
-                    exploitation["exploitation"]
-                ]
-                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
-            else:
-                full_exploitations[full_scope] = dict()
-                full_exploitations[full_scope]["scope"] = exploitation["scope"]
-                full_exploitations[full_scope]["project"] = exploitation["project"]
-                full_exploitations[full_scope]["exploitation"] = explicit_exploitations[
-                    exploitation["exploitation"]
-                ]
-                full_exploitations[full_scope]["exploitation_id"] = exploitation["id"]
+        context["exploitation_scopes"] = scopes
+        context["custom_scopes"] = custom_scopes
 
-        context["full_exploitations"] = list(full_exploitations.values())
         return context
