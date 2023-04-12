@@ -341,3 +341,23 @@ class GenericDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
     model = Generic
     context_object_name = "generic"
     template_name = "cube/generic.html"
+
+
+class GenericCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
+    permission_required = "cube.add_generic"
+    model = Generic
+    template_name = "cube/generic_create.html"
+    fields = "__all__"
+
+    def get_success_url(self):
+        return reverse("cube:generic", args=[self.object.id])
+
+
+class GenericUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_generic"
+    model = Generic
+    template_name = "cube/generic_update.html"
+    fields = "__all__"
+
+    def get_success_url(self):
+        return reverse("cube:generic", args=[self.object.id])

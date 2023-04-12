@@ -30,7 +30,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         </p>
       </div>
     </form>
-    <a class="button" href="{% url "admin:cube_generic_add" %}">
+    <a class="button" href="{% url "cube:generic_add" %}">
       <span class="icon"><i class="fas fa-plus"></i></span>
       <span>Create a new generic obligation</span>
     </a>
@@ -93,7 +93,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                             <span class="icon"><i class="fas fa-eye"></i></span>
                           </a>
                           {% if perms.cube.change_generic %}
-                            <a class="button is-small " href="{% url "admin:cube_generic_change" generic.id %}" target="_blank" type="button">
+                            <a class="button is-small " href="{% url "cube:generic_edit" generic.id %}" target="_blank" type="button">
                               <span class="icon"><i class="fas fa-edit"></i></span>
                             </a>
                           {% endif %}
@@ -161,7 +161,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                             <span class="icon"><i class="fas fa-eye"></i></span>
                           </a>
                           {% if perms.cube.change_generic %}
-                            <a class="button is-small" href="{% url "admin:cube_generic_change" generic.id %}" target="_blank" type="button">
+                            <a class="button is-small" href="{% url "cube:generic_edit" generic.id %}" target="_blank" type="button">
                               <span class="icon"><i class="fas fa-edit"></i></span>
                             </a>
                           {% endif %}
