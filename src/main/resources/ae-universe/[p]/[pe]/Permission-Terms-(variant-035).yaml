@@ -5,3 +5,5 @@ canonicalName: "Permission Terms (variant 035)"
 category: "Permission"
 shortName: "PT-Var035"
 
+otherIds: 
+  - "scancode:x11-keith-packard"

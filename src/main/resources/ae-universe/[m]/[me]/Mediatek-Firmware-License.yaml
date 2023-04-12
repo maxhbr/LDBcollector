@@ -8,3 +8,5 @@ shortName: "Mediatek-Firmware"
 alternativeNames:
   - "Mediatek Firmware License"
 
+otherIds: 
+  - "scancode:ralink-firmware"

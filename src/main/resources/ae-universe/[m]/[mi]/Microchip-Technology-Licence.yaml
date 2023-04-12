@@ -8,3 +8,5 @@ shortName: "Microchip-Technology"
 alternativeNames:
   - "Microchip Technology Licence"
 
+otherIds: 
+  - "scancode:microchip-linux-firmware"

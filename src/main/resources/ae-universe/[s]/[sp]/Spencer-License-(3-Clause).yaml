@@ -11,3 +11,5 @@ alternativeNames:
   - "Spencer License, Version 86"
   - "Spencer License, 86"
 
+otherIds: 
+  - "scancode:regexp"

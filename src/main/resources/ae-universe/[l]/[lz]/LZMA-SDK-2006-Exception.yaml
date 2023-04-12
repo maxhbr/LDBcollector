@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "LZMA SDK 2006 Exception"
 category: "LZMA SDK 2006 Exception"
-shortName: "lzma-sdk-2006-exception"
+shortName: "LZMA-SDK-2006-Exception"
 
 type: "exception"
 

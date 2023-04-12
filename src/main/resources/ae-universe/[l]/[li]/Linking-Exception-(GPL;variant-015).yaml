@@ -11,3 +11,5 @@ type: "exception"
 alternativeNames:
   - "mif-exception"
 
+otherIds: 
+  - "scancode:mif-exception"

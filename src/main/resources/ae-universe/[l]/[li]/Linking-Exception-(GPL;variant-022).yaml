@@ -7,3 +7,5 @@ shortName: "Linking-Exception-GPL-022"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:openssl-exception-gpl-3.0-plus"

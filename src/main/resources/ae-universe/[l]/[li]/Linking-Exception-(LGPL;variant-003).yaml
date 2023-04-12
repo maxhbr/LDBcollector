@@ -8,3 +8,5 @@ spdxIdentifier: "OCaml-LGPL-linking-exception"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:ocaml-lgpl-linking-exception"

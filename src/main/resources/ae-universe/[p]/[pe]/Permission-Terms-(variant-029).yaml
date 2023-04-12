@@ -5,3 +5,5 @@ canonicalName: "Permission Terms (variant 029)"
 category: "Permission"
 shortName: "PT-Var029"
 
+otherIds: 
+  - "scancode:mit-with-modification-obligations"

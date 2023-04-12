@@ -12,3 +12,5 @@ alternativeNames:
   - "KiCad-libraries-exception"
   - "KiCad Libraries Exception"
 
+otherIds: 
+  - "scancode:kicad-libraries-exception"

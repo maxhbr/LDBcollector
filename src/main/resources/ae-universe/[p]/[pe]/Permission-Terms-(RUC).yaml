@@ -8,3 +8,5 @@ shortName: "PT-RUC"
 alternativeNames:
   - "Permission Terms (RUC)"
 
+otherIds: 
+  - "scancode:llnl"

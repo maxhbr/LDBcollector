@@ -11,3 +11,5 @@ alternativeNames:
   - "Marvell Permission"
   - "Marvell Terms"
 
+otherIds: 
+  - "scancode:marvell-firmware-2019"

@@ -8,3 +8,5 @@ shortName: "JDOM"
 alternativeNames:
   - "JDOM License"
 
+otherIds: 
+  - "scancode:jdom"

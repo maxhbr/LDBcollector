@@ -8,3 +8,5 @@ shortName: "PT-TJ"
 alternativeNames:
   - "TJ License"
 
+otherIds: 
+  - "scancode:historical-ntp"

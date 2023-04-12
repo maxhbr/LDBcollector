@@ -9,3 +9,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "ICU License"
 
+otherIds: 
+  - "scancode:x11"

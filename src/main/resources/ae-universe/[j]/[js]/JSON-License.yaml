@@ -10,3 +10,5 @@ alternativeNames:
   - "JSON License"
   - "http://www.json.org/license.html"
 
+otherIds: 
+  - "scancode:json"

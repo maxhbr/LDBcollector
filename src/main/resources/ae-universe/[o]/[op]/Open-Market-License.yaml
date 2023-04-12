@@ -9,3 +9,5 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "OM License"
 
+otherIds: 
+  - "scancode:fastcgi-devkit"

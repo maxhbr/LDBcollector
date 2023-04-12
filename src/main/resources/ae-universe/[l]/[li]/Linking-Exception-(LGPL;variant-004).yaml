@@ -7,3 +7,5 @@ shortName: "Linking-Exception-LGPL-004"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:cygwin-exception-lgpl-3.0-plus"

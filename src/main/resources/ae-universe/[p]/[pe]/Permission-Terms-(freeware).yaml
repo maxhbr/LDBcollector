@@ -5,3 +5,5 @@ canonicalName: "Permission Terms (freeware)"
 category: "Permission"
 shortName: "PT-Var086"
 
+otherIds: 
+  - "scancode:fpl"
