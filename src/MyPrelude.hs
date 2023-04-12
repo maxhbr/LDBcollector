@@ -64,7 +64,7 @@ stderrLogIO msg = errorM rootLoggerName (color Yellow msg)
 setupLogger :: IO ()
 setupLogger = do
     updateGlobalLogger rootLoggerName (setLevel DEBUG)
-    hStderr <- streamHandler stderr INFO >>= \lh -> return $
+    hStderr <- streamHandler stderr DEBUG >>= \lh -> return $
         setFormatter lh (simpleLogFormatter "[$time : $loggername : $prio] $msg")
     hFile <- fileHandler "_debug.log" DEBUG >>= \lh -> return $
         setFormatter lh (simpleLogFormatter "[$time : $loggername : $prio] $msg")

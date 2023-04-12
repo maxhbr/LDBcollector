@@ -184,18 +184,9 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                     edgeLabels' -> [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
                 ) ++ getColorOfEdge (a, b, e)
             }
-    in GV.graphToDot params graph
-
-emptyDigraph :: GV.DotGraph G.Node
-emptyDigraph = GV.DotGraph { GV.strictGraph = True
-                           , GV.directedGraph = True
-                           , GV.graphID = Nothing
-                           , GV.graphStatements = GV.DotStmts { GV.attrStmts = []
-                                                              , GV.subGraphs = []
-                                                              , GV.nodeStmts = []
-                                                              , GV.edgeStmts = []
-                                                              }
-                           }
+    in (GV.graphToDot params graph) {
+            GV.strictGraph = True -- If True, no multiple edges are drawn.
+        }
 
 getDigraph :: LicenseGraphM (GV.DotGraph G.Node)
 getDigraph = MTL.gets computeDigraph
@@ -231,5 +222,7 @@ genGraphViz = do
     digraph <- getDigraph
     MTL.liftIO $ do
         Temp.withSystemTempDirectory "genGraphViz" $ \tmpdir -> do
+            debugM "genGraphViz" "renderDigraph"
             svg <- renderDot digraph (tmpdir </> "dot")
+            debugM "genGraphViz" "done renderDigraph"
             LT.readFile svg

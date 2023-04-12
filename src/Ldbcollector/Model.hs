@@ -23,7 +23,7 @@ class Source a where
         in do
             lift $ infoM rootLoggerName ("# get " ++ show source)
             facts <- force <$> MTL.lift (getFacts a)
-            -- MTL.lift (getFacts a) >>=
             lift $ infoM rootLoggerName (show (V.length facts) ++ " entries")
             V.mapM_ (\fact -> withFact (source, fact) applyFact) facts
+            debugOrderAndSize
 

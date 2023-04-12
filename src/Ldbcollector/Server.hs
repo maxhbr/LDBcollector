@@ -92,10 +92,10 @@ evaluateParams  params licenseGraph = do
 
     return (paramMap,licRaw,lic,allSources,enabledSources)
 
-conputeSubgraph :: LicenseGraph -> LicenseName -> [SourceRef] -> Map.Map T.Text T.Text -> IO (LicenseGraphType, LicenseNameGraphType, T.Text)
+conputeSubgraph :: LicenseGraph -> LicenseName -> [SourceRef] -> Map.Map T.Text T.Text -> IO (LicenseGraphType, LicenseNameGraphType, T.Text, V.Vector LicenseName, V.Vector LicenseName)
 conputeSubgraph licenseGraph lic enabledSources paramMap =
-    fmap fst . runLicenseGraphM' licenseGraph $
-            focus enabledSources ((V.singleton . LGName) lic) $ do
+    fmap fst . runLicenseGraphM' licenseGraph $ do
+            ((subgraph,lnsubgraph,svg), (sameNameNodes, otherNameNodes, statementNodes)) <- focus enabledSources ((V.singleton . LGName) lic) $ do
                 MTL.gets ((,,) . _gr)
                      <*> getLicenseNameGraph
                      <*> (do
@@ -105,23 +105,27 @@ conputeSubgraph licenseGraph lic enabledSources paramMap =
                                                                                             _ -> False) gr})
                         genGraphViz
                      )
+            let graphNodeToLn (Just (LGName ln)) = Just ln
+                graphNodeToLn _ = Nothing
+            sameNames <- V.catMaybes <$> V.mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) sameNameNodes
+            otherNames <- V.catMaybes <$> V.mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) otherNameNodes
+            return (subgraph,lnsubgraph,svg,sameNames,otherNames)
 
 svgPage :: [S.Param] -> LicenseGraph -> IO T.Text
 svgPage params licenseGraph = do
-    (paramMap,licRaw,lic,allSources,enabledSources) <- evaluateParams params licenseGraph
-    (subgraph,lnsubgraph,svg) <- conputeSubgraph licenseGraph lic enabledSources paramMap
+    (paramMap,_,lic,_,enabledSources) <- evaluateParams params licenseGraph
+    (_,_,svg,_,_) <- conputeSubgraph licenseGraph lic enabledSources paramMap
     return svg
 
 mainPage :: [S.Param] -> LicenseGraph -> IO H.Html
 mainPage params licenseGraph = do
-    (paramMap,licRaw,lic,allSources,enabledSources) <- evaluateParams params licenseGraph
-    (subgraph,lnsubgraph,svg) <- conputeSubgraph licenseGraph lic enabledSources paramMap
     let allLicenseNames = getLicenseGraphLicenseNames licenseGraph
+    (paramMap,licRaw,lic,allSources,enabledSources) <- evaluateParams params licenseGraph
+    (subgraph,lnsubgraph,svg,sameNames,otherNames) <- conputeSubgraph licenseGraph lic enabledSources paramMap
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
                                _        -> Nothing
                            . snd) . G.labNodes) subgraph
-    let allPotentialLicenseNames = (map snd . G.labNodes) lnsubgraph
 
     return . H.html $ do
             H.head $ do
@@ -165,7 +169,9 @@ mainPage params licenseGraph = do
                     -- ########################################################
                     H.div H.! A.id "content" $ do
                         H.h2 "LicenseNames"
-                        H.ul $ mapM_ (H.li . fromString . show) allPotentialLicenseNames
+                        H.ul $ mapM_ (H.li . fromString . show) sameNames
+                        H.h3 "LicenseName Hints"
+                        H.ul $ mapM_ (H.li . fromString . show) otherNames
                         H.h2 "Facts"
                         H.ul $ mapM_ (\fact -> H.li $ do
                             let factId@(FactId ty hash) = getFactId fact
@@ -177,9 +183,9 @@ mainPage params licenseGraph = do
                             --                     onerror _ _ = Just '_'
                             --                 in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))
                             ) facts
-                        -- H.h2 "LicenseNameSubgraph"
-                        -- H.pre $
-                        --     H.toMarkup (G.prettify lnsubgraph)
+                        H.h2 "LicenseNameSubgraph"
+                        H.pre $
+                            H.toMarkup (G.prettify lnsubgraph)
                 H.script H.! A.src "/script.js" $
                     pure ()
                 H.script "main();"
