@@ -30,7 +30,6 @@ from cube.models import (
     Release,
     Usage,
     Generic,
-    Exploitation,
 )
 from cube.utils.licenses import (
     get_usages_obligations,
@@ -50,19 +49,10 @@ class ReleaseSummaryView(
     PermissionRequiredMixin,
     ReleaseExploitationFormMixin,
     ReleaseContextMixin,
-    generic.ListView,
+    TemplateView,
 ):
-    model = Exploitation
     template_name = "cube/release_summary.html"
     permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .filter(release=self.release)
-            .order_by("project", "scope")
-        )
 
 
 class ReleaseEditView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):

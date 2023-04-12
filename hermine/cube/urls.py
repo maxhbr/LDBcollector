@@ -219,11 +219,6 @@ urlpatterns = [
         name="release_exploitation_create",
     ),
     path(
-        "release/<int:release_pk>/exploitations/",
-        views.ReleaseExploitationsListView.as_view(),
-        name="release_exploitations",
-    ),
-    path(
         "release/<int:release_pk>/edit_exploitation/<int:pk>/",
         views.ReleaseExploitationUpdateView.as_view(),
         name="release_edit_exploitation",

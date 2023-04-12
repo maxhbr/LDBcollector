@@ -210,8 +210,9 @@ SPDX-License-Identifier: AGPL-3.0-only
         <span class="icon has-text-success"><i class="fas fa-check-square"></i></span> All scopes have an exploitation mode defined.
       </div>
     </article>
-
   {% endif %}
+
+  <p>See exploitations details on <a href="{% url "cube:release_summary" object.id %}">release summary</a>.</p>
 
   <h4 class="title is-4">Step 4 - Resolve license choices for this release</h4>
 

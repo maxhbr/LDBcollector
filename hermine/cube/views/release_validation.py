@@ -38,7 +38,6 @@ from cube.views import LicenseRelatedMixin
 from cube.views.mixins import (
     SaveAuthorMixin,
     ReleaseContextMixin,
-    ReleaseExploitationFormMixin,
     ReleaseExploitationRedirectMixin,
 )
 
@@ -235,26 +234,6 @@ class ReleaseExploitationCreateView(
     def form_valid(self, form):
         form.instance.release = self.release
         return super().form_valid(form)
-
-
-class ReleaseExploitationsListView(
-    LoginRequiredMixin,
-    PermissionRequiredMixin,
-    ReleaseExploitationFormMixin,
-    ReleaseContextMixin,
-    generic.ListView,
-):
-    model = Exploitation
-    template_name = "cube/release_exploitations.html"
-    permission_required = "cube.view_release"
-
-    def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .filter(release=self.release)
-            .order_by("project", "scope")
-        )
 
 
 class ReleaseExploitationDeleteView(
