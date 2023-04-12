@@ -2,7 +2,6 @@
 module Ldbcollector.Model.LicenseStatement
   where
 
-import           Data.Char                      (toLower)
 import           MyPrelude
 
 import           Ldbcollector.Model.LicenseName
@@ -68,9 +67,17 @@ class ToLicenseType a where
 instance ToLicenseType String where
     toLicenseType = fromString
 
+data LicenseRating
+    = PositiveLicenseRating Text (Maybe Text)
+    | NeutralLicenseRating Text (Maybe Text)
+    | NegativeLicenseRating Text (Maybe Text)
+    deriving (Eq, Show, Ord, Generic)
+instance ToJSON LicenseRating
+
 data LicenseStatement where
     LicenseStatement :: String -> LicenseStatement
     LicenseType :: LicenseType -> LicenseStatement
+    LicenseRating :: String -> LicenseRating -> LicenseStatement
     LicenseComment :: Text -> LicenseStatement
     LicenseUrl :: String -> LicenseStatement
     LicenseText :: Text -> LicenseStatement
@@ -95,3 +102,24 @@ typestmt = LicenseType . fromString
 ifToStmt :: String -> Bool -> LicenseStatement
 ifToStmt stmt True  = LicenseStatement stmt
 ifToStmt _    False = noStmt
+
+
+filterStatement :: LicenseStatement -> Maybe LicenseStatement
+filterStatement (LicenseComment "") = Nothing
+filterStatement (LicenseStatement "") = Nothing
+filterStatement (LicenseUrl "") = Nothing
+filterStatement (LicenseText "") = Nothing
+filterStatement (LicenseRule "") = Nothing
+filterStatement (LicenseCompatibilities []) = Nothing
+filterStatement (SubStatements stmt substmts) = 
+    case filterStatements substmts of
+        [] -> filterStatement stmt
+        filtered -> case filterStatement stmt of
+            Just fStmt -> Just $ SubStatements fStmt filtered
+            Nothing    -> Just $ SubStatements stmt filtered -- TODO
+filterStatement (MaybeStatement Nothing) = Nothing
+filterStatement (MaybeStatement (Just stmt)) = filterStatement stmt
+filterStatement stmt = Just stmt
+
+filterStatements :: [LicenseStatement] -> [LicenseStatement]
+filterStatements = mapMaybe filterStatement

@@ -46,7 +46,7 @@ filterSources sources = do
              facts' = Map.filterWithKey (\(o,_) _ -> o `elem` sources) facts
         in lg {_facts = facts'})
 
-focusSequentially :: Vector G.Node -> LicenseGraph -> (LicenseGraph, (V.Vector G.Node, V.Vector G.Node, V.Vector G.Node))
+focusSequentially :: [G.Node] -> LicenseGraph -> (LicenseGraph, ([G.Node], [G.Node], [G.Node]))
 focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
 
         backed = Map.elems facts
@@ -76,8 +76,8 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
                 subGraph = G.gfiltermap (\ctx -> case onlyBackedFiltermapfun ctx of
                                              Just ctx' -> onlyPredicateFiltermapfun predicate ctx'
                                              Nothing -> Nothing) gr
-                reachableForNeedle needle = V.fromList $ G.reachable needle subGraph ++ G.reachable needle (G.grev subGraph)
-            in V.concatMap reachableForNeedle needles'
+                reachableForNeedle needle = G.reachable needle subGraph ++ G.reachable needle (G.grev subGraph)
+            in nub $ concatMap reachableForNeedle needles'
         isLicenseExpandingRelation = (== LGNameRelation Same)
         isFactAndStatementRelation = (`elem` [LGAppliesTo, LGImpliedBy])
         isOtherRelation r = not (isLicenseExpandingRelation r || isFactAndStatementRelation r)
@@ -85,7 +85,7 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
         reachableViaLicenseExpandingRelation = reachableInSubgraph isLicenseExpandingRelation needles
         reachableViaFactAndStatementRelation = reachableInSubgraph isFactAndStatementRelation reachableViaLicenseExpandingRelation
         reachableOtherRelation = reachableInSubgraph isOtherRelation reachableViaLicenseExpandingRelation
-        reachable = reachableViaFactAndStatementRelation <> reachableOtherRelation
+        reachable = nub $ reachableViaFactAndStatementRelation <> reachableOtherRelation
 
         -- -- reachableViaIsLicenseExpandingRelation = reachableInSubgraph isLicenseExpandingRelation needles
         -- reachableViaIsFactAndStatementRelation = reachableInSubgraph (\n -> isLicenseExpandingRelation n || isFactAndStatementRelation n) needles
@@ -102,10 +102,10 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
         _node_map_rev = Map.filterWithKey (\k _ -> isReachable k) node_map_rev,
         _facts = facts
     }, (reachableViaLicenseExpandingRelation,
-        V.filter (not . (`elem` reachableViaLicenseExpandingRelation)) reachableOtherRelation,
-        V.filter (not . (`elem` reachableViaLicenseExpandingRelation)) reachableViaFactAndStatementRelation))
+        filter (not . (`elem` reachableViaLicenseExpandingRelation)) reachableOtherRelation,
+        filter (not . (`elem` reachableViaLicenseExpandingRelation)) reachableViaFactAndStatementRelation))
 
-focus :: [SourceRef] -> Vector LicenseGraphNode -> LicenseGraphM a -> LicenseGraphM (a, (V.Vector G.Node, V.Vector G.Node, V.Vector G.Node))
+focus :: [SourceRef] -> Vector LicenseGraphNode -> (([G.Node], [G.Node], [G.Node], [G.Node]) -> LicenseGraphM a) -> LicenseGraphM a
 focus sources needles inner = do
     debugLog "## freeze graph"
     start <- lift getCPUTime
@@ -116,19 +116,19 @@ focus sources needles inner = do
             debugLog ("## filter sources on " ++ show sources)
             filterSources sources
         debugLog ("## focus on " ++ show needles)
-        needleIds <- getIdsOfNodes needles
+        needleIds <- V.toList <$> getIdsOfNodes needles
         (focusedLicenseGraph, (sameNames, otherNames, statements)) <- MTL.gets (focusSequentially needleIds)
         MTL.put focusedLicenseGraph
         debugOrderAndSize
         debugLog "## work on focused graph"
-        (,(sameNames, otherNames, statements))<$> inner
+        inner (needleIds, sameNames, otherNames, statements)
     end <- lift getCPUTime
     let diff = (fromIntegral (end - start) / (10^12)) :: Double
     debugLog ("## done focusing, took " ++ show diff ++ " sec")
     return a
 
-getFocused :: [SourceRef] -> Vector LicenseGraphNode -> LicenseGraphM (LicenseGraph, (V.Vector G.Node, V.Vector G.Node, V.Vector G.Node))
-getFocused sources needles = focus sources needles MTL.get
+getFocused :: [SourceRef] -> Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
+getFocused sources needles = focus sources needles (const MTL.get)
 
 -- -- ############################################################################
 

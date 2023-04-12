@@ -29,6 +29,7 @@ import qualified Data.Graph.Inductive.Graph    as G
 import           Data.FileEmbed                (embedFile)
 import qualified Network.Wai.Handler.Warp      as Warp
 import           Web.Scotty                    as S
+import Text.Blaze.Html5.Attributes (onratechange)
 
 myOptions :: S.Options
 myOptions = S.Options 1 (Warp.setPort 3000 (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
@@ -41,7 +42,8 @@ genSvg tmpdir lic licenseGraph = do
     unless svgExists $ do
         _ <- runLicenseGraphM' licenseGraph $
             focus [] ((V.singleton . LGName) lic) $
-                writeGraphViz dot
+                \(needleNames, sameNames, otherNames, _statements) -> do
+                    writeGraphViz needleNames sameNames otherNames dot
         return ()
     return svg
 
@@ -92,23 +94,26 @@ evaluateParams  params licenseGraph = do
 
     return (paramMap,licRaw,lic,allSources,enabledSources)
 
-conputeSubgraph :: LicenseGraph -> LicenseName -> [SourceRef] -> Map.Map T.Text T.Text -> IO (LicenseGraphType, LicenseNameGraphType, T.Text, V.Vector LicenseName, V.Vector LicenseName)
-conputeSubgraph licenseGraph lic enabledSources paramMap =
+conputeSubgraph :: LicenseGraph -> LicenseName -> [SourceRef] -> Map.Map T.Text T.Text -> IO (LicenseGraphType, LicenseNameGraphType, T.Text, [LicenseName], [LicenseName])
+conputeSubgraph licenseGraph lic enabledSources paramMap = do
+    let licLN = LGName lic
     fmap fst . runLicenseGraphM' licenseGraph $ do
-            ((subgraph,lnsubgraph,svg), (sameNameNodes, otherNameNodes, statementNodes)) <- focus enabledSources ((V.singleton . LGName) lic) $ do
-                MTL.gets ((,,) . _gr)
-                     <*> getLicenseNameGraph
-                     <*> (do
-                        when ("on" == Map.findWithDefault "" "onlyLNs" paramMap) $
-                            MTL.modify (\lg@LicenseGraph{_gr=gr} -> lg{_gr=G.labfilter (\case
-                                                                                            LGName _ -> True
-                                                                                            _ -> False) gr})
-                        genGraphViz
-                     )
+            (subgraph,lnsubgraph,svg,sameNameNodes,otherNameNodes) <- focus enabledSources (V.singleton licLN) $
+                \(needleNames, sameNames, otherNames, _statements) -> do
+                    MTL.gets ((,,,,) . _gr)
+                        <*> getLicenseNameGraph
+                        <*> (do
+                            when ("on" == Map.findWithDefault "" "onlyLNs" paramMap) $
+                                MTL.modify (\lg@LicenseGraph{_gr=gr} -> lg{_gr=G.labfilter (\case
+                                                                                                LGName _ -> True
+                                                                                                _ -> False) gr})
+                            genGraphViz needleNames sameNames otherNames)
+                        <*> pure sameNames
+                        <*> pure otherNames
             let graphNodeToLn (Just (LGName ln)) = Just ln
                 graphNodeToLn _ = Nothing
-            sameNames <- V.catMaybes <$> V.mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) sameNameNodes
-            otherNames <- V.catMaybes <$> V.mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) otherNameNodes
+            sameNames <- catMaybes <$> mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) sameNameNodes
+            otherNames <- catMaybes <$> mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) otherNameNodes
             return (subgraph,lnsubgraph,svg,sameNames,otherNames)
 
 svgPage :: [S.Param] -> LicenseGraph -> IO T.Text
@@ -135,11 +140,8 @@ mainPage params licenseGraph = do
                 H.script H.! A.src "https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" $
                     pure ()
             H.body $ do
-                H.input H.! A.type_ "checkbox" H.! A.id "svgCheckbox"
-                H.div H.! A.id "svgGraph" $ do
-                    H.preEscapedToMarkup svg
                 -- ########################################################
-                -- ########################################################
+                -- ##  header  ############################################
                 -- ########################################################
                 H.header $ do
                     H.h1 (H.toMarkup licRaw)
@@ -163,29 +165,34 @@ mainPage params licenseGraph = do
                                     else H.input H.! A.type_ "checkbox" H.! A.name "onlyLNs" H.! A.value "on"
                                 H.label H.! A.for (fromString "onlyLNs") $ fromString "onlyLNs"
                         H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
-                H.div H.! A.id "all" $ do
-                    -- ########################################################
-                    -- ########################################################
-                    -- ########################################################
-                    H.div H.! A.id "content" $ do
-                        H.h2 "LicenseNames"
-                        H.ul $ mapM_ (H.li . fromString . show) sameNames
-                        H.h3 "LicenseName Hints"
-                        H.ul $ mapM_ (H.li . fromString . show) otherNames
-                        H.h2 "Facts"
-                        H.ul $ mapM_ (\fact -> H.li $ do
-                            let factId@(FactId ty hash) = getFactId fact
-                            H.h3 $ do
-                                H.a H.! A.href (H.toValue $ "./fact" </> ty </> hash) $ H.toMarkup (show factId)
-                                -- ((H.toValue . ("./fact/"++)) n) $ H.toMarkup n) . show) cluster)) clusters
-                            toMarkup fact
-                            -- H.pre (H.toMarkup (let
-                            --                     onerror _ _ = Just '_'
-                            --                 in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))
-                            ) facts
-                        H.h2 "LicenseNameSubgraph"
-                        H.pre $
-                            H.toMarkup (G.prettify lnsubgraph)
+                -- ########################################################
+                -- ##  svg  ###############################################
+                -- ########################################################
+                H.input H.! A.type_ "checkbox" H.! A.id "svgCheckbox"
+                H.div H.! A.id "svgGraph" $ do
+                    H.preEscapedToMarkup svg
+                -- ########################################################
+                -- ##  all  ###############################################
+                -- ########################################################
+                H.div H.! A.id "content" $ do
+                    H.h2 "LicenseNames"
+                    H.ul $ mapM_ (H.li . fromString . show) sameNames
+                    H.h3 "LicenseName Hints"
+                    H.ul $ mapM_ (H.li . fromString . show) otherNames
+                    H.h2 "Facts"
+                    H.ul $ mapM_ (\fact -> H.li $ do
+                        let factId@(FactId ty hash) = getFactId fact
+                        H.h3 $ do
+                            H.a H.! A.href (H.toValue $ "./fact" </> ty </> hash) $ H.toMarkup (show factId)
+                            -- ((H.toValue . ("./fact/"++)) n) $ H.toMarkup n) . show) cluster)) clusters
+                        toMarkup fact
+                        -- H.pre (H.toMarkup (let
+                        --                     onerror _ _ = Just '_'
+                        --                 in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))
+                        ) facts
+                    H.h2 "LicenseNameSubgraph"
+                    H.pre $
+                        H.toMarkup (G.prettify lnsubgraph)
                 H.script H.! A.src "/script.js" $
                     pure ()
                 H.script "main();"

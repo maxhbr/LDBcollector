@@ -36,11 +36,13 @@ instance ToJSON BlueOakLicense
 data BlueOakRating
  = BlueOakRating
  { _rating   :: String
+ , _notes    :: Text
  , _licenses :: [BlueOakLicense]
  } deriving (Show,Generic)
 instance FromJSON BlueOakRating where
   parseJSON = withObject "BlueOakRating" $ \v -> BlueOakRating
     <$> v .: "name"
+    <*> v .: "notes"
     <*> v .: "licenses"
 
 data BlueOakData
@@ -81,13 +83,13 @@ instance FromJSON BlueOakCopyleftData where
 -- #############################################################################
 
 data BlueOakCouncilFact
-    = BOCPermissive String BlueOakLicense
+    = BOCPermissive String Text BlueOakLicense
     | BOCCopyleft String String BlueOakLicense
     deriving (Eq, Show, Ord, Generic)
 instance ToJSON BlueOakCouncilFact
 permissiveToFacts :: BlueOakData -> [BlueOakCouncilFact]
 permissiveToFacts (BlueOakData _ ratings) =
-    concatMap (\(BlueOakRating rating licenses) -> map (BOCPermissive rating) licenses) ratings
+    concatMap (\(BlueOakRating rating notes licenses) -> map (BOCPermissive rating notes) licenses) ratings
 copyleftToFacts :: BlueOakCopyleftData -> [BlueOakCouncilFact]
 copyleftToFacts (BlueOakCopyleftData _ families) =
     concatMap (\(kind, groups) -> concatMap (\(BlueOakCopyleftGroup name versions) -> map (BOCCopyleft kind name) versions) groups) $ M.assocs families
@@ -101,9 +103,16 @@ getImpliedStmtsOfBOL :: BlueOakLicense -> [LicenseStatement]
 getImpliedStmtsOfBOL (BlueOakLicense {_url=url}) = [LicenseUrl url]
 instance LicenseFactC BlueOakCouncilFact where
     getType _ = "BlueOakCouncil"
-    getApplicableLNs (BOCPermissive _ bol) = alnFromBol bol
+    getApplicableLNs (BOCPermissive _ _ bol) = alnFromBol bol
     getApplicableLNs (BOCCopyleft _ kind bol) = alnFromBol bol `ImpreciseLNs` [(LN . newLN . pack) kind]
-    getImpliedStmts (BOCPermissive rating bol) = [typestmt "Permissive", stmt rating] ++ getImpliedStmtsOfBOL bol
+    getImpliedStmts a@(BOCPermissive rating notes bol) = let
+            boRatingToStatement = LicenseRating (getType a) $ case strToLower rating of
+                "gold" -> PositiveLicenseRating "Gold" $ Just notes
+                "silver" -> PositiveLicenseRating "Silver" $ Just notes
+                "bronze" -> NeutralLicenseRating "Lead" $ Just notes
+                "lead" -> NegativeLicenseRating "Lead" $ Just notes
+                _ -> NeutralLicenseRating (fromString rating) Nothing
+        in [typestmt "Permissive", boRatingToStatement] ++ getImpliedStmtsOfBOL bol
     getImpliedStmts (BOCCopyleft kind _ bol) = (typestmt kind `SubStatements` [typestmt "Copyleft"]) : getImpliedStmtsOfBOL bol
 
 

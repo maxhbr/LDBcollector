@@ -195,7 +195,7 @@ applyFact = do
     factNode <- insertNode (LGFact fact)
     lnNode <- applyFactApplicableLNs (getApplicableLNs fact)
     _ <- insertEdge (factLG, lnNode, LGAppliesTo)
-    stmtNodes <- applyFactImpliedStmts (getImpliedStmts fact)
+    stmtNodes <- applyFactImpliedStmts (filterStatements $ getImpliedStmts fact)
     let edges = V.fromList $ map (,factLG, LGImpliedBy) stmtNodes
     _ <- insertEdges edges
     return factNode

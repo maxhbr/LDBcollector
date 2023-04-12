@@ -71,9 +71,8 @@ simplifyEdgeLabel as = let
                          else as
         _ -> nub as
 
-
-computeDigraph :: LicenseGraph -> GV.DotGraph G.Node
-computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
+generateColorMapping :: Ord a => [a] -> Map.Map a GV.Color
+generateColorMapping = let
         colors = cycle $ map (\(r,g,b) -> GV.RGB r g b) [ (0,135,108)  -- #00876c
                                                         , (55,148,105) -- #379469
                                                         , (88,160,102) -- #58a066
@@ -88,16 +87,11 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                                                         , (220,87,74)  -- #dc574a
                                                         , (212,61,81)  -- #d43d51
                                                         ]
-                                                        -- [ (255,215,0)
-                                                        -- , (255,177,78)
-                                                        -- , (250,135,117)
-                                                        -- , (234,95,148)
-                                                        -- , (205,52,181)
-                                                        -- , (157,2,215)
-                                                        -- , (0,0,255)
-                                                        -- ]
-        sources = (map fst . Map.keys) facts
-        factColoringMap = Map.fromList $ zip sources colors
+    in Map.fromList . (`zip` colors)
+
+computeDigraph :: LicenseGraph -> [G.Node] -> [G.Node] -> [G.Node] -> GV.DotGraph G.Node
+computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) mainLNs sameLNs otherLNs = let
+        factColoringMap = generateColorMapping ((map fst . Map.keys) facts)
         typeColoringLookup source = Map.findWithDefault (GV.RGB 0 0 0) source factColoringMap
 
         getSourcesOfNode :: G.Node -> [SourceRef]
@@ -172,6 +166,13 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
                         Just (LGFact _) -> [ GV.FillColor [GV.WC (GV.X11Color GV.Beige) (Just 1)]
                                                 , GV.Shape GV.Ellipse
                                                 ]
+                        Just (LGName _) -> if n `elem` mainLNs
+                                           then [GV.Shape GV.TripleOctagon]
+                                           else if n `elem` sameLNs 
+                                                then [GV.Shape GV.DoubleOctagon]
+                                                else if n `elem` otherLNs
+                                                     then [GV.Shape GV.Octagon]
+                                                     else [GV.Shape GV.BoxShape]
                         _ -> []
                 in  GV.Label label : (coloring ++ styling)
             , GV.fmtEdge          = \(a, b, e) ->
@@ -188,20 +189,17 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) = let
             GV.strictGraph = True -- If True, no multiple edges are drawn.
         }
 
-getDigraph :: LicenseGraphM (GV.DotGraph G.Node)
-getDigraph = MTL.gets computeDigraph
+getDigraph :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM (GV.DotGraph G.Node)
+getDigraph mainLNs sameLNs otherLNs = MTL.gets (\g -> computeDigraph g mainLNs sameLNs otherLNs)
 
 renderDot :: GV.DotGraph G.Node -> FilePath -> IO FilePath
 renderDot digraph dot = do
     let format = GV.Svg
-    let command = GV.Fdp
     createParentDirectoryIfNotExists dot
     debugM "genGraphViz" $ "write dot to " ++ dot
-    writeFile
-        (dot <.> "graph")
-        (G.prettify (GV.dotToGraph digraph :: G.Gr GV.Attributes GV.Attributes))
     GV.writeDotFile dot digraph
     debugM "genGraphViz" "runGraphvizCommand"
+    let command = GV.Fdp
     res <- Ex.try $ GV.runGraphvizCommand command digraph format (dot <.> show format)
     case res of
         Left (Ex.SomeException e) -> fail $ "failed to convert dot to "++ show format ++ ": " ++ show e
@@ -209,17 +207,17 @@ renderDot digraph dot = do
             debugLogIO $ "wrote SVG " ++ svg
             return svg
 
-writeGraphViz :: FilePath -> LicenseGraphM ()
-writeGraphViz dot = do
+writeGraphViz :: [G.Node] -> [G.Node] -> [G.Node] -> FilePath -> LicenseGraphM ()
+writeGraphViz mainLNs sameLNs otherLNs dot = do
     debugLog $ "generate " ++ dot
-    digraph <- getDigraph
+    digraph <- getDigraph mainLNs sameLNs otherLNs
     _ <- MTL.liftIO $ renderDot digraph dot
     pure ()
 
-genGraphViz :: LicenseGraphM LT.Text
-genGraphViz = do
+genGraphViz :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM LT.Text
+genGraphViz mainLNs sameLNs otherLNs = do
     lift $ debugM "genGraphViz" "getDigraph"
-    digraph <- getDigraph
+    digraph <- getDigraph mainLNs sameLNs otherLNs
     MTL.liftIO $ do
         Temp.withSystemTempDirectory "genGraphViz" $ \tmpdir -> do
             debugM "genGraphViz" "renderDigraph"

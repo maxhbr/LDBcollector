@@ -1,5 +1,6 @@
 module MyPrelude
     ( module X
+    , strToLower
     , tShow
     , createDirectoryIfNotExists
     , createParentDirectoryIfNotExists
@@ -40,8 +41,12 @@ import           System.Log.Handler.Simple
 import           System.Log.Handler.Syslog
 import           System.Log.Logger          as X
 import           Text.Blaze                 as X (Markup)
+import           Data.Char                  as X (toLower)
 
 import           System.Console.Pretty      (Color (Yellow), color)
+
+strToLower :: [Char] -> [Char]
+strToLower = map toLower
 
 tShow :: (Show a) => a -> Text
 tShow = pack . show

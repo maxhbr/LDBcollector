@@ -23,7 +23,7 @@ applySources :: LicenseGraphM ()
 applySources = do
     lift $ infoM rootLoggerName "# get sources ..."
     applySource SPDXLicenseIds
-    -- applySource OSI
+    applySource OSI
     applySource (FedoraLicenseData "./data/fedora-legal-fedora-license-data.jsons")
     applySource (BlueOakCouncilLicenseList "./data/blueoakcouncil/blue-oak-council-license-list.json")
     applySource (BlueOakCouncilCopyleftList "./data/blueoakcouncil/blue-oak-council-copyleft-list.json")

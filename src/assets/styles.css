@@ -3,50 +3,28 @@ body {
 }
 
 #svgGraph {
-    position: fixed;
-    display: inline;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    /* width: 340; */
+    position: relative;
+    width: 300px;
+    max-height: 300px;
+    margin: 20px;
 }
 #svgGraph svg {
     background-color: white;
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 300px;
+    width: 100%;
     max-height: 300px;
 }
 input#svgCheckbox[type="checkbox"] {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    /* margin: 0px; */
+    position: relative;
     z-index: 10000;
 }
 input#svgCheckbox[type="checkbox"] ~ #svgGraph {
-    /* display:none; */
     z-index: 10;
 }
 input#svgCheckbox[type="checkbox"]:checked ~ #svgGraph {
-    /* display:block; */
     z-index: 1000;
 }
 input#svgCheckbox[type="checkbox"]:checked ~ #svgGraph svg {
     box-shadow: 0px 0px 20px  gray;
-}
-
-#all {
-    position: fixed;
-    display: inline;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    z-index: 100;
 }
 
 header, #content {
@@ -56,9 +34,6 @@ header, #content {
 }
 
 header {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 300px;
     display: table;
     padding: 20px;
@@ -66,12 +41,13 @@ header {
 }
 
 #content {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 340px;
     overflow: scroll;
+    z-index: 100;
 }
 /* #content ~ input[type="checkbox"] {
     position: fixed;
