@@ -189,6 +189,12 @@ Database section 7.
     future claims in that contribution or in the TZ Database.
 '''
 
+package = jisksp16-1990-fonts
+location = http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/ftp/fonts/jisksp16-1990.bdf.Z
+text = '''
+COPYRIGHT "Public Domain"
+'''
+
 package = pl
 location = https://github.com/SWI-Prolog/packages-http/blob/master/examples/calc.pl
 text = '''
