@@ -18,6 +18,7 @@ import           Ldbcollector.Source.OSLC
 import           Ldbcollector.Source.Scancode
 import           Ldbcollector.Source.SPDX
 import           Ldbcollector.Source.Warpr
+import           Ldbcollector.Source.Curation
 
 applySources :: LicenseGraphM ()
 applySources = do
@@ -40,4 +41,5 @@ applySources = do
     applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")
     applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv")
     applySource (EclipseOrgLegal "data/eclipse.org-legal-licenses.json")
+    applySource (Curation mempty)
     lift $ infoM rootLoggerName "# ... got sources"

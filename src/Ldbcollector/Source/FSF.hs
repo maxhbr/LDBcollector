@@ -1,5 +1,6 @@
 {-# LANGUAGE DeriveGeneric     #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE LambdaCase #-}
 module Ldbcollector.Source.FSF
     ( FSF (..)
     ) where
@@ -32,7 +33,13 @@ instance LicenseFactC FsfWkingData where
     getType _ = "FSF"
     getApplicableLNs (FsfWkingData { _id = id, _identifiers = identifiers, _name = name}) =
         LN id `AlternativeLNs` (LN name : concatMap (\(scope, lns) -> map (LN . setNS scope) lns) (Map.assocs identifiers))
-    getImpliedStmts entry = map LicenseUrl (_uris entry) ++ map stmt (_tags entry)
+    getImpliedStmts entry = map LicenseUrl (_uris entry)
+        ++ map (\case 
+                   "libre" -> LicenseRating "FSF" (PositiveLicenseRating "libre" Nothing)
+                   "gpl-2-compatible" -> LicenseRating "FSF" (NeutralLicenseRating "gpl-2-compatible" Nothing)
+                   "gpl-3-compatible" -> LicenseRating "FSF" (NeutralLicenseRating "gpl-3-compatible" Nothing)
+                   "non-free" -> LicenseRating "FSF" (NegativeLicenseRating "non-free" Nothing)
+                   tag -> stmt tag) (_tags entry)
 
 parseFsfJSON :: FilePath -> IO FsfWkingData
 parseFsfJSON json = do

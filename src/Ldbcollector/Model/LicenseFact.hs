@@ -41,7 +41,7 @@ data ApplicableLNs where
     LN :: LicenseName -> ApplicableLNs
     AlternativeLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
     ImpreciseLNs :: ApplicableLNs -> [ApplicableLNs] -> ApplicableLNs
-    deriving (Generic)
+    deriving (Eq, Show, Generic)
 alternativesFromListOfLNs :: [LicenseName] -> ApplicableLNs
 alternativesFromListOfLNs (best:others) = LN best `AlternativeLNs` map LN others
 alternativesFromListOfLNs []            = undefined

@@ -115,11 +115,11 @@ printFacts factId licenseGraph = do
                                 onerror _ _ = Just '_'
                             in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))) facts
 
-conputeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, T.Text, [LicenseName], [LicenseName])
-conputeSubgraph licenseGraph paramMap = do
+computeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, Digraph, [LicenseName], [LicenseName])
+computeSubgraph licenseGraph paramMap = do
     let licLN = LGName (getLic paramMap)
     fmap fst . runLicenseGraphM' licenseGraph $ do
-            (subgraph,lnsubgraph,svg,sameNameNodes,otherNameNodes) <- focus (getEnabledSources paramMap) (V.singleton licLN) $
+            (subgraph,lnsubgraph,digraph,sameNameNodes,otherNameNodes) <- focus (getEnabledSources paramMap) (V.singleton licLN) $
                 \(needleNames, sameNames, otherNames, _statements) -> do
                     MTL.gets ((,,,,) . _gr)
                         <*> getLicenseNameGraph
@@ -129,36 +129,89 @@ conputeSubgraph licenseGraph paramMap = do
                                                                                                 LGName _ -> True
                                                                                                 LGFact _ -> True
                                                                                                 _ -> False) gr})
-                            genGraphViz needleNames sameNames otherNames)
+                            getDigraph needleNames sameNames otherNames)
                         <*> pure sameNames
                         <*> pure otherNames
             let graphNodeToLn (Just (LGName ln)) = Just ln
                 graphNodeToLn _ = Nothing
             sameNames <- catMaybes <$> mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) sameNameNodes
             otherNames <- catMaybes <$> mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) otherNameNodes
-            return (subgraph,lnsubgraph,svg,sameNames,otherNames)
+            return (subgraph,lnsubgraph,digraph,sameNames,otherNames)
+
+htmlHeader :: LicenseGraph -> ParamMap -> H.Markup
+htmlHeader licenseGraph paramMap = do
+    let allLicenseNames = getLicenseGraphLicenseNames licenseGraph
+    let allSources = (nub . map fst . Map.keys . _facts) licenseGraph
+    let licRaw = getLicRaw paramMap
+    H.header $ do
+        H.h1 (H.toMarkup licRaw)
+        H.form H.! A.action "" $ do
+            H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
+            H.datalist H.! A.id "licenses" $
+                mapM_ (\license -> H.option H.! A.value (fromString $ show license) $ pure ()) allLicenseNames
+            H.h4 "Sources"
+            H.ul $
+                mapM_ (\(Source source) -> H.li $ do
+                        H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on" H.! (if isSourceEnabled paramMap (Source source)
+                                                                                                            then A.checked "checked"
+                                                                                                            else mempty)
+                        H.label H.! A.for (fromString source) $ fromString source
+                    ) allSources
+            H.h4 "Graph Options"
+            H.ul $ do
+                H.li $ do
+                    H.input H.! A.type_ "checkbox" H.! A.name (H.toValue excludeStmts) H.! A.value "on" H.! (if getIsExcludeStmts paramMap
+                                                                                                             then A.checked "checked"
+                                                                                                             else mempty)
+                    H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
+            H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
+
+dotPage :: [S.Param] -> LicenseGraph -> IO H.Html
+dotPage params licenseGraph = do
+    paramMap <- evaluateParams params
+    (_,_,digraph,_,_) <- computeSubgraph licenseGraph paramMap
+    let digraphDot = digraphToText digraph
+
+    return . H.html $ do
+            let licRaw = getLicRaw paramMap
+            H.head $ do
+                H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
+                H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
+                H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
+                H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
+                H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
+                H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
+            H.body $ do
+                htmlHeader licenseGraph paramMap
+                H.div H.! A.id "content" $ pure ()
+                H.pre H.! A.id "graph.dot" H.! A.style "display:none;" $ 
+                    H.toMarkup digraphDot
+                H.script $ do
+                    "d3.select(\"#content\")"
+                    "    .graphviz()"
+                    "    .engine('fdp')"
+                    "    .fit(true)"
+                    "    .renderDot(document.getElementById('graph.dot').textContent);"
 
 svgPage :: [S.Param] -> LicenseGraph -> IO T.Text
 svgPage params licenseGraph = do
     paramMap <- evaluateParams params
-    (_,_,svg,_,_) <- conputeSubgraph licenseGraph paramMap
-    return svg
+    (_,_,digraph,_,_) <- computeSubgraph licenseGraph paramMap
+    rederDotToText "fdp" digraph
 
 mainPage :: [S.Param] -> LicenseGraph -> IO H.Html
 mainPage params licenseGraph = do
 
-    let allLicenseNames = getLicenseGraphLicenseNames licenseGraph
-    let allSources = (nub . map fst . Map.keys . _facts) licenseGraph
-
     paramMap <- evaluateParams params
-    (subgraph,lnsubgraph,svg,sameNames,otherNames) <- conputeSubgraph licenseGraph paramMap
+    (subgraph,lnsubgraph,digraph,sameNames,otherNames) <- computeSubgraph licenseGraph paramMap
+    svg <- rederDotToText "fdp" digraph
 
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
                                _        -> Nothing
                            . snd) . G.labNodes) subgraph
+    let licRaw = getLicRaw paramMap
     return . H.html $ do
-            let licRaw = getLicRaw paramMap
             H.head $ do
                 H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
                 H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
@@ -166,31 +219,7 @@ mainPage params licenseGraph = do
                 H.script H.! A.src "https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" $
                     pure ()
             H.body $ do
-                -- ########################################################
-                -- ##  header  ############################################
-                -- ########################################################
-                H.header $ do
-                    H.h1 (H.toMarkup licRaw)
-                    H.form H.! A.action "" $ do
-                        H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
-                        H.datalist H.! A.id "licenses" $
-                            mapM_ (\license -> H.option H.! A.value (fromString $ show license) $ pure ()) allLicenseNames
-                        H.h4 "Sources"
-                        H.ul $
-                            mapM_ (\(Source source) -> H.li $ do
-                                    H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on" H.! (if isSourceEnabled paramMap (Source source)
-                                                                                                                        then A.checked "checked"
-                                                                                                                        else mempty)
-                                    H.label H.! A.for (fromString source) $ fromString source
-                                ) allSources
-                        H.h4 "Graph Options"
-                        H.ul $ do
-                            H.li $ do
-                                H.input H.! A.type_ "checkbox" H.! A.name (H.toValue excludeStmts) H.! A.value "on" H.! (if getIsExcludeStmts paramMap
-                                                                                                                         then A.checked "checked"
-                                                                                                                         else mempty)
-                                H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
-                        H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
+                htmlHeader licenseGraph paramMap
                 -- ########################################################
                 -- ##  svg  ###############################################
                 -- ########################################################
@@ -237,6 +266,10 @@ serve = do
             get "/" $ do
                 params <- S.params
                 page <- liftAndCatchIO $ mainPage params licenseGraph
+                html (BT.renderHtml page)
+            get "/dot/" $ do
+                params <- S.params
+                page <- liftAndCatchIO $ dotPage params licenseGraph
                 html (BT.renderHtml page)
             get "/svg/" $ do
                 params <- S.params

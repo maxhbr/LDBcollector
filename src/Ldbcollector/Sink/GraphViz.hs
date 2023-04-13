@@ -4,6 +4,10 @@
 module Ldbcollector.Sink.GraphViz
     ( writeGraphViz
     , genGraphViz
+    , getDigraph
+    , Digraph
+    , digraphToText
+    , rederDotToText
     ) where
 
 import qualified Control.Exception                 as Ex
@@ -29,6 +33,8 @@ import qualified Data.Text.Lazy.IO                 as LT
 import qualified System.IO.Temp                    as Temp
 import qualified Text.Wrap                         as TW
 import qualified Data.GraphViz.Attributes.Colors as GVH
+
+type Digraph =GV.DotGraph G.Node
 
 factIdToLabelValue :: FactId -> GV.Label
 factIdToLabelValue (FactId ty hash) = GV.toLabelValue (ty ++ "\n" ++ hash)
@@ -202,10 +208,13 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) mainLNs sameLNs othe
             GV.strictGraph = True -- If True, no multiple edges are drawn.
         }
 
-getDigraph :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM (GV.DotGraph G.Node)
+getDigraph :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM Digraph
 getDigraph mainLNs sameLNs otherLNs = MTL.gets (\g -> computeDigraph g mainLNs sameLNs otherLNs)
 
-renderDot :: String -> GV.DotGraph G.Node -> FilePath -> IO FilePath
+digraphToText :: Digraph -> LT.Text
+digraphToText = GV.printDotGraph 
+
+renderDot :: String -> Digraph -> FilePath -> IO FilePath
 renderDot layout digraph dot = do
     let format = GV.Svg
     createParentDirectoryIfNotExists dot
@@ -222,6 +231,14 @@ renderDot layout digraph dot = do
         Right svg -> do
             debugLogIO $ "wrote SVG " ++ svg
             return svg
+rederDotToText :: String -> Digraph -> IO LT.Text
+rederDotToText layout digraph = do
+    MTL.liftIO $ do
+        Temp.withSystemTempDirectory "genGraphViz" $ \tmpdir -> do
+            debugM "genGraphViz" "renderDigraph"
+            svg <- renderDot layout digraph (tmpdir </> "dot")
+            debugM "genGraphViz" "done renderDigraph"
+            LT.readFile svg
 
 writeGraphViz :: [G.Node] -> [G.Node] -> [G.Node] -> FilePath -> LicenseGraphM ()
 writeGraphViz mainLNs sameLNs otherLNs dot = do
