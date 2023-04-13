@@ -1,0 +1,7 @@
+- id: "Pod::GoogleUtilities/Logger:"
+  curations:
+    comment: |
+      Set the VCS path of the module inside the multi-module
+      repository.
+    vcs:
+      path: "GoogleUtilities/Logger"
