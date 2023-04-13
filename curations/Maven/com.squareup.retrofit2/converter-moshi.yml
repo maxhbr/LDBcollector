@@ -1,0 +1,7 @@
+- id: "Maven:com.squareup.retrofit2:converter-moshi:"
+  curations:
+    comment: |
+      Set the VCS path of the module inside the multi-module
+      repository.
+    vcs:
+      path: "retrofit-converters/moshi"
