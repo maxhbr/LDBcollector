@@ -73,6 +73,10 @@ data LicenseRating
     | NegativeLicenseRating Text (Maybe Text)
     deriving (Eq, Show, Ord, Generic)
 instance ToJSON LicenseRating
+unLicenseRating :: LicenseRating -> Text
+unLicenseRating (PositiveLicenseRating r _) = r
+unLicenseRating (NeutralLicenseRating  r _) = r
+unLicenseRating (NegativeLicenseRating r _) = r
 
 data LicenseStatement where
     LicenseStatement :: String -> LicenseStatement

@@ -1,5 +1,6 @@
 {-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE CPP               #-}
 module Ldbcollector.Sink.GraphViz
     ( writeGraphViz
     , genGraphViz
@@ -18,6 +19,7 @@ import qualified Data.GraphViz.Printing            as GV
 import qualified Data.Vector                       as V
 
 import qualified Data.GraphViz.Attributes.HTML     as GVH
+import qualified Data.GraphViz.Attributes.Colors.SVG as GVH
 import qualified Data.HashMap.Internal.Strict      as HMap
 import qualified Data.Map                          as Map
 import           Ldbcollector.Model
@@ -26,17 +28,18 @@ import qualified Data.Text.Lazy                    as LT
 import qualified Data.Text.Lazy.IO                 as LT
 import qualified System.IO.Temp                    as Temp
 import qualified Text.Wrap                         as TW
+import qualified Data.GraphViz.Attributes.Colors as GVH
 
-instance GV.Labellable FactId where
-    toLabelValue (FactId ty hash) = GV.toLabelValue (ty ++ "\n" ++ hash)
+factIdToLabelValue :: FactId -> GV.Label
+factIdToLabelValue (FactId ty hash) = GV.toLabelValue (ty ++ "\n" ++ hash)
 
-instance GV.Labellable LicenseStatement where
-    toLabelValue (LicenseStatement stmt) = GV.toLabelValue stmt
-    toLabelValue (LicenseUrl url) = GV.toLabelValue url
-    toLabelValue (LicenseText txt) = GV.toLabelValue ("$TEXT" :: Text)
-    toLabelValue (LicenseRule txt) = GV.toLabelValue ("$RULE" :: Text)
-    toLabelValue (LicenseComment txt) = GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 txt)
-    toLabelValue (LicensePCLR pclr) = let
+licenseStatementToLabelValue :: LicenseStatement -> GV.Label
+licenseStatementToLabelValue (LicenseStatement stmt) = GV.toLabelValue stmt
+licenseStatementToLabelValue (LicenseUrl url) = GV.toLabelValue url
+licenseStatementToLabelValue (LicenseText txt) = GV.toLabelValue ("$TEXT" :: Text)
+licenseStatementToLabelValue (LicenseRule txt) = GV.toLabelValue ("$RULE" :: Text)
+licenseStatementToLabelValue (LicenseComment txt) = GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 txt)
+licenseStatementToLabelValue (LicensePCLR pclr) = let
             header = GVH.Cells [ GVH.LabelCell [] (GVH.Text [GVH.Str "Permissions"])
                                , GVH.LabelCell [] (GVH.Text [GVH.Str "Conditions"])
                                , GVH.LabelCell [] (GVH.Text [GVH.Str "Limitations"])
@@ -47,14 +50,24 @@ instance GV.Labellable LicenseStatement where
             newline = GVH.Newline []
             content = GVH.Cells (map linesToContent [ _permissions pclr, _conditions pclr, _limitations pclr, _restrictions pclr])
         in GV.HtmlLabel . GVH.Table $ GVH.HTable Nothing [] [ header, content ]
-    toLabelValue (LicenseCompatibilities compatibilities) = let
+#if 0
+licenseStatementToLabelValue (LicenseCompatibilities compatibilities) = let
             mkLine (LicenseCompatibility other compatibility explanation) =
                 GVH.Cells [ GVH.LabelCell [] (GVH.Text [GVH.Str . LT.pack $ show other])
                           , GVH.LabelCell [] (GVH.Text [GVH.Str $ LT.pack compatibility])
                         --   , GVH.LabelCell [] (GVH.Text [GVH.Str $ LT.fromStrict explanation])
                           ]
         in GV.HtmlLabel . GVH.Table $ GVH.HTable Nothing [] (map mkLine compatibilities)
-    toLabelValue statement = (GV.StrLabel . LT.pack . show) statement
+#else
+licenseStatementToLabelValue (LicenseCompatibilities compatibilities) = GV.toLabelValue ("$COMPATIBILITIES" :: Text)
+#fi
+licenseStatementToLabelValue (LicenseRating ns rating) = let
+           color = GVH.Color . GVH.SVGColor $ case rating of
+            NegativeLicenseRating _ _ -> GVH.DarkRed
+            NeutralLicenseRating _ _ -> GVH.Black
+            PositiveLicenseRating _ _ -> GVH.ForestGreen
+        in GV.HtmlLabel . GVH.Text $ [GVH.Str (fromString ns), GVH.Str ": ", GVH.Format GVH.Bold [GVH.Font [color] [(GVH.Str . LT.fromStrict . unLicenseRating) rating]]]
+licenseStatementToLabelValue statement = (GV.StrLabel . LT.pack . show) statement
 
 simplifyEdgeLabel :: [LicenseGraphEdge] -> [LicenseGraphEdge]
 simplifyEdgeLabel [] = []
@@ -154,8 +167,8 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) mainLNs sameLNs othe
                 let nodeLabel = graph `G.lab` n
                     label = case nodeLabel of
                                 Just (LGName name) -> GV.toLabelValue (show name)
-                                Just (LGStatement stmt) -> GV.toLabelValue stmt
-                                Just (LGFact fact) -> GV.toLabelValue (getFactId fact)
+                                Just (LGStatement stmt) -> licenseStatementToLabelValue stmt
+                                Just (LGFact fact) -> factIdToLabelValue (getFactId fact)
                                 Just nodeLabel' -> GV.toLabelValue (show nodeLabel')
                                 Nothing -> GV.toLabelValue ("(/)" :: Text)
                     coloring = getColorOfNode (n,nodeLabel)
@@ -192,14 +205,17 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) mainLNs sameLNs othe
 getDigraph :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM (GV.DotGraph G.Node)
 getDigraph mainLNs sameLNs otherLNs = MTL.gets (\g -> computeDigraph g mainLNs sameLNs otherLNs)
 
-renderDot :: GV.DotGraph G.Node -> FilePath -> IO FilePath
-renderDot digraph dot = do
+renderDot :: String -> GV.DotGraph G.Node -> FilePath -> IO FilePath
+renderDot layout digraph dot = do
     let format = GV.Svg
     createParentDirectoryIfNotExists dot
     debugM "genGraphViz" $ "write dot to " ++ dot
     GV.writeDotFile dot digraph
     debugM "genGraphViz" "runGraphvizCommand"
-    let command = GV.Fdp
+    let command = case layout of
+                    "fdp" -> GV.Fdp
+                    "dot" -> GV.Dot
+                    _ -> GV.Fdp
     res <- Ex.try $ GV.runGraphvizCommand command digraph format (dot <.> show format)
     case res of
         Left (Ex.SomeException e) -> fail $ "failed to convert dot to "++ show format ++ ": " ++ show e
@@ -211,7 +227,7 @@ writeGraphViz :: [G.Node] -> [G.Node] -> [G.Node] -> FilePath -> LicenseGraphM (
 writeGraphViz mainLNs sameLNs otherLNs dot = do
     debugLog $ "generate " ++ dot
     digraph <- getDigraph mainLNs sameLNs otherLNs
-    _ <- MTL.liftIO $ renderDot digraph dot
+    _ <- MTL.liftIO $ renderDot "fdp" digraph dot
     pure ()
 
 genGraphViz :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM LT.Text
@@ -221,6 +237,6 @@ genGraphViz mainLNs sameLNs otherLNs = do
     MTL.liftIO $ do
         Temp.withSystemTempDirectory "genGraphViz" $ \tmpdir -> do
             debugM "genGraphViz" "renderDigraph"
-            svg <- renderDot digraph (tmpdir </> "dot")
+            svg <- renderDot "fdp" digraph (tmpdir </> "dot")
             debugM "genGraphViz" "done renderDigraph"
             LT.readFile svg

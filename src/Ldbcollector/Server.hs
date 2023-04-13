@@ -31,6 +31,44 @@ import qualified Network.Wai.Handler.Warp      as Warp
 import           Web.Scotty                    as S
 import Text.Blaze.Html5.Attributes (onratechange)
 
+
+class ParamMapC a where
+    getLicRaw :: a -> T.Text
+    getLic :: a -> LicenseName
+    getIsExcludeStmts :: a -> Bool
+    getEnabledSources :: a -> [SourceRef]
+    isSourceEnabled :: a -> SourceRef -> Bool
+newtype ParamMap = ParamMap {
+        unParamMap :: Map.Map T.Text T.Text
+    }
+excludeStmts :: T.Text
+excludeStmts = "excludeStmts"
+instance ParamMapC ParamMap where
+    getLicRaw = Map.findWithDefault "BSD-3-Clause" "license" . unParamMap
+    getLic = fromText . T.toStrict . getLicRaw
+    getIsExcludeStmts = ("on" ==) . Map.findWithDefault "off" excludeStmts . unParamMap
+    getEnabledSources = map (Source . T.unpack . fst) . filter (\(_,value) -> value == "on") . Map.assocs . unParamMap
+    isSourceEnabled pm s = s `elem` getEnabledSources pm
+
+instance Show ParamMap where
+    show pm = let
+            assocs = (Map.assocs . unParamMap) pm
+            licRaw = getLicRaw pm
+            lic = getLic pm
+            enabledSources = getEnabledSources pm
+        in unlines [ "params=" ++ show assocs
+                   , "licRaw=" ++ show licRaw
+                   , "lic=" ++ show lic
+                   , "enabledSources=" ++ show enabledSources
+                   ]
+
+evaluateParams :: [S.Param] -> IO ParamMap
+evaluateParams  params = do
+    let pm = (ParamMap . Map.fromList) params
+    debugLogIO (show pm)
+    return pm
+
+
 myOptions :: S.Options
 myOptions = S.Options 1 (Warp.setPort 3000 (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
 
@@ -77,35 +115,19 @@ printFacts factId licenseGraph = do
                                 onerror _ _ = Just '_'
                             in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))) facts
 
-evaluateParams :: [S.Param] -> LicenseGraph -> IO (Map.Map T.Text T.Text, T.Text, LicenseName, [SourceRef], [SourceRef])
-evaluateParams  params licenseGraph = do
-    let paramMap = Map.fromList params
-        licRaw = Map.findWithDefault "BSD-3-Clause" "license" paramMap
-        lic = (fromText . T.toStrict) licRaw :: LicenseName
-        allSources = (nub . map fst . Map.keys . _facts) licenseGraph
-        enabledSources = case (map (Source . T.unpack . fst) . filter (\(_,value) -> value == "on")) params of
-            []              -> allSources
-            enabledSources_ -> enabledSources_
-
-    debugLogIO ("params=" ++ show params)
-    debugLogIO ("licRaw=" ++ show licRaw)
-    debugLogIO ("lic=" ++ show lic)
-    debugLogIO ("enabledSources=" ++ show enabledSources)
-
-    return (paramMap,licRaw,lic,allSources,enabledSources)
-
-conputeSubgraph :: LicenseGraph -> LicenseName -> [SourceRef] -> Map.Map T.Text T.Text -> IO (LicenseGraphType, LicenseNameGraphType, T.Text, [LicenseName], [LicenseName])
-conputeSubgraph licenseGraph lic enabledSources paramMap = do
-    let licLN = LGName lic
+conputeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, T.Text, [LicenseName], [LicenseName])
+conputeSubgraph licenseGraph paramMap = do
+    let licLN = LGName (getLic paramMap)
     fmap fst . runLicenseGraphM' licenseGraph $ do
-            (subgraph,lnsubgraph,svg,sameNameNodes,otherNameNodes) <- focus enabledSources (V.singleton licLN) $
+            (subgraph,lnsubgraph,svg,sameNameNodes,otherNameNodes) <- focus (getEnabledSources paramMap) (V.singleton licLN) $
                 \(needleNames, sameNames, otherNames, _statements) -> do
                     MTL.gets ((,,,,) . _gr)
                         <*> getLicenseNameGraph
                         <*> (do
-                            when ("on" == Map.findWithDefault "" "onlyLNs" paramMap) $
+                            when (getIsExcludeStmts paramMap) $
                                 MTL.modify (\lg@LicenseGraph{_gr=gr} -> lg{_gr=G.labfilter (\case
                                                                                                 LGName _ -> True
+                                                                                                LGFact _ -> True
                                                                                                 _ -> False) gr})
                             genGraphViz needleNames sameNames otherNames)
                         <*> pure sameNames
@@ -118,21 +140,25 @@ conputeSubgraph licenseGraph lic enabledSources paramMap = do
 
 svgPage :: [S.Param] -> LicenseGraph -> IO T.Text
 svgPage params licenseGraph = do
-    (paramMap,_,lic,_,enabledSources) <- evaluateParams params licenseGraph
-    (_,_,svg,_,_) <- conputeSubgraph licenseGraph lic enabledSources paramMap
+    paramMap <- evaluateParams params
+    (_,_,svg,_,_) <- conputeSubgraph licenseGraph paramMap
     return svg
 
 mainPage :: [S.Param] -> LicenseGraph -> IO H.Html
 mainPage params licenseGraph = do
+
     let allLicenseNames = getLicenseGraphLicenseNames licenseGraph
-    (paramMap,licRaw,lic,allSources,enabledSources) <- evaluateParams params licenseGraph
-    (subgraph,lnsubgraph,svg,sameNames,otherNames) <- conputeSubgraph licenseGraph lic enabledSources paramMap
+    let allSources = (nub . map fst . Map.keys . _facts) licenseGraph
+
+    paramMap <- evaluateParams params
+    (subgraph,lnsubgraph,svg,sameNames,otherNames) <- conputeSubgraph licenseGraph paramMap
+
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
                                _        -> Nothing
                            . snd) . G.labNodes) subgraph
-
     return . H.html $ do
+            let licRaw = getLicRaw paramMap
             H.head $ do
                 H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
                 H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
@@ -152,18 +178,18 @@ mainPage params licenseGraph = do
                         H.h4 "Sources"
                         H.ul $
                             mapM_ (\(Source source) -> H.li $ do
-                                    if Source source `elem` enabledSources
-                                        then H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on" H.! A.checked "checked"
-                                        else H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on"
+                                    H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on" H.! (if isSourceEnabled paramMap (Source source)
+                                                                                                                        then A.checked "checked"
+                                                                                                                        else mempty)
                                     H.label H.! A.for (fromString source) $ fromString source
                                 ) allSources
                         H.h4 "Graph Options"
                         H.ul $ do
                             H.li $ do
-                                if "on" == Map.findWithDefault "" "onlyLNs" paramMap
-                                    then H.input H.! A.type_ "checkbox" H.! A.name "onlyLNs" H.! A.value "on" H.! A.checked "checked"
-                                    else H.input H.! A.type_ "checkbox" H.! A.name "onlyLNs" H.! A.value "on"
-                                H.label H.! A.for (fromString "onlyLNs") $ fromString "onlyLNs"
+                                H.input H.! A.type_ "checkbox" H.! A.name (H.toValue excludeStmts) H.! A.value "on" H.! (if getIsExcludeStmts paramMap
+                                                                                                                         then A.checked "checked"
+                                                                                                                         else mempty)
+                                H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
                         H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
                 -- ########################################################
                 -- ##  svg  ###############################################
