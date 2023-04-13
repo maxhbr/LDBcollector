@@ -12,7 +12,7 @@ import qualified Data.Vector        as V
 data FedoraEntryLicense
     = FedoraEntryLicense
     { _expression   :: LicenseName
-    , _status       :: [String]
+    , _status       :: [Text]
     , _urls         :: [String]
     , _text         :: Maybe Text
     , _scancode_key :: Maybe LicenseName
@@ -56,8 +56,16 @@ instance LicenseFactC FedoraEntry where
         (LN . newNLN "Fedora" . pack) id `AlternativeLNs` map LN (expression : maybeToList scancode_key)
              `ImpreciseLNs` map LN (legacy_names ++ legacy_abbreviation)
     getApplicableLNs _ = undefined -- should not happen
-    getImpliedStmts (FedoraEntry _ (FedoraEntryLicense { _status = status , _urls = urls , _text = text }) (FedoraEntryFedora {_notes = notes})) =
-        [ stmt (show status)
+    getImpliedStmts (FedoraEntry _ (FedoraEntryLicense { _status = status , _urls = urls , _text = text }) (FedoraEntryFedora {_notes = notes})) = let
+            subStatementsFromStatus [] = []
+            subStatementsFromStatus (a@"allowed":stmts) = LicenseRating "Fedora" (PositiveLicenseRating a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-fonts":stmts) = LicenseRating "Fedora" (NeutralLicenseRating a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-content":stmts) = LicenseRating "Fedora" (NeutralLicenseRating a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-documentation":stmts) = LicenseRating "Fedora" (NeutralLicenseRating a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"not-allowed":stmts) = LicenseRating "Fedora" (NegativeLicenseRating a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (_:stmts) = subStatementsFromStatus stmts
+        in
+        [ stmt (show status) `SubStatements` subStatementsFromStatus status
         ]
         ++ map LicenseUrl urls
         ++ map LicenseText (maybeToList text)
