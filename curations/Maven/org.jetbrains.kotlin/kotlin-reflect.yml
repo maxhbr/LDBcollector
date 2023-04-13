@@ -1,0 +1,5 @@
+- id: "Maven:org.jetbrains.kotlin:kotlin-reflect:"
+  curations:
+    comment: |
+      Enforce scanning the source artifact because figuring out the relevant files in the VCS is complex.
+    source_code_origins: [ ARTIFACT ]
