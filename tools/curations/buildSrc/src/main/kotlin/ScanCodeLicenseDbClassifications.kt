@@ -69,7 +69,7 @@ private data class License(
     val isDeprecated: Boolean,
     val category: String,
     val json: String,
-    val yml: String,
+    val yaml: String,
     val html: String,
     val text: String
 )
