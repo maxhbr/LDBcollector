@@ -70,14 +70,14 @@ private data class License(
     val category: String,
     val json: String,
     val yaml: String,
-    val html: String,
-    val text: String
+    val html: String
 )
 
 private data class LicenseDetails(
     val key: String,
     val shortName: String,
     val name: String,
+    val text: String,
     val category: String,
     val owner: String,
     val homepageUrl: String? = null,
