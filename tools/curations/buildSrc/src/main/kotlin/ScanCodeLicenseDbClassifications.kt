@@ -70,7 +70,8 @@ private data class License(
     val category: String,
     val json: String,
     val yaml: String,
-    val html: String
+    val html: String,
+    val license: String
 )
 
 private data class LicenseDetails(
