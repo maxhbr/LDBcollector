@@ -20,7 +20,7 @@ jobs:
     #     ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     - uses: actions/checkout@v2
       with:
-        submodules: recursive
+        submodules: true
 
     - uses: actions/setup-haskell@v1
       with:
@@ -61,7 +61,7 @@ jobs:
     #     ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     - uses: actions/checkout@v3
       with:
-        submodules: recursive
+        submodules: true
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
     - name: Set up Docker Buildx
