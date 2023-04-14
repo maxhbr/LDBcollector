@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run: ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     - uses: actions/checkout@v2
       with:
         submodules: recursive
@@ -53,6 +54,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run: ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     - uses: actions/checkout@v3
       with:
         submodules: recursive
