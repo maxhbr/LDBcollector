@@ -38,12 +38,17 @@ genSvgByNS outDir selectedNS = do
     V.mapM_ (writeSvgByName outDir) filteredLicenses
 
 
+curation :: Vector Curation
+curation = V.fromList
+  [ Curation (LN "spdx:NullBSD" `AlternativeLNs` LN "BSD0") []
+  ]
+
 main :: IO ()
 main = do
     args <- getArgs
     setupLogger
     (_, licenseGraph) <- runLicenseGraphM $ do
-        applySources
+        applySources curation
         writeMetrics
         case args of
             "write":names -> mapM_ (genSvgByNS "_out" . fromString) names

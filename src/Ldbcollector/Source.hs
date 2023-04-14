@@ -20,8 +20,8 @@ import           Ldbcollector.Source.SPDX
 import           Ldbcollector.Source.Warpr
 import           Ldbcollector.Source.Curation
 
-applySources :: LicenseGraphM ()
-applySources = do
+applySources :: Vector Curation -> LicenseGraphM ()
+applySources curation = do
     lift $ infoM rootLoggerName "# get sources ..."
     applySource SPDXLicenseIds
     applySource OSI
@@ -41,5 +41,5 @@ applySources = do
     applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")
     applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv")
     applySource (EclipseOrgLegal "data/eclipse.org-legal-licenses.json")
-    applySource (Curation mempty)
+    applySource (Curation curation)
     lift $ infoM rootLoggerName "# ... got sources"
