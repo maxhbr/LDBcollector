@@ -197,8 +197,8 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) mainLNs sameLNs othe
             , GV.fmtEdge          = \(a, b, e) ->
                 (case simplifyEdgeLabel (edgeLabels a b) of
                     [] -> []
-                    [LGNameRelation Same] -> [GV.style GV.bold, GV.ArrowHead $ GV.AType [(GV.noMods, GV.NoArrow)], GV.Weight (GV.Dbl 0.7)]
-                    [LGNameRelation Better] -> [GV.style GV.dashed, GV.ArrowHead $ GV.AType [(GV.noMods, GV.NoArrow)], GV.Weight (GV.Dbl 0.5)]
+                    [LGNameRelation Same] -> [GV.style GV.bold, GV.ArrowHead $ GV.AType [(GV.noMods, GV.Vee)], GV.Weight (GV.Dbl 0.7)]
+                    [LGNameRelation Better] -> [GV.style GV.dashed, GV.ArrowHead $ GV.AType [(GV.noMods, GV.Vee)], GV.Weight (GV.Dbl 0.5)]
                     [LGAppliesTo] -> [GV.Weight (GV.Dbl 0.5)]
                     [LGImpliedBy] -> [GV.Weight (GV.Dbl 0.2)]
                     edgeLabels' -> [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
