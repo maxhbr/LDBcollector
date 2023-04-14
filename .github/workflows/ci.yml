@@ -23,9 +23,10 @@ jobs:
         ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
         git submodule update --init
 
-    - uses: actions/setup-haskell@v1
+    - uses: haskell/actions/setup@v2
       with:
-        ghc-version: '9.2.7'
+        ghc-version: '9.2.7' # Exact version of ghc to use
+        # cabal-version: 'latest'. Omitted, but defaults to 'latest'
         enable-stack: true
         stack-version: 'latest'
 
