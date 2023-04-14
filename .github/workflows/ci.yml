@@ -15,12 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # - run: |
-    #     mkdir ~/.ssh
-    #     ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     - uses: actions/checkout@v2
-      with:
-        submodules: true
+    #   with:
+    #     submodules: true
+    - run: |
+        mkdir ~/.ssh
+        ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
+        git submodule update --init
 
     - uses: actions/setup-haskell@v1
       with:
@@ -56,12 +57,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # - run: |
-    #     mkdir ~/.ssh
-    #     ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     - uses: actions/checkout@v3
-      with:
-        submodules: true
+    #   with:
+    #     submodules: true
+    - run: |
+        mkdir ~/.ssh
+        ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
+        git submodule update --init
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
     - name: Set up Docker Buildx
