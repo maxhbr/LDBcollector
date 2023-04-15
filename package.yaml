@@ -51,7 +51,7 @@ dependencies:
 - swish
 - sqlite-simple
 # Sources
-- spdx
+# - spdx
 - opensource
 # Sinks
 - graphviz

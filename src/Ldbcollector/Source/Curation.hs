@@ -1,5 +1,6 @@
 module Ldbcollector.Source.Curation
-  ( Curation(..)
+  ( Curation (..)
+  , CurationItem (..)
   ) where
 
 import           Ldbcollector.Model    hiding (ByteString)

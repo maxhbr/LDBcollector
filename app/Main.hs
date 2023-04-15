@@ -29,8 +29,8 @@ writeSvgByName outDir lic = do
                 writeGraphViz needleNames sameNames otherNames dot
     infoLog "... done"
 
-genSvgByNS :: FilePath -> Text -> LicenseGraphM ()
-genSvgByNS outDir selectedNS = do
+writeSvgByNS :: FilePath -> Text -> LicenseGraphM ()
+writeSvgByNS outDir selectedNS = do
     allLicenseNames <- MTL.gets getLicenseGraphLicenseNames
     let filteredLicenses = V.filter (\case
                                        LicenseName (Just ns) name -> ns == selectedNS && not ("LicenseRef-" `isInfixOf` T.unpack name)
@@ -38,9 +38,9 @@ genSvgByNS outDir selectedNS = do
     V.mapM_ (writeSvgByName outDir) filteredLicenses
 
 
-curation :: Vector Curation
+curation :: Vector CurationItem
 curation = V.fromList
-  [ Curation (LN "spdx:NullBSD" `AlternativeLNs` LN "BSD0") []
+  [ CurationItem (LN "spdx:NullBSD" `AlternativeLNs` [LN "BSD0", LN "0BSD"]) []
   ]
 
 main :: IO ()
@@ -51,7 +51,7 @@ main = do
         applySources curation
         writeMetrics
         case args of
-            "write":names -> mapM_ (genSvgByNS "_out" . fromString) names
-            ["writeNS", ns] -> genSvgByNS "_out" (fromString ns)
+            "write":names -> mapM_ (writeSvgByName "_out" . fromString) names
+            ["writeNS", ns] -> writeSvgByNS "_out" (fromString ns)
             _ -> serve
     return ()
