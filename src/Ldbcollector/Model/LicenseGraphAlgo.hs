@@ -115,7 +115,7 @@ focus sources needles inner = do
         unless (null sources) $ do
             debugLog ("## filter sources on " ++ show sources)
             filterSources sources
-        debugLog ("## focus on " ++ show needles)
+        infoLog ("## focus on " ++ show needles)
         needleIds <- V.toList <$> getIdsOfNodes needles
         (focusedLicenseGraph, (sameNames, otherNames, statements)) <- MTL.gets (focusSequentially needleIds)
         MTL.put focusedLicenseGraph
@@ -124,7 +124,7 @@ focus sources needles inner = do
         inner (needleIds, sameNames, otherNames, statements)
     end <- lift getCPUTime
     let diff = (fromIntegral (end - start) / (10^12)) :: Double
-    debugLog ("## done focusing, took " ++ show diff ++ " sec")
+    infoLog ("## done focusing, took " ++ show diff ++ " sec")
     return a
 
 getFocused :: [SourceRef] -> Vector LicenseGraphNode -> LicenseGraphM LicenseGraph

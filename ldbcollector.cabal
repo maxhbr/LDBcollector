@@ -67,6 +67,7 @@ library
     , blaze-html
     , blaze-markup
     , bytestring
+    , cache
     , cassava
     , containers
     , cryptohash-md5
@@ -76,6 +77,7 @@ library
     , file-embed
     , filepath
     , graphviz
+    , hashable
     , hslogger
     , libyaml
     , mtl
@@ -111,6 +113,7 @@ executable ldbcollector-exe
     , blaze-html
     , blaze-markup
     , bytestring
+    , cache
     , cassava
     , containers
     , cryptohash-md5
@@ -120,6 +123,7 @@ executable ldbcollector-exe
     , file-embed
     , filepath
     , graphviz
+    , hashable
     , hslogger
     , ldbcollector
     , libyaml
@@ -160,6 +164,7 @@ test-suite ldbcollector-test
     , blaze-html
     , blaze-markup
     , bytestring
+    , cache
     , cassava
     , containers
     , cryptohash-md5
@@ -169,6 +174,7 @@ test-suite ldbcollector-test
     , file-embed
     , filepath
     , graphviz
+    , hashable
     , hslogger
     , hspec
     , ldbcollector

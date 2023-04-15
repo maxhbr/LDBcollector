@@ -30,6 +30,8 @@ import           Data.FileEmbed                (embedFile)
 import qualified Network.Wai.Handler.Warp      as Warp
 import           Web.Scotty                    as S
 import Text.Blaze.Html5.Attributes (onratechange)
+import Data.Hashable (Hashable, hash)
+import qualified Data.Cache as C
 
 
 class ParamMapC a where
@@ -41,6 +43,7 @@ class ParamMapC a where
 newtype ParamMap = ParamMap {
         unParamMap :: Map.Map T.Text T.Text
     }
+    deriving (Eq,Hashable)
 excludeStmts :: T.Text
 excludeStmts = "excludeStmts"
 instance ParamMapC ParamMap where
@@ -165,6 +168,11 @@ htmlHeader licenseGraph paramMap = do
                                                                                                              else mempty)
                     H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
             H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
+        H.div H.! A.class_ "tab" $ do
+            H.button H.! A.class_ "tablinks active" H.! A.onclick "openTab(event, 'content-graph')" $
+                "Graph"
+            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-text')" $
+                "Text"
 
 dotPage :: [S.Param] -> LicenseGraph -> IO H.Html
 dotPage params licenseGraph = do
@@ -183,15 +191,8 @@ dotPage params licenseGraph = do
                 H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
             H.body $ do
                 htmlHeader licenseGraph paramMap
-                H.div H.! A.id "content" $ pure ()
-                H.pre H.! A.id "graph.dot" H.! A.style "display:none;" $ 
-                    H.toMarkup digraphDot
-                H.script $ do
-                    "d3.select(\"#content\")"
-                    "    .graphviz()"
-                    "    .engine('fdp')"
-                    "    .fit(true)"
-                    "    .renderDot(document.getElementById('graph.dot').textContent);"
+                H.div H.! A.class_ "content" $ pure ()
+                dotSvgMarkup digraph
 
 svgPage :: [S.Param] -> LicenseGraph -> IO T.Text
 svgPage params licenseGraph = do
@@ -199,12 +200,25 @@ svgPage params licenseGraph = do
     (_,_,digraph,_,_) <- computeSubgraph licenseGraph paramMap
     rederDotToText "fdp" digraph
 
+dotSvgMarkup :: Digraph -> H.Markup
+dotSvgMarkup digraph = let
+        digraphDot = digraphToText digraph
+    in do
+        H.pre H.! A.id "graph.dot" H.! A.style "display:none;" $ 
+            H.toMarkup digraphDot
+        H.script $ do
+            "d3.select(\".content\")"
+            "    .graphviz()"
+            "    .engine('fdp')"
+            "    .fit(true)"
+            "    .renderDot(document.getElementById('graph.dot').textContent);"
+
 mainPage :: [S.Param] -> LicenseGraph -> IO H.Html
 mainPage params licenseGraph = do
 
     paramMap <- evaluateParams params
     (subgraph,lnsubgraph,digraph,sameNames,otherNames) <- computeSubgraph licenseGraph paramMap
-    svg <- rederDotToText "fdp" digraph
+    -- svg <- rederDotToText "fdp" digraph
 
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
@@ -216,20 +230,16 @@ mainPage params licenseGraph = do
                 H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
                 H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
                 H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
-                H.script H.! A.src "https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" $
-                    pure ()
+                -- H.script H.! A.src "https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" $ pure ()
+                H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
+                H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
+                H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
             H.body $ do
                 htmlHeader licenseGraph paramMap
-                -- ########################################################
-                -- ##  svg  ###############################################
-                -- ########################################################
-                H.input H.! A.type_ "checkbox" H.! A.id "svgCheckbox"
-                H.div H.! A.id "svgGraph" $ do
-                    H.preEscapedToMarkup svg
-                -- ########################################################
-                -- ##  all  ###############################################
-                -- ########################################################
-                H.div H.! A.id "content" $ do
+                H.div H.! A.class_ "content active" H.! A.id "content-graph" H.! A.style "display: block;" $ do
+                    dotSvgMarkup digraph
+                    -- H.preEscapedToMarkup svg
+                H.div H.! A.class_ "content" H.! A.id "content-text" $ do
                     H.h2 "LicenseNames"
                     H.ul $ mapM_ (H.li . fromString . show) sameNames
                     H.h3 "LicenseName Hints"
@@ -259,13 +269,22 @@ serve = do
 
     infoLog "Start server on port 3000..."
     lift $ Temp.withSystemTempDirectory "ldbcollector-haskell" $ \tmpdir -> do
+        cache <- C.newCache Nothing
         putStrLn $ "tmpdir=" ++ tmpdir
         scottyOpts myOptions $ do
             get "/styles.css" $ raw (BL.fromStrict stylesheet)
             get "/script.js" $ raw (BL.fromStrict scriptJs)
             get "/" $ do
                 params <- S.params
-                page <- liftAndCatchIO $ mainPage params licenseGraph
+                page <- liftAndCatchIO $ do
+                    paramMap <- evaluateParams params
+                    pageFromCache <- C.lookup cache (hash paramMap)
+                    case pageFromCache of
+                        Just page -> return page
+                        _ -> do
+                            page <- mainPage params licenseGraph
+                            C.insert cache (hash paramMap) page
+                            return page
                 html (BT.renderHtml page)
             get "/dot/" $ do
                 params <- S.params

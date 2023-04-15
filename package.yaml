@@ -36,6 +36,8 @@ dependencies:
 - unordered-containers
 - fgl
 - mtl
+- hashable
+- cache
 # System
 - directory
 - filepath

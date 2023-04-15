@@ -2,45 +2,45 @@ body {
     overflow: hidden;
 }
 
-#svgGraph {
-    position: relative;
-    width: 300px;
-    max-height: 300px;
-    margin: 20px;
-}
-#svgGraph svg {
-    background-color: white;
-    width: 100%;
-    max-height: 300px;
-}
-input#svgCheckbox[type="checkbox"] {
-    position: relative;
-    z-index: 10000;
-}
-input#svgCheckbox[type="checkbox"] ~ #svgGraph {
-    z-index: 10;
-}
-input#svgCheckbox[type="checkbox"]:checked ~ #svgGraph {
-    z-index: 1000;
-}
-input#svgCheckbox[type="checkbox"]:checked ~ #svgGraph svg {
-    box-shadow: 0px 0px 20px  gray;
-}
-
-header, #content {
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 10px 5px 20px  gray;
-    padding: 10px;
-}
-
 header {
+    box-shadow: 0px 0px 20px  gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
     width: 300px;
-    display: table;
+    display: block;
     padding: 20px;
     z-index: 9999;
 }
 
-#content {
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.content {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -48,6 +48,7 @@ header {
     left: 340px;
     overflow: scroll;
     z-index: 100;
+    padding: 20px;
 }
 /* #content ~ input[type="checkbox"] {
     position: fixed;
@@ -61,3 +62,15 @@ header {
 #content input[type="checkbox"]:checked ~ div {
     display:block;
 } */
+
+#svgGraph {
+    position: relative;
+    width: 300px;
+    max-height: 300px;
+    margin: 20px;
+}
+#svgGraph svg {
+    background-color: white;
+    width: 100%;
+    max-height: 300px;
+}
