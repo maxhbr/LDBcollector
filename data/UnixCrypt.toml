@@ -1,9 +1,6 @@
 [license]
 expression = "UnixCrypt"
 status = [ "allowed" ]
-url = '''
-https://fedoraproject.org/wiki/Licensing:MIT#UnixCrypt_Variant
-'''
 
 [fedora]
 legacy-name = [ "MIT:UnixCrypt Variant" ]
