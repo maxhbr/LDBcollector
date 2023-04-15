@@ -1,0 +1,15 @@
+[license]
+expression = "UnixCrypt"
+status = [ "allowed" ]
+url = '''
+https://fedoraproject.org/wiki/Licensing:MIT#UnixCrypt_Variant
+'''
+
+[fedora]
+legacy-name = [ "MIT:UnixCrypt Variant" ]
+legacy-abbreviation = [ "MIT" ]
+notes = '''
+This MIT variant is worded in a slightly confusing manner and does not include
+a warranty disclaimer. While this is technically free (and GPL-compatible), we
+do not recommend its use. 
+'''
