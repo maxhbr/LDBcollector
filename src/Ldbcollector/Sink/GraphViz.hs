@@ -39,6 +39,9 @@ type Digraph =GV.DotGraph G.Node
 factIdToLabelValue :: FactId -> GV.Label
 factIdToLabelValue (FactId ty hash) = GV.toLabelValue (ty ++ "\n" ++ hash)
 
+textToMultilines :: Text -> GVH.Text
+textToMultilines =  intersperse (GVH.Newline []) . map GVH.Str . LT.lines . LT.fromStrict . TW.wrapText TW.defaultWrapSettings 80
+
 licenseStatementToLabelValue :: LicenseStatement -> GV.Label
 licenseStatementToLabelValue (LicenseStatement stmt) = GV.toLabelValue stmt
 licenseStatementToLabelValue (LicenseUrl url) = GV.toLabelValue url
@@ -72,7 +75,7 @@ licenseStatementToLabelValue (LicenseRating ns rating) = let
                 NegativeLicenseRating _ _ -> GVH.DarkRed
                 NeutralLicenseRating _ _ -> GVH.Black
                 PositiveLicenseRating _ _ -> GVH.ForestGreen
-            description = maybe [] ((\h -> [GVH.Newline [], h]) . GVH.Str . LT.fromStrict . TW.wrapText TW.defaultWrapSettings 80 ) $
+            description = maybe [] ((GVH.Newline []:) . textToMultilines) $
                 case rating of
                     NegativeLicenseRating _ (Just desc) -> Just desc
                     NeutralLicenseRating _ (Just desc)  -> Just desc

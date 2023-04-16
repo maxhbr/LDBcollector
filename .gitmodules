@@ -78,3 +78,6 @@
 [submodule "data/google-licenseclassifier"]
 	path = data/google-licenseclassifier
 	url = https://github.com/google/licenseclassifier
+[submodule "data/telekom-oslic"]
+	path = data/telekom-oslic
+	url = https://github.com/telekom/oslic

@@ -173,6 +173,8 @@ htmlHeader licenseGraph paramMap = do
                 "Graph"
             H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-text')" $
                 "Text"
+            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-raw')" $
+                "Raw"
 
 dotPage :: [S.Param] -> LicenseGraph -> IO H.Html
 dotPage params licenseGraph = do
@@ -242,7 +244,10 @@ mainPage paramMap licenseGraph = do
                     H.ul $ mapM_ (H.li . fromString . show) sameNames
                     H.h3 "LicenseName Hints"
                     H.ul $ mapM_ (H.li . fromString . show) otherNames
-                    H.h2 "Facts"
+                    H.h2 "LicenseNameSubgraph"
+                    H.pre $
+                        H.toMarkup (G.prettify lnsubgraph)
+                H.div H.! A.class_ "content" H.! A.id "content-raw" $ do
                     H.ul $ mapM_ (\fact -> H.li $ do
                         let factId@(FactId ty hash) = getFactId fact
                         H.h3 $ do
@@ -253,9 +258,6 @@ mainPage paramMap licenseGraph = do
                         --                     onerror _ _ = Just '_'
                         --                 in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))
                         ) facts
-                    H.h2 "LicenseNameSubgraph"
-                    H.pre $
-                        H.toMarkup (G.prettify lnsubgraph)
                 H.script H.! A.src "/script.js" $
                     pure ()
                 H.script "main();"
@@ -284,23 +286,23 @@ serve = do
                             C.insert cache (hash paramMap) page
                             return page
                 html (BT.renderHtml page)
-            get "/dot/" $ do
-                params <- S.params
-                page <- liftAndCatchIO $ dotPage params licenseGraph
-                html (BT.renderHtml page)
-            get "/svg/" $ do
-                params <- S.params
-                svg <- liftAndCatchIO $ svgPage params licenseGraph
-                setHeader "Content-Type" "image/svg+xml"
-                text svg
             get "/fact/:facttype/:facthash" $ do
                 facttype <- fromString <$> param "facttype"
                 facthash <- fromString <$> param "facthash"
                 page <- liftAndCatchIO $ printFacts (FactId facttype facthash) licenseGraph
                 html (BT.renderHtml page)
-
             get "/clusters" $ listPageAction clusters
-            -- get "/svg/:lic" $ do
-            --     lic <- fromString <$> param "lic"
-            --     svg <- liftAndCatchIO $ genSvg tmpdir lic licenseGraph
-            --     file svg
+            -- get "/dot/" $ do
+            --     params <- S.params
+            --     page <- liftAndCatchIO $ dotPage params licenseGraph
+            --     html (BT.renderHtml page)
+            -- get "/svg/" $ do
+            --     params <- S.params
+            --     svg <- liftAndCatchIO $ svgPage params licenseGraph
+            --     setHeader "Content-Type" "image/svg+xml"
+            --     text svg
+
+            -- -- get "/svg/:lic" $ do
+            -- --     lic <- fromString <$> param "lic"
+            -- --     svg <- liftAndCatchIO $ genSvg tmpdir lic licenseGraph
+            -- --     file svg
