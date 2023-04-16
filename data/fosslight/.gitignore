@@ -1,2 +1,1 @@
-docker-entrypoint-initdb.d
 fosslight.sqlite.db
