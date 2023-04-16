@@ -75,19 +75,6 @@ evaluateParams  params = do
 myOptions :: S.Options
 myOptions = S.Options 1 (Warp.setPort 3000 (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
 
-genSvg :: FilePath -> LicenseName -> LicenseGraph -> IO FilePath
-genSvg tmpdir lic licenseGraph = do
-    let dot = tmpdir </> show lic <.> "dot"
-    let svg = dot <.> "Svg"
-    svgExists <- doesFileExist svg
-    unless svgExists $ do
-        _ <- runLicenseGraphM' licenseGraph $
-            focus [] ((V.singleton . LGName) lic) $
-                \(needleNames, sameNames, otherNames, _statements) -> do
-                    writeGraphViz needleNames sameNames otherNames dot
-        return ()
-    return svg
-
 stylesheet :: Data.ByteString.ByteString
 stylesheet = $(embedFile "src/assets/styles.css")
 
@@ -154,6 +141,10 @@ htmlHeader licenseGraph paramMap = do
     let licRaw = getLicRaw paramMap
     H.header $ do
         H.h1 (H.toMarkup licRaw)
+        H.div H.! A.class_ "tab" $ do
+            H.button H.! A.class_ "tablinks active" H.! A.onclick "openTab(event, 'content-graph')" $ "Graph"
+            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-text')" $ "Text"
+            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-raw')" $ "Raw"
         H.form H.! A.action "" $ do
             H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
             H.datalist H.! A.id "licenses" $
@@ -174,13 +165,6 @@ htmlHeader licenseGraph paramMap = do
                                                                                                              else mempty)
                     H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
             H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
-        H.div H.! A.class_ "tab" $ do
-            H.button H.! A.class_ "tablinks active" H.! A.onclick "openTab(event, 'content-graph')" $
-                "Graph"
-            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-text')" $
-                "Text"
-            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-raw')" $
-                "Raw"
 
 dotPage :: [S.Param] -> LicenseGraph -> IO H.Html
 dotPage params licenseGraph = do
@@ -240,6 +224,8 @@ mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,sameNames,otherNames
                     H.ul $ mapM_ (H.li . fromString . show) sameNames
                     H.h3 "LicenseName Hints"
                     H.ul $ mapM_ (H.li . fromString . show) otherNames
+                    H.h3 "License Ratings"
+                    H.ul $ mapM_ (H.li . H.toMarkup) (concatMap getImpliedLicenseRatings facts)
                     H.h2 "LicenseNameSubgraph"
                     H.pre $
                         H.toMarkup (G.prettify lnsubgraph)

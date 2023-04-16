@@ -14,6 +14,10 @@ header {
     z-index: 9999;
 }
 
+header form {
+    padding: 20px;
+}
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;

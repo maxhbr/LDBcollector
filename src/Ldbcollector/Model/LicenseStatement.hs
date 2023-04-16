@@ -7,6 +7,7 @@ import           MyPrelude
 import           Ldbcollector.Model.LicenseName
 import qualified Text.Blaze                          as H
 import qualified Text.Blaze.Html5                    as H
+import qualified Text.Blaze.Html5.Attributes         as A
 
 data PCLR
     = PCLR
@@ -94,12 +95,18 @@ instance H.ToMarkup LicenseRating where
     toMarkup r = let
             ns = getRatingNamespace r
             rating = unLicenseRating r
+            color = case r of
+                PositiveLicenseRating {} -> "color: green;"
+                NeutralLicenseRating {}  -> ""
+                NegativeLicenseRating {} -> "color: red;"
         in do
             H.toMarkup ns
             ": "
-            H.b (H.toMarkup rating)
+            H.b H.! A.style color $ H.toMarkup rating
             case getRatingDescription r of 
-                (Just description) -> pure ()
+                (Just description) -> do
+                    H.br
+                    H.toMarkup description
                 _ -> pure ()
 
 data LicenseStatement where
