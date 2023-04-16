@@ -7,6 +7,7 @@ import           Test.QuickCheck
 import qualified Data.Graph.Inductive.Graph as G
 import qualified Data.Map                   as Map
 import qualified Data.Vector                as V
+import qualified Control.Monad.State        as MTL
 
 import           Ldbcollector.Model
 import           Ldbcollector.Source
@@ -23,16 +24,17 @@ testGraph lg = do
 
 sourceSpec = do
     describe "Sources" $ do
-        (_, lg) <- runIO $ runLicenseGraphM applySources
+        (_, lg) <- runIO . runLicenseGraphM $ do 
+            applySources mempty
+            MTL.get
         testGraph lg
 
         describe "focused" $ do
             (_, focusedLg) <- runIO $ runLicenseGraphM (do
-                applySources
-                getFocused ((V.fromList . map (LGName . newLN))
-                        [ "BSD-3-Clause"
-                        , "MIT"
-                        , "GPL-3.0-only"
-                        , "GPL-3.0-or-later"
-                        ]))
+                applySources mempty
+                getFocused [] ((V.fromList . map (LGName . newLN)) [ "BSD-3-Clause"
+                                                                   , "MIT"
+                                                                   , "GPL-3.0-only"
+                                                                   , "GPL-3.0-or-later"
+                                                                   ]))
             testGraph focusedLg
