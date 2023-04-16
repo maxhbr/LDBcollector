@@ -202,12 +202,6 @@ dotPage params licenseGraph = do
                 H.div H.! A.class_ "content" $ pure ()
                 dotSvgMarkup digraph
 
-svgPage :: [S.Param] -> LicenseGraph -> IO T.Text
-svgPage params licenseGraph = do
-    paramMap <- evaluateParams params
-    (_,_,digraph,_,_) <- computeSubgraph licenseGraph paramMap
-    rederDotToText "fdp" digraph
-
 dotSvgMarkup :: Digraph -> H.Markup
 dotSvgMarkup digraph = let
         digraphDot = digraphToText digraph
@@ -221,10 +215,8 @@ dotSvgMarkup digraph = let
             "    .fit(true)"
             "    .renderDot(document.getElementById('graph.dot').textContent);"
 
-mainPage :: ParamMap -> LicenseGraph -> IO H.Html
-mainPage paramMap licenseGraph = do
-    (subgraph,lnsubgraph,digraph,sameNames,otherNames) <- computeSubgraph licenseGraph paramMap
-    -- svg <- rederDotToText "fdp" digraph
+mainPage :: ParamMap -> LicenseGraph -> (LicenseGraphType, LicenseNameGraphType, Digraph, [LicenseName], [LicenseName]) -> IO H.Html
+mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,sameNames,otherNames) = do
 
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
@@ -272,6 +264,14 @@ serve = do
     infoLog "Start server on port 3000..."
     lift $ Temp.withSystemTempDirectory "ldbcollector-haskell" $ \tmpdir -> do
         cache <- C.newCache Nothing
+        let init params = do
+                paramMap <- evaluateParams params
+                C.lookup cache (hash paramMap) >>= \case
+                    Just tuple -> return (paramMap, tuple)
+                    _ -> do
+                        tuple <- computeSubgraph licenseGraph paramMap
+                        C.insert cache (hash paramMap) tuple
+                        return (paramMap, tuple)
         putStrLn $ "tmpdir=" ++ tmpdir
         scottyOpts myOptions $ do
             get "/styles.css" $ raw (BL.fromStrict stylesheet)
@@ -279,32 +279,25 @@ serve = do
             get "/" $ do
                 params <- S.params
                 page <- liftAndCatchIO $ do
-                    paramMap <- evaluateParams params
-                    pageFromCache <- C.lookup cache (hash paramMap)
-                    case pageFromCache of
-                        Just page -> return page
-                        _ -> do
-                            page <- mainPage paramMap licenseGraph
-                            C.insert cache (hash paramMap) page
-                            return page
+                    (paramMap, tuple) <- init params
+                    mainPage paramMap licenseGraph tuple
                 html (BT.renderHtml page)
+            get "/dot" $ do
+                params <- S.params
+                dot <- liftAndCatchIO $ do
+                    (paramMap, (subgraph,lnsubgraph,digraph,sameNames,otherNames)) <- init params
+                    return (digraphToText digraph)
+                text dot
+            get "/svg" $ do
+                params <- S.params
+                svg <- liftAndCatchIO $ do
+                    (paramMap, (subgraph,lnsubgraph,digraph,sameNames,otherNames)) <- init params
+                    rederDotToText "fdp" digraph
+                setHeader "Content-Type" "image/svg+xml"
+                text svg
             get "/fact/:facttype/:facthash" $ do
                 facttype <- fromString <$> param "facttype"
                 facthash <- fromString <$> param "facthash"
                 page <- liftAndCatchIO $ printFacts (FactId facttype facthash) licenseGraph
                 html (BT.renderHtml page)
             get "/clusters" $ listPageAction clusters
-            -- get "/dot/" $ do
-            --     params <- S.params
-            --     page <- liftAndCatchIO $ dotPage params licenseGraph
-            --     html (BT.renderHtml page)
-            -- get "/svg/" $ do
-            --     params <- S.params
-            --     svg <- liftAndCatchIO $ svgPage params licenseGraph
-            --     setHeader "Content-Type" "image/svg+xml"
-            --     text svg
-
-            -- -- get "/svg/:lic" $ do
-            -- --     lic <- fromString <$> param "lic"
-            -- --     svg <- liftAndCatchIO $ genSvg tmpdir lic licenseGraph
-            -- --     file svg
