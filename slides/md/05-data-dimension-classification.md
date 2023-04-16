@@ -45,7 +45,7 @@
 
 
 ## Copyleft vs Permissive
-**Google License Policy** uses the following categories:
+**Google License Policy** uses the following categories for use in their policy:
 * The 'reciprocal' licenses
   * e.g. EPL-2.0
 * The 'notice' licenses

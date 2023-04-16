@@ -35,10 +35,10 @@ instance LicenseFactC FsfWkingData where
         LN id `AlternativeLNs` (LN name : concatMap (\(scope, lns) -> map (LN . setNS scope) lns) (Map.assocs identifiers))
     getImpliedStmts entry = map LicenseUrl (_uris entry)
         ++ map (\case 
-                   "libre" -> LicenseRating "FSF" (PositiveLicenseRating "libre" Nothing)
-                   "gpl-2-compatible" -> LicenseRating "FSF" (NeutralLicenseRating "gpl-2-compatible" Nothing)
-                   "gpl-3-compatible" -> LicenseRating "FSF" (NeutralLicenseRating "gpl-3-compatible" Nothing)
-                   "non-free" -> LicenseRating "FSF" (NegativeLicenseRating "non-free" Nothing)
+                   "libre"            -> LicenseRating (PositiveLicenseRating "FSF" "libre" Nothing)
+                   "gpl-2-compatible" -> LicenseRating (NeutralLicenseRating  "FSF" "gpl-2-compatible" Nothing)
+                   "gpl-3-compatible" -> LicenseRating (NeutralLicenseRating  "FSF" "gpl-3-compatible" Nothing)
+                   "non-free"         -> LicenseRating (NegativeLicenseRating "FSF" "non-free" Nothing)
                    tag -> stmt tag) (_tags entry)
 
 parseFsfJSON :: FilePath -> IO FsfWkingData

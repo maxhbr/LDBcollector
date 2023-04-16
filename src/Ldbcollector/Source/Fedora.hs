@@ -58,11 +58,11 @@ instance LicenseFactC FedoraEntry where
     getApplicableLNs _ = undefined -- should not happen
     getImpliedStmts (FedoraEntry _ (FedoraEntryLicense { _status = status , _urls = urls , _text = text }) (FedoraEntryFedora {_notes = notes})) = let
             subStatementsFromStatus [] = []
-            subStatementsFromStatus (a@"allowed":stmts) = LicenseRating "Fedora" (PositiveLicenseRating a Nothing): subStatementsFromStatus stmts
-            subStatementsFromStatus (a@"allowed-fonts":stmts) = LicenseRating "Fedora" (NeutralLicenseRating a Nothing): subStatementsFromStatus stmts
-            subStatementsFromStatus (a@"allowed-content":stmts) = LicenseRating "Fedora" (NeutralLicenseRating a Nothing): subStatementsFromStatus stmts
-            subStatementsFromStatus (a@"allowed-documentation":stmts) = LicenseRating "Fedora" (NeutralLicenseRating a Nothing): subStatementsFromStatus stmts
-            subStatementsFromStatus (a@"not-allowed":stmts) = LicenseRating "Fedora" (NegativeLicenseRating a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed":stmts)               = LicenseRating (PositiveLicenseRating "Fedora" a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-fonts":stmts)         = LicenseRating (NeutralLicenseRating  "Fedora" a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-content":stmts)       = LicenseRating (NeutralLicenseRating  "Fedora" a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-documentation":stmts) = LicenseRating (NeutralLicenseRating  "Fedora" a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"not-allowed":stmts)           = LicenseRating (NegativeLicenseRating "Fedora" a Nothing): subStatementsFromStatus stmts
             subStatementsFromStatus (_:stmts) = subStatementsFromStatus stmts
         in
         [ stmt (show status) `SubStatements` subStatementsFromStatus status

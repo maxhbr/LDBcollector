@@ -68,18 +68,22 @@ licenseStatementToLabelValue (LicenseCompatibilities compatibilities) = let
                           ]
         in GV.HtmlLabel . GVH.Table $ GVH.HTable Nothing [] (map mkLine compatibilities)
 #else
-licenseStatementToLabelValue (LicenseCompatibilities compatibilities) = GV.toLabelValue ("$COMPATIBILITIES" :: Text)
+licenseStatementToLabelValue (LicenseCompatibilities _) = GV.toLabelValue ("$COMPATIBILITIES" :: Text)
 #endif
-licenseStatementToLabelValue (LicenseRating ns rating) = let
+licenseStatementToLabelValue (LicenseRating rating) = let
             color = GVH.Color . GVH.SVGColor $ case rating of
-                NegativeLicenseRating _ _ -> GVH.DarkRed
-                NeutralLicenseRating _ _ -> GVH.Black
-                PositiveLicenseRating _ _ -> GVH.ForestGreen
+                NegativeLicenseRating {} -> GVH.DarkRed
+                NeutralLicenseRating  {} -> GVH.Black
+                PositiveLicenseRating {} -> GVH.ForestGreen
+            ns = case rating of
+                    NegativeLicenseRating ns _ _ -> ns
+                    NeutralLicenseRating  ns _ _ -> ns
+                    PositiveLicenseRating ns _ _ -> ns
             description = maybe [] ((GVH.Newline []:) . textToMultilines) $
                 case rating of
-                    NegativeLicenseRating _ (Just desc) -> Just desc
-                    NeutralLicenseRating _ (Just desc)  -> Just desc
-                    PositiveLicenseRating _ (Just desc) -> Just desc
+                    NegativeLicenseRating _ _ (Just desc) -> Just desc
+                    NeutralLicenseRating  _ _ (Just desc) -> Just desc
+                    PositiveLicenseRating _ _ (Just desc) -> Just desc
                     _ -> Nothing
         in GV.HtmlLabel . GVH.Text $ [ GVH.Str (fromString ns)
                                      , GVH.Str ": "

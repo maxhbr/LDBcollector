@@ -19,8 +19,8 @@ instance LicenseFactC EclipseOrgLegalLicense where
     getType _ = "EclipseLicense"
     getApplicableLNs (ApprovedLicense shortName longName) = LN shortName `AlternativeLNs` [LN longName]
     getApplicableLNs (RestrictedLicense shortName longName) = LN shortName `AlternativeLNs` [LN longName]
-    getImpliedStmts a@(ApprovedLicense _ _)   = [LicenseRating (getType a) (PositiveLicenseRating "Approved" Nothing)]
-    getImpliedStmts a@(RestrictedLicense _ _) = [LicenseRating (getType a) (NegativeLicenseRating "Restricted" Nothing)]
+    getImpliedStmts a@(ApprovedLicense _ _)   = [LicenseRating (PositiveLicenseRating (getType a) "Approved" Nothing)]
+    getImpliedStmts a@(RestrictedLicense _ _) = [LicenseRating (NegativeLicenseRating (getType a) "Restricted" Nothing)]
 
 
 data EclipseOrgLegalLicensesJson

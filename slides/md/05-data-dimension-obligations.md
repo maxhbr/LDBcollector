@@ -1,6 +1,10 @@
 # License Obligations and Rules
 
 
+## Some obligations are implied by classification
+e.g. Copyleft implies usually some expected obligations
+
+
 ## permissions / conditions / limitations
 * [choosealicense.com](https://choosealicense.com/) defines
   * permissions / conditions / limitations
@@ -14,7 +18,7 @@
 <!-- .slide: data-background-iframe="https://www.tldrlegal.com/license/mit-license" data-background-interactive="true" data-preload="false" -->
 
 
-## Rules
+## Rule based description of obligations
 * OSADL writes [License Checklists](https://www.osadl.org/OSADL-Open-Source-License-Checklists.oss-compliance-lists.0.html)
 * FINOS [Open Source License Compliance Handbook](https://github.com/finos/OSLC-handbook)
 * Hitachi [OSS License Open Data](https://github.com/Hitachi/open-license)
@@ -38,7 +42,6 @@ USE CASE Binary delivery
 
 ## FINOS [Open Source License Compliance Handbook](https://github.com/finos/OSLC-handbook)
 The OSLC-handbook defines tables with conditions per usecase:
-
 # GNU Affero General Public License 3.0
 <table>
 <colgroup>
@@ -110,3 +113,18 @@ The OSLC-handbook defines tables with conditions per usecase:
 </tr>
 </tbody>
 </table>
+
+
+## Hitachi [OSS License Open Data](https://github.com/Hitachi/open-license)
+### Example BSD-3-Clause (translated via DeepL)
+* **Action:** Use the obtained source code without modification:
+  Use the fetched code as it is.
+* **Action:** Modify the obtained source code.
+* **Action:** Using Modified Source Code
+* **Action:** Distribute the obtained source code without modification
+  * **Obligation:** Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+* **Action:** Distribution of Modified Source Code
+  * **Obligation:** Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+* **Action:** Use the name of the owner or contributor to promote or sell the derived product:
+  * **Requisite:** Get special permission in writing.
+* ...

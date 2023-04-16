@@ -25,6 +25,7 @@ import qualified Data.Vector                         as V
 import           Ldbcollector.Model.LicenseName
 import           Ldbcollector.Model.LicenseStatement
 import qualified Text.Blaze                          as H
+import qualified Text.Blaze.Html5                    as H
 
 newtype SourceRef = Source String
    deriving (Eq, Show, Ord)
@@ -60,6 +61,27 @@ class (Eq a) => LicenseFactC a where
     getImpliedStmts _ = []
     toMarkup :: a -> Markup
     toMarkup _ = mempty
+    {-
+     - helper functions
+     -}
+    getMainLicenseName :: a -> LicenseName
+    getMainLicenseName = let
+            getMainLicenseName' (LN ln) = ln
+            getMainLicenseName' (AlternativeLNs aln _) = getMainLicenseName' aln
+            getMainLicenseName' (ImpreciseLNs aln _) = getMainLicenseName' aln
+        in getMainLicenseName' . getApplicableLNs
+    getLicenseNames :: a -> [LicenseName]
+    getLicenseNames = let
+            getLicenseNames' (LN ln) = [ln]
+            getLicenseNames' (AlternativeLNs aln altlns) = getLicenseNames' aln ++ concatMap getLicenseNames' altlns
+            getLicenseNames' (ImpreciseLNs aln _) = getLicenseNames' aln
+        in getLicenseNames' . getApplicableLNs
+    getImpliedLicenseRatings :: a -> [LicenseRating]
+    getImpliedLicenseRatings = let 
+            filterForRatings [] = []
+            filterForRatings (LicenseRating r: stmts) = r : filterForRatings stmts
+            filterForRatings (_:stmts) = filterForRatings stmts
+        in filterForRatings . getImpliedStmts
 
 data LicenseFact where
     LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
@@ -93,9 +115,15 @@ instance Ord LicenseFact where
         in if t1 == t2
            then toJSON wv1 <= toJSON wv2
            else t1 <= t2
+
 instance LicenseFactC LicenseFact where
     getType (LicenseFact _ a) = getType a
     getFactId (LicenseFact _ a) = getFactId a
     getApplicableLNs (LicenseFact _ a) = getApplicableLNs a
     getImpliedStmts (LicenseFact _ a) = getImpliedStmts a
-    toMarkup (LicenseFact _ a) = toMarkup a
+    toMarkup (LicenseFact _ a) = do
+        toMarkup a
+        let ratings = getImpliedLicenseRatings a
+        unless (null ratings) $ do
+            H.h3 "ratings"
+            H.ul $ mapM_ (H.li . H.toMarkup) ratings

@@ -5,6 +5,8 @@ module Ldbcollector.Model.LicenseStatement
 import           MyPrelude
 
 import           Ldbcollector.Model.LicenseName
+import qualified Text.Blaze                          as H
+import qualified Text.Blaze.Html5                    as H
 
 data PCLR
     = PCLR
@@ -70,20 +72,40 @@ instance ToLicenseType String where
     toLicenseType = fromString
 
 data LicenseRating
-    = PositiveLicenseRating Text (Maybe Text)
-    | NeutralLicenseRating Text (Maybe Text)
-    | NegativeLicenseRating Text (Maybe Text)
+    = PositiveLicenseRating String Text (Maybe Text)
+    | NeutralLicenseRating String Text (Maybe Text)
+    | NegativeLicenseRating String Text (Maybe Text)
     deriving (Eq, Show, Ord, Generic)
 instance ToJSON LicenseRating
+getRatingNamespace :: LicenseRating -> String
+getRatingNamespace (PositiveLicenseRating ns _ _) = ns
+getRatingNamespace (NeutralLicenseRating  ns _ _) = ns
+getRatingNamespace (NegativeLicenseRating ns _ _) = ns
 unLicenseRating :: LicenseRating -> Text
-unLicenseRating (PositiveLicenseRating r _) = r
-unLicenseRating (NeutralLicenseRating  r _) = r
-unLicenseRating (NegativeLicenseRating r _) = r
+unLicenseRating (PositiveLicenseRating _ r _) = r
+unLicenseRating (NeutralLicenseRating  _ r _) = r
+unLicenseRating (NegativeLicenseRating _ r _) = r
+getRatingDescription :: LicenseRating -> Maybe Text
+getRatingDescription (PositiveLicenseRating _ _ (Just desc)) = Just desc
+getRatingDescription (NeutralLicenseRating  _ _ (Just desc)) = Just desc
+getRatingDescription (NegativeLicenseRating _ _ (Just desc)) = Just desc
+getRatingDescription _                                       = Nothing
+instance H.ToMarkup LicenseRating where
+    toMarkup r = let
+            ns = getRatingNamespace r
+            rating = unLicenseRating r
+        in do
+            H.toMarkup ns
+            ": "
+            H.b (H.toMarkup rating)
+            case getRatingDescription r of 
+                (Just description) -> pure ()
+                _ -> pure ()
 
 data LicenseStatement where
     LicenseStatement :: String -> LicenseStatement
     LicenseType :: LicenseType -> LicenseStatement
-    LicenseRating :: String -> LicenseRating -> LicenseStatement
+    LicenseRating :: LicenseRating -> LicenseStatement
     LicenseComment :: Text -> LicenseStatement
     LicenseUrl :: String -> LicenseStatement
     LicenseText :: Text -> LicenseStatement

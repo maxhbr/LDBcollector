@@ -44,7 +44,7 @@ applySources curation = do
     -- applySource (Metaeffekt "./data/org-metaeffekt-metaeffekt-universe/src/main/resources/ae-universe")
     -- applySource (Warpr "./data/warpr-licensedb/data")
     -- applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")
-    -- applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv")
+    applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv")
     -- applySource (EclipseOrgLegal "data/eclipse.org-legal-licenses.json")
     applySource (Curation curation)
     lift $ infoM rootLoggerName "# ... got sources"

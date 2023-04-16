@@ -94,6 +94,9 @@ stylesheet = $(embedFile "src/assets/styles.css")
 scriptJs :: Data.ByteString.ByteString
 scriptJs = $(embedFile "src/assets/script.js")
 
+lnToA :: LicenseName -> H.Markup
+lnToA ln = H.a H.! A.href ((H.toValue . ("/?license=" ++) . show) ln) $ H.toMarkup ln
+
 listPageAction :: [[LicenseName]] -> ActionM ()
 listPageAction clusters = do
     let page = H.html $ do
@@ -111,7 +114,10 @@ printFacts factId licenseGraph = do
     return . H.html $ do
         mapM_ (\(source,fact) -> do
             H.h1 (H.toMarkup (show source))
-            H.h2 (H.toMarkup (show (getFactId fact)))
+            H.h2 $ do
+                H.toMarkup (show (getFactId fact))
+                " for "
+                lnToA (getMainLicenseName fact)
             toMarkup fact
             H.h3 "JSON"
             H.pre (H.toMarkup (let
@@ -230,7 +236,6 @@ mainPage paramMap licenseGraph = do
                 H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
                 H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
                 H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
-                -- H.script H.! A.src "https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js" $ pure ()
                 H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
                 H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
                 H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
@@ -238,7 +243,6 @@ mainPage paramMap licenseGraph = do
                 htmlHeader licenseGraph paramMap
                 H.div H.! A.class_ "content active" H.! A.id "content-graph" H.! A.style "display: block;" $ do
                     dotSvgMarkup digraph
-                    -- H.preEscapedToMarkup svg
                 H.div H.! A.class_ "content" H.! A.id "content-text" $ do
                     H.h2 "LicenseNames"
                     H.ul $ mapM_ (H.li . fromString . show) sameNames
@@ -252,11 +256,9 @@ mainPage paramMap licenseGraph = do
                         let factId@(FactId ty hash) = getFactId fact
                         H.h3 $ do
                             H.a H.! A.href (H.toValue $ "./fact" </> ty </> hash) $ H.toMarkup (show factId)
-                            -- ((H.toValue . ("./fact/"++)) n) $ H.toMarkup n) . show) cluster)) clusters
+                            " for "
+                            lnToA (getMainLicenseName fact)
                         toMarkup fact
-                        -- H.pre (H.toMarkup (let
-                        --                     onerror _ _ = Just '_'
-                        --                 in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))
                         ) facts
                 H.script H.! A.src "/script.js" $
                     pure ()
