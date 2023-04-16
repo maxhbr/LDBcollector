@@ -7,27 +7,29 @@ import           Ldbcollector.Model
 import           Ldbcollector.Source.BlueOak
 import           Ldbcollector.Source.Cavil
 import           Ldbcollector.Source.ChooseALicense
+import           Ldbcollector.Source.Curation as X
 import           Ldbcollector.Source.EclipseOrgLegal
-import           Ldbcollector.Source.Fedora
 import           Ldbcollector.Source.FOSSLight
-import           Ldbcollector.Source.Fossology
 import           Ldbcollector.Source.FSF
+import           Ldbcollector.Source.Fedora
+import           Ldbcollector.Source.Fossology
+import           Ldbcollector.Source.GoogleLicensePolicy
 import           Ldbcollector.Source.HitachiOpenLicense
 import           Ldbcollector.Source.Metaeffekt
 import           Ldbcollector.Source.OKFN
 import           Ldbcollector.Source.OSADL
 import           Ldbcollector.Source.OSI
 import           Ldbcollector.Source.OSLC
-import           Ldbcollector.Source.Scancode
 import           Ldbcollector.Source.SPDX
+import           Ldbcollector.Source.Scancode
 import           Ldbcollector.Source.Warpr
-import           Ldbcollector.Source.Curation as X
 
 applySources :: Vector CurationItem -> LicenseGraphM ()
 applySources curation = do
     lift $ infoM rootLoggerName "# get sources ..."
     applySource (SPDXData "./data/spdx-license-list-data/json/details/")
     applySource OSI
+    applySource (GoogleLicensePolicy "./data/google-licensecheck.license_type.go.json")
     applySource (FedoraLicenseData "./data/fedora-legal-fedora-license-data.jsons")
     applySource (BlueOakCouncilLicenseList "./data/blueoakcouncil/blue-oak-council-license-list.json")
     applySource (BlueOakCouncilCopyleftList "./data/blueoakcouncil/blue-oak-council-copyleft-list.json")

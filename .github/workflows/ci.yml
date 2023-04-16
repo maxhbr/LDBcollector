@@ -73,3 +73,9 @@ jobs:
       uses: docker/setup-buildx-action@v2
     - run: |
         ./docker/docker-build.sh
+        docker save maxhbr/ldbcollector:latest | gzip > ldbcollector_latest.tar.gz
+    - uses: actions/upload-artifact@v2
+      with:
+        name: dockerimage
+        path: ldbcollector_latest.tar.gz
+

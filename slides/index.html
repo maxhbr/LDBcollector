@@ -12,11 +12,38 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+        <style>
+.reveal .slides {
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+}
+
+.reveal .slides>section {
+  min-height: 90%;
+}
+
+.reveal .slides>section>section {
+  min-height: 100%;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+    text-transform: none;
+}
+        </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
                 <section data-markdown="md/00-start.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+
+                <section data-markdown="md/05-data-dimension-names.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+                <section data-markdown="md/05-data-dimension-text.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+                <section data-markdown="md/05-data-dimension-notice.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+                <section data-markdown="md/05-data-dimension-classification.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+                <section data-markdown="md/05-data-dimension-obligations.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+                <section data-markdown="md/05-data-dimension-compatibility.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+
                 <section data-markdown="md/10-source-spdx-license-list-data.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
                 <section data-markdown="md/10-source-tldrlegal.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
                 <section data-markdown="md/10-source-AmadeusITGroup-oscad2.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
@@ -44,6 +71,7 @@
                 <section data-markdown="md/10-source-update.blueoakcouncil.sh.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
                 <section data-markdown="md/10-source-warpr-licensedb.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
                 <section data-markdown="md/10-source-wking-fsf-api.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+
 			</div>
 		</div>
 
@@ -57,6 +85,9 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+                center: true,
+                width: 1920,
+                height: 1200,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]

@@ -41,7 +41,6 @@ $(deriveJSON defaultOptions{fieldLabelModifier = drop 1, constructorTagModifier 
 getUrls :: SPDXLicense -> [String]
 getUrls lic = map _url (_crossRef lic) ++ _seeAlso lic
 
-
 instance LicenseFactC SPDXLicense where
     getType _            = "SPDXLicense"
     getApplicableLNs lic = LN (_licenseId lic) `AlternativeLNs` [LN (_name lic)]

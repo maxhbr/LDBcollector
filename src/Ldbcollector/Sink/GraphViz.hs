@@ -68,11 +68,21 @@ licenseStatementToLabelValue (LicenseCompatibilities compatibilities) = let
 licenseStatementToLabelValue (LicenseCompatibilities compatibilities) = GV.toLabelValue ("$COMPATIBILITIES" :: Text)
 #endif
 licenseStatementToLabelValue (LicenseRating ns rating) = let
-           color = GVH.Color . GVH.SVGColor $ case rating of
-            NegativeLicenseRating _ _ -> GVH.DarkRed
-            NeutralLicenseRating _ _ -> GVH.Black
-            PositiveLicenseRating _ _ -> GVH.ForestGreen
-        in GV.HtmlLabel . GVH.Text $ [GVH.Str (fromString ns), GVH.Str ": ", GVH.Format GVH.Bold [GVH.Font [color] [(GVH.Str . LT.fromStrict . unLicenseRating) rating]]]
+            color = GVH.Color . GVH.SVGColor $ case rating of
+                NegativeLicenseRating _ _ -> GVH.DarkRed
+                NeutralLicenseRating _ _ -> GVH.Black
+                PositiveLicenseRating _ _ -> GVH.ForestGreen
+            description = maybe [] ((\h -> [GVH.Newline [], h]) . GVH.Str . LT.fromStrict . TW.wrapText TW.defaultWrapSettings 80 ) $
+                case rating of
+                    NegativeLicenseRating _ (Just desc) -> Just desc
+                    NeutralLicenseRating _ (Just desc)  -> Just desc
+                    PositiveLicenseRating _ (Just desc) -> Just desc
+                    _ -> Nothing
+        in GV.HtmlLabel . GVH.Text $ [ GVH.Str (fromString ns)
+                                     , GVH.Str ": "
+                                     , GVH.Format GVH.Bold [GVH.Font [color] [(GVH.Str . LT.fromStrict . unLicenseRating) rating]]
+
+            ] ++ description
 licenseStatementToLabelValue statement = (GV.StrLabel . LT.pack . show) statement
 
 simplifyEdgeLabel :: [LicenseGraphEdge] -> [LicenseGraphEdge]

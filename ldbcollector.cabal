@@ -43,6 +43,7 @@ library
       Ldbcollector.Source.FOSSLight
       Ldbcollector.Source.Fossology
       Ldbcollector.Source.FSF
+      Ldbcollector.Source.GoogleLicensePolicy
       Ldbcollector.Source.HitachiOpenLicense
       Ldbcollector.Source.Metaeffekt
       Ldbcollector.Source.OKFN

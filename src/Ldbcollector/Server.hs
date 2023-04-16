@@ -213,10 +213,8 @@ dotSvgMarkup digraph = let
             "    .fit(true)"
             "    .renderDot(document.getElementById('graph.dot').textContent);"
 
-mainPage :: [S.Param] -> LicenseGraph -> IO H.Html
-mainPage params licenseGraph = do
-
-    paramMap <- evaluateParams params
+mainPage :: ParamMap -> LicenseGraph -> IO H.Html
+mainPage paramMap licenseGraph = do
     (subgraph,lnsubgraph,digraph,sameNames,otherNames) <- computeSubgraph licenseGraph paramMap
     -- svg <- rederDotToText "fdp" digraph
 
@@ -282,7 +280,7 @@ serve = do
                     case pageFromCache of
                         Just page -> return page
                         _ -> do
-                            page <- mainPage params licenseGraph
+                            page <- mainPage paramMap licenseGraph
                             C.insert cache (hash paramMap) page
                             return page
                 html (BT.renderHtml page)

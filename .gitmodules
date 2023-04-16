@@ -72,3 +72,9 @@
 [submodule "data/hermine-project-hermine"]
 	path = data/hermine-project-hermine
 	url = https://gitlab.com/hermine-project/hermine.git
+[submodule "data/google-licensecheck"]
+	path = data/google-licensecheck
+	url = https://github.com/google/licensecheck
+[submodule "data/google-licenseclassifier"]
+	path = data/google-licenseclassifier
+	url = https://github.com/google/licenseclassifier

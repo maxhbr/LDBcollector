@@ -1,6 +1,6 @@
 # tl;drLegal
 
-* Homepage: https://www.tldrlegal.com/
+* url: https://www.tldrlegal.com/
 * raw data: https://tldrlegal.com/api/
 
 
