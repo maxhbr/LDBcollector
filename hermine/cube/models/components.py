@@ -74,7 +74,9 @@ class Usage(models.Model):
     addition_method = models.CharField(
         max_length=20, choices=ADDITION_CHOICES, blank=True
     )
-    addition_date = models.DateTimeField("date added", blank=True, null=True)
+    addition_date = models.DateTimeField(
+        "Last updated", blank=True, null=True, auto_now=True
+    )
     linking = models.CharField(max_length=20, choices=LINKING_CHOICES, blank=True)
     component_modified = models.CharField(
         max_length=20,

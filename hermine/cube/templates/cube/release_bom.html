@@ -52,7 +52,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <tr>
           <td><abbr title="{{ usage.project|truncatechars:50 }}">{{ usage.project|truncatechars:20 }}</abbr></td>
           <td>{{ usage.scope }}</td>
-          <td><a href="{% url 'cube:component_detail' usage.version.component.id %}">{{ usage.version }}</a></td>
+          <td><a href="{% url 'cube:component_detail' usage.version.component.id %}" >{{ usage.version }}</a></td>
           <td>{{ usage.version.corrected_license|default:usage.version.spdx_valid_license_expr }}</td>
           <td>{{ usage.license_expression }}</td>
           <td>
@@ -68,7 +68,10 @@ SPDX-License-Identifier: AGPL-3.0-only
         <td>{{ usage.linking }}</td>
         <td>
           {% if perms.cube.change_usage %}
-            <a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            <a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank" title="Last updated on: {{ usage.addition_date }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+          {% endif %}
+          {% if usage.description %}
+            <a href="#" title="{{ usage.description }}"><span class="icon"><i class="fas fa-comment"></i></span></a>
           {% endif %}
         </td>
         </tr>
