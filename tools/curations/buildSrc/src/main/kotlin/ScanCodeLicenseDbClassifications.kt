@@ -137,7 +137,7 @@ private fun downloadLicenseDetailsBatched(
 }
 
 private fun LicenseDetails.getLicenseId(): SpdxSingleLicenseExpression {
-    val expression = spdxLicenseKey ?: otherSpdxLicenseKeys.firstOrNull() ?: "LicenseRef-scancode-$key"
+    val expression = spdxLicenseKey ?: "LicenseRef-scancode-$key"
     return SpdxSingleLicenseExpression.parse(expression)
 }
 
