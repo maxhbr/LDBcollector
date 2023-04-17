@@ -70,7 +70,7 @@ private data class LicenseDetails(
     val key: String,
     val shortName: String,
     val name: String,
-    val text: String,
+    val text: String? = null,
     val category: String,
     val owner: String,
     val homepageUrl: String? = null,
