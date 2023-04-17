@@ -14,6 +14,7 @@ import           Ldbcollector.Model
 import           Ldbcollector.Server
 import           Ldbcollector.Sink.GraphViz
 import           Ldbcollector.Sink.Metrics
+import           Ldbcollector.Sink.JSON
 import           Ldbcollector.Source
 
 writeSvgByName :: FilePath -> LicenseName -> LicenseGraphM ()
@@ -22,10 +23,12 @@ writeSvgByName outDir lic = do
                                 LicenseName (Just ns) name -> T.unpack ns </> T.unpack name
                                 LicenseName Nothing name   -> T.unpack name
                             ) <.> "dot"
+        json = dot -<.> "json"
     lift $ createDirectoryIfMissing True (dropFileName dot)
     infoLog $ "generate " ++ dot ++ " ..."
     focus mempty (V.singleton (LGName lic)) $
             \(needleNames, sameNames, otherNames, _statements) -> do
+                writeJSON json
                 writeGraphViz needleNames sameNames otherNames dot
     infoLog "... done"
 

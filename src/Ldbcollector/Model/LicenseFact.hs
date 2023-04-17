@@ -33,6 +33,13 @@ newtype SourceRef = Source String
 data FactId
     = FactId String String
     deriving (Eq, Generic)
+
+data Qualified a
+    = Qualified 
+    { qSource :: SourceRef
+    , qFactId :: FactId
+    , qValue :: a
+    }
 instance Show FactId where
     show (FactId ty hash) = ty ++ ":" ++ hash
 instance ToJSON FactId where
@@ -84,15 +91,16 @@ class (Eq a) => LicenseFactC a where
         in filterForRatings . getImpliedStmts
 
 data LicenseFact where
-    LicenseFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
-instance Show LicenseFact
+    LicenseFact :: forall a. (Show a, Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact
+instance Show LicenseFact where
+    show (LicenseFact _ a) = show a
 instance NFData LicenseFact where
     rnf (LicenseFact _t a) = rwhnf a
-wrapFact :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => a -> LicenseFact
+wrapFact :: forall a. (Show a, Typeable a, ToJSON a, LicenseFactC a) => a -> LicenseFact
 wrapFact a = LicenseFact (typeOf a) a
-wrapFacts :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => [a] -> [LicenseFact]
+wrapFacts :: forall a. (Show a, Typeable a, ToJSON a, LicenseFactC a) => [a] -> [LicenseFact]
 wrapFacts = map wrapFact
-wrapFactV :: forall a. (Typeable a, ToJSON a, LicenseFactC a) => V.Vector a -> V.Vector LicenseFact
+wrapFactV :: forall a. (Show a, Typeable a, ToJSON a, LicenseFactC a) => V.Vector a -> V.Vector LicenseFact
 wrapFactV = V.map wrapFact
 
 instance ToJSON LicenseFact where

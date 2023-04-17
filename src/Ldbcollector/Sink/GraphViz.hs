@@ -34,7 +34,7 @@ import qualified System.IO.Temp                    as Temp
 import qualified Text.Wrap                         as TW
 import qualified Data.GraphViz.Attributes.Colors as GVH
 
-type Digraph =GV.DotGraph G.Node
+type Digraph = GV.DotGraph G.Node
 
 factIdToLabelValue :: FactId -> GV.Label
 factIdToLabelValue (FactId ty hash) = GV.toLabelValue (ty ++ "\n" ++ hash)
@@ -242,7 +242,7 @@ renderDot layout digraph dot = do
                     "fdp" -> GV.Fdp
                     "dot" -> GV.Dot
                     _ -> GV.Fdp
-    res <- Ex.try $ GV.runGraphvizCommand command digraph format (dot <.> show format)
+    res <- Ex.try $ GV.runGraphvizCommand command digraph format (dot -<.> show format)
     case res of
         Left (Ex.SomeException e) -> fail $ "failed to convert dot to "++ show format ++ ": " ++ show e
         Right svg -> do

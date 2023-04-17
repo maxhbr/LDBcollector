@@ -18,7 +18,7 @@ data SPDXCrossRef
     , _isWayBackLink :: Bool
     , _order :: Int
     }
-    deriving (Eq, Ord)
+    deriving (Eq, Ord, Show)
 $(deriveJSON defaultOptions{fieldLabelModifier = drop 1, constructorTagModifier = map toLower} ''SPDXCrossRef)
 
 data SPDXLicense
@@ -35,7 +35,7 @@ data SPDXLicense
     , _licenseText :: Text
     , _licenseTextHtml :: Text
     }
-    deriving (Eq, Ord)
+    deriving (Eq, Ord, Show)
 $(deriveJSON defaultOptions{fieldLabelModifier = drop 1, constructorTagModifier = map toLower} ''SPDXLicense)
 
 getUrls :: SPDXLicense -> [String]

@@ -7,16 +7,11 @@ module Ldbcollector.Model.LicenseGraph
 import           MyPrelude
 
 import qualified Control.Monad.State                 as MTL
-import           Data.Aeson                          as A
-import           Data.Aeson.Encode.Pretty            as A
-import qualified Data.ByteString.Char8               as B (unpack)
-import qualified Data.ByteString.Lazy                as BL (toStrict)
 import qualified Data.Graph.Inductive.Graph          as G
 import qualified Data.Graph.Inductive.PatriciaTree   as G
 import qualified Data.Map                            as Map
 import qualified Data.Set                            as Set
 import qualified Data.Vector                         as V
-import           System.Console.Pretty               (Color (Green), color)
 
 import qualified Control.Monad.Reader                as MTL
 import           Ldbcollector.Model.LicenseFact
