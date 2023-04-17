@@ -44,21 +44,21 @@ private val JSON_MAPPER = JsonMapper().apply {
     propertyNamingStrategy = PropertyNamingStrategies.SNAKE_CASE
 }
 
-private const val CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT = "cla"
+private const val CATEGORY_CLA = "cla"
 private const val CATEGORY_GENERIC = "generic"
 private const val CATEGORY_UNKNOWN = "unknown"
 
 private val OVERRIDE_LICENSE_CATEGORIES = mapOf(
-    "LicenseRef-scancode-cncf-corporate-cla-1.0" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-cncf-individual-cla-1.0" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-google-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-google-corporate-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-jetty-ccla-1.1" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-ms-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-newton-king-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-owf-cla-1.0-copyright" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-owf-cla-1.0-copyright-patent" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
-    "LicenseRef-scancode-square-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT
+    "LicenseRef-scancode-cncf-corporate-cla-1.0" to CATEGORY_CLA,
+    "LicenseRef-scancode-cncf-individual-cla-1.0" to CATEGORY_CLA,
+    "LicenseRef-scancode-google-cla" to CATEGORY_CLA,
+    "LicenseRef-scancode-google-corporate-cla" to CATEGORY_CLA,
+    "LicenseRef-scancode-jetty-ccla-1.1" to CATEGORY_CLA,
+    "LicenseRef-scancode-ms-cla" to CATEGORY_CLA,
+    "LicenseRef-scancode-newton-king-cla" to CATEGORY_CLA,
+    "LicenseRef-scancode-owf-cla-1.0-copyright" to CATEGORY_CLA,
+    "LicenseRef-scancode-owf-cla-1.0-copyright-patent" to CATEGORY_CLA,
+    "LicenseRef-scancode-square-cla" to CATEGORY_CLA
 ).mapKeys { (license, _) -> SpdxSingleLicenseExpression.parse(license) }
 
 private data class License(
@@ -162,7 +162,7 @@ private fun LicenseDetails.getCategories(): Set<String> {
         mappedCategory,
         // Include all licenses into the notice file to ensure there is no under-reporting by default.
         "include-in-notice-file".takeUnless {
-            mappedCategory in setOf(CATEGORY_UNKNOWN, CATEGORY_GENERIC, CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT)
+            mappedCategory in setOf(CATEGORY_UNKNOWN, CATEGORY_GENERIC, CATEGORY_CLA)
         },
         // The FSF has stated that a source code offer is required for Copyleft (limited) licences, so
         // include only these to not cause unnecessary effort by default.
