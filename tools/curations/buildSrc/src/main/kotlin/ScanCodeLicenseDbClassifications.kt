@@ -44,22 +44,22 @@ private val JSON_MAPPER = JsonMapper().apply {
     propertyNamingStrategy = PropertyNamingStrategies.SNAKE_CASE
 }
 
-private val CONTRIBUTOR_LICENSE_AGREEMENT_IDS = listOf(
-    "LicenseRef-scancode-cncf-corporate-cla-1.0",
-    "LicenseRef-scancode-cncf-individual-cla-1.0",
-    "LicenseRef-scancode-google-cla",
-    "LicenseRef-scancode-google-corporate-cla",
-    "LicenseRef-scancode-jetty-ccla-1.1",
-    "LicenseRef-scancode-ms-cla",
-    "LicenseRef-scancode-newton-king-cla",
-    "LicenseRef-scancode-owf-cla-1.0-copyright",
-    "LicenseRef-scancode-owf-cla-1.0-copyright-patent",
-    "LicenseRef-scancode-square-cla"
-).map { SpdxSingleLicenseExpression.parse(it) }.toSet()
-
 private const val CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT = "contributor-license-agreement"
 private const val CATEGORY_GENERIC = "generic"
 private const val CATEGORY_UNKNOWN = "unknown"
+
+private val OVERRIDE_LICENSE_CATEGORIES = mapOf(
+    "LicenseRef-scancode-cncf-corporate-cla-1.0" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-cncf-individual-cla-1.0" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-google-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-google-corporate-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-jetty-ccla-1.1" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-ms-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-newton-king-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-owf-cla-1.0-copyright" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-owf-cla-1.0-copyright-patent" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT,
+    "LicenseRef-scancode-square-cla" to CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT
+).mapKeys { (license, _) -> SpdxSingleLicenseExpression.parse(license) }
 
 private data class License(
     val licenseKey: String,
@@ -150,10 +150,11 @@ private fun LicenseDetails.getLicenseId(): SpdxSingleLicenseExpression {
 }
 
 private fun LicenseDetails.getCategories(): Set<String> {
+    val overrideLicenseCategory = OVERRIDE_LICENSE_CATEGORIES[getLicenseId()]
     val mappedCategory = when {
         isUnknown -> CATEGORY_UNKNOWN
         isGeneric -> CATEGORY_GENERIC
-        getLicenseId() in CONTRIBUTOR_LICENSE_AGREEMENT_IDS -> CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT
+        overrideLicenseCategory != null -> overrideLicenseCategory
         else -> category.replace(' ', '-').lowercase()
     }
 
