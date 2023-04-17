@@ -19,8 +19,8 @@ import org.ossreviewtoolkit.model.licenses.LicenseClassifications
 import org.ossreviewtoolkit.model.yamlMapper
 import org.ossreviewtoolkit.utils.spdx.SpdxSingleLicenseExpression
 
-private val INDEX_JSON_URL =  "https://scancode-licensedb.aboutcode.org/index.json"
-private val DISCLAIMER_TEXT = """
+private const val INDEX_JSON_URL =  "https://scancode-licensedb.aboutcode.org/index.json"
+private const val DISCLAIMER_TEXT = """
 License classification generated based on https://scancode-licensedb.aboutcode.org/.    
     
 This ORT configuration file is provided as an example only. It
