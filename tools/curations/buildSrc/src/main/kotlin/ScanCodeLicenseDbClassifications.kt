@@ -44,7 +44,7 @@ private val JSON_MAPPER = JsonMapper().apply {
     propertyNamingStrategy = PropertyNamingStrategies.SNAKE_CASE
 }
 
-private const val CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT = "contributor-license-agreement"
+private const val CATEGORY_CONTRIBUTOR_LICENSE_AGREEMENT = "cla"
 private const val CATEGORY_GENERIC = "generic"
 private const val CATEGORY_UNKNOWN = "unknown"
 
