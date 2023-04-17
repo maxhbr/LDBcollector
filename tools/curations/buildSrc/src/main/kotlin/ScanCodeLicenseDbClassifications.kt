@@ -162,18 +162,25 @@ private fun LicenseDetails.getCategories(): Set<String> {
     )
 }
 
-private fun getLicenseClassifications(licenseDetails: Collection<LicenseDetails>) =
-    LicenseClassifications(
-        categories = licenseDetails.flatMap { it.getCategories() }.distinct().map {
-            LicenseCategory(it)
-        }.sortedBy { it.name },
-        categorizations = licenseDetails.map {
-            LicenseCategorization(
-                id = it.getLicenseId(),
-                categories = it.getCategories()
-            )
-        }.sortedBy { it.id.toString() }
+private fun getLicenseClassifications(licenseDetails: Collection<LicenseDetails>): LicenseClassifications {
+    val categories = licenseDetails.flatMap { details ->
+        details.getCategories()
+    }.distinct().map { category ->
+        LicenseCategory(category)
+    }
+
+    val categorizations = licenseDetails.map { details ->
+        LicenseCategorization(
+            id = details.getLicenseId(),
+            categories = details.getCategories()
+        )
+    }
+
+    return LicenseClassifications(
+        categories = categories.sortedBy { it.name },
+        categorizations = categorizations.sortedBy { it.id.toString() }
     )
+}
 
 /**
  * Generate license classifications from ScanCode's license categories.
