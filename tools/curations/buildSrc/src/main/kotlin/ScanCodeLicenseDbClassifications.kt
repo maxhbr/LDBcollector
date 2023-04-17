@@ -203,7 +203,8 @@ fun generateLicenseClassificationsYaml(): String {
 
     licenseClassifications.run {
         LOGGER.quiet(
-            "Generated a license classification with ${categorizations.size} license and ${categories.size} categories."
+            "Generated a license classification with ${categorizations.size} licenses and ${categories.size} " +
+                    "categories."
         )
     }
 
