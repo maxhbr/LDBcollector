@@ -49,16 +49,7 @@ private const val CATEGORY_GENERIC = "generic"
 private const val CATEGORY_UNKNOWN = "unknown"
 
 private val OVERRIDE_LICENSE_CATEGORIES = mapOf(
-    "LicenseRef-scancode-cncf-corporate-cla-1.0" to CATEGORY_CLA,
-    "LicenseRef-scancode-cncf-individual-cla-1.0" to CATEGORY_CLA,
-    "LicenseRef-scancode-google-cla" to CATEGORY_CLA,
-    "LicenseRef-scancode-google-corporate-cla" to CATEGORY_CLA,
-    "LicenseRef-scancode-jetty-ccla-1.1" to CATEGORY_CLA,
-    "LicenseRef-scancode-ms-cla" to CATEGORY_CLA,
-    "LicenseRef-scancode-newton-king-cla" to CATEGORY_CLA,
-    "LicenseRef-scancode-owf-cla-1.0-copyright" to CATEGORY_CLA,
-    "LicenseRef-scancode-owf-cla-1.0-copyright-patent" to CATEGORY_CLA,
-    "LicenseRef-scancode-square-cla" to CATEGORY_CLA
+    "LicenseRef-scancode-ms-cla" to CATEGORY_CLA
 ).mapKeys { (license, _) -> SpdxSingleLicenseExpression.parse(license) }
 
 private data class License(
