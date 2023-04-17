@@ -39,8 +39,8 @@ fun getLicensesForCategory(category: String): Set<SpdxSingleLicenseExpression> =
         "Failed to obtain the license for category '$category', because that category does not exist."
     }
 
-val commercialLicenses = getLicensesForCategory("commercial")
 val claLicenses = getLicensesForCategory("cla")
+val commercialLicenses = getLicensesForCategory("commercial")
 val copyleftLicenses = getLicensesForCategory("copyleft")
 val copyleftLimitedLicenses = getLicensesForCategory("copyleft-limited")
 val freeRestrictedLicenses = getLicensesForCategory("free-restricted")
@@ -86,8 +86,8 @@ val ignoredLicenses = listOf(
  *          policy rules for new (offinding) categories, if any.
  */
 val handledLicenses = listOf(
-    commercialLicenses,
     claLicenses,
+    commercialLicenses,
     copyleftLicenses,
     copyleftLimitedLicenses,
     freeRestrictedLicenses,
