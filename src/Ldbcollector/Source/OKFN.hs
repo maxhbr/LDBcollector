@@ -52,6 +52,7 @@ instance LicenseFactC OKFNLicense where
                     status = _status l
                 in case status of
                 "approved" -> PositiveLicenseRating "OKFN status" (pack status) Nothing
+                "active" -> PositiveLicenseRating "OKFN status" (pack status) Nothing
                 _ -> NegativeLicenseRating "OKFN status" (pack status) Nothing
             odConfromance = LicenseRating $ let
                     odConfromance = _od_conformance l

@@ -54,27 +54,8 @@ header form {
     z-index: 100;
     padding: 20px;
 }
-/* #content ~ input[type="checkbox"] {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
-}
-#content input[type="checkbox"] ~ div {
-    display:none;
-}
-#content input[type="checkbox"]:checked ~ div {
-    display:block;
-} */
 
-#svgGraph {
-    position: relative;
-    width: 300px;
-    max-height: 300px;
-    margin: 20px;
-}
-#svgGraph svg {
-    background-color: white;
+#content-graph svg{
     width: 100%;
-    max-height: 300px;
+    height: 100%;
 }

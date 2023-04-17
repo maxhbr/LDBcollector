@@ -32,6 +32,7 @@ import           Web.Scotty                    as S
 import Text.Blaze.Html5.Attributes (onratechange)
 import Data.Hashable (Hashable, hash)
 import qualified Data.Cache as C
+import qualified System.Environment as Env
 
 
 class ParamMapC a where
@@ -51,7 +52,9 @@ instance ParamMapC ParamMap where
     getLic = fromText . T.toStrict . getLicRaw
     getIsExcludeStmts = ("on" ==) . Map.findWithDefault "off" excludeStmts . unParamMap
     getEnabledSources = map (Source . T.unpack . fst) . filter (\(_,value) -> value == "on") . Map.assocs . unParamMap
-    isSourceEnabled pm s = s `elem` getEnabledSources pm
+    isSourceEnabled pm s = let
+            enabledSources = getEnabledSources pm
+        in null enabledSources ||  s `elem` enabledSources
 
 instance Show ParamMap where
     show pm = let
@@ -66,14 +69,10 @@ instance Show ParamMap where
                    ]
 
 evaluateParams :: [S.Param] -> IO ParamMap
-evaluateParams  params = do
+evaluateParams params = do
     let pm = (ParamMap . Map.fromList) params
     debugLogIO (show pm)
     return pm
-
-
-myOptions :: S.Options
-myOptions = S.Options 1 (Warp.setPort 3000 (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
 
 stylesheet :: Data.ByteString.ByteString
 stylesheet = $(embedFile "src/assets/styles.css")
@@ -242,6 +241,11 @@ mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,sameNames,otherNames
                     pure ()
                 H.script "main();"
 
+getMyOptions :: IO S.Options
+getMyOptions = do
+    portFromEnv <- maybe 3000 read <$> Env.lookupEnv "PORT"
+    return $ S.Options 1 (Warp.setPort portFromEnv (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
+
 serve :: LicenseGraphM ()
 serve = do
     licenseGraph <- MTL.get
@@ -259,6 +263,7 @@ serve = do
                         C.insert cache (hash paramMap) tuple
                         return (paramMap, tuple)
         putStrLn $ "tmpdir=" ++ tmpdir
+        myOptions <- getMyOptions
         scottyOpts myOptions $ do
             get "/styles.css" $ raw (BL.fromStrict stylesheet)
             get "/script.js" $ raw (BL.fromStrict scriptJs)

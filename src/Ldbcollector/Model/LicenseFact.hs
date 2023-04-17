@@ -5,6 +5,7 @@
 module Ldbcollector.Model.LicenseFact
   ( SourceRef (..)
   , FactId (..)
+  , Qualified (..)
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
   , ApplicableLNs (..)
@@ -36,8 +37,8 @@ data FactId
 
 data Qualified a
     = Qualified 
-    { qSource :: SourceRef
-    , qFactId :: FactId
+    { qFactId :: FactId
+    -- , qSource :: SourceRef
     , qValue :: a
     }
 instance Show FactId where
