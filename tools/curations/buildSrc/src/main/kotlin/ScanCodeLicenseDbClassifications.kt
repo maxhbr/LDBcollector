@@ -136,13 +136,17 @@ private fun downloadLicenseDetailsBatched(
     return result.toMap()
 }
 
-private fun LicenseDetails.getLicenseId(): SpdxSingleLicenseExpression {
-    val expression = spdxLicenseKey ?: "LicenseRef-scancode-$key"
-    return SpdxSingleLicenseExpression.parse(expression)
-}
+private fun LicenseDetails.getLicenseIds(): Set<SpdxSingleLicenseExpression> =
+    listOfNotNull(
+        spdxLicenseKey,
+        "LicenseRef-scancode-$key"
+    ).mapTo(mutableSetOf()) { SpdxSingleLicenseExpression.parse(it) }
 
 private fun LicenseDetails.getCategories(): Set<String> {
-    val overrideLicenseCategory = OVERRIDE_LICENSE_CATEGORIES[getLicenseId()]
+    val overrideLicenseCategory = getLicenseIds().firstNotNullOfOrNull { licenseId ->
+        OVERRIDE_LICENSE_CATEGORIES[licenseId]
+    }
+
     val mappedCategory = when {
         isUnknown -> CATEGORY_UNKNOWN
         isGeneric -> CATEGORY_GENERIC
@@ -169,11 +173,13 @@ private fun getLicenseClassifications(licenseDetails: Collection<LicenseDetails>
         LicenseCategory(category)
     }
 
-    val categorizations = licenseDetails.map { details ->
-        LicenseCategorization(
-            id = details.getLicenseId(),
-            categories = details.getCategories()
-        )
+    val categorizations = licenseDetails.flatMap { details ->
+        details.getLicenseIds().map { licenseId ->
+            LicenseCategorization(
+                id = licenseId,
+                categories = details.getCategories()
+            )
+        }
     }
 
     return LicenseClassifications(
