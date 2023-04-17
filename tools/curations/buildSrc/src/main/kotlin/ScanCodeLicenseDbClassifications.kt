@@ -49,6 +49,7 @@ private const val CATEGORY_GENERIC = "generic"
 private const val CATEGORY_UNKNOWN = "unknown"
 
 private val OVERRIDE_LICENSE_CATEGORIES = mapOf(
+    // https://github.com/nexB/scancode-toolkit/issues/3317.
     "LicenseRef-scancode-ms-cla" to CATEGORY_CLA
 ).mapKeys { (license, _) -> SpdxSingleLicenseExpression.parse(license) }
 
