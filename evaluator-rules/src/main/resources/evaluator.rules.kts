@@ -40,7 +40,7 @@ fun getLicensesForCategory(category: String): Set<SpdxSingleLicenseExpression> =
     }
 
 val commercialLicenses = getLicensesForCategory("commercial")
-val contributorLicenseAgreementLicenenses = getLicensesForCategory("contributor-license-agreement")
+val claLicenses = getLicensesForCategory("cla")
 val copyleftLicenses = getLicensesForCategory("copyleft")
 val copyleftLimitedLicenses = getLicensesForCategory("copyleft-limited")
 val freeRestrictedLicenses = getLicensesForCategory("free-restricted")
@@ -87,7 +87,7 @@ val ignoredLicenses = listOf(
  */
 val handledLicenses = listOf(
     commercialLicenses,
-    contributorLicenseAgreementLicenenses,
+    claLicenses,
     copyleftLicenses,
     copyleftLimitedLicenses,
     freeRestrictedLicenses,
