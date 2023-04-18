@@ -1,0 +1,6 @@
+[license]
+expression = "BSD-4.3TAHOE"
+status = [ "allowed" ]
+[fedora]
+legacy-name = [ "BSD Three Clause Variant" ]
+legacy-abbreviation = [ "BSD" ]
