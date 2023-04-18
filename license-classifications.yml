@@ -991,9 +991,19 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "GPL-2.0-only WITH Classpath-exception-2.0"
+  categories:
+  - "copyleft-limited"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "GPL-2.0-or-later"
   categories:
   - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
+- id: "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  categories:
+  - "copyleft-limited"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
 - id: "GPL-3.0-only"
@@ -1001,9 +1011,24 @@ categorizations:
   - "copyleft"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
+- id: "GPL-3.0-only WITH Autoconf-exception-3.0"
+  categories:
+  - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
+- id: "GPL-3.0-only WITH Classpath-exception-2.0"
+  categories:
+  - "copyleft-limited"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
 - id: "GPL-3.0-or-later"
   categories:
   - "copyleft"
+  - "include-in-notice-file"
+  - "include-source-code-offer-in-notice-file"
+- id: "GPL-3.0-or-later WITH Classpath-exception-2.0"
+  categories:
+  - "copyleft-limited"
   - "include-in-notice-file"
   - "include-source-code-offer-in-notice-file"
 - id: "Giftware"
