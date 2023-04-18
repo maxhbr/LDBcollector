@@ -46,12 +46,23 @@ private val JSON_MAPPER = JsonMapper().apply {
 
 private const val CATEGORY_CLA = "cla"
 private const val CATEGORY_GENERIC = "generic"
+private const val CATEGORY_PERMISSIVE = "permissive"
 private const val CATEGORY_UNKNOWN = "unknown"
 
 private val OVERRIDE_LICENSE_CATEGORIES = mapOf(
     // https://github.com/nexB/scancode-toolkit/issues/3317.
     "LicenseRef-scancode-ms-cla" to CATEGORY_CLA
 ).mapKeys { (license, _) -> SpdxSingleLicenseExpression.parse(license) }
+
+// ScanCode does not provide categories for pairs of licenses and their belonging exceptions. So, hard-code some:
+private val LICENSE_EXCEPTION_CATEGORIZATIONS = listOf(
+    "Apache-2.0 WITH Swift-exception" to CATEGORY_PERMISSIVE
+).map { (license, category) ->
+    LicenseCategorization(
+        id = SpdxSingleLicenseExpression.parse(license),
+        categories = addExtraCategories(category)
+    )
+}
 
 private data class License(
     val licenseKey: String,
@@ -170,12 +181,6 @@ private fun addExtraCategories(category: String): Set<String> =
     )
 
 private fun getLicenseClassifications(licenseDetails: Collection<LicenseDetails>): LicenseClassifications {
-    val categories = licenseDetails.flatMap { details ->
-        details.getCategories()
-    }.distinct().map { category ->
-        LicenseCategory(category)
-    }
-
     val categorizations = licenseDetails.flatMap { details ->
         details.getLicenseIds().map { licenseId ->
             LicenseCategorization(
@@ -183,6 +188,12 @@ private fun getLicenseClassifications(licenseDetails: Collection<LicenseDetails>
                 categories = details.getCategories()
             )
         }
+    } + LICENSE_EXCEPTION_CATEGORIZATIONS
+
+    val categories = categorizations.flatMap { categorization ->
+        categorization.categories
+    }.distinct().map { category ->
+        LicenseCategory(category)
     }
 
     return LicenseClassifications(
