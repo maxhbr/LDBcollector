@@ -154,17 +154,20 @@ private fun LicenseDetails.getCategories(): Set<String> {
         else -> category.replace(' ', '-').lowercase()
     }
 
-    return setOfNotNull(
-        mappedCategory,
+    return addExtraCategories(mappedCategory) + mappedCategory
+}
+
+private fun addExtraCategories(category: String): Set<String> =
+    setOfNotNull(
+        category,
         // Include all licenses into the notice file to ensure there is no under-reporting by default.
         "include-in-notice-file".takeUnless {
-            mappedCategory in setOf(CATEGORY_UNKNOWN, CATEGORY_GENERIC, CATEGORY_CLA)
+            category in setOf(CATEGORY_UNKNOWN, CATEGORY_GENERIC, CATEGORY_CLA)
         },
         // The FSF has stated that a source code offer is required for Copyleft (limited) licences, so
         // include only these to not cause unnecessary effort by default.
-        "include-source-code-offer-in-notice-file".takeIf { mappedCategory in setOf("copyleft", "copyleft-limited") }
+        "include-source-code-offer-in-notice-file".takeIf { category in setOf("copyleft", "copyleft-limited") }
     )
-}
 
 private fun getLicenseClassifications(licenseDetails: Collection<LicenseDetails>): LicenseClassifications {
     val categories = licenseDetails.flatMap { details ->
