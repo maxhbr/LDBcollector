@@ -167,6 +167,10 @@ categorizations:
   categories:
   - "permissive"
   - "include-in-notice-file"
+- id: "Apache-2.0 WITH Swift-exception"
+  categories:
+  - "permissive"
+  - "include-in-notice-file"
 - id: "App-s2p"
   categories:
   - "permissive"
