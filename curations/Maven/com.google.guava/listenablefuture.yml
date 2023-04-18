@@ -1,5 +1,5 @@
 - id: "Maven:com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"
   curations:
     comment: |
-      This library is empty as it is version string suggests.
+      This library is empty as its version string suggests.
     is_metadata_only: true
