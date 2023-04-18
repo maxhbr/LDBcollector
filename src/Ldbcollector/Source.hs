@@ -9,6 +9,7 @@ import           Ldbcollector.Source.Cavil
 import           Ldbcollector.Source.ChooseALicense
 import           Ldbcollector.Source.Curation as X
 import           Ldbcollector.Source.EclipseOrgLegal
+import           Ldbcollector.Source.Ifross
 import           Ldbcollector.Source.FOSSLight
 import           Ldbcollector.Source.FSF
 import           Ldbcollector.Source.Fedora
@@ -45,6 +46,7 @@ applySources curation = do
     applySource (Warpr "./data/warpr-licensedb/data")
     applySource (FOSSLight "./data/fosslight/fosslight.sqlite.db")
     applySource (HitachiOpenLicense "./data/Hitachi-open-license/data" "./data/Hitachi-open-license.translations.csv")
-    applySource (EclipseOrgLegal "data/eclipse.org-legal-licenses.json")
+    applySource (EclipseOrgLegal "./data/eclipse.org-legal-licenses.json")
+    applySource (Ifross "./data/ifrOSS-ifrOSS.yaml")
     applySource (Curation curation)
     lift $ infoM rootLoggerName "# ... got sources"

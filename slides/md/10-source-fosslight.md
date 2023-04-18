@@ -1,9 +1,3 @@
-# 
+# Fosslight license data
 * url: 
-* raw data: 
-
-
-<!-- .slide: data-background-iframe="" data-background-interactive="true" data-preload="false" -->
-
-
-## Example
+* raw data: https://raw.githubusercontent.com/fosslight/fosslight/main/db/initdb.d/fosslight_create.sql

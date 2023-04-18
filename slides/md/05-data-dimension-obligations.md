@@ -22,6 +22,8 @@ e.g. Copyleft implies usually some expected obligations
 * OSADL writes [License Checklists](https://www.osadl.org/OSADL-Open-Source-License-Checklists.oss-compliance-lists.0.html)
 * FINOS [Open Source License Compliance Handbook](https://github.com/finos/OSLC-handbook)
 * Hitachi [OSS License Open Data](https://github.com/Hitachi/open-license)
+* Hermine
+* ...
 
 
 ## OSADL
@@ -128,3 +130,5 @@ The OSLC-handbook defines tables with conditions per usecase:
 * **Action:** Use the name of the owner or contributor to promote or sell the derived product:
   * **Requisite:** Get special permission in writing.
 * ...
+
+## Hermine

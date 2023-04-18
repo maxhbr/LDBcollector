@@ -86,10 +86,23 @@ class (Eq a) => LicenseFactC a where
         in getLicenseNames' . getApplicableLNs
     getImpliedLicenseRatings :: a -> [LicenseRating]
     getImpliedLicenseRatings = let 
-            filterForRatings [] = []
-            filterForRatings (LicenseRating r: stmts) = r : filterForRatings stmts
-            filterForRatings (_:stmts) = filterForRatings stmts
-        in filterForRatings . getImpliedStmts
+            filterFun [] = []
+            filterFun (LicenseRating r: stmts) = r : filterFun stmts
+            filterFun (_:stmts) = filterFun stmts
+        in filterFun . flattenStatements . getImpliedStmts
+    getImpliedLicenseUrls :: a -> [String]
+    getImpliedLicenseUrls = let
+            filterFun [] = []
+            filterFun (LicenseUrl url: stmts) = url : filterFun stmts
+            filterFun (_:stmts) = filterFun stmts
+        in filterFun . flattenStatements . getImpliedStmts
+    getImpliedLicenseTypes :: a -> [LicenseType]
+    getImpliedLicenseTypes = let
+            filterFun [] = []
+            filterFun (LicenseType ty: stmts) = ty : filterFun stmts
+            filterFun (_:stmts) = filterFun stmts
+        in filterFun . flattenStatements . getImpliedStmts
+
 
 data LicenseFact where
     LicenseFact :: forall a. (Show a, Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact

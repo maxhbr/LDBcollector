@@ -46,6 +46,7 @@ library
       Ldbcollector.Source.FSF
       Ldbcollector.Source.GoogleLicensePolicy
       Ldbcollector.Source.HitachiOpenLicense
+      Ldbcollector.Source.Ifross
       Ldbcollector.Source.Metaeffekt
       Ldbcollector.Source.OKFN
       Ldbcollector.Source.OSADL

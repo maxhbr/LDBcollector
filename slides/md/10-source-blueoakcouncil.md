@@ -9,6 +9,3 @@
 
 
 <!-- .slide: data-background-iframe="https://blueoakcouncil.org/copyleft#copyleft-families" data-background-interactive="true" data-preload="false" -->
-
-
-## Example

@@ -158,3 +158,9 @@ filterStatement stmt = Just stmt
 
 filterStatements :: [LicenseStatement] -> [LicenseStatement]
 filterStatements = mapMaybe filterStatement
+
+flattenStatements :: [LicenseStatement] -> [LicenseStatement]
+flattenStatements = let
+        flattenStatements' (SubStatements stmt substmts) = flattenStatements' stmt ++ concatMap flattenStatements' substmts
+        flattenStatements' stmt = [stmt]
+    in filterStatements . concatMap flattenStatements'

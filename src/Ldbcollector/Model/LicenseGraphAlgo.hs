@@ -1,5 +1,6 @@
-{-# LANGUAGE CPP        #-}
-{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE CPP               #-}
+{-# LANGUAGE LambdaCase        #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Model.LicenseGraphAlgo
   where
 --   ( focus
@@ -16,6 +17,7 @@ import qualified Data.Graph.Inductive.Query.DFS    as G
 import qualified Data.Map                          as Map
 import qualified Data.Vector                       as V
 import qualified System.CPUTime (getCPUTime)
+import qualified Data.Aeson as A
 
 
 import           Ldbcollector.Model.LicenseFact
@@ -129,6 +131,31 @@ focus sources needles inner = do
 
 getFocused :: [SourceRef] -> Vector LicenseGraphNode -> LicenseGraphM LicenseGraph
 getFocused sources needles = focus sources needles (const MTL.get)
+
+
+data AliasCluster
+    = AliasCluster
+    { name :: LicenseName
+    , sameNames :: [LicenseName]
+    , otherNames :: [LicenseName]
+    }
+instance ToJSON AliasCluster where
+    toJSON (AliasCluster name sameNames otherNames) = 
+        A.object [(fromString . show) name A..=  A.object [ "same" A..= sameNames
+                                                          , "other" A..= otherNames
+                                                          ]
+                 ]
+
+getAliasCluster :: ([G.Node], [G.Node], [G.Node]) -> LicenseGraphM AliasCluster
+getAliasCluster ([this], sameNameNodes, otherNameNodes) = do
+    let graphNodeToLn (Just (LGName ln)) = Just ln
+        graphNodeToLn _ = Nothing
+    MTL.gets (graphNodeToLn . (`G.lab` this) . _gr) >>= \case
+        Just thisName -> do
+            sameNames <- catMaybes <$> mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) sameNameNodes
+            otherNames <- catMaybes <$> mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) otherNameNodes
+            return (AliasCluster thisName sameNames otherNames)
+        Nothing -> fail ("failed to compute cluster for " ++ show this)
 
 -- -- ############################################################################
 

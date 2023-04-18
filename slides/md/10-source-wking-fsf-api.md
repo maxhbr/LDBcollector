@@ -1,9 +1,3 @@
-# 
-* url: 
-* raw data: 
-
-
-<!-- .slide: data-background-iframe="" data-background-interactive="true" data-preload="false" -->
-
-
-## Example
+# FSF License Metadata API
+* url: https://github.com/wking/fsf-api/
+* raw data: https://github.com/wking/fsf-api/tree/gh-pages

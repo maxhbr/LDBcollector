@@ -17,19 +17,16 @@ import qualified Data.ByteString.Lazy          as BL
 import qualified Data.Map                      as Map
 import qualified Data.Text.Encoding            as Enc
 import qualified Data.Text.Lazy                as T
-import qualified Data.Text.Lazy.IO             as T
 import qualified System.IO.Temp                as Temp
 import qualified Text.Blaze.Html.Renderer.Text as BT
 import qualified Text.Blaze.Html5              as H
 import qualified Text.Blaze.Html5.Attributes   as A
 
-import qualified Data.Graph.Inductive.Basic    as G
 import qualified Data.Graph.Inductive.Graph    as G
 
 import           Data.FileEmbed                (embedFile)
 import qualified Network.Wai.Handler.Warp      as Warp
 import           Web.Scotty                    as S
-import Text.Blaze.Html5.Attributes (onratechange)
 import Data.Hashable (Hashable, hash)
 import qualified Data.Cache as C
 import qualified System.Environment as Env
@@ -142,7 +139,7 @@ htmlHeader licenseGraph paramMap = do
         H.h1 (H.toMarkup licRaw)
         H.div H.! A.class_ "tab" $ do
             H.button H.! A.class_ "tablinks active" H.! A.onclick "openTab(event, 'content-graph')" $ "Graph"
-            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-text')" $ "Text"
+            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-text')" $ "Summary"
             H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-raw')" $ "Raw"
         H.form H.! A.action "" $ do
             H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
@@ -223,11 +220,15 @@ mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,sameNames,otherNames
                     H.ul $ mapM_ (H.li . fromString . show) sameNames
                     H.h3 "LicenseName Hints"
                     H.ul $ mapM_ (H.li . fromString . show) otherNames
+                    H.h2 "LicenseTypes"
+                    H.ul $ mapM_ (H.li . fromString . show) (nub $ concatMap getImpliedLicenseTypes facts)
                     H.h3 "License Ratings"
-                    H.ul $ mapM_ (H.li . H.toMarkup) (concatMap getImpliedLicenseRatings facts)
-                    H.h2 "LicenseNameSubgraph"
-                    H.pre $
-                        H.toMarkup (G.prettify lnsubgraph)
+                    H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseRatings facts)
+                    H.h3 "URLs"
+                    H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseUrls facts)
+                    -- H.h2 "LicenseNameSubgraph"
+                    -- H.pre $
+                    --     H.toMarkup (G.prettify lnsubgraph)
                 H.div H.! A.class_ "content" H.! A.id "content-raw" $ do
                     H.ul $ mapM_ (\fact -> H.li $ do
                         let factId@(FactId ty hash) = getFactId fact
@@ -243,15 +244,15 @@ mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,sameNames,otherNames
 
 getMyOptions :: IO S.Options
 getMyOptions = do
-    portFromEnv <- maybe 3000 read <$> Env.lookupEnv "PORT"
-    return $ S.Options 1 (Warp.setPort portFromEnv (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
+    port <- maybe 3000 read <$> Env.lookupEnv "PORT"
+    putStrLn ("PORT=" ++ show port) 
+    return $ S.Options 1 (Warp.setPort port (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
 
 serve :: LicenseGraphM ()
 serve = do
     licenseGraph <- MTL.get
     clusters <- getClusters
 
-    infoLog "Start server on port 3000..."
     lift $ Temp.withSystemTempDirectory "ldbcollector-haskell" $ \tmpdir -> do
         cache <- C.newCache Nothing
         let init params = do

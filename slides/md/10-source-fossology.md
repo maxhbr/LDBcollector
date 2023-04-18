@@ -1,9 +1,3 @@
-# 
-* url: 
+# Fossology license database
+* url: https://fossology.org
 * raw data: 
-
-
-<!-- .slide: data-background-iframe="" data-background-interactive="true" data-preload="false" -->
-
-
-## Example

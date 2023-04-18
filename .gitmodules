@@ -81,3 +81,6 @@
 [submodule "data/telekom-oslic"]
 	path = data/telekom-oslic
 	url = https://github.com/telekom/oslic
+[submodule "data/vinland-technology-flict"]
+	path = data/vinland-technology-flict
+	url = https://github.com/vinland-technology/flict

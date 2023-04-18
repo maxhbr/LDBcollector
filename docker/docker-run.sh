@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-podman run --expose 3000 maxhbr/ldbcollector
+podman run --env PORT=3001 --net host maxhbr/ldbcollector

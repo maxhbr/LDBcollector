@@ -1,9 +1,3 @@
-# 
-* url: 
-* raw data: 
-
-
-<!-- .slide: data-background-iframe="" data-background-interactive="true" data-preload="false" -->
-
-
-## Example
+# The Open Source License Compendium Manifesto
+* url: https://telekom.github.io/oslic/
+* raw data: https://github.com/telekom/oslic

@@ -4,6 +4,3 @@
 
 
 <!-- .slide: data-background-image="https://raw.githubusercontent.com/HansHammel/license-compatibility-checker/master/licenses.svg" data-background-interactive="true" data-preload="false" -->
-
-
-## Example
