@@ -44,6 +44,8 @@ private val JSON_MAPPER = JsonMapper().apply {
     propertyNamingStrategy = PropertyNamingStrategies.SNAKE_CASE
 }
 
+private const val CATEGORY_COPYLEFT = "copyleft"
+private const val CATEGORY_COPYLEFT_LIMITED = "copyleft-limited"
 private const val CATEGORY_CLA = "cla"
 private const val CATEGORY_GENERIC = "generic"
 private const val CATEGORY_PERMISSIVE = "permissive"
@@ -177,7 +179,9 @@ private fun addExtraCategories(category: String): Set<String> =
         },
         // The FSF has stated that a source code offer is required for Copyleft (limited) licences, so
         // include only these to not cause unnecessary effort by default.
-        "include-source-code-offer-in-notice-file".takeIf { category in setOf("copyleft", "copyleft-limited") }
+        "include-source-code-offer-in-notice-file".takeIf {
+            category in setOf(CATEGORY_COPYLEFT, CATEGORY_COPYLEFT_LIMITED)
+        }
     )
 
 private fun getLicenseClassifications(licenseDetails: Collection<LicenseDetails>): LicenseClassifications {
