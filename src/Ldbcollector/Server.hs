@@ -107,13 +107,13 @@ printFacts factId licenseGraph = do
                                 onerror _ _ = Just '_'
                             in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))) facts
 
-computeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, Digraph, [LicenseName], [LicenseName])
+computeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, Digraph, LicenseNameCluster)
 computeSubgraph licenseGraph paramMap = do
     let licLN = LGName (getLic paramMap)
     fmap fst . runLicenseGraphM' licenseGraph $ do
-            (subgraph,lnsubgraph,digraph,sameNameNodes,otherNameNodes) <- focus (getEnabledSources paramMap) (V.singleton licLN) $
+            focus (getEnabledSources paramMap) (V.singleton licLN) $
                 \(needleNames, sameNames, otherNames, _statements) -> do
-                    MTL.gets ((,,,,) . _gr)
+                    MTL.gets ((,,,) . _gr)
                         <*> getLicenseNameGraph
                         <*> (do
                             when (getIsExcludeStmts paramMap) $
@@ -122,13 +122,7 @@ computeSubgraph licenseGraph paramMap = do
                                                                                                 LGFact _ -> True
                                                                                                 _ -> False) gr})
                             getDigraph needleNames sameNames otherNames)
-                        <*> pure sameNames
-                        <*> pure otherNames
-            let graphNodeToLn (Just (LGName ln)) = Just ln
-                graphNodeToLn _ = Nothing
-            sameNames <- catMaybes <$> mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) sameNameNodes
-            otherNames <- catMaybes <$> mapM (\n -> MTL.gets (graphNodeToLn . (`G.lab` n) . _gr)) otherNameNodes
-            return (subgraph,lnsubgraph,digraph,sameNames,otherNames)
+                        <*> getLicenseNameClusterM (needleNames,sameNames,otherNames)
 
 htmlHeader :: LicenseGraph -> ParamMap -> H.Markup
 htmlHeader licenseGraph paramMap = do
@@ -162,25 +156,23 @@ htmlHeader licenseGraph paramMap = do
                     H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
             H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
 
-dotPage :: [S.Param] -> LicenseGraph -> IO H.Html
-dotPage params licenseGraph = do
-    paramMap <- evaluateParams params
-    (_,_,digraph,_,_) <- computeSubgraph licenseGraph paramMap
-    let digraphDot = digraphToText digraph
-
-    return . H.html $ do
-            let licRaw = getLicRaw paramMap
-            H.head $ do
-                H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
-                H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
-                H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
-                H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
-                H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
-                H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
-            H.body $ do
-                htmlHeader licenseGraph paramMap
-                H.div H.! A.class_ "content" $ pure ()
-                dotSvgMarkup digraph
+-- dotPage :: [S.Param] -> LicenseGraph -> IO H.Html
+-- dotPage params licenseGraph = do
+--     paramMap <- evaluateParams params
+--     (_,_,digraph,_) <- computeSubgraph licenseGraph paramMap
+--     return . H.html $ do
+--             let licRaw = getLicRaw paramMap
+--             H.head $ do
+--                 H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
+--                 H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
+--                 H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
+--                 H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
+--                 H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
+--                 H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
+--             H.body $ do
+--                 htmlHeader licenseGraph paramMap
+--                 H.div H.! A.class_ "content" $ pure ()
+--                 dotSvgMarkup digraph
 
 dotSvgMarkup :: Digraph -> H.Markup
 dotSvgMarkup digraph = let
@@ -195,8 +187,8 @@ dotSvgMarkup digraph = let
             "    .fit(true)"
             "    .renderDot(document.getElementById('graph.dot').textContent);"
 
-mainPage :: ParamMap -> LicenseGraph -> (LicenseGraphType, LicenseNameGraphType, Digraph, [LicenseName], [LicenseName]) -> IO H.Html
-mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,sameNames,otherNames) = do
+mainPage :: ParamMap -> LicenseGraph -> (LicenseGraphType, LicenseNameGraphType, Digraph, LicenseNameCluster) -> IO H.Html
+mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,cluster) = do
 
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
@@ -217,9 +209,7 @@ mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,sameNames,otherNames
                     dotSvgMarkup digraph
                 H.div H.! A.class_ "content" H.! A.id "content-text" $ do
                     H.h2 "LicenseNames"
-                    H.ul $ mapM_ (H.li . fromString . show) sameNames
-                    H.h3 "LicenseName Hints"
-                    H.ul $ mapM_ (H.li . fromString . show) otherNames
+                    H.toMarkup cluster
                     H.h2 "LicenseTypes"
                     H.ul $ mapM_ (H.li . fromString . show) (nub $ concatMap getImpliedLicenseTypes facts)
                     H.h3 "License Ratings"
@@ -277,13 +267,13 @@ serve = do
             get "/dot" $ do
                 params <- S.params
                 dot <- liftAndCatchIO $ do
-                    (paramMap, (subgraph,lnsubgraph,digraph,sameNames,otherNames)) <- init params
+                    (_, (_,_,digraph,_)) <- init params
                     return (digraphToText digraph)
                 text dot
             get "/svg" $ do
                 params <- S.params
                 svg <- liftAndCatchIO $ do
-                    (paramMap, (subgraph,lnsubgraph,digraph,sameNames,otherNames)) <- init params
+                    (_, (_,_,digraph,_)) <- init params
                     rederDotToText "fdp" digraph
                 setHeader "Content-Type" "image/svg+xml"
                 text svg

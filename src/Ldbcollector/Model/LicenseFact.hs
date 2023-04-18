@@ -9,6 +9,7 @@ module Ldbcollector.Model.LicenseFact
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
   , ApplicableLNs (..)
+  , LicenseNameCluster (..)
   , alternativesFromListOfLNs
   , LicenseFactC (..)
   ) where
@@ -56,6 +57,37 @@ alternativesFromListOfLNs (best:others) = LN best `AlternativeLNs` map LN others
 alternativesFromListOfLNs []            = undefined
 instance ToJSON ApplicableLNs
 
+data LicenseNameCluster
+    = LicenseNameCluster
+    { name :: LicenseName
+    , sameNames :: [LicenseName]
+    , otherNames :: [LicenseName]
+    }
+instance ToJSON LicenseNameCluster where
+    toJSON (LicenseNameCluster name sameNames otherNames) = 
+        A.object [(fromString . show) name A..=  A.object [ "same" A..= sameNames
+                                                          , "other" A..= otherNames
+                                                          ]
+                 ]
+instance H.ToMarkup LicenseNameCluster where
+    toMarkup (LicenseNameCluster name sameNames otherNames) = do
+        H.b (fromString ("LicenseNames for " ++ show name))
+        H.ul $ mapM_ (H.li . fromString . show) sameNames
+        H.b "LicenseName Hints"
+        H.ul $ mapM_ (H.li . fromString . show) otherNames
+applicableLNsToLicenseNameCluster :: ApplicableLNs -> LicenseNameCluster
+applicableLNsToLicenseNameCluster (LN ln) = LicenseNameCluster ln [] []
+applicableLNsToLicenseNameCluster (AlternativeLNs aln alns) = let
+      (LicenseNameCluster ln same other) = applicableLNsToLicenseNameCluster aln
+      alnsClusters = map applicableLNsToLicenseNameCluster alns
+      samesFromAlnsClusters = concatMap (\(LicenseNameCluster ln' same' _) -> ln':same') alnsClusters
+      othersFromAlnsClusters = concatMap (\(LicenseNameCluster _ _ other') -> other') alnsClusters
+    in LicenseNameCluster ln (same ++ samesFromAlnsClusters) (other ++ othersFromAlnsClusters)
+applicableLNsToLicenseNameCluster (ImpreciseLNs aln alns) = let
+      (LicenseNameCluster ln same other) = applicableLNsToLicenseNameCluster aln
+      alnsClusters = map applicableLNsToLicenseNameCluster alns
+      othersFromAlnsClusters = concatMap (\(LicenseNameCluster ln' same' other') -> ln':same'++other') alnsClusters
+    in LicenseNameCluster ln same (other ++ othersFromAlnsClusters)
 
 class (Eq a) => LicenseFactC a where
     getType :: a -> String
@@ -72,18 +104,10 @@ class (Eq a) => LicenseFactC a where
     {-
      - helper functions
      -}
+    getLicenseNameCluster :: a -> LicenseNameCluster
+    getLicenseNameCluster = applicableLNsToLicenseNameCluster . getApplicableLNs
     getMainLicenseName :: a -> LicenseName
-    getMainLicenseName = let
-            getMainLicenseName' (LN ln) = ln
-            getMainLicenseName' (AlternativeLNs aln _) = getMainLicenseName' aln
-            getMainLicenseName' (ImpreciseLNs aln _) = getMainLicenseName' aln
-        in getMainLicenseName' . getApplicableLNs
-    getLicenseNames :: a -> [LicenseName]
-    getLicenseNames = let
-            getLicenseNames' (LN ln) = [ln]
-            getLicenseNames' (AlternativeLNs aln altlns) = getLicenseNames' aln ++ concatMap getLicenseNames' altlns
-            getLicenseNames' (ImpreciseLNs aln _) = getLicenseNames' aln
-        in getLicenseNames' . getApplicableLNs
+    getMainLicenseName = (\(LicenseNameCluster ln _ _) -> ln) . getLicenseNameCluster
     getImpliedLicenseRatings :: a -> [LicenseRating]
     getImpliedLicenseRatings = let 
             filterFun [] = []
@@ -147,5 +171,7 @@ instance LicenseFactC LicenseFact where
         toMarkup a
         let ratings = getImpliedLicenseRatings a
         unless (null ratings) $ do
+            H.h3 "names"
+            (H.toMarkup . getLicenseNameCluster) a
             H.h3 "ratings"
             H.ul $ mapM_ (H.li . H.toMarkup) ratings
