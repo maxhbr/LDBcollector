@@ -6,9 +6,9 @@ module Ldbcollector.Model.LicenseFact
   ( SourceRef (..)
   , FactId (..)
   , Qualified (..)
-  , OriginalData (..)
-  , getOriginalDataText
-  , getOriginalDataUrl
+--   , OriginalData (..)
+--   , getOriginalDataText
+--   , getOriginalDataUrl
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
   , ApplicableLNs (..)
@@ -93,36 +93,36 @@ applicableLNsToLicenseNameCluster (ImpreciseLNs aln alns) = let
       othersFromAlnsClusters = concatMap (\(LicenseNameCluster ln' same' other') -> ln':same'++other') alnsClusters
     in LicenseNameCluster ln same (other ++ othersFromAlnsClusters)
 
-data OriginalData
-    = OriginalBSData ByteString
-    | OriginalJsonData A.Value
-    | OriginalTextData Text
-    | FromFile FilePath OriginalData
-    | FromUrl String OriginalData
-    | NoPreservedOriginalData
-    deriving (Eq)
-instance ToJSON OriginalData where
-    toJSON (OriginalBSData bs) = toJSON $ bsToText bs
-    toJSON (OriginalJsonData v) = v
-    toJSON (OriginalTextData t) = toJSON t
-    toJSON (FromFile fn od) = object [ "fileName" .= fn
-                                     , "content" .= od
-                                     ]
-    toJSON (FromUrl url od) = object [ "url" .= url
-                                     , "content" .= od
-                                     ]
-    toJSON NoPreservedOriginalData = object []
-getOriginalDataText :: OriginalData -> Maybe Text
-getOriginalDataText (OriginalBSData bs) = (Just . bsToText) bs
-getOriginalDataText (OriginalJsonData _) = Nothing
-getOriginalDataText (OriginalTextData t) = Just t
-getOriginalDataText (FromFile _ od) = getOriginalDataText od
-getOriginalDataText (FromUrl _ od) = getOriginalDataText od
-getOriginalDataText _ = Nothing
-getOriginalDataUrl :: OriginalData -> Maybe String
-getOriginalDataUrl (FromUrl url _) = Just url
-getOriginalDataUrl (FromFile _ od) = getOriginalDataUrl od
-getOriginalDataUrl _ = Nothing
+-- data OriginalData
+--     = OriginalBSData ByteString
+--     | OriginalJsonData A.Value
+--     | OriginalTextData Text
+--     | FromFile FilePath OriginalData
+--     | FromUrl String OriginalData
+--     | NoPreservedOriginalData
+--     deriving (Eq)
+-- instance ToJSON OriginalData where
+--     toJSON (OriginalBSData bs) = toJSON $ bsToText bs
+--     toJSON (OriginalJsonData v) = v
+--     toJSON (OriginalTextData t) = toJSON t
+--     toJSON (FromFile fn od) = object [ "fileName" .= fn
+--                                      , "content" .= od
+--                                      ]
+--     toJSON (FromUrl url od) = object [ "url" .= url
+--                                      , "content" .= od
+--                                      ]
+--     toJSON NoPreservedOriginalData = object []
+-- getOriginalDataText :: OriginalData -> Maybe Text
+-- getOriginalDataText (OriginalBSData bs) = (Just . bsToText) bs
+-- getOriginalDataText (OriginalJsonData _) = Nothing
+-- getOriginalDataText (OriginalTextData t) = Just t
+-- getOriginalDataText (FromFile _ od) = getOriginalDataText od
+-- getOriginalDataText (FromUrl _ od) = getOriginalDataText od
+-- getOriginalDataText _ = Nothing
+-- getOriginalDataUrl :: OriginalData -> Maybe String
+-- getOriginalDataUrl (FromUrl url _) = Just url
+-- getOriginalDataUrl (FromFile _ od) = getOriginalDataUrl od
+-- getOriginalDataUrl _ = Nothing
 
 class (Eq a) => LicenseFactC a where
     getType :: a -> String
@@ -136,8 +136,8 @@ class (Eq a) => LicenseFactC a where
     getImpliedStmts _ = []
     toMarkup :: a -> Markup
     toMarkup _ = mempty
-    getOriginalData :: a -> OriginalData
-    getOriginalData _ = NoPreservedOriginalData
+    -- getOriginalData :: a -> OriginalData
+    -- getOriginalData _ = NoPreservedOriginalData
     {-
      - helper functions
      -}

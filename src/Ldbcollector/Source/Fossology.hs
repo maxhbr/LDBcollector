@@ -78,19 +78,6 @@ instance LicenseFactC FossologyEntry where
         , MaybeStatement (fmap (ifToStmt "GPLv3compatible") (_rf_GPLv3compatible entry))
         ]
 
-
-
-
--- applyFossologyLicenseRef :: FossologyEntry -> LicenseGraphTask
--- applyFossologyLicenseRef entry =
---     EdgeLeft (AddTs . V.fromList $
---          [ maybeToTask fromString  (_rf_url entry)
---          ]) AppliesTo $
---     EdgeLeft (Adds . V.fromList $
---          [ (LicenseName . fromString . _rf_fullname) entry
---          ]) Same $
---     fromValue entry (LicenseName . fromString . _rf_shortname) (const Nothing)
-
 newtype Fossology = FossologyLicenseRef FilePath
 instance Source Fossology where
     getSource _ = Source "Fossology"
