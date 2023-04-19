@@ -166,7 +166,24 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
             reverse("cube:releases-update-validation", kwargs={"id": 1})
         )
         self.assertEqual(res.data["validation_step"], STEP_POLICY)
-        res = self.client.get(reverse("cube:releases-validation-5", kwargs={"id": 1}))
+
+    def test_multiple_curations(self):
+        self.create_product()
+        self.create_release()
+        self.import_sbom()
+        self.create_curations()
+
+        # There is now 2 curations for the same expression
+        LicenseCuration.objects.create(
+            component=Component.objects.get_or_create(name="no-assertion-dependency")[
+                0
+            ],
+            expression_in="NOASSERTION",
+            expression_out="LicenseRef-fakeLicense-Allowed-2.0",
+        )
+
+        res = self.client.get(reverse("cube:releases-validation-1", kwargs={"id": 1}))
+        self.assertEqual(res.data["valid"], False)
 
     def create_curations(self):
         # Licenses with no concluded license

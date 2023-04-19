@@ -113,6 +113,8 @@ def check_licenses_against_policy(release):
 
     usages = release.usage_set.all()
 
+    prefetch_related_objects(usages, "licenses_chosen")
+
     for usage in usages:
         for license in usage.licenses_chosen.all():
             involved_lic.add(license)
