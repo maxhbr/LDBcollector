@@ -9,6 +9,7 @@ from itertools import product
 from typing import Iterable, List
 
 from django.db import transaction
+from django.db.models import prefetch_related_objects
 from license_expression import get_spdx_licensing, BaseSymbol
 
 from cube.models import License, Obligation, Derogation
@@ -187,8 +188,13 @@ def get_license_triggered_obligations(
     """
     obligations = license.obligation_set.all()
 
+    # Do not use filter() here, so we can use the same queryset for both and benefit from prefetching
     if modification is not None:
-        obligations = obligations.filter(trigger_mdf__contains=modification)
+        obligations = [
+            o
+            for o in obligations
+            if ((o.trigger_mdf in modification) or (modification in o.trigger_mdf))
+        ]
 
     if exploitation is not None:
         obligations = [
@@ -229,6 +235,14 @@ def get_usages_obligations(usages):
     generics_involved = set()
     specific_obligations = set()
     licenses_involved_set = set()
+
+    # For performances, we prefetch all the related objects
+    prefetch_related_objects(
+        usages,
+        "licenses_chosen",
+        "licenses_chosen__obligation_set",
+        "licenses_chosen__obligation_set__generic",
+    )
 
     for usage in usages:
         for license in usage.licenses_chosen.all():
