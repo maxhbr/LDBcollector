@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.18
+Version:        1.19
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,9 @@ make check-grammar
 
 
 %changelog
+* Thu Apr 20 2023 Miroslav Suchý <msuchy@redhat.com> 1.19-1
+- fix el7 build failure
+
 * Thu Apr 20 2023 Miroslav Suchý <msuchy@redhat.com> 1.18-1
 - add BNF grammar
 - Add BSD-4.3TAHOE
