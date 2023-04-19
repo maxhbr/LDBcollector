@@ -9,7 +9,7 @@ SPDX-License-Identifier: CC-BY-4.0
 As the application itself, this documentation is very much a work in progress.
 :::
 
-The documentation is created with Sphinx, and written (mostly) in [Markdown](https://www.markdownguide.org/basic-syntax), thanks to [MyST](https://myst-parser.readthedocs.io/en/latest/sphinx/index.html).
+The documentation is created with [Sphinx](https://www.sphinx-doc.org/en/master/), and written (mostly) in [Markdown](https://www.markdownguide.org/basic-syntax), thanks to [MyST](https://myst-parser.readthedocs.io/en/latest/sphinx/index.html).
 The [MyST documentation](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html) will guide you through the sphinx-specific directives in Markdown.
 Some options like [code fences using colors](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#code-fences-using-colons) and [field lists](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#field-lists) have been activated. 
 
