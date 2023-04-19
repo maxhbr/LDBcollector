@@ -19,6 +19,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf import settings
 from django.db import connection, Error as DBError
 from django.http import HttpResponse, HttpResponseServerError
 from django.urls import include, path, re_path
@@ -78,3 +79,6 @@ urlpatterns = [
         name="schema-redoc",
     ),
 ]
+
+if settings.ENABLE_PROFILING:
+    urlpatterns += [path("silk/", include("silk.urls", namespace="silk"))]

@@ -32,7 +32,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = secrets.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("PRODUCTION", False) != "true"
+DEBUG = os.environ.get("PRODUCTION", "False").lower() != "true"
+ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING", "False").lower() == "true"
 
 if (host := os.environ.get("HOST")) is not None:
     ALLOWED_HOSTS = [host]
@@ -195,3 +196,15 @@ GRAPH_MODELS = {"all_applications": True, "group_models": True}
 
 # Version file location
 VERSION_FILE_PATH = getattr(secrets, "VERSION_FILE_PATH", None)
+
+# Silk config
+
+if ENABLE_PROFILING:
+    INSTALLED_APPS.append("silk")
+    MIDDLEWARE.insert(1, "silk.middleware.SilkyMiddleware")
+    SILKY_PYTHON_PROFILER = True
+    SILKY_AUTHENTICATION = True
+    SILKY_AUTHORISATION = True
+
+    def SILKY_PERMISSIONS(user):
+        return user.is_superuser
