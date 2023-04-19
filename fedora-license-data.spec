@@ -19,12 +19,14 @@ BuildArch:      noarch
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  make
-BuildRequires:  python3
+BuildRequires:  python3-devel
 %if 0%{?fedora} || 0%{?rhel} >= 8
 BuildRequires:  (python%{python3_pkgversion}-tomli if python%{python3_pkgversion} < 3.11)
 %else
 BuildRequires:  python%{python3_pkgversion}-tomli
 %endif
+# grammar
+BuildRequires:  python3dist(lark-parser)
 
 %if %{with rpmlint}
 BuildRequires:  python%{python3_pkgversion}-tomli-w
@@ -67,11 +69,16 @@ The Fedora Legal team is responsible for the content.
 
 
 %build
-%make_build spec-validate json %{?with_rpmlint:rpmlint}
+%make_build spec-validate json grammar %{?with_rpmlint:rpmlint}
 
 %install
-make DESTDIR=%{buildroot} install-json %{?with_rpmlint:install-rpmlint}
+make DESTDIR=%{buildroot} install-json install-grammar %{?with_rpmlint:install-rpmlint}
 
+%check
+%if 0%{?rhel} && 0%{?rhel} > 8
+# the grammar cannot be parsed on rhel8 and older
+make check-grammar
+%endif
 
 %files
 %license LICENSES/*

@@ -1,0 +1,21 @@
+// Specification:
+// https://spdx.github.io/spdx-spec/SPDX-license-expressions/
+// We use only subset of the full specification for now
+
+start: license
+
+license: license_item | left_parenthesis license right_parenthesis | license operator license | license "OR" bad_license | bad_license "OR" license
+
+left_parenthesis: "("
+right_parenthesis: ")"
+operator: "OR"|"AND"
+
+%import common.WS
+%ignore WS
+
+// here we can add bad licenses
+// it is fine to have them because they are "eaten" by "or" operator
+// FIXME general string is greedy, can we do it more generally?
+bad_license: "Bad License"
+
+// license_item is generated and appended to this grammar by create-grammar.py
