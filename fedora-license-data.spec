@@ -26,7 +26,7 @@ BuildRequires:  (python%{python3_pkgversion}-tomli if python%{python3_pkgversion
 BuildRequires:  python%{python3_pkgversion}-tomli
 %endif
 # grammar
-%if 0%{?fedora} || 0%{?rhel} >= 8
+%if 0%{?fedora} || 0%{?rhel} > 8
 BuildRequires:  python3dist(lark-parser)
 %endif
 
@@ -77,7 +77,7 @@ The Fedora Legal team is responsible for the content.
 make DESTDIR=%{buildroot} install-json install-grammar %{?with_rpmlint:install-rpmlint}
 
 %check
-%if 0%{?fedora} || 0%{?rhel} >= 8
+%if 0%{?fedora} || 0%{?rhel} > 8
 # the grammar cannot be parsed on rhel8 and older
 make check-grammar
 %endif
