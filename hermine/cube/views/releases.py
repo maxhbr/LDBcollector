@@ -246,7 +246,9 @@ class UsageUpdateView(LoginRequiredMixin, PermissionRequiredMixin, generic.Updat
     template_name = "cube/usage_update.html"
 
     def get_success_url(self):
-        return reverse("cube:release_bom", kwargs={"pk": self.object.pk})
+        return reverse(
+            "cube:release_bom", kwargs={"release_pk": self.object.release.pk}
+        )
 
 
 class UsageDeleteView(LoginRequiredMixin, PermissionRequiredMixin, generic.DeleteView):
@@ -255,4 +257,6 @@ class UsageDeleteView(LoginRequiredMixin, PermissionRequiredMixin, generic.Delet
     template_name = "cube/usage_delete.html"
 
     def get_success_url(self):
-        return reverse("cube:release_bom", kwargs={"pk": self.object.release.pk})
+        return reverse(
+            "cube:release_bom", kwargs={"release_pk": self.object.release.pk}
+        )

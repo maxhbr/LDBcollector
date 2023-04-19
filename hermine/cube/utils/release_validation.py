@@ -53,7 +53,6 @@ def apply_curations(release):
             )
         )
     ):
-
         if usage.curation is not None:
             # Check there are no conflicting curations (subquery returns only first row)
             try:
