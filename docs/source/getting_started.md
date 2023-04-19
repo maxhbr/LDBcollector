@@ -41,14 +41,20 @@ the licence of this component in this usage context?
 ```
 
 
-
 ## Manual workflow
 
+### Define a licence policy by reviewing licences 
 
-### Create a release
+You must first create a licence policy by [analysing the Open Source licences](defining_a_FOSS_policy.md).
+If you want to test the application, you can import the shared data provided by the Hermine project (analysed licences and generic obligations) :
+- Download the [Generic obligations JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Example_generic_obligations.json) and import them from the <span class ="guilabel">Generic Obligations</span> page. 
+- Download the [License JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Exemple_licences.json) and import them from the <span class ="guilabel">Licenses</span> page. 
 
-- From the Product list page (<span class ="guilabel">Your products --> All products</span>), create a new product (button in the top left corner) 
-- Create a release for this product (button in the top left corner)
+
+### Create produc and a release
+
+- From the Product list page (<span class ="guilabel">Your products --> All products</span>), create a new product by clicking "Create a new product"  
+- Then from the page of the product you've just created, create a release for this product by clicking  "Create a release for this product" 
 
 ### Express your exploitation choices
 
