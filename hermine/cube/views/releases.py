@@ -110,21 +110,6 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
         return super().form_valid(form)
 
 
-class ReleaseUsageCreateView(
-    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, generic.CreateView
-):
-    permission_required = "cube.add_usage"
-    model = Usage
-    form_class = UsageForm
-
-    def form_valid(self, form):
-        form.instance.release = self.release
-        return super().form_valid(form)
-
-    def get_success_url(self):
-        return reverse("cube:release_import", kwargs={"pk": self.object.release.pk})
-
-
 class ReleaseObligView(LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView):
     """
     Lists relevant obligations for a given release
@@ -236,3 +221,38 @@ class ReleaseBomView(
         release_id = self.kwargs["release_pk"]
         queryset = queryset.filter(release=release_id).order_by("project", "scope")
         return queryset
+
+
+class UsageCreateView(
+    LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, generic.CreateView
+):
+    permission_required = "cube.add_usage"
+    model = Usage
+    form_class = UsageForm
+    template_name = "cube/usage_create.html"
+
+    def form_valid(self, form):
+        form.instance.release = self.release
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse("cube:release_import", kwargs={"pk": self.object.release.pk})
+
+
+class UsageUpdateView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
+    permission_required = "cube.change_usage"
+    model = Usage
+    form_class = UsageForm
+    template_name = "cube/usage_update.html"
+
+    def get_success_url(self):
+        return reverse("cube:release_bom", kwargs={"pk": self.object.pk})
+
+
+class UsageDeleteView(LoginRequiredMixin, PermissionRequiredMixin, generic.DeleteView):
+    permission_required = "cube.delete_usage"
+    model = Usage
+    template_name = "cube/usage_delete.html"
+
+    def get_success_url(self):
+        return reverse("cube:release_bom", kwargs={"pk": self.object.release.pk})

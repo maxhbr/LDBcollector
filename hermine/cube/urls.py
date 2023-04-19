@@ -154,11 +154,6 @@ urlpatterns = [
         name="release_import",
     ),
     path(
-        "release/<int:release_pk>/add_usage/",
-        views.ReleaseUsageCreateView.as_view(),
-        name="release_usage_create",
-    ),
-    path(
         "release/<int:pk>/bom/export/",
         views.ReleaseBomExportView.as_view(),
         name="release_bom_export",
@@ -177,6 +172,21 @@ urlpatterns = [
         "release/<int:release_pk>/obligations/<int:generic_id>/",
         views.ReleaseGenericView.as_view(),
         name="release_generic",
+    ),
+    path(
+        "release/<int:release_pk>/add_usage/",
+        views.UsageCreateView.as_view(),
+        name="usage_create",
+    ),
+    path(
+        "usage/<int:pk>/edit/",
+        views.UsageUpdateView.as_view(),
+        name="usage_edit",
+    ),
+    path(
+        "usage/<int:pk>/delete/",
+        views.UsageDeleteView.as_view(),
+        name="usage_delete",
     ),
     # Release validation related views
     path(

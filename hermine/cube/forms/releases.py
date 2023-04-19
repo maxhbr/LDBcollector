@@ -9,6 +9,12 @@ from cube.models import Usage
 
 
 class UsageForm(AutocompleteFormMixin, ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Only show the version field if we are creating a new usage
+        if kwargs["instance"] is not None:
+            del self.fields["version"]
+
     class Meta:
         model = Usage
         fields = [
