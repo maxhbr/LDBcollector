@@ -26,6 +26,7 @@ services:
       - PASSWORD=admin
       - HOST=${HERMINE_HOST:-localhost}
       - STATIC_ROOT=/opt/static
+      - ENABLE_PROFILING=${HERMINE_PROFILING:-False}
     links:
       - db
     networks:
