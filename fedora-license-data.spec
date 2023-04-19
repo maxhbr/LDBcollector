@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.17
+Version:        1.18
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -95,6 +95,25 @@ make check-grammar
 
 
 %changelog
+* Thu Apr 20 2023 Miroslav Suchý <msuchy@redhat.com> 1.18-1
+- add BNF grammar
+- Add BSD-4.3TAHOE
+- Add Latex2e-translated-notice
+- Update UnixCrypt.toml since we don't use legacy Fedora URLs for SPDX (license
+  list) identifiers
+- Add new file: UnixCrypt
+- Add new file: LicenseRef-Schematron-schema
+- After the MIT-Festival license was accepted by SPDX, add it to the data
+- add field to template to warn about automatic conversion
+- Add jisksp16-1990-fonts to public-domain-text.txt
+- Add groff public domain notice
+- Add public-domain texts for libinstpatch
+- Update to correct SPDX id: eCos-exception-2.0
+- Update QPL-1.0-INRIA-2004 WITH QPL-1.0-INRIA-2004-exception.toml
+- Add new file: QPL-1.0-INRIA-2004 WITH QPL-1.0-INRIA-2004-exception
+- Add new file: Xdebug-1.03
+- Add new file: NIST-Software
+
 * Wed Apr 05 2023 Miroslav Suchý <msuchy@redhat.com> 1.17-1
 - Add dnsmasq po files public domain notice
 - add schema of fedora-license.json
