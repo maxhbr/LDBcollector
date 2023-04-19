@@ -17,7 +17,7 @@ caption: Contents
 ---
 install
 getting_started
-analysing_licenses
+defining_a_FOSS_policy
 api
 ```
 

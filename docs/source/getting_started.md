@@ -8,22 +8,53 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ## Main concepts used
 
-- In Hermine a "product" is a piece of software that you develop internally.
-- A "release" is a version of a product.
-- A "component" is a third party FOSS component used by you 
-- A "version" is a version of a component
-- A "scope" is a scenario in which a 3rd party dependency is used. Typically, in a nodeJS project there is two scopes: `dependencies` and `devDependencies`. 
+- In Hermine a ***product*** is a piece of software that you develop internally.
+- ***Procucts*** can be grouped into differents ***categories***.
+- A ***release*** is a version of a product.
+- A ***component*** is a third party FOSS component used by you 
+- A ***version*** is a version of a component
+- A ***scope*** is a scenario in which a 3rd party dependency is used. Typically, in a nodeJS project there is two scopes: `dependencies` and `devDependencies`. 
 The precise meaning depends on each package manager (see for instance [Maven's documentation for Dependency Scopes](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope))
+
+
+## Validation principle
+
+To answer the question: Can I use a given Open Source component in my product ?
+
+```{image} img/Hermine_schema_validation.png
+:alt: Hermine_schema_validation
+:class: bg-primary
+:width: 400px
+:align: center
+```
+
+## Identifying applicable obligations
+
+To answer the question: What obligations should I follow to be compliant with 
+the licence of this component in this usage context?
+
+```{image} img/Hermine_schema_obligations.png
+:alt: Hermine_schema_obligations
+:class: bg-primary
+:width: 600px
+:align: center
+```
 
 
 ## Manual workflow
 
-You can use Hermine through the GUI for one shot analysis:
+### Define a licence policy by reviewing licences 
 
-### Create a release
+You must first create a licence policy by [analysing the Open Source licences](defining_a_FOSS_policy.md).
+If you want to test the application, you can import the shared data provided by the Hermine project (analysed licences and generic obligations) :
+- Download the [Generic obligations JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Example_generic_obligations.json) and import them from the <span class ="guilabel">Generic Obligations</span> page. 
+- Download the [License JSON file](https://gitlab.com/hermine-project/hermine/-/blob/main/examples/data/Exemple_licences.json) and import them from the <span class ="guilabel">Licenses</span> page. 
 
-- From the Product list page (<span class ="guilabel">Your products --> All products</span>), create a new product (button in the top left corner) 
-- Create a release for this product (button in the top left corner)
+
+### Create produc and a release
+
+- From the Product list page (<span class ="guilabel">Your products --> All products</span>), create a new product by clicking "Create a new product"  
+- Then from the page of the product you've just created, create a release for this product by clicking  "Create a release for this product" 
 
 ### Express your exploitation choices
 
