@@ -45,6 +45,7 @@ addParsedType :: Text -> LicenseStatement -> LicenseStatement
 addParsedType "Lizenzen ohne Copyleft-Effekt (\"Permissive Licenses\")" stmt = stmt `SubStatements` [LicenseType Permissive]
 addParsedType "Lizenzen mit strengem Copyleft-Effekt" stmt = stmt `SubStatements` [LicenseType StronglyProtective]
 addParsedType "Lizenzen mit beschränktem Copyleft-Effekt" stmt = stmt `SubStatements` [LicenseType WeaklyProtective]
+addParsedType "Lizenzen mit Wahlmöglichkeiten" stmt = stmt `SubStatements` [LicenseType WeaklyProtective]
 addParsedType "Public Domain Erklärungen" stmt = stmt `SubStatements` [LicenseType PublicDomain]
 addParsedType n@"Open Source Lizenzen" stmt = stmt `SubStatements` [LicenseRating (PositiveLicenseRating "ifrOSS" n Nothing)]
 addParsedType n@"Ethical Licenses" stmt = stmt `SubStatements` [LicenseRating (NegativeLicenseRating "ifrOSS" n Nothing)]

@@ -30,7 +30,7 @@ header form {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 5px;
   transition: 0.3s;
   font-size: 17px;
 }
@@ -49,10 +49,14 @@ header form {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 340px;
+    left: 300px;
     overflow: scroll;
     z-index: 100;
     padding: 20px;
+}
+
+#content-graph {
+    padding: 0;
 }
 
 #content-graph svg{

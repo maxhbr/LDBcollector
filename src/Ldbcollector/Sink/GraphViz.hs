@@ -125,7 +125,7 @@ generateColorMapping = let
                                                         ]
     in Map.fromList . (`zip` colors)
 
-computeDigraph :: LicenseGraph -> [G.Node] -> [G.Node] -> [G.Node] -> GV.DotGraph G.Node
+computeDigraph :: LicenseGraph -> [G.Node] -> [G.Node] -> [G.Node] -> (GV.DotGraph G.Node, SourceRef -> GV.Color)
 computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) mainLNs sameLNs otherLNs = let
         factColoringMap = generateColorMapping ((map fst . Map.keys) facts)
         typeColoringLookup source = Map.findWithDefault (GV.RGB 0 0 0) source factColoringMap
@@ -221,11 +221,11 @@ computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) mainLNs sameLNs othe
                     edgeLabels' -> [ GV.Label (GV.toLabelValue . unlines . map show $ edgeLabels') ]
                 ) ++ getColorOfEdge (a, b, e)
             }
-    in (GV.graphToDot params graph) {
+    in ((GV.graphToDot params graph) {
             GV.strictGraph = True -- If True, no multiple edges are drawn.
-        }
+        }, typeColoringLookup)
 
-getDigraph :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM Digraph
+getDigraph :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM (Digraph, SourceRef -> GV.Color)
 getDigraph mainLNs sameLNs otherLNs = MTL.gets (\g -> computeDigraph g mainLNs sameLNs otherLNs)
 
 digraphToText :: Digraph -> LT.Text
@@ -260,14 +260,14 @@ rederDotToText layout digraph = do
 writeGraphViz :: [G.Node] -> [G.Node] -> [G.Node] -> FilePath -> LicenseGraphM ()
 writeGraphViz mainLNs sameLNs otherLNs dot = do
     debugLog $ "generate " ++ dot
-    digraph <- getDigraph mainLNs sameLNs otherLNs
+    digraph <- fst <$> getDigraph mainLNs sameLNs otherLNs
     _ <- MTL.liftIO $ renderDot "fdp" digraph dot
     pure ()
 
 genGraphViz :: [G.Node] -> [G.Node] -> [G.Node] -> LicenseGraphM LT.Text
 genGraphViz mainLNs sameLNs otherLNs = do
     lift $ debugM "genGraphViz" "getDigraph"
-    digraph <- getDigraph mainLNs sameLNs otherLNs
+    digraph <- fst <$> getDigraph mainLNs sameLNs otherLNs
     MTL.liftIO $ do
         Temp.withSystemTempDirectory "genGraphViz" $ \tmpdir -> do
             debugM "genGraphViz" "renderDigraph"

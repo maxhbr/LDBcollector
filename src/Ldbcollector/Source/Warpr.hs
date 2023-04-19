@@ -4,8 +4,6 @@ module Ldbcollector.Source.Warpr
     ( Warpr (..)
     ) where
 
-import qualified Data.Map                as Map
-import qualified Data.Text.Lazy          as T
 import qualified Data.Text.Lazy.IO       as T
 import qualified Data.Vector             as V
 import           Ldbcollector.Model
@@ -21,8 +19,8 @@ instance ToJSON WarprLicense where
 
 instance LicenseFactC WarprLicense where
     getType _ = "WarprLicense"
-    getApplicableLNs (WarprLicense l g) = LN l
-    getImpliedStmts (WarprLicense l g) = []
+    getApplicableLNs (WarprLicense l _) = LN l
+    getImpliedStmts (WarprLicense _ _) = []
     toMarkup (WarprLicense _ g) = H.pre (H.toMarkup (show g))
 
 getWarprLicense :: FilePath -> IO WarprLicense

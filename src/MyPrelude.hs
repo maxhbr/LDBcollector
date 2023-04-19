@@ -2,6 +2,7 @@ module MyPrelude
     ( module X
     , strToLower
     , tShow
+    , bsToText
     , createDirectoryIfNotExists
     , createParentDirectoryIfNotExists
     , setupLogger
@@ -17,6 +18,7 @@ import           Data.Aeson                 as X
 import           Data.Aeson.TH              as X (defaultOptions, deriveJSON, Options(..))
 import           Data.Aeson.Encode.Pretty   as X (encodePretty)
 import           Data.ByteString.Lazy       as X (ByteString)
+import qualified Data.ByteString            as BS (ByteString)
 import           Data.List                  as X
 import           Data.Map                   as X (Map)
 import           Data.Maybe                 as X
@@ -45,6 +47,12 @@ import           Text.Blaze                 as X (Markup)
 import           Data.Char                  as X (toLower)
 
 import           System.Console.Pretty      (Color (Yellow), color)
+import qualified Data.Text.Encoding            as Enc
+
+bsToText :: BS.ByteString -> Text
+bsToText = let
+        onerror _ _ = Just '_'
+    in Enc.decodeUtf8With onerror
 
 strToLower :: [Char] -> [Char]
 strToLower = map toLower

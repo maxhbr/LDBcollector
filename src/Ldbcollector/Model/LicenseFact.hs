@@ -6,6 +6,9 @@ module Ldbcollector.Model.LicenseFact
   ( SourceRef (..)
   , FactId (..)
   , Qualified (..)
+  , OriginalData (..)
+  , getOriginalDataText
+  , getOriginalDataUrl
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
   , ApplicableLNs (..)
@@ -23,6 +26,7 @@ import qualified Data.ByteString.Base16              as B16
 import qualified Data.ByteString.Lazy.Char8          as C
 import qualified Data.Map                            as Map
 import qualified Data.Vector                         as V
+import qualified Data.Text.Encoding            as Enc
 
 import           Ldbcollector.Model.LicenseName
 import           Ldbcollector.Model.LicenseStatement
@@ -89,6 +93,37 @@ applicableLNsToLicenseNameCluster (ImpreciseLNs aln alns) = let
       othersFromAlnsClusters = concatMap (\(LicenseNameCluster ln' same' other') -> ln':same'++other') alnsClusters
     in LicenseNameCluster ln same (other ++ othersFromAlnsClusters)
 
+data OriginalData
+    = OriginalBSData ByteString
+    | OriginalJsonData A.Value
+    | OriginalTextData Text
+    | FromFile FilePath OriginalData
+    | FromUrl String OriginalData
+    | NoPreservedOriginalData
+    deriving (Eq)
+instance ToJSON OriginalData where
+    toJSON (OriginalBSData bs) = toJSON $ bsToText bs
+    toJSON (OriginalJsonData v) = v
+    toJSON (OriginalTextData t) = toJSON t
+    toJSON (FromFile fn od) = object [ "fileName" .= fn
+                                     , "content" .= od
+                                     ]
+    toJSON (FromUrl url od) = object [ "url" .= url
+                                     , "content" .= od
+                                     ]
+    toJSON NoPreservedOriginalData = object []
+getOriginalDataText :: OriginalData -> Maybe Text
+getOriginalDataText (OriginalBSData bs) = (Just . bsToText) bs
+getOriginalDataText (OriginalJsonData _) = Nothing
+getOriginalDataText (OriginalTextData t) = Just t
+getOriginalDataText (FromFile _ od) = getOriginalDataText od
+getOriginalDataText (FromUrl _ od) = getOriginalDataText od
+getOriginalDataText _ = Nothing
+getOriginalDataUrl :: OriginalData -> Maybe String
+getOriginalDataUrl (FromUrl url _) = Just url
+getOriginalDataUrl (FromFile _ od) = getOriginalDataUrl od
+getOriginalDataUrl _ = Nothing
+
 class (Eq a) => LicenseFactC a where
     getType :: a -> String
     getFactId :: a -> FactId
@@ -101,6 +136,8 @@ class (Eq a) => LicenseFactC a where
     getImpliedStmts _ = []
     toMarkup :: a -> Markup
     toMarkup _ = mempty
+    getOriginalData :: a -> OriginalData
+    getOriginalData _ = NoPreservedOriginalData
     {-
      - helper functions
      -}
@@ -169,9 +206,13 @@ instance LicenseFactC LicenseFact where
     getImpliedStmts (LicenseFact _ a) = getImpliedStmts a
     toMarkup (LicenseFact _ a) = do
         toMarkup a
+        H.h3 "Names"
+        (H.toMarkup . getLicenseNameCluster) a
         let ratings = getImpliedLicenseRatings a
         unless (null ratings) $ do
-            H.h3 "names"
-            (H.toMarkup . getLicenseNameCluster) a
-            H.h3 "ratings"
+            H.h3 "Ratings"
             H.ul $ mapM_ (H.li . H.toMarkup) ratings
+        let urls = getImpliedLicenseUrls a
+        unless (null urls) $ do
+            H.h3 "URLs"
+            H.ul $ mapM_ (H.li . H.toMarkup) urls

@@ -72,6 +72,7 @@ library
     , bytestring
     , cache
     , cassava
+    , colour
     , containers
     , cryptohash-md5
     , deepseq
@@ -118,6 +119,7 @@ executable ldbcollector-exe
     , bytestring
     , cache
     , cassava
+    , colour
     , containers
     , cryptohash-md5
     , deepseq
@@ -169,6 +171,7 @@ test-suite ldbcollector-test
     , bytestring
     , cache
     , cassava
+    , colour
     , containers
     , cryptohash-md5
     , deepseq

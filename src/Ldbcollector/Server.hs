@@ -15,14 +15,16 @@ import qualified Control.Monad.State           as MTL
 import qualified Data.ByteString
 import qualified Data.ByteString.Lazy          as BL
 import qualified Data.Map                      as Map
-import qualified Data.Text.Encoding            as Enc
 import qualified Data.Text.Lazy                as T
 import qualified System.IO.Temp                as Temp
 import qualified Text.Blaze.Html.Renderer.Text as BT
 import qualified Text.Blaze.Html5              as H
 import qualified Text.Blaze.Html5.Attributes   as A
+import qualified Data.Colour as Colour
+import qualified Data.Colour.SRGB as Colour
 
 import qualified Data.Graph.Inductive.Graph    as G
+import qualified Data.GraphViz.Attributes.Complete as GV
 
 import           Data.FileEmbed                (embedFile)
 import qualified Network.Wai.Handler.Warp      as Warp
@@ -103,11 +105,9 @@ printFacts factId licenseGraph = do
                 lnToA (getMainLicenseName fact)
             toMarkup fact
             H.h3 "JSON"
-            H.pre (H.toMarkup (let
-                                onerror _ _ = Just '_'
-                            in Enc.decodeUtf8With onerror (BL.toStrict (encodePretty fact))))) facts
+            H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty fact))))) facts
 
-computeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, Digraph, LicenseNameCluster)
+computeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, (Digraph, SourceRef -> GV.Color), LicenseNameCluster)
 computeSubgraph licenseGraph paramMap = do
     let licLN = LGName (getLic paramMap)
     fmap fst . runLicenseGraphM' licenseGraph $ do
@@ -124,8 +124,8 @@ computeSubgraph licenseGraph paramMap = do
                             getDigraph needleNames sameNames otherNames)
                         <*> getLicenseNameClusterM (needleNames,sameNames,otherNames)
 
-htmlHeader :: LicenseGraph -> ParamMap -> H.Markup
-htmlHeader licenseGraph paramMap = do
+htmlHeader :: LicenseGraph -> (SourceRef -> GV.Color) -> ParamMap -> H.Markup
+htmlHeader licenseGraph typeColoringLookup paramMap = do
     let allLicenseNames = getLicenseGraphLicenseNames licenseGraph
     let allSources = (nub . map fst . Map.keys . _facts) licenseGraph
     let licRaw = getLicRaw paramMap
@@ -134,18 +134,24 @@ htmlHeader licenseGraph paramMap = do
         H.div H.! A.class_ "tab" $ do
             H.button H.! A.class_ "tablinks active" H.! A.onclick "openTab(event, 'content-graph')" $ "Graph"
             H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-text')" $ "Summary"
-            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-raw')" $ "Raw"
+            H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-raw')" $ "Separate"
         H.form H.! A.action "" $ do
             H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
             H.datalist H.! A.id "licenses" $
                 mapM_ (\license -> H.option H.! A.value (fromString $ show license) $ pure ()) allLicenseNames
             H.h4 "Sources"
             H.ul $
-                mapM_ (\(Source source) -> H.li $ do
+                mapM_ (\s@(Source source) -> H.li $ do
                         H.input H.! A.type_ "checkbox" H.! A.name (fromString source) H.! A.value "on" H.! (if isSourceEnabled paramMap (Source source)
                                                                                                             then A.checked "checked"
                                                                                                             else mempty)
-                        H.label H.! A.for (fromString source) $ fromString source
+                        let pureColour :: (Ord a, Fractional a) => Colour.AlphaColour a -> Colour.Colour a
+                            pureColour ac | a > 0 = Colour.darken (recip a) (ac `Colour.over` Colour.black)
+                                          | otherwise = error "transparent has no pure colour"
+                             where
+                              a = Colour.alphaChannel ac
+                        let color = (maybe "black" (Colour.sRGB24show . pureColour) . GV.toColour . typeColoringLookup) s
+                        H.label H.! A.for (fromString source) H.! A.style (fromString $ "color: " ++ color ++ "; font-weight: bold;") $ fromString source
                     ) allSources
             H.h4 "Graph Options"
             H.ul $ do
@@ -155,24 +161,6 @@ htmlHeader licenseGraph paramMap = do
                                                                                                              else mempty)
                     H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
             H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
-
--- dotPage :: [S.Param] -> LicenseGraph -> IO H.Html
--- dotPage params licenseGraph = do
---     paramMap <- evaluateParams params
---     (_,_,digraph,_) <- computeSubgraph licenseGraph paramMap
---     return . H.html $ do
---             let licRaw = getLicRaw paramMap
---             H.head $ do
---                 H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
---                 H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
---                 H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
---                 H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
---                 H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
---                 H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
---             H.body $ do
---                 htmlHeader licenseGraph paramMap
---                 H.div H.! A.class_ "content" $ pure ()
---                 dotSvgMarkup digraph
 
 dotSvgMarkup :: Digraph -> H.Markup
 dotSvgMarkup digraph = let
@@ -184,11 +172,12 @@ dotSvgMarkup digraph = let
             "d3.select(\".content\")"
             "    .graphviz()"
             "    .engine('fdp')"
+            "    .zoomScaleExtent([1,30])"
             "    .fit(true)"
             "    .renderDot(document.getElementById('graph.dot').textContent);"
 
-mainPage :: ParamMap -> LicenseGraph -> (LicenseGraphType, LicenseNameGraphType, Digraph, LicenseNameCluster) -> IO H.Html
-mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,cluster) = do
+mainPage :: ParamMap -> LicenseGraph -> (LicenseGraphType, LicenseNameGraphType, (Digraph, SourceRef -> GV.Color), LicenseNameCluster) -> IO H.Html
+mainPage paramMap licenseGraph (subgraph,lnsubgraph,(digraph, typeColoringLookup),cluster) = do
 
     let facts = (mapMaybe (\case
                                LGFact f -> Just f
@@ -199,12 +188,16 @@ mainPage paramMap licenseGraph (subgraph,lnsubgraph,digraph,cluster) = do
             H.head $ do
                 H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
                 H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
+                H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+                H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
                 H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
+
+                H.script H.! A.src "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" $ pure ()
                 H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
                 H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
                 H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
             H.body $ do
-                htmlHeader licenseGraph paramMap
+                htmlHeader licenseGraph typeColoringLookup paramMap
                 H.div H.! A.class_ "content active" H.! A.id "content-graph" H.! A.style "display: block;" $ do
                     dotSvgMarkup digraph
                 H.div H.! A.class_ "content" H.! A.id "content-text" $ do
@@ -267,13 +260,13 @@ serve = do
             get "/dot" $ do
                 params <- S.params
                 dot <- liftAndCatchIO $ do
-                    (_, (_,_,digraph,_)) <- init params
+                    (_, (_,_,(digraph,_),_)) <- init params
                     return (digraphToText digraph)
                 text dot
             get "/svg" $ do
                 params <- S.params
                 svg <- liftAndCatchIO $ do
-                    (_, (_,_,digraph,_)) <- init params
+                    (_, (_,_,(digraph,_),_)) <- init params
                     rederDotToText "fdp" digraph
                 setHeader "Content-Type" "image/svg+xml"
                 text svg
