@@ -31,7 +31,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <th>License expression</th>
         <th>Choice for this release</th>
         <th>Rules</th>
-        <th>Edit usage</th>
+        <th>Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -61,7 +61,9 @@ SPDX-License-Identifier: AGPL-3.0-only
             {% endif %}
           </td>
           <td>{% if perms.cube.change_usage %}
-            <a href="{% url "admin:cube_usage_change" usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            <a href="{% url "cube:usage_edit" usage.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+          {% endif %}{% if perms.cube.delete_usage %}
+            | <a href="{% url "cube:usage_delete" usage.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
           {% endif %}</td>
         </tr>
       {% endfor %}

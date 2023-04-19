@@ -1,0 +1,31 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% block title %}Delete usage{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:product_detail' usage.release.product.id %}">{{ usage.release.product.name }}</a></li>
+    <li><a href="{% url 'cube:release_validation' usage.release.id %}">{{ usage.release.release_number }}</a></li>
+    <li>{{ usage.version }}</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">Delete usage</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete usage of component <em>{{ usage.version }}</em> for <em>{{ usage.release }}</em>?</p>
+    {{ form }}
+    <input type="submit" class="button is-primary" value="Confirm">
+  </form>
+{% endblock %}
