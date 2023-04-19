@@ -3,7 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import Count
+from django.db.models import Count, Subquery, Q, Case, When, OuterRef, F
 
 from cube.models import (
     Release,
@@ -32,17 +32,44 @@ STEP_POLICY = 5
 
 # Functions with side effect to update releases according to curations and choices
 def apply_curations(release):
-    for usage in release.usage_set.filter(
-        version__corrected_license="",
-    ):
-        try:
-            usage.version.corrected_license = (
-                LicenseCuration.objects.for_version(usage.version).get().expression_out
+    for usage in (
+        release.usage_set.filter(version__corrected_license="")
+        .annotate(
+            imported_license=Case(
+                When(
+                    version__spdx_valid_license_expr="",
+                    then=F("version__declared_license_expr"),
+                ),
+                default=F("version__spdx_valid_license_expr"),
             )
+        )
+        .annotate(
+            curation=Subquery(
+                LicenseCuration.objects.filter(
+                    Q(component=OuterRef("version__component")) | Q(component=None),
+                    Q(version=OuterRef("version")) | Q(version=None),
+                    Q(expression_in=OuterRef("imported_license")),
+                ).values("expression_out")
+            )
+        )
+    ):
 
-            usage.version.save()
-        except (LicenseCuration.DoesNotExist, LicenseCuration.MultipleObjectsReturned):
-            pass
+        if usage.curation is not None:
+            # Check there are no conflicting curations (subquery returns only first row)
+            try:
+                if (
+                    usage.curation
+                    == LicenseCuration.objects.for_version(usage.version)
+                    .get()
+                    .expression_out
+                ):
+                    usage.version.corrected_license = usage.curation
+                    usage.version.save()
+            except (
+                LicenseCuration.DoesNotExist,
+                LicenseCuration.MultipleObjectsReturned,
+            ):
+                logger.warning("Multiple curations for %s", usage.version.component)
 
 
 def propagate_choices(release: Release):
@@ -147,7 +174,9 @@ def validate_ands(release: Release):
     context = dict()
     ambiguous_spdx = [
         usage
-        for usage in release.usage_set.exclude(version__spdx_valid_license_expr="")
+        for usage in release.usage_set.exclude(
+            version__spdx_valid_license_expr=""
+        ).select_related("version")
         if is_ambiguous(usage.version.spdx_valid_license_expr)
     ]
 
