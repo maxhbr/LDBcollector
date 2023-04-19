@@ -24,6 +24,7 @@ class UsageForm(AutocompleteFormMixin, ModelForm):
             "linking",
             "component_modified",
             "exploitation",
+            "description",
         ]
         labels = {
             "version": "3rd party component and version",
