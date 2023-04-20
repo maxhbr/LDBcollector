@@ -24,6 +24,7 @@ caption: Contents
 ---
 coding_standards
 data_model
+permissions
 django_tags
 tests
 ```

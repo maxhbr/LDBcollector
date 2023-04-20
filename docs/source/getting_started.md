@@ -17,9 +17,12 @@ SPDX-License-Identifier: CC-BY-4.0
 The exact meaning depends on each package manager (see for instance [Maven's documentation for Dependency Scopes](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope))
 
 
-## Validation principle
+## Main questions Hermine helps you answer
 
-To answer the question: Can I use a given Open Source component in my product ?
+
+### Can I use a given Open Source component in my product?
+
+Hermine helps you automatically validate the inclusion of an Open Source component in your software product.
 
 ```{image} img/Hermine_schema_validation.png
 :alt: Hermine_schema_validation
@@ -28,9 +31,9 @@ To answer the question: Can I use a given Open Source component in my product ?
 :align: center
 ```
 
-## Identifying applicable obligations
+### What actions should I perform to comply with the licenses of the included Open Source component?  
 
-To answer the question: What obligations should I follow to be compliant with the licence of this component in this usage context?
+ Hermine helps you identify Which obligations you should comply with, once you have included an Open Source component in your software product.
 
 ```{image} img/Hermine_schema_obligations.png
 :alt: Hermine_schema_obligations
@@ -39,6 +42,10 @@ To answer the question: What obligations should I follow to be compliant with th
 :align: center
 ```
 
+### What are the Open Source components used across my different products?
+
+Hermine allows you to identify the different products including a given version of an Open Source component, 
+to list the most frequently used Open Source component accross all your products, etc.
 
 ## Manual workflow
 
