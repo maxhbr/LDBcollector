@@ -51,9 +51,8 @@ private const val CATEGORY_GENERIC = "generic"
 private const val CATEGORY_PERMISSIVE = "permissive"
 private const val CATEGORY_UNKNOWN = "unknown"
 
-private val OVERRIDE_LICENSE_CATEGORIES = mapOf(
-    // https://github.com/nexB/scancode-toolkit/issues/3317.
-    "LicenseRef-scancode-ms-cla" to CATEGORY_CLA
+private val OVERRIDE_LICENSE_CATEGORIES = mapOf<String, String>(
+    // To override a category of a license add an entry like: "LicenseRef-scancode-ms-cla" to CATEGORY_CLA.
 ).mapKeys { (license, _) -> SpdxSingleLicenseExpression.parse(license) }
 
 // ScanCode does not provide categories for pairs of licenses and their belonging exceptions. So, hard-code some:
