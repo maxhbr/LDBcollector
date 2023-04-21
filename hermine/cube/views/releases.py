@@ -219,7 +219,9 @@ class ReleaseBomView(
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset(*args, **kwargs)
         release_id = self.kwargs["release_pk"]
-        queryset = queryset.filter(release=release_id).order_by("project", "scope")
+        queryset = queryset.filter(release=release_id).order_by(
+            "project", "scope", "exploitation", "license_expression"
+        )
         return queryset
 
 
