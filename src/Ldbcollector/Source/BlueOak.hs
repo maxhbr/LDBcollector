@@ -123,7 +123,16 @@ instance LicenseFactC BlueOakCouncilFact where
 data BlueOakCouncil
      = BlueOakCouncilLicenseList FilePath
      | BlueOakCouncilCopyleftList FilePath
-
+instance HasOriginalData BlueOakCouncil where
+    getOriginalData (boc) = 
+        FromUrl "https://blueoakcouncil.org/" $
+        case boc of
+            (BlueOakCouncilLicenseList file) -> 
+                FromUrl "https://blueoakcouncil.org/list.json" $
+                FromFile file NoPreservedOriginalData
+            (BlueOakCouncilCopyleftList file) ->
+                FromUrl "https://blueoakcouncil.org/copyleft.json" $
+                FromFile file NoPreservedOriginalData
 instance Source BlueOakCouncil where
     getSource _  = Source "BlueOakCouncil"
     getFacts (BlueOakCouncilLicenseList file) = do

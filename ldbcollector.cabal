@@ -26,6 +26,7 @@ library
   exposed-modules:
       Ldbcollector.Model
       Ldbcollector.Model.LicenseFact
+      Ldbcollector.Model.LicenseFactMetadata
       Ldbcollector.Model.LicenseGraph
       Ldbcollector.Model.LicenseGraphAlgo
       Ldbcollector.Model.LicenseName

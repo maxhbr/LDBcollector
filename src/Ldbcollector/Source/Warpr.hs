@@ -34,6 +34,10 @@ getWarprLicense ttl = do
 
 newtype Warpr = Warpr FilePath
 
+instance HasOriginalData Warpr where
+    getOriginalData (Warpr dir) =
+        FromUrl "https://github.com/warpr/licensedb" $
+        FromFile dir NoPreservedOriginalData
 instance Source Warpr where
     getSource _ = Source "Warpr"
     getFacts (Warpr dir) = do

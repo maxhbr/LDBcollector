@@ -23,7 +23,9 @@ instance LicenseFactC CurationItem where
     getImpliedStmts (CurationItem _ stmts) = stmts
 
 newtype Curation = Curation (V.Vector CurationItem)
-
+instance HasOriginalData Curation where
+    getOriginalData (Curation items) =
+        OriginalJsonData (toJSON items)
 instance Source Curation where
     getSource _  = Source "Curation"
     getFacts (Curation items) = return (V.map wrapFact items)

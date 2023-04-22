@@ -79,8 +79,8 @@ stylesheet = $(embedFile "src/assets/styles.css")
 scriptJs :: Data.ByteString.ByteString
 scriptJs = $(embedFile "src/assets/script.js")
 
-lnToA :: LicenseName -> H.Markup
-lnToA ln = H.a H.! A.href ((H.toValue . ("/?license=" ++) . show) ln) $ H.toMarkup ln
+lnToA :: Maybe String -> LicenseName -> H.Markup
+lnToA queryparams ln = H.a H.! A.href ((H.toValue . (++ fromMaybe "" queryparams) . ("/?license=" ++) . show) ln) $ H.toMarkup ln
 
 listPageAction :: [[LicenseName]] -> ActionM ()
 listPageAction clusters = do
@@ -91,6 +91,27 @@ listPageAction clusters = do
                     H.li (H.ul $ mapM_ (H.li . (\n -> H.a H.! A.href ((H.toValue . ("./svg/"++)) n) $ H.toMarkup n) . show) cluster)) clusters
     html (BT.renderHtml page)
 
+printFactsForSource :: SourceRef -> LicenseGraph -> IO H.Html
+printFactsForSource source licenseGraph = do
+    ((facts,sourceInstance), _) <-
+        runLicenseGraphM' licenseGraph $
+            (,) <$> MTL.gets (filter (\(s,_) -> s == source) . Map.keys . _facts)
+                <*> MTL.gets (Map.lookup source . _sources)
+    return . H.html $ do
+        H.h1 $ H.toMarkup (show source)
+        case sourceInstance of
+            Just sourceInstance' -> do
+                H.toMarkup (getOriginalData sourceInstance')
+            Nothing -> pure ()
+        mapM_ (\(source,fact) -> do
+            let factId@(FactId ty hash) = getFactId fact
+            H.h2 $ do
+                H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ H.toMarkup (show factId)
+                " for "
+                lnToA (Just $ "&"++show source++"=on") (getMainLicenseName fact)
+            H.toMarkup (getLicenseNameCluster fact)
+            ) facts
+
 printFacts :: FactId -> LicenseGraph -> IO H.Html
 printFacts factId licenseGraph = do
     (facts,_) <-
@@ -98,11 +119,12 @@ printFacts factId licenseGraph = do
             MTL.gets (filter (\(_,f) -> getFactId f == factId) . Map.keys . _facts)
     return . H.html $ do
         mapM_ (\(source,fact) -> do
-            H.h1 (H.toMarkup (show source))
+            H.h1 $ do
+                H.a H.! A.href (H.toValue $ "/source" </> show source) $ H.toMarkup (show source)
             H.h2 $ do
                 H.toMarkup (show (getFactId fact))
                 " for "
-                lnToA (getMainLicenseName fact)
+                lnToA (Just $ "&"++show source++"=on") (getMainLicenseName fact)
             toMarkup fact
             H.h3 "JSON"
             H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty fact))))) facts
@@ -151,7 +173,9 @@ htmlHeader licenseGraph typeColoringLookup paramMap = do
                              where
                               a = Colour.alphaChannel ac
                         let color = (maybe "black" (Colour.sRGB24show . pureColour) . GV.toColour . typeColoringLookup) s
-                        H.label H.! A.for (fromString source) H.! A.style (fromString $ "color: " ++ color ++ "; font-weight: bold;") $ fromString source
+                        H.label H.! A.for (fromString source) H.! A.style (fromString $ "color: " ++ color ++ "; font-weight: bold;") $ do
+                            fromString source
+                            H.a H.! A.href (H.toValue $ "/source" </> show s) $ " [*]"
                     ) allSources
             H.h4 "Graph Options"
             H.ul $ do
@@ -166,7 +190,7 @@ dotSvgMarkup :: Digraph -> H.Markup
 dotSvgMarkup digraph = let
         digraphDot = digraphToText digraph
     in do
-        H.pre H.! A.id "graph.dot" H.! A.style "display:none;" $ 
+        H.pre H.! A.id "graph.dot" H.! A.style "display:none;" $
             H.toMarkup digraphDot
         H.script $ do
             "d3.select(\".content\")"
@@ -216,9 +240,9 @@ mainPage paramMap licenseGraph (subgraph,lnsubgraph,(digraph, typeColoringLookup
                     H.ul $ mapM_ (\fact -> H.li $ do
                         let factId@(FactId ty hash) = getFactId fact
                         H.h3 $ do
-                            H.a H.! A.href (H.toValue $ "./fact" </> ty </> hash) $ H.toMarkup (show factId)
+                            H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ H.toMarkup (show factId)
                             " for "
-                            lnToA (getMainLicenseName fact)
+                            lnToA Nothing (getMainLicenseName fact)
                         toMarkup fact
                         ) facts
                 H.script H.! A.src "/script.js" $
@@ -228,7 +252,7 @@ mainPage paramMap licenseGraph (subgraph,lnsubgraph,(digraph, typeColoringLookup
 getMyOptions :: IO S.Options
 getMyOptions = do
     port <- maybe 3000 read <$> Env.lookupEnv "PORT"
-    putStrLn ("PORT=" ++ show port) 
+    putStrLn ("PORT=" ++ show port)
     return $ S.Options 1 (Warp.setPort port (Warp.setFileInfoCacheDuration 3600 (Warp.setFdCacheDuration 3600 Warp.defaultSettings)))
 
 serve :: LicenseGraphM ()
@@ -270,6 +294,10 @@ serve = do
                     rederDotToText "fdp" digraph
                 setHeader "Content-Type" "image/svg+xml"
                 text svg
+            get "/source/:source" $ do
+                source <- fromString <$> param "source"
+                page <- liftAndCatchIO $ printFactsForSource source licenseGraph
+                html (BT.renderHtml page)
             get "/fact/:facttype/:facthash" $ do
                 facttype <- fromString <$> param "facttype"
                 facthash <- fromString <$> param "facthash"

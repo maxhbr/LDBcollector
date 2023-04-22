@@ -10,23 +10,14 @@ module Ldbcollector.Source.HitachiOpenLicense
 
 import           Ldbcollector.Model
 
-import           Data.Aeson
-import           Data.Aeson.Encode.Pretty   (encodePretty)
 import           Data.Aeson.Types           (Parser)
-import qualified Data.ByteString
 import qualified Data.ByteString.Lazy       as B
 import qualified Data.ByteString.Lazy.Char8 as Char8
 import qualified Data.Char                  as Char
 import qualified Data.Csv                   as C
-import           Data.FileEmbed             (embedFile)
-import           Data.Map                   (Map)
 import qualified Data.Map                   as M
-import           Data.Maybe                 (catMaybes, maybeToList)
-import           Data.Set                   (Set)
-import qualified Data.Set                   as S
 import qualified Data.Text                  as T
 import qualified Data.Vector                as V
-import           Network.URI                (parseURI)
 import qualified Text.Blaze.Html5           as H
 
 type URL
@@ -671,9 +662,13 @@ instance LicenseFactC OlLicense where
         H.pre (H.toMarkup license_content)
 
 data HitachiOpenLicense = HitachiOpenLicense FilePath FilePath
-
+instance HasOriginalData HitachiOpenLicense where
+    getOriginalData (HitachiOpenLicense dir _) = 
+        FromUrl "https://github.com/Hitachi/open-license" $
+        FromFile dir NoPreservedOriginalData
 instance Source HitachiOpenLicense where
     getSource _  = Source "HitachiOpenLicense"
+    getSourceDescription _ = Just "Open data of logically decomposed OSS licenses."
     getFacts (HitachiOpenLicense dir translationsCSV) = let
             actionsFile = dir </> "actions.json"
             conditionsFile = dir </> "conditions.json"

@@ -29,7 +29,7 @@ applySources :: Vector CurationItem -> LicenseGraphM ()
 applySources curation = do
     lift $ infoM rootLoggerName "# get sources ..."
     applySource (SPDXData "./data/spdx-license-list-data/json/details/")
-    applySource OSI
+    -- applySource OSI
     applySource (GoogleLicensePolicy "./data/google-licensecheck.license_type.go.json")
     applySource (FedoraLicenseData "./data/fedora-legal-fedora-license-data.jsons")
     applySource (BlueOakCouncilLicenseList "./data/blueoakcouncil/blue-oak-council-license-list.json")

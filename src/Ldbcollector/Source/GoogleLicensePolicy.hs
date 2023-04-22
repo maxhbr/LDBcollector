@@ -70,6 +70,11 @@ instance LicenseFactC GoogleLicense where
         _                   -> []
 
 newtype GoogleLicensePolicy = GoogleLicensePolicy FilePath
+instance HasOriginalData GoogleLicensePolicy where
+    getOriginalData (GoogleLicensePolicy json) =
+        FromUrl "https://opensource.google/documentation/reference/thirdparty/licenses" $
+        FromUrl "https://github.com/google/licenseclassifier/blob/main/license_type.go" $
+        FromFile json NoPreservedOriginalData
 instance Source GoogleLicensePolicy where
     getSource _  = Source "GoogleLicensePolicy"
     getFacts (GoogleLicensePolicy json) = do

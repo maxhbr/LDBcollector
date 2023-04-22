@@ -47,7 +47,7 @@ filterSources sources = do
         in lg {_facts = facts'})
 
 focusSequentially :: [G.Node] -> LicenseGraph -> (LicenseGraph, ([G.Node], [G.Node], [G.Node]))
-focusSequentially needles (LicenseGraph gr node_map node_map_rev facts) = let
+focusSequentially needles (LicenseGraph gr node_map node_map_rev facts _) = let
 
         backed = Map.elems facts
         backedNodes = mconcat $ map fst backed

@@ -84,6 +84,11 @@ getOSADLMatrix json = do
 
 newtype OSADL
     = OSADL FilePath
+instance HasOriginalData OSADL where
+    getOriginalData (OSADL dir) = 
+        FromUrl "https://www.osadl.org/OSADL-Open-Source-License-Checklists.oss-compliance-lists.0.html" $
+        FromUrl "https://www.osadl.org/fileadmin/checklists/checklists-rawdata.tgz" $
+        FromFile dir NoPreservedOriginalData
 instance Source OSADL where
     getSource _ = Source "OSADL"
     getFacts (OSADL dir) = do

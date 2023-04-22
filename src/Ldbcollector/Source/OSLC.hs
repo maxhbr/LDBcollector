@@ -81,8 +81,13 @@ parseYaml yaml = do
 
 newtype OSLC = OSLC FilePath
 
+instance HasOriginalData OSLC where
+    getOriginalData (OSLC dir) = 
+        FromUrl "https://github.com/finos/OSLC-handbook" $
+        FromFile dir NoPreservedOriginalData
 instance Source OSLC where
     getSource _  = Source "OSLC"
+    getSourceDescription _ = Just "This handbook provides information on how to comply with some of the more common open source licenses under a specific set of use-cases."
     getFacts (OSLC dir) = do
         yamls <- glob (dir </> "*.yaml")
         V.fromList . map wrapFact . mconcat <$> mapM parseYaml yamls

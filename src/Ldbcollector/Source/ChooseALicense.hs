@@ -100,9 +100,14 @@ readTxt txt = do
                     return Nothing
                 Right calData -> return (Just calData{_id = Just ((newNLN "cal" . pack) fromFilename)})
         _ -> return Nothing --(return . Add . LicenseName . fromString) fromFilename
-
+instance HasOriginalData ChooseALicense where
+    getOriginalData (ChooseALicense dir) =
+        FromUrl "https://choosealicense.com" $
+        FromUrl "https://github.com/github/choosealicense.com/" $
+        FromFile dir NoPreservedOriginalData
 instance Source ChooseALicense where
     getSource _  = Source "ChooseALicense"
+    getSourceDescription _ = Just "ChooseALicense.com aims to provide **accurate**, **non-judgmental**, and **understandable** information about popular **open source licenses** in order to **help people make informed decisions** about the projects they start, maintain, contribute to, and use."
     getFacts (ChooseALicense dir) = do
         txts <- glob (dir </> "*.txt")
         V.fromList . map wrapFact . catMaybes <$> mapM readTxt txts

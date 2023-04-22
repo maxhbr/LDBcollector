@@ -57,12 +57,19 @@ instance LicenseFactC FedoraEntry where
              `ImpreciseLNs` map LN (legacy_names ++ legacy_abbreviation)
     getApplicableLNs _ = undefined -- should not happen
     getImpliedStmts (FedoraEntry _ (FedoraEntryLicense { _status = status , _urls = urls , _text = text }) (FedoraEntryFedora {_notes = notes})) = let
+            allowedDescription = "A license is allowed if Fedora determines that the license is a free software / open source license. At a high level, the inquiry involves determining whether the license provides software freedom, and (equivalently) making sure that the license does not place burdens on users' exercise of its permissions that are inconsistent with evolving community norms and traditions around what is acceptable in a free software / open source license. See below for more on the history of Fedora licensing policy."
+            notAllowedDescription = "Any license that does not meet the criteria above for allowed licenses (including allowed for a specific category) is not-allowed."
             subStatementsFromStatus [] = []
-            subStatementsFromStatus (a@"allowed":stmts)               = LicenseRating (PositiveLicenseRating "Fedora" a Nothing): subStatementsFromStatus stmts
-            subStatementsFromStatus (a@"allowed-fonts":stmts)         = LicenseRating (NeutralLicenseRating  "Fedora" a Nothing): subStatementsFromStatus stmts
-            subStatementsFromStatus (a@"allowed-content":stmts)       = LicenseRating (NeutralLicenseRating  "Fedora" a Nothing): subStatementsFromStatus stmts
-            subStatementsFromStatus (a@"allowed-documentation":stmts) = LicenseRating (NeutralLicenseRating  "Fedora" a Nothing): subStatementsFromStatus stmts
-            subStatementsFromStatus (a@"not-allowed":stmts)           = LicenseRating (NegativeLicenseRating "Fedora" a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed":stmts) = 
+                 LicenseRating (PositiveLicenseRating "Fedora" a (Just allowedDescription)): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-fonts":stmts) = 
+                LicenseRating (NeutralLicenseRating "Fedora" a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-content":stmts) = 
+                LicenseRating (NeutralLicenseRating "Fedora" a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"allowed-documentation":stmts) = 
+                LicenseRating (NeutralLicenseRating "Fedora" a Nothing): subStatementsFromStatus stmts
+            subStatementsFromStatus (a@"not-allowed":stmts) =
+                LicenseRating (NegativeLicenseRating "Fedora" a (Just notAllowedDescription)): subStatementsFromStatus stmts
             subStatementsFromStatus (_:stmts) = subStatementsFromStatus stmts
         in
         [ stmt (show status) `SubStatements` subStatementsFromStatus status
@@ -81,8 +88,14 @@ getEntry json = do
       Right entry -> return $ entry{ _id = Just id }
 
 newtype FedoraLicenseData = FedoraLicenseData FilePath
+instance HasOriginalData FedoraLicenseData where
+    getOriginalData (FedoraLicenseData dir) = 
+        FromUrl "https://docs.fedoraproject.org/en-US/legal/license-approval" $
+        FromUrl "https://gitlab.com/fedora/legal/fedora-license-data" $
+        FromFile dir NoPreservedOriginalData
 instance Source FedoraLicenseData where
     getSource _  = Source "Fedora"
+    getSourceDescription _ = Just "This project contains data for licenses that have been reviewed for use in the Fedora Linux project."
     getFacts (FedoraLicenseData dir) = do
         jsons <- glob (dir </> "*.json")
         V.fromList <$> mapM (fmap wrapFact . getEntry) jsons

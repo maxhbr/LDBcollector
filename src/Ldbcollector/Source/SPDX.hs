@@ -5,6 +5,7 @@ module Ldbcollector.Source.SPDX
   ) where
 
 import           Ldbcollector.Model
+import           Ldbcollector.Source.OSI (isOsiApproved)
 
 import qualified Data.Vector             as V
 
@@ -50,15 +51,17 @@ instance LicenseFactC SPDXLicense where
             Just True -> LicenseRating (PositiveLicenseRating "FSF" "Libre" Nothing) 
             Just False -> LicenseRating (NegativeLicenseRating "FSF" "Not-Libre" Nothing) 
             _ -> noStmt
-        , LicenseRating $ if _isOsiApproved lic
-                          then PositiveLicenseRating "OSI" "Approved" Nothing
-                          else NeutralLicenseRating "OSI" "not-Approved" Nothing
+        , isOsiApproved (Just (_isOsiApproved lic))
         , maybe noStmt LicenseComment (_licenseComments lic)
         , LicenseText (_licenseText lic) `SubStatements` [LicenseText (_licenseTextHtml lic)]
         ] ++ map LicenseUrl (getUrls lic)
 
 newtype SPDXData = SPDXData FilePath
-
+instance HasOriginalData SPDXData where
+    getOriginalData (SPDXData dir) =
+        FromUrl "https://spdx.org/licenses/" $
+        FromUrl "https://github.com/spdx/license-list-data" $
+        FromFile dir NoPreservedOriginalData
 instance Source SPDXData where
     getSource _  = Source "SPDX"
     getFacts (SPDXData jsonDetailsDir) = let

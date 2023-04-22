@@ -1,4 +1,5 @@
 {-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Ldbcollector.Source.Cavil
     ( CavilLicenseChanges (..)
     ) where
@@ -11,11 +12,6 @@ import           Data.ByteString.Char8 (lines, split, unwords)
 import qualified Data.Map              as M
 import           Data.Text.Encoding    as T
 import qualified Data.Vector           as V
-
-
--- data/openSUSE-cavil/lib/Cavil/resources/license_changes.txt
-
-newtype CavilLicenseChanges = CavilLicenseChanges FilePath
 
 data CavilLicenseChange
     = CavilLicenseChange
@@ -40,8 +36,15 @@ lineToMap bs = let
 linesToMap :: [B.ByteString] -> Map LicenseName [LicenseName]
 linesToMap bss = M.unionsWith (<>) $ map lineToMap bss
 
+
+newtype CavilLicenseChanges = CavilLicenseChanges FilePath
+instance HasOriginalData CavilLicenseChanges where
+    getOriginalData (CavilLicenseChanges txt) = 
+        FromUrl "https://github.com/openSUSE/cavil" $
+        FromFile txt NoPreservedOriginalData
 instance Source CavilLicenseChanges where
     getSource _  = Source "CavilLicenseChanges"
+    getSourceDescription _ = Just "Cavil is a legal review system for the Open Build Service. It is used in the development of openSUSE Tumbleweed, openSUSE Leap, as well as SUSE Linux Enterprise."
     getFacts (CavilLicenseChanges txt) = do
         logFileReadIO txt
         csvData <- B.readFile txt

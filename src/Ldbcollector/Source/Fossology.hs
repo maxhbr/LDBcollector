@@ -59,7 +59,6 @@ instance FromJSON FossologyEntry where
         <*> (toBool <$> v .: "rf_spdx_compatible")
         -- <*> v .: "rf_flag"
 instance ToJSON FossologyEntry
-
 instance LicenseFactC FossologyEntry where
     getType _ = "Fossology"
     getApplicableLNs entry =
@@ -79,6 +78,11 @@ instance LicenseFactC FossologyEntry where
         ]
 
 newtype Fossology = FossologyLicenseRef FilePath
+instance HasOriginalData Fossology where
+    getOriginalData (FossologyLicenseRef json) =
+        FromUrl "https://fossology.org" $
+        FromUrl "https://github.com/fossology/fossology" $
+        FromFile json NoPreservedOriginalData
 instance Source Fossology where
     getSource _ = Source "Fossology"
     getFacts (FossologyLicenseRef json) = do

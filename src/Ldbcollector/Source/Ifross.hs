@@ -36,7 +36,11 @@ data IfrossLicense
 classificationToLicenses :: [(Text,Text)] -> IfrossClassification -> [IfrossLicense]
 classificationToLicenses prefix (IfrossClassification name description licenses subcategories) = let
         cwds = prefix ++ [(name, description)]
-        kvToLicense (key, value) = IfrossLicense (newNLN "ifross" $ pack key) ((newLN . T.strip . T.dropWhileEnd (=='(') . pack) key) value cwds
+        kvToLicense (key, value) =
+            IfrossLicense (newNLN "ifrOSS" $ pack key)
+                          ((newLN . T.strip . T.dropWhileEnd (=='(') . pack) key)
+                          value
+                          cwds
         fromLicenses = (map kvToLicense . Map.assocs . fromMaybe mempty) licenses
         fromSubcategories = (concatMap (classificationToLicenses cwds) . fromMaybe mempty) subcategories
     in fromLicenses ++ fromSubcategories
@@ -70,6 +74,11 @@ instance LicenseFactC IfrossLicense where
                                                    ]
 
 newtype Ifross = Ifross FilePath
+instance HasOriginalData Ifross where
+    getOriginalData (Ifross yaml) = 
+        FromUrl "https://ifross.github.io/ifrOSS/Lizenzcenter" $
+        FromUrl "https://github.com/ifrOSS/ifrOSS" $
+        FromFile yaml NoPreservedOriginalData
 instance Source Ifross where
     getSource _  = Source "ifrOSS"
     getFacts (Ifross yaml) = do

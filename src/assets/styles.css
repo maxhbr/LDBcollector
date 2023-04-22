@@ -12,6 +12,7 @@ header {
     display: block;
     padding: 20px;
     z-index: 9999;
+    overflow-y: scroll;
 }
 
 header form {

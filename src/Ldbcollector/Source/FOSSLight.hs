@@ -166,7 +166,10 @@ instance LicenseFactC FOSSLightFact where
     getImpliedStmts (FOSSLightFact license _) = [LicenseType (toLicenseType (_fossLight_type license))]
 
 newtype FOSSLight = FOSSLight FilePath
-
+instance HasOriginalData FOSSLight where
+    getOriginalData (FOSSLight sqlite) =
+        FromUrl "https://raw.githubusercontent.com/fosslight/fosslight/main/db/initdb.d/fosslight_create.sql" $
+        FromFile sqlite NoPreservedOriginalData
 instance Source FOSSLight where
     getSource _ = Source "FOSSLight"
     getFacts (FOSSLight sqlite) = let

@@ -6,9 +6,6 @@ module Ldbcollector.Model.LicenseFact
   ( SourceRef (..)
   , FactId (..)
   , Qualified (..)
---   , OriginalData (..)
---   , getOriginalDataText
---   , getOriginalDataUrl
   , LicenseFact (..)
   , wrapFact, wrapFacts, wrapFactV
   , ApplicableLNs (..)
@@ -34,7 +31,11 @@ import qualified Text.Blaze                          as H
 import qualified Text.Blaze.Html5                    as H
 
 newtype SourceRef = Source String
-   deriving (Eq, Show, Ord)
+   deriving (Eq, Ord)
+instance Show SourceRef where
+    show (Source s) = s
+instance IsString SourceRef where
+    fromString = Source
 
 data FactId
     = FactId String String
@@ -77,8 +78,9 @@ instance H.ToMarkup LicenseNameCluster where
     toMarkup (LicenseNameCluster name sameNames otherNames) = do
         H.b (fromString ("LicenseNames for " ++ show name))
         H.ul $ mapM_ (H.li . fromString . show) sameNames
-        H.b "LicenseName Hints"
-        H.ul $ mapM_ (H.li . fromString . show) otherNames
+        unless (null otherNames) $ do
+            H.b "LicenseName Hints"
+            H.ul $ mapM_ (H.li . fromString . show) otherNames
 applicableLNsToLicenseNameCluster :: ApplicableLNs -> LicenseNameCluster
 applicableLNsToLicenseNameCluster (LN ln) = LicenseNameCluster ln [] []
 applicableLNsToLicenseNameCluster (AlternativeLNs aln alns) = let
@@ -93,37 +95,6 @@ applicableLNsToLicenseNameCluster (ImpreciseLNs aln alns) = let
       othersFromAlnsClusters = concatMap (\(LicenseNameCluster ln' same' other') -> ln':same'++other') alnsClusters
     in LicenseNameCluster ln same (other ++ othersFromAlnsClusters)
 
--- data OriginalData
---     = OriginalBSData ByteString
---     | OriginalJsonData A.Value
---     | OriginalTextData Text
---     | FromFile FilePath OriginalData
---     | FromUrl String OriginalData
---     | NoPreservedOriginalData
---     deriving (Eq)
--- instance ToJSON OriginalData where
---     toJSON (OriginalBSData bs) = toJSON $ bsToText bs
---     toJSON (OriginalJsonData v) = v
---     toJSON (OriginalTextData t) = toJSON t
---     toJSON (FromFile fn od) = object [ "fileName" .= fn
---                                      , "content" .= od
---                                      ]
---     toJSON (FromUrl url od) = object [ "url" .= url
---                                      , "content" .= od
---                                      ]
---     toJSON NoPreservedOriginalData = object []
--- getOriginalDataText :: OriginalData -> Maybe Text
--- getOriginalDataText (OriginalBSData bs) = (Just . bsToText) bs
--- getOriginalDataText (OriginalJsonData _) = Nothing
--- getOriginalDataText (OriginalTextData t) = Just t
--- getOriginalDataText (FromFile _ od) = getOriginalDataText od
--- getOriginalDataText (FromUrl _ od) = getOriginalDataText od
--- getOriginalDataText _ = Nothing
--- getOriginalDataUrl :: OriginalData -> Maybe String
--- getOriginalDataUrl (FromUrl url _) = Just url
--- getOriginalDataUrl (FromFile _ od) = getOriginalDataUrl od
--- getOriginalDataUrl _ = Nothing
-
 class (Eq a) => LicenseFactC a where
     getType :: a -> String
     getFactId :: a -> FactId
@@ -136,8 +107,6 @@ class (Eq a) => LicenseFactC a where
     getImpliedStmts _ = []
     toMarkup :: a -> Markup
     toMarkup _ = mempty
-    -- getOriginalData :: a -> OriginalData
-    -- getOriginalData _ = NoPreservedOriginalData
     {-
      - helper functions
      -}

@@ -7,6 +7,7 @@ module Ldbcollector.Source.OKFN
 import qualified Data.Map           as Map
 import qualified Data.Vector        as V
 import           Ldbcollector.Model
+import Ldbcollector.Source.OSI (isOsiApproved)
 
 data OKFNLicense
     = OKFNLicense
@@ -57,20 +58,25 @@ instance LicenseFactC OKFNLicense where
             odConfromance = LicenseRating $ let
                     odConfromance = _od_conformance l
                 in case odConfromance of
-                    "approved" -> PositiveLicenseRating "od_conformance" (pack odConfromance) Nothing
-                    "rejected" -> NegativeLicenseRating "od_conformance" (pack odConfromance) Nothing
-                    _ -> NeutralLicenseRating "od_conformance" (pack odConfromance) Nothing
-            osdConfromance = LicenseRating $ let
+                    "approved" -> PositiveLicenseRating "Open Definition" (pack odConfromance) (Just "Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).")
+                    "rejected" -> NegativeLicenseRating "Open Definition" (pack odConfromance) Nothing
+                    _ -> NeutralLicenseRating "Open Definition" (pack odConfromance) Nothing
+            osdConfromance = let
                     osdConfromance = _osd_conformance l
                 in case osdConfromance of
-                    "approved" -> PositiveLicenseRating "osd_conformance" (pack osdConfromance) Nothing
-                    "rejected" -> NegativeLicenseRating "osd_conformance" (pack osdConfromance) Nothing
-                    _ -> NeutralLicenseRating "osd_conformance" (pack osdConfromance) Nothing
+                    "approved" -> isOsiApproved (Just True)
+                    "rejected" -> isOsiApproved (Just False)
+                    _ -> LicenseRating $ NeutralLicenseRating "OSI" (pack osdConfromance) Nothing
         in maybeToList (fmap LicenseUrl (_url l))
                      ++ [statusStmt, odConfromance, osdConfromance]
 
 newtype OKFN = OKFN FilePath
-
+instance HasOriginalData OKFN where
+    getOriginalData (OKFN allJSON) =
+        FromUrl "https://opendefinition.org/licenses/" $
+        FromUrl "https://opendefinition.org/licenses/api/" $
+        FromUrl "https://github.com/okfn/licenses" $
+        FromFile allJSON NoPreservedOriginalData
 instance Source OKFN where
     getSource _ = Source "OKFN"
     getFacts (OKFN allJSON) = do

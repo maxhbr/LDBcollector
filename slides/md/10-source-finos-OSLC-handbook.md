@@ -1,7 +1,7 @@
 ## Finos:
 # Open Source License Compliance Handbook
 This handbook provides information on how to comply with some of the more common open source licenses under a specific set of use-cases.
-* raw data: https://github.com/finos/OSLC-handbookq
+* raw data: https://github.com/finos/OSLC-handbook
 
 
 ## Example: Apache-2.0

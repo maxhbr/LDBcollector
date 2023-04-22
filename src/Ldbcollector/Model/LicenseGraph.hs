@@ -15,19 +15,9 @@ import qualified Data.Vector                         as V
 
 import qualified Control.Monad.Reader                as MTL
 import           Ldbcollector.Model.LicenseFact
+import           Ldbcollector.Model.LicenseFactMetadata
 import           Ldbcollector.Model.LicenseName
 import           Ldbcollector.Model.LicenseStatement
-
--- ############################################################################
-
-debugLog :: String -> LicenseGraphM ()
-debugLog = MTL.liftIO . debugLogIO
-logFileRead :: String -> LicenseGraphM ()
-logFileRead = MTL.liftIO . logFileReadIO
-infoLog :: String -> LicenseGraphM ()
-infoLog = MTL.liftIO . infoLogIO
-stderrLog :: String -> LicenseGraphM ()
-stderrLog = MTL.liftIO . stderrLogIO
 
 -- ############################################################################
 
@@ -50,20 +40,43 @@ deriving instance Eq LicenseGraphEdge
 
 type LicenseGraphType = G.Gr LicenseGraphNode LicenseGraphEdge
 
+class (HasOriginalData a) => Source a where
+    getSource :: a -> SourceRef
+    getFacts :: a -> IO (Vector LicenseFact)
+    -- getLicenseNamespace :: a -> Maybe Text
+    -- getLicenseNamespace _ = Nothing
+    getSourceDescription :: a -> Maybe Text
+    getSourceDescription _ = Nothing
+    applySource :: a -> LicenseGraphM ()
+    applySource a = let
+            source = getSource a
+        in do
+            lift $ infoM rootLoggerName ("# get " ++ show source)
+            MTL.modify (\lg -> lg{_sources = Map.insert source (WrappedSource a) (_sources lg)})
+            facts <- force <$> MTL.lift (getFacts a)
+            lift $ infoM rootLoggerName (show (V.length facts) ++ " entries")
+            V.mapM_ (\fact -> withFact (source, fact) applyFact) facts
+            debugOrderAndSize
+data WrappedSource where
+    WrappedSource :: forall a. (Source a) => a -> WrappedSource
+instance HasOriginalData WrappedSource where
+    getOriginalData (WrappedSource a) = getOriginalData a
+
 data LicenseGraph
     = LicenseGraph
     { _gr           :: LicenseGraphType
     , _node_map     :: Map.Map LicenseGraphNode G.Node
     , _node_map_rev :: Map.Map G.Node LicenseGraphNode
     , _facts        :: Map.Map (SourceRef, LicenseFact) (Set.Set G.Node, Set.Set G.Edge)
+    , _sources      :: Map.Map SourceRef WrappedSource
     }
 emptyLG :: LicenseGraph
-emptyLG = LicenseGraph G.empty mempty mempty mempty
+emptyLG = LicenseGraph G.empty mempty mempty mempty mempty
 instance Show LicenseGraph where
     show = G.prettify . _gr
 
 getLicenseGraphSize :: LicenseGraph -> Int
-getLicenseGraphSize (LicenseGraph gr node_map node_map_rev _) = let
+getLicenseGraphSize (LicenseGraph gr node_map node_map_rev _ _) = let
         gr_size = length $ G.nodes gr
         node_map_size = Map.size node_map
         node_map_rev_size =  Map.size node_map_rev
@@ -262,3 +275,15 @@ toLicenseNameGraph = let
 
 getLicenseNameGraph :: LicenseGraphM LicenseNameGraphType
 getLicenseNameGraph = MTL.gets (toLicenseNameGraph . _gr)
+
+
+-- ############################################################################
+
+debugLog :: String -> LicenseGraphM ()
+debugLog = MTL.liftIO . debugLogIO
+logFileRead :: String -> LicenseGraphM ()
+logFileRead = MTL.liftIO . logFileReadIO
+infoLog :: String -> LicenseGraphM ()
+infoLog = MTL.liftIO . infoLogIO
+stderrLog :: String -> LicenseGraphM ()
+stderrLog = MTL.liftIO . stderrLogIO

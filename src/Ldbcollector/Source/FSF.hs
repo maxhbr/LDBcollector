@@ -32,7 +32,7 @@ instance ToJSON FsfWkingData
 instance LicenseFactC FsfWkingData where
     getType _ = "FSF"
     getApplicableLNs (FsfWkingData { _id = id, _identifiers = identifiers, _name = name}) =
-        LN id `AlternativeLNs` (LN name : concatMap (\(scope, lns) -> map (LN . setNS scope) lns) (Map.assocs identifiers))
+        LN id `AlternativeLNs` [LN name] `ImpreciseLNs` concatMap (\(scope, lns) -> map (LN . setNS scope) lns) (Map.assocs identifiers)
     getImpliedStmts entry = map LicenseUrl (_uris entry)
         ++ map (\case 
                    "libre"            -> LicenseRating (PositiveLicenseRating "FSF" "libre" Nothing)
@@ -50,7 +50,12 @@ parseFsfJSON json = do
       Right fsfWkingData -> return fsfWkingData
 
 newtype FSF = FSF FilePath
-
+instance HasOriginalData FSF where
+    getOriginalData (FSF dir) =
+        FromUrl "https://www.gnu.org/licenses/license-list.html" $
+        FromUrl "https://github.com/wking/fsf-api/" $
+        FromUrl "https://github.com/wking/fsf-api/tree/gh-pages" $
+        FromFile dir NoPreservedOriginalData
 instance Source FSF where
     getSource _ = Source "FSF"
     getFacts (FSF dir) = do

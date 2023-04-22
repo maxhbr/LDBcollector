@@ -61,6 +61,11 @@ instance LicenseFactC ScancodeData where
 
 newtype ScancodeLicenseDB = ScancodeLicenseDB FilePath
 
+instance HasOriginalData ScancodeLicenseDB where
+    getOriginalData (ScancodeLicenseDB dir) = 
+        FromUrl "https://scancode-licensedb.aboutcode.org/" $
+        FromUrl "https://github.com/nexB/scancode-licensedb" $
+        FromFile dir NoPreservedOriginalData
 instance Source ScancodeLicenseDB where
     getSource _  = Source "ScancodeLicenseDB"
     getFacts (ScancodeLicenseDB dir) = let
