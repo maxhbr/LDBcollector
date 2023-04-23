@@ -129,7 +129,7 @@ instance S.FromRow FOSSLight_License where
         ynToBool _          = False
       in FOSSLight_License
         <$> S.field
-        <*> S.field
+        <*> fmap (setNS "fosslight") S.field
         <*> S.field
         <*> fmap ynToBool S.field
         <*> fmap ynToBool S.field
@@ -168,6 +168,7 @@ instance LicenseFactC FOSSLightFact where
 newtype FOSSLight = FOSSLight FilePath
 instance HasOriginalData FOSSLight where
     getOriginalData (FOSSLight sqlite) =
+        FromUrl "https://fosslight.org/" $
         FromUrl "https://raw.githubusercontent.com/fosslight/fosslight/main/db/initdb.d/fosslight_create.sql" $
         FromFile sqlite NoPreservedOriginalData
 instance Source FOSSLight where

@@ -12,6 +12,7 @@ import qualified Data.Graph.Inductive.PatriciaTree   as G
 import qualified Data.Map                            as Map
 import qualified Data.Set                            as Set
 import qualified Data.Vector                         as V
+import System.CPUTime (getCPUTime)
 
 import qualified Control.Monad.Reader                as MTL
 import           Ldbcollector.Model.LicenseFact
@@ -50,7 +51,7 @@ class (HasOriginalData a) => Source a where
     applySource :: a -> LicenseGraphM ()
     applySource a = let
             source = getSource a
-        in do
+        in timedLGM (show source) $ do
             lift $ infoM rootLoggerName ("# get " ++ show source)
             MTL.modify (\lg -> lg{_sources = Map.insert source (WrappedSource a) (_sources lg)})
             facts <- force <$> MTL.lift (getFacts a)
@@ -287,3 +288,13 @@ infoLog :: String -> LicenseGraphM ()
 infoLog = MTL.liftIO . infoLogIO
 stderrLog :: String -> LicenseGraphM ()
 stderrLog = MTL.liftIO . stderrLogIO
+
+timedLGM :: String -> LicenseGraphM a -> LicenseGraphM a
+timedLGM task lgm = do
+    start <- lift getCPUTime
+    lift $ infoM "Timer" $ "## start " ++ task
+    result <- lgm
+    end <- lift getCPUTime
+    let diff = (fromIntegral (end - start) / (10^12)) :: Double
+    lift $ infoM "Timer" $ "## done " ++ task ++ ", took " ++ show diff ++ " sec"
+    return result

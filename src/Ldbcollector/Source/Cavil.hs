@@ -28,9 +28,9 @@ lineToMap bs = let
         onerror _ _ = Just '_'
     in case split '\t' bs of
             []         -> mempty
-            [one]      -> M.singleton (newLN (T.decodeUtf8With onerror one)) []
+            [one]      -> M.singleton (newNLN "cavil" (T.decodeUtf8With onerror one)) []
             name:alias -> let
-                    nameNode = newLN (T.decodeUtf8With onerror name)
+                    nameNode = newNLN "cavil" (T.decodeUtf8With onerror name)
                     aliasNode = newLN (T.decodeUtf8With onerror (unwords alias))
                 in M.singleton nameNode [aliasNode]
 linesToMap :: [B.ByteString] -> Map LicenseName [LicenseName]

@@ -1,5 +1,6 @@
 {-# LANGUAGE DeriveGeneric     #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE LambdaCase #-}
 module Ldbcollector.Source.Fossology
     ( Fossology (..)
     ) where
@@ -49,7 +50,9 @@ instance FromJSON FossologyEntry where
         <*> (fmap toBool <$> v .:? "rf_GPLv2compatible")
         <*> (fmap toBool <$> v .:? "rf_GPLv3compatible")
         <*> v .:? "rf_notes"
-        <*> v .:? "rf_Fedora"
+        <*> ((\case 
+                Just "" -> Nothing
+                a -> a) <$> v .:? "rf_Fedora")
         <*> (toBool <$> v .: "marydone")
         <*> (toBool <$> v .: "rf_active")
         <*> (toBool <$> v .: "rf_text_updatable")
@@ -90,4 +93,4 @@ instance Source Fossology where
         decoded <- eitherDecodeFileStrict json :: IO (Either String [FossologyEntry])
         case decoded of
             Left err           -> fail err
-            Right fossologyData -> (return . V.fromList . map wrapFact) fossologyData
+            Right fossologyData -> (return . V.fromList . map wrapFact . filter ((/= "") . _rf_fullname)) fossologyData

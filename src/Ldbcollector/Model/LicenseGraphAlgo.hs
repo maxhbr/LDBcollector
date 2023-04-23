@@ -21,7 +21,6 @@ import qualified Data.Vector                       as V
 import           Ldbcollector.Model.LicenseFact
 import           Ldbcollector.Model.LicenseGraph
 import           Ldbcollector.Model.LicenseName
-import System.CPUTime (getCPUTime)
 
 getClusters :: LicenseGraphM [[LicenseName]]
 getClusters = do
@@ -79,7 +78,7 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts _) = let
                 reachableForNeedle needle = G.reachable needle subGraph ++ G.reachable needle (G.grev subGraph)
             in nub $ concatMap reachableForNeedle needles'
         isLicenseExpandingRelation = (== LGNameRelation Same)
-        isFactAndStatementRelation = (`elem` [LGAppliesTo, LGImpliedBy])
+        isFactAndStatementRelation = (`elem` [LGAppliesTo]) -- , LGImpliedBy])
         isOtherRelation r = not (isLicenseExpandingRelation r || isFactAndStatementRelation r)
 
         reachableViaLicenseExpandingRelation = reachableInSubgraph isLicenseExpandingRelation needles
@@ -106,9 +105,8 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts _) = let
         filter (not . (`elem` reachableViaLicenseExpandingRelation)) reachableViaFactAndStatementRelation))
 
 focus :: [SourceRef] -> Vector LicenseGraphNode -> (([G.Node], [G.Node], [G.Node], [G.Node]) -> LicenseGraphM a) -> LicenseGraphM a
-focus sources needles inner = do
+focus sources needles inner = timedLGM "focusing" $ do
     debugLog "## freeze graph"
-    start <- lift getCPUTime
     debugOrderAndSize
     frozen <- MTL.get
     (a,_) <- (MTL.lift . runLicenseGraphM' frozen) $ do
@@ -122,9 +120,6 @@ focus sources needles inner = do
         debugOrderAndSize
         debugLog "## work on focused graph"
         inner (needleIds, sameNames, otherNames, statements)
-    end <- lift getCPUTime
-    let diff = (fromIntegral (end - start) / (10^12)) :: Double
-    infoLog ("## done focusing, took " ++ show diff ++ " sec")
     return a
 
 getFocused :: [SourceRef] -> Vector LicenseGraphNode -> LicenseGraphM LicenseGraph

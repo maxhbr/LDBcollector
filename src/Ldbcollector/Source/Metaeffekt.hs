@@ -22,7 +22,7 @@ data MetaeffektLicense
     } deriving (Eq, Ord, Show, Generic)
 instance FromJSON MetaeffektLicense where
   parseJSON = withObject "MetaeffektLicense" $ \v -> MetaeffektLicense
-    <$> v .: "canonicalName"
+    <$> (setNS "metaeffekt" <$> v .: "canonicalName")
     <*> v .: "category"
     <*> (fmap (setNS "metaeffekt") <$> v .:? "shortName")
     <*> (fmap (setNS "spdx") <$> v .:? "spdxIdentifier")

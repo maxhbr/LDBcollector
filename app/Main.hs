@@ -84,8 +84,10 @@ main = do
     args <- getArgs
     setupLogger
     (_, licenseGraph) <- runLicenseGraphM $ do
-        applySources curation
-        writeMetrics
+        timedLGM "warmup" $ do
+            timedLGM "applySources" $ 
+                applySources curation
+            writeMetrics
         case args of
             "write":names -> mapM_ (writeSvgByName "_out" . fromString) names
             ["writeNS", ns] -> writeSvgByNS "_out" (fromString ns)

@@ -260,7 +260,7 @@ serve = do
     licenseGraph <- MTL.get
     clusters <- getClusters
 
-    lift $ Temp.withSystemTempDirectory "ldbcollector-haskell" $ \tmpdir -> do
+    lift $ do
         cache <- C.newCache Nothing
         let init params = do
                 paramMap <- evaluateParams params
@@ -270,7 +270,6 @@ serve = do
                         tuple <- computeSubgraph licenseGraph paramMap
                         C.insert cache (hash paramMap) tuple
                         return (paramMap, tuple)
-        putStrLn $ "tmpdir=" ++ tmpdir
         myOptions <- getMyOptions
         scottyOpts myOptions $ do
             get "/styles.css" $ raw (BL.fromStrict stylesheet)
