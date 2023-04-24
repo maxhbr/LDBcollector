@@ -1,12 +1,12 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "Permission Terms (hpdarm)"
-category: "Permission"
-shortName: "PT-hpdarm"
+canonicalName: "Martin Birgmeier License"
+category: "Martin Bergmeier License"
+spdxIdentifier: "Martin-Birgmeier"
 
 alternativeNames:
-  - "Permission Terms (hpdarm)"
+  - "martin-birgmeier"
 
 otherIds: 
-  - "scancode:hdparm"
+  - "scancode:martin-birgmeier"

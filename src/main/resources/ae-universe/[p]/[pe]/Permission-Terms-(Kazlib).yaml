@@ -1,13 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "Permission Terms (CMU)"
+canonicalName: "Permission Terms (Kazlib)"
 category: "Permission"
-spdxIdentifier: "CMU-Mach"
+spdxIdentifier: "Kazlib"
 
 alternativeNames:
-  - "Permission Terms (CMU)"
-  - "CMU Mach License"
+  - "Kazlib License"
 
-otherIds: 
-  - "scancode:carnegie-mellon-contributors"

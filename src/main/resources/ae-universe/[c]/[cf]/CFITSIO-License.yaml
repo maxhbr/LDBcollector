@@ -1,12 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "Permission Terms (Sun)"
-category: "Permission"
-spdxIdentifier: "SunPro"
+canonicalName: "CFITSIO License"
+category: "CFITSIO"
+spdxIdentifier: "CFITSIO"
 
 alternativeNames:
-  - "SunPro License"
+  - "CFITSIO License"
 
-otherIds: 
-  - "scancode:sunpro"

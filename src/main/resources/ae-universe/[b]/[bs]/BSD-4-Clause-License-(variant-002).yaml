@@ -3,7 +3,12 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "BSD 4-Clause License (variant 002)"
 category: "BSD"
-shortName: "BSD-4-Clause-002"
+spdxIdentifier: "BSD-Attribution-HPND-disclaimer"
+
+alternativeNames:
+  - "BSD 4-Clause License (variant 002)"
+  - "BSD-Attribution-HPND-disclaimer"
+  - "BSD with Attribution and HPND disclaimer"
 
 otherIds: 
   - "scancode:cmu-computing-services"

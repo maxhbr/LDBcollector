@@ -1,12 +1,7 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "Permission Terms (Sun)"
+canonicalName: "Permission Terms (variant 120)"
 category: "Permission"
-spdxIdentifier: "SunPro"
+shortName: "PT-Var120"
 
-alternativeNames:
-  - "SunPro License"
-
-otherIds: 
-  - "scancode:sunpro"

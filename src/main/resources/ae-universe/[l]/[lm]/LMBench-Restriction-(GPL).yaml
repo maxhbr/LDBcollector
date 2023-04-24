@@ -5,7 +5,7 @@ canonicalName: "LMBench Restriction (GPL)"
 category: "LMBench-Restriction"
 shortName: "LMBench-Restriction-GPL"
 
-type: "restricition"
+type: "restriction"
 
 alternativeNames:
   - "LMBench Exception"

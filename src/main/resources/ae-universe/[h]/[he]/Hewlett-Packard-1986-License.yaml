@@ -1,12 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "Permission Terms (Sun)"
-category: "Permission"
-spdxIdentifier: "SunPro"
+canonicalName: "Hewlett-Packard 1986 License"
+category: "HP-1986"
+spdxIdentifier: "HP-1986"
 
 alternativeNames:
-  - "SunPro License"
+  - "Hewlett-Packard 1986 License"
 
-otherIds: 
-  - "scancode:sunpro"
