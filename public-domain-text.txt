@@ -26,40 +26,24 @@ text = '''
 text here
 '''
 
-package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man2/nfsservctl.2#L2
+package = words
+location = https://web.archive.org/web/20170930060409/http://icon.shef.ac.uk/Moby/
 text = '''
-This text is in the public domain.
-'''
+The Moby lexicon project is complete and has
+been place into the public domain. Use, sell,
+rework, excerpt and use in any way on any platform.
 
-package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man3/getnameinfo.3#L2
-text = '''
-This page is in the public domain.
-'''
+Placing this material on internal or public servers is
+also encouraged. The compiler is not aware of any
+export restrictions so freely distribute world-wide.
 
-package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man3/grantpt.3#L2
-text = '''
-This page is in the public domain. - aeb
-'''
+You can verify the public domain status by contacting
 
-package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man3/stdin.3#L7
-text = '''
-Placed in the Public Domain.
-'''
+Grady Ward
+3449 Martha Ct.
+Arcata, CA  95521-4884
 
-package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man8/ld.so.8#L2
-text = '''
-This is in the public domain
-'''
-
-package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man8/tzselect.8#L2
-text = '''
-This page is in the public domain
+daedal@myrealbox.com
 '''
 
 package = libinstpatch
