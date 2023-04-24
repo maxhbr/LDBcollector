@@ -26,6 +26,12 @@ text = '''
 text here
 '''
 
+package = automake
+location = https://git.savannah.gnu.org/cgit/automake.git/tree/lib/mkinstalldirs?h=v1.16#n8
+text = '''
+Public domain.
+'''
+
 package = words
 location = https://web.archive.org/web/20170930060409/http://icon.shef.ac.uk/Moby/
 text = '''
