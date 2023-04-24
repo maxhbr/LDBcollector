@@ -26,6 +26,42 @@ text = '''
 text here
 '''
 
+package = man-pages
+location = https://github.com/mkerrisk/man-pages/blob/master/man2/nfsservctl.2#L2
+text = '''
+This text is in the public domain.
+'''
+
+package = man-pages
+location = https://github.com/mkerrisk/man-pages/blob/master/man3/getnameinfo.3#L2
+text = '''
+This page is in the public domain.
+'''
+
+package = man-pages
+location = https://github.com/mkerrisk/man-pages/blob/master/man3/grantpt.3#L2
+text = '''
+This page is in the public domain. - aeb
+'''
+
+package = man-pages
+location = https://github.com/mkerrisk/man-pages/blob/master/man3/stdin.3#L7
+text = '''
+Placed in the Public Domain.
+'''
+
+package = man-pages
+location = https://github.com/mkerrisk/man-pages/blob/master/man8/ld.so.8#L2
+text = '''
+This is in the public domain
+'''
+
+package = man-pages
+location = https://github.com/mkerrisk/man-pages/blob/master/man8/tzselect.8#L2
+text = '''
+This page is in the public domain
+'''
+
 package = libinstpatch
 location = https://github.com/swami/libinstpatch/blob/v1.1.6/libinstpatch/md5.c#L2
 text = '''
