@@ -1,5 +1,12 @@
 # {metæffekt}-universe
-Project providing insights on the {metæffekt} license database.
+Project providing insights on the {metæffekt} license database covering
+
+* 2003 modelled license terms,
+* 117 exceptions,
+* 168 specific and commonly used license expressions, and
+* 45 markers.
+
+as of 25th, April 2023.
 
 The following links provide letter-specific overviews on the license information:
 
@@ -101,3 +108,8 @@ internal dataset to produce the corrected outputs.
 
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
+
+Currently, ScanCode version 31.2.1 is used. 
+
+Regarding SPDX the latest version from https://github.com/spdx/license-list-data
+main branch is used to synchronize the {metæffekt}-universe.
