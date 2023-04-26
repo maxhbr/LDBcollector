@@ -1,0 +1,5 @@
+- id: "NuGet::AWSSDK.Textract.CoreCLR:[3.3.468,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/src/Services/Textract"
