@@ -1,15 +1,16 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+import json
+
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
 
 from cube.importers import import_spdx_file
-from cube.models import Generic, Usage, License, Team
+from cube.models import Generic, Usage, License, Team, Obligation
 from cube.utils.generics import export_generics, handle_generics_json
 from cube.utils.licenses import (
-    create_or_update_license,
     export_licenses,
     handle_licenses_json,
 )
@@ -19,12 +20,20 @@ from .mixins import ForceLoginMixin
 class ImportLicensesTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
-    def test_export_import(self):
+    def test_export_import_after_delete(self):
         count = License.objects.all().count()
+        obligations_counts = {
+            lic.spdx_id: lic.obligation_set.count() for lic in License.objects.all()
+        }
         export = export_licenses(indent=True)
         License.objects.all().delete()
+        Obligation.objects.all().delete()
         handle_licenses_json(export)
         self.assertEqual(License.objects.all().count(), count)
+        for lic in License.objects.all():
+            self.assertEqual(
+                lic.obligation_set.count(), obligations_counts[lic.spdx_id]
+            )
 
     def test_export_import_pages(self):
         res = self.client.get(reverse("cube:export_licenses"))
@@ -41,63 +50,68 @@ class ImportLicensesTestCase(ForceLoginMixin, TestCase):
         self.assertRedirects(res, reverse("cube:licenses"))
 
     def test_generic_autocreation(self):
-        json = [
+        self.assertEqual(Generic.objects.all().count(), 1)
+        data = [
             {
-                "id": 1,
-                "spdx_id": "lorem license",
-                "long_name": "Lorem License",
-                "color": "Green",
-                "foss": "Yes",
-                "comment": "Open Source",
-                "obligation_set": [
-                    {
-                        "id": 1,
-                        "generic_name": "Generic Obligation 1",
-                        "name": "License 1 obligation 1",
-                        "verbatim": "Long text.",
-                        "passivity": "Active",
-                        "trigger_expl": "DistributionSource",
-                        "trigger_mdf": "AlteredUnmodified",
-                        "generic": 1,
-                    },
-                    {
-                        "id": 2,
-                        "generic_name": "Generic Obligation 2",
-                        "name": "License 1 obligation 2",
-                        "verbatim": "Long text.",
-                        "passivity": "Active",
-                        "trigger_expl": "DistributionSource",
-                        "trigger_mdf": "AlteredUnmodified",
-                        "generic": 2,
-                    },
-                ],
+                "model": "cube.license",
+                "fields": {
+                    "spdx_id": "lorem license",
+                    "long_name": "Lorem License",
+                    "allowed": "always",
+                    "foss": "Yes",
+                    "comment": "Open Source",
+                },
             },
             {
-                "id": 2,
-                "spdx_id": "lorem-license-2",
-                "long_name": "Lorem License 2",
-                "color": "Green",
-                "foss": "Yes",
-                "comment": "Open Source",
-                "obligation_set": [
-                    {
-                        "id": 3,
-                        "generic_name": "Generic Obligation 1",
-                        "name": "License 2 obligation 1",
-                        "verbatim": "Long text.",
-                        "passivity": "Active",
-                        "trigger_expl": "DistributionSource",
-                        "trigger_mdf": "AlteredUnmodified",
-                        "generic": 1,
-                    }
-                ],
+                "model": "cube.license",
+                "fields": {
+                    "spdx_id": "lorem-license-2",
+                    "long_name": "Lorem License 2",
+                    "allowed": "always",
+                    "foss": "Yes",
+                    "comment": "Open Source",
+                },
+            },
+            {
+                "model": "cube.obligation",
+                "fields": {
+                    "license": ["lorem license"],
+                    "generic": ["Generic Obligation 1"],
+                    "name": "License 1 obligation 1",
+                    "verbatim": "Long text.",
+                    "passivity": "Active",
+                    "trigger_expl": "DistributionSource",
+                    "trigger_mdf": "AlteredUnmodified",
+                },
+            },
+            {
+                "model": "cube.obligation",
+                "fields": {
+                    "license": ["lorem license"],
+                    "generic": ["Generic Obligation 2"],
+                    "name": "License 1 obligation 2",
+                    "verbatim": "Long text.",
+                    "passivity": "Active",
+                    "trigger_expl": "DistributionSource",
+                    "trigger_mdf": "AlteredUnmodified",
+                },
+            },
+            {
+                "model": "cube.obligation",
+                "fields": {
+                    "license": ["lorem-license-2"],
+                    "generic": ["Generic Obligation 1"],
+                    "name": "License 2 obligation 1",
+                    "verbatim": "Long text.",
+                    "passivity": "Active",
+                    "trigger_expl": "DistributionSource",
+                    "trigger_mdf": "AlteredUnmodified",
+                },
             },
         ]
 
-        for license in json:
-            create_or_update_license(license)
-
-        self.assertEqual(Generic.objects.all().count(), 2)
+        handle_licenses_json(json.dumps(data))
+        self.assertEqual(Generic.objects.all().count(), 3)
 
 
 class ImportGenericTestCase(ForceLoginMixin, TestCase):

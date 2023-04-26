@@ -7,6 +7,7 @@ from django.core.serializers import serialize, deserialize
 from django.db import transaction
 
 from cube.models import Generic, Team
+from cube.utils.importers import create_or_replace_by_natural_key
 
 logger = logging.getLogger(__name__)
 
@@ -25,19 +26,13 @@ def export_generics(indent=False):
 def handle_generics_json(data):
     created, updated = 0, 0
     for generic in deserialize("json", data, handle_forward_references=True):
-        try:
-            generic.object.id = Generic.objects.get(name=generic.object.name).id
-            updated += 1
-        except Generic.DoesNotExist:
-            created += 1
-
         if len(generic.deferred_fields) > 0:
             name = generic.deferred_fields[list(generic.deferred_fields.keys())[0]][0]
-            Team.objects.create(name=name)
+            Team.objects.get_or_create(name=name)
 
-        generic.save()
-        generic.save_deferred_fields()
+        if create_or_replace_by_natural_key(generic):
+            created += 1
+        else:
+            updated += 1
 
     logger.info(f"Generics : {created} created / {updated} updated")
-
-    return

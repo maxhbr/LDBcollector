@@ -2,18 +2,18 @@
 # SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-import json
 import logging
 from functools import lru_cache, reduce
 from itertools import product
 from typing import Iterable, List
 
+from django.core.serializers import serialize, deserialize
 from django.db import transaction
 from django.db.models import prefetch_related_objects
 from license_expression import get_spdx_licensing, BaseSymbol
 
-from cube.models import License, Obligation, Derogation
-from cube.serializers import LicenseSerializer
+from cube.models import License, Obligation, Derogation, Generic
+from cube.utils.importers import create_or_replace_by_natural_key
 
 logger = logging.getLogger(__name__)
 licensing = get_spdx_licensing()
@@ -162,20 +162,6 @@ def explode_spdx_to_units(spdx_expr: str) -> List[str]:
     return sorted(list(parsed.objects))
 
 
-def create_or_update_license(license_dict):
-    create = False
-    try:
-        license_instance = License.objects.get(spdx_id=license_dict["spdx_id"])
-    except License.DoesNotExist:
-        license_instance = License(spdx_id=license_dict["spdx_id"])
-        license_instance.save()
-        create = True
-    s = LicenseSerializer(license_instance, data=license_dict)
-    s.is_valid(raise_exception=True)
-    s.save()
-    return create
-
-
 def get_license_triggered_obligations(
     license: License, exploitation: str = None, modification: str = None
 ):
@@ -282,28 +268,30 @@ def get_generic_usages(usages, generic):
 
 
 def export_licenses(indent=False):
-    serializer = LicenseSerializer(License.objects.all(), many=True)
-    data = json.dumps(serializer.data, indent=4 if indent else None)
-    return data
+    return serialize(
+        "json",
+        list(License.objects.all()) + list(Obligation.objects.all()),
+        indent=4 if indent else None,
+        use_natural_foreign_keys=True,
+        use_natural_primary_keys=True,
+    )
 
 
 @transaction.atomic()
 def handle_licenses_json(data):
-    licenseArray = json.loads(data)
-    # Handling case of a JSON that only contains one license and is not a list
-    # (single license purpose)
-    if type(licenseArray) is dict:
-        create_or_update_license(licenseArray)
-    # Handling case of a JSON that contains multiple licenses and is a list
-    # (multiple licenses purpose)
-    elif type(licenseArray) is list:
-        created, updated = 0, 0
-        for license in licenseArray:
-            if create_or_update_license(license):
-                created += 1
-            else:
-                updated += 1
+    created, updated = 0, 0
+    for license_or_obligation in deserialize(
+        "json", data, handle_forward_references=True
+    ):
+        if len(license_or_obligation.deferred_fields) > 0:
+            name = license_or_obligation.deferred_fields[
+                list(license_or_obligation.deferred_fields.keys())[0]
+            ][0]
+            Generic.objects.get_or_create(name=name)
 
-        logger.info(f"Licenses : {created} created / {updated} updated")
-    else:
-        logger.info("Type of JSON neither is a list nor a dict")
+        if create_or_replace_by_natural_key(license_or_obligation):
+            created += 1
+        else:
+            updated += 1
+
+    logger.info(f"Licenses : {created} created / {updated} updated")
