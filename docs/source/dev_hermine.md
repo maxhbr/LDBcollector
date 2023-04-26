@@ -27,4 +27,5 @@ data_model
 permissions
 django_tags
 tests
+performances
 ```
