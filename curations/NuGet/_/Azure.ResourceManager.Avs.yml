@@ -1,0 +1,5 @@
+- id: "NuGet::Azure.ResourceManager.Avs:"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/avs/Azure.ResourceManager.Avs"
