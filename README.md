@@ -42,7 +42,7 @@ LicenseRec can be installed in two ways: using Docker or manually. Check deploym
 
 ## License and Acknowledgements
 
-LicenseRec is licensed under [MulanPubL-2.0](http://license.coscl.org.cn/MulanPubL-2.0/). See [LICENSE](LICENSE) for details.
+LicenseRec is licensed under [MulanPubL-2.0](http://license.coscl.org.cn/MulanPubL-2.0). See [LICENSE](LICENSE) for details.
 
 LicenseRec relies on the following open source projects:
 
