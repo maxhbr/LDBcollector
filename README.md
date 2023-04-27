@@ -19,7 +19,7 @@ LicenseRec可以通过两种方式安装：使用Docker或手动。查看[DEPLOY
 
 ## 许可证和鸣谢
 
-LicenseRec是根据[Mulan PSL v2](http://license.coscl.org.cn/MulanPubL-2.0/)授权的。详情见[LICENSE](LICENSE)。
+LicenseRec是根据[MulanPubL-2.0](http://license.coscl.org.cn/MulanPubL-2.0)授权的。详情见[LICENSE](LICENSE)。
 
 LicenseRec依赖于以下开源项目。
 
