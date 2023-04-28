@@ -107,7 +107,7 @@ simplifyEdgeLabel as = let
                          else as
         _ -> nub as
 
-generateColorMapping :: Ord a => [a] -> Map.Map a GV.Color
+generateColorMapping :: (Show a, Ord a, Eq a) => [a] -> Map.Map a GV.Color
 generateColorMapping = let
         colors = cycle $ map (\(r,g,b) -> GV.RGB r g b) [ (0,135,108)  -- #00876c
                                                         , (55,148,105) -- #379469
@@ -123,7 +123,7 @@ generateColorMapping = let
                                                         , (220,87,74)  -- #dc574a
                                                         , (212,61,81)  -- #d43d51
                                                         ]
-    in Map.fromList . (`zip` colors)
+    in Map.fromList . (`zip` colors) . sortOn show . nub
 
 computeDigraph :: LicenseGraph -> [G.Node] -> [G.Node] -> [G.Node] -> (GV.DotGraph G.Node, SourceRef -> GV.Color)
 computeDigraph (LicenseGraph {_gr = graph, _facts = facts}) mainLNs sameLNs otherLNs = let
