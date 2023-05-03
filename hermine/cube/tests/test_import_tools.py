@@ -17,10 +17,10 @@ from cube.utils.licenses import (
 from .mixins import ForceLoginMixin
 
 
-class ImportLicensesTestCase(ForceLoginMixin, TestCase):
+class ImportTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
-    def test_export_import_after_delete(self):
+    def test_export_import_licenses(self):
         count = License.objects.all().count()
         obligations_counts = {
             lic.spdx_id: lic.obligation_set.count() for lic in License.objects.all()
@@ -35,7 +35,7 @@ class ImportLicensesTestCase(ForceLoginMixin, TestCase):
                 lic.obligation_set.count(), obligations_counts[lic.spdx_id]
             )
 
-    def test_export_import_pages(self):
+    def test_export_import_licenses_pages(self):
         res = self.client.get(reverse("cube:export_licenses"))
         self.assertEqual(res.status_code, 200)
         License.objects.all().delete()
@@ -49,7 +49,7 @@ class ImportLicensesTestCase(ForceLoginMixin, TestCase):
         )
         self.assertRedirects(res, reverse("cube:licenses"))
 
-    def test_generic_autocreation(self):
+    def test_generic_autocreation__on_licenses_import(self):
         self.assertEqual(Generic.objects.all().count(), 1)
         data = [
             {
@@ -113,11 +113,7 @@ class ImportLicensesTestCase(ForceLoginMixin, TestCase):
         handle_licenses_json(json.dumps(data))
         self.assertEqual(Generic.objects.all().count(), 3)
 
-
-class ImportGenericTestCase(ForceLoginMixin, TestCase):
-    fixtures = ["test_data.json"]
-
-    def test_export_import(self):
+    def test_export_import_generics(self):
         count = Generic.objects.all().count()
         team_count = Team.objects.all().count()
         export = export_generics(indent=True)
@@ -130,7 +126,7 @@ class ImportGenericTestCase(ForceLoginMixin, TestCase):
         handle_generics_json(export)
         self.assertEqual(Generic.objects.all().count(), count)
 
-    def test_export_import_pages(self):
+    def test_export_import_generics_pages(self):
         res = self.client.get(reverse("cube:export_generics"))
         self.assertEqual(res.status_code, 200)
         Generic.objects.all().delete()
@@ -143,6 +139,17 @@ class ImportGenericTestCase(ForceLoginMixin, TestCase):
             },
         )
         self.assertRedirects(res, reverse("cube:generics"))
+
+    def test_import_examples(self):
+        self.assertEqual(License.objects.all().count(), 3)
+        self.assertEqual(Obligation.objects.all().count(), 13)
+        with open("../examples/data/Example_generic_obligations.json") as f:
+            handle_generics_json(f)
+        with open("../examples/data/Example_licences.json") as f:
+            handle_licenses_json(f)
+        self.assertEqual(Generic.objects.all().count(), 18)
+        self.assertEqual(License.objects.all().count(), 10)
+        self.assertEqual(Obligation.objects.all().count(), 57)
 
 
 class ImportSBOMTestCase(TestCase):
