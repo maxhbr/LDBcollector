@@ -39,6 +39,14 @@ Express the correct maven dependencies in your `deps.edn`:
             [lice-comb.spdx  :as lcs]))
 ```
 
+## Upgrading
+
+### 1.x -> 2.0
+
+Implementing [issue #3](https://github.com/pmonks/lice-comb/issues/3) resulted in the creation of a [new SPDX-specific library (`clj-spdx`)](https://github.com/pmonks/clj-spdx) that leverages [the official SPDX Java library](https://github.com/spdx/Spdx-Java-Library).  Because of irreconcilable differences in how that Java library represents license data compared to `lice-comb` v1.x, as well as the addition of support for SPDX license exceptions, it was not possible to retain backwards compatibility.
+
+The backwards compatibility breaking changes are limited to the `lice-comb.spdx` namespace however, so if you're not using that namespace you should be unaffected.  If you are using that namespace, migration involves migrating to [`clj-spdx`](https://github.com/pmonks/clj-spdx).  It offers all of the same functionality (and more) as the `lice-comb` v1.x functionality, and by virtue of using the official SPDX Java library is far more battle tested than that code was.
+
 ## Contributor Information
 
 [Contributor FAQ](https://github.com/pmonks/lice-comb/wiki/FAQ#contributor-faqs)
