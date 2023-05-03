@@ -18,36 +18,8 @@
 
 (ns lice-comb.utils
   "General purpose utility fns that I seem to end up needing in every single project I write..."
-  (:require [clojure.string :as s]
+  (:require [clojure.string  :as s]
             [clojure.java.io :as io]))
-
-(defn clojurise-json-key
-  "Converts JSON-style string keys (e.g. \"fullName\") to Clojure keyword keys (e.g. :full-name)."
-  [k]
-  (when k
-    (keyword
-      (s/replace
-        (s/join "-"
-                (map s/lower-case
-                     (s/split k #"(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])")))
-        "_"
-        "-"))))
-
-(defn mapfonk
-  "Returns a new map where f has been applied to all of the keys of m."
-  [f m]
-  (when (and f m)
-    (into {}
-          (for [[k v] m]
-            [(f k) v]))))
-
-(defn mapfonv
-  "Returns a new map where f has been applied to all of the values of m."
-  [f m]
-  (when (and f m)
-    (into {}
-          (for [[k v] m]
-            [k (f v)]))))
 
 (defn map-pad
   "Like map, but when presented with multiple collections of different lengths, 'pads out' the missing elements with nil rather than terminating early."
@@ -63,14 +35,14 @@
 
 (defn strim
   "nil safe version of clojure.string/trim"
-  [s]
+  [^String s]
   (when s (s/trim s)))
 
 (defn nset
   "nil preserving version of clojure.core/set"
   [coll]
-  (when (seq coll)
-    (set coll)))
+  (some-> (seq coll)
+          set))
 
 (defn escape-re
   "Escapes the given string for use in a regex."
