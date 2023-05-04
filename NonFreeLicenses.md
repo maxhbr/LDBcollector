@@ -15,37 +15,38 @@ Die hier aufgelisteten Lizenzen stammen aus dem Bereich der Freien Software oder
 8. CrossPoint Quelltext Lizenz (alt): http://www.crosspoint.de/oldlicense.html
 9. Elastic License 2.0 (ELv2): https://www.elastic.co/de/licensing/elastic-license
 10. Enhydra Public License (v. 1.1): http://ksoap.objectweb.org/software/license/index.html (Einordnung umstritten)
-11. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
-12. Jahia Community Source License (JSCL) (v.012): http://www.jahia.org/jahia/Jahia/pid/145
-13. JasPer Software License (1.0): http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE
-14. MCU path license 2018: https://01.org/mcu-path-license-2018
-15. Microsoft Limited Permissive License (Ms-LPL): https://web.archive.org/web/20070509061152/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedpermissivelicense.mspx 
-16. Microsoft Limited Public License (Ms-LPL): https://web.archive.org/web/20071223053203/http://microsoft.com:80/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx 
-17. Microsoft Limited Community License (Ms-LCL): https://web.archive.org/web/20070427113623/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedcommunitylicense.mspx
-18. Microsoft Reference License (Ms-RefL): https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx
-19. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx
-20. Nagios Open Software License (v. 1.3): https://github.com/NagiosEnterprises/ncpa/blob/master/LICENSE.rst
-21. Nmap Public Source License Version (v. 0.92): https://svn.nmap.org/nmap/LICENSE
-22. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
-23. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
-24. Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX: https://www.oracle.com/downloads/licenses/binary-code-license.html
-25. Personal Public License (v. 3a): https://github.com/uboslinux/ubos-admin/blob/master/LICENSE
-26. PLS Free Software License Agreement (v. 1.0): http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm
-27. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html (disputed)
-28. Scilab license: http://www.worldlii.org/int/other/PubRL/2009/51.html
-29. Server Side Public License (v. 1.0): https://www.mongodb.com/licensing/server-side-public-license (disputed)
-30. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (disputed)
-31. ShippySoft Source Available License (SSSAL): http://www.shippysoft.com/license.shtml
-32. Squeak License (Apple): https://web.archive.org/web/20150308154920/http://www.squeak.org:80/SqueakLicense
-33. Sun Microsystems, Inc. Binary Code License Agreement: https://download.java.net/media/jai/builds/release/1_1_3/LICENSE-jai.txt
-34. Sun Community Source License: http://www.sun.com/software/jini/licensing/SCSL3_JiniTSA1.html
-35. Sun Solaris Source Code (Foundation Release) License (v. 1.1): http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
-36. The Code Project Open License (CPOL) 1.02: http://www.codeproject.com/info/cpol10.aspx
-37. Truecrypt License v. 3: https://github.com/FreeApophis/TrueCrypt/blob/master/License.txt
-38. University of Utah Public License: http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt
-39. UnRAR License: https://github.com/junrar/junrar/blob/master/LICENSE
-40. YaST and SuSE Linux license terms: http://ftp2.de.freebsd.org/pub/linux/suse/5.3/i386.de/COPYRIGHT.yast
-41. YaST und SuSE Linux Lizenzbestimmungen: https://web.archive.org/web/20040407183411/http://www.suse.de/de/private/support/licenses/yast.html
-42. ZIB Academic License: https://web.archive.org/web/20090408081543/http://www.zib.de:80/Optimization/Software/ziblicense.html
+11. FSF (Feminist Software Foundation) Public License: https://gitlab.com/femsf/c-plus-equality/-/blob/master/LICENSE.FemSFPL
+12. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
+13. Jahia Community Source License (JSCL) (v.012): http://www.jahia.org/jahia/Jahia/pid/145
+14. JasPer Software License (1.0): http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE
+15. MCU path license 2018: https://01.org/mcu-path-license-2018
+16. Microsoft Limited Permissive License (Ms-LPL): https://web.archive.org/web/20070509061152/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedpermissivelicense.mspx 
+17. Microsoft Limited Public License (Ms-LPL): https://web.archive.org/web/20071223053203/http://microsoft.com:80/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx 
+18. Microsoft Limited Community License (Ms-LCL): https://web.archive.org/web/20070427113623/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedcommunitylicense.mspx
+19. Microsoft Reference License (Ms-RefL): https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx
+20. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx
+21. Nagios Open Software License (v. 1.3): https://github.com/NagiosEnterprises/ncpa/blob/master/LICENSE.rst
+22. Nmap Public Source License Version (v. 0.92): https://svn.nmap.org/nmap/LICENSE
+23. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
+24. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
+25. Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX: https://www.oracle.com/downloads/licenses/binary-code-license.html
+26. Personal Public License (v. 3a): https://github.com/uboslinux/ubos-admin/blob/master/LICENSE
+27. PLS Free Software License Agreement (v. 1.0): http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm
+28. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html (disputed)
+29. Scilab license: http://www.worldlii.org/int/other/PubRL/2009/51.html
+30. Server Side Public License (v. 1.0): https://www.mongodb.com/licensing/server-side-public-license (disputed)
+31. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (disputed)
+32. ShippySoft Source Available License (SSSAL): http://www.shippysoft.com/license.shtml
+33. Squeak License (Apple): https://web.archive.org/web/20150308154920/http://www.squeak.org:80/SqueakLicense
+34. Sun Microsystems, Inc. Binary Code License Agreement: https://download.java.net/media/jai/builds/release/1_1_3/LICENSE-jai.txt
+35. Sun Community Source License: http://www.sun.com/software/jini/licensing/SCSL3_JiniTSA1.html
+36. Sun Solaris Source Code (Foundation Release) License (v. 1.1): http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
+37. The Code Project Open License (CPOL) 1.02: http://www.codeproject.com/info/cpol10.aspx
+38. Truecrypt License v. 3: https://github.com/FreeApophis/TrueCrypt/blob/master/License.txt
+39. University of Utah Public License: http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt
+40. UnRAR License: https://github.com/junrar/junrar/blob/master/LICENSE
+41. YaST and SuSE Linux license terms: http://ftp2.de.freebsd.org/pub/linux/suse/5.3/i386.de/COPYRIGHT.yast
+42. YaST und SuSE Linux Lizenzbestimmungen: https://web.archive.org/web/20040407183411/http://www.suse.de/de/private/support/licenses/yast.html
+43. ZIB Academic License: https://web.archive.org/web/20090408081543/http://www.zib.de:80/Optimization/Software/ziblicense.html
 
 Eine Sammlung skurriler "Bad Licenses findet sich bei https://github.com/ErikMcClure/bad-licenses
