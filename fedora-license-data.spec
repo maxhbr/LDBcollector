@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.19
+Version:        1.20
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,16 @@ make check-grammar
 
 
 %changelog
+* Mon May 08 2023 Miroslav Suchý <msuchy@redhat.com> 1.20-1
+- Add HP-1986
+- Add public domain notices from the tzdata data files
+- Add man-pages public domain notices
+- Add new file: SGP4
+- Add new file: metamail
+- Add automake to public-domain-text.txt
+- Add public-domain text for words
+- Add man-pages ultra permissive licenses
+
 * Thu Apr 20 2023 Miroslav Suchý <msuchy@redhat.com> 1.19-1
 - fix el7 build failure
 
