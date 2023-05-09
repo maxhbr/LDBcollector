@@ -180,12 +180,6 @@ This file is in the public domain, so clarified as of
 1996-06-05 by Arthur David Olson.
 '''
 
-package = abseil-cpp
-location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
-text = '''
-This file is in the public domain.
-'''
-
 package = ecl
 location = https://gitlab.com/embeddable-common-lisp/ecl/-/blob/develop/src/lsp/cmuutil.lsp
 text = '''
@@ -273,7 +267,10 @@ This code is in the public domain and has no copyright.
 '''
 
 package = pl
+          python-pdfminer
 location = https://github.com/SWI-Prolog/swipl-devel/blob/master/scripts/swipl-bt
+           https://github.com/SWI-Prolog/swipl-devel/blob/master/src/tools/functions.pm
+           https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
 text = '''
 This code is in the public domain
 '''
@@ -282,12 +279,6 @@ package = pl
 location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/pl-hash.c
 text = '''
 License: Public domain
-'''
-
-package = pl
-location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/tools/functions.pm
-text = '''
-This code is in the public domain
 '''
 
 package = pvs-sbcl
@@ -314,12 +305,6 @@ License: Public domain
 This program is distributed in the hope that it will be useful, but
 WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-'''
-
-package = python-pdfminer
-location = https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
-text = '''
-This code is in the public domain.
 '''
 
 package = imagej
@@ -454,8 +439,10 @@ text = '''
 '''
 
 package = tzdata
+          abseil-cpp
 location = https://github.com/eggert/tz/blob/main/zone1970.tab
            https://github.com/eggert/tz/blob/main/backzone
+           https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
 text = '''
 # This file is in the public domain.
 '''
