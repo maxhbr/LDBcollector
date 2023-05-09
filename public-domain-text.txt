@@ -34,6 +34,7 @@ This text is in the public domain.
 
 package = man-pages
 location = https://github.com/mkerrisk/man-pages/blob/master/man3/getnameinfo.3#L2
+           https://github.com/mkerrisk/man-pages/blob/master/man8/tzselect.8#L2
 text = '''
 This page is in the public domain.
 '''
@@ -54,12 +55,6 @@ package = man-pages
 location = https://github.com/mkerrisk/man-pages/blob/master/man8/ld.so.8#L2
 text = '''
 This is in the public domain
-'''
-
-package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man8/tzselect.8#L2
-text = '''
-This page is in the public domain
 '''
 
 package = automake
@@ -159,13 +154,9 @@ text = '''
 '''
 
 package = perl-Net-OpenID-Consumer
+          perl-Net-OpenID-Server
 location = https://metacpan.org/release/WROG/Net-OpenID-Consumer-1.18/source/examples/consumer.cgi
-text = '''
-This program is in the public domain.
-'''
-
-package = perl-Net-OpenID-Server
-location = https://metacpan.org/release/ROBN/Net-OpenID-Server-1.09/source/examples/server.cgi
+           https://metacpan.org/release/ROBN/Net-OpenID-Server-1.09/source/examples/server.cgi
 text = '''
 This program is in the public domain.
 '''
@@ -446,97 +437,17 @@ The files contain no AT&T code and are in the public domain.
 '''
 
 package = tzdata
-location = https://github.com/eggert/tz/blob/main/africa
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/africa
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/antarctica
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/asia
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/australasia
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/backward
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/backzone
-text = '''
-# This file is in the public domain.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/etcetera
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/europe
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/factory
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/iso3166.tab
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/northamerica
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
 location = https://github.com/eggert/tz/blob/main/zone.tab
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/backward
+           https://github.com/eggert/tz/blob/main/backward
+           https://github.com/eggert/tz/blob/main/northamerica
+           https://github.com/eggert/tz/blob/main/iso3166.tab
+           https://github.com/eggert/tz/blob/main/factory
+           https://github.com/eggert/tz/blob/main/europe
+           https://github.com/eggert/tz/blob/main/etcetera
+           https://github.com/eggert/tz/blob/main/australasia
+           https://github.com/eggert/tz/blob/main/asia
+           https://github.com/eggert/tz/blob/main/antarctica
+           https://github.com/eggert/tz/blob/main/africa
 text = '''
 # This file is in the public domain, so clarified as of
 # 2009-05-17 by Arthur David Olson.
@@ -544,6 +455,7 @@ text = '''
 
 package = tzdata
 location = https://github.com/eggert/tz/blob/main/zone1970.tab
+           https://github.com/eggert/tz/blob/main/backzone
 text = '''
 # This file is in the public domain.
 '''
