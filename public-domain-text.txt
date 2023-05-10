@@ -34,6 +34,7 @@ This text is in the public domain.
 
 package = man-pages
 location = https://github.com/mkerrisk/man-pages/blob/master/man3/getnameinfo.3#L2
+           https://github.com/mkerrisk/man-pages/blob/master/man8/tzselect.8#L2
 text = '''
 This page is in the public domain.
 '''
@@ -54,12 +55,6 @@ package = man-pages
 location = https://github.com/mkerrisk/man-pages/blob/master/man8/ld.so.8#L2
 text = '''
 This is in the public domain
-'''
-
-package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man8/tzselect.8#L2
-text = '''
-This page is in the public domain
 '''
 
 package = automake
@@ -159,13 +154,9 @@ text = '''
 '''
 
 package = perl-Net-OpenID-Consumer
+          perl-Net-OpenID-Server
 location = https://metacpan.org/release/WROG/Net-OpenID-Consumer-1.18/source/examples/consumer.cgi
-text = '''
-This program is in the public domain.
-'''
-
-package = perl-Net-OpenID-Server
-location = https://metacpan.org/release/ROBN/Net-OpenID-Server-1.09/source/examples/server.cgi
+           https://metacpan.org/release/ROBN/Net-OpenID-Server-1.09/source/examples/server.cgi
 text = '''
 This program is in the public domain.
 '''
@@ -187,12 +178,6 @@ location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f
 text = '''
 This file is in the public domain, so clarified as of
 1996-06-05 by Arthur David Olson.
-'''
-
-package = abseil-cpp
-location = https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
-text = '''
-This file is in the public domain.
 '''
 
 package = ecl
@@ -282,7 +267,10 @@ This code is in the public domain and has no copyright.
 '''
 
 package = pl
+          python-pdfminer
 location = https://github.com/SWI-Prolog/swipl-devel/blob/master/scripts/swipl-bt
+           https://github.com/SWI-Prolog/swipl-devel/blob/master/src/tools/functions.pm
+           https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
 text = '''
 This code is in the public domain
 '''
@@ -291,12 +279,6 @@ package = pl
 location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/pl-hash.c
 text = '''
 License: Public domain
-'''
-
-package = pl
-location = https://github.com/SWI-Prolog/swipl-devel/blob/master/src/tools/functions.pm
-text = '''
-This code is in the public domain
 '''
 
 package = pvs-sbcl
@@ -325,16 +307,15 @@ WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 '''
 
-package = python-pdfminer
-location = https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
-text = '''
-This code is in the public domain.
-'''
-
 package = imagej
 location = https://imagej.nih.gov/ij/disclaimer.html
 text = '''
-ImageJ was developed at the National Institutes of Health by an employee of the Federal Government in the course of his official duties. Pursuant to Title 17, Section 105 of the United States Code, this software is not subject to copyright protection and is in the public domain. ImageJ is an experimental system. NIH assumes no responsibility whatsoever for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic.
+ImageJ was developed at the National Institutes of Health by an employee of the 
+Federal Government in the course of his official duties. Pursuant to Title 17, 
+Section 105 of the United States Code, this software is not subject to copyright 
+protection and is in the public domain. ImageJ is an experimental system. NIH 
+assumes no responsibility whatsoever for its use by other parties, and makes no 
+guarantees, expressed or implied, about its quality, reliability, or any other characteristic.
 '''
 
 package = gdouros-aegean-fonts
@@ -446,104 +427,27 @@ The files contain no AT&T code and are in the public domain.
 '''
 
 package = tzdata
-location = https://github.com/eggert/tz/blob/main/africa
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/africa
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/antarctica
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/asia
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/australasia
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/backward
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/backzone
-text = '''
-# This file is in the public domain.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/etcetera
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/europe
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/factory
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/iso3166.tab
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
-location = https://github.com/eggert/tz/blob/main/northamerica
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
 location = https://github.com/eggert/tz/blob/main/zone.tab
+           https://github.com/eggert/tz/blob/main/backward
+           https://github.com/eggert/tz/blob/main/northamerica
+           https://github.com/eggert/tz/blob/main/iso3166.tab
+           https://github.com/eggert/tz/blob/main/factory
+           https://github.com/eggert/tz/blob/main/europe
+           https://github.com/eggert/tz/blob/main/etcetera
+           https://github.com/eggert/tz/blob/main/australasia
+           https://github.com/eggert/tz/blob/main/asia
+           https://github.com/eggert/tz/blob/main/antarctica
+           https://github.com/eggert/tz/blob/main/africa
 text = '''
 # This file is in the public domain, so clarified as of
 # 2009-05-17 by Arthur David Olson.
 '''
 
 package = tzdata
-location = https://github.com/eggert/tz/blob/main/backward
-text = '''
-# This file is in the public domain, so clarified as of
-# 2009-05-17 by Arthur David Olson.
-'''
-
-package = tzdata
+          abseil-cpp
 location = https://github.com/eggert/tz/blob/main/zone1970.tab
+           https://github.com/eggert/tz/blob/main/backzone
+           https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
 text = '''
 # This file is in the public domain.
 '''
