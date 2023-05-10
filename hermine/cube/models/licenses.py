@@ -203,9 +203,16 @@ class Team(models.Model):
         return self.name
 
 
+class GenericManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
+
+
 class Generic(models.Model):
     """A Generic obligation which is the simplification of the instances of several
     similar :class `Obligation`."""
+
+    objects = GenericManager()
 
     PASSIVITY_CHOICES = [("Active", "Active"), ("Passive", "Passive")]
     METAGATEGORY_CHOICES = [
@@ -259,9 +266,16 @@ class Generic(models.Model):
         )
 
 
+class ObligationManager(models.Manager):
+    def get_by_natural_key(self, name, license_spdx_id):
+        return self.get(name=name, license__spdx_id=license_spdx_id)
+
+
 class Obligation(models.Model):
     """An obligation deduced from a license verbatim. An obligation comes from only one
     license."""
+
+    objects = ObligationManager()
 
     TRIGGER_EXPL_CHOICES = [
         (
@@ -324,6 +338,9 @@ class Obligation(models.Model):
         default=Usage.MODIFICATION_ANY,
         help_text="Status of modication necessary to trigger this obligation",
     )
+
+    def natural_key(self):
+        return (self.name,) + self.license.natural_key()
 
     class Meta:
         unique_together = ["name", "license"]

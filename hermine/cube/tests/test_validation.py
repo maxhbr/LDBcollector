@@ -24,7 +24,7 @@ from .mixins import BaseHermineAPITestCase
 
 
 def import_licenses():
-    with open("cube/fixtures/fake_licenses.json") as licenses_file:
+    with open("cube/fixtures/fake_licenses_export.json") as licenses_file:
         handle_licenses_json(licenses_file.read())
 
 
