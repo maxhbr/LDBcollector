@@ -1,0 +1,18 @@
+- id: "Maven:com.google.code.findbugs:jsr305"
+  curations:
+    comment: |
+      The Subversion repository at https://findbugs.googlecode.com/svn/trunk/ has been moved to GitHub.
+    vcs:
+      type: "Git"
+      url: "https://github.com/findbugsproject/findbugs.git"
+      path: "findbugs"
+- id: "Maven:com.google.code.findbugs:jsr305:2.0.1"
+  curations:
+    comment: |
+      While no sources artifact has been published for this version, the Git repository contains a "jsr305.jar" file
+      which includes the source code (but also the class files).
+    source_artifact:
+      url: "https://github.com/findbugsproject/findbugs/raw/2.0.1/findbugs/lib/jsr305.jar"
+      hash:
+        value: "516c03b21d50a644d538de0f0369c620989cd8f0"
+        algorithm: "SHA1"
