@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.20
+Version:        1.21
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,12 @@ make check-grammar
 
 
 %changelog
+* Wed May 17 2023 Miroslav Suchý <msuchy@redhat.com> 1.21-1
+- Ensure all text files end with newlines
+- Add GPL-2.0-only WITH libpri-OpenH323-exception as allowed
+- Consolidate text in public-domain-text.txt
+- Add LicenseRef-LDP-1 as not-allowed
+
 * Mon May 08 2023 Miroslav Suchý <msuchy@redhat.com> 1.20-1
 - Add HP-1986
 - Add public domain notices from the tzdata data files
