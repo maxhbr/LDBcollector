@@ -80,7 +80,8 @@ class License(models.Model):
         (WARRANTY_PARTIAL, "Partial clause"),
         (WARRANTY_ABSENT, "No clause"),
     ]
-
+    created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated = models.DateTimeField(auto_now=True, null=True, blank=True)
     spdx_id = models.CharField("SPDX Identifier", max_length=200, unique=True)
     status = models.CharField(
         "Review status",
@@ -213,7 +214,8 @@ class Generic(models.Model):
     similar :class `Obligation`."""
 
     objects = GenericManager()
-
+    created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated = models.DateTimeField(auto_now=True, null=True, blank=True)
     PASSIVITY_CHOICES = [("Active", "Active"), ("Passive", "Passive")]
     METAGATEGORY_CHOICES = [
         ("Communication", "Communication constraints"),
@@ -223,6 +225,7 @@ class Generic(models.Model):
         ("ProvidingSourceCode", "Providing source code"),
         ("TechnicalConstraints", "Technical constraints"),
     ]
+
     name = models.CharField(
         max_length=200,
         unique=True,
