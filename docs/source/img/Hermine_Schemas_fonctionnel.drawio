@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-04-20T15:12:23.295Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" etag="5d6VobOeeNZp9V8c0hi8" compressed="false" version="20.7.4" type="device" pages="2">
+<mxfile host="Electron" modified="2023-05-24T10:07:00.087Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" etag="OXIo-Xc6A2LL3WMF656B" compressed="false" version="20.7.4" type="device" pages="2">
   <diagram id="Sjpgy1_5FEFbWrrsqC8B" name="Validation">
     <mxGraphModel dx="1434" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -68,12 +68,12 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Obligations" id="a5hse4hcavYoNgAav8dx">
-    <mxGraphModel dx="1687" dy="1819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="5736" dy="3372" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-0" />
         <mxCell id="afcJRWfnWqvjF0sp7qlo-1" parent="afcJRWfnWqvjF0sp7qlo-0" />
         <mxCell id="afcJRWfnWqvjF0sp7qlo-2" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;fontFamily=Ubuntu;fontSize=19;fontColor=#FFFFFF;fillColor=none;dashed=1;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="380" y="240" width="200" height="530" as="geometry" />
+          <mxGeometry x="240" y="261" width="200" height="530" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" source="afcJRWfnWqvjF0sp7qlo-8" target="RaAgievXMx-820h7E_Ox-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -88,73 +88,73 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-8" value="Licence&lt;br&gt;Analysis" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontFamily=Ubuntu;fontSize=19;fontColor=#FFFFFF;size=45;fillColor=#fa6800;strokeColor=#C73500;fontStyle=1" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="639.37" y="319" width="180.63" height="140" as="geometry" />
+          <mxGeometry x="499.37" y="340" width="180.63" height="140" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Ubuntu;fontSize=19;fontColor=#FFFFFF;strokeWidth=3;" parent="afcJRWfnWqvjF0sp7qlo-1" source="afcJRWfnWqvjF0sp7qlo-10" target="afcJRWfnWqvjF0sp7qlo-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-10" value="Technical Context&lt;br&gt;(triggering obligations)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;strokeWidth=9;fontFamily=Ubuntu;fontSize=19;fontStyle=1" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="606.25" y="497" width="243.75" height="70" as="geometry" />
+          <mxGeometry x="466.25" y="518" width="243.75" height="70" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontFamily=Ubuntu;fontSize=19;fontColor=#FFFFFF;strokeWidth=3;" parent="afcJRWfnWqvjF0sp7qlo-1" source="afcJRWfnWqvjF0sp7qlo-12" target="afcJRWfnWqvjF0sp7qlo-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-12" value="Exploitation" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontFamily=Ubuntu;fontSize=19;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="418" y="607" width="120" height="40" as="geometry" />
+          <mxGeometry x="278" y="628" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Ubuntu;fontSize=19;fontColor=#FFFFFF;strokeWidth=3;" parent="afcJRWfnWqvjF0sp7qlo-1" source="afcJRWfnWqvjF0sp7qlo-14" target="afcJRWfnWqvjF0sp7qlo-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-14" value="Linking type" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontFamily=Ubuntu;fontSize=19;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="418" y="657" width="120" height="40" as="geometry" />
+          <mxGeometry x="278" y="678" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontFamily=Ubuntu;fontSize=19;fontColor=#FFFFFF;strokeWidth=3;" parent="afcJRWfnWqvjF0sp7qlo-1" source="afcJRWfnWqvjF0sp7qlo-16" target="afcJRWfnWqvjF0sp7qlo-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-16" value="Modified ?" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontFamily=Ubuntu;fontSize=19;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="418" y="707" width="120" height="40" as="geometry" />
+          <mxGeometry x="278" y="728" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Ubuntu;fontSize=19;fontColor=#FFFFFF;strokeWidth=3;" parent="afcJRWfnWqvjF0sp7qlo-1" source="afcJRWfnWqvjF0sp7qlo-18" target="afcJRWfnWqvjF0sp7qlo-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-18" value="Licence of the Open Source&lt;br&gt;component" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontFamily=Ubuntu;fontSize=19;fontColor=#ffffff;fillColor=#76608a;strokeColor=#432D57;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="420" y="339" width="120" height="100" as="geometry" />
+          <mxGeometry x="280" y="360" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="afcJRWfnWqvjF0sp7qlo-20" value="To answer the question:&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;br style=&quot;font-size: 25px;&quot;&gt;What obligations should I follow to be compliant with the licence of this component in this usage context?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Ubuntu;fontSize=25;fontStyle=1" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="630" y="-50" width="340" height="250" as="geometry" />
+          <mxGeometry x="510" y="20" width="340" height="250" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" source="RaAgievXMx-820h7E_Ox-1" target="RaAgievXMx-820h7E_Ox-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-1" value="Obligation 1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="870" y="319" width="120" height="30" as="geometry" />
+          <mxGeometry x="730" y="340" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" source="RaAgievXMx-820h7E_Ox-4" target="RaAgievXMx-820h7E_Ox-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-4" value="Obligation 2" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="870" y="359" width="120" height="30" as="geometry" />
+          <mxGeometry x="730" y="380" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" source="RaAgievXMx-820h7E_Ox-5" target="RaAgievXMx-820h7E_Ox-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-5" value="Obligation 3" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="870" y="398" width="120" height="30" as="geometry" />
+          <mxGeometry x="730" y="419" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-6" value="Obligation 4" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ubuntu;fontSize=14;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="870" y="439" width="120" height="30" as="geometry" />
+          <mxGeometry x="730" y="460" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-11" value="Generic obligation A" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="1070" y="316" width="120" height="36" as="geometry" />
+          <mxGeometry x="930" y="337" width="120" height="36" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-13" value="Generic obligation B" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="1070" y="356" width="120" height="36" as="geometry" />
+          <mxGeometry x="930" y="377" width="120" height="36" as="geometry" />
         </mxCell>
         <mxCell id="RaAgievXMx-820h7E_Ox-14" value="Generic obligation C" style="whiteSpace=wrap;html=1;fontSize=14;fontFamily=Ubuntu;rounded=0;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
-          <mxGeometry x="1070" y="395.5" width="120" height="36" as="geometry" />
+          <mxGeometry x="930" y="416.5" width="120" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="Wzy9yNOAurDndINpXCb6-0" value="&lt;p style=&quot;line-height: 130%; font-size: 18px;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center; font-size: 18px;&quot;&gt;Usage of an Open Source component&lt;/div&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Ubuntu;verticalAlign=middle;" vertex="1" parent="afcJRWfnWqvjF0sp7qlo-1">
-          <mxGeometry x="395" y="249" width="170" height="70" as="geometry" />
+        <mxCell id="Wzy9yNOAurDndINpXCb6-0" value="&lt;p style=&quot;line-height: 130%; font-size: 18px;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center; font-size: 18px;&quot;&gt;Usage of an Open Source component&lt;/div&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Ubuntu;verticalAlign=middle;" parent="afcJRWfnWqvjF0sp7qlo-1" vertex="1">
+          <mxGeometry x="255" y="270" width="170" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
