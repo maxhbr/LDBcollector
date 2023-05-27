@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.21
+Version:        1.22
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,12 @@ make check-grammar
 
 
 %changelog
+* Sat May 27 2023 Miroslav Suchý <msuchy@redhat.com> 1.22-1
+- Add cryptsetup GPL/LGPL licenses with OpenSSL exceptions.
+- Add new file for the BSD-3-Clause-Open-MPI variant
+- Add new files for the GPL-3.0-interface-exception
+- Add new file for GPL-3.0-or-later_WITH_cryptsetup-OpenSSL-exception
+
 * Wed May 17 2023 Miroslav Suchý <msuchy@redhat.com> 1.21-1
 - Ensure all text files end with newlines
 - Add GPL-2.0-only WITH libpri-OpenH323-exception as allowed
