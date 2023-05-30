@@ -207,7 +207,7 @@ Example :
 </testsuites>
 ```
 
-## Generic obligations endpoints
+## Endpoints for generic obligations 
 
 ```{py:function} GET api/generics/
 
