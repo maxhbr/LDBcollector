@@ -46,4 +46,4 @@ EXPOSE $DJANGO_PORT
 # RUN if [ -f shared.json ]; then $APP_PATH/manage.py init_shared_data shared.json; fi
 
 # run entrypoint.sh
-ENTRYPOINT $APP_PATH/docker-entrypoint.sh
+ENTRYPOINT /opt/hermine/docker-entrypoint.sh
