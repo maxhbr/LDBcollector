@@ -10,10 +10,11 @@ import django.db.models.deletion
 def merge_curations(app, schema_editor):
     UsageDecision = app.get_model("cube", "UsageDecision")
     LicenseCuration = app.get_model("cube", "LicenseCuration")
+    db_alias = schema_editor.connection.alias
 
     # copy LicenseCuration and ExpressionValidation (proxy of UsageDecision) into new table for LicenseCuration
 
-    LicenseCuration.objects.bulk_create(
+    LicenseCuration.objects.using(db_alias).bulk_create(
         LicenseCuration(
             created=curation.created,
             updated=curation.updated,
@@ -25,22 +26,30 @@ def merge_curations(app, schema_editor):
             expression_out=curation.expression_out,
             explanation=curation.explanation,
         )
-        for curation in UsageDecision.objects.exclude(decision_type="choice")
+        for curation in UsageDecision.objects.using(db_alias).exclude(
+            decision_type="choice"
+        )
     )
 
     # merged chained curations
 
-    for curation in LicenseCuration.objects.annotate(
-        chain=Subquery(
-            LicenseCuration.objects.filter(
-                component=OuterRef("component"),
-                version=OuterRef("version"),
-                expression_in=OuterRef("expression_out"),
-            ).values("pk")
+    for curation in (
+        LicenseCuration.objects.using(db_alias)
+        .annotate(
+            chain=Subquery(
+                LicenseCuration.objects.using(db_alias)
+                .filter(
+                    component=OuterRef("component"),
+                    version=OuterRef("version"),
+                    expression_in=OuterRef("expression_out"),
+                )
+                .values("pk")
+            )
         )
-    ).exclude(chain=None):
+        .exclude(chain=None)
+    ):
         for chain_pk in curation.chain:
-            chained_curation = LicenseCuration.objects.get(pk=chain_pk)
+            chained_curation = LicenseCuration.objects.using(db_alias).get(pk=chain_pk)
             chained_curation.expression_in = curation.expression_in
             chained_curation.explanation = (
                 f"This curation was automatically merged out of two chained_curationed curations. "
@@ -51,7 +60,6 @@ def merge_curations(app, schema_editor):
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ("cube", "0030_derogation_author_derogation_created_and_more"),

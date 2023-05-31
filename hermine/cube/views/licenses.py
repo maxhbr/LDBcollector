@@ -3,10 +3,10 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib import messages
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.decorators import (
     permission_required as permission_required_decorator,
 )
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.urls import reverse_lazy, reverse
@@ -18,6 +18,7 @@ from django.views.generic import (
     UpdateView,
     CreateView,
     DeleteView,
+    TemplateView,
 )
 from odf.opendocument import OpenDocumentText
 from odf.style import Style, TextProperties, ParagraphProperties
@@ -361,3 +362,53 @@ class GenericUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
 
     def get_success_url(self):
         return reverse("cube:generic", args=[self.object.id])
+
+
+class SharedReferenceView(LoginRequiredMixin, PermissionRequiredMixin, TemplateView):
+    permission_required = "cube.view_licenses"
+    template_name = "cube/shared_reference.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["shared"] = {
+            # "version": apps.get_app_config("cube").shared_database_version,
+            # "date": apps.get_app_config("cube").shared_database_date,
+            "licenses": {
+                "total": License.objects.using("shared"),
+                "missing": License.objects.using("shared").exclude(
+                    spdx_id__in=list(
+                        License.objects.all().values_list("spdx_id", flat=True)
+                    )
+                ),
+            },
+            "generics": {
+                "total": Generic.objects.using("shared").all(),
+                "missing": Generic.objects.using("shared").exclude(
+                    name__in=list(Generic.objects.all().values_list("name", flat=True))
+                ),
+            },
+        }
+        context["local"] = {
+            "licenses": {
+                "total": License.objects.all(),
+                "missing": License.objects.exclude(
+                    spdx_id__in=list(
+                        License.objects.using("shared")
+                        .all()
+                        .values_list("spdx_id", flat=True)
+                    )
+                ),
+            },
+            "generics": {
+                "total": Generic.objects.all(),
+                "missing": Generic.objects.exclude(
+                    name__in=list(
+                        Generic.objects.using("shared")
+                        .all()
+                        .values_list("name", flat=True)
+                    )
+                ),
+            },
+        }
+
+        return context

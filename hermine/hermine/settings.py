@@ -104,6 +104,10 @@ WSGI_APPLICATION = "hermine.wsgi.application"
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = secrets.DATABASES
+DATABASES["shared"] = {
+    "ENGINE": "django.db.backends.sqlite3",
+    "NAME": "shared.sqlite3",
+}
 
 
 # Password validation

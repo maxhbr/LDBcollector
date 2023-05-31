@@ -8,7 +8,7 @@ from json import JSONDecodeError
 
 from django import forms
 from django.core.exceptions import ValidationError
-from rest_framework import serializers
+from django.core.serializers.base import DeserializationError
 
 from cube.models import Release, Usage
 from cube.utils.generics import handle_generics_json
@@ -34,7 +34,7 @@ class ImportGenericsForm(BaseJsonImportForm):
         file = self.cleaned_data["file"]
         try:
             handle_generics_json(file)
-        except serializers.ValidationError as e:
+        except DeserializationError as e:
             raise ValidationError(str(e))
         except KeyError:
             raise ValidationError('Each generic object must have a "id" field.')
@@ -45,8 +45,8 @@ class ImportLicensesForm(BaseJsonImportForm):
         file = self.cleaned_data["file"]
         try:
             handle_licenses_json(file)
-        except serializers.ValidationError as e:
-            raise ValidationError(e.message)
+        except DeserializationError as e:
+            raise ValidationError(str(e))
         except KeyError:
             raise ValidationError('Each license object must have a "spdx_id" field.')
 

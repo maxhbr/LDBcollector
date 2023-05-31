@@ -137,6 +137,7 @@ urlpatterns = [
     path(
         "licensechoices/", views.LicenseChoiceListView.as_view(), name="licensechoices"
     ),
+    path("shared/", views.SharedReferenceView.as_view(), name="shared_reference"),
     # Releases views
     path(
         "release/<int:pk>/edit/",
