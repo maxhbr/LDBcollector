@@ -10,6 +10,8 @@ from cube.serializers import (
     LicenseSerializer,
     VersionSerializer,
     DerogationSerializer,
+    GenericSerializer,
+    ObligationSerializer,
 )
 
 
@@ -43,6 +45,12 @@ class ReleaseSerializer(serializers.ModelSerializer):
             "commit",
             "exploitations",
         ]
+
+
+class ReleaseObligationsSerializer(serializers.Serializer):
+    generics = GenericSerializer(many=True, read_only=True)
+    obligations = ObligationSerializer(many=True, read_only=True)
+    licenses = LicenseSerializer(many=True, read_only=True)
 
 
 class ProductSerializer(serializers.ModelSerializer):
