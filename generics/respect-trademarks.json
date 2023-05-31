@@ -1,0 +1,7 @@
+{
+  "name": "Respect trademarks",
+  "description": "Don\u2019t use elements of the project that may be covered by Trademark Law (project name, logo) in external communications.",
+  "in_core": true,
+  "metacategory": "Communication",
+  "passivity": "Passive"
+}

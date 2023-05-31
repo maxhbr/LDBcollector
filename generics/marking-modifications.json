@@ -1,0 +1,7 @@
+{
+  "name": "Marking Modifications",
+  "description": "Document all modifications made in the source code of third-party Open Source components.",
+  "in_core": true,
+  "metacategory": "Mentions",
+  "passivity": "Active"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Extra mentions in documentation",
+  "description": "Include specific mentions/attributions/ statements or warnings in the documentation.",
+  "in_core": false,
+  "metacategory": "Mentions",
+  "passivity": "Active"
+}

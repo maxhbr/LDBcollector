@@ -1,0 +1,64 @@
+{
+    "spdx_id": "BSD-3-Clause",
+    "long_name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "license_version": "",
+    "radical": "BSD-3-Clause",
+    "autoupgrade": false,
+    "steward": "",
+    "inspiration_spdx": "",
+    "copyleft": "None",
+    "allowed": "always",
+    "allowed_explanation": "",
+    "url": "https://opensource.org/licenses/BSD-3-Clause",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": false,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "generic": [
+                "Preserve IP mentions in Source code"
+            ],
+            "name": "Conservation des mentions de PI dans source",
+            "verbatim": "1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "generic": [
+                "License and copyright notices in documentation"
+            ],
+            "name": "Licence dans la documentation",
+            "verbatim": "2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "generic": [
+                "No use of names for endorsement"
+            ],
+            "name": "No use of names for endorsment",
+            "verbatim": "3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.",
+            "passivity": "Passive",
+            "trigger_expl": "InternalUse",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

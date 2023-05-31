@@ -1,0 +1,7 @@
+{
+  "name": "License agreement does not attempt to limit rights given by upstream",
+  "description": "The license agreement of the global product must not limit rights given by the upstream Open Source license for the code of the original Open Source component",
+  "in_core": false,
+  "metacategory": "LicenseAgreement",
+  "passivity": "Passive"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Indemnification of contributors",
+  "description": "If any contributors is attacked because of the usage or distribution of the product, then they must be defended and indemnified",
+  "in_core": false,
+  "metacategory": "LicenseAgreement",
+  "passivity": "Active"
+}

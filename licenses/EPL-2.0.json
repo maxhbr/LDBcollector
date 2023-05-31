@@ -1,0 +1,129 @@
+{
+    "spdx_id": "EPL-2.0",
+    "long_name": "Eclipse Public License 2.0",
+    "license_version": "2.0",
+    "radical": "EPL",
+    "autoupgrade": true,
+    "steward": "Eclipse Foundation",
+    "inspiration_spdx": "",
+    "copyleft": "Weak",
+    "allowed": "context",
+    "allowed_explanation": "",
+    "url": "https://www.eclipse.org/legal/epl-2.0",
+    "osi_approved": true,
+    "fsf_approved": true,
+    "foss": "Yes-Auto",
+    "patent_grant": true,
+    "ethical_clause": false,
+    "non_commercial": false,
+    "non_tivoisation": false,
+    "law_choice": "",
+    "comment": "",
+    "verbatim": "",
+    "obligations": [
+        {
+            "license": [
+                "EPL-2.0"
+            ],
+            "generic": [
+                "Providing CSC to end user"
+            ],
+            "name": "Providing CSC to end user",
+            "verbatim": "3. REQUIREMENTS\r\n\r\n      3.1 If a Contributor Distributes the Program in any form, then:\r\n\r\na) the Program must also be made available as Source Code, in accordance with\r\nsection 3.2,",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-2.0"
+            ],
+            "generic": [
+                "Extra mentions in documentation"
+            ],
+            "name": "Mention in Documentation of source availability",
+            "verbatim": "3.1.a [...]\r\n and the Contributor must accompany the Program with a statement\r\nthat the Source Code for the Program is available under this Agreement, and\r\ninforms Recipients how to obtain it in a reasonable manner on or through a\r\nmedium customarily used for software exchange; and",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-2.0"
+            ],
+            "generic": [
+                "Preserve IP mentions in Source code"
+            ],
+            "name": "License and notice in source code",
+            "verbatim": "3.2 b) a copy of this Agreement must be included with each copy of the Program.\r\n\r\n3.3 Contributors may not remove or alter any copyright, patent, trademark,\r\nattribution notices, disclaimers of warranty, or limitations of liability\r\n(\"notices\") contained within the Program from any copy of the Program which\r\nthey Distribute, provided that Contributors may add their own appropriate\r\nnotices.",
+            "passivity": "",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-2.0"
+            ],
+            "generic": [
+                "License agreement does not attempt to limit rights given by upstream"
+            ],
+            "name": "does not attempt to limit or alter the recipients' rights",
+            "verbatim": "3.1.a.iii) does not attempt to limit or alter the recipients' rights in the Source\r\nCode under section 3.2; \r\niv) requires any subsequent distribution of the Program by any party to be\r\nunder a license that satisfies the requirements of this section 3.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-2.0"
+            ],
+            "generic": [
+                "License agreement disclaiming responsability of other contributors"
+            ],
+            "name": "License agreement disclaiming warranty and liability on behalf of other contributors",
+            "verbatim": "3.1.b.i) effectively disclaims on behalf of all other Contributors all warranties\r\nand conditions, express and implied, including warranties or conditions of\r\ntitle and non-infringement, and implied warranties or conditions of merchantability\r\nand fitness for a particular purpose;\r\nii) effectively excludes on behalf of all other Contributors all liability\r\nfor damages, including direct, indirect, special, incidental and consequential\r\ndamages, such as lost profits;",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-2.0"
+            ],
+            "generic": [
+                "Indemnification of contributors"
+            ],
+            "name": "Indemnification of contributors",
+            "verbatim": "4. COMMERCIAL DISTRIBUTION\r\n\r\n[....]  hereby agrees to defend and indemnify\r\nevery other Contributor (\"Indemnified Contributor\") against any losses, damages\r\nand costs (collectively \"Losses\") arising from claims, lawsuits and other\r\nlegal actions brought by a third party against the Indemnified Contributor\r\nto the extent caused by the acts or omissions of such Commercial Contributor\r\nin connection with its distribution of the Program in a commercial product\r\noffering. The obligations in this section do not apply to any claims or Losses\r\nrelating to any actual or alleged intellectual property infringement. In order\r\nto qualify, an Indemnified Contributor must: a) promptly notify the Commercial\r\nContributor in writing of such claim, and b) allow the Commercial Contributor\r\nto control, and cooperate with the Commercial Contributor in, the defense\r\nand any related settlement negotiations. The Indemnified Contributor may participate\r\nin any such claim at its own expense.",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-2.0"
+            ],
+            "generic": [
+                "Patent Peace"
+            ],
+            "name": "Patent peace",
+            "verbatim": "7. GENERAL\r\n[...]\r\nIf Recipient institutes patent litigation against any entity (including a\r\ncross-claim or counterclaim in a lawsuit) alleging that the Program itself\r\n(excluding combinations of the Program with other software or hardware) infringes such Recipient's patent(s), then such Recipient's rights granted under Section 2(b) shall terminate as of the date such litigation is filed.",
+            "passivity": "Passive",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        },
+        {
+            "license": [
+                "EPL-2.0"
+            ],
+            "generic": [
+                "Weak Copyleft"
+            ],
+            "name": "Weak copyleft",
+            "verbatim": "3.2 When the Program is Distributed as Source Code:\r\n\r\na) it must be made available under this Agreement, or if the Program (i) is\r\ncombined with other material in a separate file or files made available under\r\na Secondary License, and (ii) the initial Contributor attached to the Source\r\nCode the notice described in Exhibit A of this Agreement, then the Program\r\nmay be made available under the terms of such Secondary Licenses, and",
+            "passivity": "Active",
+            "trigger_expl": "DistributionSourceDistributionNonSource",
+            "trigger_mdf": "AlteredUnmodified"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Obnoxious advertising clause",
+  "description": "Display of specific content in any advertising document mentioning the features or the use of the software.",
+  "in_core": false,
+  "metacategory": "Communication",
+  "passivity": "Active"
+}

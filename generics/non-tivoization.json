@@ -1,0 +1,7 @@
+{
+  "name": "Non Tivoization",
+  "description": "Make available any methods, procedures, authorization keys, or other information required to install and execute modified versions the information required to run a modified version of the software (including  provision of load certificates) on the hardware.",
+  "in_core": false,
+  "metacategory": "TechnicalConstraints",
+  "passivity": "Active"
+}
