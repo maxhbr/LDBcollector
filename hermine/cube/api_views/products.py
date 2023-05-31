@@ -15,11 +15,7 @@ from rest_framework.response import Response
 from cube.importers import import_spdx_file, import_ort_evaluated_model_json_file
 from cube.models import Product, Release, Exploitation
 from cube.serializers import (
-    GenericSerializer,
-)
-from cube.serializers import (
     ReleaseSerializer,
-    LicenseSerializer,
     UploadSPDXSerializer,
     UploadORTSerializer,
 )
@@ -31,6 +27,7 @@ from cube.serializers.products import (
     PolicyValidationSerializer,
     ExploitationSerializer,
     ExploitationsValidationSerializer,
+    ReleaseObligationsSerializer,
 )
 from cube.utils.licenses import get_usages_obligations
 from cube.utils.release_validation import (
@@ -276,17 +273,20 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             content=to_xml_report_string([ts]), content_type="application/xml"
         )
 
+    @swagger_auto_schema(
+        responses={200: ReleaseObligationsSerializer},
+    )
     @action(detail=True, methods=["get"])
     def obligations(self, pk, **kwargs):
         usages = self.get_object().usage_set.all()
-        generics_involved, specifics = get_usages_obligations(usages)
+        generics_involved, specifics, licenses_involved = get_usages_obligations(usages)
+        response = {
+            "generics": generics_involved,
+            "obligations": specifics,
+            "licenses": licenses_involved,
+        }
 
-        return Response(
-            {
-                "generics": GenericSerializer(generics_involved, many=True).data,
-                "specifics": LicenseSerializer(specifics, many=True).data,
-            }
-        )
+        return Response(ReleaseObligationsSerializer(response).data)
 
 
 class ExploitationViewSet(viewsets.ModelViewSet):
