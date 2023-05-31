@@ -90,15 +90,17 @@ groups = {
 def create_default_groups(apps, schema_editor):
     Group = apps.get_model("auth", "Group")
     Permission = apps.get_model("auth", "Permission")
+    db_alias = schema_editor.connection.alias
 
     # Create the groups
     for goup_name, permissions in groups.items():
-        group = Group.objects.create(name=goup_name)
-        group.permissions.add(*Permission.objects.filter(codename__in=permissions))
+        group = Group.objects.using(db_alias).create(name=goup_name)
+        group.permissions.add(
+            *Permission.objects.using(db_alias).filter(codename__in=permissions)
+        )
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("cube", "0039_alter_generic_options_alter_license_options_and_more"),
     ]

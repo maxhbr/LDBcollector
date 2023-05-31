@@ -6,6 +6,8 @@ __pycache__
 /vrac/
 variousScripts
 db.sqlite3
+shared.sqlite3
+shared.json
 **.css.map
 docs/build/
 .vscode/

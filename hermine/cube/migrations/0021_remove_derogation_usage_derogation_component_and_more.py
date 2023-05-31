@@ -6,7 +6,8 @@ from django.db import migrations, models
 
 def migrate_derogations(app, schema_editor):
     Derogation = app.get_model("cube", "Derogation")
-    for derogation in Derogation.objects.exclude(usage=None):
+    db_alias = schema_editor.connection.alias
+    for derogation in Derogation.objects.using(db_alias).exclude(usage=None):
         derogation.version = derogation.usage.version
         derogation.scope = derogation.usage.scope
         derogation.save()
@@ -15,9 +16,12 @@ def migrate_derogations(app, schema_editor):
 def unmigrate_derogations(app, schema_editor):
     Derogation = app.get_model("cube", "Derogation")
     Usage = app.get_model("cube", "Usage")
-    for derogation in Derogation.objects.exclude(version=None).exclude(release=None):
+    db_alias = schema_editor.connection.alias
+    for derogation in (
+        Derogation.objects.using(db_alias).exclude(version=None).exclude(release=None)
+    ):
         try:
-            usage = Usage.objects.get(
+            usage = Usage.objects.using(db_alias).get(
                 release=derogation.release, version=derogation.version
             )
         except (Usage.DoesNotExist, Usage.MultipleObjectsReturned):
@@ -28,7 +32,6 @@ def unmigrate_derogations(app, schema_editor):
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("cube", "0020_alter_team_name"),
     ]

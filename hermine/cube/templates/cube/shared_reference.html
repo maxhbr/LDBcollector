@@ -1,0 +1,70 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+{% block title %}Shared reference data{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url "cube:licenses" %}">Licenses</a></li>
+    <li>Shared reference data</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium"><i class="fas fa-clipboard-check"></i></span>
+    Shared reference data
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <h3>Licenses</h3>
+  <table class="is-flex">
+    <tr>
+      <th rowspan="2">Shared data</th>
+      <th>Total</th>
+      <td>{{ shared.licenses.total.count }}</td>
+    </tr>
+    <tr>
+      <th>Missing in local data</th>
+      <td>{{ shared.licenses.missing.count }}</td>
+    </tr>
+    <tr>
+      <th rowspan="2" style="border-bottom-width: 0">Local data</th>
+      <th>Total</th>
+      <td>{{ local.licenses.total.count }}</td>
+    </tr>
+    <tr>
+      <th>Absent from shared data</th>
+      <td>{{ local.licenses.missing.count }}</td>
+    </tr>
+  </table>
+
+  <h3>Generic obligations</h3>
+  <table class="is-flex">
+    <tr>
+      <th rowspan="2">Shared data</th>
+      <th>Total</th>
+      <td>{{ shared.generics.total.count }}</td>
+    </tr>
+    <tr>
+      <th>Missing in local data</th>
+      <td>{{ shared.generics.missing.count }}</td>
+    </tr>
+    <tr>
+      <th rowspan="2" style="border-bottom-width: 0">Local data</th>
+      <th>Total</th>
+      <td>{{ local.generics.total.count }}</td>
+    </tr>
+    <tr>
+      <th>Absent from shared data</th>
+      <td>{{ local.generics.missing.count }}</td>
+    </tr>
+  </table>
+{% endblock %}
