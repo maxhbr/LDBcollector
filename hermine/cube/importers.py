@@ -20,6 +20,7 @@ from spdx.parsers import (
     yamlparser,
 )
 from spdx.parsers.loggers import StandardLogger
+from spdx.utils import NoAssert
 
 from cube.models import Component, Version, Usage, Exploitation
 from cube.utils.licenses import simplified
@@ -177,41 +178,51 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         current_project = Usage.DEFAULT_PROJECT
         comp_name = package.name.rsplit("@")[0]
         comp_url = package.download_location or ""
-        comp, created = Component.objects.get_or_create(
+        component, created = Component.objects.get_or_create(
             name=comp_name, defaults={"homepage_url": comp_url}
         )
-        # If necessary create version
-        vers_number = package.version or "Current"
-        vers_lic_decl = package.license_declared.identifier
+
+        if isinstance(package.license_declared, NoAssert):
+            declared_license = "NOASSERTION"
+        else:
+            declared_license = package.license_declared.identifier
+
         # SPDX output sometimes return "NOASSERTION" instead of an empty value
-        # we want to keep it as declared but it is not a valid license expresson
-        vers_lic_concl = package.conc_lics.identifier
-        if vers_lic_concl == "NOASSERTION":
-            vers_lic_concl = ""
-        vers, vcreated = Version.objects.get_or_create(
-            component=comp,
-            version_number=vers_number,
+        # we want to keep it as declared but it is not a valid license expression
+        if (
+            isinstance(package.conc_lics, NoAssert)
+            or package.conc_lics.identifier == "NOASSERTION"
+        ):
+            concluded_license = ""
+        else:
+            concluded_license = package.conc_lics.identifier
+
+        version, created = Version.objects.get_or_create(
+            component=component,
+            version_number=package.version or "Current",
             defaults={
-                "declared_license_expr": vers_lic_decl,
-                "spdx_valid_license_expr": vers_lic_concl
-                and simplified(vers_lic_concl),
+                "declared_license_expr": declared_license,
+                "spdx_valid_license_expr": concluded_license
+                and simplified(concluded_license),
             },
         )
-        version_id = vers.id
+
         try:
             exploitation = Exploitation.objects.get(
                 release=release_id, project=current_project, scope=current_scope
             ).exploitation
         except Exploitation.DoesNotExist:
             exploitation = ""
+
         Usage.objects.get_or_create(
-            version_id=version_id,
+            version_id=version.id,
             release_id=release_id,
             project=current_project,
             exploitation=exploitation,
             scope=current_scope,
             defaults={"addition_method": "Scan", "linking": linking},
         )
+
     logger.info("SPDX import done", datetime.now())
 
 
@@ -220,33 +231,26 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
 # SPDX-FileCopyrightText: spdx contributors
 # SPDX-License-Identifier: Apache-2.0
 def parse_spdx_file(spdx_file):
-    builder_module = jsonyamlxmlbuilders
     filename = spdx_file.name
-    read_data = False
-    if filename.endswith(".rdf") or filename.endswith(".rdf.xml"):
-        parsing_module = rdf
-        builder_module = rdfbuilders
-    elif filename.endswith(".spdx"):
-        parsing_module = rdf
-        builder_module = rdfbuilders
+    if (
+        filename.endswith(".rdf")
+        or filename.endswith(".rdf.xml")
+        or filename.endswith(".spdx")
+    ):
+        parser = rdf.Parser(rdfbuilders.Builder(), StandardLogger())
     elif filename.endswith(".tag"):
-        parsing_module = tagvalue
-        builder_module = tagvaluebuilders
-        read_data = True
+        parser = tagvalue.Parser(tagvaluebuilders.Builder(), StandardLogger())
+        spdx_file = spdx_file.read().decode("utf-8")
     elif filename.endswith(".json"):
-        parsing_module = jsonparser
+        parser = jsonparser.Parser(jsonyamlxmlbuilders.Builder(), StandardLogger())
     elif filename.endswith(".xml"):
-        parsing_module = xmlparser
+        parser = xmlparser.Parser(jsonyamlxmlbuilders.Builder(), StandardLogger())
     elif filename.endswith(".yaml") or filename.endswith(".yml"):
-        parsing_module = yamlparser
+        parser = yamlparser.Parser(jsonyamlxmlbuilders.Builder(), StandardLogger())
     else:
         return None, "FileType Not Supported" + filename
 
-    parser = parsing_module.Parser(builder_module.Builder(), StandardLogger())
     if hasattr(parser, "build"):
         parser.build()
-    if read_data:
-        data = spdx_file.read()
-        return parser.parse(data)
-    else:
-        return parser.parse(spdx_file)
+
+    return parser.parse(spdx_file)
