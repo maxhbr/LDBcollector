@@ -36,14 +36,14 @@ COPY pyproject.toml poetry.lock $APP_PATH/
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi --without dev
 COPY hermine $APP_PATH/
-COPY shared.json $APP_PATH/
+# COPY shared.json $APP_PATH/
 COPY docker/docker-entrypoint.sh $APP_PATH/
 COPY docker/docker_secrets.py $APP_PATH/hermine/mysecrets.py
 
 EXPOSE $DJANGO_PORT
 
 # init shared data
-RUN if [ -f shared.json ]; then $APP_PATH/manage.py init_shared_data shared.json; fi
+# RUN if [ -f shared.json ]; then $APP_PATH/manage.py init_shared_data shared.json; fi
 
 # run entrypoint.sh
 ENTRYPOINT $APP_PATH/docker-entrypoint.sh
