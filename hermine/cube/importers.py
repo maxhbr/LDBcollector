@@ -20,7 +20,6 @@ from spdx.parsers import (
     yamlparser,
 )
 from spdx.parsers.loggers import StandardLogger
-from spdx.utils import NoAssert
 
 from cube.models import Component, Version, Usage, Exploitation
 from cube.utils.licenses import simplified
@@ -182,17 +181,14 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
             name=comp_name, defaults={"homepage_url": comp_url}
         )
 
-        if isinstance(package.license_declared, NoAssert):
+        if not package.license_declared:
             declared_license = "NOASSERTION"
         else:
             declared_license = package.license_declared.identifier
 
         # SPDX output sometimes return "NOASSERTION" instead of an empty value
         # we want to keep it as declared but it is not a valid license expression
-        if (
-            isinstance(package.conc_lics, NoAssert)
-            or package.conc_lics.identifier == "NOASSERTION"
-        ):
+        if not package.conc_lics or package.conc_lics.identifier == "NOASSERTION":
             concluded_license = ""
         else:
             concluded_license = package.conc_lics.identifier
@@ -232,13 +228,9 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
 # SPDX-License-Identifier: Apache-2.0
 def parse_spdx_file(spdx_file):
     filename = spdx_file.name
-    if (
-        filename.endswith(".rdf")
-        or filename.endswith(".rdf.xml")
-        or filename.endswith(".spdx")
-    ):
+    if filename.endswith(".rdf") or filename.endswith(".rdf.xml"):
         parser = rdf.Parser(rdfbuilders.Builder(), StandardLogger())
-    elif filename.endswith(".tag"):
+    elif filename.endswith(".tag") or filename.endswith(".spdx"):
         parser = tagvalue.Parser(tagvaluebuilders.Builder(), StandardLogger())
         spdx_file = spdx_file.read().decode("utf-8")
     elif filename.endswith(".json"):
