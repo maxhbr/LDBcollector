@@ -45,7 +45,7 @@ class SearchMixin:
                 reduce(
                     lambda a, b: a | b,
                     (
-                        Q(**{f"{field}__contains": self.query})
+                        Q(**{f"{field}__icontains": query})
                         for field in self.search_fields
                     ),
                 )
