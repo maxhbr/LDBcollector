@@ -1,0 +1,18 @@
+[license]
+
+expression = "Xfig"
+status = [ "allowed" ]
+
+url = '''
+https://fedoraproject.org/wiki/Licensing:MIT#Xfig_Variant
+'''
+
+[fedora]
+
+legacy-name = [
+    "Xfig Variant"
+]
+
+legacy-abbreviation = [
+    "MIT"
+]
