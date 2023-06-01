@@ -1,0 +1,17 @@
+[license]
+
+expression = "LicenseRef-Array"
+status = [ "allowed" ]
+url = '''
+https://fedoraproject.org/wiki/Licensing/Array
+'''
+
+[fedora]
+
+legacy-name = [
+    "Array"
+]
+
+legacy-abbreviation = [
+    "Array"
+]
