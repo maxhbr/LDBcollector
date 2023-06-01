@@ -5,6 +5,10 @@
 # 
 # This file is for collecting the text of such public domain dedications.
 #
+# Please search this file first to see if the public domain text found 
+# is the same as text already recorded here. If so, simply add on a new 
+# line your package name and location with that domain text.
+#
 # Include the following information:
 # 
 # Fedora package name
