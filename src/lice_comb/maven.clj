@@ -19,6 +19,7 @@
 (ns lice-comb.maven
   "Maven related functionality, mostly related to POMs."
   (:require [clojure.string        :as s]
+            [clojure.set           :as set]
             [clojure.java.io       :as io]
             [clojure.data.xml      :as xml]
             [clojure.java.shell    :as sh]
@@ -64,11 +65,11 @@
 (defn- licenses-from-pair
   "Attempts to determine the license(s) (a set) from a POM license name/URL pair."
   [{:keys [name url]}]
-  (if-let [licenses (lcs/uri->license-ids url)]
+  (if-let [licenses (some-> (seq (set/union (lcs/fuzzy-match-uri->license-ids  url)      ; Because clojure.set functions are idiotic wrt nils 🙄
+                                            (lcs/fuzzy-match-name->license-ids name)))
+                                 set)]
     licenses
-    (if-let [licenses (lcs/fuzzy-match-name->license-ids name)]
-      licenses
-      (when name #{(str "NON-SPDX-Unknown (" name ")")}))))   ; Last resort - return the license name
+    (when name #{(str "UNKNOWN (" name ")")})))   ; Last resort - return a dummy identifier that includes the name
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
@@ -98,7 +99,7 @@
                                                     :artifact-id (lcu/strim (first (xi/find-first parent-no-ns [:artifactId])))
                                                     :version     (lcu/strim (first (xi/find-first parent-no-ns [:version])))}))]
         (when-not (empty? parent-gav)
-          (pom->ids (pom-uri-for-gav parent-gav)))))))   ; Note: naive (stack consuming) recursion
+          (pom->ids (pom-uri-for-gav parent-gav)))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
 
 (defmethod pom->ids :default
   [pom]

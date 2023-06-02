@@ -42,7 +42,7 @@
     (is (= #{"Apache-2.0"}                             (pom->ids (str test-data-path "/asf-cat-1.0.12.pom")))))
   (testing "Real pom files - remote"
     (is (= #{"Apache-2.0"}                             (pom->ids "https://repo1.maven.org/maven2/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.pom")))
-    (is (= #{"NON-SPDX-Public-Domain"}                 (pom->ids "https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom")))           ; Note: non-SPDX
+    (is (= #{"LicenseRef-lice-comb-public-domain"}     (pom->ids "https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom")))           ; Note: non-SPDX
     (is (= #{"EPL-1.0"}                                (pom->ids "https://repo.clojars.org/org/clojure/clojure/1.4.0/clojure-1.4.0.pom")))
     (is (= #{"Apache-2.0"}                             (pom->ids "https://repo.clojars.org/com/github/pmonks/asf-cat/1.0.12/asf-cat-1.0.12.pom")))
     (is (= #{"Apache-2.0"}                             (pom->ids "https://repo.clojars.org/http-kit/http-kit/2.5.3/http-kit-2.5.3.pom")))

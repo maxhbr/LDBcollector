@@ -35,24 +35,14 @@
 (def ^:private exception-list-d (delay (map sl/id->info (sl/ids))))
 
 ; License name aliases
-(def ^:private aliases-uri (lcd/uri-for-data "/spdx/aliases.edn"))
+(def ^:private aliases-uri (lcd/uri-for-data "/spdx/aliases.edn"))    ; ####TODO: UPGRADE THIS TO USE LicenseRef-lice-comb-public-domain INSTEAD OF NON-SPDX-Public-Domain
 (def ^:private aliases-d   (delay
                              (try
                                (edn/read-string (slurp aliases-uri))
                                (catch Exception e
                                  (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " aliases-uri ". Please check your internet connection and try again.") {} e))))))
 
-(defn license-list
-  "The SPDX license list, as a sequence of maps returned from https://pmonks.github.io/clj-spdx/spdx.licenses.html#var-id-.3Einfo, for all SPDX license identifiers."
-  []
-  @license-list-d)
-
-(defn exception-list
-  "The SPDX exception list, as a sequence of maps returned from https://pmonks.github.io/clj-spdx/spdx.exceptions.html#var-id-.3Einfo, for all SPDX exception identifiers."
-  []
-  @exception-list-d)
-
-(defn name->license-ids
+(defn- name->license-ids
   "Returns the SPDX license identifier(s) (a set) for the given license name
   (matched case insensitively), or nil if there aren't any.
 
@@ -63,18 +53,7 @@
       (some-> (seq (map :id (filter #(= lname (s/trim (s/lower-case (:name %)))) @license-list-d)))
               set))))
 
-(defn name->exception-ids
-  "Returns the SPDX exception identifier(s) (a set) for the given exception name
-  (matched case insensitively), or nil if there aren't any.
-
-  Note that SPDX exception names are not guaranteed to be unique - see https://github.com/spdx/license-list-XML/blob/main/DOCS/license-fields.md"
-  [name]
-  (when-not (s/blank? name)
-    (let [lname (s/trim (s/lower-case name))]
-      (some-> (seq (map :id (filter #(= lname (s/trim (s/lower-case (:name %)))) @exception-list-d)))
-              set))))
-
-(defn uri->license-ids
+(defn fuzzy-match-uri->license-ids
   "Returns the SPDX license identifiers (a set) for the given uri, or nil if
   there aren't any.
 
@@ -91,33 +70,16 @@
                                     @license-list-d)))
               set))))
 
-(defn uri->exception-ids
-  "Returns the SPDX exception identifiers (a set) for the given uri, or nil if
-  there aren't any.
-
-  Notes:
-  1. this does not perform exact matching; rather it simplifies URIs in various
-     ways to avoid irrelevant differences, including performing a
-     case-insensitive comparison, ignoring protocol differences (http vs https),
-     ignoring extensions representing MIME types (.txt vs .html, etc.), etc.
-  2. SPDX exception list URIs are not guaranteed to be unique"
-  [uri]
-  (when-not (s/blank? uri)
-    (let [suri (lcu/simplify-uri uri)]
-      (some-> (seq (map :id (filter #(some identity (map (fn [see-also] (s/starts-with? suri see-also)) (distinct (map lcu/simplify-uri (:see-also %)))))
-                                    @exception-list-d)))
-              set))))
-
 (defn id->name
   "Returns the name of the given license or exception identifier; either the
   official SPDX license or exception name or (if the id is not a listed SPDX id
   but is used by the library) an unofficial name. Returns the id as-is if unable
   to determine a name."
   [id]
-  (cond (sl/listed-id? id)                             (:name (sl/id->info id))
-        (se/listed-id? id)                             (:name (se/id->info id))
-        (= (s/lower-case id) "non-spdx-public-domain") "Public domain"
-        :else                                          id))
+  (cond (sl/listed-id? id)                                         (:name (sl/id->info id))
+        (se/listed-id? id)                                         (:name (se/id->info id))
+        (= (s/lower-case id) "licenseref-lice-comb-public-domain") "Public domain"
+        :else                                                      id))
 
 
 ; Index of alias regexes
