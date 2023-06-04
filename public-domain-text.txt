@@ -1,13 +1,13 @@
 # This file is for collecting the actual text found in Fedora
 # packages that have used the Callaway short name, "Public Domain" 
-# or the SPDX id, "LicenseRef-Fedora-Public-Domain"
-# As per the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_callaway_short_name_categories
+# or the SPDX expression, "LicenseRef-Fedora-Public-Domain"
+# See the instructions at https://docs.fedoraproject.org/en-US/legal/update-existing-packages/#_callaway_short_name_categories
 # 
 # This file is for collecting the text of such public domain dedications.
 #
-# Please search this file first to see if the public domain text found 
-# is the same as text already recorded here. If so, simply add on a new 
-# line your package name and location with that domain text.
+# Please search this file first to see if the public domain text you've found 
+# is the same as text already recorded here. If so, simply add  
+# your package name and location to the existing part of this file that contains that text.
 #
 # Include the following information:
 # 
