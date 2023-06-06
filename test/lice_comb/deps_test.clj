@@ -134,15 +134,22 @@
     (is (= #{"EPL-1.0" "LGPL-2.1"}                          (dep->ids ['ch.qos.logback/logback-core {:deps/manifest :mvn :mvn/version "1.2.7"}])))
     (is (= #{"CDDL-1.1" "GPL-2.0-with-classpath-exception"} (dep->ids ['javax.mail/mail {:deps/manifest :mvn :mvn/version "1.4.7"}])))
     (is (= #{"Apache-2.0" "LGPL-2.1-or-later"}              (dep->ids ['net.java.dev.jna/jna-platform {:deps/manifest :mvn :mvn/version "5.10.0"}])))
-    (is (= #{"GPL-2.0-with-classpath-exception" "MIT"}      (dep->ids ['org.checkerframework/checker-compat-qual {:deps/manifest :mvn :mvn/version "2.5.5"}])))))
+    (is (= #{"GPL-2.0-with-classpath-exception" "MIT"}      (dep->ids ['org.checkerframework/checker-compat-qual {:deps/manifest :mvn :mvn/version "2.5.5"}]))))
+  (testing "Valid deps - Maven classifiers"
+;    (is (= #{"Apache-2.0" "LGPL-3.0-or-later"}              (dep->ids ['com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.11"}])))))    ; Blocked on https://github.com/jnr/jffi/issues/141
+    (is (= #{"Apache-2.0"}                                  (dep->ids ['com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.11"}])))))
 
 (deftest deps-licenses-test
   (testing "Nil and empty deps"
     (is (nil? (deps-licenses nil)))
     (is (= {} (deps-licenses {}))))
   (testing "Single deps"
-    (is (= #{"EPL-1.0"} (:lice-comb/licenses (get (deps-licenses {'org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.10.3"}}) 'org.clojure/clojure))))
-    (is (= #{"EPL-1.0"} (:lice-comb/licenses (get (deps-licenses {'com.github.athos/clj-check {:deps/manifest :deps :deps/root (str gitlib-dir "/com.github.athos/clj-check")}}) 'com.github.athos/clj-check)))))    ; Note: we use this git dep, as it's used earlier in the build, so we can be sure it's been downloaded before this test is run
+    (is (= #{"EPL-1.0"}    (:lice-comb/licenses (get (deps-licenses {'org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.10.3"}}) 'org.clojure/clojure))))
+    (is (= #{"EPL-1.0"}    (:lice-comb/licenses (get (deps-licenses {'com.github.athos/clj-check {:deps/manifest :deps :deps/root (str gitlib-dir "/com.github.athos/clj-check")}}) 'com.github.athos/clj-check))))    ; Note: we use this git dep, as it's used earlier in the build, so we can be sure it's been downloaded before this test is run
+;    (is (= #{"Apache-2.0" "LGPL-3.0-or-later"} (:lice-comb/licenses (get (deps-licenses {'com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.11"}}))))))    ; Blocked on https://github.com/jnr/jffi/issues/141
+    (is (= #{"Apache-2.0"} (:lice-comb/licenses (get (deps-licenses {'com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.11"}}) 'com.github.jnr/jffi$native))))
+    (is (= (:lice-comb/licenses (get (deps-licenses {'com.github.jnr/jffi        {:deps/manifest :mvn :mvn/version "1.3.11"}}) 'com.github.jnr/jffi))
+           (:lice-comb/licenses (get (deps-licenses {'com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.11"}}) 'com.github.jnr/jffi$native)))))
   (testing "Multiple deps"
     (is (= {'org.clojure/clojure                                       {:deps/manifest :mvn :mvn/version "1.10.3" :lice-comb/licenses #{"EPL-1.0"}}
             'org.clojure/spec.alpha                                    {:deps/manifest :mvn :mvn/version "0.2.194" :lice-comb/licenses #{"EPL-1.0"}}

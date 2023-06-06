@@ -56,6 +56,12 @@
     (:licenses (get @fallbacks-d ga {:licenses ids}))
     ids))
 
+(defn- normalise-dep
+  "Normalises a dep, by removing any classifier suffixes from the artifact-id (e.g. the $blah suffix in com.foo/bar$blah)."
+  [[ga info]]
+  (when ga
+    [(symbol (first (s/split (str ga) #"\$"))) info]))
+
 (defmulti dep->ids
   "Attempt to detect the license(s) in a tools.deps style dep (a MapEntry or two-element sequence of [groupId/artifactId dep-info])."
   {:arglists '([[ga info]])}
@@ -64,7 +70,7 @@
 (defmethod dep->ids :mvn
   [dep]
   (when dep
-    (let [[ga info]              dep
+    (let [[ga info]              (normalise-dep dep)
           [group-id artifact-id] (s/split (str ga) #"/")
           version                (:mvn/version info)]
       (if-let [override (check-overrides ga version)]
@@ -79,7 +85,7 @@
 (defmethod dep->ids :deps
   [dep]
   (when dep
-    (let [[ga info] dep
+    (let [[ga info] (normalise-dep dep)
           version   (:git/sha info)]
       (if-let [override (check-overrides ga version)]
         override
