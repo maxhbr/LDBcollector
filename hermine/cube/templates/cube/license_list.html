@@ -100,6 +100,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 <th>FOSS policy status</th>
                 <th># of obligations</th>
                 <th>Review status</th>
+                <th>Local differences</th>
               </tr>
             </thead>
             <tbody>
@@ -113,8 +114,17 @@ SPDX-License-Identifier: AGPL-3.0-only
                       {{ license.get_allowed_display }}
                     </span>
                   </td>
-                  <td>{% if license.allowed %}{{ license.obligation_set.all.count }} obligation{{ license.obligation_set.all.count|pluralize }}{% endif %}</td>
+                  <td>{% if license.allowed %}{{ license.obligation_count }} obligation{{ license.obligation_count|pluralize }}{% endif %}</td>
                   <td>{% if license.status == 'Checked' %} <i class="fas fa-check-square"></i> {%else%} {{license.status}}{% endif %}</td>
+                  <td>
+                    {% if not license.reference_diff %}
+                      No
+                    {% elif license.reference_diff == -1 %}
+                      <i title="Absent in shared reference">Local license</i>
+                    {% else %}
+                      <b>Yes</b>
+                    {% endif %}
+                  </td>
                 </tr>
               {% endfor %}
             </tbody>

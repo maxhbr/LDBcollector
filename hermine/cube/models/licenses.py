@@ -5,13 +5,15 @@
 from django.db import models
 from django.db.models import Q, F
 from django.urls import reverse_lazy
+from django.utils.functional import cached_property
 
 from cube.models import Usage
+from cube.utils.reference import license_reference_diff
 
 
 class LicenseManager(models.Manager):
-    def get_by_natural_key(self, spdx_id):
-        return self.get(spdx_id=spdx_id)
+    def get_by_natural_key(self, spdx_id, using="default"):
+        return self.using(using).get(spdx_id=spdx_id)
 
 
 class License(models.Model):
@@ -159,6 +161,10 @@ class License(models.Model):
             release=None, product=None
         )
 
+    @cached_property
+    def reference_diff(self):
+        return license_reference_diff(self)
+
     def product_derogations(self):
         from cube.models import Derogation
 
@@ -183,8 +189,8 @@ class License(models.Model):
 
 
 class TeamManager(models.Manager):
-    def get_by_natural_key(self, name):
-        return self.get(name=name)
+    def get_by_natural_key(self, name, using="default"):
+        return self.using(using).get(name=name)
 
 
 class Team(models.Model):
@@ -205,8 +211,8 @@ class Team(models.Model):
 
 
 class GenericManager(models.Manager):
-    def get_by_natural_key(self, name):
-        return self.get(name=name)
+    def get_by_natural_key(self, name, using="default"):
+        return self.using(using).get(name=name)
 
 
 class Generic(models.Model):
@@ -270,8 +276,8 @@ class Generic(models.Model):
 
 
 class ObligationManager(models.Manager):
-    def get_by_natural_key(self, name, license_spdx_id):
-        return self.get(name=name, license__spdx_id=license_spdx_id)
+    def get_by_natural_key(self, name, license_spdx_id, using="default"):
+        return self.using(using).get(name=name, license__spdx_id=license_spdx_id)
 
 
 class Obligation(models.Model):

@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import (
 )
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import ValidationError
+from django.db.models import Count
 from django.http import HttpResponse
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
@@ -62,6 +63,11 @@ class LicensesListView(
     success_url = reverse_lazy("cube:licenses")
     search_fields = ("long_name", "spdx_id")
     template_name = "cube/license_list.html"
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        qs = qs.annotate(obligation_count=Count("obligation"))
+        return qs
 
     @method_decorator(
         permission_required_decorator("cube.import_license", raise_exception=True)
