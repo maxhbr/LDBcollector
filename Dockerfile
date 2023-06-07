@@ -54,14 +54,10 @@ COPY hermine $INSTALL_PATH/hermine
 # copy node modules
 COPY --from=build $INSTALL_PATH/hermine/vite_modules/dist $INSTALL_PATH/hermine/vite_modules/dist
 
-# COPY shared.json $APP_PATH/
 COPY docker/docker-entrypoint.sh $INSTALL_PATH/
 COPY docker/config.py $INSTALL_PATH/hermine/hermine/config.py
 
 EXPOSE $DJANGO_PORT
-
-# init shared data
-# RUN if [ -f shared.json ]; then $APP_PATH/manage.py init_shared_data shared.json; fi
 
 # run entrypoint.sh
 WORKDIR $INSTALL_PATH/hermine
