@@ -39,5 +39,5 @@ release:
     assets:
       links:
       - name: shared.json
-        filepath: shared.json
+        filepath: /shared.json
         url: "$PACKAGE_REGISTRY_URL/shared.json"
