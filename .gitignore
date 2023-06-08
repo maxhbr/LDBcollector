@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
+# SPDX-License-Identifier: GPL-2.0-only
+#
 # If you prefer the allow list template instead of the deny list, see community template:
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
@@ -7,6 +10,7 @@
 *.dll
 *.so
 *.dylib
+laas
 
 # Test binary, built with `go test -c`
 *.test
