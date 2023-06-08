@@ -1,3 +1,7 @@
+<!-- SPDX-FileCopyrightText: 2023 Kavya Shukla <kavyuushukla@gmail.com>
+
+     SPDX-License-Identifier: GPL-2.0-only
+-->
 # LicenseDb
 
 This project aims to create a centralized OSS license database, to manage opensource

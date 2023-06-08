@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: © 2023 Gaurav Mishra <mishra.gaurav@siemens.com>
+
+# SPDX-License-Identifier: GPL-2.0-only
+
+name: REUSE Compliance Check
+
+concurrency:
+  group: static-${{ github.head_ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  REUSE-Compliance-Check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: REUSE Compliance Check
+      uses: fsfe/reuse-action@v1
+
