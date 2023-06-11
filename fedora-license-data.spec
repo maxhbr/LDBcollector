@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.22
+Version:        1.23
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,15 @@ make check-grammar
 
 
 %changelog
+* Sun Jun 11 2023 Miroslav Suchý <msuchy@redhat.com> 1.23-1
+- Update public-domain-text.txt
+- Add new file: CECILL-2.1
+- Add new file: TermReadKey
+- Add new file: LicenseRef-Sleepycat-HtDig
+- Add new file: Xfig
+- Add new file: GPL-2.0-or-later WITH WxWindows-exception-3.1
+- Add new file: LicenseRef-Array
+
 * Sat May 27 2023 Miroslav Suchý <msuchy@redhat.com> 1.22-1
 - Add cryptsetup GPL/LGPL licenses with OpenSSL exceptions.
 - Add new file for the BSD-3-Clause-Open-MPI variant
