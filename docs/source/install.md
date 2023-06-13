@@ -37,7 +37,7 @@ For the first run, you have to edit your database credentials:
 ```
 cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py
 ```
-and adapt the `mysecrets.py` file you just created.
+and adapt the `mysecrets.py` file you just created: you must *a minima* declare a value for `SECRET_KEY` (see [Django's documentation](https://docs.djangoproject.com/en/4.2/ref/settings/#secret-key)).
 
 By default, it uses a simple SQlite database. To use another database, please refer to [Django's documentation](https://docs.djangoproject.com/en/4.0/topics/install/#get-your-database-running).
 

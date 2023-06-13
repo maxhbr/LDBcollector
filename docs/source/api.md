@@ -14,6 +14,23 @@ The most convenient way to authenticate to the API is probably to use a token.
 You can get such token by making a POST request on 'api/token-auth/' with the 
 fields 'username' and 'password' in a form-data, using your Hermine credentials.
 
+In Python, using [requests](https://docs.python-requests.org/en/latest/),  it would look like:
+
+
+```python
+import requests
+
+HERMINE_HOST = "https://your.hermine.instance.org/"
+CREDENTIALS = {"username": "admin", "password": "your_admin_pass"}
+ENDPOINT = "api/token-auth/"
+
+url = HERMINE_HOST + ENDPOINT
+r = requests.post(url, data=CREDENTIALS)
+
+print(r.json())
+```
+
+
 You will get a response like : 
 
 ```json
@@ -26,13 +43,16 @@ This token can then be passed in a HTTP Header to authenticate your API calls:
   
 `"Authorization" : "Token 1273e3f6XXXXXXXXXXXXXXXX71209ac3bf29"`.
 
-In Python, using [requests](https://docs.python-requests.org/en/latest/),  it would look like:
+This could look like:
 
 ```python
 import requests
 
-url = 'http://127.0.0.1:8080/releases/'
-headers = {'Authorization': 'Token 1273e3f6XXXXXXXXXXXXXXXX71209ac3bf29'}
+HERMINE_HOST = "https://your.hermine.instance.org/"
+ENDPOINT = "api/releases/"
+url = HERMINE_HOST + ENDPOINT
+
+headers = {"Authorization": "Token 1273e3f6XXXXXXXXXXXXXXXX71209ac3bf29"}
 r = requests.get(url, headers=headers)
 ```
 
