@@ -66,7 +66,9 @@ class LicensesListView(
 
     def get_queryset(self):
         qs = super().get_queryset()
-        qs = qs.annotate(obligation_count=Count("obligation"))
+        qs = qs.annotate(obligation_count=Count("obligation")).prefetch_related(
+            "obligation_set", "obligation_set__generic"
+        )
         return qs
 
     @method_decorator(

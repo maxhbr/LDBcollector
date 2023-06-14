@@ -69,6 +69,11 @@ def get_license_ref_dict(spdx_id):
 def license_reference_diff(lic) -> int:
     """Compare a license with the shared reference database.
 
+    For performances reasons :
+    * expect obligation_count to be set on the license
+    object and not to be computed from the database.
+    * expect obligation_set to be prefetched on the license object.
+
     :param lic: A License object
     :return: 1 if license is different from reference, 0 if identical,
             -1 if license is not in the reference database
@@ -81,15 +86,20 @@ def license_reference_diff(lic) -> int:
     if any(ref[key] != lic.__dict__[key] for key in LICENSE_SHARED_FIELDS):
         return 1
 
-    if len(ref["obligations"]) != len(lic.obligation_set.all()):
+    obligation_count = (
+        lic.obligation_count
+        if hasattr(lic, "obligation_count")
+        else lic.obligation_set.all().count()
+    )
+    if len(ref["obligations"]) != obligation_count:
         return 1
 
-    for obligation in lic.obligation_set.values(*OBLIGATION_SHARED_FIELDS):
+    for obligation in lic.obligation_set.all():
         ref_obligation = next(
             (
                 ref_ob
                 for ref_ob in ref["obligations"]
-                if ref_ob["name"] == obligation["name"]
+                if ref_ob["name"] == obligation.name
             ),
             None,
         )
@@ -97,8 +107,14 @@ def license_reference_diff(lic) -> int:
         if ref_obligation is None:
             return 1
 
+        obligation_dict = obligation.__dict__
+        obligation_dict["generic__name"] = (
+            obligation.generic and obligation.generic.name
+        )
+
         if any(
-            obligation[key] != ref_obligation[key] for key in OBLIGATION_SHARED_FIELDS
+            obligation_dict[key] != ref_obligation[key]
+            for key in OBLIGATION_SHARED_FIELDS
         ):
             return 1
 
