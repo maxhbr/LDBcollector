@@ -9,6 +9,7 @@ from datetime import datetime
 objects = []
 obligations = []
 
+
 for filename in os.listdir("./generics"):
     if filename.endswith(".json"):
         file = open("./generics/" + filename, "r")

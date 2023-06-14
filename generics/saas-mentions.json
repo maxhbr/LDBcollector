@@ -1,7 +1,6 @@
 {
   "name": "SaaS : mentions",
   "description": "Display to users interacting with your application remotely through a computer network specific mentions required by the license.",
-  "in_core": false,
   "metacategory": "Mentions",
   "passivity": "Active"
 }

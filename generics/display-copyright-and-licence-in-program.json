@@ -1,7 +1,6 @@
 {
   "name": "Display copyright and licence in Program",
   "description": "Display particular mentions during the execution and the installation of the software (in the dedicated place for legal mentions).",
-  "in_core": true,
   "metacategory": "Mentions",
   "passivity": "Active"
 }
