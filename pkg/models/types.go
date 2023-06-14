@@ -20,8 +20,28 @@ type License struct {
 	DetectorType    string `json:"rf_detector_type"`
 	Active          string `json:"rf_active"`
 	Source          string `json:"rf_source"`
-	SpdxCompatible  string `json:"rf_spdx_id"`
+	SpdxId          string `json:"rf_spdx_id"`
 	Risk            string `json:"rf_risk"`
 	Flag            string `json:"rf_flag"`
 	Marydone        string `json:"marydone"`
+}
+
+type Meta struct {
+	ResourceCount int `json:"resource_count"`
+	Page          int `json:"page,omitempty"`
+	PerPage       int `json:"per_page,omitempty"`
+}
+
+type LicenseResponse struct {
+	Status int       `json:"status"`
+	Data   []License `json:"data"`
+	Meta   Meta      `json:"meta,omitempty"`
+}
+
+type LicenseError struct {
+	Status    int    `json:"status"`
+	Message   string `json:"message"`
+	Error     string `json:"error"`
+	Path      string `json:"path"`
+	Timestamp string `json:"timestamp"`
 }

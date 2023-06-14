@@ -8,8 +8,11 @@ import (
 	"flag"
 	"fmt"
 	"io/ioutil"
+	"log"
 
+	"github.com/fossology/LicenseDb/pkg/api"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/gin-gonic/gin"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -18,16 +21,18 @@ import (
 var (
 	// argument to enter the name of database host
 	dbhost = flag.String("host", "localhost", "host name")
-	// argument to enter the port number of the host
+	// port number of the host
 	port = flag.String("port", "5432", "port number")
-	// argument to enter the name of database user
+	// database user
 	user = flag.String("user", "fossy", "user name")
-	// argument to enter the name to database to be connected
+	// name of database to be connected
 	dbname = flag.String("dbname", "fossology", "database name")
-	// argument to enter the password of the user
+	// password of the user
 	password = flag.String("password", "fossy", "password")
-	// argument to enter the path of data file
+	// path of data file
 	datafile = flag.String("datafile", "licenseRef.json", "datafile path")
+	// boolean agument to whether update the database or not
+	populatedb = flag.Bool("populatedb", false, "boolean variable to update database")
 )
 
 func main() {
@@ -37,21 +42,32 @@ func main() {
 	gormConfig := &gorm.Config{}
 	database, err := gorm.Open(postgres.Open(dburi), gormConfig)
 	if err != nil {
-		panic("Failed to connect to database!")
+		log.Fatalf("Failed to connect to database: %v", err)
 	}
 
-	err = database.AutoMigrate(&models.License{})
-	if err != nil {
-		return
+	if err := database.AutoMigrate(&models.License{}); err != nil {
+		log.Fatalf("Failed to automigrate database: %v", err)
 	}
 
-	var licenses []models.License
-	// read the file of data
-	byteResult, _ := ioutil.ReadFile(*datafile)
-	// unmarshal the json file and make it into the struct format
-	json.Unmarshal(byteResult, &licenses)
-	for _, license := range licenses {
-		// populate the data in the database table
-		database.Create(&license)
+	if *populatedb {
+		var licenses []models.License
+		// read the file of data
+		byteResult, _ := ioutil.ReadFile(*datafile)
+		// unmarshal the json file and it into the struct format
+		if err := json.Unmarshal(byteResult, &licenses); err != nil {
+			log.Fatalf("error reading from json file: %v", err)
+		}
+		for _, license := range licenses {
+			// populate the data in the database table
+			database.Create(&license)
+		}
 	}
+	api.DB = database
+
+	r := gin.Default()
+
+	r.GET("/api/licenses", api.GetAllLicense)
+	r.GET("/api/license/:shortname", api.GetLicense)
+
+	r.Run()
 }
