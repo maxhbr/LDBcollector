@@ -12,8 +12,6 @@ LICENSE_SHARED_FIELDS = (
     "steward",
     "inspiration_spdx",
     "copyleft",
-    "allowed",
-    "allowed_explanation",
     "url",
     "osi_approved",
     "fsf_approved",
@@ -27,31 +25,45 @@ LICENSE_SHARED_FIELDS = (
     "verbatim",
 )
 
+OBLIGATION_SHARED_FIELDS = (
+    "generic__name",
+    "name",
+    "verbatim",
+    "passivity",
+    "trigger_expl",
+    "trigger_mdf",
+)
+
+
+GENERIC_SHARED_FIELDS = ("name", "description", "metacategory", "passivity")
+
 
 @lru_cache(maxsize=None)
-def get_ref_dict(model: str, natural_key):
-    """Get a reference object from the shared database.
+def get_license_ref_dict(spdx_id):
+    """Get a license reference object from the shared database.
 
-    :param model: A model content type name
-    :param natural_key: A natural key
-    :type natural_key: tuple
-    :return: A dict of the reference object
+    :param spdx_id: A SPDX license identifier
+    :type spdx_id: str
+    :return: A dict of the reference object and related objects
     :rtype: dict
     """
-
-    from cube.models import License, Generic
-
-    model_class = {
-        "license": License,
-        "generic": Generic,
-    }[model]
+    from cube.models import License, Obligation
 
     try:
-        return model_class.objects.get_by_natural_key(
-            natural_key, using="shared"
-        ).__dict__
-    except model_class.DoesNotExist:
+        ref = (
+            License.objects.values(*LICENSE_SHARED_FIELDS)
+            .using("shared")
+            .get(spdx_id=spdx_id)
+        )
+    except License.DoesNotExist:
         return None
+
+    ref["obligations"] = list(
+        Obligation.objects.using("shared")
+        .filter(license__spdx_id=spdx_id)
+        .values(*OBLIGATION_SHARED_FIELDS)
+    )
+    return ref
 
 
 def license_reference_diff(lic) -> int:
@@ -61,9 +73,33 @@ def license_reference_diff(lic) -> int:
     :return: 1 if license is different from reference, 0 if identical,
             -1 if license is not in the reference database
     """
-    ref = get_ref_dict("license", lic.spdx_id)
+    ref = get_license_ref_dict(lic.spdx_id)
 
     if ref is None:
         return -1
 
-    return int(any(ref[key] != lic.__dict__[key] for key in LICENSE_SHARED_FIELDS))
+    if any(ref[key] != lic.__dict__[key] for key in LICENSE_SHARED_FIELDS):
+        return 1
+
+    if len(ref["obligations"]) != len(lic.obligation_set.all()):
+        return 1
+
+    for obligation in lic.obligation_set.values(*OBLIGATION_SHARED_FIELDS):
+        ref_obligation = next(
+            (
+                ref_ob
+                for ref_ob in ref["obligations"]
+                if ref_ob["name"] == obligation["name"]
+            ),
+            None,
+        )
+
+        if ref_obligation is None:
+            return 1
+
+        if any(
+            obligation[key] != ref_obligation[key] for key in OBLIGATION_SHARED_FIELDS
+        ):
+            return 1
+
+    return 0
