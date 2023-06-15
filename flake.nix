@@ -31,7 +31,7 @@
             wasm-pack
             wasmer
 
-            plantumlLicenseName ( graphviz zlib
+            plantuml graphviz zlib
           ];
           buildInputs = [
             openssl
