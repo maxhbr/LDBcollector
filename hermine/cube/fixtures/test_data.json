@@ -334,6 +334,19 @@
     }
 },
 {
+    "model": "cube.obligation",
+    "pk": 63,
+    "fields": {
+        "license": 3,
+        "generic": 1,
+        "name": "Test Generic Obligation",
+        "verbatim": "Test Generic Obligation",
+        "passivity": "Active",
+        "trigger_expl": "DistributionSourceDistributionNonSource",
+        "trigger_mdf": "Altered"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {

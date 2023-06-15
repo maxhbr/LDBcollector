@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 from django.utils.functional import cached_property
 
 from cube.models import Usage
-from cube.utils.reference import license_reference_diff
+from cube.utils.reference import license_reference_diff, generic_reference_diff
 
 
 class LicenseManager(models.Manager):
@@ -259,6 +259,10 @@ class Generic(models.Model):
         help_text="A Generic obligation needs to conduct some kind of action"
         "(Active) or NOT to do specific things (Passive)",
     )
+
+    @cached_property
+    def reference_diff(self):
+        return generic_reference_diff(self)
 
     def natural_key(self):
         return (self.name,)

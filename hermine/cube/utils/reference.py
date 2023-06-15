@@ -119,3 +119,44 @@ def license_reference_diff(lic) -> int:
             return 1
 
     return 0
+
+
+@lru_cache(maxsize=None)
+def get_generic_ref_dict(name):
+    """Get a generic reference object from the shared database.
+
+    :param name: A generic name
+    :type name: str
+    :return: A dict of the reference object and related objects
+    :rtype: dict
+    """
+    from cube.models import Generic
+
+    try:
+        ref = (
+            Generic.objects.values(*GENERIC_SHARED_FIELDS)
+            .using("shared")
+            .get(name=name)
+        )
+    except Generic.DoesNotExist:
+        return None
+
+    return ref
+
+
+def generic_reference_diff(gen) -> int:
+    """Compare a generic with the shared reference database.
+
+    :param gen: A Generic object
+    :return: 1 if generic is different from reference, 0 if identical,
+            -1 if generic is not in the reference database
+    """
+    ref = get_generic_ref_dict(gen.name)
+
+    if ref is None:
+        return -1
+
+    if any(ref[key] != gen.__dict__[key] for key in GENERIC_SHARED_FIELDS):
+        return 1
+
+    return 0

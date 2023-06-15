@@ -6,7 +6,7 @@
 from django.test import TestCase
 
 from cube.models import License, Generic
-from cube.utils.reference import get_license_ref_dict
+from cube.utils.reference import get_license_ref_dict, get_generic_ref_dict
 
 
 class ReferenceTestCase(TestCase):
@@ -15,6 +15,7 @@ class ReferenceTestCase(TestCase):
 
     def setUp(self):
         get_license_ref_dict.cache_clear()
+        get_generic_ref_dict.cache_clear()
 
     def test_license_reference_diff_equal(self):
         lic = License.objects.get(spdx_id="LicenseRef-FakeLicense-1.0")
@@ -49,8 +50,23 @@ class ReferenceTestCase(TestCase):
 
     def test_diff_includes_obligations(self):
         lic = License.objects.get(spdx_id="LicenseRef-FakeLicense-1.0")
-        obligation = lic.obligation_set.first()
+        obligation = lic.obligation_set.filter(generic=None).first()
         obligation.generic = Generic.objects.first()
         obligation.save()
 
         self.assertEqual(lic.reference_diff, 1)
+
+    def test_generic_reference_diff_equal(self):
+        generic = Generic.objects.get(
+            name="License and copyright notices in documentation"
+        )
+        self.assertEqual(generic.reference_diff, 0)
+
+    def test_generic_reference_diff_different(self):
+        generic = Generic.objects.get(
+            name="License and copyright notices in documentation"
+        )
+        generic.description = "License and copyright notices in documentation modified"
+        generic.save()
+
+        self.assertEqual(generic.reference_diff, 1)
