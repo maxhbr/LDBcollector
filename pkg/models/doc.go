@@ -2,5 +2,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 // Package models is made to connect the database and to store the structs of
-//different data.
+// different data.
 package models

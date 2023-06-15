@@ -3,7 +3,6 @@
 
 package models
 
-//
 type License struct {
 	Shortname       string `json:"rf_shortname" gorm:"primary_key"`
 	Fullname        string `json:"rf_fullname"`
