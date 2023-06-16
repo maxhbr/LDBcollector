@@ -21,7 +21,7 @@ The knowledge base used in this tool includes "licenses_terms_63.csv", "compatib
 
 3. [compatibility_63.csv](./files%20used%20for%20program%20input/compatibility_63.csv) is a list of the compatibility conclusions of 63 open source licenses based on the compatibility judgment logic of license terms indicated in the above "licenses_terms_63.csv". The algorithm used for determining compatibility is shown in pseudocode and Python implementation.
 
-4. [Compatibility_63licenses_cn.xlsx](./Compatibility_63licenses_cn.xlsx) explains the compatibility conclusions in the "compatibility_63.csv" with reference to the compatibility examples of licenses currently available on official websites, and provides related links for easy access.
+4. [Compatibility_63licenses_en.xlsx](./Compatibility_63licenses_en.xlsx) explains the compatibility conclusions in the "compatibility_63.csv" with reference to the compatibility examples of licenses currently available on official websites, and provides related links for easy access.
 
 5. [github_license_usage.csv](./files%20used%20for%20program%20input/github_license_usage.csv) and [libraries.io_license_usage.csv](./files%20used%20for%20program%20input/libraries.io_license_usage.csv) are statistics of license usage from GitHub and Libraries.io.
 
