@@ -9,6 +9,7 @@ type: "exception"
 
 alternativeNames:
   - "Ada Linking Exception"
+  - "Linking-Exception-GPL-001"
 
 otherIds: 
   - "scancode:ada-linking-exception"

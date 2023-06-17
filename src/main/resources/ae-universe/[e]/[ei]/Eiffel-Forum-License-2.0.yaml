@@ -4,6 +4,7 @@
 canonicalName: "Eiffel Forum License 2.0"
 category: "EFL"
 spdxIdentifier: "EFL-2.0"
+osiStatus: "approved"
 
 alternativeNames:
   - "EFL, Version 2.0"

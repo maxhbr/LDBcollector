@@ -4,6 +4,7 @@
 canonicalName: "PostgreSQL License"
 category: "PostgreSQL"
 spdxIdentifier: "PostgreSQL"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:

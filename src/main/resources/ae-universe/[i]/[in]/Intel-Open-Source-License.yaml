@@ -3,7 +3,9 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Intel Open Source License"
 category: "Intel"
+shortName: "Intel-Open-Source"
 spdxIdentifier: "Intel"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:

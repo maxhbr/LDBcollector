@@ -5,6 +5,7 @@ canonicalName: "GNU General Public License 3.0"
 category: "GPL"
 shortName: "GPL-3.0"
 spdxIdentifier: "GPL-3.0-only"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:

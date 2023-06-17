@@ -9,6 +9,8 @@ openCoDEStatus: "approved"
 alternativeNames:
   - "Ruby License"
   - "RubyLicense"
+  - "under the Ruby"
+  - "under Ruby"
 
 otherIds: 
   - "scancode:ruby"

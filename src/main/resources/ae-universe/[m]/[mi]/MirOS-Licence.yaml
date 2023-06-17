@@ -4,6 +4,7 @@
 canonicalName: "MirOS Licence"
 category: "MirOS"
 spdxIdentifier: "MirOS"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:

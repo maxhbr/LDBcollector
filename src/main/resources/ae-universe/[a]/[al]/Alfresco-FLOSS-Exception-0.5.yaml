@@ -5,6 +5,8 @@ canonicalName: "Alfresco FLOSS Exception 0.5"
 category: "Alfresco FLOSS Exception"
 shortName: "Alfresco-Exception-0.5"
 
+type: "exception"
+
 alternativeNames:
   - "Alfresco FLOSS Exception v0.5"
 

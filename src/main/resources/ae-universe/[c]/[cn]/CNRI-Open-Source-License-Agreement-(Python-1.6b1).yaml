@@ -5,6 +5,7 @@ canonicalName: "CNRI Open Source License Agreement (Python 1.6b1)"
 category: "CNRI Open Source License Agreement"
 shortName: "CNRI-Python-1.6b1"
 spdxIdentifier: "CNRI-Python"
+osiStatus: "approved"
 
 alternativeNames:
   - "http://spdx.org/licenses/CNRI-Python"

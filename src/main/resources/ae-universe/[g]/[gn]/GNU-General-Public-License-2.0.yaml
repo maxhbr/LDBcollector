@@ -5,6 +5,7 @@ canonicalName: "GNU General Public License 2.0"
 category: "GPL"
 shortName: "GPL-2.0"
 spdxIdentifier: "GPL-2.0-only"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:
@@ -55,6 +56,7 @@ alternativeNames:
   - "GNU General Public License (Version 2.0)"
   - "GNU General Public License as published by the Free Software Foundation; Version 2 (GPL)"
   - "GPL ver.2"
+  - "GNU General Public License (2.0)"
 
 otherIds: 
   - "scancode:gpl-2.0"

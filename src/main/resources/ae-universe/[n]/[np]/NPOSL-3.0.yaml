@@ -4,6 +4,7 @@
 canonicalName: "NPOSL 3.0"
 category: "NPOSL"
 spdxIdentifier: "NPOSL-3.0"
+osiStatus: "approved"
 
 alternativeNames:
   - "NPOSL, Version 3.0"

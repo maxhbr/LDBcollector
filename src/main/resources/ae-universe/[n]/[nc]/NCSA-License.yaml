@@ -4,6 +4,7 @@
 canonicalName: "NCSA License"
 category: "BSD"
 spdxIdentifier: "NCSA"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:

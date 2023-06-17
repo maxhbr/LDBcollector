@@ -5,6 +5,7 @@ canonicalName: "GNU Affero General Public License 3.0 (or any later version)"
 category: "AGPL"
 shortName: "AGPL-3.0+"
 spdxIdentifier: "AGPL-3.0-or-later"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:

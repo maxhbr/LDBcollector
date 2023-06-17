@@ -4,6 +4,7 @@
 canonicalName: "BSD 3-Clause License (clear; copyright holder variant)"
 category: "BSD"
 shortName: "BSD-3-Clause-Clear-copyright-variant"
+openCoDEStatus: "not approved"
 
 otherIds: 
   - "scancode:clear-bsd"

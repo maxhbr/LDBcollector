@@ -5,5 +5,7 @@ canonicalName: "Linking Exception (GPL; variant 009)"
 category: "GPL Linking Exception"
 shortName: "Linking-Exception-GPL-009"
 
+type: "exception"
+
 otherIds: 
   - "scancode:cygwin-exception-3.0"

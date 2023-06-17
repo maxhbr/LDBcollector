@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "BSD 3-Clause License (Lawrence Berkeley National Labs)"
 category: "BSD"
-shortName: "BSD-3-Clause-LBNL-001"
+spdxIdentifier: "BSD-3-Clause-LBNL"
 
 alternativeNames:
   - "BSD-3-Clause-LBNL-001"

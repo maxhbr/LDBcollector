@@ -4,6 +4,7 @@
 canonicalName: "Open Group Test Suite License"
 category: "OGTSL"
 spdxIdentifier: "OGTSL"
+osiStatus: "approved"
 
 alternativeNames:
   - "Open Group Test Suite License"

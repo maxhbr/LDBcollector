@@ -4,6 +4,7 @@
 canonicalName: "Cryptographic Autonomy License 1.0"
 category: "Cryptographic Autonomy License"
 spdxIdentifier: "CAL-1.0"
+osiStatus: "approved"
 
 alternativeNames:
   - "Cryptographic Autonomy License 1.0"

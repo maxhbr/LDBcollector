@@ -4,6 +4,7 @@
 canonicalName: "ISC License"
 category: "ISC"
 spdxIdentifier: "ISC"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:
@@ -12,6 +13,7 @@ alternativeNames:
   - "ISC Permission"
   - "isc license"
   - "'init-license': 'ISC'"
+  - "License: ISC"
 
 otherIds: 
   - "scancode:isc"

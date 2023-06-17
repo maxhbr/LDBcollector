@@ -4,6 +4,7 @@
 canonicalName: "Vovida Software License 1.0"
 category: "VSL"
 spdxIdentifier: "VSL-1.0"
+osiStatus: "approved"
 
 alternativeNames:
   - "VSL, Version 1.0"

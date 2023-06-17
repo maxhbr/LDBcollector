@@ -4,6 +4,7 @@
 canonicalName: "zlib License"
 category: "zlib"
 spdxIdentifier: "Zlib"
+osiStatus: "approved"
 openCoDEStatus: "approved"
 
 alternativeNames:

@@ -5,6 +5,8 @@ canonicalName: "Javascript Exception (GPL)"
 category: "GPL Javascript Exception"
 shortName: "Javascript-Exception-GPL"
 
+type: "exception"
+
 alternativeNames:
   - "Javascript exception to GPL 2.0"
 

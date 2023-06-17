@@ -4,6 +4,7 @@
 canonicalName: "Open CASCADE Exception 1.0 (LGPL)"
 category: "LGPL CASCADE Exception"
 shortName: "Open-CASCADE-Exception-1.0-LGPL"
+spdxIdentifier: "OCCT-exception-1.0"
 
 type: "exception"
 

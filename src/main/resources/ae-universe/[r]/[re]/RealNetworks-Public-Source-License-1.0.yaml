@@ -4,6 +4,7 @@
 canonicalName: "RealNetworks Public Source License 1.0"
 category: "RPSL"
 spdxIdentifier: "RPSL-1.0"
+osiStatus: "approved"
 
 alternativeNames:
   - "RPSL, Version 1.0"

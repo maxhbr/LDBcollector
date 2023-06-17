@@ -4,6 +4,7 @@
 canonicalName: "Sun Public License 1.0"
 category: "SPL"
 spdxIdentifier: "SPL-1.0"
+osiStatus: "approved"
 
 alternativeNames:
   - "SPL, Version 1.0"

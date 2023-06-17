@@ -4,6 +4,7 @@
 canonicalName: "Upstream Compatibility License 1.0"
 category: "Upstream Compatibility"
 spdxIdentifier: "UCL-1.0"
+osiStatus: "approved"
 
 alternativeNames:
   - "UCL-1.0"

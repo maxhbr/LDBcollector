@@ -4,6 +4,7 @@
 canonicalName: "Frameworx License 1.0"
 category: "Frameworx"
 spdxIdentifier: "Frameworx-1.0"
+osiStatus: "approved"
 
 alternativeNames:
   - "Frameworx, Version 1.0"

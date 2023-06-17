@@ -2,11 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "mplus Font License"
-category: "mplus Font License"
+category: "mplus"
 spdxIdentifier: "mplus"
 
 alternativeNames:
   - "mplus Font License"
+  - "m-plus License"
 
 otherIds: 
   - "scancode:m-plus"

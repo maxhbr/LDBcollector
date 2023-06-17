@@ -2,9 +2,8 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 canonicalName: "Python Software Foundation License 2.0"
-category: "Python Software Foundation License"
-spdxIdentifier: "Python-2.0"
-openCoDEStatus: "approved"
+category: "Python Software Foundation License 2.0"
+spdxIdentifier: "PSF-2.0"
 
 alternativeNames:
   - "Python Software Foundation License"
@@ -14,4 +13,3 @@ alternativeNames:
 
 otherIds: 
   - "scancode:psf-2.0"
-  - "osi:Python-2.0"

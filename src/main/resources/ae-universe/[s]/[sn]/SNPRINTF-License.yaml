@@ -1,14 +1,15 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "SNPRINTF License"
-category: "snprintf License"
-shortName: "SNPRINTF"
+canonicalName: "snprintf License"
+category: "snprintf"
+spdxIdentifier: "snprintf"
 
 alternativeNames:
   - "SNPRINTF License"
   - "Patrick Powell License"
   - "License: PP"
+  - "snprintf License"
 
 otherIds: 
   - "scancode:SNPRINTF"

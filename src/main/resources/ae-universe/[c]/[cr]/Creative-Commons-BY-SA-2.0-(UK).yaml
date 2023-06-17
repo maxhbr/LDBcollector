@@ -1,9 +1,10 @@
 # Generated content
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
-canonicalName: "Creative Commons BY SA 2.0 (UK)"
+canonicalName: "Creative Commons BY-SA 2.0 (UK)"
 category: "CC-BY-SA"
 spdxIdentifier: "CC-BY-SA-2.0-UK"
+osiStatus: "pending"
 openCoDEStatus: "approved"
 
 otherIds: 

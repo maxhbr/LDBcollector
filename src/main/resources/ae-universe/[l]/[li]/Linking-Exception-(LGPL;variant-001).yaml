@@ -5,6 +5,8 @@ canonicalName: "Linking Exception (LGPL; variant 001)"
 category: "LGPL Linking Exception"
 shortName: "Linking-Exception-LGPL-001"
 
+type: "exception"
+
 otherIds: 
   - "scancode:lgpl-2.1-plus-linking"
   - "scancode:linking-exception-2.1-plus"

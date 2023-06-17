@@ -10,6 +10,9 @@ type: "exception"
 alternativeNames:
   - "inria-linking-exception"
   - "INRIA Linking Exception"
+  - "Linking Exception (QPL)"
+  - "Linking-Exception-QPL"
+  - "QPL Linking Exception"
 
 otherIds: 
   - "scancode:inria-linking-exception"
