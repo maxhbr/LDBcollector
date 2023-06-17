@@ -109,7 +109,9 @@ internal dataset to produce the corrected outputs.
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 31.2.1 is used. 
+Currently, ScanCode version 31.2.1 is used.
+
+Non-approved OSI status information is not yet complete. More details will be added short-term.
 
 Regarding SPDX the latest version from https://github.com/spdx/license-list-data
 main branch is used to synchronize the {metæffekt}-universe.
