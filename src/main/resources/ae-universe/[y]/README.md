@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Yahoo BrowserPlus End User License]([ya]/Yahoo-BrowserPlus-End-User-License.yaml)</sup>|<sup>Yahoo BrowserPlus End User License</sup>|<sup>Yahoo-BrowserPlus-EULA</sup>| | |<sup> </sup>|<sup>[yahoo-browserplus-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yahoo-browserplus-eula.LICENSE)</sup>|<sup>[yahoo-browserplus-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yahoo-browserplus-eula.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Yahoo Messenger EULA]([ya]/Yahoo-Messenger-EULA.yaml)</sup>|<sup>Yahoo Messenger EULA</sup>|<sup>Yahoo-Messenger-EULA</sup>| | |<sup> </sup>|<sup>[yahoo-messenger-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yahoo-messenger-eula.LICENSE)</sup>|<sup>[yahoo-messenger-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yahoo-messenger-eula.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Yale CAS License]([ya]/Yale-CAS-License.yaml)</sup>|<sup>Yale CAS License</sup>|<sup>Yale-CAS</sup>| | |<sup> </sup>|<sup>[yale-cas](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yale-cas.LICENSE)</sup>|<sup>[yale-cas](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/yale-cas.LICENSE)</sup>|<sup>terms</sup>|

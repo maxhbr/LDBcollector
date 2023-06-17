@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[vbAccelerator Distribution Notice]([vb]/vbAccelerator-Distribution-Notice.yaml)</sup>|<sup>vbAccelerator Distribution Notice</sup>|<sup>vbAccelerator</sup>| | |<sup> </sup>|<sup>[vbaccelerator](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vbaccelerator.LICENSE)</sup>|<sup>[vbaccelerator](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vbaccelerator.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[VCalendar License]([vc]/VCalendar-License.yaml)</sup>|<sup>VCalendar License</sup>|<sup>VCalendar</sup>| | |<sup> </sup>|<sup>[vcalendar](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vcalendar.LICENSE)</sup>|<sup>[vcalendar](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vcalendar.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Verbatim Copying License]([ve]/Verbatim-Copying-License.yaml)</sup>|<sup>Verbatim Copying</sup>|<sup>Verbatim-Copying</sup>| | |<sup> </sup>| |<sup>[other-permissive](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/other-permissive.LICENSE)</sup>|<sup>terms</sup>|

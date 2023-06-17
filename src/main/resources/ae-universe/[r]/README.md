@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Rackspace License]([ra]/Rackspace-License.yaml)</sup>|<sup>Rackspace License</sup>|<sup>Rackspace</sup>| | |<sup> </sup>|<sup>[rackspace](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rackspace.LICENSE)</sup>|<sup>[rackspace](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rackspace.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[radvd License]([ra]/radvd-License.yaml)</sup>|<sup>radvd License</sup>|<sup>radvd</sup>| | |<sup> </sup>|<sup>[radvd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/radvd.LICENSE)</sup>|<sup>[radvd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/radvd.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Ralink Firmware License]([ra]/Ralink-Firmware-License.yaml)</sup>|<sup>Ralink Firmware</sup>|<sup>Ralink-Firmware</sup>| | |<sup> </sup>|<sup>[ralink-firmware](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ralink-firmware.LICENSE)</sup>|<sup>[ralink-firmware](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ralink-firmware.LICENSE)</sup>|<sup>terms</sup>|

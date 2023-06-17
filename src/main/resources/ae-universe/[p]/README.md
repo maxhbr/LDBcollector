@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Paint License]([pa]/Paint-License.yaml)</sup>|<sup>Paint License</sup>|<sup>Paint</sup>| | |<sup> </sup>|<sup>[paint-net](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/paint-net.LICENSE)</sup>|<sup>[paint-net](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/paint-net.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Paolo Messina 2000]([pa]/Paolo-Messina-2000.yaml)</sup>|<sup>Paolo Messina</sup>|<sup>Paolo-Messina-2000</sup>| | |<sup> </sup>|<sup>[paolo-messina-2000](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/paolo-messina-2000.LICENSE)</sup>|<sup>[paolo-messina-2000](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/paolo-messina-2000.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Parity Public License 6.0.0]([pa]/Parity-Public-License-6.0.0.yaml)</sup>|<sup>Parity</sup>|<sup> </sup>|<sup>[Parity-6.0.0](https://spdx.org/licenses/Parity-6.0.0.html)</sup>| |<sup> </sup>|<sup>[parity-6.0.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/parity-6.0.0.LICENSE)</sup>|<sup>[parity-6.0.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/parity-6.0.0.LICENSE)</sup>|<sup>terms</sup>|

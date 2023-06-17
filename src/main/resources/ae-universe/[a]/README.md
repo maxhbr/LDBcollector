@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Abstyles License]([ab]/Abstyles-License.yaml)</sup>|<sup>Abstyles</sup>|<sup> </sup>|<sup>[Abstyles](https://spdx.org/licenses/Abstyles.html)</sup>| |<sup>approved</sup>|<sup>[abstyles](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.LICENSE)</sup>|<sup>[abstyles](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Academic Free License (undefined)]([ac]/Academic-Free-License-(undefined).yaml)</sup>|<sup>AFL</sup>|<sup>AFL-?</sup>| | |<sup> </sup>| | |<sup>terms</sup>|
 |<sup>[Academic Free License 1.1]([ac]/Academic-Free-License-1.1.yaml)</sup>|<sup>AFL</sup>|<sup> </sup>|<sup>[AFL-1.1](https://spdx.org/licenses/AFL-1.1.html)</sup>| |<sup>approved</sup>|<sup>[afl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.1.LICENSE)</sup>|<sup>[afl-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.1.LICENSE)</sup>|<sup>terms</sup>|

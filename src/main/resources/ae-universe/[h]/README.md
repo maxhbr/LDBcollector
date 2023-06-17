@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[H2 License 1.0]([h2]/H2-License-1.0.yaml)</sup>|<sup>H2 License</sup>|<sup>H2-1.0</sup>| | |<sup> </sup>|<sup>[h2-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/h2-1.0.LICENSE)</sup>|<sup>[h2-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/h2-1.0.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Hacktivismo Enhanced-Source Software License Agreement]([ha]/Hacktivismo-Enhanced-Source-Software-License-Agreement.yaml)</sup>|<sup>Hacktivismo Enhanced-Source Software License Agreement</sup>|<sup>HESSLA</sup>| | |<sup> </sup>|<sup>[hessla](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hessla.LICENSE)</sup>|<sup>[hessla](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hessla.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[HaskellReport License]([ha]/HaskellReport-License.yaml)</sup>|<sup>HaskellReport</sup>|<sup> </sup>|<sup>[HaskellReport](https://spdx.org/licenses/HaskellReport.html)</sup>| |<sup> </sup>|<sup>[haskell-report](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/haskell-report.LICENSE)</sup>|<sup>[haskell-report](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/haskell-report.LICENSE)</sup>|<sup>terms</sup>|

@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[C/Migemo License]([cm]/CMigemo-License.yaml)</sup>|<sup>C/Migemo License</sup>|<sup>CMigemo</sup>| | |<sup> </sup>|<sup>[cmigemo](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmigemo.LICENSE)</sup>|<sup>[cmigemo](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmigemo.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Cadence License]([ca]/Cadence-License.yaml)</sup>|<sup>Cadence</sup>|<sup>Cadence</sup>| | |<sup> </sup>|<sup>[cadence-linux-firmware](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cadence-linux-firmware.LICENSE)</sup>|<sup>[cadence-linux-firmware](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cadence-linux-firmware.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Caldera License]([ca]/Caldera-License.yaml)</sup>|<sup>Caldera</sup>|<sup> </sup>|<sup>[Caldera](https://spdx.org/licenses/Caldera.html)</sup>| |<sup>not approved</sup>|<sup>[caldera](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/caldera.LICENSE)</sup>|<sup>[caldera](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/caldera.LICENSE)</sup>|<sup>terms</sup>|

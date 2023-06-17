@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Kalle Kaukonen License]([ka]/Kalle-Kaukonen-License.yaml)</sup>|<sup>Kalle Kaukonen License</sup>|<sup>Kalle-Kaukonen</sup>| | |<sup> </sup>|<sup>[kalle-kaukonen](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/kalle-kaukonen.LICENSE)</sup>|<sup>[kalle-kaukonen](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/kalle-kaukonen.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Karl Peterson License]([ka]/Karl-Peterson-License.yaml)</sup>|<sup>Karl Peterson License</sup>|<sup>Karl-Peterson</sup>| | |<sup> </sup>|<sup>[karl-peterson](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/karl-peterson.LICENSE)</sup>|<sup>[karl-peterson](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/karl-peterson.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Katharos License 0.1.0]([ka]/Katharos-License-0.1.0.yaml)</sup>|<sup>Katharos License</sup>|<sup>Katharos-0.1.0</sup>| | |<sup> </sup>|<sup>[katharos-0.1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/katharos-0.1.0.LICENSE)</sup>|<sup>[katharos-0.1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/katharos-0.1.0.LICENSE)</sup>|<sup>terms</sup>|

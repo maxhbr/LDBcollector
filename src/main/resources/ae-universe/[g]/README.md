@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Gareth McCaughan License]([ga]/Gareth-McCaughan-License.yaml)</sup>|<sup>Gareth McCaughan License</sup>|<sup>Gareth-McCaughan</sup>| | |<sup> </sup>|<sup>[gareth-mccaughan](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gareth-mccaughan.LICENSE)</sup>|<sup>[gareth-mccaughan](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gareth-mccaughan.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Gary S. Brown License]([ga]/Gary-S.-Brown-License.yaml)</sup>|<sup>Gary S. Brown License</sup>|<sup>Gary-S-Brown</sup>| | |<sup> </sup>|<sup>[gary-s-brown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gary-s-brown.LICENSE)</sup>|<sup>[gary-s-brown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gary-s-brown.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[GCC Compiler Exception]([gc]/GCC-Compiler-Exception.yaml)</sup>|<sup>GCC Compiler Exception</sup>|<sup>GCC-Compiler-Exception</sup>| | |<sup> </sup>|<sup>[gcc-compiler-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gcc-compiler-exception-2.0.LICENSE)</sup>|<sup>[gcc-compiler-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gcc-compiler-exception-2.0.LICENSE)</sup>|<sup>exception</sup>|

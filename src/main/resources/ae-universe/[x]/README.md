@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[X11 License]([x1]/X11-License.yaml)</sup>|<sup>X11</sup>|<sup> </sup>|<sup>[X11](https://spdx.org/licenses/X11.html)</sup>| |<sup>approved</sup>|<sup>[x11-xconsortium](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.LICENSE)</sup>|<sup>[x11-xconsortium](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[X11 License (contributors agreement)]([x1]/X11-License-(contributors-agreement).yaml)</sup>|<sup>X11</sup>|<sup>X11-contributors-agreement</sup>| | |<sup> </sup>| | |<sup>terms</sup>|
 |<sup>[X11 License Distribution Modification (variant)]([x1]/X11-License-Distribution-Modification-(variant).yaml)</sup>|<sup>X11-distribute-modifications-variant</sup>|<sup> </sup>|<sup>[X11-distribute-modifications-variant](https://spdx.org/licenses/X11-distribute-modifications-variant.html)</sup>| |<sup> </sup>| | |<sup>terms</sup>|

@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Q Public License 1.0]([qp]/Q-Public-License-1.0.yaml)</sup>|<sup>QPL</sup>|<sup> </sup>|<sup>[QPL-1.0](https://spdx.org/licenses/QPL-1.0.html)</sup>|<sup>[approved](https://opensource.org/licenses/?ls=QPL-1.0)</sup>|<sup>approved</sup>|<sup>[qpl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.LICENSE)</sup>|<sup>[qpl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Q Public License 1.0 - INRIA 2004 (variant)]([qp]/Q-Public-License-1.0---INRIA-2004-(variant).yaml)</sup>|<sup>QPL</sup>|<sup> </sup>|<sup>[QPL-1.0-INRIA-2004](https://spdx.org/licenses/QPL-1.0-INRIA-2004.html)</sup>| |<sup> </sup>| |<sup>[qpl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[QAPlug License]([qa]/QAPlug-License.yaml)</sup>|<sup>QAPlug License</sup>|<sup>QAPlug</sup>| | |<sup> </sup>|<sup>[qaplug](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qaplug.LICENSE)</sup>|<sup>[qaplug](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qaplug.LICENSE)</sup>|<sup>terms</sup>|

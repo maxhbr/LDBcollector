@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[SafeCopy EULA]([sa]/SafeCopy-EULA.yaml)</sup>|<sup>SafeCopy EULA</sup>|<sup>SafeCopy-EULA</sup>| | |<sup> </sup>|<sup>[safecopy-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/safecopy-eula.LICENSE)</sup>|<sup>[safecopy-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/safecopy-eula.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Sampling Plus 1.0]([sa]/Sampling-Plus-1.0.yaml)</sup>|<sup>CC-Sampling</sup>|<sup>CC-Sampling-Plus-1.0</sup>| | |<sup> </sup>|<sup>[cc-sampling-plus-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-sampling-plus-1.0.LICENSE)</sup>|<sup>[cc-sampling-plus-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-sampling-plus-1.0.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Sandeep License]([sa]/Sandeep-License.yaml)</sup>|<sup>Sandeep License</sup>|<sup>Sandeep</sup>| | |<sup> </sup>|<sup>[sandeep](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sandeep.LICENSE)</sup>|<sup>[sandeep](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sandeep.LICENSE)</sup>|<sup>terms</sup>|

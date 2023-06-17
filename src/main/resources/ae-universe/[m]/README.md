@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Magpie Exception (AGPL 3.0)]([ma]/Magpie-Exception-(AGPL-3.0).yaml)</sup>|<sup>Magpie Exception</sup>|<sup>Magpie-exception-1.0</sup>| | |<sup> </sup>|<sup>[magpie-exception-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/magpie-exception-1.0.LICENSE)</sup>|<sup>[magpie-exception-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/magpie-exception-1.0.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[MakeHuman Exception (GPL)]([ma]/MakeHuman-Exception-(GPL).yaml)</sup>|<sup>GPL MakeHuman Exception</sup>|<sup>MakeHuman-Exception-GPL</sup>| | |<sup> </sup>|<sup>[make-human-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/make-human-exception.LICENSE)</sup>|<sup>[make-human-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/make-human-exception.LICENSE)</sup>|<sup>exception</sup>|
 |<sup>[MakeIndex License]([ma]/MakeIndex-License.yaml)</sup>|<sup>MakeIndex</sup>|<sup> </sup>|<sup>[MakeIndex](https://spdx.org/licenses/MakeIndex.html)</sup>| |<sup> </sup>|<sup>[makeindex](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/makeindex.LICENSE)</sup>|<sup>[makeindex](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/makeindex.LICENSE)</sup>|<sup>terms</sup>|

@@ -30,7 +30,7 @@
 [z](../[z]/README.md)
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |<sup>[Taiwan Open Government Data License 1.0]([ta]/Taiwan-Open-Government-Data-License-1.0.yaml)</sup>|<sup>Taiwan Open Government Data</sup>|<sup> </sup>|<sup>[OGDL-Taiwan-1.0](https://spdx.org/licenses/OGDL-Taiwan-1.0.html)</sup>| |<sup> </sup>|<sup>[ogdl-taiwan-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ogdl-taiwan-1.0.LICENSE)</sup>|<sup>[ogdl-taiwan-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ogdl-taiwan-1.0.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Taiwan Open Government Data License 1.0 (TW)]([ta]/Taiwan-Open-Government-Data-License-1.0-(TW).yaml)</sup>|<sup>Taiwan Open Government Data</sup>|<sup>OGDL-Taiwan-1.0-tw</sup>| | |<sup> </sup>| | |<sup>terms</sup>|
 |<sup>[Takuya OOURA License]([ta]/Takuya-OOURA-License.yaml)</sup>|<sup>Takuya OOURA</sup>|<sup>Takuya-OOURA</sup>| | |<sup> </sup>|<sup>[takuya-ooura](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/takuya-ooura.LICENSE)</sup>|<sup>[takuya-ooura](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/takuya-ooura.LICENSE)</sup>|<sup>terms</sup>|
