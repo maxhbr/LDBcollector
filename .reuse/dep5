@@ -14,7 +14,7 @@ Files: DCO
 Copyright: 2005 Open Source Development Labs, Inc.
 License: CC-BY-SA-2.5
 
-Files: AUTHORS requirements.txt .gitlab-ci.yml .packit.yaml .tito/* .gitlab/issue_templates/README
+Files: AUTHORS requirements.txt .gitlab-ci.yml .packit.yaml .tito/* .gitlab/issue_templates/README .gitignore
 Copyright: Not Copyrightable
 License: LicenseRef-Not-Copyrightable
 
