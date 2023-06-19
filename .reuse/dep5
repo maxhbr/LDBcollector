@@ -22,11 +22,11 @@ Files: UltraPermissive.txt public-domain-text.txt data/*
 Copyright: Fedora Project Authors and None and Various
 License: CC0-1.0 AND LicenseRef-License-of-Licenses
 
-Files: tools/*
+Files: tools/* 
 Copyright: 2022 Red Hat, Inc.
 License: BSD-3-Clause
 
-Files: Makefile tools/templates/*
+Files: Makefile tools/templates/* grammar/*
 Copyright: Fedora Project Authors
 License: BSD-3-Clause
 
