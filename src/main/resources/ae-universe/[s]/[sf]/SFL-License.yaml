@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "SFL License"
+category: "SFL"
+spdxIdentifier: "iMatix"
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "iMatix License"
+  - "IMATIX LICENSE"
+  - "IMATIX License"
+  - "iMatix STANDARD FUNCTION LIBRARY"
+  - "SFL License Agreement"
+
+otherIds: 
+  - "scancode:sfl-license"

@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "libpri OpenH323 exception"
+category: "libpri-OpenH323-exception"
+shortName: "libpri-OpenH323-Exception"
+spdxIdentifier: "libpri-OpenH323-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "libpri-OpenH323-exception"
+  - "libpri OpenH323 exception"
+
