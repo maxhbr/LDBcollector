@@ -2,12 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Permission Terms (SUN)"
-category: "Permission"
-shortName: "PT-SUN"
+canonicalName: "David M. Gay dtoa License"
+category: "dtoa"
+spdxIdentifier: "dtoa"
 
 alternativeNames:
-  - "Permission Terms (SUN)"
+  - "David M. Gay dtoa License"
 
-otherIds: 
-  - "scancode:sun-source"

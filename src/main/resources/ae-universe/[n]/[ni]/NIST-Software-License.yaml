@@ -2,12 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Permission Terms (SUN)"
-category: "Permission"
-shortName: "PT-SUN"
+canonicalName: "NIST Software License"
+category: "NIST-Software"
+spdxIdentifier: "NIST-Software"
 
 alternativeNames:
-  - "Permission Terms (SUN)"
+  - "NIST-Software"
+  - "NIST Software License"
 
-otherIds: 
-  - "scancode:sun-source"

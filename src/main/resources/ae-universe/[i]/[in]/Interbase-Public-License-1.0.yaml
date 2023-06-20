@@ -5,6 +5,7 @@
 canonicalName: "Interbase Public License 1.0"
 category: "Interbase"
 spdxIdentifier: "Interbase-1.0"
+osiStatus: "not approved"
 
 alternativeNames:
   - "Interbase, Version 1.0"

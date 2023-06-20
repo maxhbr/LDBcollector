@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "zlib/libpng License with Acknowledgement"
+canonicalName: "zlib/libpng License (with acknowledgement)"
 category: "zlib-acknowledgement"
 spdxIdentifier: "zlib-acknowledgement"
 openCoDEStatus: "approved"

@@ -2,12 +2,11 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Permission Terms (SUN)"
-category: "Permission"
-shortName: "PT-SUN"
+canonicalName: "Boehm-Demers-Weiser GC License"
+category: "Boehm-GC"
+spdxIdentifier: "Boehm-GC"
 
 alternativeNames:
-  - "Permission Terms (SUN)"
+  - "Boehm-GC"
+  - "Boehm-Demers-Weiser GC License"
 
-otherIds: 
-  - "scancode:sun-source"
