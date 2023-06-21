@@ -27,6 +27,11 @@ from odf.text import H, P, Span
 
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
 from cube.models import License, Generic, Obligation
+from cube.utils.reference import (
+    LICENSE_SHARED_FIELDS,
+    OBLIGATION_SHARED_FIELDS,
+    join_obligations,
+)
 from cube.views.mixins import SearchMixin, LicenseRelatedMixin
 
 
@@ -133,6 +138,57 @@ class LicenseAddView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
         "verbatim",
     ]
     template_name = "cube/license_create.html"
+
+
+class LicenseDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+    permission_required = "cube.view_license"
+    model = License
+    template_name = "cube/license_diff.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        def display_field(obj, field):
+            if hasattr(obj, f"get_{field}_display"):
+                return getattr(obj, f"get_{field}_display")()
+            else:
+                return getattr(obj, field)
+
+        ref_object = License.objects.using("shared").get(spdx_id=self.object.spdx_id)
+        context["diff"] = [
+            {
+                "label": License._meta.get_field(field).verbose_name.capitalize(),
+                "ref": display_field(ref_object, field),
+                "local": display_field(self.object, field),
+            }
+            for field in LICENSE_SHARED_FIELDS
+            if getattr(ref_object, field) != getattr(self.object, field)
+        ]
+
+        context["obligations_diff"] = [
+            (
+                obligation.name if obligation is not None else ref.name,
+                "local" if not ref else "ref" if not obligation else "both",
+                [
+                    {
+                        "label": Obligation._meta.get_field(
+                            field
+                        ).verbose_name.capitalize()
+                        if field != "generic__name"
+                        else "Generic",
+                        "ref": display_field(ref, field),
+                        "local": display_field(obligation, field),
+                    }
+                    for field in OBLIGATION_SHARED_FIELDS
+                    if (getattr(ref, field) != getattr(obligation, field))
+                ]
+                if ref and obligation
+                else None,
+            )
+            for obligation, ref in join_obligations(self.object, ref_object)
+        ]
+
+        return context
 
 
 class PrintLicense(LoginRequiredMixin, PermissionRequiredMixin, DetailView):

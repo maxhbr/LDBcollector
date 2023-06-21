@@ -2,6 +2,7 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from functools import lru_cache
+from django.db.models import F
 
 LICENSE_SHARED_FIELDS = (
     "spdx_id",
@@ -108,9 +109,7 @@ def license_reference_diff(lic) -> int:
             return 1
 
         obligation_dict = obligation.__dict__
-        obligation_dict["generic__name"] = (
-            obligation.generic and obligation.generic.name
-        )
+        obligation_dict["generic"] = obligation.generic and obligation.generic.id
 
         if any(
             obligation_dict[key] != ref_obligation[key]
@@ -160,3 +159,35 @@ def generic_reference_diff(gen) -> int:
         return 1
 
     return 0
+
+
+def join_obligations(local, ref):
+    """
+    Outer join obligations with same name
+
+    :type local: cube.models.License
+    :type ref: cube.models.License
+    """
+    obligations_pairs = []
+    ref_obligations = list(
+        ref.obligation_set.annotate(generic__name=F("generic__name")).all()
+    )
+
+    for obligation in local.obligation_set.annotate(
+        generic__name=F("generic__name")
+    ).all():
+        ref_index = next(
+            (
+                i
+                for i, ref_obligation in enumerate(ref_obligations)
+                if ref_obligation.name == obligation.name
+            ),
+            None,
+        )
+        ref = ref_obligations.pop(ref_index) if ref_index is not None else None
+        obligations_pairs.append((obligation, ref))
+
+    for ref_obligation in ref_obligations:
+        obligations_pairs.append((None, ref_obligation))
+
+    return obligations_pairs

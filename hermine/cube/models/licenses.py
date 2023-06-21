@@ -343,12 +343,14 @@ class Obligation(models.Model):
         max_length=40,
         choices=TRIGGER_EXPL_CHOICES,
         default=Usage.EXPLOITATION_DISTRIBUTION_BOTH,
+        verbose_name="Triggering exploitation context",
         help_text="The context necessary to trigger this obligation",
     )
     trigger_mdf = models.CharField(
         max_length=40,
         choices=TRIGGER_MDF_CHOICES,
         default=Usage.MODIFICATION_ANY,
+        verbose_name="Triggering modifications",
         help_text="Status of modication necessary to trigger this obligation",
     )
 

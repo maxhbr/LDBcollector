@@ -77,6 +77,9 @@ urlpatterns = [
     ),
     path("license/add/", views.LicenseAddView.as_view(), name="license_add"),
     path(
+        "license/<int:pk>/diff/", views.LicenseDiffView.as_view(), name="license_diff"
+    ),
+    path(
         "license/<int:license_id>/export/",
         views.Export1LicenseView.as_view(),
         name="export_license",
