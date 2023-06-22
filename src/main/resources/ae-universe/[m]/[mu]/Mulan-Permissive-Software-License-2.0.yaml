@@ -6,6 +6,9 @@ canonicalName: "Mulan Permissive Software License 2.0"
 category: "MulanPSL"
 spdxIdentifier: "MulanPSL-2.0"
 
+osiStatus: "approved"
+osiCategory: "international"
+
 alternativeNames:
   - "MulanPSL-2.0"
   - "Mulan Permissive Software License, Version 2"

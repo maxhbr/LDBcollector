@@ -9,6 +9,8 @@ spdxIdentifier: "CPL-1.0"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiSupersededById: "Eclipse-Public-License-1.0"
+osiCategory: "superseded"
 
 alternativeNames:
   - "Common Public License, Version 1.0"

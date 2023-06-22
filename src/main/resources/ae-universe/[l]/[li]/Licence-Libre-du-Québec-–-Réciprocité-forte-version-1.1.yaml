@@ -6,6 +6,9 @@ canonicalName: "Licence Libre du Québec – Réciprocité forte version 1.1"
 category: "LiLiQ Rplus"
 spdxIdentifier: "LiLiQ-Rplus-1.1"
 
+osiStatus: "approved"
+osiCategory: "international"
+
 alternativeNames:
   - "LiLiQ Rplus, Version 1.1"
   - "LiLiQ Rplus, 1.1"

@@ -9,6 +9,8 @@ spdxIdentifier: "LPL-1.0"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiSupersededById: "Lucent-Public-License 1.02"
+osiCategory: "superseded"
 
 alternativeNames:
   - "LPL, Version 1.0"

@@ -7,6 +7,8 @@ category: "EFL"
 spdxIdentifier: "EFL-1.0"
 
 osiStatus: "approved"
+osiSupersededById: "Eiffel-Forum-License-2.0"
+osiCategory: "superseded"
 
 alternativeNames:
   - "EFL, Version 1.0"

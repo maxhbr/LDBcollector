@@ -9,6 +9,7 @@ spdxIdentifier: "SISSL"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "superseded"
 
 alternativeNames:
   - "SISSL"

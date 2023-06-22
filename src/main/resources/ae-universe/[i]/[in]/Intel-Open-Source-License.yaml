@@ -10,6 +10,8 @@ spdxIdentifier: "Intel"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiSupersededById: "BSD-License-with-Export-Notice"
+osiCategory: "superseded"
 
 alternativeNames:
   - "Intel Open Source License"

@@ -9,6 +9,8 @@ spdxIdentifier: "MPL-1.0"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiSupersededById: "Mozilla-Public-License-2.0"
+osiCategory: "superseded"
 
 alternativeNames:
   - "Mozilla Public License 1.0 (MPL)"

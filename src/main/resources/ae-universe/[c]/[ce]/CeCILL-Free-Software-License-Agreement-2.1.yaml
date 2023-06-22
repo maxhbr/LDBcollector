@@ -6,6 +6,9 @@ canonicalName: "CeCILL Free Software License Agreement 2.1"
 category: "CeCILL"
 spdxIdentifier: "CECILL-2.1"
 
+osiStatus: "approved"
+osiCategory: "international"
+
 alternativeNames:
   - "CECILL, Version 2.1"
   - "CECILL, 2.1"

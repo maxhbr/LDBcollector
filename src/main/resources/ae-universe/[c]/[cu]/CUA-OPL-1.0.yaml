@@ -7,6 +7,8 @@ category: "CUA OPL"
 spdxIdentifier: "CUA-OPL-1.0"
 
 osiStatus: "approved"
+osiSupersededById: "CUA-OPL-1.0"
+osiCategory: "superseded"
 
 alternativeNames:
   - "CUA OPL, Version 1.0"

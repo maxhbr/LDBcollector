@@ -9,6 +9,8 @@ spdxIdentifier: "OSL-1.0"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiSupersededById: "Open-Software-License-3.0"
+osiCategory: "superseded"
 
 alternativeNames:
   - "OSL, Version 1.0"
