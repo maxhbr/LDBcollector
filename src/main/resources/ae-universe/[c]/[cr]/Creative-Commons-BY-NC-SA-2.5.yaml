@@ -5,8 +5,10 @@
 canonicalName: "Creative Commons BY-NC-SA 2.5"
 category: "CC-BY-NC-SA"
 spdxIdentifier: "CC-BY-NC-SA-2.5"
-osiStatus: "ineligible"
+
 openCoDEStatus: "not approved"
+
+osiStatus: "ineligible"
 
 alternativeNames:
   - "Creative Commons Attribution Non Commercial Share Alike 2.5 Generic"

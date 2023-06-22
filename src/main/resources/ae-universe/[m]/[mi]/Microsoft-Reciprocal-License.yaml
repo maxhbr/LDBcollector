@@ -5,8 +5,10 @@
 canonicalName: "Microsoft Reciprocal License"
 category: "MS-RL"
 spdxIdentifier: "MS-RL"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "MS-RL"

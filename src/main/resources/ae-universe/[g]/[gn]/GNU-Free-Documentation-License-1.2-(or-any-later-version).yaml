@@ -6,6 +6,7 @@ canonicalName: "GNU Free Documentation License 1.2 (or any later version)"
 category: "GFDL"
 shortName: "GFDL-1.2+"
 spdxIdentifier: "GFDL-1.2-or-later"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

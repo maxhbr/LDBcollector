@@ -5,8 +5,10 @@
 canonicalName: "LaTeX Project Public License 1.3c"
 category: "LPPL"
 spdxIdentifier: "LPPL-1.3c"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "LPPL, Version 1.3c"

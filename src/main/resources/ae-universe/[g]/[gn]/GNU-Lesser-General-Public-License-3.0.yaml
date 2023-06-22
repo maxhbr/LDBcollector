@@ -6,8 +6,10 @@ canonicalName: "GNU Lesser General Public License 3.0"
 category: "LGPL"
 shortName: "LGPL-3.0"
 spdxIdentifier: "LGPL-3.0-only"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "GNU General Lesser Public License (LGPL) version 3.0"

@@ -5,8 +5,10 @@
 canonicalName: "Attribution Assurance License"
 category: "AAL"
 spdxIdentifier: "AAL"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Attribution Assurance License"

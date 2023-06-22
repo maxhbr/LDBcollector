@@ -5,8 +5,10 @@
 canonicalName: "PHP License 3.0"
 category: "PHP License"
 spdxIdentifier: "PHP-3.0"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "PHP, Version 3.0"

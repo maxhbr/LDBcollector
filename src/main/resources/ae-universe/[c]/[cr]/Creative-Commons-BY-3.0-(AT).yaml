@@ -5,8 +5,10 @@
 canonicalName: "Creative Commons BY 3.0 (AT)"
 category: "CC-BY"
 spdxIdentifier: "CC-BY-3.0-AT"
-osiStatus: "pending"
+
 openCoDEStatus: "approved"
+
+osiStatus: "pending"
 
 alternativeNames:
   - "Creative Commons BY 3.0 (Austria)"

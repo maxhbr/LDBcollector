@@ -5,8 +5,10 @@
 canonicalName: "Open Software License 3.0"
 category: "OSL"
 spdxIdentifier: "OSL-3.0"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Open Software License 3.0"

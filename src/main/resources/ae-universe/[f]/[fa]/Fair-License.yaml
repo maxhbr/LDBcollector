@@ -5,8 +5,10 @@
 canonicalName: "Fair License"
 category: "Fair"
 spdxIdentifier: "Fair"
-osiStatus: "approved"
+
 openCoDEStatus: "not approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Fair License"

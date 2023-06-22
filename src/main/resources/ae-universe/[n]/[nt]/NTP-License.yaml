@@ -5,8 +5,10 @@
 canonicalName: "NTP License"
 category: "NTP"
 spdxIdentifier: "NTP"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "NTP License"

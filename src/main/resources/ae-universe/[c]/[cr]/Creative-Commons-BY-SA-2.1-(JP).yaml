@@ -5,8 +5,10 @@
 canonicalName: "Creative Commons BY-SA 2.1 (JP)"
 category: "CC-BY-SA"
 spdxIdentifier: "CC-BY-SA-2.1-JP"
-osiStatus: "pending"
+
 openCoDEStatus: "approved"
+
+osiStatus: "pending"
 
 alternativeNames:
   - "CC-BY-SA-2.1-JP"

@@ -5,8 +5,10 @@
 canonicalName: "BSD Zero Clause License"
 category: "BSD"
 spdxIdentifier: "0BSD"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "BSD Zero Clause License"

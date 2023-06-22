@@ -6,8 +6,10 @@ canonicalName: "GNU Lesser General Public License 2.1"
 category: "LGPL"
 shortName: "LGPL-2.1"
 spdxIdentifier: "LGPL-2.1-only"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "GNU Lesser General Public License, Version 2.1"

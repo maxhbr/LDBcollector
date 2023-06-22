@@ -5,8 +5,10 @@
 canonicalName: "Naumen License"
 category: "Naumen"
 spdxIdentifier: "Naumen"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Naumen License"

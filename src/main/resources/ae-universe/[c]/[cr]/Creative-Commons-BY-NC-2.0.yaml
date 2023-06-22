@@ -5,8 +5,10 @@
 canonicalName: "Creative Commons BY-NC 2.0"
 category: "CC-BY-NC"
 spdxIdentifier: "CC-BY-NC-2.0"
-osiStatus: "ineligible"
+
 openCoDEStatus: "not approved"
+
+osiStatus: "ineligible"
 
 alternativeNames:
   - "Creative Commons Attribution Non Commercial 2.0 Generic"

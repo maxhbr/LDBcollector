@@ -5,8 +5,10 @@
 canonicalName: "Microsoft Public License"
 category: "MS-PL"
 spdxIdentifier: "MS-PL"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "MS-PL"

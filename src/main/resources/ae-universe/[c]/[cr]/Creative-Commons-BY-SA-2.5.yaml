@@ -5,8 +5,10 @@
 canonicalName: "Creative Commons BY-SA 2.5"
 category: "CC-BY-SA"
 spdxIdentifier: "CC-BY-SA-2.5"
-osiStatus: "pending"
+
 openCoDEStatus: "approved"
+
+osiStatus: "pending"
 
 alternativeNames:
   - "Creative Commons Attribution Share Alike 2.5"

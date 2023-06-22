@@ -5,8 +5,10 @@
 canonicalName: "Mozilla Public License 1.0"
 category: "MPL"
 spdxIdentifier: "MPL-1.0"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Mozilla Public License 1.0 (MPL)"

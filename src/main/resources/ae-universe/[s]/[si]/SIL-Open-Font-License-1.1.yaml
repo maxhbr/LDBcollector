@@ -5,8 +5,10 @@
 canonicalName: "SIL Open Font License 1.1"
 category: "OFL"
 spdxIdentifier: "OFL-1.1"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "OFL, Version 1.1"

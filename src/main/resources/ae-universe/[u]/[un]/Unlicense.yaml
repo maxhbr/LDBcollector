@@ -5,8 +5,10 @@
 canonicalName: "Unlicense"
 category: "Public Domain"
 spdxIdentifier: "Unlicense"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Unlicense"

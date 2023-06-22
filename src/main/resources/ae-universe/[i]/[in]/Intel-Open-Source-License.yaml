@@ -6,8 +6,10 @@ canonicalName: "Intel Open Source License"
 category: "Intel"
 shortName: "Intel-Open-Source"
 spdxIdentifier: "Intel"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Intel Open Source License"

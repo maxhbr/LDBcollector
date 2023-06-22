@@ -5,8 +5,10 @@
 canonicalName: "European Union Public License 1.2"
 category: "EUPL"
 spdxIdentifier: "EUPL-1.2"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "EUPL Version 1.2"

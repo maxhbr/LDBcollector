@@ -6,8 +6,10 @@ canonicalName: "GNU General Public License 2.0 (or any later version)"
 category: "GPL"
 shortName: "GPL-2.0+"
 spdxIdentifier: "GPL-2.0-or-later"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "GNU GENERAL PUBLIC LICENSE version 2 or higher"

@@ -5,8 +5,10 @@
 canonicalName: "MIT License (X.Net)"
 category: "MIT"
 spdxIdentifier: "Xnet"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "X.Net License"

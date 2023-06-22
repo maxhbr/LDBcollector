@@ -5,8 +5,10 @@
 canonicalName: "Zope Public License 2.0"
 category: "ZPL"
 spdxIdentifier: "ZPL-2.0"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Zope Public License 2.0"

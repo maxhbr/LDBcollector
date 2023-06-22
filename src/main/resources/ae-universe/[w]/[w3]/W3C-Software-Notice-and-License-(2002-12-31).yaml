@@ -5,8 +5,10 @@
 canonicalName: "W3C Software Notice and License (2002-12-31)"
 category: "W3C"
 spdxIdentifier: "W3C"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"

@@ -5,6 +5,7 @@
 canonicalName: "OpenSSL License"
 category: "OpenSSL"
 spdxIdentifier: "OpenSSL"
+
 openCoDEStatus: "approved"
 
 alternativeNames:

@@ -5,8 +5,10 @@
 canonicalName: "Open Software License 1.0"
 category: "OSL"
 spdxIdentifier: "OSL-1.0"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "OSL, Version 1.0"

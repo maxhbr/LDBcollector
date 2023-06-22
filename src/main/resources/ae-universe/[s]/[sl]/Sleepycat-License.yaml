@@ -5,8 +5,10 @@
 canonicalName: "Sleepycat License"
 category: "Sleepycat"
 spdxIdentifier: "Sleepycat"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Sleepycat License"

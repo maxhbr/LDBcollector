@@ -5,8 +5,10 @@
 canonicalName: "Creative Commons BY-NC-SA 3.0 (IGO)"
 category: "CC-BY-NC-SA"
 spdxIdentifier: "CC-BY-NC-SA-3.0-IGO"
-osiStatus: "ineligible"
+
 openCoDEStatus: "not approved"
+
+osiStatus: "ineligible"
 
 alternativeNames:
   - "Creative Commons Attribution Non Commercial Share Alike 3.0 IGO"

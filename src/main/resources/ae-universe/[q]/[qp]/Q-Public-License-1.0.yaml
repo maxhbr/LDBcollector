@@ -5,8 +5,10 @@
 canonicalName: "Q Public License 1.0"
 category: "QPL"
 spdxIdentifier: "QPL-1.0"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "QPL, Version 1.0"

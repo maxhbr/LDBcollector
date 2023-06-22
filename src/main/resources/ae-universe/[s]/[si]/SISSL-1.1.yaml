@@ -5,8 +5,10 @@
 canonicalName: "SISSL 1.1"
 category: "SISSL"
 spdxIdentifier: "SISSL"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "SISSL"

@@ -5,8 +5,12 @@
 canonicalName: "Artistic License 1.0 (cl8)"
 category: "Artistic License"
 spdxIdentifier: "Artistic-1.0-cl8"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
+osiSupersededById: "Artistic-2.0"
+osiCategory: "superseded"
 
 alternativeNames:
   - "Artistic 1.0, Version cl8"

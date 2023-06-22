@@ -5,8 +5,10 @@
 canonicalName: "Nokia Open Source License"
 category: "Nokia License"
 spdxIdentifier: "Nokia"
-osiStatus: "approved"
+
 openCoDEStatus: "approved"
+
+osiStatus: "approved"
 
 alternativeNames:
   - "Nokia License"

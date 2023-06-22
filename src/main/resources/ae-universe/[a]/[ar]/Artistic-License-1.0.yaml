@@ -5,7 +5,10 @@
 canonicalName: "Artistic License 1.0"
 category: "Artistic License"
 spdxIdentifier: "Artistic-1.0"
+
 osiStatus: "approved"
+osiSupersededById: "Artistic-2.0"
+osiCategory: "superseded"
 
 alternativeNames:
   - "Artistic, Version 1.0"
