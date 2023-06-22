@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.23
+Version:        1.24
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,16 @@ make check-grammar
 
 
 %changelog
+* Thu Jun 22 2023 Miroslav Suchý <msuchy@redhat.com> 1.24-1
+- Add new file: Inner-Net-2.0
+- Add Linux-man-pages-copyleft-2-para
+- Add Linux-man-pages-1-para
+- Add Linux-man-pages-copyleft-var
+- Remove AFL-2.0 since it is probably not in Fedora
+- Make REUSE conformant
+- Add GPL-2.0-or-later WITH Bison-exception-2.2
+- Add new file: AFL-2.1
+
 * Sun Jun 11 2023 Miroslav Suchý <msuchy@redhat.com> 1.23-1
 - Update public-domain-text.txt
 - Add new file: CECILL-2.1
