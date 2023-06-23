@@ -112,6 +112,20 @@ internal dataset to produce the corrected outputs.
 Currently, ScanCode version 31.2.1 is used.
 
 Non-approved OSI status information is not yet complete. More details will be added short-term.
+Please note in this context, that all OSI status details except `approved` represents unofficial information collected
+from mailing lists and other public available OSI-centric sources and is subject to interpretation. In the perspective
+of risk-based license assessment and OSI compliance the information is yet considered useful. The following table 
+summarizes and details the OSI status values:
+
+| OSI Status Value | Description                                                                                                                     | Official OSI Status |
+|:-----------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------|
+| not submitted    | The license appears on the non-approved licenses as [not submitted].                                                            | no                  |
+| submitted        | The license has been submitted or at least requested, but has not yet been further processed.                                   | no                  |
+| pending          | The license is in discussion / review. No decision is available yet.                                                            | no                  |
+| approved         | The license was officially approved by OSI.                                                                                     | yes                 |
+| withdrawn        | The license was withdrawn by the submitter (i.e. the license stuart).                                                           | no                  |
+| rejected         | The license was rejected by OSI. The license is either not valid license or does not conform to the OSI Open Source Definition. | no                  |
+| ineligible       | The terms are not considered a (software) license or show obvious conditions adverse to the OSI Open Source Definition.         | no                  |
 
 Regarding SPDX the latest version from https://github.com/spdx/license-list-data
 main branch is used to synchronize the {metæffekt}-universe.
