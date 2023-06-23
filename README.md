@@ -111,11 +111,13 @@ internal dataset to produce the corrected outputs.
 
 Currently, ScanCode version 31.2.1 is used.
 
-Non-approved OSI status information is not yet complete. More details will be added short-term.
-Please note in this context, that all OSI status details except `approved` represents unofficial information collected
-from mailing lists and other public available OSI-centric sources and is subject to interpretation. In the perspective
-of risk-based license assessment and OSI compliance the information is yet considered useful. The following table 
-summarizes and details the OSI status values:
+Non-approved OSI status information is not yet complete; more details will be added short-term.
+Please note in this context, that all OSI status details except `approved` convey unofficial information collected
+from mailing lists and other public available OSI-centric sources and are subject to interpretation. In the perspective
+of risk-based license assessment and evaluating OSI compliance of software, the information is yet considered useful to
+indicate potential issues. 
+
+The following table summarizes and details the OSI status values:
 
 | OSI Status Value | Description                                                                                                                     | Official OSI Status |
 |:-----------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------|

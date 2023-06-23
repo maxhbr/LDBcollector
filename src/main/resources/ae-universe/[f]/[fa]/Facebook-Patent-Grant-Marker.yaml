@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Facebook Patent Grant"
+canonicalName: "Facebook Patent Grant Marker"
 category: "Facebook Patent Grant"
-shortName: "Facebook-Patent-Grant"
+shortName: "Facebook-Patent-Grant-Marker"
 
 alternativeNames:
   - "Facebook Patent Grant"

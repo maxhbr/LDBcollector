@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Inner Net License v2.0"
-category: "Inner-Net-2.0"
-spdxIdentifier: "Inner-Net-2.0"
+canonicalName: "Inner Net License 2.0"
+category: "Inner-Net"
+shortName: "Inner-Net-2.0"
 
 alternativeNames:
   - "Inner Net License 2.00"
