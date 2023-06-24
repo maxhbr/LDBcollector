@@ -6,3 +6,5 @@ canonicalName: "X11 License (contributors agreement)"
 category: "X11"
 shortName: "X11-contributors-agreement"
 
+otherIds: 
+  - "scancode:compass"
