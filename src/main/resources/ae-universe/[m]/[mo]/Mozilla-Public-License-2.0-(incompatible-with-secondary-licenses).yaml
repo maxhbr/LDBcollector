@@ -6,9 +6,13 @@ canonicalName: "Mozilla Public License 2.0 (incompatible with secondary licenses
 category: "MPL"
 spdxIdentifier: "MPL-2.0-no-copyleft-exception"
 
+osiStatus: "approved"
+
 type: "expression"
 
 alternativeNames:
   - "MPL-2.0-no-copyleft-exception"
   - "Mozilla Public License 2.0 (no copyleft exception)"
 
+otherIds: 
+  - "osi:MPL-2.0"

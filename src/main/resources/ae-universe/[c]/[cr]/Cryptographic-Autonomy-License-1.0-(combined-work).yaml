@@ -7,6 +7,8 @@ category: "CAL-1.0 Combined Work Exception"
 shortName: "Cryptographic-Autonomy-License-1.0-Combined-Work-Exception"
 spdxIdentifier: "CAL-1.0-Combined-Work-Exception"
 
+osiStatus: "approved"
+
 type: "expression"
 
 alternativeNames:
@@ -14,3 +16,5 @@ alternativeNames:
   - "Cryptographic Autonomy License 1.0 (Combined Work Exception)"
   - "Cryptographic Autonomy License 1.0 (combined work)"
 
+otherIds: 
+  - "osi:CAL-1.0"

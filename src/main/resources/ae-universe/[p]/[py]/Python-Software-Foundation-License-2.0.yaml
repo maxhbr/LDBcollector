@@ -6,6 +6,8 @@ canonicalName: "Python Software Foundation License 2.0"
 category: "Python Software Foundation License"
 spdxIdentifier: "PSF-2.0"
 
+osiStatus: "approved"
+
 alternativeNames:
   - "Python Software Foundation License"
   - "PSF-2"
@@ -14,3 +16,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:psf-2.0"
+  - "osi:Python-2.0"

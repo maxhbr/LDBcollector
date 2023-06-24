@@ -8,6 +8,8 @@ spdxIdentifier: "HPND"
 
 openCoDEStatus: "approved"
 
+osiStatus: "approved"
+
 alternativeNames:
   - "Historic Permission Notice and Disclaimer"
   - "http://www.opensource.org/licenses/historical.php"
@@ -15,3 +17,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:historical"
+  - "osi:HPND"

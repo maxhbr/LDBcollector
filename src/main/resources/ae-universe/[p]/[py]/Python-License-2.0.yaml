@@ -8,7 +8,11 @@ spdxIdentifier: "Python-2.0"
 
 openCoDEStatus: "approved"
 
+osiStatus: "approved"
+
 alternativeNames:
   - "Python-2.0"
   - "Python License 2.0"
 
+otherIds: 
+  - "osi:Python-2.0"
