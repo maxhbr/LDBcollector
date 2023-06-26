@@ -10,7 +10,7 @@
 *.dll
 *.so
 *.dylib
-laas
+/laas
 
 # Test binary, built with `go test -c`
 *.test
