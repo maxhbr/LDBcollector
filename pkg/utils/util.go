@@ -15,7 +15,7 @@ func Converter(input models.LicenseJson) models.LicenseDB {
 		Shortname:       input.Shortname,
 		Fullname:        input.Fullname,
 		Text:            input.Text,
-		Url:             input.Fullname,
+		Url:             input.Url,
 		Copyleft:        input.Copyleft,
 		AddDate:         input.AddDate,
 		FSFfree:         input.FSFfree,

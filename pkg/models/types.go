@@ -56,7 +56,7 @@ type LicenseJson struct {
 // license retrieval operation.
 // It contains information that provides context and supplementary details
 // about the retrieved license data.
-type Meta struct {
+type PaginationMeta struct {
 	ResourceCount int `json:"resource_count"`
 	Page          int `json:"page,omitempty"`
 	PerPage       int `json:"per_page,omitempty"`
@@ -67,9 +67,9 @@ type Meta struct {
 // retrieving license information.
 // It is used to encapsulate license-related data in an organized manner.
 type LicenseResponse struct {
-	Status int         `json:"status"`
-	Data   []LicenseDB `json:"data"`
-	Meta   Meta        `json:"meta"`
+	Status int            `json:"status"`
+	Data   []LicenseDB    `json:"data"`
+	Meta   PaginationMeta `json:"paginationmeta"`
 }
 
 // The LicenseError struct represents an error response related to license operations.
@@ -89,7 +89,7 @@ type LicenseInput struct {
 	Shortname       string `json:"rf_shortname" binding:"required"`
 	Fullname        string `json:"rf_fullname" binding:"required"`
 	Text            string `json:"rf_text" binding:"required"`
-	Url             string `json:"rf_url" binding:"required"`
+	Url             string `json:"rf_url" `
 	AddDate         string `json:"rf_add_date"`
 	Copyleft        string `json:"rf_copyleft"`
 	FSFfree         string `json:"rf_FSFfree"`
@@ -118,9 +118,9 @@ type User struct {
 
 // UserResponse struct is representation of design API response of user.
 type UserResponse struct {
-	Status int    `json:"status"`
-	Data   []User `json:"data"`
-	Meta   Meta   `json:"meta"`
+	Status int            `json:"status"`
+	Data   []User         `json:"data"`
+	Meta   PaginationMeta `json:"paginationmeta"`
 }
 
 type SearchLicense struct {
