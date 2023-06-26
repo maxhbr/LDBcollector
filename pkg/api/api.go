@@ -188,3 +188,127 @@ func UpdateLicense(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 
 }
+
+func FilterLicense(c *gin.Context) {
+	SpdxId := c.Query("spdxid")
+	DetectorType := c.Query("detector_type")
+	GPLv2compatible := c.Query("gplv2compatible")
+	GPLv3compatible := c.Query("gplv3compatible")
+	marydone := c.Query("marydone")
+	active := c.Query("active")
+	OSIapproved := c.Query("osiapproved")
+	fsffree := c.Query("fsffree")
+	copyleft := c.Query("copyleft")
+	var license []models.LicenseDB
+	query := DB.Model(&license)
+
+	if SpdxId == "" && GPLv2compatible == "" && GPLv3compatible == "" && DetectorType == "" && marydone == "" && active == "" && fsffree == "" && OSIapproved == "" && copyleft == "" {
+		GetAllLicense(c)
+		return
+	}
+	if active != "" {
+		query = query.Where("active=?", active)
+	}
+
+	if fsffree != "" {
+		query = query.Where("fs_ffree=?", fsffree)
+	}
+
+	if OSIapproved != "" {
+		query = query.Where("os_iapproved=?", OSIapproved)
+	}
+
+	if copyleft != "" {
+		query = query.Where("copyleft=?", copyleft)
+	}
+
+	if SpdxId != "" {
+		query = query.Where("spdx_id=?", SpdxId)
+	}
+
+	if DetectorType != "" {
+		query = query.Where("detector_type=?", DetectorType)
+	}
+
+	if GPLv2compatible != "" {
+		query = query.Where("gp_lv2compatible=?", GPLv2compatible)
+	}
+
+	if GPLv3compatible != "" {
+		query = query.Where("gp_lv3compatible=?", GPLv3compatible)
+	}
+
+	if marydone != "" {
+		query = query.Where("marydone=?", marydone)
+	}
+
+	if err := query.Error; err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "incorrect query to search in the database",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	query.Find(&license)
+
+	res := models.LicenseResponse{
+		Data:   license,
+		Status: http.StatusOK,
+		Meta: models.Meta{
+			ResourceCount: len(license),
+		},
+	}
+	c.JSON(http.StatusOK, res)
+
+}
+
+func SearchInLicense(c *gin.Context) {
+	var input models.SearchLicense
+
+	if err := c.ShouldBindJSON(&input); err != nil {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "invalid json body",
+			Error:     err.Error(),
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+
+	var license []models.LicenseDB
+	query := DB.Model(&license)
+
+	if input.SearchType == "fuzzy" {
+		query = query.Where(fmt.Sprintf("%s ILIKE ?", input.Field), fmt.Sprintf("%%%s%%", input.SearchTerm))
+	} else if input.SearchType == "" || input.SearchType == "full_text_search" {
+		query = query.Where(input.Field+" @@ plainto_tsquery(?)", input.SearchTerm)
+
+	} else {
+		er := models.LicenseError{
+			Status:    http.StatusBadRequest,
+			Message:   "search algorithm doesn't exist",
+			Error:     "search algorithm with such name doesn't exists",
+			Path:      c.Request.URL.Path,
+			Timestamp: time.Now().Format(time.RFC3339),
+		}
+		c.JSON(http.StatusBadRequest, er)
+		return
+	}
+	query.Find(&license)
+
+	res := models.LicenseResponse{
+		Data:   license,
+		Status: http.StatusOK,
+		Meta: models.Meta{
+			ResourceCount: len(license),
+		},
+	}
+	c.JSON(http.StatusOK, res)
+
+}
