@@ -80,6 +80,11 @@ urlpatterns = [
         "license/<int:pk>/diff/", views.LicenseDiffView.as_view(), name="license_diff"
     ),
     path(
+        "license/<int:pk>/diff_update/<str:field>/",
+        views.LicenseDiffUpdateView.as_view(),
+        name="license_diff_update",
+    ),
+    path(
         "license/<int:license_id>/export/",
         views.Export1LicenseView.as_view(),
         name="export_license",

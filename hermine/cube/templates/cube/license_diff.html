@@ -38,7 +38,16 @@ SPDX-License-Identifier: AGPL-3.0-only
           <th>{{ field.label }}</th>
           <td>{{ field.ref }}</td>
           <td>{{ field.local }}</td>
-          <td><button class="button is-small">Update</button></td>
+          <td>
+            {% if perms.cube.change_license %}
+              <form method="POST"
+                    action="{% url "cube:license_diff_update" license.id field.name %}">
+                {% csrf_token %}
+                <input type="hidden" value="{{ field.form_field.value }}" name="{{ field.form_field.html_name }}" />
+                <button type="submit" class="button is-small">Update</button>
+              </form>
+            {% endif %}
+          </td>
         </tr>
       {% endfor %}
     </table>

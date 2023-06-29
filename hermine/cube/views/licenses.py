@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import (
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import ValidationError
 from django.db.models import Count
+from django.forms import modelform_factory
 from django.http import HttpResponse
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
@@ -157,9 +158,18 @@ class LicenseDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
         ref_object = License.objects.using("shared").get(spdx_id=self.object.spdx_id)
         context["diff"] = [
             {
+                "name": field,
                 "label": License._meta.get_field(field).verbose_name.capitalize(),
                 "ref": display_field(ref_object, field),
                 "local": display_field(self.object, field),
+                "form_field": next(
+                    iter(
+                        modelform_factory(License, fields=[field])(
+                            initial={field: getattr(ref_object, field)},
+                            instance=self.object,
+                        )
+                    )
+                ),
             }
             for field in LICENSE_SHARED_FIELDS
             if getattr(ref_object, field) != getattr(self.object, field)
@@ -189,6 +199,17 @@ class LicenseDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
         ]
 
         return context
+
+
+class LicenseDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_license"
+    model = License
+
+    def get_form_class(self):
+        return modelform_factory(License, fields=[self.kwargs["field"]])
+
+    def get_success_url(self):
+        return reverse("cube:license_diff", kwargs={"pk": self.object.pk})
 
 
 class PrintLicense(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
