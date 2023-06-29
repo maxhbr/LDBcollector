@@ -27,12 +27,12 @@ LICENSE_SHARED_FIELDS = (
 )
 
 OBLIGATION_SHARED_FIELDS = (
-    "generic__name",
     "name",
     "verbatim",
     "passivity",
     "trigger_expl",
     "trigger_mdf",
+    # treat generic.name as a special case
 )
 
 
@@ -62,7 +62,7 @@ def get_license_ref_dict(spdx_id):
     ref["obligations"] = list(
         Obligation.objects.using("shared")
         .filter(license__spdx_id=spdx_id)
-        .values(*OBLIGATION_SHARED_FIELDS)
+        .values("generic__name", *OBLIGATION_SHARED_FIELDS)
     )
     return ref
 
@@ -84,9 +84,11 @@ def license_reference_diff(lic) -> int:
     if ref is None:
         return -1
 
+    # Compare license fields
     if any(ref[key] != lic.__dict__[key] for key in LICENSE_SHARED_FIELDS):
         return 1
 
+    # Compare obligations count
     obligation_count = (
         lic.obligation_count
         if hasattr(lic, "obligation_count")
@@ -95,7 +97,9 @@ def license_reference_diff(lic) -> int:
     if len(ref["obligations"]) != obligation_count:
         return 1
 
+    # Compare obligations
     for obligation in lic.obligation_set.all():
+        # Find the corresponding obligation in the reference
         ref_obligation = next(
             (
                 ref_ob
@@ -109,11 +113,13 @@ def license_reference_diff(lic) -> int:
             return 1
 
         obligation_dict = obligation.__dict__
-        obligation_dict["generic"] = obligation.generic and obligation.generic.id
+        obligation_dict["generic__name"] = (
+            obligation.generic and obligation.generic.name
+        )
 
         if any(
             obligation_dict[key] != ref_obligation[key]
-            for key in OBLIGATION_SHARED_FIELDS
+            for key in ["generic__name", *OBLIGATION_SHARED_FIELDS]
         ):
             return 1
 

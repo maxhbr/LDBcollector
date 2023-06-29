@@ -44,7 +44,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                     action="{% url "cube:license_diff_update" license.id field.name %}">
                 {% csrf_token %}
                 <input type="hidden" value="{{ field.form_field.value }}" name="{{ field.form_field.html_name }}" />
-                <button type="submit" class="button is-small">Update</button>
+                <button type="submit" class="button is-small">Update local field</button>
               </form>
             {% endif %}
           </td>
@@ -65,7 +65,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <th>Local value</th>
         <th>Actions</th>
       </tr>
-      {% for obligation_name, sides, obligation_diff in obligations_diff %}
+      {% for obligation_name, sides, obligation_id, obligation_diff in obligations_diff %}
         {% if sides == "both" %}
           {% for field in obligation_diff %}
             <tr>
@@ -75,7 +75,16 @@ SPDX-License-Identifier: AGPL-3.0-only
               <th>{{ field.label }}</th>
               <td>{{ field.ref }}</td>
               <td>{{ field.local }}</td>
-              <td><button class="button is-small">Update local field</button></td>
+              <td>
+                {% if perms.cube.change_obligation %}
+                  <form method="POST"
+                        action="{% url "cube:obligation_diff_update" obligation_id field.name %}">
+                    {% csrf_token %}
+                    <input type="hidden" value="{{ field.form_field.value }}" name="{{ field.form_field.html_name }}" />
+                    <button type="submit" class="button is-small">Update local field</button>
+                  </form>
+                {% endif %}
+              </td>
             </tr>
           {% endfor %}
         {% else %}

@@ -109,6 +109,11 @@ urlpatterns = [
         views.ObligationDeleteView.as_view(),
         name="obligation_delete",
     ),
+    path(
+        "obligation/<int:pk>/diff_update/<str:field>/",
+        views.ObligationDiffUpdateView.as_view(),
+        name="obligation_diff_update",
+    ),
     path("generics/", views.GenericListView.as_view(), name="generics"),
     path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
     path("generic/add/", views.GenericCreateView.as_view(), name="generic_add"),

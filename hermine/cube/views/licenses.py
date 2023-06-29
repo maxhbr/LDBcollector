@@ -27,6 +27,7 @@ from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
+from cube.forms.licenses import ObligationGenericDiffForm
 from cube.models import License, Generic, Obligation
 from cube.utils.reference import (
     LICENSE_SHARED_FIELDS,
@@ -146,22 +147,22 @@ class LicenseDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     model = License
     template_name = "cube/license_diff.html"
 
+    def display_field(self, obj, field):
+        if hasattr(obj, f"get_{field}_display"):
+            return getattr(obj, f"get_{field}_display")()
+        else:
+            return getattr(obj, field)
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-
-        def display_field(obj, field):
-            if hasattr(obj, f"get_{field}_display"):
-                return getattr(obj, f"get_{field}_display")()
-            else:
-                return getattr(obj, field)
 
         ref_object = License.objects.using("shared").get(spdx_id=self.object.spdx_id)
         context["diff"] = [
             {
                 "name": field,
                 "label": License._meta.get_field(field).verbose_name.capitalize(),
-                "ref": display_field(ref_object, field),
-                "local": display_field(self.object, field),
+                "ref": self.display_field(ref_object, field),
+                "local": self.display_field(self.object, field),
                 "form_field": next(
                     iter(
                         modelform_factory(License, fields=[field])(
@@ -175,28 +176,63 @@ class LicenseDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
             if getattr(ref_object, field) != getattr(self.object, field)
         ]
 
-        context["obligations_diff"] = [
-            (
-                obligation.name if obligation is not None else ref.name,
-                "local" if not ref else "ref" if not obligation else "both",
-                [
+        context["obligations_diff"] = []
+        for obligation, ref in join_obligations(self.object, ref_object):
+            obligation_name = obligation.name if obligation is not None else ref.name
+            sides = "local" if not ref else "ref" if not obligation else "both"
+
+            if not (obligation and ref):
+                context["obligations_diff"].append((obligation_name, sides, None, None))
+                continue
+
+            fields = [
+                {
+                    "name": field,
+                    "label": Obligation._meta.get_field(
+                        field
+                    ).verbose_name.capitalize(),
+                    "ref": self.display_field(ref, field),
+                    "local": self.display_field(obligation, field),
+                    "form_field": next(
+                        iter(
+                            modelform_factory(Obligation, fields=[field])(
+                                initial={field: getattr(ref, field)},
+                                instance=self.object,
+                            )
+                        )
+                    ),
+                }
+                for field in OBLIGATION_SHARED_FIELDS
+                if (getattr(ref, field) != getattr(obligation, field))
+            ]
+
+            if (
+                ref.generic
+                and obligation.generic
+                and ref.generic.name != obligation.generic.name
+            ):
+                fields.append(
                     {
+                        "name": "generic",
                         "label": Obligation._meta.get_field(
-                            field
-                        ).verbose_name.capitalize()
-                        if field != "generic__name"
-                        else "Generic",
-                        "ref": display_field(ref, field),
-                        "local": display_field(obligation, field),
+                            "generic"
+                        ).verbose_name.capitalize(),
+                        "ref": ref.generic.name,
+                        "local": obligation.generic.name,
+                        "form_field": next(
+                            iter(
+                                ObligationGenericDiffForm(
+                                    initial={"generic": ref.generic},
+                                    instance=self.object,
+                                )
+                            )
+                        ),
                     }
-                    for field in OBLIGATION_SHARED_FIELDS
-                    if (getattr(ref, field) != getattr(obligation, field))
-                ]
-                if ref and obligation
-                else None,
+                )
+
+            context["obligations_diff"].append(
+                (obligation_name, sides, obligation.id, fields)
             )
-            for obligation, ref in join_obligations(self.object, ref_object)
-        ]
 
         return context
 
@@ -390,6 +426,20 @@ class ObligationDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteVi
 
     def get_success_url(self):
         return reverse("cube:license", args=[self.object.license.id])
+
+
+class ObligationDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_obligation"
+    model = Obligation
+    fields = ("verbatim",)
+
+    def get_success_url(self):
+        return reverse("cube:license_diff", args=[self.object.license.id])
+
+    def get_form_class(self):
+        if self.kwargs["field"] == "generic":
+            return ObligationGenericDiffForm
+        return modelform_factory(Obligation, fields=[self.kwargs["field"]])
 
 
 class GenericListView(
