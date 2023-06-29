@@ -121,6 +121,14 @@ urlpatterns = [
         "generic/<int:pk>/edit/", views.GenericUpdateView.as_view(), name="generic_edit"
     ),
     path(
+        "generic/<int:pk>/diff/", views.GenericDiffView.as_view(), name="generic_diff"
+    ),
+    path(
+        "generic/<int:pk>/diff_update/<str:field>/",
+        views.GenericDiffUpdateView.as_view(),
+        name="generic_diff_update",
+    ),
+    path(
         "export/licenses/", views.ExportLicensesView.as_view(), name="export_licenses"
     ),
     path(

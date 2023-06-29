@@ -33,6 +33,7 @@ from cube.utils.reference import (
     LICENSE_SHARED_FIELDS,
     OBLIGATION_SHARED_FIELDS,
     join_obligations,
+    GENERIC_SHARED_FIELDS,
 )
 from cube.views.mixins import SearchMixin, LicenseRelatedMixin
 
@@ -207,8 +208,8 @@ class LicenseDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
             ]
 
             if (
-                ref.generic
-                and obligation.generic
+                obligation.generic
+                and ref.generic
                 and ref.generic.name != obligation.generic.name
             ):
                 fields.append(
@@ -497,6 +498,54 @@ class GenericUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
 
     def get_success_url(self):
         return reverse("cube:generic", args=[self.object.id])
+
+
+class GenericDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+    permission_required = "cube.view_generic"
+    model = Generic
+    template_name = "cube/generic_diff.html"
+
+    def display_field(self, obj, field):
+        if hasattr(obj, f"get_{field}_display"):
+            return getattr(obj, f"get_{field}_display")()
+        else:
+            return getattr(obj, field)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        ref_object = Generic.objects.using("shared").get(name=self.object.name)
+        context["diff"] = [
+            {
+                "name": field,
+                "label": Generic._meta.get_field(field).verbose_name.capitalize(),
+                "ref": self.display_field(ref_object, field),
+                "local": self.display_field(self.object, field),
+                "form_field": next(
+                    iter(
+                        modelform_factory(Generic, fields=[field])(
+                            initial={field: getattr(ref_object, field)},
+                            instance=self.object,
+                        )
+                    )
+                ),
+            }
+            for field in GENERIC_SHARED_FIELDS
+            if getattr(ref_object, field) != getattr(self.object, field)
+        ]
+
+        return context
+
+
+class GenericDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_generic"
+    model = Generic
+
+    def get_success_url(self):
+        return reverse("cube:generic_diff", args=[self.object.id])
+
+    def get_form_class(self):
+        return modelform_factory(Generic, fields=[self.kwargs["field"]])
 
 
 class SharedReferenceView(LoginRequiredMixin, PermissionRequiredMixin, TemplateView):

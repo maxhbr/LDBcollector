@@ -1,0 +1,57 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{% extends "cube/cube.html" %}
+
+{% block title %}{{ generic.name }} - Reference comparaison{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:generics' %}">Generic obligations</a></li>
+    <li><a href="{% url "cube:generic" generic.id %}">{{ generic.name }}</a></li>
+    <li>Reference comparaison</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">{{ generic.name }}</p>
+  </div>
+{% endblock %}
+
+
+{% block content %}
+  <h3>Differences with reference data</h3>
+  {% if diff|length > 0 %}
+    <table class="table is-striped">
+      <tr>
+        <th>Field</th>
+        <th>Reference</th>
+        <th>Local value</th>
+        <th>Actions</th>
+      </tr>
+      {% for field in diff %}
+        <tr>
+          <th>{{ field.label }}</th>
+          <td>{{ field.ref }}</td>
+          <td>{{ field.local }}</td>
+          <td>
+            {% if perms.cube.change_license %}
+              <form method="POST"
+                    action="{% url "cube:generic_diff_update" generic.id field.name %}">
+                {% csrf_token %}
+                <input type="hidden" value="{{ field.form_field.value }}" name="{{ field.form_field.html_name }}" />
+                <button type="submit" class="button is-small">Update local field</button>
+              </form>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>No difference in generic obligation.</p>
+  {% endif %}
+{% endblock %}

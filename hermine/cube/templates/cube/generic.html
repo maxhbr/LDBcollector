@@ -44,6 +44,20 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block content %}
+  {% if generic.reference_diff != 0 %}
+    <div class="message is-info">
+      <div class="message-body">
+        <p>
+          {% if generic.reference_diff == 1 %}
+            Some values differ from reference data.
+            <a href="{% url "cube:generic_diff" generic.id %}"><b>Show me differences</b></a>.
+          {% elif generic.reference_diff == -1 %}
+            This generic obligation is absent from reference data.
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  {% endif %}
   <section class="card">
     <header class="card-header">
       <p class="card-header-title">
