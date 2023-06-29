@@ -122,7 +122,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                     {% elif license.reference_diff == -1 %}
                       <i title="Absent in shared reference">Local license</i>
                     {% else %}
-                      <b>Yes</b>
+                      <a href="{% url "cube:license_diff" license.id %}">See differences</a>
                     {% endif %}
                   </td>
                 </tr>
