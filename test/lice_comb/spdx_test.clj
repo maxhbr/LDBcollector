@@ -20,7 +20,7 @@
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [clojure.java.io            :as io]
             [lice-comb.test-boilerplate :refer [fixture]]
-            [lice-comb.spdx             :refer [fuzzy-match-name->license-ids fuzzy-match-uri->license-ids text->ids]]))
+            [lice-comb.spdx             :refer [fuzzy-match-name->license-ids fuzzy-match-uri->license-ids]]))
 
 (use-fixtures :once fixture)
 
@@ -114,25 +114,24 @@
 
 (deftest uri->license-ids-tests
   (testing "Nil, empty or blank uri"
-    (is (nil?                                 (fuzzy-match-uri->license-ids nil)))
-    (is (nil?                                 (fuzzy-match-uri->license-ids "")))
-    (is (nil?                                 (fuzzy-match-uri->license-ids "       ")))
-    (is (nil?                                 (fuzzy-match-uri->license-ids "\n")))
-    (is (nil?                                 (fuzzy-match-uri->license-ids "\t"))))
+    (is (nil?                                                (fuzzy-match-uri->license-ids nil)))
+    (is (nil?                                                (fuzzy-match-uri->license-ids "")))
+    (is (nil?                                                (fuzzy-match-uri->license-ids "       ")))
+    (is (nil?                                                (fuzzy-match-uri->license-ids "\n")))
+    (is (nil?                                                (fuzzy-match-uri->license-ids "\t"))))
   (testing "URIs that appear verbatim in the SPDX license list"
-    (is (= "Apache-2.0"                       (fuzzy-match-uri->license-ids "https://www.apache.org/licenses/LICENSE-2.0")))
-    (is (= "Apache-2.0"                       (fuzzy-match-uri->license-ids "http://www.apache.org/licenses/LICENSE-2.0.html")))
-    (is (= "Apache-2.0"                       (fuzzy-match-uri->license-ids "https://apache.org/licenses/LICENSE-2.0.txt")))
-    (is (= "Apache-2.0"                       (fuzzy-match-uri->license-ids "               https://www.apache.org/licenses/LICENSE-2.0             ")))   ; Test whitespace
-    (is (let [license-id (fuzzy-match-uri->license-ids "https://www.gnu.org/licenses/agpl.txt")]
-          (or (= "AGPL-3.0"      license-id)
-              (= "AGPL-3.0-only" license-id))))
-    (is (= "CC-BY-SA-4.0"                     (fuzzy-match-uri->license-ids "https://creativecommons.org/licenses/by-sa/4.0/legalcode")))
-    (is (= "GPL-2.0-with-classpath-exception" (fuzzy-match-uri->license-ids "https://www.gnu.org/software/classpath/license.html"))))
+    (is (= #{"Apache-2.0"}                                   (fuzzy-match-uri->license-ids "https://www.apache.org/licenses/LICENSE-2.0")))
+    (is (= #{"Apache-2.0"}                                   (fuzzy-match-uri->license-ids "http://www.apache.org/licenses/LICENSE-2.0.html")))
+    (is (= #{"Apache-2.0"}                                   (fuzzy-match-uri->license-ids "https://apache.org/licenses/LICENSE-2.0.txt")))
+    (is (= #{"Apache-2.0"}                                   (fuzzy-match-uri->license-ids "               http://apache.org/licenses/LICENSE-2.0             ")))   ; Test whitespace
+    (is (= #{"AGPL-3.0-or-later" "AGPL-3.0-only" "AGPL-3.0"} (fuzzy-match-uri->license-ids "https://www.gnu.org/licenses/agpl.txt")))
+    (is (= #{"CC-BY-SA-4.0"}                                 (fuzzy-match-uri->license-ids "https://creativecommons.org/licenses/by-sa/4.0/legalcode")))
+    (is (= #{"GPL-2.0-with-classpath-exception"}             (fuzzy-match-uri->license-ids "https://www.gnu.org/software/classpath/license.html"))))
   (testing "URIs that appear in licensey things, but aren't in the SPDX license list"
-    (is (= "Apache-2.0"                       (fuzzy-match-uri->license-ids "http://www.apache.org/licenses/LICENSE-2.0")))
-    (is (= "Apache-2.0"                       (fuzzy-match-uri->license-ids "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
+    (is (= #{"Apache-2.0"}                                   (fuzzy-match-uri->license-ids "http://www.apache.org/licenses/LICENSE-2.0")))
+    (is (= #{"Apache-2.0"}                                   (fuzzy-match-uri->license-ids "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
 
+(comment  ; We don't test text->ids, since it's been moved to clj-spdx, where it is far more extensively tested
 (defn- string-text->ids
   [s]
   (with-open [is (io/input-stream (.getBytes s "UTF-8"))]
@@ -155,3 +154,4 @@
     (is (= #{"AGPL-3.0"}     (string-text->ids "GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3, 19 November 2007")))
     (is (= #{"CC-BY-SA-4.0"} (string-text->ids "Creative Commons Attribution-ShareAlike\n4.0 International Public License")))
     (is (= #{"JSON"}         (string-text->ids "Copyright (c) 2002 JSON.org")))))
+)

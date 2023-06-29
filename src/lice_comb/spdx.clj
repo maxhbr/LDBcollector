@@ -17,36 +17,32 @@
 ;
 
 (ns lice-comb.spdx
-  "SPDX related functionality that isn't already provided by https://github.com/pmonks/clj-spdx"
+  "SPDX related functionality that isn't already provided by
+  https://github.com/pmonks/clj-spdx"
   (:require [clojure.string        :as s]
             [clojure.set           :as set]
             [clojure.java.io       :as io]
-            [clojure.reflect       :as cr]
-            [clojure.edn           :as edn]
             [clojure.tools.logging :as log]
             [spdx.licenses         :as sl]
             [spdx.exceptions       :as se]
             [spdx.matching         :as sm]
-            [lice-comb.data        :as lcd]
-            [lice-comb.utils       :as lcu]))
+            [spdx.expressions      :as sexp]
+            [lice-comb.impl.data   :as lcd]
+            [lice-comb.impl.utils  :as lcu]))
 
 ; The lists
 (def ^:private license-list-d   (delay (map sl/id->info (sl/ids))))
 (def ^:private exception-list-d (delay (map sl/id->info (sl/ids))))
 
 ; License name aliases
-(def ^:private aliases-uri (lcd/uri-for-data "/spdx/aliases.edn"))    ; ####TODO: UPGRADE THIS TO USE LicenseRef-lice-comb-public-domain INSTEAD OF NON-SPDX-Public-Domain
-(def ^:private aliases-d   (delay
-                             (try
-                               (edn/read-string (slurp aliases-uri))
-                               (catch Exception e
-                                 (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " aliases-uri ". Please check your internet connection and try again.") {} e))))))
+(def ^:private aliases-d (delay (lcd/load-edn-resource "lice_comb/spdx/aliases.edn")))
 
 (defn- name->license-ids
   "Returns the SPDX license identifier(s) (a set) for the given license name
   (matched case insensitively), or nil if there aren't any.
 
-  Note that SPDX license names are not guaranteed to be unique - see https://github.com/spdx/license-list-XML/blob/main/DOCS/license-fields.md"
+  Note that SPDX license names are not guaranteed to be unique - see
+  https://github.com/spdx/license-list-XML/blob/main/DOCS/license-fields.md"
   [name]
   (when-not (s/blank? name)
     (let [lname (s/trim (s/lower-case name))]
@@ -66,20 +62,32 @@
   [uri]
   (when-not (s/blank? uri)
     (let [suri (lcu/simplify-uri uri)]
-      (some-> (seq (map :id (filter #(some identity (map (fn [see-also] (s/starts-with? suri see-also)) (distinct (map lcu/simplify-uri (get-in % [:see-also :url])))))
+      (some-> (seq (map :id (filter #(some identity (map (fn [see-also] (s/starts-with? suri see-also)) (distinct (map lcu/simplify-uri (concat (:see-also %) (get-in % [:cross-refs :url]))))))
                                     @license-list-d)))
               set))))
 
+(def public-domain-license-id             "LicenseRef-lice-comb-PUBLIC-DOMAIN")
+(def ^:private unlisted-license-id-prefix "LicenseRef-lice-comb-UNLISTED")
+
+(defn unlisted-license-id
+  "Constructs a valid SPDX id (a LicenseRef specific to lice-comb) for an
+  unlisted license, using the given suffix."
+  [suffix]
+  (str unlisted-license-id-prefix (when-not (s/blank? suffix) (str "-" (s/replace (s/trim suffix) #"\s+" "-")))))
+
 (defn id->name
-  "Returns the name of the given license or exception identifier; either the
-  official SPDX license or exception name or (if the id is not a listed SPDX id
-  but is used by the library) an unofficial name. Returns the id as-is if unable
-  to determine a name."
+  "Returns the human readable name of the given license or exception identifier;
+  either the official SPDX license or exception name or (if the id is not a
+  listed SPDX id but is used by the library) an unofficial name. Returns the id
+  as-is if unable to determine a name."
   [id]
-  (cond (sl/listed-id? id)                                         (:name (sl/id->info id))
-        (se/listed-id? id)                                         (:name (se/id->info id))
-        (= (s/lower-case id) "licenseref-lice-comb-public-domain") "Public domain"
-        :else                                                      id))
+  (cond (sl/listed-id? id)                                                           (:name (sl/id->info id))
+        (se/listed-id? id)                                                           (:name (se/id->info id))
+        (= (s/lower-case id) (s/lower-case public-domain-license-id))                "Public domain"
+        (s/starts-with? (s/lower-case id) (s/lower-case unlisted-license-id-prefix)) (str "Unlisted"
+                                                                                       (when (> (count id) (count unlisted-license-id-prefix))
+                                                                                         (str " (" (s/replace (subs id (inc (count unlisted-license-id-prefix))) "-" " ") ")")))
+        :else                                                                        id))
 
 
 ; Index of alias regexes
@@ -92,23 +100,33 @@
 (def ^:private regexes-d       (delay (reverse (sort-by #(count %) (concat (keys @idx-regex-to-id-d) (keys @idx-regex-to-id-d))))))
 (def ^:private re-pattern-mem  (memoize re-pattern))   ; So we memomize re-pattern to save having to recompile the regex string representations every time we use them
 
+(defn- parse-expression-and-extract-ids
+  [s]
+  (when-let [expression (sexp/parse s)]
+    (sexp/extract-ids expression)))
+
 (defn fuzzy-match-name->license-ids
   "Fuzzily attempts to determine the SPDX license identifier(s) (a set) from the
   given name (a string), or nil if there aren't any.  This involves three steps:
-  1. checking if the name is actually an id (this is rare, but sometimes appears
-     in pom.xml files)
+  1. checking if the name is actually an SPDX expression (this is rare, but
+     sometimes an SPDX identifier (which is also a valid expression) appears in
+     a pom.xml file)
   2. looking up the name using name->license-ids
-  3. falling back on a manually maintained list of common name aliases: https://github.com/pmonks/lice-comb/blob/data/spdx/aliases.edn"
+  3. falling back on a manually maintained list of common name aliases:
+     https://github.com/pmonks/lice-comb/blob/data/spdx/aliases.edn"
   [name]
   (when-not (s/blank? name)
     (let [name (s/trim name)]
-      (if-let [list-id-match (sl/id->info name)]   ; First we exact match on the id, for those (rare) cases where someone has used an SPDX license id as the name (e.g. in a pom.xml file)
-        #{(:id list-id-match)}
-        (if-let [list-name-matches (name->license-ids name)]   ; Then we look up by name
+      ; 1. Parse the name as an SPDX exception, and if that succeeds, return all ids in the expression
+      (if-let [ids-in-expression (parse-expression-and-extract-ids name)]
+        ids-in-expression
+        ; 2. Then we look up by name
+        (if-let [list-name-matches (name->license-ids name)]
           list-name-matches
-          (if-let [re-name-matches (get @idx-regex-to-id-d (first (filter #(re-find (re-pattern-mem %) (s/lower-case name)) @regexes-d)))]   ; Then the last resort is to match on the regexes
+          ; 3. Then the last resort is to match on the name regexes
+          (if-let [re-name-matches (get @idx-regex-to-id-d (first (filter #(re-find (re-pattern-mem %) (s/lower-case name)) @regexes-d)))]
             re-name-matches
-            (log/warn "Unable to find a license for" (str "'" name "'"))))))))
+            (log/warn "Unable to find a listed SPDX license for" (str "'" name "'"))))))))
 
 (defmulti text->ids
   "Attempts to determine the SPDX license and/or exception identifier(s) (a set)
@@ -119,7 +137,7 @@
   * the caller is expected to close a Reader or InputStream passed to this
     function (e.g. using clojure.core/with-open)
   * you cannot pass a String representation of a filename to this method - you
-    should pass filenames to clojure.java.io/file first"
+    should pass filenames through clojure.java.io/file first"
   {:arglists '([text])}
   type)
 
@@ -132,7 +150,9 @@
 
 (defmethod text->ids java.io.Reader
   [r]
-  (text->ids (slurp r)))
+  (let [sw (java.io.StringWriter.)]
+    (io/copy r sw)
+    (text->ids (str sw))))
 
 (defmethod text->ids java.io.InputStream
   [is]

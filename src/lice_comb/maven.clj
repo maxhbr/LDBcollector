@@ -17,16 +17,16 @@
 ;
 
 (ns lice-comb.maven
-  "Maven related functionality, mostly related to POMs."
+  "Functionality related to finding and determining license information from
+  Maven POMs."
   (:require [clojure.string        :as s]
-            [clojure.set           :as set]
             [clojure.java.io       :as io]
             [clojure.data.xml      :as xml]
             [clojure.java.shell    :as sh]
             [clojure.tools.logging :as log]
             [xml-in.core           :as xi]
             [lice-comb.spdx        :as lcs]
-            [lice-comb.utils       :as lcu]))
+            [lice-comb.impl.utils  :as lcu]))
 
 (def ^:private local-maven-repo-d
   (delay
@@ -38,7 +38,8 @@
       (catch java.io.IOException _
         (str (System/getProperty "user.home") "/.m2/repository")))))
 
-(def ^:private remote-maven-repos #{"https://repo1.maven.org/maven2" "https://repo.clojars.org"})
+; TODO: make this configurable
+(def ^:private remote-maven-repos #{"https://repo.maven.apache.org/maven2" "https://repo.clojars.org"})
 
 (defn- uri-resolves?
   "Does the given URI resolve (i.e. does the resource it points to exist)?"
@@ -49,7 +50,9 @@
          (= 200 (.getResponseCode http)))))
 
 (defn pom-uri-for-gav
-  "Attempts to locate the POM for the given GAV, which is a URI that may point to a file in the local Maven repository or a remote Maven repository (e.g. on Maven Central or Clojars)."
+  "Attempts to locate the POM for the given GAV, which is a URI that may point
+  to a file in the local Maven repository or a remote Maven repository (e.g. on
+  Maven Central or Clojars)."
   ([{:keys [group-id artifact-id version]}] (pom-uri-for-gav group-id artifact-id version))
   ([group-id artifact-id version]
    (when (and (not (s/blank? group-id))
@@ -65,24 +68,31 @@
 (defn- licenses-from-pair
   "Attempts to determine the license(s) (a set) from a POM license name/URL pair."
   [{:keys [name url]}]
-  (if-let [licenses (some-> (seq (set/union (lcs/fuzzy-match-uri->license-ids  url)      ; Because clojure.set functions are idiotic wrt nils 🙄
-                                            (lcs/fuzzy-match-name->license-ids name)))
-                                 set)]
+  ; Attempt to find a match by URL first
+  (if-let [licenses (lcs/fuzzy-match-uri->license-ids url)]
     licenses
-    (when name #{(str "UNKNOWN (" name ")")})))   ; Last resort - return a dummy identifier that includes the name
+    ; Then match by name
+    (if-let [licenses (lcs/fuzzy-match-name->license-ids name)]
+      licenses
+      #{(lcs/unlisted-license-id name)})))  ; Last resort - return an unlisted identifier that includes the name (if any)
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
 (defmulti pom->ids
-  "Attempt to detect the license(s) reported in a pom.xml file. pom may be a java.io.InputStream, or anything that can be opened by clojure.java.io/input-stream."
+  "Attempt to detect the license(s) reported in a pom.xml file. pom may be a
+  java.io.InputStream, or anything that can be opened by clojure.java.io/input-stream.
+
+  Note: if an InputStream is provided, it's the caller's responsibility to open
+  and close it."
   {:arglists '([pom])}
   type)
 
+; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - so we look for both namespaced and non-namespaced versions of all tags here
 (defmethod pom->ids java.io.InputStream
   [pom-is]
   (let [pom-xml        (xml/parse pom-is)
         licenses       (seq (xi/find-all pom-xml [::pom/project ::pom/licenses ::pom/license]))
-        licenses-no-ns (seq (xi/find-all pom-xml [:project      :licenses      :license]))]        ; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - this case catches those
+        licenses-no-ns (seq (xi/find-all pom-xml [:project      :licenses      :license]))]
     (if (or licenses licenses-no-ns)
       ; Licenses block exists - process it
       (let [name-uri-pairs (lcu/nset (concat (lcu/map-pad #(hash-map :name (lcu/strim %1) :url (lcu/strim %2)) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))

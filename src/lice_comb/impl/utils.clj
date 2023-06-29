@@ -16,13 +16,16 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.utils
-  "General purpose utility fns that I seem to end up needing in every single project I write..."
+(ns lice-comb.impl.utils
+  "General purpose utility fns that I seem to end up needing in every single
+  project I write... Note: this namespace is not part of the public API of
+  lice-comb and may change without notice."
   (:require [clojure.string  :as s]
             [clojure.java.io :as io]))
 
 (defn map-pad
-  "Like map, but when presented with multiple collections of different lengths, 'pads out' the missing elements with nil rather than terminating early."
+  "Like map, but when presented with multiple collections of different lengths,
+  'pads out' the missing elements with nil rather than terminating early."
   [f & cs]
   (loop [result nil
          firsts (map first cs)
@@ -70,7 +73,8 @@
                  })))
 
 (defn simplify-uri
-  "Simplifies a URI (which can be a string, java.net.URL, or java.net.URI). Returns a string."
+  "Simplifies a URI (which can be a string, java.net.URL, or java.net.URI).
+  Returns a string."
   [uri]
   (when uri
     (s/replace (s/replace (s/lower-case (s/trim (str uri)))
@@ -78,7 +82,8 @@
                "://www." "://")))
 
 (defmulti filename
-  "Returns just the name component of the given file or path string, excluding any parents."
+  "Returns just the name component of the given file or path string, excluding
+  any parents."
   type)
 
 (defmethod filename nil
@@ -105,7 +110,8 @@
   (filename (.getPath url)))
 
 (defn getenv
-  "Obtain the given environment variable, returning default (or nil, if default is not provided) if it isn't set."
+  "Obtain the given environment variable, returning default (or nil, if default
+  is not provided) if it isn't set."
   ([var] (getenv var nil))
   ([var default]
     (let [val (System/getenv var)]

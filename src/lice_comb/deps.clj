@@ -17,29 +17,17 @@
 ;
 
 (ns lice-comb.deps
-  "deps (in tools.deps lib-map format) related functionality."
-  (:require [clojure.string  :as s]
-            [clojure.reflect :as cr]
-            [clojure.edn     :as edn]
-            [spdx.licenses   :as sl]
-            [lice-comb.maven :as lcm]
-            [lice-comb.files :as lcf]
-            [lice-comb.data  :as lcd]
-            [lice-comb.utils :as lcu]))
+  "Functionality related to finding and determining license information from
+  deps in tools.deps lib-map format."
+  (:require [clojure.string       :as s]
+            [spdx.licenses        :as sl]
+            [lice-comb.maven      :as lcm]
+            [lice-comb.files      :as lcf]
+            [lice-comb.impl.data  :as lcd]
+            [lice-comb.impl.utils :as lcu]))
 
-(def ^:private overrides-uri (lcd/uri-for-data "/deps/overrides.edn"))
-(def ^:private overrides-d   (delay
-                               (try
-                                 (edn/read-string (slurp overrides-uri))
-                                 (catch Exception e
-                                   (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " overrides-uri ". Please check your internet connection and try again.") {} e))))))
-
-(def ^:private fallbacks-uri (lcd/uri-for-data "/deps/fallbacks.edn"))
-(def ^:private fallbacks-d   (delay
-                               (try
-                                 (edn/read-string (slurp fallbacks-uri))
-                                 (catch Exception e
-                                   (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " fallbacks-uri ". Please check your internet connection and try again.") {} e))))))
+(def ^:private overrides-d (delay (lcd/load-edn-resource "lice_comb/deps/overrides.edn")))
+(def ^:private fallbacks-d (delay (lcd/load-edn-resource "lice_comb/deps/fallbacks.edn")))
 
 (defn- check-overrides
   "Checks if an override should be used for the given dep"
@@ -49,7 +37,8 @@
       (:licenses (get @overrides-d gav (get @overrides-d ga))))))  ; Lookup overrides both with and without the version
 
 (defn- check-fallbacks
-  "Checks if a fallback should be used for the given dep, given the set of detected ids"
+  "Checks if a fallback should be used for the given dep, given the set of
+  detected ids"
   [ga ids]
   (if (or (empty? ids)
           (every? #(not (sl/listed-id? %)) ids))
@@ -57,13 +46,15 @@
     ids))
 
 (defn- normalise-dep
-  "Normalises a dep, by removing any classifier suffixes from the artifact-id (e.g. the $blah suffix in com.foo/bar$blah)."
+  "Normalises a dep, by removing any classifier suffixes from the artifact-id
+  (e.g. the $blah suffix in com.foo/bar$blah)."
   [[ga info]]
   (when ga
     [(symbol (first (s/split (str ga) #"\$"))) info]))
 
 (defmulti dep->ids
-  "Attempt to detect the license(s) in a tools.deps style dep (a MapEntry or two-element sequence of [groupId/artifactId dep-info])."
+  "Attempt to detect the license(s) in a tools.deps style dep (a MapEntry or
+  two-element sequence of [groupId/artifactId dep-info])."
   {:arglists '([[ga info]])}
   (fn [[_ info]] (:deps/manifest info)))
 
@@ -99,7 +90,8 @@
   (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest (second dep)) "' for dependency " dep) {:dep dep})))
 
 (defn deps-licenses
-  "Attempt to detect the license(s) in a tools.deps 'lib map', returning a new lib map with the licenses assoc'ed in (in key :lice-comb/licenses)"
+  "Attempt to detect the license(s) in a tools.deps 'lib map', returning a new
+  lib map with the licenses assoc'ed in (in key :lice-comb/licenses)"
   [deps]
   (when deps
     (into {}
