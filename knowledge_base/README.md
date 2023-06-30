@@ -26,5 +26,5 @@ The knowledge base used in this tool includes "licenses_terms_63.csv", "compatib
 
 5. [github_license_usage.csv](./files%20used%20for%20program%20input/github_license_usage.csv) and [libraries.io_license_usage.csv](./files%20used%20for%20program%20input/libraries.io_license_usage.csv) are statistics of license usage from GitHub and Libraries.io.
 
-![image](https://github.com/osslab-pku/OSSLSelection/assets/24621557/b37a4793-9333-418f-b8cb-dc5b80505367)
+![image](https://github.com/osslab-pku/RecLicense/blob/master/appendix/check_compatibility.png)
     
