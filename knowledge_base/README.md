@@ -9,7 +9,7 @@
 5. [github_license_usage.csv](./files%20used%20for%20program%20input/github_license_usage.csv)、[libraries.io_license_usage.csv](./files%20used%20for%20program%20input/libraries.io_license_usage.csv)是根据GitHub和Libraries.io上许可证使用情况的统计数据。   
 
 
-![image](https://github.com/osslab-pku/OSSLSelection/assets/24621557/b37a4793-9333-418f-b8cb-dc5b80505367)
+![image](https://github.com/osslab-pku/RecLicense/blob/master/appendix/check_compatibility_cn.png)
     
 
 
@@ -20,7 +20,7 @@ The knowledge base used in this tool includes "licenses_terms_63.csv", "compatib
 1. [TermFeatures_63license_en.xlsx](./TermFeatures_63license_en.xlsx) describes the meanings of "basic information, preamble	definition, Copyright Grant, Petent Grant, Restriction of Trademark Rights, Copyleft, Network deployment, Modification Statement, Attribution Retention, Attribution Enhancement,	Express Acceptance, Patent Termination, Violation Termination,	Disclaimers, Proper Law, Instruction, Compatible Version,Secondary License,combinative compatibility of GPL" and compares the differences of these terms among 63 open source licenses.
 2. [licenses_terms_63.csv](./files%20used%20for%20program%20input/licenses_terms_63.csv) represents the features from "TermFeatures_63license_en.xlsx" in numerical values, where the values for copyright are -1, 0, and 1 (representing public domain, ambiguous copyright, and explicit copyright). The values for copyleft are 0, 1, 2, and 3 (representing permissive, file-level copyleft, library-level copyleft, and strict copyleft, respectively). The values for patent are -1, 0, and 1 (representing no patent grant, no mention, and explicit patent grant). The values for proper law are 0 and country (representing no mention and designated country jurisdiction). The values for compatible version and secondary license are 0 and license (representing no mention and compatible version license or compatible secondary license).
 
-3. [compatibility_63.csv](./files%20used%20for%20program%20input/compatibility_63.csv) is a list of the compatibility conclusions of 63 open source licenses based on the compatibility judgment logic of license terms indicated in the above "licenses_terms_63.csv". The algorithm used for determining compatibility is shown in [pseudocode](../appendix/compatibility_algorithm.pdf) and [Python implementation](https://github.com/osslab-pku/OSSLSelection/blob/main/OSSLSelection/scripts/compatibility_63.py).
+3. [compatibility_63.csv](./files%20used%20for%20program%20input/compatibility_63.csv) is a list of the compatibility conclusions of 63 open source licenses based on the compatibility judgment logic of license terms indicated in the above "licenses_terms_63.csv". The algorithm used for determining compatibility is shown in [pseudocode](../appendix/compatibility_algorithm.pdf) and [Python implementation](https://github.com/osslab-pku/RecLicense/blob/master/appendix/compatibility_63.py).
 
 4. [Compatibility_63licenses_en.xlsx](./Compatibility_63licenses_en.xlsx) explains the compatibility conclusions in the "compatibility_63.csv" with reference to the compatibility examples of licenses currently available on official websites, and provides related links for easy access.
 
