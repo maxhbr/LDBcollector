@@ -1,5 +1,5 @@
 # 文件介绍
-本工具用到的知识库包括：`licenses_terms_63.csv`、`compatibility_63.csv`、`github_license_usage.csv`、`libraries.io_license_usage.csv`, 它们都被置于[files for program input](./files%20for%20program%20input/
+知识库包括：`TermFeatures_63license_cn.xlsx`、`Compatibility_63licenses_cn.xlsx`、`licenses_terms_63.csv`、`compatibility_63.csv`、`github_license_usage.csv`、`libraries.io_license_usage.csv`, 其中后四者(`licenses_terms_63.csv`、`compatibility_63.csv`、`github_license_usage.csv`、`libraries.io_license_usage.csv`)它们都被置于[files for program input](./files%20for%20program%20input/
 )文件夹下，可直接作为程序输入。
 
 1. [TermFeatures_63license_cn.xlsx](./TermFeatures_63license_cn.xlsx)描述了“基本信息,序言,定义,版权授予,专利授予,商标权限制,限制性,网络部署,修改声明,保留归属,增强归属,明确接受许可,专利终止,违约终止,免责声明,准据法,使用说明,版本兼容,次级许可证,gpl组合兼容"等条款维度的含义，并对比了63个开源许可证在前述条款维度上的差异。   
@@ -14,7 +14,7 @@
 
 
 # Introduction
-The knowledge base used in this tool includes `licenses_terms_63.csv`, `compatibility_63.csv`, `github_license_usage.csv`, `libraries.io_license_usage.csv`. They are all placed in the [files for program input](./files%20for%20program%20input/) folder and can be used directly as program inputs.
+The knowledge base used in this tool includes `TermFeatures_63license_en.xlsx`, `Compatibility_63licenses_en.xlsx`, `licenses_terms_63.csv`, `compatibility_63.csv`, `github_license_usage.csv`, `libraries.io_license_usage.csv`. The latter four files(`licenses_terms_63.csv`, `compatibility_63.csv`, `github_license_usage.csv`, `libraries.io_license_usage.csv`) are all placed in the [files for program input](./files%20for%20program%20input/) folder and can be used directly as program inputs.
 
 
 1. [TermFeatures_63license_en.xlsx](./TermFeatures_63license_en.xlsx) describes the meanings of "basic information, preamble	definition, Copyright Grant, Petent Grant, Restriction of Trademark Rights, Copyleft, Network deployment, Modification Statement, Attribution Retention, Attribution Enhancement,	Express Acceptance, Patent Termination, Violation Termination,	Disclaimers, Proper Law, Instruction, Compatible Version,Secondary License,combinative compatibility of GPL" and compares the differences of these terms among 63 open source licenses.
