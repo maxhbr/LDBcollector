@@ -18,7 +18,7 @@ LicenseRec对开源软件项目的代码和依赖关系进行细粒度的许可�
 LicenseRec可以通过两种方式安装：使用Docker或手动。查看[DEPLOY.md](./DEPLOY.md)中的部署说明。
 
 ## 知识库
-[开源许可证知识库（knowledge_base）](./knowledge_base/)文件夹下，包含了开源许可证兼容性矩阵、条款特征矩阵、兼容性判定方法等资料。
+[开源许可证知识库（knowledge_base）](./knowledge_base/)文件夹下，包含了开源许可证兼容性矩阵、条款特征矩阵、兼容性判定方法等资料。包括为机器阅读而建立的文件（即本工具的输入），以及为人类理解而建立的文件（具有更多的解释）。
 
 ## 许可证和鸣谢
 
@@ -44,7 +44,7 @@ Upload your project and pick the best open source license on [licenserec.com](ht
 LicenseRec can be installed in two ways: using Docker or manually. Check deployment instructions in [DEPLOY.md](./DEPLOY.md).
 
 ## Knowledge base
-The [knowledge_base](./knowledge_base/) folder contains information on open source license compatibility matrix, term feature matrix, compatibility judgment method, and so on.
+The [knowledge_base](./knowledge_base/) folder contains information on open source license compatibility matrix, term feature matrix, compatibility judgment method, and so on. There are two groups of files: files for machine reading (i.e, input for this tool), and files for human understanding (with more explanation about license compatibility).
 
 ## License and Acknowledgements
 
