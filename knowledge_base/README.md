@@ -1,7 +1,9 @@
 # 文件介绍
 知识库包括两组文件：
 1，供人类阅读的文件（具有更好的解释性）: `TermFeatures_63license_cn.xlsx`、`Compatibility_63licenses_cn.xlsx`, 在此目录下。
+
 2，工机器阅读的文件（直接作为程序输入）：`licenses_terms_63.csv`、`compatibility_63.csv`、`github_license_usage.csv`、`libraries.io_license_usage.csv`，它们都被置于[files for program input](./files%20for%20program%20input/)文件夹下。
+
 
 * [TermFeatures_63license_cn.xlsx](./TermFeatures_63license_cn.xlsx)描述了“基本信息,序言,定义,版权授予,专利授予,商标权限制,限制性,网络部署,修改声明,保留归属,增强归属,明确接受许可,专利终止,违约终止,免责声明,准据法,使用说明,版本兼容,次级许可证,gpl组合兼容"等条款维度的含义，并对比了63个开源许可证在前述条款维度上的差异。   
 * [licenses_terms_63.csv](./files%20used%20for%20program%20input/licenses_terms_63.csv)是将`TermFeatures_63license_cn.xlsx`中的特征表示为数值，便于程序输入。其中，版权授予(copyright)取值为-1、0、1(分别表示公共领域、模糊授予版权、明确授予版权)；限制性(copyleft)取值为 0、1、2、3(分别表示宽松型、文件级弱限制型、库级弱限制型、限制型)；专利授权(patent)取值为-1、0、1(分别表示不授予专利权、无提及、明确授予专利权)；准据法(law)取值为 0、country(分别表示无提及、指定国家法律)；兼容版本(compatible_version)取值为 0、license(分别表示无提及、兼容版本的许可证)；次级许可证(secondary_license)取值为 0、license(分别表示无提及、兼容的次级许可证)；其余维度取值为 0、1(分别表示无提及、明确包含该条款)。  
@@ -17,6 +19,7 @@
 # Introduction
 We provide two groups of files for the knowledge base used in this tool. 
 1, files for human understanding: `TermFeatures_63license_en.xlsx`, `Compatibility_63licenses_en.xlsx`, which contain more information about license compatibility for human understanding.
+
 2, files for machine reading (input of the tool): `licenses_terms_63.csv`, `compatibility_63.csv`, `github_license_usage.csv`, `libraries.io_license_usage.csv`. The latter four files(`licenses_terms_63.csv`, `compatibility_63.csv`, `github_license_usage.csv`, `libraries.io_license_usage.csv`), are all placed in the [files for program input](./files%20for%20program%20input/) folder.
 
 
