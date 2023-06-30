@@ -1,5 +1,6 @@
 # 文件介绍
 知识库包括两组文件：
+
 1，供人类阅读的文件（具有更好的解释性）: `TermFeatures_63license_cn.xlsx`、`Compatibility_63licenses_cn.xlsx`, 在此目录下。
 
 2，工机器阅读的文件（直接作为程序输入）：`licenses_terms_63.csv`、`compatibility_63.csv`、`github_license_usage.csv`、`libraries.io_license_usage.csv`，它们都被置于[files for program input](./files%20for%20program%20input/)文件夹下。
@@ -18,6 +19,7 @@
 
 # Introduction
 We provide two groups of files for the knowledge base used in this tool. 
+
 1, files for human understanding: `TermFeatures_63license_en.xlsx`, `Compatibility_63licenses_en.xlsx`, which contain more information about license compatibility for human understanding.
 
 2, files for machine reading (input of the tool): `licenses_terms_63.csv`, `compatibility_63.csv`, `github_license_usage.csv`, `libraries.io_license_usage.csv`. The latter four files(`licenses_terms_63.csv`, `compatibility_63.csv`, `github_license_usage.csv`, `libraries.io_license_usage.csv`), are all placed in the [files for program input](./files%20for%20program%20input/) folder.
