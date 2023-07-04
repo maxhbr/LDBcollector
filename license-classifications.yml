@@ -116,6 +116,10 @@ categories:
       Whether the license includes a notice obligation or similar which can be fulfilled by adding
       the relevant copyright notices and the license text into the project/product notice file.
 
+- name: "property:mark-modifications"
+    description: >-
+      The licence includes an obligation to mark all modifications.
+
   - name: "property:antitivo-clause"
     description: >-
       This property means that the licensee/end user must be offered an opportunity to reinstall
