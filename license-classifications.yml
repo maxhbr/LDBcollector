@@ -4079,3 +4079,8 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/Zed.html
+  - id: "Zed"
+    categories:
+      - "free-restricted"
