@@ -116,7 +116,7 @@ categories:
       Whether the license includes a notice obligation or similar which can be fulfilled by adding
       the relevant copyright notices and the license text into the project/product notice file.
 
-- name: "property:mark-modifications"
+  - name: "property:mark-modifications"
     description: >-
       The licence includes an obligation to mark all modifications.
 
