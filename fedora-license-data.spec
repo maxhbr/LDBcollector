@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.24
+Version:        1.25
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,15 @@ make check-grammar
 
 
 %changelog
+* Thu Jul 06 2023 Miroslav Suchý <msuchy@redhat.com> 1.25-1
+- Add legacy attributes to HP-1986 - variant of legacy MIT license
+- Add dtoa
+- Add MulanPSL-2.0
+- Add Boehm-GC
+- add LLGPL
+- public-domain-text.txt: Add a perl-Barcode-Code128 dedication
+- Add new file: GPL-2.0-only_WITH_Asterisk-exception
+
 * Thu Jun 22 2023 Miroslav Suchý <msuchy@redhat.com> 1.24-1
 - Add new file: Inner-Net-2.0
 - Add Linux-man-pages-copyleft-2-para
