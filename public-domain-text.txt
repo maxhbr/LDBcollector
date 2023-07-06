@@ -112,6 +112,18 @@ text = '''
 Public domain use as you please
 '''
 
+package = dyninst
+location = https://github.com/dyninst/dyninst/blob/9696c64a3a1d6f41241d27c3c51820616490efa6/common/src/sha1.C#L33
+text = '''
+100% Public Domain
+'''
+
+package = dyninst
+location = https://github.com/dyninst/dyninst/blob/9696c64a3a1d6f41241d27c3c51820616490efa6/common/src/sha1.C#L37
+text = '''
+Still 100% Public Domain
+'''
+
 package = perl
 location = https://github.com/Perl/perl5/blob/blead/ext/SDBM_File/sdbm.h#L4-L5
 text = '''
