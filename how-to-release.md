@@ -15,8 +15,7 @@
 
 == Update legal docs
 
- * cd tools
- * ./create-docs.py ../data
+ * make legal-doc
  * cp not-allowed-licenses.adoc allowed-licenses.adoc all-allowed.adoc ~/projects/fedora-legal-docs/modules/ROOT/pages/
    alter the path to your fedora-legal-docs checkout
  * cd ~/projects/fedora-legal-docs/
