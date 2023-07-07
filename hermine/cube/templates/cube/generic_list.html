@@ -76,6 +76,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                     <th>Lead</th>
                     <th>Nb of licenses</th>
                     <th>Passivity</th>
+                    <th>Local differences</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -87,17 +88,24 @@ SPDX-License-Identifier: AGPL-3.0-only
                       <td>{{generic.team.name}}</td>
                       <td>{{ generic.obligation_set.all|length }}</td>
                       <td>{{ generic.passivity}}</td>
+                      <td>
+                        {% if not generic.reference_diff %}
+                          No
+                        {% elif generic.reference_diff == -1 %}
+                          <i title="Absent in shared reference">Local</i>
+                        {% else %}
+                          <a href="{% url "cube:generic_diff" generic.id %}">See differences</a>>
+                        {% endif %}
+                      </td>
                       <td class="is-actions-cell">
-                        <div class="buttons is-right">
-                          <a class="button is-small" type="button" href="{% url 'cube:generic' generic.id %}">
-                            <span class="icon"><i class="fas fa-eye"></i></span>
+                        <a href="{% url 'cube:generic' generic.id %}">
+                          <span class="icon"><i class="fas fa-eye"></i></span>
+                        </a>
+                        {% if perms.cube.change_generic %}
+                          | <a href="{% url "cube:generic_edit" generic.id %}" target="_blank" type="button">
+                            <span class="icon"><i class="fas fa-edit"></i></span>
                           </a>
-                          {% if perms.cube.change_generic %}
-                            <a class="button is-small " href="{% url "cube:generic_edit" generic.id %}" target="_blank" type="button">
-                              <span class="icon"><i class="fas fa-edit"></i></span>
-                            </a>
-                          {% endif %}
-                        </div>
+                        {% endif %}
                       </td>
                     </tr>
                   {% endfor %}
@@ -144,6 +152,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                     <th>Lead</th>
                     <th>Nb of licenses</th>
                     <th>Passivity</th>
+                    <th>Local differences</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -154,18 +163,25 @@ SPDX-License-Identifier: AGPL-3.0-only
                       <td>{{generic.get_metacategory_display}}</td>
                       <td>{{generic.team.name}}</td>
                       <td>{{ generic.obligation_set.all|length }}</td>
-                      <td>{{ generic.passivity}}</td>
+                      <td>{{ generic.passivity }}</td>
+                      <td>
+                        {% if not generic.reference_diff %}
+                          No
+                        {% elif generic.reference_diff == -1 %}
+                          <i title="Absent in shared reference">Local</i>
+                        {% else %}
+                          <a href="{% url "cube:generic_diff" generic.id %}">See differences</a>>
+                        {% endif %}
+                      </td>
                       <td class="is-actions-cell">
-                        <div class="buttons is-right">
-                          <a class="button is-small" type="button" href="{% url 'cube:generic' generic.id %}">
-                            <span class="icon"><i class="fas fa-eye"></i></span>
+                        <a href="{% url 'cube:generic' generic.id %}">
+                          <span class="icon"><i class="fas fa-eye"></i></span>
+                        </a>
+                        {% if perms.cube.change_generic %}
+                          | <a href="{% url "cube:generic_edit" generic.id %}" target="_blank" type="button">
+                            <span class="icon"><i class="fas fa-edit"></i></span>
                           </a>
-                          {% if perms.cube.change_generic %}
-                            <a class="button is-small" href="{% url "cube:generic_edit" generic.id %}" target="_blank" type="button">
-                              <span class="icon"><i class="fas fa-edit"></i></span>
-                            </a>
-                          {% endif %}
-                        </div>
+                        {% endif %}
                       </td>
                     </tr>
                   {% endfor %}

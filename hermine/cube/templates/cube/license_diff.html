@@ -1,0 +1,108 @@
+<!--
+SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{% extends "cube/cube.html" %}
+
+{% block title %}{{ license.long_name }} - Reference comparaison{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
+    <li><a href="{% url "cube:license" license.id %}">{{ license.spdx_id }}</a></li>
+    <li>Reference comparaison</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <div class="hero-body">
+    <p class="title">{{ license.long_name }}</p>
+  </div>
+{% endblock %}
+
+
+{% block content %}
+  <h3>License analysis</h3>
+  {% if diff|length > 0 %}
+    <table class="table is-striped">
+      <tr>
+        <th>Field</th>
+        <th>Reference</th>
+        <th>Local value</th>
+        <th>Actions</th>
+      </tr>
+      {% for field in diff %}
+        <tr>
+          <th>{{ field.label }}</th>
+          <td>{{ field.ref }}</td>
+          <td>{{ field.local }}</td>
+          <td>
+            {% if perms.cube.change_license %}
+              <form method="POST"
+                    action="{% url "cube:license_diff_update" license.id field.name %}">
+                {% csrf_token %}
+                <input type="hidden" value="{{ field.form_field.value }}" name="{{ field.form_field.html_name }}" />
+                <button type="submit" class="button is-small">Update local field</button>
+              </form>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>No difference in license analysis.</p>
+  {% endif %}
+
+  <h3>Obligations</h3>
+  {% if obligations_diff|length > 0 %}
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Field</th>
+        <th>Reference</th>
+        <th>Local value</th>
+        <th>Actions</th>
+      </tr>
+      {% for obligation_name, sides, obligation_id, obligation_diff in obligations_diff %}
+        {% if sides == "both" %}
+          {% for field in obligation_diff %}
+            <tr>
+              {% if forloop.first %}
+                <th rowspan="{{ obligation_diff|length }}">{{ obligation_name }}</th>
+              {% endif %}
+              <th>{{ field.label }}</th>
+              <td>{{ field.ref }}</td>
+              <td>{{ field.local }}</td>
+              <td>
+                {% if perms.cube.change_obligation %}
+                  <form method="POST"
+                        action="{% url "cube:obligation_diff_update" obligation_id field.name %}">
+                    {% csrf_token %}
+                    <input type="hidden" value="{{ field.form_field.value }}" name="{{ field.form_field.html_name }}" />
+                    <button type="submit" class="button is-small">Update local field</button>
+                  </form>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        {% else %}
+          <tr>
+            <th>{{ obligation_name }}</th>
+            <td></td>
+            {% if sides == "ref" %}
+              <td><em>Only in reference</em></td><td></td>
+              <td></td>
+            {% else %}
+              <td></td><td><em>Only in local database</em></td>
+              <td></td>
+            {% endif %}
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>No difference found</p>
+  {% endif %}
+{% endblock %}

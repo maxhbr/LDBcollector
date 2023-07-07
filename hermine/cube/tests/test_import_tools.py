@@ -117,6 +117,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
         count = Generic.objects.all().count()
         team_count = Team.objects.all().count()
         export = export_generics(indent=True)
+        Obligation.objects.all().delete()
         Generic.objects.all().delete()
         Team.objects.all().delete()
         handle_generics_json(export)
@@ -129,6 +130,7 @@ class ImportTestCase(ForceLoginMixin, TestCase):
     def test_export_import_generics_pages(self):
         res = self.client.get(reverse("cube:export_generics"))
         self.assertEqual(res.status_code, 200)
+        Obligation.objects.all().delete()
         Generic.objects.all().delete()
         res = self.client.post(
             reverse("cube:generics"),
@@ -142,14 +144,14 @@ class ImportTestCase(ForceLoginMixin, TestCase):
 
     def test_import_examples(self):
         self.assertEqual(License.objects.all().count(), 3)
-        self.assertEqual(Obligation.objects.all().count(), 13)
+        self.assertEqual(Obligation.objects.all().count(), 14)
         with open("../examples/data/Example_generic_obligations.json") as f:
             handle_generics_json(f)
         with open("../examples/data/Example_licences.json") as f:
             handle_licenses_json(f)
         self.assertEqual(Generic.objects.all().count(), 18)
         self.assertEqual(License.objects.all().count(), 10)
-        self.assertEqual(Obligation.objects.all().count(), 57)
+        self.assertEqual(Obligation.objects.all().count(), 58)
 
 
 class ImportSBOMTestCase(TestCase):

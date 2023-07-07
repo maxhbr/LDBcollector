@@ -77,6 +77,14 @@ urlpatterns = [
     ),
     path("license/add/", views.LicenseAddView.as_view(), name="license_add"),
     path(
+        "license/<int:pk>/diff/", views.LicenseDiffView.as_view(), name="license_diff"
+    ),
+    path(
+        "license/<int:pk>/diff_update/<str:field>/",
+        views.LicenseDiffUpdateView.as_view(),
+        name="license_diff_update",
+    ),
+    path(
         "license/<int:license_id>/export/",
         views.Export1LicenseView.as_view(),
         name="export_license",
@@ -101,11 +109,24 @@ urlpatterns = [
         views.ObligationDeleteView.as_view(),
         name="obligation_delete",
     ),
+    path(
+        "obligation/<int:pk>/diff_update/<str:field>/",
+        views.ObligationDiffUpdateView.as_view(),
+        name="obligation_diff_update",
+    ),
     path("generics/", views.GenericListView.as_view(), name="generics"),
     path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
     path("generic/add/", views.GenericCreateView.as_view(), name="generic_add"),
     path(
         "generic/<int:pk>/edit/", views.GenericUpdateView.as_view(), name="generic_edit"
+    ),
+    path(
+        "generic/<int:pk>/diff/", views.GenericDiffView.as_view(), name="generic_diff"
+    ),
+    path(
+        "generic/<int:pk>/diff_update/<str:field>/",
+        views.GenericDiffUpdateView.as_view(),
+        name="generic_diff_update",
     ),
     path(
         "export/licenses/", views.ExportLicensesView.as_view(), name="export_licenses"

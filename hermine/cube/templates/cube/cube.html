@@ -196,6 +196,18 @@ SPDX-License-Identifier: MIT
                 </a>
               </li>
             {% endif %}
+            {% if perms.cube.view_license %}
+              <li>
+                <a href="{% url 'cube:shared_reference' %}" class="has-icon">
+                  <span class="icon">
+                    <i class="fas fa-share-alt">
+                    </i>
+                  </span>
+                  <span class="menu-item-label">Shared reference
+                  </span>
+                </a>
+              </li>
+            {% endif %}
           </ul>
           {% if user.is_staff %}
             <p class="menu-label">Tools

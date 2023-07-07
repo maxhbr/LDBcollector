@@ -8,6 +8,8 @@ from django.contrib.auth.decorators import (
 )
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import ValidationError
+from django.db.models import Count
+from django.forms import modelform_factory
 from django.http import HttpResponse
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
@@ -25,7 +27,14 @@ from odf.style import Style, TextProperties, ParagraphProperties
 from odf.text import H, P, Span
 
 from cube.forms.importers import ImportLicensesForm, ImportGenericsForm
+from cube.forms.licenses import ObligationGenericDiffForm
 from cube.models import License, Generic, Obligation
+from cube.utils.reference import (
+    LICENSE_SHARED_FIELDS,
+    OBLIGATION_SHARED_FIELDS,
+    join_obligations,
+    GENERIC_SHARED_FIELDS,
+)
 from cube.views.mixins import SearchMixin, LicenseRelatedMixin
 
 
@@ -62,6 +71,13 @@ class LicensesListView(
     success_url = reverse_lazy("cube:licenses")
     search_fields = ("long_name", "spdx_id")
     template_name = "cube/license_list.html"
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        qs = qs.annotate(obligation_count=Count("obligation")).prefetch_related(
+            "obligation_set", "obligation_set__generic"
+        )
+        return qs
 
     @method_decorator(
         permission_required_decorator("cube.import_license", raise_exception=True)
@@ -125,6 +141,112 @@ class LicenseAddView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
         "verbatim",
     ]
     template_name = "cube/license_create.html"
+
+
+class LicenseDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+    permission_required = "cube.view_license"
+    model = License
+    template_name = "cube/license_diff.html"
+
+    def display_field(self, obj, field):
+        if hasattr(obj, f"get_{field}_display"):
+            return getattr(obj, f"get_{field}_display")()
+        else:
+            return getattr(obj, field)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        ref_object = License.objects.using("shared").get(spdx_id=self.object.spdx_id)
+        context["diff"] = [
+            {
+                "name": field,
+                "label": License._meta.get_field(field).verbose_name.capitalize(),
+                "ref": self.display_field(ref_object, field),
+                "local": self.display_field(self.object, field),
+                "form_field": next(
+                    iter(
+                        modelform_factory(License, fields=[field])(
+                            initial={field: getattr(ref_object, field)},
+                            instance=self.object,
+                        )
+                    )
+                ),
+            }
+            for field in LICENSE_SHARED_FIELDS
+            if getattr(ref_object, field) != getattr(self.object, field)
+        ]
+
+        context["obligations_diff"] = []
+        for obligation, ref in join_obligations(self.object, ref_object):
+            obligation_name = obligation.name if obligation is not None else ref.name
+            sides = "local" if not ref else "ref" if not obligation else "both"
+
+            if not (obligation and ref):
+                context["obligations_diff"].append((obligation_name, sides, None, None))
+                continue
+
+            fields = [
+                {
+                    "name": field,
+                    "label": Obligation._meta.get_field(
+                        field
+                    ).verbose_name.capitalize(),
+                    "ref": self.display_field(ref, field),
+                    "local": self.display_field(obligation, field),
+                    "form_field": next(
+                        iter(
+                            modelform_factory(Obligation, fields=[field])(
+                                initial={field: getattr(ref, field)},
+                                instance=self.object,
+                            )
+                        )
+                    ),
+                }
+                for field in OBLIGATION_SHARED_FIELDS
+                if (getattr(ref, field) != getattr(obligation, field))
+            ]
+
+            if (
+                obligation.generic
+                and ref.generic
+                and ref.generic.name != obligation.generic.name
+            ):
+                fields.append(
+                    {
+                        "name": "generic",
+                        "label": Obligation._meta.get_field(
+                            "generic"
+                        ).verbose_name.capitalize(),
+                        "ref": ref.generic.name,
+                        "local": obligation.generic.name,
+                        "form_field": next(
+                            iter(
+                                ObligationGenericDiffForm(
+                                    initial={"generic": ref.generic},
+                                    instance=self.object,
+                                )
+                            )
+                        ),
+                    }
+                )
+
+            context["obligations_diff"].append(
+                (obligation_name, sides, obligation.id, fields)
+            )
+
+        return context
+
+
+class LicenseDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_license"
+    model = License
+
+    def get_form_class(self):
+        return modelform_factory(License, fields=[self.kwargs["field"]])
+
+    def get_success_url(self):
+        return reverse("cube:license_diff", kwargs={"pk": self.object.pk})
 
 
 class PrintLicense(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
@@ -307,6 +429,20 @@ class ObligationDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteVi
         return reverse("cube:license", args=[self.object.license.id])
 
 
+class ObligationDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_obligation"
+    model = Obligation
+    fields = ("verbatim",)
+
+    def get_success_url(self):
+        return reverse("cube:license_diff", args=[self.object.license.id])
+
+    def get_form_class(self):
+        if self.kwargs["field"] == "generic":
+            return ObligationGenericDiffForm
+        return modelform_factory(Obligation, fields=[self.kwargs["field"]])
+
+
 class GenericListView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
@@ -362,6 +498,54 @@ class GenericUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
 
     def get_success_url(self):
         return reverse("cube:generic", args=[self.object.id])
+
+
+class GenericDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+    permission_required = "cube.view_generic"
+    model = Generic
+    template_name = "cube/generic_diff.html"
+
+    def display_field(self, obj, field):
+        if hasattr(obj, f"get_{field}_display"):
+            return getattr(obj, f"get_{field}_display")()
+        else:
+            return getattr(obj, field)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        ref_object = Generic.objects.using("shared").get(name=self.object.name)
+        context["diff"] = [
+            {
+                "name": field,
+                "label": Generic._meta.get_field(field).verbose_name.capitalize(),
+                "ref": self.display_field(ref_object, field),
+                "local": self.display_field(self.object, field),
+                "form_field": next(
+                    iter(
+                        modelform_factory(Generic, fields=[field])(
+                            initial={field: getattr(ref_object, field)},
+                            instance=self.object,
+                        )
+                    )
+                ),
+            }
+            for field in GENERIC_SHARED_FIELDS
+            if getattr(ref_object, field) != getattr(self.object, field)
+        ]
+
+        return context
+
+
+class GenericDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_generic"
+    model = Generic
+
+    def get_success_url(self):
+        return reverse("cube:generic_diff", args=[self.object.id])
+
+    def get_form_class(self):
+        return modelform_factory(Generic, fields=[self.kwargs["field"]])
 
 
 class SharedReferenceView(LoginRequiredMixin, PermissionRequiredMixin, TemplateView):
