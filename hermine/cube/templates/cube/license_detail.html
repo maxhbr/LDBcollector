@@ -24,7 +24,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <span class="icon">
         <i class="fas fa-edit"></i>
       </span>
-      <span>Edit this license</span>
+      <span>Edit or duplicate</span>
     </a>
   {% endif %}
 
@@ -292,7 +292,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <div class="card">
           <header class="card-header level">
             <div class="card-header-title level-left">
-              <p level-item>{{ obligation.name }} {% if obligation.passivity %}({{ obligation.passivity }}){% endif %}</p>
+              <p>{{ obligation.name }} {% if obligation.passivity %}({{ obligation.passivity }}){% endif %}</p>
             </div>
             <div class="level-right">
               <div class="buttons has-addons level-item">
