@@ -37,7 +37,7 @@ class BaseHermineAPITestCase(BaseAPITestCase):
         url = "/api/components/"
         data = {
             "name": "test_component_beta",
-            "package_repo": "npm",
+            "purl_type": "npm",
             "description": "TestComponent. To be deleted;",
             "programming_language": "javascript",
             "spdx_expression": "",
@@ -51,7 +51,7 @@ class BaseHermineAPITestCase(BaseAPITestCase):
         url = "/api/components/"
         data = {
             "name": "test_component_beta_other",
-            "package_repo": "composer",
+            "purl_type": "composer",
             "description": "Other TestComponent. To be deleted too;",
             "programming_language": "PHP",
             "spdx_expression": "",

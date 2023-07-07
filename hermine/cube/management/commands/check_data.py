@@ -48,7 +48,7 @@ class Command(BaseCommand):
                     unique_components_count == 1
                     and (
                         c.name == component_details[1]
-                        or c.package_repo == component_details[0]
+                        or c.purl_type == component_details[0]
                     )
                 ):
                     continue
@@ -63,13 +63,12 @@ class Command(BaseCommand):
                         if fix:
                             c.name = component_details[1]
                         changes += 1
-                    if c.package_repo != component_details[0]:
-                        report += (
-                            f"package_repo: {c.package_repo} -> "
-                            + self.style.NOTICE(f"{component_details[0]}\n")
+                    if c.purl_type != component_details[0]:
+                        report += f"purl_type: {c.purl_type} -> " + self.style.NOTICE(
+                            f"{component_details[0]}\n"
                         )
                         if fix:
-                            c.package_repo = component_details[0]
+                            c.purl_type = component_details[0]
                         changes += 1
                     if fix:
                         try:
@@ -78,7 +77,7 @@ class Command(BaseCommand):
                         except IntegrityError:
                             c = Component.objects.get(
                                 name=component_details[1],
-                                package_repo=component_details[0],
+                                purl_type=component_details[0],
                             )
                             Version.objects.filter(
                                 pk__in=[v.id for v in component_versions]
@@ -90,7 +89,7 @@ class Command(BaseCommand):
                     report += "type: " + self.style.ERROR(component_details[0] + "\n")
                     if fix:
                         c = Component.objects.create(
-                            name=component_details[1], package_repo=component_details[0]
+                            name=component_details[1], purl_type=component_details[0]
                         )
                         Version.objects.filter(
                             pk__in=[v.id for v in component_versions]

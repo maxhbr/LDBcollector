@@ -34,7 +34,7 @@ class ComponentTestCase(TestCase):
             component=component, version_number="1", purl="pkg:npm/namespace/package@1"
         )
         component.refresh_from_db()
-        self.assertEqual(component.package_repo, "npm")
+        self.assertEqual(component.purl_type, "npm")
 
 
 class DefaultPermissionTestCase(TestCase):

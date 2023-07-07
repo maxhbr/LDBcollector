@@ -74,7 +74,7 @@ def import_ort_evaluated_model_json_file(
         purl = PackageURL.from_string(current_purl)
         component, component_created = Component.objects.get_or_create(
             name=f"{purl.namespace}/{purl.name}" if purl.namespace else purl.name,
-            package_repo=purl.type,
+            purl_type=purl.type,
             defaults={
                 "description": package.get("description", ""),
                 "homepage_url": package.get("homepage_url", ""),

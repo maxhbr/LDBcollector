@@ -42,7 +42,7 @@
     "pk": 2,
     "fields": {
         "name": "test_component_alpha",
-        "package_repo": "npm",
+        "purl_type": "npm",
         "description": "This is a test description",
         "programming_language": "javascript",
         "spdx_expression": "",
@@ -55,7 +55,7 @@
     "pk": 3,
     "fields": {
         "name": "test_component_beta",
-        "package_repo": "npm",
+        "purl_type": "npm",
         "description": "Please delete meeeee",
         "programming_language": "javascript",
         "spdx_expression": "",

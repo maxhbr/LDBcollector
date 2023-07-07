@@ -112,7 +112,7 @@ class APICRUDTests(BaseHermineAPITestCase):
         self.assertEqual(r.status_code, 200)
 
     def test_post_retrieve_component_filter(self):
-        """Test to filter Components list on name and package_repo"""
+        """Test to filter Components list on name and purl_type"""
         r = self.create_component()
         self.assertEqual(r.status_code, 201)
 
@@ -124,7 +124,7 @@ class APICRUDTests(BaseHermineAPITestCase):
         self.assertEqual(r.status_code, 200)
         self.assertEqual(r.json()["count"], 2)
 
-        url = "/api/components/?name=test_component_beta_other&package_repo=composer"
+        url = "/api/components/?name=test_component_beta_other&purl_type=composer"
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
         self.assertEqual(r.json()["count"], 1)
@@ -134,12 +134,12 @@ class APICRUDTests(BaseHermineAPITestCase):
         self.assertEqual(r.status_code, 200)
         self.assertEqual(r.json()["count"], 1)
 
-        url = "/api/components/?package_repo=composer"
+        url = "/api/components/?purl_type=composer"
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
         self.assertEqual(r.json()["count"], 1)
 
-        url = "/api/components/?name=test_component_beta_other&package_repo=npm"
+        url = "/api/components/?name=test_component_beta_other&purl_type=npm"
         r = self.client.get(url)
         self.assertEqual(r.status_code, 200)
         self.assertEqual(r.json()["count"], 0)

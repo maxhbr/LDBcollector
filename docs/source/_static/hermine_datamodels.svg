@@ -131,7 +131,7 @@
 <text text-anchor="start" x="1688" y="-819.1" font-family="Roboto" font-size="8.00">CharField</text>
 <text text-anchor="start" x="1726" y="-819.1" font-family="Roboto" font-size="8.00"> &#160;&#160;&#160;&#160;&#160;</text>
 <text text-anchor="start" x="1544" y="-806.1" font-family="Roboto" font-size="8.00"> &#160;&#160;&#160;&#160;&#160;</text>
-<text text-anchor="start" x="1558" y="-806.1" font-family="Roboto" font-size="8.00" fill="#7b7b7b">package_repo</text>
+<text text-anchor="start" x="1558" y="-806.1" font-family="Roboto" font-size="8.00" fill="#7b7b7b">purl_type</text>
 <text text-anchor="start" x="1616" y="-806.1" font-family="Roboto" font-size="8.00"> &#160;&#160;&#160;&#160;&#160;</text>
 <text text-anchor="start" x="1674" y="-806.1" font-family="Roboto" font-size="8.00"> &#160;&#160;&#160;&#160;&#160;</text>
 <text text-anchor="start" x="1688" y="-806.1" font-family="Roboto" font-size="8.00" fill="#7b7b7b">CharField</text>
