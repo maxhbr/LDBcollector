@@ -427,7 +427,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                     {{ license_chosen.spdx_id }}
                   </span>
                 {% endif %}
-{% if perms.cube.add_derogation and not license_chosen.allowed == "always" %}
+                {% if perms.cube.add_derogation and not license_chosen.allowed == "always" %}
                   <a href="{% url 'cube:release_derogation_create' usage.id license_chosen.id %}"> Add Derogation </a>
                 {% endif %}
               {% endfor %}
