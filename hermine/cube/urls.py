@@ -38,7 +38,16 @@ urlpatterns = [
     # Components views
     path("components/", views.ComponentListView.as_view(), name="components"),
     path("components/popular/", views.PopularListView.as_view(), name="populars"),
-    path("component/<int:pk>/", views.ComponentView.as_view(), name="component_detail"),
+    path(
+        "component/<int:pk>/",
+        views.ComponentDetailView.as_view(),
+        name="component_detail",
+    ),
+    path(
+        "component/<int:pk>/edit/",
+        views.ComponentUpdateView.as_view(),
+        name="component_edit",
+    ),
     path(
         "component/<int:component_id>/update_funding/",
         views.component_update_funding,

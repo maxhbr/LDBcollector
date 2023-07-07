@@ -1,0 +1,35 @@
+<!--
+SPDX-FileCopyrightText: 2022 Hermine-team <hermine@inno3.fr>
+
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+
+{% extends "cube/cube.html" %}
+{% load cube_tags %}
+
+{% block title %}Edit component{% endblock %}
+
+{% block breadcrumbs %}
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:components' %}">Components</a></li>
+    <li><a href="{% url "cube:component_detail" component.id %}">{{ component.name }}</a></li>
+    <li>Edit</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    Edit component <em>{{ component.name }}</em>
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <table>
+      {{ form }}
+    </table>
+    <input type="submit" value="Save"/>
+  </form>
+{% endblock %}

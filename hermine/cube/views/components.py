@@ -46,10 +46,31 @@ class PopularListView(LoginRequiredMixin, PermissionRequiredMixin, generic.ListV
         ).order_by("-popularity")[:50]
 
 
-class ComponentView(LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView):
+class ComponentDetailView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
     permission_required = "cube.view_component"
     template_name = "cube/component.html"
     model = Component
+
+
+class ComponentUpdateView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView
+):
+    permission_required = "cube.change_component"
+    model = Component
+    template_name = "cube/component_update.html"
+    fields = [
+        "name",
+        "package_repo",
+        "description",
+        "programming_language",
+        "spdx_expression",
+        "homepage_url",
+    ]
+
+    def get_success_url(self):
+        return reverse_lazy("cube:component_detail", args=[self.object.id])
 
 
 class LicenseCurationListView(
