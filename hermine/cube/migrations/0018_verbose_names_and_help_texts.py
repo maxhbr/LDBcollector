@@ -7,7 +7,6 @@ import cube.utils.validators
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("cube", "0017_rename_color_explanation_license_allowed_explanation"),
     ]
@@ -230,6 +229,7 @@ class Migration(migrations.Migration):
                 default="DistributionSourceDistributionNonSource",
                 help_text="The context necessary to trigger this obligation",
                 max_length=40,
+                verbose_name="Triggering exploitation context",
             ),
         ),
         migrations.AlterField(
@@ -244,6 +244,7 @@ class Migration(migrations.Migration):
                 default="AlteredUnmodified",
                 help_text="Status of modication necessary to trigger this obligation",
                 max_length=40,
+                verbose_name="Triggering modifications",
             ),
         ),
         migrations.AlterField(
