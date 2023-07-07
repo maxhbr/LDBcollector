@@ -114,9 +114,10 @@ class GenericViewSet(viewsets.ModelViewSet):
         generics = (
             {"generic": generic, "triggered_by": package["package_id"]}
             for package in serializer.validated_data["packages"]
+            for spdx_id in package["spdx"]
             for generic in Generic.objects.filter(
                 obligation__in=get_license_triggered_obligations(
-                    License.objects.get(spdx_id=package["spdx"]),
+                    License.objects.get(spdx_id=spdx_id),
                     package["exploitation"],
                     package["modification"],
                 )

@@ -148,7 +148,7 @@ class ComponentSerializer(serializers.ModelSerializer):
 class SBOMItemSerializer(serializers.Serializer):
     package_id = serializers.CharField()
     spdx = serializers.SlugRelatedField(
-        queryset=License.objects.all(), slug_field="spdx_id"
+        many=True, queryset=License.objects.all(), slug_field="spdx_id"
     )
     exploitation = serializers.ChoiceField(
         label="Exploitation", choices=Usage.EXPLOITATION_CHOICES
