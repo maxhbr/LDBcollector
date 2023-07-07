@@ -16,6 +16,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 
 {% block actions %}
+  {% if perms.cube.delete_product %}
+    <a class="button" href="{% url "cube:product_delete" product.id %}">
+      <span class="icon">
+        <i class="fas fa-trash"></i>
+      </span>
+      <span>Delete this product</span>
+    </a>
+  {% endif %}
   {% if perms.cube.change_product %}
     <a class="button" href="{% url "cube:product_edit" product.id %}">
       <span class="icon">
