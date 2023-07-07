@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.urls import reverse_lazy
 from django.views import generic
 
 from cube.models import Product, Release, Category
@@ -40,6 +41,15 @@ class ProductEditView(LoginRequiredMixin, PermissionRequiredMixin, generic.Updat
     fields = "__all__"
     model = Product
     template_name = "cube/product_edit.html"
+
+
+class ProductDeleteView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DeleteView
+):
+    permission_required = "cube.delete_product"
+    model = Product
+    template_name = "cube/product_delete.html"
+    success_url = reverse_lazy("cube:products")
 
 
 class ReleaseCreateView(
