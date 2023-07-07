@@ -127,7 +127,7 @@ class Component(models.Model):
     name = models.CharField(
         max_length=200, help_text="Unique name of the FOSS component."
     )
-    package_repo = models.CharField("Package repository", max_length=200, blank=True)
+    purl_type = models.CharField("purl package type", max_length=200, blank=True)
     description = models.TextField(max_length=500, blank=True)
     programming_language = models.CharField(max_length=200, blank=True)
     spdx_expression = models.CharField(max_length=200, blank=True)
@@ -148,7 +148,7 @@ class Component(models.Model):
 
     class Meta:
         ordering = ["name"]
-        unique_together = ("name", "package_repo")
+        unique_together = ("name", "purl_type")
 
 
 class Funding(models.Model):

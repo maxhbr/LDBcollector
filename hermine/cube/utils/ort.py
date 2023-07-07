@@ -116,7 +116,7 @@ def hermine_to_ort(curation: LicenseCuration):
             is_meta_data_only=False,
             is_modified=False,
         ),
-        type=fix_type_case(component.package_repo),
+        type=fix_type_case(component.purl_type),
         namespace=component.namespace or "",
         name=name,
         version=curation.version.version_number

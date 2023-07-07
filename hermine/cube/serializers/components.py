@@ -78,7 +78,7 @@ class VersionSerializer(serializers.ModelSerializer):
 class ComponentSerializer(serializers.ModelSerializer):
     """
     Allows serialization and deserialization of Products on the following fields :
-    "id", "name", "package_repo", "description", "programming_language",
+    "id", "name", "purl_type", "description", "programming_language",
     "spdx_expression", "homepage_url", "export_control_status"
 
     :param serializers:
@@ -98,7 +98,7 @@ class ComponentSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
-            "package_repo",
+            "purl_type",
             "description",
             "programming_language",
             "spdx_expression",

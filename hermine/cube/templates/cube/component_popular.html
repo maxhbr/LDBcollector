@@ -37,7 +37,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <tbody>
       {% for component in component_list %}
         <tr>
-          <td>{{ component.package_repo }}</td>
+          <td>{{ component.purl_type }}</td>
           <td><a href="{% url "cube:component_detail" component.id %}">{{ component.name }}</a></td>
           <td>
             {{ component.popularity }}

@@ -62,7 +62,7 @@ class ComponentUpdateView(
     template_name = "cube/component_update.html"
     fields = [
         "name",
-        "package_repo",
+        "purl_type",
         "description",
         "programming_language",
         "spdx_expression",

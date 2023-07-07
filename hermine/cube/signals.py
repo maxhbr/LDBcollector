@@ -21,7 +21,7 @@ def update_component_repository(sender, instance: Version, created, **kwargs):
         except ValueError:
             pass
         else:
-            instance.component.package_repo = purl.to_dict()["type"]
+            instance.component.purl_type = purl.to_dict()["type"]
             instance.component.save()
 
 

@@ -49,7 +49,7 @@ class ComponentViewSet(viewsets.ModelViewSet):
     serializer_class = ComponentSerializer
     lookup_field = "pk"
     filter_backends = [filters.DjangoFilterBackend]
-    filterset_fields = ["name", "package_repo"]
+    filterset_fields = ["name", "purl_type"]
 
 
 class VersionViewSet(viewsets.ModelViewSet):
