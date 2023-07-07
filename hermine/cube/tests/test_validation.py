@@ -1,9 +1,10 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
+import os
 
 from django.urls import reverse
-
+from django.conf import settings
 from cube.models import (
     Usage,
     LicenseCuration,
@@ -24,13 +25,17 @@ from .mixins import BaseHermineAPITestCase
 
 
 def import_licenses():
-    with open("cube/fixtures/fake_licenses_export.json") as licenses_file:
+    with open(
+        os.path.join(settings.BASE_DIR, "cube/fixtures/fake_licenses_export.json")
+    ) as licenses_file:
         handle_licenses_json(licenses_file.read())
 
 
 class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
     def import_sbom(self):
-        with open("cube/fixtures/fake_sbom.json", "r") as sbom_file:
+        with open(
+            os.path.join(settings.BASE_DIR, "cube/fixtures/fake_sbom.json")
+        ) as sbom_file:
             url = reverse("cube:upload_spdx-list")
             res = self.client.post(
                 url,
@@ -43,6 +48,28 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
                 format="multipart",
             )
         self.assertEqual(res.status_code, 201)
+
+    def test_generic_sbom_endpoint(self):
+        import_licenses()
+        res = self.client.post(
+            reverse("cube:generics-sbom"),
+            data={
+                "packages": [
+                    {
+                        "package_id": "Fake package",
+                        "spdx": [
+                            "LicenseRef-fakeLicense-Allowed-1.0",
+                            "LicenseRef-fakeLicense-ContextAllowed-1.0",
+                        ],
+                        "exploitation": Usage.EXPLOITATION_NETWORK,
+                        "modification": Usage.MODIFICATION_UNMODIFIED,
+                    }
+                ],
+            },
+        )
+
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(len(res.data), 2)
 
     def test_validation_view(self):
         self.create_product()
