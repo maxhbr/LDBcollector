@@ -23,8 +23,11 @@ licensing = get_spdx_licensing()
 def has_ors(spdx_expression: str):
     parsed = licensing.parse(spdx_expression)
 
-    if parsed is None or isinstance(parsed, BaseSymbol):
+    if parsed is None:
         return False
+
+    if isinstance(parsed, BaseSymbol):
+        return "or-later" in str(parsed)
 
     if "OR" in parsed.operator:
         return True

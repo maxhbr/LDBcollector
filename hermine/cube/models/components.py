@@ -4,7 +4,7 @@
 
 from django.db import models, transaction
 
-from cube.utils.validators import validate_spdx_expression
+from cube.utils.validators import validate_spdx_expression, validate_no_ors_expression
 
 
 class Usage(models.Model):
@@ -93,7 +93,11 @@ class Usage(models.Model):
     licenses_chosen = models.ManyToManyField("License", blank=True)
     scope = models.CharField(max_length=50, default=DEFAULT_SCOPE)
     project = models.CharField(max_length=750, default=DEFAULT_PROJECT)
-    license_expression = models.CharField(max_length=500, blank=True)
+    license_expression = models.CharField(
+        max_length=500,
+        blank=True,
+        validators=[validate_spdx_expression, validate_no_ors_expression],
+    )
 
     @property
     def license_choices(self):

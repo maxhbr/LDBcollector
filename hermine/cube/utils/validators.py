@@ -30,3 +30,10 @@ def validate_spdx_expression(spdx_expression: str):
         raise ValidationError(
             f"{spdx_expression} is not a valid SPDX expression : {', '.join(info.errors)}"
         )
+
+
+def validate_no_ors_expression(spdx_expression: str):
+    from cube.utils.licenses import has_ors
+
+    if has_ors(spdx_expression):
+        raise ValidationError("Expression still contains a license choice")

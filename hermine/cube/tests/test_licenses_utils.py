@@ -20,6 +20,7 @@ from cube.utils.licenses import (
     is_ambiguous,
     explode_spdx_to_units,
     get_ands_corrections,
+    has_ors,
 )
 from cube.utils.validators import validate_spdx_expression
 
@@ -114,6 +115,21 @@ class SPDXToolsTestCase(TestCase):
         self.assertTrue(is_ambiguous("MIT AND BSD"))
         self.assertFalse(is_ambiguous("MIT OR (BSD AND GPL-3.0-or-later)"))
         self.assertFalse(is_ambiguous("MIT OR(BSD AND GPL-3.0-or-later)"))
+
+    def test_has_ors(self):
+        self.assertFalse(has_ors("MIT"))
+        self.assertTrue(has_ors("MIT OR BSD"))
+
+    def test_or_later_has_ors(self):
+        self.assertFalse(has_ors("GPL-3.0-only"))
+        self.assertFalse(has_ors("GPL-3.0"))
+
+        self.assertTrue(has_ors("GPL-3.0-or-later"))
+        self.assertTrue(has_ors("GPL-2.0-or-later WITH Classpath-exception-2.0"))
+        self.assertTrue(has_ors("GPL-3.0-or-later AND BSD"))
+
+        self.assertTrue(has_ors("GPL-3.0+"))
+        self.assertTrue(has_ors("GPL-2.0+ WITH Classpath-exception-2.0"))
 
     def test_validate_spdx_license(self):
         with self.assertRaises(ValidationError):

@@ -10,7 +10,7 @@ from cube.models import (
     Usage,
     Version,
 )
-from cube.utils.validators import validate_spdx_expression
+from cube.utils.validators import validate_spdx_expression, validate_no_ors_expression
 
 
 class AbstractComponentRule(models.Model):
@@ -221,7 +221,7 @@ class LicenseChoice(AbstractUsageRule, models.Model):
     expression_out = models.CharField(
         max_length=500,
         help_text="The expression which will replace `expression_in`",
-        validators=[validate_spdx_expression],
+        validators=[validate_spdx_expression, validate_no_ors_expression],
     )
 
     explanation = models.TextField(max_length=500, blank=True, null=True)
