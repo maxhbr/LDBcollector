@@ -33,7 +33,7 @@ class SBOMImportFailure(Exception):
 
 @transaction.atomic()
 def import_ort_evaluated_model_json_file(
-    json_file, release_idk, replace=False, linking: str = ""
+    json_file, release_id, replace=False, linking: str = ""
 ):
     try:
         data = json.load(json_file)
@@ -49,7 +49,7 @@ def import_ort_evaluated_model_json_file(
         raise SBOMImportFailure("Please check file format.")
 
     if replace:
-        Usage.objects.filter(release=release_idk).delete()
+        Usage.objects.filter(release=release_id).delete()
 
     for package in packages:
         if package["is_project"]:
@@ -72,16 +72,8 @@ def import_ort_evaluated_model_json_file(
             )  # p_name can contain namespace at this point, not a problem because they are stored together anyway
 
         purl = PackageURL.from_string(current_purl)
-        component, component_created = Component.objects.get_or_create(
-            name=f"{purl.namespace}/{purl.name}" if purl.namespace else purl.name,
-            purl_type=purl.type,
-            defaults={
-                "description": package.get("description", ""),
-                "homepage_url": package.get("homepage_url", ""),
-            },
-        )
-        if component_created:
-            logger.info(f"Component {component.name} created")
+        comp_name = f"{purl.namespace}/{purl.name}" if purl.namespace else purl.name
+        version_number = current_purl.split("@")[1]
 
         declared_licenses_indices = package.get("declared_licenses", "")
         if declared_licenses_indices:
@@ -98,23 +90,9 @@ def import_ort_evaluated_model_json_file(
         )
         if spdx_valid_license == "NOASSERTON":
             spdx_valid_license = ""
-        version, version_created = Version.objects.get_or_create(
-            component=component,
-            version_number=current_purl.split("@")[1],
-            defaults={
-                "declared_license_expr": declared_licenses,
-                "spdx_valid_license_expr": spdx_valid_license
-                and simplified(spdx_valid_license),
-                # TODO : support ORT scanner function
-                # "scanned_licenses":
-                "purl": current_purl,
-            },
-        )
-        if version_created:
-            logger.info(
-                f"Version {version.version_number} created for component {component.name}"
-            )
+
         path_ids = package.get("paths", [])
+
         if path_ids:
             for path_id in path_ids:
                 path = paths[path_id]
@@ -122,36 +100,37 @@ def import_ort_evaluated_model_json_file(
                 project_id = path.get("project")
                 scope_name = scopes[scope_id]["name"]
                 project_name = packages[project_id]["id"]
-                try:
-                    exploitation = Exploitation.objects.get(
-                        release=release_idk, project=project_name, scope=scope_name
-                    ).exploitation
-                except Exploitation.DoesNotExist:
-                    exploitation = ""
-                Usage.objects.get_or_create(
-                    version_id=version.id,
-                    release_id=release_idk,
-                    scope=scope_name,
-                    project=project_name,
-                    linking=linking,
-                    exploitation=exploitation,
+
+                add_dependency(
+                    release_id,
+                    purl.type,
+                    comp_name,
+                    {
+                        "description": package.get("description", ""),
+                        "homepage_url": package.get("homepage_url", ""),
+                    },
+                    version_number,
+                    declared_licenses,
+                    spdx_valid_license,
+                    linking,
+                    current_purl,
+                    scope_name,
+                    project_name,
                 )
         else:
-            scope_name = Usage.DEFAULT_SCOPE
-            project_name = Usage.DEFAULT_PROJECT
-            try:
-                exploitation = Exploitation.objects.get(
-                    release=release_idk, project=project_name, scope=scope_name
-                ).exploitation
-            except Exploitation.DoesNotExist:
-                exploitation = ""
-            Usage.objects.get_or_create(
-                version_id=version.id,
-                release_id=release_idk,
-                scope=scope_name,
-                project=project_name,
-                linking=linking,
-                exploitation=exploitation,
+            add_dependency(
+                release_id,
+                purl.type,
+                comp_name,
+                {
+                    "description": package.get("description", ""),
+                    "homepage_url": package.get("homepage_url", ""),
+                },
+                version_number,
+                declared_licenses,
+                spdx_valid_license,
+                linking,
+                current_purl,
             )
 
 
@@ -173,13 +152,8 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         Usage.objects.filter(release=release_id).delete()
 
     for package in document.packages:
-        current_scope = Usage.DEFAULT_SCOPE
-        current_project = Usage.DEFAULT_PROJECT
         comp_name = package.name.rsplit("@")[0]
         comp_url = package.download_location or ""
-        component, created = Component.objects.get_or_create(
-            name=comp_name, defaults={"homepage_url": comp_url}
-        )
 
         if not package.license_declared:
             declared_license = "NOASSERTION"
@@ -193,33 +167,67 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         else:
             concluded_license = package.conc_lics.identifier
 
-        version, created = Version.objects.get_or_create(
-            component=component,
-            version_number=package.version or "Current",
-            defaults={
-                "declared_license_expr": declared_license,
-                "spdx_valid_license_expr": concluded_license
-                and simplified(concluded_license),
-            },
-        )
+        version_number = package.version or "Current"
 
-        try:
-            exploitation = Exploitation.objects.get(
-                release=release_id, project=current_project, scope=current_scope
-            ).exploitation
-        except Exploitation.DoesNotExist:
-            exploitation = ""
-
-        Usage.objects.get_or_create(
-            version_id=version.id,
-            release_id=release_id,
-            project=current_project,
-            exploitation=exploitation,
-            scope=current_scope,
-            defaults={"addition_method": "Scan", "linking": linking},
+        add_dependency(
+            release_id,
+            "",
+            comp_name,
+            {"homepage_url": comp_url},
+            version_number,
+            concluded_license,
+            declared_license,
+            linking,
         )
 
     logger.info("SPDX import done", datetime.now())
+
+
+def add_dependency(
+    release_id,
+    component_purl_type,
+    component_name,
+    component_defaults,
+    version_number,
+    concluded_license,
+    declared_license,
+    linking,
+    purl="",
+    scope=Usage.DEFAULT_SCOPE,
+    project=Usage.DEFAULT_PROJECT,
+):
+    component, created = Component.objects.get_or_create(
+        purl_type=component_purl_type,
+        name=component_name,
+        defaults=component_defaults,
+    )
+
+    version, created = Version.objects.get_or_create(
+        component=component,
+        version_number=version_number,
+        defaults={
+            "declared_license_expr": declared_license,
+            "spdx_valid_license_expr": concluded_license
+            and simplified(concluded_license),
+            "purl": purl,
+        },
+    )
+
+    try:
+        exploitation = Exploitation.objects.get(
+            release=release_id, project=project, scope=scope
+        ).exploitation
+    except Exploitation.DoesNotExist:
+        exploitation = ""
+
+    Usage.objects.get_or_create(
+        version_id=version.id,
+        release_id=release_id,
+        project=project,
+        exploitation=exploitation,
+        scope=scope,
+        defaults={"addition_method": "Scan", "linking": linking},
+    )
 
 
 # Function derivated from
