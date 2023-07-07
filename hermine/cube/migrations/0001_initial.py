@@ -4,9 +4,10 @@ from django.conf import settings
 from django.db import migrations, models
 import django.db.models.deletion
 
+from cube.utils.validators import validate_spdx_expression, validate_no_ors_expression
+
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -402,7 +403,17 @@ class Migration(migrations.Migration):
                 ),
                 ("description", models.TextField(blank=True, max_length=500)),
                 ("scope", models.CharField(blank=True, max_length=50, null=True)),
-                ("license_expression", models.CharField(blank=True, max_length=500)),
+                (
+                    "license_expression",
+                    models.CharField(
+                        blank=True,
+                        max_length=500,
+                        validators=[
+                            validate_spdx_expression,
+                            validate_no_ors_expression,
+                        ],
+                    ),
+                ),
                 (
                     "licenses_chosen",
                     models.ManyToManyField(blank=True, to="cube.License"),

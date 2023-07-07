@@ -120,6 +120,17 @@ class SPDXToolsTestCase(TestCase):
         self.assertFalse(has_ors("MIT"))
         self.assertTrue(has_ors("MIT OR BSD"))
 
+    def test_or_later_has_ors(self):
+        self.assertFalse(has_ors("GPL-3.0-only"))
+        self.assertFalse(has_ors("GPL-3.0"))
+
+        self.assertTrue(has_ors("GPL-3.0-or-later"))
+        self.assertTrue(has_ors("GPL-2.0-or-later WITH Classpath-exception-2.0"))
+        self.assertTrue(has_ors("GPL-3.0-or-later AND BSD"))
+
+        self.assertTrue(has_ors("GPL-3.0+"))
+        self.assertTrue(has_ors("GPL-2.0+ WITH Classpath-exception-2.0"))
+
     def test_validate_spdx_license(self):
         with self.assertRaises(ValidationError):
             validate_spdx_expression("foo")

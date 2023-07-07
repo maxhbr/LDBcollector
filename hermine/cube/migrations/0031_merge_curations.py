@@ -159,6 +159,18 @@ class Migration(migrations.Migration):
                 help_text="The exact expression which must be changed", max_length=500
             ),
         ),
+        migrations.AlterField(
+            model_name="licensechoice",
+            name="expression_out",
+            field=models.CharField(
+                help_text="The expression which will replace `expression_in`",
+                max_length=500,
+                validators=[
+                    cube.utils.validators.validate_spdx_expression,
+                    cube.utils.validators.validate_no_ors_expression,
+                ],
+            ),
+        ),
         migrations.AlterModelOptions(
             name="licensechoice",
             options={
