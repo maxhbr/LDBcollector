@@ -1,0 +1,4 @@
+[license]
+
+expression = "LGPL-2.1-or-later WITH Linux-syscall-note"
+status = [ "allowed" ]
