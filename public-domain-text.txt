@@ -30,6 +30,50 @@ text = '''
 text here
 '''
 
+package = gdb
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/hashtab.c#n853
+text = '''
+lookup2.c, by Bob Jenkins, December 1996, Public Domain.
+'''
+
+package = gdb
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/xmemdup.c#n2
+text = '''
+This trivial function is in the public domain.
+'''
+
+package = gdb
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/memset.c#n2
+text = '''
+This implementation is in the public domain.
+'''
+
+package = gdb
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/alloca.c#n2
+text = '''
+(Mostly) portable public-domain implementation
+'''
+
+package = gdb
+location = https://sourceware.org/cgit/binutils-gdb/tree/libiberty/atexit.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/bcmp.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/bzero.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/calloc.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/getcwd.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/memcmp.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/memcpy.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/memmove.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/rename.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strchr.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strncmp.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strnlen.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strrchr.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strstr.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/vfork.c#n2
+text = '''
+This function is in the public domain.
+'''
+
 package = man-pages
 location = https://github.com/mkerrisk/man-pages/blob/master/man2/nfsservctl.2#L2
 text = '''
@@ -296,9 +340,11 @@ This code is in the public domain and has no copyright.
 
 package = pl
           python-pdfminer
+          gdb
 location = https://github.com/SWI-Prolog/swipl-devel/blob/master/scripts/swipl-bt
            https://github.com/SWI-Prolog/swipl-devel/blob/master/src/tools/functions.pm
            https://github.com/pdfminer/pdfminer.six/blob/ebf7bcdb983f36d0ff5b40e4f23b52525cb28f18/pdfminer/ascii85.py#L3
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/xstrerror.c#n3
 text = '''
 This code is in the public domain
 '''
@@ -473,9 +519,14 @@ text = '''
 
 package = tzdata
           abseil-cpp
+          gdb
 location = https://github.com/eggert/tz/blob/main/zone1970.tab
            https://github.com/eggert/tz/blob/main/backzone
            https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/basename.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/insque.c#n2
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strsignal.c#n3
+           https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strerror.c#n3
 text = '''
 # This file is in the public domain.
 '''
