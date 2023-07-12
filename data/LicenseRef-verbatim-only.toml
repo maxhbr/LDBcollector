@@ -1,0 +1,15 @@
+[license]
+expression = "LicenseRef-verbatim-only"
+status = [ "not-allowed" ]
+
+url = '''
+http://git.savannah.gnu.org/cgit/src-highlite.git/tree/doc/index.html?h=rel_3_1_9&id=5a226cc9eab84652b2f74356345f2c2c271ac750#n500
+'''
+
+text = '''
+Verbatim copying and distribution of this entire article is permitted in any medium, provided this notice is preserved.
+'''
+
+notes = '''
+It does not meet the criteria for allowed licenses because it does not permit modification.
+'''
