@@ -10,6 +10,8 @@ text = '''
 Verbatim copying and distribution of this entire article is permitted in any medium, provided this notice is preserved.
 '''
 
+[fedora]
+
 notes = '''
 It does not meet the criteria for allowed licenses because it does not permit modification.
 '''
