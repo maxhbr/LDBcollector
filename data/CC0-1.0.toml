@@ -17,7 +17,13 @@ Upstream application of CC0-1.0 to trivial, noncreative, unoriginal,
 and nonexpressive material as part of an effort to achieve conformance
 to the REUSE specification (https://reuse.software/) (for example,
 CI/CD configuration files) is permitted regardless of whether such
-material would normally be classified as "content". 
+material would normally be classified as "content".
+
+Implementations of post-quantum cryptographic algorithms released
+under CC0-1.0 and included in the liboqs library
+(https://github.com/open-quantum-safe/liboqs) as of 2023-07-12, and
+modified versions of those implementations, are allowed, as noted in
+https://gitlab.com/fedora/legal/fedora-license-data/-/issues/158 .
 '''
 
 
