@@ -26,6 +26,14 @@ The Fedora Legal team is responsible for this project.
 
 To create a merge request to this project you must log in using Fedora OpenID. You can do that on [SSO page](https://gitlab.com/groups/fedora/-/saml/sso).
 
+## Releases
+
+Since the project is new and has many changes, we do releases very often. Currently it is every two weeks.
+
+Releases are made directly from this repository according to the `how-to-release.md` document. Any downstream change in dist-git will be lost or cause us complications when making a release. Please send all contribs directly to the upstream repository.
+
+Changes from this repository are propagated to [fedora-legal-docs](https://gitlab.com/fedora/legal/fedora-legal-docs) after a release.
+
 ## Source and Output Formats
 
 The source data are stored in [TOML](https://toml.io/en/) format. This was agreed as a simplest format for even non-technical contributors.
