@@ -2382,6 +2382,13 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  - id: "GPL-2.0-only WITH GCC-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   - id: "GPL-2.0-or-later-with-autoconf-macro-exception"
     categories:
       - "copyleft-strong"
@@ -2468,7 +2475,8 @@ categorizations:
 
   - id: "BSD-Source-Code"
     categories:
-      - "property:unchecked"
+      - "permissive"
+      - "property:include-in-notice-file"
 
   - id: "Cryptogams"
     categories:
@@ -4084,3 +4092,27 @@ categorizations:
   - id: "Zed"
     categories:
       - "free-restricted"
+
+  - id: "IPA"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+
+  - id: "Elastic-2.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+
+  - id: "Bitstream-Vera"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-cncf-individual-cla-1.0"
+    categories:
+      - "irrelevant"
+
+  - id: "LicenseRef-scancode-apple-attribution-1997"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
