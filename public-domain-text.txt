@@ -74,6 +74,18 @@ text = '''
 This function is in the public domain.
 '''
 
+package = source-highlight
+location = http://git.savannah.gnu.org/cgit/src-highlite.git/tree/lib/srchilite/readtags.c?h=rel_3_1_9&id=5a226cc9eab84652b2f74356345f2c2c271ac750#n6
+text = '''
+This source code is released into the public domain.
+'''
+
+package = source-highlight
+location = http://git.savannah.gnu.org/cgit/src-highlite.git/tree/lib/srchilite/readtags.h?h=rel_3_1_9&id=5a226cc9eab84652b2f74356345f2c2c271ac750#n6
+text = '''
+This source code is released for the public domain.
+'''
+
 package = man-pages
 location = https://github.com/mkerrisk/man-pages/blob/master/man2/nfsservctl.2#L2
 text = '''
