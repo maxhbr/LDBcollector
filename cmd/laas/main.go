@@ -12,6 +12,7 @@ import (
 
 	"github.com/fossology/LicenseDb/pkg/api"
 	"github.com/fossology/LicenseDb/pkg/models"
+	"github.com/fossology/LicenseDb/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -23,15 +24,15 @@ var (
 	dbhost = flag.String("host", "localhost", "host name")
 	// port number of the host
 	port = flag.String("port", "5432", "port number")
-	// database user
+	// argument to enter the database user
 	user = flag.String("user", "fossy", "user name")
 	// name of database to be connected
 	dbname = flag.String("dbname", "fossology", "database name")
-	// password of the user
+	// password of the database
 	password = flag.String("password", "fossy", "password")
 	// path of data file
 	datafile = flag.String("datafile", "licenseRef.json", "datafile path")
-	// boolean agument to whether update the database or not
+	// auto-update the database
 	populatedb = flag.Bool("populatedb", false, "boolean variable to update database")
 )
 
@@ -45,12 +46,12 @@ func main() {
 		log.Fatalf("Failed to connect to database: %v", err)
 	}
 
-	if err := database.AutoMigrate(&models.License{}); err != nil {
+	if err := database.AutoMigrate(&models.LicenseDB{}); err != nil {
 		log.Fatalf("Failed to automigrate database: %v", err)
 	}
 
 	if *populatedb {
-		var licenses []models.License
+		var licenses []models.LicenseJson
 		// read the file of data
 		byteResult, _ := ioutil.ReadFile(*datafile)
 		// unmarshal the json file and it into the struct format
@@ -59,15 +60,17 @@ func main() {
 		}
 		for _, license := range licenses {
 			// populate the data in the database table
-			database.Create(&license)
+			result := utils.Converter(license)
+			database.Create(&result)
 		}
 	}
 	api.DB = database
 
 	r := gin.Default()
-
+	r.NoRoute(api.HandleInvalidUrl)
 	r.GET("/api/licenses", api.GetAllLicense)
 	r.GET("/api/license/:shortname", api.GetLicense)
-
+	r.POST("/api/license", api.CreateLicense)
+	r.PATCH("/api/license/:shortname", api.UpdateLicense)
 	r.Run()
 }
