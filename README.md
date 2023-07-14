@@ -13,39 +13,44 @@ A Clojure library for software license detection.  It does this by combing throu
 
 This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, I can thoroughly recommend [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial).
 
-## Using the library
+## Installation
 
-### Documentation
+`lice-comb` is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/lice-comb).
 
-[API documentation is available here](https://pmonks.github.io/lice-comb/).
+### Trying it Out
+
+#### Clojure CLI
+
+```shell
+$ # Where #.#.# is replaced with an actual version number (see badge above)
+$ clj -Sdeps '{:deps {com.github.pmonks/lice-comb {:mvn/version "#.#.#"}}}'
+```
+
+#### Leiningen
+
+```shell
+$ lein try com.github.pmonks/lice-comb
+```
+
+#### deps-try
+
+```shell
+$ deps-try com.github.pmonks/lice-comb
+```
+
+### API Documentation
+
+[API documentation is available here](https://pmonks.github.io/lice-comb/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/lice-comb/).
 
 [An FAQ is available here](https://github.com/pmonks/lice-comb/wiki/FAQ).
 
-### Dependency
-
-Express the correct maven dependencies in your `deps.edn`:
-
-```edn
-{:deps {com.github.pmonks/lice-comb {:mvn/version "LATEST_CLOJARS_VERSION"}}}
-```
-
-### Require one or more of the namespaces
-
-```clojure
-(ns your.ns
-  (:require [lice-comb.deps  :as lcd]
-            [lice-comb.files :as lcf]
-            [lice-comb.maven :as lcm]
-            [lice-comb.spdx  :as lcs]))
-```
-
 ## Upgrading
 
-### 1.x -> 2.0
+### 1.x -> 2.x
 
 Implementing [issue #3](https://github.com/pmonks/lice-comb/issues/3) resulted in the creation of a [new SPDX-specific library (`clj-spdx`)](https://github.com/pmonks/clj-spdx) that leverages [the official SPDX Java library](https://github.com/spdx/Spdx-Java-Library).  Because of irreconcilable differences in how that Java library represents license data compared to `lice-comb` v1.x, as well as the addition of support for SPDX license exceptions, it was not possible to retain backwards compatibility.
 
-The backwards compatibility breaking changes are limited to the `lice-comb.spdx` namespace however, so if you're not using that namespace you should be unaffected.  If you are using that namespace, migration involves migrating to [`clj-spdx`](https://github.com/pmonks/clj-spdx).  It offers all of the same functionality (and more) as the `lice-comb` v1.x functionality, and by virtue of using the official SPDX Java library is far more battle tested than the earlier code.
+The backwards compatibility breaking changes are limited to the (removed) `lice-comb.spdx` namespace however, so if you're not using that namespace you should be unaffected.  If you are using that namespace, migration involves migrating to [`clj-spdx`](https://github.com/pmonks/clj-spdx), and (possibly) the `lice-comb.matching` namespace.
 
 ## Contributor Information
 

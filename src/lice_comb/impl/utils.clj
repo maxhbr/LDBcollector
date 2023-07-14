@@ -21,7 +21,8 @@
   project I write... Note: this namespace is not part of the public API of
   lice-comb and may change without notice."
   (:require [clojure.string  :as s]
-            [clojure.java.io :as io]))
+            [clojure.java.io :as io]
+            [clj-base62.core :as base62]))
 
 (defn map-pad
   "Like map, but when presented with multiple collections of different lengths,
@@ -72,6 +73,18 @@
                  \> "\\>"
                  })))
 
+(defn base62-encode
+  "Encodes the given string to Base62/UTF-8."
+  [^String s]
+  (when s
+    (base62/encode (.getBytes s (java.nio.charset.StandardCharsets/UTF_8)))))
+
+(defn base62-decode
+  "Decodes the given Base62/UTF-8 string."
+  [^String s]
+  (when s
+    (java.lang.String. ^bytes (base62/decode s) (java.nio.charset.StandardCharsets/UTF_8))))
+
 (defn simplify-uri
   "Simplifies a URI (which can be a string, java.net.URL, or java.net.URI).
   Returns a string."
@@ -108,6 +121,10 @@
 (defmethod filename java.net.URL
   [^java.net.URL url]
   (filename (.getPath url)))
+
+(defmethod filename java.io.InputStream
+  [_]
+  (throw (ex-info "Cannot determine filename of an InputStream - did you forget to provide it separately?" {})))
 
 (defn getenv
   "Obtain the given environment variable, returning default (or nil, if default

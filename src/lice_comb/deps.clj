@@ -21,7 +21,7 @@
   deps in tools.deps lib-map format."
   (:require [clojure.string       :as s]
             [spdx.licenses        :as sl]
-            [lice-comb.maven      :as lcm]
+            [lice-comb.maven      :as lcmvn]
             [lice-comb.files      :as lcf]
             [lice-comb.impl.data  :as lcd]
             [lice-comb.impl.utils :as lcu]))
@@ -66,9 +66,9 @@
           version                (:mvn/version info)]
       (if-let [override (check-overrides ga version)]
         override
-        (let [pom-uri     (lcm/pom-uri-for-gav group-id artifact-id version)
+        (let [pom-uri     (lcmvn/pom-uri-for-gav group-id artifact-id version)
               license-ids (check-fallbacks ga
-                                           (if-let [license-ids (lcm/pom->ids pom-uri)]
+                                           (if-let [license-ids (lcmvn/pom->ids pom-uri)]
                                              license-ids
                                              (lcu/nset (mapcat lcf/zip->ids (:paths info)))))]      ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
           license-ids)))))

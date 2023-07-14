@@ -16,8 +16,8 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.spdx
-  "SPDX related functionality that isn't already provided by
+(ns lice-comb.matching
+  "Matching functionality, a lot of which is provided by
   https://github.com/pmonks/clj-spdx"
   (:require [clojure.string        :as s]
             [clojure.set           :as set]
@@ -35,7 +35,13 @@
 (def ^:private exception-list-d (delay (map sl/id->info (sl/ids))))
 
 ; License name aliases
-(def ^:private aliases-d (delay (lcd/load-edn-resource "lice_comb/spdx/aliases.edn")))
+(def ^:private aliases-d (delay (lcd/load-edn-resource "lice_comb/matching/aliases.edn")))
+
+; Regexes used for license name matching - these are expected to include named-capturing group called "name" and "version"
+(def ^:private license-name-regexes [
+  #"(?i)\s*(The\s+)?(?<name>Apache)(\s+Software)?(\s+License(s)?)?(\s*[,-])?(\s+V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\s*"
+  ])
+
 
 (defn- name->license-ids
   "Returns the SPDX license identifier(s) (a set) for the given license name
@@ -69,25 +75,44 @@
 (def public-domain-license-id             "LicenseRef-lice-comb-PUBLIC-DOMAIN")
 (def ^:private unlisted-license-id-prefix "LicenseRef-lice-comb-UNLISTED")
 
-(defn unlisted-license-id
+(defn public-domain?
+  "Is the given id lice-comb's custom 'public domain' LicenseRef?"
+  [id]
+  (= (s/lower-case id) (s/lower-case public-domain-license-id)))
+
+(defn unlisted?
+  "Is the given id a lice-comb custom 'unlisted' LicenseRef?"
+  [id]
+  (s/starts-with? (s/lower-case id) (s/lower-case unlisted-license-id-prefix)))
+
+(defn name->unlisted
   "Constructs a valid SPDX id (a LicenseRef specific to lice-comb) for an
-  unlisted license, using the given suffix."
-  [suffix]
-  (str unlisted-license-id-prefix (when-not (s/blank? suffix) (str "-" (s/replace (s/trim suffix) #"\s+" "-")))))
+  unlisted license, with the given name appended as Base62 (since clj-spdx
+  identifiers are basically constrained to [A-Z][a-z][0-9] ie. Base62)."
+  [name]
+  (str unlisted-license-id-prefix (when-not (s/blank? name) (str "-" (lcu/base62-encode name)))))
+
+(defn unlisted->name
+  "Get the original name of the given unlisted license. Returns nil if id is nil
+  or is not a lice-comb's unlisted LicenseRef."
+  [id]
+  (when (and id (unlisted? id))
+    (str "Unlisted"
+         (when (> (count id) (count unlisted-license-id-prefix))
+           (str " (" (lcu/base62-decode (subs id (+ 2 (count unlisted-license-id-prefix)))) ")")))))
 
 (defn id->name
   "Returns the human readable name of the given license or exception identifier;
-  either the official SPDX license or exception name or (if the id is not a
-  listed SPDX id but is used by the library) an unofficial name. Returns the id
-  as-is if unable to determine a name."
+  either the official SPDX license or exception name or (if the id is a
+  lice-comb specific LicenseRef an unofficial name. Returns the id verbatim if
+  unable to determine a name."
   [id]
-  (cond (sl/listed-id? id)                                                           (:name (sl/id->info id))
-        (se/listed-id? id)                                                           (:name (se/id->info id))
-        (= (s/lower-case id) (s/lower-case public-domain-license-id))                "Public domain"
-        (s/starts-with? (s/lower-case id) (s/lower-case unlisted-license-id-prefix)) (str "Unlisted"
-                                                                                       (when (> (count id) (count unlisted-license-id-prefix))
-                                                                                         (str " (" (s/replace (subs id (inc (count unlisted-license-id-prefix))) "-" " ") ")")))
-        :else                                                                        id))
+  (when-not (s/blank? id)
+    (cond (sl/listed-id? id)  (:name (sl/id->info id))
+          (se/listed-id? id)  (:name (se/id->info id))
+          (public-domain? id) "Public domain"
+          (unlisted? id)      (str "Unlisted" (when-let [original (unlisted->name id)] (str " (" original ")")))
+          :else               id)))
 
 
 ; Index of alias regexes

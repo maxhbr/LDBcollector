@@ -25,7 +25,7 @@
             [clojure.java.shell    :as sh]
             [clojure.tools.logging :as log]
             [xml-in.core           :as xi]
-            [lice-comb.spdx        :as lcs]
+            [lice-comb.matching    :as lcmtch]
             [lice-comb.impl.utils  :as lcu]))
 
 (def ^:private local-maven-repo-d
@@ -69,12 +69,12 @@
   "Attempts to determine the license(s) (a set) from a POM license name/URL pair."
   [{:keys [name url]}]
   ; Attempt to find a match by URL first
-  (if-let [licenses (lcs/fuzzy-match-uri->license-ids url)]
+  (if-let [licenses (lcmtch/fuzzy-match-uri->license-ids url)]
     licenses
     ; Then match by name
-    (if-let [licenses (lcs/fuzzy-match-name->license-ids name)]
+    (if-let [licenses (lcmtch/fuzzy-match-name->license-ids name)]
       licenses
-      #{(lcs/unlisted-license-id name)})))  ; Last resort - return an unlisted identifier that includes the name (if any)
+      #{(lcmtch/name->unlisted name)})))  ; Last resort - return an unlisted identifier that includes the name (if any)
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
