@@ -4137,3 +4137,7 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ecma-no-patent"
+    categories:
+      - "proprietary-free"
