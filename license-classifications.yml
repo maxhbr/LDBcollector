@@ -4123,7 +4123,11 @@ categorizations:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
-  # https://www.w3.org/copyright/test-suite-license-2008/
   - id: "LicenseRef-scancode-html5"
+    categories:
+      - "permissive"
+
+  # https://spdx.org/licenses/mplus.html
+  - id: "mplus"
     categories:
       - "permissive"
