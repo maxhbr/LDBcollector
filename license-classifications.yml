@@ -4141,3 +4141,20 @@ categorizations:
   - id: "LicenseRef-scancode-ecma-no-patent"
     categories:
       - "proprietary-free"
+
+  - id: "LicenseRef-scancode-pngsuite"
+    categories:
+      - "permissive"
+
+  # https://www.ogc.org/about-ogc/policies/document-notice/
+  - id: "LicenseRef-scancode-ogc-document-2020"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-eclipse-sua-2005"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
