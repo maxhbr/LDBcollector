@@ -4131,3 +4131,9 @@ categorizations:
   - id: "mplus"
     categories:
       - "permissive"
+
+  # https://spdx.org/licenses/ODC-By-1.0.html
+  - id: "ODC-By-1.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
