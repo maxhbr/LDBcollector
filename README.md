@@ -1,9 +1,9 @@
 # {metæffekt}-universe
 Project providing insights on the {metæffekt} license database covering
 
-* 2021 modelled license terms,
+* 2032 modelled license terms,
 * 129 exceptions,
-* 168 specific and commonly used license expressions, and
+* 169 specific and commonly used license expressions, and
 * 46 markers.
 
 as of 24th, June 2023.
