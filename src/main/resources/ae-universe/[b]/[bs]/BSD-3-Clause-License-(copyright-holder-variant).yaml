@@ -6,3 +6,5 @@ canonicalName: "BSD 3-Clause License (copyright holder variant)"
 category: "BSD"
 shortName: "BSD-3-Clause-copyright-holder"
 
+otherIds: 
+  - "scancode:chicken-dl-0.2"

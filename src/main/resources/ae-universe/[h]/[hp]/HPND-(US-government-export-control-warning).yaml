@@ -10,3 +10,5 @@ alternativeNames:
   - "HPND-export-US"
   - "HPND with US Government export control warning"
 
+otherIds: 
+  - "scancode:hpnd-export-us"

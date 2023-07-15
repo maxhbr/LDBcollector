@@ -10,3 +10,5 @@ alternativeNames:
   - "Checkmk License"
   - "Micah Cowan"
 
+otherIds: 
+  - "scancode:checkmk"

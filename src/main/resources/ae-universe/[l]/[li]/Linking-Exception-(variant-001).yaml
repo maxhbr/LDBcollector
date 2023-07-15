@@ -9,3 +9,5 @@ spdxIdentifier: "i2p-gpl-java-exception"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:i2p-gpl-java-exception"

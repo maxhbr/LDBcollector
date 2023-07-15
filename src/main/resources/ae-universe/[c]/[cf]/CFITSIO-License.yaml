@@ -9,3 +9,5 @@ spdxIdentifier: "CFITSIO"
 alternativeNames:
   - "CFITSIO License"
 
+otherIds: 
+  - "scancode:cfitsio"

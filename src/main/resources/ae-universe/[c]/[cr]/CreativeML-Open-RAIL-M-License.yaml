@@ -9,3 +9,5 @@ shortName: "CreativeML-Open-RAIL-M"
 alternativeNames:
   - "CreativeML Open RAIL-M"
 
+otherIds: 
+  - "scancode:bigscience-open-rail-m"

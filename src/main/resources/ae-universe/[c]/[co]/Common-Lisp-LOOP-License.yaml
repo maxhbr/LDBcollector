@@ -9,3 +9,5 @@ spdxIdentifier: "LOOP"
 alternativeNames:
   - "Common Lisp LOOP License"
 
+otherIds: 
+  - "scancode:loop"
