@@ -9,6 +9,7 @@ spdxIdentifier: "HPND"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "redundant with more popular"
 
 alternativeNames:
   - "Historic Permission Notice and Disclaimer"

@@ -9,6 +9,7 @@ spdxIdentifier: "BSD-2-Clause"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "popular/strong community"
 
 alternativeNames:
   - "2-clause BSD license"

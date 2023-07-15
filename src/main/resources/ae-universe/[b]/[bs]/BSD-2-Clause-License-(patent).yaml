@@ -7,6 +7,7 @@ category: "BSD Patent"
 spdxIdentifier: "BSD-2-Clause-Patent"
 
 osiStatus: "approved"
+osiCategory: "special purpose"
 
 alternativeNames:
   - "BSD 2-Clause Patent License"

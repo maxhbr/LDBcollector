@@ -7,6 +7,10 @@ category: "LGPL"
 shortName: "LGPL-2.0"
 spdxIdentifier: "LGPL-2.0-only"
 
+osiStatus: "approved"
+osiSupersededById: "LGPL-3.0"
+osiCategory: "popular/strong community"
+
 alternativeNames:
   - "GNU LIBRARY GENERAL PUBLIC LICENSE"
   - "GNU Library General Public License"
@@ -27,3 +31,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:lgpl-2.0"
+  - "osi:LGPL-2.0"

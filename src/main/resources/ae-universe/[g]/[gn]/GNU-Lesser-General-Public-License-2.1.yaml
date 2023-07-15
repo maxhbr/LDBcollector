@@ -10,6 +10,7 @@ spdxIdentifier: "LGPL-2.1-only"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "popular/strong community"
 
 alternativeNames:
   - "GNU Lesser General Public License, Version 2.1"

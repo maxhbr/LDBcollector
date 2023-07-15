@@ -9,6 +9,7 @@ spdxIdentifier: "LPPL-1.3c"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "LPPL, Version 1.3c"

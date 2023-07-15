@@ -7,6 +7,7 @@ category: "EFL"
 spdxIdentifier: "EFL-2.0"
 
 osiStatus: "approved"
+osiCategory: "redundant with more popular"
 
 alternativeNames:
   - "EFL, Version 2.0"

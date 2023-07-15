@@ -7,6 +7,7 @@ category: "OCLC"
 spdxIdentifier: "OCLC-2.0"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "OCLC, Version 2.0"

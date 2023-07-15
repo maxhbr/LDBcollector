@@ -7,6 +7,7 @@ category: "Python Software Foundation License"
 spdxIdentifier: "PSF-2.0"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "Python Software Foundation License"

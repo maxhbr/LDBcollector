@@ -9,6 +9,7 @@ spdxIdentifier: "ZPL-2.0"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "superseded"
 
 alternativeNames:
   - "Zope Public License 2.0"

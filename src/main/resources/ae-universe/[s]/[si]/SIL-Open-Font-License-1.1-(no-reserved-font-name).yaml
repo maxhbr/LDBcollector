@@ -9,6 +9,7 @@ spdxIdentifier: "OFL-1.1-no-RFN"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "special purpose"
 
 otherIds: 
   - "osi:OFL-1.1"

@@ -9,6 +9,7 @@ spdxIdentifier: "Zlib"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "other/miscellaneous"
 
 alternativeNames:
   - "zlib licence"

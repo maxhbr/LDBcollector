@@ -9,6 +9,7 @@ spdxIdentifier: "W3C"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"

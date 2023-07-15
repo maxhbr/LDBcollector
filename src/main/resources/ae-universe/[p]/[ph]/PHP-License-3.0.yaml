@@ -9,6 +9,7 @@ spdxIdentifier: "PHP-3.0"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "superseded"
 
 alternativeNames:
   - "PHP, Version 3.0"

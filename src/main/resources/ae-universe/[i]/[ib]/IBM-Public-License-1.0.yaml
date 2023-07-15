@@ -9,6 +9,7 @@ spdxIdentifier: "IPL-1.0"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "IPL, Version 1.0"

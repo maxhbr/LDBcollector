@@ -9,6 +9,7 @@ spdxIdentifier: "ZPL-2.1"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "redundant with more popular"
 
 alternativeNames:
   - "ZPL, Version 2.1"

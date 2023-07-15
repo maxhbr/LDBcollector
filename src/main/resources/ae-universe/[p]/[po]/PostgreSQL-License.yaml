@@ -9,6 +9,7 @@ spdxIdentifier: "PostgreSQL"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "redundant with more popular"
 
 alternativeNames:
   - "License: PostgreSQL"

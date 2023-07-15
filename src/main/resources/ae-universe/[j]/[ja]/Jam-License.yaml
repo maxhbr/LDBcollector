@@ -6,8 +6,12 @@ canonicalName: "Jam License"
 category: "Jam License"
 spdxIdentifier: "Jam"
 
+osiStatus: "approved"
+osiCategory: "other/miscellaneous"
+
 alternativeNames:
   - "Jam License"
 
 otherIds: 
   - "scancode:jam"
+  - "osi:Jam"

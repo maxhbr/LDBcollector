@@ -7,6 +7,7 @@ category: "Multics"
 spdxIdentifier: "Multics"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "Multics License"

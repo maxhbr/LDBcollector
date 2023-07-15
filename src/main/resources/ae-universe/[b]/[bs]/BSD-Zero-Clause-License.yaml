@@ -9,6 +9,7 @@ spdxIdentifier: "0BSD"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "other/miscellaneous"
 
 alternativeNames:
   - "BSD Zero Clause License"

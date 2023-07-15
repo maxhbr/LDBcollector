@@ -9,6 +9,7 @@ spdxIdentifier: "Naumen"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "Naumen License"

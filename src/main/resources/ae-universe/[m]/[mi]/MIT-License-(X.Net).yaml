@@ -9,6 +9,7 @@ spdxIdentifier: "Xnet"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "redundant with more popular"
 
 alternativeNames:
   - "X.Net License"

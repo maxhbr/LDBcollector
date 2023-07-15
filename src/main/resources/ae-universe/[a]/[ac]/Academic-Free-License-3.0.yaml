@@ -9,6 +9,7 @@ spdxIdentifier: "AFL-3.0"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "redundant with more popular"
 
 alternativeNames:
   - "AFL, Version 3.0"

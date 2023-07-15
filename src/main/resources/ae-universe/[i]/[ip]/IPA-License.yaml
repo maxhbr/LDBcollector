@@ -9,6 +9,7 @@ spdxIdentifier: "IPA"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "special purpose"
 
 alternativeNames:
   - "IPA License"

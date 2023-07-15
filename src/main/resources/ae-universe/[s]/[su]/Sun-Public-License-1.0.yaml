@@ -7,6 +7,7 @@ category: "SPL"
 spdxIdentifier: "SPL-1.0"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "SPL, Version 1.0"

@@ -10,6 +10,7 @@ spdxIdentifier: "LGPL-3.0-only"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "popular/strong community"
 
 alternativeNames:
   - "GNU General Lesser Public License (LGPL) version 3.0"

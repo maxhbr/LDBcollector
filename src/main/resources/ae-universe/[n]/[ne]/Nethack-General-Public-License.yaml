@@ -9,6 +9,7 @@ spdxIdentifier: "NGPL"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "NETHACK GENERAL PUBLIC LICENSE"

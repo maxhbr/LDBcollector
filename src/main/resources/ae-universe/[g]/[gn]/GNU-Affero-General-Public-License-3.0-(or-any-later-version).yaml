@@ -10,6 +10,7 @@ spdxIdentifier: "AGPL-3.0-or-later"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "uncategorized"
 
 alternativeNames:
   - "GNU Affero General Public License, Version 3.0+"

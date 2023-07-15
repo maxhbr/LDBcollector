@@ -9,6 +9,7 @@ spdxIdentifier: "Nokia"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "Nokia License"

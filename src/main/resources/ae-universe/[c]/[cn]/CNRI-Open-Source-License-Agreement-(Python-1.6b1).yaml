@@ -8,6 +8,7 @@ shortName: "CNRI-Python-1.6b1"
 spdxIdentifier: "CNRI-Python"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "http://spdx.org/licenses/CNRI-Python"

@@ -9,6 +9,7 @@ spdxIdentifier: "OFL-1.1"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "special purpose"
 
 alternativeNames:
   - "OFL, Version 1.1"

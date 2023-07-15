@@ -9,6 +9,7 @@ spdxIdentifier: "AAL"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "redundant with more popular"
 
 alternativeNames:
   - "Attribution Assurance License"

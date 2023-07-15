@@ -8,6 +8,9 @@ spdxIdentifier: "Unicode-DFS-2015"
 
 openCoDEStatus: "approved"
 
+osiStatus: "approved"
+osiCategory: "special purpose"
+
 alternativeNames:
   - "Unicode DFS, Version 2015"
   - "Unicode DFS 2015"
@@ -20,3 +23,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:unicode-dfs-2015"
+  - "osi:Unicode-DFS-2015"

@@ -31,6 +31,7 @@
 
 |<sup>Canonical Name</sup>|<sup>Category</sup>|<sup>Short Name</sup>|<sup>SPDX Identifier</sup>|<sup>OSI Status</sup>|<sup>Open CoDE Status</sup>|<sup>ScanCode</sup>|<sup>Matched ScanCode</sup>|<sup>Type</sup>|
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|<sup>[LAB Public License proposal]([la]/LAB-Public-License-proposal.yaml)</sup>|<sup>LAB</sup>|<sup>LAB-proposal</sup>| |<sup>[unclear](https://opensource.org/licenses/?ls=LAB-proposal)</sup>|<sup> </sup>| | |<sup>terms</sup>|
 |<sup>[LAL 1.2]([la]/LAL-1.2.yaml)</sup>|<sup>LAL</sup>|<sup> </sup>|<sup>[LAL-1.2](https://spdx.org/licenses/LAL-1.2.html)</sup>| |<sup> </sup>|<sup>[lal-1.2](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lal-1.2.LICENSE)</sup>|<sup>[lal-1.2](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lal-1.2.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[LAL 1.3]([la]/LAL-1.3.yaml)</sup>|<sup>LAL</sup>|<sup> </sup>|<sup>[LAL-1.3](https://spdx.org/licenses/LAL-1.3.html)</sup>| |<sup> </sup>|<sup>[lal-1.3](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lal-1.3.LICENSE)</sup>|<sup>[lal-1.3](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lal-1.3.LICENSE)</sup>|<sup>terms</sup>|
 |<sup>[Lapack License]([la]/Lapack-License.yaml)</sup>|<sup>Lapack</sup>|<sup>Lapack</sup>| | |<sup> </sup>| |<sup>[blas-2017](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/blas-2017.LICENSE)</sup>|<sup>terms</sup>|

@@ -9,6 +9,7 @@ spdxIdentifier: "Sleepycat"
 openCoDEStatus: "approved"
 
 osiStatus: "approved"
+osiCategory: "non-reusable"
 
 alternativeNames:
   - "Sleepycat License"
