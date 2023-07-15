@@ -10,3 +10,5 @@ alternativeNames:
   - "AdaCore-doc"
   - "AdaCore Doc License"
 
+otherIds: 
+  - "scancode:adacore-doc"
