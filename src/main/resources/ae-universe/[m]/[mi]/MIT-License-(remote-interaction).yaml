@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Open Project Public License (OPPL)"
-category: "OPPL"
-shortName: "OPPL"
+canonicalName: "MIT License (remote interaction)"
+category: "MIT"
+shortName: "MIT-remote-interaction"
 
 alternativeNames:
-  - "Open Project Public License (OPPL)"
+  - "MIT License (remotely interaction)"
 
 otherIds: 
-  - "osi:OPPL"
+  - "scancode:saas-mit"
