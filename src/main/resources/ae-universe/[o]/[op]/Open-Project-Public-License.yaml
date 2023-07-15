@@ -2,12 +2,14 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Open Project Public License (OPPL)"
+canonicalName: "Open Project Public License"
 category: "OPPL"
 shortName: "OPPL"
 
+osiStatus: "unclear"
+
 alternativeNames:
-  - "Open Project Public License (OPPL)"
+  - "Open Project Public License"
 
 otherIds: 
   - "osi:OPPL"
