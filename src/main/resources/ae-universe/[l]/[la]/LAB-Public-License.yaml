@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "LAB Public License proposal"
+canonicalName: "LAB Public License"
 category: "LAB"
-shortName: "LAB-proposal"
+shortName: "LAB-PL"
 
 osiStatus: "unclear"
 
@@ -13,4 +13,4 @@ alternativeNames:
   - "LAB Public License proposal"
 
 otherIds: 
-  - "osi:LAB-proposal"
+  - "osi:LAB-PL"

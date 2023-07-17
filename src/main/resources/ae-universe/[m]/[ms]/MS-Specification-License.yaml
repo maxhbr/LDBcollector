@@ -9,3 +9,5 @@ shortName: "MS-Specification"
 alternativeNames:
   - "msdn.microsoft.com/library/en-us/odcXMLRef/html/odcXMLRefLegalNotice"
 
+otherIds: 
+  - "scancode:ms-specification"

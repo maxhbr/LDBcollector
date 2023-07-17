@@ -8,3 +8,5 @@ shortName: "FOSS-Exception-1.0"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:dbmx-foss-exception-1.0.9"

@@ -9,3 +9,5 @@ shortName: "NPSL-0.92"
 alternativeNames:
   - "Nmap Public Source License Version 0.92"
 
+otherIds: 
+  - "scancode:npsl-exception-0.92"

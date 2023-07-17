@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
 canonicalName: "Initial Developer Public License"
-category: "Initial Developer Public License"
+category: "IDPL"
 shortName: "Initial-Developer-Public"
 
 osiStatus: "unclear"
@@ -14,3 +14,4 @@ alternativeNames:
 
 otherIds: 
   - "scancode:initial-developer-public"
+  - "osi:IDPL"

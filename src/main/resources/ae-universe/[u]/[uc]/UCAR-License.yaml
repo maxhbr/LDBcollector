@@ -9,3 +9,5 @@ spdxIdentifier: "UCAR"
 alternativeNames:
   - "UCAR License"
 
+otherIds: 
+  - "scancode:ucar"

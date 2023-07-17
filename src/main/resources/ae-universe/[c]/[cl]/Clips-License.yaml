@@ -9,3 +9,5 @@ spdxIdentifier: "Clips"
 alternativeNames:
   - "Clips License"
 
+otherIds: 
+  - "scancode:clips-2017"

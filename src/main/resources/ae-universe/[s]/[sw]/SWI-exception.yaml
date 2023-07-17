@@ -12,3 +12,5 @@ type: "exception"
 alternativeNames:
   - "SWI-exception"
 
+otherIds: 
+  - "scancode:swi-exception"

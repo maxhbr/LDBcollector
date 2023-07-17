@@ -9,3 +9,5 @@ spdxIdentifier: "TPDL"
 alternativeNames:
   - "Time::ParseDate License"
 
+otherIds: 
+  - "scancode:tpdl"

@@ -10,3 +10,5 @@ alternativeNames:
   - "Python-2.0.1"
   - "Python License 2.0.1"
 
+otherIds: 
+  - "scancode:python-2.0.1"
