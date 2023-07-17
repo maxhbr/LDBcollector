@@ -109,7 +109,7 @@ internal dataset to produce the corrected outputs.
 ## Further information
 {metæffekt} provides visualization of the {metæffekt}-universe on https://metaeffekt.com/#universe.
 
-Currently, ScanCode version 31.2.1 is used.
+Currently, ScanCode version 32.0.4 is used.
 
 Non-approved OSI status information is not yet complete; more details will be added short-term.
 Please note in this context, that all OSI status details except `approved` convey unofficial information collected
@@ -128,6 +128,7 @@ The following table summarizes and details the OSI status values:
 | withdrawn        | The license was withdrawn by the submitter (i.e. the license stuart).                                                           | no                  |
 | rejected         | The license was rejected by OSI. The license is either not valid license or does not conform to the OSI Open Source Definition. | no                  |
 | ineligible       | The terms are not considered a (software) license or show obvious conditions adverse to the OSI Open Source Definition.         | no                  |
+| unclear          | Information from OSI mailing lists and wiki content do not convey sufficient results. Links broken.                             | no                  |
 
 Regarding SPDX the latest version from https://github.com/spdx/license-list-data
 main branch is used to synchronize the {metæffekt}-universe.
