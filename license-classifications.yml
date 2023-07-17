@@ -4159,7 +4159,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-- id: "LicenseRef-scancode-afpl-9.0"
+  - id: "LicenseRef-scancode-afpl-9.0"
     categories:
       - "copyleft-strong"
       - "property:non-commercial"      
