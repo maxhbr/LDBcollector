@@ -4159,13 +4159,6 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  - id: "LicenseRef-scancode-eclipse-sua-2005"
-    categories:
-      - "copyleft-module-level"
-      - "property:include-in-notice-file"
-      - "property:distribute-source-code"
-      - "property:patent-clause"
-
   - id: "LicenseRef-scancode-afpl-9.0"
     categories:
       - "free-restricted"
