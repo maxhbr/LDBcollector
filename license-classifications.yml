@@ -4168,7 +4168,7 @@ categorizations:
 
   - id: "LicenseRef-scancode-afpl-9.0"
     categories:
-      - "copyleft-strong"
-      - "property:non-commercial"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
+      - "property:non-commercial"
