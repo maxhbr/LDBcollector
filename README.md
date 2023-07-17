@@ -2,9 +2,9 @@
 Project providing insights on the {metæffekt} license database covering
 
 * 2032 modelled license terms,
-* 129 exceptions,
+* 130 exceptions,
 * 169 specific and commonly used license expressions, and
-* 46 markers.
+* 47 markers.
 
 as of 17th July, 2023.
 
