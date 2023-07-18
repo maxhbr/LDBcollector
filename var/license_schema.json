@@ -1,0 +1,35 @@
+{
+    "$schema" : "http://json-schema.org/draft-07/schema#",
+    "$id" : "",
+    "title" : "License db",
+    "type" : "object",
+    "properties" : {
+        "meta" : {
+        "type" : "object",
+        "description" : "",
+            "properties" : {
+                "disclaimer": { "type": "string" },
+                "version": { "type": "string" },
+                "author": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "comment": { "type": "string" },
+                "date": { "type": "string" }
+            },
+            "required" : [ "date", "version", "author" ]
+        }
+    },
+    "spdxid": { "type": "string" },
+    "other_names": {
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
+    },
+    "scancode-key":{ "type": "string" },
+    "name": { "type": "string" },
+    "required" : [ "meta", "spdxid", "name" ]
+}
