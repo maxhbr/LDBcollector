@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "disclaimer": "bla bla ",
+        "version": "1.0",
+        "author": [ "Henrik Sandklef <hesa@sandklef.com>" ],
+        "comment": "initital version",
+        "date": "2023-07-05"
+    },
+    "spdxid": "GPL-2.0-or-later",
+    "scancode-key": "gpl-2.0-plus",
+    "name": "GPL 2.0 or later",
+    "other-names": [
+        "GPLv2+",
+        "GPL2+"
+    ]
+}

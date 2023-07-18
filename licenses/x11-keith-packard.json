@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "disclaimer": "bla bla ",
+        "version": "1.0",
+        "author": [ "Henrik Sandklef <hesa@sandklef.com>" ],
+        "comment": "initital version",
+        "date": "2023-07-05"
+    },
+    "spdxid": "LicenseRef-flict-keith-packard",
+    "scancode-key": "x11-keith-packard",
+    "name": "X11-Style (Keith Packard)",
+    "other-names": [
+    ],
+    "compatibility_as": "HPND",
+    "license_text_url": "https://scancode-licensedb.aboutcode.org/x11-keith-packard.LICENSE",
+    "comment": "This license can be found in misc freedesktop/X11 related projects."
+}

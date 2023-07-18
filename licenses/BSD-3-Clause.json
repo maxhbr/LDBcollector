@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "disclaimer": "bla bla ",
+        "version": "1.0",
+        "author": [ "Henrik Sandklef <hesa@sandklef.com>" ],
+        "comment": "initital version",
+        "date": "2023-07-05"
+    },
+    "spdxid": "BSD-3-Clause",
+    "other_names": [ "BSD3" ],
+    "scancode-key": "bsd-new",
+    "name": "The 3-Clause BSD License"
+}
