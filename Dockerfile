@@ -9,7 +9,23 @@
 # https://stackoverflow.com/questions/53835198/integrating-python-poetry-with-docker
 # https://bmaingret.github.io/blog/2021-11-15-Docker-and-Poetry
 
-FROM bitnami/python:3.10
+# Build vite modules on a separate image so we do not
+# install node on the runtime image
+FROM node:latest as build
+
+ARG APP_NAME=hermine
+ARG APP_PATH=/opt/$APP_NAME
+
+WORKDIR $APP_PATH
+
+COPY package.json package-lock.json $APP_PATH
+RUN npm ci
+
+COPY . $APP_PATH
+RUN npm run build
+
+
+FROM bitnami/python:3.10 as runtime
 
 ARG APP_NAME=hermine
 ARG APP_PATH=/opt/$APP_NAME
@@ -30,11 +46,15 @@ WORKDIR $APP_PATH
 # debug
 RUN apt update && apt install -y postgresql-client net-tools
 
+# install poetry and dependencies
 RUN pip install "poetry==$POETRY_VERSION" gunicorn
 COPY pyproject.toml poetry.lock $APP_PATH/
-
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi --without dev
+
+# copy node modules
+COPY --from=build $APP_PATH/vite_modules/dist $APP_PATH/vite_modules/dist
+
 COPY hermine $APP_PATH/
 # COPY shared.json $APP_PATH/
 COPY docker/docker-entrypoint.sh $APP_PATH/

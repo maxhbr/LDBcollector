@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "vite": "^4.4.4"
+  },
+  "scripts": {
+    "dev": "vite build -w --emptyOutDir",
+    "build": "vite build"
+  }
+}
