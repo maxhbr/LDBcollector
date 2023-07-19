@@ -7,6 +7,8 @@
 "use strict";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
+import "./fonts/nunito.css";
 import "./theme/main.scss";
 
 
