@@ -21,6 +21,8 @@ services:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
       - SECRET=${HERMINE_SECRET:?err}
       - SUPERUSER=admin
       - PASSWORD=admin
