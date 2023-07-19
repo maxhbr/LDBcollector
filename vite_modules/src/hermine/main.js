@@ -1,8 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Viktor Kuzhelny https://github.com/vikdiesel/admin-one-bulma-dashboard/
-//
-// SPDX-License-Identifier: MIT
+/*
+ * SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
 
 "use strict";
+
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 /* Aside: submenus toggle */
 Array.from(document.getElementsByClassName('menu is-menu-main')).forEach(function (el) {
