@@ -7,6 +7,9 @@
 "use strict";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./theme/main.scss";
+
+
 
 /* Aside: submenus toggle */
 Array.from(document.getElementsByClassName('menu is-menu-main')).forEach(function (el) {
