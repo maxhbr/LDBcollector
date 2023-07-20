@@ -3,12 +3,3 @@
 expression = "Apache-2.0 WITH Swift-exception"
 status = [ "allowed" ]
 
-[fedora]
-
-legacy-name = [
-    "Apache Software License 2.0"
-]
-
-legacy-abbreviation = [
-    "ASL 2.0"
-]
