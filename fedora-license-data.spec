@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.25
+Version:        1.26
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,17 @@ make check-grammar
 
 
 %changelog
+* Thu Jul 20 2023 Miroslav Suchý <msuchy@redhat.com> 1.26-1
+- add not-allowed LicenseRef-verbatim
+- Add Apache-2.0 WITH Swift-exception
+- document timing of releases
+- mark HPND-sell-variant as variant of MIT in legacy system
+- Add source-highlight public domain delcarations
+- Add usage note for CC0-1.0 addressing liboqs issue
+- Add gdb/GNU libiberty public domain delcarations
+- Add CFITSIO license
+- add licenses *GPL*WITH Linux-syscall-note
+
 * Thu Jul 06 2023 Miroslav Suchý <msuchy@redhat.com> 1.25-1
 - Add legacy attributes to HP-1986 - variant of legacy MIT license
 - Add dtoa
