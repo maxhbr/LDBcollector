@@ -1,7 +1,5 @@
 # Fedora License Data Project
 
-[![REUSE status](https://api.reuse.software/badge/gitlab.com/fedora/legal/fedora-license-data)](https://api.reuse.software/info/gitlab.com/fedora/legal/fedora-license-data)
-
 This project contains data for licenses that have been reviewed
 for use in the Fedora Linux project. For more on the criteria 
 Fedora applies for such review, see [License Approval](https://docs.fedoraproject.org/en-US/legal/license-approval)
@@ -48,4 +46,13 @@ The files for [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal):
 
  * [allowed-licenses.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/allowed-licenses.adoc?job=legal-doc)
  * [not-allowed-licenses.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/not-allowed-licenses.adoc?job=legal-doc)
- * [all-allowed.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/all-allowed.adoc?job=legal-doc)
+ * [all-allowed.adoc](https://gitlab.com/fedora/legal/fedora-license-data/-/jobs/artifacts/main/raw/all-allowed.adoc?job=legal-doc
+
+## License
+
+CC0-1.0 
+
+For detailsed license infromation see [REUSE DEP5 file](https://gitlab.com/fedora/legal/fedora-license-data/-/blob/main/.reuse/dep5).
+
+[![REUSE status](https://api.reuse.software/badge/gitlab.com/fedora/legal/fedora-license-data)](https://api.reuse.software/info/gitlab.com/fedora/legal/fedora-license-data)
+
