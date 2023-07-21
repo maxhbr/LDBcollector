@@ -11,11 +11,11 @@ openCoDEStatus: "approved"
 osiStatus: "pending"
 
 alternativeNames:
-  - "Creative Commons Attribution 2.5"
   - "CC-A 2.5"
   - "CC-BY 2.5"
   - "CC-BY-2.5"
   - "http://creativecommons.org/licenses/by/2.5"
+  - "Creative Commons Attribution 2.5 CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES"
 
 otherIds: 
   - "scancode:cc-by-2.5"
