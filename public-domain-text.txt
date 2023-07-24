@@ -180,6 +180,181 @@ text = '''
 Still 100% Public Domain
 '''
 
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/alloca.c#L1-L27
+text = '''
+alloca -- (mostly) portable public-domain implementation -- D A Gwyn
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/ext/date/date_strftime.c#L2-L4
+text = '''
+date_strftime.c: based on a public-domain implementation of ANSI C
+library routine strftime, which is originally written by Arnold
+Robbins.
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/strftime.c#L4-L47
+text = '''
+Public-domain implementation of ANSI C library routine.
+
+It's written in old-style C for maximal portability.
+However, since I'm used to prototypes, I've included them too.
+
+If you want stuff in the System V ascftime routine, add the SYSV_EXT define.
+For extensions from SunOS, add SUNOS_EXT.
+For stuff needed to implement the P1003.2 date command, add POSIX2_DATE.
+For VMS dates, add VMS_EXT.
+For a an RFC822 time format, add MAILHEADER_EXT.
+For ISO week years, add ISO_DATE_EXT.
+For complete POSIX semantics, add POSIX_SEMANTICS.
+
+The code for %c, %x, and %X now follows the 1003.2 specification for
+the POSIX locale.
+This version ignores LOCALE information.
+It also doesn't worry about multi-byte characters.
+So there.
+
+This file is also shipped with GAWK (GNU Awk), gawk specific bits of
+code are included if GAWK is defined.
+
+Arnold Robbins
+January, February, March, 1991
+Updated March, April 1992
+Updated April, 1993
+Updated February, 1994
+Updated May, 1994
+Updated January, 1995
+Updated September, 1995
+Updated January, 1996
+
+Fixes from ado@elsie.nci.nih.gov
+February 1991, May 1992
+Fixes from Tor Lillqvist tml@tik.vtt.fi
+May, 1993
+Further fixes from ado@elsie.nci.nih.gov
+February 1994
+%z code from chip@chinacat.unicom.com
+Applied September 1995
+%V code fixed (again) and %G, %g added,
+January 1996
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/win32/win32.c#L5147
+text = '''
+License: Public Domain, copied from mingw headers
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/tgamma.c#L1-L7
+text = '''
+tgamma.c  - public domain implementation of function tgamma(3m)
+reference - Haruhiko Okumura: C-gengo niyoru saishin algorithm jiten
+            (New Algorithm handbook in C language) (Gijyutsu hyouron
+            sha, Tokyo, 1991) [in Japanese]
+            http://oku.edu.mie-u.ac.jp/~okumura/algo/
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/strstr.c#L1
+text = '''
+public domain rewrite of strstr(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/strerror.c#L1
+text = '''
+public domain rewrite of strerror(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/strchr.c#L1
+text = '''
+public domain rewrite of strchr(3) and strrchr(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/memmove.c#L1
+text = '''
+public domain rewrite of memcmp(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/memcmp.c#L1
+text = '''
+public domain rewrite of memcmp(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/lgamma_r.c#L1-L9
+text = '''
+lgamma_r.c  - public domain implementation of function lgamma_r(3m)
+lgamma_r() is based on gamma().  modified by Tanaka Akira.
+reference - Haruhiko Okumura: C-gengo niyoru saishin algorithm jiten
+            (New Algorithm handbook in C language) (Gijyutsu hyouron
+            sha, Tokyo, 1991) [in Japanese]
+            http://oku.edu.mie-u.ac.jp/~okumura/algo/
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/hypot.c#L1
+text = '''
+public domain rewrite of hypot
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/erf.c#L1-L5
+text = '''
+erf.c  - public domain implementation of error function erf(3m)
+reference - Haruhiko Okumura: C-gengo niyoru saishin algorithm jiten
+            (New Algorithm handbook in C language) (Gijyutsu hyouron
+            sha, Tokyo, 1991) p.227 [in Japanese]
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/missing/acosh.c#L8
+text = '''
+public domain rewrite of acosh(3), asinh(3) and atanh(3)
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/lib/bundler/digest.rb#L3
+text = '''
+This code was extracted from https://github.com/Solistra/ruby-digest which is under public domain
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/st.c#L1-L5
+text = '''
+This is a public domain general purpose hash table package
+originally written by Peter Moore @ UCB.
+The hash table data structures were redesigned and the package was
+rewritten by Vladimir Makarov <vmakarov@redhat.com>.
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/include/ruby/st.h#L1-L5
+text = '''
+This is a public domain general purpose hash table package
+originally written by Peter Moore @ UCB.
+The hash table data structures were redesigned and the package was
+rewritten by Vladimir Makarov <vmakarov@redhat.com>.
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/ext/digest/sha1/sha1.h#L8
+text = '''
+100% Public Domain
+'''
+
+package = ruby
+location = https://github.com/ruby/ruby/blob/95a1d1fde8fb13d6b7bd6d63864d3bae8b34b0b0/ext/digest/sha1/sha1.c#L9
+text = '''
+100% Public Domain
+'''
+
 package = perl
 location = https://github.com/Perl/perl5/blob/blead/ext/SDBM_File/sdbm.h#L4-L5
 text = '''
