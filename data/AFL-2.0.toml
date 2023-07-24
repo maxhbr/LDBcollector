@@ -1,0 +1,15 @@
+[license]
+
+expression = "AFL-2.0"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = ["Academic Free License"]
+
+legacy-abbreviation = [ "AFL" ]
+
+notes = '''
+The Fedora wiki list in its most recent version associated the Callaway short name "AFL" with AFL 3.0. However, AFL was undoubtedly meant to encompass earlier AFL versions encountered in Fedora packages, including at least AFL 2.0.
+'''
+
