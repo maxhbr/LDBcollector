@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/gitlab.com/fedora/legal/fedora-license-data)](https://api.reuse.software/info/gitlab.com/fedora/legal/fedora-license-data)
+
 # Fedora License Data Project
 
 This project contains data for licenses that have been reviewed
@@ -52,7 +54,6 @@ The files for [Fedora Docs Legal](https://docs.fedoraproject.org/en-US/legal):
 
 CC0-1.0 
 
-For detailsed license infromation see [REUSE DEP5 file](https://gitlab.com/fedora/legal/fedora-license-data/-/blob/main/.reuse/dep5).
+For detailed license information see [REUSE DEP5 file](https://gitlab.com/fedora/legal/fedora-license-data/-/blob/main/.reuse/dep5).
 
-[![REUSE status](https://api.reuse.software/badge/gitlab.com/fedora/legal/fedora-license-data)](https://api.reuse.software/info/gitlab.com/fedora/legal/fedora-license-data)
 
