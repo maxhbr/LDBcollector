@@ -37,6 +37,8 @@ ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING", "False").lower() == "true"
 
 if (host := os.environ.get("HOST")) is not None:
     ALLOWED_HOSTS = [host]
+    if (csrf := os.environ.get("CSRF_TRUSTED_ORIGINS")) is not None:
+        host =  csrf
     CSRF_TRUSTED_ORIGINS = ["https://" + host]
     USE_X_FORWARDED_HOST = True
 else:
