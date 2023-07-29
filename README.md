@@ -4,6 +4,11 @@
 
 ![Image text](https://github.com/osslab-pku/RecLicense/blob/1caf4372960a9a54cfcbfbbbdf9ee86ab922d61a/frontend/src/assets/tool.png)
 
+## 引用
+```
+W. Xu, X. Wu, R. He and M. Zhou, "LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects," 2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion), Melbourne, Australia, 2023, pp. 180-183, doi: 10.1109/ICSE-Companion58688.2023.00050.
+```
+
 ## 简介
 
 LicenseRec是一个开源许可证推荐工具，帮助开发者为他们的开源软件项目选择一个最佳许可证。
@@ -29,6 +34,11 @@ LicenseRec依赖于以下开源项目。
 * [scancode-tookit](https://github.com/nexB/scancode-toolkit)采用[Apache-2.0](https://opensource.org/licenses/Apache-2.0)授权。（我们增加和修改了一些检测规则。）
 * [depend](https://github.com/multilang-depends/depends) 采用[MIT](https://opensource.org/licenses/MIT)授权。
 
+
+## Citation
+```
+W. Xu, X. Wu, R. He and M. Zhou, "LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects," 2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion), Melbourne, Australia, 2023, pp. 180-183, doi: 10.1109/ICSE-Companion58688.2023.00050.
+```
 
 ## Introduction
 
