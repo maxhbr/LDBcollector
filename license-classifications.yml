@@ -57,10 +57,10 @@ categories:
   - name: "free-restricted"
     description: >-
       A permissive or open source style license that contains restrictions regarding the usage of
-      the work (for example, where a software is not allowed to be used in nuclear facilities) or the
-      redistribution of the software (for example, where commercial redistribution of the software
-      is not allowed without express permission). These licenses are not open source licenses, since
-      they do not include all the required freedoms.
+      the work (for example, where a software is not allowed to be used in nuclear facilities) or
+      the redistribution of the software (for example, where commercial redistribution of the 
+      software is not allowed without express permission). These licenses are not open source 
+      licenses, since they do not include all the required freedoms.
 
   - name: "proprietary-free"
     description: >-
@@ -76,10 +76,10 @@ categories:
 
   - name: "public-domain"
     description: >-
-      A dedication by which a work is placed into the public domain without any explicit obligations,
-      but which may have a notice that must be kept with the work per project policy. The match may
-      be to software, code examples on a website, published public domain specifications or another
-      type of publication.
+      A dedication by which a work is placed into the public domain without any explicit 
+      obligations, but which may have a notice that must be kept with the work per project policy.
+      The match maybe to software, code examples on a website, published public domain
+      specifications or another type of publication.
 
   - name: "source-available"
     description: >-
@@ -90,7 +90,8 @@ categories:
   - name: "unstated"
     description: >-
       A statement used when no license is stated, but the content is likely under copyright. Common
-      examples include code snippets from publications and websites (such as those from O'Reilly Media).
+      examples include code snippets from publications and websites (such as those from O'Reilly 
+      Media).
 
   - name: "irrelevant"
     description: >-
