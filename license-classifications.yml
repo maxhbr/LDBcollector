@@ -162,13 +162,13 @@ categories:
       This property indicates that the scanner finding requires manual conclusion.
 
   - name: "property:unchecked"
-    description:
+    description: >-
       This property marking means that the properties of the license have not been checked. Ask for
       license categorization/checking. This typically is an uncommon license, which has not yet been
       fully categorized.
 
  - name: "property:spefication-license"
-    description:
+    description: >-
       An open source style license that is typically applied to spefication files and has some
       important limitations, such as a prohibition to change the licensed work. These licenses
       would mostly be in the free-restricited category. This property enables users an option to
