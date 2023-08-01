@@ -168,7 +168,7 @@ categories:
       fully categorized.
 
  - name: "property:spefication-license"
-    description: >-
+    description:
       An open source style license that is typically applied to spefication files and has some
       important limitations, such as a prohibition to change the licensed work. These licenses
       would mostly be in the free-restricited category. This property enables users an option to
