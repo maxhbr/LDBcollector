@@ -24,6 +24,14 @@
             [clojure.java.io :as io]
             [clj-base62.core :as base62]))
 
+(defn mapfonv
+  "Returns a new map where f has been applied to all of the values of m."
+  [f m]
+  (when m
+    (into {}
+          (for [[k v] m]
+            [k (f v)]))))
+
 (defn map-pad
   "Like map, but when presented with multiple collections of different lengths,
   'pads out' the missing elements with nil rather than terminating early."
@@ -85,14 +93,24 @@
   (when s
     (java.lang.String. ^bytes (base62/decode s) (java.nio.charset.StandardCharsets/UTF_8))))
 
+(defn valid-http-uri?
+  "Returns true if given string is a valid HTTP or HTTPS URI."
+  [^String s]
+  ; Note: no nil check needed since the isValid method handles nil sanely
+  (.isValid (org.apache.commons.validator.routines.UrlValidator. ^"[Ljava.lang.String;" (into-array String ["http" "https"])) s))
+
 (defn simplify-uri
-  "Simplifies a URI (which can be a string, java.net.URL, or java.net.URI).
-  Returns a string."
+  "Simplifies a URI (which can be a string, java.net.URL, or java.net.URI) if
+  possible, returning a String. Returns nil if the input is nil or blank."
   [uri]
-  (when uri
-    (s/replace (s/replace (s/lower-case (s/trim (str uri)))
-                          "https://" "http://")
-               "://www." "://")))
+  (let [uri (str uri)]
+    (when-not (s/blank? uri)
+      (let [luri (s/lower-case (s/trim uri))]
+        (if (valid-http-uri? luri)
+          (-> luri
+              (s/replace #"\Ahttps?://(www\.)?" "http://")  ; Normalise to http and strip any www. extension on hostname
+              (s/replace #"\.[\p{Alnum}]{3,}\z" ""))        ; Strip file type extension (if any)
+          luri)))))
 
 (defmulti filename
   "Returns just the name component of the given file or path string, excluding

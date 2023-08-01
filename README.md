@@ -13,7 +13,7 @@ A Clojure library for software license detection.  It does this by combing throu
 
 This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, I can thoroughly recommend [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial).
 
-## Requirements
+## System Requirements
 
 * `lice-comb` (all versions) requires an internet connection.
 

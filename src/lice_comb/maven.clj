@@ -65,16 +65,15 @@
          (.toURI local-pom)
          (first (filter uri-resolves? (map #(java.net.URI. (str % "/" gav-path)) remote-maven-repos))))))))
 
+;####TODO: Check both URI and name and merge the results!
 (defn- licenses-from-pair
   "Attempts to determine the license(s) (a set) from a POM license name/URL pair."
   [{:keys [name url]}]
   ; Attempt to find a match by URL first
-  (if-let [licenses (lcmtch/fuzzy-match-uri->license-ids url)]
+  (if-let [licenses (lcmtch/uri->ids url)]
     licenses
     ; Then match by name
-    (if-let [licenses (lcmtch/fuzzy-match-name->license-ids name)]
-      licenses
-      #{(lcmtch/name->unlisted name)})))  ; Last resort - return an unlisted identifier that includes the name (if any)
+    (lcmtch/name->ids name)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
