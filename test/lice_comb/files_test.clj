@@ -98,7 +98,7 @@
     (is (= #{"LGPL-2.1"}   (file->ids "https://www.gnu.org/licenses/lgpl-2.1.txt")))
     (is (= #{"LGPL-3.0"}   (file->ids "https://www.gnu.org/licenses/lgpl-3.0.txt")))
     (is (= #{"AGPL-3.0"}   (file->ids "https://www.gnu.org/licenses/agpl-3.0.txt")))
-    (is (= #{"Unlicense"}  (file->ids "https://unlicense.org/UNLICENSE")))
+;    (is (= #{"Unlicense"}  (file->ids "https://unlicense.org/UNLICENSE")))  ; As of June 2023, unlicense.org no longer resolves
     (is (= #{"WTFPL"}      (file->ids "http://www.wtfpl.net/txt/copying/"))))
   (testing "POM files"
     (is (= #{"Apache-2.0"}   (file->ids (str test-data-path "/simple.pom"))))
