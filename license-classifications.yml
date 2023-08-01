@@ -119,7 +119,7 @@ categories:
 
   - name: "property:mark-modifications"
     description: >-
-      The licence includes an obligation to mark all modifications.
+      The licence includes an obligation to mark all modifications of licensed content.
 
   - name: "property:antitivo-clause"
     description: >-
@@ -166,6 +166,14 @@ categories:
       This property marking means that the properties of the license have not been checked. Ask for
       license categorization/checking. This typically is an uncommon license, which has not yet been
       fully categorized.
+
+ - name: "property:spefication-license"
+    description:
+      An open source style license that is typically applied to spefication files and has some
+      important limitations, such as a prohibition to change the licensed work. These licenses
+      would mostly be in the free-restricited category. This property enables users an option to
+      automatically accept specification licenses even if free-restricted otherwise creates rule
+      violations.
 
 categorizations:
   # https://spdx.org/licenses/AGPL-1.0-only.html
