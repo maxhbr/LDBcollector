@@ -10,13 +10,9 @@ SPDX-License-Identifier: MIT
   <head>
     {% load static %}
 
-    <link rel="preload" href="{% static 'cube/css/bulma.css' %}" as="style" />
-    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/bulma.css' %}" />
-    <link rel="preload" href="{% static 'cube/css/fontawesome-free-all.css' %}" as="style" />
-    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/fontawesome-free-all.css' %}" />
     <link rel="preload" href="{% static 'cube/css/login.css' %}" as="style" />
     <link rel="stylesheet" type="text/css" href="{% static 'cube/css/login.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'cube/css/nunito.css' %}" />
+    {% include "hermine/index.html" %}
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
