@@ -175,6 +175,12 @@ categories:
       automatically accept specification licenses even if free-restricted otherwise creates rule
       violations.
 
+  - name: "property:creativecommons"
+    description: >-
+      Licenses and dedications that are published and maintained by the Creative Commons. Often
+      these apply to content that is not software while sometimes also software is licensed
+      under these.
+
 categorizations:
   # https://spdx.org/licenses/AGPL-1.0-only.html
   - id: "AGPL-1.0"
@@ -3107,7 +3113,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-ND-3.0.html
   - id: "CC-BY-ND-3.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
 
@@ -3269,7 +3275,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-1.0.html
   - id: "CC-BY-NC-1.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3277,7 +3283,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-2.0.html
   - id: "CC-BY-NC-2.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3285,7 +3291,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-2.5.html
   - id: "CC-BY-NC-2.5"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3293,7 +3299,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-3.0.html
   - id: "CC-BY-NC-3.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3301,7 +3307,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-4.0.html
   - id: "CC-BY-NC-4.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3309,7 +3315,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-ND-1.0.html
   - id: "CC-BY-NC-ND-1.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3317,7 +3323,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
   - id: "CC-BY-NC-ND-2.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3325,7 +3331,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
   - id: "CC-BY-NC-ND-2.5"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3333,7 +3339,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
   - id: "CC-BY-NC-ND-3.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3341,7 +3347,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
   - id: "CC-BY-NC-SA-1.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3349,7 +3355,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-SA-2.0.html
   - id: "CC-BY-NC-SA-2.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3357,7 +3363,7 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-SA-3.0.html
   - id: "CC-BY-NC-SA-3.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
@@ -3365,28 +3371,28 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-ND-1.0.html
   - id: "CC-BY-ND-1.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-ND-2.0.html
   - id: "CC-BY-ND-2.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-ND-2.5.html
   - id: "CC-BY-ND-2.5"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-ND-4.0.html
   - id: "CC-BY-ND-4.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
 
