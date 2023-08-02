@@ -54,7 +54,7 @@ RUN poetry config virtualenvs.create false && \
 
 COPY hermine $APP_PATH/
 # copy node modules
-COPY --from=build $APP_PATH/hermine/vite_modules/dist $APP_PATH/hermine/vite_modules/dist
+COPY --from=build $APP_PATH/hermine/vite_modules/dist $APP_PATH/vite_modules/dist
 
 # COPY shared.json $APP_PATH/
 COPY docker/docker-entrypoint.sh $APP_PATH/
