@@ -10,6 +10,7 @@ from django.core.management import BaseCommand
 from django.core.management import call_command
 from django.core.serializers import deserialize
 from django.core.serializers.base import DeserializationError
+from django.conf import settings
 
 logger = logging.getLogger(__name__)
 
@@ -24,7 +25,11 @@ class Command(BaseCommand):
 
     def handle(self, filename, *args, **options):
         # Delete current shared database file
-        os.remove("shared.sqlite3")
+        try:
+            os.remove(os.path.join(settings.BASE_DIR, "shared.sqlite3"))
+        except FileNotFoundError:
+            pass
+
         # Run all migrations on the shared database
         call_command("migrate", database="shared", interactive=False, verbosity=0)
 
