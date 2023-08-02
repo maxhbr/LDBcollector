@@ -52,10 +52,10 @@ COPY pyproject.toml poetry.lock $APP_PATH/
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi --without dev
 
-# copy node modules
-COPY --from=build $APP_PATH/vite_modules/dist $APP_PATH/vite_modules/dist
-
 COPY hermine $APP_PATH/
+# copy node modules
+COPY --from=build $APP_PATH/hermine/vite_modules/dist $APP_PATH/hermine/vite_modules/dist
+
 # COPY shared.json $APP_PATH/
 COPY docker/docker-entrypoint.sh $APP_PATH/
 COPY docker/docker_secrets.py $APP_PATH/hermine/mysecrets.py
