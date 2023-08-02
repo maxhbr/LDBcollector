@@ -19,11 +19,10 @@ import os
 
 from django.contrib import messages
 
-import hermine.mysecrets as secrets
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+import hermine.mysecrets as secrets  # noqa E402
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -106,7 +105,7 @@ WSGI_APPLICATION = "hermine.wsgi.application"
 DATABASES = secrets.DATABASES
 DATABASES["shared"] = {
     "ENGINE": "django.db.backends.sqlite3",
-    "NAME": "shared.sqlite3",
+    "NAME": os.path.join(BASE_DIR, "shared.sqlite3"),
 }
 
 
