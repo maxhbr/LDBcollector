@@ -26,6 +26,16 @@ cd hermine/
 poetry install
 ```
 
+### Build front modules
+
+```bash
+npm install
+npm run build
+
+# or for development
+npm run dev
+```
+
 ### Running the server
 
 You have to first activate your Python virtual environment. With poetry, it means:

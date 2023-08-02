@@ -21,3 +21,9 @@ hermine/hermine/VERSION.txt
 # Secrets are secrets
 hermine/hermine/mysecrets.py
 .env
+
+# Node deps
+node_modules/
+
+# Vite build
+vite_modules/dist/

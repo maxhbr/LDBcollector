@@ -1,0 +1,21 @@
+/*
+ * SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-stretch: 100%;
+  src: url(./Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 200 1000;
+  font-stretch: 100%;
+  src: url(./Nunito-Italic-VariableFont_wght.ttf);
+}
