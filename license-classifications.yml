@@ -184,7 +184,7 @@ categories:
   - name: "property:no-modifications"
     description: >-
       Licenses with this property prohibit the making of modifications to the licensed content.
-      This is initially applied to Creative Commons licenses but will be used more widely as 
+      This is initially applied to Creative Commons licenses but will be used more widely as
       license reviews progress. Contributions/pull requests welcome.
 
 categorizations:
