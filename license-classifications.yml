@@ -181,6 +181,12 @@ categories:
       these apply to content that is not software while sometimes also software is licensed
       under these.
 
+  - name: "property:no-modifications"
+    description: >-
+      Licenses with this property prohibit the making of modifications to the licensed content.
+      This is initially applied to Creative Commons licenses but will be used more widely as 
+      license reviews progress. Contributions/pull requests welcome.
+
 categorizations:
   # https://spdx.org/licenses/AGPL-1.0-only.html
   - id: "AGPL-1.0"
@@ -3116,6 +3122,7 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://github.com/nexB/scancode-licensedb/blob/main/docs/json-pd.LICENSE
   - id: "LicenseRef-scancode-json-pd"
@@ -3319,6 +3326,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
   - id: "CC-BY-NC-ND-2.0"
@@ -3327,6 +3335,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
   - id: "CC-BY-NC-ND-2.5"
@@ -3335,6 +3344,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
   - id: "CC-BY-NC-ND-3.0"
@@ -3343,6 +3353,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:non-commercial"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
   - id: "CC-BY-NC-SA-1.0"
@@ -3374,6 +3385,7 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-ND-2.0.html
   - id: "CC-BY-ND-2.0"
@@ -3381,6 +3393,7 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-ND-2.5.html
   - id: "CC-BY-ND-2.5"
@@ -3388,6 +3401,7 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-ND-4.0.html
   - id: "CC-BY-ND-4.0"
@@ -3395,6 +3409,7 @@ categorizations:
       - "free-restricted"
       - "property:include-in-notice-file"
       - "property:creativecommons"
+      - "property:no-modifications"
 
   - id: "AMD"
     categories:
