@@ -3,9 +3,9 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 
-from datetime import datetime
 import json
 import logging
+from datetime import datetime
 
 from django.db import transaction
 from packageurl import PackageURL
@@ -22,7 +22,7 @@ from spdx.parsers import (
 from spdx.parsers.loggers import StandardLogger
 
 from cube.models import Component, Version, Usage, Exploitation
-from cube.utils.licenses import simplified
+from cube.utils.spdx import is_valid, simplified
 
 logger = logging.getLogger(__name__)
 
@@ -175,8 +175,8 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
             comp_name,
             {"homepage_url": comp_url},
             version_number,
-            concluded_license,
             declared_license,
+            concluded_license,
             linking,
         )
 
@@ -189,28 +189,27 @@ def add_dependency(
     component_name,
     component_defaults,
     version_number,
-    concluded_license,
     declared_license,
+    concluded_license,
     linking,
     purl="",
     scope=Usage.DEFAULT_SCOPE,
     project=Usage.DEFAULT_PROJECT,
 ):
-    component, created = Component.objects.get_or_create(
-        purl_type=component_purl_type,
-        name=component_name,
-        defaults=component_defaults,
+    # ORT has not concluded license, but declared license is valid
+    if not concluded_license and is_valid(declared_license):
+        concluded_license = declared_license
+
+    component, component_log = add_component(
+        component_purl_type, component_name, component_defaults
     )
 
-    version, created = Version.objects.get_or_create(
-        component=component,
-        version_number=version_number,
-        defaults={
-            "declared_license_expr": declared_license,
-            "spdx_valid_license_expr": concluded_license
-            and simplified(concluded_license),
-            "purl": purl,
-        },
+    version, version_log = add_version(
+        component,
+        version_number,
+        declared_license=declared_license,
+        concluded_license=concluded_license,
+        purl=purl,
     )
 
     try:
@@ -226,8 +225,103 @@ def add_dependency(
         project=project,
         exploitation=exploitation,
         scope=scope,
+        description=component_log + version_log,
         defaults={"addition_method": "Scan", "linking": linking},
     )
+
+
+def add_component(component_purl_type, component_name, component_defaults):
+    import_log = ""
+    component = Component.objects.filter(
+        purl_type=component_purl_type, name=component_name
+    ).first()
+
+    if component is not None:
+        save_component = False
+        component_conflicts = set()
+
+        for key, value in component_defaults.items():
+            # Update empty fields with default values
+            if not getattr(component, key):
+                setattr(component, key, value)
+                save_component = True
+            # Keep conflicting values for usage description
+            elif getattr(component, key) != value:
+                component_conflicts.add(key)
+
+        if save_component:
+            component.save()
+
+        if len(component_conflicts) > 0:
+            import_log += f"Conflicting values for {', '.join(component_conflicts)} fields on component {component_name} :\n"
+            for field in component_conflicts:
+                import_log += f"* {field} is {component_defaults[field]} in import but {getattr(component, field)} in local data\n"
+            import_log += "\n"
+
+    else:
+        component = Component.objects.create(
+            purl_type=component_purl_type,
+            name=component_name,
+            **component_defaults,
+        )
+
+    return component, import_log
+
+
+def add_version(component, version_number, declared_license, concluded_license, purl):
+    import_log = ""
+    version = Version.objects.filter(
+        component=component, version_number=version_number
+    ).first()
+
+    if version is not None:
+        # Same as for component, we update empty fields with default values
+        # and keep tract of conflicting fields
+        save_version = False
+        version_conflicts = set()
+
+        if not version.declared_license_expr:
+            version.declared_license_expr = declared_license
+            save_version = True
+        elif version.declared_license_expr != declared_license:
+            version_conflicts.add("declared_license_expr")
+
+        if not version.spdx_valid_license_expr:
+            version.spdx_valid_license_expr = concluded_license
+            save_version = True
+        elif version.spdx_valid_license_expr != concluded_license:
+            version_conflicts.add("spdx_valid_license_expr")
+
+        if not version.purl:
+            version.purl = purl
+            save_version = True
+        elif version.purl != purl:
+            version_conflicts.add("purl")
+
+        if save_version:
+            version.save()
+
+        if len(version_conflicts) > 0:
+            import_values = {
+                "declared_license_expr": declared_license,
+                "spdx_valid_license_expr": concluded_license,
+                "purl": purl,
+            }
+            import_log += f"Conflicting values for {', '.join(version_conflicts)} fields on version {version_number} :\n"
+            for field in version_conflicts:
+                import_log += f"* {field} is {import_values[field]} in import but {getattr(version, field)} in local data\n"
+            import_log += "\n"
+
+    else:
+        version = Version.objects.create(
+            component=component,
+            version_number=version_number,
+            declared_license_expr=declared_license,
+            spdx_valid_license_expr=concluded_license and simplified(concluded_license),
+            purl=purl,
+        )
+
+    return version, import_log
 
 
 # Function derivated from
