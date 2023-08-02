@@ -167,7 +167,7 @@ categories:
       license categorization/checking. This typically is an uncommon license, which has not yet been
       fully categorized.
 
- - name: "property:spefication-license"
+  - name: "property:spefication-license"
     description: >-
       An open source style license that is typically applied to spefication files and has some
       important limitations, such as a prohibition to change the licensed work. These licenses
