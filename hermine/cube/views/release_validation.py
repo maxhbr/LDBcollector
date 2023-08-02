@@ -32,7 +32,7 @@ from cube.models import (
     Derogation,
     Exploitation,
 )
-from cube.utils.licenses import simplified
+from cube.utils.spdx import simplified
 from cube.utils.release_validation import update_validation_step, propagate_choices
 from cube.views import LicenseRelatedMixin
 from cube.views.mixins import (

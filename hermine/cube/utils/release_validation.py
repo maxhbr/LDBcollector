@@ -14,11 +14,8 @@ from cube.models import (
 )
 from cube.utils.licenses import (
     check_licenses_against_policy,
-    explode_spdx_to_units,
-    is_ambiguous,
-    has_ors,
-    simplified,
 )
+from cube.utils.spdx import has_ors, is_ambiguous, simplified, explode_spdx_to_units
 
 logger = logging.getLogger(__name__)
 

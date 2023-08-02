@@ -3,110 +3,24 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 import logging
-from functools import lru_cache, reduce
-from itertools import product
-from typing import Iterable, List
+from typing import Iterable, TYPE_CHECKING
 
 from django.core.serializers import serialize, deserialize
 from django.db import transaction
 from django.db.models import prefetch_related_objects
-from license_expression import get_spdx_licensing, BaseSymbol
 
-from cube.models import License, Obligation, Derogation, Generic
 from cube.utils.importers import create_or_replace_by_natural_key
 
+if TYPE_CHECKING:
+    from cube.models import License
+
+
 logger = logging.getLogger(__name__)
-licensing = get_spdx_licensing()
-
-
-@lru_cache(maxsize=1024)
-def has_ors(spdx_expression: str):
-    parsed = licensing.parse(spdx_expression)
-
-    if parsed is None:
-        return False
-
-    if isinstance(parsed, BaseSymbol):
-        return "or-later" in str(parsed)
-
-    if "OR" in parsed.operator:
-        return True
-
-    for sub_expression in parsed.args:
-        if has_ors(sub_expression):
-            return True
-
-    return False
-
-
-@lru_cache(maxsize=1024)
-def is_ambiguous(spdx_expression: str):
-    """
-    Because of unreliable metadata, many "License1 AND License2" expressions
-    actually meant to be "License1 OR License2". This function checks weither
-    an expressions can be trusted or not.
-
-    :param spdx_expression: an expression to test
-    :type spdx_expression: str
-    :return: whether expression needs to be confirmed
-    :rtype: bool
-    """
-    parsed = licensing.parse(spdx_expression)
-    if parsed is None or isinstance(parsed, BaseSymbol) or has_ors(spdx_expression):
-        return False
-
-    return True
-
-
-def get_ands_corrections(spdx_expression: str) -> Iterable[str]:
-    if not is_ambiguous(spdx_expression):
-        return {spdx_expression}
-
-    return {
-        str(expression)
-        for expression in _get_ands_corrections_expressions(
-            licensing.parse(spdx_expression)
-        )
-    }
-
-
-def _get_ands_corrections_expressions(parsed):
-    if isinstance(parsed, BaseSymbol):
-        return {parsed}
-
-    simplified = parsed.simplify()
-    simplified_or_expression = reduce(lambda a, b: a | b, simplified.args).simplify()
-
-    if all(isinstance(arg, BaseSymbol) for arg in parsed.args):
-        # no sub expressions
-        return {simplified, simplified_or_expression}
-
-    combinations = list(
-        product(*(_get_ands_corrections_expressions(arg) for arg in parsed.args))
-    )
-    and_combinations = [
-        reduce(lambda a, b: a & b, combination).simplify()
-        for combination in combinations
-    ]
-    or_combinations = [
-        reduce(lambda a, b: a | b, combination).simplify()
-        for combination in combinations
-    ]
-
-    return {
-        simplified,
-        simplified_or_expression,
-        *and_combinations,
-        *or_combinations,
-    }
-
-
-@lru_cache(maxsize=1024)
-def simplified(spdx_expression: str):
-    return str(licensing.parse(spdx_expression).simplify())
 
 
 def check_licenses_against_policy(release):
+    from cube.models import License, Derogation
+
     response = {}
     usages_lic_never_allowed = set()
     usages_lic_context_allowed = set()
@@ -149,24 +63,8 @@ def check_licenses_against_policy(release):
     return response
 
 
-@lru_cache(maxsize=1024)
-def explode_spdx_to_units(spdx_expr: str) -> List[str]:
-    """Extract a list of every license from a SPDX valid expression.
-
-    :param spdx_expr: A string that represents a valid SPDX expression. (Like ")
-    :type spdx_expr: string
-    :return: A list of valid SPDX licenses contained in the expression.
-    :rtype: list
-    """
-    licensing = get_spdx_licensing()
-    parsed = licensing.parse(spdx_expr)
-    if parsed is None:
-        return []
-    return sorted(list(parsed.objects))
-
-
 def get_license_triggered_obligations(
-    license: License, exploitation: str = None, modification: str = None
+    license: "License", exploitation: str = None, modification: str = None
 ):
     """
     Get triggered obligations for a license and a usage context
@@ -202,8 +100,10 @@ def get_license_triggered_obligations(
 
 
 def get_licenses_triggered_obligations(
-    licenses: Iterable[License], exploitation: str = None, modification: str = None
+    licenses: Iterable["License"], exploitation: str = None, modification: str = None
 ):
+    from cube.models import Obligation
+
     obligations_pk = set()
     for license in licenses:
         obligations_pk.update(
@@ -271,6 +171,8 @@ def get_generic_usages(usages, generic):
 
 
 def export_licenses(indent=False):
+    from cube.models import Obligation, License
+
     return serialize(
         "json",
         list(License.objects.all()) + list(Obligation.objects.all()),
@@ -286,6 +188,8 @@ def handle_licenses_json(data):
     for license_or_obligation in deserialize(
         "json", data, handle_forward_references=True
     ):
+        from cube.models import Generic
+
         if len(license_or_obligation.deferred_fields) > 0:
             name = license_or_obligation.deferred_fields[
                 list(license_or_obligation.deferred_fields.keys())[0]
