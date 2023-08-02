@@ -27,6 +27,7 @@ services:
       - HOST=${HERMINE_HOST:-localhost}
       - STATIC_ROOT=/opt/static
       - ENABLE_PROFILING=${HERMINE_PROFILING:-False}
+      - PRODUCTION=${HERMINE_PRODUCTION:-True}
     links:
       - db
     networks:
