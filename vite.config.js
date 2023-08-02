@@ -6,7 +6,7 @@
 
 /** @type {import('vite').UserConfig} */
 export default {
-  root: 'vite_modules/src/hermine',
+  root: 'hermine/vite_modules/src/hermine',
   base: '/static/',
   build: {
     outDir: '../../dist/hermine'

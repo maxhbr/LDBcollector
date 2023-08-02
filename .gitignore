@@ -26,4 +26,4 @@ hermine/hermine/mysecrets.py
 node_modules/
 
 # Vite build
-vite_modules/dist/
+hermine/vite_modules/dist/

@@ -79,8 +79,8 @@ TEMPLATES = [
         "DIRS": [
             os.path.join(BASE_DIR, "templates"),
             # Empty before build
-            os.path.join(os.path.dirname(BASE_DIR), "vite_modules", "dist"),
-            os.path.join(os.path.dirname(BASE_DIR), "vite_modules", "src"),
+            os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "dist"),
+            os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "src"),
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -172,8 +172,8 @@ STATICFILES_FINDERS = [
 # The following line raises a Warning. Moving the folder to the right place does not
 # fix it.
 STATICFILES_DIRS = [
-    os.path.join(os.path.dirname(BASE_DIR), "vite_modules", "dist", "hermine"),
-    os.path.join(os.path.dirname(BASE_DIR), "vite_modules", "src", "hermine"),
+    os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "dist", "hermine"),
+    os.path.join(os.path.dirname(BASE_DIR), "hermine/vite_modules", "src", "hermine"),
 ]
 LOGIN_REDIRECT_URL = "/"
 
