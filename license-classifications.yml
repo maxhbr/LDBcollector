@@ -24,9 +24,9 @@
 categories:
   - name: "copyleft-strong"
     description: >-
-      Open source software that require you to license modifications, as well as any code that ends
-      up in the same binary (including statically linking and module modification), as well as code
-      that dynamically links with strong copyleft code, with the same strong copyleft license.
+      Open source license that requires you to license modifications, as well as any code that ends
+      up in the same binary (including static linking and module modifications), as well as other
+      code that is part of the same work, with the same strong copyleft license.
       Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.
 
   - name: "copyleft-LGPL"
@@ -39,58 +39,59 @@ categories:
 
   - name: "copyleft-module-level"
     description: >-
-      Open source software that requires you to license modifications made into the same software
+      Open source license that requires you to license modifications made into the same software
       module with the same license as the original open source software module. This also applies,
       if you add code from this module to your own module. Examples: EPL-1.1, CPL-1.0.
 
   - name: "copyleft-file-level"
     description: >-
-      Open source software that requires you to license modifications made into the same file with
+      Open source license that requires you to license modifications made into the same file with
       the same license as the original open source file. This also applies, if you add code from
       this file to your own file. Example: MPL-2.0.
 
   - name: "permissive"
     description: >-
-      Open source software that is made available under "non-copyleft" licenses. These generally
-      require attribution of the included open source and may include other obligations.
+      Open source license that is made available under "non-copyleft" licenses. These generally
+      require attribution of the included works and may include other obligations.
 
   - name: "free-restricted"
     description: >-
-      A Permissive-style license that contains restrictions regarding the usage of the software (for
-      example, where the software is not intended for use in nuclear facilities) or the
-      redistribution of the software (for example, where commercial redistribution of the software
-      is not allowed without express permission). These licenses are not open source licenses, since
-      they do not include all the required freedoms.
+      A permissive or open source-style license that contains restrictions regarding the usage of
+      the work (for example, where a software is not allowed to be used in nuclear facilities) or
+      the redistribution of the software (for example, where commercial redistribution of the
+      software is not allowed without express permission). These licenses are not open source
+      licenses, since they do not include all the required freedoms.
 
   - name: "proprietary-free"
     description: >-
-      Proprietary Free software that may not require a commercial license but may have specific
+      A proprietary-free license may not require a commercial license, but has specific
       terms and conditions which the project is obligated to follow. Some of these terms and
       conditions are provided with or in the code or in clickable downloaded licenses. Examples are
       the Sun Binary Code License Agreement or a freely offered BSP.
 
   - name: "commercial"
     description: >-
-      Third-party proprietary software offered under a direct commercial license between supplier
-      and customer.
+      A license for third-party proprietary content offered under a direct commercial license
+      between a supplier and a customer.
 
   - name: "public-domain"
     description: >-
-      Software that is made available into the public domain without any explicit obligations, but
-      which may have a notice that must be kept with the code per project policy. The match may be
-      to software, code examples on a website, published public domain specifications or another
-      type of publication.
+      A dedication by which a work is placed into the public domain without any explicit
+      obligations, but which may have a notice that must be kept with the work per project policy.
+      The match maybe to software, code examples on a website, published public domain
+      specifications or another type of publication.
 
   - name: "source-available"
     description: >-
-      Source-available software is software released through a source code distribution model that
+      A source-available license is released through a source code distribution model that
       includes arrangements where the source can be viewed, and in some cases modified, but without
       necessarily meeting the criteria to be called open-source.
 
   - name: "unstated"
     description: >-
-      Third-party software that has a copyright notice, but no stated license. Common examples
-      include code snippets from publications and websites (such as those from O'Reilly Media).
+      A statement used when no license is stated, but the content is likely under copyright. Common
+      examples include code snippets from publications and websites (such as those from O'Reilly
+      Media).
 
   - name: "irrelevant"
     description: >-
@@ -118,7 +119,7 @@ categories:
 
   - name: "property:mark-modifications"
     description: >-
-      The licence includes an obligation to mark all modifications.
+      The licence includes an obligation to mark all modifications of licensed content.
 
   - name: "property:antitivo-clause"
     description: >-
@@ -161,10 +162,30 @@ categories:
       This property indicates that the scanner finding requires manual conclusion.
 
   - name: "property:unchecked"
-    description:
+    description: >-
       This property marking means that the properties of the license have not been checked. Ask for
       license categorization/checking. This typically is an uncommon license, which has not yet been
       fully categorized.
+
+  - name: "property:specification-license"
+    description: >-
+      An open source-style license that is typically applied to specification files and has some
+      important limitations, such as a prohibition on modifying the licensed work. These licenses
+      usually fall in the free-restricited category. This property enables users an option to
+      automatically accept specification licenses, even if free-restricted licenses otherwise
+      create rule violations.
+
+  - name: "property:creativecommons"
+    description: >-
+      Licenses and dedications published and maintained by the Creative Commons. These
+      often apply to content that is not software, while sometimes also software is licensed
+      under these licenses.
+
+  - name: "property:no-modifications"
+    description: >-
+      Licenses with this property prohibit the making of modifications to the licensed content.
+      This is initially applied to Creative Commons licenses but will be used more widely as
+      license reviews progress. Contributions/pull requests are welcome.
 
 categorizations:
   # https://spdx.org/licenses/AGPL-1.0-only.html
@@ -369,35 +390,41 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-2.0.html
   - id: "CC-BY-2.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-2.5.html
   - id: "CC-BY-2.5"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-3.0.html
   - id: "CC-BY-3.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-4.0.html
   - id: "CC-BY-4.0"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC0-1.0.html
   - id: "CC0-1.0"
     categories:
       - "public-domain"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CDDL-1.0.html
   - id: "CDDL-1.0"
@@ -1410,7 +1437,7 @@ categorizations:
 
   - id: "CC-BY-SA-3.0"
     categories:
-      - "copyleft-file-level"
+      - "copyleft-strong"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-public-domain"
@@ -1843,13 +1870,15 @@ categorizations:
 
   - id: "CC-BY-SA-2.5"
     categories:
-      - "copyleft-file-level"
+      - "copyleft-strong"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "CC-BY-SA-2.0"
     categories:
-      - "copyleft-file-level"
+      - "copyleft-strong"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "PSF-2.0"
     categories:
@@ -3090,8 +3119,10 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-ND-3.0.html
   - id: "CC-BY-ND-3.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://github.com/nexB/scancode-licensedb/blob/main/docs/json-pd.LICENSE
   - id: "LicenseRef-scancode-json-pd"
@@ -3251,110 +3282,134 @@ categorizations:
   # https://spdx.org/licenses/CC-BY-NC-1.0.html
   - id: "CC-BY-NC-1.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-NC-2.0.html
   - id: "CC-BY-NC-2.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-NC-2.5.html
   - id: "CC-BY-NC-2.5"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-NC-3.0.html
   - id: "CC-BY-NC-3.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-NC-4.0.html
   - id: "CC-BY-NC-4.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-NC-ND-1.0.html
   - id: "CC-BY-NC-ND-1.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
   - id: "CC-BY-NC-ND-2.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
   - id: "CC-BY-NC-ND-2.5"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
   - id: "CC-BY-NC-ND-3.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
   - id: "CC-BY-NC-SA-1.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-NC-SA-2.0.html
   - id: "CC-BY-NC-SA-2.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-NC-SA-3.0.html
   - id: "CC-BY-NC-SA-3.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
       - "property:non-commercial"
+      - "property:creativecommons"
 
   # https://spdx.org/licenses/CC-BY-ND-1.0.html
   - id: "CC-BY-ND-1.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-ND-2.0.html
   - id: "CC-BY-ND-2.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-ND-2.5.html
   - id: "CC-BY-ND-2.5"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/CC-BY-ND-4.0.html
   - id: "CC-BY-ND-4.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   - id: "AMD"
     categories:
