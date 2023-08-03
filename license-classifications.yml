@@ -25,7 +25,7 @@ categories:
   - name: "copyleft-strong"
     description: >-
       Open source license that requires you to license modifications, as well as any code that ends
-      up in the same binary (including statically linking and module modification), as well as other
+      up in the same binary (including static linking and module modifications), as well as other
       code that is part of the same work, with the same strong copyleft license.
       Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.
 
@@ -56,7 +56,7 @@ categories:
 
   - name: "free-restricted"
     description: >-
-      A permissive or open source style license that contains restrictions regarding the usage of
+      A permissive or open source-style license that contains restrictions regarding the usage of
       the work (for example, where a software is not allowed to be used in nuclear facilities) or
       the redistribution of the software (for example, where commercial redistribution of the
       software is not allowed without express permission). These licenses are not open source
@@ -64,15 +64,15 @@ categories:
 
   - name: "proprietary-free"
     description: >-
-      A proprietary free license may not require a commercial license buy has specific
+      A proprietary-free license may not require a commercial license, but has specific
       terms and conditions which the project is obligated to follow. Some of these terms and
       conditions are provided with or in the code or in clickable downloaded licenses. Examples are
       the Sun Binary Code License Agreement or a freely offered BSP.
 
   - name: "commercial"
     description: >-
-      A license for third-party proprietary content offered under a direct commercial license.
-      between supplier and customer.
+      A license for third-party proprietary content offered under a direct commercial license
+      between a supplier and a customer.
 
   - name: "public-domain"
     description: >-
@@ -167,25 +167,25 @@ categories:
       license categorization/checking. This typically is an uncommon license, which has not yet been
       fully categorized.
 
-  - name: "property:spefication-license"
+  - name: "property:specification-license"
     description: >-
-      An open source style license that is typically applied to spefication files and has some
-      important limitations, such as a prohibition to change the licensed work. These licenses
-      would mostly be in the free-restricited category. This property enables users an option to
-      automatically accept specification licenses even if free-restricted otherwise creates rule
-      violations.
+      An open source-style license that is typically applied to specification files and has some
+      important limitations, such as a prohibition on modifying the licensed work. These licenses
+      usually fall in the free-restricited category. This property enables users an option to
+      automatically accept specification licenses, even if free-restricted licenses otherwise
+      create rule violations.
 
   - name: "property:creativecommons"
     description: >-
-      Licenses and dedications that are published and maintained by the Creative Commons. Often
-      these apply to content that is not software while sometimes also software is licensed
-      under these.
+      Licenses and dedications published and maintained by the Creative Commons. These
+      often apply to content that is not software, while sometimes also software is licensed
+      under these licenses.
 
   - name: "property:no-modifications"
     description: >-
       Licenses with this property prohibit the making of modifications to the licensed content.
       This is initially applied to Creative Commons licenses but will be used more widely as
-      license reviews progress. Contributions/pull requests welcome.
+      license reviews progress. Contributions/pull requests are welcome.
 
 categorizations:
   # https://spdx.org/licenses/AGPL-1.0-only.html
