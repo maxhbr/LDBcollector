@@ -44,8 +44,9 @@ LicenseRec依赖于以下开源项目。
 
 
 ## Citation
-```
+
 For citing, please use following BibTex citation:
+```
 @INPROCEEDINGS{licenserec,
   author={Xu, Weiwei and Wu, Xin and He, Runzhi and Zhou, Minghui},
   booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
