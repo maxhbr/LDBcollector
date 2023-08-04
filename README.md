@@ -4,16 +4,6 @@
 
 ![Image text](https://github.com/osslab-pku/RecLicense/blob/1caf4372960a9a54cfcbfbbbdf9ee86ab922d61a/frontend/src/assets/tool.png)
 
-## 引用
-```
-@INPROCEEDINGS{licenserec,
-  author={Xu, Weiwei and Wu, Xin and He, Runzhi and Zhou, Minghui},
-  booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
-  title={LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects}, 
-  year={2023},
-  pages={180-183},
-  doi={10.1109/ICSE-Companion58688.2023.00050}}
-```
 
 ## 简介
 
@@ -40,10 +30,7 @@ LicenseRec依赖于以下开源项目。
 * [scancode-tookit](https://github.com/nexB/scancode-toolkit)采用[Apache-2.0](https://opensource.org/licenses/Apache-2.0)授权。（我们增加和修改了一些检测规则。）
 * [depend](https://github.com/multilang-depends/depends) 采用[MIT](https://opensource.org/licenses/MIT)授权。
 
-
-## Citation
-
-For citing, please use following BibTex citation:
+## 引用
 ```
 @INPROCEEDINGS{licenserec,
   author={Xu, Weiwei and Wu, Xin and He, Runzhi and Zhou, Minghui},
@@ -53,6 +40,8 @@ For citing, please use following BibTex citation:
   pages={180-183},
   doi={10.1109/ICSE-Companion58688.2023.00050}}
 ```
+
+
 
 ## Introduction
 
@@ -78,3 +67,16 @@ LicenseRec relies on the following open source projects:
 
 * [scancode-tookit](https://github.com/nexB/scancode-toolkit) is licensed under [Apache-2.0](https://opensource.org/licenses/Apache-2.0).(We added and modified some detection rules.)
 * [depends](https://github.com/multilang-depends/depends) is licensed under [MIT](https://opensource.org/licenses/MIT).
+
+## Citation
+
+For citing, please use following BibTex citation:
+```
+@INPROCEEDINGS{licenserec,
+  author={Xu, Weiwei and Wu, Xin and He, Runzhi and Zhou, Minghui},
+  booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
+  title={LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects}, 
+  year={2023},
+  pages={180-183},
+  doi={10.1109/ICSE-Companion58688.2023.00050}}
+```
