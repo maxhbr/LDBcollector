@@ -11,8 +11,6 @@
   booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
   title={LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects}, 
   year={2023},
-  volume={},
-  number={},
   pages={180-183},
   doi={10.1109/ICSE-Companion58688.2023.00050}}
 ```
@@ -52,8 +50,6 @@ For citing, please use following BibTex citation:
   booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
   title={LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects}, 
   year={2023},
-  volume={},
-  number={},
   pages={180-183},
   doi={10.1109/ICSE-Companion58688.2023.00050}}
 ```
