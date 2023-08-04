@@ -6,9 +6,15 @@
 
 ## 引用
 ```
-W. Xu, X. Wu, R. He and M. Zhou, "LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects," 2023 IEEE/ACM 45th
-International Conference on Software Engineering: Companion Proceedings (ICSE-Companion), Melbourne, Australia, 2023,
-pp. 180-183, doi: 10.1109/ICSE-Companion58688.2023.00050.
+@INPROCEEDINGS{licenserec,
+  author={Xu, Weiwei and Wu, Xin and He, Runzhi and Zhou, Minghui},
+  booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
+  title={LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={180-183},
+  doi={10.1109/ICSE-Companion58688.2023.00050}}
 ```
 
 ## 简介
@@ -39,9 +45,16 @@ LicenseRec依赖于以下开源项目。
 
 ## Citation
 ```
-W. Xu, X. Wu, R. He and M. Zhou, "LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects," 2023 IEEE/ACM 45th
-International Conference on Software Engineering: Companion Proceedings (ICSE-Companion), Melbourne, Australia, 2023,
-pp. 180-183, doi: 10.1109/ICSE-Companion58688.2023.00050.
+For citing, please use following BibTex citation:
+@INPROCEEDINGS{licenserec,
+  author={Xu, Weiwei and Wu, Xin and He, Runzhi and Zhou, Minghui},
+  booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
+  title={LicenseRec: Knowledge based Open Source License Recommendation for OSS Projects}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={180-183},
+  doi={10.1109/ICSE-Companion58688.2023.00050}}
 ```
 
 ## Introduction
