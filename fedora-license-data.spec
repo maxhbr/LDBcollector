@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.26
+Version:        1.27
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,23 @@ make check-grammar
 
 
 %changelog
+* Fri Aug 04 2023 Miroslav Suchý <msuchy@redhat.com> 1.27-1
+- Add TCGL as not allowed
+- Add GPL-2.0-or-later WITH GCC-exception-2.0
+- Add Soundex License
+- Add HP-1989
+- add GPL-3.0-or-later WITH Autoconf-exception-generic-3.0
+- Add SL license
+- Add check-cvs license
+- add John Walker to ultrapermissive collection
+- Add Artistic-1.0 as not allowed.
+- Add BSD-3-Clause-Clear as not allowed.
+- Add LicenseRef-JasPer as not allowed.
+- Revert "Remove AFL-2.0 since it is probably not in Fedora"
+- Add LicenseRef-rdist-Cooper as not allowed
+- Add public domain license in Ruby
+- add information about license to README
+
 * Thu Jul 20 2023 Miroslav Suchý <msuchy@redhat.com> 1.26-1
 - add not-allowed LicenseRef-verbatim
 - Add Apache-2.0 WITH Swift-exception
