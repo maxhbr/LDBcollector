@@ -1,6 +1,11 @@
 [license]
 expression = "LicenseRef-TCGL"
 status = [ "not-allowed" ]
+usage = '''
+Uses of source code released by the Trusted Computing Group under this
+license in the packages libtpms and tss2, historically assumed by Fedora
+to be "good" prior to 2022-08-01, are allowed.
+'''
 text = '''
 Licenses and Notices
 
