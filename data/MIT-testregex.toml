@@ -2,7 +2,3 @@
 expression = "MIT-testregex"
 status = [ "allowed" ]
 
-[fedora]
-legacy-abbreviation = [
-    "MIT"
-]
