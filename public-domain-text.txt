@@ -717,3 +717,9 @@ location = https://github.com/eggert/tz/blob/main/zone1970.tab
 text = '''
 # This file is in the public domain.
 '''
+
+package = autoconf
+location = https://git.savannah.gnu.org/cgit/autoconf.git/tree/build-aux/install-sh#n35
+text = '''
+# FSF changes to this file are in the public domain.
+'''
