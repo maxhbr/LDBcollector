@@ -2,4 +2,4 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 // Package authenticate is build to authenticate the API.
-package authenticate
+package auth
