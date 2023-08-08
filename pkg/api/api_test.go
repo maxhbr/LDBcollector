@@ -132,7 +132,7 @@ func TestSearchInLicense(t *testing.T) {
 	search := models.SearchLicense{
 		Field:      "fullname",
 		SearchTerm: "Postgresql",
-		SearchType: "",
+		Search:     "",
 	}
 	w := makeRequest("POST", "/api/search", search, false)
 	assert.Equal(t, http.StatusOK, w.Code)
@@ -176,7 +176,7 @@ func TestSearchInLicense2(t *testing.T) {
 	search := models.SearchLicense{
 		Field:      "url",
 		SearchTerm: "http://ac-archive.sourceforge.net/doc/copyright.html",
-		SearchType: "",
+		Search:     "",
 	}
 	w := makeRequest("POST", "/api/search", search, false)
 	assert.Equal(t, http.StatusOK, w.Code)
@@ -189,7 +189,7 @@ func TestSearchInLicense2(t *testing.T) {
 
 func TestGetUser(t *testing.T) {
 	expectUser := models.User{
-		Userid:       "1",
+		UserId:       "1",
 		Username:     "fossy",
 		Userpassword: "fossy",
 		Userlevel:    "admin",
@@ -206,7 +206,7 @@ func TestGetUser(t *testing.T) {
 
 func TestCreateUser(t *testing.T) {
 	user := models.User{
-		Userid:       "2",
+		UserId:       "2",
 		Username:     "general_user",
 		Userpassword: "abc123",
 		Userlevel:    "participant",
