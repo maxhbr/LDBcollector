@@ -2,11 +2,22 @@
 
 import logging 
 
-from setup import init_license_db
-from setup import license_info
+from license_db import LicenseDatabase
+
 
 logging.basicConfig(level=logging.DEBUG)
-init_license_db(check=True)
+ldb = LicenseDatabase(check=True)
 
-gpl2 = license_info()
+l = ldb.license_info_spdxid("GPL-2.0-or-later")
+print(f'l: {l}')
+
+l = ldb.licenses()
+print(f'all  size: {len(l)}')
+
+l = ldb.licenses(["Henrik Sandklef <hesa@sandklef.com>"])
+print(f'hesa size: {len(l)}')
+
+l = ldb.licenses(["Someone else"])
+print(f'else size: {len(l)}')
+
 
