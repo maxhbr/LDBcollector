@@ -1,13 +1,46 @@
 {
     "meta": {
         "disclaimer": "bla bla ",
-        "version": "1.0",
-        "author": [ "Henrik Sandklef <hesa@sandklef.com>" ],
-        "comment": "initital version",
-        "date": "2023-07-05"
+	"description": "bla",
+	"versions": [
+	    {
+		"version": "1.0.1",
+		"comment": "Update meta information. Add alias (3-BSD)",
+		"date": "2023-08-08",
+		"authors": [
+		    {
+			"author": "Henrik Sandklef <hesa@sandklef.com>",
+			"organization": "Sandklef FOSS Labs AB"
+		    }
+		],
+		"reviewers": [
+		    {
+			"reviewer": "Henrik Sandklef <hesa@sandklef.com>",
+			"organization": "Sandklef FOSS Labs AB"
+		    }
+		]
+	    },
+	    { 
+		"version": "1.0",
+		"comment": "initial version",
+		"date": "2023-07-05",
+		"authors": [
+		    {
+			"author": "Henrik Sandklef <hesa@sandklef.com>",
+			"organization": "Sandklef FOSS Labs AB"
+		    }
+		],
+		"reviewers": [
+		    {
+			"reviewer": "Henrik Sandklef <hesa@sandklef.com>",
+			"organization": "Sandklef FOSS Labs AB"
+		    }
+		]
+	    }
+	]
     },
     "spdxid": "BSD-3-Clause",
-    "other_names": [ "BSD3" ],
+    "other_names": [ "BSD3", "3-BSD"],
     "scancode-key": "bsd-new",
     "name": "The 3-Clause BSD License"
 }
