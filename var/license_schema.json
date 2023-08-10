@@ -5,22 +5,37 @@
     "type" : "object",
     "properties" : {
         "meta" : {
-        "type" : "object",
-        "description" : "",
+            "type" : "object",
             "properties" : {
+		"description": { "type": "string" },
                 "disclaimer": { "type": "string" },
-                "version": { "type": "string" },
-                "author": {
-                    "type": "array",
+                "organization": { "type": "string" },
+                "versions": {
+		    "type": "array",
                     "items": {
-                        "type": "string"
+			"version": { "type": "string" },
+			"comment": { "type": "string" },
+			"date": { "type": "string" },
+			"authors": {
+			    "type": "array",
+			    "items": {
+				"author": "string",
+				"organization": "string"
+			    }
+			},
+			"reviewers": {
+			    "type": "array",
+			    "items": {
+				"reviewer": "string",
+				"organization": "string"
+			    }
+			},
+			"required" : [ "version", "authors", "reviewers", "date", "comment" ]
                     }
-                },
-                "comment": { "type": "string" },
-                "date": { "type": "string" }
+		}
             },
-            "required" : [ "date", "version", "author" ]
-        }
+            "required" : [ "organization", "description", "versions" ]
+	}
     },
     "spdxid": { "type": "string" },
     "other_names": {
