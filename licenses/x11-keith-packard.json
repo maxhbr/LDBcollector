@@ -2,6 +2,7 @@
     "meta": {
         "disclaimer": "bla bla ",
 	"description": "bla",
+	"organization": "Sandklef GNU Labs",
         "versions": [
 	    {
 		"version": "1.0.1",
@@ -10,13 +11,13 @@
 		"authors": [
 		    {
 			"author": "Henrik Sandklef <hesa@sandklef.com>",
-			"organization": "Sandklef FOSS Labs AB"
+			"organization": "Sandklef GNU Labs"
 		    }
 		],
 		"reviewers": [
 		    {
 			"reviewer": "Henrik Sandklef <hesa@sandklef.com>",
-			"organization": "Sandklef FOSS Labs AB"
+			"organization": "Sandklef GNU Labs"
 		    }
 		]
 	    },
@@ -27,7 +28,7 @@
 		"authors": [
 		    {
 			"author": "Henrik Sandklef <hesa@sandklef.com>",
-			"organization": "Sandklef FOSS Labs AB"
+			"organization": "Sandklef GNU Labs"
 		    }
 		],
 		"reviewers": [
