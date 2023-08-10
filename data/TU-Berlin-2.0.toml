@@ -3,12 +3,3 @@
 expression = "TU-Berlin-2.0"
 status = [ "allowed" ]
 
-url = '''
-https://spdx.org/licenses/TU-Berlin-2.0.html
-'''
-
-[fedora]
-
-legacy-name = [
-    "Technische Universitaet Berlin License 2.0"
-]
