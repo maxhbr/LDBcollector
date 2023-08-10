@@ -49,14 +49,15 @@ class LicenseDatabase:
             debug(f' * {license_file}')
             data = self.__read_license_file(license_file, check)
             #debug(f' * {data}')
-            self.license_db[data['spdxid']] = data
+            self.license_db[data['spdxid']] = data                
 
-    def licenses(self, authors=None):
-        if not authors:
+    def licenses(self, orgs=None):
+        if not orgs:
             return self.license_db
         ret_list = []
-        for author in authors:
-            ret_list += [l for l in self.license_db.values() if author  in l["meta"]["author"] ]
+        for org in orgs:
+            ret_list += [l for l in self.license_db.values() if org in l["meta"]["organization"] ]
+
         return ret_list
             
     def license_info_spdxid(self, spdxid=None):
