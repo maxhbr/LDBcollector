@@ -9,6 +9,7 @@
             "properties" : {
 		"description": { "type": "string" },
                 "disclaimer": { "type": "string" },
+                "organization": { "type": "string" },
                 "versions": {
 		    "type": "array",
                     "items": {
@@ -33,7 +34,7 @@
                     }
 		}
             },
-            "required" : [ "description", "versions" ]
+            "required" : [ "organization", "description", "versions" ]
 	}
     },
     "spdxid": { "type": "string" },
