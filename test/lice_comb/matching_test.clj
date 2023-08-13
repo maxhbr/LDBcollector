@@ -19,7 +19,7 @@
 (ns lice-comb.matching-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [lice-comb.test-boilerplate :refer [fixture]]
-            [lice-comb.matching         :refer [unlisted? name->unlisted text->ids name->ids uri->ids]]
+            [lice-comb.matching         :refer [unlisted? proprietary-or-commercial? name->unlisted public-domain proprietary-or-commercial text->ids name->expressions name->ids uri->ids]]
             [spdx.licenses              :as sl]
             [spdx.exceptions            :as se]))
 
@@ -44,6 +44,660 @@
     (is (true?  (every? false? (map unlisted? (sl/ids)))))
     (is (true?  (every? false? (map unlisted? (se/ids)))))))
 
+(deftest name->expressions-tests
+  (testing "Nil, empty or blank"
+    (is (nil?                                      (name->expressions nil)))
+    (is (nil?                                      (name->expressions "")))
+    (is (nil?                                      (name->expressions "       ")))
+    (is (nil?                                      (name->expressions "\n")))
+    (is (nil?                                      (name->expressions "\t"))))
+  (testing "SPDX license ids"
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "AGPL-3.0")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "AGPL-3.0-only")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "    Apache-2.0        ")))   ; Test whitespace
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache-2.0")))
+    (is (= #{"CC-BY-SA-4.0"}                       (name->expressions "CC-BY-SA-4.0")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GPL-2.0")))
+    (is (= #{"GPL-2.0-with-classpath-exception"}   (name->expressions "GPL-2.0-with-classpath-exception"))))
+  (testing "Public domain and proprietary/commercial"
+    (is (= #{(public-domain)}                      (name->expressions "Public Domain")))
+    (is (= #{(public-domain)}                      (name->expressions "Public domain")))  ; Test lower case
+    (is (= #{(public-domain)}                      (name->expressions "              Public domain   ")))  ; Test whitespace
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Proprietary")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Commercial")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "All rights reserved"))))
+  (testing "Expressions that are valid SPDX"
+    (is (= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0 WITH Classpath-exception-2.0")))
+    (is (= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache-2.0 OR GPL-3.0")))
+    (is (= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)"))))
+  (testing "Single expressions that are not valid SPDX"
+    (is (= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, version 2 with the GNU Classpath Exception")))
+    (is (= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache License version 2.0 or GNU General Public License version 3")))
+    (is (= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)")))
+    (is (= #{"Apache-2.0 AND MIT"}                 (name->expressions "Apache & MIT licence")))
+    (is (= #{"CDDL-1.1"}                           (name->expressions "Common Development and Distribution Licence"))))
+  (testing "Expressions with weird operators"
+    (is (= #{"Apache-2.0"}                         (name->expressions "and and and Apache License 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Licence 2.0 or or or")))
+    (is (= #{"Apache-2.0 or MIT"}                  (name->expressions "Apache License 2.0 or or or or or or or or MIT license")))
+    (is (= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache License 2.0 and/or MIT licence"))))
+  (testing "Multiple expressions that are not valid SPDX"
+    (is (= #{"MIT" "BSD-4-Clause"}                 (name->expressions "MIT / BSD")))
+    (is (= #{"Apache-2.0" "GPL-3.0-only"}          (name->expressions "Apache License version 2.0 / GNU General Public License version 3")))
+    (is (= #{"Apache-2.0" "GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "Apache License version 2.0 / GNU General Public License version 3 with classpath exception")))
+    (is (= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR BSD-3-Clause AND Apache-2.0"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception or MIT Licence or three clause bsd and Apache Licence"))))
+  (testing "Names seen in select POMs on Maven Central"
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License (AGPL) version 3.0")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License v3.0 only")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License v3.0")))
+    (is (= #{"Apache-1.0"}                         (name->expressions "Apache License 1")))
+    (is (= #{"Apache-1.0"}                         (name->expressions "Apache License 1.0")))
+    (is (= #{"Apache-1.0"}                         (name->expressions "Apache License Version 1.0")))
+    (is (= #{"Apache-1.0"}                         (name->expressions "Apache License, Version 1.0")))
+    (is (= #{"Apache-1.0"}                         (name->expressions "Apache Software License - Version 1.0")))
+    (is (= #{"Apache-1.1"}                         (name->expressions "Apache License 1.1")))
+    (is (= #{"Apache-1.1"}                         (name->expressions "Apache License Version 1.1")))
+    (is (= #{"Apache-1.1"}                         (name->expressions "Apache License, Version 1.1")))
+    (is (= #{"Apache-1.1"}                         (name->expressions "Apache Software License - Version 1.1")))
+    (is (= #{"Apache-1.1"}                         (name->expressions "The MX4J License, version 1.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "               Apache Software License, Version 2.0             ")))   ; Test whitespace
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache 2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License - Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License 2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License Version 2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License v2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License v2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache v2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "The Apache Software License, Version 2.0")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "3-Clause BSD License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-Clause License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "The BSD 3-Clause License (BSD3)")))
+    (is (= #{"BSD-3-Clause-Attribution"}           (name->expressions "BSD 3-Clause Attribution")))
+    (is (= #{"BSD-4-Clause"}                       (name->expressions "BSD")))
+    (is (= #{"CC-BY-3.0"}                          (name->expressions "Attribution 3.0 Unported")))
+    (is (= #{"CC-BY-3.0"}                          (name->expressions "Creative Commons Legal Code Attribution 3.0 Unported")))
+    (is (= #{"CC-BY-4.0"}                          (name->expressions "Attribution 4.0 International")))
+    (is (= #{"CC-BY-SA-4.0"}                       (name->expressions "Creative Commons Attribution Share Alike 4.0 International")))
+    (is (= #{"CDDL-1.0"}                           (name->expressions "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0")))
+    (is (= #{"CDDL-1.0"}                           (name->expressions "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1")))
+    (is (= #{"CDDL-1.0"}                           (name->expressions "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0")))
+    (is (= #{"CDDL-1.1"}                           (name->expressions "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1")))
+    (is (= #{"CDDL-1.1"}                           (name->expressions "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License - v 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License, Version 1.0")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License (EPL)")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License 2.0")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License version 2")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License v2.0 w/Classpath exception")))
+    (is (= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, version 2 (GPL2), with the classpath exception")))
+    (is (= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, version 2 with the GNU Classpath Exception")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GNU General Public License, version 2")))
+    (is (= #{"JSON"}                               (name->expressions "JSON License")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License (LGPL)")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Library General Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"MIT"}                                (name->expressions "Bouncy Castle Licence")))  ; Note spelling of "licence"
+    (is (= #{"MIT"}                                (name->expressions "MIT License")))
+    (is (= #{"MIT"}                                (name->expressions "MIT license")))     ; Test capitalisation
+    (is (= #{"MIT"}                                (name->expressions "The MIT License")))
+    (is (= #{"MPL-1.0"}                            (name->expressions "Mozilla Public License 1")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License Version 2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"Plexus"}                             (name->expressions "Similar to Apache License but with the acknowledgment clause removed"))))   ; JDOM - see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
+  (testing "All names seen in POMs on Clojars as of 2023-07-13"
+(comment
+    (is (= #{"AFL-3.0"}                            (name->expressions "Academic Free License 3.0")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "AGPL v3")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "AGPLv3")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "Affero GNU Public License v3")))  ; Listed license missing version - we assume the latest
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU AFFERO GENERAL PUBLIC LICENSE Version 3")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU AGPLv3")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License 3.0 (AGPL-3.0)")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License Version 3")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License Version 3; Other commercial licenses available.")))  ; ####TODO: THINK MORE ABOUT THIS ONE!!!
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License v3")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License v3.0")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License, Version 3")))
+    (is (= #{"AGPL-3.0-only"}                      (name->expressions "GNU Affero General Public License, version 3")))
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "AGPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "Affero General Public License v3 or later (at your option)")))
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "Affero General Public License version 3 or lator")))  ; Typo in "lator"
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "Affero General Public License")))
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "Affero General Public License,")))  ; Listed license missing version - we assume the latest
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "GNU AGPL-V3 or later")))
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "GNU Affero General Public Licence")))  ; Listed license missing version - we assume the latest
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "GNU Affero General Public License (AGPL)")))  ; Listed license missing version - we assume the latest
+    (is (= #{"AGPL-3.0-or-later"}                  (name->expressions "GNU Affero General Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"Apache-2.0 WITH LLVM-exception"}     (name->expressions "Apache 2.0 with LLVM Exception")))
+    (is (= #{"Apache-2.0"}                         (name->expressions " Apache License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "APACHE LICENSE, VERSION 2.0 (CURRENT)")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "APACHE LICENSE, VERSION 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "APACHE")))  ; Listed license missing version - we assume the latest
+    (is (= #{"Apache-2.0"}                         (name->expressions "ASL 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "ASL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache 2 License")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache 2 Public License")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache 2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache 2, see LICENSE")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache 2.0 License")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Licence 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Licence")))  ; Listed license missing clause info
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Licence, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License - Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License - v 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License - v2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License 2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License V2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License V2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License Version 2.0, January 2004")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License v 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License v2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License v2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License")))  ; Listed license missing clause info
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License, 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License, Version 2.0.")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License, version 2.")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache License, version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Public License 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Public License v2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Public License")))  ; Listed license missing clause info
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Public License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Public License, version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License - v 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License")))  ; Listed license missing clause info
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Software Licesne")))  ; Listed license missing clause info
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Sofware Licencse 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Sofware License 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache V2 License")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache V2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache license version 2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache license, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache v2 License")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache v2")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache v2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache")))  ; Listed license missing clause info
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache-2.0 License")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache-2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "Apache2 License")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "The Apache 2 License")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "The Apache License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "The Apache Software License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                         (name->expressions "apache")))  ; Listed license missing version - we assume the latest
+    (is (= #{"Apache-2.0"}                         (name->expressions "apache-2.0")))
+    (is (= #{"Artistic-2.0" "GPL-3.0-only"}        (name->expressions "Artistic License/GPL")))  ; Missing conjunction, so return 2 (singleton) expressions
+    (is (= #{"Artistic-2.0"}                       (name->expressions "Artistic License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"Artistic-2.0"}                       (name->expressions "Artistic-2.0")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "2-Clause BSD License")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "2-Clause BSD")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD (2 Clause)")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD (2-Clause)")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD (Type 2) Public License")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2 Clause")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2 clause license")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2-Clause Licence")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2-Clause License")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2-Clause \"Simplified\" License")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2-Clause license")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2-Clause")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD 2-clause \"Simplified\" License")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD C2")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "BSD-2-Clause")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "New BSD 2-clause license")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "Simplified BSD License")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "Simplified BSD license")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "The BSD 2-Clause License")))
+    (is (= #{"BSD-2-Clause"}                       (name->expressions "Two clause BSD license")))
+    (is (= #{"BSD-2-Clause-FreeBSD"}               (name->expressions "FreeBSD License")))
+    (is (= #{"BSD-3-Clause" "MIT"}                 (name->expressions "New-BSD / MIT")))  ; Missing conjunction, so return 2 (singleton) expressions
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "3-Clause BSD License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "3-Clause BSD")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "3-clause BSD licence (Revised BSD licence), also included in the jar file")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "3-clause BSD license")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "3-clause license (New BSD License or Modified BSD License)")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "Aduna BSD license")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3 Clause")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-Clause 'New' or 'Revised' License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-Clause License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-Clause \"New\" or \"Revised\" License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-Clause license")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-Clause")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-clause License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-clause license")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-clause")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD New, Version 3.0")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD-3")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "BSD-3-Clause")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "Modified BSD License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "New BSD License or Modified BSD License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "New BSD License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "New BSD license")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "Revised BSD")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "The 3-Clause BSD License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "The BSD 3-Clause License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "The New BSD License")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "The New BSD license")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "Three Clause BSD-like License")))
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/clafka/blob/master/LICENSE")))                           ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/faraday-atom/blob/master/LICENSE")))                     ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/graphite-filter/blob/master/LICENSE")))                  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/instrumented-ring-jetty-adapter/blob/master/LICENSE")))  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/mr-clojure/blob/master/LICENSE")))                       ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/mr-edda/blob/master/LICENSE")))                          ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/multi-atom/blob/master/LICENSE")))                       ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/party/blob/master/LICENSE")))                            ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/mixradio/radix/blob/master/LICENSE")))                            ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/riverford/datagrep/blob/master/LICENSE")))                        ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/riverford/durable-ref/blob/master/LICENSE")))                     ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+;    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://github.com/smsharman/sxm-clojure-ms/blob/master/LICENSE")))                  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "https://opensource.org/licenses/BSD-3-Clause")))
+    (is (= #{"BSD-3-Clause"}                       (name->expressions "new BSD License")))
+    (is (= #{"BSD-4-Clause"}                       (name->expressions "BSD License")))  ; Listed license missing clause info - we assume original (4 clause)
+    (is (= #{"BSD-4-Clause"}                       (name->expressions "BSD Standard License")))  ; Listed license missing clause info - we assume original (4 clause)
+    (is (= #{"BSD-4-Clause"}                       (name->expressions "BSD license")))  ; Listed license missing clause info - we assume original (4 clause)
+    (is (= #{"BSD-4-Clause"}                       (name->expressions "BSD")))  ; Listed license missing clause info - we assume original (4 clause)
+    (is (= #{"BSD-4-Clause"}                       (name->expressions "BSD-style")))  ; Listed license missing clause info - we assume original (4 clause)
+    (is (= #{"BSD-4-Clause"}                       (name->expressions "The BSD License")))
+    (is (= #{"BSL-1.0"}                            (name->expressions "Boost Software License - Version 1.0")))
+    (is (= #{"Beerware"}                           (name->expressions "Beerware 42")))
+    (is (= #{"Beerware"}                           (name->expressions "THE BEER-WARE LICENSE")))
+    (is (= #{"CC-BY-2.5"}                          (name->expressions "Creative Commons Attribution 2.5 License")))
+    (is (= #{"CC-BY-3.0"}                          (name->expressions "Creative Commons 3.0")))
+    (is (= #{"CC-BY-4.0"}                          (name->expressions "CC Attribution 4.0 International with exception for binary distribution")))
+    (is (= #{"CC-BY-4.0"}                          (name->expressions "CC-BY-4.0")))
+    (is (= #{"CC-BY-4.0"}                          (name->expressions "Creative Commons Attribution License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"CC-BY-NC-3.0"}                       (name->expressions "Creative Commons Attribution-NonCommercial 3.0")))
+    (is (= #{"CC-BY-NC-4.0"}                       (name->expressions "CC BY-NC")))  ; Listed license missing version - we assume the latest
+    (is (= #{"CC-BY-NC-ND-3.0"}                    (name->expressions "Attribution-NonCommercial-NoDerivs 3.0 Unported")))
+    (is (= #{"CC-BY-SA-3.0"}                       (name->expressions "Creative Commons Attribution-ShareAlike 3.0 US (CC-SA) license")))  ; Note: the US suffix here is meaningless, as there is no CC-BY-SA-3.0-US license id
+    (is (= #{"CC-BY-SA-3.0"}                       (name->expressions "Creative Commons Attribution-ShareAlike 3.0 US (CC-SA)")))  ; Note: the US suffix here is meaningless, as there is no CC-BY-SA-3.0-US license id
+    (is (= #{"CC-BY-SA-3.0"}                       (name->expressions "Creative Commons Attribution-ShareAlike 3.0 Unported License")))
+    (is (= #{"CC-BY-SA-3.0"}                       (name->expressions "Creative Commons Attribution-ShareAlike 3.0 Unported")))
+    (is (= #{"CC-BY-SA-3.0"}                       (name->expressions "Creative Commons Attribution-ShareAlike 3.0")))
+    (is (= #{"CC-BY-SA-4.0"}                       (name->expressions "CC BY-SA 4.0")))
+    (is (= #{"CC0-1.0"}                            (name->expressions "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication")))
+    (is (= #{"CC0-1.0"}                            (name->expressions "CC0 1.0 Universal")))
+    (is (= #{"CC0-1.0"}                            (name->expressions "CC0")))
+    (is (= #{"CC0-1.0"}                            (name->expressions "Public domain (CC0)")))
+    (is (= #{"CDDL-1.1"}                           (name->expressions "Common Development and Distribution License (CDDL)")))  ; Listed license missing clause info
+    (is (= #{"CDDL-1.1"}                           (name->expressions "Common Development and Distribution License")))  ; Listed license missing clause info
+    (is (= #{"CECILL-2.1"}                         (name->expressions "CeCILL License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"CPL-1.0"}                            (name->expressions "Common Public License - v 1.0")))
+    (is (= #{"CPL-1.0"}                            (name->expressions "Common Public License Version 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "EPL 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "EPL-1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "EPL-v1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License (EPL) - v 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License - Version 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License - v 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License - v1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License 1.0 (EPL-1.0)")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License v 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License v1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License version 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public License, version 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "Eclipse Public Licese - v 1.0")))
+    (is (= #{"EPL-1.0"}                            (name->expressions "https://github.com/cmiles74/uio/blob/master/LICENSE")))
+    (is (= #{"EPL-2.0 AND LGPL-3.0-or-later"}      (name->expressions "Dual: EPL and LGPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0 OR Apache-2.0"}              (name->expressions "Double licensed under the Eclipse Public License (the same as Clojure) or the Apache Public License 2.0.")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "<script lang=\"javascript\">alert('hi');</script>EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
+    (is (= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "EPL-2.0 OR GPL-2.0-or-later WITH Classpath Exception")))  ; Listed exception missing version - we assume the latest
+    (is (= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
+    (is (= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "Eclipse Public License 2.0 OR GNU GPL v2+ with Classpath exception")))  ; ####TODO: THINK MORE ABOUT THIS ONE!!!
+    (is (= #{"EPL-2.0 OR GPL-2.0-or-later"}        (name->expressions "EPL-2.0 OR GPL-2.0-or-later")))
+    (is (= #{"EPL-2.0 OR GPL-3.0-or-later WITH Classpath-exception-2.0"} (name->expressions "EPL-2.0 OR GPL-3.0-or-later WITH Classpath-exception-2.0")))
+    (is (= #{"EPL-2.0 OR GPL-3.0-or-later"}        (name->expressions "EPL-2.0 OR GPL-3.0-or-later")))
+    (is (= #{"EPL-2.0" "MIT"}                      (name->expressions "Eclipse Public MIT")))  ; Listed license missing version - we assume the latest  ; Missing conjunction, so return 2 (singleton) expressions
+    (is (= #{"EPL-2.0"}                            (name->expressions "Copyright (C) 2013 Mathieu Gauthron. Distributed under the Eclipse Public License.")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Copyright (C) 2014 Mathieu Gauthron. Distributed under the Eclipse Public License.")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Distributed under the Eclipse Public License, the same as Clojure.")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "ECLIPSE PUBLIC LICENSE")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "EPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "EPL-2.0")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "EPLv2")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public Licence")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License (EPL)")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License - v 2.0")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License 2")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License 2.0")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License 2.0,")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License v2.0")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License version 2")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License version 2.0")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License, v. 2.0")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Public License, v2")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse Pulic License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse public license, the same as Clojure")))
+    (is (= #{"EPL-2.0"}                            (name->expressions "Eclipse")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0"}                            (name->expressions "Some Eclipse Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EUPL-1.1"}                           (name->expressions "European Union Public Licence (EUPL v.1.1)")))
+    (is (= #{"EUPL-1.1"}                           (name->expressions "The European Union Public License, Version 1.1")))
+    (is (= #{"EUPL-1.2"}                           (name->expressions "European Union Public Licence v. 1.2")))
+    (is (= #{"EUPL-1.2"}                           (name->expressions "European Union Public License 1.2 or later")))
+    (is (= #{"EUPL-1.2"}                           (name->expressions "European Union Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GNU General Public License, Version 2, with the Classpath Exception")))
+    (is (= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPLv2 with Classpath exception")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GNU GENERAL PUBLIC LICENSE Version 2, June 1991")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GNU General Public License 2")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GNU General Public License, version 2")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GNU Public License v2")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GNU Public License, Version 2")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GNU Public License, Version 2.0")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GNU Public License, v2")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GPL v2")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GPL-2.0")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "GPLv2")))
+    (is (= #{"GPL-2.0-only"}                       (name->expressions "The GNU General Public License, Version 2")))
+    (is (= #{"GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0-or-later WITH Classpath-exception-2.0")))
+    (is (= #{"GPL-2.0-or-later"}                   (name->expressions "GNU GPL V2+")))
+    (is (= #{"GPL-2.0-or-later"}                   (name->expressions "GPL 2.0+")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions " GNU GENERAL PUBLIC LICENSE Version 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU GPL 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU GPL v 3.0")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU GPL v. 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU GPL v3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU GPL v3.0")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU GPL, version 3, 29 June 2007")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU General Public License V3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU General Public License Version 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU General Public License v3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU General Public License v3.0")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU General Public License, Version 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU General Public License, version 3 (GPLv3)")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU General Public License, version 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU Public License V. 3.0")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU Public License V3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNU public licence V3.0")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GNUv3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL 3.0")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL V3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL v3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL version 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL-3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL-3.0")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL-3.0-only")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPL3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "GPLv3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "General Public License 3")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "General Public License v3.0")))
+    (is (= #{"GPL-3.0-only"}                       (name->expressions "The GNU General Public License v3.0")))
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU GENERAL PUBLIC LICENSE")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU GPL v3+")))
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU GPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU GPLv3+")))
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU General Public License (GPL)")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU General Public License v3.0 or later")))
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU General Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU General Public License, Version 3 (or later)")))
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU General Public License,version 2.0 or (at your option) any later version")))
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GNU")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GPL V3+")))
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "GPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"GPL-3.0-or-later"}                   (name->expressions "The GNU General Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"Hippocratic-2.1"}                    (name->expressions "Hippocratic License")))
+    (is (= #{"ISC WITH Classpath-exception-2.0"}   (name->expressions "ISC WITH Classpath-exception-2.0")))
+    (is (= #{"ISC"}                                (name->expressions "ISC Licence")))
+    (is (= #{"ISC"}                                (name->expressions "ISC License")))
+    (is (= #{"ISC"}                                (name->expressions "ISC")))
+    (is (= #{"ISC"}                                (name->expressions "MIT/ISC License")))
+    (is (= #{"ISC"}                                (name->expressions "MIT/ISC")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU LESSER GENERAL PUBLIC LICENSE - Version 2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU LGPL v2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU Lesser General Public License 2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU Lesser General Public License v2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU Lesser General Public License, Version 2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU Lesser General Pulic License v2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU Library or Lesser General Public License (LGPL) 2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "GNU Library or Lesser General Public License (LGPL) V2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "LGPL 2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "LGPL-2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "LGPL-2.1-only")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "LGPLv2.1")))
+    (is (= #{"LGPL-2.1-only"}                      (name->expressions "lgpl_v2_1")))
+    (is (= #{"LGPL-2.1-or-later"}                  (name->expressions "GNU Lesser General Public License, version 2.1 or newer")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU General Lesser Public License (LGPL) version 3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU LESSER GENERAL PUBLIC LICENSE")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU LESSER GENERAL PUBLIC LICENSE, Version 3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU LGPL 3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU LGPL v3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU LGPL version 3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU LGPL-3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU LGPLv3 ")))  ; Note trailing space
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser GPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public Licence 3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public Licence")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License (LGPL) Version 3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License (LGPL)")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License - v 3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License - v 3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License - v3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License v3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License version 3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License version 3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser General Public License, Version 3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser Genereal Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Lesser Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "GNU Library or Lesser General Public License (LGPL)")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "Gnu Lesser Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "L GPL 3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPL 3.0 (GNU Lesser General Public License)")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPL 3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPL License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPL Open Source license")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPL v3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPL-3.0")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPL-3.0-only")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "LGPLv3")))
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "Lesser GPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "Lesser General Public License (LGPL)")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-only"}                      (name->expressions "Lesser General Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"LGPL-3.0-or-later"}                  (name->expressions "GNU Lesser General Public License, Version 3 or later")))
+    (is (= #{"LGPL-3.0-or-later"}                  (name->expressions "GNU Lesser General Public License, v. 3 or later")))
+    (is (= #{"LGPL-3.0-or-later"}                  (name->expressions "GNU Lesser General Public License, version 3 or later")))
+    (is (= #{"LGPL-3.0-or-later"}                  (name->expressions "GNU Lesser General Public License, version 3.0 or (at your option) any later version")))
+    (is (= #{"LGPL-3.0-or-later"}                  (name->expressions "LGPL-3.0-or-later")))
+    (is (= #{"LGPL-3.0-or-later"}                  (name->expressions "LGPLv3+")))
+    (is (= #{"LGPL-3.0-or-later"}                  (name->expressions "Licensed under GNU Lesser General Public License Version 3 or later (the ")))  ; Note trailing space
+    (is (= #{"Libpng"}                             (name->expressions "zlib/libpng License")))
+    (is (= #{"MIT" "Apache-2.0" "BSD-3-Clause"}    (name->expressions "MIT/Apache-2.0/BSD-3-Clause")))
+    (is (= #{"MIT"}                                (name->expressions " MIT License")))
+    (is (= #{"MIT"}                                (name->expressions "Distributed under an MIT-style license (see LICENSE for details).")))
+    (is (= #{"MIT"}                                (name->expressions "Expat (MIT) license")))
+    (is (= #{"MIT"}                                (name->expressions "MIT LICENSE")))
+    (is (= #{"MIT"}                                (name->expressions "MIT Licence")))
+    (is (= #{"MIT"}                                (name->expressions "MIT Licens")))
+    (is (= #{"MIT"}                                (name->expressions "MIT License (MIT)")))
+    (is (= #{"MIT"}                                (name->expressions "MIT License")))
+    (is (= #{"MIT"}                                (name->expressions "MIT Public License")))
+    (is (= #{"MIT"}                                (name->expressions "MIT license")))
+    (is (= #{"MIT"}                                (name->expressions "MIT public License")))
+    (is (= #{"MIT"}                                (name->expressions "MIT public license")))
+    (is (= #{"MIT"}                                (name->expressions "MIT")))
+    (is (= #{"MIT"}                                (name->expressions "MIT-style license (see LICENSE for details).")))
+    (is (= #{"MIT"}                                (name->expressions "THE MIT LICENSE")))
+    (is (= #{"MIT"}                                (name->expressions "The MIT Licence")))
+    (is (= #{"MIT"}                                (name->expressions "The MIT License (MIT) ")))  ; Note trailing space
+    (is (= #{"MIT"}                                (name->expressions "The MIT License (MIT) | Open Source Initiative")))
+    (is (= #{"MIT"}                                (name->expressions "The MIT License (MIT)")))
+    (is (= #{"MIT"}                                (name->expressions "The MIT License")))
+    (is (= #{"MIT"}                                (name->expressions "The MIT License.")))
+    (is (= #{"MIT"}                                (name->expressions "http://opensource.org/licenses/MIT")))
+;    (is (= #{"MIT"}                                (name->expressions "https://github.com/clanhr/clanhr-service/blob/master/LICENSE")))  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
+    (is (= #{"MPL-1.0"}                            (name->expressions "Mozilla Public License Version 1.0")))
+    (is (= #{"MPL-1.1"}                            (name->expressions "Mozilla Public License Version 1.1")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "MPL 2")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "MPL 2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "MPL v2")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "MPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"MPL-2.0"}                            (name->expressions "MPL-2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "MPL-v2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "MPL2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public Licence 2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License (Version 2.0)")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License 2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License Version 2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License v2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License v2.0+")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License version 2")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License version 2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License")))  ; Listed license missing version - we assume the latest
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License, v. 2.0")))
+    (is (= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License, version 2.0")))
+    (is (= #{"NASA-1.3"}                           (name->expressions "NASA OPEN SOURCE AGREEMENT VERSION 1.3")))
+    (is (= #{"NASA-1.3"}                           (name->expressions "NASA Open Source Agreement, Version 1.3")))
+    (is (= #{"NCSA"}                               (name->expressions "University of Illinois/NCSA Open Source License")))
+    (is (= #{"Ruby"}                               (name->expressions "Ruby License")))
+    (is (= #{"SGI-B-2.0"}                          (name->expressions "SGI")))  ; Listed license missing version - we assume the latest
+    (is (= #{"SMPPL"}                              (name->expressions "SMPPL")))
+    (is (= #{"Unlicense"}                          (name->expressions "The UnLicense")))
+    (is (= #{"Unlicense"}                          (name->expressions "The Unlicence")))
+    (is (= #{"Unlicense"}                          (name->expressions "The Unlicense")))
+    (is (= #{"Unlicense"}                          (name->expressions "UnLicense")))
+    (is (= #{"Unlicense"}                          (name->expressions "Unlicense License")))
+    (is (= #{"Unlicense"}                          (name->expressions "Unlicense")))
+    (is (= #{"Unlicense"}                          (name->expressions "unlicense")))
+    (is (= #{"W3C"}                                (name->expressions "W3C Software license")))
+    (is (= #{"WTFPL"}                              (name->expressions "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE")))
+    (is (= #{"WTFPL"}                              (name->expressions "DO-WTF-U-WANT-2")))
+    (is (= #{"WTFPL"}                              (name->expressions "Do What The Fuck You Want To Public License")))
+    (is (= #{"WTFPL"}                              (name->expressions "Do What The Fuck You Want To Public License, Version 2")))
+    (is (= #{"WTFPL"}                              (name->expressions "WTFPL v2")))
+    (is (= #{"WTFPL"}                              (name->expressions "WTFPL – Do What the Fuck You Want to Public License")))
+    (is (= #{"WTFPL"}                              (name->expressions "WTFPL")))
+    (is (= #{"X11"}                                (name->expressions "MIT X11 License")))
+    (is (= #{"X11"}                                (name->expressions "MIT/X11")))
+    (is (= #{"Zlib"}                               (name->expressions "Zlib License")))
+    (is (= #{"Zlib"}                               (name->expressions "zlib License")))
+    (is (= #{"Zlib"}                               (name->expressions "zlib license")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "All Rights Reserved")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "All rights reserved")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Copyright & all rights reserved Lean Pixel")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Copyright 2013 The Fresh Diet. All rights reserved.")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Copyright 2017 All Rights Reserved")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Not fit for public use so formally proprietary software - this is not open-source")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Private License")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Private")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Proprietary License")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Proprietary")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Proprietory. Copyright Jayaraj Poroor. All Rights Reserved.")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Tulos Commercial License")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "Wildbit Proprietary License")))
+    (is (= #{(proprietary-or-commercial)}          (name->expressions "proprietary")))
+    (is (= #{(public-domain)}                      (name->expressions "Public Domain")))
+    (is (= #{(str "GPL-2.0-or-later OR " (name->unlisted "Swiss Ephemeris"))} (name->expressions "GPL v2+ or Swiss Ephemeris")))
+    (is (= #{(str "MIT AND " (proprietary-or-commercial))} (name->expressions "Dual MIT & Proprietary")))
+    (is (unlisted-only?                            (name->expressions "${license.id}")))
+    (is (unlisted-only?                            (name->expressions "A Clojure library for Google Cloud Pub/Sub.")))
+    (is (unlisted-only?                            (name->expressions "APGL")))  ; Probable typo
+    (is (unlisted-only?                            (name->expressions "Amazon Software License")))
+    (is (unlisted-only?                            (name->expressions "BankersBox License")))
+    (is (unlisted-only?                            (name->expressions "Bespoke")))
+    (is (unlisted-only?                            (name->expressions "Bloomberg Open API")))
+    (is (unlisted-only?                            (name->expressions "Bostock")))
+    (is (unlisted-only?                            (name->expressions "Built In Project License")))
+    (is (unlisted-only?                            (name->expressions "CRAPL License")))
+    (is (unlisted-only?                            (name->expressions "Contact JMonkeyEngine forums for license details")))
+    (is (unlisted-only?                            (name->expressions "Copyright (C) 2015 by Glowbox LLC")))
+    (is (unlisted-only?                            (name->expressions "Copyright (c) 2011 Drew Colthorp")))
+    (is (unlisted-only?                            (name->expressions "Copyright (c) 2017, Lingchao Xin")))
+    (is (unlisted-only?                            (name->expressions "Copyright 2016, klaraHealth, Inc.")))
+    (is (unlisted-only?                            (name->expressions "Copyright 2017 Zensight")))
+    (is (unlisted-only?                            (name->expressions "Copyright 4A Volcano. 2015.")))
+    (is (unlisted-only?                            (name->expressions "Copyright Ona Systems Inc.")))
+    (is (unlisted-only?                            (name->expressions "Copyright meissa GmbH")))
+    (is (unlisted-only?                            (name->expressions "Copyright © SparX 2014")))
+    (is (unlisted-only?                            (name->expressions "Copyright")))
+    (is (unlisted-only?                            (name->expressions "Custom")))
+    (is (unlisted-only?                            (name->expressions "Cydeas Public License")))
+    (is (unlisted-only?                            (name->expressions "Don't steal my stuff")))
+    (is (unlisted-only?                            (name->expressions "Dropbox ToS")))
+    (is (unlisted-only?                            (name->expressions "FIXME: choose")))
+    (is (unlisted-only?                            (name->expressions "Firebase ToS")))
+    (is (unlisted-only?                            (name->expressions "GG Public License")))
+    (is (unlisted-only?                            (name->expressions "Google Maps ToS")))
+    (is (unlisted-only?                            (name->expressions "GraphiQL license")))
+    (is (unlisted-only?                            (name->expressions "Hackthorn Innovation Ltd")))
+    (is (unlisted-only?                            (name->expressions "Hackthorn Innovation copyright")))
+    (is (unlisted-only?                            (name->expressions "Heap ToS")))
+    (is (unlisted-only?                            (name->expressions "Interel")))
+    (is (unlisted-only?                            (name->expressions "JLGL Backend")))
+    (is (unlisted-only?                            (name->expressions "Jedis License")))
+    (is (unlisted-only?                            (name->expressions "Jiegao Owned")))
+    (is (unlisted-only?                            (name->expressions "LICENSE")))
+    (is (unlisted-only?                            (name->expressions "Libre Uso MX")))
+    (is (unlisted-only?                            (name->expressions "License of respective package")))
+    (is (unlisted-only?                            (name->expressions "License")))
+    (is (unlisted-only?                            (name->expressions "Like Clojure.")))
+    (is (unlisted-only?                            (name->expressions "Mixed")))
+    (is (unlisted-only?                            (name->expressions "Multiple")))
+    (is (unlisted-only?                            (name->expressions "OTN License Agreement")))
+    (is (unlisted-only?                            (name->expressions "Open Source Community License - Type C version 1.0")))
+    (is (unlisted-only?                            (name->expressions "Other License")))
+    (is (unlisted-only?                            (name->expressions "Provisdom")))
+    (is (unlisted-only?                            (name->expressions "Research License 1.0")))
+    (is (unlisted-only?                            (name->expressions "Restricted Distribution.")))
+    (is (unlisted-only?                            (name->expressions "SYNNEX China Owned")))
+    (is (unlisted-only?                            (name->expressions "See the LICENSE file")))
+    (is (unlisted-only?                            (name->expressions "Shen License")))
+    (is (unlisted-only?                            (name->expressions "Slick2D License")))
+    (is (unlisted-only?                            (name->expressions "Stripe ToS")))
+    (is (unlisted-only?                            (name->expressions "TODO")))
+    (is (unlisted-only?                            (name->expressions "TODO: Choose a license")))
+    (is (unlisted-only?                            (name->expressions "The I Haven't Got Around To This Yet License")))
+    (is (unlisted-only?                            (name->expressions "To ill!")))
+    (is (unlisted-only?                            (name->expressions "UNLICENSED")))
+    (is (unlisted-only?                            (name->expressions "University of Buffalo Public License")))
+    (is (unlisted-only?                            (name->expressions "Unknown")))
+    (is (unlisted-only?                            (name->expressions "VNETLPL - Limited Public License")))
+    (is (unlisted-only?                            (name->expressions "VNet PL")))
+    (is (unlisted-only?                            (name->expressions "Various")))
+    (is (unlisted-only?                            (name->expressions "Vimeo License")))
+    (is (unlisted-only?                            (name->expressions "WIP")))
+    (is (unlisted-only?                            (name->expressions "YouTube ToS")))
+    (is (unlisted-only?                            (name->expressions "avi license")))
+    (is (unlisted-only?                            (name->expressions "esl-sdk-external-signer-verification")))
+    (is (unlisted-only?                            (name->expressions "https://github.com/jaycfields/jry/blob/master/README.md#license")))  ; We don't support full text matching in Markdown yet
+    (is (unlisted-only?                            (name->expressions "jank license")))
+    (is (unlisted-only?                            (name->expressions "name")))
+    (is (unlisted-only?                            (name->expressions "none")))
+    (is (unlisted-only?                            (name->expressions "state-node license")))
+    (is (unlisted-only?                            (name->expressions "trove")))
+    (is (unlisted-only?                            (name->expressions "url")))
+    (is (unlisted-only?                            (name->expressions "wisdragon")))
+    (is (unlisted-only?                            (name->expressions "wiseloong")))))
+)
+
+(comment
 ; Note: these tests should be extended indefinitely, as it exercises the most-utilised part of the library (matching license names found in POMs)
 (deftest name->ids-tests
   (testing "Nil, empty or blank names"
@@ -65,7 +719,6 @@
     (is (= #{"Apache-2.0" "GPL-3.0-only"}          (name->ids "Apache-2.0 OR GPL-3.0")))
     (is (= #{"EPL-2.0" "GPL-2.0-or-later" "Classpath-exception-2.0" "MIT" "BSD-3-Clause" "Apache-2.0"}
                                                    (name->ids "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)"))))
-(comment  ; ####TODO: RE-ENABLE ME!!!!
   (testing "Names, with an emphasis on those seen in POMs on Maven Central"
     (is (= #{"AGPL-3.0-only"}                      (name->ids "GNU Affero General Public License (AGPL) version 3.0")))
     (is (= #{"AGPL-3.0-only"}                      (name->ids "GNU Affero General Public License v3.0")))
@@ -132,17 +785,14 @@
     (is (= #{"MIT"}                                (name->ids "The MIT License")))
     (is (= #{"MPL-1.0"}                            (name->ids "Mozilla Public License")))
     (is (= #{"MPL-2.0"}                            (name->ids "Mozilla Public License Version 2.0")))
-    (is (= #{"Plexus"}                             (name->ids "Similar to Apache License but with the acknowledgment clause removed"))))   ; JDOM - see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
+    (is (= #{"Plexus"}                             (name->ids "Similar to Apache License but with the acknowledgment clause removed"))))   ; This is used by JDOM - see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
   (testing "Names that appear in licensey things, but are ambiguous"
     (is (nil?                                      (name->ids "BSD"))))
   (testing "Names that appear in licensey things, but aren't in the SPDX license list"
-    (is (= #{"LicenseRef-lice-comb-PUBLIC-DOMAIN"} (name->ids "Public Domain")))
-    (is (= #{"LicenseRef-lice-comb-PUBLIC-DOMAIN"} (name->ids "Public domain"))))
-)
+    (is (= #{(public-domain)}                      (name->ids "Public Domain")))
+    (is (= #{(public-domain)}                      (name->ids "Public domain"))))
   (testing "Distinct license names that appear in POMs on Clojars"   ; synced from Clojars 2023-07-13
-;####TODO: SORT ALL OF THESE!!!!
     (is (= #{"AFL-3.0"}                            (name->ids "Academic Free License 3.0")))
-(comment  ;####TODO: UNCOMMENT THIS!!!!
     (is (= #{"AGPL-3.0-only"}                      (name->ids "AGPL v3")))
     (is (= #{"AGPL-3.0-only"}                      (name->ids "AGPLv3")))
     (is (= #{"AGPL-3.0-only"}                      (name->ids "Affero GNU Public License v3")))  ; Listed license missing version - we assume the latest
@@ -158,14 +808,13 @@
     (is (= #{"AGPL-3.0-only"}                      (name->ids "GNU Affero General Public License, version 3")))
     (is (= #{"AGPL-3.0-or-later"}                  (name->ids "AGPL")))  ; Listed license missing version - we assume the latest
     (is (= #{"AGPL-3.0-or-later"}                  (name->ids "Affero General Public License v3 or later (at your option)")))
-    (is (= #{"AGPL-3.0-or-later"}                  (name->ids "Affero General Public License version 3 or lator")))
+    (is (= #{"AGPL-3.0-or-later"}                  (name->ids "Affero General Public License version 3 or lator")))  ; Typo in "lator"
     (is (= #{"AGPL-3.0-or-later"}                  (name->ids "Affero General Public License")))
     (is (= #{"AGPL-3.0-or-later"}                  (name->ids "Affero General Public License,")))  ; Listed license missing version - we assume the latest
     (is (= #{"AGPL-3.0-or-later"}                  (name->ids "GNU AGPL-V3 or later")))
     (is (= #{"AGPL-3.0-or-later"}                  (name->ids "GNU Affero General Public Licence")))  ; Listed license missing version - we assume the latest
     (is (= #{"AGPL-3.0-or-later"}                  (name->ids "GNU Affero General Public License (AGPL)")))  ; Listed license missing version - we assume the latest
     (is (= #{"AGPL-3.0-or-later"}                  (name->ids "GNU Affero General Public License")))  ; Listed license missing version - we assume the latest
-)
     (is (= #{"Apache-2.0" "EPL-2.0"}               (name->ids "Double licensed under the Eclipse Public License (the same as Clojure) or the Apache Public License 2.0.")))  ; Listed license missing version - we assume the latest
     (is (= #{"Apache-2.0" "LLVM-exception"}        (name->ids "Apache 2.0 with LLVM Exception")))
     (is (= #{"Apache-2.0"}                         (name->ids " Apache License, Version 2.0")))
@@ -257,13 +906,14 @@
     (is (= #{"BSD-2-Clause"}                       (name->ids "Simplified BSD license")))
     (is (= #{"BSD-2-Clause"}                       (name->ids "The BSD 2-Clause License")))
     (is (= #{"BSD-2-Clause"}                       (name->ids "Two clause BSD license")))
+    (is (= #{"BSD-2-Clause-FreeBSD"}               (name->ids "FreeBSD License")))
     (is (= #{"BSD-3-Clause" "MIT"}                 (name->ids "New-BSD / MIT")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "3-Clause BSD License")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "3-Clause BSD")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "3-clause BSD licence (Revised BSD licence), also included in the jar file")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "3-clause BSD license")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "3-clause license (New BSD License or Modified BSD License)")))
-    (is (= #{"BSD-3-Clause"}                       (name->ids "Aduna BSD license")))  ; Listed license missing clause info, but the license text shows BSD-3-Clause
+    (is (= #{"BSD-3-Clause"}                       (name->ids "Aduna BSD license")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "BSD 3 Clause")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "BSD 3-Clause 'New' or 'Revised' License")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "BSD 3-Clause License")))
@@ -286,7 +936,6 @@
     (is (= #{"BSD-3-Clause"}                       (name->ids "The New BSD License")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "The New BSD license")))
     (is (= #{"BSD-3-Clause"}                       (name->ids "Three Clause BSD-like License")))
-    (is (unlisted-only?                            (name->ids "https://github.com/jaycfields/jry/blob/master/README.md#license")))  ; We don't support full text matching in Markdown yet
 ;    (is (= #{"BSD-3-Clause"}                       (name->ids "https://github.com/mixradio/clafka/blob/master/LICENSE")))                           ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
 ;    (is (= #{"BSD-3-Clause"}                       (name->ids "https://github.com/mixradio/faraday-atom/blob/master/LICENSE")))                     ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
 ;    (is (= #{"BSD-3-Clause"}                       (name->ids "https://github.com/mixradio/graphite-filter/blob/master/LICENSE")))                  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
@@ -312,22 +961,22 @@
     (is (= #{"Beerware"}                           (name->ids "THE BEER-WARE LICENSE")))
     (is (= #{"CC-BY-2.5"}                          (name->ids "Creative Commons Attribution 2.5 License")))
     (is (= #{"CC-BY-3.0"}                          (name->ids "Creative Commons 3.0")))
-    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0 US (CC-SA) license")))  ; Note: the US suffix here is meaningless, as there is no CC-BY-SA-3.0-US license id
-    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0 US (CC-SA)")))  ; Note: the US suffix here is meaningless, as there is no CC-BY-SA-3.0-US license id
-    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0 Unported License")))
-    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0 Unported")))
-    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0")))
     (is (= #{"CC-BY-4.0"}                          (name->ids "CC Attribution 4.0 International with exception for binary distribution")))
     (is (= #{"CC-BY-4.0"}                          (name->ids "CC-BY-4.0")))
     (is (= #{"CC-BY-4.0"}                          (name->ids "Creative Commons Attribution License")))  ; Listed license missing version - we assume the latest
     (is (= #{"CC-BY-NC-3.0"}                       (name->ids "Creative Commons Attribution-NonCommercial 3.0")))
     (is (= #{"CC-BY-NC-4.0"}                       (name->ids "CC BY-NC")))  ; Listed license missing version - we assume the latest
     (is (= #{"CC-BY-NC-ND-3.0"}                    (name->ids "Attribution-NonCommercial-NoDerivs 3.0 Unported")))
+    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0 US (CC-SA) license")))  ; Note: the US suffix here is meaningless, as there is no CC-BY-SA-3.0-US license id
+    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0 US (CC-SA)")))  ; Note: the US suffix here is meaningless, as there is no CC-BY-SA-3.0-US license id
+    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0 Unported License")))
+    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0 Unported")))
+    (is (= #{"CC-BY-SA-3.0"}                       (name->ids "Creative Commons Attribution-ShareAlike 3.0")))
     (is (= #{"CC-BY-SA-4.0"}                       (name->ids "CC BY-SA 4.0")))
-    (is (= #{"CC0-1.0"}                            (name->ids "Public domain (CC0)")))
     (is (= #{"CC0-1.0"}                            (name->ids "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication")))
     (is (= #{"CC0-1.0"}                            (name->ids "CC0 1.0 Universal")))
     (is (= #{"CC0-1.0"}                            (name->ids "CC0")))
+    (is (= #{"CC0-1.0"}                            (name->ids "Public domain (CC0)")))
     (is (= #{"CDDL-1.1"}                           (name->ids "Common Development and Distribution License (CDDL)")))  ; Listed license missing clause info
     (is (= #{"CDDL-1.1"}                           (name->ids "Common Development and Distribution License")))  ; Listed license missing clause info
     (is (= #{"CECILL-2.1"}                         (name->ids "CeCILL License")))  ; Listed license missing version - we assume the latest
@@ -348,13 +997,13 @@
     (is (= #{"EPL-1.0"}                            (name->ids "Eclipse Public License, version 1.0")))
     (is (= #{"EPL-1.0"}                            (name->ids "Eclipse Public Licese - v 1.0")))
     (is (= #{"EPL-1.0"}                            (name->ids "https://github.com/cmiles74/uio/blob/master/LICENSE")))
+    (is (= #{"EPL-2.0" "GPL-2.0-or-later" "Classpath-exception-2.0"} (name->ids "EPL-2.0 OR GPL-2.0-or-later WITH Classpath Exception")))  ; Listed exception missing version - we assume the latest
     (is (= #{"EPL-2.0" "GPL-2.0-or-later" "Classpath-exception-2.0"} (name->ids "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
-;    (is (= #{"EPL-2.0" "GPL-2.0-or-later" "Classpath-exception-2.0"} (name->ids "Eclipse Public License 2.0 OR GNU GPL v2+ with Classpath exception")))  ; ####TODO: THINK MORE ABOUT THIS ONE!!!
-;    (is (= #{"EPL-2.0" "GPL-2.0-or-later" "Classpath-exception-2.0"} (name->ids "EPL-2.0 OR GPL-2.0-or-later WITH Classpath Exception")))  ; Listed exception missing version - we assume the latest
+    (is (= #{"EPL-2.0" "GPL-2.0-or-later" "Classpath-exception-2.0"} (name->ids "Eclipse Public License 2.0 OR GNU GPL v2+ with Classpath exception")))  ; ####TODO: THINK MORE ABOUT THIS ONE!!!
     (is (= #{"EPL-2.0" "GPL-2.0-or-later"}         (name->ids "EPL-2.0 OR GPL-2.0-or-later")))
     (is (= #{"EPL-2.0" "GPL-3.0-or-later" "Classpath-exception-2.0"} (name->ids "EPL-2.0 OR GPL-3.0-or-later WITH Classpath-exception-2.0")))
     (is (= #{"EPL-2.0" "GPL-3.0-or-later"}         (name->ids "EPL-2.0 OR GPL-3.0-or-later")))
-;    (is (= #{"EPL-2.0" "LGPL-3.0-or-later"}        (name->ids "Dual: EPL and LGPL")))  ; Listed license missing version - we assume the latest
+    (is (= #{"EPL-2.0" "LGPL-3.0-or-later"}        (name->ids "Dual: EPL and LGPL")))  ; Listed license missing version - we assume the latest
     (is (= #{"EPL-2.0" "MIT"}                      (name->ids "Eclipse Public MIT")))  ; Listed license missing version - we assume the latest
     (is (= #{"EPL-2.0"}                            (name->ids "Copyright (C) 2013 Mathieu Gauthron. Distributed under the Eclipse Public License.")))
     (is (= #{"EPL-2.0"}                            (name->ids "Copyright (C) 2014 Mathieu Gauthron. Distributed under the Eclipse Public License.")))
@@ -385,7 +1034,6 @@
     (is (= #{"EUPL-1.2"}                           (name->ids "European Union Public Licence v. 1.2")))
     (is (= #{"EUPL-1.2"}                           (name->ids "European Union Public License 1.2 or later")))
     (is (= #{"EUPL-1.2"}                           (name->ids "European Union Public License")))  ; Listed license missing version - we assume the latest
-(comment  ;####TODO: UNCOMMENT THIS!!!!
     (is (= #{"GPL-2.0-only" "Classpath-exception-2.0"} (name->ids "GNU General Public License, Version 2, with the Classpath Exception")))
     (is (= #{"GPL-2.0-only" "Classpath-exception-2.0"} (name->ids "GPLv2 with Classpath exception")))
     (is (= #{"GPL-2.0-only"}                       (name->ids "GNU GENERAL PUBLIC LICENSE Version 2, June 1991")))
@@ -448,7 +1096,6 @@
     (is (= #{"GPL-3.0-or-later"}                   (name->ids "GPL V3+")))
     (is (= #{"GPL-3.0-or-later"}                   (name->ids "GPL")))  ; Listed license missing version - we assume the latest
     (is (= #{"GPL-3.0-or-later"}                   (name->ids "The GNU General Public License")))  ; Listed license missing version - we assume the latest
-)
     (is (= #{"Hippocratic-2.1"}                    (name->ids "Hippocratic License")))
     (is (= #{"ISC" "Classpath-exception-2.0"}      (name->ids "ISC WITH Classpath-exception-2.0")))
     (is (= #{"ISC"}                                (name->ids "ISC Licence")))
@@ -456,7 +1103,6 @@
     (is (= #{"ISC"}                                (name->ids "ISC")))
     (is (= #{"ISC"}                                (name->ids "MIT/ISC License")))
     (is (= #{"ISC"}                                (name->ids "MIT/ISC")))
-(comment  ;####TODO: UNCOMMENT THIS!!!!
     (is (= #{"LGPL-2.1-only"}                      (name->ids "GNU LESSER GENERAL PUBLIC LICENSE - Version 2.1")))
     (is (= #{"LGPL-2.1-only"}                      (name->ids "GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999")))
     (is (= #{"LGPL-2.1-only"}                      (name->ids "GNU LGPL v2.1")))
@@ -517,13 +1163,12 @@
     (is (= #{"LGPL-3.0-or-later"}                  (name->ids "LGPL-3.0-or-later")))
     (is (= #{"LGPL-3.0-or-later"}                  (name->ids "LGPLv3+")))
     (is (= #{"LGPL-3.0-or-later"}                  (name->ids "Licensed under GNU Lesser General Public License Version 3 or later (the ")))  ; Note trailing space
-)
     (is (= #{"Libpng"}                             (name->ids "zlib/libpng License")))
-    (is (= #{"LicenseRef-lice-comb-PUBLIC-DOMAIN"} (name->ids "Public Domain")))
+    (is (= #{(public-domain)}                      (name->ids "Public Domain")))
     (is (= #{"MIT" "Apache-2.0" "BSD-3-Clause"}    (name->ids "MIT/Apache-2.0/BSD-3-Clause")))
     (is (= #{"MIT"}                                (name->ids " MIT License")))
     (is (= #{"MIT"}                                (name->ids "Distributed under an MIT-style license (see LICENSE for details).")))
-    (is (= #{"MIT"}                                (name->ids "Dual MIT & Proprietary")))  ; ####TODO: THINK MORE ABOUT THIS ONE!!!
+    (is (= #{"MIT" (proprietary-or-commercial)}    (name->ids "Dual MIT & Proprietary")))
     (is (= #{"MIT"}                                (name->ids "Expat (MIT) license")))
     (is (= #{"MIT"}                                (name->ids "MIT LICENSE")))
     (is (= #{"MIT"}                                (name->ids "MIT Licence")))
@@ -543,9 +1188,8 @@
     (is (= #{"MIT"}                                (name->ids "The MIT License (MIT)")))
     (is (= #{"MIT"}                                (name->ids "The MIT License")))
     (is (= #{"MIT"}                                (name->ids "The MIT License.")))
-;####TODO: UNCOMMENT ONCE URL DETECTION AND RESOLUTION IS IMPLEMENTED!!!!
-;    (is (= #{"MIT"}                                (name->ids "http://opensource.org/licenses/MIT")))
-;    (is (= #{"MIT"}                                (name->ids "https://github.com/clanhr/clanhr-service/blob/master/LICENSE")))
+    (is (= #{"MIT"}                                (name->ids "http://opensource.org/licenses/MIT")))
+;    (is (= #{"MIT"}                                (name->ids "https://github.com/clanhr/clanhr-service/blob/master/LICENSE")))  ; Failing due to https://github.com/spdx/Spdx-Java-Library/issues/182
     (is (= #{"MPL-1.0"}                            (name->ids "Mozilla Public License Version 1.0")))
     (is (= #{"MPL-1.1"}                            (name->ids "Mozilla Public License Version 1.1")))
     (is (= #{"MPL-2.0"}                            (name->ids "MPL 2")))
@@ -593,12 +1237,11 @@
     (is (= #{"Zlib"}                               (name->ids "zlib License")))
     (is (= #{"Zlib"}                               (name->ids "zlib license")))
     (is (unlisted-only?                            (name->ids "${license.id}")))
-;####TODO: UNCOMMENT ME!!!!
-;    (is (unlisted-only?                            (name->ids "<script lang=\"javascript\">alert('hi');</script>EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
+    (is (unlisted-only?                            (name->ids "<script lang=\"javascript\">alert('hi');</script>EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
     (is (unlisted-only?                            (name->ids "A Clojure library for Google Cloud Pub/Sub.")))
     (is (unlisted-only?                            (name->ids "APGL")))  ; Probable typo
-    (is (unlisted-only?                            (name->ids "All Rights Reserved")))
-    (is (unlisted-only?                            (name->ids "All rights reserved")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "All Rights Reserved")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "All rights reserved")))
     (is (unlisted-only?                            (name->ids "Amazon Software License")))
     (is (unlisted-only?                            (name->ids "BankersBox License")))
     (is (unlisted-only?                            (name->ids "Bespoke")))
@@ -607,13 +1250,13 @@
     (is (unlisted-only?                            (name->ids "Built In Project License")))
     (is (unlisted-only?                            (name->ids "CRAPL License")))
     (is (unlisted-only?                            (name->ids "Contact JMonkeyEngine forums for license details")))
-    (is (unlisted-only?                            (name->ids "Copyright & all rights reserved Lean Pixel")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Copyright & all rights reserved Lean Pixel")))
     (is (unlisted-only?                            (name->ids "Copyright (C) 2015 by Glowbox LLC")))
     (is (unlisted-only?                            (name->ids "Copyright (c) 2011 Drew Colthorp")))
     (is (unlisted-only?                            (name->ids "Copyright (c) 2017, Lingchao Xin")))
-    (is (unlisted-only?                            (name->ids "Copyright 2013 The Fresh Diet. All rights reserved.")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Copyright 2013 The Fresh Diet. All rights reserved.")))
     (is (unlisted-only?                            (name->ids "Copyright 2016, klaraHealth, Inc.")))
-    (is (unlisted-only?                            (name->ids "Copyright 2017 All Rights Reserved")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Copyright 2017 All Rights Reserved")))
     (is (unlisted-only?                            (name->ids "Copyright 2017 Zensight")))
     (is (unlisted-only?                            (name->ids "Copyright 4A Volcano. 2015.")))
     (is (unlisted-only?                            (name->ids "Copyright Ona Systems Inc.")))
@@ -626,7 +1269,6 @@
     (is (unlisted-only?                            (name->ids "Dropbox ToS")))
     (is (unlisted-only?                            (name->ids "FIXME: choose")))
     (is (unlisted-only?                            (name->ids "Firebase ToS")))
-    (is (= #{"BSD-2-Clause-FreeBSD"}               (name->ids "FreeBSD License")))
     (is (unlisted-only?                            (name->ids "GG Public License")))
     (is (unlisted-only?                            (name->ids "Google Maps ToS")))
     (is (unlisted-only?                            (name->ids "GraphiQL license")))
@@ -644,15 +1286,15 @@
     (is (unlisted-only?                            (name->ids "Like Clojure.")))
     (is (unlisted-only?                            (name->ids "Mixed")))
     (is (unlisted-only?                            (name->ids "Multiple")))
-    (is (unlisted-only?                            (name->ids "Not fit for public use so formally proprietary software - this is not open-source")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Not fit for public use so formally proprietary software - this is not open-source")))
     (is (unlisted-only?                            (name->ids "OTN License Agreement")))
     (is (unlisted-only?                            (name->ids "Open Source Community License - Type C version 1.0")))
     (is (unlisted-only?                            (name->ids "Other License")))
-    (is (unlisted-only?                            (name->ids "Private License")))
-    (is (unlisted-only?                            (name->ids "Private")))
-    (is (unlisted-only?                            (name->ids "Proprietary License")))
-    (is (unlisted-only?                            (name->ids "Proprietary")))
-    (is (unlisted-only?                            (name->ids "Proprietory. Copyright Jayaraj Poroor. All Rights Reserved.")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Private License")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Private")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Proprietary License")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Proprietary")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Proprietory. Copyright Jayaraj Poroor. All Rights Reserved.")))
     (is (unlisted-only?                            (name->ids "Provisdom")))
     (is (unlisted-only?                            (name->ids "Research License 1.0")))
     (is (unlisted-only?                            (name->ids "Restricted Distribution.")))
@@ -665,7 +1307,7 @@
     (is (unlisted-only?                            (name->ids "TODO: Choose a license")))
     (is (unlisted-only?                            (name->ids "The I Haven't Got Around To This Yet License")))
     (is (unlisted-only?                            (name->ids "To ill!")))
-    (is (unlisted-only?                            (name->ids "Tulos Commercial License")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Tulos Commercial License")))
     (is (unlisted-only?                            (name->ids "UNLICENSED")))
     (is (unlisted-only?                            (name->ids "University of Buffalo Public License")))
     (is (unlisted-only?                            (name->ids "Unknown")))
@@ -674,14 +1316,15 @@
     (is (unlisted-only?                            (name->ids "Various")))
     (is (unlisted-only?                            (name->ids "Vimeo License")))
     (is (unlisted-only?                            (name->ids "WIP")))
-    (is (unlisted-only?                            (name->ids "Wildbit Proprietary License")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "Wildbit Proprietary License")))
     (is (unlisted-only?                            (name->ids "YouTube ToS")))
     (is (unlisted-only?                            (name->ids "avi license")))
     (is (unlisted-only?                            (name->ids "esl-sdk-external-signer-verification")))
+    (is (unlisted-only?                            (name->ids "https://github.com/jaycfields/jry/blob/master/README.md#license")))  ; We don't support full text matching in Markdown yet
     (is (unlisted-only?                            (name->ids "jank license")))
     (is (unlisted-only?                            (name->ids "name")))
     (is (unlisted-only?                            (name->ids "none")))
-    (is (unlisted-only?                            (name->ids "proprietary")))
+    (is (= #{(proprietary-or-commercial)}          (name->ids "proprietary")))
     (is (unlisted-only?                            (name->ids "state-node license")))
     (is (unlisted-only?                            (name->ids "trove")))
     (is (unlisted-only?                            (name->ids "url")))
@@ -711,4 +1354,8 @@
     (is (= #{"Apache-2.0"}                                   (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt"))))
   (testing "URIs that aren't in the SPDX license list, but do match via retrieval and full text matching"
     (is (= #{"Apache-2.0"}                                   (uri->ids "https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE")))
-    (is (= #{"Apache-2.0"}                                   (uri->ids "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))))   ; ####TODO: Not sure about this one
+    (is (= #{"Apache-2.0"}                                   (uri->ids "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))
+    (is (= #{"Apache-2.0"}                                   (uri->ids "HTTPS://GITHUB.COM/pmonks/lice-comb/blob/main/LICENSE")))))
+
+
+)
