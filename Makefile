@@ -31,9 +31,16 @@ py-sort:
 py-lint:
 	cd python && PYTHONPATH=. flake8
 
+check-py-cli:
+	cd python && PYTHONPATH=. python3 ./license_meta_db/__main__.py
+
 check: check_license_files test
+
+build:
+	cd python && rm -fr build && python3 setup.py sdist
 
 clean:
 	find . -name "*~"    | xargs rm -fr
 	find . -name "*.pyc" | xargs rm -fr
 	rm .coverage
+	rm -fr dist
