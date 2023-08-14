@@ -1,0 +1,27 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: flict
+Upstream-Contact: Henrik Sandklef <hesa@sandklef.com>
+Source: https://github.com/hesa/license-meta-db
+
+Files: licenses/*.LICENSE
+Copyright: Nexb
+License: CC-BY-4.0
+
+Files: tests/licenses/*.LICENSE
+Copyright: Nexb
+License: CC-BY-4.0
+
+Files: licenses/*.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: tests/licenses/*.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+Files: var/*.json
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
+
+

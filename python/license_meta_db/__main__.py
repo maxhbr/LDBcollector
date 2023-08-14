@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 
+# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 import logging 
 
-from license_db import LicenseDatabase
+from license_meta_db import LicenseDatabase
 
 logging.basicConfig(level=logging.DEBUG)
 ldb = LicenseDatabase(check=True)

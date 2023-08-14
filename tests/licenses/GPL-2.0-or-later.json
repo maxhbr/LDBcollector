@@ -12,7 +12,7 @@
         ]
     },
     "spdxid": "GPL-2.0-or-later",
-    "scancode_key": "gpl-2.0-plus",
+    "scancode-key": "gpl-2.0-plus",
     "name": "GPL 2.0 or later",
     "aliases": [
         "GPLv2+",

@@ -1,13 +1,19 @@
-import os
-import glob
-import json 
-import logging
+# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
-from config import LICENSE_DIR, VAR_DIR, LICENSE_SCHEMA_FILE
-from enum import Enum
+"""
+Simple class
+"""
+import glob
+import json
+import logging
+import os
 from pathlib import Path
+
+from license_meta_db.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, VAR_DIR
+from license_meta_db.exception import LicenseDatabaseError
 from jsonschema import validate
-from exception import LicenseDBException
 
 json_schema = None
 
@@ -18,11 +24,6 @@ SCANCODE_KEYS_TAG = 'scancode_keys'
 LICENSES_TAG = 'licenses'
 ALIASES_TAG = 'aliases'
 NAME_TAG = 'name'
-
-class LicenseDatabaseException(Exception):
-
-    def __init__(self, message):            
-        super().__init__(message)
 
 class LicenseDatabase:
 
@@ -63,7 +64,7 @@ class LicenseDatabase:
         for license_file in glob.glob(f'{self.license_dir}/*.json'):
             logging.debug(f' * {license_file}')
             data = self.__read_license_file(license_file, check)
-            licenses[data['spdxid']] = data                
+            licenses[data['spdxid']] = data
             for alias in data[ALIASES_TAG]:
                 aliases[alias] = data['spdxid']
             if SCANCODE_KEY_TAG in data:
@@ -84,30 +85,30 @@ class LicenseDatabase:
             ret_name = self.license_db[SCANCODE_KEYS_TAG][name]
             ret_id = 'scancode_key'
         else:
-            raise LicenseDatabaseException(f'Could not identify license from "{name}"')
+            raise LicenseDatabaseError(f'Could not identify license from "{name}"')
 
         return {
             'quieried_name': name,
             'name': ret_name,
-            'identified_via': ret_id
+            'identified_via': ret_id,
         }
 
     def licenses(self):
         return self.license_db[LICENSES_TAG].keys()
-            
+
     def license(self, name):
         """
         name: spdx identifier, alias or scancode key
 
-        returns the corresponding license object 
+        returns the corresponding license object
         """
         identified_license = self.__identify_license(name)
         identified_name = identified_license[NAME_TAG]
         return {
             IDENTIFIED_LICENSE_TAG: identified_license,
-            'license': self.license_db[LICENSES_TAG][identified_name]
+            'license': self.license_db[LICENSES_TAG][identified_name],
         }
-    
+
     def license_spdxid(self, name):
         """
         name: spdx identifier, alias or scancode key
@@ -115,7 +116,7 @@ class LicenseDatabase:
         returns the corresponding spdxid
         """
         return self.license(name)['license']['spdxid']
-    
+
     def license_scancode_key(self, name):
         """
         name: spdx identifier, alias or scancode key
@@ -127,7 +128,7 @@ class LicenseDatabase:
     def compatibility_as_list(self):
         # List all compatibility_as that exist
         licenses = self.license_db[LICENSES_TAG]
-        return [ licenses[x][COMPATIBILITY_AS_TAG] for x in licenses if COMPATIBILITY_AS_TAG in licenses[x] ]
+        return [licenses[x][COMPATIBILITY_AS_TAG] for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
 
     def aliases_list(self):
         # List all aliases that exist
@@ -142,7 +143,7 @@ class LicenseDatabase:
         # List compatibility_as for license
         identified = self.__identify_license(license_name)
         identified_name = identified[NAME_TAG]
-        
+
         if COMPATIBILITY_AS_TAG in self.license_db[LICENSES_TAG][identified_name]:
             compat_as = self.license_db[LICENSES_TAG][identified_name][COMPATIBILITY_AS_TAG]
         else:
@@ -150,5 +151,5 @@ class LicenseDatabase:
 
         return {
             IDENTIFIED_LICENSE_TAG: identified,
-            COMPATIBILITY_AS_TAG: compat_as        
+            COMPATIBILITY_AS_TAG: compat_as,
         }
