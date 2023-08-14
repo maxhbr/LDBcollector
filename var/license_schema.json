@@ -9,42 +9,27 @@
             "properties" : {
 		"description": { "type": "string" },
                 "disclaimer": { "type": "string" },
-                "organization": { "type": "string" },
-                "versions": {
+		"comment": { "type": "string" },
+		"date": { "type": "string" },
+		"authors": {
 		    "type": "array",
-                    "items": {
-			"version": { "type": "string" },
-			"comment": { "type": "string" },
-			"date": { "type": "string" },
-			"authors": {
-			    "type": "array",
-			    "items": {
-				"author": "string",
-				"organization": "string"
-			    }
-			},
-			"reviewers": {
-			    "type": "array",
-			    "items": {
-				"reviewer": "string",
-				"organization": "string"
-			    }
-			},
-			"required" : [ "version", "authors", "reviewers", "date", "comment" ]
-                    }
+		    "items": {
+			"author": "string",
+			"organization": "string"
+		    }
 		}
             },
-            "required" : [ "organization", "description", "versions" ]
+            "required" : [ "description", "date" ]
 	}
     },
     "spdxid": { "type": "string" },
-    "other_names": {
+    "aliases": {
         "type": "array",
         "items": {
             "type": "string"
         }
     },
-    "scancode-key":{ "type": "string" },
+    "scancode_key":{ "type": "string" },
     "name": { "type": "string" },
-    "required" : [ "meta", "spdxid", "name" ]
+    "required" : [ "meta", "spdxid", "name", "aliases" ]
 }
