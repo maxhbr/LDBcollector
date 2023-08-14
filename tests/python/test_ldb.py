@@ -9,10 +9,9 @@ import re
 import sys
 import pytest
 
-from license_db import LicenseDatabase
-from license_db import LicenseDatabaseException
+from license_meta_db.license_db import LicenseDatabase
+from license_meta_db.exception import LicenseDatabaseError
 import logging
-
 
 ldb = LicenseDatabase(check=True, license_dir="tests/licenses", logging_level=logging.INFO)
         
@@ -32,10 +31,10 @@ def test_aliases():
 def test_aliases_bad_input():
 
     # make sure bad input raises exception
-    with pytest.raises(LicenseDatabaseException) as _error:
+    with pytest.raises(LicenseDatabaseError) as _error:
         ldb.aliases(None)
 
-    with pytest.raises(LicenseDatabaseException) as _error:
+    with pytest.raises(LicenseDatabaseError) as _error:
         ldb.aliases("Dummy")
 
 
@@ -57,9 +56,9 @@ def test_compat_as_aliased():
         
 def test_compat_as_bad_input():
 
-    with pytest.raises(LicenseDatabaseException) as _error:
+    with pytest.raises(LicenseDatabaseError) as _error:
         ldb.compatibility_as(None)
 
-    with pytest.raises(LicenseDatabaseException) as _error:
+    with pytest.raises(LicenseDatabaseError) as _error:
         ldb.compatibility_as("Not existing")
 
