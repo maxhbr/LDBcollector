@@ -25,10 +25,10 @@ class OutputFormatter():
     def format_compat_list(self):
         return None
 
-    def format_alias(self):
+    def format_identified(self, identified, verbose):
         return None
     
-    def format_alias_list(self):
+    def format_identified_list(self):
         return None
     
 class JsonOutputFormatter(OutputFormatter):
@@ -39,10 +39,10 @@ class JsonOutputFormatter(OutputFormatter):
     def format_compat_list(self):
         return None
 
-    def format_alias(self):
+    def format_identified(self, identified, verbose):
         return None
     
-    def format_alias_list(self):
+    def format_identified_list(self):
         return None
     
 class YamlOutputFormatter(OutputFormatter):
@@ -53,10 +53,10 @@ class YamlOutputFormatter(OutputFormatter):
     def format_compat_list(self):
         return None
 
-    def format_alias(self):
+    def format_identified(self, identified, verbose):
         return None
     
-    def format_alias_list(self):
+    def format_identified_list(self):
         return None
     
 class TextOutputFormatter(OutputFormatter):
@@ -76,9 +76,13 @@ class TextOutputFormatter(OutputFormatter):
     def format_compat_list(self):
         return None
 
-    def format_alias(self):
-        return None
+    def format_identified(self, identified, verbose):
+        ret = []
+        id_lic = compat["identified_license"]
+        if verbose:
+            ret.append(f'{identified["license"]["spdxid"]}')
+        return "\n".join(ret)
     
-    def format_alias_list(self):
+    def format_identified_list(self):
         return None
     
