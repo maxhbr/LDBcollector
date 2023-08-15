@@ -28,7 +28,7 @@ class OutputFormatter():
     def format_identified(self, identified, verbose):
         return None
     
-    def format_identified_list(self):
+    def format_identified_list(self, all_aliases, verbose):
         return None
     
 class JsonOutputFormatter(OutputFormatter):
@@ -40,10 +40,10 @@ class JsonOutputFormatter(OutputFormatter):
         return None
 
     def format_identified(self, identified, verbose):
-        return None
+        return json.dumps(identified, indent=4)
     
-    def format_identified_list(self):
-        return None
+    def format_identified_list(self, all_aliases, verbose):
+        return json.dumps(all_aliases, indent=4)
     
 class YamlOutputFormatter(OutputFormatter):
 
@@ -54,10 +54,10 @@ class YamlOutputFormatter(OutputFormatter):
         return None
 
     def format_identified(self, identified, verbose):
-        return None
+        return yaml.dump(identified)
     
-    def format_identified_list(self):
-        return None
+    def format_identified_list(self, all_aliases, verbose):
+        return yaml.dump(all_aliases)
     
 class TextOutputFormatter(OutputFormatter):
 
@@ -78,11 +78,19 @@ class TextOutputFormatter(OutputFormatter):
 
     def format_identified(self, identified, verbose):
         ret = []
-        id_lic = compat["identified_license"]
+        id_lic = identified["identified_license"]
         if verbose:
-            ret.append(f'{identified["license"]["spdxid"]}')
+            ret.append(f'queried_name: {id_lic["queried_name"]}')
+            ret.append(f'name: {id_lic["name"]}')
+            ret.append(f'identified via: {id_lic["identified_via"]}')
+        else:
+            ret.append(f'{id_lic["name"]}')
         return "\n".join(ret)
     
-    def format_identified_list(self):
-        return None
+    def format_identified_list(self,all_aliases, verbose):
+        ret = []
+        for alias, value in all_aliases.items():
+            ret.append(f'{alias} -> {value}')
+
+        return "\n".join(ret)
     
