@@ -17,22 +17,22 @@ with open('requirements-dev.txt') as f:
     requirements_dev = f.read().splitlines()
 
 setuptools.setup(
-    name="flimea",
+    name="flame",
     version=SW_VERSION,
     author="Henrik Sanklef",
     author_email="hesa@sandklef.com",
-    description="FOSS License Metadata Assistant",
+    description="FOSS License Additional Metadata",
     long_description=_long_description,
     long_description_content_type="text/markdown",
     license_files=('LICENSES/CC-BY-4.0.txt','LICENSES/GPL-3.0-or-later.txt',),
     url="https://github.com/hesa/license-db",
-    packages=['flimea'],
+    packages=['flame'],
     entry_points={
         "console_scripts": [
-            "flimea = flimea.__main__:main",
+            "flame = flame.__main__:main",
         ],
     },
-    package_data={'flimea': ['var/license_schema.json', 'var/licenses/*.*'] },
+    package_data={'flame': ['var/license_schema.json', 'var/licenses/*.*'] },
     install_requires=requirements,
     extras_require={
         'dev': requirements_dev,
