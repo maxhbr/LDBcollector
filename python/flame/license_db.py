@@ -11,8 +11,8 @@ import logging
 import os
 from pathlib import Path
 
-from license_meta_db.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, VAR_DIR
-from license_meta_db.exception import LicenseDatabaseError
+from flimea.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, VAR_DIR
+from flimea.exception import LicenseDatabaseError
 from jsonschema import validate
 
 json_schema = None
@@ -35,7 +35,7 @@ class LicenseDatabase:
     def __validate_license_data(self, license_data):
         global json_schema
         if not json_schema:
-            schema_file = os.path.join(VAR_DIR, LICENSE_SCHEMA_FILE)
+            schema_file = LICENSE_SCHEMA_FILE
             logging.debug(f'Reading JSON schema from {schema_file}')
             with open(schema_file) as f:
                 json_schema = json.load(f)
@@ -88,7 +88,7 @@ class LicenseDatabase:
             raise LicenseDatabaseError(f'Could not identify license from "{name}"')
 
         return {
-            'quieried_name': name,
+            'queried_name': name,
             'name': ret_name,
             'identified_via': ret_id,
         }

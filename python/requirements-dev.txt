@@ -2,6 +2,9 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-jsonschema
-PyYAML
+flake8 ~= 5.0
+reuse
+twine
+pytest
+
 
