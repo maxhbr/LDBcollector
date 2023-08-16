@@ -3,7 +3,10 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 
-test:
+
+test: py-test
+
+py-test:
 	PYTHONPATH=./python/ pytest --log-cli-level=10 tests/python/
 
 check_license_files:
@@ -32,7 +35,9 @@ py-lint:
 	cd python && PYTHONPATH=. flake8
 
 check-py-cli:
-	cd python && PYTHONPATH=. python3 ./license_meta_db/__main__.py
+	@echo -n "Check cli (-h): "
+	@PYTHONPATH=.python python3 ./python/flame/__main__.py -h > /dev/null
+	@echo "OK"
 
 check: check_license_files test
 

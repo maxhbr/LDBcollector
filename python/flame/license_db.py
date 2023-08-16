@@ -11,8 +11,8 @@ import logging
 import os
 from pathlib import Path
 
-from flimea.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, VAR_DIR
-from flimea.exception import LicenseDatabaseError
+from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, VAR_DIR
+from flame.exception import LicenseDatabaseError
 from jsonschema import validate
 
 json_schema = None

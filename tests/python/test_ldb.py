@@ -9,8 +9,8 @@ import re
 import sys
 import pytest
 
-from license_meta_db.license_db import LicenseDatabase
-from license_meta_db.exception import LicenseDatabaseError
+from flame.license_db import LicenseDatabase
+from flame.exception import LicenseDatabaseError
 import logging
 
 ldb = LicenseDatabase(check=True, license_dir="tests/licenses", logging_level=logging.INFO)
