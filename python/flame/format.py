@@ -22,7 +22,7 @@ class OutputFormatter():
     def format_compat(self, compat, verbose):
         return None
 
-    def format_compat_list(self):
+    def format_compat_list(self, all_compats, verbose):
         return None
 
     def format_identified(self, identified, verbose):
@@ -36,8 +36,8 @@ class JsonOutputFormatter(OutputFormatter):
     def format_compat(self, compat, verbose):
         return json.dumps(compat, indent=4)
 
-    def format_compat_list(self):
-        return None
+    def format_compat_list(self, all_compats, verbose):
+        return json.dumps(all_compats, indent=4)
 
     def format_identified(self, identified, verbose):
         return json.dumps(identified, indent=4)
@@ -50,7 +50,7 @@ class YamlOutputFormatter(OutputFormatter):
     def format_compat(self, compat, verbose):
         return yaml.dump(compat)
 
-    def format_compat_list(self):
+    def format_compat_list(self, all_compats, verbose):
         return None
 
     def format_identified(self, identified, verbose):
@@ -73,8 +73,12 @@ class TextOutputFormatter(OutputFormatter):
             ret.append(f'{compat["compatibility_as"]}')
         return "\n".join(ret)
 
-    def format_compat_list(self):
-        return None
+    def format_compat_list(self, all_compats, verbose):
+        ret = []
+        for comp in all_compats:
+            ret.append(f'{comp["spdxid"]} -> {comp["compatibility_as"]}')
+
+        return "\n".join(ret)
 
     def format_identified(self, identified, verbose):
         ret = []
