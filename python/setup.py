@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 import setuptools
-from flimea.config import SW_VERSION
+from flame.config import SW_VERSION
 
 with open("README.md") as i:
     _long_description = i.read()
