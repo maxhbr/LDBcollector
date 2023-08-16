@@ -8,7 +8,7 @@ from django.dispatch import receiver
 from packageurl import PackageURL
 
 from cube.models import Version, Exploitation, License
-from cube.utils.licenses import explode_spdx_to_units
+from cube.utils.spdx import explode_spdx_to_units
 
 logger = logging.getLogger(__name__)
 

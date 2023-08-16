@@ -5,7 +5,7 @@
 from django import forms
 
 from cube.models import LicenseCuration, LicenseChoice, Derogation, Category
-from cube.utils.licenses import explode_spdx_to_units, get_ands_corrections
+from cube.utils.spdx import get_ands_corrections, explode_spdx_to_units
 
 
 # Component only steps (curations and expression validation)

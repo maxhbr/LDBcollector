@@ -218,7 +218,7 @@ class Version(models.Model):
 
     @property
     def license_is_ambiguous(self):
-        from cube.utils.licenses import is_ambiguous
+        from cube.utils.spdx import is_ambiguous
 
         return not self.corrected_license and is_ambiguous(self.spdx_valid_license_expr)
 
@@ -234,7 +234,7 @@ class Version(models.Model):
     def licenses(self):
         """Get all licenses object listed in effective_license expression"""
         from cube.models import License
-        from cube.utils.licenses import explode_spdx_to_units
+        from cube.utils.spdx import explode_spdx_to_units
 
         return License.objects.filter(
             spdx_id__in=[id for id in explode_spdx_to_units(self.effective_license)]

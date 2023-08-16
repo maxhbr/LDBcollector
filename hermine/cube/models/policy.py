@@ -100,7 +100,7 @@ class LicenseCuration(AbstractComponentRule):
 
     @property
     def is_simplification(self):
-        from cube.utils.licenses import simplified
+        from cube.utils.spdx import simplified
 
         return self.expression_out == simplified(self.expression_in)
 

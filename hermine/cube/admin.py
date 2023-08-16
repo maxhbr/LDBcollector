@@ -22,7 +22,7 @@ from .models import Exploitation
 from .models import Team
 from .models import LicenseCuration
 from .models.policy import AbstractUsageRule
-from .utils.licenses import is_ambiguous
+from .utils.spdx import is_ambiguous
 
 
 class ObligationInline(admin.StackedInline):
