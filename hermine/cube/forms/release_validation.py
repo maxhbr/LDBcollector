@@ -174,7 +174,8 @@ class BaseUsageConditionForm(BaseComponentDecisionForm):
 class CreateLicenseChoiceForm(BaseUsageConditionForm):
     expression_out = forms.CharField(
         label="Final SPDX expression",
-        help_text="The final expression of the license chosen for this usage",
+        help_text="The final expression of the license chosen for this usage. Can still contains ANDs, and even ORs if"
+        " you want to comply with all licenses and let the end user choose.",
         widget=forms.TextInput(attrs={"size": 80}),
     )
 

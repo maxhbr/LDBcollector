@@ -167,7 +167,6 @@ class Migration(migrations.Migration):
                 max_length=500,
                 validators=[
                     cube.utils.validators.validate_spdx_expression,
-                    cube.utils.validators.validate_no_ors_expression,
                 ],
             ),
         ),
