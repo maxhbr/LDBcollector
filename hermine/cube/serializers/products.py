@@ -22,12 +22,7 @@ class ExploitationSerializer(serializers.ModelSerializer):
 
 
 class ReleaseSerializer(serializers.ModelSerializer):
-    """Allow serialization and deserialization of Releases on the following fields :
-
-
-    :param serializers:
-        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
-    """
+    """Allow serialization and deserialization of Releases on the following fields :"""
 
     validation_step = serializers.IntegerField(source="valid_step", read_only=True)
     exploitations = ExploitationSerializer(many=True, read_only=True)
@@ -53,12 +48,26 @@ class ReleaseObligationsSerializer(serializers.Serializer):
     licenses = LicenseSerializer(many=True, read_only=True)
 
 
-class ProductSerializer(serializers.ModelSerializer):
-    """Allow serialization and deserialization of Products on the following fields :
+class ReleaseLicensesSerializer(serializers.Serializer):
+    class ReleaseLicensesProjectSerializer(serializers.Serializer):
+        class ReleaseLicensesScopeSerializer(serializers.Serializer):
+            class ReleaseLicensesExploitationSerializer(serializers.Serializer):
+                name = serializers.CharField()
+                licenses = serializers.StringRelatedField(many=True, read_only=True)
 
-    :param serializers:
-        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
-    """
+            name = serializers.CharField()
+            exploitations = ReleaseLicensesExploitationSerializer(
+                many=True, read_only=True
+            )
+
+        name = serializers.CharField()
+        scopes = ReleaseLicensesScopeSerializer(many=True, read_only=True)
+
+    projects = ReleaseLicensesProjectSerializer(many=True, read_only=True)
+
+
+class ProductSerializer(serializers.ModelSerializer):
+    """Allow serialization and deserialization of Products on the following fields :"""
 
     releases = ReleaseSerializer(
         read_only=False, many=True, allow_null=True, required=False
@@ -98,7 +107,7 @@ class ProductSerializer(serializers.ModelSerializer):
         for release_data in releases_data:
             updated_release = Release.objects.create(**release_data, product=instance)
             try:
-                instance.obligation_set.add(updated_release)
+                instance.releases.add(updated_release)
             except Exception:
                 print("Could not create releases of", instance)
         for field, value in validated_data.items():
