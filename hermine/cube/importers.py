@@ -7,19 +7,11 @@ import json
 import logging
 from datetime import datetime
 
+from django.core.files.uploadedfile import TemporaryUploadedFile
 from django.db import transaction
 from packageurl import PackageURL
-from spdx.parsers import (
-    jsonparser,
-    jsonyamlxmlbuilders,
-    tagvaluebuilders,
-    rdf,
-    rdfbuilders,
-    tagvalue,
-    xmlparser,
-    yamlparser,
-)
-from spdx.parsers.loggers import StandardLogger
+from spdx_tools.spdx.parser.error import SPDXParsingError
+from spdx_tools.spdx.parser.parse_anything import parse_file
 
 from cube.models import Component, Version, Usage, Exploitation
 from cube.utils.spdx import is_valid, simplified
@@ -138,15 +130,11 @@ def import_ort_evaluated_model_json_file(
 def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
     # Importing SPDX BOM yaml
     logger.info("SPDX import started")
-    document, error = parse_spdx_file(spdx_file)
-
-    if document is None:
+    try:
+        document = parse_spdx_file(spdx_file)
+    except SPDXParsingError as e:
+        logger.error(e)
         raise SBOMImportFailure("Please check file format.")
-
-    if error:
-        logger.warning(
-            "SPDX file contains errors (printed above), but import continues…"
-        )
 
     if replace:
         Usage.objects.filter(release=release_id).delete()
@@ -155,17 +143,20 @@ def import_spdx_file(spdx_file, release_id, replace=False, linking: str = ""):
         comp_name = package.name.rsplit("@")[0]
         comp_url = package.download_location or ""
 
-        if not package.license_declared:
+        if package.license_declared is None:
             declared_license = "NOASSERTION"
         else:
-            declared_license = package.license_declared.identifier
+            declared_license = str(package.license_declared)
 
         # SPDX output sometimes return "NOASSERTION" instead of an empty value
         # we want to keep it as declared but it is not a valid license expression
-        if not package.conc_lics or package.conc_lics.identifier == "NOASSERTION":
+        if (
+            package.license_concluded is None
+            or str(package.license_concluded) == "NOASSERTION"
+        ):
             concluded_license = ""
         else:
-            concluded_license = package.conc_lics.identifier
+            concluded_license = str(package.license_concluded)
 
         version_number = package.version or "Current"
 
@@ -329,22 +320,7 @@ def add_version(component, version_number, declared_license, concluded_license, 
 # SPDX-FileCopyrightText: spdx contributors
 # SPDX-License-Identifier: Apache-2.0
 def parse_spdx_file(spdx_file):
-    filename = spdx_file.name
-    if filename.endswith(".rdf") or filename.endswith(".rdf.xml"):
-        parser = rdf.Parser(rdfbuilders.Builder(), StandardLogger())
-    elif filename.endswith(".tag") or filename.endswith(".spdx"):
-        parser = tagvalue.Parser(tagvaluebuilders.Builder(), StandardLogger())
-        spdx_file = spdx_file.read().decode("utf-8")
-    elif filename.endswith(".json"):
-        parser = jsonparser.Parser(jsonyamlxmlbuilders.Builder(), StandardLogger())
-    elif filename.endswith(".xml"):
-        parser = xmlparser.Parser(jsonyamlxmlbuilders.Builder(), StandardLogger())
-    elif filename.endswith(".yaml") or filename.endswith(".yml"):
-        parser = yamlparser.Parser(jsonyamlxmlbuilders.Builder(), StandardLogger())
-    else:
-        return None, "FileType Not Supported" + filename
+    if isinstance(spdx_file, TemporaryUploadedFile):
+        return parse_file(spdx_file.temporary_file_path())
 
-    if hasattr(parser, "build"):
-        parser.build()
-
-    return parser.parse(spdx_file)
+    return parse_file(spdx_file.name)

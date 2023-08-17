@@ -159,9 +159,11 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = os.environ.get("STATIC_ROOT", os.path.join(BASE_DIR, "..", "static"))
 
-API_BASE_URL = os.environ.get("API_BASE_URL", "http://0.0.0.0:8080/api/")
 APPEND_SLASH = True
-# Added for django-simple-bulma
+
+FILE_UPLOAD_HANDLERS = [
+    "django.core.files.uploadhandler.TemporaryFileUploadHandler",
+]
 
 STATICFILES_FINDERS = [
     # First add the two default Finders, since this will overwrite the default.
