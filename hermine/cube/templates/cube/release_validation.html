@@ -145,7 +145,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
-  {% elif object.valid_step > 1 %}
+  {% elif object.valid_step >= 2 %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
@@ -255,7 +255,10 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% endfor %}
       </tbody>
     </table>
-  {% elif release.valid_step > 2 %}
+  {% elif release.valid_step >= 2 %}
+  {% comment %}
+    It maybe stuck at 2 if some exploitation modes are not defined, even if all license choices have been made
+  {% endcomment %}
     <article class="message is-success">
       <div class="message-header">
         <p>Success</p>
