@@ -20,27 +20,65 @@ SPDX-License-Identifier: AGPL-3.0-only
   </div>
   <div class="level-right">
     <div class="level-item">
-      <div class="pagination">
-        <span class="step-links">
+      <nav class="pagination" role="navigation" aria-label="Pagination">
+        <ul class="pagination-list">
+          {% if page_obj.number > 2 %}
+            <li>
+              <a class="pagination-link"
+                 href="?page=1&search={{ query }}"
+                 aria-label="Go to first page"
+              >
+                1
+              </a>
+            </li>
+          {% endif %}
+          {% if page_obj.number > 3 %}
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+          {% endif %}
           {% if page_obj.has_previous %}
-            <a href="?page=1&search={{ query }}"><button class="current button">first</button></a>
-            <a href="?page={{ page_obj.previous_page_number }}&search={{ query }}"><button class="current button is-link is-light">previous</button></a>
-          {% else %}
-            <button class="current button " disabled>first</button>
-            <button class="current button  is-light" disabled>previous</button>
+            <li>
+              <a class="pagination-link"
+                 href="?page={{ page_obj.previous_page_number }}&search={{ query }}"
+                 aria-label="Go to page {{ page_obj.previous_page_number }}"
+              >
+                {{ page_obj.previous_page_number }}
+              </a>
+            </li>
           {% endif %}
-          <button class="current button">
-            page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
-          </button>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page {{ page_obj.number }}" aria-current="page">
+              {{ page_obj.number }}
+            </a>
+          </li>
           {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}&search={{ query }}"><button class="current button is-link is-light">next</button></a>
-            <a href="?page={{ page_obj.paginator.num_pages }}&search={{ query }}"><button class="current button ">last</button></a>
-          {% else %}
-            <button class="current button is-light" disabled>next</button>
-            <button class="current button " disabled>last</button>
+            <li>
+              <a class="pagination-link"
+                 href="?page={{ page_obj.next_page_number }}&search={{ query }}"
+                 aria-label="Go to page {{ page_obj.next_page_number }}"
+              >
+                {{ page_obj.next_page_number }}
+              </a>
+            </li>
           {% endif %}
-        </span>
-      </div>
+          {% if page_obj.number < page_obj.paginator.num_pages|add:"-2" %}
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+          {% endif %}
+          {% if page_obj.number < page_obj.paginator.num_pages|add:"-1" %}
+            <li>
+              <a class="pagination-link"
+                 href="?page={{ page_obj.paginator.num_pages }}&search={{ query }}"
+                 aria-label="Go to last page"
+              >
+                {{ page_obj.paginator.num_pages }}
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
