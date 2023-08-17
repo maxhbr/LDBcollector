@@ -18,7 +18,7 @@ ARG APP_PATH=/opt/$APP_NAME
 
 WORKDIR $APP_PATH
 
-COPY package.json package-lock.json $APP_PATH
+COPY package.json package-lock.json $APP_PATH/
 RUN npm ci
 
 COPY . $APP_PATH
