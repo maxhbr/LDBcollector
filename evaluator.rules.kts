@@ -1354,6 +1354,19 @@ fun RuleSet.missingTestsRule() = projectSourceRule("MISSING_TESTS") {
     )
 }
 
+fun RuleSet.noLicenseInDependencyRule() = dependencyRule("NO_LICENSE_IN_DEPENDENCY") {
+    require {
+        -hasLicense()
+        -isExcluded()
+    }
+
+    error(
+        "No license information is available for dependency '${pkg.metadata.id.toCoordinates()}'.",
+        "If the dependency indeed is unlicensed, it must not be used. Otherwise, please conclude the appropriate " +
+                "license with a package curation."
+    )
+}
+
 fun RuleSet.packageConfigurationInOrtYmlRule() = ortResultRule("PACKAGE_CONFIGURATION_IN_ORT_YML") {
     if (ortResult.repository.config.packageConfigurations.isNotEmpty()) {
         error(
@@ -1572,6 +1585,7 @@ fun RuleSet.commonRules() {
     packageCurationInOrtYmlRule()
 
     // Rules for dependencies:
+    noLicenseInDependencyRule()
     vulnerabilityInDependencyRule()
     vulnerabilityWithHighSeverityInDependencyRule()
 
