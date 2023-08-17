@@ -17,13 +17,14 @@ solche Einschränkungen nicht vorsehen. Für weitere Informationen siehe https:/
 10. Cooperative Non-Violent Public License (CNPL): https://git.pixie.town/thufie/CNPL
 11. Digital Abundance License (DAL): https://web.archive.org/web/20220117162852/https://github.com/dzuk-mutant/digital-abundance-license
 12. Do No Harm License: https://github.com/raisely/NoHarm
-13. Friends and Lovers License (v. 0.1): https://github.com/outofambit/friends-and-lovers-license/blob/main/FRIENDS_AND_LOVERS_LICENSE
-14. Fuck Around and Find Out License (v. 0.2): https://git.sr.ht/~boringcactus/fafol/tree/master/LICENSE.md
-15. Hippocratic License (v. 2.1): https://github.com/PaulLeCam/react-leaflet/blob/master/LICENSE.md
-16. Hippocratic License (v. 3.0): https://firstdonoharm.dev/version/3/0/license/
-17. inno3: https://inno3.frama.io/tm-contract-for-oss-maintainers/
-18. Just World License: https://github.com/raisely/NoHarm/blob/667bdd2b0fe1716f0e6daa425cc00ea97e6709f1/LICENSE.md 
-19. Kaitiakitanga License: https://github.com/TeHikuMedia/Kaitiakitanga-License/blob/tumu/LICENSE.md
-20. ml5.js license: https://github.com/ml5js/Code-of-Conduct/blob/main/LICENSE.md
-21. Non-Violent Public License (NPL): https://git.pixie.town/thufie/NPL
-22. Vaccine License: http://web.archive.org/web/20200826012936/https://vaccinelicense.com/vaccine-license/
+13. Don't Be A Dick Public License (v. 1.2): https://github.com/philsturgeon/dbad/blob/master/LICENSE.md
+14. Friends and Lovers License (v. 0.1): https://github.com/outofambit/friends-and-lovers-license/blob/main/FRIENDS_AND_LOVERS_LICENSE
+15. Fuck Around and Find Out License (v. 0.2): https://git.sr.ht/~boringcactus/fafol/tree/master/LICENSE.md
+16. Hippocratic License (v. 2.1): https://github.com/PaulLeCam/react-leaflet/blob/master/LICENSE.md
+17. Hippocratic License (v. 3.0): https://firstdonoharm.dev/version/3/0/license/
+18. inno3: https://inno3.frama.io/tm-contract-for-oss-maintainers/
+19. Just World License: https://github.com/raisely/NoHarm/blob/667bdd2b0fe1716f0e6daa425cc00ea97e6709f1/LICENSE.md 
+20. Kaitiakitanga License: https://github.com/TeHikuMedia/Kaitiakitanga-License/blob/tumu/LICENSE.md
+21. ml5.js license: https://github.com/ml5js/Code-of-Conduct/blob/main/LICENSE.md
+22. Non-Violent Public License (NPL): https://git.pixie.town/thufie/NPL
+23. Vaccine License: http://web.archive.org/web/20200826012936/https://vaccinelicense.com/vaccine-license/
