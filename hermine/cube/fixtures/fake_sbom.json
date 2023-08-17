@@ -3,6 +3,13 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "hello-imports.spdx.json",
+  "creationInfo": {
+    "created": "2018-10-19T16:14:22Z",
+    "creators": [
+      "Organization: Inno3"
+    ]
+  },
+  "documentNamespace": "http://spdx.org/spdxdocs/hello-imports.spdx.json",
   "documentDescribes": [
     "SPDXRef-dependency1",
     "SPDXRef-dependency2",
@@ -17,7 +24,8 @@
       "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0",
       "licenseDeclared": "LicenseRef-fakeLicense-ContextAllowed-1.0",
       "copyrightText": "NOASSERTION",
-      "versionInfo": "v1"
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/spdx-valid-dependency.tar.gz"
     },
     {
       "name": "spdx-invalid-dependency",
@@ -25,7 +33,8 @@
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "Allowed-1.0 AND ContextAllowed-1.0",
       "copyrightText": "NOASSERTION",
-      "versionInfo": "v1"
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/spdx-invalid-dependency.tar.gz"
     },
     {
       "name": "ambiguous-dependency",
@@ -33,7 +42,8 @@
       "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0 AND LicenseRef-fakeLicense-Allowed-1.0",
       "licenseDeclared": "LicenseRef-fakeLicense-ContextAllowed-1.0 AND LicenseRef-fakeLicense-Allowed-1.0",
       "copyrightText": "NOASSERTION",
-      "versionInfo": "v1"
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/ambiguous-dependency.tar.gz"
     },
     {
       "name": "no-assertion-dependency",
@@ -41,7 +51,8 @@
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "versionInfo": "v1"
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/no-assertion-dependency.tar.gz"
     },
     {
       "name": "wrong-concluded-dependency",
@@ -49,7 +60,8 @@
       "licenseConcluded": "LicenseRef-fakeLicense-ContextAllowed-1.0",
       "licenseDeclared": "NotAnalyzedLicense AND WeekCopyLeft-1.0",
       "copyrightText": "NOASSERTION",
-      "versionInfo": "v1"
+      "versionInfo": "v1",
+      "downloadLocation": "https://example.com/wrong-concluded-dependency.tar.gz"
     }
   ]
 }
