@@ -4,7 +4,7 @@
 
 from django.db import models, transaction
 
-from cube.utils.validators import validate_spdx_expression, validate_no_ors_expression
+from cube.utils.validators import validate_spdx_expression
 
 
 class Usage(models.Model):
@@ -96,7 +96,7 @@ class Usage(models.Model):
     license_expression = models.CharField(
         max_length=500,
         blank=True,
-        validators=[validate_spdx_expression, validate_no_ors_expression],
+        validators=[validate_spdx_expression],
     )
 
     @property

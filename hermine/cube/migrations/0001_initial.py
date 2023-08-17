@@ -4,7 +4,7 @@ from django.conf import settings
 from django.db import migrations, models
 import django.db.models.deletion
 
-from cube.utils.validators import validate_spdx_expression, validate_no_ors_expression
+from cube.utils.validators import validate_spdx_expression
 
 
 class Migration(migrations.Migration):
@@ -410,7 +410,6 @@ class Migration(migrations.Migration):
                         max_length=500,
                         validators=[
                             validate_spdx_expression,
-                            validate_no_ors_expression,
                         ],
                     ),
                 ),
