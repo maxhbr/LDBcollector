@@ -1,6 +1,7 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
+from itertools import groupby, chain
 
 from django.http import HttpResponse
 from django.urls import reverse
@@ -28,6 +29,7 @@ from cube.serializers.products import (
     ExploitationSerializer,
     ExploitationsValidationSerializer,
     ReleaseObligationsSerializer,
+    ReleaseLicensesSerializer,
 )
 from cube.utils.licenses import get_usages_obligations
 from cube.utils.release_validation import (
@@ -89,7 +91,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(self.get_serializer_class()(release).data)
 
     @swagger_auto_schema(
-        responses={200: ExpressionValidationSerializer},
+        responses={200: ExpressionValidationSerializer()},
     )
     @action(detail=True, methods=["get"])
     def validation_1(self, request, **kwargs):
@@ -115,7 +117,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(ExpressionValidationSerializer(response).data)
 
     @swagger_auto_schema(
-        responses={200: AndsValidationSerializer},
+        responses={200: AndsValidationSerializer()},
     )
     @action(detail=True, methods=["get"])
     def validation_2(self, request, **kwargs):
@@ -135,7 +137,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(AndsValidationSerializer(response).data)
 
     @swagger_auto_schema(
-        responses={200: ExploitationsValidationSerializer},
+        responses={200: ExploitationsValidationSerializer()},
     )
     @action(detail=True, methods=["get"])
     def validation_3(self, request, **kwargs):
@@ -155,7 +157,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(ExploitationsValidationSerializer(response).data)
 
     @swagger_auto_schema(
-        responses={200: ChoicesValidationSerializer},
+        responses={200: ChoicesValidationSerializer()},
     )
     @action(detail=True, methods=["get"])
     def validation_4(self, request, **kwargs):
@@ -174,7 +176,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         return Response(ChoicesValidationSerializer(response).data)
 
     @swagger_auto_schema(
-        responses={200: PolicyValidationSerializer},
+        responses={200: PolicyValidationSerializer()},
     )
     @action(detail=True, methods=["get"])
     def validation_5(self, request, **kwargs):
@@ -274,7 +276,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         )
 
     @swagger_auto_schema(
-        responses={200: ReleaseObligationsSerializer},
+        responses={200: ReleaseObligationsSerializer()},
     )
     @action(detail=True, methods=["get"])
     def obligations(self, pk, **kwargs):
@@ -287,6 +289,52 @@ class ReleaseViewSet(viewsets.ModelViewSet):
         }
 
         return Response(ReleaseObligationsSerializer(response).data)
+
+    @swagger_auto_schema(
+        responses={200: ReleaseLicensesSerializer()},
+    )
+    @action(detail=True, methods=["get"])
+    def licenses(self, pk, **kwargs):
+        usages = sorted(
+            self.get_object().usage_set.all(),
+            key=lambda u: (u.project, u.scope, u.exploitation),
+        )
+
+        # build the project / scope / exploitations tree
+        response = {
+            "projects": [
+                {
+                    "name": project_name,
+                    "scopes": [
+                        {
+                            "name": scope_name,
+                            "exploitations": [
+                                {
+                                    "name": exploitation_name,
+                                    "licenses": list(
+                                        chain.from_iterable(
+                                            usage.licenses_chosen.all()
+                                            for usage in exploitation_usages
+                                        )
+                                    ),
+                                }
+                                for exploitation_name, exploitation_usages in groupby(
+                                    scope_usages, key=lambda u: u.exploitation
+                                )
+                            ],
+                        }
+                        for scope_name, scope_usages in groupby(
+                            project_usages, key=lambda u: u.scope
+                        )
+                    ],
+                }
+                for project_name, project_usages in groupby(
+                    usages, key=lambda u: u.project
+                )
+            ],
+        }
+
+        return Response(ReleaseLicensesSerializer(response).data)
 
 
 class ExploitationViewSet(viewsets.ModelViewSet):
