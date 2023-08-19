@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.27
+Version:        1.28
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,23 @@ make check-grammar
 
 
 %changelog
+* Sat Aug 19 2023 Miroslav Suchý <msuchy@redhat.com> 1.28-1
+- Add TU-Berlin-2.0 license
+- Add HPLIP nonfree licenses
+- Add LicenseRef-libzmq
+- Add CCLP content licenses
+- add LicenseRef-Waqf as not-allowed
+- Add LicenseRef-Bacula as allowed
+- Add some allowed licenses
+- Reformat REUSE licenses
+- Add autoconf public domain declaration
+- Update MIT-testregex.toml to delete [fedora] block
+- add MIT-testregex license
+- add GPL-3.0-or-later WITH Texinfo-exception
+- add usage notes to LicenseRef-TCGL
+- Add hpcdtoppm as not allowed
+- add Zeeff license
+
 * Fri Aug 04 2023 Miroslav Suchý <msuchy@redhat.com> 1.27-1
 - Add TCGL as not allowed
 - Add GPL-2.0-or-later WITH GCC-exception-2.0
