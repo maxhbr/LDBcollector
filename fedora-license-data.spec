@@ -38,7 +38,7 @@ BuildRequires:  python%{python3_pkgversion}-tomli-w
 This project contains information about licenses used in the Fedora
 Linux project.  Licenses are categorized by their approval or
 non-approval and may include additional notes.  The data files provide
-mappings between the SDPX license expressions and the older Fedora
+mappings between the SPDX license expressions and the older Fedora
 license legacy-abbreviations.
 
 The project also intends to publish the combined license information
