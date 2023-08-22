@@ -6,7 +6,7 @@
 
 from argparse import RawTextHelpFormatter
 import argparse
-import logging 
+import logging
 
 from flame.license_db import LicenseDatabase
 import flame.config
@@ -42,7 +42,7 @@ def parse():
                         default="text")
 
     subparsers = parser.add_subparsers(help='Sub commands')
-    
+
     # identify
     parser_i = subparsers.add_parser(
         'identify', help='show license matching supplied license')
@@ -65,12 +65,12 @@ def parse():
     parser_a = subparsers.add_parser(
         'aliases', help='show all aliases')
     parser_a.set_defaults(which='aliases', func=aliases)
-    
+
     # compatbilities
     parser_cs = subparsers.add_parser(
         'compats', help='show all compatibilities')
     parser_cs.set_defaults(which='compats', func=compats)
-    
+
     args = parser.parse_args()
 
     return args
@@ -86,30 +86,26 @@ def compats(ldb, formatter, args):
 def compatibility(ldb, formatter, args):
     compat = ldb.compatibility_as(args.license)
     return formatter.format_compat(compat, args.verbose)
-    
+
 def identify(ldb, formatter, args):
     identified_license = ldb.license(args.license)
     return formatter.format_identified(identified_license, args.verbose)
-    
-    
 
 def main():
-    
+
     args = parse()
-    
+
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
 
     ldb = LicenseDatabase(check=args.check)
-    
+
     formatter = OutputFormatterFactory.formatter(args.output_format)
-    
+
     if args.func:
         formatted = args.func(ldb, formatter, args)
         print(formatted)
 
-        
 
 if __name__ == '__main__':
     main()
-
