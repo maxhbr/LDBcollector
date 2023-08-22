@@ -4,7 +4,7 @@ import yaml
 OUTPUT_FORMAT_JSON = "Json"
 OUTPUT_FORMAT_YAML = "Yaml"
 OUTPUT_FORMAT_TEXT = "text"
-OUTPUT_FORMATS = [ OUTPUT_FORMAT_JSON, OUTPUT_FORMAT_YAML, OUTPUT_FORMAT_TEXT ]
+OUTPUT_FORMATS = [OUTPUT_FORMAT_JSON, OUTPUT_FORMAT_YAML, OUTPUT_FORMAT_TEXT]
 
 class OutputFormatterFactory():
 
@@ -27,10 +27,10 @@ class OutputFormatter():
 
     def format_identified(self, identified, verbose):
         return None
-    
+
     def format_identified_list(self, all_aliases, verbose):
         return None
-    
+
 class JsonOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose):
@@ -41,10 +41,10 @@ class JsonOutputFormatter(OutputFormatter):
 
     def format_identified(self, identified, verbose):
         return json.dumps(identified, indent=4)
-    
+
     def format_identified_list(self, all_aliases, verbose):
         return json.dumps(all_aliases, indent=4)
-    
+
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose):
@@ -55,10 +55,10 @@ class YamlOutputFormatter(OutputFormatter):
 
     def format_identified(self, identified, verbose):
         return yaml.dump(identified)
-    
+
     def format_identified_list(self, all_aliases, verbose):
         return yaml.dump(all_aliases)
-    
+
 class TextOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose):
@@ -90,11 +90,10 @@ class TextOutputFormatter(OutputFormatter):
         else:
             ret.append(f'{id_lic["name"]}')
         return "\n".join(ret)
-    
-    def format_identified_list(self,all_aliases, verbose):
+
+    def format_identified_list(self, all_aliases, verbose):
         ret = []
         for alias, value in all_aliases.items():
             ret.append(f'{alias} -> {value}')
 
         return "\n".join(ret)
-    
