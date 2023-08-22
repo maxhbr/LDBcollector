@@ -8,10 +8,9 @@ Simple class
 import glob
 import json
 import logging
-import os
 from pathlib import Path
 
-from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, VAR_DIR
+from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE
 from flame.exception import LicenseDatabaseError
 from jsonschema import validate
 
@@ -128,7 +127,7 @@ class LicenseDatabase:
     def compatibility_as_list(self):
         # List all compatibility_as that exist
         licenses = self.license_db[LICENSES_TAG]
-        return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]["spdxid"] }  for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
+        return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]["spdxid"]} for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
 
     def aliases_list(self):
         # List all aliases that exist
