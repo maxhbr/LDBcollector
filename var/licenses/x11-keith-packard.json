@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer-md",
+	"comment": "",
+	"date": "2023-08-22",
+	"authors": [
+	    {
+		"author": "Henrik Sandklef <hesa@sandklef.com>",
+		"organization": "Sandklef GNU Labs"
+	    }
+	]
+    },
+    "comment": "This license can be found in misc freedesktop/X11 related projects.",
+    "name": "X11-Style (Keith Packard)",
+    "scancode_key": "x11-keith-packard",
+    "spdxid": "LicenseRef-flame-keith-packard",
+    "aliases": [
+    ],
+    "compatibility_as": "HPND"
+}
