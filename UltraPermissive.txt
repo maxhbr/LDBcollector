@@ -32,25 +32,25 @@ Permission to use, copy, modify, and distribute this software and its documentat
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man2/futex.2
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man2/futex.2#n5
 text = '''
 may be freely modified and distributed
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man2/getitimer.2
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man2/getitimer.2#n5
 text = '''
 May be freely distributed and modified
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man3/getpt.3
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man3/getpt.3#n4
 text = '''
 Redistribute and modify at will.
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man4/pts.4
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man4/pts.4#n4
 text = '''
 Redistribute and revise at will.
 '''

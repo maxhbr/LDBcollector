@@ -92,32 +92,31 @@ This source code is released for the public domain.
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man2/nfsservctl.2#L2
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man2/nfsservctl.2#n2
 text = '''
 This text is in the public domain.
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man3/getnameinfo.3#L2
-           https://github.com/mkerrisk/man-pages/blob/master/man8/tzselect.8#L2
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man3/getnameinfo.3#n3
 text = '''
 This page is in the public domain.
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man3/grantpt.3#L2
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man3/grantpt.3#n3
 text = '''
 This page is in the public domain. - aeb
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man3/stdin.3#L7
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man3/stdin.3#n7
 text = '''
 Placed in the Public Domain.
 '''
 
 package = man-pages
-location = https://github.com/mkerrisk/man-pages/blob/master/man8/ld.so.8#L2
+location = https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git/tree/man8/ld.so.8#n2
 text = '''
 This is in the public domain
 '''
