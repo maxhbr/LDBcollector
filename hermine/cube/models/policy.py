@@ -220,7 +220,9 @@ class LicenseChoice(AbstractUsageRule, models.Model):
     )
     expression_out = models.CharField(
         max_length=500,
-        help_text="The expression which will replace `expression_in`",
+        verbose_name="Final SPDX expression",
+        help_text="The final license expression chosen. Can still contains ANDs, and even ORs if"
+        " you want to comply with all licenses and let the end user choose.",
         validators=[validate_spdx_expression],
     )
 

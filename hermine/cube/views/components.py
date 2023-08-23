@@ -77,6 +77,7 @@ class LicenseCurationListView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.ListView
 ):
     permission_required = "cube.view_licensecuration"
+    paginate_by = 50
     model = LicenseCuration
     template_name = "cube/licensecuration_list.html"
 

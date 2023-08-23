@@ -5,6 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMix
 from django.urls import reverse
 from django.views.generic import CreateView, UpdateView, ListView
 
+from cube.forms.policy import LicenseChoiceCreateForm
 from cube.models import (
     Derogation,
     LicenseChoice,
@@ -83,4 +84,26 @@ class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, ListVie
         release__isnull=True,
         component__isnull=True,
         version__isnull=True,
+        scope="",
+        exploitation="",
     )
+
+
+class LicenseChoiceEditView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_licensechoice"
+    model = LicenseChoice
+    template_name = "cube/licensechoice_edit.html"
+    fields = "__all__"
+
+    def get_success_url(self):
+        return reverse("cube:licensechoice_list")
+
+
+class LicenseChoiceCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
+    permission_required = "cube.add_licensechoice"
+    model = LicenseChoice
+    template_name = "cube/licensechoice_create.html"
+    form_class = LicenseChoiceCreateForm
+
+    def get_success_url(self):
+        return reverse("cube:licensechoice_list")
