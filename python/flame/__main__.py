@@ -7,6 +7,7 @@
 from argparse import RawTextHelpFormatter
 import argparse
 import logging
+import sys
 
 from flame.license_db import LicenseDatabase
 import flame.config
@@ -103,8 +104,13 @@ def main():
     formatter = OutputFormatterFactory.formatter(args.output_format)
 
     if args.func:
-        formatted = args.func(ldb, formatter, args)
-        print(formatted)
+        try:
+            formatted = args.func(ldb, formatter, args)
+            print(formatted)
+        except Exception as e:
+            formatted = formatter.format_error(e, args.verbose)
+            print(f'{formatted}')
+            sys.exit(1)
 
 
 if __name__ == '__main__':
