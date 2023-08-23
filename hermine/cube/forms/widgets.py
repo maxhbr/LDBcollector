@@ -3,11 +3,14 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 
 from django import forms
-from django.contrib.admin.widgets import AutocompleteMixin, get_select2_language
+from django.contrib.admin.widgets import (
+    AutocompleteMixin as AdminAutocompleteMixin,
+    get_select2_language,
+)
 from django.urls import reverse
 
 
-class AutocompleteWidget(AutocompleteMixin, forms.Select):
+class AutocompleteMixin(AdminAutocompleteMixin):
     def __init__(self, field, attrs=None, choices=(), using=None):
         self.field = field
         self.db = using
@@ -25,3 +28,11 @@ class AutocompleteWidget(AutocompleteMixin, forms.Select):
                 "screen": ("cube/css/autocomplete.css",),
             },
         )
+
+
+class AutocompleteWidget(AutocompleteMixin, forms.Select):
+    pass
+
+
+class AutocompleteMultipleWidget(AutocompleteMixin, forms.SelectMultiple):
+    pass
