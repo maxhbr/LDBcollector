@@ -305,16 +305,40 @@ class ReleaseViewSet(viewsets.ModelViewSet):
             "projects": [
                 {
                     "name": project_name,
+                    "licenses": set(
+                        chain.from_iterable(
+                            usage.licenses_chosen.all()
+                            for usage in self.get_object()
+                            .usage_set.filter(project=project_name)
+                            .prefetch_related("licenses_chosen")
+                        )
+                    ),
                     "scopes": [
                         {
                             "name": scope_name,
+                            "licenses": set(
+                                chain.from_iterable(
+                                    usage.licenses_chosen.all()
+                                    for usage in self.get_object()
+                                    .usage_set.filter(
+                                        project=project_name, scope=scope_name
+                                    )
+                                    .prefetch_related("licenses_chosen")
+                                )
+                            ),
                             "exploitations": [
                                 {
                                     "name": exploitation_name,
                                     "licenses": set(
                                         chain.from_iterable(
                                             usage.licenses_chosen.all()
-                                            for usage in exploitation_usages
+                                            for usage in self.get_object()
+                                            .usage_set.filter(
+                                                project=project_name,
+                                                scope=scope_name,
+                                                exploitation=exploitation_name,
+                                            )
+                                            .prefetch_related("licenses_chosen")
                                         )
                                     ),
                                 }

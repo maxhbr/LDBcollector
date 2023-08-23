@@ -56,13 +56,16 @@ class ReleaseLicensesSerializer(serializers.Serializer):
                 licenses = serializers.StringRelatedField(many=True, read_only=True)
 
             name = serializers.CharField()
+            licenses = serializers.StringRelatedField(many=True, read_only=True)
             exploitations = ReleaseLicensesExploitationSerializer(
                 many=True, read_only=True
             )
 
         name = serializers.CharField()
+        licenses = serializers.StringRelatedField(many=True, read_only=True)
         scopes = ReleaseLicensesScopeSerializer(many=True, read_only=True)
 
+    licenses = serializers.StringRelatedField(many=True, read_only=True)
     projects = ReleaseLicensesProjectSerializer(many=True, read_only=True)
 
 
