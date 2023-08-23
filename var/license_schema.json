@@ -7,19 +7,10 @@
         "meta" : {
             "type" : "object",
             "properties" : {
-		"description": { "type": "string" },
                 "disclaimer": { "type": "string" },
-		"comment": { "type": "string" },
-		"date": { "type": "string" },
-		"authors": {
-		    "type": "array",
-		    "items": {
-			"author": "string",
-			"organization": "string"
-		    }
-		}
+		"comment": { "type": "string" }
             },
-            "required" : [ "description", "date" ]
+            "required" : [ "disclaimer" ]
 	}
     },
     "spdxid": { "type": "string" },
