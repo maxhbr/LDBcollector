@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer-md",
+	"comment": ""
+    },
+    "name": "GPL 2.0 or later",
+    "scancode_key": "gpl-2.0-plus",
+    "spdxid": "GPL-2.0-or-later",
+    "aliases": [
+        "GPLv2+",
+        "GPL2+"
+    ]
+}

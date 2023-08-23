@@ -8,16 +8,16 @@ Simple class
 import glob
 import json
 import logging
-import os
 from pathlib import Path
 
-from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE, VAR_DIR
+from flame.config import LICENSE_DIR, LICENSE_SCHEMA_FILE
 from flame.exception import LicenseDatabaseError
 from jsonschema import validate
 
 json_schema = None
 
 COMPATIBILITY_AS_TAG = 'compatibility_as'
+COMPATIBILITY_TAG = 'compatibility'
 IDENTIFIED_LICENSE_TAG = 'identified_license'
 SCANCODE_KEY_TAG = 'scancode_key'
 SCANCODE_KEYS_TAG = 'scancode_keys'
@@ -128,7 +128,7 @@ class LicenseDatabase:
     def compatibility_as_list(self):
         # List all compatibility_as that exist
         licenses = self.license_db[LICENSES_TAG]
-        return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]["spdxid"] }  for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
+        return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]["spdxid"]} for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
 
     def aliases_list(self):
         # List all aliases that exist
@@ -145,11 +145,16 @@ class LicenseDatabase:
         identified_name = identified[NAME_TAG]
 
         if COMPATIBILITY_AS_TAG in self.license_db[LICENSES_TAG][identified_name]:
-            compat_as = self.license_db[LICENSES_TAG][identified_name][COMPATIBILITY_AS_TAG]
+            compat = self.license_db[LICENSES_TAG][identified_name][COMPATIBILITY_AS_TAG]
+            method = COMPATIBILITY_AS_TAG
         else:
-            compat_as = identified_name
+            compat = identified_name
+            method = "direct"
 
         return {
             IDENTIFIED_LICENSE_TAG: identified,
-            COMPATIBILITY_AS_TAG: compat_as,
+            COMPATIBILITY_TAG: {
+                "compatibility": compat,
+                "identified_via": method
+            }
         }

@@ -47,12 +47,12 @@ def test_compat_as_list():
 def test_compat_as():
 
     c = ldb.compatibility_as("GPL-2.0-or-later")
-    assert c['compatibility_as'] == "GPL-2.0-or-later"
+    assert c['compatibility']['compatibility'] == "GPL-2.0-or-later"
         
 def test_compat_as_aliased():
 
     c = ldb.compatibility_as("GPLv2+")
-    assert c['compatibility_as'] == "GPL-2.0-or-later"
+    assert c['compatibility']['compatibility'] == "GPL-2.0-or-later"
         
 def test_compat_as_bad_input():
 
