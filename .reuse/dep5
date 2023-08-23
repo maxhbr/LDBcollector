@@ -71,7 +71,7 @@ Files: docker/*
 Copyright: 2021 Hermine-team <hermine@inno3.fr>
 License: CC0-1.0
 
-Files: docker_secrets.py
+Files: config.py
 Copyright: Not copyrightable
 License: CC0-1.0
 

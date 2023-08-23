@@ -29,7 +29,7 @@ tests:
   - export PATH="/root/.local/bin:$PATH"
   - poetry about
   - poetry install
-  - cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py
+  - cp hermine/hermine/config.default.py hermine/hermine/config.py
   - cd hermine
   - poetry run black --check .
   - poetry run ruff .
@@ -51,7 +51,7 @@ pages:
   - export PATH="/root/.local/bin:$PATH"
   - poetry about
   - poetry install
-  - cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py
+  - cp hermine/hermine/config.default.py hermine/hermine/config.py
   - poetry run sphinx-build -b html docs/source docs/build/html
   - mkdir public
   - cp -r docs/build/html/* public/

@@ -1,5 +1,10 @@
 import os
 
+DEBUG = os.environ.get("PRODUCTION").lower() == "false"
+ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING").lower() == "true"
+HOST = os.environ.get("HOST")
+STATIC_ROOT = os.environ.get("STATIC_ROOT")
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",

@@ -20,6 +20,7 @@ hermine/hermine/VERSION.txt
 
 # Secrets are secrets
 hermine/hermine/mysecrets.py
+hermine/hermine/config.py
 .env
 
 # Node deps
