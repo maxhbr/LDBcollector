@@ -66,6 +66,9 @@ class LicenseDatabase:
             data = self.__read_license_file(license_file, check)
             licenses[data['spdxid']] = data
             for alias in data[ALIASES_TAG]:
+                if alias in aliases:
+                    raise LicenseDatabaseError(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
+
                 aliases[alias] = data['spdxid']
             if SCANCODE_KEY_TAG in data:
                 scancode_keys[data[SCANCODE_KEY_TAG]] = data['spdxid']

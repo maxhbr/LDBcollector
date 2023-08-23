@@ -99,9 +99,14 @@ def main():
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
 
-    ldb = LicenseDatabase(check=args.check)
-
     formatter = OutputFormatterFactory.formatter(args.output_format)
+
+    try:
+        ldb = LicenseDatabase(check=args.check)
+    except Exception as e:
+        formatted = formatter.format_error(e, args.verbose)
+        print(f'{formatted}')
+        sys.exit(1)
 
     if args.func:
         try:
