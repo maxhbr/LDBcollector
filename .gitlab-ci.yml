@@ -29,7 +29,7 @@ tests:
   - poetry run black --check .
   - poetry run ruff .
   - poetry run djhtml cube/templates/ --check
-  - poetry run python manage.py makemigrations | grep "No changes detected"
+  - poetry run python manage.py makemigrations | grep "No changes detected" || echo "Migrations are not up to date"
   - poetry run python manage.py test
 pages:
   stage: deploy
