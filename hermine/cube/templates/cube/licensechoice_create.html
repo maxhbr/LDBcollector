@@ -1,0 +1,31 @@
+<!--
+SPDX-FileCopyrightText: 2023 Hermine-team <hermine@inno3.fr>
+SPDX-License-Identifier: AGPL-3.0-only
+-->
+{% extends "cube/cube.html" %}
+{% block title %}Add license choice rule{% endblock %}
+{% block breadcrumbs %}
+  <ul>
+    <li>Hermine</li>
+    <li><a href="{% url 'cube:licensechoices' %}">Licenses choices</a></li>
+    <li>Add</li>
+  </ul>
+{% endblock %}
+
+{% block herozone %}
+  <h1 class="title">
+    <span class="icon is-medium"><i class="fas fa-project-diagram"></i></span>
+    Add a license choice rule
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <table>
+      {{ form }}
+      {{ form.media }}
+      <tr><th></th><td><input type="submit" value="Save"></td></tr>
+    </table>
+  </form>
+{% endblock %}

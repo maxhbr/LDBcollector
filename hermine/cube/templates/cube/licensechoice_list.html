@@ -13,6 +13,15 @@ SPDX-License-Identifier: AGPL-3.0-only -->
   </ul>
 {% endblock %}
 
+{% block actions %}
+  <a class="button is-info is-inverted" href="{% url 'cube:licensechoice_add'%}">
+    <span class="icon">
+      <i class="fas fa-plus"></i>
+    </span>
+    <span>Create a new choice rule</span>
+  </a>
+{% endblock %}
+
 {% block herozone %}
   <h1 class="title">
     <span class="icon is-medium"><i class="fas fa-project-diagram"></i></span>
@@ -22,7 +31,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 
 {% block content %}
   {% include "cube/includes/list_nav.html" %}
-  <p>This is the list of <em>global</em> license choices, which apply on all components and products.
+  <p>This is the list of <em>global</em> license choices, which apply on all components, products, scope or exploitation.
     See <a href="{% url 'admin:cube_licensechoice_changelist' %}"> all license choices</a>.</p>
   <table class="table is-striped is-hoverable is-fullwidth">
     <thead>
@@ -43,7 +52,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
           <td>{{ rule.updated }} ({{ rule.author|default:"<em>author unknown</em>" }})</td>
           <td>
             {% if perms.cube.change_licensechoice %}
-              <a href="{%url 'admin:cube_licensechoice_change' rule.id %}"><i class="far fa-edit"></i></a>
+              <a href="{%url 'cube:licensechoice_change' rule.id %}"><i class="far fa-edit"></i></a>
             {% endif %}
           </td>
         </tr>

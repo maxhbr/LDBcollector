@@ -118,7 +118,7 @@ class AbstractResetCorrectedLicenseView(
 class ReleaseLicenseCurationCreateView(AbstractCreateUsageConditionView):
     model = LicenseCuration
     form_class = CreateLicenseCurationForm
-    template_name = "cube/licensecuration_create.html"
+    template_name = "cube/release_licensecuration_create.html"
     permission_required = "cube.add_licensecuration"
 
 

@@ -163,11 +163,12 @@ class Migration(migrations.Migration):
             model_name="licensechoice",
             name="expression_out",
             field=models.CharField(
-                help_text="The expression which will replace `expression_in`",
+                help_text="The final license expression chosen. Can still contains ANDs, and even ORs if you want to comply with all licenses and let the end user choose.",
                 max_length=500,
                 validators=[
                     cube.utils.validators.validate_spdx_expression,
                 ],
+                verbose_name="Final SPDX expression",
             ),
         ),
         migrations.AlterModelOptions(
