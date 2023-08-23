@@ -53,7 +53,7 @@ class JsonOutputFormatter(OutputFormatter):
         return json.dumps(all_aliases, indent=4)
 
     def format_error(self, error, verbose):
-        return json.dumps({ "error": f'{error}' }, indent=4)
+        return json.dumps({"error": f'{error}'}, indent=4)
 
 class YamlOutputFormatter(OutputFormatter):
 
@@ -70,7 +70,7 @@ class YamlOutputFormatter(OutputFormatter):
         return yaml.dump(all_aliases)
 
     def format_error(self, error, verbose):
-        return yaml.dump({ "error": f'{error}' })
+        return yaml.dump({"error": f'{error}'})
 
 class TextOutputFormatter(OutputFormatter):
 
@@ -114,4 +114,3 @@ class TextOutputFormatter(OutputFormatter):
 
     def format_error(self, error, verbose):
         return f'Error, {error}'
-
