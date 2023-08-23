@@ -1,15 +1,7 @@
 {
     "meta": {
         "disclaimer": "bla bla ",
-	"description": "bla",
-	"comment": "Update meta information. Add alias (3-BSD)",
-	"date": "2023-08-08",
-	"authors": [
-	    {
-		"author": "Henrik Sandklef <hesa@sandklef.com>",
-		"organization": "Sandklef FOSS Labs AB"
-	    }
-	]
+	"comment": "Update meta information. Add alias (3-BSD)"
     },
     "spdxid": "BSD-3-Clause",
     "aliases": [ "BSD3", "3-BSD"],
