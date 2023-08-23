@@ -17,6 +17,7 @@ from jsonschema import validate
 json_schema = None
 
 COMPATIBILITY_AS_TAG = 'compatibility_as'
+COMPATIBILITY_TAG = 'compatibility'
 IDENTIFIED_LICENSE_TAG = 'identified_license'
 SCANCODE_KEY_TAG = 'scancode_key'
 SCANCODE_KEYS_TAG = 'scancode_keys'
@@ -144,11 +145,16 @@ class LicenseDatabase:
         identified_name = identified[NAME_TAG]
 
         if COMPATIBILITY_AS_TAG in self.license_db[LICENSES_TAG][identified_name]:
-            compat_as = self.license_db[LICENSES_TAG][identified_name][COMPATIBILITY_AS_TAG]
+            compat = self.license_db[LICENSES_TAG][identified_name][COMPATIBILITY_AS_TAG]
+            method = COMPATIBILITY_AS_TAG
         else:
-            compat_as = identified_name
+            compat = identified_name
+            method = "direct"
 
         return {
             IDENTIFIED_LICENSE_TAG: identified,
-            COMPATIBILITY_AS_TAG: compat_as,
+            COMPATIBILITY_TAG: {
+                "compatibility": compat,
+                "identified_via": method
+            }
         }
