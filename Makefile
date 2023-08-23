@@ -3,8 +3,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 
-
-test: py-test
+check: license python clean check-reuse build
 
 check_license_files:
 # all JSON files should have a LICENSE file
@@ -25,10 +24,12 @@ check_license_files:
 		   	ls $$JSON_FILE > /dev/null || (echo FAIL; exit 1) ; \
 			echo "OK" ; \
 	done
+	@echo -n "License schema: " ; \
+		   	jq . var/license_schema.json > /dev/null || (echo FAIL; exit 1) ; \
+			echo "OK" ; \
 
 check-reuse:
 	reuse lint
-
 
 license: check_license_files 
 
@@ -48,11 +49,22 @@ check-py-cli:
 	@echo -n "Check cli (-h): "
 	@PYTHONPATH=./python python3 ./python/flame/__main__.py -h > /dev/null
 	@echo "OK"
+
+	@echo -n "Check cli (alias): "
+	@PYTHONPATH=./python python3 ./python/flame/__main__.py identify BSD3 > /dev/null
+	@echo "OK"
+
+	@echo -n "Check cli (compat): "
+	@PYTHONPATH=./python python3 ./python/flame/__main__.py -of json compat x11-keith-packard > /dev/null
+	@echo "OK"
+
 build:
 	cd python && rm -fr build && python3 setup.py sdist
 
 clean:
 	find . -name "*~"    | xargs rm -fr
 	find . -name "*.pyc" | xargs rm -fr
-	rm .coverage
-	rm -fr dist
+	find . -name ".#*" | xargs rm -fr
+	rm -f .coverage
+	rm -fr python/flame.egg-info
+	rm -fr python/dist
