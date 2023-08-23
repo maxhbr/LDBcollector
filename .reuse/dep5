@@ -3,7 +3,7 @@ Upstream-Name: flict
 Upstream-Contact: Henrik Sandklef <hesa@sandklef.com>
 Source: https://github.com/hesa/license-meta-db
 
-Files: licenses/*.LICENSE
+Files: var/licenses/*.LICENSE
 Copyright: Nexb
 License: CC-BY-4.0
 
@@ -11,7 +11,7 @@ Files: tests/licenses/*.LICENSE
 Copyright: Nexb
 License: CC-BY-4.0
 
-Files: licenses/*.json
+Files: var/licenses/*.json
 Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0
 
