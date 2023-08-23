@@ -311,7 +311,7 @@ class ReleaseViewSet(viewsets.ModelViewSet):
                             "exploitations": [
                                 {
                                     "name": exploitation_name,
-                                    "licenses": list(
+                                    "licenses": set(
                                         chain.from_iterable(
                                             usage.licenses_chosen.all()
                                             for usage in exploitation_usages
