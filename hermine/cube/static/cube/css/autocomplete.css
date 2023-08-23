@@ -5,10 +5,26 @@
  */
 
 .select2-container {
-    background-color: white;
-    border: 1px solid #aaa;
+    width: 100% !important;
+    max-width: 500px !important;
+}
+
+.select2-selection {
+    background-color: white !important;
+    border: 1px solid #aaa !important;
+    border-radius: 0 !important;
+}
+
+.select2-selection__choice {
+    border: 1px solid #aaa !important;
+    background-color: #eee !important;
+    border-radius: 2px;
 }
 
 .select2-search__field {
+    border: 0;
+}
+
+.select2-search--dropdown .select2-search__field {
     border: 1px solid #aaa !important;
 }

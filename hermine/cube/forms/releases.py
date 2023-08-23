@@ -25,8 +25,9 @@ class UsageForm(AutocompleteFormMixin, ModelForm):
             "component_modified",
             "exploitation",
             "description",
+            "licenses_chosen",
         ]
         labels = {
             "version": "3rd party component and version",
         }
-        autocomplete_fields = ["version"]
+        autocomplete_fields = ["version", "licenses_chosen"]
