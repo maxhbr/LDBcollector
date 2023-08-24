@@ -50,6 +50,15 @@ func main() {
 	if err := db.DB.AutoMigrate(&models.ChangeLog{}); err != nil {
 		log.Fatalf("Failed to automigrate database: %v", err)
 	}
+
+	if err := db.DB.AutoMigrate(&models.Obligation{}); err != nil {
+		log.Fatalf("Failed to automigrate database: %v", err)
+	}
+
+	if err := db.DB.AutoMigrate(&models.ObligationMap{}); err != nil {
+		log.Fatalf("Failed to automigrate database: %v", err)
+	}
+
 	db.Populatedb(*populatedb, *datafile)
 
 	r := api.Router()
