@@ -38,6 +38,9 @@ class OutputFormatter():
     def format_error(self, message, verbose):
         return None
 
+    def format_licenses(self, licenses, verbose):
+        return None
+
 class JsonOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose):
@@ -55,6 +58,9 @@ class JsonOutputFormatter(OutputFormatter):
     def format_error(self, error, verbose):
         return json.dumps({"error": f'{error}'}, indent=4)
 
+    def format_licenses(self, licenses, verbose):
+        return json.dumps(licenses, indent=4)
+
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose):
@@ -71,6 +77,9 @@ class YamlOutputFormatter(OutputFormatter):
 
     def format_error(self, error, verbose):
         return yaml.dump({"error": f'{error}'})
+
+    def format_licenses(self, licenses, verbose):
+        return yaml.dump(licenses)
 
 class TextOutputFormatter(OutputFormatter):
 
@@ -111,6 +120,10 @@ class TextOutputFormatter(OutputFormatter):
             ret.append(f'{alias} -> {value}')
 
         return "\n".join(ret)
+
+    def format_licenses(self, licenses, verbose):
+        licenses.sort()
+        return "\n".join(licenses)
 
     def format_error(self, error, verbose):
         return f'Error, {error}'
