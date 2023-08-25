@@ -54,6 +54,10 @@ def test_compat_as_aliased():
     c = ldb.compatibility_as("GPLv2+")
     assert c['compatibility']['compatibility'] == "GPL-2.0-or-later"
         
+def test_licenses():
+    licenses = ldb.licenses()
+    assert len(licenses) == 3
+        
 def test_compat_as_bad_input():
 
     with pytest.raises(LicenseDatabaseError) as _error:
