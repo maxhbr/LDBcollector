@@ -72,6 +72,11 @@ def parse():
         'compats', help='show all compatibilities')
     parser_cs.set_defaults(which='compats', func=compats)
 
+    # licenses
+    parser_cs = subparsers.add_parser(
+        'licenses', help='show all licenses')
+    parser_cs.set_defaults(which='licenses', func=licenses)
+
     args = parser.parse_args()
 
     return args
@@ -79,6 +84,10 @@ def parse():
 def aliases(ldb, formatter, args):
     all_aliases = ldb.aliases_list()
     return formatter.format_identified_list(all_aliases, args.verbose)
+
+def licenses(ldb, formatter, args):
+    all_licenses = ldb.licenses()
+    return formatter.format_licenses(all_licenses, args.verbose)
 
 def compats(ldb, formatter, args):
     all_compats = ldb.compatibility_as_list()

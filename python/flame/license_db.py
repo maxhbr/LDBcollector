@@ -97,7 +97,7 @@ class LicenseDatabase:
         }
 
     def licenses(self):
-        return self.license_db[LICENSES_TAG].keys()
+        return list(self.license_db[LICENSES_TAG].keys())
 
     def license(self, name):
         """
