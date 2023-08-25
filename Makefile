@@ -4,6 +4,7 @@
 
 
 check: license python clean check-reuse build
+	@echo "\n\n\n   Yay.... check succeeded :)\n\n\n"
 
 check_license_files:
 # all JSON files should have a LICENSE file
@@ -29,7 +30,7 @@ check_license_files:
 			echo "OK" ; \
 
 check-reuse:
-	reuse lint
+	reuse --suppress-deprecation lint
 
 license: check_license_files 
 
