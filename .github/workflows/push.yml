@@ -1,0 +1,67 @@
+name: Push test pipeline
+
+on: 
+  push:
+    branches:
+      - "master"
+  pull_request:
+
+jobs:
+  gitlint:
+      runs-on: ubuntu-latest
+      name: GitLint
+      if: github.event_name == 'pull_request' && github.event.pull_request.user.login != 'dependabot[bot]'
+      steps:
+        - name: Lint commits
+          uses: aschbacd/gitlint-action@v1.1.0
+          with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            commit-message-body-max-length: 72
+            commit-message-body-min-length: 1
+            commit-message-subject-max-length: 50
+            commit-message-subject-min-length: 10
+            re-commit-message-subject: ".+: .+"
+            re-pull-request-title: ".*"
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11']
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Check licenses
+      run: |
+        make check_license_files
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        cd python && pip install -r requirements.txt
+        cd python && pip install -r requirements-dev.txt
+    - name: Check reuse
+      run: |
+        reuse --suppress-deprecation lint
+    - name: Build
+      run: cd python && python3 setup.py build sdist bdist_wheel --universal
+    - name: Lint
+      run: |
+        flake8
+    - name: Install
+      run: cd python && python3 setup.py install
+    - name: Test
+      run: |
+        JUNIT_REPORT=1 python3 -m pytest
+    - name: Publish Test Report
+      uses: mikepenz/action-junit-report@v3
+      # always run even if the previous step fails but only for the main repo
+      if: ${{ always() && github.event.pull_request.head.repo.full_name == github.repository }}
+      with:
+        report_paths: '**/TEST-*.xml'
+    - name: Reuse check
+      run: |
+        reuse lint
