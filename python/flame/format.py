@@ -47,6 +47,9 @@ class OutputFormatter():
     def format_compatibilities(self, compats, verbose):
         return None
 
+    def format_operators(self, operators, verbose):
+        return None
+
 class JsonOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose):
@@ -73,6 +76,9 @@ class JsonOutputFormatter(OutputFormatter):
     def format_compatibilities(self, compats, verbose):
         return json.dumps(compats)
 
+    def format_operators(self, operators, verbose):
+        return json.dumps(operators)
+
 class YamlOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose):
@@ -98,6 +104,9 @@ class YamlOutputFormatter(OutputFormatter):
 
     def format_compatibilities(self, compats, verbose):
         return yaml.dump(compats)
+
+    def format_operators(self, operators, verbose):
+        return yaml.dump(operators)
 
 class TextOutputFormatter(OutputFormatter):
 
@@ -163,6 +172,9 @@ class TextOutputFormatter(OutputFormatter):
     def format_licenses(self, licenses, verbose):
         licenses.sort()
         return "\n".join(licenses)
+
+    def format_operators(self, operators, verbose):
+        return "\n".join(operators)
 
     def format_error(self, error, verbose):
         return f'Error, {error}'
