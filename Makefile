@@ -52,7 +52,7 @@ check-py-cli:
 	@echo "OK"
 
 	@echo -n "Check cli (alias): "
-	@PYTHONPATH=./python python3 ./python/flame/__main__.py identify BSD3 > /dev/null
+	@PYTHONPATH=./python python3 ./python/flame/__main__.py expression "BSD3 and BSD3" > /dev/null
 	@echo "OK"
 
 	@echo -n "Check cli (compat): "
