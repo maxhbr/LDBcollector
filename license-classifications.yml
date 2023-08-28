@@ -3914,10 +3914,9 @@ categorizations:
 
   - id: "SISSL"
     categories:
-      - "copyleft-file-level"
+      - "proprietary-free"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
-      - "property:unchecked"
 
   - id: "ZPL"
     categories:
@@ -4284,4 +4283,54 @@ categorizations:
   - id: "LicenseRef-scancode-bsd-new-tcpdump"
     categories:
       - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/LGPL-2.1-only.html
+  # https://spdx.org/licenses/OCaml-LGPL-linking-exception.html
+  - id: "LGPL-2.1-only WITH OCaml-LGPL-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/LGPL-2.1-or-later.html
+  # https://spdx.org/licenses/OCaml-LGPL-linking-exception.html
+  - id: "LGPL-2.1-or-later WITH OCaml-LGPL-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-x11-stanford"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "BSD-3-Clause-No-Nuclear-License"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:nuclear-restriction"
+
+  - id: "LicenseRef-GPL-2.0-or-later-with-guile-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-gary-s-brown"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-sflow-license"
+    categories:
+      - "proprietary-free"
+
+  - id: "LicenseRef-benjamin-kowarsch"
+    categories:
+      - "free-restricted"
+      - "property:non-commercial"
       - "property:include-in-notice-file"
