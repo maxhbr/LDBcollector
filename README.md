@@ -5,7 +5,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
 
-# license-db
+# FOSS Licenses 
 
 A database with meta data for Open Source licenses adding useful information to existing licenses aiming at simplifying compliance work. The meta data consists of:
 
@@ -15,20 +15,19 @@ A database with meta data for Open Source licenses adding useful information to 
 
 * license text
 
-# Program
+# Database
 
-* list supported licenses, with information
+# Tools
+
+## flame - command line program
 
 # API
 
 ## Python API
 
-# Database in other formats
+# Related tools
 
-## flict
+* FOSS License Compatibility Tool: [flict](https://flict.org) 
 
-* alias
+* ScanCode toolkit: [scancode](https://github.com/nexB/scancode-toolkit)
 
-* compatibility as
-
-* include to flict
