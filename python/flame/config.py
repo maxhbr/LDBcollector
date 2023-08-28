@@ -11,6 +11,7 @@ VAR_DIR = os.path.join(PYTHON_DIR, 'var')
 LICENSE_DIR = os.path.join(VAR_DIR, 'licenses')
 
 LICENSE_SCHEMA_FILE = os.path.join(VAR_DIR, 'license_schema.json')
+LICENSE_OPERATORS_FILE = os.path.join(VAR_DIR, 'operators.json')
 
 DESCRIPTION = """
 NAME
