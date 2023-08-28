@@ -32,7 +32,7 @@ setuptools.setup(
             "flame = flame.__main__:main",
         ],
     },
-    package_data={'flame': ['var/license_schema.json', 'var/licenses/*.*']},
+    package_data={'flame': ['var/*.json', 'var/licenses/*.*']},
     install_requires=requirements,
     extras_require={
         'dev': requirements_dev,
