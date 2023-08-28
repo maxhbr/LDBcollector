@@ -8,6 +8,7 @@
     "name": "GPL 2.0 or later",
     "aliases": [
         "GPLv2+",
-        "GPL2+"
+        "GPL2+",
+        "GPL (v2 or later)"
     ]
 }

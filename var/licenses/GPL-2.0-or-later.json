@@ -1,6 +1,6 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer-md",
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
 	"comment": ""
     },
     "name": "GPL 2.0 or later",

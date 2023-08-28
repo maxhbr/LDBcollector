@@ -1,11 +1,11 @@
 {
     "meta": {
-        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer-md",
+        "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
 	"comment": "",
 	"date": "2023-08-22"
     },
     "name": "The 3-Clause BSD License",
-    "scancode-key": "bsd-new",
+    "scancode_key": "bsd-new",
     "spdxid": "BSD-3-Clause",
-    "aliases": [ "BSD3", "3-BSD", "bsd-new"]
+    "aliases": [ "BSD3", "3-BSD" ]
 }

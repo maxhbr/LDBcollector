@@ -11,6 +11,10 @@ Files: tests/licenses/*.LICENSE
 Copyright: Nexb
 License: CC-BY-4.0
 
+Files: .github/workflows/push.yml
+Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
+License: CC-BY-4.0
+
 Files: var/licenses/*.json
 Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0

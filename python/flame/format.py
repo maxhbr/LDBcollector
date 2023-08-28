@@ -32,6 +32,9 @@ class OutputFormatter():
     def format_identified(self, identified, verbose):
         return None
 
+    def format_expression(self, expression, verbose):
+        return None
+
     def format_identified_list(self, all_aliases, verbose):
         return None
 
@@ -39,6 +42,9 @@ class OutputFormatter():
         return None
 
     def format_licenses(self, licenses, verbose):
+        return None
+
+    def format_compatibilities(self, compats, verbose):
         return None
 
 class JsonOutputFormatter(OutputFormatter):
@@ -52,6 +58,9 @@ class JsonOutputFormatter(OutputFormatter):
     def format_identified(self, identified, verbose):
         return json.dumps(identified, indent=4)
 
+    def format_expression(self, expression, verbose):
+        return json.dumps(expression, indent=4)
+
     def format_identified_list(self, all_aliases, verbose):
         return json.dumps(all_aliases, indent=4)
 
@@ -60,6 +69,9 @@ class JsonOutputFormatter(OutputFormatter):
 
     def format_licenses(self, licenses, verbose):
         return json.dumps(licenses, indent=4)
+
+    def format_compatibilities(self, compats, verbose):
+        return json.dumps(compats)
 
 class YamlOutputFormatter(OutputFormatter):
 
@@ -72,6 +84,9 @@ class YamlOutputFormatter(OutputFormatter):
     def format_identified(self, identified, verbose):
         return yaml.dump(identified)
 
+    def format_expression(self, expression, verbose):
+        return yaml.dump(expression)
+
     def format_identified_list(self, all_aliases, verbose):
         return yaml.dump(all_aliases)
 
@@ -80,6 +95,9 @@ class YamlOutputFormatter(OutputFormatter):
 
     def format_licenses(self, licenses, verbose):
         return yaml.dump(licenses)
+
+    def format_compatibilities(self, compats, verbose):
+        return yaml.dump(compats)
 
 class TextOutputFormatter(OutputFormatter):
 
@@ -96,6 +114,20 @@ class TextOutputFormatter(OutputFormatter):
             ret.append(f'{compat["compatibility"]["compatibility"]}')
         return "\n".join(ret)
 
+    def format_compatibilities(self, compats, verbose):
+        ret = []
+        ret.append(f'{compats["compat_license"]}')
+        if verbose:
+            for compat in compats['compatibilities']:
+                lic_id = compat["license_identification"]
+                lic_elem = lic_id["identified_element"]
+                if lic_elem["identified_via"] == 'operator':
+                    ret.append(f' * "{lic_elem["queried_name"]}" -> "{lic_elem["name"]}" via "{lic_elem["identified_via"]}"')
+                else:
+                    ret.append(f' * "{lic_elem["queried_name"]}" -> "{lic_elem["name"]}" via "{lic_elem["identified_via"]}" -> "{compat["name"]}" via "{compat["compat_identification"]["compatibility"]["identified_via"]}"')
+
+        return "\n".join(ret)
+
     def format_compat_list(self, all_compats, verbose):
         ret = []
         for comp in all_compats:
@@ -105,13 +137,20 @@ class TextOutputFormatter(OutputFormatter):
 
     def format_identified(self, identified, verbose):
         ret = []
-        id_lic = identified["identified_license"]
+        id_lic = identified["identified_element"]
+        ret.append(f'{id_lic["name"]}')
         if verbose:
-            ret.append(f'queried_name: {id_lic["queried_name"]}')
-            ret.append(f'name: {id_lic["name"]}')
-            ret.append(f'identified via: {id_lic["identified_via"]}')
-        else:
-            ret.append(f'{id_lic["name"]}')
+            ret.append(f' * "{id_lic["queried_name"]}" -> "{id_lic["name"]}" via "{id_lic["identified_via"]}"')
+        return "\n".join(ret)
+
+    def format_expression(self, expression, verbose):
+        ret = []
+        id_lic = expression['identified_license']
+        ret.append(f'{id_lic}')
+        if verbose:
+            for identification in expression['identifications']:
+                id_elem = identification["identified_element"]
+                ret.append(f' * "{id_elem["queried_name"]}" -> "{id_elem["name"]} via "{id_elem["identified_via"]}"')
         return "\n".join(ret)
 
     def format_identified_list(self, all_aliases, verbose):
