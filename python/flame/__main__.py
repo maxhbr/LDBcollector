@@ -44,23 +44,17 @@ def parse():
 
     subparsers = parser.add_subparsers(help='Sub commands')
 
-    # identify
-    parser_i = subparsers.add_parser(
-        'identify', help='show license matching supplied license')
-    parser_i.set_defaults(which='identify', func=identify)
-    parser_i.add_argument('license', type=str, help='license name to identify')
-    parser_i.add_argument('--spdx', '-s', action='store_true',
-                          help='')
-    parser_i.add_argument('--scancode-key', '-sk', action='store_true',
-                          help='')
-    parser_i.add_argument('--identified-via', '-iv', action='store_true',
-                          help='')
-
     # compatibility
     parser_c = subparsers.add_parser(
         'compat', help='display license with same compatibility as supplied license')
     parser_c.set_defaults(which='compat', func=compatibility)
     parser_c.add_argument('license', type=str, help='license name to display')
+
+    # expressions
+    parser_e = subparsers.add_parser(
+        'expression', help='not yet')
+    parser_e.set_defaults(which='expression', func=expressions)
+    parser_e.add_argument('license', type=str, help='license expression to fix')
 
     # aliases
     parser_a = subparsers.add_parser(
@@ -94,12 +88,12 @@ def compats(ldb, formatter, args):
     return formatter.format_compat_list(all_compats, args.verbose)
 
 def compatibility(ldb, formatter, args):
-    compat = ldb.compatibility_as(args.license)
-    return formatter.format_compat(compat, args.verbose)
+    compatibilities = ldb.expression_compatibility_as(args.license)
+    return formatter.format_compatibilities(compatibilities, args.verbose)
 
-def identify(ldb, formatter, args):
-    identified_license = ldb.license(args.license)
-    return formatter.format_identified(identified_license, args.verbose)
+def expressions(ldb, formatter, args):
+    expression = ldb.expression(args.license)
+    return formatter.format_expression(expression, args.verbose)
 
 def main():
 
@@ -122,6 +116,9 @@ def main():
             formatted = args.func(ldb, formatter, args)
             print(formatted)
         except Exception as e:
+            import traceback
+            print(traceback.format_exc())
+
             formatted = formatter.format_error(e, args.verbose)
             print(f'{formatted}')
             sys.exit(1)
