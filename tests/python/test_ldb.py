@@ -70,6 +70,10 @@ def test_licenses():
     licenses = ldb.licenses()
     assert len(licenses) == 3
         
+def test_operators():
+    operators = ldb.operators()
+    assert len(operators) > 3
+        
 def test_compat_as_bad_input():
 
     with pytest.raises(LicenseDatabaseError) as _error:
