@@ -31,6 +31,7 @@ jobs:
         pip install -r requirements-dev.txt
     - name: Check reuse
       run: |
+        make clean
         reuse --suppress-deprecation lint
     - name: Build
       run: cd python && python3 setup.py build sdist
