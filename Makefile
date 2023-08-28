@@ -69,3 +69,4 @@ clean:
 	rm -f .coverage
 	rm -fr python/flame.egg-info
 	rm -fr python/dist
+	rm -fr python/build
