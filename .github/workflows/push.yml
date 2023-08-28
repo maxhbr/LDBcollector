@@ -33,7 +33,7 @@ jobs:
       run: |
         reuse --suppress-deprecation lint
     - name: Build
-      run: cd python && python3 setup.py build sdist bdist_wheel --universal
+      run: cd python && python3 setup.py build sdist
     - name: Lint
       run: |
         flake8
