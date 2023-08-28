@@ -180,6 +180,9 @@ class LicenseDatabase:
         identified_name = self.__identify_license(license_name)[NAME_TAG]
         return self.license_db[LICENSES_TAG][identified_name][ALIASES_TAG]
 
+    def operators(self):
+        return self.license_db[LICENSE_OPERATORS_TAG]
+
     def compatibility_as(self, license_name):
         # List compatibility_as for license
         identified = self.__identify_license(license_name)
