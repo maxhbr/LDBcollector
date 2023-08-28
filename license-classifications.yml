@@ -671,7 +671,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:unchecked"
 
-  # https://spdx.org/licenses/GFDL-1.3.html
+  # https://spdx.org/licenses/GFDL-1.2.html
   - id: "GFDL-1.2-or-later"
     categories:
       - "copyleft-module-level"
@@ -4224,3 +4224,64 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:non-commercial"
+
+  - id: "LicenseRef-scancode-carnegie-mellon-contributors"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-inner-net-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:advertising-clause"
+
+#https://spdx.org/licenses/Inner-Net-2.0.html
+  - id: "Inner-Net-2.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-pcre"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:mark-modifications"
+
+  - id: "LicenseRef-LGPL-2.1-or-later-with-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-ibm-dhcp"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/GFDL-1.3.html
+  - id: "GFDL-1.3-only"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  - id: "LicenseRef-LGPL-2.1-or-later-with-unlimited-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-unlimited-link-exception-lgpl"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  - id: "LicenseRef-scancode-bsd-new-tcpdump"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
