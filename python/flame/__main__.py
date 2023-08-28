@@ -116,8 +116,9 @@ def main():
             formatted = args.func(ldb, formatter, args)
             print(formatted)
         except Exception as e:
-            import traceback
-            print(traceback.format_exc())
+            if args.verbose:
+                import traceback
+                print(traceback.format_exc())
 
             formatted = formatter.format_error(e, args.verbose)
             print(f'{formatted}')
