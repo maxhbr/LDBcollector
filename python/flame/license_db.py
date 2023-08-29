@@ -173,7 +173,7 @@ class LicenseDatabase:
 
     def aliases_list(self, alias_license=None):
         if alias_license:
-            return { k:v for k, v in self.license_db[ALIASES_TAG].items() if alias_license in v }
+            return {k: v for k, v in self.license_db[ALIASES_TAG].items() if alias_license in v}
         # List all aliases that exist
         return self.license_db[ALIASES_TAG]
 
