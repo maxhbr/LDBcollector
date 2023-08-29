@@ -46,7 +46,8 @@ The data can be found in the [var directory](https://github.com/hesa/foss-licens
 
 # Acknowledgements
 
-* [Nexb](https://www.nexb.com/) for their general and generous work in FOSS compliance
+* [Nexb](https://www.nexb.com/) for their general and generous work in FOSS compliance, especially [scancode](https://github.com/nexB/scancode-toolkit) and [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/).
+
 
 * [Max Huber](https://github.com/maxhbr) for [LDBcollector](https://github.com/maxhbr/LDBcollector)
 
