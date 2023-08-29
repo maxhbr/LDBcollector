@@ -80,6 +80,16 @@ GPL2 -> GPL-2.0-only
 ....
 ``` 
 
+## List licenses
+
+To list all the supported licenses (incomplete listing below):
+``` 
+$ flame licenses
+BSD-3-Clause
+GPL-2.0-only
+....
+``` 
+
 ## List operators
 
 To list all the supported operators (incomplete listing below):
