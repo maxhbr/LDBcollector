@@ -14,6 +14,18 @@ A database with meta data for FOSS licenses adding useful information to existin
 
 * license text
 
+# Background
+
+There are lots of software licenses out there (e.g. see [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/)), some of them are FOSS and some not. In this project we focus on FOSS licenses.
+
+## License name proliferation
+
+When you're working with compliance you are used to liceses called differently in source code or by tools (e.g. `GPLv2`, `GPL (v2)` and `GNU General Public License Version 2`) when all you really want too see is the [SPDX identifier](https://spdx.org/licenses/). A seasoned compliance engineer or lawyer knows this already, but we need this information machine readable.This projet aims at keeping a list of "all" different names for a license in a database and provide a Python API to easily convert a license name to an SPDX identifiers.
+
+## License proliferation
+
+Another problem you face when working with compliance is the need to check whether the licenses in a combined work are compatible. One example is the [`X11-Style (Keith Packard)`](https://scancode-licensedb.aboutcode.org/x11-keith-packard.html) license, which really is the same license as the [Historical Permission Notice and Disclaimer - sell variant](https://spdx.org/licenses/HPND-sell-variant.html). `X11-Style (Keith Packard)` is not supported in for example the OSADL matrix, but `HPND-sell-variant` is. Again, a seasoned license engineer or lawyer knows which licenses are compatible and not, but we need to make it possible for a machine to assists us. This projet provides mappings from one license to another license which is supported by the OSADL matrix.
+
 # Database
 
 The data can be found in the [var directory](https://github.com/hesa/foss-licenses/tree/main/var). Each license has a JSON file with meta information and a LICENSE file with the license text.
