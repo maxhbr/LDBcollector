@@ -20,9 +20,9 @@ The data can be found in the [var directory](https://github.com/hesa/foss-licens
 
 # Tools and APIs
 
-* [FLAME](https://github.com/hesa/foss-licenses/blob/main/FLAME.md) - command line program
+* [flame](https://github.com/hesa/foss-licenses/blob/main/FLAME.md) - command line program
 
-* [PYTHON API](https://github.com/hesa/foss-licenses/blob/main/PYTHON_API.md) - Python API
+* [Python API](https://github.com/hesa/foss-licenses/blob/main/PYTHON_API.md) - Python API
 
 # Related tools and projects
 
@@ -36,4 +36,6 @@ The data can be found in the [var directory](https://github.com/hesa/foss-licens
 
 * [Nexb](https://www.nexb.com/) for their general and generous work in FOSS compliance
 
-* [Max Huber](https://github.com/maxhbr) for [LDBcollector](https://github.com/maxhbr/LDBcollector) 
+* [Max Huber](https://github.com/maxhbr) for [LDBcollector](https://github.com/maxhbr/LDBcollector)
+
+* [OSADL](https://www.osadl.org] for their [License Compatibility Matrix](https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html)
