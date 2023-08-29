@@ -39,6 +39,7 @@ jobs:
     - name: Lint
       run: |
         cd python
+	rm -fr build
         flake8
     - name: Install
       run: cd python && python3 setup.py install
