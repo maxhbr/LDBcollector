@@ -40,6 +40,8 @@ The data can be found in the [var directory](https://github.com/hesa/foss-licens
 
 * [flict](https://github.com/vinland-technology/flict) - FOSS License Compatibility Tool 
 
+* [License Compatibility Matrix](https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html) - a matrix with license compatibilities
+
 * [scancode](https://github.com/nexB/scancode-toolkit) - ScanCode toolkit
 
 * [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/) - a database with licenses
