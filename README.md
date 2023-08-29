@@ -20,7 +20,7 @@ There are lots of software licenses out there (e.g. see [ScanCode LicenseDB](htt
 
 ## License name proliferation
 
-When you're working with compliance you are used to liceses called differently in source code or by tools (e.g. `GPLv2`, `GPL (v2)` and `GNU General Public License Version 2`) when all you really want too see is the [SPDX identifier](https://spdx.org/licenses/). A seasoned compliance engineer or lawyer knows this already, but we need this information machine readable.This projet aims at keeping a list of "all" different names for a license in a database and provide a Python API to easily convert a license name to an SPDX identifiers.
+When you're working with compliance you are used to liceses called differently in source code or by tools (e.g. `GPLv2`, `GPL (v2)` and `GNU General Public License Version 2`) when all you really want too see is the [SPDX identifier](https://spdx.org/licenses/) `GPL-2.0-only`. A seasoned compliance engineer or lawyer knows this already, but we need this information machine readable.This projet aims at keeping a list of "all" different names for a license in a database and provide a Python API to easily convert a license name to an SPDX identifiers.
 
 ## License proliferation
 
