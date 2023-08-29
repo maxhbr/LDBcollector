@@ -22,7 +22,7 @@ The data can be found in the [var directory](https://github.com/hesa/foss-licens
 
 * [flame](https://github.com/hesa/foss-licenses/blob/main/FLAME.md) - command line program
 
-* [Python API](https://github.com/hesa/foss-licenses/blob/main/PYTHON_API.md) - Python API
+* [Python API](https://github.com/hesa/foss-licenses/blob/main/PYTHON_API.md) - well, a Python API
 
 # Related tools and projects
 
