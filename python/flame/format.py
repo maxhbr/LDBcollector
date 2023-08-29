@@ -138,7 +138,7 @@ class TextOutputFormatter(OutputFormatter):
         return '\n'.join(ret)
 
     def format_compat_list(self, all_compats, verbose):
-        return '\n'.join([ f'{comp["spdxid"]} -> {comp["compatibility_as"]}' for comp in all_compats ])
+        return '\n'.join([f'{comp["spdxid"]} -> {comp["compatibility_as"]}' for comp in all_compats])
 
     def format_identified(self, identified, verbose):
         ret = []
@@ -159,14 +159,14 @@ class TextOutputFormatter(OutputFormatter):
         return '\n'.join(ret)
 
     def format_identified_list(self, all_aliases, verbose):
-        return '\n'.join([ f'{k} -> {v}'  for k, v in all_aliases.items() ])
+        return '\n'.join([f'{k} -> {v}' for k, v in all_aliases.items()])
 
     def format_licenses(self, licenses, verbose):
         licenses.sort()
         return '\n'.join(licenses)
 
     def format_operators(self, operators, verbose):
-        return '\n'.join([ f'{k} -> {v}'  for k, v in operators.items() ])
+        return '\n'.join([f'{k} -> {v}' for k, v in operators.items()])
 
     def format_error(self, error, verbose):
         return f'Error, {error}'
