@@ -171,7 +171,9 @@ class LicenseDatabase:
         licenses = self.license_db[LICENSES_TAG]
         return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]['spdxid']} for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
 
-    def aliases_list(self):
+    def aliases_list(self, alias_license=None):
+        if alias_license:
+            return {k: v for k, v in self.license_db[ALIASES_TAG].items() if alias_license in v}
         # List all aliases that exist
         return self.license_db[ALIASES_TAG]
 
