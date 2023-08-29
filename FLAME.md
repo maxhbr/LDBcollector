@@ -60,11 +60,13 @@ BSD-3-Clause AND HPND
 ```
 
 You want an expression with licenses that are supported by [osadl_matrix](https://github.com/priv-kweihmann/osadl-matrix) from `BBSD3 & x11-keith-packard` with info on how the data was found:
+```
 $ flame --verbose compat "BSD3 & x11-keith-packard"
 BSD-3-Clause AND HPND
  * "BSD3" -> "BSD-3-Clause" via "alias" -> "BSD-3-Clause" via "direct"
  * "&" -> "AND" via "operator"
  * "x11-keith-packard" -> "LicenseRef-flame-x11-keith-packard" via "scancode_key" -> "HPND" via "compatibility_as"
+```
 
 ## List aliases
 
