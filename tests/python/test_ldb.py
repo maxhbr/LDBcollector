@@ -20,6 +20,11 @@ def test_alias_list():
     aliases = ldb.aliases_list()
     assert len(aliases) == 5
 
+def test_alias_list_alias():
+    # list of all aliases with license with GPL
+    aliases = ldb.aliases_list("GPL")
+    assert len(aliases) == 3
+
 def test_aliases():
     # list of all aliases for GPL-2.0-or-later
     aliases = ldb.aliases("GPL-2.0-or-later")
