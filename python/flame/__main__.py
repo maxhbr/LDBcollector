@@ -60,6 +60,7 @@ def parse():
     parser_a = subparsers.add_parser(
         'aliases', help='Display all aliases')
     parser_a.set_defaults(which='aliases', func=aliases)
+    parser_a.add_argument('--license', '-l', type=str, dest='alias_license', help='List only the aliases for licenses containing the given string', default=None)
 
     # compatbilities
     parser_cs = subparsers.add_parser(
@@ -85,7 +86,7 @@ def operators(ldb, formatter, args):
     return formatter.format_operators(all_op, args.verbose)
 
 def aliases(ldb, formatter, args):
-    all_aliases = ldb.aliases_list()
+    all_aliases = ldb.aliases_list(args.alias_license)
     return formatter.format_identified_list(all_aliases, args.verbose)
 
 def licenses(ldb, formatter, args):
