@@ -44,31 +44,31 @@ def parse():
 
     subparsers = parser.add_subparsers(help='Sub commands')
 
+    # license
+    parser_e = subparsers.add_parser(
+        'license', help='Convert license to SPDX identifiers and syntax')
+    parser_e.set_defaults(which='license', func=license)
+    parser_e.add_argument('license', type=str, help='license expression to fix')
+
     # compatibility
     parser_c = subparsers.add_parser(
-        'compat', help='display license with same compatibility as supplied license')
+        'compat', help='Convert license to using licenses compatible with OSADL\'s matrix')
     parser_c.set_defaults(which='compat', func=compatibility)
     parser_c.add_argument('license', type=str, help='license name to display')
 
-    # expressions
-    parser_e = subparsers.add_parser(
-        'expression', help='not yet')
-    parser_e.set_defaults(which='expression', func=expressions)
-    parser_e.add_argument('license', type=str, help='license expression to fix')
-
     # aliases
     parser_a = subparsers.add_parser(
-        'aliases', help='show all aliases')
+        'aliases', help='Display all aliases')
     parser_a.set_defaults(which='aliases', func=aliases)
 
     # compatbilities
     parser_cs = subparsers.add_parser(
-        'compats', help='show all compatibilities')
+        'compats', help='Display all compatibilities')
     parser_cs.set_defaults(which='compats', func=compats)
 
     # operators
     parser_os = subparsers.add_parser(
-        'operators', help='show all operators')
+        'operators', help='Display all operators')
     parser_os.set_defaults(which='operators', func=operators)
 
     # licenses
@@ -100,8 +100,8 @@ def compatibility(ldb, formatter, args):
     compatibilities = ldb.expression_compatibility_as(args.license)
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
-def expressions(ldb, formatter, args):
-    expression = ldb.expression(args.license)
+def license(ldb, formatter, args):
+    expression = ldb.expression_license(args.license)
     return formatter.format_expression(expression, args.verbose)
 
 def main():

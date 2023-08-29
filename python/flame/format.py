@@ -5,9 +5,9 @@
 import json
 import yaml
 
-OUTPUT_FORMAT_JSON = "Json"
-OUTPUT_FORMAT_YAML = "Yaml"
-OUTPUT_FORMAT_TEXT = "text"
+OUTPUT_FORMAT_JSON = 'Json'
+OUTPUT_FORMAT_YAML = 'Yaml'
+OUTPUT_FORMAT_TEXT = 'text'
 OUTPUT_FORMATS = [OUTPUT_FORMAT_JSON, OUTPUT_FORMAT_YAML, OUTPUT_FORMAT_TEXT]
 
 class OutputFormatterFactory():
@@ -68,7 +68,7 @@ class JsonOutputFormatter(OutputFormatter):
         return json.dumps(all_aliases, indent=4)
 
     def format_error(self, error, verbose):
-        return json.dumps({"error": f'{error}'}, indent=4)
+        return json.dumps({'error': f'{error}'}, indent=4)
 
     def format_licenses(self, licenses, verbose):
         return json.dumps(licenses, indent=4)
@@ -97,7 +97,7 @@ class YamlOutputFormatter(OutputFormatter):
         return yaml.dump(all_aliases)
 
     def format_error(self, error, verbose):
-        return yaml.dump({"error": f'{error}'})
+        return yaml.dump({'error': f'{error}'})
 
     def format_licenses(self, licenses, verbose):
         return yaml.dump(licenses)
@@ -112,7 +112,7 @@ class TextOutputFormatter(OutputFormatter):
 
     def format_compat(self, compat, verbose):
         ret = []
-        id_lic = compat["identified_license"]
+        id_lic = compat['identified_license']
         if verbose:
             ret.append(f'queried_name: {id_lic["queried_name"]}')
             ret.append(f'name: {id_lic["name"]}')
@@ -135,18 +135,14 @@ class TextOutputFormatter(OutputFormatter):
                 else:
                     ret.append(f' * "{lic_elem["queried_name"]}" -> "{lic_elem["name"]}" via "{lic_elem["identified_via"]}" -> "{compat["name"]}" via "{compat["compat_identification"]["compatibility"]["identified_via"]}"')
 
-        return "\n".join(ret)
+        return '\n'.join(ret)
 
     def format_compat_list(self, all_compats, verbose):
-        ret = []
-        for comp in all_compats:
-            ret.append(f'{comp["spdxid"]} -> {comp["compatibility_as"]}')
-
-        return "\n".join(ret)
+        return '\n'.join([f'{comp["spdxid"]} -> {comp["compatibility_as"]}' for comp in all_compats])
 
     def format_identified(self, identified, verbose):
         ret = []
-        id_lic = identified["identified_element"]
+        id_lic = identified['identified_element']
         ret.append(f'{id_lic["name"]}')
         if verbose:
             ret.append(f' * "{id_lic["queried_name"]}" -> "{id_lic["name"]}" via "{id_lic["identified_via"]}"')
@@ -158,23 +154,19 @@ class TextOutputFormatter(OutputFormatter):
         ret.append(f'{id_lic}')
         if verbose:
             for identification in expression['identifications']:
-                id_elem = identification["identified_element"]
+                id_elem = identification['identified_element']
                 ret.append(f' * "{id_elem["queried_name"]}" -> "{id_elem["name"]} via "{id_elem["identified_via"]}"')
-        return "\n".join(ret)
+        return '\n'.join(ret)
 
     def format_identified_list(self, all_aliases, verbose):
-        ret = []
-        for alias, value in all_aliases.items():
-            ret.append(f'{alias} -> {value}')
-
-        return "\n".join(ret)
+        return '\n'.join([f'{k} -> {v}' for k, v in all_aliases.items()])
 
     def format_licenses(self, licenses, verbose):
         licenses.sort()
-        return "\n".join(licenses)
+        return '\n'.join(licenses)
 
     def format_operators(self, operators, verbose):
-        return "\n".join(operators)
+        return '\n'.join([f'{k} -> {v}' for k, v in operators.items()])
 
     def format_error(self, error, verbose):
         return f'Error, {error}'

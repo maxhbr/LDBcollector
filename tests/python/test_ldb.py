@@ -43,7 +43,7 @@ def test_identify_with_blank():
     assert lic['license']['spdxid'] == "GPL-2.0-or-later"
 
 def test_identify_expression():
-    lic = ldb.expression("BSD-3-Clause and BSD3")
+    lic = ldb.expression_license("BSD-3-Clause and BSD3")
     assert lic['identified_license'] == "BSD-3-Clause AND BSD-3-Clause"
 
 def test_fail_identify():

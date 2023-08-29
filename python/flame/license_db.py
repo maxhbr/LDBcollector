@@ -111,7 +111,7 @@ class LicenseDatabase:
             'identified_via': ret_id,
         }
 
-    def expression(self, license_expression):
+    def expression_license(self, license_expression):
         new_expression = license_expression
         license_parts = []
         license_list = []
@@ -205,7 +205,7 @@ class LicenseDatabase:
         }
 
     def expression_compatibility_as(self, license_expression):
-        expression_full = self.expression(license_expression)
+        expression_full = self.expression_license(license_expression)
         compats = []
         for identification in expression_full['identifications']:
             lic_elem = identification['identified_element']['name']
