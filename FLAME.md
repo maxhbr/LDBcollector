@@ -80,6 +80,16 @@ GPL2 -> GPL-2.0-only
 ....
 ``` 
 
+## List operators
+
+To list all the supported operators (incomplete listing below):
+``` 
+$ flame operators
+OR -> OR
+or -> OR
+....
+``` 
+
 ## Compatibilities
 
 To list all licenses that has a license with same compatibility as an license known to [osadl_matrix](https://github.com/priv-kweihmann/osadl-matrix) (incomplete listing below):
