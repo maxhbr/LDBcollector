@@ -4364,3 +4364,12 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:patent-clause"
+
+  # https://spdx.org/licenses/LGPL-2.0-or-later.html
+  # https://spdx.org/licenses/OCaml-LGPL-linking-exception.html
+  - id: "LGPL-2.0-or-later WITH OCaml-LGPL-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
