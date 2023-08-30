@@ -47,8 +47,6 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
 
         {% for usage in usages %}
-
-
           <tr>
             <td><a href="{% url 'cube:component_detail' usage.version.component.id %}"> {{ usage.version.component.name }}</a></td>
             <td>{{ usage.version.version_number }}</td>
@@ -63,7 +61,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               </span>
             {% endfor %}
             </td>
-            <td><a href="/admin/cube/usage/{{usage.id}}/change/" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td><a href="{% url 'cube:usage_edit' usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>
