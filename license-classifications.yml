@@ -4334,3 +4334,15 @@ categorizations:
       - "free-restricted"
       - "property:non-commercial"
       - "property:include-in-notice-file"
+
+  - id: "LicenseRef-Windows-binary-build-Python"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+
+  # https://www.python.org/download/releases/2.0.1/license/
+  - id: "Python-2.0.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:mark-modifications"
