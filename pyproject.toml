@@ -5,9 +5,9 @@
 
 [tool.poetry]
 name = "hermine-project"
-version = "0.1.0"
+version = "0.0.1-dev"
 description = ""
-authors = ["Camille Moulin <cmoulin@inno3.fr>", "Martin Delabre <martin.delabre@inno3.fr>"]
+authors = ["Camille Moulin <cmoulin@inno3.fr>", "Martin Delabre <martin.delabre@inno3.fr>", "Maud Royer <hello@maudroyer.fr>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
