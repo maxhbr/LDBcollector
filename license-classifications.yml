@@ -4373,3 +4373,78 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/BSD-3-Clause-Modification.html
+  - id: "BSD-3-Clause-Modification"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:mark-modifications"
+
+  - id: "LicenseRef-scancode-freebsd-boot"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-nilsson-historical"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-no-disclaimer-unmodified"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/X11-distribute-modifications-variant.html
+  - id: "X11-distribute-modifications-variant"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-ssleay-windows"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:advertising-clause"
+
+  - id: "LicenseRef-scancode-fsf-notice"
+    categories:
+      - "permissive"
+
+  - id: "LicenseRef-scancode-bsd-unchanged"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-robert-hubley"
+    categories:
+      - "irrelevant"   
+
+  # https://spdx.org/licenses/GFDL-1.2.html
+  - id: "GFDL-1.2-only"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:unchecked"
+
+  - id: "LicenseRef-scancode-mit-veillard-variant"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  # https://spdx.org/licenses/SMLNJ.html
+  - id: "SMLNJ"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-bsd-unmodified"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-carnegie-mellon"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
