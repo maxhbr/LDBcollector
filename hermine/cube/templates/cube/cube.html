@@ -61,7 +61,7 @@ SPDX-License-Identifier: MIT
           <p class="menu-label">General</p>
           <ul class="menu-list">
             <li>
-              <a href="/" class="has-icon">
+              <a href="{% url 'cube:root' %}" class="has-icon">
                 <span class="icon"><i class="fas fa-chart-pie"></i></span>
                 <span class="menu-item-label">Dashboard</span>
               </a>
@@ -210,7 +210,7 @@ SPDX-License-Identifier: MIT
             </p>
             <ul class="menu-list">
               <li>
-                <a href="/api-doc" class="has-icon">
+                <a href="{% url 'schema-redoc' %}" class="has-icon">
                   <span class="icon">
                     <i class="fas fa-database">
                     </i>
@@ -220,7 +220,7 @@ SPDX-License-Identifier: MIT
                 </a>
               </li>
               <li>
-                <a href="/admin" class="has-icon">
+                <a href="{% url 'admin:index' %}" class="has-icon">
                   <span class="icon">
                     <i class="fas fa-cogs">
                     </i>
