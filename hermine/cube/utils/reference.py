@@ -3,6 +3,8 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from functools import lru_cache
 from django.db.models import F
+from django.db import OperationalError
+import django.test.testcases
 
 LICENSE_SHARED_FIELDS = (
     "spdx_id",
@@ -197,3 +199,26 @@ def join_obligations(local, ref):
         obligations_pairs.append((None, ref_obligation))
 
     return obligations_pairs
+
+
+@lru_cache(maxsize=None)
+def _is_shared_reference_loaded():
+    """Check if the reference database is loaded.
+
+    :return: True if the reference database is loaded, False otherwise
+    :rtype: bool
+    """
+    from cube.models import License
+
+    try:
+        return License.objects.using("shared").exists()
+    except OperationalError:
+        return False
+    except django.test.testcases.DatabaseOperationForbidden:
+        return False
+
+
+def shared_reference_loaded_context_processor(request):
+    return {
+        "is_shared_reference_loaded": _is_shared_reference_loaded(),
+    }
