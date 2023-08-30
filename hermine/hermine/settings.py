@@ -90,6 +90,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "cube.utils.reference.shared_reference_loaded_context_processor",
             ]
         },
     }

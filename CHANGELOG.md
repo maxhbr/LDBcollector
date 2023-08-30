@@ -1,4 +1,7 @@
+# dev
 
+* fix: hide "Shared reference" entry from menu if
+  shared data is not initialized
 
 # 0.0.1
 

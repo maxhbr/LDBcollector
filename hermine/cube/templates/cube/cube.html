@@ -192,7 +192,7 @@ SPDX-License-Identifier: MIT
                 </a>
               </li>
             {% endif %}
-            {% if perms.cube.view_license %}
+            {% if perms.cube.view_license and is_shared_reference_loaded %}
               <li>
                 <a href="{% url 'cube:shared_reference' %}" class="has-icon">
                   <span class="icon">
