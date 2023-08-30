@@ -4235,7 +4235,7 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:advertising-clause"
 
-#https://spdx.org/licenses/Inner-Net-2.0.html
+  # https://spdx.org/licenses/Inner-Net-2.0.html
   - id: "Inner-Net-2.0"
     categories:
       - "permissive"
