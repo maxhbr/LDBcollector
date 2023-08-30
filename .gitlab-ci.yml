@@ -11,6 +11,11 @@
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 image: python:3.8-alpine
+
+stages:
+  - test
+  - release
+
 tests:
   stage: test
   rules:
@@ -31,8 +36,9 @@ tests:
   - poetry run djhtml cube/templates/ --check
   - poetry run python manage.py makemigrations | grep "No changes detected" || echo "Migrations are not up to date"
   - poetry run python manage.py test
+
 pages:
-  stage: deploy
+  stage: release
   rules:
   - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
     changes:
@@ -54,3 +60,15 @@ pages:
     - public
 variables:
   DOCKER_DRIVER: overlay2
+
+release:
+  stage: release
+  rules:
+    - if: $CI_COMMIT_TAG
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  script:
+    - echo "Creating release"
+  release:
+    name: "$(echo $CI_COMMIT_TAG | sed 's/^v//')"
+    tag_name: "$CI_COMMIT_TAG"
+    description: See changes in CHANGELOG.md
