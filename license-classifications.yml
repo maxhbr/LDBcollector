@@ -918,7 +918,7 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
-        #
+
   # https://spdx.org/licenses/Python-2.0.html
   - id: "Python-2.0"
     categories:
@@ -1116,7 +1116,7 @@ categorizations:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
-        #
+
   # https://spdx.org/licenses/LPPL-1.0.html
   - id: "LPPL-1.0+"
     categories:
@@ -1667,7 +1667,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  - id: "Noweb" # unusual bug report clause
+  - id: "Noweb"
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
@@ -2121,7 +2121,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
-    #
+
   # https://spdx.org/licenses/GPL-3.0-or-later.html
   # http://git.openembedded.org/openembedded-core/tree/meta/files/common-licenses/GPL-2.0-with-autoconf-exception
   - id: "GPL-3.0-or-later-with-Autoconf-macro-exception"
@@ -2234,7 +2234,7 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
-        #
+
   # https://spdx.org/licenses/OLDAP-2.0.1.html
   - id: "OLDAP-2.0.1"
     categories:
@@ -2578,7 +2578,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
-        #
+
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-2.0-or-later-with-bison-exception-2.0"
@@ -3440,7 +3440,7 @@ categorizations:
     categories:
       - "proprietary-free"
 
-    # https://www.highcharts.com/license
+  # https://www.highcharts.com/license
   - id: "LicenseRef-highsoft-standard-license-agreement"
     categories:
       - "commercial"
@@ -3627,7 +3627,7 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
-        #
+
   # https://scancode-licensedb.aboutcode.org/ietf.html
   - id: "LicenseRef-IETF"
     categories:
@@ -4419,7 +4419,7 @@ categorizations:
 
   - id: "LicenseRef-scancode-robert-hubley"
     categories:
-      - "irrelevant"   
+      - "irrelevant"
 
   # https://spdx.org/licenses/GFDL-1.2.html
   - id: "GFDL-1.2-only"
