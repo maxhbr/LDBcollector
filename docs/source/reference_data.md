@@ -7,15 +7,15 @@ SPDX-License-Identifier: CC-BY-4.0
 
 You can import reference data in Hermine. This data is a
 collection of licenses and generic obligations. Once you
-loaded reference data into Hermine, you can compare
+have loaded reference data into Hermine, you can compare
 your local licenses and obligations to the reference ones,
 and if you want, update you local values to match the
 reference.
 
-It is meant to share policy decisions and legal knowledge
-between Hermine users, without sharing any confidential
-information. It is also meant to be a starting point for
-your own policy, and you can edit it to fit your needs.
+It is meant to share legal knowledge between Hermine users, 
+without sharing any confidential information. It is also 
+meant to be a starting point for your own policy, and you 
+can edit it to fit your needs.
 
 Reference data is a JSON file with the following keys :
 * `date` : the date of the reference data
