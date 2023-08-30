@@ -4346,3 +4346,21 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:mark-modifications"
+
+  # https://spdx.org/licenses/OSL-2.1.html
+  - id: "OSL-2.1"
+    categories:
+      - "copyleft-module-level"
+      - "property:network-clause"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+  # https://spdx.org/licenses/OSL-3.0.html
+  - id: "OSL-3.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:network-clause"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
