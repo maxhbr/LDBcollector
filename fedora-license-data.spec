@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.28
+Version:        1.29
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,22 @@ make check-grammar
 
 
 %changelog
+* Thu Aug 31 2023 Miroslav Suchý <msuchy@redhat.com> 1.29-1
+- Add byacc public domain declaration
+- recognize and allow MPL-2.0+ license
+- public-domain-text.txt: Add a dedication found in zpaq
+- New license: MMIXware
+- not allowed license LicenseRef-Iozone
+- new license: Utah Raster Toolkit Run Length Encoded License
+- add license GPL-2.0-only WITH x11vnc-openssl-exception
+- not allowed license LicenseRef-Misti-Fonts
+- new license TTYP0
+- add license GPL-2.0-or-later WITH stunnel-exception
+- Add GPL-2.0-or-later WITH SANE-exception
+- Fix man-pages public-domain and UltraPermissive locations
+- generate additional grammar with all licenses inluding not allowed ones
+- cleanup: remove mkdsv.py
+
 * Sat Aug 19 2023 Miroslav Suchý <msuchy@redhat.com> 1.28-1
 - Add TU-Berlin-2.0 license
 - Add HPLIP nonfree licenses
