@@ -656,7 +656,7 @@ are in the Public Domain.
 XMLPULL API comes with NO WARRANTY or guarantee of fitness for any purpose.
 '''
 
-package = xz.java
+package = xz-java
 location = https://git.tukaani.org/?p=xz-java.git;a=blob;f=COPYING;h=8dd17645c4610c3d5eed9bcdd2699ecfac00406b;hb=HEAD
 text = ''' 
 Licensing of XZ for Java
