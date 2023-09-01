@@ -20,7 +20,7 @@
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [clojure.java.io            :as io]
             [lice-comb.test-boilerplate :refer [fixture]]
-            [lice-comb.files            :refer [probable-license-file? probable-license-files file->ids dir->ids zip->ids]]))
+            [lice-comb.files            :refer [probable-license-file? probable-license-files file->expressions dir->expressions zip->expressions]]))
 
 (use-fixtures :once fixture)
 
@@ -72,54 +72,54 @@
                (io/file (str test-data-path "/MPL-2.0/LICENSE"))}
              (probable-license-files test-data-path)))))
 
-(deftest file->ids-tests
+(deftest file->expressions-tests
   (testing "Nil, empty, or blank filename"
-    (is (nil?                                  (file->ids nil)))
-    (is (thrown? java.io.FileNotFoundException (file->ids "")))
-    (is (thrown? java.io.FileNotFoundException (file->ids "       ")))
-    (is (thrown? java.io.FileNotFoundException (file->ids "\n")))
-    (is (thrown? java.io.FileNotFoundException (file->ids "\t"))))
+    (is (nil?                                  (file->expressions  nil)))
+    (is (thrown? java.io.FileNotFoundException (file->expressions  "")))
+    (is (thrown? java.io.FileNotFoundException (file->expressions  "       ")))
+    (is (thrown? java.io.FileNotFoundException (file->expressions  "\n")))
+    (is (thrown? java.io.FileNotFoundException (file->expressions  "\t"))))
   (testing "Non-existent files"
-    (is (thrown? java.io.FileNotFoundException (file->ids "this_file_does_not_exist"))))
+    (is (thrown? java.io.FileNotFoundException (file->expressions  "this_file_does_not_exist"))))
   (testing "Files on disk"
-    (is (= #{"CC-BY-4.0"}                               (file->ids (str test-data-path "/CC-BY-4.0/LICENSE"))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
-    (is (= #{"MPL-2.0" "MPL-2.0-no-copyleft-exception"} (file->ids (str test-data-path "/MPL-2.0/LICENSE")))))
+    (is (= #{"CC-BY-4.0"}                               (file->expressions  (str test-data-path "/CC-BY-4.0/LICENSE"))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
+    (is (= #{"MPL-2.0" "MPL-2.0-no-copyleft-exception"} (file->expressions  (str test-data-path "/MPL-2.0/LICENSE")))))
   (testing "URLs"
-    (is (= #{"Apache-2.0"} (file->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")))
-    (is (= #{"Apache-2.0"} (file->ids (io/as-url "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
+    (is (= #{"Apache-2.0"} (file->expressions  "https://www.apache.org/licenses/LICENSE-2.0.txt")))
+    (is (= #{"Apache-2.0"} (file->expressions  (io/as-url "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
   (testing "InputStreams"
-    (is (thrown? clojure.lang.ExceptionInfo (with-open [is (io/input-stream "https://www.apache.org/licenses/LICENSE-2.0.txt")] (file->ids is))))
-    (is (= #{"Apache-2.0"} (with-open [is (io/input-stream "https://www.apache.org/licenses/LICENSE-2.0.txt")]                  (file->ids is "LICENSE_2.0.txt")))))
+    (is (thrown? clojure.lang.ExceptionInfo (with-open [is (io/input-stream "https://www.apache.org/licenses/LICENSE-2.0.txt")] (file->expressions  is))))
+    (is (= #{"Apache-2.0"} (with-open [is (io/input-stream "https://www.apache.org/licenses/LICENSE-2.0.txt")]                  (file->expressions  is "LICENSE_2.0.txt")))))
   (testing "POM files"
-    (is (= #{"Apache-2.0"}   (file->ids (str test-data-path "/simple.pom"))))
-    (is (= #{"BSD-3-Clause"} (file->ids (str test-data-path "/no-xml-ns.pom"))))
-    (is (= #{"Apache-2.0"}   (file->ids (str test-data-path "/asf-cat-1.0.12.pom"))))
-    (is (= #{"Apache-2.0"}   (file->ids (str test-data-path "/with-parent.pom"))))))
+    (is (= #{"Apache-2.0"}   (file->expressions  (str test-data-path "/simple.pom"))))
+    (is (= #{"BSD-3-Clause"} (file->expressions  (str test-data-path "/no-xml-ns.pom"))))
+    (is (= #{"Apache-2.0"}   (file->expressions  (str test-data-path "/asf-cat-1.0.12.pom"))))
+    (is (= #{"Apache-2.0"}   (file->expressions  (str test-data-path "/with-parent.pom"))))))
 
-(deftest dir->ids-tests
+(deftest dir->expressions-tests
   (testing "Nil, empty, or blank directory name"
-    (is (nil?                                  (dir->ids nil)))
-    (is (thrown? java.io.FileNotFoundException (dir->ids "")))
-    (is (thrown? java.io.FileNotFoundException (dir->ids "       ")))
-    (is (thrown? java.io.FileNotFoundException (dir->ids "\n")))
-    (is (thrown? java.io.FileNotFoundException (dir->ids "\t"))))
+    (is (nil?                                  (dir->expressions  nil)))
+    (is (thrown? java.io.FileNotFoundException (dir->expressions  "")))
+    (is (thrown? java.io.FileNotFoundException (dir->expressions  "       ")))
+    (is (thrown? java.io.FileNotFoundException (dir->expressions  "\n")))
+    (is (thrown? java.io.FileNotFoundException (dir->expressions  "\t"))))
   (testing "Non-existent or invalid directory"
-    (is (thrown? java.io.FileNotFoundException       (dir->ids "this_directory_does_not_exist")))
-    (is (thrown? java.nio.file.NotDirectoryException (dir->ids "deps.edn"))))
+    (is (thrown? java.io.FileNotFoundException       (dir->expressions  "this_directory_does_not_exist")))
+    (is (thrown? java.nio.file.NotDirectoryException (dir->expressions  "deps.edn"))))
   (testing "Valid directory"
-    (is (= #{"Apache-2.0" "BSD-3-Clause" "MPL-2.0" "MPL-2.0-no-copyleft-exception" "CC-BY-4.0"} (dir->ids ".")))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
+    (is (= #{"Apache-2.0" "BSD-3-Clause" "MPL-2.0" "MPL-2.0-no-copyleft-exception" "CC-BY-4.0"} (dir->expressions  ".")))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
 
-(deftest zip->ids-tests
+(deftest zip->expressions-tests
   (testing "Nil, empty, or blank zip file name"
-    (is (nil?                                      (zip->ids nil)))
-    (is (thrown? java.io.FileNotFoundException     (zip->ids "")))            ; Note the hodgepodge of different thrown exception types here - java.util.zip is a mess!
-    (is (thrown? java.nio.file.NoSuchFileException (zip->ids "       ")))
-    (is (thrown? java.nio.file.NoSuchFileException (zip->ids "\n")))
-    (is (thrown? java.nio.file.NoSuchFileException (zip->ids "\t"))))
+    (is (nil?                                      (zip->expressions nil)))
+    (is (thrown? java.io.FileNotFoundException     (zip->expressions "")))            ; Note the hodgepodge of different thrown exception types here - java.util.zip is a mess!
+    (is (thrown? java.nio.file.NoSuchFileException (zip->expressions "       ")))
+    (is (thrown? java.nio.file.NoSuchFileException (zip->expressions "\n")))
+    (is (thrown? java.nio.file.NoSuchFileException (zip->expressions "\t"))))
   (testing "Non-existent zip file"
-    (is (thrown? java.nio.file.NoSuchFileException (zip->ids "this_zip_file_does_not_exist"))))
+    (is (thrown? java.nio.file.NoSuchFileException (zip->expressions "this_zip_file_does_not_exist"))))
   (testing "Invalid zip file"
-    (is (thrown? java.util.zip.ZipException (zip->ids (str test-data-path "/bad.zip")))))
+    (is (thrown? java.util.zip.ZipException (zip->expressions (str test-data-path "/bad.zip")))))
   (testing "Valid zip file"
-    (is (= #{"Apache-2.0"} (zip->ids (str test-data-path "/good.zip"))))))
+    (is (= #{"Apache-2.0"} (zip->expressions (str test-data-path "/good.zip"))))))
 

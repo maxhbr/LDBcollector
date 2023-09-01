@@ -31,6 +31,9 @@
 (def ^:private local-maven-repo-d
   (delay
     (try
+      ; The command:
+      ;     mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout
+      ; determines where the local repository is located.
       (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
         (if (zero? (:exit sh-result))
           (s/trim (:out sh-result))
@@ -41,6 +44,7 @@
 ; TODO: make this configurable
 (def ^:private remote-maven-repos #{"https://repo.maven.apache.org/maven2" "https://repo.clojars.org"})
 
+;####TODO: MOVE THIS TO UTILS AND REIMPLEMENT ON HATO??
 (defn- uri-resolves?
   "Does the given URI resolve (i.e. does the resource it points to exist)?"
   [^java.net.URI uri]
@@ -49,6 +53,7 @@
                         (.setRequestMethod "HEAD"))]
          (= 200 (.getResponseCode http)))))
 
+;####TODO: MOVE THIS TO AN IMPL NS??
 (defn pom-uri-for-gav
   "Attempts to locate the POM for the given GAV, which is a URI that may point
   to a file in the local Maven repository or a remote Maven repository (e.g. on
@@ -67,27 +72,34 @@
 
 ;####TODO: Check both URI and name and merge the results!
 (defn- licenses-from-pair
-  "Attempts to determine the license(s) (a set) from a POM license name/URL pair."
+  "Attempts to determine the license(s) (a set) from a POM license name/URL pair.
+
+  The result has metadata attached that describes how the identifiers in the
+  expression(s) were determined."
   [{:keys [name url]}]
   ; Attempt to find a match by URL first
   (if-let [licenses (lcmtch/uri->ids url)]
     licenses
     ; Then match by name
-    (lcmtch/name->ids name)))
+    (lcmtch/name->expressions name)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
-(defmulti pom->ids
-  "Attempt to detect the license(s) reported in a pom.xml file. pom may be a
-  java.io.InputStream, or anything that can be opened by clojure.java.io/input-stream.
+(defmulti pom->expressions
+  "Attempt to detect the license expression(s) (a set) reported in a pom.xml
+  file. pom may be a java.io.InputStream, or anything that can be opened by
+  clojure.java.io/input-stream.
 
   Note: if an InputStream is provided, it's the caller's responsibility to open
-  and close it."
+  and close it.
+
+  The result has metadata attached that describes how the identifiers in the
+  expression(s) were determined."
   {:arglists '([pom])}
   type)
 
 ; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - so we look for both namespaced and non-namespaced versions of all tags here
-(defmethod pom->ids java.io.InputStream
+(defmethod pom->expressions java.io.InputStream
   [pom-is]
   (let [pom-xml        (xml/parse pom-is)
         licenses       (seq (xi/find-all pom-xml [::pom/project ::pom/licenses ::pom/license]))
@@ -96,6 +108,7 @@
       ; Licenses block exists - process it
       (let [name-uri-pairs (lcu/nset (concat (lcu/map-pad #(hash-map :name (lcu/strim %1) :url (lcu/strim %2)) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))
                                              (lcu/map-pad #(hash-map :name (lcu/strim %1) :url (lcu/strim %2)) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url]))))]
+;####TODO: MERGE METADATA MAPS AND EMBELLISH :source!!!!
         (lcu/nset (mapcat licenses-from-pair name-uri-pairs)))
       ; License block doesn't exist, so attempt to lookup the parent pom and get it from there
       (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
@@ -108,14 +121,14 @@
                                                     :artifact-id (lcu/strim (first (xi/find-first parent-no-ns [:artifactId])))
                                                     :version     (lcu/strim (first (xi/find-first parent-no-ns [:version])))}))]
         (when-not (empty? parent-gav)
-          (pom->ids (pom-uri-for-gav parent-gav)))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
+          (pom->expressions (pom-uri-for-gav parent-gav)))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
 
-(defmethod pom->ids :default
+(defmethod pom->expressions :default
   [pom]
   (when pom
     (with-open [pom-is (io/input-stream pom)]
-      (if-let [pom-licenses (pom->ids pom-is)]
-        pom-licenses
+      (if-let [expressions (pom->expressions pom-is)]
+        expressions
         (log/info (str "'" pom "'") "contains no license information")))))
 
 (defn init!

@@ -26,6 +26,7 @@
             [lice-comb.impl.data  :as lcd]
             [lice-comb.impl.utils :as lcu]))
 
+;####TODO: FIGURE OUT HOW TO HANDLE METADATA FOR OVERRIDES / FALLBACKS!!!!
 (def ^:private overrides-d (delay (lcd/load-edn-resource "lice_comb/deps/overrides.edn")))
 (def ^:private fallbacks-d (delay (lcd/load-edn-resource "lice_comb/deps/fallbacks.edn")))
 
@@ -52,13 +53,17 @@
   (when ga
     [(symbol (first (s/split (str ga) #"\$"))) info]))
 
-(defmulti dep->ids
-  "Attempt to detect the license(s) in a tools.deps style dep (a MapEntry or
-  two-element sequence of [groupId/artifactId dep-info])."
+(defmulti dep->expressions
+  "Attempt to detect the SPDX license expression(s) (a set) in a tools.deps
+  style dep (a MapEntry or two-element sequence of
+  `[groupId/artifactId dep-info]`).
+
+  The result has metadata attached that describes how the identifiers in the
+  expression(s) were determined."
   {:arglists '([[ga info]])}
   (fn [[_ info]] (:deps/manifest info)))
 
-(defmethod dep->ids :mvn
+(defmethod dep->expressions :mvn
   [dep]
   (when dep
     (let [[ga info]              (normalise-dep dep)
@@ -67,35 +72,39 @@
       (if-let [override (check-overrides ga version)]
         override
         (let [pom-uri     (lcmvn/pom-uri-for-gav group-id artifact-id version)
-              license-ids (check-fallbacks ga
-                                           (if-let [license-ids (lcmvn/pom->ids pom-uri)]
-                                             license-ids
-                                             (lcu/nset (mapcat lcf/zip->ids (:paths info)))))]      ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
-          license-ids)))))
+              expressions (check-fallbacks ga
+                                           (if-let [expressions (lcmvn/pom->expressions pom-uri)]
+                                             expressions
+;####TODO: MERGE METADATA MAPS!!!!
+                                             (lcu/nset (mapcat lcf/zip->expressions (:paths info)))))]      ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
+          expressions)))))
 
-(defmethod dep->ids :deps
+(defmethod dep->expressions :deps
   [dep]
   (when dep
     (let [[ga info] (normalise-dep dep)
           version   (:git/sha info)]
       (if-let [override (check-overrides ga version)]
         override
-        (check-fallbacks ga (lcf/dir->ids (:deps/root info)))))))
+        (check-fallbacks ga (lcf/dir->expressions (:deps/root info)))))))
 
-(defmethod dep->ids nil
+(defmethod dep->expressions nil
   [_])
 
-(defmethod dep->ids :default
+(defmethod dep->expressions :default
   [dep]
-  (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest (second dep)) "' for dependency " dep) {:dep dep})))
+  (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest (second dep)) "' for dependency " dep)
+                  {:dep dep})))
 
-(defn deps-licenses
-  "Attempt to detect the license(s) in a tools.deps 'lib map', returning a new
-  lib map with the licenses assoc'ed in (in key :lice-comb/licenses)"
+(defn deps-expressions
+  "Attempt to detect the SPDX license expression(s) in a tools.deps 'lib map',
+  returning a new lib map with the licenses assoc'ed in (in key
+  `:lice-comb/license-expressions`)"
   [deps]
   (when deps
     (into {}
-          (pmap #(let [[k v] %] [k (assoc v :lice-comb/licenses (dep->ids [k v]))]) deps))))
+;####TODO: CHECK WHETHER METADATA MAPS NEED TO BE MERGED!!!!
+          (pmap #(let [[k v] %] [k (assoc v :lice-comb/license-expressions (dep->expressions [k v]))]) deps))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

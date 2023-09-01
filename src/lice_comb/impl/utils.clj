@@ -50,6 +50,13 @@
   [^String s]
   (when s (s/trim s)))
 
+(defn is-digits?
+  "Does the given string contains digits only?"
+  [^String s]
+  (boolean  ; Eliminate nil-punning
+    (when-not (s/blank? s)
+      (every? #(Character/isDigit ^Character %) s))))
+
 (defn nset
   "nil preserving version of clojure.core/set"
   [coll]
@@ -80,6 +87,11 @@
                  \. "\\."
                  \> "\\>"
                  })))
+
+(defn re-concat
+  "Concatenate all of the given regexes or strings into a single regex."
+  [& res]
+  (re-pattern (apply str res)))
 
 (defn base62-encode
   "Encodes the given string to Base62/UTF-8."

@@ -17,6 +17,8 @@ This library leverages, and is inspired by, the *excellent* [SPDX project](https
 
 * `lice-comb` (all versions) requires an internet connection.
 
+* `lice-comb` (all versions) assumes Maven is installed and in the `PATH` (but has fallback logic if it isn't).
+
 * `lice-comb` (v2.0+) requires JDK 11 or higher.
 
 ## Installation
@@ -54,9 +56,10 @@ $ deps-try com.github.pmonks/lice-comb
 
 ### 1.x -> 2.x
 
-Implementing [issue #3](https://github.com/pmonks/lice-comb/issues/3) resulted in the creation of a [new SPDX-specific library (`clj-spdx`)](https://github.com/pmonks/clj-spdx) that leverages [the official SPDX Java library](https://github.com/spdx/Spdx-Java-Library).  Because of irreconcilable differences in how that Java library represents license data compared to `lice-comb` v1.x, as well as the addition of support for SPDX license exceptions, it was not possible to retain backwards compatibility.
+The implementation of [issue #3](https://github.com/pmonks/lice-comb/issues/3) resulted in a number of unavoidable breaking changes, including:
 
-The backwards compatibility breaking changes are limited to the (removed) `lice-comb.spdx` namespace however, so if you're not using that namespace you should be unaffected.  If you are using that namespace, migration involves migrating to [`clj-spdx`](https://github.com/pmonks/clj-spdx), and (possibly) the `lice-comb.matching` namespace.
+* A wholesale change from returning sets of SPDX identifiers to returning sets of SPDX expressions
+* The creation of [a dedicated SPDX-specific library (`clj-spdx`)](https://github.com/pmonks/clj-spdx) that leverages [the official SPDX Java library](https://github.com/spdx/Spdx-Java-Library)
 
 ## Contributor Information
 

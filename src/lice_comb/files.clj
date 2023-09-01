@@ -51,38 +51,51 @@
           (throw (java.nio.file.NotDirectoryException. (str dir))))
         (throw (java.io.FileNotFoundException. (str dir)))))))
 
-(defn file->ids
-  "Attempts to determine the SPDX license identifier(s) (a set) from the given
+(defn file->expressions
+  "Attempts to determine the SPDX license expression(s) (a set) from the given
   file (an InputStream or something that can have an io/input-stream opened on
   it). If an InputStream is provided, the associated filename should also be
-  provided as the second parameter (it is unnecessary in other cases)."
-  ([f] (file->ids f (lcu/filename f)))
+  provided as the second parameter (it is unnecessary in other cases).
+
+  The result has metadata attached that describes how the identifiers in the
+  expression(s) were determined."
+  ([f] (file->expressions f (lcu/filename f)))
   ([f fname]
    (when (and f fname)
      (let [fname (s/lower-case fname)]
-       (cond (= fname "pom.xml")         (lcmvn/pom->ids f)
-             (s/ends-with? fname ".pom") (lcmvn/pom->ids f)
+       (cond (= fname "pom.xml")         (lcmvn/pom->expressions f)
+             (s/ends-with? fname ".pom") (lcmvn/pom->expressions f)
              :else                       (lcmtch/text->ids (io/input-stream f)))))))   ; Default is to assume it's a plain text file containing license text(s)
 
-(defn dir->ids
-  "Attempt to detect the license(s) in a directory. dir may be a String or a
-  java.io.File, both of which must refer to a directory."
+(defn dir->expressions
+  "Attempt to detect the SPDX license expression(s) (a set) in a directory. dir
+  may be a String or a java.io.File, both of which must refer to a
+  readable directory.
+
+  The result has metadata attached that describes how the identifiers in the
+  expression(s) were determined."
   [dir]
   (when dir
-    (lcu/nset (mapcat file->ids (probable-license-files dir)))))
+;####TODO: MERGE METADATA MAPS AND EMBELLISH :source!!!!
+    (lcu/nset (mapcat file->expressions (probable-license-files dir)))))
 
-(defn zip->ids
-  "Attempt to detect the license(s) in a ZIP file. zip may be a String or a
-  java.io.File, both of which must refer to a ZIP-format compressed file."
+(defn zip->expressions
+  "Attempt to detect the SPDX license expression(s) in a ZIP file. zip may be a
+  String or a java.io.File, both of which must refer to a ZIP-format compressed
+  file.
+
+  The result has metadata attached that describes how the identifiers in the
+  expression(s) were determined."
   [zip]
   (when zip
     (let [zip-file (io/file zip)]
       (java.util.zip.ZipFile. zip-file)  ; This no-op forces validation of the zip file - ZipInputStream does not reliably perform validation
       (with-open [zip-is (java.util.zip.ZipInputStream. (io/input-stream zip-file))]
-        (loop [licenses nil
-               entry    (.getNextEntry zip-is)]
+        (loop [result #{}
+               entry  (.getNextEntry zip-is)]
           (if entry
             (if (probable-license-file? entry)
-              (recur (set/union licenses (file->ids zip-is (lcu/filename entry))) (.getNextEntry zip-is))
-              (recur licenses                                                     (.getNextEntry zip-is)))
-            (doall (some-> (seq licenses) set))))))))  ; Realise the result before we exit the `with-open` scope
+;####TODO: MERGE METADATA MAPS AND EMBELLISH :source!!!!
+              (recur (set/union result (file->expressions zip-is (lcu/filename entry))) (.getNextEntry zip-is))
+              (recur result                                                             (.getNextEntry zip-is)))
+            (doall (some-> (seq result) set))))))))  ; De-lazy the result before we exit the with-open scope
