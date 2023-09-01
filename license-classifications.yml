@@ -546,6 +546,15 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-2.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-generic.html
+  - id: "GPL-2.0-or-later WITH Autoconf-exception-generic"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "GPL-2.0-or-later WITH Classpath-exception-2.0"
     categories:
@@ -2065,6 +2074,15 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/GPL-1.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-generic.html
+  - id: "GPL-1.0-or-later WITH Autoconf-exception-generic"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/Linux-syscall-note.html
   - id: "GPL-2.0-or-later WITH Linux-syscall-note"
@@ -2143,6 +2161,17 @@ categorizations:
   # https://spdx.org/licenses/GPL-3.0-or-later.html
   # http://git.openembedded.org/openembedded-core/tree/meta/files/common-licenses/GPL-2.0-with-autoconf-exception
   - id: "GPL-3.0-or-later-with-Autoconf-macro-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://scancode-licensedb.aboutcode.org/autoconf-macro-exception.html
+  - id: "GPL-3.0-or-later WITH LicenseRef-scancode-autoconf-macro-exception"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
@@ -2576,6 +2605,28 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-generic.html
+  - id: "GPL-3.0-or-later WITH Autoconf-exception-generic"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://spdx.org/licenses/Autoconf-exception-2.0.html
+  - id: "GPL-3.0-or-later WITH Autoconf-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
   # https://spdx.org/licenses/Autoconf-exception-3.0.html
   - id: "GPL-3.0-or-later WITH Autoconf-exception-3.0"
     categories:
@@ -2589,6 +2640,28 @@ categorizations:
   # https://spdx.org/licenses/GPL-3.0-or-later.html
   # https://spdx.org/licenses/Libtool-exception.html
   - id: "GPL-3.0-or-later WITH Libtool-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://scancode-licensedb.aboutcode.org/autoconf-simple-exception.html
+  - id: "GPL-3.0-or-later WITH LicenseRef-scancode-autoconf-simple-exception"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:antitivo-clause"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://spdx.org/licenses/GPL-3.0-or-later.html
+  # https://scancode-licensedb.aboutcode.org/tex-exception.html
+  - id: "GPL-3.0-or-later WITH LicenseRef-scancode-tex-exception"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
