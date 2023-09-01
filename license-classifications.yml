@@ -311,11 +311,13 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-# https://spdx.org/licenses/BSD-4.3TAHOE.html
+  # https://spdx.org/licenses/BSD-4.3TAHOE.html
   - id: "BSD-4.3TAHOE"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+      - "property:no-modifications"
+      - "property:advertising-clause"
 
   - id: "LicenseRef-scancode-bsd-original-uc-1986"
     categories:
@@ -545,11 +547,20 @@ categorizations:
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
 
+  # https://spdx.org/licenses/GPL-2.0-only.html
+  # https://scancode-licensedb.aboutcode.org/mysql-linking-exception-2018.html
+  - id: "GPL-2.0-only WITH LicenseRef-scancode-mysql-linking-exception-2018"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
   # https://spdx.org/licenses/GPL-2.0-or-later.html
   # https://spdx.org/licenses/Autoconf-exception-generic.html
   - id: "GPL-2.0-or-later WITH Autoconf-exception-generic"
     categories:
-      - "copyleft-module-level"
+      - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
@@ -558,7 +569,7 @@ categorizations:
   # https://spdx.org/licenses/Classpath-exception-2.0.html
   - id: "GPL-2.0-or-later WITH Classpath-exception-2.0"
     categories:
-      - "copyleft-module-level"
+      - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
       - "property:AutoConf-or-other-exception"
@@ -2677,7 +2688,6 @@ categorizations:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
-      - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
 
   # https://spdx.org/licenses/GPL-2.0-or-later.html
@@ -2687,7 +2697,12 @@ categorizations:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
-      - "property:patent-clause"
+      - "property:AutoConf-or-other-exception"
+
+  # https://scancode-licensedb.aboutcode.org/bison-exception-2.0.html
+  - id: "LicenseRef-scancode-bison-exception-2.0"
+    categories:
+      - "property:include-in-notice-file"
       - "property:AutoConf-or-other-exception"
 
   - id: "ATT"
@@ -4358,6 +4373,15 @@ categorizations:
       - "property:unchecked"
 
   - id: "LicenseRef-LGPL-2.1-or-later-with-unlimited-linking-exception"
+    categories:
+      - "copyleft-LGPL"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # Duplicate of LicenseRef-LGPL-2.1-or-later-with-unlimited-linking-exception classification
+  # due to tooling requirements.
+  - id: "LGPL-2.1-or-later WITH LicenseRef-scancode-unlimited-link-exception-lgpl"
     categories:
       - "copyleft-LGPL"
       - "property:include-in-notice-file"
