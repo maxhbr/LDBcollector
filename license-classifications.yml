@@ -311,6 +311,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+# https://spdx.org/licenses/BSD-4.3TAHOE.html
+  - id: "BSD-4.3TAHOE"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "LicenseRef-scancode-bsd-original-uc-1986"
     categories:
       - "permissive"
