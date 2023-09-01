@@ -1195,6 +1195,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/snprintf.html
+  - id: "snprintf"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://github.com/nexB/scancode-toolkit/blob/ded56e9120f5fdfb9a1a0309130bb4305a66aacb/src/licensedcode/data/licenses/philippe-de-muyter.LICENSE
   - id: "LicenseRef-scancode-philippe-de-muyter"
     categories:
