@@ -1460,6 +1460,12 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  # https://spdx.org/licenses/FSFULLRWD.html
+  - id: "FSFULLRWD"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   # https://scancode-licensedb.aboutcode.org/fsf-unlimited-no-warranty.html
   - id: "LicenseRef-FSF-Unlimited-No-Warranty"
     categories:
