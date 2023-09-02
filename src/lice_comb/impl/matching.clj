@@ -34,6 +34,34 @@
                                                            :redirect-policy :always
                                                            :cookie-policy   :none})))
 
+(def ^:private gpl-ids-with-only-or-later #{"AGPL-1.0"
+                                            "AGPL-3.0"
+                                            "GFDL-1.1"
+                                            "GFDL-1.2"
+                                            "GFDL-1.3"
+                                            "GPL-1.0"
+                                            "GPL-2.0"
+                                            "GPL-3.0"
+                                            "LGPL-2.0"
+                                            "LGPL-2.1"
+                                            "LGPL-3.0"})
+
+(defn- fix-gpl-only-or-later
+  "If the set of ids includes both an 'only' and an 'or-later' variant of the
+  same underlying GNU family identifier, remove the 'only' variant."
+  [ids]
+  (loop [result ids
+         f      (first gpl-ids-with-only-or-later)
+         r      (rest  gpl-ids-with-only-or-later)]
+    (if f
+      (recur (if (and (contains? result (str f "-only"))
+                      (contains? result (str f "-or-later")))
+               (disj result (str f "-only"))
+               result)
+             (first r)
+             (rest r))
+      result)))
+
 (defn- fix-public-domain-cc0
   "If the set of ids includes both CC0-1.0 and lice-comb's public domain
   LicenseRef, remove the LicenseRef as it's redundant."
@@ -43,12 +71,23 @@
     (disj ids (lcis/public-domain))
     ids))
 
+(defn- fix-mpl-2
+  "If the set of ids includes both MPL-2.0 and MPL-2.0-no-copyleft-exception,
+  remove the MPL-2.0-no-copyleft-exception as it's redundant."
+  [ids]
+  (if (and (contains? ids "MPL-2.0")
+           (contains? ids "MPL-2.0-no-copyleft-exception"))
+    (disj ids "MPL-2.0-no-copyleft-exception")
+    ids))
+
 (defn manual-fixes
   "Manually fix certain invalid combinations of license identifiers in a set."
   [ids]
   (when ids
     (some-> ids
+            fix-gpl-only-or-later
             fix-public-domain-cc0
+            fix-mpl-2
             set)))
 
 (defmulti text->ids

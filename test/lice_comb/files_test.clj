@@ -82,8 +82,8 @@
   (testing "Non-existent files"
     (is (thrown? java.io.FileNotFoundException (file->expressions  "this_file_does_not_exist"))))
   (testing "Files on disk"
-    (is (= #{"CC-BY-4.0"}                               (file->expressions  (str test-data-path "/CC-BY-4.0/LICENSE"))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
-    (is (= #{"MPL-2.0" "MPL-2.0-no-copyleft-exception"} (file->expressions  (str test-data-path "/MPL-2.0/LICENSE")))))
+    (is (= #{"CC-BY-4.0"} (file->expressions  (str test-data-path "/CC-BY-4.0/LICENSE"))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
+    (is (= #{"MPL-2.0"}   (file->expressions  (str test-data-path "/MPL-2.0/LICENSE")))))
   (testing "URLs"
     (is (= #{"Apache-2.0"} (file->expressions  "https://www.apache.org/licenses/LICENSE-2.0.txt")))
     (is (= #{"Apache-2.0"} (file->expressions  (io/as-url "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
@@ -107,7 +107,7 @@
     (is (thrown? java.io.FileNotFoundException       (dir->expressions  "this_directory_does_not_exist")))
     (is (thrown? java.nio.file.NotDirectoryException (dir->expressions  "deps.edn"))))
   (testing "Valid directory"
-    (is (= #{"Apache-2.0" "BSD-3-Clause" "MPL-2.0" "MPL-2.0-no-copyleft-exception" "CC-BY-4.0"} (dir->expressions  ".")))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
+    (is (= #{"Apache-2.0" "BSD-3-Clause" "MPL-2.0" "CC-BY-4.0"} (dir->expressions  ".")))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
 
 (deftest zip->expressions-tests
   (testing "Nil, empty, or blank zip file name"

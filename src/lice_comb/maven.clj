@@ -77,11 +77,11 @@
   The result has metadata attached that describes how the identifiers in the
   expression(s) were determined."
   [{:keys [name url]}]
-  ; Attempt to find a match by URL first
-  (if-let [licenses (lcmtch/uri->ids url)]
-    licenses
-    ; Then match by name
-    (lcmtch/name->expressions name)))
+  ; Attempt to find a match from the name first
+  (if-let [expressions (lcmtch/name->expressions name)]
+    expressions
+    ; Then match by url
+    (lcmtch/uri->ids url)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 

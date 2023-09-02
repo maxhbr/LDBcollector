@@ -50,11 +50,14 @@
     (is (true?  (every? false? (map unlisted? (sl/ids)))))
     (is (true?  (every? false? (map unlisted? (se/ids)))))))
 
+(def not-nil? (complement nil?))
+
 (defn valid=
   "Returns true if all of the SPDX exceptions in s2 are valid, and also
   that s1 equals s2."
   [s1 s2]
-  (and (set? s2)
+  (and ;(not-nil? (meta s2))    ;####TODO: THIS MAY CONFUSE THINGS!!!!
+       (set? s2)
        (= s1 s2)
        (every? true? (map sexp/valid? s2))))
 

@@ -19,6 +19,7 @@
 (ns lice-comb.maven-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [lice-comb.test-boilerplate :refer [fixture]]
+            [lice-comb.impl.spdx        :as lcis]
             [lice-comb.maven            :refer [pom->expressions]]))
 
 (use-fixtures :once fixture)
@@ -42,16 +43,16 @@
     (is (= #{"Apache-2.0"}                             (pom->expressions (str test-data-path "/asf-cat-1.0.12.pom")))))
   (testing "Real pom files - remote"
     (is (= #{"Apache-2.0"}                             (pom->expressions "https://repo1.maven.org/maven2/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.pom")))
-    (is (= #{"LicenseRef-lice-comb-public-domain"}     (pom->expressions "https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom")))           ; Note: non-SPDX
+    (is (= #{(lcis/public-domain)}                     (pom->expressions "https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom")))           ; Note: non-SPDX
     (is (= #{"EPL-1.0"}                                (pom->expressions "https://repo.clojars.org/org/clojure/clojure/1.4.0/clojure-1.4.0.pom")))
     (is (= #{"Apache-2.0"}                             (pom->expressions "https://repo.clojars.org/com/github/pmonks/asf-cat/1.0.12/asf-cat-1.0.12.pom")))
     (is (= #{"Apache-2.0"}                             (pom->expressions "https://repo.clojars.org/http-kit/http-kit/2.5.3/http-kit-2.5.3.pom")))
     (is (nil?                                          (pom->expressions "https://repo.clojars.org/borkdude/sci.impl.reflector/0.0.1/sci.impl.reflector-0.0.1.pom")))   ; This project has no license information in its pom
     (is (= #{"CDDL-1.0"}                               (pom->expressions "https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom")))
     (is (= #{"Plexus"}                                 (pom->expressions "https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom")))                  ; See https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
-    (is (= #{"GPL-3.0"}                                (pom->expressions "https://repo1.maven.org/maven2/org/activecomponents/jadex/jadex-kernel-component/3.0.117/jadex-kernel-component-3.0.117.pom"))))
+    (is (= #{"GPL-3.0-only"}                           (pom->expressions "https://repo1.maven.org/maven2/org/activecomponents/jadex/jadex-kernel-component/3.0.117/jadex-kernel-component-3.0.117.pom"))))
   (testing "Real pom files - remote - dual-licensed"
-    (is (= #{"GPL-2.0-with-classpath-exception" "MIT"} (pom->expressions "https://repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom"))))
+    (is (= #{"GPL-2.0-only WITH Classpath-exception-2.0" "MIT"} (pom->expressions "https://repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom"))))
   (testing "Synthetic pom files with licenses in parent - local"
     (is (= #{"Apache-2.0"}                             (pom->expressions (str test-data-path "/with-parent.pom")))))
   (testing "Real pom files with licenses in parent - remote"
