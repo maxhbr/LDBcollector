@@ -176,20 +176,6 @@
       (catch Exception _
         nil))))
 
-; TODO: THIS MAY BE UNNECESSARY AND IF SO SHOULD BE REMOVED
-(comment
-(defn listed-name->ids
-  "Returns the SPDX license and/or exception identifier(s) (a set) for
-  the given license name (matched case insensitively), or nil if there
-  aren't any.
-
-  Note that SPDX license names are not guaranteed to be unique - see
-  https://github.com/spdx/license-list-XML/blob/main/DOCS/license-fields.md"
-  [name]
-  (when-not (s/blank? name)
-    (get @lcis/index-name-to-id-d (s/trim (s/lower-case name)))))
-)
-
 (defn uri->ids
   "Returns the SPDX license and/or exception identifiers (a set) for the given
   uri, or nil if there aren't any.  It does this via two steps:

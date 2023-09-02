@@ -20,6 +20,7 @@
   "Functionality related to finding and determining license information from
   Maven POMs."
   (:require [clojure.string        :as s]
+            [clojure.set           :as set]
             [clojure.java.io       :as io]
             [clojure.data.xml      :as xml]
             [clojure.java.shell    :as sh]
@@ -70,7 +71,6 @@
          (.toURI local-pom)
          (first (filter uri-resolves? (map #(java.net.URI. (str % "/" gav-path)) remote-maven-repos))))))))
 
-;####TODO: Check both URI and name and merge the results!
 (defn- licenses-from-pair
   "Attempts to determine the license(s) (a set) from a POM license name/URL pair.
 
@@ -78,10 +78,15 @@
   expression(s) were determined."
   [{:keys [name url]}]
   ; Attempt to find a match from the name first
-  (if-let [expressions (lcmtch/name->expressions name)]
-    expressions
-    ; Then match by url
-    (lcmtch/uri->ids url)))
+  (let [name-expressions (lcmtch/name->expressions name)]
+    (if (every? lcmtch/unlisted? name-expressions)
+      ; If all we got were unlisted expressions from the name, try the URI
+      (let [uri-expressions (lcmtch/uri->ids url)]
+        (if (every? lcmtch/unlisted? uri-expressions)
+          ; Neither worked, so just return all of the unlisted placeholders
+          (set/union name-expressions uri-expressions)  ;####TODO: MERGE METADATA!!!!
+          uri-expressions))
+      name-expressions)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
