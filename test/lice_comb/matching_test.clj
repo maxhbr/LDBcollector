@@ -18,12 +18,11 @@
 
 (ns lice-comb.matching-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
-            [lice-comb.test-boilerplate :refer [fixture]]
+            [lice-comb.test-boilerplate :refer [fixture valid=]]
             [lice-comb.impl.spdx        :as lcis]
             [lice-comb.matching         :refer [init! unlisted? proprietary-commercial? text->ids name->expressions uri->ids]]
             [spdx.licenses              :as sl]
-            [spdx.exceptions            :as se]
-            [spdx.expressions           :as sexp]))
+            [spdx.exceptions            :as se]))
 
 (use-fixtures :once fixture)
 
@@ -49,17 +48,6 @@
   (testing "Listed ids"
     (is (true?  (every? false? (map unlisted? (sl/ids)))))
     (is (true?  (every? false? (map unlisted? (se/ids)))))))
-
-(def not-nil? (complement nil?))
-
-(defn valid=
-  "Returns true if all of the SPDX exceptions in s2 are valid, and also
-  that s1 equals s2."
-  [s1 s2]
-  (and ;(not-nil? (meta s2))    ;####TODO: THIS MAY CONFUSE THINGS!!!!
-       (set? s2)
-       (= s1 s2)
-       (every? true? (map sexp/valid? s2))))
 
 (deftest name->expressions-tests
   (testing "Nil, empty or blank"

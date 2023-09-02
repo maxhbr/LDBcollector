@@ -17,7 +17,8 @@
 ;
 
 (ns lice-comb.test-boilerplate
-  (:require [clojure.spec.alpha :as spec]))
+  (:require [clojure.spec.alpha :as spec]
+            [spdx.expressions   :as sexp]))
 
 ; Here we hack up a "global once" function
 (def ^:private global-setup (memoize (fn []
@@ -35,3 +36,23 @@
   [f]
   (global-setup)
   (f))
+
+(def not-nil? (complement nil?))
+
+(defn valid=
+  "Returns true if all of the SPDX exceptions in s2 are valid, and also
+  that s1 equals s2."
+  [s1 s2]
+  (let [metadata?              (not-nil? (meta s2))
+        is-a-set?              (set?     s2)
+        is-equal?              (= s1 s2)
+        all-valid-expressions? (every? true? (map sexp/valid? s2))]
+    (when-not metadata?              (println "☔️ Missing metadata"))
+    (when-not is-a-set?              (println "☔️ Not a set"))
+    (when-not is-equal?              (println "☔️ Not equal to expected value"))
+    (when-not all-valid-expressions? (println "☔️ Not all valid SPDX expressions"))
+    (and metadata?
+         is-a-set?
+         is-equal?
+         all-valid-expressions?)))
+

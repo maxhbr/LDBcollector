@@ -34,6 +34,18 @@
                                                            :redirect-policy :always
                                                            :cookie-policy   :none})))
 
+(def ^:private direct-replacements-map {
+  #{"GPL-2.0-only"     "Classpath-exception-2.0"} #{"GPL-2.0-only WITH Classpath-exception-2.0"}
+  #{"GPL-2.0-or-later" "Classpath-exception-2.0"} #{"GPL-2.0-or-later WITH Classpath-exception-2.0"}
+  #{"GPL-3.0-only"     "Classpath-exception-2.0"} #{"GPL-3.0-only WITH Classpath-exception-2.0"}
+  #{"GPL-3.0-or-later" "Classpath-exception-2.0"} #{"GPL-3.0-or-later WITH Classpath-exception-2.0"}
+  })
+
+(defn- direct-replacements
+  "Self-evident direct replacements."
+  [ids]
+  (get direct-replacements-map ids ids))
+
 (def ^:private gpl-ids-with-only-or-later #{"AGPL-1.0"
                                             "AGPL-3.0"
                                             "GFDL-1.1"
@@ -85,6 +97,7 @@
   [ids]
   (when ids
     (some-> ids
+            direct-replacements
             fix-gpl-only-or-later
             fix-public-domain-cc0
             fix-mpl-2
