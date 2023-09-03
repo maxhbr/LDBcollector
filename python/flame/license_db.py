@@ -84,18 +84,12 @@ class FossLicenses:
                 compats[data['spdxid']] = data[COMPATIBILITY_AS_TAG]
 
         self.license_expression = license_expression.get_spdx_licensing()
-#        self.license_expression = None
         self.license_db[LICENSES_TAG] = licenses
         self.license_db[COMPATS_TAG] = compats
         self.license_db[ALIASES_TAG] = aliases
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[LICENSE_OPERATORS_TAG] = self.__read_json(LICENSE_OPERATORS_FILE)['operators']
-        # regular expression for splitting expression in to parts
-        # re_list = [re.escape(op) for op in self.license_db[LICENSE_OPERATORS_TAG]]
-        # make sure to && and || before & and | by sorting reverse
-        #re_list.sort(reverse=True)
-        #self.license_operators_re = '(' + '|'.join(re_list) + ')'
 
     def __identify_license(self, name):
         if name in self.license_db[LICENSES_TAG]:
@@ -134,9 +128,9 @@ class FossLicenses:
 
         return {
             "license_expression": re.sub(r'\s\s*', ' ', license_expression).strip(),
-            "identifications":  replacements
+            "identifications": replacements
         }
-    
+
     def expression_license(self, license_expression):
         """Returns an object with information about the normalized license for the license given.
 
@@ -158,11 +152,6 @@ class FossLicenses:
                                                       ret['license_expression'])
         replacements += ret['identifications']
 
-        # scancode identifiers -> SPDX
-        #ret = self.__update_license_expression_helper(self.license_db[SCANCODE_KEYS_TAG],
-        #                                              "scancode_key",
-        #                                              ret['license_expression'])
-        #replacements += ret['identifications']
         license_parsed = str(self.license_expression.parse(ret['license_expression']))
 
         return {
@@ -173,7 +162,7 @@ class FossLicenses:
 
     def licenses(self):
         """
-        Returns all licenses 
+        Returns all licenses supported by flame
         """
         return list(self.license_db[LICENSES_TAG].keys())
 
@@ -226,7 +215,7 @@ class FossLicenses:
         licenses = self.license_db[LICENSES_TAG]
         return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]['spdxid']} for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
 
-    def aliases_list(self, alias_license: str = None) -> [str]: 
+    def aliases_list(self, alias_license: str = None) -> [str]:
         """Returns a list of all the aliases. Supplying will alias_license
         will return a list of aliases beginning with alias_license
 
@@ -238,7 +227,7 @@ class FossLicenses:
         return self.license_db[ALIASES_TAG]
 
     def aliases(self, license_name):
-        """Returns a list of all the aliases for a license 
+        """Returns a list of all the aliases for a license
 
         :param str license_name: Exact name (SPDXID) of the license
         """
@@ -289,7 +278,7 @@ class FossLicenses:
             self.__validate_license_spdx(compat_license_expression)
         elif validate_relaxed:
             self.__validate_license_relaxed(compat_license_expression)
-        
+
         return {
             'compatibilities': compats,
             'queried_license': license_expression,
@@ -310,9 +299,9 @@ class FossLicenses:
     def __validate_license_relaxed(self, expr):
         """
         """
-        SPDX_OPERATORS=['AND', 'OR', 'WITH']
+        SPDX_OPERATORS = ['AND', 'OR', 'WITH']
         license_list = re.split(f'{"|".join(SPDX_OPERATORS)}', expr)
         for _lic in license_list:
-            lic=_lic.strip()
+            lic = _lic.strip()
             if " " in lic.strip():
                 raise FlameException(f'Found license with multiple words "{lic}"')

@@ -135,9 +135,6 @@ class TextOutputFormatter(OutputFormatter):
     def format_compatibilities(self, compats, verbose):
         ret = []
         ret.append(f'{compats["compat_license"]}')
-        #import json
-        #print("---- compats: " + json.dumps(compats, indent=4))
-        #print("---- compats: " + str(len(compats)))
         if verbose:
             for compat in compats['compatibilities']:
                 ret.append(f' * "{compat["queried_name"]}" -> "{compat["name"]}" via "{compat["identified_via"]}"')
@@ -161,9 +158,6 @@ class TextOutputFormatter(OutputFormatter):
         ret.append(f'{id_lic}')
         if verbose:
             for identification in expression['identifications']:
-                #print(f' * identifcation: {identification}')
-                #id_elem = identification['identified_element']
-                #print(f'    * id_elem: {id_elem}')
                 ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]} via "{identification["identified_via"]}"')
         return '\n'.join(ret)
 
