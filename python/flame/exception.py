@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-class LicenseDatabaseError(Exception):
+class FlameException(Exception):
     """
     Simple exception for module
     """
