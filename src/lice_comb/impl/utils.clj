@@ -107,7 +107,7 @@
 
 (defn valid-http-uri?
   "Returns true if given string is a valid HTTP or HTTPS URI."
-  [^String s]
+  [s]
   ; Note: no nil check needed since the isValid method handles null sanely
   (.isValid (org.apache.commons.validator.routines.UrlValidator. ^"[Ljava.lang.String;" (into-array String ["http" "https"])) s))
 

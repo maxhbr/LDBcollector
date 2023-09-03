@@ -374,7 +374,7 @@
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "<script lang=\"javascript\">alert('hi');</script>EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "EPL-2.0 OR GPL-2.0-or-later WITH Classpath Exception")))  ; Listed exception missing version - we assume the latest
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")))
-    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "Eclipse Public License 2.0 OR GNU GPL v2+ with Classpath exception")))  ; ####TODO: THINK MORE ABOUT THIS ONE!!!
+    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"} (name->expressions "Eclipse Public License 2.0 OR GNU GPL v2+ with Classpath exception")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later"}        (name->expressions "EPL-2.0 OR GPL-2.0-or-later")))
     (is (valid= #{"EPL-2.0 OR GPL-3.0-or-later WITH Classpath-exception-2.0"} (name->expressions "EPL-2.0 OR GPL-3.0-or-later WITH Classpath-exception-2.0")))
     (is (valid= #{"EPL-2.0 OR GPL-3.0-or-later"}        (name->expressions "EPL-2.0 OR GPL-3.0-or-later")))

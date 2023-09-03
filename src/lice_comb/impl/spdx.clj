@@ -22,6 +22,7 @@
   (:require [clojure.string           :as s]
             [spdx.licenses            :as sl]
             [spdx.exceptions          :as se]
+            [spdx.expressions         :as sexp]
             [lice-comb.impl.utils     :as lcu]))
 
 ; The subset of SPDX license identifiers that we use; specifically excludes the superceded deprecated GPL family identifiers
@@ -125,6 +126,7 @@
         se-init (future (se/init!))]
     @sl-init
     @se-init)
+  (sexp/init!)
 
   ; Serially initialise this namespace's dependent state - they're all pretty fast (< 1s)
   @license-ids-d

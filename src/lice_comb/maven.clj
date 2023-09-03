@@ -19,15 +19,18 @@
 (ns lice-comb.maven
   "Functionality related to finding and determining license information from
   Maven POMs."
-  (:require [clojure.string        :as s]
-            [clojure.set           :as set]
-            [clojure.java.io       :as io]
-            [clojure.data.xml      :as xml]
-            [clojure.java.shell    :as sh]
-            [clojure.tools.logging :as log]
-            [xml-in.core           :as xi]
-            [lice-comb.matching    :as lcmtch]
-            [lice-comb.impl.utils  :as lcu]))
+  (:require [clojure.string          :as s]
+            [clojure.java.io         :as io]
+            [clojure.data.xml        :as xml]
+            [clojure.java.shell      :as sh]
+            [clojure.tools.logging   :as log]
+            [xml-in.core             :as xi]
+            [spdx.expressions        :as sexp]
+            [lice-comb.matching      :as lcmtch]
+            [lice-comb.impl.matching :as lcim]
+            [lice-comb.impl.metadata :as lcimd]
+            [lice-comb.impl.http     :as lcihttp]
+            [lice-comb.impl.utils    :as lcu]))
 
 (def ^:private local-maven-repo-d
   (delay
@@ -45,15 +48,6 @@
 ; TODO: make this configurable
 (def ^:private remote-maven-repos #{"https://repo.maven.apache.org/maven2" "https://repo.clojars.org"})
 
-;####TODO: MOVE THIS TO UTILS AND REIMPLEMENT ON HATO??
-(defn- uri-resolves?
-  "Does the given URI resolve (i.e. does the resource it points to exist)?"
-  [^java.net.URI uri]
-  (and uri
-       (let [http (doto ^java.net.HttpURLConnection (.openConnection (.toURL uri))
-                        (.setRequestMethod "HEAD"))]
-         (= 200 (.getResponseCode http)))))
-
 ;####TODO: MOVE THIS TO AN IMPL NS??
 (defn pom-uri-for-gav
   "Attempts to locate the POM for the given GAV, which is a URI that may point
@@ -69,7 +63,7 @@
        (if (and (.exists local-pom)
                 (.isFile local-pom))
          (.toURI local-pom)
-         (first (filter uri-resolves? (map #(java.net.URI. (str % "/" gav-path)) remote-maven-repos))))))))
+         (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) remote-maven-repos))))))))
 
 (defn- licenses-from-pair
   "Attempts to determine the license(s) (a set) from a POM license name/URL pair.
@@ -77,16 +71,10 @@
   The result has metadata attached that describes how the identifiers in the
   expression(s) were determined."
   [{:keys [name url]}]
-  ; Attempt to find a match from the name first
-  (let [name-expressions (lcmtch/name->expressions name)]
-    (if (every? lcmtch/unlisted? name-expressions)
-      ; If all we got were unlisted expressions from the name, try the URI
-      (let [uri-expressions (lcmtch/uri->ids url)]
-        (if (every? lcmtch/unlisted? uri-expressions)
-          ; Neither worked, so just return all of the unlisted placeholders
-          (set/union name-expressions uri-expressions)  ;####TODO: MERGE METADATA!!!!
-          uri-expressions))
-      name-expressions)))
+  (let [name-expressions (when-not (s/blank? name) (lcmtch/name->expressions name))
+        name-ids         (some-> (seq (mapcat #(sexp/extract-ids (sexp/parse %)) name-expressions)) set)
+        uri-ids          (when-not (s/blank? url)  (apply disj (lcmtch/uri->ids url) name-ids))]  ; Only include ids detected from the URL that weren't already detected in the name
+    (lcimd/union name-expressions uri-ids)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
@@ -95,26 +83,27 @@
   file. pom may be a java.io.InputStream, or anything that can be opened by
   clojure.java.io/input-stream.
 
-  Note: if an InputStream is provided, it's the caller's responsibility to open
-  and close it.
+  Note that if an InputStream is provided:
+  1. it's the caller's responsibility to open and close it
+  2. a filename *must* be provided along with the stream (2nd arg)
 
   The result has metadata attached that describes how the identifiers in the
   expression(s) were determined."
-  {:arglists '([pom])}
-  type)
+  {:arglists '([pom] [pom file-name])}
+  (fn [& args] (type (first args))))
 
 ; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - so we look for both namespaced and non-namespaced versions of all tags here
 (defmethod pom->expressions java.io.InputStream
-  [pom-is]
+  [pom-is fname]
   (let [pom-xml        (xml/parse pom-is)
         licenses       (seq (xi/find-all pom-xml [::pom/project ::pom/licenses ::pom/license]))
         licenses-no-ns (seq (xi/find-all pom-xml [:project      :licenses      :license]))]
     (if (or licenses licenses-no-ns)
-      ; Licenses block exists - process it
+      ; <licenses> block exists - process it
       (let [name-uri-pairs (lcu/nset (concat (lcu/map-pad #(hash-map :name (lcu/strim %1) :url (lcu/strim %2)) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))
-                                             (lcu/map-pad #(hash-map :name (lcu/strim %1) :url (lcu/strim %2)) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url]))))]
-;####TODO: MERGE METADATA MAPS AND EMBELLISH :source!!!!
-        (lcu/nset (mapcat licenses-from-pair name-uri-pairs)))
+                                             (lcu/map-pad #(hash-map :name (lcu/strim %1) :url (lcu/strim %2)) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url]))))
+            licenses       (map #(lcimd/prepend-source (licenses-from-pair %) fname) name-uri-pairs)]
+        (lcim/manual-fixes (apply lcimd/union licenses)))
       ; License block doesn't exist, so attempt to lookup the parent pom and get it from there
       (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
             parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
@@ -129,12 +118,13 @@
           (pom->expressions (pom-uri-for-gav parent-gav)))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
 
 (defmethod pom->expressions :default
-  [pom]
-  (when pom
-    (with-open [pom-is (io/input-stream pom)]
-      (if-let [expressions (pom->expressions pom-is)]
-        expressions
-        (log/info (str "'" pom "'") "contains no license information")))))
+  ([pom] (pom->expressions pom (lcu/filename pom)))
+  ([pom fname]
+   (when pom
+     (with-open [pom-is (io/input-stream pom)]
+       (if-let [expressions (pom->expressions pom-is fname)]
+         expressions
+         (log/info (str "'" pom "'") "contains no license information"))))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
@@ -142,5 +132,6 @@
   this fn, as initialisation will occur implicitly anyway; it is provided to
   allow explicit control of the cost of initialisation to callers who need it."
   []
+  (lcmtch/init!)
   @local-maven-repo-d
   nil)

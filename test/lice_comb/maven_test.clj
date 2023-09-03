@@ -20,11 +20,15 @@
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [lice-comb.test-boilerplate :refer [fixture valid=]]
             [lice-comb.impl.spdx        :as lcis]
-            [lice-comb.maven            :refer [pom->expressions]]))
+            [lice-comb.maven            :refer [init! pom->expressions]]))
 
 (use-fixtures :once fixture)
 
 (def test-data-path "./test/lice_comb/data")
+
+(deftest init!-tests
+  (testing "Nil response"
+    (is (nil? (init!)))))
 
 (deftest pom->expressions-tests
   (testing "Nil pom"
@@ -38,7 +42,8 @@
     (is (thrown? java.io.FileNotFoundException (pom->expressions "./this/path/and/file/doesnt/exist.pom"))))
   (testing "Synthetic pom files"
     (is (valid= #{"Apache-2.0"}                (pom->expressions (str test-data-path "/simple.pom"))))
-    (is (valid= #{"BSD-3-Clause"}              (pom->expressions (str test-data-path "/no-xml-ns.pom")))))
+    (is (valid= #{"BSD-3-Clause"}              (pom->expressions (str test-data-path "/no-xml-ns.pom"))))
+    (is (valid= #{"Apache-2.0" "MIT" "GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Unlicense AND CC0-1.0"} (pom->expressions (str test-data-path "/complex.pom")))))
   (testing "Real pom files - local"
     (is (valid= #{"Apache-2.0"}                (pom->expressions (str test-data-path "/asf-cat-1.0.12.pom")))))
   (testing "Real pom files - remote"

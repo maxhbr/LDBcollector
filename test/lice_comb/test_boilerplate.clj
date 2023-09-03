@@ -21,23 +21,40 @@
             [spdx.expressions   :as sexp]))
 
 ; Here we hack up a "global once" function
-(def ^:private global-setup (memoize (fn []
-                                       ; Because java.util.logging is a hot mess
-                                       (org.slf4j.bridge.SLF4JBridgeHandler/removeHandlersForRootLogger)
-                                       (org.slf4j.bridge.SLF4JBridgeHandler/install)
+(def ^:private global-setup (delay
+                              ; Because java.util.logging is a hot mess
+                              (org.slf4j.bridge.SLF4JBridgeHandler/removeHandlersForRootLogger)
+                              (org.slf4j.bridge.SLF4JBridgeHandler/install)
 
-                                       ; Enable spec validation
-                                       (spec/check-asserts true)
+                              ; Enable spec validation
+                              (spec/check-asserts true)
 
-                                       (println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version") (str "(" (System/getProperty "java.vm.name") " v" (System/getProperty "java.vm.version") ")\n"))
-                                       )))
+                              (println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version") (str "(" (System/getProperty "java.vm.name") " v" (System/getProperty "java.vm.version") ")\n"))
+                              nil))
 
 (defn fixture
   [f]
-  (global-setup)
+  @global-setup
   (f))
 
 (def not-nil? (complement nil?))
+
+(defn when-pred
+  [val pred then]
+  (if (pred val)
+    (then val)
+    val))
+
+(defmacro testing-with-data
+  "A form of `clojure.test/testing` that generates multiple `clojure.test/is`
+  clauses, based on applying f to the keys in m, and comparing to the associated
+  value in m."
+  [name f m]
+  `(clojure.test/testing ~name
+     ~@(map #(list `clojure.test/is `(= (~f ~(key %)) ~(when-pred (val %) list? (partial list 'quote))))
+            (if (isa? (type m) clojure.lang.Symbol)
+              @(resolve m)
+              m))))
 
 (defn valid=
   "Returns true if all of the following are true:
@@ -52,7 +69,7 @@
   (let [metadata?              (or (nil? s2) (not-nil? (meta s2)))
         is-a-set?              (or (nil? s2) (set? s2))
         is-equal?              (= s1 s2)
-        all-valid-expressions? (every? true? (map sexp/valid? s2))
+        all-valid-expressions? (and (set? s2) (every? true? (map sexp/valid? s2)))
         result                 (and metadata?
                                     is-a-set?
                                     is-equal?

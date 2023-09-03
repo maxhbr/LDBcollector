@@ -58,14 +58,22 @@
   "A generic SPDX id constructor which works for many simple regexes."
   [m]
   (when m
-    (let [id (str (:id m)
-               (when-let [ver (get-rencgs m ["version"] (:latest-ver m))]
-                 (str "-"
-                      ver
-                      (when (and (:pad-ver? m)
-                                 (not (s/includes? ver ".")))
-                        ".0"))))]
-      (assert-listed-id id))))
+    (let [version    (get-rencgs m ["version"])
+          confidence (if (or (and (s/blank? version)
+                                  (not (s/blank? (:latest-ver m))))
+                             (and (:pad-ver? m)
+                                  (not (s/includes? version "."))))
+                       :low       ; We required a version but either didn't get one or it was incomplete
+                       :medium)   ; We didn't require a version, or it was complete
+          version    (if (s/blank? version)
+                       (:latest-ver m)
+                       version)
+          version    (if (and (:pad-ver? m)
+                              (not (s/includes? version ".")))
+                        (str version ".0")
+                        version)
+          id         (str (:id m) (when-not (s/blank? version) (str "-" version)))]
+      [(assert-listed-id id) confidence])))
 
 (defn- number-name-to-number
   "Converts the name of a number to that number (as a string). e.g.
@@ -81,93 +89,111 @@
 (defn- bsd-id-constructor
   "An SPDX id constructor specific to the BSD family of licenses."
   [m]
-  (let [clause-count1          (number-name-to-number (get-rencgs m ["clausecount1"]))
-        clause-count2          (number-name-to-number (get-rencgs m ["clausecount2"]))
-        preferred-clause-count (case [(lcu/is-digits? clause-count1) (lcu/is-digits? clause-count2)]
-                                 [true true]   clause-count1
-                                 [true false]  clause-count1
-                                 [false true]  clause-count2
-                                 (if (contains? #{"simplified" "new" "revised" "modified" "aduna"} clause-count1)
-                                   clause-count1
-                                   clause-count2))
-        clause-count           (case preferred-clause-count
-                                 ("2" "simplified")                       "2"
-                                 ("3" "new" "revised" "modified" "aduna") "3"
-                                 "4")  ; Note: we default to 4 clause, since it was the original form of the BSD license
-        suffix                 (case (get-rencgs m ["suffix"])
-                                 "patent"                                              "Patent"
-                                 "views"                                               "Views"
-                                 "attribution"                                         "Attribution"
-                                 "clear"                                               "Clear"
-                                 "lbnl"                                                "LBNL"
-                                 "modification"                                        "Modification"
-                                 ("no military license" "no military licence")         "No-Military-License"
-                                 ("no nuclear license" "no nuclear licence")           "No-Nuclear-License"
-                                 ("no nuclear license 2014" "no nuclear licence 2014") "No-Nuclear-License-2014"
-                                 "no nuclear warranty"                                 "No-Nuclear-Warranty"
-                                 "open mpi"                                            "Open-MPI"
-                                 "shortened"                                           "Shortened"
-                                 "uc"                                                  "UC"
-                                 nil)
-        base-id                (str (:id m) "-" clause-count "-Clause")
-        id-with-suffix         (str base-id "-" suffix)]
+  (let [clause-count1             (number-name-to-number (get-rencgs m ["clausecount1"]))
+        clause-count2             (number-name-to-number (get-rencgs m ["clausecount2"]))
+        preferred-clause-count    (case [(lcu/is-digits? clause-count1) (lcu/is-digits? clause-count2)]
+                                    [true true]   clause-count1
+                                    [true false]  clause-count1
+                                    [false true]  clause-count2
+                                    (if (contains? #{"simplified" "new" "revised" "modified" "aduna"} clause-count1)
+                                      clause-count1
+                                      clause-count2))
+        [clause-count confidence] (case preferred-clause-count
+                                    ("2" "simplified")                       ["2" :medium]
+                                    ("3" "new" "revised" "modified" "aduna") ["3" :medium]
+                                    ("4" "original")                         ["4" :medium]
+                                    ["4" :low])  ; Note: we default to 4 clause, since it was the original form of the BSD license
+        suffix                    (case (get-rencgs m ["suffix"])
+                                    "patent"                                              "Patent"
+                                    "views"                                               "Views"
+                                    "attribution"                                         "Attribution"
+                                    "clear"                                               "Clear"
+                                    "lbnl"                                                "LBNL"
+                                    "modification"                                        "Modification"
+                                    ("no military license" "no military licence")         "No-Military-License"
+                                    ("no nuclear license" "no nuclear licence")           "No-Nuclear-License"
+                                    ("no nuclear license 2014" "no nuclear licence 2014") "No-Nuclear-License-2014"
+                                    "no nuclear warranty"                                 "No-Nuclear-Warranty"
+                                    "open mpi"                                            "Open-MPI"
+                                    "shortened"                                           "Shortened"
+                                    "uc"                                                  "UC"
+                                    nil)
+        base-id                   (str (:id m) "-" clause-count "-Clause")
+        id-with-suffix            (str base-id "-" suffix)]
     (if (contains? @lcis/license-ids-d id-with-suffix)  ; Not all suffixes are valid with all BSD clause counts, so check that it's valid before returning it
-      id-with-suffix
-      (assert-listed-id base-id))))
+      [id-with-suffix confidence]
+      [(assert-listed-id base-id) confidence])))
 
 (defn- cc-id-constructor
   "An SPDX id constructor specific to the Creative Commons family of licenses."
   [m]
-  (let [nc?     (not (s/blank? (get-rencgs m ["noncommercial"])))
-        nd?     (not (s/blank? (get-rencgs m ["noderivatives"])))
-        sa?     (not (s/blank? (get-rencgs m ["sharealike"])))
-        version (let [ver (s/replace (get-rencgs m ["version"] (:latest-ver m)) #"\p{Punct}+" ".")]
-                  (if (s/includes? ver ".")
-                    ver
-                    (str ver ".0")))
-        base-id (str "CC-BY-"
-                  (when nc?                 "NC-")
-                  (when nd?                 "ND-")
-                  (when (and (not nd?) sa?) "SA-")   ; SA and ND are incompatible (and have no SPDX id as a result), and if both are (erroneously) specified we conservatively choose ND
-                  version)
-        region  (case (get-rencgs m ["region"])
-                  "australia"                                            "AU"
-                  "austria"                                              "AT"
-                  ("england" "england and wales" "england & wales" "uk") "UK"
-                  "france"                                               "FR"
-                  "germany"                                              "DE"
-                  "igo"                                                  "IGO"
-                  "japan"                                                "JP"
-                  "netherlands"                                          "NL"
-                  ("united states" "usa" "us")                           "US"
-                  nil)
+  (let [nc?            (not (s/blank? (get-rencgs m ["noncommercial"])))
+        nd?            (not (s/blank? (get-rencgs m ["noderivatives"])))
+        sa?            (not (s/blank? (get-rencgs m ["sharealike"])))
+        version        (get-rencgs m ["version"] "")
+        version        (s/replace version #"\p{Punct}+" ".")
+        confidence     (if (or (s/blank? version)
+                               (not (s/includes? version ".")))
+                         :low
+                         :medium)
+        version        (if (s/blank? version)
+                         (:latest-ver m)
+                         version)
+        version        (if (s/includes? version ".")
+                         version
+                         (str version ".0"))
+        base-id        (str "CC-BY-"
+                            (when nc?                 "NC-")
+                            (when nd?                 "ND-")
+                            (when (and (not nd?) sa?) "SA-")   ; SA and ND are incompatible (and have no SPDX id as a result), and if both are (erroneously) specified we conservatively choose ND
+                            version)
+        region         (case (get-rencgs m ["region"])
+                         "australia"                                            "AU"
+                         "austria"                                              "AT"
+                         ("england" "england and wales" "england & wales" "uk") "UK"
+                         "france"                                               "FR"
+                         "germany"                                              "DE"
+                         "igo"                                                  "IGO"
+                         "japan"                                                "JP"
+                         "netherlands"                                          "NL"
+                         ("united states" "usa" "us")                           "US"
+                         nil)
         id-with-region (str base-id (when-not (s/blank? region) (str "-" region)))]
     (if (contains? @lcis/license-ids-d id-with-region)  ; Not all license variants and versions have a region specific identifier, so check that it's valid before returning it
-      id-with-region
-      (assert-listed-id base-id))))
+      [id-with-region confidence]
+      [(assert-listed-id base-id) confidence])))
 
 (defn- gpl-id-constructor
   "An SPDX id constructor specific to the GNU family of licenses."
   [m]
-  (let [variant (cond (contains? m "agpl") "AGPL"
-                      (contains? m "lgpl") "LGPL"
-                      (contains? m "gpl")  "GPL")
-        version (let [ver (s/replace (get-rencgs m ["version"] (:latest-ver m)) #"\p{Punct}+" ".")]
-                  (if (s/includes? ver ".")
-                    ver
-                    (str ver ".0")))
-        suffix  (if (contains? m "orLater")
-                  "or-later"
-                  "only")  ; Note: we (conservatively) default to "only" when we don't have an explicit suffix
-        id      (str variant "-" version  "-" suffix)]
-    (assert-listed-id id)))
+  (let [variant    (cond (contains? m "agpl") "AGPL"
+                         (contains? m "lgpl") "LGPL"
+                         (contains? m "gpl")  "GPL")
+        version    (get-rencgs m ["version"] "")
+        version    (s/replace version #"\p{Punct}+" ".")
+        confidence (if (or (s/blank? version)
+                           (not (s/includes? version ".")))
+                     :low
+                     :medium)
+        version    (if (s/blank? version)
+                     (:latest-ver m)
+                     version)
+        version    (if (s/includes? version ".")
+                     version
+                     (str version ".0"))
+        suffix     (if (contains? m "orLater")
+                     "or-later"
+                     "only")  ; Note: we (conservatively) default to "only" when we don't have an explicit suffix
+        id         (str variant "-" version  "-" suffix)]
+    [(assert-listed-id id) confidence]))
 
 (defn- simple-regex-match
-  "Constructs a 'simple' name match structure"
+  "Constructs a 'simple' name match structure that's a case-insensitive match
+  for s."
   [s]
   {:id    s
-   :regex (re-pattern (str "(?i)\\b" s "\\b"))
-   :fn    (constantly s)})
+   :regex (re-pattern (str "(?i)\\b" (lcu/escape-re s) "\\b"))
+   :fn    (constantly [s :medium])})
 
 ; The regex for the GNU family is a nightmare, so we build it up (and test it) in pieces
 (def agpl-re          #"(?<agpl>AGPL|Affero)(\s+GNU)?(\s+General)?(\s+Public)?(\s+Licen[cs]e)?(\s+\(?AGPL\)?)?")
@@ -186,7 +212,7 @@
                                      "\n# Only/or-Later suffix\n"
                                      only-or-later-re))
 
-; Regexes used for license name matching, along with functions for constructing an SPDX id from them
+; Regexes used for license name matching, along with functions for constructing an SPDX id and confidence metric from them
 (def ^:private license-name-matching-d (delay
   (concat
     ; By default we add most SPDX ids as "simple" regex matches
@@ -210,7 +236,7 @@
        :latest-ver "2.0"}
       {:id         "Beerware"
        :regex      #"(?i)\bBeer-?ware\b"
-       :fn         (constantly "Beerware")}
+       :fn         (constantly ["Beerware" :medium])}
       {:id         "BSL"
        :regex      #"(?i)\bBoost(\s+Software)?(\s+Licen[cs]e)?[\s,-]*(?<version>\d+(\.\d+)?)?\b"
        :fn         generic-id-constructor
@@ -221,7 +247,7 @@
        :fn         bsd-id-constructor}
       {:id         "CC0"
        :regex      #"(?i)\bCC\s*0"
-       :fn         (constantly "CC0-1.0")}
+       :fn         (constantly ["CC0-1.0" :medium])}
       {:id         "CECILL"
        :regex      #"(?i)\bCeCILL(\s+Free)?(\s+Software)?(\s+Licen[cs]e)?(\s+Agreement)?[\s,-]*(\s*V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\b"
        :fn         generic-id-constructor
@@ -259,7 +285,7 @@
        :latest-ver "1.2"}
       {:id         "FreeBSD"
        :regex      #"(?i)\bFreeBSD\b"
-       :fn         (constantly "BSD-2-Clause-FreeBSD")}
+       :fn         (constantly ["BSD-2-Clause-FreeBSD" :medium])}
       {:id         "GNU license family"
        :regex      gnu-re
        :fn         gpl-id-constructor
@@ -267,13 +293,13 @@
        :latest-ver 3.0}
       {:id         "Hippocratic"
        :regex      #"(?i)\bHippocratic\b"
-       :fn         (constantly "Hippocratic-2.1")}  ; There are no other listed versions of this license
+       :fn         (constantly ["Hippocratic-2.1" :medium])}  ; There are no other listed versions of this license
       {:id         "LLVM-exception"
        :regex      #"(?i)\bLLVM[\s-]+Exception\b"
-       :fn         (constantly "LLVM-exception")}
+       :fn         (constantly ["LLVM-exception" :medium])}
       {:id         "MIT"
        :regex      #"(?i)\b(MIT|Bouncy\s+Castle)(?![\s/]*(X11|ISC))(\s+Public)?(\s+Licen[cs]e)?\b"
-       :fn         (constantly "MIT")}
+       :fn         (constantly ["MIT" :medium])}
       {:id         "MPL"
        :regex      #"(?i)\b(MPL|Mozilla)(\s+Public)?(\s+Licen[cs]e)?[\s,-]*(V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\b"
        :fn         generic-id-constructor
@@ -281,7 +307,7 @@
        :latest-ver "2.0"}
       {:id         "MX4J"
        :regex      #"(?i)\bMX4J\s+Licen[cs]e(,?\s+v(ersion)?\s*1\.0)?\b"
-       :fn         (constantly "Apache-1.1")}  ; See https://github.com/spdx/license-list-XML/pull/594 - the MX4J license *is* the Apache-1.1 license, according to SPDX
+       :fn         (constantly ["Apache-1.1" :medium])}  ; See https://github.com/spdx/license-list-XML/pull/594 - the MX4J license *is* the Apache-1.1 license, according to SPDX
       {:id         "NASA"
        :regex      #"(?i)\bNASA(\s+Open)?(\s+Source)?(\s+Agreement)?[\s,-]+(V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\b"
        :fn         generic-id-constructor
@@ -289,16 +315,16 @@
        :latest-ver "1.3"}
       {:id         "Plexus"
        :regex      #"(?i)\bApache\s+Licen[cs]e(\s+but)?(\s+with)?(\s+the)?\s+acknowledgment\s+clause\s+removed\b"
-       :fn         (constantly "Plexus")}
+       :fn         (constantly ["Plexus" :medium])}
       {:id         "Proprietary or commercial"
-       :regex      #"(?i)\b(Propriet[ao]ry|Commercial|All\s+Rights\s+Reserved|Private)\b"
-       :fn         lcis/proprietary-commercial}
+       :regex      #"(?i)\b(Propriet[aoe]ry|Commercial|All\s+Rights\s+Reserved|Private)\b"
+       :fn         (constantly [(lcis/proprietary-commercial) :medium])}
       {:id         "Public Domain"
        :regex      #"(?i)\bPublic\s+Domain(?![\s\(]*CC\s*0)"
-       :fn         lcis/public-domain}
+       :fn         (constantly [(lcis/public-domain) :medium])}
       {:id         "Ruby"
        :regex      #"(?i)\bRuby(\s+Licen[cs]e)?\b"
-       :fn         (constantly "Ruby")}
+       :fn         (constantly ["Ruby" :medium])}
       {:id         "SGI-B"
        :regex      #"(?i)\bSGI(\s+Free)?(\s+Software)?(\s+Licen[cs]e)?([\s,-]+(V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?)?\b"
        :fn         generic-id-constructor
@@ -306,32 +332,55 @@
        :latest-ver "2.0"}
       {:id         "Unlicense"
        :regex      #"(?i)\bUnlicen[cs]e\b"
-       :fn         (constantly "Unlicense")}
+       :fn         (constantly ["Unlicense" :medium])}
       {:id         "WTFPL"
        :regex      #"(?i)\b(WTFPL|DO-WTF-U-WANT-2|Do\s+What\s+The\s+Fuck\s+You\s+Want\s+To(\s+Public)?(\s+Licen[cs]e)?)\b"
-       :fn         (constantly "WTFPL")}
+       :fn         (constantly ["WTFPL" :medium])}
       {:id         "Zlib"
        :regex      #"\b(?i)zlib(?![\s/]+libpng)\b"
-       :fn         (constantly "Zlib")}
+       :fn         (constantly ["Zlib" :medium])}
       ])))
 
 (defn- match-regex
-  "Returns a map containing the SPDX :id and :start index of the given
-   regex in the string if a match occurred, or nil if there was no match."
+  "If a match occured for the given regex element when tested against string s,
+  returns a map containing the following keys, or nil if there was no match:
+  * :id         The SPDX identifier of the found license or exception
+  * :type       The 'type' of match - will always have the value :concluded
+  * :confidence The confidence of the match: either :high, :medium, or :low
+  * :strategy   The matching strategy - will always have the value :regex-name-matching
+  * :source     A list of strings containing source information (specifically
+                the portion of the string s that matched this regex element)
+  *: start      The start index of the given match within s"
   [s elem]
   (when-let [match (rencg/re-find-ncg (:regex elem) s)]
-    {:id    ((:fn elem) (merge {:name s} elem match))
-     :start (:start match)}))
+    (let [[id confidence] ((:fn elem) (merge {:name s} elem match))
+          source          (s/trim (subs s (:start match) (:end match)))]
+      {:id         id
+       :type       :concluded
+       :confidence (if (= source id) :high confidence)
+       :strategy   :regex-name-matching
+       :source     (list source)
+       :start      (:start match)})))
 
 (defn match-regexes
-  "Returns a sequence (NOT A SET!) of the matched SPDX license or
-  exception ids for the given string, or nil if there were no matches.
-  Results are in the order in which they appear in the string."
+  "Returns a sequence (NOT A SET!) of the SPDX license or exception ids that
+  were found in the string s, or nil if there were no matches.  Results are in
+  the order in which they appear in the string.  The result also has metadata
+  attached, which is a map whose keys are each of the SPDX license or exception
+  ids, and whose values are a map containing these keys:
+  * :type       The 'type' of match - will always have the value :concluded
+  * :confidence The confidence of the match: either :high, :medium, or :low
+  * :strategy   The matching strategy - will always have the value :regex-name-matching
+  * :source     A list of strings containing source information (specifically
+                the portion of the string s that matched this identifier"
   [s]
-  (some->> (seq (filter identity (pmap (partial match-regex s) @license-name-matching-d)))
-           (sort-by :start)
-           (map :id)
-           distinct))
+  (when-let [matches (seq (distinct (filter identity (pmap (partial match-regex s) @license-name-matching-d))))]
+    (let [ids     (some->> matches
+                           (sort-by :start)
+                           (map :id)
+                           (distinct))
+          metadata (into {} (map #(vec [% (dissoc (first (filter (fn [x] (= % (:id x))) matches)) :start :id)]) ids))]
+      (with-meta ids metadata))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

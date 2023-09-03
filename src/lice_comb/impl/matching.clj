@@ -22,17 +22,14 @@
   (:require [clojure.string                :as s]
             [clojure.set                   :as set]
             [clojure.java.io               :as io]
-            [hato.client                   :as hc]
             [spdx.exceptions               :as se]
             [spdx.matching                 :as sm]
             [lice-comb.impl.spdx           :as lcis]
             [lice-comb.impl.regex-matching :as lcirm]
+            [lice-comb.impl.metadata       :as lcimd]
             [lice-comb.impl.3rd-party      :as lc3]
+            [lice-comb.impl.http           :as lcihttp]
             [lice-comb.impl.utils          :as lcu]))
-
-(def ^:private http-client-d (delay (hc/build-http-client {:connect-timeout 1000
-                                                           :redirect-policy :always
-                                                           :cookie-policy   :none})))
 
 (def ^:private direct-replacements-map {
   #{"GPL-2.0-only"     "Classpath-exception-2.0"} #{"GPL-2.0-only WITH Classpath-exception-2.0"}
@@ -96,12 +93,16 @@
   "Manually fix certain invalid combinations of license identifiers in a set."
   [ids]
   (when ids
-    (some-> ids
-            direct-replacements
-            fix-gpl-only-or-later
-            fix-public-domain-cc0
-            fix-mpl-2
-            set)))
+    (let [m           (meta ids)
+          result      (some-> ids
+                              direct-replacements
+                              fix-gpl-only-or-later
+                              fix-public-domain-cc0
+                              fix-mpl-2
+                              set)
+          removed-ids (apply disj (set (keys m)) result)
+          m           (apply dissoc m removed-ids)]
+      (with-meta result m))))
 
 (defmulti text->ids
   "Attempts to determine the SPDX license and/or exception identifier(s) (a set)
@@ -127,7 +128,7 @@
         f-exc    (future (sm/exceptions-within-text s @lcis/exception-ids-d))
         ids      (manual-fixes (set/union @f-lic @f-exc))]
     (when ids
-      (with-meta ids (into {} (map #(vec [% {:type :concluded :confidence :high :strategy :spdx-matching}]) ids))))))
+      (with-meta ids (into {} (map #(vec [% {:type :concluded :confidence :high :strategy :spdx-text-matching}]) ids))))))
 
 (defmethod text->ids java.io.Reader
   [r]
@@ -144,37 +145,6 @@
   (when src
     (with-open [r (io/reader src)]
       (text->ids r))))
-
-(defn- cdn-uri
-  "Converts raw URIs into CDN URIs, for these 'known' hosts:
-
-  * github.com e.g. https://github.com/pmonks/lice-comb/blob/main/LICENSE -> https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE
-
-  If the given URI is not known, returns the input unchanged."
-  [uri]
-  (if-let [^java.net.URL uri-obj (try (io/as-url uri) (catch Exception _ nil))]
-    (case (s/lower-case (.getHost uri-obj))
-      "github.com" (-> uri
-                       (s/replace #"(?i)github\.com" "raw.githubusercontent.com")
-                       (s/replace "/blob/"          "/"))
-      uri)  ; Default case
-    uri))
-
-(defn- attempt-text-http-get
-  "Attempts to get plain text as a String from the given URI, returning nil if
-  unable to do so (including for error conditions - there is no way to
-  disambiguate errors from non-text content, for example)."
-  [uri]
-  (when (lcu/valid-http-uri? uri)
-    (try
-      (when-let [response (hc/get (cdn-uri uri)
-                                  {:http-client @http-client-d
-                                   :accept      "text/plain;q=1,*/*;q=0"  ; Kindly request that the server only return text/plain... ...even though this gets ignored a lot of the time 🙄
-                                   :header      {"user agent" "com.github.pmonks/lice-comb"}})]
-        (when (= :text/plain (:content-type response))
-          (:body response)))
-      (catch Exception _
-        nil))))
 
 (defn uri->ids
   "Returns the SPDX license and/or exception identifiers (a set) for the given
@@ -199,22 +169,25 @@
   (when-not (s/blank? uri)
     (manual-fixes
       (let [suri (lcu/simplify-uri uri)]
-        ; First, see if the URI string matches any of the URIs in the SPDX license list (using "simplified" URIs)
+        ; 1. see if the URI string matches any of the URIs in the SPDX license list (using "simplified" URIs)
         (if-let [ids (get @lcis/index-uri-to-id-d suri)]
-          (with-meta ids (into {} (map #(vec [% {:type :concluded :confidence :high :strategy :spdx-listed-uri :source (list uri)}]) ids)))
-          ; Second, attempt to retrieve the text/plain contents of the uri and perform full license matching on it
-          (when-let [license-text (attempt-text-http-get uri)]
+          (let [metadata (into {} (map #(vec [% {:type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)}]) ids))]
+            (with-meta ids metadata))
+          ; 2. attempt to retrieve the text/plain contents of the uri and perform full license matching on it
+          (when-let [license-text (lcihttp/get-text uri)]
             (when-let [ids (text->ids license-text)]
-              (let [metadata (lcu/mapfonv #(assoc % :source (conj (:source %) (str uri "<retrieved text>"))) (meta ids))]  ; Append to existing metadata returned from text->ids
-                (with-meta ids metadata)))))))))
+              (lcimd/prepend-source ids (str uri " (retrieved text)")))))))))
 
 (defn- string->ids-info
   "Converts the given String into a sequence of singleton maps, each of which
   has a key is that is an SPDX identifier (either a listed SPDX license or
-  exception id if the value is recognised, or a lice-comb specific 'unlisted'
-  LicenseRef if not), and whose value is meta-information about how that
-  identifier was found. The result sequence is ordered in the same order of
-  appearance as the source values in s.
+  exception id), and whose value is meta-information about how that identifier
+  was found. The result sequence is ordered in the same order of appearance as
+  the source values in s.
+
+  If no listed SPDX license or exception identifiers are found, returns a
+  singleton sequence containing a map with a lice-comb specific 'unlisted'
+  LicenseRef.
 
   This involves:
   1. Seeing if it's a listed license or exception id
@@ -233,14 +206,14 @@
           (list {id {:type :concluded :confidence :high :strategy :spdx-listed-identifier-case-insensitive-match :source (list s)}}))
         ; 2. Is it an SPDX license or exception name?
         (if-let [ids (get @lcis/index-name-to-id-d (s/trim (s/lower-case s)))]
-          (map #(hash-map % {:type :concluded :confidence :low :strategy :spdx-listed-name :source (list s)}) ids)
+          (map #(hash-map % {:type :concluded :confidence :medium :strategy :spdx-listed-name :source (list s)}) ids)
           ; 3. Is it a URI?  If so, perform URI matching on it (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
           (if-let [ids (uri->ids s)]
-            (mapcat #(list {(key %) (val %)}) (meta ids))
+            (let [metadata (meta ids)]
+              (map #(hash-map % (get metadata %)) ids))  ; Convert metadata from uri->ids back into a regular map (so that it survives expression building)
             ; 4. Attempt regex name matching
             (if-let [ids (lcirm/match-regexes s)]
-              (map #(hash-map % {:type :concluded :confidence :low :strategy :regex-matching :source (list s)}) ids)
-              ; 5. Give up and return a lice-comb "unlisted" LicenseRef
+              (map #(hash-map % (get (meta ids) %)) ids)  ; Convert metadata from match-regexes back into a regular map (so that it survives expression building)
               (list {(lcis/name->unlisted s) {:type :concluded :confidence :low :strategy :unlisted :source (list s)}}))))))))
 
 (defn- filter-blanks
@@ -269,9 +242,9 @@
   [s]
   (when-not (s/blank? s)
     (->> (s/split (s/trim s) #"(?i)\band[/-\\]+or\b")
-         (map-split-and-interpose #"(?i)(\band|\&)(?!\s+(distribution|all\s+rights\s+reserved))"                                                                :and)
-         (map-split-and-interpose #"(?i)\bor(?!\s*(-?later|lator|newer|lesser|library|\(?at\s+your\s+(option|discretion)\)?|([\"']?(Revised|Modified)[\"']?)))" :or)
-         (map-split-and-interpose #"(?i)\b(with|w/)(?!\s+the\s+acknowledgment\s+clause\s+removed)"                                                              :with)
+         (map-split-and-interpose #"(?i)(\band\b|\&)(?!\s+(distribution|all\s+rights\s+reserved))"                                                                :and)
+         (map-split-and-interpose #"(?i)\bor\b(?!\s*(-?later|lator|newer|lesser|library|\(?at\s+your\s+(option|discretion)\)?|([\"']?(Revised|Modified)[\"']?)))" :or)
+         (map-split-and-interpose #"(?i)\b(with\b|w/)(?!\s+the\s+acknowledgment\s+clause\s+removed)"                                                              :with)
          filter-blanks
          (map #(if (string? %) (s/trim %) %)))))
 
@@ -327,6 +300,9 @@
                                           (lc3/rdrop-while keyword?)
                                           (map #(if (keyword? %) % (string->ids-info %)))
                                           flatten
+                                          (filter identity)
+                                          (drop-while keyword?)
+                                          (lc3/rdrop-while keyword?)
                                           seq)]
     (let [spdx-expressions (build-spdx-expressions (map #(if (keyword? %) % (first (keys %))) partial-expressions))
           metadata         (into {} (filter (complement keyword?) partial-expressions))]
@@ -342,5 +318,5 @@
   []
   (lcis/init!)
   (lcirm/init!)
-  @http-client-d
+  (lcihttp/init!)
   nil)

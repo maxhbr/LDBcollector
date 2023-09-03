@@ -20,11 +20,15 @@
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [clojure.java.io            :as io]
             [lice-comb.test-boilerplate :refer [fixture valid=]]
-            [lice-comb.files            :refer [probable-license-file? probable-license-files file->expressions dir->expressions zip->expressions]]))
+            [lice-comb.files            :refer [init! probable-license-file? probable-license-files file->expressions dir->expressions zip->expressions]]))
 
 (use-fixtures :once fixture)
 
 (def test-data-path "./test/lice_comb/data")
+
+(deftest init!-tests
+  (testing "Nil response"
+    (is (nil? (init!)))))
 
 (deftest probable-license-file?-tests
   (testing "Nil, empty or blank names"
@@ -96,20 +100,6 @@
     (is (valid= #{"Apache-2.0"}   (file->expressions  (str test-data-path "/asf-cat-1.0.12.pom"))))
     (is (valid= #{"Apache-2.0"}   (file->expressions  (str test-data-path "/with-parent.pom"))))))
 
-(deftest dir->expressions-tests
-  (testing "Nil, empty, or blank directory name"
-    (is (nil?                                  (dir->expressions  nil)))
-    (is (thrown? java.io.FileNotFoundException (dir->expressions  "")))
-    (is (thrown? java.io.FileNotFoundException (dir->expressions  "       ")))
-    (is (thrown? java.io.FileNotFoundException (dir->expressions  "\n")))
-    (is (thrown? java.io.FileNotFoundException (dir->expressions  "\t"))))
-  (testing "Non-existent or invalid directory"
-    (is (thrown? java.io.FileNotFoundException       (dir->expressions  "this_directory_does_not_exist")))
-    (is (thrown? java.nio.file.NotDirectoryException (dir->expressions  "deps.edn"))))
-  (testing "Valid directory"
-;    (is (valid= #{"Apache-2.0" "BSD-3-Clause" "MPL-2.0" "CC-BY-4.0"} (dir->expressions  ".")))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
-))
-
 (deftest zip->expressions-tests
   (testing "Nil, empty, or blank zip file name"
     (is (nil?                                      (zip->expressions nil)))
@@ -122,5 +112,23 @@
   (testing "Invalid zip file"
     (is (thrown? java.util.zip.ZipException (zip->expressions (str test-data-path "/bad.zip")))))
   (testing "Valid zip file"
-    (is (valid= #{"Apache-2.0"} (zip->expressions (str test-data-path "/good.zip"))))))
+    (is (valid= #{"Apache-2.0"}        (zip->expressions (str test-data-path "/good.zip"))))
+    (is (valid= #{"AGPL-3.0-or-later"} (zip->expressions (str test-data-path "/pom-in-a-zip.zip"))))))
 
+(deftest dir->expressions-tests
+  (testing "Nil, empty, or blank directory name"
+    (is (nil?                                  (dir->expressions  nil)))
+    (is (thrown? java.io.FileNotFoundException (dir->expressions  "")))
+    (is (thrown? java.io.FileNotFoundException (dir->expressions  "       ")))
+    (is (thrown? java.io.FileNotFoundException (dir->expressions  "\n")))
+    (is (thrown? java.io.FileNotFoundException (dir->expressions  "\t"))))
+  (testing "Non-existent or invalid directory"
+    (is (thrown? java.io.FileNotFoundException       (dir->expressions  "this_directory_does_not_exist")))
+    (is (thrown? java.nio.file.NotDirectoryException (dir->expressions  "deps.edn"))))
+  (testing "Valid directory"
+    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0"}
+                (dir->expressions  "."))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
+  (testing "Valid directory - include ZIP compressed files"
+    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0" "AGPL-3.0-or-later"}
+                (dir->expressions  "." {:include-zips? true}))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
+)

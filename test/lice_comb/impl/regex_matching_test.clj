@@ -16,12 +16,12 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.impl-regex-matching-test
-  (:require [clojure.test                  :refer [deftest testing is are use-fixtures]]
+(ns lice-comb.impl.regex-matching-test
+  (:require [clojure.test                  :refer [deftest testing is use-fixtures]]
             [clojure.set                   :as set]
             [rencg.api                     :as rencg]
             [lice-comb.impl.utils          :as lcu]
-            [lice-comb.test-boilerplate    :refer [fixture]]
+            [lice-comb.test-boilerplate    :refer [fixture testing-with-data]]
             [lice-comb.impl.regex-matching :refer [init! version-re only-or-later-re agpl-re lgpl-re gpl-re gnu-re match-regexes]]))
 
 (use-fixtures :once fixture)
@@ -208,23 +208,6 @@
 (def gpl-only-re  (lcu/re-concat #"(?i)\b" "(" gpl-re  ")" version-re only-or-later-re))
 
 (def not-nil? (complement nil?))
-
-(defn when-pred
-  [val pred then]
-  (if (pred val)
-    (then val)
-    val))
-
-(defmacro testing-with-data
-  "A form of `clojure.test/testing` that generates multiple `clojure.test/is`
-  clauses, based on applying f to the keys in m, and comparing to the associated
-  value in m."
-  [name f m]
-  `(testing ~name
-     ~@(map #(list `is `(= (~f ~(key %)) ~(when-pred (val %) list? (partial list 'quote))))
-            (if (isa? (type m) clojure.lang.Symbol)
-              @(resolve m)
-              m))))
 
 ; Add input to result to make troubleshooting test failures easier
 (defn test-regex
