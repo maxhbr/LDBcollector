@@ -10,9 +10,10 @@ import json
 import logging
 import re
 from pathlib import Path
+import license_expression
 
 from flame.config import LICENSE_DIR, LICENSE_OPERATORS_FILE, LICENSE_SCHEMA_FILE
-from flame.exception import LicenseDatabaseError
+from flame.exception import FlameException
 from jsonschema import validate
 
 json_schema = None
@@ -24,11 +25,12 @@ SCANCODE_KEY_TAG = 'scancode_key'
 SCANCODE_KEYS_TAG = 'scancode_keys'
 LICENSES_TAG = 'licenses'
 ALIASES_TAG = 'aliases'
+COMPATS_TAG = 'compats'
 NAME_TAG = 'name'
 
 LICENSE_OPERATORS_TAG = 'license_operators'
 
-class LicenseDatabase:
+class FossLicenses:
 
     def __init__(self, check=False, license_dir=LICENSE_DIR, logging_level=logging.INFO):
         logging.basicConfig(level=logging_level)
@@ -65,6 +67,7 @@ class LicenseDatabase:
         licenses = {}
         aliases = {}
         scancode_keys = {}
+        compats = {}
         logging.debug(f'reading from: {self.license_dir}')
         for license_file in glob.glob(f'{self.license_dir}/*.json'):
             logging.debug(f' * {license_file}')
@@ -72,22 +75,27 @@ class LicenseDatabase:
             licenses[data['spdxid']] = data
             for alias in data[ALIASES_TAG]:
                 if alias in aliases:
-                    raise LicenseDatabaseError(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
+                    raise FlameException(f'Alias "{alias}" -> {data["spdxid"]} already defined as "{aliases[alias]}".')
 
                 aliases[alias] = data['spdxid']
             if SCANCODE_KEY_TAG in data:
                 scancode_keys[data[SCANCODE_KEY_TAG]] = data['spdxid']
+            if COMPATIBILITY_AS_TAG in data:
+                compats[data['spdxid']] = data[COMPATIBILITY_AS_TAG]
 
+        self.license_expression = license_expression.get_spdx_licensing()
+#        self.license_expression = None
         self.license_db[LICENSES_TAG] = licenses
+        self.license_db[COMPATS_TAG] = compats
         self.license_db[ALIASES_TAG] = aliases
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[LICENSE_OPERATORS_TAG] = self.__read_json(LICENSE_OPERATORS_FILE)['operators']
         # regular expression for splitting expression in to parts
-        re_list = [re.escape(op) for op in self.license_db[LICENSE_OPERATORS_TAG]]
+        # re_list = [re.escape(op) for op in self.license_db[LICENSE_OPERATORS_TAG]]
         # make sure to && and || before & and | by sorting reverse
-        re_list.sort(reverse=True)
-        self.license_operators_re = '(' + '|'.join(re_list) + ')'
+        #re_list.sort(reverse=True)
+        #self.license_operators_re = '(' + '|'.join(re_list) + ')'
 
     def __identify_license(self, name):
         if name in self.license_db[LICENSES_TAG]:
@@ -103,7 +111,7 @@ class LicenseDatabase:
             ret_name = self.license_db[SCANCODE_KEYS_TAG][name]
             ret_id = 'scancode_key'
         else:
-            raise LicenseDatabaseError(f'Could not identify license from "{name}"')
+            raise FlameException(f'Could not identify license from "{name}"')
 
         return {
             'queried_name': name,
@@ -111,31 +119,78 @@ class LicenseDatabase:
             'identified_via': ret_id,
         }
 
+    def __update_license_expression_helper(self, needles, needle_tag, license_expression):
+        replacements = []
+        for needle in needles:
+            reg_exp = r'(^| )%s($| )' % re.escape(needle)
+            if re.search(reg_exp, license_expression):
+                replacement = needles[needle]
+                replacements.append({
+                    'queried_name': needle,
+                    'name': replacement,
+                    'identified_via': needle_tag,
+                })
+                license_expression = re.sub(reg_exp, f' {replacement}     ', license_expression)
+
+        return {
+            "license_expression": re.sub(r'\s\s*', ' ', license_expression).strip(),
+            "identifications":  replacements
+        }
+    
     def expression_license(self, license_expression):
-        new_expression = license_expression
-        license_parts = []
-        license_list = []
-        for le in re.split(r'%s' % self.license_operators_re, new_expression):
-            le = le.strip()
-            if len(le) == 0:
-                continue
-            license_parts.append(self.license(le.strip()))
-            license_list.append(self.license(le.strip())[IDENTIFIED_ELEMENT_TAG]['name'])
-        new_expression = ' '.join(license_list).strip()
+        """Returns an object with information about the normalized license for the license given.
+
+        :param str license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
+        """
+
+        if not isinstance(license_expression, str):
+            raise FlameException('Wrong type (type(license_expresssion)) of input to the function expression_license. Only string is allowed.')
+
+        replacements = []
+
+        ret = self.__update_license_expression_helper(self.license_db[ALIASES_TAG],
+                                                      "alias",
+                                                      license_expression)
+        replacements += ret['identifications']
+
+        ret = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
+                                                      "operator",
+                                                      ret['license_expression'])
+        replacements += ret['identifications']
+
+        # scancode identifiers -> SPDX
+        #ret = self.__update_license_expression_helper(self.license_db[SCANCODE_KEYS_TAG],
+        #                                              "scancode_key",
+        #                                              ret['license_expression'])
+        #replacements += ret['identifications']
+        license_parsed = str(self.license_expression.parse(ret['license_expression']))
+
         return {
             'queried_license': license_expression,
-            'identified_license': new_expression,
-            'identifications': license_parts
+            'identified_license': license_parsed,
+            'identifications': replacements
         }
 
     def licenses(self):
+        """
+        Returns all licenses 
+        """
         return list(self.license_db[LICENSES_TAG].keys())
+
+    def license_complete(self, name):
+        """
+        name: spdx identifier of a license
+
+        returns the corresponding license object
+        """
+        identified_name = self.__identify_license(name)['name']
+        return self.license_db[LICENSES_TAG][identified_name]
 
     def license(self, name):
         """
         name: spdx identifier, alias or scancode key
 
-        returns the corresponding license object
+        returns the normalized license name (SPDXID)
         """
         identified_license = self.__identify_license(name)
         identified_name = identified_license[NAME_TAG]
@@ -150,7 +205,7 @@ class LicenseDatabase:
                 'license': self.license_db[LICENSES_TAG][identified_name],
             }
 
-    def license_spdxid(self, name):
+    def __OBSOLETE__license_spdxid(self, name):
         """
         name: spdx identifier, alias or scancode key
 
@@ -158,7 +213,7 @@ class LicenseDatabase:
         """
         return self.license(name)['license']['spdxid']
 
-    def license_scancode_key(self, name):
+    def __OBSOLETE__license_scancode_key(self, name):
         """
         name: spdx identifier, alias or scancode key
 
@@ -171,21 +226,31 @@ class LicenseDatabase:
         licenses = self.license_db[LICENSES_TAG]
         return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]['spdxid']} for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
 
-    def aliases_list(self, alias_license=None):
+    def aliases_list(self, alias_license: str = None) -> [str]: 
+        """Returns a list of all the aliases. Supplying will alias_license
+        will return a list of aliases beginning with alias_license
+
+        :param str alias_license:  The person sending the message
+        """
         if alias_license:
             return {k: v for k, v in self.license_db[ALIASES_TAG].items() if alias_license in v}
         # List all aliases that exist
         return self.license_db[ALIASES_TAG]
 
     def aliases(self, license_name):
-        # List aliases for license identified by license_name
+        """Returns a list of all the aliases for a license 
+
+        :param str license_name: Exact name (SPDXID) of the license
+        """
         identified_name = self.__identify_license(license_name)[NAME_TAG]
         return self.license_db[LICENSES_TAG][identified_name][ALIASES_TAG]
 
     def operators(self):
+        """Returns a list of all the supported (boolean) operators in license expressions.
+        """
         return self.license_db[LICENSE_OPERATORS_TAG]
 
-    def compatibility_as(self, license_name):
+    def __compatibility_as(self, license_name):
         # List compatibility_as for license
         identified = self.__identify_license(license_name)
         identified_name = identified[NAME_TAG]
@@ -206,32 +271,48 @@ class LicenseDatabase:
             }
         }
 
-    def expression_compatibility_as(self, license_expression):
+    def expression_compatibility_as(self, license_expression, validate_spdx=False, validate_relaxed=False):
+        """Returns an object with information about the compatibility status for the license given.
+
+        :param str license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
+        """
         expression_full = self.expression_license(license_expression)
         compats = []
-        for identification in expression_full['identifications']:
-            lic_elem = identification['identified_element']['name']
-            if 'operator' in identification:
-                compats.append({
-                    'license_identification': identification,
-                    'compat_identification': 'operator',
-                    'compat_element': lic_elem,
-                    'name': lic_elem
-                })
-            else:
-                compat = self.compatibility_as(lic_elem)
-                compats.append({
-                    'license_identification': identification,
-                    'compat_identification': compat,
-                    'compat_element': compat,
-                    'name': compat['compatibility']['compat_as']
-                })
+        ret = self.__update_license_expression_helper(self.license_db[COMPATS_TAG],
+                                                      "compat",
+                                                      expression_full['identified_license'])
+        ret['license_expression'] = re.sub(r'\s\s*', ' ', ret['license_expression']).strip()
+        compats = ret['identifications']
+        compat_license_expression = ret['license_expression']
 
-        compat_string = ' '.join([elem['name'] for elem in compats])
-
+        if validate_spdx:
+            self.__validate_license_spdx(compat_license_expression)
+        elif validate_relaxed:
+            self.__validate_license_relaxed(compat_license_expression)
+        
         return {
             'compatibilities': compats,
             'queried_license': license_expression,
+            'identifications': expression_full,
             'identified_license': expression_full['identified_license'],
-            'compat_license': compat_string
+            'compat_license': compat_license_expression
         }
+
+    def __validate_license_spdx(self, expr):
+        """
+        """
+
+        expr_info = self.license_expression.validate(expr)
+
+        if expr_info.errors:
+            raise FlameException(f'License validation failed. Errors: "{", ".join(expr_info.errors)}"')
+
+    def __validate_license_relaxed(self, expr):
+        """
+        """
+        SPDX_OPERATORS=['AND', 'OR', 'WITH']
+        license_list = re.split(f'{"|".join(SPDX_OPERATORS)}', expr)
+        for _lic in license_list:
+            lic=_lic.strip()
+            if " " in lic.strip():
+                raise FlameException(f'Found license with multiple words "{lic}"')
