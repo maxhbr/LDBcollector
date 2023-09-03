@@ -44,7 +44,7 @@ py-sort:
 	cd python && isort ./*/*.py --diff
 
 py-lint:
-	cd python && PYTHONPATH=. flake8
+	cd python && PYTHONPATH=. flake8 flame
 
 check-py-cli:
 	@echo -n "Check cli (-h): "
