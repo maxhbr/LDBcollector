@@ -19,24 +19,24 @@ pip install .
 
 Create a LicenseDatabase object
 ```
-from flame.license_db import LicenseDatabase
-ldb = LicenseDatabase()
+from flame.license_db import FossLicenses
+fl = FossLicenses()
 ```
 
 Get the alias for "BSD3 & x11-keith-packard"
 ```
-from flame.license_db import LicenseDatabase
-ldb = LicenseDatabase()
-expression = ldb.expression('BSD3 & x11-keith-packard')
+from flame.license_db import FossLicenses
+fl = FossLicenses()
+expression = fl.expression_license('BSD3 & x11-keith-packard')
 print(expression['identified_license'])
 ```
 
 Get the compatible license expression for "BSD3 & x11-keith-packard"
 ```
-from flame.license_db import LicenseDatabase
-ldb = LicenseDatabase()
-expression = ldb.expression_compatibility_as('BSD3 & x11-keith-packard')
-print(print(expression['compat_license']))
+from flame.license_db import FossLicenses
+fl = FossLicenses()
+expression = fl.expression_compatibility_as('BSD3 & x11-keith-packard')
+print(expression['compat_license'])
 ```
 
 
