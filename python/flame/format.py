@@ -44,6 +44,9 @@ class OutputFormatter():
     def format_licenses(self, licenses, verbose):
         return None
 
+    def format_license_complete(self, licenses, verbose):
+        return None
+
     def format_compatibilities(self, compats, verbose):
         return None
 
@@ -72,6 +75,9 @@ class JsonOutputFormatter(OutputFormatter):
 
     def format_licenses(self, licenses, verbose):
         return json.dumps(licenses, indent=4)
+
+    def format_license_complete(self, _license, verbose):
+        return json.dumps(_license, indent=4)
 
     def format_compatibilities(self, compats, verbose):
         return json.dumps(compats)
@@ -102,6 +108,9 @@ class YamlOutputFormatter(OutputFormatter):
     def format_licenses(self, licenses, verbose):
         return yaml.dump(licenses)
 
+    def format_license_complete(self, _license, verbose):
+        return yaml.dump(_license)
+
     def format_compatibilities(self, compats, verbose):
         return yaml.dump(compats)
 
@@ -126,14 +135,12 @@ class TextOutputFormatter(OutputFormatter):
     def format_compatibilities(self, compats, verbose):
         ret = []
         ret.append(f'{compats["compat_license"]}')
+        #import json
+        #print("---- compats: " + json.dumps(compats, indent=4))
+        #print("---- compats: " + str(len(compats)))
         if verbose:
             for compat in compats['compatibilities']:
-                lic_id = compat["license_identification"]
-                lic_elem = lic_id["identified_element"]
-                if lic_elem["identified_via"] == 'operator':
-                    ret.append(f' * "{lic_elem["queried_name"]}" -> "{lic_elem["name"]}" via "{lic_elem["identified_via"]}"')
-                else:
-                    ret.append(f' * "{lic_elem["queried_name"]}" -> "{lic_elem["name"]}" via "{lic_elem["identified_via"]}" -> "{compat["name"]}" via "{compat["compat_identification"]["compatibility"]["identified_via"]}"')
+                ret.append(f' * "{compat["queried_name"]}" -> "{compat["name"]}" via "{compat["identified_via"]}"')
 
         return '\n'.join(ret)
 
@@ -154,8 +161,10 @@ class TextOutputFormatter(OutputFormatter):
         ret.append(f'{id_lic}')
         if verbose:
             for identification in expression['identifications']:
-                id_elem = identification['identified_element']
-                ret.append(f' * "{id_elem["queried_name"]}" -> "{id_elem["name"]} via "{id_elem["identified_via"]}"')
+                #print(f' * identifcation: {identification}')
+                #id_elem = identification['identified_element']
+                #print(f'    * id_elem: {id_elem}')
+                ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]} via "{identification["identified_via"]}"')
         return '\n'.join(ret)
 
     def format_identified_list(self, all_aliases, verbose):
