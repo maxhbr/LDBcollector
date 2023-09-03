@@ -15,6 +15,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// CreateUser creates a new user based on the provided JSON request data.
 func CreateUser(c *gin.Context) {
 	var user models.User
 	if err := c.ShouldBindJSON(&user); err != nil {
@@ -52,6 +53,7 @@ func CreateUser(c *gin.Context) {
 	c.JSON(http.StatusCreated, res)
 }
 
+// GetAllUser retrieves a list of all users from the database.
 func GetAllUser(c *gin.Context) {
 	var users []models.User
 
@@ -76,6 +78,7 @@ func GetAllUser(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// GetUser retrieves a user by their user ID from the database.
 func GetUser(c *gin.Context) {
 	var user models.User
 	id := c.Param("id")
@@ -101,6 +104,7 @@ func GetUser(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// AuthenticationMiddleware is a middleware function for user authentication.
 func AuthenticationMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		authHeader := c.GetHeader("Authorization")
