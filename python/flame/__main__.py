@@ -9,7 +9,7 @@ import argparse
 import logging
 import sys
 
-from flame.license_db import LicenseDatabase
+from flame.license_db import FossLicenses
 import flame.config
 from flame.format import OUTPUT_FORMATS
 from flame.format import OutputFormatterFactory
@@ -50,11 +50,19 @@ def parse():
     parser_e.set_defaults(which='license', func=license)
     parser_e.add_argument('license', type=str, help='license expression to fix')
 
+    # full license
+    parser_e = subparsers.add_parser(
+        'license-full', help='Display full information about the license')
+    parser_e.set_defaults(which='license-full', func=full_license)
+    parser_e.add_argument('license', type=str, help='license to display fully')
+
     # compatibility
     parser_c = subparsers.add_parser(
         'compat', help='Convert license to using licenses compatible with OSADL\'s matrix')
     parser_c.set_defaults(which='compat', func=compatibility)
     parser_c.add_argument('license', type=str, help='license name to display')
+    parser_c.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
+    parser_c.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
 
     # aliases
     parser_a = subparsers.add_parser(
@@ -81,29 +89,33 @@ def parse():
 
     return args
 
-def operators(ldb, formatter, args):
-    all_op = ldb.operators()
+def operators(fl, formatter, args):
+    all_op = fl.operators()
     return formatter.format_operators(all_op, args.verbose)
 
-def aliases(ldb, formatter, args):
-    all_aliases = ldb.aliases_list(args.alias_license)
+def aliases(fl, formatter, args):
+    all_aliases = fl.aliases_list(args.alias_license)
     return formatter.format_identified_list(all_aliases, args.verbose)
 
-def licenses(ldb, formatter, args):
-    all_licenses = ldb.licenses()
+def licenses(fl, formatter, args):
+    all_licenses = fl.licenses()
     return formatter.format_licenses(all_licenses, args.verbose)
 
-def compats(ldb, formatter, args):
-    all_compats = ldb.compatibility_as_list()
+def compats(fl, formatter, args):
+    all_compats = fl.compatibility_as_list()
     return formatter.format_compat_list(all_compats, args.verbose)
 
-def compatibility(ldb, formatter, args):
-    compatibilities = ldb.expression_compatibility_as(args.license)
+def compatibility(fl, formatter, args):
+    compatibilities = fl.expression_compatibility_as(args.license, validate_spdx=args.validate_spdx, validate_relaxed=args.validate_relaxed)
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
-def license(ldb, formatter, args):
-    expression = ldb.expression_license(args.license)
+def license(fl, formatter, args):
+    expression = fl.expression_license(args.license)
     return formatter.format_expression(expression, args.verbose)
+
+def full_license(fl, formatter, args):
+    lic = fl.license_complete(args.license)
+    return formatter.format_license_complete(lic, args.verbose)
 
 def main():
 
@@ -115,7 +127,7 @@ def main():
     formatter = OutputFormatterFactory.formatter(args.output_format)
 
     try:
-        ldb = LicenseDatabase(check=args.check)
+        fl = FossLicenses(check=args.check)
     except Exception as e:
         formatted = formatter.format_error(e, args.verbose)
         print(f'{formatted}')
@@ -123,7 +135,7 @@ def main():
 
     if args.func:
         try:
-            formatted = args.func(ldb, formatter, args)
+            formatted = args.func(fl, formatter, args)
             print(formatted)
         except Exception as e:
             if args.verbose:
