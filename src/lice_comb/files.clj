@@ -71,8 +71,8 @@
   ([f fname]
    (when (and f fname)
      (let [lfname (s/lower-case fname)]
-            (lcimd/prepend-source (cond (= lfname "pom.xml")              (lcmvn/pom->expressions f)
-                                        (s/ends-with? lfname ".pom")      (lcmvn/pom->expressions f)
+            (lcimd/prepend-source (cond (= lfname "pom.xml")              (lcmvn/pom->expressions f fname)
+                                        (s/ends-with? lfname ".pom")      (lcmvn/pom->expressions f fname)
                                         (instance? java.io.InputStream f) (lcmtch/text->ids f)
                                         :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->ids is))))  ; Default is to assume it's a plain text file containing license text(s)
                                   fname)))))
