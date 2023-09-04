@@ -724,12 +724,12 @@
                      (name->expressions-info "GNU General Public License, version 2 with the GNU Classpath Exception"))))
   (testing "Multiple expressions"
     (is (valid-info= {"MIT"          {:type :declared  :strategy :spdx-listed-identifier-exact-match :source '("MIT")}
-                      "BSD-4-Clause" {:type :concluded :confidence :low :strategy :regex-name-matching :source '("BSD")}}
+                      "BSD-4-Clause" {:type :concluded :confidence :low :strategy :regex-matching :source '("BSD")}}
                      (name->expressions-info "MIT / BSD"))))
   (testing "All names seen in POMs on Clojars as of 2023-07-13"
     (is (valid-info= {"BSD-3-Clause" {:type :concluded :confidence :medium :strategy :spdx-listed-uri :source '("https://opensource.org/licenses/BSD-3-Clause")}}
                      (name->expressions-info "https://opensource.org/licenses/BSD-3-Clause")))
-    (is (valid-info= {"EPL-2.0" {:type :concluded :confidence :medium :strategy :regex-name-matching :source '("Eclipse Public License - v 2.0")}}
+    (is (valid-info= {"EPL-2.0" {:type :concluded :confidence :medium :strategy :regex-matching :source '("Eclipse Public License - v 2.0")}}
                      (name->expressions-info "Eclipse Public License - v 2.0")))))
 
 (deftest uri->ids-tests

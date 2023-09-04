@@ -40,7 +40,8 @@
           (throw (java.nio.file.NotDirectoryException. (str dir))))
         (throw (java.io.FileNotFoundException. (str dir)))))))
 
-(defn- probable-license-file?
+; This is public because it's used in the tests
+(defn probable-license-file?
   "Returns true if the given file-like thing (String, File, ZipEntry) is a
   probable license file, false otherwise."
   [f]
@@ -50,7 +51,8 @@
               (or (contains? probable-license-filenames fname)
                   (s/ends-with? fname ".pom"))))))
 
-(defn- probable-license-files
+; This is public because it's used in the tests
+(defn probable-license-files
   "Returns all probable license files in the given directory, recursively, as a
   set of java.io.File objects. dir may be a String or a java.io.File, either of
   which must refer to a readable directory."
