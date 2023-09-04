@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "cURL License",
+  "spdxid": "curl",
+  "aliases": [
+    "curl",
+    "curl License",
+    "Permission Terms (curl)",
+    "scancode://curl",
+    "cURL License",
+    "CURL LICENSE",
+    "CURL License",
+    "Curl License",
+    "curl license",
+    "scancode:curl"
+  ]
+}
