@@ -30,6 +30,12 @@ text = '''
 text here
 '''
 
+package = aopalliance
+location = https://aopalliance.sourceforge.net/
+text = '''
+LICENCE: all the source code provided by AOP Alliance is Public Domain.
+'''
+
 package = byacc
 location = https://invisible-island.net/byacc/byacc.html#licensing
            https://invisible-island.net/archives/byacc/byacc-20230521.tgz
