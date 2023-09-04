@@ -753,3 +753,11 @@ In some countries this may not be legally possible; if so:
 I grant anyone the right to use this software for any purpose,
 without any conditions, unless such conditions are required by law.
 '''
+
+package = plexus-utils
+location = https://github.com/codehaus-plexus/plexus-utils/blob/master/src/main/java/org/codehaus/plexus/util/FastMap.java
+           https://github.com/codehaus-plexus/plexus-utils/blob/master/src/main/java/org/codehaus/plexus/util/CachedMap.java
+           https://github.com/codehaus-plexus/plexus-utils/blob/master/src/main/java/org/codehaus/plexus/util/TypeFormat.java
+text = '''
+This class is public domain (not copyrighted).
+'''
