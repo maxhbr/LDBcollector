@@ -19,60 +19,70 @@
 (ns lice-comb.impl.metadata-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [lice-comb.test-boilerplate :refer [fixture]]
-            [lice-comb.impl.metadata    :refer [prepend-source union]]))
+            [lice-comb.impl.metadata    :refer [prepend-source merge-maps]]))
 
 (use-fixtures :once fixture)
 
 (def md1 {
-  "Apache-2.0" {:type :concluded :confidence :medium :strategy :regex-matching                     :source '("Apache Software Licence v2.0")}
-  "MIT"        {:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source '("MIT")}
-})
+  "Apache-2.0" '({:type :concluded :confidence :medium :strategy :regex-matching                     :source ("Apache Software Licence v2.0")})
+  "MIT"        '({:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source ("MIT")})})
 
 (def md2 {
-  "Apache-2.0"   {:type :concluded :confidence :low  :strategy :regex-matching :source '("Apache style license")}
-  "BSD-4-Clause" {:type :concluded :confidence :low  :strategy :regex-matching :source '("BSD")}
-  })
+  "Apache-2.0"   '({:type :concluded :confidence :low  :strategy :regex-matching :source ("Apache style license")})
+  "BSD-4-Clause" '({:type :concluded :confidence :low  :strategy :regex-matching :source ("BSD")})})
+
+(def md3 {
+  "Apache-2.0"       '({:type :concluded :confidence :low  :strategy :regex-matching :source ("Apache style license")}
+                       {:type :concluded :confidence :medium :strategy :spdx-listed-identifier-case-insensitive-match :source ("apache-2.0")}
+                       {:type :declared :strategy :spdx-listed-identifier-exact-match :source ("Apache-2.0")})
+  "GPL-3.0-or-later" '({:type :concluded :confidence :low  :strategy :regex-matching :source ("GNU General Public License 3.0 or later")})})
+
+(def mds (list md1 md2 md3))
 
 (deftest prepend-source-tests
   (testing "nil/empty/blank"
-    (is (nil?  (prepend-source nil nil)))
-    (is (nil?  (prepend-source nil "")))
-    (is (= #{} (prepend-source #{} nil)))
-    (is (nil?  (meta (prepend-source #{} nil))))
-    (is (= #{} (prepend-source #{} "")))
-    (is (nil?  (meta (prepend-source #{} "")))))
+    (is (nil? (prepend-source nil nil)))
+    (is (nil? (prepend-source nil "")))
+    (is (= {} (prepend-source {} nil)))
+    (is (= {} (prepend-source {} ""))))
   (testing "non-nil metadata that isn't lice-comb specific"
-    (is (= {}           (meta (prepend-source (with-meta #{:a} {}) "foo"))))
-    (is (= {:foo "foo"} (meta (prepend-source (with-meta #{:a} {:foo "foo"}) "bar"))))
+    (is (= {:a "a"} (prepend-source {:a "a"} "foo"))))
   (testing "non-nil metadata that is lice-comb specific"
-    (is (= {"Apache-2.0" {:type :concluded :confidence :medium :strategy :regex-matching                     :source '("pom.xml" "Apache Software Licence v2.0")}
-            "MIT"        {:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source '("pom.xml" "MIT")}}
-           (meta (prepend-source (with-meta #{:a} md1) "pom.xml"))))
-    (is (= {"Apache-2.0" {:type :concluded :confidence :medium :strategy :regex-matching                     :source '("library.jar" "pom.xml" "Apache Software Licence v2.0")}
-            "MIT"        {:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source '("library.jar" "pom.xml" "MIT")}}
-           (meta (prepend-source (prepend-source (with-meta #{:a} md1) "pom.xml") "library.jar")))))))
+    (is (= {"Apache-2.0" '({:type :concluded :confidence :medium :strategy :regex-matching                     :source ("pom.xml" "Apache Software Licence v2.0")})
+            "MIT"        '({:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source ("pom.xml" "MIT")})}
+           (prepend-source md1 "pom.xml")))
+    (is (= {"Apache-2.0" '({:type :concluded :confidence :medium :strategy :regex-matching                     :source ("library.jar" "pom.xml" "Apache Software Licence v2.0")})
+            "MIT"        '({:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source ("library.jar" "pom.xml" "MIT")})}
+           (prepend-source (prepend-source md1 "pom.xml") "library.jar")))
+    (is (= {"Apache-2.0"       '({:type :concluded :confidence :low  :strategy :regex-matching :source ("pom.xml" "Apache style license")}
+                                 {:type :concluded :confidence :medium :strategy :spdx-listed-identifier-case-insensitive-match :source ("pom.xml" "apache-2.0")}
+                                 {:type :declared :strategy :spdx-listed-identifier-exact-match :source ("pom.xml" "Apache-2.0")})
+            "GPL-3.0-or-later" '({:type :concluded :confidence :low  :strategy :regex-matching :source ("pom.xml" "GNU General Public License 3.0 or later")})}
+           (prepend-source md3 "pom.xml")))))
 
-(deftest union-tests
-  (testing "zero arg"
-    (is (= #{}            (union))))
-  (testing "one arg"
-    (is (nil?             (union nil)))
-    (is (= #{}            (union #{})))
-    (is (= #{:foo}        (union #{:foo}))))
-  (testing "two arg"
-    (is (= #{:foo :bar}   (union #{:foo} #{:bar}))))
-  (testing "multi-arg"
-    (is (= #{:a :b :c}    (union #{:a} #{:b} #{:c})))
-    (is (= #{:a :b :c :d} (union #{:a} #{:b} #{:c} #{:d})))
-    (is (= #{:a :b :c :d :e :f :g :h :i :j :k :l :m :n :o} (union #{:a :b} #{:c :d :e} #{:f :g :h :i} #{:j :k :l :m :n :o}))))
-  (testing "metadata"
-    (is (= {:foo "foo"}                         (meta (union (with-meta #{:a :b :c} {:foo "foo"})))))
-    (is (= {:foo "foo" :bar "bar"}              (meta (union (with-meta #{:a :b :c} {:foo "foo"}) (with-meta #{:d :e :f} {:bar "bar"})))))
-    (is (= {:foo "foo" :bar "bar" :blah "blah"} (meta (union (with-meta #{:a :b :c} {:foo "foo"}) (with-meta #{:d :e :f} {:bar "bar"}) (with-meta #{:g :h :i} {:blah "blah"})))))
-    (is (thrown? clojure.lang.ExceptionInfo     (meta (union (with-meta #{:a :b :c} {:foo "foo"}) (with-meta #{:d :e :f} {:foo "bar"})))))  ; Non lice-comb conflicting key in metadata maps = exception
-    (is (= {"Apache-2.0"   {:type :concluded :confidence :medium :strategy :regex-matching                     :source '("Apache Software Licence v2.0")}
-            "MIT"          {:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source '("MIT")}
-            "BSD-4-Clause" {:type :concluded :confidence :low    :strategy :regex-matching                     :source '("BSD")}
-           }
-           (meta (union (with-meta #{:a :b :c} md1) (with-meta #{:d :e :f} md2)))))))
-
+(deftest merge-maps-tests
+  (testing "nil/empty"
+    (is (nil? (merge-maps)))
+    (is (nil? (merge-maps nil))))
+  (testing "identity"
+    (is (= md1 (merge-maps md1))))
+  (testing "merges"
+    (is (= {"Apache-2.0"   '({:type :concluded :confidence :medium :strategy :regex-matching :source ("Apache Software Licence v2.0")}
+                             {:type :concluded :confidence :low  :strategy :regex-matching :source ("Apache style license")})
+            "MIT"          '({:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source ("MIT")})
+            "BSD-4-Clause" '({:type :concluded :confidence :low  :strategy :regex-matching :source ("BSD")})}
+           (merge-maps md1 md2)))
+    (is (= {"Apache-2.0"       '({:type :concluded :confidence :low  :strategy :regex-matching :source ("Apache style license")}  ; Note de-duping
+                                 {:type :concluded :confidence :medium :strategy :spdx-listed-identifier-case-insensitive-match :source ("apache-2.0")}
+                                 {:type :declared :strategy :spdx-listed-identifier-exact-match :source ("Apache-2.0")})
+            "BSD-4-Clause"     '({:type :concluded :confidence :low  :strategy :regex-matching :source ("BSD")})
+            "GPL-3.0-or-later" '({:type :concluded :confidence :low  :strategy :regex-matching :source ("GNU General Public License 3.0 or later")})}
+           (merge-maps md2 md3)))
+    (is (= {"Apache-2.0"       '({:type :concluded :confidence :medium :strategy :regex-matching :source ("Apache Software Licence v2.0")}
+                                 {:type :concluded :confidence :low  :strategy :regex-matching :source ("Apache style license")}  ; Note de-duping
+                                 {:type :concluded :confidence :medium :strategy :spdx-listed-identifier-case-insensitive-match :source ("apache-2.0")}
+                                 {:type :declared :strategy :spdx-listed-identifier-exact-match :source ("Apache-2.0")})
+            "MIT"              '({:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source ("MIT")})
+            "BSD-4-Clause"     '({:type :concluded :confidence :low  :strategy :regex-matching :source ("BSD")})
+            "GPL-3.0-or-later" '({:type :concluded :confidence :low  :strategy :regex-matching :source ("GNU General Public License 3.0 or later")})}
+           (apply merge-maps mds)))))

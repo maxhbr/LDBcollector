@@ -58,26 +58,48 @@
 
 (defn valid=
   "Returns true if all of the following are true:
-  * s2 has metadata
-  * s2 is a set
-  * s2 is equal to s1
-  * every entry in s2 is a valid SPDX license expression
+  * actual is a set
+  * actual equals expected
+  * everything in actual is a valid SPDX license expression
 
   Also prints (to stdout) which of the above is not true, in the event that any
   of them are not true."
-  [s1 s2]
-  (let [metadata?              (or (nil? s2) (not-nil? (meta s2)))
-        is-a-set?              (or (nil? s2) (set? s2))
-        is-equal?              (= s1 s2)
-        all-valid-expressions? (and (set? s2) (every? true? (map sexp/valid? s2)))
-        result                 (and metadata?
-                                    is-a-set?
+  [expected actual]
+  (let [is-a-set?              (or (nil? actual) (set? actual))
+        is-equal?              (= (set expected) actual)
+        all-valid-expressions? (and is-a-set? (every? true? (map sexp/valid? actual)))
+        result                 (and is-a-set?
                                     is-equal?
                                     all-valid-expressions?)]
     ; Yes print here is deliberate, to ensure the output lines are grouped with the associated test failure message
     (when-not result                 (print "\n☔️☔️☔️ Invalid result produced:"))
-    (when-not metadata?              (print "\n* Missing metadata"))
     (when-not is-a-set?              (print "\n* Not a set"))
-    (when-not is-equal?              (print "\n* Not equal to expected value"))
+    (when-not is-equal?              (print "\n* Not equal to expected"))
     (when-not all-valid-expressions? (print "\n* Not all valid SPDX expressions"))
+    result))
+
+(defn valid-info=
+  "Returns true if all of the following are true:
+  * actual is a map
+  * the keys in actual are identical to expected-keys
+  * all vals in actual are maps
+  * every key in actual is a valid SPDX license expression
+
+  Also prints (to stdout) which of the above is not true, in the event that any
+  of them are not true."
+  [expected actual]
+  (let [is-a-map?              (or (nil? actual) (map? actual))
+        is-equal?              (= expected actual)
+        values-are-maps?       (or (nil? actual) (every? map? (vals actual)))
+        all-valid-expressions? (and is-a-map? (every? true? (map sexp/valid? (keys actual))))
+        result                 (and values-are-maps?
+                                    is-a-map?
+                                    is-equal?
+                                    all-valid-expressions?)]
+    ; Yes print here is deliberate, to ensure the output lines are grouped with the associated test failure message
+    (when-not result                 (print "\n☔️☔️☔️ Invalid result produced:"))
+    (when-not is-a-map?              (print "\n* Not a map"))
+    (when-not is-equal?              (print "\n* Not equal to expected"))
+    (when-not values-are-maps?       (print "\n* Not all values are maps"))
+    (when-not all-valid-expressions? (print "\n* Not all keys are valid SPDX expressions"))
     result))

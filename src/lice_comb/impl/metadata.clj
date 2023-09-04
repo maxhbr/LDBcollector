@@ -19,76 +19,30 @@
 (ns lice-comb.impl.metadata
   "Metadata helper functionality. Note: this namespace is not part of
   the public API of lice-comb and may change without notice."
-  (:require [clojure.string                :as s]
-            [clojure.set                   :as set]
-            [lice-comb.impl.utils          :as lcu]))
+  (:require [clojure.string :as s]))
 
 (defn prepend-source
-  "Prepends the given source (a string) onto the list of sources for all of
-  the entries of the metadata for object o. Returns o with the new metadata."
-  [o s]
-  (if (and o (not (s/blank? s)))
-    (if-let [m (meta o)]
-      (with-meta o (lcu/mapfonv #(if (map? %) (assoc % :source (conj (seq (:source %)) s)) %) m))
-      o)
-    o))
+  "Prepends the given source s (a String) onto all metadata sub-maps in m (a
+  lice-comb id+metadata-list map)."
+  [m s]
+  (if (or (empty? m) (s/blank? s))
+    m
+    (into {} (map #(if (sequential? (val %))
+                     (let [id            (key %)
+                           metadata-list (val %)]
+                       (hash-map id (map (fn [x] (assoc x :source (conj (seq (:source x)) s))) metadata-list)))
+                     %)
+                  m))))
 
-(defn- merge-conflicting-key
-  "Merges the metadata values for a single key that exists in both m1 and m2."
-  [m1 m2 k]
-;####TODO: IMPROVE THIS SIMPLISTIC "PICK A WINNER" IMPLEMENTATION!!!!!
-  (let [m1v (get m1 k)
-        m2v (get m2 k)]
-    ; If both values are maps, perhaps lice-comb specific metadata merging
-    (if (and (map? m1v) (map? m2v))
-      (if (= :declared (:type m1v))
-        m1v
-        (if (= :declared (:type m2v))
-          m2v
-          (case [(:confidence m1v) (:confidence m2v)]
-            ([:high :high] [:high :medium] [:high :low] [:high nil]) m1v
-            ([:medium :medium] [:medium :low] [:medium nil])         m1v
-            ([:low :low] [:low nil])                                 m1v
-            m2v)))
-      (throw (ex-info "Attempt to merge non-lice-comb metadata maps" {})))))
-
-
-(defn merge-metadata
-  "Merges lice-comb metadata maps."
-  ([] {})
-  ([m] m)
-  ([m1 m2]
-   (if (and m1 m2)
-     (let [keys-in-both    (set/intersection (set (keys m1)) (set (keys m2)))
-           keys-in-m1-only (apply disj (set (keys m1)) keys-in-both)
-           keys-in-m2-only (apply disj (set (keys m2)) keys-in-both)]
-       (merge {}
-              (into {} (map #(vec [% (merge-conflicting-key m1 m2 %)]) keys-in-both))
-              (into {} (map #(vec [% (get m1 %)]) keys-in-m1-only))
-              (into {} (map #(vec [% (get m2 %)]) keys-in-m2-only))))
-     (if m1
-       m1
-       m2)))
-  ([m1 m2 & maps]
-   (loop [result (merge-metadata m1 m2)
-          f      (first maps)
-          r      (rest maps)]
-     (if f
-       (recur (merge-metadata result f) (first r) (rest r))
-       result))))
-
-(defn union
-  "Equivalent to set/union, but preserves lice-comb metadata from the sets using
-  merge-metadata."
-  ([] #{})
-  ([s] s)
-  ([s1 s2]
-   (with-meta (set/union s1 s2)
-              (merge-metadata (meta s1) (meta s2))))
-  ([s1 s2 & sets]
-    (let [data     (apply set/union      (concat [s1 s2] sets))
-          metadata (apply merge-metadata (concat [(meta s1) (meta s2)] (filter identity (map meta sets))))]
-      (with-meta data metadata))))
+(defn merge-maps
+  "Merges any number of lice-comb maps, by concatenating and de-duping values
+  for the same key (expression)."
+  [& maps]
+  (let [maps (filter identity maps)]
+    (when-not (empty? maps)
+      (let [grouped-maps (group-by first (mapcat identity maps))]
+        (into {} (map #(vec [% (seq (distinct (mapcat second (get grouped-maps %))))])
+                      (keys grouped-maps)))))))
 
 (def ^:private strategies {
   :spdx-expression                               "SPDX expression"
@@ -97,25 +51,56 @@
   :spdx-text-matching                            "SPDX license text matching"
   :spdx-listed-name                              "SPDX listed name (case insensitive match)"
   :spdx-listed-uri                               "SPDX listed URI (relaxed matching)"
-  :regex-name-matching                           "Regular expression name matching"
+  :expression-inference                          "Inferred SPDX expression"
+  :regex-matching                                "Regular expression matching"
   :unlisted                                      "Unlisted"})
 
+(defn- metadata-keyfn
+  "sort-by keyfn for lice-comb metadata maps"
+  [metadata]
+  (str (case (:id metadata)
+         nil "0"
+         "1")
+       "-"
+       (case (:type metadata)
+         :declared  "0"
+         :concluded "1")
+       "-"
+       (case (:confidence metadata)
+         nil        "0"
+         :high      "1"
+         :medium    "2"
+         :low       "3")
+       "-"
+       (case (:strategy metadata)
+         :spdx-expression                               "0"
+         :spdx-listed-identifier-exact-match            "1"
+         :spdx-listed-identifier-case-insensitive-match "2"
+         :spdx-text-matching                            "3"
+         :spdx-listed-name                              "4"
+         :spdx-listed-uri                               "5"
+         :expression-inference                          "6"
+         :regex-matching                                "7"
+         :unlisted                                      "8")))
+
 (defn- metadata-element->string
-  "Converts a single element in a lice-comb metadata map (identified by id)
-  into a human-readable string."
+  "Converts the metadata list for the given identifier into a human-readable
+  string."
   [m id]
-  (when-let [metadata (get m id)]
-    (str id ": "
-         (name (:type metadata))
-         (when-let [confidence (:confidence metadata)]
-           (str "\n  Confidence: " (name confidence)))
-         (when-let [strategy (:strategy metadata)]
-           (str "\n  Strategy: " (get strategies strategy (str "#### MISSING VALUE: " strategy " ####"))))
-         (when-let [source (seq (:source metadata))]
-           (str "\n  Source: " (s/join " > " source))))))
+  (str id ":\n"
+    (when-let [metadata-list (sort-by metadata-keyfn (seq (get m id)))]
+      (s/join "\n" (map #(str "  "
+                              (when-let [md-id (:id %)] (when (not= id md-id) (str md-id " ")))
+                              (case (:type %)
+                                :declared  "Declared"
+                                :concluded "Concluded")
+                              (when-let [confidence (:confidence %)]   (str "\n    Confidence: "    (name confidence)))
+                              (when-let [strategy   (:strategy %)]     (str "\n    Strategy: "      (get strategies strategy (name strategy))))
+                              (when-let [source     (seq (:source %))] (str "\n    Source:\n    > " (s/join "\n    > " source))))
+                        metadata-list)))))
 
 (defn metadata->string
-  "Converts a lice-comb metadata map m into a human-readable string."
+  "Converts lice-comb map m into a human-readable string."
   [m]
   (when m
     (let [ids (sort (keys m))]

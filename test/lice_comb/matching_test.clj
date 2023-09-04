@@ -18,9 +18,9 @@
 
 (ns lice-comb.matching-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
-            [lice-comb.test-boilerplate :refer [fixture valid=]]
+            [lice-comb.test-boilerplate :refer [fixture valid= valid-info=]]
             [lice-comb.impl.spdx        :as lcis]
-            [lice-comb.matching         :refer [init! unlisted? proprietary-commercial? text->ids name->expressions uri->ids]]
+            [lice-comb.matching         :refer [init! unlisted? proprietary-commercial? text->ids name->expressions name->expressions-info uri->ids]]
             [spdx.licenses              :as sl]
             [spdx.exceptions            :as se]))
 
@@ -71,7 +71,7 @@
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "Proprietary")))
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "Commercial")))
     (is (valid= #{(lcis/proprietary-commercial)}        (name->expressions "All rights reserved"))))
-  (testing "Expressions that are valid SPDX"
+  (testing "SPDX expressions"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL-2.0 WITH Classpath-exception-2.0")))
     (is (valid= #{"Apache-2.0 OR GPL-3.0-only"}         (name->expressions "Apache-2.0 OR GPL-3.0")))
     (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "EPL-2.0 OR (GPL-2.0+ WITH Classpath-exception-2.0) OR MIT OR (BSD-3-Clause AND Apache-2.0)"))))
@@ -704,31 +704,56 @@
     (is (unlisted-only?                                 (name->expressions "wisdragon")))
     (is (unlisted-only?                                 (name->expressions "wiseloong")))))
 
-;####TEST!!!!
-(comment
+(deftest name->expressions-info-tests
+  (testing "Nil, empty or blank"
+    (is (nil?                                           (name->expressions-info nil)))
+    (is (nil?                                           (name->expressions-info "")))
+    (is (nil?                                           (name->expressions-info "       ")))
+    (is (nil?                                           (name->expressions-info "\n")))
+    (is (nil?                                           (name->expressions-info "\t"))))
+  (testing "SPDX license ids"
+    (is (valid-info= {"AGPL-3.0-only" {:type :declared :strategy :spdx-expression :source '("AGPL-3.0")}}
+                     (name->expressions-info "AGPL-3.0")))
+    (is (valid-info= {"GPL-2.0-only WITH Classpath-exception-2.0" {:type :declared :strategy :spdx-expression :source '("GPL-2.0-with-classpath-exception")}}
+                     (name->expressions-info "GPL-2.0-with-classpath-exception"))))
+  (testing "SPDX expressions"
+    (is (valid-info= {"GPL-2.0-only WITH Classpath-exception-2.0" {:type :declared :strategy :spdx-expression :source '("GPL-2.0 WITH Classpath-exception-2.0")}}
+               (name->expressions-info "GPL-2.0 WITH Classpath-exception-2.0"))))
+  (testing "Single expressions that are not valid SPDX"
+    (is (valid-info= {"GPL-2.0-only WITH Classpath-exception-2.0" {:type :declared :strategy :spdx-expression :source '("GPL-2.0 WITH Classpath-exception-2.0")}}
+                     (name->expressions-info "GNU General Public License, version 2 with the GNU Classpath Exception"))))
+  (testing "Multiple expressions"
+    (is (valid-info= {"MIT"          {:type :declared  :strategy :spdx-listed-identifier-exact-match :source '("MIT")}
+                      "BSD-4-Clause" {:type :concluded :confidence :low :strategy :regex-name-matching :source '("BSD")}}
+                     (name->expressions-info "MIT / BSD"))))
+  (testing "All names seen in POMs on Clojars as of 2023-07-13"
+    (is (valid-info= {"BSD-3-Clause" {:type :concluded :confidence :medium :strategy :spdx-listed-uri :source '("https://opensource.org/licenses/BSD-3-Clause")}}
+                     (name->expressions-info "https://opensource.org/licenses/BSD-3-Clause")))
+    (is (valid-info= {"EPL-2.0" {:type :concluded :confidence :medium :strategy :regex-name-matching :source '("Eclipse Public License - v 2.0")}}
+                     (name->expressions-info "Eclipse Public License - v 2.0")))))
+
 (deftest uri->ids-tests
   (testing "Nil, empty or blank uri"
-    (is (nil?                                                (uri->ids nil)))
-    (is (nil?                                                (uri->ids "")))
-    (is (nil?                                                (uri->ids "       ")))
-    (is (nil?                                                (uri->ids "\n")))
-    (is (nil?                                                (uri->ids "\t"))))
+    (is (nil?                           (uri->ids nil)))
+    (is (nil?                           (uri->ids "")))
+    (is (nil?                           (uri->ids "       ")))
+    (is (nil?                           (uri->ids "\n")))
+    (is (nil?                           (uri->ids "\t"))))
   (testing "URIs that appear verbatim in the SPDX license or exception lists"
-    (is (= #{"Apache-2.0"}                                   (uri->ids "http://www.apache.org/licenses/LICENSE-2.0.html")))
-    (is (= #{"Apache-2.0"}                                   (uri->ids "               http://www.apache.org/licenses/LICENSE-2.0.html             ")))   ; Test whitespace
-    (is (= #{"AGPL-3.0-or-later" "AGPL-3.0-only" "AGPL-3.0"} (uri->ids "https://www.gnu.org/licenses/agpl.txt")))
-    (is (= #{"CC-BY-SA-4.0"}                                 (uri->ids "https://creativecommons.org/licenses/by-sa/4.0/legalcode")))
-    (is (= #{"Classpath-exception-2.0"}                      (uri->ids "https://www.gnu.org/software/classpath/license.html"))))
+    (is (= #{"Apache-2.0"}              (uri->ids "http://www.apache.org/licenses/LICENSE-2.0.html")))
+    (is (= #{"Apache-2.0"}              (uri->ids "               http://www.apache.org/licenses/LICENSE-2.0.html             ")))   ; Test whitespace
+    (is (= #{"AGPL-3.0-or-later"}       (uri->ids "https://www.gnu.org/licenses/agpl.txt")))
+    (is (= #{"CC-BY-SA-4.0"}            (uri->ids "https://creativecommons.org/licenses/by-sa/4.0/legalcode")))
+    (is (= #{"Classpath-exception-2.0"} (uri->ids "https://www.gnu.org/software/classpath/license.html"))))
   (testing "URI variations that should be handled identically"
-    (is (= #{"Apache-2.0"}                                   (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.html")))
-    (is (= #{"Apache-2.0"}                                   (uri->ids "http://www.apache.org/licenses/LICENSE-2.0.html")))
-    (is (= #{"Apache-2.0"}                                   (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")))
-    (is (= #{"Apache-2.0"}                                   (uri->ids "http://apache.org/licenses/LICENSE-2.0.pdf"))))
+    (is (= #{"Apache-2.0"}              (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.html")))
+    (is (= #{"Apache-2.0"}              (uri->ids "http://www.apache.org/licenses/LICENSE-2.0.html")))
+    (is (= #{"Apache-2.0"}              (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")))
+    (is (= #{"Apache-2.0"}              (uri->ids "http://apache.org/licenses/LICENSE-2.0.pdf"))))
   (testing "URIs that appear in licensey things, but aren't in the SPDX license list as shown"
-    (is (= #{"Apache-2.0"}                                   (uri->ids "http://www.apache.org/licenses/LICENSE-2.0")))
-    (is (= #{"Apache-2.0"}                                   (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt"))))
+    (is (= #{"Apache-2.0"}              (uri->ids "http://www.apache.org/licenses/LICENSE-2.0")))
+    (is (= #{"Apache-2.0"}              (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt"))))
   (testing "URIs that aren't in the SPDX license list, but do match via retrieval and full text matching"
-    (is (= #{"Apache-2.0"}                                   (uri->ids "https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE")))
-    (is (= #{"Apache-2.0"}                                   (uri->ids "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))
-    (is (= #{"Apache-2.0"}                                   (uri->ids "HTTPS://GITHUB.COM/pmonks/lice-comb/blob/main/LICENSE")))))
-)
+    (is (= #{"Apache-2.0"}              (uri->ids "https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE")))
+    (is (= #{"Apache-2.0"}              (uri->ids "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))
+    (is (= #{"Apache-2.0"}              (uri->ids "HTTPS://GITHUB.COM/pmonks/lice-comb/blob/main/LICENSE")))))

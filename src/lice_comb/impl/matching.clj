@@ -55,8 +55,14 @@
                                             "LGPL-2.1"
                                             "LGPL-3.0"})
 
+(defn- dis
+  "Remove the given key(s) from the associative collection (set or map)."
+  [associative & ks]
+  (cond (set? associative) (apply disj   associative ks)
+        (map? associative) (apply dissoc associative ks)))
+
 (defn- fix-gpl-only-or-later
-  "If the set of ids includes both an 'only' and an 'or-later' variant of the
+  "If the keys of ids includes both an 'only' and an 'or-later' variant of the
   same underlying GNU family identifier, remove the 'only' variant."
   [ids]
   (loop [result ids
@@ -65,47 +71,42 @@
     (if f
       (recur (if (and (contains? result (str f "-only"))
                       (contains? result (str f "-or-later")))
-               (disj result (str f "-only"))
+               (dis result (str f "-only"))
                result)
              (first r)
              (rest r))
       result)))
 
 (defn- fix-public-domain-cc0
-  "If the set of ids includes both CC0-1.0 and lice-comb's public domain
+  "If the keys of ids includes both CC0-1.0 and lice-comb's public domain
   LicenseRef, remove the LicenseRef as it's redundant."
   [ids]
   (if (and (contains? ids (lcis/public-domain))
            (contains? ids "CC0-1.0"))
-    (disj ids (lcis/public-domain))
+    (dis ids (lcis/public-domain))
     ids))
 
 (defn- fix-mpl-2
-  "If the set of ids includes both MPL-2.0 and MPL-2.0-no-copyleft-exception,
+  "If the keys of ids includes both MPL-2.0 and MPL-2.0-no-copyleft-exception,
   remove the MPL-2.0-no-copyleft-exception as it's redundant."
   [ids]
   (if (and (contains? ids "MPL-2.0")
            (contains? ids "MPL-2.0-no-copyleft-exception"))
-    (disj ids "MPL-2.0-no-copyleft-exception")
+    (dis ids "MPL-2.0-no-copyleft-exception")
     ids))
 
 (defn manual-fixes
-  "Manually fix certain invalid combinations of license identifiers in a set."
+  "Manually fix certain invalid combinations of license identifiers in a set or
+  map."
   [ids]
-  (when ids
-    (let [m           (meta ids)
-          result      (some-> ids
-                              direct-replacements
-                              fix-gpl-only-or-later
-                              fix-public-domain-cc0
-                              fix-mpl-2
-                              set)
-          removed-ids (apply disj (set (keys m)) result)
-          m           (apply dissoc m removed-ids)]
-      (with-meta result m))))
+  (some-> ids
+          direct-replacements
+          fix-gpl-only-or-later
+          fix-public-domain-cc0
+          fix-mpl-2))
 
 (defmulti text->ids
-  "Attempts to determine the SPDX license and/or exception identifier(s) (a set)
+  "Attempts to determine the SPDX license and/or exception identifier(s) (a map)
   within the given license text (a String, Reader, InputStream, or something
   that is accepted by clojure.java.io/reader - File, URL, URI, Socket, etc.).
   The result has metadata attached that describes how the identifiers were
@@ -126,9 +127,9 @@
   ; These clj-spdx APIs are *expensive*, so we paralellise them
   (let [f-lic    (future (sm/licenses-within-text   s @lcis/license-ids-d))
         f-exc    (future (sm/exceptions-within-text s @lcis/exception-ids-d))
-        ids      (manual-fixes (set/union @f-lic @f-exc))]
+        ids      (set/union @f-lic @f-exc)]
     (when ids
-      (with-meta ids (into {} (map #(vec [% {:type :concluded :confidence :high :strategy :spdx-text-matching}]) ids))))))
+      (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-text-matching})) ids))))))
 
 (defmethod text->ids java.io.Reader
   [r]
@@ -147,7 +148,7 @@
       (text->ids r))))
 
 (defn uri->ids
-  "Returns the SPDX license and/or exception identifiers (a set) for the given
+  "Returns the SPDX license and/or exception identifiers (a map) for the given
   uri, or nil if there aren't any.  It does this via two steps:
   1. Seeing if the given URI is in the license or exception list, and returning
      the ids of the associated licenses and/or exceptions if so
@@ -171,19 +172,18 @@
       (let [suri (lcu/simplify-uri uri)]
         ; 1. see if the URI string matches any of the URIs in the SPDX license list (using "simplified" URIs)
         (if-let [ids (get @lcis/index-uri-to-id-d suri)]
-          (let [metadata (into {} (map #(vec [% {:type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)}]) ids))]
-            (with-meta ids metadata))
+          (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)})) ids))
           ; 2. attempt to retrieve the text/plain contents of the uri and perform full license matching on it
           (when-let [license-text (lcihttp/get-text uri)]
             (when-let [ids (text->ids license-text)]
-              (lcimd/prepend-source ids (str uri " (retrieved text)")))))))))
+              (lcimd/prepend-source ids (str "Text retrieved from " uri)))))))))
 
 (defn- string->ids-info
-  "Converts the given String into a sequence of singleton maps, each of which
-  has a key is that is an SPDX identifier (either a listed SPDX license or
-  exception id), and whose value is meta-information about how that identifier
-  was found. The result sequence is ordered in the same order of appearance as
-  the source values in s.
+  "Converts the given String into a sequence of singleton maps (NOT A SINGLE
+  MAP!), each of which has a key is that is an SPDX identifier (either a listed
+  SPDX license or exception id), and whose value is a list of meta-information
+  about how that identifier was found. The result sequence is ordered in the
+  same order of appearance as the source values in s.
 
   If no listed SPDX license or exception identifiers are found, returns a
   singleton sequence containing a map with a lice-comb specific 'unlisted'
@@ -202,19 +202,20 @@
     (let [s (s/trim s)]
       (if-let [id (get @lcis/spdx-ids-d (s/lower-case s))]
         (if (= id s)
-          (list {id {:type :declared :strategy :spdx-listed-identifier-exact-match :source (list s)}})
-          (list {id {:type :concluded :confidence :high :strategy :spdx-listed-identifier-case-insensitive-match :source (list s)}}))
+          (list {id (list {:id id :type :declared :strategy :spdx-listed-identifier-exact-match :source (list s)})})
+          (list {id (list {:id id :type :concluded :confidence :high :strategy :spdx-listed-identifier-case-insensitive-match :source (list s)})}))
         ; 2. Is it an SPDX license or exception name?
         (if-let [ids (get @lcis/index-name-to-id-d (s/trim (s/lower-case s)))]
-          (map #(hash-map % {:type :concluded :confidence :medium :strategy :spdx-listed-name :source (list s)}) ids)
+          (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-name :source (list s)})) ids)
           ; 3. Is it a URI?  If so, perform URI matching on it (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
           (if-let [ids (uri->ids s)]
-            (let [metadata (meta ids)]
-              (map #(hash-map % (get metadata %)) ids))  ; Convert metadata from uri->ids back into a regular map (so that it survives expression building)
+            ids
             ; 4. Attempt regex name matching
-            (if-let [ids (lcirm/match-regexes s)]
-              (map #(hash-map % (get (meta ids) %)) ids)  ; Convert metadata from match-regexes back into a regular map (so that it survives expression building)
-              (list {(lcis/name->unlisted s) {:type :concluded :confidence :low :strategy :unlisted :source (list s)}}))))))))
+            (if-let [ids (lcirm/matches s)]
+              ids
+              ; 5. No clue, so return a single unlisted SPDX LicenseRef
+              (let [id (lcis/name->unlisted s)]
+                (list {id (list {:id id :type :concluded :confidence :low :strategy :unlisted :source (list s)})})))))))))
 
 (defn- filter-blanks
   "Filter blank strings out of coll"
@@ -252,7 +253,8 @@
 
 (defn- process-expression-element
   "Processes a single new expression element e (either a keyword representing
-  an SPDX operator, or an SPDX identifier) in the context of stack (list) s."
+  an SPDX operator, or a map representing an SPDX identifier) in the context of
+  stack (list) s."
   [s e]
   (if (keyword? e)
     ; e is a keyword (SPDX operator): only push a keyword if the prior element was an id, or it's different to the prior keyword
@@ -272,41 +274,42 @@
           (if (nil? prior)
             (push s-minus-2 e)       ; s had one keyword on it (which is invalid), so drop it and push e on
             (if (or (not= :with kw)  ; If the prior keyword was :and or :or, or :with and the current element is a listed exception id, build an SPDX expression fragment and push the result onto s
-                    (se/listed-id? e))
-              (push s-minus-2 (s/join " " [prior operator e]))
+                    (se/listed-id? (first (keys e))))
+              (let [k (s/join " " [(first (keys prior)) operator (first (keys e))])
+                    v (distinct (concat (list {:type :concluded :confidence :low :strategy :expression-inference})
+                                        (first (vals prior))
+                                        (first (vals e))))]
+                (push s-minus-2 {k v}))
               (push s-minus-1 e))))  ; We had a :with operator without a valid exception id following it, so simply drop the :with keyword from the stack and push the current element on
       ; Many keywords? That's invalid (since we dedupe them when they get pushed on, so this means they're different), so drop all of them and push e onto s
       (push (drop-while keyword? s) e))))
 
-(defn- build-spdx-expressions
-  "Builds a set of SPDX expressions from the given list of strings & keywords."
+(defn- build-spdx-expressions-map
+  "Builds a single SPDX expressions map from the given list of keywords and SPDX expession maps."
   [l]
   (loop [result '()
          f      (first l)
          r      (rest l)]
     (if f
       (recur (process-expression-element result f) (first r) (rest r))
-      (some-> (seq (reverse result))  ; Remember to reverse the expressions, since lists-as-stacks grow at the front, not the end
-              set
-              manual-fixes))))
+      (manual-fixes (into {} result)))))
 
 (defn attempt-to-build-expressions
-  "Attempts to build SPDX expression(s) (a set of strings) from the
-  given name. The result has metadata attached that describes how the
-  identifiers were determined."
+  "Attempts to build SPDX expression(s) (a map) from the given name.
+
+  The keys in the maps are the detected SPDX license and exception identifiers,
+  and each value contains information about how that identifiers was determined."
   [name]
-  (when-let [partial-expressions (some->> (split-on-operators name)
-                                          (drop-while keyword?)
-                                          (lc3/rdrop-while keyword?)
-                                          (map #(if (keyword? %) % (string->ids-info %)))
-                                          flatten
-                                          (filter identity)
-                                          (drop-while keyword?)
-                                          (lc3/rdrop-while keyword?)
-                                          seq)]
-    (let [spdx-expressions (build-spdx-expressions (map #(if (keyword? %) % (first (keys %))) partial-expressions))
-          metadata         (into {} (filter (complement keyword?) partial-expressions))]
-      (with-meta spdx-expressions metadata))))
+  (some->> (split-on-operators name)
+           (drop-while keyword?)
+           (lc3/rdrop-while keyword?)
+           (map #(if (keyword? %) % (string->ids-info %)))
+           flatten
+           (filter identity)
+           (drop-while keyword?)
+           (lc3/rdrop-while keyword?)
+           seq
+           build-spdx-expressions-map))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

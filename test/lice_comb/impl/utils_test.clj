@@ -16,10 +16,11 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.utils-test
+(ns lice-comb.impl.utils-test
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
+            [clojure.java.io            :as io]
             [lice-comb.test-boilerplate :refer [fixture]]
-            [lice-comb.impl.utils       :refer [simplify-uri]]))
+            [lice-comb.impl.utils       :refer [simplify-uri filepath filename]]))
 
 (use-fixtures :once fixture)
 
@@ -58,3 +59,60 @@
     (is (= "http://gnu.org/software/classpath/license"                      (simplify-uri "https://www.gnu.org/software/classpath/license.html")))
     (is (= "http://raw.githubusercontent.com/pmonks/lice-comb/main/license" (simplify-uri "https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE")))
     (is (= "http://github.com/pmonks/lice-comb/blob/main/license"           (simplify-uri "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))))
+
+(deftest filepath-tests
+  (testing "Nil, empty or blank values"
+    (is (nil? (filepath nil)))
+    (is (= "" (filepath "")))
+    (is (= "" (filepath "       ")))
+    (is (= "" (filepath "\n")))
+    (is (= "" (filepath "\t"))))
+  (testing "Files"
+    (is (= "/file.txt"                                               (filepath (io/file "/file.txt"))))
+    (is (= "/some/path/or/other/file.txt"                           (filepath (io/file "/some/path/or/other/file.txt")))))
+  (testing "Strings"
+    (is (= "file.txt"                                               (filepath "file.txt")))
+    (is (= "/some/path/or/other/file.txt"                           (filepath "/some/path/or/other/file.txt")))
+    (is (= "https://www.google.com/"                                (filepath "https://www.google.com/")))
+    (is (= "https://www.google.com/"                                (filepath "       https://www.google.com/       ")))
+    (is (= "https://github.com/pmonks/lice-comb/blob/main/deps.edn" (filepath "https://github.com/pmonks/lice-comb/blob/main/deps.edn"))))
+  (testing "ZipEntries"
+    (is (= "file.txt"                                               (filepath (java.util.zip.ZipEntry. "file.txt"))))
+    (is (= "/some/path/or/other/file.txt"                           (filepath (java.util.zip.ZipEntry. "/some/path/or/other/file.txt")))))
+  (testing "URLs"
+    (is (= "https://www.google.com/"                                (filepath (io/as-url "https://www.google.com/"))))
+    (is (= "https://github.com/pmonks/lice-comb/blob/main/deps.edn" (filepath (io/as-url "https://github.com/pmonks/lice-comb/blob/main/deps.edn")))))
+  (testing "URIs"
+    (is (= "https://www.google.com/"                                (filepath (java.net.URI. "https://www.google.com/"))))
+    (is (= "https://github.com/pmonks/lice-comb/blob/main/deps.edn" (filepath (java.net.URI. "https://github.com/pmonks/lice-comb/blob/main/deps.edn")))))
+  (testing "InputStream"
+    (is (thrown? clojure.lang.ExceptionInfo                         (filepath (io/input-stream "deps.edn"))))))
+
+(deftest filename-tests
+  (testing "Nil, empty or blank values"
+    (is (nil? (filename nil)))
+    (is (= "" (filename "")))
+    (is (= "" (filename "       ")))
+    (is (= "" (filename "\n")))
+    (is (= "" (filename "\t"))))
+  (testing "Files"
+    (is (= "file.txt"                       (filename (io/file "file.txt"))))
+    (is (= "file.txt"                       (filename (io/file "/some/path/or/other/file.txt")))))
+  (testing "Strings"
+    (is (= "file.txt"                       (filename "file.txt")))
+    (is (= "file.txt"                       (filename "/some/path/or/other/file.txt")))
+    (is (= ""                               (filename "https://www.google.com")))
+    (is (= ""                               (filename "https://www.google.com/")))
+    (is (= "deps.edn"                       (filename "https://github.com/pmonks/lice-comb/blob/main/deps.edn"))))
+  (testing "ZipEntries"
+    (is (= "file.txt"                       (filename (java.util.zip.ZipEntry. "file.txt"))))
+    (is (= "file.txt"                       (filename (java.util.zip.ZipEntry. "/some/path/or/other/file.txt")))))
+  (testing "URLs"
+    (is (= ""                               (filename (io/as-url "https://www.google.com/"))))
+    (is (= "deps.edn"                       (filename (io/as-url "https://github.com/pmonks/lice-comb/blob/main/deps.edn")))))
+  (testing "URIs"
+    (is (= ""                               (filename (java.net.URI. "https://www.google.com/"))))
+    (is (= "deps.edn"                       (filename (java.net.URI. "https://github.com/pmonks/lice-comb/blob/main/deps.edn")))))
+  (testing "InputStream"
+    (is (thrown? clojure.lang.ExceptionInfo (filename (io/input-stream "deps.edn"))))))
+

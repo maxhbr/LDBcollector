@@ -25,7 +25,6 @@
             [clojure.java.shell      :as sh]
             [clojure.tools.logging   :as log]
             [xml-in.core             :as xi]
-            [spdx.expressions        :as sexp]
             [lice-comb.matching      :as lcmtch]
             [lice-comb.impl.matching :as lcim]
             [lice-comb.impl.metadata :as lcimd]
@@ -48,7 +47,6 @@
 ; TODO: make this configurable
 (def ^:private remote-maven-repos #{"https://repo.maven.apache.org/maven2" "https://repo.clojars.org"})
 
-;####TODO: MOVE THIS TO AN IMPL NS??
 (defn pom-uri-for-gav
   "Attempts to locate the POM for the given GAV, which is a URI that may point
   to a file in the local Maven repository or a remote Maven repository (e.g. on
@@ -66,44 +64,72 @@
          (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) remote-maven-repos))))))))
 
 (defn- licenses-from-pair
-  "Attempts to determine the license(s) (a set) from a POM license name/URL pair.
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+  "Attempts to determine the license(s) (a map) from a POM license name/URL
+  pair. Returns nil if no matches were found."
   [{:keys [name url]}]
-  (let [name-expressions (when-not (s/blank? name) (lcmtch/name->expressions name))
-        name-ids         (some-> (seq (mapcat #(sexp/extract-ids (sexp/parse %)) name-expressions)) set)
-        uri-ids          (when-not (s/blank? url)  (apply disj (lcmtch/uri->ids url) name-ids))]  ; Only include ids detected from the URL that weren't already detected in the name
-    (lcimd/union name-expressions uri-ids)))
+  ; 1. Look in the name field(s)
+  (if-let [name-expressions (lcimd/prepend-source (lcmtch/name->expressions-info name) "<name> tag")]
+    name-expressions
+    ; 2. If the names didn't give us any licenses, look in the url field(s) (this tends to be slower and less accurate)
+    (when-let [uri-ids (lcimd/prepend-source (lcmtch/uri->ids-info url) "<url> tag")]
+      uri-ids)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
-(defmulti pom->expressions
-  "Attempt to detect the license expression(s) (a set) reported in a pom.xml
+(defn- xml-find-all-alts
+  "As for xi/find-all, but supports an alternative fallback set of tags (to
+  help with namespace messes in pom.xml files)."
+  [xml ks1 ks2]
+  (if-let [result (seq (xi/find-all xml ks1))]
+    result
+    (seq (xi/find-all xml ks2))))
+
+(defn- xml-find-first-string
+  "As for xi/find-first, but assumes the target is a single content tag (and
+  returns that, or nil if it's blank or the tag doesn't exist."
+  [xml ks]
+  (when-let [result (first (xi/find-first xml ks))]
+    (when-not (s/blank? result)
+      result)))
+
+(defn- xml-find-first-string-alts
+  "As for xml-find-first-string, but supports an alternative fallback set of
+  tags (to help with namespace messes in pom.xml files)."
+  [xml ks1 ks2]
+  (if-let [result (xml-find-first-string xml ks1)]
+    result
+    (xml-find-first-string xml ks2)))
+
+(defmulti pom->expressions-info
+  "Attempt to detect the license expression(s) (a map) reported in a pom.xml
   file. pom may be a java.io.InputStream, or anything that can be opened by
   clojure.java.io/input-stream.
 
   Note that if an InputStream is provided:
   1. it's the caller's responsibility to open and close it
-  2. a filename *must* be provided along with the stream (2nd arg)
+  2. a filepath *must* be provided along with the stream (the 2nd arg)
 
   The result has metadata attached that describes how the identifiers in the
   expression(s) were determined."
-  {:arglists '([pom] [pom file-name])}
+  {:arglists '([pom] [pom filepath])}
   (fn [& args] (type (first args))))
 
-; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - so we look for both namespaced and non-namespaced versions of all tags here
-(defmethod pom->expressions java.io.InputStream
-  [pom-is fname]
-  (let [pom-xml        (xml/parse pom-is)
-        licenses       (seq (xi/find-all pom-xml [::pom/project ::pom/licenses ::pom/license]))
-        licenses-no-ns (seq (xi/find-all pom-xml [:project      :licenses      :license]))]
-    (if (or licenses licenses-no-ns)
+; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - so we look for both namespaced and non-namespaced versions of all tags
+(defmethod pom->expressions-info java.io.InputStream
+  [pom-is filepath]
+  (let [pom-xml (xml/parse pom-is)]
+    (if-let [pom-licenses (xml-find-all-alts pom-xml [::pom/project ::pom/licenses] [:project :licenses])]
       ; <licenses> block exists - process it
-      (let [name-uri-pairs (lcu/nset (concat (lcu/map-pad #(hash-map :name (lcu/strim %1) :url (lcu/strim %2)) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))
-                                             (lcu/map-pad #(hash-map :name (lcu/strim %1) :url (lcu/strim %2)) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url]))))
-            licenses       (map #(lcimd/prepend-source (licenses-from-pair %) fname) name-uri-pairs)]
-        (lcim/manual-fixes (apply lcimd/union licenses)))
+      (let [name-uri-pairs (some->> pom-licenses
+                                    (filter map?)                                                    ; Get rid of non-tag content (whitespace etc.)
+                                    (filter #(or (= ::pom/license (:tag %)) (= :license (:tag %))))  ; Get rid of non <license> tags (which shouldn't exist, but Maven POMs are a shitshow...)
+                                    (map #(identity (let [name (xml-find-first-string-alts % [::pom/license ::pom/name] [:license :name])
+                                                          url  (xml-find-first-string-alts % [::pom/license ::pom/url]  [:license :url])]
+                                                      (when (or name url)
+                                                        {:name name :url url}))))
+                                    set)
+            licenses       (into {} (map #(lcimd/prepend-source (licenses-from-pair %) filepath) name-uri-pairs))]
+        (lcim/manual-fixes licenses))
       ; License block doesn't exist, so attempt to lookup the parent pom and get it from there
       (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
             parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
@@ -115,16 +141,33 @@
                                                     :artifact-id (lcu/strim (first (xi/find-first parent-no-ns [:artifactId])))
                                                     :version     (lcu/strim (first (xi/find-first parent-no-ns [:version])))}))]
         (when-not (empty? parent-gav)
-          (pom->expressions (pom-uri-for-gav parent-gav)))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
+          (pom->expressions-info (pom-uri-for-gav parent-gav)))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
 
-(defmethod pom->expressions :default
-  ([pom] (pom->expressions pom (lcu/filename pom)))
-  ([pom fname]
+(defmethod pom->expressions-info :default
+  ([pom] (pom->expressions-info pom (lcu/filepath pom)))
+  ([pom filepath]
    (when pom
      (with-open [pom-is (io/input-stream pom)]
-       (if-let [expressions (pom->expressions pom-is fname)]
+       (if-let [expressions (pom->expressions-info pom-is filepath)]
          expressions
-         (log/info (str "'" pom "'") "contains no license information"))))))
+         (log/info (str "'" filepath "'") "contains no license information"))))))
+
+(defn pom->expressions
+  "Attempt to detect the license expression(s) (a set) reported in a pom.xml
+  file. pom may be a java.io.InputStream, or anything that can be opened by
+  clojure.java.io/input-stream.
+
+  Note that if an InputStream is provided:
+  1. it's the caller's responsibility to open and close it
+  2. a filepath *must* be provided along with the stream (the 2nd arg)
+
+  The result has metadata attached that describes how the identifiers in the
+  expression(s) were determined."
+  ([pom] (pom->expressions pom (lcu/filepath pom)))
+  ([pom filepath]
+   (some-> (pom->expressions-info pom filepath)
+           keys
+           set)))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

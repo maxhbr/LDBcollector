@@ -19,10 +19,11 @@
 (ns lice-comb.impl.regex-matching
   "Helper functionality focused on regex matching. Note: this namespace is not
   part of the public API of lice-comb and may change without notice."
-  (:require [clojure.string       :as s]
-            [rencg.api            :as rencg]
-            [lice-comb.impl.spdx  :as lcis]
-            [lice-comb.impl.utils :as lcu]))
+  (:require [clojure.string          :as s]
+            [medley.core             :as med]
+            [rencg.api               :as rencg]
+            [lice-comb.impl.spdx     :as lcis]
+            [lice-comb.impl.utils    :as lcu]))
 
 (defn- get-rencgs
   "Get a value for an re-ncg, potentially looking at multiple ncgs in order
@@ -50,7 +51,7 @@
           (contains? @lcis/exception-ids-d id))
     id
     (throw (ex-info (str "Invalid SPDX id constructed: '" id
-                         "'' - please raise an issue at "
+                         "' - please raise an issue at "
                          "https://github.com/pmonks/lice-comb/issues/new?assignees=pmonks&labels=bug&template=Invalid_id_constructed.md&title=Invalid+SPDX+identifer+constructed:+" id)
                     {:id id}))))
 
@@ -269,7 +270,7 @@
        :pad-ver?   true
        :latest-ver "1.0"}
       {:id         "Creative commons family"
-       :regex      #"(?i)(\bCC\sBY|Creative[\s-]+Commons(?!([\s-]+Legal[\s-]+Code)?[\s-]+Attribution)|(Creative[\s-]+Commons[\s-]+([\s-]+Legal[\s-]+Code)?)?(?<!BSD[\s-]+(\d|two|three|four)[\s-]+Clause\s+)Attribution)([\s,-]*((?<noncommercial>Non\s*Commercial|NC)|(?<noderivatives>No[\s-]*Deriv(ative)?s?|ND)|(?<sharealike>Share[\s-]*Alike|SA)))*(V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\s*(?<region>Australia|Austria|England((\s+and|\&)?\s+Wales)?|France|Germany|IGO|Japan|Netherlands|UK|United\s+States|USA?)?"
+       :regex      #"(?i)(\bCC[\s-]BY|Creative[\s-]+Commons(?!([\s-]+Legal[\s-]+Code)?[\s-]+Attribution)|(Creative[\s-]+Commons[\s-]+([\s-]+Legal[\s-]+Code)?)?(?<!BSD[\s-]+(\d|two|three|four)[\s-]+Clause\s+)Attribution)(\s+Licen[cs]e)?([\s,-]*((?<noncommercial>Non\s*Commercial|NC)|(?<noderivatives>No[\s-]*Deriv(ative)?s?|ND)|(?<sharealike>Share[\s-]*Alike|SA)))*(V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\s*(?<region>Australia|Austria|England((\s+and|\&)?\s+Wales)?|France|Germany|IGO|Japan|Netherlands|UK|United\s+States|USA?)?"
        :fn         cc-id-constructor
        :pad-ver?   true
        :latest-ver "4.0"}
@@ -341,16 +342,18 @@
        :fn         (constantly ["Zlib" :medium])}
       ])))
 
-(defn- match-regex
+(defn- match
   "If a match occured for the given regex element when tested against string s,
-  returns a map containing the following keys, or nil if there was no match:
-  * :id         The SPDX identifier of the found license or exception
+  returns a map containing the following keys:
+  * :id         The SPDX license or exception identifier that was determined
   * :type       The 'type' of match - will always have the value :concluded
   * :confidence The confidence of the match: either :high, :medium, or :low
-  * :strategy   The matching strategy - will always have the value :regex-name-matching
+  * :strategy   The matching strategy - will always have the value :regex-matching
   * :source     A list of strings containing source information (specifically
                 the portion of the string s that matched this regex element)
-  *: start      The start index of the given match within s"
+  *: start      The start index of the given match within s
+
+  Returns nil if there was no match."
   [s elem]
   (when-let [match (rencg/re-find-ncg (:regex elem) s)]
     (let [[id confidence] ((:fn elem) (merge {:name s} elem match))
@@ -358,29 +361,33 @@
       {:id         id
        :type       :concluded
        :confidence (if (= source id) :high confidence)
-       :strategy   :regex-name-matching
+       :strategy   :regex-matching
        :source     (list source)
        :start      (:start match)})))
 
-(defn match-regexes
-  "Returns a sequence (NOT A SET!) of the SPDX license or exception ids that
-  were found in the string s, or nil if there were no matches.  Results are in
-  the order in which they appear in the string.  The result also has metadata
-  attached, which is a map whose keys are each of the SPDX license or exception
-  ids, and whose values are a map containing these keys:
+(defn matches
+  "Returns a sequence (NOT A SET!) of maps where each key is a SPDX license or
+  exception identifier (a String) that was found in s, and the value is a
+  sequence containing a single map describing how the identifier was determined.
+  The map contains these keys:
   * :type       The 'type' of match - will always have the value :concluded
   * :confidence The confidence of the match: either :high, :medium, or :low
-  * :strategy   The matching strategy - will always have the value :regex-name-matching
-  * :source     A list of strings containing source information (specifically
-                the portion of the string s that matched this identifier"
+  * :strategy   The matching strategy - will always have the value :regex-matching
+  * :source     A sequence of strings containing source information
+                (specifically the substring of s that matched this identifier)
+
+  Results are in the order in which they appear in the string, and the function
+  returns nil if there were no matches."
   [s]
-  (when-let [matches (seq (distinct (filter identity (pmap (partial match-regex s) @license-name-matching-d))))]
-    (let [ids     (some->> matches
-                           (sort-by :start)
-                           (map :id)
-                           (distinct))
-          metadata (into {} (map #(vec [% (dissoc (first (filter (fn [x] (= % (:id x))) matches)) :start :id)]) ids))]
-      (with-meta ids metadata))))
+  (when-let [matches (seq (filter identity (map (partial match s) @license-name-matching-d)))]
+    (some->> matches
+             (med/distinct-by :id)    ;####TODO: THINK ABOUT MERGING INSTEAD OF DROPPING
+             (sort-by :start)
+             (map #(hash-map (:id %) (list {:id         (:id %)   ; We duplicate this here in case the result gets merged into an expression
+                                            :type       (:type %)
+                                            :confidence (:confidence %)
+                                            :strategy   (:strategy %)
+                                            :source     (:source %)}))))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

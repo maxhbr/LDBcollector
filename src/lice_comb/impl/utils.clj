@@ -124,9 +124,45 @@
               (s/replace #"\.[\p{Alnum}]{3,}\z" ""))        ; Strip file type extension (if any)
           luri)))))
 
+(defmulti filepath
+  "Returns the full path and name of the given file-like thing (String, File,
+  ZipEntry, URI, URL)."
+  type)
+
+(defmethod filepath nil
+  [_])
+
+(defmethod filepath java.io.File
+  [^java.io.File f]
+  (.getPath f))
+
+(defmethod filepath java.lang.String
+  [s]
+  (when s
+    (let [s (s/trim s)]
+      (if (valid-http-uri? s)
+        (filepath (io/as-url s))
+        (filepath (io/file   s))))))
+
+(defmethod filepath java.util.zip.ZipEntry
+  [^java.util.zip.ZipEntry ze]
+  (.getName ze))
+
+(defmethod filepath java.net.URI
+  [^java.net.URI uri]
+  (str uri))
+
+(defmethod filepath java.net.URL
+  [^java.net.URL url]
+  (str url))
+
+(defmethod filepath java.io.InputStream
+  [_]
+  (throw (ex-info "Cannot determine filepath of an InputStream - did you forget to provide it separately?" {})))
+
 (defmulti filename
-  "Returns just the name component of the given file or path string, excluding
-  any parents."
+  "Returns just the name component of the given file-like thing (String, File,
+  ZipEntry, URI, URL), excluding any parents."
   type)
 
 (defmethod filename nil
@@ -138,11 +174,15 @@
 
 (defmethod filename java.lang.String
   [s]
-  (filename (io/file s)))
+  (when s
+    (let [s (s/trim s)]
+      (if (valid-http-uri? s)
+        (filename (io/as-url s))
+        (filename (io/file s))))))
 
 (defmethod filename java.util.zip.ZipEntry
   [^java.util.zip.ZipEntry ze]
-  (filename (.getName ze)))   ; Note that Zip Entry names include the entire path
+  (filename (.getName ze)))
 
 (defmethod filename java.net.URI
   [^java.net.URI uri]

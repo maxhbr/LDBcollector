@@ -33,14 +33,15 @@
 
   Note: does not throw - returns false on errors."
   [uri]
-  (when (lcu/valid-http-uri? (str uri))
-    (try
-      (when-let [response (hc/head (str uri)
-                                   {:http-client @http-client-d
-                                    :header      {"user agent" "com.github.pmonks/lice-comb"}})]
-        (= 200 (:status response)))
-      (catch Exception _
-        false))))
+  (boolean
+    (when (lcu/valid-http-uri? (str uri))
+      (try
+        (when-let [response (hc/head (str uri)
+                                     {:http-client @http-client-d
+                                      :header      {"user agent" "com.github.pmonks/lice-comb"}})]
+          (= 200 (:status response)))
+        (catch Exception _
+          false)))))
 
 (defn- cdn-uri
   "Converts raw URIs into CDN URIs, for these 'known' hosts:
