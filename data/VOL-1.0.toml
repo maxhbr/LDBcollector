@@ -7,13 +7,3 @@ usage = "This license does not meet Fedora's current standards because of a lack
 url = '''
 https://www.volatilityfoundation.org/license/vsl-v1.0
 '''
-
-[fedora]
-
-legacy-name = [
-    "Volatility Software License 1.0"
-]
-
-legacy-abbreviation = [
-    "VOL"
-]
