@@ -19,17 +19,17 @@
 (ns lice-comb.impl.matching
   "Matching helper functionality. Note: this namespace is not part of
   the public API of lice-comb and may change without notice."
-  (:require [clojure.string                :as s]
-            [clojure.set                   :as set]
-            [clojure.java.io               :as io]
-            [spdx.exceptions               :as se]
-            [spdx.matching                 :as sm]
-            [lice-comb.impl.spdx           :as lcis]
-            [lice-comb.impl.regex-matching :as lcirm]
-            [lice-comb.impl.metadata       :as lcimd]
-            [lice-comb.impl.3rd-party      :as lc3]
-            [lice-comb.impl.http           :as lcihttp]
-            [lice-comb.impl.utils          :as lcu]))
+  (:require [clojure.string                  :as s]
+            [clojure.set                     :as set]
+            [clojure.java.io                 :as io]
+            [spdx.exceptions                 :as se]
+            [spdx.matching                   :as sm]
+            [lice-comb.impl.spdx             :as lcis]
+            [lice-comb.impl.regex-matching   :as lcirm]
+            [lice-comb.impl.expressions-info :as lciei]
+            [lice-comb.impl.3rd-party        :as lc3]
+            [lice-comb.impl.http             :as lcihttp]
+            [lice-comb.impl.utils            :as lciu]))
 
 (def ^:private direct-replacements-map {
   #{"GPL-2.0-only"     "Classpath-exception-2.0"} #{"GPL-2.0-only WITH Classpath-exception-2.0"}
@@ -169,14 +169,14 @@
   [uri]
   (when-not (s/blank? uri)
     (manual-fixes
-      (let [suri (lcu/simplify-uri uri)]
+      (let [suri (lciu/simplify-uri uri)]
         ; 1. see if the URI string matches any of the URIs in the SPDX license list (using "simplified" URIs)
         (if-let [ids (get @lcis/index-uri-to-id-d suri)]
           (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)})) ids))
           ; 2. attempt to retrieve the text/plain contents of the uri and perform full license matching on it
           (when-let [license-text (lcihttp/get-text uri)]
             (when-let [ids (text->ids license-text)]
-              (lcimd/prepend-source ids (str "Text retrieved from " uri)))))))))
+              (lciei/prepend-source ids (str "content from " uri)))))))))
 
 (defn- string->ids-info
   "Converts the given String into a sequence of singleton maps (NOT A SINGLE

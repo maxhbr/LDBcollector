@@ -25,7 +25,7 @@
             [spdx.expressions        :as sexp]
             [lice-comb.impl.spdx     :as lcis]
             [lice-comb.impl.matching :as lcim]
-            [lice-comb.impl.utils    :as lcu]))
+            [lice-comb.impl.utils    :as lciu]))
 
 (defn public-domain?
   "Is the given id lice-comb's custom 'public domain' LicenseRef?"
@@ -160,7 +160,7 @@
       (if-let [normalised-expression (sexp/normalise name)]
         {normalised-expression (list {:type :declared :strategy :spdx-expression :source (list name)})}
         ; 2. If it's a URI, use URI matching (this is to handle messed up real world cases where license names in POMs contain a URI)
-        (if (lcu/valid-http-uri? name)
+        (if (lciu/valid-http-uri? name)
           (if-let [ids (uri->ids-info name)]
             ids
             {(lcis/name->unlisted name) (list {:type :concluded :confidence :low :strategy :unlisted :source (list name)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unlisted

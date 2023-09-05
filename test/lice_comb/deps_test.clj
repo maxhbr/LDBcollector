@@ -38,7 +38,7 @@
     (is (valid= #{"Apache-2.0"}                         (dep->expressions ['com.github.pmonks/asf-cat {:deps/manifest :mvn :mvn/version "1.0.12"}])))
     (is (valid= #{"EPL-1.0"}                            (dep->expressions ['org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.10.3"}])))
     (is (valid= #{"EPL-1.0"}                            (dep->expressions ['com.github.athos/clj-check {:deps/manifest :deps :deps/root (str gitlib-dir "/com.github.athos/clj-check") :lice-comb/licenses #{"EPL-1.0"}}])))
-    (is (valid= #{"BSD-3-Clause"}                       (dep->expressions ['org.ow2.asm/asm {:deps/manifest :mvn :mvn/version "5.2"}])))
+    (is (valid= #{"BSD-4-Clause"}                       (dep->expressions ['org.ow2.asm/asm {:deps/manifest :mvn :mvn/version "5.2"}])))
     (is (valid= #{(lcis/public-domain)}                 (dep->expressions ['aopalliance/aopalliance {:deps/manifest :mvn :mvn/version "1.0"}])))
     (is (valid= #{"Apache-2.0"}                         (dep->expressions ['com.amazonaws/aws-java-sdk-core {:deps/manifest :mvn :mvn/version "1.12.129"}])))
     (is (valid= #{"Apache-2.0"}                         (dep->expressions ['com.amazonaws/aws-java-sdk-kms {:deps/manifest :mvn :mvn/version "1.12.129"}])))

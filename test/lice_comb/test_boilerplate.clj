@@ -73,7 +73,7 @@
                                     all-valid-expressions?)]
     ; Yes print here is deliberate, to ensure the output lines are grouped with the associated test failure message
     (when-not result                 (print "\n☔️☔️☔️ Invalid result produced:"))
-    (when-not is-a-set?              (print "\n* Not a set"))
+    (when-not is-a-set?              (print "\n* Not a set:" (type actual)))
     (when-not is-equal?              (print "\n* Not equal to expected"))
     (when-not all-valid-expressions? (print "\n* Not all valid SPDX expressions"))
     result))
@@ -82,24 +82,24 @@
   "Returns true if all of the following are true:
   * actual is a map
   * the keys in actual are identical to expected-keys
-  * all vals in actual are maps
+  * all vals in actual are lists
   * every key in actual is a valid SPDX license expression
 
   Also prints (to stdout) which of the above is not true, in the event that any
   of them are not true."
   [expected actual]
-  (let [is-a-map?              (or (nil? actual) (map? actual))
-        is-equal?              (= expected actual)
-        values-are-maps?       (or (nil? actual) (every? map? (vals actual)))
-        all-valid-expressions? (and is-a-map? (every? true? (map sexp/valid? (keys actual))))
-        result                 (and values-are-maps?
-                                    is-a-map?
-                                    is-equal?
-                                    all-valid-expressions?)]
+  (let [is-a-map?               (or (nil? actual) (map? actual))
+        is-equal?               (= expected actual)
+        values-are-sequentials? (or (nil? actual) (every? sequential? (vals actual)))
+        all-valid-expressions?  (and is-a-map? (every? true? (map sexp/valid? (keys actual))))
+        result                  (and values-are-sequentials?
+                                     is-a-map?
+                                     is-equal?
+                                     all-valid-expressions?)]
     ; Yes print here is deliberate, to ensure the output lines are grouped with the associated test failure message
-    (when-not result                 (print "\n☔️☔️☔️ Invalid result produced:"))
-    (when-not is-a-map?              (print "\n* Not a map"))
-    (when-not is-equal?              (print "\n* Not equal to expected"))
-    (when-not values-are-maps?       (print "\n* Not all values are maps"))
-    (when-not all-valid-expressions? (print "\n* Not all keys are valid SPDX expressions"))
+    (when-not result                  (print "\n☔️☔️☔️ Invalid result produced:"))
+    (when-not is-a-map?               (print "\n* Not a map:" (type actual)))
+    (when-not is-equal?               (print "\n* Not equal to expected"))
+    (when-not values-are-sequentials? (print "\n* Not all values are sequential:" (pr-str (map type (vals actual)))))
+    (when-not all-valid-expressions?  (print "\n* Not all keys are valid SPDX expressions"))
     result))

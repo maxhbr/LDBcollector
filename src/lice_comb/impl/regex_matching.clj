@@ -21,9 +21,10 @@
   part of the public API of lice-comb and may change without notice."
   (:require [clojure.string          :as s]
             [medley.core             :as med]
+            [dom-top.core            :as dom]
             [rencg.api               :as rencg]
             [lice-comb.impl.spdx     :as lcis]
-            [lice-comb.impl.utils    :as lcu]))
+            [lice-comb.impl.utils    :as lciu]))
 
 (defn- get-rencgs
   "Get a value for an re-ncg, potentially looking at multiple ncgs in order
@@ -92,7 +93,7 @@
   [m]
   (let [clause-count1             (number-name-to-number (get-rencgs m ["clausecount1"]))
         clause-count2             (number-name-to-number (get-rencgs m ["clausecount2"]))
-        preferred-clause-count    (case [(lcu/is-digits? clause-count1) (lcu/is-digits? clause-count2)]
+        preferred-clause-count    (case [(lciu/is-digits? clause-count1) (lciu/is-digits? clause-count2)]
                                     [true true]   clause-count1
                                     [true false]  clause-count1
                                     [false true]  clause-count2
@@ -193,7 +194,7 @@
   for s."
   [s]
   {:id    s
-   :regex (re-pattern (str "(?i)\\b" (lcu/escape-re s) "\\b"))
+   :regex (re-pattern (str "(?i)\\b" (lciu/escape-re s) "\\b"))
    :fn    (constantly [s :medium])})
 
 ; The regex for the GNU family is a nightmare, so we build it up (and test it) in pieces
@@ -202,16 +203,16 @@
 (def gpl-re           #"(?<!(Affero|Lesser|Library)\s+)(?<gpl>GNU(?!\s+Classpath)|(?<!(L|A)\s*)GPL|General\s+Public\s+Licen[cs]e)(?!\s+(Affero|Library|Lesser|General\s+Lesser|General\s+Library|LGPL|AGPL))((\s+General)?(?!\s+(Affero|Lesser|Library))\s+Public\s+Licen[cs]e)?(\s+\(?GPL\)?)?")
 (def version-re       #"[\s,-]*(_?V(ersion)?)?[\s\._]*(?<version>\d+([\._]\d+)?)?")
 (def only-or-later-re #"[\s-]*((?<only>only)|(\(?or(\s+\(?at\s+your\s+(option|discretion)\)?)?(\s+any)?)?([\s-]*(?<orLater>later|lator|newer|\+)))?")
-(def gnu-re           (lcu/re-concat "(?x)(?i)\\b(\n# Alternative 1: AGPL\n"
-                                     agpl-re
-                                     "\n# Alternative 2: LGPL\n|"
-                                     lgpl-re
-                                     "\n# Alternative 3: GPL\n|"
-                                     gpl-re
-                                     "\n)\n# Version\n"
-                                     version-re
-                                     "\n# Only/or-Later suffix\n"
-                                     only-or-later-re))
+(def gnu-re           (lciu/re-concat "(?x)(?i)\\b(\n# Alternative 1: AGPL\n"
+                                      agpl-re
+                                      "\n# Alternative 2: LGPL\n|"
+                                      lgpl-re
+                                      "\n# Alternative 3: GPL\n|"
+                                      gpl-re
+                                      "\n)\n# Version\n"
+                                      version-re
+                                      "\n# Only/or-Later suffix\n"
+                                      only-or-later-re))
 
 ; Regexes used for license name matching, along with functions for constructing an SPDX id and confidence metric from them
 (def ^:private license-name-matching-d (delay
@@ -379,7 +380,7 @@
   Results are in the order in which they appear in the string, and the function
   returns nil if there were no matches."
   [s]
-  (when-let [matches (seq (filter identity (map (partial match s) @license-name-matching-d)))]
+  (when-let [matches (seq (filter identity (dom/real-pmap (partial match s) @license-name-matching-d)))]
     (some->> matches
              (med/distinct-by :id)    ;####TODO: THINK ABOUT MERGING INSTEAD OF DROPPING
              (sort-by :start)

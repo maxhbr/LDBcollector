@@ -16,47 +16,23 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.impl.metadata
-  "Metadata helper functionality. Note: this namespace is not part of
-  the public API of lice-comb and may change without notice."
+(ns lice-comb.utils
+  "Miscellaneous functionality."
   (:require [clojure.string :as s]))
 
-(defn prepend-source
-  "Prepends the given source s (a String) onto all metadata sub-maps in m (a
-  lice-comb id+metadata-list map)."
-  [m s]
-  (if (or (empty? m) (s/blank? s))
-    m
-    (into {} (map #(if (sequential? (val %))
-                     (let [id            (key %)
-                           metadata-list (val %)]
-                       (hash-map id (map (fn [x] (assoc x :source (conj (seq (:source x)) s))) metadata-list)))
-                     %)
-                  m))))
-
-(defn merge-maps
-  "Merges any number of lice-comb maps, by concatenating and de-duping values
-  for the same key (expression)."
-  [& maps]
-  (let [maps (filter identity maps)]
-    (when-not (empty? maps)
-      (let [grouped-maps (group-by first (mapcat identity maps))]
-        (into {} (map #(vec [% (seq (distinct (mapcat second (get grouped-maps %))))])
-                      (keys grouped-maps)))))))
-
-(def ^:private strategies {
+(def ^:private strategy->string {
   :spdx-expression                               "SPDX expression"
   :spdx-listed-identifier-exact-match            "SPDX identifier"
   :spdx-listed-identifier-case-insensitive-match "SPDX identifier (case insensitive match)"
   :spdx-text-matching                            "SPDX license text matching"
   :spdx-listed-name                              "SPDX listed name (case insensitive match)"
   :spdx-listed-uri                               "SPDX listed URI (relaxed matching)"
-  :expression-inference                          "Inferred SPDX expression"
-  :regex-matching                                "Regular expression matching"
-  :unlisted                                      "Unlisted"})
+  :expression-inference                          "inferred SPDX expression"
+  :regex-matching                                "regular expression matching"
+  :unlisted                                      "fallback to unlisted LicenseRef"})
 
-(defn- metadata-keyfn
-  "sort-by keyfn for lice-comb metadata maps"
+(defn- info-keyfn
+  "sort-by keyfn for lice-comb info maps"
   [metadata]
   (str (case (:id metadata)
          nil "0"
@@ -83,25 +59,27 @@
          :regex-matching                                "7"
          :unlisted                                      "8")))
 
-(defn- metadata-element->string
-  "Converts the metadata list for the given identifier into a human-readable
-  string."
+(defn- license-info-element->string
+  "Converts the info list for the given identifier into a human-readable
+  string, using the information in license-info map m."
   [m id]
   (str id ":\n"
-    (when-let [metadata-list (sort-by metadata-keyfn (seq (get m id)))]
+    (when-let [info-list (sort-by info-keyfn (seq (get m id)))]
       (s/join "\n" (map #(str "  "
                               (when-let [md-id (:id %)] (when (not= id md-id) (str md-id " ")))
                               (case (:type %)
                                 :declared  "Declared"
                                 :concluded "Concluded")
                               (when-let [confidence (:confidence %)]   (str "\n    Confidence: "    (name confidence)))
-                              (when-let [strategy   (:strategy %)]     (str "\n    Strategy: "      (get strategies strategy (name strategy))))
+                              (when-let [strategy   (:strategy %)]     (str "\n    Strategy: "      (get strategy->string strategy (name strategy))))
                               (when-let [source     (seq (:source %))] (str "\n    Source:\n    > " (s/join "\n    > " source))))
-                        metadata-list)))))
+                        info-list)))))
 
-(defn metadata->string
-  "Converts lice-comb map m into a human-readable string."
+(defn license-info->string
+  "Converts lice-comb license-info map m into a human-readable string.  This
+  function is mostly intended for debugging / developer discovery purposes, and
+  the content and format of the output may change without warning."
   [m]
   (when m
     (let [ids (sort (keys m))]
-      (s/join "\n\n" (map (partial metadata-element->string m) ids)))))
+      (s/join "\n\n" (map (partial license-info-element->string m) ids)))))

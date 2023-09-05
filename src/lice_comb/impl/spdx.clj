@@ -23,7 +23,7 @@
             [spdx.licenses            :as sl]
             [spdx.exceptions          :as se]
             [spdx.expressions         :as sexp]
-            [lice-comb.impl.utils     :as lcu]))
+            [lice-comb.impl.utils     :as lciu]))
 
 ; The subset of SPDX license identifiers that we use; specifically excludes the superceded deprecated GPL family identifiers
 (def license-ids-d
@@ -54,18 +54,18 @@
   [list-entry]
   [(s/lower-case (s/trim (:name list-entry))) (:id list-entry)])
 
-(def index-name-to-id-d (delay (merge (lcu/mapfonv #(lcu/nset (map second %)) (group-by first (map name-to-id-tuple @license-list-d)))
-                                      (lcu/mapfonv #(lcu/nset (map second %)) (group-by first (map name-to-id-tuple @exception-list-d))))))
+(def index-name-to-id-d (delay (merge (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (map name-to-id-tuple @license-list-d)))
+                                      (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (map name-to-id-tuple @exception-list-d))))))
 
 (defn- urls-to-id-tuples
   "Extracts all urls for a given list (license or exception) entry."
   [list-entry]
   (let [id              (:id list-entry)
-        simplified-uris (map lcu/simplify-uri (filter (complement s/blank?) (concat (:see-also list-entry) (get-in list-entry [:cross-refs :url]))))]
+        simplified-uris (map lciu/simplify-uri (filter (complement s/blank?) (concat (:see-also list-entry) (get-in list-entry [:cross-refs :url]))))]
     (map #(vec [% id]) simplified-uris)))
 
-(def index-uri-to-id-d (delay (merge (lcu/mapfonv #(lcu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @license-list-d)))
-                                     (lcu/mapfonv #(lcu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @exception-list-d))))))
+(def index-uri-to-id-d (delay (merge (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @license-list-d)))
+                                     (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @exception-list-d))))))
 
 (defn public-domain?
   "Is the given id lice-comb's custom 'public domain' LicenseRef?"
@@ -100,7 +100,7 @@
   unlisted license, with the given name appended as Base62 (since clj-spdx
   identifiers are basically constrained to [A-Z][a-z][0-9] ie. Base62)."
   [name]
-  (str unlisted-license-ref-prefix (when-not (s/blank? name) (str "-" (lcu/base62-encode name)))))
+  (str unlisted-license-ref-prefix (when-not (s/blank? name) (str "-" (lciu/base62-encode name)))))
 
 (defn unlisted->name
   "Get the original name of the given unlisted license. Returns nil if id is nil
@@ -109,7 +109,7 @@
   (when (unlisted? id)
     (str "Unlisted ("
          (if (> (count id) (count unlisted-license-ref-prefix))
-           (lcu/base62-decode (subs id (+ 2 (count unlisted-license-ref-prefix))))
+           (lciu/base62-decode (subs id (+ 2 (count unlisted-license-ref-prefix))))
            "-original name not available-")
           ")")))
 

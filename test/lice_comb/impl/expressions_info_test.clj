@@ -16,10 +16,10 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(ns lice-comb.impl.metadata-test
-  (:require [clojure.test               :refer [deftest testing is use-fixtures]]
-            [lice-comb.test-boilerplate :refer [fixture]]
-            [lice-comb.impl.metadata    :refer [prepend-source merge-maps]]))
+(ns lice-comb.impl.expressions-info-test
+  (:require [clojure.test                    :refer [deftest testing is use-fixtures]]
+            [lice-comb.test-boilerplate      :refer [fixture]]
+            [lice-comb.impl.expressions-info :refer [prepend-source merge-maps]]))
 
 (use-fixtures :once fixture)
 

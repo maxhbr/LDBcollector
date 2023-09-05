@@ -56,7 +56,8 @@
     (is (= false (probable-license-file? "pm.xml"))))
   (testing "Filenames including paths"
     (is (= true  (probable-license-file? "/path/to/a/project/containing/a/pom.xml")))
-    (is (= false (probable-license-file? "/a/different/path/to/some/NOTICES")))))
+    (is (= false (probable-license-file? "/a/different/path/to/some/NOTICES")))
+    (is (= true  (probable-license-file? "https://repo1.maven.org/maven2/org/activecomponents/jadex/jadex-kernel-component/3.0.117/jadex-kernel-component-3.0.117.pom")))))
 
 (deftest probable-license-files-tests
   (testing "Nil, empty, or blank directory"
@@ -65,6 +66,8 @@
     (is (thrown? java.io.FileNotFoundException (probable-license-files "       ")))
     (is (thrown? java.io.FileNotFoundException (probable-license-files "\n")))
     (is (thrown? java.io.FileNotFoundException (probable-license-files "\t"))))
+  (testing "Doesn't exist"
+    (is (thrown? java.io.FileNotFoundException (probable-license-files "THIS_DIRECTORY_DOESNT_EXIST"))))
   (testing "Not a directory"
     (is (thrown? java.nio.file.NotDirectoryException (probable-license-files "deps.edn"))))
   (testing "A real directory"
@@ -72,6 +75,7 @@
                (io/file (str test-data-path "/with-parent.pom"))
                (io/file (str test-data-path "/no-xml-ns.pom"))
                (io/file (str test-data-path "/simple.pom"))
+               (io/file (str test-data-path "/complex.pom"))
                (io/file (str test-data-path "/CC-BY-4.0/LICENSE"))
                (io/file (str test-data-path "/MPL-2.0/LICENSE"))}
              (probable-license-files test-data-path)))))
@@ -126,9 +130,10 @@
     (is (thrown? java.io.FileNotFoundException       (dir->expressions  "this_directory_does_not_exist")))
     (is (thrown? java.nio.file.NotDirectoryException (dir->expressions  "deps.edn"))))
   (testing "Valid directory"
-    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0"}
-                (dir->expressions  "."))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
+    (is (valid= ;#{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0"}  ; CC-BY-4.0 failing due to https://github.com/spdx/license-list-XML/issues/1960
+                #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0"}
+                (dir->expressions  "."))))
   (testing "Valid directory - include ZIP compressed files"
-    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0" "AGPL-3.0-or-later"}
-                (dir->expressions  "." {:include-zips? true}))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
-)
+    (is (valid= ;#{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0" "AGPL-3.0-or-later"}  ; CC-BY-4.0 failing due to https://github.com/spdx/license-list-XML/issues/1960
+                #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "AGPL-3.0-or-later"}
+                (dir->expressions  "." {:include-zips? true})))))

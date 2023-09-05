@@ -18,17 +18,18 @@
 
 (ns lice-comb.deps
   "Functionality related to finding and determining license information from
-  deps in tools.deps lib-map format."
-  (:require [clojure.string          :as s]
-            [spdx.licenses           :as sl]
-            [lice-comb.maven         :as lcmvn]
-            [lice-comb.files         :as lcf]
-            [lice-comb.impl.data     :as lcd]
-            [lice-comb.impl.metadata :as lcimd]))
+  dependencies in tools.deps lib-map format."
+  (:require [clojure.string                  :as s]
+            [dom-top.core                    :as dom]
+            [spdx.licenses                   :as sl]
+            [lice-comb.maven                 :as lcmvn]
+            [lice-comb.files                 :as lcf]
+            [lice-comb.impl.data             :as lcd]
+            [lice-comb.impl.expressions-info :as lciei]))
 
 ;####TODO: FIGURE OUT HOW TO HANDLE METADATA FOR OVERRIDES / FALLBACKS!!!!
-(def ^:private overrides-d (delay (lcd/load-edn-resource "lice_comb/deps/overrides.edn")))
-(def ^:private fallbacks-d (delay (lcd/load-edn-resource "lice_comb/deps/fallbacks.edn")))
+;(def ^:private overrides-d (delay (lcd/load-edn-resource "lice_comb/deps/overrides.edn")))
+;(def ^:private fallbacks-d (delay (lcd/load-edn-resource "lice_comb/deps/fallbacks.edn")))
 
 ;(defn- check-overrides
 ;  "Checks if an override should be used for the given dep"
@@ -38,6 +39,7 @@
 ;      (:licenses (get @overrides-d gav (get @overrides-d ga))))))  ; Lookup overrides both with and without the version
 
 ;(defn- check-fallbacks
+;####TODO: UPDATE FOR license-info MAP RATHER THAN ID SET
 ;  "Checks if a fallback should be used for the given dep, given the set of
 ;  detected ids"
 ;  [ga ids]
@@ -52,6 +54,19 @@
   [[ga info]]
   (when ga
     [(symbol (first (s/split (str ga) #"\$"))) info]))
+
+(defmulti ^:private dep->string
+  "Converts a dep to a string."
+  {:arglists '([[ga info]])}
+  (fn [[_ info]] (:deps/manifest info)))
+
+(defmethod ^:private dep->string :mvn
+  [[ga info]]
+  (str ga "@" (:mvn/version info)))
+
+(defmethod ^:private dep->string :deps
+  [[ga info]]
+  (str ga "@" (:git/sha info) (when-let [tag (:git/tag info)] (str "/" tag))))
 
 (defmulti dep->expressions-info
   "Attempt to detect the SPDX license expression(s) (a map) in a tools.deps
@@ -75,8 +90,9 @@
               expressions ;(check-fallbacks ga
                                            (if-let [expressions (lcmvn/pom->expressions-info pom-uri)]
                                              expressions
-                                             (into {} (pmap #(lcimd/prepend-source (lcf/zip->expressions-info %) dep) (:paths info))))];)]      ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
-          expressions))));)
+                                             (into {} (dom/real-pmap lcf/zip->expressions-info (:paths info))));)  ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
+                                                ]
+          (lciei/prepend-source expressions (dep->string dep))))));)
 
 (defmethod dep->expressions-info :deps
   [dep]
@@ -86,7 +102,7 @@
 ;      (if-let [override (check-overrides ga version)]
 ;        override
 ;        (check-fallbacks ga
-          (lcf/dir->expressions-info (:deps/root info)))));))
+          (lciei/prepend-source (lcf/dir->expressions-info (:deps/root info)) (dep->string dep)))));))
 
 (defmethod dep->expressions-info nil
   [_])
@@ -114,7 +130,7 @@
   `:lice-comb/license-info`)"
   [deps]
   (when deps
-    (into {} (pmap #(let [[k v] %] [k (assoc v :lice-comb/license-info (dep->expressions-info [k v]))]) deps))))
+    (into {} (dom/real-pmap #(let [[k v] %] [k (assoc v :lice-comb/license-info (dep->expressions-info [k v]))]) deps))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
@@ -122,6 +138,8 @@
   this fn, as initialisation will occur implicitly anyway; it is provided to
   allow explicit control of the cost of initialisation to callers who need it."
   []
-  @overrides-d
-  @fallbacks-d
+  (lcmvn/init!)
+  (lcf/init!)
+;  @overrides-d
+;  @fallbacks-d
   nil)

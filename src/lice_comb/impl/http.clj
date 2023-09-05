@@ -22,7 +22,7 @@
   (:require [clojure.string                :as s]
             [clojure.java.io               :as io]
             [hato.client                   :as hc]
-            [lice-comb.impl.utils          :as lcu]))
+            [lice-comb.impl.utils          :as lciu]))
 
 (def ^:private http-client-d (delay (hc/build-http-client {:connect-timeout 1000
                                                            :redirect-policy :always
@@ -34,7 +34,7 @@
   Note: does not throw - returns false on errors."
   [uri]
   (boolean
-    (when (lcu/valid-http-uri? (str uri))
+    (when (lciu/valid-http-uri? (str uri))
       (try
         (when-let [response (hc/head (str uri)
                                      {:http-client @http-client-d
@@ -63,7 +63,7 @@
   unable to do so (including for error conditions - there is no way to
   disambiguate errors from non-text content, for example)."
   [uri]
-  (when (lcu/valid-http-uri? uri)
+  (when (lciu/valid-http-uri? uri)
     (try
       (when-let [response (hc/get (cdn-uri uri)
                                   {:http-client @http-client-d

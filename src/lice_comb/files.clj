@@ -19,26 +19,33 @@
 (ns lice-comb.files
   "Functionality related to finding and determining license information from
   files and directories."
-  (:require [clojure.string          :as s]
-            [clojure.java.io         :as io]
-            [lice-comb.matching      :as lcmtch]
-            [lice-comb.maven         :as lcmvn]
-            [lice-comb.impl.metadata :as lcimd]
-            [lice-comb.impl.utils    :as lcu]))
+  (:require [clojure.string                  :as s]
+            [clojure.java.io                 :as io]
+            [lice-comb.matching              :as lcmtch]
+            [lice-comb.maven                 :as lcmvn]
+            [lice-comb.impl.expressions-info :as lciei]
+            [lice-comb.impl.utils            :as lciu]))
 
 (def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "copying" "unlicense"})   ;TODO: consider "license.md" and #".+\.spdx" (see https://github.com/spdx/spdx-maven-plugin for why the latter is important)...
 
 (defn- ensure-readable-dir
   "Ensures dir (a String or File) refers to a readable directory, and returns it
-  as a File."
+  as a File.
+
+  Throws:
+  * java.io.FileNotFoundException       if dir doesn't exist
+  * java.nio.file.AccessDeniedException if dir is not readable
+  * java.nio.file.NotDirectoryException if dir is not a directory"
   [dir]
-  (when dir
-    (let [dir (io/file dir)]
-      (if (.exists dir)
-        (if (.isDirectory dir)
-          dir
-          (throw (java.nio.file.NotDirectoryException. (str dir))))
-        (throw (java.io.FileNotFoundException. (str dir)))))))
+  (let [result (io/file dir)]
+    (if (and result
+             (.exists result))
+      (if (.canRead result)
+        (if (.isDirectory result)
+          result
+          (throw (java.nio.file.NotDirectoryException. (str result))))
+        (throw (java.nio.file.AccessDeniedException. (str result))))
+      (throw (java.io.FileNotFoundException. (str result))))))
 
 ; This is public because it's used in the tests
 (defn probable-license-file?
@@ -46,7 +53,7 @@
   probable license file, false otherwise."
   [f]
   (and (not (nil? f))
-       (let [fname (s/lower-case (lcu/filename f))]
+       (let [fname (s/lower-case (lciu/filename f))]
          (and (not (s/blank? fname))
               (or (contains? probable-license-filenames fname)
                   (s/ends-with? fname ".pom"))))))
@@ -57,9 +64,10 @@
   set of java.io.File objects. dir may be a String or a java.io.File, either of
   which must refer to a readable directory."
   [dir]
-  (when-let [dir (ensure-readable-dir dir)]
-    (some-> (seq (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq dir)))
-            set)))
+  (when dir
+    (when-let [d (ensure-readable-dir dir)]
+      (some-> (seq (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq d)))
+              set))))
 
 (defn file->expressions-info
   "Attempts to determine the SPDX license expression(s) (a map) from the given
@@ -70,15 +78,15 @@
 
   The result has metadata attached that describes how the identifiers in the
   expression(s) were determined."
-  ([f] (file->expressions-info f (lcu/filepath f)))
+  ([f] (file->expressions-info f (lciu/filepath f)))
   ([f filepath]
-   (when (and f (not (s/blank? filepath)))
-     (let [fname  (lcu/filename filepath)
+   (when f
+     (let [fname  (lciu/filename filepath)
            lfname (s/lower-case fname)]
-            (lcimd/prepend-source (cond (= lfname "pom.xml")              (lcmvn/pom->expressions-info f fname)
+            (lciei/prepend-source (cond (= lfname "pom.xml")              (lcmvn/pom->expressions-info f fname)
                                         (s/ends-with? lfname ".pom")      (lcmvn/pom->expressions-info f fname)
-                                        (instance? java.io.InputStream f) (lcmtch/text->ids f)
-                                        :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->ids is))))  ; Default is to assume it's a plain text file containing license text(s)
+                                        (instance? java.io.InputStream f) (lcmtch/text->ids-info f)
+                                        :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->ids-info is))))  ; Default is to assume it's a plain text file containing license text(s)
                                   filepath)))))
 
 (defn file->expressions
@@ -90,7 +98,7 @@
 
   The result has metadata attached that describes how the identifiers in the
   expression(s) were determined."
-  ([f] (file->expressions f (lcu/filepath f)))
+  ([f] (file->expressions f (lciu/filepath f)))
   ([f filepath]
    (some-> (file->expressions-info f filepath)
            keys
@@ -114,10 +122,10 @@
                entry  (.getNextEntry zip-is)]
           (if entry
             (if (probable-license-file? entry)
-              (recur (merge result (lcimd/prepend-source (file->expressions-info zip-is (lcu/filename entry)) (lcu/filepath zip-file)))
+              (recur (merge result (file->expressions-info zip-is (lciu/filename entry)))
                      (.getNextEntry zip-is))
               (recur result (.getNextEntry zip-is)))
-            (when-not (empty? result) result)))))))
+            (when-not (empty? result) (lciei/prepend-source result (lciu/filepath zip-file)))))))))
 
 (defn zip->expressions
   "Attempt to detect the SPDX license expression(s) (a set) in a ZIP file. zip may be a
@@ -159,11 +167,13 @@
   ([dir] (dir->expressions-info dir nil))
   ([dir {:keys [include-zips?] :or {include-zips? false}}]
    (when dir
-     (let [file-expressions (into {} (map file->expressions-info (probable-license-files dir)))]
-       (if include-zips?
-         (let [zip-expressions (into {} (map #(try (zip->expressions-info %) (catch Exception _ nil)) (zip-compressed-files dir)))]
-           (merge file-expressions zip-expressions))
-         file-expressions)))))
+     (lciei/prepend-source
+       (let [file-expressions (into {} (map file->expressions-info (probable-license-files dir)))]
+         (if include-zips?
+           (let [zip-expressions (into {} (map #(try (zip->expressions-info %) (catch Exception _ nil)) (zip-compressed-files dir)))]
+             (merge file-expressions zip-expressions))
+           file-expressions))
+       (lciu/filepath dir)))))
 
 (defn dir->expressions
   "Attempt to detect the SPDX license expression(s) (a map) in a directory. dir
