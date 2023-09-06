@@ -30,6 +30,12 @@ text = '''
 text here
 '''
 
+package = xorg-x11-fonts
+location = https://gitlab.freedesktop.org/xorg/font/micro-misc/-/blob/master/micro.bdf?ref_type=heads#L9
+text = '''
+"Public domain font.  Share and enjoy."
+'''
+
 package = aopalliance
 location = https://aopalliance.sourceforge.net/
 text = '''
