@@ -210,8 +210,11 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 1000000
 
 GRAPH_MODELS = {"all_applications": True, "group_models": True}
 
-# Version file location
-VERSION_FILE_PATH = getattr(secrets, "VERSION_FILE_PATH", None)
+# Version
+with open(os.path.join(BASE_DIR, "..", "pyproject.toml")) as f:
+    for line in f:
+        if line.startswith("version"):
+            VERSION = line.split("=")[1].strip().strip('"')
 
 # Silk config
 
