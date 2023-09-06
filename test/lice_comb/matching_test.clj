@@ -129,6 +129,7 @@
     (is (valid= #{"BSD-3-Clause"}                       (name->expressions "3-Clause BSD License")))
     (is (valid= #{"BSD-3-Clause"}                       (name->expressions "BSD 3-Clause License")))
     (is (valid= #{"BSD-3-Clause"}                       (name->expressions "The BSD 3-Clause License (BSD3)")))
+    (is (valid= #{"BSD-3-Clause"}                       (name->expressions "BSD License 3")))
     (is (valid= #{"BSD-3-Clause-Attribution"}           (name->expressions "BSD 3-Clause Attribution")))
     (is (valid= #{"BSD-4-Clause"}                       (name->expressions "BSD")))
     (is (valid= #{"CC-BY-3.0"}                          (name->expressions "Attribution 3.0 Unported")))
