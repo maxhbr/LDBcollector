@@ -44,7 +44,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   </p>
   {% if category.description %}
     <div class="box">
-      <p>{{ category.description }}</p>
+      {{ category.description|linebreaks }}
     </div>
   {% else %}
     <p><i>No description</i></p>

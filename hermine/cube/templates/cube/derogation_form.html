@@ -35,7 +35,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   {% if license.allowed_explanation %}
     <p>The usage of the license <b>{{ license }}</b> is restricted by the following policy: </p>
     <div class="content">
-      <blockquote>{{ license.allowed_explanation }}</blockquote>
+      {{ license.allowed_explanation|linebreaks }}
     </div>
     <p>You can add a context that reflects this policy.</p>
   {% else %}
