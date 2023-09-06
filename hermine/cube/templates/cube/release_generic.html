@@ -61,7 +61,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               </span>
             {% endfor %}
             </td>
-            <td><a href="{% url 'cube:usage_edit' usage.id %}" target="_blank"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td><a href="{% url 'cube:usage_edit' usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>

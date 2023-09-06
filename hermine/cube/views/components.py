@@ -12,7 +12,7 @@ from django.shortcuts import get_object_or_404, redirect
 
 from cube.forms.components import LicenseCurationCreateForm, LicenseCurationUpdateForm
 from cube.models import Component, LicenseCuration, Funding
-from cube.views.mixins import SearchMixin, SaveAuthorMixin
+from cube.views.mixins import SearchMixin, SaveAuthorMixin, QuerySuccessUrlMixin
 from cube.utils.funding import get_fundings_from_purl
 
 
@@ -93,7 +93,11 @@ class LicenseCurationCreateView(
 
 
 class LicenseCurationUpdateView(
-    LoginRequiredMixin, PermissionRequiredMixin, SaveAuthorMixin, generic.UpdateView
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    SaveAuthorMixin,
+    QuerySuccessUrlMixin,
+    generic.UpdateView,
 ):
     permission_required = "cube.change_licensecuration"
     model = LicenseCuration

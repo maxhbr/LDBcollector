@@ -103,7 +103,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>
               <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
               <a href="{%  url 'cube:release_import' release.id %}"><i class="fas fa-upload"></i></a> |
-              <a href="{% url 'cube:release_edit' release.id %}"><i class="far fa-edit"></i></a>
+              <a href="{% url 'cube:release_edit' release.id %}?from={{ request.path|urlencode }}"><i class="far fa-edit"></i></a>
             </td>
           </tr>
         {% endfor %}

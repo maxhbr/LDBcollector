@@ -43,7 +43,9 @@ SPDX-License-Identifier: AGPL-3.0-only
           <td>{{usage.license_expression }} </td>
           <td>
             {% if usage.license_choices|length == 1 %}
-              {% if perms.cube.change_licensechoice %}<a href="{% url "cube:licensechoice_change"  usage.license_choices.0.pk %}">Edit rule</a>{% endif %}
+              {% if perms.cube.change_licensechoice %}
+                <a href="{% url "cube:licensechoice_change" usage.license_choices.0.pk %}?from={{ request.path|urlencode }}">Edit rule</a>
+              {% endif %}
               {% if usage.license_choices.0.expression_out != usage.license_expression %}
                 <br><small>Choice does not match rule
                   {% if perms.cube.change_release %}
@@ -55,15 +57,15 @@ SPDX-License-Identifier: AGPL-3.0-only
             {% else %}
               {{ usage.license_choices|length }} rules apply. {% if perms.cube.change_licensechoice %}Edit rule
                 {% for choice in usage.license_choices %}
-                  <a href="{% url "cube:licensechoice_change" choice.pk %}">
+                  <a href="{% url "cube:licensechoice_change" choice.pk %}?from={{ request.path|urlencode }}">
                     {{ choice.pk }}</a>{% if not forloop.last %}, {% else %}.{% endif %}
                 {% endfor %}{% endif %}
             {% endif %}
           </td>
           <td>{% if perms.cube.change_usage %}
-            <a href="{% url "cube:usage_edit" usage.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            <a href="{% url "cube:usage_edit" usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
           {% endif %}{% if perms.cube.delete_usage %}
-            | <a href="{% url "cube:usage_delete" usage.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
+            | <a href="{% url "cube:usage_delete" usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-trash"></i></span></a>
           {% endif %}</td>
         </tr>
       {% endfor %}

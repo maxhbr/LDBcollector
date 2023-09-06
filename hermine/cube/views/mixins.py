@@ -2,12 +2,12 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from functools import reduce
+from urllib.parse import urlparse
 
 from django.db.models import Q, Count, Subquery, OuterRef, F, Value
 from django.db.models.functions import Coalesce
 from django.forms import Form, CharField
 from django.shortcuts import get_object_or_404
-from django.urls import reverse
 
 from cube.models import License, Release
 
@@ -95,11 +95,24 @@ class ReleaseContextMixin:
         return context
 
 
-class ReleaseExploitationRedirectMixin:
+class QuerySuccessUrlMixin:
+    def get_default_success_url(self):
+        if hasattr(self, "success_url") and self.success_url is not None:
+            return self.success_url
+
+        try:
+            return super().get_success_url()
+        except AttributeError:
+            raise NotImplementedError(
+                "You must implement get_default_success_url() or success_url"
+            )
+
     def get_success_url(self):
-        if self.request.GET.get("redirect") == "validation":
-            return reverse("cube:release_validation", args=[self.release.id])
-        return reverse("cube:release_summary", args=[self.release.id])
+        path = urlparse(self.request.GET.get("from")).path
+        if path and path.startswith("/"):
+            return path
+
+        return self.get_default_success_url()
 
 
 class ReleaseExploitationFormMixin:
