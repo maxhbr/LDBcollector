@@ -51,6 +51,14 @@ class ReleaseSummaryView(
     ReleaseContextMixin,
     TemplateView,
 ):
+    def get(self, *args, **kwargs):
+        from cube.models.meta import ReleaseConsultation
+
+        ReleaseConsultation.objects.update_or_create(
+            user=self.request.user, release=self.release
+        )
+        return super().get(*args, **kwargs)
+
     template_name = "cube/release_summary.html"
     permission_required = "cube.view_release"
 

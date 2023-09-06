@@ -10,7 +10,7 @@ from . import views, api_views
 
 app_name = "cube"
 urlpatterns = [
-    path("", views.IndexView.as_view(), name="root"),
+    path("", views.DashboardView.as_view(), name="root"),
     path("about/", views.AboutView.as_view(), name="about"),
     # Product views
     path("products/", views.ProductListView.as_view(), name="products"),

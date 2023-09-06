@@ -5,20 +5,23 @@
 
 
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Count
 from django.views.generic import TemplateView
 
 from cube.models import License, Product, Component, Release, Generic
+from cube.models.meta import ReleaseConsultation
 
 
-class IndexView(LoginRequiredMixin, TemplateView):
+class DashboardView(LoginRequiredMixin, TemplateView):
     template_name = "cube/index.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        context["latest_license_list"] = License.objects.filter(
-            status="Tocheck"
-        ).annotate(Count("obligation"))
+        context["last_releases"] = (
+            rc.release
+            for rc in ReleaseConsultation.objects.filter(user=self.request.user)
+            .prefetch_related("release")
+            .order_by("-date")[:10]
+        )
         context["nb_products"] = Product.objects.all().count()
         context["nb_releases"] = Release.objects.all().count()
         context["nb_components"] = Component.objects.all().count()
