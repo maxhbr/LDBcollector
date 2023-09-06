@@ -68,7 +68,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <div class="card-content">
       <div class="columns">
         <div class="column">
-          <p>Core status:
+          <p><b>Core status:</b>
             {% if generic.in_core %}
               <span class="tag is-light is-medium">In core</span>
             {% else %}
@@ -76,18 +76,18 @@ SPDX-License-Identifier: AGPL-3.0-only
             {% endif %}
           </p>
 
-          <p>Number of linked obligations: {{ generic.obligation_set.all|length }}</p>
+          <p><b>Number of linked obligations:</b> {{ generic.obligation_set.all|length }}</p>
         </div>
 
         <div class="column">
-          <p>Metacategory: <span class="tag is-primary is-medium">{{generic.metacategory}}</span></p>
-          <p>Team: <span class="tag is-link is-medium">{{generic.team.name}}</span></p>
-          <p>Passivity: {{generic.passivity}}</p>
+          <p><b>Metacategory:</b> {{ generic.get_metacategory_display }}</p>
+          <p><b>Team:</b> {{ generic.team.name|default:"<em>No team</em>" }}</p>
+          <p><b>Passivity:</b> {{ generic.get_passivity_display }}</p>
         </div>
 
         <div class="column">
-          <p>Description: </p>
-          <blockquote>{{ generic.description }}</blockquote>
+          <p><b>Description:</b></p>
+          {{ generic.description|linebreaks }}
         </div>
       </div>
     </div>
@@ -140,8 +140,8 @@ SPDX-License-Identifier: AGPL-3.0-only
           </div>
         </header>
         <div class="card-content">
-          <div class="content">
-            « {{ obligation.verbatim }} »
+          <div class="content is-italic">
+            {{ obligation.verbatim|linebreaks }}
           </div>
         </div>
       </div>

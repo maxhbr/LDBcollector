@@ -52,8 +52,9 @@ SPDX-License-Identifier: AGPL-3.0-only
     <div class="card-content">
       <div class="columns">
         <div class="column">
-          <p>Package type: {{ object.purl_type }}</p>
-          <p>Description: {{ object.description }}</p>
+          <p><b>Package type:</b> {{ object.purl_type }}</p>
+          <p><b>Description:</b></p>
+          {{ object.description|default:"<em>No description</em>"|linebreaks }}
         </div>
         <div class="column">
           <p><span class="icon"><i class="fas fa-home"></i></span>Project home page:
