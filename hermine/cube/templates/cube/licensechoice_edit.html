@@ -27,13 +27,7 @@ SPDX-License-Identifier: AGPL-3.0-only
   <form method="post">
     {% csrf_token %}
     <table>
-      {% for field in form %}
-        {% if field.name != 'expression_out' %}
-          <tr><th>{{ field.label_tag }}</th><td>{{ field.value|default:"<em>All</em>" }}</td></tr>
-        {% else %}
-          <tr><th>{{ field.label_tag }}</th><td>{{ field }}<br/><span class="helptext">{{ field.help_text }}</span></td></tr>
-        {% endif %}
-      {% endfor %}
+      {{ form }}
       <tr><th></th><td><input type="submit" value="Save" class="button is-primary"></td></tr>
     </table>
   </form>
