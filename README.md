@@ -9,7 +9,7 @@
 
 # lice-comb
 
-A Clojure library for software license detection.  It does this by combing through `tools.deps` dependency maps, Maven POMs, directory structures & ZIP files, and attempting to detect what license(s) they contain.
+A Clojure library for software _lice_nse detection.  It does this by _comb_ing through tools.deps and Leiningen dependencies, directory structures, and JAR & ZIP files, and attempting to detect what SPDX license expression(s) they contain.
 
 This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, I can thoroughly recommend [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial).
 
@@ -17,7 +17,7 @@ This library leverages, and is inspired by, the *excellent* [SPDX project](https
 
 * `lice-comb` (all versions) requires an internet connection.
 
-* `lice-comb` (all versions) assumes Maven is installed and in the `PATH` (but has fallback logic if it isn't).
+* `lice-comb` (all versions) assumes Maven is installed and in the `PATH` (but has fallback logic if it isn't available).
 
 * `lice-comb` (v2.0+) requires JDK 11 or higher.
 
@@ -44,6 +44,59 @@ $ lein try com.github.pmonks/lice-comb
 
 ```shell
 $ deps-try com.github.pmonks/lice-comb
+```
+
+### Demo
+
+```clojure
+;; License name and full text matching
+(require '[lice-comb.matching :as lcm])
+
+(lcm/name->expressions "Apache")
+;=> #{"Apache-2.0"}
+
+(lcm/name->expressions "The MIT license")
+;=> #{"MIT"}
+
+(lcm/name->expressions "GNU Public License 2.0 w/ the GNU Classpath Exception")
+;=> #{"GPL-2.0-only WITH Classpath-exception-2.0"}
+
+(lcm/text->ids (slurp "https://www.apache.org/licenses/LICENSE-2.0.txt"))
+;=> #{"Apache-2.0"}
+
+;; License extraction from Maven poms, including ones that aren't locally downloaded
+(require '[lice-comb.maven :as lcmvn])
+
+(lcmvn/pom->expressions (str (System/getProperty "user.home") "/.m2/repository/org/clojure/clojure/1.11.1/clojure-1.11.1.pom"))
+;=> #{"EPL-1.0"}
+
+(lcmvn/pom->expressions "https://repo1.maven.org/maven2/org/springframework/spring-core/6.0.11/spring-core-6.0.11.pom")
+;=> #{"Apache-2.0"}
+
+;; License extraction from tools.deps dependency maps
+(require '[lice-comb.deps :as lcd])
+
+(lcd/dep->expressions ['org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.11.1"}])
+;=> #{"EPL-1.0"}
+
+;; Information about matches
+(lcm/name->expressions-info "Apache-2.0")
+;=> {"Apache-2.0" ({:type :declared, :strategy :spdx-expression, :source ("Apache-2.0")})}
+
+(lcm/name->expressions-info "GNU Public License 2.0 or later w/ the GNU Classpath Exception")
+;=> {"GPL-2.0-or-later WITH Classpath-exception-2.0"
+;     ({:type :concluded, :confidence :low, :strategy :expression-inference, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception")}
+;      {:id "GPL-2.0-or-later", :type :concluded, :confidence :medium, :strategy :regex-matching, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
+;                                                                                                          "GNU Public License 2.0 or later")}
+;      {:id "Classpath-exception-2.0", :type :concluded, :confidence :low, :strategy :regex-matching, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
+;                                                                                                              "the GNU Classpath Exception"
+;                                                                                                              "Classpath Exception")})}
+
+(lcmvn/pom->expressions-info "https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom")
+;=> {"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
+;     ({:type :declared, :strategy :spdx-expression, :source ("https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom"
+;                                                             "<name>"
+;                                                             "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")})}
 ```
 
 ### API Documentation
