@@ -28,25 +28,6 @@
 
 (def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "copying" "unlicense"})   ;TODO: consider "license.md" and #".+\.spdx" (see https://github.com/spdx/spdx-maven-plugin for why the latter is important)...
 
-(defn- ensure-readable-dir
-  "Ensures dir (a String or File) refers to a readable directory, and returns it
-  as a File.
-
-  Throws:
-  * java.io.FileNotFoundException       if dir doesn't exist
-  * java.nio.file.AccessDeniedException if dir is not readable
-  * java.nio.file.NotDirectoryException if dir is not a directory"
-  [dir]
-  (let [result (io/file dir)]
-    (if (and result
-             (.exists result))
-      (if (.canRead result)
-        (if (.isDirectory result)
-          result
-          (throw (java.nio.file.NotDirectoryException. (str result))))
-        (throw (java.nio.file.AccessDeniedException. (str result))))
-      (throw (java.io.FileNotFoundException. (str result))))))
-
 ; This is public because it's used in the tests
 (defn probable-license-file?
   "Returns true if the given file-like thing (String, File, ZipEntry) is a
@@ -64,40 +45,33 @@
   set of java.io.File objects. dir may be a String or a java.io.File, either of
   which must refer to a readable directory."
   [dir]
-  (when dir
-    (when-let [d (ensure-readable-dir dir)]
-      (some-> (seq (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq d)))
-              set))))
+  (when (lciu/readable-dir? dir)
+    (some-> (seq (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq (io/file dir))))
+            set)))
 
 (defn file->expressions-info
   "Attempts to determine the SPDX license expression(s) (a map) from the given
   file (an InputStream or something that can have an io/input-stream opened on
   it). If an InputStream is provided, it must already be open and the associated
-  filepath should also be provided as the second parameter (it is optional in
-  other cases).
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+  filepath must be provided as the second parameter (it is optional in other
+  cases)."
   ([f] (file->expressions-info f (lciu/filepath f)))
   ([f filepath]
-   (when f
+   (when (lciu/readable-file? f)
      (let [fname  (lciu/filename filepath)
            lfname (s/lower-case fname)]
-            (lciei/prepend-source (cond (= lfname "pom.xml")              (lcmvn/pom->expressions-info f fname)
+            (lciei/prepend-source filepath
+                                  (cond (= lfname "pom.xml")              (lcmvn/pom->expressions-info f fname)
                                         (s/ends-with? lfname ".pom")      (lcmvn/pom->expressions-info f fname)
-                                        (instance? java.io.InputStream f) (lcmtch/text->ids-info f)
-                                        :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->ids-info is))))  ; Default is to assume it's a plain text file containing license text(s)
-                                  filepath)))))
+                                        (instance? java.io.InputStream f) (doall (lcmtch/text->ids-info f))
+                                        :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->ids-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
 
 (defn file->expressions
   "Attempts to determine the SPDX license expression(s) (a set) from the given
   file (an InputStream or something that can have an io/input-stream opened on
   it). If an InputStream is provided, it must already be open and the associated
   filepath should also be provided as the second parameter (it is optional in
-  other cases).
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+  other cases)."
   ([f] (file->expressions f (lciu/filepath f)))
   ([f filepath]
    (some-> (file->expressions-info f filepath)
@@ -109,12 +83,9 @@
   String or a java.io.File, both of which must refer to a ZIP-format compressed
   file.
 
-  Throws on invalid zip file (doesn't exist, not readable, not ZIP format, etc.).
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+  Throws on invalid zip format file."
   [zip]
-  (when zip
+  (when (lciu/readable-file? zip)
     (let [zip-file (io/file zip)]
       (java.util.zip.ZipFile. zip-file)  ; This no-op forces validation of the zip file - ZipInputStream does not reliably perform validation
       (with-open [zip-is (java.util.zip.ZipInputStream. (io/input-stream zip-file))]
@@ -125,17 +96,14 @@
               (recur (merge result (file->expressions-info zip-is (lciu/filename entry)))
                      (.getNextEntry zip-is))
               (recur result (.getNextEntry zip-is)))
-            (when-not (empty? result) (lciei/prepend-source result (lciu/filepath zip-file)))))))))
+            (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result))))))))
 
 (defn zip->expressions
   "Attempt to detect the SPDX license expression(s) (a set) in a ZIP file. zip may be a
   String or a java.io.File, both of which must refer to a ZIP-format compressed
   file.
 
-  Throws on invalid zip file (doesn't exist, not readable, not ZIP format, etc.).
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+  Throws on invalid zip format file."
   [zip]
   (some-> (zip->expressions-info zip)
           keys
@@ -146,11 +114,11 @@
   recursively, as a set of java.io.File objects. dir may be a String or a
   java.io.File, either of which must refer to a readable directory."
   [dir]
-  (when-let [dir (ensure-readable-dir dir)]
+  (when (lciu/readable-dir? dir)
     (some-> (seq (filter #(and (.isFile ^java.io.File %)
                                (or (s/ends-with? (str %) ".zip")
                                    (s/ends-with? (str %) ".jar")))
-                         (file-seq dir)))
+                         (file-seq (io/file dir))))
             set)))
 
 (defn dir->expressions-info
@@ -166,14 +134,13 @@
   expression(s) were determined."
   ([dir] (dir->expressions-info dir nil))
   ([dir {:keys [include-zips?] :or {include-zips? false}}]
-   (when dir
-     (lciei/prepend-source
-       (let [file-expressions (into {} (map file->expressions-info (probable-license-files dir)))]
-         (if include-zips?
-           (let [zip-expressions (into {} (map #(try (zip->expressions-info %) (catch Exception _ nil)) (zip-compressed-files dir)))]
-             (merge file-expressions zip-expressions))
-           file-expressions))
-       (lciu/filepath dir)))))
+   (when (lciu/readable-dir? dir)
+     (lciei/prepend-source (lciu/filepath dir)
+                           (let [file-expressions (into {} (map file->expressions-info (probable-license-files dir)))]
+                             (if include-zips?
+                               (let [zip-expressions (into {} (map #(try (zip->expressions-info %) (catch Exception _ nil)) (zip-compressed-files dir)))]
+                                 (merge file-expressions zip-expressions))
+                               file-expressions))))))
 
 (defn dir->expressions
   "Attempt to detect the SPDX license expression(s) (a map) in a directory. dir

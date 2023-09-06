@@ -29,7 +29,8 @@
   :spdx-listed-uri                               "SPDX listed URI (relaxed matching)"
   :expression-inference                          "inferred SPDX expression"
   :regex-matching                                "regular expression matching"
-  :unlisted                                      "fallback to unlisted LicenseRef"})
+  :unlisted                                      "fallback to unlisted LicenseRef"
+  :manual-verification                           "manual verification"})
 
 (defn- info-keyfn
   "sort-by keyfn for lice-comb info maps"
@@ -57,7 +58,8 @@
          :spdx-listed-uri                               "5"
          :expression-inference                          "6"
          :regex-matching                                "7"
-         :unlisted                                      "8")))
+         :unlisted                                      "8"
+         :manual-verification                           "9")))
 
 (defn- license-info-element->string
   "Converts the info list for the given identifier into a human-readable

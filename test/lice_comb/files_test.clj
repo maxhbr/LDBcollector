@@ -61,15 +61,15 @@
 
 (deftest probable-license-files-tests
   (testing "Nil, empty, or blank directory"
-    (is (nil?                                  (probable-license-files nil)))
-    (is (thrown? java.io.FileNotFoundException (probable-license-files "")))
-    (is (thrown? java.io.FileNotFoundException (probable-license-files "       ")))
-    (is (thrown? java.io.FileNotFoundException (probable-license-files "\n")))
-    (is (thrown? java.io.FileNotFoundException (probable-license-files "\t"))))
+    (is (nil? (probable-license-files nil)))
+    (is (nil? (probable-license-files "")))
+    (is (nil? (probable-license-files "       ")))
+    (is (nil? (probable-license-files "\n")))
+    (is (nil? (probable-license-files "\t"))))
   (testing "Doesn't exist"
-    (is (thrown? java.io.FileNotFoundException (probable-license-files "THIS_DIRECTORY_DOESNT_EXIST"))))
+    (is (nil? (probable-license-files "THIS_DIRECTORY_DOESNT_EXIST"))))
   (testing "Not a directory"
-    (is (thrown? java.nio.file.NotDirectoryException (probable-license-files "deps.edn"))))
+    (is (nil? (probable-license-files "deps.edn"))))
   (testing "A real directory"
       (is (= #{(io/file (str test-data-path "/asf-cat-1.0.12.pom"))
                (io/file (str test-data-path "/with-parent.pom"))
@@ -82,13 +82,15 @@
 
 (deftest file->expressions-tests
   (testing "Nil, empty, or blank filename"
-    (is (nil?                                  (file->expressions  nil)))
-    (is (thrown? java.io.FileNotFoundException (file->expressions  "")))
-    (is (thrown? java.io.FileNotFoundException (file->expressions  "       ")))
-    (is (thrown? java.io.FileNotFoundException (file->expressions  "\n")))
-    (is (thrown? java.io.FileNotFoundException (file->expressions  "\t"))))
+    (is (nil? (file->expressions  nil)))
+    (is (nil? (file->expressions  "")))
+    (is (nil? (file->expressions  "       ")))
+    (is (nil? (file->expressions  "\n")))
+    (is (nil? (file->expressions  "\t"))))
   (testing "Non-existent files"
-    (is (thrown? java.io.FileNotFoundException (file->expressions  "this_file_does_not_exist"))))
+    (is (nil? (file->expressions  "this_file_does_not_exist"))))
+  (testing "Handed a directory"
+    (is (nil? (file->expressions "."))))
   (testing "Files on disk"
 ;    (is (= #{"CC-BY-4.0"} (file->expressions  (str test-data-path "/CC-BY-4.0/LICENSE"))))  ; Failing due to https://github.com/spdx/license-list-XML/issues/1960
     (is (valid= #{"MPL-2.0"}   (file->expressions  (str test-data-path "/MPL-2.0/LICENSE")))))
@@ -106,13 +108,15 @@
 
 (deftest zip->expressions-tests
   (testing "Nil, empty, or blank zip file name"
-    (is (nil?                                      (zip->expressions nil)))
-    (is (thrown? java.io.FileNotFoundException     (zip->expressions "")))            ; Note the hodgepodge of different thrown exception types here - java.util.zip is a mess!
-    (is (thrown? java.nio.file.NoSuchFileException (zip->expressions "       ")))
-    (is (thrown? java.nio.file.NoSuchFileException (zip->expressions "\n")))
-    (is (thrown? java.nio.file.NoSuchFileException (zip->expressions "\t"))))
+    (is (nil? (zip->expressions nil)))
+    (is (nil? (zip->expressions "")))
+    (is (nil? (zip->expressions "       ")))
+    (is (nil? (zip->expressions "\n")))
+    (is (nil? (zip->expressions "\t"))))
   (testing "Non-existent zip file"
-    (is (thrown? java.nio.file.NoSuchFileException (zip->expressions "this_zip_file_does_not_exist"))))
+    (is (nil? (zip->expressions "this_zip_file_does_not_exist"))))
+  (testing "Handed a directory"
+    (is (nil? (file->expressions "."))))
   (testing "Invalid zip file"
     (is (thrown? java.util.zip.ZipException (zip->expressions (str test-data-path "/bad.zip")))))
   (testing "Valid zip file"
@@ -121,18 +125,18 @@
 
 (deftest dir->expressions-tests
   (testing "Nil, empty, or blank directory name"
-    (is (nil?                                  (dir->expressions  nil)))
-    (is (thrown? java.io.FileNotFoundException (dir->expressions  "")))
-    (is (thrown? java.io.FileNotFoundException (dir->expressions  "       ")))
-    (is (thrown? java.io.FileNotFoundException (dir->expressions  "\n")))
-    (is (thrown? java.io.FileNotFoundException (dir->expressions  "\t"))))
+    (is (nil? (dir->expressions  nil)))
+    (is (nil? (dir->expressions  "")))
+    (is (nil? (dir->expressions  "       ")))
+    (is (nil? (dir->expressions  "\n")))
+    (is (nil? (dir->expressions  "\t"))))
   (testing "Non-existent or invalid directory"
-    (is (thrown? java.io.FileNotFoundException       (dir->expressions  "this_directory_does_not_exist")))
-    (is (thrown? java.nio.file.NotDirectoryException (dir->expressions  "deps.edn"))))
+    (is (nil? (dir->expressions  "this_directory_does_not_exist")))
+    (is (nil? (dir->expressions  "deps.edn"))))
   (testing "Valid directory"
     (is (valid= ;#{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0"}  ; CC-BY-4.0 failing due to https://github.com/spdx/license-list-XML/issues/1960
                 #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0"}
-                (dir->expressions  "."))))
+                (dir->expressions "."))))
   (testing "Valid directory - include ZIP compressed files"
     (is (valid= ;#{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0" "AGPL-3.0-or-later"}  ; CC-BY-4.0 failing due to https://github.com/spdx/license-list-XML/issues/1960
                 #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "AGPL-3.0-or-later"}

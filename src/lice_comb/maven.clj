@@ -68,10 +68,10 @@
   pair. Returns nil if no matches were found."
   [{:keys [name url]}]
   ; 1. Look in the name field(s)
-  (if-let [name-expressions (lciei/prepend-source (lcmtch/name->expressions-info name) "<name>")]
+  (if-let [name-expressions (lciei/prepend-source "<name>" (lcmtch/name->expressions-info name))]
     name-expressions
     ; 2. If the names didn't give us any licenses, look in the url field(s) (this tends to be slower and less accurate)
-    (when-let [uri-ids (lciei/prepend-source (lcmtch/uri->ids-info url) "<url>")]
+    (when-let [uri-ids (lciei/prepend-source "<url>" (lcmtch/uri->ids-info url))]
       uri-ids)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
@@ -117,33 +117,32 @@
 ; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - so we look for both namespaced and non-namespaced versions of all tags
 (defmethod pom->expressions-info java.io.InputStream
   [pom-is filepath]
-  (lciei/prepend-source
-    (let [pom-xml (xml/parse pom-is)]
-      (if-let [pom-licenses (xml-find-all-alts pom-xml [::pom/project ::pom/licenses] [:project :licenses])]
-        ; <licenses> block exists - process it
-        (let [name-uri-pairs (some->> pom-licenses
-                                      (filter map?)                                                    ; Get rid of non-tag content (whitespace etc.)
-                                      (filter #(or (= ::pom/license (:tag %)) (= :license (:tag %))))  ; Get rid of non <license> tags (which shouldn't exist, but Maven POMs are a shitshow...)
-                                      (map #(identity (let [name (xml-find-first-string-alts % [::pom/license ::pom/name] [:license :name])
-                                                            url  (xml-find-first-string-alts % [::pom/license ::pom/url]  [:license :url])]
-                                                        (when (or name url)
-                                                          {:name name :url url}))))
-                                      set)
-              licenses       (into {} (map licenses-from-pair name-uri-pairs))]
-          (lcim/manual-fixes licenses))
-        ; License block doesn't exist, so attempt to lookup the parent pom and get it from there
-        (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
-              parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
-              parent-gav   (merge {}
-                                  (when parent       {:group-id    (lciu/strim (first (xi/find-first parent       [::pom/groupId])))
-                                                      :artifact-id (lciu/strim (first (xi/find-first parent       [::pom/artifactId])))
-                                                      :version     (lciu/strim (first (xi/find-first parent       [::pom/version])))})
-                                  (when parent-no-ns {:group-id    (lciu/strim (first (xi/find-first parent-no-ns [:groupId])))
-                                                      :artifact-id (lciu/strim (first (xi/find-first parent-no-ns [:artifactId])))
-                                                      :version     (lciu/strim (first (xi/find-first parent-no-ns [:version])))}))]
-          (when-not (empty? parent-gav)
-            (pom->expressions-info (pom-uri-for-gav parent-gav))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
-     filepath))
+  (lciei/prepend-source filepath
+                        (let [pom-xml (xml/parse pom-is)]
+                          (if-let [pom-licenses (xml-find-all-alts pom-xml [::pom/project ::pom/licenses] [:project :licenses])]
+                            ; <licenses> block exists - process it
+                            (let [name-uri-pairs (some->> pom-licenses
+                                                          (filter map?)                                                    ; Get rid of non-tag content (whitespace etc.)
+                                                          (filter #(or (= ::pom/license (:tag %)) (= :license (:tag %))))  ; Get rid of non <license> tags (which shouldn't exist, but Maven POMs are a shitshow...)
+                                                          (map #(identity (let [name (xml-find-first-string-alts % [::pom/license ::pom/name] [:license :name])
+                                                                                url  (xml-find-first-string-alts % [::pom/license ::pom/url]  [:license :url])]
+                                                                            (when (or name url)
+                                                                              {:name name :url url}))))
+                                                          set)
+                                  licenses       (into {} (map licenses-from-pair name-uri-pairs))]
+                              (lcim/manual-fixes licenses))
+                            ; License block doesn't exist, so attempt to lookup the parent pom and get it from there
+                            (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
+                                  parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
+                                  parent-gav   (merge {}
+                                                      (when parent       {:group-id    (lciu/strim (first (xi/find-first parent       [::pom/groupId])))
+                                                                          :artifact-id (lciu/strim (first (xi/find-first parent       [::pom/artifactId])))
+                                                                          :version     (lciu/strim (first (xi/find-first parent       [::pom/version])))})
+                                                      (when parent-no-ns {:group-id    (lciu/strim (first (xi/find-first parent-no-ns [:groupId])))
+                                                                          :artifact-id (lciu/strim (first (xi/find-first parent-no-ns [:artifactId])))
+                                                                          :version     (lciu/strim (first (xi/find-first parent-no-ns [:version])))}))]
+                              (when-not (empty? parent-gav)
+                                (pom->expressions-info (pom-uri-for-gav parent-gav))))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
 
 (defmethod pom->expressions-info :default
   ([pom] (pom->expressions-info pom (lciu/filepath pom)))

@@ -29,7 +29,10 @@
             [lice-comb.impl.expressions-info :as lciei]
             [lice-comb.impl.3rd-party        :as lc3]
             [lice-comb.impl.http             :as lcihttp]
+            [lice-comb.impl.data             :as lcid]
             [lice-comb.impl.utils            :as lciu]))
+
+(def ^:private cursed-names-d (delay (lcid/load-edn-resource "lice_comb/names.edn")))
 
 (def ^:private direct-replacements-map {
   #{"GPL-2.0-only"     "Classpath-exception-2.0"} #{"GPL-2.0-only WITH Classpath-exception-2.0"}
@@ -168,22 +171,23 @@
   determined."
   [uri]
   (when-not (s/blank? uri)
-    (manual-fixes
-      (let [suri (lciu/simplify-uri uri)]
-        ; 1. see if the URI string matches any of the URIs in the SPDX license list (using "simplified" URIs)
-        (if-let [ids (get @lcis/index-uri-to-id-d suri)]
-          (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)})) ids))
-          ; 2. attempt to retrieve the text/plain contents of the uri and perform full license matching on it
-          (when-let [license-text (lcihttp/get-text uri)]
-            (when-let [ids (text->ids license-text)]
-              (lciei/prepend-source ids (str "content from " uri)))))))))
+    (lciei/prepend-source uri
+                          (manual-fixes
+                            (let [suri (lciu/simplify-uri uri)]
+                              ; 1. see if the URI string matches any of the URIs in the SPDX license list (using "simplified" URIs)
+                              (if-let [ids (get @lcis/index-uri-to-id-d suri)]
+                                (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)})) ids))
+                                ; 2. attempt to retrieve the text/plain contents of the uri and perform full license matching on it
+                                (when-let [license-text (lcihttp/get-text uri)]
+                                  (when-let [ids (text->ids license-text)]
+                                    ids))))))))
 
 (defn- string->ids-info
-  "Converts the given String into a sequence of singleton maps (NOT A SINGLE
-  MAP!), each of which has a key is that is an SPDX identifier (either a listed
-  SPDX license or exception id), and whose value is a list of meta-information
-  about how that identifier was found. The result sequence is ordered in the
-  same order of appearance as the source values in s.
+  "Converts the given String into a sequence of singleton maps (NOT A LICE-COMB
+  EXPRESSION INFO MAP!), each of which has a key is that is an SPDX identifier
+  (either a listed SPDX license or exception id), and whose value is a list of
+  meta-information about how that identifier was found. The result sequence is
+  ordered in the same order of appearance as the source values in s.
 
   If no listed SPDX license or exception identifiers are found, returns a
   singleton sequence containing a map with a lice-comb specific 'unlisted'
@@ -198,24 +202,28 @@
   5. Returning a lice-comb specific 'unlisted' LicenseRef"
   [s]
   (when-not (s/blank? s)
-    ; 1. Is it an SPDX license or exception id?
-    (let [s (s/trim s)]
-      (if-let [id (get @lcis/spdx-ids-d (s/lower-case s))]
-        (if (= id s)
-          (list {id (list {:id id :type :declared :strategy :spdx-listed-identifier-exact-match :source (list s)})})
-          (list {id (list {:id id :type :concluded :confidence :high :strategy :spdx-listed-identifier-case-insensitive-match :source (list s)})}))
-        ; 2. Is it an SPDX license or exception name?
-        (if-let [ids (get @lcis/index-name-to-id-d (s/trim (s/lower-case s)))]
-          (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-name :source (list s)})) ids)
-          ; 3. Is it a URI?  If so, perform URI matching on it (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
-          (if-let [ids (uri->ids s)]
-            ids
-            ; 4. Attempt regex name matching
-            (if-let [ids (lcirm/matches s)]
-              ids
-              ; 5. No clue, so return a single unlisted SPDX LicenseRef
-              (let [id (lcis/name->unlisted s)]
-                (list {id (list {:id id :type :concluded :confidence :low :strategy :unlisted :source (list s)})})))))))))
+    (let [s   (s/trim s)
+          ids (or ; 1. Is it an SPDX license or exception id?
+                (when-let [id (get @lcis/spdx-ids-d (s/lower-case s))]
+                  (if (= id s)
+                    (list {id (list {:id id :type :declared :strategy :spdx-listed-identifier-exact-match :source (list s)})})
+                    (list {id (list {:id id :type :concluded :confidence :high :strategy :spdx-listed-identifier-case-insensitive-match :source (list s)})})))
+
+                ; 2. Is it the name of one or more SPDX licenses or exceptions?
+                (when-let [ids (get @lcis/index-name-to-id-d (s/lower-case s))]
+                  (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-name :source (list s)})) ids))
+
+                ; 3. Might it be a URI?  (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
+                (when-let [ids (uri->ids s)]
+                  (map #(hash-map (key %) (val %)) ids))
+
+                ; 4. Attempt regex name matching
+                (lcirm/matches s)
+
+                ; 5. No clue, so return a single unlisted SPDX LicenseRef
+                (let [id (lcis/name->unlisted s)]
+                  (list {id (list {:id id :type :concluded :confidence :low :strategy :unlisted :source (list s)})})))]
+      (map (partial lciei/prepend-source s) ids))))
 
 (defn- filter-blanks
   "Filter blank strings out of coll"
@@ -300,16 +308,23 @@
   The keys in the maps are the detected SPDX license and exception identifiers,
   and each value contains information about how that identifiers was determined."
   [name]
-  (some->> (split-on-operators name)
-           (drop-while keyword?)
-           (lc3/rdrop-while keyword?)
-           (map #(if (keyword? %) % (string->ids-info %)))
-           flatten
-           (filter identity)
-           (drop-while keyword?)
-           (lc3/rdrop-while keyword?)
-           seq
-           build-spdx-expressions-map))
+  (when-not (s/blank? name)
+    (let [name (s/trim name)]
+      (lciei/prepend-source name
+                            (or ; 1. Is it a cursed name?
+                                (get @cursed-names-d name)
+
+                                ; 2. Attempt to construct an SPDX expression from the name
+                                (some->> (split-on-operators name)
+                                         (drop-while keyword?)
+                                         (lc3/rdrop-while keyword?)
+                                         (map #(if (keyword? %) % (string->ids-info %)))
+                                         flatten
+                                         (filter identity)
+                                         (drop-while keyword?)
+                                         (lc3/rdrop-while keyword?)
+                                         seq
+                                         build-spdx-expressions-map))))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
@@ -322,4 +337,5 @@
   (lcis/init!)
   (lcirm/init!)
   (lcihttp/init!)
+  @cursed-names-d
   nil)

@@ -42,23 +42,23 @@
 (deftest prepend-source-tests
   (testing "nil/empty/blank"
     (is (nil? (prepend-source nil nil)))
-    (is (nil? (prepend-source nil "")))
-    (is (= {} (prepend-source {} nil)))
-    (is (= {} (prepend-source {} ""))))
+    (is (= {} (prepend-source nil {})))
+    (is (nil? (prepend-source "" nil)))
+    (is (= {} (prepend-source "" {}))))
   (testing "non-nil metadata that isn't lice-comb specific"
-    (is (= {:a "a"} (prepend-source {:a "a"} "foo"))))
+    (is (= {:a "a"} (prepend-source "foo" {:a "a"}))))
   (testing "non-nil metadata that is lice-comb specific"
     (is (= {"Apache-2.0" '({:type :concluded :confidence :medium :strategy :regex-matching                     :source ("pom.xml" "Apache Software Licence v2.0")})
             "MIT"        '({:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source ("pom.xml" "MIT")})}
-           (prepend-source md1 "pom.xml")))
+           (prepend-source "pom.xml" md1)))
     (is (= {"Apache-2.0" '({:type :concluded :confidence :medium :strategy :regex-matching                     :source ("library.jar" "pom.xml" "Apache Software Licence v2.0")})
             "MIT"        '({:type :concluded :confidence :high   :strategy :spdx-listed-identifier-exact-match :source ("library.jar" "pom.xml" "MIT")})}
-           (prepend-source (prepend-source md1 "pom.xml") "library.jar")))
+           (prepend-source "library.jar" (prepend-source "pom.xml" md1))))
     (is (= {"Apache-2.0"       '({:type :concluded :confidence :low  :strategy :regex-matching :source ("pom.xml" "Apache style license")}
                                  {:type :concluded :confidence :medium :strategy :spdx-listed-identifier-case-insensitive-match :source ("pom.xml" "apache-2.0")}
                                  {:type :declared :strategy :spdx-listed-identifier-exact-match :source ("pom.xml" "Apache-2.0")})
             "GPL-3.0-or-later" '({:type :concluded :confidence :low  :strategy :regex-matching :source ("pom.xml" "GNU General Public License 3.0 or later")})}
-           (prepend-source md3 "pom.xml")))))
+           (prepend-source "pom.xml" md3)))))
 
 (deftest merge-maps-tests
   (testing "nil/empty"

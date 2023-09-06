@@ -36,7 +36,7 @@
   style dep (a vector of the form `[groupId/artifactId \"version\"]`)."
   [dep]
   (when-let [toolsdep-dep (lein-dep->toolsdeps-dep dep)]
-    (lciei/prepend-source (lcd/dep->expressions-info toolsdep-dep) (pr-str dep))))
+    (lciei/prepend-source (pr-str dep) (lcd/dep->expressions-info toolsdep-dep))))
 
 (defn dep->expressions
   "Attempt to detect the SPDX license expression(s) (a set) in a Leiningen
@@ -54,7 +54,7 @@
   [deps]
   (into {} (dom/real-pmap #(vec [% (dep->expressions-info %)]) deps)))
 
-(defn deps->expressions-info
+(defn deps->expressions
   "Attempt to detect all of the SPDX license expression(s) in a Leiningen style
   dependency vector. The result is a map, where each entry in the map has a key
   that is the Leiningen dep, and the value is the set of SPDX license

@@ -24,13 +24,18 @@
 (defn prepend-source
   "Prepends the given source s (a String) onto all metadata sub-maps in m (a
   lice-comb expressions-info map)."
-  [m s]
-  (if (or (empty? m) (s/blank? s))
+  [s m]
+  (if (or (s/blank? s) (empty? m))
     m
     (into {} (map #(if (sequential? (val %))
                      (let [id            (key %)
                            metadata-list (val %)]
-                       (hash-map id (map (fn [x] (assoc x :source (conj (seq (:source x)) s))) metadata-list)))
+                       (hash-map id (map (fn [x] (assoc x :source (let [old-source (seq (:source x))
+                                                                        new-source (if (not= s (first old-source))  ; Only add s if it isn't already there
+                                                                                     (conj old-source s)
+                                                                                     old-source)]
+                                                                    new-source)))
+                                         metadata-list)))
                      %)
                   m))))
 

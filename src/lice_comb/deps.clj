@@ -71,7 +71,7 @@
 (defmulti dep->expressions-info
   "Attempt to detect the SPDX license expression(s) (a map) in a tools.deps
   style dep (a MapEntry or two-element sequence of
-  `[groupId/artifactId dep-info]`).
+  `['groupId/artifactId dep-info]`).
 
   The result has metadata attached that describes how the identifiers in the
   expression(s) were determined."
@@ -92,7 +92,7 @@
                                              expressions
                                              (into {} (dom/real-pmap lcf/zip->expressions-info (:paths info))));)  ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
                                                 ]
-          (lciei/prepend-source expressions (dep->string dep))))));)
+          (lciei/prepend-source (dep->string dep) expressions)))));)
 
 (defmethod dep->expressions-info :deps
   [dep]
@@ -102,7 +102,7 @@
 ;      (if-let [override (check-overrides ga version)]
 ;        override
 ;        (check-fallbacks ga
-          (lciei/prepend-source (lcf/dir->expressions-info (:deps/root info)) (dep->string dep)))));))
+          (lciei/prepend-source (dep->string dep) (lcf/dir->expressions-info (:deps/root info))))));))
 
 (defmethod dep->expressions-info nil
   [_])

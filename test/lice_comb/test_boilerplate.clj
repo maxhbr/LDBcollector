@@ -20,6 +20,8 @@
   (:require [clojure.spec.alpha :as spec]
             [spdx.expressions   :as sexp]))
 
+(println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version") (str "(" (System/getProperty "java.vm.name") " v" (System/getProperty "java.vm.version") ")\n"))
+
 ; Here we hack up a "global once" function
 (def ^:private global-setup (delay
                               ; Because java.util.logging is a hot mess
@@ -29,7 +31,6 @@
                               ; Enable spec validation
                               (spec/check-asserts true)
 
-                              (println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version") (str "(" (System/getProperty "java.vm.name") " v" (System/getProperty "java.vm.version") ")\n"))
                               nil))
 
 (defn fixture

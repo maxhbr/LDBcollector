@@ -1,0 +1,8 @@
+; Map of name values seen in the wild that are too ambiguous or cursed to support any reasonable form of automated parsing
+{
+  ;Seen in https://repo.maven.apache.org/maven2/com/sun/mail/all/1.4.7/all-1.4.7.pom
+  "GPLv2+CE" {"GPL-2.0-only WITH Classpath-exception-2.0"
+              ({:type :concluded :confidence :high :strategy :manual-verification :source ("GPLv2+CE")}
+               {:id "GPL-2.0-only"            :type :concluded :confidence :high :strategy :manual-verification :source ("GPLv2+CE" "GPLv2")}
+               {:id "Classpath-exception-2.0" :type :concluded :confidence :high :strategy :manual-verification :source ("GPLv2+CE" "CE")})}
+}

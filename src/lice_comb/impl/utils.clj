@@ -124,6 +124,50 @@
               (s/replace #"\.[\p{Alnum}]{3,}\z" ""))        ; Strip file type extension (if any)
           luri)))))
 
+(defn readable-dir?
+  "Is d (a String or File) a readable directory?"
+  [d]
+  (let [d (io/file d)]
+    (and d
+         (.exists d)
+         (.canRead d)
+         (.isDirectory d))))
+
+(defmulti readable-file?
+  "Is f (a String, File, InputStream, or Reader) a readable file?"
+  type)
+
+(defmethod readable-file? nil
+  [_])
+
+(defmethod readable-file? java.io.File
+  [f]
+  (and f
+       (.exists f)
+       (.canRead f)
+       (not (.isDirectory f))))
+
+(defmethod readable-file? java.lang.String
+  [s]
+  (or (valid-http-uri? s)
+      (readable-file? (io/file s))))
+
+(defmethod readable-file? java.io.InputStream
+  [_]
+  true)
+
+(defmethod readable-file? java.io.Reader
+  [_]
+  true)
+
+(defmethod readable-file? java.net.URL
+  [_]
+  true)
+
+(defmethod readable-file? java.net.URI
+  [_]
+  true)
+
 (defmulti filepath
   "Returns the full path and name of the given file-like thing (String, File,
   ZipEntry, URI, URL)."
