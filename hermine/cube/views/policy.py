@@ -2,10 +2,10 @@
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, UpdateView, ListView
 
-from cube.forms.policy import LicenseChoiceCreateForm
+from cube.forms.policy import LicenseChoiceCreateForm, LicenseChoiceUpdateForm
 from cube.models import (
     Derogation,
     LicenseChoice,
@@ -93,10 +93,8 @@ class LicenseChoiceEditView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
     permission_required = "cube.change_licensechoice"
     model = LicenseChoice
     template_name = "cube/licensechoice_edit.html"
-    fields = "__all__"
-
-    def get_success_url(self):
-        return reverse("cube:licensechoice_list")
+    form_class = LicenseChoiceUpdateForm
+    success_url = reverse_lazy("cube:licensechoices")
 
 
 class LicenseChoiceCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
