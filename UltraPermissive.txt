@@ -25,6 +25,12 @@ text = '''
 text here
 '''
 
+package = xorg-x11-fonts
+location = https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/koi12x24b.bdf?ref_type=heads
+text = '''
+May be distributed and modified without restrictions.
+'''
+
 package = netpbm
 location = https://sourceforge.net/p/netpbm/code/HEAD/tree/stable/converter/ppm/ppmtoacad.c#l15
 text = '''
