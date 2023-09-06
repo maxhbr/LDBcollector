@@ -1,16 +1,28 @@
-# SPDX-FileCopyrightText: 2022 Martin Delabre <gitlab.com/delabre.martin>
-#
+# SPDX-FileCopyrightText: 2023 Inno3
 # SPDX-License-Identifier: AGPL-3.0-only
 
-# This file has to be completed under the name 'mysecrets.py' in this same folder.
+# This file has to be completed under the name 'config.py' in this same folder.
 # Do not delete or modify this file, it's used for documentation build in CI !
 # Do not commit your authentication credential !
+
+# use os.environ.get("VAR_NAME") if you prefer to take config from environment variables
+# (the config.py inside docker/ is a good example of this)
 
 import os
 
 from django.conf import settings
 
+# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "your-django-secret-key"
+
+HOST = "example.com"
+# CSRF_TRUSTED_ORIGINS = ["https://" + HOST] # only required if you use a reverse proxy
+
+# Static files location, defaults to static/ in the Hermine root dir
+# In production, static files should be served by a web server like nginx
+# STATIC_ROOT = "/path/to/static/root"
+
+# Database
 
 DATABASES = {
     "default": {
@@ -33,20 +45,12 @@ DATABASES = {
 # }
 
 
-# # For local development : external definition of var env
-# # Load environment definition file
-# ENV_FILE = find_dotenv()
-# if ENV_FILE:
-#     load_dotenv(ENV_FILE)
-#
-# # Load OAUTH application settings into memory
-# OAUTH_DOMAIN = os.environ.get("OAUTH_DOMAIN")
-# OAUTH_CLIENT_ID = os.environ.get("OAUTH_CLIENT_ID")
-# OAUTH_CLIENT_SECRET = os.environ.get("OAUTH_CLIENT_SECRET")
-# OAUTH_SCOPE = os.environ.get("OAUTH_SCOPE")   # list of scope separated by ','
-# OAUTH_ID_KEY = os.environ.get("OAUTH_ID_KEY")
-#
 # # For configuring OAuthn the following parameters are required :
+# OAUTH_DOMAIN =
+# OAUTH_CLIENT_ID =
+# OAUTH_CLIENT_SECRET =
+# OAUTH_SCOPE =
+# OAUTH_ID_KEY =
 # OAUTH_CLIENT = {
 #     "client_id": OAUTH_CLIENT_ID,
 #     "client_secret": OAUTH_CLIENT_SECRET,
@@ -64,3 +68,7 @@ DATABASES = {
 
 # Path to the current version to be displayed in the footer
 # VERSION_FILE_PATH = "hermine/hermine/VERSION.txt"
+
+# SECURITY WARNING: don't run with debug or profiling turned on in production!
+# DEBUG = True
+# ENABLE_PROFILING = True

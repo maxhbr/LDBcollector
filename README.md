@@ -16,53 +16,15 @@ It still is in a very early stage, so please don't expect any stability for the 
 Hermine project's main license is AGPL-3.0-only. Documentation is under CC-BY-4.0.  Some file imported from other projects are licensed under MIT.
 You can find the texts of these licenses in the  LICENSES folder. Every file should have a license header.
 
+You can read documentation at [docs.hermine-foss.org](https://docs.hermine-foss.org/):
 
-## Installation
-
-This is a simple Django project, so the safest way to run it is to have a Python 
-virtual environnement, with the dependencies listed in the [pyproject.toml](pyproject.toml) file. 
-
-If you use [poetry](https://python-poetry.org/docs/), you create the virtual 
-environment by cloning the repo and : 
-
-```
-cd hermine/
-poetry install
-```
-
-## Running the application
-
-Activate your Python virtual environment. With poetry, it means: 
-```
-poetry shell
-```
-For the first run, edit your database credentials
-
-```
-cp hermine/hermine/mysecrets.default.py hermine/hermine/mysecrets.py 
-``` 
-and edit the `mysecrets.py` file you just created.
-
-
-```
-python hermine/manage.py migrate
-python hermine/manage.py createsuperuser
-```
-
-And then launch the django dev server:
-
-```
-python hermine/manage.py runserver
-```
-You can then point your browser to [http://127.0.0.1:8080/admin/](http://127.0.0.1:8080/admin/)
-
-and log in as superuser to create new users
-
-or directly to [http://127.0.0.1:8080](http://127.0.0.1:8080) to use the application.
-
-You can find an in progress documentation at https://docs.hermine-foss.org/
-
-
-## Contributing
-
-You can find how to contribute to Hermine on the [documentation website](https://docs.hermine-foss.org/dev_hermine.html)
+* [Installation](https://docs.hermine-foss.org/install.html)
+  * [Development](https://docs.hermine-foss.org/install.html#development)
+  * [Docker compose](https://docs.hermine-foss.org/install.html#docker-compose)
+  * [Manual production installation](https://docs.hermine-foss.org/install.html#manual-production-install)
+* [Getting started](https://docs.hermine-foss.org/getting_started.html)
+  * [Main concepts](https://docs.hermine-foss.org/getting_started.html#main-concepts-used)
+  * [Workflow](https://docs.hermine-foss.org/getting_started.html#manual-workflow)
+* [API](https://docs.hermine-foss.org/api.html)
+  * [Authentication](https://docs.hermine-foss.org/api.html#authentication-via-token)
+* [Contributing](https://docs.hermine-foss.org/dev_hermine.html)

@@ -58,7 +58,7 @@ COPY --from=build $APP_PATH/hermine/vite_modules/dist $APP_PATH/vite_modules/dis
 
 # COPY shared.json $APP_PATH/
 COPY docker/docker-entrypoint.sh $APP_PATH/
-COPY docker/docker_secrets.py $APP_PATH/hermine/mysecrets.py
+COPY docker/config.py $APP_PATH/hermine/config.py
 
 EXPOSE $DJANGO_PORT
 
