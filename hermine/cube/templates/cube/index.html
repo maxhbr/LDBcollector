@@ -24,6 +24,42 @@ SPDX-License-Identifier: AGPL-3.0-only
     <h2>Welcome to Hermine.</h2>
     <p>Explore your products, choose your Open Source Policy, and know your obligations. </p>
 
+    {% if last_releases and perms.cube.vew_release %}
+      <h2>Last releases consulted</h2>
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Release</th>
+            <th>Status</th>
+            <th>Dependencies</th>
+            <th>Validation Steps</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for release in last_releases %}
+            <tr>
+              <td>{{ release.product.name }}</td>
+              <td><a href="{% url 'cube:release_summary' release.id %}">{{ release.release_number }}</a>
+              </td>
+              <td>{{ release.ship_status }}</td>
+              <td>{{ release.usage_set.all|length }}</td>
+              <td>
+                <progress class="progress is-primary" value="{{ release.valid_step|default:1 }}" max="5">15%
+                </progress>
+              </td>
+              <td>
+                <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
+                <a href="{%  url 'cube:release_import' release.id %}"><i class="fas fa-upload"></i></a> |
+                <a href="{% url 'cube:release_edit' release.id %}?from={{ request.path|urlencode }}"><i class="far fa-edit"></i></a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+
     <h2>Development</h2>
     <div class="tile is-ancestor">
 
