@@ -19,7 +19,7 @@ class ReleaseConsultation(models.Model):
         Release, on_delete=models.CASCADE, related_name="consultations"
     )
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    date = models.DateTimeField(auto_now_add=True, auto_now=True)
+    date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"{self.user} consulted {self.release}"
