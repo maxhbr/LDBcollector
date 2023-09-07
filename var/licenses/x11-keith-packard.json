@@ -8,7 +8,8 @@
     "spdxid": "LicenseRef-flame-x11-keith-packard",
     "aliases": [
         "X11-Style (Keith Packard)",
-        "scancode://x11-keith-packard"
+        "scancode://x11-keith-packard",
+        "x11-keith-packard"
     ],
     "compatibility_as": "HPND"
 }
