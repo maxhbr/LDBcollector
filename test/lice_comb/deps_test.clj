@@ -127,9 +127,9 @@
     (is (valid= #{(lcis/public-domain)}                 (dep->expressions ['org.tukaani/xz {:deps/manifest :mvn :mvn/version "1.9"}])))
     (is (valid= #{"Apache-2.0"}                         (dep->expressions ['org.xerial.snappy/snappy-java {:deps/manifest :mvn :mvn/version "1.1.8.4"}])))
     (is (valid= #{"Apache-2.0"}                         (dep->expressions ['software.amazon.ion/ion-java {:deps/manifest :mvn :mvn/version "1.0.0"}]))))
-  (testing "Valid deps - no licenses in deployed artifacts -> leverage fallbacks"
-    (is (valid= #{"EPL-1.0"} (dep->expressions ['slipset/deps-deploy         {:deps/manifest :mvn :mvn/version "0.2.0"}])))
-    (is (valid= #{"EPL-1.0"} (dep->expressions ['borkdude/sci.impl.reflector {:deps/manifest :mvn :mvn/version "0.0.1"}]))))
+  (testing "Valid deps - no licenses in deployed artifacts"
+    (is (nil? (dep->expressions ['slipset/deps-deploy         {:deps/manifest :mvn :mvn/version "0.2.0"}])))
+    (is (nil? (dep->expressions ['borkdude/sci.impl.reflector {:deps/manifest :mvn :mvn/version "0.0.1"}]))))
   (testing "Valid deps - multi license"
     (is (valid= #{"EPL-1.0" "LGPL-3.0-only"}                     (dep->expressions ['ch.qos.logback/logback-classic {:deps/manifest :mvn :mvn/version "1.2.7"}])))
     (is (valid= #{"EPL-1.0" "LGPL-3.0-only"}                     (dep->expressions ['ch.qos.logback/logback-core {:deps/manifest :mvn :mvn/version "1.2.7"}])))

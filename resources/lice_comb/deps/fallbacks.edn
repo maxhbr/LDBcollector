@@ -1,5 +1,0 @@
-{
-;  borkdude/sci.impl.reflector {:spdx true  :licenses #{"EPL-1.0"}      :evidence "https://github.com/borkdude/sci/blob/master/LICENSE"}
-;  org.ow2.asm/asm             {:spdx true  :licenses #{"BSD-3-Clause"} :evidence "https://asm.ow2.io/license.html"}
-;  slipset/deps-deploy         {:spdx true  :licenses #{"EPL-1.0"}      :evidence "https://github.com/slipset/deps-deploy/blob/master/LICENSE"}
-}

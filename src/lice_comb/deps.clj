@@ -21,32 +21,9 @@
   dependencies in tools.deps lib-map format."
   (:require [clojure.string                  :as s]
             [dom-top.core                    :as dom]
-            [spdx.licenses                   :as sl]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.files                 :as lcf]
-            [lice-comb.impl.data             :as lcd]
             [lice-comb.impl.expressions-info :as lciei]))
-
-;####TODO: FIGURE OUT HOW TO HANDLE METADATA FOR OVERRIDES / FALLBACKS!!!!
-;(def ^:private overrides-d (delay (lcd/load-edn-resource "lice_comb/deps/overrides.edn")))
-;(def ^:private fallbacks-d (delay (lcd/load-edn-resource "lice_comb/deps/fallbacks.edn")))
-
-;(defn- check-overrides
-;  "Checks if an override should be used for the given dep"
-;  ([ga] (check-overrides ga nil))
-;  ([ga v]
-;    (let [gav (symbol (str ga (when v (str "@" v))))]
-;      (:licenses (get @overrides-d gav (get @overrides-d ga))))))  ; Lookup overrides both with and without the version
-
-;(defn- check-fallbacks
-;####TODO: UPDATE FOR license-info MAP RATHER THAN ID SET
-;  "Checks if a fallback should be used for the given dep, given the set of
-;  detected ids"
-;  [ga ids]
-;  (if (or (empty? ids)
-;          (every? #(not (sl/listed-id? %)) ids))
-;    (:licenses (get @fallbacks-d ga {:licenses ids}))
-;    ids))
 
 (defn- normalise-dep
   "Normalises a dep, by removing any classifier suffixes from the artifact-id
@@ -83,26 +60,18 @@
   (when dep
     (let [[ga info]              (normalise-dep dep)
           [group-id artifact-id] (s/split (str ga) #"/")
-          version                (:mvn/version info)]
-;      (if-let [override (check-overrides ga version)]
-;        override
-        (let [pom-uri     (lcmvn/pom-uri-for-gav group-id artifact-id version)
-              expressions ;(check-fallbacks ga
-                                           (if-let [expressions (lcmvn/pom->expressions-info pom-uri)]
-                                             expressions
-                                             (into {} (dom/real-pmap lcf/zip->expressions-info (:paths info))));)  ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
-                                                ]
-          (lciei/prepend-source (dep->string dep) expressions)))));)
+          version                (:mvn/version info)
+          pom-uri                (lcmvn/pom-uri-for-gav group-id artifact-id version)
+          expressions            (if-let [expressions (lcmvn/pom->expressions-info pom-uri)]
+                                   expressions
+                                   (into {} (dom/real-pmap lcf/zip->expressions-info (:paths info))))]  ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
+      (lciei/prepend-source (dep->string dep) expressions))))
 
 (defmethod dep->expressions-info :deps
   [dep]
   (when dep
-    (let [[ga info] (normalise-dep dep)
-          version   (:git/sha info)]
-;      (if-let [override (check-overrides ga version)]
-;        override
-;        (check-fallbacks ga
-          (lciei/prepend-source (dep->string dep) (lcf/dir->expressions-info (:deps/root info))))));))
+    (let [[_ info] (normalise-dep dep)]
+      (lciei/prepend-source (dep->string dep) (lcf/dir->expressions-info (:deps/root info))))))
 
 (defmethod dep->expressions-info nil
   [_])
@@ -140,6 +109,4 @@
   []
   (lcmvn/init!)
   (lcf/init!)
-;  @overrides-d
-;  @fallbacks-d
   nil)
