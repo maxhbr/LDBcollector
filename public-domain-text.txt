@@ -31,6 +31,14 @@ text here
 '''
 
 package = xorg-x11-fonts
+location = https://gitlab.freedesktop.org/xorg/font/winitzki-cyrillic/-/blob/master/COPYING?ref_type=heads
+text = '''
+Font converted from VGA/EGA to BDF.
+VGA and BDF created by Serge Winitzki.
+Public domain. February 2000.
+'''
+
+package = xorg-x11-fonts
 location = https://gitlab.freedesktop.org/xorg/font/micro-misc/-/blob/master/micro.bdf?ref_type=heads#L9
 text = '''
 "Public domain font.  Share and enjoy."
