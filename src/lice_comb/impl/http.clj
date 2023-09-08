@@ -21,6 +21,7 @@
   the public API of lice-comb and may change without notice."
   (:require [clojure.string                :as s]
             [clojure.java.io               :as io]
+            [clojure.java.shell            :as sh]
             [hato.client                   :as hc]
             [lice-comb.impl.utils          :as lciu]))
 
@@ -74,6 +75,41 @@
       (catch Exception _
         nil))))
 
+(def ^:private local-maven-repo-d
+  (delay
+    (try
+      ; The command:
+      ;     mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout
+      ; determines where the local repository is located.
+      (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
+        (if (zero? (:exit sh-result))
+          (s/trim (:out sh-result))
+          (str (System/getProperty "user.home") "/.m2/repository")))
+      (catch java.io.IOException _
+        (str (System/getProperty "user.home") "/.m2/repository")))))
+
+; TODO: make this configurable
+(def ^:private remote-maven-repos #{"https://repo.maven.apache.org/maven2" "https://repo.clojars.org"})
+
+(defn gav->pom-uri
+  "Returns a java.net.URI pointing to the POM for the given GAV (a map), or nil
+  if one cannot be found.  The returned URI is guaranteed to be resolvable -
+  either to a file that exists in the local Maven cache, or to an HTTP-
+  accessible resource on a remote Maven repository (i.e. Maven Central or
+  Clojars) that resolves."
+  ([{:keys [group-id artifact-id version]}] (gav->pom-uri group-id artifact-id version))
+  ([group-id artifact-id version]
+   (when (and (not (s/blank? group-id))
+              (not (s/blank? artifact-id))
+              (not (s/blank? version)))
+     (let [gav-path  (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
+           local-pom (io/file (str @local-maven-repo-d "/" gav-path))]
+       (if (and (.exists local-pom)
+                (.isFile local-pom))
+         (.toURI local-pom)
+         (when-let [remote-uri (first (filter uri-resolves? (map #(str % "/" gav-path) remote-maven-repos)))]
+           (java.net.URI. remote-uri)))))))
+
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
   calls), returning nil. Consumers of this namespace are not required to call
@@ -81,4 +117,5 @@
   allow explicit control of the cost of initialisation to callers who need it."
   []
   @http-client-d
+  @local-maven-repo-d
   nil)

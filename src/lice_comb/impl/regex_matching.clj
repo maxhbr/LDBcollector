@@ -61,12 +61,14 @@
   [m]
   (when m
     (let [version    (get-rencgs m ["version"])
-          confidence (if (or (and (s/blank? version)
-                                  (not (s/blank? (:latest-ver m))))
-                             (and (:pad-ver? m)
-                                  (not (s/includes? version "."))))
-                       :low       ; We required a version but either didn't get one or it was incomplete
-                       :medium)   ; We didn't require a version, or it was complete
+          confidence (if (s/blank? (:latest-ver m))
+                       :high  ; We didn't need a version
+                       (if (s/blank? version)
+                         :low  ; Version not provided at all
+                         (if (and (:pad-ver? m)
+                                  (not (s/includes? version ".")))
+                           :medium   ; We got a partial version
+                           :high)))  ; We got a full version
           version    (if (s/blank? version)
                        (:latest-ver m)
                        version)
@@ -101,9 +103,9 @@
                                       clause-count1
                                       clause-count2))
         [clause-count confidence] (case preferred-clause-count
-                                    ("2" "simplified")                       ["2" :medium]
-                                    ("3" "new" "revised" "modified" "aduna") ["3" :medium]
-                                    ("4" "original")                         ["4" :medium]
+                                    ("2" "simplified")                       ["2" :high]
+                                    ("3" "new" "revised" "modified" "aduna") ["3" :high]
+                                    ("4" "original")                         ["4" :high]
                                     ["4" :low])  ; Note: we default to 4 clause, since it was the original form of the BSD license
         suffix                    (case (get-rencgs m ["suffix"])
                                     "patent"                                              "Patent"
@@ -124,7 +126,7 @@
         id-with-suffix            (str base-id "-" suffix)]
     (if (contains? @lcis/license-ids-d id-with-suffix)  ; Not all suffixes are valid with all BSD clause counts, so check that it's valid before returning it
       [id-with-suffix confidence]
-      [(assert-listed-id base-id) confidence])))
+      [(assert-listed-id base-id) (if (= confidence :low) :low :medium)])))  ; The suffix we got wasn't valid, which knocks down confidence
 
 (defn- cc-id-constructor
   "An SPDX id constructor specific to the Creative Commons family of licenses."
@@ -134,10 +136,11 @@
         sa?            (not (s/blank? (get-rencgs m ["sharealike"])))
         version        (get-rencgs m ["version"] "")
         version        (s/replace version #"\p{Punct}+" ".")
-        confidence     (if (or (s/blank? version)
-                               (not (s/includes? version ".")))
+        confidence     (if (s/blank? version)
                          :low
-                         :medium)
+                         (if (s/includes? version ".")
+                           :high
+                           :medium))
         version        (if (s/blank? version)
                          (:latest-ver m)
                          version)
@@ -173,10 +176,11 @@
                          (contains? m "gpl")  "GPL")
         version    (get-rencgs m ["version"] "")
         version    (s/replace version #"\p{Punct}+" ".")
-        confidence (if (or (s/blank? version)
-                           (not (s/includes? version ".")))
+        confidence (if (s/blank? version)
                      :low
-                     :medium)
+                     (if (s/includes? version ".")
+                       :high
+                       :medium))
         version    (if (s/blank? version)
                      (:latest-ver m)
                      version)

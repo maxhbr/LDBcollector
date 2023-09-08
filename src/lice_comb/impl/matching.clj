@@ -109,19 +109,8 @@
           fix-mpl-2))
 
 (defmulti text->ids
-  "Attempts to determine the SPDX license and/or exception identifier(s) (a map)
-  within the given license text (a String, Reader, InputStream, or something
-  that is accepted by clojure.java.io/reader - File, URL, URI, Socket, etc.).
-  The result has metadata attached that describes how the identifiers were
-  determined.
-
-  Notes:
-  * this function implements the SPDX matching guidelines (via clj-spdx).
-    See https://spdx.github.io/spdx-spec/v2.3/license-matching-guidelines-and-templates/
-  * the caller is expected to open & close a Reader or InputStream passed to
-    this function (e.g. using clojure.core/with-open)
-  * you cannot pass a String representation of a filename to this method - you
-    should pass filenames through clojure.java.io/file first"
+  "Returns an expressions-map for the given license text, or nil if no matches
+  are found."
   {:arglists '([text])}
   type)
 
@@ -151,55 +140,30 @@
       (text->ids r))))
 
 (defn uri->ids
-  "Returns the SPDX license and/or exception identifiers (a map) for the given
-  uri, or nil if there aren't any.  It does this via two steps:
-  1. Seeing if the given URI is in the license or exception list, and returning
-     the ids of the associated licenses and/or exceptions if so
-  2. Attempting to retrieve the plain text content of the given URI and
-     performing full SPDX license matching on the result if there was one
-
-  Notes on step 1:
-  1. this does not perform exact matching; rather it simplifies URIs in various
-     ways to avoid irrelevant differences, including performing a
-     case-insensitive comparison, ignoring protocol differences (http vs https),
-     ignoring extensions representing MIME types (.txt vs .html, etc.), etc.
-     See lice-comb.impl.utils/simplify-uri for exact details.
-  2. URIs in the SPDX license and exception lists are not unique - the same URI
-     may represent multiple licenses and/or exceptions.
-
-  The result has metadata attached that describes how the identifiers were
-  determined."
+  "Returns an expressions-map for the given license uri, or nil if no matches
+  are found."
   [uri]
   (when-not (s/blank? uri)
     (lciei/prepend-source uri
                           (manual-fixes
                             (let [suri (lciu/simplify-uri uri)]
-                              ; 1. see if the URI string matches any of the URIs in the SPDX license list (using "simplified" URIs)
-                              (if-let [ids (get @lcis/index-uri-to-id-d suri)]
-                                (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)})) ids))
-                                ; 2. attempt to retrieve the text/plain contents of the uri and perform full license matching on it
+                              (or ; 1. Does the simplified URI match any of the simplified URIs in the SPDX license or exception lists?
+                                (when-let [ids (get @lcis/index-uri-to-id-d suri)]
+                                  (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)})) ids)))
+
+                                ; 2. attempt to retrieve the text/plain contents of the uri and perform license text matching on it
                                 (when-let [license-text (lcihttp/get-text uri)]
                                   (when-let [ids (text->ids license-text)]
                                     ids))))))))
 
 (defn- string->ids-info
-  "Converts the given String into a sequence of singleton maps (NOT A LICE-COMB
-  EXPRESSION INFO MAP!), each of which has a key is that is an SPDX identifier
-  (either a listed SPDX license or exception id), and whose value is a list of
-  meta-information about how that identifier was found. The result sequence is
-  ordered in the same order of appearance as the source values in s.
+  "Converts the given string (a fragment of a license name) into a sequence of
+  singleton expressions-info maps (one per expression), ordered in the same
+  order of appearance as they appear in s.
 
-  If no listed SPDX license or exception identifiers are found, returns a
-  singleton sequence containing a map with a lice-comb specific 'unlisted'
-  LicenseRef.
-
-  This involves:
-  1. Seeing if it's a listed license or exception id
-  2. Seeing if it's a listed license or exception name
-  3. Checking if the value is a URI, and if so performing URI matching on it
-  4. Using regexes to attempt to identify the license(s) and/or
-     exception(s)
-  5. Returning a lice-comb specific 'unlisted' LicenseRef"
+  If no listed SPDX license or exception identifiers are found in s, returns a
+  sequence containing a single expressions-info map with a lice-comb specific
+  'unlisted' LicenseRef that encodes s."
   [s]
   (when-not (s/blank? s)
     (let [s   (s/trim s)
@@ -232,8 +196,8 @@
     (seq (filter #(or (not (string? %)) (not (s/blank? %))) coll))))
 
 (defn- map-split-and-interpose
-  "Maps over the given sequence, splitting strings using the given regex
-  and interposing the given value, returning a (flattened) sequence."
+  "Maps over the given sequence, splitting strings using the given regex re and
+  interposing the given value int, returning a (flattened) sequence."
   [re int coll]
   (mapcat #(if-not (string? %)
              [%]
@@ -259,6 +223,14 @@
 
 (def ^:private push conj)   ; With lists-as-stacks conj == push
 
+(defn- calculate-confidence-for-expression
+  "Calculate the confidence for an expression, as the lowest confidence in the
+  expression-infos for the identifiers that make up the expression"
+  [expression-infos]
+  (if-let [confidence (lciei/lowest-confidence (filter identity (map :confidence expression-infos)))]
+    confidence
+    :high))   ; For when none of the components have a confidence (i.e. they're all :type :declared)
+
 (defn- process-expression-element
   "Processes a single new expression element e (either a keyword representing
   an SPDX operator, or a map representing an SPDX identifier) in the context of
@@ -273,6 +245,7 @@
     (case (count (take-while keyword? s))
       ; No keywords? Push e onto s
       0 (push s e)
+
       ; One keyword? See if we should "collapse" the prior value, the keyword and e into an SPDX expression fragment and push the result onto s
       1 (let [kw        (peek s)
               operator  (s/upper-case (name kw))
@@ -283,17 +256,19 @@
             (push s-minus-2 e)       ; s had one keyword on it (which is invalid), so drop it and push e on
             (if (or (not= :with kw)  ; If the prior keyword was :and or :or, or :with and the current element is a listed exception id, build an SPDX expression fragment and push the result onto s
                     (se/listed-id? (first (keys e))))
-              (let [k (s/join " " [(first (keys prior)) operator (first (keys e))])
-                    v (distinct (concat (list {:type :concluded :confidence :low :strategy :expression-inference})
-                                        (first (vals prior))
-                                        (first (vals e))))]
+              (let [k                (s/join " " [(first (keys prior)) operator (first (keys e))])
+                    expression-infos (concat (first (vals prior)) (first (vals e)))
+                    v                (distinct (concat (list {:type :concluded :confidence (calculate-confidence-for-expression expression-infos) :strategy :expression-inference})
+                                                       expression-infos))]
                 (push s-minus-2 {k v}))
               (push s-minus-1 e))))  ; We had a :with operator without a valid exception id following it, so simply drop the :with keyword from the stack and push the current element on
+
       ; Many keywords? That's invalid (since we dedupe them when they get pushed on, so this means they're different), so drop all of them and push e onto s
       (push (drop-while keyword? s) e))))
 
-(defn- build-spdx-expressions-map
-  "Builds a single SPDX expressions map from the given list of keywords and SPDX expession maps."
+(defn- build-expressions-info-map
+  "Builds an expressions-info map from the given sequence of keywords and SPDX
+  expression maps."
   [l]
   (loop [result '()
          f      (first l)
@@ -302,11 +277,8 @@
       (recur (process-expression-element result f) (first r) (rest r))
       (manual-fixes (into {} result)))))
 
-(defn attempt-to-build-expressions
-  "Attempts to build SPDX expression(s) (a map) from the given name.
-
-  The keys in the maps are the detected SPDX license and exception identifiers,
-  and each value contains information about how that identifiers was determined."
+(defn name->expressions-info
+  "Returns an expressions-info map for the given license name."
   [name]
   (when-not (s/blank? name)
     (let [name (s/trim name)]
@@ -314,17 +286,14 @@
                             (or ; 1. Is it a cursed name?
                                 (get @cursed-names-d name)
 
-                                ; 2. Attempt to construct an SPDX expression from the name
+                                ; 2. Construct an expressions-info map from the name
                                 (some->> (split-on-operators name)
                                          (drop-while keyword?)
                                          (lc3/rdrop-while keyword?)
                                          (map #(if (keyword? %) % (string->ids-info %)))
                                          flatten
-                                         (filter identity)
-                                         (drop-while keyword?)
-                                         (lc3/rdrop-while keyword?)
                                          seq
-                                         build-spdx-expressions-map))))))
+                                         build-expressions-info-map))))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

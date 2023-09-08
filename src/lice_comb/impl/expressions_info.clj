@@ -22,8 +22,8 @@
   (:require [clojure.string :as s]))
 
 (defn prepend-source
-  "Prepends the given source s (a String) onto all metadata sub-maps in m (a
-  lice-comb expressions-info map)."
+  "Prepends the given source s (a String) onto the :source sequence of all
+  expression-info sub-maps in m (an expressions-info map)."
   [s m]
   (if (or (s/blank? s) (empty? m))
     m
@@ -40,11 +40,34 @@
                   m))))
 
 (defn merge-maps
-  "Merges any number of lice-comb expressions-info maps, by concatenating and
-  de-duping values for the same key (expression)."
+  "Merges any number of expressions-info maps, by concatenating and de-duping
+  values for the same key (expression)."
   [& maps]
   (let [maps (filter identity maps)]
     (when-not (empty? maps)
       (let [grouped-maps (group-by first (mapcat identity maps))]
         (into {} (map #(vec [% (seq (distinct (mapcat second (get grouped-maps %))))])
                       (keys grouped-maps)))))))
+
+(def ^:private confidence-sort {
+  :low    0
+  :medium 1
+  :high   2})
+
+(defn sort-confidences
+  "Sorts a sequence of confidences from low to high."
+  [cs]
+  (when cs
+    (sort-by confidence-sort cs)))
+
+(defn lowest-confidence
+  "Returns the lowest confidence in a sequence of confidences."
+  [cs]
+  (when cs
+    (first (sort-confidences cs))))
+
+(defn highest-confidence
+  "Returns the highest confidence in a sequence of confidences."
+  [cs]
+  (when cs
+    (last (sort-confidences cs))))

@@ -32,7 +32,7 @@
   :unlisted                                      "fallback to unlisted LicenseRef"
   :manual-verification                           "manual verification"})
 
-(defn- info-keyfn
+(defn- expression-info-keyfn
   "sort-by keyfn for lice-comb info maps"
   [metadata]
   (str (case (:id metadata)
@@ -61,12 +61,12 @@
          :unlisted                                      "8"
          :manual-verification                           "9")))
 
-(defn- license-info-element->string
-  "Converts the info list for the given identifier into a human-readable
-  string, using the information in license-info map m."
+(defn- expression-info->string
+  "Converts the given expression-info map into a human-readable string, using
+  the information in license-info map m."
   [m id]
   (str id ":\n"
-    (when-let [info-list (sort-by info-keyfn (seq (get m id)))]
+    (when-let [info-list (sort-by expression-info-keyfn (seq (get m id)))]
       (s/join "\n" (map #(str "  "
                               (when-let [md-id (:id %)] (when (not= id md-id) (str md-id " ")))
                               (case (:type %)
@@ -77,11 +77,11 @@
                               (when-let [source     (seq (:source %))] (str "\n    Source:\n    > " (s/join "\n    > " source))))
                         info-list)))))
 
-(defn license-info->string
-  "Converts lice-comb license-info map m into a human-readable string.  This
+(defn expressions-info->string
+  "Converts the given expressions-info map into a human-readable string.  This
   function is mostly intended for debugging / developer discovery purposes, and
   the content and format of the output may change without warning."
   [m]
   (when m
     (let [ids (sort (keys m))]
-      (s/join "\n\n" (map (partial license-info-element->string m) ids)))))
+      (s/join "\n\n" (map (partial expression-info->string m) ids)))))

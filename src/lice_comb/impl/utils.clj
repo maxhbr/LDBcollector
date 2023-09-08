@@ -141,7 +141,7 @@
   [_])
 
 (defmethod readable-file? java.io.File
-  [f]
+  [^java.io.File f]
   (and f
        (.exists f)
        (.canRead f)

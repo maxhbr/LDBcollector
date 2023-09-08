@@ -17,8 +17,8 @@
 ;
 
 (ns lice-comb.lein
-  "Functionality related to finding and determining license information from
-  dependencies in Leiningen's dependency vector format."
+  "Functionality related to combing Leiningen dependency sequences for license
+  information."
   (:require [dom-top.core                    :as dom]
             [lice-comb.deps                  :as lcd]
             [lice-comb.impl.expressions-info :as lciei]))

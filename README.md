@@ -104,6 +104,22 @@ $ deps-try com.github.pmonks/lice-comb
 ;     ({:type :declared, :strategy :spdx-expression, :source ("https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom"
 ;                                                             "<name>"
 ;                                                             "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")})}
+
+;; Pretty print expressions-info
+(require '[lice-comb.utils :as lcu])
+
+(println (lcu/expressions-info->string (lcd/dep->expressions-info ['com.amazonaws/aws-java-sdk-s3 {:deps/manifest :mvn :mvn/version "1.12.129"}])))
+;=> Apache-2.0:
+;     Concluded
+;       Confidence: high
+;       Strategy: regular expression matching
+;       Source:
+;       > com.amazonaws/aws-java-sdk-s3@1.12.129
+;       > https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.12.129/aws-java-sdk-s3-1.12.129.pom
+;       > https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.12.129/aws-java-sdk-pom-1.12.129.pom
+;       > <name>
+;       > Apache License, Version 2.0
+nil
 ```
 
 ### API Documentation

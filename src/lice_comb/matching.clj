@@ -17,8 +17,39 @@
 ;
 
 (ns lice-comb.matching
-  "Matching functionality, some of which is provided by
-  https://github.com/pmonks/clj-spdx"
+  "The core matching functionality within lice-comb. Matching is provided for
+  three categories of input, and uses a different process for each:
+  1. License names
+  2. License uris
+  3. License texts
+
+  Each matching fn has two variants:
+  1. A 'simple' version that returns a set of SPDX expressions (Strings)
+  2. An 'info' version that returns an 'expressions-info map'
+
+  An expressions-info map has this structure:
+  * key:   an SPDX expression (String), which may be a single SPDX license
+           identifier)
+  * value: a sequence of 'expression-info' maps
+
+  Each lice-comb expression-info map has this structure:
+  * :id (String, optional):
+    The SPDX identifier within the expression that this info map refers to.
+  * :type (either :declared or :concluded, mandatory):
+    Whether this identifier was unambiguously declared within the input or
+    was instead concluded by lice-comb (see SPDX specification for more detail
+    on the definition of these two terms).
+  * :confidence (one of: :high, :medium, :low, only provided when :type = :concluded):
+    Indicates the approximate confidence lice-comb has in its conclusions for
+    this particular SPDX identifier.
+  * :strategy (a keyword, mandatory):
+    The strategy lice-comb used to determine this particular SPDX identifier.
+    See the source for lice-comb.utils for an up-to-date list of all possible
+    values.
+  * :source (a sequence of Strings):
+    The list of sources used to arrive at this SPDX identifier, starting from
+    the most general (the input) to the most specific (the smallest subset of
+    the input that was used to make this determination)."
   (:require [clojure.string          :as s]
             [spdx.licenses           :as sl]
             [spdx.exceptions         :as se]
@@ -57,12 +88,9 @@
           :else                        id)))
 
 (defn text->ids-info
-  "Attempts to determine the SPDX license and/or exception identifier(s) (a map)
-  within the given license text (a String, Reader, InputStream, or something
-  that is accepted by clojure.java.io/reader - File, URL, URI, Socket, etc.).
-
-  The keys in the maps are the detected SPDX license and exception identifiers,
-  and each value contains information about how that identifiers was determined.
+  "Returns an expressions-info map for the given license text (a String, Reader,
+  InputStream, or something that is accepted by clojure.java.io/reader - File,
+  URL, URI, Socket, etc.), or nil if no expressions were found.
 
   Notes:
   * this function implements the SPDX matching guidelines (via clj-spdx).
@@ -70,18 +98,15 @@
   * the caller is expected to open & close a Reader or InputStream passed to
     this function (e.g. using clojure.core/with-open)
   * you cannot pass a String representation of a filename to this method - you
-    should pass filenames through clojure.java.io/file first
-
-  The result has metadata attached that describes how the identifiers were
-  determined."
+    should pass filenames through clojure.java.io/file (or similar) first"
   [text]
   (lcim/text->ids text))
 
 (defn text->ids
-  "Attempts to determine the SPDX license and/or exception identifier(s) (a set
-  of Strings) within the given license text (a String, Reader, InputStream, or
-  something that is accepted by clojure.java.io/reader - File, URL, URI, Socket,
-  etc.).
+  "Returns a set of SPDX expressions (Strings) for the given license text (a
+  String, Reader, InputStream, or something that is accepted by
+  clojure.java.io/reader - File, URL, URI, Socket, etc.), or nil if no
+  expressions were found.
 
   Notes:
   * this function implements the SPDX matching guidelines (via clj-spdx).
@@ -89,17 +114,22 @@
   * the caller is expected to open & close a Reader or InputStream passed to
     this function (e.g. using clojure.core/with-open)
   * you cannot pass a String representation of a filename to this method - you
-    should pass filenames through clojure.java.io/file first
-
-  The result has metadata attached that describes how the identifiers were
-  determined."
+    should pass filenames through clojure.java.io/file (or similar) first"
   [text]
   (some-> (text->ids-info text)
           keys
           set))
 
 (defn uri->ids-info
-  "Returns the SPDX license and/or exception identifiers (a map) for the given
+  "Returns an exceptions-info map for the given license uri (a String, URL, or
+  URI).
+
+  Notes:
+  * This is done
+
+
+
+  Returns the SPDX license and/or exception identifiers (a map) for the given
   uri, or nil if there aren't any.  It does this via two steps:
   1. Seeing if the given URI is in the license or exception list, and returning
      the ids of the associated licenses and/or exceptions if so
@@ -142,10 +172,10 @@
           set))
 
 (defn name->expressions-info
-  "Attempts to determine the SPDX license expression(s) (a map) from the given
-  'license name' (a String), or nil if there aren't any.  This involves:
+  "Returns a lice-comb expressions-info map for the given 'license name' (a
+  String), or nil if there isn't one.  This involves:
   1. Determining whether the name is a valid SPDX license expression, and if so
-     normalising (see clj-spdx's spdx.expressions/normalise fn) and returning it
+     normalising it (see clj-spdx's spdx.expressions/normalise fn)
   2. Checking if the name is actually a URI, and if so performing URL matching
      on it (as per url->ids-info)
   3. attempting to construct one or more SPDX license expressions from the
@@ -165,7 +195,7 @@
             ids
             {(lcis/name->unlisted name) (list {:type :concluded :confidence :low :strategy :unlisted :source (list name)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unlisted
           ; 3. Attempt to build SPDX expression(s) from the name
-          (lcim/attempt-to-build-expressions name))))))
+          (lcim/name->expressions-info name))))))
 
 (defn name->expressions
   "Attempts to determine the SPDX license expression(s) (a set of Strings) from

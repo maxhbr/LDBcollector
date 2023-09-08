@@ -17,8 +17,8 @@
 ;
 
 (ns lice-comb.files
-  "Functionality related to finding and determining license information from
-  files and directories."
+  "Functionality related to combing files, directories, and ZIP format archives
+  for license information."
   (:require [clojure.string                  :as s]
             [clojure.java.io                 :as io]
             [lice-comb.matching              :as lcmtch]
@@ -50,11 +50,13 @@
             set)))
 
 (defn file->expressions-info
-  "Attempts to determine the SPDX license expression(s) (a map) from the given
-  file (an InputStream or something that can have an io/input-stream opened on
-  it). If an InputStream is provided, it must already be open and the associated
-  filepath must be provided as the second parameter (it is optional in other
-  cases)."
+  "Returns an expressions-info map for the given file (an InputStream or
+  something that can have an io/input-stream opened on it), or nil if no
+  expressions were found.
+
+  If an InputStream is provided, it is the caller's responsibility to open and
+  close it, and a filepath associated with the InputStream *must* be provided as
+  the second parameter (it is optional for other types of input)."
   ([f] (file->expressions-info f (lciu/filepath f)))
   ([f filepath]
    (when (lciu/readable-file? f)
@@ -67,11 +69,13 @@
                                         :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->ids-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
 
 (defn file->expressions
-  "Attempts to determine the SPDX license expression(s) (a set) from the given
-  file (an InputStream or something that can have an io/input-stream opened on
-  it). If an InputStream is provided, it must already be open and the associated
-  filepath should also be provided as the second parameter (it is optional in
-  other cases)."
+  "Returns a set of SPDX expressions (Strings) for the given file (an
+  InputStream or something that can have an io/input-stream opened on it), or
+  nil if no expressions were found.
+
+  If an InputStream is provided, it is the caller's responsibility to open and
+  close it, and a filepath associated with the InputStream *must* be provided as
+  the second parameter (it is optional for other types of input)."
   ([f] (file->expressions f (lciu/filepath f)))
   ([f filepath]
    (some-> (file->expressions-info f filepath)
@@ -79,11 +83,11 @@
            set)))
 
 (defn zip->expressions-info
-  "Attempt to detect the SPDX license expression(s) (a map) in a ZIP file. zip may be a
-  String or a java.io.File, both of which must refer to a ZIP-format compressed
-  file.
+  "Returns an expressions-info map for the given ZIP file (a String or a File,
+  which must refer to a ZIP-format compressed file), or nil if no expressions
+  were found.
 
-  Throws on invalid zip format file."
+  Throws if the file is not a valid ZIP."
   [zip]
   (when (lciu/readable-file? zip)
     (let [zip-file (io/file zip)]
@@ -99,20 +103,20 @@
             (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result))))))))
 
 (defn zip->expressions
-  "Attempt to detect the SPDX license expression(s) (a set) in a ZIP file. zip may be a
-  String or a java.io.File, both of which must refer to a ZIP-format compressed
-  file.
+  "Returns a set of SPDX expressions (Strings) for the given ZIP file (a String
+  or a File, which must refer to a ZIP-format compressed file), or nil if no
+  expressions were found.
 
-  Throws on invalid zip format file."
+  Throws if the file is not a valid ZIP."
   [zip]
   (some-> (zip->expressions-info zip)
           keys
           set))
 
 (defn- zip-compressed-files
-  "Returns all probable ZIP compressed files in the given directory,
-  recursively, as a set of java.io.File objects. dir may be a String or a
-  java.io.File, either of which must refer to a readable directory."
+  "Returns a set of all probable ZIP compressed files (Files) in the given
+  directory, recursively, or nil if there are none. dir may be a String or a
+  java.io.File, and must refer to a readable directory."
   [dir]
   (when (lciu/readable-dir? dir)
     (some-> (seq (filter #(and (.isFile ^java.io.File %)
@@ -122,16 +126,13 @@
             set)))
 
 (defn dir->expressions-info
-  "Attempt to detect the SPDX license expression(s) (a set) in a directory. dir
-  may be a String or a java.io.File, both of which must refer to a
-  readable directory.
+  "Returns an expressions-info map for the given dir (a String or a File,
+  which must refer to a readable directory), or nil if no expressions were
+  found.
 
   The optional `opts` map has these keys:
   * `include-zips?` (boolean, default false) - controls whether zip compressed
-    files found in the directory are included in the scan or not
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+    files found in the directory are recursively included in the scan or not"
   ([dir] (dir->expressions-info dir nil))
   ([dir {:keys [include-zips?] :or {include-zips? false}}]
    (when (lciu/readable-dir? dir)
@@ -143,16 +144,13 @@
                                file-expressions))))))
 
 (defn dir->expressions
-  "Attempt to detect the SPDX license expression(s) (a map) in a directory. dir
-  may be a String or a java.io.File, both of which must refer to a
-  readable directory.
+  "Returns a set of SPDX expressions (Strings)  for the given dir (a String or
+  a File, which must refer to a readable directory), or nil if no expressions
+  were found.
 
   The optional `opts` map has these keys:
   * `include-zips?` (boolean, default false) - controls whether zip compressed
-    files found in the directory are included in the scan or not
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+    files found in the directory are recursively included in the scan or not"
   ([dir] (dir->expressions dir nil))
   ([dir opts]
    (some-> (dir->expressions-info dir opts)

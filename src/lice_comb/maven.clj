@@ -17,12 +17,10 @@
 ;
 
 (ns lice-comb.maven
-  "Functionality related to finding and determining license information from
-  Maven POMs."
+  "Functionality related to combing Maven POMs for license information."
   (:require [clojure.string                  :as s]
             [clojure.java.io                 :as io]
             [clojure.data.xml                :as xml]
-            [clojure.java.shell              :as sh]
             [clojure.tools.logging           :as log]
             [xml-in.core                     :as xi]
             [lice-comb.matching              :as lcmtch]
@@ -30,38 +28,6 @@
             [lice-comb.impl.expressions-info :as lciei]
             [lice-comb.impl.http             :as lcihttp]
             [lice-comb.impl.utils            :as lciu]))
-
-(def ^:private local-maven-repo-d
-  (delay
-    (try
-      ; The command:
-      ;     mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout
-      ; determines where the local repository is located.
-      (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
-        (if (zero? (:exit sh-result))
-          (s/trim (:out sh-result))
-          (str (System/getProperty "user.home") "/.m2/repository")))
-      (catch java.io.IOException _
-        (str (System/getProperty "user.home") "/.m2/repository")))))
-
-; TODO: make this configurable
-(def ^:private remote-maven-repos #{"https://repo.maven.apache.org/maven2" "https://repo.clojars.org"})
-
-(defn pom-uri-for-gav
-  "Attempts to locate the POM for the given GAV, which is a URI that may point
-  to a file in the local Maven repository or a remote Maven repository (e.g. on
-  Maven Central or Clojars)."
-  ([{:keys [group-id artifact-id version]}] (pom-uri-for-gav group-id artifact-id version))
-  ([group-id artifact-id version]
-   (when (and (not (s/blank? group-id))
-              (not (s/blank? artifact-id))
-              (not (s/blank? version)))
-     (let [gav-path  (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
-           local-pom (io/file (str @local-maven-repo-d "/" gav-path))]
-       (if (and (.exists local-pom)
-                (.isFile local-pom))
-         (.toURI local-pom)
-         (first (filter lcihttp/uri-resolves? (map #(str % "/" gav-path) remote-maven-repos))))))))
 
 (defn- licenses-from-pair
   "Attempts to determine the license(s) (a map) from a POM license name/URL
@@ -101,16 +67,13 @@
     (xml-find-first-string xml ks2)))
 
 (defmulti pom->expressions-info
-  "Attempt to detect the license expression(s) (a map) reported in a pom.xml
-  file. pom may be a java.io.InputStream, or anything that can be opened by
-  clojure.java.io/input-stream.
+  "Returns an expressions-info map for the given POM file (an InputStream or
+  something that can have an io/input-stream opened on it), or nil if no
+  expressions were found.
 
-  Note that if an InputStream is provided:
-  1. it's the caller's responsibility to open and close it
-  2. a filepath *must* be provided along with the stream (the 2nd arg)
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+  If an InputStream is provided, it is the caller's responsibility to open and
+  close it, and a filepath associated with the InputStream *must* be provided as
+  the second parameter (it is optional for other types of input)."
   {:arglists '([pom] [pom filepath])}
   (fn [& args] (type (first args))))
 
@@ -142,7 +105,7 @@
                                                                           :artifact-id (lciu/strim (first (xi/find-first parent-no-ns [:artifactId])))
                                                                           :version     (lciu/strim (first (xi/find-first parent-no-ns [:version])))}))]
                               (when-not (empty? parent-gav)
-                                (pom->expressions-info (pom-uri-for-gav parent-gav))))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
+                                (pom->expressions-info (lcihttp/gav->pom-uri parent-gav))))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
 
 (defmethod pom->expressions-info :default
   ([pom] (pom->expressions-info pom (lciu/filepath pom)))
@@ -154,16 +117,13 @@
          (log/info (str "'" filepath "'") "contains no license information"))))))
 
 (defn pom->expressions
-  "Attempt to detect the license expression(s) (a set) reported in a pom.xml
-  file. pom may be a java.io.InputStream, or anything that can be opened by
-  clojure.java.io/input-stream.
+  "Returns a set of SPDX expressions (Strings) for the given POM file (an
+  InputStream or something that can have an io/input-stream opened on it), or
+  nil if no expressions were found.
 
-  Note that if an InputStream is provided:
-  1. it's the caller's responsibility to open and close it
-  2. a filepath *must* be provided along with the stream (the 2nd arg)
-
-  The result has metadata attached that describes how the identifiers in the
-  expression(s) were determined."
+  If an InputStream is provided, it is the caller's responsibility to open and
+  close it, and a filepath associated with the InputStream *must* be provided as
+  the second parameter (it is optional for other types of input)."
   ([pom] (pom->expressions pom (lciu/filepath pom)))
   ([pom filepath]
    (some-> (pom->expressions-info pom filepath)
@@ -177,5 +137,4 @@
   allow explicit control of the cost of initialisation to callers who need it."
   []
   (lcmtch/init!)
-  @local-maven-repo-d
   nil)
