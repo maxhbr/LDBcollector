@@ -22,5 +22,5 @@
     },
     "scancode_key":{ "type": "string" },
     "name": { "type": "string" },
-    "required" : [ "meta", "spdxid", "name", "aliases" ]
+    "required" : [ "meta", "spdxid", "name", "aliases" , "scancode_key" ]
 }
