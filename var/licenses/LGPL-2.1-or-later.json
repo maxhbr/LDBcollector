@@ -3,8 +3,9 @@
     "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
     "comment": ""
   },
-  "name": "GNU Lesser General Public License 2.1 or later",
-  "spdxid": "LGPL-2.1-or-later",
+  "name": "GNU Lesser General Public License 2.1 or later", 
+  "scancode_key": "lgpl-2.1-plus",
+ "spdxid": "LGPL-2.1-or-later",
   "aliases": [
     "LGPL-2.1-or-later",
     "LGPL-2.1+",

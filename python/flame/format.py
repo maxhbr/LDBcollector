@@ -173,3 +173,18 @@ class TextOutputFormatter(OutputFormatter):
 
     def format_error(self, error, verbose):
         return f'Error, {error}'
+
+    def format_license_complete(self, lic, verbose):
+        ret_str = []
+        ret_str.append(f'{lic["name"]}')
+        ret_str.append(f'    spdxid:           {lic["spdxid"]}')
+        ret_str.append(f'    spdx_url:         https://spdx.org/licenses/{lic["spdxid"]}.html')
+        ret_str.append(f'    scancode_key:     {lic["scancode_key"]}')
+        ret_str.append(f'    scancode_db_url:  https://scancode-licensedb.aboutcode.org/{lic["scancode_key"]}.html')
+        ret_str.append(f'    aliases:          {", ".join(lic["aliases"])}')
+        if 'compatibility_as' in lic:
+            ret_str.append(f'    compatibility_as: {lic["compatibility_as"]}')
+        if 'comment_as' in lic:
+            ret_str.append(f'    comment:          {lic["comment"]}')
+
+        return "\n".join(ret_str)
