@@ -116,7 +116,7 @@ def license(fl, formatter, args):
 
 def full_license(fl, formatter, args):
     expr_split = fl.expression_license(args.license)['identified_license'].split()
-    
+
     if len(expr_split) == 1:
         lic = fl.license_complete(expr_split[0])
         return formatter.format_license_complete(lic, args.verbose)

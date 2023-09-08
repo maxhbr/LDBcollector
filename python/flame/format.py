@@ -174,18 +174,17 @@ class TextOutputFormatter(OutputFormatter):
     def format_error(self, error, verbose):
         return f'Error, {error}'
 
-    def format_license_complete(self, l, verbose):
+    def format_license_complete(self, lic, verbose):
         ret_str = []
-        #print("l: " + str(l))
-        ret_str.append(f'{l["name"]}')
-        ret_str.append(f'    spdxid:           {l["spdxid"]}')
-        ret_str.append(f'    spdx_url:         https://spdx.org/licenses/{l["spdxid"]}.html')
-        ret_str.append(f'    scancode_key:     {l["scancode_key"]}')
-        ret_str.append(f'    scancode_db_url:  https://scancode-licensedb.aboutcode.org/{l["scancode_key"]}.html')
-        ret_str.append(f'    aliases:          {", ".join(l["aliases"])}')
-        if 'compatibility_as' in l:
-            ret_str.append(f'    compatibility_as: {l["compatibility_as"]}')
-        if 'comment_as' in l:
-            ret_str.append(f'    comment:          {l["comment"]}')
+        ret_str.append(f'{lic["name"]}')
+        ret_str.append(f'    spdxid:           {lic["spdxid"]}')
+        ret_str.append(f'    spdx_url:         https://spdx.org/licenses/{lic["spdxid"]}.html')
+        ret_str.append(f'    scancode_key:     {lic["scancode_key"]}')
+        ret_str.append(f'    scancode_db_url:  https://scancode-licensedb.aboutcode.org/{lic["scancode_key"]}.html')
+        ret_str.append(f'    aliases:          {", ".join(lic["aliases"])}')
+        if 'compatibility_as' in lic:
+            ret_str.append(f'    compatibility_as: {lic["compatibility_as"]}')
+        if 'comment_as' in lic:
+            ret_str.append(f'    comment:          {lic["comment"]}')
 
         return "\n".join(ret_str)
