@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "GPL 2.0 only",
+  "scancode_key": "gpl-2.0",
   "spdxid": "GPL-2.0-only",
   "aliases": [
     "GPL-2.0-only",
