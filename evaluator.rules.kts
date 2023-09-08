@@ -407,7 +407,7 @@ fun PackageRule.howToFixUnmappedDeclaredLicense(license: String): String {
             |
             |   ```
             |
-            |   curations: Map declared license for ${pkg.metadata.id.toCoordinatesWithoutVersion()}
+            |   feat(curations): Map declared license for ${pkg.metadata.id.toCoordinatesWithoutVersion()}
             |
             |   $relatesToIssueText
             |
@@ -476,7 +476,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |
             |   ```
             |
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
             |
             |   $relatesToIssueText
             |
@@ -529,7 +529,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |
             |   ```
             |
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
             |
             |   $relatesToIssueText
             |
@@ -578,7 +578,7 @@ fun resolveViolationInDependencyDeclaredLicenseText(pkg: Package) : String {
             |
             |   ```
             |
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
             |
             |   $relatesToIssueText
             |
@@ -706,7 +706,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
             |
             |   $relatesToIssueText
             |
@@ -755,7 +755,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   curations: Set VCS path for ${pkg.id.toCoordinatesWithoutVersion()}
+            |   feat(curations): Set VCS path for ${pkg.id.toCoordinatesWithoutVersion()}
             |
             |   $relatesToIssueText
             |
@@ -861,7 +861,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   curations: Conclude license for ${pkg.id.toCoordinates()}
+            |   feat(curations): Conclude license for ${pkg.id.toCoordinates()}
             |
             |   $relatesToIssueText
             |
@@ -900,7 +900,7 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |   curations: Set VCS path for ${pkg.id.toCoordinatesWithoutVersion()}
+            |   feat(curations): Set VCS path for ${pkg.id.toCoordinatesWithoutVersion()}
             |
             |   $relatesToIssueText
             |
