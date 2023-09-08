@@ -25,11 +25,11 @@
 
 (defn- lein-dep->toolsdeps-dep
   "Converts a leiningen style dependency vector into a (partial) tools.deps style
-  dependency map. This is partial in that just enough of the tools.deps style
-  map is constructed for lice-comb.deps to function."
+  dependency MapEntry. This is partial in that just enough of the tools.deps style
+  info map (in the value) is constructed for lice-comb.deps to function."
   [[ga version :as dep]]
   (when dep
-    (hash-map ga {:mvn/version version :deps/manifest :mvn})))   ;####TODO: Synthesise :paths key (for paths to JAR files)
+    [ga {:mvn/version version :deps/manifest :mvn}]))   ;####TODO: Synthesise :paths key (for paths to JAR files)
 
 (defn dep->expressions-info
   "Attempt to detect the SPDX license expression(s) (a map) in a Leiningen
@@ -52,7 +52,8 @@
   that is the Leiningen dep, and the value is the lice-comb expressions-info map
   for that dep."
   [deps]
-  (into {} (dom/real-pmap #(vec [% (dep->expressions-info %)]) deps)))
+  (when deps
+    (into {} (dom/real-pmap #(vec [% (dep->expressions-info %)]) deps))))
 
 (defn deps->expressions
   "Attempt to detect all of the SPDX license expression(s) in a Leiningen style
@@ -60,7 +61,8 @@
   that is the Leiningen dep, and the value is the set of SPDX license
   expression(s) for that dep."
   [deps]
-  (into {} (dom/real-pmap #(vec [% (dep->expressions %)]) deps)))
+  (when deps
+    (into {} (dom/real-pmap #(vec [% (dep->expressions %)]) deps))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
