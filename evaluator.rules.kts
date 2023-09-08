@@ -121,7 +121,7 @@ val orgOssProjectsApprovedLicenses = listOf(
 /**
  * Variables used to generate MarkDown text of howToFixDefault()
  */
-var doNotWorryText = "_Note_: Do not worry about creating a perfect curation or exclude. Reviewers will provide feedback."
+val doNotWorryText = "_Note_: Do not worry about creating a perfect curation or exclude. Reviewers will provide feedback."
 val globTutorialMdLink = "[reference documentation](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob)"
 val ortConfigContributingMdLink = "[CONTRIBUTING.md](https://github.com/oss-review-toolkit/ort-config/blob/main/CONTRIBUTING.md)"
 val ortConfigVcsMdLink = "[ort-config repository](https://github.com/oss-review-toolkit/ort-config)"
