@@ -5,6 +5,6 @@
     },
     "spdxid": "BSD-3-Clause",
     "aliases": [ "BSD3", "3-BSD"],
-    "scancode-key": "bsd-new",
+    "scancode_key": "bsd-new",
     "name": "The 3-Clause BSD License"
 }
