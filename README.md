@@ -52,6 +52,12 @@ $ deps-try com.github.pmonks/lice-comb
 ;; License name and full text matching
 (require '[lice-comb.matching :as lcm])
 
+; Initialise the matching namespace
+; Notes:
+; 1. This is slow (takes ~1 minute on my laptop), almost all of which is Spdx-Java-Library's initialisation (see https://github.com/spdx/Spdx-Java-Library/issues/193)
+; 2. This step is optional, though initialisation will still happen regardless, and when it does you'll incur the same cost
+(lcm/init!)
+
 (lcm/name->expressions "Apache")
 ;=> #{"Apache-2.0"}
 
@@ -79,7 +85,8 @@ $ deps-try com.github.pmonks/lice-comb
 (lcd/dep->expressions ['org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.11.1"}])
 ;=> #{"EPL-1.0"}
 
-;; Information about matches
+;; Information about matches (useful for better understanding how lice-comb arrived at a given set of expressions, and
+;; how confident it is in the values it's providing)
 (lcm/name->expressions-info "Apache-2.0")
 ;=> {"Apache-2.0" ({:type :declared, :strategy :spdx-expression, :source ("Apache-2.0")})}
 
