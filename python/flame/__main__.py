@@ -13,6 +13,7 @@ from flame.license_db import FossLicenses
 import flame.config
 from flame.format import OUTPUT_FORMATS
 from flame.format import OutputFormatterFactory
+from flame.exception import FlameException
 
 def parse():
 
@@ -54,7 +55,7 @@ def parse():
     parser_e = subparsers.add_parser(
         'license-full', help='Display full information about the license')
     parser_e.set_defaults(which='license-full', func=full_license)
-    parser_e.add_argument('license', type=str, help='license to display fully')
+    parser_e.add_argument('license', type=str, help='license to display fully. Only single license is allowed')
 
     # compatibility
     parser_c = subparsers.add_parser(
@@ -114,8 +115,14 @@ def license(fl, formatter, args):
     return formatter.format_expression(expression, args.verbose)
 
 def full_license(fl, formatter, args):
-    lic = fl.license_complete(args.license)
-    return formatter.format_license_complete(lic, args.verbose)
+    expr_split = fl.expression_license(args.license)['identified_license'].split()
+    
+    if len(expr_split) == 1:
+        lic = fl.license_complete(expr_split[0])
+        return formatter.format_license_complete(lic, args.verbose)
+    else:
+        raise FlameException(f'You can only provide one license to license-full. "{args.license} not allowed"')
+
 
 def main():
 
