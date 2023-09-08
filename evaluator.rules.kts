@@ -627,8 +627,8 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
@@ -666,8 +666,8 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |     For information on how to write a glob pattern, visit $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |   For information on how to write a glob pattern, visit $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Note that reviewers are set automatically.
@@ -781,8 +781,8 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
@@ -820,8 +820,8 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
@@ -925,8 +925,8 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortPathExcludeReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
@@ -963,8 +963,8 @@ fun resolveViolationInDependencySourceCodeText(pkg: Package, license: String) : 
             |
             |   ```
             |
-            |     For information on how to write a glob pattern, please see this $globTutorialMdLink.
-            |     The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
+            |   For information on how to write a glob pattern, please see this $globTutorialMdLink.
+            |   The available options for the `reason` field are defined in $ortLicenseFindingCurationReasonMdLink.
             |
             |   - Submit the above change to the $ortConfigVcsMdLink (see $ortConfigContributingMdLink for guidance) with a commit message as shown below.
             |     Reviewers are set automatically.
