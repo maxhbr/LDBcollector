@@ -742,7 +742,7 @@
                       "MIT"          (list {:id "MIT"          :type :concluded :confidence :high :strategy :regex-matching :source (list "MIT / BSD" "MIT")})}
                      (name->expressions-info "MIT / BSD"))))
   (testing "Some names from Clojars"
-    (is (valid-info= {"BSD-3-Clause" (list {:id "BSD-3-Clause" :type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list "https://opensource.org/licenses/BSD-3-Clause")})}
+    (is (valid-info= {"BSD-3-Clause" (list {:id "BSD-3-Clause" :type :concluded :confidence :high :strategy :spdx-listed-uri :source (list "https://opensource.org/licenses/BSD-3-Clause")})}
                      (name->expressions-info "https://opensource.org/licenses/BSD-3-Clause")))
     (is (valid-info= {"EPL-2.0" (list {:id "EPL-2.0" :type :concluded :confidence :high :strategy :regex-matching :source (list "Eclipse Public License - v 2.0")})}
                      (name->expressions-info "Eclipse Public License - v 2.0")))))

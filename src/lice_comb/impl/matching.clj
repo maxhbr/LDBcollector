@@ -149,7 +149,7 @@
                             (let [suri (lciu/simplify-uri uri)]
                               (or ; 1. Does the simplified URI match any of the simplified URIs in the SPDX license or exception lists?
                                 (when-let [ids (get @lcis/index-uri-to-id-d suri)]
-                                  (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-uri :source (list uri)})) ids)))
+                                  (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-uri :source (list uri)})) ids)))
 
                                 ; 2. attempt to retrieve the text/plain contents of the uri and perform license text matching on it
                                 (when-let [license-text (lcihttp/get-text uri)]
@@ -175,7 +175,7 @@
 
                 ; 2. Is it the name of one or more SPDX licenses or exceptions?
                 (when-let [ids (get @lcis/index-name-to-id-d (s/lower-case s))]
-                  (map #(hash-map % (list {:id % :type :concluded :confidence :medium :strategy :spdx-listed-name :source (list s)})) ids))
+                  (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-name :source (list s)})) ids))
 
                 ; 3. Might it be a URI?  (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
                 (when-let [ids (uri->ids s)]

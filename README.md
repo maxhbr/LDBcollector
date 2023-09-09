@@ -9,7 +9,7 @@
 
 # lice-comb
 
-A Clojure library for software *lice*nse detection.  It does this by *comb*ing through tools.deps and Leiningen dependencies, directory structures, and JAR & ZIP files, and attempting to detect what SPDX license expression(s) they contain.
+A Clojure library for software *lice*nse detection.  It does this by *comb*ing through tools.deps and Leiningen dependencies, directory structures, and JAR & ZIP files, attempting to detect what license(s) they contain, and then normalising them into [SPDX license expression(s)](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/).
 
 This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, I can thoroughly recommend [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial).
 
@@ -49,7 +49,7 @@ $ deps-try com.github.pmonks/lice-comb
 ### Demo
 
 ```clojure
-;; License name and full text matching
+;; License name, uri and full text matching
 (require '[lice-comb.matching :as lcm])
 
 ; Initialise the matching namespace
@@ -61,13 +61,13 @@ $ deps-try com.github.pmonks/lice-comb
 (lcm/name->expressions "Apache")
 ;=> #{"Apache-2.0"}
 
-(lcm/name->expressions "The MIT license")
-;=> #{"MIT"}
-
 (lcm/name->expressions "GNU Public License 2.0 w/ the GNU Classpath Exception")
 ;=> #{"GPL-2.0-only WITH Classpath-exception-2.0"}
 
 (lcm/text->ids (slurp "https://www.apache.org/licenses/LICENSE-2.0.txt"))
+;=> #{"Apache-2.0"}
+
+(lcm/uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")
 ;=> #{"Apache-2.0"}
 
 ;; License extraction from Maven poms, including ones that aren't locally downloaded
