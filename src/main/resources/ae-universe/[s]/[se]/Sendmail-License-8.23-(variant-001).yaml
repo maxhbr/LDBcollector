@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Sendmail License 8.23 (variant 001)"
+category: "Sendmail License 8.23"
+shortName: "Sendmail-8.23-var001"
+
+alternativeNames:
+  - "Sendmail License 8.23"
+  - "https://spdx.org/licenses/sendmail-8.23"
+
+otherIds: 
+  - "scancode:sendmail-8.23"

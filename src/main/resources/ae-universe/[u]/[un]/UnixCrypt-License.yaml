@@ -6,6 +6,8 @@ canonicalName: "UnixCrypt License"
 category: "UnixCrypt"
 spdxIdentifier: "UnixCrypt"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "UnixCrypt License"
 

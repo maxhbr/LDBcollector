@@ -6,5 +6,7 @@ canonicalName: "FreeType Patent Grant"
 category: "FreeType Patent Grant"
 shortName: "FreeType-Patent"
 
+openCoDEStatus: "approved"
+
 otherIds: 
   - "scancode:freetype-patent"

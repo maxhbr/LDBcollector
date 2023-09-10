@@ -6,6 +6,8 @@ canonicalName: "ARM LLVM Software Grant License Agreement"
 category: "ARM LLVM Software Grant License Agreement"
 shortName: "ARM-LLVM-SGA"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "arm-llvm-sga"
 

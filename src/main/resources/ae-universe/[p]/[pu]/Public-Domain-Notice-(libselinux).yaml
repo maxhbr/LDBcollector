@@ -6,6 +6,8 @@ canonicalName: "Public Domain Notice (libselinux)"
 category: "libselinux"
 spdxIdentifier: "libselinux-1.0"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "libselinux public domain notice"
   - "libselinux-1.0"

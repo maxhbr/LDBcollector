@@ -6,6 +6,8 @@ canonicalName: "PCRE License"
 category: "PCRE"
 shortName: "PCRE"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "PCRE License"
   - "http://www.pcre.org/licence.txt"

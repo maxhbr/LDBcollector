@@ -6,6 +6,8 @@ canonicalName: "metamail License"
 category: "metamail"
 spdxIdentifier: "metamail"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Bellcore License"
   - "metamail License"

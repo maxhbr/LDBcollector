@@ -6,6 +6,8 @@ canonicalName: "FSF Unlimited License (with License Retention and Warranty Discl
 category: "FSF Unlimited"
 spdxIdentifier: "FSFULLRWD"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "FSF Unlimited License (with License Retention and Warranty Disclaimer)"
 

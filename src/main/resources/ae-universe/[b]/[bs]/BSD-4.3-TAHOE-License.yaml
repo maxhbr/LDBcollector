@@ -6,6 +6,8 @@ canonicalName: "BSD 4.3 TAHOE License"
 category: "BSD-4.3TAHOE"
 spdxIdentifier: "BSD-4.3TAHOE"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "BSD-4.3TAHOE"
   - "BSD 4.3 TAHOE License"

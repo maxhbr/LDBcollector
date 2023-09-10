@@ -6,6 +6,8 @@ canonicalName: "HSIE Derivative"
 category: "HSIE Derivative"
 shortName: "HSIE-Derivative"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "HSIEH-DERIVATIVE"
   - "HSIEH-Derivative"

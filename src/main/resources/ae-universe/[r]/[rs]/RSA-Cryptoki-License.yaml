@@ -6,6 +6,8 @@ canonicalName: "RSA Cryptoki License"
 category: "RSA Cryptoki License"
 shortName: "RSA-Cryptoki"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "http://www.rsa.com/rsalabs/node.asp?id=2133"
 

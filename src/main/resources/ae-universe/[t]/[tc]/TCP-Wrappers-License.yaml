@@ -6,6 +6,8 @@ canonicalName: "TCP Wrappers License"
 category: "TCP Wrappers"
 spdxIdentifier: "TCP-wrappers"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "TCP wrappers License"
   - "TCP WRAPPERS LICENSE"

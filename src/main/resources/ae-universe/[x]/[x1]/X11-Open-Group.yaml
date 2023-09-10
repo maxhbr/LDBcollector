@@ -7,6 +7,8 @@ category: "X11"
 shortName: "X11-Open Group"
 spdxIdentifier: "MIT-open-group"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "mit-open-group"
   - "MIT-open-group"

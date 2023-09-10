@@ -8,6 +8,8 @@ spdxIdentifier: "BSD-2-Clause-Views"
 
 openCoDEStatus: "approved"
 
+type: "expression"
+
 alternativeNames:
   - "BSD 2-Clause with views sentence"
 

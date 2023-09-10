@@ -9,8 +9,5 @@ spdxIdentifier: "OpenJDK-assembly-exception-1.0"
 
 type: "exception"
 
-alternativeNames:
-  - "OpenJDK Assembly Exception 1.0"
-
 otherIds: 
   - "scancode:openjdk-assembly-exception-1.0"

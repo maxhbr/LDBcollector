@@ -7,6 +7,8 @@ category: "Open Publication"
 shortName: "Open-Publication-1.0"
 spdxIdentifier: "OPUBL-1.0"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Open Publication License v1.0"
   - "Open Publication License, Version 1.0"

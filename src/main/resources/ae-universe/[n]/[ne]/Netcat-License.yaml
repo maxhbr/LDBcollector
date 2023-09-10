@@ -6,5 +6,7 @@ canonicalName: "Netcat License"
 category: "Netcat License"
 shortName: "Netcat"
 
+openCoDEStatus: "approved"
+
 otherIds: 
   - "scancode:netcat"

@@ -6,6 +6,8 @@ canonicalName: "Deutsche Freie Software Lizenz"
 category: "D-FSL"
 spdxIdentifier: "D-FSL-1.0"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "D-FSL-1.0"
   - "Deutsche Freie Software Lizenz"

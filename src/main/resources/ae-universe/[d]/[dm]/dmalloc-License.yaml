@@ -6,6 +6,8 @@ canonicalName: "dmalloc License"
 category: "dmalloc License"
 shortName: "dmalloc"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "dmalloc license"
 

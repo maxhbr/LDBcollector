@@ -20,6 +20,7 @@ alternativeNames:
   - "https://spdx.org/licenses/multics"
   - "http://www.opensource.org/licenses/multics"
   - "https://www.opensource.org/licenses/multics"
+  - "Copyright 1972 by Massachusetts Institute of Technology and Honeywell Information Systems Inc"
 
 otherIds: 
   - "scancode:multics"

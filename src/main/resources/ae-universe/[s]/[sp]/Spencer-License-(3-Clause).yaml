@@ -6,6 +6,8 @@ canonicalName: "Spencer License (3-Clause)"
 category: "Spencer"
 spdxIdentifier: "Spencer-86"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Spencer, Version 86"
   - "Spencer 86"

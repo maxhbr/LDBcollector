@@ -6,6 +6,8 @@ canonicalName: "Unicode DFS License 2016"
 category: "Unicode DFS"
 spdxIdentifier: "Unicode-DFS-2016"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Unicode DFS, Version 2016"
   - "Unicode DFS 2016"

@@ -6,6 +6,8 @@ canonicalName: "Patent Disclaimer for OpenSSL"
 category: "Patent Disclaimer for OpenSSL"
 shortName: "OpenSSL-Nokia-PSK-Contribution"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "openssl-nokia-psk-contribution"
 

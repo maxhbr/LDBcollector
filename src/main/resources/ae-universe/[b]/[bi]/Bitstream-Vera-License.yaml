@@ -6,6 +6,8 @@ canonicalName: "Bitstream Vera License"
 category: "Bitstream Vera"
 spdxIdentifier: "Bitstream-Vera"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Bitstream Vera License"
 

@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Linking Exception (GPL; GNAT)"
+category: "GPL Linking Exception"
+shortName: "Linking-Exception-GPL-GNAT"
+spdxIdentifier: "GNAT-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Ada Linking Exception"
+  - "Linking-Exception-GPL-001"
+
+otherIds: 
+  - "scancode:ada-linking-exception"

@@ -6,6 +6,8 @@ canonicalName: "Checkmk License"
 category: "Checkmk"
 spdxIdentifier: "checkmk"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Checkmk License"
   - "Micah Cowan"

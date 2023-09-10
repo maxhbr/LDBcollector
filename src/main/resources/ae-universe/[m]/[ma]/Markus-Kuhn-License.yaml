@@ -6,6 +6,8 @@ canonicalName: "Markus Kuhn License"
 category: "Markus Kuhn License"
 spdxIdentifier: "HPND-Markus-Kuhn"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Markus Kuhn License"
   - "markus-kuhn-license"

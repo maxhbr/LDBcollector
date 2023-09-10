@@ -6,6 +6,8 @@ canonicalName: "Permission Terms (CMU)"
 category: "Permission"
 spdxIdentifier: "CMU-Mach"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Permission Terms (CMU)"
   - "CMU Mach License"

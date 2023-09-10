@@ -6,6 +6,8 @@ canonicalName: "OpenSSH License"
 category: "OpenSSH License"
 spdxIdentifier: "SSH-OpenSSH"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "OpenSSH License"
   - "SSH-OpenSSH"

@@ -7,6 +7,8 @@ category: "LGPL"
 shortName: "LGPL-2.0"
 spdxIdentifier: "LGPL-2.0-only"
 
+openCoDEStatus: "approved"
+
 osiStatus: "approved"
 osiSupersededById: "LGPL-3.0"
 osiCategory: "popular/strong community"

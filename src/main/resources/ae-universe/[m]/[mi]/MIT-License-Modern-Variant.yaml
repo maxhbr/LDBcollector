@@ -6,6 +6,8 @@ canonicalName: "MIT License Modern Variant"
 category: "MIT-Modern-Variant"
 spdxIdentifier: "MIT-Modern-Variant"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "MIT-Modern-Variant"
   - "MIT License Modern Variant"

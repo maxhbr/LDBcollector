@@ -8,6 +8,8 @@ spdxIdentifier: "ANTLR-PD-fallback"
 
 openCoDEStatus: "approved"
 
+type: "expression"
+
 alternativeNames:
   - "ANTLR Software Rights Notice with license fallback"
 

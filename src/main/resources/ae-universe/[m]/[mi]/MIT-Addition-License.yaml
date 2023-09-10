@@ -6,6 +6,8 @@ canonicalName: "MIT Addition License"
 category: "MIT Addition License"
 spdxIdentifier: "MIT-Wu"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "See \"LICENSE-BigInteger\" for details"
   - "mit-addition"

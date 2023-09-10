@@ -6,6 +6,8 @@ canonicalName: "W3C Software Notice and License (1998-07-20)"
 category: "W3C"
 spdxIdentifier: "W3C-19980720"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "W3C Software Notice and License (1994-2002)"
   - "W3C Software Notice and License (1998-07-20)"

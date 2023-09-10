@@ -6,6 +6,8 @@ canonicalName: "AdaCore Doc License"
 category: "AdaCore-doc"
 spdxIdentifier: "AdaCore-doc"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "AdaCore-doc"
   - "AdaCore Doc License"

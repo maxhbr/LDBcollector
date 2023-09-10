@@ -6,6 +6,8 @@ canonicalName: "Hewlett-Packard 1986 License"
 category: "HP-1986"
 spdxIdentifier: "HP-1986"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Hewlett-Packard 1986 License"
 

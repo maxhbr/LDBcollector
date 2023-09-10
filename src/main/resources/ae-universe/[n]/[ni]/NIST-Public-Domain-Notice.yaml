@@ -6,6 +6,8 @@ canonicalName: "NIST Public Domain Notice"
 category: "NIST Public Domain Notice"
 spdxIdentifier: "NIST-PD"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "nist-pd"
   - "NIST-PD"

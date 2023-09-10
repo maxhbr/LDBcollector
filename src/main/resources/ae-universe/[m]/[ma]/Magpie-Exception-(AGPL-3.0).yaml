@@ -4,7 +4,9 @@
 
 canonicalName: "Magpie Exception (AGPL 3.0)"
 category: "Magpie Exception"
-shortName: "Magpie-exception-1.0"
+shortName: "Magpie-Exception-1.0"
+
+type: "exception"
 
 alternativeNames:
   - "MAgPIE License Exception to AGPL 3.0"

@@ -6,6 +6,8 @@ canonicalName: "Tiger Cryptography License"
 category: "Tiger Cryptography License"
 shortName: "Tiger-Cryptography"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "http://www.cs.technion.ac.il/~biham/Reports/Tiger/"
   - "https://www.cs.technion.ac.il/~biham/Reports/Tiger"

@@ -9,3 +9,5 @@ spdxIdentifier: "Xfig"
 alternativeNames:
   - "Xfig License"
 
+otherIds: 
+  - "scancode:mit-xfig"

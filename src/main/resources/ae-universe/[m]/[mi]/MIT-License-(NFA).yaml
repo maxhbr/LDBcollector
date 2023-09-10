@@ -6,6 +6,8 @@ canonicalName: "MIT License (NFA)"
 category: "MITNFA"
 spdxIdentifier: "MITNFA"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "MITNFA"
   - "MIT +no-false-attribs license"

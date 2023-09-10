@@ -6,6 +6,8 @@ canonicalName: "Permission Terms (variant 123)"
 category: "Permission"
 shortName: "PT-Var123"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style"
 

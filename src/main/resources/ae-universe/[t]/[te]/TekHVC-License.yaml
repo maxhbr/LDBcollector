@@ -6,6 +6,10 @@ canonicalName: "TekHVC License"
 category: "TekHVC License"
 shortName: "TekHVC"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "TekHVC License"
 
+otherIds: 
+  - "scancode:tekhvc"
