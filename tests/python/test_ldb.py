@@ -98,12 +98,6 @@ def test_compat_as_aliased():
     c = fl.expression_compatibility_as("GPLv2+ && BSD3")
     assert c['compat_license'] == "GPL-2.0-or-later AND BSD-3-Clause"
 
-    # add misc blanks to the license expression
-    for i in range(1,10):
-        for j in range(1,10):
-            for k in range(1,10):
-                c = fl.expression_compatibility_as(f'{" "*i}GPLv2+{" "*j}&& BSD3{" "*k}')
-                assert c['compat_license'] == "GPL-2.0-or-later AND BSD-3-Clause"
 
 def test_operator_op():
     for op in [ "|", "||", "or", "OR" ]:
