@@ -5,6 +5,7 @@
 """
 Simple class
 """
+import collections
 import glob
 import json
 import logging
@@ -88,7 +89,6 @@ class FossLicenses:
         self.license_db[COMPATS_TAG] = compats
         self.license_db[ALIASES_TAG] = aliases
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
-        self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[LICENSE_OPERATORS_TAG] = self.__read_json(LICENSE_OPERATORS_FILE)['operators']
 
     def __identify_license(self, name):
@@ -115,8 +115,8 @@ class FossLicenses:
 
     def __update_license_expression_helper(self, needles, needle_tag, license_expression):
         replacements = []
-        for needle in needles:
-            reg_exp = r'(^| )%s($| )' % re.escape(needle)
+        for needle in reversed(collections.OrderedDict(sorted(needles.items()))):
+            reg_exp = r'( |\(|^|\)|\|)%s( |$|\)|\||&)' % re.escape(needle)
             if re.search(reg_exp, license_expression):
                 replacement = needles[needle]
                 replacements.append({
@@ -124,8 +124,7 @@ class FossLicenses:
                     'name': replacement,
                     'identified_via': needle_tag,
                 })
-                license_expression = re.sub(reg_exp, f' {replacement}     ', license_expression)
-
+                license_expression = re.sub(reg_exp, f'\\1{replacement}\\2', license_expression)
         return {
             "license_expression": re.sub(r'\s\s*', ' ', license_expression).strip(),
             "identifications": replacements
@@ -145,6 +144,11 @@ class FossLicenses:
         ret = self.__update_license_expression_helper(self.license_db[ALIASES_TAG],
                                                       "alias",
                                                       license_expression)
+        replacements += ret['identifications']
+
+        ret = self.__update_license_expression_helper(self.license_db[SCANCODE_KEYS_TAG],
+                                                      "scancode",
+                                                      ret['license_expression'])
         replacements += ret['identifications']
 
         ret = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
