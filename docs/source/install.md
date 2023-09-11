@@ -74,7 +74,11 @@ docker-compose --profile localhost up -d
 ### Downloading the source code
 
 You can download latest releases from [Hermine releases page](https://gitlab.com/hermine-project/hermine/-/releases)
-or clone latest development version from [GitLab](https://gitlab.com/hermine-project/hermine/-/tree/main).
+or clone latest development version from [GitLab](https://gitlab.com/hermine-project/hermine/-/tree/main):
+
+```bash
+git clone https://gitlab.com/hermine-project/hermine.git
+```
 
 You can also use git to clone a specific version :
     
@@ -114,6 +118,8 @@ Before the first run, you have to create a `config.py` file in the `hermine/herm
 ```
 cp hermine/hermine/config.default.py hermine/hermine/config.py
 ```
+Update `hermine/hermine/config.py` according to your configuration.
+Ex: For development purposes, you can set `HOST` to `127.0.0.1` and `DEBUG` to `True`
 
 Update the database structure and create a superuser :
 ```
@@ -138,6 +144,13 @@ A typical installation is :
 * NGinx to serve static files and proxy other requests to Gunicorn
 
 Hermine is not different from any other Django application. You can find more information in [Django documentation](https://docs.djangoproject.com/en/4.1/howto/deployment/).
+
+For development purpose, you can simply run :
+
+```bash
+# run the server 
+python hermine/manage.py runserver
+```
 
 #### Static files
 
