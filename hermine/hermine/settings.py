@@ -214,10 +214,19 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 1000000
 GRAPH_MODELS = {"all_applications": True, "group_models": True}
 
 # Version
-with open(os.path.join(BASE_DIR, "..", "pyproject.toml")) as f:
-    for line in f:
-        if line.startswith("version"):
-            VERSION = line.split("=")[1].strip().strip('"')
+try:
+    with open(os.path.join(BASE_DIR, "..", "pyproject.toml")) as f:
+        for line in f:
+            if line.startswith("version"):
+                VERSION = line.split("=")[1].strip().strip('"')
+except FileNotFoundError:
+    try:
+        with open(os.path.join(BASE_DIR, "pyproject.toml")) as f:
+            for line in f:
+                if line.startswith("version"):
+                    VERSION = line.split("=")[1].strip().strip('"')
+    except FileNotFoundError:
+        VERSION = "Unknown"
 
 # Silk config
 
