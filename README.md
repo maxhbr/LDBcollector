@@ -6,7 +6,7 @@ Project providing insights on the {metæffekt} license database covering
 * 186 specific and commonly used license expressions, and
 * 49 markers.
 
-as of 10th September 2023.
+as of 11th September 2023.
 
 The following links provide letter-specific overviews on the license information:
 
