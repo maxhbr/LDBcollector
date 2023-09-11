@@ -26,6 +26,12 @@ text here
 '''
 
 package = xorg-x11-fonts
+location = https://gitlab.freedesktop.org/xorg/font/cursor-misc/-/blob/master/COPYING?ref_type=heads
+text = '''
+"These ""glyphs"" are unencumbered"
+'''
+
+package = xorg-x11-fonts
 location = https://gitlab.freedesktop.org/xorg/font/misc-cyrillic/-/blob/master/koi12x24b.bdf?ref_type=heads
 text = '''
 May be distributed and modified without restrictions.
