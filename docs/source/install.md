@@ -179,7 +179,7 @@ Users will be created on the fly at authentication by the OAuth server.
 
 Hermine provides two test endpoints which you can use in your monitoring system.
 
-`/ping` always send a 200 response, and can be used to check server availability.
+`/ping/` always send a 200 response, and can be used to check server availability.
 
-`/ready` do the same but also tries to connect to Hermine database. It sends a 200 response if it succeeds.
+`/ready/` does the same but also tries to connect to Hermine database. It sends a 200 response if it succeeds.
 
