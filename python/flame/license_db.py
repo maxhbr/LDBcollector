@@ -124,7 +124,7 @@ class FossLicenses:
                     'name': replacement,
                     'identified_via': needle_tag,
                 })
-                license_expression = re.sub(reg_exp, f'\\1{replacement}\\2', license_expression)
+                license_expression = re.sub(reg_exp, f'\g<1>{replacement}\g<2>', license_expression)
         return {
             "license_expression": re.sub(r'\s\s*', ' ', license_expression).strip(),
             "identifications": replacements
