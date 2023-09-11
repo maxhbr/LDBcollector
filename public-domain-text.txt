@@ -778,6 +778,7 @@ package = tzdata
           abseil-cpp
           gdb
           binutils
+          varnish
 location = https://github.com/eggert/tz/blob/main/zone1970.tab
            https://github.com/eggert/tz/blob/main/backzone
            https://github.com/abseil/abseil-cpp/blob/c8a2f92586fe9b4e1aff049108f5db8064924d8e/absl/time/internal/cctz/testdata/zoneinfo/zone1970.tab#L3
@@ -785,6 +786,11 @@ location = https://github.com/eggert/tz/blob/main/zone1970.tab
            https://sourceware.org/cgit/binutils-gdb/tree/libiberty/insque.c#n2
            https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strsignal.c#n3
            https://sourceware.org/cgit/binutils-gdb/tree/libiberty/strerror.c#n3
+           https://github.com/varnishcache/varnish-cache/blob/master/include/miniobj.h#L4
+           https://github.com/varnishcache/varnish-cache/blob/master/vmod/vmod_blob_tbl_encodings.h#L2
+           https://github.com/varnishcache/varnish-cache/blob/7.3/bin/varnishncsa/b64.c#L4
+           https://github.com/varnishcache/varnish-cache/blob/7.3/include/tbl/vhp_huffman.h#L4
+           https://github.com/varnishcache/varnish-cache/blob/7.3/include/tbl/vhp_static.h#L4
 text = '''
 # This file is in the public domain.
 '''
