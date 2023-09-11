@@ -1471,6 +1471,7 @@ categorizations:
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "LicenseRef-scancode-public-domain"
     categories:
@@ -1485,6 +1486,8 @@ categorizations:
       - "source-available"
       - "property:non-commercial"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/FSFULLR.html
   - id: "FSFULLR"
@@ -1525,6 +1528,7 @@ categorizations:
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "LicenseRef-scancode-commercial-license"
     categories:
@@ -1716,12 +1720,14 @@ categorizations:
       - "source-available"
       - "property:non-commercial"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "CC-BY-NC-SA-2.5"
     categories:
       - "source-available"
       - "property:non-commercial"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "LicenseRef-scancode-ubuntu-font-1.0"
     categories:
