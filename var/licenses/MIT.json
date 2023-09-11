@@ -1,0 +1,40 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "MIT License",
+  "spdxid": "MIT",
+  "aliases": [
+   "MIT",
+   "MIT license (also X11)",
+   "The MIT License",
+   "MIT License",
+   "mit",
+   "Expat License",
+   "Expat",
+   "mit-license",
+   "MIT/Expat License",
+   "License :: OSI Approved :: MIT License",
+   "scancode://mit",
+   "MIT license / X11 license",
+   "under MIT",
+   "MIT license",
+   "MIT Licence",
+   "MIT licencse",
+   "MIT-License",
+   "MIT Licensed",
+   "MIT Licence (MIT)",
+   "MIT License(MIT)",
+   "http://www.opensource.org/licenses/MIT",
+   "http://opensource.org/licenses/MIT",
+   "http://opensource.org/licenses/mit-license.php",
+   "link=https://github.com/sporritt/jsPlumb/blob/master/jsPlumb-MIT-LICENSE.txt",
+   "Licensed under the MIT",
+   "licensed under the MIT",
+   "https://angular.io/license",
+   "MIT LICENSE",
+   "scancode:mit",
+   "osi:MIT"
+  ]
+}
