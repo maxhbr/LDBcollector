@@ -19,7 +19,7 @@
 (def lib 'com.github.pmonks/lice-comb)
 
 #_{:clj-kondo/ignore [:unresolved-namespace]}
-(def version (format "2.0.%s" (b/git-count-revs nil)))
+(def version (format "2.0.%s-RC1" (b/git-count-revs nil)))
 
 (defn set-opts
   [opts]
