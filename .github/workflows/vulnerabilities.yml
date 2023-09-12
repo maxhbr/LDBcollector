@@ -1,0 +1,53 @@
+name: vulnerabilities
+on:
+# Don't require this on push or pull_request, or it'll block releases even for minor vulnerabilities
+#  push:
+#  pull_request:
+  schedule:
+    - cron: '0 2 * * 2'   # Every Tuesday at 2am
+
+jobs:
+  skip_check:
+    runs-on: ubuntu-latest
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+
+  vulnerabilities:
+    needs: skip_check
+    if: ${{ needs.skip_check.outputs.should_skip != 'true' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # Make sure we get the full history, or else the version number gets screwed up
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 17
+      - uses: DeLaGuardo/setup-clojure@12.1
+        with:
+          cli: latest
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gitlibs
+            ~/.clojure
+            ~/.cpcache
+          key: ${{ runner.os }}-${{ hashFiles('**/deps.edn') }}
+
+      - name: Run NVD vulnerabilities check
+        run: clojure -Srepro -J-Dclojure.main.report=stderr -T:build nvd
+
+      - name: Deploy NVD vulnerability report (main branch only)
+        if: ${{ ( success() || failure() ) && github.ref == 'refs/heads/main' }}  # Only deploy report from main branch, and regardless of whether the job succeeded or failed
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          keep_files: true    # Required so that we don't clobber the API docs (published separately)
+          publish_dir: ./target/nvd
+          destination_dir: nvd

@@ -33,4 +33,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          keep_files: true    # Required so that we don't clobber the NVD report (published separately)
           publish_dir: ./target/doc
