@@ -171,7 +171,7 @@ categories:
     description: >-
       An open source-style license that is typically applied to specification files and has some
       important limitations, such as a prohibition on modifying the licensed work. These licenses
-      usually fall in the free-restricited category. This property enables users an option to
+      usually fall in the free-restricted category. This property enables users an option to
       automatically accept specification licenses, even if free-restricted licenses otherwise
       create rule violations.
 
