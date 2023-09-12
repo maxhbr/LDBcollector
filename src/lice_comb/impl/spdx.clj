@@ -104,7 +104,7 @@
 
 (defn unlisted->name
   "Get the original name of the given unlisted license. Returns nil if id is nil
-  or is not a lice-comb's unlisted LicenseRef."
+  or is not a lice-comb unlisted LicenseRef."
   [id]
   (when (unlisted? id)
     (str "Unlisted ("
