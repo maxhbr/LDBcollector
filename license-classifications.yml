@@ -1483,7 +1483,7 @@ categorizations:
 
   - id: "CC-BY-NC-ND-4.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:non-commercial"
       - "property:include-in-notice-file"
       - "property:creativecommons"
