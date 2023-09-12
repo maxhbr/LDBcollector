@@ -42,9 +42,10 @@
 (def exception-list-d (delay (map se/id->info @exception-ids-d)))
 
 ; The unlisted license refs lice-comb uses (note: the unlisted one usually has a hyphen then a base62 suffix appended)
-(def ^:private public-domain-license-ref          "LicenseRef-lice-comb-PUBLIC-DOMAIN")
-(def ^:private proprietary-commercial-license-ref "LicenseRef-lice-comb-PROPRIETARY-COMMERCIAL")
-(def ^:private unlisted-license-ref-prefix        "LicenseRef-lice-comb-UNLISTED")
+(def ^:private lice-comb-license-ref-prefix       "LicenseRef-lice-comb")
+(def ^:private public-domain-license-ref          (str lice-comb-license-ref-prefix "-PUBLIC-DOMAIN"))
+(def ^:private proprietary-commercial-license-ref (str lice-comb-license-ref-prefix "-PROPRIETARY-COMMERCIAL"))
+(def ^:private unlisted-license-ref-prefix        (str lice-comb-license-ref-prefix "-UNLISTED"))
 
 ; Lower case id map
 (def spdx-ids-d (delay (merge (into {} (map #(vec [(s/lower-case %) %]) @license-ids-d))
@@ -66,6 +67,11 @@
 
 (def index-uri-to-id-d (delay (merge (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @license-list-d)))
                                      (lciu/mapfonv #(lciu/nset (map second %)) (group-by first (mapcat urls-to-id-tuples @exception-list-d))))))
+
+(defn lice-comb-license-ref?
+  "Is the given id one of lice-comb's custom LicenseRefs?"
+  [id]
+  (s/starts-with? (s/lower-case id) (s/lower-case lice-comb-license-ref-prefix)))
 
 (defn public-domain?
   "Is the given id lice-comb's custom 'public domain' LicenseRef?"

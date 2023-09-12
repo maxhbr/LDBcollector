@@ -58,6 +58,11 @@
             [lice-comb.impl.matching :as lcim]
             [lice-comb.impl.utils    :as lciu]))
 
+(defn lice-comb-license-ref?
+  "Is the given id one of lice-comb's custom LicenseRefs?"
+  [id]
+  (lcis/lice-comb-license-ref? id))
+
 (defn public-domain?
   "Is the given id lice-comb's custom 'public domain' LicenseRef?"
   [id]
