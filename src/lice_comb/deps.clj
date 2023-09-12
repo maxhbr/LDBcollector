@@ -17,88 +17,97 @@
 ;
 
 (ns lice-comb.deps
-  "deps (in tools.deps lib-map format) related functionality."
-  (:require [clojure.string  :as s]
-            [clojure.reflect :as cr]
-            [clojure.edn     :as edn]
-            [lice-comb.spdx  :as spdx]
-            [lice-comb.maven :as mvn]
-            [lice-comb.files :as f]
-            [lice-comb.data  :as d]
-            [lice-comb.utils :as u]))
-
-(def ^:private overrides-uri (d/uri-for-data "/deps/overrides.edn"))
-(def ^:private overrides     (try
-                               (edn/read-string (slurp overrides-uri))
-                               (catch Exception e
-                                 (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " overrides-uri ". Please check your internet connection and try again.") {} e)))))
-
-(def ^:private fallbacks-uri (d/uri-for-data "/deps/fallbacks.edn"))
-(def ^:private fallbacks     (try
-                               (edn/read-string (slurp fallbacks-uri))
-                               (catch Exception e
-                                 (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " fallbacks-uri ". Please check your internet connection and try again.") {} e)))))
-
-(defn- check-overrides
-  "Checks if an override should be used for the given dep"
-  ([ga] (check-overrides ga nil))
-  ([ga v]
-    (let [gav (symbol (str ga (when v (str "@" v))))]
-      (:licenses (get overrides gav (get overrides ga))))))  ; Lookup overrides both with and without the version
-
-(defn- check-fallbacks
-  "Checks if a fallback should be used for the given dep, given the set of detected ids"
-  [ga ids]
-  (if (or (empty? ids)
-          (every? #(not (spdx/spdx-id? %)) ids))
-    (:licenses (get fallbacks ga {:licenses ids}))
-    ids))
+  "Functionality related to combing tools.deps dependency maps and lib maps for
+  license information."
+  (:require [clojure.string                  :as s]
+            [dom-top.core                    :as dom]
+            [lice-comb.maven                 :as lcmvn]
+            [lice-comb.files                 :as lcf]
+            [lice-comb.impl.http             :as lcihttp]
+            [lice-comb.impl.expressions-info :as lciei]))
 
 (defn- normalise-dep
-  "Normalises a dep, by removing any classifier suffixes from the artifact-id (e.g. the $blah suffix in com.foo/bar$blah)."
+  "Normalises a dep, by removing any classifier suffixes from the artifact-id
+  (e.g. the $blah suffix in com.foo/bar$blah)."
   [[ga info]]
   (when ga
     [(symbol (first (s/split (str ga) #"\$"))) info]))
 
-(defmulti dep->ids
-  "Attempt to detect the license(s) in a tools.deps style dep (a MapEntry or two-element sequence of [groupId/artifactId dep-info])."
+(defmulti ^:private dep->string
+  "Converts a dep to a string."
   {:arglists '([[ga info]])}
   (fn [[_ info]] (:deps/manifest info)))
 
-(defmethod dep->ids :mvn
+(defmethod ^:private dep->string :mvn
+  [[ga info]]
+  (str ga "@" (:mvn/version info)))
+
+(defmethod ^:private dep->string :deps
+  [[ga info]]
+  (str ga "@" (:git/sha info) (when-let [tag (:git/tag info)] (str "/" tag))))
+
+(defmulti dep->expressions-info
+  "Returns an expressions-info map for the given tools.dep dep (a MapEntry or
+  two-element vector of `['groupId/artifactId dep-info]`), or nil if no
+  expressions were found."
+  {:arglists '([[ga info]])}
+  (fn [[_ info]] (:deps/manifest info)))
+
+(defmethod dep->expressions-info :mvn
   [dep]
   (when dep
     (let [[ga info]              (normalise-dep dep)
           [group-id artifact-id] (s/split (str ga) #"/")
-          version                (:mvn/version info)]
-      (if-let [override (check-overrides ga version)]
-        override
-        (let [pom-uri     (mvn/pom-uri-for-gav group-id artifact-id version)
-              license-ids (check-fallbacks ga
-                                           (if-let [license-ids (mvn/pom->ids pom-uri)]
-                                             license-ids
-                                             (u/nset (mapcat f/zip->ids (:paths info)))))]      ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
-          license-ids)))))
+          version                (:mvn/version info)
+          pom-uri                (lcihttp/gav->pom-uri group-id artifact-id version)
+          expressions            (if-let [expressions (lcmvn/pom->expressions-info pom-uri)]
+                                   expressions
+                                   (into {} (dom/real-pmap lcf/zip->expressions-info (:paths info))))]  ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
+      (lciei/prepend-source (dep->string dep) expressions))))
 
-(defmethod dep->ids :deps
+(defmethod dep->expressions-info :deps
   [dep]
   (when dep
-    (let [[ga info] (normalise-dep dep)
-          version   (:git/sha info)]
-      (if-let [override (check-overrides ga version)]
-        override
-        (check-fallbacks ga (f/dir->ids (:deps/root info)))))))
+    (let [[_ info] (normalise-dep dep)]
+      (lciei/prepend-source (dep->string dep) (lcf/dir->expressions-info (:deps/root info))))))
 
-(defmethod dep->ids nil
+(defmethod dep->expressions-info nil
   [_])
 
-(defmethod dep->ids :default
+(defmethod dep->expressions-info :default
   [dep]
-  (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest (second dep)) "' for dependency " dep) {:dep dep})))
+  (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest (second dep)) "' for dependency " dep)
+                  {:dep dep})))
 
-(defn deps-licenses
-  "Attempt to detect the license(s) in a tools.deps 'lib map', returning a new lib map with the licenses assoc'ed in (in key :lice-comb/licenses)"
+(defn dep->expressions
+  "Returns a set of SPDX expressions (Strings) for the given tools.dep dep (a
+  MapEntry or two-element vector of `['groupId/artifactId dep-info-map]`), or
+  nil if no expressions were found."
+  [dep]
+  (some-> (dep->expressions-info dep)
+          keys
+          set))
+
+(defn deps-expressions
+  "Takes a tools.dep lib map and returns a new lib map with an expressions-info
+  map assoc'ed into each dep's info map, in key `:lice-comb/license-info`.
+  If no license information was found for a given dep, the lib map entry for
+  that dep will be returned unchanged (it will not have the
+  `:lice-comb/license-info` key in the info map)."
   [deps]
   (when deps
-    (into {}
-          (pmap #(let [[k v] %] [k (assoc v :lice-comb/licenses (dep->ids [k v]))]) deps))))
+    (into {} (dom/real-pmap #(if-let [expressions-info (dep->expressions-info %)]
+                               (let [[k v] %]
+                                 [k (assoc v :lice-comb/license-info expressions-info)])
+                               %)
+                            deps))))
+
+(defn init!
+  "Initialises this namespace upon first call (and does nothing on subsequent
+  calls), returning nil. Consumers of this namespace are not required to call
+  this fn, as initialisation will occur implicitly anyway; it is provided to
+  allow explicit control of the cost of initialisation to callers who need it."
+  []
+  (lcmvn/init!)
+  (lcf/init!)
+  nil)
