@@ -9,35 +9,133 @@
 
 # lice-comb
 
-A Clojure library for software license detection.  It does this by combing through text, files, and even entire directory structures, and attempting to detect what license(s) they contain.
+A Clojure library for software *lice*nse detection.  It does this by *comb*ing through tools.deps and Leiningen dependencies, directory structures, and JAR & ZIP files, attempting to detect what license(s) they contain, and then normalising them into [SPDX license expression(s)](https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/).
 
 This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, I can thoroughly recommend [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial).
 
-## Using the library
+## System Requirements
 
-### Documentation
+* `lice-comb` (all versions) requires an internet connection.
 
-[API documentation is available here](https://pmonks.github.io/lice-comb/).
+* `lice-comb` (all versions) assumes Maven is installed and in the `PATH` (but has fallback logic if it isn't available).
+
+* `lice-comb` (v2.0+) requires JDK 11 or higher.
+
+## Installation
+
+`lice-comb` is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/lice-comb).
+
+### Trying it Out
+
+#### Clojure CLI
+
+```shell
+$ # Where #.#.# is replaced with an actual version number (see badge above)
+$ clj -Sdeps '{:deps {com.github.pmonks/lice-comb {:mvn/version "#.#.#"}}}'
+```
+
+#### Leiningen
+
+```shell
+$ lein try com.github.pmonks/lice-comb
+```
+
+#### deps-try
+
+```shell
+$ deps-try com.github.pmonks/lice-comb
+```
+
+### Demo
+
+```clojure
+;; License name, uri and full text matching
+(require '[lice-comb.matching :as lcm])
+
+; Initialise the matching namespace
+; Notes:
+; 1. This is slow (takes ~1 minute on my laptop), almost all of which is Spdx-Java-Library's initialisation (see https://github.com/spdx/Spdx-Java-Library/issues/193)
+; 2. This step is optional, though initialisation will still happen regardless, and when it does you'll incur the same cost
+(lcm/init!)
+
+(lcm/name->expressions "Apache")
+;=> #{"Apache-2.0"}
+
+(lcm/name->expressions "GNU Public License 2.0 w/ the GNU Classpath Exception")
+;=> #{"GPL-2.0-only WITH Classpath-exception-2.0"}
+
+(lcm/text->ids (slurp "https://www.apache.org/licenses/LICENSE-2.0.txt"))
+;=> #{"Apache-2.0"}
+
+(lcm/uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")
+;=> #{"Apache-2.0"}
+
+;; License extraction from Maven poms, including ones that aren't locally downloaded
+(require '[lice-comb.maven :as lcmvn])
+
+(lcmvn/pom->expressions (str (System/getProperty "user.home") "/.m2/repository/org/clojure/clojure/1.11.1/clojure-1.11.1.pom"))
+;=> #{"EPL-1.0"}
+
+(lcmvn/pom->expressions "https://repo1.maven.org/maven2/org/springframework/spring-core/6.0.11/spring-core-6.0.11.pom")
+;=> #{"Apache-2.0"}
+
+;; License extraction from tools.deps dependency maps
+(require '[lice-comb.deps :as lcd])
+
+(lcd/dep->expressions ['org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.11.1"}])
+;=> #{"EPL-1.0"}
+
+;; Information about matches (useful for better understanding how lice-comb arrived at a given set of expressions, and
+;; how confident it is in the values it's providing)
+(lcm/name->expressions-info "Apache-2.0")
+;=> {"Apache-2.0" ({:type :declared, :strategy :spdx-expression, :source ("Apache-2.0")})}
+
+(lcm/name->expressions-info "GNU Public License 2.0 or later w/ the GNU Classpath Exception")
+;=> {"GPL-2.0-or-later WITH Classpath-exception-2.0"
+;     ({:type :concluded, :confidence :low, :strategy :expression-inference, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception")}
+;      {:id "GPL-2.0-or-later", :type :concluded, :confidence :medium, :strategy :regex-matching, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
+;                                                                                                          "GNU Public License 2.0 or later")}
+;      {:id "Classpath-exception-2.0", :type :concluded, :confidence :low, :strategy :regex-matching, :source ("GNU Public License 2.0 or later w/ the GNU Classpath Exception"
+;                                                                                                              "the GNU Classpath Exception"
+;                                                                                                              "Classpath Exception")})}
+
+(lcmvn/pom->expressions-info "https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom")
+;=> {"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
+;     ({:type :declared, :strategy :spdx-expression, :source ("https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom"
+;                                                             "<name>"
+;                                                             "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")})}
+
+;; Pretty print expressions-info
+(require '[lice-comb.utils :as lcu])
+
+(println (lcu/expressions-info->string (lcd/dep->expressions-info ['com.amazonaws/aws-java-sdk-s3 {:deps/manifest :mvn :mvn/version "1.12.129"}])))
+;=> Apache-2.0:
+;     Concluded
+;       Confidence: high
+;       Strategy: regular expression matching
+;       Source:
+;       > com.amazonaws/aws-java-sdk-s3@1.12.129
+;       > https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-s3/1.12.129/aws-java-sdk-s3-1.12.129.pom
+;       > https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.12.129/aws-java-sdk-pom-1.12.129.pom
+;       > <name>
+;       > Apache License, Version 2.0
+nil
+```
+
+### API Documentation
+
+[API documentation is available here](https://pmonks.github.io/lice-comb/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/lice-comb/).
 
 [An FAQ is available here](https://github.com/pmonks/lice-comb/wiki/FAQ).
 
-### Dependency
+## Upgrading
 
-Express the correct maven dependencies in your `deps.edn`:
+### 1.x -> 2.x
 
-```edn
-{:deps {com.github.pmonks/lice-comb {:mvn/version "LATEST_CLOJARS_VERSION"}}}
-```
+The implementation of [issue #3](https://github.com/pmonks/lice-comb/issues/3) resulted in a number of unavoidable breaking changes, including:
 
-### Require one or more of the namespaces
-
-```clojure
-(ns your.ns
-  (:require [lice-comb.deps  :as lcd]
-            [lice-comb.files :as lcf]
-            [lice-comb.maven :as lcm]
-            [lice-comb.spdx  :as lcs]))
-```
+* A wholesale change from returning sets of SPDX identifiers to returning sets of SPDX expressions
+* The creation of [a dedicated SPDX-specific library (`clj-spdx`)](https://github.com/pmonks/clj-spdx) that leverages [the official SPDX Java library](https://github.com/spdx/Spdx-Java-Library)
 
 ## Contributor Information
 

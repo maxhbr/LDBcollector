@@ -19,12 +19,16 @@
 {:paths ["src" "resources"]
  :deps
    {org.clojure/tools.logging             {:mvn/version "1.2.4"}
+    commons-validator/commons-validator   {:mvn/version "1.7"}
     org.clojure/data.xml                  {:mvn/version "0.2.0-alpha8"}
-    cheshire/cheshire                     {:mvn/version "5.11.0"}
     clj-xml-validation/clj-xml-validation {:mvn/version "1.0.2"}
-    camel-snake-kebab/camel-snake-kebab   {:mvn/version "0.4.3"}
-    tolitius/xml-in                       {:mvn/version "0.1.1"}}
+    tolitius/xml-in                       {:mvn/version "0.1.1"}
+    hato/hato                             {:mvn/version "0.9.0"}
+    dev.weavejester/medley                {:mvn/version "1.7.0"}
+    dom-top/dom-top                       {:mvn/version "1.0.8"}
+    miikka/clj-base62                     {:mvn/version "0.1.1"}
+    com.github.pmonks/clj-spdx            {:mvn/version "1.0.95"}
+    com.github.pmonks/rencg               {:mvn/version "1.0.34"}}
  :aliases
-   {:build {:deps       {io.github.clojure/tools.build {:git/tag "v0.9.4" :git/sha "76b78fe"}
-                         com.github.pmonks/pbr         {:mvn/version "RELEASE"}}
+   {:build {:deps       {com.github.pmonks/pbr {:mvn/version "RELEASE"}}
             :ns-default pbr.build}}}

@@ -17,64 +17,152 @@
 ;
 
 (ns lice-comb.files
-  "Files related functionality."
-  (:require [clojure.string  :as s]
-            [clojure.set     :as set]
-            [clojure.java.io :as io]
-            [lice-comb.spdx  :as spdx]
-            [lice-comb.maven :as mvn]
-            [lice-comb.utils :as u]))
+  "Functionality related to combing files, directories, and ZIP format archives
+  for license information."
+  (:require [clojure.string                  :as s]
+            [clojure.java.io                 :as io]
+            [lice-comb.matching              :as lcmtch]
+            [lice-comb.maven                 :as lcmvn]
+            [lice-comb.impl.expressions-info :as lciei]
+            [lice-comb.impl.utils            :as lciu]))
 
 (def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "copying" "unlicense"})   ;TODO: consider "license.md" and #".+\.spdx" (see https://github.com/spdx/spdx-maven-plugin for why the latter is important)...
 
+; This is public because it's used in the tests
 (defn probable-license-file?
-  "Returns true if the given file-like thing (String, File, ZipEntry) is a probable license file, false otherwise."
+  "Returns true if the given file-like thing (String, File, ZipEntry) is a
+  probable license file, false otherwise."
   [f]
   (and (not (nil? f))
-       (let [fname (s/lower-case (u/filename f))]
+       (let [fname (s/lower-case (lciu/filename f))]
          (and (not (s/blank? fname))
               (or (contains? probable-license-filenames fname)
                   (s/ends-with? fname ".pom"))))))
 
+; This is public because it's used in the tests
 (defn probable-license-files
-  "Returns all probable license files in the given directory, recursively, as a set of java.io.File objects. dir may be a String or a java.io.File, both of which must refer to a directory."
+  "Returns all probable license files in the given directory, recursively, as a
+  set of java.io.File objects. dir may be a String or a java.io.File, either of
+  which must refer to a readable directory."
   [dir]
-  (when dir
-    (let [dir (io/file dir)]
-      (if (.exists dir)    ; Note: we have to do this, because file-seq does weird things when handed a file that doesn't exist
-        (if (.isDirectory dir)
-          (u/nset (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq (io/file dir))))
-          (throw (java.nio.file.NotDirectoryException. (str dir))))
-        (throw (java.io.FileNotFoundException. (str dir)))))))
+  (when (lciu/readable-dir? dir)
+    (some-> (seq (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq (io/file dir))))
+            set)))
 
-(defn file->ids
-  "Attempts to determine the SPDX license identifier(s) (a set) from the given file (an InputStream or something that can have an io/input-stream opened on it).
-   If an InputStream is provided, the associated filename MUST also be provided as the second parameter."
-  ([f] (file->ids f (u/filename f)))
-  ([f fname]
-   (when (and f fname)
-     (let [fname (s/lower-case fname)]
-       (cond (= fname "pom.xml")         (mvn/pom->ids f)
-             (s/ends-with? fname ".pom") (mvn/pom->ids f)
-             :else                       (spdx/text->ids f))))))
+(defn file->expressions-info
+  "Returns an expressions-info map for the given file (an InputStream or
+  something that can have an io/input-stream opened on it), or nil if no
+  expressions were found.
 
-(defn dir->ids
-  "Attempt to detect the license(s) in a directory. dir may be a String or a java.io.File, both of which must refer to a directory."
-  [dir]
-  (when dir
-    (u/nset (mapcat file->ids (probable-license-files dir)))))
+  If an InputStream is provided, it is the caller's responsibility to open and
+  close it, and a filepath associated with the InputStream *must* be provided as
+  the second parameter (it is optional for other types of input)."
+  ([f] (file->expressions-info f (lciu/filepath f)))
+  ([f filepath]
+   (when (lciu/readable-file? f)
+     (let [fname  (lciu/filename filepath)
+           lfname (s/lower-case fname)]
+            (lciei/prepend-source filepath
+                                  (cond (= lfname "pom.xml")              (lcmvn/pom->expressions-info f fname)
+                                        (s/ends-with? lfname ".pom")      (lcmvn/pom->expressions-info f fname)
+                                        (instance? java.io.InputStream f) (doall (lcmtch/text->ids-info f))
+                                        :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->ids-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
 
-(defn zip->ids
-  "Attempt to detect the license(s) in a ZIP file. zip may be a String or a java.io.File, both of which must refer to a ZIP-format compressed file."
+(defn file->expressions
+  "Returns a set of SPDX expressions (Strings) for the given file (an
+  InputStream or something that can have an io/input-stream opened on it), or
+  nil if no expressions were found.
+
+  If an InputStream is provided, it is the caller's responsibility to open and
+  close it, and a filepath associated with the InputStream *must* be provided as
+  the second parameter (it is optional for other types of input)."
+  ([f] (file->expressions f (lciu/filepath f)))
+  ([f filepath]
+   (some-> (file->expressions-info f filepath)
+           keys
+           set)))
+
+(defn zip->expressions-info
+  "Returns an expressions-info map for the given ZIP file (a String or a File,
+  which must refer to a ZIP-format compressed file), or nil if no expressions
+  were found.
+
+  Throws if the file is not a valid ZIP."
   [zip]
-  (when zip
+  (when (lciu/readable-file? zip)
     (let [zip-file (io/file zip)]
-      (java.util.zip.ZipFile. zip-file)  ; This forces validation of the zip file - ZipInputStream does not reliably perform validation
+      (java.util.zip.ZipFile. zip-file)  ; This no-op forces validation of the zip file - ZipInputStream does not reliably perform validation
       (with-open [zip-is (java.util.zip.ZipInputStream. (io/input-stream zip-file))]
-        (loop [licenses nil
-               entry    (.getNextEntry zip-is)]
+        (loop [result {}
+               entry  (.getNextEntry zip-is)]
           (if entry
             (if (probable-license-file? entry)
-              (recur (set/union licenses (file->ids zip-is (u/filename entry))) (.getNextEntry zip-is))
-              (recur licenses                                                   (.getNextEntry zip-is)))
-            licenses))))))
+              (recur (merge result (file->expressions-info zip-is (lciu/filename entry)))
+                     (.getNextEntry zip-is))
+              (recur result (.getNextEntry zip-is)))
+            (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result))))))))
+
+(defn zip->expressions
+  "Returns a set of SPDX expressions (Strings) for the given ZIP file (a String
+  or a File, which must refer to a ZIP-format compressed file), or nil if no
+  expressions were found.
+
+  Throws if the file is not a valid ZIP."
+  [zip]
+  (some-> (zip->expressions-info zip)
+          keys
+          set))
+
+(defn- zip-compressed-files
+  "Returns a set of all probable ZIP compressed files (Files) in the given
+  directory, recursively, or nil if there are none. dir may be a String or a
+  java.io.File, and must refer to a readable directory."
+  [dir]
+  (when (lciu/readable-dir? dir)
+    (some-> (seq (filter #(and (.isFile ^java.io.File %)
+                               (or (s/ends-with? (str %) ".zip")
+                                   (s/ends-with? (str %) ".jar")))
+                         (file-seq (io/file dir))))
+            set)))
+
+(defn dir->expressions-info
+  "Returns an expressions-info map for the given dir (a String or a File,
+  which must refer to a readable directory), or nil if no expressions were
+  found.
+
+  The optional `opts` map has these keys:
+  * `include-zips?` (boolean, default false) - controls whether zip compressed
+    files found in the directory are recursively included in the scan or not"
+  ([dir] (dir->expressions-info dir nil))
+  ([dir {:keys [include-zips?] :or {include-zips? false}}]
+   (when (lciu/readable-dir? dir)
+     (lciei/prepend-source (lciu/filepath dir)
+                           (let [file-expressions (into {} (map file->expressions-info (probable-license-files dir)))]
+                             (if include-zips?
+                               (let [zip-expressions (into {} (map #(try (zip->expressions-info %) (catch Exception _ nil)) (zip-compressed-files dir)))]
+                                 (merge file-expressions zip-expressions))
+                               file-expressions))))))
+
+(defn dir->expressions
+  "Returns a set of SPDX expressions (Strings)  for the given dir (a String or
+  a File, which must refer to a readable directory), or nil if no expressions
+  were found.
+
+  The optional `opts` map has these keys:
+  * `include-zips?` (boolean, default false) - controls whether zip compressed
+    files found in the directory are recursively included in the scan or not"
+  ([dir] (dir->expressions dir nil))
+  ([dir opts]
+   (some-> (dir->expressions-info dir opts)
+           keys
+           set)))
+
+(defn init!
+  "Initialises this namespace upon first call (and does nothing on subsequent
+  calls), returning nil. Consumers of this namespace are not required to call
+  this fn, as initialisation will occur implicitly anyway; it is provided to
+  allow explicit control of the cost of initialisation to callers who need it."
+  []
+  (lcmtch/init!)
+  (lcmvn/init!)
+  nil)
