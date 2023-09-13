@@ -1626,8 +1626,9 @@ categorizations:
 
   - id: "LicenseRef-scancode-jetty-ccla-1.1"
     categories:
-      - "proprietary-free"
+      - "permissive"
       - "property:include-in-notice-file"
+      - "property:patent-clause"
 
   - id: "LicenseRef-scancode-newton-king-cla"
     categories:
