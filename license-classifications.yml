@@ -4563,3 +4563,10 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  # https://www.eclipse.org/legal/tck.php
+  - id: "LicenseRef-EFTCK-1.0"
+    categories:
+      - "free-restricted"
+      - "property:include-in-notice-file"
+      - "property:no-modifications"
