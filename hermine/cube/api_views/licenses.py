@@ -15,6 +15,7 @@ from cube.serializers import (
     SBOMSerializer,
     GenericSerializer,
     ObligationSerializer,
+    GenericsAndObligationsSerializer,
 )
 from cube.utils.licenses import (
     get_licenses_triggered_obligations,
@@ -97,47 +98,63 @@ class GenericViewSet(viewsets.ModelViewSet):
 
     @swagger_auto_schema(
         request_body=SBOMSerializer,
-        responses={200: GenericSerializer(many=True)},
+        responses={200: GenericsAndObligationsSerializer()},
     )
     @action(detail=False, methods=["POST"])
     def sbom(self, request):
         """
-        Get list of generic obligations for a given SBOM.
-
-        Uploads a list of package with their licenses SPDX and return a list of
-        generic obligations with packages which triggered them.
+        Get list of generic obligations for a given SBOM. Uploads a list of
+        package with their licenses SPDX and return a list of generic
+        obligations with packages which triggered them.
         """
         serializer = SBOMSerializer(data=request.data)
         if not serializer.is_valid():
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-        generics = (
-            {"generic": generic, "triggered_by": package["package_id"]}
+        obligations = (
+            {"obligation": obligation, "triggered_by": package["package_id"]}
             for package in serializer.validated_data["packages"]
             for spdx_id in package["spdx"]
-            for generic in Generic.objects.filter(
-                obligation__in=get_license_triggered_obligations(
-                    License.objects.get(spdx_id=spdx_id),
-                    package["exploitation"],
-                    package["modification"],
-                )
-            ).distinct()
+            for obligation in get_license_triggered_obligations(
+                License.objects.get(spdx_id=spdx_id),
+                package["exploitation"],
+                package["modification"],
+            )
         )
 
-        def sort_key(generic):
-            return generic["generic"].pk
+        generics = list(
+            {"generic": o["obligation"].generic, "triggered_by": o["triggered_by"]}
+            for o in obligations
+            if o["obligation"].generic is not None
+        )
 
-        sorted_generics = groupby(sorted(generics, key=sort_key), sort_key)
-        serializer_data = list()
-        for generic_pk, generics in sorted_generics:
-            generics = list(generics)
-            generic = generics[0]["generic"]
-            generic.triggered_by = [g["triggered_by"] for g in generics]
-            serializer_data.append(generic)
+        generics_with_trigger = list()
+        for generic_pk, generics_duplicates in groupby(
+            sorted(generics, key=lambda g: g["generic"].pk), lambda g: g["generic"].pk
+        ):
+            generics_duplicates = list(generics_duplicates)
+            generic = generics_duplicates[0]["generic"]
+            generic.triggered_by = [g["triggered_by"] for g in generics_duplicates]
+            generics_with_trigger.append(generic)
 
-        serializer = self.get_serializer(
-            serializer_data,
-            many=True,
+        specific_obligations = (
+            o for o in obligations if o["obligation"].generic is None
+        )
+        obligations_with_trigger = list()
+        for obligation_pk, obligations_duplicate in groupby(
+            sorted(specific_obligations, key=lambda o: o["obligation"].pk),
+            lambda o: o["obligation"].pk,
+        ):
+            obligations_duplicate = list(obligations_duplicate)
+            obligation = obligations_duplicate[0]["obligation"]
+            obligation.triggered_by = [o["triggered_by"] for o in obligations_duplicate]
+            obligations_with_trigger.append(obligation)
+
+        serializer = GenericsAndObligationsSerializer(
+            {
+                "generics": generics_with_trigger,
+                "obligations": obligations_with_trigger,
+            }
         )
         return Response(serializer.data)
 
