@@ -232,7 +232,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-  # https://spdx.org/licenses/AFL-3.0.html
+  # https://spdx.org/licenses/AGPL-3.0-only.html
   - id: "AGPL-3.0-or-later"
     categories:
       - "copyleft-strong"
