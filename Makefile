@@ -15,18 +15,18 @@ check_license_files:
 			echo -n " * $$LICENSE_FILE: " ; \
 		   	ls $$LICENSE_FILE > /dev/null || (echo FAIL; exit 1) &&  \
 			echo "OK" && \
-			echo -n " * JSON: " && jq . $$lf > /dev/null || (echo FAIL; exit 1) &&  \
+			echo -n " * JSON: " && jq . $$lf > /dev/null || exit 1 &&  \
 			echo "OK" ; \
 	done
 # all LICENSE files should have a JSON file
 	@for lf in `find var/licenses -name "*.LICENSE"`; \
 		do JSON_FILE=`echo $$lf | sed 's/\.LICENSE/\.json/g'` ; \
 			echo -n "$$lf -> $$JSON_FILE: " ; \
-		   	ls $$JSON_FILE > /dev/null || (echo FAIL; exit 1) ; \
+		   	ls $$JSON_FILE > /dev/null || exit 1 ; \
 			echo "OK" ; \
 	done
 	@echo -n "License schema: " ; \
-		   	jq . var/license_schema.json > /dev/null || (echo FAIL; exit 1) ; \
+		   	jq . var/license_schema.json > /dev/null || exit 1 ; \
 			echo "OK" ; \
 
 check-reuse:
