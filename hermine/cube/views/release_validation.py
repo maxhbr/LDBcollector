@@ -38,7 +38,7 @@ from cube.views import LicenseRelatedMixin
 from cube.views.mixins import (
     SaveAuthorMixin,
     ReleaseContextMixin,
-    ReleaseExploitationRedirectMixin,
+    QuerySuccessUrlMixin,
 )
 
 
@@ -205,7 +205,6 @@ class ReleaseExploitationUpdateView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
     ReleaseContextMixin,
-    ReleaseExploitationRedirectMixin,
     UpdateView,
 ):
     model = Exploitation
@@ -218,7 +217,7 @@ class ReleaseExploitationCreateView(
     LoginRequiredMixin,
     PermissionRequiredMixin,
     ReleaseContextMixin,
-    ReleaseExploitationRedirectMixin,
+    QuerySuccessUrlMixin,
     CreateView,
 ):
     model = Exploitation
@@ -234,6 +233,9 @@ class ReleaseExploitationCreateView(
     def form_valid(self, form):
         form.instance.release = self.release
         return super().form_valid(form)
+
+    def get_default_success_url(self):
+        return reverse("cube:release_summary", args=[self.release.id])
 
 
 class ReleaseExploitationDeleteView(

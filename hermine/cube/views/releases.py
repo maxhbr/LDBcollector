@@ -39,6 +39,7 @@ from cube.views.mixins import (
     SearchMixin,
     ReleaseContextMixin,
     ReleaseExploitationFormMixin,
+    QuerySuccessUrlMixin,
 )
 
 logger = logging.getLogger(__name__)
@@ -63,7 +64,9 @@ class ReleaseSummaryView(
     permission_required = "cube.view_release"
 
 
-class ReleaseEditView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+class ReleaseEditView(
+    LoginRequiredMixin, PermissionRequiredMixin, QuerySuccessUrlMixin, UpdateView
+):
     model = Release
     fields = ["product", "release_number", "commit", "ship_status"]
     permission_required = "cube.change_release"
@@ -249,24 +252,34 @@ class UsageCreateView(
         return reverse("cube:release_import", kwargs={"pk": self.object.release.pk})
 
 
-class UsageUpdateView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
+class UsageUpdateView(
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    QuerySuccessUrlMixin,
+    generic.UpdateView,
+):
     permission_required = "cube.change_usage"
     model = Usage
     form_class = UsageForm
     template_name = "cube/usage_update.html"
 
-    def get_success_url(self):
+    def get_default_success_url(self):
         return reverse(
             "cube:release_bom", kwargs={"release_pk": self.object.release.pk}
         )
 
 
-class UsageDeleteView(LoginRequiredMixin, PermissionRequiredMixin, generic.DeleteView):
+class UsageDeleteView(
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    QuerySuccessUrlMixin,
+    generic.DeleteView,
+):
     permission_required = "cube.delete_usage"
     model = Usage
     template_name = "cube/usage_delete.html"
 
-    def get_success_url(self):
+    def get_default_success_url(self):
         return reverse(
             "cube:release_bom", kwargs={"release_pk": self.object.release.pk}
         )

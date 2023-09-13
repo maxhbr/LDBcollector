@@ -10,7 +10,7 @@ from cube.models import (
     Derogation,
     LicenseChoice,
 )
-from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin
+from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin, QuerySuccessUrlMixin
 
 
 class AuthorizedContextListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
@@ -21,7 +21,11 @@ class AuthorizedContextListView(LoginRequiredMixin, PermissionRequiredMixin, Lis
 
 
 class AuthorizedContextUpdateView(
-    LoginRequiredMixin, PermissionRequiredMixin, SaveAuthorMixin, UpdateView
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    SaveAuthorMixin,
+    QuerySuccessUrlMixin,
+    UpdateView,
 ):
     permission_required = "cube.change_derogation"
     model = Derogation
@@ -34,12 +38,10 @@ class AuthorizedContextUpdateView(
         "category",
         "justification",
     )
+    success_url = reverse_lazy("cube:authorized_context_list")
 
     def get_context_data(self, **kwargs):
         return super().get_context_data(license=self.object.license, **kwargs)
-
-    def get_success_url(self):
-        return reverse("cube:license", args=[self.object.license.id])
 
 
 class AuthorizedContextCreateView(
@@ -89,7 +91,9 @@ class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, ListVie
     )
 
 
-class LicenseChoiceEditView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+class LicenseChoiceEditView(
+    LoginRequiredMixin, PermissionRequiredMixin, QuerySuccessUrlMixin, UpdateView
+):
     permission_required = "cube.change_licensechoice"
     model = LicenseChoice
     template_name = "cube/licensechoice_edit.html"

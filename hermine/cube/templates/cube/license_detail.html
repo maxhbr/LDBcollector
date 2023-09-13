@@ -243,7 +243,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 </td>
                 <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
                 <td style="white-space: nowrap">
-                  <a href="{% url "cube:authorized_context_edit" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
+                  <a href="{% url "cube:authorized_context_edit" derogation.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a> |
                   <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
                 </td>
               </tr>
