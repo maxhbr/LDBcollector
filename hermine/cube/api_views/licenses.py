@@ -16,6 +16,7 @@ from cube.serializers import (
     GenericSerializer,
     ObligationSerializer,
     GenericsAndObligationsSerializer,
+    LicenseObligationSerializer,
 )
 from cube.utils.licenses import (
     get_licenses_triggered_obligations,
@@ -161,24 +162,31 @@ class GenericViewSet(viewsets.ModelViewSet):
 
 class ObligationViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows licenses to be viewed or edited.
+    API endpoint that allows licenses to be viewed or edited
+    from /obligations or /licenses/<license_id>/obligations
     """
 
     def get_queryset(self):
-        """
-        Handles if the user is accessing the viewset from root of api or from a nested
-        obligationset in a license
+        if (license_id := self.kwargs.get("nested_1_id")) is not None:
+            return Obligation.objects.filter(license__id=license_id)
 
+        return Obligation.objects.all()
 
-        :return: [description]
-        :rtype: [type]
-        """
-        license = self.kwargs.get("id_id")
-        return (
-            Obligation.objects.all()
-            if license is None
-            else Obligation.objects.filter(license__id=license)
-        )
+    def get_serializer_class(self):
+        if self.kwargs.get("nested_1_id", None) is not None:
+            return LicenseObligationSerializer
+        return ObligationSerializer
 
-    serializer_class = ObligationSerializer
+    def perform_create(self, serializer):
+        if (license_id := self.kwargs.get("nested_1_id")) is not None:
+            serializer.save(license=License.objects.get(id=license_id))
+        else:
+            super().perform_create(serializer)
+
+    def perform_update(self, serializer):
+        if (license_id := self.kwargs.get("nested_1_id")) is not None:
+            serializer.save(license=License.objects.get(id=license_id))
+        else:
+            super().perform_update(serializer)
+
     lookup_field = "id"

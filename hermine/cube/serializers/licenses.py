@@ -16,7 +16,7 @@ class GenericNameField(serializers.CharField):
 
 
 class ObligationSerializer(serializers.ModelSerializer):
-    generic_name = GenericNameField(allow_null=True, required=False)
+    generic_name = GenericNameField(allow_null=True, required=False, read_only=True)
 
     class Meta:
         use_natural_foreign_keys = True
@@ -68,20 +68,6 @@ class LicenseObligationSerializer(ObligationSerializer):
         model = Obligation
         exclude = ["license"]
 
-    @classmethod
-    def create(cls, license, validated_data):
-        validated_data["license"] = license
-        instance = Obligation.objects.create(**validated_data)
-        return instance
-
-    @classmethod
-    def update(cls, instance, license, validated_data):
-        validated_data["license"] = license
-        for field, value in validated_data.items():
-            setattr(instance, field, value)
-        instance.save()
-        return instance
-
 
 class LicenseSerializer(serializers.ModelSerializer):
     obligation_set = LicenseObligationSerializer(
@@ -123,16 +109,16 @@ class LicenseSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         obligations_data = validated_data.pop("obligation_set")
-        license = License.objects.create(**validated_data)
+        instance = License.objects.create(**validated_data)
         for obligation_data in obligations_data:
-            LicenseObligationSerializer.create(license.id, obligation_data)
-        return license
+            LicenseObligationSerializer(obligation_data).save(license=instance)
+        return instance
 
     def update(self, instance, validated_data):
         Obligation.objects.filter(license=instance).delete()
         obligations_data = validated_data.pop("obligation_set")
         for obligation_data in obligations_data:
-            LicenseObligationSerializer.create(instance, obligation_data)
+            LicenseObligationSerializer(obligation_data).save(license=instance)
         for field, value in validated_data.items():
             setattr(instance, field, value)
         instance.save()
