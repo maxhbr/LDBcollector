@@ -3,6 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from itertools import groupby
 
+from django.shortcuts import get_object_or_404
 from django_filters import rest_framework as filters
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import viewsets, status
@@ -25,24 +26,27 @@ from cube.utils.licenses import (
 
 
 class LicenseViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows licenses to be viewed or edited.
-    Can be filtered by SPDX ID (`?spdx_id=MIT` for example).
-    """
-
-    def get_queryset(self):
-        """
-        Optionally restricts the returned licences to a given spdx_id,
-        by filtering against a `spdx_id` query parameter in the URL.
-        """
-        queryset = License.objects.all()
-        spdx_id = self.request.query_params.get("spdx_id")
-        if spdx_id is not None:
-            queryset = queryset.filter(spdx_id=spdx_id)
-        return queryset
-
     serializer_class = LicenseSerializer
-    lookup_field = "id"
+    queryset = License.objects.all()
+    lookup_url_kwarg = "id"
+    lookup_value_regex = "[^/]+"
+    lookup_field = "spdx_id"
+
+    def get_object(self):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        lookup_id = self.kwargs.get(self.lookup_url_kwarg)
+
+        # check if id is a number or a string
+        if lookup_id.isdigit():
+            obj = get_object_or_404(queryset, id=lookup_id)
+        else:
+            obj = get_object_or_404(queryset, spdx_id=lookup_id)
+
+        # May raise a permission denied
+        self.check_object_permissions(self.request, obj)
+
+        return obj
 
 
 class SPDXFilter(filters.BaseInFilter, filters.ModelChoiceFilter):
