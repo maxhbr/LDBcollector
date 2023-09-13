@@ -73,7 +73,7 @@ def is_valid(spdx_expression: str):
         # We have to do that before validate because some ExpressionError are not
         # correctly handled by licensing.validate
         licensing.parse(spdx_expression, strict=True)
-    except ExpressionError as e:
+    except ExpressionError:
         return False
 
     info = licensing.validate(spdx_expression, strict=True)
