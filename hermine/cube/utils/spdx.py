@@ -7,7 +7,7 @@ from itertools import product
 from types import MethodType
 from typing import Iterable, List
 
-from license_expression import get_spdx_licensing, BaseSymbol
+from license_expression import get_spdx_licensing, BaseSymbol, ExpressionError
 
 
 # We manually add "LicenseRef-" licenses as valid symbols
@@ -69,6 +69,13 @@ def is_ambiguous(spdx_expression: str):
 
 @lru_cache(maxsize=1024)
 def is_valid(spdx_expression: str):
+    try:
+        # We have to do that before validate because some ExpressionError are not
+        # correctly handled by licensing.validate
+        licensing.parse(spdx_expression, strict=True)
+    except ExpressionError:
+        return False
+
     info = licensing.validate(spdx_expression, strict=True)
 
     return len(info.errors) == 0
