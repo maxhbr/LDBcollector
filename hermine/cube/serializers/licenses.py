@@ -16,14 +16,6 @@ class GenericNameField(serializers.CharField):
 
 
 class ObligationSerializer(serializers.ModelSerializer):
-    """Allow serialization and deserialization of obligations on the following fields :
-    "name", "license", "verbatim", "passivity", "trigger_expl", "trigger_mdf",
-    "generic_id"
-
-    :param serializers:
-        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
-    """
-
     generic_name = GenericNameField(allow_null=True, required=False)
 
     class Meta:
@@ -70,9 +62,6 @@ class ObligationSerializer(serializers.ModelSerializer):
 class LicenseObligationSerializer(ObligationSerializer):
     """A serializer used for nested representation of Obligations. We don't need and
     we cannot fill the license field in that case.
-
-    :param ObligationSerializer: The main serializer for obligations
-    :type ObligationSerializer: Serializer
     """
 
     class Meta:
@@ -95,19 +84,6 @@ class LicenseObligationSerializer(ObligationSerializer):
 
 
 class LicenseSerializer(serializers.ModelSerializer):
-    """Allow serialization and deserialization of licenses on the following fields:
-    "spdx_id", "long_name", "license_version", "radical", "autoupgrade", "steward",
-    "inspiration_spdx", "copyleft", "color", "color_explanation", "url", "osi_approved",
-    "fsf_approved", "foss", "patent_grant", "ethical_clause", "non_commercial",
-    "non_tivoisation", "jurisdictional_clause","comment", "verbatim","obligation_set"
-
-    Obligations are nested in a license, and can be accessed with
-    "/licenses/{license_name}/obligation/{obligation_name}"
-
-    :param serializers:
-        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
-    """
-
     obligation_set = LicenseObligationSerializer(
         read_only=False, many=True, allow_null=True, required=False
     )
@@ -153,18 +129,6 @@ class LicenseSerializer(serializers.ModelSerializer):
         return license
 
     def update(self, instance, validated_data):
-        """Updates a license overwriting existing data. You should explicitely give
-        every data you want to keep in the 'validated data parameter.
-
-        :param instance: The instance of license you want to update.
-        :type instance: License
-        :param validated_data: A dict matching license serialization.
-            Obligations are nested in 'obligation_set'.
-        :type validated_data: [type]
-        :return: [description]
-        :rtype: [type]
-        """
-
         Obligation.objects.filter(license=instance).delete()
         obligations_data = validated_data.pop("obligation_set")
         for obligation_data in obligations_data:
@@ -176,20 +140,6 @@ class LicenseSerializer(serializers.ModelSerializer):
 
 
 class GenericSerializer(serializers.ModelSerializer):
-    """Allow serialization and deserialization of generic obligations on the following
-    fields:
-    "id", "name", "description", "in_core", "metacategory", "team", "passivity"
-    Here the id is kept because generic obligations are considered as something so
-    important to the work of Hermine that keeping a surrogate key to point them is
-    reasonable.
-
-    :param serializers:
-        https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
-    """
-
-    triggered_by = serializers.ListField(
-        read_only=True, child=serializers.CharField(read_only=True)
-    )
     team = serializers.SlugRelatedField(
         slug_field="name", queryset=Team.objects.all(), required=False, allow_null=True
     )
@@ -204,5 +154,62 @@ class GenericSerializer(serializers.ModelSerializer):
             "metacategory",
             "team",
             "passivity",
+        ]
+
+
+class TriggeredObligationSerializer(ObligationSerializer):
+    triggered_by = serializers.ListField(
+        read_only=True,
+        child=serializers.CharField(read_only=True),
+        help_text="The ids of the packages that triggered this obligation",
+    )
+
+    class Meta:
+        use_natural_foreign_keys = True
+        model = Obligation
+        fields = [
+            "id",
+            "license",
+            "name",
+            "verbatim",
+            "passivity",
+            "trigger_expl",
+            "trigger_mdf",
+            "generic",
+            "generic_name",
             "triggered_by",
         ]
+
+
+class TriggeredGenericSerializer(GenericSerializer):
+    triggered_by = serializers.ListField(
+        read_only=True,
+        child=serializers.CharField(read_only=True),
+        help_text="The ids of the packages that triggered this obligation",
+    )
+
+    class Meta:
+        model = Generic
+        fields = [
+            "id",
+            "name",
+            "description",
+            "in_core",
+            "metacategory",
+            "team",
+            "passivity",
+            "triggered_by",
+        ]
+
+
+class GenericsAndObligationsSerializer(serializers.Serializer):
+    generics = TriggeredGenericSerializer(
+        many=True,
+        read_only=True,
+        help_text="Generic obligations triggered by the components.",
+    )
+    obligations = TriggeredObligationSerializer(
+        many=True,
+        read_only=True,
+        help_text="Specific obligations not linked to a generic obligation.",
+    )
