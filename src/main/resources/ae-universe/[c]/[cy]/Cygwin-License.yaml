@@ -6,6 +6,9 @@ canonicalName: "Cygwin License"
 category: "Cygwin"
 shortName: "Cygwin"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "gpl-3.0-or-later"
+
 alternativeNames:
   - "Cygwin License"
   - "Cygwin license"

@@ -6,3 +6,6 @@ canonicalName: "ImageMagick License Part OpenSSH"
 category: "ImageMagick"
 shortName: "ImageMagick-OpenSSH"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "BSD-2-Clause"
+

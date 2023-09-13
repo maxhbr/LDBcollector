@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 077)"
 category: "Permission"
 shortName: "PT-Var077"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "NTP"
+
 alternativeNames:
   - "mit-old-style"
 

@@ -6,6 +6,9 @@ canonicalName: "Expat Permission"
 category: "MIT"
 shortName: "Expat-Permission"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-mit-old-style"
+
 alternativeNames:
   - "Expat Permission"
 

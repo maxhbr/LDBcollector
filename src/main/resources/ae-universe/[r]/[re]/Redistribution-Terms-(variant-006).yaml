@@ -6,5 +6,8 @@ canonicalName: "Redistribution Terms (variant 006)"
 category: "RT"
 shortName: "RT-Var6"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "BSD-4.3TAHOE"
+
 otherIds: 
   - "scancode:bsla-no-advert"

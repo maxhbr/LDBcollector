@@ -6,6 +6,9 @@ canonicalName: "OpenEvidence License"
 category: "OpenEvidence License"
 shortName: "OpenEvidence"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "OpenSSL"
+
 alternativeNames:
   - "Open Evidence License"
 

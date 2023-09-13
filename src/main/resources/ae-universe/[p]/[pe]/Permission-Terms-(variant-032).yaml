@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (variant 032)"
 category: "Permission"
 shortName: "PT-Var032"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "xlock"
+
 alternativeNames:
   - "Open Group Permissions"
 

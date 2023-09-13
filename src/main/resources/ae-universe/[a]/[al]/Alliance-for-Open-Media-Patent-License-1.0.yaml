@@ -6,5 +6,8 @@ canonicalName: "Alliance for Open Media Patent License 1.0"
 category: "Alliance for Open Media Patent"
 shortName: "AOMP-1.0"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-alliance-open-media-patent-1.0"
+
 otherIds: 
   - "scancode:alliance-open-media-patent-1.0"

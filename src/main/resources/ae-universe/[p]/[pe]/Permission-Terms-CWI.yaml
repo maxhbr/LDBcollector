@@ -6,6 +6,9 @@ canonicalName: "Permission Terms CWI"
 category: "Permission"
 shortName: "PT-CWI"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "MIT-CMU"
+
 alternativeNames:
   - "HPND License"
   - "Historical Permission Notice and Disclaimer"

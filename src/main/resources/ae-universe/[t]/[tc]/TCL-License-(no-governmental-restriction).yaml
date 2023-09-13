@@ -6,6 +6,9 @@ canonicalName: "TCL License (no governmental restriction)"
 category: "TCL License"
 shortName: "TCL-no-governmental-restriction"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-newlib-historical"
+
 alternativeNames:
   - "TCL License (no governmental restriction)"
 

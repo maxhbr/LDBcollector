@@ -6,6 +6,9 @@ canonicalName: "BSD 5-Clause License"
 category: "BSD"
 shortName: "BSD-5-Clause"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "Apache-1.1"
+
 alternativeNames:
   - "IAIK License"
   - "RELAXNG License"

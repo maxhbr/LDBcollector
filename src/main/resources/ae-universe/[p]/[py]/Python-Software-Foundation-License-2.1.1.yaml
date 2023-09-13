@@ -6,6 +6,9 @@ canonicalName: "Python Software Foundation License 2.1.1"
 category: "Python Software Foundation License"
 shortName: "Python-2.1.1"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "Python-2.0"
+
 alternativeNames:
   - "PSF-2.1.1"
   - "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2.1.1"

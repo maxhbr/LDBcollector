@@ -6,6 +6,9 @@ canonicalName: "Unicode DFS License"
 category: "Unicode DFS"
 shortName: "Unicode-DFS"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-unicode"
+
 alternativeNames:
   - "Unicode DFS, Version 2008"
   - "Unicode DFS, 2008"

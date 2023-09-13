@@ -6,6 +6,9 @@ canonicalName: "Berkeley Database License"
 category: "Berkeley Database License"
 shortName: "Berkeley-Database"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "Sleepycat"
+
 alternativeNames:
   - "Berkeley DB License"
 

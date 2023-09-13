@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (UC)"
 category: "Permission"
 shortName: "PT-UC"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-other-permissive"
+
 alternativeNames:
   - "Permission Terms (UC)"
 

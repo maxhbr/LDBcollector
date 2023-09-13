@@ -6,6 +6,9 @@ canonicalName: "Python Software Foundation License 2.3"
 category: "Python Software Foundation License"
 shortName: "Python-2.3"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "Python-2.0"
+
 alternativeNames:
   - "Python 2.3"
 

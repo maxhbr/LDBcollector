@@ -6,5 +6,8 @@ canonicalName: "Permission Terms (variant 009)"
 category: "Permission"
 shortName: "PT-Var009"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "Boehm-GC"
+
 otherIds: 
   - "scancode:mozilla-gc"

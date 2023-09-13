@@ -6,5 +6,8 @@ canonicalName: "Permission Terms (with export note; variant 001)"
 category: "Permission"
 shortName: "PT-with-export-note-Var-01"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-mit-no-advert-export-control"
+
 otherIds: 
   - "scancode:mit-no-advert-export-control"

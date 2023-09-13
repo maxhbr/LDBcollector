@@ -6,6 +6,9 @@ canonicalName: "OASIS Copyright Notice"
 category: "OASIS"
 shortName: "OASIS-Coypright-Notice"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-ecma-documentation"
+
 alternativeNames:
   - "OASIS Copyright Notice"
 

@@ -7,5 +7,8 @@ category: "Permission"
 shortName: "PT-Var027"
 spdxIdentifier: "NTP-0"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "NTP-0"
+
 otherIds: 
   - "scancode:ntp-0"

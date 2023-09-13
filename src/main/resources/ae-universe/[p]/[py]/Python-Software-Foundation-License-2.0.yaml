@@ -6,7 +6,7 @@ canonicalName: "Python Software Foundation License 2.0"
 category: "Python Software Foundation License"
 spdxIdentifier: "PSF-2.0"
 
-openCoDEStatus: "(approved)"
+openCoDEStatus: "approved"
 
 osiStatus: "approved"
 osiCategory: "non-reusable"

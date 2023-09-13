@@ -6,6 +6,9 @@ canonicalName: "FSF Notice"
 category: "FSF Notice"
 shortName: "FSF"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-fsf-notice"
+
 alternativeNames:
   - "FSF Notice"
 

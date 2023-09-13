@@ -6,6 +6,9 @@ canonicalName: "Permission Terms (CS)"
 category: "Permission"
 shortName: "PT-CS"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-mit-old-style"
+
 alternativeNames:
   - "Permission Terms (CS)"
 

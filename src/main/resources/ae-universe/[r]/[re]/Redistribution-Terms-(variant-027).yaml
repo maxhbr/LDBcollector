@@ -6,5 +6,8 @@ canonicalName: "Redistribution Terms (variant 027)"
 category: "RT"
 shortName: "RT-027"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-bsd-1988"
+
 otherIds: 
   - "scancode:bsd-1988"

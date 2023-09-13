@@ -6,6 +6,9 @@ canonicalName: "Open Web Foundation Final Specification Agreement 1.0"
 category: "Open Web Foundation Final Specification Agreement"
 shortName: "OWFa-1.0"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-owfa-1.0"
+
 alternativeNames:
   - "owfa-1.0"
   - "OWFa 1.0"

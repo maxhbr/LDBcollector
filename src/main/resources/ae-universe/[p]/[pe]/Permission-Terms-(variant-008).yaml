@@ -6,5 +6,8 @@ canonicalName: "Permission Terms (variant 008)"
 category: "Permission"
 shortName: "PT-Var008"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-mit-veillard-variant"
+
 otherIds: 
   - "scancode:mit-veillard-variant"

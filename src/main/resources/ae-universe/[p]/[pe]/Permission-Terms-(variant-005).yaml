@@ -6,5 +6,8 @@ canonicalName: "Permission Terms (variant 005)"
 category: "Permission"
 shortName: "PT-Var005"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-x11-doc"
+
 otherIds: 
   - "scancode:x11-doc"

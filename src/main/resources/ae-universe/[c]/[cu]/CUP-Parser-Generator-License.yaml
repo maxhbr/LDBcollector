@@ -6,6 +6,9 @@ canonicalName: "CUP Parser Generator License"
 category: "CUP"
 shortName: "CUP-PGL"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "SMLNJ"
+
 alternativeNames:
   - "CUP Parser Generator License"
 

@@ -6,6 +6,9 @@ canonicalName: "MIT Kerberos License"
 category: "MIT Kerberos"
 shortName: "MIT-Kerberos"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "LicenseRef-scancode-mit-modification-obligations"
+
 alternativeNames:
   - "MIT Kerberos License"
 

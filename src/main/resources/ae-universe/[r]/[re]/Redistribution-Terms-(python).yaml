@@ -6,6 +6,9 @@ canonicalName: "Redistribution Terms (python)"
 category: "RT"
 shortName: "RT-Var015"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "Python-2.0"
+
 alternativeNames:
   - "Redistribution Terms (python)"
 

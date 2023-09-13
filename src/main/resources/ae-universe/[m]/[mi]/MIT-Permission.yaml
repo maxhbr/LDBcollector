@@ -6,6 +6,9 @@ canonicalName: "MIT Permission"
 category: "Permission"
 shortName: "MIT-Permission"
 
+openCoDEStatus: "(approved)"
+openCoDESimilarLicenseId: "MIT"
+
 alternativeNames:
   - "mit-permission"
   - "MIT Permission"
