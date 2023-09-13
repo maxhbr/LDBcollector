@@ -6,8 +6,5 @@ canonicalName: "Permission Terms (property; variant 001)"
 category: "Permission"
 shortName: "PT-VarP19"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-amd-historical"
-
 otherIds: 
   - "scancode:amd-historical"

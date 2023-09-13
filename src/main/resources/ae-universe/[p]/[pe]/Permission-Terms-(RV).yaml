@@ -6,9 +6,6 @@ canonicalName: "Permission Terms (RV)"
 category: "Permission"
 shortName: "PT-RV"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-other-permissive"
-
 alternativeNames:
   - "RV License"
 

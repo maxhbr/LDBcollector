@@ -6,9 +6,6 @@ canonicalName: "custom-regex"
 category: "regex"
 shortName: "Custom-Regex"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "Spencer-99"
-
 alternativeNames:
   - "custom-regex"
 

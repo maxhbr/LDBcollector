@@ -6,9 +6,6 @@ canonicalName: "Permission Terms (Kazlib)"
 category: "Permission"
 spdxIdentifier: "Kazlib"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "Kazlib"
-
 alternativeNames:
   - "Kazlib License"
 

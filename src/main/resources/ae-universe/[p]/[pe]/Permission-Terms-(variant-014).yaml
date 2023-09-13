@@ -6,8 +6,5 @@ canonicalName: "Permission Terms (variant 014)"
 category: "Permission"
 shortName: "PT-Var014"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-boost-original"
-
 otherIds: 
   - "scancode:boost-original"

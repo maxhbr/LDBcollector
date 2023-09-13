@@ -6,9 +6,6 @@ canonicalName: "Permission Terms (RUC)"
 category: "Permission"
 shortName: "PT-RUC"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-llnl"
-
 alternativeNames:
   - "Permission Terms (RUC)"
 

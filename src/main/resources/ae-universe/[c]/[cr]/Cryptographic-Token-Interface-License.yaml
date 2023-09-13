@@ -6,9 +6,6 @@ canonicalName: "Cryptographic Token Interface License"
 category: "Cryptographic Token Interface License"
 shortName: "Cryptoki"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-rsa-md4"
-
 alternativeNames:
   - "Cryptographic Token Interface License"
   - "Cryptoki License"

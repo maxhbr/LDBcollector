@@ -6,8 +6,5 @@ canonicalName: "Permission Terms (variant 026)"
 category: "Permission"
 shortName: "PT-Var026"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-nilsson-historical"
-
 otherIds: 
   - "scancode:nilsson-historical"

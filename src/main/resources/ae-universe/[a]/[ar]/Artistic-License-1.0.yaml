@@ -6,9 +6,6 @@ canonicalName: "Artistic License 1.0"
 category: "Artistic License"
 spdxIdentifier: "Artistic-1.0"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "Artistic-1.0"
-
 osiStatus: "approved"
 osiSupersededById: "Artistic-2.0"
 osiCategory: "superseded"

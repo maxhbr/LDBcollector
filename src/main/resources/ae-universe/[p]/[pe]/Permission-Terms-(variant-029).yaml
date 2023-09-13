@@ -6,8 +6,5 @@ canonicalName: "Permission Terms (variant 029)"
 category: "Permission"
 shortName: "PT-Var029"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-mit-modification-obligations"
-
 otherIds: 
   - "scancode:mit-with-modification-obligations"

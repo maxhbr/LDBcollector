@@ -6,9 +6,6 @@ canonicalName: "Permission Terms (RSA-MD; no representation; no warranty)"
 category: "Permission"
 shortName: "PT-RSA-MD"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-rsa-1990"
-
 alternativeNames:
   - "Permission Terms (RSA-MD; no representation; no warranty)"
 

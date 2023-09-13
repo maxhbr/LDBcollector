@@ -6,8 +6,5 @@ canonicalName: "MIT alike (PKINIT)"
 category: "MIT"
 shortName: "MIT-alike-PKINIT"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-michigan-disclaimer"
-
 otherIds: 
   - "scancode:michigan-disclaimer"

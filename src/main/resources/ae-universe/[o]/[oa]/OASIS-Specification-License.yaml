@@ -6,9 +6,6 @@ canonicalName: "OASIS Specification License"
 category: "OASIS"
 shortName: "OASIS-Specification"
 
-openCoDEStatus: "(approved)"
-openCoDESimilarLicenseId: "LicenseRef-scancode-oasis-ws-security-spec"
-
 alternativeNames:
   - "OASIS Specification License"
   - "OASIS License"
