@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Enlightenment (EFL) MIT-Style License",
+  "spdxid": "MIT-advertising",
+  "aliases": [
+   "MIT-advertising",
+   "MIT License (with advertising)",
+   "MIT with advertising",
+   "MIT advertising License",
+   "MIT ADVERTISING LICENSE",
+   "MIT ADVERTISING License",
+   "MIT-advertising License",
+   "MIT-ADVERTISING LICENSE",
+   "MIT-ADVERTISING License"
+  ]
+}
