@@ -1,0 +1,12 @@
+[license]
+expression = "BSD-Attribution-HPND-disclaimer"
+status = [ "allowed" ]
+
+[fedora]
+legacy-name = [
+    "BSD with advertising",
+]
+
+legacy-abbreviation = [
+    "BSD with advertising",
+]
