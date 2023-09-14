@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.29
+Version:        1.30
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,31 @@ make check-grammar
 
 
 %changelog
+* Thu Sep 14 2023 Miroslav Suchý <msuchy@redhat.com> 1.30-1
+- new license: LGPL-3.0-or-later WITH openvpn-openssl-exception
+- new license: BSD-3-Clause-Sun
+- new license: BSD-Systemics
+- new license: FBM
+- new license: LGPL-2.0-or-later WITH Libtool-exception
+- new license: Ferguson-Twofish
+- Add Public Domain for varnish
+- new license: MPEG-SSG
+- Add cursor-misc from xorg-x11-fonts to UltraPermissive
+- new not allowed license: MPEG-4 Audio
+- new license: pnmstitch
+- Add snprintf as allowed
+- Add xlock as allowed
+- Add BSD-4.3RENO as allowed
+- Add public domain entry for winitzki-cyrillic X11 font
+- Public Domain: Add mobile-broadband-provider-info
+- Add public domain entry used by some xorg-x11-fonts
+- Add Volatility Software License 1.0 to Not Allowed Licenses
+- Add misc-cyrillic from xorg-x11-fonts to UltraPermissive
+- Add public domain entry for aopalliance
+- Add public domain entry for plexus-utils
+- not allowed license LicenseRef-pgplot
+- Fix a typo in xz-java package name
+
 * Thu Aug 31 2023 Miroslav Suchý <msuchy@redhat.com> 1.29-1
 - Add byacc public domain declaration
 - recognize and allow MPL-2.0+ license
