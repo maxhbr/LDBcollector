@@ -819,3 +819,20 @@ location = https://github.com/codehaus-plexus/plexus-utils/blob/master/src/main/
 text = '''
 This class is public domain (not copyrighted).
 '''
+
+package = squid
+location = https://github.com/squid-cache/squid/blob/master/lib/dirent.c#L18
+test = '''
+This file has no copyright assigned and is placed in the Public Domain.
+'''
+
+package = squid
+location = https://github.com/squid-cache/squid/blob/master/lib/md5.c#L13
+           https://github.com/squid-cache/squid/blob/master/src/acl/external/wbinfo_group/ext_wbinfo_group_acl.pl.in#L71
+test = '''
+ This program is put in the public domain by Jerry Murdock
+ <jmurdock@itraktech.com>. It is distributed in the hope that it will
+ be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+ of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+'''
+
