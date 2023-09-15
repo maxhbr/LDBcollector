@@ -117,10 +117,10 @@ class FossLicenses:
         replacements = []
         for needle in reversed(collections.OrderedDict(sorted(needles.items()))):
             if allow_letter:
-                reg_exp = r'( |\(|^|\)|\|)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
+                reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
                 extra_add = " "
             else:
-                reg_exp = r'( |\(|^|\)|\|)%s( |$|\)|\||&)' % re.escape(needle)
+                reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&)' % re.escape(needle)
                 extra_add = ""
 
             if re.search(reg_exp, license_expression):
