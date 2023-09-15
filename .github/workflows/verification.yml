@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: temurin
-          java-version: 11
+          java-version: 17
       - name: Verify package configurations
         uses: gradle/gradle-build-action@v2
         with:
