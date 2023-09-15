@@ -3,3 +3,4 @@ ort = "1.0.1"
 
 [libraries]
 ortModel = { module = "org.ossreviewtoolkit:model", version.ref = "ort" }
+ortNuGetPackageManager = { module = "org.ossreviewtoolkit.plugins.packagemanagers:nuget-package-manager", version.ref = "ort" }

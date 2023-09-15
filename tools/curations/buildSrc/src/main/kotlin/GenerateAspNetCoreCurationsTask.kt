@@ -1,7 +1,7 @@
 package org.ossreviewtoolkit.tools.curations
 
 import org.gradle.api.tasks.TaskAction
-import org.ossreviewtoolkit.model.Identifier
+import org.ossreviewtoolkit.plugins.packagemanagers.nuget.utils.getIdentifierWithNamespace
 
 open class GenerateAspNetCoreCurationsTask : BaseGenerateCurationsTask() {
     @TaskAction
@@ -24,7 +24,7 @@ open class GenerateAspNetCoreCurationsTask : BaseGenerateCurationsTask() {
                             && !project.endsWith("Test")
                             && !path.endsWith("/ref")
                         ) {
-                            val id = Identifier("NuGet::$project")
+                            val id = getIdentifierWithNamespace("NuGet", project, "")
                             data += PathCurationData(id, path, tag)
                         }
                     }

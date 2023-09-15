@@ -1,7 +1,7 @@
 package org.ossreviewtoolkit.tools.curations
 
 import org.gradle.api.tasks.TaskAction
-import org.ossreviewtoolkit.model.Identifier
+import org.ossreviewtoolkit.plugins.packagemanagers.nuget.utils.getIdentifierWithNamespace
 
 open class GenerateAwsSdkForNetCurationsTask : BaseGenerateCurationsTask() {
     private val fourDigitVersionRegex = Regex("""\d+\.\d+\.\d+\.\d+""")
@@ -23,7 +23,7 @@ open class GenerateAwsSdkForNetCurationsTask : BaseGenerateCurationsTask() {
                             .removeSuffix(".csproj")
                             .replace(targetFrameworkRegex, "")
                         val path = it.substringBeforeLast("/")
-                        val id = Identifier("NuGet::$project")
+                        val id = getIdentifierWithNamespace("NuGet", project, "")
 
                         // The AWS SDK for .NET uses a four-part version number for all packages. However, Semver4j
                         // does not support four-part version numbers. Therefore, remove the fourth digit.
