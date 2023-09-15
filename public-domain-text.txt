@@ -30,6 +30,12 @@ text = '''
 text here
 '''
 
+package = augeas
+location = https://github.com/hercules-team/augeas/blob/master/lenses/dpkg.aug
+text = '''
+This file, and the attendant test_dpgk.aug, are explicitly placed in the public domain.
+'''
+
 package = xorg-x11-fonts
 location = https://gitlab.freedesktop.org/xorg/font/winitzki-cyrillic/-/blob/master/COPYING?ref_type=heads
 text = '''
