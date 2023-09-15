@@ -11,6 +11,8 @@
         "AND": "AND",
         "and": "AND",
         "&": "AND",
-        "&&": "AND"
+        "&&": "AND",
+        "with": "WITH",
+        "w/": "WITH"
     }
 }   

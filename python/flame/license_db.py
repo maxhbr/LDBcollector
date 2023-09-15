@@ -113,10 +113,16 @@ class FossLicenses:
             'identified_via': ret_id,
         }
 
-    def __update_license_expression_helper(self, needles, needle_tag, license_expression):
+    def __update_license_expression_helper(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
         for needle in reversed(collections.OrderedDict(sorted(needles.items()))):
-            reg_exp = r'( |\(|^|\)|\|)%s( |$|\)|\||&)' % re.escape(needle)
+            if allow_letter:
+                reg_exp = r'( |\(|^|\)|\|)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
+                extra_add = " "
+            else:
+                reg_exp = r'( |\(|^|\)|\|)%s( |$|\)|\||&)' % re.escape(needle)
+                extra_add = ""
+
             if re.search(reg_exp, license_expression):
                 replacement = needles[needle]
                 replacements.append({
@@ -124,7 +130,7 @@ class FossLicenses:
                     'name': replacement,
                     'identified_via': needle_tag,
                 })
-                license_expression = re.sub(reg_exp, f'\\1 {replacement}\\2', license_expression)
+                license_expression = re.sub(reg_exp, f'\\1 {replacement}{extra_add}\\2', license_expression)
         return {
             "license_expression": re.sub(r'\s\s*', ' ', license_expression).strip(),
             "identifications": replacements
@@ -153,7 +159,8 @@ class FossLicenses:
 
         ret = self.__update_license_expression_helper(self.license_db[LICENSE_OPERATORS_TAG],
                                                       "operator",
-                                                      ret['license_expression'])
+                                                      ret['license_expression'],
+                                                      allow_letter=True)
         replacements += ret['identifications']
 
         license_parsed = str(self.license_expression.parse(ret['license_expression']))
