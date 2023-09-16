@@ -1,0 +1,26 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "SGI Free Software License B v2.0",
+  "scancode_key": "sgi-freeb-2.0",
+  "spdxid": "SGI-B-2.0",
+  "aliases": [
+   "SGI-B-2.0",
+   "SGI Free Software License B v2.0",
+   "SGI Free Software License B 2.0",
+   "SGI B License 2.0",
+   "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
+   "scancode://sgi-freeb-2.0",
+   "SGI B, Version 2.0",
+   "SGI B, 2.0",
+   "SGI-B, Version 2.0",
+   "SGI-B, 2.0",
+   "SGI B License, Version 2.0",
+   "SGI-B License, Version 2.0",
+   "SGI-B License, 2.0",
+   "SGI Free Software License B, version 2.0",
+   "scancode:sgi-freeb-2.0"
+  ]
+}

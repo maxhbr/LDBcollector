@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "X11-Style (Open Group)",
+  "scancode_key": "mit-open-group", 
+  "spdxid": "MIT-open-group",
+  "aliases": [
+   "MIT-open-group",
+   "MIT Open Group Variant",
+   "MIT Open Group",
+   "MIT-Open-Group",
+   "MIT Open Group variant",
+   "scancode://x11-opengroup",
+   "X11-Style (Open Group)",
+   "mit-open-group",
+   "scancode:mit-open-group"
+  ]
+}
