@@ -1,0 +1,15 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "SQLite Blessing",
+  "scancode_key": "blessing",
+  "spdxid": "blessing",
+  "aliases": [
+   "blessing",
+   "SQLite Blessing",
+   "scancode://blessing",
+   "scancode:blessing"
+  ]
+}

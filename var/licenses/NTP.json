@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "MIT Old Style no advertising",
+  "scancode_key": "ntpl", 
+  "spdxid": "NTP",
+  "aliases": [
+   "NTP",
+   "NTP License",
+   "NTP License (NTP)",
+   "scancode://mit-old-style-no-advert",
+   "MIT Old Style no advertising",
+   "scancode://ntpl",
+   "scancode:network-time-protocol",
+   "scancode:ntpl",
+   "osi:NTP"
+  ]
+}

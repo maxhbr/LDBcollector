@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "bzip2 License 2010",
+  "scancode_key": "bzip2-libbzip-2010", 
   "spdxid": "bzip2-1.0.6",
   "aliases": [
    "bzip2-1.0.6",

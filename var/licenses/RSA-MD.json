@@ -1,0 +1,22 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "RSA Data Security MD5",
+  "scancode_key": "rsa-md5",
+  "spdxid": "RSA-MD",
+  "aliases": [
+   "RSA-MD",
+   "RSA Message-Digest License ",
+   "RSA MD License",
+   "RSA Message-Digest License",
+   "scancode://rsa-md5",
+   "RSA-MD5 License",
+   "RSA MD LICENSE",
+   "RSA-MD License",
+   "RSA-MD LICENSE",
+   "RSA Data Security MD4",
+   "scancode:rsa-md4"
+  ]
+}

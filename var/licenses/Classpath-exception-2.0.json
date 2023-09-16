@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "Classpath exception to GPL 2.0 or later",
+  "scancode_key": "classpath-exception-2.0", 
   "spdxid": "Classpath-exception-2.0",
   "aliases": [
       "Classpath-exception",

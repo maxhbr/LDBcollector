@@ -1,0 +1,16 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Plexus Classworlds License",
+  "scancode_key": "classworlds", 
+  "spdxid": "Plexus",
+  "aliases": [
+   "Plexus",
+   "Plexus Classworlds License",
+   "Plexus License",
+   "PLEXUS LICENSE",
+   "scancode:classworlds"
+  ]
+}

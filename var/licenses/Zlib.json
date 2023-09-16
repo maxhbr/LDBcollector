@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "ZLIB License",
+  "scancode_key": "zlib", 
   "spdxid": "Zlib",
   "aliases": [
    "Zlib",

@@ -4,9 +4,9 @@
     "comment": ""
   },
   "name": "MIT License",
+  "scancode_key": "mit", 
   "spdxid": "MIT",
   "aliases": [
-   "MIT",
    "MIT license (also X11)",
    "The MIT License",
    "MIT License",

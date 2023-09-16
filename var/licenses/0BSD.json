@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "BSD Zero Clause License",
+  "scancode_key": "bsd-zero", 
   "spdxid": "0BSD",
   "aliases": [
    "0BSD",

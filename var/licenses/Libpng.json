@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "Libpng License",
+  "scancode_key": "libpng", 
   "spdxid": "Libpng",
   "aliases": [
    "Libpng",

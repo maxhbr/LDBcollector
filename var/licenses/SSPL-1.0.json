@@ -1,0 +1,23 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "Server Side Public License (SSPL) 1.0",
+  "scancode_key": "mongodb-sspl-1.0",
+  "spdxid": "SSPL-1.0",
+  "aliases": [
+   "SSPL-1.0",
+   "Server Side Public License Version 1",
+   "Server Side Public License 1.0",
+   "Server Side Public License, v 1",
+   "scancode://mongodb-sspl-1.0",
+   "SSPL 1.0",
+   "Server Side Public License",
+   "SSPL 1",
+   "Server Side Public License, Version 1.0",
+   "Server Side Public License v1.0",
+   "Server Side Public License VERSION 1",
+   "scancode:mongodb-sspl-1.0"
+  ]
+}

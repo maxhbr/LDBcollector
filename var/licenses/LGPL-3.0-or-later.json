@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "GNU Lesser General Public License 3.0 or later",
+  "scancode_key": "lgpl-3.0-plus", 
   "spdxid": "LGPL-3.0-or-later",
   "aliases": [
    "LGPL-3.0-or-later",

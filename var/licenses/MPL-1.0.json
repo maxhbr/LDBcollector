@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "Mozilla Public License 1.0",
+  "scancode_key": "mpl-1.0", 
   "spdxid": "MPL-1.0",
   "aliases": [
    "MPL-1.0",

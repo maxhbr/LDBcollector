@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "PNG Reference Library License version 2",
+  "scancode_key": "libpng-v2", 
   "spdxid": "libpng-2.0",
   "aliases": [
    "libpng-2.0",

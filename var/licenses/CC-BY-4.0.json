@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "Creative Commons Attribution 4.0 International Public License",
+  "scancode_key": "cc-by-4.0", 
   "spdxid": "CC-BY-4.0",
   "aliases": [
    "CC-BY-4.0",

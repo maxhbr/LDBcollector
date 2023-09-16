@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "X11-Style (Tiff)",
+  "scancode_key": "x11-tiff", 
   "spdxid": "libtiff",
   "aliases": [
    "libtiff",

@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "Python Software Foundation License v2",
+  "scancode_key": "python", 
   "spdxid": "Python-2.0",
   "aliases": [
    "Python-2.0",
