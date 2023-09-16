@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "VIM License",
+  "scancode_key": "vim", 
   "spdxid": "Vim",
   "aliases": [
    "Vim",

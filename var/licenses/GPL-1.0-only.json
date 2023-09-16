@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "GNU General Public License 1.0",
+  "scancode_key": "gpl-1.0", 
   "spdxid": "GPL-1.0-only",
   "aliases": [
    "GPL-1.0-only",

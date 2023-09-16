@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "Creative Commons CC0 1.0 Universal",
+  "scancode_key": "cc0-1.0", 
   "spdxid": "CC0-1.0",
   "aliases": [
    "CC0-1.0",

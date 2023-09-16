@@ -6,6 +6,7 @@
     },
     "scancode_key": "apache-2.0",
     "spdxid": "Apache-2.0",
+    "name": "Apache License 2.0",
     "aliases": [
         "Apache (v2.0)",
         "Apache Software License 2.0",

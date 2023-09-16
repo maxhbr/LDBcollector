@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "Blue Oak Model License 1.0.0",
+  "scancode_key": "blueoak-1.0.0", 
   "spdxid": "BlueOak-1.0.0",
   "aliases": [
    "BlueOak-1.0.0",

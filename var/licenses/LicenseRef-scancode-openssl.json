@@ -4,6 +4,7 @@
     "comment": ""
   },
   "name": "OpenSSL License",
+  "scancode_key": "openssl", 
   "spdxid": "LicenseRef-scancode-openssl",
   "aliases": [
   ]
