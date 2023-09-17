@@ -41,10 +41,11 @@ jobs:
         cd python
         flake8
     - name: Install
-      run: cd python && pip install -r requirements.txt && python3 setup.py install
+      run: cd python && python3 setup.py install
     - name: Test
       run: |
         JUNIT_REPORT=1 python3 -m pytest
+        make check_license_schema
     - name: CLI check
       run: |
         flame -h
