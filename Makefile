@@ -33,11 +33,13 @@ check_license_files:
 		   	jq . var/license_schema.json > /dev/null || exit 1 ; \
 			echo "OK" ;
 
+check_license_schema:
 # the py tool has an option "--check" that checks every license against license schema
 # check one license, e.g. mpl, to check 'em all
 	@echo -n "Use py command to check licenses against schema: " ; \
 		   	PYTHONPATH=python python/flame/__main__.py --check license mpl-2.0  > /dev/null || exit 1 ; \
 			echo "OK" ; 
+
 
 check-reuse:
 	reuse --suppress-deprecation lint
