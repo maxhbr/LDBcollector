@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://github.com/hesa/license-db/tree/main/var/disclamer.md",
+    "comment": ""
+  },
+  "name": "TCL/TK License",
+  "scancode_key": "tcl",
+  "spdxid": "TCL",
+  "aliases": [
+   "TCL",
+   "TCL/TK License",
+   "TCL License",
+   "scancode://tcl",
+   "scancode://ttcl",
+   "LicenseRef-scancode-ttcl",
+   "scancode:tcl"
+  ]
+}

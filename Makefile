@@ -7,6 +7,7 @@ check: license python clean check-reuse build
 	@echo "\n\n\n   Yay.... check succeeded :)\n\n\n"
 
 check_license_files:
+
 # all JSON files should have a LICENSE file
 	@for lf in `find var/licenses -name "*.json"`; \
 		do \
@@ -18,6 +19,7 @@ check_license_files:
 			echo -n " * JSON: " && jq . $$lf > /dev/null || exit 1 &&  \
 			echo "OK" ; \
 	done
+
 # all LICENSE files should have a JSON file
 	@for lf in `find var/licenses -name "*.LICENSE"`; \
 		do JSON_FILE=`echo $$lf | sed 's/\.LICENSE/\.json/g'` ; \
@@ -25,9 +27,19 @@ check_license_files:
 		   	ls $$JSON_FILE > /dev/null || exit 1 ; \
 			echo "OK" ; \
 	done
+
+# Make sure schema is valid JSON
 	@echo -n "License schema: " ; \
 		   	jq . var/license_schema.json > /dev/null || exit 1 ; \
-			echo "OK" ; \
+			echo "OK" ;
+
+check_license_schema:
+# the py tool has an option "--check" that checks every license against license schema
+# check one license, e.g. mpl, to check 'em all
+	@echo -n "Use py command to check licenses against schema: " ; \
+		   	PYTHONPATH=python python/flame/__main__.py --check license mpl-2.0  > /dev/null || exit 1 ; \
+			echo "OK" ; 
+
 
 check-reuse:
 	reuse --suppress-deprecation lint

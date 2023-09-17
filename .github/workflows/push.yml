@@ -45,6 +45,7 @@ jobs:
     - name: Test
       run: |
         JUNIT_REPORT=1 python3 -m pytest
+        make check_license_schema
     - name: CLI check
       run: |
         flame -h
