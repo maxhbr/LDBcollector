@@ -50,7 +50,7 @@ license: check_license_files
 python: py-test py-sort py-lint check-py-cli
 
 py-test:
-	PYTHONPATH=./python/ pytest --log-cli-level=10 tests/python/
+	PYTHONPATH=python/ python3.10 -m pytest --log-cli-level=10 tests/python/
 
 py-sort:
 	cd python && isort ./*/*.py --diff
