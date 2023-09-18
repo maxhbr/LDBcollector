@@ -10,6 +10,7 @@ import logging
 import sys
 
 from flame.license_db import FossLicenses
+from flame.license_db import Validation
 import flame.config
 from flame.format import OUTPUT_FORMATS
 from flame.format import OutputFormatterFactory
@@ -64,6 +65,7 @@ def parse():
     parser_c.add_argument('license', type=str, help='license name to display')
     parser_c.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
     parser_c.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
+    parser_c.add_argument('--validate-osadl', action='store_true', dest='validate_osadl', help='Validate that the resulting licenses are supported by OSADL\'s compatibility matrix', default=False)
 
     # aliases
     parser_a = subparsers.add_parser(
@@ -107,7 +109,8 @@ def compats(fl, formatter, args):
     return formatter.format_compat_list(all_compats, args.verbose)
 
 def compatibility(fl, formatter, args):
-    compatibilities = fl.expression_compatibility_as(args.license, validate_spdx=args.validate_spdx, validate_relaxed=args.validate_relaxed)
+    validations = __validations(args)
+    compatibilities = fl.expression_compatibility_as(args.license, validations)
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
 def license(fl, formatter, args):
@@ -123,6 +126,16 @@ def full_license(fl, formatter, args):
     else:
         raise FlameException(f'You can only provide one license to license-full. "{args.license} not allowed"')
 
+def __validations(args):
+    validations = []
+    if args.validate_spdx:
+        validations.append(Validation.SPDX)
+    if args.validate_relaxed:
+        validations.append(Validation.RELAXED)
+    if args.validate_osadl:
+        validations.append(Validation.OSADL)
+
+    return validations
 
 def main():
 

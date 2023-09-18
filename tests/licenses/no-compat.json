@@ -1,0 +1,14 @@
+{
+    "meta": {
+        "disclaimer": "bla bla ",
+	"comment": "adapting to new format"
+    },
+    "spdxid": "LicenseRef-dummy-no-compat",
+    "scancode_key": "no-no-no",
+    "name": "No no license",
+    "aliases": [
+        "No no license"
+    ],
+    "license_text_url": "",
+    "comment": "This license does not exist."
+}

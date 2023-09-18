@@ -12,10 +12,13 @@ import logging
 import re
 from pathlib import Path
 import license_expression
+from enum import Enum
 
 from flame.config import LICENSE_DIR, LICENSE_OPERATORS_FILE, LICENSE_SCHEMA_FILE
 from flame.exception import FlameException
 from jsonschema import validate
+
+import osadl_matrix
 
 json_schema = None
 
@@ -31,12 +34,18 @@ NAME_TAG = 'name'
 
 LICENSE_OPERATORS_TAG = 'license_operators'
 
+class Validation(Enum):
+    RELAXED = 1
+    SPDX = 2
+    OSADL = 3
+
 class FossLicenses:
 
     def __init__(self, check=False, license_dir=LICENSE_DIR, logging_level=logging.INFO):
         logging.basicConfig(level=logging_level)
         self.license_dir = license_dir
         self.__init_license_db(check)
+        self.supported_licenses = None
 
     def __read_json(self, file_name):
         with open(file_name) as f:
@@ -271,7 +280,7 @@ class FossLicenses:
             }
         }
 
-    def expression_compatibility_as(self, license_expression, validate_spdx=False, validate_relaxed=False):
+    def expression_compatibility_as(self, license_expression, validations=[]):
         """Returns an object with information about the compatibility status for the license given.
 
         :param str license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
@@ -285,18 +294,44 @@ class FossLicenses:
         compats = ret['identifications']
         compat_license_expression = ret['license_expression']
 
-        if validate_spdx:
+        compat_licenses = [x.strip() for x in re.split("OR|AND", compat_license_expression)]
+        compat_support = self.validate_compatibilities_support(compat_licenses)
+
+        if Validation.SPDX in validations:
             self.__validate_license_spdx(compat_license_expression)
-        elif validate_relaxed:
+        if Validation.RELAXED in validations:
             self.__validate_license_relaxed(compat_license_expression)
+        if Validation.OSADL in validations:
+            self.__validate_licenses_osadl(compat_support)
 
         return {
             'compatibilities': compats,
             'queried_license': license_expression,
             'identifications': expression_full,
             'identified_license': expression_full['identified_license'],
-            'compat_license': compat_license_expression
+            'compat_license': compat_license_expression,
+            'compat_support': compat_support
         }
+
+    def validate_compatibilities_support(self, licenses):
+        compat_support = {}
+        compat_support['licenses'] = []
+        all_supported = True
+        for lic in licenses:
+            support = self.validate_compatibility_support(lic)
+            compat_support['licenses'].append({
+                'license': lic,
+                'supported': support
+            })
+            all_supported = all_supported and support
+        compat_support['supported'] = all_supported
+
+        return compat_support
+
+    def validate_compatibility_support(self, lic):
+        if not self.supported_licenses:
+            self.support_licenses = osadl_matrix.supported_licenses()
+        return lic in self.support_licenses
 
     def __validate_license_spdx(self, expr):
         """
@@ -316,3 +351,9 @@ class FossLicenses:
             lic = _lic.strip()
             if " " in lic.strip():
                 raise FlameException(f'Found license with multiple words "{lic}"')
+
+    def __validate_licenses_osadl(self, compat_supported):
+        """
+        """
+        if not compat_supported['supported']:
+            raise FlameException(f'Not all licenses supported by OSADL\'s compatibility matrix "{compat_supported}"')
