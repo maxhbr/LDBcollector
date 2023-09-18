@@ -30,6 +30,17 @@ text = '''
 text here
 '''
 
+package = mingw-winpthreads
+          mingw-headers
+location = https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/DISCLAIMER.PD
+text = '''
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the w64 mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+'''
+
 package = augeas
 location = https://github.com/hercules-team/augeas/blob/master/lenses/dpkg.aug
 text = '''
