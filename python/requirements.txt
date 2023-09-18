@@ -5,4 +5,5 @@
 jsonschema
 PyYAML
 license_expression
+osadl_matrix
 
