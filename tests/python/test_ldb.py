@@ -18,7 +18,7 @@ fl = FossLicenses(check=True, license_dir="tests/licenses", logging_level=loggin
 def test_alias_list():
     # list of all aliases
     aliases = fl.aliases_list()
-    assert len(aliases) == 5
+    assert len(aliases) == 6
 
 def test_alias_list_gpl():
     # list of all aliases with license with GPL
