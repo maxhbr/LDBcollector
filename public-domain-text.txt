@@ -853,3 +853,8 @@ test = '''
  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 '''
 
+package = openssh
+location = https://github.com/openssh/openssh-portable/blob/master/LICENCE#L101
+text = '''
+This code is hereby placed in the public domain.
+'''
