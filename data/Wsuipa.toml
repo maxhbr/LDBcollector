@@ -3,10 +3,6 @@
 expression = "Wsuipa"
 status = [ "allowed" ]
 
-url = '''
-https://fedoraproject.org/wiki/Licensing/Wsuipa
-'''
-
 [fedora]
 
 legacy-name = [

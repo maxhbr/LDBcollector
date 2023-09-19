@@ -3,10 +3,6 @@
 expression = "XSkat"
 status = [ "allowed" ]
 
-url = '''
-https://fedoraproject.org/wiki/Licensing/XSkat_License
-'''
-
 [fedora]
 
 legacy-name = [

@@ -3,10 +3,6 @@
 expression = "VSL-1.0"
 status = [ "allowed" ]
 
-url = '''
-http://opensource.org/licenses/vovidapl.php
-'''
-
 [fedora]
 
 legacy-name = [

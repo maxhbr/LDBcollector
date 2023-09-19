@@ -3,11 +3,6 @@
 expression = "zlib-acknowledgement"
 status = [ "allowed" ]
 
-url = '''
-https://fedoraproject.org/wiki/Licensing/Nunit
-https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
-'''
-
 [fedora]
 
 legacy-name = [

@@ -3,10 +3,6 @@
 expression = "VOSTROM"
 status = [ "allowed" ]
 
-url = '''
-https://fedoraproject.org/wiki/Licensing/VOSTROM
-'''
-
 [fedora]
 
 legacy-name = [

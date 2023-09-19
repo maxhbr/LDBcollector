@@ -1,9 +1,0 @@
-[license]
-
-expression = "LicenseRef-VOL-1.0"
-status = [ "not-allowed" ]
-usage = "This license does not meet Fedora's current standards because of a lack of clarity around copyleft policies."
-
-url = '''
-https://www.volatilityfoundation.org/license/vsl-v1.0
-'''

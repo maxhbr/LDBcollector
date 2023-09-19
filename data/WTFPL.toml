@@ -3,10 +3,6 @@
 expression = "WTFPL"
 status = [ "allowed" ]
 
-url = '''
-https://fedoraproject.org/wiki/Licensing/WTFPL
-'''
-
 [fedora]
 
 legacy-name = [
