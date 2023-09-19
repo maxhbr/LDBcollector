@@ -10,7 +10,8 @@
     "aliases": [
         "X11-Style (Keith Packard)",
         "scancode://x11-keith-packard",
-        "x11-keith-packard"
+        "x11-keith-packard",
+        "Keith Packard License"
     ],
     "compatibility_as": "HPND"
 }
