@@ -3,6 +3,3 @@
 expression = "X11"
 status = [ "allowed" ]
 
-url = '''
-https://spdx.org/licenses/X11.html
-'''

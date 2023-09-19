@@ -3,10 +3,6 @@
 expression = "Zend-2.0"
 status = [ "allowed" ]
 
-url = '''
-http://www.zend.com/license/2_00.txt
-'''
-
 [fedora]
 
 legacy-name = [

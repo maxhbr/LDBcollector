@@ -3,10 +3,6 @@
 expression = "Zed"
 status = [ "allowed" ]
 
-url = '''
-https://fedoraproject.org/wiki/Licensing/Zed
-'''
-
 [fedora]
 
 legacy-name = [
