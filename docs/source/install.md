@@ -107,7 +107,6 @@ poetry install
 
 ```bash
 npm install
-# or if you do not want to edit the front code
 npm run build
 ```
 
