@@ -220,13 +220,7 @@ try:
             if line.startswith("version"):
                 VERSION = line.split("=")[1].strip().strip('"')
 except FileNotFoundError:
-    try:
-        with open(os.path.join(BASE_DIR, "pyproject.toml")) as f:
-            for line in f:
-                if line.startswith("version"):
-                    VERSION = line.split("=")[1].strip().strip('"')
-    except FileNotFoundError:
-        VERSION = "Unknown"
+    VERSION = "Unknown"
 
 # Silk config
 

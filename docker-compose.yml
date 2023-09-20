@@ -22,7 +22,7 @@ services:
     build:
       context: .
     volumes:
-      - static_volume:/opt/static
+      - static_volume:/opt/hermine/static
     environment:
       - DJANGO_PORT=8080
       - POSTGRES_NAME=postgres
@@ -34,7 +34,7 @@ services:
       - SUPERUSER=admin
       - PASSWORD=admin
       - HOST=${HERMINE_HOST:-localhost}
-      - STATIC_ROOT=/opt/static
+      - STATIC_ROOT=/opt/hermine/static
       - ENABLE_PROFILING=${HERMINE_PROFILING:-False}
       - PRODUCTION=${HERMINE_PRODUCTION:-True}
     links:

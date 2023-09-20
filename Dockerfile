@@ -13,23 +13,21 @@
 # install node on the runtime image
 FROM node:latest as build
 
-ARG APP_NAME=hermine
-ARG APP_PATH=/opt/$APP_NAME
+ARG BUILD_PATH=/opt/hermine
 
-WORKDIR $APP_PATH
+WORKDIR $BUILD_PATH
 
-COPY package.json package-lock.json $APP_PATH/
+COPY package.json package-lock.json $BUILD_PATH/
 RUN npm ci
 
-COPY . $APP_PATH
+COPY . $BUILD_PATH
 RUN npm run build
 
 
 FROM bitnami/python:3.10 as runtime
 
-ARG APP_NAME=hermine
-ARG APP_PATH=/opt/$APP_NAME
-ARG POETRY_VERSION=1.4.1
+ARG INSTALL_PATH=/opt/hermine
+ARG POETRY_VERSION=1.6.1
 
 ENV \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -41,24 +39,24 @@ ENV \
     POETRY_VIRTUALENVS_IN_PROJECT=true \
     POETRY_NO_INTERACTION=1
 
-WORKDIR $APP_PATH
+WORKDIR $INSTALL_PATH
 
 # debug
 RUN apt update && apt install -y postgresql-client net-tools
 
 # install poetry and dependencies
 RUN pip install "poetry==$POETRY_VERSION" gunicorn
-COPY pyproject.toml poetry.lock $APP_PATH/
+COPY pyproject.toml poetry.lock $INSTALL_PATH/
 RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi --without dev
 
-COPY hermine $APP_PATH/
+COPY hermine $INSTALL_PATH/hermine
 # copy node modules
-COPY --from=build $APP_PATH/hermine/vite_modules/dist $APP_PATH/vite_modules/dist
+COPY --from=build $INSTALL_PATH/hermine/vite_modules/dist $INSTALL_PATH/hermine/vite_modules/dist
 
 # COPY shared.json $APP_PATH/
-COPY docker/docker-entrypoint.sh $APP_PATH/
-COPY docker/config.py $APP_PATH/hermine/config.py
+COPY docker/docker-entrypoint.sh $INSTALL_PATH/
+COPY docker/config.py $INSTALL_PATH/hermine/hermine/config.py
 
 EXPOSE $DJANGO_PORT
 
@@ -66,4 +64,5 @@ EXPOSE $DJANGO_PORT
 # RUN if [ -f shared.json ]; then $APP_PATH/manage.py init_shared_data shared.json; fi
 
 # run entrypoint.sh
+WORKDIR $INSTALL_PATH/hermine
 ENTRYPOINT /opt/hermine/docker-entrypoint.sh
