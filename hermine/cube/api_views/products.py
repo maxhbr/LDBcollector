@@ -44,21 +44,12 @@ from cube.utils.release_validation import (
 
 
 class ProductViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows products to be viewed or edited
-    """
-
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = "id"
 
 
 class ReleaseViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows releases to be viewed or edited, and to check
-    validation steps.
-    """
-
     serializer_class = ReleaseSerializer
     lookup_field = "id"
 
@@ -216,13 +207,15 @@ class ReleaseViewSet(viewsets.ModelViewSet):
                 },
             )
         },
-        operation_description="Returns an XML JUnit report, with one testsuite in which is validation step is a testcase.",
     )
     @action(
         detail=True,
         methods=["get"],
     )
     def junit(self, request, **kwargs):
+        """
+        Returns a JUnit report for the validation steps of the release.
+        """
         release = self.get_object()
         apply_curations(release)
 
@@ -280,6 +273,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     )
     @action(detail=True, methods=["get"])
     def obligations(self, pk, **kwargs):
+        """
+        Returns the obligations (generic and license specific) of the release.
+        """
         usages = self.get_object().usage_set.all()
         generics_involved, specifics, licenses_involved = get_usages_obligations(usages)
         response = {
@@ -295,6 +291,9 @@ class ReleaseViewSet(viewsets.ModelViewSet):
     )
     @action(detail=True, methods=["get"])
     def licenses(self, pk, **kwargs):
+        """
+        List license involved in the release, grouped by project / scope / exploitation.
+        """
         usages = sorted(
             self.get_object().usage_set.all(),
             key=lambda u: (u.project, u.scope, u.exploitation),
@@ -373,14 +372,11 @@ class ExploitationViewSet(viewsets.ModelViewSet):
 
 
 class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
-    """
-    API endpoint that allows to upload an SPDX file to Hermine.
-    """
-
     serializer_class = UploadSPDXSerializer
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
+        """Upload an SPDX file to Hermine."""
         return super().create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
@@ -396,14 +392,11 @@ class UploadSPDXViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
 
 class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
-    """
-    API endpoint that allows to upload an ORT output file to Hermine.
-    """
-
     serializer_class = UploadORTSerializer
 
     @swagger_auto_schema(responses={201: "Created"})
     def create(self, request, *args, **kwargs):
+        """Upload an ORT Evaluated model file to Hermine."""
         return super().create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
