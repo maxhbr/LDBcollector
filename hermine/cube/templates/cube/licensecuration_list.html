@@ -21,7 +21,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
     <span>Create a new curation</span>
   </a>
   {% if perms.cube.export_licensecuration %}
-    <a class="button" href="{% url 'cube:licensecurations_export'%}">
+    <a class="button" href="{% url 'cube:licensecuration_export'%}">
       <span class="icon">
         <i class="fas fa-file-export"></i>
       </span>
@@ -71,7 +71,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
             {% endif %}
             {% if perms.cube.export_licensecuration %}
               {% if curation.component or curation.version %}
-                <a href="{%url 'cube:licensecuration_export' curation.id %}"><i class="fa fa-download"></i></a></td>
+                <a href="{%url 'cube:licensecuration_single_export' curation.id %}"><i class="fa fa-download"></i></a></td>
               {% endif %}
             {% endif %}
           </tr>

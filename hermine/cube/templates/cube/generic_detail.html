@@ -12,14 +12,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:generics' %}">Generic obligations</a></li>
+    <li><a href="{% url 'cube:generic_list' %}">Generic obligations</a></li>
     <li>{{ generic.name|truncatechars:42 }}</li>
   </ul>
 {% endblock %}
 
 {% block actions %}
   {% if perms.cube.change_generic %}
-    <a class="button" href="{% url "cube:generic_edit" generic.id %}">
+    <a class="button" href="{% url "cube:generic_update" generic.id %}">
       <span class="icon">
         <i class="fas fa-edit"></i>
       </span>
@@ -129,7 +129,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <div class="level-right">
               <div class="level-item">
                 <p>
-                  <a href="{% url "cube:license" obligation.license.id %}">
+                  <a href="{% url "cube:license_detail" obligation.license.id %}">
                     <span class="tag {{ obligation.license|licenseAllowedCSS }}">
                       <i class="fas fa-balance-scale"> </i> . {{ obligation.license.spdx_id }}
                     </span>

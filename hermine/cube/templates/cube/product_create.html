@@ -6,20 +6,19 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% extends "cube/cube.html" %}
 {% load cube_tags %}
 
-{% block title %}Edit Category{% endblock %}
+{% block title %}Create Product{% endblock %}
 
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:categories'%}">Categories</a></li>
-    <li><a href="{% url 'cube:category_detail' object.id%}">{{ object.name }}</a></li>
-    <li>Edit</li>
+    <li><a href="{% url 'cube:product_list' %}">Products</a></li>
+    <li>New product</li>
   </ul>
 {% endblock %}
 
 {% block herozone %}
   <div class="hero-body">
-    <p class="title">Edit category</p>
+    <p class="title">Create a new product</p>
   </div>
 {% endblock %}
 
@@ -28,14 +27,13 @@ SPDX-License-Identifier: AGPL-3.0-only
     <span class="icon is-medium">
       <i class="fas fa-cubes"></i>
     </span>
-    Category
+    Product
   </p>
 {% endblock %}
 
 {% block content %}
   {% include "cube/includes/table_form.html" %}
 {% endblock %}
-
 
 
 

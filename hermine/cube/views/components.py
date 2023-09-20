@@ -35,7 +35,9 @@ class ComponentListView(
         return context
 
 
-class PopularListView(LoginRequiredMixin, PermissionRequiredMixin, generic.ListView):
+class ComponentPopularListView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.ListView
+):
     permission_required = "cube.view_component"
     model = Component
     template_name = "cube/component_popular.html"
@@ -50,7 +52,7 @@ class ComponentDetailView(
     LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
 ):
     permission_required = "cube.view_component"
-    template_name = "cube/component.html"
+    template_name = "cube/component_detail.html"
     model = Component
 
 
@@ -89,7 +91,7 @@ class LicenseCurationCreateView(
     model = LicenseCuration
     template_name = "cube/licensecuration_form.html"
     form_class = LicenseCurationCreateForm
-    success_url = reverse_lazy("cube:licensecurations")
+    success_url = reverse_lazy("cube:licensecuration_list")
 
 
 class LicenseCurationUpdateView(
@@ -103,7 +105,7 @@ class LicenseCurationUpdateView(
     model = LicenseCuration
     template_name = "cube/licensecuration_form.html"
     form_class = LicenseCurationUpdateForm
-    success_url = reverse_lazy("cube:licensecurations")
+    success_url = reverse_lazy("cube:licensecuration_list")
 
 
 @login_required

@@ -14,7 +14,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 {% endblock %}
 
 {% block actions %}
-  <a class="button is-info is-inverted" href="{% url 'cube:licensechoice_add'%}">
+  <a class="button is-info is-inverted" href="{% url 'cube:licensechoice_create'%}">
     <span class="icon">
       <i class="fas fa-plus"></i>
     </span>
@@ -52,7 +52,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
           <td>{{ rule.updated }} ({{ rule.author|default:"<em>author unknown</em>" }})</td>
           <td>
             {% if perms.cube.change_licensechoice %}
-              <a href="{%url 'cube:licensechoice_change' rule.id %}"><i class="far fa-edit"></i></a>
+              <a href="{%url 'cube:licensechoice_update' rule.id %}"><i class="far fa-edit"></i></a>
             {% endif %}
           </td>
         </tr>

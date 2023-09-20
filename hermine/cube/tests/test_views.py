@@ -21,19 +21,19 @@ from .mixins import ForceLoginMixin
 class UnauthenticatedTestCase(TestCase):
     fixtures = ["test_data.json"]
     urls = [
-        reverse("cube:root"),
-        reverse("cube:products"),
+        reverse("cube:dashboard"),
+        reverse("cube:product_list"),
         reverse("cube:product_detail", kwargs={"pk": 1}),
-        reverse("cube:components"),
+        reverse("cube:component_list"),
         reverse("cube:component_detail", kwargs={"pk": 2}),
         reverse("cube:release_validation", kwargs={"pk": 1}),
         reverse("cube:release_summary", kwargs={"release_pk": 1}),
         reverse("cube:release_bom", kwargs={"release_pk": 1}),
         reverse("cube:release_bom_export", kwargs={"pk": 1}),
-        reverse("cube:licenses"),
-        reverse("cube:license", kwargs={"pk": 3}),
-        reverse("cube:generics"),
-        reverse("cube:generic", kwargs={"pk": 1}),
+        reverse("cube:license_list"),
+        reverse("cube:license_detail", kwargs={"pk": 3}),
+        reverse("cube:generic_list"),
+        reverse("cube:generic_detail", kwargs={"pk": 1}),
     ]
 
     def test_protected_views(self):
@@ -61,7 +61,7 @@ class ProductViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_products_view(self):
-        url = reverse("cube:products")
+        url = reverse("cube:product_list")
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "test_product")
@@ -77,7 +77,7 @@ class ComponentViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_components_view(self):
-        url = reverse("cube:components")
+        url = reverse("cube:component_list")
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "3rd Party Components")
@@ -95,7 +95,7 @@ class LicenseViewsTestCase(ForceLoginMixin, TestCase):
     fixtures = ["test_data.json"]
 
     def test_license_details_display_obligations(self):
-        res = self.client.get(reverse("cube:license", args=[3]))
+        res = self.client.get(reverse("cube:license_detail", args=[3]))
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "Test License Distribution Unmodified")
 

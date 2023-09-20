@@ -64,13 +64,13 @@ class ReleaseSummaryView(
     permission_required = "cube.view_release"
 
 
-class ReleaseEditView(
+class ReleaseUpdateView(
     LoginRequiredMixin, PermissionRequiredMixin, QuerySuccessUrlMixin, UpdateView
 ):
     model = Release
     fields = ["product", "release_number", "commit", "ship_status"]
     permission_required = "cube.change_release"
-    template_name = "cube/release_edit.html"
+    template_name = "cube/release_update.html"
 
 
 class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
@@ -121,13 +121,15 @@ class ReleaseImportView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
         return super().form_valid(form)
 
 
-class ReleaseObligView(LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView):
+class ReleaseObligationsView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.DetailView
+):
     """
     Lists relevant obligations for a given release
     """
 
     model = Release
-    template_name = "cube/release_oblig.html"
+    template_name = "cube/release_obligations.html"
     permission_required = "cube.view_release"
 
     def get_context_data(self, **kwargs):
@@ -277,7 +279,6 @@ class UsageDeleteView(
 ):
     permission_required = "cube.delete_usage"
     model = Usage
-    template_name = "cube/usage_delete.html"
 
     def get_default_success_url(self):
         return reverse(

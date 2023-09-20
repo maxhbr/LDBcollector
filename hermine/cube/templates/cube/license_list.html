@@ -16,7 +16,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% endblock %}
 {% block actions %}
   {% if perms.cube.import_license %}
-    <form class="import_licenses" id="import_licenses" enctype="multipart/form-data" action="{% url 'cube:licenses' %}" method="post">
+    <form class="import_licenses" id="import_licenses" enctype="multipart/form-data" action="{% url 'cube:license_list' %}" method="post">
       {% csrf_token %}
       <div class="field has-addons">
         <p class="control">
@@ -43,14 +43,14 @@ SPDX-License-Identifier: AGPL-3.0-only
     <div class="dropdown-menu" id="dropdown-menu" role="menu">
       <div class="dropdown-content">
         {% if perms.cube.export_license %}
-          <a href="{% url 'cube:export_licenses' %}" class="dropdown-item">
+          <a href="{% url 'cube:license_export' %}" class="dropdown-item">
             <span class="icon is-small">
               <i class="fas fa-file-export"></i>
             </span>
             <span>Export licenses as JSON</span>
           </a>
         {% endif %}
-        <a href="{% url 'cube:license_add' %}" class="dropdown-item">
+        <a href="{% url 'cube:license_create' %}" class="dropdown-item">
           <span class="icon is-small">
             <i class="fas fa-plus"></i>
           </span>
@@ -106,9 +106,9 @@ SPDX-License-Identifier: AGPL-3.0-only
             <tbody>
               {% for license in licenses %}
                 <tr>
-                  <td><a href="{% url 'cube:license' license.id %}" >{{ license.spdx_id }}</a></td>
+                  <td><a href="{% url 'cube:license_detail' license.id %}" >{{ license.spdx_id }}</a></td>
                   <td>
-                    <a href="{% url 'cube:license' license.id %}" >{{ license.long_name }}</a></td>
+                    <a href="{% url 'cube:license_detail' license.id %}" >{{ license.long_name }}</a></td>
                   <td>
                     <span class="tag {{ license | licenseAllowedCSS }}">
                       {{ license.get_allowed_display }}

@@ -12,14 +12,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:components' %}">Components</a></li>
+    <li><a href="{% url 'cube:component_list' %}">Components</a></li>
     <li>{{ object.name }}</li>
   </ul>
 {% endblock %}
 
 {% block actions %}
   {% if perms.cube.change_component %}
-    <a class="button" href="{% url "cube:component_edit" object.id %}" target="_blank">
+    <a class="button" href="{% url "cube:component_update" object.id %}" target="_blank">
       <span class="icon">
         <i class="fas fa-edit"></i>
       </span>

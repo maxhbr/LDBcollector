@@ -13,7 +13,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     <li>Hermine</li>
     <li><a href="{% url 'cube:product_detail' release.product.id %}">{{ release.product.name }}</a></li>
     <li><a href="{% url 'cube:release_summary' release.id %}">{{release.release_number}}</a></li>
-    <li><a href="{% url 'cube:release_oblig' release.id %}">Obligations</a></li>
+    <li><a href="{% url 'cube:release_obligations' release.id %}">Obligations</a></li>
   </ul>
 {% endblock %}
 {% block herozone %}
@@ -61,7 +61,7 @@ SPDX-License-Identifier: AGPL-3.0-only
               </span>
             {% endfor %}
             </td>
-            <td><a href="{% url 'cube:usage_edit' usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
+            <td><a href="{% url 'cube:usage_update' usage.id %}?from={{ request.path|urlencode }}"><span class="icon"><i class="fas fa-edit"></i></span></a></td>
           </tr>
         {% endfor %}
       </tbody>

@@ -16,7 +16,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
 
 {% block actions %}
   {% if perms.cube.add_product %}
-    <a class="button is-info is-inverted" href="{% url 'cube:product_add'%}">
+    <a class="button is-info is-inverted" href="{% url 'cube:product_create'%}">
       <span class="icon">
         <i class="fas fa-plus"></i>
       </span>
@@ -55,7 +55,7 @@ SPDX-License-Identifier: AGPL-3.0-only -->
           <td>{{product.owner}}</td>
           <td>{{product.releases.all|length}}</td>
           <td><a href="{% url 'cube:product_detail' product.id %}"><i class="fas fa-info-circle"></i></a>
-            {% if perms.cube.change_product %} | <a href="{% url "cube:product_edit" product.id %}" target="_blank"><i class="far fa-edit"></i></a>{% endif %}
+            {% if perms.cube.change_product %} | <a href="{% url "cube:product_update" product.id %}" target="_blank"><i class="far fa-edit"></i></a>{% endif %}
           </td>
         </tr>
       {% endfor %}

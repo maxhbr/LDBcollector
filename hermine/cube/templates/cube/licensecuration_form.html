@@ -7,7 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:licensecurations' %}">Curations</a></li>
+    <li><a href="{% url 'cube:licensecuration_list' %}">Curations</a></li>
     <li>{% if object %}{{object.version|default:object.component}}{% else %}Add{% endif %}</li>
   </ul>
 {% endblock %}

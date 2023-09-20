@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:products'%}">Products</a></li>
+    <li><a href="{% url 'cube:product_list' %}">Products</a></li>
     <li><a href="{% url 'cube:product_detail' object.id%}">{{ object.name }}</a></li>
     <li>Edit</li>
   </ul>

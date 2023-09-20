@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
 from django.views import generic
 
@@ -29,18 +30,22 @@ class ProductDetailView(
     template_name = "cube/product_detail.html"
 
 
-class ProductAddView(LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView):
+class ProductCreateView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView
+):
     permission_required = "cube.add_product"
     fields = "__all__"
     model = Product
-    template_name = "cube/product_add.html"
+    template_name = "cube/product_create.html"
 
 
-class ProductEditView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
+class ProductUpdateView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView
+):
     permission_required = "cube.change_product"
     fields = "__all__"
     model = Product
-    template_name = "cube/product_edit.html"
+    template_name = "cube/product_update.html"
 
 
 class ProductDeleteView(
@@ -48,8 +53,7 @@ class ProductDeleteView(
 ):
     permission_required = "cube.delete_product"
     model = Product
-    template_name = "cube/product_delete.html"
-    success_url = reverse_lazy("cube:products")
+    success_url = reverse_lazy("cube:product_list")
 
 
 class ReleaseCreateView(
@@ -58,15 +62,20 @@ class ReleaseCreateView(
     permission_required = "cube.add_release"
     fields = ["release_number"]
     model = Release
-    template_name = "cube/release_add.html"
+    template_name = "cube/release_create.html"
+    product = None
 
     def form_valid(self, form):
-        form.instance.product = Product.objects.get(id=self.kwargs["product_pk"])
+        form.instance.product = self.product
         return super().form_valid(form)
+
+    def dispatch(self, request, *args, **kwargs):
+        self.product = get_object_or_404(Product, id=self.kwargs["product_pk"])
+        return super().dispatch(request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["product"] = Product.objects.get(id=self.kwargs["product_pk"])
+        context["product"] = self.product
         return context
 
 
@@ -82,15 +91,19 @@ class CategoryDetailView(
     model = Category
 
 
-class CategoryAddView(LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView):
+class CategoryCreateView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView
+):
     permission_required = "cube.add_category"
     fields = "__all__"
     model = Category
-    template_name = "cube/category_add.html"
+    template_name = "cube/category_create.html"
 
 
-class CategoryEditView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
+class CategoryUpdateView(
+    LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView
+):
     permission_required = "cube.change_category"
     fields = "__all__"
     model = Category
-    template_name = "cube/category_edit.html"
+    template_name = "cube/category_update.html"

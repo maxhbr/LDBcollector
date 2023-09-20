@@ -39,7 +39,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
   <h2 class="title is-2">Licenses involved in this release</h2>
   <p>{% for license_involved in licenses_involved %}
-    <a href="{% url "cube:license" license_involved.id %}"><span class="tag {{ license_involved|licenseAllowedCSS }}">{{ license_involved.spdx_id }}</span></a>
+    <a href="{% url "cube:license_detail" license_involved.id %}"><span class="tag {{ license_involved|licenseAllowedCSS }}">{{ license_involved.spdx_id }}</span></a>
   {% endfor %}
   </p>
   <h2 class="title is-2">List of generic obligations to follow</h2>
@@ -63,7 +63,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <span class="tag is-danger"> Not in core</span>
           {% endif %}
           </td>
-          <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
+          <td><a href="{% url 'cube:generic_detail' generic.id %}">{{generic.name}}</a></td>
           <td>{{generic.team.name}}</td>
           <td>{{generic.metacategory}}</td>
           <td>{{generic.passivity}}</td>

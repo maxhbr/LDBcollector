@@ -61,7 +61,7 @@ SPDX-License-Identifier: MIT
           <p class="menu-label">General</p>
           <ul class="menu-list">
             <li>
-              <a href="{% url 'cube:root' %}" class="has-icon">
+              <a href="{% url 'cube:dashboard' %}" class="has-icon">
                 <span class="icon"><i class="fas fa-chart-pie"></i></span>
                 <span class="menu-item-label">Dashboard</span>
               </a>
@@ -82,14 +82,14 @@ SPDX-License-Identifier: MIT
                   <ul>
                     {% if perms.cube.view_product %}
                       <li>
-                        <a href="{% url 'cube:products' %}">
+                        <a href="{% url 'cube:product_list' %}">
                           <span>All products</span>
                         </a>
                       </li>
                     {% endif %}
                     {% if perms.cube.view_category %}
                       <li>
-                        <a href="{% url 'cube:categories' %}">
+                        <a href="{% url 'cube:category_list' %}">
                           <span>Product categories</span>
                         </a>
                       </li>
@@ -109,19 +109,19 @@ SPDX-License-Identifier: MIT
                   <ul>
                     {% if perms.cube.view_component %}
                       <li>
-                        <a href="{% url 'cube:components' %}">
+                        <a href="{% url 'cube:component_list' %}">
                           <span>Complete List</span>
                         </a>
                       </li>
                       <li>
-                        <a href="{% url 'cube:populars' %}">
+                        <a href="{% url 'cube:component_populars' %}">
                           <span>Most used ones</span>
                         </a>
                       </li>
                     {% endif %}
                     {% if perms.cube.view_licensecuration %}
                       <li>
-                        <a href="{% url 'cube:licensecurations' %}">
+                        <a href="{% url 'cube:licensecuration_list' %}">
                           <span>Curations</span>
                         </a>
                       </li>
@@ -136,7 +136,7 @@ SPDX-License-Identifier: MIT
           <ul class="menu-list">
             {% if perms.cube.view_license %}
               <li>
-                <a href="{% url 'cube:licenses' %}" class="has-icon">
+                <a href="{% url 'cube:license_list' %}" class="has-icon">
                   <span class="icon">
                     <i class="fas fa-balance-scale">
                     </i>
@@ -148,7 +148,7 @@ SPDX-License-Identifier: MIT
             {% endif %}
             {% if perms.cube.view_generic %}
               <li>
-                <a href="{% url 'cube:generics' %}" class=" has-icon">
+                <a href="{% url 'cube:generic_list' %}" class=" has-icon">
                   <span class="icon">
                     <i class="fas fa-award">
                     </i>
@@ -160,7 +160,7 @@ SPDX-License-Identifier: MIT
             {% endif %}
             {% if perms.cube.view_derogation %}
               <li>
-                <a href="{% url 'cube:authorized_context_list' %}" class=" has-icon">
+                <a href="{% url 'cube:authorizedcontext_list' %}" class=" has-icon">
                   <span class="icon">
                     <i class="fas fa-clipboard-check">
                     </i>
@@ -170,7 +170,7 @@ SPDX-License-Identifier: MIT
                 </a>
               </li>
               <li>
-                <a href="{% url 'cube:derogations' %}" class=" has-icon">
+                <a href="{% url 'cube:derogation_list' %}" class=" has-icon">
                   <span class="icon">
                     <i class="fas fa-clipboard-check">
                     </i>
@@ -182,7 +182,7 @@ SPDX-License-Identifier: MIT
             {% endif %}
             {% if perms.cube.view_licensechoice %}
               <li>
-                <a href="{% url 'cube:licensechoices' %}" class=" has-icon">
+                <a href="{% url 'cube:licensechoice_list' %}" class=" has-icon">
                   <span class="icon">
                     <i class="fas fa-project-diagram">
                     </i>

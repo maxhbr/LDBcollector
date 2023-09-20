@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:products'%}">Products</a></li>
+    <li><a href="{% url 'cube:product_list' %}">Products</a></li>
     <li>{{ product.name }}</li>
   </ul>
 {% endblock %}
@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </a>
   {% endif %}
   {% if perms.cube.change_product %}
-    <a class="button" href="{% url "cube:product_edit" product.id %}">
+    <a class="button" href="{% url "cube:product_update" product.id %}">
       <span class="icon">
         <i class="fas fa-edit"></i>
       </span>
@@ -33,7 +33,7 @@ SPDX-License-Identifier: AGPL-3.0-only
     </a>
   {% endif %}
   {% if perms.cube.add_release %}
-    <a class="button is-info is-inverted" href="{% url 'cube:release_add' product.id %} ">
+    <a class="button is-info is-inverted" href="{% url 'cube:release_create' product.id %} ">
       <span class="icon"><i class="fas fa-plus"></i></span>
       <span>Create a release for this product</span>
     </a>
@@ -103,7 +103,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>
               <a href="{% url 'cube:release_summary' release.id %}"><i class="fas fa-info-circle"></i></a> |
               <a href="{%  url 'cube:release_import' release.id %}"><i class="fas fa-upload"></i></a> |
-              <a href="{% url 'cube:release_edit' release.id %}?from={{ request.path|urlencode }}"><i class="far fa-edit"></i></a>
+              <a href="{% url 'cube:release_update' release.id %}?from={{ request.path|urlencode }}"><i class="far fa-edit"></i></a>
             </td>
           </tr>
         {% endfor %}
