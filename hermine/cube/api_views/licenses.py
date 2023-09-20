@@ -4,7 +4,9 @@
 from itertools import groupby
 
 from django.shortcuts import get_object_or_404
+from django.utils.decorators import method_decorator
 from django_filters import rest_framework as filters
+from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
@@ -25,6 +27,30 @@ from cube.utils.licenses import (
 )
 
 
+license_id_param = openapi.Parameter(
+    "id",
+    openapi.IN_PATH,
+    type=openapi.TYPE_STRING,
+    description="License SPDX id or database id",
+)
+
+
+@method_decorator(
+    name="retrieve",
+    decorator=swagger_auto_schema(manual_parameters=[license_id_param]),
+)
+@method_decorator(
+    name="update",
+    decorator=swagger_auto_schema(manual_parameters=[license_id_param]),
+)
+@method_decorator(
+    name="partial_update",
+    decorator=swagger_auto_schema(manual_parameters=[license_id_param]),
+)
+@method_decorator(
+    name="destroy",
+    decorator=swagger_auto_schema(manual_parameters=[license_id_param]),
+)
 class LicenseViewSet(viewsets.ModelViewSet):
     serializer_class = LicenseSerializer
     queryset = License.objects.all()
