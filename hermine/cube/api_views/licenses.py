@@ -198,24 +198,37 @@ class ObligationViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         if (license_id := self.kwargs.get("nested_1_id")) is not None:
-            return Obligation.objects.filter(license__id=license_id)
+            if license_id.isdigit():
+                lic = get_object_or_404(License, id=license_id)
+            else:
+                lic = get_object_or_404(License, spdx_id=license_id)
+
+            return lic.obligation_set.all()
 
         return Obligation.objects.all()
 
     def get_serializer_class(self):
-        if self.kwargs.get("nested_1_id", None) is not None:
+        if self.kwargs.get("nested_1_id") is not None:
             return LicenseObligationSerializer
         return ObligationSerializer
 
     def perform_create(self, serializer):
         if (license_id := self.kwargs.get("nested_1_id")) is not None:
-            serializer.save(license=License.objects.get(id=license_id))
+            if license_id.isdigit():
+                lic = get_object_or_404(License, id=license_id)
+            else:
+                lic = get_object_or_404(License, spdx_id=license_id)
+            serializer.save(license=lic)
         else:
             super().perform_create(serializer)
 
     def perform_update(self, serializer):
         if (license_id := self.kwargs.get("nested_1_id")) is not None:
-            serializer.save(license=License.objects.get(id=license_id))
+            if license_id.isdigit():
+                lic = get_object_or_404(License, id=license_id)
+            else:
+                lic = get_object_or_404(License, spdx_id=license_id)
+            serializer.save(license=lic)
         else:
             super().perform_update(serializer)
 
