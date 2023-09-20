@@ -3,7 +3,10 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from itertools import groupby
 
+from django.shortcuts import get_object_or_404
+from django.utils.decorators import method_decorator
 from django_filters import rest_framework as filters
+from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
@@ -24,25 +27,52 @@ from cube.utils.licenses import (
 )
 
 
+license_id_param = openapi.Parameter(
+    "id",
+    openapi.IN_PATH,
+    type=openapi.TYPE_STRING,
+    description="License SPDX id or database id",
+)
+
+
+@method_decorator(
+    name="retrieve",
+    decorator=swagger_auto_schema(manual_parameters=[license_id_param]),
+)
+@method_decorator(
+    name="update",
+    decorator=swagger_auto_schema(manual_parameters=[license_id_param]),
+)
+@method_decorator(
+    name="partial_update",
+    decorator=swagger_auto_schema(manual_parameters=[license_id_param]),
+)
+@method_decorator(
+    name="destroy",
+    decorator=swagger_auto_schema(manual_parameters=[license_id_param]),
+)
 class LicenseViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows licenses to be viewed or edited.
-    Can be filtered by SPDX ID (`?spdx_id=MIT` for example).
-    """
-
-    def get_queryset(self):
-        """
-        Optionally restricts the returned licences to a given spdx_id,
-        by filtering against a `spdx_id` query parameter in the URL.
-        """
-        queryset = License.objects.all()
-        spdx_id = self.request.query_params.get("spdx_id")
-        if spdx_id is not None:
-            queryset = queryset.filter(spdx_id=spdx_id)
-        return queryset
-
     serializer_class = LicenseSerializer
-    lookup_field = "id"
+    queryset = License.objects.all()
+    lookup_url_kwarg = "id"
+    lookup_value_regex = "[^/]+"
+    lookup_field = "spdx_id"
+
+    def get_object(self):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        lookup_id = self.kwargs.get(self.lookup_url_kwarg)
+
+        # check if id is a number or a string
+        if lookup_id.isdigit():
+            obj = get_object_or_404(queryset, id=lookup_id)
+        else:
+            obj = get_object_or_404(queryset, spdx_id=lookup_id)
+
+        # May raise a permission denied
+        self.check_object_permissions(self.request, obj)
+
+        return obj
 
 
 class SPDXFilter(filters.BaseInFilter, filters.ModelChoiceFilter):
@@ -168,24 +198,37 @@ class ObligationViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         if (license_id := self.kwargs.get("nested_1_id")) is not None:
-            return Obligation.objects.filter(license__id=license_id)
+            if license_id.isdigit():
+                lic = get_object_or_404(License, id=license_id)
+            else:
+                lic = get_object_or_404(License, spdx_id=license_id)
+
+            return lic.obligation_set.all()
 
         return Obligation.objects.all()
 
     def get_serializer_class(self):
-        if self.kwargs.get("nested_1_id", None) is not None:
+        if self.kwargs.get("nested_1_id") is not None:
             return LicenseObligationSerializer
         return ObligationSerializer
 
     def perform_create(self, serializer):
         if (license_id := self.kwargs.get("nested_1_id")) is not None:
-            serializer.save(license=License.objects.get(id=license_id))
+            if license_id.isdigit():
+                lic = get_object_or_404(License, id=license_id)
+            else:
+                lic = get_object_or_404(License, spdx_id=license_id)
+            serializer.save(license=lic)
         else:
             super().perform_create(serializer)
 
     def perform_update(self, serializer):
         if (license_id := self.kwargs.get("nested_1_id")) is not None:
-            serializer.save(license=License.objects.get(id=license_id))
+            if license_id.isdigit():
+                lic = get_object_or_404(License, id=license_id)
+            else:
+                lic = get_object_or_404(License, spdx_id=license_id)
+            serializer.save(license=lic)
         else:
             super().perform_update(serializer)
 
