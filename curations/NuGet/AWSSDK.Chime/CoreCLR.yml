@@ -1,0 +1,5 @@
+- id: "NuGet:AWSSDK.Chime:CoreCLR:[3.3.397,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/src/Services/Chime"

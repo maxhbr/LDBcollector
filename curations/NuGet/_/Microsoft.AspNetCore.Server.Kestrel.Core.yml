@@ -1,5 +1,0 @@
-- id: "NuGet::Microsoft.AspNetCore.Server.Kestrel.Core:[2.1.7,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "src/Servers/Kestrel/Core/src"

@@ -1,5 +1,0 @@
-- id: "NuGet::Microsoft.Azure.Management.DataBoxEdge:"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "sdk/databoxedge/Microsoft.Azure.Management.DataBoxEdge"

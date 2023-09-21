@@ -1,5 +1,0 @@
-- id: "NuGet::Azure.IoT.ModelsRepository:"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "sdk/modelsrepository/Azure.IoT.ModelsRepository"

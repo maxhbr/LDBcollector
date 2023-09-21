@@ -1,5 +1,0 @@
-- id: "NuGet::Microsoft.AspNetCore.DataProtection.StackExchangeRedis:[2.2.0,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "src/DataProtection/StackExchangeRedis/src"

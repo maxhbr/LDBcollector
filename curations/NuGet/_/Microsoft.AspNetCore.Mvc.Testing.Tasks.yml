@@ -1,5 +1,0 @@
-- id: "NuGet::Microsoft.AspNetCore.Mvc.Testing.Tasks:[6.0.0,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "src/Mvc/Mvc.Testing.Tasks/src"

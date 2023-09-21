@@ -1,5 +1,0 @@
-- id: "NuGet::Microsoft.AspNet.WebApi.Client"
-  curations:
-    comment: "Set the VCS URL, found in the metadata of newer versions of the package."
-    vcs:
-      url: "https://github.com/aspnet/AspNetWebStack.git"

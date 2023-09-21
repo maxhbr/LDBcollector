@@ -1,0 +1,10 @@
+- id: "NuGet:Microsoft.AspNetCore:All:[2.0.3,2.1.5]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Microsoft.AspNetCore.All"
+- id: "NuGet:Microsoft.AspNetCore:All:[2.1.6,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Packages/Microsoft.AspNetCore.All"

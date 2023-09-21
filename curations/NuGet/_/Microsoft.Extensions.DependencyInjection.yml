@@ -1,5 +1,0 @@
-- id: "NuGet::Microsoft.Extensions.DependencyInjection:[5.0.0,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "src/libraries/Microsoft.Extensions.DependencyInjection"

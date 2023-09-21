@@ -1,5 +1,0 @@
-- id: "NuGet::AWSSDK.EC2InstanceConnect.PCL:[3.3.541,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "sdk/src/Services/EC2InstanceConnect"

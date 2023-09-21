@@ -1,0 +1,5 @@
+- id: "NuGet:Microsoft.AspNetCore:Components.WebAssembly.Build.BrotliCompression:[3.1.6,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Components/WebAssembly/Compression/src"

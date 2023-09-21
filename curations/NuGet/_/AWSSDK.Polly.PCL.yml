@@ -1,5 +1,0 @@
-- id: "NuGet::AWSSDK.Polly.PCL:[3.3.26,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "sdk/src/Services/Polly"

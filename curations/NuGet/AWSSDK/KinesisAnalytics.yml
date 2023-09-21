@@ -1,0 +1,5 @@
+- id: "NuGet:AWSSDK:KinesisAnalytics:[3.1.92,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "sdk/src/Services/KinesisAnalytics"

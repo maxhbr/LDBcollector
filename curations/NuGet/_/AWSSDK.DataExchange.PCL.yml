@@ -1,5 +1,0 @@
-- id: "NuGet::AWSSDK.DataExchange.PCL:[3.3.630,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "sdk/src/Services/DataExchange"

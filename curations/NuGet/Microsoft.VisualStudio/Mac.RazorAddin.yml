@@ -1,0 +1,5 @@
+- id: "NuGet:Microsoft.VisualStudio:Mac.RazorAddin:[2.1.7,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/tooling/Microsoft.VisualStudio.Mac.RazorAddin"

@@ -1,0 +1,20 @@
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Cors:[2.1.7,2.1.8]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/src/Microsoft.AspNetCore.Mvc.Cors"
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Cors:[2.1.9,2.1.31]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/Mvc.Cors/src"
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Cors:[2.2.1,2.2.2]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/src/Microsoft.AspNetCore.Mvc.Cors"
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Cors:[2.2.3,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Mvc/Mvc.Cors/src"

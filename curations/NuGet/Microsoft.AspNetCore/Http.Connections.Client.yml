@@ -1,0 +1,20 @@
+- id: "NuGet:Microsoft.AspNetCore:Http.Connections.Client:2.1.7"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/SignalR/src/Microsoft.AspNetCore.Http.Connections.Client"
+- id: "NuGet:Microsoft.AspNetCore:Http.Connections.Client:2.2.1"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/SignalR/src/Microsoft.AspNetCore.Http.Connections.Client"
+- id: "NuGet:Microsoft.AspNetCore:Http.Connections.Client:[2.1.8,2.1.31]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/SignalR/clients/csharp/Http.Connections.Client/src"
+- id: "NuGet:Microsoft.AspNetCore:Http.Connections.Client:[2.2.2,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/SignalR/clients/csharp/Http.Connections.Client/src"

@@ -1,0 +1,5 @@
+- id: "NuGet:System.Security:Claims:[5.0.0,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/libraries/System.Security.Claims"

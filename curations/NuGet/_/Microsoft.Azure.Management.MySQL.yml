@@ -1,5 +1,0 @@
-- id: "NuGet::Microsoft.Azure.Management.MySQL:"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "sdk/mysql/Microsoft.Azure.Management.MySQL"

@@ -1,0 +1,20 @@
+- id: "NuGet:Microsoft.AspNetCore:Razor:2.1.7"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/src/Microsoft.AspNetCore.Razor"
+- id: "NuGet:Microsoft.AspNetCore:Razor:2.2.1"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/src/Microsoft.AspNetCore.Razor"
+- id: "NuGet:Microsoft.AspNetCore:Razor:[2.1.8,2.1.31]"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/Razor/src"
+- id: "NuGet:Microsoft.AspNetCore:Razor:[2.2.2,)"
+  curations:
+    comment: "Set the VCS path of the module inside the multi-module repository."
+    vcs:
+      path: "src/Razor/Razor/src"

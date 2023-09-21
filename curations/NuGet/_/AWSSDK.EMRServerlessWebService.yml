@@ -1,5 +1,0 @@
-- id: "NuGet::AWSSDK.EMRServerlessWebService:[3.7.283,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "sdk/src/Services/EMRServerlessWebService"

@@ -1,5 +1,0 @@
-- id: "NuGet::AWSSDK.MarketplaceCatalog:[3.3.629,)"
-  curations:
-    comment: "Set the VCS path of the module inside the multi-module repository."
-    vcs:
-      path: "sdk/src/Services/MarketplaceCatalog"
