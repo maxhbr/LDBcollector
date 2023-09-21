@@ -27,5 +27,7 @@ Files: var/*.json
 Copyright: 2023 Henrik Sandklef <hesa@sandklef.com>
 License: CC-BY-4.0
 
-
+Files: python/docs/Makefile python/docs/make.bat
+Copyright: 2023 (c) SPhinx authors, www.sphinx-doc.org
+License: BSD-2-Clause
 
