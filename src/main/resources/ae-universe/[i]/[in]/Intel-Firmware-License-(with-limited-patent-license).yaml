@@ -9,3 +9,5 @@ shortName: "Intel-Firmware-with-limited-patent"
 alternativeNames:
   - "Intel Firmware License (with limited patent license)"
 
+otherIds: 
+  - "scancode:intel"

@@ -8,3 +8,5 @@ shortName: "Linking-Exception-GPL-007"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:dbmx-linking-exception-1.0"

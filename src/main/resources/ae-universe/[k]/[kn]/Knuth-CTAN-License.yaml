@@ -11,3 +11,5 @@ alternativeNames:
   - "Knuth CTAN License"
   - "https://ctan.org/license/knuth"
 
+otherIds: 
+  - "scancode:knuth-ctan"

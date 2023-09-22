@@ -9,3 +9,5 @@ spdxIdentifier: "Kazlib"
 alternativeNames:
   - "Kazlib License"
 
+otherIds: 
+  - "scancode:kazlib"

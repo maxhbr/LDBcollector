@@ -8,3 +8,5 @@ spdxIdentifier: "IJG-short"
 
 openCoDEStatus: "approved"
 
+otherIds: 
+  - "scancode:ijg-short"

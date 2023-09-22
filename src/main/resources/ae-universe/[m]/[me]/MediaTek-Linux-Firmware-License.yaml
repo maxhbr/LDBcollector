@@ -6,3 +6,5 @@ canonicalName: "MediaTek Linux Firmware License"
 category: "MediaTek Linux Firmware License"
 shortName: "MediaTek-Linux-Firmware"
 
+otherIds: 
+  - "scancode:mediatek-firmware"

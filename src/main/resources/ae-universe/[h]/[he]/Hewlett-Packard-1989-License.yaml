@@ -2,9 +2,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "LLaMA License Agreement 2023"
-category: "LLaMA"
-shortName: "LLaMa-2023"
+canonicalName: "Hewlett-Packard 1989 License"
+category: "HP 1989"
+spdxIdentifier: "HP-1989"
 
-otherIds: 
-  - "scancode:llama-license-2023"

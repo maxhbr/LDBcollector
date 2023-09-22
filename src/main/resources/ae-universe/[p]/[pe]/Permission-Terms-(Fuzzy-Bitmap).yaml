@@ -2,12 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "OFFIS License"
-category: "OFFIS"
-spdxIdentifier: "OFFIS"
+canonicalName: "Permission Terms (Fuzzy Bitmap)"
+category: "Permission"
+spdxIdentifier: "FBM"
 
 alternativeNames:
-  - "OFFIS License"
+  - "Fuzzy Bitmap License"
 
-otherIds: 
-  - "scancode:offis"

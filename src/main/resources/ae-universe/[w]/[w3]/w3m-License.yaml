@@ -9,3 +9,5 @@ spdxIdentifier: "w3m"
 alternativeNames:
   - "w3m License"
 
+otherIds: 
+  - "scancode:w3m"

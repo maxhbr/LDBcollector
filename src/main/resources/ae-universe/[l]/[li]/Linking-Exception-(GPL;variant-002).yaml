@@ -9,3 +9,5 @@ spdxIdentifier: "GPL-3.0-linking-exception"
 
 type: "exception"
 
+otherIds: 
+  - "scancode:gpl-3.0-linking-exception"
