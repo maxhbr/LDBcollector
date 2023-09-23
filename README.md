@@ -16,7 +16,7 @@ A database with meta data for FOSS licenses adding useful information to existin
 
 # Background
 
-There are lots of software licenses out there (e.g. see [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/)), some of them are FOSS and some not. In this project we focus on FOSS licenses.
+There are lots of software licenses out there (e.g. see [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/)), some of them are FOSS and some not. In this project we primarily focus on FOSS licenses.
 
 ## License name proliferation
 
