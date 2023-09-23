@@ -47,7 +47,11 @@ check-reuse:
 license: check_license_files 
 
 .PHONY: python check-py-cli
-python: py-test py-sort py-lint check-py-cli
+python: py-test py-sort py-lint check-py-cli py-doctest py-doc
+
+py-doctest:
+	@cd python && python3 -m doctest -v flame/license_db.py 
+	@cd python && python3 -m doctest -v flame/format.py 
 
 py-test:
 	PYTHONPATH=python/ python3.10 -m pytest --log-cli-level=10 tests/python/
@@ -57,6 +61,11 @@ py-sort:
 
 py-lint:
 	cd python && PYTHONPATH=. flake8 flame
+
+py-doc:
+	#cd python/docs && PYTHONPATH=. make html
+	cd python && rm -fr docs/build && PYTHONPATH=. sphinx-build -E docs/source/ docs/build/html
+
 
 check-py-cli:
 	@echo -n "Check cli (-h): "
@@ -70,6 +79,8 @@ check-py-cli:
 	@echo -n "Check cli (compat): "
 	@PYTHONPATH=./python python3 ./python/flame/__main__.py -of json compat x11-keith-packard > /dev/null
 	@echo "OK"
+
+doc: py-doc
 
 build:
 	cd python && rm -fr build && python3 setup.py sdist
