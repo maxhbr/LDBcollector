@@ -58,6 +58,11 @@
             [lice-comb.impl.matching :as lcim]
             [lice-comb.impl.utils    :as lciu]))
 
+(defn lice-comb-license-ref?
+  "Is the given id one of lice-comb's custom LicenseRefs?"
+  [id]
+  (lcis/lice-comb-license-ref? id))
+
 (defn public-domain?
   "Is the given id lice-comb's custom 'public domain' LicenseRef?"
   [id]
@@ -72,6 +77,12 @@
   "Is the given id a lice-comb custom 'unlisted' LicenseRef?"
   [id]
   (lcis/unlisted? id))
+
+(defn unlisted->name
+  "Get the original name of the given unlisted license. Returns nil if id is nil
+  or is not a lice-comb unlisted LicenseRef."
+  [id]
+  (lcis/unlisted->name id))
 
 (defn id->name
   "Returns the human readable name of the given license or exception identifier;
