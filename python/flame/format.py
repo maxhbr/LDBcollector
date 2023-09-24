@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+
 import json
 import yaml
 
@@ -9,11 +10,24 @@ OUTPUT_FORMAT_JSON = 'Json'
 OUTPUT_FORMAT_YAML = 'Yaml'
 OUTPUT_FORMAT_TEXT = 'text'
 OUTPUT_FORMATS = [OUTPUT_FORMAT_JSON, OUTPUT_FORMAT_YAML, OUTPUT_FORMAT_TEXT]
+"""Allowed formats (case insensitive): Json, Yaml, text."""
 
 class OutputFormatterFactory():
 
     @staticmethod
     def formatter(format):
+        """
+        Return a formatter corresponding to the supplied format
+
+        :param format: format for the output
+        :type format: str
+        :return: a normalized license expression, None if invalied format
+        :rtype: OutputFormatter
+
+        :Example:
+
+        >>> formatter = OutputFormatterFactory.formatter("JSON")
+        """
         if format.lower() == OUTPUT_FORMAT_JSON.lower():
             return JsonOutputFormatter()
         elif format.lower() == OUTPUT_FORMAT_YAML.lower():
@@ -22,104 +36,282 @@ class OutputFormatterFactory():
             return TextOutputFormatter()
 
 class OutputFormatter():
+    """Base class for implementing sub classes providing methods for
+    formatting data as returned from the various methods in the
+    FossLicense class.
 
-    def format_compat(self, compat, verbose):
+    There are no constructors, please use  :func:`flame.format.OutputFormatterFactory.formatter` instead.  See OUTPUT_FORMATS
+    """
+
+    def format_compat(self, compat, verbose=False):
+        """
+        Return a formatted string of the compatibility as returned by :func:`flame.license_db.FossLicenses.expression_compatibility_as`
+
+        :param compat: A compatibitility as returned by expression_compatibility_as.
+        :type compat: dict
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if compat is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> compat = fl.expression_compatibility_as('x11-keith-packard')
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_compatibilities(compat)
+        >>> print(formatted)
+        HPND
+        """
         return None
 
-    def format_compat_list(self, all_compats, verbose):
+    def format_compat_list(self, all_compats, verbose=False):
+        """
+        Return a formatted string of the compatibilities :func:`flame.license_db.FossLicenses.compatibility_as_list`.
+
+        :param all_compats: A list of compatibitility as returned from compatibility_as_list
+        :type all_compats: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if all_compats is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> compat = fl.compatibility_as_list()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_compat_list(compat)
+
+        """
         return None
 
-    def format_identified(self, identified, verbose):
+    def format_expression(self, expression, verbose=False):
+        """
+        Return a formatted string of the compatibilities :func:`flame.license_db.FossLicenses.alias_list`.
+
+        :param all_aliases: A list of aliases as returned from FossLicenses.alias_list()
+        :type all_aliases: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if all_compats is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> compat = fl.alias_list()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_alias_list(compat)
+
+        """
         return None
 
-    def format_expression(self, expression, verbose):
+    def format_alias_list(self, all_aliases, verbose=False):
+        """
+        Return a formatted string of the compatibilities :func:`flame.license_db.FossLicenses.alias_list`.
+
+        :param all_aliases: A list of aliases as returned from FossLicenses.alias_list()
+        :type all_aliases: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if all_compats is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> compat = fl.alias_list()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_alias_list(compat)
+
+        """
         return None
 
-    def format_identified_list(self, all_aliases, verbose):
+    def format_error(self, message, verbose=False):
+        """
+        Return a formatted string of an error message
+
+        :param message: Error message, typically received via an exception
+        :type message: str
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.exception import FlameException
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> try:
+        ...     aliases = fl.aliases("do no exist")
+        ... except FlameException as e:
+        ...     formatted = formatter.format_error(e)
+
+        """
         return None
 
-    def format_error(self, message, verbose):
+    def format_licenses(self, licenses, verbose=False):
+        """
+        Return a formatted string of a list of licenses
+
+        :param licenses: list of licenses
+        :type message: [str]
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> licenses = fl.licenses()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_licenses(licenses)
+
+        """
         return None
 
-    def format_licenses(self, licenses, verbose):
+    def format_license_complete(self, lic, verbose=False):
+        """
+        Return a formatted string of a complete license listing
+
+        :param lic: license to format
+        :type message: [str]
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> licenses = fl.license_complete("MIT")
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_license_complete(licenses)
+
+        """
         return None
 
-    def format_license_complete(self, licenses, verbose):
+    def format_compatibilities(self, compats, verbose=False):
+        """
+        Return a formatted string of the provided compatibilities.
+
+        :param : A list of aliases as returned from FossLicenses.alias_list()
+        :type all_aliases: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if all_compats is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> compatibilities = fl.expression_compatibility_as("MIT & GPLv2+")
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_compatibilities(compatibilities)
+
+        """
         return None
 
-    def format_compatibilities(self, compats, verbose):
-        return None
+    def format_operators(self, operators, verbose=False):
+        """
+        Return a formatted string of the provided operators
 
-    def format_operators(self, operators, verbose):
+        :param operators: A list of operators.
+        :type operators: list
+        :param verbose: provide additional information
+        :type verbose: boolean
+        :raise FlameException: if all_compats is not valid
+        :return: formatted string
+        :rtype: str
+
+        :Example:
+
+        >>> from flame.license_db import FossLicenses
+        >>> fl = FossLicenses()
+        >>> operators = fl.operators()
+        >>> formatter = OutputFormatterFactory.formatter("TEXT")
+        >>> formatted = formatter.format_operators(operators)
+
+        """
         return None
 
 class JsonOutputFormatter(OutputFormatter):
 
-    def format_compat(self, compat, verbose):
+    def format_compat(self, compat, verbose=False):
         return json.dumps(compat, indent=4)
 
-    def format_compat_list(self, all_compats, verbose):
+    def format_compat_list(self, all_compats, verbose=False):
         return json.dumps(all_compats, indent=4)
 
-    def format_identified(self, identified, verbose):
-        return json.dumps(identified, indent=4)
-
-    def format_expression(self, expression, verbose):
+    def format_expression(self, expression, verbose=False):
         return json.dumps(expression, indent=4)
 
-    def format_identified_list(self, all_aliases, verbose):
+    def format_alias_list(self, all_aliases, verbose=False):
         return json.dumps(all_aliases, indent=4)
 
-    def format_error(self, error, verbose):
+    def format_error(self, error, verbose=False):
         return json.dumps({'error': f'{error}'}, indent=4)
 
-    def format_licenses(self, licenses, verbose):
+    def format_licenses(self, licenses, verbose=False):
         return json.dumps(licenses, indent=4)
 
-    def format_license_complete(self, _license, verbose):
+    def format_license_complete(self, _license, verbose=False):
         return json.dumps(_license, indent=4)
 
-    def format_compatibilities(self, compats, verbose):
+    def format_compatibilities(self, compats, verbose=False):
         return json.dumps(compats)
 
-    def format_operators(self, operators, verbose):
+    def format_operators(self, operators, verbose=False):
         return json.dumps(operators)
 
 class YamlOutputFormatter(OutputFormatter):
 
-    def format_compat(self, compat, verbose):
+    def format_compat(self, compat, verbose=False):
         return yaml.dump(compat)
 
-    def format_compat_list(self, all_compats, verbose):
+    def format_compat_list(self, all_compats, verbose=False):
         return None
 
-    def format_identified(self, identified, verbose):
-        return yaml.dump(identified)
-
-    def format_expression(self, expression, verbose):
+    def format_expression(self, expression, verbose=False):
         return yaml.dump(expression)
 
-    def format_identified_list(self, all_aliases, verbose):
+    def format_alias_list(self, all_aliases, verbose=False):
         return yaml.dump(all_aliases)
 
-    def format_error(self, error, verbose):
+    def format_error(self, error, verbose=False):
         return yaml.dump({'error': f'{error}'})
 
-    def format_licenses(self, licenses, verbose):
+    def format_licenses(self, licenses, verbose=False):
         return yaml.dump(licenses)
 
-    def format_license_complete(self, _license, verbose):
+    def format_license_complete(self, _license, verbose=False):
         return yaml.dump(_license)
 
-    def format_compatibilities(self, compats, verbose):
+    def format_compatibilities(self, compats, verbose=False):
         return yaml.dump(compats)
 
-    def format_operators(self, operators, verbose):
+    def format_operators(self, operators, verbose=False):
         return yaml.dump(operators)
 
 class TextOutputFormatter(OutputFormatter):
 
-    def format_compat(self, compat, verbose):
+    def format_compat(self, compat, verbose=False):
         ret = []
         id_lic = compat['identified_license']
         if verbose:
@@ -132,7 +324,7 @@ class TextOutputFormatter(OutputFormatter):
             ret.append(f'{compat["compatibility"]["compatibility"]}')
         return "\n".join(ret)
 
-    def format_compatibilities(self, compats, verbose):
+    def format_compatibilities(self, compats, verbose=False):
         ret = []
         ret.append(f'{compats["compat_license"]}')
         if verbose:
@@ -141,10 +333,10 @@ class TextOutputFormatter(OutputFormatter):
 
         return '\n'.join(ret)
 
-    def format_compat_list(self, all_compats, verbose):
+    def format_compat_list(self, all_compats, verbose=False):
         return '\n'.join([f'{comp["spdxid"]} -> {comp["compatibility_as"]}' for comp in all_compats])
 
-    def format_identified(self, identified, verbose):
+    def __OBSOLETE_format_identified(self, identified, verbose=False):
         ret = []
         id_lic = identified['identified_element']
         ret.append(f'{id_lic["name"]}')
@@ -152,7 +344,7 @@ class TextOutputFormatter(OutputFormatter):
             ret.append(f' * "{id_lic["queried_name"]}" -> "{id_lic["name"]}" via "{id_lic["identified_via"]}"')
         return "\n".join(ret)
 
-    def format_expression(self, expression, verbose):
+    def format_expression(self, expression, verbose=False):
         ret = []
         id_lic = expression['identified_license']
         ret.append(f'{id_lic}')
@@ -161,20 +353,20 @@ class TextOutputFormatter(OutputFormatter):
                 ret.append(f' * "{identification["queried_name"]}" -> "{identification["name"]} via "{identification["identified_via"]}"')
         return '\n'.join(ret)
 
-    def format_identified_list(self, all_aliases, verbose):
+    def format_alias_list(self, all_aliases, verbose=False):
         return '\n'.join([f'{k} -> {v}' for k, v in all_aliases.items()])
 
-    def format_licenses(self, licenses, verbose):
+    def format_licenses(self, licenses, verbose=False):
         licenses.sort()
         return '\n'.join(licenses)
 
-    def format_operators(self, operators, verbose):
+    def format_operators(self, operators, verbose=False):
         return '\n'.join([f'{k} -> {v}' for k, v in operators.items()])
 
-    def format_error(self, error, verbose):
+    def format_error(self, error, verbose=False):
         return f'Error, {error}'
 
-    def format_license_complete(self, lic, verbose):
+    def format_license_complete(self, lic, verbose=False):
         ret_str = []
         ret_str.append(f'{lic["name"]}')
         ret_str.append(f'    spdxid:           {lic["spdxid"]}')

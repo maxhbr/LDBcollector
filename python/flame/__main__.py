@@ -16,7 +16,7 @@ from flame.format import OUTPUT_FORMATS
 from flame.format import OutputFormatterFactory
 from flame.exception import FlameException
 
-def parse():
+def get_parser():
 
     parser = argparse.ArgumentParser(
         description=flame.config.DESCRIPTION,
@@ -60,7 +60,7 @@ def parse():
 
     # compatibility
     parser_c = subparsers.add_parser(
-        'compat', help='Convert license to using licenses compatible with OSADL\'s matrix')
+        'compat', help='Convert license to using licenses existing in the OSADL\'s matrix')
     parser_c.set_defaults(which='compat', func=compatibility)
     parser_c.add_argument('license', type=str, help='license name to display')
     parser_c.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
@@ -88,17 +88,19 @@ def parse():
         'licenses', help='show all licenses')
     parser_cs.set_defaults(which='licenses', func=licenses)
 
-    args = parser.parse_args()
+    return parser
 
-    return args
+def parse():
+
+    return get_parser().parse_args()
 
 def operators(fl, formatter, args):
     all_op = fl.operators()
     return formatter.format_operators(all_op, args.verbose)
 
 def aliases(fl, formatter, args):
-    all_aliases = fl.aliases_list(args.alias_license)
-    return formatter.format_identified_list(all_aliases, args.verbose)
+    all_aliases = fl.alias_list(args.alias_license)
+    return formatter.format_alias_list(all_aliases, args.verbose)
 
 def licenses(fl, formatter, args):
     all_licenses = fl.licenses()
