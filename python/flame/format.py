@@ -153,7 +153,7 @@ class OutputFormatter():
         >>> from flame.license_db import FossLicenses
         >>> fl = FossLicenses()
         >>> formatter = OutputFormatterFactory.formatter("TEXT")
-        >>> try: 
+        >>> try:
         ...     aliases = fl.aliases("do no exist")
         ... except FlameException as e:
         ...     formatted = formatter.format_error(e)
