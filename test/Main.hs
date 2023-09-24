@@ -1,10 +1,9 @@
 module Main (main) where
 
-import           Test.Hspec
-import           Test.QuickCheck
-
-import           ModelSpec
-import           SourceSpec
+import ModelSpec
+import SourceSpec
+import Test.Hspec
+import Test.QuickCheck
 
 main :: IO ()
 main = do
