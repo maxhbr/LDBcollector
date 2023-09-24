@@ -87,7 +87,8 @@
 (defn proprietary-commercial?
   "Is the given id lice-comb's custom 'proprietary / commercial' LicenseRef?"
   [id]
-  (= (s/lower-case id) (s/lower-case proprietary-commercial-license-ref)))
+  (when id
+    (= (s/lower-case id) (s/lower-case proprietary-commercial-license-ref))))
 
 (def ^{:doc "Constructs a valid SPDX id (a LicenseRef specific to lice-comb)
   representing a proprietary / commercial license."

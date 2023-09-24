@@ -22,6 +22,7 @@
   (:require [clojure.string                  :as s]
             [clojure.set                     :as set]
             [clojure.java.io                 :as io]
+            [spdx.licenses                   :as sl]
             [spdx.exceptions                 :as se]
             [spdx.matching                   :as sm]
             [lice-comb.impl.spdx             :as lcis]
@@ -33,18 +34,6 @@
             [lice-comb.impl.utils            :as lciu]))
 
 (def ^:private cursed-names-d (delay (lcid/load-edn-resource "lice_comb/names.edn")))
-
-(def ^:private direct-replacements-map {
-  #{"GPL-2.0-only"     "Classpath-exception-2.0"} #{"GPL-2.0-only WITH Classpath-exception-2.0"}
-  #{"GPL-2.0-or-later" "Classpath-exception-2.0"} #{"GPL-2.0-or-later WITH Classpath-exception-2.0"}
-  #{"GPL-3.0-only"     "Classpath-exception-2.0"} #{"GPL-3.0-only WITH Classpath-exception-2.0"}
-  #{"GPL-3.0-or-later" "Classpath-exception-2.0"} #{"GPL-3.0-or-later WITH Classpath-exception-2.0"}
-  })
-
-(defn- direct-replacements
-  "Self-evident direct replacements."
-  [ids]
-  (get direct-replacements-map ids ids))
 
 (def ^:private gpl-ids-with-only-or-later #{"AGPL-1.0"
                                             "AGPL-3.0"
@@ -65,10 +54,10 @@
         (map? associative) (apply dissoc associative ks)))
 
 (defn- fix-gpl-only-or-later
-  "If the keys of ids includes both an 'only' and an 'or-later' variant of the
-  same underlying GNU family identifier, remove the 'only' variant."
-  [ids]
-  (loop [result ids
+  "If the keys of expressions includes both an 'only' and an 'or-later' variant
+  of the same underlying GNU family identifier, remove the 'only' variant."
+  [expressions]
+  (loop [result expressions
          f      (first gpl-ids-with-only-or-later)
          r      (rest  gpl-ids-with-only-or-later)]
     (if f
@@ -81,40 +70,62 @@
       result)))
 
 (defn- fix-public-domain-cc0
-  "If the keys of ids includes both CC0-1.0 and lice-comb's public domain
-  LicenseRef, remove the LicenseRef as it's redundant."
-  [ids]
-  (if (and (contains? ids (lcis/public-domain))
-           (contains? ids "CC0-1.0"))
-    (dis ids (lcis/public-domain))
-    ids))
+  "If the keys of expressions includes both CC0-1.0 and lice-comb's public
+  domain LicenseRef, remove the LicenseRef as it's redundant."
+  [expressions]
+  (if (and (contains? expressions (lcis/public-domain))
+           (contains? expressions "CC0-1.0"))
+    (dis expressions (lcis/public-domain))
+    expressions))
 
 (defn- fix-mpl-2
-  "If the keys of ids includes both MPL-2.0 and MPL-2.0-no-copyleft-exception,
-  remove the MPL-2.0-no-copyleft-exception as it's redundant."
-  [ids]
-  (if (and (contains? ids "MPL-2.0")
-           (contains? ids "MPL-2.0-no-copyleft-exception"))
-    (dis ids "MPL-2.0-no-copyleft-exception")
-    ids))
+  "If the keys of expressions includes both MPL-2.0 and
+  MPL-2.0-no-copyleft-exception, remove MPL-2.0-no-copyleft-exception as it's
+  redundant."
+  [expressions]
+  (if (and (contains? expressions "MPL-2.0")
+           (contains? expressions "MPL-2.0-no-copyleft-exception"))
+    (dis expressions "MPL-2.0-no-copyleft-exception")
+    expressions))
+
+(defn- fix-license-id-with-exception-id
+  "Combines instances where there are two keys, one of them a license identifier
+  and the other an exception identifier."
+  [expressions]
+  (if (= 2 (count expressions))
+    (if (set? expressions)
+      ; expressions is a set
+      (let [license-id   (first (seq (filter sl/listed-id? expressions)))
+            exception-id (first (seq (filter se/listed-id? expressions)))]
+        (if (and license-id exception-id)
+          #{(str license-id " WITH " exception-id)}
+          expressions))
+      ; expressions is a map
+      (let [exprs        (keys expressions)
+            license-id   (first (seq (filter sl/listed-id? exprs)))
+            exception-id (first (seq (filter se/listed-id? exprs)))]
+        (if (and license-id exception-id)
+          {(str license-id " WITH " exception-id) (reduce concat (vals expressions))}
+          expressions)))
+    expressions))
 
 (defn manual-fixes
   "Manually fix certain invalid combinations of license identifiers in a set or
-  map."
-  [ids]
-  (some-> ids
-          direct-replacements
+  map of expressions."
+  [expressions]
+  (some-> expressions
           fix-gpl-only-or-later
           fix-public-domain-cc0
-          fix-mpl-2))
+          fix-mpl-2
+          fix-license-id-with-exception-id))
 
-(defmulti text->ids
+(defmulti text->expressions
   "Returns an expressions-map for the given license text, or nil if no matches
   are found."
   {:arglists '([text])}
   type)
 
-(defmethod text->ids java.lang.String
+(defmethod text->expressions java.lang.String
   [s]
   ; These clj-spdx APIs are *expensive*, so we paralellise them
   (let [f-lic    (future (sm/licenses-within-text   s @lcis/license-ids-d))
@@ -123,23 +134,23 @@
     (when ids
       (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-text-matching})) ids))))))
 
-(defmethod text->ids java.io.Reader
+(defmethod text->expressions java.io.Reader
   [r]
   (let [sw (java.io.StringWriter.)]
     (io/copy r sw)
-    (text->ids (str sw))))
+    (text->expressions (str sw))))
 
-(defmethod text->ids java.io.InputStream
+(defmethod text->expressions java.io.InputStream
   [is]
-  (text->ids (io/reader is)))
+  (text->expressions (io/reader is)))
 
-(defmethod text->ids :default
+(defmethod text->expressions :default
   [src]
   (when src
     (with-open [r (io/reader src)]
-      (text->ids r))))
+      (text->expressions r))))
 
-(defn uri->ids
+(defn uri->expressions
   "Returns an expressions-map for the given license uri, or nil if no matches
   are found."
   [uri]
@@ -153,7 +164,7 @@
 
                                 ; 2. attempt to retrieve the text/plain contents of the uri and perform license text matching on it
                                 (when-let [license-text (lcihttp/get-text uri)]
-                                  (when-let [ids (text->ids license-text)]
+                                  (when-let [ids (text->expressions license-text)]
                                     ids))))))))
 
 (defn- string->ids-info
@@ -178,7 +189,7 @@
                   (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-listed-name :source (list s)})) ids))
 
                 ; 3. Might it be a URI?  (this is to handle some dumb corner cases that exist in pom.xml files hosted on Clojars & Maven Central)
-                (when-let [ids (uri->ids s)]
+                (when-let [ids (uri->expressions s)]
                   (map #(hash-map (key %) (val %)) ids))
 
                 ; 4. Attempt regex name matching

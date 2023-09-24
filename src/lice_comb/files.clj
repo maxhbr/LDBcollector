@@ -65,8 +65,8 @@
             (lciei/prepend-source filepath
                                   (cond (= lfname "pom.xml")              (lcmvn/pom->expressions-info f fname)
                                         (s/ends-with? lfname ".pom")      (lcmvn/pom->expressions-info f fname)
-                                        (instance? java.io.InputStream f) (doall (lcmtch/text->ids-info f))
-                                        :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->ids-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
+                                        (instance? java.io.InputStream f) (doall (lcmtch/text->expressions-info f))
+                                        :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->expressions-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
 
 (defn file->expressions
   "Returns a set of SPDX expressions (Strings) for the given file (an

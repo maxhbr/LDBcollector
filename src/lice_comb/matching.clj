@@ -98,7 +98,7 @@
           (unlisted? id)               (lcis/unlisted->name id)
           :else                        id)))
 
-(defn text->ids-info
+(defn text->expressions-info
   "Returns an expressions-info map for the given license text (a String, Reader,
   InputStream, or something that is accepted by clojure.java.io/reader - File,
   URL, URI, Socket, etc.), or nil if no expressions were found.
@@ -111,9 +111,9 @@
   * you cannot pass a String representation of a filename to this method - you
     should pass filenames through clojure.java.io/file (or similar) first"
   [text]
-  (lcim/text->ids text))
+  (lcim/text->expressions text))
 
-(defn text->ids
+(defn text->expressions
   "Returns a set of SPDX expressions (Strings) for the given license text (a
   String, Reader, InputStream, or something that is accepted by
   clojure.java.io/reader - File, URL, URI, Socket, etc.), or nil if no
@@ -127,23 +127,15 @@
   * you cannot pass a String representation of a filename to this method - you
     should pass filenames through clojure.java.io/file (or similar) first"
   [text]
-  (some-> (text->ids-info text)
+  (some-> (text->expressions-info text)
           keys
           set))
 
-(defn uri->ids-info
+(defn uri->expressions-info
   "Returns an exceptions-info map for the given license uri (a String, URL, or
-  URI).
-
-  Notes:
-  * This is done
-
-
-
-  Returns the SPDX license and/or exception identifiers (a map) for the given
-  uri, or nil if there aren't any.  It does this via two steps:
-  1. Seeing if the given URI is in the license or exception list, and returning
-     the ids of the associated licenses and/or exceptions if so
+  URI), or nil if no expressions were found.  It does this via two steps:
+  1. Seeing if the given URI is in the SPDX license or exception lists, and
+     returning the ids of the associated licenses and/or exceptions if so
   2. Attempting to retrieve the plain text content of the given URI and
      performing full SPDX license matching on the result if there was one
 
@@ -154,14 +146,11 @@
      ignoring extensions representing MIME types (.txt vs .html, etc.), etc.
      See lice-comb.impl.utils/simplify-uri for exact details.
   2. URIs in the SPDX license and exception lists are not unique - the same URI
-     may represent multiple licenses and/or exceptions.
-
-  The keys in the maps are the detected SPDX license and exception identifiers,
-  and each value contains information about how that identifiers was determined."
+     may represent multiple licenses and/or exceptions."
   [uri]
-  (lcim/uri->ids uri))
+  (lcim/uri->expressions uri))
 
-(defn uri->ids
+(defn uri->expressions
   "Returns the SPDX license and/or exception identifiers (a set of Strings) for
   the given uri, or nil if there aren't any.  It does this via two steps:
   1. Seeing if the given URI is in the license or exception list, and returning
@@ -178,7 +167,7 @@
   2. URIs in the SPDX license and exception lists are not unique - the same URI
      may represent multiple licenses and/or exceptions."
   [uri]
-  (some-> (uri->ids-info uri)
+  (some-> (uri->expressions-info uri)
           keys
           set))
 
@@ -188,7 +177,7 @@
   1. Determining whether the name is a valid SPDX license expression, and if so
      normalising it (see clj-spdx's spdx.expressions/normalise fn)
   2. Checking if the name is actually a URI, and if so performing URL matching
-     on it (as per url->ids-info)
+     on it (as per url->expressions-info)
   3. attempting to construct one or more SPDX license expressions from the
      name
 
@@ -202,7 +191,7 @@
         {normalised-expression (list {:type :declared :strategy :spdx-expression :source (list name)})}
         ; 2. If it's a URI, use URI matching (this is to handle messed up real world cases where license names in POMs contain a URI)
         (if (lciu/valid-http-uri? name)
-          (if-let [ids (uri->ids-info name)]
+          (if-let [ids (uri->expressions-info name)]
             ids
             {(lcis/name->unlisted name) (list {:type :concluded :confidence :low :strategy :unlisted :source (list name)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unlisted
           ; 3. Attempt to build SPDX expression(s) from the name
@@ -214,7 +203,7 @@
   1. Determining whether the name is a valid SPDX license expression, and if so
      normalising (see clj-spdx's spdx.expressions/normalise fn) and returning it
   2. Checking if the name is actually a URI, and if so performing URL matching
-     on it (as per url->ids)
+     on it (as per url->expressions)
   3. attempting to construct one or more SPDX license expressions from the
      name"
   [name]
