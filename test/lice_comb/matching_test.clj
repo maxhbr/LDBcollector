@@ -20,7 +20,7 @@
   (:require [clojure.test               :refer [deftest testing is use-fixtures]]
             [lice-comb.test-boilerplate :refer [fixture valid= valid-info=]]
             [lice-comb.impl.spdx        :as lcis]
-            [lice-comb.matching         :refer [init! unlisted? proprietary-commercial? text->ids name->expressions name->expressions-info uri->ids]]
+            [lice-comb.matching         :refer [init! unlisted? proprietary-commercial? text->expressions name->expressions name->expressions-info uri->expressions]]
             [spdx.licenses              :as sl]
             [spdx.exceptions            :as se]))
 
@@ -43,11 +43,33 @@
     (is (false? (unlisted? "       ")))
     (is (false? (unlisted? "\n")))
     (is (false? (unlisted? "\t"))))
-  (testing "Unlisted ids"
+  (testing "Unlisted LicensRef"
     (is (true?  (unlisted? (lcis/name->unlisted "foo")))))
-  (testing "Listed ids"
-    (is (true?  (every? false? (map unlisted? (sl/ids)))))
-    (is (true?  (every? false? (map unlisted? (se/ids)))))))
+  (testing "Listed ids are not unlisted"
+    (is (every? false? (map unlisted? (sl/ids))))
+    (is (every? false? (map unlisted? (se/ids))))))
+
+(deftest proprietary-commercial?-tests
+  (testing "Nil, empty or blank ids"
+    (is (nil?   (proprietary-commercial? nil)))
+    (is (false? (proprietary-commercial? "")))
+    (is (false? (proprietary-commercial? "       ")))
+    (is (false? (proprietary-commercial? "\n")))
+    (is (false? (proprietary-commercial? "\t"))))
+  (testing "Properietary/commercial LicenseRef"
+    (is (true?  (proprietary-commercial? (lcis/proprietary-commercial)))))
+  (testing "Listed ids are not proprietary/commercial"
+    (is (every? false? (map proprietary-commercial? (sl/ids))))
+    (is (every? false? (map proprietary-commercial? (se/ids))))))
+
+; Note: we keep these shorts as they're generally expensive, and are extensively tested by clj-spdx
+(deftest text->expressions-tests
+  (testing "Nil, empty or blank ids"
+    (is (nil? (text->expressions nil)))
+    (is (nil? (text->expressions "")))
+    (is (nil? (text->expressions "       ")))
+    (is (nil? (text->expressions "\n")))
+    (is (nil? (text->expressions "\t")))))
 
 (deftest name->expressions-tests
   (testing "Nil, empty or blank"
@@ -749,26 +771,26 @@
 
 (deftest uri->ids-tests
   (testing "Nil, empty or blank uri"
-    (is (nil?                           (uri->ids nil)))
-    (is (nil?                           (uri->ids "")))
-    (is (nil?                           (uri->ids "       ")))
-    (is (nil?                           (uri->ids "\n")))
-    (is (nil?                           (uri->ids "\t"))))
+    (is (nil?                           (uri->expressions nil)))
+    (is (nil?                           (uri->expressions "")))
+    (is (nil?                           (uri->expressions "       ")))
+    (is (nil?                           (uri->expressions "\n")))
+    (is (nil?                           (uri->expressions "\t"))))
   (testing "URIs that appear verbatim in the SPDX license or exception lists"
-    (is (= #{"Apache-2.0"}              (uri->ids "http://www.apache.org/licenses/LICENSE-2.0.html")))
-    (is (= #{"Apache-2.0"}              (uri->ids "               http://www.apache.org/licenses/LICENSE-2.0.html             ")))   ; Test whitespace
-    (is (= #{"AGPL-3.0-or-later"}       (uri->ids "https://www.gnu.org/licenses/agpl.txt")))
-    (is (= #{"CC-BY-SA-4.0"}            (uri->ids "https://creativecommons.org/licenses/by-sa/4.0/legalcode")))
-    (is (= #{"Classpath-exception-2.0"} (uri->ids "https://www.gnu.org/software/classpath/license.html"))))
+    (is (= #{"Apache-2.0"}              (uri->expressions "http://www.apache.org/licenses/LICENSE-2.0.html")))
+    (is (= #{"Apache-2.0"}              (uri->expressions "               http://www.apache.org/licenses/LICENSE-2.0.html             ")))   ; Test whitespace
+    (is (= #{"AGPL-3.0-or-later"}       (uri->expressions "https://www.gnu.org/licenses/agpl.txt")))
+    (is (= #{"CC-BY-SA-4.0"}            (uri->expressions "https://creativecommons.org/licenses/by-sa/4.0/legalcode")))
+    (is (= #{"Classpath-exception-2.0"} (uri->expressions "https://www.gnu.org/software/classpath/license.html"))))
   (testing "URI variations that should be handled identically"
-    (is (= #{"Apache-2.0"}              (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.html")))
-    (is (= #{"Apache-2.0"}              (uri->ids "http://www.apache.org/licenses/LICENSE-2.0.html")))
-    (is (= #{"Apache-2.0"}              (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")))
-    (is (= #{"Apache-2.0"}              (uri->ids "http://apache.org/licenses/LICENSE-2.0.pdf"))))
+    (is (= #{"Apache-2.0"}              (uri->expressions "https://www.apache.org/licenses/LICENSE-2.0.html")))
+    (is (= #{"Apache-2.0"}              (uri->expressions "http://www.apache.org/licenses/LICENSE-2.0.html")))
+    (is (= #{"Apache-2.0"}              (uri->expressions "https://www.apache.org/licenses/LICENSE-2.0.txt")))
+    (is (= #{"Apache-2.0"}              (uri->expressions "http://apache.org/licenses/LICENSE-2.0.pdf"))))
   (testing "URIs that appear in licensey things, but aren't in the SPDX license list as shown"
-    (is (= #{"Apache-2.0"}              (uri->ids "http://www.apache.org/licenses/LICENSE-2.0")))
-    (is (= #{"Apache-2.0"}              (uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt"))))
+    (is (= #{"Apache-2.0"}              (uri->expressions "http://www.apache.org/licenses/LICENSE-2.0")))
+    (is (= #{"Apache-2.0"}              (uri->expressions "https://www.apache.org/licenses/LICENSE-2.0.txt"))))
   (testing "URIs that aren't in the SPDX license list, but do match via retrieval and full text matching"
-    (is (= #{"Apache-2.0"}              (uri->ids "https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE")))
-    (is (= #{"Apache-2.0"}              (uri->ids "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))
-    (is (= #{"Apache-2.0"}              (uri->ids "HTTPS://GITHUB.COM/pmonks/lice-comb/blob/main/LICENSE")))))
+    (is (= #{"Apache-2.0"}              (uri->expressions "https://raw.githubusercontent.com/pmonks/lice-comb/main/LICENSE")))
+    (is (= #{"Apache-2.0"}              (uri->expressions "https://github.com/pmonks/lice-comb/blob/main/LICENSE")))
+    (is (= #{"Apache-2.0"}              (uri->expressions "HTTPS://GITHUB.COM/pmonks/lice-comb/blob/main/LICENSE")))))

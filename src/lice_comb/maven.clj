@@ -29,6 +29,8 @@
             [lice-comb.impl.http             :as lcihttp]
             [lice-comb.impl.utils            :as lciu]))
 
+(xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
+
 (defn- licenses-from-pair
   "Attempts to determine the license(s) (a map) from a POM license name/URL
   pair. Returns nil if no matches were found."
@@ -37,10 +39,8 @@
   (if-let [name-expressions (lciei/prepend-source "<name>" (lcmtch/name->expressions-info name))]
     name-expressions
     ; 2. If the names didn't give us any licenses, look in the url field(s) (this tends to be slower and less accurate)
-    (when-let [uri-ids (lciei/prepend-source "<url>" (lcmtch/uri->ids-info url))]
-      uri-ids)))
-
-(xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
+    (when-let [uri-expressions (lciei/prepend-source "<url>" (lcmtch/uri->expressions-info url))]
+      uri-expressions)))
 
 (defn- xml-find-all-alts
   "As for xi/find-all, but supports an alternative fallback set of tags (to
