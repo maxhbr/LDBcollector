@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "GPL-2.0-only WITH x11vnc-openssl-exception",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "GNU General Public License v2.0, with exceptions"
+    ],
+    "legacy-abbreviation": [
+      "GPLv2 with exceptions"
+    ]
+  }
+}

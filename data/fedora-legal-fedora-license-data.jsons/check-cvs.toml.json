@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "check-cvs",
+    "status": [
+      "allowed"
+    ]
+  }
+}

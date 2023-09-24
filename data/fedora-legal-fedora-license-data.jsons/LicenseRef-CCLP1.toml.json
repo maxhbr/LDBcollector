@@ -1,0 +1,9 @@
+{
+  "license": {
+    "expression": "LicenseRef-CCLP1",
+    "status": [
+      "allowed-content"
+    ],
+    "text": "This package was last updated on {{\\b\\d{1,2}(?:st|nd|rd|th)? [A-Za-z]+ \\d{4}\\b}}.\nIt may be distributed freely, as long as its contents are left intact and unmodified.\n"
+  }
+}

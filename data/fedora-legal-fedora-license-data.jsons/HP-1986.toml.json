@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "HP-1986",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "MIT HP Variant"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

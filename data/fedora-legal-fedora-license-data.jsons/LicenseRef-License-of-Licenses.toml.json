@@ -1,0 +1,9 @@
+{
+  "license": {
+    "expression": "LicenseRef-License-of-Licenses",
+    "status": [
+      "allowed-content"
+    ],
+    "text": "Most parts of most of the license texts in this repository are\nbelieved to be in the public domain in all jurisdictions in which this\nrepository may be published. Some license texts specify nominal\ncopyright owners. Some license texts specify nominal licensing terms\nin the text itself; in some other cases such terms are given in\nextrinsic public documents. All uses of any copyrightable parts of\nlicense texts in this repository are believed to be covered by a fair\nuse rationale or similar.\n"
+  }
+}

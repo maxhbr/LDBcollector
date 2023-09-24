@@ -1,0 +1,9 @@
+{
+  "license": {
+    "expression": "BSD-3-Clause-Clear",
+    "status": [
+      "not-allowed"
+    ],
+    "usage": "This license does not meet Fedora's current standards because of its patent language."
+  }
+}

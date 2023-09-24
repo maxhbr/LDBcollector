@@ -18,9 +18,9 @@ https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause-UC.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-Source-Code.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/BSL-1.0.txt
+https://www.osadl.org/fileadmin/checklists/unreflicenses/Bitstream-Vera.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/CC-BY-3.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/CC-BY-4.0.txt
-https://www.osadl.org/fileadmin/checklists/unreflicenses/CC-BY-SA-4.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/CC0-1.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/CDDL-1.0.txt
 https://www.osadl.org/fileadmin/checklists/unreflicenses/CDDL-1.1.txt

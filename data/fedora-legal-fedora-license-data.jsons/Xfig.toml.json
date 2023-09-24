@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "Xfig",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "MIT:Xfig Variant"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

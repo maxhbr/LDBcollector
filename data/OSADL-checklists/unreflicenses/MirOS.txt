@@ -1,8 +1,9 @@
-EITHER
-	YOU MUST Forward License text
-	YOU MUST Forward Warranty disclaimer
-	YOU MUST Forward Copyright notices
-OR
-	YOU MUST Provide License text in Documentation
-	YOU MUST Provide Warranty disclaimer (Warranty disclaimer) in Documentation
-	YOU MUST Provide Copyright notices in Documentation
+USE CASE Work Delivery
+	EITHER
+		YOU MUST Forward License text
+		YOU MUST Forward Warranty disclaimer
+		YOU MUST Forward Copyright notices
+	OR
+		YOU MUST Provide License text in Documentation
+		YOU MUST Provide Warranty disclaimer (Warranty disclaimer) in Documentation
+		YOU MUST Provide Copyright notices in Documentation

@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "Boehm-GC",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "MIT Another Minimal variant"
+    ],
+    "legacy-abbreviation": [
+      "MIT"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "license": {
+    "expression": "ssh-keyscan",
+    "status": [
+      "allowed"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+USE CASE Font delivery
+	YOU MUST Provide Copyright notice
+		ATTRIBUTE In Font File
+	YOU MUST Provide Trademark notice
+		ATTRIBUTE In Font File
+	YOU MUST Provide License text
+		ATTRIBUTE In Font File
+	IF Font Modification
+		YOU MUST NOT Use "Bitstream" OR "Vera" In Font Name
+	YOU MUST NOT Sell Font
+		ATTRIBUTE Stand-alone
+	YOU MUST NOT Promote

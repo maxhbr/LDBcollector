@@ -96,55 +96,56 @@ USE CASE Binary delivery Of Combined work
 			ATTRIBUTE Including Installation scripts
 		YOU MUST Enable Relinking With Modified library
 			EXCEPT IF Modified library NOT Interoperable
-	OR
-		YOU MUST Provide Linkable work
-			ATTRIBUTE Machine-readable
-			ATTRIBUTE Including Tool chain information
-		YOU MUST Provide Source code Of the Library
-			ATTRIBUTE Including Tool chain information
-			ATTRIBUTE Including Installation scripts
-		YOU MUST Enable Relinking With Modified library
-			EXCEPT IF Modified library NOT Interoperable
-	OR
-		YOU MUST Provide Written offer
-			ATTRIBUTE Duration 3 years
-			ATTRIBUTE No profit
-			ATTRIBUTE Delayed source code delivery Of the Library
+		OR
+			YOU MUST Provide Linkable work
 				ATTRIBUTE Machine-readable
-				ATTRIBUTE Customary medium
+				ATTRIBUTE Including Tool chain information
+			YOU MUST Provide Source code Of the Library
 				ATTRIBUTE Including Tool chain information
 				ATTRIBUTE Including Installation scripts
-			ATTRIBUTE Delayed delivery Of Linkable work
-				ATTRIBUTE Interoperability With Modified library
+			YOU MUST Enable Relinking With Modified library
+				EXCEPT IF Modified library NOT Interoperable
+		OR
+			YOU MUST Provide Written offer
+				ATTRIBUTE Duration 3 years
+				ATTRIBUTE No profit
+				ATTRIBUTE Delayed source code delivery Of the Library
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Customary medium
+					ATTRIBUTE Including Tool chain information
+					ATTRIBUTE Including Installation scripts
+				ATTRIBUTE Delayed delivery Of Linkable work
+					ATTRIBUTE Interoperability With Modified library
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Including Tool chain information
+				YOU MUST Enable Relinking With Modified library
+					EXCEPT IF Modified library NOT Interoperable
+		OR
+			IF Binary delivery Via Internet
+				YOU MUST Provide Source code delivery Of the Library Via Internet
+					ATTRIBUTE On same server
+					ATTRIBUTE Equivalent
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Including Tool chain information
+					ATTRIBUTE Including Installation scripts
+				YOU MUST Provide Linkable work Via Internet
+					ATTRIBUTE On same server
+					ATTRIBUTE Equivalent
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Interoperability With Modified library
+					ATTRIBUTE Including Tool chain information
+				YOU MUST Enable Relinking With Modified library
+					EXCEPT IF Modified library NOT Interoperable
+		OR
+			YOU MUST Ensure Source code delivery Of the Library
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Including Tool chain information
+				ATTRIBUTE Including Installation scripts
+			YOU MUST Ensure Delivery Of Linkable work
 				ATTRIBUTE Machine-readable
 				ATTRIBUTE Including Tool chain information
 			YOU MUST Enable Relinking With Modified library
 				EXCEPT IF Modified library NOT Interoperable
-	OR IF Binary delivery Via Internet
-		YOU MUST Provide Source code delivery Of the Library Via Internet
-			ATTRIBUTE On same server
-			ATTRIBUTE Equivalent
-			ATTRIBUTE Machine-readable
-			ATTRIBUTE Including Tool chain information
-			ATTRIBUTE Including Installation scripts
-		YOU MUST Provide Linkable work Via Internet
-			ATTRIBUTE On same server
-			ATTRIBUTE Equivalent
-			ATTRIBUTE Machine-readable
-			ATTRIBUTE Interoperability With Modified library
-			ATTRIBUTE Including Tool chain information
-		YOU MUST Enable Relinking With Modified library
-			EXCEPT IF Modified library NOT Interoperable
-	OR
-		YOU MUST Ensure Source code delivery Of the Library
-			ATTRIBUTE Machine-readable
-			ATTRIBUTE Including Tool chain information
-			ATTRIBUTE Including Installation scripts
-		YOU MUST Ensure Delivery Of Linkable work
-			ATTRIBUTE Machine-readable
-			ATTRIBUTE Including Tool chain information
-		YOU MUST Enable Relinking With Modified library
-			EXCEPT IF Modified library NOT Interoperable
 	IF Software modification Of Library
 		YOU MUST Ensure Modified work Is Library
 		YOU MUST Provide Modification notice

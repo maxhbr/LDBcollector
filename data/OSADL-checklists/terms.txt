@@ -73,6 +73,7 @@ https://www.osadl.org/fileadmin/checklists/terms/Modification%20report.txt
 https://www.osadl.org/fileadmin/checklists/terms/Modification.txt
 https://www.osadl.org/fileadmin/checklists/terms/Modified%20library.txt
 https://www.osadl.org/fileadmin/checklists/terms/Modified%20work.txt
+https://www.osadl.org/fileadmin/checklists/terms/Name.txt
 https://www.osadl.org/fileadmin/checklists/terms/Network%20service.txt
 https://www.osadl.org/fileadmin/checklists/terms/No%20charge.txt
 https://www.osadl.org/fileadmin/checklists/terms/No%20profit.txt

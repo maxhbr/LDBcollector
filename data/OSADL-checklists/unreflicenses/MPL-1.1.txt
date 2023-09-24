@@ -36,7 +36,7 @@ USE CASE Binary delivery
 	IF Software modification
 		YOU MUST Include Retrieval information of Source code in Notice
 		YOU MUST Provide Source code
-		EITHER	
+		EITHER
 			ATTRIBUTE Same medium
 		OR
 			ATTRIBUTE Via Internet

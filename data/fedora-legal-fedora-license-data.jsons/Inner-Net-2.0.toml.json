@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "Inner-Net-2.0",
+    "status": [
+      "allowed"
+    ],
+    "url": "https://fedoraproject.org/wiki/Licensing/Inner_Net_License\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "The Inner Net License, Version 2.00"
+    ],
+    "legacy-abbreviation": [
+      "Inner-Net"
+    ]
+  }
+}

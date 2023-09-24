@@ -1,0 +1,10 @@
+{
+  "license": {
+    "expression": "LicenseRef-hpcdtoppm",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://sourceforge.net/p/netpbm/code/HEAD/tree/userguide/hpcdtoppm.html#l414\n",
+    "text": "This software is not public domain.  Permission to use and\ndistribute this software and its documentation for noncommercial use\nand without fee is hereby granted, provided that the above copyright\nnotice appear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.\n"
+  }
+}

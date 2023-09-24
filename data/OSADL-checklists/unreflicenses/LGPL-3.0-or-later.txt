@@ -217,7 +217,6 @@ USE CASE Binary delivery Of Combined work
 				ATTRIBUTE Including Tool chain information
 				ATTRIBUTE Via Internet
 				ATTRIBUTE Duration As long as needed
-
 	OR
 		YOU MUST Use Shared library
 		YOU MUST Enable Relinking With Modified library

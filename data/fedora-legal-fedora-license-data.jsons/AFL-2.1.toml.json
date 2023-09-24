@@ -1,0 +1,16 @@
+{
+  "license": {
+    "expression": "AFL-2.1",
+    "status": [
+      "allowed"
+    ]
+  },
+  "fedora": {
+    "legacy-name": [
+      "Academic Free License v2.1"
+    ],
+    "legacy-abbreviation": [
+      "AFL"
+    ]
+  }
+}

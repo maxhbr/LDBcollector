@@ -1,0 +1,17 @@
+{
+  "license": {
+    "expression": "LLGPL",
+    "status": [
+      "allowed"
+    ],
+    "url": "http://opensource.franz.com/preamble.html\n"
+  },
+  "fedora": {
+    "legacy-name": [
+      "LLGPL"
+    ],
+    "legacy-abbreviation": [
+      "LLGPL"
+    ]
+  }
+}

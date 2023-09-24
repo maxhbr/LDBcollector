@@ -1,0 +1,10 @@
+{
+  "license": {
+    "expression": "LicenseRef-MPEG-4-Audio",
+    "status": [
+      "not-allowed"
+    ],
+    "url": "https://github.com/sacd-ripper/sacd-ripper/blob/master/libs/libdstdec/ccp_calc.c\n",
+    "text": "MPEG-4 Audio RM Module\nLossless coding of 1-bit oversampled audio - DST (Direct Stream Transfer)\n\nThis software was originally developed by:\n\n* Aad Rijnberg \n  Philips Digital Systems Laboratories Eindhoven \n  <aad.rijnberg@philips.com>\n\n* Fons Bruekers\n  Philips Research Laboratories Eindhoven\n  <fons.bruekers@philips.com>\n   \n* Eric Knapen\n  Philips Digital Systems Laboratories Eindhoven\n  <h.w.m.knapen@philips.com> \n\nAnd edited by:\n\n* Richard Theelen\n  Philips Digital Systems Laboratories Eindhoven\n  <r.h.m.theelen@philips.com>\n\nin the course of development of the MPEG-4 Audio standard ISO-14496-1, 2 and 3.\nThis software module is an implementation of a part of one or more MPEG-4 Audio\ntools as specified by the MPEG-4 Audio standard. ISO/IEC gives users of the\nMPEG-4 Audio standards free licence to this software module or modifications\nthereof for use in hardware or software products claiming conformance to the\nMPEG-4 Audio standards. Those intending to use this software module in hardware\nor software products are advised that this use may infringe existing patents.\nThe original developers of this software of this module and their company,\nthe subsequent editors and their companies, and ISO/EIC have no liability for\nuse of this software module or modifications thereof in an implementation.\nCopyright is not released for non MPEG-4 Audio conforming products. The\noriginal developer retains full right to use this code for his/her own purpose,\nassign or donate the code to a third party and to inhibit third party from\nusing the code for non MPEG-4 Audio conforming products. This copyright notice\nmust be included in all copies of derivative works.\n\nCopyright © 2004.\n"
+  }
+}
