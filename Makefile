@@ -93,3 +93,4 @@ clean:
 	rm -fr python/flame.egg-info
 	rm -fr python/dist
 	rm -fr python/build
+	rm -fr python/docs/build
