@@ -40,8 +40,22 @@ class Validation(Enum):
     OSADL = 3
 
 class FossLicenses:
-
     def __init__(self, check=False, license_dir=LICENSE_DIR, logging_level=logging.INFO):
+        """
+        Return a FossLicenses object
+
+        :param check: enable check of each license against schema
+        :type check: boolean
+        :param license_dir: directory where licenses (JSON and LICENSE) are located. Used for testing.
+        :type license_dir: str
+        :param logging_level: log level to use
+        :type logging_level: Loggin Level
+        :raise FlameException: if license_expression is not valid
+        :Example:
+
+        >>> fl = FossLicenses()
+
+        """
         logging.basicConfig(level=logging_level)
         self.license_dir = license_dir
         self.__init_license_db(check)
@@ -146,9 +160,22 @@ class FossLicenses:
         }
 
     def expression_license(self, license_expression):
-        """Returns an object with information about the normalized license for the license given.
+        """
+        Return an object with information about the normalized license for the license given.
 
-        :param str license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
+        :param license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
+        :type license_expression: str
+        :raise FlameException: if license_expression is not valid
+        :return: a normalized license expression
+        :rtype: list
+
+        :Example:
+
+        >>> fl = FossLicenses()
+        >>> expression = fl.expression_license('BSD3 & x11-keith-packard')
+        >>> print(expression['identified_license'])
+        BSD-3-Clause AND LicenseRef-flame-x11-keith-packard
+
         """
 
         if not isinstance(license_expression, str):
@@ -188,18 +215,32 @@ class FossLicenses:
 
     def license_complete(self, name):
         """
-        name: spdx identifier of a license
+        Return the corresponding license object
 
-        returns the corresponding license object
+        :param name: spdx identifier, alias or scancode key2
+        :type name: str
+        :raise FlameException: if license_expression is not valid
         """
         identified_name = self.__identify_license(name)['name']
         return self.license_db[LICENSES_TAG][identified_name]
 
     def license(self, name):
         """
-        name: spdx identifier, alias or scancode key
+        Return the normalized license name (SPDXID)
 
-        returns the normalized license name (SPDXID)
+        :param name: spdx identifier, alias or scancode key2
+        :type name: str
+        :raise FlameException: if license_expression is not valid
+        :return: SPDX identifier for the license 'name'
+        :rtype: str
+
+        :Example:
+
+        >>> fl = FossLicenses()
+        >>> license = fl.license('BSD3')
+        >>> print(license['identified_element']['name'])
+        BSD-3-Clause
+
         """
         identified_license = self.__identify_license(name)
         identified_name = identified_license[NAME_TAG]
@@ -216,7 +257,7 @@ class FossLicenses:
 
     def __OBSOLETE__license_spdxid(self, name):
         """
-        name: spdx identifier, alias or scancode key
+        name: spdx identifier, alias or scancode key2
 
         returns the corresponding spdxid
         """
@@ -224,7 +265,7 @@ class FossLicenses:
 
     def __OBSOLETE__license_scancode_key(self, name):
         """
-        name: spdx identifier, alias or scancode key
+        name: spdx identifier, alias or scancode key2
 
         returns the corresponding scancode_key
         """
@@ -235,11 +276,11 @@ class FossLicenses:
         licenses = self.license_db[LICENSES_TAG]
         return [{COMPATIBILITY_AS_TAG: licenses[x][COMPATIBILITY_AS_TAG], 'spdxid': licenses[x]['spdxid']} for x in licenses if COMPATIBILITY_AS_TAG in licenses[x]]
 
-    def aliases_list(self, alias_license: str = None) -> [str]:
-        """Returns a list of all the aliases. Supplying will alias_license
+    def alias_list(self, alias_license: str = None) -> [str]:
+        """Returns a list of all the aliases. Supplying alias_license
         will return a list of aliases beginning with alias_license
 
-        :param str alias_license:  The person sending the message
+        :param str alias_license:  limit the list of alias to all matching alias_license
         """
         if alias_license:
             return {k: v for k, v in self.license_db[ALIASES_TAG].items() if alias_license in v}
@@ -284,6 +325,14 @@ class FossLicenses:
         """Returns an object with information about the compatibility status for the license given.
 
         :param str license_expression: A license expression. E.g "BSD3" or "GPLv2+ || BSD3"
+
+        :Example: supplying only one license, so look at [0]
+
+        >>> fl = FossLicenses()
+        >>> compat = fl.expression_compatibility_as('x11-keith-packard')
+        >>> print(compat['compatibilities'][0]['name'])
+        HPND
+
         """
         expression_full = self.expression_license(license_expression)
         compats = []
