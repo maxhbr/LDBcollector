@@ -6,12 +6,20 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 # flame (FOSS License Additional MEtadata)
 
+flame provides
+
+* a Python API - see `Using the Python API`
+
+* command line tool
+
+
 # Installing: 
 
 ```
 git clone git@github.com:hesa/foss-licenses.git
 cd foss-licenses/python
 pip install -r requirements.txt
+python3 setup.py build sdist
 pip install .
 ```
 
@@ -19,18 +27,18 @@ pip install .
 
 ## Help 
 
-```
+```shell
 $ flame --help
 ```
 
-```
+```shell
 $ flame expressions --help
 ```
 
 ## Get spdx identifier(s) for a license expression
 
 You want to know the license for `BSD3`
-```
+```shell
 $ flame expression BSD3
 BSD-3-Clause
 ```
