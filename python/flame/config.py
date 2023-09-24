@@ -15,10 +15,11 @@ LICENSE_OPERATORS_FILE = os.path.join(VAR_DIR, 'operators.json')
 
 DESCRIPTION = """
 NAME
-  flame (FOSS License Additional Metadata)
+  flame (FOSS License Additional Metadata) is a python API and
+  command line tool
 
 DESCRIPTION
-  flame is a database with additional metadata about licenses
+  FOSS Licenses is a database with additional metadata about, primarily, FOSS licenses.
 
 """
 
