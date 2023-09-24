@@ -145,6 +145,12 @@ class (Eq a) => LicenseFactC a where
         filterFun (LicenseType ty : stmts) = ty : filterFun stmts
         filterFun (_ : stmts) = filterFun stmts
      in filterFun . flattenStatements . getImpliedStmts
+  getImpliedLicenseTexts :: a -> [Text]
+  getImpliedLicenseTexts =
+    let filterFun [] = []
+        filterFun (LicenseText txts : stmts) = txts : filterFun stmts
+        filterFun (_ : stmts) = filterFun stmts
+     in filterFun . flattenStatements . getImpliedStmts
 
 data LicenseFact where
   LicenseFact :: forall a. (Show a, Typeable a, ToJSON a, LicenseFactC a) => TypeRep -> a -> LicenseFact

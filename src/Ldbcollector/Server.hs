@@ -86,7 +86,7 @@ lnToA queryparams ln = H.a H.! A.href ((H.toValue . (++ fromMaybe "" queryparams
 listPageAction :: [[LicenseName]] -> ActionM ()
 listPageAction clusters = do
   let page = H.html $ do
-        H.head $ H.title "ldbcollector-haskell"
+        htmlHead "ldbcollector-haskell"
         H.body $ do
           H.ul $
             mapM_
@@ -104,21 +104,23 @@ printFactsForSource source licenseGraph = do
         <$> MTL.gets (filter (\(s, _) -> s == source) . Map.keys . _facts)
         <*> MTL.gets (Map.lookup source . _sources)
   return . H.html $ do
-    H.h1 $ H.toMarkup (show source)
-    case sourceInstance of
-      Just sourceInstance' -> do
-        H.toMarkup (getOriginalData sourceInstance')
-      Nothing -> pure ()
-    mapM_
-      ( \(source, fact) -> do
-          let factId@(FactId ty hash) = getFactId fact
-          H.h2 $ do
-            H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ H.toMarkup (show factId)
-            " for "
-            lnToA (Just $ "&" ++ show source ++ "=on") (getMainLicenseName fact)
-          H.toMarkup (getLicenseNameCluster fact)
-      )
-      facts
+    htmlHead "ldbcollector-haskell"
+    H.body $ do
+      H.h1 $ H.toMarkup (show source)
+      case sourceInstance of
+        Just sourceInstance' -> do
+          H.toMarkup (getOriginalData sourceInstance')
+        Nothing -> pure ()
+      mapM_
+        ( \(source, fact) -> do
+            let factId@(FactId ty hash) = getFactId fact
+            H.h2 $ do
+              H.a H.! A.href (H.toValue $ "/fact" </> ty </> hash) $ H.toMarkup (show factId)
+              " for "
+              lnToA (Just $ "&" ++ show source ++ "=on") (getMainLicenseName fact)
+            H.toMarkup (getLicenseNameCluster fact)
+        )
+        facts
 
 printFacts :: FactId -> LicenseGraph -> IO H.Html
 printFacts factId licenseGraph = do
@@ -126,19 +128,21 @@ printFacts factId licenseGraph = do
     runLicenseGraphM' licenseGraph $
       MTL.gets (filter (\(_, f) -> getFactId f == factId) . Map.keys . _facts)
   return . H.html $ do
-    mapM_
-      ( \(source, fact) -> do
-          H.h1 $ do
-            H.a H.! A.href (H.toValue $ "/source" </> show source) $ H.toMarkup (show source)
-          H.h2 $ do
-            H.toMarkup (show (getFactId fact))
-            " for "
-            lnToA (Just $ "&" ++ show source ++ "=on") (getMainLicenseName fact)
-          toMarkup fact
-          H.h3 "JSON"
-          H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty fact))))
-      )
-      facts
+    htmlHead ("ldbcollector-haskell: fact:" <> (T.pack . show) factId)
+    H.body $ do
+      mapM_
+        ( \(source, fact) -> do
+            H.h1 $ do
+              H.a H.! A.href (H.toValue $ "/source" </> show source) $ H.toMarkup (show source)
+            H.h2 $ do
+              H.toMarkup (show (getFactId fact))
+              " for "
+              lnToA (Just $ "&" ++ show source ++ "=on") (getMainLicenseName fact)
+            toMarkup fact
+            H.h3 "JSON"
+            H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty fact))))
+        )
+        facts
 
 computeSubgraph :: LicenseGraph -> ParamMap -> IO (LicenseGraphType, LicenseNameGraphType, (Digraph, SourceRef -> GV.Color), LicenseNameCluster)
 computeSubgraph licenseGraph paramMap = do
@@ -166,6 +170,22 @@ computeSubgraph licenseGraph paramMap = do
                   getDigraph needleNames sameNames otherNames
               )
           <*> getLicenseNameClusterM (needleNames, sameNames, otherNames)
+
+htmlHead :: T.Text ->  H.Markup
+htmlHead title = do
+  H.head $ do
+    H.title (H.toMarkup title)
+    H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+    H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
+    H.script H.! A.src "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" $ pure ()
+    H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
+    H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
+    H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
+    -- H.script H.! A.src "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" $ pure ()
+    -- H.script H.! A.src "https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js" $ pure ()
+    -- H.script H.! A.src "https://cdnjs.cloudflare.com/ajax/libs/d3-graphviz/3.0.5/d3-graphviz.min.js" $ pure ()
 
 htmlHeader :: LicenseGraph -> (SourceRef -> GV.Color) -> ParamMap -> H.Markup
 htmlHeader licenseGraph typeColoringLookup paramMap = do
@@ -248,17 +268,7 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
           subgraph
   let licRaw = getLicRaw paramMap
   return . H.html $ do
-    H.head $ do
-      H.title (H.toMarkup ("ldbcollector-haskell: " <> licRaw))
-      H.link H.! A.rel "stylesheet" H.! A.href "https://unpkg.com/normalize.css@8.0.1/normalize.css"
-      H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-      H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
-      H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
-
-      H.script H.! A.src "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" $ pure ()
-      H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
-      H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
-      H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
+    htmlHead ("ldbcollector-haskell: " <> licRaw)
     H.body $ do
       htmlHeader licenseGraph typeColoringLookup paramMap
       H.div H.! A.class_ "content active" H.! A.id "content-graph" H.! A.style "display: block;" $ do
@@ -272,6 +282,12 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
         H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseRatings facts)
         H.h3 "URLs"
         H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseUrls facts)
+        H.h3 "Texts"
+        let texts = nub $ concatMap getImpliedLicenseTexts facts
+        mapM_ (\text ->
+            H.details $ do
+              H.summary "Text:"
+              H.pre (H.toMarkup text)) texts
       -- H.h2 "LicenseNameSubgraph"
       -- H.pre $
       --     H.toMarkup (G.prettify lnsubgraph)
@@ -285,6 +301,11 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
                   " for "
                   lnToA Nothing (getMainLicenseName fact)
                 toMarkup fact
+                let texts = getImpliedLicenseTexts fact
+                mapM_ (\text ->
+                    H.details $ do
+                      H.summary "Text:"
+                      H.pre (H.toMarkup text)) texts
             )
             facts
       H.script H.! A.src "/script.js" $
