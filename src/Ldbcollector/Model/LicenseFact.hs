@@ -31,6 +31,7 @@ import Ldbcollector.Model.LicenseStatement
 import MyPrelude hiding (ByteString)
 import Text.Blaze qualified as H
 import Text.Blaze.Html5 qualified as H
+import Text.Blaze.Html5.Attributes qualified as A
 
 newtype SourceRef = Source String
   deriving (Eq, Ord)
@@ -87,11 +88,14 @@ instance ToJSON LicenseNameCluster where
 
 instance H.ToMarkup LicenseNameCluster where
   toMarkup (LicenseNameCluster name sameNames otherNames) = do
-    H.b (fromString ("LicenseNames for " ++ show name))
-    H.ul $ mapM_ (H.li . fromString . show) sameNames
-    unless (null otherNames) $ do
-      H.b "LicenseName Hints"
-      H.ul $ mapM_ (H.li . fromString . show) otherNames
+    H.div H.! A.class_ "two-columns-grid" $ do
+      H.div $ do
+        H.b (fromString ("LicenseNames for " ++ show name))
+        H.ul H.! A.class_ "capsulUl clearfix" $ mapM_ (H.li . H.toMarkup) sameNames
+      unless (null otherNames) $ do
+        H.div $ do
+          H.b (fromString ("LicenseName Hints towards " ++ show name))
+          H.ul H.! A.class_ "capsulUl clearfix" $ mapM_ (H.li . H.toMarkup) otherNames
 
 applicableLNsToLicenseNameCluster :: ApplicableLNs -> LicenseNameCluster
 applicableLNsToLicenseNameCluster (LN ln) = LicenseNameCluster ln [] []
@@ -201,13 +205,17 @@ instance LicenseFactC LicenseFact where
   getImpliedStmts (LicenseFact _ a) = getImpliedStmts a
   toMarkup (LicenseFact _ a) = do
     toMarkup a
-    H.h3 "Names"
-    (H.toMarkup . getLicenseNameCluster) a
-    let ratings = getImpliedLicenseRatings a
-    unless (null ratings) $ do
-      H.h3 "Ratings"
-      H.ul $ mapM_ (H.li . H.toMarkup) ratings
-    let urls = getImpliedLicenseUrls a
-    unless (null urls) $ do
-      H.h3 "URLs"
-      H.ul $ mapM_ (H.li . H.toMarkup) urls
+    H.div $ do
+      H.h3 "Names"
+      (H.toMarkup . getLicenseNameCluster) a
+    H.div H.! A.class_ "two-columns-grid" $ do
+      let ratings = getImpliedLicenseRatings a
+      unless (null ratings) $ do
+        H.div $ do
+          H.h3 "Ratings"
+          H.ul $ mapM_ (H.li . H.toMarkup) ratings
+      let urls = getImpliedLicenseUrls a
+      unless (null urls) $ do
+        H.div $ do
+          H.h3 "URLs"
+          H.ul $ mapM_ (H.li . H.toMarkup) urls

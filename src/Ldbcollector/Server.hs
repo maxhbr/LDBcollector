@@ -276,12 +276,16 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
       H.div H.! A.class_ "content" H.! A.id "content-text" $ do
         H.h2 "LicenseNames"
         H.toMarkup cluster
-        H.h2 "LicenseTypes"
-        H.ul $ mapM_ (H.li . fromString . show) (nub $ concatMap getImpliedLicenseTypes facts)
-        H.h3 "License Ratings"
-        H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseRatings facts)
-        H.h3 "URLs"
-        H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseUrls facts)
+        H.div H.! A.class_ "three-columns-grid" $ do
+          H.div $ do
+            H.h2 "LicenseTypes"
+            H.ul $ mapM_ (H.li . fromString . show) (nub $ concatMap getImpliedLicenseTypes facts)
+          H.div $ do
+            H.h3 "License Ratings"
+            H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseRatings facts)
+          H.div $ do
+            H.h3 "URLs"
+            H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseUrls facts)
         H.h3 "Texts"
         let texts = nub $ concatMap getImpliedLicenseTexts facts
         mapM_ (\text ->

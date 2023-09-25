@@ -14,7 +14,8 @@ where
 import Data.String (IsString (..))
 import Data.Text as T
 import MyPrelude
-import Text.Blaze qualified as H
+import Text.Blaze.Html5 qualified as H
+import Text.Blaze.Html5.Attributes qualified as A
 
 data LicenseName where
   LicenseName :: Maybe Text -> Text -> LicenseName
@@ -62,7 +63,11 @@ instance ToJSON LicenseName where
   toJSON = String . pack . show
 
 instance H.ToMarkup LicenseName where
-  toMarkup = H.toMarkup . show
+  toMarkup (LicenseName Nothing n) = H.toMarkup n
+  toMarkup (LicenseName (Just ns) n) = do
+    H.span H.! A.class_ "namespace" $
+        H.toMarkup (ns <> ":")
+    H.toMarkup n
 
 data LicenseNameRelation where
   Same :: LicenseNameRelation
