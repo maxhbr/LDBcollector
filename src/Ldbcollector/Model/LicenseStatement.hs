@@ -78,12 +78,19 @@ class ToLicenseType a where
 instance ToLicenseType String where
   toLicenseType = fromString
 
-data LicenseRating
-  = PositiveLicenseRating String Text (Maybe Text)
-  | NeutralLicenseRating String Text (Maybe Text)
-  | NegativeLicenseRating String Text (Maybe Text)
+data LicenseRatingText
+  = NoLicenseRatingText
+  | LicenseRatingDescription Text
+  | LicenseRatingReason Text
+  | LicenseRatingReasonWithDescription Text Text
   deriving (Eq, Show, Ord, Generic)
+instance ToJSON LicenseRatingText
 
+data LicenseRating
+  = PositiveLicenseRating String Text LicenseRatingText
+  | NeutralLicenseRating String Text LicenseRatingText
+  | NegativeLicenseRating String Text LicenseRatingText
+  deriving (Eq, Show, Ord, Generic)
 instance ToJSON LicenseRating
 
 getRatingNamespace :: LicenseRating -> String
@@ -97,10 +104,22 @@ unLicenseRating (NeutralLicenseRating _ r _) = r
 unLicenseRating (NegativeLicenseRating _ r _) = r
 
 getRatingDescription :: LicenseRating -> Maybe Text
-getRatingDescription (PositiveLicenseRating _ _ (Just desc)) = Just desc
-getRatingDescription (NeutralLicenseRating _ _ (Just desc)) = Just desc
-getRatingDescription (NegativeLicenseRating _ _ (Just desc)) = Just desc
+getRatingDescription (PositiveLicenseRating _ _ (LicenseRatingDescription desc)) = Just desc
+getRatingDescription (PositiveLicenseRating _ _ (LicenseRatingReasonWithDescription _ desc)) = Just desc
+getRatingDescription (NeutralLicenseRating _ _ (LicenseRatingDescription desc)) = Just desc
+getRatingDescription (NeutralLicenseRating _ _ (LicenseRatingReasonWithDescription _ desc)) = Just desc
+getRatingDescription (NegativeLicenseRating _ _ (LicenseRatingDescription desc)) = Just desc
+getRatingDescription (NegativeLicenseRating _ _ (LicenseRatingReasonWithDescription _ desc)) = Just desc
 getRatingDescription _ = Nothing
+
+getRatingReason :: LicenseRating -> Maybe Text
+getRatingReason (PositiveLicenseRating _ _ (LicenseRatingReason reason)) = Just reason
+getRatingReason (PositiveLicenseRating _ _ (LicenseRatingReasonWithDescription reason _)) = Just reason
+getRatingReason (NeutralLicenseRating _ _ (LicenseRatingReason reason)) = Just reason
+getRatingReason (NeutralLicenseRating _ _ (LicenseRatingReasonWithDescription reason _)) = Just reason
+getRatingReason (NegativeLicenseRating _ _ (LicenseRatingReason reason)) = Just reason
+getRatingReason (NegativeLicenseRating _ _ (LicenseRatingReasonWithDescription reason _)) = Just reason
+getRatingReason _ = Nothing
 
 instance H.ToMarkup LicenseRating where
   toMarkup r =
@@ -110,15 +129,19 @@ instance H.ToMarkup LicenseRating where
           PositiveLicenseRating {} -> "color: green;"
           NeutralLicenseRating {} -> ""
           NegativeLicenseRating {} -> "color: red;"
+        desc = case getRatingDescription r of
+            Just desc' -> H.toValue desc'
+            _ -> ""
      in do
-          H.toMarkup ns
-          ": "
-          H.b H.! A.style color $ H.toMarkup rating
-          case getRatingDescription r of
-            (Just description) -> do
-              H.br
-              H.toMarkup description
-            _ -> pure ()
+          H.div H.! A.title desc $ do
+            H.toMarkup ns
+            ": "
+            H.b H.! A.style color $ H.toMarkup rating
+            case getRatingReason r of
+              (Just reason) -> do
+                H.br
+                H.toMarkup reason
+              _ -> pure ()
 
 data LicenseStatement where
   LicenseStatement :: String -> LicenseStatement

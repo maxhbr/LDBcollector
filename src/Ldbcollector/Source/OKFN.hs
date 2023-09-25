@@ -68,22 +68,22 @@ instance LicenseFactC OKFNLicense where
           LicenseRating $
             let status = _status l
              in case status of
-                  "approved" -> PositiveLicenseRating "OKFN status" (pack status) Nothing
-                  "active" -> PositiveLicenseRating "OKFN status" (pack status) Nothing
-                  _ -> NegativeLicenseRating "OKFN status" (pack status) Nothing
+                  "approved" -> PositiveLicenseRating "OKFN status" (pack status) NoLicenseRatingText
+                  "active" -> PositiveLicenseRating "OKFN status" (pack status) NoLicenseRatingText
+                  _ -> NegativeLicenseRating "OKFN status" (pack status) NoLicenseRatingText
         odConfromance =
           LicenseRating $
             let odConfromance = _od_conformance l
              in case odConfromance of
-                  "approved" -> PositiveLicenseRating "Open Definition" (pack odConfromance) (Just "Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).")
-                  "rejected" -> NegativeLicenseRating "Open Definition" (pack odConfromance) Nothing
-                  _ -> NeutralLicenseRating "Open Definition" (pack odConfromance) Nothing
+                  "approved" -> PositiveLicenseRating "Open Definition" (pack odConfromance) (LicenseRatingDescription "Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).")
+                  "rejected" -> NegativeLicenseRating "Open Definition" (pack odConfromance) NoLicenseRatingText
+                  _ -> NeutralLicenseRating "Open Definition" (pack odConfromance) NoLicenseRatingText
         osdConfromance =
           let osdConfromance = _osd_conformance l
            in case osdConfromance of
                 "approved" -> isOsiApproved (Just True)
                 "rejected" -> isOsiApproved (Just False)
-                _ -> LicenseRating $ NeutralLicenseRating "OSI" (pack osdConfromance) Nothing
+                _ -> LicenseRating $ NeutralLicenseRating "OSI" (pack osdConfromance) NoLicenseRatingText
      in maybeToList (fmap LicenseUrl (_url l))
           ++ [statusStmt, odConfromance, osdConfromance]
 

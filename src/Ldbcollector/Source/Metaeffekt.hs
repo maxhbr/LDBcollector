@@ -45,8 +45,8 @@ instance LicenseFactC MetaeffektLicense where
     -- https://wikijs.opencode.de/de/Hilfestellungen_und_Richtlinien/Lizenzcompliance
     Just "approved" ->
       let approvedDescription = "Eine Lizenz ist freigegeben, wenn sie nach fachlicher und juristischer Prüfung seitens Open CoDE sowohl der Open Source Definition (gemäß Definition der Open Source Initiative [extern]) entspricht und darüber hinaus keine für die Öffentliche Verwaltung erkennbaren Schwierigkeiten birgt. Außer in Ausnahmefällen ist nicht zu erwarten, dass einmal freigegebene Lizenzen deklassifiziert werden."
-       in [LicenseRating (PositiveLicenseRating "CoDEStatus" "Approved" (Just approvedDescription))]
-    Just status -> [LicenseRating (NeutralLicenseRating "CoDEStatus" (fromString status) Nothing)]
+       in [LicenseRating (PositiveLicenseRating "CoDEStatus" "Approved" (LicenseRatingDescription approvedDescription))]
+    Just status -> [LicenseRating (NeutralLicenseRating "CoDEStatus" (fromString status) NoLicenseRatingText)]
     _ -> []
 
 getMetaeffektLicense :: FilePath -> IO [MetaeffektLicense]

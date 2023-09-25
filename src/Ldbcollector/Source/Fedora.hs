@@ -68,15 +68,15 @@ instance LicenseFactC FedoraEntry where
         notAllowedDescription = "Any license that does not meet the criteria above for allowed licenses (including allowed for a specific category) is not-allowed."
         subStatementsFromStatus [] = []
         subStatementsFromStatus (a@"allowed" : stmts) =
-          LicenseRating (PositiveLicenseRating "Fedora" a (Just allowedDescription)) : subStatementsFromStatus stmts
+          LicenseRating (PositiveLicenseRating "Fedora" a (LicenseRatingDescription allowedDescription)) : subStatementsFromStatus stmts
         subStatementsFromStatus (a@"allowed-fonts" : stmts) =
-          LicenseRating (NeutralLicenseRating "Fedora" a Nothing) : subStatementsFromStatus stmts
+          LicenseRating (NeutralLicenseRating "Fedora" a NoLicenseRatingText) : subStatementsFromStatus stmts
         subStatementsFromStatus (a@"allowed-content" : stmts) =
-          LicenseRating (NeutralLicenseRating "Fedora" a Nothing) : subStatementsFromStatus stmts
+          LicenseRating (NeutralLicenseRating "Fedora" a NoLicenseRatingText) : subStatementsFromStatus stmts
         subStatementsFromStatus (a@"allowed-documentation" : stmts) =
-          LicenseRating (NeutralLicenseRating "Fedora" a Nothing) : subStatementsFromStatus stmts
+          LicenseRating (NeutralLicenseRating "Fedora" a NoLicenseRatingText) : subStatementsFromStatus stmts
         subStatementsFromStatus (a@"not-allowed" : stmts) =
-          LicenseRating (NegativeLicenseRating "Fedora" a (Just notAllowedDescription)) : subStatementsFromStatus stmts
+          LicenseRating (NegativeLicenseRating "Fedora" a (LicenseRatingDescription notAllowedDescription)) : subStatementsFromStatus stmts
         subStatementsFromStatus (_ : stmts) = subStatementsFromStatus stmts
      in [ stmt (show status) `SubStatements` subStatementsFromStatus status
         ]

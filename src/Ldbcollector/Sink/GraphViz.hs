@@ -81,18 +81,15 @@ licenseStatementToLabelValue (LicenseRating rating) =
         NegativeLicenseRating ns _ _ -> ns
         NeutralLicenseRating ns _ _ -> ns
         PositiveLicenseRating ns _ _ -> ns
-      description = maybe [] ((GVH.Newline [] :) . textToMultilines) $
-        case rating of
-          NegativeLicenseRating _ _ (Just desc) -> Just desc
-          NeutralLicenseRating _ _ (Just desc) -> Just desc
-          PositiveLicenseRating _ _ (Just desc) -> Just desc
-          _ -> Nothing
+      description = maybe [] ((GVH.Newline [] :) . textToMultilines) $ getRatingDescription rating
+      reason = maybe [] ((GVH.Newline [] :) . textToMultilines) $ getRatingReason rating
    in GV.HtmlLabel . GVH.Text $
         [ GVH.Str (fromString ns),
           GVH.Str ": ",
           GVH.Format GVH.Bold [GVH.Font [color] [(GVH.Str . LT.fromStrict . unLicenseRating) rating]]
         ]
           ++ description
+          ++ reason
 licenseStatementToLabelValue statement = (GV.StrLabel . LT.pack . show) statement
 
 simplifyEdgeLabel :: [LicenseGraphEdge] -> [LicenseGraphEdge]

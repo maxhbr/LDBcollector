@@ -52,9 +52,9 @@ addParsedType "Lizenzen mit strengem Copyleft-Effekt" stmt = stmt `SubStatements
 addParsedType "Lizenzen mit beschränktem Copyleft-Effekt" stmt = stmt `SubStatements` [LicenseType WeaklyProtective]
 addParsedType "Lizenzen mit Wahlmöglichkeiten" stmt = stmt `SubStatements` [LicenseType WeaklyProtective]
 addParsedType "Public Domain Erklärungen" stmt = stmt `SubStatements` [LicenseType PublicDomain]
-addParsedType n@"Open Source Lizenzen" stmt = stmt `SubStatements` [LicenseRating (PositiveLicenseRating "ifrOSS" n Nothing)]
-addParsedType n@"Ethical Licenses" stmt = stmt `SubStatements` [LicenseRating (NegativeLicenseRating "ifrOSS" n Nothing)]
-addParsedType n@"Sonstige (non-free) Software Lizenzen" stmt = stmt `SubStatements` [LicenseRating (NegativeLicenseRating "ifrOSS" n Nothing)]
+addParsedType n@"Open Source Lizenzen" stmt = stmt `SubStatements` [LicenseRating (PositiveLicenseRating "ifrOSS" n NoLicenseRatingText)]
+addParsedType n@"Ethical Licenses" stmt = stmt `SubStatements` [LicenseRating (NegativeLicenseRating "ifrOSS" n NoLicenseRatingText)]
+addParsedType n@"Sonstige (non-free) Software Lizenzen" stmt = stmt `SubStatements` [LicenseRating (NegativeLicenseRating "ifrOSS" n NoLicenseRatingText)]
 addParsedType _ stmt = stmt
 
 categoryWithDescriptionToStmt :: (Text, Text) -> LicenseStatement

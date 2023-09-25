@@ -124,11 +124,11 @@ instance LicenseFactC BlueOakCouncilFact where
   getApplicableLNs (BOCCopyleft _ kind bol) = alnFromBol bol `ImpreciseLNs` [(LN . newLN . pack) kind]
   getImpliedStmts a@(BOCPermissive rating notes bol) =
     let boRatingToStatement = LicenseRating $ case strToLower rating of
-          "gold" -> PositiveLicenseRating (getType a) "Gold" $ Just notes
-          "silver" -> PositiveLicenseRating (getType a) "Silver" $ Just notes
-          "bronze" -> NeutralLicenseRating (getType a) "Lead" $ Just notes
-          "lead" -> NegativeLicenseRating (getType a) "Lead" $ Just notes
-          _ -> NeutralLicenseRating (getType a) (fromString rating) Nothing
+          "gold" -> PositiveLicenseRating (getType a) "Gold" $ LicenseRatingDescription notes
+          "silver" -> PositiveLicenseRating (getType a) "Silver" $ LicenseRatingDescription notes
+          "bronze" -> NeutralLicenseRating (getType a) "Lead" $ LicenseRatingDescription notes
+          "lead" -> NegativeLicenseRating (getType a) "Lead" $ LicenseRatingDescription notes
+          _ -> NeutralLicenseRating (getType a) (fromString rating) NoLicenseRatingText
      in [typestmt "Permissive", boRatingToStatement] ++ getImpliedStmtsOfBOL bol
   getImpliedStmts (BOCCopyleft kind _ bol) = (typestmt kind `SubStatements` [typestmt "Copyleft"]) : getImpliedStmtsOfBOL bol
 

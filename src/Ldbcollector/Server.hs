@@ -269,7 +269,7 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
   let licRaw = getLicRaw paramMap
   return . H.html $ do
     htmlHead ("ldbcollector-haskell: " <> licRaw)
-    H.body $ do
+    H.body H.! A.class_ "fixed" $ do
       htmlHeader licenseGraph typeColoringLookup paramMap
       H.div H.! A.class_ "content active" H.! A.id "content-graph" H.! A.style "display: block;" $ do
         dotSvgMarkup digraph
