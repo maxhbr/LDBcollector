@@ -872,7 +872,9 @@ test = '''
 '''
 
 package = openssh
+          qemu
 location = https://github.com/openssh/openssh-portable/blob/master/LICENCE#L101
+           https://gitlab.com/qemu-project/qemu/-/blob/master/crypto/aes.c
 text = '''
 This code is hereby placed in the public domain.
 '''
