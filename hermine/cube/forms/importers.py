@@ -13,10 +13,11 @@ from django.core.serializers.base import DeserializationError
 from cube.models import Release, Usage
 from cube.utils.generics import handle_generics_json
 from cube.utils.licenses import handle_licenses_json
+from cube.utils.validators import validate_file_size
 
 
 class BaseJsonImportForm(forms.Form):
-    file = forms.FileField()
+    file = forms.FileField(validators=[validate_file_size])
 
     def clean_file(self):
         file = self.cleaned_data["file"].read()
@@ -68,7 +69,7 @@ class ImportBomForm(forms.ModelForm):
         (IMPORT_MODE_MERGE, "Add new component usages while keeping previous ones"),
     )
     bom_type = forms.ChoiceField(label="File format", choices=BOM_CHOICES)
-    file = forms.FileField()
+    file = forms.FileField(validators=[validate_file_size])
     import_mode = forms.ChoiceField(
         choices=IMPORT_MODE_CHOICES, widget=forms.RadioSelect
     )

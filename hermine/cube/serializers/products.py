@@ -13,6 +13,7 @@ from cube.serializers import (
     GenericSerializer,
     ObligationSerializer,
 )
+from cube.utils.validators import validate_file_size
 
 
 class ExploitationSerializer(serializers.ModelSerializer):
@@ -157,14 +158,14 @@ class PolicyValidationSerializer(BaseValidationStepSerializer):
 
 
 class UploadSPDXSerializer(serializers.Serializer):
-    spdx_file = serializers.FileField()
+    spdx_file = serializers.FileField(validators=[validate_file_size])
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)
 
 
 class UploadORTSerializer(serializers.Serializer):
-    ort_file = serializers.FileField()
+    ort_file = serializers.FileField(validators=[validate_file_size])
     release = serializers.PrimaryKeyRelatedField(queryset=Release.objects.all())
     replace = serializers.BooleanField(default=False, required=False)
     linking = serializers.ChoiceField(choices=Usage.LINKING_CHOICES, required=False)

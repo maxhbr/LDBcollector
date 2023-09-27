@@ -26,3 +26,8 @@ def validate_spdx_expression(spdx_expression: str):
 def validate_no_ors_expression(spdx_expression: str):
     if has_ors(spdx_expression):
         raise ValidationError("Expression still contains a license choice")
+
+
+def validate_file_size(file):
+    if file.size > 1024 * 1024 * 10:
+        raise ValidationError("File too large ( > 10MB )")
