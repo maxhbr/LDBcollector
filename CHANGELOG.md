@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.2
+## 0.2.0
 
 BREAKING CHANGES:
 * fix: add file upload limit (10 MO) ([9408282](https://gitlab.com/hermine-project/hermine/commit/9408282))
