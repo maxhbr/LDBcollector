@@ -1,6 +1,7 @@
 # SPDX-FileCopyrightText: 2023 Hermine-team <hermine@inno3.fr>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
+from urllib.parse import quote
 
 import requests
 from packageurl import PackageURL
@@ -26,7 +27,7 @@ def get_packagist_funding(namespace, name):
     # namespace = "api-platform"
     # name = "core"
     full_name = f"{namespace}/{name}"
-    json_url = f"https://repo.packagist.org/p2/{full_name}.json"
+    json_url = f"https://repo.packagist.org/p2/{quote(full_name)}.json"
     try:
         r = requests.get(json_url)
         data = r.json()
@@ -39,7 +40,7 @@ def get_packagist_funding(namespace, name):
 
 
 def get_pypi_funding(name):
-    json_url = f"https://pypi.org/pypi/{name}/json/"
+    json_url = f"https://pypi.org/pypi/{quote(name)}/json/"
     try:
         r = requests.get(json_url)
         data = r.json()
@@ -61,7 +62,7 @@ def get_npm_funding(namespace, name):
         fullname = f"{namespace}/{name}"
     else:
         fullname = f"{name}"
-    json_url = f"https://registry.npmjs.org/{fullname}/"
+    json_url = f"https://registry.npmjs.org/{quote(fullname)}/"
     try:
         r = requests.get(json_url)
         data = r.json()

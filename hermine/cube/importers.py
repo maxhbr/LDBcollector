@@ -230,23 +230,35 @@ def add_component(component_purl_type, component_name, component_defaults):
     if component is not None:
         save_component = False
         component_conflicts = set()
+        import_conflicts = []
 
-        for key, value in component_defaults.items():
-            # Update empty fields with default values
-            if not getattr(component, key):
-                setattr(component, key, value)
+        if component_defaults.get("description", ""):
+            if not component.description:
+                component.description = component_defaults["description"]
                 save_component = True
-            # Keep conflicting values for usage description
-            elif getattr(component, key) != value:
-                component_conflicts.add(key)
+            elif component.description != component_defaults["description"]:
+                import_conflicts.append(
+                    f"* description is {component_defaults['description']} in import but {component.description}"
+                    f" in local data"
+                )
+
+        if component_defaults.get("homepage_url", ""):
+            if not component.homepage_url:
+                component.homepage_url = component_defaults.get("homepage_url", "")
+                save_component = True
+            elif component.homepage_url != component_defaults.get("homepage_url", ""):
+                import_conflicts.append(
+                    f"* homepage_url is {component_defaults['homepage_url']} in import but {component.homepage_url}"
+                    f" in local data"
+                )
 
         if save_component:
             component.save()
 
-        if len(component_conflicts) > 0:
+        if len(import_conflicts) > 0:
             import_log += f"Conflicting values for {', '.join(component_conflicts)} fields on component {component_name} :\n"
-            for field in component_conflicts:
-                import_log += f"* {field} is {component_defaults[field]} in import but {getattr(component, field)} in local data\n"
+            for line in import_conflicts:
+                import_log += line
             import_log += "\n"
 
     else:
