@@ -30,6 +30,12 @@ text = '''
 text here
 '''
 
+package = qemu
+location = https://gitlab.com/qemu-project/qemu/-/blob/master/include/qemu/jhash.h
+text = '''
+lookup3.c, by Bob Jenkins, May 2006, Public Domain.
+'''
+
 package = edk2
 location = https://github.com/tianocore/edk2/blob/master/BaseTools/Source/C/LzmaCompress/Sdk/DOC/lzma-sdk.txt
            https://github.com/tianocore/edk2/blob/master/MdeModulePkg/Library/LzmaCustomDecompressLib/Sdk/DOC/lzma-sdk.txt
@@ -872,7 +878,9 @@ test = '''
 '''
 
 package = openssh
+          qemu
 location = https://github.com/openssh/openssh-portable/blob/master/LICENCE#L101
+           https://gitlab.com/qemu-project/qemu/-/blob/master/crypto/aes.c
 text = '''
 This code is hereby placed in the public domain.
 '''
