@@ -210,6 +210,9 @@ class ReleaseExploitationUpdateView(
     template_name = "cube/release_exploitation_update.html"
     permission_required = "cube.change_release"
 
+    def get_success_url(self, *args, **kwargs):
+        return reverse("cube:release_summary", args=[self.release.id])
+
 
 class ReleaseExploitationCreateView(
     LoginRequiredMixin,
