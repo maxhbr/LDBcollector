@@ -8,11 +8,15 @@ SPDX-License-Identifier: CC-BY-4.0
 
 Hermine's API uses the [Djano REST](https://www.django-rest-framework.org/) framework.
 
+:::{warning}
+Most API endpoints have a trailing slash. If you omit it, you may get a 301 redirect, which may cause problems in case of `POST` requests.
+:::
+
 ## Authentication via Token
 
 The most convenient way to authenticate to the API is probably to use a token. 
-You can get such token by making a POST request on 'api/token-auth/' with the 
-fields 'username' and 'password' in a form-data, using your Hermine credentials.
+You can get such token by making a POST request on `api/token-auth/` with the 
+fields `username` and `password` in a form-data, using your Hermine credentials.
 
 In Python, using [requests](https://docs.python-requests.org/en/latest/),  it would look like:
 
@@ -207,7 +211,7 @@ An example
 
 ## JUnit
 
-A JUnit endpoint can be used at 'api/releases/int:release_id/junit/'.
+A JUnit endpoint can be used at `api/releases/int:release_id/junit/`.
 
 It returns a testsuite where each validation step is a testcase.
 
@@ -316,4 +320,4 @@ For the main models of the application, you can get a list of their instances at
 A detailed view for an instance of a class can be found at `/api/<str:class_name>/<int:instance_id>`.
 For example: `/api/products/1/`.
 
-You can check the list of the endpoints at `/api`.
+You can check the list of the endpoints at `/api/`.
