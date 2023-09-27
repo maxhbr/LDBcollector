@@ -19,12 +19,8 @@
     "Apache Software License version 1.1",
     "Apache Software License v1.1",
     "http://apache.org/licenses/LICENSE-1.1",
-    "The OpenSymphony Software License, Version 1.1",
-    "The P6Spy Software License, Version 1.1",
-    "The CyberNeko Software License, Version 1.0",
     "https://spdx.org/licenses/apache-1.1",
     "scancode:apache-1.1",
-    "osi:Apache-1.1",
-    "scancode:phorum-2.0"
+    "osi:Apache-1.1"
   ]
 }
