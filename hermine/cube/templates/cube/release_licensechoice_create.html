@@ -39,7 +39,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             </tr>
             {% for license in form.usage.version.licenses %}
               <tr>
-                <td><a href="{% url "cube:license" license.id %}">{{ license.spdx_id }}</a></td>
+                <td><a href="{% url "cube:license_detail" license.id %}">{{ license.spdx_id }}</a></td>
                 <td><span class="tag {{ license|licenseAllowedCSS }}">{{ license.get_allowed_display }}</span></td>
               </tr>
             {% endfor %}

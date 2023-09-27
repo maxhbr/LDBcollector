@@ -12,8 +12,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:generics' %}">Generic obligations</a></li>
-    <li><a href="{% url "cube:generic" generic.id %}">{{ generic.name }}</a></li>
+    <li><a href="{% url 'cube:generic_list' %}">Generic obligations</a></li>
+    <li><a href="{% url "cube:generic_detail" generic.id %}">{{ generic.name }}</a></li>
     <li>Edit</li>
   </ul>
 {% endblock %}

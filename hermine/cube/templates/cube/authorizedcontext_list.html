@@ -10,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
+    <li><a href="{% url 'cube:license_list' %}">Licenses</a></li>
     <li>Authorized contexts</li>
   </ul>
 {% endblock %}
@@ -42,7 +42,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         {% for derogation in authorized_contexts %}
           <tr>
             <td>
-              <a href="{% url 'cube:license' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
+              <a href="{% url 'cube:license_detail' derogation.license.id %}"><span class="tag {{ derogation.license|licenseAllowedCSS }}">
                 {{ derogation.license.spdx_id }}
               </span></a>
             </td>
@@ -56,7 +56,7 @@ SPDX-License-Identifier: AGPL-3.0-only
             <td>{{ derogation.updated }} ({{ derogation.author|default:"<em>author unknown</em>" }})</td>
             <td style="white-space: nowrap">
               {% if perms.cube.change_derogation %}
-                <a href="{% url "cube:authorized_context_edit" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+                <a href="{% url "cube:authorizedcontext_update" derogation.id %}"><span class="icon"><i class="fas fa-edit"></i></span></a>
               {% endif %}{% if perms.cube.change_derogation and perms.cube.delete_derogation %} | {% endif %}
               {% if perms.cube.delete_derogation %}
                 <a href="{% url "admin:cube_derogation_delete" derogation.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>

@@ -7,7 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:licensechoices' %}">Licenses choices</a></li>
+    <li><a href="{% url 'cube:licensechoice_list' %}">Licenses choices</a></li>
     <li>{{ object.expression_in }}</li>
   </ul>
 {% endblock %}
@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block content %}
   <p>
     You can only change the choice for the rule context. To apply this rule to another context,
-    <a href="{% url 'cube:licensechoice_add' %}">create a new rule</a> with the same expressions.
+    <a href="{% url 'cube:licensechoice_create' %}">create a new rule</a> with the same expressions.
   </p>
   <form method="post">
     {% csrf_token %}

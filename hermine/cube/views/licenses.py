@@ -68,7 +68,7 @@ class LicensesListView(
     context_object_name = "licenses"
     paginate_by = 50
     form_class = ImportLicensesForm
-    success_url = reverse_lazy("cube:licenses")
+    success_url = reverse_lazy("cube:license_list")
     search_fields = ("long_name", "spdx_id")
     template_name = "cube/license_list.html"
 
@@ -118,7 +118,7 @@ class LicenseUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     template_name = "cube/license_update.html"
 
 
-class LicenseAddView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
+class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     permission_required = "cube.add_license"
     model = License
     fields = [
@@ -249,7 +249,7 @@ class LicenseDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
         return reverse("cube:license_diff", kwargs={"pk": self.object.pk})
 
 
-class PrintLicense(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+class LicensePrintView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     permission_required = "cube.view_license"
     model = License
 
@@ -409,7 +409,7 @@ class ObligationCreateView(
     license = None
 
     def get_success_url(self):
-        return reverse("cube:license", args=[self.object.license.id])
+        return reverse("cube:license_detail", args=[self.object.license.id])
 
 
 class ObligationUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
@@ -418,7 +418,7 @@ class ObligationUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateVi
     fields = ("generic", "name", "verbatim", "passivity", "trigger_expl", "trigger_mdf")
 
     def get_success_url(self):
-        return reverse("cube:license", args=[self.object.license.id])
+        return reverse("cube:license_detail", args=[self.object.license.id])
 
 
 class ObligationDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
@@ -426,7 +426,7 @@ class ObligationDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteVi
     model = Obligation
 
     def get_success_url(self):
-        return reverse("cube:license", args=[self.object.license.id])
+        return reverse("cube:license_detail", args=[self.object.license.id])
 
 
 class ObligationDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
@@ -455,7 +455,7 @@ class GenericListView(
     template_name = "cube/generic_list.html"
     context_object_name = "generics"
     form_class = ImportGenericsForm
-    success_url = reverse_lazy("cube:generics")
+    success_url = reverse_lazy("cube:generic_list")
 
     @method_decorator(
         permission_required_decorator("cube.import_generic", raise_exception=True)
@@ -477,7 +477,7 @@ class GenericDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
     permission_required = "cube.view_generic"
     model = Generic
     context_object_name = "generic"
-    template_name = "cube/generic.html"
+    template_name = "cube/generic_detail.html"
 
 
 class GenericCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
@@ -487,7 +487,7 @@ class GenericCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
     fields = "__all__"
 
     def get_success_url(self):
-        return reverse("cube:generic", args=[self.object.id])
+        return reverse("cube:generic_detail", args=[self.object.id])
 
 
 class GenericUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
@@ -497,7 +497,7 @@ class GenericUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     fields = "__all__"
 
     def get_success_url(self):
-        return reverse("cube:generic", args=[self.object.id])
+        return reverse("cube:generic_detail", args=[self.object.id])
 
 
 class GenericDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):

@@ -36,7 +36,7 @@ class BaseExportFileView(View):
         return response
 
 
-class ExportLicensesView(
+class LicenseExportView(
     LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
 ):
     permission_required = "cube.export_license"
@@ -46,7 +46,7 @@ class ExportLicensesView(
         return export_licenses_json(indent=True)
 
 
-class Export1LicenseView(
+class LicenseSingleExportView(
     LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
 ):
     permission_required = "cube.export_license"
@@ -64,7 +64,7 @@ class Export1LicenseView(
         return super().get(request, kwargs["license_id"])
 
 
-class ExportGenericsView(
+class GenericExportView(
     LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
 ):
     permission_required = "cube.export_generic"
@@ -74,7 +74,7 @@ class ExportGenericsView(
         return export_generics_json()
 
 
-class ExportLicenseCurationsView(
+class LicenseCurationExportView(
     LoginRequiredMixin, PermissionRequiredMixin, BaseExportFileView
 ):
     permission_required = "cube.export_licensecuration"
@@ -85,7 +85,7 @@ class ExportLicenseCurationsView(
         return export_curations(LicenseCuration.objects.all())
 
 
-class ExportSingleLicenseCurationView(
+class LicenseCurationSingleExportView(
     LoginRequiredMixin, PermissionRequiredMixin, SingleObjectMixin, BaseExportFileView
 ):
     permission_required = "cube.export_licensecuration"

@@ -68,7 +68,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <td>{{ usage.linking }}</td>
         <td>
           {% if perms.cube.change_usage %}
-            <a href="{% url "cube:usage_edit" usage.id %}" title="Last updated on: {{ usage.addition_date }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
+            <a href="{% url "cube:usage_update" usage.id %}" title="Last updated on: {{ usage.addition_date }}"><span class="icon"><i class="fas fa-edit"></i></span></a>
           {% endif %}{% if perms.cube.delete_usage %}
             | <a href="{% url "cube:usage_delete" usage.id %}"><span class="icon"><i class="fas fa-trash"></i></span></a>
           {% endif %}

@@ -12,7 +12,7 @@ from cube.models.meta import ReleaseConsultation
 
 
 class DashboardView(LoginRequiredMixin, TemplateView):
-    template_name = "cube/index.html"
+    template_name = "cube/dashboard.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
@@ -22,11 +22,11 @@ class DashboardView(LoginRequiredMixin, TemplateView):
             .prefetch_related("release")
             .order_by("-date")[:10]
         )
-        context["nb_products"] = Product.objects.all().count()
-        context["nb_releases"] = Release.objects.all().count()
-        context["nb_components"] = Component.objects.all().count()
-        context["nb_licenses"] = License.objects.all().count()
-        context["nb_generics"] = Generic.objects.all().count()
+        context["products_count"] = Product.objects.all().count()
+        context["releases_count"] = Release.objects.all().count()
+        context["components_count"] = Component.objects.all().count()
+        context["licenses_count"] = License.objects.all().count()
+        context["generics_count"] = Generic.objects.all().count()
         kwargs.update(context)
 
         return kwargs

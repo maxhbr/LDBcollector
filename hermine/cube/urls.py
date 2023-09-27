@@ -10,281 +10,298 @@ from . import views, api_views
 
 app_name = "cube"
 urlpatterns = [
-    path("", views.DashboardView.as_view(), name="root"),
+    path("", views.DashboardView.as_view(), name="dashboard"),
     path("about/", views.AboutView.as_view(), name="about"),
     # Product views
-    path("products/", views.ProductListView.as_view(), name="products"),
-    path("product/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"),
+    path("products/", views.ProductListView.as_view(), name="product_list"),
     path(
-        "product/<int:product_pk>/add_release/",
+        "products/<int:pk>/", views.ProductDetailView.as_view(), name="product_detail"
+    ),
+    path(
+        "products/<int:product_pk>/new_release/",
         views.ReleaseCreateView.as_view(),
-        name="release_add",
+        name="release_create",
     ),
-    path("product/add/", views.ProductAddView.as_view(), name="product_add"),
+    path("products/new/", views.ProductCreateView.as_view(), name="product_create"),
     path(
-        "product/edit/<int:pk>/", views.ProductEditView.as_view(), name="product_edit"
+        "products/<int:pk>/edit/",
+        views.ProductUpdateView.as_view(),
+        name="product_update",
     ),
     path(
-        "product/delete/<int:pk>/",
+        "products/<int:pk>/delete/",
         views.ProductDeleteView.as_view(),
         name="product_delete",
     ),
     # Product categories views
-    path("categories/", views.CategoryListView.as_view(), name="categories"),
+    path("categories/", views.CategoryListView.as_view(), name="category_list"),
     path(
-        "category/<int:pk>/", views.CategoryDetailView.as_view(), name="category_detail"
+        "categories/<int:pk>/",
+        views.CategoryDetailView.as_view(),
+        name="category_detail",
     ),
-    path("category/add/", views.CategoryAddView.as_view(), name="category_add"),
+    path("categories/new/", views.CategoryCreateView.as_view(), name="category_create"),
     path(
-        "category/edit/<int:pk>/",
-        views.CategoryEditView.as_view(),
-        name="category_edit",
+        "categories/<int:pk>/edit/",
+        views.CategoryUpdateView.as_view(),
+        name="category_update",
     ),
     # Components views
-    path("components/", views.ComponentListView.as_view(), name="components"),
-    path("components/popular/", views.PopularListView.as_view(), name="populars"),
+    path("components/", views.ComponentListView.as_view(), name="component_list"),
     path(
-        "component/<int:pk>/",
+        "components/popular/",
+        views.ComponentPopularListView.as_view(),
+        name="component_populars",
+    ),
+    path(
+        "components/<int:pk>/",
         views.ComponentDetailView.as_view(),
         name="component_detail",
     ),
     path(
-        "component/<int:pk>/edit/",
+        "components/<int:pk>/edit/",
         views.ComponentUpdateView.as_view(),
-        name="component_edit",
+        name="component_update",
     ),
     path(
-        "component/<int:component_id>/update_funding/",
+        "components/<int:pk>/update_funding/",
         views.component_update_funding,
         name="component_update_funding",
     ),
     path(
-        "licensecurations/",
+        "curations/",
         views.LicenseCurationListView.as_view(),
-        name="licensecurations",
+        name="licensecuration_list",
     ),
     path(
-        "licensecurations/add/",
+        "curations/new/",
         views.LicenseCurationCreateView.as_view(),
         name="licensecuration_create",
     ),
     path(
-        "licensecurations/update/<int:pk>/",
+        "curations/edit/<int:pk>/",
         views.LicenseCurationUpdateView.as_view(),
         name="licensecuration_update",
     ),
     path(
-        "licensecurations/export/",
-        views.ExportLicenseCurationsView.as_view(),
-        name="licensecurations_export",
-    ),
-    path(
-        "licensecurations/<int:pk>/export/",
-        views.ExportSingleLicenseCurationView.as_view(),
+        "curations/export/",
+        views.LicenseCurationExportView.as_view(),
         name="licensecuration_export",
     ),
+    path(
+        "curations/<int:pk>/export/",
+        views.LicenseCurationSingleExportView.as_view(),
+        name="licensecuration_single_export",
+    ),
     # Licenses and policy views
-    path("licenses/", views.LicensesListView.as_view(), name="licenses"),
-    path("license/<int:pk>/", views.LicenseDetailView.as_view(), name="license"),
+    path("licenses/", views.LicensesListView.as_view(), name="license_list"),
     path(
-        "license/<int:pk>/edit/", views.LicenseUpdateView.as_view(), name="license_edit"
-    ),
-    path("license/add/", views.LicenseAddView.as_view(), name="license_add"),
-    path(
-        "license/<int:pk>/diff/", views.LicenseDiffView.as_view(), name="license_diff"
+        "licenses/<int:pk>/", views.LicenseDetailView.as_view(), name="license_detail"
     ),
     path(
-        "license/<int:pk>/diff_update/<str:field>/",
+        "licenses/<int:pk>/edit/",
+        views.LicenseUpdateView.as_view(),
+        name="license_update",
+    ),
+    path("licenses/new/", views.LicenseCreateView.as_view(), name="license_create"),
+    path(
+        "licenses/<int:pk>/diff/", views.LicenseDiffView.as_view(), name="license_diff"
+    ),
+    path(
+        "licenses/<int:pk>/diff_update/<str:field>/",
         views.LicenseDiffUpdateView.as_view(),
         name="license_diff_update",
     ),
+    path("licenses/export/", views.LicenseExportView.as_view(), name="license_export"),
     path(
-        "license/<int:license_id>/export/",
-        views.Export1LicenseView.as_view(),
-        name="export_license",
+        "licenses/<int:license_id>/export/",
+        views.LicenseSingleExportView.as_view(),
+        name="license_export_single",
     ),
     path(
-        "license/<int:pk>/print/",
-        views.PrintLicense.as_view(),
-        name="print_license",
+        "licenses/<int:pk>/print/",
+        views.LicensePrintView.as_view(),
+        name="license_print",
     ),
     path(
-        "license/<int:license_pk>/add_obligation/",
+        "license/<int:license_pk>/new_obligation/",
         views.ObligationCreateView.as_view(),
         name="obligation_create",
     ),
     path(
-        "obligation/<int:pk>/edit/",
+        "obligations/<int:pk>/edit/",
         views.ObligationUpdateView.as_view(),
-        name="obligation_edit",
+        name="obligation_update",
     ),
     path(
-        "obligation/<int:pk>/delete/",
+        "obligations/<int:pk>/delete/",
         views.ObligationDeleteView.as_view(),
         name="obligation_delete",
     ),
     path(
-        "obligation/<int:pk>/diff_update/<str:field>/",
+        "obligations/<int:pk>/diff_update/<str:field>/",
         views.ObligationDiffUpdateView.as_view(),
         name="obligation_diff_update",
     ),
-    path("generics/", views.GenericListView.as_view(), name="generics"),
-    path("generic/<int:pk>/", views.GenericDetailView.as_view(), name="generic"),
-    path("generic/add/", views.GenericCreateView.as_view(), name="generic_add"),
+    path("generics/", views.GenericListView.as_view(), name="generic_list"),
     path(
-        "generic/<int:pk>/edit/", views.GenericUpdateView.as_view(), name="generic_edit"
+        "generics/<int:pk>/", views.GenericDetailView.as_view(), name="generic_detail"
+    ),
+    path("generics/new/", views.GenericCreateView.as_view(), name="generic_create"),
+    path(
+        "generics/<int:pk>/edit/",
+        views.GenericUpdateView.as_view(),
+        name="generic_update",
     ),
     path(
-        "generic/<int:pk>/diff/", views.GenericDiffView.as_view(), name="generic_diff"
+        "generics/<int:pk>/diff/", views.GenericDiffView.as_view(), name="generic_diff"
     ),
     path(
-        "generic/<int:pk>/diff_update/<str:field>/",
+        "generics/<int:pk>/diff_update/<str:field>/",
         views.GenericDiffUpdateView.as_view(),
         name="generic_diff_update",
     ),
-    path(
-        "export/licenses/", views.ExportLicensesView.as_view(), name="export_licenses"
-    ),
-    path(
-        "export/generics/", views.ExportGenericsView.as_view(), name="export_generics"
-    ),
+    path("generics/export/", views.GenericExportView.as_view(), name="generic_export"),
     # License policy views
     path(
-        "license/<int:license_pk>/add_autorized_context/",
-        views.AuthorizedContextCreateView.as_view(),
-        name="authorized_context_create",
-    ),
-    path(
-        "authorized_context/<int:pk>/edit/",
-        views.AuthorizedContextUpdateView.as_view(),
-        name="authorized_context_edit",
-    ),
-    path(
-        "authorized_context/",
+        "authorized_contexts/",
         views.AuthorizedContextListView.as_view(),
-        name="authorized_context_list",
+        name="authorizedcontext_list",
+    ),
+    path(
+        "licenses/<int:license_pk>/new_autorized_context/",
+        views.AuthorizedContextCreateView.as_view(),
+        name="authorizedcontext_create",
+    ),
+    path(
+        "authorized_contexts/<int:pk>/edit/",
+        views.AuthorizedContextUpdateView.as_view(),
+        name="authorizedcontext_update",
     ),
     path(
         "derogations/",
         views.DerogationListView.as_view(),
-        name="derogations",
+        name="derogation_list",
     ),
     path(
-        "licensechoices/", views.LicenseChoiceListView.as_view(), name="licensechoices"
+        "licensechoices/",
+        views.LicenseChoiceListView.as_view(),
+        name="licensechoice_list",
     ),
     path(
         "licensechoices/<int:pk>/edit/",
-        views.LicenseChoiceEditView.as_view(),
-        name="licensechoice_change",
+        views.LicenseChoiceUpdateView.as_view(),
+        name="licensechoice_update",
     ),
     path(
-        "licensechoices/add/",
+        "licensechoices/new/",
         views.LicenseChoiceCreateView.as_view(),
-        name="licensechoice_add",
+        name="licensechoice_create",
     ),
     path("shared/", views.SharedReferenceView.as_view(), name="shared_reference"),
     # Releases views
     path(
-        "release/<int:pk>/edit/",
-        views.ReleaseEditView.as_view(),
-        name="release_edit",
+        "releases/<int:pk>/edit/",
+        views.ReleaseUpdateView.as_view(),
+        name="release_update",
     ),
     path(
-        "release/<int:release_pk>/",
+        "releases/<int:release_pk>/",
         views.ReleaseSummaryView.as_view(),
         name="release_summary",
     ),
     path(
-        "release/<int:pk>/import/",
+        "releases/<int:pk>/import/",
         views.ReleaseImportView.as_view(),
         name="release_import",
     ),
     path(
-        "release/<int:pk>/bom/export/",
-        views.ReleaseBomExportView.as_view(),
-        name="release_bom_export",
-    ),
-    path(
-        "release/<int:release_pk>/bom/",
+        "releases/<int:release_pk>/bom/",
         views.ReleaseBomView.as_view(),
         name="release_bom",
     ),
     path(
-        "release/<int:pk>/obligations/",
-        views.ReleaseObligView.as_view(),
-        name="release_oblig",
+        "releases/<int:pk>/bom/export/",
+        views.ReleaseBomExportView.as_view(),
+        name="release_bom_export",
     ),
     path(
-        "release/<int:release_pk>/obligations/<int:generic_id>/",
+        "releases/<int:pk>/obligations/",
+        views.ReleaseObligationsView.as_view(),
+        name="release_obligations",
+    ),
+    path(
+        "releases/<int:release_pk>/obligations/<int:generic_id>/",
         views.ReleaseGenericView.as_view(),
         name="release_generic",
     ),
+    # Usage views
     path(
-        "release/<int:release_pk>/add_usage/",
+        "releases/<int:release_pk>/new_usage/",
         views.UsageCreateView.as_view(),
         name="usage_create",
     ),
     path(
-        "usage/<int:pk>/edit/",
+        "usages/<int:pk>/edit/",
         views.UsageUpdateView.as_view(),
-        name="usage_edit",
+        name="usage_update",
     ),
     path(
-        "usage/<int:pk>/delete/",
+        "usages/<int:pk>/delete/",
         views.UsageDeleteView.as_view(),
         name="usage_delete",
     ),
     # Release validation related views
     path(
-        "release/<int:pk>/validation/",
+        "releases/<int:pk>/validation/",
         views.ReleaseValidationView.as_view(),
         name="release_validation",
     ),
     ## Step 1
     path(
-        "usage/<int:usage_pk>/add_license_curation/",
+        "usages/<int:usage_pk>/new_license_curation/",
         views.ReleaseLicenseCurationCreateView.as_view(),
         name="release_licensecuration_create",
     ),
     path(
         "release/<int:id>/validation/fixed_licenses/",
-        views.ReleaseCuratedLicensesListView.as_view(),
+        views.ReleaseCuratedLicensesView.as_view(),
         name="release_curated_licenses",
     ),
     path(
-        "usage/<int:pk>/update_license_curation/",
+        "usages/<int:pk>/update_license_curation/",
         views.UpdateLicenseCurationView.as_view(),
         name="release_update_license_curation",
     ),
     ### Step 2
     path(
-        "usage/<int:usage_pk>/add_ands_validation/",
+        "usages/<int:usage_pk>/new_ands_validation/",
         views.ReleaseAndsValidationCreateView.as_view(),
         name="release_andsvalidation_create",
     ),
     path(
-        "release/<int:id>/validation/ands_validations/",
-        views.ReleaseAndsConfirmationListView.as_view(),
+        "releases/<int:id>/validation/ands_validations/",
+        views.ReleaseAndsConfirmationView.as_view(),
         name="release_ands_validations",
     ),
     path(
-        "usage/<int:pk>/update_ands_validation/",
-        views.UpdateAndsValidationView.as_view(),
+        "usages/<int:pk>/update_ands_validation/",
+        views.ReleaseUpdateAndsValidationView.as_view(),
         name="release_update_andsvalidation",
     ),
     ### Step 3
     path(
-        "release/<int:release_pk>/add_exploitation/",
+        "releases/<int:release_pk>/exploitations/new/",
         views.ReleaseExploitationCreateView.as_view(),
         name="release_exploitation_create",
     ),
     path(
-        "release/<int:release_pk>/edit_exploitation/<int:pk>/",
+        "releases/<int:release_pk>/exploitations/<int:pk>/edit/",
         views.ReleaseExploitationUpdateView.as_view(),
-        name="release_edit_exploitation",
+        name="release_exploitation_update",
     ),
     path(
-        "release/<int:release_pk>/delete_exploitation/<int:pk>/",
+        "release/<int:release_pk>/exploitations/<int:pk>/delete/",
         views.ReleaseExploitationDeleteView.as_view(),
         name="release_delete_exploitation",
     ),
@@ -297,11 +314,11 @@ urlpatterns = [
     path(
         "release/<int:release_pk>/validation/license_choices/",
         views.ReleaseLicenseChoiceListView.as_view(),
-        name="release_license_choices",
+        name="release_licensechoice_list",
     ),
     path(
         "release/update_license_choice/<int:pk>/",
-        views.UpdateLicenseChoiceView.as_view(),
+        views.ReleaseUpdateLicenseChoiceView.as_view(),
         name="release_update_license_choice",
     ),
     ## Step 5

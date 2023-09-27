@@ -28,6 +28,49 @@ We use [Black](https://pypi.org/project/black/) for harmonising code formatting,
 [Ruff](https://github.com/charliermarsh/ruff) for linting and 
 [DjHTML](https://github.com/rtts/djhtml) for indenting Django Templates.
 
+## Naming conventions
+
+We try to stay consistent in naming Django models, views,
+route names and so on. Here are some example for
+a hypothetical `ObjectName` model and its associated views:
+
+```python
+# urls.py
+
+urlpatterns = [
+    # ...
+    path("objectnames/", views.ObjectNameListView.as_view(), name="objectname_list"),
+    path("objectnames/new/", views.ObjectNameCreateView.as_view(), name="objectname_create"),
+    path("objectnames/<int:pk>/", views.ObjectNameDetailView.as_view(), name="objectname_detail"),
+    path("objectnames/<int:pk>/edit/", views.ObjectNameUpdateView.as_view(), name="objectname_update"),
+    path("objectnames/<int:pk>/delete/", views.ObjectNameDeleteView.as_view(), name="objectname_delete"),
+    # ...
+]
+
+
+# views.py
+class ObjectNameDetailView(DetailView):
+    model = ObjectName
+    template_name = "objectname_detail.html"
+
+class ObjectNameListView(ListView):
+    model = ObjectName
+    template_name = "objectname_list.html"
+
+class ObjectNameCreateView(CreateView):
+    model = ObjectName
+    template_name = "objectname_create.html"  # or default "objectname_form.html"
+
+class ObjectNameUpdateView(UpdateView):
+    model = ObjectName
+    template_name = "objectname_update.html" # or default "objectname_form.html"
+    
+class ObjectNameDeleteView(DetailView):
+    model = ObjectName
+    template_name = "objectname_confirm_delete.html" # this is django default
+
+```
+
 ## Commit messages
 
 It would be nice to try to follow the [Conventional Commits standards](https://www.conventionalcommits.org/en/v1.0.0/)

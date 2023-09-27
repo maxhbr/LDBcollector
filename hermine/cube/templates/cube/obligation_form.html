@@ -11,13 +11,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url "cube:licenses" %}">Licenses</a></li>
+    <li><a href="{% url "cube:license_list" %}">Licenses</a></li>
     {% if object %}
-      <li><a href="{% url 'cube:license' object.license.id %}">{{ object.license }}</a></li>
+      <li><a href="{% url 'cube:license_detail' object.license.id %}">{{ object.license }}</a></li>
       <li>Obligation <em>{{ object.name }}</em></li>
       <li>Edit</li>
     {% else %}
-      <li><a href="{% url 'cube:license' license.id %}">{{ license }}</a></li>
+      <li><a href="{% url 'cube:license_detail' license.id %}">{{ license }}</a></li>
       <li>Add obligation</li>
     {% endif %}
   </ul>

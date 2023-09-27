@@ -16,7 +16,7 @@ from cube.views.mixins import LicenseRelatedMixin, SaveAuthorMixin, QuerySuccess
 class AuthorizedContextListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     queryset = Derogation.objects.filter(product=None, release=None)
     permission_required = "cube.view_derogation"
-    template_name = "cube/authorized_context_list.html"
+    template_name = "cube/authorizedcontext_list.html"
     context_object_name = "authorized_contexts"
 
 
@@ -38,7 +38,7 @@ class AuthorizedContextUpdateView(
         "category",
         "justification",
     )
-    success_url = reverse_lazy("cube:authorized_context_list")
+    success_url = reverse_lazy("cube:authorizedcontext_list")
 
     def get_context_data(self, **kwargs):
         return super().get_context_data(license=self.object.license, **kwargs)
@@ -53,6 +53,7 @@ class AuthorizedContextCreateView(
 ):
     permission_required = "cube.add_derogation"
     model = Derogation
+    template_name = "cube/derogation_form.html"
     fields = (
         "linking",
         "modification",
@@ -63,7 +64,7 @@ class AuthorizedContextCreateView(
     )
 
     def get_success_url(self):
-        return reverse("cube:license", args=[self.object.license.id])
+        return reverse("cube:license_detail", args=[self.object.license.id])
 
 
 class DerogationListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
@@ -91,14 +92,14 @@ class LicenseChoiceListView(LoginRequiredMixin, PermissionRequiredMixin, ListVie
     )
 
 
-class LicenseChoiceEditView(
+class LicenseChoiceUpdateView(
     LoginRequiredMixin, PermissionRequiredMixin, QuerySuccessUrlMixin, UpdateView
 ):
     permission_required = "cube.change_licensechoice"
     model = LicenseChoice
-    template_name = "cube/licensechoice_edit.html"
+    template_name = "cube/licensechoice_update.html"
     form_class = LicenseChoiceUpdateForm
-    success_url = reverse_lazy("cube:licensechoices")
+    success_url = reverse_lazy("cube:licensechoice_list")
 
 
 class LicenseChoiceCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):

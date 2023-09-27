@@ -17,7 +17,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 {% block actions %}
   {% if perms.cube.import_generic %}
-    <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:generics' %}" method="post">
+    <form class="import_generics" id="import_generics" enctype="multipart/form-data" action="{% url 'cube:generic_list' %}" method="post">
       {% csrf_token %}
       <div class="field has-addons">
         <p class="control">
@@ -30,13 +30,13 @@ SPDX-License-Identifier: AGPL-3.0-only
         </p>
       </div>
     </form>
-    <a class="button" href="{% url "cube:generic_add" %}">
+    <a class="button" href="{% url "cube:generic_create" %}">
       <span class="icon"><i class="fas fa-plus"></i></span>
       <span>Create a new generic obligation</span>
     </a>
   {% endif %}
   {% if perms.cube.export_generic %}
-    <a href="{% url 'cube:export_generics' %}" class="button">
+    <a href="{% url 'cube:generic_export' %}" class="button">
       <span class="icon"><i class="fas fa-file-export"></i></span>
       <span>Export as JSON</span>
     </a>
@@ -83,7 +83,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 <tbody>
                   {% for generic in generics_incore %}
                     <tr>
-                      <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
+                      <td><a href="{% url 'cube:generic_detail' generic.id %}">{{generic.name}}</a></td>
                       <td>{{generic.get_metacategory_display}}</td>
                       <td>{{generic.team.name}}</td>
                       <td>{{ generic.obligation_set.all|length }}</td>
@@ -98,11 +98,11 @@ SPDX-License-Identifier: AGPL-3.0-only
                         {% endif %}
                       </td>
                       <td class="is-actions-cell">
-                        <a href="{% url 'cube:generic' generic.id %}">
+                        <a href="{% url 'cube:generic_detail' generic.id %}">
                           <span class="icon"><i class="fas fa-eye"></i></span>
                         </a>
                         {% if perms.cube.change_generic %}
-                          | <a href="{% url "cube:generic_edit" generic.id %}" target="_blank" type="button">
+                          | <a href="{% url "cube:generic_update" generic.id %}" target="_blank" type="button">
                             <span class="icon"><i class="fas fa-edit"></i></span>
                           </a>
                         {% endif %}
@@ -159,7 +159,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                 <tbody>
                   {% for generic in generics_outcore %}
                     <tr>
-                      <td><a href="{% url 'cube:generic' generic.id %}">{{generic.name}}</a></td>
+                      <td><a href="{% url 'cube:generic_detail' generic.id %}">{{generic.name}}</a></td>
                       <td>{{generic.get_metacategory_display}}</td>
                       <td>{{generic.team.name}}</td>
                       <td>{{ generic.obligation_set.all|length }}</td>
@@ -174,11 +174,11 @@ SPDX-License-Identifier: AGPL-3.0-only
                         {% endif %}
                       </td>
                       <td class="is-actions-cell">
-                        <a href="{% url 'cube:generic' generic.id %}">
+                        <a href="{% url 'cube:generic_detail' generic.id %}">
                           <span class="icon"><i class="fas fa-eye"></i></span>
                         </a>
                         {% if perms.cube.change_generic %}
-                          | <a href="{% url "cube:generic_edit" generic.id %}" target="_blank" type="button">
+                          | <a href="{% url "cube:generic_update" generic.id %}" target="_blank" type="button">
                             <span class="icon"><i class="fas fa-edit"></i></span>
                           </a>
                         {% endif %}

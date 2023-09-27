@@ -36,18 +36,18 @@ class ImportTestCase(ForceLoginMixin, TestCase):
             )
 
     def test_export_import_licenses_pages(self):
-        res = self.client.get(reverse("cube:export_licenses"))
+        res = self.client.get(reverse("cube:license_export"))
         self.assertEqual(res.status_code, 200)
         License.objects.all().delete()
         res = self.client.post(
-            reverse("cube:licenses"),
+            reverse("cube:license_list"),
             data={
                 "file": SimpleUploadedFile(
                     "lincenses.json", res.content, "application/json"
                 )
             },
         )
-        self.assertRedirects(res, reverse("cube:licenses"))
+        self.assertRedirects(res, reverse("cube:license_list"))
 
     def test_generic_autocreation__on_licenses_import(self):
         self.assertEqual(Generic.objects.all().count(), 1)
@@ -128,19 +128,19 @@ class ImportTestCase(ForceLoginMixin, TestCase):
         self.assertEqual(Generic.objects.all().count(), count)
 
     def test_export_import_generics_pages(self):
-        res = self.client.get(reverse("cube:export_generics"))
+        res = self.client.get(reverse("cube:generic_export"))
         self.assertEqual(res.status_code, 200)
         Obligation.objects.all().delete()
         Generic.objects.all().delete()
         res = self.client.post(
-            reverse("cube:generics"),
+            reverse("cube:generic_list"),
             data={
                 "file": SimpleUploadedFile(
                     "generics.json", res.content, "application/json"
                 )
             },
         )
-        self.assertRedirects(res, reverse("cube:generics"))
+        self.assertRedirects(res, reverse("cube:generic_list"))
 
     def test_import_examples(self):
         self.assertEqual(License.objects.all().count(), 3)

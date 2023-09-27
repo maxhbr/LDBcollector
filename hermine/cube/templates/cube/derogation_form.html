@@ -18,7 +18,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <li><a href="{% url 'cube:release_validation' form.usage.release.id %}">{{ form.usage.release.release_number }}</a></li>
       <li>Add authorized context</li>
     {% else %}
-      <li><a href="{% url 'cube:license' license.id %}">{{ license }}</a></li>
+      <li><a href="{% url 'cube:license_detail' license.id %}">{{ license }}</a></li>
       <li>{% if object %}Edit{% else %}Add{% endif %} authorized context</li>
     {% endif %}
   </ul>

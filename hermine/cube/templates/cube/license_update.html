@@ -12,8 +12,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:licenses' %}">Licenses</a></li>
-    <li><a href="{% url "cube:license" license.id %}">{{ license.spdx_id }}</a></li>
+    <li><a href="{% url 'cube:license_list' %}">Licenses</a></li>
+    <li><a href="{% url "cube:license_detail" license.id %}">{{ license.spdx_id }}</a></li>
     <li>Edit</li>
   </ul>
 {% endblock %}
@@ -25,6 +25,6 @@ SPDX-License-Identifier: AGPL-3.0-only
       {{ form }}
     </table>
     <input type="submit" class="button is-primary" value="Save"/>
-    <input type="submit" class="button" formaction="{% url 'cube:license_add' %}" value="Save as new (duplicate)" />
+    <input type="submit" class="button" formaction="{% url 'cube:license_create' %}" value="Save as new (duplicate)" />
   </form>
 {% endblock %}

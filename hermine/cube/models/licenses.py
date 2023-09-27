@@ -173,7 +173,7 @@ class License(models.Model):
         )
 
     def get_absolute_url(self):
-        return reverse_lazy("cube:license", args=[self.id])
+        return reverse_lazy("cube:license_detail", args=[self.id])
 
     def __str__(self):
         return self.spdx_id

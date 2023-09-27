@@ -122,10 +122,8 @@ class ReleaseLicenseCurationCreateView(AbstractCreateUsageConditionView):
     permission_required = "cube.add_licensecuration"
 
 
-class ReleaseCuratedLicensesListView(
-    LoginRequiredMixin, PermissionRequiredMixin, ListView
-):
-    template_name = "cube/release_validation_curated_licenses.html"
+class ReleaseCuratedLicensesView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+    template_name = "cube/release_curated_licenses.html"
     release = None
     context_object_name = "usages"
     permission_required = "cube.view_release"
@@ -159,8 +157,8 @@ class ReleaseAndsValidationCreateView(AbstractCreateUsageConditionView):
     permission_required = "cube.add_licensecuration"
 
 
-class ReleaseAndsConfirmationListView(PermissionRequiredMixin, TemplateView):
-    template_name = "cube/release_validation_ands.html"
+class ReleaseAndsConfirmationView(PermissionRequiredMixin, TemplateView):
+    template_name = "cube/release_ands_confirmation.html"
     release = None
     permission_required = "cube.view_release"
 
@@ -191,7 +189,7 @@ class ReleaseAndsConfirmationListView(PermissionRequiredMixin, TemplateView):
 
 
 @method_decorator(require_POST, "dispatch")
-class UpdateAndsValidationView(AbstractResetCorrectedLicenseView):
+class ReleaseUpdateAndsValidationView(AbstractResetCorrectedLicenseView):
     def get_success_url(self):
         return reverse(
             "cube:release_ands_validations", kwargs={"id": self.object.release.pk}
@@ -209,7 +207,7 @@ class ReleaseExploitationUpdateView(
 ):
     model = Exploitation
     fields = ["exploitation"]
-    template_name = "cube/release_edit_exploitation.html"
+    template_name = "cube/release_exploitation_update.html"
     permission_required = "cube.change_release"
 
 
@@ -242,7 +240,7 @@ class ReleaseExploitationDeleteView(
     LoginRequiredMixin, PermissionRequiredMixin, ReleaseContextMixin, DeleteView
 ):
     model = Exploitation
-    template_name = "cube/release_delete_exploitation.html"
+    template_name = "cube/release_exploitation_confirm_delete.html"
     permission_required = "cube.change_release"
 
     def get_success_url(self, *args, **kwargs):
@@ -271,7 +269,9 @@ class ReleaseLicenseChoiceListView(
 
 
 @method_decorator(require_POST, "dispatch")
-class UpdateLicenseChoiceView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+class ReleaseUpdateLicenseChoiceView(
+    LoginRequiredMixin, PermissionRequiredMixin, UpdateView
+):
     model = Usage
     fields = []
     permission_required = "cube.change_release"
@@ -286,7 +286,7 @@ class UpdateLicenseChoiceView(LoginRequiredMixin, PermissionRequiredMixin, Updat
 
     def get_success_url(self):
         return reverse(
-            "cube:release_license_choices", kwargs={"id": self.object.release.pk}
+            "cube:release_licensechoice_list", kwargs={"id": self.object.release.pk}
         )
 
 

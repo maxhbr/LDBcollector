@@ -10,13 +10,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 {% block breadcrumbs %}
   <ul>
     <li>Hermine</li>
-    <li><a href="{% url 'cube:categories'%}">Categories</a></li>
+    <li><a href="{% url 'cube:category_list'%}">Categories</a></li>
     <li>{{ category.name }}</li>
   </ul>
 {% endblock %}
 {% block actions %}
   {% if perms.cube.change_category %}
-    <a class="button" href="{% url "cube:category_edit" object.id %}">
+    <a class="button" href="{% url "cube:category_update" object.id %}">
       <span class="icon">
         <i class="fas fa-edit"></i>
       </span>
@@ -90,7 +90,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       <tbody>
         {% for context in object.derogation_set.all %}
           <tr>
-            <td><a href="{% url 'cube:license' context.license.id %}">{{context.license}}</a></td>
+            <td><a href="{% url 'cube:license_detail' context.license.id %}">{{context.license}}</a></td>
             <td>{{context.justification|truncatechars:30}}</td>
           </tr>
         {% endfor %}
