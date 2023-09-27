@@ -27,6 +27,7 @@ import Data.GraphViz.Commands.IO qualified as GV
 import Data.GraphViz.Printing qualified as GV
 import Data.HashMap.Internal.Strict qualified as HMap
 import Data.Map qualified as Map
+import Data.Text qualified as T
 import Data.Text.Lazy qualified as LT
 import Data.Text.Lazy.IO qualified as LT
 import Data.Vector qualified as V
@@ -44,10 +45,18 @@ textToMultilines = intersperse (GVH.Newline []) . map GVH.Str . LT.lines . LT.fr
 
 licenseStatementToLabelValue :: LicenseStatement -> GV.Label
 licenseStatementToLabelValue (LicenseStatement stmt) = GV.toLabelValue stmt
-licenseStatementToLabelValue (LicenseUrl url) = GV.toLabelValue url
+licenseStatementToLabelValue (LicenseUrl ns url) =
+    let nsString = case ns of
+                        Just ns' -> ns' ++ ": "
+                        _ -> ""
+     in GV.toLabelValue (nsString ++ url)
 licenseStatementToLabelValue (LicenseText txt) = GV.toLabelValue ("$TEXT" :: Text)
 licenseStatementToLabelValue (LicenseRule txt) = GV.toLabelValue ("$RULE" :: Text)
-licenseStatementToLabelValue (LicenseComment txt) = GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 txt)
+licenseStatementToLabelValue (LicenseComment txt) =
+    let value = case txt of
+                    UnscopedLicenseComment comment -> TW.wrapText TW.defaultWrapSettings 80 comment
+                    ScopedLicenseComment scope comment -> T.pack scope <> ":\n" <> TW.wrapText TW.defaultWrapSettings 80 comment
+     in GV.toLabelValue (TW.wrapText TW.defaultWrapSettings 80 value)
 licenseStatementToLabelValue (LicensePCLR pclr) =
   let header =
         GVH.Cells

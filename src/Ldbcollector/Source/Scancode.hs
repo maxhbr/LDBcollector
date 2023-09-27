@@ -54,17 +54,17 @@ instance LicenseFactC ScancodeData where
                        ]
   getImpliedStmts scd =
     case _category scd of
-      Just category -> [typestmt category]
+      Just category -> [typeStmt category]
       _ -> []
       ++ map
-        mstmt
+        mStmt
         [ _homepageUrl scd,
           _osiUrl scd
         ]
-      ++ maybeToList (fmap LicenseComment (_notes scd))
-      ++ maybeToList (fmap LicenseUrl (_osiUrl scd))
-      ++ map LicenseUrl (_textUrls scd)
-      ++ map LicenseUrl (_otherUrls scd)
+      ++ maybeToList (fmap (commentStmt (getType scd)) (_notes scd))
+      ++ maybeToList (fmap (LicenseUrl (Just "OSI")) (_osiUrl scd))
+      ++ map (LicenseUrl Nothing) (_textUrls scd)
+      ++ map (LicenseUrl Nothing) (_otherUrls scd)
       ++ maybeToList (fmap LicenseText (_text scd))
 
 newtype ScancodeLicenseDB = ScancodeLicenseDB FilePath

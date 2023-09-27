@@ -15,6 +15,7 @@ module Ldbcollector.Model.LicenseFact
     LicenseNameCluster (..),
     alternativesFromListOfLNs,
     LicenseFactC (..),
+    licenseFactsImplicationsToMarkup
   )
 where
 
@@ -88,14 +89,16 @@ instance ToJSON LicenseNameCluster where
 
 instance H.ToMarkup LicenseNameCluster where
   toMarkup (LicenseNameCluster name sameNames otherNames) = do
-    H.div H.! A.class_ "two-columns-grid" $ do
-      H.div $ do
-        H.b (fromString ("LicenseNames for " ++ show name))
-        H.ul H.! A.class_ "capsulUl clearfix" $ mapM_ (H.li . H.toMarkup) sameNames
-      unless (null otherNames) $ do
-        H.div $ do
-          H.b (fromString ("LicenseName Hints towards " ++ show name))
-          H.ul H.! A.class_ "capsulUl clearfix" $ mapM_ (H.li . H.toMarkup) otherNames
+    H.ul $ do
+      H.li $ do
+        H.b "this:"
+        H.ul H.! A.class_ "capsulUl clearfix" $ (H.li . H.toMarkup) name
+      unless (null sameNames) . H.li $ do
+        H.b (fromString "other LicenseNames:")
+        H.ul H.! A.class_ "capsulUl clearfix" $ mapM_ (H.li . H.toMarkup) (sort sameNames)
+      unless (null otherNames) . H.li $ do
+        H.b (fromString "other LicenseName Hints:")
+        H.ul H.! A.class_ "capsulUl clearfix" $ mapM_ (H.li . H.toMarkup) (sort otherNames)
 
 applicableLNsToLicenseNameCluster :: ApplicableLNs -> LicenseNameCluster
 applicableLNsToLicenseNameCluster (LN ln) = LicenseNameCluster ln [] []
@@ -137,10 +140,16 @@ class (Eq a) => LicenseFactC a where
         filterFun (LicenseRating r : stmts) = r : filterFun stmts
         filterFun (_ : stmts) = filterFun stmts
      in filterFun . flattenStatements . getImpliedStmts
-  getImpliedLicenseUrls :: a -> [String]
+  getImpliedLicenseComments :: a -> [LicenseComment]
+  getImpliedLicenseComments =
+    let filterFun [] = []
+        filterFun (LicenseComment c : stmts) = c : filterFun stmts
+        filterFun (_ : stmts) = filterFun stmts
+     in filterFun . flattenStatements . getImpliedStmts
+  getImpliedLicenseUrls :: a -> [(Maybe String, String)]
   getImpliedLicenseUrls =
     let filterFun [] = []
-        filterFun (LicenseUrl url : stmts) = url : filterFun stmts
+        filterFun (LicenseUrl scope url : stmts) = (scope, url) : filterFun stmts
         filterFun (_ : stmts) = filterFun stmts
      in filterFun . flattenStatements . getImpliedStmts
   getImpliedLicenseTypes :: a -> [LicenseType]
@@ -153,6 +162,12 @@ class (Eq a) => LicenseFactC a where
   getImpliedLicenseTexts =
     let filterFun [] = []
         filterFun (LicenseText txts : stmts) = txts : filterFun stmts
+        filterFun (_ : stmts) = filterFun stmts
+     in filterFun . flattenStatements . getImpliedStmts
+  getImpliedLicenseRules :: a -> [Text]
+  getImpliedLicenseRules =
+    let filterFun [] = []
+        filterFun (LicenseRule r : stmts) = r : filterFun stmts
         filterFun (_ : stmts) = filterFun stmts
      in filterFun . flattenStatements . getImpliedStmts
 
@@ -198,24 +213,51 @@ instance Ord LicenseFact where
           then toJSON wv1 <= toJSON wv2
           else t1 <= t2
 
+licenseFactsImplicationsToMarkup :: [LicenseFact] -> LicenseNameCluster -> Markup
+licenseFactsImplicationsToMarkup facts cluster = do
+  -- TODO: shouldn't it be possible to compute the cluster from the facts? Isn' that consistent with the use in Server.hs?
+  H.div H.! A.class_ "two-columns-grid" $ do
+    H.div $ do
+      H.h2 "LicenseNames"
+      H.toMarkup cluster
+    H.div $ do
+      let licenseTypes = nub $ concatMap getImpliedLicenseTypes facts
+      unless (null licenseTypes) $ do
+        H.h2 "LicenseTypes"
+        H.ul $ mapM_ (H.li . fromString . show) licenseTypes
+      let ratings = nub $ concatMap getImpliedLicenseRatings facts
+      unless (null ratings) $ do
+        H.h3 "License Ratings"
+        H.ul $ mapM_ (H.li . H.toMarkup) ratings
+      let comments = nub $ concatMap getImpliedLicenseComments facts
+      unless (null comments) $ do
+        H.h3 "License Comments"
+        H.ul $ mapM_ (H.li . H.toMarkup) comments
+      let urls = nub $ concatMap getImpliedLicenseUrls facts
+      unless (null urls) $ do
+        H.h3 "URLs"
+        H.ul $ mapM_ (H.li . (\(ns,url) -> do
+            case ns of
+              Just ns' -> do
+                H.toMarkup ns'
+                ": "
+              Nothing -> pure()
+            H.a H.! A.href (H.toValue url) H.! A.target "_blank" $ H.toMarkup url)) urls
+  let texts = nub $ concatMap getImpliedLicenseTexts facts
+  unless (null texts) $ do
+    H.h3 "Texts"
+    H.ul $
+      mapM_ (\text ->
+        H.li $ do
+          H.details $ do
+            H.summary "Text:"
+            H.pre (H.toMarkup text)) texts
+
 instance LicenseFactC LicenseFact where
   getType (LicenseFact _ a) = getType a
   getFactId (LicenseFact _ a) = getFactId a
   getApplicableLNs (LicenseFact _ a) = getApplicableLNs a
   getImpliedStmts (LicenseFact _ a) = getImpliedStmts a
-  toMarkup (LicenseFact _ a) = do
+  toMarkup fact@(LicenseFact _ a) = do
     toMarkup a
-    H.div $ do
-      H.h3 "Names"
-      (H.toMarkup . getLicenseNameCluster) a
-    H.div H.! A.class_ "two-columns-grid" $ do
-      let ratings = getImpliedLicenseRatings a
-      unless (null ratings) $ do
-        H.div $ do
-          H.h3 "Ratings"
-          H.ul $ mapM_ (H.li . H.toMarkup) ratings
-      let urls = getImpliedLicenseUrls a
-      unless (null urls) $ do
-        H.div $ do
-          H.h3 "URLs"
-          H.ul $ mapM_ (H.li . H.toMarkup) urls
+    licenseFactsImplicationsToMarkup [fact] (getLicenseNameCluster a)

@@ -53,10 +53,10 @@ instance LicenseFactC SPDXLicense where
         Just False -> LicenseRating (NegativeLicenseRating "FSF" "Not-Libre" NoLicenseRatingText)
         _ -> noStmt,
       isOsiApproved (Just (_isOsiApproved lic)),
-      maybe noStmt LicenseComment (_licenseComments lic),
+      maybe noStmt (commentStmt (getType lic)) (_licenseComments lic),
       LicenseText (_licenseText lic) `SubStatements` [LicenseText (_licenseTextHtml lic)]
     ]
-      ++ map LicenseUrl (getUrls lic)
+      ++ map (LicenseUrl Nothing) (getUrls lic)
 
 newtype SPDXData = SPDXData FilePath
 

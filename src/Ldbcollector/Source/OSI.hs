@@ -30,8 +30,8 @@ instance LicenseFactC OSILicense where
     (LN . newNLN "osi" . OSI.olId) l
       `AlternativeLNs` ((LN . newLN . OSI.olName) l : map (\i -> LN $ newNLN (OSI.oiScheme i) (OSI.oiIdentifier i)) (OSI.olIdentifiers l))
       `ImpreciseLNs` map (LN . newLN . OSI.oonName) (OSI.olOther_names l)
-  getImpliedStmts (OSILicense l) =
-    let urls = (map (\link -> (LicenseUrl . unpack . OSI.olUrl) link `SubStatements` [LicenseComment (OSI.olNote link)]) . OSI.olLinks) l
+  getImpliedStmts osil@(OSILicense l) =
+    let urls = (map (\link -> (LicenseUrl ((Just . unpack . OSI.olNote) link) . unpack . OSI.olUrl) link) . OSI.olLinks) l
         keywords =
           map
             ( \kw -> case kw of

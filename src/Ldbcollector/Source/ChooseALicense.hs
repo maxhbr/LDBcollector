@@ -62,9 +62,9 @@ instance LicenseFactC CALData where
                 }
               ) =
       map
-        (MaybeStatement . fmap LicenseComment)
-        [ _description caldata,
-          _how caldata
+        (MaybeStatement . fmap (commentStmt (getType caldata)))
+        [ _description caldata
+        , (fmap ("How to apply this license:\n" <>) . _how) caldata
         ]
         ++ [LicensePCLR (PCLR permissions conditions limitations [])]
   toMarkup

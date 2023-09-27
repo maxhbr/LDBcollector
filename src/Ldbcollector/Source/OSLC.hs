@@ -74,7 +74,7 @@ instance LicenseFactC OSLCData where
       best : others -> LN best `AlternativeLNs` map LN others
       _ -> undefined
   getImpliedStmts oslc =
-    [ (MaybeStatement . fmap LicenseComment) (_notes oslc)
+    [ (MaybeStatement . fmap (LicenseComment . ScopedLicenseComment (getType oslc))) (_notes oslc)
     ]
 
 parseYaml :: FilePath -> IO [OSLCData]

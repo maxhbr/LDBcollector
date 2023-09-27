@@ -26,7 +26,7 @@ instance LicenseFactC OSADLRule where
     let ruleLines = T.lines rule
      in [ LicenseRule rule
             `SubStatements` [ if "COPYLEFT CLAUSE Yes" `elem` ruleLines
-                                then typestmt "Copyleft"
+                                then typeStmt "Copyleft"
                                 else MaybeStatement Nothing,
                               "Patent hint" `ifToStmt` ("PATENT HINTS Yes" `elem` ruleLines),
                               "maybe Copyleft" `ifToStmt` ("COPYLEFT CLAUSE Questionable" `elem` ruleLines)

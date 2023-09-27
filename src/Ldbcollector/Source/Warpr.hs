@@ -18,7 +18,7 @@ data WarprLicense
   deriving (Eq, Ord, Show, Generic)
 
 instance ToJSON WarprLicense where
-  toJSON (WarprLicense id graph) = object ["_id" .= id, "_graph" .= show graph]
+  toJSON (WarprLicense id_ graph) = object ["_id" .= id_, "_graph" .= show graph]
 
 instance LicenseFactC WarprLicense where
   getType _ = "WarprLicense"

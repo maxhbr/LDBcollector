@@ -86,12 +86,13 @@ lnToA queryparams ln = H.a H.! A.href ((H.toValue . (++ fromMaybe "" queryparams
 listPageAction :: [[LicenseName]] -> ActionM ()
 listPageAction clusters = do
   let page = H.html $ do
-        htmlHead "ldbcollector-haskell"
+        htmlHead "ldbcollector"
         H.body $ do
           H.ul $
             mapM_
               ( \cluster ->
-                  H.li (H.ul $ mapM_ (H.li . (\n -> H.a H.! A.href ((H.toValue . ("./svg/" ++)) n) $ H.toMarkup n) . show) cluster)
+                  H.li (H.ul H.! A.class_ "capsulUl clearfix" $
+                    mapM_ (H.li . lnToA Nothing) cluster)
               )
               clusters
   html (BT.renderHtml page)
@@ -104,7 +105,7 @@ printFactsForSource source licenseGraph = do
         <$> MTL.gets (filter (\(s, _) -> s == source) . Map.keys . _facts)
         <*> MTL.gets (Map.lookup source . _sources)
   return . H.html $ do
-    htmlHead "ldbcollector-haskell"
+    htmlHead "ldbcollector"
     H.body $ do
       H.h1 $ H.toMarkup (show source)
       case sourceInstance of
@@ -128,7 +129,7 @@ printFacts factId licenseGraph = do
     runLicenseGraphM' licenseGraph $
       MTL.gets (filter (\(_, f) -> getFactId f == factId) . Map.keys . _facts)
   return . H.html $ do
-    htmlHead ("ldbcollector-haskell: fact:" <> (T.pack . show) factId)
+    htmlHead ("ldbcollector: fact:" <> (T.pack . show) factId)
     H.body $ do
       mapM_
         ( \(source, fact) -> do
@@ -179,13 +180,10 @@ htmlHead title = do
     H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
     H.link H.! A.rel "stylesheet" H.! A.href "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
     H.link H.! A.rel "stylesheet" H.! A.href "/styles.css"
-    H.script H.! A.src "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" $ pure ()
+    -- H.script H.! A.src "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" $ pure ()
     H.script H.! A.src "https://d3js.org/d3.v5.min.js" $ pure ()
     H.script H.! A.src "https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" $ pure ()
     H.script H.! A.src "https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js" $ pure ()
-    -- H.script H.! A.src "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" $ pure ()
-    -- H.script H.! A.src "https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js" $ pure ()
-    -- H.script H.! A.src "https://cdnjs.cloudflare.com/ajax/libs/d3-graphviz/3.0.5/d3-graphviz.min.js" $ pure ()
 
 htmlHeader :: LicenseGraph -> (SourceRef -> GV.Color) -> ParamMap -> H.Markup
 htmlHeader licenseGraph typeColoringLookup paramMap = do
@@ -197,7 +195,7 @@ htmlHeader licenseGraph typeColoringLookup paramMap = do
     H.div H.! A.class_ "tab" $ do
       H.button H.! A.class_ "tablinks active" H.! A.onclick "openTab(event, 'content-graph')" $ "Graph"
       H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-text')" $ "Summary"
-      H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-raw')" $ "Separate"
+      H.button H.! A.class_ "tablinks" H.! A.onclick "openTab(event, 'content-policy')" $ "Policy"
     H.form H.! A.action "" $ do
       H.input H.! A.name "license" H.! A.id "license" H.! A.value (H.toValue licRaw) H.! A.list "licenses"
       H.datalist H.! A.id "licenses" $
@@ -240,6 +238,11 @@ htmlHeader licenseGraph typeColoringLookup paramMap = do
           H.label H.! A.for (H.toValue excludeStmts) $ H.toMarkup excludeStmts
       H.input H.! A.type_ "submit" H.! A.value "reload" H.! A.name "reload"
 
+      H.h3 "Other Links"
+      H.ul $ do
+        H.li $ do
+          H.a H.! A.href "/clusters" $ "clusters"
+
 dotSvgMarkup :: Digraph -> H.Markup
 dotSvgMarkup digraph =
   let digraphDot = digraphToText digraph
@@ -268,34 +271,15 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
           subgraph
   let licRaw = getLicRaw paramMap
   return . H.html $ do
-    htmlHead ("ldbcollector-haskell: " <> licRaw)
+    htmlHead ("ldbcollector: " <> licRaw)
     H.body H.! A.class_ "fixed" $ do
       htmlHeader licenseGraph typeColoringLookup paramMap
       H.div H.! A.class_ "content active" H.! A.id "content-graph" H.! A.style "display: block;" $ do
         dotSvgMarkup digraph
       H.div H.! A.class_ "content" H.! A.id "content-text" $ do
-        H.h2 "LicenseNames"
-        H.toMarkup cluster
-        H.div H.! A.class_ "three-columns-grid" $ do
-          H.div $ do
-            H.h2 "LicenseTypes"
-            H.ul $ mapM_ (H.li . fromString . show) (nub $ concatMap getImpliedLicenseTypes facts)
-          H.div $ do
-            H.h3 "License Ratings"
-            H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseRatings facts)
-          H.div $ do
-            H.h3 "URLs"
-            H.ul $ mapM_ (H.li . H.toMarkup) (nub $ concatMap getImpliedLicenseUrls facts)
-        H.h3 "Texts"
-        let texts = nub $ concatMap getImpliedLicenseTexts facts
-        mapM_ (\text ->
-            H.details $ do
-              H.summary "Text:"
-              H.pre (H.toMarkup text)) texts
-      -- H.h2 "LicenseNameSubgraph"
-      -- H.pre $
-      --     H.toMarkup (G.prettify lnsubgraph)
-      H.div H.! A.class_ "content" H.! A.id "content-raw" $ do
+        H.h1 "Summary"
+        licenseFactsImplicationsToMarkup facts cluster
+        H.h1 "by Source"
         H.ul $
           mapM_
             ( \fact -> H.li $ do
@@ -305,13 +289,13 @@ mainPage paramMap licenseGraph (subgraph, lnsubgraph, (digraph, typeColoringLook
                   " for "
                   lnToA Nothing (getMainLicenseName fact)
                 toMarkup fact
-                let texts = getImpliedLicenseTexts fact
-                mapM_ (\text ->
-                    H.details $ do
-                      H.summary "Text:"
-                      H.pre (H.toMarkup text)) texts
+                H.details $ do
+                  H.summary "JSON:"
+                  H.pre (H.toMarkup (bsToText (BL.toStrict (encodePretty fact))))
             )
             facts
+      H.div H.! A.class_ "content" H.! A.id "content-policy" $ do
+        "tbd."
       H.script H.! A.src "/script.js" $
         pure ()
       H.script "main();"

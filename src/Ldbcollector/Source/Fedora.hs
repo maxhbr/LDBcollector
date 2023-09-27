@@ -80,7 +80,7 @@ instance LicenseFactC FedoraEntry where
         subStatementsFromStatus (_ : stmts) = subStatementsFromStatus stmts
      in [ stmt (show status) `SubStatements` subStatementsFromStatus status
         ]
-          ++ map LicenseUrl urls
+          ++ map (LicenseUrl Nothing) urls
           ++ map LicenseText (maybeToList text)
           ++ map LicenseText (maybeToList notes)
 

@@ -32,6 +32,8 @@ getClusters = do
 
       componentNodes = G.scc lngOnlySame
       clusters = map (mapMaybe (lngOnlySame `G.lab`)) componentNodes
+    --   isClusterALicense :: [LicenseName] -> Bool
+    --   isClusterALicense
   return clusters
 
 -- ############################################################################
@@ -110,7 +112,7 @@ focusSequentially needles (LicenseGraph gr node_map node_map_rev facts _) =
       )
 
 focus :: [SourceRef] -> Vector LicenseGraphNode -> (([G.Node], [G.Node], [G.Node], [G.Node]) -> LicenseGraphM a) -> LicenseGraphM a
-focus sources needles inner = timedLGM "focusing" $ do
+focus sources needles inner = timedLGM ("focusing on " ++ show needles) $ do
   debugLog "## freeze graph"
   debugOrderAndSize
   frozen <- MTL.get
@@ -118,7 +120,7 @@ focus sources needles inner = timedLGM "focusing" $ do
     unless (null sources) $ do
       debugLog ("## filter sources on " ++ show sources)
       filterSources sources
-    infoLog ("## focus on " ++ show needles)
+    debugLog ("## focus on " ++ show needles)
     needleIds <- V.toList <$> getIdsOfNodes needles
     (focusedLicenseGraph, (sameNames, otherNames, statements)) <- MTL.gets (focusSequentially needleIds)
     MTL.put focusedLicenseGraph

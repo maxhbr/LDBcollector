@@ -130,6 +130,9 @@ olTextToList t = case show t of
   "" -> []
   t' -> [t']
 
+olTextToText :: OlText -> Text
+olTextToText = T.pack . show
+
 -- olTextToRLSR :: LFRaw a => a -> OlText -> RankedLicenseStatementResult String
 -- olTextToRLSR ole t =
 --   case cleanOlText t of
@@ -746,6 +749,24 @@ noticeToMarkup
 instance LicenseFactC OlLicense where
   getType _ = "HitachiOpenLicense"
   getApplicableLNs (OlLicense {_license_name = license_name}) = LN license_name `AlternativeLNs` map LN (fixName license_name)
+  getImpliedStmts
+    oll@( OlLicense
+        { _license_schemaVersion = license_schemaVersion,
+          _license_uri = license_uri,
+          _license_baseUri = license_baseUri,
+          _license_id = license_id,
+          _license_name = license_name,
+          _license_summary = license_summary,
+          _license_description = license_description,
+          _license_permissions = license_permissions,
+          _license_notices = license_notices,
+          _license_content = license_content
+        }
+      ) = concat [ [LicenseText license_content]
+                 , [commentStmt (getType oll) (olTextToText license_description) | not (isEmptyOlText license_description)]
+                 , [commentStmt (getType oll) (olTextToText license_summary) | not (isEmptyOlText license_summary)]
+                 ]
+
   toMarkup
     ( OlLicense
         { _license_schemaVersion = license_schemaVersion,
@@ -771,8 +792,8 @@ instance LicenseFactC OlLicense where
         H.ul $ mapM_ (H.li . permissionToMarkup) license_permissions
         H.h4 "Notices:"
         H.ul $ mapM_ (H.li . olRefToMarkup noticeToMarkup) license_notices
-        H.h4 "Content:"
-        H.pre (H.toMarkup license_content)
+        -- H.h4 "Content:"
+        -- H.pre (H.toMarkup license_content)
 
 data HitachiOpenLicense = HitachiOpenLicense FilePath FilePath
 

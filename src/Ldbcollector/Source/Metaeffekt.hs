@@ -9,6 +9,7 @@ where
 import Data.Map qualified as Map
 import Data.Vector qualified as V
 import Data.Yaml qualified as Y
+import Data.Text qualified as T
 import Data.Yaml.Internal qualified as Y
 import Ldbcollector.Model
 
@@ -22,6 +23,12 @@ data MetaeffektLicense = MetaeffektLicense
     _otherIds :: [LicenseName]
   }
   deriving (Eq, Ord, Show, Generic)
+
+isLicenseVariant :: MetaeffektLicense -> Bool
+isLicenseVariant l = case _canonicalName l of
+    LicenseName _ n -> any (`T.isInfixOf` n) [ "(variant "
+                                             , "; variant "
+                                             ]
 
 instance FromJSON MetaeffektLicense where
   parseJSON = withObject "MetaeffektLicense" $ \v ->
@@ -59,10 +66,10 @@ getMetaeffektLicense yaml = do
       return []
     Right d -> return [d]
 
-newtype Metaeffekt = Metaeffekt FilePath
+data Metaeffekt = Metaeffekt Bool FilePath
 
 instance HasOriginalData Metaeffekt where
-  getOriginalData (Metaeffekt dir) =
+  getOriginalData (Metaeffekt _ dir) =
     FromUrl "https://metaeffekt.com/#universe" $
       FromUrl "https://github.com/org-metaeffekt/metaeffekt-universe" $
         FromFile dir NoPreservedOriginalData
@@ -70,6 +77,6 @@ instance HasOriginalData Metaeffekt where
 instance Source Metaeffekt where
   getSource _ = Source "Metaeffekt"
   getSourceDescription _ = Just "Project providing insights on the {metæffekt} license database."
-  getFacts (Metaeffekt dir) = do
+  getFacts (Metaeffekt dropVariants dir) = do
     yamls <- glob (dir </> "**/*.yaml")
-    V.fromList . map wrapFact . mconcat <$> mapM getMetaeffektLicense yamls
+    V.fromList . map wrapFact . filter (\l -> not (dropVariants && isLicenseVariant l)) . mconcat <$> mapM getMetaeffektLicense yamls

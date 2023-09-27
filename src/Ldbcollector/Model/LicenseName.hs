@@ -42,7 +42,10 @@ instance Eq LicenseName where
   (==) x y = toCaseFold (licenseNameToText x) == toCaseFold (licenseNameToText y)
 
 instance Ord LicenseName where
-  compare x y = compare (toCaseFold (licenseNameToText x)) (toCaseFold (licenseNameToText y))
+  compare (LicenseName ns1 n1) (LicenseName ns2 n2) = compare (toCaseFold n1, fmap toCaseFold ns1) (toCaseFold n2, fmap toCaseFold ns2)
+
+-- instance Ord LicenseName where
+--   compare x y = compare (toCaseFold (licenseNameToText x)) (toCaseFold (licenseNameToText y))
 
 instance Show LicenseName where
   show = unpack . licenseNameToText
@@ -63,11 +66,12 @@ instance ToJSON LicenseName where
   toJSON = String . pack . show
 
 instance H.ToMarkup LicenseName where
-  toMarkup (LicenseName Nothing n) = H.toMarkup n
+  toMarkup (LicenseName Nothing n) = H.span H.! A.class_ "licensename" $ H.toMarkup n
   toMarkup (LicenseName (Just ns) n) = do
-    H.span H.! A.class_ "namespace" $
+    H.span H.! A.class_ "licensename" $ do
+      H.span H.! A.class_ "namespace" $
         H.toMarkup (ns <> ":")
-    H.toMarkup n
+      H.toMarkup n
 
 data LicenseNameRelation where
   Same :: LicenseNameRelation

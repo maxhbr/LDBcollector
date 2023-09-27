@@ -27,6 +27,14 @@ data LicenseGraphNode where
   LGFact :: LicenseFact -> LicenseGraphNode
   LGVec :: [LicenseGraphNode] -> LicenseGraphNode
 
+getStatements :: LicenseGraphNode -> [LicenseStatement]
+getStatements (LGStatement stmt) = [stmt]
+getStatements (LGVec lgs) = concatMap getStatements lgs
+getStatements _ = []
+
+getAllStatements :: LicenseGraphM [LicenseStatement]
+getAllStatements = MTL.gets (concatMap (getStatements . snd) . G.labNodes . _gr)
+
 deriving instance Show LicenseGraphNode
 
 deriving instance Eq LicenseGraphNode

@@ -75,12 +75,12 @@ instance LicenseFactC FossologyEntry where
   getApplicableLNs entry =
     LN (_rf_shortname entry) `AlternativeLNs` map LN (_rf_fullname entry : maybeToList (_rf_Fedora entry))
   getImpliedStmts entry =
-    [ MaybeStatement (fmap LicenseUrl (_rf_url entry)),
-      MaybeStatement (fmap LicenseComment (_rf_notes entry)),
+    [ MaybeStatement (fmap (LicenseUrl Nothing) (_rf_url entry)),
+      MaybeStatement (fmap (commentStmt (getType entry)) (_rf_notes entry)),
       LicenseText (_rf_text entry),
       case _rf_copyleft entry of
-        Just True -> typestmt "Copyleft"
-        Just False -> typestmt "Permissive"
+        Just True -> typeStmt "Copyleft"
+        Just False -> typeStmt "Permissive"
         _ -> MaybeStatement Nothing,
       MaybeStatement (fmap (ifToStmt "OSIapproved") (_rf_OSIapproved entry)),
       MaybeStatement (fmap (ifToStmt "FSFfree") (_rf_FSFfree entry)),

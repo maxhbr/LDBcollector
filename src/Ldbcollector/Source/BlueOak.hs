@@ -116,7 +116,7 @@ alnFromBol (BlueOakLicense name id _) =
                      ]
 
 getImpliedStmtsOfBOL :: BlueOakLicense -> [LicenseStatement]
-getImpliedStmtsOfBOL (BlueOakLicense {_url = url}) = [LicenseUrl url]
+getImpliedStmtsOfBOL (BlueOakLicense {_url = url}) = [LicenseUrl Nothing url]
 
 instance LicenseFactC BlueOakCouncilFact where
   getType _ = "BlueOakCouncil"
@@ -129,8 +129,8 @@ instance LicenseFactC BlueOakCouncilFact where
           "bronze" -> NeutralLicenseRating (getType a) "Lead" $ LicenseRatingDescription notes
           "lead" -> NegativeLicenseRating (getType a) "Lead" $ LicenseRatingDescription notes
           _ -> NeutralLicenseRating (getType a) (fromString rating) NoLicenseRatingText
-     in [typestmt "Permissive", boRatingToStatement] ++ getImpliedStmtsOfBOL bol
-  getImpliedStmts (BOCCopyleft kind _ bol) = (typestmt kind `SubStatements` [typestmt "Copyleft"]) : getImpliedStmtsOfBOL bol
+     in [typeStmt "Permissive", boRatingToStatement] ++ getImpliedStmtsOfBOL bol
+  getImpliedStmts (BOCCopyleft kind _ bol) = (typeStmt kind `SubStatements` [typeStmt "Copyleft"]) : getImpliedStmtsOfBOL bol
 
 -- #############################################################################
 -- #  general  #################################################################

@@ -84,7 +84,7 @@ instance LicenseFactC OKFNLicense where
                 "approved" -> isOsiApproved (Just True)
                 "rejected" -> isOsiApproved (Just False)
                 _ -> LicenseRating $ NeutralLicenseRating "OSI" (pack osdConfromance) NoLicenseRatingText
-     in maybeToList (fmap LicenseUrl (_url l))
+     in maybeToList (fmap (LicenseUrl Nothing) (_url l))
           ++ [statusStmt, odConfromance, osdConfromance]
 
 newtype OKFN = OKFN FilePath

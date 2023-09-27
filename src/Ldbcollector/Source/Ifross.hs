@@ -15,6 +15,9 @@ import Data.Vector qualified as V
 import Data.Yaml qualified as Y
 import Ldbcollector.Model hiding (ByteString)
 
+scope :: String
+scope = "ifrOSS"
+
 data IfrossClassification = IfrossClassification
   { _name :: Text,
     _description :: Text,
@@ -38,7 +41,7 @@ classificationToLicenses prefix (IfrossClassification name description licenses 
   let cwds = prefix ++ [(name, description)]
       kvToLicense (key, value) =
         IfrossLicense
-          (newNLN "ifrOSS" $ pack key)
+          (newNLN (T.pack scope) $ pack key)
           ((newLN . T.strip . T.dropWhileEnd (== '(') . pack) key)
           value
           cwds
@@ -46,20 +49,21 @@ classificationToLicenses prefix (IfrossClassification name description licenses 
       fromSubcategories = (concatMap (classificationToLicenses cwds) . fromMaybe mempty) subcategories
    in fromLicenses ++ fromSubcategories
 
-addParsedType :: Text -> LicenseStatement -> LicenseStatement
-addParsedType "Lizenzen ohne Copyleft-Effekt (\"Permissive Licenses\")" stmt = stmt `SubStatements` [LicenseType Permissive]
-addParsedType "Lizenzen mit strengem Copyleft-Effekt" stmt = stmt `SubStatements` [LicenseType StronglyProtective]
-addParsedType "Lizenzen mit beschränktem Copyleft-Effekt" stmt = stmt `SubStatements` [LicenseType WeaklyProtective]
-addParsedType "Lizenzen mit Wahlmöglichkeiten" stmt = stmt `SubStatements` [LicenseType WeaklyProtective]
-addParsedType "Public Domain Erklärungen" stmt = stmt `SubStatements` [LicenseType PublicDomain]
-addParsedType n@"Open Source Lizenzen" stmt = stmt `SubStatements` [LicenseRating (PositiveLicenseRating "ifrOSS" n NoLicenseRatingText)]
-addParsedType n@"Ethical Licenses" stmt = stmt `SubStatements` [LicenseRating (NegativeLicenseRating "ifrOSS" n NoLicenseRatingText)]
-addParsedType n@"Sonstige (non-free) Software Lizenzen" stmt = stmt `SubStatements` [LicenseRating (NegativeLicenseRating "ifrOSS" n NoLicenseRatingText)]
-addParsedType _ stmt = stmt
-
 categoryWithDescriptionToStmt :: (Text, Text) -> LicenseStatement
 categoryWithDescriptionToStmt (classification, description) =
-  addParsedType classification $ LicenseComment classification `SubStatements` [LicenseComment description]
+    let positiveRating = LicenseRating $ PositiveLicenseRating (scope ++ " Classification") classification (LicenseRatingDescription description)
+        neutralRating  = LicenseRating $ NeutralLicenseRating (scope ++ " Classification") classification (LicenseRatingDescription description)
+        negativeRating = LicenseRating $ NegativeLicenseRating (scope ++ " Classification") classification (LicenseRatingDescription description)
+     in case classification of
+            "Lizenzen ohne Copyleft-Effekt (\"Permissive Licenses\")" -> neutralRating `SubStatements` [LicenseType Permissive]
+            "Lizenzen mit strengem Copyleft-Effekt" -> neutralRating `SubStatements` [LicenseType StronglyProtective]
+            "Lizenzen mit beschränktem Copyleft-Effekt" -> neutralRating `SubStatements` [LicenseType WeaklyProtective]
+            "Lizenzen mit Wahlmöglichkeiten" -> neutralRating `SubStatements` [LicenseType WeaklyProtective]
+            "Public Domain Erklärungen" -> negativeRating `SubStatements` [LicenseType PublicDomain]
+            "Open Source Lizenzen" -> positiveRating
+            "Ethical Licenses" -> negativeRating
+            "Sonstige (non-free) Software Lizenzen" -> negativeRating
+            _ -> neutralRating
 
 categoriesWithDescriptionToStmt :: [(Text, Text)] -> LicenseStatement
 categoriesWithDescriptionToStmt [] = noStmt
@@ -67,13 +71,13 @@ categoriesWithDescriptionToStmt [tpl] = categoryWithDescriptionToStmt tpl
 categoriesWithDescriptionToStmt (tpl : tpls) = categoryWithDescriptionToStmt tpl `SubStatements` [categoriesWithDescriptionToStmt tpls]
 
 instance LicenseFactC IfrossLicense where
-  getType _ = "ifrOSS License"
+  getType _ = scope ++ " License"
   getApplicableLNs (IfrossLicense ln lnshortened _ _) =
     if ln /= lnshortened
       then LN ln `ImpreciseLNs` [LN lnshortened]
       else LN ln
   getImpliedStmts (IfrossLicense _ _ url tpls) =
-    [ LicenseUrl url,
+    [ LicenseUrl Nothing url,
       categoriesWithDescriptionToStmt (reverse tpls)
     ]
 
@@ -86,7 +90,7 @@ instance HasOriginalData Ifross where
         FromFile yaml NoPreservedOriginalData
 
 instance Source Ifross where
-  getSource _ = Source "ifrOSS"
+  getSource _ = Source scope
   getFacts (Ifross yaml) = do
     logFileReadIO yaml
     (Y.decodeFileEither yaml :: IO (Either Y.ParseException [IfrossClassification]))

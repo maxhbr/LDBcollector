@@ -38,7 +38,7 @@ instance LicenseFactC FsfWkingData where
   getApplicableLNs (FsfWkingData {_id = id, _identifiers = identifiers, _name = name}) =
     LN id `AlternativeLNs` [LN name] `ImpreciseLNs` concatMap (\(scope, lns) -> map (LN . setNS scope) lns) (Map.assocs identifiers)
   getImpliedStmts entry =
-    map LicenseUrl (_uris entry)
+    map (LicenseUrl Nothing) (_uris entry)
       ++ map
         ( \case
             "libre" -> LicenseRating (PositiveLicenseRating "FSF" "Libre" NoLicenseRatingText)

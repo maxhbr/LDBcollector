@@ -7,6 +7,7 @@ import MyPrelude
 import Text.Blaze qualified as H
 import Text.Blaze.Html5 qualified as H
 import Text.Blaze.Html5.Attributes qualified as A
+import Data.Text qualified as T
 
 data PCLR = PCLR
   { _permissions :: [Text],
@@ -143,12 +144,35 @@ instance H.ToMarkup LicenseRating where
                 H.toMarkup reason
               _ -> pure ()
 
+data LicenseComment
+  = UnscopedLicenseComment Text
+  | ScopedLicenseComment String Text
+  deriving (Eq, Ord, Generic)
+instance Show LicenseComment where
+    show (UnscopedLicenseComment comment) = T.unpack comment
+    show (ScopedLicenseComment scope comment) = scope ++ ": " ++ T.unpack comment
+instance ToJSON LicenseComment
+
+isEmptyLicenseComment :: LicenseComment -> Bool
+isEmptyLicenseComment (UnscopedLicenseComment "") = True
+isEmptyLicenseComment (ScopedLicenseComment _ "") = True
+isEmptyLicenseComment _ = False
+
+instance H.ToMarkup LicenseComment where
+  toMarkup (UnscopedLicenseComment comment) = do
+    H.toMarkup comment
+  toMarkup (ScopedLicenseComment scope comment) = do
+    H.b $ do
+      H.toMarkup scope
+      ": "
+    H.toMarkup comment
+
 data LicenseStatement where
   LicenseStatement :: String -> LicenseStatement
   LicenseType :: LicenseType -> LicenseStatement
   LicenseRating :: LicenseRating -> LicenseStatement
-  LicenseComment :: Text -> LicenseStatement
-  LicenseUrl :: String -> LicenseStatement
+  LicenseComment :: LicenseComment -> LicenseStatement
+  LicenseUrl :: Maybe String -> String -> LicenseStatement
   LicenseText :: Text -> LicenseStatement
   LicenseRule :: Text -> LicenseStatement
   LicensePCLR :: PCLR -> LicenseStatement
@@ -168,20 +192,24 @@ noStmt = MaybeStatement Nothing
 stmt :: String -> LicenseStatement
 stmt = fromString
 
-mstmt :: Maybe String -> LicenseStatement
-mstmt = MaybeStatement . fmap fromString
+mStmt :: Maybe String -> LicenseStatement
+mStmt = MaybeStatement . fmap fromString
 
-typestmt :: String -> LicenseStatement
-typestmt = LicenseType . fromString
+typeStmt :: String -> LicenseStatement
+typeStmt = LicenseType . fromString
+
+commentStmt :: String -> Text -> LicenseStatement
+commentStmt scope = LicenseComment . ScopedLicenseComment scope
 
 ifToStmt :: String -> Bool -> LicenseStatement
 ifToStmt stmt True = LicenseStatement stmt
 ifToStmt _ False = noStmt
 
 filterStatement :: LicenseStatement -> Maybe LicenseStatement
-filterStatement (LicenseComment "") = Nothing
+filterStatement (LicenseComment lc) = if isEmptyLicenseComment lc then Nothing else Just $ LicenseComment lc
 filterStatement (LicenseStatement "") = Nothing
-filterStatement (LicenseUrl "") = Nothing
+filterStatement (LicenseUrl (Just "") url) = filterStatement (LicenseUrl Nothing url)
+filterStatement (LicenseUrl _ "") = Nothing
 filterStatement (LicenseText "") = Nothing
 filterStatement (LicenseRule "") = Nothing
 filterStatement (LicenseCompatibilities []) = Nothing
