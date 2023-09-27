@@ -1,0 +1,10 @@
+[license]
+
+expression = "LPPL-1.3a+"
+status = [ "allowed"]
+
+usage = '''
+This should be used in License tags in any situation where the License
+tag would be required to account for material under the LaTeX Project
+Public License version 1.2 or any later version. 
+'''
