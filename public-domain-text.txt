@@ -884,3 +884,14 @@ location = https://github.com/openssh/openssh-portable/blob/master/LICENCE#L101
 text = '''
 This code is hereby placed in the public domain.
 '''
+
+package = sword
+location = http://crosswire.org/svn/sword/trunk/bindings/corba/java/src/org/crosswire/util/Base64.java
+text = '''
+I am placing this code in the Public Domain. Do with it as you will.
+This software comes with no guarantees or warranties but with
+plenty of well-wishing instead!
+Please visit http://iharder.net/xmlizable
+periodically to check for updates or to contribute improvements.
+'''
+
