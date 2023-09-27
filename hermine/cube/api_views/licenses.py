@@ -165,7 +165,7 @@ class GenericViewSet(viewsets.ModelViewSet):
         ):
             generics_duplicates = list(generics_duplicates)
             generic = generics_duplicates[0]["generic"]
-            generic.triggered_by = [g["triggered_by"] for g in generics_duplicates]
+            generic.triggered_by = {g["triggered_by"] for g in generics_duplicates}
             generics_with_trigger.append(generic)
 
         specific_obligations = (
@@ -178,7 +178,7 @@ class GenericViewSet(viewsets.ModelViewSet):
         ):
             obligations_duplicate = list(obligations_duplicate)
             obligation = obligations_duplicate[0]["obligation"]
-            obligation.triggered_by = [o["triggered_by"] for o in obligations_duplicate]
+            obligation.triggered_by = {o["triggered_by"] for o in obligations_duplicate}
             obligations_with_trigger.append(obligation)
 
         serializer = GenericsAndObligationsSerializer(
