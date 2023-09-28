@@ -114,15 +114,40 @@ BSD2_PRESENT=" -e 2 -i -e two -e simplified -e freebsd "
 BSD3_PRESENT=" -e 3 -i -e new -e modified -e revised -e three -e 'no advertising' "
 BSD4_PRESENT=" -e 4 -i -e 'BSD with advertising' -e original "
 
-check_presence Apache-2.0 " -e 2" "-e 1"
 check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence Apache-1.1 " -e 1.1" "-e 2 -e 1.0"
-check_presence MPL-2.0 " -e 2" "-e 1"
-check_presence MPL-1.0 " -e 1.0" "-e 2 -e 1.1"
-check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
+check_presence Apache-2.0 " -e 2" "-e 1"
+
+check_presence Artistic-1.0 " -e 1.0 -e 1" "-e 2 "
+check_presence Artistic-2.0 " -e 2 -e 2.0 " "-e 1"
+
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
 check_presence BSD-2-Clause "$BSD2_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT $BSD2_PRESENT"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
+
+check_presence CDDL-1.0 " -e 1.0 " " -e 1.1"
+check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
+
+check_presence EPL-1.0 " -e 1.0 -e 1" " -e 2"
+check_presence EPL-2.0 " -e 2.0 -e 2" " -e 1"
+
+check_presence GPL-1.0-only " -e 1 " " -e 2 -e later -e 3"
+check_presence GPL-2.0-only " -e 2 " " -e '1 ' -e later -e 3"
+check_presence GPL-3.0-only " -e 3 " " -e '1 ' -e 2 -e later -i -e affero "
+
+check_presence GPL-1.0-or-later " -e 1 -e later" " -e 2 -e 3"
+check_presence GPL-2.0-or-later " -e 2 -e later" " -e '1 ' -e 3"
+check_presence GPL-3.0-or-later " -e 3 -e later" " -e '1 ' -e 2"
+
+check_presence MPL-1.0 " -e 1.0" "-e 2 -e 1.1"
+check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
+check_presence MPL-2.0 " -e 2" "-e 1"
+
+check_presence OFL-1.0 " -e 1.0" " -e 1.1"
+check_presence OFL-1.1 " -e 1.1" " -e 1.0"
+
+
+
 
 exit $RET
