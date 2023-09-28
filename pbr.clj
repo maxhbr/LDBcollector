@@ -16,16 +16,13 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(def lib 'com.github.pmonks/lice-comb)
-
 #_{:clj-kondo/ignore [:unresolved-namespace]}
-(def version (format "2.0.%s-RC3" (b/git-count-revs nil)))
-
 (defn set-opts
   [opts]
   (assoc opts
-         :lib          lib
-         :version      version
+         :lib          'com.github.pmonks/lice-comb
+;         :version      (pbr/calculate-version 2 0)
+         :version      (format "2.0.%s-RC4" (b/git-count-revs nil))
          :write-pom    true
          :validate-pom true
          :pom          {:description      "A Clojure library for software license detection."
