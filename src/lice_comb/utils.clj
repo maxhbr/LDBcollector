@@ -20,67 +20,76 @@
   "Miscellaneous functionality."
   (:require [clojure.string :as s]))
 
-(def ^:private strategy->string {
-  :spdx-expression                               "SPDX expression"
-  :spdx-listed-identifier-exact-match            "SPDX identifier"
-  :spdx-listed-identifier-case-insensitive-match "SPDX identifier (case insensitive match)"
-  :spdx-text-matching                            "SPDX license text matching"
-  :spdx-listed-name                              "SPDX listed name (case insensitive match)"
-  :spdx-listed-uri                               "SPDX listed URI (relaxed matching)"
-  :expression-inference                          "inferred SPDX expression"
-  :regex-matching                                "regular expression matching"
-  :unlisted                                      "fallback to unlisted LicenseRef"
-  :manual-verification                           "manual verification"})
+(def strategy->string
+  "A map that turns a matching strategy from an expression-info map into a
+  human readable equivalent.  This is mostly intended for debugging / developer
+  discovery purposes, and the behaviour may change without warning."
+  {:spdx-expression                               "SPDX expression"
+   :spdx-listed-identifier-exact-match            "SPDX identifier"
+   :spdx-listed-identifier-case-insensitive-match "SPDX identifier (case insensitive match)"
+   :spdx-text-matching                            "SPDX license text matching"
+   :spdx-listed-name                              "SPDX listed name (case insensitive match)"
+   :spdx-listed-uri                               "SPDX listed URI (relaxed matching)"
+   :expression-inference                          "inferred SPDX expression"
+   :regex-matching                                "regular expression matching"
+   :unlisted                                      "fallback to unlisted LicenseRef"
+   :manual-verification                           "manual verification"})
 
-(defn- expression-info-keyfn
-  "sort-by keyfn for lice-comb info maps"
-  [metadata]
-  (str (case (:id metadata)
-         nil "0"
-         "1")
-       "-"
-       (case (:type metadata)
-         :declared  "0"
-         :concluded "1")
-       "-"
-       (case (:confidence metadata)
-         nil        "0"
-         :high      "1"
-         :medium    "2"
-         :low       "3")
-       "-"
-       (case (:strategy metadata)
-         :spdx-expression                               "0"
-         :spdx-listed-identifier-exact-match            "1"
-         :spdx-listed-identifier-case-insensitive-match "2"
-         :spdx-text-matching                            "3"
-         :spdx-listed-name                              "4"
-         :spdx-listed-uri                               "5"
-         :expression-inference                          "6"
-         :regex-matching                                "7"
-         :unlisted                                      "8"
-         :manual-verification                           "9")))
+(defn expression-info-sort-by-keyfn
+  "A sort-by keyfn for expression-info maps.  This is mostly intended for
+  debugging / developer discovery purposes, and the behaviour may change without
+  warning."
+  [m]
+  (when m
+    (str (case (:id m)
+           nil "0"
+           "1")
+         "-"
+         (case (:type m)
+           :declared  "0"
+           :concluded "1")
+         "-"
+         (case (:confidence m)
+           nil        "0"
+           :high      "1"
+           :medium    "2"
+           :low       "3")
+         "-"
+         (case (:strategy m)
+           :spdx-expression                               "0"
+           :spdx-listed-identifier-exact-match            "1"
+           :spdx-listed-identifier-case-insensitive-match "2"
+           :spdx-text-matching                            "3"
+           :spdx-listed-name                              "4"
+           :spdx-listed-uri                               "5"
+           :expression-inference                          "6"
+           :regex-matching                                "7"
+           :unlisted                                      "8"
+           :manual-verification                           "9"))))
 
-(defn- expression-info->string
+(defn expression-info->string
   "Converts the given expression-info map into a human-readable string, using
-  the information in license-info map m."
+  the information in license-info map m.  This is mostly intended for
+  debugging / developer discovery purposes, and the behaviour may change without
+  warning."
   [m id]
-  (str id ":\n"
-    (when-let [info-list (sort-by expression-info-keyfn (seq (get m id)))]
-      (s/join "\n" (map #(str "  "
-                              (when-let [md-id (:id %)] (when (not= id md-id) (str md-id " ")))
-                              (case (:type %)
-                                :declared  "Declared"
-                                :concluded "Concluded")
-                              (when-let [confidence (:confidence %)]   (str "\n    Confidence: "    (name confidence)))
-                              (when-let [strategy   (:strategy %)]     (str "\n    Strategy: "      (get strategy->string strategy (name strategy))))
-                              (when-let [source     (seq (:source %))] (str "\n    Source:\n    > " (s/join "\n    > " source))))
-                        info-list)))))
+  (when (and m id)
+    (str id ":\n"
+      (when-let [info-list (sort-by expression-info-sort-by-keyfn (seq (get m id)))]
+        (s/join "\n" (map #(str "  "
+                                (when-let [md-id (:id %)] (when (not= id md-id) (str md-id " ")))
+                                (case (:type %)
+                                  :declared  "Declared"
+                                  :concluded "Concluded")
+                                (when-let [confidence (:confidence %)]   (str "\n    Confidence: "    (name confidence)))
+                                (when-let [strategy   (:strategy %)]     (str "\n    Strategy: "      (get strategy->string strategy (name strategy))))
+                                (when-let [source     (seq (:source %))] (str "\n    Source:\n    > " (s/join "\n    > " source))))
+                          info-list))))))
 
 (defn expressions-info->string
   "Converts the given expressions-info map into a human-readable string.  This
-  function is mostly intended for debugging / developer discovery purposes, and
-  the content and format of the output may change without warning."
+  is mostly intended for debugging / developer discovery purposes, and the
+  behaviour may change without warning."
   [m]
   (when m
     (let [ids (sort (keys m))]

@@ -36,10 +36,10 @@
   pair. Returns nil if no matches were found."
   [{:keys [name url]}]
   ; 1. Look in the name field(s)
-  (if-let [name-expressions (lciei/prepend-source "<name>" (lcmtch/name->expressions-info name))]
+  (if-let [name-expressions (lciei/prepend-source "<licenses><license><name>" (lcmtch/name->expressions-info name))]
     name-expressions
     ; 2. If the names didn't give us any licenses, look in the url field(s) (this tends to be slower and less accurate)
-    (when-let [uri-expressions (lciei/prepend-source "<url>" (lcmtch/uri->expressions-info url))]
+    (when-let [uri-expressions (lciei/prepend-source "<licenses><license><url>" (lcmtch/uri->expressions-info url))]
       uri-expressions)))
 
 (defn- xml-find-all-alts
