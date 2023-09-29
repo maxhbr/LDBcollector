@@ -21,9 +21,10 @@
   (:require [clojure.string :as s]))
 
 (def strategy->string
-  "A map that turns a matching strategy from an expression-info map into a
-  human readable equivalent.  This is mostly intended for debugging / developer
-  discovery purposes, and the behaviour may change without warning."
+  "A map that turns a matching strategy keyword (e.g. as found in an
+  expression-info map) into a human readable equivalent.  This is mostly
+  intended for debugging / developer discovery purposes, and the behaviour may
+  change without warning."
   {:spdx-expression                               "SPDX expression"
    :spdx-listed-identifier-exact-match            "SPDX identifier"
    :spdx-listed-identifier-case-insensitive-match "SPDX identifier (case insensitive match)"
@@ -72,12 +73,11 @@
   the information in license-info map m.  This is mostly intended for
   debugging / developer discovery purposes, and the behaviour may change without
   warning."
-  [m id]
-  (when (and m id)
-    (str id ":\n"
-      (when-let [info-list (sort-by expression-info-sort-by-keyfn (seq (get m id)))]
-        (s/join "\n" (map #(str "  "
-                                (when-let [md-id (:id %)] (when (not= id md-id) (str md-id " ")))
+  [m expr]
+  (when (and m expr)
+    (str expr
+      (when-let [info-list (sort-by expression-info-sort-by-keyfn (seq (get m expr)))]
+        (s/join "\n" (map #(str (when-let [md-id (:id %)] (when (not= expr md-id) (str "  " md-id " ")))
                                 (case (:type %)
                                   :declared  "Declared"
                                   :concluded "Concluded")
@@ -92,5 +92,5 @@
   behaviour may change without warning."
   [m]
   (when m
-    (let [ids (sort (keys m))]
-      (s/join "\n\n" (map (partial expression-info->string m) ids)))))
+    (let [exprs (sort (keys m))]
+      (s/join "\n\n" (map (partial expression-info->string m) exprs)))))
