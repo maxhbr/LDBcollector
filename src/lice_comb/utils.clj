@@ -75,7 +75,7 @@
   warning."
   [m expr]
   (when (and m expr)
-    (str expr
+    (str expr " "
       (when-let [info-list (sort-by expression-info-sort-by-keyfn (seq (get m expr)))]
         (s/join "\n" (map #(str (when-let [md-id (:id %)] (when (not= expr md-id) (str "  " md-id " ")))
                                 (case (:type %)
