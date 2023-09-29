@@ -863,3 +863,20 @@ Please visit http://iharder.net/xmlizable
 periodically to check for updates or to contribute improvements.
 '''
 
+package = apr-util
+location = https://github.com/apache/apr-util/blob/1.7.x/crypto/crypt_blowfish.c#L10
+           https://github.com/apache/apr-util/blob/1.7.x/crypto/crypt_blowfish.h#L2
+text = '''
+Written by Solar Designer <solar at openwall.com> in 1998-2011.
+
+No copyright is claimed, and the software is hereby placed in the public
+domain.  In case this attempt to disclaim copyright and place the software
+in the public domain is deemed null and void, then the software is
+Copyright (c) 1998-2011 Solar Designer and it is hereby released to the
+general public under the following terms:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted.
+
+There's ABSOLUTELY NO WARRANTY, express or implied.
+'''
