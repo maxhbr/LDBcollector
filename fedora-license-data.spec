@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.30
+Version:        1.31
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,41 @@ make check-grammar
 
 
 %changelog
+* Fri Sep 29 2023 Miroslav Suchý <msuchy@redhat.com> 1.31-1
+- new license: GPL-2.0-or-later WITH Autoconf-exception-macro
+- new license: LGPL-3.0-or-later WITH Autoconf-exception-macro
+- new license: HPND-export-US-modify
+- Add a public domain dedication from the SWORD Project
+- Add LPPL-1.2 as not-allowed, add LPPL-1.3a+ as allowed
+- new license: LGPL-2.1-only WITH Qt-LGPL-exception-1.1
+- new license: SGI-OpenGL
+- Add jhash public domain dedication for QEMU
+- Add QEMU to the rijndael (AES) public domain license reference
+- new license: SSH-short
+- new license: GPL-2.0-or-later WITH UBDL-exception
+- new license: McPhee-slideshow
+- new license: HPND-DEC
+- new license: magaz
+- new license: ulem
+- new license: fwlw
+- new license: Kastrup
+- Fix names of Linux-syscall-note TOML files
+- Add reference to EDK2 package public domain code
+- new license: HPND-sell-regexpr
+- new license: Cronyx
+- new license: Lucida-Bitmap-Fonts
+- new license: LPPL-1.3c
+- new license: swrule
+- new license: BSD-Inferno-Nettverk
+- Some code in OpenSSH has a Public Domain license
+- new license: ssh-keyscan
+- new license: HPND-Pbmplus
+- Add public domain text from mingw-headers/mingw-winpthreads packages
+- Add public domain test from Augeas project
+- new license: BSD-Attribution-HPND-disclaimer
+- new not allowed license: LicenseRef-Tyrian
+- Add public domain entry for squid
+
 * Thu Sep 14 2023 Miroslav Suchý <msuchy@redhat.com> 1.30-1
 - new license: LGPL-3.0-or-later WITH openvpn-openssl-exception
 - new license: BSD-3-Clause-Sun
