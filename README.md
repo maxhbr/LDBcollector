@@ -54,9 +54,11 @@ $ deps-try com.github.pmonks/lice-comb
 
 ; Initialise the matching namespace
 ; Notes:
-; 1. This is slow the first time it's run, due to Spdx-Java-Library downloading SPDX files from the internet and caching
-;    them (it takes ~1 minute on my laptop). It's substantially faster on subsequent invocations however.
-; 2. This step is optional, though initialisation will still happen regardless, and when it does you'll incur the same cost
+; 1. This is slow the first time it's run, due to Spdx-Java-Library downloading SPDX files from the
+;    internet and caching them (it takes ~1 minute on my laptop). It's substantially faster on
+;    subsequent invocations however.
+; 2. This step is optional, though initialisation will still happen regardless, and when it does
+;    you'll incur the same cost
 (lcm/init!)
 
 (lcm/name->expressions "Apache")
@@ -94,12 +96,12 @@ $ deps-try com.github.pmonks/lice-comb
 
 (lcl/dep->expressions ['aopalliance/aopalliance "1.0"])
 ;=> #{"LicenseRef-lice-comb-PUBLIC-DOMAIN"}
-; Also shows how lice-comb handles "public domain" attestations (which are not supported directly by SPDX, as they're
-; not a licensing mechanism)
+; Also shows how lice-comb handles "public domain" attestations (which are not supported directly
+; by SPDX, as they're not a licensing mechanism)
 
 
-;; Information about matches (useful for better understanding how lice-comb arrived at a given set of expressions, and
-;; how confident it is in the values it's providing)
+;; Information about matches (useful for better understanding how lice-comb arrived at a given set
+;; of expressions, and how confident it is in the values it's providing)
 (lcm/name->expressions-info "Apache-2.0")
 ;=> {"Apache-2.0" ({:type :declared, :strategy :spdx-expression, :source ("Apache-2.0")})}
 
