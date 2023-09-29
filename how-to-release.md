@@ -10,8 +10,8 @@
 == Downstream part
 
  * fkinit
- * tito release all
- * do not forget to submit bodhi update
+ * tito release --no-build all
+ * koji builds and bodhi updates are created automatically by Packit
 
 == Update legal docs
 
