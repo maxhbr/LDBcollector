@@ -46,6 +46,21 @@
   [[ga info]]
   (str ga "@" (:git/sha info) (when-let [tag (:git/tag info)] (str "/" tag))))
 
+(defn dep->pom-uri
+  "Returns a java.net.URI that points to the pom for the given tools.dep dep (a
+  MapEntry or two-element vector of `['groupId/artifactId dep-info]`), or nil if
+  the dep is not a Maven dep, or a POM could not be found.  The returned URI is
+  guaranteed to be resolvable - either to a file that exists in the local Maven
+  cache, or to an HTTP-accessible resource on a remote Maven repository (i.e.
+  Maven Central or Clojars) that resolves."
+  [dep]
+  (when (and dep
+             (= :mvn (:deps/manifest (second dep))))
+    (let [[ga info]              (normalise-dep dep)
+          [group-id artifact-id] (s/split (str ga) #"/")
+          version                (:mvn/version info)]
+      (lcihttp/gav->pom-uri group-id artifact-id version))))
+
 (defmulti dep->expressions-info
   "Returns an expressions-info map for the given tools.dep dep (a MapEntry or
   two-element vector of `['groupId/artifactId dep-info]`), or nil if no
@@ -56,13 +71,11 @@
 (defmethod dep->expressions-info :mvn
   [dep]
   (when dep
-    (let [[ga info]              (normalise-dep dep)
-          [group-id artifact-id] (s/split (str ga) #"/")
-          version                (:mvn/version info)
-          pom-uri                (lcihttp/gav->pom-uri group-id artifact-id version)
-          expressions            (if-let [expressions (lcmvn/pom->expressions-info pom-uri)]
-                                   expressions
-                                   (into {} (dom/real-pmap lcf/zip->expressions-info (:paths info))))]  ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
+    (let [info        (second dep)
+          pom-uri     (dep->pom-uri dep)
+          expressions (if-let [expressions (lcmvn/pom->expressions-info pom-uri)]
+                        expressions
+                        (into {} (dom/real-pmap lcf/zip->expressions-info (:paths info))))]  ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
       (lciei/prepend-source (dep->string dep) expressions))))
 
 (defmethod dep->expressions-info :deps

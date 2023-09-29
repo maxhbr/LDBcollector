@@ -49,12 +49,13 @@ $ deps-try com.github.pmonks/lice-comb
 ### Demo
 
 ```clojure
-;; License name, uri and full text matching
+;; Core matching functionality
 (require '[lice-comb.matching :as lcm])
 
 ; Initialise the matching namespace
 ; Notes:
-; 1. This is slow (takes ~1 minute on my laptop), almost all of which is Spdx-Java-Library's initialisation (see https://github.com/spdx/Spdx-Java-Library/issues/193)
+; 1. This is slow the first time it's run, due to Spdx-Java-Library downloading SPDX files from the internet and caching
+;    them (it takes ~1 minute on my laptop). It's substantially faster on subsequent invocations however.
 ; 2. This step is optional, though initialisation will still happen regardless, and when it does you'll incur the same cost
 (lcm/init!)
 
@@ -70,6 +71,7 @@ $ deps-try com.github.pmonks/lice-comb
 (lcm/uri->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")
 ;=> #{"Apache-2.0"}
 
+
 ;; License extraction from Maven poms, including ones that aren't locally downloaded
 (require '[lice-comb.maven :as lcmvn])
 
@@ -79,11 +81,22 @@ $ deps-try com.github.pmonks/lice-comb
 (lcmvn/pom->expressions "https://repo1.maven.org/maven2/org/springframework/spring-core/6.0.11/spring-core-6.0.11.pom")
 ;=> #{"Apache-2.0"}
 
+
 ;; License extraction from tools.deps dependency maps
 (require '[lice-comb.deps :as lcd])
 
 (lcd/dep->expressions ['org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.11.1"}])
 ;=> #{"EPL-1.0"}
+
+
+;; License extraction from Leiningen dependency vectors
+(require '[lice-comb.lein :as lcl])
+
+(lcl/dep->expressions ['aopalliance/aopalliance "1.0"])
+;=> #{"LicenseRef-lice-comb-PUBLIC-DOMAIN"}
+; Also shows how lice-comb handles "public domain" attestations (which are not supported directly by SPDX, as they're
+; not a licensing mechanism)
+
 
 ;; Information about matches (useful for better understanding how lice-comb arrived at a given set of expressions, and
 ;; how confident it is in the values it's providing)
@@ -104,6 +117,7 @@ $ deps-try com.github.pmonks/lice-comb
 ;     ({:type :declared, :strategy :spdx-expression, :source ("https://repo.clojars.org/canvas/canvas/0.1.6/canvas-0.1.6.pom"
 ;                                                             "<name>"
 ;                                                             "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0")})}
+
 
 ;; Pretty print expressions-info
 (require '[lice-comb.utils :as lcu])
