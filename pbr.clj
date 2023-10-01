@@ -22,7 +22,7 @@
   (assoc opts
          :lib          'com.github.pmonks/lice-comb
 ;         :version      (pbr/calculate-version 2 0)
-         :version      (format "2.0.%s-RC5" (b/git-count-revs nil))
+         :version      (format "2.0.%s-RC6-SNAPSHOT" (b/git-count-revs nil))
          :write-pom    true
          :validate-pom true
          :pom          {:description      "A Clojure library for software license detection."
