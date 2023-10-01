@@ -1,0 +1,14 @@
+[license]
+
+expression = "OLDAP-2.7"
+status = [ "allowed" ]
+
+[fedora]
+
+legacy-name = [
+    "OpenLDAP License"
+]
+
+legacy-abbreviation = [
+    "OpenLDAP"
+]
