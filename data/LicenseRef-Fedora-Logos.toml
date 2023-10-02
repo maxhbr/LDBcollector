@@ -1,0 +1,11 @@
+[license]
+expression = "LicenseRef-Fedora-Logos"
+status = [ "not-allowed" ]
+url = '''
+https://pagure.io/fedora-logos/blob/master/f/COPYING
+'''
+
+usage = '''
+This license can be used only in fedora-logos package.
+For more info see https://gitlab.com/fedora/legal/fedora-license-data/-/issues/218
+'''
