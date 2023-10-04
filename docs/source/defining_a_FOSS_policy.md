@@ -129,7 +129,7 @@ For instance, in the BSD-3-Clause, this would be typed :
 
 >  1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 
-#### Passivity of the obligation
+#### Active/Passive obligation
 
 **Active Obligations**
 

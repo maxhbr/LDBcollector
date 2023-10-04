@@ -367,7 +367,7 @@ class LicensePrintView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
                 p.addElement(v)
                 textdoc.text.addElement(p)
 
-            p = P(text="Passivity: ")
+            p = P(text="Passive/Active: ")
             v = Span(stylename=boldstyle, text=o.passivity)
             p.addElement(v)
             textdoc.text.addElement(p)
