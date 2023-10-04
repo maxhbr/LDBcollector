@@ -37,6 +37,7 @@ services:
       - STATIC_ROOT=/opt/hermine/static
       - ENABLE_PROFILING=${HERMINE_PROFILING:-False}
       - PRODUCTION=${HERMINE_PRODUCTION:-True}
+      - MAX_UPLOAD_SIZE=${HERMINE_MAX_UPLOAD_SIZE:-10485760}
     links:
       - db
     networks:
