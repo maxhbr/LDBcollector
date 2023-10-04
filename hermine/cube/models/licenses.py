@@ -120,7 +120,9 @@ class License(models.Model):
     url = models.URLField(max_length=200, blank=True)
     osi_approved = models.BooleanField(null=True, verbose_name="OSI Approved")
     fsf_approved = models.BooleanField(null=True, verbose_name="FSF Approved")
-    foss = models.CharField(max_length=20, choices=FOSS_CHOICES, blank=True)
+    foss = models.CharField(
+        "Actually FOSS", max_length=20, choices=FOSS_CHOICES, blank=True
+    )
     patent_grant = models.BooleanField(null=True)
     ethical_clause = models.BooleanField(null=True)
     non_commercial = models.BooleanField("Only non-commercial use", null=True)
@@ -293,7 +295,7 @@ class Obligation(models.Model):
     TRIGGER_EXPL_CHOICES = [
         (
             Usage.EXPLOITATION_DISTRIBUTION_BOTH,
-            "If the component is distributed as source code or as binary",
+            "If the component is distributed as source code or as non-source code",
         ),
         (
             Usage.EXPLOITATION_DISTRIBUTION_SOURCE,
@@ -301,9 +303,12 @@ class Obligation(models.Model):
         ),
         (
             Usage.EXPLOITATION_DISTRIBUTION_NONSOURCE,
-            "If the component is distributed as binary",
+            "If the component is distributed as non-source code",
         ),
-        (Usage.EXPLOITATION_NETWORK, "If component is accessible by network access"),
+        (
+            Usage.EXPLOITATION_NETWORK,
+            "If the features of the component are accessible through network",
+        ),
         (Usage.EXPLOITATION_INTERNAL, "If the component is used internally"),
     ]
 

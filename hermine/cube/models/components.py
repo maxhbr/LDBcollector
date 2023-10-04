@@ -42,9 +42,9 @@ class Usage(models.Model):
     EXPLOITATION_NETWORK = "NetworkAccess"
     EXPLOITATION_INTERNAL = "InternalUse"
     EXPLOITATION_CHOICES = [
-        (EXPLOITATION_DISTRIBUTION_BOTH, "Distribution source and object"),
-        (EXPLOITATION_DISTRIBUTION_SOURCE, "Distribution - Source"),
-        (EXPLOITATION_DISTRIBUTION_NONSOURCE, "Distribution Non source"),
+        (EXPLOITATION_DISTRIBUTION_BOTH, "Distribution as source code and non-source"),
+        (EXPLOITATION_DISTRIBUTION_SOURCE, "Distribution as source code"),
+        (EXPLOITATION_DISTRIBUTION_NONSOURCE, "Distribution as non source code"),
         (EXPLOITATION_NETWORK, "Network access"),
         (EXPLOITATION_INTERNAL, "Internal use"),
     ]
