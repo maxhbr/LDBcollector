@@ -234,3 +234,6 @@ if ENABLE_PROFILING:
 
     def SILKY_PERMISSIONS(user):
         return user.is_superuser
+
+
+MAX_UPLOAD_SIZE = getattr(config, "MAX_UPLOAD_SIZE", 10 * 1024 * 1024)

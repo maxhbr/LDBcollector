@@ -4,6 +4,7 @@ DEBUG = os.environ.get("PRODUCTION").lower() == "false"
 ENABLE_PROFILING = os.environ.get("ENABLE_PROFILING").lower() == "true"
 HOST = os.environ.get("HOST")
 STATIC_ROOT = os.environ.get("STATIC_ROOT")
+MAX_UPLOAD_SIZE = int(os.environ.get("MAX_UPLOAD_SIZE"))
 
 DATABASES = {
     "default": {

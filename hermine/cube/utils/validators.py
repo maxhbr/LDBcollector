@@ -3,6 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 
 from django.core.exceptions import ValidationError
+from django.conf import settings
 from license_expression import ExpressionError
 
 from .spdx import licensing, has_ors
@@ -29,5 +30,5 @@ def validate_no_ors_expression(spdx_expression: str):
 
 
 def validate_file_size(file):
-    if file.size > 1024 * 1024 * 10:
+    if file.size > settings.MAX_UPLOAD_SIZE:
         raise ValidationError("File too large ( > 10MB )")
