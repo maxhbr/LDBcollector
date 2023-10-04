@@ -31,4 +31,4 @@ def validate_no_ors_expression(spdx_expression: str):
 
 def validate_file_size(file):
     if file.size > settings.MAX_UPLOAD_SIZE:
-        raise ValidationError("File too large ( > 10MB )")
+        raise ValidationError(f"File too large ( > {settings.MAX_UPLOAD_SIZE} bytes)")
