@@ -255,6 +255,7 @@ class ReleaseExploitationDeleteView(
 
 class ReleaseLicenseChoiceCreateView(AbstractCreateUsageConditionView):
     model = LicenseChoice
+    template_name = "cube/release_licensechoice_create.html"
     form_class = CreateLicenseChoiceForm
     permission_required = "cube.add_licensechoice"
 
