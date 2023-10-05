@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2023 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 
 RET=0
 set -o pipefail
