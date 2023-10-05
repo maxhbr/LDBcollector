@@ -28,4 +28,12 @@ Hermine uses permissions according to the following rules:
 
 The following groups are created by default:
 
-TODO
+* Project manager 
+* Legal 
+* Compliance officer 
+* Guest 
+
+
+The "Admin" profile is not a group per but a `user.is_staff` attribute.
+
+(See [the Django migration](https://gitlab.com/hermine-project/hermine/-/blob/main/hermine/cube/migrations/0040_default_groups.py?ref_type=heads) for details)
