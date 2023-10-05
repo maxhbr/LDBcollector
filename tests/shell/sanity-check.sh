@@ -126,6 +126,13 @@ check_presence BSD-2-Clause "$BSD2_PRESENT" "$ZERO_BSD_PRESENT $BSD3_PRESENT "
 check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT $BSD2_PRESENT"
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
 
+check_presence CC0-1.0 " -e 1 " " -e [2-9]"
+check_presence CC-BY-3.0 " -e 3 " " -e 4"
+check_presence CC-BY-4.0 " -e 4 " " -e 3"
+check_presence CC-BY-SA-2.5 " -e 2.5 " " -e 3 -e 4"
+check_presence CC-BY-SA-3.0 " -e 3.0 " " -e 2 -e 4"
+check_presence CC-BY-SA-4.0 " -e 4.0 " " -e 2 -e 3"
+
 check_presence CDDL-1.0 " -e 1.0 " " -e 1.1"
 check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
 
@@ -140,12 +147,32 @@ check_presence GPL-1.0-or-later " -e 1 -e later" " -e 2 -e 3"
 check_presence GPL-2.0-or-later " -e 2 -e later" " -e '1 ' -e 3"
 check_presence GPL-3.0-or-later " -e 3 -e later" " -e '1 ' -e 2"
 
+check_presence LGPL-2.1-only " -e 2 " " -e 3  -e later"
+check_presence LGPL-3.0-only " -e 3 " " -e 2  -e later"
+
+check_presence LGPL-2.1-or-later " -e 2 -e later" " -e 3"
+check_presence LGPL-3.0-or-later " -e 3 -e later" " -e 2"
+
+check_presence MIT " -i -e MIT" " -e 0"
+check_presence MIT-0 " -e 0 -i -e \"no attribution\"" ""
+check_presence MIT-advertising " -e 0 -i -e advertising" " -i -e \"no advertising\""
+
 check_presence MPL-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
 check_presence MPL-2.0 " -e 2" "-e 1"
+check_presence MPL-2.0-no-copyleft-exception " -e 2 -i -e 'no copyleft'" "-e 1"
 
 check_presence OFL-1.0 " -e 1.0" " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
+
+check_presence TU-Berlin-1.0 " -e 1" " -e 2"
+check_presence TU-Berlin-2.0 " -e 2" " -e 1"
+
+check_presence X11 " -e 11 -e 'X ' -e 'X/MIT'" 
+
+check_presence ZPL-1.1 " -e 1.1" " -e 2"
+check_presence ZPL-2.0 " -e 2.0" " -e 1"
+check_presence ZPL-2.1 " -e 2.1" " -e 1.1"
 
 
 
