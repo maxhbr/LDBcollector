@@ -36,7 +36,7 @@ SPDX-License-Identifier: MIT
         <div class="navbar-menu fadeIn animated faster" id="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item"><span class="icon"><i class="fas fa-users"></i></span> {% for group in user.groups.all %} {{ group }} {%endfor%}</div>
-            <a class="navbar-item" href="{% url 'admin:auth_user_change' user.id %}">
+            <div class="navbar-item">
               <div class="is-user-avatar">
                 <span class="icon"><i class="fas fa-user"></i></span>
               </div>
@@ -44,7 +44,7 @@ SPDX-License-Identifier: MIT
                 <span>{%if user.first_name or user.last_name %}{{user.first_name}} {{user.last_name}}{%else%}{{user.username}}{%endif%}
                 </span>
               </div>
-            </a>
+            </div>
             <a title="Log out" class="navbar-item is-desktop-icon-only" href="{% url 'logout' %}">
               <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
               <span>Log out</span>
