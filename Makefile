@@ -90,7 +90,7 @@ clean:
 	find . -name "*.pyc" | xargs rm -fr
 	find . -name ".#*" | xargs rm -fr
 	rm -f .coverage
-	rm -fr python/flame.egg-info
+	rm -fr python/foss_flame.egg-info
 	rm -fr python/dist
 	rm -fr python/build
 	rm -fr python/docs/build
