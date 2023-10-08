@@ -11,6 +11,8 @@
    "BSD Zero Clause License",
    "scancode://bsd-zero",
    "scancode:bsd-zero",
-   "osi:0BSD"
+   "osi:0BSD",
+   "BSD 0-Clause",
+   "the Zero-Clause BSD license"
   ]
 }
