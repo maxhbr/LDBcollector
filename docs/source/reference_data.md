@@ -34,5 +34,5 @@ to restart your server after importing reference data.
 
 ```bash
 # in your poetry environment
-python hermine/manage.py init_reference_data path/to/reference_data.json
+python hermine/manage.py init_shared_data /path/to/shared.json
 ```
