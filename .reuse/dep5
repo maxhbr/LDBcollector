@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: flict
+Upstream-Name: FOSS Licenses
 Upstream-Contact: Henrik Sandklef <hesa@sandklef.com>
-Source: https://github.com/hesa/license-meta-db
+Source: https://github.com/hesa/foss-licenses
 
 Files: var/licenses/*.LICENSE
 Copyright: Nexb
