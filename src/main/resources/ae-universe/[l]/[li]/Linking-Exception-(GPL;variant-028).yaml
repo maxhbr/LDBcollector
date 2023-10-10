@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Linking Exception (GPL; variant 028)"
+category: "GPL Linking Exception"
+shortName: "Linking-Exception-GPL-028"
+
+type: "exception"
+
+alternativeNames:
+  - "GPL 2.0 with libgit2 exception"
+
+otherIds: 
+  - "scancode:gpl-2.0-libgit2"

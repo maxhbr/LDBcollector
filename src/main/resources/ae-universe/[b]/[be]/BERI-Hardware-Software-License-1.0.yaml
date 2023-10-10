@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "BERI Hardware-Software License 1.0"
+category: "BERI Hardware-Software"
+shortName: "BERI-Hw-Sw-1.0"
+
+alternativeNames:
+  - "http://www.beri-open-systems.org/legal/license-1-0.txt"
+  - "BERI HARDWARE-SOFTWARE LICENSE v1.0"
+
+otherIds: 
+  - "scancode:beri-hw-sw-1.0"

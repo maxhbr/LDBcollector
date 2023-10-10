@@ -1,0 +1,23 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Linking Exception (INRIA QPL 1.0)"
+category: "QPL Linking Exception"
+shortName: "Linking-Exception-QPL"
+spdxIdentifier: "QPL-1.0-INRIA-2004-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "QPL-1.0-INRIA-2004-exception"
+  - "INRIA QPL 1.0 2004 variant exception"
+  - "QPL-1.0-INRIA-2004-Exception"
+  - "inria-linking-exception"
+  - "INRIA Linking Exception"
+  - "Linking Exception (QPL)"
+  - "Linking-Exception-QPL"
+  - "QPL Linking Exception"
+
+otherIds: 
+  - "scancode:inria-linking-exception"

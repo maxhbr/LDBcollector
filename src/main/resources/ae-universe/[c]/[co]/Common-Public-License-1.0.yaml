@@ -1,0 +1,32 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Common Public License 1.0"
+category: "CPL"
+spdxIdentifier: "CPL-1.0"
+
+openCoDEStatus: "approved"
+
+osiStatus: "approved"
+osiSupersededById: "Eclipse-Public-License-1.0"
+osiCategory: "superseded"
+
+alternativeNames:
+  - "Common Public License, Version 1.0"
+  - "CPL-v1.0"
+  - "CPL-1.0"
+  - "Common Public License (CPL) -- V1.0"
+  - "Common Public License - v 1.0"
+  - "Common Public License 1.0"
+  - "Common Public License v1.0"
+  - "Common Public License version 1.0"
+  - "Common Public License v. 1.0"
+  - "CPL 1.0"
+  - "CPLv1"
+  - "https://opensource.org/licenses/cpl1.0.txt"
+  - "http://www.opensource.org/licenses/cpl1.0.txt"
+
+otherIds: 
+  - "scancode:cpl-1.0"
+  - "osi:CPL-1.0"

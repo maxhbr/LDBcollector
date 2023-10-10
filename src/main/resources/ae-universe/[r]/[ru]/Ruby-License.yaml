@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Ruby License"
+category: "Ruby"
+spdxIdentifier: "Ruby"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "Ruby License"
+  - "RubyLicense"
+  - "under the Ruby"
+  - "under Ruby"
+
+otherIds: 
+  - "scancode:ruby"

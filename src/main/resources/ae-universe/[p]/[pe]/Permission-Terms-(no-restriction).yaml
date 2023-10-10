@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Permission Terms (no restriction)"
+category: "Permission"
+shortName: "PT-no-restriction"
+spdxIdentifier: "App-s2p"
+
+alternativeNames:
+  - "Permission Terms (no restriction)"
+  - "App-s2p"
+  - "App::s2p License"
+  - "Permission Terms (App-S2p)"
+
+otherIds: 
+  - "scancode:app-s2p"

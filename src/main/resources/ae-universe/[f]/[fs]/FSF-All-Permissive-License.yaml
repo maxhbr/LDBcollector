@@ -1,0 +1,18 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "FSF All Permissive License"
+category: "FSFAP"
+spdxIdentifier: "FSFAP"
+
+openCoDEStatus: "approved"
+
+alternativeNames:
+  - "FSFAP"
+  - "FSF All Permissive"
+  - "FSF all permissive"
+
+otherIds: 
+  - "scancode:fsf-ap"
+  - "scancode:tumbolia"

@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Magpie Exception (AGPL 3.0)"
+category: "Magpie Exception"
+shortName: "Magpie-Exception-1.0"
+
+type: "exception"
+
+alternativeNames:
+  - "MAgPIE License Exception to AGPL 3.0"
+
+otherIds: 
+  - "scancode:magpie-exception-1.0"

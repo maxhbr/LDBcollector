@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "Public Domain (Bitzi)"
+category: "Public Domain Bitzi"
+shortName: "PD-Bitzi"
+
+alternativeNames:
+  - "http://bitzi.com/publicdomain"
+
+otherIds: 
+  - "scancode:bitzi-pd"

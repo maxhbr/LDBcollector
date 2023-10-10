@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "muT License"
+category: "muT License"
+shortName: "muT-License"
+
+alternativeNames:
+  - "µT-License [License Agreement for Source Code of µT-Kernel]"
+
+otherIds: 
+  - "scancode:mut-license"
