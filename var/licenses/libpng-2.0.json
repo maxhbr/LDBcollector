@@ -14,5 +14,6 @@
    "LIbpng License v2",
    "PNG Reference Library License 2",
    "scancode:libpng-v2"
-  ]
+  ],
+  "compatibility_as": "Zlib"
 }

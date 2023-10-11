@@ -51,6 +51,10 @@
         "3 clause BSD license",
         "scancode:bsd-new",
         "osi:BSD-3",
-        "osi:BSD-3-Clause"
+        "osi:BSD-3-Clause",
+        "BSD3-clause",
+        "BSD 3-Clause",
+        "BSD3-like",
+        "new BSD License"
     ]
 }
