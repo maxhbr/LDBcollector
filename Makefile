@@ -84,6 +84,8 @@ doc: py-doc
 
 build:
 	cd python && rm -fr build && python3 setup.py sdist
+	@echo "Mext command: "
+	@echo "twine upload --repository foss-flame --verbose  dist/*"
 
 clean:
 	find . -name "*~"    | xargs rm -fr
