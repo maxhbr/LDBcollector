@@ -880,3 +880,10 @@ modification, are permitted.
 
 There's ABSOLUTELY NO WARRANTY, express or implied.
 '''
+
+package = dejavu-fonts
+location = https://dejavu-fonts.github.io/License.html
+text = '''
+Fonts are © Bitstream (see below). DejaVu changes are in public domain.
+'''
+
