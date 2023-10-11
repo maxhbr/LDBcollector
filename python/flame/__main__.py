@@ -50,7 +50,7 @@ def get_parser():
     parser_e = subparsers.add_parser(
         'license', help='Convert license to SPDX identifiers and syntax')
     parser_e.set_defaults(which='license', func=license)
-    parser_e.add_argument('license', type=str, help='license expression to fix')
+    parser_e.add_argument('license', type=str, nargs='+', help='license expression to fix')
 
     # full license
     parser_e = subparsers.add_parser(
@@ -62,7 +62,7 @@ def get_parser():
     parser_c = subparsers.add_parser(
         'compat', help='Convert license to using licenses existing in the OSADL\'s matrix')
     parser_c.set_defaults(which='compat', func=compatibility)
-    parser_c.add_argument('license', type=str, help='license name to display')
+    parser_c.add_argument('license', type=str, nargs='+', help='license name to display')
     parser_c.add_argument('--validate-spdx', action='store_true', dest='validate_spdx', help='Validate that the resulting license expression is valid according to SPDX syntax', default=False)
     parser_c.add_argument('--validate-relaxed', action='store_true', dest='validate_relaxed', help='Validate that the resulting license expression is valid according to SPDX syntax, but allow non SPDX identifiers ', default=False)
     parser_c.add_argument('--validate-osadl', action='store_true', dest='validate_osadl', help='Validate that the resulting licenses are supported by OSADL\'s compatibility matrix', default=False)
@@ -112,11 +112,11 @@ def compats(fl, formatter, args):
 
 def compatibility(fl, formatter, args):
     validations = __validations(args)
-    compatibilities = fl.expression_compatibility_as(args.license, validations)
+    compatibilities = fl.expression_compatibility_as(" ".join(args.license), validations)
     return formatter.format_compatibilities(compatibilities, args.verbose)
 
 def license(fl, formatter, args):
-    expression = fl.expression_license(args.license)
+    expression = fl.expression_license(" ".join(args.license))
     return formatter.format_expression(expression, args.verbose)
 
 def full_license(fl, formatter, args):
