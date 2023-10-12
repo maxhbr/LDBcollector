@@ -84,7 +84,11 @@ doc: py-doc
 
 build:
 	cd python && rm -fr build && python3 setup.py sdist
-	@echo "Mext command: "
+
+py-release: check clean build
+	./devel/check-release.sh
+	@echo
+	@echo "To upload: "
 	@echo "twine upload --repository foss-flame --verbose  dist/*"
 
 clean:
