@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.31
+Version:        1.32
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,23 @@ make check-grammar
 
 
 %changelog
+* Thu Oct 12 2023 Miroslav Suchý <msuchy@redhat.com> 1.32-1
+- new not allowed license LicenseRef-Riverbank-SIP
+- new license: LGPL-2.1-only_WITH_Linux-syscall-note
+- new license: LicenseRef-Fedora-Logos
+- new license: GPL-3.0-or-later WITH GNU-compiler-exception
+- new license: HPND-doc-sell
+- new license: BSD-3-Clause-flex
+- new license: HPND-doc
+- new license: LGPL-2.1-or-later WITH GCC-exception-2.0
+- Add GPL-2.0-or-later WITH GPL-3.0-linking-source-exception
+- new license: BSD-3-Clause-HP
+- new license: GFDL-1.3-no-invariants-only
+- new license: OLDAP-2.7
+- new license: Adobe-Utopia
+- new license: python-ldap
+- new license: lsof
+
 * Fri Sep 29 2023 Miroslav Suchý <msuchy@redhat.com> 1.31-1
 - new license: GPL-2.0-or-later WITH Autoconf-exception-macro
 - new license: LGPL-3.0-or-later WITH Autoconf-exception-macro
