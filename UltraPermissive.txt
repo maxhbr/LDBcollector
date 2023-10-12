@@ -33,6 +33,8 @@ text = '''
 .\" %%%LICENSE_END
 '''
 
+# Treat "May be freely redistributed" as UltraPermissive unless context indicates no
+# permission to modify was intended
 package = man-pages-ja
 location = https://linuxjm.osdn.jp/manual/LDP_man-pages/release/man2/getitimer.2
 text = '''
