@@ -36,8 +36,14 @@ def get_parser():
 
     parser.add_argument('-c', '--check',
                         action='store_true',
-                        help='check all license files against JSON schema when initializing',
+                        help='check all license files against JSON schema when initializing. Mainly for the flame developers.',
                         default=False)
+
+    parser.add_argument('-V', '--version',
+                        action='store_true',
+                        help='output version information',
+                        default=False)
+    parser.set_defaults(which='version', func=version_info)
 
     parser.add_argument('-of', '--output-format',
                         type=str,
@@ -109,6 +115,9 @@ def licenses(fl, formatter, args):
 def compats(fl, formatter, args):
     all_compats = fl.compatibility_as_list()
     return formatter.format_compat_list(all_compats, args.verbose)
+
+def version_info(fl, formatter, args):
+    return flame.config.SW_VERSION
 
 def compatibility(fl, formatter, args):
     validations = __validations(args)
