@@ -1870,6 +1870,11 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
+  - id: "Minpack"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
   - id: "Linux-OpenIB"
     categories:
       - "permissive"
