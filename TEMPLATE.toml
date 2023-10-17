@@ -91,6 +91,16 @@ status = [ "" ]
 #text = '''
 #'''
 
+# When license is "not-allowed", but there are known Fedora packages that
+# has been granted an exception to use this license. This name of source
+# package.
+#
+# This field is optional.
+#packages_with_exceptions = [
+#    "package1",
+#    "package2"
+#]
+
 # The 'fedora' block contains additional information specific to the 
 # Fedora Project regarding the license.  This section is optional 
 # and any of the fields in it are optional.
