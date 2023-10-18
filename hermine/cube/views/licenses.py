@@ -35,7 +35,7 @@ from cube.utils.reference import (
     join_obligations,
     GENERIC_SHARED_FIELDS,
 )
-from cube.views.mixins import SearchMixin, LicenseRelatedMixin
+from cube.views.mixins import SearchMixin, LicenseRelatedMixin, SharedDataRequiredMixin
 
 
 class FormErrorsToMessagesMixin:
@@ -143,7 +143,9 @@ class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
     template_name = "cube/license_create.html"
 
 
-class LicenseDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+class LicenseDiffView(
+    LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, DetailView
+):
     permission_required = "cube.view_license"
     model = License
     template_name = "cube/license_diff.html"
@@ -500,7 +502,9 @@ class GenericUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
         return reverse("cube:generic_detail", args=[self.object.id])
 
 
-class GenericDiffView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+class GenericDiffView(
+    LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, DetailView
+):
     permission_required = "cube.view_generic"
     model = Generic
     template_name = "cube/generic_diff.html"
@@ -548,7 +552,9 @@ class GenericDiffUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateV
         return modelform_factory(Generic, fields=[self.kwargs["field"]])
 
 
-class SharedReferenceView(LoginRequiredMixin, PermissionRequiredMixin, TemplateView):
+class SharedReferenceView(
+    LoginRequiredMixin, PermissionRequiredMixin, SharedDataRequiredMixin, TemplateView
+):
     permission_required = "cube.view_licenses"
     template_name = "cube/shared_reference.html"
 

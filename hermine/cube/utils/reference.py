@@ -202,7 +202,7 @@ def join_obligations(local, ref):
 
 
 @lru_cache(maxsize=None)
-def _is_shared_reference_loaded():
+def is_shared_reference_loaded():
     """Check if the reference database is loaded.
 
     :return: True if the reference database is loaded, False otherwise
@@ -220,5 +220,5 @@ def _is_shared_reference_loaded():
 
 def shared_reference_loaded_context_processor(request):
     return {
-        "is_shared_reference_loaded": _is_shared_reference_loaded(),
+        "is_shared_reference_loaded": is_shared_reference_loaded(),
     }

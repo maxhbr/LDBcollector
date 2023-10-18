@@ -7,9 +7,11 @@ from urllib.parse import urlparse
 from django.db.models import Q, Count, Subquery, OuterRef, F, Value
 from django.db.models.functions import Coalesce
 from django.forms import Form, CharField
+from django.http import Http404
 from django.shortcuts import get_object_or_404
 
 from cube.models import License, Release
+from cube.utils.reference import is_shared_reference_loaded
 
 
 class SearchForm(Form):
@@ -164,3 +166,10 @@ class ReleaseExploitationFormMixin:
         context["custom_scopes"] = custom_scopes
 
         return context
+
+
+class SharedDataRequiredMixin:
+    def dispatch(self, *args, **kwargs):
+        if not is_shared_reference_loaded():
+            raise Http404("Shared data not loaded")
+        return super().dispatch(*args, **kwargs)
