@@ -32,7 +32,8 @@ def usage(prog):
 
 
 def add_license_data(
-    i, licensedata, approved, fedora_names, fedora_abbrev, spdx_abbrev, status, url, usage, text
+    i, licensedata, approved, fedora_names, fedora_abbrev, spdx_abbrev, status, url, usage, text,
+    packages_with_exceptions
 ):
     licensedata[i] = {
         "license": {
@@ -50,6 +51,8 @@ def add_license_data(
         licensedata[i]["license"]["usage"] = usage
     if text:
         licensedata[i]["license"]["text"] = text
+    if packages_with_exceptions:
+        licensedata[i]["license"]["packages_with_exceptions"] = packages_with_exceptions
 
     # DEPRECATED part
     if isinstance(fedora_abbrev, str):
@@ -126,6 +129,7 @@ if __name__ == "__main__":
         spdx_abbrev = None
         fedora_abbrevs = None
         fedora_names = None
+        packages_with_exceptions = None
 
         # field: 'approved'
         status = data["license"]["status"]
@@ -140,6 +144,7 @@ if __name__ == "__main__":
         text = data["license"].get("text")
         if text:
             text = text.strip()
+        packages_with_exceptions = data["license"].get("packages_with_exceptions")
 
         approved = "yes" if status and all(s in allowed_values for s in status) else "no"
 
@@ -177,7 +182,7 @@ if __name__ == "__main__":
         if isinstance(fedora_abbrevs, str) or isinstance(fedora_abbrevs, list):
             i = add_license_data(
                 i, licensedata, approved, fedora_names, fedora_abbrevs, spdx_abbrev,
-                status, url, usage, text  # noqa: E501
+                status, url, usage, text, packages_with_exceptions  # noqa: E501
             )
         else:
             # Handle licenses with only an SPDX legacy-abbreviation, not a Fedora legacy-abbreviation
@@ -196,6 +201,8 @@ if __name__ == "__main__":
                 licensedata[i]["license"]["usage"] = usage
             if text:
                 licensedata[i]["license"]["text"] = text
+            if packages_with_exceptions:
+                licensedata[i]["license"]["packages_with_exceptions"] = packages_with_exceptions
             i += 1
 
     # write out the license data
