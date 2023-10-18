@@ -11,6 +11,10 @@ usage = '''
 Allowed only in continued Fedora packaging of fdk-aac-free.
 '''
 
+packages_with_exceptions = [
+    "fdk-aac-free"
+]
+
 [fedora]
 
 legacy-name = [
