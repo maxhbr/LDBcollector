@@ -6,6 +6,12 @@ Uses of source code released by the Trusted Computing Group under this
 license in the packages libtpms and tss2, historically assumed by Fedora
 to be "good" prior to 2022-08-01, are allowed.
 '''
+
+packages_with_exceptions = [
+    "libtpms",
+    "tss2"
+]
+
 text = '''
 Licenses and Notices
 
