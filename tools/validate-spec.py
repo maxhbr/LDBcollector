@@ -154,7 +154,17 @@ if __name__ == "__main__":
                 r = 1
 
             keys.remove("usage")
-                
+
+        if "packages_with_exceptions" in keys:
+            if not isinstance(data["license"]["packages_with_exceptions"], list):
+                sys.stderr.write(
+                    "*** %s has 'packages_with_exceptions' value not of list type in the [license] block\n"  # noqa: E501
+                    % licensefile.name
+                )
+                r = 1
+
+            keys.remove("packages_with_exceptions")
+
         if "text" in keys:
             if not isinstance(data["license"]["text"], str):
                 sys.stderr.write(
