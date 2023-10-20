@@ -1,4 +1,4 @@
-# 文件介绍
+# 知识库文件介绍
 知识库包括两组文件：
 
 1，供人类阅读的文件（具有更好的解释性）: `TermFeatures_63license_cn.xlsx`、`Compatibility_63licenses_cn.xlsx`, 在此目录下。
