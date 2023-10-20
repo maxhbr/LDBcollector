@@ -11,29 +11,13 @@ Files: docs/*
 Copyright: 2021 Hermine-team <hermine@inno3.fr>
 License: CC-BY-4.0
 
-Files: hermine/cube/static/cube/webfonts/*.woff
-Copyright: Font Awesome
-License: OFL-1.1
-
-Files: hermine/cube/static/cube/webfonts/*.woff2
-Copyright: Font Awesome
-License: OFL-1.1
-
-Files: hermine/cube/static/cube/webfonts/*.ttf
-Copyright: Font Awesome
-License: OFL-1.1
-
-Files: hermine/cube/static/cube/webfonts/*.eot
-Copyright: Font Awesome
-License: OFL-1.1
-
-Files: hermine/cube/static/cube/webfonts/*.svg
-Copyright: Font Awesome
-License: CC-BY-4.0
-
-Files: hermine/cube/static/cube/webfonts/nunito/*
+Files: hermine/vite_modules/src/hermine/fonts/*
 Copyright: 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
 License: OFL-1.1
+
+Files: hermine/vite_modules/src/hermine/theme/*
+Copyright: 2019-2020 JustBoil.me (https://justboil.me)
+License: MIT
 
 Files: testfiles/*
 Copyright: Not copyrightable
@@ -79,7 +63,19 @@ Files: docker-compose.yml
 Copyright: 2021 Hermine-team <hermine@inno3.fr>
 License: CC0-1.0
 
-Files: poetry.lock
+Files: package.json
+Copyright: Not copyrightable
+License: CC0-1.0
+
+Files: package-lock.json
+Copyright: Not copyrightable
+License: CC0-1.0
+
+Files:poetry.lock
+Copyright: Not copyrightable
+License: CC0-1.0
+
+Files:CHANGELOG.md
 Copyright: Not copyrightable
 License: CC0-1.0
 
