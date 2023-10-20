@@ -108,7 +108,7 @@ SPDX-License-Identifier: AGPL-3.0-only
       </div>
       <div class="message-body">
         Certain ANDs in licence expression are actually ORs, triggering unnecessary constraints.
-        Please check and confirm/correct them.
+        Please check and confirm/correct the following {{ to_confirm|length }} usages.
       </div>
     </article>
 
@@ -222,7 +222,7 @@ SPDX-License-Identifier: AGPL-3.0-only
         <p>Some components need an explicit license choice</p>
       </div>
       <div class="message-body">
-        Those license Expressions contain several licenses. Choose whether you want to use one of them or every of them
+        {{ to_resolve|length }} license Expressions contain several licenses. Choose whether you want to use one of them or every of them
       </div>
     </article>
 
