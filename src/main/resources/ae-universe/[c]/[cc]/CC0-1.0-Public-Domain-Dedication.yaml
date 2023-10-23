@@ -3,8 +3,8 @@
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
 canonicalName: "CC0 1.0 Public Domain Dedication"
-category: "CC-PDDC"
-shortName: "CC-PDDC-1.0"
+category: "CC0-PDD"
+shortName: "CC0-1.0-PDD"
 
 openCoDEStatus: "(approved)"
 openCoDESimilarLicenseId: "CC-PDDC"
