@@ -166,6 +166,21 @@ class ReleaseStepsAPITestCase(BaseHermineAPITestCase):
         self.assertEqual(
             len(res.data["resolved"]), 2
         )  # ambiguous-dependency and invalid-dependency
+        self.assertEqual(Usage.objects.filter(license_expression="").count(), 0)
+        # test license_chosen field is correctly set
+        self.assertEqual(
+            [
+                lic.spdx_id
+                for lic in Usage.objects.filter(
+                    license_expression="LicenseRef-fakeLicense-Allowed-1.0"
+                )
+                .first()
+                .licenses_chosen.all()
+            ],
+            [
+                "LicenseRef-fakeLicense-Allowed-1.0",
+            ],
+        )
 
         res = self.client.post(
             reverse("cube:releases-update-validation", kwargs={"id": 1})

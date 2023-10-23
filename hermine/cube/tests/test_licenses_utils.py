@@ -26,7 +26,7 @@ class ObligationsTestCase(TestCase):
         self.component1 = Component.objects.create()
         self.version1 = Version.objects.create(component=self.component1)
 
-        self.license1 = License.objects.create()
+        self.license1 = License.objects.create(spdx_id="LicenseRef-FakeLicense-1.0")
         self.generic1 = Generic.objects.create()
         self.obligation_with_generic = Obligation.objects.create(
             name="obligation1", license=self.license1, generic=self.generic1
@@ -34,8 +34,11 @@ class ObligationsTestCase(TestCase):
         self.obligation_specific = Obligation.objects.create(
             name="obligation2", license=self.license1
         )
-        self.usage1 = Usage.objects.create(release=self.release1, version=self.version1)
-        self.usage1.licenses_chosen.set([self.license1])
+        self.usage1 = Usage.objects.create(
+            release=self.release1,
+            version=self.version1,
+            license_expression=self.license1.spdx_id,
+        )
 
     def test_simple_usage_obligation(self):
         generics, specifics, licenses_involved = get_usages_obligations([self.usage1])

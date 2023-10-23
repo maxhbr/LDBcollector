@@ -15,7 +15,7 @@ from cube.models import (
 from cube.utils.licenses import (
     check_licenses_against_policy,
 )
-from cube.utils.spdx import has_ors, is_ambiguous, simplified, explode_spdx_to_units
+from cube.utils.spdx import has_ors, is_ambiguous, simplified
 
 logger = logging.getLogger(__name__)
 
@@ -100,14 +100,7 @@ def propagate_choices(release: Release):
             continue
 
         if not has_ors(usage.version.effective_license):
-            licenses_spdx_ids = explode_spdx_to_units(usage.version.effective_license)
-
             try:
-                licenses = [
-                    License.objects.get(spdx_id=spdx_id)
-                    for spdx_id in licenses_spdx_ids
-                ]
-                usage.licenses_chosen.set(licenses)
                 usage.license_expression = usage.version.effective_license
                 usage.save()
             except License.DoesNotExist:
@@ -127,11 +120,6 @@ def propagate_choices(release: Release):
                 to_resolve.add(usage)
             else:
                 usage.license_expression = expression_out
-                licenses = [
-                    License.objects.get(spdx_id=spdx_id)
-                    for spdx_id in set(explode_spdx_to_units(expression_out))
-                ]
-                usage.licenses_chosen.set(licenses)
                 usage.save()
                 resolved.add(usage)
 
