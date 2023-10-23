@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "stunnel Exception"
+category: "stunnel-exception"
+spdxIdentifier: "stunnel-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "stunnel-exception"
+  - "stunnel Exception"
+

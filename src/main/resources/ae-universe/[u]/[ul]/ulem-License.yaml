@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Adobe Flex SKL"
-category: "Adobe Flex SKL"
-shortName: "FlexSkl"
+canonicalName: "ulem License"
+category: "ulem"
+spdxIdentifier: "ulem"
 
 alternativeNames:
-  - "Adobe Flex SKL"
+  - "ulem License"
 

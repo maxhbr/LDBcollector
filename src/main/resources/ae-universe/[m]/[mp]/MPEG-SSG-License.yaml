@@ -4,7 +4,7 @@
 
 canonicalName: "MPEG SSG License"
 category: "MPEG SSG License"
-shortName: "MPEG-SSG"
+spdxIdentifier: "MPEG-SSG"
 
 alternativeNames:
   - "http://www.mpeg.org/MPEG/video/mssg-free-mpeg-software.html"

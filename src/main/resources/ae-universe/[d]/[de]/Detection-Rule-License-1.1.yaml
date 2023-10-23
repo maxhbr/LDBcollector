@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "TTYP0 License"
-category: "TTYP0 License"
-spdxIdentifier: "TTYP0"
+canonicalName: "Detection Rule License 1.1"
+category: "Detection Rule"
+shortName: "DRL-1.1"
 
 alternativeNames:
-  - "TTYP0 License"
+  - "Detection Rule License (DRL) 1.1"
 
 otherIds: 
-  - "scancode:ttyp0"
+  - "scancode:drl-1.1"
