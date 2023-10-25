@@ -16,7 +16,10 @@ from django.conf import settings
 SECRET_KEY = "your-django-secret-key"
 
 HOST = "example.com"
-# CSRF_TRUSTED_ORIGINS = ["https://" + HOST] # only required if you use a reverse proxy
+# Reverse proxy configuration
+# USE_X_FORWARDED_HOST = True
+# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+# CSRF_TRUSTED_ORIGINS = ["https://" + HOST]
 
 # Static files location, defaults to static/ in the Hermine root dir
 # In production, static files should be served by a web server like nginx
