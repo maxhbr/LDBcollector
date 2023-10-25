@@ -11,7 +11,7 @@
 
 # Build vite modules on a separate image so we do not
 # install node on the runtime image
-FROM node:latest as build
+FROM node:20 as build
 
 ARG BUILD_PATH=/opt/hermine
 
