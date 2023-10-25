@@ -29,6 +29,9 @@ You can update these credentials from `http://example.com/admin/auth/user/`.
 In case you need to access the `django-admin` tool from outside Docker, you should use :
 `docker exec -it hermine_django_1 /opt/hermine/manage.py`
 
+To automatically init the database with [reference data](reference_data.md), just put the `shared.json` file in the `docker/` directory
+before starting the containers.
+
 ### HTTPS profile
 
 You just need to set `HERMINE_SECRET` and `HERMINE_HOST` environment variables before
@@ -68,7 +71,6 @@ echo "PORT=9000" >> .env
 docker-compose --profile localhost up -d
 ```
 
-(Install-dev)=
 ## Manual install
 
 ### Downloading the source code
