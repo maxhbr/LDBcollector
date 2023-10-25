@@ -7,6 +7,10 @@ STATIC_ROOT = os.environ.get("STATIC_ROOT")
 MAX_UPLOAD_SIZE = int(os.environ.get("MAX_UPLOAD_SIZE"))
 CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS")
 
+if os.environ.get("TRUST_PROXY_HEADERS", False).lower() == "true":
+    USE_X_FORWARDED_HOST = True
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
