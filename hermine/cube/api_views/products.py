@@ -401,11 +401,11 @@ class UploadORTViewSet(CreateModelMixin, viewsets.GenericViewSet):
 
     def perform_create(self, serializer):
         ort_file = serializer.validated_data["ort_file"]
-        release = serializer.validated_data["release_id"]
+        release = serializer.validated_data["release"]
         import_ort_evaluated_model_json_file(
             ort_file,
             release.id,
-            serializer.validated_date.get("replace", False),
+            serializer.validated_data.get("replace", False),
             linking=serializer.validated_data.get("linking", ""),
         )
         return Response()
