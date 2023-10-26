@@ -18,6 +18,12 @@
                 "type": "string"
               }
             },
+            "packages_with_exceptions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
             "url": { "type": "string" }
           }
         },
