@@ -1,5 +1,5 @@
 [license]
-expression = "LicenseRef-LLaMA-2"
+expression = "LicenseRef-Llama-2"
 status = [ "not-allowed" ]
 url = '''
 https://github.com/facebookresearch/llama/blob/7c0a08ec24ce91880184ba9002227624262904a2/LICENSE
