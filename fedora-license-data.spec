@@ -6,7 +6,7 @@
 %endif
 
 Name:           fedora-license-data
-Version:        1.32
+Version:        1.33
 Release:        1%{?dist}
 Summary:        Fedora Linux license data
 
@@ -97,6 +97,15 @@ make check-grammar
 
 
 %changelog
+* Fri Oct 27 2023 Miroslav Suchý <msuchy@redhat.com> 1.33-1
+- add packages_with_exceptions to JSON schema
+- document packages_with_exceptions for LicenseRef-Fedora-Logos
+- document packages_with_exceptions for LicenseRef-TCGL
+- document packages_with_exceptions for FDK-AAC
+- include packages_with_exceptions field in json and in toml validation
+- Template - document exception of not-allowed license
+- not allowed license LicenseRef-novint
+
 * Thu Oct 12 2023 Miroslav Suchý <msuchy@redhat.com> 1.32-1
 - new not allowed license LicenseRef-Riverbank-SIP
 - new license: LGPL-2.1-only_WITH_Linux-syscall-note
