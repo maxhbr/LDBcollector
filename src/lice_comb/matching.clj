@@ -186,7 +186,7 @@
   [name]
   (when-not (s/blank? name)
     (let [name (s/trim name)]
-      ; 1. If it's a valid SPDX expression, return the normalised rendition of it in a set
+      ; 1. If it's a valid SPDX expression, return the normalised rendition of it
       (if-let [normalised-expression (sexp/normalise name)]
         {normalised-expression (list {:type :declared :strategy :spdx-expression :source (list name)})}
         ; 2. If it's a URI, use URI matching (this is to handle messed up real world cases where license names in POMs contain a URI)
