@@ -979,3 +979,10 @@ location = https://github.com/vrpn/vrpn/blob/master/README.Legal#L1
 text = '''
 The initial release of VRPN (The Virtual Reality Peripheral Network) was placed into the public domain on 5/4/1998 by the copyright holder Russell M. Taylor II at the University of North Carolina at Chapel Hill.
 '''
+
+package = libsass
+location = https://github.com/sass/libsass/blob/master/src/cencode.c#L4
+text = '''
+This is part of the libb64 project, and has been placed in the public domain.
+For details, see http://sourceforge.net/projects/libb64
+'''
