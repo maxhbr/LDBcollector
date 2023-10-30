@@ -242,7 +242,7 @@
        :latest-ver "2.0"}
       {:id         "Beerware"
        :regex      #"(?i)\bBeer-?ware\b"
-       :fn         (constantly ["Beerware" :medium])}
+       :fn         (constantly ["Beerware" :high])}
       {:id         "BSL"
        :regex      #"(?i)\bBoost(\s+Software)?(\s+Licen[cs]e)?[\s,-]*(?<version>\d+(\.\d+)?)?\b"
        :fn         generic-id-constructor
@@ -253,7 +253,7 @@
        :fn         bsd-id-constructor}
       {:id         "CC0"
        :regex      #"(?i)\bCC\s*0"
-       :fn         (constantly ["CC0-1.0" :medium])}
+       :fn         (constantly ["CC0-1.0" :high])}
       {:id         "CECILL"
        :regex      #"(?i)\bCeCILL(\s+Free)?(\s+Software)?(\s+Licen[cs]e)?(\s+Agreement)?[\s,-]*(\s*V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\b"
        :fn         generic-id-constructor
@@ -291,7 +291,7 @@
        :latest-ver "1.2"}
       {:id         "FreeBSD"
        :regex      #"(?i)\bFreeBSD\b"
-       :fn         (constantly ["BSD-2-Clause-FreeBSD" :medium])}
+       :fn         (constantly ["BSD-2-Clause-FreeBSD" :high])}
       {:id         "GNU license family"
        :regex      gnu-re
        :fn         gpl-id-constructor
@@ -299,13 +299,13 @@
        :latest-ver 3.0}
       {:id         "Hippocratic"
        :regex      #"(?i)\bHippocratic\b"
-       :fn         (constantly ["Hippocratic-2.1" :medium])}  ; There are no other listed versions of this license
+       :fn         (constantly ["Hippocratic-2.1" :high])}  ; There are no other listed versions of this license
       {:id         "LLVM-exception"
        :regex      #"(?i)\bLLVM[\s-]+Exception\b"
-       :fn         (constantly ["LLVM-exception" :medium])}
+       :fn         (constantly ["LLVM-exception" :high])}
       {:id         "MIT"
        :regex      #"(?i)\b(MIT|Bouncy\s+Castle)(?![\s/]*(X11|ISC))(\s+Public)?(\s+Licen[cs]e)?\b"
-       :fn         (constantly ["MIT" :medium])}
+       :fn         (constantly ["MIT" :high])}
       {:id         "MPL"
        :regex      #"(?i)\b(MPL|Mozilla)(\s+Public)?(\s+Licen[cs]e)?[\s,-]*(V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\b"
        :fn         generic-id-constructor
@@ -313,7 +313,7 @@
        :latest-ver "2.0"}
       {:id         "MX4J"
        :regex      #"(?i)\bMX4J\s+Licen[cs]e(,?\s+v(ersion)?\s*1\.0)?\b"
-       :fn         (constantly ["Apache-1.1" :medium])}  ; See https://github.com/spdx/license-list-XML/pull/594 - the MX4J license *is* the Apache-1.1 license, according to SPDX
+       :fn         (constantly ["Apache-1.1" :high])}  ; See https://github.com/spdx/license-list-XML/pull/594 - the MX4J license *is* the Apache-1.1 license, according to SPDX
       {:id         "NASA"
        :regex      #"(?i)\bNASA(\s+Open)?(\s+Source)?(\s+Agreement)?[\s,-]+(V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?\b"
        :fn         generic-id-constructor
@@ -324,13 +324,13 @@
        :fn         (constantly ["Plexus" :medium])}
       {:id         "Proprietary or commercial"
        :regex      #"(?i)\b(Propriet[aoe]ry|Commercial|All\s+Rights\s+Reserved|Private)\b"
-       :fn         (constantly [(lcis/proprietary-commercial) :medium])}
+       :fn         (constantly [(lcis/proprietary-commercial) :high])}
       {:id         "Public Domain"
        :regex      #"(?i)\bPublic\s+Domain(?![\s\(]*CC\s*0)"
-       :fn         (constantly [(lcis/public-domain) :medium])}
+       :fn         (constantly [(lcis/public-domain) :high])}
       {:id         "Ruby"
        :regex      #"(?i)\bRuby(\s+Licen[cs]e)?\b"
-       :fn         (constantly ["Ruby" :medium])}
+       :fn         (constantly ["Ruby" :high])}
       {:id         "SGI-B"
        :regex      #"(?i)\bSGI(\s+Free)?(\s+Software)?(\s+Licen[cs]e)?([\s,-]+(V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?)?\b"
        :fn         generic-id-constructor
@@ -338,13 +338,13 @@
        :latest-ver "2.0"}
       {:id         "Unlicense"
        :regex      #"(?i)\bUnlicen[cs]e\b"
-       :fn         (constantly ["Unlicense" :medium])}
+       :fn         (constantly ["Unlicense" :high])}
       {:id         "WTFPL"
        :regex      #"(?i)\b(WTFPL|DO-WTF-U-WANT-2|Do\s+What\s+The\s+Fuck\s+You\s+Want\s+To(\s+Public)?(\s+Licen[cs]e)?)\b"
-       :fn         (constantly ["WTFPL" :medium])}
+       :fn         (constantly ["WTFPL" :high])}
       {:id         "Zlib"
        :regex      #"\b(?i)zlib(?![\s/]+libpng)\b"
-       :fn         (constantly ["Zlib" :medium])}
+       :fn         (constantly ["Zlib" :high])}
       ])))
 
 (defn- match
