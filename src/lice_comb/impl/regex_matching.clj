@@ -206,7 +206,7 @@
 (def lgpl-re          #"(?<lgpl>L\s?GPL|GNU\s+(Library|Lesser)|(Library|Lesser)\s+(L?GPL|General\s+Public\s+Licen[cs]e))(\s+or\s+Lesser)?(\s+General)?(\s+Pub?lic)?(\s+Licen[cs]e)?(\s+\(?LGPL\)?)?")
 (def gpl-re           #"(?<!(Affero|Lesser|Library)\s+)(?<gpl>GNU(?!\s+Classpath)|(?<!(L|A)\s*)GPL|General\s+Public\s+Licen[cs]e)(?!\s+(Affero|Library|Lesser|General\s+Lesser|General\s+Library|LGPL|AGPL))((\s+General)?(?!\s+(Affero|Lesser|Library))\s+Public\s+Licen[cs]e)?(\s+\(?GPL\)?)?")
 (def version-re       #"[\s,-]*(_?V(ersion)?)?[\s\._]*(?<version>\d+([\._]\d+)?)?")
-(def only-or-later-re #"[\s-]*((?<only>only)|(\(?or(\s+\(?at\s+your\s+(option|discretion)\)?)?(\s+any)?)?([\s-]*(?<orLater>later|lator|newer|\+)))?")
+(def only-or-later-re #"[\s-]*((?<only>\(?only\)?)|(\(?or(\s+\(?at\s+your\s+(option|discretion)\)?)?(\s+any)?)?([\s-]*(?<orLater>later|lator|newer|\+)))?")
 (def gnu-re           (lciu/re-concat "(?x)(?i)\\b(\n# Alternative 1: AGPL\n"
                                       agpl-re
                                       "\n# Alternative 2: LGPL\n|"

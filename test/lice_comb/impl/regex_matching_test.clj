@@ -173,6 +173,7 @@
   "The GNU General Public License"                                               '("GPL-3.0-only")
   "The GNU General Public License v3.0"                                          '("GPL-3.0-only")
   "The GNU General Public License, Version 2  "                                  '("GPL-2.0-only")
+  "GNU General Public License version 2 (only)"                                  '("GPL-2.0-only")
   })
 
 (def cc-by-licenses-and-ids {
