@@ -21,6 +21,7 @@
   for license information."
   (:require [clojure.string                  :as s]
             [clojure.java.io                 :as io]
+            [clojure.tools.logging           :as log]
             [lice-comb.matching              :as lcmtch]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.impl.expressions-info :as lciei]
@@ -132,14 +133,26 @@
 
   The optional `opts` map has these keys:
   * `include-zips?` (boolean, default false) - controls whether zip compressed
-    files found in the directory are recursively included in the scan or not"
+    files found in the directory are recursively included in the scan or not
+
+  Note: logs and ignores errors (XML parsing errors, ZIP file errors)"
   ([dir] (dir->expressions-info dir nil))
   ([dir {:keys [include-zips?] :or {include-zips? false}}]
    (when (lciu/readable-dir? dir)
      (lciei/prepend-source (lciu/filepath dir)
-                           (let [file-expressions (into {} (map file->expressions-info (probable-license-files dir)))]
+                           (let [file-expressions (into {} (filter identity (map #(try
+                                                                                    (file->expressions-info %)
+                                                                                    (catch Exception e
+                                                                                      (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
+                                                                                      nil))
+                                                                                 (probable-license-files dir))))]
                              (if include-zips?
-                               (let [zip-expressions (into {} (map #(try (zip->expressions-info %) (catch Exception _ nil)) (zip-compressed-files dir)))]
+                               (let [zip-expressions (into {} (filter identity (map #(try
+                                                                                       (zip->expressions-info %)
+                                                                                       (catch Exception e
+                                                                                         (log/warn (str "Unexpected exception while processing " % " - ignoring") e)
+                                                                                         nil))
+                                                                                    (zip-compressed-files dir))))]
                                  (merge file-expressions zip-expressions))
                                file-expressions))))))
 
