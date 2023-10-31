@@ -29,7 +29,7 @@
 
   An expressions-info map has this structure:
   * key:   an SPDX expression (String), which may be a single SPDX license
-           identifier)
+           identifier
   * value: a sequence of 'expression-info' maps
 
   Each lice-comb expression-info map has this structure:
