@@ -20,6 +20,7 @@
   "Functionality related to combing tools.deps dependency maps and lib maps for
   license information."
   (:require [clojure.string                  :as s]
+            [clojure.tools.logging           :as log]
             [dom-top.core                    :as dom]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.files                 :as lcf]
@@ -61,6 +62,26 @@
           version                (:mvn/version info)]
       (lcihttp/gav->pom-uri group-id artifact-id version))))
 
+(defn- expressions-from-dep
+  "Find license expressions in the given dep, ignoring exceptions."
+  [dep]
+  (when dep
+    (let [info    (second dep)
+          pom-uri (dep->pom-uri dep)]
+      (if-let [pom-expressions (try
+                                 (lcmvn/pom->expressions-info pom-uri)
+                                 (catch javax.xml.stream.XMLStreamException xse
+                                   (log/warn (str "Failed to parse " pom-uri " - ignoring") xse)
+                                   nil))]
+        pom-expressions
+        ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
+        (into {} (filter identity (dom/real-pmap #(try
+                                                    (lcf/zip->expressions-info %)
+                                                    (catch java.util.zip.ZipException ze
+                                                      (log/warn (str "Failed to unzip " % " - ignoring") ze)
+                                                      nil))
+                                                 (:paths info))))))))
+
 (defmulti dep->expressions-info
   "Returns an expressions-info map for the given tools.dep dep (a MapEntry or
   two-element vector of `['groupId/artifactId dep-info]`), or nil if no
@@ -71,11 +92,7 @@
 (defmethod dep->expressions-info :mvn
   [dep]
   (when dep
-    (let [info        (second dep)
-          pom-uri     (dep->pom-uri dep)
-          expressions (if-let [expressions (lcmvn/pom->expressions-info pom-uri)]
-                        expressions
-                        (into {} (dom/real-pmap lcf/zip->expressions-info (:paths info))))]  ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
+    (when-let [expressions (expressions-from-dep dep)]
       (lciei/prepend-source (dep->string dep) expressions))))
 
 (defmethod dep->expressions-info :deps

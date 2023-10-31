@@ -13,6 +13,10 @@ A Clojure library for software *lice*nse detection.  It does this by *comb*ing t
 
 This library leverages, and is inspired by, the *excellent* [SPDX project](https://spdx.dev/).  It's a great shame that it doesn't have greater traction in the Java & Clojure (and wider open source) communities.  If you're new to SPDX and would prefer to read a primer rather than dry specification documents, I can thoroughly recommend [David A. Wheeler's SPDX Tutorial](https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial).
 
+## Disclaimer
+
+**The author and contributors to `lice-comb` are not lawyers, and neither they nor `lice-comb` itself provides legal advice. This is nothing more than logic to assist in finding license information.**
+
 ## System Requirements
 
 * `lice-comb` (all versions) requires an internet connection.

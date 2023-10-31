@@ -73,7 +73,9 @@
 
   If an InputStream is provided, it is the caller's responsibility to open and
   close it, and a filepath associated with the InputStream *must* be provided as
-  the second parameter (it is optional for other types of input)."
+  the second parameter (it is optional for other types of input).
+
+  Note: throws on XML parsing error"
   {:arglists '([pom] [pom filepath])}
   (fn [& args] (type (first args))))
 
