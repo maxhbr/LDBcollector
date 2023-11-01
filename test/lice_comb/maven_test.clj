@@ -58,6 +58,8 @@
     (is (valid= #{"GPL-3.0-only"}              (pom->expressions "https://repo1.maven.org/maven2/org/activecomponents/jadex/jadex-kernel-component/3.0.117/jadex-kernel-component-3.0.117.pom"))))
   (testing "Real pom files - remote - dual-licensed"
     (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "MIT"} (pom->expressions "https://repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom"))))
+  (testing "Real pom files - remote - malformed"
+    (is (thrown? javax.xml.stream.XMLStreamException (pom->expressions "https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom"))))
   (testing "Synthetic pom files with licenses in parent - local"
     (is (valid= #{"Apache-2.0"}                (pom->expressions (str test-data-path "/with-parent.pom")))))
   (testing "Real pom files with licenses in parent - remote"
