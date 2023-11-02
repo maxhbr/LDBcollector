@@ -174,7 +174,7 @@
 
   If no listed SPDX license or exception identifiers are found in s, returns a
   sequence containing a single expressions-info map with a lice-comb specific
-  'unlisted' LicenseRef that encodes s."
+  'unidentified' LicenseRef that encodes s."
   [s]
   (when-not (s/blank? s)
     (let [s   (s/trim s)
@@ -195,9 +195,9 @@
                 ; 4. Attempt regex name matching
                 (lcirm/matches s)
 
-                ; 5. No clue, so return a single unlisted SPDX LicenseRef
-                (let [id (lcis/name->unlisted s)]
-                  (list {id (list {:id id :type :concluded :confidence :low :strategy :unlisted :source (list s)})})))]
+                ; 5. No clue, so return a single unidentified SPDX LicenseRef
+                (let [id (lcis/name->unidentified s)]
+                  (list {id (list {:id id :type :concluded :confidence :low :strategy :unidentified :source (list s)})})))]
       (map (partial lciei/prepend-source s) ids))))
 
 (defn- filter-blanks

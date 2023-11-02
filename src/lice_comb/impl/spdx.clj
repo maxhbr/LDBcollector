@@ -45,7 +45,7 @@
 (def ^:private lice-comb-license-ref-prefix       "LicenseRef-lice-comb")
 (def ^:private public-domain-license-ref          (str lice-comb-license-ref-prefix "-PUBLIC-DOMAIN"))
 (def ^:private proprietary-commercial-license-ref (str lice-comb-license-ref-prefix "-PROPRIETARY-COMMERCIAL"))
-(def ^:private unlisted-license-ref-prefix        (str lice-comb-license-ref-prefix "-UNLISTED"))
+(def ^:private unidentified-license-ref-prefix    (str lice-comb-license-ref-prefix "-UNIDENTIFIED"))
 
 ; Lower case id map
 (def spdx-ids-d (delay (merge (into {} (map #(vec [(s/lower-case %) %]) @license-ids-d))
@@ -96,27 +96,27 @@
   proprietary-commercial
   (constantly proprietary-commercial-license-ref))
 
-(defn unlisted?
-  "Is the given id a lice-comb custom 'unlisted' LicenseRef?"
+(defn unidentified?
+  "Is the given id a lice-comb custom 'unidentified' LicenseRef?"
   [id]
   (when id
-    (s/starts-with? (s/lower-case id) (s/lower-case unlisted-license-ref-prefix))))
+    (s/starts-with? (s/lower-case id) (s/lower-case unidentified-license-ref-prefix))))
 
-(defn name->unlisted
+(defn name->unidentified
   "Constructs a valid SPDX id (a LicenseRef specific to lice-comb) for an
-  unlisted license, with the given name appended as Base62 (since clj-spdx
+  unidentified license name, with the name appended as Base62 (since clj-spdx
   identifiers are basically constrained to [A-Z][a-z][0-9] ie. Base62)."
   [name]
-  (str unlisted-license-ref-prefix (when-not (s/blank? name) (str "-" (lciu/base62-encode name)))))
+  (str unidentified-license-ref-prefix (when-not (s/blank? name) (str "-" (lciu/base62-encode name)))))
 
-(defn unlisted->name
-  "Get the original name of the given unlisted license. Returns nil if id is nil
-  or is not a lice-comb unlisted LicenseRef."
+(defn unidentified->name
+  "Get the original name of the given unidentified license. Returns nil if id is
+  nil or is not a lice-comb unidentified LicenseRef."
   [id]
-  (when (unlisted? id)
+  (when (unidentified? id)
     (str "Unlisted ("
-         (if (> (count id) (count unlisted-license-ref-prefix))
-           (lciu/base62-decode (subs id (inc (count unlisted-license-ref-prefix))))
+         (if (> (count id) (count unidentified-license-ref-prefix))
+           (lciu/base62-decode (subs id (inc (count unidentified-license-ref-prefix))))
            "-original name not available-")
           ")")))
 
