@@ -140,5 +140,4 @@
   (testing "Valid directory - include ZIP compressed files"
     (is (valid= ;#{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "CC-BY-4.0" "AGPL-3.0-or-later"}  ; CC-BY-4.0 failing due to https://github.com/spdx/license-list-XML/issues/1960
                 #{"GPL-2.0-only WITH Classpath-exception-2.0" "BSD-3-Clause" "Apache-2.0" "Unlicense AND CC0-1.0" "MIT" "MPL-2.0" "AGPL-3.0-or-later"}
-                (dir->expressions  "." {:include-zips? true})))
-    (println "\nℹ️ The previous test emitted WARN-level logging output that includes an exception stack trace - this is expected/correct behaviour.\n")))
+                (dir->expressions  "." {:include-zips? true})))))

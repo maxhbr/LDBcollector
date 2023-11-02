@@ -116,7 +116,7 @@
   (when (unlisted? id)
     (str "Unlisted ("
          (if (> (count id) (count unlisted-license-ref-prefix))
-           (lciu/base62-decode (subs id (+ 2 (count unlisted-license-ref-prefix))))
+           (lciu/base62-decode (subs id (inc (count unlisted-license-ref-prefix))))
            "-original name not available-")
           ")")))
 

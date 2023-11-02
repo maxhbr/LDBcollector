@@ -97,7 +97,7 @@
                                                             set)
                                     licenses       (into {} (map licenses-from-pair name-uri-pairs))]
                                 (lcim/manual-fixes licenses))
-                              ; License block doesn't exist, so attempt to lookup the parent pom and get it from there
+                              ; License block doesn't exist, so attempt to lookup the parent pom and try again with it
                               (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
                                     parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
                                     parent-gav   (merge {}
@@ -110,7 +110,7 @@
                                 (when-not (empty? parent-gav)
                                   (pom->expressions-info (lcihttp/gav->pom-uri parent-gav)))))))   ; Note: naive (stack consuming) recursion, which is fine here as pom hierarchies are rarely very deep
   (catch javax.xml.stream.XMLStreamException xse
-    (throw (javax.xml.stream.XMLStreamException. (str "XML parsing error in " filepath) xse)))))
+    (throw (javax.xml.stream.XMLStreamException. (str "XML error parsing " filepath) xse)))))
 
 (defmethod pom->expressions-info :default
   ([pom] (pom->expressions-info pom (lciu/filepath pom)))

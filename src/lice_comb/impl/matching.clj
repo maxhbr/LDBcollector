@@ -128,9 +128,9 @@
 (defmethod text->expressions java.lang.String
   [s]
   ; These clj-spdx APIs are *expensive*, so we paralellise them
-  (let [f-lic    (future (sm/licenses-within-text   s @lcis/license-ids-d))
-        f-exc    (future (sm/exceptions-within-text s @lcis/exception-ids-d))
-        ids      (set/union @f-lic @f-exc)]
+  (let [exc (future (sm/exceptions-within-text s @lcis/exception-ids-d))
+        lic (sm/licenses-within-text s @lcis/license-ids-d)
+        ids (set/union lic @exc)]
     (when ids
       (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-text-matching})) ids))))))
 

@@ -34,8 +34,7 @@
   (testing "Invalid deps"
     (is (nil? (dep->expressions ['com.github.pmonks/invalid-project             {:deps/manifest :mvn :mvn/version "0.0.1"}])))                  ; Invalid GA
     (is (nil? (dep->expressions ['org.clojure/clojure                           {:deps/manifest :mvn :mvn/version "1.0.0-SNAPSHOT"}])))         ; Invalid V
-    (is (nil? (dep->expressions ['org.codehaus.plexus/plexus-container-default  {:deps/manifest :mvn :mvn/version "1.0-alpha-9-stable-1"}])))  ; Malformed parent POM
-    (println "\nℹ️ The previous test emitted WARN-level logging output that includes an exception stack trace - this is expected/correct behaviour.\n"))
+    (is (nil? (dep->expressions ['org.codehaus.plexus/plexus-container-default  {:deps/manifest :mvn :mvn/version "1.0-alpha-9-stable-1"}]))))  ; Malformed parent POM
   (testing "Valid deps - single license"
     (is (valid= #{"Apache-2.0"}         (dep->expressions ['com.github.pmonks/asf-cat                                 {:deps/manifest :mvn :mvn/version "1.0.12"}])))
     (is (valid= #{"EPL-1.0"}            (dep->expressions ['org.clojure/clojure                                       {:deps/manifest :mvn :mvn/version "1.10.3"}])))
@@ -137,7 +136,8 @@
     (is (valid= #{"EPL-1.0" "LGPL-3.0-only"}                              (dep->expressions ['ch.qos.logback/logback-core               {:deps/manifest :mvn :mvn/version "1.2.7"}])))
     (is (valid= #{"CDDL-1.1" "GPL-2.0-only WITH Classpath-exception-2.0"} (dep->expressions ['javax.mail/mail                           {:deps/manifest :mvn :mvn/version "1.4.7"}])))
     (is (valid= #{"Apache-2.0" "LGPL-2.1-or-later"}                       (dep->expressions ['net.java.dev.jna/jna-platform             {:deps/manifest :mvn :mvn/version "5.10.0"}])))
-    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "MIT"}      (dep->expressions ['org.checkerframework/checker-compat-qual  {:deps/manifest :mvn :mvn/version "2.5.5"}]))))
+    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0" "MIT"}      (dep->expressions ['org.checkerframework/checker-compat-qual  {:deps/manifest :mvn :mvn/version "2.5.5"}])))
+    (is (valid= #{"CDDL-1.1" "GPL-2.0-only WITH Classpath-exception-2.0"} (dep->expressions ['javax.xml.bind/jaxb-api                   {:deps/manifest :mvn :mvn/version "2.4.0-b180830.0359"}]))))
   (testing "Valid deps - Maven classifiers"
     (is (= #{"Apache-2.0" "LGPL-3.0-only"} (dep->expressions ['com.github.jnr/jffi$native {:deps/manifest :mvn :mvn/version "1.3.12"}])))))
 
@@ -186,5 +186,4 @@
                                                                  'tolitius/xml-in                       {:deps/manifest :mvn :mvn/version "0.1.1"}
                                                                  'com.github.athos/clj-check            {:deps/manifest :deps :git/sha "518d5a1cbfcd7c952f548e6dbfcb9a4a5faf9062" :deps/root (str gitlib-dir "/com.github.athos/clj-check")}})))))
   (testing "Deps with bad POMs"
-    (is (nil? (distinct-licenses-in-lib-map (deps-expressions {'org.codehaus.plexus/plexus-container-default {:deps/manifest :mvn :mvn/version "1.0-alpha-9-stable-1"}}))))
-    (println "\nℹ️ The previous test emitted WARN-level logging output that includes an exception stack trace - this is expected/correct behaviour.\n")))
+    (is (nil? (distinct-licenses-in-lib-map (deps-expressions {'org.codehaus.plexus/plexus-container-default {:deps/manifest :mvn :mvn/version "1.0-alpha-9-stable-1"}}))))))
