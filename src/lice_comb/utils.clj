@@ -33,7 +33,7 @@
    :spdx-listed-uri                               "SPDX listed URI (relaxed matching)"
    :expression-inference                          "inferred SPDX expression"
    :regex-matching                                "regular expression matching"
-   :unlisted                                      "fallback to unlisted LicenseRef"
+   :unidentified                                  "fallback to unidentified LicenseRef"
    :manual-verification                           "manual verification"})
 
 (defn expression-info-sort-by-keyfn
@@ -63,10 +63,10 @@
            :spdx-text-matching                            "3"
            :spdx-listed-name                              "4"
            :spdx-listed-uri                               "5"
-           :expression-inference                          "6"
-           :regex-matching                                "7"
-           :unlisted                                      "8"
-           :manual-verification                           "9"))))
+           :manual-verification                           "6"
+           :expression-inference                          "7"
+           :regex-matching                                "8"
+           :unidentified                                  "9"))))
 
 (defn expression-info->string
   "Converts the given expression-info map into a human-readable string, using

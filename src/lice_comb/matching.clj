@@ -73,16 +73,16 @@
   [id]
   (lcis/proprietary-commercial? id))
 
-(defn unlisted?
-  "Is the given id a lice-comb custom 'unlisted' LicenseRef?"
+(defn unidentified?
+  "Is the given id a lice-comb custom 'unidentified' LicenseRef?"
   [id]
-  (lcis/unlisted? id))
+  (lcis/unidentified? id))
 
-(defn unlisted->name
-  "Get the original name of the given unlisted license. Returns nil if id is nil
-  or is not a lice-comb unlisted LicenseRef."
+(defn unidentified->name
+  "Get the original name of the given unidentified license. Returns nil if id is nil
+  or is not a lice-comb unidentified LicenseRef."
   [id]
-  (lcis/unlisted->name id))
+  (lcis/unidentified->name id))
 
 (defn id->name
   "Returns the human readable name of the given license or exception identifier;
@@ -95,7 +95,7 @@
           (se/listed-id? id)           (:name (se/id->info id))
           (public-domain? id)          "Public domain"
           (proprietary-commercial? id) "Proprietary/commercial"
-          (unlisted? id)               (lcis/unlisted->name id)
+          (unidentified? id)           (unidentified->name id)
           :else                        id)))
 
 (defn text->expressions-info
@@ -193,7 +193,7 @@
         (if (lciu/valid-http-uri? name)
           (if-let [ids (uri->expressions-info name)]
             ids
-            {(lcis/name->unlisted name) (list {:type :concluded :confidence :low :strategy :unlisted :source (list name)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unlisted
+            {(lcis/name->unidentified name) (list {:type :concluded :confidence :low :strategy :unidentified :source (list name)})})  ; It was a URL, but we weren't able to resolve it to any ids, so return it as unidentified
           ; 3. Attempt to build SPDX expression(s) from the name
           (lcim/name->expressions-info name))))))
 
