@@ -98,8 +98,13 @@
                entry  (.getNextEntry zip-is)]
           (if entry
             (if (probable-license-file? entry)
-              (recur (merge result (file->expressions-info zip-is (lciu/filename entry)))
-                     (.getNextEntry zip-is))
+              (if-let [expressions (try
+                                     (file->expressions-info zip-is (lciu/filename entry))
+                                     (catch Exception e
+                                       (log/warn (str "Unexpected exception while processing " (lciu/filename zip) ":" (lciu/filename entry) " - ignoring") e)
+                                       nil))]
+                (recur (merge result expressions) (.getNextEntry zip-is))
+                (recur result (.getNextEntry zip-is)))
               (recur result (.getNextEntry zip-is)))
             (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result))))))))
 
