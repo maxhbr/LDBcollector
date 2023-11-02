@@ -104,10 +104,11 @@
 
 (defn name->unidentified
   "Constructs a valid SPDX id (a LicenseRef specific to lice-comb) for an
-  unidentified license name, with the name appended as Base62 (since clj-spdx
-  identifiers are basically constrained to [A-Z][a-z][0-9] ie. Base62)."
-  [name]
-  (str unidentified-license-ref-prefix (when-not (s/blank? name) (str "-" (lciu/base62-encode name)))))
+  unidentified license, with the given name (if provided) appended as Base62
+  (since clj-spdx identifiers are limited to a small superset of Base62)."
+  ([] (name->unidentified nil))
+  ([name]
+   (str unidentified-license-ref-prefix (when-not (s/blank? name) (str "-" (lciu/base62-encode name))))))
 
 (defn unidentified->name
   "Get the original name of the given unidentified license. Returns nil if id is
