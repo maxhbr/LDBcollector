@@ -33,3 +33,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Lint YAML files
         uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: license-classifications.yml
