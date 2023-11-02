@@ -64,8 +64,8 @@
      (let [fname  (lciu/filename filepath)
            lfname (s/lower-case fname)]
             (lciei/prepend-source filepath
-                                  (cond (= lfname "pom.xml")              (lcmvn/pom->expressions-info f fname)
-                                        (s/ends-with? lfname ".pom")      (lcmvn/pom->expressions-info f fname)
+                                  (cond (or (= lfname "pom.xml")
+                                            (s/ends-with? lfname ".pom")) (doall (lcmvn/pom->expressions-info f fname))
                                         (instance? java.io.InputStream f) (doall (lcmtch/text->expressions-info f))
                                         :else                             (with-open [is (io/input-stream f)] (doall (lcmtch/text->expressions-info is)))))))))  ; Default is to assume it's a plain text file containing license text(s)
 
@@ -98,8 +98,13 @@
                entry  (.getNextEntry zip-is)]
           (if entry
             (if (probable-license-file? entry)
-              (recur (merge result (file->expressions-info zip-is (lciu/filename entry)))
-                     (.getNextEntry zip-is))
+              (if-let [expressions (try
+                                     (file->expressions-info zip-is (lciu/filename entry))
+                                     (catch Exception e
+                                       (log/warn (str "Unexpected exception while processing " (lciu/filename zip) ":" (lciu/filename entry) " - ignoring") e)
+                                       nil))]
+                (recur (merge result expressions) (.getNextEntry zip-is))
+                (recur result (.getNextEntry zip-is)))
               (recur result (.getNextEntry zip-is)))
             (when-not (empty? result) (lciei/prepend-source (lciu/filepath zip-file) result))))))))
 

@@ -187,7 +187,8 @@
     (is (valid= #{"MPL-1.0"}                            (name->expressions "Mozilla Public License 1")))
     (is (valid= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License Version 2.0")))
     (is (valid= #{"MPL-2.0"}                            (name->expressions "Mozilla Public License")))  ; Listed license missing version - we assume the latest
-    (is (valid= #{"Plexus"}                             (name->expressions "Similar to Apache License but with the acknowledgment clause removed"))))   ; JDOM - see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
+    (is (valid= #{"Plexus"}                             (name->expressions "Similar to Apache License but with the acknowledgment clause removed")))   ; JDOM - see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
+    (is (valid= #{"GPL-2.0-only WITH Classpath-exception-2.0"} (name->expressions "GPL2 w/ CPE"))))   ; One of two licenses in javax.xml.bind/jaxb-api@2.4.0-b180830.0359 (via parent)
   (testing "All names seen in POMs on Clojars as of 2023-07-13"
     (is (valid= #{"AFL-3.0"}                            (name->expressions "Academic Free License 3.0")))
     (is (valid= #{"AGPL-3.0-only" (lcis/proprietary-commercial)} (name->expressions "GNU Affero General Public License Version 3; Other commercial licenses available.")))

@@ -77,6 +77,9 @@
         ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
         (into {} (filter identity (dom/real-pmap #(try
                                                     (lcf/zip->expressions-info %)
+                                                    (catch javax.xml.stream.XMLStreamException xse
+                                                      (log/warn (str "Failed to parse pom inside " % " - ignoring") xse)
+                                                      nil)
                                                     (catch java.util.zip.ZipException ze
                                                       (log/warn (str "Failed to unzip " % " - ignoring") ze)
                                                       nil))

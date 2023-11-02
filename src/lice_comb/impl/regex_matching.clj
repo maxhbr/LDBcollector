@@ -260,7 +260,7 @@
        :pad-ver?   true
        :latest-ver "2.1"}
       {:id         "Classpath-exception"
-       :regex      #"(?i)\bClasspath[\s-]+exception(\s*V(ersion)?)?[\s-]*(?<version>\d+(\.\d+)?)?\b"
+       :regex      #"\b(CPE|((?i)Classpath[\s-]+exception(\s*V(ersion)?)?[\s-]*(?<version>\d+(\.\d+)?)?))\b"
        :fn         generic-id-constructor
        :pad-ver?   true
        :latest-ver "2.0"}
