@@ -121,7 +121,9 @@
     (is (thrown? java.util.zip.ZipException (zip->expressions (str test-data-path "/bad.zip")))))
   (testing "Valid zip file"
     (is (valid= #{"Apache-2.0"}        (zip->expressions (str test-data-path "/good.zip"))))
-    (is (valid= #{"AGPL-3.0-or-later"} (zip->expressions (str test-data-path "/pom-in-a-zip.zip"))))))
+    (is (valid= #{"AGPL-3.0-or-later"} (zip->expressions (str test-data-path "/pom-in-a-zip.zip")))))
+  (testing "Valid zip file containing a mix of valid and invalid probablelicense files"
+    (is (valid= #{"Apache-2.0"}        (zip->expressions (str test-data-path "/malformed-pom-and-bsd-license-text.zip"))))))
 
 (deftest dir->expressions-tests
   (testing "Nil, empty, or blank directory name"

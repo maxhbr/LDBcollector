@@ -24,13 +24,8 @@
 
 ; Here we hack up a "global once" function
 (def ^:private global-setup (delay
-                              ; Because java.util.logging is a hot mess
-                              (org.slf4j.bridge.SLF4JBridgeHandler/removeHandlersForRootLogger)
-                              (org.slf4j.bridge.SLF4JBridgeHandler/install)
-
                               ; Enable spec validation
                               (spec/check-asserts true)
-
                               nil))
 
 (defn fixture
