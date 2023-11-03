@@ -171,7 +171,7 @@ categories:
     description: >-
       An open source-style license that is typically applied to specification files and has some
       important limitations, such as a prohibition on modifying the licensed work. These licenses
-      usually fall in the free-restricited category. This property enables users an option to
+      usually fall in the free-restricted category. This property enables users an option to
       automatically accept specification licenses, even if free-restricted licenses otherwise
       create rule violations.
 
@@ -1471,6 +1471,7 @@ categorizations:
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "LicenseRef-scancode-public-domain"
     categories:
@@ -1482,9 +1483,11 @@ categorizations:
 
   - id: "CC-BY-NC-ND-4.0"
     categories:
-      - "source-available"
+      - "free-restricted"
       - "property:non-commercial"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
+      - "property:no-modifications"
 
   # https://spdx.org/licenses/FSFULLR.html
   - id: "FSFULLR"
@@ -1525,6 +1528,7 @@ categorizations:
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "LicenseRef-scancode-commercial-license"
     categories:
@@ -1716,12 +1720,14 @@ categorizations:
       - "source-available"
       - "property:non-commercial"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "CC-BY-NC-SA-2.5"
     categories:
       - "source-available"
       - "property:non-commercial"
       - "property:include-in-notice-file"
+      - "property:creativecommons"
 
   - id: "LicenseRef-scancode-ubuntu-font-1.0"
     categories:
