@@ -25,6 +25,7 @@
             [spdx.licenses                   :as sl]
             [spdx.exceptions                 :as se]
             [spdx.matching                   :as sm]
+            [spdx.expressions                :as sexp]
             [lice-comb.impl.spdx             :as lcis]
             [lice-comb.impl.regex-matching   :as lcirm]
             [lice-comb.impl.expressions-info :as lciei]
@@ -132,6 +133,7 @@
         lic (sm/licenses-within-text s @lcis/license-ids-d)
         ids (set/union lic @exc)]
     (when ids
+      ; We don't need to sexp/normalise the keys here, as we never detect an expression from a text
       (manual-fixes (into {} (map #(hash-map % (list {:id % :type :concluded :confidence :high :strategy :spdx-text-matching})) ids))))))
 
 (defmethod text->expressions java.io.Reader
@@ -155,6 +157,7 @@
   are found."
   [uri]
   (when-not (s/blank? uri)
+      ; We don't need to sexp/normalise the keys here, as we never detect an expression from a URI
     (lciei/prepend-source uri
                           (manual-fixes
                             (let [suri (lciu/simplify-uri uri)]
@@ -304,7 +307,8 @@
                                          (map #(if (keyword? %) % (string->ids-info %)))
                                          flatten
                                          seq
-                                         build-expressions-info-map))))))
+                                         build-expressions-info-map
+                                         (lciu/mapfonk sexp/normalise)))))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

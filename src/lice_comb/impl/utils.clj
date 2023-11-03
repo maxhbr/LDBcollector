@@ -24,6 +24,14 @@
             [clojure.java.io :as io]
             [clj-base62.core :as base62]))
 
+(defn mapfonk
+  "Returns a new map where f has been applied to all of the keys of m."
+  [f m]
+  (when m
+    (into {}
+          (for [[k v] m]
+            [(f k) v]))))
+
 (defn mapfonv
   "Returns a new map where f has been applied to all of the values of m."
   [f m]
