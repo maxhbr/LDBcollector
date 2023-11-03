@@ -115,7 +115,7 @@
     (is (valid= #{"MIT" "BSD-4-Clause"}                 (name->expressions "MIT / BSD")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only"}          (name->expressions "Apache License version 2.0 / GNU General Public License version 3")))
     (is (valid= #{"Apache-2.0" "GPL-3.0-only WITH Classpath-exception-2.0"} (name->expressions "Apache License version 2.0 / GNU General Public License version 3 with classpath exception")))
-    (is (valid= #{"EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0 OR MIT OR BSD-3-Clause AND Apache-2.0"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception or MIT Licence or three clause bsd and Apache Licence"))))
+    (is (valid= #{"EPL-2.0 OR (GPL-2.0-or-later WITH Classpath-exception-2.0 AND MIT) OR (BSD-3-Clause AND Apache-2.0)"} (name->expressions "Eclipse Public License or General Public License 2.0 or (at your discretion) later w/ classpath exception aNd MIT Licence or three clause bsd and Apache Licence"))))
   (testing "Messed up license expressions"
     (is (valid= #{"Apache-2.0" "MIT"}                   (name->expressions "Apache with MIT"))))
   (testing "Names seen in handpicked POMs on Maven Central"
