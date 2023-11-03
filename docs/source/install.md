@@ -122,6 +122,16 @@ cp hermine/hermine/config.default.py hermine/hermine/config.py
 Update `hermine/hermine/config.py` according to your configuration.
 Ex: For development purposes, you can set `HOST` to `127.0.0.1` and `DEBUG` to `True`
 
+Here are the parameters you may want to change in your `hermine/hermine/config.py` file
+
+| Parameter name | Description | Default value |
+| -------------- | ----- | ------------- |
+| HOST |  The url of your Hermine instance | "<span>example.com</span>" |
+| MAX_UPLOAD_SIZE | The maximum size that the SBOM to import can be (in bytes) |10\*1024\*1024|
+| SECRET_KEY | The key that Django will use to encrypt data | "your-django-secret-key" |
+| DEBUG | Enables debug functionality, should be disabled in production | False |
+
+
 Update the database structure and create a superuser :
 ```
 # activate poetry shell
@@ -133,6 +143,7 @@ python hermine/manage.py migrate
 # create a superuser
 python hermine/manage.py createsuperuser
 ```
+
 
 ### Run the server
 
