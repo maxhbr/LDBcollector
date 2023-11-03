@@ -47,6 +47,7 @@ DATABASES = {
 #     }
 # }
 
+# The maximum possible size for a SBOM to import, in bytes
 MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10MB, you have to set it in bytes
 
 # # For configuring OAuthn the following parameters are required :
