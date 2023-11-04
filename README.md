@@ -52,7 +52,14 @@ The data can be found in the [var directory](https://github.com/hesa/foss-licens
 
 # Contributions
 
-More info soon.
+You are more than welcome to contribute:
+
+* create an [issue](https://github.com/hesa/foss-licenses/issues)
+
+* create PR
+
+We do not have a CLA or similar, but we assume your contributions are
+made under our license (for the code and data).
 
 # Related tools and projects
 
