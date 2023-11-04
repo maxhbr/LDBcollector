@@ -6,6 +6,8 @@ canonicalName: "IBM pibs License"
 category: "IBM pibs"
 spdxIdentifier: "IBM-pibs"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "IBM pibs"
   - "IBM PIBS"

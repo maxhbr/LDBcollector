@@ -6,6 +6,8 @@ canonicalName: "Elastic License 2.0"
 category: "Elastic"
 spdxIdentifier: "Elastic-2.0"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "Elastic 2.0"
   - "Elastic v2.0"

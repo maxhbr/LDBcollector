@@ -6,6 +6,8 @@ canonicalName: "FreeTTS License"
 category: "FreeTTS License"
 shortName: "FreeTTS"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "http://freetts.sourceforge.net/docs/index.php"
   - "http://freetts.sourceforge.net/license.terms"

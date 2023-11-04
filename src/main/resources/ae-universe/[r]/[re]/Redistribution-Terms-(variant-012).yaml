@@ -6,3 +6,7 @@ canonicalName: "Redistribution Terms (variant 012)"
 category: "RT"
 shortName: "RT-Var012"
 
+openCoDEStatus: "approved"
+
+otherIds: 
+  - "OpenCoDE:RT-Var012"

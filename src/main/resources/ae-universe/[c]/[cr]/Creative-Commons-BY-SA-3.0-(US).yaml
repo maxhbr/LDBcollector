@@ -6,8 +6,12 @@ canonicalName: "Creative Commons BY-SA 3.0 (US)"
 category: "CC-BY-SA"
 shortName: "CC-BY-SA-3.0-US"
 
+openCoDEStatus: "approved"
+
 osiStatus: "pending"
 
 alternativeNames:
   - "CC-BY-SA-3.0-US"
 
+otherIds: 
+  - "OpenCoDE:CC-BY-SA-3.0-US"

@@ -6,6 +6,8 @@ canonicalName: "Imlib2 License"
 category: "Imlib2"
 spdxIdentifier: "Imlib2"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Imlib2 License"
   - "IMLIB2 LICENSE"

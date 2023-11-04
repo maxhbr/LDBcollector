@@ -6,6 +6,8 @@ canonicalName: "Intel ACPI License"
 category: "Intel ACPI"
 spdxIdentifier: "Intel-ACPI"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "Intel ACPI"
   - "INTEL ACPI"

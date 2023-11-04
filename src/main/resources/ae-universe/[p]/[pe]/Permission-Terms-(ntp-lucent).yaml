@@ -6,6 +6,8 @@ canonicalName: "Permission Terms (ntp lucent)"
 category: "Permission"
 shortName: "PT-ntp-lucent"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Permission Terms (ntp lucent)"
 

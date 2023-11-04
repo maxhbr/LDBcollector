@@ -6,6 +6,8 @@ canonicalName: "David M. Gay dtoa License"
 category: "dtoa"
 spdxIdentifier: "dtoa"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "David M. Gay dtoa License"
 

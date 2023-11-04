@@ -6,6 +6,8 @@ canonicalName: "BSD 3-Clause License (Open MPI)"
 category: "BSD"
 spdxIdentifier: "BSD-3-Clause-Open-MPI"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "BSD-3-Clause-Open-MPI"
   - "BSD 3-Clause Open MPI variant"

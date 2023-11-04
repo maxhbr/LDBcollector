@@ -6,6 +6,8 @@ canonicalName: "ECMA (no patent notice)"
 category: "ECMA no patent notice"
 shortName: "ECMA-no-patent"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "ecma-no-patent"
 

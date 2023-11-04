@@ -6,6 +6,8 @@ canonicalName: "Eiffel Forum License 2.0"
 category: "EFL"
 spdxIdentifier: "EFL-2.0"
 
+openCoDEStatus: "approved"
+
 osiStatus: "approved"
 osiCategory: "redundant with more popular"
 

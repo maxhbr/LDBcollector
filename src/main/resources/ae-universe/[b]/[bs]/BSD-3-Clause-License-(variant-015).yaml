@@ -6,5 +6,7 @@ canonicalName: "BSD 3-Clause License (variant 015)"
 category: "BSD"
 shortName: "BSD-3-Clause-015"
 
+openCoDEStatus: "approved"
+
 otherIds: 
   - "scancode:homebrewed"

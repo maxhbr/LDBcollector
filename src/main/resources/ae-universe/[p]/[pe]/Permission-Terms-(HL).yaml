@@ -6,6 +6,8 @@ canonicalName: "Permission Terms (HL)"
 category: "Permission"
 shortName: "PT-HL"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Permission Terms (HL)"
 

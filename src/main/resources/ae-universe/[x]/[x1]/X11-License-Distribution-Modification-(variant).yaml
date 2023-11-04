@@ -6,6 +6,8 @@ canonicalName: "X11 License Distribution Modification (variant)"
 category: "X11-distribute-modifications-variant"
 spdxIdentifier: "X11-distribute-modifications-variant"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "X11-distribute-modifications-variant"
   - "X11 License Distribution Modification Variant"

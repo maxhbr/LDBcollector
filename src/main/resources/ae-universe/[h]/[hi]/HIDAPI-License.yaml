@@ -6,6 +6,8 @@ canonicalName: "HIDAPI License"
 category: "HIDAPI License"
 shortName: "HIDAPI"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "hidapi license"
 

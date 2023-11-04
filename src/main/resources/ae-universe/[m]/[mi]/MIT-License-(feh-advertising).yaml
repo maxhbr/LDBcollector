@@ -6,6 +6,8 @@ canonicalName: "MIT License (feh advertising)"
 category: "MIT"
 spdxIdentifier: "MIT-feh"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "MIT feh"
   - "MIT FEH"

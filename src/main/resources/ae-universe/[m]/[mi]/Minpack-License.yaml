@@ -6,6 +6,8 @@ canonicalName: "Minpack License"
 category: "Minpack"
 spdxIdentifier: "Minpack"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Minpack License"
   - "Minpack Copyright Notice"

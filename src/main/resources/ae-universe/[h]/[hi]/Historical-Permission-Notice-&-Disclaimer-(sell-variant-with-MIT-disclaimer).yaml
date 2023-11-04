@@ -6,6 +6,8 @@ canonicalName: "Historical Permission Notice & Disclaimer (sell variant with MIT
 category: "HPND sell variant MIT disclaimer"
 spdxIdentifier: "HPND-sell-variant-MIT-disclaimer"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "HPND-sell-variant-MIT-disclaimer"
   - "HPND sell variant with MIT disclaimer"

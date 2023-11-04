@@ -6,6 +6,8 @@ canonicalName: "Broadcom CFE License"
 category: "Broadcom CFE License"
 shortName: "Broadcom-CFE"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "broadcom-cfe"
 

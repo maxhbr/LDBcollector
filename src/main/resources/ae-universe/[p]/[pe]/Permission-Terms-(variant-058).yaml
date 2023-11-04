@@ -6,3 +6,7 @@ canonicalName: "Permission Terms (variant 058)"
 category: "Permission"
 shortName: "PT-Var058"
 
+openCoDEStatus: "not approved"
+
+otherIds: 
+  - "OpenCoDE:PT-Var058"

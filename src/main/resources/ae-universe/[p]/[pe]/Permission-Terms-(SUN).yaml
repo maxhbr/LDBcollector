@@ -6,6 +6,8 @@ canonicalName: "Permission Terms (SUN)"
 category: "Permission"
 shortName: "PT-SUN"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Permission Terms (SUN)"
 

@@ -6,6 +6,8 @@ canonicalName: "MTLL"
 category: "MTLL"
 spdxIdentifier: "MTLL"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "MTL License"
   - "MTL LICENSE"

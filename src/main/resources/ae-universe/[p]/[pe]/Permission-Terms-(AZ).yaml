@@ -6,6 +6,10 @@ canonicalName: "Permission Terms (AZ)"
 category: "Permission"
 shortName: "PT-AZ"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Permission Terms (AZ)"
 
+otherIds: 
+  - "OpenCoDE:PT-AZ"

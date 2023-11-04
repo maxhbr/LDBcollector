@@ -93,8 +93,8 @@ are used for identification purposes only.
   ScanCode is a trademark of nexB Inc.
 
 - [Open CoDE License Compliance](https://wikijs.opencode.de/de/Hilfestellungen_und_Richtlinien/Lizenzcompliance) 
-  approval information is Open CoDE Public Domain. The status information shown reflects version 1.2 from
-  September 2023.
+  approval information is Open CoDE Public Domain. The status information shown reflects version 1.3 from
+  October 2023.
 
 The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 

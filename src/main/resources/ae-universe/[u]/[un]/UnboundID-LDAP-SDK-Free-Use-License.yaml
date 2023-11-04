@@ -6,6 +6,8 @@ canonicalName: "UnboundID LDAP SDK Free Use License"
 category: "UnboundID LDAP SDK Free Use License"
 shortName: "LDAP-SDK-Free-Use"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "ldap-sdk-free-use"
 

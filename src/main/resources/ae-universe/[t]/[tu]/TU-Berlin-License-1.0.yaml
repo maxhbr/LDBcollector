@@ -6,6 +6,8 @@ canonicalName: "TU Berlin License 1.0"
 category: "TU Berlin"
 spdxIdentifier: "TU-Berlin-1.0"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "TU Berlin, Version 1.0"
   - "TU Berlin 1.0"

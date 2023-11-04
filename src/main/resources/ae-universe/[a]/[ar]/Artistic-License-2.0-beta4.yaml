@@ -6,6 +6,10 @@ canonicalName: "Artistic License 2.0 beta4"
 category: "Artistic License"
 shortName: "Artistic-2.0-beta4"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Artistic License Version 2.0beta4"
 
+otherIds: 
+  - "OpenCoDE:Artistic-2.0-beta4"

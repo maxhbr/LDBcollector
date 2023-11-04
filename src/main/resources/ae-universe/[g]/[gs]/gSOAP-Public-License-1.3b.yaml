@@ -6,6 +6,8 @@ canonicalName: "gSOAP Public License 1.3b"
 category: "gSOAP"
 spdxIdentifier: "gSOAP-1.3b"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "gSOAP-1.3b"
   - "gSOAP Public License v1.3b"

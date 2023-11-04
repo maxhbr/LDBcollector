@@ -6,6 +6,8 @@ canonicalName: "CNRI Jython License"
 category: "CNRI Jython"
 spdxIdentifier: "CNRI-Jython"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "CNRI Jython"
   - "CNRI JYTHON"

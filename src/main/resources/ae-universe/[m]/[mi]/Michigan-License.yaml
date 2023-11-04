@@ -6,6 +6,10 @@ canonicalName: "Michigan License"
 category: "Michigan"
 shortName: "Michigan"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Michigan License"
 
+otherIds: 
+  - "OpenCoDE:Michigan"

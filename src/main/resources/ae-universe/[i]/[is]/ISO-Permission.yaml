@@ -6,6 +6,8 @@ canonicalName: "ISO Permission"
 category: "ISO"
 shortName: "ISO-Permission"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "ISO Permission"
 

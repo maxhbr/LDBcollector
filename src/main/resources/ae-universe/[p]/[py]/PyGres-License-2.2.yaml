@@ -6,6 +6,8 @@ canonicalName: "PyGres License 2.2"
 category: "PyGres License"
 shortName: "PyGres-2.2"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "http://shell.vex.net/viewvc.cgi/pygresql/trunk/module/pgmodule.c?view=markup&pathrev=431"
 

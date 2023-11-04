@@ -6,6 +6,8 @@ canonicalName: "X11-Style (DEC 2)"
 category: "X11-Style (DEC 2)"
 shortName: "X11-DEC2"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "x11-dec2"
 

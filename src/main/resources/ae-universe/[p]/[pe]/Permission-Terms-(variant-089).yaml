@@ -6,3 +6,7 @@ canonicalName: "Permission Terms (variant 089)"
 category: "Permission"
 shortName: "PT-Var089"
 
+openCoDEStatus: "approved"
+
+otherIds: 
+  - "OpenCoDE:PT-Var089"

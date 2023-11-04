@@ -6,6 +6,8 @@ canonicalName: "BSD 4-Clause License (variant 002)"
 category: "BSD"
 spdxIdentifier: "BSD-Attribution-HPND-disclaimer"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "BSD 4-Clause License (variant 002)"
   - "BSD-Attribution-HPND-disclaimer"

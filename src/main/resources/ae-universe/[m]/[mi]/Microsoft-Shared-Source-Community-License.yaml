@@ -6,6 +6,8 @@ canonicalName: "Microsoft Shared Source Community License"
 category: "Microsoft Shared Source Community License"
 shortName: "MS-CL"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Microsoft Shared Source Community License"
   - "MS-CL"

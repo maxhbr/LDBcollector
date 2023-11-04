@@ -6,6 +6,8 @@ canonicalName: "HTML Tidy License"
 category: "Tidy"
 spdxIdentifier: "HTMLTIDY"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Tidy License"
 

@@ -6,6 +6,8 @@ canonicalName: "JPNIC License"
 category: "JPNIC"
 spdxIdentifier: "JPNIC"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Japan Network Information Center Terms"
   - "Japan Network Information Center License"

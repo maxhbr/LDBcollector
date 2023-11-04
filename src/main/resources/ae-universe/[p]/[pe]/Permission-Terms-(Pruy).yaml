@@ -6,6 +6,10 @@ canonicalName: "Permission Terms (Pruy)"
 category: "Permission"
 shortName: "PT-Pruy"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Pruy License"
 
+otherIds: 
+  - "OpenCoDE:PT-Pruy"

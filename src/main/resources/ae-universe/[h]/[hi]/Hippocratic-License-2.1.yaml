@@ -6,6 +6,8 @@ canonicalName: "Hippocratic License 2.1"
 category: "Hippocratic"
 spdxIdentifier: "Hippocratic-2.1"
 
+openCoDEStatus: "not approved"
+
 alternativeNames:
   - "Hippocratic License 2.1"
   - "https://firstdonoharm.dev/version/2/1"

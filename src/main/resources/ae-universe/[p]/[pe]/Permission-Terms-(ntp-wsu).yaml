@@ -6,6 +6,8 @@ canonicalName: "Permission Terms (ntp wsu)"
 category: "Permission"
 shortName: "PT-ntp-wsu"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "Permission Terms (ntp wsu)"
 

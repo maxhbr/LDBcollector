@@ -6,6 +6,8 @@ canonicalName: "BSD 2-Clause License (variant 004)"
 category: "BSD"
 shortName: "BSD-2-Clause-004"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "svndiff License"
 

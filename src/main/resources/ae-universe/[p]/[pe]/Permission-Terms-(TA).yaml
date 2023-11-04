@@ -6,6 +6,8 @@ canonicalName: "Permission Terms (TA)"
 category: "Permission"
 shortName: "PT-TA"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "TA License"
 

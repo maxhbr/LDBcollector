@@ -6,6 +6,8 @@ canonicalName: "xlock License"
 category: "xlock"
 spdxIdentifier: "xlock"
 
+openCoDEStatus: "approved"
+
 alternativeNames:
   - "xlock License"
 
