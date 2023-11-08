@@ -84,7 +84,7 @@ class ComponentViewsTestCase(ForceLoginMixin, TestCase):
         self.assertContains(res, "test_component_alpha")  # component name
 
     def test_component_detail_view(self):
-        url = reverse("cube:component_detail", kwargs={"pk": 2})
+        url = reverse("cube:component_detail", kwargs={"pk": 1})
         res = self.client.get(url)
         self.assertEqual(res.status_code, 200)
         self.assertContains(res, "test_component_alpha")  # component name

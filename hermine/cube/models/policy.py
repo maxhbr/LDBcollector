@@ -1,10 +1,14 @@
 #  SPDX-FileCopyrightText: 2021 Hermine-team <hermine@inno3.fr>
 #
 #  SPDX-License-Identifier: AGPL-3.0-only
+import re
+
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.db.models import Q
+from semantic_version import Version as SemanticVersion
+from semantic_version.django_fields import SpecField
 
 from cube.models import (
     Usage,
@@ -17,12 +21,22 @@ class AbstractComponentRule(models.Model):
     component = models.ForeignKey(
         "Component", on_delete=models.CASCADE, blank=True, null=True
     )
+    version_constraint = SpecField(
+        "Version constraint", blank=True, help_text="Example: >=0.1.1,<0.3.0"
+    )
     version = models.ForeignKey(
-        "Version", on_delete=models.CASCADE, blank=True, null=True
+        "Version",
+        on_delete=models.CASCADE,
+        blank=True,
+        null=True,
+        help_text="Optional : apply to a specific component version only. "
+        "In this case, leave the component and version constraint fields empty.",
     )
 
     @property
     def condition_display(self):
+        if self.version_constraint != "":
+            return f"component: {self.component}:{self.version_constraint}"
         if self.version is not None:
             return f"component: {self.version}"
         elif self.component:
@@ -37,8 +51,20 @@ class AbstractComponentRule(models.Model):
         """
         if self.component is not None and self.version is not None:
             raise ValidationError(
-                "Rule can only apply to a component or a specific component version."
+                {
+                    "component": "Leave this field empty if you specify a single version bellow."
+                }
             )
+
+        if self.version_constraint != "" and self.version is not None:
+            raise ValidationError(
+                {
+                    "version_constraint": "Leave this field empty if you specify a single version bellow."
+                }
+            )
+
+        if self.version_constraint != "" and self.component is None:
+            raise ValidationError({"component": "This field is required."})
 
         return super().clean()
 
@@ -55,11 +81,23 @@ class AbstractComponentRule(models.Model):
 
 class LicenseCurationManager(models.Manager):
     def for_version(self, version: Version):
-        return self.filter(
+        curations = self.filter(
             Q(component=version.component) | Q(component=None),
             Q(version=version) | Q(version=None),
             Q(expression_in=version.imported_license),
         )
+
+        try:
+            semver = SemanticVersion.coerce(re.sub(r"^v", "", version.version_number))
+        except ValueError:
+            return curations
+
+        curations = filter(
+            lambda c: c.version_constraint == "" or c.version_constraint.match(semver),
+            curations,
+        )
+
+        return self.filter(pk__in=[c.pk for c in curations])
 
 
 class LicenseCuration(AbstractComponentRule):
@@ -187,7 +225,7 @@ class AbstractUsageRule(AbstractComponentRule):
 
 class AbstractUsageRuleManager(models.Manager):
     def for_usage(self, usage: Usage):
-        return self.filter(
+        rules = self.filter(
             Q(component=usage.version.component) | Q(component=None),
             Q(version=usage.version) | Q(version=None),
             Q(product=usage.release.product) | Q(product=None),
@@ -196,6 +234,20 @@ class AbstractUsageRuleManager(models.Manager):
             Q(scope=usage.scope) | Q(scope=""),
             Q(exploitation=usage.exploitation) | Q(exploitation=""),
         )
+
+        try:
+            semver = SemanticVersion.coerce(
+                re.sub(r"^v", "", usage.version.version_number)
+            )
+        except ValueError:
+            return rules
+
+        rules = filter(
+            lambda c: c.version_constraint == "" or c.version_constraint.match(semver),
+            rules,
+        )
+
+        return self.filter(pk__in=[r.pk for r in rules])
 
 
 class LicenseChoiceManager(AbstractUsageRuleManager):
