@@ -1026,3 +1026,11 @@ It is meant to be fast, but not as fast as possible.  Some known
 optimizations are not included to reduce source code size and avoid
 compile-time configuration.
 '''
+
+package = jsoncpp
+location = https://github.com/open-source-parsers/jsoncpp/blob/master/LICENSE#L5
+text = '''
+Baptiste Lepilleur and The JsonCpp Authors explicitly disclaim copyright in all
+jurisdictions which recognize such a disclaimer. In such jurisdictions,
+this software is released into the Public Domain.
+'''
