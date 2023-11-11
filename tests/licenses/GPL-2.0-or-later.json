@@ -9,6 +9,7 @@
     "aliases": [
         "GPLv2+",
         "GPL2+",
-        "GPL (v2 or later)"
+        "GPL (v2 or later)",
+        "GNU General Public License v2 or later (GPLv2+)"
     ]
 }
