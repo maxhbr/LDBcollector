@@ -135,7 +135,7 @@ class FossLicenses:
 
     def __update_license_expression_helper(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
-        for needle in reversed(collections.OrderedDict(sorted(needles.items()))):
+        for needle in reversed(collections.OrderedDict(sorted(needles.items(), key=lambda x: len(x[0])))):
             if allow_letter:
                 reg_exp = r'( |\(|^|\)|\||/)%s( |$|\)|\||&|[a-zA-Z])' % re.escape(needle)
                 extra_add = " "
