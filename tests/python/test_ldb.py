@@ -18,18 +18,18 @@ fl = FossLicenses(check=True, license_dir="tests/licenses", logging_level=loggin
 def test_alias_list():
     # list of all aliases
     aliases = fl.alias_list()
-    assert len(aliases) == 6
+    assert len(aliases) == 7
 
 def test_alias_list_gpl():
     # list of all aliases with license with GPL
     aliases = fl.alias_list("GPL")
-    assert len(aliases) == 3
+    assert len(aliases) == 4
 
 def test_aliases():
     # list of all aliases for GPL-2.0-or-later
     aliases = fl.aliases("GPL-2.0-or-later")
     aliases.sort()
-    assert aliases == [ "GPL (v2 or later)", "GPL2+",  "GPLv2+" ]
+    assert aliases == [ "GNU General Public License v2 or later (GPLv2+)", "GPL (v2 or later)", "GPL2+",  "GPLv2+" ]
 
 def test_aliases_bad_input():
     # make sure bad input raises exception
@@ -60,9 +60,11 @@ def test_with_license_2():
     lic = fl.expression_license("BSD3 w/SomeException")
     assert lic['identified_license'] == "BSD-3-Clause WITH SomeException"
 
-def test_with_license_3():
-    lic = fl.expression_license("BSD3 with SomeException")
-    assert lic['identified_license'] == "BSD-3-Clause WITH SomeException"
+def test_with_license_with_parent():
+    """Test issue 69"""
+    lic = fl.expression_license("GNU General Public License v2 or later (GPLv2+)")
+    assert lic['identified_license'] == "GPL-2.0-or-later"
+    pass
 
 def test_expression_license_types():
     lic = fl.expression_license("BSD-3-Clause and BSD3")
