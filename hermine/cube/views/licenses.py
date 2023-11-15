@@ -93,29 +93,18 @@ class LicenseDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
     template_name = "cube/license_detail.html"
 
 
-class LicenseUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+class LicenseDataUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = "cube.change_license"
     model = License
-    fields = [
-        "spdx_id",
-        "long_name",
-        "url",
-        "copyleft",
-        "law_choice",
-        "venue_choice",
-        "status",
-        "allowed",
-        "allowed_explanation",
-        "patent_grant",
-        "foss",
-        "non_commercial",
-        "ethical_clause",
-        "warranty",
-        "liability",
-        "comment",
-        "verbatim",
-    ]
+    fields = LICENSE_SHARED_FIELDS
     template_name = "cube/license_update.html"
+
+
+class LicensePolicyUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = "cube.change_license"
+    model = License
+    form_class = modelform_factory(License, exclude=LICENSE_SHARED_FIELDS)
+    template_name = "cube/license_update_policy.html"
 
 
 class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
@@ -141,6 +130,17 @@ class LicenseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView)
         "verbatim",
     ]
     template_name = "cube/license_create.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["shared_fields"] = []
+        context["policy_fields"] = []
+        for field in context["form"]:
+            if field.name in LICENSE_SHARED_FIELDS:
+                context["shared_fields"].append(field)
+            else:
+                context["policy_fields"].append(field)
+        return context
 
 
 class LicenseDiffView(

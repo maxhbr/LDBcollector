@@ -100,8 +100,13 @@ urlpatterns = [
     ),
     path(
         "licenses/<int:pk>/edit/",
-        views.LicenseUpdateView.as_view(),
+        views.LicenseDataUpdateView.as_view(),
         name="license_update",
+    ),
+    path(
+        "licenses/<int:pk>/edit_policy/",
+        views.LicensePolicyUpdateView.as_view(),
+        name="license_update_policy",
     ),
     path("licenses/new/", views.LicenseCreateView.as_view(), name="license_create"),
     path(
