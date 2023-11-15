@@ -76,4 +76,4 @@ MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10MB, you have to set it in bytes
 
 # SECURITY WARNING: don't run with debug or profiling turned on in production!
 # DEBUG = True
-# ENABLE_PROFILING = True
+# ENABLE_PROFILING = True # run migrations after enabling profiling
