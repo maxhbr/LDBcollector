@@ -24,6 +24,7 @@ LICENSE_SHARED_FIELDS = (
     "non_commercial",
     "non_tivoisation",
     "law_choice",
+    "venue_choice",
     "comment",
     "verbatim",
 )
