@@ -55,15 +55,13 @@ class BaseComponentDecisionForm(forms.ModelForm):
             and cleaned_data["version_constraint"]
         ):
             self.add_error("version_constraint", "Leave this field empty")
-        return cleaned_data
 
-    def save(self, **kwargs):
-        if self.cleaned_data["component_version"] == self.COMPONENT:
+        if self.cleaned_data["component_version"] in [self.COMPONENT, self.CONSTRAINT]:
             self.instance.component = self.usage.version.component
         elif self.cleaned_data["component_version"] == self.VERSION:
             self.instance.version = self.usage.version
 
-        return super().save(**kwargs)
+        return cleaned_data
 
     class Meta:
         fields = (
