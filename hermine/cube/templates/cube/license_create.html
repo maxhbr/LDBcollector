@@ -17,12 +17,42 @@ SPDX-License-Identifier: AGPL-3.0-only
   </ul>
 {% endblock %}
 
+{% block herozone %}
+  <h1 class="title">Add new license</h1>
+{% endblock %}
+
 {% block content %}
   <form method="post">
     {% csrf_token %}
+    {{ form.non_field_errors }}
+    <h3>License data</h3>
     <table>
-      {{ form }}
+      {% for field in shared_fields %}
+        <tr>
+          <th>{{ field.label_tag }}</th>
+          <td>
+            {{ field.errors }}{{ field }}
+            {% if field.help_text %}
+              <br/><span class="helptext">{{ field.help_text }}</span>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
     </table>
-    <input type="submit" value="Save"/>
+    <h3>Internal policy</h3>
+    <table>
+      {% for field in policy_fields %}
+        <tr>
+          <th>{{ field.label_tag }}</th>
+          <td>
+            {{ field.errors }}{{ field }}
+            {% if field.help_text %}
+              <br/><span class="helptext">{{ field.help_text }}</span>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+    <input class="button is-primary" type="submit" value="Save"/>
   </form>
 {% endblock %}

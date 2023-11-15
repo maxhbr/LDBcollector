@@ -26,6 +26,12 @@ SPDX-License-Identifier: AGPL-3.0-only
       </span>
       <span>Edit or duplicate</span>
     </a>
+    <a class="button" href="{% url "cube:license_update_policy" license.id %}">
+      <span class="icon">
+        <i class="fas fa-edit"></i>
+      </span>
+      <span>Edit policy</span>
+    </a>
   {% endif %}
 
   <div class="dropdown is-hoverable is-right">
