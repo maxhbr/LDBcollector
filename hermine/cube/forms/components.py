@@ -3,16 +3,18 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 from django.forms import ModelForm
 
+from cube.forms.mixins import AutocompleteFormMixin
 from cube.models import LicenseCuration
 
 
-class LicenseCurationCreateForm(ModelForm):
+class LicenseCurationCreateForm(AutocompleteFormMixin, ModelForm):
     class Meta:
         model = LicenseCuration
         fields = (
             "expression_in",
             "expression_out",
             "component",
+            "version_constraint",
             "version",
             "explanation",
         )
@@ -20,6 +22,7 @@ class LicenseCurationCreateForm(ModelForm):
             "expression_in": "Input license",
             "expression_out": "Corrected license",
         }
+        autocomplete_fields = ("component", "version")
 
 
 class LicenseCurationUpdateForm(ModelForm):

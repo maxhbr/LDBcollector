@@ -39,7 +39,7 @@
 },
 {
     "model": "cube.component",
-    "pk": 2,
+    "pk": 1,
     "fields": {
         "name": "test_component_alpha",
         "purl_type": "npm",
@@ -52,7 +52,7 @@
 },
 {
     "model": "cube.component",
-    "pk": 3,
+    "pk": 2,
     "fields": {
         "name": "test_component_beta",
         "purl_type": "npm",
@@ -65,9 +65,9 @@
 },
 {
     "model": "cube.version",
-    "pk": 2,
+    "pk": 1,
     "fields": {
-        "component": 2,
+        "component": 1,
         "version_number": "1.0",
         "declared_license_expr": "LicenseRef-FakeLicense OR AND",
         "spdx_valid_license_expr": "",
@@ -77,13 +77,13 @@
 },
 {
     "model": "cube.version",
-    "pk": 3,
+    "pk": 2,
     "fields": {
-        "component": 2,
+        "component": 1,
         "version_number": "2.0",
-        "declared_license_expr": "LicenseRef-FakeLicense OR AND",
+        "declared_license_expr": "LicenseRef-FakeLicense OR AND LicenseRef-FakeLicense-Permissive",
         "spdx_valid_license_expr": "",
-        "corrected_license": "LicenseRef-FakeLicense",
+        "corrected_license": "",
         "purl": ""
     }
 },
@@ -123,7 +123,7 @@
     "pk": 1,
     "fields": {
         "release": 1,
-        "version": 2,
+        "version": 1,
         "status": "Validated",
         "addition_method": "Manual",
         "addition_date": "2022-01-19T16:01:40Z",

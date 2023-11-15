@@ -14,9 +14,11 @@ from cube.utils.spdx import get_ands_corrections, explode_spdx_to_units
 class BaseComponentDecisionForm(forms.ModelForm):
     ANY = "any"
     COMPONENT = "component"
+    CONSTRAINT = "constraint"
     VERSION = "version"
     COMPONENT_VERSION_CHOICES = (
         (VERSION, "Apply to this version only"),
+        (CONSTRAINT, "Apply to all component versions matching specified constraint"),
         (COMPONENT, "Apply to all component versions"),
         ("", "All components"),
     )
@@ -32,9 +34,28 @@ class BaseComponentDecisionForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.fields["component_version"].choices = (
             (self.VERSION, f"Only {self.usage.version}"),
+            (
+                self.CONSTRAINT,
+                f"All {self.usage.version.component} versions matching specified constraint",
+            ),
             (self.COMPONENT, f"All {self.usage.version.component} versions"),
             (self.ANY, "All components"),
         )
+
+    def clean(self):
+        cleaned_data = super().clean()
+        if (
+            cleaned_data["component_version"] == self.CONSTRAINT
+            and not cleaned_data["version_constraint"]
+        ):
+            self.add_error("version_constraint", "Specify a version constraint")
+
+        if (
+            cleaned_data["component_version"] != self.CONSTRAINT
+            and cleaned_data["version_constraint"]
+        ):
+            self.add_error("version_constraint", "Leave this field empty")
+        return cleaned_data
 
     def save(self, **kwargs):
         if self.cleaned_data["component_version"] == self.COMPONENT:
@@ -48,6 +69,7 @@ class BaseComponentDecisionForm(forms.ModelForm):
         fields = (
             "expression_out",
             "component_version",
+            "version_constraint",
             "explanation",
         )
 
@@ -186,6 +208,7 @@ class CreateLicenseChoiceForm(BaseUsageConditionForm):
             "expression_out",
             "product_release",
             "component_version",
+            "version_constraint",
             "exploitation_choice",
             "scope_choice",
             "explanation",
@@ -228,6 +251,7 @@ class CreateDerogationForm(BaseUsageConditionForm):
             "product_release",
             "scope_choice",
             "component_version",
+            "version_constraint",
             "linking_choice",
             "modification_choice",
             "exploitation_choice",

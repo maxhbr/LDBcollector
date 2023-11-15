@@ -3,7 +3,7 @@
 #  SPDX-License-Identifier: AGPL-3.0-only
 import logging
 
-from django.db.models import Count, Subquery, Q, Case, When, OuterRef, F
+from django.db.models import Count, Case, When, F
 
 from cube.models import (
     Release,
@@ -29,57 +29,34 @@ STEP_POLICY = 5
 
 # Functions with side effect to update releases according to curations and choices
 def apply_curations(release):
-    for usage in (
-        release.usage_set.filter(version__corrected_license="")
-        .annotate(
-            imported_license=Case(
-                When(
-                    version__spdx_valid_license_expr="",
-                    then=F("version__declared_license_expr"),
-                ),
-                default=F("version__spdx_valid_license_expr"),
-            )
-        )
-        .annotate(
-            curation=Subquery(
-                LicenseCuration.objects.filter(
-                    Q(component=OuterRef("version__component")) | Q(component=None),
-                    Q(version=OuterRef("version")) | Q(version=None),
-                    Q(expression_in=OuterRef("imported_license")),
-                ).values("expression_out")
-            )
+    for usage in release.usage_set.filter(version__corrected_license="").annotate(
+        imported_license=Case(
+            When(
+                version__spdx_valid_license_expr="",
+                then=F("version__declared_license_expr"),
+            ),
+            default=F("version__spdx_valid_license_expr"),
         )
     ):
-        if usage.curation is not None:
-            # Check there are no conflicting curations (subquery returns only first row)
-            try:
-                if (
-                    usage.curation
-                    == LicenseCuration.objects.for_version(usage.version)
-                    .get()
-                    .expression_out
-                ):
-                    usage.version.corrected_license = usage.curation
-                    usage.version.save()
-            except (
-                LicenseCuration.DoesNotExist,
-                LicenseCuration.MultipleObjectsReturned,
-            ):
-                logger.warning("Multiple curations for %s", usage.version.component)
+        # Get the curation for the version
+        try:
+            curation = LicenseCuration.objects.for_version(usage.version).get()
+            usage.version.corrected_license = curation.expression_out
+            usage.version.save()
+        except (
+            LicenseCuration.DoesNotExist,
+            LicenseCuration.MultipleObjectsReturned,
+        ):
+            logger.warning("Multiple curations for %s", usage.version.component)
 
 
 def propagate_choices(release: Release):
     """
-    Transfer license information from component to usage. Set usage.license_chosen if
-    there is no ambiguity.
+    Transfer license information from component to usage.
+    Set usage.license_expression if there is no ambiguity.
 
-    Args:
-        release (int): The intern identifier of the concerned release
-
-    Returns:
-        response: A python object that has two field :
-            `to_resolve` the set of usages which needs an explicit choice
-            `resolved` the set of usages for which a choice has been made
+    :param release: Release to update
+    :return: dict with two keys: to_resolve and resolved containing the corresponding usages
     """
 
     resolved = {
@@ -123,8 +100,7 @@ def propagate_choices(release: Release):
                 usage.save()
                 resolved.add(usage)
 
-    response = {"to_resolve": to_resolve, "resolved": resolved}
-    return response
+    return {"to_resolve": to_resolve, "resolved": resolved}
 
 
 # Validations step methods
