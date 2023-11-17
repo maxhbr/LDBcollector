@@ -19,11 +19,11 @@ This library leverages, and is inspired by, the *excellent* [SPDX project](https
 
 ## System Requirements
 
+* `lice-comb` (v2.0+) requires JDK 11 or higher.
+
 * `lice-comb` (all versions) requires an internet connection.
 
 * `lice-comb` (all versions) assumes Maven is installed and in the `PATH` (but has fallback logic if it isn't available).
-
-* `lice-comb` (v2.0+) requires JDK 11 or higher.
 
 ## Installation
 
