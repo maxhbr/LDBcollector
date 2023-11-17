@@ -10,3 +10,5 @@ alternativeNames:
   - "SGI-OpenGL"
   - "SGI OpenGL License"
 
+otherIds: 
+  - "scancode:x11-opengl"
