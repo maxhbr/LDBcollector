@@ -2,8 +2,9 @@
 # SPDX-License-Identifier: CC-BY-4.0
 # SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
 
-canonicalName: "Etalab Open License 2.0"
+canonicalName: "Etalab Open License 2.0 (FR)"
 category: "Etalab"
+shortName: "Etalab-2.0-FR"
 spdxIdentifier: "etalab-2.0"
 
 alternativeNames:
@@ -11,7 +12,6 @@ alternativeNames:
   - "etalab-2.0"
   - "See https://www.etalab.gouv.fr/licence-ouverte-open-licence"
   - "Licence Ouverte 2.0."
-  - "OPEN LICENCE 2.0"
 
 otherIds: 
-  - "scancode:etalab-2.0"
+  - "scancode:etalab-2.0-fr"

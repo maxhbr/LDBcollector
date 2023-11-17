@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "DMTF License (2017)"
+category: "DMTF License"
+shortName: "DMTF-2017"
+
+alternativeNames:
+  - "DMTF License 2017"
+  - "Distributed Management Task Force License"
+
+otherIds: 
+  - "scancode:dmtf-2017"

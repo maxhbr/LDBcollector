@@ -8,6 +8,7 @@ shortName: "GFDL-1.1-invariants"
 spdxIdentifier: "GFDL-1.1-invariants-only"
 
 alternativeNames:
-  - "GFDL-1.1-invariants-only"
   - "GNU Free Documentation License v1.1 only - invariants"
 
+otherIds: 
+  - "scancode:gfdl-1.1-invariants-only"

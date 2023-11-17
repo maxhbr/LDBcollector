@@ -1,0 +1,20 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2022. All rights reserved.
+
+canonicalName: "GNU Free Documentation License 1.1 (or any later version; invariants)"
+category: "GFDL"
+shortName: "GFDL-1.1+-invariants"
+spdxIdentifier: "GFDL-1.1-invariants-or-later"
+
+alternativeNames:
+  - "GNU Free Documentation License, v1.1 or later - invariants"
+  - "GNU Free Documentation License 1.1 or later - invariants"
+  - "GFDL Version 1.1+ invariants"
+  - "GFDL Version 1.1 or any later version, invariants"
+  - "GFDL  1.1+ invariants"
+  - "GFDL  1.1 or any later version, invariants"
+  - "GFDL v1.1+, invariants"
+
+otherIds: 
+  - "scancode:gfdl-1.1-invariants-or-later"
