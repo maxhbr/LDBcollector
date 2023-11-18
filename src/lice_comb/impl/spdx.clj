@@ -19,11 +19,11 @@
 (ns lice-comb.impl.spdx
   "SPDX-related functionality. Note: this namespace is not part of the public
   API of lice-comb and may change without notice."
-  (:require [clojure.string           :as s]
-            [spdx.licenses            :as sl]
-            [spdx.exceptions          :as se]
-            [spdx.expressions         :as sexp]
-            [lice-comb.impl.utils     :as lciu]))
+  (:require [clojure.string       :as s]
+            [spdx.licenses        :as sl]
+            [spdx.exceptions      :as se]
+            [spdx.expressions     :as sexp]
+            [lice-comb.impl.utils :as lciu]))
 
 ; The subset of SPDX license identifiers that we use; specifically excludes the superceded deprecated GPL family identifiers
 (def license-ids-d

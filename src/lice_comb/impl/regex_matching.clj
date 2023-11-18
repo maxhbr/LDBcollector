@@ -19,12 +19,11 @@
 (ns lice-comb.impl.regex-matching
   "Helper functionality focused on regex matching. Note: this namespace is not
   part of the public API of lice-comb and may change without notice."
-  (:require [clojure.string          :as s]
-            [medley.core             :as med]
-            [dom-top.core            :as dom]
-            [rencg.api               :as rencg]
-            [lice-comb.impl.spdx     :as lcis]
-            [lice-comb.impl.utils    :as lciu]))
+  (:require [clojure.string       :as s]
+            [medley.core          :as med]
+            [rencg.api            :as rencg]
+            [lice-comb.impl.spdx  :as lcis]
+            [lice-comb.impl.utils :as lciu]))
 
 (defn- get-rencgs
   "Get a value for an re-ncg, potentially looking at multiple ncgs in order
@@ -384,7 +383,7 @@
   Results are in the order in which they appear in the string, and the function
   returns nil if there were no matches."
   [s]
-  (when-let [matches (seq (filter identity (dom/real-pmap (partial match s) @license-name-matching-d)))]
+  (when-let [matches (seq (filter identity (pmap (partial match s) @license-name-matching-d)))]
     (some->> matches
              (med/distinct-by :id)    ;####TODO: THINK ABOUT MERGING INSTEAD OF DROPPING
              (sort-by :start)

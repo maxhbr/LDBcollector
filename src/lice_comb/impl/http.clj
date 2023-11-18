@@ -19,11 +19,11 @@
 (ns lice-comb.impl.http
   "HTTP helper functionality. Note: this namespace is not part of
   the public API of lice-comb and may change without notice."
-  (:require [clojure.string                :as s]
-            [clojure.java.io               :as io]
-            [clojure.java.shell            :as sh]
-            [hato.client                   :as hc]
-            [lice-comb.impl.utils          :as lciu]))
+  (:require [clojure.string       :as s]
+            [clojure.java.io      :as io]
+            [clojure.java.shell   :as sh]
+            [hato.client          :as hc]
+            [lice-comb.impl.utils :as lciu]))
 
 (def ^:private http-client-d (delay (hc/build-http-client {:connect-timeout 1000
                                                            :redirect-policy :always
