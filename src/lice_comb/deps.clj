@@ -21,7 +21,6 @@
   license information."
   (:require [clojure.string                  :as s]
             [clojure.tools.logging           :as log]
-            [dom-top.core                    :as dom]
             [lice-comb.maven                 :as lcmvn]
             [lice-comb.files                 :as lcf]
             [lice-comb.impl.http             :as lcihttp]
@@ -75,15 +74,15 @@
                                    nil))]
         pom-expressions
         ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s)
-        (into {} (filter identity (dom/real-pmap #(try
-                                                    (lcf/zip->expressions-info %)
-                                                    (catch javax.xml.stream.XMLStreamException xse
-                                                      (log/warn (str "Failed to parse pom inside " % " - ignoring") xse)
-                                                      nil)
-                                                    (catch java.util.zip.ZipException ze
-                                                      (log/warn (str "Failed to unzip " % " - ignoring") ze)
-                                                      nil))
-                                                 (:paths info))))))))
+        (into {} (filter identity (pmap #(try
+                                           (lcf/zip->expressions-info %)
+                                           (catch javax.xml.stream.XMLStreamException xse
+                                             (log/warn (str "Failed to parse pom inside " % " - ignoring") xse)
+                                             nil)
+                                           (catch java.util.zip.ZipException ze
+                                             (log/warn (str "Failed to unzip " % " - ignoring") ze)
+                                             nil))
+                                        (:paths info))))))))
 
 (defmulti dep->expressions-info
   "Returns an expressions-info map for the given tools.dep dep (a MapEntry or
@@ -129,11 +128,11 @@
   `:lice-comb/license-info` key in the info map)."
   [deps]
   (when deps
-    (into {} (dom/real-pmap #(if-let [expressions-info (dep->expressions-info %)]
-                               (let [[k v] %]
-                                 [k (assoc v :lice-comb/license-info expressions-info)])
-                               %)
-                            deps))))
+    (into {} (pmap #(if-let [expressions-info (dep->expressions-info %)]
+                      (let [[k v] %]
+                        [k (assoc v :lice-comb/license-info expressions-info)])
+                      %)
+                   deps))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent

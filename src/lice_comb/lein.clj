@@ -19,8 +19,7 @@
 (ns lice-comb.lein
   "Functionality related to combing Leiningen dependency sequences for license
   information."
-  (:require [dom-top.core                    :as dom]
-            [lice-comb.deps                  :as lcd]
+  (:require [lice-comb.deps                  :as lcd]
             [lice-comb.impl.expressions-info :as lciei]))
 
 (defn- lein-dep->toolsdeps-dep
@@ -53,7 +52,7 @@
   for that dep."
   [deps]
   (when deps
-    (into {} (dom/real-pmap #(vec [% (dep->expressions-info %)]) deps))))
+    (into {} (pmap #(vec [% (dep->expressions-info %)]) deps))))
 
 (defn deps->expressions
   "Attempt to detect all of the SPDX license expression(s) in a Leiningen style
@@ -62,7 +61,7 @@
   expression(s) for that dep."
   [deps]
   (when deps
-    (into {} (dom/real-pmap #(vec [% (dep->expressions %)]) deps))))
+    (into {} (pmap #(vec [% (dep->expressions %)]) deps))))
 
 (defn init!
   "Initialises this namespace upon first call (and does nothing on subsequent
